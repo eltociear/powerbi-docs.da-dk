@@ -2,7 +2,6 @@
 title: Generér automatisk dataindsigt med Power BI
 description: Find ud af, hvordan du kan få indsigt i datasæt og dashboardfelter.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
 ms.custom: seodec18
@@ -12,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 428e392994a1b6934bf78d9cccbee1821744a622
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 5f571cabcc413947713cd232863b3ecad910436d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020233"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872234"
 ---
 # <a name="generate-data-insights-automatically-with-power-bi"></a>Generér automatisk dataindsigt med Power BI
 Har du et nyt datasæt, og er du ikke helt sikker på, hvor du skal starte?  Har du brug for hurtigt at oprette et dashboard?  Vil du hurtigt søge efter indsigter, som du måske gik glip af?
@@ -96,5 +95,5 @@ I stedet for at søge efter indsigt i et helt datasæt kan du begrænse din søg
 - Hvis du ejer et datasæt, [kan du optimere det til Hurtig indsigt](service-insights-optimize.md).
 - Få mere at vide om de [tilgængelige typer Hurtig indsigt](service-insight-types.md).
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/).
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
 

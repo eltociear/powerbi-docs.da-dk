@@ -2,19 +2,18 @@
 title: Meddelelser om tjenesteafbrydelser
 description: Få mere at vide om, hvordan du modtager meddelelser via mail, når Power BI-tjenesten bliver forstyrret eller forringet.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/16/2019
 ms.author: mblythe
-ms.openlocfilehash: f1d1a22f676873e3a68edf891c4b23522904ddd9
-ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
+ms.openlocfilehash: 90ab6c48465a9b7dc5eecca457953f77c727304c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73169027"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872170"
 ---
 # <a name="service-interruption-notifications"></a>Meddelelser om tjenesteafbrydelser
 
@@ -52,4 +51,4 @@ En administrator af Power BI-lejeren aktiverer meddelelser på administrationspo
 
 [Supportmuligheder til Power BI Pro og Power BI Premium](service-support-options.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

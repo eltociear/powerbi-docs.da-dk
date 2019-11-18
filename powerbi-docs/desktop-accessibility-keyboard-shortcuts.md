@@ -2,7 +2,6 @@
 title: Tastaturgenveje i Power BI Desktop
 description: Sådan er Power BI Desktop tilgængelig vha. tastaturgenveje
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3fecda9af7f329e32f07dc2967e5f6cf7ee553d6
-ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
+ms.openlocfilehash: 8c4db4d659c64fba8b7a79e6e36a5f27d8dd5d34
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73181108"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869362"
 ---
 # <a name="keyboard-shortcuts-in-power-bi-desktop"></a>Tastaturgenveje i Power BI Desktop
 
@@ -45,10 +44,10 @@ Idet vi løbende forbedrer tilgængeligheden, omfatter ovenstående liste også 
 | Markér eller fjern markeringen af et objekt | **Enter** eller **Mellemrum** |
 | Markér flere objekter | **Ctrl + mellemrum** |
 
-## <a name="on-visual"></a>På visualisering
+## <a name="on-visual"></a>På visuelt element
 | For at udføre denne handling           | Tryk på                |
 | :------------------- | :------------------- |
-| Flyt fokus til menuen for visualiseringer | **Alt + Skift + F10** |
+| Flyt fokus til menuen for visuelle elementer | **Alt + Skift + F10** |
 | Vis data | **Alt + Skift + F11**  |
 | Angiv en visualisering | **Ctrl + højre piletast** |
 | Angiv et lag | **Enter** |

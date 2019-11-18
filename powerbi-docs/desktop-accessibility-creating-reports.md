@@ -2,7 +2,6 @@
 title: Oprettelse af tilgængelige rapporter i Power BI
 description: Sådan opretter du tilgængelige Power BI Desktop-rapporter
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ea03387dd35537ac47f1c97a3c2712d4185b3247
-ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
+ms.openlocfilehash: 4686b15e04d3724256c76d7ba27a125cb04e86b3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73181706"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878976"
 ---
 # <a name="creating-accessible-reports-in-power-bi"></a>Oprettelse af tilgængelige rapporter i Power BI
 Du kan designe og oprette flotte rapporter og samtidig have øje for tilgængelighed. Når du opbygger en rapport, bør du oprette den, så den kan bruges af så mange personer som muligt, uanset hvem din målgruppe er, uden at det er nødvendigt at tilpasse den til en slags specialdesign.
@@ -92,7 +91,7 @@ Forbrugere af rapporter kan også få vist dataene i en visualisering i et tabel
 Power BI indeholder tilgængelighedsfunktioner, som er indbygget i produktet, og som skal konfigureres af rapportforfatteren.  Disse funktioner omfatter:
 
 * Alternativ tekst
-* Tabulatorrækkefølge
+* Rækkefølge af faner
 * Titler og mærkater
 * Mærker
 * Rapporttemaer
@@ -115,7 +114,7 @@ En af de ting, der gør Power BI så betagende, er, at dataene er dynamiske. Du 
 
 ![betinget formatering af alternativ tekst](media/desktop-accessibility/accessibility-creating-reports-07.png)
 
-### <a name="tab-order"></a>Tabulatorrækkefølge
+### <a name="tab-order"></a>Rækkefølge af faner
 Når du angiver tabulatorrækkefølgen, hjælper du brugerne af tastaturet med at navigere i din rapport i en rækkefølge, der matcher den måde, brugerne visuelt bearbejder visualiseringerne i rapporten på. Hvis du inkluderer dekorative figurer og billeder i din rapport, skal du fjerne dem fra tabulatorrækkefølgen. 
 
 Du angiver tabulatorrækkefølgen ved at vælge fanen **Vis** på båndet og vælge knappen for **ruden Markering** for at få vist ruden Markering.
@@ -166,9 +165,9 @@ Hvis du er usikker på, om din visualisering eller rapport er for spraglet, kan 
 
 ### <a name="themes-contrast-and-colorblind-friendly-colors"></a>Temaer, kontrast og farver, der er gode til farveblinde
 
-Du bør sikre, at der er nok kontrast mellem teksten og evt. baggrundsfarver i dine rapporter. I henhold til succeskriterium 1.4.3 i WCAG 2.1 bør tekst og baggrundsfarver have et kontrastforhold på mindst 4,5:1. Du kan bruge flere værktøjer, f.eks. [Color Contrast Analyzer](https://developer.paciellogroup.com/resources/contrastanalyser/), [WebAIM](https://webaim.org/resources/contrastchecker/) og [Accessible Colors](http://accessible-colors.com/), til at kontrollere farverne i din rapport.
+Du bør sikre, at der er nok kontrast mellem teksten og evt. baggrundsfarver i dine rapporter. I henhold til succeskriterium 1.4.3 i WCAG 2.1 bør tekst og baggrundsfarver have et kontrastforhold på mindst 4,5:1. Du kan bruge flere værktøjer, f.eks. [Color Contrast Analyzer](https://developer.paciellogroup.com/resources/contrastanalyser/), [WebAIM](https://webaim.org/resources/contrastchecker/) og [Accessible Colors](https://accessible-colors.com/), til at kontrollere farverne i din rapport.
 
-Du bør også tage højde for, at nogle af dem, der får vist din rapport, kan være farveblinde. Værktøjer som [Coblis](http://www.color-blindness.com/coblis-color-blindness-simulator/) og [Vischeck](http://www.vischeck.com/vischeck/vischeckImage.php) simulerer, hvad farveblinde personer, der får vist rapporten, ser.  Brug af færre farver eller en monokrom palet i rapporten hjælper med at sikre, at du ikke opretter rapporter, der ikke er tilgængelige.
+Du bør også tage højde for, at nogle af dem, der får vist din rapport, kan være farveblinde. Værktøjer som [Coblis](https://www.color-blindness.com/coblis-color-blindness-simulator/) og [Vischeck](https://www.vischeck.com/vischeck/vischeckImage.php) simulerer, hvad farveblinde personer, der får vist rapporten, ser.  Brug af færre farver eller en monokrom palet i rapporten hjælper med at sikre, at du ikke opretter rapporter, der ikke er tilgængelige.
 
 Visse farvekombinationer er særligt svære for farveblinde brugere at skelne. De omfatter følgende kombinationer: 
 

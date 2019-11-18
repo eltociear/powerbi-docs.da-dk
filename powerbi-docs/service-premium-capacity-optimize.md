@@ -3,7 +3,6 @@ title: Optimering af Microsoft Power BI Premium-kapaciteter
 description: Beskriver optimeringsstrategier for Power BI Premium-kapaciteter.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: fc983fe9027f6d94c5394d524a6417a64719a8ac
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: d2e8ede356ed015c4c35b311ca58d35366324b9a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431699"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871921"
 ---
 # <a name="optimizing-premium-capacities"></a>Optimering af Premium-kapaciteter
 
@@ -257,7 +256,7 @@ Det er vigtigt, at testene kan gentages. Testene skal køres flere gange, og de 
 
 Hvis du allerede har en kapacitet og de rapporter, du vil udføre en belastningstest for, skal du bruge [værktøjet til generering af PowerShell-belastning](https://aka.ms/PowerBILoadTestingTool) til hurtigt at generere en belastningstest. Værktøjet giver dig mulighed for at vurdere, hvor mange instanser af hver rapport der kan køres af din kapacitet på en time. Du kan bruge værktøjet til at vurdere din kapacitets evne til individuel rapportgengivelse eller til at gengive flere forskellige rapporter parallelt. Du kan finde flere oplysninger i videoen [Microsoft Power BI: Premium-kapacitet](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw).
 
-Hvis du vil generere en mere kompleks test, bør du overveje at udvikle et program til belastningstest for at simulere en realistisk arbejdsbelastning. Du kan finde flere oplysninger i webinaret om [belastningstest af Power BI-programmer med Visual Studio-belastningstest](https://powerbi.microsoft.com/en-us/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/).
+Hvis du vil generere en mere kompleks test, bør du overveje at udvikle et program til belastningstest for at simulere en realistisk arbejdsbelastning. Du kan finde flere oplysninger i webinaret om [belastningstest af Power BI-programmer med Visual Studio-belastningstest](https://powerbi.microsoft.com/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/).
 
 ## <a name="acknowledgements"></a>Referencer
 

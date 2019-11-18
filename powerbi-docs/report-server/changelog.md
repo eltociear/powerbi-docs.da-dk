@@ -3,18 +3,17 @@ title: Ændringslog for Power BI-rapportserver
 description: Denne ændringslog er for Power BI-rapportserver, og den viser nye elementer sammen med fejlrettelser til hvert frigivet build.
 ms.author: jaimeta
 author: jtarquino
-manager: kfile
 ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/25/2019
-ms.openlocfilehash: 0a4aaa5d9fcb3d5dab6cce0b0c8dd6034581aedb
-ms.sourcegitcommit: 17f45a81b0dcbf9e3f1fb2a551584170baecd320
+ms.openlocfilehash: ef85aea957ec470b348676b553248f30d3bf8532
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72922550"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874284"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -29,7 +28,7 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
         - Fejlrettelser
             - Rettelse til et problem, hvor .NET Framework 4.7 ikke er installeret.
             - Rettelse til sideinddelte rapporter for Teradata med parametre for flere værdier med fejl 110083.
-            - Rettelse til URLRoot-værdien, som ikke fungerer, hvis der er flere bindinger af URL-adresser for webtjenesten, og en af dem er http://+80/reportserver.
+            - Rettelse til URLRoot-værdien, som ikke fungerer, hvis der er flere bindinger af URL-adresser for webtjenesten, og en af dem er https://+80/reportserver.
           - Rettelse til sideinddelte rapporter med parametre for flere værdier, der vises uden for rapportområdet.
           
     - *Version: 1.6.7221.30698 (Build 15.0.1102.620), udgivet: 9. oktober 2019*
@@ -305,6 +304,6 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
 [Administratoroversigt](admin-handbook-overview.md)  
 [Installer Power BI-rapportserver](install-report-server.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

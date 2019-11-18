@@ -2,7 +2,6 @@
 title: Kør og få vist indsigt på dashboardfelter
 description: Find ud af, hvordan du som Power BI-slutbruger kan få indsigt i dine dashboardfelter.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 9/22/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e3e360a47d258c6103377fa26a16c10eb2c8d4d5
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: ab37c806aaf3cd666c71dc22ee1f3d4d457647e0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019618"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863389"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Få vist dataindsigt på dashboardfelter med Power BI
 Hvert enkelt [visualiseringsfelt](end-user-tiles.md) på dashboardet er en indgang til at udforske data. Når du vælger et felt, åbnes en rapport, eller [Spørgsmål og svar åbnes](end-user-q-and-a.md), hvor du kan filtrere, sortere og fordybe dig i datasættet bag rapporten. Når du kører indsigt, udfører Power BI denne udforskning af data for dig.

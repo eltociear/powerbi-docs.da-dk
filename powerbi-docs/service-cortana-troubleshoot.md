@@ -2,7 +2,6 @@
 title: Fejlfinding i Cortana til Power BI
 description: Hvis du har problemer med at bruge Cortana med Power BI, kan du prøve disse forslag.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 02e79522baa7580b019cec6956593d88260fb95b
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 9d6241659eaa5e6ff9c98b5c25dbfacb0bbac34d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432121"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872886"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Fejlfinding i Cortana til Power BI
 Denne artikel er en del af en serie. 
@@ -96,4 +95,4 @@ Søger du efter et dashboard, der er blevet delt med dig?  Åbn Power BI > **Del
 * Forespørgslen skal være på 2 eller flere ord.  Hvis din forespørgsel er for kort, kan du tilføje ordet "show".
 * Nogle forespørgselsstrenge med forholdsord fungerer muligvis ikke (f.eks. sales by item). Prøv andre søgeord, der ikke bruger forholdsord og er meningsfulde/entydige.
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

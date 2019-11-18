@@ -2,19 +2,18 @@
 title: Opret forbindelse til filer i OneDrive for et Power BI-arbejdsområde
 description: Læs om at gemme og oprette forbindelse til dine Excel-, CSV- og Power BI Desktop-filer på OneDrive for dit Power BI-arbejdsområde.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukasz
 ms.service: powerbi
 ms.topic: conceptual
 ms.date: 04/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2cecd327d76659eb11d81180480cb9be998fd772
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 180fd8d451be794070d8b0f4d37c40965671d23d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431628"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854871"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Opret forbindelse til filer, der gemmes i OneDrive for dit Power BI-arbejdsområde
 Når du har [oprettet et arbejdsområde i Power BI](service-create-distribute-apps.md), kan du gemme dine Excel-, CSV- og Power BI Desktop-filer på OneDrive for Business for dit Power BI-arbejdsområde. Du kan fortsætte med at opdatere de filer, du gemmer i OneDrive. Disse opdateringer afspejles automatisk i dine Power BI-rapporter og på dine Power BI-dashboards, som er baseret på filerne. 
@@ -53,7 +52,7 @@ Nu, hvor dine filer er i OneDrive for Business for dit arbejdsområde, står du 
 
 ### <a name="import-or-connect-to-the-files-in-your-workspace"></a>Importér eller opret forbindelse til filer i dit arbejdsområde
 1. Skift til arbejdsområdet i Power BI, så navnet på arbejdsområdet er i øverste venstre hjørne. 
-2. Vælg **Hent data** nederst i venstre navigationsrude. 
+2. Vælg **Hent data** nederst i navigationsruden. 
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-get-data-button.png)
 3. Vælg **Hent** i feltet **Filer**.
@@ -80,6 +79,6 @@ Nu, hvor dine filer er i OneDrive for Business for dit arbejdsområde, står du 
 * [Opret apps og arbejdsområder i Power BI](service-create-distribute-apps.md)
 * [Importér data fra Excel-projektmapper](service-get-data-from-files.md)
 * [Opret forbindelse til hele Excel-projektmapper](service-excel-workbook-files.md)
-* Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv Power BI-community'et](https://community.powerbi.com/)
 * Har du feedback? Besøg [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi)
 

@@ -2,18 +2,17 @@
 title: Begrænsninger for Spørgsmål og svar i Power BI
 description: Aktuelle begrænsninger for Spørgsmål og svar i Power BI
 author: mohaali
-manager: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: mohaali
-ms.openlocfilehash: fc4a605f1258bcd93e0b49b596cc3a1691ce2edb
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: 9f1beed3408d53a58a0fb725f9d98a4a95bb1b7c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72717738"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874896"
 ---
 # <a name="limitations-of-power-bi-qa"></a>Begrænsninger for Spørgsmål og svar i Power BI
 

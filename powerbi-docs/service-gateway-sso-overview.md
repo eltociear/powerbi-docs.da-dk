@@ -3,19 +3,18 @@ title: Oversigt over enkeltlogon (SSO) til gateways i Power BI
 description: Konfigurer din gateway for at aktivere enkeltlogon (SSO) fra Power BI til datakilder i det lokale miljø.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 53c35210878e442cfdec4d78a97bd76acc65e482
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 43394e8f09327ebcb858ff5644b30daee1793444
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020756"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872364"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Oversigt over enkeltlogon (SSO) til gateways i Power BI
 
@@ -50,7 +49,7 @@ Her følger yderligere oplysninger om hvert trin:
 
    a. Hvis Azure AD DirSync (også kendt som *Azure AD Connect*) er konfigureret, fungerer tilknytningen automatisk i gatewayen.
 
-   b.  Ellers kan gatewayen søge efter og knytte brugerens hovednavn for Azure AD til en lokal AD-bruger ved at foretage opslag mod det lokale Active Directory-domæne.
+   b.  Ellers kan gatewayen søge efter og knytte Azure AD-UPN'et til en lokal AD-bruger ved at foretage opslag mod det lokale Active Directory-domæne.
 
 3. Processen for gatewaytjenesten repræsenterer den tilknyttede lokale bruger, åbner forbindelsen til den underliggende database og sender derefter forespørgslen. Du behøver ikke at installere gatewayen på samme computer som databasen.
 

@@ -2,7 +2,6 @@
 title: Føj links (URL-adresser) til en tabel
 description: I dette emne lærer du, hvordan du føjer links (URL-adresser) til en tabel. Du kan bruge Power BI Desktop til at føje links (URL-adresser) til en tabel eller matrix. Derefter kan du bruge enten Power BI Desktop eller Power BI-tjenesten til at føje disse links til tabeller og matrixer i din rapport.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c53ce84610e68280c915d55466bc7cddd3c0cc92
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: e8cad7035e752e5e344d78a22ad5fd8ea0a072ad
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060740"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874510"
 ---
 # <a name="add-hyperlinks-urls-to-a-table"></a>Føj links (URL-adresser) til en tabel
 I dette emne lærer du, hvordan du føjer links (URL-adresser) til en tabel. Du kan bruge Power BI Desktop til at føje links (URL-adresser) til en tabel eller matrix. Derefter kan du bruge enten Power BI Desktop eller Power BI-tjenesten til at føje disse links til tabeller og matrixer i din rapport. 
@@ -112,5 +111,5 @@ Svar: Nej. Du kan bruge et linkikon. Hvis du har brug for brugerdefineret tekst 
 
 [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

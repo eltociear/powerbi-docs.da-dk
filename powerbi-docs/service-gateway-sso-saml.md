@@ -3,19 +3,18 @@ title: Brug SAML (Security Assertion Markup Language) til SSO fra Power BI til d
 description: Konfigurer din gateway med SAML (Security Assertion Markup Language) for at aktivere SSO fra Power BI til datakilder i det lokale miljø.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6bee417986f9a7fb243ce435443c5cd783e99b97
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 6117cc884bc50e78ec0ec41f18b7868422165d78
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020357"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881456"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-sso-from-power-bi-to-on-premises-data-sources"></a>Brug SAML (Security Assertion Markup Language) til SSO fra Power BI til datakilder i det lokale miljø
 

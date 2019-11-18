@@ -2,7 +2,6 @@
 title: Fejlfinding i forbindelse med opdatering af scenarier
 description: Fejlfinding i forbindelse med opdatering af scenarier
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,19 +9,19 @@ ms.topic: troubleshooting
 ms.date: 09/13/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 7e66cbf11c8177a12dbbf825873adb4cef5f26fd
-ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
+ms.openlocfilehash: d79fc47ff30d7f28827290268ba01edf09643032
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73169039"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860503"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Fejlfinding i forbindelse med opdatering af scenarier
 
 Her kan du finde oplysninger om forskellige scenarier, som du kan stå overfor, når du opdaterer data i Power BI-tjenesten.
 
 > [!NOTE]
-> Hvis du oplever et scenarie, der ikke er angivet nedenfor, og det medfører problemer for dig, kan du bede om yderligere hjælp på [communitywebstedet](http://community.powerbi.com/), eller du kan oprette en [supportanmodning](https://powerbi.microsoft.com/support/).
+> Hvis du oplever et scenarie, der ikke er angivet nedenfor, og det medfører problemer for dig, kan du bede om yderligere hjælp på [communitywebstedet](https://community.powerbi.com/), eller du kan oprette en [supportanmodning](https://powerbi.microsoft.com/support/).
 >
 >
 
@@ -92,5 +91,5 @@ Opdateringen af data kan også mislykkes på grund af udløbne cachelagrede legi
 - [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
 - [Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-Har du flere spørgsmål? [Prøv at spørge Microsoft Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Microsoft Power BI-community'et](https://community.powerbi.com/)
 

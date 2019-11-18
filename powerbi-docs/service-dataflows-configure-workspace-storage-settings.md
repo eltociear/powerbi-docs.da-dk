@@ -2,7 +2,6 @@
 title: Konfigurer indstillinger for dataflow for arbejdsområder
 description: Konfigurer et arbejdsområde i Power BI for at gemme definitionen af dataflowet og datafilerne i Azure Data Lake Storage Gen2
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 54c0936510c3d383df32fd8b1f99816726f74d9f
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: fa448dac3e7788639377ce2d73d9c0ed68952fb3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431998"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877333"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurer indstillinger for dataflow for arbejdsområder (prøveversion)
 
@@ -138,4 +137,4 @@ Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:
 * [CDM-mapper](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [Fildefinition af CDM-model](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Du kan altid prøve [at stille spørgsmål i Power BI-community'et](http://community.powerbi.com/).
+Du kan altid prøve [at stille spørgsmål i Power BI-community'et](https://community.powerbi.com/).

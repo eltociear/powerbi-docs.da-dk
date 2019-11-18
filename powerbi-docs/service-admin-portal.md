@@ -2,21 +2,20 @@
 title: Power BI-administrationsportal
 description: Administrationsportalen giver adgang til lejeradministration af Power BI i virksomheden. Den indeholder elementer såsom metrikværdier, adgang til Microsoft 365 Administration og indstillinger.
 author: mgblythe
-ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/25/2019
+ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8a6e104a6fcb129a6e51d8424a8c2321ea74b49c
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: 9970d676019bb253471da48ce3e9019e211ba6c5
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442865"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128370"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -305,7 +304,7 @@ Brugere i organisationen kan bruge eksterne søgefunktioner, der bruger Azure Se
 
 ### <a name="add-and-use-custom-visuals"></a>Tilføj og brug brugerdefinerede visualiseringer
 
-Brugerne i organisationen kan interagere med og dele brugerdefinerede visualiseringer. [Få mere at vide](power-bi-custom-visuals.md)
+Brugerne i organisationen kan interagere med og dele brugerdefinerede visualiseringer. [Få mere at vide](developer/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > Denne indstilling kan anvendes på hele organisationen, eller den kan begrænses til specifikke grupper.
@@ -354,7 +353,7 @@ En værdi på 0 (decimal) deaktiverer brugen af ikke-certificerede brugerdefiner
 
 ### <a name="interact-with-and-share-r-visuals"></a>Interager med og del R-visualiseringer
 
-Brugere i virksomheden kan interagere med og dele visualiseringer oprettet med R-scripts. [Få mere at vide](visuals/service-r-visuals.md)
+Brugere i virksomheden kan interagere med og dele visuelle elementer oprettet med R-scripts. [Få mere at vide](visuals/service-r-visuals.md)
 
 > [!NOTE]
 > Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
@@ -457,7 +456,7 @@ Som administrator kan du få vist integreringskoder, der er genereret for din le
 
  ## <a name="organizational-visuals">Visualiseringer til virksomheder</a> 
 
-Fanen **Organisationens visuals** giver dig mulighed for at installere og administrere brugerdefinerede visuals i din organisation. Med visuals til organisationer kan du nemt installere privatejede visuals i din organisation, som forfattere af rapporter efterfølgende kan finde og importere i deres rapporter fra Power BI Desktop. [Få mere at vide](power-bi-custom-visuals-organization.md)
+Fanen **Organisationens visuals** giver dig mulighed for at installere og administrere brugerdefinerede visuals i din organisation. Med visuals til organisationer kan du nemt installere privatejede visuals i din organisation, som forfattere af rapporter efterfølgende kan finde og importere i deres rapporter fra Power BI Desktop. [Få mere at vide](developer/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > En brugerdefineret visual kan indeholde kode, der udgør en risiko for sikkerheden eller personlige oplysninger. Sørg for at have tillid til forfatteren af og kilden til den brugerdefinerede visual, før du installerer den i organisationens lager.
@@ -513,7 +512,7 @@ Hvis du vil opdatere en visual fra organisationens lager, skal du vælge tandhju
 
 Sørg for, at id'et for visualiseringen ikke ændres. Den nye fil erstatter den forrige fil for alle rapporter i hele organisationen. Hvis der er risiko for, at den nye version af visualiseringen vil bryde brugen eller datastrukturen af den forrige version af visualiseringen, skal du ikke erstatte den forrige version. Du skal i stedet oprette en ny post for den nye version af visualiseringen. Føj f.eks. et nyt versionsnummer (version X.X) til titlen af den nye angivne visualisering. På den måde bliver det tydeligt, at det er den samme visualisering blot med et opdateret versionsnummer, så funktionaliteten i eksisterende rapporter ikke brydes. Sørg igen for, at id'et for visualiseringen ikke ændres. Næste gang brugerne derefter tilgår virksomhedens lager fra Power BI Desktop, kan de importere den nye version, og de bliver spurgt, om de vil erstatte den aktuelle version, de har i rapporten.
 
-Du kan finde flere oplysninger under [Ofte stillede spørgsmål om brugerdefinerede visualiseringer til virksomheder](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
+Du kan finde flere oplysninger under [Ofte stillede spørgsmål om brugerdefinerede visualiseringer til virksomheder](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-visuals)
 
 ## <a name="dataflowStorage">Dataflowlager (eksempelvisning)</a>
 
@@ -547,7 +546,7 @@ Som administrator kan du tilpasse udseendet af Power BI for hele organisationen.
 * **Vælg temafarve**: Du kan vælge dit tema på baggrund af en hex #, RGB, værdi eller fra den angivne palet.
 
 
-Du kan finde flere oplysninger i [Brugerdefineret branding til din organisation](http://aka.ms/orgBranding).
+Du kan finde flere oplysninger i [Brugerdefineret branding til din organisation](https://aka.ms/orgBranding).
 
 ![Liste over arbejdsområder](media/service-admin-portal/workspaces-list.png)
 ## <a name="next-steps"></a>Næste trin

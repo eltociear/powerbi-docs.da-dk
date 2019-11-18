@@ -2,7 +2,6 @@
 title: Ofte stillede spørgsmål fra slutbrugeren i Power BI
 description: Gennemse en liste over ofte stillede spørgsmål og svar om Power BI-tjenesten og Power BI-mobilappene.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,16 +9,16 @@ ms.topic: conceptual
 ms.date: 10/03/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5166c99a66178fb29ecab3d5ed0a660f694f7a61
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 282b10d48efc97c38dae06692964e3ba2a7412b0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430047"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852516"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Ofte stillede spørgsmål om Power BI
 
-* Hvis du har andre spørgsmål, kan du [prøve at spørge Power BI-community'et](http://community.powerbi.com/).
+* Hvis du har andre spørgsmål, kan du [prøve at spørge Power BI-community'et](https://community.powerbi.com/).
 * Har du stadig problemer? Gå til [supportsiden for Power BI](https://powerbi.microsoft.com/support/).
 
 ## <a name="what-is-the-microsoft-power-bi-service"></a>Hvad er Microsoft Power BI-tjenesten?
@@ -56,9 +55,9 @@ Ja, en pris til nonprofitorganisationer tilbydes ved køb direkte hos Microsoft.
 
 Ja. Power BI har oprindelige programmer til Android-telefoner og -tablets, iOS-enheder og Windows 10-enheder. Download en af [Power BI-mobilappsene](https://powerbi.microsoft.com/mobile) fra de respektive butikker:  
 
-* [Apple App Store](http://go.microsoft.com/fwlink/?LinkId=526218)
-* [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
-* [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
+* [Apple App Store](https://go.microsoft.com/fwlink/?LinkId=526218)
+* [Google Play](https://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
+* [Windows Store](https://go.microsoft.com/fwlink/?LinkId=526478)
 
 ## <a name="what-do-i-need-to-install-to-use-power-bi"></a>Hvad skal jeg installere for at bruge Power BI?
 
@@ -66,15 +65,15 @@ For at bruge Power BI-tjenesten gratis skal du bruge en webbrowser og mail.
 
 Du kan downloade Power BI-mobilappsene fra deres respektive butikker – det er også gratis:
 
-* [App Store](http://go.microsoft.com/fwlink/?LinkId=526218)
-* [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
-* [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
+* [App Store](https://go.microsoft.com/fwlink/?LinkId=526218)
+* [Google Play](https://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
+* [Windows Store](https://go.microsoft.com/fwlink/?LinkId=526478)
 
 ## <a name="where-do-i-get-started-with-power-bi"></a>Hvor kommer jeg i gang med Power BI?
 
 Du kan bruge følgende ressourcer til at komme i gang:
 
-* [Power BI-blog](http://blogs.msdn.com/b/powerbi/)
+* [Power BI-blog](https://blogs.msdn.com/b/powerbi/)
 * [Webinarer](../webinars.md)
 * Sådan kommer du i gang med vores [YouTube-kanal](https://www.youtube.com/user/mspowerbi)
 * Artiklen [Kom i gang med Power BI som en *forbruger*](power-bi-consumer-landing.md)
@@ -91,19 +90,19 @@ Her er en komplet liste over [områder og sprog, der understøttes af Power BI](
 
 ## <a name="how-can-i-buy-power-bi-pro-in-my-country"></a>Hvordan kan jeg køb Power BI Pro i mit land?
 
-Du kan købe Power BI Pro-licenser direkte eller chatte med en repræsentant på [www.powerbi.com](http://www.powerbi.com).
+Du kan købe Power BI Pro-licenser direkte eller chatte med en repræsentant på [www.powerbi.com](https://www.powerbi.com).
 
 Du kan også finde en [Microsoft-partner](https://partner.microsoft.com/), som kan hjælpe dig med at implementere Power BI.
 
 ## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Opfylder Power BI nationale, regionale og branchespecifikke overholdelseskrav?
 
-Få mere at vide om Power BI-overholdelse i [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).
+Få mere at vide om Power BI-overholdelse i [Microsoft Trust Center](https://go.microsoft.com/fwlink/?LinkId=785324).
 
 ## <a name="where-can-i-learn-more-about-security"></a>Hvor kan jeg få mere at vide om sikkerhed?
 
 Få mere at vide om sikkerhed, beskyttelse af personlige oplysninger og overholdelse af angivne standarder i Power BI her:
 
-* Dette whitepaper om [Power BI-sikkerhed](http://go.microsoft.com/fwlink/?LinkId=829185)
+* Dette whitepaper om [Power BI-sikkerhed](https://go.microsoft.com/fwlink/?LinkId=829185)
 
 * Denne artikel om [understøttelse af Power BI sikkerhed](../service-admin-power-bi-security.md)
 
@@ -117,5 +116,5 @@ Du kan som i mange andre Microsoft-tjenester og -software benytte en nem måde a
 
 * [Hvad er en Power BI-forbruger?](end-user-consumer.md)
 * [Hvordan benytter en forbruger Power BI?](end-user-reading-view.md)
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 * Har du stadig problemer? Gå til [supportsiden for Power BI](https://powerbi.microsoft.com/support/)

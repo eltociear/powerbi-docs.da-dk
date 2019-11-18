@@ -3,18 +3,17 @@ title: Power BI-tilladelser
 description: Power BI-tilladelser
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/01/2018
-ms.openlocfilehash: 06901a484ca53881f30cc71d9a7404807ac6cd57
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 14327f09ede41c23fd4fe7cc65fc4f8d3a91b926
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429127"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880447"
 ---
 # <a name="power-bi-permissions"></a>Power BI-tilladelser
 
@@ -46,7 +45,7 @@ Et program kan anmode om tilladelser, når det forsøger at logge på en brugers
 
 ## <a name="requesting-permissions"></a>Anmodning om tilladelser
 
-Du kan kalde API'en for at godkende vha. et brugernavn og en adgangskode. Hvis du vil kunne handle på vegne af en anden bruger, skal vedkommende anmode om tilladelser, som denne bruger derefter godkender. Herefter sendes det genererede adgangstoken ved alle kommende kald. Vi følger standardprotokollen [OAuth 2.0](http://oauth.net/2/) i forbindelse med denne proces. Selvom den faktiske implementering kan variere, er der følgende elementer i OAuth-flowet for Power BI:
+Du kan kalde API'en for at godkende vha. et brugernavn og en adgangskode. Hvis du vil kunne handle på vegne af en anden bruger, skal vedkommende anmode om tilladelser, som denne bruger derefter godkender. Herefter sendes det genererede adgangstoken ved alle kommende kald. Vi følger standardprotokollen [OAuth 2.0](https://oauth.net/2/) i forbindelse med denne proces. Selvom den faktiske implementering kan variere, er der følgende elementer i OAuth-flowet for Power BI:
 
 * **Logonbrugergrænsefladen** – Dette er en brugergrænseflade, som udvikleren kan benytte til at anmode om tilladelser. Det kræver, at brugeren logger på, hvis vedkommende ikke allerede er logget på. Brugeren skal også godkende de tilladelser, programmet anmoder om. I logonvinduet vises enten en adgangskode eller en fejlmeddelelse for en angivet URL-adresse til omdirigering.
   * Der skal angives en standard-URL-adresse til omdirigering i Power BI, som kan bruges af oprindelige programmer.
@@ -54,4 +53,4 @@ Du kan kalde API'en for at godkende vha. et brugernavn og en adgangskode. Hvis d
 * **Autorisationstoken** – Autorisationstoken bruges til at godkende API-kald på vegne af en anden bruger. De vil være begrænset til et bestemt program. Tokens har en bestemt levetid, og når de udløber, skal de opdateres.
 * **Opdateringstoken** – Når tokens udløber, er der en proces til opdatering af dem.
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

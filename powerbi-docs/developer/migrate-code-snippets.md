@@ -3,18 +3,17 @@ title: Kodestykker til overførsel af indhold fra Power BI Embedded
 description: Her får du nogle kodestykker til de grundlæggende handlinger, der skal bruges til overførsel af indhold
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 83c3257fb9aaaee01efdfceaac93c1d32aeebba0
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 95c249fe2326d9075d920a415c707811d19e5387
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429156"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880504"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Kodestykker til overførsel af indhold fra Power BI Workspace Collection
 
@@ -240,4 +239,4 @@ I dette kodestykke antager vi, at det datasæt, der skal sendes via push, allere
 [Integreret JavaScript-eksempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Hvidbog til Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
-Flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

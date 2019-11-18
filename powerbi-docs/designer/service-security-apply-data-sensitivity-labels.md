@@ -2,7 +2,6 @@
 title: Anvend følsomhedsmærkater i Power BI
 description: Få mere at vide om, hvordan du anvender datafølsomhedsmærkater i Power BI
 author: paulinbar
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 71b716e202a6715963d8350f3416aa5d7dc3e5e2
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 09f3a3e2dce7fd3462c5a21f014bf630bfc7c83e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432903"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879030"
 ---
 # <a name="apply-data-sensitivity-labels-in-power-bi-preview"></a>Anvend datafølsomhedsmærkater i Power BI (prøveversion)
 
@@ -78,7 +77,7 @@ Du skal gøre følgende overvejelser, når du anvender datafølsomhedsmærkater:
 * Følsomhedsmærkater på Power BI-aktiver kan kun ses på listen over arbejdsområder og linjevisninger. Mærkater er i øjeblikket ikke synlige i Favoritter, Delt med mig, Seneste eller programvisninger. Bemærk dog, at en mærkat, som er anvendt på et Power BI-aktiv, altid bevares for data, der eksporteres til Excel-, PowerPoint- og PDF-filer, også selvom mærkaten ikke er synlig.
 * *Indstillingen for filkryptering* i følsomhedsmærkaten konfigureres enten i [Microsoft 365 Security Center](https://security.microsoft.com/) eller [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) og gælder kun for filer, der *eksporteres fra* Power BI. Den gennemtvinges ikke *i* Power BI.
 * [HYOK-beskyttelse](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) understøttes ikke for mærkater, der anvendes i Power BI.
-* Der er [licenskrav](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#common-requirements) for visning og anvendelse af mærkater i Office-programmer.
+* Der er [licenskrav](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#subscription-and-licensing-requirements-for-sensitivity-labels) for visning og anvendelse af mærkater i Office-programmer.
 * Følsomhedsmærkater understøttes kun for lejere i det globale cloudmiljø (offentligt). Følsomhedsmærkater understøttes ikke for lejere i andre cloudmiljøer.
 
 ## <a name="next-steps"></a>Næste trin

@@ -2,7 +2,6 @@
 title: Administrer dit arbejdsområde i Power BI og Office 365
 description: Arbejdsområder i Power BI er en samarbejdsbaseret oplevelse bygget på Office 365-grupper. Administrer dine arbejdsområder i både Power BI og Office 365.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1317d11b11624ca6187eb91d5350a698bf164f63
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 7f1d86dd3da6665eb985db17ac3641768ff56947
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431814"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872082"
 ---
 # <a name="manage-your-workspace-in-power-bi-and-office-365"></a>Administrer dit arbejdsområde i Power BI og Office 365
 
@@ -87,4 +86,4 @@ Når du distribuerer din app fra arbejdsområdet, bliver det billede, du tilføj
 
 * [Publicer en app i Power BI](service-create-distribute-apps.md)
 
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

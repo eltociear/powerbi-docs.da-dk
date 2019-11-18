@@ -2,7 +2,6 @@
 title: Brug af sammensatte modeller i Power BI Desktop
 description: Opret datamodeller med flere dataforbindelser og mange-til-mange-relationer i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: aef50d58dc11269c2c30010c1ca89843689f45c4
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: c79994f2144dfe019c3ac10a51230d17b75b542e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73017689"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876585"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Brug af sammensatte modeller i Power BI Desktop
 
@@ -29,7 +28,7 @@ Sammensatte modeller-funktionaliteten i Power BI Desktop består af tre relatere
 
 * **Mange til mange-relationer**: Via *sammensatte modeller* kan du oprette *mange til mange-relationer* mellem tabeller. Med denne tilgang fjernes kravene for entydige værdier i tabeller. Tidligere midlertidige løsninger, f.eks. introduktion af nye tabeller kun for at oprette relationer, fjernes også. Du kan finde flere oplysninger under [Mange til mange-relationer i Power BI Desktop (prøveversion)](desktop-many-to-many-relationships.md).
 
-* **Lagringstilstand**: Du kan nu angive, hvilke visualiseringer der kræver en forespørgsel til back end-datakilder. Visualiseringer, der ikke kræver en forespørgsel, importeres, også selvom de er baseret på DirectQuery. Denne funktion hjælper med at forbedre ydeevnen og reducere belastningen af back-end. Tidligere ville selv enkle visuals, f.eks. udsnit, starte forespørgsler, der blev sendt til back end-kilderne. Du kan finde flere oplysninger i [Lagringstilstand i Power BI Desktop (prøveversion)](desktop-storage-mode.md).
+* **Lagringstilstand**: Du kan nu angive, hvilke visualiseringer der kræver en forespørgsel til back end-datakilder. Visuelle elementer, der ikke kræver en forespørgsel, importeres, også selvom de er baseret på DirectQuery. Denne funktion hjælper med at forbedre ydeevnen og reducere belastningen af back-end. Tidligere ville selv enkle visuals, f.eks. udsnit, starte forespørgsler, der blev sendt til back end-kilderne. Du kan finde flere oplysninger i [Lagringstilstand i Power BI Desktop (prøveversion)](desktop-storage-mode.md).
 
 
 ## <a name="use-composite-models"></a>Brug sammensatte modeller

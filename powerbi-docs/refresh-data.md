@@ -2,7 +2,6 @@
 title: Opdatering af data i Power BI
 description: I denne artikel beskrives funktionerne til opdatering af data i Power BI og deres afhængigheder på et konceptuelt niveau.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 948776a12af2d99da2d84d07c9298f9ec0558c7b
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: 422d742748fc6880b0636bd3a0c5de7011a3ff0a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442951"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860801"
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
 
@@ -277,7 +276,7 @@ I afsnittet **Planlagt opdatering** angiver du hyppigheden og tidspunktet for op
 
 ![Konfigurer planlagt opdatering](media/refresh-data/configure-scheduled-refresh.png)
 
-Når du har konfigureret en tidsplan for opdatering, kan du på siden med indstillinger for datasættet se oplysninger om det næste opdateringstidspunkt, som vist på skærmbilledet ovenfor. Hvis du vil opdatere dataene hurtigere, f.eks. for at teste din gateway og konfigurationen af din datakilde, skal du udføre en opdatering efter behov ved hjælp af indstillingen **Opdater nu** i menuen for datasæt i navigationsruden til venstre. Opdateringer on-demand påvirker ikke det næste planlagte opdateringstidspunkt, men de tæller i forhold til den daglige grænse for opdateringer, som beskrevet tidligere i denne artikel.
+Når du har konfigureret en tidsplan for opdatering, kan du på siden med indstillinger for datasættet se oplysninger om det næste opdateringstidspunkt, som vist på skærmbilledet ovenfor. Hvis du vil opdatere dataene hurtigere, f.eks. for at teste din gateway og konfigurationen af din datakilde, kan du udføre en opdatering efter behov ved hjælp af indstillingen **Opdater nu** i menuen for datasæt i navigationsruden. Opdateringer on-demand påvirker ikke det næste planlagte opdateringstidspunkt, men de tæller i forhold til den daglige grænse for opdateringer, som beskrevet tidligere i denne artikel.
 
 Bemærk også, at det konfigurerede opdateringstidspunkt muligvis ikke er præcist det tidspunkt, hvor Power BI starter den næste planlagte proces. Power BI starter planlagte opdateringer efter bedste evne. Målet er at starte opdateringen inden for 15 minutter fra det planlagte tidspunkt, men der kan opstå en forsinkelse på op til én time, hvis tjenesten ikke kan tildele de påkrævede ressourcer hurtigere.
 
@@ -339,4 +338,4 @@ Derudover bør du overveje følgende anbefalinger til at etablere og bevare pål
 [Værktøjer til fejlfinding af opdateringsfejl](service-gateway-onprem-tshoot.md)  
 [Fejlfinding i forbindelse med opdatering af scenarier](refresh-troubleshooting-refresh-scenarios.md)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

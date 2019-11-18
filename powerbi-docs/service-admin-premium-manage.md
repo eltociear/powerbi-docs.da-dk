@@ -3,19 +3,18 @@ title: Konfigurer og administrer kapaciteter i Power BI Premium
 description: Få mere at vide om, hvordan du kan administrere Power BI Premium og give adgang til indhold for hele organisationen.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/17/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: c3c1b11b4445ceba67e272b7f652d61d8935fc16
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 04f5b1f639b7abdbbe789a23e5d7a54790ad50a5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431412"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857087"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Konfigurer og administrer kapaciteter i Power BI Premium
 
@@ -166,4 +165,4 @@ Du kan finde flere oplysninger under [Installér Power BI-rapportserveren](repor
 
 [Administration af Premium-kapaciteter](service-premium-capacity-manage.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

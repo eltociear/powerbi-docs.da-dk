@@ -2,7 +2,6 @@
 title: Føj billeder, videoer og mere til dit dashboard
 description: Dokumentation om, hvordan du kan bruge widget'en Tilføj felt til at føje et billede, en video, et tekstfelt, en webkode og et streamingdatafelt til et dashboard.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: e2PD8m1Q0vU
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 93301625efda52aa69af172b29e7fbcd94b2a4dd
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: a012320a12d2516cb24dc92f2472e3c49ce9081e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020428"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853525"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>Føj billeder, videoer og mere til dit dashboard
 
@@ -246,5 +245,5 @@ Sådan foretager du ændringer af et eksisterende felt:
 ## <a name="next-steps"></a>Næste trin
 [Introduktion til dashboardfelter for Power BI-designere](service-dashboard-tiles.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/).
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
 

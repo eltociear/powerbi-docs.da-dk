@@ -2,7 +2,6 @@
 title: Oprettelse af rapporter i Power BI ved hjælp af tilgængelighedsværktøjer
 description: Få mere at vide om de indbyggede tilgængelighedsværktøjer til oprettelse af rapporter i Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 594f47137939d21df8b22e5e22b725a85cf25673
-ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
+ms.openlocfilehash: c8806adce3fc729208effb3bd22c57c7274915d2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73181246"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878933"
 ---
 # <a name="creating-reports-in-power-bi-using-accessibility-tools"></a>Oprettelse af rapporter i Power BI ved hjælp af tilgængelighedsværktøjer
 
@@ -34,7 +33,7 @@ Når du navigerer i Power BI Desktop, kan du flytte fokus til hovedområderne i 
 3. Ruder (hver enkel separat, fra venstre mod højre for dem, der er åbne)
 4. Vis navigator
 5. Sidefod
-6. Logon
+6. Log på
 7. Gul linje med advarsel/fejl/opdateringer
 
 Almindelige procedurer i Power BI omfatter i de fleste tilfælde brug af **Enter** til at vælge – eller åbne – et område og derefter brug af **Esc** til at afslutte.

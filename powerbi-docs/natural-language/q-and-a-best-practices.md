@@ -2,18 +2,17 @@
 title: Bedste praksis for optimering af Spørgsmål og svar
 description: Sådan optimerer du Spørgsmål og svar i Power BI, så det fungerer bedre
 author: mohaali
-manager: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: mohaali
-ms.openlocfilehash: 81ef8137b6ca41f898e7802aa294356af7a87fe8
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: e18579d654cb2ab17ed0dbff73fba95f5f9a64ed
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892174"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875066"
 ---
 # <a name="best-practices-to-optimize-qa-in-power-bi"></a>Bedste praksis for optimering af Spørgsmål og svar i Power BI
 Det er effektivt, når du bruger almindelige udtryk og naturligt sprog til dataforespørgsler. Det er endnu mere effektivt, når dine data svarer, hvilket er, hvad der sker i Spørgsmål og svar i Power BI.

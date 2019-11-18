@@ -2,7 +2,6 @@
 title: Tip og trick til at stille spørgsmål ved hjælp af Spørgsmål og svar
 description: Tip og tricks til at stille spørgsmål med Spørgsmål og svar i Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: Mohammad
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: a3d70824949d214404b25b401930fc69cb47ad4e
-ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
+ms.openlocfilehash: 9fd5375684466eca49582ff9d153fd2533ad7e92
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72774726"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099013"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tip til at stille spørgsmål med Spørgsmål og svar i Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Ord og terminologi, som Spørgsmål og svar genkender
@@ -65,7 +64,7 @@ Listen nedenfor bruger nutid, men alle tider genkendes i de fleste tilfælde. "e
 |  |  |
 |**Top N**     |     (sortering, rangering): top, bund, højeste, laveste, første, sidste, næste, tidligste, nyeste, ældste, seneste            |
 |        |         |
-|**Visualiseringstyper**     |  alle visualiseringstyper, der er indbygget i Power BI.  Hvis det er en indstilling i ruden med visuelle effekter, kan du medtage den i dit spørgsmål.  Undtagelsen til denne regel er [brugerdefinerede visualiseringer](../power-bi-custom-visuals.md), som du manuelt har føjet til ruden Visualiseringer.  |
+|**Visualiseringstyper**     |  alle visualiseringstyper, der er indbygget i Power BI.  Hvis det er en indstilling i ruden med visuelle effekter, kan du medtage den i dit spørgsmål.  Undtagelsen til denne regel er [brugerdefinerede visualiseringer](../developer/power-bi-custom-visuals.md), som du manuelt har føjet til ruden Visualiseringer.  |
 |  |  Eksempel: vis distrikter efter måned og samlet salg som søjlediagram               |
 |        |         |
 |**HV (relation, kvalificeret)**  | hvornår, hvor, hvilken, hvem, hvor mange, hvor meget, hvor ofte, hvor mange gange, hvor hyppigt, antal, tal, mængde, hvor længe, hvad                |
@@ -90,5 +89,5 @@ Tilbage til [Spørgsmål og svar i Power BI](end-user-q-and-a.md)
 
 [Power BI – Grundlæggende begreber](end-user-basic-concepts.md)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

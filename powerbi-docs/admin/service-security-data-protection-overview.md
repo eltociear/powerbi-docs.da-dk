@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: a84e762d3c27376b72c424022e3fee3f595d6861
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 1349d62d0400c0ad283f6e9e234c44ffce0d63b9
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432825"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73766407"
 ---
 # <a name="data-protection-in-power-bi-preview"></a>Databeskyttelse i Power BI (prøveversion)
 
@@ -101,10 +101,10 @@ Følgende liste indeholder nogle begrænsninger for følsomhedsmærkater i Power
 * En bruger, der eksporterer en fil fra Power BI, har tilladelse til at tilgå og redigere filen i henhold til indstillingerne for følsomhedsmærkaten. Den bruger, der eksporterer dataene, får ikke ejerens tilladelser til filen. 
 * Følsomhedsmærkater er i øjeblikket ikke tilgængelige til [sideinddelte rapporter]( https://docs.microsoft.com/power-bi/paginated-reports-report-builder-power-bi) og projektmapper. 
 * Du kan i øjeblikket ikke slette en mærkat fra et Power BI-aktiv, når den først er blevet anvendt.
-* Følsomhedsmærkater for Power BI-aktiver kan kun ses på listen over arbejdsområder og linjevisninger. Mærkater er i øjeblikket ikke synlige i Favoritter, Delt med mig, Seneste eller programvisninger. Bemærk dog, at en mærkat, som er anvendt for et Power BI-aktiv, altid bevares for data, der eksporteres til Excel-, PowerPoint- og PDF-filer, også selvom mærkaten ikke er synlig.
+* Følsomhedsmærkater på Power BI-aktiver kan kun ses på listen over arbejdsområder og linjevisninger. Mærkater er i øjeblikket ikke synlige i Favoritter, Delt med mig, Seneste eller programvisninger. Bemærk dog, at en mærkat, som er anvendt på et Power BI-aktiv, altid bevares for data, der eksporteres til Excel-, PowerPoint- og PDF-filer, også selvom mærkaten ikke er synlig.
 * *Indstillingen for filkryptering* i følsomhedsmærkaten konfigureres enten i [Microsoft 365 Security Center](https://security.microsoft.com/) eller [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) og gælder kun for filer, der *eksporteres fra* Power BI. Den gennemtvinges ikke *i* Power BI.
 * [HYOK-beskyttelse](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) understøttes ikke for mærkater, der anvendes i Power BI.
-* Der er [licenskrav](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#common-requirements) for visning og anvendelse af mærkater i Office-programmer.
+* Der er [licenskrav](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#subscription-and-licensing-requirements-for-sensitivity-labels) for visning og anvendelse af mærkater i Office-programmer.
 * Følsomhedsmærkater understøttes kun for lejere i det globale cloudmiljø (offentligt). Følsomhedsmærkater understøttes ikke for lejere i andre cloudmiljøer.
 
 

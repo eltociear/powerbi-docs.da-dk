@@ -2,19 +2,18 @@
 title: Aktivér Cortana til Power BI
 description: Brug Cortana med Power BI til at få svar fra dine data. Aktivér Cortana for hvert Power BI-datasæt, og gør derefter Cortana i stand til at få adgang til dine datasæt fra Windows-enheder.
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: b1792abeed1a4a03cb8e3f49acb4ed8aa53b1be0
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: a631bc37c193521b2acc367a0c6d8540419e3b79
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020507"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872896"
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Gør Cortana i stand til at få adgang til Power BI-rapporter (og deres underliggende datasæt)
 Du har læst [Introduktion til Cortana og Power BI](service-cortana-intro.md) (hvis ikke, kan du læse den først og derefter vende tilbage). Og nu vil du selv prøve.  Før du kan stille spørgsmål på naturligt sprog i Cortana og finde svar fra data, der er gemt i Power BI-***rapporter***, er der nogle få krav. Du skal specifikt gøre følgende.
@@ -84,5 +83,5 @@ Cortana vil bruge denne arbejds- eller skolekonto til at kontrollere, om der i P
 
 [Fejlfinding af problemer med integration mellem Cortana og Power BI](service-cortana-troubleshoot.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

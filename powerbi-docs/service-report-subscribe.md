@@ -2,7 +2,6 @@
 title: Meld dig selv og andre til et abonnement på rapporter og dashboards
 description: Få mere at vide om, hvordan du melder dig selv og andre til abonnementer på et snapshot af en rapportside, et dashboard eller en sideinddelt rapport i Power BI.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: e3e22a40b385ab519767eb850617a0506dbfbfd2
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: c8e95a53e0907de86449a91095d2c5afbef5b4c8
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72891837"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099769"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten
 
@@ -97,7 +96,7 @@ Et abonnement slutter, hvis Pro-licensen udløber, hvis ejeren sletter dashboard
 * Rapportsideabonnementer er bundet til navnet på siden i rapporten. Hvis du abonnerer på en rapportside og omdøber den, skal du genoprette dit abonnement.
 * Din organisation kan konfigurere bestemte indstillinger i Azure Active Directory, som begrænser muligheden for at bruge mailabonnementer i Power BI.  Disse begrænsninger omfatter, men er ikke begrænset til, multifaktorgodkendelse eller IP-intervalbegrænsning, når ressourcer tilgås.
 * Mailabonnementer på rapporter/dashboards, der bruger direkte forbindelser, understøttes i øjeblikket ikke, når andre end dig selv tilmeldes et abonnement, medmindre du bruger en sideinddelt rapport, som giver dig mulighed for at sende abonnementet til andre, som bruger din sikkerhedskontekst. 
-* Mailabonnementer understøtter ikke de fleste [brugerdefinerede visualiseringer](power-bi-custom-visuals.md).  Den eneste undtagelse er de brugerdefinerede visualiseringer, der er blevet [certificeret](power-bi-custom-visuals-certified.md).  
+* Mailabonnementer understøtter ikke de fleste [brugerdefinerede visualiseringer](developer/power-bi-custom-visuals.md).  Den eneste undtagelse er de brugerdefinerede visuelle elementer, der er blevet [certificeret](developer/power-bi-custom-visuals-certified.md).  
 * Mailabonnementer understøtter ikke R-drevne brugerdefinerede visualiseringer på nuværende tidspunkt.  
 * Mailabonnementer sendes med rapportens tilstande for standardfilter og -udsnit. Hvis du ændrer standardværdierne, efter du har oprettet abonnementet, vises de ikke i mailen.  Sideinddelte rapporter understøtter denne egenskab og giver dig mulighed for at angive de specifikke parameterværdier pr. abonnement.   
 * For dashboardabonnementer specifikt understøttes visse typer felter endnu ikke.  Det omfatter: streamingfelter, videofelter, felter med brugerdefineret webindhold.     
@@ -109,5 +108,5 @@ Et abonnement slutter, hvis Pro-licensen udløber, hvis ejeren sletter dashboard
 ## <a name="next-steps"></a>Næste trin
 
 - [Meld dig selv og andre til et abonnement på en sideinddelt rapport i Power BI-tjenesten](paginated-reports-subscriptions.md)
-- Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)    
+- Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)    
 - [Læs blogindlægget](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)

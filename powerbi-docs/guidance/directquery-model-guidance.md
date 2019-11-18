@@ -2,19 +2,18 @@
 title: Vejledning til DirectQuery-model i Power BI Desktop
 description: Vejledning til udvikling af DirectQuery-modeller.
 author: peter-myers
-manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 02837b633465aab2a6d8c4eee6245f7b00ed9e26
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: cd82410a8e5d6867f26b751e01b7556fabb83d33
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73433282"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875410"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Vejledning til DirectQuery-model i Power BI Desktop
 
@@ -100,7 +99,7 @@ Rapporter, der er baseret på et DirectQuery-datasæt, kan optimeres på mange m
     ![Power BI Desktop-vinduet åbnes, og siden Reduktion af forespørgsler i den aktuelle fil er valgt. Der findes tre muligheder for at reducere antallet af sendte forespørgsler og for at få vist knappen Anvend for udsnit og filtre.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-query-reduction.png)
     
 - **Anvend filtre først:** Når du starter med at designe rapporter, anbefaler vi, at du anvender relevante filtre – på rapport-, side eller visualiseringsniveau – før felterne knyttes til visualiseringens felter. I stedet for f.eks. at trække målingerne **Land** og **Salg** ind og derefter filtrere dem efter et bestemt år, skal du anvende filteret på feltet **År** først. Dette skyldes, at hvert enkelt trin i oprettelsen af en visualisering sender en forespørgsel, og selvom det derefter er muligt at foretage en anden ændring, før den første forespørgsel er fuldført, så pålægger det stadig den underliggende datakilde en unødvendig belastning. Når du anvender filtre tidligt, hjælper det generelt med at gøre disse mellemliggende forespørgsler billigere og hurtigere. Hvis du ikke anvender filtre tidligt, kan det også resultere i en overskridelse af grænsen på én million rækker, som beskrevet ovenfor.
-- **Begræns antallet af visualiseringer på en side:** Når en rapportside åbnes (og når der anvendes filtre på siden), opdateres alle visualiseringer på siden. Der er dog en grænse for antallet af forespørgsler, der kan sendes parallelt, og som pålægges af Power BI-miljøet, og for indstillingen **Maksimale antal forbindelser pr. datakilde** for modellen, som beskrevet ovenfor. Så i takt med at antallet af visualiseringer på siden øges, er der større risiko for, at de opdateres serielt. Dette øger den tid, det tager at opdatere hele siden, og det øger også risikoen for, at visualiseringerne kan vise uoverensstemmende resultater (for flygtige datakilder). Derfor anbefales det at begrænse antallet af visualiseringer på en enkelt side og i stedet anvende flere enklere sider. Bemærk, at et lignende sidelayout kan opnås ved at erstatte flere kortvisualiseringer med en enkelt kortvisualisering med flere rækker.
+- **Begræns antallet af visuelle elementer på en side:** Når en rapportside åbnes (og når der anvendes filtre på siden), opdateres alle visualiseringer på siden. Der er dog en grænse for antallet af forespørgsler, der kan sendes parallelt, og som pålægges af Power BI-miljøet, og for indstillingen **Maksimale antal forbindelser pr. datakilde** for modellen, som beskrevet ovenfor. Så i takt med at antallet af visualiseringer på siden øges, er der større risiko for, at de opdateres serielt. Dette øger den tid, det tager at opdatere hele siden, og det øger også risikoen for, at visualiseringerne kan vise uoverensstemmende resultater (for flygtige datakilder). Derfor anbefales det at begrænse antallet af visualiseringer på en enkelt side og i stedet anvende flere enklere sider. Bemærk, at et lignende sidelayout kan opnås ved at erstatte flere kortvisualiseringer med en enkelt kortvisualisering med flere rækker.
 - **Slå interaktion mellem visualiseringer fra:** Krydsfremhævning og krydsfiltrering af interaktioner kræver, at der sendes forespørgsler til den underliggende kilde. Medmindre disse interaktioner er nødvendige, anbefales det, at de slås fra, hvis den tid, det tager at reagere på brugernes valg, vil være urimelig lang. Disse interaktioner kan dog slås fra enten for hele rapporten (som beskrevet ovenfor i forbindelse med indstillinger for reduktion af forespørgsler) eller på ad hoc-basis, som beskrevet i artiklen [Sådan krydsfiltrerer visualiseringer hinanden i en Power BI-rapport](../consumer/end-user-interactions.md).
 
 Foruden ovenstående liste over optimeringsteknikker bedes du bemærke, at hver af følgende rapporteringsegenskaber kan bidrage til problemer med ydeevnen:

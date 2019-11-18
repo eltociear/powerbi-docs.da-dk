@@ -3,7 +3,6 @@ title: Integreret analyse med Power BI
 description: Power BI tilbyder API'er, så du kan bruge integreret analyse af dine dashboards og rapporter i programmer. Få mere at vide om integrering med Power BI både i et PaaS-miljø og et SaaS-miljø ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede business intelligence-værktøjer.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -17,12 +16,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: 501b43b7a17d60bbb277cd68c1a5d13e09b14bd5
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: ccd5917b91d9dd0576f0f4607f84f849f6df145d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430738"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875763"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Integreret analyse med Power BI
 
@@ -102,4 +101,4 @@ Nu kan du prøve at integrere Power BI-indhold i en app, eller du kan prøve at 
 > [!div class="nextstepaction"]
 >[Integrer indhold for dine kunder](embed-sample-for-customers.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

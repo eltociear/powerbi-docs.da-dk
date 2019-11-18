@@ -2,7 +2,6 @@
 title: Brug af rapporter i Power BI med tilgængelighedsværktøjer
 description: Værktøjer, der gør brug af rapporter i Power BI tilgængelig
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b50b291b6d7f583252cce6e270ff135c1ba0de12
-ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
+ms.openlocfilehash: ca2f1cd4908f99d47519f2dfca42bf2afae5fbed
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73181177"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878935"
 ---
 # <a name="consuming-reports-in-power-bi-with-accessibility-tools"></a>Brug af rapporter i Power BI med tilgængelighedsværktøjer
 Power BI indeholder mange indbyggede funktioner, der gør det nemmere for personer med et handicap at bruge og interagere med Power BI-rapporter. Disse værktøjer hjælper brugerne med at få de samme oplysninger ud af en rapport som personer, der ikke bruger hjælpeteknologi.
@@ -80,7 +79,7 @@ Du kan flytte gennem kontrolelementerne i et udsnit ved at trykke på **tabulato
 Når der er fokus på en **rapports sidefaner**, skal du bruge **tabulator**- eller piletasten til at flytte fokus fra én rapportside til den næste. Titlen på rapportsiden, og om den er markeret i øjeblikket, læses højt af skærmlæseren. Brug **Enter** eller **mellemrumstasten** til at indlæse den rapportside, der i øjeblikket er fokus på.
 
 ### <a name="accessing-the-visual-header"></a>Adgang til den visuelle header
-Når du navigerer mellem visualisering, kan du trykke på **Alt + Skift + F10** for at flytte fokus til den visuelle header. Den visuelle header indeholder forskellige muligheder, herunder sortering, eksport af dataene bag diagrammet og fokustilstand. De ikoner, du kan se i den visuelle header, afhænger af de indstillinger, som rapportforfatteren har valgt at vise.
+Når du navigerer mellem visuals, kan du trykke på **Alt + Skift + F10** for at flytte fokus til den visuelle header. Den visuelle header indeholder forskellige muligheder, herunder sortering, eksport af dataene bag diagrammet og fokustilstand. De ikoner, du kan se i den visuelle header, afhænger af de indstillinger, som rapportforfatteren har valgt at vise.
 
 ![Navigering i den visuelle header](media/desktop-accessibility/accessibility-consuming-tools-07.png)
 

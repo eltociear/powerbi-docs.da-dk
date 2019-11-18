@@ -2,7 +2,6 @@
 title: Rediger, hvordan et diagram sorteres i en rapport
 description: Rediger, hvordan et diagram sorteres i en rapport i Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: aaf2af2209097b75a4a6aee4faa062bc432dd765
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: e325d13dd8001e8da41dc5602bf3f7dbba2f371f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019942"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852373"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Rediger, hvordan et diagram sorteres i en rapport i Power BI
 
@@ -29,7 +28,7 @@ Uanset om du bruger numeriske data, f.eks. salgstal, eller tekstdata, f.eks. nav
 
 Visualiseringer på et dashboard kan ikke sorteres, men i en Power BI-rapport kan du sortere de fleste visualiseringer alfabetisk efter navnene på kategorierne i diagrammet eller efter de numeriske værdier for hver kategori. Dette diagram er f.eks. sorteret alfabetisk efter kategorien **butiksnavn**.
 
-![søjlediagram sorteret alpha af X-akse](media/end-user-change-sort/pbi_chartsortcategory.png)
+![søjlediagram sorteret alpha af X-akse](media/end-user-change-sort/pbi-chartsortcategory.png)
 
 Det er nemt at ændre sorteringen fra en kategori (gem navn) til en værdi (salg pr. kvadratfod) i stedet.
 

@@ -2,18 +2,17 @@
 title: Introduktion til værktøjer til Spørgsmål og svar for at oplære Spørgsmål og svar i Power BI (prøveversion)
 description: Introduktion til værktøjer til Spørgsmål og svar i Power BI
 author: mohaali
-manager: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/17/2019
 ms.author: mohaali
-ms.openlocfilehash: 60db4b1cbae070983b98e694a2d6f1abed119790
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: 17d0a68782f34c09286be5ebe020668a15061ee4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72717882"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874952"
 ---
 # <a name="intro-to-qa-tooling-to-train-power-bi-qa-preview"></a>Introduktion til værktøjer til Spørgsmål og svar for at oplære Spørgsmål og svar i Power BI (prøveversion)
 
@@ -43,13 +42,13 @@ Værktøjer til Spørgsmål og svar er kun tilgængelige i Power BI Desktop og u
 
     ![Introduktion til Spørgsmål og svar](media/qna-tooling-dialog.png)
 
-### <a name="review-questions"></a>Repetitionsspørgsmål
+### <a name="review-questions"></a>Gennemse spørgsmål
 
 Vælg **Repetitionsspørgsmål** for at se en liste over datasæt, der bruges i Power BI-tjenesten for din lejer. På siden **Repetitionsspørgsmål** kan du også se ejeren af datasættet, arbejdsområdet og datoen for seneste opdatering. Herfra kan du vælge et datasæt og se, hvilke spørgsmål brugerne har stillet. Dataene viser også ord, der ikke blev genkendt. Alle de data, der vises her, er for de seneste 28 dage.
 
 ![Repetitionsspørgsmål til Spørgsmål og svar](media/qna-tooling-review-questions.png)
 
-### <a name="teach-qa"></a>Træn Spørgsmål og svar
+### <a name="teach-qa"></a>Oplær Spørgsmål og svar
 
 I afsnittet **Træn Spørgsmål og svar** kan du oplære Spørgsmål og svar, så det kan genkende ord. Du begynder ved at skrive et spørgsmål, der indeholder et eller flere ord, som Spørgsmål og svar ikke kan genkende. Spørgsmål og svar beder dig om en definition af begrebet. Angiv enten et filter eller et feltnavn, der svarer til det, som ordet repræsenterer. Spørgsmål og svar genfortolker derefter det oprindelige spørgsmål. Hvis du er tilfreds med resultaterne, kan du gemme dit input. Du kan finde flere oplysninger under [Træn Spørgsmål og svar](q-and-a-tooling-teach-q-and-a.md)
 

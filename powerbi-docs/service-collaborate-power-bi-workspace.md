@@ -2,7 +2,6 @@
 title: Samarbejd i et klassisk arbejdsområde
 description: Læs om, hvordan du samarbejder om Power BI Desktop-filer i dit arbejdsområde og med Office 365-tjenester såsom deling af filer på OneDrive for Business, samtaler i Exchange, kalender og opgaver.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 860aa1de5a91d98e6a50773250e89581fc1d9801
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: cddb55ab85cfd6d8d6a5e49d81b83a80df2f81da
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021346"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873182"
 ---
 # <a name="collaborate-in-a-classic-workspace"></a>Samarbejd i et klassisk arbejdsområde
 Power BI-arbejdsområder er fantastiske steder, hvor du kan samarbejde med dine kolleger om dashboards, rapporter og datasæt for at oprette *apps*. Denne artikel omhandler de oprindelige, *klassiske* arbejdsområder.  
@@ -80,6 +79,6 @@ Hvis du er ejer eller administrator af et arbejdsområde, kan du også tilføje 
 
 ## <a name="next-steps"></a>Næste trin
 * [Publicer apps i Power BI](service-create-distribute-apps.md).
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/).
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
 * Har du feedback? Besøg [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi).
 

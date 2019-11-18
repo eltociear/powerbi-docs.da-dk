@@ -3,18 +3,17 @@ title: Hvad er sideinddelte rapporter i Power BI Premium?
 description: Sideinddelte rapporter, der længe har været standardrapportformatet i SQL Server Reporting Services, er nu tilgængelige i Power BI-tjenesten. Disse rapporter kan udskrives eller deles. Du kan styre rapportlayoutet præcist. De viser alle data i en tabel, også selvom tabellen strækker sig over flere sider.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 09/24/2019
-ms.openlocfilehash: a0172f655a53e80b4c5ef8a3bdb922ddaec789b4
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 9e49e8e70e7bc499fbcfe0c263bdd8315f2c7dbe
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431563"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874720"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Hvad er sideinddelte rapporter i Power BI Premium?
 
@@ -26,7 +25,7 @@ Sideinddelte rapporter kan indeholde mange sider. Denne rapport indeholder f.eks
 
 ![Sideinddelt rapport i Power BI-tjenesten](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
-Du kan få vist et eksempel på rapporten i Report Builder og derefter publicere den i Power BI-tjenesten, http://app.powerbi.com. Du skal bruge en Power BI Pro-licens for at publicere en rapport i tjenesten. Du kan publicere og dele sideinddelte rapporter i Mit arbejdsområde eller i arbejdsområder, så længe arbejdsområdet er placeret i en Power BI Premium-kapacitet. En Power BI-administrator skal også aktivere sideinddelte rapporter under [afsnittet for Premium-kapaciteter](service-admin-premium-workloads.md#paginated-reports) på Power BI-administrationsportalen. 
+Du kan få vist et eksempel på rapporten i Report Builder og derefter publicere den i Power BI-tjenesten, https://app.powerbi.com. Du skal bruge en Power BI Pro-licens for at publicere en rapport i tjenesten. Du kan publicere og dele sideinddelte rapporter i Mit arbejdsområde eller i arbejdsområder, så længe arbejdsområdet er placeret i en Power BI Premium-kapacitet. En Power BI-administrator skal også aktivere sideinddelte rapporter under [afsnittet for Premium-kapaciteter](service-admin-premium-workloads.md#paginated-reports) på Power BI-administrationsportalen. 
 
 ## <a name="create-reports-in-power-bi-report-builder"></a>Opret rapporter i Power BI Report Builder
 
@@ -62,7 +61,7 @@ Alt i en sideinddelt rapport – fra selve rapporten til alle tekstfelter, bille
 
 ## <a name="creating-a-report-definition"></a>Oprettelse af en rapportdefinition
 
-Når du designer en sideinddelt rapport, opretter du faktisk en *rapportdefinition*. Den indeholder ikke dataene. Den angiver, hvor dataene skal hentes, hvilke data der skal hentes, og hvordan dataene skal vises. Når du kører rapporten, bruger rapportbehandleren den angivne rapportdefinition, henter dataene og kombinerer det med rapportlayoutet for at generere rapporten. Du kan uploade rapportdefinitionen til Power BI-tjenesten, http://app.powerbi.com, enten til Mit arbejdsområde eller til et arbejdsområde, der er delt med dine kolleger. Hvis rapportdatakilden er placeret er i det lokale miljø, skal du omdirigere datakildeforbindelsen, så den går gennem en gateway, når du har uploadet rapporten. 
+Når du designer en sideinddelt rapport, opretter du faktisk en *rapportdefinition*. Den indeholder ikke dataene. Den angiver, hvor dataene skal hentes, hvilke data der skal hentes, og hvordan dataene skal vises. Når du kører rapporten, bruger rapportbehandleren den angivne rapportdefinition, henter dataene og kombinerer det med rapportlayoutet for at generere rapporten. Du kan uploade rapportdefinitionen til Power BI-tjenesten, https://app.powerbi.com, enten til Mit arbejdsområde eller til et arbejdsområde, der er delt med dine kolleger. Hvis rapportdatakilden er placeret er i det lokale miljø, skal du omdirigere datakildeforbindelsen, så den går gennem en gateway, når du har uploadet rapporten. 
 
 ## <a name="view-your-paginated-report"></a>Få vist din sideinddelte rapport
 Du får vist din sideinddelte rapport i Power BI-tjenesten i en browser og i Power BI-mobilapps. I Power BI-tjenesten kan du eksportere rapporten til en række formater, f.eks. HTML, MHTML, PDF, XML, CSV, TIFF-, Word og Excel. Du kan også dele den med andre.  

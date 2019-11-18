@@ -3,18 +3,17 @@ title: Fejlfinding af det integrerede program
 description: Denne artikel beskriver nogle almindelige problemer, som kan opstå under integrationen af indhold fra Power BI.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: 5b9a0de8a3a9301219c15e5566854b591e79ba5e
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 4038ffdb9a3218c0b2f04dd524463235fa91b6b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429320"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864096"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Foretag fejlfinding af dit integrerede program
 
@@ -24,7 +23,7 @@ I denne artikel beskrives nogle almindelige problemer, som kan opstå, når du i
 
 ### <a name="fiddler-trace"></a>Fiddler-sporing
 
-[Fiddler](http://www.telerik.com/fiddler) er et gratis værktøj fra Telerik, der overvåger HTTP-trafik.  Du kan se trafikken vha. Power BI-API'er fra klientcomputeren. Dette værktøj kan vise fejl og andre relaterede oplysninger.
+[Fiddler](https://www.telerik.com/fiddler) er et gratis værktøj fra Telerik, der overvåger HTTP-trafik.  Du kan se trafikken vha. Power BI-API'er fra klientcomputeren. Dette værktøj kan vise fejl og andre relaterede oplysninger.
 
 ![Fiddler-sporing](media/embedded-troubleshoot/fiddler.png)
 
@@ -80,7 +79,7 @@ En fiddler-optagelse kan være påkrævet med henblik på yderligere efterforskn
 * Azure AD auth-tokenet kan være udløbet.
 * Den godkendte bruger er ikke et medlem af gruppen (arbejdsområde).
 * Den godkendte bruger er ikke en administrator af gruppen (arbejdsområde).
-* Den godkendte bruger har ikke tilladelser. Tilladelser kan opdateres ved hjælp af [refreshUserPermissions API](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions)
+* Den godkendte bruger har ikke tilladelser. Tilladelser kan opdateres ved hjælp af [refreshUserPermissions API](https://docs.microsoft.com/rest/api/power-bi/users/refreshuserpermissions)
 * Godkendelsesheaderen kan være angivet forkert. Kontroller for tastefejl.
 
 Programmets backend skal muligvis opdatere godkendelsestokenet før kaldet til GenerateToken.
@@ -293,7 +292,7 @@ Når du kører eksempelappen **Embed for your organization**, får du følgende 
 
     AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
 
-Denne fejl skyldes, at den URL-adresse til omdirigering, der er angivet for webserverprogrammet, er forskellig fra URL-adressen i eksemplet. Hvis du vil registrere eksempelappen, skal du bruge `http://localhost:13526/` som URL-adresse til omdirigering.
+Denne fejl skyldes, at den URL-adresse til omdirigering, der er angivet for webserverprogrammet, er forskellig fra URL-adressen i eksemplet. Hvis du vil registrere eksempelappen, skal du bruge `https://localhost:13526/` som URL-adresse til omdirigering.
 
 Hvis du vil redigere det registrerede program, skal du lære at [opdatere den Azure AD-registrerede app](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), så den kan give adgang til web-API'erne.
 
@@ -305,7 +304,7 @@ Hvis du får vist fejlen – AADSTS50079: Brugeren skal anvende multifaktorgodke
 
 Du kan finde flere oplysninger under [Ofte stillede spørgsmål om Power BI Embedded](embedded-faq.md).
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 
 Hvis du har brug for yderligere hjælp, kan du [kontakte support](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) eller [oprette en supportanmodning via Azure Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) og angive de fejlmeddelelser, du får vist.
 
@@ -313,4 +312,4 @@ Hvis du har brug for yderligere hjælp, kan du [kontakte support](https://powerb
 
 Du kan finde flere oplysninger under [Ofte stillede spørgsmål](embedded-faq.md).
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

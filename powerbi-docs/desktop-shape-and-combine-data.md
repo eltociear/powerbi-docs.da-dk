@@ -2,7 +2,6 @@
 title: 'Selvstudium: Form og kombiner data i Power BI Desktop'
 description: I dette selvstudium lærer du, hvordan du former og kombinerer data i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 19e0fa75426cd3e3f72ce9c01712b8d1c52e4abf
-ms.sourcegitcommit: 17f45a81b0dcbf9e3f1fb2a551584170baecd320
+ms.openlocfilehash: d6a36f8ef3ef5d668fe8d6021758b651cdbf7fd5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72922593"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877811"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Selvstudium: Form og kombiner data i Power BI Desktop
 
@@ -56,7 +55,7 @@ Hvis vi bruger de pensionsdata fra [Introduktion til Power BI Desktop](desktop-g
 
 1. Transformér de nye kolonneværdier til heltal for at sikre, at kolonnedataene er ensartet. Du ændrer dem ved at højreklikke på kolonneoverskriften og vælge **Skift type \> Heltal**. 
 
-    Hvis du har brug for at vælge mere end én kolonne, skal du markere en kolonne, holde **Skift** nede, markere yderligere tilstødende kolonner og derefter højreklikke på en kolonneoverskrift. Du kan også holde **Ctrl** nede for at markere kolonner, der ikke støder op til hinanden.
+    Hvis du har brug for at vælge mere end én kolonne, skal du markere en kolonne, holde **Skift** nede, markere yderligere tilstødende kolonner og derefter højreklikke på en kolonneoverskrift. Du kan også holde **Ctrl** nede for at vælge kolonner, der ikke støder op til hinanden.
 
     ![Vælg data for kolonnen Heltal](media/desktop-shape-and-combine-data/shapecombine_changetype2.png)
 
@@ -195,7 +194,7 @@ Vi er heldige. Der er en anden offentlig datakilde, som gør lige præcis dette,
 
 1. På båndet **Start** i Forespørgselseditor skal du vælge **Ny kilde \> Web**. 
 
-2. Angiv adressen på webstedet for at finde forkortelser på stater, *http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations* , og vælg derefter **Opret forbindelse**.
+2. Angiv adressen på webstedet for at finde forkortelser på stater, *https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations* , og vælg derefter **Opret forbindelse**.
 
    Indholdet af webstedet vises i navigatoren.
 
