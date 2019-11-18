@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 3/27/2019
-ms.openlocfilehash: f97c38301eb69422c123503364e2e3f11ce5368a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8d320b5fa1387ebf21ecd8c3c1db70b9892154e7
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880525"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128047"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Publicer Power BI-visualiseringer i AppSource
 
@@ -142,13 +142,13 @@ Når du har indsendt visualiseringen, vil du kunne se statussen for den i [appda
 
 ## <a name="certify-your-visual"></a>Certificer din visualisering
 
-Når du har oprettet din visualisering, kan du vælge at få den certificeret. Det betyder, at den kan køre i Power BI-tjenesten, og at den kan bruges sammen med andre funktioner som f.eks. eksport til PowerPoint. Du kan finde flere oplysninger under [Sådan får du en brugerdefineret visualisering *certificeret*](../power-bi-custom-visuals-certified.md).
+Når du har oprettet din visualisering, kan du vælge at få den certificeret. Det betyder, at den kan køre i Power BI-tjenesten, og at den kan bruges sammen med andre funktioner som f.eks. eksport til PowerPoint. Du kan finde flere oplysninger under [Sådan får du en brugerdefineret visualisering *certificeret*](../developer/power-bi-custom-visuals-certified.md).
 
 ## <a name="next-steps"></a>Næste trin
 
 [Udvikling af en brugerdefineret visualisering i Power BI](visuals/custom-visual-develop-tutorial.md)  
 [Visualiseringer i Power BI](../visuals/power-bi-report-visualizations.md)  
-[Brugerdefinerede visualiseringer i Power BI](../power-bi-custom-visuals.md)  
-[Sådan får du en brugerdefineret visualisering *certificeret*](../power-bi-custom-visuals-certified.md)
+[Brugerdefinerede visualiseringer i Power BI](../developer/power-bi-custom-visuals.md)  
+[Sådan får du en brugerdefineret visualisering *certificeret*](../developer/power-bi-custom-visuals-certified.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

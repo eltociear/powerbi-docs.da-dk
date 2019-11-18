@@ -2,20 +2,21 @@
 title: Eksportér data fra en Power BI-visualisering
 description: Eksportér data fra en rapportvisualisering og en dashboardvisualisering, og få dem vist i Excel.
 author: mihart
-ms.reviewer: ''
+manager: kvivek
+ms.reviewer: tessa
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/30/2019
+ms.date: 11/13/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6ee1b0aa9ff6e3b0668d208775cbea50534b1572
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b2474cd5cc82e1736790f4a352b216dcc8013a6f
+ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880883"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060473"
 ---
 # <a name="export-data-from-visualizations"></a>Eksportér data fra visualiseringer
 
@@ -158,8 +159,6 @@ Disse begrænsninger og overvejelser gælder for Power BI Desktop og Power BI-tj
 - Det maksimale antal rækker, som programmerne kan eksportere fra en **rapport for importtilstand** til en *.xlsx-fil* er 150.000.
 
 - Eksport ved hjælp af *underliggende data* fungerer ikke, hvis:
-
-  - Datakilden er en direkte Azure Analysis Services-forbindelse eller en direkte SQL Server Analysis Services-forbindelse.
 
   - Versionen er ældre end 2016.
 

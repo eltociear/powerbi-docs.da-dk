@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 45a645227a5d7a18fd05738559ed0bccc0e1f7c9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4aa3d46741044498846865278db51859980a19b9
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872395"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010831"
 ---
 # <a name="on-premises-data-gateway-faq---power-bi"></a>Ofte stillede spørgsmål om datagatewayen i det lokale miljø – Power BI
 
@@ -41,10 +41,6 @@ ms.locfileid: "73872395"
 **Spørgsmål:** Hvorfor kan jeg ikke oprette forbindelse til Oracle-serveren? 
 
 **Svar:** Du skal muligvis installere Oracle-klienten og konfigurere tnsnames.ora-filen med oplysninger om den korrekte server for at oprette forbindelse til Oracle-serveren. Dette er en separat installation uden for gateway'en. Du kan finde flere oplysninger under [Installér Oracle-klienten](service-gateway-onprem-manage-oracle.md#install-the-oracle-client).
-
-**Spørgsmål:** Kan gatewayen fungere med Microsoft Azure ExpressRoute? 
-
-**Svar:** Ja. Du kan finde flere oplysninger om ExpressRoute og Power BI under [Power BI og ExpressRoute](service-admin-power-bi-expressroute.md).
 
 **Spørgsmål:** Jeg bruger R-script. Understøttes det?
 

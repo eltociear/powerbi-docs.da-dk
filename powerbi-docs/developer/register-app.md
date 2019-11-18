@@ -1,19 +1,19 @@
 ---
 title: Registrer en app for at integrere Power BI-indhold
 description: Få mere at vide om, hvordan du registrerer et program i Azure Active Directory, som skal bruges til at integrere Power BI-indhold.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/02/2019
-ms.openlocfilehash: eb9b5190341b50aa911f5d8aaca07bd7d04ba90d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8a2aa135bfa5720763485579b012c13c722637db
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880397"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74009811"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Registrer et Azure AD-program, som skal bruges sammen med Power BI
 
@@ -104,7 +104,7 @@ Du skal være logget på enten via *hovedkontoen*, der er brugt til integrering,
 
 ### <a name="using-the-azure-ad-portal"></a>Brug af Azure AD-portalen
 
-1. Gå til [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) (Appregistreringer) i Azure Portal, og vælg den app, du bruger til at integrere.
+1. Gå til [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade/quickStartType//sourceType/) (Appregistreringer) i Azure Portal, og vælg den app, du bruger til at integrere.
 
 2. Vælg **API-tilladelser** under **Administrer**.
 

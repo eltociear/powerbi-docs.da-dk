@@ -6,15 +6,15 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 11/07/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b45d0fb20dbb9a697e6d079a6b28c0fc86290627
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 1ae0fc339d3837c8fc28cc604b3ddb840807dcd5
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881070"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74011287"
 ---
 # <a name="data-point-limits-and-strategies-by-visual-type"></a>Datapunktgrænser og strategier efter visualiseringstype
 
@@ -150,7 +150,6 @@ Begrænset til 150.000 rækker. Hvis der er valgt flere end 150.000 rækker, bru
 Figurkortet kan bruge statistikker eller dynamiske grænser. 
 - Maksimumpunkter: 1.500
 - Kategorier: Øverste 500
-- Serie (når både X og Y er til stede): Øverste 20
 
 ### <a name="table"></a>Tabel
 - Værdier: Virtualisering (datavindue) ved hjælp af vindue på 500 rækker ad gangen

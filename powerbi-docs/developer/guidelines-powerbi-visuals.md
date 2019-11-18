@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
-ms.openlocfilehash: 84c873c925c7e733c70b309d5cc2476dff2e553b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e650b1eb8fd05db54b9d0bf9021eaa881d28832e
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863950"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128199"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Retningslinjer for Power BI-visualiseringer
 Før du [publicerer](https://docs.microsoft.com/power-bi/developer/office-store) din visualisering i AppSource, så andre kan finde og bruge den, skal du sørge for at følge retningslinjerne for at skabe en fantastisk oplevelse for dine brugere. 
@@ -52,7 +52,7 @@ Eventuelle informative ikoner skal i læsetilstand overholde den farve, størrel
 
 Indtil for nylig accepterede Marketplace (AppSource) kun gratis Power BI-visualiseringer. Denne politik er blevet ændret (december 2018), så du nu også kan indsende visualiseringer til AppSource, som har prismærket "Yderligere køb kan være påkrævet". 
 
-Visualiseringer med "Yderligere køb kan være påkrævet" er ligesom tilføjelsesprogrammer med apptilkøb i Office Store. Udviklere kan også indsende disse visualiseringer til certificering, efter AppSource-teamet har godkendt dem, og de har kontrolleret, at de overholder certificeringskravene. Du kan finde flere oplysninger om kravene i [Certificerede Power BI-visualiseringer](../power-bi-custom-visuals-certified.md).
+Visualiseringer med "Yderligere køb kan være påkrævet" er ligesom tilføjelsesprogrammer med apptilkøb i Office Store. Udviklere kan også indsende disse visualiseringer til certificering, efter AppSource-teamet har godkendt dem, og de har kontrolleret, at de overholder certificeringskravene. Du kan finde flere oplysninger om kravene i [Certificerede Power BI-visualiseringer](../developer/power-bi-custom-visuals-certified.md).
 
 > [!NOTE]
 > En visualisering kan kun certificeres, hvis den ikke har adgang til eksterne tjenester eller ressourcer.
