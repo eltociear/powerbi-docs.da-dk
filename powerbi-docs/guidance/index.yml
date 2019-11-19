@@ -1,0 +1,53 @@
+### YamlMime:Landing
+title: Dokumentation med Power BI-vejledning
+summary: Dokumentationen med Power BI-vejledning indeholder oplysninger om bedste praksis fra det team, der bygger Power BI, og de medarbejdere, der arbejder med vores virksomhedskunder. Her kan du få mere at vide om, hvordan du kan forbedre ydeevnen og få succes med Power BI. Vi opdaterer dokumentationen og tilføjer nye oplysninger, efterhånden som de bliver tilgængelige.
+metadata:
+  title: Dokumentation med Power BI-vejledning
+  description: Dokumentationen med Power BI-vejledning indeholder oplysninger om bedste praksis fra det team, der bygger Power BI, og de medarbejdere, der arbejder med vores virksomhedskunder. Her kan du få mere at vide om, hvordan du kan forbedre ydeevnen og få succes med Power BI. Vi opdaterer dokumentationen og tilføjer nye oplysninger, efterhånden som de bliver tilgængelige.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 11/14/2019
+  ms.openlocfilehash: de1ea8bbc35bc1d2ecc42a8deffc54fd9ac01bc1
+  ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+  ms.translationtype: HT
+  ms.contentlocale: da-DK
+  ms.lasthandoff: 11/16/2019
+  ms.locfileid: "74133836"
+landingContent:
+- title: Power BI-vejledning
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vejledning til Power BI
+      url: overview.md
+    - text: Oversigt over whitepapers
+      url: ../whitepapers.md
+- title: Datamodellering
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Hvad er et stjerneskema?
+      url: star-schema.md
+    - text: Teknikker til datareduktion
+      url: import-modeling-data-reduction.md
+    - text: Vigtigheden af forespørgselsdelegering
+      url: power-query-folding.md
+- title: DAX
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: DIVIDE-funktion vs. divisionsoperator
+      url: dax-divide-function-operator.md
+    - text: Passende brug af fejlfunktioner
+      url: dax-error-functions.md
+- title: Dataflow
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Bedste praksis i forbindelse med dataflow
+      url: ../service-dataflows-best-practices.md
