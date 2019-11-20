@@ -2,7 +2,6 @@
 title: Fra Excel-projektmappe til fantastisk rapport i Power BI-tjenesten
 description: I denne artikel kan du se, hvordan du hurtigt kan oprette en fantastisk rapport fra en Excel-projektmappe.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: 6c393611851e05c7c76983674f2e1de7b5454898
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: c2a4719a03e37569e40d4247939a9f2c73379e52
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020986"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872505"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Fra Excel-projektmappe til fantastisk rapport i Power BI-tjenesten
 Din chef vil gerne se en rapport om dine seneste salgstal kombineret med dine seneste kampagneannoncer, inden dagen er omme. Men de nyeste data befinder sig i forskellige systemer hos tredjeparter og i filer på din bærbare computer. Tidligere har det taget timer at oprette visuelle elementer og formatere en rapport, og du er ved at være lidt nervøs.
@@ -57,7 +56,7 @@ Power BI-tjenesten opretter forbindelse til mange datakilder, herunder Excel-fil
 
    ![Rullelisten Opret](media/service-from-excel-to-stunning-report/power-bi-create-dash.png)
 
-4. Vælg **Hent data** nederst i venstre navigationsrude. 
+4. Vælg **Hent data** nederst i navigationsruden. 
 
 5. Vælg **Hent** under **Opret nyt indhold** i feltet **Filer** på siden **Hent data**.
 
@@ -140,5 +139,5 @@ Lad os sige, at du gerne vil dele dashboardet med din chef. Du kan dele dit dash
 * [Kom i gang med Power BI Desktop](desktop-getting-started.md)
 * [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/).
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
 

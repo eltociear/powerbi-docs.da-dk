@@ -2,7 +2,6 @@
 title: Introduktion til organisationsindholdspakker i Power BI
 description: Læs om at pakke dine dashboards, rapporter, Excel-projektmapper og datasæt som organisationsindholdspakker, som du kan dele med dine kollegaer.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c5f56df51a1f18db7c2080afb79f4ac7abfb2444
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: b766cc4eae71b94a28e12ba989f85542fec2ab83
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431733"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871979"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion til organisationsindholdspakker i Power BI
 > [!NOTE]
@@ -54,7 +53,7 @@ Livscyklus ser noget nær således ud:
    > 
    > 
 2. Nate sender mails til distributionsgruppen, hvor han fortæller dem om den nye indholdspakke.
-3. I Power BI Pro søger Jane, som er medlem af distributionsgruppen Marketing, efter og opretter forbindelse til en indholdspakke i AppSource. Jane har nu en skrivebeskyttet kopi. Jane ved, at den er skrivebeskyttet, da der i venstre navigationsrude er et delingsikon til venstre for navnet på dashboardet og rapporten. Og når Jane vælger dashboardet, vises der et låseikon, som fortæller Jane, at hun ser på et dashboard for en indholdspakke. 
+3. I Power BI Pro søger Jane, som er medlem af distributionsgruppen Marketing, efter og opretter forbindelse til en indholdspakke i AppSource. Jane har nu en skrivebeskyttet kopi. Jane ved, at den er skrivebeskyttet, da der i navigationsruden er et delingsikon til venstre for navnet på dashboardet og rapporten. Og når Jane vælger dashboardet, vises der et låseikon, som fortæller Jane, at hun ser på et dashboard for en indholdspakke. 
 4. Måske ønsker Jane at tilpasse det. Jane har nu sin egen kopi af dashboardet og rapporterne. Janes arbejde påvirker ikke kilden, den oprindelige indholdspakke eller andre medlemmer af distributionsgruppen. De arbejder nu på hver sin kopi af dashboardet og rapporten.
 5. Nate foretager opdateringer af dashboardet, og når det er klar, publicerer han en ny version af indholdspakken.
    
@@ -63,11 +62,11 @@ Livscyklus ser noget nær således ud:
 6. Nu ændrer Nate sikkerhedsindstillingerne. Julio og Jane har ikke længere adgang til indholdet. Det kan også være, at de bliver fjernet fra distributionsgruppen Marketing.
    
    * Julio tilpassede ikke den oprindelige indholdspakke, så indholdet fjernes automatisk. 
-   * Jane tilpassede indholdspakken. Næste gang, Jane åbner dashboardet, er alle felterne fra den oprindelige indholdspakke forsvundet, men de felter, hun fastgjorde fra andre rapporter (som hun stadig har tilladelse til at bruge), vises stadig. De tilknyttede rapporter og datasættet er ikke længere tilgængelige (og vises ikke i venstre navigationsrude).
+   * Jane tilpassede indholdspakken. Næste gang, Jane åbner dashboardet, er alle felterne fra den oprindelige indholdspakke forsvundet, men de felter, hun fastgjorde fra andre rapporter (som hun stadig har tilladelse til at bruge), vises stadig. De tilknyttede rapporter og datasættet er ikke længere tilgængelige (og vises ikke i navigationsruden).
 7. Eller Nate sletter indholdspakken.
    
    * Julio tilpassede ikke den oprindelige indholdspakke, så indholdet fjernes automatisk. 
-   * Jane tilpassede indholdspakken. Næste gang, Jane åbner dashboardet, er alle felter fra den oprindelige indholdspakke forsvundet, men felter, der er fastgjort fra andre rapporter, vises stadig. De tilknyttede rapporter og datasættet er ikke længere tilgængelige (og vises ikke i venstre navigationsrude).
+   * Jane tilpassede indholdspakken. Næste gang, Jane åbner dashboardet, er alle felter fra den oprindelige indholdspakke forsvundet, men felter, der er fastgjort fra andre rapporter, vises stadig. De tilknyttede rapporter og datasættet er ikke længere tilgængelige (og vises ikke i navigationsruden).
 
 ## <a name="data-security"></a>Datasikkerhed
 Alle medlemmer af distributionsgruppen har de samme tilladelser til dataene som vedkommende, der har oprettet indholdspakken. Den eneste undtagelse er tabellariske SSAS-datasæt (SQL Server Analysis Services) i det lokale miljø. Fordi rapporter og dashboards opretter direkte forbindelse til SSAS-modellen i det lokale miljø, bruges legitimationsoplysningerne for hvert enkelte medlem af distributionsgruppen til at bestemme, hvilke data de kan få adgang til.
@@ -76,5 +75,5 @@ Alle medlemmer af distributionsgruppen har de samme tilladelser til dataene som 
 * [Opret og publicer en organisationsindholdspakke](service-organizational-content-pack-create-and-publish.md)
 * [Opret og distribuer en app i Power BI](service-create-distribute-apps.md) 
 * [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

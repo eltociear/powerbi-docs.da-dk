@@ -2,19 +2,18 @@
 title: Vis en rapport
 description: I dette emne beskrives, at Power BI-forbrugere og slutbrugere var nødt til at åbne og få vist en Power BI-rapport.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
-ms.openlocfilehash: fab986cbd5c6b0a55c18157d663eea1ca0fd537e
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: b22da2df92c0cc7130c7a5ebf69e2284c12ffef4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019458"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861957"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Få vist en rapport i Power BI-tjenesten for *forbrugere*
 
@@ -33,11 +32,11 @@ Lad os åbne en rapport, der er delt med dig direkte, og derefter åbne en rappo
    ![Startside](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Åbn en rapport, der er delt med dig
-Power BI-*designere* kan dele en individuel rapport direkte med dig via et link i en mail eller ved at tilføje den automatisk. Indhold, der deles på denne måde, vises i objektbeholderen **Delt med mig** i navigationslinjen og i afsnittet **Delt med mig** på lærredet på startsiden.
+Power BI-*designere* kan dele en individuel rapport direkte med dig via et link i en mail eller ved at tilføje den automatisk. Indhold, der deles på denne måde, vises i objektbeholderen **Delt med mig** i navigationsruden og i afsnittet **Delt med mig** på lærredet Start.
 
 1. Åbn Power BI-tjenesten (app.powerbi.com).
 
-2. Vælg **Startside** i navigationslinjen for at få vist dit lærred på startsiden.  
+2. Vælg **Start** i navigationsruden for at få vist lærredet Start.  
 
    ![Lærred på startsiden](./media/end-user-report-open/power-bi-select-home-new.png)
    
@@ -66,7 +65,7 @@ Power BI-*designere* kan dele en individuel rapport direkte med dig via et link 
    ![tilpas til siden](./media/end-user-report-open/power-bi-actual.png)
 
 ### <a name="open-a-report-that-is-part-of-an-app"></a>Åbn en rapport, der er en del af en app
-Hvis du har modtaget apps fra kolleger eller fra AppSource, er disse apps tilgængelige via startsiden og via objektbeholderen **Apps** på navigationslinjen. En [app](end-user-apps.md) er et bundt af dashboards og rapporter.
+Hvis du har modtaget apps fra kolleger eller fra AppSource, er disse apps tilgængelige via Start og via objektbeholderen **Apps** i navigationsruden. En [app](end-user-apps.md) er et bundt af dashboards og rapporter.
 
 ### <a name="prerequisites"></a>Forudsætninger
 Hvis du vil følge med, skal du downloade appen Sales & Marketing.
@@ -75,7 +74,7 @@ Hvis du vil følge med, skal du downloade appen Sales & Marketing.
 1. Vælg **Hent det nu** > **Fortsæt** > **Installér** for at installere appen i din objektbeholder til apps. 
 
 Du kan åbne appen fra din objektbeholder til apps eller fra startsiden.
-1. Gå tilbage til startsiden ved at vælge **Hjem** på navigationslinjen.
+1. Gå tilbage til Start ved at vælge **Start** i navigationsruden.
 
 7. Rul ned, indtil du ser **Mine apps**.
 
@@ -101,7 +100,7 @@ Rapporter kan åbnes fra et dashboard. De fleste [dashboardfelter](end-user-tile
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Der er stadig flere måder at åbne en rapport
 Når du bliver mere fortrolig med at navigere i Power BI-tjenesten, finder du ud af, hvilke arbejdsprocesser der fungerer bedst for dig. Der er et par enkelte andre måder at få adgang til rapporter på:
-- Fra navigationslinjen ved hjælp af **Favoritter** og **Seneste**    
+- Via navigationsruden ved hjælp af **Favoritter** og **Seneste**    
 - Brug [Få vist relaterede](end-user-related.md)    
 - Via en mail, når nogen [deler med dig](../service-share-reports.md), eller du [angiver en advarsel](end-user-alerts.md)    
 - Fra dit [Meddelelsescenter](end-user-notification-center.md)    

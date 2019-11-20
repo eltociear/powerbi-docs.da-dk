@@ -3,7 +3,6 @@ title: Integrer med rapportwebdelen i SharePoint Online
 description: Med Power BI’s nye rapportwebdel til SharePoint Online kan du nemt kan integrere interaktive Power BI-rapporter på SharePoint Online-sider.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 05/16/2019
-ms.openlocfilehash: 6fb02a3ea31dd3bed6f1013d5e81237345aef40c
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: e44ea4174545715a689b4f4370516cbbab4a593b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431898"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881897"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Integrer med rapportwebdelen i SharePoint Online
 
@@ -123,7 +122,7 @@ Nedenfor er de indstillinger, som du kan justere for Power BI-webdelen til Share
 | --- | --- |
 | Sidenavn |Angiver standardsiden for webdelen. Vælg en værdi på rullelisten. Hvis der ikke vises nogen sider, har rapporten enten kun én side, eller den URL-adresse, du har indsat, indeholder et sidenavn. Fjern rapportsektion fra URL-adressen for at vælge en bestemt side. |
 | Vis |Justerer den måde, som rapporten er tilpasset SharePoint Online-siden på. |
-| Vis navigationsruden |Viser eller skjuler ruden Sidenavigation. |
+| Vis øverste navigationsrude |Viser eller skjuler sidens navigationsrude. |
 | Vis filterruden |Viser eller skjuler filterruden. |
 
 ## <a name="reports-that-do-not-load"></a>Rapporter, der ikke indlæses
@@ -173,4 +172,4 @@ Brugere, der ser en rapport i SharePoint, skal enten have en **Power BI Pro-lice
 * [Hvad er Power BI Premium?](service-premium-what-is.md)
 * [Integrer en rapport på en sikker portal eller et websted](service-embed-secure.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Opret nye arbejdsområder – Power BI
 description: Få mere at vide om, hvordan du opretter nye arbejdsområder, samlinger af dashboards, rapporter og sideinddelte rapporter, der er udviklet til at levere vigtige målepunkter for din organisation.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2fdc893ac8545df8fc64f45959a418018a189c84
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: bbb5eeee7422670c771f7bbfb4b051de0538a10a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020455"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877522"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Opret nye arbejdsområder i Power BI
 
@@ -74,7 +73,7 @@ Du kan angive, hvilke brugere der skal modtage en meddelelse om de problemer, de
 
     I ruden **Opret et arbejdsområde**, når du opretter det første gang.
 
-    I navigationsruden til venstre skal du vælge pilen ud for **Arbejdsområder** og vælge **Flere indstillinger** (...) ud for navnet på arbejdsområdet > **Indstillinger for arbejdsområde**. Ruden **Indstillinger** åbnes.
+    I navigationsruden skal du vælge pilen ud for **Arbejdsområder** og vælge **Flere indstillinger** (...) ud for navnet på arbejdsområdet > **Indstillinger for arbejdsområde**. Ruden **Indstillinger** åbnes.
 
     ![Indstillinger for arbejdsområde](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -94,7 +93,7 @@ Power BI synkroniserer ikke tilladelser for brugere eller grupper, der er konfig
 
     I ruden **Opret et arbejdsområde**, når du opretter det første gang.
 
-    I navigationsruden til venstre skal du vælge pilen ud for **Arbejdsområder** og vælge **Flere indstillinger** (...) ud for navnet på arbejdsområdet > **Indstillinger for arbejdsområde**. Ruden **Indstillinger** åbnes.
+    I navigationsruden skal du vælge pilen ud for **Arbejdsområder** og vælge **Flere indstillinger** (...) ud for navnet på arbejdsområdet > **Indstillinger for arbejdsområde**. Ruden **Indstillinger** åbnes.
 
     ![Indstillinger for arbejdsområde](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -108,7 +107,7 @@ Power BI synkroniserer ikke tilladelser for brugere eller grupper, der er konfig
 
 Når du har konfigureret placeringen af OneDrive, kommer du dertil på samme måde, som du kommer til andre datakilder i Power BI-tjenesten.
 
-1. I navigationsruden til venstre skal du vælge **Hent data** og derefter i feltet **Filer** vælge **Hent**.
+1. I navigationsruden skal du vælge **Hent data** og derefter i feltet **Filer** vælge **Hent**.
 
     ![Hent data, hent filer](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
@@ -145,4 +144,4 @@ Læs om [publicering af en app fra de nye arbejdsområder](service-create-distri
 * Læs om [organisering af arbejde i den nye arbejdsområdeoplevelse i Power BI](service-new-workspaces.md)
 * [Opret klassiske arbejdsområder](service-create-workspaces.md)
 * [Publicer en app fra de nye arbejdsområder i Power BI](service-create-distribute-apps.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

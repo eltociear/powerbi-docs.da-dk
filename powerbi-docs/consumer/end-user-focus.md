@@ -2,7 +2,6 @@
 title: Fokustilstand og fuldskærmsvisning – Sådan zoomer du ind for at få vist flere detaljer
 description: Dokumentation for visning af et Power BI-dashboard, et dashboardfelt, en rapport eller en rapportvisualisering i fokustilstand eller fuldskærmsvisning
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: dtdLul6otYE
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 3a4f120ec64376955433faf04e24dd0e8f623419
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 633aaf4bd06634f0b1cc7eb2dd38b56eec0cfaf0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019813"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852734"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Vis indhold i flere detaljer: fokustilstand og fuldskærmstilstand
 
@@ -38,7 +37,7 @@ Fokustilstand og fuldskærmstilstand er to forskellige måder at få vist flere 
 
 ![fuldskærmsvisning af dashboard før og efter](media/end-user-focus/power-bi-dashboards-focus.png)
 
-Få vist dit indhold i Power BI-tjenesten (dashboards, rapportsider, felter og visualiseringer) uden forstyrrende menuer og navigationslinjer.  Du får en rendyrket og komplet visning af dit indhold med et øjekast – hele tiden. Dette kaldes også tv-tilstand.   
+Få vist dit indhold i Power BI-tjenesten (dashboards, rapportsider, felter og visualiseringer) uden forstyrrende menuer og navigationsruder.  Du får en rendyrket og komplet visning af dit indhold med et øjekast – hele tiden. Dette kaldes også tv-tilstand.   
 
 Hvis du vil åbne fuldskærmsvisning, skal du vælge ikonet **Fuld skærm** ![ikonet Fuld skærm ](media/end-user-focus/power-bi-full-screen-icon.png) på menulinjen over dit dashboard, din rapport, feltet i fokustilstand eller visualiseringen i fokuseringstilstand i Power BI-tjenesten.  Dit valgte indhold fylder hele skærmen.
 Hvis du bruger Power BI – Mobil, er [fuld skærm tilgængelig for Windows 10 Mobile-apps](./mobile/mobile-windows-10-app-presentation-mode.md). 
@@ -60,7 +59,7 @@ I fokustilstand kan en Power BI-*forbruger* interagere med de filtre, der blev a
 
 ## <a name="working-in-full-screen-mode"></a>Arbejde i fuldskærmstilstand
 
-Hvis du vil åbne et dashboard eller en rapportside i fuldskærmsvisning, skal du vælge ikonet for fuld skærm ![fuld skærm-ikon](media/end-user-focus/power-bi-full-screen-icon.png) på den øverste navigationslinje. Når du er i fuldskærmstilstand, vises en genvejsmenu, når du flytter musen eller markøren. Da fuld skærm er tilgængelig for mange forskellige indholdstyper, er indstillingerne i genvejsmenuen lidt forskellige men umiddelbart forståelige.  Du skal bare pege på et ikon for at få vist en definition.
+Hvis du vil åbne et dashboard eller en rapportside i fuldskærmsvisning, skal du vælge ikonet for fuld skærm ![fuld skærm-ikon](media/end-user-focus/power-bi-full-screen-icon.png) fra øverste navigationsrude. Når du er i fuldskærmstilstand, vises en genvejsmenu, når du flytter musen eller markøren. Da fuld skærm er tilgængelig for mange forskellige indholdstyper, er indstillingerne i genvejsmenuen lidt forskellige men umiddelbart forståelige.  Du skal bare pege på et ikon for at få vist en definition.
 
 Menu til dashboards    
 ![Menu til dashboards](media/end-user-focus/power-bi-full-screen-dash.png)    

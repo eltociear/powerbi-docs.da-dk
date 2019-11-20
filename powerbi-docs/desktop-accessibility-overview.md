@@ -2,7 +2,6 @@
 title: Oversigt over tilgængelighed i Power BI
 description: Funktioner og forslag til oprettelse af tilgængelighedsrapporter i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 13017fed9a7cd54cde624424894341dc2ced0d9b
-ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
+ms.openlocfilehash: e61df101d26dd95a771a64ce7633e40fcd9c9123
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73180970"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878905"
 ---
 # <a name="overview-of-accessibility-in-power-bi"></a>Oversigt over tilgængelighed i Power BI
 Når du arbejder med Power BI, er det vigtigt at tage højde for de forskellige typer brugere, som måske skal interagere med din rapport. Oprettelse og præsentation af rapporter, som brugere af tastaturer og skærmlæsere nemt kan navigere i og forstå, giver brugere med synshandicap eller fysiske handicap mulighed for at modtage de samme oplysninger.
@@ -30,10 +29,10 @@ Et universelt design betyder, at produktet er designet, så det kan bruges af s�
 
 ## <a name="accessibility-standards"></a>Tilgængelighedsstandarder
 
-Power BI overholder angivne standarder for tilgængelighed.  Dette hjælper dig med at sikre, at dine Power BI-oplevelser er tilgængelige for så mange personer som muligt.
+Power BI har forpligtet sig til at overholde følgende standarder for tilgængelighed.  Dette hjælper dig med at sikre, at dine Power BI-oplevelser er tilgængelige for så mange personer som muligt.
 
 ### <a name="wcag-21"></a>WCAG 2.1
-Power BI overholder WCAG 2.1-retningslinjerne (Web Content Accessibility). WCAG indeholder tre primære principper:
+WCAG (Web Content Accessibility) hjælper med at gøre webindhold tilgængeligt for personer med handicap. WCAG indeholder tre primære principper:
 
 1. **Opfattelig** – Oplysninger og komponenterne i brugergrænsefladen skal præsenteres for brugerne på en måde, som de nemt kan opfatte.
 2. **Driftsklar** – Komponenterne i brugergrænsefladen og navigationen skal være driftsklar.

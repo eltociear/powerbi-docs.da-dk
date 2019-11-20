@@ -2,7 +2,6 @@
 title: Lær, hvordan du slutter Azure Data Lake Storage Gen 2 til Power BI for at få et dataflowlager
 description: Medbring dine egne data i dataflow ved hjælp af Azure Data Lake Storage Gen2
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: df3c8b33de32bb9dd42507cc7bb601cee9f6e575
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: c48ae0913d0096546c23d22d3e4596fdb21aef82
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432008"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872727"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Tilslut Azure Data Lake Storage Gen2 for at få et dataflowlager (prøveversion)
 
@@ -105,7 +104,7 @@ Hvis du vil tildele tilladelser til filsystemet, anvender du indstillinger for a
 
 Du finder dine lejerprogrammer ved at følge disse trin:
 
-1. På [Azure Portal](https://portal.azure.com/) skal du vælge **Azure Active Directory** i navigationspanelet til venstre.
+1. På [Azure Portal](https://portal.azure.com/) skal du vælge **Azure Active Directory** i navigationspanelet.
 2. På Azure **Active Directory**-bladet skal du vælge **Virksomhedsprogrammer**.
 3. I rullemenuen **Programtype** skal du vælge **Alle programmer** og derefter vælge **Anvend**. Et eksempel på dine lejerprogrammer vises, hvilket ligner følgende billede.
 
@@ -223,4 +222,4 @@ Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:
 * [CDM-mapper](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [Fildefinition af CDM-model](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Du kan altid prøve [at stille spørgsmål i Power BI-community'et](http://community.powerbi.com/).
+Du kan altid prøve [at stille spørgsmål i Power BI-community'et](https://community.powerbi.com/).

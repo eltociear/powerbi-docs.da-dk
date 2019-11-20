@@ -2,7 +2,6 @@
 title: Slet et dashboard, en rapport, en projektmappe, et datasæt eller et arbejdsområde
 description: Få mere at vide, hvordan du sletter næsten alt fra Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: b010cfafc15c905cd792b9693777af94149cb1fe
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 0ccc32a18098673034e7f37b92f8edb5636ef21d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431978"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872530"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Slet næsten alt i Power BI-tjenesten
 I denne artikel kan du lære, hvordan du sletter et dashboard, en rapport, en projektmappe, et datasæt, en app og et arbejdsområde i Power BI-tjenesten.
@@ -90,7 +89,7 @@ Hvis et datasæt er en del af en eller flere [organisationsindholdspakker](servi
 Som forfatter af arbejdsområdet, kan du slette det. Når du sletter det, slettes den tilknyttede app også for alle gruppemedlemmer, og den fjernes fra din AppSource, hvis du har udgivet appen i hele organisationen. Det er ikke det samme at slette et arbejdsområde som at forlade et arbejdsområde.
 
 ### <a name="to-delete-a-workspace---if-you-are-an-admin"></a>Sådan sletter du et arbejdsområde – hvis du er administrator
-1. Vælg **Arbejdsområder** i navigationen til venstre.
+1. Vælg **Arbejdsområder** i navigationsruden
 
 2. Vælg **Flere indstillinger** (...) til højre for det arbejdsområde, der skal slettes, og vælg **Rediger arbejdsområde**.
 
@@ -125,7 +124,7 @@ Apps kan nemt fjernes fra din side med applisten. Det er dog kun appadministrato
 ### <a name="remove-an-app-from-your-app-list-page"></a>Fjern en app fra din side med applisten
 Selvom du sletter en app fra din side med applisten, slettes appen ikke for andre medlemmer.
 
-1. Vælg **Apps** i navigationen til venstre for at åbne siden med applisten.
+1. Vælg **Apps** i navigationsruden for at åbne siden med applisten.
 2. Hold over den app, du vil slette, og vælg sletteikonet ![](media/service-delete/power-bi-delete-report2.png).
 
    ![vælg Apps](media/service-delete/power-bi-delete-app.png)
@@ -141,4 +140,4 @@ Denne artikel indholdte oplysninger om, hvordan du sletter de større komponente
 * [Slet et dashboardfelt](service-dashboard-edit-tile.md)
 * [Slet en rapportvisualisering](service-delete.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

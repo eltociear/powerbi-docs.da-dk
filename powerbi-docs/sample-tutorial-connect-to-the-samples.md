@@ -2,7 +2,6 @@
 title: Opret forbindelse til eksemplerne i Power BI-tjenesten
 description: Få mere at vide om, hvordan du installerer og udforsker eksempler i Power BI-tjenesten.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 5009e186c801f71c9c1a4b8e156dfefaaeac79f1
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 90136f39d9f2a8e330748b56d6302bb75d2a31fe
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020640"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873839"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Opret forbindelse til eksemplerne i Power BI-tjenesten
 
@@ -38,7 +37,7 @@ Lær denne indholdspakke og dens scenarie at kende ved at se [Eksempel på detai
 
     Hvis du ikke har en Power BI Pro-licens, kan du gemme eksemplet i Mit arbejdsområde.
 
-2. Vælg **Hent data** nederst i venstre navigationsrude. 
+2. Vælg **Hent data** nederst i navigationsruden. 
 
    ![Vælg Hent data](media/sample-datasets/power-bi-get-data.png)
 
@@ -100,7 +99,7 @@ Når du åbner PBIX-eksempelfilen for første gang i Power BI Desktop, vises den
 
 I modsætning til redigering af en rapport i Power BI-tjenesten kan du i Power BI Desktop arbejde med dine forespørgsler og modellere dine data for at sikre, at dataene giver den bedste indsigt i dine rapporter. Du kan derefter gemme din Power BI Desktop-fil et sted efter eget valg, uanset om det er på dit lokale drev eller i cloudmiljøet.
 
-1. Download [PBIX-filen Eksempel på detailhandelsanalyse](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), og åbn den i Power BI Desktop. 
+1. Download [PBIX-filen Eksempel på detailhandelsanalyse](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), og åbn den i Power BI Desktop. 
 
     ![Eksempel i Rapportvisning i Power BI](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
 
@@ -138,4 +137,4 @@ Her finder du flere oplysninger:
 - [Eksempler til Power BI-tjenesten](sample-datasets.md)
 - [Datakilder til Power BI](service-get-data.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

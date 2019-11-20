@@ -2,26 +2,25 @@
 title: Visualiseringstyper i Power BI
 description: Visualiseringstyper i Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 639ea11eca69eea53968ed702e0524f46a97cdc4
-ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
+ms.openlocfilehash: 80fc4f4afe29806077d1bf64a59d8761d7ab1c1d
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72775950"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099925"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 ## <a name="power-bi-visualizations"></a>Visualiseringer i Power BI
 Vi tilføjer løbende nye visualiseringer, så hold dig orienteret her.
 
-Og besøg [Office AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), hvor du finder en stadigt større liste over [brugerdefinerede visuals](../power-bi-custom-visuals.md), du kan downloade og bruge i dine egne dashboards og rapporter. Er du i det kreative hjørne? [Få mere at vide om, hvordan du opretter og føjer dine egne visuals til dette communitywebsted](../developer/office-store.md).  
+Og besøg [Office AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), hvor du finder en stadigt større liste over [brugerdefinerede visuals](../developer/power-bi-custom-visuals.md), du kan downloade og bruge i dine egne dashboards og rapporter. Er du i det kreative hjørne? [Få mere at vide om, hvordan du opretter og føjer dine egne visuals til dette communitywebsted](../developer/office-store.md).  
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Liste over de visualiseringer, der er tilgængelige i Power BI
 Du kan bruge alle disse visualiseringer i Power BI-rapporter, de kan specificeres under Spørgsmål og svar, og du kan fastgøre dem til dashboards.
@@ -226,8 +225,8 @@ Når du skriver forespørgsler i naturligt sprog med Spørgsmål og svar i Power
 
 "***salg efter område som trækort***"
 
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
+![Spørgsmålsfelt til Spørgsmål og svar med visualiseringstypen angivet](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
 ## <a name="next-steps"></a>Næste trin
 [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)    
-[Den rette visuelle reference fra sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+[Den rette visuelle reference fra sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

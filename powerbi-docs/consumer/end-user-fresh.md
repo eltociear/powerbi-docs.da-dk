@@ -2,7 +2,6 @@
 title: Sådan sikrer Power BI, at dit indhold er opdateret
 description: Få mere at vide om, hvordan Power BI sikrer, at du arbejder med den nyeste version af data, rapporter, dashboards og apps.
 author: mihart
-manager: kvivek
 ms.service: powerbi
 ms.custom: ''
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5d81b1e69d9cfbba6e3ed57f678af75dab1698c3
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 92f031ff43bc4d3bd5840e69fec166606b14eb73
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019785"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863872"
 ---
 # <a name="your-content-is-up-to-date"></a>Dit indhold er opdateret
 
@@ -43,9 +42,9 @@ Navnet på ejeren findes på titellinjen i dashboards og rapporter. Vælg navnet
 
 På appskærmen kan du se både navnet på designeren og den dato, hvor appen sidst blev opdateret.  
 
-1. Vælg **Apps** i venstre navigationsrude.
+1. Vælg **Apps** i navigationsruden.
 
-    ![venstre navigationsrude](media/end-user-fresh/power-bi-nav-app.png)
+    ![navigationsrude](media/end-user-fresh/power-bi-nav-app.png)
 
 
 
@@ -85,7 +84,7 @@ I ruden **Relateret indhold** kan du se oplysninger om seneste opdatering for de
 
 ## <a name="what-happens-if-an-app-is-deleted-by-the-designer"></a>Hvad sker der, hvis en app slettes af designeren?
 
-Hvis en designer sletter en app, fjernes de dashboards og rapporter, der er knyttet til appen, automatisk fra Power BI-arbejdsområdet. De er ikke længere tilgængelige, og appen vises ikke i objektbeholderen Apps eller andre steder på navigationslinjen.
+Hvis en designer sletter en app, fjernes de dashboards og rapporter, der er knyttet til appen, automatisk fra Power BI-arbejdsområdet. De er ikke længere tilgængelige, og appen vises ikke i objektbeholderen Apps eller andre steder i navigationsruden.
 
 
 ## <a name="subscribe-to-see-changes"></a>Abonner for at se ændringer

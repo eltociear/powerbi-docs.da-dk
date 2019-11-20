@@ -2,7 +2,6 @@
 title: Føj en CDM-mappe til Power BI som et dataflow
 description: Konfigurer et arbejdsområde for at gemme definitionen af dataflowet og datafilerne i Azure Data Lake Storage Gen2
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 3adc642d539ab8e1c1f1f60981a61fdc58a460ab
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 5b6b8658e4480173c32a591c2fc763a238cfd13a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432035"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872702"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)
 
@@ -33,7 +32,7 @@ I følgende afsnit beskrives, hvordan du opretter et dataflow fra en CDM-mappe.
 
 ## <a name="create-a-dataflow-from-a-cdm-folder"></a>Opret et dataflow fra en CDM-mappe
 
-Du kommer i gang med at oprette et dataflow fra en CDM-mappe ved at åbne **Power BI-tjenesten** og vælge et **arbejdsområde** i navigationsruden til venstre. Du kan også oprette et nyt arbejdsområde, hvor du kan oprette dit nye dataflow.
+Du kommer i gang med at oprette et dataflow fra en CDM-mappe ved at starte **Power BI-tjenesten** og vælge et **arbejdsområde** i navigationsruden. Du kan også oprette et nyt arbejdsområde, hvor du kan oprette dit nye dataflow.
 
 ![Opret et dataflow i Power BI-tjenesten](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_02.jpg)
 
@@ -110,5 +109,5 @@ Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:
 * [CDM-mapper](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [Fildefinition af CDM-model](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Du kan altid prøve [at stille spørgsmål i Power BI-community'et](http://community.powerbi.com/).
+Du kan altid prøve [at stille spørgsmål i Power BI-community'et](https://community.powerbi.com/).
 

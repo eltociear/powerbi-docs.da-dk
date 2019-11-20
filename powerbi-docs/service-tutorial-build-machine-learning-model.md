@@ -2,7 +2,6 @@
 title: 'Selvstudium: Skab en model til maskinel indlæring i Power BI'
 description: I dette selvstudium skal du bygge en model til maskinel indlæring i Power BI.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 75f6449c4795fd0095c46a33b33fd3ef14045e35
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 78b29a4e71e75793e168da25987b3e9c4a8b13f4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432259"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877010"
 ---
 # <a name="tutorial-build-a-machine-learning-model-in-power-bi"></a>Selvstudium: Skab en model til maskinel indlæring i Power BI
 
@@ -47,7 +46,7 @@ Du kan downloade datasættet fra UC Irvine-webstedet. Til dette selvstudium har 
 
 Log på Power BI-tjenesten for at oprette enhederne i dit dataflow, og naviger til et arbejdsområde i den dedikerede kapacitet, hvor kunstig intelligens er aktiveret.
 
-Hvis du ikke allerede har et arbejdsområde, kan du oprette et ved at vælge **Arbejdsområder** i menuen til venstre i Power BI-tjenesten og derefter vælge **Opret arbejdsområde** nederst i det viste panel. Herefter åbnes et panel til højre, hvor du kan angive oplysninger om arbejdsområdet. Skriv et navn til arbejdsområdet, og vælg derefter **Avanceret**. Bekræft, at arbejdsområdet bruger dedikeret kapacitet, ved hjælp af alternativknappen, og at det er tildelt til en forekomst af dedikeret kapacitet, hvor AI Preview er slået til. Vælg derefter **Gem**.
+Hvis du ikke allerede har et arbejdsområde, kan du oprette et ved at vælge **Arbejdsområder** i navigationsrudens menu i Power BI-tjenesten og vælge **Opret arbejdsområde** nederst i det viste panel. Herefter åbnes et panel til højre, hvor du kan angive oplysninger om arbejdsområdet. Skriv et navn til arbejdsområdet, og vælg derefter **Avanceret**. Bekræft, at arbejdsområdet bruger dedikeret kapacitet, ved hjælp af alternativknappen, og at det er tildelt til en forekomst af dedikeret kapacitet, hvor AI Preview er slået til. Vælg derefter **Gem**.
 
 ![Opret et arbejdsområde](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-01.png)
 
@@ -59,7 +58,7 @@ Når arbejdsområdet er blevet oprettet, kan du vælge **Spring over** nederst t
 
 ![Opret dataflow](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-03.png)
 
-Vælg **Tilføj nye enheder**. Dette starter en **Power Query-editor** i browseren.
+Vælg **Tilføj nye enheder**. Dette starter en **Power-forespørgselseditor** i browseren.
 
 ![Tilføj ny enhed](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-04.png)
 
@@ -73,7 +72,7 @@ På siden **Opret forbindelse til en datakilde**, der vises herefter, skal du in
 
 ![Filsti](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-06.png)
 
-I Power Query-editor vises et eksempel på dataene fra CSV-filen. Du kan omdøbe forespørgslen til et mere brugervenligt navn ved at ændre værdien i feltet Navn i ruden til højre. Du kan f.eks. ændre navnet på forespørgslen til _Online Visitors_.
+I Power-forespørgselseditor vises et eksempel på dataene fra CSV-filen. Du kan omdøbe forespørgslen til et mere brugervenligt navn ved at ændre værdien i feltet Navn i ruden til højre. Du kan f.eks. ændre navnet på forespørgslen til _Online Visitors_.
 
 ![Skift til et brugervenligt navn](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-07.png)
 

@@ -2,7 +2,6 @@
 title: 'Selvstudium: Aktivér en Machine Learning Studio-model i Power BI (prøveversion)'
 description: I dette selvstudium skal du aktivere en Machine Learning Studio-model i Power BI.
 author: davidiseminger
-manager: kfile
 ms.reviewer: SarinaJoan
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 368f860ed064cf3b4ff73496db1fa993fd3b716a
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 3cbe715bc3cff9d2afeefe7c82847f104f4d0835
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432218"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876979"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Selvstudium: Aktivér en Machine Learning Studio-model i Power BI (prøveversion)
 
@@ -44,7 +43,7 @@ Hvis du vil have adgang til en Azure ML-model fra Power BI, skal du have **læse
 
 Følgende trin forudsætter, at du er medadministrator af Azure-abonnementet og den ressourcegruppe, som modellen blev publiceret i.
 
-Log på [Azure Portal](https://portal.azure.com), og gå til siden **Abonnementer**, som du finder ved hjælp af listen **Alle tjenester** i navigationsmenuen til venstre.
+Log på [Azure Portal](https://portal.azure.com), og naviger til siden **Abonnementer**, som du finder ved hjælp af listen **Alle tjenester** i menuen i navigationsruden.
 
 ![Azure-portal](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
@@ -135,7 +134,7 @@ Når du vælger ikonet **Rediger**, åbnes Power-forespørgselseditoren for enhe
 
 ![Rediger](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_16.png)
 
-Vælg knappen **AI Insights** på båndet, og vælg derefter mappen _Azure Machine Learning-modeller_ i navigationsmenuen til venstre.
+Vælg knappen **AI-indsigt** på båndet, og vælg derefter mappen _Azure Machine Learning-modeller_ i navigationsruden.
 
 De Azure ML-modeller, som du har fået adgang til, er angivet som Power-forespørgselsfunktioner med præfikset *AzureML*.  Når du klikker på den funktion, der svarer til modellen _AutomobilePricePrediction_, vises parametrene for modellens webtjeneste som funktionsparametre.
 

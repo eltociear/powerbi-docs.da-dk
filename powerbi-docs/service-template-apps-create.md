@@ -2,19 +2,18 @@
 title: Opret skabelonapps i Power BI
 description: Sådan opretter du skabelonprogrammer i Power BI, som du kan distribuere til Power BI-kunder.
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 836dfcc0569c906b145df3e3f3d14f03c08d4938
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 4b3158cbe26efe05e3d35c1c6c93027738cc817a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432152"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871488"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Opret en skabelonapp i Power BI
 
@@ -86,7 +85,7 @@ Nu, hvor du har indhold i dit arbejdsområde, er du klar til at pakke det i et s
 
     **Navigation**
 
-    Aktivér **Ny navigationsgenerator**, hvor du kan definere venstre navigationsrude i appen (du kan finde yderligere detaljer under [Design navigationsoplevelsen](service-create-distribute-apps.md#design-the-navigation-experience) i denne artikel).
+    Aktivér **Ny navigationsgenerator**, hvor du kan definere navigationsruden i appen. Du kan finde flere oplysninger i artiklen [Design navigationsoplevelsen](service-create-distribute-apps.md#design-the-navigation-experience).
 
    ![Angiv programlandingsside](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
     

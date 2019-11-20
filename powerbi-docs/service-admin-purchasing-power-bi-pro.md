@@ -2,7 +2,6 @@
 title: Køb og tildel Power BI Pro-licenser
 description: Få mere at vide om, hvordan du køber og tildeler Power BI Pro-licenser, så dine brugere kan få adgang til indhold og samarbejde med kolleger i Power BI-tjenesten.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: quickstart
 ms.date: 10/29/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 31739cee4371a8991f8c88e6ba67bfb48878a33c
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 72a158e2dca32d2199fcd48e2cc37bf4c90778ea
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431400"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873552"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Køb og tildel Power BI Pro-brugerlicenser
 
@@ -37,7 +36,7 @@ Følg disse trin for at købe Power BI Pro-licenser via Microsoft 365 Administra
 
 1. Åbn [Microsoft 365 Administration](https://portal.office.com/adminportal/home#/homepage).
 
-2. Vælg **Fakturering** > **Abonnementer** i den venstre navigationsrude.
+2. Vælg **Fakturering** > **Abonnementer** i navigationsruden.
 
     ![Navigationsrude](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-01.png)
 
@@ -75,7 +74,7 @@ Benyt følgende fremgangsmåde for at tildele Power BI Pro-licenser til individu
 
 1. Åbn [Microsoft 365 Administration](https://portal.office.com/adminportal/home#/homepage).
 
-2. Udvid **Brugere** i navigationsruden til venstre, og vælg derefter **Aktive brugere**.
+2. Udvid **Brugere** i navigationsruden, og vælg derefter **Aktive brugere**.
 
     ![Aktive brugere](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-05.png)
 
@@ -97,7 +96,7 @@ Benyt følgende fremgangsmåde for at tildele Power BI Pro-licenser til individu
 
 1. Åbn [Azure-portalen](https://ms.portal.azure.com/#@microsoft.onmicrosoft.com/dashboard/private/39bc3cf7-31a4-43f6-954c-f2d69ca2f0).
 
-2. Vælg **Azure Active Directory** på navigationslinjen til venstre.
+2. Vælg **Azure Active Directory** i navigationsruden.
 
     ![Azure Active Directory](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-01.png)
 

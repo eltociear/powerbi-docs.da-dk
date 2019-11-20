@@ -2,7 +2,6 @@
 title: Aktivér datafølsomhedsmærkater i Power BI
 description: Få mere at vide om, hvordan du aktiverer datafølsomhedsmærkater i Power BI
 author: paulinbar
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: a53e06f65f5ef8328a0c27b48f2020228a0570ed
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 024e04bd309080b5b31e43bde7c783255bfc3dba
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73433160"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851072"
 ---
 # <a name="enable-data-sensitivity-labels-in-power-bi-preview"></a>Aktivér datafølsomhedsmærkater i Power BI (prøveversion)
 

@@ -2,7 +2,6 @@
 title: Opret klassiske arbejdsområder i Power BI
 description: Få mere at vide om, hvordan du opretter arbejdsområder, samlinger af dashboards, rapporter og sideinddelte rapporter, som er udviklet til at levere vigtige målepunkter for din organisation.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1087ac4301a172500c997e78ee3a16695f6b0d73
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 3153e63685e21a29687c33e702c4ade55324e05c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021113"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853541"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Opret klassiske arbejdsområder i Power BI
 
@@ -75,7 +74,7 @@ I de aktuelle arbejdsområder kan du også oprette forbindelse via organisations
 
 Hvis du vil distribuere officielt indhold til en stor målgruppe i din organisation, kan du publicere en app fra dit arbejdsområde.  Når indholdet er klar, skal du vælge, hvilke dashboards og rapporter du vil publicere, og derefter skal du publicere dem som en *app*. Du kan oprette en app fra hvert arbejdsområde.
 
-På listen Apps i navigationen til venstre kan du se alle de apps, du har installeret. Dine kollegaer kan hente dine apps på flere måder. 
+På listen Apps i navigationsruden kan du se alle de apps, du har installeret. Dine kollegaer kan hente dine apps på flere måder. 
 - De kan finde og installere din app fra Microsoft AppSource
 - Du kan sende dem et direkte link. 
 - Du kan automatisk installere dem i dine kollegaers Power BI-konti, hvis Power BI-administratoren giver dig tilladelse til det. 
@@ -97,4 +96,4 @@ Se [Sådan adskiller de nye arbejdsområder sig fra eksisterende arbejdsområder
 ## <a name="next-steps"></a>Næste trin
 * [Installér og brug apps i Power BI](service-create-distribute-apps.md)
 - [Opret de nye arbejdsområder](service-create-the-new-workspaces.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

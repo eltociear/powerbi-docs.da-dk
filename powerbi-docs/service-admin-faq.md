@@ -2,7 +2,6 @@
 title: Administration af Power BI – ofte stillede spørgsmål
 description: Find svar på ofte stillede spørgsmål om tilmelding til Power BI, lejeradministration og andre administrative opgaver.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 6cc29bd1d06e948facf1058411759c15841a8352
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: 711646009fe79e145a3ab756266a442243c1116e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442927"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857818"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration af Power BI – ofte stillede spørgsmål
 
@@ -56,7 +55,7 @@ Denne artikel omhandler ofte stillede spørgsmål om Power BI-administration. Du
 
 ### <a name="using-powershell"></a>Brug af PowerShell
 
-Nogle af procedurerne i dette afsnit kræver Windows PowerShell-scripts. Hvis du ikke er bekendt med PowerShell, anbefaler vi [Introduktion til PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=286814). For at køre scripts skal du først installere den nyeste 64-bit version af [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/).
+Nogle af procedurerne i dette afsnit kræver Windows PowerShell-scripts. Hvis du ikke er bekendt med PowerShell, anbefaler vi [Introduktion til PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=286814). For at køre scripts skal du først installere den nyeste 64-bit version af [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/).
 
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Hvordan tilmelder brugerne sig Power BI?
 
@@ -170,7 +169,7 @@ Der er tre scenarier, der kan gøre sig gældende for brugere i din organisation
 
 ### <a name="how-do-we-manage-power-bi"></a>Hvordan administrerer vi Power BI?
 
-Power BI indeholder en Power BI-administrationsportal til brugere med rollen Global administrator i Microsoft 365 og brugere med rollen Administrator i Power BI-tjenesten. Hvis du vil bruge Power BI-administrationsportalen, skal du markere din konto som **Global administrator** i Microsoft 365 eller Azure Active Directory, eller nogen skal tildele rollen Administrator i Power BI-tjenesten til din brugerkonto. Få mere at vide under [Beskrivelse af rollen som Administrator i Power BI](service-admin-role.md) og [Power BI-administrationsportalen](service-admin-portal.md). Portalen indeholder muligheden for at styre indstillingerne i hele lejeren, få vist brugsstatistikker for Power BI og et link til Microsoft 365-administrationscentret, hvor du kan administrere brugere og grupper.
+Power BI indeholder en Power BI-administrationsportal til brugere med rollen Global administrator i Microsoft 365 og brugere med rollen Administrator i Power BI-tjenesten. Hvis du vil bruge Power BI-administrationsportalen, skal du markere din konto som **Global administrator** i Microsoft 365 eller Azure Active Directory, eller nogen skal tildele rollen Administrator i Power BI-tjenesten til din brugerkonto. Få mere at vide under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md) og [Power BI-administrationsportalen](service-admin-portal.md). Portalen indeholder muligheden for at styre indstillingerne i hele lejeren, få vist brugsstatistikker for Power BI og et link til Microsoft 365-administrationscentret, hvor du kan administrere brugere og grupper.
 
 ### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Hvad er processen til administration af en lejer, der er oprettet af Microsoft for brugerne?
 
@@ -193,7 +192,7 @@ Hvis en bruger er tilmeldt Power BI, men du ikke længere ønsker, at vedkommend
 
 1. Gå til [Microsoft 365 Administration](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
-1. I navigationspanelet til venstre skal du vælge **Brugere** og derefter vælge  > **Aktive brugere**.
+1. Vælg **Brugere** > **Aktive brugere** i navigationsruden.
 
 1. Find den bruger, du vil fjerne licensen fra, og vælg derefter vedkommendes navn.
 
@@ -211,7 +210,7 @@ Brugere, der har tilmeldt sig lejeren via selvbetjent logon, tildeles en unik li
 
 1. Naviger til [Microsoft 365 Administration](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
-1. I navigationspanelet til venstre skal du vælge **Brugere** og derefter vælge  > **Aktive brugere**.
+1. Vælg **Brugere** > **Aktive brugere** i navigationsruden.
 
 1. I menuen **Visninger** skal du vælge **Tilføj brugerdefineret visning**.
 
@@ -235,7 +234,7 @@ Få mere at vide om, hvilket dataområde din Power BI-lejer befinder sig i, unde
 
 ### <a name="what-is-the-power-bi-sla"></a>Hvad er Power BI SLA?
 
-Du kan finde oplysninger om Power BI SLA (Serviceniveauaftale) i artiklen [Licensvilkår og dokumentation](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) i afsnittet **Licenser** på webstedet Microsoft Licensing.
+Du kan finde oplysninger om Power BI SLA (Serviceniveauaftale) i artiklen [Licensvilkår og dokumentation](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) i afsnittet **Licenser** på webstedet Microsoft Licensing.
 
 ### <a name="how-does-power-bi-handle-high-availability-and-failover"></a>Hvordan håndterer Power BI høj tilgængelighed og failover?
 
@@ -264,6 +263,6 @@ Microsoft har skabt Power BI med Microsoft 365 som grundlag, der igen er bygger 
 [Administration af brugerkonto i Office 365](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
 [Administration af gruppe i Office 365](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 
 [1]: https://docs.microsoft.com/powershell/scripting/overview

@@ -2,7 +2,6 @@
 title: 'Organisationsindholdspakker: Administrer og opdater'
 description: Læs om at administrere, opdatere og slette organisationsindholdspakker i Power BI.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f2a80b075a56cdeccfa4c3675cdf31504b6a7e5d
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 975c219a98f3d03f59df4d1c2a0551718bf213f0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431776"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881258"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Administrer, opdater og slet organisationsindholdspakker
 > [!NOTE]
@@ -64,8 +63,8 @@ En anden ændring, der er tilgængelig for oprettere af indholdspakker, er at ud
    
    Til alle medarbejdere, der ikke er en del af det nye alias:
    
-   * For gruppemedlemmer, der ikke har tilpasset indholdspakken, er de dashboards og rapporter, der er tilknyttet den indholdspakke, ikke længere tilgængelige, og indholdspakken vises ikke i navigationsruden.
-   * For gruppemedlemmer, som har tilpasset indholdspakken, er alle felter fra den oprindelige indholdspakke væk, næste gang de åbner det tilpassede dashboard.  Men fliser, der er fastgjort fra andre rapporter, vises stadig. De oprindelige indholdspakkerapporter og -datasæt er ikke længere tilgængelige, og indholdspakken vises ikke i navigationsruden.   
+   * For gruppemedlemmer, der ikke har tilpasset indholdspakken, er de dashboards og rapporter, der er tilknyttet denne indholdspakke, ikke længere tilgængelige, og indholdspakken vises ikke i navigationsruden.
+   * For gruppemedlemmer, som har tilpasset indholdspakken, er alle felter fra den oprindelige indholdspakke væk, næste gang de åbner det tilpassede dashboard.  Men fliser, der er fastgjort fra andre rapporter, vises stadig. De oprindelige rapporter og datasæt i indholdspakken er ikke længere tilgængelige, og indholdspakken vises ikke i navigationsruden.   
 
 ## <a name="refresh-an-organizational-content-pack"></a>Opdater en organisationsindholdspakke
 Da du har oprettet indholdspakken, kan du [planlægge en opdatering af datasættene](refresh-data.md).  Når du opretter og uploader indholdspakken, uploades denne tidsplan for opdatering sammen med datasættet. Hvis du ændrer tidsplanen for opdatering, skal du publicere indholdspakken igen (se ovenfor).
@@ -82,10 +81,10 @@ Du kan kun slette en indholdspakke fra AppSource, hvis du har oprettet den. Hvis
 2. Vælg **Slet \> Slet**. 
    
    * For gruppemedlemmer, som ikke har tilpasset indholdspakken, fjernes de dashboards og rapporter, der er knyttet til denne indholdspakke, automatisk. De er ikke længere tilgængelige, og indholdspakken vises ikke i navigationsruden.
-   * For gruppemedlemmer, som har tilpasset indholdspakken, er alle felter fra den oprindelige indholdspakke væk, næste gang de åbner det tilpassede dashboard.  Men fliser, der er fastgjort fra andre rapporter, vises stadig. De oprindelige indholdspakkerapporter og -datasæt er ikke længere tilgængelige, og indholdspakken vises ikke i navigationsruden.   
+   * For gruppemedlemmer, som har tilpasset indholdspakken, er alle felter fra den oprindelige indholdspakke væk, næste gang de åbner det tilpassede dashboard.  Men fliser, der er fastgjort fra andre rapporter, vises stadig. De oprindelige rapporter og datasæt i indholdspakken er ikke længere tilgængelige, og indholdspakken vises ikke i navigationsruden.   
 
 ## <a name="next-steps"></a>Næste trin
 * [Introduktion til organisationsindholdspakker](service-organizational-content-pack-introduction.md)
 * [Opret og distribuer en app i Power BI](service-create-distribute-apps.md) 
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

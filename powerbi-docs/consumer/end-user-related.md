@@ -2,7 +2,6 @@
 title: Få vist relateret indhold fra dashboards, rapporter og datasæt
 description: Nemmere navigation, se relateret indhold i dashboards, rapporter og datasæt
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.custom: seodec18
@@ -12,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 10fcb7420c261379d596666589a0f6707cf70160
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 9e202d22c2ff42a29eb28a8ee154b09f18097d04
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019452"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862272"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Få vist relateret indhold i Power BI-tjenesten
 
@@ -54,9 +53,9 @@ Her kan du handle direkte på det relaterede indhold.  Vælg f.eks. navnet på e
 ## <a name="view-related-content-for-a-dataset"></a>Få vist relateret indhold for et datasæt
 Du skal som minimum bruge *visningstilladelser* til et datasæt for at åbne ruden **Relateret indhold**. I dette eksempel bruger vi [eksemplet Indkøbsanalyse](../sample-procurement.md).
 
-Find overskriften **Arbejdsområder** på navigationslinjen, og vælg et arbejdsområde på listen. Hvis du har indhold i et arbejdsområde, vises det på lærredet til højre. 
+Find overskriften **Arbejdsområder** i navigationsruden, og vælg et arbejdsområde på listen. Hvis du har indhold i et arbejdsområde, vises det på lærredet til højre. 
 
-![arbejdsområder på navigationslinjen til venstre](./media/end-user-related/power-bi-workspace.png)
+![arbejdsområder i navigationsruden](./media/end-user-related/power-bi-workspace.png)
 
 
 I et arbejdsområde skal du vælge fanen **Datasæt** og finde ikonet **Få vist relaterede** ![ikonet Få vist relaterede](./media/end-user-related/power-bi-view-related-icon-new.png).
@@ -76,5 +75,5 @@ Her kan du handle direkte på det relaterede indhold. Vælg f.eks. et dashboard-
 
 ## <a name="next-steps"></a>Næste trin
 * [Introduktion til Power BI-tjenesten](../service-get-started.md)
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

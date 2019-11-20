@@ -4,7 +4,6 @@ description: I denne hurtige introduktion får **forbrugerne** mere at vide om P
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerbi
@@ -13,12 +12,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/30/2019
 ms.author: mihart
-ms.openlocfilehash: 17a142249abe1162dbbcff79c476f33eb4b80366
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 09b9bf10c3328ecc4eb9ca9d16460b1bcfab0da5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019582"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862681"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Hurtig introduktion: Få mere at vide om egenskaberne for *forbrugere* i Power BI
 I denne hurtige introduktion får du mere at vide om, hvordan du interagerer med Power BI for at få datadrevet forretningsindsigt. Denne artikel er ikke beregnet som en detaljeret gennemgang, men mere som en hurtig gennemgang af de handlinger, der er tilgængelige for Power BI-**forbrugere**.
@@ -50,7 +49,7 @@ Når vi bruger termen "indhold" i Power BI, henviser vi til rapporter, dashboard
 
 En *app* er en Power BI-indholdstype, der kombinerer relaterede dashboards og rapporter på ét sted. En app kan have et eller flere dashboards og en eller flere rapporter, der alle er samlet. Apps oprettes af *Power BI-designere*, der distribuerer og deler apps med *forbrugere* som dig. 
 
-En måde at få vist dine apps på er at vælge **Apps** på navigationslinjen og vælge en app, der skal åbnes.
+En måde at få vist dine apps på er ved at vælge **Apps** i navigationsruden og vælge en app, der skal åbnes.
 
 ![Ikonet Hent apps](./media/end-user-reading-view/power-bi-apps.png)
 
@@ -116,7 +115,7 @@ Visualiseringer består af datapunkter, og ved at holde musen over et datapunkt 
 ![peg for at få vist oplysninger](media/end-user-reading-view/power-bi-hover.gif)
 
 ### <a name="favorite-a-dashboard"></a>Gør et dashboard til favorit
-Når du gør indhold til en *favorit*, kan du få adgang til det fra navigationslinjen. Navigationslinjen er synlig fra næsten alle områder i Power BI. Favoritter er normalt de dashboards, rapportsider og apps, du besøger oftest.
+Når du gør indhold til en *favorit*, kan du få adgang til det via navigationsruden. Navigationsruden er synlig fra næsten alle områder i Power BI. Favoritter er normalt de dashboards, rapportsider og apps, du besøger oftest.
 
 I øverste højre hjørne af Power BI-tjenesten skal du vælge **Favoritter**, og hvis det ikke er synligt, skal du vælge **Flere indstillinger** (...) og derefter vælge **Favoritter** på rullelisten. 
    
@@ -194,9 +193,9 @@ Ud over at vise de data, der bruges til at oprette en visualisering, kan du ogs�
 Dette har været et hurtigt overblik over nogle af de ting, *forbrugere* kan anvende Power BI-tjenesten til.  
 
 ## <a name="clean-up-resources"></a>Fjern ressourcer
-- Hvis du har oprettet forbindelse til en app, skal du på navigationslinjen til venstre vælge **Apps** for at åbne indholdslisten Apps. Hold markøren over den app, du vil slette, og vælg affaldsspandsikonet.
+- Hvis du har oprettet forbindelse til en app, skal du via navigationsruden vælge **Apps** for at åbne indholdslisten Apps. Hold markøren over den app, du vil slette, og vælg affaldsspandsikonet.
 
-- Hvis du har importeret eller oprettet forbindelse til en eksempelrapport i Power BI skal du åbne **Mit arbejdsområde** på navigationslinjen til venstre. Ved hjælp af fanerne øverst skal du finde dashboardet, rapporten og datasættet og vælge affaldsspandsikonet for hver enkelt.
+- Hvis du har importeret eller oprettet forbindelse til en eksempelrapport i Power BI skal du åbne **Mit arbejdsområde** i navigationsruden. Ved hjælp af fanerne øverst skal du finde dashboardet, rapporten og datasættet og vælge affaldsspandsikonet for hver enkelt.
 
 ## <a name="next-steps"></a>Næste trin
 [Power BI for forbrugere](end-user-consumer.md)

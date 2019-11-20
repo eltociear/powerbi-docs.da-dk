@@ -2,7 +2,6 @@
 title: Del 2, Føj visualiseringer til en rapport i Power BI
 description: Del 2, Føj visualiseringer til en rapport i Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: dc50c54f826dd695b0aab459bd3d68d0da792abe
-ms.sourcegitcommit: 2a61d8b1e2707a24fe1284a8a4034b11c3999842
+ms.openlocfilehash: e9759f69668780b450117e5e6255e7f5cb7e67f5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73049136"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881027"
 ---
 # <a name="part-2-add-visualizations-to-a-power-bi-report"></a>Del 2, Føj visualiseringer til en rapport i Power BI
 
@@ -29,7 +28,7 @@ I dette selvstudium gennemgår vi vores datasæt for detailhandelanalyse og opre
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-I dette selvstudium bruges [PBIX-filen med eksemplet på detailhandelsanalyse](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+I dette selvstudium bruges [PBIX-filen med eksemplet på detailhandelsanalyse](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Vælg **Fil** > **Åbn** på menulinjen i øverste venstre afsnit af Power BI Desktop
    
@@ -46,7 +45,7 @@ Opret en visualisering ved at vælge et felt i ruden **Felter**. Den type visual
 
 ### <a name="add-an-area-chart-that-looks-at-this-years-sales-compared-to-last-year"></a>Tilføj et områdediagram, som indeholder en oversigt over dette års salg sammenlignet med sidste år
 
-1. I tabellen **Salg** skal du vælge **Dette års salg** > **Værdi** og **Sidste prs salg**. Power BI opretter et søjlediagram.  Dette diagram er lidt interessant, og du vil gerne se mere. Hvordan ser salget ud pr. måned?  
+1. I tabellen **Sales** skal du vælge **This Year Sales** > **Value** og **Last Year Sales**. Power BI opretter et søjlediagram.  Dette diagram er lidt interessant, og du vil gerne se mere. Hvordan ser salget ud pr. måned?  
    
    ![Skærmbillede med søjlediagram](media/power-bi-report-add-visualizations-ii/power-bi-start.png)
 
@@ -59,7 +58,7 @@ Opret en visualisering ved at vælge et felt i ruden **Felter**. Den type visual
 
 5. [Tilpas størrelsen af visualiseringen](power-bi-visualization-move-and-resize.md) ved at vælge visualiseringen, tage fat i en af konturcirklerne og trække. Gør den bred nok, så rullepanelet fjernes, men lille nok, så der er plads nok til at tilføje endnu en visualisering.
    
-   ![](media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png)
+   ![skærmbillede af visualisering som områdediagram](media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png)
 6. [Gem rapporten](../service-report-save.md).
 
 ### <a name="add-a-map-visualization-that-looks-at-sales-by-location"></a>Tilføj en kortvisualisering med salg efter placering
@@ -68,9 +67,9 @@ Opret en visualisering ved at vælge et felt i ruden **Felter**. Den type visual
    ![Områdediagram](media/power-bi-report-add-visualizations-ii/power-bi-map1.png)
 
 2. Tilføj en forklaring.  Hvis du vil se dataene efter butiksnavn, skal du trække **Butik** > **Kæde** til området Forklaring.  
-   ![](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
+   ![rapportlærred med pil fra kæden på feltlisten til kæden i forklaringsbucket'en](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
 
 ## <a name="next-steps"></a>Næste trin
 * Få mere at vide om [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md).  
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

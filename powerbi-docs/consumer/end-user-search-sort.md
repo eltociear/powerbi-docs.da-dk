@@ -2,7 +2,6 @@
 title: Søg i og sortér dit indhold i Power BI-tjenesten
 description: dokumentation til søgning efter og sortering af indhold i Power BI Mit arbejdsområde
 author: mihart
-manager: kvivek
 ms.reviewer: willt
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: d5bc5638d9f98c1a35f57edd1d5d838c91c8ebf2
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: 5a7848cb5931d983ab434a19c934c9e9cb464724
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72891778"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861747"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigation: Søg i, find og sortér dit indhold i Power BI-tjenesten
 
@@ -47,10 +46,10 @@ Du kan også sortere indholdet efter navn eller ejer. Læg mærke til pil op til
 Ikke alle kolonner kan sorteres. Hold over kolonneoverskrifterne for at finde ud af, hvilke der kan sorteres.
 
 ___________________________________________________________________
-## <a name="navigation-using-the-navigation-pane"></a>Navigation ved hjælp af navigationsruden
+## <a name="navigation-using-the-nav-pane"></a>Navigation ved hjælp af navigationsruden
 Ved hjælp af navigationsruden klassificeres dit indhold på måder, der hjælper dig med hurtigt at finde det, du har brug for.  
 
-![venstre navigationsrude](./media/end-user-search-sort/power-bi-navbar.png)
+![navigationsrude](./media/end-user-search-sort/power-bi-nav pane.png)
 
 
 - Indhold, der er delt med dig, er tilgængeligt under **Delt med mig**.
@@ -58,7 +57,7 @@ Ved hjælp af navigationsruden klassificeres dit indhold på måder, der hjælpe
 - Du finder dine apps ved at vælge **Apps**.
 - **Start** er en visning af dit vigtigste indhold og foreslået indhold samt læringskilder på en enkelt side.
 
-Derudover kan du mærke indhold som [foretrukket](end-user-favorite.md) og [udvalgt](end-user-featured.md). Vælg det dashboard eller den rapport, du forventer at se oftest, og angiv det som dit *foretrukne* indhold. Hver gang du åbner Power BI-tjenesten, bliver dit udvalgte dashboard vist først. Har du en række dashboards og apps, som du ofte besøger? Når du angiver dem som favoritter, er de altid tilgængelige i den venstre navigationslinje.
+Derudover kan du mærke indhold som [foretrukket](end-user-favorite.md) og [udvalgt](end-user-featured.md). Vælg det dashboard eller den rapport, du forventer at se oftest, og angiv det som dit *foretrukne* indhold. Hver gang du åbner Power BI-tjenesten, bliver dit udvalgte dashboard vist først. Har du en række dashboards og apps, som du ofte besøger? Når du angiver dem som favoritter, er de altid tilgængelige i navigationsruden.
 
 ![Pop op-vinduet Favoritter](./media/end-user-search-sort/power-bi-favorite.png).
 
@@ -70,4 +69,4 @@ Derudover kan du mærke indhold som [foretrukket](end-user-favorite.md) og [udva
 ## <a name="next-steps"></a>Næste trin
 [Sorter visualiseringer i rapporter](end-user-change-sort.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

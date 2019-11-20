@@ -3,7 +3,6 @@ title: Hvad er Microsoft Power BI Premium?
 description: Power BI Premium indeholder dedikerede kapaciteter til din organisation og giver dig mere pålidelig ydeevne og større datamængder, uden at du skal købe licenser pr. bruger.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: e57df395fd3efe439cb6ef009cb2c7a9f3fe99f9
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: f62387feebca089b2afbb919419365fd7e09c2d3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431648"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871815"
 ---
 # <a name="what-is-power-bi-premium"></a>Hvad er Power BI Premium?
 
@@ -166,9 +165,9 @@ Afhængigt af SKU'en understøtter Power BI Premium upload af Power BI Desktop-m
 
 ### <a name="size-considerations"></a>Overvejelser i forbindelse med størrelse
 
-Store modeller kan være ressourcekrævende. Du skal have mindst en P1-SKU for modeller, der er større end 1 GB. Selvom publicering af store modeller til arbejdsområder, som understøttes af A-SKU'er op til A3, kan fungere, vil en opdatering af dem ikke fungere.
+Store datasæt kan være ressourcekrævende. Du skal som minimum have en P1-SKU for datasæt, der er større end 1 GB. Selvom publicering af store datasæt til arbejdsområder, som understøttes af A-SKU'er op til A3, kan fungere, vil en opdatering af dem ikke fungere.
 
-I nedenstående tabel beskrives de anbefalede SKU'er til forskellige .pbix-størrelser:
+I følgende tabel vises de anbefalede SKU'er for upload af .pbix-filer eller publicering til Power BI-tjenesten:
 
    |SKU  |.pbix-størrelse   |
    |---------|---------|
@@ -176,9 +175,11 @@ I nedenstående tabel beskrives de anbefalede SKU'er til forskellige .pbix-stør
    |P2    | < 6 GB        |
    |P3, P4, P5    | op til 10 GB   |
 
-Power BI Embedded A4-SKU'en er lig med P1-SKU'en, A5-SKU'en = P2 og A6-SKU'en = P3. Hvis du udgiver store modeller til A- og EM-SKU'er, kan det returnere fejl, der ikke er specifikke for størrelsesbegrænsningen af modellen i den delte kapacitet. Opdateringsfejl for store modeller i A- og EM-SKU'er skyldes sandsynligvis timeout. 
+Power BI Embedded A4-SKU'en er lig med P1-SKU'en, A5-SKU'en = P2 og A6-SKU'en = P3. Hvis du publicerer datasæt til A- og EM-SKU'er, kan det returnere fejl, der ikke er specifikke for størrelsesbegrænsningen af modellen i den delte kapacitet. Opdateringsfejl for datasæt i A- og EM-SKU'er skyldes sandsynligvis timeout.
 
-Dine .pbix-filer repræsenterer data i en *stærkt komprimeret tilstand*. Data udvides sandsynligvis flere gange, når de indlæses i hukommelsen, og herfra vil de sikkert blive udvidet gentagne gange under dataopdatering.
+Hvis du aktiverer [store modeller](service-premium-large-models.md) på et datasæt, kan størrelsen af .pbix-filen stadig være gældende i forbindelse med filupload eller publicering. Datasæt kan dog blive meget større end disse begrænsninger, når trinvis opdatering kombineres med store modeller. I forbindelse med store modeller begrænses størrelsen af datasættet kun til størrelsen af Power BI Premium-kapaciteten.
+
+Dine .pbix-filer repræsenterer data i en *stærkt komprimeret tilstand*. Dataene udvides sandsynligvis, når de indlæses i hukommelsen, og herfra udvides de måske gentagne gange under dataopdatering.
 
 Planlagt opdatering af store datasæt kan tage lang tid og være ressourcekrævende. Det er vigtigt, at du ikke planlægger for mange overlappende opdateringer. Vi anbefaler, at du konfigurerer en [trinvis opdatering](service-premium-incremental-refresh.md), fordi det er hurtigere og mere pålideligt og forbruger færre ressourcer.
 

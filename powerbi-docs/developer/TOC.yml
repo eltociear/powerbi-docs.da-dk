@@ -142,7 +142,7 @@
               href: register-app.md
             - name: Hent et Azure AD-adgangstoken
               href: get-azuread-access-token.md
-            - name: Dynamisk binding
+            - name: Opret forbindelse til en rapport ved hjælp af dynamisk binding
               href: embed-dynamic-binding.md
             - name: Integration af Q&A
               href: qanda.md

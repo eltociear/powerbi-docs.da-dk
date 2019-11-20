@@ -2,7 +2,6 @@
 title: Administrer datalager i dine arbejdsområder
 description: Få mere at vide om, hvordan du kan administrere dit datalager i dit individuelle område eller arbejdsområde for at sikre, at du kan fortsætte med at publicere rapporter og datasæt.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: ea187de55eec2667abe2eed017481180910b7619
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: f8e7240b34e20a3d18443cadb5265c5d0d870790
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431379"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873645"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Administrer datalager i Power BI-arbejdsområder
 
@@ -46,7 +45,7 @@ Størrelsen på et dashboard, som du deler, varierer, afhængigt af hvad der er 
 
 Se, hvor meget datalager, du bruger på din Power BI-konto, og administrer din konto.
 
-1. Hvis du vil administrere dit eget lager, skal du gå til **Mit arbejdsområde** i venstre navigationsrude.
+1. Hvis du vil administrere dit eget lager, skal du gå til **Mit arbejdsområde** i navigationsruden.
    
     ![Mit arbejdsområde](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
 2. Vælg tandhjulsikonet ![Tandhjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i øverste højre hjørne \> **Administrer personligt lager**.
@@ -104,5 +103,5 @@ Denne grænse angives også i **Administrer personligt lager**.
 
  ![Du har overskredet din lagergrænse](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
- Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+ Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

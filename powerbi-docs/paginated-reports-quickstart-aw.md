@@ -3,18 +3,17 @@ title: 'Selvstudium: Opret en sideinddelt rapport, og upload den til Power BI-tj
 description: I dette selvstudium kan du oprette forbindelse til et eksempel på en Azure SQL-database. Du kan bruge en guide i Report Builder til at oprette en sideinddelt rapport. Derefter uploader du den sideinddelte rapport til et arbejdsområde i en Premium-kapacitet i Power BI-tjenesten.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 59d3f943ff893024beceff59ce3d0db6bc4d764b
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: ab4cb14936ceff52a78f713877064d525de4b104
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431681"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875419"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Selvstudium: Opret en sideinddelt rapport, og upload den til Power BI-tjenesten
 
@@ -287,7 +286,7 @@ Yderligere en forbedring af formateringen, inden du publicerer rapporten til Pow
 
 Nu, hvor du har oprettet denne sideinddelte rapport, er det tid til at uploade den til Power BI-tjenesten.
 
-1. I Power BI-tjenesten (http://app.powerbi.com) i navigationen til venstre skal du vælge **Arbejdsområder** > **Opret arbejdsområde**.
+1. I Power BI-tjenesten (https://app.powerbi.com) i navigationsruden skal du vælge **Arbejdsområder** > **Opret arbejdsområde**.
 
 2. Navngiv dit arbejdsområde **Azure AW** eller et andet entydigt navn. Du er indtil videre det eneste medlem. 
 

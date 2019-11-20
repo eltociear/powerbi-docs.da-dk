@@ -2,7 +2,6 @@
 title: Kom i gang med Power BI-tjenesten
 description: Kom i gang med Power BI-onlinetjenesten (app.powerbi.com)
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 681c55f4425729b96860367858273d7eb1ad73b6
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 3a9b2a5e7de0a5072b266c7b146488e5d546f616
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060405"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872336"
 ---
 # <a name="tutorial-get-started-with-the-power-bi-service"></a>Selvstudium: Kom i gang med Power BI-tjenesten
 Dette selvstudium er en introduktion til nogle af funktionerne i *Power BI-tjenesten.* I selvstudiet lærer du, hvordan du opretter forbindelse til data, opretter en rapport og et dashboard samt stiller spørgsmål til dine data. Du kan udføre mange flere opgaver i Power BI-tjenesten, og dette selvstudium er kun ment som en appetitvækker. Hvis du vil have en forståelse af, hvordan Power BI-tjenesten passer sammen med de andre Power BI-tilbud, anbefaler vi, at du læser artiklen [Hvad er Power BI](fundamentals/power-bi-overview.md).
@@ -35,7 +34,7 @@ I dette selvstudium kan du udføre følgende trin:
 > * Fjern ressourcer ved at slette datasættet, rapporten og dashboardet.
 
 > [!TIP]
-> Foretrækker du i stedet et gratis kursus i dit eget tempo? [Deltag i vores kursus om analyse og visualisering af data på EdX](http://aka.ms/edxpbi).
+> Foretrækker du i stedet et gratis kursus i dit eget tempo? [Deltag i vores kursus om analyse og visualisering af data på EdX](https://aka.ms/edxpbi).
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Tilmeld dig Power BI-tjenesten
 Hvis du ikke har en Power BI-konto, [kan du tilmelde dig en gratis prøveversion af Power BI Pro](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
@@ -46,10 +45,10 @@ Når du har fået en konto, skal du angive *app.powerbi.com* i din browser for a
 
 Når du vil oprette en Power BI-rapport, starter du ofte i Power BI Desktop. Denne gang går vi i gang med at oprette en rapport fra bunden i Power BI-tjenesten.
 
-I dette selvstudium henter vi data fra en CSV-fil. Vil du følge med? [Download CSV-filen Økonomisk eksempel](http://go.microsoft.com/fwlink/?LinkID=521962).
+I dette selvstudium henter vi data fra en CSV-fil. Vil du følge med? [Download CSV-filen Økonomisk eksempel](https://go.microsoft.com/fwlink/?LinkID=521962).
 
-1. [Log på Power BI](http://www.powerbi.com/). Har du ikke en konto? Helt i orden, du kan tilmelde dig og få en gratis prøveversion.
-2. Power BI åbnes i browseren. Vælg **Hent data** nederst på venstre navigationslinje.
+1. [Log på Power BI](https://www.powerbi.com/). Har du ikke en konto? Helt i orden, du kan tilmelde dig og få en gratis prøveversion.
+2. Power BI åbnes i browseren. Vælg **Hent data** nederst i navigationsruden.
 
     Siden **Hent data** åbnes.   
 
@@ -73,7 +72,7 @@ I dette selvstudium henter vi data fra en CSV-fil. Vil du følge med? [Download 
 
     ![Tomt rapportlærred](media/service-get-started/power-bi-service-blank-report.png)
 
-7. Bemærk, at der er en indstilling for **Læsevisning** på den øverste navigationslinje. Når denne indstilling er aktiv, betyder det, at du i øjeblikket er i Redigeringsvisning. En god måde at blive fortrolig med rapporteditoren på er ved at [få en introduktion](service-the-report-editor-take-a-tour.md).
+7. Bemærk, at der er en indstilling for **Læsevisning** i den øverste navigationsrude. Når denne indstilling er aktiv, betyder det, at du i øjeblikket er i Redigeringsvisning. En god måde at blive fortrolig med rapporteditoren på er ved at [få en introduktion](service-the-report-editor-take-a-tour.md).
 
     ![Indstillingen Læsevisning](media/service-get-started/power-bi-service-reading-view.png)
 
@@ -115,13 +114,13 @@ Nu hvor du har forbindelse til data, kan du begynde at udforske.  Vi har fundet 
    
 8. Vælg det nye felt på dashboardet for at vende tilbage til rapporten. Power BI vender tilbage til rapporten i Læsevisning. 
 
-1. Hvis du vil skifte tilbage til Redigeringsvisning, skal du vælge **Flere indstillinger** (...) på den øverste navigationslinje > **Rediger**. Når du er tilbage i Redigeringsvisning, kan du fortsætte med at udforske og fastgøre felter.
+1. Hvis du vil skifte tilbage til Redigeringsvisning, skal du vælge **Flere indstillinger** (...) i den øverste navigationsrude > **Rediger**. Når du er tilbage i Redigeringsvisning, kan du fortsætte med at udforske og fastgøre felter.
 
     ![Vælg Rediger for at redigere rapporten](media/service-get-started/power-bi-service-edit-report.png)
 
 ## <a name="step-3-explore-with-qa"></a>Trin 3: Udforsk med Spørgsmål og svar
 
-Hvis du vil foretage en hurtig udforskning af dine data, kan du prøve at stille et spørgsmål i spørgsmålsfeltet Spørgsmål og svar. Spørgsmål og svar opretter forespørgsler på et naturligt sprog om dine data. I et dashboard er feltet Spørgsmål og svar placeret øverst (**Stil et spørgsmål om dine data**). I en rapport er feltet placeret på den øverste navigationslinje (**Stil et spørgsmål**).
+Hvis du vil foretage en hurtig udforskning af dine data, kan du prøve at stille et spørgsmål i spørgsmålsfeltet Spørgsmål og svar. Spørgsmål og svar opretter forespørgsler på et naturligt sprog om dine data. I et dashboard er feltet Spørgsmål og svar placeret øverst (**Stil et spørgsmål om dine data**). I en rapport er feltet placeret i den øverste navigationsrude (**Stil et spørgsmål**).
 
 1. Hvis du vil vende tilbage til dashboardet, skal du vælge **Mit arbejdsområde** på den sorte **Power BI-linje**.
 
@@ -198,7 +197,7 @@ Her er en sidste interaktion at lægge mærke til, før du begynder at oprette d
 ## <a name="clean-up-resources"></a>Fjern ressourcer
 Nu, hvor du har gennemført selvstudiet, kan du slette datasættet, rapporten og dashboardet. 
 
-1. Sørg for, at du er i **Mit arbejdsområde**, på venstre navigationslinje.
+1. Sørg for, at du befinder dig i **Mit arbejdsområde** i navigationsruden.
 2. Vælg fanen **Datasæt**, og find det datasæt, du har importeret i dette selvstudium.  
 3. Vælg **Flere indstillinger** (...) > **Slet**.
 

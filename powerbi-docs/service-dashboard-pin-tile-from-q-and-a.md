@@ -2,7 +2,6 @@
 title: Sådan fastgør du et felt til et dashboard fra Spørgsmål og svar
 description: Dokumentation i at fastgøre et felt til et Power BI-dashboard fra spørgsmålsfeltet Spørgsmål og svar
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e75c9b86b20eda2de630f2b27caa6b88a687fbb4
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 12aa35e37e4382e7fc89fc9e0fe8c2ae564e8eda
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432076"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872822"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Fastgør et felt til et dashboard fra Spørgsmål og svar
 ## <a name="how-to-pin-a-tile-from-qa"></a>Sådan fastgør du et felt fra Spørgsmål og svar
@@ -52,9 +51,9 @@ I denne vejledning bruger vi Power BI-tjenesten (app.powerbi.com) til at åbne e
    ![dashboard med felter](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
-* Når du begynder at indtaste et spørgsmål, begynder Spørgsmål og svar straks at søge efter det bedste svar fra alle de datasæt, der er knyttet til det aktuelle dashboard.  Det "aktuelle dashboard" er det dashboard, der er angivet på den øverste navigationslinje. Dette spørgsmål stilles f.eks. på dashboardet **Eksempel på analyse af detailhandel**, som er en del af arbejdsområdet **mihart**.
+* Når du begynder at indtaste et spørgsmål, begynder Spørgsmål og svar straks at søge efter det bedste svar fra alle de datasæt, der er knyttet til det aktuelle dashboard.  Det "aktuelle dashboard" er det dashboard, der er angivet i den øverste navigationsrude. Dette spørgsmål stilles f.eks. på dashboardet **Eksempel på analyse af detailhandel**, som er en del af arbejdsområdet **mihart**.
 
-  ![brødkrummer](media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png)
+  ![brødkrummer](media/service-dashboard-pin-tile-from-q-and-a/power-bi-nav pane.png)
 * **Hvordan ved Spørgsmål og svar, hvilke datasæt der skal bruges**?  Spørgsmål og svar har adgang til alle datasæt, der har mindst en visualisering fastgjort til det pågældende dashboard.
 
 * **Hvis feltet med spørgsmål ikke vises**. Rådfør dig med din Power BI-administrator. Administratoren kan deaktivere Spørgsmål og svar.
@@ -64,4 +63,4 @@ I denne vejledning bruger vi Power BI-tjenesten (app.powerbi.com) til at åbne e
 [Omdøb, tilpas størrelse, tilføj et hyperlink, flyt feltet og meget mere](service-dashboard-edit-tile.md)    
 [Få vist dit dashboardfelt i fokustilstand](consumer/end-user-focus.md)     
 [Tilbage til Spørgsmål og svar i Power BI](consumer/end-user-q-and-a.md)  
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -2,19 +2,18 @@
 title: 'Selvstudium: Udforsk Power BI Report Server i en VM'
 description: I dette selvstudium skal du oprette en virtuel maskine med Power BI-rapportserveren, der allerede er installeret, og udforske webportalen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/06/2019
 ms.author: maggies
-ms.openlocfilehash: cd3e032375c5edaba2b0f90f982d0dbe5591c913
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 312b86f9e0c0dda0c9c943520c74286e0458acef
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021613"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73859243"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Selvstudium: Udforsk webportalen til Power BI-rapportserver i en VM
 I dette selvstudium skal du oprette en virtuel Azure-maskine med Power BI-rapportserver, der allerede er installeret, så du kan få vist, redigere og administrere eksempler på Power BI og sideinddelte rapporter samt KPI'er.
@@ -72,7 +71,7 @@ Power BI-teamet har heldigvis oprettet en VM, der leveres sammen med Power BI-ra
 
 ## <a name="connect-to-your-virtual-machine"></a>Opret forbindelse til din virtuelle maskine
 
-1. Vælg **Virtuelle maskiner** i venstre navigationsrude i Azure. 
+1. Vælg **Virtuelle maskiner** i navigationsruden i Azure. 
 
 2. I feltet **Filtrer efter navn** skal du skrive "rapport". 
 
@@ -108,7 +107,7 @@ Når din VM åbner, vises følgende elementer på skrivebordet.
 |![Nummer 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Åbner webportalen til Power BI-rapportserveren i browseren |
 |![Nummer 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Starter SQL Server Data Tools for at oprette sideinddelte rapporter (. RDL) |
 
-Dobbeltklik på ikonet **Webportalen Rapportserver**. Browseren åbner `http://localhost/reports/browse`. Du kan se forskellige filer grupperet efter type på webportalen. 
+Dobbeltklik på ikonet **Webportalen Rapportserver**. Browseren åbner `https://localhost/reports/browse`. Du kan se forskellige filer grupperet efter type på webportalen. 
 
 ![Webportalen til Power BI-rapportserver](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 

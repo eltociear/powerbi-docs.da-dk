@@ -2,7 +2,6 @@
 title: 'Selvstudium: Opret forbindelse til et GitHub-lager med Power BI'
 description: I dette selvstudium opretter du forbindelse til virkelige data i GitHub-tjenesten med Power BI, og Power BI opretter automatisk dashboards og rapporter.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: SarinaJoan
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 08/07/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7f7fde7fcabc29238d9558739eff02519ef9cca3
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 986f35cd1c4f612b16374107487d0ca20c9c607e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020025"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871264"
 ---
 # <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Selvstudium: Opret forbindelse til et GitHub-lager med Power BI
 I dette selvstudium opretter du forbindelse til virkelige data i GitHub-tjenesten med Power BI, og Power BI opretter automatisk dashboards og rapporter. Du opretter forbindelse til det offentlige Power BI-lagerindhold (også kaldet *lager*) og ser svar på spørgsmål såsom: Hvor mange bidrager til det offentlige Power BI-indhold? Hvem der bidrager mest? På hvilken ugedag er der flest bidrag? Og andre spørgsmål. 
@@ -45,7 +44,7 @@ Hvis du vil gennemføre dette selvstudium, skal du oprette en GitHub-konto, hvis
 
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
 1. Log på Power BI-tjenesten (https://app.powerbi.com). 
-2. Vælg **Apps** og derefter **Hent apps** i navigationsruden til venstre.
+2. Vælg **Apps** og derefter **Hent apps** i navigationsruden.
    
    ![Hent apps i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
 
@@ -72,15 +71,15 @@ Hvis du vil gennemføre dette selvstudium, skal du oprette en GitHub-konto, hvis
    Nu kan Power BI oprette forbindelse til GitHub og oprette forbindelse til dataene.  Dataene opdateres én gang om dagen.
 
 8. Når Power BI importerer dataene, får du vist indholdet af dit nye GitHub-arbejdsområde. 
-9. Vælg pilen ud for navnet på arbejdsområdet på navigationslinjen til venstre. Du kan se, at arbejdsområdet indeholder et dashboard og en rapport. 
+9. Vælg pilen ud for navnet på arbejdsområdet i navigationsruden. Du kan se, at arbejdsområdet indeholder et dashboard og en rapport. 
 
-    ![App i venstre navigationsrude](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+    ![App i navigationsruden](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
 
 10. Vælg **Flere indstillinger** (...) ud for dashboardnavnet > **Omdøb** > skriv **GitHub-dashboard**.
  
     ![GitHub-felt i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
 
-8. Vælg det globale navigationsikon for at minimere venstre navigationsrude, så du har mere plads.
+8. Vælg ikonet for global navigation for at minimere navigationsruden, så du har mere plads.
 
     ![Ikonet til global navigation](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
 
@@ -129,7 +128,7 @@ Hvis du vil gennemføre dette selvstudium, skal du oprette en GitHub-konto, hvis
 
 Nu, hvor du har gennemført selvstudiet, kan du slette GitHub-appen. 
 
-1. Vælg **Apps** på navigationslinjen til venstre.
+1. Vælg **Apps** i navigationsruden.
 2. Peg på GitHub-feltet, og vælg **Slet** ud for skraldespanden.
 
     ![Slet GitHub-appen](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-delete.png)

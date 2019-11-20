@@ -2,7 +2,6 @@
 title: Opret en rapport ud fra et datasæt
 description: Opret en Power BI-rapport ud fra et datasæt.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,19 +9,19 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 1993ac0b300bb582d7b8a1946ff63cf6316c2d52
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: c3f30206a01dce9cf9fd3ce0600b46b401df2b1f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432209"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871756"
 ---
 # <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Opret en rapport i Power BI-tjenesten ved at importere et datasæt
 Du har læst [Rapporter i Power BI](consumer/end-user-reports.md), og nu vil du oprette din egen. Der er forskellige måder at oprette en rapport på. I denne artikel starter vi med at oprette en grundlæggende rapport i Power BI-tjenesten ud fra et Excel-datasæt. Når du har forstået de grundlæggende ting i forbindelse med at oprette en rapport, skal du se de [Næste trin](#next-steps) nederst for at se mere avancerede rapportemner.  
 
 ## <a name="prerequisites"></a>Forudsætninger
 - [Tilmeld dig Power BI-tjenesten](service-self-service-signup-for-power-bi.md). Se [Desktop-rapportvisning](desktop-report-view.md) for at se, hvordan du opretter rapporter ved hjælp af Power BI Desktop. 
-- [Download Excel-datasættet med Retail Analysis-eksemplet](http://go.microsoft.com/fwlink/?LinkId=529778), og gem det i OneDrive for Business eller lokalt.
+- [Download Excel-datasættet med Retail Analysis-eksemplet](https://go.microsoft.com/fwlink/?LinkId=529778), og gem det i OneDrive for Business eller lokalt.
 
 ## <a name="import-the-dataset"></a>Importér datasættet
 Denne metode til oprettelse af en rapport starter med et datasæt og et tomt rapportlærred. Du kan følge med ved at se Excel-datasættet med Retail Analysis-eksemplet.
@@ -30,7 +29,7 @@ Denne metode til oprettelse af en rapport starter med et datasæt og et tomt rap
 1. Vi opretter rapporten i et arbejdsområde i Power BI-tjenesten, så vælg et eksisterende arbejdsområde eller opret et.
    
    ![liste over arbejdsområder](media/service-report-create-new/power-bi-workspaces2.png)
-2. Vælg **Hent data** nederst i venstre navigationsrude.
+2. Vælg **Hent data** nederst i navigationsruden.
    
    ![Hent data](media/service-report-create-new/power-bi-get-data3.png)
 3. Vælg **Filer**, og naviger til den placering, hvor du har gemt Retail Analysis-eksemplet.
@@ -93,5 +92,5 @@ Fortsæt med at udforske dine data og tilføje visualiseringer. Når du finder i
 ## <a name="next-steps"></a>Næste trin
 
 * Se, hvordan du kan [fastgøre visualiseringer til et dashboard](service-dashboard-pin-tile-from-report.md)   
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

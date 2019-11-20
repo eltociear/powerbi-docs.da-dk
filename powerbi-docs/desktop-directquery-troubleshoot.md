@@ -2,19 +2,18 @@
 title: Fejlfinding af DirectQuery-model i Power BI Desktop
 description: Foretag fejlfinding af problemer med DirectQuery-model.
 author: peter-myers
-manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ac585aef180bb852f79ad5135778cec20f35cf2d
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 623a0bbd187a997003ce7b82cc76d5c4fbe9ce44
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73433585"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868060"
 ---
 # <a name="directquery-model-troubleshooting-in-power-bi-desktop"></a>Fejlfinding af DirectQuery-model i Power BI Desktop
 
@@ -92,7 +91,7 @@ Vi anbefaler følgende metode til registrering af en sporing for at hjælpe med 
 - Åbn SQL Server Profiler, og undersøg sporingen, som beskrevet tidligere. Husk, at sporingsfilen slettes, når Power BI Desktop lukkes. Desuden vises yderligere handlinger i Power BI Desktop ikke med det samme – sporingsfilen skal lukkes og åbnes igen, før du kan se de nye hændelser.
 - Bevar individuelle sessioner, der er rimeligt små (10-sekunders handlinger – ikke hundredvis), for at gøre det nemmere at fortolke sporingsfilen (da der er en grænse for størrelsen på sporingsfilen, er der en risiko for at tidlige hændelser fjernes for lange sessioner).
 
-## <a name="understand-the-form-of-query-sent-by-power-bi-desktop"></a>Forstå den forespørgselstype, der sendes af Power BI Desktop
+## <a name="understand-queries-sent-to-the-source"></a>Forstå forespørgsler, der er sendt til kilden
 
 I det generelle format af forespørgsler, der genereres og sendes af Power BI Desktop, bruges underforespørgsler for hver af de tabeller, der henvises til, hvor underforespørgslen er defineret i Power Query-forespørgslen. Antag f.eks. følgende TPC-DS-tabeller i en SQL Server-relationsdatabase:
 

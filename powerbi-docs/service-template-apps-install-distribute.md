@@ -2,19 +2,18 @@
 title: Distribuer skabelonprogrammer i din organisation – Power BI
 description: Få mere at vide om installation, tilpasning og distribution af skabelonprogrammer i din organisation i Power BI.
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: tebercov
-ms.openlocfilehash: 4db4fbc0dd34ae558514058e0aa7af0a704d8411
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: dcb037fdf064611947719a57316f31d901e3b81d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432333"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871410"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Installér og distribuer skabelonprogrammer i din organisation – Power BI
 
@@ -45,7 +44,7 @@ Vælg dette link for at åbne AppSource, der er filtreret efter Power BI-program
 
 ### <a name="search-appsource-from-the-power-bi-service"></a>Søg i AppSource fra Power BI-tjenesten
 
-1. Vælg **Programmer** > **Hent programmer** i navigationsruden til venstre i Power BI-tjenesten.
+1. Vælg **Programmer** > **Hent programmer** i navigationsruden i Power BI-tjenesten.
 
     ![Hent apps](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
 
@@ -69,7 +68,7 @@ Vælg dette link for at åbne AppSource, der er filtreret efter Power BI-program
     - **Forbind data**: Skift datakilden fra eksempeldataene til din egen datakilde. Du kan omdefinere parametre for datasæt og legitimationsoplysninger for datakilden. Se [Kendte begrænsninger](service-template-apps-tips.md#known-limitations) i artiklen om tip til skabelonprogrammer. 
     - **Gå til arbejdsområde** (mest avancerede indstilling): Du kan foretage alle de ændringer, der er tilladt af programudvikleren.
 
-    Eller du kan springe denne dialogboks over og få adgang til det tilknyttede arbejdsområde direkte via **Arbejdsområder** i navigationsruden til venstre.
+    Eller du kan springe denne dialogboks over og få adgang til det tilknyttede arbejdsområde direkte via **Arbejdsområder** i navigationsruden.
     >[!NOTE]
     >Når du installerer en skabelonapp, installeres der både en *organisationsapp* og et *arbejdsområde*. Læs mere om [distribution af apps i Power BI](service-create-distribute-apps.md).
  

@@ -2,7 +2,6 @@
 title: Power BI-licenser i din organisation
 description: 'Forstå de forskellige licenstyper, der er tilgængelige i Power BI: gratis licenser, Power BI Pro og Power BI Premium.'
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e7a851a890fa734c045bb9cee60d429f87a3a602
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: 2cbf2498740d26a59ced5652368cf99b8fa5eec1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442834"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857718"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI-licenser i din organisation
 
@@ -55,7 +54,7 @@ Vær opmærksom på følgende, før du følge trinnene for at tilmelde dig:
 
 1. Naviger til [Microsoft 365 Administration](https://portal.office.com/adminportal/home#/homepage).
 
-1. Vælg **Fakturering** og derefter **Abonnementer** i den venstre navigationsrude.
+1. Vælg **Fakturering** og derefter **Abonnementer** i navigationsruden.
 
    ![Fakturering og abonnementer](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-05.png)
 
@@ -101,7 +100,7 @@ Hvis den ubegrænsede licensblok Power BI (gratis) ikke er tilgængelig, og du i
 
 1. Naviger til [Microsoft 365 Administration](https://portal.office.com/admin/default.aspx).
 
-1. Vælg **Fakturering** > **Abonnementer** i den venstre navigationsrude.
+1. Vælg **Fakturering** > **Abonnementer** i navigationsruden.
 
 1. Vælg **Tilføj abonnementer +** i højre side.
 
@@ -156,4 +155,4 @@ Indstillingen i Azure Active Directory, som styrer tilmeldingen, er **AllowAdHoc
 
 [Køb og tildel Power BI Pro-licenser](service-admin-purchasing-power-bi-pro.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
