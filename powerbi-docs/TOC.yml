@@ -279,8 +279,6 @@
               href: desktop-slicer-filter-date-range.md
             - name: 'Opret et udsnit, du kan tilpasse størrelsen på'
               href: power-bi-slicer-filter-responsive.md
-            - name: Opret brugerdefinerede svarkort til Cortana
-              href: service-cortana-answer-cards.md
             - name: Sikkerhed på rækkeniveau
               href: desktop-rls.md
             - name: Værktøjstip til brugerdefinering
@@ -665,10 +663,6 @@
               href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
             - name: Brug Spørgsmål og svar via direkte forbindelser
               href: service-q-and-a-direct-query.md
-            - name: Introduktion til Cortana til Power BI
-              href: service-cortana-intro.md
-            - name: Aktiver Cortana til Power BI
-              href: service-cortana-enable.md
             - name: Quick Insights i Power BI
               href: service-insights.md
             - name: Optimer data til Hurtig indsigt
@@ -801,8 +795,6 @@
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Fejl: Der blev ikke fundet nogen data i din Excel-projektmappe'
               href: service-admin-troubleshoot-excel-workbook-data.md
-            - name: Fejlfinding af Cortana
-              href: service-cortana-troubleshoot.md
             - name: 'Sådan opdaterer du dine legitimationsoplysninger til Xero-indholdspakken, hvis opdatering mislykkedes'
               href: service-refresh-xero-credentials.md
         - name: Andre opgaver
