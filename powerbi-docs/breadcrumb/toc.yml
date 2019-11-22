@@ -14,8 +14,8 @@
           topicHref: /power-bi/developer/index
           items:
             - name: Brug R-drevne Power BI-visualiseringer i Power BI
-              tocHref: /power-bi/desktop-r-powered-custom-visuals/
-              topicHref: /power-bi/developer/index
+              tocHref: /power-bi/developer/
+              topicHref: /power-bi/desktop-r-powered-custom-visuals/
         - name: Kursus med vejledning
           tocHref: /power-bi/guided-learning/
           topicHref: /power-bi/guided-learning/
