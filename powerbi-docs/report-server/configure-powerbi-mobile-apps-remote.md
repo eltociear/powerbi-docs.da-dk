@@ -1,25 +1,31 @@
 ---
-title: Konfigurer iOS-mobilapps, så du kan få fjernadgang til en rapportserver
-description: Få mere at vide om, hvordan du kan konfigurere iOS-mobilapps eksternt for din rapportserver.
-author: maggiesMSFT
+title: Fjernkonfigurer mobilappadgang til rapportserveren
+description: Få mere at vide om, hvordan du fjernkonfigurerer mobilappadgang til din rapportserver.
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/08/2019
-ms.author: maggies
-ms.openlocfilehash: ab9f7c2559038505b5507d4a87b50933e7b0b041
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 11/07/2019
+ms.author: painbar
+ms.openlocfilehash: b84d7a23cf947b18302c761ff5f78143bf3356aa
+ms.sourcegitcommit: 50c4bebd3432ef9c09eacb1ac30f028ee4e66d61
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874219"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925851"
 ---
-# <a name="configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>Konfigurer Power BI iOS-mobilapps til at få ekstern adgang til en rapportserver
+# <a name="configure-power-bi-mobile-app-access-to-report-server-remotely"></a>Konfigurer Power BI-mobilapps eksternt for rapportservere
 
-I denne artikel kan du se, hvordan du bruger din organisations MDM-værktøj til at konfigurere adgang til en rapportserver for Power BI iOS-mobilapps. Det kræver, at it-administratorer opretter en appkonfigurationspolitik, hvor de nødvendige oplysninger pushes til appen. 
+Gælder for:
 
- Når rapportserverforbindelsen allerede er oprettet, kan brugerne af Power BI iOS-mobilappen nemmere oprette forbindelse til organisationens rapportserver. 
+| ![iPhone](./media/configure-powerbi-mobile-apps-remote/ios-logo-40-px.png) | ![Android-telefon](./media/configure-powerbi-mobile-apps-remote/android-logo-40-px.png) |
+|:--- |:--- |
+| iOS |Android |
+
+I denne artikel kan du se, hvordan du bruger din organisations MDM-værktøj til at konfigurere adgang til rapportserveren for Power BI-mobilapps. Det kræver, at it-administratorer opretter en appkonfigurationspolitik, hvor de nødvendige oplysninger pushes til appen. 
+
+ Når rapportserverforbindelsen allerede er oprettet, kan brugerne af Power BI-mobilappen nemmere oprette forbindelse til organisationens rapportserver. 
 
 ## <a name="create-the-app-configuration-policy-in-mdm-tool"></a>Opret appkonfigurationspolitikken i MDM-værktøjet 
 
@@ -43,9 +49,9 @@ Her er et eksempel på, hvordan du indstiller konfigurationspolitikken ved hjæl
 
 ![Intune-konfiguratonsindstillinger](media/configure-powerbi-mobile-apps-remote/power-bi-ios-remote-configuration-settings.png)
 
-## <a name="end-users-connecting-to-a-report-server"></a>Slutbrugere opretter forbindelse til en rapportserver
+## <a name="end-users-connecting-to-report-server"></a>Slutbrugere opretter forbindelse til rapportserveren
 
- Lad os sige, at du publicerer appkonfigurationspolitikken for en distributionsliste. Når brugerne og enhederne på den pågældende distributionsliste starter iOS-mobilappen, oplever de følgende: 
+ Lad os sige, at du publicerer appkonfigurationspolitikken for en distributionsliste. Når brugerne og enhederne på den pågældende distributionsliste starter mobilappen, oplever de følgende: 
 
 1. De får vist en meddelelse om, at mobilappen er konfigureret med en rapportserver og skal trykke på **Log på**.
 

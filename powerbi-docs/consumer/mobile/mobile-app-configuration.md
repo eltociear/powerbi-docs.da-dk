@@ -1,32 +1,32 @@
 ---
-title: Konfigurationsindstillinger i Power BI-appen til iOS
-description: Sådan tilpasser du funktionsmåden for Power BI til iOS, ved hjælp af MDM-værktøjet
+title: Konfigurationsindstillinger i Power BI-appen
+description: Sådan tilpasser du funktionsmåden for Power BI ved hjælp af MDM-værktøjet
 author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/07/2019
-ms.author: mshenhav
-ms.openlocfilehash: c2d619489b042e523c559a16dab249b268389cd5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 11/07/2019
+ms.author: painbar
+ms.openlocfilehash: 7ed763d6c87e4b93ebecc474c9059ba83245368a
+ms.sourcegitcommit: 50c4bebd3432ef9c09eacb1ac30f028ee4e66d61
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879420"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925775"
 ---
-# <a name="remotely-configure-power-bi-ios-app-using-mobile-device-management-mdm-tool"></a>Du kan fjernkonfigurere Power BI-appen til iOS ved hjælp af MDM-værktøjet (Mobile Device Management)
+# <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Du kan fjernkonfigurere Power BI-appen ved hjælp af MDM-værktøjet (Mobile Device Management)
 
-Power BI - Mobil-appen til iOS understøtter appindstillinger, der gør det muligt for administratorer af Office 365 og MDM (Mobile Device Management), f.eks. Intune, at tilpasse appens funktionsmåde.
+Appen Power BI – Mobil til iOS og Android understøtter appindstillinger, der gør det muligt for administratorer af Office 365 og MDM-tjenester (Mobile Device Management), f.eks. Intune, at tilpasse appens funktionsmåde.
 
-Power BI - Mobil-appen til iOS understøtter følgende konfigurationsscenarier:
+Appen Power BI – Mobil understøtter følgende konfigurationsscenarier:
 
-- Konfiguration af rapportserveren
-- Indstillinger for databeskyttelse
+- Konfiguration af rapportserveren (iOS og Android)
+- Indstillinger for databeskyttelse (iOS)
 
-## <a name="report-server-configuration"></a>Konfiguration af rapportserveren
+## <a name="report-server-configuration-ios-and-android"></a>Konfiguration af rapportserveren (iOS og Android)
 
-Power BI-appen til iOS gør det muligt for administratorer at fjern-"pushe" konfigurationen af rapportserveren med tilmeldte enheder.
+Power BI-appen til iOS og Android gør det muligt for administratorer at fjern-"pushe" konfigurationen af rapportserveren til tilmeldte enheder.
 
 | Nøgle | Type | Beskrivelse |
 |---|---|---|
@@ -35,7 +35,7 @@ Power BI-appen til iOS gør det muligt for administratorer at fjern-"pushe" konf
 | com.microsoft.powerbi.mobile.ServerVist navn | Streng | [valgfri]<br><br>Standardværdien er "Rapportserver"<br><br>Et navn, der bruges i appen til at repræsentere serveren. |
 | com.microsoft.powerbi.mobile.OverrideServerDetails | Boolesk | [valgfri]<br><br>Standardværdien er True. Når værdien er angivet til True, tilsidesætter den alle eksisterende rapportserverdefinitioner på mobilenheden. Eksisterende servere, der allerede er konfigureret, slettes. Dette forhindrer også, at brugeren kan fjerne konfigurationen.<br><br>Hvis indstillingen er angivet til "False", tilføjes de overførte værdier, og eksisterende indstillinger ændres ikke. Hvis den samme URL-adresse allerede er konfigureret i mobilappen, forbliver konfigurationen, som den er. Appen beder ikke brugeren om at godkende igen for den samme server. |
 
-## <a name="data-protection-setting"></a>Indstilling for databeskyttelse
+## <a name="data-protection-settings-ios"></a>Indstillinger for databeskyttelse (iOS)
 
 Power BI-appen til iOS giver administratorer mulighed for at tilpasse standardkonfigurationen for sikkerhed og indstillinger for beskyttelse af personlige oplysninger. Du kan gennemtvinge, at brugerne skal angive deres Face ID, Touch ID eller en adgangskode, når du åbner Power BI-appen.
 
@@ -45,21 +45,17 @@ Power BI-appen til iOS giver administratorer mulighed for at tilpasse standardko
 
 ## <a name="deploying-app-configuration-settings"></a>Udrulning af konfigurationsindstillinger for apps
 
-Følgende trin gør det muligt for dig at oprette en appkonfigurationspolitik. Når konfigurationspolitikken er oprettet, kan du tildele indstillingerne til grupper af brugere.
+Følgende er de trin, du skal følge for at oprette en appkonfigurationspolitik. Når du har oprettet konfigurationspolitikken, kan du tildele dens indstillinger til grupper af brugere.
 
 1. Opret forbindelse til dit MDM-værktøj.
-
 2. Opret og navngiv en ny appkonfigurationspolitik.
-
 3. Vælg, hvilke brugere appkonfigurationspolitikken skal distribueres til.
-
 4. Opret nøgleværdipar for den indstilling, du vil pushe til dine brugere.
 
-Intune-portalen gør det muligt for administratorer nemt at installere disse indstillinger til Power BI-appen til iOS via konfigurationspolitikker for apps.
-Dog understøttes en eventuel MDM-udbyder. Hvis du ikke bruger Intune, skal du se din MDM-dokumentation for at få oplysninger om, hvordan du installerer disse indstillinger.
+Intune-portalen gør det muligt for administratorer nemt at installere disse indstillinger til Power BI-appen via konfigurationspolitikker for apps. Dog understøttes en eventuel MDM-udbyder. Hvis du ikke bruger Intune, skal du se din MDM-dokumentation for at få oplysninger om, hvordan du installerer disse indstillinger.
 
 ## <a name="next-steps"></a>Næste trin
 
-* Download [Power BI-mobilappen til iPhone](https://go.microsoft.com/fwlink/?LinkId=522062)
+* Hent Power BI-mobilappen i [App Store]("https://apps.apple.com/app/microsoft-power-bi/id929738808) og [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409)
 * Følg [@MSPowerBI på Twitter](https://twitter.com/MSPowerBI)
 * Deltag i samtalen i [Power BI-community'et](https://community.powerbi.com/)

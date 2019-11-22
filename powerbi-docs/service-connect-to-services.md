@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 41881c1de66293689439364f3d1049f3d6b40607
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 91740d16a91aa8dc1936e8ae1a2812653c45e6a1
+ms.sourcegitcommit: 50c4bebd3432ef9c09eacb1ac30f028ee4e66d61
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73873012"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925819"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Opret forbindelse til de tjenester, du bruger med Power BI
 Med Power BI kan du oprette forbindelse til mange af de tjenester, du bruger til at køre din virksomhed, f.eks. Salesforce, Microsoft Dynamics CRM og Google Analytics. Power BI starter med at bruge dine legitimationsoplysninger til at oprette forbindelse til tjenesten. Den opretter et *arbejdsområde* i Power BI med et dashboard og et sæt Power BI-rapporter, der automatisk viser dine data og giver visuel indsigt om din virksomhed.
 
 >[!IMPORTANT]
->Vi udfaser flere indholdspakker den 25. september 2019. Alle installerede indholdspakker vil fortsat fungere, men du kan ikke installere en ny efter dette tidspunkt. [Skabelonapps](https://docs.microsoft.com/power-bi/service-template-apps-overview) erstatter tjenesteindholdspakker.
+>Indholdspakker til tjenesten erstattes af [skabelonapps](https://docs.microsoft.com/power-bi/service-template-apps-overview). En række indholdspakker er allerede blevet frarådet fra og med den 25. september 2019. Alle frarådede indholdspakker, du har installeret, forbliver på din konto, men der findes ingen dokumentation og ydes ingen support til dem, og det er heller ikke muligt at installere dem igen.
 
 Log på Power BI for at få vist alle de [tjenester, du kan oprette forbindelse til](https://app.powerbi.com/getdata/services). 
 

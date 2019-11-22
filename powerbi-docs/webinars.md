@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 289e6490d2449bdcbca68e6acba85cf4466b315f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bd6270731f79ac5a1e270ac36699470a0e6df978
+ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880545"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060435"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
@@ -21,7 +21,13 @@ Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når
 
 ## <a name="upcoming-webinars"></a>Kommende webinarer
 
-Der er ikke planlagt webinarer endnu. Tjek igen senere for at se flere kommende arrangementer.
+**Analyse i virtuel Azure-hændelse: Opnå hurtigere indsigt med Azure Synapse Analytics**
+<br>af Gayle Sheppard og John MacIntyre
+<br>[Tilmeld dig nu](https://info.microsoft.com/WW-Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-Registration.html?ocid=AID2482920_QSG_373413)
+
+**Sådan ændrer Microsoft BI-databeskyttelse**
+<br>af Anton Fritz og ADI Regev
+<br>[Tilmeld dig, og se med den 4. december](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
 
 >[Kommende webinarer fra Power BI-community'et](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 

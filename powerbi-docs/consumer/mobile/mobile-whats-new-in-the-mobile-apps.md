@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/08/2019
+ms.date: 11/12/2019
 ms.author: painbar
-ms.openlocfilehash: 1741646057137fbfb28a2c0ec42a7fd6428dc86e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c188f2b00447ff9f97059e81e7945f67e3170c6d
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876768"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010022"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -23,6 +23,10 @@ Du kan finde relaterede oplysninger om nyheder under:
 * [Nyheder i Power BI-tjenesten](../../service-whats-new.md)  
 
 ## <a name="october-2019"></a>Oktober 2019
+
+### <a name="android-support-for-remote-configuration-of-report-server-access-settings"></a>Understøttelse af fjernkonfiguration af rapportserver-adgangsindstillinger i Android
+
+Vi har tilføjet understøttelse af fjernkonfiguration af Power BI-mobilappens rapportserver-adgangsindstillinger i Android. IT-administratorer kan nu bruge deres organisations MDM-værktøj til at fjernkonfigurere disse indstillinger på både iOS- og Android-enheder. Se [Fjernkonfigurer Power BI-mobilappadgang til rapportserveren](https://docs.microsoft.com/power-bi/report-server/configure-powerbi-mobile-apps-remote) for at få flere oplysninger.
 
 ### <a name="cross-report-drillthrough"></a>Tværgående detaljeadgang i rapport
 
@@ -59,7 +63,7 @@ Læs mere om [det nye udseende af Power BI – Mobil](https://powerbi.microsoft.
 
 ### <a name="secured-access-with-azure-active-directory-ad-application-proxy-ios-and-android"></a>Sikker adgang med Azure Active Directory-proxyprogram (AD) (iOS og Android)
 
-Vi har indgået partnerskab med Azure Active Directory-teamet om at integrere Power BI-mobilapps med en AAD-programproxy (Azure Active Directory). Med denne konfiguration kan du oprette forbindelse til rapportserveren, der er hostet inden for virksomhedsgrænserne, fra Power BI-mobilappen, uden at det er nødvendigt at konfigurere kompleks konfiguration i det lokale miljø. Læs mere om [Power BI-mobil og Azure AD Application Proxy-integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Få mere at vide om, [hvordan du konfigurerer Azure AD Application Proxy og Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
+Vi har indgået partnerskab med Azure Active Directory-teamet om at integrere Power BI-mobilapps med en AAD-programproxy (Azure Active Directory). Med denne konfiguration kan du oprette forbindelse til rapportserveren, der er hostet inden for virksomhedsgrænserne, fra appen Power BI – Mobil, uden at det er nødvendigt at konfigurere kompleks konfiguration i det lokale miljø. Læs mere om [Power BI-mobil og Azure AD Application Proxy-integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Få mere at vide om, [hvordan du konfigurerer Azure AD Application Proxy og Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## <a name="july-2019"></a>Juli 2019
 

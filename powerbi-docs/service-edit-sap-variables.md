@@ -1,5 +1,5 @@
 ---
-title: Rediger SAP-variabler i Power BI-tjenesten (prøveversion)
+title: Rediger SAP-variabler i Power BI-tjenesten
 description: Azure og Power BI
 author: Sujata994
 ms.author: sunaraya
@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 11/12/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: d78124045767323cca657fa41d4415ca2e929f3d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cec8d598713000ec1d2b5a1fb72ebaa7d8932faf
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881918"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010868"
 ---
-# <a name="edit-sap-variables-in-the-power-bi-service-preview"></a>Rediger SAP-variabler i Power BI-tjenesten (prøveversion)
+# <a name="edit-sap-variables-in-the-power-bi-service"></a>Rediger SAP-variabler i Power BI-tjenesten
 
-Når du bruger SAP Business Warehouse eller SAP HANA med DirectQuery, kan forfattere af rapporter nu give slutbrugere mulighed for at redigere SAP-variabler i **Power BI-tjenesten** for Premium-arbejdsområder.
+Når du bruger SAP Business Warehouse eller SAP HANA med DirectQuery, kan forfattere af rapporter nu give slutbrugere mulighed for at redigere SAP-variabler i **Power BI-tjenesten** for Premium- og delte arbejdsområder. Bemærk, at denne funktion IKKE fungerer for rapporter under fanen Delt med mig i Mit arbejdsområde. 
 
 ![Dialogboksen Rediger variabler](media/service-edit-sap-variables/sap-edit-variables-dialog.png)
 
-I dette dokument beskrives kravene til redigering af variabler i Power BI, hvordan denne prøveversionsfunktion aktiveres, og hvor variabler i Power BI-tjenesten kan redigeres.
+I dette dokument beskrives kravene til redigering af variabler i Power BI, hvordan denne funktion aktiveres, og hvor variabler i Power BI-tjenesten kan redigeres.
 
 ## <a name="requirements-for-sap-edit-variables"></a>Krav til Rediger SAP-variabler
 
@@ -35,8 +35,6 @@ Der er et par krav til at bruge funktionen Rediger SAP-variabler. På følgende 
 
 **DirectQuery-forbindelser kræves** – Du skal oprette forbindelse til SAP-datakilden ved hjælp af DirectQuery. Importforbindelser understøttes ikke.
 
-**Power BI Premium-abonnement kræves** – Funktionen Rediger SAP-variabler fungerer i øjeblikket kun i Power BI Premium-abonnementer.
-
 **Konfiguration af enkeltlogon kræves** – enkeltlogon (SSO) skal være konfigureret, før denne funktion fungerer. Du kan finde flere oplysninger under [Oversigt over enkeltlogon (SSO)](service-gateway-sso-overview.md).
 
 **Nye gatewaybits kræves** – Download den nyeste gateway, og opdater din eksisterende gateway. Du kan finde flere oplysninger under [Tjenestegateway](service-gateway-onprem.md).
@@ -47,7 +45,7 @@ Der er et par krav til at bruge funktionen Rediger SAP-variabler. På følgende 
 
 ## <a name="how-to-enable-the-feature"></a>Sådan aktiverer du funktionen
 
-Hvis du vil aktivere funktionen **Rediger SAP-variabler**, skal du i Power BI Desktop oprette forbindelse til en SAP HANA- eller SAP BW-datakilde. Gå derefter til **Filer > Indstillinger > Indstillinger**, og vælg derefter **DirectQuery** i sektionen Aktuel fil i ruden til venstre. Når du vælger dette, kan du se DirectQuery-indstillinger i ruden til højre og et afkrydsningsfelt, hvor du kan **give slutbrugere tilladelse til at ændre SAP-variabler i rapporten (prøveversion)** , som vist på følgende billede.
+Hvis du vil aktivere funktionen **Rediger SAP-variabler**, skal du i Power BI Desktop oprette forbindelse til en SAP HANA- eller SAP BW-datakilde. Gå derefter til **Filer > Indstillinger > Indstillinger**, og vælg derefter **DirectQuery** i sektionen Aktuel fil i ruden til venstre. Når du vælger dette, kan du se DirectQuery-indstillinger i ruden til højre og et afkrydsningsfelt, hvor du kan **give slutbrugere tilladelse til at ændre SAP-variabler i rapporten** som vist på følgende billede.
 
 ![DirectQuery-indstillinger](media/service-edit-sap-variables/sap-preview-setting-in-desktop.png)
 
@@ -77,10 +75,6 @@ Det gør du ved at gøre følgende:
     ![Nulstil til standard](media/service-edit-sap-variables/reset-to-default.png)
 
 Når du arbejder på en publiceret rapport i Power BI-tjenesten, der bruger SAP HANA eller SAP BW med funktionen **Rediger variabler** aktiveret, kan ejeren af rapporten ændre disse standarder. Ejeren af rapporten kan ændre variablerne i redigeringstilstand og gemme rapporten for at gøre det muligt for disse indstillinger at blive de *nye standardindstillinger* for den pågældende rapport. Alle andre brugere, der har adgang til rapporten, efter ejeren af rapporten har foretaget sådanne ændringer, vil se disse nye indstillinger som de nye standardindstillinger.
-
-## <a name="issues-and-considerations"></a>Problemer og overvejelser
-
-På nuværende tidspunkt understøttes funktionen Rediger SAP-variabler ikke i apps.
 
 ## <a name="next-steps"></a>Næste trin
 

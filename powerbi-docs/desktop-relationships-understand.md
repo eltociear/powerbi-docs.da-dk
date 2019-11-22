@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: c8ad6153ba1fcfb22987c5399bb82a9a8f4e664c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8562d0fd5acee2f18576f0a6b6f2e3d613354f92
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879799"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74009624"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Modelrelationer i Power BI Desktop
 
@@ -169,7 +169,7 @@ På forespørgselstidspunktet tillader stærke relationer _tabeludvidelse_. Tabe
 > [!NOTE]
 > Inaktive relationer udvides også, selvom relationen ikke bruges af en beregning. Tovejs relationer har ingen indvirkning på tabeludvidelser.
 
-For mange til mange-relationer sker tabeludvidelsen fra "mange"- til "en"-sider ved hjælp af semantikken venstre ydre joinforbindelse. Når der ikke findes en tilsvarende værdi fra "mange"- til "en"-siden, føjes der en tom virtuel række til "en"-sidetabellen.
+For en til mange-relationer sker tabeludvidelsen fra "mange" til "en" ved hjælp af semantikken VENSTRE YDRE JOINFORBINDELSE. Når der ikke findes en tilsvarende værdi fra "mange"- til "en"-siden, føjes der en tom virtuel række til "en"-sidetabellen.
 
 Tabeludvidelsen sker også for interne en til en-relationer, men ved hjælp af semantikken komplet ydre joinforbindelse. Det sikrer, at der tilføjes tomme virtuelle rækker på begge sider, når det er nødvendigt.
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 2fd0a3d878641264e84a14579901a9685b0f6e8b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 52beebb839907a6b4141cec089184fcb693fe817
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875095"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010692"
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI-ydeevne – bedste praksis
 
@@ -152,8 +152,6 @@ Datagatewayen i det lokale miljø er et fantastisk værktøj til at forbinde Pow
 Netværksventetid kan påvirke rapporters ydeevne ved at øge den tid, der kræves for anmodninger om at oprette forbindelse til Power BI-tjenesten, og for at svarene leveres. Lejere i Power BI tildeles et bestemt område. Du kan få vist din lejers "hjemmeområde" ved at gå til powerbi.com og vælge **?** øverst til højre og derefter **Om Power BI**. Når brugere fra en lejer tilgår Power BI-tjenesten, så føres vedkommendes anmodninger altid til dette område. Når anmodninger når Power BI-tjenesten, sender tjenesten muligvis flere anmodninger, f.eks. til den underliggende datakilde eller gatewayen, som også er underlagt netværksventetid.
 
 Funktioner som f.eks. [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) giver en praj om netværksventetiden mellem klienten og Azure-området. Generelt bør du begrænse indvirkningen af netværksventetider ved at stræbe efter at holde datakilder, gateways og din Power BI-klynge så tæt på hinanden som muligt. Hvis netværksventetid er et problem, kan du prøve at finde gateways og datakilder, der ligger tættere på din Power BI-klynge ved at placere dem på virtuelle maskiner.
-
-Hvis du yderligere vil afhjælpe netværksventetid, bør du overveje at bruge [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/), som er i stand til at oprette hurtigere og mere pålidelige netværksforbindelser mellem dine klienter og Azure-datacentre.
 
 ## <a name="next-steps"></a>Næste trin
 
