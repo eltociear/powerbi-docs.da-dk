@@ -3,18 +3,18 @@ title: Rapportparametre i Power BI Report Builder
 description: I dette emne beskrives den almindelige brug af rapportparametre i Power BI Paginated Report Builder, hvilke egenskaber du kan angive og meget mere.
 ms.service: powerbi
 ms.subservice: report-builder
-ms.custom: ''
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
+ms.custom: ''
 ms.date: 06/06/2019
-ms.openlocfilehash: 21fe08c2cba004a6aff77eae12303d0181ab56ec
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: d31036676a5960f7f6eb0f346c2c02ab979ff9bc
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840527"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128433"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Rapportparametre i Power BI Report Builder
 
@@ -40,7 +40,7 @@ I dette emne beskrives den almindelige brug af rapportparametre i Power BI Pagin
 
 Når du får vist en rapport, der indeholder parametre, viser værktøjslinjen for rapportfremviseren de enkelte parametre, så du kan angive værdier interaktivt. I illustrationen nedenfor vises parameterområdet for en rapport med parametrene @ReportMonth, @ReportYear, @EmployeeID, @ShowAll, @ExpandTableRows, @CategoryQuota og @SalesDate.  
 
-![Få vist rapporten med parametre](media/report-builder-parameters/report-builder-parameters-power-bi-service.png "Få vist rapporten med parametre")
+![Vis rapporten med parametre](media/report-builder-parameters/report-builder-parameters-power-bi-service.png "Vis rapport med parametre")
   
 1. **Ruden Parametre** På værktøjslinjen i rapportfremviseren vises der en prompt og en standardværdi for de enkelte parametre. Du kan tilpasse layoutet af parametre i ruden Parametre.  
   
@@ -65,7 +65,7 @@ Du kan oprette rapportparametre på et par forskellige måder.
   
  Tilføj en forespørgsel for datasæt, der indeholder variabler, eller et datasæt med en gemt procedure, som indeholder inputparametre. Der oprettes en parameter for datasæt for hver variabel eller inputparameter, og der oprettes en rapportparameter for hver datasætparameter.  
   
-![Egenskaber for parameter for datasæt i Report Builder](media/report-builder-parameters/report-builder-parameter-dataset.png "Egenskaber for parameter for datasæt i Report Builder")
+![Egenskaber for Report Builder-datasætparametre](media/report-builder-parameters/report-builder-parameter-dataset.png "Egenskaber for Report Builder-datasætparametre")
 
   
  Dette billede fra Report Builder viser:  
