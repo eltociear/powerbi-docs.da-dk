@@ -407,6 +407,8 @@
       items:
         - name: Datatyper i Power BI Desktop
           href: desktop-data-types.md
+        - name: Power BI-datakilder
+          href: power-bi-data-sources.md
         - name: Brug det opdaterede bånd i Power BI Desktop (eksempelvisning)
           href: desktop-ribbon.md
         - name: Genveje i formeleditor til Power BI Desktop
