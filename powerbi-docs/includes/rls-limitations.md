@@ -4,12 +4,12 @@ ms.service: powerbi
 ms.topic: include
 ms.date: 09/13/2019
 ms.author: mblythe
-ms.openlocfilehash: b2be085c48b303304d46ea93c272e6a860143c51
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: c658e683e86a899d45728220dee3706a0d617f0f
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074857"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74284096"
 ---
 ## <a name="limitations"></a>Begrænsninger
 
@@ -20,8 +20,6 @@ Her følger en liste over de aktuelle begrænsninger for sikkerhed på rækkeniv
 * Du kan kun definere RLS for de datasæt, der er oprettet ved hjælp af Power BI Desktop. Hvis du vil aktivere RLS for de datasæt, der er oprettet i Excel, skal du først konvertere dine filer til PBIX-filer (Power BI Desktop). [Få mere at vide](../desktop-import-excel-workbooks.md)
 
 * Det er kun ETL- og DirectQuery-forbindelser, der understøttes. Dynamiske forbindelser til Analysis Services skal håndteres i modellen i det lokale miljø.
-
-* Cortana understøttes ikke med RLS på nuværende tidspunkt.
 
 ## <a name="known-issues"></a>Kendte problemer
 

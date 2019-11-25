@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 183ce793342253775f641406620447e7b0f44020
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cc2ddd0b6fbd0b621c07056ed4b525f66d81319c
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875131"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265879"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Indstillinger for sidevisning i en Power BI-rapport
 Vi forstår, at det er yderst vigtigt, at dit rapportlayout altid er helt perfekt. Det kan nogle gange være udfordrende, fordi du og dine kolleger kan få vist disse rapporter på skærme med forskellige højde-bredde-forhold og størrelser. 
@@ -66,7 +66,6 @@ Indstillinger for **sidestørrelse** er kun tilgængelige for rapportejere. I Po
 
 * 4:3-format
 * 16:9-format (standard)
-* Cortana
 * Letter
 * Brugerdefineret (højde og bredde i pixels)
 

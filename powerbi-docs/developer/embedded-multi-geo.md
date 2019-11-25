@@ -1,19 +1,19 @@
 ---
 title: Multi-Geo-understøttelse af Power BI Embedded
 description: Få mere at vide om, hvordan du kan udrulle indhold til datacentre i andre områder end lokalområdet for Power BI Embedded.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 093b1e430d59a6060829b63a5bcfe17a7bb43928
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 898b9ed161d6b5186212cad6313c85dc1a4c76a7
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875798"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74264130"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Multi-Geo-understøttelse af Power BI Embedded
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: 32a93a881a801ec5dd335f167e69a5b76f53d694
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.openlocfilehash: 668665bcdbbb4b06a6fd1a2ee6d4af2437be77b3
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73764711"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74264868"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
@@ -31,18 +31,16 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 **aggregation (sammenlægning)** Reduktionen af rækker i underliggende datakilder, så de passer i en model. Resultatet er en aggregering.
 
-**alert, alerts (besked, beskeder)** En funktion, der giver brugere besked om ændringer i dataene på basis af grænser, de har angivet. Beskeder kan angives i felter, der er fastgjort fra rapportvisualisering. Brugerne modtager beskeder i tjenesten og på deres mobilapp.
+**alert, alerts (besked, beskeder)** En funktion, der giver brugere besked om ændringer i dataene på basis af grænser, de har angivet. Beskeder kan angives i felter, der er fastgjort fra rapportvisuals. Brugerne modtager beskeder i tjenesten og på deres mobilapp.
 
-**annotate (anmærke)** At skrive linjer, tekst eller stempler på et snapshot af et felt, en rapport eller en visualisering i Power BI-mobilappen på iOS- og Android-enheder.
-
-**answer card, answer page (svarkort, svarside)** Se Cortana-svarkort.
+**annotate (anmærke)** At skrive linjer, tekst eller stempler på et snapshot af et felt, en rapport eller en visual i Power BI-mobilappen på iOS- og Android-enheder.
 
 **app, apps** 
 
 
 **AppSource** Centraliseret onlinelager, hvor du kan gennemse og udforske dashboards, rapporter, datasæt og apps, som du kan downloade.
 
-**ArcGIS for Power BI** ArcGIS er en tilknytnings- og analyseplatform, der er oprettet af virksomheden ESRI. Navnet på den visualisering, der er inkluderet i biblioteket med visualiseringer i Power BI, kaldes ArcGIS for Power BI.
+**ArcGIS for Power BI** ArcGIS er en tilknytnings- og analyseplatform, der er oprettet af virksomheden ESRI. Navnet på den visual, der er inkluderet i biblioteket med visuals i Power BI, kaldes ArcGIS for Power BI.
 
 **assign (tildele)** [Power BI Premium] Verbum, der dækker over flytning af et arbejdsområde ind i eller ud af en dedikeret kapacitet. Brug ikke hævning for at flytte et arbejdsområde til dedikeret kapacitet, fordi det betyder, at dedikeret kapacitet ligger over delt kapacitet.  
 
@@ -62,7 +60,7 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 **kort** (Power BI Start) Power BI Start viser rektangulære og firkantede billeder, der repræsenterer dashboards, rapporter, apps med mere. Disse billeder kaldes *kort*.
 
-**certified custom visual (certificeret brugerdefineret visualisering)** En brugerdefineret Power BI-visualisering, der opfylder kravene og har bestået strenge sikkerhedstests.
+**certified custom visual (certificeret brugerdefineret visual)** En brugerdefineret Power BI-visual, der opfylder kravene og har bestået strenge sikkerhedstests.
 
 **classification (klassificering)** Kaldes også kaldet dataklassificering. Denne indstilling kan aktiveres af Power BI-administratorer for at øge opmærksomheden på det sikkerhedsniveau, der kræves til et dashboard. En organisation kan tilpasse klassificeringstyperne.
 
@@ -78,17 +76,13 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 **content view (indholdsvisning)**
 
-**Cortana answer card (Cortana-svarkort)** Den rapportside, der er dedikeret til at blive medtaget i en Power BI-rapport, så der kan oprettes brugerdefinerede Cortana-svar.
-
-**Cortana answer page (Cortana-svarside)** Navnet på den Cortana-side, kunden får vist.
-
 **cross filter, cross highlight (krydsfilter, krydsfremhævning)**
 
-**custom visual (brugerdefineret visualisering)** Visualiseringer, der er oprettet af communityet og Microsoft. De kan downloades fra Office Store til brug i Power BI-rapporter.
+**custom visual (brugerdefineret visual)** Visuals, der er oprettet af communityet og Microsoft. De kan downloades fra Office Store til brug i Power BI-rapporter.
 
 ## <a name="d"></a>D
 
-**dashboard** Et udvalg af visualiseringer, der kommunikerer status og målepunkter. Et dashboard, organiserer og præsenterer data på en måde, der er nem at forstå.
+**dashboard** Et udvalg af visuals, der kommunikerer status og målepunkter. Et dashboard, organiserer og præsenterer data på en måde, der er nem at forstå.
 
 **data classification (dataklassificering)** Se klassificering.
 
@@ -115,7 +109,7 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 **ellipse** ...    
 Når du vælger en ellipse, vises der flere menuindstillinger.
 
-**embed code (integreringskode)** en fælles standard på tværs af internettet. I Power BI kan kunden oprette en integreringskode og kopiere den for at placere indhold, f.eks en rapportvisualisering, på et websted eller i en blog.
+**embed code (integreringskode)** en fælles standard på tværs af internettet. I Power BI kan kunden oprette en integreringskode og kopiere den for at placere indhold, f.eks en rapportvisual, på et websted eller i en blog.
 
 **Embedded** Se Power BI Embedded. 
 
@@ -144,7 +138,7 @@ Det er i orden at bruge Power BI-miljø (lejer) i dokumentationen, hvor det kan 
 **gateways** eller **datagateways i det lokale miljø** En bro til underliggende datakilder. Den giver hurtige og sikre dataoverførsler mellem Power BI-tjenesten og datakilder i det lokale miljø, der understøtter opdatering. Normalt administreret af it-afdelingen. 
 
 ## <a name="h"></a>H
-**high-density visuals (visualiseringer med høj tæthed)** Visualiseringer med flere datapunkter, end Power BI kan gengive. Power BI sampler dataene for at få vist formen og de udenforliggende værdier.
+**high-density visuals (visuals med høj tæthed)** Visuals med flere datapunkter, end Power BI kan gengive. Power BI sampler dataene for at få vist formen og de udenforliggende værdier.
 
 **Hjem** Standardlandingssiden for brugere af Power BI-tjenesten. Ændrer ikke noget. Kan kaldes Power BI Start eller blot Start.
 
@@ -157,7 +151,7 @@ Det er i orden at bruge Power BI-miljø (lejer) i dokumentationen, hvor det kan 
 
 ## <a name="k"></a>K
 
-**KPIs (KPI'er)** Nøgletalsindikatorer. En type visualisering.
+**KPIs (KPI'er)** Nøgletalsindikatorer. En type visual.
 
 
 ## <a name="l"></a>L
@@ -179,7 +173,7 @@ Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
 
 ## <a name="n"></a>N
 
-**native (oprindelig)** Er inkluderet i produktet. Power BI leveres f.eks. med et sæt *oprindelige* visualiseringstyper. Men du kan også importere andre typer, f.eks brugerdefinerede visualiseringer.
+**native (oprindelig)** Er inkluderet i produktet. Power BI leveres f.eks. med et sæt *oprindelige* visualiseringstyper. Men du kan også importere andre typer, f.eks brugerdefinerede visuals.
 
 **nav** **pane** (navigationsrude) Kontrolelementerne langs den venstre kant i Power BI-tjenesten.
 
@@ -206,7 +200,7 @@ Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
 
 **page (side)** Rapporter har en eller flere sider. Hver fane nederst på rapportlærredet repræsenterer en side.
 
-**pbiviz** Filtypenavnet for en brugerdefineret Power BI-visualisering.
+**pbiviz** Filtypenavnet for en brugerdefineret Power BI-visual.
 
 **pbix** Filtypenavnet for en Power BI Desktop-fil.
 
@@ -216,7 +210,7 @@ Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
 
 **phone view (telefonvisning)** Den brugergrænseflade i Power BI-tjenesten, der bruges til visning af telefonrapport.
 
-**pin, unpin (fastgør, frigør)** Den handling, hvor en visualisering, normalt fra en rapport, placeres i et dashboard.
+**pin, unpin (fastgør, frigør)** Den handling, hvor en visual, normalt fra en rapport, placeres i et dashboard.
 
 **Power BI**, **Power BI-tjenesten**, **Power BI Desktop**, **Power BI – Mobil** Nogle af Power BI-tilbuddene. *Power BI* er det generelle begreb. Det bruges ofte i stedet for det fulde produktnavn, f.eks *Power BI-tjenesten* og *Power BI – Mobil* efter den første forekomst af det fulde produktnavn.
 
@@ -274,7 +268,7 @@ En visning med flere perspektiver af et enkelt datasæt med visualiseringer, der
 **report measures (rapportmålinger)** Kaldes også brugerdefinerede beregninger. I Excel kaldes disse beregnede felter. Se også *målinger*.   
 **report server (rapportserver)** En forekomst af en rapportserver.
 
-**responsive visuals (dynamiske visualiseringer)** Visualiseringer, der ændres dynamisk for at vise den maksimale mængde data og indsigt, uanset skærmstørrelse.
+**responsive visuals (dynamiske visuals)** Visuals, der ændres dynamisk for at vise den maksimale mængde data og indsigt, uanset skærmstørrelse.
 
 ## <a name="s"></a>S
 **SaaS**   
@@ -299,7 +293,7 @@ På mobilenheder kan deling referere til oprindelige OS-delingsfunktioner, f.eks
 
 **streaming data (streaming af data)** se *streaming i realtid*.
 
-**subscriptions (abonnementer)**, **Subscribe (Abonner)**  
+**subscriptions (abonnementer)** , **Subscribe (Abonner)**  
 Du kan abonnere på rapportsider, apps og dashboards og modtage mails, der indeholder et snapshot. Kræver en Power BI Pro-licens.
 
 **summarization (opsummering)** [Power BI Desktop] Den handling, der udføres på værdierne i én kolonne.
@@ -315,7 +309,7 @@ Power BI-dashboards indeholder rapportfelter.
 ## <a name="v"></a>V
 **value, value (værdi, værdier)** Numeriske data, der skal visualiseres.
 
-**visual, visualization (visual, visualisering)** Et diagram. Visualiseringer kan f.eks. være: søjlediagram, træstruktur, kransediagram, kort.
+**visual, visualization (visual, visualisering)** Et diagram. Visuals kan f.eks. være: søjlediagram, træstruktur, kransediagram, kort.
 
 **Visualizations pane (Ruden Visualiseringer)** Navnet på de visualiseringsskabeloner, der leveres i det delte rapportlærred for Power BI Desktop og Power BI-tjenesten. Indeholder små skabeloner, der også kaldes ikoner, for de enkelte oprindelige visualiseringstyper.  
 

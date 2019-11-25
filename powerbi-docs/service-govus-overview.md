@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 225c21693c9f100d9abbfc310b957bee7a909061
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64e9ff8f4952abe79a62b6b805596554b32aa6c9
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881370"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265465"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til kunder i den amerikanske stat
 **Power BI-tjenesten** har en tilgængelig version for kunder i den amerikanske stat som en del af abonnementer for **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til kunder i den amerikanske stat og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.
@@ -55,7 +55,6 @@ Nogle af de funktioner, der er tilgængelige i den kommercielle version af **Pow
 * **Integrer i SharePoint Online** – Det er ikke muligt at integrere indhold i SharePoint Online ved hjælp af Power BI-webdelen. Secure embed fungerer dog ved hjælp af webdelen [*Embed*](https://docs.microsoft.com/power-bi/service-embed-secure). Du skal føje *app.powerbigov.us* til listen over undtagelser ved at følge vejledningen i artiklen [Tillad eller begræns muligheden for at integrere indhold på SharePoint-sider](https://support.office.com/article/allow-or-restrict-the-ability-to-embed-content-on-sharepoint-pages-e7baf83f-09d0-4bd1-9058-4aa483ee137b).
 * **Power BI US Government** er kun tilgængelig som en **Pro**-licens. Henvisninger til Power BI-licenser (gratis) på en administrationsportal (eller som brugere) kører i en kommerciel cloud til Power BI-tjenesten.
 * **Overvågning** – overvågning er nu tilgængeligt via portalen Office 365 Security and Compliance fra juni 2018.
-* **Power BI-indhold i Cortana** - Power BI-resultater vises ikke i søgeresultater i Cortana, der omfatter resultaterne for dit Power BI-indhold (dashboards, rapporter og apps) samt resultater, der viser Cortana-optimerede rapportsider for bestemte nøgleord.
 * **Deling med eksterne brugere** – deling er tilladt inden for en Power BI-lejer. Fra juni 2018 kan du også dele med brugere uden for din Power BI-lejer. Se [Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B](service-admin-azure-ad-b2b.md).
 * **Forbrugsmålinger for dashboards og rapporter** – forbrugsmålinger er ikke tilgængelige for rapporter og dashboards. Kunder kan bruge data i overvågningsloggen til at få forbrugsoplysninger om indhold i deres organisation.
 * **Dataflows** - Dataflows er ikke tilgængelige.
@@ -103,7 +102,7 @@ Du kan gøre mange forskellige ting med Power BI. Yderligere oplysninger og lær
 
 * [Tilmeld dig Power BI for US Government](service-govus-signup.md)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Demo om Power BI US Government</a>
-* [Automatiseret læring til Power BI](guided-learning/index.md)
+* [Automatiseret læring til Power BI](guided-learning/index.yml)
 * [Kom i gang med Power BI-tjenesten](service-get-started.md)
 * [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 

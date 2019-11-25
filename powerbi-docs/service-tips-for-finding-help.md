@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: ee272f32dbce4630f8b834187e05fda5739df7be
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 10540ed49064b9e28543ce46b43d8bb2d9ca6cf7
+ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876956"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74178238"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 tips til at få hjælp til dine Power BI-spørgsmål
 Bliver du nogensinde frustreret, når du bruger Power BI, eller har problemer, fordi du ikke kan få svar på dine spørgsmål om Power Bi, når du skal bruge dem – dvs. "lige til tiden"? 
@@ -44,7 +44,7 @@ Passer videoer bedre til din læringsstil? Power BI har to sæt, du kan være in
 ## <a name="6-attend-training"></a>6 Deltag i kurser
 De tilgængelige kursusmuligheder er næsten uendelige – fra personlige kurser til korte videoer.
 
-* [Vejledt læring](guided-learning/index.md) på Power BI-webstedet.
+* [Vejledt læring](guided-learning/index.yml) på Power BI-webstedet.
 * [Gratis Power BI-webinarer](webinars.md), direkte og efter behov på Power BI-webstedet.
 
 Du kan finde flere muligheder online, som f.eks.:
