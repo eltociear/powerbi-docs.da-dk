@@ -15,6 +15,8 @@
               href: power-bi-custom-visuals.md
         - name: Selvstudier
           items:
+            - name: Visuelt koncept
+              href: visuals/power-bi-visuals-concept.md
             - name: Udvikl en Power BI-visualisering
               href: visuals/custom-visual-develop-tutorial.md
             - name: Tilføj formateringsindstillinger
@@ -67,6 +69,8 @@
               href: visuals/high-contrast-support.md
             - name: Aktivér synkroniseringsudsnit
               href: visuals/enable-sync-slicers.md
+            - name: Tilføj understøttelse af detailudledning
+              href: visuals/drill-down-support.md
             - name: Fejlfind visualiseringer i Power BI
               href: power-bi-custom-visuals-troubleshoot.md
         - name: Reference
@@ -81,8 +85,14 @@
               href: visuals/event-service.md
             - name: Sortering
               href: visuals/sort-options.md
-            - name: Interaktivitetsutils
-              href: visuals/utils-interactivity-selections.md
+            - name: Lokalisering
+              href: visuals/localization.md
+            - name: Hjælpeprogrammer til visualiseringer i Power BI
+              items:
+                - name: Interaktivitetshjælpeprogrammer
+                  href: visuals/utils-interactivity-selections.md
+                - name: Formateringshjælpeprogrammer
+                  href: visuals/utils-formatting.md
         - name: Ressourcer
           items:
             - name: Udviklingscenter

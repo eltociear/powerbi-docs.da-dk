@@ -16,10 +16,18 @@
           href: import-modeling-data-reduction.md
         - name: DIVIDE-funktion vs. divisionsoperator (/)
           href: dax-divide-function-operator.md
+        - name: Brug SELECTEDVALUE i stedet for VALUES
+          href: dax-selectedvalue.md
         - name: Vigtigheden af forespørgselsdelegering
           href: power-query-folding.md
         - name: Passende brug af fejlfunktioner
           href: dax-error-functions.md
+        - name: Brug variabler til at forbedre formler
+          href: dax-variables.md
+        - name: COUNTROWS i stedet for COUNT
+          href: dax-countrows.md
+        - name: Undgå at konvertere BLANKs til værdier
+          href: dax-avoid-converting-blank.md
         - name: Bedste praksis i forbindelse med dataflow
           href: ../service-dataflows-best-practices.md
         - name: Vejledning til DirectQuery-model i Power BI Desktop

@@ -58,6 +58,8 @@
               href: end-user-pdf.md
             - name: Føj et bogmærke til en rapport
               href: end-user-bookmarks.md
+            - name: Sideinddelte rapporter
+              href: end-user-paginated-report.md
         - name: Visualiseringer
           items:
             - name: Hvad kan jeg gøre med visualiseringer?
