@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
-ms.openlocfilehash: eecddd9251bbce732e9dc4ef70ad0d855f499d11
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 11/26/2019
+ms.openlocfilehash: 7297e73dc0e412f75412eb48398ef9c85cda8d6e
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874147"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565784"
 ---
 # <a name="install-power-bi-report-server"></a>Installér Power BI-rapportserver
 
@@ -21,9 +21,9 @@ Find ud af, hvordan du installerer Power BI-rapportserver.
 
 ## <a name="download-power-bi-report-server"></a>Download Power BI-rapportserver
 
-[Download Power BI-rapportserver](https://www.microsoft.com/download/details.aspx?id=56722) fra Microsoft Download Center.
+På siden [Rapportering i det lokale miljø med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/) skal du vælge **Download gratis prøve**.
 
-Der er også en gratis prøveversion. På siden [Rapportering i det lokale miljø med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/) skal du vælge **Download gratis prøve**.
+Når du kører filen PowerBIReportServer.exe, vælger du den gratis prøveversion, eller du angiver din produktnøgle. Læs videre for at få flere oplysninger.
 
 ## <a name="before-you-install"></a>Før du installerer
 
@@ -43,7 +43,7 @@ Læs videre for at få flere oplysninger.
 
 #### <a name="power-bi-premium"></a>Power BI Premium
 
-Hvis du har købt Power BI Premium, har du på fanen **Premium-indstillinger** i Power BI-administrationsportalen adgang til produktnøglen til Power BI-rapportserver. Den kan kun tilgås af globale administratorer eller brugere, som er tildelt rollen som administrator af Power BI-tjenesten.
+Hvis du har købt Power BI Premium, har du på fanen **Premium-indstillinger** i Power BI-administrationsportalen adgang til produktnøglen til Power BI-rapportserver. Administrationsportalen kan kun tilgås af globale administratorer eller brugere, som er tildelt rollen som administrator af Power BI-tjenesten.
 
 ![Premium-indstillinger](../report-server/media/install-report-server/pbirs-product-key.png "Nøgle til Power BI-rapportserver i Premium-indstillinger")
 
@@ -70,7 +70,7 @@ Du behøver ikke adgang til en SQL Server-databaseprogramserver på installation
 
     ![Vælg en udgave](media/install-report-server/pbireportserver-choose-edition.png)
 
-    Du kan vælge enten Evaluation- eller Developer-udgaven på rullelisten.
+    Vælg enten Evaluation- eller Developer-udgaven.
 
     ![Version 2](media/install-report-server/pbireportserver-choose-edition2.png)
 
@@ -95,7 +95,7 @@ Du behøver ikke adgang til en SQL Server-databaseprogramserver på installation
 
 Når du har valgt **Configure Report Server** i konfigurationen, vises Reporting Services Configuration Manager. Du kan få mere at vide under [Reporting Services Configuration Manager](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 
-Du skal [oprette en rapportserverdatabase](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database) for at fuldføre den indledende konfiguration af Reporting Services. Der kræves en SQL Server Database-server for at fuldføre dette trin.
+Hvis du vil fuldføre den indledende konfiguration af Reporting Services, skal du [oprette en rapportserverdatabase](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database). Der kræves en SQL Server Database-server for at fuldføre dette trin.
 
 ### <a name="creating-a-database-on-a-different-server"></a>Opret en database på en anden server
 
@@ -139,7 +139,7 @@ Et eksempel på den komplette URL-streng kan være som følger:
 
 Hvis du tilgår rapportserveren fra en fjerncomputer, skal du sikre dig, at du har konfigureret firewallregler, hvis der findes en firewall.
 
-Du skal åbne den TCP-port, du har konfigureret for URL-adressen til webtjenesten og URL-adressen til webportalen. Som standard er disse konfigureret på TCP-port 80.
+Åbn den TCP-port, du har konfigureret for URL-adressen til webtjenesten og URL-adressen til webportalen. De er som standard konfigureret på TCP-port 80.
 
 ## <a name="additional-configuration"></a>Yderligere konfiguration
 

@@ -7,15 +7,15 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 11/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 05a134f50f9a09ae5b51578a5e4e5f0a01a95740
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e6e66a4459abefbc66ec4e70b882cddc4771facf
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871516"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565668"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Del Power BI-dashboards og -rapporter med kolleger og andre
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Med Power BI får du også [adskillige andre måder at samarbejde om og distribuere dashboards og rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -24,9 +24,11 @@ ms.locfileid: "73871516"
 
 Du skal bruge en [Power BI Pro-licens](service-features-license-type.md), uanset om du deler indhold i eller uden for din organisation. Dine modtagere skal også bruge en Power BI Pro-licens, medmindre indholdet er i en [Premium-kapacitet](service-premium-what-is.md). 
 
-Du kan dele dashboards og rapporter fra de fleste steder i Power BI-tjenesten: Favoritter, seneste, delt med mig (hvis ejeren tillader det), mit arbejdsområde eller andre arbejdsområder. Når du deler et dashboard eller en rapport, kan de personer, du deler med, få det/den vist og interagere med det/den, men ikke redigere det/den. De kan se de samme data som dig i dashboardet eller rapporten, medmindre [sikkerhed på rækkeniveau (RLS)](service-admin-rls.md) anvendes. De kolleger, du deler med, kan også dele med deres kolleger, hvis du giver dem lov til det. Personer uden for organisationen kan også få vist og interagere med dashboardet eller rapporten, men kan ikke dele det/den. 
+Du kan dele dashboards og rapporter fra de fleste steder i Power BI-tjenesten: Favoritter, seneste, Mit arbejdsområde og delt med mig, hvis ejeren tillader det. Du kan også dele fra andre arbejdsområder, hvis du har rollen som [administrator, medlem eller bidragyder](service-new-workspaces.md#roles-in-the-new-workspaces) i arbejdsområdet. 
 
-Du kan ikke dele dashboards fra Power BI Desktop. Du kan dog [dele et dashboard fra en vilkårlig Power BI-mobilapp](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).  
+Når du deler et dashboard eller en rapport, kan de personer, du deler med, få det/den vist og interagere med det/den, men ikke redigere det/den. De kan se de samme data som dig i dashboardet eller rapporten, medmindre [sikkerhed på rækkeniveau (RLS)](service-admin-rls.md) anvendes. De kolleger, du deler med, kan også dele med deres kolleger, hvis du giver dem lov til det. Personer uden for organisationen kan få vist og interagere med dashboardet eller rapporten, men kan ikke dele det/den. 
+
+Du kan ikke *dele* direkte fra Power BI Desktop. Du kan [publicere rapporter fra Power BI Desktop](desktop-upload-desktop-files.md) til Power BI-tjenesten. Du kan dog [dele et dashboard fra Power BI-mobilapps](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).  
 
 ## <a name="video-share-a-dashboard"></a>Video: Del et dashboard
 Se Amanda dele sit dashboard med kolleger i og uden for sin virksomhed. Følg derefter den trinvise vejledning under videoen for at prøve det selv.
@@ -39,22 +41,19 @@ Se Amanda dele sit dashboard med kolleger i og uden for sin virksomhed. Følg de
 
 2. Angiv i det øverste felt de komplette mailadresser til enkeltpersoner, distributionsgrupper eller sikkerhedsgrupper. Du kan ikke dele med dynamiske distributionslister. 
    
-   Du kan dele med brugere, hvis adresser er uden for din organisation, men du får vist en advarsel.
+   Du kan dele med brugere, hvis adresser er uden for din organisation, men du får vist en advarsel. Læs mere om [at dele uden for din organisation](#share-a-dashboard-or-report-outside-your-organization) i denne artikel.
    
    ![Advarsel om ekstern deling](media/service-share-dashboards/power-bi-share-dialog-warning.png) 
  
    >[!NOTE]
-   >Tekstfeltet understøtter højst 100 brugere eller grupper. Hvis du har brug for at dele med et stort antal brugere, kan du overveje at oprette dashboardet i et arbejdsområde og [distribuere det som en app](service-create-distribute-apps.md).
-   > 
-   > 
-
+   >Tekstfeltet understøtter højst 100 separate brugere eller grupper. Se [Del med flere end 100 brugere](#share-with-more-than-100-separate-users) i denne artikel for at få mere at vide om måder at dele med flere brugere på.
 
 3. Tilføj en meddelelse, hvis du vil. Det er valgfrit.
 4. Hvis du vil tillade dine kolleger at dele dit indhold med andre, skal du markere **Tillad, at modtagerne må dele dette dashboard (eller rapport)** .
    
-   Det kaldes *gendeling* at give andre tilladelse til at dele. Hvis du giver dem tilladelse, kan de dele igen fra Power BI-tjenesten og mobilapperne eller videresende mailinvitationen til andre i din organisation. Invitationen udløber efter én måned. Personer uden for din organisation kan ikke dele igen. Som ejer af indholdet kan du slå videredeling fra eller tilbagekalde videredeling individuelt. Se [Stop deling eller stop andres deling](#stop-sharing-or-stop-others-from-sharing).
+   Det kaldes *gendeling* at give andre tilladelse til at dele. Hvis du giver dem tilladelse, kan de dele igen fra Power BI-tjenesten og mobilapperne eller videresende mailinvitationen til andre i din organisation. Invitationen udløber efter én måned. Personer uden for din organisation kan ikke dele igen. Som ejer af indholdet kan du slå videredeling fra eller tilbagekalde videredeling individuelt. Se [Stop eller rediger deling](#stop-or-change-sharing) i denne artikel.
 
-5. Hvis du vælger **Tillad at brugerne opretter nyt indhold ved hjælp af de underliggende datasæt**, kan de oprette deres egne rapporter i andre arbejdsområder, der er baseret på datasættet for dette dashboard.
+5. Hvis du vælger **Tillad at brugerne opretter nyt indhold ved hjælp af de underliggende datasæt**, kan de oprette deres egne rapporter i andre arbejdsområder, der er baseret på datasættet for dette dashboard. Læs mere om [oprettelse af rapporter ud fra datasæt fra forskellige arbejdsområder](service-datasets-discover-across-workspaces.md).
 
 1. Vælg **Del**.
    
@@ -66,10 +65,10 @@ Se Amanda dele sit dashboard med kolleger i og uden for sin virksomhed. Følg de
    
    ![Side med listen Delt med mig](media/service-share-dashboards/power-bi-shared-with-me-new-look.png)
    
-   Når modtagere uden for din organisation klikker på linket, kan de se dashboardet eller rapporten, men ikke på den sædvanlige Power BI-portal. Du kan få flere oplysninger i [Del et dashboard eller en rapport med personer uden for din organisation](#share-a-dashboard-or-report-outside-your-organization).
+   Når modtagere uden for din organisation klikker på linket, kan de se dashboardet eller rapporten, men ikke på den sædvanlige Power BI-portal. Læs mere om [at dele med personer uden for din organisation](#share-a-dashboard-or-report-outside-your-organization) i denne artikel.
 
 ## <a name="see-who-has-access-to-a-dashboard-or-report"></a>Se, hvem har adgang til et dashboard eller en rapport, som du har delt
-Du har nogle gange brug for at få vist de personer, du har delt med, og hvem de har videredelt med:
+Du har nogle gange brug for at få vist de personer, du har delt med, og hvem de har videredelt med.
 
 1. Vælg **Del** ![Delingsikon](media/service-share-dashboards/power-bi-share-icon.png) på listen over dashboards og rapporter eller på selve dashboardet eller i selve rapporten. 
 2. Vælg **Adgang** i dialogboksen **Del dashboard** eller **Del rapport**.
@@ -78,7 +77,26 @@ Du har nogle gange brug for at få vist de personer, du har delt med, og hvem de
 
     Personer uden for din organisation er anført som **Gæst**.
 
-## <a name="stop-sharing-or-stop-others-from-sharing"></a>Stop deling eller stop andres deling
+    I denne visning kan du [stoppe eller ændre delingstilladelser](#stop-or-change-sharing) i denne artikel. 
+
+## <a name="share-a-dashboard-or-report-outside-your-organization"></a>Del et dashboard eller en rapport med personer uden for din organisation
+Når du deler med personer uden for din organisation, modtager de en mail med et link til det delte dashboard eller den delte rapport. De skal logge på Power BI for at se, hvad du har delt. Hvis de ikke har en Power BI Pro-licens, kan de tilmelde sig en, når de klikker på linket.
+
+Når de har logget på, kan de se det delte dashboard eller den delte rapport i et separat browservindue og ikke i deres normale Power BI-portal. Hvis de vil have adgang til dette dashboard eller denne rapport på et senere tidspunkt, skal de forsyne linket med et bogmærke.
+
+De kan ikke redigere indhold i dette dashboard eller rapporten. De kan interagere med diagrammerne og skifte filtre eller udsnit, men de kan ikke gemme ændringer. 
+
+Det er kun dine direkte modtagere, der kan se det delte dashboard eller den delte rapport. Hvis du f.eks. har sendt mailen til Vicki@contoso.com, er det kun Vicki, der kan se dashboardet. Ingen andre kan se dashboardet, selvom Vicki sender et link til dem. Vicki skal bruge den samme mailadresse for at få adgang til det. Hvis Vicki logger på med en anden mailadresse, har hun ikke adgang til dashboardet.
+
+Personer uden for din organisation kan slet ikke se nogen data, hvis sikkerhed på rolle- eller rækkeniveau er implementeret på Analysis Services-tabelmodeller i det lokale miljø.
+
+Hvis du sender et link fra en Power BI-mobilapp til personer uden for din organisation, åbnes dashboardet i en browser, når de klikker på linket, og ikke i Power BI-mobilappen.
+
+### <a name="allow-external-users-to-edit-content"></a>Tillad eksterne brugere at redigere indhold
+
+Din Power BI-administrator kan tillade, at eksterne brugere kan redigere og administrere indhold i organisationen. Hvis det er tilfældet, kan dine eksterne brugere ikke kun forbruge indholdet. De kan også redigere og administrere indhold i din organisation. Få mere at vide om at [distribuere Power BI-indhold til eksterne gæstebrugere med Azure AD B2B](service-admin-azure-ad-b2b.md).
+
+## <a name="stop-or-change-sharing"></a>Stop eller rediger deling
 Det er kun ejeren af dashboardet eller rapporten, der kan slå videredeling til og fra.
 
 ### <a name="if-you-havent-sent-the-sharing-invitation-yet"></a>Hvis du ikke har sendt invitationen til deling endnu
@@ -96,37 +114,29 @@ Det er kun ejeren af dashboardet eller rapporten, der kan slå videredeling til 
    * **Læs** for at forhindre vedkommende i at dele med andre.
    * **Fjern adgang** for at forhindre vedkommende i overhovedet at se det delte indhold.
 
-4. I dialogboksen **Fjern adgang** skal du beslutte, om du også vil fjerne adgangen til relateret indhold som f.eks. rapporter og datasæt. Hvis du fjerner elementer med et advarselsikon ![Power BI-advarselsikon](media/service-share-dashboards/power-bi-warning-icon.png), er det bedst at fjerne relateret indhold, fordi det ikke kan vises korrekt.
+4. I dialogboksen **Fjern adgang** skal du beslutte, om du også vil fjerne adgangen til relateret indhold som f.eks. rapporter og datasæt. Hvis du fjerner elementer med et advarselsikon ![Power BI-advarselsikon](media/service-share-dashboards/power-bi-warning-icon.png), er det bedst at fjerne relateret indhold. I modsat fald vises det ikke korrekt.
 
     ![Dialogboks med advarsel om Power BI-deling](media/service-share-dashboards/power-bi-sharing-warning-dialog.png)
-
-## <a name="share-a-dashboard-or-report-outside-your-organization"></a>Del et dashboard eller en rapport med personer uden for din organisation
-Når du deler med personer uden for din organisation, modtager de en mail med et link til det delte dashboard eller den delte rapport, og de skal logge på Power BI for at få det/den vist. Hvis de ikke har en Power BI Pro-licens, kan de tilmelde sig en, når de klikker på linket.
-
-Når de har logget på, kan de se det delte dashboard eller den delte rapport i et separat browservindue og ikke i deres normale Power BI-portal. Hvis de vil have adgang til dette dashboard eller denne rapport senere, skal de forsyne linket med et bogmærke.
-
-De kan ikke redigere indhold i dette dashboard eller rapporten. Selvom de kan interagere med diagrammerne og skifte filtre eller udsnit i rapporten, kan de ikke gemme ændringer. 
-
-Det er kun dine direkte modtagere, der kan se det delte dashboard eller den delte rapport. Hvis du f.eks. har sendt mailen til Vicki@contoso.com, kan kun Vicki se dashboardet. Ingen andre kan se dashboardet, selvom de har et link. Vicki skal bruge samme mailadresse for at få adgang til det. Hvis en person logger på med en anden mailadresse, har vedkommende ikke adgang til dashboardet.
-
-Personer uden for din organisation kan slet ikke se nogen data, hvis sikkerhed på rolle- eller rækkeniveau er implementeret på Analysis Services-tabelmodeller i det lokale miljø.
-
-Hvis du sender et link fra en Power BI-mobilapp til personer uden for din organisation, åbnes dashboardet i en browser, når de klikker på linket, og ikke i Power BI-mobilappen.
-
-Hvis du [tillader, at eksterne gæstebrugere kan redigere og administrere indhold i organisationen](service-admin-portal.md#export-and-sharing-settings), gælder standardforbrugsoplevelsen ikke for dem. [Få mere at vide](service-admin-azure-ad-b2b.md).
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 Ting, du skal være opmærksom på angående deling af dashboards og rapporter:
 
-* Generelt kan se du og dine kolleger se de samme data på dashboardet eller i rapporten. Hvis du derfor har tilladelse til at se flere data, end de har, vil de kunne se alle dine data på dashboardet eller i rapporten. Men hvis [sikkerhed på rækkeniveau (RLS)](service-admin-rls.md) er anvendt på datasættet, der er underliggende for et dashboard eller en rapport, bruges legitimationsoplysningerne for hver person til at afgøre, hvilke data vedkommende kan få adgang til.
-* Alle, som du deler dashboardet med, kan se det og interagere med de relaterede rapporter i [Læsevisning](consumer/end-user-reading-view.md#reading-view). De kan ikke oprette rapporter eller gemme ændringer af eksisterende rapporter.
-* Selvom ingen kan se eller downloade datasættet, kan de få adgang til datasættet direkte ved hjælp af funktionen Analysér i Excel. En administrator kan begrænse muligheden for at bruge Analysér i Excel for alle i en gruppe. Begrænsningen er dog for alle i den pågældende gruppe for hvert arbejdsområde, gruppen tilhører.
+* Generelt kan se du og dine kolleger se de samme data på dashboardet eller i rapporten. Hvis du derfor har tilladelse til at se flere data, end de har, vil de kunne se alle dine data på dashboardet eller i rapporten. Men hvis [sikkerhed på rækkeniveau (RLS)](service-admin-rls.md) er anvendt på datasættet, der er underliggende for et dashboard eller en rapport, afgør den enkelte persons legitimationsoplysninger, hvilke data vedkommende kan få adgang til.
+* Alle, som du deler dashboardet med, kan se det og interagere med de relaterede rapporter i [Læsevisning](consumer/end-user-reading-view.md#reading-view). Generelt kan de ikke oprette rapporter eller gemme ændringer af eksisterende rapporter. Hvis du dog vælger **Tillad at brugerne opretter nyt indhold ved hjælp af de underliggende datasæt**, kan de oprette deres egne rapporter i andre arbejdsområder, der er baseret på datasættet for dette dashboard eller denne rapport.
+* Selvom ingen kan se eller downloade datasættet, kan de få adgang til datasættet direkte ved hjælp af funktionen Analysér i Excel. En administrator kan begrænse muligheden for at bruge Analysér i Excel for alle i en gruppe. Begrænsningen er dog for alle i den pågældende gruppe og for hvert arbejdsområde, gruppen tilhører.
 * Alle kan manuelt [opdatere dataene](refresh-data.md).
 * Hvis du bruger Office 365 til mail, kan du dele med medlemmer af en distributionsgruppe ved at angive den mailadresse, der er knyttet til distributionsgruppen.
-* Kolleger, der deler det samme maildomæne, og kolleger, hvis domæner er anderledes, men registreret i den samme lejer, kan dele dashboardet med andre. Hvis domænerne contoso.com og Contoso2.com f.eks. er registreret i den samme lejer, og din mailadresse er konrads@contoso.com, så kan både ravali@contoso.com og gustav@contoso2.com dele, så længe du har givet dem tilladelse til at dele.
-* Hvis dine kolleger allerede har adgang til et bestemt dashboard eller en bestemt rapport, kan du sende et direkte link ved blot at kopiere URL-adressen, når du er på dashboardet eller i rapporten. Eksempel: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`
+* Kolleger, der deler det samme maildomæne, og kolleger, hvis domæner er anderledes, men registreret i den samme lejer, kan dele dashboardet med andre. Lad os for eksempel antage, at domænerne contoso.com og contoso2.com er registreret i den samme lejer, og din mailadresse er konrads@contoso.com. Både ravali@contoso.com og gustav@contoso2.com kan dele dit dashboard, så længe du giver dem tilladelse til at dele.
+* Hvis dine kolleger allerede har adgang til et bestemt dashboard eller en bestemt rapport, kan du sende et direkte link ved blot at kopiere URL-adressen, når du er på dashboardet eller i rapporten. Eksempel: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
 * Hvis dine kolleger allerede har adgang til et bestemt dashboard, kan du på samme måde [sende et direkte link til den underliggende rapport](service-share-reports.md). 
-* Du kan dele med højst 100 brugere eller grupper i en enkelt delingshandling. Du kan imidlertid give mere end 500 brugere adgang til et element. Det gør du ved enten at dele flere gange individuelt med angivelse af brugerne eller dele med en brugergruppe, der indeholder alle brugerne.
+
+### <a name="share-with-more-than-100-separate-users"></a>Del med flere end 100 separate brugere
+
+Du kan dele med højst 100 brugere eller grupper i en enkelt delingshandling. Du kan imidlertid give mere end 500 brugere adgang til et element. Her er nogle forslag:
+
+- Del flere gange ved at angive brugerne enkeltvist.
+- Del med en brugergruppe, der indeholder alle brugerne. 
+- Opret rapporten eller dashboardet i et arbejdsområde, og opret derefter en app fra arbejdsområdet. Du kan dele appen med mange flere personer. Læs mere om [publicering af apps i Power BI](service-create-distribute-apps.md).
 
 ## <a name="troubleshoot-sharing"></a>Fejlfinding af deling
 
@@ -136,7 +146,7 @@ De personer, du deler med, kan få vist et låst felt i et dashboard eller medde
 
 ![Låst felt i Power Bi](media/service-share-dashboards/power-bi-locked_tile_small.png)
 
-Her er du nødt til at give brugerne tilladelse til at tilgå det underliggende datasæt:
+Her er du nødt til at give brugerne tilladelse til at tilgå det underliggende datasæt.
 
 1. Gå til fanen **Datasæt** på listen over indhold.
 
@@ -163,8 +173,8 @@ Hvis du vil dele et dashboard eller en rapport, skal du have tilladelse til at d
 
 
 ## <a name="next-steps"></a>Næste trin
-* Har du feedback? Kom med dine forslag på [webstedet for Power BI-community'et](https://community.powerbi.com/).
+
 * [Hvordan kan jeg samarbejde på og dele dashboards og rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Del en filtreret Power BI-rapport](service-share-reports.md)
-* Har du spørgsmål? [Prøv Power BI-community'et](https://community.powerbi.com/).
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

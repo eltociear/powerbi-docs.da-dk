@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 11/27/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 59841cdcfae3bc08e0b6dcacf4bcb6664dfe209c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d4495a2021f008326d76c7fd9ff686d639827e90
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877091"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565745"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Integrer en rapport på en sikker portal eller et websted
 
@@ -118,6 +118,8 @@ report.src = newUrl;
 Du kan tilføje lige så mange knapper, du vil, og på den måde skabe en brugerdefineret oplevelse med begrænset kode. 
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
+
+* Sideinddelte rapporter understøttes med sikre integrerede scenarier, og sideinddelte rapporter med URL-parametre understøttes også. Du kan læse mere om [at overføre rapportparametre i en URL-adresse for en sideinddelt rapport](report-builder-url-pass-parameters.md).
 
 * Understøtter ikke eksterne gæstebrugere med Azure business-to-business (B2B).
 

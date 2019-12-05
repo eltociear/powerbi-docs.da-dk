@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/11/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5631e4144cf202591e202fd46405815b38ceb42d
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: cd952dfa690d079d662f09e1e01c34dadf129b7b
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74016244"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565627"
 ---
 # <a name="connect-to-linkedin-sales-navigator-in-power-bi-desktop"></a>Opret forbindelse til LinkedIn Sales Navigator i Power BI Desktop
 
@@ -111,6 +111,10 @@ Herfra kan du oprette forbindelse til dine egne data og vælge, hvor mange dages
 Skabelonappen opdaterer derefter dataene i appen med dine data. Du kan også konfigurere en planlagt opdatering, så dataene i din app er lige så aktuelle, som opdateringshyppigheden angiver. 
 
 Når dataene er opdateret, kan du se, at appen er udfyldt med dine egne data.
+
+## <a name="getting-help"></a>Få hjælp
+
+Hvis du støder på problemer, når du opretter forbindelse til dine data, kan du kontakte support til LinkedIn Sales Navigator på https://www.linkedin.com/help/sales-navigator. 
 
 ## <a name="next-steps"></a>Næste trin
 Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:

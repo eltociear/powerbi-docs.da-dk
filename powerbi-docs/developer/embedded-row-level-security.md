@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 3ef9bd001e17c472216e501c6d38907087219959
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cd252572c3080f300592b52ddc0f25cefcf7f084
+ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875810"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74478663"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sikkerhed på rækkeniveau med Power BI Embedded
 
@@ -333,8 +333,7 @@ Du kan ikke angive denne tilladelse ved hjælp af administrationsportalen. Denne
 
 ### <a name="token-based-identity-limitations"></a>Begrænsninger for tokenbaseret identitet
 
-* Denne funktion begrænser kun brugen sammen med Power BI Premium.
-* Denne funktion fungerer ikke sammen med SQL Server i det lokale miljø.
-* Denne funktion fungerer ikke sammen med Multi-Geo.
+* Du kan kun bruge RLS, hvis du har en dedikeret kapacitet.
+* RLS fungerer ikke sammen med SQL Server i det lokale miljø.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 09/24/2019
-ms.openlocfilehash: 9e49e8e70e7bc499fbcfe0c263bdd8315f2c7dbe
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 11/27/2019
+ms.openlocfilehash: 90bc46c484f659994c6a9500865803531fa3cdcc
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874720"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565711"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Hvad er sideinddelte rapporter i Power BI Premium?
 
@@ -21,9 +21,9 @@ Sideinddelte rapporter, der længe har været standardrapportformatet i SQL Serv
 
 Sideinddelte rapporter kan indeholde mange sider. Denne rapport indeholder f.eks. 563 sider. Hver side viser præcis én side pr. faktura og har gentagne sidehoveder og sidefødder.
 
-![Sideinddelt](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
+Prøv det [praktiske laboratorie: Opret en sideinddelt Microsoft Power BI-rapport](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 
-![Sideinddelt rapport i Power BI-tjenesten](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
+![Sideinddelt](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
 Du kan få vist et eksempel på rapporten i Report Builder og derefter publicere den i Power BI-tjenesten, https://app.powerbi.com. Du skal bruge en Power BI Pro-licens for at publicere en rapport i tjenesten. Du kan publicere og dele sideinddelte rapporter i Mit arbejdsområde eller i arbejdsområder, så længe arbejdsområdet er placeret i en Power BI Premium-kapacitet. En Power BI-administrator skal også aktivere sideinddelte rapporter under [afsnittet for Premium-kapaciteter](service-admin-premium-workloads.md#paginated-reports) på Power BI-administrationsportalen. 
 
@@ -87,6 +87,6 @@ Her er nogle andre funktioner, der ikke understøttes i den første version:
 - [Installér Power BI Report Builder fra Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Selvstudium: Opret en sideinddelt rapport](paginated-reports-quickstart-aw.md)
 - [Angiv data direkte i en sideinddelt rapport](paginated-reports-enter-data.md)
-
+- [Praktisk laboratorie: Opret en sideinddelt Microsoft Power BI-rapport](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
   
 

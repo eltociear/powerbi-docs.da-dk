@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
-ms.openlocfilehash: c286e921c47b46c20cd73d4b32146093adc74d7f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ad657da4e0a81c6b3b9845d9c130755334f5a97f
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73860129"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565721"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Vejledning i kapacitetsplanlægning i Power BI-rapportserver
 Power BI-rapportserver er en selvbetjenings-BI og virksomhedsrapporteringsløsning, som kunder kan installere i deres lokale miljø, bag deres firewall. Løsningen kombinerer den interaktive rapporteringskapacitet i Power BI Desktop med serverplatformen i SQL Server Reporting Services i det lokale miljø. I takt med virksomheders stigende og omfattende brug af analyser og rapportering, kan det være en udfordring at udarbejde et budget, der tager højde for de skalerbare løsninger til hardwareinfrastrukturen og de softwarelicenser, der kræves til en virksomheds brugergrundlag. Denne rapports primære sigte er at give en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af adskillelige gennemførsler af belastningstest ved forskellige arbejdsbelastninger i forhold til en rapportserver. Organisationers rapporterings-, forespørgsels- og brugsmønstre varierer betydeligt, men resultaterne forelagt i denne rapport kan, sammen med de anvendte faktiske test og en detaljeret beskrivelse af deres gennemførselsmetode, bruges som referencepunkt for alle, der er i den tidlige planlægningsfase i processen med at installere Power BI-rapportserver.
@@ -56,7 +56,10 @@ De brugte test i belastningstestkørslerne er offentligt tilgængelige i et GitH
 * Test med simuleret gengivelse af små og store sideinddelte rapporter, og 
 * Test med simuleret udførelse af forskellige typer webportalhandlinger. 
 
-Alle test blev udarbejdet for at udføre en komplet handling (såsom at gengive en rapport, oprette en ny datakilde, osv.). De opnår dette ved at udføre en eller flere webanmodninger til rapportserveren (via API'er). I den virkelige verden kan en bruger have brug for at udføre nogle få mellemliggende handlinger for at gennemføre en af disse komplette handlinger. En bruger skal f.eks. gå til webportalen, navigere til mappen med rapporten, og derefter klikke på den pågældende rapport for at gengive den. Selvom alle de nødvendige handlinger for at udføre en komplet opgave ikke udføres i testene, så omfatter de stadig det meste af belastningen, som pålægges Power BI rapportserveren. Du kan få mere at vide om de forskellige typer af rapporter, der bruges, samt de forskellige handlinger, der udføres, ved at granske GitHub-projektet.
+Alle test blev udarbejdet for at udføre en komplet handling (såsom at gengive en rapport, oprette en ny datakilde, osv.). De opnår dette ved at udføre en eller flere webanmodninger til rapportserveren (via API'er). I den virkelige verden kan en bruger have brug for at udføre nogle få mellemliggende handlinger for at gennemføre en af disse komplette handlinger. En bruger skal f.eks. gå til webportalen, navigere til mappen med rapporten, og derefter klikke på den pågældende rapport for at gengive den. Selvom alle de nødvendige handlinger for at udføre en komplet opgave ikke udføres i testene, så omfatter de stadig det meste af belastningen, som pålægges Power BI rapportserveren. Du kan få mere at vide om de forskellige typer af rapporter, der bruges, samt de forskellige handlinger, der udføres, ved at granske GitHub-projektet.  
+
+> [!NOTE]
+> Værktøjet understøttes ikke officielt af Microsoft, men produktteamet bidrager til projektet og de løser problemer, der er indsendt af andre bidragydere.
 
 ### <a name="workloads"></a>Arbejdsbelastninger
 Der er to arbejdsbelastningsprofiler i testene: tung Power BI-rapport og sideinddelt tung rapport. I nedenstående tabel beskrives fordelingen af anmodninger, der udføres i forhold til rapportserveren.
@@ -133,12 +136,11 @@ Forskellige konfigurationer af processor og hukommelse er blevet brugt til den v
 ### <a name="2-run-the-loadtest-tool"></a>2 Kør LoadTest-værktøjet
 Hvis du vil køre værktøjet Reporting Services LoadTest på din eller en Microsoft Azure-installation af Power BI-rapportserver, skal du følge disse trin.
 
-1. Klon Reporting Services LoadTest-projektet fra GitHub (https://github.com/Microsoft/Reporting-Services-LoadTest).
+1. Klon Reporting Services LoadTest-projektet fra GitHub (https://github.com/Microsoft/Reporting-Services-LoadTest).  
 2. Du kan finde en løsningsfil med navnet RSLoadTests.sln i projektmappen. Åbn denne fil i Visual Studio 2015 eller nyere.
 3. Find ud af, om du vil køre dette værktøj på installationen af Power BI-rapportserveren eller på en installation af Power BI-rapportserveren i Microsoft Azure. Hvis du vil køre den på din egen installation, skal du gå til trin 5.
 4. Følg instruktionerne på https://github.com/Microsoft/Reporting-Services-LoadTest#create-a-sql-server-reporting-services-load-environment-in-azure for at oprette et Power BI-rapportservermiljø på Azure.
 5. Når du har udrullet miljøet, skal du følge instruktionerne på https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution for at køre de relevante tests.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-
 
