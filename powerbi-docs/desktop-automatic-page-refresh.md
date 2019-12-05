@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4c2217495ee8b735bc600c9b803897a408495472
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b9f7c745ad251fdb81c7898130cd3ca6c5d32af9
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878758"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164148"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatisk sideopdatering i Power BI Desktop (eksempelvisning)
 
@@ -105,31 +105,31 @@ Power BI Desktop har ingen begrænsninger for opdateringsinterval. Opdateringsin
 
 I Power BI-tjenesten er der begrænsninger for automatisk sideopdatering, afhængigt af faktorer som f.eks. arbejdsområdet, og om der benyttes Premium-tjenester.
 
-Vi vil tydeliggøre, hvordan dette fungerer, ved at begynde med nogle baggrundsoplysninger om [kapaciteter og arbejdsområder](whitepaper-powerbi-premium-deployment.md#capacities)
+Vi vil tydeliggøre, hvordan dette fungerer, ved at begynde med nogle baggrundsoplysninger om kapaciteter og arbejdsområder:
 
-**Kapaciteter** er et kernekoncept i Power BI og repræsenterer et sæt ressourcer (lager, processor og hukommelse), der bruges til at hoste og levere Power BI-indhold. Kapaciteter er enten delte eller dedikerede. En **delt kapacitet** er delt med andre Microsoft-kunder, mens en **dedikeret kapacitet** kun er beregnet til en enkelt kunde. Dedikerede kapaciteter introduceres i artiklen [Premium-kapaciteter](whitepaper-powerbi-premium-deployment.md#capacities).
+**Kapaciteter** er et kernekoncept i Power BI og repræsenterer et sæt ressourcer (lager, processor og hukommelse), der bruges til at hoste og levere Power BI-indhold. Kapaciteter er enten delte eller dedikerede. En **delt kapacitet** er delt med andre Microsoft-kunder, mens en **dedikeret kapacitet** kun er beregnet til en enkelt kunde. Dedikerede kapaciteter introduceres i artiklen [Administration af Premium-kapaciteter](service-premium-capacity-manage.md).
 
 I en delt kapacitet kører dine arbejdsbelastninger på databehandlingsressourcer, der deles med andre kunder. Eftersom kapaciteten skal dele ressourcerne, pålægges begrænsninger for at sikre *fair play*, f.eks. den maksimale modelstørrelse (1 GB) og den maksimale daglige opdateringshastighed (otte gange pr. dag).
 
-**Arbejdsområder**  i Power BI er placeret i kapaciteter, og de repræsenterer sikkerheds-, samarbejds- og udrulningsobjektbeholdere. Hver bruger af Power BI har et personligt arbejdsområde, der er kendt som **Mit arbejdsområde**. Der kan oprettes flere arbejdsområder for at muliggøre samarbejde og udrulning, og disse kaldes **arbejdsområder**. Arbejdsområder, herunder personlige arbejdsområder, oprettes som standard i den **delte kapacitet**.
+**Arbejdsområder ** i Power BI er placeret i kapaciteter, og de repræsenterer sikkerheds-, samarbejds- og udrulningsobjektbeholdere. Hver bruger af Power BI har et personligt arbejdsområde, der er kendt som **Mit arbejdsområde**. Der kan oprettes flere arbejdsområder for at muliggøre samarbejde og udrulning, og disse kaldes **arbejdsområder**. Arbejdsområder, herunder personlige arbejdsområder, oprettes som standard i den **delte kapacitet**.
 
 Her er nogle oplysninger om de to forskellige arbejdsområdescenarier:
 
-**Delte arbejdsområder**  – for almindelige arbejdsområder (arbejdsområder, der ikke er en del af en Premium-kapacitet) har den automatiske sideopdatering et minimumsinterval på 30 minutter (det laveste tilladte interval).
+**Delte arbejdsområder ** – for almindelige arbejdsområder (arbejdsområder, der ikke er en del af en Premium-kapacitet) har den automatiske sideopdatering et minimumsinterval på 30 minutter (det laveste tilladte interval).
 
-**Premium-arbejdsområder**  – tilgængeligheden af automatisk sideopdatering i Premium-arbejdsområder afhænger af de arbejdsbelastningsindstillinger, som din Premium-administrator har konfigureret til Power BI Premium-kapaciteten. Der er to variabler, som kan påvirke din mulighed for at konfigurere automatisk sideopdatering:
+**Premium-arbejdsområder ** – tilgængeligheden af automatisk sideopdatering i Premium-arbejdsområder afhænger af de arbejdsbelastningsindstillinger, som din Premium-administrator har konfigureret til Power BI Premium-kapaciteten. Der er to variabler, som kan påvirke din mulighed for at konfigurere automatisk sideopdatering:
 
  1. *Funktion til/fra*: Hvis din kapacitetsadministrator har besluttet at deaktivere funktionen, kan du ikke konfigurere nogen form for sideopdatering i din publicerede rapport.
 
  2. *Minimumsinterval for opdatering*: Når du aktiverer funktionen, skal din kapacitetsadministrator konfigurere et minimumsinterval for opdateringen. Hvis intervallet er lavere end minimumsintervallet, tilsidesætter Power BI-tjenesten intervallet for at overholde det minimumsinterval, der er angivet af kapacitetsadministratoren.
 
-I nedenstående tabel beskrives flere detaljer, hvor denne funktion er tilgængelig, og grænserne for hver kapacitetstype og [lagertilstand](whitepaper-powerbi-premium-deployment.md#model-storage-modes)
+I nedenstående tabel beskrives flere detaljer, hvor denne funktion er tilgængelig, og grænserne for hver kapacitetstype og [lagertilstand](service-dataset-modes-understand.md)
 
 | Lagertilstand | Dedikeret kapacitet | Delt kapacitet |
 | --- | --- | --- |
-| Direkte forespørgsel | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 1 sekund <br>**Tilsidesættelse af kapacitetsadministrator**  – ja. | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 30 minutter <br>**Tilsidesættelse af kapacitetsadministrator** – nej. |
+| Direkte forespørgsel | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 1 sekund <br>**Tilsidesættelse af kapacitetsadministrator ** – ja. | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 30 minutter <br>**Tilsidesættelse af kapacitetsadministrator** – nej. |
 | Importér | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. |
-| Blandet tilstand (DQ + andre) | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 1 sekund <br>**Tilsidesættelse af kapacitetsadministrator**  – ja. | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 30 minutter <br>**Tilsidesættelse af kapacitetsadministrator** – nej. |
+| Blandet tilstand (DQ + andre) | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 1 sekund <br>**Tilsidesættelse af kapacitetsadministrator ** – ja. | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 30 minutter <br>**Tilsidesættelse af kapacitetsadministrator** – nej. |
 | Live connect AS | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. |
 | Live connect PBI | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. |
 
