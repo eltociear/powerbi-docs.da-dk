@@ -747,16 +747,6 @@
               href: designer/service-security-apply-data-sensitivity-labels.md
         - name: Dataafstamning
           href: service-data-lineage.md
-        - name: Sideinddelte rapporteri på Power BI
-          items:
-            - name: Se en sideinddelt rapport
-              href: paginated-reports-view-power-bi-service.md
-            - name: Understøttede datakilder
-              href: paginated-reports-data-sources.md
-            - name: Interager med parametre
-              href: paginated-reports-view-parameters.md
-            - name: Tilmeld dig selv eller andre
-              href: paginated-reports-subscriptions.md
         - name: Skabelonapps
           items:
             - name: Oversigt over skabelonapps
@@ -915,6 +905,8 @@
           href: report-builder-planning-report.md
         - name: Report Builder-data
           href: report-builder-data.md
+        - name: Understøttede datakilder
+          href: paginated-reports-data-sources.md
         - name: Brug delte datasæt i Power BI
           href: report-builder-shared-datasets.md
         - name: Designtips
