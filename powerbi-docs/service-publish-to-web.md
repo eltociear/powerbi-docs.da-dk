@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/16/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9f8da4a5f37eb1e652dd2125dd588febf49fb01b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 1fd640922f132f56a03b37ed59a6267a5af83d00
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871839"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311719"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -135,7 +135,8 @@ Brugerdefinerede visuelle elementer, der understøttes i **Publicer på internet
 - ArcGIS Maps til Power BI-visualiseringer.
 - Rapporter med DAX-målinger på rapportniveau.
 - Forespørgselsmodeller for enkeltlogon til data.
-- [Fortrolige eller beskyttede oplysninger](#publish-to-web-from-power-bi).
+- Fortrolige eller beskyttede oplysninger.
+- [Delte og certificerede datasæt](service-datasets-share.md).
 - Muligheden for automatisk godkendelse, der er tilgængelig med indstillingen **Integrer** fungerer ikke sammen med Power BI JavaScript API. Til Power BI JavaScript API kan du bruge den strategi til integreringen, at [brugeren ejer dataene](developer/embed-sample-for-your-organization.md).
 
 ## <a name="tenant-setting"></a>Lejerindstillinger

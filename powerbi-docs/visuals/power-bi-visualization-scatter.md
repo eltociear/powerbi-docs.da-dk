@@ -2,20 +2,20 @@
 title: Punktdiagrammer, boblediagrammer og prikdiagrammer i Power BI
 description: Punktdiagrammer, prikdiagrammer og boblediagrammer i Power BI
 author: mihart
-ms.reviewer: ''
+ms.reviewer: amac
 featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/21/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 88db87b995f52aa51023bd465d349459e1dd2965
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a03ac63caf8da96cd7e786c99c8a8dcd36f45a75
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870825"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311691"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Punktdiagrammer, boblediagrammer og prikdiagrammer i Power BI
 
@@ -131,13 +131,30 @@ Nu tilføjer jeg en tredje dimension.
     > [!NOTE]
     > Flere datapunkter kan betyde en længere indlæsningstid. Hvis du vælger at publicere rapporter med begrænsninger i den højere ende af skalaen, skal du sørge for at teste dine rapporter på både internettet og mobilenheder. Du ønsker at bekræfte, at diagrammets ydeevne svarer til dine brugeres forventninger.
 
-1. Du kan [formatere farver, navne, titler, baggrund og mere i dine visualiseringer](service-getting-started-with-color-formatting-and-axis-properties.md).
-
-    Hvis du vil [forbedre tilgængeligheden](../desktop-accessibility.md), bør du overveje at føje mærkeformer til hver enkelt linje. Hvis du vil vælge mærkeformen, skal du udvide **Figurer**, vælge **Mærkeform** og derefter vælge en form.
+1. Fortsæt med at formatere farver, navne, titler, baggrund og mere i dine visualiseringer. Hvis du vil [forbedre tilgængeligheden](../desktop-accessibility.md), bør du overveje at føje mærkeformer til hver enkelt linje. Hvis du vil vælge mærkeformen, skal du udvide **Figurer**, vælge **Mærkeform** og derefter vælge en form.
 
     ![Skærmbillede af rullelisten Figurer, hvor indstillingerne for mærkeformerne er fremhævet.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 
-    Du kan ændre mærkeformen til en diamant, trekant eller firkant. Hvis du bruger en anden mærkeform for hver enkelt linje, kan brugere af rapporter nemmere adskille linjer (eller områder) fra hinanden.
+    Ret mærkeformen til en diamant, trekant eller firkant. Hvis du bruger en anden mærkeform for hver enkelt linje, kan brugere af rapporter nemmere adskille linjer (eller områder) fra hinanden.
+
+1. Åbn ruden Analyse ![Skærmbillede af ikonet for ruden Analyse.](media/power-bi-visualization-scatter/power-bi-analytics.png) for at føje flere oplysninger til din visualisering.  
+    - Tilføj en medianlinje. Vælg **Medianlinje** > **Tilføj**. Som standard tilføjes der en medianlinje for *Salg pr. kvm* i Power BI. Det er ikke videre praktisk, da vi kan se, at der er 10 datapunkter, og vi ved, at medianen oprettes med fem datapunkter på hver side. Du skal i stedet ændre **målingen** til *Afvigelse i samlet salg i %* .  
+
+        ![Skærmbillede af boblediagrammet, hvor der er tilføjet en medianlinje.](media/power-bi-visualization-scatter/power-bi-analytics-median.png)
+
+    - Tilføj symmetriskygger for at vise, hvilke punkter der har en højere værdi for målingen på x-aksen i forhold til målingen på y-aksen og omvendt. Når du slår symmetriskygger til i ruden Analyse, får du vist baggrunden af dit punktdiagram symmetrisk baseret på aksens øverste og laveste grænser. Du kan bruge denne metode til hurtigt at finde ud af, hvilket aksemål et datapunkt favoriserer, især når du har et andet akseområde til din x- og y-akse.
+
+        a. Ret feltet **Afvigelse for samlet salg i %** til **Bruttoavance for sidste år i %**
+
+        ![Skærmbillede af boblediagrammet, hvor der er tilføjet en medianlinje.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
+
+        b. Tilføj **symmetriskygge** fra ruden Analyse. Ud fra skyggen kan vi se, at Hosiery (den grønne boble i det lyserøde område) er den eneste kategori, der favoriserer bruttoavancen frem for salget pr. butikskvadratmeter. 
+
+        ![Skærmbillede af boblediagrammet, hvor der er tilføjet en symmetriskygge.](media/power-bi-visualization-scatter/power-bi-symmetry.png)
+
+    - Fortsæt med at udforske ruden Analyse for at se mere om dine data. 
+
+        ![Skærmbillede af boblediagrammet, hvor der er tilføjet en symmetriskygge.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
 
 ## <a name="create-a-dot-plot-chart"></a>Opret et prikdiagram
 

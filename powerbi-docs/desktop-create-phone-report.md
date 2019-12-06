@@ -1,20 +1,20 @@
 ---
-title: Optimer rapporter til mobilapps – Power BI
+title: Optimer rapporter til Power BI-mobilapps
 description: Få mere at vide om, hvordan du optimerer rapportsider til Power BI-mobilapps ved at oprette en stående version af rapporten specifikt til telefoner og tablets.
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 11/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 006d0e02f3b0aa7860cade4d8e035ddc299e8ba8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 16af5a6c8b5341067c458329c68da0a1a0fe14a5
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878398"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311475"
 ---
 # <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Optimer rapporter til Power BI-mobilapps
 Du kan forbedre visningsoplevelsen af rapporter i mobilapps ved at oprette et stående layout. I Power BI Desktop og Power BI-tjenesten omarrangerer du rapportvisualiseringer og ændrer størrelsen af dem for at få en optimal oplevelse i stående retning.  
@@ -23,36 +23,36 @@ Leder du i stedet efter oplysninger om visning af rapporter på en mobilenhed? P
 
 ![Optimeret rapport på en telefon](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 
-Du kan også oprette [*dynamiske* visualiseringer](#optimize-a-visual-for-any-size) og [dynamiske udsnit](#enhance-slicers-to-work-well-in-phone-reports), der tilpasses flot hvor som helst. Hvis du føjer filtre til din rapport, vises de automatisk i den optimerede rapport.
+Du kan oprette [dynamiske visualiseringer](#optimize-a-visual-for-any-size) og [dynamiske udsnit](#enhance-slicers-to-work-well-in-phone-reports), hvis størrelse kan tilpasses hvor som helst. Hvis du føjer filtre til din rapport, vises de automatisk i den optimerede rapport.
 
 ## <a name="lay-out-a-portrait-version-of-a-report-page"></a>Opsæt en stående version af en rapportside
 
 Når du har oprettet en rapport, kan du optimere den til telefoner og tablets.
 
-1. I rapportvisning i Power BI Desktop skal du vælge **Telefonlayout** på fanen **Vis**.  
+1. I **Rapportvisning** i Power BI Desktop på fanen **Visning** skal du vælge **Telefonlayout**.  
    
     ![Telefonlayoutikon](media/desktop-create-phone-report/desktop-create-phone-report-3.png)
    
     I Power BI-tjenesten skal du vælge **Rediger rapport** > **Mobillayout**.
 
-    Du kan se et tomt lærred, der er formet som en telefon. Alle visualiseringerne på den originale rapportside er vist i ruden Visualiseringer til højre.
+    Du kan se et tomt lærred, der er formet som en telefon. Alle visualiseringerne på den originale rapportside er vist i ruden **Visualiseringer** til højre.
 
-3. Føj en visualisering til telefonlayoutet ved at trække det fra ruden Visualiseringer til telefonlærredet.
+1. Føj en visualisering til telefonlayoutet ved at trække den fra ruden **Visualiseringer** til telefonlærredet.
    
     Telefonrapporter bruger et gitterlayout. Når du trækker visualiseringer til mobilgitteret, falder de på plads i gitteret.
    
     ![Træk og slip en visualisering](media/desktop-create-phone-report/desktop-create-phone-report-4.gif)
    
-    Du kan føje nogle eller alle visualiseringerne på masterrapportsiden til telefonrapportsiden. Du kan kun tilføje hver visualisering én gang. Du behøver ikke at inkludere alle visualiseringerne.
+    Du kan føje nogle eller alle visualiseringerne på masterrapportsiden til telefonrapportsiden. Du kan kun tilføje de enkelte visualiseringer én gang, og du behøver ikke at inkludere alle visualiseringerne.
 
-4. Du kan tilpasse størrelsen på dine visualiseringer i gitteret, ligesom du ville gøre det for felter på dashboards og mobildashboards.
+1. Du kan tilpasse størrelsen på dine visualiseringer i gitteret, ligesom du ville gøre det for felter på dashboards og mobildashboards.
    
    Telefonrapportgitteret tilpasses telefoner af forskellig størrelse, så din rapport ser lige så flot ud på telefoner med små som store skærme.
    
    ![Tilpas størrelsen på en visualisering](media/desktop-create-phone-report/desktop-create-phone-report-5.gif)
 
 ## <a name="optimize-a-visual-for-any-size"></a>Optimer en visualisering til enhver størrelse
-Du kan indstille visualiseringerne på dit dashboard eller i din rapport til at være *dynamiske*. De ændres dynamisk, så den maksimale mængde data og indsigt vises uanset skærmstørrelse. 
+Du kan indstille visualiseringerne på dit dashboard eller i din rapport til at være *dynamiske*. Visualiseringer ændres dynamisk, så den maksimale mængde data og indsigt vises uanset skærmstørrelse. 
 
 Når størrelsen af visualiseringen ændres, prioriterer Power BI datavisningen. Udfyldning kan f.eks. fjernes, og forklaringen kan flyttes til toppen af visualiseringen automatisk, så visualiseringen fortsat er informativ, selvom den bliver mindre.
 
@@ -68,7 +68,7 @@ Du kan vælge, om du vil gøre hver enkelt visualisering dynamisk. Læs mere om 
 * Power BI giver telefonrapporter i mobilappen standardtitler og -sidenavne. Hvis du har oprettet tekstvisualiseringer for titler og sidenavne i din rapport, skal du overveje ikke at føje dem til dine telefonrapporter.     
 
 ## <a name="remove-a-visual-from-the-phone-layout"></a>Fjern en visualisering fra telefonlayoutet
-* Fjern en visualisering ved at klikke på X i visualiseringens øverste højre hjørne på telefonlærredet, eller markér det, og tryk på **Slet**.
+* Du fjerner en visualisering ved at vælge **X** øverst til højre i visualiseringen på telefonlærredet eller ved at vælge den og trykke på **Slet**.
   
    Hvis du fjerner visualiseringen her, fjernes den kun fra lærredet til telefonlayout. Visualiseringen og den originale rapport ændres ikke.
   
@@ -77,7 +77,7 @@ Du kan vælge, om du vil gøre hver enkelt visualisering dynamisk. Læs mere om 
 ## <a name="enhance-slicers-to-work-well-in-phone-reports"></a>Gør udsnit bedre, så de fungerer godt i telefonrapporter
 Udsnit muliggør filtrering af rapportdata på lærredet. Når du designer udsnit i den almindelige tilstand til rapportskrivning, kan du modificere nogle udsnitsindstillinger for at gøre dem mere anvendelige i telefonrapporter:
 
-* Beslut, om læserne af rapporten kun kan vælge et eller flere elementer.
+* Beslut, om læserne af rapporten kun kan vælge ét element eller flere elementer.
 * Placer en boks omkring udsnittet for at gøre rapporten nemmere at scanne.
 * Gør udsnitsværktøjet lodret, vandret eller *dynamisk*. 
 
@@ -88,16 +88,16 @@ Hvis du gør udsnitsværktøjet dynamisk, når du ændrer dets størrelse og for
 Læs mere om [oprettelse af dynamiske udsnit](power-bi-slicer-filter-responsive.md).
 
 ## <a name="publish-a-phone-report"></a>Udgiv en telefonrapport
-* Udgiv en telefonversion af en rapport ved at [udgive hovedrapporten fra Power BI Desktop til Power BI-tjenesten](desktop-upload-desktop-files.md), så udgives telefonversionen på samme tid.
+Udgiv en telefonversion af en rapport ved at [udgive hovedrapporten fra Power BI Desktop til Power BI-tjenesten](desktop-upload-desktop-files.md), så udgives telefonversionen på samme tid.
   
-    Læs mere om [deling og tilladelser i Power BI](service-how-to-collaborate-distribute-dashboards-reports.md).
+Læs mere om [deling og tilladelser i Power BI](service-how-to-collaborate-distribute-dashboards-reports.md).
 
 ## <a name="view-optimized-and-unoptimized-reports-on-a-phone-or-tablet"></a>Få vist optimerede og ikke-optimerede rapporter på en telefon eller tablet
 I mobilapperne på telefoner registrerer Power BI automatisk optimerede og ikke-optimerede telefonrapporter. Hvis der findes en telefonoptimeret rapport, åbner Power BI-telefonappen automatisk rapporten i telefonrapporttilstand.
 
 Hvis der ikke findes en telefonoptimeret rapport, åbnes rapporten i ikke-optimeret liggende visning.  
 
-Hvis en telefons retning ændres til liggende, når en telefonrapport er åben, åbnes rapporten i den ikke-optimerede visning med det oprindelige rapportlayout, uanset om rapporten er optimeret eller ej.
+Hvis en telefons retning ændres til liggende i en telefonrapport, åbnes rapporten i den ikke-optimerede visning med det oprindelige rapportlayout, uanset om rapporten er optimeret eller ej.
 
 Hvis du kun optimerer nogle sider, får læserne vist en meddelelse i stående visning, der indikerer, at rapporten er tilgængelig i liggende visning.
 
@@ -106,8 +106,8 @@ Hvis du kun optimerer nogle sider, får læserne vist en meddelelse i stående v
 Læserne af rapporten kan vende deres telefon eller tablet, så den ligger på siden, for at se rapporten i liggende visning. Læs mere om at [interagere med Power BI-rapporter optimeret til stående visning](consumer/mobile/mobile-apps-view-phone-report.md).
 
 ## <a name="next-steps"></a>Næste trin
-* [Opret en telefonvisning af et dashboard i Power BI](service-create-dashboard-mobile-phone-view.md)
-* [Få vist Power BI-rapporter, der er optimeret til din telefon](consumer/mobile/mobile-apps-view-phone-report.md)
-* [Opret dynamiske visualiseringer, der er optimeret til alle størrelser](visuals/desktop-create-responsive-visuals.md)
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+* [Opret en telefonvisning af et dashboard i Power BI](service-create-dashboard-mobile-phone-view.md).
+* [Få vist Power BI-rapporter, der er optimeret til din telefon](consumer/mobile/mobile-apps-view-phone-report.md).
+* [Opret dynamiske visualiseringer, der er optimeret til alle størrelser](visuals/desktop-create-responsive-visuals.md).
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
 

@@ -10,18 +10,18 @@ ms.date: 07/15/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1966a9ea38f8ff9d1517b4df5ed0db1254ddf80d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cb28db10eecdc32f844e29c8beea178f08fbf920
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881765"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410876"
 ---
 # <a name="manage-data-sources"></a>Administrer datakilder
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Power BI understøtter mange datakilder i det lokale miljø, og de har hver især sine egne krav. En gateway kan bruges til en enkelt datakilde eller flere datakilder. I dette eksempel viser vi dig, hvordan du tilføjer SQL Server som en datakilde. Trinnene svarer til trinnene for andre datakilder.
+Power BI understøtter mange [datakilder i det lokale miljø](power-bi-data-sources.md), som hver især har sine egne krav. En gateway kan bruges til en enkelt datakilde eller flere datakilder. I dette eksempel viser vi dig, hvordan du tilføjer SQL Server som en datakilde. Trinnene svarer til trinnene for andre datakilder.
 
 De fleste handlinger til administration af datakilder kan også udføres vha. API'er. Du kan finde flere oplysninger i [REST API'er (gateways)](/rest/api/power-bi/gateways).
 
@@ -117,56 +117,7 @@ Når du føjer en datakilde til gatewayen, skal du angive legitimationsoplysning
 
 ## <a name="list-of-available-data-source-types"></a>Liste over tilgængelige datakildetyper
 
-Datagatewayen i det lokale miljø understøtter følgende datakilder til Power BI. Ud over datakilder i det lokale miljø kan kilder bag en firewall, VPN eller et virtuelt netværk også have brug for en datagateway.
-
-| **Datakilde** | **Live/DirectQuery** | **Manuel eller planlagt opdatering (brugerkonfigureret)** |
-| --- | --- | --- |
-| Amazon Redshift |Ja |Ja |
-| Analysis Services |Ja |Ja |
-| AtScale-kuber |Ja |Ja |
-| Azure Active Directory |Nej |Ja |
-| Azure Blob Storage |Nej |Ja |
-| Azure DevOps Server |Nej |Ja |
-| Azure Table Storage |Nej |Ja |
-| BI Connector |Ja |Ja |
-| Denodo |Ja |Ja |
-| Dremio |Ja |Ja |
-| EmigoDataSourceConnector |Nej |Ja |
-| Essbase |Ja |Ja |
-| Exasol |Ja |Ja |
-| Fil |Nej |Ja |
-| Mappe |Nej |Ja |
-| Paxatas |Nej |Ja |
-| IBM DB2 |Ja |Ja |
-| IBM Informix Database |Nej |Ja |
-| IBM Netezza |Ja |Ja |
-| Impala |Ja |Ja |
-| Jethro ODBC |Ja |Ja |
-| Kyligence Enterprise |Ja |Ja |
-| MarkLogic ODBC |Ja |Ja |
-| Microsoft Graph Security |Nej |Ja |
-| MySQL |Nej |Ja |
-| ODBC |Nej |Ja |
-| OData |Nej |Ja |
-| OLE DB |Nej |Ja |
-| Oracle |Ja |Ja |
-| PostgreSQL |Nej |Ja |
-| QubolePresto |Ja |Ja |
-| Hurtig basisconnector |Nej |Ja |
-| SAP Business Warehouse-meddelelsesserver |Ja |Ja |
-| SAP Business Warehouse-server |Ja |Ja |
-| SAP HANA |Ja |Ja |
-| SQL Server |Ja |Ja |
-| SharePoint |Nej |Ja |
-| Snowflake |Ja |Ja |
-| Spark |Ja |Ja |
-| SurveyMonkey |Nej |Ja |
-| Sybase |Nej |Ja |
-| TeamDesk.Database |Nej |Ja |
-| Teradata |Ja |Ja |
-| Vertica |Ja |Ja |
-| Web |Nej |Ja |
-| Workforce Dimensions |Nej |Ja |
+Du kan finde oplysninger om, hvilke datakilder datagatewayen i det lokale miljø understøtter, i [Power BI-datakilder](power-bi-data-sources.md).
 
 ## <a name="next-steps"></a>Næste trin
 

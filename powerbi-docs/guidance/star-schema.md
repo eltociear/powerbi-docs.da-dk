@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 42da2dd74d80d2a68cf38c8d35ee4e500d6780d8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 241789dc6255dd461ef6cc62425b732788d7c63d
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875593"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410852"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI
 
@@ -27,7 +27,7 @@ Et **stjerneskema** er en fuldt udviklet udformningstilgang, som en lang række 
 
 **Dimensionstabeller** beskriver forretningsenheder – de "ting", du udformer. Enheder kan omfatte produkter, personer, steder og begreber, inklusive tid. Den mest ensartede tabel, du finder i et stjerneskema, er en datodimensionstabel. En dimensionstabel indeholder en nøglekolonne (eller kolonner), der fungerer som et entydigt id, og beskrivende kolonner.
 
-I **faktatabeller** gemmes observationer eller begivenheder. Det kan være salgsordrer, lageropgørelser, valutakurser, temperaturer osv. En faktatabel indeholder dimensionsnøglekolonner, der er relateret til dimensionstabeller og numeriske målingskolonner. Dimensionsnøglekolonnerne bestemmer _dimensionaliteten_ for en faktatabel, mens dimensionsnøgleværdierne bestemmer _granulariteten_ for en faktatabel. Tag f.eks. en faktatabel, der er designet til at gemme salgsmål, som har to dimensionsnøglekolonner: **Dato** og **Produktnøgle**. Det er nemt at forstå, at tabellen har to dimensioner. Det er dog ikke muligt at bestemme granulariteten uden at tage højde for dimensionsnøgleværdierne. I dette eksempel er de værdier, der er gemt i kolonnen **Dato**, den første dag i måneden. I dette tilfælde er granulariteten på måned-produkt-niveauet.
+**Faktatabeller** gemmer observationer eller hændelser og kan være salgsordrer, lageropgørelser, valutakurser, temperaturer osv. En faktatabel indeholder dimensionsnøglekolonner, der er relateret til dimensionstabeller og numeriske målingskolonner. Dimensionsnøglekolonnerne bestemmer _dimensionaliteten_ for en faktatabel, mens dimensionsnøgleværdierne bestemmer _granulariteten_ for en faktatabel. Tag f.eks. en faktatabel, der er designet til at gemme salgsmål, som har to dimensionsnøglekolonner: **Dato** og **Produktnøgle**. Det er nemt at forstå, at tabellen har to dimensioner. Det er dog ikke muligt at bestemme granulariteten uden at tage højde for dimensionsnøgleværdierne. I dette eksempel er de værdier, der er gemt i kolonnen **Dato**, den første dag i måneden. I dette tilfælde er granulariteten på måned-produkt-niveauet.
 
 Dimensionstabeller indeholder generelt et relativt lille antal rækker. Faktatabeller kan omvendt indeholde et meget stort antal rækker og fortsætte med at vokse over tid.
 
@@ -37,7 +37,7 @@ Dimensionstabeller indeholder generelt et relativt lille antal rækker. Faktatab
 
 Stjerneskemadesign og mange af de relaterede begreber, der introduceres i denne artikel, er yderst relevante for udvikling af Power BI-modeller, der er optimeret til ydeevne og anvendelighed.
 
-Hver visualisering i en Power BI-rapport genererer en forespørgsel, der sendes til Power BI-modellen (som Power BI-tjenesten kalder for et datasæt). Disse forespørgsler bruges til at filtrere, gruppere og opsummere modeldata. En veldesignet model er derfor en model, der indeholder tabeller til filtrering og gruppering samt tabeller til opsummering. Dette passer godt med designprincipperne for et stjerneskema:
+Hver visualisering i en Power BI-rapport genererer en forespørgsel, der sendes til Power BI-modellen (som Power BI-tjenesten kalder for et datasæt). Disse forespørgsler bruges til at filtrere, gruppere og opsummere modeldata. En veldesignet model er derfor en model, der indeholder tabeller til filtrering og gruppering samt tabeller til opsummering. Dette design passer godt med principperne for et stjerneskema:
 
 - Dimensionstabeller understøtter _filtrering_ og _gruppering_
 - Faktatabeller understøtter _opsummering_
@@ -50,7 +50,7 @@ Et velstruktureret modeldesign bør omfatte tabeller, der enten er af typen dime
 
 Endelig er det vigtigt at forstå, at det optimale modeldesign er delvist videnskab og delvist kunst. Nogle gange kan du se bort fra gode råd, når det giver mening for dig at gøre det.
 
-Der er mange andre begreber, som er relateret til stjerneskemadesign, der kan anvendes på en Power BI-model. Disse omfatter:
+Der er mange andre begreber, som er relateret til stjerneskemadesign, der kan anvendes på en Power BI-model. Disse begreber omfatter:
 
 - [Målinger](#measures)
 - [Surrogatnøgler](#surrogate-keys)
@@ -67,14 +67,14 @@ I et stjerneskemadesign er en **måling** en kolonne i en faktatabel, der gemmer
 
 I en Power BI-model har en **måling** en anden – men lignende – definition. Det er en formel, som er skrevet i [DAX (Data Analysis Expressions)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference), der resulterer i opsummering. DAX-sammenlægningsfunktioner, som SUM, MIN., MAKS., GENNEMSNIT osv., bruges ofte i målingsudtryk til at skabe et skalarværdisæt på forespørgselstidspunktet (værdierne gemmes aldrig i modellen). Målingsudtryk kan variere fra simple kolonnesammenlægninger til mere avancerede formler, der tilsidesætter filterkontekst og/eller relationsoverførsler. Du kan finde flere oplysninger i artiklen [Grundlæggende om DAX i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics).
 
-Det er vigtigt at forstå, at Power BI-modeller understøtter en anden metode for at resultere i opsummering. En hvilken som helst kolonne – og som regel numeriske kolonner – kan opsummeres i en visualisering i en rapport eller ved hjælp af Spørgsmål og svar. Dette er praktisk for dig som modeludvikler, da du i mange tilfælde ikke har brug for at oprette målinger. Kolonnen **Salgsbeløb** for Adventure Works-forhandlersalg kan opsummeres på flere måder (sum, antal, gennemsnit, median, min., maks. osv.), uden at det er nødvendigt at oprette en måling for hver mulige sammenlægningstype.
+Det er vigtigt at forstå, at Power BI-modeller understøtter en anden metode for at resultere i opsummering. En hvilken som helst kolonne – og som regel numeriske kolonner – kan opsummeres i en visualisering i en rapport eller ved hjælp af Spørgsmål og svar. Disse kolonner kaldes _implicitte målinger_. De er praktiske for dig som modeludvikler, da du i mange tilfælde ikke har brug for at oprette målinger. Kolonnen **Salgsbeløb** for Adventure Works-forhandlersalg kan opsummeres på flere måder (sum, antal, gennemsnit, median, min., maks. osv.), uden at det er nødvendigt at oprette en måling for hver mulige sammenlægningstype.
 
 ![Eksempel på ikon på feltliste](media/star-schema/field-list-example.png)
 
 Der er dog to overbevisende grunde til, at du bør oprette målinger selv for simple opsummeringer på kolonneniveau:
 
-- Når du ved, at rapportforfattere sender forespørgsler til modellen ved hjælp af [flerdimensionelle udtryk (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017), så skal modellen indeholde målinger. MDX kan ikke resultere i opsummering af kolonneværdier. Dette er yderst relevant, når der sendes en forespørgsel til Power BI-datasæt ved hjælp af MDX, og det er tilfældet, når du bruger [Analysér i Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel) (pivottabeller udsteder MDX-forespørgsler).
-- Hvis du vil sikre, at rapportforfattere kun kan opsummere kolonner på bestemte måder. Kolonnen **Enhedspris** for forhandlersalg (der repræsenterer en pris pr. enhed) kan f.eks. opsummeres, men kun ved hjælp af bestemte sammenlægningsfunktioner. Den bør aldrig lægges sammen, men den kan passende opsummeres ved hjælp af andre sammenlægningsfunktioner (min., maks., gennemsnit osv.). I dette tilfælde kan modeludvikleren skjule kolonnen **Enhedspris** og oprette målinger for alle relevante sammenlægningsfunktioner.
+- Når du ved, at dine rapportforfattere sender forespørgsler til modellen ved hjælp af [flerdimensionelle udtryk (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017), så skal modellen indeholde _eksplicitte målinger_. Eksplicitte målinger defineres ved hjælp af DAX. Denne designmetode er yderst relevant, når der sendes en forespørgsel til et Power BI-datasæt ved hjælp af MDX, da MDX ikke kan opnå opsummering af kolonneværdier. MDX bruges især, når der udføres [analyser i Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel) (pivottabeller udsteder MDX-forespørgsler).
+- Hvis du vil sikre dig, at dine rapportforfattere kun kan opsummere kolonner på bestemte måder. Kolonnen **Enhedspris** for forhandlersalg (der repræsenterer en pris pr. enhed) kan f.eks. opsummeres, men kun ved hjælp af bestemte sammenlægningsfunktioner. Den bør aldrig lægges sammen, men den kan passende opsummeres ved hjælp af andre sammenlægningsfunktioner (min., maks., gennemsnit osv.). I dette tilfælde kan modeludvikleren skjule kolonnen **Enhedspris** og oprette målinger for alle relevante sammenlægningsfunktioner.
 
 Bemærk, at denne designtilgang fungerer godt til rapporter, der er forfattet i Power BI-tjenesten, og til Spørgsmål og svar. Direkte forbindelser i Power BI Desktop giver dog rapportforfattere mulighed for at få vist skjulte felter i ruden **Felter**, der kan resultere i omgåelse af denne designtilgang.
 
@@ -127,11 +127,11 @@ En **Type 2** af en **dimension, der langsomt ændrer sig**, understøtter versi
 
 Adventure Works tildeler f.eks. sælgere til en salgsregion. Når en sælger skifter område, skal der oprettes en ny version af sælgeren for at sikre, at de historiske fakta forbliver knyttet til det tidligere område. Der skal gemmes versioner af sælgere og deres tilknyttede områder i dimensionstabellen for at understøtte nøjagtig historisk analyse af salg efter sælger. Tabellen skal også indeholde værdier for start- og slutdato for at definere gyldigheden af tid. Der kan defineres en tom slutdato (eller 31-12-9999) for aktuelle versioner, hvilket angiver, at rækken er den aktuelle version. Der skal også defineres en surrogatnøgle i tabellen, da forretningsnøglen (i denne forekomst er det medarbejder-id) ikke er entydig.
 
-Det er vigtigt at forstå, at du skal bruge et mellemliggende system (f.eks. et data warehouse) for at registrere og gemme ændringer, når kildedataene ikke gemmer versioner. Indlæsningsprocessen for tabellen skal bevare eksisterende data og registrere ændringer. Når der registreres en ændring, skal den aktuelle version udløbe under indlæsningsprocessen for tabellen. Det sker ved at opdatere værdien **Slutdato** og indsætte en ny version, hvor værdien **Startdato** starter fra den forrige **Slutdato**. Relaterede fakta skal også bruge et tidsbaseret opslag for at hente den værdi for dimensionsnøglen, som er relevant for faktadatoen. En Power BI-model, der bruger Power Query, kan ikke opnå dette. Den kan dog indlæse data fra en forudindlæst Type 2-dimensionstabel, som er en dimension, der langsomt ændrer sig.
+Det er vigtigt at forstå, at du skal bruge et mellemliggende system (f.eks. et data warehouse) for at registrere og gemme ændringer, når kildedataene ikke gemmer versioner. Indlæsningsprocessen for tabellen skal bevare eksisterende data og registrere ændringer. Når der registreres en ændring, skal den aktuelle version udløbe under indlæsningsprocessen for tabellen. Den registrerer ændringerne ved at opdatere værdien **Slutdato** og indsætte en ny version, hvor værdien **Startdato** starter fra den forrige **Slutdato**. Relaterede fakta skal også bruge et tidsbaseret opslag for at hente den værdi for dimensionsnøglen, som er relevant for faktadatoen. En Power BI-model, der bruger Power Query, kan ikke give dette resultat. Den kan dog indlæse data fra en forudindlæst Type 2-dimensionstabel, som er en dimension, der langsomt ændrer sig.
 
-Power BI-modellen bør understøtte forespørgsler om historiske data for et medlem, uanset om de er ændret, og for en version af medlemmet, hvilket repræsenterer en bestemt tilstand for medlemmet over tid. I forbindelse med Adventure Works giver dette dig mulighed for at sende en forespørgsel om sælgeren, uanset hvilket salgsområde der er tildelt, eller om en bestemt version af sælgeren.
+Power BI-modellen bør understøtte forespørgsler om historiske data for et medlem, uanset om de er ændret, og for en version af medlemmet, hvilket repræsenterer en bestemt tilstand for medlemmet over tid. I forbindelse med Adventure Works giver dette design dig mulighed for at sende en forespørgsel om sælgeren, uanset hvilket salgsområde der er tildelt, eller om en bestemt version af sælgeren.
 
-For at opnå dette skal dimensionstabellen i Power BI-modellen indeholde en kolonne til filtrering af sælgeren og en anden kolonne til filtrering af en bestemt version af sælgeren. Det er vigtigt, at kolonnen med versionen indeholder en entydig beskrivelse, f.eks. "Michael Blythe (15-12-2008-26-06-2019)" eller "Michael Blythe (aktuel)". Det er også vigtigt at uddanne forfattere og forbrugere af rapporter i de grundlæggende funktioner i Type 2 af en dimension, der langsomt ændrer sig, og hvordan de opnår et passende rapportdesign ved at anvende korrekte filtre.
+For at opnå dette krav skal dimensionstabellen i Power BI-modellen indeholde en kolonne til filtrering af sælgeren og en anden kolonne til filtrering af en bestemt version af sælgeren. Det er vigtigt, at kolonnen med versionen indeholder en entydig beskrivelse, f.eks. "Michael Blythe (15-12-2008-26-06-2019)" eller "Michael Blythe (aktuel)". Det er også vigtigt at uddanne forfattere og forbrugere af rapporter i de grundlæggende funktioner i Type 2 af en dimension, der langsomt ændrer sig, og hvordan de opnår et passende rapportdesign ved at anvende korrekte filtre.
 
 Det er også en god designpraksis at inkludere et hierarki, der giver mulighed for at zoome ind på versionsniveauer i visualiseringer.
 
@@ -145,11 +145,11 @@ En **dimension med forskellige roller**, er en dimension, der kan filtrere relat
 
 I et data warehouse er den accepterede designtilgang at definere en enkelt datodimensionstabel. På forespørgselstidspunktet etableres "rollen" for datodimensionen efter, hvilken faktakolonne du bruger til at forene tabellerne. Når du f.eks. analyserer salg efter ordredato, forenes der efter den relaterede kolonne med ordredato for forhandlersalg i tabellen.
 
-I en Power BI-model kan dette design efterlignes ved at oprette flere relationer mellem to tabeller. I eksemplet med Adventure Works ville der være tre relationer mellem salgstabellerne for dato og forhandler. Dette er muligt, men det er vigtigt at forstå, at der kun kan være én aktiv relation mellem to Power BI-modeltabeller. Alle resterende relationer skal være angivet til inaktive. Hvis du har en enkelt aktiv relation, betyder det, at der er en standardfilteroverførsel fra dato til forhandlersalg. I denne forekomst angives den aktive relation til det mest almindelige filter, der bruges af rapporter, hvilket hos Adventure Works er relationen for ordredato.
+I en Power BI-model kan dette design efterlignes ved at oprette flere relationer mellem to tabeller. I eksemplet med Adventure Works ville der være tre relationer mellem salgstabellerne for dato og forhandler. Dette design er muligt, men det er vigtigt at forstå, at der kun kan være én aktiv relation mellem to Power BI-modeltabeller. Alle resterende relationer skal være angivet til inaktive. Hvis du har en enkelt aktiv relation, betyder det, at der er en standardfilteroverførsel fra dato til forhandlersalg. I denne forekomst angives den aktive relation til det mest almindelige filter, der bruges af rapporter, hvilket hos Adventure Works er relationen for ordredato.
 
 ![Eksempel på en enkelt dimension med forskellige roller og relationer](media/star-schema/relationships.png)
 
-Den eneste måde, du kan bruge en inaktiv relation på, er ved at definere et DAX-udtryk, der bruger [funktionen BRUGRELATION](https://docs.microsoft.com/dax/userelationship-function-dax). I vores eksempel skal modeludvikleren oprette målinger for at aktivere analyse af forhandlersalg efter afsendelsesdato og leveringsdato. Det kan være kedeligt, især når der defineres mange målinger i forhandlertabellen. Det skaber også rod i ruden **Felter**, hvor der en overflod af målinger. Der er også andre begrænsninger:
+Den eneste måde, du kan bruge en inaktiv relation på, er ved at definere et DAX-udtryk, der bruger [funktionen BRUGRELATION](https://docs.microsoft.com/dax/userelationship-function-dax). I vores eksempel skal modeludvikleren oprette målinger for at aktivere analyse af forhandlersalg efter afsendelsesdato og leveringsdato. Det kan være kedeligt arbejde, især når der defineres mange målinger i forhandlertabellen. Det skaber også rod i ruden **Felter**, hvor der en overflod af målinger. Der er også andre begrænsninger:
 
 - Når rapportforfatterne sætter deres lid til opsummering af kolonner i stedet for at definere målinger, kan de ikke opsummere de inaktive relationer uden at skrive en måling på rapportniveau. Målinger på rapportniveau kan kun defineres, når der forfattes rapporter i Power BI Desktop.
 - Med kun én aktiv relationssti mellem dato og forhandlersalg, er det ikke muligt at filtrere forhandlersalg efter forskellige typer af datoer samtidigt. Du kan f.eks. ikke oprette en visualisering, der afbilder salg efter ordredato ved hjælp af afsendt salg.
@@ -197,7 +197,7 @@ Du kan f.eks. overveje, at sælgere kan tildeles et _eller flere_ salgsområder.
 
 ![Eksempel på faktafri faktatabel](media/star-schema/factless-fact.png)
 
-Denne mange til mange-designtilgang er veldokumenteret, og den kan opnås uden en brotabel. Tilgangen med brotabellen anses dog for at være bedste praksis, når der skal oprettes en relation mellem to dimensioner. Du kan finde flere oplysninger under [Relationer med mange til mange-kardinalitet i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships).
+Denne mange til mange-designtilgang er veldokumenteret, og den kan opnås uden en brotabel. Tilgangen med brotabellen anses dog for at være bedste praksis, når der skal oprettes en relation mellem to dimensioner. Du kan finde flere oplysninger i [Relationer med mange til mange-kardinalitet i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships).
 
 ## <a name="next-steps"></a>Næste trin
 
@@ -207,3 +207,4 @@ Du kan finde flere oplysninger om stjerneskemadesign eller design af en Power BI
 - [Opret og administrer relationer i Power BI Desktop](../desktop-create-and-manage-relationships.md)
 - [Relationer med en mange til mange-kardinalitet i Power BI Desktop](../desktop-many-to-many-relationships.md)
 - [Kursus med vejledning om udformning](/learn/modules/model-data-power-bi/)
+- Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

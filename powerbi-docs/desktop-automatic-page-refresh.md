@@ -7,15 +7,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b9f7c745ad251fdb81c7898130cd3ca6c5d32af9
-ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
+ms.openlocfilehash: 50daa90f937a9d1c7081d9b22e3c743da950945c
+ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164148"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548572"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatisk sideopdatering i Power BI Desktop (eksempelvisning)
 
@@ -83,7 +83,7 @@ Lad os derefter se på, hvordan du potentielt kan registrere og diagnosticere yd
 
 Du kan også angive intervaller for automatisk sideopdatering for rapporter, der er oprettet i Power BI Desktop, og som er publiceret til Power BI-tjenesten. 
 
-Automatisk sideopdatering for rapporter i Power BI-tjenesten er konfigureret med en fremgangsmåde, der minder om konfigurationen i Power BI Desktop. På følgende billede vises konfigurationen **Sideopdatering** for Power BI-tjenesten:
+Automatisk sideopdatering for rapporter i Power BI-tjenesten er konfigureret med en fremgangsmåde, der minder om konfigurationen i Power BI Desktop. Når den er konfigureret i Power BI-tjenesten, understøtter den automatiske opdatering af sider også [integreret Power BI](developer/embedding.md)-indhold. På følgende billede vises konfigurationen **Sideopdatering** for Power BI-tjenesten:
 
 ![Automatisk sideopdatering i Power BI-tjenesten](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
 
@@ -111,13 +111,13 @@ Vi vil tydeliggøre, hvordan dette fungerer, ved at begynde med nogle baggrundso
 
 I en delt kapacitet kører dine arbejdsbelastninger på databehandlingsressourcer, der deles med andre kunder. Eftersom kapaciteten skal dele ressourcerne, pålægges begrænsninger for at sikre *fair play*, f.eks. den maksimale modelstørrelse (1 GB) og den maksimale daglige opdateringshastighed (otte gange pr. dag).
 
-**Arbejdsområder ** i Power BI er placeret i kapaciteter, og de repræsenterer sikkerheds-, samarbejds- og udrulningsobjektbeholdere. Hver bruger af Power BI har et personligt arbejdsområde, der er kendt som **Mit arbejdsområde**. Der kan oprettes flere arbejdsområder for at muliggøre samarbejde og udrulning, og disse kaldes **arbejdsområder**. Arbejdsområder, herunder personlige arbejdsområder, oprettes som standard i den **delte kapacitet**.
+**Arbejdsområder**  i Power BI er placeret i kapaciteter, og de repræsenterer sikkerheds-, samarbejds- og udrulningsobjektbeholdere. Hver bruger af Power BI har et personligt arbejdsområde, der er kendt som **Mit arbejdsområde**. Der kan oprettes flere arbejdsområder for at muliggøre samarbejde og udrulning, og disse kaldes **arbejdsområder**. Arbejdsområder, herunder personlige arbejdsområder, oprettes som standard i den **delte kapacitet**.
 
 Her er nogle oplysninger om de to forskellige arbejdsområdescenarier:
 
-**Delte arbejdsområder ** – for almindelige arbejdsområder (arbejdsområder, der ikke er en del af en Premium-kapacitet) har den automatiske sideopdatering et minimumsinterval på 30 minutter (det laveste tilladte interval).
+**Delte arbejdsområder**  – for almindelige arbejdsområder (arbejdsområder, der ikke er en del af en Premium-kapacitet) har den automatiske sideopdatering et minimumsinterval på 30 minutter (det laveste tilladte interval).
 
-**Premium-arbejdsområder ** – tilgængeligheden af automatisk sideopdatering i Premium-arbejdsområder afhænger af de arbejdsbelastningsindstillinger, som din Premium-administrator har konfigureret til Power BI Premium-kapaciteten. Der er to variabler, som kan påvirke din mulighed for at konfigurere automatisk sideopdatering:
+**Premium-arbejdsområder**  – tilgængeligheden af automatisk sideopdatering i Premium-arbejdsområder afhænger af de arbejdsbelastningsindstillinger, som din Premium-administrator har konfigureret til Power BI Premium-kapaciteten. Der er to variabler, som kan påvirke din mulighed for at konfigurere automatisk sideopdatering:
 
  1. *Funktion til/fra*: Hvis din kapacitetsadministrator har besluttet at deaktivere funktionen, kan du ikke konfigurere nogen form for sideopdatering i din publicerede rapport.
 
@@ -127,9 +127,9 @@ I nedenstående tabel beskrives flere detaljer, hvor denne funktion er tilgænge
 
 | Lagertilstand | Dedikeret kapacitet | Delt kapacitet |
 | --- | --- | --- |
-| Direkte forespørgsel | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 1 sekund <br>**Tilsidesættelse af kapacitetsadministrator ** – ja. | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 30 minutter <br>**Tilsidesættelse af kapacitetsadministrator** – nej. |
+| Direkte forespørgsel | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 1 sekund <br>**Tilsidesættelse af kapacitetsadministrator**  – ja. | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 30 minutter <br>**Tilsidesættelse af kapacitetsadministrator** – nej. |
 | Importér | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. |
-| Blandet tilstand (DQ + andre) | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 1 sekund <br>**Tilsidesættelse af kapacitetsadministrator ** – ja. | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 30 minutter <br>**Tilsidesættelse af kapacitetsadministrator** – nej. |
+| Blandet tilstand (DQ + andre) | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 1 sekund <br>**Tilsidesættelse af kapacitetsadministrator**  – ja. | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 30 minutter <br>**Tilsidesættelse af kapacitetsadministrator** – nej. |
 | Live connect AS | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. |
 | Live connect PBI | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. |
 

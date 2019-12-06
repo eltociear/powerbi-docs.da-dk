@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: f28ffa89647272306dc9cecb5c93928d36805d2a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4db1f887c1dd889a06c02643a0270cc24ab9c45f
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880462"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311500"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports-preview"></a>Implementering af sikkerhed på rækkeniveau i integrerede sideinddelte rapporter (prøveversion)
 
@@ -30,7 +30,7 @@ Når du anvender sikkerhed på rækkeniveau på en sideinddelt Power BI-rapport,
 
 Når du har tildelt parameteren til **UserID**, skal du bruge [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)-API'en til at hente integreringstokenet.
 
-## <a name="use-uderid-as-a-filter-at-report-or-query-level"></a>Brug UserID som et filter på rapport-eller forespørgselsniveau
+## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>Brug UserID som et filter på rapport- eller forespørgselsniveau
 
 Du kan bruge **UserId** som et *filter* eller i en *forespørgsel* til datakilden i [Sideinddelt Report Builder i Power BI](../report-builder-power-bi.md).
 
@@ -66,7 +66,7 @@ Du kan bruge **UserId** som et *filter* eller i en *forespørgsel* til datakilde
 
     ![Power BI Report Builder-parametre](media/embedded-paginated-reports-secure-data/parameters.png)
 
-2. I **Parameternavn** skal du angive **@UserID** , og i **Parameterværdi** skal du tilføje **[&UserID]** .
+2. I **Parameternavn** skal du angive **\@UserID**, og i **Parameterværdi** skal du tilføje **[&UserID]** .
 
     ![Navn på Power BI Report Builder-parameter](media/embedded-paginated-reports-secure-data/parameter-name.png) 
 

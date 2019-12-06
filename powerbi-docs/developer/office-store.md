@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 3/27/2019
-ms.openlocfilehash: 8d320b5fa1387ebf21ecd8c3c1db70b9892154e7
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: f8ca6aae805ae3184a1c54d8707fcb9a3cfd32e7
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128047"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265259"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Publicer Power BI-visualiseringer i AppSource
 
@@ -25,7 +25,7 @@ Når du har oprettet en brugerdefineret visual, kan du udgive den i AppSource, s
 
 ## <a name="what-is-appsource"></a>Hvad er AppSource?
 
-**AppSource** er det sted, hvor du finder SaaS-apps og -tilføjelsesprogrammer til dine Microsoft-produkter og -tjenester. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) forbinder millioner af brugere af Office 365, Dynamics 365, Cortana Intelligence og andre med løsninger, der kan hjælpe dem med at arbejde mere effektivt, med større indsigt eller smukkere end før.
+**AppSource** er det sted, hvor du finder SaaS-apps og -tilføjelsesprogrammer til dine Microsoft-produkter og -tjenester. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) giver millioner af brugere af Office 365, Dynamics 365 m.fl. adgang til løsninger, der kan hjælpe dem med at arbejde mere effektivt, med større indsigt eller smukkere end før.
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Forberedelser, inden du indsender en brugerdefineret visualisering
 

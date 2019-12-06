@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a45566d6fe9f4833ebed91e7c10656a8ca1c6961
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: e68d886564552d1b1cb2dc9e7c018c65a5cca039
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74102059"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265201"
 ---
 # <a name="visuals-in-power-bi"></a>Visualiseringer i Power BI
 
@@ -49,7 +49,7 @@ Power BI-administratorer godkender og udruller Power BI-visualiseringer i deres 
 
 Det er både medlemmer af community'et og Microsoft, der har bidraget med deres Power BI-visualiseringer til offentlig brug og publiceret dem på [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals)-markedspladsen. Du kan downloade disse visualiseringer og føje dem til dine Power BI-rapporter. Microsoft har testet og godkendt disse Power BI-visualiseringer i forhold til funktionalitet og kvalitet.
 
-Hvad er [AppSource](office-store.md)? Det er det sted, du finder apps, tilføjelsesprogrammer og udvidelser til din Microsoft-software. AppSource forbinder millioner af brugere af produkter som Office 365, Azure, Dynamics 365, Cortana og Power BI med løsninger, der kan hjælpe dem med at arbejde mere effektivt, med større indsigt og smukkere end før.
+Hvad er [AppSource](office-store.md)? Det er det sted, du finder apps, tilføjelsesprogrammer og udvidelser til din Microsoft-software. AppSource giver millioner af brugere af produkter som Office 365, Azure, Dynamics 365 og Power BI adgang til løsninger, der kan hjælpe dem med at arbejde mere effektivt, med større indsigt og smukkere end før.
 
 ### <a name="certified-visuals"></a>Certificerede visualiseringer
 
@@ -134,7 +134,7 @@ Du har to muligheder for at downloade og importere Power BI-visualiseringer: fra
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
-2. Gå til [siden med appresultater](https://appsource.microsoft.com/marketplace/apps), hvor du kan få vist de mest populære apps i hver kategori, herunder *Power BI-apps*. Vi leder efter Power BI-visuals, så lad os vælge **Power BI-visualiseringer** på listen i navigationsruden for at indsnævre resultaterne.
+2. Gå til [siden med appresultater](https://appsource.microsoft.com/marketplace/apps), hvor du kan få vist de mest populære apps i hver kategori, herunder *Power BI-apps*. Vi leder efter Power BI-visualiseringer, så lad os vælge **Power BI-visualiseringer** på listen i navigationsruden for at indsnævre resultaterne.
 
     ![AppSource-visualiseringer](media/power-bi-custom-visuals/power-bi-appsource-visuals.png)
 

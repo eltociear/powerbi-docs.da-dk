@@ -1,5 +1,5 @@
 ---
-title: Integreret analyse for at integrere Power BI-indhold i dit program for dine kunder
+title: Integrer indhold i en applikation for dine kunder
 description: Få mere at vide om, hvordan du integrerer en rapport, et dashboard eller et felt i et program ved hjælp af Power BI-API'er for at bruge integreret analyse for dine kunder. Få mere at vide om, hvordan du integrerer Power BI i dit program ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence.
 author: KesemSharabi
 ms.author: kesharab
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 04/02/2019
-ms.openlocfilehash: 24a9c0069cb80a20a84823655437a27a4f6c0e9e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 85b21d95cb992449d3b7a910c619d049237fc9d8
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877704"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311083"
 ---
-# <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Selvstudium: Integrer Power BI-indhold i en applikation for dine kunder
+# <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Selvstudium: Integrer Power BI-indhold i en app til dine kunder
 
 Med **Power BI Embedded i Azure** eller **Power BI-integration i Office** kan du integrere rapporter, dashboards eller felter i et program ved hjælp af "appen ejer dataene". **App owns data** handler om at have et program, der bruger Power BI som sin integrerede analyseplatform. Som **ISV** eller **udvikler** kan du oprette Power BI-indhold, der viser rapporter, dashboards eller felter i et program, som er fuldt integreret og interaktivt, uden at brugerne skal have en Power BI-licens. I dette selvstudium kan du se, hvordan du integrerer en rapport i et program ved hjælp af Power BI .NET SDK med Power BI JavaScript-API'en.
 
@@ -263,7 +263,7 @@ ODataResponseListReport reports = await client.Reports.GetReportsInGroupAsync(wo
 Report report = reports.Value.FirstOrDefault();
 ```
 
-### <a name="create-the-embed-token"></a>Opret integreringstokenet
+### <a name="create-the-embed-token"></a>Opret integrationstokenet
 Generér et integreringstoken, som kan bruges fra JavaScript-API'en. Der findes to typer API'er. Den første gruppe indeholder fem API'er, der hver især genererer et integreringstoken for et bestemt element. Den anden gruppe, som kun indeholder én API, genererer et token, der kan bruges til at integrere flere elementer.
 
 **API'er til generering af et integreringstoken for et bestemt element**

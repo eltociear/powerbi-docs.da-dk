@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 34b0bd1a59ec66cf7a2e5eb41d2c1ec12a39d1e7
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 266a8609123f05f258daee60f6ae17f032ebae29
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128133"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410811"
 ---
 # <a name="upgrade-classic-workspaces-to-the-new-workspaces-in-power-bi"></a>Opgrader klassiske arbejdsområder til de nye arbejdsområder i Power BI
 
 I denne artikel forklares det, hvordan du opgraderer et klassisk arbejdsområde til den nye arbejdsområdeoplevelse. Du kan opgradere et hvilket som helst klassisk arbejdsområde. De nye arbejdsområder har mere detaljerede arbejdsområderoller, så du bedre kan administrere adgang til indhold. Du har større fleksibilitet i forbindelse med administration af opgraderede arbejdsområder, da de er mere løst forbundet med deres oprindelige Office 365-gruppe. Få mere at vide [om den nye arbejdsområdeoplevelse](../service-new-workspaces.md). 
 
 >[!NOTE]
->Denne dokumentation er foreløbig version, og den omfatter en egenskab, der endnu ikke er tilgængelig. Vi har udgivet det, så du kan forberede dig på den nye funktion og finde beskrivelser af eventuelle spørgsmål, du kan have før udgivelsen.  
+>Opgradering af et arbejdsområde er tilgængelig som en offentlig prøveversion. 
 
 ![Vellykket opgradering](media/service-upgrade-workspaces/power-bi-upgrade-success.png)
 
@@ -198,7 +198,15 @@ Nogle organisationer ønsker at flytte mange eller alle arbejdsområder til den 
 2. Du skal samarbejde med de enkelte Office 365-gruppeejere eller Office 365-administratoren for at få dem til at opgradere arbejdsområdet. Hvis du vil opgradere arbejdsområdet, skal du være ejer af gruppen.
 
 Funktionen til opgradering af arbejdsområdet indeholder ikke værktøjer til masseopgradering eller programmatisk opgradering. Derudover vises nye Office 365-grupper, der er oprettet i din organisation, stadig i Power BI. 
-    
+   
+   
+## <a name="known-issues"></a>Kendte problemer
+
+Der er flere kendte problemer, som kan opstå:
+- Efter opgradering får brugerne måske vist advarselsdialogboksen "Modellen kunne ikke indlæses". Denne meddelelse vises fejlagtigt og kan ignoreres. 
+- Efter opgradering er nogle navne på arbejdsområderne måske anderledes end før opgraderingen. Når dette sker, er navnet på arbejdsområdet enten gendannet til et tidligere navn, eller navnet på arbejdsområdet er tomt. Du løser dette problem ved at omdøbe arbejdsområdet til det ønskede navn.
+- Efter opgradering af et arbejdsområde, hvor der var installeret en indholdspakke, få du måske vist yderligere dashboards i arbejdsområdet, som ikke var synlige før opgraderingen. Dette sker nogle gange, hvis en indholdspakke ikke er blevet opdateret for nylig. Du kan roligt fjerne disse dashboards.
+
 
 
 ## <a name="next-steps"></a>Næste trin

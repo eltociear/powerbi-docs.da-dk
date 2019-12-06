@@ -8,49 +8,48 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: c96518bb8de7f323b51a7e1e3f34f9d9bf056c79
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 91acaa3a2252250e2a10674bae0e9be81f142696
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875376"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410927"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX: DIVIDE-funktion vs. divisionsoperator (/)
 
-Denne artikel er beregnet til datamodeldesignere, der definerer DAX-udtryk.
+Som dataudformer, kan du vælge at bruge funktionen [DIVIDE](/dax/divide-function-dax) eller divisionsoperatoren (/ – skråstreg), når du skriver et DAX-udtryk for at dele en tæller med en nævner.
 
-## <a name="background"></a>Baggrund
-
-Når du skriver et DAX-udtryk for at opdele en tæller med en nævner, kan du vælge at bruge funktionen [DIVIDE](/dax/divide-function-dax) eller divisionsoperatoren (/-skråstreg).
-
-Når du bruger funktionen DIVIDE, skal du overføre udtryk for tæller og nævner. Du kan også overføre en værdi, der repræsenterer et alternativt resultat.
+Når du bruger funktionen DIVIDE, skal du overføre udtryk for tæller og nævner. Du kan også overføre en værdi, der repræsenterer et _alternativt resultat_.
 
 ```dax
-
 DIVIDE(<numerator>, <denominator> [,<alternateresult>])
-
 ```
 
-Funktionen DIVIDE er udviklet til automatisk at håndtere tilfælde, hvor der divideres med nul. Hvis et alternativt resultat ikke overføres, og nævneren er nul eller TOM, returnerer funktionen TOM. Hvis der sendes et alternativt resultat, returneres det i stedet for TOM.
+Funktionen DIVIDE er designet til automatisk at håndtere division med nul. Hvis et alternativt resultat ikke overføres, og nævneren er nul eller TOM, returnerer funktionen TOM. Hvis der sendes et alternativt resultat, returneres det i stedet for TOM.
 
-Funktionen DIVIDE er praktisk, fordi udtrykket ikke først behøver at teste nævnerværdien. Funktionen er også bedre optimeret til at teste nævnerværdien end funktionen [IF](/dax/if-function-dax). Gevinsten ved ydeevnen er markant, da kontrol af division med nul er dyr. Brug af DIVIDE resulterer også i et mere præcist og elegant udtryk.
+Funktionen DIVIDE er praktisk, fordi udtrykket ikke først behøver at teste nævnerværdien. Funktionen er også bedre optimeret til at teste nævnerværdien end funktionen [IF](/dax/if-function-dax). Gevinsten ved ydeevnen er markant, da kontrol af division med nul er dyr. Derudover resulterer brug af DIVIDE også i et mere præcist og elegant udtryk.
 
 ## <a name="example"></a>Eksempel
 
 Følgende målingsudtryk producerer sikker division, men det involverer brug af fire DAX-funktioner.
 
 ```dax
-
-=IF(OR(ISBLANK([Sales]), [Sales] == 0), BLANK(), [Profit] / [Sales])
-
+Profit Margin =
+IF(
+    OR(
+        ISBLANK([Sales]),
+        [Sales] == 0
+    ),
+    BLANK(),
+    [Profit] / [Sales]
+)
 ```
 
 Dette målingsudtryk opnår samme resultat, men er endnu mere effektivt og elegant.
 
 ```dax
-
-=DIVIDE([Profit], [Sales])
-
+Profit Margin =
+DIVIDE([Profit], [Sales])
 ```
 
 ## <a name="recommendations"></a>Anbefalinger
@@ -59,4 +58,11 @@ Vi anbefaler, at du bruger funktionen DIVIDE, når nævneren er et udtryk, der _
 
 Hvis nævneren er en konstant værdi, anbefaler vi, at du bruger divisionsoperatoren. I dette tilfælde gennemføres divisionen, og dit udtryk kører bedre, da unødvendige test undgås.
 
-Du skal nøje overveje, om funktionen DIVIDE skal returnere en anden værdi. I forbindelse med målinger er det normalt et bedre design, at de returnerer TOM. Det skyldes, at rapportvisualiseringer som standard fjerner grupperinger, når opsummeringer er TOMME. Det gør det muligt for visualiseringen at fokusere på grupper, der indeholder data. Når det er nødvendigt, kan du konfigurere visualiseringen til at vise alle grupper (der returnerer værdier eller er TOMME) i filterkonteksten ved at aktivere indstillingen "Vis elementer uden data".
+Overvej nøje, om funktionen DIVIDE skal returnere en alternativ værdi. I forbindelse med målinger er det normalt et bedre design, at de returnerer TOM. Returnering af TOM er bedre, fordi rapportvisualiseringer som standard fjerner grupperinger, når opsummeringer er TOMME. Det gør det muligt for visualiseringen at fokusere på grupper, der indeholder data. Når det er nødvendigt, kan du konfigurere visualiseringen til at vise alle grupper (der returnerer værdier eller er TOMME) i filterkonteksten ved at aktivere indstillingen "Vis elementer uden data".
+
+## <a name="next-steps"></a>Næste trin
+
+Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
+
+- [Henvisning til DAX (Data Analysis Expressions)](/dax/)
+- Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

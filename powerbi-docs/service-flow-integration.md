@@ -1,5 +1,5 @@
 ---
-title: Power BI-integration i Microsoft Flow
+title: Power BI-integration med Power Automate
 description: Få mere at vide om, hvordan du opretter Flows udløst af databeskeder i Power BI.
 author: mgblythe
 ms.reviewer: ''
@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: a5b5a34e7cd61ac9d197faa0ef4410cd9558f597
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c8d768e1d02846eca10c6100aa8ec30dbb7f704b
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881851"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164310"
 ---
-# <a name="microsoft-flow-and-power-bi"></a>Microsoft Flow og Power BI
+# <a name="power-automate-and-power-bi"></a>Power Automate og Power BI
 
-[Microsoft Flow](https://flow.microsoft.com/documentation/getting-started) er en SaaS til automatisering af arbejdsprocesser på tværs af det stigende antal programmer og tjenester, erhvervsbrugere er afhængige af. Med Flow kan du automatisere opgaver ved at integrere dine foretrukne apps og tjenester (herunder Power BI) for at få meddelelser, synkronisere filer, indsamle data og meget mere. Gentagne opgaver bliver nemme med automatisering af arbejdsprocessen.
+[Power Automate](https://flow.microsoft.com/documentation/getting-started) er et SaaS-tilbud til automatisering af arbejdsprocesser på tværs af det stigende antal programmer og tjenester, som erhvervsbrugere er afhængige af. Med Flow kan du automatisere opgaver ved at integrere dine foretrukne apps og tjenester (herunder Power BI) for at få meddelelser, synkronisere filer, indsamle data og meget mere. Gentagne opgaver bliver nemme med automatisering af arbejdsprocessen.
 
 [Kom i gang med at bruge Flow nu.](https://flow.microsoft.com/documentation/getting-started)
 
@@ -30,12 +30,12 @@ Se, hvordan Sirui opretter et Flow, der sender en detaljeret mail til kollegaer,
 ## <a name="create-a-flow-that-is-triggered-by-a-power-bi-data-alert"></a>Opret et flow, der udløses af databeskeder i Power BI
 
 ### <a name="prerequisites"></a>Forudsætninger
-Denne vejledning viser, hvordan du opretter to forskellige flows; et fra en skabelon og et fra bunden. Hvis du vil følge med, [skal du oprette en databesked i Power BI](service-set-data-alerts.md), oprette en gratis Slack-konto og [tilmelde dig Microsoft Flow](https://flow.microsoft.com/#home-signup) (det er gratis!).
+Denne vejledning viser, hvordan du opretter to forskellige flows; et fra en skabelon og et fra bunden. Hvis du vil følge med, skal du [oprette en databesked i Power BI](service-set-data-alerts.md), oprette en gratis Slack-konto og [tilmelde dig Power Automate](https://flow.microsoft.com/#home-signup) (det er gratis!).
 
 ## <a name="create-a-flow-that-uses-power-bi---from-a-template"></a>Opret et flow, der bruger Power BI – fra en skabelon
 I denne opgave skal vi bruge en skabelon til at oprette et enkelt flow, der udløses af en databesked i Power BI (meddelelse).
 
-1. Log på Microsoft Flow (flow.microsoft.com).
+1. Log på Power Automate (flow.microsoft.com).
 2. Vælg **Mine flow**.
    
    ![Menulinjen Flow](media/service-flow-integration/power-bi-my-flows.png)
@@ -80,7 +80,7 @@ Denne skabelon indeholder en udløser (Power BI-databesked om nye olympiske meda
 ## <a name="create-a-flow-that-uses-power-bi---from-scratch-blank"></a>Opret et Flow, der bruger Power BI – fra bunden
 I denne opgave skal vi oprette et enkelt flow fra bunden, der udløses af en databesked i Power BI (meddelelse).
 
-1. Log på Microsoft Flow.
+1. Log på Power Automate.
 2. Vælg **Mine flow** > **Opret fra blank**.
    
    ![Menulinje øverst i Flow](media/service-flow-integration/power-bi-my-flows.png)
@@ -107,7 +107,7 @@ I denne opgave skal vi oprette et enkelt flow fra bunden, der udløses af en dat
     ![Flowet udløser en Outlook-meddelelse](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Næste trin
-* [Kom i gang med Microsoft Flow](https://flow.microsoft.com/documentation/getting-started/)
+* [Kom godt i gang med Power Automate](https://flow.microsoft.com/documentation/getting-started/)
 * [Indstil databeskeder i Power BI-tjenesten](service-set-data-alerts.md)
 * [Indstil databeskeder på din iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Indstil databeskeder i Power BI-mobilappen til Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)

@@ -1,5 +1,5 @@
 ---
-title: Integrer sideinddelte Power BI-rapporter i dit program til dine kunder
+title: Integrer sideinddelte rapporter i dit program for dine kunder
 description: Få mere at vide om, hvordan du integrerer en sideinddelt Power BI-rapport i et program ved hjælp af Power BI-API'er.
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 11/04/2019
-ms.openlocfilehash: 5611d65ab800c14b2570a12078c08cce5dc58147
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877721"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311440"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder (prøveversion)
 
@@ -38,6 +38,11 @@ Du skal have følgende for at komme i gang:
 
 Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), før du begynder.
 
+> [!IMPORTANT]
+> * Du skal bruge en **tjenesteprincipal**. Masterbruger understøttes ikke.
+> * Datakilder, der kræver enkeltlogon (SSO), understøttes ikke.
+> * Power BI-datasæt understøttes ikke som en [datakilde](../service-get-data.md).
+
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurer dit Power BI-miljø
 
 Hvis du integrerer en sideinddelt rapport, skal du tildele et arbejdsområde til en dedikeret kapacitet og uploade rapporten til arbejdsområdet.
@@ -52,7 +57,7 @@ Før du importerer eller uploader en sideinddelt rapport, der skal integreres, s
 * **Power BI Premium** – når du integrerer en sideinddelt rapport, kræves der en *P*-SKU-kapacitet. Når du integrerer Power BI-indhold, kaldes denne løsning for *Power BI integration*. Du kan finde flere oplysninger om dette abonnement under [Hvad er Power BI Premium?](../service-premium-what-is.md)
 * **Azure Power BI Embedded** – du kan købe en dedikeret kapacitet på [Microsoft Azure-portalen](https://portal.azure.com). Dette abonnement bruger *A*-SKU'erne. Hvis du vil integrere sideinddelte rapporter, skal du mindst have et *A4*-abonnement. Du kan finde flere oplysninger om, hvordan du opretter en kapacitet til Power BI Embedded, under [Opret kapacitet til Power BI Embedded på Azure-portalen](azure-pbie-create-capacity.md).
 
-I nedenstående tabel beskrives ressourcerne og grænserne for de enkelte SKU'er. Hvis du vil finde ud af, hvilken kapacitet der passer bedst til dine behov, kan du se [hvilken SKU du skal købe til din scenarie](https://docs.microsoft.com/power-bi/developer/embedded-faq#power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario)tabel.
+I nedenstående tabel beskrives ressourcerne og grænserne for de enkelte SKU'er. Hvis du vil finde ud af, hvilken kapacitet der passer bedst til dine behov, skal du se tabellen [Hvilken SKU skal jeg købe til mit scenarie?](https://docs.microsoft.com/power-bi/developer/embedded-faq#power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario)
 
 | Kapacitetsnoder | V-kerner i alt | Backend-v-kerner | RAM (GB) | Frontend-v-kerner | 
 | --- | --- | --- | --- | --- |

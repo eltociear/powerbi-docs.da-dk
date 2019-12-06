@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: d7fcc054ccf0bea1a036eaf24cb9631a2abb3969
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: bfc1572e31269182e9ca63efbbf6934b90f84b66
+ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410886"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74478617"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Vejledning til DirectQuery-model i Power BI Desktop
 
@@ -99,7 +99,7 @@ Rapporter, der er baseret på et DirectQuery-datasæt, kan optimeres på mange m
     
 - **Anvend filtre først:** Når du starter med at designe rapporter, anbefaler vi, at du anvender relevante filtre – på rapport-, side- eller visualiseringsniveau – før felterne knyttes til visualiseringens felter. I stedet for f.eks. at trække målingerne **Land** og **Salg** ind og derefter filtrere dem efter et bestemt år, skal du anvende filteret på feltet **År** først. Det skyldes, at hvert enkelt trin i oprettelsen af en visualisering sender en forespørgsel, og selvom det derefter er muligt at foretage en anden ændring, før den første forespørgsel er fuldført, så pålægger det stadig den underliggende datakilde en unødvendig belastning. Når du anvender filtre tidligt, hjælper det generelt med at gøre disse mellemliggende forespørgsler billigere og hurtigere. Hvis du ikke anvender filtre tidligt, kan det også resultere i en overskridelse af grænsen på 1 million rækker, sådan som det er beskrevet ovenfor.
 - **Begræns antallet af visuelle elementer på en side:** Når en rapportside åbnes (og når der anvendes filtre på siden), opdateres alle visualiseringer på siden. Der er dog en grænse for antallet af forespørgsler, der kan sendes parallelt, og som pålægges af Power BI-miljøet, og for indstillingen **Maksimale antal forbindelser pr. datakilde** for modellen, som beskrevet ovenfor. Så i takt med at antallet af visualiseringer på siden øges, er der større risiko for, at de opdateres serielt. Det øger den tid, det tager at opdatere hele siden, og det øger også risikoen for, at visualiseringerne kan vise uoverensstemmende resultater (for flygtige datakilder). Derfor anbefales det at begrænse antallet af visualiseringer på en enkelt side og i stedet anvende flere enklere sider. Et lignende sidelayout kan opnås ved at erstatte flere kortvisualiseringer med en enkelt kortvisualisering med flere rækker.
-- **Slå interaktion mellem visualiseringer fra:** Krydsfremhævning og krydsfiltrering af interaktioner kræver, at der sendes forespørgsler til den underliggende kilde. Medmindre disse interaktioner er nødvendige, anbefales det, at de slås fra, hvis den tid, det tager at reagere på brugernes valg, vil være urimelig lang. Disse interaktioner kan dog slås fra enten for hele rapporten (som beskrevet ovenfor i forbindelse med indstillinger for reduktion af forespørgsler) eller på ad hoc-basis, som beskrevet i artiklen [Sådan krydsfiltrerer visualiseringer hinanden i en Power BI-rapport](../consumer/end-user-interactions.md).
+- **Slå interaktion mellem visualiseringer fra:** Krydsfremhævning og krydsfiltrering af interaktioner kræver, at der sendes forespørgsler til den underliggende kilde. Medmindre disse interaktioner er nødvendige, anbefales det, at de slås fra, hvis den tid, det tager at reagere på brugernes valg, vil være urimelig lang. Disse interaktioner kan dog slås fra enten for hele rapporten (som beskrevet ovenfor ifm. indstillinger for Reduktion af forespørgsler) eller på ad hoc-basis. Du kan få flere oplysninger under [Sådan krydsfiltrerer visualiseringer hinanden i en Power BI-rapport](../consumer/end-user-interactions.md).
 
 Foruden ovenstående liste over optimeringsteknikker kan hver af følgende rapporteringsegenskaber bidrage til problemer med ydeevnen:
 
@@ -110,8 +110,8 @@ Foruden ovenstående liste over optimeringsteknikker kan hver af følgende rappo
     
     Det kan resultere i, at der sendes to forespørgsler til den underliggende kilde:
     
-      - Med den første forespørgsel hentes de kategorier, der opfylder betingelsen (Salg > 15 mio. USD)
-      - Med den anden forespørgsel hentes de nødvendige data til visualiseringen, herunder de kategorier, der opfylder betingelsen i WHERE-parameteren
+    - Med den første forespørgsel hentes de kategorier, der opfylder betingelsen (Salg > 15 mio. USD)
+    - Med den anden forespørgsel hentes de nødvendige data til visualiseringen, herunder de kategorier, der opfylder betingelsen i WHERE-parameteren
     
     Processen fungerer som regel fint, hvis der er hundreder eller tusinder af kategorier som i dette eksempel. Ydeevnen kan dog blive forringet, hvis antallet af kategorier er meget større (og pga. den ovenfor beskrevne grænse på 1 million rækker, vil forespørgslen helt sikkert mislykkes, hvis der er mere end 1 million kategorier, der opfylder betingelsen).
 - **TopN-filtre:** Der kan defineres avancerede filtre, så det kun er de øverste (eller nederste) N-værdier, der filtreres, rangeret efter en måling. Hvis du f.eks. kun vil vise de øverste fem kategorier i ovenstående visualisering. Ligesom med filtrene for måling resulterer det også i, at der sendes to forespørgsler til den underliggende datakilde. Den første forespørgsel returnerer dog alle kategorier fra den underliggende kilde, og derefter bestemmes de øverste N-værdier på baggrund af de returnerede resultater. Afhængigt af kardinaliteten for den involverede kolonne kan det medføre problemer med ydeevnen (eller forespørgselsfejl pga. grænsen på 1 mio. rækker).
@@ -127,7 +127,7 @@ Der kan opnås mange forbedringer af funktionerne og ydeevnen ved at konvertere 
 
 ## <a name="educate-users"></a>Oplær brugere
 
-Det er vigtigt at oplære dine brugere i, hvordan de arbejder effektivt med rapporter, der er baseret på DirectQuery-datasæt. Rapportforfatterne bør oplæres i indholdet, der er beskrevet under [Optimer rapportdesign](#optimize-report-designs).
+Det er vigtigt at oplære dine brugere i, hvordan de arbejder effektivt med rapporter, der er baseret på DirectQuery-datasæt. Rapportforfatterne bør oplæres i indholdet, der er beskrevet under [Optimer rapportdesign](#optimize-report-designs section).
 
 Vi anbefaler, at du oplærer forbrugerne af dine rapporter i de rapporter, der er baseret på DirectQuery-datasæt. Det kan være nyttigt for dem at forstå den generelle dataarkitektur, herunder eventuelle relevante begrænsninger, som beskrevet i denne artikel. Fortæl dem, at de kan forvente, at reaktioner i forbindelse med opdatering og interaktiv filtrering til tider kan være langsom. Når brugerne af rapporten forstår, hvorfor der sker en forringelse af ydeevnen, er der mindre sandsynlighed for, at de mister tilliden til rapporterne og dataene.
 

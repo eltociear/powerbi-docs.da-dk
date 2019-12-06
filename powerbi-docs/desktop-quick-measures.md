@@ -1,53 +1,40 @@
 ---
-title: Brug Hurtigmålinger til almindelige og effektive beregninger
-description: Hurtigmålinger indeholder færdige DAX-formler, der gør det nemt at udføre de mest almindelige beregninger
+title: Brug hurtigmålinger til almindelige og effektive beregninger
+description: Hurtigmålinger indeholder færdige DAX-formler, der gør det nemt at udføre de mest almindelige beregninger.
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 11/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 755ef6ab515244a2b7613ee7007caf3c3e6d1ed8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4e5ea5e5fcbffb5c61434ecc26a90d80d1cd1736
+ms.sourcegitcommit: 982ffaa8eb91897f48221a816970671f4a92e6d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877947"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74415375"
 ---
-# <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Brug Hurtigmålinger til nemt at udføre almindelige og effektive beregninger
-Du kan bruge **Hurtigmålinger** til nemt og hurtigt at udføre almindelige og effektive beregninger. En **Hurtigmåling** kører et sæt DAX-kommandoer i baggrunden (du skal ikke selv skrive DAX-formler – det bliver gjort for dig) baseret på input, du angiver i en dialogboks, hvorefter resultaterne vises i din rapport. Det bedste af det hele er, at du kan se den DAX-formel, der udføres af hurtigmålingen og så enten bruge den eller udvide den med din egen DAX-viden.
+# <a name="use-quick-measures-for-common-calculations"></a>Brug hurtigmålinger til almindelige beregninger
+Du kan bruge *hurtigmålinger* til nemt og hurtigt at udføre almindelige og effektive beregninger. En hurtigmåling kører et sæt af DAX-kommandoer (Data Analysis Expressions) i baggrunden og viser derefter resultaterne, så du kan bruge dem i din rapport. Du behøver ikke at skrive DAX-formlen. Det bliver gjort for dig baseret på det input, du angiver i en dialogboks. Der er mange tilgængelige kategorier med beregninger og måder, som du kan tilpasse hver beregning til dine behov på. Det bedste af det hele er nok, at du kan se den DAX-formel, der udføres af hurtigmålingen, så du kan lære mere om DAX.
 
-![](media/desktop-quick-measures/quick-measures_01.png)
+## <a name="create-a-quick-measure"></a>Opret en hurtigmåling
 
-Du kan oprette **hurtigmålinger** ved at højreklikke på et felt under **Felter** og derefter vælge **Ny hurtigmåling**i den viste menu. Du kan også højreklikke på en værdi i ruden **Værdier** for en eksisterende visualisering (for eksempel feltet *Værdier* i visualiseringen *Søjlediagram*). Der er mange tilgængelige kategorier med beregninger og måder, som du kan tilpasse hver beregning til dine behov på.
+Du kan oprette en hurtigmåling i Power BI Desktop ved at højreklikke eller vælge ellipsen **...** ud for et vilkårligt element i ruden **Felter** og derefter vælge **Ny hurtigmåling** i den menu, der vises. 
 
-### <a name="quick-measures-now-generally-available"></a>Hurtigmålinger er nu generelt tilgængelig
+![Vælg Ny hurtigmåling](media/desktop-quick-measures/quick-measures_01.png)
 
-Fra og med udgivelsen af **Power BI Desktop** i februar 2018 er Hurtigmålinger nu generelt tilgængelig (ikke længere en prøveversion). Hvis du bruger en tidligere version af **Power BI Desktop**, kan du prøve funktionen **Hurtigmålinger** fra og med udgivelsen af **Power BI Desktop** i **april 2017** ved at vælge **Fil > Indstillinger > Indstillinger > Funktioner i prøveversion** og derefter markere afkrydsningsfeltet ud for **Hurtigmålinger**.
+Du kan også højreklikke eller vælge rullelistepilen ud for en værdi i **Værdier** for en eksisterende visualisering og vælge **Ny hurtigmåling** i menuen. 
 
-![](media/desktop-quick-measures/quick-measures_02b.png)
+Når du vælger **Ny hurtigmåling**, vises vinduet **Hurtigmålinger**, hvor du kan vælge den beregning, du vil bruge, og de felter, der skal beregnes. 
 
-Du skal genstarte **Power BI Desktop**, når du har markeret indstillingen.
+Vælg feltet **Vælg en beregning** for at få vist en lang liste over tilgængelige hurtigmålinger. 
 
-## <a name="using-quick-measures"></a>Brug Hurtigmålinger
-Du kan oprette en **hurtigmåling** ved at højreklikke på et felt under **Felter** i **Power BI Desktop** og vælge **Ny hurtigmåling** i den viste menu.
+![Tilgængelige hurtigmålinger](media/desktop-quick-measures/quick-measures_04.png)
 
-![](media/desktop-quick-measures/quick-measures_01.png)
-
-Hvis du bruger dynamiske forbindelser med SQL Server Analysis Services (SSAS) vil nogle **hurtigmålinger** være tilgængelige. I **Power BI Desktop** kan du kun se de **hurtigmålinger**, som understøttes for den version af SSAS, der oprettes forbindelse til. Hvis du har oprettet forbindelse til en dynamisk SSAS-datakilde, og du ikke kan se nogle **hurtigmålinger** på listen, skyldes det, at den version af SSAS, du har oprettet forbindelse til, ikke understøtter den DAX-måling, der bruges til at implementere disse **hurtigmålinger**.
-
-Når den vælges ved hjælp af genvejsmenuen, vises vinduet **Hurtigmåling**, hvor du kan vælge den beregning, du vil have, og de felter, som beregningen skal køres for.
-
-![](media/desktop-quick-measures/quick-measures_03.png)
-
-Når du klikker på rullelisten, får du vist en liste med de tilgængelige **hurtigmålinger**.
-
-![](media/desktop-quick-measures/quick-measures_04.png)
-
-Der er fem særskilte grupper af beregningstyper i hurtigmålinger, som hver indeholder en samling af beregninger. Det er følgende grupper og beregninger:
+De fem beregningstyper for hurtigmåling med deres beregninger er følgende:
 
 * **Aggreger pr. kategori**
   * Gennemsnit pr. kategori
@@ -59,7 +46,7 @@ Der er fem særskilte grupper af beregningstyper i hurtigmålinger, som hver ind
   * Filtreret værdi
   * Forskel fra den filtrerede værdi
   * Procentvis forskel fra den filtrerede værdi
-  * Salg fra nye kategorier
+  * Salg fra nye kunder
 * **Tidsintelligens**
   * Total for år til dato
   * Total for kvartal til dato
@@ -83,70 +70,69 @@ Der er fem særskilte grupper af beregningstyper i hurtigmålinger, som hver ind
   * Stjerneklassifikation
   * Sammenkædet liste over værdier
 
-Vi forventer at tilføje yderligere beregninger, og du må meget gerne komme med feedback til, hvilke **hurtigmålinger** du gerne vil se, og hvis du har idéer til **hurtigmålinger** (og underliggende DAX-formler), som du gerne vil indsende til os til overvejelse. Det kan du læse mere om sidst i denne artikel.
+Hvis du har ideer til nye hurtigmålinger, du godt kunne tænke dig, underliggende DAX-formler eller andre forslag til hurtigmålinger, kan du se, hvordan du indsender dem, nederst i denne artikel.
 
-## <a name="example-of-quick-measures"></a>Eksempel på hurtigmålinger
-Lad os se på et eksempel med brug af **Hurtigmålinger**.
+> [!NOTE]
+> Når du bruger dynamiske forbindelser med SSAS (SQL Server Analysis Services), er visse hurtigmålinger tilgængelige. I Power BI Desktop kan du kun se de hurtigmålinger, som understøttes for den version af SSAS, der oprettes forbindelse til. Hvis du har oprettet forbindelse til en dynamisk SSAS-datakilde, og der er visse hurtigmålinger, som du ikke kan se på listen, skyldes det, at den version af SSAS, du har oprettet forbindelse til, ikke understøtter de DAX-kommandoer, der bruges til at implementere disse hurtigmålinger.
 
-I denne **Matrix**-visualisering vises der en tabel med salget af forskellige elektronikprodukter. Det er en grundlæggende tabel, der inkluderer totalen for hver kategori.
+Når du har valgt de beregninger og felter, du vil bruge til hurtigmålingen, skal du vælge **OK**. Den nye hurtigmåling vises i ruden **Felter**, og den underliggende DAX-formel vises på formellinjen. 
 
-![](media/desktop-quick-measures/quick-measures_05.png)
+## <a name="quick-measure-example"></a>Eksempel på hurtigmåling
+Lad os se på en hurtigmåling i funktion.
 
-Hvis du højreklikker på feltet **Værdier** og vælger **Hurtigmåling**, kan du vælge *Gennemsnit pr. kategori* som *beregning* og derefter vælge *Sum af SalesAmount* som *basisværdi* og derefter angive *SalesAmount* ved at trække det felt fra *Felter* i højre rude til sektionen *Kategori* til venstre.
+I følgende matrixvisualisering vises en salgstabel over forskellige produkter. Det er en grundlæggende tabel, der inkluderer den samlede omsætning for hver kategori.
+
+![Matrixvisualisering, der viser en salgstabel](media/desktop-quick-measures/quick-measures_05.png)
+
+Når matrixvisualiseringen er valgt, skal du vælge rullelistepilen ud for **TotalSales** i **Værdier** og vælge **Ny hurtigmåling**. 
+
+I vinduet **Hurtigmålinger** under **Beregning** skal du vælge **Gennemsnit pr. kategori**. 
+
+Træk **Gennemsnitlig enhedspris** fra ruden **Felter** til feltet **Basisværdi**. Lad **Kategori** blive stående i feltet **Kategori**, og vælg **OK**. 
 
 ![](media/desktop-quick-measures/quick-measures_06.png)
 
-Når du klikker på **OK**, kan du se et par interessante ting som vist i billedet på følgende liste:
+Når du vælger **OK**, sker der flere interessante ting.
 
-1. **Matrix**-visualiseringen indeholder nu en ny kolonne, der viser vores beregning (i dette tilfælde *Average SalesAmount within SalesAmount*).
-2. Der er oprettet en ny **måling**, og den findes også under **Felter**, hvor den er fremhævet (Power BI viser en gul ramme om det). Denne måling kan også anvendes i andre visualiseringer i rapporten og ikke kun i den visualisering, hvor den oprindeligt blev oprettet.
-3. Den DAX-formel, der blev oprettet for **hurtigmålingen**, vises på formellinjen.
+![Ny hurtigmåling i visualiseringen, formellinjen og listen Felter](media/desktop-quick-measures/quick-measures_07.png)
 
-![](media/desktop-quick-measures/quick-measures_07.png)
+1. Der vises en ny kolonne i matrixvisualiseringen, der indeholder den beregnede **gennemsnitlige enhedspris pr. kategori**.
+   
+2. DAX-formlen for den nye hurtigmåling vises på formellinjen. Du kan finde flere oplysninger om DAX-formlen i [næste afsnit](#learn-dax-by-using-quick-measures).
+   
+3. Den nye hurtigmåling vises valgt og fremhævet i ruden **Felter**. 
 
-Hvis du vil starte med det første element, skal du bemærke, at **hurtigmålingen** blev anvendt på visualiseringen. Der er en ny kolonne og en associeret værdi. Begge er baseret på den oprettede **hurtigmåling**.
+Den nye hurtigmåling kan bruges til alle visualiseringer i rapporten og ikke kun den visualisering, du har oprettet den for. I følgende billede kan du se en hurtig visualisering af et søjlediagram, der er oprettet ved hjælp af det nye felt med hurtigmålinger.
 
-![](media/desktop-quick-measures/quick-measures_08.png)
+![Ny visualisering af søjlediagram baseret på feltet med hurtigmålinger](media/desktop-quick-measures/quick-measures_09.png)
 
-Desuden vises **hurtigmålingen** under **Felter** i datamodellen, og den kan bruges på samme måde som ethvert andet felt i modellen og i enhver anden visualisering. I det følgende billede blev der oprettet en visualisering med et **søjlediagram**  ved hjælp af det nye felt, der blev oprettet med **hurtigmålingen**.
+## <a name="learn-dax-by-using-quick-measures"></a>Lær at bruge DAX ved hjælp af hurtigmålinger
+En stor fordel ved hurtigmålinger er, at du får vist den DAX-formel, som implementerer målingen. Når du vælger en hurtigmåling i ruden **Felter**, vises **formellinjen** med den DAX-formel, som blev oprettet i Power BI for at implementere målingen.
 
-![](media/desktop-quick-measures/quick-measures_09.png)
+![Formel for hurtigmåling på formellinjen](media/desktop-quick-measures/quick-measures_10.png)
 
-I næste afsnit ser vi nærmere på det tredje element, DAX-formler.
+Formellinjen viser ikke kun formlen bag målingen, men den viser dig også, hvordan du opretter de DAX-formler, som ligger til grund for hurtigmålingerne.
 
-## <a name="learn-dax-using-quick-measures"></a>Lær DAX ved hjælp af hurtigmålinger
-En anden stor fordel ved funktionen **Hurtigmålinger** er, at du direkte kan se den DAX-formel, der blev oprettet for at implementere målingen. I det følgende billede har jeg valgt den måling, der blev oprettet af **hurtigmålingen** (den vises nu under **Felter**, så jeg skal blot klikke på den). Når jeg gør det, vises **formellinjen** med den DAX-formel, som Power BI oprettede for at implementere målingen.
+Forestil dig, at du skal udføre en År for år-beregning, men at du ikke er sikker på, hvordan du skal strukturere DAX-formlen, eller du måske slet ikke ved, hvor du skal starte. I stedet for at hive dig i håret kan du oprette en hurtigmåling ved hjælp af beregningen **Ændring år for år** og se, hvordan den vises i din visualisering, og hvordan DAX-formlen virker. Derefter kan du enten foretage ændringer direkte i DAX-formlen eller oprette en lignende måling, som opfylder dine behov og forventninger. Det er som at have en lærer, der lynhurtigt svarer på dine Hvad nu hvis-spørgsmål med bare nogle få klik. 
 
-![](media/desktop-quick-measures/quick-measures_10.png)
+Du kan altid slette hurtigmålingerne i din model, hvis du ikke kan lide dem. Det gør du ved at højreklikke eller vælge **...** ud for målingen og derefter vælge **Slet**. Du kan også omdøbe en hurtigmåling ved at vælge **Omdøb** i menuen. 
 
-Det er i sig selv praktisk, da det viser den formel, der bruges i målingen. Men det er muligvis endnu mere vigtigt, at du kan bruge **hurtigmålinger** til at se, hvordan de underliggende DAX-formler skal oprettes.
-
-Forestil dig, at du skal udføre en År for år-beregning, men at du ikke er helt sikker på, hvordan du skal strukturere DAX-formlen (eller du måske slet ikke ved, hvor du skal starte). I stedet for at slå hovedet ned i bordet kan du oprette en **hurtigmåling** ved hjælp af beregningen **Ændring år for år** og se, hvad der sker. Det vil sige, at du kan oprette **hurtigmålingen** og se, hvordan den vises i din visualisering, se, hvordan DAX-formlen virker, og derefter enten indføre dine ændringer direkte i DAX-formlen eller oprette en anden måling, indtil beregningerne lever op til dine behov eller forventninger.
-
-Det er som at have en lærer, der lynhurtigt svarer på dine Hvad nu hvis-spørgsmål med bare nogle få klik. Du kan til enhver tid slette målingerne fra din model, hvis du ikke synes om dem. Det gør du ved at højreklikke på målingen og vælge **Slet**.
-
-![](media/desktop-quick-measures/quick-measures_11.png)
-
-Når du har tilpasset målingen til det ønskede, kan du omdøbe den, som du vil, ved hjælp af samme genvejsmenu.
+![Slet eller omdøb en hurtigmåling](media/desktop-quick-measures/quick-measures_11.png)
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 Der er nogle få begrænsninger og overvejelser, du skal være opmærksom på.
 
-* **Hurtigmålinger** er kun tilgængelige, hvis du kan ændre modellen. Det kan du ikke, hvis du arbejder med nogle direkte forbindelser (direkte SSAS-forbindelser i tabelformat understøttes som beskrevet tidligere).
-* Den måling, der blev tilføjet under **Felter**, kan bruges i enhver visualisering i rapporten.
-* Du kan til enhver tid se den DAX-formel, der er knyttet til en **hurtigmåling**, ved at vælge den oprettede måling under **Felter** og derefter se formlen på **formellinjen**.
-* Du kan ikke oprette tidsintelligente hurtigmålinger, når du arbejder i DirectQuery-tilstand. De DAX-funktioner, der bruges i disse hurtigmålinger, har indflydelse på ydeevnen, når de oversættes til T-SQL-sætninger, der sendes til din datakilde.
+- Du kan bruge alle de hurtigmålinger, der er føjet til ruden **Felter**, i alle visualiseringer i rapporten.
+- Du kan altid se den DAX-formel, der er tilknyttet en hurtigmåling, ved at vælge målingen på listen **Felter** og derefter se formlen på formellinjen.
+- Du kan kun bruge hurtigmålinger, hvis du kan redigere modellen. Det kan du ikke altid, når du arbejder med visse dynamiske forbindelser. Dynamiske SSAS-tabelforbindelser understøttes som tidligere beskrevet.
+- Du kan ikke oprette tidsintelligente hurtigmålinger, når du arbejder i DirectQuery-tilstand. De DAX-funktioner, der bruges i disse hurtigmålinger, har indflydelse på ydeevnen, når de oversættes til de T-SQL-sætninger, der sendes til din datakilde.
 
-> [!WARNING]
-> Hurtigmålinger genererer i øjeblikket *kun* DAX-formler med komma som argumentseparator. Hvis din version af **Power BI Desktop** er oversat til et sprog, hvor der bruges decimalkomma, vil hurtigmålingerne ikke virke korrekt.
-> 
-> 
+> [!IMPORTANT]
+> Der bruges kun kommaer som separatorer i argumenter i DAX-sætninger til hurtigmålinger. Hvis din version af Power BI Desktop er på et sprog, hvor der bruges decimalkomma, vil hurtigmålingerne ikke virke korrekt.
 
-### <a name="time-intelligence-and-quick-measures"></a>Tidsintelligens og hurtigmålinger
-Fra og med den opdatering af **Power BI Desktop**, der udkom i oktober 2017, kan du bruge dine egne brugerdefinerede datotabeller med **hurtigmålinger** under kategorien Tidsintelligens. Hvis du ikke bruger en ekstern model i tabelformat skal du sikre, at den primære datokolonne i tabellen var markeret som Datotabel, da modellen blev bygget, som beskrevet i [denne artikel](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular). Hvis du importerer din egen datotabel, skal du sørge for at markere den som en datotabel, som beskrevet i [denne artikel](https://docs.microsoft.com/power-bi/desktop-date-tables)
+### <a name="time-intelligence-and-quick-measures"></a>Time intelligence og hurtigmålinger
+Du kan bruge dine egne brugerdefinerede datotabeller med hurtigmålinger for time intelligence. Hvis du bruger en ekstern model i tabelformat, skal du sikre dig, at den primære datokolonne i tabellen blev markeret som en datotabel, som beskrevet i [Angiv mærke som datotabel, der skal bruges sammen med time intelligence](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular), da den blev bygget. Hvis du importerer din egen datotabel, skal du sørge for at markere den som en datotabel, som beskrevet i [Angiv og brug datotabeller i Power BI Desktop](desktop-date-tables.md).
 
 ### <a name="additional-information-and-examples"></a>Yderligere oplysninger og eksempler
-Vi forventer at kunne tilbyde eksempler og vejledning til alle beregninger med **hurtigmålinger**, så kom snart tilbage igen for at se mere.
-
-Har du en idé til en **hurtigmåling**, som der ikke allerede findes? Fantastisk! Gå til [denne side](https://go.microsoft.com/fwlink/?linkid=842906), og indsend dine idéer (og DAX-formler) for den **hurtigmåling**, du gerne vil se i **Power BI Desktop**, så ser vi nærmere på, om den skal med på listen over **hurtigmålinger** i en kommende udgave.
+Har du en idé til en hurtigmåling, som ikke allerede findes? Fantastisk! Se siden med [idéer til Power BI](https://go.microsoft.com/fwlink/?linkid=842906), og send dine idéer og DAX-formler til de hurtigmålinger, du godt kunne tænke dig i Power BI Desktop. Vi vil overveje at føje dem til listen over hurtigmålinger i en fremtidig version.
 

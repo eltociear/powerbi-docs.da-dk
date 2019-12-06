@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d6368ae61b2813972c3209e2af456ba5aa5fb81b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 160c5736bc2894e629f5bb375dd07e993def1e0c
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874031"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265542"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Eksempel på kunderentabilitet til Power BI: Få en introduktion
 
@@ -128,7 +128,7 @@ Mange af felterne på dashboardet med Eksempel på kunderentabilitet er fastjort
 
     * På **Teamscorecard** fokuseres der på de fem lederes præstation og deres forretningsbøger.
     * Med **Branchemargenanalyse** kan man analysere rentabiliteten sammenlignet med, hvad der sker i hele branchen.
-    * Med **Direktørscorecard** får man et overblik over hver leder formateret til at blive vist i Cortana.
+    * Med **Direktørscorecard** får man en oversigt over hver leder på et brugerdefineret format af sidestørrelsen.
 
 ### <a name="team-scorecard-page"></a>Siden Teamscorecard
 ![Rapportsiden Teamscorecard](media/sample-customer-profitability/customer2.png)
@@ -170,7 +170,7 @@ Denne rapportside indeholder et andet udsnit af dataene. Den ser på bruttoavanc
    * Valery, som kun har ansvaret for et enkelt produkt, arbejder i kun fem branchesegmenter. Valerys indvirkning er sæsonafhængig, men leverer altid en stor boble, hvilket viser, at hun har en stor indvirkning på virksomhedens bundlinje. Er branchesegmenterne forklaringen på den negative præstation?
 
 ### <a name="executive-scorecard"></a>Chefscorecard
-Denne side er formateret som en Cortana-svarside. Du kan finde flere oplysninger i [Opret et brugerdefineret svarside til Cortana](service-cortana-answer-cards.md).
+Denne side har et brugerdefineret format af sidestørrelsen.
 
 ## <a name="dig-into-the-data-by-asking-questions-with-qa"></a>Grav dybere ned i dataene ved at stille spørgsmål med spørgsmål og svar
 I forhold til vores analyse kan det være nyttigt at få fastlagt, hvilken branche der genererer den største omsætning for Valery. Lad os bruge spørgsmål og svar.

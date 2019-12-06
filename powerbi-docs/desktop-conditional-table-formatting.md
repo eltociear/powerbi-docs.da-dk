@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b715cd42ea221f62258b66eee71b6525b2015ae1
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: d28028c7b75bedae958df77c743c52b44c4437d9
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128162"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311736"
 ---
 # <a name="conditional-formatting-in-tables"></a>Betinget formatering af tabeller 
 Med betinget formatering af tabeller kan du angive brugerdefinerede farver for celler baseret på celleværdier eller baseret på andre værdier eller felter, og du kan bruge gradueringsfarver. Du kan også få vist celleværdier med datalinjer. 
@@ -139,7 +139,7 @@ Du kan bruge en hvilken som helst værdi, der er angivet i CSS-farvespektret på
 Der er et par overvejelser, du skal gøre, når du arbejder med betinget formatering af tabeller:
 
 * Betinget formatering anvendes kun på værdier i **Matrix**visualiseringen og ikke på nogen subtotaler eller samlede totaler. 
-* Betinget formatering anvendes ikke på rækken **Total**
+* Betinget formatering anvendes ikke på rækken **Total**.
 * Alle tabeller, der ikke har en gruppering, vises som en enkelt række, der ikke understøtter betinget formatering.
 * Hvis du bruger gradueringsformat med automatiske værdier for maksimum/minimum eller regelbaseret formatering med procentregler, kan den betingede formatering ikke anvendes, når dataene indeholder NaN-værdier. NaN står for Not a number (ikke et tal) og skyldes ofte en fejl med division med nul. Du kan bruge [funktionen DIVIDE() DAX](https://docs.microsoft.com/dax/divide-function-dax) til at undgå disse fejl.
 
