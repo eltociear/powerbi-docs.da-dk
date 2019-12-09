@@ -1,20 +1,20 @@
 ---
 title: Trinvis opdatering i Power BI Premium
 description: Få mere at vide om, hvordan du aktiverer meget store datasæt i Power BI Premium-tjenesten.
-author: mgblythe
+author: davidiseminger
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 08/21/2019
-ms.author: mblythe
+ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: cd8b4dcd87244f827fcabca630954353c9b6d8eb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cc2b005ef72700891a603162a281fbba23aa5120
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871879"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74699285"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Trinvis opdatering i Power BI Premium
 

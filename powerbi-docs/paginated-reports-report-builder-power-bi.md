@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/27/2019
-ms.openlocfilehash: 90bc46c484f659994c6a9500865803531fa3cdcc
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 35f50f57f3874bbb87fcdd5fbcf7da987fea1d1a
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565711"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831163"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Hvad er sideinddelte rapporter i Power BI Premium?
 
@@ -70,7 +70,7 @@ Du får vist din sideinddelte rapport i Power BI-tjenesten i en browser og i Pow
 
 Du kan nu oprette mailabonnementer på sideinddelte rapporter i Power BI-tjenesten for dig selv og andre. Generelt er processen den samme som at abonnere på rapporter og dashboards i Power BI-tjenesten. Under konfigurationen af abonnementer vælger du, hvor ofte du gerne vil modtage mails: dagligt, ugentligt eller hver time. Abonnementet indeholder en vedhæftet PDF-fil med hele outputtet for rapporten.
 
-Du kan finde flere oplysninger i artiklen [Meld dig selv og andre til et abonnement på sideinddelte rapporter i Power BI-tjenesten](paginated-reports-subscriptions.md). 
+Du kan finde flere oplysninger i artiklen [Meld dig selv og andre til et abonnement på sideinddelte rapporter i Power BI-tjenesten](consumer/paginated-reports-subscriptions.md). 
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 

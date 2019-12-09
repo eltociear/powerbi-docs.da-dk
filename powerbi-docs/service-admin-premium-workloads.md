@@ -1,20 +1,20 @@
 ---
 title: Sådan konfigurerer du arbejdsbelastninger i Power BI Premium
 description: Få mere at vide om, hvordan du konfigurerer arbejdsbelastninger i en Power BI Premium-kapacitet.
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 8240c4590a5e5bb892c4858ea74aa20e569ecb89
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7d94c5d3531576cd36688591b55aaf4a49de51aa
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73856823"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831287"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurer arbejdsbelastninger i en Premium-kapacitet
 
@@ -164,7 +164,7 @@ Med arbejdsbelastningen for sideinddelte rapporter kan du køre sideinddelte rap
 | **Maks. hukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse, som sideinddelte rapporter kan bruge i en kapacitet. |
 |  |  |
 
-Med sideinddelte rapporter kan der køres brugerdefineret kode, når en rapport gengives. Det kan f.eks. være at ændre tekstfarven dynamisk på baggrund af indhold, hvilket kan optage yderligere hukommelse. Power BI Premium kører sideinddelte rapporter i et afgrænset området i kapaciteten. Den angivne Maks. hukommelse bruges, *uanset om* arbejdsbelastningen er aktiv eller ej. Hvis du ændrer indstillingen Maks. hukommelse fra standardindstillingen, skal du sørge for, at du angiver den til at være lav nok til, at den ikke har negativ indvirkning på andre arbejdsbelastninger.
+Med sideinddelte rapporter kan der køres brugerdefineret kode, når en rapport gengives. Det kan f.eks. være at ændre tekstfarven dynamisk på baggrund af indhold, hvilket kan optage yderligere hukommelse. Power BI Premium kører sideinddelte rapporter i et afgrænset området i kapaciteten. 
 
 I nogle tilfælde kan arbejdsbelastningen for sideinddelte rapporter blive utilgængelig. I dette tilfælde vises der en fejltilstand for arbejdsbelastningen på administrationsportalen, og brugere får vist timeout for rapportgengivelse. Du kan afhjælpe dette problem ved at deaktivere arbejdsbelastningen og derefter aktivere den igen.
 

@@ -1,21 +1,21 @@
 ---
 title: Aktivér kryptering for SAP HANA
 description: Få mere at vide om, hvordan du krypterer forbindelsen, når du opretter forbindelse til en HANA-server fra Power BI ved hjælp af SAML-enkeltlogon.
-author: mgblythe
+author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 07/26/2019
-ms.author: mblythe
+ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e0d8787c81fa6730e7ce34a888a05be3a2ffe63f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ae57579c88924d4c34ec2c2a1d4aed5238dce64b
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877795"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74695835"
 ---
 # <a name="enable-encryption-for-sap-hana"></a>Aktivér kryptering for SAP HANA
 

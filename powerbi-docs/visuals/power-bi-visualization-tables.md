@@ -2,20 +2,20 @@
 title: Tabelvisualiseringer i Power BI-rapporter og -dashboards
 description: Selvstudium til at arbejde med tabelvisualiseringer i Power BI-rapporter og dashboards, herunder, hvordan du tilpasser kolonnebredder.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: willt
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 12/04/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2bb20b9ecc43e73e85d798416fe0ddaabb98e12b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6d2f1eea22f83d90501581be7d2e9b8230962835
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870797"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74830870"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tabeller i Power BI-rapporter og -dashboards
 
@@ -130,7 +130,7 @@ Med betinget formatering af tabeller kan du angive brugerdefinerede baggrundsfar
 
 1. I den viste dialogboks kan du angive farver for **Positiv streg** og **Negativ streg**, markere afkrydsningsfeltet **Vis kun streg** og foretage eventuelle andre ændringer.
 
-    ![afkrydsning af Vis kun streg](media/power-bi-visualization-tables/power-bi-data-bars.png)
+    ![afkrydsning af Vis kun streg](media/power-bi-visualization-tables/power-bi-data-bar.png)
 
 1. Vælg **OK**.
 

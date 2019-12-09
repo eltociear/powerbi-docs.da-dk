@@ -1,20 +1,20 @@
 ---
 title: Genstart en Power BI Premium-kapacitet
 description: Få mere at vide om, hvordan du genstarter en Power BI Premium-kapacitet for at løse problemer med ydeevnen.
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/17/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 758d630a06ed0194dec69013535df53f9a2825a6
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 34b409bc6c319594c6b8e79acd48e5ed0d674ced
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73873430"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74698457"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Genstart en Power BI Premium-kapacitet
 
