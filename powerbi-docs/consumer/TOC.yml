@@ -56,6 +56,8 @@
               href: end-user-interactions.md
             - name: Eksportér en rapport til PDF
               href: end-user-pdf.md
+            - name: Eksportér en rapport til PowerPoint
+              href: end-user-powerpoint.md
             - name: Føj et bogmærke til en rapport
               href: end-user-bookmarks.md
             - name: Sideinddelte rapporteri på Power BI
