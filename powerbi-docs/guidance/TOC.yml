@@ -32,10 +32,14 @@
           href: ../service-dataflows-best-practices.md
         - name: Vejledning til DirectQuery-model i Power BI Desktop
           href: directquery-model-guidance.md
+        - name: Henvisning til Power Query-forespørgsler
+          href: power-query-referenced-queries.md
         - name: Udvidelse af visualiseringer med værktøjstip til rapportsider
           href: report-page-tooltips.md
         - name: Detaljeadgang på rapportsiden
           href: report-drillthrough.md
+        - name: Vejledning til automatisk dato/klokkeslæt i Power BI Desktop
+          href: auto-date-time.md
     - name: Hvidbøger
       items:
         - name: Oversigt over whitepapers
