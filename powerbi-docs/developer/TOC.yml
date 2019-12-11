@@ -41,11 +41,11 @@
               href: visuals/advanced-edit-mode.md
         - name: Sådan gør du
           items:
-            - name: Få en visualisering certificeret
+            - name: Få en Power BI-visualisering certificeret
               href: power-bi-custom-visuals-certified.md
-            - name: Publicer brugerdefinerede visuals i AppSource
+            - name: Publicer Power BI-visualiseringer i AppSource
               href: office-store.md
-            - name: Brug R-drevne brugerdefinerede visuelle elementer i Power BI
+            - name: Brug R-drevne Power BI-visualiseringer i Power BI
               href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
             - name: Interaktioner mellem visualiseringer
               href: visuals/visuals-interactions.md
@@ -69,8 +69,6 @@
               href: visuals/high-contrast-support.md
             - name: Aktivér synkroniseringsudsnit
               href: visuals/enable-sync-slicers.md
-            - name: Tilføj understøttelse af detailudledning
-              href: visuals/drill-down-support.md
             - name: Fejlfind visualiseringer i Power BI
               href: power-bi-custom-visuals-troubleshoot.md
         - name: Reference
@@ -85,14 +83,8 @@
               href: visuals/event-service.md
             - name: Sortering
               href: visuals/sort-options.md
-            - name: Lokalisering
-              href: visuals/localization.md
-            - name: Hjælpeprogrammer til visualiseringer i Power BI
-              items:
-                - name: Interaktivitetshjælpeprogrammer
-                  href: visuals/utils-interactivity-selections.md
-                - name: Formateringshjælpeprogrammer
-                  href: visuals/utils-formatting.md
+            - name: Interaktivitetsutils
+              href: visuals/utils-interactivity-selections.md
         - name: Ressourcer
           items:
             - name: Udviklingscenter
