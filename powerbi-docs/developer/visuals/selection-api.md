@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 5f5e4769c750406a02ead656af551133fbceb738
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 94a1af90cc7ed08947f65f4ed0d55e981558d049
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061885"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696436"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Føj interaktivitet til visuals efter valg af Power BI-visuals
 
 Power BI giver mulighed for to måder at foretage interaktioner på mellem visuals – valg og filtrering. I eksemplet nedenfor kan du se, hvordan du vælger elementer i ét visual og underretter andre visuals i rapporten om den nye valgtilstand.
 
-`Selection` objektet svarer til grænsefladen:
+`Selection`-objekt svarer til grænsefladen:
 
 ```typescript
 export interface ISelectionId {
@@ -35,11 +35,11 @@ export interface ISelectionId {
 
 ## <a name="how-to-use-selectionmanager-to-select-data-points"></a>Sådan bruger du valgstyringen til at vælge datapunkter
 
-Visualværtsobjektet giver mulighed for at oprette en forekomst af valgstyringen. Valgstyringen er ansvarlig for at vælge, fjerne valg, vise genvejsmenuen, gemme de aktuelle valg og kontrollere valgtilstanden. Og valgstyringen har tilsvarende metoder til disse handlinger.
+Visualværtsobjektet omfatter metoden til oprettelse af en forekomst af valgstyringen. Valgstyringen er ansvarlig for at vælge, fjerne valg, vise genvejsmenuen, gemme de aktuelle valg og kontrollere valgtilstanden. Og valgstyringen har tilsvarende metoder til disse handlinger.
 
-### <a name="create-instance-of-selection-manager"></a>Opret en forekomst af valgstyringen
+### <a name="create-an-instance-of-the-selection-manager"></a>Opret en forekomst af valgstyringen
 
-Hvis du vil bruge valgstyringen, skal du oprette forekomsten af valgstyringen. Visuals opretter normalt en forekomst af valgstyringen i `constructor` for visualobjektet.
+Hvis du vil bruge valgstyringen, skal du oprette en forekomst af valgstyringen. Visuals opretter normalt en forekomst af valgstyringen i `constructor` for visualobjektet.
 
 ```typescript
 export class Visual implements IVisual {
@@ -56,7 +56,7 @@ export class Visual implements IVisual {
 }
 ```
 
-### <a name="create-instance-of-selection-builder"></a>Opret en forekomst af valggeneratoren
+### <a name="create-an-instance-of-the-selection-builder"></a>Opret en forekomst af valggeneratoren
 
 Når der oprettes en forekomst af valgstyringen, skal du oprette `selections` for hvert datapunkt i visual'et. Visualværtsobjektet omfatter metoden `createSelectionIdBuilder` til generering af valg for hvert datapunkt. Denne metode returnerer en forekomst af objektet med grænsefladen `powerbi.visuals.ISelectionIdBuilder`:
 
@@ -74,12 +74,12 @@ export interface ISelectionIdBuilder {
 Dette objekt har tilsvarende metoder til oprettelse af `selections` for forskellige typer tilknytninger af datavisninger.
 
 > [!NOTE]
-> Metoderne `withTable`, `withMatrixNode` blev introduceret i API 2.5.0 til Power BI-visuals.
-> Hvis du har brug for at bruge valg til tilknytning af tabel- eller matrixdatavisninger, skal du opdatere API-versionen til 2.5.0 eller højere.
+> Metoderne `withTable` og `withMatrixNode` blev introduceret i API 2.5.0 til Power BI-visuals.
+> Hvis du har brug for at bruge valg til tilknytninger af tabel- eller matrixdatavisninger, skal du opdatere API-versionen til 2.5.0 eller højere.
 
 ### <a name="create-selections-for-categorical-data-view-mapping"></a>Opret valg for tilknytning af datavisning efter kategori
 
-Lad os gennemgå, hvordan valg er repræsenteret i tilknytning af datavisning efter kategori i eksempeldatasæt:
+Lad os gennemgå, hvordan valg repræsenteres i tilknytning af kategoriske datavisninger i eksempeldatasæt:
 
 | Producent | Type | Værdi |
 | - | - | - |
@@ -108,7 +108,7 @@ Lad os gennemgå, hvordan valg er repræsenteret i tilknytning af datavisning ef
 | Toyota | Importeret bil | 20799 |
 | Toyota | Importeret lastbil | 23614 |
 
-Og visual'et bruger følgende tilknytning af datavisning:
+Og visual'et bruger følgende tilknytning af datavisninger:
 
 ```json
 {
@@ -155,11 +155,11 @@ Og visual'et bruger følgende tilknytning af datavisning:
 }
 ```
 
-I eksemplet er `Manafacturer` `columns`, og `Type` `rows`. Der er en serie, der er oprettet af grupperingsværdier, efter `rows` (`Type`).
+I eksemplet er `Manufacturer` `columns`, og `Type` `rows`. Der er en serie, der er oprettet af grupperingsværdier, efter `rows` (`Type`).
 
-Og visual'et skal også kunne oprette dataudsnit efter `Manafacturer` og `Type`.
+Og visual'et skal også kunne oprette dataudsnit efter `Manufacturer` og `Type`.
 
-Hvis en bruger f. eks. vælger `Chrysler` efter `Manafacturer`, skal andre visuals vise følgende data:
+Hvis en bruger f. eks. vælger `Chrysler` efter `Manufacturer`, skal andre visuals vise følgende data:
 
 | Producent | Type | Værdi |
 | - | - | - |
@@ -185,7 +185,7 @@ Du skal udfylde visualdatakurvene.
 
 ![Datakurve for visual'et med valg](media/visual-selections-databuckets.png)
 
-Der er `Manafacturer` som kategori (kolonner), `Type` som serier (rækker) og `Value` som `Values` for serierne.
+Der er `Manufacturer` som kategori (kolonner), `Type` som serier (rækker) og `Value` som `Values` for serierne.
 
 > [!NOTE]
 > `Values` er påkrævet til serier, da visual'et i henhold til tilknytningen af datavisningen forventer, at `Values` grupperes efter `Rows` data.
@@ -196,7 +196,7 @@ Der er `Manafacturer` som kategori (kolonner), `Type` som serier (rækker) og `V
 // categories
 const categories = dataView.categorical.categories;
 
-// create label for 'Manafacturer' column
+// create label for 'Manufacturer' column
 const p = document.createElement("p") as HTMLParagraphElement;
 p.innerText = categories[0].source.displayName.toString();
 this.target.appendChild(p);
@@ -209,7 +209,7 @@ for (let categoryIndex = 0; categoryIndex < categoriesCount; categoryIndex++) {
     const categoryValue: powerbi.PrimitiveValue = categories[0].values[categoryIndex];
 
     const categorySelectionId = this.host.createSelectionIdBuilder()
-        .withCategory(categories[0], categoryIndex) // we have only one category (only one `Manafacturer` column)
+        .withCategory(categories[0], categoryIndex) // we have only one category (only one `Manufacturer` column)
         .createSelectionId();
     this.dataPoints.push({
         value: categoryValue,
@@ -231,7 +231,7 @@ for (let categoryIndex = 0; categoryIndex < categoriesCount; categoryIndex++) {
 
 I eksempelkoden kan du se, at vi gentager alle kategorier. Og i hver gentagelse kalder vi `createSelectionIdBuilder` for at oprette det næste valg for hver kategori ved at kalde metoden `withCategory` for valggeneratoren. Metoden `createSelectionId` bruges som en slutmetode til at returnere det oprettede `selection`-objekt.
 
-I metoden `withCategory` overfører vi kolonnen for `category`, i eksemplet er det `Manafacturer` og indekset for kategorielementet.
+I metoden `withCategory` overfører vi kolonnen for `category`, i eksemplet er det `Manufacturer` og indekset for kategorielementet.
 
 #### <a name="create-selections-for-series"></a>Opret valg for serier
 
@@ -295,7 +295,7 @@ Eksempel på tilknytning af tabeldatavisninger
 }
 ```
 
-Hvis du vil oprette et valg for hver række i tilknytningen af tabeldatavisning, skal du kalde metoden `withTable` for valggeneratoren.
+Hvis du vil oprette et valg for hver række i tilknytningen af tabeldatavisninger, skal du kalde metoden `withTable` for valggeneratoren.
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -309,7 +309,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Den visuelle kode gentager rækkerne i tabellen og hver række kalder tabelmetoden `withTable`. Parametrene for metoden `withTable` er `table`-objektet og indekset for tabelrækken.
+Den visuelle kode gentager rækkerne i tabellen, og hver række kalder tabelmetoden `withTable`. Parametrene for metoden `withTable` er `table`-objektet og indekset for tabelrækken.
 
 ### <a name="create-selections-for-matrix-data-view-mapping"></a>Opret valg for tilknytning af matrixdatavisninger
 
@@ -361,9 +361,9 @@ interface ISelectionManager {
 }
 ```
 
-Du kan se, at `select` accepterer en række valg. Det betyder, at visual'et kan vælge flere datapunkter. Den anden parameter `multiSelect` er ansvarlig for at vælge flere. Hvis værdien er true, rydder Power BI ikke den tidligere valgtilstand og anvender det aktuelle valg, da det forrige valg ellers nulstilles.
+Du kan se, at `select` accepterer en række valg. Det betyder, at visual'et kan vælge flere datapunkter. Den anden parameter `multiSelect` er ansvarlig for valg af flere. Hvis værdien er true, rydder Power BI ikke den tidligere valgtilstand og anvender det aktuelle valg, da det forrige valg ellers nulstilles.
 
-Et typisk scenarie for brugen af `multiSelect`-håndtering af CTRL-knappens tilstand ved klikhændelser.
+Det typiske scenarie for brugen af `multiSelect`-håndtering af CTRL-knappens tilstand ved klikhændelser.
 
 ```typescript
 button.addEventListener("click", (mouseEvent) => {

@@ -1,23 +1,23 @@
 ---
-title: Udfyldte kort (Choropleths) i Power BI
-description: Dokumentation om oprettelse af udfyldte kort (Choropleths) i Power BI
+title: Kartogrammer (Choropleths) i Power BI
+description: Dokumentation om oprettelse af kartogrammer (Choropleths) i Power BI
 author: mihart
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/19/2019
+ms.date: 12/05/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9c35e97fba55230277f9f144a5155071656b6add
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e7fa98be039093015e1b19ba8bf20f1368658a43
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870953"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907794"
 ---
-# <a name="filled-maps-choropleths-in-power-bi"></a>Udfyldte kort (Choropleths) i Power BI
+# <a name="filled-maps-choropleth-in-power-bi"></a>Kartogrammer (Choropleths) i Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -46,12 +46,12 @@ Udfyldte kort er et godt valg:
 * For at få et overblik over distributionen på tværs af geografiske placeringer.
 
 ### <a name="prerequisites"></a>Forudsætninger
-I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
+I dette selvstudium bruges [PBIX-filen med eksemplet til Salg og marketing](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
 1. Vælg **Fil** > **Åbn** i det øverste venstre afsnit i menulinjen.
    
-2. Find din kopi af **PBIX-filen med eksemplet Detailhandelsanalyse**
+2. Find din kopi af **PBIX-filen med eksemplet til Salg og marketing**
 
-1. Åbn **PBIX-filen med eksemplet Detailhandelsanalyse** i rapportvisning ![ikon for skærmbillede af rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Åbn **PBIX-filen med eksemplet til Salg og marketing** i rapportvisning ![ikon for skærmbillede af rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
 1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
 
@@ -63,7 +63,7 @@ I denne video opretter Kim et grundlæggende kort og konverterer det til et udfy
    > 
    > 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
+[VIDEO https://www.youtube.com/embed/ajTPGNpthcg ]
 
 ### <a name="create-a-filled-map"></a>Opret et kartogram
 1. Fra ruden Fields skal du vælge feltet **Geo** \> **State**.    
@@ -84,27 +84,27 @@ I denne video opretter Kim et grundlæggende kort og konverterer det til et udfy
    ![Tilstandsrulleliste med Alle og AK ikke valgt](media/power-bi-visualization-filled-maps-choropleths/img005.png)
 4. Vælg ikonet med malerrullen for at åbne ruden Formatering, og vælg **Datafarver**.
 
-    ![Ruden Formatering med indstillingen Datafarver](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-color.png)
+    ![Ruden Formatering med indstillingen Datafarver](media/power-bi-visualization-filled-maps-choropleths/power-bi-colors-data.png)
 
 5. Klik på de tre lodrette prikker, og vælg **Betinget formatering**.
 
-    ![Knappen Betinget formatering af datafarver](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional-formatting.png)
+    ![Knappen Betinget formatering af datafarver](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional.png)
 
-6. Brug skærmen **Standardfarve - Datafarver** til at bestemme, hvordan dit kartogram skyggelægges. De indstillinger, der er tilgængelige for dig, omfatter, hvilket felt skyggen skal baseres på, og hvordan skyggen skal anvendes. I dette eksempel bruger vi feltet **SalesFact** > **Synspunkt** og angiver den laveste værdi for synspunkt som rød og den højeste værdi som grøn. Værdier, der ligger mellem den maksimale og den minimale, er være nuancer af rød og grøn. På illustration nederst på skærmen vises det farveområde, der bruges. 
+6. Brug skærmen **Standardfarve - Datafarver** til at bestemme, hvordan dit kartogram skyggelægges. De indstillinger, der er tilgængelige for dig, omfatter, hvilket felt skyggen skal baseres på, og hvordan skyggen skal anvendes. I dette eksempel bruger vi feltet **SalesFact** > **Synspunkt** og angiver den laveste værdi for synspunkt som orange og den højeste værdi som blå. Værdier, der ligger mellem den maksimale og den minimale, er nuancer af orange og blå. På illustration nederst på skærmen vises det farveområde, der bruges. 
 
-    ![Standardfarverude med Synspunkt valgt](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment.png)
+    ![Standardfarverude med Synspunkt valgt](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-field.png)
 
-7. Kartogrammet har grønne og røde skygger, hvor rød repræsenterer de lavere tillidstal, og grøn repræsenterer den højere, mere positive tillid.  For at få vist yderligere detaljer skal du trække et felt til brønden Værktøjstip.  Her har jeg tilføjet **Synspunktsforskydning** og fremhævet staten Idaho (ID) og kan se, at den pågældende synspunktforskydning er lav, på 6.
-   ![kartogram, der viser Idaho-værktøjstip](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map-idaho.png)
+7. Kartogrammet har grønne og røde skygger, hvor rød repræsenterer de lavere tillidstal, og grøn repræsenterer den højere, mere positive tillid.  For at få vist yderligere detaljer skal du trække et felt til brønden Værktøjstip.  Her har vi tilføjet **SalesFact** > **Synspunktforskydning**. Når du fremhæver staten Idaho (ID), ses det, at synspunktforskydningen er lav – 6.
+   ![kartogram, der viser Idaho-værktøjstip](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho-filled-map.png)
 
 10. [Gem rapporten](../service-report-save.md).
 
-Power BI giver dig masser af kontrol over dit kartograms udseende. Leg lidt med disse datafarvekontrolelementer, indtil du opnår det ønskede udseende. 
+I Power BI kan du i høj grad selv styre udseendet af dit kartogram. Leg lidt med disse datafarvekontrolelementer, indtil du får det ønskede udseende. 
 
 ## <a name="highlighting-and-cross-filtering"></a>Fremhævning og krydsfiltrering
 Du kan få mere at vide om brug af ruden Filters under [Føj et filter til en rapport](../power-bi-report-add-filter.md).
 
-Hvis du fremhæver en placering på et kartogram, krydsfiltreres de andre visualiseringer på rapportsiden ... og omvendt.
+Hvis du fremhæver en placering på et kartogram, krydsfiltreres de andre visualiseringer på rapportsiden... og omvendt.
 
 1. For at følge med skal du først gemme denne rapport ved at vælge **Filer > Gem**. 
 
@@ -118,10 +118,10 @@ Hvis du fremhæver en placering på et kartogram, krydsfiltreres de andre visual
 
    ![Kartogram tilføjet på siden Synspunkt](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. Vælg en stat på det udfyldte kort.  Dette krydsfremhæver og krydsfiltrerer de andre visualiseringer på siden. Hvis du f.eks. vælger **Texas**, kan du se, at synspunktet er 75, og at Texas ligger i det centrale distrikt nr. 23.   
-   ![Texas valgt](media/power-bi-visualization-filled-maps-choropleths/power-bi-texas.png)
+5. Vælg en stat på det udfyldte kort.  Dette krydsfremhæver og krydsfiltrerer de andre visualiseringer på siden. Hvis du f.eks. vælger **Texas**, krydsfiltreres kortene og det liggende søjlediagram fremhæves. Derudaf kan du se, at synspunktet er 75, og at Texas ligger i det centrale distrikt nr. 23.   
+   ![Texas valgt](media/power-bi-visualization-filled-maps-choropleths/power-bi-filter.png)
 2. Vælg et datapunkt i kurvediagrammet VanArsdel – tillid efter måned. Derved filtreres kartogrammet for at vise tillidsdata for VanArsdel og ikke deres konkurrenter.  
-   ![ny skygge](media/power-bi-visualization-filled-maps-choropleths/power-bi-yes.png)
+   ![ny skygge](media/power-bi-visualization-filled-maps-choropleths/power-bi-vanarsdel.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 Kortdata kan være tvetydige.  Der er f.eks. en by, der hedder Paris i Frankrig, men der er også en by, der hedder Paris i Texas. Dine geografiske data gemmes sikkert i separate kolonner – en kolonne til bynavne, en kolonne til statsnavne osv. – så Bing kan muligvis ikke regne ud, hvilket Paris du mener. Hvis dit datasæt allerede indeholder data om breddegrad og længdegrad, har Power BI særlige felter, der kan hjælpe med at gøre kortdataene entydige. Træk det felt, der indeholder dine data om breddegrad til området Visualizations \> Latitude.  Og gør det samme med dine længdegradsdata.    
@@ -130,7 +130,7 @@ Kortdata kan være tvetydige.  Der er f.eks. en by, der hedder Paris i Frankrig,
 
 Hvis du har rettigheder til at redigere datasættet i Power BI Desktop, kan du se denne video for at få hjælp til at korrigere tvetydighed på kortet.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Co2z9b-s_yM" frameborder="0" allowfullscreen></iframe>
+[VIDEO https://www.youtube.com/embed/Co2z9b-s_yM ]
 
 Hvis du ikke har adgang til data om breddegrad og længdegrad, men du har redigeringsadgang til datasættet, [skal du følge disse instruktioner for at opdatere datasættet](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 

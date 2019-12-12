@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1c1f049f8ba8c7808001b8566b1d10424a1b2ed1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3ec372a51177e5979cdfbca8408e11801aefb414
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878338"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791588"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Brug brugerdefinerede formatstrenge i Power BI Desktop
 
@@ -51,7 +51,6 @@ Følgende tabel viser understøttede **datosymboler**:
 | _mm_ | 01-12 (måned i året med foranstillet nul, med start fra januar = 01) |
 | _mmm_ | Viser forkortede månedsnavne (Hijri-månedsnavne har ingen forkortelser) |
 | _mmmm_ | Viser fulde månedsnavne |
-| _å_ | 1-366 (dag i året) |
 | _åå_ | 00-99 (de sidste to cifre i året) |
 | _åååå_ | 100-9999 (tre- eller firecifret år) |
 
@@ -121,7 +120,6 @@ I følgende tabel identificeres de tegn, du kan bruge til at oprette **brugerdef
 | mm | Vis måneden som et tal med et foranstillet nul (01-12). Hvis m kommer umiddelbart efter t eller tt, vises minuttallet i stedet for måneden. |
 | mmm | Vis måneden som en forkortelse (jan-dec). Lokaliseret. |
 | mmmm | Vis månedens fulde navn (januar-december). Lokaliseret. |
-| å | Vis dagen i året som et tal (1-366). |
 | åå | Vis året som et 2-cifret tal (00-99). |
 | åååå | Vis året som et 3- eller 4-cifret tal (100-9999). |
 | t | Vis timen som et tal uden et foranstillet nul (0-23). |
@@ -146,7 +144,7 @@ I følgende tabel identificeres de tegn, du kan bruge til at oprette **brugerdef
 | ( **/** ) | Datoseparator. For nogle landestandarder kan der bruges andre tegn til at repræsentere datoseparatoren. Datoseparatoren adskiller dag, måned og år, når datoværdierne formateres. Det faktiske tegn, der bruges som datoseparator i formateret output, bestemmes af systemindstillingerne. |
 | (**E- E+ e- e+** ) | Videnskabeligt format. Hvis formatudtrykket indeholder mindst én cifferpladsholder (**0** eller **#** ) til højre for E-, E+, e- eller e+, vises tallet i videnskabeligt format, og E eller e indsættes mellem tallet og dets eksponent. Antallet af cifferpladsholdere til højre bestemmer antallet af cifre i eksponenten. Brug E- eller e- til at placere et minustegn ved siden af negative eksponenter. Brug E+ eller e+ til at placere et minustegn ved siden af negative eksponenter og et plustegn ved siden af positive eksponenter. |
 | **- + $** ( ) | Viser et bogstaveligt tegn. Hvis du vil have vist et tegn, som ikke er angivet, skal du foranstille det med en omvendt skråstreg (\) eller omslutte det med dobbelte citationstegn (&quot; &quot;). |
-| (* *\** ) | Viser det næste tegn i formatstrengen. Foranstil det med en omvendt skråstreg for at vise et tegn, der har en særlig betydning som et bogstaveligt tegn (\). Selve den omvendte skråstreg vises ikke. Brug af en omvendt skråstreg er det samme som at omslutte det næste tegn med dobbelte citationstegn. Hvis du vil have vist en omvendt skråstreg, skal du bruge to omvendte skråstreger (\\). Eksempler på tegn, der ikke kan vises som bogstavelige tegn er tegn til dato- og klokkeslætsformatering (a, c, d, h, m, n, p, q, s, t, w, y, / og :), numeriske formateringstegn (#, 0, %, E, e, komma og punktum) og tegn til strengformatering (@, &amp;, \&lt;, \&gt;, og !). |
+| (* *\** ) | Viser det næste tegn i formatstrengen. Foranstil det med en omvendt skråstreg for at vise et tegn, der har en særlig betydning som et bogstaveligt tegn (\). Selve den omvendte skråstreg vises ikke. Brug af en omvendt skråstreg er det samme som at omslutte det næste tegn med dobbelte citationstegn. Hvis du vil have vist en omvendt skråstreg, skal du bruge to omvendte skråstreger (\\). Eksempler på tegn, der ikke kan vises som bogstavelige tegn er tegn til dato- og klokkeslætsformatering (a, c, d, h, m, n, p, q, s, t, w, / og :), numeriske formateringstegn (#, 0, %, E, e, komma og punktum) og tegn til strengformatering (@, &amp;, \&lt;, \&gt;, og !). |
 | (&quot;ABC&quot;) | Viser strengen inde i dobbelte citationstegn (&quot; &quot;). |
 
 

@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 8a9218085b0da655d1ce4b3ece0b2666c4826c86
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: e2587140d5436552e26be90c67eb5e6240bf6a1d
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061862"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696134"
 ---
 # <a name="microsoft-power-bi-visuals-interactivity-utils"></a>Interaktivitetsutils til Microsoft Power BI-visuals
 
-Interaktivitetsutils er en række funktioner og klasser, der forenkler implementeringen af valg og filtrering i tværgående retning for brugerdefinerede visuals i Power BI.
+Interaktivitetsutils er en række funktioner og klasser, der forenkler implementeringen af krydsvalg og krydsfiltrering for brugerdefinerede visuals i Power BI.
 
 ## <a name="installation"></a>Installation
 
@@ -26,7 +26,7 @@ Interaktivitetsutils er en række funktioner og klasser, der forenkler implement
 > Hvis du fortsætter med at bruge den gamle version af powerbi-visuals-tools (et versionsnummer mindre end 3.x.x), skal du installere den nye version (3.x.x).
 
 > [!IMPORTANT]
-> De nye opdateringer af utils til interaktivitet understøtter kun den nyeste version af Tools. [Læs mere om, hvordan du opdaterer din visualkode, så den kan bruges sammen med de nyeste værktøjer](migrate-to-new-tools.md)
+> De nye opdateringer af interaktivitetsutils understøtter kun den nyeste version af Tools. [Læs mere om, hvordan du opdaterer din visualkode, så den kan bruges sammen med de nyeste værktøjer](migrate-to-new-tools.md)
 
 Hvis du vil installere pakken, skal du køre følgende kommando i mappen med din aktuelle brugerdefinerede visual:
 
@@ -126,8 +126,8 @@ export interface BaseBehaviorOptions<SelectableDataPointType extends BaseDataPoi
 }
 ```
 
-Definer klassen for `visual behaviour`. Den klasse, der er ansvarlig for håndtering af musehændelserne `click`, `contextmenu`.
-Når der bruges klik til dataelementer, kalder visual'et valghandleren for at vælge datapunkter. Eller rydde valget, hvis brugeren klikker på visual'ets baggrundselement. Og klassen har tilsvarende metoder: `bindClick`, `bindClearCatcher`, `bindContextMenu`.
+Definer en klasse for `visual behavior`. Den klasse, der er ansvarlig for håndtering af musehændelserne `click`, `contextmenu`.
+Når en bruger klikker på dataelementer, kalder visual'et valghandleren for at vælge datapunkter. Hvis brugeren klikker på baggrunds elementet i visual'et, kalder den clear-valghandleren. Og klassen har tilsvarende metoder: `bindClick`, `bindClearCatcher`, `bindContextMenu`.
 
 ```typescript
 export class Behavior<SelectableDataPointType extends BaseDataPoint> implements IInteractiveBehavior {
@@ -230,9 +230,9 @@ Interaktivitetsutils kalder `bindEvents`-metoder for at tildele funktioner til h
   }
 ```
 
-Den `renderSelection`-metode, der er ansvarlig for at opdatere elementers visualtilstand i diagrammet.
+Metoden `renderSelection` er ansvarlig for at opdatere elementers visualtilstand i diagrammet.
 
-Eksemplet på metoden `renderSelection` for implementering:
+Eksempel på metoden `renderSelection` for implementering:
 
 ```typescript
 public renderSelection(hasSelection: boolean): void {
@@ -259,9 +259,9 @@ this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
 
 * `selectionMerge` er et D3-valgobjekt, som repræsenterer alle elementer, der kan vælges, i visual'et.
 
-* `select(this.target)` er et D3-valgobjekt, som repræsenterer visual'ets DOm-hovedelementer.
+* `select(this.target)` er et D3-valgobjekt, som repræsenterer visual'ets DOM-hovedelementer.
 
-* `this.categories`-datapunkter med elementer, hvor grænsefladen er `VisualDataPoint` (eller `categories: VisualDataPoint[];`)
+* `this.categories` er datapunkter med elementer, hvor grænsefladen er `VisualDataPoint` (eller `categories: VisualDataPoint[];`)
 
 * `this.behavior` er en ny forekomst af `visual behavior`
 
@@ -278,7 +278,7 @@ this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
   }
   ```
 
-Nu er dit visual klar til handlervalg.
+Nu er dit visual klar til at håndtere valg.
 
 ## <a name="next-steps"></a>Næste trin
 

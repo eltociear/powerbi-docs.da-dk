@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: 2d8fc35383aa427d8e5c9fd37c6c35f4f3d0a6bb
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 0e1f3361abfc4f45f71edaf82a197cfa3ea8cad3
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565306"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74695421"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Selvstudium: Integrer Power BI-indhold i dit program for nationale cloudmiljøer
 
@@ -54,7 +54,7 @@ I denne artikel vises den kode, der bruges i [prøveappen App Owns Data](https:/
 * Government Community Cloud (GCC):
 
     > [!NOTE]
-    > Integration af Power BI-indhold fra en GCC (Government Community Cloud) kan kun udføres med en Office 356 SKU. GCC High-kunder kan bruge [Office 356 eller Azure SKU'er](embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365).
+    > Integration af Power BI-indhold fra en GCC (Government Community Cloud) kan kun udføres med en Office 356 SKU. Andre nationale cloudkunder kan bruge [Office 356 eller Azure SKU'er](embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365).
 
 1. Overskriv Cloud.config-filen med GCCCloud.config-indhold.
 

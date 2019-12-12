@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 10/31/2019
-ms.openlocfilehash: ed1a67168a386838049ec2ca047ec0cd971408fc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bf5cd8d8ae649071b3c9cc7243f87ac3cc316c3b
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880025"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74695354"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Fremhæv datapunkter i Power BI-visualiseringer
 
@@ -26,6 +26,9 @@ Hvis du angiver egenskaben `supportsHighlight` i `capabilities.json` til `true`,
 !["datavisning" understøtter fremhævning](./media/highlight-dataview-supports.png)
 
 I eksemplet vil du bemærke, at én søjle er markeret. Og det er den eneste værdi i den fremhævede matrix. Det er også vigtigt at bemærke, at der kan være flere markeringer og delvise fremhævninger. De fremhævede værdier præsenteres i datavisningen.
+
+> [!Note]
+> Tilknytning af tabeldatavisninger understøtter ikke fremhævningsfunktionen.
 
 ## <a name="highlight-data-points-with-categorical-data-view-mapping"></a>Fremhæv datapunkter med tilknytning af kategorisk datavisning
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ab84795ff5d140f23f19184bbc40e91133854f1f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 37cbea42d530f05df1d9f1003554680b80c5b5c3
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876728"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907935"
 ---
 # <a name="aggregations-in-power-bi-desktop"></a>Sammenlægninger i Power BI Desktop
 
@@ -29,7 +29,7 @@ Følgende liste indeholder fordele ved brug af **sammenlægninger**:
 * **Opnå balancerede arkitekturer** – tillad Power BI-cachen i hukommelsen til at håndtere aggregerede forespørgsler effektivt. Begræns mængden af forespørgsler, der sendes til datakilden i DirectQuery-tilstand, for at overholde grænserne for samtidighed. De forespørgsler, der kommer igennem, er ofte ufiltrerede forespørgsler på transaktionsniveau, som normalt håndteres godt af data warehouses og big data-systemer.
 
 ### <a name="table-level-storage"></a>Lagring på tabelniveau
-Lagring på tabelniveau bruges normalt sammen med sammenlægningsfunktionen. Du kan finde flere oplysninger i artiklen om [lagringstilstand i Power BI Desktop](desktop-storage-mode.md).
+Lagring på tabelniveau bruges normalt sammen med sammenlægningsfunktionen. Du finder flere oplysninger i artiklen om [lagringstilstand i Power BI Desktop](desktop-storage-mode.md).
 
 ### <a name="data-source-types"></a>Datakildetyper
 Sammenlægninger bruges sammen med datakilder, der repræsenterer dimensionelle modeller, f.eks. data warehouses, datacentre og Hadoop-baserede big data-kilder. Denne artikel beskriver de typiske modelleringsforskelle i Power BI for hver type datakilde.
@@ -44,7 +44,7 @@ Se den følgende model, som er hentet fra en enkelt datakilde. Lad os sige, at a
 
 ![tabeller i en model](media/desktop-aggregations/aggregations_02.jpg)
 
-I stedet opretter vi tabellen **Sales Agg** som en sammenlægningstabel. Den har højere kornethed end **Sales** og indeholder derfor langt færre rækker. Antallet af rækker skal svare til summen af **SalesAmount** grupperet efter **CustomerKey**, **DateKey** og **ProductSubcategoryKey**. I stedet for milliarder kan der være millioner af rækker, hvilket er meget nemmere at administrere.
+I stedet opretter vi tabellen **Sales Agg** som en sammenlægningstabel. Den har en højere kornethed end **Sales** og indeholder derfor langt færre rækker. Antallet af rækker skal svare til summen af **SalesAmount** grupperet efter **CustomerKey**, **DateKey** og **ProductSubcategoryKey**. I stedet for milliarder kan der være millioner af rækker, hvilket er meget nemmere at administrere.
 
 Lad os antage, at følgende dimensionstabeller er de oftest anvendte til forespørgslerne med høj forretningsværdi. De er de tabeller, der kan filtrere **Sales Agg** ved hjælp af *en-til-mange*-relationer (eller *mange-til-en*).
 
@@ -92,10 +92,10 @@ Det eneste tilfælde, hvor en relation *på tværs af kilder* anses for at være
 
 Se afsnittet herunder om sammenlægninger baseret på kolonner af typen Gruppér efter for at få mere at vide om sammenlægningsforekomster *på tværs af kilder*, der ikke er afhængige af relationer.
 
-### <a name="aggregation-tables-are-not-addressable"></a>Sammenlægningstabeller er ikke adresserbare
-Brugere med skrivebeskyttet adgang til datasættet kan ikke forespørge på sammenlægningstabeller. Dette forhindrer sikkerhedsproblemer, når de bruges sammen med sikkerhed på rækkeniveau. Brugere og forespørgsler refererer til tabellen med detaljer, ikke sammenlægningstabellen. De behøver ikke vide, at sammenlægningstabellen eksisterer.
+### <a name="aggregation-tables-arent-addressable"></a>Sammenlægningstabeller er ikke adresserbare
+Brugere med skrivebeskyttet adgang til datasættet kan ikke forespørge sammenlægningstabeller. Dette forhindrer sikkerhedsproblemer, når de bruges sammen med sikkerhed på rækkeniveau. Brugere og forespørgsler refererer til tabellen med detaljer, ikke sammenlægningstabellen. De behøver ikke vide, at sammenlægningstabellen eksisterer.
 
-Derfor bør tabellen **Sales Agg** være skjult. Hvis den ikke er det, vil dialogboksen Administrer sammenlægninger angive den til at være skjult, når der klikkes på knappen Anvend alle.
+Derfor bør tabellen **Sales Agg** være skjult. Hvis den ikke er det, angiver dialogboksen Administrer sammenlægninger den som skjult, når der klikkes på knappen Anvend alle.
 
 ### <a name="manage-aggregations-dialog"></a>Dialogboksen Administrer sammenlægninger
 Lad os definere sammenlægningerne. Vælg genvejsmenuen **Administrer sammenlægninger** for tabellen **Sales Agg** ved at højreklikke på tabellen.
@@ -184,7 +184,7 @@ I visse tilfælde kan funktionen DISTINCTCOUNT drage fordel af sammenlægninger.
 ### <a name="rls"></a>Sikkerhed på rækkeniveau
 Sikkerhed på rækkeniveau bør filtrere både sammenlægningstabellen og detaljetabellen, så de fungerer korrekt. I henhold til eksemplet fungerer udtrykket for sikkerhed på rækkeniveau for tabellen **Geography**, fordi Geography er på filtreringssiden af relationen for både tabellen **Sales** og tabellen **Sales Agg**. Sikkerhed på rækkeniveau er anvendt for forespørgsler, der når sammenlægningsstabellen, og dem, der ikke gør.
 
-![roller til administration af sammenlægninger](media/desktop-aggregations/manage-roles.jpg)
+![roller til administration af sammenlægninger](media/desktop-aggregations/manage-roles.png)
 
 Et udtryk for sikkerhed på rækkeniveau for tabellen **Product** filtrerer kun tabellen **Sales** og ikke tabellen **Sales Agg**. Dette anbefales ikke. Forespørgsler, som indsendes af brugere, der tilgår datasættet ved hjælp af denne rolle, drager fordel af sammenlægningshits. Da sammenlægningstabellen er en anden repræsentation af de samme data i detaljetabellen, ville det være usikkert at svare på forespørgsler fra sammenlægningstabellen, fordi filtret for sikkerhed på rækkeniveau ikke kan anvendes.
 

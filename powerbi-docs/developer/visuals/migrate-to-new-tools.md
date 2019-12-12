@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: cc554bff1cbd248ccd69a80ee47b60af981cdab1
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 245475feeb43ee544117aaa54969f2de1e207cd5
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061816"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696276"
 ---
 # <a name="migrate-to-the-new-powerbi-visuals-tools-3xx"></a>Overfør til den nye powerbi-visuals-tools 3.x.x
 
@@ -39,7 +39,7 @@ Alle overførselstrin for den nye version af Power BI Visuals Tools beskrives ne
 
 ## <a name="backward-compatibility"></a>Bagudkompatibilitet
 
-Den version af Tools gemmer bagudkompatibilitet for gammel visualkodebase, men kan kræve yderligere ændringer for at indlæse eksterne biblioteker.
+Den nye version af Tools gemmer bagudkompatibilitet for gammel visualkodebase, men kan kræve yderligere ændringer for at indlæse eksterne biblioteker.
 
 De biblioteker, der understøtter modulsystemer, importeres som Webpack-moduler. Alle andre biblioteker og visualkildekode samles i ét modul.
 
@@ -79,9 +79,9 @@ Eksemplet på sampleBarChart-visual og tilsvarende [ændringer](https://github.c
 
 ## <a name="how-to-install-power-bi-custom-visuals-api"></a>Sådan installerer du API'en til brugerdefinerede visuals i Power BI
 
-Den nye version af powerbi-visual-tools omfatter ikke alle API-versioner indeni. I stedet for skal udvikleren installere en bestemt version af [`powerbi-visuals-api`](https://www.npmjs.com/package/powerbi-visuals-api)-pakken. Pakkeversionen stemmer overens med API-versionen for brugerdefinerede visuals i Power BI og omfatter alle API-typedefinitionerne til brugerdefinerede visuals i Power BI.
+Den nye version af powerbi-visual-tools indeholder ikke alle API-versioner. I stedet for skal udvikleren installere en bestemt version af [`powerbi-visuals-api`](https://www.npmjs.com/package/powerbi-visuals-api)-pakken. Pakkeversionen stemmer overens med API-versionen for brugerdefinerede visuals i Power BI og omfatter alle API-typedefinitionerne til brugerdefinerede visuals i Power BI.
 
-Føj `powerbi-visuals-api` til projektafhængighederne ved at udføre kommandoen `npm install --save-dev powerbi-visuals-api`.
+Føj `powerbi-visuals-api` til projektafhængigheder ved at udføre kommandoen `npm install --save-dev powerbi-visuals-api`.
 Og du skal fjerne linket til gamle API-typedefinitioner. Fordi typer fra `powerbi-visuals-api` inkluderes automatisk af Webpack. Tilsvarende ændringer findes i [denne](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/package.json#L14) linje af `package.json`.
 
 ## <a name="update-tsconfigjson"></a>Opdater `tsconfig.json`
@@ -95,7 +95,7 @@ Og du kan også ændre indstillingen `target` til `ES6` hvis du vil bruge modern
 
 ## <a name="update-custom-visuals-utils"></a>Opdater utils for brugerdefinerede visuals
 
-Hvis du bruger en [powerbi-visuals-utils](https://www.npmjs.com/search?q=powerbi-visuals-utils), skal du også opdatere dem til den seneste version.
+Hvis du bruger en powerbi-visuals-utils](https://www.npmjs.com/search?q=powerbi-visuals-utils), skal du også opdatere dem til den seneste version.
 
 Udfør kommandoen `npm install powerbi-visuals-utils-<UTILNAME> --save`. (F.eks. `npm install powerbi-visuals-utils-dataviewutils --save` ) for at få den nye version med eksterne TypeScript-moduler.
 
@@ -104,7 +104,7 @@ Denne visual bruger alle utils.
 
 ## <a name="remove-globalizejs-library"></a>Fjern biblioteket Globalize.js
 
-Ny version af [powerbi-visuals-utils-formattingutils@4.3](https://www.npmjs.com/package/powerbi-visuals-utils-formattingutils) omfatter som standard globalize.js.
+Den nye version af [powerbi-visuals-utils-formattingutils@4.3](https://www.npmjs.com/package/powerbi-visuals-utils-formattingutils) omfatter som standard globalize.js.
 Du behøver ikke at inkludere dette bibliotek manuelt i projektet.
 Alle påkrævede lokaliseringer føjes automatisk til den endelige pakke.
 
@@ -127,7 +127,7 @@ Importér bibliotekerne i kilden. Eksempel for `lodash-es`:
 import * as _ from "lodash-es";
 ```
 
-hvor `_` er en global variabel for biblioteket `lodash`.
+hvor `_` er den globale variabel for biblioteket `lodash`.
 
 ## <a name="changes-in-the-visuals-sources"></a>Ændringer i visualkilderne
 

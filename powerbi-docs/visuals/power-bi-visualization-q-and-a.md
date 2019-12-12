@@ -5,14 +5,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/19/2019
+ms.date: 11/19/2019
 ms.author: mohaali
-ms.openlocfilehash: 78a74d2d49ac9eabb7d63f467c9838d370d5c314
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9805b98df7f606e61412ca9dee7dc0467a1649a3
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870850"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791809"
 ---
 # <a name="introduction-to-power-bi-qa-visual"></a>Introduktion til visualiseringen til Spørgsmål og svar i Power BI
 
@@ -93,6 +93,10 @@ Hvis du er usikker på, hvilken type spørgsmål du skal stille, eller hvilken t
 6. Lad os ændre visualiseringen til et søjlediagram. 
 
     ![Visualisering til Spørgsmål og svar med "som et søjlediagram" føjet til spørgsmålet](media/power-bi-visualization-q-and-a/power-bi-specify-visual.png)
+
+7.  Føj flere visualiseringer til rapportsiden, og se, hvordan Spørgsmål og svar-visual'et interagerer med de andre visuals på siden. I dette eksempel har Spørgsmål og svar-visual'et krydsfilteret kurvediagrammet og krydsfremhævet det liggende søjlediagram.
+
+    ![Spørgsmål og svar-visual, hvor der er valgt én søjle, og virkningen på de andre tre visuals på rapportsiden](media/power-bi-visualization-q-and-a/power-bi-filters.png)
 
 ## <a name="format-and-customize-the-qa-visual"></a>Formatér og tilpas visualiseringen til Spørgsmål og svar
 Visualiseringen til Spørgsmål og svar kan tilpasses ved hjælp af formateringsruden og anvendelse af et tema. 

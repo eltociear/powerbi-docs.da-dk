@@ -1,21 +1,21 @@
 ---
 title: Power BI-administrationsportal
 description: Administrationsportalen giver adgang til lejeradministration af Power BI i virksomheden. Den indeholder elementer såsom metrikværdier, adgang til Microsoft 365 Administration og indstillinger.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/25/2019
-ms.author: mblythe
+ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: bb842128c26161d2f8da2961c6f014b9ecb45fc5
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 4776e458c778b6bd482106660ab9b8cd978699e5
+ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265899"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882886"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -48,7 +48,7 @@ Der er ni faner på portalen. Resten af denne artikel indeholder oplysninger om 
 * [Arbejdsområder](#workspaces)
 * [Brugerdefineret branding](#custom-branding)
 
-## <a name="usage-metrics"></a>Målepunkter for forbrug
+## <a name="usage-metrics"></a>Forbrugsdata
 
 Med **Forbrugsdata** kan du overvåge Power BI-forbruget i organisationen. Den giver dig også mulighed for at se, hvilke brugere og grupper, der er mest aktive i Power BI i virksomheden. 
 
@@ -208,7 +208,7 @@ På følgende billede ses menuen **Filer** for en rapport, når indstillingen **
 
 Brugere kan se forskellige indstillinger på brugergrænsefladen afhængigt af indstillingen **Publicer på internettet**.
 
-|Udvalgt |Aktiveret for hele organisationen |Deaktiveret for hele organisationen |Specifikke sikkerhedsgrupper   |
+|Funktion |Aktiveret for hele organisationen |Deaktiveret for hele organisationen |Specifikke sikkerhedsgrupper   |
 |---------|---------|---------|---------|
 |**Publicer på internettet** under rapportens menu **Filer**.|Aktiveret for alle|Ikke synligt for alle|Kun synligt for godkendte brugere eller grupper.|
 |**Håndter integreringskoder** under **Indstillinger**|Aktiveret for alle|Aktiveret for alle|Aktiveret for alle<br><br>Indstillingen * **Slet** er kun synlig for godkendte brugere eller grupper.<br>* **Hent koder** er aktiveret for alle.|
@@ -247,11 +247,14 @@ På følgende billede ses menuen **Filer** for en rapport, når indstillingen **
 ![Udskriv rapport](media/service-admin-portal/powerbi-admin-print-report.png)
 
 ### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Tillad, at eksterne brugere kan redigere og administrere indhold i organisationen
-Azure B2B-brugere kan redigere og administrere indhold i organisationen [Få mere at vide](service-admin-azure-ad-b2b.md)
+Azure Active Directory B2B-gæstebrugere kan redigere og administrere indhold i organisationen. [Få mere at vide](service-admin-azure-ad-b2b.md)
 
 På følgende billede vises indstillingen Tillad, at eksterne brugere kan redigere og administrere indhold i organisationen.
 
 ![Tillad, at eksterne brugere kan redigere og administrere indhold i organisationen](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
+> [!IMPORTANT]
+> Når du føjer en ekstern bruger til din Azure Active Directory-lejer (enten manuelt eller ved at dele en rapport med den pågældende bruger), er den pågældende brugerkonto nu synlig for interne konti. En intern bruger kan dele andre ting med den eksterne bruger, selvom den interne konto ikke har tilladelse til ekstern deling.
 
 ### <a name="email-subscriptions"></a>Mailabonnementer
 Brugere i organisationen kan oprette mailabonnementer. Få mere at vide om [abonnementer](service-report-subscribe.md).

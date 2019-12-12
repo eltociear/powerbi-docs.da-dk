@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9415365c3846329d5bcf707ec7f41d0bd2cc6f92
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a4d948e768682aab77708289320914ce3ef0fdc3
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871744"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74699082"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming i realtid i Power BI
 Med streaming i realtid med Power BI kan du streame data og opdatere dashboards i realtid. Alle visuelle elementer eller dashboards, der kan oprettes i Power BI, kan også oprettes til at vise og opdatere data og visuelle elementer i realtid. Enhederne og kilderne til streamingdata kan være sensorer på fabrikker, sociale medier, forbrugsdata for tjenester og alt andet, hvorfra tidsfølsomme data kan indsamles eller overføres.
 
-![](media/service-real-time-streaming/real-time-streaming_10.jpg)
+![Skærmbillede, der viser resultaterne af miljøsensorer i realtid.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Denne artikel viser dig, hvordan du konfigurerer streamingdatasæt i realtid i Power BI. Men før vi kommer dertil, er det vigtigt at forstå, hvilke typer datasæt i realtid der er udformet til at blive vist i felter (og dashboards), og hvordan de datasæt adskiller sig.
 
@@ -198,7 +198,7 @@ I dette eksempel bruger vi en offentligt tilgængelig stream fra **PubNub**. Her
    ![](media/service-real-time-streaming/real-time-streaming_9.png)
 5. Tilbage i dit Power BI-arbejdsområde skal du oprette et nyt dashboard og derefter tilføje et felt (se ovenstående trin, hvis det er nødvendigt). Denne gang har du et streamingdatasæt at arbejde med, når du opretter et felt og vælger **Brugerdefinerede streamingdata**. Prøv at lege lidt med det. Hvis du føjer *talfelter* til kurvediagrammer og derefter tilføjer andre felter, kan du få et dashboard i realtid, der ligner følgende:
    
-   ![](media/service-real-time-streaming/real-time-streaming_10.jpg)
+   ![Skærmbillede, der viser resultaterne af miljøsensorer i realtid.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Prøv det, og leg lidt med eksempeldatasættet. Opret derefter dit eget datasæt, og stream livedata til Power BI.
 

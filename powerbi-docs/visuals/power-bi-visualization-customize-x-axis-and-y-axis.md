@@ -7,16 +7,18 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/4/2019
+ms.date: 12/3/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 393f6f25fedddd9ff17d635ae67ce473ab57eea4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bafcf3a754c58a040595279f93d885e8f317195e
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880934"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791787"
 ---
+- hvor er bruttoavancelinjen for årene %? Jeg kan se flere liggende søjlediagrammer, men ikke flere linjer.
+
 # <a name="customize-x-axis-and-y-axis-properties"></a>Tilpas egenskaberne for x- og y-aksen
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
@@ -171,7 +173,7 @@ I nogle visualiseringer kan du med fordel bruge to Y-akser. Kombinationsdiagramm
 
 ### <a name="create-a-chart-with-two-y-axes"></a>Opret et diagram med to Y-akser
 
-1. Vælg søjlediagrammet, og skift det til et *kurvediagram og stablet søjlediagram*. 
+1. Vælg søjlediagrammet, og skift det til et *kurvediagram og stablet søjlediagram*. Denne type visuals understøtter en enkelt kurvediagramværdi og flere værdier for kolonner, der kan stables. 
 
     ![Skærmbillede af ruden Visualiseringer, hvor ikonet for kurvediagram og stablet søjlediagram er fremhævet.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo.png)
    
@@ -185,7 +187,7 @@ I nogle visualiseringer kan du med fordel bruge to Y-akser. Kombinationsdiagramm
 
    ![Kombinationsdiagram og ruden Format, hvor skriftstørrelsen er reduceret til 12](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-font-size.png)
 
-   Power BI opretter to Y-akser, så værdierne kan skaleres forskelligt. Den venstre akse måler dollar, og den højre akse måler procentdel.
+   Power BI opretter to Y-akser, så værdierne kan skaleres forskelligt. Den venstre akse måler salg i dollar, og den højre akse måler bruttoavanceprocent.
 
 ### <a name="format-the-second-y-axis"></a>Formatér den anden Y-akse
 Fordi vi startede med en visualisering med én formateret Y-akse, har Power BI oprettet den anden Y-akse med de samme indstillinger. Men det kan vi ændre. 

@@ -1,20 +1,20 @@
 ---
 title: Distribuer indhold til eksterne gæstebrugere med Azure AD B2B
 description: Power BI kan integreres med Azure Active Directory Business-til-business (Azure AD B2B) for at tillade sikker distribution af Power BI-indhold til gæstebrugere uden for organisationen.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: bcde2bc456ee48e8dc66d6c0ba6b17d79fbe43a8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c126b073ac80a470733d7d8dd2638da28a06b265
+ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858022"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882838"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B
 
@@ -30,7 +30,9 @@ Du kan også bruge funktionen [Tillad, at eksterne brugere kan redigere og admin
 
 ## <a name="who-can-you-invite"></a>Hvem kan du invitere?
 
-Du kan invitere gæstebrugere med en hvilken som helst mailadresse, f.eks. gmail.com, outlook.com eller hotmail.com. I Azure AD B2B kaldes disse adresser for *sociale identiteter*.
+Du kan invitere gæstebrugere med de fleste mailadresser, f.eks. gmail.com, outlook.com og hotmail.com. I Azure AD B2B kaldes disse adresser for *sociale identiteter*.
+
+Du kan ikke invitere brugere, der er knyttet til en offentlig Cloud, f. eks. [Power BI til US Government](service-govus-overview.md).
 
 ## <a name="invite-guest-users"></a>Inviter gæstebrugere
 

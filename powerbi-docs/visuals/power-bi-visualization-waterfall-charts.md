@@ -7,15 +7,15 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 12/5/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fedaa811c94a9e955d6ca10646bc546f60dc9b98
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6abca661a1553bfabc3da35fe714ff9bced5555a
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881959"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907614"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vandfaldsdiagrammer i Power BI
 
@@ -63,9 +63,11 @@ I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](https
 
 Du opretter et vandfaldsdiagram, der viser afvigelsen i salg (anslået salg i forhold til faktisk salg) pr. måned.
 
+### <a name="build-the-waterfall-chart"></a>Byg vandfaldsdiagrammet
+
 1. I ruden **Felter** skal du markere **Sales** > **Total Sales Variance**.
 
-   ![Skærmbillede af Salg > Varians for samlet salg og den visualisering, der oprettes.](media/power-bi-visualization-waterfall-charts/power-bi-first-value.png)
+   ![Skærmbillede af Salg > Varians for samlet salg og den visualisering, der oprettes.](media/power-bi-visualization-waterfall-charts/power-bi-bar.png)
 
 1. Vælg ikonet for vandfaldsdiagram ![Skærmbillede af ikonet for vandfaldsdiagram](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png)
 
@@ -73,41 +75,45 @@ Du opretter et vandfaldsdiagram, der viser afvigelsen i salg (anslået salg i fo
 
 1. Vælg **Time** > **FiscalMonths** for at føje det til området **Category**.
 
-    ![Vandfaldsdiagram](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
+    ![Vandfaldsdiagram](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-month.png)
 
-1. Kontrollér, at Power BI har sorteret vandfaldsdiagrammet kronologisk. Vælg **Flere indstillinger** (...) i øverste højre hjørne af diagrammet.
+### <a name="sort-the-waterfall-chart"></a>Sortér vandfaldsdiagrammet
 
-    I dette eksempel vælger vi **Sortér stigende**
+1. Kontrollér, at Power BI har sorteret vandfaldsdiagrammet kronologisk efter måned. Vælg **Flere indstillinger** (...) i øverste højre hjørne af diagrammet.
 
-    Kontrollér, at der er en gul indikator til venstre for **Sortér stigende**. Dette angiver, at din valgte indstilling anvendes.
+    I dette eksempel skal du vælge **Sortér efter** og **FiscalMonth**. En gul indikator ud for dit valg angiver, hvornår valgindstillingen anvendes.
 
-    ![Vælg Sortér efter > Stigende rækkefølge](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
+    ![Vælg Sortér efter > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscalmonth.png)
+    
+    Hvis du vil have vist måneder i kronologisk rækkefølge, skal du vælge **Sortér stigende**. Kontrollér, som i det foregående trin, at der er en gul indikator til venstre for **Sortér stigende**. Dette angiver, at din valgte indstilling anvendes.
 
-    Derefter klikker vi på **Sortér efter** og vælger **FiscalMonth** Som i det tidligere trin vises der en gul indikator ud for dit valg, hvilket angiver, at dit valg af indstillinger anvendes.
+    ![Vælg Sortér efter > Stigende rækkefølge](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-ascending.png)
 
-    ![Vælg Sortér efter > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscal-month.png)
+    
 
-    Du kan også kigge på værdierne for X-aksen og se, at de vises i rækkefølge fra **Jan** til **Aug**.
+    Bemærk, at dit diagram er sorteret fra januar til august for FiscalMonth.  
 
-    Se lidt nærmere på, hvad der bidrager mest til ændringerne måned for måned.
+### <a name="explore-the-waterfall-chart"></a>Udforsk vandfaldsdiagrammet
+
+Se lidt nærmere på, hvad der bidrager mest til ændringerne måned for måned.
 
 1.  Vælg **Butik** > **Område**, hvorved **Område** føjes til bucket'en **Opdeling**.
 
     ![Viser Store i opdelingsbucket](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 
-    Som standard tilføjes de øverste fem bidragydere for stigninger eller fald pr. måned i Power BI. På nedenstående billede er vores visualiseringsrude udvidet, så den indeholder flere data. 
+    Power BI bruger værdien i **Opdeling** til at føje yderligere data til visualiseringen. De fem største bidragydere føjes til stigninger eller fald for hver regnskabsmåned. Det betyder f. eks., at der nu er seks datapunkter i stedet for kun én i februar.  
 
-    ![Viser Store i opdelingsbucket](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-initial.png)
+    ![Viser Store i opdelingsbucket](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-default.png)
 
-    Du er kun interesseret i de øverste to bidragydere.
+    Lad os antage, at du kun er interesseret i de to største bidragydere.
 
 1. I ruden **Formatér** skal du vælge **Breakdown** og angive **Max breakdowns** til **2**.
 
-    ![Formatér > Breakdown](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
+    ![Formatér > Breakdown](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png)
 
     En hurtig gennemgang viser, at områderne Ohio og Pennsylvania er de største bidragydere til bevægelser, både negative og positive, i vandfaldsdiagrammet.
 
-    ![vandfaldsdiagram](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
+    ![vandfaldsdiagram](media/power-bi-visualization-waterfall-charts/power-bi-axis-waterfall.png)
 
 ## <a name="next-steps"></a>Næste trin
 

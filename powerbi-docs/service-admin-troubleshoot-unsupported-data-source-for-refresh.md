@@ -1,21 +1,21 @@
 ---
 title: Fejlfinding af ikke-understøttet datakilde til opdatering
 description: Fejlfinding af ikke-understøttet datakilde til opdatering
-author: mgblythe
+author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
 ms.date: 12/06/2017
-ms.author: mblythe
+ms.author: maggies
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: b44dbc06c15a576174277695583f3afebb0f298a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e3fe8626001972acc0b7555f37844b5abb62753b
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73856254"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791990"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Fejlfinding af ikke-understøttet datakilde til opdatering
 Du får muligvis vist en fejl, når du forsøger at konfigurere et datasæt til planlagt opdatering.
@@ -35,7 +35,7 @@ Hvis du ikke er sikker på, hvilken datakilde, der er blevet brugt, kan du finde
    ![Avanceret editor](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-advanced-editor.png)
 4. Notér dig den provider, der er angivet som kilde.  I dette eksempel er ActiveDirectory provider.  
    ![Datakildeprovider](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-provider.png)
-5. Sammenlign provideren med listen over understøttede datakilder, som findes i [Opdater data i Power BI](refresh-data.md).  Her vil du se, at Active Directory ikke er en understøttet datakilde til opdatering.  
+5. Sammenlign provideren med listen over understøttede datakilder, som findes i [Power BI-datakilder](power-bi-data-sources.md).
 
 ## <a name="next-steps"></a>Næste trin
 [Dataopdatering](refresh-data.md)  

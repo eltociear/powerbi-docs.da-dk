@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b947fe3f2faf423a7b2ced4d0032578ded015f7a
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: efbeda396217c1a715f9a5d7ae4827c5f8d09a25
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099875"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74698986"
 ---
 # <a name="r-visuals-in-power-bi"></a>R-visuals i Power BI
 Visuelle R-elementer kan i øjeblikket kun oprettes i **Power BI Desktop** og derefter publiceres på Power BI-tjenesten. Du kan finde flere oplysninger om oprettelse af R-visuals under [Opret i Power BI-visuals ved hjælp af R](../desktop-r-visuals.md).
@@ -94,6 +94,11 @@ Visuelle R-elementer i Power BI-tjenesten har nogle få begrænsninger:
 * Visuelle R-elementer vises ikke, når du bruger **Publicer på internettet**.
 * Visuelle R-elementer udskrives i øjeblikket ikke sammen med dashboard- og rapportudskrivning
 * Visuelle R-elementer understøttes ikke i øjeblikket i DirectQuery-tilstand for Analysis Services
+* Visuelle R-elementer indeholder muligheden for at konvertere tekstmærkater til grafiske elementer. Det kræver følgende ekstra trin at gøre det i Power BI-tjenesten:
+  
+  * Tilføj derefter følgende linje i begyndelsen af R-scriptet:
+    
+        powerbi_rEnableShowText =  1
 * Kinesiske, japanske og koreanske skrifttyper kræver, at alle yderligere følgende trin fungerer korrekt i Power BI-tjenesten:
   
   * Først skal du installere R-pakken *showtext* og alle dens afhængigheder. Du kan gøre det ved at køre følgende script:
