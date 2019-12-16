@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/06/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e09b3f8579b65bc242cda1dbdb54f187ab6b47d0
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.openlocfilehash: 622273ed4c8d6f2faee46d3cc84d981f86bd8c92
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74791614"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958396"
 ---
 # <a name="configure-scheduled-refresh"></a>Konfigurer planlagt opdatering
 
@@ -75,7 +75,7 @@ I afsnittet **Planlagt opdatering** angiver du frekvensen og tidspunktet for opd
 Du skal indstille skyderen **Hold dine data opdateret** til **Ja** for at konfigurere indstillingerne.
 
 > [!NOTE]
-> Power BI-tjenesten stiler efter at starte opdateringen af data inden for **15 minutter** efter dit planlagte opdateringstidspunkt.
+> Målet er at starte opdateringen inden for 15 minutter fra det planlagte tidspunkt, men der kan opstå en forsinkelse på op til én time, hvis tjenesten ikke kan tildele de påkrævede ressourcer hurtigere.
 
 ![Dialogboksen Planlagt opdatering](media/refresh-scheduled-refresh/scheduled-refresh.png)
 
