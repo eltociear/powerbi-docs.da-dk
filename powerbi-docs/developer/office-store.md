@@ -1,138 +1,106 @@
 ---
-title: Publicer Power BI-visualiseringer i AppSource
-description: Få mere at vide om, hvordan du kan udgive din brugerdefinerede visual i AppSource, så andre kan finde og bruge den.
+title: Publicer Power BI-visualiseringer i Partnercenter
+description: Få mere at vide om, hvordan du publicerer din brugerdefinerede visualisering i Partnercenter, så andre kan finde og bruge den
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 3/27/2019
-ms.openlocfilehash: f8ca6aae805ae3184a1c54d8707fcb9a3cfd32e7
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.date: 12/02/2019
+ms.openlocfilehash: ec1bd8666a9d76b4ccfa7793415488f85a24dfdb
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265259"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999884"
 ---
-# <a name="publish-power-bi-visuals-to-appsource"></a>Publicer Power BI-visualiseringer i AppSource
+# <a name="publish-power-bi-visuals-to-partner-center"></a>Publicer Power BI-visualiseringer i Partnercenter
 
-Få mere at vide om, hvordan du kan udgive din brugerdefinerede visual i AppSource, så andre kan finde og bruge den.
-
-Når du har oprettet en brugerdefineret visual, kan du udgive den i AppSource, så andre kan finde og bruge den. Det kræver nogle forberedelser, før du kan gøre det. Du kan finde flere oplysninger om, hvordan du opretter en brugerdefineret visualisering, under [Udvikling af en brugerdefineret visualisering i Power BI](visuals/custom-visual-develop-tutorial.md).
-
-   ![Office Store](media/office-store/appsource-01.png)
+Når du har oprettet en Power BI-visualisering, kan du publicere den i AppSource, så andre kan finde og bruge den. Du kan finde flere oplysninger om, hvordan du opretter en Power BI-visualisering, under [Udvikling af en Power BI-visualisering](visuals/custom-visual-develop-tutorial.md).
 
 ## <a name="what-is-appsource"></a>Hvad er AppSource?
 
-**AppSource** er det sted, hvor du finder SaaS-apps og -tilføjelsesprogrammer til dine Microsoft-produkter og -tjenester. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) giver millioner af brugere af Office 365, Dynamics 365 m.fl. adgang til løsninger, der kan hjælpe dem med at arbejde mere effektivt, med større indsigt eller smukkere end før.
+[AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) er det sted, hvor du finder SaaS-programmer og -tilføjelsesprogrammer til dine Microsoft-produkter og -tjenester.
 
-## <a name="preparing-to-submit-your-custom-visual"></a>Forberedelser, inden du indsender en brugerdefineret visualisering
+![Office Store](media/office-store/appsource-01.png)
 
-Når du er færdig med at læse vores [retningslinjer for Power BI-visuals](guidelines-powerbi-visuals.md) samt kode og [teste den brugerdefinerede visual](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md), og du har føjet den til en PBIVIZ-fil, skal du sørge for at have følgende klar, når du vil indsende den.
+## <a name="preparing-to-submit-your-power-bi-visual"></a>Forberedelse til indsendelse af Power BI-visualisering
+
+Før du indsender en Power BI-visualisering til AppSource, skal du sørge for, at du har læst [retningslinjerne for Power BI-visualiseringer](guidelines-powerbi-visuals.md) og [testet din brugerdefinerede visualisering](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md).
+
+Når du er klar til at indsende din Power BI-visualisering, skal du bekræfte, at visualiseringen overholder alle de krav, der er angivet nedenfor.
 
 | Element | Påkrævet | Beskrivelse |
 | --- | --- | --- |
-| Pbiviz-pakken indeholder alle de påkrævede metadata |Ja |Navn på visualisering<br>Vist navn<br>GUID<br>Version<br>Beskrivelse<br>Forfatternavn og mailadresse |
-| .pbix-eksempelrapportfil |Ja |Når du fremviser din visualisering, bør du vise brugerne, hvad den kan bruges til. Du bør lægge vægt på den værdi, som visualiseringen kan tilføre brugerne, og du bør give eksempler på, hvordan de kan bruge den, formateringsmuligheder osv. Du kan også tilføj en side med *"gode råd"* i slutningen, f.eks. tip og tricks og ting, de bør undgå.<br>.pbix-eksempelrapportfil skal fungere offline uden nogen ekstern forbindelse |
-| Ikon |Ja |Du bør medtage logoet for den brugerdefinerede visualisering, som vil blive vist i appbutikken. Formatet kan være .png, .jpg, .jpeg eller .gif. Den skal være nøjagtigt 300 pixel (bredde) x 300 pixel (højde). **Vigtigt!** Gennemse den [korte guide](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) omhyggeligt, inden du sender ikonet. |
-| Skærmbilleder |Ja |Du skal tilføje mindst ét skærmbillede. Formatet kan være .png, .jpg, .jpeg eller .gif. Den skal være nøjagtigt 1366 pixel (bredde) x 768 pixel (højde). Filstørrelsen må ikke overstige 1024 KB. *Effekten vil blive større, hvis du tilføjer tekstbobler for at fremhæve fordelene ved de vigtigste funktioner, som vises på hvert skærmbillede.* |
-| Supportlink |Ja |Angiv URL-adressen for at hjælpe de kunder, der har problemer med visualiseringen. Dette link er angivet som del af din sælgerdashboardliste og er synlig for brugerne, når de får adgang til listen over dine visualiseringer på AppSource. URL-adressen skal indeholde https:// eller https://. |
-| Link til dokument om beskyttelse af personlige oplysninger |Ja |Angiv et link til politikken om beskyttelse af personlige oplysninger for de kunder, der bruger din visualisering. Dette link er angivet som del af din sælgerdashboardliste og er synlig for brugerne, når de får adgang til listen over dine visualiseringer på AppSource. Linket skal indeholde https:// eller https://. |
-| Slutbrugerlicensaftale (EULA) |Ja |Du skal overføre en fil med slutbrugerlicensaftalen. Det kan enten være din egen slutbrugerlicensaftale, eller du kan bruge den standardslutbrugerlicensaftale, der findes i Office Store for Power BI-visualiseringer. Hvis du vil bruge standardslutbrugerlicensaftalen, skal du indsætte følgende URL-adresse i dialogboksen "Slutbrugerlicensaftale" til filupload i sælgerdashboardet: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). Filen er evt. på engelsk. |
-| Videolink |Nej |Det vil være en god idé at angive et link til en video om visualiseringen, da det kan øge brugernes interesse for den. URL-adressen skal indeholde https:// eller https://. |
-| GitHub-lager |Nej |Det foretrækkes, at du har et gyldigt og offentligt link til et [GitHub](https://www.github.com)-lager med kilderne til visualiseringen og eksempeldata, så andre udviklere kan give feedback og foreslå forbedringer til din kode. |
+| Pbiviz-pakke |Ja |Pak din Power BI-visualisering i en Pbiviz-pakke, der indeholder alle de påkrævede metadata.<br>Navn på visualisering<br>Vist navn<br>GUID<br>Version<br>Beskrivelse<br>Forfatternavn og mailadresse |
+| .pbix-eksempelrapportfil |Ja |Når du fremviser din visualisering, bør du hjælpe brugerne med at blive bekendte med visualiseringen. Fremhæv den værdi, som visualiseringen kan tilføre brugerne, og giv eksempler på brug og formateringsmuligheder. Du kan også tilføje en side med *"tip"* i slutningen, f.eks. tip og tricks samt ting, der bør undgås.<br>.pbix-eksempelrapportfilen skal fungere offline uden nogen eksterne forbindelser. |
+| Ikon |Ja |Du bør medtage logoet for den brugerdefinerede visualisering, som vil blive vist i appbutikken. Formatet kan være .png, .jpg, .jpeg eller .gif. Den skal være nøjagtigt 300 pixel (bredde) x 300 pixel (højde).<BR>**Vigtigt!** Gennemse [vejledningen til AppSource-lageret for billeder](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) omhyggeligt, inden du indsender ikonet. |
+| Skærmbilleder |Ja |Angiv mindst ét skærmbillede. Formatet kan være .png, .jpg, .jpeg eller .gif. Dimensionerne skal være nøjagtigt 1366 px (bredde) gange 768 px (højde). Filens størrelse må ikke være større end 1024 kb.<br>Effekten vil være større, hvis du tilføjer tekstbobler for at fremhæve fordelene ved de vigtigste funktioner, som vises på hvert skærmbillede. |
+| Supportlink |Ja |Angiv en URL-adresse til support til dine kunder. Dette link angives som en del af dine poster på Sælgerdashboard og er synligt for brugerne, når de får adgang til dine visualiseringsposter i AppSource. URL-adressen skal indeholde https:// eller https://. |
+| Link til dokument om beskyttelse af personlige oplysninger |Ja |Angiv et link til politikken for beskyttelse af personlige oplysninger for visualiseringen. Dette link angives som en del af dine poster på Sælgerdashboard og er synligt for brugerne, når de får adgang til dine visualiseringsposter i AppSource. Linket skal indeholde https:// eller https://. |
+| Slutbrugerlicensaftale (EULA) |Ja |Du skal uploade en fil med slutbrugerlicensaftalen. Det kan enten være din egen slutbrugerlicensaftale, eller du kan bruge den standardslutbrugerlicensaftale, der findes i Office Store, til Power BI-visualiseringer. Hvis du vil bruge standardslutbrugerlicensaftalen, skal du indsætte følgende URL-adresse i dialogboksen "Slutbrugerlicensaftale" til filupload på Sælgerdashboard. [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). Filen er evt. på engelsk. |
+| Videolink |Nej |Du kan øge brugernes interesse for din brugerdefinerede visualisering ved at angive et link til en video om visualiseringen. URL-adressen skal indeholde https:// eller https://. |
+| GitHub-lager |Nej |Del et offentligt link til et [GitHub](https://www.github.com)-lager med kilder til dine Power BI-visualiseringer og eksempeldata. Det giver andre udviklere mulighed for at angive feedback og foreslå forbedringer af din kode. |
 
-## <a name="submitting-to-power-bi"></a>Indsend til Power BI
+## <a name="getting-an-app-package-xml"></a>Sådan får du en XML-programpakke
 
-Du skal som det første sende en mail til det Power BI-team, der tager sig af Power BI-visualiseringer. Du kan sende en mail til [pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com).
+Du skal bruge en XML-programpakke fra Power BI-teamet for at indsende en Power BI-visualisering. Du få en XML-programpakke ved at sende en mail til indsendelsesteamet for Power BI-visualiseringer ([pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com)).
 
-> [!IMPORTANT]
-> Du skal udfylde følgende felter i filen pbiviz.json: "beskrivelse", "support-URL-adresse", "forfatter", "navn" og "mail", før du opretter pakken .pbiviz.
+Før du opretter **pbiviz**-pakken, skal du udfylde følgende felter i **pbiviz.json**-filen:
+* beskrivelse
+* supportUrl
+* forfatter
+* navn
+* mail
 
-Vedhæft **.pbiviz-filen** og **.pbix-eksempelrapportfilen** i din mail. Power BI-teamet sender instruktioner og en XML-fil til app-pakken, som du skal overføre. Du skal bruge denne XML-app-pakke for at kunne indsende visualiseringen via Office Developer Center.
+Vedhæft **pbiviz-filen** og **pbix-eksempelrapportfilen** i din mail. Power BI-teamet sender instruktioner og en XML-fil til programpakken, som du skal uploade. Du skal bruge denne XML-programpakke for at kunne indsende visualiseringen via Office Developer Center.
 
 > [!NOTE]
-> Det vil tage yderligere to uger, før en opdatering til eksisterende visuals når produktionsmiljøet, efter at den er blevet godkendt i butikken. Det forbedrer kvaliteten og sikrer, at eksisterende rapporter ikke ødelægges.
+> Det vil tage yderligere to uger, før en opdatering til eksisterende visualiseringer når produktionsmiljøet, efter at den er blevet godkendt i butikken. Det forbedrer kvaliteten og sikrer, at eksisterende rapporter ikke ødelægges.
 
 ## <a name="submitting-to-appsource"></a>Indsend til AppSource
 
-Når du har fået XML-app-pakken fra Power BI-teamet, skal du navigere til [Developer Center](https://sellerdashboard.microsoft.com/Application/Summary) for at indsende din visual til AppSource.
+Hvis du vil indsende din Power BI visualisering til AppSource, skal du have en programpakke fra Power BI-teamet og derefter indsende den til Partnercenter. 
 
-> [!NOTE]
-> Du skal have en gyldig Office-udviklerkonto for at logge på [Office Developer Center](https://dev.office.com/). En Office-udviklerkonto skal være en Microsoft-konto (Live ID, f.eks. hotmail.com eller outlook.com).
+### <a name="getting-the-app-package"></a>Sådan får du programpakken
 
-> [!IMPORTANT]
-> Inden du sender din visual til AppSource, skal du sende en mail med .pbiviz- og .pbix-filen til Power BI-teamet. Power BI-teamet overfører så filerne til den offentlige shareserver. Ellers vil filerne ikke kunne hentes i butikken. Du skal sende filerne, hver gang du indsender en ny visual, opdaterer en eksisterende visual og retter afviste indsendelser.
+Du skal sende en mail med **pbiviz**-filen og **pbix**-filen til Power BI-teamet, før du indsender til AppSource. Power BI-teamet uploader så filerne til den offentlige shareserver. Ellers vil filerne ikke kunne hentes i butikken. 
 
-### <a name="process-to-submit-visual"></a>Sådan indsender du visualiseringer
+Power BI-teamet skal kontrollere filerne for nye Power BI-visualiseringer, opdateringer til eksisterende Power BI-visualiseringer og rettelser til afviste indsendelser.
 
-Følg nedenstående trin for at indsende din visualisering.
+### <a name="submitting-to-partner-center"></a>Indsendelse til Partnercenter
 
-1. Vælg **Tilføj en ny app**.
+Hvis du vil indsende din Power BI-visualisering til Partnercenter, skal du være tilmeldt Partnercenter. Hvis du endnu ikke er tilmeldt, kan du [åbne en udviklerkonto i Partnercenter](https://docs.microsoft.com/office/dev/store/open-a-developer-account).
 
-    ![Tilføj en app](media/office-store/powerbi-custom-visual-add-an-app.png)
+Følg nedenstående trin for at indsende din Power BI-visualisering til Partnercenter. Du kan finde flere oplysninger om indsendelsesprocessen under [Indsend din Office-løsning til AppSource via Partnercenter](https://docs.microsoft.com/office/dev/store/use-partner-center-to-submit-to-appsource).
 
-2. Vælg **Brugerdefineret illustration for Power BI**, og vælg derefter **Næste**.
+>[!NOTE]
+> Hvis du er midt i en indsendelsesproces for en Power BI-visualisering og skal bruge [Sælgerdashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (det tidligere administrationsværktøj), skal du gennemse instruktionerne under [Indsend en Power BI-visualisering til AppSource ved hjælp af Sælgerdashboard](seller-dashboard.md).
 
-3. Vælg **+** under **App-pakke**, og vælg den XML-app-pakkefil, du har modtaget fra Power BI-teamet, i dialogboksen Åbn fil.
+1. Log på **Partnercenter**.
 
-    ![App-pakke](media/office-store/powerbi-custom-visual-apppackage.png)
+2. Vælg **OFFICE STORE** i ruden til venstre.
 
-4. Du bør modtage en meddelelse om, at dette er en gyldig Power BI-app-pakke.
+3. Vælg **Oversigt**.
 
-    ![Manifest godkendt](media/office-store/powerbi-custom-visual-manifest-approved.png)
+4. Vælg **Opret en ny**, og vælg **Power BI-visualisering** i rullemenuen.
 
-5. Udfyld oplysningerne under **Generelle oplysninger**.
+    ![Office Store](media/office-store/power-bi-visual.png)
 
-   * *Titel på indsendelse:* Navnet på din indsendelse i Developer Center
-   * *Version:* Versionsnummeret udfyldes automatisk fra app-pakken til tilføjelsesprogrammet.
-   * *Udgivelsesdato (UTC):* Vælg den dato, din app skal udgives i Store. Hvis du vælger en dato i fremtiden, vil appen ikke være tilgængelig før den dato.
-   * *Kategori:* Den første kategori udfyldes automatisk som "Datavisualisering + BI". Sådan tagges alle Power BI-visualiseringer. Du kan angive op til to ekstra kategorier for at gøre det nemmere for brugerne at søge efter din visualisering
-   * *Testnoter:* Dette felt er valgfrit og kan bruges, hvis du vil angive nogle instruktioner til testerne hos Microsoft.
-   * *Min app kalder, understøtter, indeholder eller bruger kryptografi eller kryptering:* Undlad at markere dette afkrydsningsfelt.
-   * *Gør dette tilføjelsesprogram tilgængeligt i kataloget med Office-tilføjelsesprogrammer på iPad:* Undlad at markere dette afkrydsningsfelt.
-6. Overfør logoet for din visualisering ved at markere **+** under **App-logo**. Vælg derefter ikonfilen i dialogboksen Åbn fil. Filen skal være i .png, .jpg, .jpeg eller .gif. Den skal være nøjagtigt 300 pixel (bredde) x 300 pixel (højde) og må højst fylde 512 KB.
+5. I vinduet **Opret en ny Power BI-visualisering** skal du angive navnet på din Power BI-visualisering og vælge **Opret**.
 
-    ![Applogo](media/office-store/powerbi-custom-visual-app-logo.png)
+6. Vælg **Pakker**, og upload din XML-programpakke for Power BI-visualiseringen.
 
-7. Udfyld oplysningerne under **Understøttende dokumenter**.
+7. Vælg **Egenskaber**, og angiv de nødvendige oplysninger.
 
-   * Link til supportdokument
-   * Link til dokument om beskyttelse af personlige oplysninger
-   * Videolink
-   * Slutbrugerlicensaftale (EULA)
+8. Hvis dit produkt kræver yderligere køb, skal du vælge **Produktkonfiguration** og derefter markere afkrydsningsfeltet **Køb af tilknyttet tjeneste**.
 
-       Du skal overføre en fil med slutbrugerlicensaftalen. Det kan enten være din egen slutbrugerlicensaftale, eller du kan bruge den standardslutbrugerlicensaftale, der findes i Office Store for Power BI-visualiseringer. Hvis du vil bruge standardslutbrugerlicensaftalen, skal du indsætte følgende URL-adresse i dialogboksen "Slutbrugerlicensaftale" til filupload i sælgerdashboardet: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). Filen er evt. på engelsk.
+9. (Valgfri) Hvis du vil [certificere](power-bi-custom-visuals-certified.md) visualiseringen, skal du vælge **Produktkonfiguration** og markere afkrydsningsfeltet **Power BI-certificering**.
+    >[!TIP]
+    >Power BI-certificeringsprocessen kan tage lidt tid. Hvis du opretter en ny Power BI-visualisering, anbefales det, at du publicerer Power BI-visualiseringen via Partnercenter, før du anmoder om Power BI-certificering. Dette sikrer, at publiceringen af din visualisering ikke forsinkes.
 
-8. Vælg **Næste** for at fortsætte til siden **Oplysninger**.
-
-9. Vælg **Sprog** , og vælg et sprog på listen.
-
-    ![Sprog](media/office-store/powerbi-custom-visual-language.png)
-
-10. Udfyld "Beskrivelse".
-
-    * *App-navn (for dette sprog):* Angiv navnet på din app, som det skal vises i butikken.
-    * *Kort beskrivelse:* Angiv en kort beskrivelse af appen på højst 100 tegn, som den skal vises i butikken. Beskrivelsen vises øverst sammen med logoet. Du kan bruge beskrivelsen fra pbiviz-pakken.
-    * *Lang beskrivelse:* Angiv en mere detaljeret beskrivelse af din app, som kunderne får vist på siden med oplysninger om appen. Hvis du vil have, at andre skal kunne forbedre din visualisering ved at publicere den som åben kildekode, skal du angive linket til det offentlige lager, f.eks. GitHub, her.
-
-11. Overfør mindst ét skærmbillede. Formatet kan være .png, .jpg, .jpeg eller .gif. Den skal være nøjagtigt 1366 pixel (bredde) x 768 pixel (højde). Filstørrelsen må ikke overstige 1024 KB. *Effekten vil blive større, hvis du tilføjer tekstbobler for at fremhæve fordelene ved de vigtigste funktioner, som vises på hvert skærmbillede.*
-
-12. Hvis du vil tilføje flere sprog, skal du vælge **Tilføj et sprog** og gentage trin 10 og 11. Når du tilføjer flere sprog, kan brugerne få vist oplysningerne om den brugerdefinerede visualisering på deres eget sprog. De sprog, der ikke angives, vil få vist oplysningerne på det sprog, der blev valgt først.
-
-13. Når du er færdig med at tilføje sprog, skal du vælge **Næste** for at fortsætte til siden **Bloker adgang**.
-
-14. Hvis du vil forhindre, at kunder i bestemte lande eller områder bruger eller køber din app, skal du markere afkrydsningsfeltet og vælge på listen.
-
-15. Vælg **Næste** for at fortsætte til siden **Prissætning**.
-
-16. I øjeblikket er det kun *gratis* visualiseringer, der understøttes, og ekstra køb i visualiseringen (køb i app) er ikke tilladt. Vælg **Appen er gratis**.
-
-    > [!NOTE]
-    > Hvis du vælger en anden indstilling end gratis, eller køb i app er muligt i den indsendte visualisering, vil den blive afvist.
-
-17. Du kan nu vælge **Gem som kladde** og indsende den senere, eller du kan vælge **Send til godkendelse** for at indsende visualiseringen til Office Store med det samme.
+10. Vælg **Produktkonfiguration**, og klik på **Gennemse og publicer**.
 
 ## <a name="tracking-submission-status-and-usage"></a>Se statussen for indsendelsen og brugsdata
 
@@ -142,13 +110,13 @@ Når du har indsendt visualiseringen, vil du kunne se statussen for den i [appda
 
 ## <a name="certify-your-visual"></a>Certificer din visualisering
 
-Når du har oprettet din visualisering, kan du vælge at få den certificeret. Det betyder, at den kan køre i Power BI-tjenesten, og at den kan bruges sammen med andre funktioner som f.eks. eksport til PowerPoint. Du kan finde flere oplysninger under [Sådan får du en brugerdefineret visualisering *certificeret*](../developer/power-bi-custom-visuals-certified.md).
+Når du har oprettet din visualisering, kan du vælge at få den [certificeret](../developer/power-bi-custom-visuals-certified.md), hvis du vil.
 
 ## <a name="next-steps"></a>Næste trin
 
 [Udvikling af en brugerdefineret visualisering i Power BI](visuals/custom-visual-develop-tutorial.md)  
 [Visualiseringer i Power BI](../visuals/power-bi-report-visualizations.md)  
 [Brugerdefinerede visualiseringer i Power BI](../developer/power-bi-custom-visuals.md)  
-[Sådan får du en brugerdefineret visualisering *certificeret*](../developer/power-bi-custom-visuals-certified.md)
+[Sådan får du en Power BI-visualisering certificeret](../developer/power-bi-custom-visuals-certified.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

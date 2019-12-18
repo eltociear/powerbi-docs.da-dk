@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 4f16cffe24d7eae5fe919dd2aa29949855258842
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 4cddf01dd57191b5d3e707589e6d8a78e106259f
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698273"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958465"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Medbring dine egne krypteringsnøgler til Power BI (prøveversion)
 
@@ -30,10 +30,11 @@ Hvis du vil bruge BYOK, skal du uploade data til Power BI-tjenesten fra en PBIX-
 
 - Direkte Analysis Services-forbindelse
 - Excel-projektmapper (medmindre data importeres først i Power BI Desktop)
-- Push-datasæt
+- [Send datasæt via push](/rest/api/power-bi/pushdatasets)
+- [Streamingdatasæt](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 - [Store modeller](service-premium-large-models.md)
 
-BYOK gælder kun for det datasæt, der er knyttet til PBIX-filen, ikke cacher med forespørgselsresultater for felter og visuals.
+BYOK gælder kun for det datasæt, der er knyttet til PBIX-filen, ikke cacher med forespørgselsresultater for felter og visualiseringer.
 
 ## <a name="configure-azure-key-vault"></a>Konfigurer Azure Key Vault
 

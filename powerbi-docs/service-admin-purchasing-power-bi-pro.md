@@ -9,16 +9,16 @@ ms.topic: quickstart
 ms.date: 10/29/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: ebaf32bbf84dcbb8efd8516fd0a1ab01011f2d63
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 55cdfad221aef276c790e98de83dd844bc13aafe
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698480"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958665"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Køb og tildel Power BI Pro-brugerlicenser
 
-Power BI Pro er en individuel brugerlicens, der giver brugerne mulighed for at læse og interagere med rapporter og dashboards, som andre brugere har publiceret i Power BI-tjenesten, og for at dele indhold og samarbejde med andre Power BI Pro-brugere. Det er kun brugere med en Power BI Pro-brugerlicens, der kan publicere eller dele indhold med andre brugere eller bruge indhold, der er oprettet af andre brugere, medmindre indholdet er hostet i en Power BI Premium-kapacitet. Se [Funktioner i Power BI efter licenstype](service-features-license-type.md) for at få flere oplysninger.
+Power BI Pro er en individuel brugerlicens, der giver brugerne mulighed for at læse og interagere med rapporter og dashboards, som andre brugere har publiceret i Power BI-tjenesten, og for at dele indhold og samarbejde med andre Power BI Pro-brugere. Det er kun brugere med en Power BI Pro-brugerlicens, der kan publicere eller dele indhold med andre brugere eller bruge indhold, der er oprettet af andre brugere, medmindre indholdet er hostet i en Power BI Premium-kapacitet. Du kan finde flere oplysninger under _Sammenligning af Power BI-funktioner_ i afsnittet [Power BI-priser](https://powerbi.microsoft.com/pricing/).
 
 ## <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Køb og tildel Power BI Pro-brugerlicenser
 

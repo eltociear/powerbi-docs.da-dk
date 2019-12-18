@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e68d886564552d1b1cb2dc9e7c018c65a5cca039
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 1d176941f04bdaf06c9cdeda65271769098268fb
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265201"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999807"
 ---
 # <a name="visuals-in-power-bi"></a>Visualiseringer i Power BI
 
@@ -22,7 +22,7 @@ Når du opretter eller redigerer en Power BI-rapport, kan du bruge mange forskel
 
 ![visualiseringer](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
-Du er dog ikke begrænset til dette sæt visualiseringer. Hvis du vælger **Flere indstillinger** (...) nederst, bliver en anden kilde til rapportvisualiseringer tilgængelig – *Power BI-visuals*.
+Du er dog ikke begrænset til dette sæt visualiseringer. Hvis du vælger **Flere indstillinger** (...) nederst, bliver en anden kilde til rapportvisualiseringer tilgængelig – *Power BI-visualiseringer*.
 
 Udviklere opretter Power BI-visualiseringer ved hjælp af SDK'er til Power BI-visualiseringer. Disse visualiseringer giver virksomhedsbrugere mulighed for at se deres data på en måde, som passer bedst til deres virksomhed. Forfattere af rapporter kan derefter importere de brugerdefinerede visualiseringsfiler til deres rapporter og bruge dem som en hvilken som helst anden Power BI-visualisering. Power BI-visualiseringer er førsteklasses komponenter i Power BI, og de kan filtreres, fremhæves, redigeres, deles osv.
 
@@ -152,7 +152,7 @@ Du har to muligheder for at downloade og importere Power BI-visualiseringer: fra
 
     Downloadsiden indeholder også instruktioner til, hvordan du importerer den brugerdefinerede visualisering i Power BI Desktop og Power BI-tjenesten.
 
-    Du kan også downloade et eksempel på en rapport, der indeholder den brugerdefinerede visual og viser dets egenskaber.
+    Du kan også downloade et eksempel på en rapport, der indeholder den brugerdefinerede visualisering og viser dets egenskaber.
 
     ![Eksempel](media/power-bi-custom-visuals/powerbi-custom-try-sample.png)
 
@@ -168,11 +168,11 @@ Du har to muligheder for at downloade og importere Power BI-visualiseringer: fra
 
 ## <a name="troubleshoot"></a>Fejlfind
 
-Hvis du skal foretage fejlfinding, skal du se [Fejlfinding af dine Power BI-visualiseringer](power-bi-custom-visuals-troubleshoot.md).
+Hvis du vil foretage fejlfinding, skal du se [Fejlfinding af dine Power BI-visualiseringer](power-bi-custom-visuals-troubleshoot.md).
 
 ## <a name="faq"></a>Ofte stillede spørgsmål
 
-Du kan finde flere oplysninger og få svar på spørgsmål under [Ofte stillede spørgsmål om Power BI-visualiseringer](power-bi-custom-visuals-faq.md#organizational-visuals).
+Du kan finde flere oplysninger og få svar på spørgsmål under [Ofte stillede spørgsmål om Power BI-visualiseringer](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).
 
 ## <a name="next-steps"></a>Næste trin
 

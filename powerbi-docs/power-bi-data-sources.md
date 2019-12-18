@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/22/2019
 ms.author: kfollis
-ms.openlocfilehash: a45cfb20907c96995adf8618cd6dd8ff32194bea
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: be7f95b2bbbd6e5e6314c7fd57869a30c176746c
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699722"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958488"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-datakilder
 
-Følgende tabel indeholder de datakilder, som Power BI understøtter, herunder oplysninger om DirectQuery og datagatewayen i det lokale miljø.
+Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæt, herunder oplysninger om DirectQuery og datagatewayen i det lokale miljø. Du kan finde oplysninger om dataflow under [Opret forbindelse til datakilder for Power BI-dataflow](service-dataflows-data-sources.md).
 
 | Datakilde | Opret forbindelse fra skrivebord | Opret forbindelse og opdater fra tjenesten | DirectQuery/direkte forbindelse | Gateway (understøttes) | Gateway (påkrævet) |
 |---|---|---|---|---|---|---|---|
@@ -95,7 +95,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter, herunder o
 | Planview Enterprise One – CTM | Ja | Ja | Nej | Nej | Nej |
 | Planview Enterprise One – PRM | Ja | Ja | Nej | Nej | Nej |
 | Planview Projectplace | Ja | Ja | Nej | Nej | Nej |
-| PostgreSQL | Ja | Ja | Nej | Ja | Ja |
+| PostgreSQL | Ja | Ja | Ja | Ja | Ja |
 | Power BI-dataflow | Ja | Ja | Nej | Nej | Nej |
 | Power BI-datasæt | Ja | Ja | Ja | Nej | Nej |
 | Dataflow for Power Platform | Ja | Ja | Nej | Nej | Nej |

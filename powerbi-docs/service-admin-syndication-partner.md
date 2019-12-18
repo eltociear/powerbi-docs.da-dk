@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 98a1fc1c394a81f743e622ec1756e6501a497fa3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: cc85fb07f50a42952e9b293908a797b1cbac023f
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699837"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958350"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det var ikke muligt at føje Power BI til en partners Office 365-abonnement
 
@@ -48,7 +48,7 @@ Hvis din partner ikke tilbyder Power BI, og du ikke kan købe direkte fra Micros
 
 ## <a name="sign-up-for-a-free-trial"></a>Tilmeld dig en gratis prøveversion
 
-Du kan tilmelde dig en gratis prøveversion af Power BI Pro. Hvis du ikke køber Power BI Pro i slutningen af prøveperioden, har du stadig en gratis licens, der indeholder mange af funktionerne i Power BI. Se [Funktioner i Power BI efter licenstype](service-features-license-type.md) for at få flere oplysninger.
+Du kan tilmelde dig en gratis prøveversion af Power BI. Hvis du ikke køber Power BI Pro i slutningen af prøveperioden, har du stadig en gratis licens, der indeholder mange af funktionerne i Power BI. Du kan finde flere oplysninger under [Tilmelding til Power BI som enkeltperson](service-self-service-signup-for-power-bi.md).
 
 ### <a name="enable-ad-hoc-subscriptions"></a>Aktivér ad hoc-abonnementer
 

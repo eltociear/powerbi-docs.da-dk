@@ -8,16 +8,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 8789986e94c860bffc622d903e33b4f1edabdd2d
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 1f350e8ff888ffc2fd95e6c47bf84ccc96ebf88b
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696158"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000152"
 ---
 # <a name="auto-datetime-in-power-bi-desktop"></a>Automatisk dato/klokkeslæt i Power BI Desktop
 
-Denne artikel henvender sig til dataudviklere af importmodeller og sammensatte modeller i Power BI Desktop. Den indeholder en introduktion til og en beskrivelse af indstillingen _Automatisk dato/klokkeslæt_.
+Denne artikel henvender sig til designere af datamodeller, der udvikler importmodeller og sammensatte modeller i Power BI Desktop. Den indeholder en introduktion til og en beskrivelse af indstillingen _Automatisk dato/klokkeslæt_.
 
 Automatisk dato/klokkeslæt er en indstilling for dataindlæsning i Power BI Desktop. Formålet med denne indstilling er at understøtte praktisk time intelligence-rapportering, der er baseret på datokolonner, som er indlæst i en model. Det giver især forfattere af rapporter, der bruger din datamodel, mulighed for at filtrere, gruppere og foretage detailudledning ved hjælp af kalenderens tidsperioder (år, kvartaler, måneder og dage). Det er vigtigt, at du ikke behøver at udvikle disse time intelligence-funktioner eksplicit.
 
@@ -36,7 +36,7 @@ Alle tabeller med automatisk dato/klokkeslæt er i realiteten en [beregnet tabel
 
 I Power BI Desktop oprettes der også en relation mellem kolonnen **Date** i tabellen med automatisk dato/klokkeslæt og kolonnen med modeldatoen.
 
-Tabellen med automatisk dato/klokkeslæt indeholder hele kalenderår, som omfatter alle datoværdier, der er gemt i kolonnen med modeldatoen. Hvis den tidligste værdi i en datokolonne f.eks. er 20. marts 2016, og den seneste værdi er 23. oktober 2019, indeholder tabellen 1.461 rækker. Det repræsenterer én række for hver dato i de fire kalenderår 2016 til 2019. Når Power BI opdaterer modellen, opdateres alle tabeller med automatisk dato/klokkeslæt også for at sikre, at de indeholder datoer, der omfatter datokolonnernes værdier.
+Tabellen med automatisk dato/klokkeslæt indeholder hele kalenderår, som omfatter alle datoværdier, der er gemt i kolonnen med modeldatoen. Hvis den tidligste værdi i en datokolonne f.eks. er 20. marts 2016, og den seneste værdi er 23. oktober 2019, indeholder tabellen 1.461 rækker. Det repræsenterer én række for hver dato i de fire kalenderår 2016 til 2019. Når Power BI opdaterer modellen, opdateres hver tabel med automatisk dato-/klokkeslæt også. På denne måde indeholder modellen altid datoer, der omfatter værdierne i datokolonnen.
 
 Hvis det var muligt at se rækkerne i en tabel med automatisk dato/klokkeslæt, ville de se sådan ud:
 
@@ -45,7 +45,7 @@ Hvis det var muligt at se rækkerne i en tabel med automatisk dato/klokkeslæt, 
 > [!NOTE]
 > Tabellerne med automatisk dato/klokkeslæt er skjult permanent, også for udviklere. De kan ikke ses i ruden **Felter** eller i diagramvisningen for modellen, og rækkerne kan ikke ses i datavisning. Desuden kan der ikke refereres direkte til tabellen og den tilhørende kolonne fra DAX-udtryk.
 
-Tabellen definerer også et hierarki, der giver visuelle elementer med en detailudledningssti, der går fra niveauerne for år, kvartal, måned og dag.
+Tabellen definerer også et hierarki, der giver visualiseringer med en detailudledningssti, der går fra niveauerne for år, kvartal, måned og dag.
 
 Hvis det var muligt at se en tabel med automatisk dato/klokkeslæt i diagramvisning for modellen, ville den se sådan ud (relaterede kolonner er fremhævet):
 
@@ -59,9 +59,9 @@ Når der findes en tabel med automatisk dato/klokkeslæt for en datokolonne (og 
 
 Det oprettede hierarki til automatisk dato/klokkeslæt kan bruges til at konfigurere en visualisering på præcis samme måde, som almindelige hierarkier kan bruges. Du kan enten konfigurere visualiseringer ved at bruge hele hierarkiet **Datohierarki** eller specifikke niveauer i hierarkiet.
 
-Der er dog tilføjet én funktion, der ikke understøttes af almindelige hierarkier. Når hierarkiet for automatisk dato/klokkeslæt – eller et niveau fra hierarkiet – føjes til et visuelt element, kan rapportens forfattere skifte mellem at bruge hierarkiet og datokolonnen. Denne fremgangsmåde giver mening for nogle visuals, når det eneste, de har brug for, er datokolonnen, ikke hierarkiet og dets niveauer. De starter med at konfigurere visualfeltet (højreklik på visualfeltet, eller klik på pil ned) og bruger derefter genvejsmenuen til at skifte mellem datokolonnen og datohierarkiet.
+Der er dog tilføjet én funktion, der ikke understøttes af almindelige hierarkier. Når hierarkiet for automatisk dato/klokkeslæt – eller et niveau fra hierarkiet – føjes til en visualisering, kan rapportens forfattere skifte mellem at bruge hierarkiet og datokolonnen. Denne fremgangsmåde giver mening for nogle visualiseringer, når det eneste, de har brug for, er datokolonnen, ikke hierarkiet og dets niveauer. De starter med at konfigurere visualiseringsfeltet (højreklik på visualiseringsfeltet, eller klik på pil ned) og bruger derefter genvejsmenuen til at skifte mellem datokolonnen og datohierarkiet.
 
-![Eksempel på konfiguration af et felt for et visuelt element til hierarkiet OrderDate. I genvejsmenuen Åbn vises to indstillinger, der gør det muligt at skifte mellem brugen af kolonnen OrderDate og datohierarkiet.](media/desktop-auto-date-time/auto-date-time-configure-visuals-fields.png)
+![Eksempel på konfiguration af et felt for en visualisering til hierarkiet OrderDate. I genvejsmenuen Åbn vises to indstillinger, der gør det muligt at skifte mellem brugen af kolonnen OrderDate og datohierarkiet.](media/desktop-auto-date-time/auto-date-time-configure-visuals-fields.png)
 
 Endelig kan modelberegninger, der skrives i DAX, _direkte_ referere til en datokolonne eller _indirekte_ til de skjulte tabelkolonner med automatisk dato/klokkeslæt.
 
@@ -85,7 +85,7 @@ Automatisk dato/klokkeslæt kan konfigureres _globalt_ eller for den _aktuelle f
 Indstillingen Aktuel fil kan også når som helst slås til eller fra. Når indstillingen er slået til, oprettes der tabeller med automatisk dato/klokkeslæt. Når indstillingen er slået fra, fjernes alle tabeller med automatisk dato/klokkeslæt fra modellen.
 
 > [!CAUTION]
-> Vær forsigtig, når du slår indstillingen for aktuel fil fra, da det vil fjerne tabellerne med automatisk dato/klokkeslæt. Sørg for at løse eventuelle problemer med brudte rapportfiltre eller visuelle elementer, der er konfigureret til at bruge dem.
+> Vær forsigtig, når du slår indstillingen for aktuel fil fra, da det vil fjerne tabellerne med automatisk dato/klokkeslæt. Sørg for at løse eventuelle problemer med brudte rapportfiltre eller visualiseringer, der er konfigureret til at bruge dem.
 
 I Power BI Desktop skal du vælge _Filer > Indstillinger > Indstillinger_ og derefter enten vælge siden **Global** eller **Aktuel fil**. På begge sider findes indstillingen i sektionen **Time Intelligence**.
 
@@ -93,7 +93,8 @@ I Power BI Desktop skal du vælge _Filer > Indstillinger > Indstillinger_ og der
 
 ## <a name="next-steps"></a>Næste trin
 
-Du kan finde flere oplysninger om automatisk dato/klokkeslæt og relaterede emner i følgende ressourcer:
+Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
+- [Vejledning til automatisk dato/klokkeslæt i Power BI Desktop](guidance/auto-date-time.md)
 - [Angiv og brug datotabeller i Power BI Desktop](desktop-date-tables.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

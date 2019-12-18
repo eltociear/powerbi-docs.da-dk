@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e5374397dc9b89df7b7cbd86cfca5a44631b94e4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ef8e874c1f1a47d65845b87dccd441746651a68b
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876475"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999784"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Opret forbindelse til Microsoft Graph Security API i Power BI Desktop
 
@@ -40,7 +40,7 @@ For at give samtykke for connectoren skal administratoren af din Azure AD-lejer 
 
 * Besvar en anmodning, som din logikapp sender i løbet af den første kørsel via [oplevelsen for programsamtykke](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)
    
-Den brugerkonto, der bruges til at logge på Microsoft Graph Security-connectoren, skal være medlem af rollen Begrænset administrator for Sikkerhedslæser i Azure AD enten som *Sikkerhedslæser* eller *Sikkerhedsadministrator*. Se [Tildel Azure AD-roller til brugere](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
+Den brugerkonto, der bruges til at logge på Microsoft Graph Security-connectoren, skal have rollen Sikkerhedslæser i Azure AD tildelt, **hvis** brugeren ikke er medlem af rollen *Sikkerhedsadministrator*. Se [Tildel Azure AD-roller til brugere](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
 
 ## <a name="using-the-microsoft-graph-security-connector"></a>Brug af Microsoft Graph Security-connectoren
 

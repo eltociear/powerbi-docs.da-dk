@@ -9,148 +9,159 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 0b5677e7f3acab464f8d9e4c293ed1df9d0bdd0f
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 9078aaebd49705833d3ad5a15497ab0c2d69a1c3
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74102151"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999715"
 ---
 # <a name="frequently-asked-questions-about-power-bi-visuals"></a>Ofte stillede spørgsmål om Power BI-visualiseringer
 
-## <a name="organizational-visuals"></a>Visualiseringer til organisationen
+## <a name="organizational-power-bi-visuals"></a>Power BI-visualiseringer til organisationer
 
-På administrationsportalen kan du administrere en Power BI-visualisering for din virksomhed.
+På administrationsportalen kan du administrere Power BI-visualiseringer for din organisation.
 
-### <a name="how-can-the-admin-manage-the-organizational-power-bi-visuals"></a>Hvordan kan administratoren administrere Power BI-visualiseringer til organisationer?
+### <a name="how-can-the-admin-manage-organizational-power-bi-visuals"></a>Hvordan kan administratoren administrere Power BI-visualiseringer til organisationer?
 
-På Administrationsportalen under fanen "Visualiseringer til organisationer" kan administratoren se og [administrere alle Power BI-visualiseringerne til organisationer i virksomheden](../service-admin-portal.md#organizational-visuals): tilføje, deaktivere, aktivere og slette.
-Der er ikke længere grund til at dele disse visualiseringer via mail eller en delt mappe. Når visualiseringerne er udrullet i organisationens lager, kan brugerne nemt finde dem og importere visualiseringerne til organisationer i deres rapporter direkte fra Power BI Desktop eller Power BI-tjenesten. Du kan finde visualiseringerne til organisationer i det indbyggede lager (i Desktop og tjenesten) under fanen *MIN ORGANISATION*. Når administratoren overfører en ny version af en brugerdefineret visual til virksomheden, får alle i organisationen den samme opdaterede version. Forfattere af rapporter behøver ikke at slette visualiseringen i deres rapporter for at få den nye version af disse visualiseringer, da alle rapporter, der bruger disse visualiseringer, opdateres automatisk. Opdateringsmekanismen svarer til visuals på markedspladser.
+På administrationsportalen under fanen *Visualiseringer til organisationer* kan administratoren se og [administrere alle Power BI-visualiseringer i virksomheden](../service-admin-portal.md#organizational-visuals). Dette omfatter tilføjelse, deaktivering, aktivering og sletning af Power BI-visualiseringer.
 
-### <a name="if-an-admin-uploads-a-custom-visual-from-the-public-marketplace-to-the-organization-store-is-it-automatically-updated-once-a-vendor-updates-the-visual-in-the-public-marketplace"></a>Hvis en administrator uploader en brugerdefineret visualisering fra den offentlige markedsplads til virksomhedslageret, opdateres den så automatisk, når en leverandør opdaterer visualiseringen på den offentlige markedsplads?
+Brugere i organisationen kan nemt finde Power BI-visualiseringer og importere dem til deres rapporter direkte fra Power BI Desktop eller Power BI-tjenesten.
 
-Nej, der sker ingen automatisk opdatering fra den offentlige markedsplads.
-Det er administratorens ansvar at opdatere versionen af visualiseringerne til organisationer.
+Når administratoren uploader en ny version af en Power BI-visualisering til organisationer, får alle i organisationen den samme opdaterede version. Alle rapporter, der bruger opdaterede Power BI-visualiseringer, opdateres automatisk.
 
-### <a name="is-there-a-way-to-disable-the-organizational-store"></a>Er det muligt at deaktivere virksomhedslageret?
+Brugerne kan finde Power BI-visualiseringer til organisationer i det indbyggede organisationslager til Power BI Desktop og Power BI-tjenesten under fanen *MIN ORGANISATION*. 
 
-Nej, brugere får altid vist fanen "MIN ORGANIZATION" fra Power BI-skrivebordet og -tjenesten. Administratoren kan deaktivere eller slette alle visualiseringer til organisationer fra administrationsportalen, hvilket medfører, at virksomhedslageret bliver tomt.
+### <a name="if-an-admin-uploads-a-power-bi-visual-from-the-public-marketplace-to-the-organization-store-is-it-automatically-updated-once-a-vendor-updates-the-visual-in-the-public-marketplace"></a>Hvis en administrator uploader en Power BI-visualisering fra den offentlige markedsplads til organisationslageret, opdateres den så automatisk, når en leverandør opdaterer visualiseringen på den offentlige markedsplads?
+
+Nej, der sker ingen automatisk opdatering fra den offentlige markedsplads. Det er administratorens ansvar at opdatere versionen af Power BI-visualiseringerne til organisationer.
+
+### <a name="is-there-a-way-to-disable-the-organization-store"></a>Er det muligt at deaktivere organisationslageret?
+
+Nej, brugerne kan altid se fanen *MIN ORGANISATION* i Power BI Desktop og Power BI-tjenesten. Hvis en administrator deaktiverer eller sletter alle Power BI-visualiseringer til organisationer fra administrationsportalen, bliver organisationslageret tomt.
   
-### <a name="if-the-administrator-disables-power-bi-visuals-from-the-admin-portal-tenant-settings-do-users-still-have-access-to-the-organizational-visuals"></a>Hvis administratoren deaktiverer Power BI-visualiseringer fra Administrationsportal (lejerindstillinger), har brugerne så stadig adgang til visualiseringerne til organisationer?
+### <a name="if-the-admin-disables-power-bi-visuals-from-the-admin-portal-tenant-settings-do-users-still-have-access-to-the-organizational-power-bi-visuals"></a>Hvis administratoren deaktiverer Power BI-visualiseringer fra administrationsportalen (lejerindstillinger), har brugerne så stadig adgang til Power BI-visualiseringerne til organisationer?
 
-Ja, det har ingen indflydelse på organisationslageret, at administratoren deaktiverer Power BI-visualiseringer fra Administrationsportal. Nogle organisationer deaktiverer Power BI-visualiseringer og aktiverer kun håndplukkede visualiseringer, der er importeret og uploadet af Power BI-administratoren til organisationslageret. Deaktivering af Power BI-visualiseringer fra Administrationsportal gennemtvinges ikke i Power BI Desktop. Desktop-brugere kan stadig tilføje og bruge Power BI-visualiseringer fra den offentlige markedsplads i deres rapporter. Men de offentlige Power BI-visualiseringer gengives ikke længere, når de publiceres på Power BI-tjenesten, og der udstedes en passende fejl. Når du bruger Power BI-tjenesten, kan du ikke importere Power BI-visualiseringer fra den offentlige markedsplads. Det er kun visualiseringer fra organisationslageret, der kan importeres, fordi indstillingen for Power BI-visualiseringer på Administrationsportal gennemtvinges i Power BI-tjenesten.
+Ja, det har ingen indflydelse på organisationslageret, at administratoren deaktiverer Power BI-visualiseringer fra Administrationsportal.
 
-### <a name="why-does-the-organizational-store-and-organizational-visuals-make-a-great-enterprise-solution"></a>Hvorfor er organisationslageret og visualiseringer til organisationer en fantastisk virksomhedsløsning?
+Nogle organisationer deaktiverer Power BI-visualiseringer og aktiverer kun håndplukkede visualiseringer, der er importeret og uploadet af Power BI-administratoren til organisationslageret.
 
-* Alle får den samme version af visuals, der styres af Power BI-administratoren. Når administratoren opdaterer versionen af visuals på administrationsportalen, får alle brugere i virksomheden automatisk den opdaterede version.
+Deaktivering af Power BI-visualiseringer fra Administrationsportal gennemtvinges ikke i Power BI Desktop. Desktop-brugere kan stadig tilføje og bruge Power BI-visualiseringer fra den offentlige markedsplads i deres rapporter. Men de offentlige Power BI-visualiseringer gengives ikke længere, når de publiceres på Power BI-tjenesten, og der udstedes en passende fejl. 
 
-* Der er ikke længere grund til at dele visualfiler via mail eller delte mapper! Ét sted, som er synligt for alle medlemmer, der er logget på.
+Når indstillingen for Power BI-visualiseringer på administrationsportalen håndhæves, kan brugerne af Power BI-tjenesten ikke importere Power BI-visualiseringer fra den offentlige markedsplads. Det er kun visualiseringer fra organisationslageret, der kan importeres.
 
-* Sikkerhed og understøttelse – nye versioner af visualiseringer til organisationer opdateres automatisk i alle rapporter på samme måde som visualiseringer fra markedspladsen.
+### <a name="what-are-the-advantages-of-power-bi-visuals-in-the-organizational-store"></a>Hvad er fordelene ved Power BI-visualiseringer i organisationslageret?
 
-* Brugere i organisationen, der anvender visualiseringer til organisationer, skal være logget på for at se og bruge visualiseringer til organisationer, hvilket er en sikkerhedsfaktor for organisationen.
+* Alle får den samme version af visualiseringerne, der styres af Power BI-administratoren. Når administratoren opdaterer versionen af visualiseringerne på administrationsportalen, får alle brugere i virksomheden automatisk den opdaterede version.
 
-* Administratorer kan styre, hvilke Power BI-visualiseringer der skal være tilgængelige i organisationen.
+* Det er ikke længere nødvendigt at dele visualiseringsfiler via mail eller delte mapper. Tilbud i organisationslageret er synlige for alle medlemmer, der er logget på.
 
-* Administratorer kan aktivere/deaktivere visuals til test fra administrationsportalen. Bedre håndhævelse af sikkerhed, da disse visuals kun bliver tilladt for medlemmer af organisationen.
+* Sikkerhed og understøttelse – nye versioner af Power BI-visualiseringer til organisationer opdateres automatisk i alle rapporter.
+
+* Administratorer kan styre, hvilke Power BI-visualiseringer der er tilgængelige i hele organisationen.
+
+* Administratorer kan aktivere/deaktivere visualiseringer til test fra administrationsportalen.
 
 ## <a name="certified-power-bi-visuals"></a>Certificerede Power BI-visualiseringer
 
 ### <a name="what-are-certified-power-bi-visuals"></a>Hvad er certificerede Power BI-visualiseringer?
 
-Certificerede Power BI-visualiseringer er visualiseringer på [markedspladsen](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals), der opfylder visse [angivne](power-bi-custom-visuals-certified.md) kodekrav og test udført af Power BI-teamet.  De udførte test er udviklet til at kontrollere, at visualiseringen ikke har adgang til eksterne tjenester eller ressourcer. Microsoft er dog ikke forfatter af Power BI-visualiseringer fra tredjepart, og kunderne rådes til at kontakte forfatteren direkte for at bekræfte funktionaliteten af sådanne visualiseringer.
+Certificerede Power BI-visualiseringer er Power BI-visualiseringer, der opfylder visse [krav](power-bi-custom-visuals-certified.md) og er certificeret af Microsoft.
+
+På [markedspladsen](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) har certificerede Power BI-visualiseringer et gult badge, der angiver, at de er certificerede.
+
+Microsoft er ikke forfatteren af Power BI-visualiseringer fra tredjepart. Vi råder kunderne til at kontakte forfatteren direkte for at bekræfte funktionaliteten af visualiseringer fra tredjepart.
 
 ### <a name="what-tests-are-done-during-the-certification-process"></a>Hvilke test udføres under certificeringsprocessen?
 
-Test under certificeringsprocessen omfatter, men er ikke begrænset til: Kodegennemgang, analyse af statisk kode, datalækage, datafuzzytest, indtrængningstest, test af adgang til XSS, ondsindet datainjektion, inputvalidering og funktionstest.
+Test under certificeringsprocessen omfatter, men er ikke begrænset til: 
+* Anmeldelse af koder
+* Analyse af statisk kode
+* Datalækage
+* Fuzzytest af data
+* Indtrængningstest
+* Adgang til XSS-test
+* Injektion af skadelige data
+* Inputvalidering
+* Funktionel test
  
-### <a name="do-you-certify-visuals-every-submission"></a>Certificerer I visualiseringer ved hver indsendelse?
+### <a name="are-certified-power-bi-visual-checked-again-with-every-new-submission-upgrade"></a>Kontrolleres certificerede Power BI-visualiseringer igen ved hver nye indsendelse (opgradering)?
 
-Ja. Hver gang en ny version af en certificeret visualisering sendes til Marketplace, undergår versionsopdateringen af visualiseringen de samme certificeringskontroller.
+Ja. Hver gang en ny version af en certificeret visualisering sendes til markedspladsen, undergår versionsopdateringen af visualiseringen de samme certificeringskontroller.
 
-Bemærkning til udviklere! Hvis du sender en versionsopdatering af en certificeret visualisering, behøver du ikke at sende en separat mail ligesom ved [anmodningen om førstegangscertificering.](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified#process-for-submitting-a-custom-visual-for-certification) Certificering af versionsopdateringen sker automatisk, og evt. overtrædelser, som medfører en afvisning, sendes i en mail med en forklaring om, hvad der skal rettes. 
+Certificeringen af den opdaterede version sker automatisk. Hvis der er en overtrædelse, som medfører, at opdateringen afvises, sendes der en mail til udvikleren med en forklaring på, hvad der skal løses.
 
-### <a name="is-it-possible-that-a-certified-visual-stops-being-certified-with-a-new-update"></a>Kan det ske, at en certificeret visualisering holder op med at være certificeret i forbindelse med en ny opdatering?
+### <a name="can-a-certified-power-bi-visual-stop-lose-its-certification-after-a-new-update"></a>Kan en certificeret Power BI-visualisering miste sin certificering efter en ny opdatering?
 
-Nej, det kan ikke ske. Certificeringen af en certificeret visualisering kan ikke fjernes i forbindelse med en ny opdatering. Opdateringen afvises.
+Nej, det kan ikke ske. En certificeret visualisering kan ikke miste sin certificering med en ny opdatering. Opdateringen afvises.
  
-### <a name="do-i-need-to-share-my-code-in-public-repository-if-i-am-submitting-to-the-certification-process"></a>Skal jeg dele min kode på et offentligt lager, hvis jeg indsender til certificering?
+### <a name="do-i-need-to-share-my-code-in-a-public-repository-if-im-certifying-my-power-bi-visual"></a>Skal jeg dele min kode i et offentligt lager, hvis jeg certificerer min Power BI-visualisering?
 
-Nej, du behøver ikke at dele din kode offentligt. Du skal dog give os læserettigheder til at kontrollere visualiseringskoden. F.eks. private lagre i GitHub.
+Nej, du behøver ikke at dele din kode offentligt.
+
+Giv læserettigheder for at kontrollere koden for Power BI-visualiseringen. Ved f.eks. at bruge et privat lager i GitHub.
  
-### <a name="do-we-have-to-publishhttpsdocsmicrosoftcompower-bideveloperoffice-store-the-visual-in-the-marketplacehttpsappsourcemicrosoftcommarketplaceappspage1productpower-bi-visuals-to-certify-it"></a>Skal vi [publicere](https://docs.microsoft.com/power-bi/developer/office-store) visualiseringen på [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) for at få den certificeret?
+### <a name="does-a-certified-power-bi-visual-have-to-be-in-the-marketplace"></a>Skal en certificeret Power BI-visualisering være på markedspladsen?
 
-Ja. Det er et obligatorisk krav til certificering at publicere visualiseringen på Marketplace først.
-Hvis du vil certificere en brugerdefineret visualisering, skal den være på vores servere. Vi kan ikke certificere private visualiseringer.
+Ja. Private visualiseringer certificeres ikke.
  
 ### <a name="how-long-does-it-take-to-certify-my-visual"></a>Hvor lang tid tager det at certificere min visualisering?
 
-Det kan tage op til tre uger for at få en opdateret version. Det kan tage op til fire uger for en ny indsendelse (førstegangscertificering). 
+Det kan tage op til fire uger at certificere en ny Power BI-visualisering (førstegangscertificering). 
 
-### <a name="does-the-certification-process-ensure-that-no-data-leakage-occurs"></a>Sikrer certificeringsprocessen, at der ikke opstår datalækage?
+Certificering af en opdateret version af en Power BI-visualisering kan tage op til tre uger. 
 
-De udførte test er udviklet til at kontrollere, at visualiseringen ikke har adgang til eksterne tjenester eller ressourcer. Microsoft er dog ikke forfatter af Power BI-visualiseringer fra tredjepart, og kunderne rådes til at kontakte forfatteren direkte for at bekræfte funktionaliteten af sådanne visualiseringer.
+### <a name="does-the-certification-process-ensure-that-there-is-no-data-leakage"></a>Sikrer certificeringsprocessen, at der ikke sker datalækage?
+
+De udførte test er udviklet til at kontrollere, at visualiseringen ikke har adgang til eksterne tjenester eller ressourcer. 
+
+Microsoft er ikke forfatteren af Power BI-visualiseringer fra tredjepart. Vi råder kunderne til at kontakte forfatteren direkte for at bekræfte funktionaliteten af Power BI-visualiseringer fra tredjepart.
  
 ### <a name="are-uncertified-power-bi-visuals-safe-to-use"></a>Er det sikkert at anvende Power BI-visualiseringer, der ikke er certificeret?
 
 Ikke-certificerede Power BI-visualiseringer er ikke nødvendigvis ensbetydende med usikre visualiseringer.
-Nogle visualiseringer er ikke certificeret, fordi de ikke er i overensstemmelse med et eller flere af [certificeringskravene](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Det kan f.eks. være i forbindelse med oprettelse af forbindelse til en ekstern tjeneste, som f.eks. kortvisualiseringer eller visualiseringer, der anvender kommercielle biblioteker.
+
+Nogle visualiseringer er ikke certificeret, fordi de ikke overholder et eller flere [certificeringskrav](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Det kan f.eks. være i forbindelse med oprettelse af forbindelse til en ekstern tjeneste, som f.eks. kortvisualiseringer eller visualiseringer, der anvender kommercielle biblioteker.
  
 ## <a name="visuals-with-additional-purchases"></a>Visualiseringer med ekstra køb
 
 ### <a name="what-is-a-visual-with-additional-purchases"></a>Hvad er en visualisering med ekstra køb?
 
-En visualisering med ekstra køb svarer til tilføjelsesprogrammet apptilkøb (IAP) på markedspladsen. Disse tilføjelsesprogrammer har prismærket **Yderligere køb kan være påkrævet**.
+En visualisering med yderligere køb ligner tilføjelsesprogrammet for apptilkøb (IAP – In-App Purchase). Disse tilføjelsesprogrammer har prismærket **Yderligere køb kan være påkrævet**.
 
-Power BI-visualiseringer med IAP er gratis Power BI-visualiseringer, der kan downloades. Brugerne betaler ikke noget for at downloade disse Power BI-visualiseringer fra markedspladsen. Visualiseringer med IAP tilbyder valgfri apptilkøb for avancerede funktioner.  
+Power BI-visualiseringer med IAP er gratis Power BI-visualiseringer, der kan downloades. Brugerne betaler intet for at downloade disse Power BI-visualiseringer fra markedspladsen.
 
-### <a name="whats-the-benefit-to-developers"></a>Hvad er fordelen for udviklere?
-
-Power BI-visualiseringer med IAP i AppSource vil være synlige for de mange dagligt besøgende, hvilket resulterer i værdifuld trafik og øget opmærksomhed på dine Power BI-visualiseringer med IAP og på dig som udvikleren.
-
-Hvis du indtil for nylig administrerede disse visualiseringer via dit websted, kan du nu sende dem til AppSource. Hvilket øger niveauet af registrering og synlighed for visualiseringerne med IAP i Power BI-community'et.
-
-Visualiseringer i AppSource nyder godt af en kanal til direkte feedback fra de kunder, der bruger de brugerdefinerede visualiseringer med IAP, via systemet til anmeldelser og klassifikation i lageret.  
-
-Når visualiseringen med IAP er blevet godkendt af AppSource-valideringsteamet, kan du også indsende disse visualiseringer til certificering. Det er en valgfri proces.  
-
-Når en visualisering er blevet certificeret, kan Power BI-visualiseringerne med IAP eksporteres til PowerPoint og vises i de mails, som modtages, når en bruger abonnerer på rapportsider. Så i dag kan Power BI-visualiseringer med IAP også certificeres og understøtte et ekstra funktionssæt, når visualiseringer med IAP indsendes til markedspladsen.  
-
-### <a name="do-iap-visuals-need-to-be-certified"></a>Skal visualiseringer med IAP certificeres?
-
-Certificeringsprocessen er valgfri. Det er op til udvikleren at beslutte, om vedkommendes Power BI-visualiseringer med IAP skal certificeres eller ej på samme måde som med gratis visualiseringer.
+Visualiseringer med IAP tilbyder valgfri apptilkøb for avancerede funktioner.  
 
 ### <a name="what-is-changing-in-the-submission-process"></a>Hvad ændres i indsendelsesprocessen?
 
-Indsendelsesprocessen for Power BI-visualiseringer med IAP til markedspladsen er den samme proces som for gratis visualiseringer. Det sker via Seller Dashboard.  Den eneste ændring i processen for indsendelse er, at udviklere skal angive følgende i udviklernoterne på Seller Dashboard: "Visualisering med apptilkøb". Du skal om nødvendigt også angive en licensnøgle/et licenstoken for at validere de betalte/avancerede funktioner.  
+Indsendelsesprocessen for Power BI-visualiseringer med IAP til markedspladsen er den samme proces som for gratis Power BI-visualiseringer. Du kan indsende en Power BI-visualisering til certificering ved hjælp af [Partnercenter](https://docs.microsoft.com/partner-center/).
 
-Der vil ikke være nogen ny indstilling på Seller Dashboard: *gratis med apptilkøb*. Du skal indsende dine visualiseringer med IAP som *gratis*.
 
-Derudover kan du give brugerne besked om, hvad de kan forvente, ved at angive under den lange beskrivelse af dit lager, hvilke funktioner der er gratis, og hvilke funktioner der kræver ekstra køb for at fungere.  
+Når du registrerer din Power BI-visualisering, skal du navigere til fanen *Produktkonfiguration* og markere afkrydsningsfeltet *Mit produkt kræver køb af en tjeneste*.
 
-### <a name="what-should-i-do-beforesubmittingmy-iap-custom-visual"></a>Hvad skal jeg gøre, før jeg indsender min brugerdefinerede visualisering med IAP?
+### <a name="what-should-i-do-beforesubmittingmy-iap-power-bi-visual"></a>Hvad skal jeg gøre, før jeg indsender min Power BI-visualisering med IAP?
 
-Hvis du arbejder på en brugerdefineret visualisering med IAP, eller du allerede har en, skal du kontrollere, at den opfylder retningslinjerne.  
+Hvis du arbejder på en Power BI-visualisering med IAP, skal du kontrollere, at den opfylder [retningslinjerne](guidelines-powerbi-visuals.md).  
 
-Hvis du har et logo i den brugerdefinerede visualisering, skal du sørge for, at det opfylder retningslinjerne for logo (farve, placering, størrelse og udløsning af handling).
+> [!NOTE]
+> Gratis Power BI-visualiseringer med en tilføjet IAP-funktion, skal beholde de samme gratis funktioner, som tidligere blev tilbudt. Du kan føje valgfrie avancerede betalte funktioner til de eksisterende gratis funktioner. Vi anbefaler, at du indsender Power BI-visualiseringer med IAP med de avancerede funktioner som en ny Power BI-visualisering i stedet for at opdatere den gamle gratis visualisering.
 
-I retningslinjerne kan du også finde noter med bedste praksis.  
-> [!Note]
-> Alle gratis visualiseringer bør bevare de samme gratis funktioner, som blev tilbudt tidligere. Du kan føje valgfrie avancerede betalte funktioner til de gamle gratis funktioner. Vi anbefaler, at du sender IAP-visualiseringer sammen med de avancerede funktioner som nye visualiseringer i stedet for at opdatere de gratis gamle.
+### <a name="do-iap-power-bi-visuals-need-to-be-certified"></a>Skal Power BI-visualiseringer med IAP certificeres?
 
-### <a name="can-i-get-my-iap-custom-visual-certified"></a>Kan jeg få min brugerdefinerede visualisering med IAP certificeret?
+[Certificeringsprocessen](power-bi-custom-visuals-certified.md) er valgfri. Det er op til udvikleren at beslutte, om vedkommendes Power BI-visualisering med IAP skal certificeres eller ej.
 
-Ja, på samme måde som med gratis visualiseringer.  Når din brugerdefinerede visualisering med IAP er godkendt af AppSource-teamet, kan du indsende visualiseringen til certificeringsprocessen.
+### <a name="can-i-get-my-iap-power-bi-visual-certified"></a>Kan jeg få min Power BI-visualisering med IAP certificeret?
 
-For at få visualiseringen certificeret skal den overholde kravene til certificering. Visualiseringen kan f.eks. ikke få adgang til eksterne tjenester til validering af licenser.
+Ja, når din Power BI-visualisering med IAP er godkendt af AppSource-teamet, kan du indsende Power BI-visualiseringen til [certificering](power-bi-custom-visuals-certified.md).
 
-Husk, at certificering er en valgfri proces. Det er op til dig at beslutte, om du vil have din visualisering med IAP certificeret.
+Certificering er en valgfri proces, og det er op til dig at beslutte, om du vil have din visualisering med IAP certificeret.
 
 ## <a name="additional-questions"></a>Yderligere spørgsmål
 
 ### <a name="how-to-get-support"></a>Hvordan får jeg support?
 
-Du er meget velkommen til at kontakte supportteamet til Power BI-visualiseringer: *pbicvsupport@microsoft.com*  , hvis du har spørgsmål, kommentarer eller problemer.  
+Du er meget velkommen til at kontakte supportteamet til Power BI-visualiseringer på pbicvsupport@microsoft.com, hvis du har spørgsmål, kommentarer eller problemer.  
 
 ## <a name="next-steps"></a>Næste trin
 

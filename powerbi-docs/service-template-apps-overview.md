@@ -1,29 +1,38 @@
 ---
 title: Hvad er Power BI-skabelonprogrammer?
 description: Denne artikel indeholder en oversigt over Power BI-skabelonprogrammet. Få mere at vide om, hvordan du udarbejder Power BI-programmer med kun lidt eller ingen kode og udruller dem til dine Power BI-kunder.
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/24/2019
-ms.author: tebercov
-ms.openlocfilehash: 4b4e32f787d2d262d604ff0745f8c028e9fff949
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/08/2019
+ms.author: painbar
+ms.openlocfilehash: f519665c78f8c96452091edb84ae9a40f9dc01ba
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871334"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999985"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Hvad er Power BI-skabelonprogrammer?
 
 Med de nye Power BI-*skabelonprogrammer* kan Power BI-partnere udarbejde programmer i Power BI med kun lidt eller ingen kode og udrulle dem til Power BI-kunder.  Denne artikel indeholder en oversigt over Power BI-skabelonprogrammet.
 
-Skabelonprogrammer er en erstatning for de aktuelle tjenesteindholdspakker. Som Power BI-partner kan du oprette indhold, der er klar til brug, for dine kunder og selv udgive det.  
+Skabelonprogrammer er en erstatning for de aktuelle tjenesteindholdspakker. Som Power BI-partner kan du oprette indhold, der er klar til brug, for dine kunder og selv publicere det.  
 
-Du kan udarbejde skabelonprogrammer, som gør det muligt for dine kunder at oprette forbindelse til og instantiere deres egne konti. Som domæneeksperter kan de låse op for data på en måde, så deres erhvervsbrugere nemt kan bruge dem.  
+Du kan udarbejde skabelonprogrammer, som gør det muligt for dine kunder at oprette forbindelse til og instantiere fra deres egne konti. Som domæneeksperter kan de låse op for data på en måde, så deres virksomhedsbrugere nemt kan bruge dem.  
 
-Du kan sende dine skabelonprogrammer til Cloud Partner-portalen. Programmerne bliver derefter offentligt tilgængelige i Power BI-programgalleriet (app.powerbi.com/getdata/services) og på Microsoft AppSource (appsource.microsoft.com). Her er en overordnet oversigt over oplevelsen med at oprette en offentlig skabelon.  
+Du kan sende dine skabelonprogrammer til Cloud Partner-portalen. Programmerne bliver derefter offentligt tilgængelige på [markedspladsen til Power BI-programmer](https://app.powerbi.com/getdata/services) og på [Microsoft AppSource](https://appsource.microsoft.com/?product=power-bi). Her er en overordnet oversigt over oplevelsen med at oprette en offentlig skabelon.
+
+## <a name="power-bi-apps-marketplace"></a>Markedsplads til Power BI-programmer
+
+Med Power BI-skabelonprogrammer kan brugere af Power BI Pro eller Power BI Premium få øjeblikkelig indsigt via dashboards og rapporter, der er pakket på forhånd, og som kan forbindes til livedatakilder. Mange Power BI-programmer er allerede tilgængelige på [markedspladsen til Power BI-programmer](https://app.powerbi.com/getdata/services).
+
+|  |
+|     :---:      |
+| [![Foo](./media/service-template-apps-overview/project-web.png)](https://app.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3) [![Foo](./media/service-template-apps-overview/azure-backup.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-azurebackup.pbi-azurebackup-template) [![Foo](./media/service-template-apps-overview/dynamics-sales.png)](https://app.powerbi.com/groups/me/getapps/services/microsoftdynsmb.businesscentral_sales) [![Foo](./media/service-template-apps-overview/forms-pro.png)](https://app.powerbi.com/groups/me/getapps/services/msfp.formsprocustomersatisfaction) |
+|  |
 
 ## <a name="process"></a>Proces
 Der er flere faser i den generelle proces for udvikling og indsendelse af et skabelonprogram. Nogle faser kan indeholde mere end én aktivitet samtidigt.
@@ -48,20 +57,21 @@ Her er de overordnede trin.
 
 1. [Gennemse kravene](#requirements), så du er sikker på, at du opfylder dem. 
 
-1. Udarbejd en rapport i Power BI Desktop. Brug parametre, så du kan gemme den som en fil, som andre kan bruge. 
+2. Udarbejd en rapport i Power BI Desktop. Brug parametre, så du kan gemme den som en fil, som andre kan bruge. 
 
-1. Opret et arbejdsområde til dit skabelonprogram i din lejer i Power BI-tjenesten (app.powerbi.com). 
+3. Opret et arbejdsområde til dit skabelonprogram i din lejer i Power BI-tjenesten (app.powerbi.com). 
 
-1. Importér din .pbix-fil, og føj indhold såsom et dashboard til dit program. 
+4. Importér din .pbix-fil, og føj indhold såsom et dashboard til dit program. 
 
-1. Opret en testpakke for selv at teste skabelonprogrammet i din organisation. 
+5. Opret en testpakke for selv at teste skabelonprogrammet i din organisation. 
 
-1. Hæv testprogrammet til præproduktion for at indsende programmet til validering i AppSource og teste det uden for din egen lejer. 
+6. Hæv testprogrammet til præproduktion for at indsende programmet til validering i AppSource og teste det uden for din egen lejer. 
 
-1. Send indholdet til Cloud Partner-platformen, så det kan blive udgivet. 
+7. Send indholdet til Cloud Partner-platformen, så det kan blive udgivet. 
 
-1. Gå "live" med dit tilbud i AppSource, og flyt programmet til produktion i Power BI.
-2. Nu kan du begynde at udvikle den næste version i præproduktion i det samme arbejdsområde. 
+8. Gå "live" med dit tilbud i AppSource, og flyt programmet til produktion i Power BI.
+
+9. Nu kan du begynde at udvikle den næste version i præproduktion i det samme arbejdsområde. 
 
 ## <a name="requirements"></a>Krav
 
@@ -80,6 +90,19 @@ Hvis du vil udgive et skabelonprogram i Power BI-tjenesten og AppSource, skal du
 - Aktivér datatilpasning, f.eks. understøttelse af brugerdefineret forbindelse og konfiguration af parametre af installationsprogrammet.
 
 Du kan finde flere forslag under [Tip til udarbejdelse af skabelonprogrammer i Power BI](service-template-apps-tips.md).
+
+## <a name="known-limitations"></a>Kendte begrænsninger
+
+| Funktion | Kendt begrænsning |
+|---------|---------|
+|Indhold:  Datasæt   | Nøjagtigt ét datasæt skal være til stede. Der tillades kun datasæt, som er udarbejdet i Power BI Desktop (.pbix-filer). <br>Understøttes ikke: Datasæt fra andre skabelonprogrammer, datasæt på tværs af arbejdsområder, sideinddelte rapporter (.rdl-filer), Excel-projektmapper |
+|Indhold: Dashboards | Felter i realtid tillades ikke (med andre ord, understøttes push- eller streamingdatasæt ikke) |
+|Indhold: Dataflow | Understøttes ikke: Dataflow |
+|Indhold fra filer | Der tillades kun PBIX-filer. <br>Understøttes ikke: .rdl-filer (sideinddelte rapporter), Excel-projektmapper   |
+| Datakilder | Der tillades datakilder, som understøttes for planlagt dataopdatering i cloudmiljøet. <br>Understøttes ikke: <li> DirectQuery</li><li>Direkte forbindelser (ingen Azure AS)</li> <li>Datakilder i det lokale miljø (personlige gateways og virksomhedsgateways understøttes ikke)</li> <li>Realtid (pushdatasæt understøttes ikke)</li> <li>Sammensatte modeller</li></ul> |
+| Datasæt: på tværs af arbejdsområde | Datasæt på tværs af arbejdsområder er ikke tilladt  |
+| Forespørgselsparametre | Understøttes ikke: Parametre af typen "Any" eller "Binary" blokerer opdateringshandlinger for datasæt |
+| Brugerdefinerede visualiseringer | Der understøttes kun offentligt tilgængelige visualiseringer. [Brugerdefinerede visualiseringer til virksomheder](developer/power-bi-custom-visuals-organization.md) understøttes ikke |
 
 ## <a name="support"></a>Support
 Hvis du vil have support under udvikling, skal du bruge [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Vi overvåger og administrerer aktivt dette websted. Kundehændelser finder hurtigt vej til det relevante team.

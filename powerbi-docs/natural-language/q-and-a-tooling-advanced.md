@@ -7,19 +7,19 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: mohaali
-ms.openlocfilehash: d1ae995c3e98befe776ac091a0312e281e97022e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64a6294ca30901c61928eca068ab4ebbb3d39638
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875342"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958511"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Rediger sprogligt skema for Spørgsmål og svar, og tilføj udtryk i Power BI Desktop 
 Det er effektivt, når du bruger almindelige udtryk og naturligt sprog til dataforespørgsler. Det er endda endnu mere effektivt, når dine data svarer. Når du stiller et spørgsmål i Spørgsmål og svar i Power BI, forsøger den så vidt muligt at finde det rette svar. Men du kan forbedre svarene og få endnu bedre interaktioner med Spørgsmål og svar. En måde er at redigere det sproglige skema. 
 
-Det hele starter med dine virksomhedsdata.  Jo bedre datamodellen er, jo nemmere er det for brugere at få gode svar. Du kan f.eks. forbedre modellen ved at tilføje et sprogligt skema, der definerer og kategoriserer terminologi og relationer mellem tabel- og kolonnenavne i dit datasæt. Power BI Desktop er det sted, hvor du administrerer dine sproglige skemaer. 
+Det hele starter med dine virksomhedsdata.  Jo bedre datamodellen er, jo nemmere er det for brugere at få gode svar. Du kan f.eks. forbedre modellen ved at tilføje et sprogligt skema, der definerer og kategoriserer terminologi og relationer mellem tabel- og kolonnenavne i dit datasæt. Power BI Desktop er det sted, hvor du administrerer dine sproglige skemaer. 
 
-Udarbejdelse af Spørgsmål og svar består af to dele.  For det første er der forberedelsen også kaldet *udformning*.  For det andet skal der stilles spørgsmål, og dataene skal udforskes også kaldet *forbrug*. I nogle firmaer kan medarbejdere, der kaldes *designere af datamodeller*, eller it-administratorer være dem, der samler datasættene, opretter datamodellerne og publicerer datasættene i Power BI.  Nogle andre medarbejdere er dem, der "forbruger" dataene online.  I andre firmaer kan disse roller være kombineret. 
+Udarbejdelse af Spørgsmål og svar består af to dele.  For det første er der forberedelsen også kaldet *udformning*.  For det andet skal der stilles spørgsmål, og dataene skal udforskes også kaldet *forbrug*. I nogle firmaer kan medarbejdere, der kaldes *designere af datamodeller*, eller it-administratorer være dem, der samler datasættene, opretter datamodellerne og publicerer datasættene i Power BI.  Nogle andre medarbejdere er dem, der "forbruger" dataene online.  I andre firmaer kan disse roller være kombineret. 
 
 Denne artikel er henvendt til designere af datamodeller, som er de personer, der optimerer datasæt, så de bedst mulige resultater fra Spørgsmål og svar leveres. 
 

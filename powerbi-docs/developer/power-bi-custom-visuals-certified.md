@@ -8,99 +8,101 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 05/9/2019
-ms.openlocfilehash: 373d57b871953f1afe02212ff0a1bbdb633cac4d
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.date: 12/02/2019
+ms.openlocfilehash: 0a39496ade27cd45fae116eea92ef4b472e04582
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565247"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999738"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Få en Power BI-visualisering certificeret
 
-## <a name="what-are-_certified_-power-bi-visuals"></a>Hvad er **_certificerede_** Power BI-visualiseringer?
+Certificerede Power BI-visualiseringer er visualiseringer på *Marketplace*, der opfylder visse *angivne kodekrav*, som *Microsoft Power BI-teamet* har testet og godkendt. Testene er designet til at kontrollere, at visualiseringen ikke tilgår eksterne tjenester eller ressourcer.
 
-Certificerede Power BI-visualiseringer er visualiseringer på **Marketplace**, der opfylder visse **angivne kodekrav**, som **Microsoft Power BI-teamet** har testet og godkendt. Når en brugerdefineret visualisering er certificeret, indeholder den flere funktioner. Det kan f.eks. være, at du kan [eksportere til PowerPoint](../consumer/end-user-powerpoint.md), og du kan få vist visualiseringen i modtagne mails, når en bruger [abonnerer på rapportsider](../consumer/end-user-subscribe.md).
+Certificerede Power BI-visualiseringer og [Power BI-standardvisualiseringer](power-bi-custom-visuals.md) bruges på samme måde. De kan føjes til [Power BI Desktop](../desktop-what-is-desktop.md) og [Power BI-tjenesten](../power-bi-service-overview.md) og blive vist via [Power BI – Mobil](../consumer/mobile/mobile-apps-for-mobile-devices.md) og [Power BI Embedded](embedding.md).
 
-**Certificerede Power BI-visualiseringer** bruges på samme måde som [Power BI-standardvisualiseringer](power-bi-custom-visuals.md). Certificerede Power BI-visualiseringer kan føjes til **Power BI-tjenesten**, en **Power BI Desktop-rapport** og blive vist vha. **Power BI – Mobil** og **Power BI Embedded**.
+Certificeringsprocessen er valgfri. Det er op til udviklerne at beslutte, om de vil have deres Power BI-visualiseringer på markedspladsen certificeret. Når en Power BI-visualisering er blevet certificeret, indeholder den flere funktioner. Du kan f.eks. [eksportere til PowerPoint](../consumer/end-user-powerpoint.md) eller få vist visualiseringen i modtagne mails, når en bruger [abonnerer på rapportsider](../consumer/end-user-subscribe.md).
 
-De udførte tests er udviklet for at kontrollere, at visualiseringen ikke har adgang til eksterne tjenester eller ressourcer. **Microsoft** er *ikke* forfatter af Power BI-visualiseringer fra tredjepart, og kunderne rådes til at kontakte forfatteren direkte for at kontrollere funktionaliteten af sådanne visualiseringer.
+Ikke-certificerede Power BI-visualiseringer er ikke nødvendigvis ensbetydende med usikre visualiseringer. Nogle visualiseringer er ikke certificeret, fordi de ikke er i overensstemmelse med et eller flere af [certificeringskravene](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Det kan f.eks. være i forbindelse med oprettelse af forbindelse til en ekstern tjeneste, som f.eks. kortvisualiseringer eller visualiseringer, der anvender kommercielle biblioteker.
 
-Certificeringsprocessen er en valgfri proces, og det er op til udviklerne at beslutte, om de ønsker, at deres visualiseringer på Marketplace skal certificeres.  
+Hvis du er webudvikler, der er interesseret i at oprette dine egne Power BI-visualiseringer og føje dem til  [Microsoft AppSource](https://appsource.microsoft.com), kan du starte med selvstudiet  [Udvikling af en Power BI-visualisering](visuals/custom-visual-develop-tutorial.md).
 
-**Ikke-certificerede Power BI-visualiseringer** er ikke nødvendigvis ensbetydende med usikre visualiseringer. Nogle visualiseringer er ikke certificeret, fordi de ikke er i overensstemmelse med et eller flere af [certificeringskravene](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Det kan f.eks. være i forbindelse med oprettelse af forbindelse til en ekstern tjeneste, som f.eks. kortvisualiseringer eller visualiseringer, der anvender kommercielle biblioteker.
+> [!NOTE]
+> **Microsoft** er *ikke* forfatteren af Power BI-visualiseringer fra tredjepart. Vi råder kunderne til at kontakte forfatteren af visualiseringen direkte for at bekræfte funktionaliteten af visualiseringer fra tredjepart.
 
-Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til  **[Microsoft AppSource](https://appsource.microsoft.com)** ? Du kan se under  **[Udvikling af en brugerdefineret Power BI-visualisering for at få mere at vide](visuals/custom-visual-develop-tutorial.md)** .
+> [!IMPORTANT]
+> Microsoft kan efter eget skøn fjerne en Power BI-visualisering fra [listen over certificerede visualiseringer](#list-of-power-bi-visuals-that-have-been-certified).
 
-## <a name="removal-of-power-bi-certified-power-bi-visuals"></a>Fjernelse af certificerede Power BI-visualiseringer
+## <a name="certification-requirements"></a>Certificeringskrav
 
-Microsoft kan, efter eget skøn, fjerne en visualisering fra [listen over certificerede visualiseringer](#list-of-power-bi-visuals-that-have-been-certified).
-
-## <a name="getting-a-custom-visualcertified"></a>Hentning af en certificeret brugerdefineret visualisering
-
-### <a name="certification-requirements"></a>Certificeringskrav
-
-Hvis du vil have din brugerdefinerede visualisering [certificeret](#get-a-power-bi-visual-certified), skal du sørge for, at den er i overensstemmelse med følgende:  
-
-* Godkendt af Microsoft AppSource. Din brugerdefinerede visualisering skal findes på vores [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* Brugerdefineret visuelt element er skrevet med version **API v2.5** eller nyere.
-* Et kodelager er tilgængeligt til gennemsyn af Power BI-teamet (f.eks. kildekoden (JavaScript eller TypeScript) i formater, der kan læses af mennesker, og som er tilgængeligt via GitHub).
-
-    >[!Note]
-    > Du behøver ikke at dele din kode offentligt i GitHub.
-* Krav til kodelager:
-   * Skal indeholde det påkrævede minimumantal filer:
-      * .gitignore
-      * capabilities.json
-      * pbiviz.json
-      * package.json
-      * package-lock.json
-      * tsconfig.json
-   * Må ikke indeholde mappen include node_modules (add node_modules til .gitingore-fil)
-   * **npm install**-kommandoen må ikke returnere nogen fejl.
-   * **npm audit**-kommandoen må ikke returnere nogen advarsler med et højt eller moderat niveau.
-   * **pbiviz package**-kommandoen må ikke returnere nogen fejl.
-   * Skal indeholde [TSlint fra Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) uden nogen tilsidesat konfiguration, og denne kommando må ikke returnere nogen lint-fejl.
-   * Den kompilerede pakke for det brugerdefinerede visuelle element skal svare til den sendte pakke (md5-hashen for begge filer skal være ens).
-* Kildekodekrav:
-   * Det visuelle element skal understøtte [Rendering Events-API'en](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
-   * Sørg for, at der ikke køres tilfældig/dynamisk kode (bad: eval(), unsafe to use of settimeout(), requestAnimationFrame(), setinterval(some function with user input), running user input/data).
-   * Sørg for, at DOM manipuleres sikkert (bad: innerHTML, D3.html(<some user/data input>), brug rensning af brugerinput/-data, før det føjes til DOM'en.
-   * Sørg for, at der ikke er nogen javascript-fejl/-undtagelser i browserkonsollen for nogen inputdata. Brugerne kan bruge et visuelt element med et andet interval af uventede data. Det visuelle element må derfor ikke mislykkes. Du kan bruge [denne eksempelrapport](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) som et testdatasæt.
-
-* Hvis nogle egenskaber i capabilities. JSON ændres, skal du sørge for, at de ikke ødelægger den eksisterende brugers rapporter.
-
-* Sørg for, at det visuelle element opfylder [retningslinjerne for visuelle elementer i Power BI](./guidelines-powerbi-visuals.md). **Vandmærker er ikke tilladt**.
-
-* Anvender kun OSS-komponenter, der kan gennemses offentligt (Offentlige JS-biblioteker eller TypeScript. Kildekoden er tilgængelig til gennemsyn og har ikke kendte sikkerhedsrisici). Vi kan ikke bekræfte en brugerdefineret visualisering ved hjælp af en kommerciel komponent.
-
-* Har ikke adgang til eksterne tjenester eller ressourcer, herunder men ikke begrænset til, ingen HTTP/S- eller WebSocket-anmodninger fra Power BI til andre tjenester. 
+Hvis du vil have din Power BI-visualisering [certificeret](#get-a-power-bi-visual-certified), skal du sikre, at Power BI-visualiseringen overholder de krav, der er angivet i dette afsnit. 
 
 > [!TIP]
-> Vi anbefaler, at du bruger EsLint med det sikkerhedsregelsæt, der anvendes som standard, til at validere koden på forhånd inden indsendelse.
+> Det anbefales, at du bruger EsLint med det sikkerhedsregelsæt, der anvendes som standard, til at validere koden på forhånd inden indsendelse.
 
-## <a name="process-for-submitting-a-custom-visual-for-certification"></a>Proces for indsendelse af en brugerdefineret visualisering til certificering
+* Godkendt via Microsoft Sælgerdashboard eller Partnercenter. Din Power BI-visualisering bør være på vores [markedsplads](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
+* Power BI-visualiseringen er skrevet med *API v2.5* eller nyere.
+* Power BI-teamet kan gennemse kodelageret. Det kan f.eks. være et læsevenligt format af kildekoden (JavaScript eller TypeScript), der er tilgængeligt for os via GitHub.
 
-Sådan indsender du en brugerdefineret visualisering til certificering:
+    >[!NOTE]
+    > Du behøver ikke at dele din kode offentligt i GitHub.
 
-1. Send en mail til supportteamet for Power BI-visualiseringer (pbicvsupport@microsoft.com). Du skal inkludere følgende oplysninger i mailen:
-    * Titel: Anmodning om certificering af visualisering
-    * Link til GitHub-lageret, der hoster kildekoden, som kan læse af mennesker
-    * [Overhold kravene](#certification-requirements)
-    * Bestå kodegennemgangen
+* Krav til kodelager:
+  * Disse filer skal være inkluderet:
+    * .gitignore
+    * capabilities.json
+    * pbiviz.json
+    * package.json
+    * package-lock.json
+    * tsconfig.json
+  * Må ikke indeholde mappen *node_modules* (føj *node_modules* til filen .gitingore*).
+  * Kommandoen *npm install* må ikke returnere nogen fejl.
+  * Kommandoen *npm audit* må ikke returnere nogen advarsler med et højt eller moderat niveau.
+  * Kommandoen *pbiviz package* må ikke returnere nogen fejl.
+  * [TSlint fra Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) skal være inkluderet uden nogen tilsidesatte konfigurationer. Denne kommando må ikke returnere nogen lint-fejl.
+   * Den kompilerede pakke for Power BI-visualiseringen skal svare til den indsendte pakke (md5-hashen for begge filer skal være ens).
+* Kildekodekrav:
+   * Power BI-visualiseringen skal understøtte [API'en til gengivelse af hændelse](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
+   * Sørg for, at der ikke køres tilfældig/dynamisk kode (bad: eval(), unsafe to use of settimeout(), requestAnimationFrame(), setinterval(some function with user input), running user input/data).
+   * Sørg for, at DOM manipuleres sikkert (bad: innerHTML, D3.html(<some user/data input>), brug rensning af brugerinput/-data, før det føjes til DOM'en.
+   * Sørg for, at der ikke er nogen javascript-fejl eller -undtagelser i browserkonsollen for nogen inputdata. Brugerne anvender måske din Power BI-visualisering med et andet område af uventede data, så visualiseringen må ikke mislykkes. Du kan bruge denne [eksempelrapport](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) som et testdatasæt.
 
-2. Teamet for Microsoft Power BI-visualiseringer giver dig besked, når din brugerdefinerede visualisering er certificeret og føjet til [listen over certificerede visualiseringer](#list-of-power-bi-visuals-that-have-been-certified) eller afvises med en rapport over de problemer, der skal løses. Det er udviklerens ansvar at have en åben kommunikation med Microsoft og opdatere deres certificerede visualiseringer efter behov.
+* Hvis nogen egenskaber i filen *capabilities.json* ændres, skal du sørge for, at de ikke ødelægger eksisterende brugeres rapporter.
+
+* Sørg for, at Power BI-visualiseringen overholder [retningslinjerne for Power BI-visualiseringer](./guidelines-powerbi-visuals.md).
+    
+* Din kode kan kun bruge OSS-komponenter, der kan gennemses offentligt, f.eks. offentlige Javascript- eller TypeScript-biblioteker. Kildekoden skal være tilgængelig til gennemsyn og ikke have kendte sikkerhedsrisici. Vi kan ikke bekræfte en brugerdefineret visualisering ved hjælp af en kommerciel komponent.
+
+* Power BI-visualiseringen må ikke tilgå eksterne tjenester eller ressourcer. Der må f.eks. ikke sendes nogen HTTP/S- eller WebSocket-anmodninger fra Power BI til nogen tjeneste. 
+
+## <a name="submitting-a-power-bi-visual-for-certification"></a>Indsendelse af en Power BI-visualisering til certificering
+
+Du kan anmode om at få din Power BI-visualisering certificeret af Power BI-teamet via Partnercenter.
+
+>[!TIP]
+>Power BI-certificeringsprocessen kan tage lidt tid. Hvis du opretter en ny Power BI-visualisering, anbefales det, at du publicerer Power BI-visualiseringen via Partnercenter, før du anmoder om Power BI-certificering. Dette sikrer, at publiceringen af din visualisering ikke forsinkes.
+
+Sådan anmoder du om Power BI-certificering:
+
+1. Log på Partnercenter.
+2. På **siden Oversigt** skal du vælge din Power BI-visualisering og gå til siden **Produktkonfiguration**.
+3. Markér afkrydsningsfeltet **Anmod om Power BI-certificering**.
+4. På siden **Gennemse og publicer** i tekstfeltet **Noter til certificering** skal du angive et link til kildekoden og de legitimationsoplysninger, der kræves for at få adgang.
+
+>[!NOTE]
+> Hvis du er midt i en indsendelsesproces for en Power BI-visualisering og skal bruge [Sælgerdashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (det tidligere administrationsværktøj), skal du gennemse instruktionerne til [Indsendelsesproces for certificering via Sælgerdashboard](seller-dashboard.md#seller-dashboard-certification-submission-process).
 
 ## <a name="list-of-power-bi-visuals-that-have-been-certified"></a>Liste over Power BI-visualiseringer, der er blevet certificeret
 
-| Link til AppSource | Link til video |
+| Link | video |
 | --- | --- |
 | [3AG Systems – liggende søjlediagram med relativ varians](https://appsource.microsoft.com/en/product/power-bi-visuals/WA104381912) | |
 | [3AG Systems – søjlediagram med relativ varians](https://appsource.microsoft.com/product/power-bi-visuals/WA104381803) | |
-| [Visuelt element med avanceret kransediagram](https://appsource.microsoft.com/product/power-bi-visuals/WA104381941) | |
-| [Visuelt element med avanceret netværk](https://appsource.microsoft.com/product/power-bi-visuals/WA104381942) | |
-| [Visuelt element med avanceret tidsserie](https://appsource.microsoft.com/product/power-bi-visuals/WA104381943) | |
-| [Visuelt element med avanceret kombinationsdiagram](https://appsource.microsoft.com/product/power-bi-visuals/WA104381944) | |
+| [Visualisering med avanceret kransediagram](https://appsource.microsoft.com/product/power-bi-visuals/WA104381941) | |
+| [Visualisering med avanceret netværk](https://appsource.microsoft.com/product/power-bi-visuals/WA104381942) | |
+| [Visualisering med avanceret tidsserie](https://appsource.microsoft.com/product/power-bi-visuals/WA104381943) | |
+| [Visualisering med avanceret kombinationsdiagram](https://appsource.microsoft.com/product/power-bi-visuals/WA104381944) | |
 | [Aster-diagram](https://appsource.microsoft.com/product/power-bi-visuals/WA104380759) | |
 | [Beyondsoft-kalender](https://appsource.microsoft.com/product/power-bi-visuals/WA104381096) | |
 | [Butterflydiagram fra MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380838) | [Video](https://youtu.be/So5xKMSpVJI) |

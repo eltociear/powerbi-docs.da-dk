@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2019
+ms.date: 12/03/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4ce5eab22538b7abdded2759a4a072fd500575ea
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 889fbce483f839147677789c73d826fa23542731
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699216"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000106"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Konfigurer Kerberos-baseret SSO fra Power BI-tjenesten til datakilder i det lokale miljø
 
@@ -66,6 +66,22 @@ Først skal du undersøge, om der allerede er oprettet et SPN for den domænekon
    ```setspn -a gateway/MyGatewayMachine Contoso\GatewaySvc```
 
    Du kan også angive SPN'et ved hjælp af MMC-snap-in'et for **Active Directory-brugere og -computere**.
+   
+### <a name="add-gateway-service-account-to-windows-authorization-and-access-group-if-required"></a>Føj gatewaytjenestekontoen til Windows Authorization and Access Group, hvis det er nødvendigt
+
+I visse scenarier skal gatewaytjenestekontoen føjes til Windows Authorization and Access Group. Disse scenarier omfatter sikkerhedshærdning af Active Directory-miljøet, og når gatewaytjenestekontoen og de brugerkonti, som gatewayen repræsenterer, befinder sig på forskellige domæner eller områder. Du kan også føje gatewaytjenestekontoen til Windows Authorization and Access Group i situationer, hvor domænet/området ikke er hærdet, men det kræves ikke.
+
+Du kan finde flere oplysninger under [Windows Authorization and Access Group](/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-winauthaccess).
+
+For at fuldføre dette konfigurationstrin skal du gøre følgende for hvert domæne, der indeholder Active Directory-brugere, som gatewaytjenestekontoen skal kunne repræsentere:
+1. Log på en computer på domænet, og start MMC-snap-in'et for Active Directory-brugere og -computere.
+2. Find gruppen **Windows Authorization and Access Group**, der typisk findes i den **indbyggede** objektbeholder.
+3. Dobbeltklik på gruppen, og klik på fanen **Medlemmer**.
+4. Klik på **Tilføj**, og skift placeringen af domænet til det domæne, hvor gatewaytjenestekontoen befinder sig.
+5. Angiv navnet på gatewaytjenestekontoen, og klik på **Kontrollér navne** for at kontrollere, at gatewaytjenestekontoen er tilgængelig.
+6. Klik på **OK**.
+7. Klik på **Anvend**.
+8. Genstart gatewaytjenesten.
 
 ### <a name="decide-on-the-type-of-kerberos-constrained-delegation-to-use"></a>Beslut, hvilken type begrænset Kerberos-delegering der skal bruges
 

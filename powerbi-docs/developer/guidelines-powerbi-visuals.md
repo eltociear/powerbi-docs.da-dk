@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
-ms.openlocfilehash: 10e7ab035f17715bba858fc3b055c5bf47af1331
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 6bf7610a010a72248a3d2fdd96718eea513a68da
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565493"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000083"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Retningslinjer for Power BI-visualiseringer
 Før du [publicerer](https://docs.microsoft.com/power-bi/developer/office-store) din Power BI-visualisering i Microsoft AppSource, så andre kan finde og bruge den, skal du sørge for at følge retningslinjerne for at skabe en fantastisk oplevelse for dine brugere.
@@ -50,7 +50,12 @@ Du kan bruge et pop op-vindue til at forklare, hvordan du køber en licens, når
 
 ### <a name="submission-process"></a>Indsendelsesproces
 
-Udviklere uploader deres IAP Power BI-visualiseringer til Microsoft AppSource via Seller Dashboard, på samme måde som de har gjort det med gratis visualiseringer. Udviklere skal skrive følgende i noterne på Seller Dashboard for at angive, at den indsendte Power BI-visualisering har funktioner med apptilkøb: "Visualisering med apptilkøb". Udviklere skal også levere en licensnøgle eller token, så valideringsteamet kan validere IAP-funktionerne. Efter Power BI-visualiseringen er blevet valideret og godkendt, angives "Yderligere køb kan være påkrævet" under prismulighederne for IAP Power BI-visualiseringen i Microsoft AppSource.
+Følg [indsendelsesprocessen](office-store.md#submitting-to-appsource), og naviger derefter til fanen *Produktkonfiguration*, og markér afkrydsningsfeltet *Mit produkt kræver køb af en tjeneste*.
+
+Efter Power BI-visualiseringen er blevet valideret og godkendt, angives "Yderligere køb kan være påkrævet" under prismulighederne for IAP Power BI-visualiseringen i Microsoft AppSource.
+
+>[!NOTE]
+>Hvis din Power BI-visualisering allerede er sendt ved hjælp af [Sælgerdashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store), og du vil tilføje en IAP-funktion, skal du i noterne til Sælgerdashboard skrive "Visualisering med apptilkøb". Du skal også levere en licensnøgle eller et token, så valideringsteamet kan validere IAP-funktionerne.
 
 ## <a name="context-menu"></a>Genvejsmenu
 Genvejsmenuen er den menu, du kommer til ved at højreklikke, som vises, når brugeren holder markøren over en visualisering.
