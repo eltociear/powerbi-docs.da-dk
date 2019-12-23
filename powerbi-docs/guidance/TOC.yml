@@ -40,6 +40,8 @@
           href: report-drillthrough.md
         - name: Vejledning til automatisk dato/klokkeslæt i Power BI Desktop
           href: auto-date-time.md
+        - name: Vejledning til mange-til-mange-relation
+          href: relationships-many-to-many.md
     - name: Hvidbøger
       items:
         - name: Oversigt over whitepapers

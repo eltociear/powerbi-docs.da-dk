@@ -83,8 +83,22 @@
               href: visuals/event-service.md
             - name: Sortering
               href: visuals/sort-options.md
-            - name: Interaktivitetsutils
-              href: visuals/utils-interactivity-selections.md
+            - name: Lokalisering
+              href: visuals/localization.md
+            - name: Hjælpeprogrammer til visualiseringer i Power BI
+              items:
+                - name: Interaktivitetsutils
+                  href: visuals/utils-interactivity-selections.md
+                - name: Formateringshjælpeprogrammer
+                  href: visuals/utils-formatting.md
+                - name: Diagramhjælpeprogrammer
+                  href: visuals/utils-chart.md
+                - name: SVG-hjælpeprogrammer
+                  href: visuals/utils-svg.md
+                - name: Typehjælpeprogrammer
+                  href: visuals/utils-type.md
+                - name: Datavisningshjælpeprogrammer
+                  href: visuals/utils-dataview.md
         - name: Ressourcer
           items:
             - name: Udviklingscenter

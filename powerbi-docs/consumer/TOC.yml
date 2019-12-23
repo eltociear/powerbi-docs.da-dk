@@ -142,6 +142,8 @@
       items:
         - name: Hvad er mobilappsene?
           href: mobile/mobile-apps-for-mobile-devices.md
+        - name: Mød startsiden
+          href: mobile/mobile-apps-home-page.md
     - name: Hurtige introduktioner
       items:
         - name: Udforsk dashboards og rapporter
@@ -198,7 +200,7 @@
               href: mobile/mobile-apps-qr-code.md
             - name: Anmærk og del i mobilappsene
               href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-            - name: Scan en stregkode med appen på din iPhone
+            - name: Scan en stregkode fra Power BI-mobilappen
               href: mobile/mobile-apps-scan-barcode-iphone.md
             - name: Konfigurer ved hjælp af administration af mobilenheder
               href: mobile/mobile-app-configuration.md
