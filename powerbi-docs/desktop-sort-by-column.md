@@ -1,20 +1,20 @@
 ---
-title: Sortér efter kolonne i Power BI Desktop
-description: Sortér efter kolonne i Power BI Desktop
+title: Sorter efter kolonne i Power BI Desktop
+description: Sorter efter kolonne i Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 12/17/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: daf4f2c4aaa010516f90cae54c1e8b6784fb0f64
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 78632db52ae197a1643dcf1f2831e140568bc6fe
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879712"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223428"
 ---
 # <a name="sort-by-column-in-power-bi-desktop"></a>Sortér efter kolonne i Power BI Desktop
 I **Power BI Desktop** og **Power BI-tjenesten** kan du ændre, hvordan en visuel gengivelse ser ud, ved at sortere den efter forskellige datafelter. Hvis du ændrer, hvordan du sorterer en visualisering, kan du fremhæve de oplysninger, du vil formidle, og sikre, at visualiseringen afspejler eller fremhæver den tendens.
@@ -100,4 +100,11 @@ Når vi går tilbage til menuen og vælger **SalesQuantity** igen, bliver visual
 ![Standardsorteringsrækkefølge](media/desktop-sort-by-column/sortbycolumn_7.png)
 
 Med så mange muligheder for sortering af dine visuelle gengivelser bliver det nemt for dig at oprette lige netop det diagram eller billede, du har brug for.
+
+## <a name="next-steps"></a>Næste trin
+
+Du vil måske også være interesseret i følgende artikler:
+
+* [Brug tværgående detaljeadgang i rapport i Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Brug af udsnitsværktøjer i Power BI Desktop](visuals/power-bi-visualization-slicers.md)
 

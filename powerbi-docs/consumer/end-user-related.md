@@ -12,10 +12,10 @@ ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 9e202d22c2ff42a29eb28a8ee154b09f18097d04
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73862272"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Få vist relateret indhold i Power BI-tjenesten
@@ -58,7 +58,7 @@ Find overskriften **Arbejdsområder** i navigationsruden, og vælg et arbejdsomr
 ![arbejdsområder i navigationsruden](./media/end-user-related/power-bi-workspace.png)
 
 
-I et arbejdsområde skal du vælge fanen **Datasæt** og finde ikonet **Få vist relaterede** ![ikonet Få vist relaterede](./media/end-user-related/power-bi-view-related-icon-new.png).
+I et arbejdsområde skal du vælge fanen **Datasæt** og finde ikonet **Få vist relaterede**![ikonet Få vist relaterede](./media/end-user-related/power-bi-view-related-icon-new.png).
 
 ![Fanen Datasæt](./media/end-user-related/power-bi-related-dataset.png)
 

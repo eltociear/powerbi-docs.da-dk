@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: f44e8b44157f62b6b80e16b18a2c80d11e43eb77
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74265316"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Kodestykker til overførsel af indhold fra Power BI Workspace Collection
@@ -230,8 +230,8 @@ I dette kodestykke antager vi, at det datasæt, der skal sendes via push, allere
 ## <a name="next-steps"></a>Næste trin
 
 [Overførselsværktøj i Power BI Embedded](migrate-tool.md)  
-[Integration med Power BI](embedding.md)  
-[Sådan overfører du indhold fra samlinger i arbejdsområdet i Power BI Embedded til Power BI](migrate-from-powerbi-embedded.md)  
+[Integrer med Power BI](embedding.md)  
+[Sådan overfører du indhold i arbejdsområdesamlingen i Power BI Embedded til Power BI](migrate-from-powerbi-embedded.md)  
 [Sådan integrerer du Power BI-dashboards, -rapporter og -felter](embedding-content.md)  
 [Power BI Premium – hvad er det?](../service-premium-what-is.md)  
 [Git-lager til JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)  

@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: 9d0ab5bcffe3b0267b3e07a684c2c7c9bd0fd316
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74265836"
 ---
 # <a name="dataset-properties"></a>Egenskaber for datasæt
@@ -27,7 +27,7 @@ Den aktuelle v1 for datasæts API giver kun mulighed for at oprette et datasæt 
 Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
 ---------|---------|---------|---------|---------
 id     |  Guid       | Entydigt id for datasættet overalt i systemet.        | Sandt        | Falsk        
-navn     | Streng        | Datasættets brugerdefinerede navn.        | Falsk        | Sandt        
+name     | Streng        | Datasættets brugerdefinerede navn.        | Falsk        | Sandt        
 tabeller     | Tabel[]        | Samling af tabeller.        |  Falsk       | Falsk        
 relationer     | Relation[]        | Samling af relationer mellem tabeller.        | Falsk        |  Falsk  
 standardtilstand     | Streng        | Bestemmer, om datasættet sendes via push, streames elle begge dele, med værdierne "Push" og "Streaming".         | Falsk        |  Falsk
@@ -36,7 +36,7 @@ standardtilstand     | Streng        | Bestemmer, om datasættet sendes via push
 
 Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
 ---------|---------|---------|---------|---------
-navn     | Streng        |  Tabellens brugerdefinerede navn. Bruges også som id for tabellen.       | Falsk        |  Sandt       
+name     | Streng        |  Tabellens brugerdefinerede navn. Bruges også som id for tabellen.       | Falsk        |  Sandt       
 kolonner     |  Kolonne[]       |  Samling af kolonner.       | Falsk        |  Sandt       
 målinger     | måling[]        |  Samling af målinger.       | Falsk        |  Falsk       
 isHidden     | Boolesk        | Hvis true, er tabellen skjult for klientværktøjer.        | Falsk        | Falsk        
@@ -45,7 +45,7 @@ isHidden     | Boolesk        | Hvis true, er tabellen skjult for klientværktø
 
 Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
 ---------|---------|---------|---------|---------
-navn     |  Streng        | Kolonnens brugerdefinerede navn.        |  Falsk       | Sandt       
+name     |  Streng        | Kolonnens brugerdefinerede navn.        |  Falsk       | Sandt       
 dataType     |  Streng       |  Understøttede [EDM-datatyper](https://msdn.microsoft.com/library/ee382832.aspx) og begrænsninger. Se [Begrænsninger for datatypen](#DataTypeRestrictions).      |  Falsk       | Sandt        
 formatString     | Streng        | En streng, der beskriver, hvordan værdien skal formateres, når den vises. Hvis du vil vide mere om strengformatering, se [FORMAT_STRING-indholdet](https://msdn.microsoft.com/library/ms146084.aspx).      | Falsk        | Falsk        
 sortByColumn    | Streng        |   Strengnavnet på en kolonne i samme tabel, der bruges til at bestille den aktuelle kolonne.     | Falsk        | Falsk       
@@ -57,7 +57,7 @@ summarizeBy     | Streng        |  Standardmetode for sammenlægning til kolonne
 
 Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
 ---------|---------|---------|---------|---------
-navn     | Streng        |  Målingens brugerdefinerede navn.       |  Falsk       | Sandt        
+name     | Streng        |  Målingens brugerdefinerede navn.       |  Falsk       | Sandt        
 udtryk     | Streng        | Et gyldigt DAX-udtryk.        | Falsk        |  Sandt       
 formatString     | Streng        |  En streng, der beskriver, hvordan værdien skal formateres, når den vises. Hvis du vil vide mere om strengformatering, se [FORMAT_STRING-indholdet](https://msdn.microsoft.com/library/ms146084.aspx).       | Falsk        | Falsk        
 isHidden     | Streng        |  Hvis true, er tabellen skjult for klientværktøjer.       |  Falsk       | Falsk       
@@ -66,7 +66,7 @@ isHidden     | Streng        |  Hvis true, er tabellen skjult for klientværktø
 
 Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet 
 ---------|---------|---------|---------|---------
-navn     | Streng        | Relationens brugerdefinerede navn. Bruges også som id for relationen.        | Falsk       | Sandt        
+name     | Streng        | Relationens brugerdefinerede navn. Bruges også som id for relationen.        | Falsk       | Sandt        
 crossFilteringBehavior     | Streng        |    Relationens retning for filtrering: OneDirection (standard), BothDirections, automatisk       | Falsk        | Falsk        
 fromTable     | Streng        | Navnet på fremmed nøgle-tabellen.        | Falsk        | Sandt         
 fromColumn    | Streng        | Navnet på fremmed nøgle-kolonnen.        | Falsk        | Sandt         

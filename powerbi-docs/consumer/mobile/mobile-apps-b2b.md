@@ -1,19 +1,19 @@
 ---
 title: Få vist Power BI-indhold som ekstern gæstebruger (Azure AD B2B)
 description: Brug Power BI-mobilapps til at få vist indhold, der er delt med dig, fra en ekstern organisation.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/27/2019
-ms.author: mshenhav
-ms.openlocfilehash: f0db77a69bd8845b9448b7c15fedea7663683ec0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/09/2019
+ms.author: painbar
+ms.openlocfilehash: c5e1e0b90f24a81940edab46633f49df41d25fdc
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879328"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219838"
 ---
 # <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Få vist Power BI-indhold, der er delt med dig, fra en ekstern organisation
 
@@ -24,24 +24,24 @@ Gælder for:
 
 | ![iPhone](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/iphone-logo-50-px.png) | ![iPad](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-tablet-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhones |iPad-tablets |Android-telefoner |Android-tablets |
+| iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |
 
 ## <a name="accessing-shared-content"></a>Adgang til delt indhold
 
 **Først skal du have en person fra en ekstern organisation til at dele et element med dig.** Når nogen [deler et element med dig](../../service-share-dashboards.md), enten fra den samme organisation eller fra en ekstern organisation, modtager du en mail med et link til det delte element. Når du følger linket på din mobilenhed, åbnes Power BI-mobilappen. Hvis appen registrerer, at elementet er delt fra en ekstern organisation, opretter appen forbindelse til den pågældende organisation igen med din identitet. Appen indlæser derefter alle de elementer, der blev delt med dig fra den pågældende organisation.
 
-![Åbning af et delt element fra mail i Power BI ](./media/mobile-apps-b2b/mobile-b2b-open-item-email.png)
+![Åbning af et delt element fra mail i Power BI ](./media/mobile-apps-b2b/mobile-b2b-open-item-email-new.png)
 
 > [!NOTE]
 > Hvis dette er det første element, der deles med dig som ekstern gæstebruger, skal du hente invitationen i en browser. Du kan ikke hente invitationen i Power BI-appen.
 
 Så længe du har oprettet forbindelse til en ekstern organisation, vises der en sort overskrift i appen. Denne overskrift angiver, at du ikke har forbindelse til din hjemmeorganisation. Hvis du vil oprette forbindelse til din hjemmeorganisation igen, skal du afslutte gæstetilstand.
 
-![Overskrift i Power BI for gæstebruger](./media/mobile-apps-b2b/mobile-b2b-exit-home.png)
+![Overskrift i Power BI for gæstebruger](./media/mobile-apps-b2b/mobile-b2b-exit-home-new.png)
 
 Selvom du skal have et link til et Power BI-artefakt for at oprette forbindelse til en ekstern organisation, kan du få adgang til alle de elementer, der er delt med dig (ikke kun det element, du har åbnet fra mailen), når din app skifter. Hvis du vil have vist alle elementer, du har adgang til i den eksterne organisation, skal du gå til appmenuen og vælge **Delt med mig**. Under **Apps** finder også du apps, som du kan bruge.
 
-![Appmenu i Power BI for ekstern gæstebruger](./media/mobile-apps-b2b/mobile-b2b-menu.png)
+![Appmenu i Power BI for ekstern gæstebruger](./media/mobile-apps-b2b/mobile-b2b-menu-new.png)
 
 ## <a name="limitations"></a>Begrænsninger
 

@@ -10,10 +10,10 @@ ms.date: 10/21/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: fcff0bf1d6c68b9bdb000855f4984b3664b882c1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73877906"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>Grundlæggende DAX i Power BI Desktop
@@ -209,7 +209,7 @@ Som du kan forestille dig, giver det utrolige og effektive muligheder at kunne d
 
 Svarene er angivet i slutningen af denne artikel.
 
-## <a name="summary"></a>Sammenfatning
+## <a name="summary"></a>Oversigt
 Nu hvor du har en grundlæggende forståelse af de vigtigste begreber i DAX, kan du begynder at oprette DAX-formler til målinger på egen hånd. Det kan være lidt svært at blive fortrolig med DAX, men der er mange ressourcer, du kan bruge. Når du har læst denne artikel og forsøgt dig med nogle af dine egne formler, kan du få mere at vide om andre DAX-begreber og -formler, der kan hjælpe dig med at løse dine forretningsproblemer. Der er mange DAX-ressourcer tilgængelig for dig, hvoraf den vigtigste er [referencen Data Analysis Expressions (DAX)](https://msdn.microsoft.com/library/gg413422.aspx).
 
 Da DAX har eksisteret i flere år i andre Microsoft BI-værktøjer, f.eks. Power Pivot og Analysis Services-tabelmodeller, findes der en stor mængde nyttige oplysninger. Du kan finde flere oplysninger i bøger, hvidbøger og blogs både fra Microsoft og andre, der arbejder professionelt med BI. [DAX Resource Center Wiki on TechNet](https://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx) er også et godt sted at starte.

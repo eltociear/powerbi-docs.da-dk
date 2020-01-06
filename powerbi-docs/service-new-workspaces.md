@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/27/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: bdaac078fa106565f7c11b3cc323840b5d10b579
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 749d8d5b62df87b0e6b29d524e90c694a0e38efe
+ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565347"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622426"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser arbejde i nye arbejdsområder i Power BI
 
@@ -62,7 +62,7 @@ Når du tildeler roller til en brugergruppe, har enkeltpersoner i gruppen adgang
 
 Her er egenskaberne for de fire roller: administratorer, medlemmer, bidragydere og fremvisere. Al denne funktionalitet, undtagen visning og interaktion, kræver en Power BI Pro-licens.
 
-|Egenskab   | Administrator  | Medlem  | Bidragsyder  | Fremviser |
+|Funktion   | Administrator  | Medlem  | Bidragsyder  | Fremviser |
 |---|---|---|---|---|
 | Opdatere og slette arbejdsområdet.  | X  |   |   |   | 
 | Tilføje/fjerne personer, herunder andre administratorer.  | X  |   |   |   |
@@ -111,18 +111,19 @@ Funktionen Arbejdsområde for OneDrive giver dig mulighed for at konfigurere en 
 Power BI synkroniserer ikke tilladelser for brugere eller grupper, der er konfigureret til at have adgang til arbejdsområdet med medlemskabet af Office 365-gruppen. Den bedste fremgangsmåde er at administrere arbejdsområdeadgang via den samme Office 365-gruppe, hvis fillagring du konfigurerer i denne indstilling. 
 
 Læs mere om, hvordan du [angiver og får adgang til Arbejdsområde for OneDrive](service-create-the-new-workspaces.md#workspace-onedrive).  
-   
+
 ## <a name="auditing"></a>Overvågning
+
 Følgende aktiviteter overvåges af Power BI for arbejdsområder i den nye arbejdsområdeoplevelse.
 
-| Brugervenligt navn |   Handlingsnavn |
+| Brugervenligt navn | Handlingsnavn |
 |---|---|
 | Power BI-mappe er oprettet | CreateFolder |
 | Power BI-mappe er slettet | DeleteFolder |
 | Power BI-mappe er opdateret | UpdateFolder |
 | Adgang til Power BI-mappe er opdateret| UpdateFolderAccess |
 
-Læs mere om [overvågning i Power BI](service-admin-auditing.md#activities-audited-by-power-bi).
+Læs mere om [overvågning i Power BI](service-admin-auditing.md).
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 

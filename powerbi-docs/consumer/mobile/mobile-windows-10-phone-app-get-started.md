@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 08/09/2019
 ms.author: mshenhav
 ms.openlocfilehash: b2bfe6157653459c2d7b60b85c9f7e8a3e465e23
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73879057"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Kom i gang med Power BI-mobilapp til Windows 10
@@ -55,7 +55,7 @@ Selv uden at tilmelde dig kan du lege med Power BI- og Reporting Services-eksemp
 Du kan få vist og interagere med eksempler på Power BI-dashboards. Men der er et par ting, du ikke kan gøre med dem. Du kan ikke åbne rapporterne bag dashboardene, dele eksemplerne med andre eller gøre dem til dine favoritter.
 
 1. Tryk på knappen til global navigation ![Knappen til global navigation](././media/mobile-windows-10-phone-app-get-started/power-bi-windows-10-navigation-icon.png) i øverste venstre hjørne.
-2. Tryk på ikonet **Indstillinger** ![Ikonet Indstillinger](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-settings-icon.png), tryk på dit navn, og tryk derefter på **Vis eksempler**.
+2. Tryk på ikonet **Indstillinger**![Ikonet Indstillinger](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-settings-icon.png), tryk på dit navn, og tryk derefter på **Vis eksempler**.
    
    ![Vis eksempler](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-view-samples.png)
 3. Vælg en rolle, og udforsk eksemplet på et dashboard i denne rolle.  
@@ -64,7 +64,7 @@ Du kan få vist og interagere med eksempler på Power BI-dashboards. Men der er 
 
 ### <a name="reporting-services-mobile-report-samples"></a>Reporting Services-mobilrapporteksempler
 1. Tryk på knappen til global navigation ![Knappen til global navigation](././media/mobile-windows-10-phone-app-get-started/power-bi-windows-10-navigation-icon.png) i øverste venstre hjørne.
-2. Tryk på ikonet **Indstillinger** ![](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-settings-icon.png), højreklik eller tryk på **Opret forbindelse til serveren**, og tryk derefter på**Få vist eksempler**.
+2. Tryk på ikonet **Indstillinger**![](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-settings-icon.png), højreklik eller tryk på **Opret forbindelse til serveren**, og tryk derefter på**Få vist eksempler**.
    
    ![](media/mobile-windows-10-phone-app-get-started/power-bi-win10-connect-ssrs-samples.png)
 3. Åbn mappen Retail Reports eller Sales Reports for at se deres KPI'er og mobilrapporter.

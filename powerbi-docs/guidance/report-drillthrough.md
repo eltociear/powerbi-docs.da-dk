@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2019
 ms.author: v-pemyer
-ms.openlocfilehash: b674c621c30491a00c529af7f2fcd9eb87f3ecfa
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: a19e8148a719186cbaefe3203d58a5a98687c067
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74834764"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223615"
 ---
 # <a name="report-page-drillthrough"></a>Detaljeadgang på rapportsiden
 
@@ -63,7 +63,7 @@ Vi anbefaler følgende fremgangsmåder på tidspunktet for oprettelse af rapport
 - **Søgning:** Vær med til at fremme kendskabet til en detaljeadgangsside ved at angive teksten til ikonet for visualheaderen eller føje instruktioner til et tekstfelt. Du kan også designe en overlejring som beskrevet i [dette blogindlæg-](https://alluringbi.com/2019/10/23/overlays-for-true-self-serve-reporting/).
 
 > [!TIP]
-> Det er også muligt at konfigurere detaljeadgang til dine sideinddelte Power BI-rapporter. Det kan du gøre ved at føje links til Power BI-rapporter. Links kan definere [URL-parametre](/blog/url-parameters-for-paginated-reports-are-now-available/).
+> Det er også muligt at konfigurere detaljeadgang til dine sideinddelte Power BI-rapporter. Det kan du gøre ved at føje links til Power BI-rapporter. Links kan definere [URL-parametre](https://powerbi.microsoft.com/blog/url-parameters-for-paginated-reports-are-now-available/).
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -8,10 +8,10 @@ ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
 ms.openlocfilehash: 362c765fb5e739563b8d21eaed53304eddce8acc
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74265718"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Logføring af diagnosticering for Power BI Embedded på Azure
@@ -110,7 +110,7 @@ Programkategorien instruerer ressourcen i at logføre følgende hændelser, og h
 |    Forespørgselsophør    |    Registrerer alle ophørshændelser for forespørgsler, siden sporingen startede.    |
 |    Ophør af VertiPaq-forespørgsel    |    Registrerer alle ophørshændelser for VertiPaq SE-forespørgsler, siden sporingen startede.    |
 |    Overvågningslogout    |    Registrerer alle afbrydelser af forbindelse til programhændelserne, siden sporingen startede.    |
-|    Error    |    Registrerer alle programfejlhændleser, siden sporingen startede.    |
+|    Fejl    |    Registrerer alle programfejlhændleser, siden sporingen startede.    |
 
 <br>
 <br>
@@ -118,7 +118,7 @@ Programkategorien instruerer ressourcen i at logføre følgende hændelser, og h
 | Egenskabsnavn | Eksempel på ophør af VertiPaq-forespørgsel | Beskrivelse af egenskab |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | EventClass | XM_SEQUERY_END | Hændelsesklasse bruges til at kategorisere hændelser. |
-| Hændelsesunderklasse | 0 | Hændelsesunderklasse giver yderligere oplysninger om hver enkelt hændelsesklasse. (for eksempel 0: VertiPaq Scan) |
+| EventSubclass | 0 | Hændelsesunderklasse giver yderligere oplysninger om hver enkelt hændelsesklasse. (for eksempel 0: VertiPaq Scan) |
 | RootActivityId | ff217fd2-611d-43c0-9c12-19e202a94f70 | Id for rodaktivitet. |
 | CurrentTime | 2018-04-06T18:30:11.9137358Z | Tidspunkt, hvor hændelsen startede, når det er tilgængeligt. |
 | StartTime | 2018-04-06T18:30:11.9137358Z | Tidspunkt, hvor hændelsen startede, når det er tilgængeligt. |
@@ -130,9 +130,9 @@ Programkategorien instruerer ressourcen i at logføre følgende hændelser, og h
 | SessionType | Bruger | Sessionstype (hvilken enhed udløste handlingen). |
 | ProgressTotal | 0 | Total status. |
 | IntegerData | 0 | Heltalsdata. |
-| Severity | 0 | Niveau for alvorsgrad for en undtagelse. |
+| Alvorsgrad | 0 | Niveau for alvorsgrad for en undtagelse. |
 | Vellykket | 1 | 1 = succes. 0 = fejl (1 betyder f.eks., at tilladelseskontrol er udført uden fejl, og 0 betyder, at der er fejl i denne kontrol). |
-| Error | 0 | Fejlnummer for en given hændelse. |
+| Fejl | 0 | Fejlnummer for en given hændelse. |
 | ConnectionID | 3 | Entydigt forbindelses-id. |
 | DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | Id'et for det datasæt, som brugerens erklæring kører på. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Sessions-GUID. |

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: bfc1572e31269182e9ca63efbbf6934b90f84b66
-ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
+ms.openlocfilehash: 723cc7b2767f6a5ee4394bca74e507fc688b3af8
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478617"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223647"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Vejledning til DirectQuery-model i Power BI Desktop
 
@@ -87,7 +87,7 @@ En DirectQuery-model kan optimeres på mange måder, som beskrevet i følgende p
 
     En forøgelse af værdien **Maksimale antal forbindelser pr. datakilde** sikrer, at der kan sendes flere forespørgsler (op til det maksimalt angivne antal) til den underliggende datakilde, hvilket er nyttigt, når der er mange visualiseringer på en enkelt side, eller når mange brugere tilgår en rapport samtidigt. Når det maksimale antal forbindelser er nået, sættes yderligere forespørgsler i kø, indtil en forbindelse bliver tilgængelig. En forøgelse af denne grænse resulterer i en større belastning på den underliggende datakilde, så indstillingen garanterer ikke, at den overordnede ydeevne forbedres.
     
-    Når modellen er publiceret til Power BI, afhænger det maksimale antal forespørgsler, der sendes samtidigt til den underliggende datakilde, også af miljøet. Forskellige miljøer (f.eks. Power BI, Power BI Premium eller Power BI-rapportserver) kan hver pålægge forskellige grænser for gennemløb. Du kan finde flere oplysninger om ressourcebegrænsninger for Power BI Premium-kapacitet i [Udrulning og administration af Power BI Premium-kapaciteter](https://docs.microsoft.com/power-bi/whitepaper-powerbi-premium-deployment#premium-capacities).
+    Når modellen er publiceret til Power BI, afhænger det maksimale antal forespørgsler, der sendes samtidigt til den underliggende datakilde, også af miljøet. Forskellige miljøer (f.eks. Power BI, Power BI Premium eller Power BI-rapportserver) kan hver pålægge forskellige grænser for gennemløb. Du kan finde flere oplysninger om ressourcebegrænsninger for Power BI Premium-kapacitet i [Udrulning og administration af Power BI Premium-kapaciteter](https://docs.microsoft.com/power-bi/whitepaper-powerbi-premium-deployment).
 
 ## <a name="optimize-report-designs"></a>Optimer rapportdesign
 

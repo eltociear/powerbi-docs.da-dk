@@ -8,26 +8,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 44da3a20c203bfc50be08b0ed91efa6dfd998204
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: 73b439b870a4f931c2db680c0067a6ea2fdf54ff
+ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882760"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548573"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
 Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når du vil.
 
 ## <a name="upcoming-webinars"></a>Kommende webinarer
-
-**Analyse i virtuel Azure-hændelse: Opnå hurtigere indsigt med Azure Synapse Analytics**
-<br>af Gayle Sheppard og John MacIntyre
-<br>[Tilmeld dig nu](https://info.microsoft.com/WW-Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-Registration.html?ocid=AID2482920_QSG_373413)
-
-**Ni tendenser, der former fremtiden inden for analyse af big data**
-<br>med Vijay Gopalakrishnan
-<br>[Tilmeld dig, og se med den 18. december](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
 
 **Kunstig intelligens på tre måder, der ændrer BI**
 <br>med Justyna Lucznik
@@ -39,6 +31,10 @@ Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når
 
 Kom i gang med disse populære webinarer, når det passer dig
 
+**Analyse i virtuel Azure-hændelse: Opnå hurtigere indsigt med Azure Synapse Analytics**
+<br>af Gayle Sheppard og John MacIntyre
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-On-Demand-Registration.html)
+
 **Sådan ændrer Microsoft BI-databeskyttelse**
 <br>af Anton Fritz og ADI Regev
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
@@ -46,6 +42,10 @@ Kom i gang med disse populære webinarer, når det passer dig
 **Power BI og fremtiden for moderne BI og virksomheds-BI**
 <br>ved Arun Ulag og Amir Netz
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html?LCID=EN-US)
+
+**Ni tendenser, der former fremtiden inden for analyse af big data**
+<br>med Vijay Gopalakrishnan
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
 
 **Introduktion til Power BI**
 <br>ved Miguel Martinez

@@ -10,10 +10,10 @@ ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Share your work
 ms.openlocfilehash: 0b581b9c45cb75d12eea974c0895474015634eb1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73851300"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer og brug apps med dashboards og rapporter i Power BI
@@ -85,11 +85,11 @@ I dette eksempel åbner vi en af Microsofts eksempelapps. På AppSource kan du f
 
 6. Vælg, om du vil udforske eller tilpasse og dele din nye app. Da vi har valgt en Microsoft-eksempelapp, kan vi begynde med at udforske den. 
 
-    ![Udforsk med eksempeldata](./media/end-user-apps/power-bi-explore.png)
+    ![Udforsk ved hjælp af eksempeldata](./media/end-user-apps/power-bi-explore.png)
 
 7.  Din nye app åbnes med et dashboard. *Appdesigneren* kunne have konfigureret, at appen skulle åbne en rapport i stedet for.  
 
-    ![Udforsk med eksempeldata](./media/end-user-apps/power-bi-new-app.png)
+    ![Udforsk ved hjælp af eksempeldata](./media/end-user-apps/power-bi-new-app.png)
 
 
 

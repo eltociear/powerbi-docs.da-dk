@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: db4b6d4915e97aaee65806b0bca7801bf4ce951e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4440db5888eeeab638eab4ea3819107d37bdbdbd
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876239"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223458"
 ---
 # <a name="use-an-external-r-ide-with-power-bi"></a>Brug et eksternt R IDE med Power BI
 Med **Power BI Desktop** kan du bruge dit eksterne R IDE (integreret udviklingsmiljø) til at oprette og afgrænse R scripts og derefter bruge disse scripts i Power BI.
@@ -31,7 +31,7 @@ Fra og med september 2016-versionen af **Power BI Desktop** (version 2.39.4526.3
 Hvis du vil bruge denne funktion, skal du installere en **R-IDE** på din lokale computer. R-programmet er ikke indeholdt, udrullet eller installeret i **Power BI Desktop**, så du skal installere **R** separat på din lokale computer. Du kan vælge, hvilken R-IDE du vil bruge, med følgende indstillinger:
 
 * Du kan installere din foretrukne R-IDE, hvoraf mange er gratis, som f.eks. [overførselssiden Revolution Open](https://mran.revolutionanalytics.com/download/), og [CRAN-lageret](https://cran.r-project.org/bin/windows/base/).
-* **Power BI Desktop** understøtter også [R Studio](https://www.rstudio.com/) og **Visual Studio 2015** med [ *R-værktøjer til Visual Studio*](https://beta.visualstudio.com/vs/rtvs/)-editorer.
+* **Power BI Desktop** understøtter også [R Studio](https://www.rstudio.com/) og **Visual Studio 2015** med [*R-værktøjer til Visual Studio*](/visualstudio/rtvs)-editorer.
 * Du kan også installere en anden R-IDE og få **Power BI Desktop** til at starte denne **R-IDE** ved at gøre en af følgende ting:
   
   * Du kan knytte **. R**-filer til den eksterne IDE, som du ønsker **Power BI Desktop** skal starte.
@@ -82,7 +82,7 @@ Start af en R-IDE direkte fra Power BI Desktop har nogle få begrænsninger:
 * Automatisk eksport af dit script fra din R-IDE til **Power BI Desktop** understøttes ikke.
 * **R-klient**-editoren (RGui.exe) understøttes ikke, fordi selve editoren ikke understøtter åbning af filer.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 Du kan finde yderligere oplysninger om R i Power BI i følgende artikler.
 
 * [Kørsel af R-scripts i Power BI Desktop](desktop-r-scripts.md)

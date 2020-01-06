@@ -10,10 +10,10 @@ ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 96811a2cfd7d08a210c4efd177e989abce16d25d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73876280"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Selvstudium: Facebook-analyse ved hjælp af Power BI Desktop
@@ -66,7 +66,7 @@ Adskil først værdierne dato og tid i kolonnen **created_time**, så den bliver
    
    **Power-forespørgselseditor** i Power BI Desktop åbner i et nyt vindue, og eksempelvisningen af dataene fra Power BI's Facebook-side vises. 
    
-   ![Power-forespørgselseditor](media/desktop-tutorial-facebook-analytics/t_fb_1-intoqueryeditor.png)
+   ![Power Query-editor](media/desktop-tutorial-facebook-analytics/t_fb_1-intoqueryeditor.png)
    
 2. Vælg kolonnen **created_time**. Bemærk, at datatypen Tekst i øjeblikket anvendes, hvilket betegnes med et ikon af typen **ABC** i kolonneoverskriften. Højreklik på overskriften, og vælg **Opdel kolonne > Efter separator** i rullemenuen, eller vælg **Opdel kolonne > Efter separator** under **Transformér** på fanen Hjem på båndet.  
    

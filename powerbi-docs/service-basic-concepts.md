@@ -12,10 +12,10 @@ ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: f86b9ae056770240485ff1984be4714faec9dc83
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74128351"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundlæggende begreber for designere i Power BI-tjenesten
@@ -60,7 +60,7 @@ Der er to typer arbejdsområder: *Mit arbejdsområde* og *arbejdsområder*.
 - *Mit arbejdsområde* er et personligt arbejdsområde til Power BI-kunder, hvor de kan arbejde med dit indhold. Kun du har adgang til dit Mit arbejdsområde. Du kan dele dashboards og rapporter fra Mit arbejdsområde. Hvis du vil samarbejde om dashboards og rapporter eller oprette en app, skal du arbejde i et arbejdsområde.      
 -  *Arbejdsområder* bruges til at samarbejde og dele indhold med kolleger. Du kan føje kolleger til dine arbejdsområder og samarbejde om dashboards, rapporter, projektmapper og datasæt. Med en enkelt undtagelse skal alle medlemmer af arbejdsområdet have Power BI Pro-licenser. Læs mere om de [nye arbejdsområder](service-create-the-new-workspaces.md). 
 
-    Arbejdsområder er også de steder, du opretter, publicerer og administrerer *applikationer* for din organisation. Tænk på arbejdsområder som en form for midlertidige områder og objektbeholdere for det indhold, der udgør en Power BI-applikation. Hvad er en *applikation*? Det er en samling af dashboards og rapporter, der er skabt til at levere vigtige metrikværdier til Power BI-brugerne i din organisation. Applikationer er interaktive, men forbrugerne kan ikke redigere dem. Forbrugerne af applikationerne (dvs. de kolleger, der har adgang til applikationerne) behøver ikke nødvendigvis at have Pro-licenser.  
+    Arbejdsområder er også de steder, du opretter, publicerer og administrerer *applikationer* for din organisation. Tænk på arbejdsområder som en form for midlertidige områder og objektbeholdere for det indhold, der udgør en Power BI-applikation. Hvad er en *app*? Det er en samling af dashboards og rapporter, der er skabt til at levere vigtige metrikværdier til Power BI-brugerne i din organisation. Applikationer er interaktive, men forbrugerne kan ikke redigere dem. Appforbrugere (dvs. de kolleger, der har adgang til appsene) behøver ikke nødvendigvis at have Pro-licenser.  
 
 Hvis du vil vide mere om deling generelt, kan du starte med [Måder at dele dashboards for dit arbejde på](service-how-to-collaborate-distribute-dashboards-reports.md).
 
@@ -106,13 +106,13 @@ Lad os fortsætte med næste emne: rapporter.
 * [Eksempel på datasæt til Power BI](sample-datasets.md)
 
 ## <a name="reports"></a>Rapporter
-En Power BI-rapport er en eller flere sider med visualiseringer, f.eks. kurvediagrammer, kort og træstrukturdiagrammer. Visualiseringer kaldes også **_visualiseringer_** . Alle visualiseringerne i en rapport stammer fra et enkelt datasæt. Du kan oprette rapporter fra bunden i Power BI, importere dem med dashboards, som kolleger deler med dig, eller Power BI kan oprette dem, når du opretter forbindelse til datasæt fra Excel, Power BI Desktop, databaser og SaaS-applikationer.  Når du f.eks. opretter forbindelse til en Excel-projektmappe, der indeholder Power View-ark, opretter Power BI en rapport, der er baseret på de ark. Og når du opretter forbindelse til en SaaS-applikation, importerer Power BI en færdigbygget rapport.
+En Power BI-rapport er en eller flere sider med visualiseringer, f.eks. kurvediagrammer, kort og træstrukturdiagrammer. Visualiseringer kaldes også **_visualiseringer_** . Alle visualiseringerne i en rapport stammer fra et enkelt datasæt. Du kan oprette rapporter fra bunden i Power BI, importere dem med dashboards, som kolleger deler med dig, eller Power BI kan oprette dem, når du opretter forbindelse til datasæt fra Excel, Power BI Desktop, databaser og SaaS-programmer.  Når du f.eks. opretter forbindelse til en Excel-projektmappe, der indeholder Power View-ark, opretter Power BI en rapport, der er baseret på de ark. Og når du opretter forbindelse til et SaaS-program, importerer Power BI en færdigbygget rapport.
 
 Der er to forskellige tilstande, hvor du kan få vist og interagere med rapporter: *Læsevisning* og *Redigeringsvisning*. Når du åbner en rapport, åbnes den i Læsevisning. Hvis du har redigeringstilladelser, kan du se **Rediger rapport** i øverste venstre hjørne, og du kan få vist rapporten i Redigeringsvisning.  Hvis en rapport er i et arbejdsområde, kan alle med rollen *administrator*, *medlem* eller *bidragyder* redigere den. De har adgang til alle egenskaberne til udforskning, design, oprettelse og deling i Redigeringsvisning for den pågældende rapport. De personer, de deler rapporten med, kan udforske og interagere med rapporten i Læsevisning.   
 
 Når du åbner et arbejdsområde, vises de tilknyttede rapporter under fanen **Rapporter**. Hver rapport på listen repræsenterer én eller flere siders visualiseringer, der er baseret på et af de underliggende datasæt. Du skal markere en rapport for at åbne den.
 
-Når du åbner en applikation, får du vist et dashboard.  Du kan få adgang til en underliggende rapport ved at vælge et dashboardfelt (mere om felter senere), der er fastgjort fra en rapport. Vær opmærksom på, at ikke alle felter er fastgjort fra rapporter, så du skal muligvis klikke på nogle felter for at finde en rapport.
+Når du åbner en app, får du vist et dashboard.  Du kan få adgang til en underliggende rapport ved at vælge et dashboardfelt (mere om felter senere), der er fastgjort fra en rapport. Vær opmærksom på, at ikke alle felter er fastgjort fra rapporter, så du skal muligvis klikke på nogle felter for at finde en rapport.
 
 Rapporten åbnes som standard i Læsevisning.  Du skal blot vælge **Rediger rapport** for at åbne den i Redigeringsvisning (hvis du har de nødvendige tilladelser).
 
@@ -143,7 +143,7 @@ Hvorfor opretter personer dashboards?  Her er blot nogle af årsagerne:
 * for at overvåge tilstanden for et produkt eller en virksomhed, en afdeling eller marketingkampagne osv.
 * for at oprette en tilpasset visning af et større dashboard – alle de målepunkter, der betyder noget for dig.
 
-Når du åbner et arbejdsområde, vises de tilknyttede dashboards under fanen **Dashboards**. Du skal vælge et dashboard for at åbne det. Når du åbner en applikation, vises et dashboard.  Hvert enkelt dashboard repræsenterer en brugerdefineret visning af nogle undersæt af de underliggende datasæt.  Hvis du ejer dashboardet, har du også redigeringsadgang til den/de underliggende datasæt og rapporter.  Hvis dashboardet er delt med dig, kan du interagere med dashboardet og de underliggende rapporter, men kan ikke gemme ændringer.
+Når du åbner et arbejdsområde, vises de tilknyttede dashboards under fanen **Dashboards**. Du skal vælge et dashboard for at åbne det. Når du åbner en app, vises et dashboard.  Hvert enkelt dashboard repræsenterer en brugerdefineret visning af nogle undersæt af de underliggende datasæt.  Hvis du ejer dashboardet, har du også redigeringsadgang til den/de underliggende datasæt og rapporter.  Hvis dashboardet er delt med dig, kan du interagere med dashboardet og de underliggende rapporter, men kan ikke gemme ændringer.
 
 Der er mange forskellige måder, som du eller en kollega kan [dele et dashboard](service-share-dashboards.md) på. Power BI Pro er påkrævet for at dele et dashboard og muligvis også for at få vist et delt dashboard.
 
@@ -188,7 +188,7 @@ Brug navigationsruden til at finde og flytte mellem dine arbejdsområder og Powe
 * Udvid og skjul navigationsruden med dette ikon ![ikon for navigationsrude](media/service-basic-concepts/expand-icon.png).
 * Åbn eller administrer dit foretrukne indhold ved at vælge **Favoritter**.
 * Få vist og åbn det indhold, du senest har besøgt, ved at vælge **Seneste**.
-* Få vist, åbn eller slet en applikation ved at vælge **Applikationer**.
+* Få vist, åbn eller slet en app ved at vælge **Apps**.
 * Har en kollega delt indhold med dig? Vælg **Delt med mig** for at søge efter og sortere dette indhold for at finde det, du har brug for.
 * Få vist og åbn dine arbejdsområder ved at vælge **Arbejdsområder**.
 
@@ -229,7 +229,7 @@ Bemærk ikonet "C" efter dashboardtitlen. Dette dashboard er markeret med [datak
 ![Ikon for dataklassificering](media/service-basic-concepts/power-bi-title.png)
 
 ### <a name="6-office-365-app-launcher"></a>6. **Office 365-appstarter**
-Appstarteren giver nem adgang til alle dine Office 365-applikationer med et enkelt klik. Her kan du hurtigt starte din mail, dine dokumenter, din kalender med mere.
+Appstarteren giver nem adgang til alle dine Office 365-apps med et enkelt klik. Her kan du hurtigt starte din mail, dine dokumenter, din kalender med mere.
 
 ![Office-appstarter](media/service-basic-concepts/power-bi-waffle.png)
 

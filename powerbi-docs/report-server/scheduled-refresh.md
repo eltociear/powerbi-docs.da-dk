@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maggies
 ms.openlocfilehash: 90f08abd119e7dfc0bf639eeb2ed8334fbdfa234
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74699009"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Planlagt opdatering af Power BI-rapport på Power BI-rapportserver
@@ -51,7 +51,7 @@ Der kan ikke oprettes en planlagt opdateringsplan for alle Power BI-rapporter. H
 
 Ud over ovennævnte liste er der specifikke scenarier med datakilder i tilstanden *Import*, som du ikke kan oprette opdateringsplaner for.
 
-* Hvis der bruges en *fil-* eller en *mappe-* datakilde, og stien til filen er en lokal sti (f.eks. C:\Users\user\Documents), kan der ikke oprettes en opdateringsplan. Stien skal være en sti, som rapportserveren kan oprette forbindelse til som en netværksshare. Eksempelvis  *\\myshare\Documents*.
+* Hvis der bruges en *fil-* eller en *mappe-* datakilde, og stien til filen er en lokal sti (f.eks. C:\Users\user\Documents), kan der ikke oprettes en opdateringsplan. Stien skal være en sti, som rapportserveren kan oprette forbindelse til som en netværksshare. Eksempelvis *\\myshare\Documents*.
 * Hvis der kan oprettes forbindelse til datakilden udelukkende ved hjælp af OAuth (f.eks. Facebook, Google Analytics, Salesforce osv.), kan der ikke oprettes en cacheopdateringsplan. For øjeblikket understøtter RS ikke OAuth-godkendelse for nogen datakilder, om det så er sideinddelte eller mobile rapporter eller Power BI-rapporter.
 
 ### <a name="memory-limits"></a>Hukommelsesbegrænsninger
