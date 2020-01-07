@@ -28,6 +28,8 @@
           href: dax-countrows.md
         - name: Undgå at konvertere BLANKs til værdier
           href: dax-avoid-converting-blank.md
+        - name: Referencer til kolonner og målinger
+          href: dax-column-measure-references.md
         - name: Bedste praksis i forbindelse med dataflow
           href: ../service-dataflows-best-practices.md
         - name: Vejledning til DirectQuery-model i Power BI Desktop
@@ -42,6 +44,8 @@
           href: auto-date-time.md
         - name: Vejledning til mange-til-mange-relation
           href: relationships-many-to-many.md
+        - name: Deaktiver baggrundsopdatering i Power Query
+          href: power-query-background-refresh.md
     - name: Hvidbøger
       items:
         - name: Oversigt over whitepapers

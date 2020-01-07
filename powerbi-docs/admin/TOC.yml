@@ -20,7 +20,7 @@
           href: ../service-admin-faq.md
         - name: Høj tilgængelighed og ofte stillede spørgsmål om failover
           href: ../service-admin-failover.md
-    - name: Sådan gør du
+    - name: 'Sådan gør du:'
       items:
         - name: Licenser og tilmelding
           items:
@@ -36,7 +36,7 @@
           href: ../service-admin-portal.md
         - name: 'Find brugere, der er logget på'
           href: ../service-admin-access-usage.md
-        - name: Overvågning
+        - name: Spor brugeraktiviteter
           href: ../service-admin-auditing.md
         - name: Spor tjenestetilstand
           href: ../service-admin-health.md
