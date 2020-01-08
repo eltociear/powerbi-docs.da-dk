@@ -15,8 +15,6 @@
               href: power-bi-custom-visuals.md
         - name: Selvstudier
           items:
-            - name: Visuelt koncept
-              href: visuals/power-bi-visuals-concept.md
             - name: Udvikl en Power BI-visualisering
               href: visuals/custom-visual-develop-tutorial.md
             - name: Tilføj formateringsindstillinger
@@ -25,6 +23,10 @@
               href: visuals/unit-tests-introduction.md
         - name: Begreber
           items:
+            - name: Visuel projektstruktur i Power BI
+              href: visuals/visual-project-structure.md
+            - name: Visuelt koncept
+              href: visuals/power-bi-visuals-concept.md
             - name: Visualiseringer til organisationer i Power BI
               href: power-bi-custom-visuals-organization.md
             - name: Retningslinjer for Power BI-visualiseringer
@@ -39,7 +41,7 @@
               href: visuals/objects-properties.md
             - name: Avanceret redigeringstilstand
               href: visuals/advanced-edit-mode.md
-        - name: Sådan gør du
+        - name: 'Sådan gør du:'
           items:
             - name: Få en Power BI-visualisering certificeret
               href: power-bi-custom-visuals-certified.md
@@ -63,6 +65,8 @@
               href: visuals/bookmarks-support.md
             - name: Tilføj understøttelse af genvejsmenuer
               href: visuals/context-menu.md
+            - name: Tilføj understøttelse af detailudledning
+              href: visuals/drill-down-support.md
             - name: Fremhæv data i visualiseringer
               href: visuals/highlight.md
             - name: Tilføj understøttelse af tilstand med høj kontrast
@@ -146,7 +150,7 @@
               href: embedded-faq.md
             - name: Power BI-tilladelser
               href: power-bi-permissions.md
-        - name: Sådan gør du
+        - name: 'Sådan gør du:'
           items:
             - name: Integrer fra en app
               href: embed-from-apps.md
@@ -247,7 +251,7 @@
                   href: api-dataset-properties.md
                 - name: Versionering af datamodel
                   href: api-data-model-versioning.md
-        - name: Sådan gør du
+        - name: 'Sådan gør du:'
           items:
             - name: Konfigurer legitimationsoplysninger
               href: configure-credentials.md
