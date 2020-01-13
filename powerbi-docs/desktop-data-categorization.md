@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 8667823567270680415c2fb0ba2db7846dd968ac
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ef3191d77e2aeb89ff97468bd4bfdc07b0d7afb8
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878320"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761335"
 ---
-# <a name="data-categorization-in-power-bi-desktop"></a>Datakategorisering i Power BI Desktop
+# <a name="specify-data-categories-in-power-bi-desktop"></a>Angiv datakategorier i Power BI Desktop
 I **Power BI Desktop** kan du angive datakategorien for en kolonne, så Power BI Desktop ved, hvordan dens værdier skal behandles i en visualisering.
 
 Når der importeres data i Power BI Desktop, henter du ikke kun selve dataene, du henter også oplysninger som f.eks. tabel- og kolonnenavne, om det er en primær nøgle osv.  Med disse oplysninger angiver Power BI Desktop nogle forudsætninger for, hvordan du får en god standardoplevelse, når du opretter en visualisering. 

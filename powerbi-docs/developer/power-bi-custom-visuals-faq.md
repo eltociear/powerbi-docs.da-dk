@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 9078aaebd49705833d3ad5a15497ab0c2d69a1c3
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.openlocfilehash: 01fe7056c844a9eed96356e478cc23d5593809bd
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "74999715"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759054"
 ---
-# <a name="frequently-asked-questions-about-power-bi-visuals"></a>Ofte stillede spørgsmål om Power BI-visualiseringer
+# <a name="power-bi-visuals-faq"></a>Ofte stillede spørgsmål om visualiseringer i Power BI
 
 ## <a name="organizational-power-bi-visuals"></a>Power BI-visualiseringer til organisationer
 
@@ -52,7 +52,7 @@ Når indstillingen for Power BI-visualiseringer på administrationsportalen hån
 
 ### <a name="what-are-the-advantages-of-power-bi-visuals-in-the-organizational-store"></a>Hvad er fordelene ved Power BI-visualiseringer i organisationslageret?
 
-* Alle får den samme version af visualiseringerne, der styres af Power BI-administratoren. Når administratoren opdaterer versionen af visualiseringerne på administrationsportalen, får alle brugere i virksomheden automatisk den opdaterede version.
+* Alle får den samme version af visualiseringerne, der styres af Power BI-administratoren. Når administratoren opdaterer versionen af visuals på administrationsportalen, får alle brugere i virksomheden automatisk den opdaterede version.
 
 * Det er ikke længere nødvendigt at dele visualiseringsfiler via mail eller delte mapper. Tilbud i organisationslageret er synlige for alle medlemmer, der er logget på.
 
@@ -60,7 +60,7 @@ Når indstillingen for Power BI-visualiseringer på administrationsportalen hån
 
 * Administratorer kan styre, hvilke Power BI-visualiseringer der er tilgængelige i hele organisationen.
 
-* Administratorer kan aktivere/deaktivere visualiseringer til test fra administrationsportalen.
+* Administratorer kan aktivere/deaktivere visuals til test fra administrationsportalen.
 
 ## <a name="certified-power-bi-visuals"></a>Certificerede Power BI-visualiseringer
 
@@ -87,7 +87,7 @@ Test under certificeringsprocessen omfatter, men er ikke begrænset til:
  
 ### <a name="are-certified-power-bi-visual-checked-again-with-every-new-submission-upgrade"></a>Kontrolleres certificerede Power BI-visualiseringer igen ved hver nye indsendelse (opgradering)?
 
-Ja. Hver gang en ny version af en certificeret visualisering sendes til markedspladsen, undergår versionsopdateringen af visualiseringen de samme certificeringskontroller.
+Ja. Hver gang en ny version af en certificeret visualisering sendes til Marketplace, undergår versionsopdateringen af visualiseringen de samme certificeringskontroller.
 
 Certificeringen af den opdaterede version sker automatisk. Hvis der er en overtrædelse, som medfører, at opdateringen afvises, sendes der en mail til udvikleren med en forklaring på, hvad der skal løses.
 

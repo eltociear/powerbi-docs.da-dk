@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: afd85404dd926cab396222d3ba9b4bf62e689054
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ea60400a4522dd496e19d508f13760581c0b2620
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876350"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761243"
 ---
-# <a name="default-member-in-multidimensional-models-in-power-bi"></a>Standardmedlem i flerdimensionelle modeller i Power BI
+# <a name="work-with-multidimensional-models-in-power-bi"></a>Arbejd med flerdimensionelle modeller i Power BI
 
 Du kan oprette forbindelse til flerdimensionelle modeller i Power BI og oprette rapporter, som visualiserer alle mulige forskellige data i modellen. Når du arbejder med flerdimensionelle modeller, anvender Power BI regler for, hvordan data behandles, ud fra hvilken kolonne der er defineret som *standardmedlemmet*. 
 

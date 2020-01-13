@@ -10,16 +10,16 @@ ms.topic: tutorial
 ms.date: 05/28/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 64a7cc62f319162b653742be776a9aa9549f8659
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: 09e4a9cc3e6a5c16f23532f0a4589fdcb1906549
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311464"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759514"
 ---
-# <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel
+# <a name="implement-row-level-security-in-an-analysis-services-tabular-model"></a>Implementer sikkerhed på rækkeniveau i en Analysis Services-tabelmodel
 
-Ved hjælp af et eksempeldatasæt til gennemgang af nedenstående trin viser dette selvstudium, hvordan du implementerer [ **sikkerhed på rækkeniveau**](service-admin-rls.md) i en **Analysis Services-tabelmodel** og bruger den i en Power BI-rapport. 
+Ved hjælp af et eksempeldatasæt til gennemgang af nedenstående trin viser dette selvstudium, hvordan du implementerer [**sikkerhed på rækkeniveau**](service-admin-rls.md) i en **Analysis Services-tabelmodel** og bruger den i en Power BI-rapport. 
 
 * Opret en ny sikkerhedstabel i databasen [**AdventureworksDW2012**](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
 * Opret tabelmodellen med de nødvendige fakta- og dimensionstabeller

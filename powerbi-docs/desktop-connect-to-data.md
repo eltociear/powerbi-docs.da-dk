@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b9e006cb14d391b82c7a1f48ba760ad9c363062c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 61af482ca5a035325a6c3f6c5a661aa8c3fc0985
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878497"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761582"
 ---
-# <a name="connect-to-data-in-power-bi-desktop"></a>Opret forbindelse til data i Power BI Desktop
+# <a name="connect-to-data-sources-in-power-bi-desktop"></a>Opret forbindelse til datakilderne i Power BI Desktop
 I Power BI Desktop kan du nemt oprette forbindelse til en stadig større verden af data. Hvis du ikke har Power BI Desktop, kan du [downloade](https://go.microsoft.com/fwlink/?LinkID=521662) og installere det.
 
 I Power BI Desktop findes der *alle mulige* forskellige datakilder. På følgende billede kan du se, hvordan du opretter forbindelse til data ved at vælge båndet **Filer** og derefter **Hent data \> Flere**.

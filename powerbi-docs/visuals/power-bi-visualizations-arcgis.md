@@ -9,14 +9,14 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: mihart
-ms.openlocfilehash: 1e141c56387e4bbde1741752e40e600c37088e87
-ms.sourcegitcommit: 768e1e4b19fe8c7627010127c2420d63021cb542
+ms.openlocfilehash: 0cbd343203aa0626877e6d4841284eb57869e101
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199671"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75758801"
 ---
-# <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interaktion med ArcGIS-kort i Power BI
+# <a name="interact-with-arcgis-maps-in-power-bi"></a>Interager med ArcGIS-kort i Power BI
 Dette emne skrives af en person, der bruger et ArcGIS-kort i Power BI-tjenesten, på Desktop eller på mobil. Når en designer deler et ArcGIS-kort til Power BI-visualiseringer med dig, er der mange måder, du kan interagere med visualiseringen på.  Du kan få mere at vide om, hvordan du opretter et ArcGIS-kort, i [ArcGIS-kort efter Esri-selvstudium](../visuals/power-bi-visualization-arcgis.md).
 
 Kombinationen af ArcGIS-kort og Power BI tager kort til et helt nyt niveau, som involverer mere end præsentation af punkter på et kort. Rapportdesignere starter med et kort og føjer lag af demografiske data til kortet. Kombinationen af disse placeringsbaserede datalag (f.eks. folketællingsdata) på et kort med rumlige analyser giver en bedre forståelse af dataene i visualiseringerne.

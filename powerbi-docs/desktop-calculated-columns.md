@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 10c6f9f512c1b8c837842247d9dc928e8e065451
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4178dd37acf12efbe8dd00baed4f6b72ab549841
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876620"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762042"
 ---
-# <a name="using-calculated-columns-in-power-bi-desktop"></a>Brug beregnede kolonner i Power BI Desktop
+# <a name="create-calculated-columns-in-power-bi-desktop"></a>Opret beregnede kolonner i Power BI Desktop
 Med beregnede kolonner kan du føje nye data til en tabel, der allerede findes i din model. Men i stedet for at forespørge efter og indlæse værdier i din nye kolonne fra en datakilde kan du oprette en DAX-formel (Data Analysis Expressions), der definerer værdierne i kolonnen. I Power BI Desktop oprettes der beregnede kolonner ved hjælp af funktionen Ny kolonne i rapportvisningen.
 
 I modsætning til brugerdefinerede kolonner, der oprettes som en del af en forespørgsel ved hjælp af Tilføj brugerdefineret kolonne i forespørgselseditoren, er beregnede kolonner, der oprettes i rapportvisningen eller datavisningen baseret på data, du allerede har indlæst i modellen. Du kan f.eks. vælge at sammenkæde værdier fra to forskellige kolonner i to forskellige men relaterede tabeller, udføre addition eller udtrække understrenge.
@@ -30,7 +30,7 @@ Beregnede kolonner beregner resultater ved hjælp af [Data Analysis Expressions]
 DAX-formler ligner Excel-formler. Faktisk har DAX mange af de samme funktioner som Excel. Men DAX-funktioner er udviklet til at arbejde via data, der opdeles eller filtreres interaktivt i en rapport som i Power BI Desktop. I modsætning til Excel, hvor du kan have en forskellig formel for hver række i en tabel, er det sådan, at når du opretter en DAX-formel for en ny kolonne, beregner den et resultat for alle rækker i tabellen. Kolonneværdier genberegnes efter behov, f.eks. når de underliggende data opdateres, og værdier er ændret.
 
 ## <a name="lets-look-at-an-example"></a>Lad os se på et eksempel
-Jeff er shipping manager ved Contoso og vil gerne oprette en rapport, der viser antallet af forsendelser til diverse byer. Jeff har tabellen Geography med separate felter for by og stat. Men Jeff vil gerne have, at rapporten skal vise City, State som en enkelt værdi på samme række. Jeffs Geography-tabel indeholder i øjeblikket ikke det ønskede felt.
+Jeff er shipping manager ved Contoso og vil gerne oprette en rapport, der viser antallet af forsendelser til diverse byer. Jeff har tabellen Geographymed separate felter for by og stat. Men Jeff vil gerne have, at rapporten skal vise City, State som en enkelt værdi på samme række. Jeffs Geography-tabel indeholder i øjeblikket ikke det ønskede felt.
 
 ![](media/desktop-calculated-columns/calccolinpbid_cityandstatefields.png)
 

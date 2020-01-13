@@ -48,6 +48,10 @@
           href: relationships-many-to-many.md
         - name: Deaktiver baggrundsopdatering i Power Query
           href: power-query-background-refresh.md
+        - name: Her skal du bruge sideinddelte rapporter i Power BI
+          href: report-paginated-or-power-bi.md
+        - name: Overfør SQL Server Reporting Services-rapporter til Power BI
+          href: migrate-ssrs-reports-to-power-bi.md
     - name: Hvidbøger
       items:
         - name: Oversigt over whitepapers

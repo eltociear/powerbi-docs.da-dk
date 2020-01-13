@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6bf933203f8dc76d4ede2d25683981cbdf6755f5
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 131101d6e7a23b7c6d8571c89097036f1149a2f3
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73869045"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761536"
 ---
-# <a name="get-data-from-a-web-page-by-providing-an-example"></a>Hent data fra en webside ved at angive et eksempel
+# <a name="get-webpage-data-by-providing-examples"></a>Få websidedata ved at angive eksempler
 
 Ved at hente data fra en webside kan brugere nemt udpakke data fra websider og importere data til **Power BI Desktop**. Men ofte vises data på websider ikke i organiserede tabeller, der er lette at udtrække, så det kan være en udfordring at hente data fra disse sider – også selvom de er strukturerede og konsistente. 
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 73b439b870a4f931c2db680c0067a6ea2fdf54ff
-ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
+ms.openlocfilehash: e3154e5a143de63300e7f5dc87cec518188a3442
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548573"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75837601"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
@@ -21,9 +21,7 @@ Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når
 
 ## <a name="upcoming-webinars"></a>Kommende webinarer
 
-**Kunstig intelligens på tre måder, der ændrer BI**
-<br>med Justyna Lucznik
-<br>[Tilmeld dig, og se med den 8. januar](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html?lcid=EN-US&ocid=mkto_eml_EM581230A1LA1)
+Der er ikke planlagt webinarer endnu. Tjek igen senere for at se flere kommende arrangementer.
 
 >[Kommende webinarer fra Power BI-community'et](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -38,6 +36,10 @@ Kom i gang med disse populære webinarer, når det passer dig
 **Sådan ændrer Microsoft BI-databeskyttelse**
 <br>af Anton Fritz og ADI Regev
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
+
+**Kunstig intelligens på tre måder, der ændrer BI**
+<br>med Justyna Lucznik
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html?lcid=EN-US&ocid=mkto_eml_EM581230A1LA1)
 
 **Power BI og fremtiden for moderne BI og virksomheds-BI**
 <br>ved Arun Ulag og Amir Netz
