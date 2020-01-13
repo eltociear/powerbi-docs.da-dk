@@ -13,7 +13,7 @@
       items:
         - name: Form og kombiner flere datakilder
           href: desktop-shape-and-combine-data.md
-        - name: Importér og analysér data fra en webside
+        - name: Importér og analysér websidedata
           href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
         - name: Analysér salgsdata fra Excel og et OData-feed
           href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
@@ -31,21 +31,21 @@
           href: sample-datasets.md
         - name: Importér og åbn eksempelpakker
           href: sample-tutorial-connect-to-the-samples.md
-        - name: 'Få en introduktion: Eksempel på kunderentabilitet'
+        - name: Eksempel på kunderentabilitet
           href: sample-customer-profitability.md
-        - name: 'Få en introduktion: Eksempel på analyse af it-forbrug'
+        - name: Eksempel på analyse af it-forbrug
           href: sample-it-spend.md
-        - name: 'Få en introduktion: Eksempel på HR'
+        - name: Eksempel på HR
           href: sample-human-resources.md
-        - name: 'Få en introduktion: Eksempel på analyse af salgsmuligheder'
+        - name: Eksempel på analyse af salgsmuligheder
           href: sample-opportunity-analysis.md
-        - name: 'Få en introduktion: Eksempel på indkøbsanalyse'
+        - name: Eksempel på indkøbsanalyse
           href: sample-procurement.md
-        - name: 'Få en introduktion: Eksempel på analyse af detailhandel'
+        - name: Eksempel på analyse af detailhandel
           href: sample-retail-analysis.md
-        - name: 'Få en introduktion: Eksempel på salg og marketing'
+        - name: Eksempel på salg og marketing
           href: sample-sales-and-marketing.md
-        - name: 'Få en introduktion: Eksempel på analyse af leverandørkvalitet'
+        - name: Eksempel på analyse af leverandørkvalitet
           href: sample-supplier-quality.md
         - name: Download projektmappen Økonomisk eksempel
           href: sample-financial-download.md
@@ -57,7 +57,7 @@
           href: desktop-relationships-understand.md
         - name: Gruppér visualiseringer i en rapport
           href: desktop-grouping-visuals.md
-        - name: Brug skabeloner
+        - name: Opret rapportskabeloner
           href: desktop-templates.md
         - name: Arbejd med modelvisning
           href: desktop-modeling-view.md
@@ -65,15 +65,15 @@
           href: desktop-aggregations.md
         - name: Brug sammensatte modeller
           href: desktop-composite-models.md
-        - name: Brug mange til mange-relationer
+        - name: Anvend mange til mange-relationer
           href: desktop-many-to-many-relationships.md
         - name: Administrer lagertilstand
           href: desktop-storage-mode.md
-        - name: Brug tovejskrydsfiltrering
+        - name: Aktivér tovejskrydsfiltrering
           href: desktop-bidirectional-filtering.md
         - name: Om brug af DirectQuery i Power BI
           href: desktop-directquery-about.md
-        - name: 'Power BI-datakilder, der understøttes af DirectQuery'
+        - name: Power BI-datakilder
           href: power-bi-data-sources.md
         - name: Forudsætninger for Power BI-datakilder
           href: desktop-data-source-prerequisites.md
@@ -93,7 +93,7 @@
           href: desktop-create-and-manage-relationships.md
         - name: Arbejd med datavisning
           href: desktop-data-view.md
-        - name: Brug forespørgsler
+        - name: Om Query-editor
           href: desktop-query-overview.md
         - name: Anvend grundlæggende oplysninger om DAX
           href: desktop-quickstart-learn-dax-basics.md
@@ -101,9 +101,9 @@
           href: desktop-relationship-view.md
         - name: Arbejd med rapportvisning
           href: desktop-report-view.md
-        - name: Opret forbindelse til flere datakilder
+        - name: Opret forbindelse til datakilder
           href: desktop-connect-to-data.md
-        - name: Publicer datasæt
+        - name: Publicer datasæt og rapporter
           href: desktop-upload-desktop-files.md
         - name: Føj visualiseringer til en Power BI-rapport (del 1)
           href: visuals/power-bi-report-add-visualizations-i.md
@@ -113,23 +113,25 @@
           href: visuals/power-bi-visualization-customize-title-background-and-legend.md
         - name: Vis elementer uden data i Power BI
           href: desktop-show-items-no-data.md
-        - name: Brug automatisk dato og klokkeslæt
+        - name: Anvend automatisk dato og klokkeslæt
           href: desktop-auto-date-time.md
         - name: Opret forbindelse til data
           items:
             - name: Opret forbindelse til datakilder
               href: desktop-data-sources.md
+            - name: Opret en rapport på en SharePoint-liste
+              href: desktop-sharepoint-online-list.md
             - name: Opret forbindelse til LinkedIn Sales Navigator
               href: desktop-connect-linkedin-sales-navigator.md
-            - name: Hent data fra en webside ved at angive eksempler
+            - name: Få websidedata ved at angive eksempler
               href: desktop-connect-to-web-by-example.md
             - name: Opret forbindelse til datasæt i Power BI service
               href: desktop-report-lifecycle-datasets.md
-            - name: Importér en Excel-projektmappe
+            - name: Importér Excel-projektmapper
               href: desktop-import-excel-workbooks.md
             - name: Opret forbindelse til data med generiske grænseflader i Power BI Desktop
               href: desktop-connect-using-generic-interfaces.md
-            - name: Opret forbindelse til en PDF-fil
+            - name: Opret forbindelse til PDF-filer
               href: desktop-connect-pdf.md
             - name: Opret forbindelse til Adobe Analytics
               href: desktop-connect-adobe-analytics.md
@@ -141,7 +143,7 @@
               href: desktop-python-in-query-editor.md
             - name: Brug et eksternt Python-integreret udviklingsmiljø
               href: desktop-python-ide.md
-            - name: Brug Python til at oprette visualiseringer
+            - name: Opret visualiseringer med Python
               href: desktop-python-visuals.md
             - name: Kør R-scripts
               href: desktop-r-scripts.md
@@ -149,47 +151,47 @@
               href: desktop-r-in-query-editor.md
             - name: Brug et eksternt R-integreret udviklingsmiljø
               href: desktop-r-ide.md
-            - name: Brug R-pakker til at oprette visualiseringer
+            - name: Opret visualiseringer med R-pakker
               href: service-r-packages-support.md
             - name: Angiv data direkte i Power BI Desktop
               href: desktop-enter-data-directly-into-desktop.md
-            - name: Opret forbindelse til en Excel-projektmappe
+            - name: Opret forbindelse til Excel-projektmapper
               href: desktop-connect-excel.md
-            - name: Opret forbindelse til flerdimensionelle modeller
+            - name: Opret forbindelse til flerdimensionelle SSAS-modeller
               href: desktop-ssas-multidimensional.md
-            - name: Opret forbindelse til en .CSV-fil
+            - name: Opret forbindelse til CSV-filer
               href: desktop-connect-csv.md
             - name: Opret forbindelse til en Google BigQuery-database
               href: desktop-connect-bigquery.md
             - name: Opret forbindelse til en Impala-database
               href: desktop-connect-impala.md
-            - name: Opret forbindelse til et OData-feed
+            - name: Opret forbindelse til OData-feeds
               href: desktop-connect-odata.md
             - name: Opret forbindelse til en Amazon Redshift-database
               href: desktop-connect-redshift.md
-            - name: Opret forbindelse til en webside
+            - name: Opret forbindelse til websider
               href: desktop-connect-to-web.md
             - name: Opret forbindelse til et Snowflake-databehandlingswarehouse
               href: desktop-connect-snowflake.md
-            - name: Opret forbindelse til Azure Cost Management-data
+            - name: Opret visualiseringer med Azure Cost Management-connectoren
               href: desktop-connect-azure-cost-management.md
             - name: Opret forbindelse til Microsoft Azure Consumption Insights data
               href: desktop-connect-azure-consumption-insights.md
-            - name: Brug SAP HANA
+            - name: Opret forbindelse til SAP HANA-databaser
               href: desktop-sap-hana.md
             - name: Aktivér kryptering for SAP HANA
               href: desktop-sap-hana-encryption.md
-            - name: Brug Analysis Services-tabeldata
+            - name: Opret forbindelse til Analysis Services-tabeldata
               href: desktop-analysis-services-tabular-data.md
-            - name: Brug DirectQuery
+            - name: Opret forbindelse til datakilder med DirectQuery
               href: desktop-use-directquery.md
-            - name: Opret forbindelse til DirectQuery og SAP Business Warehouse
+            - name: Opret forbindelse til SAP Business Warehouse med DirectQuery
               href: desktop-directquery-sap-bw.md
-            - name: Opret forbindelse til DirectQuery og SAP HANA
+            - name: Opret forbindelse til SAP HANA-datakilder med DirectQuery
               href: desktop-directquery-sap-hana.md
             - name: Anvend indstillingen Antag referentiel integritet
               href: desktop-assume-referential-integrity.md
-            - name: Brug SAP Business Warehouse-connectoren
+            - name: Få adgang til SAP BW-data med SAP BW Connector
               href: desktop-sap-bw-connector.md
             - name: Brug OneDrive for Business-links
               href: desktop-use-onedrive-business-links.md
@@ -197,7 +199,7 @@
               href: service-facebook-connector.md
             - name: 'Tjeneste fra tredjepart: Brug Google Analytics-connectoren'
               href: service-google-analytics-connector.md
-            - name: 'Project Online: Opret forbindelse til data via Power BI Desktop'
+            - name: Opret forbindelse til Project Online-data via Power BI Desktop
               href: desktop-project-online-connect-to-data.md
         - name: Omdan og udform data
           items:
@@ -209,37 +211,37 @@
           items:
             - name: Angiv datakategorier i Power BI Desktop
               href: desktop-data-categorization.md
-            - name: Mærk et stregkodefelt for Power BI-mobilapps
+            - name: Markér stregkodefelter i Power BI til mobilappen
               href: desktop-mobile-barcodes.md
-            - name: Angiv geografiske filtre for Power BI-mobilapps
+            - name: Angiv geografiske filtre i Power BI til mobilappen
               href: desktop-mobile-geofiltering.md
-            - name: Brug beregnede kolonner
+            - name: Opret beregnede kolonner
               href: desktop-calculated-columns.md
-            - name: Brug beregnede tabeller
+            - name: Opret beregnede tabeller
               href: desktop-calculated-tables.md
-            - name: Brug målinger
+            - name: Opret målinger til dataanalyse
               href: desktop-measures.md
             - name: Importér og få vist KPI'er
               href: desktop-import-and-display-kpis.md
         - name: Opret rapporter
           items:
-            - name: Brug automatisk sideopdatering (eksempelvisning)
+            - name: Aktivér automatisk sideopdatering (eksempelvisning)
               href: desktop-automatic-page-refresh.md
-            - name: Brug Effektivitetsanalyse
+            - name: Undersøg rapportelementer med Effektivitetsanalyse
               href: desktop-performance-analyzer.md
-            - name: Føj visuelle elementer til rapporter
+            - name: Føj visualiseringer til rapporter
               href: desktop-visual-elements-for-reports.md
-            - name: Opret værktøjstip baseret på rapportsider
+            - name: Tilføj rapportværktøjstip for at forbedre dine visualiseringer
               href: desktop-tooltips.md
             - name: Eksportér rapporter til PDF-filer
               href: desktop-export-to-pdf.md
-            - name: Brug ruden Analytics
+            - name: Om brugen af ruden Analytics
               href: desktop-analytics-pane.md
-            - name: Brug indsigt til at forklare udsving i visualiseringer (prøveversion)
+            - name: Anvend indsigt til at forklare udsving i visualiseringer (eksempelvisning)
               href: desktop-insights.md
-            - name: 'Brug indsigt til at finde ud af, hvor distributionen varierer i diagrammer (prøveversion)'
+            - name: 'Brug indsigt til at se, hvordan distributioner varierer (eksempelvisning)'
               href: desktop-insights-find-where-different.md
-            - name: Brug bogmærker til at dele indsigt
+            - name: Opret bogmærker for at gemme og dele indsigt
               href: desktop-bookmarks.md
             - name: Arbejd med rapporttemaer
               href: desktop-report-themes.md
@@ -247,21 +249,21 @@
               href: power-bi-report-filter-types.md
             - name: Arbejd med filtre i Power BI-rapporter
               href: power-bi-report-filter.md
-            - name: Brug hurtigmålinger til almindelige beregninger
+            - name: Opret hurtigmålinger til almindelige beregninger
               href: desktop-quick-measures.md
-            - name: Brug What if-parametre til at visualisere variabler
+            - name: Opret og brug What if-parametre til at visualisere variabler
               href: desktop-what-if.md
             - name: Brug detaljeadgangsfunktionen
               href: desktop-drillthrough.md
             - name: Anvend detaljeadgangsfunktionen på tværs af rapporter
               href: desktop-cross-report-drill-through.md
-            - name: Brug gruppering og gruppering
+            - name: Anvend gruppering
               href: desktop-grouping-and-binning.md
-            - name: Brug R til at oprette Power BI-visualiseringer
+            - name: Opret Power BI-visualiseringer med R
               href: desktop-r-visuals.md
-            - name: Brug R-drevne brugerdefinerede visualiseringer
+            - name: Download og brug R-drevne brugerdefinerede visualiseringer
               href: desktop-r-powered-custom-visuals.md
-            - name: Brug gitterlinjer og snap-go-grid
+            - name: Anvend gitterlinjer og fastgørelse til gitter
               href: desktop-gridlines-snap-to-grid.md
             - name: Anvend indstillinger for sidevisning i Power BI-rapporter
               href: power-bi-report-display-settings.md
@@ -277,7 +279,7 @@
               href: desktop-slicer-filter-date-range.md
             - name: 'Opret et udsnit, du kan tilpasse størrelsen på'
               href: power-bi-slicer-filter-responsive.md
-            - name: Brug sikkerhed på rækkeniveau
+            - name: Begræns dataadgang med sikkerhed på rækkeniveau
               href: desktop-rls.md
             - name: Tilpas værktøjstips
               href: desktop-custom-tooltips.md
@@ -287,9 +289,9 @@
               href: service-add-hyperlink-to-text-box.md
             - name: Føj hyperlinks til en tabel
               href: power-bi-hyperlinks-in-tables.md
-            - name: Vis billeder i tabeller
+            - name: 'Vis billeder i en tabel, en matrix eller et udsnit'
               href: power-bi-images-tables.md
-            - name: Anvend brugerdefinerede formatstrenge
+            - name: Vis brugerdefinerede formatstrenge
               href: desktop-custom-format-strings.md
             - name: Anvend betinget tabelformatering
               href: desktop-conditional-table-formatting.md
@@ -297,11 +299,11 @@
               href: desktop-conditional-format-visual-titles.md
             - name: Sortér efter kolonne
               href: desktop-sort-by-column.md
-            - name: Optimer rapporter til Power BI-mobilapps
+            - name: Optimer rapporter til mobilapps
               href: desktop-create-phone-report.md
-            - name: Brug indstillingerne Se data og Se poster
+            - name: Anvend indstillingerne Se data og Se poster
               href: desktop-see-data-see-records.md
-            - name: Tip til oprettelse af rapporter
+            - name: Tip og gode råd til oprettelse af rapporter
               href: desktop-tips-and-tricks-for-creating-reports.md
         - name: Visualiseringer
           items:
@@ -309,9 +311,9 @@
               href: visuals/power-bi-report-visualizations.md
             - name: Skift visualiseringer i Power BI-rapporter
               href: visuals/power-bi-report-change-visualization-type.md
-            - name: Om begrænsninger af datapunkter efter visualiseringstype
+            - name: Anvend datapunktgrænser og strategier efter visualiseringstype
               href: visuals/power-bi-data-points.md
-            - name: 'Vis de data, der er brugt til at oprette visualiseringen'
+            - name: Vis en visualiserings underliggende data
               href: visuals/service-reports-show-data.md
             - name: Kom i gang med farveformatering og akseegenskaber
               href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
@@ -319,7 +321,7 @@
               href: visuals/service-tips-and-tricks-for-color-formatting.md
             - name: Kopiér og indsæt en rapportvisualisering
               href: visuals/power-bi-visualization-copy-paste.md
-            - name: 'Eksportér de data, der bruges til at oprette en visualisering'
+            - name: 'Eksportér de data, der blev brugt til at oprette en visualisering'
               href: visuals/power-bi-visualization-export-data.md
             - name: 'Flyt, tilpas størrelsen på og få en visualisering til at træde frem i en rapport'
               href: visuals/power-bi-visualization-move-and-resize.md
@@ -331,7 +333,7 @@
               href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
             - name: Interager med ArcGIS Maps i Power BI-visualiseringer
               href: visuals/power-bi-visualizations-arcgis.md
-            - name: Opret ArcGIS Maps til Power BI-visualiseringer
+            - name: Opret ArcGIS Maps for Power BI-visualiseringer
               href: visuals/power-bi-visualization-arcgis.md
             - name: Opret og brug basisområdediagrammer
               href: visuals/power-bi-visualization-basic-area-chart.md
@@ -339,7 +341,7 @@
               href: visuals/power-bi-visualization-card.md
             - name: Opret og brug kombinationsdiagrammer
               href: visuals/power-bi-visualization-combo-chart.md
-            - name: Brug visualiseringer af opdelingstræer (eksempelvisning)
+            - name: Opret og brug visualiseringer af opdelingstræer (eksempelvisning)
               href: visuals/power-bi-visualization-decomposition-tree.md
             - name: Opret og brug kransediagrammer
               href: visuals/power-bi-visualization-doughnut-charts.md
@@ -347,17 +349,17 @@
               href: visuals/power-bi-visualization-filled-maps-choropleths.md
             - name: Opret og brug tragtformede diagrammer
               href: visuals/power-bi-visualization-funnel-charts.md
-            - name: Brug visualiseringer af nøglefaktorer
+            - name: Opret og brug visualiseringer af nøgleinfluencere
               href: visuals/power-bi-visualization-influencers.md
-            - name: Om stikprøvetagning af linjer med høj tæthed
+            - name: Stikprøvetagning i forbindelse med højdensitetslinje
               href: desktop-high-density-sampling.md
             - name: Opret og brug KPI-visualiseringer
               href: visuals/power-bi-visualization-kpi.md
-            - name: Brug matrixvisualiseringer
+            - name: Opret og brug matrixvisualiseringer
               href: visuals/desktop-matrix-visual.md
-            - name: Om Spørgsmål og svar i forbindelse med Power BI
+            - name: Om visualiseringer til Spørgsmål og svar i forbindelse med Power BI
               href: visuals/power-bi-visualization-q-and-a.md
-            - name: Brug R-visualiseringer
+            - name: Opret og brug R-visualiseringer
               href: visuals/service-r-visuals.md
             - name: Opret og brug radiale målerdiagrammer
               href: visuals/power-bi-visualization-radial-gauge-charts.md
@@ -403,17 +405,17 @@
               href: desktop-directquery-troubleshoot.md
     - name: Reference
       items:
-        - name: Om datatyper i Power BI Desktop
+        - name: Datatyper i Power BI Desktop
           href: desktop-data-types.md
-        - name: Brug det opdaterede bånd (eksempelvisning)
+        - name: Det opdaterede bånd (eksempelvisning)
           href: desktop-ribbon.md
-        - name: Brug genveje til formeleditor
+        - name: Genveje til formeleditor
           href: desktop-formula-editor.md
-        - name: Konfigurer niveauer for beskyttelse af personlige oplysninger
+        - name: Niveauer for beskyttelse af personlige oplysninger
           href: desktop-privacy-levels.md
-        - name: Om forbindelsesudvidelse
+        - name: Forbindelsesudvidelse
           href: desktop-connector-extensibility.md
-        - name: 'Om tredjepartsconnectors, der er tillid til'
+        - name: 'Tredjepartsconnectors, der er tillid til'
           href: desktop-trusted-third-party-connectors.md
     - name: Ressourcer
       items:
@@ -421,21 +423,21 @@
           href: desktop-videos.md
         - name: Arkiv for Power BI Desktop-opdateringer
           href: desktop-latest-update-archive.md
-        - name: Beskyttelse af personlige oplysninger i Power BI Desktop
+        - name: Erklæring om beskyttelse af personlige oplysninger for Send en smiley i Power BI Desktop
           href: desktop-send-smile-privacy-statement.md
-        - name: Administrer logonformularen til Power BI Desktop
+        - name: 'Administratorer: Administrer logonformularen til Power BI Desktop'
           href: desktop-admin-sign-in-form.md
         - name: Tilgængelighed
           items:
             - name: Om tilgængelighed i Power BI
               href: desktop-accessibility-overview.md
-            - name: Om tilgængelig navigation i Power BI-rapporter
+            - name: Design tilgængelige Power BI-rapporter
               href: desktop-accessibility-creating-reports.md
-            - name: Om tilgængelighedsfunktionerne i Power BI-rapporter
-              href: desktop-accessibility-consuming-tools.md
-            - name: Opret Power BI-rapporter ved hjælp af tilgængelighedsværktøjer
+            - name: Opret Power BI-rapporter med tilgængelighedsværktøjer
               href: desktop-accessibility-creating-tools.md
-            - name: Brug tastaturgenveje i Power BI Desktop
+            - name: Forbrug Power BI-rapporter med tilgængelighedsværktøjer
+              href: desktop-accessibility-consuming-tools.md
+            - name: Tastaturgenveje i Power BI Desktop
               href: desktop-accessibility-keyboard-shortcuts.md
 - name: Power BI-tjeneste
   items:
