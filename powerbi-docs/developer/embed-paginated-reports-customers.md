@@ -10,10 +10,10 @@ ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 11/04/2019
 ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74311440"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder (prøveversion)
@@ -203,7 +203,7 @@ Udfyld oplysningerne om **tenant** med dit lejer-id til Azure. Du kan få disse 
 
 Selvom trinnene til at integrere dine sideinddelte Power BI-rapporter udføres ved hjælp af [REST API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/), oprettes de eksempelkoder, der er beskrevet i denne artikel, med **.NET-SDK'en**.
 
-Når du integrerer sideinddelte Power BI-rapporter til dine kunder i dit program, kræver det, at du har en **Azure AD**-[tjenesteprincipal](embed-service-principal.md) og får et [Microsoft Azure Active Directory-adgangstoken](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) til dit Power BI-program, før du foretager kald til [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/).
+Når du integrerer sideinddelte Power BI-rapporter for kunderne i dit program, kræver det, at du har en **Azure AD**-[tjenesteprincipal](embed-service-principal.md) og får et [Azure AD-adgangstoken](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) til dit Power BI-program, før du foretager kald til [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/).
 
 Hvis du vil oprette Power BI-klienten med dit **adgangstoken**, skal du oprette dit Power BI klientobjekt, som gør det muligt for dig at interagere med [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/). Du kan oprette dit Power BI-klientobjekt ved at omgive **AccessToken** med objektet ***Microsoft.Rest.TokenCredentials***.
 

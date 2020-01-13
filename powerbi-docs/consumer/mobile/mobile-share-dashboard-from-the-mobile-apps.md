@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 232d311e876a5fe01eb6c8091eb7a83669592cbf
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 70ecd56f2823e608aa62deb4a5033f53272d3382
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879090"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220973"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Del et dashboard eller en rapport fra Power BI-mobilappsene
 Gælder for:
@@ -26,120 +26,73 @@ Med en [Power BI Pro-licens](../../service-features-license-type.md) kan du invi
 
 Ved hjælp af Power BI-mobilapps til iOS og Android kan du også [anmærke og dele et snapshot af et felt, en rapport eller en visualisering](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) med andre. 
 
-## <a name="share-from-your-iphone"></a>Del fra din iPhone
-1. Tryk på ikonet **Del** ![delingsikon](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-share-dashboard-icon.png) på handlingslinjen nederst på dashboardet eller rapporten.
+## <a name="share-from-your-iphone-or-ipad"></a>Del fra din iPhone eller iPad
+
+1. Du kan dele et dashboard eller en rapport fra selve dashboardet eller rapporten eller fra startsiden for dashboardet eller rapporten:
+    *  Åbn et dashboard eller en rapport, og tryk på ikonet **Del** ![ ikonet Inviter](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) på handlingslinjen nederst i dashboardet eller rapporten.
+    *  Åbn et dashboard eller en rapportstartside, og tryk på ikonet **Oplysninger** ![Flere oplysninger](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-more-info-icon.png) ud for navnet på dashboardet eller rapporten, og tryk derefter på ikonet **Del** ![ikonet Inviter](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) under fanen Oplysninger, der vises.
+2. Angiv navne, adskilt af kommaer, og en meddelelse, der skal ledsage invitationen. Hvis du vil tillade videredeling, skal indstillingen **Tillad, at modtagerne må videredele** være markeret. Videredeling gør det muligt for dine kollegaer at sende invitationen via mail til andre i organisationen, enten via internettet eller mobilapps.
+3. Tryk på **Send** i øverste højre hjørne.
    
-   ![iPhone-delingsikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-dashboard-invite.png)
-2. Angiv navne, adskilt af kommaer, og en meddelelse, der skal ledsage invitationen.
-3. Hvis du vil tillade videredeling, skal indstillingen **Tillad, at modtagerne må videredele** være markeret.
+   Modtagerne får en invitation via mail med et direkte link til dashboardet eller rapporten. Invitationen udløber efter én måned. Når modtagerne åbner invitationen i Power BI-tjenesten eller Power BI-mobilappen, føjes den til afsnittet **Delt med mig** under deres Power BI-konto. Sådan får du adgang til afsnittet Delt med mig:
    
-   Videredeling gør det muligt for dine kollegaer at sende invitationen via mail til andre i organisationen, enten via internettet eller mobilapps.
-5. Tryk på **Send** i øverste højre hjørne.
-   
-   Modtagerne får en invitation via mail med et direkte link til dashboardet eller rapporten. Invitationen udløber efter én måned. Når de åbner invitationen i en browser eller i Power BI-mobilappen, føjes den til sektionen **Delt med mig** under deres Power BI-konto.
-   
-   ![Delt med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   * Tryk på **Flere indstillinger** (...) på navigationslinjen i Power BI-mobilappen, og vælg ![Delt med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delt med mig**.
+   * Klik på ![Delt med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delt med mig** i navigationsruden til venstre i Power BI-tjenesten.
    
    Læs flere [noter om deling med kolleger](../../service-share-dashboards.md).
 
-### <a name="unshare-from-your-iphone"></a>Stop deling fra din iPhone
+### <a name="unshare-from-your-iphone-or-ipad"></a>Stop deling fra din iPhone eller iPad
 Du kan kun stoppe med at dele, hvis du er ejer.
 
-1. Tryk på ikonet **Del** ![delingsikon](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-share-dashboard-icon.png) på handlingslinjen nederst på dashboardet eller rapporten.
-2. Tryk på **Inviter en kollega**.
-   
-   Du kan se en liste over kolleger, som du har delt dette dashboard eller denne rapport med, vha. disse udtryk:
-   
-   * **Kan få vist**: De kan få vist, men kan ikke dele.
-   * **Kan få vist og invitere**: De kan få vist og dele med andre kolleger.
-1. Tryk på **Rediger**.
-   
-    ![Redigeringsikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-edit-invite-dashboard.png)
-4. Hvis du vil annullere deling, skal du trykke på den røde cirkel ud for et navn og trykke på **Slet**.
+1. Tryk på ikonet **Del**![delingsikon](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) på handlingslinjen nederst på dashboardet eller rapporten.
+2. Tryk på **Delt med**. Du kan se en liste over kolleger, som du har delt dette dashboard eller denne rapport med.
 
-## <a name="share-from-your-ipad"></a>Del fra din iPad
-1. Tryk på ikonet **Del** ![delingsikon](././media/mobile-share-dashboard-from-the-mobile-apps/pbi_ipad_shareiconblk.png) i øverste højre hjørne af dashboardet eller rapporten.
-2. Skriv mailadresser og en meddelelse, der skal ledsage invitationen.
-3. Hvis du vil tillade videredeling, skal indstillingen **Tillad, at modtagerne må videredele** være markeret.
-   
-   Videredeling gør det muligt for dine kollegaer at sende invitationen via mail til andre i organisationen, enten via internettet eller mobilapps. 
+3. Tryk på **Flere indstillinger** (...) ud for navnet på den person, du ikke længere vil dele med, og vælg, om du kun vil fjerne adgangen til det delte dashboard eller også til det underliggende indhold, dashboardet bruger.
 
-4. Tryk på **Send** i øverste højre hjørne.
-   
-   Modtagerne får en invitation via mail med et direkte link til dashboardet eller rapporten. Invitationen udløber efter én måned. Når de åbner invitationen i en browser eller i Power BI-mobilappen, føjes den til sektionen **Delt med mig** under deres Power BI-konto
-   
-   ![Delt med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
-   
-   Læs flere [noter om deling med kolleger](../../service-share-dashboards.md).
 
-### <a name="unshare-from-your-ipad"></a>Stop deling fra din iPad
-Du kan kun stoppe med at dele, hvis du er ejer.
-
-1. Tryk på ikonet **Del** ![delingsikon](././media/mobile-share-dashboard-from-the-mobile-apps/pbi_ipad_shareiconblk.png) i øverste højre hjørne af dashboardet eller rapporten.
-   
-   Du kan se en liste over kolleger, som du har delt dette dashboard eller denne rapport med, vha. disse udtryk:
-   
-   * **Kan få vist**: De kan få vist, men kan ikke dele.
-   * **Kan få vist og invitere**: De kan få vist og dele med andre kolleger.
-2. Tryk på **Rediger**.
-3. Hvis du vil annullere deling, skal du trykke på den røde cirkel ud for et navn og trykke på **Slet**.
 
 ## <a name="share-from-your-android-device"></a>Del fra din Android-enhed
-1. Tryk på **Flere indstillinger** (...) på startsiden for dashboardet eller rapporten, og tryk på **Inviter en kollega**.
+1. Du kan dele et dashboard eller en rapport fra selve dashboardet eller rapporten eller fra startsiden for dashboardet eller rapporten:
+    *  Åbn et dashboard eller en rapport, og tryk på **Flere indstillinger** (...) øverst i dashboardet eller rapporten, og vælg **Inviter en kollega**.
+    *  Åbn et dashboard eller en rapportstartside, og tryk på ikonet **Flere indstillinger** (...) ud for navnet på dashboardet eller rapporten, og tryk derefter på ikonet **Del**  ![ikonet Inviter](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) under fanen Oplysninger, der vises.
+ 
+2. Skriv mailadresser og en meddelelse, der skal ledsage dashboardinvitationen. Ellers sendes en standardmeddelelse i Power BI. Hvis du vil tillade videredeling, skal indstillingen **Tillad, at modtagerne må dele dette dashboard** være markeret. Videredeling gør det muligt for dine kollegaer at sende invitationen via mail til andre i organisationen, enten via browseren eller mobilappsene.
    
-   ![Inviter en kollega](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-tablet-share-dashboard.png)
-2. Eller tryk på invitationsikonet på et dashboard eller i en rapport ![Ikonet Inviter](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png).
+3. Tryk på ikonet **Send**![afsendelsesikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-send-icon.png) i øverste højre hjørne for at sende mailen.
+   
+    Modtagerne får en invitation via mail med et direkte link til dashboardet eller rapporten. Invitationen udløber efter én måned. Når modtagerne åbner invitationen i Power BI-tjenesten eller Power BI-mobilappen, føjes den til afsnittet **Delt med mig** under deres Power BI-konto. Sådan får du adgang til afsnittet Delt med mig:
+   * Tryk på **Flere indstillinger** (...) på navigationslinjen i Power BI-mobilappen, og vælg ![Delt med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delt med mig**.
+   * Klik på ![Delt med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delt med mig** i navigationsruden til venstre i Power BI-tjenesten.
+   
+   Læs flere [noter om deling med kolleger](../../service-share-dashboards.md).
 
-    Hvis du ejer dashboardet, kan du se en liste over kolleger, som du har delt dette dashboard eller denne rapport med, vha. disse noter:
-
-    -   **Kan få vist**: De kan få vist, men kan ikke dele.
-    -   **Kan få vist og dele igen**: De kan få vist og dele med andre kolleger.
-
-1. Skriv mailadresser og en meddelelse, der skal ledsage dashboardinvitationen. Ellers sendes en standardmeddelelse i Power BI.
-2. Hvis du vil tillade videredeling, skal indstillingen **Tillad, at modtagerne må dele dette dashboard** være markeret.
-   
-   Videredeling gør det muligt for dine kollegaer at sende invitationen via mail til andre i organisationen, enten via browseren eller mobilappsene.
-   
-1. Tryk på ikonet **Send** ![afsendelsesikon](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_andr_sendplane.png) i øverste højre hjørne for at sende mailen.
-   
-   Modtagerne får en invitation via mail med et direkte link til dashboardet. Invitationen udløber efter én måned. Når de åbner invitationen i en browser eller i Power BI-mobilappen, føjes den til sektionen **Delt med mig** under deres Power BI-konto
-   
-   ![Delt med mig](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-shared-with-me-left-nav.png)
-   
-   Læs flere [noter om deling af dashboards med kollegaer](../../service-share-dashboards.md).
 
 ### <a name="unshare-from-your-android-device"></a>Stop deling fra din Android-enhed
 Du kan kun stoppe med at dele, hvis du er ejer.
 
-1. Tryk på invitationsikonet i øverste højre hjørne af dashboardet eller rapporten ![Ikonet Inviter](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png). 
-   
-   Du kan se en liste over kolleger, som du har delt dette dashboard eller denne rapport med.
-2. Hvis du vil stoppe med at dele med en kollega, skal du trykke på **X** ud for et navn \> **Fjern**.
+1. Du kan dele et dashboard eller en rapport fra selve dashboardet eller rapporten eller fra startsiden for dashboardet eller rapporten:
+    *  Åbn et dashboard eller en rapport, og tryk på **Flere indstillinger** (...) øverst i dashboardet eller rapporten, og vælg **Inviter en kollega**.
+    *  Åbn et dashboard eller en rapportstartside, og tryk på ikonet **Flere indstillinger** (...) ud for navnet på dashboardet eller rapporten, og tryk derefter på ikonet **Del**  ![ikonet Inviter](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) under fanen Oplysninger, der vises.
+
+2. Nederst på siden **Tilføj pers.** , der åbnes, kan du se en liste over kolleger, som du har delt dette dashboard eller denne rapport med. Tryk på navnet på den kollega, du ikke længere vil dele med.
+3. På siden **Hvem har adgang**, der vises, skal du trykke på ikonet **Fjern** ![ikonet Fjern](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-remove-icon.png) og vælge, om du vil fjerne adgangen til det delte dashboard eller også til det underliggende indhold, dashboardet bruger.
 
 ## <a name="share-from-your-windows-10-device"></a>Del vha. din Windows 10-enhed
-1. Tryk på invitationsikonet på et dashboard eller en rapport ![Ikonet Inviter](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_andr_inviteicon.png).
+
+1. Du kan dele et dashboard eller en rapport fra selve dashboardet eller rapporten eller fra startsiden for dashboardet eller rapporten:
+    * Tryk på ikonet **Del** ![ikonet Inviter](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) på et dashboard eller i en rapport.
+    * Højreklik, eller tryk og hold nede, mens du vælger **Inviter** på startsiden for dashboardet eller rapporten.
    
-   Du kan også højreklikke eller trykke og holde nede, mens du trykker på **Inviter** på startsiden for dashboardet eller rapporten.
+   Hvis du ejer dashboardet, kan du se en liste over kolleger, som du har delt dette dashboard eller denne rapport med.
+
+2. Skriv mailadresser og en meddelelse, der skal ledsage invitationen. Ellers sendes en standardmeddelelse i Power BI. Hvis du vil tillade videredeling, skal indstillingen **Tillad, at modtagerne må dele dette dashboard** være markeret. Videredeling gør det muligt for dine kolleger at dele med andre i organisationen, enten via browseren eller mobilappsene.
    
-   ![Inviter](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10_sharedash.png)
+3. Tryk på ikonet **Send**![afsendelsesikon](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png).
    
-   Hvis du ejer dashboardet, kan du se en liste over kollegaer, som du har delt dette dashboard med, vha. disse noter:
+    Modtagerne får en invitation via mail med et direkte link til dashboardet eller rapporten. Invitationen udløber efter én måned. Når modtagerne åbner invitationen i Power BI-tjenesten eller Power BI-mobilappen, føjes den til afsnittet **Delt med mig** under deres Power BI-konto. Sådan får du adgang til afsnittet Delt med mig:
    
-   **Kan få vist**: De kan få vist, men kan ikke dele.
-   
-   **Kan få vist og dele igen**: De kan få vist og dele med andre kolleger.
-2. Skriv mailadresser og en meddelelse, der skal ledsage invitationen. Ellers sendes en standardmeddelelse i Power BI.
-   
-   ![Dialogboksen Inviter](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-windows-10-share-dashboard.png)
-3. Hvis du vil tillade videredeling, skal indstillingen **Tillad, at modtagerne må videredele** være markeret.
-   
-   Videredeling gør det muligt for dine kolleger at dele med andre i organisationen, enten via browseren eller mobilappsene.
-   
-1. Tryk på ikonet **Send** ![afsendelsesikon](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png).
-   
-   Modtagerne får en invitation via mail med et direkte link til dashboardet eller rapporten. Invitationen udløber efter én måned. Når de åbner invitationen i en browser eller i Power BI-mobilappen, føjes den til sektionen **Delt med mig** under deres Power BI-konto
-   
-   ![Delt med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   * Tryk på **Flere indstillinger** (...) på navigationslinjen i Power BI-mobilappen, og vælg ![Delt med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delt med mig**.
+   * Klik på ![Delt med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delt med mig** i navigationsruden til venstre i Power BI-tjenesten.
    
    Læs flere [noter om deling med kolleger](../../service-share-dashboards.md).
 

@@ -6,21 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/18/2017
-ms.author: mshenhav
-ms.openlocfilehash: c843a3ef8ddfde591dec27ea523cb73857d1a289
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/11/2019
+ms.author: painbar
+ms.openlocfilehash: 7668df00d63fc1bdb8bb0e113fa9ad7e0f029147
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870101"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221360"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Indstil databeskeder i Power BI-mobilapps
 Gælder for:
 
 | ![iPhone](./media/mobile-set-data-alerts-in-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-set-data-alerts-in-the-mobile-apps/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-set-data-alerts-in-the-mobile-apps/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-set-data-alerts-in-the-mobile-apps/android-tablet-logo-50-px.png) | ![Android-tablet](./media/mobile-set-data-alerts-in-the-mobile-apps/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
-| iPhones |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-enheder |
+| iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-enheder |
 
 Du kan indstille beskeder på dashboards i Power BI-mobilapps og i Power BI-tjenesten. Beskeder informerer dig, når dataene på dine dashboards ændres ud over de grænser, du har angivet. Du kan bruge beskeder med de felter, der indeholder et enkelt tal, for eksempel kort og målere, men ikke med data, der streames. Du kan indstille databeskeder på din mobilenhed og få dem vist i Power BI-tjenesten og omvendt. Du kan kun se de databeskeder, du indstiller, også selvom du deler et dashboard eller et øjebliksbillede af et felt.
 
@@ -62,7 +62,8 @@ Du kan administrere individuelle beskeder på din mobilenhed eller [administrere
 
 1. Tryk på et tal- eller målerfelt på et dashboard, som der er oprettet en besked for.  
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual.png)
+   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual_has_alert.png)
+
 2. Tryk på klokkeikonet ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-has-alert-icon.png).  
 3. Tryk på navnet på beskeden for at redigere den, tryk på skyderen for at slå mailbeskeder fra, eller tryk på skraldespanden for at slette beskeden.
    
@@ -148,10 +149,12 @@ Datakilder er ofte indstillet til at blive opdateret dagligt, selvom nogle opdat
 2. Hvis du har indstillet beskeden til at sende en mail til dig, modtager du mail i din indbakke.
    
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alerts-email.png)
-3. Power BI tilføjer en meddelelse i **Meddelelsescenter** og tilføjer et nyt beskedikon på det relevante felt ![](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png).
-4. Tryk på den globale navigationsknap ![](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) for at [åbne dit **meddelelsescenter**](mobile-apps-notification-center.md) og se oplysningerne i beskeden.
+3. Power BI føjer en meddelelse til dit [Meddelelsescenter](mobile-apps-notification-center.md) og føjer en gul prik til klokkeikonet ![klokkeikon](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) på titellinjen (iOS og Android) eller til knappen til global navigation ![knap til global navigation](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) (Windows 10-enheder).
+
+
+4. Tryk på klokkeikonet ![klokkeikon](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) eller knappen til global navigation ![knap til global navigation](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) for at [åbne dit **Meddelelsescenter**](mobile-apps-notification-center.md) og se oplysningerne om de vigtige beskeder.
    
-     ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-notifications.png) 
+     
 
 > [!NOTE]
 > Beskeder fungerer kun i forbindelse med opdaterede data. Når data opdateres, kontrolleres det via Power BI, om der er angivet en besked for disse data. Hvis dataene har nået grænsen for en besked, udløses der en besked.

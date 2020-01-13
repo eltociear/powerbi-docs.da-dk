@@ -10,10 +10,10 @@ ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 92c473b5df6c21509ba32e41d88dd43c265fa3a0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73861424"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Dashboardfelter i Power BI
@@ -51,9 +51,9 @@ Har du brug for hjælp til at forstå de komponenter, der udgør Power BI?  Se [
    
     Herfra kan du:
    
-   * [Åbne den rapport, der blev brugt til at oprette dette felt ](end-user-reports.md) ![rapportikon](./media/end-user-tiles/chart-icon.jpg)  
+   * [Åbn den rapport, der blev brugt til at oprette dette felt ](end-user-reports.md) ![rapportikon](./media/end-user-tiles/chart-icon.jpg)  
    
-   * [Åbn det spørgsmål under Spørgsmål og svar, som blev brugt til at oprette feltet ](end-user-reports.md) ![ikon for Spørgsmål og svar](./media/end-user-tiles/qna-icon.png)  
+   * [Åbn det spørgsmål i Spørgsmål og svar, der blev brugt til at oprette det felt ](end-user-reports.md) ![ikon for Spørgsmål og svar](./media/end-user-tiles/qna-icon.png)  
    
 
    * [Åbn den projektmappe, der blev brugt til at oprette dette felt ](end-user-reports.md) ![regnearksikon](./media/end-user-tiles/power-bi-open-worksheet.png)  
@@ -61,7 +61,7 @@ Har du brug for hjælp til at forstå de komponenter, der udgør Power BI?  Se [
    * [Vis indsigt](end-user-insights.md) ![ikonet for indsigt](./media/end-user-tiles/power-bi-insights.png)
    * [Tilføj en kommentar, og start en diskussion](end-user-comment.md) ![kommentarikon](./media/end-user-tiles/comment-icons.png)
    * [Administrer vigtige beskeder, der er angivet på et dashboardfelt](end-user-alerts.md) ![ikon for vigtig besked](./media/end-user-tiles/power-bi-alert-icon.png)
-   * [Åbn dataene i Excel](end-user-export.md) ![ikonet for eksport](./media/end-user-tiles/power-bi-export-icon.png)
+   * [Åbn dataene i Excel](end-user-export.md) ![ikon for eksport](./media/end-user-tiles/power-bi-export-icon.png)
 
 
 3. Vælg et tomt område på canvasset for at lukke handlingsmenuen.

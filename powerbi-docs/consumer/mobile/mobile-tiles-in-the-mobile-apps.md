@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 570276b8af2862d6aab6dc806cb0c627be8ff157
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b400f429ef1e65a40caea717ab18bc06300f9d76
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870044"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221151"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Udforsk felter i Power BI-mobilappsene
 Kan anvendes med:
@@ -41,10 +41,13 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
    ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-pie.png)
 3. Tryk på **Centrer kort**-ikonet i et kort ![](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) for at centrere kortet efter din nuværende position.
-   
-     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
-4. Tryk på ikonet Del ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-share-icon.png) for at [anmærke og dele et felt](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) med andre.
+
+   ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
+
+4. Tryk på blyantikonet ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png) for at [anmærke et felt](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual) og derefter delingsikonet ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-share-icon.png) for at [dele det med andre](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual).
+
 5. [Føj en besked til feltet](mobile-set-data-alerts-in-the-mobile-apps.md). Hvis værdierne kommer over eller under målene, giver Power BI dig besked.
+
 6. Nogle gange har opretteren af dashboardet føjet et link til et felt. I så fald har det et linkikon ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png), når det er i fokustilstand:
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-tile-link.png)
@@ -54,7 +57,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
     Når du har åbnet linket i Power BI-appen, kan du kopiere linket og åbne det i et browservindue i stedet for.
-7. [Åbn den rapport](mobile-reports-in-the-mobile-apps.md) ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png), som feltet er baseret på.
+7. [Åbn rapporten](mobile-reports-in-the-mobile-apps.md) ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png), som feltet er baseret på.
 8. Hvis du vil forlade fokustilstanden, skal du trykke på feltets navn og derefter trykke på dashboardets navn eller **Mit arbejdsområde**.
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-breadcrumb.png)
@@ -68,7 +71,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
     I fokustilstand kan du:
    
    * Trykke på diagrammet for at flytte værktøjslinjen i et kurvediagram, et liggende eller stående søjlediagram eller et boblediagram og få vist værdierne for et bestemt sted i visualiseringen.  
-   * Trykke på ikonet Del snapshot ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) for at [anmærke og dele feltet](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) med andre.
+   * Tryk på blyantikonet ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png) for at [anmærke et felt](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual) og derefter på ikonet Del øjebliksbillede ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) for at [dele det](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual) med andre.
    * Trykke på ikonet Åbn rapport ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) for at [få vist rapporten](mobile-reports-in-the-mobile-apps.md) i mobilappen.
 3. Nogle gange har opretteren af dashboardet føjet et link til et felt. I så fald vil du, når du trykker på den lodrette ellipse ( **...** ), få vist **Åbn link** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png):
    
@@ -89,7 +92,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
     [Dele et øjebliksbillede af feltet](mobile-windows-10-phone-app-get-started.md).
    
-    Trykke på **Åbn rapport** ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) for at [få vist den bagvedliggende rapport](mobile-reports-in-the-mobile-apps.md).
+    Tryk på **Åbn rapport** ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) for at [få vist den bagvedliggende rapport](mobile-reports-in-the-mobile-apps.md).
    
     [Klikke på linket](../../service-dashboard-edit-tile.md#hyperlink), hvis der er et link. Links kan føre til Power BI-dashboards eller til en ekstern URL-adresse.
 3. Tryk på **Udvid felt** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-focus-mode-icon.png). Det åbnes i fokustilstand, hvor det er lettere at se og udforske feltdataene. I denne tilstand kan du:
@@ -104,7 +107,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
    *I dette liggende søjlediagram vises værdierne for linjen **Decor** øverst i diagrammet.*
    
-   Tryk på ikonet **Fuld skærm** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) for at åbne feltet i fuldskærmsvisning uden navigation og menulinjer.
+   Tryk på ikonet **Fuld skærm**![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) for at åbne feltet i fuldskærmsvisning uden navigation og menulinjer.
    
    > [!NOTE]
    > Du kan også [få vist dashboards og rapporter i fuldskærmsvisning](mobile-windows-10-app-presentation-mode.md) i Power BI-mobilappen til Windows 10.

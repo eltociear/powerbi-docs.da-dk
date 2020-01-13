@@ -6,15 +6,15 @@ ms.reviewer: mohammad ali
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/22/2019
+ms.date: 12/18/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 051803b3d9708289f37271afc02b7802fb52b50e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5dd924f066b6382ed895d81ed0ada5d913c040e6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73862653"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75218150"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Spørgsmål og svar til Power BI-**forbrugere**
 
@@ -67,28 +67,30 @@ Eksempel:
 
 Når du er fortrolig med dataene, kan du vende tilbage til dashboardet og placere markøren i spørgsmålsfeltet. Dette åbner skærmen Spørgsmål og svar.
 
-![skærmen Spørgsmål og svar](media/end-user-q-and-a/power-bi-screen.png) 
+![skærmen Spørgsmål og svar](media/end-user-q-and-a/power-bi-suggested.png) 
 
 Selv inden du begynder at skrive, viser Spørgsmål og svar en ny skærm med forslag som hjælp til at udforme dit spørgsmål. Du får vist udtryk og spørgsmål, der indeholder navnene på tabellerne i de underliggende datasæt, og du kan muligvis tilmed se *udvalgte* spørgsmål, der er oprettet af ejeren af datasættet.
 
 Du kan vælge et af dem for at føje dem til feltet med spørgsmål og derefter tilpasse dem, så de finder et bestemt svar. 
 
-Spørgsmål og svar kan også hjælpe dig med at stille spørgsmål ved hjælp af prompter, automatisk fuldførelse og tip til visualiseringer. 
+![skærmen Spørgsmål og svar](media/end-user-q-and-a/power-bi-result.png) 
+
+Power BI kan også hjælpe dig med at stille spørgsmål ved hjælp af funktioner som prompter, automatisk fuldførelse og tip til visuals. Power BI omfatter denne hjælp til spørgsmål og svar på dashboards, spørgsmål og svar i rapporter og med visualiseringen til Spørgsmål og svar. Disse funktioner beskrives nærmere nedenfor i afsnittet [Opret en visualisering til Spørgsmål og svar ved at skrive en forespørgsel på et naturligt sprog](#create-a-qa-visual-by-typing-a-natural-language-query)
 
 <!-- ![video](../visuals/media/end-user-q-and-a/qna4.gif) -->
 
 
-## <a name="the-qa-visual"></a>Visualiseringen til Spørgsmål og svar
+## <a name="the-qa-visual-in-power-bi-reports"></a>Visualiseringen til Spørgsmål og svar i Power BI-rapporter
 
-Visualiseringen til Spørgsmål og svar giver dig mulighed for at stille spørgsmål på et naturligt sprog og få svar i form af en visualisering. Visualiseringen til Spørgsmål og svar fungerer som en hvilken som helst anden visualisering. Den kan krydsfiltreres/-fremhæves, og den understøtter også bogmærker og kommentarer. 
+Visualiseringen til Spørgsmål og svar giver dig mulighed for at stille spørgsmål på et naturligt sprog og få svar i form af en visualisering. Visualiseringen til Spørgsmål og svar fungerer som en hvilken som helst anden visualisering i en rapport. Den kan krydsfiltreres/-fremhæves, og den understøtter også bogmærker og kommentarer. 
 
 Du kan identificere en visualisering til Spørgsmål og svar på spørgsmålsfeltet øverst. Det er her, du angiver eller skriver spørgsmål ved hjælp af et naturligt sprog. Visualiseringen til Spørgsmål og svar kan bruges igen og igen til at stille spørgsmål om dine data. Når du forlader rapporten, nulstilles visualiseringen til Spørgsmål og svar til standardindstillingen. 
 
 ![Skærmbillede af standardvisualiseringen til Spørgsmål og svar](media/end-user-q-and-a/power-bi-q-and-a-default.png)
 
 
-## <a name="use-the-qa-visual"></a>Brug visualiseringen til Spørgsmål og svar
-Hvis du vil bruge visualiseringen til Spørgsmål og svar, skal du enten vælge et af de foreslåede spørgsmål eller skrive dit eget spørgsmål på et naturligt sprog. 
+## <a name="use-qa"></a>Brug Spørgsmål og svar 
+Hvis du vil bruge Spørgsmål og svar på et dashboard eller bruge visualiseringen til Spørgsmål og svar i en rapport, skal du enten vælge et af de foreslåede spørgsmål eller skrive dit eget spørgsmål på et naturligt sprog. 
 
 ### <a name="create-a-qa-visual-by-using-a-suggested-question"></a>Opret en visualisering til Spørgsmål og svar ved hjælp af et foreslået spørgsmål
 
@@ -105,26 +107,45 @@ Men du kan fortælle Power BI, hvilken visualiseringstype du vil bruge, ved at f
 
 Hvis du er usikker på, hvilken type spørgsmål du skal stille, eller hvilken terminologi du skal bruge, skal du udvide **Vis alle forslag** eller gennemse de andre visualiseringer i rapporten. På den måde bliver du bekendt med begreberne og indholdet i datasættet.
 
-1. Skriv dit spørgsmål i feltet til Spørgsmål og svar ved hjælp af et naturligt sprog. I takt med at du skriver dit spørgsmål, hjælper Power BI dig med autofuldførelse, forslag og feedback.
+1. Skriv dit spørgsmål i feltet til Spørgsmål og svar ved hjælp af et naturligt sprog. I takt med at du skriver dit spørgsmål, hjælper Power BI dig med autofuldførelse, tip til visuals og feedback.
 
-    - Der bruges en rød understregning til ord, som Power BI ikke genkender. Når det er muligt, hjælper Power BI dig med at definere disse ord. Hvis du kan se den korrekte definition, skal du vælge den på rullelisten.  
+    **Autofuldførelse** – I takt med at du skriver dit spørgsmål, kan Spørgsmål og svar i Power BI vise relevante og kontekstafhængige forslag, der kan hjælpe dig med hurtigt at blive produktiv med et naturligt sprog. I takt med at du skriver, får du øjeblikkelig feedback og resultater. Oplevelsen svarer til at skrive i en søgemaskine.
 
-        ![Begreb med rød understregning i spørgsmålsfeltet i Spørgsmål og svar](media/end-user-q-and-a/power-bi-q-and-a-red.png)
+    I dette eksempel vil vi bruge det sidste forslag. 
 
-    - Hvis ingen af definitionerne er korrekte, kan du prøve et andet begreb eller vælge ordet med den røde understregning for at bede ejeren af rapporten om at tilføje ordet.
+    ![Spørgsmål og svar med et blåt understreget ord](media/end-user-q-and-a/power-bi-autocomplete.png)
 
-        ![Skriv et spørgsmål i spørgsmålsfeltet i Spørgsmål og svar](media/end-user-q-and-a/power-bi-q-and-a-owner.png)
+    **Røde/blå understregninger** – Spørgsmål og svar i Power BI Q & vises der ord med understregninger, så du kan se, hvilke ord der blev genkendt eller ikke genkendt i Power BI. En ubrudt blå understregning angiver, at ordet blev genkendt i Power BI. I eksemplet nedenfor kan du se, at ordet **store** blev genkendt i Spørgsmål og svar.
 
-    - I takt med at du skriver mere af spørgsmålet, giver Power BI dig besked, hvis spørgsmålet ikke er forstået, og forsøger at hjælpe. I eksemplet nedenfor spørger Power BI dig "Mente du..." og foreslår en anden måde at formulere spørgsmålet på ved hjælp af terminologi fra dit datasæt. 
+    ![Spørgsmål og svar med forslag til fuldførelse af spørgsmålet](media/end-user-q-and-a/power-bi-blue.png)
 
-        ![Visualisering til Spørgsmål og svar med foreslåede rettelser](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
+    Vælg et ord, der er understreget med blåt for at få vist en rulleliste med forslag til spørgsmål. 
 
-2. Når du har valgt rettelsen fra Power BI, vises resultaterne som et kurvediagram. 
+    ![Rulleliste med Du kan også prøve-forslag](media/end-user-q-and-a/power-bi-try.png)
+
+
+    Når du skriver et ord i Spørgsmål og svar, er det ofte markeret med en rød understregning. En rød understregning kan indikere et af to potentielle problemer. Den første problemtype er kategoriseret som lav tillid. Hvis du skriver et vagt eller flertydigt ord, understreges feltet med rødt. Et eksempel kunne være ordet "Placering". Flere felter kan indeholde ordet "Placering", så systemet bruger en rød understregning for at bede dig om at vælge det felt, du mener. I dette eksempel beder Power BI dig om at vælge det felt, du vil bruge til "VanArsdel".
+    
+    ![Begreb med rød understregning i spørgsmålsfeltet i Spørgsmål og svar](media/end-user-q-and-a/power-bi-q-and-a-red.png)
+    
+    Et andet eksempel på lav tillid kan være, hvis du skriver ordet "område", men den kolonne, der matches, er "distrikt". Spørgsmål og svar i Power BI genkender ord, der betyder det samme, takket være integrationen med Bing og Office. Ordet understreges med rødt i Spørgsmål og svar, så du ved, at det ikke er et direkte match
+
+    ![Spørgsmål og svar omformulerer spørgsmålet ved hjælp af et synonym](media/end-user-q-and-a/power-bi-red.png)
+
+    Den anden problemtype er, når ordet overhovedet ikke genkendes i Spørgsmål og svar. Et eksempel kan være brugen af ordet "geografi", selvom det ikke findes nogen steder i dataene. Ordet findes i den danske ordbog, men det markeres med en rød understregning i Spørgsmål og svar. Spørgsmål og svar i Power BI kan ikke oprette en visualisering og foreslår, at du beder Rapportdesigner om at tilføje ordet.
+
+    ![Spørgsmål og svar med forslag om, at du beder designeren om at tilføje ordet geografi](media/end-user-q-and-a/power-bi-geography.png)
+
+    **Forslag** – I takt med at du skriver mere af spørgsmålet, giver Power BI dig besked, hvis spørgsmålet ikke er forstået, og forsøger at hjælpe. I eksemplet nedenfor spørger Power BI dig "Mente du..." og foreslår en anden måde at formulere spørgsmålet på ved hjælp af terminologi fra dit datasæt. 
+
+    ![Visualisering til Spørgsmål og svar med foreslåede rettelser](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
+
+    Når du har valgt rettelsen fra Power BI, vises resultaterne som et kurvediagram. 
 
     ![Visualisering til Spørgsmål og svar med resultater som et kurvediagram](media/end-user-q-and-a/power-bi-q-and-a-line.png)
 
 
-3. Du kan dog ændre kurvediagrammet til en anden visualiseringstype.  
+    Du kan dog ændre kurvediagrammet til en anden visualiseringstype.  
 
     ![Visualisering til Spørgsmål og svar med "som et søjlediagram" føjet til spørgsmålet](media/end-user-q-and-a/power-bi-q-and-a-specify-type.png)
 

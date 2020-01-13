@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: b7256a04ccdca107ef0cd8e24af8b3170a3d68cc
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 95cf62057cdea001a438f4555aa3384c54efe4b5
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74834718"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221936"
 ---
 # <a name="extending-visuals-with-report-page-tooltips"></a>Udvidelse af visualiseringer med værktøjstip til rapportsider
 
@@ -24,7 +24,7 @@ Denne artikel henvender sig til rapportforfattere, der designer Power BI-rapport
 Værktøjstippene til rapportsiden kan forbedre oplevelsen for dine rapportbrugere. Sideværktøjstip gør det muligt for rapportbrugerne hurtigt og effektivt at få dybere indsigt fra et visual. De kan knyttes til forskellige rapportobjekter:
 
 - **Visuals:** Du kan for hvert visual konfigurere, hvilke visuals der skal vise sideværktøjstippet. Det er muligt for hvert visual at få vist ingen værktøjstip, visualværktøjstip (standard og konfigureret i ruden med visualfelter) eller et bestemt sideværktøjstip.
-- **Visualheadere:** Du kan konfigurere bestemte visuals til at vise et sideværktøjstip. Rapportbrugerne kan se værktøjstippet til siden, når de holder markøren over ikonet for visuaheaderen. Sørg for at fortælle dine brugere om dette ikon.
+- **Visuel overskrift:** Du kan konfigurere bestemte visuals til at vise et sideværktøjstip. Rapportbrugerne kan se værktøjstippet til siden, når de holder markøren over ikonet for den visuelle overskrift. Sørg for at fortælle dine brugere om dette ikon.
 
 > [!NOTE]
 > Et rapportvisual kan kun vise et sideværktøjstip, når filtrene for værktøjstipsiden er kompatible med visualdesignet. Et visual, der grupperer efter _produkt_, er f. eks. kompatibelt med en værktøjstipside, der filtrerer efter _produkt_.
@@ -61,15 +61,15 @@ Der bliver vist et sideværktøjstip. Det viser bestemte attributter og statisti
 
 ### <a name="add-help"></a>Tilføj Hjælp
 
-Visualheadere kan konfigureres til at vise sideværktøjstip til visualheadere. Du kan føje Hjælp-indhold til et sideværktøjstip ved hjælp af RTF-formaterede tekstfelter. Det er også muligt at tilføje billeder og figurer.
+Visuelle overskrifter kan konfigureres til at vise sideværktøjstip til visuelle overskrifter. Du kan føje Hjælp-dokumentation til et sideværktøjstip ved hjælp af RTF-formaterede tekstfelter. Det er også muligt at tilføje billeder og figurer.
 
-Der kan også vises sideværktøjstip til visualheadere i knapper, billeder, tekstfelter og figurer.
+Der kan også vises sideværktøjstip til visuelle overskrifter for knapper, billeder, tekstfelter og figurer.
 
-I følgende eksempel kan du se, hvad der sker, når rapportbrugeren holder markøren over ikonet for visualheaderen.
+I følgende eksempel kan du se, hvad der sker, når rapportbrugeren holder markøren over [ikonet for den visuelle overskrift](../desktop-visual-elements-for-reports.md).
 
-![En rapportbruger holder markøren over ikonet for visualheaderen (ikonet med spørgsmålstegnet). Der vises et RTF-formateret værktøjstip.](media/report-page-tooltips/suggestion-add-help.png)
+![En rapportbruger holder markøren over ikonet for den visuelle overskrift (ikonet med spørgsmålstegnet). Der vises et RTF-formateret værktøjstip.](media/report-page-tooltips/suggestion-add-help.png)
 
-Der bliver vist et sideværktøjstip. Det viser RTF-formateret tekst, som beskriver de målinger, der vises i visual'et. Værktøjstippet indeholder også en figur (linje).
+Der bliver vist et sideværktøjstip. Den viser RTF-tekst i fire tekstfelter og en figur (linje). Sideværktøjstippet gengiver hjælp ved at beskrive hvert enkelt akronym, der vises i visualiseringen.
 
 ## <a name="recommendations"></a>Anbefalinger
 
@@ -87,5 +87,6 @@ Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende 
 
 - [Opret værktøjstip på basis af rapportsider i Power BI Desktop](../desktop-tooltips.md)
 - [Tilpasning af værktøjstip i Power BI Desktop](../desktop-custom-tooltips.md)
+- [Brug visualiseringer til at forbedre Power BI-rapporter](../desktop-visual-elements-for-reports.md)
 - Videoen Guy in a Cube: [Værktøjstip til rapportside i Power BI – Sådan opretter du et i Power BI Desktop](https://www.youtube.com/watch?v=URTA7JZsAtw)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

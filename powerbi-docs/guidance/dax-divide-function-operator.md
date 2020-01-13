@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: c20a366ef657e851ef77a9649dbcc8b66b67dac0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 7eea15d4389afaac2ac69e2f26eaa38fe84e337b
+ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74695191"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75304178"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX: DIVIDE-funktion vs. divisionsoperator (/)
 
@@ -58,7 +58,7 @@ Vi anbefaler, at du bruger funktionen DIVIDE, når nævneren er et udtryk, der _
 
 Hvis nævneren er en konstant værdi, anbefaler vi, at du bruger divisionsoperatoren. I dette tilfælde gennemføres divisionen, og dit udtryk kører bedre, da unødvendige test undgås.
 
-Overvej nøje, om funktionen DIVIDE skal returnere en alternativ værdi. I forbindelse med målinger er det normalt et bedre design, at de returnerer BLANK, når et meningsfyldt resultat ikke kan evalueres. Du kan finde flere oplysninger under [Undgå at konvertere BLANKs til værdier](dax-avoid-converting-blank.md).
+Overvej nøje, om funktionen DIVIDE skal returnere en alternativ værdi. I forbindelse med målinger er det normalt et bedre design, at de returnerer TOM. Returnering af TOM er bedre, fordi rapportvisualiseringer som standard fjerner grupperinger, når opsummeringer er TOMME. Det gør det muligt for visualiseringen at fokusere på grupper, der indeholder data. Når det er nødvendigt, kan du konfigurere visualiseringen til at vise alle grupper (der returnerer værdier eller er TOMME) i filterkonteksten ved at aktivere indstillingen [Vis elementer uden data](../desktop-show-items-no-data.md).
 
 ## <a name="next-steps"></a>Næste trin
 

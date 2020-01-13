@@ -10,17 +10,17 @@ ms.date: 04/19/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: f759992c42cc589d21ed51d5d63775bf54518c3f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73869123"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Opret og administrer relationer i Power BI Desktop
 Når du importerer flere tabeller, er det muligt, at du skal udføre analyser ved hjælp af data fra alle disse tabeller. Der skal være relationer mellem disse tabeller, før du kan beregne præcise resultater og vise korrekte oplysninger i dine rapporter. I Power BI Desktop er det nemt at oprette disse relationer. I de fleste tilfælde behøver du faktisk ikke at foretage dig noget – funktionen Registrer automatisk kan gøre det for dig. Men i nogle tilfælde skal du muligvis selv oprette relationer, eller det kan være nødvendigt at foretage ændringer i en relation. I begge tilfælde er det vigtigt at forstå relationer i Power BI Desktop, og hvordan du opretter og redigerer dem.
 
 ## <a name="autodetect-during-load"></a>Registrer automatisk under indlæsning
-Hvis du forespørger to eller flere tabeller på én gang, når der indlæses data, forsøger Power BI Desktop at finde og oprette relationer for dig. Egenskaberne Kardinalitet, Tværgående filterretning og Aktiv angives automatisk. Power BI Desktop kigger på kolonnenavne i de tabeller, som du forespørger, for at se, om der er mulige relationer. Hvis der er, oprettes disse relationer automatisk. Hvis Power BI Desktop ikke med stor sandsynlighed kan afgøre, om der er et match, oprettes relationen ikke automatisk. Du kan stadig bruge dialogboksen Administrer relationer til at oprette eller redigere relationer.
+Hvis du forespørger to eller flere tabeller på én gang, når der indlæses data, forsøger Power BI Desktop at finde og oprette relationer for dig. Egenskaberne Kardinalitet, Krydsfilterretning og Aktiv angives automatisk. Power BI Desktop kigger på kolonnenavne i de tabeller, som du forespørger, for at se, om der er mulige relationer. Hvis der er, oprettes disse relationer automatisk. Hvis Power BI Desktop ikke med stor sandsynlighed kan afgøre, om der er et match, oprettes relationen ikke automatisk. Du kan stadig bruge dialogboksen Administrer relationer til at oprette eller redigere relationer.
 
 ## <a name="create-a-relationship-by-using-autodetect"></a>Opret en relation via Automatisk registrering
 Under fanen **Hjem** skal du klikke på **Administrer relationer** \> **Automatisk registrering**.
@@ -34,7 +34,7 @@ Under fanen **Hjem** skal du klikke på **Administrer relationer** \> **Automati
 
 ![](media/desktop-create-and-manage-relationships/manualrelationship2.gif)
 
-Egenskaberne Kardinalitet (retning), Tværgående filterretning og Aktiv for din nye relation konfigureres som standard automatisk i Power BI Desktop. Du kan dog ændre indstillingerne, hvis det er nødvendigt. Du kan finde flere oplysninger i afsnittet Om yderligere indstillinger senere i denne artikel.
+Egenskaberne Kardinalitet (retning), Krydsfilterretning og Aktiv for din nye relation konfigureres som standard automatisk i Power BI Desktop. Du kan dog ændre indstillingerne, hvis det er nødvendigt. Du kan finde flere oplysninger i afsnittet Om yderligere indstillinger senere i denne artikel.
 
 Du får vist en fejl, der angiver, at *en af kolonnerne skal have entydige værdier*, hvis ingen af de valgte tabeller for relationen indeholder entydige værdier. Mindst én tabel i en relation *skal* have en særskilt og entydig liste over nøgleværdier, som er et almindeligt krav for alle relationsdatabaseteknologier. 
 
@@ -62,12 +62,12 @@ Når du opretter eller redigerer en relation, kan du konfigurere yderligere inds
 
 I afsnittet Om yderligere indstillinger senere i denne artikel kan du finde flere oplysninger om, hvornår du skal ændre kardinaliteten.
 
-## <a name="cross-filter-direction"></a>Tværgående filterretning
+## <a name="cross-filter-direction"></a>Krydsfilterretning
 **Begge** – Begge tabeller behandles i forbindelse med filtrering, som om de er en enkelt tabel. **Begge** fungerer fint sammen med en enkelt tabel, der har flere opslagstabeller, som omgiver den. Et eksempel kan være en tabel med faktiske salgsværdier med en opslagstabel for afdeling. Dette kaldes også en stjerneskemakonfiguration (en central tabel med flere opslagstabeller). Men hvis du har to eller flere tabeller, der også har opslagstabeller (hvor nogle af dem er fælles), er det ikke en god ide at bruge indstillingen Begge. Hvis vi fortsætter med eksemplet, skal du i dette tilfælde også have en budgetsalgstabel, der registrerer målbudgettet for hver afdeling. Og afdelingstabellen er knyttet til både salgs- og budgettabellen. Undgå indstillingen Begge for denne form for konfiguration.
 
 **Enkelt** – Den mest almindelige standardretning, hvilket betyder, at filtreringsindstillinger i tilknyttede tabeller fungerer i den tabel, hvor værdierne aggregeres. Hvis du importerer en datamodel fra Power Pivot i Excel 2013 eller tidligere, har alle relationer en enkelt retning. 
 
-I afsnittet Om yderligere indstillinger senere i denne artikel kan du finde flere oplysninger om, hvornår du skal ændre den tværgående filterretning.
+I afsnittet Om yderligere indstillinger senere i denne artikel kan du finde flere oplysninger om, hvornår du skal ændre den krydsfilterretning.
 
 ## <a name="make-this-relationship-active"></a>Aktivér denne relation
 Når denne indstilling er markeret, betyder det, at relationen fungerer som den aktive standardrelation. I de tilfælde, hvor der er mere end én relation mellem to tabeller, gør den aktive relation det muligt for Power BI Desktop automatisk at oprette visualiseringer, der inkluderer begge tabeller.
@@ -88,17 +88,17 @@ Den første tabel, ProjectHours, er en oversigt over arbejdsbilletter, der regis
 
 | **Ticket** | **SubmittedBy** | **Hours** | **Project** | **DateSubmit** |
 | ---:|:--- | ---:|:--- | ---:|
-| 1001 |Brewer, Alan |22 |Blue |1/1/2013 |
+| 1001 |Brewer, Alan |22 |Blå |1/1/2013 |
 | 1002 |Brewer, Alan |26 |Red |2/1/2013 |
 | 1003 |Ito, Shu |34 |Yellow |12/4/2012 |
 | 1004 |Brewer, Alan |13 |Orange |1/2/2012 |
-| 1005 |Bowen, Eli |29 |Purple |10/1/2013 |
-| 1006 |Bento, Nuno |35 |Green |2/1/2013 |
-| 1007 |Hamilton, David |10 |Yellow |10/1/2013 |
+| 1005 |Bowen, Eli |29 |Purple |1/10/2013 |
+| 1006 |Bento, Nuno |35 |Grøn |2/1/2013 |
+| 1007 |Hamilton, David |10 |Yellow |1/10/2013 |
 | 1008 |Han, Mu |28 |Orange |1/2/2012 |
 | 1009 |Ito, Shu |22 |Purple |2/1/2013 |
-| 1010 |Bowen, Eli |28 |Green |10/1/2013 |
-| 1011 |Bowen, Eli |9 |Blue |10/15/2013 |
+| 1010 |Bowen, Eli |28 |Grøn |10/1/2013 |
+| 1011 |Bowen, Eli |9 |Blå |10/15/2013 |
 
 Den anden tabel, CompanyProject, er en liste over projekter med en tildelt prioritet, som kan være A, B eller C. 
 
@@ -106,9 +106,9 @@ Den anden tabel, CompanyProject, er en liste over projekter med en tildelt prior
 
 | **ProjName** | **Priority** |
 | --- | --- |
-| Blue |A |
+| Blå |A |
 | Red |B |
-| Green |C |
+| Grøn |C |
 | Yellow |C |
 | Purple |B |
 | Orange |C |
@@ -184,17 +184,17 @@ I tabellen CompanyProjectPriority nedenfor kan du se en liste over alle virksomh
 
 | **Godkendte projekter** | **BudgetAllocation** | **AllocationDate** |
 |:--- | ---:| ---:|
-| Blue |40,000 |12/1/2012 |
+| Blå |40,000 |12/1/2012 |
 | Red |100,000 |12/1/2012 |
-| Green |50,000 |12/1/2012 |
+| Green |50.000 |12/1/2012 |
 
 **CompanyProjectPriority**
 
 | **Project** | **Priority** |
 | --- | --- |
-| Blue |A |
+| Blå |A |
 | Red |B |
-| Green |C |
+| Grøn |C |
 | Yellow |C |
 | Purple |B |
 | Orange |C |
@@ -203,13 +203,13 @@ Hvis vi opretter en relation mellem kolonnen Project i tabellen CompanyProjectPr
 
  ![](media/desktop-create-and-manage-relationships/candmrel_create_compproj_appproj2.png)
 
-Kardinaliteten angives automatisk til en til en (1:1), og den tværgående filtrering angives til Begge (som vist). Dette skyldes, at for Power BI Desktop ser den bedste kombination af de to tabeller i virkeligheden ud som følger:
+Kardinaliteten angives automatisk til en til en (1:1), og den krydsfiltrering angives til Begge (som vist). Dette skyldes, at for Power BI Desktop ser den bedste kombination af de to tabeller i virkeligheden ud som følger:
 
 | **Project** | **Priority** | **BudgetAllocation** | **AllocationDate** |
 |:--- | --- | ---:| ---:|
 | Blue |A |40,000 |12/1/2012 |
-| Red |B |100,000 |12/1/2012 |
-| Green |C |50,000 |12/1/2012 |
+| Red |B |100.000 |12/1/2012 |
+| Grøn |C |50,000 |12/1/2012 |
 | Yellow |C |<br /> |<br /> |
 | Purple |B |<br /> |<br /> |
 | Orange |C |<br /> |<br /> |
@@ -222,10 +222,10 @@ Men lad sige, at du ved, at dataene ændres, næste gang du opdaterer dem. En op
 
 | **Godkendte projekter** | **BudgetAllocation** | **AllocationDate** |
 | --- | ---:| ---:|
-| Blue |40,000 |12/1/2012 |
+| Blå |40,000 |12/1/2012 |
 | Red |100,000 |12/1/2012 |
-| Green |50,000 |12/1/2012 |
-| Blue |80,000 |6/1/2013 |
+| Green |50.000 |12/1/2012 |
+| Blå |80,000 |6/1/2013 |
 | Red |90,000 |6/1/2013 |
 
  Det betyder, at den bedste kombination af de to tabeller, nu ser ud som følger: 
@@ -233,50 +233,50 @@ Men lad sige, at du ved, at dataene ændres, næste gang du opdaterer dem. En op
 | **Project** | **Priority** | **BudgetAllocation** | **AllocationDate** |
 | --- | --- | ---:| ---:|
 | Blue |A |40,000 |12/1/2012 |
-| Red |B |100,000 |12/1/2012 |
-| Green |C |50,000 |12/1/2012 |
+| Red |B |100.000 |12/1/2012 |
+| Grøn |C |50,000 |12/1/2012 |
 | Yellow |C |<br /> |<br /> |
 | Purple |B |<br /> |<br /> |
 | Orange |C |<br /> |<br /> |
-| Blue |A |80000 |6/1/2013 |
+| Blå |A |80000 |6/1/2013 |
 | Red |B |90000 |6/1/2013 |
 
 I denne nye kombinerede tabel indeholder kolonnen Project gentagne værdier. De to oprindelige tabeller har ikke en en til en-relation, når tabellen er opdateret. Da vi i dette tilfælde ved, at disse fremtidige opdateringer vil medføre, at kolonnen Project får dubletter, vil vi angive kardinaliteten til en mange til én-relation (\*: 1), hvor mange er på ProjectBudget-siden, og én er på CompanyProjectPriority-siden.
 
-## <a name="adjusting-cross-filter-direction-for-a-complex-set-of-tables-and-relationships"></a>Juster den tværgående filterretning for at få et avanceret sæt tabeller med relationer
-For de fleste relationer er den tværgående filterretning angivet til 'Begge'. I mere sjældne tilfælde kan det dog være nødvendigt at angive noget andet end standardværdien, f.eks. hvis du importerer en model fra en ældre version af Power-Pivot, hvor hver relation er angivet til en enkelt retning. 
+## <a name="adjusting-cross-filter-direction-for-a-complex-set-of-tables-and-relationships"></a>Juster den krydsfilterretning for at få et avanceret sæt tabeller med relationer
+For de fleste relationer er den krydsfilterretning angivet til “Begge”. I mere sjældne tilfælde kan det dog være nødvendigt at angive noget andet end standardværdien, f.eks. hvis du importerer en model fra en ældre version af Power-Pivot, hvor hver relation er angivet til en enkelt retning. 
 
-Indstillingen Begge gør det muligt for Power BI Desktop at behandle alle aspekter af de tilknyttede tabeller, som om de var en enkelt tabel. Der kan dog være situationer, hvor Power BI Desktop ikke kan angive en relations tværgående filterretning til 'Begge' og samtidig sørge for, at et entydigt sæt standarder er tilgængeligt for rapportering. Hvis en relations tværgående filterretning ikke er angivet til Begge, skyldes det som regel, at det ville medføre tvetydighed. Hvis standardindstillingen for tværgående filtrering ikke virker for dig, kan du prøve at angive den til en bestemt tabel eller Begge.
+Indstillingen Begge gør det muligt for Power BI Desktop at behandle alle aspekter af de tilknyttede tabeller, som om de var en enkelt tabel. Der kan dog være situationer, hvor Power BI Desktop ikke kan angive en relations krydsfilterretning til “Begge” og samtidig sørge for, at et entydigt sæt standarder er tilgængeligt for rapportering. Hvis en relations krydsfilterretning ikke er angivet til Begge, skyldes det som regel, at det ville medføre tvetydighed. Hvis standardindstillingen for krydsfiltrering ikke virker for dig, kan du prøve at angive den til en bestemt tabel eller Begge.
 
-Tværgående filtrering i én retning fungerer i mange situationer. Hvis du har importeret en model fra Power Pivot i Excel 2013 eller tidligere, angives alle relationer faktisk til én retning. Enkelt retning betyder, at filtreringsindstillinger i tilknyttede tabeller fungerer i den tabel, hvor værdierne aggregeres. Nogle gange kan det være vanskeligt at forstå tværgående filtrering, så lad os se på et eksempel.
+Krydsfiltrering i én retning fungerer i mange situationer. Hvis du har importeret en model fra Power Pivot i Excel 2013 eller tidligere, angives alle relationer faktisk til én retning. Enkelt retning betyder, at filtreringsindstillinger i tilknyttede tabeller fungerer i den tabel, hvor værdierne aggregeres. Nogle gange kan det være vanskeligt at forstå krydsfiltrering, så lad os se på et eksempel.
 
  ![](media/desktop-create-and-manage-relationships/candmrel_singledircrossfiltering.png)
 
-Hvis du angiver tværgående filtrering i én retning, og du opretter en rapport, der indeholder en oversigt over projektets timer, kan du vælge at opsummere (eller filtrere) efter CompanyProject, Priority eller CompanyEmployee, City. Men hvis du vil tælle antallet af medarbejdere pr. projekt (et mindre almindeligt spørgsmål), fungerer det ikke. Du får vist en kolonne med værdier, som alle er ens. I eksemplet nedenfor er begge relationers tværgående filterretning angivet til en enkelt retning – mod tabellen ProjectHours:
+Hvis du angiver krydsfiltrering i én retning, og du opretter en rapport, der indeholder en oversigt over projektets timer, kan du vælge at opsummere (eller filtrere) efter CompanyProject, Priority eller CompanyEmployee, City. Men hvis du vil tælle antallet af medarbejdere pr. projekt (et mindre almindeligt spørgsmål), fungerer det ikke. Du får vist en kolonne med værdier, som alle er ens. I eksemplet nedenfor er begge relationers krydsfilterretning angivet til en enkelt retning – mod tabellen ProjectHours:
 
  ![](media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png)
 
-Filterspecifikationen overføres fra CompanyProject til CompanyEmployee (som vist på billedet nedenfor), men den kan ikke overføres til CompanyEmployee. Men hvis du angiver den tværgående filterretning til Begge, fungerer det. Med indstillingen Begge kan filterspecifikationen føres op til Employee.
+Filterspecifikationen overføres fra CompanyProject til CompanyEmployee (som vist på billedet nedenfor), men den kan ikke overføres til CompanyEmployee. Men hvis du angiver den krydsfilterretning til Begge, fungerer det. Med indstillingen Begge kan filterspecifikationen føres op til Employee.
 
  ![](media/desktop-create-and-manage-relationships/candmrel_bidircrossfiltering.png)
 
-Hvis den tværgående filterretning er angivet til Begge, ser vores rapport nu korrekt ud:
+Hvis den krydsfilterretning er angivet til Begge, ser vores rapport nu korrekt ud:
 
  ![](media/desktop-create-and-manage-relationships/candmrel_repcrossfilterbi.png)
 
-Tværgående filtrering i begge retninger fungerer godt for et mønster af tabelrelationer, der ligner mønsteret ovenfor. Dette kaldes ofte et stjerneskema som i det følgende:
+Krydsfiltrering i begge retninger fungerer godt for et mønster af tabelrelationer, der ligner mønsteret ovenfor. Dette kaldes ofte et stjerneskema som i det følgende:
 
  ![](media/desktop-create-and-manage-relationships/candmrel_crossfilterstarschema.png)
 
-Tværgående filterretning kan ikke bruges sammen med et mere generelt mønster, der ofte findes i databaser, som i dette diagram:
+Krydsfilterretning kan ikke bruges sammen med et mere generelt mønster, der ofte findes i databaser, som i dette diagram:
 
  ![](media/desktop-create-and-manage-relationships/candmrel_crossfilterwithloops.png)
 
-Hvis du har et tabelmønster med løkker som i dette eksempel, kan tværgående filtrering oprette et tvetydigt sæt af relationer. Hvis du f.eks. opsummerer et felt fra TableX og derefter vælger at filtrere efter et felt i TableY, er det ikke tydeligt, i hvilken retning filteret skal gå – fra øverste tabel eller nederste tabel. Et almindeligt eksempel på denne form for mønster er, at TableX er en salgstabel med faktiske data, og at TableY indeholder budgetdata. Tabellerne i midten er opslagstabeller, som begge tabeller bruger, f.eks. Division eller Region. 
+Hvis du har et tabelmønster med løkker som i dette eksempel, kan krydsfiltrering oprette et tvetydigt sæt af relationer. Hvis du f.eks. opsummerer et felt fra TableX og derefter vælger at filtrere efter et felt i TableY, er det ikke tydeligt, i hvilken retning filteret skal gå – fra øverste tabel eller nederste tabel. Et almindeligt eksempel på denne form for mønster er, at TableX er en salgstabel med faktiske data, og at TableY indeholder budgetdata. Tabellerne i midten er opslagstabeller, som begge tabeller bruger, f.eks. Division eller Region. 
 
 På samme måde som med aktive/inaktive relationer tillader Power BI Desktop ikke, at en relation angives til Begge, hvis det medfører tvetydighed i rapporter. Du kan løse dette problem på flere forskellige måder. Her er de to mest almindelige måder:
 
-* Slet eller markér relationer som inaktive for at reducere tvetydighed. Derefter kan du muligvis angive en relations tværgående filtrering til Begge.
+* Slet eller markér relationer som inaktive for at reducere tvetydighed. Derefter kan du muligvis angive en relations krydsfiltrering til Begge.
 * Hent en tabel to gange (med et andet navn den anden gang) for at fjerne løkker. Derved oprettes mønsteret for relationer som et stjerneskema. I et stjerneskema kan alle relationer angives til Begge.
 
 ## <a name="wrong-active-relationship"></a>Forkert aktiv relation
@@ -290,17 +290,17 @@ Lad os tage et kig på et eksempel. Den første tabel er ProjectTickets, og den 
 
 | **Ticket** | **OpenedBy** | **SubmittedBy** | **Hours** | **Project** | **DateSubmit** |
 | ---:|:--- |:--- | ---:|:--- | ---:|
-| 1001 |Perham, Tom |Brewer, Alan |22 |Blue |1/1/2013 |
+| 1001 |Perham, Tom |Brewer, Alan |22 |Blå |1/1/2013 |
 | 1002 |Roman, Daniel |Brewer, Alan |26 |Red |2/1/2013 |
 | 1003 |Roth, Daniel |Ito, Shu |34 |Yellow |12/4/2012 |
 | 1004 |Perham, Tom |Brewer, Alan |13 |Orange |1/2/2012 |
-| 1005 |Roman, Daniel |Bowen, Eli |29 |Purple |10/1/2013 |
-| 1006 |Roth, Daniel |Bento, Nuno |35 |Green |2/1/2013 |
-| 1007 |Roth, Daniel |Hamilton, David |10 |Yellow |10/1/2013 |
+| 1005 |Roman, Daniel |Bowen, Eli |29 |Purple |1/10/2013 |
+| 1006 |Roth, Daniel |Bento, Nuno |35 |Grøn |2/1/2013 |
+| 1007 |Roth, Daniel |Hamilton, David |10 |Yellow |1/10/2013 |
 | 1008 |Perham, Tom |Han, Mu |28 |Orange |1/2/2012 |
 | 1009 |Roman, Daniel |Ito, Shu |22 |Purple |2/1/2013 |
-| 1010 |Roth, Daniel |Bowen, Eli |28 |Green |10/1/2013 |
-| 1011 |Perham, Tom |Bowen, Eli |9 |Blue |10/15/2013 |
+| 1010 |Roth, Daniel |Bowen, Eli |28 |Grøn |10/1/2013 |
+| 1011 |Perham, Tom |Bowen, Eli |9 |Blå |10/15/2013 |
 
 **EmployeeRole**
 

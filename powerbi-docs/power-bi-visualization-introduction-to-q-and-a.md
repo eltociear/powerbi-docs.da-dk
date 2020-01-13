@@ -10,10 +10,10 @@ ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 817ce82b94817530854d85c7dbcca17a313fc438
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73874451"
 ---
 # <a name="create-a-visual-with-power-bi-qa"></a>Opret en visualisering med Spørgsmål og svar i Power BI
@@ -28,7 +28,7 @@ For at følge med skal du bruge en rapport, som du kan redigere, så vi vil brug
 
 Hvordan oprettes dette kurvediagram ved hjælp af Spørgsmål og svar?
 
-1. Fra dit Power BI-arbejdsområde skal du vælge **Hent data** \> **Eksempler** \> **Eksempel på detailhandelsanalyse** > **Tilslut**.
+1. Fra dit Power BI-arbejdsområde skal du vælge **Hent data** \> **Eksempler** \> **Eksempel på detailhandelsanalyse** > **Forbind**.
 
 1. Åbn dashboardet Eksempel på detailhandelsanalyse, og placer markøren i feltet Spørgsmål og svar, og **stil et spørgsmål om dine data**.
 

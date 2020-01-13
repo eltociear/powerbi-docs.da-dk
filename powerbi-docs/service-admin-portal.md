@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 4776e458c778b6bd482106660ab9b8cd978699e5
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: 99d57b734e42913db20e8a414c3216ed66334fa8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882886"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75224174"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -168,9 +168,9 @@ De næste par afsnit giver et overblik over de forskellige typer af lejerindstil
 
 Brugere i organisationen kan gå til interne hjælp- og supportressourcer i Power BI-menuen Hjælp. Funktionaliteten for disse parametre ændres specifikt for menupunkterne Lær, Community og Få hjælp.
 
-    ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+Når du angiver en URL-adresse til licensanmodninger, tilpasser du også destinationens URL-adresse for knappen **Opgrader konto**. Brugere uden en Power BI Pro-licens kan se denne knap i dialogboksen **Opdater til Power BI Pro** samt på siden **Administrer personligt lager**. Desuden tilbyder Power BI ikke længere knappen **Prøv Pro gratis** i denne dialogboks eller på lagersiden. Dette sikrer, at Power BI på en pålidelig måde hjælper dine brugere gennem de processer, der er defineret i din organisation, via løsningen til licensstyring.
 
-Når du angiver en URL-adresse for licensanmodninger, tilpasser du URL-adressen for destinationen for knappen **Opgrader konto**, som en bruger uden en Power BI Pro-licens kan finde i dialogboksen **Opdater til Power BI Pro** samt på siden **Administrer personligt lager**. Desuden indeholder Power BI ikke længere knappen **Prøv Pro gratis** i denne dialogboks eller på denne lagerside for at sikre, at Power BI leder dine brugere pålideligt gennem de processer, der er defineret i din organisation, via din løsning til administration af licenser.
+![Indstilling aktiveret med undtagelse](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
 
 ### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>Modtag mails ved tjenesteafbrydelser eller -hændelser
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 49615e1b6c205d9b894df0bcca7ef4979f153ba7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f5fa262c01767ba934a10300e321796845d47c5f
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872112"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75223799"
 ---
 # <a name="automated-machine-learning-in-power-bi"></a>Automatiseret Machine Learning i Power BI
 
@@ -32,7 +32,7 @@ AutoML i Power BI gør det muligt for dataanalytikere at bruge dataflows til at 
 
 AutoML understøtter oprettelsen af **modeller til binær forudsigelse**, **klassificering** og **regression** til dataflow. Dette er overvågede tekniktyper til maskinel indlæring, hvilket betyder, at de lærer fra kendte resultater af tidligere observationer for at forudsige resultatet af andre observationer. Inputdatasættet til oplæring af en AutoML-model er et sæt poster, der er **mærket** med de kendte resultater.
 
-AutoML i Power BI integrerer [automatiseret ML](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) fra [Azure Machine Learning-tjenesten](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) for at oprette dine ML-modeller. Du behøver dog ikke et Azure-abonnement for at bruge AutoML i Power BI. Processen til oplæring og hosting af ML-modeller administreres udelukkende af Power BI-tjenesten.
+AutoML i Power BI integrerer [automatiseret maskinel indlæring](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) fra [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) for at oprette dine modeller til maskinel indlæring. Du behøver dog ikke et Azure-abonnement for at bruge AutoML i Power BI. Processen til oplæring og hosting af ML-modeller administreres udelukkende af Power BI-tjenesten.
 
 Når en ML-model er oplært, genererer AutoML automatisk en Power BI-rapport, der forklarer den sandsynlige ydeevne for din ML-model. AutoML lægger vægt på forklaringsdelen ved at fremhæve nøglefaktorer fra det input, der påvirker de forudsigelser, som returneres af modellen. Rapporten indeholder også vigtige målepunkter for modellen.
 
@@ -282,7 +282,7 @@ Denne artikel indeholder en oversigt over automatiseret maskinel indlæring til 
 
 - [Selvstudium: Skab en model til maskinel indlæring i Power BI ](service-tutorial-build-machine-learning-model.md)
 - [Selvstudium: Brug af Cognitive Services i Power BI](service-tutorial-use-cognitive-services.md)
-- [Selvstudium: Aktivér en Machine Learning Studio-model i Power BI (prøveversion)](service-tutorial-invoke-machine-learning-model.md)
+- [Selvstudium: Aktivér en model af typen Machine Learning Studio (klassisk) i Power BI (prøveversion)](service-tutorial-invoke-machine-learning-model.md)
 - [Cognitive Services i Power BI](service-cognitive-services.md)
 - [Integration af Azure Machine Learning i Power BI](service-machine-learning-integration.md)
 

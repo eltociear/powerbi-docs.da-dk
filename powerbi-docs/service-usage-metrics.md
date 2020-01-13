@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 9aa2e11dd2068cae118336268c5c55ead1e25b8b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73871219"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Overvåg forbrugsdata for Power BI-dashboards og -rapporter
@@ -43,7 +43,7 @@ Du kan kun køre forbrugsdatarapporter i Power BI-tjenesten. Men hvis du gemmer 
 ## <a name="view-a-usage-metrics-report"></a>Få vist en rapport over forbrugsdata
 
 1. Start i arbejdsområdet, der indeholder dashboardet eller rapporten.
-2. Vælg ikonet for **Forbrugsdata** ![forbrugsdataikon](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) på indholdslisten til arbejdsområdet eller fra selve dashboardet eller rapporten.
+2. Vælg ikonet for **Forbrugsdata** ![ikon for forbrugsdata](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) på indholdslisten til arbejdsområdet eller fra selve dashboardet eller rapporten.
 
     ![Fanen Dashboards](media/service-usage-metrics/power-bi-run-usage-metrics-report.png)
 
@@ -83,7 +83,7 @@ Hvis du vil grave dybere ned i rapportdataene eller udarbejde dine egne rapporte
 
 ## <a name="which-metrics-are-reported"></a>Hvilke forbrugsdata rapporteres?
 
-| Data | Dashboard | Rapport | Beskrivelse |
+| Metrikværdi | Dashboard | Rapport | Beskrivelse |
 | --- | --- | --- | --- |
 | Udsnit for distributionsmetode |ja |ja |Hvordan brugerne fik adgang til indholdet. Der er tre mulige metoder: Brugere kan få adgang til dashboardet eller rapporten ved at være medlem af et [arbejdsområde](consumer/end-user-experience.md), ved at få indholdet [delt med dem](service-share-dashboards.md) eller ved at installere en indholdspakke/app.  Bemærk, at visninger via en app tælles som "indholdspakke". |
 | Platformsudsnit |ja |ja |Blev dashboardet eller rapporten tilgået via Power BI-tjenesten (powerbi.com) eller en mobilenhed? Mobil omfatter alle vores iOS-, Android- og Windows-apps. |
@@ -147,7 +147,7 @@ Få mere at vide om disse indstillinger under [Kontrollér forbrugsdata](service
 
 ## <a name="usage-metrics-in-national-clouds"></a>Forbrugsværdier i nationale cloudmiljøer
 
-Power BI fås med forskellige nationale cloudmiljøer. Disse skyløsninger giver den samme sikkerhed, privatlivsbeskyttelse, overholdelse af standarder og gennemsigtighed som den globale version af Power BI kombineret med en unik lokal model, der lever op til lokale retningslinjer for levering af tjenester, dataopbevaring, adgang og kontrol. På grund af denne unikke model til opfyldelse af lokale lovkrav er forbrugsdata er ikke tilgængelige i nationale cloudmiljøer. Du kan få flere oplysninger under [nationale cloudmiljøer](https://powerbi.microsoft.com/clouds/).
+Power BI fås med forskellige nationale cloudmiljøer. Disse cloudmiljøer giver samme sikkerhedsniveau, beskyttelse af personlige oplysninger, overholdelse af angivne standarder og gennemsigtighed som den globale version af Power BI, kombineret med en unik model for lokale bestemmelser om levering af tjenester, dataopbevaring, adgang og kontrol. På grund af denne unikke model til opfyldelse af lokale lovkrav er forbrugsdata er ikke tilgængelige i nationale cloudmiljøer. Du kan få flere oplysninger under [nationale cloudmiljøer](https://powerbi.microsoft.com/clouds/).
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 

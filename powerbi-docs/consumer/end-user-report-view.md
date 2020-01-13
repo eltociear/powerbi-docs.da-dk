@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 12/10/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 6e64ab2730b73339d6d22ba356cce6e644af52c5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 48efc58c7428961b70fb31a96f404139a75a1ac3
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861858"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75217854"
 ---
 # <a name="change-the-display-of-a-report-page"></a>Skift visningen af en rapportside
 
@@ -52,6 +52,26 @@ Indstillingerne på menuen **Vis** giver dig fleksibilitet til at få vist rappo
     ![Rapport, der vises i Fuld skærm](media/end-user-report-view/power-bi-full-screen.png)
 
 Når du lukker rapporten, gemmes indstillingerne i **Vis** ikke, men nulstilles til standardværdien. Hvis det er vigtigt for dig at gemme disse indstillinger, kan du bruge [bogmærker](end-user-bookmarks.md).
+
+## <a name="use-your-browser-to-change-page-display"></a>Brug din browser til at ændre sidevisningen
+
+Zoomkontrolelementerne i din browser øger og reducerer det tilgængelige lærredsområde. Reduktion af zoom medfører, at det tilgængelige lærredsområde udvides og omvendt. 
+
+![kort video, der viser browserens zoomkontrolelementer](media/end-user-report-view/power-bi-zoom.png)
+
+Tilpasning af størrelsen af hele browseren er en anden måde at ændre rapportens visningsstørrelse på. 
+
+![kort video, der viser tilpasning af browserens størrelse](media/end-user-report-view/power-bi-resize-browser.gif)
+
+## <a name="zoom-in-on-a-visual"></a>Zoom ind på en visualisering
+Nogle gange er det svært at se detaljerne i en visualisering. Du kan gøre visningen af den pågældende visualisering større og separat. Du kan finde flere oplysninger under [Fokustilstand og fuldskærmsvisning](end-user-focus.md)
+
+### <a name="a-visual-in-focus-mode"></a>En visualisering i *Fokustilstand*
+
+![Skærmbillede af en visualisering, som er åbnet i fokustilstand.](media/end-user-report-view/power-bi-focus.png)
+
+### <a name="a-visual-in-full-screen-mode"></a>En visualisering i *Fuldskærmsvisning*
+![Skærmbillede af en visualisering, som er åbnet i fuldskærmsvisning.](media/end-user-report-view/power-bi-full-screen.png)
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -1,19 +1,19 @@
 ---
 title: Vis rapporter og KPI'er i det lokale miljø i Power BI-mobilapps
 description: Power BI-mobilappsene tilbyder live, touchaktiveret mobiladgang til dine virksomhedsoplysninger i det lokale miljø via SQL Server Reporting Services og Power BI-rapportserver.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/13/2018
-ms.author: mshenhav
-ms.openlocfilehash: 50d44b99d8efea848588ab4c460a469ef6dc780b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/05/2019
+ms.author: painbar
+ms.openlocfilehash: 6020a6cb72be4e8d7be0485c7787fefc097e679d
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879459"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220029"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Vis rapporter og KPI'er fra rapportserveren i det lokale miljø i Power BI-mobilapps
 
@@ -23,7 +23,7 @@ Gælder for:
 
 | ![iPhone](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/iphone-logo-50-px.png) | ![iPad](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-tablet-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhones |iPad-tablets |Android-telefoner |Android-tablets |
+| iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |
 
 
 ![Startside for rapportserver i mobilappsene](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-pbi-report-server-home.png)
@@ -40,8 +40,9 @@ Derefter opretter du forbindelse til op til fem rapportservere i Power BI-mobila
 ## <a name="explore-samples-in-the-mobile-apps-without-a-server-connection"></a>Se nærmere på eksemplerne i mobilappsene uden serverforbindelse
 Selvom du ikke har adgang til en Reporting Services-webportal, kan du stadig udforske funktionerne i Reporting Services-mobilrapporter og -KPI'er. 
 
-1. Tryk på knappen til global navigation ![Knappen til global navigation](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-global-nav-button.png) i øverste venstre hjørne, og tryk derefter på tandhjulsikonet øverst til højre ![Tandhjulsikon](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-settings-icon.png).
-2. Tryk på **Reporting Services-eksempler**, og gennemse for at interagere med eksemplerne på KPI'er og mobilrapporter.
+1. Tryk på dit profilbillede i øverste venstre hjørne, og tryk derefter på **Indstillinger** på det kontopanel, der glider ud.
+
+2. Tryk på **Reporting Services-eksempler** på siden Indstillinger, og gennemse for at interagere med eksemplerne på KPI'er og mobilrapporter.
    
    ![Reporting Services-eksempler](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-ssrs-samples.png)
 
@@ -53,18 +54,17 @@ Du kan se Power BI-rapporter, Reporting Services-mobilrapporter og KPI'er i Powe
    
    ![Log på en rapportserver](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-connect-to-rs-login.png)
    
-   Hvis du allerede er logget på Power BI-appen, skal du trykke på knappen til global navigation ![Knappen til global navigation](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-global-nav-button.png)og derefter trykke på tandhjulsikonet ![Tandhjulsikon](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-settings-icon.png) øverst til højre.
-3. Tryk på **Opret forbindelse til server**.
+   Hvis du allerede er logget på Power BI-appen, skal du trykke på dit profilbillede i øverste venstre hjørne og derefter trykke på **Indstillinger** på det kontopanel, der glider ud.
+3. Tryk på **Opret forbindelse til server** på siden Indstillinger, der åbnes.
    
     ![Opret forbindelse til server](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-android-server-sign-in.png)
 
-     Mobilappen skal have adgang til serveren på en eller anden måde. Der er et par måder at gøre det på:
+    Mobilappen skal have adgang til serveren på en eller anden måde. Der er et par måder at gøre det på:
+     * Den nemmeste måde er at være på samme netværk/anvende en VPN-forbindelse.
+     * Det er muligt at bruge en Web Application Proxy til at oprette forbindelse, hvis du er uden for organisationen. Du kan få flere oplysninger under [Brug af OAuth til at oprette forbindelse til Reporting Services](mobile-oauth-ssrs.md).
+     * Åbn en forbindelse (port) i firewallen.
 
-    - Den nemmeste måde er at være på samme netværk/anvende en VPN-forbindelse.
-    - Det er muligt at bruge en Web Application Proxy til at oprette forbindelse, hvis du er uden for organisationen. Du kan få flere oplysninger under [Brug af OAuth til at oprette forbindelse til Reporting Services](mobile-oauth-ssrs.md). 
-    - Åbn en forbindelse (port) i firewallen.
-
-1. Udfyld serveradressen og dit brugernavn og din adgangskode. Brug dette format til serveradressen:
+4. Udfyld serveradressen, og giv serveren et brugervenligt navn, hvis du vil. Brug dette format til serveradressen:
    
      `https://<servername>/reports`
    
@@ -75,14 +75,14 @@ Du kan se Power BI-rapporter, Reporting Services-mobilrapporter og KPI'er i Powe
    Inkluder **http** eller **https** foran forbindelsesstrengen.
    
     ![Dialogboksen Opret forbindelse til server](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-connect-to-server-dialog.png)
-5. (Valgfrit) Under **Avancerede indstillinger** kan du give serveren et brugervenligt, hvis du vil.
-6. Nu kan du se serveren i navigationsruden – i dette eksempel hedder den "power bi-rapportserver".
+5. Når du har skrevet serveradressen og et valgfrit brugervenligt navn, skal du trykke på **Opret forbindelse** og derefter udfylde dit brugernavn og din adgangskode, når du bliver bedt om det.
+6. Nu kan du se serveren i ruden Konti – i dette eksempel hedder den "Arbejdsserver".
    
    ![Rapportserver i navigationsruden](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
 
-## <a name="connect-to-an-on-premises-report-server-in-ios"></a>Opret forbindelse til en rapportserver i det lokale miljø i iOS
+## <a name="connect-to-an-on-premises-report-server-in-ios-or-android"></a>Opret forbindelse til en rapportserver i det lokale miljø i iOS eller Android
 
-Hvis du får vist Power BI i iOS-mobilappen, kan din it-administrator have angivet en appkonfigurationspolitik. Hvis det er tilfældet, skal du ikke angive lige så mange oplysninger, når du skal oprette forbindelse til en rapportserver. 
+Hvis du får vist Power BI i iOS- eller Android-mobilappen, kan din it-administrator have defineret en appkonfigurationspolitik. Hvis det er tilfældet, skal du ikke angive lige så mange oplysninger, når du skal oprette forbindelse til en rapportserver. 
 
 1. Du får vist en meddelelse om, at din mobilapp er konfigureret med en rapportserver. Tryk på **Log på**.
 
@@ -117,7 +117,7 @@ Power BI-rapporter, Reporting Services-mobilrapporter og KPI'er vises i de samme
 ## <a name="view-your-favorite-kpis-and-reports"></a>Se dine foretrukne KPI'er og rapporter
 Du kan markere KPI'er og rapporter som favoritter på webportalen og derefter se dem i en enkelt praktisk mappe på din mobilenhed sammen med din foretrukne Power BI-dashboards.
 
-* Tryk på **Favoritter**.
+* Tryk på **Favoritter** på navigationslinjen.
   
    ![Favoritter i navigationsruden](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png)
   
@@ -126,8 +126,8 @@ Du kan markere KPI'er og rapporter som favoritter på webportalen og derefter se
    ![Power BI-rapporter og -dashboards på siden Favoritter](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-favorites.png)
 
 ## <a name="remove-a-connection-to-a-report-server"></a>Fjern en forbindelse til en rapportserver
-1. Vælg **Indstillinger** nederst i navigationsruden.
-2. Tryk på det servernavn, som du ikke vil have forbindelse til.
+1. Åbn ruden Konti, og tryk på **Indstillinger**.
+2. Tryk på navnet på den server, som du ikke vil oprette forbindelse til.
 3. Tryk på **Fjern server**.
 
 ## <a name="next-steps"></a>Næste trin

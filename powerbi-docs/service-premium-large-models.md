@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/29/2019
+ms.date: 12/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 934f045e2546893c48211729402a773b4bbe2aa0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 044952c6ce5e3b1550067f9d288f8eab02b868bb
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696755"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223718"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Store modeller i Power BI Premium (prøveversion)
 
@@ -118,23 +118,4 @@ Vær opmærksom på følgende begrænsninger, når du bruger store modeller:
 - **Multi-Geo-understøttelse**: Datasæt, der er aktiveret til Premium-filer, mislykkes på kapaciteter, hvor [Multi-Geo](service-admin-premium-multi-geo.md) også er aktiveret.
 
 - **Download Power BI Desktop**: Hvis et datasæt er gemt i Premium-filer, mislykkes [download som en. pbix](service-export-to-pbix.md)-fil.
-- **Understøttede områder**: Store modeller understøttes af følgende områder.
-  - Det østlige Australien
-  - Det sydøstlige Australien
-  - Det centrale USA
-  - Det østlige Asien
-  - Det østlige USA
-  - Det østlige USA 2
-  - Det østlige Japan
-  - Det vestlige Japan
-  - Det centrale Korea
-  - Det sydlige Sydkorea
-  - Det nordcentrale USA
-  - Det nordlige Europa
-  - Det sydcentrale USA
-  - Det sydøstlige Asien
-  - Det sydlige Storbritannien
-  - Det vestlige Storbritannien
-  - Det vestlige Europa
-  - Det vestlige USA
-  - Det vestlige USA 2
+- **Understøttede områder**: Store modeller understøttes i alle Azure-områder, der understøtter Premium files Storage. Du kan få mere at vide ved at se [Produkter tilgængelige efter område](https://azure.microsoft.com/global-infrastructure/services/?products=storage).

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 11/21/2018
-ms.openlocfilehash: 4d7f02d9f78eee4cf287e0bb83acb93a7b1b0355
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: f1a1bfc161fe163a4c4680dbcc90e6ad28b80a90
+ms.sourcegitcommit: 0da17de80c9651f9f4474d1abb1bdaaade8808fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696847"
+ms.lasthandoff: 12/27/2019
+ms.locfileid: "75498494"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>Selvstudium: Føj formateringsindstillinger til en visualisering i Power BI
 
@@ -124,10 +124,12 @@ Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigure
 
 8. Î filen **visual.ts**
 
-    skal du importere klassen `VisualSettings`,
+    importér `VisualSettings`, `VisualObjectInstanceEnumeration` og `EnumerateVisualObjectInstancesOptions`:
 
     ```typescript
     import { VisualSettings } from "./settings";
+    import VisualObjectInstanceEnumeration = powerbi.VisualObjectInstanceEnumeration;
+    import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
     ```
 
     og i klassen **Visual** skal du tilføje følgende egenskab:
@@ -218,23 +220,34 @@ Angiv egenskabsværdier for projektet med det brugerdefinerede visual, opdater i
 
     *Viser en formateret målingsværdi i en cirkel*
 
-5. Du kan eventuelt angive dine oplysninger i objektet **author**.
+5. Udfyld **supportUrl** og **gitHubUrl** for visualiseringen.
 
-6. Gem filen **pbiviz.json**.
+    Eksempel:
 
-7. I objektet **assets** kan du se, at dokumentet definerer en sti til et ikon. Ikonet er det billede, der vises i ruden **_Visualiseringer_** . Det skal være en **PNG**-fil, *20 pixel gange 20 pixel*.
+    ```json
+    {
+        "supportUrl": "https://community.powerbi.com",
+        "gitHubUrl": "https://github.com/microsoft/PowerBI-visuals-circlecard"
+    }
+    ```
 
-8. I Windows Stifinder skal du kopiere icon.png-filen og derefter indsætte den for at erstatte standardfilen, der er placeret i mappen assets.
+6. Angiv dine oplysninger under objektet **forfatter**.
 
-9. I ruden Stifinder i Visual Studio Code skal du udvide mappen assets og derefter vælge icon.png-filen.
+7. Gem filen **pbiviz.json**.
 
-10. Gennemse ikonet.
+8. I objektet **assets** kan du se, at dokumentet definerer en sti til et ikon. Ikonet er det billede, der vises i ruden **_Visualiseringer_** . Det skal være en **PNG**-fil, *20 pixel gange 20 pixel*.
+
+9. I Windows Stifinder skal du kopiere icon.png-filen og derefter indsætte den for at erstatte standardfilen, der er placeret i mappen assets.
+
+10. I ruden Stifinder i Visual Studio Code skal du udvide mappen assets og derefter vælge icon.png-filen.
+
+11. Gennemse ikonet.
 
     ![Billede af ruden Visualiseringer](media/custom-visual-develop-tutorial-format-options/viz-pane-image.png)
 
-11. I Visual Studio Code skal du sikre, at alle filer er gemt.
+12. I Visual Studio Code skal du sikre, at alle filer er gemt.
 
-12. Angiv følgende kommando i PowerShell for at pakke den brugerdefinerede visual.
+13. Angiv følgende kommando i PowerShell for at pakke den brugerdefinerede visual.
 
     ```powershell
     pbiviz package

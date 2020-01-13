@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/15/2019
-ms.openlocfilehash: 5bf3fee0f3df7b5be04b99e16a8a4043e8fcf30e
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 6a481681801b580b9eec47c5c704d8bdea8835f1
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128003"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75222097"
 ---
 # <a name="tutorial-developing-a-power-bi-visual"></a>Selvstudium: Udvikling af en Power BI-visualisering
 
-Vi gør det nemt for udviklere at tilføje Power BI-visualiseringer i Power BI, som kan bruges i dashboards og rapporter. For at hjælpe dig i gang har vi udgivet koden til alle vores visualiseringer på GitHub.
+Vi gør det nemt for udviklere at tilføje Power BI-visualiseringer i Power BI, som kan bruges i dashboards og rapporter. For at hjælpe dig med at komme i gang har vi publiceret koden til alle vores visualiseringer i GitHub.
 
 Ud over visualiseringssystemet stiller vi vores testpakke og -værktøjer til rådighed, så vores community kan udarbejde Power BI-visualiseringer i høj kvalitet til Power BI.
 
@@ -38,7 +38,7 @@ I dette selvstudium lærer du, hvordan du kan:
 
 * Hvis du ikke er tilmeldt **Power BI Pro**, kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/pricing/), før du begynder.
 * Du skal have [Visual Studio Code](https://www.visualstudio.com/) installeret.
-* Windows-brugere skal have [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/setup/installing-windows-powershell?view=powershell-6) version 4 eller nyere, og OSX-brugere skal have [Terminal](https://macpaw.com/how-to/use-terminal-on-mac).
+* Windows-brugere skal have [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 eller nyere, og OSX-brugere skal have [Terminal](https://macpaw.com/how-to/use-terminal-on-mac).
 
 ## <a name="setting-up-the-developer-environment"></a>Konfiguration af udviklermiljø
 
@@ -398,6 +398,9 @@ Nu kan vi undersøge, hvordan du kan udvikle den brugerdefinerede visual for at 
     import IVisual = powerbi.extensibility.IVisual;
     import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
     import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
+    import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
+    import VisualObjectInstanceEnumeration = powerbi.VisualObjectInstanceEnumeration;
+    import IVisualHost = powerbi.extensibility.visual.IVisualHost;
 
     import * as d3 from "d3";
     type Selection<T extends d3.BaseType> = d3.Selection<T, any,any, any>;

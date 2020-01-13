@@ -12,10 +12,10 @@ ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: e6be58971b265414440041f4667a0b0cc455cdd4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73851519"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Hurtig introduktion – Navigation i Power BI-tjenesten
@@ -91,7 +91,7 @@ Med **Favoritter** kan du hurtigt få adgang til det indhold, der er vigtigst fo
    
    ![markér som favorit](./media/end-user-experience/power-bi-report-favorite.png)
 
-3. Åbn **ruden** *Favoritter* ved at vælge **Favoritter** i navigationsruden eller ved at vælge stjerneikonet ![screenshot, der viser et gult stjerneikon](media/end-user-experience/powerbi-star-icon.png).
+3. Åbn **ruden** *Favoritter* ved at vælge **Favoritter** i navigationsruden eller ved at vælge stjerneikonet ![skærmbillede, der viser et gult stjerneikon](media/end-user-experience/powerbi-star-icon.png).
    
    ![åbn skærmbilledet Favoritter](./media/end-user-experience/power-bi-favorite-pane.png)
    

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2018
+ms.date: 12/14/2019
 ms.author: mihart
-ms.openlocfilehash: b22da2df92c0cc7130c7a5ebf69e2284c12ffef4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a4b8dd876cfaca3fa4ad91bf5b4d94aa5b4be311
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861957"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75217988"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Få vist en rapport i Power BI-tjenesten for *forbrugere*
 
@@ -29,10 +29,10 @@ Der er mange forskellige måder at åbne en rapport på. Her kan du se to af dem
 ## <a name="open-a-report-from-power-bi-home"></a>Åbn en rapport fra startsiden i Power BI
 Lad os åbne en rapport, der er delt med dig direkte, og derefter åbne en rapport, der blev delt som en del af en app.
 
-   ![Startside](./media/end-user-report-open/power-bi-home-canvas.png)
+   ![Hjemmeside](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Åbn en rapport, der er delt med dig
-Power BI-*designere* kan dele en individuel rapport direkte med dig via et link i en mail eller ved at tilføje den automatisk. Indhold, der deles på denne måde, vises i objektbeholderen **Delt med mig** i navigationsruden og i afsnittet **Delt med mig** på lærredet Start.
+Power BI-*designere* kan dele en individuel rapport direkte med dig via et link i en mail eller ved at føje den til dit Power BI-indhold automatisk. Rapporter, der deles på denne måde, vises i objektbeholderen **Delt med mig** i navigationsruden og i afsnittet **Delt med mig** på lærredet Start.
 
 1. Åbn Power BI-tjenesten (app.powerbi.com).
 
@@ -40,7 +40,7 @@ Power BI-*designere* kan dele en individuel rapport direkte med dig via et link 
 
    ![Lærred på startsiden](./media/end-user-report-open/power-bi-select-home-new.png)
    
-3. Rul ned, indtil du ser **Delt med mig**. Kig efter rapportikonet ![rapportikon](./media/end-user-report-open/power-bi-report-icon.png). På dette skærmbillede har vi ét dashboard og én rapport ved navn*Sales and Marketing sample.* 
+3. Rul ned, indtil du ser **Delt med mig**. Kig efter rapportikonet ![rapportikon](./media/end-user-report-open/power-bi-report-icon.png). På dette skærmbillede er der ét dashboard og én rapport. Rapporten kaldes for *Eksempel på salg og marketing*. 
    
    ![afsnittet Delt med mig på startsiden](./media/end-user-report-open/power-bi-shared-new.png)
 
@@ -64,8 +64,10 @@ Power BI-*designere* kan dele en individuel rapport direkte med dig via et link 
 
    ![tilpas til siden](./media/end-user-report-open/power-bi-actual.png)
 
+Der er mange måder, du kan interagere med en rapport på for at finde indsigt og træffe forretningsbeslutninger.  Brug indholdsfortegnelsen til venstre for at gennemse andre artikler om Power BI-rapporter. 
+
 ### <a name="open-a-report-that-is-part-of-an-app"></a>Åbn en rapport, der er en del af en app
-Hvis du har modtaget apps fra kolleger eller fra AppSource, er disse apps tilgængelige via Start og via objektbeholderen **Apps** i navigationsruden. En [app](end-user-apps.md) er et bundt af dashboards og rapporter.
+Hvis du har modtaget apps fra kolleger eller fra AppSource, er disse apps tilgængelige via Start og via objektbeholderen **Apps** i navigationsruden. En [app](end-user-apps.md) er en samling af dashboards og rapporter, der er bundtet til dig af en Power BI-*designer*.
 
 ### <a name="prerequisites"></a>Forudsætninger
 Hvis du vil følge med, skal du downloade appen Sales & Marketing.
@@ -78,19 +80,19 @@ Du kan åbne appen fra din objektbeholder til apps eller fra startsiden.
 
 7. Rul ned, indtil du ser **Mine apps**.
 
-   ![Startside](./media/end-user-report-open/power-bi-app.png)
+   ![Hjemmeside](./media/end-user-report-open/power-bi-app.png)
 
-8. Vælg din nye app Sales & Marketing for at åbne den. Afhængigt af de indstillinger der er angivet af app*designeren*, åbner appen enten et dashboard eller en rapport. Denne app åbnes i et dashboard.  
+8. Vælg din nye *Salg og marketing*-app for at åbne den. Afhængigt af de indstillinger der er angivet af app*designeren*, åbner appen enten et dashboard eller en rapport. Denne app åbnes i et dashboard.  
 
 
 ## <a name="open-a-report-from-a-dashboard"></a>Åbn en rapport fra et dashboard
 Rapporter kan åbnes fra et dashboard. De fleste [dashboardfelter](end-user-tiles.md) er *fastgjort* fra rapporter. Når du vælger et felt, åbnes den rapport, der blev brugt til at oprette feltet. 
 
-1. Vælg et felt fra dashboardet. I dette eksempel har vi valgt søjlediagramfeltet "Enheder i alt ÅTD...".
+1. Vælg et felt fra dashboardet. I dette eksempel har vi valgt feltet i søjlediagrammet *Enheder i alt ÅTD...* .
 
     ![dashboard med valgt felt](./media/end-user-report-open/power-bi-dashboard.png)
 
-2.  Den tilknyttede rapport åbnes. Bemærk, at vi er på siden "ÅTD-kategori". Dette er rapportsiden, der indeholder det søjlediagram, vi har valgt på dashboardet.
+2.  Den tilknyttede rapport åbnes. Bemærk, at vi er på siden *ÅTD-kategori*. Dette er rapportsiden, der indeholder det søjlediagram, vi har valgt på dashboardet.
 
     ![rapport, der er åbnet i Læsevisning](./media/end-user-report-open/power-bi-report-tabs.png)
 
@@ -100,7 +102,7 @@ Rapporter kan åbnes fra et dashboard. De fleste [dashboardfelter](end-user-tile
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Der er stadig flere måder at åbne en rapport
 Når du bliver mere fortrolig med at navigere i Power BI-tjenesten, finder du ud af, hvilke arbejdsprocesser der fungerer bedst for dig. Der er et par enkelte andre måder at få adgang til rapporter på:
-- Via navigationsruden ved hjælp af **Favoritter** og **Seneste**    
+- Via navigationsruden ved hjælp af [Favoritter](end-user-favorite.md) og [Seneste](end-user-recent.md)    
 - Brug [Få vist relaterede](end-user-related.md)    
 - Via en mail, når nogen [deler med dig](../service-share-reports.md), eller du [angiver en advarsel](end-user-alerts.md)    
 - Fra dit [Meddelelsescenter](end-user-notification-center.md)    

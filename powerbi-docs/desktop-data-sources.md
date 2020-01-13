@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 88a49af62a26b64d8b913b6df03c82841f31a489
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: 0f24675d4185efd7524d9e8c453c919d64e0364a
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410968"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75222128"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 
@@ -24,14 +24,12 @@ Hvis du vil oprette forbindelse til data, skal du vælge **Hent data** på bånd
 
 ![Hent data i Power BI Desktop](media/desktop-data-sources/data-sources-01.png)
 
-Hvis du vælger **Mere...** i menuen **Mest almindelige**, vises vinduet **Hent data**. Du kan også åbne vinduet **Hent data** (og omgå menuen **Mest almindelige**) ved at vælge **ikonet** **Hent data** direkte.
+Hvis du vælger **Mere...** i menuen **Mest almindelige**, vises vinduet **Hent data**. Du kan også åbne vinduet **Hent data** (og omgå menuen **Mest almindelige**) ved at vælge **Hent data** **ikon for knap** direkte.
 
 ![Knappen Hent data](media/desktop-data-sources/data-sources-02.png)
 
 > [!NOTE]
-> Power BI-teamet udvider hele tiden de datakilder, der er tilgængelige for **Power BI Desktop** og **Power BI-tjenesten**. Du kan derfor ofte se tidlige versioner af igangværende datakilder markeret som *Beta* eller *Preview*. Alle datakilder, der er markeret som *Beta* eller *Preview*, har begrænset support og funktionalitet og skal ikke bruges i produktionsmiljøer. 
-
-> Derudover er alle data, der er markeret som *beta* eller *prøveversion* for **Power BI Desktop**, muligvis ikke tilgængelige til brug i **Power BI-tjenesten** eller andre Microsoft-tjenester, før datakilden bliver generelt tilgængelig.
+> Power BI-teamet udvider hele tiden de datakilder, der er tilgængelige for **Power BI Desktop** og **Power BI-tjenesten**. Du kan derfor ofte se tidlige versioner af igangværende datakilder markeret som *Beta* eller *Preview*. Alle datakilder, der er markeret som *Beta* eller *Preview*, har begrænset support og funktionalitet og skal ikke bruges i produktionsmiljøer. Derudover er alle data, der er markeret som *beta* eller *prøveversion* for **Power BI Desktop**, muligvis ikke tilgængelige til brug i **Power BI-tjenesten** eller andre Microsoft-tjenester, før datakilden bliver generelt tilgængelig.
 
 ## <a name="data-sources"></a>Datakilder
 Datatyper er organiseret i følgende kategorier:
@@ -62,7 +60,7 @@ På følgende billede vises vinduet **Hent data** for **Fil**.
 
 Kategorien **Database** indeholder følgende dataforbindelser:
 
-* SQL Server-database
+* SQL Server Database
 * Access-database
 * SQL Server Analysis Services-database
 * Oracle-database
@@ -82,7 +80,7 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 * Vertica
 * Snowflake
 * Essbase
-* AtScale-kuber (beta)
+* AtScale-kuber
 * BI Connector
 * Dremio
 * Exasol
@@ -104,7 +102,7 @@ Kategorien **Power Platform** indeholder følgende dataforbindelser:
 * Power BI-datasæt
 * Power BI-dataflow
 * Common Data Service
-* Power Platform-dataflow (beta)
+* Dataflow til Power Platform
 
 På følgende billede vises vinduet **Hent data** for **Power Platform**.
 
@@ -118,13 +116,14 @@ Kategorien **Azure** indeholder følgende dataforbindelser:
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB
-* Azure Data Lake Storage Gen2 (beta)
+* Azure Data Lake Storage Gen2
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * Interaktiv HDInsight-forespørgsel
 * Azure Data Explorer (Kusto)
-* Azure Cost Management (Beta)
+* Azure Cost Management
+* Azure Time Series Insights (beta)
 
 På følgende billede vises vinduet **Hent data** for **Azure**.
 
@@ -209,7 +208,7 @@ På følgende billede vises vinduet **Hent data** for **Andet**.
 > [!NOTE]
 > På nuværende tidspunkt er det ikke muligt at oprette forbindelse til brugerdefinerede datakilder, der er beskyttet via Azure Active Directory.
 
-## <a name="connecting-to-a-data-source"></a>Opret forbindelse til en datakilde
+## <a name="connecting-to-a-data-source"></a>Oprettelse af forbindelse til en datakilde
 For at oprette forbindelse til en datakilde skal du vælge datakilden i vinduet **Hent data** og vælge **Opret forbindelse**. På følgende billede er **Web** valgt fra kategorien **Andet** for dataforbindelsen.
 
 ![Opret forbindelse til web](media/desktop-data-sources/data-sources-08.png)
@@ -236,7 +235,7 @@ Når en forfatter åbner en PBIDS-fil, åbnes Power BI Desktop, og brugeren bliv
 
 Fremover kan brugeren begynde at oprette visualiseringer eller besøge *Seneste kilder igen* for at indlæse et nyt sæt tabeller i modellen. 
 
-I øjeblikket understøtter PBIDS-filer kun en enkelt datakilde i én fil. Hvis du angiver mere end én datakilde, resulterer det i en fejl. 
+I øjeblikket understøtter .PBIDS-filer kun en enkelt datakilde i én fil. Hvis du angiver mere end én datakilde, resulterer det i en fejl. 
 
 Administratorer opretter PBIDS-filen ved at angive de påkrævede input for en enkelt forbindelse samt forbindelsesmåden som enten **DirectQuery**  eller **Import**. Hvis **tilstand** mangler/er null i filen, bliver den bruger, der åbner filen i Power BI Desktop, bedt om at vælge DirectQuery eller Import. 
 

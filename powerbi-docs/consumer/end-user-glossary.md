@@ -2,19 +2,18 @@
 title: Ordliste for Power BI-forbrugere
 description: Power BI introducerer mange nye begreber og nye måder at bruge velkendte begreber på. Brug vores ordliste til at blive fortrolig med Power BI-terminologien.
 services: power-bi
-ms.custom: seodec18
 author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 12/18/2019
 ms.author: mihart
-ms.openlocfilehash: 8c7a0463e8a521482a1aab6a53ae9656585a7849
-ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
+ms.openlocfilehash: 046f35613e5fe748e93389fbe10a77af08f449e3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548546"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75303916"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
@@ -76,7 +75,9 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 **content view (indholdsvisning)**
 
-**cross filter, cross highlight (krydsfilter, krydsfremhævning)**
+**cross-filter (krydsfiltrering)** Gælder for visuelle interaktioner. Med krydsfiltrering fjernes data, der ikke er gældende. Hvis du f.eks. vælger **Moderation** i kransediagrammet, så krydsfiltreres kurvediagrammet. Der vises nu kun datapunkter, der gælder for segmentet Moderation, i kurvediagrammet.
+
+**cross-highlight (krydsfremhævning)** Gælder for visuelle interaktioner. Med krydsfremhævning bevares alle oprindelige datapunkter, men den del, der ikke gælder for dit valg, nedtones. Hvis du f.eks. vælger **Moderation** i kransediagrammet, så krydsfremhæves søjlediagrammet. Alle data, der ikke gælder for segmentet Moderation, nedtones i søjlediagrammet, og alle data, der gælder for segmentet Moderation, fremhæves.
 
 **custom visual (brugerdefineret visual)** Visuals, der er oprettet af communityet og Microsoft. De kan downloades fra Office Store til brug i Power BI-rapporter.
 
@@ -234,7 +235,7 @@ Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
 ## <a name="q"></a>Q
 **Q&A (Spørgsmål og svar)** Muligheden for at skrive spørgsmål om et datasæt i et naturligt sprog og få svar i form af visualiseringer. Vises i Power BI-tjenesten og Desktop.
 
-**Q&A virtual analyst (Virtuel Spørgsmål og svar-analytiker)**  
+**Q&A virtual analyst (Virtuel analytiker Spørgsmål og svar)**  
 [Power BI – Mobil] I iOS er det samtalebrugergrænsefladen til spørgsmål og svar.
 
 **QR codes (QR-koder)** [Power BI – Mobil] En matrixstregkode, der kan genereres for dashboards eller felter i Power BI-tjenesten for at identificere produkter. QR-koder kan scannes med en QR-kodelæser, og i iOS eller Android kan du linke direkte til dashboardet eller feltet med Power BI – Mobil-appen.
@@ -310,6 +311,8 @@ Power BI-dashboards indeholder rapportfelter.
 **value, value (værdi, værdier)** Numeriske data, der skal visualiseres.
 
 **visual, visualization (visual, visualisering)** Et diagram. Visuals kan f.eks. være: søjlediagram, træstruktur, kransediagram, kort.
+
+**Visuel interaktion** En af de fantastiske funktioner i Power BI er den måde, som alle visualiseringer på en rapportside er forbundet med hinanden på. Hvis du vælger et datapunkt i en af visualiseringerne, ændres alle andre visualiseringer med disse data på siden på baggrund af dette valg.
 
 **Visualizations pane (Ruden Visualiseringer)** Navnet på de visualiseringsskabeloner, der leveres i det delte rapportlærred for Power BI Desktop og Power BI-tjenesten. Indeholder små skabeloner, der også kaldes ikoner, for de enkelte oprindelige visualiseringstyper.  
 

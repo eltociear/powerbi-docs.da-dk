@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: mshenhav
-ms.openlocfilehash: 22988b08209865e9f1f2c583a30aa40e48c249bc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7b0a8b1f8b77ba1ee636bc92bb230b7c51e2935b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879256"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219342"
 ---
 # <a name="get-notifications-in-the-power-bi-mobile-apps"></a>Modtag meddelelser i Power BI-mobilapps
 Gælder for:
@@ -34,27 +34,23 @@ I meddelelserne modtager du oplysninger omkring din Power BI-oplevelse direkte i
    
    ![Meddelelsesbanner](./media/mobile-apps-notification-center/power-bi-mobile-notification-banner.png)
    
-   Eller på en iPad:
-   
-   ![Meddelelser](./media/mobile-apps-notification-center/power-bi-ipad-notifications.png)
-   
+
    Du kan [ændre, hvordan Power BI underretter dig](mobile-apps-notification-center.md#change-or-turn-off-notifications-on-your-mobile-device).
-2. Hvis du har modtaget meddelelser, vil du se en gul prik på knappen til global navigation ![Meddelelsesprik](./media/mobile-apps-notification-center/power-bi-android-menu-notifications-icon.png) (Android) eller på ikonet **Meddelelser**, når du logger på Power BI på din mobilenhed. 
-   
-   ![Meddelelsesprik](./media/mobile-apps-notification-center/power-bi-windows-10-notifications.png)
-3. Vælg ikonet Meddelelser ![Ikonet Meddelelser](./media/mobile-apps-notification-center/power-bi-windows-10-notification-icon.png) (Windows 10).
+2. Hvis du har modtaget meddelelser, når du logger på Power BI på din mobilenhed, vil du se en gul prik på klokkeikonet for meddelelser ![klokke for meddelelse](./media/mobile-apps-notification-center/powerbi-alert-tile-notification-icon.png) (iOS og Android) eller på knappen til global navigation ![Meddelelsesprik](./media/mobile-apps-notification-center/power-bi-iphone-alert-global-nav-button.png) (Windows 10-enheder). 
+
+3. Hvis du vil se meddelelser i Meddelelsescenter, skal du trykke på klokken for meddelelser ![klokke for meddelelse](./media/mobile-apps-notification-center/powerbi-alert-tile-notification-icon.png) (iOS og Android) eller ikonet for Meddelelsescenter ![Ikonet Meddelelser](./media/mobile-apps-notification-center/power-bi-windows-10-notification-icon.png) (Windows 10-enheder).
    
     Meddelelser vises med de nyeste øverst, og ulæste meddelelser er markerede. Meddelelser gemmes i 90 dage, medmindre du sletter dem, eller du når den maksimale grænse på 100.
    
    ![Liste over iOS-meddelelser](./media/mobile-apps-notification-center/power-bi-iphone-notifications-list.png)
-4. Hvis du vil afvise en meddelelse, skal du trykke på den, holde den nede og vælge **Afvis**.
+4. Hvis du vil afvise en meddelelse på iOS- og Android-enheder, skal du trykke, holde nede og stryge til siden. På Windows 10-enheder skal du højreklikke og vælge **Afvis**.
 
 ## <a name="change-or-turn-off-notifications-on-your-mobile-device"></a>Rediger eller deaktiver meddelelser på din mobilenhed
 Du kan ændre, hvordan Power BI underretter dig.
 
 1. På en iOS-enhed skal du gå til **Indstillinger** > **Meddelelser**. 
    
-    På en Android-telefon skal du åbne **Meddelelsesindstillinger**.
+    På en Android-telefon skal du gå til **Indstillinger** > **Meddelelser**.
    
     På en Windows-enhed skal du i **Indstillinger** gå til **System** > **Meddelelser og handlinger**.
 2. Vælg **Power BI** på listen over apps. 

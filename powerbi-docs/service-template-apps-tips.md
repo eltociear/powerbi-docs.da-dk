@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 04b50882c28bf561e628e9f02dff6c147233d260
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: a9f589a5e840e95e349ec303b42b30568820e8b3
+ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099737"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622441"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tip til udarbejdelse af skabelonapps i Power BI
 
@@ -131,13 +131,13 @@ Skabelonapps understøtter eksempeldata kun for apps. Husk at markere afkrydsnin
 * Sørg for at følge dokumentationen om [Power BI-apptilbud](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
 * Hvis et dashboard er en del af din app, skal du sørge for, at det ikke er tomt.
 * Installér appen ved hjælp af linket til appen, før du udgiver den, og kontrollér, at du kan oprette forbindelse til datasættet, og at appoplevelsen er, som du forventer.
-* Før du uploader bpix til skabelonen for arbejdsområdet, skal du huske at fjerne alle unødvendige forbindelser.
+* Før du uploader pbix til arbejdsområdet for skabelonen, skal du huske at fjerne alle unødvendige forbindelser.
 * Følg [Bedste praksis for design af rapporter og visuals](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) for Power BI for at opnå maksimal indflydelse på dine brugere og blive godkendt til distribution.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
 ## <a name="known-limitations"></a>Kendte begrænsninger
 
-| Udvalgt | Kendt begrænsning |
+| Funktion | Kendt begrænsning |
 |---------|---------|
 |Indhold:  Datasæt   | Nøjagtigt ét datasæt skal være til stede. Der tillades kun datasæt, som er udarbejdet i Power BI Desktop (.pbix-filer). <br>Understøttes ikke: Datasæt fra andre skabelonprogrammer, datasæt på tværs af arbejdsområder, sideinddelte rapporter (.rdl-filer), Excel-projektmapper |
 |Indhold: Dashboards | Felter i realtid tillades ikke (med andre ord, understøttes push- eller streamingdatasæt ikke) |

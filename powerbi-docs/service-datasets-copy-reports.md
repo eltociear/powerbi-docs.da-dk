@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2fc33c8adcaed35dab8fc9d81ab28fa314f42e3b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9c7cbd895a913b76a9c0b87155f7800c5538ab28
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881935"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223851"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Kopiér rapporter fra andre arbejdsområder (prøveversion)
 
@@ -37,7 +37,7 @@ Når du finder en rapport, du vil bruge i et arbejdsområde eller en app, kan du
 
     ![Dialogboksen Gem en kopi](media/service-datasets-copy-reports/power-bi-dataset-save-report.png)
 
-    Du kan gemme rapporten i det aktuelle arbejdsområde eller et andet i Power BI-tjenesten. Du kan kun se arbejdsområder, som er arbejdsområder med den nye oplevelse, hvor du er medlem.
+    Det arbejdsområde, du kan gemme på, afhænger af, hvor du kopierer fra. Når du kopierer fra et arbejdsområde, kan du gemme rapporten i det aktuelle arbejdsområde eller et andet i Power BI-tjenesten. Du kan kun se arbejdsområder, som er arbejdsområder med den nye oplevelse, hvor du er medlem. Når du kopierer fra en app, kan du gemme rapporten i Mit arbejdsområde.
   
 4. Vælg **Gem**.
 

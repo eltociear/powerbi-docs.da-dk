@@ -1,19 +1,19 @@
 ---
 title: Udforsk rapporter i Power BI-mobilappsene
 description: Se, hvordan du kan få vist og interagere med rapporter i Power BI-mobilappsene på din telefon eller tablet. Du kan oprette rapporter i Power BI-tjenesten eller Power BI Desktop og derefter interagere med dem i mobilappsene.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/09/2019
-ms.author: mshenhav
-ms.openlocfilehash: d4b9a9aeda00dd7f16690d1e92336f5b63adf1da
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/16/2019
+ms.author: painbar
+ms.openlocfilehash: bb54a4e403f2cc12800d0c97e44308f7ad5c5f65
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869776"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220696"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -96,29 +96,43 @@ Fra rapportfoden kan du udføre flere handlinger på den aktuelle rapportside el
 ![Rapportfod](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
 De handlinger, du kan udføre fra sidefoden, er:
-- Nulstille rapportfilteret og tværgående fremhævninger til den oprindelige tilstand.
-- Åbne samtaleruden for at få vist eller tilføje kommentarer til denne rapport.
-- Åbne filterruden for at få vist og ændre det filter, der aktuelt anvendes på rapporten.
-- Gennemgå alle siderne i rapporten. Når du trykker på sidenavnet, indlæses og præsenteres den pågældende side.
+* Nulstille rapportfilteret og krydsfremhævninger til den oprindelige tilstand.
+* Åbne samtaleruden for at få vist eller tilføje kommentarer til denne rapport.
+* Åbne filterruden for at få vist og ændre det filter, der aktuelt anvendes på rapporten.
+* Gennemgå alle siderne i rapporten. Når du trykker på sidenavnet, indlæses og præsenteres den pågældende side.
 Du kan flytte mellem rapportsider ved at stryge fra kanten af skærmen til midten.
-- Se alle rapporthandlinger.
+* Se alle rapporthandlinger.
 
 #### <a name="all-report-actions"></a>Alle rapporthandlinger
 Når du trykker på **Flere indstillinger** (...) i rapportsidefoden, får du vist alle de handlinger, du kan udføre i en rapport:
 
 
-![Alle rapporthandlinger](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
+![Alle rapporthandlinger](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-all-actions.png)
 
 Nogle af handlingerne kan være deaktiveret, da de er afhængige af de specifikke rapportegenskaber.
 Eksempel:
+
+**Bogmærker** er kun til stede, hvis der er blevet angivet [bogmærker](mobile-reports-in-the-mobile-apps.md#bookmarks) i rapporten. Både personlige bogmærker, som du kan definere i Power BI-tjenesten, og bogmærker, der er defineret af rapportopretteren, vises. Hvis et af bogmærkerne er defineret som standardbogmærket, åbnes rapporten med den pågældende visning, når den indlæses.
+
+**Anmærk og del** kan være slået fra, hvis din organisation har en [Intune-beskyttelsespolitik](https://docs.microsoft.com/intune/app-protection-policies), som forbyder deling fra en Power BI-mobilapp.
+
+**Inviter** er kun aktiveret, hvis du har tilladelse til at dele denne rapport med andre. Du har kun tilladelse, hvis du er ejer af rapporten, eller hvis du har fået tilladelse til at dele den igen af ejeren.
 
 **Filtrering efter aktuel placering** er aktiveret, hvis forfatteren af rapporten kategoriserede rapporten med geografiske data. Du kan få flere oplysninger ved at læse om [identifikation af geografiske data i en rapport](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
 
 **Scan for at filtrere rapporten efter stregkode** er kun aktiveret, hvis datasættet i din rapport er mærket som **stregkode**. Du kan finde flere oplysninger om at [tagge stregkoder i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes).
 
-**Inviter** er kun aktiveret, hvis du har tilladelse til at dele denne rapport med andre. Du har kun tilladelse, hvis du er ejer af rapporten, eller hvis du har fået tilladelse til at dele den igen af ejeren.
+### <a name="bookmarks"></a>Bogmærker
 
-**Anmærk og del** kan være slået fra, hvis din organisation har en [Intune-beskyttelsespolitik](https://docs.microsoft.com/intune/app-protection-policies), som forbyder deling fra en Power BI-mobilapp.
+Power BI-mobilappen understøtter både rapportbogmærker, som rapportopretteren har defineret, og personlige bogmærker, som du kan definere i Power BI-tjenesten. Du kan finde bogmærkemenuen under **Flere indstillinger** (...) på [værktøjslinjen med rapporthandlinger](mobile-reports-in-the-mobile-apps.md#all-report-actions).
+
+![bogmærkemenu](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
+
+Når en bogmærkevisning af en rapport er åben, vises navnet på bogmærket øverst i rapporten.
+
+![bogmærkevisning](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
+
+[Få mere at vide om bogmærker i Power BI-tjenesten](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
 
 ## <a name="next-steps"></a>Næste trin
 * [Få vist og interager med Power BI-rapporter, der er optimeret til din telefon](mobile-apps-view-phone-report.md)

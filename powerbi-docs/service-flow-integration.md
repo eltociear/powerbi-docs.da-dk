@@ -10,20 +10,20 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 738ae599e116beaf5ff80098e4965ee3ed958b04
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: e9c6185506d1992a46ee14ff1eafe0c37d9f65c1
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699676"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223793"
 ---
 # <a name="power-automate-and-power-bi"></a>Power Automate og Power BI
 
-[Power Automate](https://flow.microsoft.com/documentation/getting-started) er et SaaS-tilbud til automatisering af arbejdsprocesser på tværs af det stigende antal programmer og tjenester, som erhvervsbrugere er afhængige af. Med Flow kan du automatisere opgaver ved at integrere dine foretrukne apps og tjenester (herunder Power BI) for at få meddelelser, synkronisere filer, indsamle data og meget mere. Gentagne opgaver bliver nemme med automatisering af arbejdsprocessen.
+[Power Automate](https://docs.microsoft.com/power-automate/getting-started) er et SaaS-tilbud til automatisering af arbejdsprocesser på tværs af det stigende antal programmer og tjenester, som erhvervsbrugere er afhængige af. Med Flow kan du automatisere opgaver ved at integrere dine foretrukne apps og tjenester (herunder Power BI) for at få meddelelser, synkronisere filer, indsamle data og meget mere. Gentagne opgaver bliver nemme med automatisering af arbejdsprocessen.
 
-[Kom i gang med at bruge Flow nu.](https://flow.microsoft.com/documentation/getting-started)
+[Kom i gang med at bruge Flow nu.](https://docs.microsoft.com/power-automate/getting-started)
 
-Se, hvordan Sirui opretter et Flow, der sender en detaljeret mail til kollegaer, når der udløses en besked i Power BI. Følg derefter en trinvis vejledning under videoen for at prøve det selv.
+Se, hvordan Sirui opretter et Flow, der sender en detaljeret mail til kollegaer, når der udløses en besked i Power BI. Følg derefter den trinvise vejledning under videoen for at prøve det selv.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YhmNstC39Mw" frameborder="0" allowfullscreen></iframe>
 
@@ -107,7 +107,7 @@ I denne opgave skal vi oprette et enkelt flow fra bunden, der udløses af en dat
     ![Flowet udløser en Outlook-meddelelse](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Næste trin
-* [Kom godt i gang med Power Automate](https://flow.microsoft.com/documentation/getting-started/)
+* [Kom godt i gang med Power Automate](https://docs.microsoft.com/power-automate/getting-started/)
 * [Indstil databeskeder i Power BI-tjenesten](service-set-data-alerts.md)
 * [Indstil databeskeder på din iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Indstil databeskeder i Power BI-mobilappen til Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)

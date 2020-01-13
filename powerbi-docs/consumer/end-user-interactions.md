@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 12/18/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 28e6cea55b02fabddd0b2f118631a09c0344b66f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: dc8dad0417ac2ed6498fb7612900ebdbb0ce2a18
+ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863105"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303837"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Sådan krydsfiltrerer visualiseringer hinanden i en Power BI-rapport
 En af de fantastiske funktioner i Power BI er den måde, som alle visualiseringer på rapportside er forbundet på. Hvis du vælger et datapunkt i en af visualiseringerne, ændres alle andre visualiseringer med disse data på siden på baggrund af dette valg. 
@@ -23,24 +23,35 @@ En af de fantastiske funktioner i Power BI er den måde, som alle visualiseringe
 
 ## <a name="how-visuals-interact-with-each-other"></a>Sådan interagerer visualiseringer med hinanden
 
-Hvis du vælger et datapunkt i én visualisering på en rapportside, udføres der som standard tværgående filtrering og fremhævning af de andre visualiseringer på siden. Lige præcis hvordan visualiseringerne på en side interagerer på, angives af *designeren* af rapporten. *Designere* har mulighed for at slå interaktion mellem visualiseringer til og fra og ændre standardfunktionsmåden for tværgående filtrering, tværgående fremhævning og [analysering](end-user-drill.md). 
+Hvis du vælger et datapunkt i én visualisering på en rapportside, udføres der som standard krydsfiltrering og -fremhævning af de andre visualiseringer på siden. Lige præcis hvordan visualiseringerne på en side interagerer på, angives af *designeren* af rapporten. *Designere* har mulighed for at slå interaktion mellem visualiseringer til og fra og ændre standardfunktionsmåden for krydsfiltrering, krydsfremhævning og [analysering](end-user-drill.md). 
 
 Hvis du ikke er stødt på hierarkier eller detailudledning endnu, kan du få mere at vide om disse funktioner ved at læse [detailudledning i Power BI](end-user-drill.md). 
 
-Tværgående filtrering og fremhævning kan være nyttigt for at identificere, hvordan en værdi i dine data bidrager til en anden. Hvis du f.eks. vælger segmentet Redigering i kransediagrammet, fremhæves bidraget fra dette segment for de enkelte kolonner i diagrammet Antal enheder i alt efter måned, og kurvediagrammet filtreres.
+### <a name="cross-filtering-and-cross-highlighting"></a>Krydsfiltrering og krydsfremhævning
 
-![billede af interaktion mellem visualiseringer](media/end-user-interactions/power-bi-interactions.png)
+Krydsfiltrering og -fremhævning kan være nyttigt for at identificere, hvordan en værdi i dine data bidrager til en anden. Begreberne *krydsfiltrer* og *krydsfremhæv* bruges til at skelne mellem den funktionsmåde, der er beskrevet her, og hvad der sker, når du bruger ruden **Filtre** til at filtrere og fremhæve visualiseringer.  
 
-Se [Om filtrering og fremhævning](end-user-report-filter.md). 
+Lad os definere disser begreber, i takt med at vi kigger på rapportsiderne nedenfor. Kransediagrammet "Samlet kategorivolumen efter segment" har to værdier: "Moderation" og "Bekvemmelighed". 
 
+![Rapportside](media/end-user-interactions/power-bi-interactions-before.png)
 
-  
-> [!NOTE]
-> Begreberne *tværgående filter* og *tværgående fremhævning* bruges til at skelne mellem den funktionsmåde, der er beskrevet her, og hvad der sker, når du bruger ruden **Filtre** til at filtrere og fremhæve visualiseringer.  
+1. Lad os se, hvad der sker, når vi vælger **Moderation**.
+
+    ![Rapportside efter segmentet Moderation i kransediagrammet er valgt](media/end-user-interactions/power-bi-interactions-after.png)
+
+2. Med **krydsfiltrering** fjernes data, der ikke er gældende. Hvis du vælger **Moderation** i kransediagrammet, så krydsfiltreres kurvediagrammet. Der vises nu kun datapunkter for segmentet Moderation i kurvediagrammet. 
+
+3. Med **krydsfremhævning** bevares alle oprindelige datapunkter, men den del, der ikke gælder for dit valg, nedtones. Hvis du vælger **Moderation** i kransediagrammet, så krydsfremhæves søjlediagrammet. Alle data, der gælder for segmentet Bekvemmelighed, nedtones i søjlediagrammet, og alle data, der gælder for segmentet Moderation, fremhæves. 
+
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 - Hvis din rapport har en visualisering, der understøtter [detailudledning](end-user-drill.md), har det som standard ingen indvirkning på andre visualiseringer på rapportsiden, hvis du foretager detailudledning i én visualisering.     
-- Hvis du bruger visual A til at interagere med visual B, anvendes der filtre på visualiseringsniveau fra visual A på visual B.
+- Filtre på visualiseringsniveau bevares, når andre visualiseringer på rapportsiden krydsfiltreres og krydsfremhæves. Så hvis du eller rapportdesigneren har anvendt filtre på visualiseringsniveau i Visualisering A, og du bruger Visualisering A til at interagere med Visualisering B, så anvendes filtrene på visualiseringsniveau fra Visualisering A på Visualisering B.
+
+    ![Rapportside efter segmentet Moderation i kransediagrammet er valgt](media/end-user-interactions/power-bi-visual-filters.png)
 
 ## <a name="next-steps"></a>Næste trin
-[Sådan bruger du rapportfiltre](../power-bi-how-to-report-filter.md)
+[Sådan bruger du rapportfiltre](../power-bi-how-to-report-filter.md)    
+
+
+[Om filtrering og fremhævning](end-user-report-filter.md). 

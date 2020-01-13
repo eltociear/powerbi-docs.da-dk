@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6ee7405b7c3d542dd824c70c17459c7078b3f0e1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f7af1c584802181cab68f6ce2fc4823ec7078354
+ms.sourcegitcommit: 331ebf6bcb4a5cdbdc82e81a538144a00ec935d4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878837"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75523021"
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Brug af Analysis Services-tabeldata i Power BI Desktop
 Med Power BI Desktop er der to måder, du kan oprette forbindelse til og hente data fra dine SQL Server Analysis Services-tabelmodeller: Du kan udforske ved hjælp af en direkte forbindelse, eller du kan vælge elementer og importere til Power BI Desktop.
@@ -76,6 +76,12 @@ Hvis du vælger Vælg elementer, og hent data, importerer du data fra tabelmodel
 **Spørgsmål:** I Navigator kan jeg se en model og et perspektiv. Hvad er forskellen?
 
 **Svar:** Et perspektiv er en bestemt visning af en tabelmodel. Det indeholder måske kun bestemt tabeller, kolonner eller målinger, afhængigt af behovet for en entydig dataanalyse. En tabelmodel indeholder altid mindst ét perspektiv, der kan omfatte alt i modellen. Hvis du er usikker på, hvad du skal vælge, kan du kontakte administratoren.
+
+**Spørgsmål:** Er det nogle funktioner i Analysis Services, der ændrer den måde, som Power BI fungerer på?
+
+**Svar:** Ja. Afhængigt af de funktioner, din tabellariske model bruger, kan oplevelsen i Power BI Desktop være forskellig. Nogle eksempler omfatter:
+* Du kan måske se målinger i modellen grupperet øverst på listen over felter i stedet for i tabeller ved siden af kolonner. Men bare rolig. Du kan stadig bruge dem som normalt; det er bare nemmere at finde dem på denne måde.
+* Hvis der er defineret beregningsgrupper i den tabellariske model, kan du kun bruge dem sammen med modelmålinger og ikke med implicitte målinger, som du opretter ved at føje numeriske felter til en visualisering. Flaget **DiscourageImplicitMeasures** kan også være angivet manuelt for modellen, hvilket har denne samme effekt. Du kan finde flere oplysninger under [Beregningsgrupper i Analysis Services](https://docs.microsoft.com/analysis-services/tabular-models/calculation-groups#benefits)
 
 ## <a name="to-change-the-server-name-after-initial-connection"></a>Sådan ændrer du servernavnet efter den indledende forbindelse
 Når du opretter en Power BI Desktop-fil med mulighed for at udforske en direkte forbindelse, kan der være nogle tilfælde, hvor du gerne vil skifte forbindelsen til en anden server. Hvis du f.eks. har oprettet Power BI Desktop-filen, da du oprettede forbindelse til en udviklingsserver og før publicering i Power BI-tjenesten, vil du gerne skifte forbindelsen til en produktionsserver.

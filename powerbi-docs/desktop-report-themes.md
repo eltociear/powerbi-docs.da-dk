@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 12/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c97316b0509f7d243befa5cfe5310aa0f5826335
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4fdcfd4d7684cef3e6b703709b2739ebbff1badd
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880002"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223605"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Brug rapporttemaer i Power BI Desktop
 Med **rapporttemaer** kan du anvende designændringer i hele rapporten, f.eks. bruge virksomhedsfarver, ændre ikonsæt eller anvende ny visuel standardformatering. Når du anvender et **rapporttema**, bruges farver og formatering fra det valgte tema for alle visuelle elementer i rapporten. Der gælder nogle få undtagelser, som er beskrevet senere i denne artikel.
@@ -23,10 +23,10 @@ Med **rapporttemaer** kan du anvende designændringer i hele rapporten, f.eks. b
 
 Når du anvender et brugerdefineret **rapporttema**, skal du bruge en JSON-fil, der anvender en grundlæggende struktur. Du kan derefter importere denne JSON-fil i Power BI Desktop og anvende den til din rapport.
 
-Du kan også tilpasse og standardisere næsten alle elementer, der vises i ruden **Formatering**, via JSON-temafilen. Målet er at give dig fuld kontrol over, hvordan dine rapporter ser ud på et detaljeret niveau.
+Du kan også tilpasse og standardisere næsten alle elementer, der vises i ruden **Formatering**, enten via tilpasninger, der er foretaget direkte i Power BI Desktop eller via JSON-temafilen. Målet er at give dig fuld kontrol over, hvordan dine rapporter ser ud på et detaljeret niveau.
 
 ## <a name="how-report-themes-work"></a>Sådan fungerer rapporttemaer
-For at anvende et rapporttema på en rapport i Power BI Desktop kan du vælge mellem de tilgængelige indbyggede rapporttemaer eller importere et brugerdefineret tema.
+For at anvende et rapporttema på en rapport i Power BI Desktop kan du vælge mellem de tilgængelige indbyggede rapporttemaer eller oprette eller importere et brugerdefineret tema.
 
 | Indbygget rapporttema | Standardfarvesekvens    |
 |------ |---------- |
@@ -70,7 +70,48 @@ Når temafilen er blevet indlæst, får du besked i Power BI Desktop.
 
 ![Temaet blev importeret](media/desktop-report-themes/report-themes_5.png)
 
-Nu, hvor vi har importeret en temafil, kan vi tage et kig på JSON-filstrukturen.
+Du kan tilpasse temaer i Power BI Desktop på to måder. Lad os se nærmere på dem hver især.
+
+
+## <a name="customize-report-themes-preview"></a>Tilpas rapporttemaer (prøveversion)
+
+Fra og med december 2019-versionen af **Power BI Desktop**kan du tilpasse et rapporttema på to måder:
+
+* Opret og tilpas et tema i Power BI Desktop (prøveversion)
+* Oprettelse og tilpasning af en JSON-fil med et brugerdefineret rapporttema
+
+Hvis du vil tilpasse et tema direkte i Power BI Desktop, skal du først vælge **Filer > Indstillinger > Indstillinger** og derefter vælge feltet ud for **Tilpas aktuelt tema** i afsnittet **Prøveversionsfunktioner** som vist på følgende billede.
+
+![Aktivér tilpassede temaer](media/desktop-report-themes/report-themes_5a.png)
+
+Du bliver muligvis bedt om at genstarte Power BI Desktop, før prøveversionsfunktionen aktiveres.
+
+Når du har genstartet, kan du begynde at tilpasse det aktuelle tema ved at vælge båndet **Hjem** og derefter vælge **Skift tema > Tilpas det aktuelle tema** på båndet. Der vises en dialogboks, som viser de mange måder, du kan tilpasse et eksisterende tema på.
+
+![Tilpas temaet](media/desktop-report-themes/report-themes_5b.png)
+
+Hvis du synes om et eksisterende tema og vil foretage et par justeringer, kan du vælge et eksisterende tema og derefter vælge **Tilpas aktuelt tema** i dialogboksen, som vist på følgende billede. 
+
+![Tilpas det aktuelle tema](media/desktop-report-themes/report-themes_5c.png)
+
+> [!NOTE]
+> Det forrige billede blev hentet med det nye bånd aktiveret, der i øjeblikket er tilgængeligt som prøveversion. Du kan aktivere prøveversionen af det nye bånd ved at vælge **Fil > Indstillinger > Indstillinger** og derefter vælge **Prøveversion af nyt bånd** i afsnittet **Prøveversionsfunktioner**.
+
+Temaindstillinger, der kan tilpasses, findes i følgende kategorier, som afspejles i dialogboksen Tilpas tema:
+
+* Temanavn (du kan navngive det tema, du tilpasser) og forskellige farveindstillinger (temafarver, synspunktfarver, divergerende farver med mere)
+* Tekstindstillinger, herunder skrifttypefamilie, størrelse og farve, samt aksetitler og -farver, kort og KPI'er og faneoverskrifter
+* Visuelle elementer, f. eks. baggrund, kant, overskrift og værktøjstip
+* Sideelementer, f. eks. tapet og baggrund
+* Indstillinger for filterrude, herunder baggrundsfarve, gennemsigtighed, skrifttype og ikonfarve, størrelse, filterkort og meget mere
+
+Når du har foretaget dine ændringer og valgt knappen **Anvend og gem**, gemmes dit tema, så det kan bruges i den aktuelle rapport og eksporteres. 
+
+Hvis du tilpasser det aktuelle tema på denne måde, kan det gøre visual-arbejdet med tilpasning af temaer hurtigt og nemt. Der er dog nogle endelige justeringer af temaer, som kræver, at temaets JSON-fil skal ændres som beskrevet i følgende afsnit.
+
+> [!TIP]
+> Du kan tilpasse de fleste temaelementer, der bruger visual-elementer, ved hjælp af dialogboksen **Tilpas aktuelt tema** og derefter kan du eksportere JSON-filen og foretage finjusteringer manuelt (ved at redigere selve JSON-filen). Derefter kan du omdøbe den finjusterede JSON-fil, importere den og således opnå alle de ønskede justeringer.
+
 
 ## <a name="structure-of-a-report-theme-json-file"></a>Strukturen af en JSON-rapporttemafil
  Når den grundlæggende JSON-fil, der er valgt i det forrige afsnit (filen *St Patricks Day.json*), åbnes i et tekstredigeringsværktøj, ser den ud som på følgende skærmbillede:
@@ -123,7 +164,7 @@ Lad os sige, at du anvender et brugerdefineret farvesæt (eller en individuel fa
 
 Det er også muligt at angive farven på et datapunkt manuelt ved hjælp af afsnittet Temafarver. Farverne opdateres *ikke*, når du anvender et nyt Rapporttema. Hvis du vil have standardfarverne tilbage (så de opdateres, når du anvender et nyt rapporttema), skal du vælge **Vend tilbage til standard** i paletten med **temafarver** i farvevælgeren.
 
-![Vend tilbage til standard](media/desktop-report-themes/report-themes_9.png)
+![Gendan til standard](media/desktop-report-themes/report-themes_9.png)
 
 Desuden kan mange **brugerdefinerede visuals** ikke anvendes på Rapporttemaer.
 
@@ -134,7 +175,7 @@ Vil du gerne i gang med **rapporttemaer**? Her er nogle færdige JSON-filer med 
 
   ![Temaet waverform.json](media/desktop-report-themes/report-themes_10.png)
 
-* Det er et [tema, som er nemmere at læse for synshandicappede](https://go.microsoft.com/fwlink/?linkid=843923) end standardfarvetemaet. Det kaldes [ *ColorblindSafe-Longer.json*](https://go.microsoft.com/fwlink/?linkid=843923).
+* Det er et [tema, som er nemmere at læse for synshandicappede](https://go.microsoft.com/fwlink/?linkid=843923) end standardfarvetemaet. Det kaldes [*ColorblindSafe-Longer.json*](https://go.microsoft.com/fwlink/?linkid=843923).
 
   ![Temaet ColorblindSafe-Longer.json.](media/desktop-report-themes/report-themes_11.png)
 

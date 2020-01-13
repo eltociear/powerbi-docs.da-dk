@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 2f872825c327b8195e7a6e5516e0b533235ddc27
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9aaa26b4798a0632b0ad751bc30e8496f6103fb1
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872104"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75223765"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi"></a>Integrering af Azure Machine Learning i Power BI
 
-Mange organisationer bruger **Machine Learning**-modeller for at få større indsigt i deres virksomhed og dens fremtidige udvikling. Muligheden for at visualisere og aktivere indsigt fra disse modeller i dine rapporter og dashboards og andre analyser kan hjælpe med at udbrede denne indsigt til de forretningsbrugere, der har størst behov for den.  Power BI gør det nu nemt at integrere indsigt fra modeller, der hostes i Azure Machine Learning Service, ved hjælp af enkle peg og klik-håndbevægelser.
+Mange organisationer bruger **Machine Learning**-modeller for at få større indsigt i deres virksomhed og dens fremtidige udvikling. Muligheden for at visualisere og aktivere indsigt fra disse modeller i dine rapporter og dashboards og andre analyser kan hjælpe med at udbrede denne indsigt til de forretningsbrugere, der har størst behov for den.  Power BI gør det nu nemt at integrere indsigt fra modeller, der hostes i Azure Machine Learning, ved hjælp af enkle peg og klik-håndbevægelser.
 
 For at gøre det muligt at bruge denne funktion kan en dataspecialist ganske enkelt give BI analytikeren adgang til Azure Machine Learning-modellen ved hjælp af Microsoft Azure-portal.  I starten af hver session finder Power-forespørgsel derefter alle de Azure Machine Learning-modeller, brugeren har adgang til, og viser dem som dynamiske funktioner i Power-forespørgsel.  Brugeren kan derefter aktivere disse funktioner ved at oprette adgang til dem på båndet i editoren i Power-forespørgsel, eller ved at aktivere funktionen M direkte. For at opnå en bedre ydeevne samler Power BI også automatisk anmodninger om adgang i bundter, når Azure Machine Learning-modellen aktiveres for et sæt af rækker.
 
@@ -28,15 +28,15 @@ Du kan få mere at vide om dataflow i [Selvbetjent dataforberedelse i Power BI](
 
 Du kan få mere at vide om Azure Machine Learning i:
 
-- Oversigt:  [Hvad er Azure Machine Learning Service?](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml)
+- Oversigt:  [Hvad er Azure Machine Learning?](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml)
 - Hurtig start- og selvstudier til Azure Machine Learning:  [Azure Machine Learning-dokumentation](https://docs.microsoft.com/azure/machine-learning/)
 
 ## <a name="granting-access-to-the-azure-ml-model-to-a-power-bi-user"></a>Tildeling af adgang til Azure Machine Learning-modellen til en Power BI-bruger
 
 For at få adgang til en Azure Machine Learning-model fra Power BI, skal brugeren have adgangen **Læs** til Azure-abonnementet.  Derudover gælder følgende:
 
-- For Machine Learning Studio-modeller: adgangen **Læs** til Machine Learning Studio-webtjeneste
-- For Machine Learning Studio-modeller: adgangen **Læs** til Machine Learning Studio-arbejdsområde
+- For modeller af typen Machine Learning Studio (klassisk): adgangen **Læs** til webtjenesten Machine Learning Studio (klassisk)
+- For modeller af typen Machine Learning Studio: adgangen **Læs** til Machine Learning Studio-arbejdsområdet
 
 Trinnene i denne artikel beskriver, hvordan du tildeler en Power BI-bruger adgang til en model, der er hostet i Azure Machine Learning-tjenesten, så brugeren kan få adgang til denne model som en funktion i Power-forespørgsel.  Du kan få flere oplysninger i [Administrer adgang ved hjælp af RBAC og Microsoft Azure-portal](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
 
@@ -60,21 +60,21 @@ Trinnene i denne artikel beskriver, hvordan du tildeler en Power BI-bruger adgan
 
 6. Vælg **Gem**.
 
-7. Gentag trin tre til seks for at give **Læser** adgang til brugeren, for den specifikke Machine Learning Studio-webtjeneste *eller* det arbejdsområde i Machine Learning-tjenesten, der er vært for modellen.
+7. Gentag trin tre til seks for at tildele brugeren adgangen **Læser** for den specifikke webtjeneste af typen Machine Learning Studio (klassisk) *eller* det Machine Learning-arbejdsområde, der hoster modellen.
 
 
-## <a name="schema-discovery-for-machine-learning-service-models"></a>Søgning efter skema for modeller i Machine Learning-tjenesten
+## <a name="schema-discovery-for-machine-learning-models"></a>Skemasøgning for modeller til maskinel indlæring
 
-Dataeksperter bruger primært Python til at udvikle og endda installere deres modeller til maskinel indlæring for Machine Learning-tjenesten.  I modsætning til Machine Learning Studio, som hjælper med at automatisere oprettelse af en skemafil for modellen, skal dataspecialisterne eksplicit oprette skemafilen ved hjælp af Python, når det drejer sig om Machine Learning-tjenesten.
+Dataspecialister bruger primært Python til at udvikle og endda udrulle deres modeller til maskinel indlæring til Machine Learning.  I modsætning til Machine Learning Studio (klassisk), som hjælper med at automatisere oprettelse af en skemafil til modellen, skal dataspecialisterne eksplicit generere skemafilen ved hjælp af Python, når det drejer sig om Machine Learning.
 
-Denne skemafil skal inkluderes i den udrullede webtjeneste for modeller i Machine Learning Service. Hvis du vil generere skemaet for webtjenesten automatisk, skal du angive et eksempel på inputtet/outputtet i postscriptet for den udrullede model. Se underafsnittet om [(Valgfri) Automatisk generering af Swagger-skema i dokumentationen Udrul modeller med Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where#optional-automatic-schema-generation) Service. Linket inkluderer eksemplet på postscriptet med sætninger for generering af skemaet. 
+Denne skemafil skal inkluderes i den udrullede webtjeneste for modeller til maskinel indlæring. Hvis du vil generere skemaet for webtjenesten automatisk, skal du angive et eksempel på inputtet/outputtet i postscriptet for den udrullede model. Se underafsnittet om [(Valgfri) Automatisk generering af Swagger-skema i dokumentationen Udrul modeller med Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where#optional-automatic-schema-generation) Service. Linket inkluderer eksemplet på postscriptet med sætninger for generering af skemaet. 
 
 Funktionerne *\@input_schema* og *\@output_schema* i postscriptet refererer specifikt til eksempelformaterne for input og output i variablerne *input_sample* og *output_sample* og bruger disse eksempler til at generere en OpenAPI-specifikation (Swagger) for webtjenesten under udrulningen.
 
 Disse instruktioner til generering af skemaet ved opdatering af postscriptet skal også anvendes for modeller, der er oprettet via automatiserede eksperimenter for maskinel indlæring veds hjælp af SDK'et til Azure Machine Learning.
 
 > [!NOTE]
-> Modeller, der er oprettet ved hjælp af den visuelle brugergrænseflade i Azure Machine Learning Service, understøtter i øjeblikket ikke generering af skemaer, men det vil de i efterfølgende udgaver. 
+> Modeller, der er oprettet ved hjælp af den visuelle brugergrænseflade i Azure Machine Learning, understøtter i øjeblikket ikke generering af skemaer, men det vil de i efterfølgende udgaver. 
 
 ## <a name="invoking-the-azure-ml-model-in-power-bi"></a>Aktivering af Azure Machine Learning-modellen i Power BI
 
@@ -106,7 +106,7 @@ Når du gemmer dit dataflow, aktiveres modellen automatisk, når dataflowet opfr
 
 Denne artiken omfatter en oversigt over integration af Machine Learning i Power BI-tjenesten. Følgende artikler kan også være interessante eller nyttige. 
 
-* [Selvstudium: Aktivér en Machine Learning Studio-model i Power BI](service-tutorial-invoke-machine-learning-model.md)
+* [Selvstudium: Aktivér en model af typen Machine Learning Studio (klassisk) i Power BI](service-tutorial-invoke-machine-learning-model.md)
 * [Selvstudium: Brug af Cognitive Services i Power BI](service-tutorial-use-cognitive-services.md)
 * [Cognitive Services i Power BI](service-cognitive-services.md)
 

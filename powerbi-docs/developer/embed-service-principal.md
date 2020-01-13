@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/29/2019
-ms.openlocfilehash: 3791e9cdfd44c62e6f9e9b79f5345d6d2476b0db
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.date: 12/12/2019
+ms.openlocfilehash: dec23aaa4fd54761c62507b8c7a5a36c45c75afd
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74264195"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75223365"
 ---
 # <a name="service-principal-with-power-bi"></a>Tjenesteprincipal med Power BI
 
@@ -150,7 +150,7 @@ Herunder finder du trin til at hente objekt'id'et for tjenesteprincipalen fra Az
 
    ![Administreret program i en lokal mappe](media/embed-service-principal/managed-application-in-local-directory.png)
 
-    > [!Note]
+    > [!NOTE]
     > Objektet-id'et på billedet ovenfor er ikke det, der bruges med tjenesteprincipalen.
 
 3. Vælg **Egenskaber** for at se objekt-id'et.
@@ -174,6 +174,7 @@ Nedenfor er et eksempel på et script, der kan bruges til at hente objekt-id'et 
 * Programmer til [integration i din organisation](embed-sample-for-your-organization.md) kan ikke bruge en tjenesteprincipal.
 * Administration af [dataflow](../service-dataflows-overview.md) understøttes ikke.
 * Tjenesteprincipaler understøtter i øjeblikket ingen administrator-API'er.
+* Når du bruger en tjenesteprincipal med en [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview)-datakilde, skal selve tjenesteprincipalen have tilladelser til en forekomst af Azure Analysis Services. Brug af en sikkerhedsgruppe, der indeholder tjenesteprincipalen til dette formål, fungerer ikke.
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: 1a3450ba4a31679c9e2e4ad844ef1058ebfdf4ee
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d35d54308f778033f508549bfd52e9d61ef2a949
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870657"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75218322"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Vis dashboards og rapporter i Power BI-mobilappsene
 Gælder for:
@@ -63,7 +63,7 @@ Her er et Power BI-dashboard i Power BI-tjenesten:
    
    * [Trykke på et felt](mobile-tiles-in-the-mobile-apps.md) for at åbne det i Fokustilstand og interagere med det.
    * Trykke på stjernen ![Favoritstjerne](././media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png) for at [angive den som favorit](mobile-apps-favorites.md).
-   * Trykke på **Inviter** ![Ikonet Inviter](./media/mobile-apps-view-dashboard/pbi_ipad_shareiconblk.png) for at [invitere en kollega](mobile-share-dashboard-from-the-mobile-apps.md) til at se dit dashboard.
+   * Tryk på **Inviter** ![ikonet Inviter](./media/mobile-apps-view-dashboard/pbi_ipad_shareiconblk.png) for at [invitere en kollega](mobile-share-dashboard-from-the-mobile-apps.md) til at se dit dashboard.
    * [Synkronisere dashboardet med dit Apple Watch](mobile-apple-watch.md).
 4. Hvis du vil tilbage til listen over dashboards, skal du trykke på pilen ud for dashboardfeltet og derefter trykke på **Mit arbejdsområde**.
    

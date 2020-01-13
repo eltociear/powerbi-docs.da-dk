@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 3965a21ff2ab53fd46667658f7cfa21fa4a3b916
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cf927e94726f33e8d88c25c6d09f6f0ca2226e05
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73855610"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75224131"
 ---
 # <a name="cognitive-services-in-power-bi"></a>Cognitive Services i Power BI 
 
@@ -94,7 +94,7 @@ Denne funktion kræver en URL-adresse til billedet eller et abase 64-felt som in
 
 Der er angivet en oversigt over brugen af Cognitive Services vha. Power BI-tjenesten i denne artikel. Følgende artikler kan også være interessante eller nyttige. 
 
-* [Selvstudium: Aktivér en Machine Learning Studio-model i Power BI](service-tutorial-invoke-machine-learning-model.md)
+* [Selvstudium: Aktivér en model af typen Machine Learning Studio (klassisk) i Power BI](service-tutorial-invoke-machine-learning-model.md)
 * [Integration af Azure Machine Learning i Power BI](service-machine-learning-integration.md)
 * [Selvstudium: Brug af Cognitive Services i Power BI](service-tutorial-use-cognitive-services.md)
 

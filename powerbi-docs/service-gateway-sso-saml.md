@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
 ms.openlocfilehash: bbb0584843f79445c4e5cca073f9c4b953d346aa
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74699354"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-sso-from-power-bi-to-on-premises-data-sources"></a>Brug SAML (Security Assertion Markup Language) til SSO fra Power BI til datakilder i det lokale miljø
@@ -122,7 +122,7 @@ Nu, hvor du har konfigureret certifikatet og identiteten for gatewayen, skal du 
 
     1. Vælg **Certifikater** &gt; **Tilføj**, og vælg derefter **Computerkonto** &gt; **Næste**.
 
-    1. Vælg **Lokal computer** &gt; **Afslut** &gt; **OK**.
+    1. Vælg **Lokal computer** &gt; **Udfør** &gt; **OK**.
 
     1. Udvid **Certifikater** &gt; **Personlig** &gt; **Certifikater**, og find certifikatet.
 

@@ -1,19 +1,19 @@
 ---
 title: Introduktion til Power BI-mobilappen på Android-enheder
 description: Få mere at vide om, hvordan Android-mobilappen til Microsoft Power BI giver dig Power BI med mobiladgang til oplysninger lokalt i virksomheden og i skyen.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
-ms.author: mshenhav
-ms.openlocfilehash: 9a0d15c73ed19990a44ff888b73d9c569d0dfc5f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/08/2019
+ms.author: painbar
+ms.openlocfilehash: f0ffcdabf1fea090cff769fa35c8346812b37896
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876786"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220184"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Introduktion til Power BI-mobilappen på Android-enheder
 Android-appen til Microsoft Power BI leverer BI-mobiloplevelsen til Power BI, Power BI Report Server og Reporting Services. Få vist og interager med dit firmas dashboards lokalt og i skyen overalt – med direkte, berøringsfølsom mobiladgang. Udforsk dataene i dashboards, og del dem med dine kollegaer i mails eller tekstmeddelelser. 
@@ -27,7 +27,7 @@ Du kan oprette Power BI-rapporter i Power BI Desktop og publicere dem:
 
 Derefter interagerer du i Power BI-appen til Android med dine dashboards og rapporter, både lokalt og i clouden.
 
-Find ud af, [hvad der er nyt i Power Bi-mobilapperne](../../mobile-whats-new-in-the-mobile-apps.md).
+Find ud af, [hvad der er nyt i Power BI-mobilappene](../../mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -40,10 +40,10 @@ Power BI kan køre på en lang række forskellige Android-enheder, der kører op
 **Start, når du åbner appen**    
 Når du åbner appen, kan du uden hverken at tilmelde dig eller logge på gennemse logonsiderne for at få et hurtigt overblik over ting, du kan gøre med Power BI-appen på din Android-enhed. Tryk på **Spring over** for at få vist og gennemse eksemplerne og få praktisk erfaring med appen. Du kan når som helst [gå tilbage til eksemplerne](mobile-android-app-get-started.md#try-the-power-bi-and-reporting-services-samples) fra startsiden for dashboards.
 
-Se mere om [nyhederne i Power Bi-mobilappsene](../../mobile-whats-new-in-the-mobile-apps.md).
+Find ud af, [hvad der er nyt i Power BI-mobilappene](../../mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>Tilmeld dig Power BI-tjenesten på internettet
-Hvis du endnu ikke har tilmeldt dig, kan du gå til [Power BI-tjenesten (https://powerbi.com/)](https://powerbi.com/) og tilmelde din egen konto for at oprette og lagre dashboards og rapporter samt samle dine data. Log derefter på Power BI fra din Android-enhed for at se dine egne dashboards overalt.
+Hvis du endnu ikke har tilmeldt dig, kan du gå til [Power BI-tjenesten](https://powerbi.com/) og tilmelde din egen konto for at oprette og lagre dashboards og rapporter samt samle dine data. Log derefter på Power BI fra din Android-enhed for at se dine egne dashboards overalt.
 
 1. I Power BI-tjenesten skal du trykke på [Tilmeld](https://go.microsoft.com/fwlink/?LinkID=513879) for at oprette en Power BI-konto.
 2. Gå i gang med at [oprette dine egne dashboards og rapporter](../../service-get-started.md).
@@ -60,45 +60,27 @@ Hvis du endnu ikke har tilmeldt dig, kan du gå til [Power BI-tjenesten (https:/
    
    ![Log på Power BI](./media/mobile-android-app-get-started/power-bi-connect-to-login.png)
 
-## <a name="try-the-power-bi-and-reporting-services-samples"></a>Prøv Power BI og Reporting Services-eksemplerne
-Selv uden at tilmelde dig kan du lege med Power BI- og Reporting Services-eksemplerne. Når du har downloadet appen, kan du få vist eksemplerne eller gennemgå introduktionen. Du kan når som helst gå tilbage til eksemplerne fra startsiden for dine dashboards.
+## <a name="try-the-power-bi-and-reporting-services-samples"></a>Prøv eksemplerne til Power BI og Reporting Services
+Selv uden at tilmelde dig kan du få vist og interagere med Power BI- og Reporting Services-eksemplerne.
 
-### <a name="power-bi-samples"></a>Power BI-eksempler
-Du kan få vist og interagere med eksemplerne på dine Power BI-dashboards, men der er et par ting, du ikke kan gøre med dem. Du kan ikke åbne rapporterne bag dashboardene, dele eksemplerne med andre eller gøre dem til dine favoritter.
+Hvis du vil have adgang til eksemplerne, skal du trykke på **Flere indstillinger** (...) på navigationslinjen og vælge **Eksempler**.
 
-1. Tryk på knappen til global navigation ![Knappen til global navigation](././media/mobile-android-app-get-started/power-bi-android-options-icon.png) i øverste venstre hjørne.
-2. Tryk på **Indstillinger** > **Se vores eksempler**, og vælg derefter en rolle, og udforsk eksempeldashboard'et for denne rolle.  
+Nogle Power BI-eksempler efterfølges af flere eksempler til rapportserver.
    
    ![Power BI-mobileksempler](./media/mobile-android-app-get-started/power-bi-android-power-bi-samples.png)
 
-### <a name="reporting-services-mobile-report-samples"></a>Reporting Services-mobilrapporteksempler
-1. Tryk på knappen til global navigation ![Knappen til global navigation](././media/mobile-android-app-get-started/power-bi-android-options-icon.png) i øverste venstre hjørne.
-2. Tryk på **Reporting Services-eksempler**, åbn derefter enten mappen Detailrapporter eller Salgsrapporter for at se deres KPI'er og mobilrapporter.
    
-   ![Reporting Services-eksempler](./media/mobile-android-app-get-started/power-bi-android-reporting-services-samples.png)
+   > [!NOTE]
+   > Ikke alle funktioner er tilgængelige i eksemplerne. Du kan f.eks. ikke se eksempler på rapporter, der ligger til grund for de pågældende dashboards, du kan ikke dele eksemplerne med andre, og du kan ikke gøre dem til dine favoritter. 
+   > 
+   >
 
-## <a name="search-for-a-dashboard-or-report"></a>Søg efter et dashboard eller en rapport
-* Tryk på forstørrelsesglasset i øverste højre hjørne ![Ikonet Søg](./media/mobile-android-app-get-started/power-bi-ipad-search-icon.png), og skriv derefter det ord, der skal findes.
-  
-    ![Søgeresultater](./media/mobile-android-app-get-started/power-bi-android-tablet-search.png)
-  
-    Som standard søges der i alle dashboards og rapporter, men du kan kun søge på én ad gangen.
+## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Find dit indhold i Power BI-mobilapperne
 
-## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Find dit indhold i Power BI-mobilappsene
-Dine dashboards og rapporter gemmes forskellige steder i Power BI-mobilapperne, alt efter hvor de kom fra. Læs [Sådan finder du dit indhold i mobilapperne](../../mobile-apps-quickstart-view-dashboard-report.md). Desuden kan du altid søge efter noget, du har i Power BI-mobilapperne. 
+Tryk på forstørrelsesglasset i overskriften for at begynde at søge efter dit Power BI-indhold.
 
-![Navigationsrude](./media/mobile-android-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
-
-## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>Få vist de dashboards, KPI'er og rapporter, du har gjort til dine favoritter
-På siden Favoritter i mobilappsene får du vist alle dine favorit-Power BI-dashboards sammen med Power BI Report Server- og Reporting Services-KPI'er og -rapporter. Når du gør et dashboard til en *favorit* i Power BI-mobilappen, kan du få adgang til det fra alle dine enheder, herunder Power BI-tjenesten i din browser. 
-
-* Tryk på **Favoritter**.
-  
-   ![Favoritter i navigationsruden](./media/mobile-android-app-get-started/power-bi-android-favorite-left-nav.png)
-  
-   Alle dine Power BI-favoritter og dine favoritter på webportalerne for Power BI-rapportserver og Reporting Services findes på denne side.
-  
-   ![Siden Favoritter](./media/mobile-android-app-get-started/power-bi-android-favorites-callouts.png)
+## <a name="view-your-favorite-dashboards-and-reports"></a>Få vist de dashboards og rapporter, du har gjort til favoritter
+Tryk på **Favoritter** (![](./media/mobile-android-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) på navigationslinjen for at få vist siden Favoritter. 
 
 Læs mere om [favoritter i Power BI-mobilapperne](mobile-apps-favorites.md).
 
@@ -112,7 +94,7 @@ Microsoft Intune giver virksomhederne mulighed for at kontrollere ting som anmod
 > 
 > 
 
-Læs mere om [konfiguration af Power BI-mobilapps til Android med Microsoft Intune](../../service-admin-mobile-intune.md). 
+Læs mere om at [konfigurere Power BI-mobilapps med Microsoft Intune](../../service-admin-mobile-intune.md). 
 
 ## <a name="next-steps"></a>Næste trin
 Her er nogle andre ting, du kan gøre i Android-enhedsappen til Power BI med dashboards og rapporter i Power BI samt rapporter og KPI'er i Power BI-rapportserveren eller Reporting Services-webportalen.

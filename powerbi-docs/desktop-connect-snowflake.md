@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2bb44498b6123eadffe86c7eb9bfb93bb0db5e14
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 23d66994e88204f56ee937a4f7887225e48a5e2f
+ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876414"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75304271"
 ---
 # <a name="connect-to-snowflake-in-power-bi-desktop"></a>Opret forbindelse til Snowflake i Power BI Desktop
 I Power BI Desktop kan du oprette forbindelse til et **Snowflake**-databehandlingswarehouse og bruge de underliggende data på samme måde som enhver anden datakilde i Power BI Desktop. 
@@ -42,9 +42,14 @@ Når du bliver bedt om det, skal du angive dit brugernavn og din adgangskode.
 > 
 > 
 
-Når du har oprettet forbindelse, vises et vindue af typen **Navigator**, hvor de data, der er tilgængelige på serveren, vises. Her kan du vælge et eller flere elementer, der skal importeres og bruges i **Power BI Desktop**.
+Hvis du vil bruge Microsoft-kontoindstillingen, skal du få din Snowflake-administrator til at kontakte Snowflake om at blive tilmeldt den personlige prøveversion af denne funktion.
 
-![](media/desktop-connect-snowflake/connect_snowflake_5.png)
+![Godkendelsestype af Microsoft-konto i Snowflake-connector.](media/desktop-connect-snowflake/connect-snowflake-6.png)
+
+
+Når du har oprettet forbindelse, vises der et vindue af typen **Navigator**, hvor de data, der er tilgængelige på serveren, vises. Her kan du vælge et eller flere elementer, der skal importeres og bruges i **Power BI Desktop**.
+
+![ODBC-fejl 28000 medfører, at der ikke kan oprettes forbindelse.](media/desktop-connect-snowflake/connect_snowflake_5.png)
 
 Du kan **indlæse** den valgte tabel, der fører hele tabellen ind i **Power BI Desktop**, eller du kan **redigere** forespørgslen, der åbner **Forespørgselseditor**, så du kan filtrere og finindstille det datasæt, du vil bruge, og derefter indlæse dette finindstillede datasæt i **Power BI Desktop**.
 

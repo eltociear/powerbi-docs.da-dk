@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: c126b073ac80a470733d7d8dd2638da28a06b265
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: 22328ddd6be697f658301516d05971cdcee0d260
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882838"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223905"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B
 
-Power BI kan integreres med Azure Active Directory Business-til-business (Azure AD B2B) for at tillade sikker distribution af Power BI-indhold til gæstebrugere uden for din organisation, mens du stadig bevarer kontrollen over de interne data.  
+Power BI kan integreres med Azure Active Directory Business-til-business (Azure AD B2B) for at tillade sikker distribution af Power BI-indhold til gæstebrugere uden for din organisation, mens du stadig bevarer kontrollen over de interne data. Du kan desuden give gæstebrugere uden for din organisation adgang til at redigere og administrere indhold i din organisation.
 
-Du kan desuden give gæstebrugere uden for din organisation adgang til at redigere og administrere indhold i din organisation.
+Denne artikel indeholder en grundlæggende introduktion til Azure AD B2B i Power BI. Du kan finde flere oplysninger under [Distribuer Power BI-indhold til eksterne gæster ved hjælp af Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md).
 
 ## <a name="enable-access"></a>Aktivér adgang
 
@@ -88,7 +88,7 @@ Tildeling af arbejdsområdet til [Power BI Premium-kapacitet](service-premium-wh
 
 ### <a name="assign-a-power-bi-pro-license-to-guest-user"></a>Tildel en Power BI Pro-licens til en gæstebruger
 
-Tildeling af en Power BI Pro-licens til gæstebrugeren i din lejer giver gæstebrugeren mulighed for at få vist indholdet i lejeren.
+Tildeling af en Power BI Pro-licens til en gæstebruger i din lejer giver gæstebrugeren mulighed for at få vist indholdet i lejeren. Du kan finde flere oplysninger om tildeling af licenser under [Tildel licenser til brugere på siden Licenser](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Før du tildeler Pro-licenser til gæstebrugere, skal du kontakte din Microsoft-kontorepræsentant for at sikre, at du overholder vilkårene i din aftale med Microsoft.
 
 ![Diagram over gæstebrugerens oplevelse med en tildelt Pro-licens fra din lejer.](media/service-admin-azure-ad-b2b/license-approach-2.png)
 
@@ -98,7 +98,7 @@ Gæstebrugeren har allerede en Power BI Pro-licens, der er tildelt i deres lejer
 
 ![Diagram over gæstebrugerens oplevelse, når vedkommende bruger sin egen licens.](media/service-admin-azure-ad-b2b/license-approach-3.png)
 
-## <a name="guest-users-who-can-edit-and-manage-content"></a>Gæstebrugere, der kan redigere og administrere indhold 
+## <a name="guest-users-who-can-edit-and-manage-content"></a>Gæstebrugere, der kan redigere og administrere indhold
 
 Når du bruger funktionen [Tillad, at eksterne gæstebrugere kan redigere og administrere indhold i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization), får de angivne gæstebrugere adgang til din organisations Power BI. De kan også se alt de indhold, de har tilladelse til at se. De kan få adgang til startsiden, gennemse arbejdsområder, installere apps, se, hvor de er på adgangslisten, og bidrage med indhold til arbejdsområder. De kan oprette eller være administrator af arbejdsområder, der bruger den nye oplevelse i arbejdsområdet. Der er visse begrænsninger. Du finder en liste over disse begrænsninger i afsnittet Overvejelser og begrænsninger.
  

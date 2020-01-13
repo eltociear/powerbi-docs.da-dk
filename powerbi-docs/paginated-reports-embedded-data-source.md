@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: d7a170cad376c3ec9fd3ca8ca7d2c8d2d8ac0223
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7cfc52557d9dcce03dd2e42818bb04f4754c190d
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875323"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75304316"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Opret en integreret datakilde for sideinddelte rapporter i Power BI-tjenesten
 
@@ -75,21 +75,21 @@ Sideinddelte rapporter, der opretter forbindelse til Power BI-datasæt, følger 
 
 - .rdl i samme arbejdsområde som datasæt (samme ejer): Understøttet
 - .rdl i andet arbejdsområde end datasæt (samme ejer): Understøttet
-- Delt .rdl: Du skal have tilladelsen Opret tildelt for hver bruger, der får vist rapporten på datasætniveau
-- Delt app: Du skal have tilladelsen Opret tildelt for hver bruger, der får vist rapporten på datasætniveau
+- Delt .rdl: Du skal have tildelt tilladelsen Læs til hver bruger, der får vist rapporten på datasætniveau
+- Delt app: Du skal have tildelt tilladelsen Læs til hver bruger, der får vist rapporten på datasætniveau
 - .rdl i samme arbejdsområde som datasæt (anden ejer): Understøttet
-- .rdl i et andet arbejdsområde end datasæt (anden bruger): Du skal have tilladelsen Opret tildelt for hver bruger, der får vist rapporten på datasætniveau
-- Sikkerhed på rækkeniveau: Du skal have tilladelsen Opret tildelt for hver bruger, der får vist rapporten på datasætniveau, for at gennemtvinge det.
+- .rdl i et andet arbejdsområde som datasæt (anden bruger): Du skal have tildelt tilladelsen Læs for hver bruger, der får vist rapporten på datasætniveau
+- Sikkerhed på rækkeniveau: Du skal have tildelt tilladelsen Læs for hver bruger, der får vist rapporten på datasætniveau, for at få den håndhævet.
 
 ### <a name="new-experience-apps-and-workspaces"></a>Apps og arbejdsområder med den nye oplevelse
 
 - .rdl i samme arbejdsområde som datasæt: Understøttet
 - .rdl i andet arbejdsområde end datasæt (samme ejer): Understøttet
-- Delt .rdl: Du skal have tilladelsen Opret tildelt for hver bruger, der får vist rapporten på datasætniveau
-- Delt app: Du skal have tilladelsen Opret tildelt for hver bruger, der får vist rapporten på datasætniveau
+- Delt .rdl: Du skal have tildelt tilladelsen Læs til hver bruger, der får vist rapporten på datasætniveau
+- Delt app: Du skal have tildelt tilladelsen Læs til hver bruger, der får vist rapporten på datasætniveau
 - .rdl i samme arbejdsområde som datasæt (anden ejer) – understøttet
-- .rdl i andet arbejdsområde end datasæt (anden ejer): Du skal have tilladelsen Opret tildelt for hver bruger, der får vist rapporten på datasætniveau
-- Sikkerhed på rækkeniveau: Du skal have tilladelsen Opret tildelt for hver bruger, der får vist rapporten på datasætniveau, for at gennemtvinge den
+- .rdl i andet arbejdsområde end datasæt (anden ejer): Du skal have tildelt tilladelsen Læs til hver bruger, der får vist rapporten på datasætniveau
+- Sikkerhed på rækkeniveau: Du skal have tildelt tilladelsen Læs for hver bruger, der får vist rapporten på datasætniveau, for at få den håndhævet
 
 ## <a name="next-steps"></a>Næste trin
 

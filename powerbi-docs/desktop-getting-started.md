@@ -1,345 +1,348 @@
 ---
 title: Kom i gang med Power BI Desktop
-description: Kom i gang med Power BI Desktop
+description: Kom i gang med Power BI Desktop.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 12/09/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e533313e20c4e1f994c2ae3d1e552170aef2cbd2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b32eee568ba560e95899cf0965a11f3bb037aed6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73868009"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75222279"
 ---
-# <a name="getting-started-with-power-bi-desktop"></a>Kom i gang med Power BI Desktop
-Velkommen til **Introduktionsvejledning til Power BI Desktop**. Med denne korte præsentation af Power BI Desktop får du en idé om, hvordan det fungerer, og du får mulighed for at sætte skub i oprettelsen af robust datamodeller – sammen med fantastiske rapporter – som styrker din indsats på business intelligence-området. 
+# <a name="get-started-with-power-bi-desktop"></a>Kom i gang med Power BI Desktop
+Velkommen til Introduktionsvejledning til Power BI Desktop. I denne præsentation kan du se, hvordan Power BI Desktop fungerer, hvad det kan gøre, og hvordan du bygger robuste datamodeller og fantastiske rapporter for at styrke din business intelligence.
 
-Foretrækker du at se noget i stedet for at læse? Du er velkommen til at [ser nærmere på vores introduktionsvideo](desktop-videos.md). Hvis du vil følge med vha. matchende eksempeldata, mens du ser videoen, kan du [downloade denne Excel-projektmappe med eksempler](https://go.microsoft.com/fwlink/?LinkID=521962).
+Du kan få et hurtigt overblik over, hvordan Power BI Desktop fungerer, og hvordan du bruger det, ved kun at scanne skærmbillederne i denne vejledning på få minutter. Hvis du vil have en mere grundig forståelse, kan du læse hver sektion, udføre trinene og slutte af med at få din egen Power BI Desktop-fil, der er klar til at blive postet i [Power BI-tjenesten](https://app.powerbi.com/) og blive delt med andre.
 
-![](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
+![Power BI Desktop-rapport](media/desktop-getting-started/hero.png)
 
-Power BI Desktop gør det muligt for dig med at oprette en samling af forespørgsler, dataforbindelser og rapporter, der nemt kan deles med andre. Power BI Desktop kan integrere dokumenterede Microsoft-teknologier – det effektive forespørgselsprogram, datamodeller og visualiseringer – og det fungerer uden problemer med den online [**Power BI-tjeneste**](https://app.powerbi.com/).
-
-Med kombinationen af **Power BI Desktop** (hvor analytikere og andre kan oprette effektive dataforbindelser, modeller og rapporter) og [**Power BI-tjenesten**](https://preview.powerbi.com/) (hvor Power BI Desktop-rapporter kan deles, så brugerne kan få vist og interagere med dem) er det lettere at modellere, bygge, dele og udvide indsigt fra dataenes verden.
-
-Dataanalytikere vil opleve, at Power BI Desktop er et avanceret, fleksibelt og meget lettilgængeligt værktøj, der kan bruges til at oprette forbindelse til og forme data, bygge robuste modeller og oprette velstrukturerede rapporter.
-
-## <a name="how-to-use-this-guide"></a>Sådan bruger du denne vejledning
-Du kan bruge denne vejledning på flere måder – skimme den for at få et hurtigt overblik eller læse hver enkelt sektion for at få en detaljeret forståelse af, hvordan Power BI Desktop fungerer.
-
-Hvis du har travlt, kan du tage en visuel tur gennem denne vejledning på få minutter, og stadig få en god idé om, hvordan Power BI Desktop fungerer, og hvordan du bruger det. Det meste af denne vejledning består af skærmbilleder, der visuelt viser, hvordan Power BI Desktop fungerer.
-
-Hvis du vil have en mere grundig forståelse, kan du læse hver sektion, udføre disse trin, og slutte af med at få din egen Power BI Desktop-fil, der er klar til at blive postet på **Power BI**-tjenesten og blive delt med andre.
-
->[!NOTE]
->Der er også en separat og specialiseret version af **Power BI** kaldet [**Power BI-rapportserver**](report-server/get-started.md), som er til kunder, der har brug for, at deres data og rapportering skal forblive i det lokale miljø. Til brug med denne specialiserede version er der også en separat og specialiseret version af **Power BI Desktop** kaldet **Power BI Desktop til Power BI-rapportserver**, som kun fungerer sammen med rapportserver-versionen af Power BI. Denne artikel beskriver den almindelige **Power BI Desktop**.
-
+Du kan også se videoen [Introduktion til Power BI Desktop](https://www.youtube.com/watch?v=Qgam9M8I0xA) og downloade Excel-projektmappen [Financial Sample](https://go.microsoft.com/fwlink/?LinkID=521962) for at følge med videoen.
 
 ## <a name="how-power-bi-desktop-works"></a>Sådan fungerer Power BI Desktop
-Med Power BI Desktop kan du *oprette forbindelse til data* (normalt flere datakilder), *forme disse data* (med forespørgsler, der opretter nyttige, overbevisende datamodeller) og bruge denne model til at *oprette rapporter* (som andre kan benytte, bygge videre på og dele).
+Med Power BI Desktop kan du:
+1. Opret forbindelse til data, herunder flere datakilder.
+1. Form dataene med forespørgsler, der bygger indsigtsfulde og overbevisende datamodeller.
+1. Brug datamodeller til at oprette visualiseringer og rapporter. 
+1. Del dine rapportfiler, så andre kan udnytte dem, bygge videre på dem og dele dem. Du kan dele Power BI Desktop *PBIX-filer* på samme måde som andre filer, men den mest overbevisende metode er at overføre dem til [Power BI-tjenesten](https://preview.powerbi.com/). 
 
-Når trinnene er gennemgået tilfredsstillende – forbinde, forme og rapportere – kan du gemme dit arbejdet i Power BI Desktop-filformatet, dvs. filtypenavnet .pbix. Power BI Desktop-filer kan deles som alle andre filer, men den bedste metode til deling af filer i Power BI Desktop er at uploade dem (dele dem) til [**Power BI-tjenesten**](https://preview.powerbi.com/). 
+Power BI Desktop integrerer veldokumenterede Microsoft Query Engine-, datamodel- og visualiseringsteknologier. Dataanalytikere og andre kan oprette samlinger af forespørgsler, dataforbindelser, modeller og rapporter og nemt dele dem med andre. Ved hjælp af kombinationen af Power BI Desktop og Power BI-tjenesten kan nye indsigter fra dataverdenen være nemmere at udforme, opbygge, dele og udvide.
 
 I Power BI Desktop centraliseres, forenkles og strømlines det, der ellers kan være en spredt, usammenhængende og besværlig proces til design og oprettelse af business intelligence-lagre og -rapporter.
-
 Er du klar til at prøve? Lad os komme i gang.
 
-
+> [!NOTE]
+> Der er også en separat og specialiseret version af Power BI kaldet [Power BI-rapportserver](report-server/get-started.md), hvis data og rapportering skal forblive i det lokale miljø. Power BI-rapportserver bruger en separat og specialiseret version af Power BI Desktop kaldet Power BI Desktop til Power BI-rapportserver, som kun fungerer sammen med rapportserver-versionen af Power BI. I denne artikel beskrives den almindelige Power BI Desktop.
 
 ## <a name="install-and-run-power-bi-desktop"></a>Installér og kør Power BI Desktop
-Du kan downloade Power BI Desktop fra **Power BI**-tjenesten ved at vælge **tandhjuls**ikonet og derefter vælge **Power BI Desktop**.
+Hvis du vil downloade Power BI Desktop, skal du gå til [siden til download af Power BI Desktop](https://powerbi.microsoft.com/desktop) og vælge **Download gratis**. Du kan også finde indstillinger for hentning ved at vælge [Se download eller sprogindstillinger](https://www.microsoft.com/download/details.aspx?id=58494). 
 
-![](media/desktop-getting-started/gsg_download.png)
+Du kan også hente Power BI Desktop fra Power BI-tjenesten. Vælg ikonet **Download** på den øverste menulinje, og vælg derefter **Power BI Desktop**.
 
-Power BI Desktop er installeret som et program og kører på din computer.
+![Download Power BI Desktop fra Power BI-tjenesten](media/desktop-getting-started/gsg_download.png)
 
-![](media/desktop-getting-started/designer_gsg_install.png)
+På siden Microsoft Store skal du vælge **Hent** og følge vejledningen for at installere Power BI Desktop på din computer. Start Power BI Desktop fra menuen **Start** i Windows eller fra ikonet på proceslinjen i Windows.
 
-Når du kører Power BI Desktop, vises der et *velkomst*skærmbillede.
+Første gang Power BI Desktop starter, vises **velkomstskærmen**.
 
-![](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
+På **velkomstskærmen** kan du **hente data**, se de **seneste kilder**, åbne de seneste rapporter, **åbne andre rapporter** eller vælge andre links. Du kan også vælge, om du altid vil have vist **velkomstskærmen** ved start. Vælg ikonet for luk for at lukke **velkomstskærmen**.
 
-Du kan **hente data**, se de **seneste kilder** eller **åbne andre** **rapporter** direkte fra *velkomst*skærmbilledet (via links i ruden til venstre). Hvis du lukker skærmbilledet (vælg **x** i øverste højre hjørne), vises visningen **Rapport** af Power BI Desktop.
+![Skærmen Velkommen til Power BI Desktop](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
 
-![](media/desktop-getting-started/designer_gsg_blankreport.png)
+I venstre side af Power BI Desktop kan du få vist ikoner for de tre Power BI Desktop-visninger: **Rapport**, **Data** og **Relationer** (oppefra og ned). Den aktuelle visning er angivet af den gule søjle til venstre, og du kan ændre visning ved at vælge et af ikonerne. 
 
-Der er tre visninger i Power BI Desktop: **Rapport**, **Data** og **Relationer**. Power BI Desktop indeholder også **Query Editor**, som åbnes i et separat vindue. I **Query Editor** kan du oprette forespørgsler og transformere data. Derefter indlæser du denne tilpassede datamodel i Power BI Desktop og opretter rapporter.
+![De tre Power BI Desktop-visningsikoner](media/desktop-getting-started/designer_gsg_viewtypes.png)
 
-På følgende skærmbillede kan du se de tre visningsikoner til venstre i Power BI Desktop: **Rapport**, **Data** og **Relationer** (oppefra og ned). Den aktuelle visning er angivet af den gule søjle til venstre. I dette tilfælde vises visningen **Rapport**. Du kan ændre visning ved at vælge et af de tre ikoner.
+Visningen **Rapport** er standardvisningen. 
 
-![](media/desktop-getting-started/designer_gsg_viewtypes.png)
+![Visningen Power BI Desktop-rapport](media/desktop-getting-started/designer_gsg_blankreport.png)
 
-Når Power BI Desktop er installeret, er du klar til at oprette forbindelse til data, forme data og oprette rapporter (normalt i denne rækkefølge). I de næste par sektioner vil vi foretage en præsentation af dem hver især.
+Power BI Desktop indeholder også **Power Query-editor**, som åbnes i et separat vindue. I **Power Query-editor** kan du oprette forespørgsler og transformere data. Derefter indlæser du denne tilpassede datamodel i Power BI Desktop og opretter rapporter.
 
 ## <a name="connect-to-data"></a>Opret forbindelse til data
-Når Power BI Desktop er installeret, er du klar til at oprette forbindelse til en verden af data, der konstant udvides. Der er *alle mulige* tilgængelige datakilder i forespørgselsvinduet. På følgende billede kan du se, hvordan du opretter forbindelse til data ved at vælge båndet **Hjem** og derefter **Hent data \> Flere**.
+Når Power BI Desktop er installeret, er du klar til at oprette forbindelse til en verden af data, der konstant udvides. Hvis du vil se de mange typer datakilder, der er tilgængelige, skal du vælge **Hent data** > **Mere** under fanen **Hjem** i Power BI Desktop og rulle gennem listen over **alle** datakilder i vinduet **Hent data**. Som en del af denne hurtige præsentation opretter vi forbindelse til et par forskellige **web**datakilder.
 
- ![](media/desktop-getting-started/getdatavidsmall.gif)
+![Vælg datakilden Web fra Hent data ](media/desktop-getting-started/getdataweb.png)
 
-Som en del af denne hurtige præsentation opretter vi forbindelse til et par forskellige **web**datakilder.
+Forestil dig, at du er en dataanalytiker, der arbejder for en solbrilleforhandler. Du vil gerne hjælpe din solbrilleforhandler med at målrette salget efter, hvor der er mest solskin. Bankrate.coms side [Best and worst states for retirement](https://www.bankrate.com/retirement/best-and-worst-states-for-retirement/) har interessante data om dette emne.
 
-Forestil dig, at du vil pensioneres – du vil bo et sted, hvor der er masser af sol, bedre skatter og et godt sundhedsvæsen – eller måske er du dataanalytiker og har brug for disse oplysninger for at hjælpe dine kunder. Du vil måske gerne hjælpe din solbrilleforhandler med at målrette salget efter, hvor der er mest solskin.
+På fanen **Hjem** i Power BI Desktop skal du vælge **Hent data** > **Web** for at oprette forbindelse til en webdatakilde. 
 
-Uanset hvad, indeholder følgende webressource interessante data om disse emner med mere:
+![Vælg datakilden Web](media/desktop-getting-started/gsg_syw_2.png)
 
-[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+I dialogboksen **Fra web** skal du indsætte adressen *https:\//www.bankrate.com/retirement/best-and-worst-states-for-retirement/* i feltet **URL-adresse** og vælge **OK**. 
 
-Vælg **Hent data \> Web**, og indsæt adressen.
+![Indsæt webadresse i dialogboksen Fra web](media/desktop-getting-started/gettingstarted_8.png)
 
- ![](media/desktop-getting-started/gettingstarted_8.png)
+Hvis du bliver bedt om det, skal du på skærmbilledet **Få adgang til webindhold** vælge **Opret forbindelse** for at bruge anonym adgang. 
 
-Når du vælger **OK**, begynder **forespørgsel**sfunktionen i Power BI Desktop at arbejde. Forespørgslen kontakter webressourcen, og i **navigator**vinduet returneres resultaterne fra den pågældende webside. I dette tilfælde blev der fundet en tabel (*Tabel 0*) og det generelle webdokument. Vi er interesseret i tabellen, så vi vælger den på listen. I **navigatorvinduet** vises der et eksempel.
+Funktionen Forespørgsel i Power BI Desktop begynder at arbejde og kontakter webressourcen. I vinduet **Navigator** returneres det, der blev fundet på websiden, i dette tilfælde en tabel med navnet **Ranking of best and worst states for retirement** og et dokument. Vi er interesseret i tabellen, så vi vælger den for at få vist et eksempel.
 
- ![](media/desktop-getting-started/datasources_fromnavigatordialog.png)
+På dette tidspunkt kan du vælge **Indlæs** for at indlæse tabellen eller **Transformer data** for at foretage ændringer i tabellen, før du indlæser den.
 
-På nuværende tidspunkt kan vi redigere forespørgslen, før tabellen indlæses, ved at vælge **Rediger** nederst i vinduet, eller vi kan indlæse tabellen.
+![Eksempel på tabel fra webside](media/desktop-getting-started/datasources_fromnavigatordialog.png)
 
-Når vi vælger **Rediger**, startes Forespørgselseditor, og der vises en repræsentativ visning af tabellen. Ruden **Forespørgselsindstillinger** vises (hvis det ikke er tilfældet, kan du vælge **Visning** på båndet og derefter vælge **Vis \> Forespørgselsindstillinger** for at få vist ruden **Forespørgselsindstillinger**). Sådan ser det ud.
+Når du vælger **Transformer data**, starter Power Query-editor med en repræsentativ visning af tabellen. Ruden **Forespørgselsindstillinger** er til højre, eller du kan altid få den vist ved at vælge **Forespørgselsindstillinger** på fanen **Vis** i Power Query-editor. 
 
- ![](media/desktop-getting-started/designer_gsg_editquery.png)
+![Power Query-editor med Forespørgselsindstillinger](media/desktop-getting-started/designer_gsg_editquery.png)
 
-Du kan finde flere oplysninger om oprettelse af forbindelse til data, under [Opret forbindelse til data i Power BI Desktop](desktop-connect-to-data.md).
-
-> [!NOTE]
-> De tabeldata, der refereres til i denne artikel, kan blive ændret med tiden. Derfor kan de trin, du skal følge, være forskellige fra de nedenstående, og du kan derfor være nødt til at være kreativ med, hvordan du justerer trinene eller resultaterne – hvilket alt sammen er med til at gøre det sjovt at lære. 
-
-I næste sektion justerer vi dataene, så de passer til vores behov. Processen med tilpasning af de forbundne data kaldes *formning* af data.
-
-## <a name="shape-and-combine-data"></a>Form og kombiner data
-Nu, hvor vi har oprettet forbindelse til en datakilde, skal vi justere dataene, så de opfylder vores behov. Nogle gange betyder justeringen, at dataene skal *transformeres* – f.eks. omdøbning af kolonner eller tabeller, ændring af tekst til tal, fjernelse af rækker,angivelse af den første række som overskrifter osv.
-
-Forespørgselseditor i Power BI Desktop gør rig brug af genvejsmenuer, ud over at opgaver er tilgængelige på båndet. Det meste af det, du kan vælge på båndet **transformation**, er også tilgængeligt, hvis du højreklikker på et element (f.eks. en kolonne) og vælger i den viste menu.
+Du kan finde flere oplysninger om oprettelse af forbindelse til data under [Opret forbindelse til data i Power BI Desktop](desktop-connect-to-data.md).
 
 ## <a name="shape-data"></a>Form data
-Når du former data i **Forespørgselseditor**, angiver du en trinvis vejledning (som **Forespørgselseditor** udfører for dig) for at justere datamængden, efterhånden som **Forespørgselseditor** indlæser og præsenterer den. Den oprindelige datakilde påvirkes ikke. Det er kun denne bestemte visning af dataene, der justeres eller *formes*.
+Nu, hvor vi har oprettet forbindelse til en datakilde, kan du justere dataene, så de opfylder dine behov. Hvis du vil *forme* data, skal du give Power Query-editor trinvise instruktioner i justering af dataene, samtidig med at de indlæses og præsenteres. Formningen påvirker ikke den oprindelige datakilde. Det er kun denne bestemte visning af dataene. 
 
-De angivne trin (f.eks. omdøbning af en tabel, transformation af en datatype eller sletning af kolonner) registreres af **Forespørgselseditor**, og hver gang denne forespørgsel opretter forbindelse til datakilden, udføres disse trin, så dataene er altid er formet på den måde, du angiver. Denne proces foregår, når du bruger forespørgslen i Power BI Desktop eller andre, som den er delt med, f.eks. i **Power BI**-tjenesten. Disse trin er hentet, i rækkefølge, i ruden **Forespørgselsindstillinger** under **Anvendte trin**.
+> [!NOTE]
+> De tabeldata, der bruges i denne vejledning, kan blive ændret med tiden. Derfor kan de trin, du skal følge, være forskellige, og du kan derfor være nødt til at være kreativ med, hvordan du justerer trinene eller resultaterne – hvilket alt sammen er med til at gøre det sjovt at lære. 
 
-På følgende billede vises ruden **Forespørgselsindstillinger** for en forespørgsel, som er formet – vi gennemgår hvert enkelt trin i de næste afsnit.
+Formning kan betyde at *transformere* dataene, f.eks. omdøbning af kolonner eller tabeller, fjernelse af rækker eller kolonner eller ændring af datatyper. Power Query-editor henter disse trin sekventielt under **Anvendte trin** i ruden **Forespørgselsindstillinger**. Hver gang denne forespørgsel opretter forbindelse til datakilden, udføres disse trin, så dataene altid formes på den måde, du angiver. Denne proces foregår, når du bruger forespørgslen i Power BI Desktop eller når andre bruger den delte forespørgsel, f.eks. i Power BI-tjenesten. 
 
- ![](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
+Bemærk, at **Anvendte trin** i **Forespørgselsindstillinger** allerede indeholder nogle få trin. Du kan vælge hvert enkelt trin for at se resultatet i Power Query-editor. Først har du angivet en webkilde, og derefter får du vist tabellen i vinduet **Navigator**. I det tredje trin **Ændret type** genkendte Power BI heltalsdata, da de blev importeret og ændrede automatisk den oprindelige **datatype** *Tekst* til **Heltal**. 
 
-Lad os komme tilbage til vores pensioneringsdata, som vi fandt ved at oprette forbindelse til en webdatakilde. Så kan vi forme disse data efter vores behov.
+![Ruden Forespørgselsindstillinger med tre anvendte trin](media/desktop-getting-started/designer_gsg_appliedsteps_changedtype.png)
 
-For det første blev de fleste klassificeringer lagt ind i **Forespørgselseditor** som heltal, men ikke alle (én kolonne indeholdt tekst og tal, så den blev ikke konverteret automatisk). Vi har brug for, at alle data er tal. Det er ikke noget problem – du skal bare højreklikke på kolonneoverskriften og vælge **Skift type \> Heltal** for at ændre datatypen. Hvis vi skulle vælge mellem mere end én kolonne, kunne vi først vælge en kolonne og derefter holde **SKIFT** ned, vælge yderligere tilstødende kolonner og derefter højreklikke på en kolonneoverskrift for at ændre alle de valgte kolonner. Du kan også bruge **CTRL** til at vælge kolonner, der ikke støder op til hinanden.
+Hvis du har brug for at ændre en datatype, skal du vælge den eller de kolonner, der skal ændres. Hold **Skift** nede for at markere flere tilstødende kolonner eller **Ctrl** for at markere kolonner, der ikke støder op til hinanden. Du kan enten højreklikke på en kolonneoverskrift, vælge **Rediger type** og vælge en ny datatype i menuen eller på rullelisten ud for **Datatype** i gruppen **Transformér** under fanen **Hjem** og vælge en ny datatype.
 
- ![](media/desktop-getting-started/designer_gsg_changedatatype.png)
+![Skift datatype](media/desktop-getting-started/designer_gsg_changedatatype.png)
 
-Du kan også ændre eller *transformere* disse kolonner fra tekst til overskrift vha. båndet **Transformation**. Her er båndet **Transformation** med en pil, der peger på knappen **Datatype**, som gør det muligt at transformere den aktuelle datatype til en anden.
+> [!NOTE]
+> Power Query-editoren i Power BI Desktop bruger båndet eller genvejsmenuer til tilgængelige opgaver. De fleste af de opgaver, du kan vælge på fanen **Hjem** eller **Transformér**, er også tilgængelige, hvis du højreklikker på et element og vælger i den viste menu.
 
- ![](media/desktop-getting-started/shapecombine-changetype-b.png)
+Nu kan du anvende dine egne ændringer og transformationer på dataene og få dem vist i **Anvendte trin**. 
 
-Bemærk, at under **Forespørgselsindstillinger**, afspejler **Anvendte trin** de ændringer, der er foretaget. Hvis jeg vil fjerne et trin fra formningsprocessen, skal jeg ganske enkelt vælge det pågældende trin, og derefter vælge **X** til venstre for trinnet.
+I forbindelse med salg af solbriller er du f.eks. mest interesseret i rangering af vejret, du beslutter derfor at sortere tabellen efter kolonnen **Vejr** i stedet for **Samlet rangering**. Vælg rullepilen ud for overskriften **Vejr**, og vælg **Sortér stigende**. Dataene vises nu sorteret efter vejrrangering, og trinnet **Sorterede rækker** vises i **Anvendte trin**. 
 
- ![](media/desktop-getting-started/designer_gsg_appliedsteps_changedtype.png)
+![Sortér rækker i stigende rækkefølge](media/desktop-getting-started/shapecombine-changetype-b.png)
 
-Vi skal foretage lidt flere ændringer for at får forespørgslen helt på plads:
+Du er ikke ret interesseret i at sælge solbrille til stater med det værst tænkelige vejr, så du beslutter dig for at fjerne dem fra tabellen. I gruppen **Reducer rækker** på fanen **Hjem** skal du vælge **Fjern rækker** > **Fjern de nederste rækker**. Skriv **10** i dialogboksen *Fjern de nederste rækker*, og vælg derefter **OK**. 
 
-* *Fjern den første kolonne* – vi behøver den ikke, den indeholder bare redundante rækker, hvor der står "Se, hvordan din stat er rangeret i forhold til pensionering", hvilket er en artefakt, da dette er en webbaseret tabel
+![Fjern de nederste rækker](media/desktop-getting-started/pbi_gsg_getdata3.png)
 
-<!-- -->
+De nederste 10 værste rækker fjernes fra tabellen, og trinnet **Fjernede nederste rækker** vises i **Anvendte trin**.
 
-* *Ret nogle få fejl* – på websiden var der én kolonne, hvor tekst var blandet med tal (nogle stater var samlet i en enkelt kategori). Det fungerer fint på webstedet, men ikke i vores dataanalyse. Det er nemt (i dette tilfælde) at rette, og der vises nogle smarte funktioner og egenskaber i **Forespørgselseditor** og de **Anvendte trin**
+Du beslutter, at tabellen har for mange ekstra oplysninger til dine behov og vil derfor fjerne kolonnerne **Prisbillighed**, **Kriminalitet**, **Kultur** og **Wellness**. Vælg overskriften for hver kolonne, du vil fjerne. Hold **Skift** nede for at markere flere tilstødende kolonner eller **Ctrl** for at markere kolonner, der ikke støder op til hinanden. 
 
-<!-- -->
+Vælg **Fjern kolonner** i gruppen **Administrer kolonner** på fanen **Hjem**. Du kan også højreklikke på en af de markerede kolonneoverskrifter og vælge **Fjern kolonner** i menuen. De markerede kolonner fjernes, og trinnet **Fjernede kolonner** vises i **Anvendte trin**.
 
-* *Skift tabelnavnet* – **Tabel 0** er ikke en nyttige beskrivelse, men det er let at ændre navnet
+![Fjern kolonner](media/desktop-getting-started/pbi_gsg_getdata3a.png)
 
-Hvert af disse trin er vist under **[Form og kombiner data i Power BI Desktop](desktop-shape-and-combine-data.md)** . Du kan se nærmere på den side eller fortsætte med dette dokument for at se, hvad du herefter kan gøre. Næste sektion fortsættes umiddelbart efter, at ovenstående ændringer er implementeret.
+Ved nærmere eftertanke kan **Prisbillighed** være relevant for solbrillesalget alligevel. Du vil derfor gerne have denne kolonne tilbage. Du kan nemt fortryde det sidste trin i ruden **Anvendte trin** ved at vælge sletteikonet **X** ud for trinnet. Gentag derefter trinnet, og vælg kun de kolonner, du vil slette. Du kan få større fleksibilitet ved at slette hver kolonne som et separat trin. 
+
+Du kan højreklikke på et hvilket som helst trin i ruden **Anvendte trin** og vælge at slette trinnet, omdøbe det, flytte det op eller ned i sekvensen eller tilføje eller slette trin efter det pågældende trin. Hvis du vil udføre mellemliggende trin advarer Power BI Desktop dig, hvis ændringen kan påvirke senere trin og ødelægge forespørgslen.  
+
+![Rediger anvendte trin](media/desktop-getting-started/designer_gsg_install.png)
+
+Hvis du f.eks. ikke længere vil sortere tabellen efter **Vejr**, kan du prøve at slette trinnet **Sorterede rækker**. Power BI Desktop advarer dig om, at sletningen af dette trin kan medføre, at forespørgslen ødelægges. Du har fjernet de nederste 10 rækker, efter at du har sorteret efter vejret, så hvis du fjerner sorteringen, fjernes de forskellige rækker. Du modtager også en advarsel, hvis du vælger trinnet **Sorterede rækker** og prøver at tilføje et nyt mellemliggende trin på dette tidspunkt.  
+
+![Advarsel om sletning af trin](media/desktop-getting-started/deletestepwarning.png)
+
+Til sidst skal du ændre tabeltitlen, så den handler om salg af solbriller i stedet for pension. Udskift den gamle titel med **De bedste stater til salg af solbriller** under **Egenskaber** i ruden *Forespørgselsindstillinger*.
+
+Den færdige forespørgsel for dine formede data ser ud på følgende måde:
+
+![Færdig forespørgsel](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
+
+Du kan finde flere oplysninger om formning af data under [Form og kombiner data i Power BI Desktop](desktop-shape-and-combine-data.md).
 
 ## <a name="combine-data"></a>Kombiner data
-Dataene omkring de forskellige stater er interessante og kan bruges til at skabe yderligere analyser og forespørgsler. Men der er et problem: De fleste data anvender forkortelser på to bogstaver for statskoder og ikke statens fulde navn. Vi skal bruge en måde at knytte forkortelserne for staterne til deres navne på.
+Dataene for de forskellige stater er interessante og nyttige til at skabe yderligere analyser og forespørgsler. Men der er et problem: De fleste data anvender forkortelser på to bogstaver for statskoder og ikke statens fulde navn. Vi skal bruge en måde at knytte forkortelserne for staterne til deres navne på for at benytte dataene.
 
-Vi er heldige. Der er en anden offentlig datakilde, som gør lige præcis dette, men den skal formes en del, før vi kan knytte den til vores pensioneringstabel. Her er webressourcen med forkortelser for stater:
+Du er heldig. Disse data er mulige at finde i en anden offentlig datakilde, men dataene kræver en masse udformning, før du kan *kombinere* dem med solbrilletabellen.
 
-<https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+Hvis du vil importere forkortelser for stater til Power Query-editor, skal du vælge **Ny kilde** > **Web** i gruppen **Ny forespørgsel** på fanen **Hjem** på båndet. 
 
-På båndet **Hjem** i **Forespørgselseditor** vælger vi **Hent data \> Web** og angiver adressen. Derefter vælger vi **OK**, hvorefter resultaterne fra den pågældende webside vises i vinduet  **Navigator**.
+![Ny kilde](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
 
- ![](media/desktop-getting-started/designer_gsg_usstateabbreviationsnavigator.png)
+I dialogboksen **Fra web** skal du angive URL-adressen til webstedet med forkortelser for stater: *https:\//en.wikipedia.org/wiki/List_of_U.S._state_abbreviations*.
 
-Vi vælger **Tabel[rediger]** , fordi den indeholder de ønskede data, men den skal formes lidt for at trimme dataene i tabellen. Hvert af disse trin vises også under **[Form og kombiner data i Power BI Desktop](desktop-shape-and-combine-data.md)** . Som opsummering af disse trin gør vi følgende:
+I vinduet **Navigator** skal du vælge tabellen **Codes and abbreviations for U.S. states, federal district, territories, and other regions** og derefter vælge **OK**. Tabellen åbnes i Power Query-editor.
 
-Vi vælger **Rediger**, derefter er fremgangsmåden som følger:
+Fjern alle kolonner med undtagelse af **Name and status of region**, **Name and status of region2** og **ANSI**. Hvis du kun vil beholde disse kolonner, skal du holde **Ctrl** nede og vælge kolonnerne. Derefter skal du enten højreklikke på en af kolonneoverskrifterne og vælge **Fjern andre kolonner**eller vælge **Fjern andre kolonner** i gruppen **Administrer kolonner** under fanen **Hjem**. 
 
-* *Fjern de øverste to rækker* – de er resultatet af den måde, websidens tabel blev oprettet på, og dem behøver vi ikke.
+Klik på rullepilen ud for kolonneoverskriften **Name and status of region2**, og vælg **Filtre** > **er lig med**. I dialogboksen **Filtrer rækker** skal du klikke på rullepilen ud for feltet **Angiv eller vælg en værdi** ved siden af **er lig med** og vælge **Stat**. 
 
-<!-- -->
+Vælg **Eller**, og vælg **Stat ("Commonwealth")** ud for det andet felt **er lig med**. Vælg **OK**. 
 
-* *Fjern de nederste 26 rækker* – de indeholder alle territorierne, som vi ikke behøver at inkludere.
+![Filtrer rækker](media/desktop-getting-started/filterrows.png)
 
-<!-- -->
-* *Filtrer Washington DC fra* – statistiktabellen for pensionering indeholder ikke DC, så derfor skal den udelukkes fra listen.
+Nu hvor de ekstra værdier som f.eks. **Federal district** og **island** er blevet fjernet, har du en liste med 50 stater og deres officielle forkortelser på to bogstaver. Du kan omdøbe kolonnerne, så de giver mere mening, f.eks. **Navn på stat**, **Status** og **Forkortelse** ved at højreklikke på kolonneoverskrifterne og vælge **Omdøb**.
 
-<!-- -->
+Bemærk, at alle disse trin er registreret under **Anvendte trin** i ruden **Forespørgselsindstillinger**.
 
-* *Fjern et par unødvendige kolonner* – vi behøver kun tilknytning af staten til den officielle forkortelse på to bogstaver, så vi kan fjerne de andre kolonner.
+Din formede tabel ser nu ud på følgende måde:
 
-<!-- -->
+![Formet tabel med statskoder](media/desktop-getting-started/statecodes.png)
 
-* *Brug den første række som overskrifter* – da vi har fjernet de tre øverste rækker, er den aktuelle øverste række den overskrift, vi vil have.
+Giv tabellen den nye titel *Statskoder* i feltet **Egenskaber** for **Forespørgselsindstillinger**. 
 
-    >[!NOTE]
-    >Dette er et godt tidspunkt at påpege, at *rækkefølgen* af de anvendte trin i **Forespørgselseditor** er vigtig, og den kan påvirke, hvordan datatypen formes. Det er også vigtigt at overveje, hvordan ét trin kan påvirke efterfølgende trin. Hvis du fjerner et trin fra **Anvendte trin**, fungerer de efterfølgende trin muligvis ikke som oprindeligt tiltænkt, på grund af effekten af rækkefølgen af trin i forespørgslen.
+Nu, hvor tabellen **Statskoder** er formet, kan du *kombinere* disse to tabeller til én. Eftersom de tabeller, du nu har, er et resultat af de forespørgsler, du har anvendt på dataene, kaldes de også for *forespørgsler*. Der er to primære måder at kombinere forespørgsler på: *fletning* og *tilføjelse*. 
 
-* *Omdøb kolonnerne og selve tabellen* – som sædvanlig er der flere måder at omdøbe en kolonne på. Du kan vælge den, du foretrækker.
+Når du har en eller flere kolonner, som du vil føje til en anden forespørgsel, skal du *flette* forespørgslerne. Når du har flere rækker med data, som du vil føje til en eksisterende forespørgsel, skal du *tilføje* forespørgslen.
 
-Når tabellen *Statskoder* er formet, kan vi kombinere disse to tabeller, eller forespørgsler, i én. Da de tabeller, vi har nu, er et resultat af de forespørgsler, vi anvendte på dataene, refereres de ofte til som *forespørgsler* .
+I dette tilfælde skal du *flette* forespørgslen **Statskoder** til forespørgslen **De bedste stater til salg af solbriller**. Hvis du vil flette forespørgslerne, skal du skifte til forespørgslen **De bedste stater til salg af solbriller** ved at vælge den i ruden **Forespørgsler** i venstre side af Power Query-editor. Vælg derefter **Flet forespørgsler** i gruppen**Kombiner** på fanen **Hjem** på båndet.
 
-Der er to primære måder at kombinere forespørgsler på – *fletning* og *tilføjelse*.
+I vinduet **Flet** skal du klikke på rullepilen for at vælge **Statskoder** fra de andre tilgængelige forespørgsler. Vælg den kolonne, der skal sammenlignes, fra hver tabel, i dette tilfælde **Stat** fra forespørgslen **De bedste stater til salg af solbriller** og **Navn på stat** fra forespørgslen **Statskoder**. 
 
-Når du har en eller flere kolonner, som du vil føje til en anden forespørgsel, skal du **flette** forespørgslerne. Når du har flere rækker med data, som du vil føje til en eksisterende forespørgsel, skal du **tilføje** forespørgslen.
+Hvis du får vist en dialogboks med **Beskyttelsesniveauer**, skal du vælge **Ignorer kontrol af beskyttelsesniveauer for denne fil** og derefter vælge **Gem**. Vælg **OK**. 
 
-I dette tilfælde vil vi flette forespørgsler. For at komme i gang vælger vi den forespørgsel, *som* vi vil flette med den anden forespørgsel. Derefter vælger vi **Flet forespørgsler** under fanen **Hjem** på båndet.
+![Flet forespørgsler](media/desktop-getting-started/shapecombine_merge.png)
 
- ![](media/desktop-getting-started/shapecombine_mergequeries.png)
+Der vises en ny kolonne med navnet **Statskoder** til højre for tabellen **De bedste stater til salg af solbriller**. Den indeholder den statskodeforespørgsel, du har flettet med forespørgslen om de bedste stater til salg af solbriller. Alle kolonner fra den flettede tabel komprimeres til kolonnen **Statskoder**. Du kan *udvide* den flettede tabel og kun inkludere de ønskede kolonner. 
 
-Vinduet **Flet** åbnes, og vi bliver bedt om at vælge, hvilken tabel vi vil flette med den valgte tabel, og derefter de tilsvarende kolonner, der skal bruges til fletningen. Vælg *Stat* i tabellen *Pensioneringsstatistik* (forespørgsel), og vælg derefter forespørgslen *Statskoder* (let i dette tilfælde, da der kun er én anden forespørgsel – når du opretter forbindelse til mange forskellige datakilder, er der mange forespørgsler at vælge imellem). Når vi vælger de korrekte matchende kolonner – *Stat* fra *Pensioneringsstatistik* og *Statnavn* fra *Statkoder* – ser vinduet **Flet** ud som følger, og knappen **OK** er aktiveret.
+![Kolonne med flettet forespørgsel](media/desktop-getting-started/mergedquery.png)
 
- ![](media/desktop-getting-started/shapecombine_merge.png)
+Hvis du vil udvide den flettede tabel og vælge, hvilke kolonner der skal inkluderes, skal du vælge ikonet for **Udvid** i kolonneoverskriften. I dialogboksen **Udvid** skal du kun vælge kolonnen **Forkortelse**. Fjern markeringen i **Brug oprindeligt kolonnenavn som præfiks**, og vælg derefter **OK**. 
 
-Den nye kolonne **NewColumn** oprettes i slutningen af forespørgslen, som er indholdet af tabellen (forespørgsel), der blev flettet med den eksisterende forespørgsel. Alle kolonner fra den flettede forespørgsel samles i **NyKolonne**, men du kan vælge at **udvide** tabellen og inkludere de ønskede kolonner. Hvis du vil udvide den flettede tabel og vælge, hvilke kolonner der skal inkluderes, skal du vælge udvidelsesikonet (![](media/desktop-getting-started/gettingstarted_29_expandicon.png)). Vinduet **Udvid** vises.
+![Vælg den udvidede kolonne fra den flettede tabel](media/desktop-getting-started/shapecombine_mergeexpand.png)
 
- ![](media/desktop-getting-started/shapecombine_mergeexpand.png)
+> [!NOTE]
+> Du kan forsøge at få tabellen **Statskoder** med på forskellige måder. Du kan eksperimentere lidt, og hvis du ikke kan lide resultatet, skal du bare slette dette trin på listen **Anvendte trin** i ruden **Forespørgselsindstillinger**. Du har mulighed for at prøve det af, så mange gange du har lyst, indtil udvidelsesprocessen ser ud, som den skal.
 
-I dette tilfælde vil vi kun have kolonnen *Statskode*, så vi vælger kun den pågældende kolonne og vælger derefter **OK**. Vi fjerne markeringen i afkrydsningsfeltet fra **Brug det oprindelige kolonnenavn som præfiks**, da vi ikke skal bruge det. Hvis vi bevarer markeringen, vil den flettede kolonne blive navngivet *NyKolonne.Statskode* (det oprindelige kolonnenavn, eller *NyKolonne* efterfulgt af et punktum, hvorefter kolonnenavnet føres ind i forespørgslen).
+Du kan se en mere detaljeret beskrivelse af formningen og kombinationen af datatrin under [Form og kombiner data i Power BI Desktop](desktop-shape-and-combine-data.md).
 
->[!NOTE]
->Vil du prøve at importere tabellen *NyKolonne*? Du kan eksperimentere lidt, og hvis du ikke kan lide resultatet, skal du bare slette dette trin på listen **Anvendte trin** i ruden **Forespørgselsindstillinger**. Din forespørgsel vender tilbage til tilstanden før trinnet **Udvid** blev anvendt. Du har mulighed for at prøve det af, så mange gange du har lyst, indtil udvidelsesprocessen ser ud, som den skal.
+Du har nu en enkelt forespørgsel (tabel), hvor to datakilder er kombineret, som hver især er blevet formet efter dine behov. Denne forespørgsel kan fungere som udgangspunkt for mange ekstra, interessante dataforbindelser – f.eks. demografi, velstandsniveauer og rekreative muligheder i en vilkårlig stat.
 
-Vi har nu en enkelt forespørgsel (tabel), der kombinerer to datakilder, som er blevet formet efter vores behov. Denne forespørgsel kan fungere som udgangspunkt for mange ekstra, interessante dataforbindelser – f.eks. boligomkostningsstatistikker, demografi eller jobmuligheder i en vilkårlig stat.
+![Formede og kombinerede forespørgsler](media/desktop-getting-started/mergedcolumn.png)
 
-Du kan se en mere detaljeret beskrivelse af hvert af disse trin til formning og kombination af data under [Form og kombiner data i Power BI Desktop](desktop-shape-and-combine-data.md).
+Nu har du nok data til at oprette et par interessante rapporter i Power BI Desktop. Da dette er en milepæl, kan du anvende ændringerne i **Power Query-editor** og indlæse dem i Power BI Desktop ved at vælge **Luk og anvend** på fanen **Hjem** på båndet. Du kan også nøjes med at vælge **Anvend** for at holde forespørgslen åben i Power Query-editor, mens du arbejder i Power BI Desktop. 
 
-Nu har vi nok data til at oprette et par interessante rapporter i Power BI Desktop. Da dette er en milepæl, gemmer vi denne Power BI Desktop-fil – vi kalder den **Introduktion til Power BI Desktop**. Hvis du vil anvende ændringerne i **Forespørgselseditor** og indlæse dem i Power BI Desktop, skal du vælge **Luk og anvend** på båndet **Hjem**.
+![Luk og anvend ændringerne](media/desktop-getting-started/shapecombine_closeandapply.png)
 
-![](media/desktop-getting-started/shapecombine_closeandapply.png)
+Du kan foretage flere ændringer af en tabel, når den er indlæst i Power BI Desktop, og indlæse modellen igen for at anvende de ændringer, du foretager. Hvis du vil genåbne **Power Query-editor** fra Power BI Desktop, skal du vælge **Rediger forespørgsler** på fanen **Hjem** på båndet i Power BI Desktop. 
 
 ## <a name="build-reports"></a>Opret rapporter
-Der kan foretages yderligere ændringer efter indlæsning af tabellen, og du kan genindlæse en model for at anvende evt. ændringer, du foretager. Men på nuværende tidspunkt er det fint, som det er. I visningen **Rapport** i Power BI Desktop kan du begynde at oprette rapporter.
+I visningen **Rapport** i Power BI Desktop kan du begynde at oprette visualiseringer og rapporter. Visningen **Rapport** har seks hovedområder:
 
-Visningen **Rapport** har fem hovedområder:
+![Visningen Power BI Desktop-rapport](media/desktop-getting-started/designer_gsg_reportview.png)
 
-1. Båndet, som viser almindelige opgaver, der er knyttet til rapporter og visualiseringer
-2. Visningen **Rapport**, eller lærred, hvor visualiseringer oprettes og arrangeres
-3. Faneområdet **Sider** langs bunden, hvor du kan vælge eller tilføje en rapportside
-4. Ruden **Visualiseringer**, hvor du kan ændre visualiseringer, tilpasse farver eller akser, anvende filtre, trække felter m.m.
-5. Ruden **Felter**, hvorfra forespørgselselementer og filtre kan trækkes til visningen **Rapport** eller trækkes til området **Filtre** i ruden **Visualiseringer**
-   
-   ![](media/desktop-getting-started/designer_gsg_reportview.png)
+1. Båndet, som viser almindelige opgaver, der er knyttet til rapporter og visualiseringer.
+2. Lærredet i midten, hvor visualiseringer oprettes og arrangeres.
+3. Faneområdet Sider langs bunden, hvor du kan vælge eller tilføje rapportsider.
+4. Ruden **Filtre**, hvor du kan filtrere datavisualiseringer.
+5. Ruden **Visualiseringer**, hvor du kan tilføje, ændre eller tilpasse visualiseringer og anvende detaljeadgang.
+6. Ruden **Felter**, som viser de tilgængelige felter i dine forespørgsler. Du kan trække disse felter til lærredet, ruden **Filtre** eller ruden **Visualiseringer** for at oprette eller redigere visualiseringer.
 
-Ruden **Visualiseringer** og **Felter** kan skjules ved at vælge den lille pil langs med kanten, så der er mere plads i visningen **Rapport** til at oprette flotte visualiseringer. Når du redigerer visualiseringer, får du også vist disse pile pegende op eller ned, hvilket betyder, at du kan udvide eller skjule det pågældende afsnit tilsvarende.
+Du kan udvide og skjule **Filtre**, **Visualiseringer** og **Felter** ved at vælge pilene øverst i ruden. Når du skjuler ruderne, får du mere plads på lærredet til at skabe flotte visualiseringer. 
 
- ![](media/desktop-getting-started/designer_gsg_collapsepanes.png)
+![Udvid eller skjul ruder](media/desktop-getting-started/designer_gsg_collapsepanes.png)
 
-For at oprette en visualisering skal du bare trække et felt fra listen **Felter** over på visningen **Rapport**. I dette tilfælde trækker vi feltet *Stat* fra *Pensioneringsstatistik* og ser, hvad der sker.
+Hvis du vil oprette en simpel visualisering, skal du blot vælge et felt på listen Felter eller trække feltet fra listen **Felter** til lærredet. Du kan f.eks. trække feltet **Stat** fra **De bedste stater til salg af solbriller** hen på lærredet og se, hvad der sker.
 
- ![](media/desktop-getting-started/designer_gsg_reportfirstdrag.png)
+![Træk i feltet Stat for at oprette en kortvisualisering](media/desktop-getting-started/designer_gsg_reportfirstdrag.png)
 
-Se her... I Power BI Desktop er der automatisk oprettet en kortbaseret visualisering, fordi det blev genkendt, at feltet *Stat* indeholdt geoplaceringsdata.
+Se her ... Power BI Desktop genkendte, at feltet **Stat** indeholdt geoplaceringsdata og oprettede automatisk en kortbaseret visualisering. Visualiseringen viser datapunkter for de 40 stater fra din datamodel. 
 
-Bemærk, at i ruden **Visualiseringer** kan jeg vælge forskellige visualiseringstyper, og i området under disse ikoner kan jeg trække felter til forskellige områder for at anvende en forklaring eller på anden måde ændre visualiseringen.
+I ruden **Visualiseringer** vises oplysninger om visualiseringen, og du har mulighed for at ændre den. 
 
- ![](media/desktop-getting-started/designer_gsg_visualizationtypes.png)
+![Ruden Visualiseringer](media/desktop-getting-started/designer_gsg_visualizationtypes.png)
 
-Lad os spole lidt frem, og se, hvordan visningen **Rapport** ser ud, når der er tilføjet en række visualiseringer samt et par nye rapportsider. Du kan finde flere oplysninger om rapporter under [Rapportvisning i Power BI Desktop](desktop-report-view.md).
+1. Ikonerne viser den type visualisering, der er oprettet. Du kan ændre typen af en valgt visualisering ved at vælge et andet ikon eller oprette en ny visualisering ved at vælge et ikon, hvor der ikke er valgt en eksisterende visualisering. 
+2. Med indstillingen **Felter** i ruden **Visualisering** kan du trække datafelter til **Forklaring** og andre felter i ruden. 
+3. Indstillingen **Format** giver dig mulighed for at anvende formatering og andre kontrolelementer til visualiseringer. 
 
-På den første side i rapporten får du et overblik over de data, der er baseret på *den generelle placering*. Når vi vælger en af visualiseringen, vises det i ruden **Felter og filtre**, hvilke felter der er valgt samt strukturen for visualiseringer (som felter anvendes for på **Delt akse**, **Kolonneværdier** og **Linjeværdier**).
+De indstillinger, der er tilgængelige i områderne **Felter** og **Format**, afhænger af den type visualisering og de data, du har.
 
- ![](media/desktop-getting-started/designer_gsg_report1.png)
+Du vil gerne have, at din kortvisualisering kun skal vise de øverste 10 stater med godt vejr. Hvis du kun vil have vist de øverste 10 stater, skal du i ruden **Filtre** holde markøren over **Stat er (Alle)** og udvide den pil, der vises. Klik på rullepilen ud for **Filtertype**, og vælg **Top N**. Vælg **Bund** under **Vis elementer**, da du vil have elementerne med den laveste numeriske rangering, og indtast *10* i det næste felt.
 
-Der er seks **sider** i denne rapport – hver især en visualisering af visse elementer af vores data.
+Træk feltet **Vejr** fra ruden **Felter** til feltet **Efter værdi**, og vælg derefter **Anvend filter**. 
 
-1. På den første side, der er vist ovenfor, vises alle stater baseret på *den generelle placering*.
-2. På den anden side fokuseres der på de øverste ti stater baseret på *den generelle placering*.
-3. På den tredje side er de bedste 10 stater i forbindelse med leveomkostninger (og tilknyttede data) visualiseret.
-4. På den fjerde side er vejret i fokus, filtreret efter de 15 solrigeste stater.
-5. På den femte side er lokalsamfundets velbefindende kortlagt og visualiseret for de 15 øverst placerede stater.
-6. Og endelig er kriminalitetsstatistikken visualiseret med visning af de bedste (og ja, sidste) 10 stater.
+![Vejrfilteret Top 10](media/desktop-getting-started/gsg_share5.png)
 
-Her kan du se, hvordan rapportsiden, der fokuserer på leveomkostninger, ser ud.
+Nu kan du kun se de 10 øverste stater med godt vejr i kortvisualiseringen. 
 
- ![](media/desktop-getting-started/designer_gsg_report2costofliving.png)
+Giv visualiseringen en anden titel ved at vælge ikonet **Format** i ruden **Visualisering**, vælge **Titel** og skrive *De øverste 10 stater med godt vejr* under **Titeltekst**. 
 
-Du kan oprette alle mulige forskellige interessante rapporter og visualiseringer.
+![Skift titel](media/desktop-getting-started/designer_gsg_report1.png)
+
+Hvis du vil tilføje en visualisering, der viser navnene på de øverste 10 stater med godt vejr og deres rangering fra 1 til 10, skal du vælge et tomt område på lærredet og derefter vælge ikonet **Søjlediagram** i ruden **Visualisering**. Vælg **Stat** og **Vejr** i ruden **Felter**. Et søjlediagram viser de 40 stater i din forespørgsel rangeret fra højeste til laveste numeriske placering eller fra det værste til det bedste vejr. 
+
+![Visualiseringen Søjlediagram](media/desktop-getting-started/gsg_share7.png)
+
+Hvis du vil ændre rækkefølgen af rangeringen, så nummer 1 vises først, skal du vælge ellipsen **Flere indstillinger** øverst til højre i visualiseringen og vælge **Sorter stigende** i menuen. 
+
+![Sortér stigende](media/desktop-getting-started/shapecombine_mergequeries.png)
+
+Hvis du vil begrænse tabellen til de øverste 10 stater, skal du anvende det samme filter Nederste 10, som du gjorde for kortvisualiseringen. 
+
+Omdøb visualiseringen på samme måde som for kortvisualiseringen. I afsnittet **Format** i ruden **Visualisering** kan du desuden ændre **Y-akse** > **Aksetitel** fra **Vejr** til *Vejrrangering* for at gøre den lettere forståelig. Slå vælgeren for **Y-aksen** til **Fra**, og omdan derefter **Datanavne** til **Til**. 
+
+Nu vises de øverste 10 stater med godt vejr i rækkefølge efter deres numeriske rang. 
+
+![Færdigt søjlediagram](media/desktop-getting-started/shapecombine_changetype.png)
+
+Du kan oprette lignende eller andre visualiseringer for felterne **Prisbillighed** og **Overordnet rangering**, eller du kan kombinere flere felter til én visualisering. Du kan oprette alle mulige forskellige interessante rapporter og visualiseringer. Visualiseringerne **Tabel** og **Kurvediagram og grupperet søjlediagram** viser de øverste 10 stater med godt vejr sammen med deres prisbillighed og overordnede rangering:
+
+![Visualiseringerne Tabel og Kurvediagram og grupperet søjlediagram](media/desktop-getting-started/designer_gsg_report2costofliving.png)
+
+Du kan få vist forskellige visualiseringer på forskellige rapportsider. Hvis du vil tilføje en ny side, skal du vælge symbolet **+** ud for de eksisterende sider på sidepanelet eller vælge **Indsæt** > **Ny side** på fanen **Hjem** på båndet. Hvis du vil omdøbe en side, skal du dobbeltklikke på sidens navn på sidepanelet eller højreklikke på siden og vælge **Omdøb side**og derefter skrive det nye navn. Du går til en anden side i rapporten ved at vælge siden i sidepanelet. 
+
+![Sidepanel](media/desktop-getting-started/pages.png)
+
+Du kan føje tekstfelter, billeder og knapper til rapportsiderne fra gruppen **Indsæt** på fanen **Hjem**. Hvis du vil angive formateringsindstillinger for visualiseringer, skal du vælge en visualisering og derefter vælge ikonet **Format** i ruden **Visualiseringer**. Hvis du vil konfigurere sidestørrelser, baggrunde og andre sideoplysninger, skal du vælge ikonet **Format**, uden at der er valgt nogen visualisering.
+
+Når du er færdig med at oprette dine sider og visualiseringer, skal du vælge **Fil** > **Gem** og gemme din rapport. 
+
+![Færdig Power BI Desktop-rapportside](media/desktop-getting-started/finished-report.png)
+
+Du kan finde flere oplysninger om rapporter under [Rapportvisning i Power BI Desktop](desktop-report-view.md).
 
 ## <a name="share-your-work"></a>Del dit arbejde
-Nu hvor vi har en Power BI Desktop-rapport, der er godt og vel færdig, kan vi dele den med andre på **Power BI**-tjenesten. Der er et par forskellige måder at dele dit arbejde på i Power BI Desktop. Du kan publicere til **Power BI**-tjenesten, du kan uploade .pbix-filen direkte fra Power BI-tjenesten, eller du kan gemme .pbix-filen og sende den præcis som enhver anden fil.
+Nu, hvor du har en Power BI Desktop-rapport, kan du dele den med andre. Der er et par forskellige måder at dele dit arbejde på. Du kan distribuere *PBIX-filen* som enhver anden fil, du kan uploade *PBIX-filen* fra Power BI-tjenesten, eller du kan udgive den direkte fra Power BI Desktop til Power BI-tjenesten. Du skal have en Power BI-konto for at kunne publicere eller uploade rapporter til Power BI-tjenesten. 
 
-Lad os først se på publicering til **Power BI**-tjenesten direkte fra Power BI Desktop. På båndet **Hjem** skal du vælge **Publicer**.
+Hvis du vil publicere til **Power BI-tjenesten** fra Power BI Desktop, skal du vælge **Publicer** på båndet **Hjem**.
 
-![](media/desktop-getting-started/gsg_syw_1.png)
+![Vælg Publicer](media/desktop-getting-started/gsg_syw_1.png)
 
-Du bliver muligvis bedt om at logge på Power BI.
+Du bliver muligvis bedt om at logge på Power BI eller at vælge en destination.
 
-![](media/desktop-getting-started/gsg_syw_2.png)
+Når publiceringsprocessen er gennemført, får du vist den følgende dialogboks:
 
-Når du er logget på, og udgivelsesprocessen er gennemført, så får du vist den følgende dialogskærm.
+![Publiceringen til Power BI blev gennemført](media/desktop-getting-started/gsg_syw_3.png)
 
-![](media/desktop-getting-started/gsg_syw_3.png)
+Når du vælger linket for at åbne rapporten i Power BI, åbnes din rapport på Power BI-webstedet under **Mit arbejdsområde** > **Rapporter**. 
 
-Når du logger på Power BI, får du vist den Power BI Desktop-fil, du lige har indlæst, i sektionerne **Dashboards**, **Rapporter** og **Datasæt** i tjenesten.
+Du kan også dele dit arbejde ved at indlæse de fra **Power BI**-tjenesten. Gå til *https:\//app.powerbi.com* for at åbne Power BI i en browser. Vælg **Hent data** på **startsiden** i Power BI for at starte indlæsningen af din Power BI Desktop-rapport.
 
-Du kan også dele dit arbejde ved at indlæse de fra **Power BI**-tjenesten. Følgende link åbner **Power BI**-tjenesten i en browser:
+![Vælg Hent data på Power BI Start](media/desktop-getting-started/pbi_gsg_getdata1.png)
 
-`https://app.powerbi.com`
+Vælg **Hent** i afsnittet **Filer** på den næste side.
 
-Vælg **Hent data** for at starte indlæsningen af din Power BI Desktop-rapport.
+![Hent filer](media/desktop-getting-started/pbi_gsg_getdata2.png)
 
- ![](media/desktop-getting-started/pbi_gsg_getdata1.png)
+Vælg **Lokal fil** på den næste side. Gå til og vælg din *PBIX-fil* fra Power BI Desktop, og vælg **Åbn**. 
 
-Siden **Hent data** vises. Her kan du vælge, hvor du vil hente dine data fra. I dette tilfælde vælger vi **Hent** fra feltet **Filer**.
+Når filen er importeret, kan du se den under **Mit arbejdsområde** > **Rapporter** i venstre rude i Power BI-tjenesten.
 
-![](media/desktop-getting-started/pbi_gsg_getdata2.png)
+![Power BI Desktop-fil, der er importeret til Power BI](media/desktop-getting-started/pbi_gsg_getdata4.png)
 
-Visningen **Filer** vises. I dette tilfælde vælger vi **Lokal fil**.
+Når du vælger filen, vises den første side i rapporten. Du kan vælge forskellige sider under fanerne til venstre i rapporten. 
 
-![](media/desktop-getting-started/pbi_gsg_getdata3.png)
+Du kan foretage ændringer af en rapport i **Power BI-tjenesten** ved at vælge **Flere indstillinger** > **Rediger** øverst på lærredet. Vælg **Gem en kopi** for at gemme dine ændringer.
 
-Når du vælger denne fil, uploades filen i Power BI.
+![Rediger en rapport, og gem en kopi](media/desktop-getting-started/gsg_share4.png)
 
-![](media/desktop-getting-started/pbi_gsg_getdata3a.png)
+Der er alle mulige forskellige interessante visualiseringer, du kan oprette i **Power BI-tjenesten** på baggrund af din rapport og fastgøre til et *dashboard*. Du kan få mere at vide om dashboards i **Power BI-tjenesten** under [Tip til design af et fantastisk dashboard](service-dashboards-design-tips.md). Du kan finde flere oplysninger om oprettelse, deling og ændring af dashboards under [Del et dashboard](service-share-dashboards.md).
 
-Når filen er uploadet, kan du vælge den under **Rapporter** i ruden til venstre i Power BI-tjenesten.
+Hvis du vil dele en rapport eller et dashboard, skal du vælge **Del** øverst i den åbne rapport eller på den åbne dashboardside eller vælge ikonet **Del** ud for rapport- eller dashboardnavnet i **Mit arbejdsområde** > **Rapporter** eller **Mit arbejdsområde** > **Dashboards**.
 
-![](media/desktop-getting-started/pbi_gsg_getdata4.png)
+Fuldfør **deling af rapporten** eller **deling af dashboardet** for at sende en mail eller få et link til deling af din rapport eller dit dashboard med andre. 
 
-I **Power BI**-tjenesten vises den første side i rapporten. Nederst på siden kan du vælge en vilkårlig fane for at få vist den pågældende side i rapporten.
+![Del rapport](media/desktop-getting-started/gsg_share6.png)
 
- ![](media/desktop-getting-started/gsg_share4.png)
-
-Du kan foretage ændringer i en rapport i **Power BI**-tjenesten ved at vælge **Rediger rapport** øverst i rapportcanvassen.
-
-Hvis du vil gemme din rapport, skal du vælge **Filer\> Gem som** i tjenesten. Der er alle mulige forskellige interessante visualiseringer, du kan oprette i **Power BI**-tjenesten på baggrund af din rapport og fastgøre til et *dashboard*. Du kan få mere at vide om dashboards i **Power BI**-tjenesten<strong>[ under Tip til design af et fantastisk dashboard](service-dashboards-design-tips.md)</strong>.
-
- ![](media/desktop-getting-started/gsg_share5.png)
-
-Når du har gemt, kan du vælge ikonet **Del** på hovedsiden.
-
- ![](media/desktop-getting-started/gsg_share6.png)
-
-Herfra kan du sende en mail til kollegaer, som du vil dele dashboardet med.
-
- ![](media/desktop-getting-started/gsg_share7.png)
-
-Du kan finde flere oplysninger om oprettelse, deling og ændring af dashboards under [Del et dashboard](service-share-dashboards.md).
-
-Der er alle mulige forskellige overbevisende datarelaterede miks og visualiseringer, du kan oprette vha. Power BI Desktop og Power BI-tjenesten. Du kan finde flere oplysninger i næste sektion.
-
-## <a name="diagnostics"></a>Diagnosticering
-
-Power BI Desktop understøtter, at der oprettes forbindelse til en port til diagnosticering. Med porten til diagnosticering kan andre værktøjer oprette forbindelse til og udføre sporing til diagnosticering. *Det understøttes ikke at ændre modellen! Ændringer i modellen vil muligvis beskadige data eller medføre tab af data.*
+Der er mange forskellige overbevisende datarelaterede miks og visualiseringer, du kan oprette vha. Power BI Desktop og Power BI-tjenesten. 
 
 ## <a name="next-steps"></a>Næste trin
-Du kan gøre mange forskellige ting med Power BI Desktop. Du kan finde flere oplysninger om funktionerne i følgende ressourcer:
+Power BI Desktop understøtter, at der oprettes forbindelse til en port til diagnosticering. Med porten til diagnosticering kan andre værktøjer oprette forbindelse til og udføre sporing til diagnosticering. Når porten til diagnosticering benyttes, *understøttes ændring af modellen ikke. Ændringer i modellen vil muligvis beskadige data eller medføre tab af data.*
+
+Du kan finde flere oplysninger om Power BI Desktop og dets mange egenskaber i følgende ressourcer:
 
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)
 * [Opret forbindelse til data i Power BI Desktop](desktop-connect-to-data.md)
-* [Udform og kombiner data med Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Selvstudium: Udform og kombiner data med Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Almindelige forespørgselsopgaver i Power BI Desktop](desktop-common-query-tasks.md)   
