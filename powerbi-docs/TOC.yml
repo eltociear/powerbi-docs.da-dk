@@ -229,7 +229,7 @@
               href: desktop-automatic-page-refresh.md
             - name: Undersøg rapportelementer med Effektivitetsanalyse
               href: desktop-performance-analyzer.md
-            - name: Føj visualiseringer til rapporter
+            - name: Føj visuelle elementer til rapporter
               href: desktop-visual-elements-for-reports.md
             - name: Tilføj rapportværktøjstip for at forbedre dine visualiseringer
               href: desktop-tooltips.md
@@ -357,7 +357,7 @@
               href: visuals/power-bi-visualization-kpi.md
             - name: Opret og brug matrixvisualiseringer
               href: visuals/desktop-matrix-visual.md
-            - name: Om visualiseringer til Spørgsmål og svar i forbindelse med Power BI
+            - name: Om Spørgsmål og svar i forbindelse med Power BI
               href: visuals/power-bi-visualization-q-and-a.md
             - name: Opret og brug R-visualiseringer
               href: visuals/service-r-visuals.md
@@ -709,6 +709,8 @@
               href: service-dataflows-overview.md
             - name: Opret og brug dataflow
               href: service-dataflows-create-use.md
+            - name: Brug den forbedrede beregningsmaskine med dataflow
+              href: service-dataflows-enhanced-compute-engine.md
             - name: Beregnede enheder med Power BI Premium
               href: service-dataflows-computed-entities-premium.md
             - name: Opret forbindelse til datakilder med dataflow
@@ -801,6 +803,8 @@
               items:
                 - name: Opret forbindelse til tjenester med apps
                   href: service-connect-to-services.md
+                - name: Azure Carbon Calculator
+                  href: service-connect-to-azure-carbon-calculator.md
                 - name: GitHub
                   href: service-connect-to-github.md
                 - name: Office365Mon
