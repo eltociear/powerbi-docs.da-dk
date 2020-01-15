@@ -871,6 +871,8 @@
           href: service-admin-premium-workloads.md
         - name: Overvåg kapaciteter vha. appen
           href: service-admin-premium-monitor-capacity.md
+        - name: Overvåg målepunkter for Premium-arbejdsbelastninger
+          href: service-premium-metrics-app.md
         - name: Overvåg kapaciteter på administrationsportalen
           href: service-admin-premium-monitor-portal.md
         - name: Konfigurer trinvis opdatering
