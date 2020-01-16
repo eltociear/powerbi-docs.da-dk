@@ -54,8 +54,6 @@
               href: service-security-using-microsoft-cloud-app-security-controls.md
         - name: Sikkerhed på rækkeniveau
           href: ../service-admin-rls.md
-        - name: Arkiveret arbejdsområde
-          href: ../service-admin-power-bi-archived-workspace.md
         - name: Konfiguration af mobilapps med Intune
           href: ../service-admin-mobile-intune.md
     - name: Reference
