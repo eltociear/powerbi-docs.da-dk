@@ -357,6 +357,8 @@
               href: visuals/power-bi-visualization-kpi.md
             - name: Opret og brug matrixvisualiseringer
               href: visuals/desktop-matrix-visual.md
+            - name: Opret og brug visualiseringer i Power Apps
+              href: visuals/power-bi-visualization-powerapp.md
             - name: Om Spørgsmål og svar i forbindelse med Power BI
               href: visuals/power-bi-visualization-q-and-a.md
             - name: Opret og brug R-visualiseringer
@@ -1035,6 +1037,8 @@
               href: report-server/configure-kerberos-powerbi-reports.md
             - name: Konfigurer mobilappen til fjernadgang
               href: report-server/configure-powerbi-mobile-apps-remote.md
+            - name: Konfigurer WAP og Active Directory Federation Services
+              href: report-server/connect-adfs-wap-report-server.md
             - name: Ekstern mobiladgang med Azure AD
               href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi'
             - name: Excel-projektmapper

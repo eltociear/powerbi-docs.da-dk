@@ -52,12 +52,14 @@
               href: dax-avoid-avoid-filter-as-filter-argument.md
         - name: Rapportoprettelse
           items:
-            - name: Udvidelse af visualiseringer med værktøjstip til rapportsider
+            - name: Udvid visualiseringer med værktøjstip til rapportsider
               href: report-page-tooltips.md
-            - name: Detaljeadgang på rapportsiden
+            - name: Anvend detaljeadgang på rapportsiden
               href: report-drillthrough.md
             - name: Her skal du bruge sideinddelte rapporter i Power BI
               href: report-paginated-or-power-bi.md
+            - name: Undgå tomme sider ved udskrivning af sideinddelte rapporter
+              href: report-paginated-blank-page.md
             - name: Overfør SQL Server Reporting Services-rapporter til Power BI
               href: migrate-ssrs-reports-to-power-bi.md
     - name: Hvidbøger
