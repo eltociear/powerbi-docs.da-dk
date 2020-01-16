@@ -10,48 +10,56 @@
     - name: Begreber
       expanded: true
       items:
-        - name: Hvad er et stjerneskema?
-          href: star-schema.md
-        - name: Reducer størrelse på datamodel
-          href: import-modeling-data-reduction.md
-        - name: DIVIDE-funktion vs. divisionsoperator (/)
-          href: dax-divide-function-operator.md
-        - name: Brug SELECTEDVALUE i stedet for VALUES
-          href: dax-selectedvalue.md
-        - name: Vigtigheden af forespørgselsdelegering
-          href: power-query-folding.md
-        - name: Passende brug af fejlfunktioner
-          href: dax-error-functions.md
-        - name: Brug variabler til at forbedre formler
-          href: dax-variables.md
-        - name: COUNTROWS i stedet for COUNT
-          href: dax-countrows.md
-        - name: Undgå at konvertere BLANKs til værdier
-          href: dax-avoid-converting-blank.md
-        - name: Referencer til kolonner og målinger
-          href: dax-column-measure-references.md
-        - name: Undgå at bruge FILTER som et filterargument
-          href: dax-avoid-avoid-filter-as-filter-argument.md
-        - name: Bedste praksis i forbindelse med dataflow
-          href: ../service-dataflows-best-practices.md
-        - name: Vejledning til DirectQuery-model i Power BI Desktop
-          href: directquery-model-guidance.md
-        - name: Henvisning til Power Query-forespørgsler
-          href: power-query-referenced-queries.md
-        - name: Udvidelse af visualiseringer med værktøjstip til rapportsider
-          href: report-page-tooltips.md
-        - name: Detaljeadgang på rapportsiden
-          href: report-drillthrough.md
-        - name: Vejledning til automatisk dato/klokkeslæt i Power BI Desktop
-          href: auto-date-time.md
-        - name: Vejledning til mange-til-mange-relation
-          href: relationships-many-to-many.md
-        - name: Deaktiver baggrundsopdatering i Power Query
-          href: power-query-background-refresh.md
-        - name: Her skal du bruge sideinddelte rapporter i Power BI
-          href: report-paginated-or-power-bi.md
-        - name: Overfør SQL Server Reporting Services-rapporter til Power BI
-          href: migrate-ssrs-reports-to-power-bi.md
+        - name: Omdan og udform data
+          items:
+            - name: Vigtigheden af forespørgselsdelegering
+              href: power-query-folding.md
+            - name: Henvisning til Power Query-forespørgsler
+              href: power-query-referenced-queries.md
+            - name: Deaktiver baggrundsopdatering i Power Query
+              href: power-query-background-refresh.md
+            - name: Bedste praksis i forbindelse med dataflow
+              href: ../service-dataflows-best-practices.md
+        - name: Datamodellering
+          items:
+            - name: Hvad er et stjerneskema?
+              href: star-schema.md
+            - name: Reducer størrelse på datamodel
+              href: import-modeling-data-reduction.md
+            - name: Vejledning til automatisk dato/klokkeslæt i Power BI Desktop
+              href: auto-date-time.md
+            - name: Vejledning til mange-til-mange-relation
+              href: relationships-many-to-many.md
+            - name: Vejledning til DirectQuery-model i Power BI Desktop
+              href: directquery-model-guidance.md
+        - name: DAX
+          items:
+            - name: DIVIDE-funktion vs. divisionsoperator (/)
+              href: dax-divide-function-operator.md
+            - name: Passende brug af fejlfunktioner
+              href: dax-error-functions.md
+            - name: Brug SELECTEDVALUE i stedet for VALUES
+              href: dax-selectedvalue.md
+            - name: COUNTROWS i stedet for COUNT
+              href: dax-countrows.md
+            - name: Brug variabler til at forbedre formler
+              href: dax-variables.md
+            - name: Undgå at konvertere BLANKs til værdier
+              href: dax-avoid-converting-blank.md
+            - name: Referencer til kolonner og målinger
+              href: dax-column-measure-references.md
+            - name: Undgå at bruge FILTER som et filterargument
+              href: dax-avoid-avoid-filter-as-filter-argument.md
+        - name: Rapportoprettelse
+          items:
+            - name: Udvidelse af visualiseringer med værktøjstip til rapportsider
+              href: report-page-tooltips.md
+            - name: Detaljeadgang på rapportsiden
+              href: report-drillthrough.md
+            - name: Her skal du bruge sideinddelte rapporter i Power BI
+              href: report-paginated-or-power-bi.md
+            - name: Overfør SQL Server Reporting Services-rapporter til Power BI
+              href: migrate-ssrs-reports-to-power-bi.md
     - name: Hvidbøger
       items:
         - name: Oversigt over whitepapers

@@ -11,13 +11,13 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 11/14/2019
-  ms.openlocfilehash: 2d34b41ec7ebc473c84bbfffccfa555cda817e3a
-  ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+  ms.date: 01/14/2020
+  ms.openlocfilehash: 091fbef4ce3a3cc1e5e3c0d0e4f26a25598f2556
+  ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 01/11/2020
-  ms.locfileid: "75885152"
+  ms.lasthandoff: 01/15/2020
+  ms.locfileid: "75953697"
 landingContent:
 - title: Power BI-vejledning
   linkLists:
@@ -27,6 +27,18 @@ landingContent:
       url: overview.md
     - text: Oversigt over whitepapers
       url: ../whitepapers.md
+- title: Omdan og udform data
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Vigtigheden af forespørgselsdelegering
+      url: power-query-folding.md
+    - text: Deaktiver baggrundsopdatering i Power Query
+      url: power-query-background-refresh.md
+    - text: Henvisning til Power Query-forespørgsler
+      url: power-query-referenced-queries.md
+    - text: Bedste praksis i forbindelse med dataflow
+      url: ../service-dataflows-best-practices.md
 - title: Datamodellering
   linkLists:
   - linkListType: concept
@@ -35,16 +47,10 @@ landingContent:
       url: star-schema.md
     - text: Teknikker til datareduktion
       url: import-modeling-data-reduction.md
-    - text: Vigtigheden af forespørgselsdelegering
-      url: power-query-folding.md
-    - text: Henvisning til Power Query-forespørgsler
-      url: power-query-referenced-queries.md
     - text: Vejledning til automatisk dato/klokkeslæt i Power BI Desktop
       url: auto-date-time.md
     - text: Vejledning til mange-til-mange-relation
       url: relationships-many-to-many.md
-    - text: Deaktiver baggrundsopdatering i Power Query
-      url: power-query-background-refresh.md
 - title: DAX
   linkLists:
   - linkListType: concept
@@ -65,13 +71,7 @@ landingContent:
       url: dax-column-measure-references.md
     - text: Undgå at bruge FILTER som et filterargument
       url: dax-avoid-avoid-filter-as-filter-argument.md
-- title: Dataflow
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: Bedste praksis i forbindelse med dataflow
-      url: ../service-dataflows-best-practices.md
-- title: Rapportering
+- title: Rapportoprettelse
   linkLists:
   - linkListType: concept
     links:
