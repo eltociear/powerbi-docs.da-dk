@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/25/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0f24675d4185efd7524d9e8c453c919d64e0364a
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: fd25e4ca6357dbfa5954eeabe0bf97fb6ccb8a1c
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75222128"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761358"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 
@@ -30,6 +30,10 @@ Hvis du vælger **Mere...** i menuen **Mest almindelige**, vises vinduet **Hent 
 
 > [!NOTE]
 > Power BI-teamet udvider hele tiden de datakilder, der er tilgængelige for **Power BI Desktop** og **Power BI-tjenesten**. Du kan derfor ofte se tidlige versioner af igangværende datakilder markeret som *Beta* eller *Preview*. Alle datakilder, der er markeret som *Beta* eller *Preview*, har begrænset support og funktionalitet og skal ikke bruges i produktionsmiljøer. Derudover er alle data, der er markeret som *beta* eller *prøveversion* for **Power BI Desktop**, muligvis ikke tilgængelige til brug i **Power BI-tjenesten** eller andre Microsoft-tjenester, før datakilden bliver generelt tilgængelig.
+
+> [!NOTE]
+> Der er mange dataconnectors til Power BI Desktop, der kræver Internet Explorer 10 (eller nyere) til godkendelse. 
+
 
 ## <a name="data-sources"></a>Datakilder
 Datatyper er organiseret i følgende kategorier:

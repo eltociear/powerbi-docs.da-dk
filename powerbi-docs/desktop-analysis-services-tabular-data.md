@@ -1,6 +1,6 @@
 ---
 title: Brug af Analysis Services-tabeldata i Power BI Desktop
-description: Analysis Services-tabeldata i Power BI Desktop
+description: Analysis Services tabeldata i Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f7af1c584802181cab68f6ce2fc4823ec7078354
-ms.sourcegitcommit: 331ebf6bcb4a5cdbdc82e81a538144a00ec935d4
+ms.openlocfilehash: 7ce20b8b6dc382cdafe61bde3e9305197fd33ea6
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75523021"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762065"
 ---
-# <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Brug af Analysis Services-tabeldata i Power BI Desktop
+# <a name="connect-to-analysis-services-tabular-data-in-power-bi-desktop"></a>Opret forbindelse til Analysis Services-tabeldata i Power BI Desktop
 Med Power BI Desktop er der to måder, du kan oprette forbindelse til og hente data fra dine SQL Server Analysis Services-tabelmodeller: Du kan udforske ved hjælp af en direkte forbindelse, eller du kan vælge elementer og importere til Power BI Desktop.
 
 Lad os se nærmere på det.

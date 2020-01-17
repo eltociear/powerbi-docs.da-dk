@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 01/07/2019
 ms.author: mihart
-ms.openlocfilehash: 046f35613e5fe748e93389fbe10a77af08f449e3
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: cf70774712a8b72493c8957139d8f802dc4d1ed7
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75303916"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75836652"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
@@ -41,7 +41,9 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 **ArcGIS for Power BI** ArcGIS er en tilknytnings- og analyseplatform, der er oprettet af virksomheden ESRI. Navnet på den visual, der er inkluderet i biblioteket med visuals i Power BI, kaldes ArcGIS for Power BI.
 
-**assign (tildele)** [Power BI Premium] Verbum, der dækker over flytning af et arbejdsområde ind i eller ud af en dedikeret kapacitet. Brug ikke hævning for at flytte et arbejdsområde til dedikeret kapacitet, fordi det betyder, at dedikeret kapacitet ligger over delt kapacitet.  
+**assign (tildele)** [Power BI Premium] Verbum, der dækker over flytning af et arbejdsområde ind i eller ud af en dedikeret kapacitet. Brug ikke hævning for at flytte et arbejdsområde til dedikeret kapacitet, fordi det betyder, at dedikeret kapacitet ligger over delt kapacitet. 
+
+**Auto Insights (automatisk indsigt)** Kaldes nu *Hurtig indsigt*.
 
 ## <a name="b"></a>B
 
@@ -49,7 +51,7 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 **bookmark (bogmærke)** En visning af data, der registreres i ruden Bogmærker i en rapport i Power BI Desktop eller Power BI-tjenesten. I Desktop er bogmærkerne gemt i .pbix-rapportfilen til deling i Power BI-tjenesten
   
-**breadcrumbs** Navigationen øverst til venstre, hvor du hurtigt kan navigere mellem arbejdsområder.
+**breadcrumbs** Navigationen øverst til venstre, hvor du hurtigt kan navigere mellem rapporter og dashboards.
 
 ## <a name="c"></a>C
 
@@ -71,7 +73,7 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 **content list (indholdsliste)** Indholdsindekset for en app.
 
-**content pack (indholdspakke)** En samling af færdigpakkede datasæt, rapporter og dashboards. Oplysninger om **apps**. Få mere at vide [om den nye arbejdsområdeoplevelse](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
+**content pack (indholdspakke)** En samling af færdigpakkede datasæt, rapporter og dashboards. De erstattes af **apps**. Få mere at vide [om den nye arbejdsområdeoplevelse](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
 
 **content view (indholdsvisning)**
 
@@ -89,26 +91,29 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 **data connector (dataconnector)** Se connectors.
 
-**data model, Excel Data Model (data model, Excel-datamodel)**
+**datamodel, Excel-datamodel** i Power BI-indhold henviser en datamodel til et kort med datastrukturer i et tabelformat. Datamodellen viser de relationer, der bruges til at oprette databaser. Rapportdesignere, administratorer og udviklere kan oprette og arbejde med datamodeller for at oprette Power BI-indhold.
 
+**dataflow** Dataflows anvendes til at indsamle, transformere, integrere og forbedre big data ved at definere datakildeforbindelser, ETL-logik, opdatere tidsplaner og meget mere. Tidligere datagruppe.
 
 **datasæt** i forhold til **data source (datakilde)** Et **datasæt** er en samling af data, der bruges til at oprette visualiseringer og rapporter.
 
 **dedicated capacity (dedikeret kapacitet)** [Power BI Premium]-datamodeller, der kører på dedikeret hardware i Microsoft-clouddatacentre for at sikre ensartet ydeevne i stor skala. BI-løsninger leveres til hele organisationen, uanset Power BI-licens.
 
-**Desktop** første instans: Power BI Desktop Efterfølgende omtaler: Desktop
+**Desktop** eller **Power BI Desktop** Gratis Power BI-værktøj, der bruges primært af rapportdesignere, administratorer og udviklere. 
+
 
 
 **diamond (rombe)** Power BI Premium. Formen på det ikon, der angiver, at et arbejdsområde er et arbejdsområde i Premium-kapacitet.
 
-**drill up, drill down, drillthrough (fjerne sig fra detaljerne, analysere ned, detaljeadgang)**
+**drill up (vis færre detaljer), drill down (detailudledning) og drillthrough (detaljeadgang)** i Power BI kan du bruge Detailudledning og Vis færre detaljer til at udforske det næste detaljeniveau i en rapport eller visualisering. Brug Detaljeadgang til at henvise til muligheden for at vælge en del af en visualisering og blive overført til en anden side i rapporten, der er filtreret til de data, der er relateret til den del af visualiseringen, som du har valgt på den oprindelige side.
+Analysér til detaljer betyder som regel at vise de underliggende poster.
 
 ## <a name="e"></a>E
 
 **Editing View (Redigeringsvisning)** Den tilstanden, hvor rapport*designere* kan udforske, designe, bygge og dele en rapport.
 
 **ellipse** ...    
-Når du vælger en ellipse, vises der flere menuindstillinger.
+Når du vælger en ellipse, vises der flere menuindstillinger. Kaldes også menuen **Flere handlinger**.
 
 **embed code (integreringskode)** en fælles standard på tværs af internettet. I Power BI kan kunden oprette en integreringskode og kopiere den for at placere indhold, f.eks en rapportvisual, på et websted eller i en blog.
 
@@ -117,22 +122,20 @@ Når du vælger en ellipse, vises der flere menuindstillinger.
 **embedding (integration)** Den proces, hvor udviklere via Power BI har mulighed for at integrere analyser i apps ved hjælp af Power BI-REST-API'er og Power BI-SDK.
 
 
-**environment (miljø)** [Power BI Desktop, Power BI – Mobil osv.] Brug Power BI-miljø. I forbindelse med kunder med flere lejere dækker dette begreb over valg af den lejer, der skal oprettes forbindelse til.
-Det er i orden at bruge Power BI-miljø (lejer) i dokumentationen, hvor det kan angive over for forretningsanalytikere, der kender begrebet lejer, at det er det samme.
+**environment (miljø)** [Power BI Desktop, Power BI – Mobil, Power BI-tjeneste osv.] En anden måde at henvise til et af Power BI-værktøjerne. Det er i orden at bruge Power BI-miljø (lejer) i dokumentationen, hvor det kan angive over for forretningsanalytikere, der kender begrebet lejer, at det er det samme.
 
 ## <a name="f"></a>F
 
 **favorite, unfavorite (føje til Favoritter, fjerne fra Favoritter)** Verbum, som betyder at føje noget til listen Favoritter, så der er hurtig adgang til ofte besøgte dashboards og rapporter i Power BI. Når du ikke længere vil have dem som favoritter, fjerner du dem.
 
-**filter (filtrere)**
+**filter (filtrer)** i forhold til **highlight (fremhæv)** Et filter fjerner data, der ikke anvendes. En fremhævning nedtoner de data, der ikke anvendes. 
 
-**formatting (formatering)**
 
-**focus mode (fokustilstand)** [Power BI-tjenesten]
+**focus mode (fokustilstand)** Brug fokustilstand til at udvide en visualisering eller et felt for at få vist flere detaljer. Du kan stadig arbejde med visualiseringen eller feltet i fokustilstand. 
 
-**Free account (Gratis konto)** Se konto i denne samling af begreber.
+**Free account (Gratis konto)** Se *konto*
 
-**full screen, full-screen mode (fuldskærm, fuldskærmsvisning)** [Power BI-tjeneste]
+**full screen (fuld skærm), full-screen mode (fuldskærmsvisning)** Brug fuldskærmsvisning til at få vist Power BI-indhold uden forstyrrende menuer og navigationsruder. Dette kaldes også tv-tilstand. 
 
 ## <a name="g"></a>G
 
@@ -145,7 +148,7 @@ Det er i orden at bruge Power BI-miljø (lejer) i dokumentationen, hvor det kan 
 
 ## <a name="i"></a>I
 
-**insights (indsigt)** Den automatiske dataanalyse udføres ved at køre vores indsigtsalgoritmer til maskinel indlæring.
+**insights (indsigt)** Se **hurtig indsigt**.
 
 
 ## <a name="j"></a>J
@@ -176,11 +179,9 @@ Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
 
 **native (oprindelig)** Er inkluderet i produktet. Power BI leveres f.eks. med et sæt *oprindelige* visualiseringstyper. Men du kan også importere andre typer, f.eks brugerdefinerede visuals.
 
-**nav** **pane** (navigationsrude) Kontrolelementerne langs den venstre kant i Power BI-tjenesten.
+**navigation pane (navigationsrude)** eller **nav pane** Kontrolelementerne langs den venstre kant i Power BI-tjenesten.
 
 Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
-
-**nav pane (navigationsrude)** Se **navigationsrude**
 
 **notification (meddelelse)** Meddelelser, der sendes af og til Power BI Meddelelsescenter.  
 
@@ -191,8 +192,7 @@ Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
 
 **OneDrive for Business** vs. **OneDrive** OneDrive er en privat konto, og OneDrive for Business er til arbejdskonti.  
 
-**On-premises data gateway (Datagateway i det lokale miljø)**
-
+**On-premises (i det lokale miljø)** Den term, der bruges til at skelne mellem lokal beregning (hvor computerressourcer befinder sig i en kundes egne faciliteter) fra cloudbaseret databehandling.
 
 
 ## <a name="p"></a>P
@@ -211,7 +211,7 @@ Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
 
 **phone view (telefonvisning)** Den brugergrænseflade i Power BI-tjenesten, der bruges til visning af telefonrapport.
 
-**pin, unpin (fastgør, frigør)** Den handling, hvor en visual, normalt fra en rapport, placeres i et dashboard.
+**pin, unpin (fastgør, frigør)** Den handling, hvor en *rapportdesigner* tager en visualisering, normalt fra en rapport, og placerer den i et dashboard.
 
 **Power BI**, **Power BI-tjenesten**, **Power BI Desktop**, **Power BI – Mobil** Nogle af Power BI-tilbuddene. *Power BI* er det generelle begreb. Det bruges ofte i stedet for det fulde produktnavn, f.eks *Power BI-tjenesten* og *Power BI – Mobil* efter den første forekomst af det fulde produktnavn.
 
@@ -227,15 +227,14 @@ Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
 
 **Power BI service (Power BI-tjeneste)** En SaaS-onlinetjeneste (Software som en service). Du kan finde flere oplysninger under [Hvad er Power BI](../fundamentals/power-bi-overview.md)?
 
-**Power BI service connector (Power BI-tjenesteconnector)** Denne connector gør Power BI Desktop-brugere i stand til at oprette forbindelse til datasæt i Power BI-tjenesten fra Desktop. De kan oprette en model én gang og genbruge den i mange rapporter og dashboards.
-
 **Premium workspace (Premium-arbejdsområde)** Et arbejdsområde, der kører i dedikeret kapacitet, hvilket er angivet over for kunderne med et rombeikon.  
 
+**publish (publicer)** *Rapportdesignere* i Power BI-tjenesten samler indholdet af et Power BI-arbejdsområde for at gøre det tilgængeligt for andre som en Power BI-app. *Rapportdesignere* i Power BI Desktop bruger Publicer til at henvise til at sende en Power BI Desktop-rapport i PBIX-format til Power BI-tjenesten, så de kan oprette dashboards ud fra dem og nemt dele dem med andre. 
 
 ## <a name="q"></a>Q
 **Q&A (Spørgsmål og svar)** Muligheden for at skrive spørgsmål om et datasæt i et naturligt sprog og få svar i form af visualiseringer. Vises i Power BI-tjenesten og Desktop.
 
-**Q&A virtual analyst (Virtuel analytiker Spørgsmål og svar)**  
+**Q&A virtual analyst (Virtuel Spørgsmål og svar-analytiker)**  
 [Power BI – Mobil] I iOS er det samtalebrugergrænsefladen til spørgsmål og svar.
 
 **QR codes (QR-koder)** [Power BI – Mobil] En matrixstregkode, der kan genereres for dashboards eller felter i Power BI-tjenesten for at identificere produkter. QR-koder kan scannes med en QR-kodelæser, og i iOS eller Android kan du linke direkte til dashboardet eller feltet med Power BI – Mobil-appen.
@@ -243,13 +242,10 @@ Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
 **query string parameter (forespørgselsstrengparameter)**  
 Føjes til en URL-adresse for at filtrere de resultater, der vises i en rapport i Power BI. Overordnet set genopretter en forespørgselsstreng oplysninger fra en database.
 
-**Quick Insights (Hurtig indsigt)**
-
-
-**quick measures (hurtigmålinger)**
+**Quick Insights (hurtig indsigt)** Hurtig indsigt henviser til automatisk genereret indsigt, der afslører tendenser og mønstre i data.  
 
 ## <a name="r"></a>R
-**R, Microsoft R**
+**R, Microsoft R** R er et programmeringssprog og et softwaremiljø til statistiske beregninger og grafik.
 
 **Reading View (Læsevisning)** Skrivebeskyttet visning for rapporter (i modsætning til Redigeringsvisning).
 
@@ -264,19 +260,24 @@ Føjes til en URL-adresse for at filtrere de resultater, der vises i en rapport 
 **report (rapport)**  
 En visning med flere perspektiver af et enkelt datasæt med visualiseringer, der repræsenterer forskellige resultater og indsigter fra det pågældende datasæt. Kan indeholde en eller mange visualiseringer eller en eller mange sider.  
 
-**report editor (rapporteditor)**
+**report editor (rapporteditor)** Rapporteditoren er det sted, hvor der oprettes nye rapporter og der foretages ændringer i eksisterende rapporter af *rapportdesignere*. 
 
-**report measures (rapportmålinger)** Kaldes også brugerdefinerede beregninger. I Excel kaldes disse beregnede felter. Se også *målinger*.   
-**report server (rapportserver)** En forekomst af en rapportserver.
+**report measures (rapportmålinger)** Kaldes også brugerdefinerede beregninger. I Excel kaldes disse *beregnede felter*. Se også *målinger*.   
 
 **responsive visuals (dynamiske visuals)** Visuals, der ændres dynamisk for at vise den maksimale mængde data og indsigt, uanset skærmstørrelse.
 
+**row-level security, RLS (sikkerhed på rækkeniveau)** Power BI-funktion, der gør det muligt for databaseadministratorer at styre adgangen til rækker i en databasetabel på baggrund af egenskaberne for den bruger, der udfører en forespørgsel (f.eks. gruppemedlemskab).  
+
+Administratorer kan konfigurere sikkerhed på rækkeniveau for datamodeller, der er importeret til Power BI, med Power BI Desktop.  
+
+
 ## <a name="s"></a>S
 **SaaS**   
+Software som en service (eller SaaS) er en metode til levering af programmer via internettet – som en webbaseret tjeneste. Kaldes også webbaseret software, on-demand-software eller hostet software. 
 
 **screenshot (skærmbillede)** Enkle skærmbilleder fra en rapport kan sendes via mail med funktionen til afsendelse af et skærmbillede.
 
-**service (tjeneste)** Se *Power BI-tjeneste*
+**service** Se *Power BI-tjeneste* En selvstændig ressource, der er tilgængelig for kunder som abonnement eller licens. En tjeneste er et produkttilbud, der udelukkende leveres via skyen.  
 
 **Settings (Indstillinger)** Det sted, hvor Power BI-brugere kan administrere deres egne generelle indstillinger, f.eks hav vist nye funktioner, angive standardsproget, lukke deres konto osv. Desuden kan brugerne administrere individuelle indstillinger for indholdsaktiver, beskeder og abonnementer. Repræsenteret af et tandhjulsikon.
 
@@ -285,8 +286,7 @@ På mobilenheder kan deling referere til oprindelige OS-delingsfunktioner, f.eks
 
 **Shared with me (Delt med mig)** Objektbeholderen i navigationsruden, der indeholder alle de individuelle artefakter, som blev delt direkte af en anden Power BI-bruger.
 
-**snapshot**
-
+**snapshot** I Power BI er et snapshot et statisk billede i forhold til et dynamisk billede af et felt, et dashboard eller en rapport.
 
 **SSAS (SQL Server Analysis Services)** 
  

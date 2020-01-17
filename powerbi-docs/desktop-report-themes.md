@@ -1,136 +1,145 @@
 ---
-title: Brug rapporttemaer i Power BI Desktop
-description: Få mere at vide om, hvordan du bruger en brugerdefineret farvepalet og anvender den for en hel rapport i Power BI Desktop
+title: Brug af rapporttemaer i Power BI Desktop
+description: Få mere at vide om, hvordan du bruger en brugerdefineret farvepalet og anvender den for en hel rapport i Power BI Desktop.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4fdcfd4d7684cef3e6b703709b2739ebbff1badd
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: c111b04847cba56781b1dd77f899d456ad5f4162
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223605"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731410"
 ---
-# <a name="use-report-themes-in-power-bi-desktop"></a>Brug rapporttemaer i Power BI Desktop
-Med **rapporttemaer** kan du anvende designændringer i hele rapporten, f.eks. bruge virksomhedsfarver, ændre ikonsæt eller anvende ny visuel standardformatering. Når du anvender et **rapporttema**, bruges farver og formatering fra det valgte tema for alle visuelle elementer i rapporten. Der gælder nogle få undtagelser, som er beskrevet senere i denne artikel.
+# <a name="use-report-themes-in-power-bi-desktop"></a>Brug af rapporttemaer i Power BI Desktop
+Med *rapporttemaer* i Power BI Desktop kan du anvende designændringer på hele rapporten, f.eks. bruge virksomhedsfarver, ændre ikonsæt eller anvende ny standardformatering for visualiseringer. Når du anvender et rapporttema, anvendes farver og formatering fra det valgte tema på alle visuals i rapporten. Der gælder nogle få undtagelser, som er beskrevet senere i denne artikel.
 
 ![Rapporttemaer](media/desktop-report-themes/report-themes-1a.png)
 
-Når du anvender et brugerdefineret **rapporttema**, skal du bruge en JSON-fil, der anvender en grundlæggende struktur. Du kan derefter importere denne JSON-fil i Power BI Desktop og anvende den til din rapport.
+Der findes to typer rapporttemaer, indbyggede rapporttemaer og brugerdefinerede rapporttemafiler:
 
-Du kan også tilpasse og standardisere næsten alle elementer, der vises i ruden **Formatering**, enten via tilpasninger, der er foretaget direkte i Power BI Desktop eller via JSON-temafilen. Målet er at give dig fuld kontrol over, hvordan dine rapporter ser ud på et detaljeret niveau.
+- Indbyggede rapporttemaer indeholder forskellige typer foruddefinerede farveskemaer, der installeres sammen med Power BI Desktop. Du vælger indbyggede rapporttemaer direkte fra menuen Power BI Desktop. 
+
+- Brugerdefinerede rapporttemafiler er rapporttemaer, der er oprettet i JSON-filer, som definerer deres grundlæggende struktur. Hvis du vil anvende et brugerdefineret rapporttema, skal du importere den tilhørende JSON-fil i Power BI Desktop og anvende den til din rapport.
+
+Du kan også tilpasse og standardisere næsten alle elementer, der vises, i afsnittet **Formatering** i ruden **Visualiseringer** enten via tilpasninger, der foretages direkte i Power BI Desktop eller via JSON-temafilen. Målet er at give dig fuld kontrol over, hvordan din rapport ser ud på et detaljeret niveau.
 
 ## <a name="how-report-themes-work"></a>Sådan fungerer rapporttemaer
-For at anvende et rapporttema på en rapport i Power BI Desktop kan du vælge mellem de tilgængelige indbyggede rapporttemaer eller oprette eller importere et brugerdefineret tema.
+Hvis du vil anvende et rapporttema på en rapport i Power BI Desktop, kan du vælge mellem de tilgængelige indbyggede rapporttemaer eller oprette eller importere en brugerdefineret temafil.
+
+### <a name="built-in-report-themes"></a>Indbyggede rapporttemaer
+
+Sådan vælger du blandt de tilgængelige indbyggede rapporttemaer: 
+
+1. Vælg **Skift tema** på båndet **Hjem**. 
+
+   ![Vælg et rapporttema](media/desktop-report-themes/report-themes-2a.png)
+
+2. Vælg et af de inkluderede temaer i rullemenuen.
+
+   Rapporttemaet anvendes nu på rapporten.
+
+I følgende tabel vises de tilgængelige indbyggede rapporttemaer.
 
 | Indbygget rapporttema | Standardfarvesekvens    |
 |------ |---------- |
-| Standard   | ![standard](media/desktop-report-themes/report-themes-color-scheme-default.png)|
-| Højhus  | ![højhus](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
-| Leder     | ![leder](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
-| Grænse  | ![grænse](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
-| Innovativ    | ![innovativ](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
-| Blomstring     | ![blomstring](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
-| Tidevand | ![tidevand](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
-| Temperatur   | ![temperatur](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
-| Sol | ![sol](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
-| Divergerende     | ![divergerende](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
-| Storm     | ![storm](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
-| Klassisk   | ![klassisk](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
-| Bypark     | ![bypark](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
-| Klasselokale     | ![klasselokale](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
-| Sikker for farveblinde   | ![sikker for farveblinde](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
-| Elektrisk  | ![elektrisk](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
-| Høj kontrast     | ![høj kontrast](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
-| Solnedgang    | ![solnedgang](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
-| Tusmørke  | ![tusmørke](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
+| Standard   | ![Standard](media/desktop-report-themes/report-themes-color-scheme-default.png)|
+| Highrise  | ![Highrise](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
+| Leder     | ![Leder](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
+| Grænse  | ![Grænse](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
+| Forny  | ![Forny](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
+| Blomstring     | ![Blomstring](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
+| Tidevand | ![Tidevand](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
+| Temperatur   | ![Temperatur](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
+| Sol | ![Sol](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
+| Divergerende     | ![Divergerende](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
+| Storm     | ![Storm](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
+| Klassisk   | ![Klassisk](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
+| Bypark     | ![Bypark](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
+| Klasselokale     | ![Klasselokale](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
+| Sikker for farveblinde   | ![Sikker for farveblinde](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
+| Elektrisk  | ![Elektrisk](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
+| Høj kontrast     | ![Høj kontrast](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
+| Solnedgang    | ![Solnedgang](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
+| Tusmørke  | ![Tusmørke](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
 
-For at vælge mellem de tilgængelige indbyggede rapporttemaer skal du vælge knappen **Switch Theme** (Skift tema) fra båndet **Home** (Hjem) og derefter vælge et af temaerne fra rullemenuen.
+### <a name="import-custom-report-theme-files"></a>Importér brugerdefinerede rapporttemafiler
 
-![Vælg et rapporttema](media/desktop-report-themes/report-themes-2a.png)
+Sådan importerer du en brugerdefineret rapporttemafil: 
 
-Dit rapporttema anvendes på rapporten, og du er klar til at gå i gang.
+1. Vælg **Skift tema** på båndet **Hjem**, og vælg derefter **Importér tema** på rullelisten. 
 
-### <a name="importing-report-themes"></a>Import af rapporttemaer
+   ![Importér tema](media/desktop-report-themes/report-themes-3a.png)
 
-Du importerer et brugerdefineret rapporttema ved at vælge knappen **Switch Theme** (Skift tema) på båndet **Home** (Hjem). Vælg derefter **Import Theme** (Importér tema) fra rullemenuen.
+   Der vises et vindue, hvorfra du kan søge efter placeringen af JSON-temafilen. 
 
-![Importér tema](media/desktop-report-themes/report-themes-3a.png)
+2. På følgende billede er en række filer i ferietema tilgængelige. Vi vælger et ferietema for marts *St Patricks Day.json*.
 
-Der vises et vindue, hvorfra du kan søge efter placeringen af JSON-temafilen. Power BI Desktop søger efter JSON-filer, fordi JSON er Power BI-rapporttemafiltypen. På følgende billede er en række filer i ferietema tilgængelige. Vi vælger et ferietema for marts.
+   ![Ferietema](media/desktop-report-themes/report-themes_4.png)
 
-![Ferietema](media/desktop-report-themes/report-themes_4.png)
+   Når temafilen er blevet indlæst, får du besked i Power BI Desktop.
 
-Når temafilen er blevet indlæst, får du besked i Power BI Desktop.
+   ![Temaet blev importeret](media/desktop-report-themes/report-themes_5.png)
 
-![Temaet blev importeret](media/desktop-report-themes/report-themes_5.png)
-
-Du kan tilpasse temaer i Power BI Desktop på to måder. Lad os se nærmere på dem hver især.
-
+Der er to måder at tilpasse temaer i Power BI Desktop på. Lad os se nærmere på dem hver især.
 
 ## <a name="customize-report-themes-preview"></a>Tilpas rapporttemaer (prøveversion)
 
-Fra og med december 2019-versionen af **Power BI Desktop**kan du tilpasse et rapporttema på to måder:
+Fra og med december 2019-versionen af Power BI Desktop kan du tilpasse et rapporttema på to måder:
 
-* Opret og tilpas et tema i Power BI Desktop (prøveversion)
-* Oprettelse og tilpasning af en JSON-fil med et brugerdefineret rapporttema
+* [Opret og tilpas et tema i Power BI Desktop (prøveversion)](#create-and-customize-a-theme-in-power-bi-desktop-preview)
+* [Opret og tilpas en JSON-fil med et brugerdefineret rapporttema](#introduction-to-report-theme-json-files)
 
-Hvis du vil tilpasse et tema direkte i Power BI Desktop, skal du først vælge **Filer > Indstillinger > Indstillinger** og derefter vælge feltet ud for **Tilpas aktuelt tema** i afsnittet **Prøveversionsfunktioner** som vist på følgende billede.
+### <a name="create-and-customize-a-theme-in-power-bi-desktop-preview"></a>Opret og tilpas et tema i Power BI Desktop (prøveversion)
 
-![Aktivér tilpassede temaer](media/desktop-report-themes/report-themes_5a.png)
+Fra og med Power BI Desktop i december 2019 er muligheden for at tilpasse et tema direkte i Power BI Desktop nu tilgængelig som prøveversion.
 
-Du bliver muligvis bedt om at genstarte Power BI Desktop, før prøveversionsfunktionen aktiveres.
+Sådan tilpasser du et tema direkte i Power BI Desktop: 
 
-Når du har genstartet, kan du begynde at tilpasse det aktuelle tema ved at vælge båndet **Hjem** og derefter vælge **Skift tema > Tilpas det aktuelle tema** på båndet. Der vises en dialogboks, som viser de mange måder, du kan tilpasse et eksisterende tema på.
+1. Vælg **Fil** > **Indstillinger** > **Indstillinger**. 
 
-![Tilpas temaet](media/desktop-report-themes/report-themes_5b.png)
+2. I afsnittet **Funktioner i prøveversionen** skal du vælge **Tilpas det aktuelle tema**og derefter vælge **OK**.
 
-Hvis du synes om et eksisterende tema og vil foretage et par justeringer, kan du vælge et eksisterende tema og derefter vælge **Tilpas aktuelt tema** i dialogboksen, som vist på følgende billede. 
+   ![Aktivér tilpassede temaer](media/desktop-report-themes/report-themes_5a.png)
 
-![Tilpas det aktuelle tema](media/desktop-report-themes/report-themes_5c.png)
+   Du bliver muligvis bedt om at genstarte Power BI Desktop, før prøveversionsfunktionen aktiveres. Når du har genstartet, kan du begynde at tilpasse det tema, der er anvendt i øjeblikket. 
 
-> [!NOTE]
-> Det forrige billede blev hentet med det nye bånd aktiveret, der i øjeblikket er tilgængeligt som prøveversion. Du kan aktivere prøveversionen af det nye bånd ved at vælge **Fil > Indstillinger > Indstillinger** og derefter vælge **Prøveversion af nyt bånd** i afsnittet **Prøveversionsfunktioner**.
+3. På båndet **Hjem** skal du vælge **Skift tema** > **Tilpas det aktuelle tema**. 
 
-Temaindstillinger, der kan tilpasses, findes i følgende kategorier, som afspejles i dialogboksen Tilpas tema:
+   Der vises en dialogboks, som viser de måder, du kan tilpasse et eksisterende tema på.
 
-* Temanavn (du kan navngive det tema, du tilpasser) og forskellige farveindstillinger (temafarver, synspunktfarver, divergerende farver med mere)
-* Tekstindstillinger, herunder skrifttypefamilie, størrelse og farve, samt aksetitler og -farver, kort og KPI'er og faneoverskrifter
-* Visuelle elementer, f. eks. baggrund, kant, overskrift og værktøjstip
-* Sideelementer, f. eks. tapet og baggrund
-* Indstillinger for filterrude, herunder baggrundsfarve, gennemsigtighed, skrifttype og ikonfarve, størrelse, filterkort og meget mere
+   ![Tilpas temaet](media/desktop-report-themes/report-themes_5b.png)
 
-Når du har foretaget dine ændringer og valgt knappen **Anvend og gem**, gemmes dit tema, så det kan bruges i den aktuelle rapport og eksporteres. 
+4. Hvis du synes om et eksisterende tema og ønsker at foretage et par justeringer, skal du markere temaet og derefter vælge **Tilpas det aktuelle tema**. 
 
-Hvis du tilpasser det aktuelle tema på denne måde, kan det gøre visual-arbejdet med tilpasning af temaer hurtigt og nemt. Der er dog nogle endelige justeringer af temaer, som kræver, at temaets JSON-fil skal ændres som beskrevet i følgende afsnit.
+   ![Tilpas det aktuelle tema](media/desktop-report-themes/report-themes_5c.png)
+
+Temaindstillinger, der kan tilpasses, findes i følgende kategorier, som afspejles i dialogboksen **Tilpas tema**:
+
+* **Navn og farver**: Temanavn og farveindstillinger omfatter temafarver, synspunktsfarver og divergerende farver.
+* **Tekst**: Tekstindstillinger omfatter skrifttypefamilie, størrelse og farve samt aksetitler, farver, kort og KPI'er og faneoverskrifter.
+* **Visualiseringer**: Indstillinger for visualiseringer, f.eks. baggrund, kant, overskrift og værktøjstip.
+* **Side**: Indstillinger for sideelementer omfatter tapet og baggrund.
+* **Filterrude**: Indstillinger for filterrude omfatter baggrundsfarve, gennemsigtighed, skrifttype og ikonfarve, størrelse og filterkort.
+
+Når du har foretaget dine ændringer, skal du vælge **Anvend og Gem** for at gemme dit tema. Dit tema kan nu bruges i den aktuelle rapport og eksporteres. 
+
+Hvis du tilpasser det aktuelle tema på denne måde, kan det gøre visualiseringsarbejdet med tilpasning af temaer hurtigt og nemt. Du kan dog foretage finere justeringer af temaer, som kræver, at temaets [JSON-fil](#report-theme-json-file-format) redigeres.
 
 > [!TIP]
-> Du kan tilpasse de fleste temaelementer, der bruger visual-elementer, ved hjælp af dialogboksen **Tilpas aktuelt tema** og derefter kan du eksportere JSON-filen og foretage finjusteringer manuelt (ved at redigere selve JSON-filen). Derefter kan du omdøbe den finjusterede JSON-fil, importere den og således opnå alle de ønskede justeringer.
+> Du kan tilpasse de fleste temaelementer ved at bruge de visuelle elementer i vinduet **Tilpas tema**. Derefter kan du vælge at eksportere JSON-filen og foretage finjusteringer manuelt ved at ændre indstillingerne i JSON-filen. Du kan omdøbe den finjusterede JSON-fil og senere importere den.
 
+## <a name="introduction-to-report-theme-json-files"></a>Introduktion til JSON-filer til rapporttemaer
+ Når du åbner den grundlæggende JSON-fil, der er nævnt i det forrige afsnit (St Patricks Day.json), ser den ud på følgende måde:
 
-## <a name="structure-of-a-report-theme-json-file"></a>Strukturen af en JSON-rapporttemafil
- Når den grundlæggende JSON-fil, der er valgt i det forrige afsnit (filen *St Patricks Day.json*), åbnes i et tekstredigeringsværktøj, ser den ud som på følgende skærmbillede:
-
-![JSON-filen Skt. Patricks dag](media/desktop-report-themes/report-themes_6.png)
-
-JSON-filen har følgende påkrævede linjer:
-
-* **name**: Dette er temanavnet, som er det eneste påkrævede felt.
-
-* **dataColors**: Listen over heksadecimale farvekoder til brug sammen med data i visuals i Power BI Desktop. Listen kan indeholde et vilkårligt antal farver.
-
-* **background**, **foreground** og **tableAccent**: Adskillige farveklasser. Vi går i detaljer omkring farveklasser senere i denne artikel, men du skal være klar over, at farveklasserne gør det muligt for dig at angive mange farver i din rapport på én gang.
-
-Derefter følger teksten fra filen *St Patrick's Day.json*, som du kan bruge til at oprette din egen JSON-fil:
-
-```json
+ ```json
     {
-        "name": "St Patricks Day",
+        "name": "St Patrick's Day",
         "dataColors": ["#568410", "#3A6108", "#70A322", "#915203", "#D79A12", "#bb7711", "#114400", "#aacc66"],
         "background":"#FFFFFF",
         "foreground": "#3A6108",
@@ -138,68 +147,79 @@ Derefter følger teksten fra filen *St Patrick's Day.json*, som du kan bruge til
     }
 ```
 
-Hvis du blot vil tilpasse rapportens grundfarver, kan du ændre navn og hexkoder for denne fil for at gøre din egen personlige JSON-fil klar til import.
+Denne JSON-fil til rapporttemaer indeholder følgende linjer:
 
-I JSON-filen angiver du kun den formatering, der skal justeres, og alt andet, der *ikke* er angivet i JSON-filen, vender blot tilbage til Power BI-standardindstillingerne.
+* **name**: Navnet på rapporttemaet. Dette felt er det eneste påkrævede felt.
 
-Der er mange fordele ved at oprette en JSON-fil. Du kan f.eks. angive, at alle diagrammer skal bruge en skriftstørrelse på 12, eller at visse visuelle elementer skal bruge en bestemt skrifttypefamilie. Du kan også deaktivere datamærkater for specifikke diagramtyper.
+* **dataColors**: Listen over hexadecimale farvekoder til brug sammen med data i visualiseringer i Power BI Desktop. Listen kan indeholde et vilkårligt antal farver.
 
-Når du bruger en detaljeret JSON-fil, kan du oprette en temafil, der standardiserer dine diagrammer og rapporter, hvilket gør det nemt at gøre dine organisationsrapporter konsistente.
+* **background**, **foreground** og **tableAccent**: Farveklasser. Med farveklasser kan du angive mange farver i din rapport på én gang. 
 
-Du kan finde oplysninger om formatet af den detaljerede JSON-fil i afsnittet om **JSON-rapporttemafilformatet** senere i denne artikel.
+Du kan bruge denne JSON-fil som udgangspunkt til at oprette din egen brugerdefinerede rapporttemafil, som du vil importere. Hvis du kun vil justere rapportens grundfarver, skal du ændre navnet og hexadecimalkoderne i filen.
 
-## <a name="how-report-theme-colors-stick-to-your-reports"></a>Sådan fastgøres rapporttemafarver til dine rapporter
-Når du publicerer rapporten til **Power BI-tjenesten**, bliver rapporttemafarverne ved med at være de samme.
+I en JSON-fil til et rapporttema skal du kun definere den formatering, du vil ændre. Det, du ikke angiver i JSON-filen, vender tilbage til standardindstillingerne i Power BI Desktop.
 
-Rapporttemaet vises i sektionen **Data colors** (Datafarver) i panelet **Format**. Når vi f.eks. har anvendt de mange grønne og brune farver fra temaet **Skt. Patricks dag**, skal vi vælge en visual. Derefter fortsætter vi til **Format > Datafarver** og ser følgende oplysninger:
+Der er mange fordele ved at oprette en JSON-fil. Du kan f.eks. angive, at alle diagrammer bruger en skriftstørrelse på 12, eller at visse visualiseringer bruger en bestemt skrifttypefamilie, eller at datamærkater for bestemte diagramtyper deaktiveres. Når du bruger en JSON-fil, kan du oprette en temafil, der standardiserer dine diagrammer og rapporter, hvilket gør det nemt at gøre dine organisationsrapporter konsistente.
 
-![Visualiseringer](media/desktop-report-themes/report-themes_8.png)
+Du kan finde flere oplysninger om formatet af JSON-filen i [JSON-filformat for rapporttema](#report-theme-json-file-format).
 
-Se alle de grønne farver? Det skyldes, at disse farver var en del af det **rapporttema**, som vi importerede og anvendte.
+## <a name="how-report-theme-colors-stick-with-your-reports"></a>Sådan fastgøres rapporttemafarver til dine rapporter
+Når du publicerer rapporten til Power BI-tjenesten, bliver rapporttemafarverne ved med at være de samme. Rapporttemaet vises i sektionen **Datafarver** i panelet **Format**. 
 
-Farver i farvepaletten er også relative i forhold til det aktuelle tema. Så hvis du f.eks. vælger den tredje farve i den øverste række for et datapunkt og senere skifter til det andet tema, opdateres datapunktets farve automatisk til den tredje farve i den øverste række i det nye tema, på samme måde som når du ændrer temaer i Microsoft Office.
+Sådan får du vist de tilgængelige farver i et rapporttema:
+
+1. Vælg en visualisering. 
+
+2. I afsnittet **Format** i ruden **Visualisering** skal du vælge **Datafarver**.
+ 
+3. Vælg rullelisten for et element for at få vist oplysninger om **temafarver** i rapporttemaet.
+
+   ![Temafarver](media/desktop-report-themes/report-themes_8.png)
+
+Når vi f.eks. har anvendt de mange grønne og brune farver fra Skt. Patricks dag-temaet, skal vi vælge en visualisering. Se alle de grønne farver? Det skyldes, at disse farver var en del af det rapporttema, som vi importerede og anvendte.
+
+Farverne i farvepaletten er også relative i forhold til det aktuelle tema. Lad os f.eks. antage, at du vælger den tredje farve i den øverste række for et datapunkt. Hvis du på et senere tidspunkt skifter til et andet tema, opdateres datapunktets farve automatisk til den tredje farve i den øverste række i det nye tema, på samme måde som når du ændrer temaer i Microsoft Office.
 
 ### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Situationer, hvor rapporttemafarver ikke bliver i rapporterne
-Lad os sige, at du anvender et brugerdefineret farvesæt (eller en individuel farve) til et bestemt datapunkt i en visualisering ved hjælp af indstillingen Brugerdefineret farve i farvevælgeren. Når du anvender et Rapporttema, tilsidesætter det *ikke* den brugerdefinerede farve for datapunktet.
+Lad os sige, at du anvender et brugerdefineret farvesæt (eller en individuel farve) til et bestemt datapunkt i en visualisering ved hjælp af indstillingen **Brugerdefineret farve** i farvevælgeren. Når du anvender et rapporttema, tilsidesætter det *ikke* den brugerdefinerede farve for datapunktet.
 
-Det er også muligt at angive farven på et datapunkt manuelt ved hjælp af afsnittet Temafarver. Farverne opdateres *ikke*, når du anvender et nyt Rapporttema. Hvis du vil have standardfarverne tilbage (så de opdateres, når du anvender et nyt rapporttema), skal du vælge **Vend tilbage til standard** i paletten med **temafarver** i farvevælgeren.
+Det er også muligt at angive farven på et datapunkt manuelt ved hjælp af afsnittet **Temafarver**. Farverne opdateres *ikke*, når du anvender et nyt rapporttema. Hvis du vil have standardfarverne tilbage, så de opdateres, når du anvender et nyt rapporttema, skal du vælge **Vend tilbage til standard** i paletten med **temafarver** i farvevælgeren.
 
 ![Gendan til standard](media/desktop-report-themes/report-themes_9.png)
 
-Desuden kan mange **brugerdefinerede visuals** ikke anvendes på Rapporttemaer.
+Desuden kan mange brugerdefinerede visualiseringer ikke anvendes på rapporttemaer.
 
-## <a name="report-theme-files-you-can-use-right-now"></a>Rapporttemafiler, som kan bruges i øjeblikket
-Vil du gerne i gang med **rapporttemaer**? Her er nogle færdige JSON-filer med Rapporttema, som du kan hente og importere til din **Power BI Desktop**-rapport. Vi har også inkluderet et billede af det Rapporttema, der er anvendt til rapporten i denne artikel.
+## <a name="custom-report-theme-files-you-can-use-right-now"></a>Brugerdefinerede rapporttemafiler, som kan bruges i øjeblikket
+Vil du gerne i gang med rapporttemaer? Se de brugerdefinerede rapporttemaer i galleriet med [temaer](https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery), eller prøv følgende foruddefinerede JSON-filer til rapporttemaer, som du kan downloade og importere i din Power BI Desktop-rapport:
 
-* Det [tema](https://go.microsoft.com/fwlink/?linkid=843924), der bruges i det [blogindlæg](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/), hvor den første udgivelse af **rapporttemaer** blev annonceret, hed [*waveform.json*](https://go.microsoft.com/fwlink/?linkid=843924).
+* [Temaet Waveform](https://community.powerbi.com/t5/Themes-Gallery/Waveform/m-p/140536). Dette rapporttema blev introduceret i det [blogindlæg](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/), hvor den første udgivelse af rapporttemaer blev annonceret. [Download Waveform.JSON](https://go.microsoft.com/fwlink/?linkid=843924).
 
-  ![Temaet waverform.json](media/desktop-report-themes/report-themes_10.png)
+  ![Temaet Waveform.json](media/desktop-report-themes/report-themes_10.png)
 
-* Det er et [tema, som er nemmere at læse for synshandicappede](https://go.microsoft.com/fwlink/?linkid=843923) end standardfarvetemaet. Det kaldes [*ColorblindSafe-Longer.json*](https://go.microsoft.com/fwlink/?linkid=843923).
+* [Brugervenligt tema til farveblinde](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597).
+Dette rapporttema er nemmere at læse for synshæmmede. [Download ColorblindSafe-Longer.json](https://go.microsoft.com/fwlink/?linkid=843923).
 
-  ![Temaet ColorblindSafe-Longer.json.](media/desktop-report-themes/report-themes_11.png)
+  ![Temaet ColorblindSafe-Longer.json](media/desktop-report-themes/report-themes_11.png).
 
-* En gruppe [Power-visning-temaer](https://go.microsoft.com/fwlink/?linkid=843925) i en zip-fil, herunder én, der hedder [*Apothecary.json*](https://go.microsoft.com/fwlink/?linkid=843925), som vises nedenfor.
+* Power-visningstemaer med Apothecary.json. [Download Powervisningstemaer i en ZIP-fil](https://go.microsoft.com/fwlink/?linkid=843925).
 
   ![Temaet Apothecary.json](media/desktop-report-themes/report-themes_12.png)
 
-* Endelig er der temaet *Valentinsdag*.
+* Temaet Valentinsdag.
 
   ![Temaet Valentinsdag](media/desktop-report-themes/report-themes_13.png)
 
-I stedet for at give dig mulighed for at downloade, får du koden til JSON-filen for Valentinsdag:
+  Her er koden til JSON-filen for valentinsdag:
 
-```json
-    {
-        "name": "Valentine's Day",
-        "dataColors": ["#990011", "#cc1144", "#ee7799", "#eebbcc", "#cc4477", "#cc5555", "#882222", "#A30E33"],
-        "background":"#FFFFFF",
-        "foreground": "#ee7799",
-        "tableAccent": "#990011"
-    }
-```
-
-**Rapporttemaer** kan gøre dine Power BI Desktop-rapporter til en farverig afspejlning af dig, din organisation eller også den aktuelle sæson eller helligdag. 
+   ```json
+       {
+           "name": "Valentine's Day",
+           "dataColors": ["#990011", "#cc1144", "#ee7799", "#eebbcc", "#cc4477", "#cc5555", "#882222", "#A30E33"],
+           "background":"#FFFFFF",
+           "foreground": "#ee7799",
+           "tableAccent": "#990011"
+       }
+   ```
 
 Her er nogle flere rapporttemaer, som du kan bruge som udgangspunkt:
 
@@ -207,6 +227,25 @@ Her er nogle flere rapporttemaer, som du kan bruge som udgangspunkt:
 * [Plum](https://community.powerbi.com/t5/Themes-Gallery/Plum/m-p/140711)
 * [Autumn](https://community.powerbi.com/t5/Themes-Gallery/Autumn/m-p/140746)
 * [High contrast](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597)
+
+Rapporttemaer kan gøre dine Power BI Desktop-rapporter til en farverig afspejlning af dig, din organisation eller også den aktuelle sæson eller helligdag. 
+
+
+## <a name="export-report-themes-preview"></a>Eksportér rapporttemaer (prøveversion)
+
+Fra og med udgivelsen af Power BI Desktop i december 2019 kan du nu vælge at eksportere det aktuelt anvendte rapporttema direkte fra Power BI Desktop til en JSON-fil. Når du har eksporteret et rapporttema, kan du bruge det igen i dine egne rapporter. Med denne indstilling kan du eksportere JSON-filen til de fleste af de indbyggede temaer. De eneste undtagelser er de grundlæggende temaer, Classic og Standard, som andre temaer bygger på, når de importeres. 
+
+Sådan eksporterer du det tema, der aktuelt anvendes, fra Power BI Desktop: 
+
+1. Vælg **Fil** > **Indstillinger** > **Indstillinger**. 
+
+2. I afsnittet **Funktioner i prøveversionen** skal du vælge **Tilpas det aktuelle tema**og derefter vælge **OK**.
+
+   Du bliver muligvis bedt om at genstarte Power BI Desktop, før prøveversionsfunktionen aktiveres. Når du har genstartet, kan du begynde at eksportere det tema, der er anvendt i øjeblikket. 
+
+3.  På båndet **Hjem** skal du vælge **Skift tema** > **Eksportér det aktuelle tema**. 
+
+4. Brug dialogboksen **Gem som** til at gå til en mappe, hvor JSON-filen skal gemmes, og vælg derefter **Gem**.
 
 ## <a name="report-theme-json-file-format"></a>JSON-filformat for rapporttema
 På det mest grundlæggende niveau har JSON-temafilen kun én linje, der er påkrævet: **name**. 
@@ -217,16 +256,15 @@ På det mest grundlæggende niveau har JSON-temafilen kun én linje, der er påk
     }
 ```
 
-Alt andet ud over *name* er valgfrit, hvilket betyder, at du kan tilføje de relevante egenskaber, du vil bruge til at formatere temafilen, og fortsætte med at bruge Power BI’s standarder til resten. 
+Alt andet ud over **name** er valgfrit, hvilket betyder, at du kan tilføje de relevante egenskaber, du vil bruge til at formatere temafilen, og fortsætte med at bruge Power BI's standarder til resten. 
 
-Under name kan du tilføje nogle grundlæggende farverelaterede egenskaber. 
+Under **name** kan du tilføje nogle grundlæggende farverelaterede egenskaber: 
 
+* **dataColors**: Listen over hexadecimale farvekoder til brug sammen med data i visualiseringer i Power BI Desktop. Listen kan indeholde et vilkårligt antal farver. Når alle farver fra denne liste er blevet brugt, og hvis visualiseringen stadig har brug for flere farver, vender den tilbage til at bruge Power BI's standardfarvepalet. 
+* **good**, **neutral**, **bad**: Disse egenskaber angiver de statusfarver, der bruges af vandfaldsdiagrammet og det visuelle element KPI.
+* **maximum**, **center**, **minimum**, **null**: Disse farver angiver de forskellige gradueringsfarver i dialogboksen med betinget formatering.  
 
-* **dataColors**: Listen over heksadecimale farvekoder til brug sammen med data i visuals i Power BI Desktop. Listen kan indeholde et vilkårligt antal farver. Når alle farver fra denne liste er blevet brugt, og hvis visualiseringen stadig har brug for flere farver, vender den tilbage til at bruge Power BI's standardfarvepalet. 
-* **good, neutral, bad**: Disse angiver de statusfarver, der bruges af vandfaldsdiagrammet og det visuelle element KPI.
-* **maximum, center, minimum, null**: Disse farver angiver de forskellige gradueringsfarver i dialogboksen med betinget formatering.  
-
-Et grundlæggende tema, der definerer disse farver, ser ud på følgende måde:
+Et grundlæggende tema, der definerer disse farver, kan se ud på følgende måde:
 
 ```json
     {
@@ -253,20 +291,19 @@ Et grundlæggende tema, der definerer disse farver, ser ud på følgende måde:
     }
 ```
 
-Derefter kan du tilføje forskellige farveklasser. Med farveklasser kan du angive mange farver i hele rapporten på én linje ved at gruppere lignende visuelle egenskaber, der generelt har samme farve. 
+Derefter kan du tilføje forskellige farveklasser, f.eks. **background** og **foreground**. Med farveklasser kan du angive mange farver i hele rapporten på én linje ved at gruppere lignende visuelle egenskaber, der generelt har samme farve. 
 
 Du kan se de seks farveklasser, som du kan formatere, i følgende tabel.
 
-
 |Farveklasse  |Dette formateres  |
 |---------|---------|
-|foreground | Angiver baggrundsfarve (uden for datapunkter) <br> Tendenslinjens farve <br>  Standardfarven på tekstfelt <br> Skriftfarven for tabel-og matrixværdier og totaler samt farve på akser på datalinje <br> Kortdatamærkater <br> Farven på billedforklaringsværdi for måler <br> Farven på KPI-mål <br>  KPI-tekstfarve <br> Farven på udsnit (i fokustilstand)  <br> Skriftfarven for rulleelement i udsnit <br> Skriftfarven for numerisk input i udsnit <br> Skriftfarven for udsnitsoverskrift <br> Farven på forholdslinje i punktdiagram <br> Farven på prognoselinje i kurvediagram <br> Farven på navnelinje på kort <br> Tekstfarven for filterrude og kort|
-|foregroundNeutralSecondary |Mærkatfarver  <br> Farven på forklaring <br> Farven på aksemærkat <br> Skriftfarve for tabel-og matrixheadere <br> Stregfarve for målerens mål og målets navnelinje <br>  Farven på KPI-tendensakse <br> Farven på skyder i udsnit <br> Skriftfarve for udsnitselement <br> Farven på kontur i udsnit <br> Farven, når der peges, i et kurvediagram <br> Farven på korttitel på flere rækker <br> Stregfarve for bånddiagram <br> Kantfarve for figurkort <br> Skriftfarve for knaptekst <br> Linjefarve for knapikon <br> Farve for knapkontur |
-| foregroundNeutralTertiary | nedtonet farve på forklaring <br> Farven på kortkategorimærkat <br> Farven på kortkategorimærkat for flere rækker <br> Linjefarven på kort med flere rækker <br> Stregfarve for konverteringsrate i tragtformet diagram 
-| backgroundLight | Gitterlinjefarve for akse <br> Gitterfarven på tabel og matrix <br> Baggrundsfarve for udsnitsheader (i fokustilstand)  <br> Konturfarve for kort med flere rækker  <br> Udfyldningsfarve <br> Baggrundsfarve for målerbue <br> Anvendt baggrundsfarve for filterkort <br> |
-backgroundNeutral | Konturfarven på tabel- og matrixgitter <br> Standardfarve for figurkort <br> Båndets fyldfarve for bånddiagram (når indstillingen tilpas til seriens farve er slået fra) |
-background | Baggrundsfarve på mærkat (inde i datapunkter) <br> Baggrundsfarve for rulleelementer i udsnit  <br> Stregfarve for kransediagram <br> Stregfarve for træstruktur <br> Baggrundsfarve for kombinationsdiagram <br> Udfyldningsfarve til knap <br> Baggrundsfarve for filterrude og tilgængeligt filterkort |
-tableAccent | Tilsidesætter konturfarve for tabel-og matrixgitter, når den findes |
+|**foreground** | Angiver baggrundsfarve (uden for datapunkter) <br> Tendenslinjens farve <br>  Standardfarven på tekstfelt <br> Skriftfarven for tabel-og matrixværdier og totaler samt farve på akser på datalinje <br> Kortdatamærkater <br> Farven på billedforklaringsværdi for måler <br> Farven på KPI-mål <br>  KPI-tekstfarve <br> Farven på udsnit (i fokustilstand)  <br> Skriftfarven for rulleelement i udsnit <br> Skriftfarven for numerisk input i udsnit <br> Skriftfarven for udsnitsoverskrift <br> Farven på forholdslinje i punktdiagram <br> Farven på prognoselinje i kurvediagram <br> Farven på navnelinje på kort <br> Tekstfarven for filterrude og kort|
+|**foregroundNeutralSecondary** |Mærkatfarver  <br> Farven på forklaring <br> Farven på aksemærkat <br> Skriftfarve for tabel-og matrixheadere <br> Stregfarve for målerens mål og målets navnelinje <br>  Farven på KPI-tendensakse <br> Farven på skyder i udsnit <br> Skriftfarve for udsnitselement <br> Farven på kontur i udsnit <br> Farven, når der peges, i et kurvediagram <br> Farven på korttitel på flere rækker <br> Stregfarve for bånddiagram <br> Kantfarve for figurkort <br> Skriftfarve for knaptekst <br> Linjefarve for knapikon <br> Farve for knapkontur |
+| **foregroundNeutralTertiary** | nedtonet farve på forklaring <br> Farven på kortkategorimærkat <br> Farven på kortkategorimærkat for flere rækker <br> Linjefarven på kort med flere rækker <br> Stregfarve for konverteringsrate i tragtformet diagram 
+| **backgroundLight** | Gitterlinjefarve for akse <br> Gitterfarven på tabel og matrix <br> Baggrundsfarve for udsnitsheader (i fokustilstand)  <br> Konturfarve for kort med flere rækker  <br> Udfyldningsfarve <br> Baggrundsfarve for målerbue <br> Anvendt baggrundsfarve for filterkort <br> |
+**backgroundNeutral** | Konturfarven på tabel- og matrixgitter <br> Standardfarve for figurkort <br> Båndets fyldfarve for bånddiagram (når indstillingen tilpas til seriens farve er slået fra) |
+**background** | Baggrundsfarve på mærkat (inde i datapunkter) <br> Baggrundsfarve for rulleelementer i udsnit  <br> Stregfarve for kransediagram <br> Stregfarve for træstruktur <br> Baggrundsfarve for kombinationsdiagram <br> Udfyldningsfarve til knap <br> Baggrundsfarve for filterrude og tilgængeligt filterkort |
+**tableAccent** | Tilsidesætter konturfarve for tabel-og matrixgitter, når den findes |
 
 
 Her er et eksempel på et tema, der angiver farveklasserne:
@@ -284,16 +321,16 @@ Her er et eksempel på et tema, der angiver farveklasserne:
     }
 ```
 
-Derefter kan du føje tekstklasser til din JSON-fil, som ligner farveklasser, men som er designet for at give dig mulighed for at opdatere skriftstørrelsen, farven og familien for grupper af tekst på tværs af rapporten. Der er 12 tekstklasser, men du skal faktisk kun angive fire klasser, kaldet *primære klasser*, for at ændre al tekstformatering i din rapport. Andre tekstklasser, der betragtes som *sekundære klasser*, arver eller får automatisk deres egenskaber fra deres tilknyttede primære klasser. Ofte får en sekundær klasse en lysere tekstfarve eller en vis procentdel større eller mindre tekststørrelse sammenlignet med den primære klasse. 
+Derefter kan du føje tekstklasser til din JSON-fil. Tekstklasser ligner farveklasser, men er designet for at give dig mulighed for at opdatere skriftstørrelsen, farven og familien for grupper af tekst på tværs af rapporten. Der er 12 tekstklasser, men du skal faktisk kun angive fire klasser, de såkaldte *primære klasser*, for at ændre al tekstformatering i din rapport. Andre tekstklasser, der betragtes som *sekundære klasser*, arver eller får automatisk deres egenskaber fra deres tilknyttede primære klasser. Ofte får en sekundær klasse en lysere tekstfarve eller en vis procentdel større eller mindre tekststørrelse sammenlignet med den primære klasse. 
 
-Tag klassen *label* som et eksempel. Standardformateringen for label-klassen er Segoe UI, #252423 (en mørkegrå farve) og 12 pkt., og denne klasse bruges til at formatere værdierne i tabellen og matrixen. Totalerne i en tabel eller matrix vil typisk have samme formatering, men er med fed, så de er tydeligere, og de bruger derfor en label class for fed. Det behøver du dog aldrig selv at angive i JSON-temaet. Power BI regner det automatisk ud for dig. Hvis du på et senere tidspunkt beslutter, at dine labels skal være med en 14-punkts skrifttype, og angiver dette i temaet, behøver du ikke at opdatere label-klassen for fed, eftersom den arver al tekstformatering fra label-klassen og blot angiver skrifttypefamilien med fed. 
+Tag klassen **label** som et eksempel. Standardformateringen for **label** class er Segoe UI, #252423 (en mørkegrå farve) og 12 pkt. Denne klasse bruges til at formatere værdierne i tabellen og matrixen. Totalerne i en tabel eller matrix vil typisk have samme formatering, men er med fed, så de er tydeligere, og de bruger derfor en **label class for fed**. Du behøver dog ikke angive den pågældende klasse i temaet JSON. Power BI gør dette automatisk. Hvis du på et senere tidspunkt beslutter at angive labels med en skrifttype på 14 pkt. i dit tema, behøver du ikke også at opdatere den pågældende **label class for fed**, fordi den nedarver tekstformatering fra **label class**. 
 
-Listen i tabellen viser følgende:
-* De fire primære tekstklasser, hvad den enkelte klasse formaterer og de tilhørende standardindstillinger
-* Hver sekundær klasse, hvad den enkelte klasse formaterer og de tilhørende standardindstillinger, der er entydige sammenlignet med den primære klasse
+De følgende oplysninger vises i følgende tabel:
+* Hver af de fire primære tekstklasser, hvad den enkelte tekstklasse formaterer og de tilhørende standardindstillinger.
+* Hver sekundær klasse, hvad den enkelte klasse formaterer og de tilhørende standardindstillinger, der er entydige sammenlignet med den primære klasse.
 
 
-|Primær klasse  |Sekundær klasse  |Klassenavn i JSON  |Indstillinger  |Tilknyttede visuelle objekter  |
+|Primær klasse  |Sekundær klasse  |JSON-klassenavn  |Indstillinger  |Tilknyttede visuelle objekter  |
 |---------|---------|---------|---------|---------|
 | Billedforklaring   | I/T   | callout | DIN <br> #252423 <br> 45pt |Kortdatamærkater <br> KPI-indikatorer|
 |Sidehoved|I/T|header|Segoe UI Semibold <br> #252423 <br> 12pt |Headere for nøglefaktorer |
@@ -309,7 +346,7 @@ Listen i tabellen viser følgende:
 |-|Lille og let  |smallLightLabel    |#605E5C<br>9pt |Datamærkater<br>Værdiaksemærkater|
 
 
-Selvom du ikke behøver at angive de sekundære klasser i din temafil, da de arver fra de primære klasser, kan du dog eksplicit formatere de sekundære klasser i temafilen, hvis du ikke bryder dig om arvereglerne (hvis du f.eks. ikke ønsker, at totalerne skal være med fed i en tabel), på samme måde som du kan formatere de primære klasser.
+Da sekundære klasser arver fra de primære klasser, behøver du ikke at angive dem i temafilen. Du kan dog eksplicit formatere de sekundære klasser i temafilen, hvis du ikke bryder dig om arvereglerne (hvis du f.eks. ikke ønsker, at totalerne skal være med fed i en tabel), på samme måde som du kan formatere de primære klasser.
 
 Her er et eksempel på et tema, der kun angiver primære tekstklasser: 
 
@@ -341,7 +378,7 @@ Her er et eksempel på et tema, der kun angiver primære tekstklasser:
     }
 ```
 
-Hvis du vil oprette et udvidet JSON-filformat med mere detaljeret kontrol over den visuelle formatering, skal du også føje et afsnit af typen **visualStyles** til JSON-filen. Du indlejrer de formateringsspecifikke data i afsnittet **visualStyles**. Afsnittet **visualStyles** har et format, der svarer til følgende:
+Hvis du vil oprette et udvidet JSON-filformat med mere detaljeret kontrol over den visuelle formatering, skal du også føje et afsnit af typen **visualStyles** til JSON-filen for at indlejre detaljer om formateringen. Her er et eksempel på afsnittet **visualStyles**:
 
     visualStyles: {
         visualName: {
@@ -353,11 +390,11 @@ Hvis du vil oprette et udvidet JSON-filformat med mere detaljeret kontrol over d
         }
     }
 
-Du skal bruge en bestemt visual og et kortnavn til afsnittene **visualName** og **cardName**. **styleName** er i øjeblikket altid en stjerne ("*"), men i en kommende version kan du oprette forskellige formater til dine visuelle elementer og give dem navne (svarer til typografifunktionen for tabeller og matrixer). **propertyName** er navnet på den specifikke formateringsindstilling og **propertyValue** er der, hvor du vil indsætte, hvad formateringsindstillingen skal være.  
+Du skal bruge en bestemt visual og et kortnavn til afsnittene **visualName** og **cardName**. **styleName** er i øjeblikket altid en stjerne (*), men i en kommende version kan du oprette forskellige formater til dine visuelle elementer og give dem navne (svarer til typografifunktionen for tabeller og matrixer). **propertyName** er navnet på den specifikke formateringsindstilling og **propertyValue** er værdien for formateringsindstillingen.  
 
-For **visualName** og **cardName** kan du bruge en stjerne ("\*") i stedet for et bestemt visuelt element eller kortnavn, hvis indstillingen skal gælde for alle visuelle elementer eller kort, der har en egenskab. Hvis du bruger stjernen ("\*") for både det visuelle element og kortnavnet, anvender du en indstilling globalt i rapporten på effektiv vis, f.eks. skrifttypestørrelse eller en bestemt skrifttypefamilie for al tekst på tværs af alle visuelle elementer.
+Brug en stjerne i anførselstegn for **visualName** og **cardName**, hvis du vil have, at den pågældende indstilling gælder for alle visualiseringer eller kort med en egenskab. Hvis du bruger en stjerne for både visualiseringen og kortnavnet, anvender du en indstilling globalt i rapporten på effektiv vis, f.eks. skrifttypestørrelse eller en bestemt skrifttypefamilie for al tekst på tværs af alle visuelle elementer.
 
-Her er et eksempel på indstilling af nogle få egenskaber gennem typografier for visuelle elementer. 
+Her er et eksempel, der angiver nogle få egenskaber gennem typografier for visualiseringer: 
 
 ```json
 {  
@@ -392,12 +429,12 @@ Her er et eksempel på indstilling af nogle få egenskaber gennem typografier fo
 }
 ```
 
-Dette eksempel viser følgende:
+I dette eksempel angives følgende indstillinger:
 
-* Aktivering af tekstombrydning overalt.
-* Indstilling af gitterlinjetype til punkteret for alle visuelle elementer med en kategoriakse.
-* Angivelse af en formatering for de tilgængelige og anvendte filterkort (Bemærk formatet, der bruger "$id", til at angive de forskellige versioner af filterkortene).
-* Indstilling af boblestørrelsen for punktdiagrammer til -10.
+* Aktiverer tekstombrydning overalt.
+* Angiver gitterlinjetype til punkteret for alle visuelle elementer med en kategoriakse.
+* Angiver formatering for de tilgængelige og anvendte filterkort (bemærk formatet, der bruger "$id" til at angive de forskellige versioner af filterkortene).
+* Angiver boblestørrelsen for punktdiagrammer til -10.
 
 
 > [!NOTE]
@@ -406,9 +443,9 @@ Dette eksempel viser følgende:
 > 
 
 ### <a name="json-file-element-definitions"></a>Definitioner af JSON-filelementer
-Tabellerne i dette afsnit definerer navne til visuals (*visualName*), kortnavne (*cardName*) og de optællinger, der er nødvendige for at oprette din JSON-fil.
+Tabellerne i dette afsnit definerer navne til visuals (**visualName**), kortnavne (**cardName**) og de optællinger, der er nødvendige for at oprette din JSON-fil.
 
-| **visualName** |
+| visualName-værdier |
 | --- |
 | areaChart |
 | barChart |
@@ -442,9 +479,9 @@ Tabellerne i dette afsnit definerer navne til visuals (*visualName*), kortnavne 
 | treemap |
 | waterfallChart |
 
-I følgende tabel defineres værdier for *cardName*. Den første værdi i hver celle er JSON-filbetingelsen. Den anden værdi er navnet på kortet, som det ses på brugergrænsefladen i **Power BI Desktop**.
+I følgende tabel defineres værdier for **cardName**. Den første værdi i hver celle er JSON-filbetingelsen. Den anden værdi er navnet på kortet, som det ses på brugergrænsefladen i Power BI Desktop.
 
-| **cardName** |
+| cardName-værdier |
 | --- |
 | axis: Målerakse |
 | breakdown: Udspecificering |
@@ -501,13 +538,13 @@ I følgende tabel defineres værdier for *cardName*. Den første værdi i hver c
 ### <a name="properties-within-each-card"></a>Egenskaber i hvert kort
 I følgende afsnit defineres egenskaberne i hvert kort. Kortnavnet efterfølges af hvert egenskabsnavn. For hver egenskab vises et navn, hvis formateringsruden vises, med en beskrivelse af, hvad formateringsindstillingen gør, og typen af formateringsindstilling. På den måde kan du se, hvilken type værdier du kan bruge i temafilen. 
 
-Når du bruger **dateTime**, skal datoen være en ISO-dato i enkelte anførselstegn med dato/klokkeslæt i begyndelsen. Følgende er et eksempel:
+Når du bruger **dateTime**, skal datoen være en ISO-dato i enkelte anførselstegn med dato/klokkeslæt i begyndelsen. Se følgende eksempel:
 
     “datetime’2011-10-05T14:48:00.000Z’”
 
 Booleske værdier er enten true eller false. Strenge skal være i dobbelte anførselstegn, som i "dette er en streng". Tal er blot selve værdien, ikke i anførselstegn.
 
-Farver skal bruge følgende format, hvor den brugerdefinerede hexkode står i stedet for "FFFFFF" i det følgende eksempel.  
+Farver skal bruge følgende format, hvor den brugerdefinerede hexadecimale kode erstatter "FFFFFF" i det følgende eksempel:  
 
     { "solid": { "color": "#FFFFFF" } }
 

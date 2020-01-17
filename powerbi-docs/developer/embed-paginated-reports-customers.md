@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 11/04/2019
-ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/04/2019
+ms.openlocfilehash: 48aae2391ead5ded0860364ce5942d7bd725c2d9
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74311440"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731237"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder (prøveversion)
 
@@ -271,6 +271,12 @@ Hvis du vil se et komplet eksempel, hvor JavaScript API'en bruges, kan du bruge 
 
 ## <a name="next-steps"></a>Næste trin
 
-I dette selvstudium har du lært, hvordan du integrerer sideinddelte Power BI-rapporter i et program til dine kunder. Du kan også prøve at integrere Power BI-indhold til din organisation.
+I dette selvstudium har du lært, hvordan du integrerer sideinddelte Power BI-rapporter i et program til dine kunder. Du kan også prøve at integrere Power BI-indhold til dine kunder eller din organisation.
+
+> [!div class="nextstepaction"]
+>[Integrer indhold til dine kunder](embed-sample-for-customers.md)
+
+> [!div class="nextstepaction"]
+>[Integrer indhold til din organisation](embed-sample-for-your-organization.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
