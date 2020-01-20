@@ -1,20 +1,20 @@
 ---
 title: Dashboard-dataklassificering
 description: Få mere at vide om dashboard-dataklassificering, herunder hvordan en administrator skal konfigurere det, og hvordan dashboard-ejere kan ændre klassificeringen.
-author: amandacofsky
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/10/2017
-ms.author: amac
+ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 421c587c96563784d84500ba9ba06a41ed5cdade
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b9aeb033586eaf5c0effd838626af6c877080f64
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872756"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925727"
 ---
 # <a name="dashboard-data-classification"></a>Dashboard-dataklassificering
 Hvert dashboard er forskelligt, og afhængigt af den datakilde, du opretter forbindelse til, opdager du sandsynligvis, at du og de kollegaer, du deler med, skal tage forskellige forholdsregler, afhængigt af dataenes følsomhed. Nogle dashboards skal aldrig deles med personer uden for dit firma, eller udskrives, mens andre frit kan deles. Ved at bruge dashboard-dataklassifikation kan du øge bevidstheden hos dem, der ser dine dashboards, om, hvilket sikkerhedsniveau, der skal bruges. Du kan mærke dine dashboards med klassificeringer, der er defineret af din virksomheds it-afdeling, så alle, der ser indholdet, har samme forståelse af dataenes følsomhed.
@@ -62,7 +62,7 @@ Dataklassificering er konfigureret af den globale administrator i din organisati
 1. Vælg tandhjulsikonet for Indstillinger, og vælg **Administrationsportal**.
    
     ![](media/service-data-classification/admin_portal_in_settings.png)
-2. Slå **Dataklassificering for dashboards og rapporter** *Til* på fanen **Lejerindstillinger**.
+2. Slå **Dataklassificering for dashboards og rapporter***Til* på fanen **Lejerindstillinger**.
    
     ![](media/service-data-classification/data_classification_switch_location.png)
 

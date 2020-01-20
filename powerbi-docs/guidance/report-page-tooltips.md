@@ -1,5 +1,5 @@
 ---
-title: Udvidelse af visualiseringer med værktøjstip til rapportsider
+title: Udvid visualiseringer med værktøjstip til rapportsider
 description: Vejledning til arbejde med værktøjstip for rapportsider.
 author: peter-myers
 ms.reviewer: asaxton
@@ -8,14 +8,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 95cf62057cdea001a438f4555aa3384c54efe4b5
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 826af7b224b901b6dc9f3926260b1d920836a792
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75221936"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76040343"
 ---
-# <a name="extending-visuals-with-report-page-tooltips"></a>Udvidelse af visualiseringer med værktøjstip til rapportsider
+# <a name="extend-visuals-with-report-page-tooltips"></a>Udvid visualiseringer med værktøjstip til rapportsider
 
 Denne artikel henvender sig til rapportforfattere, der designer Power BI-rapporter. Den indeholder forslag og anbefalinger til oprettelse af [værktøjstip til rapportsider](../desktop-tooltips.md).
 
@@ -24,7 +24,7 @@ Denne artikel henvender sig til rapportforfattere, der designer Power BI-rapport
 Værktøjstippene til rapportsiden kan forbedre oplevelsen for dine rapportbrugere. Sideværktøjstip gør det muligt for rapportbrugerne hurtigt og effektivt at få dybere indsigt fra et visual. De kan knyttes til forskellige rapportobjekter:
 
 - **Visuals:** Du kan for hvert visual konfigurere, hvilke visuals der skal vise sideværktøjstippet. Det er muligt for hvert visual at få vist ingen værktøjstip, visualværktøjstip (standard og konfigureret i ruden med visualfelter) eller et bestemt sideværktøjstip.
-- **Visuel overskrift:** Du kan konfigurere bestemte visuals til at vise et sideværktøjstip. Rapportbrugerne kan se værktøjstippet til siden, når de holder markøren over ikonet for den visuelle overskrift. Sørg for at fortælle dine brugere om dette ikon.
+- **Visualheadere:** Du kan konfigurere bestemte visuals til at vise et sideværktøjstip. Rapportbrugerne kan se værktøjstippet til siden, når de holder markøren over ikonet for visuaheaderen. Sørg for at fortælle dine brugere om dette ikon.
 
 > [!NOTE]
 > Et rapportvisual kan kun vise et sideværktøjstip, når filtrene for værktøjstipsiden er kompatible med visualdesignet. Et visual, der grupperer efter _produkt_, er f. eks. kompatibelt med en værktøjstipside, der filtrerer efter _produkt_.
@@ -61,13 +61,13 @@ Der bliver vist et sideværktøjstip. Det viser bestemte attributter og statisti
 
 ### <a name="add-help"></a>Tilføj Hjælp
 
-Visuelle overskrifter kan konfigureres til at vise sideværktøjstip til visuelle overskrifter. Du kan føje Hjælp-dokumentation til et sideværktøjstip ved hjælp af RTF-formaterede tekstfelter. Det er også muligt at tilføje billeder og figurer.
+Visualheadere kan konfigureres til at vise sideværktøjstip til visualheadere. Du kan føje Hjælp-dokumentation til et sideværktøjstip ved hjælp af RTF-formaterede tekstfelter. Det er også muligt at tilføje billeder og figurer.
 
-Der kan også vises sideværktøjstip til visuelle overskrifter for knapper, billeder, tekstfelter og figurer.
+Der kan også vises sideværktøjstip til visualheadere i knapper, billeder, tekstfelter og figurer.
 
 I følgende eksempel kan du se, hvad der sker, når rapportbrugeren holder markøren over [ikonet for den visuelle overskrift](../desktop-visual-elements-for-reports.md).
 
-![En rapportbruger holder markøren over ikonet for den visuelle overskrift (ikonet med spørgsmålstegnet). Der vises et RTF-formateret værktøjstip.](media/report-page-tooltips/suggestion-add-help.png)
+![En rapportbruger holder markøren over ikonet for visualheaderen (ikonet med spørgsmålstegnet). Der vises et RTF-formateret værktøjstip.](media/report-page-tooltips/suggestion-add-help.png)
 
 Der bliver vist et sideværktøjstip. Den viser RTF-tekst i fire tekstfelter og en figur (linje). Sideværktøjstippet gengiver hjælp ved at beskrive hvert enkelt akronym, der vises i visualiseringen.
 

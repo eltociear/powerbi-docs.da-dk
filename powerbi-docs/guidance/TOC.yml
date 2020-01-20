@@ -26,11 +26,11 @@
               href: star-schema.md
             - name: Reducer størrelse på datamodel
               href: import-modeling-data-reduction.md
-            - name: Vejledning til automatisk dato/klokkeslæt i Power BI Desktop
+            - name: Vejledning til automatisk dato og klokkeslæt
               href: auto-date-time.md
             - name: Vejledning til mange-til-mange-relation
               href: relationships-many-to-many.md
-            - name: Vejledning til DirectQuery-model i Power BI Desktop
+            - name: Vejledning til DirectQuery-model
               href: directquery-model-guidance.md
         - name: DAX
           items:
@@ -58,9 +58,11 @@
               href: report-drillthrough.md
             - name: Her skal du bruge sideinddelte rapporter i Power BI
               href: report-paginated-or-power-bi.md
+            - name: Anvend overlappende parametre i sideinddelte rapporter
+              href: paginated-report-cascading-parameter.md
             - name: Undgå tomme sider ved udskrivning af sideinddelte rapporter
               href: report-paginated-blank-page.md
-            - name: Overfør SQL Server Reporting Services-rapporter til Power BI
+            - name: Overfør SSRS-rapporter til Power BI
               href: migrate-ssrs-reports-to-power-bi.md
     - name: Hvidbøger
       items:
