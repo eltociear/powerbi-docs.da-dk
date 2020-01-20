@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4125ff59f32de8453fe131685f0a05e1c45220c3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: c6987c5849fd2f971c1d7bdc7fe6130dcd09ce59
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "73876542"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761720"
 ---
 # <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Opret forbindelse til Azure Consumption Insights-data i Power BI Desktop
 
@@ -192,13 +192,13 @@ Kolonnerne og navnene på oplysninger på Azure Portal svarer til dem i API'en o
 | ConsumedServiceId |consumedServiceId | |Ja |
 | Cost |cost |ExtendedCost |Nej |
 | Omkostningssted |costCenter |Omkostningssted |Nej |
-| Dato |date |Dato |Nej |
+| Dato |dato |Dato |Nej |
 | Dag | |Dag |Nej |
 | DepartmentName |departmentName |Navn på afdeling |Nej |
 | DepartmentID |departmentId | |Ja |
 | Forekomst-id | | |Ja |
 | InstanceId |instanceId |Forekomst-id |Nej |
-| Location | | |Ja |
+| Placering | | |Ja |
 | Målerkategori |meterCategory |Målerkategori |Nej |
 | Måler-id | | |Ja |
 | Målernavn |meterName |Målernavn |Nej |
@@ -221,7 +221,7 @@ Kolonnerne og navnene på oplysninger på Azure Portal svarer til dem i API'en o
 | Store Service-id |storeServiceIdentifier |Store Service-id |Nej |
 | StoreServiceIdentifierId | | |Ja |
 | Navn på abonnement |subscriptionName |Navn på abonnement |Nej |
-| Mærker |tags |Mærker |Nej |
+| Tags |tags |Tags |Nej |
 | TagsId | | |Ja |
 | Måleenhed |unitOfMeasure |Måleenhed |Nej |
 | År | |År |Nej |

@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3da18269817ef89dfff9524c8875814430bc6cce
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b90bfd9482e28faa8d9dfb0d089ca07656663b53
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874430"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762456"
 ---
-# <a name="text-boxes-and-shapes-in-power-bi-reports"></a>Tekstfelter og figurer i Power BI-rapporter
+# <a name="add-text-boxes-and-shapes-to-power-bi-reports"></a>Tilføj tekstfelter og figurer i Power BI-rapporter
 Du kan føje tekstfelter og figurer til rapporter ved hjælp af Power BI-tjenesten og Power BI Desktop. I begge tilfælde skal du have redigeringstilladelser til rapporten. Hvis en rapport er blevet delt med dig i Power BI-tjenesten, har du ikke redigeringstilladelser. 
 
 Se med, når Will bruger Power BI Desktop til at [føje statiske billeder til en rapport](/learn/modules/visuals-in-power-bi/12-formatting), og følg derefter nedenstående trin for at prøve det selv ved hjælp af Power BI-tjenesten i stedet.

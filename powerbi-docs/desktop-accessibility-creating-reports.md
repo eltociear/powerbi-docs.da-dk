@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4686b15e04d3724256c76d7ba27a125cb04e86b3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 50a5705f5e236dc326f4c2b33716e55f6a9f7ce5
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878976"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761973"
 ---
-# <a name="creating-accessible-reports-in-power-bi"></a>Oprettelse af tilgængelige rapporter i Power BI
+# <a name="design-power-bi-reports-for-accessibility"></a>Design tilgængelige Power BI-rapporter
 Du kan designe og oprette flotte rapporter og samtidig have øje for tilgængelighed. Når du opbygger en rapport, bør du oprette den, så den kan bruges af så mange personer som muligt, uanset hvem din målgruppe er, uden at det er nødvendigt at tilpasse den til en slags specialdesign.
 
 ![Indstillinger for stor kontrast](media/desktop-accessibility/accessibility-05.png)
@@ -233,7 +233,7 @@ Ud over at levere tilgængelighedsværktøjer og -funktionalitet indeholder Powe
 * Brug ikke værktøjstip til at formidle vigtige oplysninger. Brugere med motoriske problemer og brugere, der ikke bruger en mus, vil have svært ved at tilgå dem.
 * Det er en god idé at føje værktøjstip til diagrammer som supplerende oplysninger. Det er inkluderet i den tilgængelige tabel **Vis data** for hver visualisering.
 
-### <a name="video"></a>video
+### <a name="video"></a>Video
 * Undgå video, der starter automatisk, når siden gengives.
 * Sørg for, at din video indeholder undertekster eller en afskrift.
 

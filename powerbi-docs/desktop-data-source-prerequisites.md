@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 515c695125cd0702389a951cb5c4acffdd7aac41
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d118cae8cd4b6fbd95066b15819b1e798c8bbe0f
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73868602"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761312"
 ---
 # <a name="power-bi-data-source-prerequisites"></a>Forudsætninger for Power BI-datakilder
 For hver dataprovider understøtter Power BI en bestemt providerversion på objekter. Du kan finde flere oplysninger om de tilgængelige datakilder til Power BI under [Datakilder](desktop-data-sources.md). I nedenstående tabel beskrives disse krav.
@@ -22,7 +22,7 @@ For hver dataprovider understøtter Power BI en bestemt providerversion på obje
 | Datakilde | Provider | Mindste providerversion | Mindste datakildeversion | Understøttede datakildeobjekter | Downloadlink |
 | --- | --- | --- | --- | --- | --- |
 | SQL Server |ADO.net (indbygget i .Net Framework) |.NET Framework 3.5 (kun) |SQL Server 2005 eller nyere |Tabeller/visninger, skalarfunktioner, tabelfunktioner |Inkluderet i .NET Framework 3.5 eller nyere |
-| Access |Microsoft Access Database Engine (ACE) |ACE 2010 SP1 |Ingen begrænsning |Tabeller/visninger |[Downloadlink](https://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |
+| Adgang |Microsoft Access Database Engine (ACE) |ACE 2010 SP1 |Ingen begrænsning |Tabeller/visninger |[Downloadlink](https://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |
 | Excel (kun .xls-filer) (se note 1) |Microsoft Access Database Engine (ACE) |ACE 2010 SP1 |Ingen begrænsning |Tabeller, ark |[Downloadlink](https://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |
 | Oracle (se note 2) |ODP.NET |ODAC 11.2 version 5 (11.2.0.3.20) |9.x eller nyere |Tabeller/visninger |[Downloadlink](https://go.microsoft.com/fwlink/?linkid=272376&clcid=0x409) |
 | | System.Data.OracleClient (indbygget i .NET Framework) |.NET Framework 3.5 |9.x eller nyere |Tabeller/visninger |Inkluderet i .NET Framework 3.5 eller nyere |

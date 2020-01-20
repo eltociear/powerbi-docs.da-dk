@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 31e2e681bc4309e5dce31583e70e669bce5e466f
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 3e6de89f66d6f6282fcde25a1d2be445e2721817
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877246"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762180"
 ---
 # <a name="link-entities-between-dataflows-in-power-bi"></a>Link objekter mellem dataflow i Power BI
 
@@ -81,6 +81,7 @@ Der er nogle få begrænsninger, som du skal være opmærksom på, når du arbej
 * Cykliske afhængigheder af sammenkædede objekter er ikke tilladt
 * Dataflowet skal være placeret i et [nyt Power BI-arbejdsområde](service-create-the-new-workspaces.md)
 * Et linket objekt kan ikke joinforbindes med et almindeligt objekt, der får sine data fra en datakilde i det lokale miljø
+* Når en forespørgsel (f.eks. forespørgsel A) bruges i beregningen af en anden forespørgsel (forespørgsel B) i dataflows, bliver forespørgsel B en beregnet enhed. Beregnede enheder kan ikke referere til kilder i det lokale miljø.
 
 
 ## <a name="next-steps"></a>Næste trin

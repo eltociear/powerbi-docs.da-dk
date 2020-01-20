@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: be45941e67417cbed15433405953cf728fe0aa8d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 2d564b22ecf02c0d8593ed5676e46f2eb4168964
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876918"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75836709"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
@@ -46,7 +46,7 @@ Hvis du vil føje et filter for URL-adresse til en rapport i en app, er formater
 
 Som i dette eksempel:
 
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*&'ctid=*ctid*
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*'&ctid=*ctid*
 
 ### <a name="field-types"></a>Felttyper
 
@@ -107,7 +107,7 @@ Power BI understøtter mange operatorer ud over "**and**". I nedenstående tabel
 |operator  | definition | streng  | tal | Dato |  Eksempel|
 |---------|---------|---------|---------|---------|---------|
 |**and**     | og |  ja      | ja |  ja|  produkt/pris le 200 and pris gt 3,5 |
-|**eq**     | lig med |  ja      | ja   |  ja       | Adresse/By eq 'Redmond' |
+|**eq**     | er lig med |  ja      | ja   |  ja       | Adresse/By eq 'Redmond' |
 |**ne**     | ikke lig med |   ja      | ja  | ja        |  Adresse/By ne 'London' |
 |**ge**     |  større end eller lig med       | nej | ja |ja |  produkt/pris ge 10
 |**gt**     | større end        |nej | ja | ja  | produkt/pris gt 20

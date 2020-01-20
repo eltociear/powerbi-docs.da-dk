@@ -6,18 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/22/2019
+ms.date: 01/08/2020
 ms.author: kfollis
-ms.openlocfilehash: be7f95b2bbbd6e5e6314c7fd57869a30c176746c
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.openlocfilehash: 2578f8621140a64b85e6765d80d860c1489a5900
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74958488"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762548"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-datakilder
 
 Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæt, herunder oplysninger om DirectQuery og datagatewayen i det lokale miljø. Du kan finde oplysninger om dataflow under [Opret forbindelse til datakilder for Power BI-dataflow](service-dataflows-data-sources.md).
+
+> [!NOTE]
+> Der er mange dataconnectors til Power BI Desktop, der kræver Internet Explorer 10 (eller nyere) til godkendelse. 
+
 
 | Datakilde | Opret forbindelse fra skrivebord | Opret forbindelse og opdater fra tjenesten | DirectQuery/direkte forbindelse | Gateway (understøttes) | Gateway (påkrævet) |
 |---|---|---|---|---|---|---|---|
@@ -33,7 +37,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Azure Cost Management | Ja | Ja | Nej | Nej | Nej |
 | Azure Data Explorer (kusto) | Ja | Ja | Ja | Nej | Nej |
 | Azure Data Lake Storage Gen1 | Ja | Ja | Nej | Nej | Nej |
-| Azure Data Lake Storage Gen2 | Ja | Ja | Nej | Nej | Nej |
+| Azure Data Lake Storage Gen2 | Ja | Ja | Nej | Ja | Nej |
 | Azure DevOps | Ja | Ja | Nej | Nej | Nej |
 | Azure DevOps Server | Ja | Ja | Nej | Ja | Ja |
 | Azure HDInsight (HDFS) | Ja | Ja | Nej | Nej | Nej |
@@ -65,8 +69,8 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Google BigQuery | Ja | Ja | Nej | Nej | Nej |
 | Hadoop File (HDFS) | Ja | Nej | Nej | Nej | Nej |
 | Interaktiv HDInsight-forespørgsel | Ja | Ja | Ja | Nej | Nej |
-| IBM DB2 | Ja | Ja | Ja | Ja | Ja |
-| IBM Informix Database | Ja | Ja | Nej | Ja | Ja |
+| IBM DB2 | Ja | Ja | Ja | Ja | Nej |
+| IBM Informix Database | Ja | Ja | Nej | Ja | Nej |
 | IBM Netezza | Ja | Ja | Ja | Ja | Ja |
 | Impala | Ja | Ja | Ja | Ja | Ja |
 | Indexima | Ja | Ja | Ja | Ja | Ja |
@@ -95,7 +99,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Planview Enterprise One – CTM | Ja | Ja | Nej | Nej | Nej |
 | Planview Enterprise One – PRM | Ja | Ja | Nej | Nej | Nej |
 | Planview Projectplace | Ja | Ja | Nej | Nej | Nej |
-| PostgreSQL | Ja | Ja | Ja | Ja | Ja |
+| PostgreSQL | Ja | Ja | Ja | Ja | Nej |
 | Power BI-dataflow | Ja | Ja | Nej | Nej | Nej |
 | Power BI-datasæt | Ja | Ja | Ja | Nej | Nej |
 | Dataflow for Power Platform | Ja | Ja | Nej | Nej | Nej |
@@ -114,7 +118,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | SharePoint-liste | Ja | Ja | Nej | Ja | Nej <sup>4</sup> |
 | SharePoint Online-liste | Ja | Ja | Nej | Ja <sup>2</sup> | Nej |
 | Smartsheet | Ja | Ja | Nej | Nej | Nej |
-| Snowflake | Ja | Ja | Ja | Ja | Ja |
+| Snowflake | Ja | Ja | Ja | Ja | Nej |
 | Spark | Ja | Ja | Ja | Ja | Nej |
 | SparkPost | Ja | Ja | Nej | Nej | Nej |
 | SQL Server | Ja | Ja | Ja | Ja | Ja |

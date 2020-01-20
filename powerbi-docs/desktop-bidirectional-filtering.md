@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e0b6f3017b69540ea2a95280ceadfe7a05a9c474
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8aeae0075ed32a832c27f475ef3786b7df76576c
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878730"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761766"
 ---
-# <a name="bidirectional-cross-filtering-using-directquery-in-power-bi-desktop"></a>Tovejskrydsfiltrering ved hjælp af DirectQuery i Power BI Desktop
+# <a name="enable-bidirectional-cross-filtering-for-directquery-in-power-bi-desktop"></a>Aktivér tovejskrydsfiltrering for DirectQuery i Power BI Desktop
 
 Når tabeller filtreres for at give den relevante visning af data, står dem, der opretter rapporter og arbejder med data, over for udfordringer, når de skal fastlægge, hvordan filtrering anvendes på en rapport. Filteret blev kun anvendt på en tabel på den ene side af relationen, men ikke den anden, hvilket ofte krævede komplekse DAX-formler for at opnå de ønskede resultater.
 

@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5af9c2e5979121054e51b928c58f49477c19a7d0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4d478396f88a1443c0d23d64199d84f0b615b1da
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878814"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761812"
 ---
-# <a name="assume-referential-integrity-settings-in-power-bi-desktop"></a>Indstillinger for Antag referentiel integritet i Power BI Desktop
+# <a name="apply-the-assume-referential-integrity-setting-in-power-bi-desktop"></a>Anvend indstillingen Antag referentiel integritet i Power BI Desktop
 Når der oprettes forbindelse til en datakilde, der bruger **DirectQuery**, kan du bruge indstillingen **Antag referentiel integritet** for at gøre det muligt at køre mere effektive forespørgsler i forhold til datakilden. Denne funktion har et par krav til de underliggende data, og den er kun tilgængelig, når du bruger **DirectQuery**.
 
 Hvis du angiver **Antag referentiel integritet**, kan forespørgsler til datakilden bruge **INNER JOIN**-sætninger i stedet **OUTER JOIN**, hvilket betyder, at forespørgslen bliver mere effektiv.
@@ -29,7 +29,7 @@ Det er en avanceret indstilling, og den er kun aktiveret, når der oprettes forb
 * Dataene i kolonnen **From** i relationen er aldrig *Null* eller *tomme*
 * For hver værdi i kolonnen **From**, findes der en tilsvarende værdi i kolonnen **To**
 
-I denne kontekst er kolonnen **From** *mange*-siden i en *en til mange*-relation, eller det er kolonnen i den første tabel i en *en til en*-relation.
+I denne kontekst er kolonnen **From***mange*-siden i en *en til mange*-relation, eller det er kolonnen i den første tabel i en *en til en*-relation.
 
 ## <a name="example-of-using-assume-referential-integrity"></a>Eksempel på brug af Antag referentiel integritet
 I følgende eksempel vises, hvordan **Antag referentiel integritet** fungerer, når det bruges i dataforbindelser. I eksemplet oprettes der forbindelse til en datakilde, der indeholder tabellen**Orders**, tabellen **Products** og tabellen **Depots**.
@@ -37,10 +37,10 @@ I følgende eksempel vises, hvordan **Antag referentiel integritet** fungerer, n
 1. På følgende billede, der viser tabellen **Orders** og tabellen **Products**, skal du lægge mærke til, at der findes en referentiel integritet mellem **Orders[ProductID]** og **Products[ProductID]** . Kolonnen **[ProductID]** i tabellen **Orders** er aldrig *Null*, og alle værdier vises også i tabellen **Products**. Derfor skal **Antag referentiel integritet**  angives for at få mere effektive forespørgsler (brug af denne indstilling ændrer ikke de værdier, der vises i visuelle elementer).
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
-2. På næste billede kan du se, at der ikke findes referentiel integritet mellem tabellen **Orders[DepotID]** og **Depots[DepotID]** , fordi **DepotID** er *Null* for nogle *Orders*. Derfor skal **Antag referentiel integritet** *ikke* angives.
+2. På næste billede kan du se, at der ikke findes referentiel integritet mellem tabellen **Orders[DepotID]** og **Depots[DepotID]** , fordi **DepotID** er *Null* for nogle *Orders*. Derfor skal **Antag referentiel integritet***ikke* angives.
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
-3. Endelig findes der ingen referentiel integritet mellem **Orders[CustomerID]** og **Customers[CustID]** i følgende tabeller. **CustomerID** indeholder nogle værdier (i dette tilfælde *CustX*), der ikke findes i tabellen *Customers*. Derfor skal **Antag referentiel integritet** *ikke* angives.
+3. Endelig findes der ingen referentiel integritet mellem **Orders[CustomerID]** og **Customers[CustID]** i følgende tabeller. **CustomerID** indeholder nogle værdier (i dette tilfælde *CustX*), der ikke findes i tabellen *Customers*. Derfor skal **Antag referentiel integritet***ikke* angives.
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_4.png)
 

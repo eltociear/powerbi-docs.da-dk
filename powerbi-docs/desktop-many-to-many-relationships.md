@@ -6,136 +6,135 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/13/2019
+ms.date: 12/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 578d5f77753884575111b3247f5aa4d3ae79e179
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7452879e47cd4b058fcdb3e08f0ded35a85da1aa
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73866826"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761059"
 ---
-# <a name="relationships-with-a-many-many-cardinality-in-power-bi-desktop"></a>Relationer med en mange til mange-kardinalitet i Power BI Desktop
+# <a name="apply-many-many-relationships-in-power-bi-desktop"></a>Anvend mange til mange-relationer i Power BI Desktop
 
-Med funktionen *Relationer med en mange til mange-kardinalitet* i Power BI Desktop kan du joinforbinde tabeller, der bruger en kardinalitet på *Mange til mange*. Du kan nemmere og mere intuitivt oprette datamodeller, der indeholder to eller flere datakilder. Funktionen *Relationer med en mange til mange-kardinalitet* er en del af den mere omfattende funktionalitet til *sammensatte modeller* i Power BI Desktop.
+Med *relationer med en mange til mange-kardinalitet* i Power BI Desktop kan du joinforbinde tabeller, der bruger en kardinalitet på *mange til mange*. Du kan nemmere og mere intuitivt oprette datamodeller, der indeholder to eller flere datakilder. *Relationer med en mange til mange-kardinalitet* er en del af den mere omfattende funktionalitet til *sammensatte modeller* i Power BI Desktop.
 
-![En mange til mange-relation i ruden "Rediger relation"](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
+![En mange til mange-relation i ruden "Rediger relation", Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
 
-Funktionaliteten *Relationer med en mange til mange-kardinalitet* i Power BI Desktop er en del af tre relaterede funktioner:
+En *relation med en mange til mange-kardinalitet* i Power BI Desktop består af en del af tre relaterede funktioner:
 
-* **Sammensatte modeller**: Gør det muligt for en rapport at have to eller flere dataforbindelser, herunder DirectQuery-forbindelser eller Import, i en hvilken som helst kombination. Du kan finde flere oplysninger under [Sammensatte modeller i Power BI Desktop](desktop-composite-models.md).
+* **Sammensatte modeller**: En *sammensat model* gør det muligt for en rapport at have to eller flere dataforbindelser, herunder DirectQuery-forbindelser eller Import, i en hvilken som helst kombination. Du kan finde flere oplysninger under [Brug sammensatte modeller i Power BI Desktop](desktop-composite-models.md).
 
-* **Relationer med en mange til mange-kardinalitet**: Via *sammensatte modeller* kan du oprette *relationer med en mange til mange-kardinalitet* mellem tabeller. Med denne tilgang fjernes kravene for entydige værdier i tabeller. Tidligere midlertidige løsninger, f.eks. introduktion af nye tabeller kun for at oprette relationer, fjernes også. Funktionen er beskrevet nærmere i denne artikel.
+* **Relationer med en mange til mange-kardinalitet**: Via sammensatte modeller kan du oprette *relationer med en mange til mange-kardinalitet* mellem tabeller. Med denne tilgang fjernes kravene for entydige værdier i tabeller. Tidligere midlertidige løsninger, f.eks. introduktion af nye tabeller kun for at oprette relationer, fjernes også. Funktionen er beskrevet nærmere i denne artikel.
 
-* **Lagringstilstand**: Du kan nu angive, hvilke visualiseringer der kræver en forespørgsel til back end-datakilder. Visuelle elementer, der ikke kræver en forespørgsel, importeres, også selvom de er baseret på DirectQuery. Denne funktion hjælper med at forbedre ydeevnen og reducere belastningen af back-end. Tidligere startede selv enkle visualiseringer (f.eks. udsnit) forespørgsler, der blev sendt til back end-kilderne. Du kan finde flere oplysninger i [Lagringstilstand i Power BI Desktop (prøveversion)](desktop-storage-mode.md).
+* **Lagringstilstand**: Du kan nu angive, hvilke visualiseringer der kræver en forespørgsel til back end-datakilder. Visuelle elementer, der ikke kræver en forespørgsel, importeres, også selvom de er baseret på DirectQuery. Denne funktion hjælper med at forbedre ydeevnen og reducere belastningen af back-end. Tidligere startede selv enkle visualiseringer, som f.eks. udsnit, forespørgsler, der blev sendt til back end-kilderne. Du kan finde flere oplysninger i [Lagringstilstand i Power BI Desktop](desktop-storage-mode.md).
 
-## <a name="what-relationships-with-a-many-many-cardinality-solves"></a>Hvad *relationer med en mange til mange-kardinalitet* løser
+## <a name="what-a-relationship-with-a-many-many-cardinality-solves"></a>Hvad en relation med en mange til mange-kardinalitet løser
 
-Før funktionen *Relationer med en mange til mange-kardinalitet* blev tilgængelig, var relationen mellem to tabeller defineret i Power BI. Mindst en af tabelkolonnerne i relationen skulle indeholde entydige værdier. Men ofte indeholdt ingen af kolonnerne entydige værdier. 
+Før *relationer med en mange til mange-kardinalitet* blev tilgængelig, var relationen mellem to tabeller defineret i Power BI. Mindst en af tabelkolonnerne i relationen skulle indeholde entydige værdier. Men ofte indeholdt ingen af kolonnerne entydige værdier.
 
-To tabeller kunne f.eks. have en kolonne med mærkaten *Country*, men værdierne for *Country* var ikke entydige i nogen af tabellerne. Det var nødvendigt at oprette en midlertidig løsning for at joinforbinde sådanne tabeller. En sådan midlertidig løsning kunne være at introducere flere tabeller med de nødvendige entydige værdier i modellen. Med funktionen *Relationer med en mange til mange-kardinalitet* kan du joinforbinde sådanne tabeller direkte ved hjælp af en relation med en kardinalitet på **Mange til mange**.  
+To tabeller kan f.eks. have en kolonne med navnet Land. Værdierne i kolonnen Land var dog ikke entydige i nogen af tabellerne. Du skulle oprette en midlertidig løsning for at joinforbinde sådanne tabeller. Det kan være en midlertidig løsning at oprette ekstra tabeller med de nødvendige entydige værdier. Med *relationer med en mange til mange-kardinalitet* kan du forbinde sådanne tabeller direkte ved hjælp af en relation med en kardinalitet på *mange til mange*.
 
-## <a name="use-relationships-with-a-many-many-cardinality"></a>Brug *relationer med en mange til mange-kardinalitet*
+## <a name="use-relationships-with-a-many-many-cardinality"></a>Brug relationer med en mange til mange-kardinalitet
 
-Når du definerer en relation mellem to tabeller i Power BI, skal du definere kardinaliteten af relationen. Relationen mellem *ProductSales* og *Product* &mdash; ved hjælp af kolonnerne *ProductSales[ProductCode]* og *Product[ProductCode]* &mdash; ville f.eks. defineres som *Mange-1*. Vi definerer relationen på denne måde, fordi der er mange salg for hvert produkt, og kolonnen i tabellen *Product* *(ProductCode)* er entydig. Når du definerer en relations kardinalitet som *Mange-1*, *1-Mange* eller *1-1*, validerer Power BI den for at sikre, at den valgte kardinalitet stemmer overens med de faktiske data.
+Når du definerer en relation mellem to tabeller i Power BI, skal du definere kardinaliteten af relationen. Relationen mellem ProductSales og Product&mdash;ved hjælp af kolonnerne ProductSales[ProductCode] og Product[ProductCode]&mdash;ville f.eks. defineres som *Mange-1*. Vi definerer relationen på denne måde, fordi hvert produkt har mange salg, og kolonnen i tabellen Product(ProductCode) er entydig. Når du definerer en relations kardinalitet som *Mange-1*, *1-Mange* eller *1-1*, validerer Power BI den, så den valgte kardinalitet stemmer overens med de faktiske data.
 
-Se f.eks. nærmere på den enkle model på følgende billede:
+Se f.eks. nærmere på den enkle model på dette billede:
 
-![Relationsvisning](media/desktop-many-to-many-relationships/many-to-many-relationships_02.png)
+![Tabellen ProductSales og Product, visningen Relationer, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_02.png)
 
-Forestil dig nu, at der kun vises to rækker i tabellen *Product*, som vist:
+Forestil dig nu, at der kun vises to rækker i tabellen **Product**, som vist:
 
-![Visualisering af tabellen Produkt med to rækker](media/desktop-many-to-many-relationships/many-to-many-relationships_03.png)
+![Visualisering af tabellen Product med to rækker, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_03.png)
 
-Forestil dig også, at der kun er fire rækker i tabellen *Sales*, herunder en række for produkt C. På grund af et problem med referentiel integritet eksisterer rækken for produkt C ikke i tabellen *Product*.
+Forestil dig også, at der kun er fire rækker i tabellen Sales, herunder en række for produkt C. På grund af et problem med referentiel integritet eksisterer rækken for produkt C ikke i tabellen **Product**.
 
-![Visualisering af tabellen Sales med fire rækker](media/desktop-many-to-many-relationships/many-to-many-relationships_04.png)
+![Visualisering af tabellen Sales med fire rækker, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_04.png)
 
-*ProductName* og *Price* (fra tabellen *Product*) samt totalen af *Qty* for hvert produkt (fra tabellen *ProductSales*) ville blive vist på følgende måde: 
+**ProductName** og **Price** (fra tabellen **Product**) samt totalen af **Qty** for hvert produkt (fra tabellen ProductSales) ville blive vist på følgende måde:
 
-![Visualisering med visning af produktnavn, pris og antal](media/desktop-many-to-many-relationships/many-to-many-relationships_05.png)
+![Visualisering med visning af produktnavn, pris og antal, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_05.png)
 
-Som du kan se på foregående billede, er der en tom række med navnet *ProductName*, som er knyttet til salg for produkt C. Denne tomme række står for følgende:
+Som du kan se på foregående billede, er en tom række med navnet **ProductName** knyttet til salg for produkt C. Denne tomme række står for følgende:
 
-* Alle rækker i tabellen *ProductSales*, hvor der ikke findes nogen tilsvarende række i tabellen *Product*. Vi kan se, at der er et problem med referentiel integritet for produkt *C* i dette eksempel.
+* Alle rækker i tabellen **ProductSales**, hvor der ikke findes nogen tilsvarende række i tabellen **Product**. Vi kan se, at der er et problem med referentiel integritet for produkt C i dette eksempel.
 
-* Alle rækker i tabellen *ProductSales*, hvor kolonnen med den fremmede nøgle er null. 
+* Alle rækker i tabellen **ProductSales**, hvor kolonnen med den fremmede nøgle er null.
 
-Af disse årsager står den tomme række for de salg, hvor *ProductName* og *Price* er ukendt.
+Af disse årsager står den tomme række for de salg, hvor **ProductName** og **Price** er ukendt.
 
-Nogle gange sker der det, at tabellerne er joinforbundet af to kolonner, men ingen af kolonnerne er entydige. Du kan f.eks. overveje følgende to tabeller:
+Nogle gange er tabellerne joinforbundet af to kolonner, men ingen af kolonnerne er entydige. Du kan f.eks. overveje disse to tabeller:
 
-* I tabellen *Sales* vises salgsdata efter *State*, og hver række indeholder salgsbeløbet for den type salg i den pågældende delstat. Staterne omfatter CA, WA og TX. 
+* I tabellen **Sales** vises salgsdata efter **State**, og hver række indeholder salgsbeløbet for den type salg i den pågældende delstat. Staterne omfatter CA, WA og TX.
 
-    ![Salgstabel med salg efter delstat](media/desktop-many-to-many-relationships/many-to-many-relationships_06.png)
+    ![Tabellen Sales viser salg efter delstat, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_06.png)
 
-* I tabellen *CityData* vises data om byer, herunder indbyggertal og delstat (inklusive CA, WA og New York).
+* I tabellen **CityData** vises data om byer, herunder indbyggertal og delstat (som f.eks. CA, WA og New York).
 
-    ![Salgstabel med by, delstat og indbyggertal](media/desktop-many-to-many-relationships/many-to-many-relationships_07.png)
+    ![Tabellen Sales viser by, delstat og indbyggertal, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_07.png)
 
-Selvom kolonnen *State* findes i begge tabeller, og det er almindeligt at ville rapportere om både det samlede salg efter delstat og befolkningstal i hver stat, opstår der et problem: kolonnen *State* er ikke entydig i nogen af kolonnerne. 
+Der er nu en kolonne for **State** i begge tabeller. Det giver god mening at ville rapportere for både det samlede salg efter stat og det samlede indbyggertal for hver stat. Der findes dog et problem: Kolonnen **State** er ikke entydig i nogen af tabellerne.
 
 ## <a name="the-previous-workaround"></a>Tidligere midlertidig løsning
 
-I tidligere versioner af Power BI Desktop end udgivelsen i juli 2018, kunne brugere ikke oprette en direkte relation mellem disse tabeller. En almindelig midlertidig løsning var at gøre følgende:
+Før udgivelsen af Power BI Desktop i juli 2018 kunne du ikke oprette en direkte relation mellem disse tabeller. En almindelig midlertidig løsning var at:
 
-* Opret en tredje tabel, der kun indeholder de entydige id'er for *State*. Tabellen kunne være en eller flere af følgende:
+* Oprette en tredje tabel, der kun indeholder de entydige id'er for State. Tabellen kunne være en eller alle af:
   * En beregnet tabel (defineret ved hjælp af Data Analysis Expressions [DAX]).
   * En tabel baseret på en forespørgsel, der er defineret i Forespørgselseditor, som kunne vise de entydige id'er, der er trukket fra en af tabellerne.
   * Hele sættet kombineret.
 
-* Opret en relation mellem de to oprindelige tabeller til den nye tabel ved hjælp af almindelige *Mange-1*-relationer.
+* Opret derefter en relation mellem de to oprindelige tabeller til den nye tabel ved hjælp af almindelige *Mange-1*-relationer.
 
-Du kan enten lade tabellen fra den midlertidige løsning være synlig eller skjule den, så den ikke vises på listen **Fields**. Hvis du skjuler tabellen, vil relationen *Mange-1* ofte være angivet til at filtrere i begge retninger, og du kan bruge feltet *State* fra begge tabeller. Efterfølgende tværgående filtrering vil blive overført til den anden tabel. Denne tilgang er vist på følgende billede:
+Du kan gøre tabellen med midlertidige løsninger synlig. Eller du kan skjule tabellen med midlertidige løsninger, så den ikke vises på listen **Felter**. Hvis du skjuler tabellen, vil relationen *Mange-1* ofte være angivet til at filtrere i begge retninger, og du kan bruge feltet State fra begge tabeller. Den senere tværgående filtrering vil blive overført til den anden tabel. Denne tilgang er vist på følgende billede:
 
-![Relationsvisning](media/desktop-many-to-many-relationships/many-to-many-relationships_08.png)
+![Tabellen Hidden State, visningen Relationer, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_08.png)
 
-En visualisering, der viser *State* (fra tabellen *CityData*) sammen med totalen af *Population* og totalen af *Sales*, vil derefter se ud på følgende måde:
+En visualisering, der viser **State** (fra tabellen **CityData**) sammen med totalen af **Population** og totalen af **Sales**, vil derefter se ud på følgende måde:
 
-![Tabelvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
+![Tabellerne State, Population og Sales, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
 
 > [!NOTE]
-> Da delstaten fra tabellen *CityData* bruges i denne midlertidige løsning, vises der kun delstater fra den tabel, og delstaten TX vises derfor ikke. Rækken Total indeholder oplysninger om alt *Sales* (inklusive for TX), men i modsætning til *Mange-1*-relationer vises der ikke en tom række for sådanne rækker, der ikke stemmer overens. På samme måde vil der ikke være en tom række, der dækker *Sales*, hvor der er en null-værdi for *State*.
+> Da delstaten fra tabellen **CityData** bruges i denne midlertidige løsning, vises der kun delstater fra den tabel, så delstaten TX vises ikke. Rækken Total indeholder oplysninger om alt **Sales** (inklusive for TX), men i modsætning til *Mange-1*-relationer vises der ikke en tom række for sådanne rækker, der ikke stemmer overens. På samme måde vil en tom række ikke dække **Sales**, hvor der er en null-værdi for **State**.
 
-Hvis du også føjer *City* til visualiseringen, vil *Sales*, der vises for *City*, simpelthen være en gentagelse af *Sales* for den tilsvarende *State*, selvom indbyggertallet pr. *City* er kendt. Dette er normalt tilfældet, når gruppering i en kolonne ikke er relateret til en samlet måling, som vist på følgende billede:
+Lad os antage, at du også føjer en by til denne visualisering. **Sales**, der vises for City vil simpelthen være en gentagelse af **Sales** for den tilsvarende **State**, selvom indbyggertallet pr. City er kendt. Dette scenarie forekommer normalt, når kolonnegrupperingen ikke er relateret til en samlet måling som vist her:
 
-![Tabelvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_10.png)
+![State, City Population og Sales, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_10.png)
 
-Hvis vi definerer den nye *Sales*-tabel som en kombination af alle *States* i denne midlertidige løsning, og vi gør den synlig på listen **Fields**, vil både *State* (i den nye tabel) og samlet *Population* og samlet *Sales* blive vist i den samme visualisering, som vist på følgende billede:
+Lad os sige, at du definerer den nye tabel Sales som en kombination af alle delstater her, og vi gør den synlig på listen **Felter**. Den samme visualisering ville vise **State** (i den nye tabel), den samlede **Population** og det samlede **Sales**:
 
-![Tabelvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_11.png)
+![Visualisering af State, Population og Sales, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_11.png)
 
-Som du kan se, er *TX* &mdash; med *Sales*-data, men ukendte *Population*-data &mdash; og *New York* &mdash; med kendte *Population*-data, men ingen *Sales*-data &mdash; inkluderet. Denne midlertidige løsning er ikke optimal, og der er mange problemer forbundet med den. Med oprettelsen af relationerne med en mange til mange-kardinalitet bliver de medfølgende problemer løst, som beskrevet i næste afsnit.
+Som du kan se, er &mdash;TX med **Sales**-data, men ukendte *Population*-data&mdash;og New York&mdash;med kendte **Population**-data, men ingen **Sales**-data&mdash;inkluderet. Denne midlertidige løsning er ikke optimal, og der er mange problemer forbundet med den. For relationer med en mange til mange-kardinalitet bliver de medfølgende problemer løst, som beskrevet i næste afsnit.
 
-## <a name="use-relationships-with-a-many-many-cardinality-instead-of-the-workaround"></a>Brug *relationer med en mange til mange-kardinalitet* i stedet for den midlertidige løsning
+## <a name="use-a-relationship-with-a-many-many-cardinality-instead-of-the-workaround"></a>Brug en relation med en mange til mange-kardinalitet i stedet for den midlertidige løsning
 
-Fra og med versionen af Power BI Desktop fra juli 2018 kan du oprette direkte relationer mellem tabeller, ligesom dem vi beskrev tidligere, uden at skulle ty til lignende midlertidige løsninger. Det er nu muligt at angive kardinaliteten for relationen til *Mange til mange*. Denne indstilling indikerer, at ingen af tabellerne indeholder entydige værdier. For sådanne relationer kan du stadig styre, hvilke tabeller der filtrerer den anden tabel, eller du kan anvende tovejsfiltrering, hvor begge tabeller filtrerer hinanden.  
+Med versionen af Power BI Desktop fra juli 2018 kan du oprette direkte relationer mellem tabeller, ligesom dem vi beskrev tidligere, uden at skulle ty til lignende midlertidige løsninger. Det er nu muligt at angive kardinaliteten for relationen til *mange til mange*. Denne indstilling indikerer, at ingen af tabellerne indeholder entydige værdier. For sådanne relationer kan du stadig styre, hvilken tabel der filtrerer den anden tabel. Du kan desuden anvende tovejsfiltrering, hvor hver tabel filtrerer den anden.
 
-I Power BI Desktop vil kardinalitet som standard være *Mange til mange*, når det er fastslået, at ingen af tabellerne indeholder entydige værdier for kolonnerne i relationen. Når det er tilfældet, vises der en advarsel, hvor du skal bekræfte, at denne relationsindstilling er bevidst og ikke en utilsigtet effekt af et dataproblem. 
+I Power BI Desktop vil kardinalitet som standard være *mange til mange*, når det er fastslået, at ingen af tabellerne indeholder entydige værdier for kolonnerne med relationer. I sådanne tilfælde bekræfter en advarselsmeddelelse, at du vil angive en relation, og ændringen er ikke den utilsigtede virkning af et dataproblem.
 
-Hvis du f.eks. opretter en relation direkte mellem *CityData* og *Sales* &mdash; hvor filtre skal gå fra *CityData* til *Sales* &mdash; vises vinduet **Rediger relation** i Power BI Desktop, som vist på følgende billede:
+Hvis du f.eks. opretter en relation direkte mellem CityData og Sales,&mdash;hvor filtre skal gå fra CityData til Sales&mdash;vises vinduet **Rediger relation** i Power BI Desktop:
 
-![Vinduet "Rediger relation"](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
+![Dialogboksen Rediger relation, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
 
-Den resulterende **Relationsvisning** vil derefter indeholde den direkte mange til mange-relation mellem de to tabeller. Tabellernes udseende på listen **Fields** og deres efterfølgende funktionsmåde, når der oprettes visualiseringer, ligner den samme, som da vi anvendte den midlertidige løsning. I den midlertidige løsning er den ekstra tabel, som viser de enkelte *State*-data, ikke synlig. Som beskrevet i forrige afsnit, vil en visualisering med data for *State*, *Population* og *Sales* f.eks. blive vist på følgende måde:
+Den resulterende **Relationsvisning** vil derefter indeholde den direkte mange til mange-relation mellem de to tabeller. Tabellernes udseende på listen **Felter** og deres senere funktionsmåde, når der oprettes visualiseringer, ligner den samme, som da vi anvendte den midlertidige løsning. I den midlertidige løsning er den ekstra tabel, som viser de enkelte State-data, ikke synlig. Som beskrevet tidligere vises en visualisering, der viser data fra **State**, **Population**og **Sales**:
 
-![Tabelvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
+![Tabellerne State, Population og Sales, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
 
 De primære forskelle mellem *relationer med mange til mange-kardinalitet* og de mere almindelige *Mange-1*-relationer er følgende:
 
 * De viste værdier omfatter ikke en tom række, der står for rækker, som ikke stemmer overens med den anden tabel. Værdierne står heller ikke for rækker, hvor den kolonne, der bruges i relationen i den anden tabel, er null.
-* Det er ikke muligt at bruge funktionen `RELATED()`, da der kan være en relation til mere end én række.
-* Brug af funktionen `ALL()` i en tabel fjerner ikke de filtre, som er anvendt på andre relaterede tabeller med en mange til mange-relation. I det forrige eksempel fjernede en måling, der er defineret som vist i følgende script, ikke filtre på kolonner i den relaterede *CityData*-tabel:
+* Du kan ikke bruge funktionen `RELATED()`, da der kan være en relation til mere end én række.
+* Brug af funktionen `ALL()` i en tabel fjerner ikke de filtre, som er anvendt på andre relaterede tabeller med en mange til mange-relation. I det forrige eksempel fjernede en måling, der er defineret som vist her, ikke filtre på kolonner i den relaterede CityData-tabel:
 
     ![Eksempel på script](media/desktop-many-to-many-relationships/many-to-many-relationships_13.png)
 
-    En visualisering, der viser data for *State*, *Sales* og *Sales total*, ville resultere i følgende:
+    En visualisering, der viser data for **State**, **Sales** og **Sales total**, ville resultere i denne grafik:
 
     ![Tabelvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_14.png)
 
-Med de foregående forskelle in mente skal du sørge for, at beregningerne, hvor der bruges `ALL(\<Table>)`, f.eks.   *% af totalen*, returnerer de forventede resultater. 
-
+Med de foregående forskelle in mente skal du sørge for, at beregningerne, der bruger `ALL(<Table>)`, f.eks.   *% af totalen*, returnerer de forventede resultater.
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 
@@ -151,12 +150,12 @@ Følgende Live Connect-kilder (flerdimensionelle) kan ikke bruges sammen med sam
 
 Når du opretter forbindelse til disse flerdimensionelle kilder ved hjælp af DirectQuery, kan du ikke oprette forbindelse til en anden DirectQuery-kilde eller kombinere den med importerede data.
 
-De eksisterende begrænsninger ved at bruge DirectQuery gælder stadig, når du bruger *relationer med en mange til mange-kardinalitet*. Mange af disse begrænsninger gælder nu for de enkelte tabeller afhængigt af tabellens lagringstilstand. En beregnet kolonne i en importeret tabel kan f.eks. referere til andre tabeller, men en beregnet kolonne i en DirectQuery-tabel kan stadig kun referere til kolonner i den samme tabel. Andre begrænsninger gælder for modellen som helhed, hvis nogle af tabellerne i modellen er DirectQuery. Funktionerne Hurtig indsigt og Spørgsmål og svar er f.eks. ikke tilgængelige for en model, hvis nogen af tabellerne i den har lagringstilstanden DirectQuery. 
+De eksisterende begrænsninger ved at bruge DirectQuery gælder stadig, når du bruger *relationer med en mange til mange-kardinalitet*. Mange begrænsninger gælder nu for de enkelte tabeller afhængigt af tabellens lagringstilstand. En beregnet kolonne i en importeret tabel kan f.eks. referere til andre tabeller, men en beregnet kolonne i en DirectQuery-tabel kan stadig kun referere til kolonner i den samme tabel. Andre begrænsninger gælder for hele modellen, hvis nogle af tabellerne i modellen er DirectQuery. Funktionerne Hurtig indsigt og Spørgsmål og svar er f.eks. ikke tilgængelige for en model, hvis en tabel i den har lagringstilstanden DirectQuery.
 
 ## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger om sammensatte modeller og DirectQuery i følgende artikler:
-* [Sammensatte modeller i Power BI Desktop](desktop-composite-models.md)
-* [Lagringstilstand i Power BI Desktop (prøveversion)](desktop-storage-mode.md)
-* [Brug DirectQuery i Power BI Desktop](desktop-directquery-about.md)
-* [Understøttede datakilder i forbindelse med DirectQuery i Power BI Desktop](desktop-directquery-data-sources.md)
+* [Brug sammensatte modeller i Power BI Desktop](desktop-composite-models.md)
+* [Lagringstilstand i Power BI Desktop](desktop-storage-mode.md)
+* [Brug DirectQuery i Power BI](desktop-directquery-about.md)
+* [Power BI-datakilder](power-bi-data-sources.md)

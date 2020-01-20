@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/20/2018
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: 567b775cb7323dbd343f2a26d4abc0d60885ab7a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 21ec26182efe2d0b08b2a64227264d5b80756962
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877989"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760721"
 ---
-# <a name="create-power-bi-visuals-using-python"></a>Opret Power BI-visualiseringer ved hjælp af Python
+# <a name="create-power-bi-visuals-by-using-python"></a>Opret Power BI-visualiseringer med Python
 Med **Power BI Desktop** kan du bruge **Python** til at visualisere dine data.
 
 ## <a name="prerequisites"></a>Forudsætninger
@@ -167,6 +167,7 @@ Dette selvstudium er udformet, så du kan komme i gang med at oprette visualiser
 Python-visualiseringer i **Power BI Desktop** har nogle få begrænsninger:
 
 * Begrænsninger for datastørrelse – Data, der bruges af en Python-visual til afbildning, er begrænset til 150.000 rækker. Hvis der er valgt flere end 150.000 rækker, bruges kun de øverste 150.000 rækker, og der vises en meddelelse på billedet.
+* Opløsning – alle Python-visualiseringer vises ved 72 DPI.
 * Begrænsning af beregningstid – hvis en beregning af en Python-visual overskrider fem minutter, opstår der timeout for udførelsen, hvilket medfører en fejl.
 * Relationer – På samme måde som med andre Power BI Desktop-visualiseringer opstår der en fejl, hvis der vælges datafelter fra forskellige tabeller, hvor der ikke er defineret en relation.
 * Python-visuals opdateres, når data opdateres, filtreres eller fremhæves. Selve billedet er dog ikke interaktivt og må ikke være kilden til tværgående filtrering.

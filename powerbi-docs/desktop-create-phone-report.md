@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 16af5a6c8b5341067c458329c68da0a1a0fe14a5
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 2dca4094ed0c21c421aa2fef89353e6f210b3ea4
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74311475"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761473"
 ---
-# <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Optimer rapporter til Power BI-mobilapps
+# <a name="optimize-power-bi-reports-for-the-mobile-app"></a>Optimer Power BI-rapporter til mobilappen
 Du kan forbedre visningsoplevelsen af rapporter i mobilapps ved at oprette et stående layout. I Power BI Desktop og Power BI-tjenesten omarrangerer du rapportvisualiseringer og ændrer størrelsen af dem for at få en optimal oplevelse i stående retning.  
 
 Leder du i stedet efter oplysninger om visning af rapporter på en mobilenhed? Prøv denne hurtig start [Udforsk dashboards og rapporter i Power BI-mobilapps](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 64e9ff8f4952abe79a62b6b805596554b32aa6c9
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: f14734f168abca1003bd5b6c773c4c70daf53d15
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265465"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762088"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til kunder i den amerikanske stat
 **Power BI-tjenesten** har en tilgængelig version for kunder i den amerikanske stat som en del af abonnementer for **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til kunder i den amerikanske stat og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.
@@ -34,13 +34,13 @@ Følgende funktioner er tilgængelige for **Power BI US Government**-kunder, som
 * Teamdashboards, der kan opdateres
 * Active Directory-grupper til deling og administration af adgangskontrol
 * [Importér data](service-get-data.md) og rapporter fra Excel-, CSV- og Power BI Desktop-filer
-* Datastyringsgateway
+* Dataadministrationsgateway
 * Alle data er krypteret i både Azure SQL- og Blob-lager til Power BI
 * Opret forbindelse til tjenester med [indholdspakker](service-connect-to-services.md)
 
 ## <a name="connectivity-between-government-and-global-azure-cloud-services"></a>Forbindelse mellem Government-tjenester og globale Azure Cloud-tjenester 
 
-Azure er fordelt blandt adskillige cloud-tjenester. Som standard har lejere tilladelse til at åbne firewallregler til en cloudspecifik forekomst, men netværk på tværs af clouds er anderledes og kræver åbning af specifikke firewallregler for at kommunikere mellem tjenester. Hvis du er en Power BI-kunde, og du har eksisterende SQL-forekomster i den offentlige cloud, som du har brug for at få adgang til, skal du åbne specifikke firewallregler i SQL til Azure Government Cloud IP-plads, for de følgende datacentre:
+Azure er fordelt på flere cloudmiljøer. Som standard har lejere tilladelse til at åbne firewallregler til en cloudspecifik forekomst, men netværk på tværs af clouds er anderledes og kræver åbning af specifikke firewallregler for at kommunikere mellem tjenester. Hvis du er en Power BI-kunde, og du har eksisterende SQL-forekomster i den offentlige cloud, som du har brug for at få adgang til, skal du åbne specifikke firewallregler i SQL til Azure Government Cloud IP-plads, for de følgende datacentre:
 
 * USGov Iowa
 * USGov Virginia
@@ -59,6 +59,7 @@ Nogle af de funktioner, der er tilgængelige i den kommercielle version af **Pow
 * **Forbrugsmålinger for dashboards og rapporter** – forbrugsmålinger er ikke tilgængelige for rapporter og dashboards. Kunder kan bruge data i overvågningsloggen til at få forbrugsoplysninger om indhold i deres organisation.
 * **Dataflows** - Dataflows er ikke tilgængelige.
 * **Sideinddelte rapporter** – Sideinddelte rapporter er i øjeblikket kun tilgængelige i USGov Virginia.  Understøttelse i USGov Texas er planlagt, men endnu ikke tilgængelig.
+* Integration af Power BI-indhold fra en GCC (Government Community Cloud) kan kun udføres med en Office 365 SKU. GCC High-kunder kan bruge [Office 365 eller Azure SKU'er](developer/embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365).
 
 Hvis du har gratis **Power BI**-licenser knyttet til din konto, kører disse konti i en kommerciel version af **Power BI**-tjenesten og er ikke en del af **Power BI US Government**-tilbuddet. For de gratis kontis vedkommende kan der opstå følgende problemer:
 

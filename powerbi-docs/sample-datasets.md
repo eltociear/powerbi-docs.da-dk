@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 04/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d5fcc6866d564367d2a29dc00493a959409ea2ed
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b14b9a8a0978876942de789548d9741fa3932152
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858979"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762226"
 ---
-# <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Hvilke eksempeldata er tilgængelige til brug med Power BI?
+# <a name="get-sample-data-for-power-bi"></a>Hent eksempeldata til Power BI
 Lad os antage, at du ikke kender Power BI og vil afprøve det, men ikke har nogen data.  Men måske har du et datasæt. Fordi du (endnu) ikke forstår, hvordan Power BI fungerer, er du måske bekymret for, om du på en eller anden måde kommer til at beskadige datasættet?
 
 Bare rolig! obviEnce ([www.obvience.com](http://www.obvience.com/)) og Microsoft har oprettet eksempler, som du kan bruge, indtil du føler dig mere fortrolig med Power BI.  Dataene er anonymiseret og repræsenterer forskellige brancher: finans, HR, salg med mere. Desuden bruges de samme eksempler i selvstudier og andet materiale i vores onlinedokumentation, så du kan følge med.      
@@ -127,7 +127,7 @@ Alle eksempelindholdspakkerne er også tilgængelige som en Excel-projektmappe. 
    * [Sales and Marketing Sample](https://go.microsoft.com/fwlink/?LinkId=529785)
 2. Gem den downloadede fil. Det gør en forskel, hvor du gemmer filen.
 
-   * ![Lokal](media/sample-datasets/power-bi-local-file2.png)  **Lokal** – Hvis du gemmer din fil på et lokalt drev på computeren eller en anden placering i organisationen, kan du fra Power BI importere filen i Power BI. Filen forbliver på den lokale harddisk, så det er ikke hele filen, der importeres til Power BI. Der sker det, at et nyt datasæt oprettes på dit Power BI-websted, og data – og i nogle tilfælde datamodellen – indlæses i datasættet. Hvis filen indeholder rapporter, vises de på Power BI-webstedet under Rapporter.
+   * ![Lokal](media/sample-datasets/power-bi-local-file2.png)  **Lokal** – Hvis du gemmer filen på et lokalt drev på din computer eller en anden placering i din organisation fra Power BI, kan du importere filen til Power BI. Filen forbliver på den lokale harddisk, så det er ikke hele filen, der importeres til Power BI. Der sker det, at et nyt datasæt oprettes på dit Power BI-websted, og data – og i nogle tilfælde datamodellen – indlæses i datasættet. Hvis filen indeholder rapporter, vises de på Power BI-webstedet under Rapporter.
    * ![OneDrive Business](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – Business** – Hvis du har OneDrive for Business, og du logger på med den samme konto, som du bruger til at logge på Power BI, er OneDrive for Business klart det bedste sted at holde dit arbejde i Excel, Power BI eller en .CSV-fil synkroniseret med datasættet, rapporter og dashboards i Power BI. Da både Power BI og OneDrive findes i clouden, opretter Power BI forbindelse til din fil på OneDrive ca. hver time. Hvis der findes ændringer, opdateres datasættet, rapporter og dashboards automatisk i Power BI.
    * ![OneDrive personlig](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – personlig** – Hvis du gemmer dine filer på din egen OneDrive-konto, får du mange af de samme fordele som med OneDrive for Busines. Den største forskel er, at når du første gang opretter forbindelse til din fil (med funktionen Hent data > Filer > OneDrive - personlig), skal du logge på OneDrive med din Microsoft-konto, hvilket normalt er anderledes, end hvad du bruger til at logge på Power BI. Når du logger på med OneDrive med din Microsoft-konto, skal du sørge for at vælge indstillingen Forbliv logget på. På denne måde kan Power BI oprette forbindelse til din fil ca. hver time og sikre, at dit datasæt i Power BI er synkroniseret.
    * ![SharePoint – teamwebsteder](media/sample-datasets/power-bi-sharepoint2.png) **SharePoint – teamwebsteder**    Lagring af Power BI-filer på SharePoint – teamwebsteder er stort set det samme som at gemme på OneDrive for Business. Den største forskel er, hvordan du opretter forbindelse til filen fra Power BI. Du kan angive en URL-adresse, eller du kan oprette forbindelse til rodmappen.

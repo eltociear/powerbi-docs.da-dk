@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: bb4e177ff813c332c8b60b490ead1f6d97a03935
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 33fc0faf92d1730c1d08f91eabc276cdafadfffb
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73867121"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761105"
 ---
-# <a name="use-insights-in-power-bi-desktop-to-find-where-a-distribution-is-different-preview"></a>Brug indsigter i Power BI Desktop til at finde ud af, hvor distributionen er anderledes (Preview)
+# <a name="apply-insights-in-power-bi-desktop-to-discover-where-distributions-vary-preview"></a>Anvend indsigt i Power BI Desktop for at finde ud af, hvor distributioner varierer (eksempelvisning)
 
 I visualiseringer vil du ofte se et datapunkt, hvor du undrer dig over, om distributionen vil være den samme for forskellige kategorier. Med **indsigter** i **Power BI Desktop** kan du finde ud af det med nogle få klik.
 

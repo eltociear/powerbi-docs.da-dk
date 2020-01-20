@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 12/03/2019
-ms.openlocfilehash: a7f0e6f08f25d47cd50789a3c8f296ae20c4cab0
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.date: 01/03/2020
+ms.openlocfilehash: 5f77e17eccf4c99e7a391ea310a34848c604e01d
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831206"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75732078"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publicer en sideinddelt rapport i Power BI-tjenesten
 
 I denne artikel lærer du om publicering af en sideinddelt rapport i Power BI-tjenesten ved at uploade den fra din lokale computer. Du kan uploade sideinddelte rapporter til Mit arbejdsområde eller andre arbejdsområder, så længe arbejdsområdet er i en Premium-kapacitet. Se efter rombeikonet ![Rombeikon for Power BI Premium-kapacitet](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) ud for navnet på arbejdsområdet. 
 
-Hvis din datakilde til rapporten er i det lokale miljø, skal du [oprette en gateway](#create-a-gateway), når du har uploadet rapporten.
+Hvis din datakilde til rapporten er i det lokale miljø, skal du oprette en gateway, når du har uploadet rapporten. Se afsnittet [Opret en gateway](#create-a-gateway) senere i denne artikel.
 
 ## <a name="add-a-workspace-to-a-premium-capacity"></a>Føj et arbejdsområde til en Premium-kapacitet
 
@@ -35,8 +35,33 @@ Hvis arbejdsområdet ikke har rombeikonet ![Rombeikon for Power BI Premium-kapac
 
    Du kan muligvis ikke kan ændre den. Hvis ikke, skal du kontakte administratoren af Power BI Premium-kapacitet for at får tildelt rettigheder, så du kan føje dit arbejdsområde til en Premium-kapacitet.
 
+## <a name="from-report-builder-publish-a-paginated-report"></a>Udgiv en sideinddelt rapport fra Power BI Report Builder
 
-## <a name="upload-a-paginated-report"></a>Upload en sideinddelt rapport
+1. Opret din sideinddelte rapport i Report Builder, og gem den på din lokale computer.
+
+1. I menuen **Filer** i Power BI Report Builder skal du vælge **Gem som**.
+
+    ![Menuen Filer > Gem > Gem som](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-save-as.png)
+
+    Hvis du ikke er logget på Power BI endnu, skal du logge på eller oprette en konto nu. I øverste højre hjørne af Power BI Report Builder skal du vælge **Log på** og udføre trinnene.
+
+2. På listen over arbejdsområder til venstre skal du vælge et arbejdsområde med diamantikonet ![diamantikon for Power BI Premium-kapacitet](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) ud for navnet. Skriv et **filnavn** i feltet > **Gem**. 
+
+    ![Vælg et Premium-arbejdsområde](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-workspace.png)
+
+4. Åbn Power BI-tjenesten i en browser, og gå til arbejdsområdet Premium, hvor du udgav den sideinddelte rapport. Under fanen **Rapporter** kan du se din rapport.
+
+    ![Sideinddelt rapport på listen Rapporter](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-wwi-report.png)
+
+5. Vælg den sideinddelte rapport for at åbne den i Power BI-tjenesten. Hvis den indeholder parametre, skal du vælge dem, før du kan få vist rapporten.
+
+    ![Vælg parametre](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-parameters.png)
+
+6. Hvis din rapportdatakilde er i det lokale miljø, kan du læse om, hvordan du [opretter en gateway](#create-a-gateway) i denne artikel for at få adgang til datakilden.
+
+## <a name="from-the-power-bi-service-upload-a-paginated-report"></a>Overfør en sideinddelt rapport fra Power BI-tjenesten
+
+Du kan også starte fra Power BI-tjenesten og overføre en sideinddelt rapport.
 
 1. Opret din sideinddelte rapport i Report Builder, og gem den på din lokale computer.
 
@@ -62,13 +87,15 @@ Hvis arbejdsområdet ikke har rombeikonet ![Rombeikon for Power BI Premium-kapac
 
     ![Rediger legitimationsoplysninger](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-credentials.png)
 
-   Du kan se din rapport på listen over rapporter.
+   Under fanen **Rapporter** kan du se din rapport.
 
     ![Sideinddelt rapport på listen Rapporter](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-wwi-report.png)
 
 1. Vælg den for at åbne den i Power BI-tjenesten. Hvis den indeholder parametre, skal du vælge dem, før du kan få vist rapporten.
  
     ![Vælg parametre](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-parameters.png)
+
+6. Hvis din rapportdatakilde er i det lokale miljø, kan du læse om, hvordan du [opretter en gateway](#create-a-gateway) i denne artikel for at få adgang til datakilden.
 
 ## <a name="create-a-gateway"></a>Opret en gateway
 
@@ -89,4 +116,5 @@ I øjeblikket understøtter gateways ikke parametre med flere værdier.
 
 - [Publicer en sideinddelt rapport i Power BI-tjenesten](consumer/paginated-reports-view-power-bi-service.md)
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+- [Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder](developer/embed-paginated-reports-customers.md)
 

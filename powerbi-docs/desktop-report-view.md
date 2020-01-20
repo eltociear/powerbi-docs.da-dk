@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 06b8c9d0be2ec8bc5b350767263bfc5e0ab4ec81
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3e40d26570e37167c61ffd3241cfe96a90c55fa0
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877856"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760543"
 ---
-# <a name="report-view-in-power-bi-desktop"></a>Rapportvisning i Power BI Desktop
+# <a name="work-with-report-view-in-power-bi-desktop"></a>Arbejde med Rapportvisning i Power BI Desktop
 Hvis du har arbejdet med Power BI, ved du, hvor let det er at oprette rapporter med dynamiske perspektiver, og som giver indsigt i dine data. Power BI har også mere avancerede funktioner i Power BI Desktop. Med Power BI Desktop kan du oprette avancerede forespørgsler, mikse data fra flere kilder, oprette relationer mellem tabeller med mere.
 
 Power BI Desktop indeholder **Rapportvisning**, hvor du kan oprette et vilkårligt antal rapportsider med visualiseringer. Rapportvisning giver dig stort set samme designoplevelse som Redigeringsvisning i en rapport i Power BI-tjenesten. Du kan f.eks. flytte visualiseringer rundt og kopiere, indsætte og flette dem.

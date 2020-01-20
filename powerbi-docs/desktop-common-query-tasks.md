@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 2b1cf2a7f10fd7249dcdec26b5c5f5d12ff15aca
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 116575898812e82f2f15126d0fee640902367ace
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878661"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761743"
 ---
-# <a name="common-query-tasks-in-power-bi-desktop"></a>Almindelige forespørgselsopgaver i Power BI Desktop
+# <a name="perform-common-query-tasks-in-power-bi-desktop"></a>Udfør almindelige forespørgselsopgaver i Power BI Desktop
 Når du arbejder i vinduet **Forespørgselseditor** i Power BI Desktop, er der nogle få opgaver, der udføres jævnligt. Dette dokument beskriver disse opgaver og indeholder links til flere oplysninger. 
 
 Følgende almindelige forespørgselsopgaver vises her:
@@ -153,7 +153,7 @@ Der findes følgende formelkategorier for Forespørgselseditor:
   * Konstanter
   * Oplysninger
   * Konvertering og formatering
-  * Format
+  * Formatér
   * Afrunding
   * Handlinger
   * Tilfældigt

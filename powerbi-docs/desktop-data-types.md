@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a3ca4b8ffe709fec7953eb5d4081bdf296504eb1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3f263e67b866f6d6a3ea76257c64bbb2308a25d2
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73868526"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75729707"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 I denne artikel beskrives de datatyper, der understøttes i Power BI Desktop, og DAX-udtryk (Data Analysis Expressions). 
@@ -51,7 +51,7 @@ Power BI Desktop understøtter tre taltyper:
 >
 
 ### <a name="datetime-types"></a>Dato/klokkeslæt-typer
-Power BI Desktop understøtter fem dato/klokkeslæt-datatyper i forespørgselsvisningen og tre i rapportvisningen og modellen.   Både Date/Time/Timezone (Dato/klokkeslæt/tidzone) og Duration (Varighed) konverteres ved indlæsning i modellen.
+Power BI Desktop understøtter fem dato/klokkeslæt-datatyper i forespørgselsvisningen.  Både Date/Time/Timezone (Dato/klokkeslæt/tidzone) og Duration (Varighed) konverteres ved indlæsning i modellen. Power BI Desktop-datamodellen understøtter kun dato/klokkeslæt, men de kan formateres som datoer eller klokkeslæt uafhængigt af hinanden. 
 
 **Date/Time** – repræsenterer både en dato- og en klokkeslætsværdi.  Dato/klokkeslæt-værdien lagres som en decimaltaltype.  Så du kan faktisk skifte mellem begge to.   Klokkeslætsdelen af en dato gemmes som en brøkdel af hele intervaller på 1/300 sekunder (3,33 ms).  Datoer mellem år 1900 og 9999 understøttes.
 
@@ -59,7 +59,7 @@ Power BI Desktop understøtter fem dato/klokkeslæt-datatyper i forespørgselsvi
 
 **Time** – repræsenterer kun et tidspunkt (ingen datodel).  Når det konverteres til modellen, er en tidsværdi identisk med en dato/klokkeslæt-værdi uden cifre til venstre for decimaltegnet.
 
-**Date/Time/Timezone** – repræsenterer en UTC-dato/klokkeslæt.  I øjeblikket konverteres den til en dato/klokkeslæt-værdi, når den indlæses i modellen.
+**Date/Time/Timezone** – repræsenterer en UTC-dato/klokkeslæt med en forskydning af tidszone.  Den konverteres til en dato/klokkeslæt-værdi, når den indlæses i modellen. Power BI-modellen justerer ikke tidszonen på baggrund af en brugers placering eller landestandard osv. Hvis en værdi på 09:00 indlæses i modellen i USA, vises den som 09:00, uanset hvor rapporten åbnes eller vises. 
 
 **Duration** – repræsenterer et tidsrum. Den konverteres til en decimaltalstype, når den indlæses i modellen.  Som decimaltalstype kan den lægges til eller trækkes fra et dato/klokkeslæt-felt med korrekte resultater.  Som decimaltalstype kan du nemt bruge den i visuelle effekter, der viser størrelse.
 
@@ -163,7 +163,7 @@ Konverteringer udføres implicit for numeriske typer eller dato/klokkeslæt-type
 | INTEGER |INTEGER |CURRENCY |REAL |REAL |
 | CURRENCY |CURRENCY |CURRENCY |REAL |REAL |
 | REAL |REAL |REAL |REAL |REAL |
-| Date/time |REAL |REAL |REAL |Date/Time |
+| Date/time |REAL |REAL |REAL |Dato/klokkeslæt |
 
 ### <a name="handling-blanks-empty-strings-and-zero-values"></a>Håndtering af tomme værdier, tomme strenge og nulværdier
 I DAX repræsenteres en null-værdi, en tom værdi, en tom celle eller en manglende værdi med den samme nye værditype, nemlig BLANK. Du kan generere tomme værdier ved hjælp af funktionen BLANK og undersøge, om der er tomme værdier ved hjælp af den logiske funktion ISBLANK.
@@ -175,13 +175,13 @@ Håndteringen af tomme værdier i handlinger som f.eks. addition eller sammenkæ
 | BLANK + BLANK |BLANK |0(zero) |
 | BLANK + 5 |5 |5 |
 | BLANK * 5 |BLANK |0(zero) |
-| 5/BLANK |Uendelig |Error |
+| 5/BLANK |Uendelig |Fejl |
 | 0/BLANK |NaN |Error |
-| BLANK/BLANK |BLANK |Error |
+| BLANK/BLANK |BLANK |Fejl |
 | FALSE ELLER BLANK |FALSE |FALSE |
 | FALSE OG BLANK |FALSE |FALSE |
 | TRUE ELLER BLANK |TRUE |TRUE |
 | TRUE OG BLANK |FALSE |TRUE |
-| BLANK ELLER BLANK |BLANK |Error |
-| BLANK OG BLANK |BLANK |Error |
+| BLANK ELLER BLANK |BLANK |Fejl |
+| BLANK OG BLANK |BLANK |Fejl |
 

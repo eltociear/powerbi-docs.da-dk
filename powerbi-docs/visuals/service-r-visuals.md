@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: efbeda396217c1a715f9a5d7ae4827c5f8d09a25
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 837412a85eff14c8eaa72fbf1625cadde524cc76
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74698986"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762203"
 ---
-# <a name="r-visuals-in-power-bi"></a>R-visuals i Power BI
+# <a name="create-and-use-r-visuals-in-power-bi"></a>Opret og brug R-visuals i Power BI
 Visuelle R-elementer kan i øjeblikket kun oprettes i **Power BI Desktop** og derefter publiceres på Power BI-tjenesten. Du kan finde flere oplysninger om oprettelse af R-visuals under [Opret i Power BI-visuals ved hjælp af R](../desktop-r-visuals.md).
 
 ## <a name="viewing-r-visuals-in-the-power-bi-service"></a>Opret R-visuals i Power BI-tjenesten
@@ -87,6 +87,7 @@ Visuelle R-elementer i Power BI-tjenesten har nogle få begrænsninger:
 
 * Understøttelse af R-visuals er begrænset til de pakker, der er identificeret [i Få mere at vide om, hvilke R-pakker der understøttes](../service-r-packages-support.md). Der er i øjeblikket ingen understøttelse af brugerdefinerede pakker.
 * Begrænsninger for datastørrelse – data, der bruges af det visuelle R-element til afbildning, er begrænset til 150.000 rækker. Hvis der er valgt flere end 150.000 rækker, bruges kun de øverste 150.000 rækker, og der vises en meddelelse på billedet.
+* Opløsning – alle R-visuals vises ved 72 DPI.
 * Begrænsning af beregningstid – hvis en beregning af et visuelt R-element overskrider 60 sekunder, får scriptet timeout, hvilket medfører en fejl.
 * Visuelle R-elementer opdateres ved dataopdateringer, filtrering og fremhævning. Selve billedet er imidlertid ikke interaktivt og understøtter ikke værktøjstip.
 * Visuelle R-elementer reagerer på fremhævning af andre elementer, men du kan ikke klikke på elementer i det visuelle R-element for at filtrere andre elementer i tværgående retning.

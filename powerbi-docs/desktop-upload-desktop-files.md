@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fa8e901d73d6ae0f35e74a427354368e75977202
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d528ba824986ff171688a55aee2ca2febe523236
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73865359"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759284"
 ---
-# <a name="publish-from-power-bi-desktop"></a>Udgiv fra Power BI Desktop
+# <a name="publish-datasets-and-reports-from-power-bi-desktop"></a>Udgiv datasæt og rapporter fra Power BI Desktop
 Når du udgiver en **Power BI Desktop**-fil i **Power BI-tjenesten**, udgives dataene i modellen og de rapporter, du har oprettet i visningen **Rapport**, på dit Power BI-arbejdsområde. Du kan se et nyt datasæt med det samme navn og alle rapporter i navigatoren til dit arbejdsområde.
 
 Hvis du udgiver fra **Power BI Desktop**, har det samme effekt, som hvis du bruger **Hent data** i Power BI til at oprette forbindelse til og overføre en **Power BI Desktop**-fil.
@@ -27,7 +27,7 @@ Hvis du udgiver fra **Power BI Desktop**, har det samme effekt, som hvis du brug
 > 
 
 ## <a name="to-publish-a-power-bi-desktop-dataset-and-reports"></a>Sådan udgiver du Power BI Desktop-datasæt og -rapporter
-1. I Power BI Desktop skal du vælge **Fil** \> **Udgiv** \> **Publicer i Power BI** eller klikke på **Udgiv** på båndet.  
+1. I Power BI Desktop skal du vælge **Filer** \> **Udgiv** \> **Publicer i Power BI** eller klikke på **Udgiv** på båndet.  
 
    ![Knappen Publicer](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 

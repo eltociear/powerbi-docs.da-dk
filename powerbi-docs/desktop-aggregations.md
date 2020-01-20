@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 37cbea42d530f05df1d9f1003554680b80c5b5c3
-ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
+ms.openlocfilehash: ba9c11004099b1e11d935cd0b178463e542bea9a
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907935"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761789"
 ---
-# <a name="aggregations-in-power-bi-desktop"></a>Sammenlægninger i Power BI Desktop
+# <a name="manage-aggregations-in-power-bi-desktop"></a>Administrer sammenlægninger i Power BI Desktop
 
 Brug af **sammenlægninger** i Power BI muliggør interaktiv analyse af big data på måder, der ikke tidligere var mulig. **Sammenlægninger** kan drastisk reducere omkostningerne til at låse store datasæt op i forbindelse med beslutningstagning.
 
@@ -104,7 +104,7 @@ Lad os definere sammenlægningerne. Vælg genvejsmenuen **Administrer sammenlæg
 
 Dialogboksen **Administrer sammenlægninger** vises. Der vises en række for hver kolonne i tabellen **Sales Agg**, hvor vi kan specificere funktionsmåden sammenlægning. Forespørgsler sendt til Power BI-datasættet, der refererer til tabellen **Sales**, omdirigeres internt til tabellen **Sales Agg**. Brugere af datasættet behøver ikke vide, at tabellen **Sales Agg** eksisterer.
 
-![Administrer dialogboksen sammenlægninger](media/desktop-aggregations/aggregations_07.jpg)
+![Dialogboksen Administrer sammenlægninger](media/desktop-aggregations/aggregations_07.jpg)
 
 I følgende tabel vises sammenlægningerne for tabellen **Sales Agg**.
 

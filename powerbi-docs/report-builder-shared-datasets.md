@@ -1,20 +1,20 @@
 ---
-title: Brug delte datasæt i Power BI Paginated Report Builder
-description: Opret forbindelse til delte datasæt fra Power BI Paginated Report Builder.
-ms.date: 07/23/2019
+title: Opret en sideinddelt rapport med et delt datasæt i Power BI – Power BI Report Builder
+description: Opret en sideinddelt rapport i Power BI Report Builder baseret på et delt datasæt i Power BI.
+ms.date: 01/03/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: c44f90bc29887a5431c893803cf4910e0e5093d3
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.openlocfilehash: 335b93720718bb72027c29c6093aad952cc4cdb2
+ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73791279"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691474"
 ---
-# <a name="use-shared-datasets-in-power-bi-report-builder"></a>Brug delte datasæt i Power BI Report Builder
+# <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Opret en sideinddelt rapport baseret på et delt datasæt i Power BI
 
 Du kan bruge et datasæt, som du opretter i Power BI Desktop, som en datakilde til sideinddelte rapporter i Power BI Report Builder. Forestil dig dette scenarie: Du har oprettet en Power BI-rapport i Power BI Desktop. Du har brugt en masse tid på at designe datamodellen og derefter oprettet en smuk Power BI-rapport med alle mulige flotte visuals. Rapporten har en matrix med mange rækker, så du skal rulle for at se dem alle. Dine rapportlæsere vil have en rapport, som de kan udskrive, og som viser alle rækkerne i den pågældende matrix. Det kan en sideinddelt rapport fra Power BI gøre: udskrive en tabel eller matrix, der fylder flere sider, med sidehoveder og sidefødder og et perfekt sidelayout, som du designer. Den vil supplere Power BI Desktop-rapporten. Du vil gerne have, at de skal være baseret på de samme data uden uoverensstemmelser, så du bruger det samme datasæt.
 

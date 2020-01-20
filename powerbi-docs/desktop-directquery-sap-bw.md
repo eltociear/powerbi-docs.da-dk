@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ffff443716f11101347debd97f28349afc3904bb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: fee47524be70955a123d08e10dca5ee0dd3e07fd
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876335"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761174"
 ---
-# <a name="directquery-and-sap-business-warehouse-bw"></a>DirectQuery og SAP Business Warehouse (BW)
+# <a name="connect-to-sap-business-warehouse-by-using-directquery-in-power-bi"></a>Opret forbindelse til SAP Business Warehouse ved hjælp af DirectQuery i Power BI
 Du kan oprette forbindelse til **SAP Business Warehouse (BW)** -datakilder direkte ved hjælp af **DirectQuery**. Da der arbejdes med OLAP/flere dimensioner i SAP BW, er der mange vigtige forskelle mellem DirectQuery via SAP BW og relationskilder som SQL Server. Disse forskelle kan opsummeres på følgende måde:
 
 * I **DirectQuery** via relationsdatakilder er der et sæt forespørgsler (som defineret i dialogboksen **Hent data** eller **Forespørgselseditor**), der på en logisk måde definerer de data, der er tilgængelige på feltlisten. Dette er *ikke* tilfældet, når der oprettes forbindelse til en OLAP-kilde, f.eks. SAP BW. Når der oprettes forbindelse til SAP-serveren med **Hent data**, er det i stedet bare Infocube- eller BEx-forespørgslen, der vælges. Derefter vil alle nøgletal og dimensioner for den valgte Infocube-/BEx-forespørgsel være tilgængelige på feltlisten.   

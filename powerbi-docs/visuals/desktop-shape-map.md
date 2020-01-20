@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: eac0c6fab686a3b5cf63d035ea19b52ab83aa339
-ms.sourcegitcommit: 768e1e4b19fe8c7627010127c2420d63021cb542
+ms.openlocfilehash: 3a043a343994c02a916102b83fe79d1ccd5208bf
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199445"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762318"
 ---
-# <a name="shape-maps-in-power-bi-desktop-preview"></a>Figurkort i Power BI Desktop (prøveversion)
+# <a name="create-shape-map-visualizations-in-power-bi-desktop-preview"></a>Opret visualiseringer af figurkort i Power BI Desktop (eksempelvisning)
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -115,7 +115,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="australia-states"></a>Australien: Stater
 
-| Id | forkortelse | iso | navn | postal |
+| Id | forkortelse | iso | name | postal |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -128,7 +128,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="austria-states"></a>Østrig: Stater
 
-| Id | iso | navn | navn-en | postnummer |
+| Id | iso | name | navn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -178,7 +178,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="canada-provinces"></a>Canada: Provinser
 
-| Id | iso | navn | postnummer |
+| Id | iso | name | postnummer |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -196,7 +196,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="france-regions"></a>Frankrig: Regioner
 
-| Id | navn | navn-en |
+| Id | name | navn-en |
 | --- | --- | --- |
 | Auvergne-Rhone-Alpes |  |  |
 | Bourgogne-Franche-Comte |  |  |
@@ -218,7 +218,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="germany-states"></a>Tyskland: Stater
 
-| Id | iso | navn | navn-en | postnummer |
+| Id | iso | name | navn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -270,7 +270,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="italy-regions"></a>Italien: Regioner
 
-| Id | iso | navn | navn-en | postnummer |
+| Id | iso | name | navn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
@@ -295,7 +295,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="mexico-states"></a>Mexico: Stater
 
-| Id | abreviatura | iso | navn | navn-en | postnummer |
+| Id | abreviatura | iso | name | navn-en | postnummer |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -332,7 +332,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="netherlands-provinces"></a>Nederlandene: Provinser
 
-| Id | iso | navn | navn-en |
+| Id | iso | name | navn-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -349,7 +349,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="uk-countries"></a>Storbritannien: Lande
 
-| Id | iso | navn |
+| Id | iso | name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Skotland |
@@ -358,7 +358,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="usa-states"></a>USA: Stater
 
-| Id | navn | postnummer |
+| Id | name | postnummer |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |
@@ -400,10 +400,10 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | us-ma |Massachusetts |MA |
 | us-ia |Iowa |IA |
 | us-nh |New Hampshire |NH |
-| us-or |Oregon |OR |
+| us-or |Oregon |ELLER |
 | us-mn |Minnesota |MN |
 | us-vt |Vermont |VT |
-| us-id |Idaho |ID |
+| us-id |Idaho |Id |
 | us-wi |Wisconsin |WI |
 | us-wy |Wyoming |WY |
 | us-sd |South Dakota |SD |

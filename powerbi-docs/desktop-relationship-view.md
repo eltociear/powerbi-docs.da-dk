@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: a39f675077d72698b62138aa1b9d56c5bf6a6958
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cd9671b8c38cb2aa1502c3aa00a871d125f819b1
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877850"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760474"
 ---
-# <a name="relationship-view-in-power-bi-desktop"></a>Relationsvisning i Power BI Desktop
+# <a name="work-with-relationship-view-in-power-bi-desktop"></a>Arbejde med relationsvisning i Power BI Desktop
 Med **Relationsvisning** vises alle tabeller, kolonner og relationer i din model. Det kan være særligt nyttigt, når din model indeholder komplekse relationer mellem mange tabeller.
 
 Lad os se nærmere på det.

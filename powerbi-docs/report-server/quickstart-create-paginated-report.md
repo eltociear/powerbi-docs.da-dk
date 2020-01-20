@@ -6,16 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/22/2018
+ms.date: 01/07/2020
 ms.author: maggies
-ms.openlocfilehash: b8dd79e4b256a80ba5159a1b3980e798bc611840
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4c4228ea4276235a983849d2ea88e1030f4690f7
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875046"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75732032"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Opret en sideinddelt rapport til Power BI-rapportserver
+I denne artikel kan du oprette en sideinddelt rapport for Power BI-rapportserver med nogle få hurtige trin.
+
+Leder du efter hjælp til oprettelse af sideinddelte rapporter i Report Builder til Power BI-tjenesten? Se i stedet [Sideinddelt Report Builder i Power BI](../report-builder-power-bi.md).
+
 Som navnet antyder så kan sideinddelte rapporter løbe op i mange sider. De er udformet i et fast format og tillader præcis tilpasning. Sideinddelte rapporter er .rdl-filer.
 
 Du kan gemme og administrere sideinddelte rapporter på Power BI-rapportserverens webportal nøjagtigt som på SQL Server Reporting Services (SSRS)-webportalen. Du kan oprette og redigere dem i Report Builder eller Rapportdesigner i SQL Server Data Tools (SSDT) og derefter publicere dem på den ene eller anden portal. Derefter kan rapportlæsere i din organisation få vist dem i en browser eller i en Power BI-mobilapp på en mobilenhed.
@@ -24,7 +28,7 @@ Du kan gemme og administrere sideinddelte rapporter på Power BI-rapportserveren
 
 Hvis du allerede har oprettet sideinddelte rapporter i Report Builder eller Rapportdesigner, så er du klar til at oprette sideinddelte rapporter for Power BI-rapportserveren. Hvis det ikke er tilfældet, får du her nogle hurtige trin til at komme i gang.
 
-## <a name="step-1-install-and-start-report-builder"></a>Trin 1: Installér og start Report Builder
+## <a name="step-1-start-report-builder"></a>Trin 1: Start Power BI Report Builder
 Du har muligvis allerede installeret Report Builder for at oprette rapporter for en SSRS-server. Du kan bruge den samme version eller Report Builder til at oprette rapporter for Power BI-rapportserveren. Hvis du ikke har installeret den, så er fremgangsmåden ret nem.
 
 1. I Power BI-rapportserverens webportal skal du vælge **Ny** > **Sideinddelt rapport**.
@@ -40,7 +44,7 @@ Du har muligvis allerede installeret Report Builder for at oprette rapporter for
    * Tabel eller matrix
    * Diagram
    * Kort
-   * Blank
+   * Tom
 4. Lad os starte med guiden Diagram.
    
     Guiden Diagram fører dig gennem den trinvise vejledning i at oprette et grundlæggende diagram i en rapport. Derfra har du adgang til næsten ubegrænsede tilpasningsmuligheder af rapporten.

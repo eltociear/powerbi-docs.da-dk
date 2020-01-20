@@ -1,5 +1,5 @@
 ---
-title: Overførsel til powerbi-visuals-tools 3.x
+title: Overførsel til powerbi-visuals-tools version 3.x
 description: Kom i gang med den nye version af powerbi-visuals-tools
 author: zBritva
 ms.author: v-ilgali
@@ -9,108 +9,123 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 245475feeb43ee544117aaa54969f2de1e207cd5
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 1b819aeb0f59df9ee0d48d7c41807abe62efed08
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696276"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885142"
 ---
-# <a name="migrate-to-the-new-powerbi-visuals-tools-3xx"></a>Overfør til den nye powerbi-visuals-tools 3.x.x
+# <a name="migrate-to-the-new-powerbi-visuals-tools-version-3x"></a>Overfør til den nye powerbi-visuals-tools version 3.*x*
 
-Fra og med version 3 bruger Power BI Visuals Tools Webpack til bygning af brugerdefinerede visuals.
-Den nye version giver udviklere mange nye muligheder for at oprette visuals:
+Fra og med version 3 bruger Power BI Visuals Tools (powerbi-visuals-tools eller `pbiviz`) webpack til bygning af brugerdefinerede visualiseringer.
+Den nye version giver udviklere mange forbedringer til oprettelse af visualiseringer:
 
-* TypeScript v3.x.x som standard. Nomenklaturen er ændret fra TypeScript 1.5. [Få mere at vide om TypeScript](https://www.typescriptlang.org/docs/handbook/modules.html).
+- TypeScript version 3.*x* bruges som standard. Nomenklaturen er ændret fra og med TypeScript 1.5. [Få mere at vide om TypeScript](https://www.typescriptlang.org/docs/handbook/modules.html).
 
-* ES6-moduler understøttes. Du behøver ikke at bruge [externalJS](migrate-to-new-tools.md#fix-loading-external-libraries) mere, brug ES6-importer i stedet.
+- ES6-moduler (ECMAScript 6) understøttes. Brug ES6-import nu i stedet for [externalJS](migrate-to-new-tools.md#configure-loading-of-external-libraries).
 
-* Nye versioner af [D3v5](https://d3js.org/) og andre ES6-modulbaserede biblioteker understøttes.
+- Nye versioner af [D3v5](https://d3js.org/) (Data-Driven Documents) og andre ES6-modulbaserede biblioteker understøttes.
 
-* Reduceret pakkestørrelse. Webpack bruger [Tree Shaking](https://webpack.js.org/guides/tree-shaking/) til at fjerne ubrugt kode. Det reducerer JS-koden, og ydeevnen for indlæsning af visuals bliver derfor bedre.
+- Reduceret pakkestørrelse. [Tree shaking](https://webpack.js.org/guides/tree-shaking/) bruges af webpack til at fjerne ubrugt kode. Den reducerer JavaScript-koden og giver dig en bedre ydeevne ved indlæsning af visualiseringer.
 
-* Forbedret API-ydeevne.
+- Forbedret API-ydeevne.
 
-* Biblioteket Globalize.js [er integreret](migrate-to-new-tools.md#remove-globalizejs-library) i formatting-utils.
+- Biblioteket Globalize.js [er integreret](migrate-to-new-tools.md#remove-the- globalizejs-library) i FormattingUtils.
 
-* Tools bruger [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) til at vise visualkodebasen.
+- Power BI Visuals Tools bruger [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) til at vise visualiseringens kodebase.
 
-Alle overførselstrin for den nye version af Power BI Visuals Tools beskrives nedenfor.
+Denne artikel beskriver alle overførselstrin for den nye version af Power BI Visuals Tools.
 
 ## <a name="backward-compatibility"></a>Bagudkompatibilitet
 
-Den nye version af Tools gemmer bagudkompatibilitet for gammel visualkodebase, men kan kræve yderligere ændringer for at indlæse eksterne biblioteker.
+Den nye version af Tools gemmer oplysninger om bagudkompatibilitet for den gamle visualiserings kodebase, men kan kræve yderligere ændringer for at indlæse eksterne biblioteker.
 
-De biblioteker, der understøtter modulsystemer, importeres som Webpack-moduler. Alle andre biblioteker og visualkildekode samles i ét modul.
+De biblioteker, der understøtter modulsystemer, importeres som webpack-moduler. Alle andre biblioteker og kildekode for visualiseringen ombrydes til ét modul.
 
-Globale variabler, f. eks. JQuery og Lodash, der blev brugt i de forrige pbiviz-værktøjer, er nu forældede. Det betyder, at hvis den gamle visualkode er afhængig af globale variabler, kan visual'et i dette tilfælde deles.
+Globale variabler, f.eks. JQuery og Lodash, der blev brugt i de forrige Power BI Visuals Tools, er nu forældede. Hvis den gamle kode til din visualisering er afhængig af globale variabler, fungerer visualiseringen sandsynligvis ikke sammen med de nye værktøjer.
 
-Den tidligere version af Power BI Visuals Tools kræves for at definere en visualklasse under modulet `powerbi.extensibility.visual`.
+I den tidligere version af Power BI Visuals Tools skulle du definere en visuel klasse under modulet `powerbi.extensibility.visual`. Med den nye version af værktøjerne skal du i stedet definere en visuel klasse i den overordnede TypeScript-fil (.ts). Normalt er denne fil `src/visual.ts`.
 
-## <a name="how-to-install-powerbi-visuals-tools"></a>Sådan installerer du powerbi-visuals-tools
+## <a name="install-powerbi-visuals-tools"></a>Installer powerbi-visuals-tools
 
-Du kan installere det nye værktøj ved at udføre kommandoen
+Kør denne kommando for at installere de nye værktøjer:
 
 ```cmd
 npm install -g powerbi-visuals-tools
 ```
 
-Eksemplet på sampleBarChart-visual og tilsvarende [ændringer](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/package.json#L16) i `package.json`:
+Den følgende kode er fra `package.json`-filen i det [visuelle lager for sampleBarChart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/package.json#L15), når det visuelle projekt er blevet opdateret til at fungere med de nye værktøjer:
 
 ```json
 {
     "name": "visual",
-    "version": "1.2.3",
+    "version": "3.0.0",
     "scripts": {
         "pbiviz": "pbiviz",
         "start": "pbiviz start",
+        "package": "pbiviz package",
         "lint": "tslint -r \"node_modules/tslint-microsoft-contrib\"  \"+(src|test)/**/*.ts\"",
         "test": "pbiviz package --resources --no-minify --no-pbiviz"
     },
     "devDependencies": {
-      "@types/d3": "5.0.0",
-      "d3": "5.5.0",
-      "powerbi-visuals-tools": "^3.1.0",
-      "tslint": "^4.4.2",
-      "tslint-microsoft-contrib": "^4.0.0"
+        "@types/d3": "5.7.2",
+        "d3": "5.12.0",
+        "powerbi-visuals-api": "^2.6.1",
+        "powerbi-visuals-tools": "^3.1.7",
+        "powerbi-visuals-utils-dataviewutils": "^2.2.1",
+        "powerbi-visuals-utils-formattingutils": "^4.4.2",
+        "powerbi-visuals-utils-interactivityutils": "^5.6.0",
+        "powerbi-visuals-utils-tooltiputils": "^2.3.1",
+        "tslint": "^5.20.0",
+        "tslint-microsoft-contrib": "^6.2.0"
     }
 }
 ```
 
-## <a name="how-to-install-power-bi-custom-visuals-api"></a>Sådan installerer du API'en til brugerdefinerede visuals i Power BI
+## <a name="install-the-power-bi-custom-visuals-api"></a>Installer Power BI Custom Visuals API
 
-Den nye version af powerbi-visual-tools indeholder ikke alle API-versioner. I stedet for skal udvikleren installere en bestemt version af [`powerbi-visuals-api`](https://www.npmjs.com/package/powerbi-visuals-api)-pakken. Pakkeversionen stemmer overens med API-versionen for brugerdefinerede visuals i Power BI og omfatter alle API-typedefinitionerne til brugerdefinerede visuals i Power BI.
+Den nye version af powerbi-visual-tools indeholder ikke alle API-versioner. I stedet skal du installere en bestemt version af [powerbi-visuals-api](https://www.npmjs.com/package/powerbi-visuals-api)-pakken. Vælg den version af pakken, der stemmer overens med API-versionen af dine brugerdefinerede visualiseringer i Power BI. Pakken indeholder alle typedefinitioner til Power BI Custom Visuals API.
 
-Føj `powerbi-visuals-api` til projektafhængigheder ved at udføre kommandoen `npm install --save-dev powerbi-visuals-api`.
-Og du skal fjerne linket til gamle API-typedefinitioner. Fordi typer fra `powerbi-visuals-api` inkluderes automatisk af Webpack. Tilsvarende ændringer findes i [denne](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/package.json#L14) linje af `package.json`.
+Føj `powerbi-visuals-api` til dine projektafhængigheder af et projekt ved at køre denne kommando:
 
-## <a name="update-tsconfigjson"></a>Opdater `tsconfig.json`
+```cmd
+npm install --save-dev powerbi-visuals-api
+```
 
-Hvis du vil bruge eksterne moduler, skal du ændre indstillingen `out` til `outDir`.
-`"outDir": "./.tmp/build/",` i stedet `"out": "./.tmp/build/visual.js",`.
+Fjern også links til gamle API-typedefinitioner, da webpack automatisk indeholder typer fra `powerbi-visuals-api`. De tilsvarende ændringer findes i [package.json](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/package.json#L14) og [tsconfig. json](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/tsconfig.json#L14).
 
-Det er påkrævet, da TypeScript-filer kompileres til JavaScript-filer uafhængigt af hinanden. Det er derfor, at du ikke længere behøver at angive visual.js-filen som output.
+## <a name="update-tsconfigjson"></a>Opdater tsconfig.json
 
-Og du kan også ændre indstillingen `target` til `ES6` hvis du vil bruge moderne JavaScript som output. [Det er valgfrit](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/tsconfig.json#L6).
+Hvis du vil bruge eksterne moduler, skal du ændre indstillingen `out` til `outDir`. Brug f.eks. `"outDir": "./.tmp/build/",` i stedet for `"out": "./.tmp/build/visual.js",`.
 
-## <a name="update-custom-visuals-utils"></a>Opdater utils for brugerdefinerede visuals
+Denne ændring er påkrævet, da TypeScript-filer kompileres til JavaScript-filer uafhængigt af hinanden. Det er derfor, at du ikke længere behøver at angive visual.js-filen som output.
 
-Hvis du bruger en powerbi-visuals-utils](https://www.npmjs.com/search?q=powerbi-visuals-utils), skal du også opdatere dem til den seneste version.
+Du kan også ændre indstillingen `target` til `ES6`, hvis du vil bruge moderne JavaScript som output. Denne ændring er [valgfri](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/tsconfig.json#L7).
 
-Udfør kommandoen `npm install powerbi-visuals-utils-<UTILNAME> --save`. (F.eks. `npm install powerbi-visuals-utils-dataviewutils --save` ) for at få den nye version med eksterne TypeScript-moduler.
+## <a name="update-custom-visuals-utilities"></a>Opdater hjælpeprogrammer til brugerdefinerede visualiseringer
 
-Du kan finde et eksempel i MekkoChart-[lageret](https://github.com/Microsoft/powerbi-visuals-mekkochart).
-Denne visual bruger alle utils.
+Hvis du bruger en af [powerbi-visuals-utils](https://www.npmjs.com/search?q=powerbi-visuals-utils)-pakkerne, skal du også opdatere dem til den seneste version. Det gør du ved at køre denne kommando:
 
-## <a name="remove-globalizejs-library"></a>Fjern biblioteket Globalize.js
+```cmd
+npm install powerbi-visuals-utils-<UTILNAME> --save
+```
 
-Den nye version af [powerbi-visuals-utils-formattingutils@4.3](https://www.npmjs.com/package/powerbi-visuals-utils-formattingutils) omfatter som standard globalize.js.
-Du behøver ikke at inkludere dette bibliotek manuelt i projektet.
-Alle påkrævede lokaliseringer føjes automatisk til den endelige pakke.
+For at få den nye version med eksterne TypeScript-moduler skal du f.eks. køre: 
 
-## <a name="fix-loading-external-libraries"></a>Ret indlæsning af eksterne biblioteker
+```cmd
+npm install powerbi-visuals-utils-dataviewutils --save
+```
 
-Medtag i stedet for ny JS-fil efter biblioteker i `externalJS`-matrixen `pbiviz.json`. Eksempel:
+Hvis du vil se et eksempel på en visualisering, der bruger alle `powerbi-visuals-utils`-pakker, skal du se [MekkoChart-lager](https://github.com/Microsoft/powerbi-visuals-mekkochart).
+
+## <a name="remove-the-globalizejs-library"></a>Fjern biblioteket Globalize.js
+
+Den nye version af [powerbi-visuals-utils-formattingutils@4.3](https://www.npmjs.com/package/powerbi-visuals-utils-formattingutils) omfatter Globalize.js. Så du behøver ikke at inkludere dette bibliotek manuelt i projektet. Alle påkrævede lokaliseringer føjes automatisk til den endelige pakke.
+
+## <a name="configure-loading-of-external-libraries"></a>Konfigurer indlæsning af eksterne biblioteker
+
+Medtag nye JavaScript-filer efter biblioteker i `externalJS`-matrixet for `pbiviz.json`. Eksempel:
 
 ```JSON
 "externalJS": [
@@ -121,23 +136,21 @@ Medtag i stedet for ny JS-fil efter biblioteker i `externalJS`-matrixen `pbiviz.
 ]
 ```
 
-Importér bibliotekerne i kilden. Eksempel for `lodash-es`:
+Importér bibliotekerne i din kildekode. Du kan f.eks. bruge denne sætning til `lodash-es`:
 
 ```JS
 import * as _ from "lodash-es";
 ```
 
-hvor `_` er den globale variabel for biblioteket `lodash`.
+I det foregående eksempel er `_` den globale variabel for biblioteket `lodash`.
 
-## <a name="changes-in-the-visuals-sources"></a>Ændringer i visualkilderne
+## <a name="make-changes-in-the-sources-of-your-visuals"></a>Foretag ændringer i kilderne til dine visualiseringer
 
-Den primære ændring konverterer interne moduler til eksterne moduler, da du ikke kan bruge eksterne moduler i interne moduler.
+Den primære ændring, du skal foretage, er at konvertere interne moduler til eksterne moduler. Du kan ikke bruge eksterne moduler i interne moduler.
 
-Disse ændringer beskriver ændringer, der er blevet anvendt på eksemplet med et liggende søjlediagram
+Her er en detaljeret beskrivelse af de ændringer, du skal foretage. Ændringerne er beskrevet i konteksten af den brugerdefinerede visualiserings kodeeksempel på søjlediagrammet:
 
-Du kan finde en detaljeret beskrivelse af ændringerne nedenfor:
-
-1. Fjern alle moduldefinitioner fra alle filer med [kildekode](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L153)
+1. Fjern alle moduldefinitioner fra hver fil med [kildekode](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbL1-L3):
 
     ```typescript
     module powerbi.extensibility.visual {
@@ -145,13 +158,13 @@ Du kan finde en detaljeret beskrivelse af ændringerne nedenfor:
     }
     ```
 
-2. [Importér API-definitioner til brugerdefinerede visuals i Power BI](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L2).
+2. [Importér API-definitioner til brugerdefinerede visualiseringer i Power BI](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbR4):
 
     ```typescript
     import powerbi from "powerbi-visuals-api";
     ```
 
-3. [Importér](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L12-L23) nødvendige grænseflader eller klasser fra internt `powerbi`-modul.
+3. [Importér de nødvendige grænseflader eller klasser](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbR12-R35) fra det `powerbi`interne modul.
 
     ```typescript
     import PrimitiveValue = powerbi.PrimitiveValue; 
@@ -168,19 +181,19 @@ Du kan finde en detaljeret beskrivelse af ændringerne nedenfor:
     import ISelectionManager = powerbi.extensibility.ISelectionManager; 
     ```
 
-4. [Importér](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L1) D3.js-biblioteket
+4. [Importér D3.js-biblioteket](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbR2):
 
     ```typescript
     import * as d3 from "d3";
     ```
 
-    Eller importér kun de påkrævede d3-biblioteksmoduler
+    Eller importér kun de påkrævede D3-biblioteksmoduler:
 
     ```typescript
     import { max, min } from "d3-array";
     ```
 
-5. [Importér](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L4-L10) de utils, klasser og grænseflader, der er defineret i visualprojektet, til hovedkildefilen
+5. [Importér de hjælpeprogrammer, klasser og grænseflader, der er defineret i det visuelle projekt](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbR38-R41), til hovedkildefilen:
 
     ```typescript
     import { getLocalizedString } from "./localization/localizationHelper";
@@ -194,62 +207,60 @@ Du kan finde en detaljeret beskrivelse af ændringerne nedenfor:
 
 ### <a name="import-css-styles"></a>Importér CSS-typografier
 
-Den nye version af Tools gør det muligt for udviklere at importere CSS, LESS-typografi direkte til TypeScript-koden.
+Den nye version af værktøjet gør det muligt for udviklere at importere `CSS`- og `Less`-typografier direkte til TypeScript-koden. Afsnittet [Styles](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/pbiviz.json#L21), der blev brugt tidligere, ignoreres nu af compileren.
 
-Derfor ignorerer en compiler det tidligere brugte [typografiafsnit](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/pbiviz.json#L22).
-
-Hvis du vil bruge dit typografiark, skal du åbne ts-hovedfilen og tilføje følgende linje:  
+Hvis du vil bruge dit typografiark, skal du åbne TypeScript-filen (.ts) og tilføje denne linje:  
 
 ```typescript
 import "./../style/visual.less";
 ```  
 
-Dine CSS, LESS-formater kompileres automatisk.  
+Dine `CSS`- og `Less`-typografier kompileres automatisk.
 
 ### <a name="externaljs-section-in-pbivizjson"></a>Afsnittet externalJS i pbiviz.json
 
-Værktøjerne [kræver ikke](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/pbiviz.json#L20) en liste over `externalJS`, der kan indlæses i visualbundtet. Det skyldes, at Webpack indeholder alle importerede biblioteker.
+Værktøjerne [kræver ikke en liste over `externalJS`-biblioteker](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-a1a7bbee7e7d2f9d449f4b534532bcf2R20) for at indlæses i det visuelle bundt, da webpack indeholder alle importerede biblioteker.
 
-**Afsnittet etxternalJS i pbivi.json skal være tom.**
+> [!NOTE]
+> I `pbiviz.json` skal du lade afsnittet `externalJS` være tomt.
 
-Kald de typiske kommandoer `npm run package` for at oprette visualpakken eller `npm run start` starte udviklingsserveren.
+Brug den typiske kommando `npm run package` for at oprette den visuelle pakke eller `npm run start` for at starte udviklingsserveren.
 
-## <a name="updating-d3js-library-to-version-5"></a>Opdatering af D3.js-biblioteket til version 5
+## <a name="update-the-d3js-library-to-version-5"></a>Opdater D3.js-biblioteket til version 5
 
-Med den nye version af Tools kan du begynde at bruge den nye version af D3.js-biblioteket.
+Med det nye visualiseringsværktøj kan du begynde at bruge den nye version af D3.js-biblioteket. Kør disse kommandoer for at opdatere D3 i dit visualiseringsprojekt:
 
-Kald kommandoerne for at opdatere D3 i dit visualprojekt
+- `npm install --save d3@5` for at installere det nye D3.js.
 
-`npm install --save d3@5` for at installere det nye D3.js.
+- `npm install --save-dev @types/d3@5` for at installere de nye typedefinitioner til D3.js.
 
-`npm install --save-dev @types/d3@5` for at installere de nye typedefinitioner til D3.js.
+> [!IMPORTANT]
+> D3 version 5 introducerer adskillige vigtige ændringer.
 
-Der er flere væsentlige ændringer, og du skal ændre din kode, så den bruger det nye D3.js.
+Rediger din kode for at arbejde med den nye D3.js:
 
-1. Grænsefladen `d3.Selection<T>` [blev ændret](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR157) til `Selection<GElement extends BaseType, Datum, PElement extends BaseType, PDatum>`
+- Grænsefladen `d3.Selection<T>` [blev ændret](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR157) til `Selection<GElement extends BaseType, Datum, PElement extends BaseType, PDatum>`.
 
-2. Du kan ikke anvende flere attributter med et enkelt kald af metoden `attr`. Du [skal overføre](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR278) hver attribut i et separat kald af metoden `attr`. Der gælder det [samme](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR247) for metoden `style`.
+- Du kan ikke anvende flere attributter ved at bruge et enkelt kald af metoden `attr`. I stedet skal du [sende hver attribut i et separat kald](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR278) til `attr`. Foretag også [særskilte kald til metoden `style`](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR247).
 
-3. I D3.js v4 introduceres den nye flettemetode. Denne metode bruges ofte til at flette, angive og opdatere valg efter en datasammenføjning. [Kald flettemetoden](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/83fe8d52d362dccd0034dd8e32c94080d9376b29#diff-433142f7814fee940a0ffc98dc75bfcbR272) for at bruge D3 korrekt.
+- D3.js version 4 introducerede den nye `merge`-metode. Denne metode bruges ofte til at flette `enter`- og `update`-valg efter en datasammenføjning. Hvis du vil bruge D3 korrekt, skal du [kalde metoden `merge`](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/83fe8d52d362dccd0034dd8e32c94080d9376b29#diff-433142f7814fee940a0ffc98dc75bfcbR272).
 
 [Læs mere](https://github.com/d3/d3/blob/master/CHANGES.md) om ændringer i D3.js-biblioteket.
 
-## <a name="babel"></a>Babel
+## <a name="install-babel-and-core-js"></a>Installer Babel og core-js
 
-Fra og med version 3.1 kan Tools bruge Babel til at kompilere ny moderne JS-kode til gammel ES5, der understøtter en lang række browsere.
+Fra og med version 3.1 kan visualiseringsværktøjet bruge Babel til at kompilere moderne JavaScript-kode til gammel ES5 (ECMAScript 5), der understøtter en lang række browsere.
 
-Denne indstilling er som standard aktiveret, men du skal importere pakken [`@babel/polyfill`](https://babeljs.io/docs/en/babel-polyfill)manuelt.
+Babel-indstillingen er som standard aktiveret, men du skal importere pakken [`core-js`](https://www.npmjs.com/package/core-js) manuelt. Kør denne kommando for at installere pakken:
 
-Udfør kommandoen for at installere pakken,
+```cmd
+npm install --save core-js
+```
 
-`npm install --save @babel/polyfill`
+Importér derefter pakken til startpunktet for visualiseringskoden. Det er typisk filen 'src/visual.ts'.
 
-og importér pakken på startpunktet for visualkoden (normalt er det filen 'src/visual.ts'):
-
-`import "@babel/polyfill";`
+```JS
+import "core-js/stable";
+```
 
 Læs mere om Babel [i dokumentationen](https://babeljs.io/docs/en/).
-
-Kør til sidst [webpack-visualizer](https://github.com/chrisbateman/webpack-visualizer) for at få vist visualkodebasen.  
-
-![Statistik for visualkode](./media/webpack-stats.png)

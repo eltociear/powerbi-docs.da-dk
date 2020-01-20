@@ -9,12 +9,12 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 08/29/2019
-ms.openlocfilehash: 44e56613a69069351f21aa7d515fc2bb296e6728
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: b8301ca17559b81d4db132fbeaa0955ce68a4c6e
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74128264"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762134"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Videregiv en rapportparameter i en URL-adresse til en sideinddelt rapport i Power BI 
 
@@ -64,6 +64,8 @@ Hvis du vil videregive en boolesk værdi, skal du bruge 0 for falsk og 1 for san
 
 > [!NOTE]
 > Hvis din rapport indeholder en rapportparameter, som har en standardværdi, og værdien for egenskaben**Spørg** er **falsk** (dvs. egenskaben **Spørg bruger** ikke er valgt i Rapportstyring), kan du ikke videregive en værdi for den pågældende rapportparameter i en URL-adresse. Det giver administratorer mulighed for at forhindre, at slutbrugerne kan tilføje eller ændre værdierne for visse rapportparametre.
+
+> Power BI understøtter ikke en forespørgselsstreng på mere end 900 tegn.  Denne værdi kan overskrides, hvis du bruger URL-parametre til at få vist din sideinddelte rapport.  Det er især tilfældet, hvis du bruger parametre med flere værdier.
 
 ## <a name="additional-examples"></a>Yderligere eksempler 
 

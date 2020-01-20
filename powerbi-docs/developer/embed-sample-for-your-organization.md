@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 07/29/2019
-ms.openlocfilehash: c67ce4ef9b5b0ac2054d4ecdf76ee3a1a79571d8
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 02/04/2020
+ms.openlocfilehash: 7a10df09bd6b0f4ce81ee32ae72700080a8020d9
+ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74311069"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691364"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Selvstudium: Integrer Power BI-indhold i en app til din organisation
 
@@ -53,6 +53,8 @@ Hvis du vælger at konfigurere miljøet manuelt, kan du fortsætte nedenfor.
 [Registrer dit program](register-app.md) med Azure Active Directory for at give dit program adgang til [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/). Når du registrerer dit program, får du mulighed for at oprette en identitet for programmet og angive tilladelser til Power BI REST-ressourcer.
 
 Du skal fortsætte med at registrere en app med et **serverbaseret webprogram**. Du registrerer et serverbaseret webprogram for at oprette en programhemmelighed.
+
+Når du har oprettet dit program i Azure, skal du åbne programmet i Azure, navigere til *Godkendelse* og i *URI-adresser for omdirigering* føje **/Redirect** til *URI-adressen for omdirigering*.
 
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurer dit Power BI-miljø
 

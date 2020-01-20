@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 03a426947787cbd2720661267cac4601a4b9b13a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 11be774515552d10846b51863eda6c155b92b57f
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880951"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75758077"
 ---
-# <a name="combo-chart-in-power-bi"></a>Kombinationsdiagram i Power BI
+# <a name="create-and-use-combo-charts-in-power-bi"></a>Opret og brug kombinationsdiagrammer i Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -59,11 +59,11 @@ Se, hvordan Will opretter et kombinationsdiagram ved hjælp af salgs- og marketi
 
 1. Start på en tom rapportside, og opret et søjlediagram, der viser dette års salg og bruttomargen pr. måned.
 
-    a.  I ruden Fields skal du vælge **Sales**\> **This Year Sales** > **Value**.
+    a.  I ruden Felter skal du vælge **Sales** \> **This Year Sales** > **Value**.
 
     b.  Træk **Sales** \> **Gross Margin This Year** til beholderen **Value**.
 
-    c. Vælg **Time**\>**FiscalMonth** for at føje det til beholderen **Axis**.
+    c. Vælg **Time**  \> **FiscalMonth** for at føje elementet til beholderen **Axis**.
 
     ![eksempel på selvstudium med kombinationsdiagram](media/power-bi-visualization-combo-chart/combotutorial1new.png)
 5. Vælg **Flere indstillinger** (...) i øverste højre hjørne af visualiseringen, og vælg **Sortér efter > FiscalMonth**. Hvis du vil ændre sorteringsrækkefølgen, skal du vælge ellipsen igen og vælge enten **Sortér stigende** eller **Sortér faldende**. I dette eksempel bruger vi **Sortér stigende**.
@@ -71,7 +71,7 @@ Se, hvordan Will opretter et kombinationsdiagram ved hjælp af salgs- og marketi
 6. Konvertér søjlediagrammet til et kombinationsdiagram. Der er to kombinationsdiagrammer: **Kurvediagram og stablet søjlediagram** og **Kurvediagram og grupperet søjlediagram**. Vælg søjlediagrammet, og vælg derefter **Line and clustered column chart** fra fanen **Visualizations**.
 
     ![eksempel på konvertering af kombinationsdiagram](media/power-bi-visualization-combo-chart/converttocombo-new2.png)
-7. Fra ruden **Fields** kan du derefter trække **Sales** \> **Last Year Sales** til beholderen **Line Values**.
+7. Fra ruden **Felter** kan du derefter trække **Sales** \> **Last Year Sales** til beholderen **Line Values**.
 
    ![](media/power-bi-visualization-combo-chart/linevaluebucket.png)
 

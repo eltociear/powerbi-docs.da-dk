@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 53124f2b1ede9d8a9c3a9866416f713af1fd2061
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: efd110ad73b1bd72813d418a1f641613c88dc0d5
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877258"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762571"
 ---
 # <a name="using-dataflows-with-on-premises-data-sources"></a>Brug af dataflow med datakilder i det lokale miljø
 
@@ -24,7 +24,8 @@ Ved hjælp af **dataflow** kan du oprette en samling af data fra forskellige kil
 
 ## <a name="configuring-an-enterprise-gateway-for-use-with-dataflows"></a>Konfiguration af en Enterprise Gateway til brug med dataflow
 
-Hvis du vil bruge en datakilde i det lokale miljø i et dataflow, skal de brugere, der opretter dataflowet, have en **Enterprise Gateway** installeret og konfigureret. Den bruger, der opretter dataflowet, skal også være administrator af den pågældende Enterprise Gateway for at kunne bruge den til et dataflow.
+Hvis du vil oprette et dataflow ved hjælp af en gateway, skal brugeren være virksomhedens gatewayadministrator, eller administratoren skal have delt den datakilde, der planlægges at bruges sammen med brugeren. 
+
 
 > [!NOTE]
 > Dataflow understøttes kun ved hjælp af Enterprise Gateways.
@@ -35,7 +36,7 @@ Når du opretter et dataflow, skal du vælge en datakilde i det lokale miljø p�
 
 ![Vælg en datakilde i det lokale miljø](media/service-dataflows-onpremises-gateways/onpremises-gateways_02a.png)
 
-Når du har foretaget dit valg, bliver du bedt om at angive forbindelsesoplysningerne for den Enterprise Gateway, der skal bruges til at få adgang til dataene i det lokale miljø. Du skal vælge selve gatewayen og angive legitimationsoplysninger for den valgte gateway. På rullelisten vises kun de gateways, som brugeren er administrator for.
+Når du har foretaget dit valg, bliver du bedt om at angive forbindelsesoplysningerne for den Enterprise Gateway, der skal bruges til at få adgang til dataene i det lokale miljø. Du skal vælge selve gatewayen og angive legitimationsoplysninger for den valgte gateway.
 
 ![Angiv forbindelsesoplysninger](media/service-dataflows-onpremises-gateways/onpremises-gateways_03.png)
 

@@ -6,14 +6,14 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/01/2017
+ms.date: 01/09/2020
 ms.author: maggies
-ms.openlocfilehash: 90f08abd119e7dfc0bf639eeb2ed8334fbdfa234
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 7052b0f045b98ce8e25822f76fe0b8391e298a47
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74699009"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75837602"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Planlagt opdatering af Power BI-rapport på Power BI-rapportserver
 Planlagt opdatering af Power BI-rapporter gør det muligt at holde dataene til en rapport ajourført.
@@ -61,8 +61,10 @@ Du kan finde oplysninger om, hvordan du overvåger en Analysis Services-forekoms
 
 Du kan finde oplysninger om hukommelsesindstillinger i Analysis Services under [Egenskaber for hukommelse](https://docs.microsoft.com/sql/analysis-services/server-properties/memory-properties).
 
+### <a name="data-model-size-limit"></a>Grænse for størrelse på datamodel
+Den datamodel, der indlæses i det interne Analysis Services-program under en planlagt opdatering, har en maksimal størrelse på 2.000 MB (2 GB). Denne maksimale størrelse kan ikke konfigureres. Hvis din datamodel vokser til større end 2 GB, modtager du en opdateringsfejl, "længden på resultatet overskrider længdegrænsen (2 GB) for målets størrelsestype." I det tilfælde anbefaler vi, at modellen hostes i en Analysis Services-forekomst og bruger en direkte forbindelse til modellen i rapporten.
+
 ## <a name="next-steps"></a>Næste trin
 Konfigurer [planlagt opdatering](configure-scheduled-refresh.md) af en Power BI-rapport.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

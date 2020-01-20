@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e7fa98be039093015e1b19ba8bf20f1368658a43
-ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
+ms.openlocfilehash: 6a3458de09cece30948ff848859f05ed8127d034
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907794"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75757847"
 ---
-# <a name="filled-maps-choropleth-in-power-bi"></a>Kartogrammer (Choropleths) i Power BI
+# <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Opret og brug udfyldte kort (choropleth-kort) i Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -47,7 +47,7 @@ Udfyldte kort er et godt valg:
 
 ### <a name="prerequisites"></a>Forudsætninger
 I dette selvstudium bruges [PBIX-filen med eksemplet til Salg og marketing](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
-1. Vælg **Fil** > **Åbn** i det øverste venstre afsnit i menulinjen.
+1. Vælg **Fil** > **Åbn** i øverste venstre sektion på menulinjen
    
 2. Find din kopi af **PBIX-filen med eksemplet til Salg og marketing**
 
@@ -66,7 +66,7 @@ I denne video opretter Kim et grundlæggende kort og konverterer det til et udfy
 [VIDEO https://www.youtube.com/embed/ajTPGNpthcg ]
 
 ### <a name="create-a-filled-map"></a>Opret et kartogram
-1. Fra ruden Fields skal du vælge feltet **Geo** \> **State**.    
+1. Fra ruden Felter skal du vælge feltet **Geo** \> **State**.    
 
    ![gult flueben ud for Tilstand](media/power-bi-visualization-filled-maps-choropleths/power-bi-state.png)
 2. [Konvertér diagrammet](power-bi-report-change-visualization-type.md) til et udfyldt kort. Bemærk, at **State** nu befinder sig i beholderen **Location**. Bing Maps bruger feltet i beholderen **Location** til at oprette kortet.  Der er mange forskellige muligheder for gyldige placeringer: lande, stater, kommuner, byer, postnumre osv. Bing Maps levere udfyldte kortfigurer for placeringer over hele verden. Uden en gyldig post i beholderen Location kan Power BI ikke oprette det udfyldte kort.  

@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: efbae4250b7b3cab18892cf519bfac5da3a88e1b
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 08eda4e93a3e02e357c8153c656ec16811893ea9
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73868659"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761427"
 ---
-# <a name="customizing-tooltips-in-power-bi-desktop"></a>Tilpasning af værktøjstips i Power BI Desktop
+# <a name="customize-tooltips-in-power-bi-desktop"></a>Tilpas værktøjstip i Power BI Desktop
 Værktøjstips er en elegant måde at angive flere oplysninger om kontekst og detaljer om datapunkter på i en visualisering. På følgende billede vises et værktøjstip, der er anvendt på et diagram i Power BI Desktop.
 
 ![Standardværktøjstip](media/desktop-custom-tooltips/custom-tooltips-1.png)

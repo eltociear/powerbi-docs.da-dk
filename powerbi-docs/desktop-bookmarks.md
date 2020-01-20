@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d22ac09ac357f3060e4fd79a4e9344a059dace53
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: 08d222f03991bdf605f8e465ff0152d40d07d815
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311173"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761881"
 ---
-# <a name="use-bookmarks-in-power-bi-desktop-to-share-insights-and-build-stories"></a>Brug bogmærker i Power BI Desktop til at dele indsigt og oprette tekstenheder
+# <a name="create-bookmarks-in-power-bi-desktop-to-share-insights-and-build-stories"></a>Opret bogmærker i Power BI Desktop for at dele indsigt og oprette tekstenheder
 Med *bogmærker* i Power BI Desktop kan du registrere den aktuelt konfigurerede visning af en rapportside, herunder filtreringen af og tilstanden for visualiseringerne. Du kan vende tilbage til denne tilstand senere ved at vælge det gemte bogmærke. 
 
 Du kan også oprette en samling af bogmærker, arrangere dem i den ønskede rækkefølge og senere gennemgå hvert bogmærke i en præsentation for at fremhæve en række indsigter eller den tekstenhed, du vil fortælle med dine visuelle elementer og rapporter. 

@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8d5923c111debb14aab46977d42f3357837d9399
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 86307a871503dd42e565099b810cb82efa109417
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73878305"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761220"
 ---
-# <a name="directquery-and-sap-hana"></a>DirectQuery og SAP HANA
+# <a name="connect-to-sap-hana-data-sources-by-using-directquery-in-power-bi"></a>Opret forbindelse til SAP HANA-datakilder ved hjælp af DirectQuery i Power BI
 Du kan oprette forbindelse til **SAP HANA**-datakilder direkte ved hjælp af **DirectQuery**. Der er to muligheder, når du opretter forbindelse til SAP HANA:
 
 * **Behandl SAP HANA som en flerdimensionel kilde (standard):**  I dette tilfælde er funktionsmåden den samme som, når der oprettes forbindelse mellem Power BI og andre multidimensionelle kilder, f.eks. SAP Business Warehouse eller Analysis Services. Når du opretter forbindelse til SAP HANA ved hjælp af denne indstilling, markeres en enkelt analyse- eller beregningsvisning, og alle målinger, hierarkier og attributter i den pågældende visning er tilgængelige på feltlisten. I takt med at visualiseringerne oprettes, hentes de aggregerede data altid fra SAP HANA. Dette er den anbefalede tilgang og er standard for nye DirectQuery-rapporter via SAP HANA.

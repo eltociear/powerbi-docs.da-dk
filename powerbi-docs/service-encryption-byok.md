@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 01/08/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 4cddf01dd57191b5d3e707589e6d8a78e106259f
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.openlocfilehash: c4b4d706f56d9ebc91b17194c9b2fa631aeb8497
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74958465"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762111"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Medbring dine egne krypteringsnøgler til Power BI (prøveversion)
 
@@ -34,7 +34,7 @@ Hvis du vil bruge BYOK, skal du uploade data til Power BI-tjenesten fra en PBIX-
 - [Streamingdatasæt](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 - [Store modeller](service-premium-large-models.md)
 
-BYOK gælder kun for det datasæt, der er knyttet til PBIX-filen, ikke cacher med forespørgselsresultater for felter og visualiseringer.
+BYOK gælder kun for det datasæt, der er knyttet til PBIX-filen, ikke cacher med forespørgselsresultater for felter og visuals.
 
 ## <a name="configure-azure-key-vault"></a>Konfigurer Azure Key Vault
 
@@ -104,6 +104,8 @@ Før du aktiverer BYOK, skal du overveje følgende:
 - På dette tidspunkt kan du ikke deaktivere BYOK, når funktionen er aktiveret. Afhængigt af, hvordan du angiver parametre for `Add-PowerBIEncryptionKey`, kan du styre, hvordan du kan bruge BYOK til en eller flere af dine kapaciteter. Du kan imidlertid ikke fortrydes registreringen af nøgler i din lejer. Du kan finde flere oplysninger under [Aktivér BYOK](#enable-byok).
 
 - Du kan ikke _direkte_ flytte et arbejdsområde, der bruger BYOK, fra en dedikeret kapacitet i Power BI Premium til delt kapacitet. Du skal først flytte arbejdsområdet til en dedikeret kapacitet, der ikke har BYOK aktiveret.
+
+- Hvis du flytter et arbejdsområde, der bruger BYOK fra en dedikeret kapacitet i Power BI Premium, til delt, vil rapporter og datasæt være utilgængelige, da de krypteres med nøglen. For at undgå denne situation skal du først flytte arbejdsområdet til en dedikeret kapacitet, der ikke har BYOK aktiveret.
 
 ### <a name="enable-byok"></a>Aktivér BYOK
 
@@ -176,7 +178,7 @@ Power BI omfatter yderligere cmdlet'er, der hjælpe med at administrere BYOK i d
 
     Bemærk, at kryptering er aktiveret på kapacitetsniveau, men du får krypteringsstatus på datasætniveau for det angivne arbejdsområde.
 
-- Brug [ `Switch-PowerBIEncryptionKey` ](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) at skifte (eller _rotere_) versionen af den nøgle, der bruges til kryptering. Cmdlet'en opdaterer blot `-KeyVaultKeyUri` for en nøgle `-Name`:
+- Brug [`Switch-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) at skifte (eller _rotere_) versionen af den nøgle, der bruges til kryptering. Cmdlet'en opdaterer blot `-KeyVaultKeyUri` for en nøgle `-Name`:
 
     ```powershell
     Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'

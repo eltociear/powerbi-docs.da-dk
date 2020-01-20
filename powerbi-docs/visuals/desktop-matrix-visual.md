@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 06/25/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f37bbbb51176624cd2d1562e5d89de43facf3b43
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 150de174b15e684c49c38f67767b13a3a7f9a36a
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876886"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75758962"
 ---
-# <a name="use-the-matrix-visual-in-power-bi"></a>Brug matrixvisualiseringen i Power BI
+# <a name="create-matrix-visualizations-in-power-bi"></a>Opret matrixvisualiseringer i Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -67,7 +67,7 @@ Med matrixvisualiseringen kan du foretage en mængde interessante aktiviteter fo
 
 Når du føjer flere felter til sektionen **Rækker** i området **Felter** i ruden Visualiseringer, aktiverer du detailudledning på rækkerne i matrixvisualiseringen. Dette minder om oprettelse af et hierarki, hvor du derefter kan foretage detailudledning (og så sikkerhedskopiering) via hierarkiet og analysere dataene på hvert niveau.
 
-I det følgende billede indeholder sektionen **Rækker** *Sales stage* og *Opportunity size* og opretter en gruppering (eller et hierarki) i rækkerne, som vi kan foretage detailudledning af.
+I det følgende billede indeholder sektionen **Rækker***Sales stage* og *Opportunity size* og opretter en gruppering (eller et hierarki) i rækkerne, som vi kan foretage detailudledning af.
 
 ![Filtrerer kort, der viser, hvilke rækker der er valgt](media/desktop-matrix-visual/power-bi-rows-matrix.png)
 

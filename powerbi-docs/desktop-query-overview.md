@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3ee7c094972e7251ab99d9092691bf809344a3d5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 294bd8017d6e6c8a1eaca836b32c7bd5d50d88e1
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876299"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760790"
 ---
-# <a name="query-overview-in-power-bi-desktop"></a>Oversigt over forespørgsler i Power BI Desktop
+# <a name="about-using-query-editor-in-power-bi-desktop"></a>Om brug af Forespørgselseditor i Power BI Desktop
 Med **Power BI Desktop** kan du oprette forbindelse til alverdens data, oprette overbevisende og grundlæggende rapporter og dele dit arbejde med andre – der derefter kan bygge videre på dit arbejde og udvide deres business intelligence.
 
 Power BI Desktop har tre visninger:
@@ -33,7 +33,7 @@ Power BI Desktop leveres også med en **forespørgselseditor**, hvor du kan opre
 
 Dette dokument giver et overblik over, hvordan du arbejder med data i **forespørgselseditoren**. Der er naturligvis meget mere at lære, så i slutningen af dette dokument kan du finde links til detaljerede retningslinjer om understøttede datatyper, oprettelse af forbindelse til data, udformning data, oprettelse af relationer, og hvordan du kommer i gang.
 
-Men lad os først kigge på **forespørgselseditoren**.
+Men lad os først blive bekendt med **forespørgselseditoren**.
 
 ## <a name="the-query-editor"></a>Forespørgselseditoren
 For at få adgang til **forespørgselseditoren** skal du vælge **Rediger forespørgsler** under fanen **Hjem** i Power BI Desktop.  

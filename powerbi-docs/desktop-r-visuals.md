@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/04/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 046a8f61154db5956efa10a0e10e847bbb69374c
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 69295657702f995786379b18d3ad1ed3641bcbb8
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265057"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75729804"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Opret Power BI-visualiseringer ved hjælp af R
 Med Power BI Desktop kan du bruge *R* til at visualisere dine data. [R](https://mran.revolutionanalytics.com/documents/what-is-r) er et sprog og et miljø til statistisk databehandling og grafik.
@@ -129,6 +129,8 @@ R-visualiseringer i Power BI Desktop har følgende begrænsninger:
 
 * Datastørrelser: De data, der bruges af R-visualiseringen til afbildning, er begrænset til 150.000 rækker. Hvis der er valgt flere end 150.000 rækker, bruges kun de øverste 150.000 rækker, og der vises en meddelelse på billedet.
 
+* Opløsning: Alle R-visualiseringer vises ved 72 DPI.
+
 * Beregningstider: Hvis en R-visualiseringsberegning overstiger fem minutter, medfører det en timeoutfejl.
 
 * Relationer: På samme måde som med andre Power BI Desktop-visualiseringer opstår der en fejl, hvis der vælges datafelter fra forskellige tabeller, hvor der ikke er defineret en relation.
@@ -145,5 +147,5 @@ R-visualiseringer i Power BI Desktop har følgende begrænsninger:
 Du kan finde flere oplysninger om R i Power BI i følgende artikler:
 
 * [Kørsel af R-scripts i Power BI Desktop](desktop-r-scripts.md)
-* [Brug en ekstern R IDE med Power BI](desktop-r-ide.md)
+* [Brug en ekstern R-IDE med Power BI](desktop-r-ide.md)
 

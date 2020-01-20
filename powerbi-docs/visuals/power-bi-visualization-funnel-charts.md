@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1394d71a5a2e811da23e18b9ee0d98f171f19083
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 356d738795f8bf99ba1e2f8dfc705b23f52a6d5e
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880825"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762433"
 ---
-# <a name="funnel-charts"></a>Tragtformede diagrammer
+# <a name="create-and-use-funnel-charts"></a>Opret og brug tragtformede diagrammer
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -71,13 +71,13 @@ I denne video kan du se, hvordan Will opretter et tragtformet diagram ved hjælp
 
 Nu kan du oprette dit eget tragtformede diagram, der viser antallet af salgsmuligheder i hvert salgstrin.
 
-1. Start på en tom rapportside, og vælg feltet **SalesStage**\>**Sales Stage**.
+1. Start på en tom rapportside, og vælg feltet **SalesStage** \> **Sales Stage**.
    
     ![vælg Salgsstadie](media/power-bi-visualization-funnel-charts/funnelselectfield-new.png)
 
 1. Vælg tragtikonet ![ikon for tragtformet diagram](media/power-bi-visualization-funnel-charts/power-bi-funnel-icon.png) for at konvertere søjlediagrammet til et tragtformet diagram.
 
-2. I ruden **Fields** skal du vælge **Fact** \> **Opportunity Count**.
+2. I ruden **Felter** skal du vælge **Fact** \> **Opportunity Count**.
    
     ![byg det tragtformede diagram](media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png)
 4. Når du holder over en søjle, vises en masse oplysninger.
@@ -92,7 +92,7 @@ Nu kan du oprette dit eget tragtformede diagram, der viser antallet af salgsmuli
 6. [Gem rapporten](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Fremhævning og krydsfiltrering
-Du kan få mere at vide om brug af ruden Filtre under [Føj et filter til en rapport](../power-bi-report-add-filter.md).
+Du kan få mere at vide om brug af ruden Filters under [Føj et filter til en rapport](../power-bi-report-add-filter.md).
 
 Fremhævning af en søjle i et tragtformet diagram krydsfiltrerer andre visualiseringer på rapportsiden ... og omvendt. For at kunne følge med skal du føje nogle flere visualiseringer til den rapportside, der indeholder det tragtformede diagram.
 

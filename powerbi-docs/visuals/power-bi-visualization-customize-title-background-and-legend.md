@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 12/04/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 252e83a543640ec47fbadd00012bf1a4d8074f84
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 1e2465273368c6b76e602e5ffbdf4ec3a1d121a3
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831543"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75757824"
 ---
-# <a name="customize-visualization-titles-legends-and-backgrounds"></a>Tilpas visualiseringernes titler, forklaringer og baggrunde
+# <a name="customize-visualization-titles-backgrounds-and-legends"></a>Tilpas visualiseringernes titler, baggrunde og forklaringer
 
 I dette selvstudium lærer du, hvordan du kan tilpasse dine visualiseringer, på flere måder. Du har mange muligheder for at tilpasse dine visualiseringer. Den bedste måde, du kan lære om dem alle på, er at udforske ruden **Format** (vælg malerrulleikonet). I denne artikel kan du se, hvordan du tilpasser en visualiseringstitel, en forklaring og en baggrund samt tilføjer et tema.
 

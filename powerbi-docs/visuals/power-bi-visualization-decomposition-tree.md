@@ -7,17 +7,17 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/13/2019
+ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d653bb0193351e2ecb38c09e6b34d02eea5cce67
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 8aa392b69d21905901f8304c577b87b00ed19057
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060659"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885281"
 ---
-# <a name="use-the-decomposition-tree-visual-in-power-bi-preview"></a>Brug fordelingstrævisual'et i Power BI (prøveversion)
+# <a name="create-and-view-decomposition-tree-visuals-in-power-bi-preview"></a>Opret og få vist fordelingstrævisualiseringer i Power BI (eksempelvisning)
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Fordelingstrævisual'et i Power BI giver dig mulighed for at visualisere data på tværs af flere dimensioner. Den samler automatisk data og giver dig mulighed for at foretage detailudledning i dine dimensioner i vilkårlig rækkefølge. Det er også en AI-visualisering (kunstig intelligens), så du kan bede den om at finde den næste dimension, så du kan foretage detailudledning på baggrund af bestemte kriterier. Det gør det til et værdifuldt værktøj til ad hoc-udforskning og udførelse af rodårsags analyser.
@@ -131,6 +131,8 @@ I eksemplet nedenfor er de to første niveauer låst. Det betyder, at brugerne k
 ![Låsning af fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-locking.png)
 
 ## <a name="known-limitations"></a>Kendte begrænsninger
+
+Det maksimale antal niveauer for træet er 50. Det maksimale antal datapunkter, der kan visualiseres på én gang i træet, er 5000. Vi afkorter niveauer, så de viser de øverste n. De øverste n pr. niveau er angivet til 10. 
 
 Fordelingstræet understøttes ikke i følgende scenarier:  
 -   Analysis Services i det lokale miljø
