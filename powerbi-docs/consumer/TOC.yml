@@ -26,7 +26,7 @@
       items:
         - name: Opret en dashboardbesked
           href: end-user-alerts.md
-    - name: Sådan gør du
+    - name: 'Sådan gør du:'
       items:
         - name: Dashboards
           items:
@@ -162,7 +162,7 @@
           href: mobile/mobile-apps-offline-data.md
         - name: Power BI til Mixed Reality-app (Eksempel)
           href: mobile/mobile-mixed-reality-app.md
-    - name: Sådan gør du
+    - name: 'Sådan gør du:'
       items:
         - name: Alle mobilapps
           items:
@@ -176,8 +176,8 @@
               href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
             - name: Favoritter i mobilappsene
               href: mobile/mobile-apps-favorites.md
-            - name: Konfigurer interaktion med rapporten i mobilappsene (kun telefon)
-              href: mobile/mobile-app-single-tap.md
+            - name: Konfigurer indstillinger for interaktion (kun telefon)
+              href: mobile/mobile-app-interaction-settings.md
             - name: Indstil databeskeder i Power BI-mobilapps
               href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
             - name: Modtag meddelelser i Power BI-mobilapps

@@ -52,6 +52,8 @@
               href: service-security-enable-data-sensitivity-labels.md
             - name: Brug Microsoft Cloud App Security med Power BI
               href: service-security-using-microsoft-cloud-app-security-controls.md
+            - name: Rapport over databeskyttelsesmålepunkter
+              href: service-security-data-protection-metrics-report.md
         - name: Sikkerhed på rækkeniveau
           href: ../service-admin-rls.md
         - name: Konfiguration af mobilapps med Intune
