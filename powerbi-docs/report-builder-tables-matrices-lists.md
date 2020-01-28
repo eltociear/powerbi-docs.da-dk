@@ -1,6 +1,6 @@
 ---
 title: Tabeller, matrixer og lister i Power BI Report Builder
-description: I Power BI Paginated Report Builder er tabeller, matrixer og lister dataområder, som viser sideinddelte rapportdata i celler, der er organiseret i rækker og kolonner.
+description: I Power BI Report Builder er tabeller, matrixer og lister dataområder, som viser sideinddelte rapportdata i celler, der er organiseret i rækker og kolonner.
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.assetid: 9dcf3fc8-bf9c-4a14-a03d-e78254aa4098
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: f48187edc3d955b3b87f902a3056e86a933817e1
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 02ac131325dab59590cb88c524ace68a1226fc69
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840205"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953834"
 ---
 # <a name="tables-matrixes-and-lists-in-power-bi-report-builder"></a>Tabeller, matrixer og lister i Power BI Report Builder
  I Report Builder er tabeller, matrixer og lister *dataområder*, som viser sideinddelte rapportdata i celler, der er organiseret i rækker og kolonner. Cellerne indeholder typisk tekstdata, f.eks. tekst, datoer og tal, men de kan også indeholde målere, diagrammer eller rapportelementer, f.eks. billeder. Der refereres ofte samlet til tabeller, matrixer og lister som *tablixdataområder*.  

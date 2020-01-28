@@ -1,6 +1,6 @@
 ---
-title: Sideinddelt Report Builder i Power BI
-description: Power BI Paginated Report Builder er et værktøj, der bruges til at oprette sideinddelte rapporter.
+title: Power BI Report Builder
+description: Power BI Report Builder er et værktøj, der bruges til at oprette sideinddelte rapporter.
 ms.date: 11/27/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: faba36a609abd94b2439006fbbcf01a1d193c585
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 5ef6068135e8adcbfd242ca4a6491396101d214e
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74565304"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953906"
 ---
-# <a name="power-bi-paginated-report-builder"></a>Sideinddelt Report Builder i Power BI
+# <a name="power-bi-report-builder"></a>Power BI Report Builder
 
- Power BI Paginated Report Builder er et værktøj, der bruges til at oprette sideinddelte rapporter.  Når du designer en sideinddelt rapport, opretter du en rapportdefinition, der angiver, hvilke data der skal hentes, hvor du kan få dem, og hvordan de skal vises. Når du kører rapporten, bruger rapportbehandleren den angivne rapportdefinition, henter dataene og kombinerer dem med rapportlayoutet for at generere rapporten. Du kan få forhåndsvist rapporten i Report Builder. Derefter kan du publicere rapporten i Power BI-tjenesten.
+ Power BI Report Builder er et værktøj, der bruges til at oprette sideinddelte rapporter.  Når du designer en sideinddelt rapport, opretter du en rapportdefinition, der angiver, hvilke data der skal hentes, hvor du kan få dem, og hvordan de skal vises. Når du kører rapporten, bruger rapportbehandleren den angivne rapportdefinition, henter dataene og kombinerer dem med rapportlayoutet for at generere rapporten. Du kan få forhåndsvist rapporten i Report Builder. Derefter kan du publicere rapporten i Power BI-tjenesten.
 
 Prøv det [praktiske laboratorie: Opret en sideinddelt Microsoft Power BI-rapport](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 

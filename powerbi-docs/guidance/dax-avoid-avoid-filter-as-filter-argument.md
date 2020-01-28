@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 935b453dabeaa731a218175526ddddeb980a2b92
-ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
+ms.openlocfilehash: 6abcb77e3eb534e8b5d20c1d5567c117cbb97ffe
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692453"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76161426"
 ---
 # <a name="dax-avoid-using-filter-as-a-filter-argument"></a>DAX: Undgå at bruge FILTER som et filterargument
 
@@ -36,13 +36,13 @@ CALCULATE(
 
 Funktionen CALCULATE accepterer et tabeludtryk, der returneres af DAX-funktionen [FILTER](/dax/filter-function-dax), som evaluerer filterudtrykket for hver række i tabellen **Product**. Det finder det korrekte resultat – salgsresultatet for røde produkter. Det kan dog gøres meget mere effektivt ved hjælp af et boolesk udtryk.
 
-Her er en forbedret målingsdefinition, som bruger et boolesk udtryk i stedet for tabeludtrykket.
+Her er en forbedret målingsdefinition, som bruger et boolesk udtryk i stedet for tabeludtrykket. DAX-funktionen [KEEPFILTERS](/dax/keepfilters-function-dax) sikrer, at eventuelle eksisterende filtre, der er anvendt på kolonnen **Farve**, bevares og ikke overskrives.
 
 ```dax
 Red Sales =
 CALCULATE(
     [Sales],
-    'Product'[Color] = "Red"
+    KEEPFILTERS('Product'[Color] = "Red")
 )
 ```
 

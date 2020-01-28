@@ -1,31 +1,33 @@
 ---
-title: Kopiér rapporter fra andre arbejdsområder (prøveversion) – Power BI
-description: Få mere at vide om, hvordan du deler et datasæt med brugere på tværs af organisationen. De kan derefter oprette rapporter baseret på dit datasæt i deres egne arbejdsområder.
+title: Kopiér rapporter fra andre apps eller arbejdsområder (prøveversion) – Power BI
+description: Få mere at vide om, hvordan du kan oprette en kopi af en rapport og gemme den i dit eget arbejdsområde.
 author: maggiesMSFT
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 01/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9c7cbd895a913b76a9c0b87155f7800c5538ab28
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 8716a304e5b117c027d75db149ebcc8d95efebfe
+ms.sourcegitcommit: 313a5a6a01c09038a6152d681103accbd2faf437
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223851"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76268916"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Kopiér rapporter fra andre arbejdsområder (prøveversion)
 
-Når du finder en rapport, du vil bruge i et arbejdsområde eller en app, kan du lave en kopi af den og gemme den i et andet arbejdsområde. Du kan derefter ændre din kopi af rapporten og tilføje eller slette visualiseringer og andre elementer. Du behøver ikke at oprette datamodellen. Den er allerede oprettet for dig. Og det er meget nemmere at redigere en eksisterende rapport end at starte forfra. Når du opretter en app fra det nye arbejdsområde, kan du dog nogle gange ikke publicere din kopi af rapporten i appen. Se yderligere oplysninger under [Overvejelser og begrænsninger i artiklen "Brug datasæt på tværs af arbejdsområder"](service-datasets-across-workspaces.md#considerations-and-limitations).
+Når du finder en rapport, du vil bruge i et arbejdsområde eller en app, kan du lave en kopi af den og gemme den i et andet arbejdsområde. Du kan derefter ændre din kopi af rapporten og tilføje eller slette visualiseringer og andre elementer. Du behøver ikke at oprette datamodellen. Den er allerede oprettet for dig. Og det er meget nemmere at redigere en eksisterende rapport end at starte forfra. Når du opretter en app fra dit arbejdsområde, kan du dog nogle gange ikke publicere din kopi af rapporten i appen. Se yderligere oplysninger under [Overvejelser og begrænsninger i artiklen "Brug datasæt på tværs af arbejdsområder"](service-datasets-across-workspaces.md#considerations-and-limitations).
 
 > [!NOTE]
 > Hvis du vil lave en kopi, skal du have en Pro-licens, selvom den oprindelige rapport er i et arbejdsområde med en Premium-kapacitet.
 
-## <a name="save-a-copy-of-a-report"></a>Gem en kopi af en rapport
+## <a name="save-a-copy-of-a-report-in-a-workspace"></a>Gem en kopi af en rapport i et arbejdsområde
 
-1. Gå til listevisningen Rapporter i en app eller et arbejdsområde.
+1. Gå til listevisningen Rapporter i et arbejdsområde.
+
+    ![Listevisningen Rapporter](media/service-datasets-copy-reports/power-bi-report-list-view.png)
 
 1. Under **Handlinger** skal du vælge **Gem en kopi**.
 
@@ -37,22 +39,46 @@ Når du finder en rapport, du vil bruge i et arbejdsområde eller en app, kan du
 
     ![Dialogboksen Gem en kopi](media/service-datasets-copy-reports/power-bi-dataset-save-report.png)
 
-    Det arbejdsområde, du kan gemme på, afhænger af, hvor du kopierer fra. Når du kopierer fra et arbejdsområde, kan du gemme rapporten i det aktuelle arbejdsområde eller et andet i Power BI-tjenesten. Du kan kun se arbejdsområder, som er arbejdsområder med den nye oplevelse, hvor du er medlem. Når du kopierer fra en app, kan du gemme rapporten i Mit arbejdsområde.
+    Du kan gemme rapporten i det aktuelle arbejdsområde eller et andet i Power BI-tjenesten. Du kan kun se arbejdsområder, som er arbejdsområder med den nye oplevelse, hvor du er medlem. 
   
 4. Vælg **Gem**.
 
-    Når du gemmer en kopi af rapporten, opretter du en direkte forbindelse til datasættet, og du kan åbne oplevelsen for oprettelse af rapporten, hvor hele datasættet er tilgængeligt. Du har ikke lavet en kopi af datasættet. Datasættet befinder sig stadig på den oprindelige placering. Du kan bruge alle tabeller og målinger i datasættet i din egen rapport. Begrænsninger for sikkerhed på rækkeniveau på datasættet er i kraft, så du kan kun se data, du har tilladelse til at se, på baggrund af din rolle for sikkerhed på rækkeniveau.
-
-    Power BI opretter automatisk en post på listen over datasæt, hvis rapporten er baseret på et datasæt uden for arbejdsområdet. Ikonet for dette datasæt er forskellig fra ikonet for datasæt i arbejdsområdet: ![Ikon for delt datasæt](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
-
-
+    Power BI opretter automatisk en kopi af rapporten og en post på listen over datasæt, hvis rapporten er baseret på et datasæt uden for arbejdsområdet. Ikonet for dette datasæt er forskellig fra ikonet for datasæt i arbejdsområdet: ![Ikon for delt datasæt](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
+    
     På denne måde kan medlemmer af arbejdsområdet se, hvilke rapporter og dashboards der bruger datasæt, som er uden for arbejdsområdet. Posten viser oplysninger om datasættet og nogle få udvalgte handlinger.
 
     ![Handlinger for datasæt](media/service-datasets-across-workspaces/power-bi-dataset-actions.png)
 
+    Se [din kopi af rapporten](#your-copy-of-the-report) i denne artikel for at få mere at vide om rapporten og det relaterede datasæt.
+
+## <a name="copy-a-report-in-an-app"></a>Kopiér en rapport i en app
+
+1. Åbn den rapport, du vil kopiere, i en app.
+2. Vælg **Flere indstillinger** ( **...** ) > **Gem en kopi** i menulinjen.
+
+    ![Gem en kopi af rapporten](media/service-datasets-copy-reports/power-bi-save-copy.png)
+
+    Du kan kun se indstillingen **Gem en kopi**, hvis rapporten er i et arbejdsområde med den nye oplevelse, og du har [tilladelsen Opret](service-datasets-build-permissions.md).
+
+3. Giv din rapport et navn > **Gem**.
+
+    ![Navngiv din kopi af rapporten](media/service-datasets-copy-reports/power-bi-save-report-from-app.png)
+
+    Din kopi gemmes automatisk i mit arbejdsområde.
+
+4. Vælg **Gå til rapport** for at åbne din kopi.
+
+## <a name="your-copy-of-the-report"></a>Din kopi af rapporten
+
+Når du gemmer en kopi af rapporten, opretter du en direkte forbindelse til datasættet, og du kan åbne oplevelsen for oprettelse af rapporten, hvor hele datasættet er tilgængeligt. 
+
+![Rediger din kopi af rapporten](media/service-datasets-copy-reports/power-bi-edit-report-copy.png)
+
+Du har ikke lavet en kopi af datasættet. Datasættet befinder sig stadig på den oprindelige placering. Du kan bruge alle tabeller og målinger i datasættet i din egen rapport. Begrænsninger for sikkerhed på rækkeniveau på datasættet er i kraft, så du kan kun se data, du har tilladelse til at se, på baggrund af din rolle for sikkerhed på rækkeniveau.
+
 ## <a name="view-related-datasets"></a>Få vist relaterede datasæt
 
-Når du har en rapport i dit arbejdsområde, har du måske brug for at vide, hvilket datasæt den er baseret på.
+Når du har en rapport i et arbejdsområde, der er baseret på et datasæt i et andet arbejdsområde, kan du få mere at vide om det datasæt, det er baseret på.
 
 1. Vælg **Få vist relaterede** i listevisningen Rapporter.
 

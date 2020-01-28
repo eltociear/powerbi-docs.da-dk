@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.date: 12/03/2019
-ms.openlocfilehash: 88df45a95e485695a9a2f36358c1fcca9670f258
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/16/2020
+ms.openlocfilehash: f7f163a8930d8bd90d6270f59e8afa602e89dd57
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74831129"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160828"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Sammenlign Power BI-rapportserveren med Power BI-tjenesten
 
@@ -31,6 +31,7 @@ Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigti
 | Versionscyklus | Tre gange om året (januar, maj, september) | En gang om måneden | Nyeste funktioner og løsninger optræder først i Power BI-tjenesten. De fleste kernefunktioner findes i Power BI-rapportserveren i de næste par versioner. Nogle funktioner er kun beregnet til Power BI-tjenesten. |
 | Opret Power BI-rapporter i Power BI Desktop | Ja | Ja |  |
 | Opret Power BI-rapporter i browseren | Nej | Ja |  |
+| Host og opret forbindelse til delte datasæt i Power BI | Nej | Ja | [Introduktion til datasæt på tværs af arbejdsområder](../service-datasets-across-workspaces.md) |
 | Gateway er påkrævet | Nej | Ja, for datakilder i det lokale miljø |  |
 | Streaming i realtid | Nej | Ja | [Streaming i realtid i Power BI](../service-real-time-streaming.md) |
 | Dashboards | Nej | Ja | [Dashboards i Power BI-tjenesten](../consumer/end-user-dashboards.md) |

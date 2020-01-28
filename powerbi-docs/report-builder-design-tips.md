@@ -1,6 +1,6 @@
 ---
 title: Tip til rapportdesign i Power BI Report Builder
-description: Brug følgende tip til at designe dine sideinddelte rapporter i Power BI Paginated Report Builder.
+description: Brug følgende tip til at designe dine sideinddelte rapporter i Power BI Report Builder.
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: d7e232d09eee2a4cfff17d4565443195e6f7f1aa
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 3b436156d6bd36fe5da7b9b4404227ca1a6de336
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840343"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160529"
 ---
 # <a name="report-design-tips-in-power-bi-report-builder"></a>Tip til rapportdesign i Power BI Report Builder
-  Brug følgende tip til at designe dine sideinddelte rapporter i Power BI Paginated Report Builder.  
+  Brug følgende tip til at designe dine sideinddelte rapporter i Power BI Report Builder.  
   
    
   
@@ -131,7 +131,7 @@ ms.locfileid: "66840343"
   
 -   Hvis du har planer om at gemme rapporten som en .pdf-fil, skal bredden af rapporten være eksplicit angivet til en værdi, der giver dig de resultater, du vil have, i eksportfilformatet. Angiv f.eks. bredden af rapportsiden til præcis 7,9375 tommer og venstre og højre margen til 0,5 tommer.  
   
--   Brug **Udskriftslayout** og **Sideopsætning** på værktøjslinjen i rapportfremviser til at gengive en rapport i visning, der kan udskrives. Gør følgende for at fjerne uønskede vandrette sider:  
+-   Brug **Udskriftslayout** og **Sideopsætning** på værktøjslinjen i rapportfremviser til at gengive en rapport i visning, der kan udskrives. Gør følgende for at fjerne uønskede tomme sider:  
   
     1.  Fjern alle ekstra mellemrum mellem dataområder og kanterne af rapporten.  
   
@@ -140,8 +140,10 @@ ms.locfileid: "66840343"
     3.  Brug **Rektangler** som objektbeholdere for at styre den måde, rapportelementer gengives på.  
   
     4.  I kolonneoverskrifterne skal du ændre egenskaben WritingMode for tekstfeltet til at bruge lodret tekst.  
-  
- Kombinationen af denne funktionsmåde, egenskaberne for bredde og højde af rapportelementer, størrelsen af rapportens brødtekst, definitionen af højde og bredde for siden, margenindstillingerne for den overordnede rapport og understøttelse af specifik gengivelse for sider bestemmer alt sammen, hvilke rapportelementer der passer sammen på en gengivet side. 
+
+ Du kan få vejledning i [Undgå tomme sider ved udskrivning af sideinddelte rapporter](guidance/report-paginated-blank-page.md).
+
+ Kombinationen af denne funktionsmåde, egenskaberne for bredde og højde af rapportelementer, størrelsen af rapportens brødtekst, definitionen af højde og bredde for siden, margenindstillingerne for den overordnede rapport og understøttelse af specifik gengivelse for sider bestemmer alt sammen, hvilke rapportelementer der passer sammen på en gengivet side.
  
 ## <a name="next-steps"></a>Næste trin
 

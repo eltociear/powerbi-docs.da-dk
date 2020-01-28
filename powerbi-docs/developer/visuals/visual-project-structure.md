@@ -1,126 +1,179 @@
 ---
 title: Struktur for visual-projekter i Power BI
-description: I artiklen beskrives en struktur for visual-projekter
-author: zBritva
-ms.author: v-ilgali
+description: I denne artikel beskrives mappe- og filstrukturen i et visuelt projekt i Power BI
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: tutorial
+ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/15/2019
-ms.openlocfilehash: 728aba749f80710fdc0bb1e180b3318e63caa88c
-ms.sourcegitcommit: 331ebf6bcb4a5cdbdc82e81a538144a00ec935d4
+ms.date: 01/12/2020
+ms.openlocfilehash: 16e7a317102602ffb4faf04da0ed2cae588a2a4d
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75542087"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925523"
 ---
 # <a name="power-bi-visual-project-structure"></a>Struktur for visual-projekter i Power BI
 
-Når du har kørt pbiviz new `<visual project name>`, opretter værktøjet den grundlæggende struktur for filer og mapper i mappen `<visual project name>`.
+Den bedste måde at komme i gang med at oprette en ny Power BI-visualisering på er ved at bruge Power BI-værktøjet til visualiseringer [pbiviz](https://www.npmjs.com/package/powerbi-visuals-tools).
 
-## <a name="visual-project-structure"></a>Struktur for visual-projekter
+Hvis du vil oprette et nyt visuelt element, skal du gå til den mappe, som Power BI-visualiseringen skal placeres i, og køre kommandoen:
 
-![Struktur for visual-projekter](./media/visual-project-structure.png)
+`pbiviz new <visual project name>`
 
-* `.vscode` – indeholder projektindstillinger for VS-kode. Hvis du vil konfigurere dit arbejdsområde, skal du redigere filen `.vscode/settings.json`. Læs mere [om indstillingerne for VS-kode i dokumentationen](https://code.visualstudio.com/docs/getstarted/settings)
+Når du kører denne kommando, oprettes en Power BI-visualiseringsmappe, der indeholder følgende filer:
 
-* Mappen `assets` indeholder kun filen `icon.png`. Værktøjet bruger denne fil som et ikon for visual'et i ruden Visualisering i Power BI.
+```markdown
+project
+├───.vscode
+│   ├───launch.json
+│   └───settings.json
+├───assets
+│   └───icon.png
+├───node_modules
+├───src
+│   ├───settings.ts
+│   └───visual.ts
+├───style
+│   └───visual.less
+├───capabilities.json
+├───package-lock.json
+├───package.json
+├───pbiviz.json
+├───tsconfig.json
+└───tslint.json
+```
 
-    ![Ruden Visualisering](./media/visualization-pane-analytics-tab.png)
+## <a name="folder-and-file-description"></a>Beskrivelse af mappe og fil
 
-* Mappen `node_modules` indeholder alle pakker [, der er installeret af nodepakkestyringen](https://docs.npmjs.com/files/folders.html).
+Dette afsnit indeholder oplysninger om hver mappe og fil i mappen, som værktøjet **pbiciz** til visualiseringer i Power BI opretter.  
 
-* Mappen `src` indeholder kildekoden til visual'et. Der oprettes som standard to filer i værktøjet:
+### <a name="vscode"></a>.vscode
 
-  * `visual.ts` – visual'ets hovedkildekode.
+Denne mappe indeholder VS-kodeprojektindstillingerne.
 
-  * `settings.ts` – visual'ets indstillingskode. Klasserne i filen forenkler [arbejdet med visual-egenskaberne](./objects-properties.md#properties).
+Hvis du vil konfigurere dit arbejdsområde, skal du redigere filen `.vscode/settings.json`.
 
-* Mappen `style` indeholder `visual.less` filen med typografier til visual'et.
+Du kan finde flere oplysninger under [Indstillinger for bruger og arbejdsområde](https://code.visualstudio.com/docs/getstarted/settings)
 
-* Filen `capabilities.json` visual'ets primære egenskaber og indstillinger. Den gør det muligt for visual'et at deklarere understøttede funktioner, objekter, egenskaber og tilknytning af datavisning.
+### <a name="assets"></a>assets
 
-    Læs mere [om egenskaber i dokumentation](./capabilities.md).
+Denne mappe indeholder filen `icon.png`.
 
-* `package-lock.json` genereres automatisk for alle handlinger, hvor NPM ændrer enten `node_modules` træet eller `package.json`.
+Power BI-visualiseringsværktøjet bruger denne fil som det nye Power BI-visualiseringsikon i ruden Visualiseringer i Power BI.
 
-    Læs mere [om `package-lock.json` i den officielle dokumentation til NPM](https://docs.npmjs.com/files/package-lock.json).
+<!--- ![Visualization pane](./media/visualization-pane-analytics-tab.png) --->
 
-* `package.json` beskriver projektpakken. Den indeholder normalt oplysninger om projektet og forfatterne, beskrivelsen af og afhængighederne i projektet.
+### <a name="src"></a>src
 
-    Læs mere [om `package.json` i den officielle dokumentation til NPM](https://docs.npmjs.com/files/package.json.html).
+Denne mappe indeholder kildekoden til visualiseringen.
 
-* `pbiviz.json` indeholder visual-metadataene. Angiv metadataene for visual'et i denne fil.
+I denne mappe opretter Power BI-visualiseringsværktøjet følgende filer:
+* `visual.ts` – visualiseringens hovedkildekode.
+* `settings.ts` – visualiseringens indstillingskode. Klasserne i filen indeholder en grænseflade til definition af [egenskaber for visualiseringen](./objects-properties.md#properties).
 
-    Typisk indhold i fil:
+### <a name="style"></a>typografi
 
-  ```json
-    {
-        "visual": {
-            "name": "<visual project name>",
-            "displayName": "<visual project name>",
-            "guid": "<visual project name>23D8B823CF134D3AA7CC0A5D63B20B7F",
-            "visualClassName": "Visual",
-            "version": "1.0.0",
-            "description": "",
-            "supportUrl": "",
-            "gitHubUrl": ""
-        },
-        "apiVersion": "2.6.0",
-        "author": { "name": "", "email": "" },
-        "assets": { "icon": "assets/icon.png" },
-        "externalJS": null,
-        "style": "style/visual.less",
-        "capabilities": "capabilities.json",
-        "dependencies": null,
-        "stringResources": []
-    }
-  ```
+Denne mappe indeholder filen `visual.less`, som indeholder typografierne i visualiseringen.
 
-    hvor
+### <a name="capabilitiesjson"></a>capabilities.json
 
-  * `name` – internt navn på det visual'et.
+Denne fil indeholder de primære egenskaber og indstillinger (eller [funktioner](./capabilities.md)) for visualiseringen. Den gør det muligt for visualiseringen at deklarere understøttede funktioner, objekter, egenskaber og [tilknytning af datavisning](./dataview-mappings.md).
 
-  * `displayName` – navnet på visual'et i brugergrænsefladen til Power BI.
+### <a name="package-lockjson"></a>package-lock.json
 
-  * `guid` – entydigt id for visual'et.
+Denne fil genereres automatisk for alle handlinger, hvor *npm* ændrer enten træet `node_modules` eller filen `package.json`.
 
-  * `visualClassName` –navnet på den primære klasse for visual'et. Power BI opretter forekomsten af denne klasse for at begynde at bruge visual'et i Power BI-rapporten.
+Du kan finde flere oplysninger om denne fil i den officielle dokumentation til [npm-package-lock.json](https://docs.npmjs.com/files/package-lock.json).
 
-  * `version` – visual'ets versionsnummer.
+### <a name="packagejson"></a>package.json
 
-  * `author` – indeholder navnet på forfatteren og kontaktmail.
+Denne fil beskriver projektpakken. Den indeholder normalt oplysninger om projektet, f.eks. forfatterne, beskrivelsen af og afhængighederne i projektet.
 
-  * `icon` i `assets` – stien til visual'ets ikonfil.
+Du kan få flere oplysninger om denne fil i den officielle dokumentation til [npm-package.json](https://docs.npmjs.com/files/package.json.html).
 
-  * `externalJS` indeholder stier til JS-biblioteker, der bruges i visual'et.
+### <a name="pbivizjson"></a>pbiviz.json
 
-    > [!IMPORTANT]
-    > Den nyeste version af værktøjet 3. x. x eller nyere bruger ikke `externalJS` længere.
+Denne fil indeholder metadata om visualiseringen.
 
-  * `style` er stien til typografifiler.
+Hvis du vil have vist et eksempel på filen `pbiviz.json` med kommentarer, der beskriver metadataposterne, skal du se afsnittet [metadataposter](#metadata-entries).
 
-  * `capabilities` er stien til filen `capabilities.json`.
+### <a name="tsconfigjson"></a>tsconfig.json
 
-  * `dependencies` er stien til filen `dependencies.json`. `dependencies.json` indeholder oplysninger om R-pakker, der bruges i R-baserede visuals.
+Er en konfigurationsfil til [TypeScript](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
-  * `stringResources` er en matrix af stier til filer med lokaliseringer.
+Denne fil skal indeholde en sti til **\*.ts**-filen, hvor visualiseringens primære klasse er placeret som angivet i egenskaben `visualClassName` i filen `pbiviz.json`.
 
-  Læs mere [om lokalisering i visuals i dokumentationen](./localization.md)
+### <a name="tslintjson"></a>tslint.json
 
-* `tsconfig.json` er en konfigurationsfil til TypeScript.
+Denne fil indeholder [TSLint-konfigurationen](https://palantir.github.io/tslint/usage/configuration/).
 
-    Læs mere [om konfiguration af TypeScript i den officielle dokumentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
+## <a name="metadata-entries"></a>Metadataposter
 
-    `tsconfig.json` i afsnittet `files` skal indeholde stien til *. ts-filen, hvor visual'ets primære klasse er placeret som angivet i egenskaben `visualClassName` for filen `pbiviz.json`.
+Kommentarerne i den følgende kodetekst fra `pbiviz.json`-filen beskriver metadataposterne.
 
-* Filen `tslint.json` indeholder TSLint-konfigurationen.
+> [!NOTE]
+> * Fra version 3.x.x af **pbiciz**-værktøjet understøttes `externalJS` ikke.
+> * Hvis du vil have hjælp til lokaliseringen, skal du [føje landestandarden for Power BI til visualiseringen](./localization.md).
 
-    Læs mere [om konfiguration af TSLint i den officielle dokumentation](https://palantir.github.io/tslint/usage/configuration/)
+```json
+{
+  "visual": {
+     // The visual's internal name.
+    "name": "<visual project name>",
+
+    // The visual's display name.
+    "displayName": "<visual project name>",
+
+    // The visual's unique ID.
+    "guid": "<visual project name>23D8B823CF134D3AA7CC0A5D63B20B7F",
+
+    // The name of the visual's main class. Power BI creates the instance of this class to start using the visual in a Power BI report.
+    "visualClassName": "Visual",
+
+    // The visual's version number.
+    "version": "1.0.0",
+    
+    // The visual's description (optional)
+    "description": "",
+
+    // A URL linking to the visual's support page (optional).
+    "supportUrl": "",
+
+    // A link to the source code available from GitHub (optional).
+    "gitHubUrl": ""
+  },
+  // The version of the Power BI API the visual is using.
+  "apiVersion": "2.6.0",
+
+  // The name of the visual's author and email.
+  "author": { "name": "", "email": "" },
+
+  // 'icon' holds the path to the icon file in the assets folder; the visual's display icon.
+  "assets": { "icon": "assets/icon.png" },
+
+  // Contains the paths for JS libraries used in the visual.
+  // Note: externalJS' isn't used in the Power BI visuals tool version 3.x.x or higher.
+  "externalJS": null,
+
+  // The path to the 'visual.less' style file.
+  "style": "style/visual.less",
+
+  // The path to the `capabilities.json` file.
+  "capabilities": "capabilities.json",
+
+  // The path to the `dependencies.json` file which contains information about R packages used in R based visuals.
+  "dependencies": null,
+
+  // An array of paths to files with localizations.
+  "stringResources": []
+}
+```
 
 ## <a name="next-steps"></a>Næste trin
 
-* Læs mere [om visual-konceptet](./power-bi-visuals-concept.md) for at få en bedre forståelse af, hvordan visual'et, brugeren og Power BI interagerer med hinanden.
+* Hvis du vil vide mere om interaktionerne mellem en visualisering, en bruger og Power BI, kan du se [Visuelle koncepter i Power BI](./power-bi-visuals-concept.md).
 
-* Begynd at udvikle dine egne Power BI-visuals fra bunden [med en trinvis vejledning](./custom-visual-develop-tutorial.md).
+* Begynd at udvikle dine egne Power BI-visualiseringer fra bunden [med en trinvis vejledning](./custom-visual-develop-tutorial.md).

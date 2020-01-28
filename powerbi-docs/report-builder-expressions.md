@@ -1,6 +1,6 @@
 ---
 title: Udtryk i Power BI Report Builder
-description: Udtryk bruges i stor udstrækning overalt i sideinddelte rapporter i Power BI Paginated Report Builder til at hente, beregne, vise, gruppere, sortere, filtrere, parameterisere og formatere data.
+description: Udtryk bruges i stor udstrækning overalt i sideinddelte rapporter i Power BI Report Builder til at hente, beregne, vise, gruppere, sortere, filtrere, parameterisere og formatere data.
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 76d3ac86-650c-46fe-8086-8b3edcea3882
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: d3a72fd967eeb24cfa1093d16c4434447d5fc89d
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 96c62fec55f87a31970b624a79314656ced0c159
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840619"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953873"
 ---
 # <a name="expressions-in-power-bi-report-builder"></a>Udtryk i Power BI Report Builder
-  Udtryk bruges i stor udstrækning overalt i sideinddelte rapporter i Power BI Paginated Report Builder til at hente, beregne, vise, gruppere, sortere, filtrere, parameterisere og formatere data. 
+  Udtryk bruges i stor udstrækning overalt i sideinddelte rapporter i Power BI Report Builder til at hente, beregne, vise, gruppere, sortere, filtrere, parameterisere og formatere data. 
   
   Mange egenskaber for rapportelementer kan angives til et udtryk. Udtryk kan hjælpe dig med at styre indhold, design og interaktivitet i din rapport. Udtryk skrives i Microsoft Visual Basic, gemmes i rapportdefinitionen og evalueres af rapportbehandleren, når du kører rapporten.  
   

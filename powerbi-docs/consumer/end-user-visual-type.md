@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 01/15/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 1670d3af200c8da672ac7034e4e15f6f460147a7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6fd970064bbe686a433fba0c0675948576edd8c1
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861315"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76039133"
 ---
 # <a name="visual-types-in-power-bi"></a>Visualiseringstyper i Power BI
 Du finder visualiseringer i rapporter, på dashboards og under Spørgsmål og svar. Nogle af disse visualiseringstyper medfølger Power BI som en del af pakken, og nogle er *brugerdefinerede visualiseringer*. Brugerdefinerede visualiseringer oprettes uden for Power BI og på en måde, der gør det muligt for *rapportdesignere* at føje dem til rapporter og dashboards i Power BI. 
@@ -59,7 +59,7 @@ Kombinationsdiagrammer er et fantastisk valg i følgende tilfælde:
 - Når du har et kurvediagram og et søjlediagram med den samme X-akse.
 - til at sammenligne flere målinger med forskellige værdiområder
 - til at illustrere sammenhængen mellem to målinger i én visualisering
-- Til at kontrollere, om en måling opfylder målet, der er defineret af en anden måling
+- til at kontrollere, om en måling opfylder målet, der er defineret af en anden måling
 - til at spare plads på lærredet.
 
 ### <a name="doughnut-charts"></a>Kransediagrammer
@@ -139,6 +139,19 @@ Matrixvisualiseringen er en type tabelvisualisering (se "Tabel" herunder), som u
 ![cirkeldiagram](media/end-user-visual-type/pbi-nancy-viz-pie.png)
 
 I cirkeldiagrammer vises relationen mellem dele og en helhed. 
+
+### <a name="power-apps-visual"></a>Power Apps-visualisering
+![Power Apps-visualisering](media/end-user-visual-type/power-bi-powerapps-visual.png)
+
+Rapportdesignere kan oprette en Power-app og integrere den i en Power BI-rapport. Forbrugere kan interagere med denne visualisering i Power BI-rapporten. 
+
+### <a name="qa-visual"></a>Visualisering til Spørgsmål og svar
+![Visualiseringer af Spørgsmål og svar](media/end-user-visual-type/power-bi-q-and-a.png)
+
+>[!TIP]
+>På samme måde som [oplevelsen med Spørgsmål og svar på dashboards](../power-bi-tutorial-q-and-a.md) kan du bruge visualiseringen af Spørgsmål og svar til at stille spørgsmål om dine data i et naturligt sprog. 
+
+Du kan finde flere oplysninger under [Visualiseringer af Spørgsmål og svar i Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 ### <a name="ribbon-chart"></a>Bånddiagram
 ![bånddiagram](media/end-user-visual-type/power-bi-ribbon.png)

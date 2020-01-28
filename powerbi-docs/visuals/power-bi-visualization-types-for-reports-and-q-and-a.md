@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 01/14/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 80fc4f4afe29806077d1bf64a59d8761d7ab1c1d
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 8737a0e9b2dd8ba17d28962ed51e24ec0c5cefc4
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099925"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76040493"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 ## <a name="power-bi-visualizations"></a>Visualiseringer i Power BI
@@ -145,6 +145,13 @@ Du kan finde flere oplysninger under [Matrixvisualiseringer i Power BI](desktop-
 
 >[!TIP]
 >I cirkeldiagrammer vises relationen mellem dele og en helhed. 
+
+### <a name="power-apps-visual"></a>Power Apps-visualisering
+![Power Apps-visualisering](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-powerapps-visual.png)
+
+Rapportdesignere kan oprette en Power-app og integrere den i en Power BI-rapport som en visualisering. Forbrugere kan interagere med denne visualisering i Power BI-rapporten. 
+
+Du kan finde flere oplysninger under [Føj en Power Apps-visualisering til din rapport](power-bi-visualization-powerapp.md).
 
 ### <a name="qa-visual"></a>Visualisering til Spørgsmål og svar
 ![Visualiseringer af Spørgsmål og svar](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)

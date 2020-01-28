@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/27/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 749d8d5b62df87b0e6b29d524e90c694a0e38efe
-ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
+ms.openlocfilehash: 6337c4c5e3098d56e869b8ce71117da2413802e6
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622426"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925658"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser arbejde i nye arbejdsområder i Power BI
 
@@ -124,6 +124,10 @@ Følgende aktiviteter overvåges af Power BI for arbejdsområder i den nye arbej
 | Adgang til Power BI-mappe er opdateret| UpdateFolderAccess |
 
 Læs mere om [overvågning i Power BI](service-admin-auditing.md).
+
+## <a name="guest-users"></a>Gæstebrugere
+
+[Azure AD B2B-gæstebrugere](service-admin-azure-ad-b2b.md) kan som standard ikke få adgang til arbejdsområder. Power BI-administratorer kan [tillade, at eksterne brugere kan redigere og administrere indhold i organisationen](service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). De aktiverede gæstebrugere kan få adgang til de arbejdsområder, de har tilladelse til.
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 

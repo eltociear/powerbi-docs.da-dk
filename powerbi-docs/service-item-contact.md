@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2010
+ms.date: 10/08/2019
 ms.author: lukaszp
 LocalizationGroup: Common tasks
-ms.openlocfilehash: bb98f7bbb92b72512f880513ec94ccb55d64fc67
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7ed0920f66c178c23e6c4db22ff6acd998619522
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872142"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160552"
 ---
 # <a name="set-contact-information-for-reports-and-dashboards-in-the-power-bi-service"></a>Angiv kontaktoplysninger for rapporter og dashboards i Power BI-tjenesten
 I denne artikel kan du se, hvordan du angiver kontaktoplysninger for et dashboard eller en rapport i Power BI-tjenesten.
@@ -60,6 +60,7 @@ Oplysningerne på listen over kontakter bruges også andre steder. Den vises f.e
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 * Kontakten er automatisk angivet for nye elementer, der oprettes i Power BI-tjenesten. Eksisterende elementer viser standarden for arbejdsområdet.
 * Du kan angive en hvilken som helst bruger eller gruppe på listen over kontakter, men de får ikke automatisk tildelt tilladelse til elementet. Brug deling, eller giv den bruger, der har brug for det, adgang til arbejdsområdet via en rolle. 
+* Listen over kontaktpersoner på elementniveau bliver ikke skubbet til apps, når de udgives. Den nye appnavigation indeholder en URL-adresse til support, som du kan konfigurere som en hjælp til at administrere feedback fra et stort antal appbrugere.
 
 
 ## <a name="next-steps"></a>Næste trin

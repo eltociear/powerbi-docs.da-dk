@@ -1,7 +1,7 @@
 ---
 title: Introduktion til dashboards for Power BI-designere
 description: Et dashboard er en vigtig funktion i Power BI-tjenesten. Det er en enkelt side, der ofte kaldes et lærred, som fortæller en historie via visualiseringer.
-author: maggieMSFT
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 41381a2f0ccc2c5db904d9ac94c7dad19edfa4e5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: eb2c513e8ee8ad1c8ad93866f688e40f6c5af56d
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872749"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160782"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Introduktion til dashboards for Power BI-designere
 
@@ -38,7 +38,7 @@ Dashboards er en fantastisk måde at holde øje med din virksomhed på og hurtig
 Et dashboard er ikke kun et flot billede. Det er yderst interaktivt, og felterne opdateres, når de underliggende data ændres.
 
 ## <a name="who-can-create-a-dashboard"></a>Hvem kan oprette et dashboard?
-Muligheden for at oprette et dashboard anses som en *opretterfunktion*  og kræver redigeringsrettigheder til rapporten. Redigeringstilladelser er tilgængelige for rapportoprettere og de kolleger, opretteren giver adgang til. Hvis David f.eks. opretter en rapport i arbejdsområdeABC og tilføjer dig som medlem af dette arbejdsområde, har både du og David redigeringsrettigheder. På den anden side, hvis en rapport er blevet delt med dig direkte eller som en del af en [Power BI-app](service-create-distribute-apps.md), så *bruger* du rapporten. Du kan muligvis ikke fastgøre felter til et dashboard. 
+Muligheden for at oprette et dashboard anses som en *opretterfunktion*  og kræver redigeringsrettigheder til rapporten. Redigeringstilladelser er tilgængelige for rapportoprettere og de kolleger, opretteren giver adgang til. Hvis David f.eks. opretter en rapport i arbejdsområde ABC og tilføjer dig som medlem af dette arbejdsområde, har både du og David redigeringsrettigheder. På den anden side, hvis en rapport er blevet delt med dig direkte eller som en del af en [Power BI-app](service-create-distribute-apps.md), så *bruger* du rapporten. Du kan muligvis ikke fastgøre felter til et dashboard. 
 
 > [!IMPORTANT]
 > Du skal have en [Power BI Pro](service-free-vs-pro.md)-licens for at oprette dashboards i arbejdsområder. Du kan oprette dashboards i dit eget Mit arbejdsområde uden en Power BI Pro-licens.

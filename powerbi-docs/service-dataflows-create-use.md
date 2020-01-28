@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 704e073299f89859c507b3ddc6ccba0b4be03d76
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 9338bc914c7f4e4afd826bcd3e3452e7c7a3ef35
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877388"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76040433"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Oprettelse og brug af dataflow i Power BI
 
@@ -155,6 +155,14 @@ Det kan ske, at der opstår problemer med dataflowet, når der oprettes forbinde
 * **JSON-fileconnector** – I øjeblikket kan du kun oprette forbindelse til en JSON-fil ved hjælp af basisgodkendelse.  Oprettelse af forbindelse til en JSON-fil ved hjælp af legitimationsoplysningerne i URL-adressen (f.eks, https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg...) er **ikke** understøttet i øjeblikket.  
 
 * **Azure SQL Data Warehouse** – Dataflow understøtter i øjeblikket ikke AAD-godkendelse (Azure Active Directory) for Azure SQL Data Warehouse. Brug basisgodkendelse til dette scenarie.
+
+## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
+
+Der er nogle kendte begrænsninger for dataflows, som er forklaret på følgende liste.
+
+* Et dataflow skal resultere i en af følgende typer: *Dato/klokkeslæt, decimaltal, tekst, heltal, dato/klokkeslæt/zone, sand/falsk, dato, klokkeslæt*
+* Dynamiske funktioner understøttes ikke i øjeblikket i dataflows
+
 
 ## <a name="next-steps"></a>Næste trin
 

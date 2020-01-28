@@ -1,6 +1,6 @@
 ---
 title: Planlægning af en rapport i Power BI Report Builder
-description: Med Power BI Paginated Report Builder kan du oprette mange slags sideinddelte rapporter. Hvis du vil oprette en nyttig rapport, der er let at forstå, er det en god idé at planlægge den først.
+description: Med Power BI Report Builder kan du oprette mange slags sideinddelte rapporter. Hvis du vil oprette en nyttig rapport, der er let at forstå, er det en god idé at planlægge den først.
 ms.date: 07/25/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 33cdb53ab411e0d2f4686f7cc9a41bb3f0fe4cb6
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 30ab632d11befd34ff9a234e441b345c696fb54d
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623863"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953825"
 ---
 # <a name="planning-a-report-in-power-bi-report-builder"></a>Planlægning af en rapport i Power BI Report Builder
 
-Med Power BI Paginated Report Builder kan du oprette mange slags sideinddelte rapporter. Du kan f.eks. oprette rapporter, der viser en oversigt over eller detaljerede salgsdata, marketing- og salgstendenser, driftsrapporter eller dashboards. Du kan også oprette rapporter, der drager fordel af formateret tekst, f.eks. til salgsordrer, produktkataloger eller standardbreve. Alle disse rapporter oprettes ved hjælp af forskellige kombinationer af de samme grundlæggende byggesten i Report Builder. Hvis du vil oprette en nyttig rapport, der er let at forstå, er det en god idé at planlægge den først. Her er nogle ting, det kan være en god idé at overveje, før du går i gang:  
+Med Power BI Report Builder kan du oprette mange slags sideinddelte rapporter. Du kan f.eks. oprette rapporter, der viser en oversigt over eller detaljerede salgsdata, marketing- og salgstendenser, driftsrapporter eller dashboards. Du kan også oprette rapporter, der drager fordel af formateret tekst, f.eks. til salgsordrer, produktkataloger eller standardbreve. Alle disse rapporter oprettes ved hjælp af forskellige kombinationer af de samme grundlæggende byggesten i Report Builder. Hvis du vil oprette en nyttig rapport, der er let at forstå, er det en god idé at planlægge den først. Her er nogle ting, det kan være en god idé at overveje, før du går i gang:  
   
 ## <a name="in-what-format-do-you-want-the-report-to-appear"></a>I hvilket format skal rapporten vises?
   

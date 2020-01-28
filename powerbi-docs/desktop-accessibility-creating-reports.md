@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 50a5705f5e236dc326f4c2b33716e55f6a9f7ce5
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 2b43727799316ade5ccdb868077360da0b315c56
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761973"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925678"
 ---
 # <a name="design-power-bi-reports-for-accessibility"></a>Design tilgængelige Power BI-rapporter
 Du kan designe og oprette flotte rapporter og samtidig have øje for tilgængelighed. Når du opbygger en rapport, bør du oprette den, så den kan bruges af så mange personer som muligt, uanset hvem din målgruppe er, uden at det er nødvendigt at tilpasse den til en slags specialdesign.
@@ -22,6 +22,8 @@ Du kan designe og oprette flotte rapporter og samtidig have øje for tilgængeli
 ![Indstillinger for stor kontrast](media/desktop-accessibility/accessibility-05.png)
 
 I denne artikel beskrives tilgængelighedsfunktioner og -værktøjer til oprettelse af tilgængelige rapporter i Power BI.
+
+Når Power BI bruges sammen med en skærmlæser, anbefaler vi, at du aktiverer scanningstilstand eller browsertilstand.
 
 Der er adgang til en genvejsmenu, som kan gøre det nemmere at oprette rapporter med skærmlæsere. Menuen giver mulighed for at flytte felter op eller ned i beholderen i listen **Felter**. Menuen tillader også flytning af feltet til andre beholdere såsom **Forklaring**, **Værdi** eller andre.
 

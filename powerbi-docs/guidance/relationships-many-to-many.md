@@ -1,5 +1,5 @@
 ---
-title: Vejledning til mange til mange-relation
+title: Vejledning til mange-til-mange-relation
 description: Vejledning til udvikling af modeller med mange til mange-relationer.
 author: peter-myers
 ms.reviewer: asaxton
@@ -8,14 +8,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/25/2019
 ms.author: v-pemyer
-ms.openlocfilehash: becde542f68b2f9fb1412a904793f46a8f154856
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: 6ce82516413fe43cfbc1336e2f6f51003277fb4a
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75308243"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76161288"
 ---
-# <a name="many-to-many-relationship-guidance"></a>Vejledning til mange til mange-relation
+# <a name="many-to-many-relationship-guidance"></a>Vejledning til mange-til-mange-relation
 
 Denne artikel henvender sig til designere af datamodeller, der arbejder med Power BI Desktop. Den indeholder en beskrivelse af tre forskellige scenarier med udformning af mange til mange-relationer. Den indeholder også en vejledning i, hvordan du skaber vellykkede design med dem i dine modeller.
 
@@ -120,7 +120,7 @@ Når du har mange til mange-relationer mellem tabeller af dimensionstypen, giver
 - Tilføj en mellemtabel for at gemme tilknyttede enheder
 - Opret én til mange-relationer mellem de tre tabeller
 - Konfigurer **én** tovejsrelation, så filteroverførsel kan fortsætte til tabeller af faktatypen
-- Når det ikke er passende at have manglende id-værdier, skal du angive egenskaben **Er nullable** for id-kolonnerne til SAND. Hvis der refereres til manglende værdier, vil dataopdateringen mislykkes
+- Når det ikke er passende at have manglende id-værdier, skal du angive egenskaben **Er nullable** for id-kolonnerne til FALSK. Hvis der refereres til manglende værdier, vil dataopdateringen mislykkes
 - Skjul mellemtabellen (medmindre den indeholder yderligere kolonner eller målinger, der kræves til rapportering)
 - Skjul alle id-kolonner, der ikke er egnet til rapportering (f.eks. når id'erne er surrogatnøgler)
 - Hvis det giver mening, at lade en id-kolonne være synlig, skal du sikre, at den er på "én"-siden af relationen – skjul altid "mange"-siden af kolonnen. Det resulterer i den bedste filterfunktion.
@@ -158,7 +158,7 @@ Rækkedetaljerne for de to tabeller er beskrevet i følgende punktopstilling:
 
 Lad os se, hvad der sker, når der sendes en forespørgsel til modellen. Her er en tabelvisualisering, hvor ordre- og opfyldelsesantal sammenlignes efter tabellen **Ordre** og kolonnen **Ordre-id**.
 
-![Et tabelvisualisering indeholder tre kolonner: Ordre-id, Ordreantal og Opfyldelsesantal. Der er tre rækker – én for hver ordre. Ordre-id 2 og 3 er ikke helt opfyldt.](media/relationships-many-to-many/order-fulfillment-model-queried.png)
+![Et tabelvisual indeholder tre kolonner: Ordre-id, Ordreantal og Opfyldelsesantal. Der er tre rækker – én for hver ordre. Ordre-id 2 og 3 er ikke helt opfyldt.](media/relationships-many-to-many/order-fulfillment-model-queried.png)
 
 Der præsenteres et nøjagtigt resultat i visualiseringen. Modellens anvendelighed er dog begrænset. Du kan kun filtrere eller gruppere efter tabellen **Ordre** og kolonnen **Ordre-id**.
 

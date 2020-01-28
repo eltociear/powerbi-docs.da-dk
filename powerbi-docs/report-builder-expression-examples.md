@@ -1,6 +1,6 @@
 ---
 title: Eksempler på udtryk i Power BI Report Builder
-description: Udtryk bruges ofte i sideinddelte rapporter i Power BI Paginated Report Builder til at styre indhold og rapportens udseende.
+description: Udtryk bruges ofte i sideinddelte rapporter i Power BI Report Builder til at styre indhold og rapportens udseende.
 ms.date: 10/21/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 06847956eae4dfefc7cff75b5a360fbb8b892c39
-ms.sourcegitcommit: d173e22f5a3e76717adfaa573ea391bde0338ffe
+ms.openlocfilehash: 48e81c91a4555b4c8ea847ddffb1413058bbb152
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728558"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953967"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Eksempler på udtryk i Power BI Report Builder
-Udtryk bruges ofte i sideinddelte rapporter i Power BI Paginated Report Builder til at styre indhold og rapportens udseende. Udtryk er skrevet i Microsoft Visual Basic, og du kan bruge indbyggede funktioner, brugerdefinerede kode, rapport- og gruppevariabler samt brugerdefinerede variabler. Udtryk begynder med et lighedstegn (=).   
+Udtryk bruges ofte i sideinddelte rapporter i Power BI Report Builder til at styre indhold og rapportens udseende. Udtryk er skrevet i Microsoft Visual Basic, og du kan bruge indbyggede funktioner, brugerdefinerede kode, rapport- og gruppevariabler samt brugerdefinerede variabler. Udtryk begynder med et lighedstegn (=).   
 
 Dette emne indeholder eksempler på udtryk, der kan bruges til almindelige opgaver i en rapport.  
   

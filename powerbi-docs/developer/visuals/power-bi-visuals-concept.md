@@ -1,132 +1,134 @@
 ---
-title: Konceptet visual i Power BI
-description: I denne artikel beskrives det, hvordan et visual kan integreres med Power BI
-author: zBritva
-ms.author: v-ilgali
+title: Koncepter i forbindelse med visualiseringer i Power BI
+description: I artiklen beskrives det, hvordan visualiseringer integreres med Power BI, og hvordan en bruger kan interagere med en visualisering i Power BI.
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 36742917829013a6efca9d74f88b01bc686437a8
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: bb0834527ba23c6cfcc155cc65cd0318b296ba84
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74700840"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925601"
 ---
-# <a name="power-bi-visual-concept"></a>Konceptet visual i Power BI
+# <a name="visuals-in-power-bi"></a>Visualiseringer i Power BI
 
-I artiklen forklares det, hvordan en bruger og et visual interagerer med Power BI, og hvordan en bruger interagerer med et Power BI-visual. I diagrammet kan du se, hvilke handlinger der påvirker det visual'et direkte eller gennem Power BI (f. eks. kan brugeren vælge bogmærker).
+I artiklen beskrives det, hvordan visualiseringer integreres med Power BI, og hvordan en bruger kan interagere med en visualisering i Power BI. 
 
-![Power BI-visual](./media/visual-concept.svg)
+Følgende figur viser, hvordan almindelige visualiseringsbaserede handlinger, som en bruger benytter, f.eks. ved at vælge et bogmærke, behandles i Power BI.
 
-## <a name="the-visual-gets-update-from-power-bi"></a>Visual'et henter en opdatering fra Power BI
+![Handlingsdiagram for visualiseringer i Power BI](./media/visual-concept.svg)
 
-Visual'et har metoden `update`, og denne metode indeholder normalt den primære logik for visual'et og er ansvarlig for at gengive diagrammet eller visualisere dataene.
+## <a name="visuals-get-updates-from-power-bi"></a>Visualiseringer henter opdateringer fra Power BI
 
-Der kommer flere opdateringer i kald af metoden `update`.
+En visualisering kalder en `update`-metode for at få opdateringer fra Power BI. Metoden `update` indeholder normalt den primære logik for visualiseringen og er ansvarlig for at gengive et diagram eller visualisere dataene.
 
-### <a name="user-interacts-with-visual-through-power-bi"></a>Brugeren interagerer med visual'et via Power BI
+Opdateringer udløses, når visualiseringen kalder metoden `update`.
 
-* Brugeren åbner panelet med egenskaber for visuals.
+## <a name="action-and-update-patterns"></a>Handlings- og opdateringsmønstre
 
-    Power BI henter understøttede objekter og egenskaber fra visual'et `capabilities.json` og for at modtage faktiske værdier for egenskaber kalder Power BI metoden `enumerateObjectInstances` for visual'et.
+Handlinger og efterfølgende opdateringer i Power BI-visualiseringer optræder i et af disse tre mønstre:
 
-    Visual'et skal returnere de faktiske værdier for egenskaber.
+* Brugeren interagerer med visualiseringen via Power BI.
+* Brugeren interagerer direkte med visualiseringen.
+* Visualiseringen interagerer med Power BI.
 
-    Du kan finde flere oplysninger ved at [læse om egenskaberne for visual'et](capabilities.md).
+### <a name="user-interacts-with-a-visual-through-power-bi"></a>Brugeren interagerer med visualiseringen via Power BI.
 
-* [Brugeren ændrer egenskaberne for visual'et](../../visuals/power-bi-visualization-customize-title-background-and-legend.md) i formatpanelet.
+* En bruger åbner panelet med egenskaber for visualiseringer.
 
-    Når du har ændret værdien for en egenskab, kalder Power BI metoden `update` for visual'et og overfører de nye `options` til opdateringsmetoden med objekternes nye værdier.
+    Når en bruger åbner panelet med egenskaber for visualiseringen, henter Power BI de understøttede objekter og egenskaber fra visualiseringens *capabilities.json*-fil. Hvis du vil modtage faktiske værdier for egenskaber, kalder Power BI metoden `enumerateObjectInstances` for visualiseringen. Visualiseringen returnerer de faktiske værdier for egenskaber.
 
-    Du kan finde flere oplysninger ved at [læse om objekter og egenskaber for visual'et](objects-properties.md).
+    Du kan finde flere oplysninger i [Egenskaber for Power BI-visualiseringer](capabilities.md).
 
-* Brugeren tilpasser visual'ets størrelse.
+* En bruger [ændrer egenskaberne for visualiseringen](../../visuals/power-bi-visualization-customize-title-background-and-legend.md) i formatpanelet.
 
-    Når en bruger ændrer størrelsen af visual'et, kalder Power BI metoden `update` med et nyt `option`-objekt. Indstillinger har indlejret et `viewport`-objekt med en ny visualbredde og -højde.
+    Når en bruger ændrer værdien af en egenskab i formatpanelet, kalder Power BI metoden `update` for visualiseringen. Power BI overfører det nye `options`-objekt til metoden `update`. Objekterne indeholder de nye værdier.
 
-* Bruger anvender et filter på rapport-, side- eller visualniveau.
+    Du kan finde flere oplysninger i [Objekter og egenskaber for Power BI-visualiseringer](objects-properties.md).
 
-    Power BI filtrerer data i henhold til filterbetingelserne og kalder metoden `update` for visual'et for at overføre nye data til visual'et.
+* En bruger tilpasser visualiseringens størrelse.
 
-    Visual'et får ny opdatering af `options` med nye data i et af de indlejrede objekter. Det afhænger af konfigurationen af tilknytning af datavisninger for visual'et.
+    Når en bruger ændrer størrelsen af visualiseringen, kalder Power BI metoden `update` med det nye `options`-objekt. `options`-objekterne har indlejrede `viewport`-objekter, der indeholder den nye bredde og højde for visualiseringen.
 
-    Du kan finde flere oplysninger ved at [læse om tilknytning af datavisninger](dataview-mappings.md).
+* En bruger anvender et filter på rapport-, side- eller visualiseringsniveau.
 
-* Brugeren vælger datapunkter i et andet visual af rapporten.
+    Power BI filtrerer data baseret på filterbetingelser. Power BI kalder metoden `update` for visualiseringen for at opdatere visualiseringen med nye data.
 
-    Power BI filtrerer eller fremhæver de valgte datapunkter og kalder metoden `update` for visual'et.
+    Visualiseringen får en ny opdatering af `options`-objekterne, når der er nye data i et af de indlejrede objekter. Hvordan opdateringen finder sted, afhænger af konfigurationen af tilknytning af datavisninger for visualiseringen.
 
-    Visual'et henter nye filtrerede data eller de samme data med en fremhævningsmatrix.
+    Du kan finde flere oplysninger under [Forstå tilknytning af datavisning i Power BI-visualiseringer](dataview-mappings.md).
 
-    Du kan finde flere oplysninger ved at [læse om, hvordan du fremhæver data i visuals](highlight.md).
+* En bruger vælger datapunkter i en anden visualisering i rapporten.
 
-* Brugeren vælger bogmærker i bogmærkepanelet i rapporten.
+    Når en bruger vælger et datapunkt i en anden visualisering i rapporten, filtrerer eller fremhæver Power BI de valgte datapunkter og kalder visualiseringens metode `update`. Visualiseringen henter nye filtrerede data eller de samme data med en fremhævningsmatrix.
 
-    Der kan forekomme to handlinger:
+    Du kan finde flere oplysninger under [Fremhæv datapunkter i Power BI-visualiseringer](highlight.md).
 
-    1. Den overførte funktion til Power BI-kald, der blev registreret af metoden `registerOnSelectionCallback`, og tilbagekaldsfunktionen får valgmatrixer for det tilsvarende bogmærke.
+* En bruger vælger bogmærker i bogmærkepanelet i rapporten.
 
-    2. Power BI kalder metoden `update` med et tilsvarende filterobjekt i `options`.
+    Når en bruger vælger et bogmærke i rapportens bogmærkepanel, kan der opstå en af to handlinger:
 
-    I begge tilfælde skal visual'et ændre visualiseringstilstanden i henhold til modtagne valg eller filterobjektet.
+    * Power BI kalder en funktion, der overføres og registreres af metoden `registerOnSelectionCallback`. Tilbagekaldsfunktionen henter matricer med markeringer for det tilsvarende bogmærke.
 
-    Du kan finde flere oplysninger om bogmærker ved at [læse, hvordan du håndterer bogmærker](filter-api.md).
+    * Power BI kalder metoden `update` med et tilsvarende `filter`-objekt i `options`-objektet.
 
-    Du kan finde flere oplysninger om filtre ved at [læse om, hvordan Power BI-visuals kan filtrere data i andre visuals](filter-api.md).
+    I begge tilfælde skal visualiseringen ændre sin tilstand i henhold til de modtagne valg eller `filter`-objektet.
 
-### <a name="user-interacts-with-visual-directly"></a>Brugeren interagerer direkte med visual
+    Du kan finde flere oplysninger om bogmærker og filtre under [API til visuelle filtre i Power BI-visualiseringer](filter-api.md).
 
-* Bruger holder musemarkøren over dataelementet
+### <a name="user-interacts-with-the-visual-directly"></a>Brugeren interagerer direkte med visualiseringen
 
-    Visual'et kan vise flere oplysninger om datapunkter via værktøjstip-API'en i Power BI.
-    Brugeren holder musemarkøren over visual'et. Visual'et kan håndtere hændelser og vise data på værktøjstipelementet.
+* En bruger placerer musemarkøren over et dataelement.
 
-    Visual'et kan vise standardværktøjstip eller rapportsideværktøjstip.
+    Visualiseringen kan vise flere oplysninger om et datapunkt via værktøjstip-API'en i Power BI. Når en bruger holder musen over en visualisering, kan visualiseringen håndtere hændelsen og vise data om det tilknyttede værktøjstip. Visualiseringen kan vise standardværktøjstip eller rapportsideværktøjstip.
 
-    Hvis du vil vide mere, kan du læse vejledningen til [hvordan du tilføjer værktøjstip](add-tooltips.md).
+    Du kan finde flere oplysninger under [Værktøjstip til visualiseringer i Power BI](add-tooltips.md).
 
-* Brugeren ændrer egenskaber for visual'et (brugeren udvider f.eks. et træ, og visual'et gemmer tilstanden i egenskaberne)
+* En bruger ændrer egenskaber for visualiseringer. (Brugeren udvider f.eks. et træ, og visualiseringen gemmer tilstanden i egenskaberne).
 
-    Visual'et kan gemme egenskabsværdier via Power BI-API'en. F. eks. når en bruger interagerer med det visual'et. Og visual'et skal gemme eller opdatere egenskabsværdier. Visual'et kan kalde metoden `presistProperties` for at gøre det.
+    En visualisering kan gemme egenskabsværdier via Power BI-API'en. Hvis en bruger f.eks. interagerer med visualiseringen, og visualiseringen skal gemme eller opdatere egenskabsværdier, kan visualiseringen kalde metoden `presistProperties`.
 
-* Brugeren klikker på URL-link.
+* En bruger vælger en URL-adresse.
 
-    Visual'et kan som standard ikke åbne URL-adressen. Hvis du vil åbne URL-adressen under den nye fane, skal visual'et kalde metoden `launchURL` metode og overføre URL-adressen som en parameter.
+    En visualisering kan som standard ikke åbne en URL-adresse direkte. Hvis du i stedet vil åbne en URL-adresse i en ny fane, kan visualiseringen kalde metoden `launchUrl` og sende URL-adressen som en parameter.
 
-    Du kan finde flere oplysninger om [start af URL-API'en](launch-url.md).
+    Du kan finde flere oplysninger under [Opret en URL-adresse til start](launch-url.md).
 
-* Brugeren anvender et filter via visual'et
+* En bruger anvender et filter via visualiseringen.
 
-    Visual'et kalder `applyJSONFilter` og overfører filterbetingelser for at filtrere efter filtreringsdata i et andet visual.
+    En visualisering kan kalde metoden `applyJsonFilter` og overføre betingelser for at filtrere efter data i andre visualiseringer. Der er flere tilgængelige filtertyper, herunder basisfiltre, avancerede filtre og tuplefiltre.
 
-    Visual'et kan bruge flere typer filtre, f. eks. filteret Basic, filteret Avanceret og filteret Tupel.
+    Du kan finde flere oplysninger i [API til visualisering af filtre i Power BI](filter-api.md).
 
-    Du kan finde flere oplysninger om filtre ved at [læse om, hvordan Power BI-visuals kan filtrere data i andre visuals](filter-api.md).
+* En bruger vælger elementer i visualiseringen.
 
-* Bruger klikker/vælger elementer i visual'et.
+    Du kan finde flere oplysninger om valg i en Power BI-visualisering under [Tilføj interaktivitet ved hjælp af valg af visualiseringer i Power BI](selection-api.md).
 
-    Du kan finde flere oplysninger om valg ved at [læse om, hvordan visuals interagerer](selection-api.md).
+### <a name="visual-interacts-with-power-bi"></a>Visualiseringen interagerer med Power BI
 
-### <a name="the-visual-interacts-with-power-bi"></a>Visual'et interagerer med Power BI
+* En visualisering anmoder om flere data fra Power BI.
 
-* Visual'et anmoder om flere data fra Power BI.
+    En visualisering behandler data del for del. API-metoden `fetchMoreData` anmoder om det næste fragment af data i datasættet.
 
-    Visual'et kan behandle data del for del. API-metoden FetchMoreData anmoder om det næste fragment af datasæt.
+    Du kan få flere oplysninger i [Hent flere data fra Power BI](fetch-more-data.md).
 
-    Du kan finde flere oplysninger om `fetchMoreData` ved at [læse om, hvordan du henter flere data fra Power BI](fetch-more-data.md)
+* Hændelsestjenesten udløses.
 
-* Hændelsestjeneste
+    Power BI kan eksportere en rapport til PDF eller sende en rapport via mail (gælder kun for certificerede visualiseringer). Hvis du vil give Power BI besked om, at gengivelsen er fuldført, og at visualiseringen er klar til at blive registreret som PDF eller mail, skal visualiseringen kalde API'en for gengivelse af hændelser.
 
-    Power BI kan eksportere rapporter til PDF eller sende dem via mail (kun certificerede visuals understøttes). Hvis du vil give Power BI besked om, at gengivelse er fuldført, og at den er klar til at hente PDF/mail, skal visual'et kalde API'en til gengivelse af hændelser.
+    Du kan finde flere oplysninger i [Eksport af rapporter fra Power BI til PDF](../../consumer/end-user-pdf.md).
 
-    Du kan finde flere oplysninger ved at [læse om eksport af rapporter fra Power BI til PDF](../../consumer/end-user-pdf.md)
-
-    Find flere [oplysninger om hændelsestjenesten](event-service.md)
+    Hvis du vil vide mere om hændelsestjenesten, skal du se [Gengiv hændelser i visualiseringer i Power BI](event-service.md).
 
 ## <a name="next-steps"></a>Næste trin
 
-Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til AppSource? Se [Udvikling af et Power BI-visual](./custom-visual-develop-tutorial.md), og få mere at vide om, hvordan du [publicerer Power BI-visuals i AppSource](../office-store.md).
+Er du interesseret i at oprette dine egne visualiseringer og føje dem til Microsoft AppSource? Se følgende artikler:
+
+* [Udvikling af en Power BI-visualisering](./custom-visual-develop-tutorial.md)
+* [Publicer Power BI-visualiseringer i Partnercenter](../office-store.md)

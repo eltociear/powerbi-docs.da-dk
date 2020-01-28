@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 12aa35e37e4382e7fc89fc9e0fe8c2ae564e8eda
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 77be727de3cda1d3b6fd5c34b6e572b1d505fc54
+ms.sourcegitcommit: 313a5a6a01c09038a6152d681103accbd2faf437
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872822"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76282015"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Fastgør et felt til et dashboard fra Spørgsmål og svar
 ## <a name="how-to-pin-a-tile-from-qa"></a>Sådan fastgør du et felt fra Spørgsmål og svar
@@ -53,7 +53,7 @@ I denne vejledning bruger vi Power BI-tjenesten (app.powerbi.com) til at åbne e
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 * Når du begynder at indtaste et spørgsmål, begynder Spørgsmål og svar straks at søge efter det bedste svar fra alle de datasæt, der er knyttet til det aktuelle dashboard.  Det "aktuelle dashboard" er det dashboard, der er angivet i den øverste navigationsrude. Dette spørgsmål stilles f.eks. på dashboardet **Eksempel på analyse af detailhandel**, som er en del af arbejdsområdet **mihart**.
 
-  ![brødkrummer](media/service-dashboard-pin-tile-from-q-and-a/power-bi-nav pane.png)
+  ![brødkrummer](media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png)
 * **Hvordan ved Spørgsmål og svar, hvilke datasæt der skal bruges**?  Spørgsmål og svar har adgang til alle datasæt, der har mindst en visualisering fastgjort til det pågældende dashboard.
 
 * **Hvis feltet med spørgsmål ikke vises**. Rådfør dig med din Power BI-administrator. Administratoren kan deaktivere Spørgsmål og svar.

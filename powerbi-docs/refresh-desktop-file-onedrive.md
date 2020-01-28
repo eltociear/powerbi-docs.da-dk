@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: ba911361ad2837a10f28358cbd1510effc1dd7eb
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: b2a05f3112a9272d5e41cff20729c445c7a0ae39
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75837657"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76038558"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Opdater et datasæt, der er gemt på OneDrive eller SharePoint Online
 Hvis du importerer filer fra OneDrive eller SharePoint Online til Power BI-tjenesten, kan du nemt sikre, at dit arbejde i Power BI Desktop altid er synkroniseret med Power BI-tjenesten.
@@ -37,7 +37,7 @@ Når du opdaterer datasættet, oprettes der ikke forbindelse til filen på OneDr
 Power BI understøtter **Opdater** og **Planlæg opdatering** for de datasæt, der er oprettet via Power BI Desktop-filer, som er importeret fra et lokalt drev, hvor du bruger **Hent data** eller **Forespørgselseditor** til at oprette forbindelse til og indlæse data fra en af følgende datakilder.
 
 > [!NOTE]
-> Importerede filer på OneDrive understøttes, men direkte forbundne datasæt i OneDrive understøttes ikke som et opdateringsscenarie på OneDrive.
+> Onedrive-opdatering af datasæt med direkte forbindelse understøttes. Ændring af datasættet med direkte forbindelse fra ét datasæt til et andet i en rapport, der allerede er udgivet, understøttes dog ikke i scenariet OneDrive-opdatering.
 
 ### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personlig
 * Alle onlinedatakilder, der vises i **Hent data** og **Forespørgselseditor** i Power BI Desktop.

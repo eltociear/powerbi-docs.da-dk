@@ -8,17 +8,17 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/07/2020
 ms.author: maggies
-ms.openlocfilehash: 4c4228ea4276235a983849d2ea88e1030f4690f7
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.openlocfilehash: 54416b314b03a5889c58004918513fecd7ff5ccd
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75732032"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75954257"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Opret en sideinddelt rapport til Power BI-rapportserver
 I denne artikel kan du oprette en sideinddelt rapport for Power BI-rapportserver med nogle få hurtige trin.
 
-Leder du efter hjælp til oprettelse af sideinddelte rapporter i Report Builder til Power BI-tjenesten? Se i stedet [Sideinddelt Report Builder i Power BI](../report-builder-power-bi.md).
+Leder du efter hjælp til oprettelse af sideinddelte rapporter i Report Builder til Power BI-tjenesten? Se i stedet [Power BI Report Builder](../report-builder-power-bi.md).
 
 Som navnet antyder så kan sideinddelte rapporter løbe op i mange sider. De er udformet i et fast format og tillader præcis tilpasning. Sideinddelte rapporter er .rdl-filer.
 

@@ -7,43 +7,44 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/19/2019
+ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b0ae068ebeae2d16984706340c6eb9b2f247db1d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 3c6cd3feb15001cd170d48e306ee1f8a5ba8b2dc
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73867928"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160930"
 ---
 # <a name="enter-data-directly-into-power-bi-desktop"></a>Angiv data direkte i Power BI Desktop
+
 Med Power BI Desktop kan du skrive data direkte i og bruge dem i dine rapporter og visualiseringer. Du kan for eksempel kopiere dele af en projektmappe eller webside og derefter indsætte det i Power BI Desktop.
 
 Hvis du vil angive data direkte i Power BI Desktop i form af en ny tabel, skal du vælge **Angiv data** på båndet **Hjem**.
 
-![](media/desktop-enter-data-directly-into-desktop/enter-data-directly_1.png)
+![Vælg Angiv data under Hjem](media/desktop-enter-data-directly-into-desktop/enter-data-directly_1.png)
 
 Power BI Desktop forsøger måske at foretage mindre transformeringer af dataene, hvis det er passende, på samme måde som når du indlæser data fra en kilde. I følgende tilfælde har den f.eks. hævet den første række data til overskrifter.
 
-![](media/desktop-enter-data-directly-into-desktop/enter-data-directly_2.png)
+![Data med den første række som kolonneoverskrifter](media/desktop-enter-data-directly-into-desktop/enter-data-directly_2.png)
 
-Hvis du vil forme de data, du har angivet (eller indsat), kan du vælge knappen Rediger for at få vist **forespørgselseditoren**, hvor du kan forme og transformere dataene, før du viser dem i Power BI Desktop. Eller du kan vælge knappen **Indlæs** for at importere dataene, som de vises.
+Hvis du vil forme de data, du har indtastet eller indsat, skal du vælge **Rediger** for at åbne **Power Query-editor**. Du kan forme og transformere dataene, før du overfører dem til Power BI Desktop. Vælg **Indlæs** for at importere dataene, som de vises.
 
-Når du vælger **Indlæs**, opretter Power BI Desktop en ny tabel ud fra dine data og gør den tilgængelig i ruden **Felter**. På følgende billede viser Power BI Desktop min nye tabel, der som standard kaldes *Table1*, og de to felter i tabellen, der er oprettet.
+Når du vælger **Indlæs**, opretter Power BI Desktop en ny tabel ud fra dine data og gør den tilgængelig i ruden **Felter**. På følgende billede viser Power BI Desktop den nye tabel, der som standard kaldes *Table1*, og de to felter i tabellen, der er oprettet.
 
-![](media/desktop-enter-data-directly-into-desktop/enter-data-directly_3.png)
+![Felter indlæst i Power BI Desktop](media/desktop-enter-data-directly-into-desktop/enter-data-directly_3.png)
 
-Og det var det – så nemt er det at indtaste data i Power BI Desktop.
+Det var det hele! Så nemt er det at angive data i Power BI Desktop.
 
-Du er nu klar til at bruge dataene i Power BI Desktop til at oprette visualiseringer og rapporter eller interagere med andre data, som du måske vil oprette forbindelse til og importere, f.eks. Excel-projektmapper, databaser eller en hvilken som helst anden datakilde.
+Du er nu klar til at bruge dataene i Power BI Desktop. Du kan oprette visualiseringer og rapporter eller interagere med andre data, som du måske vil oprette forbindelse til og importere, f.eks. Excel-projektmapper, databaser eller en hvilken som helst anden datakilde.
 
 ## <a name="next-steps"></a>Næste trin
+
 Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
 
 * [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)
 * [Udform og kombiner data med Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Opret forbindelse til Excel-projektmapper i Power BI Desktop](desktop-connect-excel.md)   
-* [Opret forbindelse til CSV-filer i Power BI Desktop](desktop-connect-csv.md)   
-
+* [Opret forbindelse til Excel-projektmapper i Power BI Desktop](desktop-connect-excel.md)
+* [Opret forbindelse til CSV-filer i Power BI Desktop](desktop-connect-csv.md)

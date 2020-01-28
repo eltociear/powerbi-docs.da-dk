@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: 4db1f887c1dd889a06c02643a0270cc24ab9c45f
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: f9ed7f47c0f36e540d22270048e93acd2d3a8e21
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74311500"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953774"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports-preview"></a>Implementering af sikkerhed på rækkeniveau i integrerede sideinddelte rapporter (prøveversion)
 
@@ -32,7 +32,7 @@ Når du har tildelt parameteren til **UserID**, skal du bruge [Reports GenerateT
 
 ## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>Brug UserID som et filter på rapport- eller forespørgselsniveau
 
-Du kan bruge **UserId** som et *filter* eller i en *forespørgsel* til datakilden i [Sideinddelt Report Builder i Power BI](../report-builder-power-bi.md).
+Du kan bruge **UserId** som et *filter* eller i en *forespørgsel* til datakilden i [Power BI Report Builder](../report-builder-power-bi.md).
 
 ### <a name="using-the-filter"></a>Brug af filteret
 

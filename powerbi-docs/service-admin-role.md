@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 01/02/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 04ffeb01efeaa714b30b2246174584f2caf90468
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: fc1a0c524a3cb4a713cbaf049c259a4b96714131
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75622334"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160805"
 ---
 # <a name="understanding-power-bi-service-administrator-roles"></a>Om Power BI-tjenesteadministratorroller
 
-Hvis du vil administrere en Power BI-lejer, skal du have en af følgende roller: Power BI-administrator, Power Platform-administrator eller Global administrator i Microsoft 365. Administratorer af Microsoft 365-brugeradministration tildeler brugere til rollerne Power BI-administrator eller Power Platform-administrator i Microsoft 365 Administration eller ved hjælp af et PowerShell-script.
+Hvis du vil administrere en Power BI-lejer, skal du have en af følgende roller: Power BI-administrator, Power Platform-administrator eller Global administrator i Microsoft 365. Administratorer af Microsoft 365-brugeradministration tildeler brugere til rollerne Power BI-administrator eller Power Platform-administrator i Microsoft 365 Administration eller ved hjælp af et PowerShell-script. Du kan finde flere oplysninger under [Tildel roller til brugerkonti med Office 365 PowerShell](/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell).
 
 Brugere med rollerne Power BI-administrator eller Power Platform-administrator har fuld kontrol over en Power BI-lejer og de tilhørende administrative funktioner (undtagen licensering). Når en bruger er tildelt, har vedkommende adgang til [Power BI-administrationsportalen](service-admin-portal.md). Her har vedkommende adgang til lejerbaserede forbrugsdata og kan kontrollere lejerbaseret forbrug af Power BI-funktioner. Disse administratorroller er ideelle til brugere, som skal have adgang til Power BI-administrationsportalen, men ikke skal have tildelt anden administrativ adgang i Microsoft 365.
 
