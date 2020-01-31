@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 1/22/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0b581b9c45cb75d12eea974c0895474015634eb1
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 0733e726512ff52c5b51ba2d25cea18f8857f1e8
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73851300"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537579"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer og brug apps med dashboards og rapporter i Power BI
 
@@ -48,12 +48,13 @@ Du kan også finde og installere apps fra Microsoft AppSource. Der vises kun pro
 1. Vælg **Apps**  > **Hent apps**. 
    
     ![Ikonet Hent apps](./media/end-user-app-view/power-bi-get-app2.png)    
-2. I AppSource under **Min organisation** kan du søge for at begrænse resultatet og finde den app, du leder efter.
+2. I AppSource under **Min organisation** kan du udføre en søgning for at afgrænse resultatet og finde den app, du leder efter.
    
     ![I AppSource under Min organisation](./media/end-user-app-view/power-bi-opportunity-app.png)
 3. Vælg **Hent den nu** for at føje den til din appindholdsliste. 
 
-## <a name="get-an-app-from-the-microsoft-appsource-website-httpsappsourcemicrosoftcom"></a>Hent en app fra Microsoft AppSource-webstedet (https://appsource.microsoft.com)
+## <a name="get-an-app-from-the-microsoft-appsource-website"></a>Hent en app fra Microsoft AppSource-webstedet 
+
 I dette eksempel åbner vi en af Microsofts eksempelapps. På AppSource kan du finde apps til mange af de tjenester, du bruger til at køre din virksomhed.  Tjenester som f.eks. Salesforce, Microsoft Dynamics, Google Analytics, GitHub, Zendesk, Marketo og mange flere. Du kan få mere at vide i [Apps til tjenester, du bruger sammen med Power BI](../service-connect-to-services.md). 
 
 1. Åbn https://appsource.microsoft.com i en browser, og vælg **Power BI-apps**.
@@ -92,12 +93,36 @@ I dette eksempel åbner vi en af Microsofts eksempelapps. På AppSource kan du f
     ![Udforsk ved hjælp af eksempeldata](./media/end-user-apps/power-bi-new-app.png)
 
 
-
-
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Interager med dashboards og rapporter i appen
 Brug lidt tid på at udforske dataene i de dashboards og rapporter, der udgør appen. Du har adgang til alle almindelige Power BI-interaktioner som filtrering, fremhævning, sortering og analyse.  Er du stadig lidt forvirret over forskellen mellem dashboards og rapporter?  Læs [artiklen om dashboards](end-user-dashboards.md) og [artiklen om rapporter](end-user-reports.md).  
 
+## <a name="update-an-app"></a>Opdater en app 
 
+Fra tid til tiden kan appudviklere udgive nye versioner af deres apps. Hvordan du får den nye version, afhænger af, hvordan du har modtaget originalen. 
+
+* Hvis du har fået appen fra din organisation, er opdateringen til den nye version helt gennemsigtig – du behøver ikke at foretage dig noget. 
+
+* Hvis du fik appen fra AppSource, vises der et meddelelsesbanner, næste gang du åbner appen. Under meddelelsen kan du se, at der er en ny version tilgængelig. 
+
+    1. Vælg **Hent** for at opdatere.  
+
+        <!--![App update notification](./media/end-user-app-view/power-bi-new-app-version-notification.png) -->
+
+    2. Når du bliver bedt om at installere den opdaterede app, skal du vælge **Installer**. 
+
+        ![Installér opdatering](./media/end-user-app-view/power-bi-install.png) 
+
+    3. Da du allerede har en version af denne app, skal du beslutte, om du vil erstatte den eksisterende version, eller om du vil installere den opdaterede app i et nyt arbejdsområde.   
+
+        ![Overskriv gammel appversion](./media/end-user-app-view/power-bi-already-installed.png) 
+
+
+    > [!NOTE] 
+    > Hvis du installerer en ny version, overskrives alle de ændringer, du har foretaget af rapporter og dashboards. Hvis du vil beholde dine opdaterede rapporter og dashboards, kan du gemme dem med et andet navn eller på en anden placering, før du installerer dem. 
+
+    4. Når du har installeret den opdaterede version, skal du vælge **Opdater app** for at fuldføre opdateringsprocessen. 
+
+    <!--![Update app](./media/end-user-app-view/power-bi-new-app-version-update-app.png) -->
 
 
 ## <a name="next-steps"></a>Næste trin

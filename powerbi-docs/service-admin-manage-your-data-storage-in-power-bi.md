@@ -1,39 +1,48 @@
 ---
 title: Administrer datalager i dine arbejdsområder
-description: Få mere at vide om, hvordan du kan administrere dit datalager i dit individuelle område eller arbejdsområde for at sikre, at du kan fortsætte med at publicere rapporter og datasæt.
+description: Få mere at vide om, hvordan du administrerer dit datalager i dit individuelle område eller arbejdsområde for at sikre, at du kan fortsætte med at publicere rapporter og datasæt.
 author: maggiesMSFT
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 01/23/2020
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: f8e7240b34e20a3d18443cadb5265c5d0d870790
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: bc8b8c16675e6d413c22d4ae88018222b02b17d6
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73873645"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709874"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Administrer datalager i Power BI-arbejdsområder
 
-Få mere at vide om, hvordan du kan administrere dit datalager i dit individuelle område eller arbejdsområde for at sikre, at du kan fortsætte med at publicere rapporter og datasæt.
+Få mere at vide om, hvordan du administrerer dit datalager i dit individuelle område eller arbejdsområde, så du kan fortsætte med at publicere rapporter og datasæt.
 
-Brugere og arbejdsområder har deres egne datakapaciteter:
+## <a name="capacity-limits"></a>Grænser for kapacitet
 
-* Alle brugere har maksimalt 10 GB datalager.
-* Brugere med en Power BI Pro-licens kan oprette arbejdsområder med maksimalt 10 GB datalager hver.
-* Et arbejdsområde i en Premium-kapacitet tæller ikke med i lageret for en Power BI Pro-bruger.
+Lagerbegrænsninger for arbejdsområdet, uanset om det er i mit arbejdsområde eller i en apps arbejdsområde, afhænger af, om arbejdsområdet er i [delt eller Premium-kapacitet](service-basic-concepts.md#capacities).
 
-På lejerniveauet må det samlede forbrug ikke overstige 10 GB pr. Pro-bruger på tværs af alle Pro-brugere og arbejdsområder i lejeren.
+### <a name="shared-capacity-limits"></a>Grænser for delt kapacitet
+For arbejdsområder i delt kapacitet: 
+
+- Der er en lagergrænse pr. arbejdsområde på 10 GB.
+- I forbindelse med arbejdsområder i apps kan det samlede forbrug ikke overstige 10 GB ganget med antallet af Pro-licenser i lejeren.
+
+### <a name="premium-capacity-limits"></a>Grænser for Premium-kapacitet
+For arbejdsområder i Premium-kapacitet:
+- Der er en grænse på 100 TB pr. Premium-kapacitet.
+- Der er ingen lagergrænse pr. bruger.
 
 Læs om andre funktioner i [prismodellen for Power BI](https://powerbi.microsoft.com/pricing).
 
+## <a name="whats-included-in-storage"></a>Dette er inkluderet i lageret
+
 Inkluderet i dit datalager er dine egne datasæt og Excel-rapporter samt de elementer, som nogen har delt med dig. Datasæt er de datakilder, du har uploadet eller oprettet forbindelse til. Disse datakilder omfatter de Power BI Desktop-filer og Excel-projektmapper, du bruger. Følgende er også medtaget i din datakapacitet.
 
-* Excel-områder, der er fastgjort til dashboardet.
+* Excel-områder, der er fastgjort til et dashboard.
 * Reporting Services-visualiseringer i det lokale miljø, der er fastgjort til et Power BI-dashboard.
 * Uploadede billeder.
 
@@ -48,6 +57,7 @@ Se, hvor meget datalager, du bruger på din Power BI-konto, og administrer din k
 1. Hvis du vil administrere dit eget lager, skal du gå til **Mit arbejdsområde** i navigationsruden.
    
     ![Mit arbejdsområde](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
+
 2. Vælg tandhjulsikonet ![Tandhjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i øverste højre hjørne \> **Administrer personligt lager**.
    
     Den øverste bjælke viser, hvor meget af din maksimale lagerkapacitet du har brugt.
@@ -57,6 +67,7 @@ Se, hvor meget datalager, du bruger på din Power BI-konto, og administrer din k
     Datasæt og rapporter er opdelt på to faner:
    
     **Ejet af mig:** Du har uploadet disse rapporter og datasæt til din Power BI-konto, herunder tjenestedatasæt som f.eks. Salesforce og Dynamics CRM.  
+
     **Ejet af andre:** Andre har delt disse rapporter og datasæt med dig.
 1. Hvis du vil slette et datasæt eller en rapport, skal du vælge ikonet for Papirkurv ![Papirkurv-ikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
 
@@ -75,18 +86,18 @@ Vær opmærksom på, at du eller en anden muligvis har rapporter og dashboards, 
     Datasæt og rapporter er opdelt på to faner:
    
     **Ejet af os:** Du eller en anden har uploadet disse rapporter og datasæt til gruppens Power BI-konto, herunder tjenestedatasæt som f.eks. Salesforce og Dynamics CRM.
+
     **Ejet af andre:** Andre har delt disse rapporter og datasæt med din gruppe.
+
 3. Hvis du vil slette et datasæt eller en rapport, skal du vælge ikonet for Papirkurv ![Papirkurv-ikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
    
    > [!NOTE]
-   > Et hvilket som helst medlem af et arbejdsområde med redigeringstilladelser kan slette datasæt og rapporter fra arbejdsområdet.
-   > 
-   > 
-
-Vær opmærksom på, at du eller en anden i gruppen muligvis har rapporter og dashboards, der er baseret på et datasæt. Hvis du sletter datasættet, fungerer disse rapporter og dashboards ikke længere.
+   > Vær opmærksom på, at du eller en anden i gruppen muligvis har rapporter og dashboards, der er baseret på et datasæt. Hvis du sletter datasættet, fungerer disse rapporter og dashboards ikke længere.
+   
+   Et hvilket som helst medlem af et arbejdsområde med rolle som administrator, medlem eller bidragyder kan slette datasæt og rapporter fra arbejdsområdet.
 
 ## <a name="dataset-limits"></a>Begrænsninger for datasæt
-Der er en grænse på 1 GB, pr. datasæt, der indlæses i Power BI. Hvis du har valgt at beholde Excel-oplevelsen i stedet for at importere dataene, er grænsen 250 MB for datasættet.
+Der er en grænse på 1 GB pr. datasæt, der indlæses i Power BI. Hvis du har valgt at beholde Excel-oplevelsen i stedet for at importere dataene, er grænsen 250 MB for datasættet.
 
 ## <a name="what-happens-when-you-reach-a-limit"></a>Det sker der, når du når grænsen
 Når du når din grænse for datakapacitet, får du vist meddelelser i tjenesten. 
@@ -102,6 +113,8 @@ Denne grænse angives også i **Administrer personligt lager**.
  Når du forsøger at udføre en handling, som gør, at du når en af grænserne, får du vist en meddelelse, der angiver, at du har overskredet grænsen. Du kan [administrere](#manage) dit lager for at reducere mængden af lagret indhold og komme under grænsen.
 
  ![Du har overskredet din lagergrænse](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
+
+ ## <a name="next-steps"></a>Næste trin
 
  Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

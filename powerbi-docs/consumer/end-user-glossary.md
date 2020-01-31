@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/07/2019
+ms.date: 01/17/2019
 ms.author: mihart
-ms.openlocfilehash: cf70774712a8b72493c8957139d8f802dc4d1ed7
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: e5c3f8b327d6899d83e2304e56e5813a47fc4698
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75836652"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537801"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
@@ -77,6 +77,10 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 **content view (indholdsvisning)**
 
+**Fortløbende variabel** – en fortløbende variabel kan være en hvilken som helst værdi mellem minimum- og maksimumgrænserne, ellers er den en diskret variabel. Eksempler er temperatur, vægt, alder og tid. Fortløbende variabler kan indeholde brøker eller dele af værdien. Det samlede antal blå skateboards, der er solgt, er en diskret variabel, da vi ikke kan sælge halvdelen af et skateboard.
+
+**Korrelation** – en korrelation fortæller os, hvordan funktionsmåden for ting er relateret til hinanden.  Hvis deres mønstre for stigning og fald er det samme, er de positivt korreleret. Og hvis deres mønstre er modsatte, er de negativt korreleret. Hvis f.eks. salg af vores røde skateboard stiger, hver gang vi kører en tv-marketingkampagne, er salg af det røde skateboard og tv-kampagnen positivt korreleret.
+
 **cross-filter (krydsfiltrering)** Gælder for visuelle interaktioner. Med krydsfiltrering fjernes data, der ikke er gældende. Hvis du f.eks. vælger **Moderation** i kransediagrammet, så krydsfiltreres kurvediagrammet. Der vises nu kun datapunkter, der gælder for segmentet Moderation, i kurvediagrammet.
 
 **cross-highlight (krydsfremhævning)** Gælder for visuelle interaktioner. Med krydsfremhævning bevares alle oprindelige datapunkter, men den del, der ikke gælder for dit valg, nedtones. Hvis du f.eks. vælger **Moderation** i kransediagrammet, så krydsfremhæves søjlediagrammet. Alle data, der ikke gælder for segmentet Moderation, nedtones i søjlediagrammet, og alle data, der gælder for segmentet Moderation, fremhæves.
@@ -102,8 +106,9 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 **Desktop** eller **Power BI Desktop** Gratis Power BI-værktøj, der bruges primært af rapportdesignere, administratorer og udviklere. 
 
 
-
 **diamond (rombe)** Power BI Premium. Formen på det ikon, der angiver, at et arbejdsområde er et arbejdsområde i Premium-kapacitet.
+
+**Dimension** – dimensioner er kategoriske data (tekst). En dimension beskriver en person, et objekt, et element, produkter, en placering og et klokkeslæt. I et datasæt er dimensioner en metode til at gruppere *målinger* i nyttige kategorier. For vores skateboard-virksomhed kan nogle dimensioner inkludere at se på salg (en måling) efter model, farve, land eller markedsføringskampagne.   
 
 **drill up (vis færre detaljer), drill down (detailudledning) og drillthrough (detaljeadgang)** i Power BI kan du bruge Detailudledning og Vis færre detaljer til at udforske det næste detaljeniveau i en rapport eller visualisering. Brug Detaljeadgang til at henvise til muligheden for at vælge en del af en visualisering og blive overført til en anden side i rapporten, der er filtreret til de data, der er relateret til den del af visualiseringen, som du har valgt på den oprindelige side.
 Analysér til detaljer betyder som regel at vise de underliggende poster.
@@ -168,6 +173,8 @@ Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
 **list page (listeside)** eller **content list (indholdsliste)** En af afsnitssiderne for elementerne i navigationsruden. F.eks. Favoritter, Seneste, Mit arbejdsområde osv.
 
 ## <a name="m"></a>M
+
+**Måling** – en måling er et kvantitativt (numerisk) felt, der kan bruges til at foretage beregninger. Almindelige beregninger er sum, gennemsnit og minimum. Hvis vores virksomhed f.eks. fremstiller og sælger skateboards, kan vores målinger være antallet af skateboards, der er solgt, og den gennemsnitlige indtjening pr. år.
 
 **Mobile app (Mobilapp)** Apps, der gør det muligt at køre Power BI på iOS-, Android- og Windows enheder.
 
@@ -302,6 +309,8 @@ Du kan abonnere på rapportsider, apps og dashboards og modtage mails, der indeh
 ## <a name="t"></a>T
 **tiles (felter)**  
 Power BI-dashboards indeholder rapportfelter.
+
+**Tidsserie** – en tidsserie er den måde, hvorpå du kan få vist klokkeslæt som efterfølgende datapunkter. Disse datapunkter kan være trinvise, f.eks. sekunder, timer, måneder eller år.  
 
 
 ## <a name="u"></a>U

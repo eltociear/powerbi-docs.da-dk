@@ -7,20 +7,25 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 01/17/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5189c92c9da29b38d9ffaa4bf59e271e08fc4b2c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ad7e2133d531abcbb2165dc2be9846a6a70f4fc0
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73862707"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537414"
 ---
 # <a name="opt-in-for-power-bi-service-preview-features"></a>Tilmeld dig prøveversionsfunktioner i Power BI-tjenesten
 ## <a name="what-are-preview-features"></a>Hvad er *prøveversionsfunktioner*?
 I takt med at vi foretager forbedringer af Power BI-tjenesten, frigiver vi nogle nye funktioner som *prøveversionsfunktioner*. Prøveversionsfunktioner kan slås til og fra, hvilket giver dig mulighed for at prøve dem.
 
+Nogle prøveversionsfunktioner kan slås til og fra via dit Power BI-dashboard, din startside eller selve rapporten.
+
+   ![Til/fra-knappen Nyt udseende](./media/end-user-preview-features/power-bi-toggle.png)
+
+Mens andre prøveversionsfunktioner bliver tilgængelige i menuen *Indstillinger*. I denne artikel kan du se, hvordan du får adgang til prøveversionsfunktioner via menuen Indstillinger.
 
 ## <a name="find-previews-and-turn-them-on-and-off"></a>Find prøveversioner, og aktivér (deaktiver) dem
 1. Åbn menuen Indstillinger ved at vælge tandhjulsikonet i øverste højre hjørne af Power BI-skærmen, og vælg **Indstillinger**.

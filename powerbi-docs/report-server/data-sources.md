@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 01/21/2020
 ms.author: maggies
-ms.openlocfilehash: 019cbc489ae6433629898e44088e689767ef12ae
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 343c7d7e81d8e8ec53383feab6dc4dcfb17129d6
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874192"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540584"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakilder på Power BI-rapportserver
 Power BI-rapporter kan oprette forbindelse til en række datakilder. Der er adgang til forskellige datakilder, afhængigt af hvordan dataene bruges. Dataene kan importeres, eller der kan foretages forespørgsler om data direkte ved hjælp af DirectQuery eller en direkte forbindelse til SQL Server Analysis Services.
@@ -30,7 +30,7 @@ Det er muligt, at andre datakilder fungerer, selvom de ikke står på listen ove
 
 | **Datakilde** | **Cachelagrede data** | **Planlagt opdatering** | **Live/DirectQuery** |
 | --- | --- | --- | --- |
-| SQL Server-database |Ja |Ja |Ja |
+| SQL Server Database |Ja |Ja |Ja |
 | SQL Server Analysis Services |Ja |Ja |Ja |
 | Azure SQL Database |Ja |Ja |Ja |
 | Azure SQL Data Warehouse |Ja |Ja |Ja |
@@ -202,12 +202,12 @@ Power BI-rapportserver understøtter ikke OAuth-baseret godkendelse i forbindels
 | Azure SQL Data Warehouse |Nej |Nej |Ja |Nej |Nej |
 | Oracle Database |Nej |Nej |Ja |Ja |Ja |
 | SAP Business Warehouse-server |Nej |Nej |Ja |Nej |Nej |
-| SAP HANA-database |Nej |Nej |Ja |Ja |Nej |
+| SAP HANA-database |Nej |Nej |Ja |Ja |Ja** |
 | Teradata |Nej |Nej |Ja |Ja |Ja |
 
+**SAP HANA understøtter kun DirectQuery med integreret Windows-godkendelse, når det bruges som en relationsdatabase i den publicerede Power BI Desktop-fil (.pbix).
 
 ## <a name="next-steps"></a>Næste trin
 Nu, hvor du har oprettet forbindelse til datakilden, kan du [oprette en rapport](quickstart-create-powerbi-report.md) ved hjælp af dataene fra denne datakilde.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

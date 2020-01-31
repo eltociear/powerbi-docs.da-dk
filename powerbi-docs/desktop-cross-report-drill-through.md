@@ -6,116 +6,97 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 01/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7189ef77446446b56b1dcb55b43b022d0fc5c057
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: e500cb29bcc4472c59e7e8215fc0a7e7e728ea0d
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73868764"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538812"
 ---
-# <a name="use-cross-report-drillthrough-in-power-bi-desktop"></a>Brug tværgående detaljeadgang i rapport i Power BI Desktop
+# <a name="use-cross-report-drillthrough-in-power-bi"></a>Brug detaljeadgang på tværs af rapporter i Power BI
 
-Med funktionen til detaljeadgang på tværs af rapporter i Power BI Desktop kan du gå fra én rapport til en anden rapport, afhængigt af konteksten. Dette er muligt, når rapporterne er inden for det samme arbejdsområde eller den samme app i Power BI-tjenesten. Brug detaljeadgang på tværs af rapporter til at forbinde to eller flere rapporter, der har relateret indhold, og til at overføre filterkonteksten sammen med forbindelsen på tværs af rapporter. I denne artikel får du mere at vide om, hvordan du konfigurerer en detaljeadgang på tværs af rapporter til Power BI-rapporter, og hvad brugerne oplever, når de benytter detaljeadgang på tværs af rapporter.
+Med funktionen til *detaljeadgang på tværs af rapporter* i Power BI kan du gå fra én rapport til en anden rapport i det samme arbejdsområde for Power BI-tjenesten eller den samme app, afhængigt af konteksten. Du kan bruge detaljeadgang på tværs af rapporter til at forbinde to eller flere rapporter, der har relateret indhold, og til at overføre filterkonteksten sammen med forbindelsen på tværs af rapporter. 
 
-![Skærmbillede af indstillingen til detaljeadgang i Power BI Desktop](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
+Hvis du vil starte detaljeadgang på tværs af rapporter, skal du vælge et datapunkt i en *kildes visualisering* i en *kilderapport* og derefter vælge destinationen **detaljeadgang på tværs af rapporter** i genvejsmenuen. 
 
-Følgende definitioner er vigtige at forstå, før vi begynder at konfigurere og bruge detaljeadgang på tværs af rapporter:
+![Power BI-muligheden for detaljeadgang på tværs af rapporter](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
 
-* **Kildens visuelle element:** Det visuelle element, der aktiverer detaljeadgangshandlingen ved hjælp af den visuelle genvejsmenu.
-* **Kildens rapport:** Den rapport, der indeholder kildens visuelle element til detaljeadgang på tværs af rapporter.
-* **Destinationsside:** Den side, som en bruger lander på, efter at du har igangsat en detaljeadgangshandling.
-* **Destinationsrapport:** Den rapport, der indeholder destinationssiden for detaljeadgang på tværs af rapporter.
+Handlingen for detaljeadgang åbner *destinationssiden* i *destinationsrapporten*. 
 
+![Power BI Desktop-destination for detaljeadgang på tværs af rapporter](media/desktop-cross-report-drill-through/cross-report-drill-through-01a.png)
+
+I denne artikel kan du se, hvordan du opretter og bruger detaljeadgang på tværs af rapporter til Power BI-rapporter.
 
 > [!NOTE]
-> Med funktionen til detaljeadgang på tværs af rapporter i Power BI Desktop kan du gå fra én rapport til en anden rapport, afhængigt af konteksten. Dette er muligt, når rapporterne er inden for det samme arbejdsområde eller den samme app i Power BI-tjenesten. Dette gælder ikke, når rapporter, der deles enkeltvist i *Mit arbejdsområde*, tilgås ([rapporter, der er delt med mig](service-share-dashboards.md#share-a-dashboard-or-report)). Du skal i stedet tilgå rapporten i det arbejdsområde, hvorfra den oprindeligt blev delt.
-
+> Du kan ikke bruge detaljeadgang på tværs af rapporter med individuelt delt [Delt med mig-rapporter](service-share-dashboards.md#share-a-dashboard-or-report) i **Mit arbejdsområde**. Hvis du vil bruge detaljeadgang på tværs af rapporter, skal du have adgang til rapporter i det arbejdsområde, hvor de blev delt.
 
 ## <a name="enable-cross-report-drillthrough"></a>Aktivér tværgående detaljeadgang i rapport
 
-Hvis du vil gøre en rapport til destinationen for en tværgående detaljeadgang, skal du aktivere funktionen for den pågældende rapport i vinduet **Indstillinger**. Gå til **Fil** > **Indstillinger** > **Indstillinger**, og gå derefter til **Rapportindstillinger** nederst på siden til venstre.
+Det første trin i aktivering af detaljeadgang på tværs af rapporter er at validere datamodellerne for kilde- og destinationsrapporterne. Selvom skemaerne i hver rapport ikke skal være ens, skal de felter, du vil overføre, findes i begge datamodeller. Navnene på felterne og navnene på de tabeller, de tilhører, skal være identiske. Strengene skal matche, og de skal skelne mellem store og små bogstaver.
 
-Markér afkrydsningsfeltet **Tillad, at visuelle elementer i denne rapport bruger detaljeadgangsmål fra andre rapporter** som vist på følgende billede.
+Hvis du f.eks. vil overføre et filter for feltet **State** i tabellen **US States**, skal begge modeller have tabellen **US States** og feltet **State** i den pågældende tabel. Hvis det ikke er tilfældet, skal du opdatere feltnavnet eller tabelnavnet i den underliggende model. Hvis du blot opdaterer det viste navn for felterne, fungerer det ikke korrekt for detaljeadgang på tværs af rapporter.
 
-![Skærmbillede af vinduet Indstillinger, hvor Rapportindstillinger er fremhævet](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
+Når du har valideret dine modeller, kan du aktivere kilderapporten til at bruge detaljeadgang på tværs af rapporter. 
 
-Detaljeadgang på tværs af rapporter er nu aktiveret.
+1. Gå til **Filer** > **Indstillinger** > **Indstillinger** i Power BI Desktop. 
+1. I vinduet **Indstillinger** i venstre navigation skal du nederst i afsnittet **Aktuel fil** vælge **Rapportindstillinger**. 
+1. Nederst til højre under **Detaljeadgang på tværs af rapporter** skal du vælge **Tillad, at visuelle elementer i denne rapport bruger detaljeadgangsdestinationer fra andre rapporter**. 
+1. Vælg **OK**. 
+   
+   ![Aktivér detaljeadgang på tværs af rapporter i Power BI Desktop](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
 
-## <a name="set-up-cross-report-drillthrough"></a>Konfigurer detaljeadgang på tværs af rapporter
+Du kan også aktivere detaljeadgang på tværs af rapporter fra Power BI-tjenesten.
+1. I Power BI-tjenesten skal du vælge det arbejdsområde, der indeholder dine destinations- og kilderapporter.
+1. Ved siden af navnet på kilderapporten på listen over arbejdsområder skal du vælge symbolet for **Flere indstillinger** og derefter vælge **Indstillinger**. 
+1. Nederst i ruden **Indstillinger** under **Detaljeadgang på tværs af rapporter** skal du vælge **Tillad, at visuelle elementer i denne rapport bruger detaljeadgangsmål fra andre rapporter**, og vælg derefter **Gem**.
+   
+   ![Aktivér detaljeadgang på tværs af rapporter i Power BI-tjenesten](media/desktop-cross-report-drill-through/cross-report-drill-through-02a.png)
 
-Konfiguration af detaljeadgang på tværs af rapporter minder om konfiguration af detaljeadgang i en rapport. Detaljeadgang er aktiveret på destinationssiden, så andre visualiseringer er rettet mod den aktiverede side til detaljeadgang. Hvis du vil have vist trinnene til at oprette detaljeadgang i en enkelt rapport, kan du se [Brug af detaljeadgang i Power BI Desktop](desktop-drillthrough.md).
+## <a name="set-up-a-cross-report-drillthrough-target"></a>Konfigurer en destination for detaljeadgang på tværs af rapporter
 
-Hvis du vil starte konfigurationsprocessen, skal du foretage et par indledende trin:
+Konfiguration af en destinationsside for detaljeadgang på tværs af rapporter minder om konfiguration af detaljeadgang i en rapport. Aktivering af detaljeadgang på destinationssiden giver andre visualiseringer mulighed for at rette mod siden til detaljeadgang. Hvis du vil oprette detaljeadgang i en enkelt rapport, kan du se [Brug af detaljeadgang i Power BI Desktop](desktop-drillthrough.md).
 
-* Konfigurer en destinationsside til detaljeadgang, som du kan få adgang til fra andre rapporter i arbejdsområdet eller i appen.
-* Tillad, at en rapport kan se detaljeadgangssider uden for dens egen rapport.
+Du kan konfigurere en destination for detaljeadgang på tværs af rapporter i Power BI Desktop eller Power BI-tjenesten. 
+1. Rediger destinationsfilen, og vælg afsnittet **Felter** i ruden **Visualiseringer** på destinationsrapporten. 
+1. Under **Detaljeadgang** skal du angive **Krydsrapport** til **Til**. 
+1. Træk de felter, du vil bruge som destinationer for detaljeadgang, til **Tilføj detaljeadgangsfelter her**. For hvert felt skal du vælge, om du vil tillade detaljeadgang, når feltet bruges som en kategori, eller når det opsummeres som en måling. 
+1. Vælg, om du vil **beholde alle filtre** for visualiseringen. Hvis du ikke vil overføre anvendte filtre til kildevisualiseringen til destinationsvisualiseringen, skal du vælge **Fra**.
+   
+   ![Ruden Visualiseringer, hvor indstillinger for detaljeadgang er fremhævet](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
+   
+1. Hvis du kun bruger siden til detaljeadgang på tværs af rapporter, skal du slette knappen **Tilbage**, der automatisk føjes til lærredet. Knappen **Tilbage** fungerer kun til navigation i en rapport. 
+1. Når du har konfigureret destinationssiden, skal du gemme rapporten, hvis du bruger Power BI-tjenesten, eller gemme og publicere rapporten, hvis du bruger Power BI Desktop.
 
-Find indstillinger for detaljeadgang i afsnittet **Felter** i ruden **Visualiseringer** som vist på følgende billede.
+Det var det. Dine rapporter er klar til detaljeadgang på tværs af rapporter. 
 
-![Skærmbillede af ruden Visualiseringer, hvor indstillinger for detaljeadgang er fremhævet](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
+## <a name="use-cross-report-drillthrough"></a>Anvend tværgående detaljeadgang i rapport
 
-Det første trin i aktivering af detaljeadgang for en side er at validere datamodellerne for kilde- og destinationsrapporterne. Kontrollér, at: 
+Hvis du vil bruge detaljeadgang på tværs af rapporter, skal du vælge kilderapporten i Power BI-tjenesten og derefter vælge en visualisering, der bruger feltet til detaljeadgang på den måde, du angav, da du konfigurerede destinationssiden. Højreklik på et datapunkt for at åbne genvejsmenuen for visualiseringen, vælg **Detaljeadgang**, og vælg derefter destinationen for detaljeadgang. Mål for detaljeadgang på tværs af rapporter er formateret som **Sidenavn [rapportnavn]** .
 
-* De felter, du vil overføre, findes i begge datamodeller.
-* Navnene på felterne og navnene på de tabeller, som felterne tilhører, er identiske (strengene skal også matche, og der skelnes mellem store og små bogstaver).
+![Power BI-muligheden for detaljeadgang på tværs af rapporter](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
 
-Hvis du f.eks. vil overføre et filter for feltet *Country* i tabellen *Geography*, skal begge modeller have tabellen *Geography* og feltet *Country* i den pågældende tabel. Hvis det ikke er tilfældet, skal du opdatere feltnavnet eller tabelnavnet i den underliggende model. Hvis du blot opdaterer det viste navn for felterne, fungerer det ikke korrekt for detaljeadgang på tværs af rapporter. (Bemærk, at skemaerne i de enkelte rapporter ikke behøver at være helt ens).
+Du får vist resultaterne på destinationssiden for detaljeadgang på tværs af rapporter, på samme måde som du konfigurerede dem, da du oprettede destinationen. Resultaterne filtreres i overensstemmelse med indstillingerne for detaljeadgang.
 
-Hvis du vil i gang med konfigurationen, skal destinationssiden være klar. Gå til siden i Power BI Desktop, og sørg for, at **Tværgående detaljeadgang i rapport** er slået **til**. 
-
-![Skærmbillede af Tværgående detaljeadgang i rapport, der er slået til](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
-
-Herefter skal du trække de relevante felter, som du vil bruge som destination for detaljeadgangen, til lærredet. Vælg, om feltet skal bruges som en kategori eller opsummeres som en måling. På dette tidspunkt kan du vælge, om du vil deaktivere **Behold alle filtre** for det visuelle element. Hvis du ikke vil overføre andre anvendte filtre fra kildens visuelle element til destinationsvisualiseringen for detaljeadgangen, skal du vælge **Fra**.
-
-> [!NOTE]
-> Hvis du kun bruger siden til detaljeadgang på tværs af rapporter, skal du slette knappen **Tilbage**, der tilføjes automatisk. Knappen **Tilbage** fungerer kun til navigation i en enkelt rapport. 
-
-Når du har konfigureret det visuelle element, skal du sørge for at gemme rapporten, hvis du er i Power BI-tjenesten, eller gemme og publicere rapporten, hvis du bruger Power BI Desktop.
-
-I det forrige afsnit blev det beskrevet, hvordan du aktiverer detaljeadgang på tværs af rapporter for Power BI Desktop (i vinduet **Indstillinger**). Hvis du bruger Power BI-tjenesten til at oprette en destination for detaljeadgang på tværs af rapporter, skal du for at aktivere detaljeadgang på tværs af rapporter 
-
-1. vælge det arbejdsområde, som din destinationsrapport og kildens rapport er placeret i.
-2. Vælg **Rapporter**.
-3. Vælg ikonet **Indstillinger** for kilderapporten.
-4. Sørg for, at tværgående detaljeadgang i rapport er slået **til**.
-5. Gem din rapport.
-
-Det var det. Din rapport er klar til detaljeadgang på tværs af rapporter. 
-
-I det næste afsnit kigger vi på oplevelsen fra brugerens perspektiv.
-
-## <a name="cross-report-drillthrough-experience"></a>Tværgående detaljeadgang i rapport
-
-Når du konfigurerer brugen af detaljeadgang på tværs af rapporter for en rapport, kan du aktivere funktionen.
-
-Vælg kilderapporten i Power BI-tjenesten, og vælg derefter et visuelt element, der bruger feltet eller felterne på den måde, du angav, da du konfigurerede destinationssiden. Højreklik derefter på et datapunkt for at åbne genvejsmenuen for det visuelle element, og vælg **Detaljeadgang**.
-
-![Skærmbillede af kilderapport i Power BI-tjenesten, hvor detaljeadgang er fremhævet](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
-
-Derefter kan du se resultaterne på destinationssiden for detaljeadgang på tværs af rapporter, på samme måde som du konfigurerede dem, da du oprettede destinationen. Resultaterne filtreres i overensstemmelse med indstillingerne for detaljeadgang.
+![Power BI Desktop-destination for detaljeadgang på tværs af rapporter](media/desktop-cross-report-drill-through/cross-report-drill-through-01a.png)
 
 > [!IMPORTANT]
 > Power BI cachelagrer destinationer for detaljeadgang på tværs af rapporter. Hvis du foretager ændringer, skal du sørge for at opdatere din browser, hvis destinationerne for detaljeadgangen ikke ser ud som forventet. 
 
-Destinationer på tværs af rapporter formateres på følgende måde: 
+Hvis du angiver **Bevar alle filtre** til **Til**, når du konfigurerer destinationssiden, kan filterkonteksten for kildevisualiseringen indeholde følgende: 
 
-`Target Page Name [Target Report Name]`
+- Rapport, side og filtre på visualiseringens niveau, der påvirker kildevisualiseringen 
+- Tværgående filtrering og tværgående fremhævning, der påvirker kildevisualiseringen 
+- Udsnitsværktøj og synkroniseringsudsnit på siden
+- URL-parametre
 
-Når du har valgt den destinationsside, du vil foretage detaljeadgang til, går Power BI til den pågældende side. Filterkonteksten overføres på baggrund af indstillingerne for destinationssiden. 
+Når du lander på destinationsrapporten for detaljeadgang, anvender Power BI kun filtre for de felter, der har præcise strengmatches for feltnavn og tabelnavn. 
 
-Filterkontekst fra kildens visuelle element kan f.eks. indeholde følgende: 
+Power BI anvender ikke selvklæbende filtre fra destinationsrapporten, men det anvender dit personlige standardbogmærke, hvis du har et. Hvis dit personlige standardbogmærke f.eks. omfatter et filter på rapportniveau for *Country = USA*, anvender Power BI dette filter, før filterkonteksten fra kildevisualiseringen anvendes. 
 
-* Rapport, side og filtre på det visuelle elements niveau, der påvirker kildens visuelle element. 
-* Tværgående filtrering og tværgående fremhævning, der påvirker kildens visuelle element. 
-* Udsnit på siden og synkroniseringsudsnit.
-* URL-parametre.
-
-Når du lander på destinationsrapporten for detaljeadgang, anvender Power BI kun filtre for de felter, som programmet finder præcise strengmatches for i forbindelse med feltnavn og tabelnavn. Power BI anvender ikke selvklæbende filtre fra destinationsrapporten. Dit personlige standardbogmærke anvendes dog, hvis der er et. Hvis dit personlige standardbogmærke f.eks. omfatter et filter på rapportniveau for *Country = USA*, anvender Power BI dette filter først, før filterkonteksten fra kildens visuelle element anvendes. 
-
-I forbindelse med detaljeadgang på tværs af rapporter overfører Power BI filterkonteksten til alle standardsider i destinationsrapporten. Power BI overfører ikke filterkontekst for sider med værktøjstip, fordi sider med værktøjstip er filtreret på baggrund af det visuelle element for den kilde, der udløser værktøjstippet.
+I forbindelse med detaljeadgang på tværs af rapporter overfører Power BI filterkonteksten til standardsider i destinationsrapporten. Power BI overfører ikke filterkontekst for sider med værktøjstip, fordi sider med værktøjstip er filtreret på baggrund af det visuelle element for den kilde, der udløser værktøjstippet.
 
 Hvis du vil vende tilbage til kilderapporten efter detaljeadgangen på tværs af rapporter, skal du bruge knappen **Tilbage** i browseren. 
 
@@ -123,6 +104,6 @@ Hvis du vil vende tilbage til kilderapporten efter detaljeadgangen på tværs af
 
 Du vil måske også være interesseret i følgende artikler:
 
-* [Brug af udsnitsværktøjer i Power BI Desktop](visuals/power-bi-visualization-slicers.md)
-* [Brug detaljeadgang i Power BI Desktop](desktop-drillthrough.md)
+- [Udsnitsværktøjer i Power BI](visuals/power-bi-visualization-slicers.md)
+- [Brug detaljeadgang i Power BI Desktop](desktop-drillthrough.md)
 

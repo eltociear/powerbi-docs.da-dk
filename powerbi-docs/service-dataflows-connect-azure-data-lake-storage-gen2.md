@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: c3f703bfe2685166ce575b37c053b2a9603a799f
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: e91900632b7cf470cd91923ca9ec871247c154ba
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223866"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76710178"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Opret forbindelse til Azure Data Lake Storage Gen2 for dataflowlager
 
@@ -45,7 +45,7 @@ Før du kan konfigurere Power BI med en Azure Data Lake Storage Gen2-konto, skal
 1. Lagerkontoen skal oprettes i den samme AAD-lejer som din Power BI-lejer.
 2. Lagerkontoen skal oprettes i det samme område som din Power BI-lejer. Du kan få hjælp til at se, hvor din Power BI-lejer er placeret, under [Hvor findes min Power BI-lejer?](service-admin-where-is-my-tenant-located.md)
 3. Funktionen *Hierarkisk navneområde* skal være aktiveret for lagerkontoen.
-4. Power BI-tjenesten skal tildeles en rolle af typen *Læser* på lagerkontoen.
+4. Power BI-tjenesten skal tildeles rollerne *Læser* og *Dataadgang* på lagerkontoen.
 5. Der skal oprettes et filsystem med navnet **powerbi**.
 6. Power BI-tjenester skal have tilladelse til det **powerbi**-filsystem, du opretter.
 
@@ -59,16 +59,13 @@ Følg trinnene i artiklen [Opret en Azure Data Lake Storage Gen2-lagerkonto](htt
 2. Sørg for, at du aktiverer funktionen Hierarkisk navneområde
 3. Det anbefales, at du angiver replikeringsindstillingen til **Geografisk redundant lager med læseadgang (RA-GRS)**
 
-### <a name="grant-the-power-bi-service-a-reader-role"></a>Tildel en rolle af typen Læser til Power BI-tjenesten
+### <a name="grant-the-power-bi-service-reader-and-data-access-roles"></a>Tildel Power BI-tjenesten rollerne Læser og Dataadgang
 
-Derefter skal du give Power BI-tjenesten en rolle af typen Læser på din oprettede lagerkonto. Det er en indbygget rolle, så trinnene er ligetil. 
+Derefter skal du give Power BI-tjenesten rollerne Læser og Dataadgang på din oprettede lagerkonto. De er begge indbyggede roller, så trinnene er ligetil. 
 
 Følg trinnene under [Tildel en indbygget RBAC-rolle](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role).
 
-I vinduet **Tilføj rolletildeling** skal du vælge rollen **Læser** og tildele den til Power BI-tjenesten. Brug derefter Søg til at finde **Power BI-tjenesten**. På følgende billeder kan du se, at rollen **Læser** er tildelt Power BI-tjenesten.
-
-![Power BI-tjenesten tildelt rollen Læser](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
-
+I vinduet **Tilføj rolletildeling** skal du vælge rollerne **Læser** og **Dataadgang** og tildele dem til Power BI-tjenesten. Brug derefter Søg til at finde **Power BI-tjenesten**. 
 
 > [!NOTE]
 > Der går mindst 30 minutter, før tilladelsen er overført til Power BI fra portalen. Hver gang du ændrer tilladelser på portalen, går der 30 minutter, før disse tilladelser afspejles i Power BI. 

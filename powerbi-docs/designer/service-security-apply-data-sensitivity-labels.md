@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 09f3a3e2dce7fd3462c5a21f014bf630bfc7c83e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ea4e8da2e821483fc567a3038c6133c60992e593
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879030"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538422"
 ---
 # <a name="apply-data-sensitivity-labels-in-power-bi-preview"></a>Anvend datafølsomhedsmærkater i Power BI (prøveversion)
 
@@ -58,6 +58,9 @@ Du angiver en følsomhedsmærkat på et datasæt ved at vælge fanen Datasæt, k
 
 Anvendelse eller ændring af en følsomhedsmærkat for et dataflow følger samme proces, som beskrevet for datasæt.
 
+## <a name="removing-sensitivity-labels"></a>Fjernelse af følsomhedsmærkater
+Hvis du vil fjerne en følsomhedsmærkat fra en rapport, et dashboard, et datasæt eller et dataflow, skal du følge [samme fremgangsmåde som for at anvende mærkater](#applying-sensitivity-labels), men du kan vælge **(Ingen)** , når du bliver bedt om at klassificere dataenes følsomhed. 
+
 ## <a name="data-protection-in-exported-files"></a>Databeskyttelse i eksporterede filer
 
 Når du [eksporterer data fra en rapport](https://docs.microsoft.com/power-bi/consumer/end-user-export), der har en følsomhedsmærkat, nedarves følsomhedsmærkaten af den genererede fil (Excel, PowerPoint og PDF – CSV understøttes ikke). Følsomhedsmærkaten er synlig i filen, og adgangen til filen begrænses til dem, der har tilstrækkelige tilladelser.
@@ -73,12 +76,12 @@ Du skal gøre følgende overvejelser, når du anvender datafølsomhedsmærkater:
 * Gennemtvingelse af kontrolelementer til mærkater og beskyttelse af eksporterede filer understøttes kun for Excel-, PowerPoint- og PDF-filer. Mærkater og beskyttelse gennemtvinges ikke, når data eksporteres til. CSV-filer eller i forbindelse med Abonner på mail, Integrer visualiseringer og udskrivning.
 * En bruger, der eksporterer en fil fra Power BI, har tilladelse til at tilgå og redigere filen i henhold til indstillingerne for følsomhedsmærkaten. Den bruger, der eksporterer dataene, får ikke ejerens tilladelser til filen. 
 * Følsomhedsmærkater er i øjeblikket ikke tilgængelige til [sideinddelte rapporter]( https://docs.microsoft.com/power-bi/paginated-reports-report-builder-power-bi) og projektmapper. 
-* Du kan i øjeblikket ikke slette en mærkat fra et Power BI-aktiv, når den først er blevet anvendt.
 * Følsomhedsmærkater på Power BI-aktiver kan kun ses på listen over arbejdsområder og linjevisninger. Mærkater er i øjeblikket ikke synlige i Favoritter, Delt med mig, Seneste eller programvisninger. Bemærk dog, at en mærkat, som er anvendt på et Power BI-aktiv, altid bevares for data, der eksporteres til Excel-, PowerPoint- og PDF-filer, også selvom mærkaten ikke er synlig.
 * *Indstillingen for filkryptering* i følsomhedsmærkaten konfigureres enten i [Microsoft 365 Security Center](https://security.microsoft.com/) eller [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) og gælder kun for filer, der *eksporteres fra* Power BI. Den gennemtvinges ikke *i* Power BI.
 * [HYOK-beskyttelse](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) understøttes ikke for mærkater, der anvendes i Power BI.
 * Der er [licenskrav](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#subscription-and-licensing-requirements-for-sensitivity-labels) for visning og anvendelse af mærkater i Office-programmer.
 * Følsomhedsmærkater understøttes kun for lejere i det globale cloudmiljø (offentligt). Følsomhedsmærkater understøttes ikke for lejere i andre cloudmiljøer.
+* Følsomhedsmærkater understøttes ikke for [eksterne brugere (Azure Active Directory B2B-gæstebrugere)](../service-admin-azure-ad-b2b.md). Det betyder, at eksterne brugere ikke kan få vist mærkater og bliver blokeret fra at eksportere data til Excel-, PDF- og PPTX-filer. [Fjern mærkaten](#removing-sensitivity-labels) for at gøre det muligt for eksterne brugere at eksportere data til disse filtyper.
 
 ## <a name="next-steps"></a>Næste trin
 

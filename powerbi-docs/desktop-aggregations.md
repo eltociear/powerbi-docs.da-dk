@@ -1,88 +1,156 @@
 ---
-title: Brug sammenlægninger i Power BI Desktop
-description: Udfør interaktiv analyse af big data i Power BI Desktop
+title: Brug og administrer sammenlægninger i Power BI Desktop
+description: Brug sammenlægninger til at udføre interaktiv analyse af big data i Power BI Desktop.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/16/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ba9c11004099b1e11d935cd0b178463e542bea9a
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: d8db626300902125cf3536f03ed111ef3e052324
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761789"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538710"
 ---
-# <a name="manage-aggregations-in-power-bi-desktop"></a>Administrer sammenlægninger i Power BI Desktop
+# <a name="use-aggregations-in-power-bi-desktop"></a>Brug sammenlægninger i Power BI Desktop
 
-Brug af **sammenlægninger** i Power BI muliggør interaktiv analyse af big data på måder, der ikke tidligere var mulig. **Sammenlægninger** kan drastisk reducere omkostningerne til at låse store datasæt op i forbindelse med beslutningstagning.
+Hvis du bruger *sammenlægninger* i Power BI, kan du reducere tabelstørrelser, så du kan fokusere på vigtige data og forbedre forespørgslens ydeevne. Med sammenlægninger kan du udføre interaktiv analyse af big data på en måde, der ellers ikke er mulig, og det kan medføre en drastisk reduktion af omkostningerne, idet der låses op for store datasæt, så du bedre kan træffe beslutninger.
 
-![sammenlægninger i Microsoft Power BI Desktop](media/desktop-aggregations/aggregations_07.jpg)
+Nogle af fordelene ved at bruge sammenlægninger omfatter:
 
-Følgende liste indeholder fordele ved brug af **sammenlægninger**:
+- **Bedre ydeevne af forespørgsler i forhold til big data**. Alle interaktioner med Power BI-visualiseringer sender DAX-forespørgsler til datasættet. Cachelagrede sammenlagte data bruger en brøkdel af de ressourcer, der er nødvendige for detaljerede data, så du kan låse op for big data, der ellers ville være utilgængelige.
+- **Optimeret dataopdatering**. Mindre cachestørrelser reducerer opdateringstider, så data hurtigere vises for brugerne.
+- **Balanceret arkitektur**. Power BI-cachen i hukommelsen kan håndtere sammenlagte forespørgsler og derved begrænse forespørgsler, der sendes i DirectQuery-tilstand, og hjælpe dig med at overholde grænser for samtidighed. De resterende forespørgsler på detaljeniveau er ofte filtrerede forespørgsler på transaktionsniveau, som normalt håndteres godt af data warehouses og big data-systemer.
 
-* **Forespørgselsydeevne over big data** – når brugere interagerer med visualiseringer i Power BI-rapporter, sendes der DAX-forespørgsler til datasættet. Sæt forespørgselshastighederne op ved at cachelagre data på det aggregerede niveau med en brøkdel af de ressourcer, der kræves på detaljeringsniveauet. Få adgang til big data på en måde, der ellers ville være umulig.
-* **Optimering af dataopdatering** – reducer cachestørrelser og antallet af opdateringer ved at cachelagre data på det aggregerede niveau. Forkort den tid, det tager at gøre data tilgængelige for brugere.
-* **Opnå balancerede arkitekturer** – tillad Power BI-cachen i hukommelsen til at håndtere aggregerede forespørgsler effektivt. Begræns mængden af forespørgsler, der sendes til datakilden i DirectQuery-tilstand, for at overholde grænserne for samtidighed. De forespørgsler, der kommer igennem, er ofte ufiltrerede forespørgsler på transaktionsniveau, som normalt håndteres godt af data warehouses og big data-systemer.
+![Sammenlægninger i Microsoft Power BI Desktop](media/desktop-aggregations/aggregations_07.jpg)
 
-### <a name="table-level-storage"></a>Lagring på tabelniveau
-Lagring på tabelniveau bruges normalt sammen med sammenlægningsfunktionen. Du finder flere oplysninger i artiklen om [lagringstilstand i Power BI Desktop](desktop-storage-mode.md).
+Dimensionelle datakilder, f.eks. data warehouses og datacentre, kan bruge [relationsbaserede sammenlægninger](#aggregation-based-on-relationships). Hadoop-baserede big data-kilder [baserer ofte sammenlægninger på GroupBy-kolonner](#aggregation-based-on-groupby-columns). I denne artikel beskrives de typiske modelleringsforskelle i Power BI for hver type datakilde.
 
-### <a name="data-source-types"></a>Datakildetyper
-Sammenlægninger bruges sammen med datakilder, der repræsenterer dimensionelle modeller, f.eks. data warehouses, datacentre og Hadoop-baserede big data-kilder. Denne artikel beskriver de typiske modelleringsforskelle i Power BI for hver type datakilde.
+## <a name="create-an-aggregated-table"></a>Opret en sammenlagt tabel
 
-Alle Power BI Import- og DirectQuery-kilder (ikke-flerdimensionelle) fungerer sammen med sammenlægninger.
+Sådan opretter du en sammenlagt tabel:
+1. Opret en ny tabel med de ønskede felter afhængigt af datakilden og modellen. 
+1. Definer sammenlægningerne i dialogboksen **Administrer sammenlægninger**.
+1. Hvis det er relevant, skal du ændre [lagringstilstand](#storage-modes) for den sammenlagte tabel. 
 
-## <a name="aggregations-based-on-relationships"></a>Sammenlægninger baseret på relationer
+### <a name="manage-aggregations"></a>Administrer akkumuleringer
 
-**Sammenlægninger** baseret på relationer bruges typisk med dimensionelle modeller. Power BI-datasæt, som stemmer fra data warehouses og datacentre, ligner star/snowflake-skemaer med relationer mellem dimensionstabeller og faktatabeller.
+Når du har oprettet den nye tabel, der indeholder de ønskede felter, skal du gå til ruden **Felter** i en Power BI Desktop-visning, højreklikke på tabellen og vælge **Administrer sammenlægninger**.
 
-Se den følgende model, som er hentet fra en enkelt datakilde. Lad os sige, at alle tabellerne bruger DirectQuery til at starte med. Faktatabellen **Sales** indeholder milliarder af rækker. Det ville kræve betydelig hukommelse og administration at indstille lagertilstanden i **Sales** til **Import** for cachelagring.
+![Vælg Administrer sammenlægninger](media/desktop-aggregations/aggregations-06.png)
 
-![tabeller i en model](media/desktop-aggregations/aggregations_02.jpg)
+I dialogboksen **Administrer sammenlægninger** vises der en række for hver kolonne i tabellen, hvor du kan angive funktionsmåden for sammenlægning. I det følgende eksempel omdirigeres forespørgsler til detaljetabellen **Sales** internt til sammenlægningstabellen **Sales Agg**. 
 
-I stedet opretter vi tabellen **Sales Agg** som en sammenlægningstabel. Den har en højere kornethed end **Sales** og indeholder derfor langt færre rækker. Antallet af rækker skal svare til summen af **SalesAmount** grupperet efter **CustomerKey**, **DateKey** og **ProductSubcategoryKey**. I stedet for milliarder kan der være millioner af rækker, hvilket er meget nemmere at administrere.
+Rullelisten **Opsummering** i dialogboksen **Administrer sammenlægninger** indeholder følgende værdier:
+- Antal
+- GroupBy
+- Maks.
+- Min.
+- Sum
+- Optæl tabelrækker
 
-Lad os antage, at følgende dimensionstabeller er de oftest anvendte til forespørgslerne med høj forretningsværdi. De er de tabeller, der kan filtrere **Sales Agg** ved hjælp af *en-til-mange*-relationer (eller *mange-til-en*).
+![Dialogboksen Administrer sammenlægninger](media/desktop-aggregations/aggregations_07.jpg)
 
-* Geografi
-* Kunde
-* Dato
-* Produktunderkategori
-* Produktkategori
+I dette relationsbaserede eksempel på sammenlægning er GroupBy-elementerne valgfrie. Med undtagelse af DISTINCTCOUNT påvirker de ikke funktionsmåden for sammenlægning, og de skal primært øge læsevenligheden. Uden GroupBy-posterne ville sammenlægninger stadig få forekomster på baggrund af relationerne. Dette afviger fra [eksemplet på big data](#aggregation-based-on-groupby-columns) senere i denne artikel, hvor GroupBy-posterne er påkrævet.
+
+Når du har defineret de ønskede sammenlægninger, skal du vælge **Anvend alle**. 
+
+### <a name="validations"></a>Valideringer
+
+Dialogboksen **Administrer sammenlægninger** gennemtvinger følgende nævneværdige valideringer:
+
+- **Detaljekolonnen** skal have samme datatype som **sammenlægningskolonnen** med undtagelse af **opsummering**sfunktionerne Optæl og Optæl tabelrækker. Optæl og Optæl tabelrækker er kun tilgængelige for kolonner til sammenlægning af heltal og kræver ikke en tilsvarende datatype.
+- Sammenkædede sammenlægninger, der dækker tre eller flere tabeller, er ikke tilladt. Sammenlægninger i **Tabel A** kan f.eks. ikke referere til en **Tabel B**, som har sammenlægninger, der refererer til en **Tabel C**.
+- Duplikerede sammenlægninger, hvor to poster bruger samme **opsummering**sfunktion og refererer til den samme **detaljetabel** og **detaljekolonne**, er ikke tilladt.
+- **Detaljetabellen** skal bruge DirectQuery-lagringstilstanden, ikke Import.
+- Gruppering efter en fremmed nøglekolonne, der bruges af en inaktiv relation, og som er afhængig af funktionen USERELATIONSHIP til sammenlægning af hits, understøttes ikke.
+
+De fleste valideringer gennemtvinges ved at deaktivere værdier på rullelisten og vise forklarende tekst i værktøjstippet som vist på følgende billede.
+
+![Valideringer vist som værktøjstip](media/desktop-aggregations/aggregations_08.jpg)
+
+### <a name="aggregation-tables-are-hidden"></a>Sammenlægningstabeller er skjulte
+
+Brugere med skrivebeskyttet adgang til datasættet kan ikke forespørge sammenlægningstabeller. Dette forhindrer sikkerhedsproblemer, når de bruges sammen med *sikkerhed på rækkeniveau (RLS)* . Brugere og forespørgsler refererer til detaljetabellen, ikke sammenlægningstabellen, og de behøver ikke at kende til sammenlægningstabellen.
+
+Derfor er sammenlægningstabeller skjulte i visningen **Rapport**. Hvis tabellen ikke allerede er skjult, angiver dialogboksen **Administrer sammenlægninger** den som skjult, når du vælger **Anvend alle**.
+
+### <a name="storage-modes"></a>Lagringstilstande
+Sammenlægningsfunktionen interagerer med lagringstilstande på tabelniveau. Power BI-tabeller kan bruge *DirectQuery*-, *Import*- eller *Dual*-lagringstilstande. DirectQuery sender en direkte forespørgsel til backend, mens Import cachelagrer data i hukommelsen og sender forespørgsler til de cachelagrede data. Alle Power BI Import- og DirectQuery-datakilder (ikke-flerdimensionelle) kan fungere sammen med sammenlægninger. 
+
+Hvis du vil angive lagringstilstanden for en sammenlagt tabel, der skal importeres for at gøre forespørgsler hurtigere, skal du vælge den sammenlagte tabel i visningen **Model** i Power BI Desktop. I ruden **Egenskaber** skal du udvide **Avanceret**, rulle ned til **Lagringstilstand** og vælge **Importér**. Bemærk, at denne handling ikke kan fortrydes. 
+
+![Indstil lagringstilstanden](media/desktop-aggregations/aggregations-04.png)
+
+Du kan finde flere oplysninger om tabellagringstilstande i [Administrer lagringstilstand i Power BI Desktop](desktop-storage-mode.md).
+
+### <a name="rls-for-aggregations"></a>RLS til sammenlægninger
+
+For at fungere korrekt skal RLS-udtryk filtrere både sammenlægningstabellen og detaljetabellen. 
+
+I følgende eksempel fungerer RLS-udtrykket for tabellen **Geography** for sammenlægninger, fordi Geography er på filtreringssiden af relationen for både tabellen **Sales** og tabellen **Sales Agg**. Sikkerhed på rækkeniveau er anvendt for forespørgsler, der når sammenlægningsstabellen, og dem, der ikke gør.
+
+![Vellykket RLS for sammenlægninger](media/desktop-aggregations/manage-roles.png)
+
+Et RLS-udtryk for tabellen **Product** filtrerer kun tabellen **Sales** og ikke den sammenlagte tabel **Sales Agg**. Da sammenlægningstabellen er en anden repræsentation af dataene i detaljetabellen, ville det være usikkert at svare på forespørgsler fra sammenlægningstabellen, hvis RLS-filteret ikke kan anvendes. Det anbefales ikke kun at filtrere detaljetabellen, da brugerforespørgsler fra denne rolle ikke er omfattet af sammenlægningsforekomster. 
+
+Et RLS-udtryk, der kun filtrerer sammenlægningstabellen **Sales Agg** og ikke detaljetabellen **Sales**, er ikke tilladt.
+
+![RLS kun på sammenlægningstabellen er ikke tilladt](media/desktop-aggregations/filter-agg-error.jpg)
+
+For [sammenlægninger baseret på GroupBy-kolonner](#aggregation-based-on-groupby-columns) kan et RLS-udtryk, der anvendes på detaljetabellen, bruges til at filtrere sammenlægningstabellen, fordi alle GroupBy-kolonner i sammenlægningstabellen er dækket af detaljetabellen. På den anden side kan et RLS-filter i sammenlægningstabellen ikke anvendes på detaljetabellen, så det er ikke tilladt.
+
+## <a name="aggregation-based-on-relationships"></a>Sammenlægning baseret på relationer
+
+Dimensionelle modeller bruger typisk *sammenlægninger baseret på relationer*. Power BI-datasæt fra data warehouses og datacentre ligner star/snowflake-skemaer med relationer mellem dimensionstabeller og faktatabeller.
+
+I følgende model fra en enkelt datakilde bruger tabellerne DirectQuery-lagringstilstanden. Faktatabellen **Sales** indeholder milliarder af rækker. Det ville kræve betydelig hukommelse og administration at indstille lagertilstanden i **Sales** til Import for cachelagring.
+
+![Detaljetabeller i en model](media/desktop-aggregations/aggregations_02.jpg)
+
+I stedet skal du oprette sammenlægningstabellen **Sales Agg**. I tabellen **Sales Agg** svarer antallet af rækker til summen af **SalesAmount** grupperet efter **CustomerKey**, **DateKey** og **ProductSubcategoryKey**. Tabellen **Sales Agg** har en højere kornethed end **Sales**, så i stedet for milliarder kan den indeholde millioner af rækker, hvilket er meget nemmere at administrere.
+
+Hvis følgende dimensionstabeller er dem, der bruges mest til forespørgsler med høje forretningsværdier, kan de filtrere **Sales Agg** ved hjælp af *en til mange*- eller *mange til en*-relationer.
+
+- Geografi
+- Kunde
+- Dato
+- Produktunderkategori
+- Produktkategori
 
 Denne model er vist på det følgende billede.
 
-![sammenlægningstabel i en model](media/desktop-aggregations/aggregations_03.jpg)
+![Sammenlægningstabel i en model](media/desktop-aggregations/aggregations_03.jpg)
+
+I følgende tabel vises sammenlægningerne for tabellen **Sales Agg**.
+
+![Sammenlægninger til tabellen Sales Agg](media/desktop-aggregations/aggregations-table_01.jpg)
 
 > [!NOTE]
-> Tabellen **Sales Agg** er en almindelig tabel, så den er fleksibel nok til at kunne indlæses på flere forskellige måder. Eksempelvis kan sammenlægning udføres i kildedatabasen ved hjælp af ETL/ELT-processer eller ved hjælp af [M-udtrykket](/powerquery-m/power-query-m-function-reference) for tabellen. Den kan bruge lagringstilstanden Import med eller uden [trinvis opdatering i Power BI Premium](service-premium-incremental-refresh.md), eller det kan være DirectQuery og optimeret til hurtige forespørgsler ved hjælp af [kolonnelagerindekser](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview). Denne fleksibilitet muliggør balancerede arkitekturer, der fordeler mængden af forespørgsler for at undgå flaskehalse.
+> Tabellen **Sales Agg** er som andre tabeller fleksibel nok til at kunne blive indlæst på flere forskellige måder. Sammenlægning kan udføres i kildedatabasen ved hjælp af ETL/ELT-processer eller ved hjælp af [M-udtrykket](/powerquery-m/power-query-m-function-reference) for tabellen. Den sammenlagte tabel kan bruge lagringstilstanden Import med eller uden [trinvis opdatering i Power BI Premium](service-premium-incremental-refresh.md), eller den kan bruge DirectQuery og optimeres til hurtige forespørgsler ved hjælp af [columnstore-indekser](/sql/relational-databases/indexes/columnstore-indexes-overview). Denne fleksibilitet muliggør balancerede arkitekturer, der kan fordele mængden af forespørgsler for at undgå flaskehalse.
 
-### <a name="storage-mode"></a>Lagertilstand 
-Lad os fortsætte med det eksempel, vi bruger. Vi angiver lagringstilstanden for **Sales Agg** til **Import** for at fremskynde forespørgsler.
+Hvis du ændrer lagringstilstanden for den sammenlagte tabel **Sales Agg** til **Import**, åbnes der en dialogboks, hvor de relaterede dimensionstabeller kan indstilles til lagringstilstanden *Dual*. 
 
-![indstilling af lagringstilstand](media/desktop-aggregations/aggregations_04.jpg)
+![Dialogboksen Lagringstilstand](media/desktop-aggregations/aggregations_05.jpg)
 
-Når vi gør det, vises følgende dialogboks, som viser, at de relaterede dimensionstabeller kan angives til lagringstilstanden **Dual**. 
+Hvis du indstiller de relaterede dimensionstabeller til Dual, kan de fungere som enten Import eller DirectQuery, afhængigt af underforespørgslen. I eksemplet:
 
-![dialogboksen lagringstilstand](media/desktop-aggregations/aggregations_05.jpg)
+- Forespørgsler, der samler målepunkter fra tabellen **Sales Agg** i Import-tilstand og grupperer efter attribut/attributter fra de relaterede Dual-tabeller, kan returneres fra cachen i hukommelsen.
+- Forespørgsler, der samler målepunkter fra DirectQuery-tabellen **Sales** og grupperer efter attribut/attributter fra de relaterede Dual-tabeller, kan returneres i DirectQuery-tilstand. Forespørgselslogikken, herunder GroupBy-handlingen, overføres til kildedatabasen.
 
-Ved af indstille dem til **Dual** er det muligt for de relaterede dimensionstabeller at fungere som enten Import eller DirectQuery, afhængigt af underforespørgslen.
-
-* Forespørgsler, der samler målepunkter fra tabellen **Sales Agg**, hvilket er Import, og grupperer efter attribut/attributter fra de relaterede Dual-tabeller, kan returneres fra cachen i hukommelsen.
-* Forespørgsler, der samler målepunkter i tabellen **Sales**, hvilket er DirectQuery, og grupperer efter attribut/attributter fra de relaterede Dual-tabeller, kan returneres fra cachen i hukommelsen. Forespørgselslogikken, herunder gruppér efter handling, overføres til kildedatabasen.
-
-Læs mere om lagringstilstanden **Dual** i artiklen om [lagringstilstand](desktop-storage-mode.md).
+Du kan finde flere oplysninger om Dual-lagringstilstanden i [Administrer lagringstilstand i Power BI Desktop](desktop-storage-mode.md).
 
 ### <a name="strong-vs-weak-relationships"></a>Stærke versus svage relationer
+
 Sammenlægningsforekomster baseret på relationer kræver stærke relationer.
 
-Stærke relationer omfatter følgende kombinationer, hvor begge tabeller er fra en *enkelt kilde*.
+Stærke relationer omfatter følgende kombinationer af lagringstilstande, hvor begge tabeller er fra en enkelt kilde:
 
-| Tabel på *mange-siden | Tabel på *én*-siden |
+| Tabel på *mange*-siden | Tabel på *én*-siden |
 | ------------- |----------------------| 
 | Dual          | Dual                 | 
 | Importér        | Import eller Dual       | 
@@ -90,166 +158,114 @@ Stærke relationer omfatter følgende kombinationer, hvor begge tabeller er fra 
 
 Det eneste tilfælde, hvor en relation *på tværs af kilder* anses for at være stærk, er, hvis begge tabeller er angivet til Import. Mange til mange-relationer anses altid for at være svage.
 
-Se afsnittet herunder om sammenlægninger baseret på kolonner af typen Gruppér efter for at få mere at vide om sammenlægningsforekomster *på tværs af kilder*, der ikke er afhængige af relationer.
+Se [Sammenlægninger baseret på GroupBy-kolonner](#aggregation-based-on-groupby-columns) for at få mere at vide om sammenlægningsforekomster *på tværs af kilder*, der ikke er afhængige af relationer. 
 
-### <a name="aggregation-tables-arent-addressable"></a>Sammenlægningstabeller er ikke adresserbare
-Brugere med skrivebeskyttet adgang til datasættet kan ikke forespørge sammenlægningstabeller. Dette forhindrer sikkerhedsproblemer, når de bruges sammen med sikkerhed på rækkeniveau. Brugere og forespørgsler refererer til tabellen med detaljer, ikke sammenlægningstabellen. De behøver ikke vide, at sammenlægningstabellen eksisterer.
+### <a name="relationship-based-aggregation-query-examples"></a>Eksempler på relationsbaserede sammenlægningsforespørgsler
 
-Derfor bør tabellen **Sales Agg** være skjult. Hvis den ikke er det, angiver dialogboksen Administrer sammenlægninger den som skjult, når der klikkes på knappen Anvend alle.
+Følgende forespørgsel giver forekomster ved sammenlægningen, fordi kolonner i tabellen **Date** har den granularitet, der kan give forekomster. Kolonnen **SalesAmount** bruger sammenlægningen **Sum**.
 
-### <a name="manage-aggregations-dialog"></a>Dialogboksen Administrer sammenlægninger
-Lad os definere sammenlægningerne. Vælg genvejsmenuen **Administrer sammenlægninger** for tabellen **Sales Agg** ved at højreklikke på tabellen.
+![Vellykkede relationsbaserede sammenlægningsforespørgsler](media/desktop-aggregations/aggregations-code_02.jpg)
 
-![Administrer valg fra sammenlægningsmenuen](media/desktop-aggregations/aggregations_06.jpg)
+Følgende forespørgsel giver ikke forekomster ved sammenlægningen. På trods af at den anmoder om summen af **SalesAmount**, foretager forespørgslen en GroupBy-handling på en kolonne i tabellen **Product**, som ikke har en kornethed, der kan give forekomster ved sammenlægningen. Hvis du overvåger relationerne i modellen, kan underkategorien for et produkt have flere rækker af typen **Produkt**. Forespørgslen kan ikke afgøre, hvilket produkt der skal sammenlægges med. I dette tilfælde vender forespørgslen tilbage til DirectQuery og sender en SQL-forespørgsel til datakilden.
 
-Dialogboksen **Administrer sammenlægninger** vises. Der vises en række for hver kolonne i tabellen **Sales Agg**, hvor vi kan specificere funktionsmåden sammenlægning. Forespørgsler sendt til Power BI-datasættet, der refererer til tabellen **Sales**, omdirigeres internt til tabellen **Sales Agg**. Brugere af datasættet behøver ikke vide, at tabellen **Sales Agg** eksisterer.
-
-![Dialogboksen Administrer sammenlægninger](media/desktop-aggregations/aggregations_07.jpg)
-
-I følgende tabel vises sammenlægningerne for tabellen **Sales Agg**.
-
-![sammenlægningstabel](media/desktop-aggregations/aggregations-table_01.jpg)
-
-#### <a name="summarization-function"></a>Opsummeringsfunktion
-
-Følgende værdier kan vælges i rullelisten Opsummering.
-* Antal
-* GroupBy
-* Maks.
-* Min.
-* Sum
-* Optæl tabelrækker
-
-#### <a name="validations"></a>Valideringer
-
-Følgende bemærkelsesværdige valideringer gennemtvinges af dialogboksen:
-
-* Den valgte detaljekolonne skal have samme datatype som sammenlægningskolonnen med undtagelse af opsummeringsfunktionerne Optæl og Optæl tabelrækker. Optæl og Optæl tabelrækker tilbydes kun til kolonner til sammenlægning af heltal og kræver ikke en tilsvarende datatype.
-* Sammenkædede sammenlægninger, der dækker tre eller flere tabeller, er ikke tilladt. Det er f.eks. ikke muligt at konfigurere sammenlægninger på **Tabel A**, som refererer til **Tabel B**, der har sammenlægninger, som refererer til **Tabel C**.
-* Duplikerede sammenlægninger, hvor to poster bruger samme opsummeringsfunktion og henviser til den samme detaljetabel/-kolonne, er ikke tilladt.
-* Detaljetabellen skal være DirectQuery, ikke Import.
-
-De fleste sådanne valideringer gennemtvinges ved at deaktivere værdier i rullelisten og vise forklarende tekst i værktøjstippet som vist på følgende billede.
-
-![valideringer vist som værktøjstip](media/desktop-aggregations/aggregations_08.jpg)
-
-### <a name="group-by-columns"></a>Kolonnevis gruppering
-
-I dette eksempel er de tre GroupBy-poster valgfrie. De påvirker ikke sammenlægningsadfærden (undtagen eksempelforespørgslen DISTINCTCOUNT, som vises på det følgende billede). De medfølger primært af hensyn til læsbarheden. Uden disse GroupBy-poster ville sammenlægninger stadig få forekomster på baggrund af relationerne. Dette er forskellig funktionalitet fra brug af sammenlægninger uden relationer, som er omfattet af eksemplet med big data, der følger senere i denne artikel.
-
-### <a name="inactive-relationships"></a>Inaktive relationer
-Gruppering efter en fremmed nøglekolonne, der bruges af en inaktiv relation, og som er afhængig af funktionen USERELATIONSHIP til sammenlægning af hits, understøttes ikke.
-
-### <a name="detecting-whether-aggregations-are-hit-or-missed-by-queries"></a>Registrering af, om sammenlægninger giver forekomster eller ej ved forespørgsler
-
-Få mere at vide om, hvordan du registrerer, om der returneres forespørgsler fra cachelageret i hukommelsen (lagringsprogrammet) eller DirectQuery (sendt til datakilden) ved hjælp af SQL Profiler, i artiklen om [lagringstilstand](desktop-storage-mode.md). Denne proces kan også bruges til at registrere, om sammenlægninger giver forekomster.
-
-Derudover forekommer følgende udvidede hændelse i SQL Profiler.
-
-    Query Processing\Aggregate Table Rewrite Query
-
-Det følgende JSON-kodestykke viser et eksempel på outputtet fra hændelsen, når der anvendes en sammenlægning.
-
-* **matchingResult** viser, at der blev brugt en sammenlægning til underforespørgslen.
-* **dataRequest** viser den/de gruppér efter-kolonner og den/de aggregerede kolonner, der anvendes af underforespørgslen.
-* **mapping** viser kolonnerne i den tilknyttede sammenlægningstabel.
-
-![output af en hændelse ved brug af sammenlægning](media/desktop-aggregations/aggregations-code_01.jpg)
-
-### <a name="query-examples"></a>Eksempler på forespørgsler
-Følgende forespørgsel giver forekomster ved sammenlægningen, fordi kolonner i tabellen *Date* har den granularitet, der kan give forekomster. Sammenlægningen **Sum** til **SalesAmount** vil blive brugt.
-
-![forespørgselseksempel](media/desktop-aggregations/aggregations-code_02.jpg)
-
-Følgende forespørgsel giver ikke forekomster ved sammenlægningen. På trods af at den anmoder om summen af **SalesAmount**, foretager den en handling af typen Gruppér efter på en kolonne i tabellen **Product**, som ikke har en kornethed, der kan give forekomster ved sammenlægningen. Hvis du lægger mærke til relationerne i modellen, kan et produkts underkategori have flere rækker af typen **Product**, og forespørgslen vil ikke kunne bestemme, hvilket produkt der skal sammenlægges til. I dette tilfælde vender forespørgslen tilbage til DirectQuery og sender en SQL-forespørgsel til datakilden.
-
-![forespørgselseksempel](media/desktop-aggregations/aggregations-code_03.jpg)
+![Forespørgsel, der ikke kan bruge sammenlægningen](media/desktop-aggregations/aggregations-code_03.jpg)
 
 Sammenlægninger er ikke kun til simple beregninger, der giver en ukompliceret sum. De kan også være en fordel for komplekse beregninger. En kompleks beregning opdeles i underforespørgsler for hver SUM, MIN, MAX og COUNT, og hver underforespørgsel evalueres for at bestemme, om sammenlægningen kan give forekomster. Denne logik gælder ikke i alle tilfælde på grund af optimeringen af forespørgselsplaner, men den bør være gældende generelt set. I følgende eksempel giver sammenlægningen forekomster:
 
-![forespørgselseksempel](media/desktop-aggregations/aggregations-code_04.jpg)
+![Kompleks sammenlægningsforespørgsel](media/desktop-aggregations/aggregations-code_04.jpg)
 
-Funktionen COUNTROWS kan drage fordel af sammenlægninger. Følgende forespørgsel giver forekomster ved sammenlægningen, fordi der er defineret en sammenlægning af **Count**-tabelrækker for tabellen **Sales**.
+Funktionen COUNTROWS kan drage fordel af sammenlægninger. Følgende forespørgsel giver forekomster ved sammenlægningen, fordi der er defineret en sammenlægning af **Count-tabelrækker** for tabellen **Sales**.
 
-![forespørgselseksempel](media/desktop-aggregations/aggregations-code_05.jpg)
+![COUNTROWS-sammenlægningsforespørgsel](media/desktop-aggregations/aggregations-code_05.jpg)
 
 Funktionen AVERAGE kan drage fordel af sammenlægninger. Følgende forespørgsel giver forekomster ved sammenlægningen, fordi AVERAGE foldes internt til SUM divideret med COUNT. Da kolonnen **UnitPrice** indeholder sammenlægninger, der er defineret for både SUM og COUNT, giver sammenlægningen forekomster.
 
-![forespørgselseksempel](media/desktop-aggregations/aggregations-code_06.jpg)
+![AVERAGE-sammenlægningsforespørgsel](media/desktop-aggregations/aggregations-code_06.jpg)
 
-I visse tilfælde kan funktionen DISTINCTCOUNT drage fordel af sammenlægninger. Følgende forespørgsel giver sammenlægningen forekomster, fordi der er en GroupBy-post for **CustomerKey**, som bevarer særpræget for **CustomerKey** i sammenlægningstabellen. Denne metode er stadig underlagt ydelsesgrænsen, hvor mellem omtrent to til fem millioner forskellige værdier kan påvirke resultaterne af forespørgslen. Den kan dog være nyttig i situationer, hvor der er milliarder af rækker i detaljetabellen og to til fem millioner forskellige værdier i kolonnen. I dette tilfælde er det hurtigere at optælle end at scanne tabellen med milliarder af rækker, selv om det er cachelagret i hukommelsen.
+I visse tilfælde kan funktionen DISTINCTCOUNT drage fordel af sammenlægninger. Følgende forespørgsel giver sammenlægningen forekomster, fordi der er en GroupBy-post for **CustomerKey**, som bevarer særpræget for **CustomerKey** i sammenlægningstabellen. Denne metode kan stadig være underlagt ydelsesgrænsen, hvor mere end to til fem millioner forskellige værdier kan påvirke resultaterne af forespørgslen. Den kan dog være nyttig i situationer, hvor der er milliarder af rækker i detaljetabellen men to til fem millioner forskellige værdier i kolonnen. I dette tilfælde er det hurtigere at anvende DISTINCTCOUNT end at scanne tabellen med milliarder af rækker, selvom den er cachelagret i hukommelsen.
 
-![forespørgselseksempel](media/desktop-aggregations/aggregations-code_07.jpg)
+![DISTINCTCOUNT-sammenlægningsforespørgsel](media/desktop-aggregations/aggregations-code_07.jpg)
 
-### <a name="rls"></a>Sikkerhed på rækkeniveau
-Sikkerhed på rækkeniveau bør filtrere både sammenlægningstabellen og detaljetabellen, så de fungerer korrekt. I henhold til eksemplet fungerer udtrykket for sikkerhed på rækkeniveau for tabellen **Geography**, fordi Geography er på filtreringssiden af relationen for både tabellen **Sales** og tabellen **Sales Agg**. Sikkerhed på rækkeniveau er anvendt for forespørgsler, der når sammenlægningsstabellen, og dem, der ikke gør.
+## <a name="aggregation-based-on-groupby-columns"></a>Sammenlægning baseret på GroupBy-kolonner 
 
-![roller til administration af sammenlægninger](media/desktop-aggregations/manage-roles.png)
+Hadoop-baserede big data-modeller har andre egenskaber end dimensionelle modeller. For at undgå joinforbindelser mellem store tabeller anvender big data-modeller ofte ikke relationer, men denormalisering af dimensionsattributter på faktatabeller. Du kan låse op for sådanne big data-modeller til interaktiv analyse ved hjælp af *sammenlægninger baseret på GroupBy-kolonner*.
 
-Et udtryk for sikkerhed på rækkeniveau for tabellen **Product** filtrerer kun tabellen **Sales** og ikke tabellen **Sales Agg**. Dette anbefales ikke. Forespørgsler, som indsendes af brugere, der tilgår datasættet ved hjælp af denne rolle, drager fordel af sammenlægningshits. Da sammenlægningstabellen er en anden repræsentation af de samme data i detaljetabellen, ville det være usikkert at svare på forespørgsler fra sammenlægningstabellen, fordi filtret for sikkerhed på rækkeniveau ikke kan anvendes.
-
-Et udtryk for sikkerhed på rækkeniveau for selve tabellen **Sales Agg** filtrerer kun sammenlægningstabellen og ikke detaljetabellen. Dette er ikke tilladt.
-
-![roller til administration af sammenlægninger](media/desktop-aggregations/filter-agg-error.jpg)
-
-## <a name="aggregations-based-on-group-by-columns"></a>Sammenlægninger baseret på gruppér efter-kolonner 
-
-Hadoop-baserede big data-modeller har andre egenskaber end dimensionelle modeller. For at undgå joinforbindelser mellem store tabeller er de ofte ikke afhængige af relationer. I stedet denormaliseres dimensionsattributter ofte til faktatabeller. Sådanne big data-modeller kan låses op til interaktiv analyse ved hjælp af **sammenlægninger** baseret på gruppér efter-kolonner.
-
-Følgende tabel indeholder den numeriske kolonne **Movement**, der skal sammenlægges. Alle andre kolonner er attributter, som der skal grupperes efter. Den indeholder IoT-data og et enormt antal rækker. Lagringstilstanden er DirectQuery. Forespørgsler på datakilden, der er samlet på tværs af hele datasættet, er langsomme på grund af størrelsen.
+Følgende tabel indeholder den numeriske kolonne **Movement**, der skal sammenlægges. Alle de andre kolonner er attributter, der skal grupperes efter. Tabellen indeholder IoT-data og et enormt antal rækker. Lagringstilstanden er DirectQuery. Forespørgsler på datakilden, der er samlet på tværs af hele datasættet, er langsomme på grund af størrelsen. 
 
 ![En IoT-tabel](media/desktop-aggregations/aggregations_09.jpg)
 
-For at aktivere interaktive analyser af dette datasæt tilføjer vi en sammenlægningstabel, der grupperer efter de fleste af attributterne, men udelukker attributter med høj kardinalitet såsom længdegrad og breddegrad. Denne reducerer antallet af rækker markant, og den er så lille, at den nemt kan ligge i et cachelager i hukommelsen. Lagringstilstanden for **Driver Activity Agg** er Import.
+For at aktivere interaktive analyser af dette datasæt kan du tilføje en sammenlægningstabel, der grupperer efter de fleste af attributterne, men udelukker attributter med høj kardinalitet såsom længdegrad og breddegrad. Denne reducerer antallet af rækker markant, og den er så lille, at den nemt kan ligge i et cachelager i hukommelsen. 
 
 ![Tabellen Driver Activity Agg](media/desktop-aggregations/aggregations_10.jpg)
 
-Derefter skal vi definere sammenlægningstilknytningerne i dialogboksen **Administrer sammenlægninger**. Der vises en række for hver kolonne i tabellen **Driver Activity Agg**, hvor vi kan specificere sammenlægningens funktionalitet.
+Du kan definere sammenlægningstilknytningerne for tabellen **Driver Activity Agg** i dialogboksen **Administrer sammenlægninger**. 
 
 ![Dialogboksen Administrer sammenlægninger for tabellen Driver Activity Agg](media/desktop-aggregations/aggregations_11.jpg)
+
+I sammenlægninger, der er baseret på GroupBy-kolonner, er **GroupBy**-poster ikke valgfrie. Uden dem får sammenlægninger ingen forekomster. Dette adskiller sig fra brugen af sammenlægninger baseret på relationer, hvor GroupBy-posterne er valgfrie.
 
 I følgende tabel vises sammenlægningerne for tabellen **Driver Activity Agg**.
 
 ![Sammenlægningstabellen Driver Aktivitet Agg](media/desktop-aggregations/aggregations-table_02.jpg)
 
-### <a name="group-by-columns"></a>Kolonnevis gruppering
+Du kan angive lagringstilstanden for den sammenlagte tabel **Driver Activity Agg** til Import.
 
-I dette eksempel er **GroupBy**-posterne **ikke valgfrie**, og uden dem ville sammenlægningerne ikke give forekomster. Dette er an anderledes funktionsmåde en brug af sammenlægninger baseret på relationer, som er omfattet af det dimensionelle modeleksempel, der er angivet tidligere i denne artikel.
+### <a name="groupby-aggregation-query-example"></a>Eksempel på GroupBy-sammenlægningsforespørgsel
 
-### <a name="query-examples"></a>Eksempler på forespørgsler
+Følgende forespørgsel giver sammenlægningen forekomster, fordi kolonnen **Activity Date** er dækket af sammenlægningstabellen. Funktionen COUNTROWS bruger sammenlægningen **Optæl tabelrækker**.
 
-Følgende forespørgsel giver sammenlægningen forekomster, fordi kolonnen **Activity Date** er dækket af sammenlægningstabellen. Sammenlægningen Optæl tabelrækker anvendes af funktionen COUNTROWS.
+![Vellykket GroupBy-sammenlægningsforespørgsel](media/desktop-aggregations/aggregations-code_08.jpg)
 
-![forespørgselseksempel](media/desktop-aggregations/aggregations-code_08.jpg)
+Især til modeller, der indeholder filterattributter i faktatabeller, er det en god idé at bruge **Optæl tabelrækker**-sammenlægninger. Power BI kan sende forespørgsler til datasættet ved hjælp af COUNTROWS i tilfælde, hvor brugeren ikke udtrykkeligt anmoder om dette. Dialogboksen filtre viser f.eks. antallet af rækker for hver værdi.
 
-Især til modeller, der indeholder filterattributter i faktatabeller, er det en god idé at bruge Optæl tabelrækker-sammenlægninger. Power BI kan sende forespørgsler til datasættet ved hjælp af COUNTROWS i tilfælde, hvor brugeren ikke udtrykkeligt anmoder om dette. Dialogboksen filtre viser f.eks. antallet af rækker for hver værdi.
+![Dialogboksen Filter](media/desktop-aggregations/aggregations-12.png)
 
-![dialogboksen filtre](media/desktop-aggregations/aggregations_12.jpg)
+## <a name="combined-aggregation-techniques"></a>Kombinerede sammenlægningsteknikker
 
-### <a name="rls"></a>Sikkerhed på rækkeniveau
+Du kan kombinere metoderne for relationer og GroupBy-kolonner for sammenlægninger. Sammenlægninger baseret på relationer kan kræve, at denormaliserede dimensionstabeller opdeles i flere tabeller. Hvis dette er dyrt eller upraktisk for visse dimensionstabeller, kan du replikere de nødvendige attributter i sammenlægningstabellen for disse dimensioner og bruge relationer til andre.
 
-Ovenfor er reglerne for sikkerhed på rækkeniveau beskrevet for sammenlægninger baseret på relationer, i forhold til om et udtryk for sikkerhed på rækkeniveau kan filtrere sammenlægningstabellen, detaljetabellen eller begge. Disse samme regler gælder også for sammenlægninger baseret på gruppering efter kolonner. I eksemplet kan et udtryk for sikkerhed på rækkeniveau, der er anvendt for tabellen **Driver Activity**, bruges til at filtrere tabellen **Driver Activity Agg**, fordi alle grupperinger efter kolonner i sammenlægningstabellen er dækket af detaljetabellen. Et filter for sikkerhed på rækkeniveau for tabellen **Driver Activity Agg** kan derimod ikke anvendes på tabellen **Driver Activity**, og det tillades derfor ikke.
+Følgende model replikerer f.eks. **Måned**, **Kvartal**, **Semester** og **År** i tabellen**Sales Agg**. Der er ingen relation mellem tabellen **Sales Agg** og **Date**, men der er relationer til **Customer** og **Product Subcategory**. Lagringstilstanden for **Sales Agg** er Import.
+
+![Kombinerede sammenlægningsteknikker](media/desktop-aggregations/aggregations_15.jpg)
+
+I følgende tabel vises de poster, der er angivet i dialogboksen **Administrer sammenlægninger** for tabellen **Sales Agg**. GroupBy-posterne, hvor **Date** er detaljetabellen, er obligatoriske, hvis sammenlægninger skal give forekomster ved forespørgsler, der grupperes efter **Dato**-attributter. Som i det forrige eksempel påvirker **GroupBy**-poster til **CustomerKey** og **ProductSubcategoryKey** ikke forekomster fra sammenlægningen med undtagelse af DISTINCTCOUNT på grund af tilstedeværelsen af relationer.
+
+![Poster til sammenlægningstabellen Sales Agg](media/desktop-aggregations/aggregations-table_04.jpg)
+
+### <a name="combined-aggregation-query-examples"></a>Eksempler på kombinerede sammenlægningsforespørgsler
+
+Følgende forespørgsel giver forekomster ved sammenlægningen, fordi sammenlægningstabellen dækker **CalendarMonth**, og **CategoryName** er tilgængelig via en til mange-relationer. **SalesAmount** bruger sammenlægningen **SUM**.
+
+![Eksempelforespørgsel, der giver forekomster ved sammenlægningen](media/desktop-aggregations/aggregations-code_09.jpg)
+
+Følgende forespørgsel giver ikke forekomster ved sammenlægningen, fordi sammenlægningstabellen ikke dækker **CalendarDay**.
+
+![Eksempelforespørgsel, der ikke giver forekomster ved sammenlægningen](media/desktop-aggregations/aggregations-code_10.jpg)
+
+Følgende tidsintelligensforespørgsel giver ikke forekomster ved sammenlægningen, fordi funktionen DATESYTD genererer en tabel over **CalendarDay**-værdier, og sammenlægningstabellen dækker ikke **CalendarDay**.
+
+![Eksempelforespørgsel, der ikke giver forekomster ved sammenlægningen](media/desktop-aggregations/aggregations-code_11.jpg)
 
 ## <a name="aggregation-precedence"></a>Rangplacering af sammenlægninger
 
 Rangplacering af sammenlægninger gør det muligt for en enkelt underforespørgsel at tage flere sammenlægningstabeller i betragtning.
 
-Se følgende eksempel. Det er en [sammensat model](desktop-composite-models.md), som indeholder flere DirectQuery-kilder.
+Følgende eksempel er en [sammensat model](desktop-composite-models.md), som indeholder flere kilder:
 
-* Importtabellen **Driver aktivitet Agg2** har høj granularitet, fordi der er få gruppér efter-attributter, og disse har lav kardinalitet. Antallet af rækker kan være så lavt som nogle tusinde, så den kan nemt cachelagres i hukommelsen. Disse attributter anvendes af et executive dashboard med høj profil, så forespørgsler, der henviser til disse, skal være så hurtige som muligt.
-* Tabellen **Driver Activity Agg** er en mellemliggende sammenlægningstabel i DirectQuery-tilstand. Den indeholder over en milliard rækker i Azure SQL Data Warehouse og er optimeret ved kilden ved hjælp af kolonnelagerindekser.
-* Tabellen **Driver Activity** er DirectQuery og indeholder mere end en billion rækker med IoT-data, der leveres af et big data-system. Det behandler forespørgsler med detaljeadgang for at se individuelle IoT-aflæsninger i forbindelse med styrede filtre.
+- DirectQuery-tabellen **Driver Activity** indeholder mere end en billion rækker med IoT-data, der leveres af et big data-system. Det behandler forespørgsler med detaljeadgang for at se individuelle IoT-aflæsninger i forbindelse med styrede filtre.
+- Tabellen **Driver Activity Agg** er en mellemliggende sammenlægningstabel i DirectQuery-tilstand. Den indeholder over en milliard rækker i Azure SQL Data Warehouse og er optimeret ved kilden ved hjælp af columnstore-indekser.
+- Importtabellen **Driver Activity Agg2** har høj kornethed, fordi der er få gruppér efter-attributter, og disse har lav kardinalitet. Antallet af rækker kan være så lavt som nogle tusinde, så den kan nemt cachelagres i hukommelsen. Disse attributter anvendes af et executive dashboard med høj profil, så forespørgsler, der henviser til disse, skal være så hurtige som muligt.
 
 > [!NOTE]
-> DirectQuery-sammenlægningstabeller, der bruger en anden datakilde til detaljetabellen, understøttes kun, hvis sammenlægningstabellen er fra en kilde af typen SQL Server, Azure SQL eller Azure SQL Data Warehouse.
+> DirectQuery-sammenlægningstabeller, der bruger en anden datakilde fra detaljetabellen, understøttes kun, hvis sammenlægningstabellen er fra en kilde af typen SQL Server, Azure SQL eller Azure SQL Data Warehouse.
 
 Denne model bruger forholdsvis lidt hukommelse, men giver adgang til et stort datasæt. Den repræsenterer en balanceret arkitektur, fordi den fordeler forespørgselsbelastningen på flere komponenter i arkitekturen og udnytter dem ud fra deres styrker.
 
-![tabeller for en model med lille fodaftryk, der låser op for et stort datasæt](media/desktop-aggregations/aggregations_13.jpg)
+![Tabeller for en model med lille fodaftryk, der låser op for et stort datasæt](media/desktop-aggregations/aggregations_13.jpg)
 
-Dialogboksen **Administrer sammenlægninger** for **Driver Activity Agg2** viser, at feltet *Rangplacering* er 10, som er højere end tallet for **Driver Activity Agg**, hvilket betyder, at den anvendes først af forespørgsler, der anvender sammenlægninger. Underforespørgsler, ikke der har en granularitet, som kan besvares af **Driver Activity Agg2**, anvender **Driver Activity Agg** i stedet. Detaljerede forespørgsler, der ikke kan besvares af nogen af sammenlægningstabellerne, sendes til **Driver Activity**.
+Dialogboksen **Administrer sammenlægninger** for **Driver Activity Agg2** angiver feltet **Rangplacering** til *10*, hvilket er højere end for **Driver Activity Agg**. Indstillingen med højere rangplacering betyder, at forespørgsler, der bruger sammenlægninger, først overvejer **Driver Activity Agg2**. Underforespørgsler, ikke der har en kornethed, som kan besvares af **Driver Activity Agg2**, anvender **Driver Activity Agg** i stedet. Detaljerede forespørgsler, der ikke kan besvares af nogen af sammenlægningstabellerne, sendes til **Driver Activity**.
 
-Den tabel, der er angivet i kolonnen **Detail Table**, er **Driver Activity**, ikke **Driver Activity Agg**, fordi sammenkædede sammenlægninger ikke er tilladt (se [valideringer](#validations) tidligere i denne artikel).
+Den tabel, der er angivet i kolonnen **Detail Table**, er **Driver Activity**, ikke **Driver Activity Agg**, fordi sammenkædede sammenlægninger ikke er tilladt.
 
 ![Dialogboksen Administrer sammenlægninger](media/desktop-aggregations/aggregations_14.jpg)
 
@@ -257,45 +273,33 @@ I følgende tabel vises sammenlægningerne for tabellen **Driver Activity Agg2**
 
 ![Sammenlægningstabellen Driver Aktivitet Agg2](media/desktop-aggregations/aggregations-table_03.jpg)
 
-## <a name="aggregations-based-on-group-by-columns-combined-with-relationships"></a>Sammenlægninger, der er baseret på gruppér efter-kolonner kombineret med relationer
+## <a name="detect-whether-queries-hit-or-miss-aggregations"></a>Registrer, om sammenlægninger giver eller ikke giver forekomster ved forespørgsler
 
-Som beskrevet tidligere i denne artikel kan du endda kombinere de to teknikker til sammenlægninger. **Sammenlægninger** baseret på relationer kan kræve, at denormaliserede dimensionstabeller opdeles i flere tabeller. Hvis dette er dyrt eller upraktisk for visse dimensionstabeller, kan de nødvendige attributter replikeres i sammenlægningstabellen for visse dimensioner og relationer, der bruges til andre.
+SQL Profiler kan registrere, om forespørgsler returneres fra cachelagringsprogrammet i hukommelsen eller skubbes til datakilden ved hjælp af DirectQuery. Du kan bruge den samme proces til at registrere, om sammenlægninger giver forekomster. Du kan finde flere oplysninger under [Forespørgsler, der findes eller ikke findes i cachen](desktop-storage-mode.md#queries-that-hit-or-miss-the-cache). 
 
-Følgende model replikerer *Måned*, *Kvartal*, *Semester* og *År* i tabellen**Sales Agg**. Der er ingen relation mellem **Sales Agg** og tabellen **Dato**. Der er relationer til **Kunde** og **Produktunderkategori**. Lagringstilstanden for **Sales Agg** er Import.
+SQL Profiler indeholder også den udvidede `Query Processing\Aggregate Table Rewrite Query`-hændelse.
 
-![kombination af sammenlægningsteknikker](media/desktop-aggregations/aggregations_15.jpg)
+Det følgende JSON-kodestykke viser et eksempel på outputtet fra hændelsen, når der anvendes en sammenlægning.
 
-I følgende tabel vises de poster, der er angivet i dialogboksen **Administrer sammenlægninger** for tabellen **Sales Agg**. GroupBy-posterne, hvor **Dato** er detaljetabellen, er obligatoriske, hvis sammenlægninger skal give forekomster ved forespørgsler, der grupperes efter Datoattributter. Som i det forrige eksempel påvirker GroupBy-poster til CustomerKey og ProductSubcategoryKey ikke forekomster fra sammenlægningen på grund af tilstedeværelsen af relationer (igen med undtagelse af DISTINCTCOUNT).
+- **matchingResult** viser, at underforespørgslen brugte en sammenlægning.
+- **dataRequest** viser den eller de GroupBy-kolonner og den eller de aggregerede kolonner, underforespørgslen brugte.
+- **mapping** viser kolonnerne i den tilknyttede sammenlægningstabel.
 
-![Sammenlægningstabellen Sales Agg](media/desktop-aggregations/aggregations-table_04.jpg)
+![Output af en hændelse ved brug af sammenlægning](media/desktop-aggregations/aggregations-code_01.jpg)
 
-### <a name="query-examples"></a>Eksempler på forespørgsler
+## <a name="keep-caches-in-sync"></a>Hold cachelagre synkroniseret
 
-Følgende forespørgsel giver forekomster ved sammenlægningen, fordi CalendarMonth er dækket af sammenlægningstabellen, og CategoryName er tilgængelig via en-til-mange-relationer. Sammenlægningen Sum for **SalesAmount** anvendes.
-
-![forespørgselseksempel](media/desktop-aggregations/aggregations-code_09.jpg)
-
-Følgende forespørgsel giver ikke forekomster ved sammenlægningen, fordi CalendarDay ikke er dækket af sammenlægningstabellen.
-
-![forespørgselseksempel](media/desktop-aggregations/aggregations-code_10.jpg)
-
-Følgende tidsintelligensforespørgsel giver ikke forekomster ved sammenlægningen, fordi funktionen DATESYTD genererer en tabel over CalendarDay-værdier, der ikke er omfattet af sammenlægningstabellen.
-
-![forespørgselseksempel](media/desktop-aggregations/aggregations-code_11.jpg)
-
-## <a name="caches-should-be-kept-in-sync"></a>Cacher bør holdes synkroniserede
-
-**Sammenlægninger**, der kombinerer DirectQuery og Import og/eller Dual lagringstilstand, kan returnere forskellige data, hvis cachehukommelsen ikke synkroniseres med kildedataene. Udførelse af forespørgsler vil ikke forsøge at maskere dataproblemer ved f.eks. at filtrere DirectQuery-resultater for at matche cachelagrede værdier. Disse funktioner er optimeringer af ydeevnen og må kun anvendes på måder, der ikke kompromitterer din mulighed for at imødekomme forretningskrav. Det er dit ansvar at kende dine dataflows, så du bør designe i henhold hertil. Der er fastlagt teknikker til at håndtere sådanne problemer ved kilden, hvis det er nødvendigt.
+Sammenlægninger, der kombinerer DirectQuery-, Import- og/eller Dual-lagringstilstande, kan returnere forskellige data, medmindre cachehukommelsen holdes synkroniseret med kildedataene. Udførelse af forespørgsler vil f.eks. ikke forsøge at maskere dataproblemer ved at filtrere DirectQuery-resultater for at matche cachelagrede værdier. Der er fastlagt teknikker til at håndtere sådanne problemer ved kilden, hvis det er nødvendigt. Optimeringer af ydeevnen må kun anvendes på måder, der ikke kompromitterer din mulighed for at imødekomme forretningskrav. Det er dit ansvar at kende dine dataflow og at designe i henhold hertil. 
 
 ## <a name="next-steps"></a>Næste trin
 
-I følgende artikler beskrives sammensatte modeller yderligere, og du finder også en detaljeret beskrivelse af DirectQuery.
+Du kan finde flere oplysninger om sammensatte modeller under:
 
-* [Sammensatte modeller i Power BI Desktop](desktop-composite-models.md)
-* [Mange til mange-relationer i Power BI Desktop](desktop-many-to-many-relationships.md)
-* [Lagringstilstand i Power BI Desktop](desktop-storage-mode.md)
+- [Brug sammensatte modeller i Power BI Desktop](desktop-composite-models.md)
+- [Anvend mange til mange-relationer i Power BI Desktop](desktop-many-to-many-relationships.md)
+- [Administrer lagringstilstand i Power BI Desktop](desktop-storage-mode.md)
 
-Artikler om DirectQuery:
+Du kan finde flere oplysninger om DirectQuery under:
 
-* [Brug af DirectQuery in Power BI](desktop-directquery-about.md)
-* [Understøttede datakilder i forbindelse med DirectQuery i Power BI](desktop-directquery-data-sources.md)
+- [Om brug af DirectQuery i Power BI](desktop-directquery-about.md)
+- [Power BI-datakilder](desktop-directquery-data-sources.md)

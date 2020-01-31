@@ -7,15 +7,15 @@ featuredvideoid: dtdLul6otYE
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/23/2019
+ms.date: 01/22/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 633aaf4bd06634f0b1cc7eb2dd38b56eec0cfaf0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f2114d8d4be2e5f9c3b3f34589adc901a0ef4ebb
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73852734"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537717"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Vis indhold i flere detaljer: fokustilstand og fuldskærmstilstand
 
@@ -30,21 +30,20 @@ Fokustilstand og fuldskærmstilstand er to forskellige måder at få vist flere 
 |Dashboard     |   Ikke muligt     | ja |
 |Rapportside   | Ikke muligt  | ja|
 |Rapportvisualisering | ja    | ja |
-|Dashboardfelt | ja    | ja |
+|Dashboardfelt | ja    | Ikke muligt |
 |Windows 10 Mobile | Ikke muligt | Ja |
 
 ## <a name="what-is-full-screen-mode"></a>Hvad er fuldskærmsvisning
 
 ![fuldskærmsvisning af dashboard før og efter](media/end-user-focus/power-bi-dashboards-focus.png)
 
-Få vist dit indhold i Power BI-tjenesten (dashboards, rapportsider, felter og visualiseringer) uden forstyrrende menuer og navigationsruder.  Du får en rendyrket og komplet visning af dit indhold med et øjekast – hele tiden. Dette kaldes også tv-tilstand.   
+Få vist dit indhold i Power BI-tjenesten (dashboards, rapportsider og visualiseringer) uden forstyrrende menuer og navigationsruder.  Du får en rendyrket og komplet visning af dit indhold med et øjekast – hele tiden. Dette kaldes også tv-tilstand.   
 
-Hvis du vil åbne fuldskærmsvisning, skal du vælge ikonet **Fuld skærm** ![ikonet Fuld skærm ](media/end-user-focus/power-bi-full-screen-icon.png) på menulinjen over dit dashboard, din rapport, feltet i fokustilstand eller visualiseringen i fokuseringstilstand i Power BI-tjenesten.  Dit valgte indhold fylder hele skærmen.
 Hvis du bruger Power BI – Mobil, er [fuld skærm tilgængelig for Windows 10 Mobile-apps](./mobile/mobile-windows-10-app-presentation-mode.md). 
 
 Nogle situationer, hvor det giver mening at bruge fuldskærmstilstand, er følgende:
 
-* Præsentation af dit dashboard, felt, en visual eller en rapport på et møde eller en konference.
+* Præsentation af dit dashboard, din visualisering eller rapport på et møde eller en konference
 * Visning på et kontor på en dedikeret stor skærm eller projektor.
 * Visning på en lille skærm.
 * Gennemse i låst tilstand – du kan røre skærmen eller holde musen over felter uden at åbne underliggende rapporter eller dashboards.
@@ -53,18 +52,30 @@ Nogle situationer, hvor det giver mening at bruge fuldskærmstilstand, er følge
 
 ***Fokustilstand*** gør det muligt at udvide en visualisering eller et felt for at få vist flere detaljer.  Måske har du et dashboard eller en rapport, der er en smule overfyldt, og du ønsker at zoome ind på kun én visualisering.  Dette er en perfekt brug af fokustilstand.  
 
-![fuldskærmsvisning af dashboard før og efter](media/end-user-focus/power-bi-compare-dash.png)
+![fokustilstand for dashboardfelt før og efter](media/end-user-focus/power-bi-compare-dash.png)
 
 I fokustilstand kan en Power BI-*forbruger* interagere med de filtre, der blev anvendt, da visualiseringen blev oprettet.  I Power BI-tjenesten kan du anvende fokustilstand på et dashboardfelt eller en rapportvisualisering.
 
 ## <a name="working-in-full-screen-mode"></a>Arbejde i fuldskærmstilstand
 
-Hvis du vil åbne et dashboard eller en rapportside i fuldskærmsvisning, skal du vælge ikonet for fuld skærm ![fuld skærm-ikon](media/end-user-focus/power-bi-full-screen-icon.png) fra øverste navigationsrude. Når du er i fuldskærmstilstand, vises en genvejsmenu, når du flytter musen eller markøren. Da fuld skærm er tilgængelig for mange forskellige indholdstyper, er indstillingerne i genvejsmenuen lidt forskellige men umiddelbart forståelige.  Du skal bare pege på et ikon for at få vist en definition.
+Fuldskærmstilstand er tilgængelig for dashboards, rapportsider og visualiseringer i rapporter. 
+
+- Hvis du vil åbne et dashboard i fuldskærmsvisning, skal du vælge ikonet for fuld skærm ![fuld skærm-ikon](media/end-user-focus/power-bi-full-screen-icon.png) på den øverste menulinje. 
+
+- Hvis du vil åbne en rapportside i fuldskærmsvisning, skal du vælge **Vis** > **Fuld skærm**.
+
+    ![vælge Fuld skærm i menuen Vis](media/end-user-focus/power-bi-view.png)
+
+
+- Hvis du vil se en visualisering i fuldskærmstilstand, skal du først åbne den i fokustilstand og derefter vælge **Vis** > **Fuld skærm**.  
+
+
+Dit valgte indhold fylder hele skærmen.    Når du er i fuldskærmstilstand, vises en genvejsmenu, når du flytter musen eller markøren. Da fuld skærm er tilgængelig for mange forskellige indholdstyper, er indstillingerne i genvejsmenuen lidt forskellige men umiddelbart forståelige.  Du skal bare pege på et ikon for at få vist en definition.
 
 Menu til dashboards    
 ![Menu til dashboards](media/end-user-focus/power-bi-full-screen-dash.png)    
 
-Menu til rapportsider    
+Menu til rapportsider og visualiseringer i rapporter    
 ![Menu til rapporter](media/end-user-focus/power-bi-report-full-screen.png)    
 
   * ![Tilbage-ikon](media/end-user-focus/power-bi-back-icon.png)    
@@ -92,46 +103,36 @@ Menu til rapportsider
 
 ## <a name="working-in-focus-mode"></a>Arbejde i fokustilstand
 
-Der er to måder at åbne fokustilstand på; én måde for dashboardfelter og en anden måde for rapportvisualiseringer.
+Fokustilstand er tilgængelig for dashboardfelter og visualiseringer i rapporter. 
 
-### <a name="focus-mode-in-dashboards"></a>Fokuseringstilstand i dashboards
+- Hvis du vil åbne et dashboardfelt i fokustilstand, skal du pege på et dashboardfelt eller en rapportvisualisering, vælge **Flere indstillinger** (...) og vælge **Åbn i fokustilstand**.
 
-1. Åbn et dashboard i Power BI-tjenesten.
+    ![ellipsemenu for felt](media/end-user-focus/power-bi-dashboard-focus.png).. 
 
-2. Hold over et dashboardfelt eller en rapportvisualisering, vælg **Flere indstillinger** (...), og vælg **Åbn i fokustilstand**.
+- Hvis du vil åbne en rapportvisualisering i fokustilstand, skal du pege på visualiseringen og vælge ikonet **fokustilstand**![fokustilstandsikon](media/end-user-focus/pbi_popout.jpg).  
 
-    ![ellipsemenu for felt](media/end-user-focus/power-bi-dashboard-focus.png).
+   ![fokusikonet vises på feltet](media/end-user-focus/power-bi-hover-focus-icon.png)
 
-2. Feltet åbnes og hele rapportlærredet udfyldes. Bemærk, at du stadig har ruden **Filtre**, som du kan bruge til at interagere med visualiseringen. Ruden **Filtre** kan skjules.
+
+
+Visualiseringen åbnes og fylder hele lærredet. Bemærk, at du stadig har ruden **Filtre**, som du kan bruge til at interagere med visualiseringen. Ruden **Filtre** og navigationsruden kan skjules.
 
    ![feltet udfylder rapportlærred](media/end-user-focus/power-bi-focus-filter.png)
 
-4. Udforske yderligere ved at [ændre filtrene](end-user-report-filter.md) og se efter interessante ting i dine data.  
 
-5. Afslut fokustilstand, og vend tilbage til dashboardet ved at vælge  **Afslut fokustilstand** (i øverste venstre hjørne af visualiseringen).
+   ![feltet udfylder rapportlærred og begge menuer skjult](media/end-user-focus/power-bi-menu-collapse.png)  
 
-    ![afslut fokustilstand](media/end-user-focus/power-bi-exit.png)    
+Udforske yderligere ved at [ændre filtrene](end-user-report-filter.md) og se efter interessante ting i dine data.  
 
+Se nærmere på dataene for at få ny indsigt og svar på spørgsmål. Som *forbruger* kan du ikke tilføje nye filtre, ændre de felter, der bruges i visualiseringerne, eller oprette nye visualiseringer.  Du kan dog interagere med de eksisterende filtre. 
 
-## <a name="focus-mode-for-report-visuals"></a>Fokustilstand for rapportvisualiseringer
+Dine ændringer kan ikke gemmes for et dashboardfelt. For en rapportvisualisering bliver de eventuelle ændringer, du foretager af de eksisterende filtre, dog gemt, når du afslutter Power BI. Hvis du ikke vil have, at dine ændringer huskes i Power BI, skal du vælge **Nulstil til standard**. ![knappen nulstil til standard](media/end-user-focus/power-bi-resets.png)  
 
-1. Åbn en rapport i Power BI-tjenesten.  I dette eksempel bruger vi eksemplet Salg og marketing.
+Afslut fokustilstand, og vend tilbage til dashboardet ved at vælge enten  **Afslut fokustilstand** eller **Tilbage til rapport** (i øverste venstre hjørne af visualiseringen).
 
-1. Når rapporten er åbnet, skal du vælge fanen **Kategori med År til dato**.
+![afslut fokustilstand](media/end-user-focus/power-bi-exit.png)    
 
-2. Hold over træstrukturen i øverste venstre hjørne, og vælg ikonet **fokustilstand** ![ikonet fokustilstand](media/end-user-focus/pbi_popout.jpg).  
-
-   ![fokusikonet vises på feltet](media/end-user-focus/power-bi-hover-focus-icon.png)
-2. Visualiseringen åbnes og fylder hele lærredet.
-
-   ![visualisering i fokustilstand](media/end-user-focus/power-bi-display-focus-new.png)
-
-3. Alternativt kan du udvide ruden **Filtre** for at interagere med de filtre, der er anvendt på denne visualisering. Se nærmere på dataene for at få ny indsigt og svar på spørgsmål. Som *forbruger* kan du ikke tilføje nye filtre, ændre de felter, der bruges i visualiseringerne, eller oprette nye visualiseringer.  De eventuelle ændringer, du foretager af de eksisterende filtre, gemmes dog, når du afslutter Power BI. Hvis du ikke vil have, at dine ændringer huskes i Power BI, skal du vælge **Nulstil til standard**. ![knappen nulstil til standard](media/end-user-focus/power-bi-resets.png)  
-
-
-5. Afslut fokustilstand, og vend tilbage til rapporten ved at vælge **Tilbage til rapport** (i øverste venstre hjørne af visualiseringen).
-
-    ![afslut fokustilstand](media/end-user-focus/power-bi-back-to-report.png)  
+![afslut fokustilstand](media/end-user-focus/power-bi-back-to-report.png)  
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 

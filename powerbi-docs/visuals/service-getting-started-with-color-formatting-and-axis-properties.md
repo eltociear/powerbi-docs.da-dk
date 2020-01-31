@@ -1,27 +1,27 @@
 ---
-title: Introduktion til farveformatering og akseegenskaber
-description: Introduktion til farveformatering og akseegenskaber
+title: Introduktion til formatering af rapportvisualiseringer
+description: Introduktion til formateringsindstillinger for rapportvisualiseringer
 author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 12/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7eded3d17e0db5894bd2f1a03fae49357eb27c69
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: b42d83b4cea6f5f5e8908244b2b298dc3f327468
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762249"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540612"
 ---
-# <a name="get-started-with-color-formatting-and-axis-properties"></a>Kom i gang med farveformatering og akseegenskaber
-I **Power BI** kan du ændre farven på dataserier, datapunkter og endda baggrunden til visualiseringer. Du kan også ændre, hvordan x- og y-aksen vises, så du har fuld kontrol over, hvordan dine dashboards og rapporter vises.
+# <a name="getting-started-with-the-formatting-pane"></a>Introduktion til formateringsruden
+Hvis du har redigeringstilladelser til en rapport, er der mange tilgængelige formateringsindstillinger. I **Power BI**-rapporter kan du ændre farven på dataserier, datapunkter og endda baggrunden til visualiseringer. Du kan ændre, hvordan x-aksen og y-aksen vises. Du kan endda formatere skrifttypeegenskaber for visualiseringer, former og titler, så du får fuld kontrol over, hvordan dine rapporter vises.
 
-For at komme i gang skal du vælge en **rapport** i ruden **Mit arbejdsområde**. Vælg **Rediger rapport** i det øverste menuområde.  
+Start med at åbne en rapport i Power BI Desktop eller Power BI-tjenesten. De har begge næsten identiske formateringsindstillinger. Når du åbner en rapport i Power BI-tjenesten, skal du sørge for at vælge **Rediger rapport** fra menulinjen.  
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_1a.png)
+![menulinje, der viser indstillingen Rediger](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-edit.png)
 
 Når du er ved at redigere en rapport, og du har valgt en visualisering, åbnes ruden **Visualiseringer**, hvor du kan tilføje eller ændre visualiseringer. Direkte under de tilgængelige visualiseringer er der tre ikoner: ikonet **Felter** (en stak søjler), ikonet **Formatér** (en malerrulle) og ikonet **Analytics** (et forstørrelsesglas). På billedet herunder er ikonet **Felter** valgt, hvilket er angivet med en gul linje under ikonet.
 

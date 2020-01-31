@@ -1,33 +1,29 @@
 ---
-title: Relationsvisning i Power BI Desktop
-description: Relationsvisning i Power BI Desktop
+title: Modelvisning i Power BI Desktop
+description: Modelvisning i Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: cd9671b8c38cb2aa1502c3aa00a871d125f819b1
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: ea568c061142e66e79351de8a6c0f0603a46f775
+ms.sourcegitcommit: 08f65ea314b547b41b51afef6876e56182190266
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760474"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "76753213"
 ---
-# <a name="work-with-relationship-view-in-power-bi-desktop"></a>Arbejde med relationsvisning i Power BI Desktop
-Med **Relationsvisning** vises alle tabeller, kolonner og relationer i din model. Det kan være særligt nyttigt, når din model indeholder komplekse relationer mellem mange tabeller.
+# <a name="work-with-model-view-in-power-bi-desktop"></a>Arbejde med modelvisning i Power BI Desktop
 
-Lad os se nærmere på det.
+I *Modelvisning* vises alle tabellerne, kolonnerne og relationerne i din model. Denne visning kan være særligt nyttig, når din model indeholder komplekse relationer mellem mange tabeller.
 
-![](media/desktop-relationship-view/relationshipview_fullscreen.png)
+Vælg ikonet **Model** i siden af vinduet for at få vist en visning af den eksisterende model. Hold markøren over en relationslinje for at få vist de kolonner, der bruges.
 
-**A.**  Ikonet Relationsvisning – Klik her for at få vist din model i Relationsvisning
+![Modelvisning, Power BI Desktop](media/desktop-relationship-view/model-view-full-screen.png)
 
-**B.** Relation – Du kan holde markøren over en relation for at få vist de kolonner, der er bruges. Dobbeltklik på en relation for at åbne den i dialogboksen **Rediger relationer**. 
+I figuren har tabellen *Stores* en *StoreKey*-kolonne, der er relateret til tabellen *Salg*, som også har en *StoreKey*-kolonne. De to tabeller har en relation af typen *mange til én* (\*: 1). En pil midt på linjen viser retningen af kontekstflowet for filteret. De dobbelte pile betyder, at den tværgående filterretning er angivet til *Begge*.
 
-I figuren ovenfor kan du se, at tabellen *Stores* har en *StoreKey*-kolonne, der er relateret til tabellen *Salg*, som også har en *StoreKey*-kolonne. Vi kan se, at det er en relation af typen *Mange til én* (\*: 1), og ikonet midt på linjen viser, at den tværgående filterretning er angivet til *Begge*. Pilen på ikonet viser retningen af kontekstflowet for filteret.
-
-Du kan finde flere oplysninger om relationer under [Opret og administrer relationer i Power BI Desktop](desktop-create-and-manage-relationships.md).
-
+Du kan dobbeltklikke på en relation for at åbne den i dialogboksen **Rediger relationer**. Du kan finde flere oplysninger om relationer under [Opret og administrer relationer i Power BI Desktop](desktop-create-and-manage-relationships.md).

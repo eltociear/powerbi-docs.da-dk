@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 5dd924f066b6382ed895d81ed0ada5d913c040e6
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: cc20d981e1e774eed109c614e146415ec3813601
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75218150"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709791"
 ---
-# <a name="qa-for-power-bi-consumers"></a>Spørgsmål og svar til Power BI-**forbrugere**
+# <a name="qa-for-power-bi-consumers"></a>Spørgsmål og svar til Power BI-forbrugere
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -167,6 +167,10 @@ Vælg derefter **Indstillinger** > **Dashboards**. Kontrollér, at der er en mar
 **Svar**: Vælg muligheden for at kontakte ejeren af rapporten eller dashboardet. Du kan gøre dette direkte fra siden Dashboard til Spørgsmål og svar eller visualisering til Spørgsmål og svar. Du kan også slå ejeren op i Power BI-headeren.  Der er mange ting, som designeren kan gøre for at forbedre Spørgsmål og svar. Designeren kan f.eks. omdøbe kolonner i datasættet, så der bruges begreber, som er nemme at forstå (`CustomerFirstName` i stedet for `CustFN`). Da designeren kender datasættet virkelig godt, kan vedkommende også komme med nyttige spørgsmål og føje dem til foreslåede spørgsmål i Spørgsmål og svar.
 
 ![Vis kontaktoplysninger](media/end-user-q-and-a/power-bi-q-and-a-contact.png)
+
+## <a name="privacy"></a>Beskyttelse af personlige oplysninger
+
+Microsoft kan bruge dine spørgsmål til at forbedre Power BI. Gennemse [Microsofts erklæring om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkId=521839) for at få flere oplysninger.
 
 ## <a name="next-steps"></a>Næste trin
 Du kan få mere at vide om, hvordan en visualisering til Spørgsmål og svar oprettes og administreres af *designeren* af rapporten, i [Visualiseringstype til Spørgsmål og svar](../visuals/power-bi-visualization-q-and-a.md).

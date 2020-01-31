@@ -1,179 +1,168 @@
 ---
 title: Tilføj en kolonne ud fra et eksempel i Power BI Desktop
-description: Opret hurtigt en ny kolonne i Power BI Desktop ved hjælp af eksisterende kolonner som eksempler
+description: Opret hurtigt en ny kolonne i Power BI Desktop ved hjælp af eksisterende kolonner som eksempler.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d07cfda18f44a0872c8c9567aa29ac49a98622a7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b10bbaa4158e6c5392cb6ed937c54bdbb5d555d2
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869452"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538473"
 ---
-# <a name="add-a-column-from-an-example-in-power-bi-desktop"></a>Tilføj en kolonne ud fra et eksempel i Power BI Desktop
-Fra og med udgivelsen af **Power BI Desktop** i april 2017 kan du føje nye kolonner af data til modellen ved hjælp af **Forespørgselseditor** ved blot at angive en eller flere eksempelværdier for den nye kolonne. Du kan oprette et nyt kolonneeksempel ud fra en aktuel markering eller angive input baseret på alle (eller de markerede) kolonner i en bestemt tabel.
+# <a name="add-a-column-from-examples-in-power-bi-desktop"></a>Tilføj en kolonne ud fra eksempler i Power BI Desktop
+Med *tilføj kolonne fra eksempler* i Power-forespørgselseditor kan du føje nye kolonner til din datamodel ved at angive en eller flere eksempelværdier for de nye kolonner. Du kan oprette de nye kolonneeksempler fra et valg eller angive input baseret på alle eksisterende kolonner i tabellen.
 
 ![](media/desktop-add-column-from-example/add-column-from-example_01.png)
 
-Med denne metode kan du hurtigt og nemt oprette nye kolonner, og den er specielt nyttig i følgende situationer:
+Brug af *tilføj kolonne fra eksempel* kan du hurtigt og nemt oprette nye kolonner, og det er specielt nyttig i følgende situationer:
 
-* Du kender det dataresultat, du gerne vil se i din nye kolonne, men du er i tvivl om, hvilken transformation (eller samling af transformationer) der vil give dette resultat.
-* Du har allerede, hvilke transformationer du har brug for, men du er i tvivl om, hvor du skal klikke, eller hvad du skal vælge i brugergrænsefladen for at aktivere dem.
-* Du ved alt om de transformationer, du skal bruge ved hjælp af udtrykket *Brugerdefineret kolonne* i **M**, men en (eller flere) af disse udtryk er ikke tilgængelige, så du kan klikke på dem eller tilføje dem i brugergrænsefladen.
+- Du kender de data, du gerne vil se i din nye kolonne, men du er i tvivl om, hvilken transformation eller samling af transformationer der vil give dette resultat.
+- Du ved allerede, hvilke transformationer du har brug for, men du er i tvivl om, hvad du skal vælge i brugergrænsefladen for at aktivere dem.
+- Du ved alt om de transformationer, du skal bruge ved hjælp af udtrykket *Brugerdefineret kolonne* i *M*-sprog, men en eller flere af disse udtryk er ikke tilgængelige i brugergrænsefladen.
 
-Ved hjælp af funktionen **add column from example** (tilføj kolonne fra eksempel) bliver det nemt og ligetil. I de følgende afsnit skal vi se, hvor nemt det egentligt er.
+Det er nemt og ligetil at tilføje en kolonne fra et eksempel. I de næste afsnit vises det, hvor nemt det er.
 
-## <a name="use-query-editor-to-add-a-new-column-from-examples"></a>Brug Forespørgselseditor til at tilføje en ny kolonne fra eksempler
-Hvis du vil oprette en ny kolonne fra et eksempel, skal du starte **Forespørgselseditor**. Det kan du også gøre ved at vælge **Rediger forespørgsler** på båndet **Hjem** i **Power BI Desktop**.
+## <a name="add-a-new-column-from-examples"></a>Tilføj en ny kolonne fra eksempler
 
-![](media/desktop-add-column-from-example/add-column-from-example_02.png)
+Hvis du vil hente eksempeldata fra Wikipedia, skal du vælge **Hent data** > **Web** fra fanen **Hjem** på båndet Power BI Desktop. 
 
-Hvis du vil hente data fra en webside, kan du gå til fanen **Hjem**, klikke på **Hent data > Web** og derefter indsætte URL-adressen i den dialogboks, der vises. I denne artikel bruger vi data fra en Wikipedia-artikel. Du kan klikke på linket nedenfor for at hente dataene selv og følge med:
+![Hent data fra internettet](media/desktop-add-column-from-example/add-column-from-example_02.png)
 
-* [**Liste over stater og områder i USA**](https://wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States)
+Indsæt følgende URL-adresse i den dialogboks, der vises, og vælg **OK**: 
 
-Når **Forespørgselseditor** er startet, og du har indlæst data, kan du komme i gang med at tilføje en kolonne fra eksempler. Når du vil tilføje en ny kolonne, skal du i **Forespørgselseditor** vælge fanen **Tilføj kolonne** på båndet og vælge **Kolonne fra eksempler**. Hvis du vælger rullelisten, kan du enten vælge **From All Columns** (Fra alle kolonner), som er standard, hvis du blot vælger knappen i stedet for rullelisten, eller du kan vælge **From Selection** (Fra markering). I denne artikel gennemgår vi valg af **From All Columns** (Fra alle kolonner).
+*https:\//wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States*
 
-![](media/desktop-add-column-from-example/add-column-from-example_03.png)
+I dialogboksen **Navigator** skal du vælge tabellen **Stater i USA** og derefter vælge **Transformer data**. Tabellen åbnes i Power Query-editor.
 
-## <a name="the-add-column-from-examples-pane"></a>Ruden Tilføj kolonne fra eksempler
-Når du laver en markering for at tilføje en ny kolonne fra eksempler, vises en ny rude, der viser kolonnerne i den aktuelle tabel (du skal muligvis rulle for at kunne se dem alle). Den nye **Kolonne1** vises også til højre. Det er den kolonne, der oprettes i **Power BI Desktop** baseret på dine eksempler. Under overskriften til den nye **Kolonne1** er der tomme celler, hvor du kan skrive dine eksempler. De bruges i Power BI til at oprette regler og transformationer, der svarer til dit eksempel.
+Eller hvis du vil åbne data, der allerede er indlæst fra Power BI Desktop, skal du vælge **Rediger forespørgsler** på fanen **Hjem** på båndet. Dataene åbnes i Power-forespørgselseditor. 
 
-Bemærk, at dette er et **Anvendt trin** i ruden **Forespørgselsindstillinger**. Som det altid er tilfældet, vil **Forespørgselseditor** registrere dine transformationstrin og anvende dem til forespørgslen i rækkefølge.
+![Vælg Rediger forespørgsler fra Power BI Desktop](media/desktop-add-column-from-example/add-column-from-example_05.png)
 
-![](media/desktop-add-column-from-example/add-column-from-example_04.png)
+Når eksempeldataene åbnes i Power-forespørgselseditor, skal du vælge fanen **Tilføj kolonne** på båndet og derefter vælge **Kolonne fra eksempler**. Vælg selve ikonet **Kolonne fra eksempler** for at oprette kolonnen fra alle eksisterende kolonner, eller vælg rullepilen for at vælge mellem **Fra alle kolonner** eller **Fra markeringen**. I denne gennemgang skal du bruge **Fra alle kolonner**.
 
-Denne rude hedder **Add Columns From Examples** (Tilføj kolonner fra eksempler) og består af fire primære områder:
+![Vælg Tilføj kolonne fra eksempler](media/desktop-add-column-from-example/add-column-from-example_03.png)
 
-1. **Kommandolinjen**, som indeholder en kort beskrivelse af funktionen eller transformationen.
-2. Indstillingen **Send feedback**, der hjælper med at forbedre denne funktion i Power BI.
-3. Knapperne **OK** og **Annuller**, som du kan bruge til at bekræfte dine transformationer og tilføje kolonnen eller annullere.
-4. Det nye kolonneområde, hvor du kan skrive dine eksempelværdier i en af rækkerne (for at sende dit eksempel til Power BI), der vedrører andre kolonner i den pågældende række.
+## <a name="add-column-from-examples-pane"></a>Ruden Tilføj kolonne fra eksempler
+Når du vælger **Tilføj kolonne** > **fra eksempler**, åbnes ruden **Tilføj kolonne fra eksempler** øverst i tabellen. Den nye **Kolonne 1** vises til højre for de eksisterende kolonner (det kan være nødvendigt at rulle for at se dem alle). Når du angiver dine eksempelværdier i tomme celler i **Kolonne 1**, opretter Power BI regler og transformationer, der matcher dine eksempler, og de bruges til at udfylde resten af kolonnen.
 
-![](media/desktop-add-column-from-example/add-column-from-example_05.png)
+Læg mærke til, at **Kolonne fra eksempler** også vises som et **Anvendt trin** i ruden **Forespørgselsindstillinger**. Som det altid er tilfældet, vil Forespørgselseditor registrere dine transformationstrin og anvende dem til forespørgslen i rækkefølge.
 
-Mens du skriver dit eksempel i den nye kolonne, får du i Power BI vist et eksempel på, hvordan den kolonne, som er ved at blive oprettet, vil se ud baseret på de transformationer, der registreres. Hvis du for eksempel skriver *Alabama* i den første række, svarer det til værdien *Alabama* i den første kolonne i tabellen. Så snart du trykker på *Enter*, udfylder Power BI kolonnen med udgangspunkt i denne værdi.
+![Ruden Tilføj kolonne fra eksempler](media/desktop-add-column-from-example/add-column-from-example_04.png)
 
-Men prøv så at gå til den række, der indeholder *Massachusetts [A]* , og slette den sidste del *[E]* (fordi du ikke har brug for den længere). Power BI registrerer ændringen og bruger eksemplet til at oprette en transformation. Læg mærke til forklaringen til transformationen i ruden foroven i midten.
+Mens du skriver dit eksempel i den nye kolonne, får du i Power BI vist et eksempel på, hvordan resten af kolonnen vil se ud baseret på de transformationer, der oprettes. Hvis du for eksempel skriver *Alabama* i den første række, svarer det til værdien **Alabama** i den første kolonne i tabellen. Når du trykker på ENTER, udfylder Power BI resten af den nye kolonne baseret på den første kolonneværdi, og navngiver kolonnen **navn & forkortelse af postnummer[12] – Kopiér**.
 
-![](media/desktop-add-column-from-example/add-column-from-example_06.png)
+Gå nu til rækken **Massachusetts [E]** i den nye kolonne, og slet **[E]** i strengen. Power BI registrerer ændringen og bruger eksemplet til at oprette en transformation. Power BI beskriver transformationerne i ruden **Tilføj kolonne fra eksempler** og omdøber kolonnen til **Tekst før afgrænser.** 
 
-Mens du fortsætter med at angive eksempler, føjer **Forespørgselseditor** til transformationerne. Når du er tilfreds, kan du vælge **OK** for at bekræfte dine ændringer.
+![Transformeret kolonne fra eksempler](media/desktop-add-column-from-example/add-column-from-example_06.png)
 
-## <a name="see-add-column-from-examples-in-action"></a>Se Tilføj kolonne fra eksempler i brug
-Vil du se, hvordan dette fungerer? Følgende video viser denne funktion i brug med anvendelse af den datakilde, der blev angivet tidligere i eksemplet. Prøv at se det, og følg selv med!
+Mens du fortsætter med at angive eksempler, føjer Power-forespørgselseditor til transformationerne. Når du er tilfreds, skal du vælge **OK** for at bekræfte dine ændringer. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-ykbVW9wQfw" frameborder="0" allowfullscreen></iframe>
+Du kan omdøbe den nye kolonne, som du vil, ved at dobbeltklikke på kolonneoverskriften eller ved at højreklikke på den og vælge **Omdøb**. 
 
-## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
-Der er mange transformationer, der er tilgængelige, når du bruger **Tilføj kolonne fra eksempler**, men ikke alle transformationer er medtaget. På følgende liste vises alle understøttede transformationer.
+Se denne video for at se **Tilføj kolonne fra eksempler** i aktion ved hjælp af datakildeeksemplet: 
 
-* **Reference**
+[Power BI Desktop: Tilføj kolonne fra eksempler](https://www.youtube.com/watch?v=-ykbVW9wQfw). 
+
+## <a name="list-of-supported-transformations"></a>Liste over understøttede transformationer
+Mange men ikke alle transformationer er tilgængelige, når du bruger **Tilføj kolonne fra eksempler**. På følgende liste vises alle understøttede transformationer:
+
+**Generelt**
+
+- Betinget kolonne
+
+**Reference**
   
-  * Reference til en bestemt kolonne (herunder transformationer i form af trim, rydning og store/små bogstaver)
+- Reference til en bestemt kolonne, herunder transformationer i form af trim, rydning og store/små bogstaver
 
-* **Transformationer**
-  
-  * Kombiner (understøtter kombination af konstantstrenge og hele kolonneværdier)
-  * Erstat
-  * Længde
-  * Udtræk   
-    * Første tegn
-    * Sidste tegn
-    * Område
-    * Tekst før afgrænser
-    * Tekst efter afgrænser
-    * Tekst mellem afgrænsere
-    * Længde
+**Transformationer**
 
-* Følgende understøttede **teksttransformationer** er tilgængelige fra og med udgivelsen af **Power BI Desktop** i november 2017:
-    
-  * Fjern tegn
-  * Behold tegn
+- Kombiner (understøtter kombination af konstantstrenge og hele kolonneværdier)
+- Erstat
+- Længde
+- Udtræk   
+  - Første tegn
+  - Sidste tegn
+  - Område
+  - Tekst før afgrænser
+  - Tekst efter afgrænser
+  - Tekst mellem afgrænsere
+  - Længde
+  - Fjern tegn
+  - Behold tegn
 
 > [!NOTE]
 > Alle transformationer af *tekst* tager højde for et muligt behov for at anvende transformation til kolonneværdien i form af trim, rydning eller store/små bogstaver.
-> 
-> 
 
-* **Datotransformationer**
-  
-  * Dag
-  * Dag i uge
-  * Navn på dag i uge
-  * Dag i år
-  * Måned
-  * Navn på måned
-  * Kvartal i år
-  * Uge i måned
-  * Uge i år
-  * År
-  * Alder
-  * Årets start
-  * Årets slutning
-  * Månedens start
-  * Månedens slutning
-  * Kvartalets start
-  * Dage i måned
-  * Kvartalets slutning
-  * Ugens start
-  * Ugens slutning
-  * Dag i måned
-  * Dagens start
-  * Dagens slutning
+**Datotransformationer**
 
+- Dag
+- Dag i uge
+- Navn på dag i uge
+- Dag i år
+- Måned
+- Navn på måned
+- Kvartal i år
+- Uge i måned
+- Uge i år
+- År
+- Alder
+- Årets start
+- Årets slutning
+- Månedens start
+- Månedens slutning
+- Kvartalets start
+- Dage i måned
+- Kvartalets slutning
+- Ugens start
+- Ugens slutning
+- Dag i måned
+- Dagens start
+- Dagens slutning
 
-* **Tidstransformationer**
-  
-  * Time
-  * Minut
-  * Sekund  
-  * Til lokal tid
+**Tidstransformationer**
+
+- Hour
+- Minute
+- Second  
+- Til lokal tid
 
 > [!NOTE]
 > I alle *dato*- og *tid*-transformationer tages der højde for et muligt behov for at konvertere kolonneværdien til *Dato* eller *Klokkeslæt* eller *DateTime*.
-> 
-> 
 
-* **Taltransformationer** 
+**Taltransformationer** 
 
-  * Absolut værdi
-  * Arcus cosinus
-  * Arcus sinus
-  * Arcus tangens
-  * Konverter til et tal
-  * Cosinus
-  * Kube
-  * Division
-  * Eksponent
-  * Fakultet
-  * Divider (heltal)
-  * Er lige
-  * Er ulige
-  * Ln
-  * Logaritme med grundtallet 10
-  * Modulus
-  * Multiplicer
-  * Rund ned
-  * Rund op
-  * Fortegn
-  * Sin.
-  * Kvadratrod
-  * Kvadrat
-  * Subtraher
-  * Sum
-  * Tangent
+- Absolut værdi
+- Arcus cosinus
+- Arcus sinus
+- Arcus tangens
+- Konverter til et tal
+- Cosinus
+- Kube
+- Division
+- Eksponent
+- Fakultet
+- Divider (heltal)
+- Er lige
+- Er ulige
+- Ln
+- Logaritme med grundtallet 10
+- Modulus
+- Multiplicer
+- Rund ned
+- Rund op
+- Fortegn
+- Sin.
+- Kvadratrod
+- Kvadrat
+- Subtraher
+- Sum
+- Tangent
+- Inddeling/intervaller
 
-* Følgende understøttede **taltransformation** er tilgængelig fra og med udgivelsen af **Power BI Desktop** i november 2017:
-
-  * Inddeling/intervaller
-
-* **Generelt**
-  
-  * Betinget kolonne

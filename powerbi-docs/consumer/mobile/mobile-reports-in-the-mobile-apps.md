@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/18/2020
 ms.author: painbar
-ms.openlocfilehash: bb54a4e403f2cc12800d0c97e44308f7ad5c5f65
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 27f6469cb960ff101f45636e0720b935929ff010
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75220696"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538108"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -53,6 +53,13 @@ Hvis du vil hente en rapport fra et dashboard, skal du trykke på **Flere indsti
 ## <a name="interact-with-reports"></a>Interager med rapporter
 Når du har åbnet en rapport i appen, kan du begynde at arbejde med den. Du kan gøre mange ting med rapporten og dens data. I rapportfoden kan du finde de handlinger, der kan udføres i rapporten. Når du trykker på og trykker længe på de data, der vises i rapporten, kan du også opdele dataene.
 
+### <a name="single-tap-versus-double-tap-interaction"></a>Enkelt tryk i forhold til interaktion med dobbelttryk
+Når du downloader Power BI-mobilappen, er den angivet til interaktion med enkelttryk. Det betyder, at når du trykker på en visualisering for at udføre en handling, f.eks. markering af et udsnitselement, tværgående fremhævning, klik på et link eller en knap osv., vælges visualiseringen, når du trykker, og samtidig udføres den handling, du ønsker.
+
+Hvis du foretrækker det, kan du skifte til interaktion med dobbelttryk. Hvis du vælger interaktion med dobbelttryk, skal du først trykke på en visualisering for at markere den og derefter trykke på visualiseringen igen for at udføre den ønskede handling.
+
+Hvis du vil skifte til interaktion med dobbelttryk, eller hvis du vil skifte tilbage til interaktion med enkelt tryk, skal du gå til [indstillinger for app-interaktion](./mobile-app-interaction-settings.md).
+
 ### <a name="using-tap-and-long-tap"></a>Brug af tryk og langt tryk
 Et tryk er det samme som et klik med musen. Så hvis du vil fremhæve rapporten på baggrund af et datapunkt, skal du trykke på det pågældende datapunkt.
 Når du trykker på en udsnitsværdi, vælges værdien, og resten af rapporten opdeles efter den pågældende værdi.
@@ -63,7 +70,6 @@ Du har sikkert bemærket, at der vises en kant, når du trykker på et visuelt e
 ![Visuelt element og menu](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
 ### <a name="tooltip-and-drill-actions"></a>Værktøjstip og analysehandlinger
-
 Når du trykker længe (trykker og holder nede) på et datapunkt, vises der et værktøjstip, der præsenterer de værdier, som dette datapunkt repræsenterer:
 
 ![Værktøjstip](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
@@ -96,7 +102,7 @@ Fra rapportfoden kan du udføre flere handlinger på den aktuelle rapportside el
 ![Rapportfod](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
 De handlinger, du kan udføre fra sidefoden, er:
-* Nulstille rapportfilteret og krydsfremhævninger til den oprindelige tilstand.
+* Nulstille rapportfilteret og tværgående fremhævninger til den oprindelige tilstand.
 * Åbne samtaleruden for at få vist eller tilføje kommentarer til denne rapport.
 * Åbne filterruden for at få vist og ændre det filter, der aktuelt anvendes på rapporten.
 * Gennemgå alle siderne i rapporten. Når du trykker på sidenavnet, indlæses og præsenteres den pågældende side.
@@ -126,6 +132,8 @@ Eksempel:
 
 Power BI-mobilappen understøtter både rapportbogmærker, som rapportopretteren har defineret, og personlige bogmærker, som du kan definere i Power BI-tjenesten. Du kan finde bogmærkemenuen under **Flere indstillinger** (...) på [værktøjslinjen med rapporthandlinger](mobile-reports-in-the-mobile-apps.md#all-report-actions).
 
+Standardbogmærker er angivet med et særligt ikon. I forbindelse med personlige bogmærker kan du angive, fjerne eller ændre standardindstillingen ved at trykke på **Flere indstillinger (...)** ved siden af det bogmærke, du vil ændre, og vælge **Gør til standard** eller **Ryd standard**.
+
 ![bogmærkemenu](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
 
 Når en bogmærkevisning af en rapport er åben, vises navnet på bogmærket øverst i rapporten.
@@ -133,6 +141,15 @@ Når en bogmærkevisning af en rapport er åben, vises navnet på bogmærket øv
 ![bogmærkevisning](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
 [Få mere at vide om bogmærker i Power BI-tjenesten](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
+
+## <a name="configure-your-experience-with-reports"></a>Konfigurer din oplevelse med rapporter
+Power BI-mobilappen har en række indstillinger, som du kan bruge til at styre din rapportvisning. Du kan i øjeblikket konfigurere
+* **Interaktion med rapportvisualiseringer**: Du kan vælge at bruge interaktion med enten enkelt tryk eller dobbelttryk.
+* **Metode til dataopdatering**: Du kan vælge enten at have en opdateringsknap eller en handling via rullemenu til opdatering af rapportdata.
+* **Synlighed for rapportfod**: Du kan vælge enten at have en fastgjort sidefod, der altid er synlig, eller en dynamisk sidefod, der skjules og vises igen, afhængigt af dine handlinger (f.eks. når du ruller).
+
+Se [indstillinger for app-interaktion](./mobile-app-interaction-settings.md) for at få oplysninger om, hvordan du ændrer disse indstillinger.
+
 
 ## <a name="next-steps"></a>Næste trin
 * [Få vist og interager med Power BI-rapporter, der er optimeret til din telefon](mobile-apps-view-phone-report.md)

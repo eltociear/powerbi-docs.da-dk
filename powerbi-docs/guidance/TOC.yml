@@ -32,6 +32,8 @@
               href: relationships-many-to-many.md
             - name: Vejledning til DirectQuery-model
               href: directquery-model-guidance.md
+            - name: Vejledning til sammensat model
+              href: composite-model-guidance.md
         - name: DAX
           items:
             - name: DIVIDE-funktion vs. divisionsoperator (/)
@@ -50,8 +52,6 @@
               href: dax-column-measure-references.md
             - name: Undgå at bruge FILTER som et filterargument
               href: dax-avoid-avoid-filter-as-filter-argument.md
-        - name: Rapportoprettelse
-          items:
             - name: Udvid visualiseringer med værktøjstip til rapportsider
               href: report-page-tooltips.md
             - name: Anvend detaljeadgang på rapportsiden
@@ -64,6 +64,10 @@
               href: report-paginated-blank-page.md
             - name: Overfør SSRS-rapporter til Power BI
               href: migrate-ssrs-reports-to-power-bi.md
+        - name: Administration og installation
+          items:
+            - name: Størrelse af datagateway i det lokale miljø
+              href: gateway-onprem-sizing.md
     - name: Hvidbøger
       items:
         - name: Oversigt over whitepapers

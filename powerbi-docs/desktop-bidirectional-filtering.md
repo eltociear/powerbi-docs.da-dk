@@ -7,38 +7,33 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8aeae0075ed32a832c27f475ef3786b7df76576c
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 141dabdce7816d21c49d8c7f98d1438c2fc20e8d
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761766"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709858"
 ---
 # <a name="enable-bidirectional-cross-filtering-for-directquery-in-power-bi-desktop"></a>Aktivér tovejskrydsfiltrering for DirectQuery i Power BI Desktop
 
-Når tabeller filtreres for at give den relevante visning af data, står dem, der opretter rapporter og arbejder med data, over for udfordringer, når de skal fastlægge, hvordan filtrering anvendes på en rapport. Filteret blev kun anvendt på en tabel på den ene side af relationen, men ikke den anden, hvilket ofte krævede komplekse DAX-formler for at opnå de ønskede resultater.
+Ved filtrering af tabeller for at oprette den relevante visning af data står rapportoprettere og dataudviklere, over for udfordringer, når de skal fastlægge, hvordan filtrering anvendes på en rapport. Tidligere blev tabellens filterkontekst opbevaret på den ene side af relationen, men ikke den anden. Dette arrangement krævede ofte en kompleks DAX-formel for at give de ønskede resultater.
 
-Med tovejskrydsfiltrering har dem, der opretter rapporter og arbejder med data, nu mere kontrol over, hvordan filtrene anvendes, når de arbejder med relaterede tabeller, hvilket gør det muligt at anvende filtrene på *begge* sider af en tabelrelation. Dette opnås ved, at filterkonteksten overføres til en anden relateret tabel på den anden side af en tabelrelation.
+Med tovejskrydsfiltrering har rapportoprettere og dataudviklere nu større kontrol over, hvordan de kan anvende filtre, når de arbejder med relaterede tabeller. Tovejskrydsfiltrering gør det muligt for dem at anvende filtre på *begge* sider af en tabelrelation. Du kan anvende filtrene ved at overføre filterkonteksten til en anden relateret tabel på den anden side af en tabelrelation.
 
-## <a name="detailed-whitepaper-for-bidirectional-cross-filtering"></a>Detaljeret whitepaper om tovejskrydsfiltrering
-Der findes en [detaljerede hvidbog](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx), der forklarer tovejskrydsfiltrering i Power BI Desktop. Hvidbogen omhandler også SQL Server Analysis Services 2016, da begge programmer har samme funktionsmåde.
+## <a name="enable-bidirectional-cross-filtering-for-directquery"></a>Aktivér tovejskrydsfiltrering for DirectQuery
 
-* Hent hvidbogen om [tovejskrydsfiltrering til Power BI Desktop](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx)
+Du kan aktivere krydsfiltrering i dialogboksen **Rediger relation**. Hvis du vil aktivere krydsfiltrering for en relation, skal du konfigurere følgende indstillinger:
 
-## <a name="enabling-bidirectional-cross-filtering-for-directquery"></a>Aktivering af tovejskrydsfiltrering for DirectQuery
+* Angiv **Tværgående filterretning** til **Begge**.
+* Vælg **Anvend sikkerhedsfilter i begge retninger**.
 
-For at aktivere krydsfiltrering skal følgende afkrydsningsfelter være markeret i dialogboksen **Rediger relation** for en relation:
-
-* **Tværgående filterretning** skal være angivet til **Begge**.
-* **Anvend sikkerhedsfilter i begge retninger** skal også være markeret.
-
-  ![](media/desktop-bidirectional-filtering/bidirectional-filtering_2.png)
+  ![Konfigurer tovejskrydsfiltrering i Power BI Desktop.](media/desktop-bidirectional-filtering/bidirectional-filtering_2.png)
 
 > [!NOTE]
-> Når du opretter DAX-formler for krydsfiltrering i Power BI Desktop, skal du bruge *UserPrincipalName* (som ofte er det samme som en brugers logon, f.eks <em>joe@contoso.com</em>) i stedet for *UserName*. Det er muligt, at du bliver nødt til at oprette en relateret tabel, der knytter *UserName* (eller f.eks. EmployeeID) til *UserPrincipalName*.
+> Når du opretter DAX-formler til krydsfiltrering i Power BI Desktop, skal du bruge *UserPrincipalName*. Dette felt er ofte det samme som en brugers logon, f. eks. <em>joe@contoso.com</em> i stedet for *UserName*. Det er muligt, at du bliver nødt til at oprette en relateret tabel, der knytter *UserName* eller *EmployeeID* til *UserPrincipalName*.
 
-Hvis du vil have flere oplysninger og eksempler på, hvordan tovejskrydsfiltrering fungerer, skal du læse den [hvidbog](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx), der er nævnt tidligere i denne artikel.
+Hvis du vil have flere oplysninger og eksempler på, hvordan tovejskrydsfiltrering fungerer, skal du se [hvidbogen om tovejskrydsfiltrering for Power BI Desktop](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
 

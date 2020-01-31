@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/15/2019
+ms.date: 01/23/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8bbf391135442d6490033c0fc65b7372154820d2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e3e9e8ebc7feda46cb4c79ffd1535807d04a178b
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73866436"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709761"
 ---
 # <a name="use-performance-analyzer-to-examine-report-element-performance"></a>Brug Effektivitetsanalyse til at undersøge ydeevnen for rapportelementer
 
@@ -58,6 +58,9 @@ Hvert enkelt visuals logoplysninger omfatter den tid, der er brugt (varighed) ti
 * **Visuel visning** – den tid, det tager for visual'et at tegne på skærmen, herunder den tid, der kræves for at hente eventuelle webbilleder eller geokodning. 
 * **Andet** – den tid, det tager for visual'et at forberede forespørgsler, vente på, at andre visuals fuldføres, eller udføre anden baggrundsbehandling.
 
+Værdierne for **Varighed (ms)** angiver forskellen mellem et *start-* og *slut-* tidsstempel for hver handling. De fleste lærredshandlinger og visuahandlinger udføres sekventielt på en enkelt brugergrænsefladetråd, som deles af flere handlinger. De rapporterede varigheder omfatter den tid, der er brugt i kø, mens andre handlinger udføres. [Effektivitetsanalyse-eksemplet](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer) på GitHub og den tilknyttede [dokumentation](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx) indeholder oplysninger om, hvordan visuals forespørger data, og hvordan de gengiver.
+
+
 ![elementer i logoplysninger](media/desktop-performance-analyzer/performance-analyzer-06.png)
 
 Når du har interageret med elementer i den rapport, du vil måle med Effektivitetsanalyse, kan du vælge knappen **Stop**. Oplysningerne om ydeevne forbliver i ruden, når du har valgt **Stop**, så du kan analysere dem.
@@ -89,3 +92,7 @@ Du kan finde flere oplysninger om **Power BI Desktop**, og hvordan du kommer i g
 * [Udform og kombiner data med Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Almindelige forespørgselsopgaver i Power BI Desktop](desktop-common-query-tasks.md)   
 
+Du kan finde oplysninger om Effektivitetsanalyse-eksemplet i følgende ressourcer.
+
+* [Effektivitetsanalyse-eksempel](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer)
+* [Dokumentation til Effektivitetsanalyse-eksempel](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)

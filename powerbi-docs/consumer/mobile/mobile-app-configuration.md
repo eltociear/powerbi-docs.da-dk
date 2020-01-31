@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/07/2019
+ms.date: 01/15/2020
 ms.author: painbar
-ms.openlocfilehash: ccc7e3864590145309709d27774951c281b3ebdd
-ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
+ms.openlocfilehash: 58b2f96b069815af448352b3b54875dc4d6b27ee
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622363"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538261"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Du kan fjernkonfigurere Power BI-appen ved hjælp af MDM-værktøjet (Mobile Device Management)
 
@@ -21,8 +21,9 @@ Appen Power BI – Mobil til iOS og Android understøtter appindstillinger, der 
 
 Appen Power BI – Mobil understøtter følgende konfigurationsscenarier:
 
-- Konfiguration af rapportserveren (iOS og Android)
-- Indstillinger for databeskyttelse (iOS)
+* Konfiguration af rapportserveren (iOS og Android)
+* Indstillinger for databeskyttelse (iOS og Android)
+* Interaktionsindstillinger (Android)
 
 ## <a name="report-server-configuration-ios-and-android"></a>Konfiguration af rapportserveren (iOS og Android)
 
@@ -37,11 +38,21 @@ Power BI-appen til iOS og Android gør det muligt for administratorer at fjern-"
 
 ## <a name="data-protection-settings-ios"></a>Indstillinger for databeskyttelse (iOS)
 
-Power BI-appen til iOS giver administratorer mulighed for at tilpasse standardkonfigurationen for sikkerhed og indstillinger for beskyttelse af personlige oplysninger. Du kan gennemtvinge, at brugerne skal angive deres Face ID, Touch ID eller en adgangskode, når du åbner Power BI-appen.
+Power BI-appen til iOS og Android giver administratorer mulighed for at tilpasse standardkonfigurationen for sikkerhed og indstillinger for beskyttelse af personlige oplysninger. Du kan gennemtvinge, at brugerne skal angive deres Face ID, Touch ID eller en adgangskode, når du åbner Power BI-appen.
 
 | Nøgle | Type | Beskrivelse |
 |---|---|---|
 | com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolesk | Standardværdien er False. <br><br>Biometriske data, f.eks TouchID eller FaceID, kan være påkrævet, for at brugerne kan få adgang til appen på deres enhed. Når det er påkrævet, bruges biometriske data ud over godkendelse.<br><br>Hvis du bruger politikker for appbeskyttelse, anbefaler Microsoft, at du deaktiverer denne indstilling for at forhindre dobbelte adgangsprompter. |
+
+## <a name="interaction-settings-android"></a>Interaktionsindstillinger (Android)
+
+Power BI-appen til Android giver administratorer mulighed for at konfigurere interaktionsindstillinger, hvis det er besluttet, at standardindstillinger for interaktion skal ændres på tværs af grupper af brugere i en organisation. 
+
+| Nøgle | Type | Værdier | Beskrivelse |
+|---|---|---|---|
+| com.microsoft.powerbi.mobile.ReportTapInteraction | Streng |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Konfigurer, om tryk på visualisering også vil lave et datapunktvalg. |
+| ccom.microsoft.powerbi.mobile.RefreshAction | Streng |  <nobr>pull-to-refresh</nobr><br>knappen | Konfigurer, om brugeren skal have en knap til at opdatere rapporten, eller om han bruger træk-opdatering. |
+| com.microsoft.powerbi.mobile.FooterAppearance | Streng |  forankret<br>dynamisk | Konfigurer, om rapportfoden skal fastgøres nederst i rapporten eller skjules automatisk. |
 
 ## <a name="deploying-app-configuration-settings"></a>Udrulning af konfigurationsindstillinger for apps
 

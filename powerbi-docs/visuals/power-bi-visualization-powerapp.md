@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 01/14/2020
+ms.date: 01/16/2020
 ms.author: mblythe
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d9549364f9129ee4ddc6e90fb973cb73c241e4a9
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: bbca812644b82f8a0b848dc16e450f880ccb596c
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76042112"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539894"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Selvstudium: Integrer en Power Apps-visualisering i en Power BI-rapport
 
 I dette selvstudie bruger du Power Apps-visualiseringen til at oprette en ny app, der er integreret i et eksempel på en Power BI-rapport. Denne app interagerer med andre visualiseringer i rapporten.
 
-Hvis du ikke har et Power Apps-abonnement, skal du [oprette en gratis konto](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps), før du begynder.
+Hvis du ikke har et Power Apps-abonnement, skal du [oprette en gratis konto](https://web.powerapps.com/signup?redirect=marketing&email=), før du begynder.
 
 I dette selvstudium lærer du, hvordan du kan:
 > [!div class="checklist"]
@@ -33,12 +33,12 @@ I dette selvstudium lærer du, hvordan du kan:
 
 * En af browserne [Google Chrome](https://www.google.com/chrome/browser/) eller [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge).
 * Et [Power BI-abonnement](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi) med [Eksempel på analyse af salgsmuligheder](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample) installeret.
-* En forståelse af, hvordan du [opretter apps i Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch.md) og [redigerer Power BI-rapporter](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour).
+* En forståelse af, hvordan du [opretter apps i Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch) og [redigerer Power BI-rapporter](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour).
 
 
 
 ## <a name="create-a-new-app"></a>Opret en ny app
-Når du føjer Power Apps-visualiseringen til din rapport, starter den PowerApps Studio med en dynamisk dataforbindelse mellem Power Apps og Power BI.
+Når du føjer Power Apps-visualiseringen til din rapport, starter den Power Apps Studio med en dynamisk dataforbindelse mellem Power Apps og Power BI.
 
 1. Åbn rapporten Eksempel på analyse af salgsmuligheder, og vælg siden *Kommende salgsmuligheder*. 
 
@@ -49,7 +49,7 @@ Når du føjer Power Apps-visualiseringen til din rapport, starter den PowerApps
 
 2. I ruden Visualiseringer skal du vælge ikonet for Power Apps og derefter tilpasse størrelsen på visualiseringen, så den passer til den plads, du har lavet.
 
-    ![Ruden Visualiseringer med ikonet for PowerApps valgt](media/power-bi-visualization-powerapp/power-bi-powerapps-icon.jpg)
+    ![Ruden Visualisering med ikonet for Power Apps valgt](media/power-bi-visualization-powerapp/power-bi-powerapps-icon.jpg)
 
 3. I ruden **Felter** skal du vælge **Name**, **Product Code** og **Sales Stage**. 
 

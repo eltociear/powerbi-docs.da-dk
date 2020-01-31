@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: a9f589a5e840e95e349ec303b42b30568820e8b3
-ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
+ms.openlocfilehash: 632c1f1a9f0cba3f403cae4a471df6b7e699f481
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622441"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76710151"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tip til udarbejdelse af skabelonapps i Power BI
 
@@ -134,6 +134,17 @@ Skabelonapps understøtter eksempeldata kun for apps. Husk at markere afkrydsnin
 * Før du uploader pbix til arbejdsområdet for skabelonen, skal du huske at fjerne alle unødvendige forbindelser.
 * Følg [Bedste praksis for design af rapporter og visuals](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) for Power BI for at opnå maksimal indflydelse på dine brugere og blive godkendt til distribution.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
+
+## <a name="create-a-download-link-for-the-app"></a>Opret et downloadlink til appen
+
+Når du har publiceret skabelonappen på AppSource, kan du overveje at oprette et downloadlink fra dit websted til enten:
+* AppSource-downloadside – kan ses offentligt, få linket fra din AppSource-side.
+* Power BI – kan ses af en Power BI-bruger.
+
+Hvis du vil omdirigere en bruger til appens downloadlink i Power BI, skal du se følgende kodeeksempel: [GitHub-lager](https://github.com/microsoft/Template-apps-examples/tree/master/src).
+[![Downloadlink til app](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
+
+
 
 ## <a name="known-limitations"></a>Kendte begrænsninger
 
