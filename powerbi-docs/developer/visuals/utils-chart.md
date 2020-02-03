@@ -1,20 +1,20 @@
 ---
 title: Introduktion til brug af diagramhjælpeprogrammer i Power BI-visuals
 description: I denne artikel beskrives det, hvordan du bruger diagramhjælpeprogrammer til tegning af akser og forklaringer i Power BI-visuals
-author: vtkalek
-ms.author: asander
-manager: asander
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: e67b37f73b3cea097a296f313fbfc8922b7dd945
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: e87235232860897765ef95bf0ec865410adf8fd1
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75308565"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819485"
 ---
 # <a name="chart-utils"></a>Diagramhjælpeprogrammer
 

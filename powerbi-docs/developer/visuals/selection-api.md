@@ -1,20 +1,20 @@
 ---
 title: Datapunktvalg for Power BI-visuals
 description: I artikIen beskrives det, hvordan du føjer valg til Power BI-visuals
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 manager: rkarlin
-ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 94a1af90cc7ed08947f65f4ed0d55e981558d049
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 6854dad244636854cc8b77ddf1ffc15342281771
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696436"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818887"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Føj interaktivitet til visuals efter valg af Power BI-visuals
 
@@ -155,7 +155,7 @@ Og visual'et bruger følgende tilknytning af datavisninger:
 }
 ```
 
-I eksemplet er `Manufacturer` `columns`, og `Type` `rows`. Der er en serie, der er oprettet af grupperingsværdier, efter `rows` (`Type`).
+I eksemplet er `Manufacturer``columns`, og `Type``rows`. Der er en serie, der er oprettet af grupperingsværdier, efter `rows` (`Type`).
 
 Og visual'et skal også kunne oprette dataudsnit efter `Manufacturer` og `Type`.
 

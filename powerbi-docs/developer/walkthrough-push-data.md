@@ -1,19 +1,19 @@
 ---
 title: Overfør data til et datasæt
 description: Overfør data til et Power BI-datasæt
-author: rkarlin
-ms.author: rkarlin
-ms.reviewer: madia
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: 5db16bfdc1013668be5103f392d6f298c8faf925
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ceebf32f62395db8741eaf43cfc494652fbbbf98
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875457"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818795"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Overfør data til et Power BI-datasæt
 
@@ -105,7 +105,7 @@ Hvis du har et Power BI-tabelskema, kan du bruge følgende datatyper.
 | --- | --- |
 | Int64 |Int64.MaxValue og Int64.MinValue er ikke tilladt. |
 | Double |Værdierne Double.MaxValue og Double.MinValue er ikke tilladt. NaN understøttes ikke. +Infinity og -Infinity understøttes ikke i visse funktioner (f.eks. Min., Maks.). |
-| Boolesk |None |
+| Boolesk |Ingen |
 | Datetime |Under indlæsning af data beregnes værdier baseret på brøkdele af dagen i hele multipler af 1/300 sekunder (3,33 ms). |
 | Streng |Tillader i øjeblikket op til 128.000 tegn. |
 

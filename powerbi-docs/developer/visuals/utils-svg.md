@@ -1,20 +1,20 @@
 ---
 title: Introduktion til brug af SVG-hjælpeprogrammer i Power BI-visual
 description: I denne artikel beskrives det, hvordan du bruger SVG-hjælpeprogrammer til at forenkle SVG-manipulationer for brugerdefinerede Power BI-visuals
-author: vtkalek
-ms.author: asander
-manager: asander
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 15398c0e8d7322e29c502f49b8c1ea0798f52afe
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: 612c253e53cdaec5819387548354595c8bd94fa0
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75308519"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819301"
 ---
 # <a name="svg-utils"></a>SVG-hjælpeprogrammer
 
