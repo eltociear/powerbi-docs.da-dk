@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 12/02/2019
 ms.openlocfilehash: ec1bd8666a9d76b4ccfa7793415488f85a24dfdb
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74999884"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publicer Power BI-visualiseringer i Partnercenter
@@ -51,13 +51,13 @@ Før du opretter **pbiviz**-pakken, skal du udfylde følgende felter i **pbiviz.
 * beskrivelse
 * supportUrl
 * forfatter
-* navn
+* name
 * mail
 
-Vedhæft **pbiviz-filen** og **pbix-eksempelrapportfilen** i din mail. Power BI-teamet sender instruktioner og en XML-fil til programpakken, som du skal uploade. Du skal bruge denne XML-programpakke for at kunne indsende visualiseringen via Office Developer Center.
+Vedhæft **pbiviz-filen** og **pbix-eksempelrapportfilen** i din mail. Power BI-teamet sender instruktioner og en XML-fil til app-pakken, som du skal overføre. Du skal bruge denne XML-app-pakke for at kunne indsende visualiseringen via Office Developer Center.
 
 > [!NOTE]
-> Det vil tage yderligere to uger, før en opdatering til eksisterende visualiseringer når produktionsmiljøet, efter at den er blevet godkendt i butikken. Det forbedrer kvaliteten og sikrer, at eksisterende rapporter ikke ødelægges.
+> Det vil tage yderligere to uger, før en opdatering til eksisterende visuals når produktionsmiljøet, efter at den er blevet godkendt i butikken. Det forbedrer kvaliteten og sikrer, at eksisterende rapporter ikke ødelægges.
 
 ## <a name="submitting-to-appsource"></a>Indsend til AppSource
 
@@ -65,7 +65,7 @@ Hvis du vil indsende din Power BI visualisering til AppSource, skal du have en p
 
 ### <a name="getting-the-app-package"></a>Sådan får du programpakken
 
-Du skal sende en mail med **pbiviz**-filen og **pbix**-filen til Power BI-teamet, før du indsender til AppSource. Power BI-teamet uploader så filerne til den offentlige shareserver. Ellers vil filerne ikke kunne hentes i butikken. 
+Du skal sende en mail med **pbiviz**-filen og **pbix**-filen til Power BI-teamet, før du indsender til AppSource. Power BI-teamet overfører så filerne til den offentlige shareserver. Ellers vil filerne ikke kunne hentes i butikken. 
 
 Power BI-teamet skal kontrollere filerne for nye Power BI-visualiseringer, opdateringer til eksisterende Power BI-visualiseringer og rettelser til afviste indsendelser.
 
@@ -112,7 +112,7 @@ Når du har indsendt visualiseringen, vil du kunne se statussen for den i [appda
 
 Når du har oprettet din visualisering, kan du vælge at få den [certificeret](../developer/power-bi-custom-visuals-certified.md), hvis du vil.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Udvikling af en brugerdefineret visualisering i Power BI](visuals/custom-visual-develop-tutorial.md)  
 [Visualiseringer i Power BI](../visuals/power-bi-report-visualizations.md)  

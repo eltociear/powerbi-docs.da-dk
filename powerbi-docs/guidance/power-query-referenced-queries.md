@@ -1,5 +1,5 @@
 ---
-title: Reference til Power Query-forespørgsler
+title: Henvisning til Power Query-forespørgsler
 description: Vejledning i reference til Power Query-forespørgsler.
 author: peter-myers
 ms.reviewer: asaxton
@@ -9,13 +9,13 @@ ms.topic: conceptual
 ms.date: 11/30/2019
 ms.author: v-pemyer
 ms.openlocfilehash: a0127a6ffa0d698a94e368532c44d0f83c362b42
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75002391"
 ---
-# <a name="referencing-power-query-queries"></a>Reference til Power Query-forespørgsler
+# <a name="referencing-power-query-queries"></a>Henvisning til Power Query-forespørgsler
 
 Denne artikel henvender sig til designere af datamodeller, der arbejder med Power BI Desktop. Den indeholder en vejledning i, hvordan Power Query-forespørgsler, der refererer til andre forespørgsler, defineres.
 
@@ -48,7 +48,7 @@ Du kan designe dataflow for at sammenfatte kildedataene og transformationerne. D
 
 Hvis **Forespørgsel1** i eksemplet redesignes som en dataflowenhed, kan **Forespørgsel2**, **Forespørgsel3** og **Forespørgsel4** bruge den som en datakilde. Med dette design evalueres den enhed, der hentes af **Forespørgsel1**, kun én gang.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 

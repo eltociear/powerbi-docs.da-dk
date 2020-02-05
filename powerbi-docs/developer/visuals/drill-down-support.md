@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ms.openlocfilehash: 0253455cfba96c3c467f4cf8882550e22edce8ba
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "76819232"
 ---
 # <a name="add-drill-down-support"></a>Tilføj understøttelse af detailudledning
@@ -616,6 +616,6 @@ På det sidste trin får du vist visual'et med genvejsmenuen:
 
 ![Visual'et med understøttelse af detailudledning](./media/dev-matrix-visual-drilldown-demo.gif)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan finde flere oplysninger under [Forstå tilknytning af datavisning i Power BI-visualiseringer](dataview-mappings.md).

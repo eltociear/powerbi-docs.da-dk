@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 01/13/2020
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: ef1d72754d7f77d7cb3c835c1a2b94e0f7e324f4
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 5497c56f358470d0d24f69f0d67865dbbd7839a3
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76039512"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77026732"
 ---
 # <a name="tutorial-analyze-webpage-data-by-using-power-bi-desktop"></a>Selvstudium: Analysér data på en webside ved hjælp af Power BI Desktop
 
@@ -201,7 +201,7 @@ Med Power BI Desktop er det nemt at hente data fra en lang række forskellige da
 
 ## <a name="see-also"></a>Se også
 
-* [Læs andre selvstudier til Power BI Desktop](/guided-learning/)
+* [Læs andre selvstudier til Power BI Desktop](/power-bi/guided-learning/)
 * [Se videoer om Power BI Desktop](desktop-videos.md)
 * [Besøg Power BI-forummet](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Læs Power BI-bloggen](https://go.microsoft.com/fwlink/?LinkID=519327)

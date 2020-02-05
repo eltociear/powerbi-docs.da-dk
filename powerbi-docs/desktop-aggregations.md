@@ -10,10 +10,10 @@ ms.date: 01/16/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: d8db626300902125cf3536f03ed111ef3e052324
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "76538710"
 ---
 # <a name="use-aggregations-in-power-bi-desktop"></a>Brug sammenlægninger i Power BI Desktop
@@ -291,7 +291,7 @@ Det følgende JSON-kodestykke viser et eksempel på outputtet fra hændelsen, n�
 
 Sammenlægninger, der kombinerer DirectQuery-, Import- og/eller Dual-lagringstilstande, kan returnere forskellige data, medmindre cachehukommelsen holdes synkroniseret med kildedataene. Udførelse af forespørgsler vil f.eks. ikke forsøge at maskere dataproblemer ved at filtrere DirectQuery-resultater for at matche cachelagrede værdier. Der er fastlagt teknikker til at håndtere sådanne problemer ved kilden, hvis det er nødvendigt. Optimeringer af ydeevnen må kun anvendes på måder, der ikke kompromitterer din mulighed for at imødekomme forretningskrav. Det er dit ansvar at kende dine dataflow og at designe i henhold hertil. 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan finde flere oplysninger om sammensatte modeller under:
 

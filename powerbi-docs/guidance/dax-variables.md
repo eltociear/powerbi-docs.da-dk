@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/23/2019
 ms.author: v-pemyer
 ms.openlocfilehash: f352cbbd7c42aa54ae876e73c0ed821eccda59c8
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74700702"
 ---
 # <a name="dax-use-variables-to-improve-your-formulas"></a>DAX: Brug variabler til at forbedre dine formler
@@ -93,9 +93,9 @@ COUNTROWS(
 ) + 1
 ```
 
-Funktionen EARLIER bruges til at henvise til kolonneværdien **Subcategory Sales** _i den aktuelle rækkekontekst_.
+Funktionen EARLIER bruges til at henvise til kolonneværdien **Subcategory Sales**_i den aktuelle rækkekontekst_.
 
-Den beregnede kolonnedefinition kan forbedres, ved at der bruges en variabel i stedet for funktionen EARLIER. Variablen **CurrentSubcategorySales** gemmer kolonneværdien for **Subcategory Sales** _i den aktuelle rækkekontekst_, og RETURN-udtrykket bruger den i en ændret filterkontekst.
+Den beregnede kolonnedefinition kan forbedres, ved at der bruges en variabel i stedet for funktionen EARLIER. Variablen **CurrentSubcategorySales** gemmer kolonneværdien for **Subcategory Sales**_i den aktuelle rækkekontekst_, og RETURN-udtrykket bruger den i en ændret filterkontekst.
 
 ```dax
 Subcategory Sales Rank =
@@ -109,7 +109,7 @@ RETURN
     ) + 1
 ```
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 

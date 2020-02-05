@@ -9,10 +9,10 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
 ms.openlocfilehash: f5030f4fe820ac8ba14d0f7255cdbe1da5f7e9a3
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75732055"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål 
@@ -174,7 +174,7 @@ Nej, kontrolelementet til rapportfremviser er i øjeblikket ikke tilgængeligt.
 
 Ja, du kan nu søge efter dine sideinddelte rapporter fra Hjem.  Du kan også se dem i andre dele af den nye Hjem-oplevelse.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Installér Power BI Report Builder fra Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Selvstudium: Opret en sideinddelt rapport](paginated-reports-quickstart-aw.md)

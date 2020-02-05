@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/12/2019
 ms.openlocfilehash: b65cf23e37773861d41b037b0f45c430224f1930
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74882868"
 ---
 # <a name="troubleshooting-sign-in-issues-for-power-bi"></a>Lokalisering af fejl i forbindelse med logon i Power BI Desktop
@@ -47,6 +47,6 @@ En anden mulighed for at kontakte Microsoft-support for at få hjælp er ved at 
 
 Hvis du ikke kan oprette et indlæg i Power BI-communityforummet, skyldes det, at du også skal logge på forummet. Du kan finde flere oplysninger i [communitysupport](https://community.powerbi.com/t5/Community-Support/ct-p/PBI_CommunitySupport).
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Supportmuligheder til Power BI Pro og Power BI Premium](service-support-options.md)

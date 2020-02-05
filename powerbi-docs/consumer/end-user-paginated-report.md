@@ -10,10 +10,10 @@ ms.date: 12/02/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
 ms.openlocfilehash: a66189707bc6b688be012eeb59881ce4a8517ea1
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74830487"
 ---
 # <a name="paginated-reports-in-the-power-bi-service"></a>Sideinddelte rapporter i Power BI-tjenesten
@@ -92,7 +92,7 @@ Når du abonnerer på en sideinddelt rapport, sender Power BI dig en mail med ra
 
  
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 - [Power BI-rapporter](end-user-reports.md)
 - Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).
 

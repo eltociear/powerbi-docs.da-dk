@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
 ms.openlocfilehash: 30bfacc1024035f0849440eec8b1c7051ff4d82a
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75002437"
 ---
 # <a name="auto-datetime-guidance-in-power-bi-desktop"></a>Vejledning til automatisk dato/klokkeslæt i Power BI Desktop
 
-Denne artikel henvender sig til designere af datamodeller, der udvikler importmodeller og sammensatte modeller i Power BI Desktop. Den indeholder vejledning, anbefalinger og overvejelser, når _Automatisk dato/klokkeslæt_ i Power BI Desktop bruges i bestemte situationer. Du finder en oversigt og en generel introduktion til _Automatisk dato/klokkeslæt_ under [Automatisk dato/klokkeslæt i Power BI Desktop](../desktop-auto-date-time.md).
+Denne artikel henvender sig til dataudviklere af importmodeller og sammensatte modeller i Power BI Desktop. Den indeholder vejledning, anbefalinger og overvejelser, når _Automatisk dato/klokkeslæt_ i Power BI Desktop bruges i bestemte situationer. Du finder en oversigt og en generel introduktion til _Automatisk dato/klokkeslæt_ under [Automatisk dato/klokkeslæt i Power BI Desktop](../desktop-auto-date-time.md).
 
 Med indstillingen _Automatisk dato/klokkeslæt_ får du praktisk, hurtig og brugervenlig time intelligence. Rapportforfattere kan arbejde med time intelligence, når de filtrerer, grupperer og zoomer ind på detaljeniveauet gennem tidsperioder i kalendere.
 
@@ -43,7 +43,7 @@ Når din datakilde allerede definerer en dimensionstabel for dato, bør denne ta
 
 Hvis indstillingen _Automatisk dato/klokkeslæt_ ikke er relevant for dine projekter, anbefales det, at du deaktiverer den globale indstilling _Automatisk dato/klokkeslæt_. Det sikrer, at alle nye Power BI Desktop-filer, du opretter, ikke aktiverer indstillingen _Automatisk dato/klokkeslæt_.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 

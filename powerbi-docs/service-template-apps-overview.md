@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 12/17/2019
 ms.author: painbar
 ms.openlocfilehash: 528c86a75e2f255ad502dbdf973a61cd9de693d4
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75224162"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Hvad er Power BI-skabelonprogrammer?
@@ -107,6 +107,6 @@ Du kan finde flere forslag under [Tip til udarbejdelse af skabelonprogrammer i P
 ## <a name="support"></a>Support
 Hvis du vil have support under udvikling, skal du bruge [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Vi overvåger og administrerer aktivt dette websted. Kundehændelser finder hurtigt vej til det relevante team.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Opret et skabelonprogram](service-template-apps-create.md)

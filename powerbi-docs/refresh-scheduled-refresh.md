@@ -10,10 +10,10 @@ ms.date: 06/06/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
 ms.openlocfilehash: 622273ed4c8d6f2faee46d3cc84d981f86bd8c92
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74958396"
 ---
 # <a name="configure-scheduled-refresh"></a>Konfigurer planlagt opdatering
@@ -86,7 +86,7 @@ Du skal indstille skyderen **Hold dine data opdateret** til **Ja** for at konfig
 
 Visse datasæt understøttes i forhold til forskellige gateways til planlagte opdateringer. Her er en forklaring på, hvad der er tilgængeligt.
 
-### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
+### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personlig
 
 **Power BI Desktop**
 
@@ -113,7 +113,7 @@ Nogle gange går opdateringen af data muligvis ikke som forventet. Dette skyldes
 - [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)
 - [Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Opdatering af data i Power BI](refresh-data.md)  
 - [Power BI Gateway – Personal](service-gateway-personal-mode.md)  

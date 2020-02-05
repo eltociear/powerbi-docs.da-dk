@@ -11,10 +11,10 @@ ms.date: 12/03/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
 ms.openlocfilehash: 4d8a5c1cceb66b7103a58c7bcebfa46dbdd97430
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74831117"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten
@@ -105,7 +105,7 @@ Et abonnement slutter, hvis Pro-licensen udløber, hvis ejeren sletter dashboard
 * Hvis du ikke modtager abonnementsmailene, skal du kontrollere, at din brugers hovednavn (UPN) kan modtage mails. 
 * Hvis dit dashboard eller din rapport er i Premium-kapacitet, kan du bruge mailaliasser for grupper til abonnementer i stedet for at oprette abonnementer for kollegaer én mailadresse ad gangen. Aliasserne er baseret på det aktuelle Active Directory. 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Meld dig selv og andre til et abonnement på en sideinddelt rapport i Power BI-tjenesten](consumer/paginated-reports-subscriptions.md)
 - Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)    

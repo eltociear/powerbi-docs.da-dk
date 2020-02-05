@@ -11,10 +11,10 @@ ms.author: maggies
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: e3fe8626001972acc0b7555f37844b5abb62753b
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74791990"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Fejlfinding af ikke-understøttet datakilde til opdatering
@@ -37,9 +37,9 @@ Hvis du ikke er sikker på, hvilken datakilde, der er blevet brugt, kan du finde
    ![Datakildeprovider](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-provider.png)
 5. Sammenlign provideren med listen over understøttede datakilder, som findes i [Power BI-datakilder](power-bi-data-sources.md).
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Dataopdatering](refresh-data.md)  
-[Power BI Gateway - Personal](service-gateway-personal-mode.md)  
+[Power BI Gateway – Personal](service-gateway-personal-mode.md)  
 [On-premises data gateway (Datagateway i det lokale miljø)](service-gateway-onprem.md)  
 [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
 [Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)  

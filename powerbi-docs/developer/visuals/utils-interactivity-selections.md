@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ms.openlocfilehash: be7a708dfcc6ebc40c62a1a9075e2cbf134363b1
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "76818680"
 ---
 # <a name="microsoft-power-bi-visuals-interactivity-utils"></a>Interaktivitetsutils til Microsoft Power BI-visuals
@@ -61,7 +61,7 @@ Du får derefter følgende filstruktur:
 > [!NOTE]
 > Du skal importere. css-filen som en .less-fil, da Power BI Visuals Tools samler de eksterne CSS-regler.
 
-## <a name="usage"></a>Forbrug
+## <a name="usage"></a>Brug
 
 ### <a name="define-interface-for-data-points"></a>Definer grænsefladen for datapunkter
 
@@ -280,7 +280,7 @@ this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
 
 Nu er dit visual klar til at håndtere valg.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * [Læs om, hvordan du kan håndtere valg ved skift af bogmærker](bookmarks-support.md#visuals-with-selection)
 

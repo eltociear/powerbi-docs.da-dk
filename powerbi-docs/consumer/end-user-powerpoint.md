@@ -10,10 +10,10 @@ ms.date: 12/04/2019
 ms.author: mihart
 LocalizationGroup: Share your work
 ms.openlocfilehash: 25422b2503caed78e6e6518a855f6b23a0571a8c
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74830552"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Eksportér rapporter fra Power BI til PowerPoint
@@ -91,5 +91,5 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
 * **Downloadtidspunktet** på det forreste slide af den eksporterede PowerPoint-fil svarer til eksporttidspunktet iht. den tidszone, der er angivet på din computer.
 * Filtre for URL-dresser respekteres ikke i øjeblikket, når du vælger **Aktuelle værdier** til din eksport.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Udskriv en rapport](end-user-print.md)

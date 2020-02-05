@@ -9,10 +9,10 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
 ms.openlocfilehash: 50de63aed17d9fab695119d5c94fa4a5d9312702
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74834580"
 ---
 # <a name="view-parameters-for-paginated-reports-in-the-power-bi-service"></a>Få vist parametre for sideinddelte rapporter i Power BI-tjenesten
@@ -35,6 +35,6 @@ Når du får vist en rapport, der indeholder parametre, viser værktøjslinjen f
 
 5. **Default values** Hvis alle parametre har standardværdier, køres rapporten automatisk ved første visning. Nogle parametre i denne rapport har ikke standardværdier, så du kan ikke se rapporten, før du vælger værdier.  
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Sideinddelte rapporter i Power BI-tjenesten](end-user-paginated-report.md)

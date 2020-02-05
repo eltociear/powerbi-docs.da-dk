@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 12/03/2019
 ms.openlocfilehash: 73a6a3d16ae2515af41a3232a37579e18876f38b
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75223678"
 ---
 # <a name="submit-a-power-bi-visual-to-appsource-using-seller-dashboard"></a>Indsend en Power BI-visualisering til AppSource ved hjælp af Sælgerdashboard
@@ -115,7 +115,7 @@ Når du har indsendt visualiseringen, vil du kunne se statussen for den i [appda
 
 Når du har oprettet din visualisering, kan du vælge at få den [certificeret](../developer/power-bi-custom-visuals-certified.md), hvis du vil.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Udvikling af en brugerdefineret visualisering i Power BI](visuals/custom-visual-develop-tutorial.md)  
 [Visualiseringer i Power BI](../visuals/power-bi-report-visualizations.md)  

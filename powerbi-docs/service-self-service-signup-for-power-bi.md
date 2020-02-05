@@ -10,10 +10,10 @@ ms.date: 10/31/2019
 ms.author: kfollis
 LocalizationGroup: Get started
 ms.openlocfilehash: 13928bc39801cdaccf73450da64c4f84048fbce3
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74791643"
 ---
 # <a name="sign-up-for-power-bi-as-an-individual"></a>Tilmeld dig Power BI som enkeltperson
@@ -82,7 +82,7 @@ I de fleste tilfælde kan du tilmelde dig Power BI ved at følge den beskrevne p
 | **Tilmelding via selvbetjening er deaktiveret**: Under tilmeldingen modtager du en meddelelse som denne: <br /><br /> *Vi kan ikke færdiggøre din tilmelding. Din it-afdeling har deaktiveret tilmelding til Microsoft Power BI. Kontakt it-afdelingen for at fuldføre tilmeldingen.* <br /><br /> eller <br /><br /> *Det ligner en personlig mailadresse. Angiv din arbejdsmailadresse, så vi kan sætte dig i forbindelse med andre i dit firma. Og bare rolig. Vi deler ikke din adresse med nogen.* | It-administratoren i din organisation har deaktiveret tilmelding via selvbetjening for Power BI. <br /><br /> Kontakt it-administratoren for at fuldføre tilmeldingen, og bed vedkommende om at [følge instruktionerne for at aktivere tilmelding](service-admin-licensing-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory). <br/><br/> Dette problem kan også opstå, hvis du har [tilmeldt dig Office 365 via en partner](service-admin-syndication-partner.md). |
 | **Mailadressen er ikke et Office 365-id** Under tilmeldingen modtager du en meddelelse som denne: <br /><br /> *Vi kan ikke finde dig på contoso.com.  Bruger du et andet id på arbejdet eller i skolen? <br /><br />Prøv at logge på med det, og hvis det ikke virker, skal du kontakte din it-afdeling.* | Din organisation bruger id'er til at logge på Office 365 og andre Microsoft-tjenester, som er anderledes end din mailadresse.  Din mailadresse kan f.eks. være Nancy.Smith@contoso.com, men dit id er nancys@contoso.com. <br /><br /> Brug det id, som din organisation har tildelt dig, så du kan logge på Office 365 eller andre Microsoft-tjenester, for at fuldføre tilmeldingen.  Hvis du ikke ved, hvad det er, kan du kontakte din it-administrator. <br /><br /> Hvis du stadig ikke kan tilmelde dig og er villig til at gennemføre en mere avanceret tilmeldingsproces, kan du [tilmelde dig et nyt Office 365-prøveabonnement og bruge denne mailadresse til tilmeldingen](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Køb Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Power BI-serviceaftale til individuelle brugere](https://powerbi.microsoft.com/terms-of-service/)  
