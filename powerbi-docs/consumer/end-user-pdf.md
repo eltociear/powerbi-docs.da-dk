@@ -11,10 +11,10 @@ ms.date: 1/16/2020
 ms.author: mihart
 LocalizationGroup: Share your work
 ms.openlocfilehash: 4570fea58a19acb4f35a5c24d0a5bfa93beba215
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "76537548"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Eksportér rapporter fra Power BI til PDF
@@ -65,5 +65,5 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
 * Når du eksporterer til PDF, udskiftes brugerdefinerede skrifttyper med standardskrifttyper i rapporter, hvor der bruges temaer med brugerdefinerede skrifttyper.
 * Mens vi forsøger at tilbyde en ensartet oplevelse, kan vi ikke garantere, at den eksporterede PDF-fil fra Power BI-tjenesten altid vil svare til den eksporterede PDF-fil fra en lokal Power BI Desktop-fil.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Udskriv en rapport](end-user-print.md)

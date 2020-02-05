@@ -11,10 +11,10 @@ ms.date: 12/04/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 1e2465273368c6b76e602e5ffbdf4ec3a1d121a3
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75757824"
 ---
 # <a name="customize-visualization-titles-backgrounds-and-legends"></a>Tilpas visualiseringernes titler, baggrunde og forklaringer
@@ -86,7 +86,7 @@ Udvid indstillingerne under **Baggrund** i det samme grupperede søjlediagram.
 
 1. Vælg rullelisten, og vælg en grå farve.
 
-1. Ret **Gennemsigtighed** til **74 %** .
+1. Ret **Gennemsigtighed** til **74 %**.
 
 På dette tidspunkt i selvstudiet ser baggrunden på dit grupperede søjlediagram nogenlunde sådan ud:
 
@@ -110,7 +110,7 @@ Hvis du vil genindlæse alle ændringerne, skal du vælge **Vend tilbage til sta
 
 1. Flyt forklaringen til venstre side af visualiseringen.
 
-1. Føj en titel til forklaringen ved at slå **Titel** **Til**.
+1. Føj en titel til forklaringen ved at slå **Titel****Til**.
 
 1. Skriv *Manager* i feltet **Navn på forklaring**.
 
@@ -160,7 +160,7 @@ Her er en liste over de visualiseringer og tilpasningsindstillinger, der er tilg
 | Træstruktur | ja | ja | ja |
 | Vandfaldsdiagram | ja | ja | ja |
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Tilpas egenskaberne for X- og Y-aksen](power-bi-visualization-customize-x-axis-and-y-axis.md)
 

@@ -10,10 +10,10 @@ ms.date: 11/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 0d2b316b53b4107c86a036cc8a436440dd8bd674
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74311532"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Selvstudium: Opret dine egne målinger i Power BI Desktop
@@ -240,7 +240,7 @@ Antag, at du vil finde ud af, hvilke produkter der har den højeste nettoomsætn
 ## <a name="what-youve-learned"></a>Det har du lært
 Målinger kan give dig den ønskede indsigt i dine data. Du har lært, hvordan du opretter målinger ved hjælp af formellinjen, navngiver dem, så de giver mest mening, og finder og vælger de korrekte formelelementer ved hjælp af DAX-forslagslisten. Du har også fået en introduktion til kontekst, hvor resultatet af beregninger i målinger ændres i henhold til andre felter eller andre udtryk i formlerne.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 - Hvis du vil vide mere om hurtigmålinger i Power BI Desktop, der udfører mange almindelige beregninger for dig, skal du se [Brug hurtigmålinger til nemt at udføre almindelige og effektive beregninger](desktop-quick-measures.md).
   
 - Hvis du vil vide mere om DAX-formler og oprette mere avancerede målinger, skal du se [Grundlæggende DAX i Power BI Desktop](desktop-quickstart-learn-dax-basics.md). Denne artikel har fokus på de grundlæggende koncepter i DAX, for eksempel syntaks, funktioner og en dybere forståelse af kontekst.

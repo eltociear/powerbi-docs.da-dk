@@ -10,10 +10,10 @@ ms.date: 10/14/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
 ms.openlocfilehash: 2db2b4f02dac1ebcd9d24a8217a181efa9ce0779
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "76039043"
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
@@ -338,7 +338,7 @@ Derudover bør du overveje følgende anbefalinger til at etablere og bevare pål
 - Sørg for, at Power BI kan sende meddelelser om mislykkede opdateringer til din postkasse. Spamfiltre kan blokere mails eller flytte dem til en særskilt mappe, hvor du måske ikke bemærker dem med det samme.
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Konfiguration af planlagt opdatering](refresh-scheduled-refresh.md)  
 [Værktøjer til fejlfinding af opdateringsfejl](service-gateway-onprem-tshoot.md)  

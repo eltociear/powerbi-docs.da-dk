@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
 ms.openlocfilehash: 160812521939d505612e0725e678dcf985f0d03a
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75761835"
 ---
 # <a name="apply-auto-datetime-in-power-bi-desktop"></a>Anvend automatisk dato/klokkeslæt i Power BI Desktop
@@ -91,7 +91,7 @@ I Power BI Desktop skal du vælge _Filer > Indstillinger > Indstillinger_ og der
 
 ![Konfiguration af indstillinger i Power BI Desktop. Siden Dataindlæsning fra gruppen GLOBAL er valgt. Indstillingen Automatisk dato/klokkeslæt for nye filer er markeret i sektionen Time intelligence.](media/desktop-auto-date-time/auto-date-time-configure-global-options.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 

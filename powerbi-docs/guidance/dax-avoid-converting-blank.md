@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
 ms.openlocfilehash: 2f70b98ed540a2e5b87e5a949e30b0c1c02069d1
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74700380"
 ---
 # <a name="dax-avoid-converting-blanks-to-values"></a>DAX: Undgå at konvertere BLANKs til værdier
@@ -74,7 +74,7 @@ Det anbefales, at dine målinger returnerer BLANK, når der ikke kan returneres 
 
 Denne designmetode er effektiv og giver Power BI mulighed for at gengive rapporter hurtigere. Returnering af BLANK er desuden bedre, fordi rapportvisualiseringer som standard fjerner grupperinger, når opsummeringer er BLANK.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 

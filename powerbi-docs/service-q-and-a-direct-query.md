@@ -10,10 +10,10 @@ ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: cf1d67318fc86b1044e38e6f4f5f56c9473c39a1
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74265471"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Aktivér Spørgsmål og svar via direkte forbindelser i Power BI
@@ -58,9 +58,9 @@ Der er nogle begrænsninger for funktionen:
 * Sikkerhed på objektniveau understøttes ikke. Spørgsmål og svar overholder ikke sikkerhed på objektniveau og kan afsløre tabel- eller kolonnenavne til brugere, som ikke har adgang til dem. Du skal aktivere RLS for at sikre, at også værdier er sikret korrekt. 
 * Direkte forbindelser understøttes kun med datagateway i lokalt miljø. Denne funktion kan derfor ikke bruges med den personlige gateway.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
-- [Datagateway i lokalt miljø](service-gateway-onprem.md)  
+- [On-premises data gateway (Datagateway i det lokale miljø)](service-gateway-onprem.md)  
 - [Administrer din datakilde – Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 - [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)  
 - [Spørgsmål og svar i Power BI – Oversigt](consumer/end-user-q-and-a.md)  

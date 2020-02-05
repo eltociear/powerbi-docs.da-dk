@@ -11,10 +11,10 @@ ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: e9c6185506d1992a46ee14ff1eafe0c37d9f65c1
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75223793"
 ---
 # <a name="power-automate-and-power-bi"></a>Power Automate og Power BI
@@ -106,7 +106,7 @@ I denne opgave skal vi oprette et enkelt flow fra bunden, der udløses af en dat
    
     ![Flowet udløser en Outlook-meddelelse](media/service-flow-integration/power-bi-flow-notice.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Kom godt i gang med Power Automate](https://docs.microsoft.com/power-automate/getting-started/)
 * [Indstil databeskeder i Power BI-tjenesten](service-set-data-alerts.md)
 * [Indstil databeskeder på din iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)

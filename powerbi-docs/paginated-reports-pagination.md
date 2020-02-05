@@ -9,10 +9,10 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
 ms.openlocfilehash: 5c2dc39f05609da8a460ac7575498c0df6a96c55
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/17/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "76160874"
 ---
 # <a name="pagination-in-power-bi-paginated-reports"></a>Sideinddeling i Power BI-sideinddelte rapporter
@@ -85,7 +85,7 @@ ms.locfileid: "76160874"
   
  Du kan finde flere oplysninger om, hvordan disse egenskaber fungerer, når rapporter eksporteres til Excel, under [Eksport til Microsoft Excel](https://docs.microsoft.com/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs?view=sql-server-2017) i dokumentationen til Report Builder og Reporting Services.  
   
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Publicer en sideinddelt rapport i Power BI-tjenesten](consumer/paginated-reports-view-power-bi-service.md)
 - [Undgå tomme sider ved udskrivning af sideinddelte rapporter](guidance/report-paginated-blank-page.md)

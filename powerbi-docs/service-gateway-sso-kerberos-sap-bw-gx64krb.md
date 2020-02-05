@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
 ms.openlocfilehash: 6c8b62cf798d2fbbd09dab0603d216448d04487c
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75000129"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-bw-using-gx64krb5"></a>Brug Kerberos til enkeltlogon (SSO) i forbindelse med SAP BW ved hjælp af gx64krb5
@@ -49,7 +49,7 @@ gx64krb5-biblioteket skal bruges af både klienten og serveren, før en SSO-forb
 Fuldfør dette afsnit, hvis du ikke allerede har konfigureret din SAP BW-server til SNC-kommunikation (f.eks. SSO) ved hjælp af gx64krb5.
 
 > [!NOTE]
-> I dette afsnit antages det, at du allerede har oprettet en tjenestebruger til BW og bundet et egnet SPN til den (dvs. et navn, der starter med *SAP/* ).
+> I dette afsnit antages det, at du allerede har oprettet en tjenestebruger til BW og bundet et egnet SPN til den (dvs. et navn, der starter med *SAP/*).
 
 1. Giv tjenestebrugeren adgang til SAP BW-programserveren:
 
@@ -75,9 +75,9 @@ Fuldfør dette afsnit, hvis du ikke allerede har konfigureret din SAP BW-server 
 
 1. Log på din server i SAP Logon, og angiv følgende profilparametre ved hjælp af RZ10-transaktionen:
 
-    1. Angiv profilparameteren **snc/identity/as** til *p:&lt;den SAP BW-tjenestebruger, du har oprettet&gt;* . Det kan f.eks. være *p:BWtjenestebruger\@MITDOMÆNE.COM*. Bemærk, at *p:* kommer før tjenestebrugerens UPN i modsætning til *p:CN=* , der kommer før UPN, når du bruger CommonCryptoLib som SNC-bibliotek.
+    1. Angiv profilparameteren **snc/identity/as** til *p:&lt;den SAP BW-tjenestebruger, du har oprettet&gt;*. Det kan f.eks. være *p:BWtjenestebruger\@MITDOMÆNE.COM*. Bemærk, at *p:* kommer før tjenestebrugerens UPN i modsætning til *p:CN=*, der kommer før UPN, når du bruger CommonCryptoLib som SNC-bibliotek.
 
-    1. Angiv profilparameteren **snc/gssapi\_lib** til *&lt;stien til gx64krb5.dll på BW-serveren&gt;* . Placer biblioteket et sted, som SAP BW-programserveren har adgang til.
+    1. Angiv profilparameteren **snc/gssapi\_lib** til *&lt;stien til gx64krb5.dll på BW-serveren&gt;*. Placer biblioteket et sted, som SAP BW-programserveren har adgang til.
 
     1. Angiv følgende profilparametre, og ret værdierne efter behov, så de passer til dine behov. De sidste fem indstillinger gør det muligt for klienter at oprette forbindelse til SAP BW-serveren ved hjælp af SAP Logon, uden at SNC er konfigureret.
 
@@ -134,7 +134,7 @@ Bekræft, at du kan logge på serveren ved hjælp af SAP Logon via SSO som den A
 
 1. Højreklik på den nye forbindelse, vælg **Egenskaber**, og vælg derefter fanen **Netværk**. 
 
-1. I feltet **SNC-navn** skal du angive *p:&lt;SAP BW-tjenestebrugerens UPN&gt;* . Det kan f.eks. være *p:BWtjenestebruger\@MITDOMÆNE.COM*. Vælg **OK**.
+1. I feltet **SNC-navn** skal du angive *p:&lt;SAP BW-tjenestebrugerens UPN&gt;*. Det kan f.eks. være *p:BWtjenestebruger\@MITDOMÆNE.COM*. Vælg **OK**.
 
     ![Skærmen Egenskaber for systempost](media/service-gateway-sso-kerberos/system-entry-properties.png)
 
@@ -154,7 +154,7 @@ Føj krævede poster i registreringsdatabasen til registreringsdatabasen på den
 
 1. I vinduet til konfiguration af datakilde skal du angive SAP BW-programserverens **værtsnavn**, **systemnummer** og **klient-id**, på samme måde som du ville, når du logger på din SAP BW-server fra Power BI Desktop.
 
-1. I feltet **SNC-partnernavn** skal du indtaste *p:&lt;det SPN, du knyttede til din SAP BW-tjenestebruger&gt;* . Hvis SPN f.eks. er SAP/BWtjenestebruger\@MITDOMÆNE.COM, skal du angive *p:SAP/BWtjenestebruger\@MITDOMÆNE.COM* i feltet **SNC-partnernavn**.
+1. I feltet **SNC-partnernavn** skal du indtaste *p:&lt;det SPN, du knyttede til din SAP BW-tjenestebruger&gt;*. Hvis SPN f.eks. er SAP/BWtjenestebruger\@MITDOMÆNE.COM, skal du angive *p:SAP/BWtjenestebruger\@MITDOMÆNE.COM* i feltet **SNC-partnernavn**.
 
 1. For SNC-biblioteket skal du vælge **SNC\_LIB** eller **SNC\_LIB\_64**. Sørg for, at **SNC\_LIB\_64** på gatewaycomputeren peger på gx64krb5.dll. Alternativt kan du vælge indstillingen **Brugerdefineret** og angive den absolutte sti til gx64krb5.dll på gatewaycomputeren.
 
@@ -200,7 +200,7 @@ Hvis du oplever nogle af følgende problemer, skal du følge disse trin for at f
     
     d. Undersøg indholdet af sporingsfilerne for at fastslå, hvad blokeringsproblemet er. Det kan f.eks. være, at gx64krb5.dll ikke blev indlæst korrekt, eller at en anden Active Directory-bruger end den, du havde forventet, igangsatte SSO-forbindelsesforsøget.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan finde flere oplysninger om datagatewayen i det lokale miljø og DirectQuery i følgende ressourcer:
 

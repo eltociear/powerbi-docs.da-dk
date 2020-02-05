@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 91740d16a91aa8dc1936e8ae1a2812653c45e6a1
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: c342a7472666ee50b7213e7d933ad36da85ce7f6
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73925819"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76975027"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Opret forbindelse til de tjenester, du bruger med Power BI
 Med Power BI kan du oprette forbindelse til mange af de tjenester, du bruger til at køre din virksomhed, f.eks. Salesforce, Microsoft Dynamics CRM og Google Analytics. Power BI starter med at bruge dine legitimationsoplysninger til at oprette forbindelse til tjenesten. Den opretter et *arbejdsområde* i Power BI med et dashboard og et sæt Power BI-rapporter, der automatisk viser dine data og giver visuel indsigt om din virksomhed.
@@ -55,7 +55,7 @@ Hvis du vil have flere oplysninger om, hvordan du opretter forbindelse til beste
 **Tomme felter**  
 Når Power BI opretter forbindelse til tjenesten første gang, kan du evt. se et tomt sæt felter på dashboardet. Hvis du stadig kan se et tomt dashboard efter to timer, er der sandsynligvis ikke oprettet forbindelse. Hvis du ikke får vist en fejlmeddelelse, der indeholder oplysninger om, hvordan du løser problemet, skal du oprette en supportanmodning.
 
-* Vælg ikonet med spørgsmålstegnet ( **?** ) i øverste højre hjørne > **Få hjælp**.
+* Vælg ikonet med spørgsmålstegnet (**?**) i øverste højre hjørne > **Få hjælp**.
   
     ![Få hjælp-ikonet](media/service-connect-to-services/power-bi-service-get-help.png)
 
@@ -67,9 +67,8 @@ Bruger en tjeneste, du vil foreslå til en Power BI-app? Gå til siden [Support 
 
 Hvis du er interesseret i at oprette skabelonprogrammer, som du selv distribuerer, skal du se [Opret et skabelonprogram i Power BI](service-template-apps-create.md). Power BI-partnere kan udarbejde Power BI-programmer med kun lidt eller ingen kode og udrulle dem til Power BI-kunder. 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Distribuer apps til dine kolleger](service-create-distribute-apps.md)
 * [Opret nye arbejdsområder i Power BI](service-create-the-new-workspaces.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

@@ -11,10 +11,10 @@ ms.date: 12/3/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 830fbe945405f8ad7aadd7ceac9fb1967daad22b
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75758100"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Tilpas egenskaberne for x- og y-aksen
@@ -204,7 +204,7 @@ Fordi vi startede med en visualisering med én formateret Y-akse, har Power BI o
 
 Når en visualisering er avanceret, hjælper det at tilføje aksetitler.  Titler hjælper dine kolleger med at forstå, hvad det er, din visualisering viser.
 
-1. Slå **Titel** **Til** for **Y-akse (søjlediagram)** og **Y-akse (kurvediagram)** .
+1. Slå **Titel****Til** for **Y-akse (søjlediagram)** og **Y-akse (kurvediagram)**.
 
 1. Angiv **Typografi** til **Vis kun titel** for begge.
 
@@ -224,7 +224,7 @@ Når en visualisering er avanceret, hjælper det at tilføje aksetitler.  Titler
 
 Du kan finde flere oplysninger under [Tip og tricks til farveformatering i Power BI](service-tips-and-tricks-for-color-formatting.md) og [Tilpas visualiseringernes titler, forklaringer og baggrunde](power-bi-visualization-customize-title-background-and-legend.md). Og søg efter nye opdateringer til formatering af titler, der kommer snart. 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
 

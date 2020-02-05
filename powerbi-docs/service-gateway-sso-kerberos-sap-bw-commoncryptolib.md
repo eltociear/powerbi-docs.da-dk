@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 12/10/2019
 LocalizationGroup: Gateways
 ms.openlocfilehash: 02c8ac991fbf84051ae795ef4a80f2b3dc07a1ce
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75000175"
 ---
 # <a name="use-kerberos-single-sign-on-for-sso-to-sap-bw-using-commoncryptolib-sapcryptodll"></a>Brug enkeltlogon (SSO) i Kerberos til SAP BW ved hjælp af CommonCryptoLib (sapcrypto.dll)
@@ -30,7 +30,7 @@ Denne artikel indeholder en beskrivelse af, hvordan du konfigurerer din SAP BW-d
 
 1. Sørg for, at din BW-server er konfigureret korrekt til SSO i Kerberos ved hjælp af CommonCryptoLib. Hvis det er tilfældet, kan du bruge SSO til at få adgang til BW-serveren (enten direkte eller via en SAP BW-meddelelsesserver) med et SAP-værktøj som SAP GUI, der er konfigureret til at bruge CommonCryptoLib. 
 
-   Du kan finde flere oplysninger om [konfigurationstrin under SAP Single Sign-on: Godkend med Kerberos/SPNEGO](https://blogs.sap.com/2017/07/27/sap-single-sign-on-authenticate-with-kerberosspnego/). Din BW-server skal bruge CommonCryptoLib som SNC-bibliotek og have et SNC-navn, der starter med *CN=* , f.eks. *CN=BW1*. Du kan finde flere oplysninger om krav til SNC-navne (helt konkret parameteren snc/identity/as) under [SNC-parametre til konfiguration af Kerberos](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/360534094511490d91b9589d20abb49a.html).
+   Du kan finde flere oplysninger om [konfigurationstrin under SAP Single Sign-on: Godkend med Kerberos/SPNEGO](https://blogs.sap.com/2017/07/27/sap-single-sign-on-authenticate-with-kerberosspnego/). Din BW-server skal bruge CommonCryptoLib som SNC-bibliotek og have et SNC-navn, der starter med *CN=*, f.eks. *CN=BW1*. Du kan finde flere oplysninger om krav til SNC-navne (helt konkret parameteren snc/identity/as) under [SNC-parametre til konfiguration af Kerberos](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/360534094511490d91b9589d20abb49a.html).
 
 1. Hvis du ikke allerede har gjort det, skal du installere x64-versionen af [SAP.net Connector](https://support.sap.com/en/product/connectors/msnet.html) på den computer, hvor gatewayen er installeret. 
    
@@ -177,7 +177,7 @@ Hvis du ikke kan opdatere rapporten i Power BI-tjenesten, kan du bruge gatewaysp
 
     Du kan finde flere oplysninger om sporing af CommonCryptoLib i [SAP-note 2491573](https://launchpad.support.sap.com/#/notes/2491573) (s-bruger til SAP er påkrævet).
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan finde flere oplysninger om datagatewayen i det lokale miljø og DirectQuery i følgende ressourcer:
 

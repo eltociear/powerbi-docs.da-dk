@@ -11,10 +11,10 @@ ms.date: 11/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 4e5ea5e5fcbffb5c61434ecc26a90d80d1cd1736
-ms.sourcegitcommit: 982ffaa8eb91897f48221a816970671f4a92e6d9
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74415375"
 ---
 # <a name="use-quick-measures-for-common-calculations"></a>Brug hurtigmålinger til almindelige beregninger
@@ -53,7 +53,7 @@ De fem beregningstyper for hurtigmåling med deres beregninger er følgende:
   * Total for måned til dato
   * Ændring år for år
   * Ændring kvartal for kvartal
-  * Månedsvis ændring
+  * Ændring måned for måned
   * Glidende gennemsnit
 * **Totaler**
   * Løbende total

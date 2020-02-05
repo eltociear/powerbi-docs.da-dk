@@ -10,10 +10,10 @@ ms.date: 11/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 08d222f03991bdf605f8e465ff0152d40d07d815
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75761881"
 ---
 # <a name="create-bookmarks-in-power-bi-desktop-to-share-insights-and-build-stories"></a>Opret bogmærker i Power BI Desktop for at dele indsigt og oprette tekstenheder
@@ -102,7 +102,7 @@ Du kan også knytte figurer og billeder til bogmærker. Når du bruger denne fun
 
 Sådan tildeler du et bogmærke til et objekt: 
 
-1. Vælg objektet i rapportlærredet. Derefter skal du slå skyderen **Handling** **til** i ruden **Formatér figur**, der vises.
+1. Vælg objektet i rapportlærredet. Derefter skal du slå skyderen **Handling****til** i ruden **Formatér figur**, der vises.
 
 2. Udvid sektionen **Handling**. Under **Type** skal du vælge **Bogmærke**.
 
@@ -202,7 +202,7 @@ I denne version af bogmærkefunktioner er der nogle få begrænsninger og overve
 * Hvis du tilføjer et visuelt element på en rapportside, når du har oprettet et bogmærke, vises det visuelle element i standardtilstanden. Det vil sige, at hvis du vil tilføje et udsnit på en side, hvor du tidligere har oprettet bogmærker, optræder udsnittet i standardtilstanden.
 * Hvis du flytter rundt på et visuelt element, efter at der er oprettet et bogmærke, afspejles det automatisk i bogmærket. 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Du kan finde flere oplysninger om de funktioner, der ligner eller interagerer med bogmærker, i følgende artikler:
 
 * [Brug detaljeadgang i Power BI Desktop](desktop-drillthrough.md)

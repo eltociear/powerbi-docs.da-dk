@@ -10,10 +10,10 @@ ms.date: 01/16/2020
 ms.author: kfollis
 LocalizationGroup: Administration
 ms.openlocfilehash: 138173d30b9c37c04047c61dbd04cbd3101696aa
-ms.sourcegitcommit: 08f65ea314b547b41b51afef6876e56182190266
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "76753185"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Køb og tildel Power BI Pro-brugerlicenser
@@ -52,7 +52,7 @@ Følg disse trin for at købe Power BI Pro-licenser via Microsoft 365 Administra
 
 6. Vælg **Betal en gang om måneden** eller **Betal for et helt år**, afhængigt af hvordan du vil betale.
 
-7. Angiv det ønskede antal licenser, du vil købe, under **Hvor mange brugere ønsker du?** , og vælg derefter **Gå til kassen** for at gennemføre transaktionen.
+7. Angiv det ønskede antal licenser, du vil købe, under **Hvor mange brugere ønsker du?**, og vælg derefter **Gå til kassen** for at gennemføre transaktionen.
 
 8. Du bekræfter dit køb ved at gå til **Fakturering** > **Produkter og tjenester** og finde **Power BI Pro**.
 
@@ -68,7 +68,7 @@ For gæstebrugere skal du se [Tildel licenser til brugere på siden Licenser](/o
 
 Benyt følgende fremgangsmåde for at tildele Power BI Pro-licenser til individuelle brugerkonti:
 
-1. Log på [Azure Portal](https://portal.azure.com/).
+1. Log på [Azure-portalen](https://portal.azure.com/).
 
 2. Søg efter og vælg **Azure Active Directory**.
 
@@ -78,7 +78,7 @@ Benyt følgende fremgangsmåde for at tildele Power BI Pro-licenser til individu
 
 5. Vælg **+ Tildel** på kommandolinjen. På siden **Tildel licens** skal du først vælge en bruger og derefter vælge **Tildelingsindstillinger** for at aktivere en Power BI Pro-licens for den valgte brugerkonto.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Nu, hvor du har tildelt licenser, kan du få mere at vide om Power BI Pro.
 

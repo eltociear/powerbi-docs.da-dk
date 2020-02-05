@@ -11,10 +11,10 @@ ms.date: 12/17/2019
 ms.author: davidi
 LocalizationGroup: Reports
 ms.openlocfilehash: f72d29e7f5bc7f93abd43f4c14cf0e53ef18f8d3
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75223744"
 ---
 # <a name="analyze-in-excel"></a>Analysér i Excel
@@ -105,7 +105,7 @@ Da brugere får brug for at opdatere datasættet, og opdatering for eksterne for
 ## <a name="troubleshooting"></a>Fejlfinding
 Når du bruger Analysér i Excel, kan du i nogle tilfælde få et uventet resultat, eller funktionen fungerer måske ikke som forventet. [Denne side indeholder løsninger på almindelige problemer, når du bruger Analysér i Excel](desktop-troubleshooting-analyze-in-excel.md)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du vil måske også være interesseret i følgende artikler:
 

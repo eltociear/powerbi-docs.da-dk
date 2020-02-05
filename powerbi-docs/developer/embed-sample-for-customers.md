@@ -10,10 +10,10 @@ ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/12/2019
 ms.openlocfilehash: a07a3e6e1086c463e0f0c8911d7a9b6ce89aa115
-ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "76913653"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Selvstudium: Integrer Power BI-indhold i en app til dine kunder
@@ -184,7 +184,7 @@ Udfyld oplysningerne for **ApplicationSecret** ud fra sektionen **Nøgler** i se
 
 Hvis du vil hente **ApplicationSecret**, skal du følge disse trin:
 
-1. Log på [Azure Portal](https://portal.azure.com).
+1. Log på [Azure-portalen](https://portal.azure.com).
 
 2. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg derefter **Appregistreringer**.
 
@@ -454,7 +454,7 @@ Følg nedenstående trin for at tildele en dedikeret kapacitet til et arbejdsomr
 
     ![arbejdsområde knyttet til en kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 I dette selvstudium har du lært, hvordan du integrerer Power BI-indhold i en app for dine kunder. Du kan også prøve at integrere Power BI-indhold til din organisation.
 

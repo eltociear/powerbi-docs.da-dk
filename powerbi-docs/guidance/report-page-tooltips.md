@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
 ms.openlocfilehash: 826af7b224b901b6dc9f3926260b1d920836a792
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "76040343"
 ---
 # <a name="extend-visuals-with-report-page-tooltips"></a>Udvid visualiseringer med værktøjstip til rapportsider
@@ -81,7 +81,7 @@ Vi anbefaler følgende fremgangsmåder på tidspunktet for oprettelse af rapport
 - **Værktøjstipfiltre:** Tildel filtre til sideværktøjstippet, så du kan få vist et virkelighedstro resultat, når du designer det. Sørg for at fjerne disse filtre, før du publicerer rapporten.
 - **Sidesynlighed:** Skjul altid værktøjstipsider – brugerne bør ikke navigere direkte til dem.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
