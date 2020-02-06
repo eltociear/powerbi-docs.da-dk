@@ -29,7 +29,7 @@ Det er en avanceret indstilling, og den er kun aktiveret, når der oprettes forb
 * Dataene i kolonnen **From** i relationen er aldrig *Null* eller *tomme*
 * For hver værdi i kolonnen **From**, findes der en tilsvarende værdi i kolonnen **To**
 
-I denne kontekst er kolonnen **From***mange*-siden i en *en til mange*-relation, eller det er kolonnen i den første tabel i en *en til en*-relation.
+I denne kontekst er kolonnen **From** *mange*-siden i en *en til mange*-relation, eller det er kolonnen i den første tabel i en *en til en*-relation.
 
 ## <a name="example-of-using-assume-referential-integrity"></a>Eksempel på brug af Antag referentiel integritet
 I følgende eksempel vises, hvordan **Antag referentiel integritet** fungerer, når det bruges i dataforbindelser. I eksemplet oprettes der forbindelse til en datakilde, der indeholder tabellen**Orders**, tabellen **Products** og tabellen **Depots**.
@@ -37,10 +37,10 @@ I følgende eksempel vises, hvordan **Antag referentiel integritet** fungerer, n
 1. På følgende billede, der viser tabellen **Orders** og tabellen **Products**, skal du lægge mærke til, at der findes en referentiel integritet mellem **Orders[ProductID]** og **Products[ProductID]** . Kolonnen **[ProductID]** i tabellen **Orders** er aldrig *Null*, og alle værdier vises også i tabellen **Products**. Derfor skal **Antag referentiel integritet**  angives for at få mere effektive forespørgsler (brug af denne indstilling ændrer ikke de værdier, der vises i visuelle elementer).
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
-2. På næste billede kan du se, at der ikke findes referentiel integritet mellem tabellen **Orders[DepotID]** og **Depots[DepotID]** , fordi **DepotID** er *Null* for nogle *Orders*. Derfor skal **Antag referentiel integritet***ikke* angives.
+2. På næste billede kan du se, at der ikke findes referentiel integritet mellem tabellen **Orders[DepotID]** og **Depots[DepotID]** , fordi **DepotID** er *Null* for nogle *Orders*. Derfor skal **Antag referentiel integritet** *ikke* angives.
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
-3. Endelig findes der ingen referentiel integritet mellem **Orders[CustomerID]** og **Customers[CustID]** i følgende tabeller. **CustomerID** indeholder nogle værdier (i dette tilfælde *CustX*), der ikke findes i tabellen *Customers*. Derfor skal **Antag referentiel integritet***ikke* angives.
+3. Endelig findes der ingen referentiel integritet mellem **Orders[CustomerID]** og **Customers[CustID]** i følgende tabeller. **CustomerID** indeholder nogle værdier (i dette tilfælde *CustX*), der ikke findes i tabellen *Customers*. Derfor skal **Antag referentiel integritet** *ikke* angives.
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_4.png)
 
