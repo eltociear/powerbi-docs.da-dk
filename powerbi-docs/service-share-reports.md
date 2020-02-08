@@ -1,34 +1,49 @@
 ---
-title: To måder at dele en filtreret Power BI-rapport på
-description: Få mere at vide om to måder at filtrere Power BI-rapporter på og dele dem med kolleger i din organisation.
+title: Filtrer og del en Power BI-rapport
+description: Få mere at vide om, hvordan du filtrerer Power BI-rapporter og deler dem med kolleger i din organisation.
 author: maggiesMSFT
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 01/29/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 79f09b5018efcdae88d74ae26f099ff095fb161a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 16041ebc9ba293ab166178e008b12277d94e89c3
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871434"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76894781"
 ---
-# <a name="two-ways-to-share-a-filtered-power-bi-report"></a>To måder at dele en filtreret Power BI-rapport på
-*Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Hvad nu hvis du vil dele en filtreret version af en rapport? Måske en rapport, der kun viser data for en bestemt by eller sælger eller et bestemt år. Prøv at filtrere en rapport og dele den, eller opret en brugerdefineret URL-adresse. Rapporten filtreres, når modtagerne åbner den. De kan fjerne filteret ved at ændre URL-adressen. 
+# <a name="filter-and-share-a-power-bi-report"></a>Filtrer og del en Power BI-rapport
+*Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Hvad nu hvis du vil dele en filtreret version af en rapport? Måske vil du have, at der kun vises data for en bestemt by eller sælger eller et bestemt år, i rapporten. I denne artikel forklares det, hvordan du filtrerer en rapport og deler den filtrerede version af rapporten. En anden måde at dele en filtreret rapport på er at [føje forespørgselsparametre til rapportens URL-adresse](service-url-filters.md). I begge tilfælde filtrers rapporten, når modtagerne åbner den. De kan rydde filtervalgene i rapporten.
 
 ![Filtreret rapport](media/service-share-reports/power-bi-share-filter-pane-report.png)
 
 Med Power BI får du [andre måder at samarbejde om og distribuere dine rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md). Til deling skal du og dine modtagere bruge en [Power BI Pro-licens](service-features-license-type.md), eller indholdet skal være i en [Premium-kapacitet](service-premium-what-is.md). 
 
-## <a name="two-ways-to-filter-a-report"></a>To måder til filtrering af en rapport
+## <a name="follow-along-with-sample-data"></a>Følg med via eksempeldataene
 
-For begge filtreringsteknikker bruger vi appen med skabeloneksemplet Marketing & Sales. Vil du prøve det? Du kan også installere [appen med skabeloneksemplet Marketing & Sales](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview).
+I denne artikel bruges appen med eksempelskabelonen Marketing and Sales. Vil du prøve det? 
 
-### <a name="set-a-filter"></a>Angiv et filter
+1. Installer [appen med eksempelskabelonen Marketing and Sales](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview).
+2. Vælg appen, og vælg **Udforsk app**.
+
+   ![Udforsk eksempeldata](media/service-share-reports/power-bi-sample-explore-data.png)
+
+3. Vælg blyantsikonet for at åbne det arbejdsområde, du installerede sammen med appen.
+
+    ![Appredigeringsblyant](media/service-share-reports/power-bi-edit-pencil-app.png)
+
+4. Vælge **Rapporter** på listen med indhold i arbejdsområdet, og vælg derefter rapporten **PBIX-eksempelfilen Sales and Marketing**.
+
+    ![Åbn eksempelrapporten](media/service-share-reports/power-bi-open-sample-report.png)
+
+    Nu er du klar til at følge med.
+
+## <a name="set-a-filter-in-the-report"></a>Angiv et filter i rapporten
 
 Åbn en rapport i [redigeringsvisning](consumer/end-user-reading-view.md), og anvend et filter.
 
@@ -38,37 +53,30 @@ I dette eksempel filtrerer vi siden YTD Category i skabeloneksemplet Marketing &
 
 Gem rapporten.
 
-### <a name="create-a-filter-in-the-url"></a>Opret et filter i URL-adressen
-
-Når du føjer filteret i slutningen af URL-adressen til rapportsiden, er funktionsmåden lidt anderledes. Den filtrerede side ser ud på samme måde. Power BI føjer dog filteret til hele rapporten og fjerner de andre værdier fra filterruden.  
-
-Tilføj følgende i slutningen af rapportsidens URL-adresse:
-   
-    ?filter=*tablename*/*fieldname* eq *value*
-   
-Feltet skal være af typen number, datetime eller string. Værdierne *tablename* eller *fieldname* må ikke indeholde mellemrum.
-   
-I vores eksempel er navnet på tabellen **Geo**, navnet på feltet er **Region**, og den værdi, vi vil filtrere på, er **Central**:
-   
-    ?filter=Geo/Region eq 'Central'
-
-Din browser tilføjer specialtegn for at repræsentere skråstreger, mellemrum og apostrofer, så du ender med:
-   
-    app.powerbi.com/groups/xxxx/reports/xxxx/ReportSection4d00c3887644123e310e?filter=Geo~2FRegion%20eq%20'Central'
-
-![Rapport med URL-filter](media/service-share-reports/power-bi-share-report-filter-url.png)
-
-Gem rapporten.
-
-Se artiklen [Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen](service-url-filters.md) for at få flere oplysninger.
-
 ## <a name="share-the-filtered-report"></a>Del den filtrerede rapport
 
-1. Når du [deler rapporten](service-share-dashboards.md), skal du fjerne markeringen i afkrydsningsfeltet **Send meddelelse via mail til modtagere**.
+1. Vælg **Del**.
 
-    ![Dialogboksen Deling af rapport](media/service-share-reports/power-bi-share-report-dialog.png)
+   ![Vælg Del](media/service-share-reports/power-bi-share.png)
 
-4. Send linket med det filter, du oprettede tidligere.
+2. Ryd **Send meddelelse via mail til modtagere**, så du kan sende et filtreret link i stedet ved at vælge **Del rapport med aktuelle filtre og udsnitsværktøjer**, og vælg derefter **Del**.
+
+    ![Del rapport med filtre](media/service-share-reports/power-bi-share-with-filters.png)
+
+4. Vælg **Del** igen.
+
+   ![Vælg Del](media/service-share-reports/power-bi-share.png)
+
+5. Vælg fanen **Adgang**, og vælg derefter **Administrer delte rapportvisninger**.
+
+    ![Administrer delte rapportvisninger](media/service-share-reports/power-bi-manage-shared-report-views.png)
+
+6. Højreklik på den ønskede URL-adresse, og vælg **Kopiér link**.
+
+    ![Kopiér filtreret link](media/service-share-reports/power-bi-copy-filtered-link.png)
+
+7. Når du deler dette link, kan modtagerne se din filtrerede rapport. 
+
 
 ## <a name="next-steps"></a>Næste trin
 * [Måder at dele dit arbejde på i Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)

@@ -1,26 +1,26 @@
 ---
 title: URL-adresser til hvidliste for Power BI
-description: I denne artikel beskrives de slutpunkter, der skal være tilgængelige for kunder, der bruger Power BI.
+description: I denne artikel vises URL-slutpunkter og porte, der skal angives på en sikker liste ved oprettelse af forbindelse til Power BI.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/22/2018
+ms.date: 01/29/2020
 ms.custom: seodec18
-ms.openlocfilehash: cd13e36ca7216036a22db332a508e3c825fecf4b
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 48406a8c68237d182960b46de67f91dbd2717922
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698779"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76894654"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>URL-adresser til hvidliste for Power BI
 
 **Power BI-onlinetjenesten**, som også kaldes Power BI SaaS (Software as a Service), kræver forbindelse til internettet. Slutpunkterne nedenfor skulle kunne nås af de kunder, der bruger Power BI-onlinetjenesten.
 
-Hvis du vil bruge Power BI-onlinetjenesten, skal du have adgang til at oprette forbindelse til de slutpunkter, der er markeret med **Krævet** i tabellen nedenfor, og de slutpunkter, som er markeret med **Krævet** på de websteder, der linkes til. Hvis linket til et eksternt websted refererer til en bestemt sektion, skal du kun se slutpunkterne i den sektion.
+Hvis du vil bruge Power BI-onlinetjenesten, skal du kunne oprette forbindelse til de slutpunkter, der er markeret med **Påkrævet** i tabellen nedenfor, og de slutpunkter, som er markeret med **Påkrævet** på de websteder, der linkes til. Hvis linket til et eksternt websted refererer til en bestemt sektion, skal du kun se slutpunkterne i den sektion.
 
 De slutpunker, der er markeret med **Valgfrit**, kan også placeres på en **hvidliste** til bestemte funktioner.
 
@@ -46,11 +46,12 @@ Hvis du vil bruge Power BI, skal du kunne oprette forbindelse til slutpunkterne 
 | Række | Formål | Destination(er) | Port(e) |
 | --- | --- | --- | --- |
 | 1 | **Påkrævet:** Back-end-API'er | *.analysis.windows.net | TCP 443 |
-| 2 | **Påkrævet:** Office 365-integration | Se dokumentationen til Office 365 for at få oplysninger om [Office Online og almindelige URL-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | I/T |
-| 3 | **Påkrævet:** Portal | app.powerbi.com | TCP 443 |
-| 4 | **Påkrævet:** Tjenestetelemetri | dc.services.visualstudio.com | TCP 443 |
-| 5 | **Valgfrit:** Meddelelser til orientering | dynmsg.modpim.com | TCP 443 |
-| 6 | **Valgfrit:** NPS-undersøgelser | nps.onyx.azure.net | TCP 443 |
+| 2 | **Påkrævet:** Back-end-API'er | *.pbidedicated.windows.net | TCP 443 |
+| 3 | **Påkrævet:** Office 365-integration | Se dokumentationen til Office 365 for at få oplysninger om [Office Online og almindelige URL-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | I/T |
+| 4 | **Påkrævet:** Portal | app.powerbi.com | TCP 443 |
+| 5 | **Påkrævet:** Tjenestetelemetri | dc.services.visualstudio.com | TCP 443 |
+| 6 | **Valgfrit:** Meddelelser til orientering | dynmsg.modpim.com | TCP 443 |
+| 7 | **Valgfrit:** NPS-undersøgelser | nps.onyx.azure.net | TCP 443 |
 | | | |
 
 ## <a name="administration"></a>Administration
@@ -64,7 +65,7 @@ Hvis du vil udføre administrative funktioner i Power BI, skal du kunne oprette 
 
 ## <a name="getting-data"></a>Hent data
 
-Hvis du vil hente data fra specifikke datakilder, f.eks. OneDrive, skal du kunne oprette forbindelse til slutpunkterne i tabellen nedenfor. Adgang til yderligere internetdomæner og URL-adresser er muligvis påkrævet til specifikke datakilder i din organisation.
+Hvis du vil hente data fra specifikke datakilder, f.eks. OneDrive, skal du kunne oprette forbindelse til slutpunkterne i tabellen nedenfor. Adgang til yderligere internetdomæner og URL-adresser er muligvis påkrævet for specifikke datakilder i din organisation.
 
 | Række | Formål | Destination(er) | Port(e) |
 | --- | --- | --- | --- |
@@ -77,7 +78,7 @@ Hvis du vil hente data fra specifikke datakilder, f.eks. OneDrive, skal du kunne
 
 ## <a name="dashboard-and-report-integration"></a>Dashboard- og rapportintegration
 
-Power BI afhænger af, at bestemte slutpunkter kan understøtte dine dashboards og rapporter. Du skal kunne oprette forbindelse til slutpunkterne i tabellen og de websteder, der linkes til, nedenfor.
+Power BI er afhængig af, at bestemte slutpunkter understøtter dine dashboards og rapporter. Du skal kunne oprette forbindelse til slutpunkterne i tabellen og de websteder, der linkes til, nedenfor.
 
 | Række | Formål | Destination(er) | Port(e) |
 | --- | --- | --- | --- |
@@ -86,7 +87,7 @@ Power BI afhænger af, at bestemte slutpunkter kan understøtte dine dashboards 
 
 ## <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
 
-Power BI afhænger af, at bestemte slutpunkter kan se og få adgang til brugerdefinerede visualiseringer. Du skal kunne oprette forbindelse til slutpunkterne i tabellen og de websteder, der linkes til, nedenfor.
+Power BI er afhængig af, at bestemte slutpunkter kan se og få adgang til brugerdefinerede visuals. Du skal kunne oprette forbindelse til slutpunkterne i tabellen og de websteder, der linkes til, nedenfor.
 
 | Række | Formål | Destination(er) | Port(e) |
 | --- | --- | --- | --- |
@@ -98,7 +99,7 @@ Power BI afhænger af, at bestemte slutpunkter kan se og få adgang til brugerde
 
 ## <a name="related-external-sites"></a>Relaterede eksterne websteder
 
-Power BI-links til andre relaterede websteder. Disse websteder omfatter dokumentation, support, forslag til nye funktioner og meget mere. Disse websteder påvirker ikke funktionaliteten i Power BI og kan føjes til en hvidliste efter behov.
+Power BI-links til andre relaterede websteder. Disse websteder hoster dokumentation, support, forslag til nye funktioner og meget mere. Adgangen til disse websteder påvirker ikke Power BI's funktionalitet, så whitelisting er valgfrit.
 
 | Række | Formål | Destination(er) | Port(e) |
 | --- | --- | --- | --- |

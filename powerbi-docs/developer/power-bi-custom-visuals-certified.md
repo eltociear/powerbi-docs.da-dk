@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2019
-ms.openlocfilehash: 04954397a16fecddabca63067c903dee742873ef
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: 4ffab3913560498dd57103f0a25c39f7a03a42ec
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75925567"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77026663"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Få en Power BI-visualisering certificeret
 
@@ -45,7 +45,7 @@ Selvom du ikke behøver at dele din kode i GitHub, skal kodelageret være tilgæ
 
 Lageret må kun indeholde kode for en enkelt Power BI-visualisering. Det må ikke indeholde kode for flere Power BI-visualiseringer eller ikke-relateret kode.
 
-Lageret skal indeholde en forgrening ved navn **certificering**. Kildekoden i denne forgrening skal matche den sendte pakke. Denne kode kan kun opdateres under den næste afsendelsesproces, hvis du sender din Power BI-visualisering igen.
+Lageret skal indeholde en forgrening ved navn **certificering** (skal skrives med små bogstaver). Kildekoden i denne forgrening skal matche den sendte pakke. Denne kode kan kun opdateres under den næste afsendelsesproces, hvis du sender din Power BI-visualisering igen.
 
 Hvis din Power BI-visualisering bruger private NPM-pakker eller git-undermoduler, skal du give adgang til de ekstra lagre, der indeholder denne kode.
 
@@ -227,7 +227,7 @@ De certificerede Power BI-visuals er angivet nedenfor. Klik på linket for at å
 
 Du kan finde flere oplysninger om visualiseringer under [Ofte stillede spørgsmål om certificerede visualiseringer](power-bi-custom-visuals-faq.md#certified-power-bi-visuals).
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * [Udvikling af en brugerdefineret visualisering i Power BI](../developer/custom-visual-develop-tutorial.md)
 * [Microsofts afspilningsliste for brugerdefinerede visualiseringer på YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  

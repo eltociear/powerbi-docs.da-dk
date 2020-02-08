@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b1ce8644decb758775c0bbff87df7975a64692a2
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.openlocfilehash: 53940737f71e04fbf5bccd9520a749f6fc559db9
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886107"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889230"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>Overfør SQL Server Reporting Services-rapporter til Power BI
 
@@ -104,6 +104,8 @@ Følgende SSRS-elementtyper kan dog ikke overføres til Power BI:
 
 Hvis dine RDL-rapporter bruger funktioner, [der endnu ikke understøttes af sideinddelte rapporter i Power BI](../paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi), kan du planlægge at udvikle dem igen som [Power BI-rapporter](../consumer/end-user-reports.md). Selvom dine RDL-rapporter kan overføres, anbefaler vi, at du overvejer at modernisere dem som Power BI-rapporter, når det giver mening.
 
+Hvis dine RDL-rapporter skal hente data fra _datakilder i det lokale miljø_, kan de ikke bruge enkeltlogon (SSO). Al datahentning fra disse kilder udføres i øjeblikket ved hjælp af sikkerhedskonteksten for _brugerkontoen for datakildens gateway_. Det er ikke muligt for SQL Server Analysis Services (SSAS) at gennemtvinge sikkerhed på rækkeniveau for hver enkelt bruger.
+
 Sideinddelte rapporter i Power BI er generelt optimeret til **udskrivning** eller **generering af PDF**. Power BI-rapporter er optimeret til **udforskning og interaktivitet**. Du kan få flere oplysninger i [Her skal du bruge sideinddelte rapporter i Power BI](report-paginated-or-power-bi.md).
 
 ### <a name="prepare"></a>Forbered
@@ -116,6 +118,8 @@ Målet med fasen _Forbered_ indebærer, at du bliver klar til det hele. Den dæk
 1. Bliv fortrolig med Power BI-deling, og planlæg, hvordan du distribuerer indhold ved at udgive [Power BI-apps](../service-create-distribute-apps.md).
 1. Overvej at bruge [delte Power BI-datasæt](../service-datasets-build-permissions.md) i stedet for dine SSRS-delte datakilder.
 1. Brug [Power BI Desktop](../desktop-what-is-desktop.md) til at udvikle mobiloptimerede rapporter. Du kan evt. bruge [den brugerdefinerede visualisering til Power KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) i stedet for dine SSRS-mobilrapporter og-KPI'er.
+1. Revaluer brugen af det indbyggede felt **UserID** i dine rapporter. Hvis du bruger **UserID** til at sikre rapportdata, skal du forstå, at brugerens hovednavn (UPN) returneres for sideinddelte rapporter (når de hostes i Power BI-tjenesten). Så i stedet for at returnere NT-kontonavnet, f.eks. _AW\mblythe_, returnerer det indbyggede felt noget i stil med _m.Blythe&commat;adventureworks.com_. Du skal revidere definitionerne for dine datasæt og muligvis kildedataene. Når de er revideret og publiceret, anbefaler vi, at du tester dine rapporter grundigt for at sikre, at datatilladelserne fungerer som forventet.
+1. Revaluer brugen af det indbyggede felt **ExecutionTime** i dine rapporter. Det indbyggede felt returnerer dato/klokkeslæt _i UTC (Coordinated Universal Time)_ for sideinddelte rapporter (når de hostes i Power BI-tjenesten). Det kan påvirke standardværdierne for rapportparameteren og rapportere mærkater for udførelsestid (typisk føjet til rapport sidefødder).
 1. Sørg for, at dine rapportforfattere har [Power BI Report Builder](../report-builder-power-bi.md) installeret, og at de senere udgaver nemt kan distribueres i hele organisationen.
 
 ## <a name="migration-stage"></a>Overførselsstadie

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cfde935b2cec6e86b56b4f70865ff2d02b5ce27a
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 90721b059958e59cfd74f9ba1d0d25617a7438e6
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75759193"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889276"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Brug DirectQuery i Power BI Desktop
 Når du opretter forbindelse til din datakilde i *Power BI Desktop*, er det altid muligt at importere en kopi af dataene til Power BI Desktop. For nogle datakilder findes der en anden mulighed: Du kan oprette direkte forbindelse til datakilden med DirectQuery.
@@ -55,9 +55,9 @@ Der er i øjeblikket nogle få begrænsninger ved at bruge DirectQuery:
 
 - Der er pålagt begrænsninger på de DAX-udtryk, der er tilladt i målinger, for at sikre, at de forespørgsler, der sendes til den underliggende datakilde, har en acceptabel ydeevne.
 
-- Der er en grænse på én million rækker for returnering af data, når du bruger DirectQuery. Denne grænse påvirker ikke de sammenlægninger eller beregninger, der bruges til at oprette det datasæt, der returneres ved hjælp af DirectQuery. Det påvirker kun de returnerede rækker.
+- Der er en grænse på én million rækker for returnering af data, når du bruger DirectQuery, medmindre du bruger en Premium-kapacitet. Denne grænse påvirker ikke de sammenlægninger eller beregninger, der bruges til at oprette det datasæt, der returneres ved hjælp af DirectQuery. Det påvirker kun de returnerede rækker. Premium-kapaciteter kan angive maksimale grænser for rækker, som beskrevet i [dette indlæg](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/). 
 
-    Du kan f.eks. samle 10 mio. rækker med din forespørgsel, der kører på datakilden. Forespørgslen returnerer præcist resultaterne af denne sammenlægning til Power BI ved hjælp af DirectQuery, hvis de returnerede Power BI-data er mindre end 1 mio. rækker. Hvis der ville blive returneret over 1 million rækker fra DirectQuery, vil Power BI returnere en fejl.
+    Du kan f.eks. samle 10 mio. rækker med din forespørgsel, der kører på datakilden. Forespørgslen returnerer præcist resultaterne af denne sammenlægning til Power BI ved hjælp af DirectQuery, hvis de returnerede Power BI-data er mindre end 1 mio. rækker. Hvis der returneres mere end 1 millioner rækker fra DirectQuery, returnerer Power BI en fejl (medmindre det er en Premium-kapacitet, og rækkeantallet er under den grænse, som administratoren har angivet).
 
 ## <a name="important-considerations-when-using-directquery"></a>Vigtige overvejelser i forbindelse med brugen af DirectQuery
 Der skal tages højde for følgende tre punkter, når der bruges DirectQuery:

@@ -11,10 +11,10 @@ ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
 ms.openlocfilehash: ef8e874c1f1a47d65845b87dccd441746651a68b
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74999784"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Opret forbindelse til Microsoft Graph Security API i Power BI Desktop
@@ -48,7 +48,7 @@ Følg disse trin for at bruge connectoren:
 
 1. Vælg **Hent data** > **Mere** på båndet **Hjem** i Power BI Desktop.
 2. Vælg **Onlinetjenester** fra listen over kategorier i venstre side af vinduet.
-3. Vælg **Microsoft Graph Security (beta)** .
+3. Vælg **Microsoft Graph Security (beta)**.
 
     ![Dialogboksen Hent data](media/desktop-connect-graph-security/GetData.PNG)
     
@@ -74,7 +74,7 @@ Følg disse trin for at bruge connectoren:
     
 9. Hvis du vil foretage en avanceret forespørgsel i Microsoft Graph Security API, skal du vælge **Angiv brugerdefineret URL-adresse til Microsoft Graph Security for at filtrere resultaterne**. Brug denne funktion til at foretage en [OData.Feed](https://docs.microsoft.com/power-bi/desktop-connect-odata)-forespørgsel til Microsoft Graph Security API med de påkrævede tilladelser.
 
-   Følgende eksempel bruger `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'` *serviceUri*. I [Indstillinger for forespørgsler til OData-systemet](https://docs.microsoft.com/graph/query-parameters) kan du se, hvordan du skaber forespørgsler for at filtrere, anmode om eller hente de seneste resultater.
+   I følgende eksempel bruges `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'` *serviceUri*. I [Indstillinger for forespørgsler til OData-systemet](https://docs.microsoft.com/graph/query-parameters) kan du se, hvordan du skaber forespørgsler for at filtrere, anmode om eller hente de seneste resultater.
 
    ![OdataFeed-eksempel](media/desktop-connect-graph-security/ODataFeed.PNG)
     
@@ -87,7 +87,7 @@ Her er resultaterne for de Microsoft Graph Security-objekter, vi sendte forespø
 
 Nu er du klar til at bruge de importerede data fra Microsoft Graph Security-connector i Power BI Desktop. Du kan oprette grafik eller rapporter. Eller du kan interagere med andre data, du importerer fra Excel-projektmapper, databaser eller andre datakilder.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * Se Power BI-eksempler og -skabeloner, som bruger denne connector under [GitHub Power BI-eksempler til Microsoft Graph Security](https://aka.ms/graphsecuritypowerbiconnectorsamples).
 
 * I [dette blogindlæg om Power BI-connectorer til Microsoft Graph Security](https://aka.ms/graphsecuritypowerbiconnectorblogpost) kan du se brugerscenarier og yderligere oplysninger.

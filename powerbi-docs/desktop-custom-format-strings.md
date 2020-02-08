@@ -10,10 +10,10 @@ ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 3ec372a51177e5979cdfbca8408e11801aefb414
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74791588"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Brug brugerdefinerede formatstrenge i Power BI Desktop
@@ -143,12 +143,12 @@ I følgende tabel identificeres de tegn, du kan bruge til at oprette **brugerdef
 | ( **:** ) | Klokkeslætsseparator. For nogle landestandarder kan der bruges andre tegn til at repræsentere klokkeslætsseparatoren. Klokkeslætsseparatoren adskiller timer, minutter og sekunder, når klokkeslætsværdier formateres. Det faktiske tegn, der bruges som klokkeslætsseparator i formateret output, bestemmes af systemindstillingerne. |
 | ( **/** ) | Datoseparator. For nogle landestandarder kan der bruges andre tegn til at repræsentere datoseparatoren. Datoseparatoren adskiller dag, måned og år, når datoværdierne formateres. Det faktiske tegn, der bruges som datoseparator i formateret output, bestemmes af systemindstillingerne. |
 | (**E- E+ e- e+** ) | Videnskabeligt format. Hvis formatudtrykket indeholder mindst én cifferpladsholder (**0** eller **#** ) til højre for E-, E+, e- eller e+, vises tallet i videnskabeligt format, og E eller e indsættes mellem tallet og dets eksponent. Antallet af cifferpladsholdere til højre bestemmer antallet af cifre i eksponenten. Brug E- eller e- til at placere et minustegn ved siden af negative eksponenter. Brug E+ eller e+ til at placere et minustegn ved siden af negative eksponenter og et plustegn ved siden af positive eksponenter. |
-| **- + $** ( ) | Viser et bogstaveligt tegn. Hvis du vil have vist et tegn, som ikke er angivet, skal du foranstille det med en omvendt skråstreg (\) eller omslutte det med dobbelte citationstegn (&quot; &quot;). |
+| **- + $** ( ) | Viser et bogstaveligt tegn. Hvis du vil have vist et tegn, som ikke er angivet, skal du placere en omvendt skråstreg (\)) foran tegnet eller sætte det i dobbelte citationstegn (&quot; &quot;). |
 | (* *\** ) | Viser det næste tegn i formatstrengen. Foranstil det med en omvendt skråstreg for at vise et tegn, der har en særlig betydning som et bogstaveligt tegn (\). Selve den omvendte skråstreg vises ikke. Brug af en omvendt skråstreg er det samme som at omslutte det næste tegn med dobbelte citationstegn. Hvis du vil have vist en omvendt skråstreg, skal du bruge to omvendte skråstreger (\\). Eksempler på tegn, der ikke kan vises som bogstavelige tegn er tegn til dato- og klokkeslætsformatering (a, c, d, h, m, n, p, q, s, t, w, / og :), numeriske formateringstegn (#, 0, %, E, e, komma og punktum) og tegn til strengformatering (@, &amp;, \&lt;, \&gt;, og !). |
-| (&quot;ABC&quot;) | Viser strengen inde i dobbelte citationstegn (&quot; &quot;). |
+| (&quot;ABC&quot;) | Viser strengen i dobbelte citationstegn (&quot; &quot;). |
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Du vil måske også være interesseret i følgende artikler:
 
 * [VBA-formatstrenge](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)

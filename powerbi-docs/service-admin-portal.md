@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: de745777a5ad6da1149328d9df92be9ecccfc181
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.openlocfilehash: c59f1c1653e3b1a506f342bffed6fa539dfe58b3
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885293"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76819577"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -203,11 +203,24 @@ På følgende billede ses den meddelelse, som vises, når du deler med en ekster
 
 ### <a name="publish-to-web"></a>Publicer på internettet
 
-Brugere i virksomheden kan publicere rapporter på internettet. [Få mere at vide](service-publish-to-web.md)
+Brugere i virksomheden kan publicere rapporter på internettet. [Få mere at vide](service-publish-to-web.md). Det gør rapporten og de data, den indeholder, tilgængelige for alle på internettet.
+
+> [!NOTE]
+> En Power BI-administrator skal tillade oprettelse af nye integreringskoder for publicering på internettet. Organisationer kan have eksisterende integreringskoder. Gennemse de aktuelt udgivne rapporter på siden [Integreringskoder](service-admin-portal.md#embed-codes).
 
 På følgende billede ses menuen **Filer** for en rapport, når indstillingen **Publicer på internettet** er aktiveret.
 
-![Indstillingen Publicer på internettet](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+![Publicer på internettet i menuen Filer](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+
+Indstillingen **Publicer på internettet** giver mulighed for at angive, hvilke brugere der kan oprette integreringskoder.
+
+![Indstillingen Publicer på internettet](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
+
+
+Brugerne bliver bedt om at kontakte Power BI-administratoren, så de kan få tilladelse til at oprette en integreringskode, når indstillingen **Vælg, hvordan integreringskoder fungerer** er angivet til **Tillad kun eksisterende integreringskoder** , og indstillingen **Publicer på internettet** er angivet til **Aktiveret**.
+
+![Prompten Publicer på internettet](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
 
 Brugere kan se forskellige indstillinger på brugergrænsefladen afhængigt af indstillingen **Publicer på internettet**.
 
@@ -449,7 +462,7 @@ Du kan finde flere oplysninger om, hvordan du administrerer indstillinger for Po
 
 ## <a name="embed-codes"></a>Integrer koder
 
-Som administrator kan du få vist integreringskoder, der er genereret for din lejer. Du kan også tilbagekalde eller slette koder. [Få mere at vide](service-publish-to-web.md)
+Som administrator kan du få vist de integreringskoder, der er genereret for din lejer med henblik på offentlig deling af rapporter. Du kan også tilbagekalde eller slette koder. [Få mere at vide](service-publish-to-web.md)
 
 ![Integrer koder i Power BI-administrationsportalen](media/service-admin-portal/embed-codes.png)
 

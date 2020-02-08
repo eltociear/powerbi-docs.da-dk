@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a10de05fed8a77a165797dda7155ffb81bbad815
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 25ed90dba0c164a44d691f8247023f2ff7e0a67f
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75759991"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913525"
 ---
 # <a name="create-report-templates-for-power-bi-desktop"></a>Opret rapportskabeloner til Power BI Desktop
 
@@ -32,7 +32,7 @@ Power BI-rapportskabeloner indeholder følgende oplysninger fra den rapport, de 
 
 Rapportens data er *ikke* inkluderet i skabelonerne. 
 
-Rapportskabeloner bruger filtypenavnet PBIT (Power BI Desktop-rapporter bruger filtypenavnet PBIX). 
+Rapportskabeloner bruger filtypenavnet .PBIT (mens Power BI Desktop-rapporter bruger filtypenavnet .PBIX). 
 
 Du opretter en rapportskabelon ved at vælge **Fil > Ekportér > Power BI-skabelon** i menuen, hvilket åbner følgende vindue, hvor du bliver bedt om at give en beskrivelse af skabelonen. I dette eksempel er vores beskrivelse af skabelonen *Skabelon for månedlig salgsrapport.*
 

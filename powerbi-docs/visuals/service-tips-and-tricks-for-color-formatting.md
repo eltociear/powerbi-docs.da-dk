@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 006288cd380a56ba57697ed285b04b38985b69db
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 0b633f2482c5b9f1624f39e4f2c0e07afc55353f
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831566"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76894958"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tip og tricks til farveformatering i Power BI
 Power BI indeholder mange forskellige måder at tilpasse dine dashboards og rapporter på. Denne artikel indeholder en samling af tip, som kan gøre dine Power BI-visualiseringer mere overbevisende, interessante og tilpasset efter dine behov.
@@ -23,13 +23,15 @@ Der findes følgende tip. Har du et andet fantastiske tip? Fantastisk! Send det 
 
 * Anvend et tema på hele rapporten
 * Skift farve på et enkelt datapunkt
+* Betinget formatering
 * Basér farverne i et diagram på en numerisk værdi
 * Basér farven på datapunkter på en feltværdi
 * Tilpas farver, der bruges i farveskalaen
 * Brug divergerende farveskalaer
+* Føj farve til tabelrækker
 * Sådan fortryder du i Power BI
 
-Hvis du vil foretage ændringer, skal du redigere en rapport. Åbn rapporten, og vælg **Rediger rapport** på menulinjen som vist på følgende billede.
+Hvis du vil foretage ændringer, skal du have redigeringstilladelser til rapporten. Åbn rapporten i **Rapportvisning** i Power BI Desktop. I Power BI-tjenesten betyder det, at du skal åbne rapporten og vælge **Rediger** på menulinjen, som vist på følgende billede.
 
 ![her finder du menuen Rediger](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-report.png)
 
@@ -47,7 +49,7 @@ Her har vi anvendt temaet **Innovativt** på rapporten Salg og marketing.
 ![Anvendelse af temaet Innovativt](media/service-tips-and-tricks-for-color-formatting/power-bi-theme-innovate.png)
 
 ## <a name="change-the-color-of-a-single-data-point"></a>Skift farve på et enkelt datapunkt
-Nogle gange kan du få brug for at fremhæve ét bestemt datapunkt. Måske er det salgstal for lanceringen af et nyt produkt eller højere kvalitetsbedømmelser efter lancering af et nyt program. Med Power BI kan du fremhæve et bestemt datapunkt ved at ændre dets farve.
+Nogle gange kan du få brug for at fremhæve ét bestemt datapunkt. Måske er det et salgstal for lanceringen af et nyt produkt eller højere kvalitetsbedømmelser efter lancering af et nyt program. Med Power BI kan du fremhæve et bestemt datapunkt ved at ændre dets farve.
 
 Følgende visualisering rangordner solgte enheder efter produktsegment. 
 
@@ -55,7 +57,7 @@ Følgende visualisering rangordner solgte enheder efter produktsegment.
 
 Forestil dig nu, at du vil fremhæve segmentet **Convenience** for at vise, hvor godt dette nye segment præsterer, ved hjælp af farve. Her er trinnene:
 
-Udvid afsnittet **Datafarver**, og slå skyderen til for **Vis alle**. Farverne vises nu for hvert dataelement i visualiseringen. Rediger et hvilket som helst datapunkt.
+Udvid kortet **Datafarver**, og slå skyderen Til for **Vis alle**. Farverne vises nu for hvert dataelement i visualiseringen. Du kan nu redigere et hvilket som helst datapunkt.
 
 ![](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
 
@@ -71,7 +73,7 @@ Du kan ændre farven på et datapunkt for én, flere eller alle dataelementer i 
 
 ![liggende søjlediagram i grønne, gule og blå farver](media/service-tips-and-tricks-for-color-formatting/power-bi-corporate.png)
 
-Der er forskellige ting, du kan gøre med farver. I det næste afsnit kigger vi på farveforløb.
+Der er forskellige ting, du kan gøre med farver. I det næste afsnit kigger vi på betinget formatering.
 
 ## <a name="conditional-formatting-for-visualizations"></a>Betinget formatering af visualiseringer
 Visualiseringer drager ofte fordel af en dynamisk farveindstilling baseret på den numeriske værdi i et felt. Ved at gøre dette kan du få vist en anden værdi end normalt for størrelsen på en søjle og få vist to værdier på en enkelt graf. Eller du kan bruge det til at fremhæve datapunkter over (eller under) en bestemt værdi – måske fremhæve områder med lav rentabilitet.
@@ -79,7 +81,7 @@ Visualiseringer drager ofte fordel af en dynamisk farveindstilling baseret på d
 Følgende afsnit viser forskellige metoder til at basere farve på en numerisk værdi.
 
 ### <a name="base-the-color-of-data-points-on-a-value"></a>Basér farven på datapunkter på en værdi
-Hvis du vil ændre farven på basis af en værdi, skal du vælge en visualisering for at aktivere den. Åbn ruden Formatering ved at vælge ikonet med malerullen og udvide kortet **Datafarver**. Hold markøren over kortet, klik på de tre lodrette prikker, der vises, og vælg **Betinget formatering**.  
+Hvis du vil ændre farven på basis af en værdi, skal du vælge en visualisering for at aktivere den. Åbn ruden Formatering ved at vælge ikonet med malerullen, og åbn derefter kortet **Datafarver**. Hold markøren over kortet, klik på de tre lodrette prikker, der vises, og vælg **Betinget formatering**.  
 
 ![vælg indstillingen Betinget formatering ved at klikke på de tre lodrette prikker](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting.gif)
 
@@ -103,9 +105,9 @@ Læg mærke til på dette første billede, hvordan søjlerne i diagrammet afspej
 
 ![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional4.png)
 
-Lad os nu se, hvad sker der, hvis vi angiver numeriske værdier i værdifelterne **Minimum** og **Maksimum**. Vælg **Tal** på rullelisterne for både **Minimum** og **Maksimum**, angiv **Minimum** til 3.500, og angiv **Maksimum** til 6.000.
+Lad os nu se, hvad sker der, hvis vi angiver numeriske værdier i værdifelterne **Minimum** og **Maksimum**. Vælg **Brugerdefineret** på rullelisterne for både **Minimum** og **Maksimum**, angiv **Minimum** til 3.500, og angiv **Maksimum** til 6.000.
 
-![Formatér betinget efter tal](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting-number.png)
+![Formatér betinget efter tal](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting-numbers.png)
 
 Ved at angive disse værdier anvendes farveforløb ikke længere på værdierne i diagrammet, der er under **Minimum** eller over **Maksimum**. En søjle med en værdi over værdien **Maksimum** har farven grøn, og en søjle med en værdi under værdien **Minimum** har farven rød.
 
@@ -116,22 +118,36 @@ Dine data kan nogle gange have en naturligt divergerende skala. Et tempereret om
 
 Hvis du vil bruge divergerende farveskalaer, skal du markere afkrydsningsfeltet for **Divergerende**. Når **Divergerende** er slået til, vises en yderligere farvevælger, der kaldes **Centrum**, som vist på følgende billede.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging2.png)
+![Dialogboksen Standardfarve med Farveskala valgt](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging-colors.png)
 
 Når skyderen **Divergerende** er slået til, kan du angive farverne for **Minimum**, **Maksimum** og **Centrum** separat. På det følgende billede er **Centrum** indstillet til .2 for **Procentvis markedsandel SPLY ÅTD**, hvorfor søjler med værdier over .2 er en gradueret nuance af grøn, og søjler under en er nuancer af rød.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging.png)
+![søjlediagram med røde og grønne søjler](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging.png)
+
+## <a name="add-color-to-table-rows"></a>Føj farve til tabelrækker
+Tabeller og matrixer indeholder mange muligheder for farveformatering. 
+
+![standardtabel](media/service-tips-and-tricks-for-color-formatting/power-bi-table.png)
+
+En af de hurtigste måder at anvende farver på i en tabel eller matrix er at åbne fanen Formatering og vælge **Typografi**.  På billedet nedenfor har vi valgt **Overskrift med fed skrift og blinkende rækker**.
+
+![standardtabel](media/service-tips-and-tricks-for-color-formatting/power-bi-table-style.png)
+
+Eksperimentér med andre indstillinger for farveformatering. På dette billede har vi ændret baggrundsfarven under **Kolonneoverskrifter** og ændret både **baggrundsfarven** og **den alternative baggrundsfarve** for **Værdier** (rækker).
+
+![standardtabel](media/service-tips-and-tricks-for-color-formatting/power-bi-table-rows.png)
 
 ## <a name="how-to-undo-in-power-bi"></a>Sådan fortryder du i Power BI
 Som mange andre Microsoft-tjenester og -software giver Power BI en nem måde at fortryde den seneste kommando på. Lad os for eksempel antage, at du ændrer farven på et datapunkt eller en serie af datapunkter, og du ikke kan lide farven, når den vises i visualiseringen. Du kan ikke huske præcis, hvilken farve det havde før, men du ved, du vil farven tilbage!
 
 Hvis du vil **fortryde** din sidste handling, eller de sidste par handlinger, skal du blot trykke på CTRL+Z.
 
+Hvis du vil kassere alle de ændringer, du har foretaget på kortet Formatering, skal du vælge **Gendan standardindstillingerne**.
+
+![Kortet Formatering med Gendan standardindstillingerne vist nederst](media/service-tips-and-tricks-for-color-formatting/power-bi-revert.png)
+
 ## <a name="feedback"></a>Feedback
 Har du et tip, du vil dele? Send det til os, og vi finder ud af, om det skal medtages her.
-
->[!NOTE]
->Disse farve-, akse- og relaterede tilpasninger, der er tilgængelige, når ikonet **Formatér** er valgt, er også tilgængelige i Power BI Desktop.
 
 ## <a name="next-steps"></a>Næste trin
 [Introduktion til farveformatering og akseegenskaber](service-getting-started-with-color-formatting-and-axis-properties.md)

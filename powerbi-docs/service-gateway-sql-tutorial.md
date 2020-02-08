@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: 100417202fca148be0e2e976ce0cd84167c803d9
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74958424"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Opdater data fra en lokal SQL Server-database
@@ -44,9 +44,9 @@ I dette selvstudium kan du udføre følgende trin:
 
 Benyt følgende procedure til at oprette en grundlæggende Power BI-rapport ved hjælp af AdventureWorksDW-eksempeldatabasen. Udgiv rapporten til Power BI-tjenesten, så du får et datasæt i Power BI, som du derefter kan konfigurere og opdatere i de efterfølgende trin.
 
-1. I Power BI Desktop på fanen **Startside** skal du vælge **Hent data** \> **SQL Server**.
+1. I Power BI Desktop på fanen **Start** skal du vælge **Hent data** \> **SQL Server**.
 
-2. I dialogboksen **SQL Server-database** skal du angive navnet på din **Server** og **Database (valgfrit)** . Sørg for, at **Dataforbindelsestilstand** er **Import**, og vælg derefter **OK**.
+2. I dialogboksen **SQL Server-database** skal du angive navnet på din **Server** og **Database (valgfrit)**. Sørg for, at **Dataforbindelsestilstand** er **Import**, og vælg derefter **OK**.
 
     ![SQL Server-database](./media/service-gateway-sql-tutorial/sql-server-database.png)
 
@@ -85,7 +85,7 @@ Benyt følgende procedure til at oprette en grundlæggende Power BI-rapport ved 
 
 6. Gem rapporten med navnet "AdventureWorksProducts.pbix".
 
-7. På fanen **Startside** skal du vælge **Publicer** \> **Mit arbejdsområde** \> **Vælg**. Log på Power BI-tjenesten, hvis du bliver bedt om det.
+7. På fanen **Start** skal du vælge **Publicer** \> **Mit arbejdsområde** \> **Vælg**. Log på Power BI-tjenesten, hvis du bliver bedt om det.
 
 8. På skærmen **Udført** skal du vælge **Åbn 'AdventureWorksProducts.pbix' i Power BI**.
 
@@ -134,7 +134,7 @@ Du har oprettet forbindelse direkte til din lokale SQL Server-database i Power B
 
 Nu, hvor du har forbundet dit datasæt i Power BI til din SQL Server-database i det lokale miljø via en datagateway, skal du følge disse trin for at konfigurere en tidsplan for opdatering. Opdatering af datasættet efter en tidsplan hjælper med at sikre, at dine rapporter og dashboards indeholder de nyeste data.
 
-1. I navigationsruden til venstre skal du vælge **Mit arbejdsområde** \> **Datasæt**. Vælg ellipsen ( **. . .** ) for datasættet **AdventureWorksProducts**, og vælg derefter **Planlæg opdatering**.
+1. I navigationsruden til venstre skal du vælge **Mit arbejdsområde** \> **Datasæt**. Vælg ellipsen (**. . .**) for datasættet **AdventureWorksProducts**, og vælg derefter **Planlæg opdatering**.
 
     > [!NOTE]
     > Sørg for at vælge ellipsen for datasættet **AdventureWorksProducts** og ikke ellipsen for rapporten med det samme navn. Genvejsmenuen for rapporten **AdventureWorksProducts** indeholder ikke indstillingen **Planlæg opdatering**.
@@ -168,7 +168,7 @@ Følg nu disse trin, så de opdaterede data kan bevæge sig gennem gatewayforbin
 
 1. Vælg og udvid **Mit arbejdsområde** i navigationsruden i Power BI-tjenesten.
 
-2. Under **Datasæt** skal du vælge ellipsen ( **. . .** ) for datasættet **AdventureWorksProducts** og derefter vælge **Opdater nu**.
+2. Under **Datasæt** skal du vælge ellipsen (**. . .**) for datasættet **AdventureWorksProducts** og derefter vælge **Opdater nu**.
 
     ![Opdater nu](./media/service-gateway-sql-tutorial/refresh-now.png)
 
@@ -201,7 +201,7 @@ Det er en god idé at kontrollere resultaterne af tidligere opdateringscyklusser
 
 Hvis du ikke længere vil bruge eksempeldataene, kan du slippe databasen i SSMS (SQL Server Management Studio). Hvis du ikke vil bruge SQL Server-datakilden, kan du fjerne datakilden fra din datagateway. Overvej også at fjerne datagatewayen, hvis du kun har installeret den med henblik på at udføre dette selvstudium. Du bør også slette AdventureWorksProducts-datasættet og AdventureWorksProducts-rapporten, som Power BI oprettede, da du uploadede filen AdventureWorksProducts.pbix.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 I dette selvstudium har du undersøgt, hvordan du importerer data fra en lokal SQL Server-database til et Power BI-datasæt, og hvordan du opdaterer dette datasæt efter en planlagt tidsplan og efter behov, så du kan holde rapporter og dashboards, der bruger datasættet, opdateret i Power BI. Nu kan du lære mere om at administrere datagateways og datakilder i Power BI. Det kan også være en god idé at læse den konceptuelle artikel om Opdatering af data i Power BI.
 

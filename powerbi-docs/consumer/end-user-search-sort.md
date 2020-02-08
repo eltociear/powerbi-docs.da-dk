@@ -1,66 +1,57 @@
 ---
-title: Søg i og sortér dit indhold i Power BI-tjenesten
-description: dokumentation til søgning efter og sortering af indhold i Power BI Mit arbejdsområde
+title: Søg efter og find indhold
+description: dokumentation til søgning efter og navigation i indhold i Power BI-tjenesten
 author: mihart
 ms.reviewer: willt
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 01/27/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a7848cb5931d983ab434a19c934c9e9cb464724
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64570b23700e125e9040f493630317c0c6350d0e
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861747"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889070"
 ---
-# <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigation: Søg i, find og sortér dit indhold i Power BI-tjenesten
+# <a name="navigation-for-power-bi-consumers-sorting-content"></a>Navigation for Power BI-forbrugere: sortering af indhold
+
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Der er mange forskellige måder at navigere rundt i dit indhold i Power BI-tjenesten på. Indholdet organiseres i dit arbejdsområde efter type: dashboards og rapporter.  Indholdet er også sorteret efter forbrug: Favoritter, seneste, apps, delt med mig og udvalgt. På Power BI *Start* organiseres indhold på én og samme side for at sikre samlet navigation. Med disse forskellige stier til dit indhold kan du hurtigt finde det, du søger, i Power BI-tjenesten.  
 
-## <a name="navigation-within-workspaces"></a>Navigation i arbejdsområder
+Når du er ny bruger af Power BI-tjenesten, har du kun lidt indhold (dashboards, rapporter og apps). Men når kollegaer begynder at dele indhold med dig, og du begynder at downloade apps, kan du få en lang liste med indhold. Det er i den situation, at søgning og sortering er meget praktisk.
 
-Power BI-*forbrugere* har typisk kun ét arbejdsområde: **Mit arbejdsområde**. Der er kun indhold på **Mit arbejdsområde**, hvis du har downloadet Microsoft-eksempler eller oprettet eller downloadet dine egne dashboards, rapporter eller apps.  
+## <a name="searching-for-content"></a>Søgning efter indhold
+ Søgefunktionen er tilgængelig næsten overalt i Power BI-tjenesten. Kig blot efter søgefeltet eller søgeikonet ![forstørrelsesglasikon](./media/end-user-search-sort/power-bi-search-icon.png).
 
-I **Mit arbejdsområde** opdeler Power BI-tjenesten indholdet efter type: dashboards, rapporter, projektmapper og datasæt. Når du vælger et arbejdsområde, får du vist denne opdeling. I dette eksempel indeholder **Mit arbejdsområde** ét dashboard, én rapport, ingen projektmappe og ét datasæt.
+ I søgefeltet skal du skrive hele eller en del af navnet på et dashboard, en rapport, en projektmappe, en app eller en ejer. Power BI søger i hele dit indhold. 
 
-![video](./media/end-user-search-sort/myworkspace/myworkspace.gif)
+ ![søg efter en rapport](./media/end-user-search-sort/power-bi-search-field.png) 
 
-________________________________________
-## <a name="navigation-using-the-search-field"></a>Navigation ved hjælp af søgefeltet
-Brug indholdsoversigten **Mit arbejdsområde** til at søge efter, filtrere og sortere dit indhold. I søgefeltet skal du skrive hele eller en del af navnet på et dashboard, en rapport, en projektmappe eller en ejer.  
+ I nogle områder af Power BI, f. eks. arbejdsområder, kan du finde to forskellige søgefelter. Søgefeltet på menulinjen søger i hele dit indhold, mens søgefeltet på lærredet for arbejdsområdet kun søger i det pågældende arbejdsområde.
 
-Hvis du kun har begrænset indhold, er det ikke nødvendigt at søge og sortere.  Men når du har lange lister over dashboards og rapporter, er det meget nyttigt at kunne søge og sortere. Rapportlisten nedenfor indeholder f.eks. 83 elementer. 
+ ![søg i et arbejdsområde](./media/end-user-search-sort/power-bi-search-fields.png) 
 
-![søg efter en rapport](./media/end-user-experience/power-bi-search.png)
+## <a name="sorting-content-lists"></a>Sortering af indholdslister
 
-Du kan også sortere indholdet efter navn eller ejer. Læg mærke til pil op til højre for **Navn**. Vi sorterer i øjeblikket 83 emner alfabetisk efter navn i stigende rækkefølge. Hvis du vil ændre sorteringsrækkefølgen til faldende, skal du vælge **Navn**. Pil op ændres til en pil ned.
+Hvis du kun har begrænset indhold, er det muligvis ikke nødvendigt at sortere.  Men når du har lange lister over dashboards og rapporter, kan du bruge sortering til at finde det, du har brug for. Denne **Delt med mig**-indholdsliste omfatter f.eks. 63 punkter. 
 
-![sortér indhold](./media/end-user-experience/power-bi-sort-new.png)
+![delt med mig-indholdsliste](./media/end-user-search-sort/power-bi-long-lists.png)
+
+I øjeblikket er indholdslisten sorteret efter dato, fra nyeste til ældste. Hvis du vil ændre sorteringskriterierne, skal du vælge pilen til højre for **Dato (nyeste)** .
+
+![Rullemenuen Sortér](./media/end-user-search-sort/power-bi-sort-date.png)
+
+
+Sortering er også tilgængelig i arbejdsområder. I dette eksempel sorteres indholdet efter datoen for **Opdateret**. Hvis du vil angive sorteringskriterier for arbejdsområder, skal du vælge kolonneoverskrifter, vælge dem én gang for at markere overskriften og vælge igen for at ændre sorteringsretningen. 
+
+![søg efter en rapport](./media/end-user-search-sort/power-bi-workspace-sort.png)
 
 Ikke alle kolonner kan sorteres. Hold over kolonneoverskrifterne for at finde ud af, hvilke der kan sorteres.
-
-___________________________________________________________________
-## <a name="navigation-using-the-nav-pane"></a>Navigation ved hjælp af navigationsruden
-Ved hjælp af navigationsruden klassificeres dit indhold på måder, der hjælper dig med hurtigt at finde det, du har brug for.  
-
-![navigationsrude](./media/end-user-search-sort/power-bi-nav pane.png)
-
-
-- Indhold, der er delt med dig, er tilgængeligt under **Delt med mig**.
-- Det indhold, du har fået vist sidst, er tilgængeligt under **Seneste**. 
-- Du finder dine apps ved at vælge **Apps**.
-- **Start** er en visning af dit vigtigste indhold og foreslået indhold samt læringskilder på en enkelt side.
-
-Derudover kan du mærke indhold som [foretrukket](end-user-favorite.md) og [udvalgt](end-user-featured.md). Vælg det dashboard eller den rapport, du forventer at se oftest, og angiv det som dit *foretrukne* indhold. Hver gang du åbner Power BI-tjenesten, bliver dit udvalgte dashboard vist først. Har du en række dashboards og apps, som du ofte besøger? Når du angiver dem som favoritter, er de altid tilgængelige i navigationsruden.
-
-![Pop op-vinduet Favoritter](./media/end-user-search-sort/power-bi-favorite.png).
-
 
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding

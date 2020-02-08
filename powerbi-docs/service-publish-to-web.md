@@ -1,20 +1,20 @@
 ---
 title: Publicer på internettet fra Power BI
 description: Med Power BI Publicer på internettet kan du nemt integrere interaktive Power BI-visualiseringer online, f.eks. i blogindlæg, på websteder, via mails eller sociale medier på enhver enhed.
-author: rkarlin
-ms.author: rkarlin
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/16/2019
+ms.date: 01/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1fd640922f132f56a03b37ed59a6267a5af83d00
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: 53cc311f2fb0bfa4ab876c80b81ee2a092c4fd8c
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311719"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76913634"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -39,20 +39,24 @@ I fremgangsmåden nedenfor beskrives det, hvordan du bruger **Publicer på inter
 1. Åbn en rapport i arbejdsområdet, som du kan redigere, og vælg **Filer > Publicer på internettet**.
 
    ![PtW1](media/service-publish-to-web/publish_to_web1.png)
+   
+2. Kontakt din Power BI-administrator, hvis du ikke allerede har tilladelse til at oprette integreringskoder
 
-2. Gennemse dialogboksens indhold, og vælg **Opret integreringskode**.
+   ![PtW1](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
+3. Gennemse dialogboksens indhold, og vælg **Opret integreringskode**.
 
    ![PtW2](media/service-publish-to-web/publish_to_web2_ga.png)
 
-3. Gennemgå advarslen, som vises her, og bekræft, at det er i orden at integrere dataene på et offentligt websted. Vælg **Publicer**, hvis det er tilfældet.
+4. Gennemgå advarslen, som vises her, og bekræft, at det er i orden at integrere dataene på et offentligt websted. Vælg **Publicer**, hvis det er tilfældet.
 
    ![PtW3](media/service-publish-to-web/publish_to_web3_ga.png)
 
-4. Der vises en dialogboks med et link. Du kan sende dette link i en mail, integrere det i kode, f.eks. en iFrame-kode, eller indsætte det direkte på en webside eller i en blog.
+5. Der vises en dialogboks med et link. Du kan sende dette link i en mail, integrere det i kode, f.eks. en iFrame-kode, eller indsætte det direkte på en webside eller i en blog.
 
    ![PtW4](media/service-publish-to-web/publish_to_web4.png)
 
-5. Hvis du tidligere har oprettet en integreringskode for en rapport, og du vælger **Publicer på internettet**, kan du ikke se dialogboksene i trin 2-4. I stedet vises dialogboksen **Integreringskode**:
+6. Hvis du tidligere har oprettet en integreringskode for en rapport, og du vælger **Publicer på internettet**, kan du ikke se dialogboksene i trin 2-4. I stedet vises dialogboksen **Integreringskode**:
 
    ![PtW5](media/service-publish-to-web/publish_to_web5.png)
 
@@ -67,13 +71,13 @@ Følgende tabel indeholder vejledning om visningstilstanden, og hvordan den vise
 
 | Visningstilstand | Sådan ser den ud, når den er integreret |
 | --- | --- |
-| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Tilpas til siden** beskytter sidehøjden og -bredden i din rapport. Hvis du indstiller siden til *dynamiske* forhold, f.eks. 16:9 eller 4:3, skaleres dit indhold, så det passer inden for iFrame-koden. Ved integration i en iFrame kan brug af **Tilpas til siden** resultere i *letterboxing*, hvor en grå baggrund vises i iFrame-områder, efter at indholdet er skaleret til at passe inden for iFrame. Angiv din iFrames højde og bredde hensigtsmæssigt for at minimere letterboxing. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Tilpas til siden** beskytter sidehøjden og -bredden i din rapport. Hvis du indstiller siden til *dynamiske* forhold, f.eks. 16:9 eller 4:3, skaleres indholdet, så det passer inden for iFrame-koden. Ved integration i en iFrame kan brug af **Tilpas til siden** resultere i *letterboxing*, hvor en grå baggrund vises i iFrame-områder, efter at indholdet er skaleret til at passe inden for iFrame. Angiv din iFrames højde og bredde hensigtsmæssigt for at minimere letterboxing. |
 | ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Faktisk størrelse** sikrer, at rapporten bevarer sin størrelse som angivet på rapportsiden. Dette kan medføre, at der vises rullepaneler i din iFrame. Angiv højden og bredden på iFrame for at undgå rullepaneler. |
 | ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Tilpas til bredden** sikrer, at indholdet passer inden for det vandrette område i din iFrame. Der vises stadig en kant, men indholdet skaleres til at bruge al tilgængelig vandret plads. |
 
 ## <a name="tips-and-tricks-for-iframe-height-and-width"></a>Tip og tricks til højde og bredde på iFrame
 
-En integreringskode for **Publicer på internettet** ser sådan ud:
+En integreringskode for **Publicer på internettet** ser ud som vist i følgende eksempel:
 
 ![PtW7](media/service-publish-to-web/publish_to_web7.png)
  
@@ -141,16 +145,27 @@ Brugerdefinerede visuelle elementer, der understøttes i **Publicer på internet
 
 ## <a name="tenant-setting"></a>Lejerindstillinger
 
-Power BI-administratorer kan aktivere eller deaktivere funktionen **Publicer på internettet**. De kan desuden begrænse adgang til bestemte grupper, hvilket kan påvirke din mulighed for at oprette en integreringskode.
+Indstillingen **Publicer på internettet** giver mulighed for at angive, hvilke brugere der kan oprette integreringskoder.
 
-|Udvalgt |Aktiveret for hele organisationen |Deaktiveret for hele organisationen |Specifikke sikkerhedsgrupper   |
+![Indstillingen Publicer på internettet](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
+
+Du bliver bedt om at kontakte en Power BI-administrator for at oprette en integreringskode, når indstillingen **Vælg, hvordan integreringskoder fungerer** er angivet til **Tillad kun eksisterende integreringskoder**, og indstillingen **Publicer på internettet** er angivet til **Aktiveret**.
+
+![Publicer på internettet-prompt](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
+Power BI-administratorer kan aktivere eller deaktivere funktionen **Publicer på internettet**. De kan desuden begrænse adgang til bestemte grupper, hvilket kan påvirke din mulighed for at oprette en integreringskode. Du kan se forskellige indstillinger i brugergrænsefladen afhængigt af indstillingen **Publicer på internettet**.
+
+|Funktion |Aktiveret for hele organisationen |Deaktiveret for hele organisationen |Specifikke sikkerhedsgrupper   |
 |---------|---------|---------|---------|
 |**Publicer på internettet** i menuen **Filer** for rapporten|Aktiveret for alle|Ikke synligt for alle|Kun synligt for godkendte brugere eller grupper.|
 |**Håndter integreringskoder** under **Indstillinger**|Aktiveret for alle|Aktiveret for alle|Aktiveret for alle.<br><br>Indstillingen * **Slet** er kun synlig for godkendte brugere eller grupper.<br>* **Hent koder** er aktiveret for alle.|
-|**Integrer koder** i administrationsportalen|Status afspejler et af følgende:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret|Status vises som **Deaktiveret**|Status afspejler et af følgende:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret<br><br>Hvis en bruger ikke er godkendt baseret på lejeren indstilling, vises status som **krænket**.|
+|**Integrer koder** i administrationsportalen|Status afspejler en af følgende tilstande:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret|Status vises som **Deaktiveret**|Status afspejler en af følgende tilstande:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret<br><br>Hvis en bruger ikke er godkendt baseret på lejeren indstilling, vises status som **krænket**.|
 |Eksisterende publicerede rapporter|Alle aktiveret|Alle deaktiveret|Rapporter fortsætter med at gengive for alle.|
 
 ## <a name="understanding-the-embed-code-status-column"></a>Om kolonnen med status for integreringskoder
+
+>[!Note]
+>Du bør regelmæssigt gennemgå de integreringskoder, du har publiceret, og fjerne alle dem, der ikke længere skal være offentligt tilgængelige. 
 
 Siden **Administrer integreringskoder** indeholder en statuskolonne. Som standard er integreringskoder **aktive**, men de kan også have en af de statusser, der er anført nedenfor.
 
@@ -178,7 +193,7 @@ Du skal være Microsoft Power BI-bruger for at anvende **Publicer på internette
 
 Når du opretter en integreringskode ved hjælp af **Publicer på internettet**, bliver rapporten synlig for brugere på internettet. Den er offentligt tilgængelig, så du kan forvente, at brugerne nemt kan dele rapporten via sociale medier på et senere tidspunkt. Når brugere får vist rapporten, enten ved at åbne den direkte offentlige URL-adresse eller se den integreret på en webside eller blog, cachelagrer Power BI rapportdefinitionen og resultaterne af de forespørgsler, der kræves for at få vist rapporten. Dette sikrer, at tusindvis af samtidige brugere kan se rapporten, uden at det påvirker ydeevnen.
 
-Cachelageret er langvarigt, så hvis du opdaterer rapportdefinitionen (f.eks. hvis du ændrer dens visningstilstand) eller opdaterer rapportdataene, kan det tage cirka en time, før ændringerne afspejles i den version af rapporten, der ses af brugerne. Det anbefales derfor, at du planlægger dit arbejde på forhånd og først opretter integreringskoden for **Publicer på internettet**, når du er tilfreds med indstillingerne.
+Cachen har en lang levetid, så hvis du opdaterer rapportdefinitionen (f.eks. hvis du ændrer dens visningstilstand) eller opdaterer rapportdataene, kan det tage cirka en time, før ændringerne afspejles i den version af rapporten, der ses af brugerne. Det anbefales derfor, at du planlægger dit arbejde på forhånd og først opretter integreringskoden for **Publicer på internettet**, når du er tilfreds med indstillingerne.
 
 ## <a name="next-steps"></a>Næste trin
 

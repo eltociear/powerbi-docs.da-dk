@@ -1,20 +1,20 @@
 ---
 title: Integrer en rapport på en sikker portal eller et websted
 description: Med funktionen til integrering i Power BI kan brugere nemt og sikkert integrere rapporter på interne webportaler.
-author: rkarlin
-ms.author: rkarlin
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 01/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: d4495a2021f008326d76c7fd9ff686d639827e90
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: f4da9179ef140fd254939a4121e91dd032269c98
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565745"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913601"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Integrer en rapport på en sikker portal eller et websted
 
@@ -129,7 +129,11 @@ Du kan tilføje lige så mange knapper, du vil, og på den måde skabe en bruger
 
 * Visse browsere kræver, at du opdaterer siden efter logon, især når du bruger InPrivate- eller Inkognito-tilstand.
 
-* Hvis du ønsker en oplevelse med enkeltlogon, skal du bruge indstillingen Integrer i SharePoint Online eller oprette en brugerdefineret integration ved hjælp af integreringsmetoden [brugeren ejer dataene](developer/embed-sample-for-your-organization.md). 
+* Du kan støde på problemer, hvis du bruger browserversioner, der ikke understøttes. Power BI understøtter [følgende liste over browsere](power-bi-browsers.md).
+
+* Den klassiske SharePoint Server understøttes ikke, da den kræver Internet Explorer-versioner, der er ældre end 11, eller aktivering af tilstanden Kompatibilitetsvisning.
+
+* Hvis du vil have en oplevelse med enkeltlogon, skal du bruge indstillingen [Integrer i SharePoint Online](service-embed-report-spo.md) eller skabe en brugerdefineret integration ved hjælp af integreringsmetoden [brugeren ejer data](developer/embed-sample-for-your-organization.md). 
 
 * Muligheden for automatisk godkendelse, der er tilgængelig med indstillingen **Integrer** fungerer ikke sammen med Power BI JavaScript API. Til JavaScript-API til Power BI skal du bruge integreringsmetoden [brugeren ejer dataene](developer/embed-sample-for-your-organization.md). 
 

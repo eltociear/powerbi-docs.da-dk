@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
-ms.date: 05/08/2019
+ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 987078ae33af10e9c33b4d8a00f8e2e688be12a1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8f4ed049fad2739ef8cc5cd307c06100f68419bd
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73865769"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889299"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Fejlfinding af Analysér i Excel
 
@@ -84,7 +84,7 @@ Hvis du får vist fejlen **Token er udløbet** betyder det, at du ikke for nylig
 Hvis du forsøger at få adgang til et datasæt, der har forbindelse til Analysis Services-data i det lokale miljø, modtager du måske en fejlmeddelelse. **Analysér i Excel** understøtter oprettelse af forbindelse til datasæt og rapporter om **Analysis Services** i det lokale miljø med en forbindelsesstreng, så længe computeren er på det samme domæne som **Analysis Services**-serveren, og din konto har adgang til denne **Analysis Services**-server.
 
 ## <a name="cant-drag-anything-to-the-pivottable-values-area-no-measures"></a>Der kan ikke trækkes noget til området med pivottabelværdier (ingen funktioner)
-Når **Analysér i Excel** opretter forbindelse til en ekstern OLAP-model (det er på den måde, Excel opretter forbindelse til Power BI), kræver *pivottabellen*[, at der er defineret **målinger** i den eksterne model](https://support.microsoft.com/kb/234700), da alle beregninger udføres på serveren. Dette adskiller sig fra den måde, du arbejder med en lokal datakilde på (f.eks. tabeller i Excel, eller når du arbejder med datasæt i **Power BI Desktop** eller **Power BI-tjenesten**), hvor tabelmodellen er tilgængelig lokalt, og [du kan bruge implicitte målinger](https://msdn.microsoft.com/library/gg399077.aspx), som er målinger, der oprettes dynamisk og ikke gemmes i datamodellen. I disse tilfælde adskiller funktionsmåden i Excel sig fra funktionsmåden i **Power BI Desktop** eller **Power BI-tjenesten**: Der kan være kolonner i dataene, som kan behandles som målinger i Power BI, men de kan ikke bruges som værdier (målinger) i Excel.
+Når **Analysér i Excel** opretter forbindelse til en ekstern OLAP-model (hvilket er den måde, Excel opretter forbindelse til Power BI på), kræver *pivottabellen* [, at der er defineret **målinger** i den eksterne model](https://support.microsoft.com/kb/234700), da alle beregninger udføres på serveren. Dette adskiller sig fra den måde, du arbejder med en lokal datakilde på (f.eks. tabeller i Excel, eller når du arbejder med datasæt i **Power BI Desktop** eller **Power BI-tjenesten**), hvor tabelmodellen er tilgængelig lokalt, og [du kan bruge implicitte målinger](https://msdn.microsoft.com/library/gg399077.aspx), som er målinger, der oprettes dynamisk og ikke gemmes i datamodellen. I disse tilfælde adskiller funktionsmåden i Excel sig fra funktionsmåden i **Power BI Desktop** eller **Power BI-tjenesten**: Der kan være kolonner i dataene, som kan behandles som målinger i Power BI, men de kan ikke bruges som værdier (målinger) i Excel.
 
 Du har et par forskellige muligheder for at løse dette problem:
 
@@ -105,5 +105,4 @@ Når dine målinger er defineret i modellen i Power BI-tjenesten, kan du bruge d
 
 [Føj regnearksdata til en datamodel ved hjælp af en tilknyttet tabel](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)
 
-[Forskelle mellem OLAP- og ikke-OLAP-pivottabeller i Excel](https://support.microsoft.com/kb/234700)
 

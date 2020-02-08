@@ -7,19 +7,44 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/25/2019
-ms.openlocfilehash: ef85aea957ec470b348676b553248f30d3bf8532
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/27/2020
+ms.openlocfilehash: 993d83e15eafa0e40938eee13cbeabec75389f47
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73874284"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819531"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
 Denne ændringslog er for Power BI-rapportserver, og den viser nye elementer sammen med fejlrettelser til hvert frigivet build.
 
 Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder i Power BI-rapportserver](whats-new.md). 
+
+
+## <a name="january-2020"></a>Januar 2020
+- **Power BI-rapportserver**
+    - *Version: 1.6.7327.3007 (build 15.0.1102.759), udgivet: 23. januar 2020*
+         - Funktioner
+            -  Eksportér til Excel fra Power BI-rapporter.
+           -  Understøttelse af Power BI Premium-datasæt for sideinddelte rapporter.
+           -  Understøttelse af AltText (alternativ tekst) for sideinddelte rapportelementer.
+           -  Understøttelse af brugerdefinerede overskrifter.
+           -  Understøttelse af Azure SQL Managed Instances som kataloget.
+           -  Gennemsigtig databasekryptering for kataloget.
+        - Sikkerhedsopdateringer
+        - Fejlrettelser
+            - Rettelser til tilgængelighed for skærmlæsere, rapportgengivelse og tastaturnavigation.
+            - Rettelse til lagring af rapporttitler i flere bytes.
+            - Rettelse til detaljeret logføring, der påvirker rapportserverens pålidelighed.
+          - Rettelse til sikring af dynamiske data i Power BI-rapporter på mobilenheder.
+          - Rettelse til anvendelse af fremhævning på tværs af visualiseringer i filtreret eksport af Power BI-rapporter.
+          - Rettelse til skrivning af sidefod, når der eksporteres til Word med udtryk for synlighed for sideinddelte rapporter. 
+     
+- **Power BI Desktop (optimeret til Power BI-rapportserver)**
+    - *Version: 2.76.5678.1521 (januar 2020), udgivet: 23. januar 2020* (nyt build og ny version)
+        - Indeholder ændringer, der er påkrævet for at oprette forbindelse til Power BI-rapportserver (januar 2020)        
+
 
 ## <a name="september-2019"></a>September 2019
 - **Power BI-rapportserver**

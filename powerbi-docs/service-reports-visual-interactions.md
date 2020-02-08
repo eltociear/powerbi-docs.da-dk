@@ -7,15 +7,15 @@ featuredvideoid: N_xYsCbyHPw
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/11/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 2485d9120b10b41d193189de383a1a92b15378d5
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 116ff1df7ddc75df79e6f2f28296543449498599
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74011149"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76894705"
 ---
 # <a name="change-how-visuals-interact-in-a-power-bi-report"></a>Rediger, hvordan visualiseringer interagerer i en Power BI-rapport
 Hvis du har redigeringsrettigheder til en rapport, kan du bruge **Visuelle interaktioner** til at ændre, hvor visualiseringer på en rapportside påvirker hinanden. 
@@ -52,7 +52,7 @@ Hvis du har redigeringsrettigheder til en rapport, kan du slå kontrolelementer 
 
         ![Rulleliste med visuelle interaktioner](media/service-reports-visual-interactions/power-bi-service.png)
 
-3. Hvis du vil have viste interaktionskontrolelementerne for visualisering, skal du vælge **Rediger interaktioner**. I Power BI føjes der filter- og fremhævningsikoner til alle de andre visualiseringer på rapportsiden. Du kan nu ændre, hvordan den valgte visualisering interagerer med de andre visualiseringer på rapportsiden.
+3. Hvis du vil have viste interaktionskontrolelementerne for visualisering, skal du vælge **Rediger interaktioner**. I Power BI føjes der filter- og fremhævningsikoner til alle de andre visualiseringer på rapportsiden. Vi kan se, at træstrukturen krydsfiltrerer kurvediagrammet og kortet og krydsfremhæver søjlediagrammet. Du kan nu ændre, hvordan den valgte visualisering interagerer med de andre visualiseringer på rapportsiden.
    
     ![rapport, hvor Visuelle interaktioner er slået til](media/service-reports-visual-interactions/power-bi-turn-on.png)
 
@@ -61,25 +61,32 @@ Hvis du har redigeringsrettigheder til en rapport, kan du slå kontrolelementer 
 Bliv fortrolig med, hvordan dine visualiseringer interagerer, ved at vælge de enkelte visualiseringer på din rapport side, én ad gangen.  Vælg et datapunkt, en søjle eller en form, og se effekten på de andre visualiseringer. Hvis den funktionsmåde, du ser, ikke er det, du foretrækker, kan du ændre interaktionerne. Disse ændringer gemmes sammen med rapporten, så du og dine kunder får den samme oplevelse med visualinteraktionen.
 
 
-Find ud af, hvilken effekt den **valgte visualisering** skal have på de andre.  Og gentag eventuelt for alle andre visualiseringer på rapportsiden.
+Begynd med at vælge en visualisering for at aktivere den.  Bemærk, at alle andre visualiseringer på siden nu indeholder interaktionsikoner. Det fremhævede ikon er det, der anvendes. Find ud af, hvilken effekt den **valgte visualisering** skal have på de andre visualiseringer.  Og gentag eventuelt for alle andre visualiseringer på rapportsiden.
+
+Hvis den valgte visualisering:
    
-   * Hvis den skal filtrere visualiseringen i tværgående retning, skal du vælge ikonet **Filter** ![filterikon](media/service-reports-visual-interactions/power-bi-filter-icon.png).
-   * Hvis den skal fremhæve visualiseringen i tværgående retning, skal du vælge ikonet **Fremhæv** ![fremhævningsikon](media/service-reports-visual-interactions/power-bi-highlight-icon.png).
-   * Hvis den ikke skal have nogen indvirkning, kan du vælge ikonet **Ingen indvirkning** ![ingen indvirkning-ikon](media/service-reports-visual-interactions/power-bi-no-impact.png).
+   * skal krydsfiltrere en af de andre visualiseringer på siden, skal du vælge ikonet **Filtrér** i øverste højre hjørne af den pågældende visualisering ![ikonet Filtrér](media/service-reports-visual-interactions/power-bi-filter-icon.png).
+   * skal krydsfremhæve en af de andre visualiseringer på siden, skal du vælge ikonet **Fremhæv** ![ikonet Fremhæv](media/service-reports-visual-interactions/power-bi-highlight-icon.png).
+   * ikke skal have nogen indvirkning på de andre visualiseringer på siden, skal du vælge ikonet **Ingen indvirkning** ![ikonet Ingen indvirkning](media/service-reports-visual-interactions/power-bi-no-impact.png).
 
 ## <a name="change-the-interactions-of-drillable-visualizations"></a>Skift interaktionerne for visualiseringer med mulighed for detailudledning
 [Der er mulighed for detailudledning i visse Power BI-visualiseringer](consumer/end-user-drill.md). Når du foretager detailudledning af en visualisering, har den som standard ingen effekt på de andre visualiseringer på rapportsiden. Du kan dog ændre denne funktionsmåde. 
-
-1. Markér det pågældende visual for at aktivere det. 
 
 > [!TIP]
 > Prøv selv at bruge [eksempel PBIX-filen Human Resources](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix). Der er et søjlediagram med detailudledning under fanen **Nye ansættelser**.
 >
 
+1. Markér det pågældende visual for at aktivere det. 
+
+2. Slå detailudledning til ved at vælge ikonet Detailudledning.
+
+    ![slå detailudledning til](media/service-reports-visual-interactions/power-bi-drill-down.png)
 
 2. På menulinjen skal du vælge **Format** > **Detailudledning filtrerer andre visuals**.  Når du analyserer ned (og op) i en visualisering, ændres de andre visualiseringer på rapportsiden for at afspejle det aktuelle valg af detailudledning. 
 
-    ![aktivér detailudledning filtrerer andre visuals](media/service-reports-visual-interactions/power-bi-drill.png).
+    ![aktivér detailudledning filtrerer andre visuals](media/service-reports-visual-interactions/power-bi-drill.png)
+
+3. Hvis den funktionsmåde, du ser, ikke er det, du foretrækker, kan du ændre interaktionerne [som beskrevet ovenfor](#change-the-interaction-behavior).
     
 ## <a name="next-steps"></a>Næste trin
 [Filtrering og fremhævning i Power BI-rapporter](power-bi-reports-filters-and-highlighting.md)

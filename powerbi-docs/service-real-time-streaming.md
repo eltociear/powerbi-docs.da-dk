@@ -10,10 +10,10 @@ ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a4d948e768682aab77708289320914ce3ef0fdc3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74699082"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming i realtid i Power BI
@@ -82,7 +82,7 @@ Lad os se på hver af disse metoder.
 ### <a name="using-power-bi-rest-apis-to-push-data"></a>Brug af Power BI REST API'er til at pushoverføre data
 **Power BI REST API'er** kan bruges til at oprette og overføre data til **pushdatasæt** og til **streamingdatasæt**. Når du opretter et datasæt ved hjælp af Power BI REST API'er angiver flaget *Standardtilstand*, om datasættet er push eller streaming. Hvis flaget *Sandardtilstand* ikke er angivet, er datasættet som standard et **pushdatasæt**.
 
-Hvis værdien *Standardtilstand* er indstillet til *pushStreaming*, er datasættet både et **push**- *og et* **streaming**datasæt, hvilket giver fordelene ved begge datasættyper. 
+Hvis værdien *standardtilstand* er indstillet til *pushStreaming*, er datasættet både **push**- *og* **streaming**-datasæt, hvilket giver fordelene ved begge datasættyper. 
 
 > [!NOTE]
 > Når du bruger datasæt med flaget *Standardtilstand* angivet til *pushStreaming*, vil en anmodning lykkes, og dataene opdateres i pushdatasættet, hvis anmodningen overskrider størrelsesgrænsen på 15 kB for et **streamingdatasæt**, men er mindre end begrænsningen på 16 MB for et **pushdatasæt**. Alle streamingfelter vil dog mislykkes midlertidigt.
@@ -242,7 +242,7 @@ Automatisk sideopdatering fungerer på rapportsideniveau og giver rapportforfatt
 Få mere at vide om automatisk sideopdatering i artiklen [Automatisk sideopdatering](desktop-automatic-page-refresh.md).
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Her er nogle links, som du kan finde nyttige, når du arbejder med streaming i realtid i Power BI:
 
 * [Oversigt over Power BI REST API med data i realtid](https://docs.microsoft.com/rest/api/power-bi/)

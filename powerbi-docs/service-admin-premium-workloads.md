@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7d94c5d3531576cd36688591b55aaf4a49de51aa
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 924be90a8598c561a12ed87872bdfbd4681831c8
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831287"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889368"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurer arbejdsbelastninger i en Premium-kapacitet
 
@@ -67,7 +67,7 @@ Arbejdsbelastningen for datasæt er som standard aktiveret og kan ikke deaktiver
 | **Maks. antal mellemliggende rækker** | Det maksimale antal mellemliggende rækker, der blev returneret af DirectQuery. Standardværdien er 1000000, og det tilladte interval er mellem 100000 og 2147483647. |
 | **Maksimal størrelse på offlinedatasæt (GB)** | Den maksimale størrelse på offlinedatasæt i hukommelsen. Dette er den komprimerede størrelse på disken. Standardværdien er angivet af SKU, og det tilladte interval er mellem 0,1 og 10 GB. |
 | **Maks. antal resulterende rækker** | Det maksimale antal rækker, der returneres i en DAX-forespørgsel. Standardværdien er -1 (ingen grænse), og det tilladte interval er mellem 100000 og 2147483647. |
-| **Grænse for forespørgselshukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse, der kan bruges til midlertidige resultater i en forespørgsels-eller DAX-måling. |
+| **Grænse for forespørgselshukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse i arbejdsbelastningen, der kan bruges til at udføre en MDX- eller DAX-forespørgsel. |
 | **Timeout for forespørgsel (sekunder)** | Det maksimale tidsrum, før en forespørgsel udløber. Standarden er 3600 sekunder (1 time). Værdien 0 angiver, at der ikke opstår timeout for forespørgsler. |
 | **Automatisk sideopdatering (prøveversion)** | Til/fra-knap for at tillade Premium-arbejdsområder at have rapporter med automatisk sideopdatering. |
 | **Minimumsinterval for opdatering** | Hvis automatisk sideopdatering er slået til, er der angivet et minimumsinterval for sideopdatering. Standardværdien er fem minutter, og den mindste tilladte værdi er ét sekund. |
@@ -99,11 +99,17 @@ Bemærk, at denne indstilling kun påvirker DAX-forespørgsler, mens [Maks. anta
 
 Brug denne indstilling til at styre effekten af ressourcetunge eller dårligt designede rapporter. Nogle forespørgsler og beregninger kan resultere i mellemliggende resultater, der bruger meget hukommelse i kapaciteten. Denne situation kan medføre, at andre forespørgsler kører meget langsomt, at andre datasæt fjernes fra kapaciteten, og der opstår fejl i forbindelse med manglende hukommelse for andre brugere af kapaciteten.
 
-Denne indstilling gælder for dataopdatering og rapportgengivelse. Dataopdatering udfører både opdatering af data fra datakilden og opdatering af forespørgsler, medmindre opdatering af forespørgsler er deaktiveret. Hvis opdatering af forespørgsler ikke er deaktiveret, gælder denne hukommelsesgrænse også for disse forespørgsler. Alle forespørgsler, der mislykkes, medfører, at den planlagte opdateringstilstand rapporteres som en fejl, selvom dataopdateringen lykkedes.
+Denne indstilling gælder for alle DAX-og MDX-forespørgsler, der udføres af Power BI-rapporter, Analysér i Excel-rapporter samt andre værktøjer, der kan oprette forbindelse via XMLA-slutpunktet.
+
+Bemærk, at dataopdateringshandlinger muligvis også udfører DAX-forespørgsler som en del af opdatering af dashboardfelter og visualcachelagre, efter at dataene i datasættet er blevet opdateret. Sådanne forespørgsler kan også mislykkes på grund af denne indstilling, og det kan medføre, at dataopdateringshandlingen vises i fejltilstand, selvom dataene i datasættet er blevet opdateret.
 
 #### <a name="query-timeout"></a>Timeout for forespørgsel
 
-Du kan bruge denne indstilling til at sikre bedre kontrol over forespørgsler, der kører i lang tid, hvilket kan få rapporter til at blive indlæst langsomt for brugerne. Denne indstilling gælder for dataopdatering og rapportgengivelse. Dataopdatering udfører både opdatering af data fra datakilden og opdatering af forespørgsler, medmindre opdatering af forespørgsler er deaktiveret. Hvis opdatering af forespørgsler ikke er deaktiveret, gælder denne timeoutgrænse også for disse forespørgsler.
+Du kan bruge denne indstilling til at sikre bedre kontrol over forespørgsler, der kører i lang tid, hvilket kan få rapporter til at blive indlæst langsomt for brugerne.
+
+Denne indstilling gælder for alle DAX-og MDX-forespørgsler, der udføres af Power BI-rapporter, Analysér i Excel-rapporter samt andre værktøjer, der kan oprette forbindelse via XMLA-slutpunktet.
+
+Bemærk, at dataopdateringshandlinger muligvis også udfører DAX-forespørgsler som en del af opdatering af dashboardfelter og visualcachelagre, efter at dataene i datasættet er blevet opdateret. Sådanne forespørgsler kan også mislykkes på grund af denne indstilling, og det kan medføre, at dataopdateringshandlingen vises i fejltilstand, selvom dataene i datasættet er blevet opdateret.
 
 Denne indstilling gælder for en enkelt forespørgsel og ikke den tid, det tager at køre alle de forespørgsler, der er knyttet til opdatering af et datasæt eller en rapport. Se følgende eksempel:
 
@@ -144,7 +150,7 @@ Hvis du vil drage fordel af det nye beregningsprogram, skal du opdele dataindtag
 
 #### <a name="container-size"></a>Størrelse af objektbeholder
 
-Når du opdaterer et dataflow, opretter arbejdsbelastningen for dataflow en objektbeholder for hver enhed i dataflowet. Hver objektbeholder kan have hukommelse op til den mængde, der er angivet i indstillingen **Størrelse af objektbeholder. Standarden for alle SKU'er er 700 MB. Det kan være en god idé at ændre denne indstilling, hvis:
+Når du opdaterer et dataflow, opretter arbejdsbelastningen for dataflow en objektbeholder for hver enhed i dataflowet. Hver objektbeholder kan have hukommelse op til den mængde, der er angivet i indstillingen Størrelse af objektbeholder. Standarden for alle SKU'er er 700 MB. Det kan være en god idé at ændre denne indstilling, hvis:
 
 - det tager for lang tid at opdatere dataflow, eller opdateringen af dataflow mislykkes pga. timeout.
 - Dataflowenheder omfatter beregningstrin, f.eks. en joinforbindelse.  

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fc663f34b5ed95502f84f3858cb54cdb42f6fead
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c182639e97bcaf272c656d2ee2e002e7470efc40
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73860974"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76888518"
 ---
 # <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>Interager med visualiseringer i rapporter, på dashboards og i apps
 
@@ -37,7 +37,7 @@ I forbindelse med mange af disse indstillinger kan din administrator eller *desi
 
 
 > [!IMPORTANT]
-> Først lidt om spørgsmål og svar. Spørgsmål og svar er Power BI's søgeværktøj til naturligt sprog. Du skriver et spørgsmål i et naturligt sprog, og derefter svarer Spørgsmål og svar på spørgsmålet i form af en visualisering. Forbrugerne kan bruge Spørgsmål og svar til at oprette deres egne visualiseringer. De visualiseringer, du opretter med Spørgsmål og svar, kan dog ikke gemmes. Hvis der er noget bestemt, du vil have at vide via dataene, og designeren ikke inkluderede det i en rapport eller på et dashboard, er Spørgsmål og svar en rigtig god mulighed. Få mere at vide om Spørgsmål og svar under [Spørgsmål og svar til forbrugere](end-user-q-and-a.md).
+> Først lidt om spørgsmål og svar. Spørgsmål og svar er Power BI's søgeværktøj til naturligt sprog. Du skriver et spørgsmål i et naturligt sprog, og derefter svarer Spørgsmål og svar på spørgsmålet i form af en visualisering. Forbrugerne kan bruge Spørgsmål og svar til løbende at oprette deres egne visualiseringer. De visualiseringer, du opretter med Spørgsmål og svar, kan dog ikke gemmes. Hvis der er noget bestemt, du vil have at vide via dataene, og designeren ikke inkluderede det i en rapport eller på et dashboard, er Spørgsmål og svar en rigtig god mulighed. Få mere at vide om Spørgsmål og svar under [Spørgsmål og svar til forbrugere](end-user-q-and-a.md).
 
 
 
@@ -45,13 +45,13 @@ I forbindelse med mange af disse indstillinger kan din administrator eller *desi
 |---------|---------|---------|--------|
 |[Føj kommentarer til en visualisering til dig selv, eller start en samtale med kolleger om visualiseringen](end-user-comment.md).     |  ja       |   ja      |  nej  |
 |[Åbn og udforsk den rapport, som visualiseringen blev oprettet i](end-user-tiles.md).     |    ja     |   i/t      |  nej |
-|[Få vist en liste over de filtre og udsnit, der påvirker visualiseringen](end-user-report-filter.md).     |    nej     |   ja      |  ja |
+|[Få vist en liste over de filtre og udsnit, der påvirker visualiseringen](end-user-report-filter.md).     |    hvis du åbner i fokustilstand     |   ja      |  nej |
 |[Åbn og udforsk en visualisering i Spørgsmål og svar (hvis *designeren* benyttede Spørgsmål og svar til at oprette visualiseringen)](end-user-q-and-a.md).     |   ja      |   i/t      |  i/t  |
 |[Opret en visualisering i Spørgsmål og svar (du kan ikke gemme den i forbindelse med udforskningen)](end-user-q-and-a.md).     |   ja      |   Hvis designeren har føjet Spørgsmål og svar til rapporten      |  ja  |
-|[Bed Power BI om at søge efter interessante fakta eller tendenser](end-user-insights.md) i visualiseringens data for dig.  Disse automatisk genererede visuelle elementer kaldes *indsigt*.     |    ja     |  For hele rapporten, ikke pr. visualisering       | nej   |
-|[Få kun vist én visualisering ad gangen ved hjælp af *fokustilstand*](end-user-focus.md).     | ja        |   ja      | i/t  |
+|[Bed Power BI om at søge efter interessante fakta eller tendenser](end-user-insights.md) i visualiseringens data for dig.  Disse automatisk genererede visuelle elementer kaldes *indsigt*.     |    ja, for felter    |  nej       | nej   |
+|[Få kun vist én visualisering ad gangen ved hjælp af *fokustilstand*](end-user-focus.md).     | ja, for felter        |   ja, for visuals      | i/t  |
 |[Undersøg, hvornår visualiseringen sidst blev opdateret](end-user-fresh.md).     |  ja       |    ja     | i/t  |
-|[Få kun vist én visualisering ad gangen uden kanter eller navigationsruder ved hjælp af *fuldskærmsvisning* eller *fokus*tilstand](end-user-focus.md).     |   ja      |  ja       | Standard  |
+|[Få kun vist én visualisering ad gangen uden kanter eller navigationsruder ved hjælp af *fuldskærms*tilstand](end-user-focus.md).     |   ja      |  ja       | Standard  |
 |[Udskriv](end-user-print.md).     |  ja       |   ja      | nej  |
 |[Se nærmere på visualiseringen ved at tilføje og redigere visualiseringsfiltre.](end-user-report-filter.md)     |    nej     |   ja      | nej  |
 |Hold over en visualisering for at få vist flere oplysninger og værktøjstip.     |    ja     |   ja      | ja  |
@@ -61,7 +61,7 @@ I forbindelse med mange af disse indstillinger kan din administrator eller *desi
 | Føj spotlight til en visualisering. | nej  | ja  |  nej |
 | [Eksportér til Excel.](end-user-export.md) | ja | ja | nej|
 | [Opret en besked](end-user-alerts.md), som giver dig besked, når en værdi overskrider den angivne grænse.  | ja  | nej  | nej |
-| [Filtrer og fremhæv på tværs af de andre visualiseringer på siden](end-user-report-filter.md).  | nej      | ja  | nej  |
+| [Filtrer og fremhæv på tværs af de andre visualiseringer på siden](end-user-report-filter.md).  | nej      | ja  | i/t |
 | [Foretag detailudledning af en visualisering, der har et hierarki](end-user-drill.md).  | nej  | ja   | nej |
 
 ## <a name="next-steps"></a>Næste trin

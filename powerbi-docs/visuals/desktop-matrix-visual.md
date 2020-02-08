@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/14/2020
+ms.date: 01/30/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fa097489fcf81ec1bb1df2162465e6413bd116c0
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 2e4ab92d5d1adce8659cdb971c5061a0f133b38f
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76040425"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76895456"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Opret matrixvisualiseringer i Power BI
 
@@ -41,25 +41,24 @@ I dette eksempel vises *Amount* for alle kombinationer af sælger/dato i hver r�
 
 Når du ser på totaler og subtotaler, skal du huske, at disse værdier er baseret på de underliggende data. De er ikke udelukkende baseret på de synlige værdier.
 
-<!-- use Nov blog post video
 
-## Expanding and collapsing row headers
-There are two ways you can expand row headers. The first is through the right-click menu. You’ll see options to expand the specific row header you clicked on, the entire level or everything down to the very last level of the hierarchy. You have similar options for collapsing row headers as well.
+## <a name="expanding-and-collapsing-row-headers"></a>Udvidelse og skjulning af rækkeoverskrifter
+Du kan udvide rækkeoverskrifter på to måder. Den første er gennem genvejsmenuen. Du kan se indstillinger for udvidelse af den specifikke rækkeoverskrift, du har valgt, hele niveauet eller alt ned til det sidste niveau i hierarkiet. Du har lignende muligheder for at skjule rækkeoverskrifter.
 
 ![](media/desktop-matrix-visual/power-bi-expand1.png)
 
-You can also add +/- buttons to the row headers through the formatting pane under the row headers card. By default, the icons will match the formatting of the row header, but you can customize the icons’ color and size separately if you want. 
-Once the icons are turned on, they work similarly to the icons from PivotTables in Excel.
+Du kan også føje +/--knapper til rækkeoverskrifterne via formateringsruden under kortet **Rækkeoverskrifter**. Som standard svarer ikonerne svare til rækkeoverskriftens formatering, men du kan tilpasse ikoners farver og størrelser separat, hvis du vil.
+
+Når ikonerne er slået til, fungerer de på samme måde som med pivottabelikoner i Excel.
 
 ![](media/desktop-matrix-visual/power-bi-expand2.png)
 
-The expansion state of the matrix will save with your report. It can be pinned to dashboards as well, but consumers will need to open up the report to change the state. Conditional formatting will only apply to the inner most visible level of the hierarchy. Note that this expand/collapse experience is not currently supported when connecting to AS servers older than 2016 or MD servers.
+Matrixens udvidelsestilstand gemmes sammen med rapporten. En matrix kan fastgøres til et dashboard, der er udvidet eller skjult. Når det pågældende dashboardfelt er valgt, og rapporten åbnes, kan udvidelses tilstanden stadig ændres i rapporten. 
 
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
-Watch the following video to learn more about expand/collapse in the matrix:
 
--->
+
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Brug detailudledning til matrixvisualiseringen
 Med matrixvisualiseringen kan du foretage en mængde interessante aktiviteter for detailudledning, der ikke var tilgængelige før. Du kan f.eks. foretage detailudledning ved hjælp af rækker, kolonner og endda til individuelle afsnit og celler. Lad os se på, hvordan hver enkelt af disse fungerer.
 
@@ -183,6 +182,16 @@ Din matrix eller tabel kan have indhold, som du gerne vil bruge i andre programm
 * Kopien vil være en anden matrixvisualisering, men den vil kun indeholde de kopierede data.
 
     ![Skærmbillede, der viser eksempel på kopieret visualisering](media/desktop-matrix-visual/power-bi-copy-visual-example.png)
+
+## <a name="setting-a-matrix-value-as-a-custom-url"></a>Angivelse af en matrixværdi som en brugerdefineret URL-adresse
+
+Hvis du har en kolonne eller måling, der indeholder webadresser, kan du bruge betinget formatering til at anvende disse URL-adresser til felter som aktive links. Du kan finde denne indstilling under kortet **Betinget formatering** kortet i formateringsruden.
+
+![Filtrerer kort, der viser, hvilke rækker der er valgt](media/desktop-matrix-visual/power-bi-web-url.png)
+
+Slå **URL-adresse til websted** til, og vælg et felt, der skal bruges som URL-adressen for kolonnen. Når værdierne i det pågældende felt (kolonne) er anvendt, bliver de til aktive links. Peg på linket for at få det vist, og vælg det for at gå til den pågældende side. 
+
+Se [Betinget tabelformatering](../desktop-conditional-table-formatting.md) for at få flere oplysninger
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Skygge og skrifttypefarver med matrixvisualiseringer
 Når du bruger matrixvisualiseringen, kan du anvende betinget formatering (farver, skygge og datalinjer) i cellernes baggrund i matrixen, og du kan anvende betinget formatering på selve teksten og værdierne.

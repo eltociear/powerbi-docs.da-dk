@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 1/22/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0733e726512ff52c5b51ba2d25cea18f8857f1e8
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 08a58bd725b8a8da3ff54b5bb670eb70af458dc7
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537579"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819255"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer og brug apps med dashboards og rapporter i Power BI
 
@@ -57,7 +57,7 @@ Du kan også finde og installere apps fra Microsoft AppSource. Der vises kun pro
 
 I dette eksempel åbner vi en af Microsofts eksempelapps. På AppSource kan du finde apps til mange af de tjenester, du bruger til at køre din virksomhed.  Tjenester som f.eks. Salesforce, Microsoft Dynamics, Google Analytics, GitHub, Zendesk, Marketo og mange flere. Du kan få mere at vide i [Apps til tjenester, du bruger sammen med Power BI](../service-connect-to-services.md). 
 
-1. Åbn https://appsource.microsoft.com i en browser, og vælg **Power BI-apps**.
+1. Åbn [https://appsource.microsoft.com](https://appsource.microsoft.com) i en browser, og vælg **Power BI-apps**.
 
     ![AppSource-websted med Power BI-apps valgt  ](./media/end-user-apps/power-bi-appsource.png)
 

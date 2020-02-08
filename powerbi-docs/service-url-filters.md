@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2019
+ms.date: 01/30/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 2d564b22ecf02c0d8593ed5676e46f2eb4168964
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: e2840d2695b70867b73c873aea7a06acf26bcc3e
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75836709"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913561"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
@@ -33,7 +33,7 @@ Et andet anvendelsesområde for forespørgselsstrengparametre er ved oprettelse 
 
 Med parametre kan du filtrere rapporten efter en eller flere værdier. Værdierne kan indeholde mellemrum eller specialtegn. Den grundlæggende syntaks er forholdsvis enkel. Start med URL-adressen til rapporten, tilføj et spørgsmålstegn, og tilføj derefter din filtersyntaks.
 
-URL?filter=***Tabel***/***Felt*** eq '***værdi***'
+*URL*?filter=*Table*/*Field* eq '*value*'
 
 ![URL-adresse med filter](media/service-url-filters/power-bi-filter-urls7b.png)
 
@@ -84,6 +84,18 @@ Nu er rapporten filtreret for North Carolina, så alle visualiseringer på rappo
 
 ![Rapport filtreret efter North Carolina](media/service-url-filters/power-bi-report4.png)
 
+## <a name="filter-on-more-than-one-value-in-a-field"></a>Filtrer efter mere end én værdi i et felt
+
+Hvis du vil filtrere efter mere end én værdi i et enkelt felt, skal du bruge operatoren **in** i stedet for operatoren **and**. Syntaksen er:
+
+*URL*?filter=*Table*/*Field* **in** ('*value1*', '*value2*')
+
+Hvis du i dette eksempel vil filtrere rapporten, så der kun vises data for butikker i "NC" (North Carolina) eller "TN" (Tennessee), skal du føje følgende til URL-adressen:
+
+?filter=Store/Territory in ('NC', 'TN')
+
+Se tabellen[Operatorer](#operators) senere i artiklen for at få vist en liste over andre nyttige operatorer.
+
 ## <a name="filter-on-multiple-fields"></a>Filtrer på flere felter
 
 Du kan også filtrere på flere felter ved at føje yderligere parametre til din URL-adresse. Lad os gå tilbage til vores oprindelige filterparameter.
@@ -97,8 +109,6 @@ Hvis du vil filtrere flere felter, skal du tilføje et "**and**" og et andet fel
 ```
 ?filter=Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
 ```
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/0sDGKxOaC8w?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="operators"></a>Operatorer
 

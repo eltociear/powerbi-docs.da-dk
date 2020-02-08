@@ -1,6 +1,6 @@
 ---
-title: PDF-gengivelse af udvidelsen overholder ISO 14289-1 – Microsoft Power BI-rapportserver
-description: I dette dokument beskrives Microsoft Power BI-rapportserver og Microsoft Azure SQL Reporting Services' PDF-udvidelse til gengivelse i overensstemmelse med specifikationerne i ISO 14289-1 (PDF/UA).
+title: Overensstemmelse med ISO 14289-1 for udvidelsen til PDF-gengivelse – Power BI-rapportserver og SSRS
+description: I dette dokument beskrives overensstemmelse med specifikationerne i ISO 14289-1 (PDF/UA) for udvidelsen til PDF-gengivelse til Power BI-rapportserver og SQL Server Reporting Services.
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
@@ -8,18 +8,18 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/04/2019
 ms.author: maggies
-ms.openlocfilehash: c800ee995bc3c03b3cbcda91503e6dea9495f6b5
-ms.sourcegitcommit: 721cf375627b010e8ad12c4c668295f38d450a17
+ms.openlocfilehash: bfefcef18b8cd92a5c3b15c2dcbd4653a6c7c9cd
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73638074"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819508"
 ---
-# <a name="pdf-rendering-extension-conformance-to-iso-14289-1---power-bi-report-server"></a>PDF-gengivelse af udvidelsen overholder ISO 14289-1 – Microsoft Power BI-rapportserver 
+# <a name="pdf-rendering-extension-conformance-to-iso-14289-1---power-bi-report-server--ssrs"></a>Overensstemmelse med ISO 14289-1 for udvidelsen til PDF-gengivelse – Power BI-rapportserver og SSRS
 
-Gælder for: Microsoft Power BI-rapportserver og Microsoft Azure SQL Reporting Services
+Gælder for: Microsoft Power BI-rapportserver og SQL Server Reporting Services (SSRS)
 
-I dette dokument beskrives Power BI Report Server og Microsoft Azure SQL Reporting Services' PDF-udvidelse til gengivelse i overensstemmelse med specifikationerne i [ISO 14289-1 (PDF/UA)](https://www.pdfa.org/publication/pdfua-in-a-nutshell/).
+I dette dokument beskrives overensstemmelse med specifikationerne i [ISO 14289-1 (PDF/UA)](https://www.pdfa.org/publication/pdfua-in-a-nutshell/) for udvidelsen til PDF-gengivelse til Power BI-rapportserver og SQL Server Reporting Services.
 
 > [!NOTE]
 > Du kan gemme eller udskrive denne whitepaper ved at vælge **Udskriv** i din browser og derefter vælge **Gem som PDF**.
