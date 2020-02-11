@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 02/06/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 53cc311f2fb0bfa4ab876c80b81ee2a092c4fd8c
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a9417e7de98e0fa1867aa0561743c1ed6c5b63e2
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76913634"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076705"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
-Med Power BI-indstillingen **Publicer på internettet** kan du nemt integrere interaktive Power BI-visualiseringer online, f.eks. i blogindlæg, på websteder, via mails eller sociale medier, fra en hvilken som helst enhed. Du kan også nemt redigere, opdatere eller fjerne deling af dine publicerede visualiseringer.
+Med Power BI-indstillingen **Publicer på internettet** kan du nemt integrere interaktive Power BI-visualiseringer online, f.eks. i blogindlæg, på websteder, via mails eller sociale medier, fra en hvilken som helst enhed. Du kan også nemt redigere, opdatere eller stoppe deling af dine publicerede visualiseringer.
 
 > [!WARNING]
 > Når du bruger **Publicer på internettet**, kan alle på internettet se den rapport eller det visuelle element, som du har publiceret. Dette kræver ingen godkendelse og omfatter visning af data på detaljeniveau, der er aggregeret i dine rapporter. Inden du publicerer en rapport, skal du sikre dig, at du har ret til at dele dataene og visualiseringerne offentligt. Publicer ikke fortrolige eller beskyttede oplysninger. Hvis du er i tvivl, kan du kontrollere din organisations politikker inden publiceringen.
@@ -40,9 +40,11 @@ I fremgangsmåden nedenfor beskrives det, hvordan du bruger **Publicer på inter
 
    ![PtW1](media/service-publish-to-web/publish_to_web1.png)
    
-2. Kontakt din Power BI-administrator, hvis du ikke allerede har tilladelse til at oprette integreringskoder
+2. Kontakt din [Power BI-administrator](service-admin-role.md), hvis vedkommende ikke har givet dig tilladelse til at oprette integreringskoder
 
    ![PtW1](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+   
+   Hvis du har brug for hjælp til at finde den person, der kan aktivere Publicer på internettet i din organisation, skal du [se disse tip](#how-to-find-your-power-bi-administrator).
 
 3. Gennemse dialogboksens indhold, og vælg **Opret integreringskode**.
 
@@ -71,9 +73,9 @@ Følgende tabel indeholder vejledning om visningstilstanden, og hvordan den vise
 
 | Visningstilstand | Sådan ser den ud, når den er integreret |
 | --- | --- |
-| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Tilpas til siden** beskytter sidehøjden og -bredden i din rapport. Hvis du indstiller siden til *dynamiske* forhold, f.eks. 16:9 eller 4:3, skaleres indholdet, så det passer inden for iFrame-koden. Ved integration i en iFrame kan brug af **Tilpas til siden** resultere i *letterboxing*, hvor en grå baggrund vises i iFrame-områder, efter at indholdet er skaleret til at passe inden for iFrame. Angiv din iFrames højde og bredde hensigtsmæssigt for at minimere letterboxing. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Tilpas til siden** beskytter sidehøjden og -bredden i din rapport. Hvis du indstiller siden til *dynamiske* forhold, f.eks. 16:9 eller 4:3, skaleres indholdet, så det passer inden for iFrame-koden. Ved integration i en iFrame kan brug af **Tilpas til siden** resultere i *letterboxing*, hvor en grå baggrund vises i iFrame-områder, efter at indholdet er skaleret til at passe inden for iFrame. Du minimerer letterboxing ved at angive passende højde og bredde for din iFrame. |
 | ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Faktisk størrelse** sikrer, at rapporten bevarer sin størrelse som angivet på rapportsiden. Dette kan medføre, at der vises rullepaneler i din iFrame. Angiv højden og bredden på iFrame for at undgå rullepaneler. |
-| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Tilpas til bredden** sikrer, at indholdet passer inden for det vandrette område i din iFrame. Der vises stadig en kant, men indholdet skaleres til at bruge al tilgængelig vandret plads. |
+| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Tilpas til bredde** sikrer, at indholdet fylder det vandrette område i din iFrame. Der vises stadig en kant, men indholdet skaleres til at bruge al tilgængelig vandret plads. |
 
 ## <a name="tips-and-tricks-for-iframe-height-and-width"></a>Tip og tricks til højde og bredde på iFrame
 
@@ -83,7 +85,7 @@ En integreringskode for **Publicer på internettet** ser ud som vist i følgende
  
 Du kan redigere bredden og højden manuelt for at sikre, at den er præcis, som du vil have den, så den passer på den side, du integrerer den på.
 
-Du kan prøve at få den til at passe mere perfekt ved at føje 56 pixel til højden på iFrame, så den passer til den aktuelle størrelse på nederste linje. Hvis rapportsiden bruger den dynamiske størrelse, indeholder tabellen herunder nogle størrelser, du kan bruge til at opnå en tilpasning uden letterboxing.
+For at opnå en mere perfekt pasform kan du prøve at føje 56 pixel til højden på din iFrame for at imødekomme den aktuelle størrelse af den nederste linje. Hvis rapportsiden bruger den dynamiske størrelse, indeholder tabellen herunder nogle størrelser, du kan bruge til at opnå en tilpasning uden letterboxing.
 
 | Forhold | Størrelse | Dimension (bredde x højde) |
 | --- | --- | --- |
@@ -194,6 +196,21 @@ Du skal være Microsoft Power BI-bruger for at anvende **Publicer på internette
 Når du opretter en integreringskode ved hjælp af **Publicer på internettet**, bliver rapporten synlig for brugere på internettet. Den er offentligt tilgængelig, så du kan forvente, at brugerne nemt kan dele rapporten via sociale medier på et senere tidspunkt. Når brugere får vist rapporten, enten ved at åbne den direkte offentlige URL-adresse eller se den integreret på en webside eller blog, cachelagrer Power BI rapportdefinitionen og resultaterne af de forespørgsler, der kræves for at få vist rapporten. Dette sikrer, at tusindvis af samtidige brugere kan se rapporten, uden at det påvirker ydeevnen.
 
 Cachen har en lang levetid, så hvis du opdaterer rapportdefinitionen (f.eks. hvis du ændrer dens visningstilstand) eller opdaterer rapportdataene, kan det tage cirka en time, før ændringerne afspejles i den version af rapporten, der ses af brugerne. Det anbefales derfor, at du planlægger dit arbejde på forhånd og først opretter integreringskoden for **Publicer på internettet**, når du er tilfreds med indstillingerne.
+
+## <a name="how-to-find-your-power-bi-administrator"></a>Sådan finder du din Power BI-administrator
+
+Hvis du vil ændre [lejerindstillingerne for Publicer på internettet](#tenant-setting), skal du arbejde sammen med din organisations [Power BI-administrator](service-admin-role.md).
+
+Mindre organisationer eller enkeltpersoner, der har tilmeldt sig Power BI, har muligvis endnu ikke en Power BI-administrator. Du skal følge vores [proces for overtagelse af lejeradministrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover). Når du har en Power BI-administrator, kan vedkommende aktivere oprettelse af integreringskoder for dig.
+
+Etablerede organisationer har normalt allerede en Power BI-administrator. Personer med en af følgende roller kan fungere som Power BI-administrator:
+
+- Office 365-administratorer
+- Azure Active Directory-administratorer
+- Brugere med rollen Power BI-tjenesteadministrator i Azure Active Directory
+
+Du skal [finde en af disse personer](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) i din organisation, så kan de opdatere indstillingen.
+
 
 ## <a name="next-steps"></a>Næste trin
 

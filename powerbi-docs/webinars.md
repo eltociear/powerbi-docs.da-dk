@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: e3154e5a143de63300e7f5dc87cec518188a3442
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 3063d75123069e93baa8159cddf7c551922aa2b2
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75837601"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076676"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
@@ -36,6 +36,10 @@ Kom i gang med disse populære webinarer, når det passer dig
 **Sådan ændrer Microsoft BI-databeskyttelse**
 <br>af Anton Fritz og ADI Regev
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
+
+**Sådan bliver din virksomhed drevet af indsigt**
+<br>ved Amir Netz, Microsoft og Boris Evelson, Forrester
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-how-to-become-an-insights-driven-business.html?lcid=en-us)
 
 **Kunstig intelligens på tre måder, der ændrer BI**
 <br>med Justyna Lucznik

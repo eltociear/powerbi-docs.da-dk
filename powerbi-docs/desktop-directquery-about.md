@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 504b389bdbe50d17f969365d7e4f2e51d206918c
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: dedbe3800dc4a6b1088ca5a4037bc8451c61d986
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75837242"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076660"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>Om brug af DirectQuery i Power BI
 
@@ -312,7 +312,7 @@ Ud over de tidligere forslag kan hver af følgende rapporteringsegenskaber medf�
 
 * **Median:** Normalt sendes evt. samlinger, som f.eks. `Sum` or `Count Distinct`, via push til den underliggende kilde. Dette faktum gælder dog ikke for medianen, som denne samling generelt ikke understøtter af den underliggende kilde. I så fald hentes detaljerede data fra den underliggende kilde, og medianen beregnes ud fra de returnerede resultater. Denne fremgangsmåde er rimelig, når medianen skal beregnes med et relativt lille antal resultater. Problemer med ydeevnen eller forespørgselsfejl på grund af grænsen på 1 mio. rækker, hvis kardinaliteten er stor. **Medianen Country Population** er muligvis rimelig, men **medianen Sales Price** er muligvis ikke.
 
-* **Avancerede tekstfiltre (* indeholder* og lignende):* * Når du filtrerer på en tekstkolonne, tillader avanceret filtrering filtre som *indeholder* og *begynder med* osv. Disse filtre kan medføre forringet ydeevne for nogle datakilder. Standardfilteret *indeholder* skal især ikke bruges, hvis det, der ønskes, er et præcist match. Selvom resultaterne kan være de samme, afhængigt af de faktiske data, kan ydeevnen være markant anderledes på grund af brugen af indekser.
+* **Avancerede tekstfiltre (_indeholder_ og lignende):** Når du filtrerer en tekstkolonne, tillades filtre såsom *indeholder* og *begynder med* osv. i forbindelse med avanceret filtrering. Disse filtre kan medføre forringet ydeevne for nogle datakilder. Standardfilteret *indeholder* skal især ikke bruges, hvis det, der ønskes, er et præcist match. Selvom resultaterne kan være de samme, afhængigt af de faktiske data, kan ydeevnen være markant anderledes på grund af brugen af indekser.
 
 * **Udsnitsværktøjer til flere markeringer:** Udsnitsværktøjer tillader som standard kun, at der foretages én enkelt markering. Det kan medføre problemer med ydeevnen at tillade flere markeringer i filtre, da brugeren vælger et sæt elementer i udsnitsværktøjet. Hvis brugeren f.eks. vælger 10 produkter af interesse, vil hvert enkelt nyt valg medføre, at der sendes forespørgsler til kilden. Selvom brugeren kan markere det næste element, før forespørgslen er udført, resulterer denne fremgangsmåde i en ekstra belastning af den underliggende kilde.
 

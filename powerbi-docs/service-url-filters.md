@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/30/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: e2840d2695b70867b73c873aea7a06acf26bcc3e
-ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
+ms.openlocfilehash: b20820490ec88d34d4ee75c135cc54277e473545
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76913561"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076628"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
@@ -193,7 +193,7 @@ Denne uoverensstemmelse er nyttig, når du vil se forskellige resultater: filtre
 Der er et par ting, du skal være opmærksom på, når du bruger parametre for forespørgselsstrengen.
 
 * Når du bruger operatoren *in*, skal værdierne til højre for *in* være en kommasepareret liste angivet i parenteser.    
-* På Power BI-rapportserveren kan du [sende rapportparametre](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) ved at inkludere dem i en URL-adresse til rapporten. Disse parametre i URL-adressen har ikke noget præfiks, da de sendes direkte til det program, der behandler rapporten.
+* Power BI-rapportserver understøtter også muligheden for at angive yderligere filtre ved hjælp af URL-parameteren "filter".  I Power BI-rapportserver kan URL-adressen f.eks. se ud som følger: https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
 * Filtrering af forespørgselsstrengen fungerer ikke sammen med [Publicer på internettet](service-publish-to-web.md) eller [Eksportér til PDF](consumer/end-user-pdf.md).
 * [Integrer med rapportwebdelen i SharePoint Online](service-embed-report-spo.md) understøtter ikke URL-adressefiltre.
 * Datatypen long er (2^53-1) på grund af begrænsninger i Javascript.

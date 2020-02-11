@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/30/2020
-ms.openlocfilehash: 17d5661cf68b3a79598dc370ecff17c1c438fc8e
-ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
+ms.openlocfilehash: 57d1c0673594a6fa3ddadba48299f610f8f08338
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "76895091"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076570"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Understøttede datakilder for sideinddelte rapporter i Power BI
 
@@ -27,7 +27,7 @@ Følgende liste over datakilder understøttes i det oprindelige miljø i sideind
 | --- | --- | --- |
 | Azure SQL Database <br>Azure SQL Data Warehouse | Basic, enkeltlogon (SSO), OAuth2 |   |
 | Administreret forekomst af Azure SQL | Grundlæggende | via det offentlige slutpunkt ved hjælp af Azure SQL Database-udvidelsen  |
-| Azure Analysis Services | SSO, OAuth2 | AAS-firewall'en skal være deaktiveret eller konfigureret til at tillade alle IP-områder  |
+| Azure Analysis Services | SSO, OAuth2 | AAS-firewallen skal være deaktiveret eller konfigureret til at tillade alle IP-områder.  Brug af et alias understøttes ikke  |
 | Power BI-datasæt | SSO | Power BI Premium-datasæt og datasæt, der ikke er Premium. Kræver læserettigheder |
 | Power BI Premium-datasæt (XMLA) | SSO |   |
 | Angiv data | I/T | Data er integreret i rapporten. |
