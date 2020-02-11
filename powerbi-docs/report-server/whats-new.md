@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/23/2020
-ms.openlocfilehash: 9b7ea090d7860de9ec4132b070bd1286085cc5f3
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.openlocfilehash: d4e233e55731d77d4136c1b6ef1e341a2d043234
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819554"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77026709"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 
@@ -160,7 +160,7 @@ Med proxyprogram til Azure Active Directory behøver du ikke længere at adminis
 
 #### <a name="custom-headers"></a>Brugerdefinerede headere
 
-Angiver headerværdier for alle URL-adresser, der svarer til det angivne søgemønster. Brugerne kan opdatere værdien for den brugerdefinerede header med en gyldig XML for at angive headerværdier for de valgte URL-adresser til anmodninger. Administratorer kan tilføje et hvilket som helst antal headere i XML-filen. Du kan finde flere oplysninger i [Brugerdefinerede headere](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#custom-headers) i artiklen **Siden Avancerede egenskaber til server**.
+Angiver headerværdier for alle URL-adresser, der svarer til det angivne søgemønster. Brugerne kan opdatere værdien for den brugerdefinerede header med en gyldig XML for at angive headerværdier for de valgte URL-adresser til anmodninger. Administratorer kan tilføje et hvilket som helst antal headere i XML-filen. Du kan finde flere oplysninger under [CustomHeaders](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#customheaders) i artiklen **Siden Avancerede serveregenskaber** til Reporting Services.
 
 #### <a name="transparent-database-encryption"></a>Gennemsigtig databasekryptering
 
@@ -307,13 +307,13 @@ Understøttelse af disse funktioner i Power BI-rapporter:
 
 [**Udvid og skjul i matrixrækkeoverskrifter**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#expandCollapse) Vi har tilføjet muligheden for at udvide eller skjule enkelte rækkeoverskrifter, hvilket er en af de visuelle funktioner, der har været mest efterspurgt.
 
-[**Kopiér og indsæt mellem .pbix-filer**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste) Du kan kopiere visualiseringer mellem .pbix-filer enten fra genvejsmenuen for visualiseringen eller med standardtastaturgenvejen Ctrl + C og indsætte dem i en anden rapport med Ctrl + V.
+[**Kopiér og indsæt mellem .pbix-filer**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste) Du kan kopiere visuelle elementer mellem .pbix-filer enten fra genvejsmenuen for det visuelle element eller med standardtastaturgenvejen Ctrl + C og indsætte dem i en anden rapport med Ctrl + V.
 
 [**Smarte justeringshjælpelinjer**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) De smarte justeringshjælpelinjer vises, når du flytter objekter på rapportsiden, f.eks. som i PowerPoint, så du kan justere alt på siden. Du kan se de smarte hjælpelinjer, hver gang du trækker eller ændrer størrelsen på noget på siden. Når du flytter et objekt i nærheden af et andet, fastgøres det i en position, der er justeret i forhold til det andet objekt.
 
 **Tilgængelighedsfunktioner** Der er for mange tilgængelighedsfunktioner til at vise dem allesammen: f.eks. [understøttelse af tilgængelighed til ruden med listen over felter](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). Ruden med listen over felter er fuldt tilgængelig. Du kan navigere rundt i ruden ved blot at bruge tastaturet og en skærmlæser, og du kan bruge genvejsmenuen til at føje felter til din rapportside.
 
-#### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
+#### <a name="custom-visuals"></a>Brugerdefinerede visuelle elementer
 
 - Med denne version leveres API-version 2.3.
 
@@ -377,7 +377,7 @@ SAP HANA SSO Direct Query understøttes nu med Kerberos for Power BI-rapporter.
 >[!Note]
 >Dette scenarie understøttes kun, når SAP HANA behandles som en relationel datakilde med rapporter, du har oprettet i Power BI Desktop.  Hvis du vil aktivere dette i Power BI Desktop, skal du gå til DirectQuery-menuen under Indstillinger, markere "Behandl SAP HANA som en relationel kilde" og klikke på OK.
 
-#### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
+#### <a name="custom-visuals"></a>Brugerdefinerede visuelle elementer
 
 - Med denne version leveres API version 1.13.0.
 
