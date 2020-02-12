@@ -86,7 +86,7 @@ Udvid indstillingerne under **Baggrund** i det samme grupperede søjlediagram.
 
 1. Vælg rullelisten, og vælg en grå farve.
 
-1. Ret **Gennemsigtighed** til **74 %**.
+1. Ret **Gennemsigtighed** til **74 %** .
 
 På dette tidspunkt i selvstudiet ser baggrunden på dit grupperede søjlediagram nogenlunde sådan ud:
 
@@ -110,7 +110,7 @@ Hvis du vil genindlæse alle ændringerne, skal du vælge **Vend tilbage til sta
 
 1. Flyt forklaringen til venstre side af visualiseringen.
 
-1. Føj en titel til forklaringen ved at slå **Titel****Til**.
+1. Føj en titel til forklaringen ved at slå **Titel** **Til**.
 
 1. Skriv *Manager* i feltet **Navn på forklaring**.
 

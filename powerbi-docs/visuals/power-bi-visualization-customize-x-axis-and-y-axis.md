@@ -204,7 +204,7 @@ Fordi vi startede med en visualisering med én formateret Y-akse, har Power BI o
 
 Når en visualisering er avanceret, hjælper det at tilføje aksetitler.  Titler hjælper dine kolleger med at forstå, hvad det er, din visualisering viser.
 
-1. Slå **Titel****Til** for **Y-akse (søjlediagram)** og **Y-akse (kurvediagram)**.
+1. Slå **Titel** **Til** for **Y-akse (søjlediagram)** og **Y-akse (kurvediagram)** .
 
 1. Angiv **Typografi** til **Vis kun titel** for begge.
 

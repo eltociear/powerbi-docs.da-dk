@@ -102,7 +102,7 @@ Du kan også knytte figurer og billeder til bogmærker. Når du bruger denne fun
 
 Sådan tildeler du et bogmærke til et objekt: 
 
-1. Vælg objektet i rapportlærredet. Derefter skal du slå skyderen **Handling****til** i ruden **Formatér figur**, der vises.
+1. Vælg objektet i rapportlærredet. Derefter skal du slå skyderen **Handling** **til** i ruden **Formatér figur**, der vises.
 
 2. Udvid sektionen **Handling**. Under **Type** skal du vælge **Bogmærke**.
 
