@@ -429,6 +429,8 @@
           href: desktop-send-smile-privacy-statement.md
         - name: 'Administratorer: Administrer logonformularen til Power BI Desktop'
           href: desktop-admin-sign-in-form.md
+        - name: Fejlfinding af logonproblemer i Power BI Desktop
+          href: desktop-troubleshooting-sign-in.md
         - name: Tilgængelighed
           items:
             - name: Om tilgængelighed i Power BI
@@ -827,6 +829,8 @@
                   href: service-connect-to-xero.md
                 - name: Zendesk
                   href: service-connect-to-zendesk.md
+                - name: Snowflake Data Warehouse
+                  href: service-connect-snowflake.md
             - name: Organisationsindholdspakker
               items:
                 - name: Introduktion til organisationsindholdspakker
