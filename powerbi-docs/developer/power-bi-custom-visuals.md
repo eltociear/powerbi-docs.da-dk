@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/03/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 897590324040a69dbaa1ac549dcee80de8da76a5
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 56958d59e52065f3553a60ce49bd988b4869a646
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75691371"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77153953"
 ---
 # <a name="visuals-in-power-bi"></a>Visualiseringer i Power BI
 
@@ -72,7 +72,7 @@ Hvis du er webudvikler og er interesseret i at oprette din egen visualisering og
 > [!WARNING]
 > En Power BI-visualisering kan indeholde kode, der kan udgøre en risiko for sikkerheden eller beskyttelsen af personlige oplysninger. Vær sikker på, at du har tillid til forfatteren og kilden til Power BI-visualiseringen, før du importerer den i din rapport.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * Hvis du er udvikler, skal du starte med selvstudiet [Udvikling af en Power BI-visualisering](./visuals/custom-visual-develop-tutorial.md).
 
@@ -80,4 +80,4 @@ Hvis du er webudvikler og er interesseret i at oprette din egen visualisering og
 
 * Udforsk [Retningslinjer for Power BI-visualiseringer](guidelines-powerbi-visuals.md).
 
-Har du flere spørgsmål? Prøv siden [Ofte stillede spørgsmål om Power BI-visualiseringer](power-bi-custom-visuals-faq.md) eller [Power BI-community](http://community.powerbi.com/).
+Har du flere spørgsmål? Prøv siden [Ofte stillede spørgsmål om Power BI-visualiseringer](power-bi-custom-visuals-faq.md) eller [Power BI-community](https://community.powerbi.com/).
