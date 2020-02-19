@@ -52,15 +52,19 @@
               href: dax-column-measure-references.md
             - name: Undgå at bruge FILTER som et filterargument
               href: dax-avoid-avoid-filter-as-filter-argument.md
+        - name: Power BI-rapporter
+          items:
             - name: Udvid visualiseringer med værktøjstip til rapportsider
               href: report-page-tooltips.md
             - name: Anvend detaljeadgang på rapportsiden
               href: report-drillthrough.md
-            - name: Her skal du bruge sideinddelte rapporter i Power BI
+        - name: Sideinddelte rapporter i Power BI
+          items:
+            - name: Hvornår bruges sideinddelte rapporter
               href: report-paginated-or-power-bi.md
-            - name: Anvend overlappende parametre i sideinddelte rapporter
+            - name: Brug overlappende parametre
               href: paginated-report-cascading-parameter.md
-            - name: Undgå tomme sider ved udskrivning af sideinddelte rapporter
+            - name: Undgå tomme sider ved udskrivning
               href: report-paginated-blank-page.md
             - name: Overfør SSRS-rapporter til Power BI
               href: migrate-ssrs-reports-to-power-bi.md

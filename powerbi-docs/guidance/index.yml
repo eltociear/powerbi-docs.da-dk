@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 01/14/2020
-  ms.openlocfilehash: 16bfba0b4ed83be55604d2a12e5b86edae2d58bc
-  ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
+  ms.openlocfilehash: 8d7ddeffd4394d5fea4770ab0739133b68e04a18
+  ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 02/12/2020
-  ms.locfileid: "77154183"
+  ms.lasthandoff: 02/19/2020
+  ms.locfileid: "77465008"
 landingContent:
 - title: Power BI-vejledning
   linkLists:
@@ -75,7 +75,7 @@ landingContent:
       url: dax-column-measure-references.md
     - text: Undgå at bruge FILTER som et filterargument
       url: dax-avoid-avoid-filter-as-filter-argument.md
-- title: Rapportoprettelse
+- title: Power BI-rapporter
   linkLists:
   - linkListType: concept
     links:
@@ -83,11 +83,17 @@ landingContent:
       url: report-page-tooltips.md
     - text: Anvend detaljeadgang på rapportsiden
       url: report-drillthrough.md
-    - text: Her skal du bruge sideinddelte rapporter i Power BI
+- title: Sideinddelte rapporter i Power BI
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Anvend detaljeadgang på rapportsiden
+      url: report-drillthrough.md
+    - text: Hvornår bruges sideinddelte rapporter
       url: report-paginated-or-power-bi.md
-    - text: Anvend overlappende parametre i sideinddelte rapporter
+    - text: Brug overlappende parametre
       url: paginated-report-cascading-parameter.md
-    - text: Undgå tomme sider ved udskrivning af sideinddelte rapporter
+    - text: Undgå tomme sider ved udskrivning
       url: report-paginated-blank-page.md
     - text: Overfør SSRS-rapporter til Power BI
       url: migrate-ssrs-reports-to-power-bi.md
