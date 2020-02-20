@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/27/2019
-ms.openlocfilehash: 8a3b9389769c92bc52512dbf1215afa405161cd5
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.date: 02/11/2020
+ms.openlocfilehash: 3561d122dde324f1d383d40a152bccc193a2afbe
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539043"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77259708"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -55,37 +55,11 @@ Integrationstokens med en PRO-licens er beregnet til udviklingstest, så en Powe
 
 ## <a name="technical"></a>Tekniske spørgsmål
 
-### <a name="what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365"></a>Hvad er forskellen mellem A SKU'erne i Azure og EM-SKU'erne i Office 365?
+### <a name="where-can-i-learn-more-about-capacity-and-skus-in-power-bi-embedded-analytics"></a>Hvor kan jeg få mere at vide om kapacitet og SKU'er i integrerede Power BI-analyser?
 
-PowerBI.com er en SaaS-virksomhedsløsning (Software as a Service) med mange funktioner, såsom socialt samarbejde, mailabonnement og andre funktioner. PowerBI.com hjælper ISV'er med at administrere deres integrerede analyseløsningsindhold og indstillinger på lejerniveau.
+Se artiklen [Kapacitet og SKU'er i integrerede Power BI-analyser](embedded-capacity.md).
 
-Power BI Embedded er en række API'er til en PaaS-løsning (Platform as a Service), som udviklere kan bruge til oprettelse af en integreret analyseløsning.
-
-Her er en ufuldstændig liste over funktionsforskelle.
-
-| Funktion | Power BI Embedded | Power BI Premium-kapacitet | Power BI Premium-kapacitet |
-|----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
-|   | Kapacitet for A-varenumre i Azure | Kapacitet for EM-varenumre i O365 | Kapacitet for P-varenumre i O365 |
-| Integrer artefakter fra et Power BI-arbejdsområde | Ja | Ja | Ja |
-| Forbrug Power BI-rapporter i en integreret applikation til din organisation  | Nej | Ja | Ja |
-| Forbrug Power BI-rapporter i en integreret applikation til dine forbrugere | Ja | Ja | Ja |
-| Forbrug Power BI-rapporter i SharePoint | Nej | Ja | Ja |
-| Forbrug Power BI-rapporter i Dynamics | Nej | Ja | Ja |
-| Forbrug Power BI-rapporter i Teams (omfatter ikke mobilapp) | Nej | Ja | Ja |
-| Få adgang til indhold med en GRATIS Power BI-licens på Powerbi.com og i Power BI Mobile | Nej | Nej | Ja |
-| Få adgang til indhold med en GRATIS Power BI-licens integreret i MS Office-apps | Nej | Ja | Ja |
-
-### <a name="power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario"></a>Power BI tilbyder nu tre SKU'er til integration: A-SKU'er, EM-SKU'er og P-SKU'er. Hvilken skal jeg købe til mit scenarie?
-
-|  |A-SKU (Power BI Embedded)  |EM-SKU (Power BI Premium)  |P-SKU (Power BI Premium)  |
-|---------|---------|---------|---------|
-|Køb  |Azure-portal |Office |Office |
-|Use cases | Integrer indhold i din egen app | <li> Integrer indhold i din egen app <br><br><br> <li> Integrer indhold i MS Office-programmer: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (omfatter ikke mobilapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Integrer indhold i din egen app <br><br><br> <li> Integrer indhold i MS Office-programmer: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (omfatter ikke mobilapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br><br> <li> Del indhold med Power BI-brugere via [Power BI-tjenesten](https://powerbi.microsoft.com/)  |
-|Fakturering |Pr. time |Månedligt |Månedligt |
-|Tilsagn  |Intet tilsagn |Årligt  |Månedligt/årligt |
-|Differentiering |Fuld elasticitet, kan skaleres op / ned, pausestille / genoptage ressourcer i Azure-portalen eller gennem API  |Du kan bruge den til at integrere indhold i SharePoint Online og Microsoft Teams (omfatter ikke mobilapp) |Kombiner integration i programmer og brug Power BI-tjenesten i den samme egenskab |
-
-### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Hvad er forudsætningerne for at oprette en PBIE-kapacitet i Azure?
+### <a name="what-are-the-prerequisites-for-creating-a-pbie-capacity-in-azure"></a>Hvad er forudsætningerne for at oprette en PBIE-kapacitet på Azure?
 
 * Log på din organisationsmappe (Microsoft-konti understøttes ikke).
 * Du skal have en Power BI-lejer, dvs. at mindst én bruger i din mappe har tilmeldt sig Power BI. 
@@ -157,9 +131,9 @@ Tilgængelige områder (16 – samme områder som Power BI)
 * Europa (2) – Det nordlige Europa, Det vestlige Europa
 * Asien og Stillehavsområdet (2) – Det sydøstlige Asien, Det østlige Asien
 * Brasilien (1) – Det sydlige Brasilien
-* Japan (1) – Østjapan
+* Japan (1) – Det østlige Japan
 * Australien (1) – Det sydøstlige Australien
-* Indien (1) – Vestindien
+* Indien (1) – Det vestlige Indien
 * Canada (1) – Det centrale Canada
 * Storbritannien (1) – Det sydlige Storbritannien
 
@@ -323,7 +297,7 @@ Kunder, der allerede bruger **Power BI Workspace Collections**-løsningen, kan f
 
 ### <a name="in-what-regions-can-i-create-a-pbi-workspace-collection"></a>I hvilke områder kan jeg oprette en Power BI-arbejdsområdesamling?
 
-De tilgængelige områder er det sydøstlige Australien, det sydlige Brasilien, det centrale Canada, det østlige USA 2, det østlige Japan, det nordcentrale USA, det nordlige Europa, det sydcentrale USA, Sydøstasien, det sydlige Storbritannien, det vestlige Europa, det vestlige Indien og det vestlige USA.
+De tilgængelige områder er det sydøstlige Australien, det sydlige Brasilien, det centrale Canada, det østlige USA 2, det østlige Japan, det nordcentrale USA, det nordlige Europa, det sydcentrale USA, det sydøstlige Asien, det sydlige Storbritannien, det vestlige Europa, det vestlige Indien og det vestlige USA.
 
 ### <a name="why-should-i-migrate-from-pbi-workspace-collection-to-power-bi-embedded"></a>Hvorfor skal jeg overføre indhold fra PBI Workspace Collection til Power BI Embedded?
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 160812521939d505612e0725e678dcf985f0d03a
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 01996f3460b7c7a507796bd3f071f7887a69854e
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75761835"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77154206"
 ---
 # <a name="apply-auto-datetime-in-power-bi-desktop"></a>Anvend automatisk dato/klokkeslæt i Power BI Desktop
 
@@ -24,6 +24,7 @@ Automatisk dato/klokkeslæt er en indstilling for dataindlæsning i Power BI Des
 Når indstillingen er aktiveret, opretter Power BI Desktop en skjult tabel for automatisk dato/klokkeslæt for de enkelte datokolonner, forudsat at følgende forhold er til stede:
 
 - Tabellens lagringstilstand er Import
+- Kolonnen er ikke en beregnet kolonne
 - Kolonnens datatype er dato eller dato/klokkeslæt
 - Kolonnen er ikke "mange"-siden i en modelrelation
 
@@ -44,6 +45,8 @@ Hvis det var muligt at se rækkerne i en tabel med automatisk dato/klokkeslæt, 
 
 > [!NOTE]
 > Tabellerne med automatisk dato/klokkeslæt er skjult permanent, også for udviklere. De kan ikke ses i ruden **Felter** eller i diagramvisningen for modellen, og rækkerne kan ikke ses i datavisning. Desuden kan der ikke refereres direkte til tabellen og den tilhørende kolonne fra DAX-udtryk.
+>
+> Det er heller ikke muligt at arbejde med dem, når du bruger [Analysér i Excel](service-analyze-in-excel.md) eller opretter forbindelse til modellen ved hjælp af rapportdesignere, der ikke er i Power BI.
 
 Tabellen definerer også et hierarki, der giver visuelle elementer med en detailudledningssti, der går fra niveauerne for år, kvartal, måned og dag.
 
@@ -91,10 +94,11 @@ I Power BI Desktop skal du vælge _Filer > Indstillinger > Indstillinger_ og der
 
 ![Konfiguration af indstillinger i Power BI Desktop. Siden Dataindlæsning fra gruppen GLOBAL er valgt. Indstillingen Automatisk dato/klokkeslæt for nye filer er markeret i sektionen Time intelligence.](media/desktop-auto-date-time/auto-date-time-configure-global-options.png)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
 - [Vejledning til automatisk dato/klokkeslæt i Power BI Desktop](guidance/auto-date-time.md)
 - [Angiv og brug datotabeller i Power BI Desktop](desktop-date-tables.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)

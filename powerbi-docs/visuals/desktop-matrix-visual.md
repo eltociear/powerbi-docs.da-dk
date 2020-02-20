@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2e4ab92d5d1adce8659cdb971c5061a0f133b38f
-ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
+ms.openlocfilehash: 10f79c8670b42828b4219723bd8e503424e77820
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "76895456"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77154365"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Opret matrixvisualiseringer i Power BI
 
@@ -136,17 +136,32 @@ Du kan nemt justere indstillingerne for det trinvise layout. Når matrixvisualis
 
 Hvis du slår trinvist layout fra, viser Power BI underkategorierne i en anden kolonne og ikke indrykket under den overordnede kategori.
 
-## <a name="subtotals-with-matrix-visuals"></a>Subtotaler med matrixvisualiseringer
+## <a name="subtotals-and-grand-totals-with-matrix-visuals"></a>Subtotaler og totaler med matrixvisualiseringer
 
-Du kan slå subtotaler til eller fra i matrixvisualiseringer både for rækker og kolonner. I det følgende billede kan du se, at rækkesubtotaler er slået **til**.
+Du kan slå subtotaler til eller fra i matrixvisualiseringer både for rækker og kolonner. På følgende billede kan du se, at rækkesubtotaler er angivet til **Til** og til at blive vist nederst.
 
-![matrix, der viser totaler og subtotaler](media/desktop-matrix-visual/matrix-visual_20.png)
+![matrix, der viser totaler og subtotaler](media/desktop-matrix-visual/power-bi-subtotals.png)
 
-I sektionen Format i ruden Visualiseringer kan du udvide kortet **Subtotaler** og sætte skyderen for rækkesubtotaler til **Fra**. Når du gør det, vises subtotaler ikke.
+Når du slår **Subtotaler** til og tilføjer en mærkat, tilføjes en række og samme mærkat for totalværdien i Power BI. Hvis du vil formatere totalen, skal du vælge indstillingen Formatér for **Total**. 
 
-![matrix med subtotaler slået fra](media/desktop-matrix-visual/matrix-visual_21.png)
+![matrix, der viser kortet Total](media/desktop-matrix-visual/power-bi-grand-total.png)
+
+Hvis du vil slå subtotaler og total fra, skal du i afsnittet Formatér i ruden Visualiseringer vise kortet **Subtotaler**. Slå skyderen for Subtotaler for rækker **Fra**. Når du gør det, vises subtotaler ikke.
+
+![matrix med subtotaler slået fra](media/desktop-matrix-visual/power-bi-no-subtotals.png)
 
 Den samme proces gælder for kolonnesubtotaler.
+
+## <a name="add-conditional-icons"></a>Tilføj betingede ikoner
+Føj visualiseringsstikord til din tabel eller matrix med *betingede ikoner*. 
+
+I afsnittet Formatér i ruden Visualiseringer skal du vise kortet **Betinget formatering**. Slå skyderen for **Ikoner** **Til**, og vælg **Avancerede kontrolelementer**.
+
+![Matrix med skærmbilledet Ikoner vises](media/desktop-matrix-visual/power-bi-icons.png)
+
+Juster betingelserne, ikonerne og farverne for matrixen, og vælg **OK**. I dette eksempel brugte vi et rødt flag til lave værdier, en lilla cirkel for høje værdier og en gul trekant for alt indimellem. 
+
+![Matrix med viste ikoner](media/desktop-matrix-visual/power-bi-icons-applied.png)
 
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Tværgående fremhævning med matrixvisualiseringer
 

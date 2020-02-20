@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a4d948e768682aab77708289320914ce3ef0fdc3
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 047aa5e19089555538c874702dd50da0f1146ff1
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74699082"
+ms.lasthandoff: 02/10/2020
+ms.locfileid: "77115279"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming i realtid i Power BI
 Med streaming i realtid med Power BI kan du streame data og opdatere dashboards i realtid. Alle visuelle elementer eller dashboards, der kan oprettes i Power BI, kan også oprettes til at vise og opdatere data og visuelle elementer i realtid. Enhederne og kilderne til streamingdata kan være sensorer på fabrikker, sociale medier, forbrugsdata for tjenester og alt andet, hvorfra tidsfølsomme data kan indsamles eller overføres.
@@ -80,7 +80,7 @@ Der er tre primære måder, du kan pushoverføre data til et datasæt:
 Lad os se på hver af disse metoder.
 
 ### <a name="using-power-bi-rest-apis-to-push-data"></a>Brug af Power BI REST API'er til at pushoverføre data
-**Power BI REST API'er** kan bruges til at oprette og overføre data til **pushdatasæt** og til **streamingdatasæt**. Når du opretter et datasæt ved hjælp af Power BI REST API'er angiver flaget *Standardtilstand*, om datasættet er push eller streaming. Hvis flaget *Sandardtilstand* ikke er angivet, er datasættet som standard et **pushdatasæt**.
+**Power BI REST API'er** kan bruges til at oprette og sende data til **pushdatasæt** og til **streamingdatasæt**. Når du opretter et datasæt ved hjælp af Power BI REST API'er angiver flaget *Standardtilstand*, om datasættet er push eller streaming. Hvis flaget *Sandardtilstand* ikke er angivet, er datasættet som standard et **pushdatasæt**.
 
 Hvis værdien *standardtilstand* er indstillet til *pushStreaming*, er datasættet både **push**- *og* **streaming**-datasæt, hvilket giver fordelene ved begge datasættyper. 
 
@@ -242,7 +242,7 @@ Automatisk sideopdatering fungerer på rapportsideniveau og giver rapportforfatt
 Få mere at vide om automatisk sideopdatering i artiklen [Automatisk sideopdatering](desktop-automatic-page-refresh.md).
 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 Her er nogle links, som du kan finde nyttige, når du arbejder med streaming i realtid i Power BI:
 
 * [Oversigt over Power BI REST API med data i realtid](https://docs.microsoft.com/rest/api/power-bi/)

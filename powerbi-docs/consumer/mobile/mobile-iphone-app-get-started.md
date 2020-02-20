@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/08/2019
+ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: e3bfdf7fd53e71a4582a1f3e3ba08f55f2e9a290
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: ba39718a5a458ec18af976806bc634d32843afb2
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75220315"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77259726"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Introduktion til Power BI-mobilappen på iOS-enheder
 Microsoft Power BI til iOS-appen på iPhone eller iPad leverer BI-mobiloplevelsen til Power BI, Power BI-rapportserver og Reporting Services. Få vist og interager med dit firmas dashboards lokalt og i skyen overalt – med direkte, berøringsfølsom mobiladgang. Udforsk data i dashboards, og del dem med dine kollegaer i mails eller sms-beskeder. Og hold dig ajour med dine mest tidsfølsomme data på dit [Apple Watch](mobile-apple-watch.md).  
@@ -40,12 +40,12 @@ Hvis du ikke allerede har tilmeldt dig, kan du gå til [powerbi.com](https://pow
 
 ## <a name="get-started-with-the-power-bi-app"></a>Kom i gang med Power BI-appen
 1. Åbn Power BI-appen på din iOS-enhed.
-2. Tryk på **Power BI** for at se dine Power BI-dashboards.  
-   Tryk på **Rapportserver** for at få vist dine mobilrapporter og KPI'er for Reporting Services.
+2. Hvis du vil logge på Power BI, skal du trykke på fanen **Power BI** og udfylde dine logonoplysninger.  
+   Hvis du vil logge på dine Reporting Services-mobilrapporter og -KPI'er, skal du trykke på fanen **Rapportserver** og udfylde dine logonoplysninger.
    
    ![Log på Power BI-mobilappen](./media/mobile-iphone-app-get-started/power-bi-connect-to-login.png)
    
-   Når du er i appen, skal du blot trykke på billedet af kontoprofilen i øverste venstre hjørne af skærmen for at skifte mellem de to. 
+   Når du er i appen, skal du blot trykke på billedet af kontoprofilen i øverste venstre hjørne af skærmen for at skifte mellem Power BI og rapportserveren. 
 
 ## <a name="try-the-power-bi-and-reporting-services-samples"></a>Prøv eksemplerne til Power BI og Reporting Services
 Selv uden at tilmelde dig kan du få vist og interagere med Power BI- og Reporting Services-eksemplerne.
@@ -81,7 +81,7 @@ Microsoft Intune giver virksomhederne mulighed for at kontrollere ting som anmod
 
 Læs mere om at [konfigurere Power BI-mobilapps med Microsoft Intune](../../service-admin-mobile-intune.md). 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

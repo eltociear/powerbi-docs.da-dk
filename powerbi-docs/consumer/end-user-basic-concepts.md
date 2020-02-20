@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 24e5a06d3e835f7ff5114cbf17b772bc7efd00bb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7513479d14b57e47b30d2cd7ac9cc4acfe69d075
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73852235"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77260111"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>Grundlæggende begreber for forbrugere af Power BI-tjenesten
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Denne artikel forudsætter, at du allerede har læst [Oversigt over Power BI](../fundamentals/power-bi-overview.md) og har identificeret dig selv som en [Power BI-***forbruger***](end-user-consumer.md). Forbrugere modtager Power BI-indhold, f.eks. dashboards og rapporter, fra kolleger. Forbrugere bruger Power BI-tjenesten, som er den webstedsbaserede version af Power BI.
+Denne artikel forudsætter, at du allerede har læst [Oversigt over Power BI](../fundamentals/power-bi-overview.md) og har identificeret dig selv som [Power BI- **_forbruger_** ](end-user-consumer.md). Forbrugere modtager Power BI-indhold, f.eks. dashboards og rapporter, fra kolleger. Forbrugere bruger Power BI-tjenesten, som er den webstedsbaserede version af Power BI.
 
 Du vil uden tvivl høre begrebet "Power BI Desktop" eller bare "Desktop". Det er det enkeltstående værktøj, der bruges af *designere*, som bygger og deler dashboards og rapporter med dig. Det er vigtigt at vide, at der findes andre Power BI-værktøjer. Så længe du er forbruger, skal du kun arbejde med Power BI-tjenesten. Denne artikel drejer sig kun om Power BI-tjenesten.
 
@@ -54,13 +54,13 @@ _______________________________________________________
 
 ### <a name="introduction-to-building-blocks"></a>Introduktion til byggestenene
 
-For Power BI-forbrugere er de fem byggesten: ***visualiseringer***, ***dashboards***, ***rapporter***, ***apps*** og ***datasæt***. Disse omtales nogle gange som *Power BI*-***indhold***. *Indhold* findes i ***arbejdsområder***. En typisk arbejdsproces omfatter alle byggestenene: En Power BI-*designer* (gul i nedenstående diagram) indsamler data fra *datasæt*, overfører dem til Power BI med henblik på analyse, opretter *rapporter* med mange *visualiseringer*, der fremhæver interessante fakta og indsigt, fastgør visualiseringerne fra rapporter til et dashboard og deler rapporter og dashboards med *forbrugere* som dig (sort i nedenstående diagram). *Designeren* deler dem i form af *apps* eller andre former for delt indhold.
+For Power BI-forbrugere er de fem byggesten: **_visualiseringer_** , **_dashboards_** , **_rapporter_** , **_apps_** og **_datasæt_** . Disse omtales nogle gange som *Power BI*- **_indhold_** *Indhold* findes i **_arbejdsområder_** . En typisk arbejdsproces omfatter alle byggestenene: En Power BI-*designer* (gul i nedenstående diagram) indsamler data fra *datasæt*, overfører dem til Power BI med henblik på analyse, opretter *rapporter* med mange *visualiseringer*, der fremhæver interessante fakta og indsigt, fastgør visualiseringerne fra rapporter til et dashboard og deler rapporter og dashboards med *forbrugere* som dig (sort i nedenstående diagram). *Designeren* deler dem i form af *apps* eller andre former for delt indhold.
 
 ![Et diagram over en grundlæggende Power BI-arbejdsproces.](media/end-user-basic-concepts/power-bi-workflow.png)
 
 Kort fortalt:
 
-- ![Et skærmbillede af visualiseringsikonet.](media/end-user-basic-concepts/visual.png) en ***visualisering*** (eller *visual*) er en form for diagram, der er bygget af Power BI-*designere*. I visualiseringerne vises dataene fra *rapporter* og *datasæt*. *Designere* udarbejder typisk visualiseringerne i Power BI Desktop.
+- ![Et skærmbillede af visualiseringsikonet.](media/end-user-basic-concepts/visual.png) en **_visualisering_** (eller *visual*) er en form for diagram, der er bygget af Power BI-*designere*. I visualiseringerne vises dataene fra *rapporter* og *datasæt*. *Designere* udarbejder typisk visualiseringerne i Power BI Desktop.
 
     Du kan finde flere oplysninger i [Interager med visualiseringer i rapporter, på dashboards og i programmer](end-user-visualizations.md).
 
@@ -204,7 +204,7 @@ Når du har installeret appen, skal du blot vælge den på listen over apps og v
 
 Jeg håber, at denne artikel har givet dig en forståelse for de byggesten, der udgør Power BI-tjenesten for forbrugere.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - Gennemse og angiv bogmærke for [ordlisten](end-user-glossary.md)
 

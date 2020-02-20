@@ -7,15 +7,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6d2f1eea22f83d90501581be7d2e9b8230962835
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 014186acf6bf6b8c00686c0b7a29d0b526b0afb7
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830870"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77154245"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tabeller i Power BI-rapporter og -dashboards
 
@@ -98,22 +98,19 @@ Du kan formatere en tabel på mange måder. Kun et par af dem beskrives her. Hvi
 
 ### <a name="conditional-formatting"></a>Betinget formatering
 
-*Betinget formatering* er en type formatering. Power BI anvender betinget formatering på felter i området **Værdier** i ruden **Visualiseringer**.
+*Betinget formatering* er en type formatering. Power BI kan anvende betinget formatering af alle de felter, du har føjet til **Værdier** i ruden **Visualiseringer**.
 
-Med betinget formatering af tabeller kan du angive brugerdefinerede baggrundsfarver og skriftfarver for celler baseret på celleværdier, bl.a. ved hjælp af gradueringsfarver.
+![Ruden Visualisering](media/power-bi-visualization-tables/power-bi-table-values.png)
 
-1. Vælg ikonet **Felter** ![feltikonet](media/power-bi-visualization-tables/power-bi-fields-icon.png) i ruden **Visualiseringer**.
+Med betinget formatering af tabeller kan du angive ikoner, URL-adresser, baggrundsfarver og skriftfarver for celler baseret på celleværdier, bl.a. ved hjælp af gradueringsfarver.
 
-1. Vælg pil ned ud for den værdi under **Værdier**, du vil formatere (eller højreklik på feltet).
+1. I ruden **Formatér** skal du åbne kortet **Betinget formatering**.
 
-    > [!NOTE]
-    > Du kan kun administrere betinget formatering for felter i området **Værdier** under **Felter**.
+    ![Kortet Betinget formatering](media/power-bi-visualization-tables/power-bi-conditional.png)
 
-    ![sti til baggrundsfarveskalaer](media/power-bi-visualization-tables/power-bi-conditional-formatting-background.png)
+1. Vælg et felt, der skal formateres, og slå skyderen for **Baggrundsfarve** til. I Power BI anvendes en graduering baseret på værdierne i kolonnen. Hvis du vil ændre standardfarverne, skal du vælge **Avancerede kontrolelementer**.
 
-1. Vælg **Baggrundsfarve**.
-
-1. Du kan konfigurere farven og **Minimum**-værdien og **Maksimum**-værdien i den dialogboks, der vises. Hvis du vælger indstillingen **Divergerende**, kan du også konfigurere en valgfri værdi af typen **Centreret**.
+    Hvis du vælger indstillingen **Divergerende**, kan du også konfigurere en valgfri værdi af typen **Centreret**.
 
     ![skærmen Baggrundsfarveskalaer](media/power-bi-visualization-tables/power-bi-conditional-formatting-background2.png)
 
@@ -124,11 +121,11 @@ Med betinget formatering af tabeller kan du angive brugerdefinerede baggrundsfar
 
     ![viser et nyt felt længst til højre](media/power-bi-visualization-tables/power-bi-conditional-formatting2.png)
 
-1. Tilføj betinget formatering for datalinjen ved at vælge den nedadvendte pil ud for **Total Sales Variance** og vælge **Betinget formatering > Datalinjer**.
+1. Tilføj betinget formatering af datalinje ved at slå skyderen for **Datalinjer** til.  
 
-    ![sti til udvalgte datalinjer](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars.png)
+    ![Kortet Betinget formatering af datalinjer er slået til](media/power-bi-visualization-tables/power-bi-data-bar-matrix.png)
 
-1. I den viste dialogboks kan du angive farver for **Positiv streg** og **Negativ streg**, markere afkrydsningsfeltet **Vis kun streg** og foretage eventuelle andre ændringer.
+1. Hvis du vil tilpasse datalinjerne, skal du vælge **Avancerede kontrolelementer**. I den viste dialogboks kan du angive farver for **Positiv streg** og **Negativ streg**, markere afkrydsningsfeltet **Vis kun streg** og foretage eventuelle andre ændringer.
 
     ![afkrydsning af Vis kun streg](media/power-bi-visualization-tables/power-bi-data-bar.png)
 
@@ -138,10 +135,10 @@ Med betinget formatering af tabeller kan du angive brugerdefinerede baggrundsfar
 
     ![samme tabel, men med søjler i sidste kolonne](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars2.png)
 
-Hvis du vil fjerne betinget formatering fra en visualisering, skal du højreklikke på feltet igen og vælge **Fjern betinget formatering**.
+1. Føj visualiseringsstikord til din tabel med *betingede ikoner*.  På kortet **Betinget formatering** skal du vælge **Dette års salg** på rullelisten. Slå skyderen for **Ikoner** **Til**.  Hvis du vil tilpasse ikonerne, skal du vælge **Avancerede kontrolelementer**.
 
-> [!TIP]
-> Du kan også angive betinget formatering i ruden **Formatér**. Vælg den værdi, du vil formatere, og angiv derefter **Farveskalaer** eller **Datalinjer** til **Til** for at anvende standardindstillingerne. Hvis du vil tilpasse indstillingerne, skal du vælge **Avancerede kontrolelementer**.
+    ![Tabel med ikoner tilføjet](media/power-bi-visualization-tables/power-bi-table-icons.png)
+
 
 ## <a name="copy-values-from-power-bi-tables-for-use-in-other-applications"></a>Kopiér værdier fra Power BI-tabeller til brug i andre programmer
 
@@ -175,12 +172,13 @@ Nogle gange kan Power BI afskære en kolonneoverskrift i en rapport og på et da
 
 ![videocloseup af ændring af kolonnestørrelse](media/power-bi-visualization-tables/resizetable.gif)
 
+
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 
 Når du anvender kolonneformatering, kan du kun vælge én indstilling for justering pr. kolonne: **Automatisk**, **Venstre**, **Centreret**, **Højre**. En kolonne indeholder som regel enten tekst eller tal og ikke en blanding. Hvis en kolonne indeholder både tal og tekst, vil indstillingen **Automatisk** venstrejustere tekst og højrejustere tal. Denne funktionalitet understøtter de sprog, der læses fra venstre mod højre.
 
 ## <a name="next-steps"></a>Næste trin
 
-* [Trækort i Power BI](power-bi-visualization-treemaps.md)
+* [Trædiagrammer i Power BI](power-bi-visualization-treemaps.md)
 
 * [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

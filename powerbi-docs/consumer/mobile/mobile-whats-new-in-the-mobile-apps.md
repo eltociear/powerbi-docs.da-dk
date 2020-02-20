@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/08/2019
+ms.date: 01/29/2020
 ms.author: painbar
-ms.openlocfilehash: caed3a107b8f7a57d2fb3da92073cb8a5f5331cd
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 7aa31d9c6eadd4c7c9c88c9006a360a6089f28e2
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76538399"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77259815"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -21,6 +21,12 @@ Du kan finde relaterede oplysninger om nyheder under:
 * [Power BI-teamets blog til mobilapps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheder i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheder i Power BI-tjenesten](../../service-whats-new.md)  
+
+## <a name="january-2020"></a>Januar 2020
+
+### <a name="share-annotations-created-in-presentation-mode-windows"></a>Del annotationer, der er oprettet i præsentationstilstand (Windows)
+
+Annotationer, du opretter under præsentationer, bliver en integreret del af præsentationen og en vigtig komponent i diskussionen. Når du er i gang med at anmærke rapporter i præsentationstilstand, kan du dele et snapshot af rapportsiden med dine kolleger. [Få mere at vide](./mobile-windows-10-app-presentation-mode.md#use-presentation-mode)
 
 ## <a name="december-2019"></a>December 2019
 

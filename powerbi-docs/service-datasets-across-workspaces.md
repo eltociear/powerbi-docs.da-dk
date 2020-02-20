@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d30a8012161934ada4ff3cb2ce6852fe62f48892
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 148e5283e1a2e2d5ef61027c24df1a4c3e574822
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877206"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77179214"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Introduktion til datasæt på tværs af arbejdsområder (prøveversion)
 
@@ -62,7 +62,7 @@ De specifikke funktioner og oplevelser, der er baseret på funktioner for delte 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
 - Som appudgiver skal du være sikker på, at din målgruppe har adgang til datasæt uden for arbejdsområdet. Ellers vil brugerne opleve problemer, når de interagerer med din app: Rapporter åbnes ikke uden adgang til datasættet, og dashboardfelter vises som låste. Brugerne kan heller ikke åbne appen, hvis det første element i navigationen er en rapport, uden at have adgang til datasættet.
-- Hvis du vil oprette en rapport oven på et datasæt i et andet arbejdsområde, kræver det, at den nye arbejdsområdeoplevelse er begge steder: Rapporten skal være i en ny arbejdsområdeoplevelse og datasættet skal være i en ny arbejdsområdeoplevelse.
+- Hvis du vil oprette en rapport oven på et datasæt i et andet arbejdsområde, kræver det, at den nye arbejdsområdeoplevelse er begge steder: Rapporten skal være i en ny arbejdsområdeoplevelse og datasættet skal være i en ny arbejdsområdeoplevelse. Du kan kun kopiere rapporter i et nyt arbejdsområde til et andet arbejdsområde og ikke til klassiske arbejdsområder eller til Mit arbejdsområde. 
 - I et klassisk arbejdsområde viser datasæts registreringsoplevelse kun datasættene i det pågældende arbejdsområde.
 - "Publicer på internettet" er designet til ikke at virke for en rapport, der er baseret på et delt datasæt.
 - Hvis to personer er medlem af et arbejdsområde, der åbner et delt datasæt, er det er muligt, at kun én af dem kan se det relaterede datasæt i arbejdsområdet. Det er kun personer, der som minimum har læseadgang til datasættet, som kan se det delte datasæt. 

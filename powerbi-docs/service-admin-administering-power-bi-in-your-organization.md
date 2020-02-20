@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 57819765b156baac2a86b8144e86770a0117adfd
-ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
+ms.openlocfilehash: 864854e774defee16d446a513622e1134c77d75c
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548578"
+ms.lasthandoff: 02/10/2020
+ms.locfileid: "77115256"
 ---
 # <a name="what-is-power-bi-administration"></a>Hvad er Power BI-administration?
 
@@ -80,10 +80,9 @@ Der er flere værktøjer, der er relateret til Power BI-administration, og de vi
 
 Vi håber, at du ved at læse denne artikel har fået hurtig indsigt i jobbet som Power BI-administrator og i de specifikke roller, opgaver og værktøjer, der er involveret. Vi anbefaler følgende artikelemner, så du kan få en større forståelse.
 
-[Brug Power BI-administrationsportalen](service-admin-portal.md)
-
-[Brug PowerShell-cmdlet'er](/powershell/power-bi/overview)
-
-[Ofte stillede spørgsmål om Power BI-administration](service-admin-faq.md)
-
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- [Brug Power BI-administrationsportalen](service-admin-portal.md)
+- [Vejledning til indstillinger for lejeradministrator](guidance/admin-tenant-settings.md)
+- [Brug PowerShell-cmdlet'er](/powershell/power-bi/overview)
+- [Ofte stillede spørgsmål om Power BI-administration](service-admin-faq.md)
+- Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)
