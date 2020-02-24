@@ -8,24 +8,24 @@
           href: end-user-consumer.md
         - name: Grundlæggende begreber og terminologi for Power BI-forbrugere
           href: end-user-basic-concepts.md
+        - name: Få en rundvisning i Power BI-tjenesten
+          href: end-user-reading-view.md
+    - name: Kom i gang
+      items:
+        - name: Sådan navigerer du i Power BI
+          href: end-user-experience.md
         - name: Find indhold ved hjælp af landingsiden Startside
           href: end-user-home.md
+        - name: Få mere at vide om at stille spørgsmål på et naturligt sprog
+          href: end-user-q-and-a.md
+        - name: Log på for første gang
+          href: end-user-sign-in.md
+        - name: Slå licenstypen op
+          href: end-user-license.md
         - name: Gå til det 'nye udseende'
           href: ../service-new-look.md
         - name: 'Det "nye udseende": Hvor blev handlingerne af?'
           href: ../service-new-look-where-actions.md
-    - name: Hurtige introduktioner
-      items:
-        - name: Sådan navigerer du i Power BI
-          href: end-user-experience.md
-        - name: Hvad kan jeg bruge Power BI til?
-          href: end-user-reading-view.md
-        - name: Log på for første gang
-          href: end-user-sign-in.md
-    - name: Selvstudier
-      items:
-        - name: Opret en dashboardbesked
-          href: end-user-alerts.md
     - name: 'Sådan gør du:'
       items:
         - name: Dashboards
@@ -40,6 +40,10 @@
               href: end-user-tiles.md
             - name: 'Tilføj en kommentar, eller start en samtale'
               href: end-user-comment.md
+            - name: Vis automatisk indsigt for dashboardfelter
+              href: end-user-insights.md
+            - name: Opret en dashboardbesked
+              href: end-user-alerts.md
         - name: Rapporter
           items:
             - name: Rapporter
@@ -78,7 +82,7 @@
               href: end-user-visual-type.md
             - name: 'Vis de data, der blev brugt til at oprette visualiseringen'
               href: end-user-show-data.md
-            - name: Detailudledning i en visualisering i Power BI
+            - name: Detailudledning i en visualisering
               href: end-user-drill.md
             - name: Interager med ArcGIS-kort
               href: ../power-bi-visualizations-arcgis.md
@@ -104,8 +108,6 @@
               href: end-user-subscribe.md
             - name: Søg og sortér indhold i Power BI
               href: end-user-search-sort.md
-            - name: Vis automatisk indsigt for dashboardfelter
-              href: end-user-insights.md
             - name: Slå prøveversionsfunktioner til
               href: end-user-preview-features.md
             - name: Få meddelelser i Power BI-tjenesten
@@ -134,7 +136,7 @@
           href: end-user-faq.md
         - name: Understøttede browsere
           href: end-user-browsers.md
-        - name: 'Typerne af Quick Insights, der understøttes af Power BI'
+        - name: Typer af Hurtig indsigt
           href: end-user-insight-types.md
 - name: Power BI-mobilapps
   items:

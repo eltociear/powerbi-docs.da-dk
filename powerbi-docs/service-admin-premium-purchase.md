@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/10/2019
+ms.date: 02/13/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 8a97f30f75b8bf720d735944589e671392c47237
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 1bf7cc85411fef27e626c330cc07207187302bfc
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75224093"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427731"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Sådan køber du Power BI Premium
 
 I denne artikel beskrives, hvordan du køber Power BI Premium-kapacitet til din organisation. Der dækkes to scenarier i artiklen:
 
-- Brug af P-SKU'er til typiske produktionsscenarier. P-SKU'er kræver en månedlig eller årlig forpligtelse og faktureres hver måned. Du køber P-SKU'er via [Microsoft 365 Administration](https://admmin.microsoft.com).
+- Brug af P-SKU'er til typiske produktionsscenarier. P-SKU'er kræver en månedlig eller årlig forpligtelse og faktureres hver måned.
 
 - Brug af A-SKU'er til test af scenarier og i tilfælde, hvor du ikke har de nødvendige tilladelser til at købe P-SKU'er (rollen Global administrator eller rollen Faktureringsadministrator i Microsoft 365). A-SKU'er kræver ingen tidsforpligtelser og faktureres pr. time. Du køber A-SKU'er via [Azure Portal](https://portal.azure.com).
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: f8c3bdf3e3f92d570205551a97389def2921fe98
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: 1c6c4faa9f5cff46695ddd9d30869103d7bf482b
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77260451"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427201"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Kapacitet og SKU'er i integrerede Power BI-analyser
 
@@ -165,7 +165,7 @@ I nedenstående tabel vises betalings- og forbrugsovervejelser pr. kapacitet.
 <tr>
 <td><p><strong>Forpligtelse</strong></td>
 <td style="text-align: center;">Ingen</td>
-<td style="text-align: center;">Månedligt eller årligt</td>
+<td style="text-align: center;">Årligt</td>
 <td style="text-align: center;">Månedligt eller årligt</td>
 </tr>
 <tr>
@@ -194,7 +194,7 @@ I nedenstående tabel beskrives ressourcerne og begrænsningerne for hver SKU.
 | P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 > [!div class="nextstepaction"]
 >[Integrer indhold for dine kunder](embed-sample-for-customers.md)

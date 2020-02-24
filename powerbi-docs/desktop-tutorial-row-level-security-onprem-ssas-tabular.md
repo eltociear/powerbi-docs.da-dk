@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1b90357aa6d8f66612857e8247a8b48dc2c2c369
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 83cf7517fac569f8439f1debcdf621a786835d2c
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539573"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427363"
 ---
 # <a name="implement-row-level-security-in-an-analysis-services-tabular-model"></a>Implementer sikkerhed på rækkeniveau i en Analysis Services-tabelmodel
 
@@ -82,7 +82,7 @@ Når dit relations-data warehouse er på plads, skal du definere tabelmodellen. 
 
 1. Funktionen `LOOKUPVALUE` returnerer værdier for en kolonne, hvor Windows-brugernavnet stemmer overens med det brugernavn, der returneres af funktionen `USERNAME`. Du kan derefter begrænse forespørgsler til de steder, hvor funktionen `LOOKUPVALUE` returnerede værdier, der stemmer overens med værdierne i den samme eller en relateret tabel. I kolonnen **DAX Filter** skal du skrive følgende formel:
 
-    ```sql
+    ```dax
         =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
     ```
 
@@ -95,7 +95,7 @@ Når dit relations-data warehouse er på plads, skal du definere tabelmodellen. 
 
 1. Tilføj følgende formular for tabellen `DimUserSecurity` i kolonnen **DAX Filter**:
 
-    ```sql
+    ```dax
         =FALSE()
     ```
 
@@ -175,7 +175,7 @@ Hvis der forekommer mere aktivitet på dashboardet, kan du med SQL Profiler se e
 
 Nedenfor kan du også se den DAX-forespørgsel, der udføres for at udfylde rapportdataene.
    
-   ```sql
+   ```dax
    EVALUATE
      ROW(
        "SumEmployeeKey", CALCULATE(SUM(Employee[EmployeeKey]))

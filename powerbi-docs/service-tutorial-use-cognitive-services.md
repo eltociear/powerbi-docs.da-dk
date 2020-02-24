@@ -7,15 +7,15 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 03/12/2019
+ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e9b34d79a70207e175c873a88ec4d5dfe5417747
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 6ffce8b209d78f5297812f2345f454aa94ac1c9a
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75224217"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527811"
 ---
 # <a name="tutorial-use-cognitive-services-in-power-bi"></a>Selvstudium: Brug Cognitive Services i Power BI
 
@@ -56,7 +56,7 @@ Indsæt denne URL-adresse i feltet URL-adresse: [https://pbiaitutorials.blob.cor
 
 ![Opret et dataflow](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_03.png)
 
-På det øverste bånd skal du vælge **Transformér tabel** og derefter vælge **Brug den første række som overskrifter**. Dataene er nu klar til at blive brugt til tekstanalyse, og vi kan give synspunkter point og udtrække nøglesætninger fra kundens kolonne med kommentarer.
+Dataene er nu klar til at blive brugt til tekstanalyse, og vi kan give synspunkter point og udtrække nøglesætninger fra kundens kolonne med kommentarer.
 
 Vælg **AI Insights** i Power-forespørgselseditor
 

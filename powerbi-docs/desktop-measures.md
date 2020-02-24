@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 9c181deb4e36624fa714242583e3fe209abdfb47
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: c166f2d72b170dfb76e3c1f7f6d50052083df6a2
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76889322"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427386"
 ---
 # <a name="create-measures-for-data-analysis-in-power-bi-desktop"></a>Opret målinger til dataanalyse i Power BI Desktop
 
@@ -49,7 +49,7 @@ Jane bemærker, at selvom hun ikke har angivet en beregning, er der angivet en a
 
 Men Jane har brug for en måling til at beregne salgsprojektioner for det kommende år, som er baseret på sidste års salg ganget med 1,06 for at indregne den forventede stigning på 6 %. Jane opretter sin en måling til denne beregning. Ved hjælp af funktionen *Ny måling* opretter hun en ny måling og angiver derefter følgende DAX-formel:
 
-```sql
+```dax
     Projected Sales = SUM('Sales'[Last Years Sales])*1.06
 ```
 

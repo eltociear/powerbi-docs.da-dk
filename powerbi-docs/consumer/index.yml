@@ -1,0 +1,101 @@
+### YamlMime:Landing
+title: Dokumention til Power BI til forbrugere
+summary: Som forbruger modtager du dashboards og rapporter fra kollegaer. Du arbejder i Power BI for at gennemse og interagere med dette indhold for at kunne træffe forretningsmæssige beslutninger.
+metadata:
+  title: Power BI til forbrugere
+  description: Skal du i gang med Power BI? Lær funktionerne og egenskaberne for Power BI-tjenesten at kende, og se, hvad du kan bruge dem til som forbruger eller slutbruger af Power BI.
+  ms.service: powerbi
+  ms.subservice: powerbi-consumer
+  ms.topic: landing-page
+  author: mihart
+  ms.author: mihart
+  ms.date: 01/10/2020
+  ms.openlocfilehash: d08520a7ee3526323111de91c4dfb67e139a8813
+  ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+  ms.translationtype: HT
+  ms.contentlocale: da-DK
+  ms.lasthandoff: 02/20/2020
+  ms.locfileid: "77497787"
+landingContent:
+- title: Om Power BI til forbrugere
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Hvad er en Power BI-forbruger?
+      url: end-user-consumer.md
+    - text: Få en rundvisning i Power BI-tjenesten
+      url: end-user-reading-view.md
+    - text: Gennemse begreber og indhold
+      url: end-user-basic-concepts.md
+- title: Kom i gang
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Log på
+      url: end-user-sign-in.md
+  - linkListType: concept
+    links:
+    - text: Få mere at vide om rapporter
+      url: end-user-reports.md
+    - text: Få mere at vide om dashboards
+      url: end-user-dashboards.md
+    - text: Få mere at vide om apps
+      url: end-user-apps.md
+- title: Få vist indhold
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Vis en rapport
+      url: end-user-report-view.md
+    - text: Få vist indhold, der er større eller alene
+      url: end-user-focus.md
+    - text: Få vist de data, der bruges til at oprette en visualisering
+      url: end-user-show-data.md
+    - text: Eksportér data til Excel
+      url: end-user-export.md
+- title: Interager og analysér
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Find rundt i Power BI
+      url: end-user-experience.md
+    - text: Detailudledning i en visualisering
+      url: end-user-drill.md
+    - text: Rediger sortering af en visualisering
+      url: end-user-change-sort.md
+    - text: Brug rapportfiltre
+      url: end-user-report-filter.md
+    - text: Stil et spørgsmål i et naturligt sprog
+      url: end-user-q-and-a.md
+- title: Samarbejd og del
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Publicer en rapport i PowerPoint
+      url: end-user-powerpoint.md
+    - text: Eksportér en rapport til PDF
+      url: end-user-pdf.md
+    - text: Abonner på indhold
+      url: end-user-subscribe.md
+- title: Avancerede emner
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Opret og brug bogmærker
+      url: end-user-bookmarks.md
+    - text: Få vist automatisk indsigt
+      url: end-user-insights.md
+    - text: Få vist en sideinddelt rapport
+      url: paginated-reports-view-power-bi-service.md
+- title: Ressourcer
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Ordliste
+      url: end-user-glossary.md
+    - text: Ofte stillede spørgsmål
+      url: end-user-faq.md
+    - text: Indsigtstyper
+      url: end-user-insight-types.md
+    - text: Visualiseringstyper
+      url: end-user-visual-type.md
