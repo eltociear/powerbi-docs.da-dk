@@ -7,6 +7,8 @@
       items:
         - name: Oversigt
           href: overview.md
+        - name: Optimeringsvejledning til Power BI
+          href: power-bi-optimization.md
     - name: Begreber
       expanded: true
       items:
@@ -78,6 +80,8 @@
               href: admin-tenant-settings.md
             - name: Størrelse af datagateway i det lokale miljø
               href: gateway-onprem-sizing.md
+            - name: Overvåg rapportens ydeevne
+              href: monitor-report-performance.md
     - name: Hvidbøger
       items:
         - name: Oversigt over whitepapers
