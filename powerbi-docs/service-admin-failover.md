@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 02/20/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 24867d231cca0135c09119f4b885b393cb2b8dd8
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 3dd50d4f57b3146135cde5e91062ed3b2a0eecc1
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699055"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527332"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Ofte stillede spørgsmål om høj tilgængelighed, failover og it-katastrofeberedskab i Power BI
 
@@ -53,7 +53,10 @@ Der slås en meddelelse op på Power BI-supportsiden ([https://powerbi.microsoft
 
 ## <a name="how-long-does-it-take-power-bi-to-fail-over"></a>Hvor lang tid tager det for Power BI at udføre failover?
 
-Når beslutningen om at udføre failover er truffet, kan det tage op til 60 minutter, før en failoverforekomst bliver tilgængelig.
+Det tager ca. 15 minutter for Power BI at komme op og køre igen, når programmet har registreret, at en failover er nødvendig. Den tid, det tager at registrere, at en failover er nødvendig, afhænger af det scenarie, der er ødelagt. 
+
+Når en failover udføres, bruger Power BI Azure Storage GEO-replikering til at udføre failover. Sådanne replikeringer har normalt et returpunkt på 15 minutter, men [Azure Storage garanterer ikke denne tidsramme](https://docs.microsoft.com/azure/storage/common/storage-redundancy) med en SLA, og Power BI kan derfor heller ikke garantere en tidsramme. 
+
 
 ## <a name="when-does-my-power-bi-instance-return-to-the-original-region"></a>Hvornår vender min Power BI-forekomst tilbage til det oprindelige område?
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 12/03/2019
+ms.date: 02/20/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: 889fbce483f839147677789c73d826fa23542731
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: aacab1541f336ed12c36dab8243d0096c9a6ed19
+ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75000106"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558632"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Konfigurer Kerberos-baseret SSO fra Power BI-tjenesten til datakilder i det lokale miljø
 
@@ -246,15 +246,21 @@ SAP HANA og SAP BW har yderligere specifikke konfigurationskrav og -forudsætnin
 
 ## <a name="run-a-power-bi-report"></a>Kør Power BI-rapport
 
-Når du har fuldført alle konfigurationstrin, kan du bruge siden **Administrer gateway** i Power BI til at konfigurere den datakilde, du vil bruge til SSO. Hvis du har flere gateways, skal du sørge for at vælge den gateway, du har konfigureret til Kerberos SSO. Under **Avancerede indstillinger** skal du derefter sørge for, at afkrydsningsfeltet **Brug SSO via Kerberos til DirectQuery-forespørgsler** er markeret.
+Når du har fuldført alle konfigurationstrin, kan du bruge siden **Administrer gateway** i Power BI til at konfigurere den datakilde, du vil bruge til SSO. Hvis du har flere gateways, skal du sørge for at vælge den gateway, du har konfigureret til Kerberos SSO. Kontrollér derefter under **Avancerede indstillinger** for datakilden, at **Brug SSO via Kerberos til DirectQuery-forespørgsler** eller **Brug SSO via Kerberos til DirectQuery- og importforespørgsler** er markeret for DirectQuery-baserede rapporter, og at **Brug SSO via Kerberos til DirectQuery- og importforespørgsler** er markeret for opdateringsbaserede rapporter.
 
-![Avancerede indstillinger](media/service-gateway-sso-kerberos/advanced-settings.png)
+![Avancerede indstillinger](media/service-gateway-sso-kerberos/advanced-settings-02.png)
 
- Publicer en DirectQuery-baseret rapport fra Power BI Desktop. Denne rapport skal bruge data, der er tilgængelige for den bruger, som er knyttet til den Azure Active Directory-bruger, der logger på Power BI-tjenesten. Du skal bruge DirectQuery i stedet for import på grund af den måde, som opdatering fungerer på. Når gatewayen opdaterer importbaserede rapporter, bruger den de legitimationsoplysninger, du angav i felterne **Brugernavn** og **Adgangskode**, da du oprettede datakilden. Det vil sige, at Kerberos SSO *ikke* bruges. Når du publicerer, skal du vælge den gateway, du har konfigureret til SSO, hvis du har flere gateways. I Power BI-tjenesten kan du nu opdatere rapporten eller oprette en ny rapport baseret på det publicerede datasæt.
+Hvis du udgiver en DirectQuery-baseret rapport fra Power BI Desktop og knytter den til en datakilde, hvor **Bruger SSO via Kerberos til DirectQuery-forespørgsler** eller **Bruger SSO via Kerberos for DirectQuery- og importforespørgsler** er markeret, bruger denne rapport data, der er tilgængelige for den bruger, som er knyttet til den (Azure) Active Directory-bruger, der logger på Power BI-tjenesten.
+
+På samme måde gælder det, at hvis du publicerer en opdateringsbaseret rapport fra Power BI Desktop og knytter den til en datakilde, hvor **Bruger SSO via Kerberos til DirectQuery- og importforespørgsler** er markeret, behøver du ikke at angive legitimationsoplysninger. Opdateringen udføres under datasætejerens Active Directory-kontekst.
+
+Men hvis du f. eks. knytter den til en datakilde, hvor **Bruger SSO via Kerberos til DirectQuery- og importforespørgsler** ikke er markeret, bruger opdateringen de legitimationsoplysninger, du angav i felterne **Brugernavn** og **Adgangskode**, da du oprettede datakilden. Det vil sige, at Kerberos SSO *ikke* bruges. 
+
+ Når du publicerer, skal du vælge den gateway, du har konfigureret til SSO, hvis du har flere gateways. 
 
 Denne konfiguration fungerer i de fleste tilfælde. Med Kerberos kan der dog være forskellige konfigurationer afhængigt af dit miljø. Hvis rapporten ikke indlæses, skal du kontakte domæneadministratoren for at få problemet undersøgt yderligere. Hvis din datakilde er SAP BW, kan du også se afsnittet om fejlfinding for de konfigurationssider, der er specifikke for datakilden, for [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) og [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting), afhængigt af hvilket SNC-bibliotek du har valgt.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger om datagatewayen i det lokale miljø og DirectQuery i følgende ressourcer:
 

@@ -1,22 +1,24 @@
 ---
 title: Få vist et Power BI-dashboard
-description: Dashboards er en vigtig funktion i Power BI-tjenesten. Lær, hvordan du åbner og får vist et dashboard.
+description: Dashboards er en vigtig funktion i Power BI-tjenesten. Få mere at vide om, hvordan du åbner og får vist et dashboard.
 author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f250d380fc8938f7b5d7723b5b8becb65f27d79d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64809b2542cbe64951dc2f8fae12b13b8f6bc79e
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73852612"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496304"
 ---
 # <a name="view-a-dashboard"></a>Få vist et dashboard
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -25,7 +27,7 @@ Power BI-*forbrugere* bruger meget tid på at se på dashboards. Dashboards er d
 ![dashboard](media/end-user-dashboard-open/power-bi-new-dash-new.png)
 
 
-Power BI Pro er påkrævet både for at dele et dashboard og få vist et delt dashboard.
+En Power BI Pro-licens er påkrævet både for at dele et dashboard og få vist et delt dashboard. [Hvilken licens har jeg?](end-user-license.md) 
 
 ## <a name="open-a-dashboard"></a>Åbn et dashboard
 
@@ -33,7 +35,7 @@ Power BI Pro er påkrævet både for at dele et dashboard og få vist et delt da
 
 |              |         |
 |------------|--------------------------------|
-|![dashboardikon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Dashboards kan åbnes fra mange forskellige steder i Power BI-tjenesten. <br> Kig kun efter dette dashboardikon. Når du har identificeret et <br>dashboard, er det nemt at åbne det. Du skal bare vælge det, og så udfylder dashboardet <br>dit Power BI-lærred. |
+|![dashboardikon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Dashboards kan åbnes fra mange forskellige steder i Power BI-tjenesten. <br> Kig kun efter dette dashboardikon. Når du har identificeret et <br>dashboard, er det nemt at åbne det. Du skal bare vælge det, og så udfylder dashboardet Power BI-lærredet. |
 |                    |          |
 
 
@@ -52,5 +54,5 @@ Du kan finde dashboards i alle objektbeholderne i navigationsruden.
 
 
 ## <a name="next-steps"></a>Næste trin
-* Bliv fortrolig med dashboards ved at se præsentationen af et af vores [eksempler på et dashboard](../sample-tutorial-connect-to-the-samples.md).
+* Bliv fortrolig med dashboards ved at se præsentationen af et af vores [eksempler på et dashboard](../sample-tutorial-connect-to-the-samples.md).    
 * Få mere at vide om [dashboardfelter](end-user-tiles.md), og hvad der sker, når du vælger et.

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/11/2019
+ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0f7debd49541679b2ec5d41eaa2307c50bf170ce
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: df8c84b5b7baf55a32e07e3e48cb02317fdf7875
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74016129"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527401"
 ---
 # <a name="use-the-updated-ribbon-in-power-bi-desktop-preview"></a>Brug det opdaterede bånd i Power BI Desktop (eksempelvisning)
 
@@ -51,7 +51,18 @@ Fordelene kan grupperes i følgende kategorier:
 
 * **Et bånd med en enkelt linje, som er pladsbesparende, når den er skjult** – en anden fordel ved det opdaterede bånd er muligheden for at skjule selve båndet i en enkelt linje og dynamisk vise elementer på båndet på basis af konteksten. 
 
-    ![Bedre temaer](media/desktop-ribbon/desktop-ribbon-06.png)
+    ![Skjult bånd](media/desktop-ribbon/desktop-ribbon-06.png)
+
+* **Tip til at navigere til og vælge knapper** – hvis du vil navigere rundt på båndet, kan du trykke på **Alt + Windows-tast** for at aktivere tastetip. Når funktionen er aktiveret, kan du trykke på de viste taster på tastaturet for at navigere.
+
+    ![Tastetip](media/desktop-ribbon/desktop-ribbon-07.png)
+
+* **Brugerdefinerede formatstrenge** – ud over at angive brugerdefinerede formatstrenge i ruden *Egenskaber* kan du også angive dem på båndet. Vælg den måling eller kolonne, du vil tilpasse, hvorefter den kontekstafhængige fane **Målingsværktøjer** eller **Kolonneværktøjer** vises, afhængigt af dit valg. I fanens formateringsafsnit kan du skrive den brugerdefinerede formatstreng direkte på rullelisten.
+
+    ![Brugerdefinerede formatstrenge](media/desktop-ribbon/desktop-ribbon-08.png)
+
+* **Tilgængelighed** – titellinjen, båndet og menuen Filer er fuldt tilgængelige. Tryk på Ctrl + F6 for at gå til afsnittet på båndet. Derefter kan du bruge **tabulatortasten** til at flytte mellem de øverste og nederste paneler og piletasterne til at flytte mellem elementer.
+
 
 Ud over disse synlige ændringer giver et opdateret bånd også mulighed for, at vi kan foretage fremtidige opdateringer af Power BI Desktop og dets bånd, f. eks. følgende:
 

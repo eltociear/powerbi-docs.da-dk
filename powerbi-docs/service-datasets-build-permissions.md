@@ -6,21 +6,27 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/01/2019
+ms.date: 02/12/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b17fa4299d2db84f63f0d8f7ed4c17a0c9c437db
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 48380d40d819ea1af74430546b9548c372bd2091
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872547"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426604"
 ---
 # <a name="build-permission-for-shared-datasets-preview"></a>Tilladelsen Opret for delte datasæt (prøveversion)
 
-Som forfatter af *datamodeller* i Power BI Desktop kan du dele dem som *datasæt* i Power BI-tjenesten. Derefter kan forfattere af rapporter nemt finde og genbruge de datasæt, du har delt. Få mere at vide om, hvordan du styrer, hvem der har adgang til dataene, ved hjælp af tilladelsen Opret.
+Når du opretter en rapport i Power BI Desktop, gemmes dataene i den pågældende rapport i en *datamodel*. Når du publicerer dine rapporter i Power BI-tjenesten, publicerer du også dataene som et *datasæt*. Du kan give andre *tilladelsen Opret* for den pågældende rapport, så de kan finde og genbruge det datasæt, du har delt. I denne artikel forklares det, hvordan du styrer adgang til dataene ved hjælp af tilladelsen Opret.
 
-Tilladelsen Opret er kun relevant for datasæt. Når du giver brugerne tilladelsen Opret, kan de oprette nyt indhold i et datasæt, f.eks. rapporter, dashboards, fastgjorte felter fra Spørgsmål og svar samt Søgning efter indsigt. De kan også oprette nyt indhold i datasæt uden for Power BI, f.eks. Excel-ark via Analysér i Excel og XMLA og eksportere underliggende data.
+Tilladelsen Opret anvendes på datasæt. Når du giver brugerne tilladelsen Opret, kan de oprette nyt indhold i dit datasæt, f.eks. rapporter, dashboards, fastgjorte felter fra Spørgsmål og svar samt Søgning efter indsigt. 
+
+Brugerne skal også have tilladelsen Opret for at kunne arbejde med data *uden for* Power BI:
+
+- For at eksportere de underliggende data.
+- For at bygge nyt indhold i datasættet, f. eks. med [Analysér i Excel](service-analyze-in-excel.md).
+- For at få adgang til dataene via XMLA-slutpunktet.
 
 ## <a name="ways-to-give-build-permission"></a>Måder at give tilladen Opret på
 

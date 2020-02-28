@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 02/14/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 924be90a8598c561a12ed87872bdfbd4681831c8
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: ae05fdcd3a38f10707e991524bac61a305b88794
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76889368"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427708"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurer arbejdsbelastninger i en Premium-kapacitet
 
@@ -170,7 +170,7 @@ Med arbejdsbelastningen for sideinddelte rapporter kan du køre sideinddelte rap
 | **Maks. hukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse, som sideinddelte rapporter kan bruge i en kapacitet. |
 |  |  |
 
-Med sideinddelte rapporter kan der køres brugerdefineret kode, når en rapport gengives. Det kan f.eks. være at ændre tekstfarven dynamisk på baggrund af indhold, hvilket kan optage yderligere hukommelse. Power BI Premium kører sideinddelte rapporter i et afgrænset området i kapaciteten. 
+Sideinddelte rapporter indeholder de samme egenskaber, som SQL Server Reporting Services (SSRS)-rapporter gør i dag, herunder muligheden for, at rapportforfattere kan tilføje brugerdefineret kode.  Det giver forfattere mulighed for dynamisk at ændre rapporter, f. eks. ændre tekstfarver, på basis af kodeudtryk.  For at sikre korrekt isolering køres sideinddelte rapporter i en beskyttet sandkasse pr. kapacitet. Hvis rapporter kører med samme kapacitet, kan det medføre forskellige sideeffekter mellem dem. Vi anbefaler, at du på samme måde, som du begrænser de forfattere, der kan publicere indhold til en forekomst af SSRS, følger en lignende fremgangsmåde for sideinddelte rapporter. Sørg for, at organisationen har tillid til forfattere, der publicerer indhold til en kapacitet. Du kan desuden sikre dit miljø ved at klargøre flere kapaciteter og tildele forskellige forfattere til hver af dem. 
 
 I nogle tilfælde kan arbejdsbelastningen for sideinddelte rapporter blive utilgængelig. I dette tilfælde vises der en fejltilstand for arbejdsbelastningen på administrationsportalen, og brugere får vist timeout for rapportgengivelse. Du kan afhjælpe dette problem ved at deaktivere arbejdsbelastningen og derefter aktivere den igen.
 

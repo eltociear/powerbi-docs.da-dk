@@ -1,31 +1,31 @@
 ---
-title: 'Selvstudium: Brug Analysér i Excel'
-description: I dette selvstudium skal du bruge siden Power BI-datasæt til at importere datasæt til Excel.
+title: 'Selvstudium: Brug Power BI Analysér i Excel, og start i Excel'
+description: I dette selvstudium starter du i Excel og opretter forbindelse til siden Power BI-datasæt for at importere datasæt i Excel.
 author: tejaskulkarni
 ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 01/27/2020
+ms.date: 02/13/2020
 ms.author: tekulkar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a68adccec019e64e554d199d23d7dddd782f56a2
-ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
+ms.openlocfilehash: d3795c34e477c593af4afefbe5cc01040026bfa4
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76921479"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426535"
 ---
-# <a name="tutorial-use-analyze-in-excel"></a>Selvstudium: Brug Analysér i Excel
+# <a name="tutorial-use-power-bi-analyze-in-excel-starting-in-excel"></a>Selvstudium: Brug Power BI Analysér i Excel, og start i Excel
 
-Din organisation bruger Power BI til at dele adgang til data. Brug funktionen Analysér i Excel til at oprette pivottabeller og PivotChart for at få yderligere kontekst i dine analyser eller reducere den tid, det tager at finde og importere relevante datasæt.
+Din organisation bruger Power BI til at dele adgang til data. Du starter funktionen Power BI Analysér i Excel fra Excel for at oprette pivottabeller og pivotdiagrammer i Excel. De kan føje yderligere kontekst til din analyse eller reducere den tid, du bruger på at finde og importere relevante datasæt.
 
-Du kommer i gang ved at vælge et datasæt og vælge "Analysér i Excel". Du vejledt i oprettelsen af en pivottabel, der bruger dataene.  
+Du kommer i gang med et Power BI-datasæt ved at vælge "Analysér i Excel" i Excel. Du få en vejledning i oprettelse af en pivottabel, der bruger dataene.  
 
 Du kan finde flere datasæt, der deles af din organisation, ved at gå tilbage til siden Datasæt.
 
-Hvis du på et tidspunkt oplever problemer, skal du vælge Nej ved det relevante trin i flowet nedenfor og angive feedback i den formular, der er link til.  
+Hvis du på et tidspunkt oplever problemer, skal du vælge **Nej** ved det relevante trin i flowet nedenfor og angive feedback i den formular, der er link til.  
 
 I dette selvstudium lærer du, hvordan du kan:
 

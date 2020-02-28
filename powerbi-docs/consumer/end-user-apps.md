@@ -3,21 +3,22 @@ title: Hvad er en Power BI-app?
 description: I Power BI samler apps relaterede dashboards og rapporter på ét sted.
 author: mihart
 ms.reviewer: lukaszp
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 02/19/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 784c0ed368a12951220ccf719c70ac7d8d3db040
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: fd11e6fd45a3978eb301adabc15ac8941e7824bf
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851012"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496700"
 ---
 # <a name="apps-in-power-bi"></a>Apps i Power BI
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -29,9 +30,9 @@ Dine apps er organiseret på **appindholdslisten**. Du skal blot vælge **Apps**
 ![Apps i Power BI](./media/end-user-apps/power-bi-apps.png)
 
 > [!NOTE]
-> Brug af Apps-funktionen kræver en Power BI Pro-licens. <!-- add link to how to figure out your license -->
+> Brug af Apps-funktionen kræver en Power BI Pro-licens. [Slå licenstypen op](end-user-license.md)
 
-## <a name="app-designers-and-app-consumers"></a>***Appdesignere*** og ***appforbrugere***
+## <a name="app-designers-and-app-consumers"></a>*Appdesignere* og *appforbrugere*
 Afhængigt af din rolle kan du være en person, der opretter apps (*designer*) til eget brug eller til at dele med kolleger. Eller du kan være en person, der modtager og downloader apps (*forbruger*), der er oprettet af andre. Denne artikel henvender sig til *appforbrugere*.
 
 ## <a name="advantages-of-apps"></a>Fordele ved apps

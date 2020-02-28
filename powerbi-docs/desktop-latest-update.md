@@ -6,22 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 02/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: c6f1a04f7178719eb68bcd54674ea0312c97ef3e
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: 4fc4144b5436fd451280e7189484d9cc01ce69b5
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77076580"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496673"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Nyheder i Power BI Desktop
 
+## <a name="february-2020-update-2785740642"></a>Opdatering fra februar 2020 (2.78.5740.642)
 
-## <a name="december-2019-update-2765678661"></a>Opdatering fra december 2019 (2.76.5678.661)
-
-Vores opdateringer fra december er lige så sjove som en tur i bobslæde nede af en snedækket bakke. 
+Vi elsker vores opdateringer fra februar og tror, at vores nye funktioner er bedre end en hjerteformet æske chokolade. 
 
 Få den nyeste version af Power BI Desktop from [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). Hvis du kører Windows 10, kan du også få Power BI Desktop fra [Microsoft Store](https://aka.ms/pbidesktopstore). De månedlige versioner er de samme, selvom versionsnummeret kan variere mellem de to, uanset hvilken måde du installerer Power BI Desktop på. Du kan finde flere oplysninger om, hvordan du downloader og installerer Power BI Desktop, under [Få Power BI Desktop](desktop-get-the-desktop.md). 
 
@@ -40,48 +39,39 @@ Du kan også se hele [videoen om den månedlige opdatering til Power BI Desktop]
 
 Følgende opdateringer er nye i Power BI Desktop i denne måned:
 
+### <a name="data-management"></a>Dataadministration
+* Trinvins opdatering er nu generelt tilgængelig [[video]](https://youtu.be/TN61JvbUAxk?t=16)  [[artikel]](service-premium-incremental-refresh.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Incremental_refresh) 
 
 ### <a name="reporting"></a>Rapportering
-* Tilpas det aktuelle tema (prøveversion) [[video]](https://youtu.be/eCEwgZsVUOs?t=10)  [[artikel]](desktop-report-themes.md#create-and-customize-a-theme-in-power-bi-desktop-preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customizeTheme) 
-* Eksportér det aktuelle tema (prøveversion) [[video]](https://youtu.be/eCEwgZsVUOs?t=242)  [[artikel]](desktop-report-themes.md#export-report-themes-preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#exportTheme) 
-* Angivelse af tabelkolonne-eller matrixværdi som en brugerdefineret URL-adresse [[video]](https://youtu.be/eCEwgZsVUOs?t=277)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customURL) 
-* Indstillinger for formatering af KPI-visuals [[video]](https://youtu.be/eCEwgZsVUOs?t=354)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#KPI) 
-* Ny formatering af fordelingstræ [[video]](https://youtu.be/eCEwgZsVUOs?t=442)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#decomp) 
-* Knappen Slå filtrering af rude til/fra på det nye bånd [[video]](https://youtu.be/eCEwgZsVUOs?t=599)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#filterToggle) 
-* Detaljer om forespørgsel om automatisk sideopdatering [[video]](https://youtu.be/eCEwgZsVUOs?t=717)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#APR) 
+* Hierarkisk udsnit (prøveversion) [[video]](https://youtu.be/TN61JvbUAxk?t=207)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Hierarchical_slicer) 
+* Opdateret bånd (prøveversion) [[video]](https://youtu.be/TN61JvbUAxk?t=424)  [[artikel]](desktop-ribbon.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Ribbon) 
 
 
-### <a name="analytics"></a>Analyse
-* Indlæs mere for at få indsigt i analyser [[video]](https://youtu.be/eCEwgZsVUOs?t=831)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#moreAI) 
-* Ny DAX-funktion: Kvartal [[video]](https://youtu.be/eCEwgZsVUOs?t=855)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#quarter) 
-
+### <a name="modeling"></a>Modellering
+* Nye DAX-funktioner: FirstNonBlankValue, LastNonBlankValue [[video]](https://youtu.be/TN61JvbUAxk?t=716)  [[article]](https://docs.microsoft.com/dax/firstnonblankvalue-function-dax)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_New_DAX_Functions) 
 
 ### <a name="visuals"></a>Visualiseringer
-* Tilpasning af ruden Visuals (offentligt tilgængelig) [[video]](https://youtu.be/eCEwgZsVUOs?t=865)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#personalizeViz) 
-* Nye brugerdefinerede visuals [[video]](https://youtu.be/eCEwgZsVUOs?t=886)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#xViz) 
-
-
-### <a name="data-connectivity"></a>Dataforbindelse
-* Azure Data Lake Storage Gen2-connector (offentligt tilgængelig) [[video]](https://youtu.be/eCEwgZsVUOs?t=2151)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/) 
-* Connector til dataflow for Power Platform (offentligt tilgængelig) [[video]](https://youtu.be/eCEwgZsVUOs?t=2180)  [[artikel]](service-edit-sap-variables.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#ADLS) 
-* PostgreSQL-connectoren indeholder nu Npgsql-udbyderen [[video]](https://youtu.be/eCEwgZsVUOs?t=2220)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#PostgreSQL) 
-* AtScale-connector (offentligt tilgængelig) [[video]](https://youtu.be/eCEwgZsVUOs?t=2245)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#AtScale) 
-* Connector til indsigt i Azure-tidsserier [[video]](https://youtu.be/eCEwgZsVUOs?t=2261)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#ATS) 
-* Data Virtuality-connector [[video]](https://youtu.be/eCEwgZsVUOs?t=2294)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#DataVirt) 
-* Zucchetti HR Infinity-connector [[video]](https://youtu.be/eCEwgZsVUOs?t=2345)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#Zucchetti) 
-
-
-### <a name="data-preparation"></a>Dataforberedelse
-* Opdateringer til funktioner til AI-indsigter (prøveversion) [[video]](https://youtu.be/eCEwgZsVUOs?t=2366)  [[artikel]](desktop-ai-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#AIfunc) 
+* Nye brugerdefinerede visuals [[video]](https://youtu.be/TN61JvbUAxk?t=835)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Visualizations) 
 
 
 ### <a name="template-apps"></a>Skabelonapps
-* Omnichannel-indsigter til Dynamics 365 [[video]](https://youtu.be/eCEwgZsVUOs?t=2416)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#Omni) 
-* Kundeserviceanalyser til Dynamics 365 [[video]](https://youtu.be/eCEwgZsVUOs?t=2500)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#CS)
-* Microsoft Forms Pro til Customer Services [[video]](https://youtu.be/eCEwgZsVUOs?t=2525)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#Forms) 
+* Microsoft 365-forbrugsanalyser [[video]](https://youtu.be/TN61JvbUAxk?t=910)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Microsoft_365_usage) 
+* NFL Analytics by P3 [[video]](https://youtu.be/TN61JvbUAxk?t=928)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_NFL)
+* Acterys til QuickBooks, Zero og WorkflowMax [[video]](https://youtu.be/TN61JvbUAxk?t=932)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Acterys) 
 
 
-Du kan finde detaljerede oplysninger om hver af disse nye funktioner i [oversigten over funktioner i Power BI Desktop november 2019](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/).
+### <a name="data-preparation"></a>Dataforberedelse
+* Forespørgselsdiagnosticering – understøttelse af brugere, der ikke er administratorer [[video]](https://youtu.be/TN61JvbUAxk?t=938)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_non_admin_support) 
+
+
+### <a name="data-connectivity"></a>Dataforbindelse
+* MicroStrategy-connector (offentligt tilgængelig) [[video]](https://youtu.be/TN61JvbUAxk?t=962)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_MicroStrategy_connector) 
+* FHIR-connector (offentligt tilgængelig) [[video]](https://youtu.be/TN61JvbUAxk?t=962)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_FHIR) 
+* Yderligere connectors: Factset, TIBCO, Jamf Pro, Asana [[video]](https://youtu.be/TN61JvbUAxk?t=978)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Factset_connector) 
+
+
+
+Du kan finde detaljerede oplysninger om hver af disse nye funktioner i [oversigten over funktioner i Power BI Desktop](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/).
 
 Tjek [nyhederne i Power BI-tjenesten](service-whats-new.md) og [nyhederne i mobilappsene til Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -92,7 +82,8 @@ Tjek [nyhederne i Power BI-tjenesten](service-whats-new.md) og [nyhederne i mobi
 ## <a name="power-bi-desktop-monthly-update-video"></a>Video om månedlig opdatering til Power BI Desktop
 I følgende video beskrives hver af disse opdateringer. Du kan også se videoen fra blogindlægget:
 
-> [!VIDEO https://www.youtube.com/embed/eCEwgZsVUOs]
+> [!VIDEO https://www.youtube.com/embed/TN61JvbUAxk]
+
 
 
 ## <a name="more-videos"></a>Flere videoer

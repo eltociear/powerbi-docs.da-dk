@@ -7,23 +7,28 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: da941de8b44f3833a5f80bba648f4a185f35b36e
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 59ba4d0e62613ed25569efd0602815e3d98aec4d
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852024"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496502"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Føj kommentarer til et dashboard eller en rapport
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Tilføj en personlig kommentar, eller start en samtale om et dashboard eller en rapport med dine kolleger. **Kommentarfunktionen** er bare én af de måder, en *forbruger* kan samarbejde med sine kolleger på. 
 
 ![video om kommentarer](media/end-user-comment/comment.gif)
+
+> [!NOTE]
+> Hvis du samarbejder med andre og bl.a. føjer kommentarer til delte rapporter, kræver det en Power BI Pro- eller Premium-licens. [Hvilken licenstype har jeg?](end-user-license.md)
 
 ## <a name="how-to-use-the-comments-feature"></a>Sådan bruges kommentarfunktionen
 Kommentarer kan føjes til et helt dashboard, til individuelle visualiseringer på et dashboard, til en rapportside, til en sideinddelt rapport og til individuelle visualiseringer på en rapportside. Tilføj en generel kommentar eller en kommentar, der er målrettet bestemte kolleger.  
@@ -34,7 +39,7 @@ Når du føjer en kommentar til en rapport, henter Power BI de aktuelle værdier
 
 Hvorfor er det vigtigt? Forestil dig, at en kollega har anvendt et filter, der viste en interessant indsigt, som vedkommende vil dele med teamet. Hvis filteret ikke er valgt, giver kommentaren måske ikke mening.
 
-Hvis du bruger en sideinddelt rapport, kan du kun angive en generel kommentar om din rapport.  Det er ikke muligt at angive kommentarer om de enkelte visualiseringer i rapporter.
+Hvis du bruger en sideinddelt rapport, kan du kun angive en generel kommentar om din rapport.  Det er ikke muligt at angive kommentarer på de enkelte visualiseringer i sideinddelte rapporter.
 
 ### <a name="add-a-general-comment-to-a-dashboard-or-report"></a>Føj en generel kommentar til et dashboard eller en rapport
 Processen til tilføjelse af kommentarer til et dashboard eller en rapport er den samme.  I dette eksempel bruger vi et dashboard. 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 02/14/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: d8db626300902125cf3536f03ed111ef3e052324
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: b7ff14b4932ba77b47fdb603124d29858c622fc7
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76538710"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427644"
 ---
 # <a name="use-aggregations-in-power-bi-desktop"></a>Brug sammenlægninger i Power BI Desktop
 
@@ -75,7 +75,7 @@ De fleste valideringer gennemtvinges ved at deaktivere værdier på rullelisten 
 
 ### <a name="aggregation-tables-are-hidden"></a>Sammenlægningstabeller er skjulte
 
-Brugere med skrivebeskyttet adgang til datasættet kan ikke forespørge sammenlægningstabeller. Dette forhindrer sikkerhedsproblemer, når de bruges sammen med *sikkerhed på rækkeniveau (RLS)* . Brugere og forespørgsler refererer til detaljetabellen, ikke sammenlægningstabellen, og de behøver ikke at kende til sammenlægningstabellen.
+Brugere med skrivebeskyttet adgang til datasættet kan ikke forespørge sammenlægningstabeller. Dette forhindrer sikkerhedsproblemer, når de bruges sammen med *sikkerhed på rækkeniveau (RLS)*. Brugere og forespørgsler refererer til detaljetabellen, ikke sammenlægningstabellen, og de behøver ikke at kende til sammenlægningstabellen.
 
 Derfor er sammenlægningstabeller skjulte i visningen **Rapport**. Hvis tabellen ikke allerede er skjult, angiver dialogboksen **Administrer sammenlægninger** den som skjult, når du vælger **Anvend alle**.
 
@@ -186,6 +186,10 @@ I visse tilfælde kan funktionen DISTINCTCOUNT drage fordel af sammenlægninger.
 
 ![DISTINCTCOUNT-sammenlægningsforespørgsel](media/desktop-aggregations/aggregations-code_07.jpg)
 
+DAX-funktioner til time-intelligence er sammenlægningsfølsomme. Følgende forespørgsel finder sammenlægningen, fordi funktionen DATESYTD genererer en tabel med **CalendarDay**-værdier, og sammenlægningstabellen har en granularitet, der er dækket for gruppér efter-kolonner i tabellen **Dato**. Dette er et eksempel på et tabelspecifikt filter til funktionen CALCULATE, som kan bruges sammen med sammenlægninger.
+
+![SUMMARIZECOLUMNS-sammenlægningsforespørgsel](media/desktop-aggregations/aggregations-code-07b.jpg)
+
 ## <a name="aggregation-based-on-groupby-columns"></a>Sammenlægning baseret på GroupBy-kolonner 
 
 Hadoop-baserede big data-modeller har andre egenskaber end dimensionelle modeller. For at undgå joinforbindelser mellem store tabeller anvender big data-modeller ofte ikke relationer, men denormalisering af dimensionsattributter på faktatabeller. Du kan låse op for sådanne big data-modeller til interaktiv analyse ved hjælp af *sammenlægninger baseret på GroupBy-kolonner*.
@@ -291,7 +295,7 @@ Det følgende JSON-kodestykke viser et eksempel på outputtet fra hændelsen, n�
 
 Sammenlægninger, der kombinerer DirectQuery-, Import- og/eller Dual-lagringstilstande, kan returnere forskellige data, medmindre cachehukommelsen holdes synkroniseret med kildedataene. Udførelse af forespørgsler vil f.eks. ikke forsøge at maskere dataproblemer ved at filtrere DirectQuery-resultater for at matche cachelagrede værdier. Der er fastlagt teknikker til at håndtere sådanne problemer ved kilden, hvis det er nødvendigt. Optimeringer af ydeevnen må kun anvendes på måder, der ikke kompromitterer din mulighed for at imødekomme forretningskrav. Det er dit ansvar at kende dine dataflow og at designe i henhold hertil. 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger om sammensatte modeller under:
 

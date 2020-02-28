@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: 53432a0b3e6f09a558a189ef152c9d10645db546
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: 9998604bf3f0211490dee87596e2a0692072807c
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77259690"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427271"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Selvstudium: Integrer Power BI-indhold i dit program for nationale cloudmiljøer
 
@@ -54,7 +54,7 @@ I denne artikel vises den kode, der bruges i [prøveappen App Owns Data](https:/
 * Government Community Cloud (GCC):
 
     > [!NOTE]
-    > Integration af Power BI-indhold fra en GCC (Government Community Cloud) kan kun udføres med en Office 356 SKU. Andre nationale cloudkunder kan bruge [Office 356 eller Azure SKU'er](embedded-capacity.md).
+    > Integration af Power BI-indhold fra en GCC (Government Community Cloud) kan kun udføres med et Office 365-varenummer. Andre nationale cloudkunder kan bruge [Office 365- eller Azure-varenumre](embedded-faq.md).
 
 1. Overskriv Cloud.config-filen med GCCCloud.config-indhold.
 
@@ -434,7 +434,7 @@ Du kan finde et eksempel på et program i [Eksempel på integrering for din orga
 </script>
 ```
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * Du kan finde en eksempelapp på GitHub, som du kan gennemse. Ovenstående eksempler er baseret på denne prøveapp. Du kan finde flere oplysninger i [Prøveappen Embedding for your organization](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 

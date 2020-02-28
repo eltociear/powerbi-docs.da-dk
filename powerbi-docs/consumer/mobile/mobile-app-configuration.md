@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: painbar
-ms.openlocfilehash: 58b2f96b069815af448352b3b54875dc4d6b27ee
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: b7a02261e6e00c01befa8ba7716b9e0d132323ea
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76538261"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496760"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Du kan fjernkonfigurere Power BI-appen ved hjælp af MDM-værktøjet (Mobile Device Management)
 
@@ -51,7 +51,7 @@ Power BI-appen til Android giver administratorer mulighed for at konfigurere int
 | Nøgle | Type | Værdier | Beskrivelse |
 |---|---|---|---|
 | com.microsoft.powerbi.mobile.ReportTapInteraction | Streng |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Konfigurer, om tryk på visualisering også vil lave et datapunktvalg. |
-| ccom.microsoft.powerbi.mobile.RefreshAction | Streng |  <nobr>pull-to-refresh</nobr><br>knappen | Konfigurer, om brugeren skal have en knap til at opdatere rapporten, eller om han bruger træk-opdatering. |
+| com.microsoft.powerbi.mobile.RefreshAction | Streng |  <nobr>pull-to-refresh</nobr><br> knappen | Konfigurer, om brugeren skal have en knap til at opdatere rapporten, eller om han bruger træk-opdatering. |
 | com.microsoft.powerbi.mobile.FooterAppearance | Streng |  forankret<br>dynamisk | Konfigurer, om rapportfoden skal fastgøres nederst i rapporten eller skjules automatisk. |
 
 ## <a name="deploying-app-configuration-settings"></a>Udrulning af konfigurationsindstillinger for apps

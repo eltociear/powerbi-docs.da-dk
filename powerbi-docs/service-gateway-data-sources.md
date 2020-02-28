@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 02/21/2020
 ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2665e33d5f268bf8037634406aca819c23f3513c
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 15b3236741eb19d9f08601f9503e0380f54a8d63
+ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698181"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558708"
 ---
 # <a name="manage-data-sources"></a>Administrer datakilder
 
@@ -43,13 +43,26 @@ De fleste handlinger til administration af datakilder kan også udføres vha. AP
 
     ![Indstillinger for datakilde](media/service-gateway-data-sources/data-source-settings.png)
 
-5. Du kan vælge **godkendelsesmetoden** **Windows** eller **Basic** (SQL-godkendelse) for SQL Server. Hvis du vælger **Basic**, skal du angive legitimationsoplysningerne for datakilden.
+5. Du kan vælge **godkendelsesmetoden****Windows** eller **Basic** (SQL-godkendelse) for SQL Server. Hvis du vælger **Basic**, skal du angive legitimationsoplysningerne for datakilden.
 
-6. Under **Avancerede indstillinger** kan du eventuelt konfigurere [niveauet for beskyttelse af personlige oplysninger](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for din datakilde (gælder ikke for [DirectQuery](desktop-directquery-about.md)).
+6. Du kan konfigurere **Enkeltlogon (SSO)** for din datakilde under [Avancerede indstillinger](service-gateway-sso-overview.md). 
+
+    ![avancerede indstillinger](media/service-gateway-data-sources/advanced-settings-02.png)
+
+Du kan enten konfigurere **Brug SSO via Kerberos til DirectQuery-forespørgsler** eller **Brug SSO via Kerberos til DirectQuery- og importforespørgsler** for DirectQuery-baserede rapporter og **Brug SSO via Kerberos til DirectQuery- og importforespørgsler** for opdateringsbaserede rapporter.
+
+Hvis du bruger **Brug SSO via Kerberos til DirectQuery-forespørgsler** og bruger denne datakilde til en DirectQuery-baseret rapport, benyttes den bruger, der er knyttet til den (Azure) Active Directory-bruger, der logger på Power BI-tjenesten. I forbindelse med en opdateret rapport vil den bruge de legitimationsoplysninger, du angiver i felterne **Brugernavn** og **Adgangskode**.
+
+Hvis du bruger **Brug SSO via Kerberos til DirectQuery- og importforespørgsler**, behøver du ikke at angive legitimationsoplysninger. Hvis denne datakilde bruges til en DirectQuery-baseret rapport, benyttes den bruger, der er knyttet til den (Azure) Active Directory-bruger, der logger på Power BI-tjenesten.  I forbindelse med en opdateret rapport bruges sikkerhedskonteksten for datasættets ejer
+
+> [!NOTE]
+>SSO til importforespørgsler er kun tilgængelig for listen over SSO-datakilder, der bruger [Kerberos-begrænset delegering](service-gateway-sso-kerberos.md).
+
+7. Under **Avancerede indstillinger** kan du eventuelt konfigurere [niveauet for beskyttelse af personlige oplysninger](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for din datakilde (gælder ikke for [DirectQuery](desktop-directquery-about.md)).
 
     ![Avancerede indstillinger](media/service-gateway-data-sources/advanced-settings.png)
 
-7. Vælg **Tilføj** Du får vist *Forbindelsen er oprettet*, hvis processen lykkes.
+8. Vælg **Tilføj**. Du får vist *Forbindelsen er oprettet*, hvis processen lykkes.
 
     ![Forbindelsen er oprettet](media/service-gateway-data-sources/connection-successful.png)
 

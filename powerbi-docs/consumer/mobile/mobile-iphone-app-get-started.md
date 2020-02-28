@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: ba39718a5a458ec18af976806bc634d32843afb2
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: c766393c9a4c81c484afe6f934e1ebb8314d0fb9
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77259726"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426627"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Introduktion til Power BI-mobilappen på iOS-enheder
 Microsoft Power BI til iOS-appen på iPhone eller iPad leverer BI-mobiloplevelsen til Power BI, Power BI-rapportserver og Reporting Services. Få vist og interager med dit firmas dashboards lokalt og i skyen overalt – med direkte, berøringsfølsom mobiladgang. Udforsk data i dashboards, og del dem med dine kollegaer i mails eller sms-beskeder. Og hold dig ajour med dine mest tidsfølsomme data på dit [Apple Watch](mobile-apple-watch.md).  
@@ -32,7 +32,7 @@ Find ud af, [hvad der er nyt i Power BI-mobilappene](mobile-whats-new-in-the-mob
 ## <a name="download-the-app"></a>Download appen
 [Download iOS-appen](https://go.microsoft.com/fwlink/?LinkId=522062 "Download iOS-appen") fra Apple App Store på din iPhone eller iPad.
 
-Du kan køre Power BI til iOS-appen på alle enheder, der kører iOS 11 eller nyere. 
+Du kan køre Power BI-mobilappen til iOS på alle enheder, der kører iOS 11 eller nyere. 
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Tilmeld dig Power BI-tjenesten
 Hvis du ikke allerede har tilmeldt dig, kan du gå til [powerbi.com](https://powerbi.microsoft.com/get-started/). Under **Power BI – Cloudsamarbejde og -deling** skal du vælge **Prøv gratis**.
@@ -81,7 +81,7 @@ Microsoft Intune giver virksomhederne mulighed for at kontrollere ting som anmod
 
 Læs mere om at [konfigurere Power BI-mobilapps med Microsoft Intune](../../service-admin-mobile-intune.md). 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

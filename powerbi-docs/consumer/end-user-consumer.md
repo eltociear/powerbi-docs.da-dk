@@ -3,20 +3,21 @@ title: Hvad er Power BI til "forbruger"?
 description: Oversigt over Power BI til forbrugere (også kaldet slutbrugere eller forretningsbrugere).
 author: mihart
 ms.service: powerbi
-ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 10/31/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: bf5e83005e0bd1782e497cdeec1d3689e5749b12
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 100a9302e260a7c8f34c6fa07cc6b231e7271ce6
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863814"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496186"
 ---
 # <a name="the-power-bi-service-for-consumers"></a>Power BI-tjenesten til forbrugere
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 Du bor i en datakultur, hvor forretningsbeslutningerne er baseret på fakta og ikke holdninger. Du skal bruge data til at træffe disse beslutninger, og dine kolleger svigter dig ikke.     
  
@@ -43,6 +44,8 @@ Den måde, du interagerer med Power BI på, afhænger af din jobfunktion. Som sl
 Som forbruger har du ikke adgang til alle funktioner i Power BI – og det er helt fint, da det ikke er din opgave at oprette dashboards og rapporter. Din opgave er at bruge Power BI til analyse, overvågning, udforskning og beslutningstagning. 
 
 Du hører uden tvivl udtrykket "Power BI Desktop" eller blot "Desktop". Dette er et separat værktøj, som bruges af *designere*, der udarbejder og deler dashboards og rapporter med dig.  Det er vigtigt, at du er klar over, at der er andre Power BI-værktøjer derude, men så længe du er en forbruger, vil du kun arbejde med Power BI-tjenesten. 
+
+Eftersom du arbejder med *delt* indhold, har du brug for en Power BI Pro- eller Premium-licens. [Hvilken licens har jeg?](end-user-license.md)
 
 
 ## <a name="safely-interact-with-content"></a>Sikker interaktion med indhold 

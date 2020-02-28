@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c876a1f87afcb5bbaa3e27bdcb88bda2a04496e5
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 28d142ae92353f415f3cf29db959b24a8040c50b
+ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75758502"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558581"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tips og tricks til Power BI-kortvisualiseringer
 Power BI kan integreres med Bing Maps for at angive standardkortkoordinater (en proces, der kaldes geokodning), så du kan oprette kort. De bruger algoritmer til at identificere den korrekte placering, men nogle gange benyttes et kvalificeret gæt. Hvis Power BI forsøger, men ikke kan oprette kortvisualiseringen selv, bliver der gjort brug af Bing Kort. 
@@ -28,17 +28,17 @@ Du eller din administrator skal muligvis opdatere firewallen for at tillade adga
 Hvis du vil øge sandsynligheden for en korrekt geokodning, kan du følge disse tip. De første par tip er praktiske, hvis du har adgang til selve datasættet. De næste tip er ting, du kan gøre i Power BI, hvis du ikke har adgang til datasættet. 
 
 ## <a name="what-is-sent-to-bing-maps"></a>Hvad sendes der til Bing Maps?
-Power BI-tjenesten og Power BI Desktop sender de geodata til Bing, der skal bruges til at oprette kortvisualiseringen. Dette kan omfatte dataene i felterne **Placering**, **Breddegrad** og **Længdegrad** samt geofelter under filtrene under **Rapporteringsniveau**, **Sideniveau** eller **Visualiseringsniveau**. Det er korttypen, som afgør, hvad der sendes. Hvis du vil vide mere, skal du læse om [beskyttelse af personlige oplysninger i Bing Maps](https://go.microsoft.com/fwlink/?LinkID=248686).
+Power BI-tjenesten og Power BI Desktop sender de geodata til Bing, der skal bruges til at oprette kortvisualiseringen. Dette kan omfatte dataene i bucket'erne **Placering**, **Breddegrad**og **Længdegrad** i visual'ets feltoversigt. Det er korttypen, som afgør, hvad der sendes. Hvis du vil vide mere, skal du læse om [beskyttelse af personlige oplysninger i Bing Maps](https://go.microsoft.com/fwlink/?LinkID=248686).
 
-* Hvis der er angivet længdegrad og breddegrad for et kort (boblekort, punktvisningskort og punktplotkort), sendes der ingen data til Bing. Ellers sendes data i de to buckets **Placering** (og Filter) til Bing.     
+* Hvis der er angivet længdegrad og breddegrad for et kort (boblekort, punktvisningskort og punktplotkort), sendes der ingen data til Bing. Ellers sendes eventuelle data i bucket'en **Placering** til Bing.     
 
 * Kartogrammer kræver et felt i bucket'en **Placering**, selvom længdegrad og breddegrad er angivet. Uanset hvilke data der er angivet i de tre buckets **Placering**, **Længdegrad** og **Breddegrad**, sendes de til Bing.
   
-    I eksemplet herunder bruges feltet **Vendor** til geokodning, så alle leverandørdata sendes til Bing. Data fra felterne **Størrelse** og **Farvemætning** sendes ikke til Bing.
+    I eksemplet herunder bruges feltet **Vendor** til geokodning, så værdierne i kolonnen Vendor sendes til Bing. Data fra felterne **Størrelse** og **Farvemætning** sendes ikke til Bing.
   
     ![sendes til Bing Maps](./media/power-bi-map-tips-and-tricks/power-bi-sent-to-bing-new.png)
   
-    I det andet eksempel herunder bruges feltet **Territory** til geokodning, så alle områdedata sendes til Bing. Data fra felterne **Forklaring** og **Farvemætning** sendes ikke til Bing.
+    I det andet eksempel herunder bruges feltet **Territory** til geokodning, så værdierne i kolonnen Territory sendes til Bing. Data fra felterne **Forklaring** og **Farvemætning** sendes ikke til Bing.
   
     ![Udfyldte kort og Bing](./media/power-bi-map-tips-and-tricks/power-bi-filled-map.png)
 

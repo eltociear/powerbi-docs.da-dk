@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: tebercov
-ms.openlocfilehash: a15a27255f15bdce39ddb14a6cda798d170ba3ad
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4b17ed5458a6245ab5796edcf15f6dee5f885358
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871370"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77497131"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Opdater, slet og udtræk en skabelonapp
 
@@ -36,15 +36,21 @@ Hvis du har foretaget ændringer i Power BI Desktop, skal du starte med trin (1)
 
    Du kan nu se, at du har to versioner: Versionen i produktion samt en ny version i test.
 
-    ![To versioner af et skabelonprogram](media/service-template-apps-update-extract-delete/power-bi-template-app-update.png)
+    ![To versioner af et skabelonprogram](media/service-template-apps-update-extract-delete/power-bi-template-app-update1.png)
 
-5. Når du er klar til at hæve dit program til præproduktion med henblik på yderligere test uden for din lejer, skal du gå tilbage til ruden Udgivelsesadministration og vælge **Send app videre** ud for **Test**.
-6. Dit link er nu live. Send det til Cloud-partnerportalen (CCP) igen ved at følge trinnene for [opdatering af tilbud på Power BI-app](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
-7. Du skal **publicere** dit tilbud igen på Cloud Partner Portal og også have det valideret igen.
+1. Når du er klar til at hæve dit program til præproduktion med henblik på yderligere test uden for din lejer, skal du gå tilbage til ruden Udgivelsesadministration og vælge **Send app videre** ud for **Test**.
 
-   >[!NOTE]
-   >Du kan først sende din app videre til produktionsfasen, når appen er blevet godkendt af Cloud-partnerportalen, og du har publiceret den.
+   Du har nu en version i produktion og en version i præproduktion.
 
+   ![To versioner af et skabelonprogram er nedtonet](media/service-template-apps-update-extract-delete/power-bi-template-app-update2.png)
+
+   Dit link er nu live. **Bemærk, at knappen Send app videre i præproduktionsfasen er nedtonet**. Dette gøres for at forhindre, at linket til liveproduktionen overskrives ved et uheld til den aktuelle appversion, før Cloud-partnerportalen har valideret og godkendt den nye appversion.
+
+1. Send dit link til Cloud-partnerportalen (CCP) igen ved at følge trinnene for [opdatering af tilbud på Power BI-app](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). Du skal **publicere** dit tilbud igen i Cloud-partnerportalen og også have det valideret og godkendt igen.
+
+   Når dit tilbud er godkendt, bliver knappen Send app videre, aktiv igen. 
+1. Send din app videre til produktionsfasen.
+   
 ### <a name="update-behavior"></a>Funktionsmåde ved opdatering
 
 1. Når du opdaterer appen, kan installationsprogrammet for skabelonappen [opdatere en skabelonapp](service-template-apps-install-distribute.md#update-a-template-app) i det allerede installerede arbejdsområde uden at miste forbindelsen til konfigurationen.
@@ -58,7 +64,7 @@ Det er nu lettere end nogensinde før at gå tilbage til den tidligere version a
 
 1. I ruden til administration af versioner skal du trykke på **(...)**  og derefter på **Udtræk**.
 
-    ![udtræk version af skabelonapp](media/service-template-apps-update-extract-delete/power-bi-template-app-extract.png) ![udtræk version af skabelonapp](media/service-template-apps-update-extract-delete/power-bi-template-app-extract-dialog.png)
+    ![udtræk version af skabelonapp](media/service-template-apps-update-extract-delete/power-bi-template-app-extract.png)![udtræk version af skabelonapp](media/service-template-apps-update-extract-delete/power-bi-template-app-extract-dialog.png)
 2. Angiv et navn til det udtrukne arbejdsområde i dialogboksen. der tilføjes et nyt arbejdsområde.
 
 Den nye version af dit arbejdsområde nulstilles, og du kan fortsætte med at udvikle og distribuere skabelonappen fra det arbejdsområde, der er udtrukket for nylig.
@@ -69,7 +75,7 @@ Hvis du sletter en appversion, sletter du også URL-adressen til appen, og den v
 
 1. I ruden til administration af versioner skal du vælge ellipsen **(...)**  og derefter **Slet**.
  ![Slet version af skabelonapp](media/service-template-apps-update-extract-delete/power-bi-template-app-delete.png)
-  ![Slet version af skabelonapp](media/service-template-apps-update-extract-delete/power-bi-template-app-delete-dialog.png)
+ ![Slet version af skabelonapp](media/service-template-apps-update-extract-delete/power-bi-template-app-delete-dialog.png)
 
 >[!NOTE]
 >Sørg for, at du ikke sletter den appversion, der anvendes af kunder eller **AppSource**. Hvis du gør det, virker de ikke længere.

@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 02/12/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6337c4c5e3098d56e869b8ce71117da2413802e6
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: 976d53a5a74bc077d3d4642ccec336b1225344ae
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75925658"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426558"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser arbejde i nye arbejdsområder i Power BI
 
@@ -68,15 +68,16 @@ Her er egenskaberne for de fire roller: administratorer, medlemmer, bidragydere 
 | Tilføje/fjerne personer, herunder andre administratorer.  | X  |   |   |   |
 | Tilføje medlemmer eller andre med lavere tilladelser.  |  X | X  |   |   |
 | Publicer og opdater en app. |  X | X  |   |   |
-| Del et element, eller del en app. |  X | X  |   |   |
-| Give andre tilladelse til at dele elementer igen. |  X | X  |   |   |
+| Dele et element eller dele en app.<sup>1</sup> |  X | X  |   |   |
+| Give andre tilladelse til at dele elementer igen.<sup>1</sup> |  X | X  |   |   |
 | Oprette, redigere og slette indhold i arbejdsområdet.  |  X | X  | X  |   |
 | Publicere rapporter til arbejdsområdet, slette indhold.  |  X | X  | X  |   |
 | Oprette en rapport i et andet arbejdsområde, der er baseret på et datasæt i dette arbejdsområde.<sup>1</sup> |  X | X  | X  |   |
-| Kopiere en rapport.<sup>1</sup> | X | X | X |  |
-| Få vist og interagere med et element.<sup>2</sup> |  X | X  | X  | X  |
+| Kopiere en rapport.<sup>2</sup> | X | X | X |  |
+| Få vist og interagere med et element.<sup>3</sup> |  X | X  | X  | X  |
 
-1. Hvis du vil kopiere en rapport og oprette en rapport i et andet arbejdsområde, der er baseret på et datasæt i dette arbejdsområde, skal følgende kriterier være opfyldt:
+1. Bidragydere og seere kan dele elementer i et arbejdsområde, hvis de har tilladelsen Del igen.
+2. Hvis du vil kopiere en rapport og oprette en rapport i et andet arbejdsområde, der er baseret på et datasæt i dette arbejdsområde, skal følgende kriterier være opfyldt:
     - Du skal bruge en licens til Power BI Pro. Du kan finde flere oplysninger i det næste afsnit om [Licensering](#licensing).
     - Du skal have Build-tilladelse til datasættet. Personer med rolle som administrator, medlem og bidragyder har Build-tilladelse til datasæt for dette arbejdsområde gennem deres rolle i arbejdsområdet.
 2. Selvom du ikke har en Power BI Pro-licens, kan du få vist og interagere med elementer i Power BI-tjenesten, hvis elementerne findes i et arbejdsområde i en Premium-kapacitet.

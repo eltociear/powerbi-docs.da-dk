@@ -1,37 +1,37 @@
 ---
-title: Trinvis opdatering i Power BI Premium
-description: Få mere at vide om, hvordan du aktiverer meget store datasæt i Power BI Premium-tjenesten.
+title: Trinvis opdatering i Power BI
+description: Få mere at vide om, hvordan du aktiverer meget store datasæt i Power BI.
 author: davidiseminger
-ms.reviewer: kayu
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: cc2b005ef72700891a603162a281fbba23aa5120
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 852bdcdeb71f6dae555c37467145bad6b584e324
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699285"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527612"
 ---
-# <a name="incremental-refresh-in-power-bi-premium"></a>Trinvis opdatering i Power BI Premium
+# <a name="incremental-refresh-in-power-bi"></a>Trinvis opdatering i Power BI
 
-En trinvis opdatering gør det muligt at have meget store datasæt i Power BI Premium-tjenesten med følgende fordele:
+En trinvis opdatering gør det muligt at have meget store datasæt i Power BI med følgende fordele:
 
 > [!div class="checklist"]
 > * **Opdateringer sker hurtigere** – Det er kun ændrede data, der skal opdateres. Opdater f.eks. kun de sidste 5 dage i et datasæt på 10 år.
 > * **Opdateringer er mere pålidelig** – Det er ikke længere nødvendigt at vedligeholde langtidskørende forbindelser til ustabile kildesystemer.
 > * **Forbrug af ressourcer reduceres** – Hvis der skal opdateres færre data, reduceres det overordnede forbrug af hukommelsen og andre ressourcer.
 
+> [!NOTE]
+> Trinvis opdatering er nu tilgængelig for Power BI Pro, Premium og delte abonnementer og datasæt. 
+
 ## <a name="configure-incremental-refresh"></a>Konfigurer trinvis opdatering
 
 Politikker om trinvis opdatering er defineret i Power BI Desktop og anvendes, når de er publiceret i Power BI-tjenesten.
 
-Start ved at aktivere trinvis opdatering i **funktioner til eksempelvisning**.
-
-![Indstillinger – funktioner til eksempelvisning](media/service-premium-incremental-refresh/preview-features.png)
 
 ### <a name="filter-large-datasets-in-power-bi-desktop"></a>Filtrer store datasæt i Power BI Desktop
 
@@ -54,7 +54,7 @@ Du skal sikre, at rækker filtreres, hvor kolonneværdien *er efter eller lig me
 ![Filtrer rækker](media/service-premium-incremental-refresh/filter-rows.png)
 
 > [!IMPORTANT]
-> Kontrollér, at forespørgsler har et lighedstegn (=) ved enten **RangeStart** eller **RangeEnd**, men ikke begge. Hvis lighedstegnet (=) er ved begge parametre, kan en række opfylde betingelserne for to partitioner, hvilket kan medføre, at data i modellen duplikeres. Eksempel:  
+> Kontrollér, at forespørgsler har et lighedstegn (=) ved enten **RangeStart** eller **RangeEnd**, men ikke begge. Hvis lighedstegnet (=) er ved begge parametre, kan en række opfylde betingelserne for to partitioner, hvilket kan medføre, at data i modellen duplikeres. F.eks.  
 > \#"Filtrerede rækker" = Table.SelectRows(dbo_Fact, hver [OrderDate] **>= RangeStart** og [OrderDate] **<= RangeEnd**) kan medføre duplikerede data.
 
 > [!TIP]
@@ -72,7 +72,7 @@ Filteret i datokolonnen bruges til dynamisk partitionering af dataene i interval
 
 Det er vigtigt, at partitionsfiltre pushes til kildesystemet, når der sendes forespørgsler til opdatering. For at kunne pushe filtrering ned skal datakilden understøtte forespørgselsfoldning. De fleste datakilder, der understøtter SQL-forespørgsler, understøtter forespørgselsfoldning. Det gør datakilder, som flade filer, BLOBs, web og OData-feeds, imidlertid ikke. I de tilfælde, hvor filteret ikke understøttes af datakildens backend, kan det ikke pushes ned. I sådanne tilfælde kompenserer miksprogrammet og anvender filteret lokalt, hvilket kan kræve, at hele datasættet skal hentes fra datakilden. Dette kan medføre, at trinvis opdatering er meget langsom, og processen kan løbe tør for ressourcer enten i Power BI-tjenesten eller i datagatewayen i det lokale miljø, hvis de bruges.
 
-På grund af de forskellige supportniveauer af forespørgselsfoldning for de enkelte datakilder anbefales det, at det kontrolleres, at filterlogikken er inkluderet i kildeforespørgslerne. For at gøre det nemmere forsøger Power BI Desktop til at udføre denne kontrol for dig. Hvis det var ikke muligt at bekræfte, vises der en advarsel i dialogboksen til trinvis opdatering, når du definerer politikken for trinvis opdatering. SQL-baserede datakilder, som SQL, Oracle og Teradata, kan bruge denne advarsel. Andre datakilder kan muligvis ikke bekræfte uden at spore forespørgsler. Hvis Power BI Desktop ikke kan bekræfte, vises følgende advarsel.
+På grund af de forskellige supportniveauer af forespørgselsfoldning for de enkelte datakilder anbefales det, at det kontrolleres, at filterlogikken er inkluderet i kildeforespørgslerne. For at gøre det nemmere forsøger Power BI Desktop til at udføre denne kontrol for dig. Hvis det var ikke muligt at bekræfte, vises der en advarsel i dialogboksen til trinvis opdatering, når du definerer politikken for trinvis opdatering. SQL-baserede datakilder, som SQL, Oracle og Teradata, kan bruge denne advarsel. Andre datakilder kan muligvis ikke bekræfte uden at spore forespørgsler. Hvis Power BI Desktop ikke kan bekræfte, vises følgende advarsel. Hvis du får vist denne advarsel og gerne vil kontrollere, at den nødvendige forespørgselsdelegering finder sted, kan du bruge funktionen Forespørgselsdiagnosticering eller spore de forespørgsler, du har modtaget fra kildedatabasen.
 
  ![Forespørgselsfoldning](media/service-premium-incremental-refresh/query-folding.png)
 
@@ -93,7 +93,7 @@ Dialogboksen Trinvis opdatering vises. Brug til/fra-tasten til at aktivere dialo
 
 Teksten i sidehovedet forklarer følgende:
 
-- Trinvis opdatering understøttes kun for arbejdsområder med Premium-kapacitet. Opdateringspolitikker defineres i Power BI Desktop, og de anvendes af opdateringshandlinger i tjenesten.
+- Opdateringspolitikker defineres i Power BI Desktop, og de anvendes af opdateringshandlinger i tjenesten.
 
 - Hvis du ikke kan hente den PBIX-fil, der indeholder en politik for trinvis opdatering, fra Power BI-tjenesten, kan den ikke åbnes i Power BI Desktop. Dette understøttes muligvis i fremtiden, men vær opmærksom på, at disse datasæt kan vokse sig så store, at det er upraktisk at downloade og åbne dem på en normal stationær computer.
 
@@ -110,6 +110,13 @@ I følgende eksempel defineres en opdateringspolitik, hvor data for 5 hele kalen
 Under den første opdatering i Power BI-tjenesten kan det tage længere tid at importere alle fem hele kalenderår. Efterfølgende opdateringer kan udføres på meget kortere tid.
 
 ![Opdateringsintervaller](media/service-premium-incremental-refresh/refresh-ranges.png)
+
+
+#### <a name="current-date"></a>Aktuel dato
+
+Den *aktuelle dato* er baseret på systemdatoen for opdateringstidspunktet. Hvis en planlagt opdatering er aktiveret for datasættet i Power BI-tjenesten, tages der hensyn til den pågældende tidszone, når den aktuelle dato fastsættes. Der tages hensyn til tidszonen for både manuelt udløste og planlagte opdateringer, hvis tidszonen er tilgængelig. En opdatering, der finder sted kl. 20.00 Pacific Time (USA og Canada) og har en angiven tidszone, fastsætter den aktuelle dato ud fra Pacific Time og ikke GMT (hvilket i så fald ville være den efterfølgende dag).
+
+![Tidszone](media/service-premium-incremental-refresh/time-zone2.png)
 
 > [!NOTE]
 > En definition af disse intervaller kan være det eneste, du skal bruge, og i dette tilfælde kan du gå direkte til trinnet for publicering nedenfor. De ekstra rullemenuer bruges til avancerede funktioner.
@@ -143,10 +150,6 @@ Et andet eksempel er opdatering af data fra et økonomisystem, hvor data for den
 > Opdateringshandlinger i tjenesten kører i UTC-tid. Dette kan være afgørende for ikrafttrædelsesdatoen og have indflydelse på samlede perioder. Vi har planer om at gøre det muligt at tilsidesætte ikrafttrædelsesdatoen for en opdateringshandling.
 
 ## <a name="publish-to-the-service"></a>Publicer i tjenesten
-
-Da trinvis opdatering kun er en Premium-funktion, kan der i dialogboksen Publicer kun vælges et arbejdsområde med Premium-kapacitet.
-
-![Publicer i tjenesten](media/service-premium-incremental-refresh/publish.png)
 
 Du kan nu opdatere modellen. Den første opdatering kan tage længere tid, da oversigtsdataene skal importeres. Efterfølgende opdateringer kan være meget hurtigere, fordi der bruges en trinvis opdatering.
 

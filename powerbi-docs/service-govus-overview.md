@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 02/19/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 26dabde3846ec33e2f5910de75fb8165cce6513a
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 590b00f5eb03b1bd31430866a52faa4748f9b32a
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76160759"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496933"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til kunder i den amerikanske stat
 Denne artikel er for kunder inden for de amerikanske offentlige myndigheder, der udruller Power BI som en del af en Office 365-plan til offentlige myndigheder. Planer til offentlige myndigheder er designet til at opfylde de særlige behov hos organisationer, der overholder amerikanske standarder og sikkerhedsstandarder. Power BI-tjenesten, der er udviklet til kunder inden for de amerikanske offentlige myndigheder, adskiller sig fra den kommercielle version af Power BI-tjenesten. Disse funktionsforskelle og egenskaber er beskrevet i følgende afsnit.
@@ -37,7 +37,7 @@ Office 365 indeholder forskellige miljøer, så de offentlige myndigheder kan op
 
 * [Office 365 GCC (Government Community Cloud)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) er udviklet til forbundsmyndigheder samt statslige og lokale myndigheder.
 
-* [Office 365 GCC High (Government Community Cloud High)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) er designet til forbundsmyndigheder, forsvarsindustrien, rumfartsindustrien og andre organisationer, der opbevarer kontrollerede ikke-klassificerede oplysninger. Dette miljø egner sig til nationale sikkerhedsorganisationer og virksomheder med ITAR-data (International Traffic in Arms Regulations) eller DFARS-krav (Defense Federal Acquisition Regulations Supplement).
+* [Office 365 GCC High (Government Community Cloud High)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) er udviklet til forbundsmyndigheder, forsvarsindustrien, rumfartsindustrien og andre organisationer, der opbevarer kontrollerede ikke-klassificerede oplysninger. Dette miljø egner sig til nationale sikkerhedsorganisationer og virksomheder med ITAR-data (International Traffic in Arms Regulations) eller DFARS-krav (Defense Federal Acquisition Regulations Supplement).
 
 * [Office 365 DoD-miljøet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) er designet udelukkende til Det amerikanske forsvarsministerium. 
 
@@ -89,12 +89,12 @@ Der er visse forskelle mellem offentlige planer og kommercielle planer for at im
 |Rapportoprettelse|Opret og få vist dashboards og rapporter|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Planlagt dataopdatering|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Teamdashboards, der kan opdateres|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Sideinddelte rapporter|Kun tilgængelig i USGov Texas og USGov Virginia |Tilgængelig|Er på vej|
+|  |Sideinddelte rapporter|Tilgængelig|Tilgængelig|Er på vej|
 |  |Skabelonapps|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
 |Opret forbindelse til data|Importér data og rapporter fra Excel|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Importér data fra CSV-filer|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Importér data fra Power BI Desktop-filer|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Forbindelse til CDS|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
+|  |Forbindelse til CDS|Tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
 |  |Azure Data Lake Storage Gen2-connector|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
 |Dataadministration|Dataadministrationsgateway|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Datakryptering i Azure SQL|Tilgængelig|Tilgængelig|Tilgængelig|
@@ -103,7 +103,7 @@ Der er visse forskelle mellem offentlige planer og kommercielle planer for at im
 |  |Integrer i SharePoint Online ved hjælp af Embed-webdelen|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Dataflows og AI-funktioner|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
 |  |Power Automate-forbindelse til datadrevne underretninger|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
-|  |Power BI-fanen i Teams|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
+|  |Power BI-fanen i Teams|Tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
 |  |Automatiseret maskinel indlæring|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
 |  |Cognitive Services|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
 |  |Azure ML|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
@@ -111,7 +111,6 @@ Der er visse forskelle mellem offentlige planer og kommercielle planer for at im
 ## <a name="next-steps"></a>Næste trin
 
 * [Tilmeld dig Power BI for US Government](service-govus-signup.md)
+* [Microsoft Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
+* [Power Automate US Government](https://docs.microsoft.com/power-automate/us-govt)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Demo om Power BI US Government</a>
-* [Kom i gang med Power BI-tjenesten](service-get-started.md)
-* [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
-

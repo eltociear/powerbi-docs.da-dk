@@ -1,18 +1,18 @@
 ---
 title: Opret en sideinddelt rapport med et delt datasæt i Power BI – Power BI Report Builder
 description: Opret en sideinddelt rapport i Power BI Report Builder baseret på et delt datasæt i Power BI.
-ms.date: 01/03/2020
+ms.date: 02/12/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 335b93720718bb72027c29c6093aad952cc4cdb2
-ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
+ms.openlocfilehash: 4a46f0aae642b42cd797940e0b0991cfa77a077e
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691474"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427828"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Opret en sideinddelt rapport baseret på et delt datasæt i Power BI
 
@@ -27,6 +27,7 @@ Datasættet behøver ikke at være i et arbejdsområde i en Premium-kapacitet, o
 Her er en liste over, hvad du skal bruge, og hvad du ikke behøver for at bruge et delt datasæt i Power BI Report Builder.
 
 - Power BI Report Builder. [Download og installér Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).
+- Power BI Desktop. [Download og installér Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 - Hvis du vil have adgang til et Power BI datasæt, skal du have Build-tilladelse til datasættet. Læs mere om [Build-tilladelse](service-datasets-build-permissions.md).
 - Du behøver ikke en Power BI Pro-licens for at oprette en sideinddelt rapport i Report Builder. 
 - Du skal have en Power BI Pro-licens for at publicere din sideinddelte rapport. Du skal også som minimum have rollen bidragyder for et arbejdsområde i en Premium-kapacitet. 
@@ -57,12 +58,26 @@ Her er en liste over, hvad du skal bruge, og hvad du ikke behøver for at bruge 
     Husk, at du kan oprette forbindelse til flere Power BI-datasæt og andre datakilder i den samme sideinddelte rapport.
 
 
-## <a name="get-the-query-for-the-dataset"></a>Hent forespørgslen til datasættet
+## <a name="get-the-dax-query-for-the-dataset"></a>Hent DAX-forespørgslen for datasættet
 
 Hvis du vil have, at dataene i din Power BI-rapport og i din Report Builder-rapport skal være ens, er det ikke nok at oprette forbindelse til datasættet. Du skal også bruge den forespørgsel, der bygger på dette datasæt.
 
+### <a name="video-get-the-dax-query"></a>Video: Hent DAX-forespørgslen
+
+I følgende video demonstrerer Chris Finlan, hvordan du henter den DAX, du skal bruge til din sideinddelte rapport.
+
+<iframe width="400" height="450" src="https://www.youtube.com/embed/NfoOK4QRkhI" frameborder="0" allowfullscreen></iframe>
+
+### <a name="steps-to-get-the-dax-query"></a>Trin til hentning af DAX-forespørgslen
+
+Her kan du se trinnene til hentning af forespørgslen.
+
 1. Åbn Power BI-rapporten (.pbix) i Power BI Desktop.
-1. Sørg for, at du har en tabel i din rapport, der indeholder alle de data, du ønsker i din sideinddelte rapport.
+1. Sørg for, at du har en tabel i din rapport, der indeholder alle de data, du ønsker i din sideinddelte rapport. Tabellen skal opfylde disse to krav:
+    - Det skal være en flad tabel, ikke en matrix eller et andet visual. Hvis det ikke er en tabel, kan du konvertere den til en tabel nu, gennemgå Effektivitetsanalyse-trinnene, der følger efter, og derefter konvertere den tilbage til det ønskede visual.
+    - Du skal bruge *foruddefinerede målinger* til dine numeriske felter. Der er et lommeregnersymbol ud for dem. Læs om [oprettelse af målinger](desktop-measures.md). 
+
+        ![Ikonet Måling](media/report-builder-shared-datasets/power-bi-measure-icon.png)
 
 1. Vælg **Effektivitetsanalyse** på båndet **Vis**.
 
@@ -72,7 +87,7 @@ Hvis du vil have, at dataene i din Power BI-rapport og i din Report Builder-rapp
 
     ![Opdater visuals](media/report-builder-shared-datasets/power-bi-performance-analyzer-refresh-visuals.png)
 
-1. Udvid plustegnet ( **+** ) ved siden af tabelnavnet, og vælg derefter **Kopiér forespørgsel**. Forespørgslen er den DAX-formel, du skal bruge til datasættet i Power BI Report Builder.
+1. Udvid plustegnet (**+**) ved siden af tabelnavnet, og vælg derefter **Kopiér forespørgsel**. Forespørgslen er den DAX-formel, du skal bruge til datasættet i Power BI Report Builder.
 
     ![Kopiér forespørgslen](media/report-builder-shared-datasets/power-bi-performance-analyzer-copy-query.png)
 
@@ -157,7 +172,7 @@ Du har flere formateringsmuligheder, så du kan få tabellen til at passe på é
 1. Du kan reducere sidemargenerne i ruden Egenskaber. Hvis du ikke kan se ruden Egenskaber, skal du markere afkrydsningsfeltet **Egenskaber** på båndet **Vis**.
 
 1. Vælg rapporten, ikke tabellen eller titlen.
-1. I ruden **Egenskaber for rapport** skal du under **Side** udvide **Margener** og ændre dem alle til **0,75"** .
+1. I ruden **Egenskaber for rapport** skal du under **Side** udvide **Margener** og ændre dem alle til **0,75"**.
 
     ![Sæt sidemargener](media/report-builder-shared-datasets/power-bi-report-builder-page-margins.png)
 
@@ -204,6 +219,7 @@ Antag f.eks., at din rapport har et format på 8,5" x 11", og du har angivet, at
 
 - For de datasæt, der bruger en direkte forbindelse til Analysis Services, kan du oprette forbindelse direkte ved hjælp af den indbyggede Analysis Services-forbindelse i stedet for et delt datasæt.
 - Datasæt med hævede eller certificerede påtegninger vises på listen over tilgængelige datasæt, men de er ikke markeret som sådanne. 
+- Du kan ikke integrere sideinddelte rapporter, som er baseret på delte Power BI-datasæt i scenariet "App Owns Data".
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 02/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0cf9d6acd4fe5f729dafb575a2ab736b9e8db7bb
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: f13c8f34fbbe927ee6929a0b3e717248aedd63d0
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76039805"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427547"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 
@@ -89,8 +89,8 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 * Vertica
 * Snowflake
 * Essbase
-* AtScale-kuber (beta)
-* BI Connector
+* AtScale-kuber
+* BI Connector Data Virtuality LDW (beta)
 * Denodo
 * Dremio
 * Exasol
@@ -162,7 +162,6 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Adobe Analytics
 * appFigures (beta)
 * Data.World - Get Dataset (Beta)
-* Facebook
 * GitHub (beta)
 * LinkedIn Sales Navigator (Beta)
 * MailChimp (beta)
@@ -182,6 +181,7 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Dynamics 365 Customer Insights (beta)
 * Emigo-datakilde
 * Entersoft Business Suite (Beta)
+* FactSet Analytics (beta)
 * Industrial App Store
 * Intune Data Warehouse (Beta)
 * Microsoft Graph Security (beta)
@@ -210,7 +210,10 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * ODBC
 * OLE DB
 * BI360 - Budgeting & Financial Reporting (Beta)
+* FHIR
 * Information Grid (Beta)
+* Jamf Pro (beta)
+* MicroStrategy for Power BI
 * Paxatas
 * QubolePresto (Beta)
 * Roamler (Beta)
@@ -219,6 +222,7 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Tenforce (Smart)List (Beta)
 * Vena (beta)
 * Workforce Dimensions (beta)
+* Zucchetti HR Infinity (beta)
 * Tom forespørgsel
 
 På følgende billede vises vinduet **Hent data** for **Andet**.
@@ -459,7 +463,7 @@ URL-adressen skal pege på selve SharePoint-webstedet og ikke en liste på webst
 }
 ```
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan gøre mange forskellige ting med Power BI Desktop. Du kan finde flere oplysninger om funktionerne i følgende ressourcer:
 

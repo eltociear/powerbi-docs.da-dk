@@ -9,16 +9,16 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: bfa4534b625a965226dfced17403a7e2da7a7f84
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: b5ef7e99edbf862891811047ea5f1f961aaea348
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74699193"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527585"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Oversigt over enkeltlogon (SSO) til gateways i Power BI
 
-Du kan få problemfri forbindelse med enkeltlogon, så Power BI-rapporter og -dashboards kan opdateres fra data i det lokale miljø i realtid, ved at konfigurere din datagateway i det lokale miljø. Du har mulighed for at konfigurere din gateway med enten begrænset [Kerberos](service-gateway-sso-kerberos.md)-delegering eller [SAML](service-gateway-sso-saml.md) (Security Assertion Markup Language). Datagatewayen i det lokale miljø understøtter SSO ved hjælp af [DirectQuery](desktop-directquery-about.md), som opretter forbindelse til datakilder i det lokale miljø.
+Du kan få problemfri forbindelse med enkeltlogon, så Power BI-rapporter og -dashboards kan opdateres fra data i det lokale miljø i realtid, ved at konfigurere din datagateway i det lokale miljø. Du har mulighed for at konfigurere din gateway med enten begrænset [Kerberos](service-gateway-sso-kerberos.md)-delegering eller [SAML](service-gateway-sso-saml.md) (Security Assertion Markup Language). Datagatewayen i det lokale miljø understøtter SSO ved hjælp af [DirectQuery](desktop-directquery-about.md) eller Opdater, som opretter forbindelse til datakilder i det lokale miljø. 
 
 Power BI understøtter følgende datakilder:
 
@@ -33,7 +33,9 @@ Power BI understøtter følgende datakilder:
 
 Vi understøtter i øjeblikket ikke SSO til [M-udvidelser](https://github.com/microsoft/DataConnectors/blob/master/docs/m-extensions.md).
 
-Når en bruger interagerer med en DirectQuery-rapport i Power BI-tjenesten, kan hver handling for krydsfiltrering, udsnit, sortering og rapportredigering resultere i forespørgsler, der udføres direkte i forhold til den underliggende datakilde i det lokale miljø. Når du konfigurerer SSO for datakilden, udføres forespørgsler i henhold til identiteten for den bruger, som interagerer med Power BI (dvs. via weboplevelsen eller Power BI-mobilapps). Derfor ser hver enkelt bruger præcist de data, de har tilladelser til i den underliggende datakilde. Når enkeltlogon er konfigureret, forekommer der ingen cachelagring af delte data på tværs af forskellige brugere.
+Når en bruger interagerer med en DirectQuery-rapport i Power BI-tjenesten, kan hver handling for krydsfiltrering, udsnit, sortering og rapportredigering resultere i forespørgsler, der udføres direkte i forhold til den underliggende datakilde i det lokale miljø. Når du konfigurerer SSO for datakilden, udføres forespørgsler i henhold til identiteten for den bruger, som interagerer med Power BI (dvs. via weboplevelsen eller Power BI-mobilapps). Derfor ser hver enkelt bruger præcist de data, de har tilladelser til i den underliggende datakilde. 
+
+Du kan også konfigurere en rapport, der er konfigureret til opdatering i Power BI-tjenesten, til at bruge SSO. Når du konfigurerer SSO for denne datakilde, udføres forespørgslerne under identiteten af datasættes ejer i Power BI. Opdateringen finder derfor sted på baggrund af tilladelserne til den underliggende datakilde for datasættets ejer. Opdatering ved hjælp af SSO er i øjeblikket kun aktiveret for datakilder, der bruger begrænset [Kerberos-delegering](service-gateway-sso-kerberos.md). 
 
 ## <a name="query-steps-when-running-sso"></a>Forespørgselstrin under kørsel af SSO
 

@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: c59f1c1653e3b1a506f342bffed6fa539dfe58b3
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: d56e329d5331403c0ed0ce4da28bf73aea65d9a6
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76819577"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427869"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -233,14 +233,14 @@ Brugere kan se forskellige indstillinger på brugergrænsefladen afhængigt af i
 
 ### <a name="export-data"></a>Eksportér data
 
-Brugere i virksomheden kan eksportere data fra et felt eller visualisering. [Få mere at vide](visuals/power-bi-visualization-export-data.md)
+Brugere i virksomheden kan eksportere data fra et felt eller en visualisering. Få mere at vide om [eksport af data fra et felt eller en visualisering](visuals/power-bi-visualization-export-data.md).
 
 På følgende billede ses indstillingen for at eksportere data fra et felt.
 
 ![Eksportér data fra et felt](media/service-admin-portal/powerbi-admin-export-data.png)
 
 > [!NOTE]
-> Hvis **Eksportér data** deaktiveres, kan brugere ikke anvende funktionen **Analysér i Excel** og heller ikke bruge Power BI-tjenestens direkte forbindelse.
+> Hvis **Eksportér data** deaktiveres, kan brugere ikke anvende funktionen [Analysér i Excel](service-analyze-in-excel.md) og heller ikke bruge Power BI-tjenestens direkte forbindelse.
 
 ### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Eksportér rapporter som PowerPoint-præsentationer eller PDF-dokumenter
 

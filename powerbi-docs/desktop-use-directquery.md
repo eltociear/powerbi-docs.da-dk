@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 02/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 90721b059958e59cfd74f9ba1d0d25617a7438e6
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: d8432ae10afab6cbf12c017a8f315fd55825212d
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76889276"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427225"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Brug DirectQuery i Power BI Desktop
 Når du opretter forbindelse til din datakilde i *Power BI Desktop*, er det altid muligt at importere en kopi af dataene til Power BI Desktop. For nogle datakilder findes der en anden mulighed: Du kan oprette direkte forbindelse til datakilden med DirectQuery.
@@ -46,8 +46,6 @@ Der er nogle få fordele ved at bruge DirectQuery:
 
 ## <a name="limitations-of-directquery"></a>Begrænsninger i DirectQuery
 Der er i øjeblikket nogle få begrænsninger ved at bruge DirectQuery:
-
-- Alle tabeller skal komme fra en enkelt database, medmindre du bruger [sammensatte modeller](desktop-composite-models.md).
 
 - Hvis forespørgslen i **Forespørgselseditor** er for kompliceret, vil der opstå en fejl. Når du skal løse fejlen, skal du enten slette det fejlbehæftede trin i **Forespørgselseditor**, eller du skal i stedet *importere* dataene i stedet for at bruge DirectQuery. For flerdimensionelle datakilder som SAP Business Warehouse er der ingen **Forespørgselseditor**.
 
@@ -94,7 +92,7 @@ Hvis den anvendte datakilde ikke behøver **datagatewayen i det lokale miljø** 
 
 4. Tilføj legitimationsoplysningerne. Ellers opstår der en fejl, når du åbner en publiceret rapport eller udforsker et datasæt, der er oprettet via en DirectQuery-forbindelse.
 
-Hvis du vil foretage en dataforbindelse til andre datakilder end **Azure SQL Database**, **Azure SQL Data Warehouse** og **Redshift**, der bruger DirectQuery, skal du installere en **datagateway i det lokale miljø** og registrere datakilden. Du kan finde flere oplysninger i [Hvad er en datagateway i det lokale miljø?](service-gateway-onprem.md)
+Hvis du vil foretage en dataforbindelse til andre datakilder end **Azure SQL Database**, **Azure SQL Data Warehouse** og **Redshift** eller **Snowflake Data Warehouse**, der bruger DirectQuery, skal du installere en **datagateway i det lokale miljø** og registrere datakilden. Du kan finde flere oplysninger i [Hvad er en datagateway i det lokale miljø?](service-gateway-onprem.md)
 
 ## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om DirectQuery i følgende ressourcer:

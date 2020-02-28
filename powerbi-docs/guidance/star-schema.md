@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 241789dc6255dd461ef6cc62425b732788d7c63d
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: 85db7414fc476f2a62368d150e068a71c13d41cb
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410852"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527516"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI
 
@@ -71,9 +71,10 @@ Det er vigtigt at forstå, at Power BI-modeller understøtter en anden metode fo
 
 ![Eksempel på ikon på feltliste](media/star-schema/field-list-example.png)
 
-Der er dog to overbevisende grunde til, at du bør oprette målinger selv for simple opsummeringer på kolonneniveau:
+Der er dog tre overbevisende grunde til, at du bør oprette målinger selv for simple opsummeringer på kolonneniveau:
 
-- Når du ved, at dine rapportforfattere sender forespørgsler til modellen ved hjælp af [flerdimensionelle udtryk (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017), så skal modellen indeholde _eksplicitte målinger_. Eksplicitte målinger defineres ved hjælp af DAX. Denne designmetode er yderst relevant, når der sendes en forespørgsel til et Power BI-datasæt ved hjælp af MDX, da MDX ikke kan opnå opsummering af kolonneværdier. MDX bruges især, når der udføres [analyser i Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel) (pivottabeller udsteder MDX-forespørgsler).
+- Når du ved, at rapportforfatterne sender forespørgsler til modellen ved hjælp af [flerdimensionelle udtryk (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017), skal modellen indeholde _eksplicitte målinger_. Eksplicitte målinger defineres ved hjælp af DAX. Denne designmetode er yderst relevant, når der sendes en forespørgsel til et Power BI-datasæt ved hjælp af MDX, da MDX ikke kan opnå opsummering af kolonneværdier. MDX bruges især, når der udføres [analyser i Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel) (pivottabeller udsteder MDX-forespørgsler).
+- Når du ved, at rapportforfatterne opretter sideinddelte rapporter i Power BI ved hjælp af MDX-forespørgselsdesigneren, skal modellen indeholde eksplicitte metoder. Det er kun MDX-forespørgselsdesigneren, der understøtter [serversamlinger](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). Hvis det er nødvendigt for rapportforfatterne at have målinger, der evalueres af Power BI (i stedet for af det sideinddelte rapportprogram), skal de derfor bruge MDX-forespørgselsdesigneren.
 - Hvis du vil sikre dig, at dine rapportforfattere kun kan opsummere kolonner på bestemte måder. Kolonnen **Enhedspris** for forhandlersalg (der repræsenterer en pris pr. enhed) kan f.eks. opsummeres, men kun ved hjælp af bestemte sammenlægningsfunktioner. Den bør aldrig lægges sammen, men den kan passende opsummeres ved hjælp af andre sammenlægningsfunktioner (min., maks., gennemsnit osv.). I dette tilfælde kan modeludvikleren skjule kolonnen **Enhedspris** og oprette målinger for alle relevante sammenlægningsfunktioner.
 
 Bemærk, at denne designtilgang fungerer godt til rapporter, der er forfattet i Power BI-tjenesten, og til Spørgsmål og svar. Direkte forbindelser i Power BI Desktop giver dog rapportforfattere mulighed for at få vist skjulte felter i ruden **Felter**, der kan resultere i omgåelse af denne designtilgang.

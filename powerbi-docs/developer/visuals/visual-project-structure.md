@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2020
-ms.openlocfilehash: 16e7a317102602ffb4faf04da0ed2cae588a2a4d
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: 58c226fd66c2551565f85ee75bd06469a46c4128
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75925523"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427064"
 ---
 # <a name="power-bi-visual-project-structure"></a>Struktur for visual-projekter i Power BI
 
@@ -115,7 +115,7 @@ Denne fil indeholder [TSLint-konfigurationen](https://palantir.github.io/tslint/
 Kommentarerne i den følgende kodetekst fra `pbiviz.json`-filen beskriver metadataposterne.
 
 > [!NOTE]
-> * Fra version 3.x.x af **pbiciz**-værktøjet understøttes `externalJS` ikke.
+> * Fra version 3.x.x af **pbiviz**-værktøjet understøttes `externalJS` ikke.
 > * Hvis du vil have hjælp til lokaliseringen, skal du [føje landestandarden for Power BI til visualiseringen](./localization.md).
 
 ```json

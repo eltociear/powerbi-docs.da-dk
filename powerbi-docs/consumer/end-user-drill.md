@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 21d663b2f29a8090e6cfb7013d16c739ef0a29b3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7c0c08e8056232fa7c60b20faf48b0137a19bc5f
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851446"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496390"
 ---
 # <a name="drill-mode-in-a-visual-in-power-bi"></a>Analysetilstand i en visualisering i Power BI
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -32,6 +34,7 @@ Datoer er en unik type i hierarkiet.  Rapportdesignere tilføjer ofte datohierar
 Ved du, hvilke Power BI-visualiseringer der indeholder et hierarki? Peg på en visualisering. Hvis du får vist en kombination af disse analysekontrolelementer øverst, har visualiseringen et hierarki.
 
 ![Skærmbillede af analyseikonerne.](./media/end-user-drill/power-bi-drill-icons.png)  
+
 
 ## <a name="learn-how-to-drill-down-and-up"></a>Få mere at vide om, hvordan du zoomer ind på og ud fra detaljeniveauet
 
@@ -108,7 +111,7 @@ Du kan også vælge at bruge detailudledning eller at udvide ét felt ad gangen.
 
 Det er ikke så informativt at have en træstruktur, der kun viser et postnummer.  Lad os *udvide* ét niveau ned i hierarkiet.  
 
-1. Med træstrukturen aktiveret kan du vælge ikonet *udvid ned* ![skærmbillede af ikonet udvid ned](./media/end-user-drill/power-bi-drill-icon6.png). Nu vises to niveauer af hierarkiet i træstrukturen: postnummer og butiksnavn.
+1. Med træstrukturen aktiveret kan du vælge ikonet *udvid ned*![skærmbillede af ikonet udvid ned](./media/end-user-drill/power-bi-drill-icon6.png). Nu vises to niveauer af hierarkiet i træstrukturen: postnummer og butiksnavn.
 
     ![Skærmbillede af træstrukturen, der viser postnummer og butiksnavn](./media/end-user-drill/power-bi-expand-one.png)
 
@@ -116,7 +119,7 @@ Det er ikke så informativt at have en træstruktur, der kun viser et postnummer
 
     ![Skærmbillede af træstrukturen, der viser alle data for TN.](media/end-user-drill/power-bi-expand-two.png)
 
-1. Sørg for, at detailudledning stadig er slået til, ![skærmbillede af detailudledning til/fra-ikonet, der er aktiveret.](./media/end-user-drill/power-bi-drill-icon2.png) og vælg ikonet *udvid ned* ![skærmbillede af ikonet for udvid ned.](./media/end-user-drill/power-bi-drill-icon6.png). Din træstruktur viser nu det samme antal blade (felter), men hvert blad har flere detaljer. I stedet for kun at vise by og stat vises postnummer også.
+1. Sørg for, at detailudledning stadig er slået til, ![skærmbillede af detailudledning til/fra-ikonet, der er aktiveret.](./media/end-user-drill/power-bi-drill-icon2.png) og vælg ikonet *udvid ned*![skærmbillede af ikonet for udvid ned.](./media/end-user-drill/power-bi-drill-icon6.png). Din træstruktur viser nu det samme antal blade (felter), men hvert blad har flere detaljer. I stedet for kun at vise by og stat vises postnummer også.
 
     ![Skærmbillede af visualiseringen, der viser by, stat og postnummer.](./media/end-user-drill/power-bi-expand-three.png)
 
@@ -141,7 +144,9 @@ Bemærk, at totalerne er de samme for **By**, **Postnummer** og **Navn**. Dette 
 
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
-Detailudledning filtrerer ikke andre visualiseringer i en rapport som standard. Rapportdesigneren kan dog ændre denne standardfunktionsmåde. Når du foretager detailudledning, kan du se, om der filtreres eller fremhæves på tværs af de andre visualiseringer på siden.
+- Detailudledning filtrerer ikke andre visualiseringer i en rapport som standard. Rapportdesigneren kan dog ændre denne standardfunktionsmåde. Når du foretager detailudledning, kan du se, om der filtreres eller fremhæves på tværs af de andre visualiseringer på siden.
+
+- Du skal have en Power BI Pro- eller Premium-licens for at få vist en rapport, der er blevet delt med dig. [Hvilken licens har jeg?](end-user-license.md)
 
 
 ## <a name="next-steps"></a>Næste trin

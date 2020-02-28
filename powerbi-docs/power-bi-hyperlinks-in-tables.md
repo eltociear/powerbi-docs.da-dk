@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 02/13/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ddb54ca91936626b4870b51b86b7fc7f0ac6b2c9
-ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
+ms.openlocfilehash: f8a49780804449296194d7adb8091f7f0c5748fe
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75954161"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427800"
 ---
 # <a name="add-hyperlinks-urls-to-a-table-or-matrix"></a>Føj links (URL-adresser) til en tabel eller en matrix
 I dette emne lærer du, hvordan du føjer links (URL-adresser) til en tabel. Du kan bruge Power BI Desktop til at føje links (URL-adresser) til et datasæt. Derefter kan du bruge enten Power BI Desktop eller Power BI-tjenesten til at føje disse links til tabeller og matrixer i din rapport. Du kan derefter få vist URL-adressen eller et linkikon eller formatere en anden kolonne som linktekst.
@@ -34,7 +34,7 @@ Du kan formatere et felt med URL-adresser som links i Power BI Desktop, men ikke
     > [!NOTE]
     > Du kan ikke oprette en kolonne i DirectQuery-tilstand.  Men hvis dine data allerede indeholder URL-adresser, kan du lave dem til links.
 
-2. Vælg kolonnen i datavisning. 
+2. Vælg kolonnen i datavisning eller rapportvisning. 
 
 3. På fanen **Modellering** skal du vælge **Datakategori** > **URL-adresse for websted**.
    
@@ -79,13 +79,20 @@ Du kan også formatere et andet felt i en tabel som linket og slet ikke have en 
 
 1. Hvis et felt med et link ikke allerede findes i dit datasæt, kan du bruge Power BI Desktop til at tilføje det som en [brugerdefineret kolonne](desktop-common-query-tasks.md). Du kan ikke oprette en kolonne i DirectQuery-tilstand.  Men hvis dine data allerede indeholder URL-adresser, kan du lave dem til links.
 
-2. I rapportvisning skal du oprette en tabel eller matrix med den kolonne, du vil formatere som linktekst.
+2. I datavisning eller rapportvisning skal du vælge den kolonne, der indeholder URL-adressen. 
+
+3. På fanen **Modellering** skal du vælge **Datakategori**. Sørg for, at kolonnen er formateret som **Ikke-kategoriseret**.
+
+2. I rapportvisning skal du oprette en tabel eller matrix med kolonnen med URL-adresser og den kolonne, du vil formatere som linktekst.
 
 3. Når tabellen er markeret, skal du vælge ikonet **Format** ![ikonet med malerullen](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) for at åbne fanen Format.
 
-4. Udvid **Betinget formatering**, og sørg for, at navnet i feltet er den kolonne, du vil bruge som linktekst. Find **URL-ikonet**, og slå det **til**.
+4. Udvid **Betinget formatering**, og sørg for, at navnet i feltet er den kolonne, du vil bruge som linktekst. Find **URL-adresse til websted**, og angiv indstillingen til **Til**.
 
     ![Betinget formatering af URL-adresse til websted](media/power-bi-hyperlinks-in-tables/power-bi-format-conditional-web-url.png)
+
+    > [!NOTE]
+    > Hvis du ikke kan se indstillingen **URL-adresse til websted**, skal du sørge for, at den kolonne, der indeholder linkene, *ikke* formateres som **URL-adresse til websted** på rullelisten **Datakategori**.
 
 5. I dialogboksen **URL-adresse til websted** skal du vælge det felt, der indeholder URL-adressen, i feltet **Baseret på felt** > **OK**.
 

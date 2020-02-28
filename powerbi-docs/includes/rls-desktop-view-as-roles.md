@@ -1,29 +1,37 @@
 ---
-ms.openlocfilehash: eb7cba03daee47f6772fc46be50419731b41765e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 8dc488a47ac2b5b4e7980b7404b2722b1120b6ab
+ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61193696"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77464350"
 ---
 ## <a name="validate-the-roles-within-power-bi-desktop"></a>Valider rollerne i Power BI Desktop
 Når du har oprettet dine roller, kan du teste resultaterne af rollerne i Power BI Desktop.
 
-1. Vælg **Vis som roller**. 
+1. Vælg **Vis som roller** på fanen **Udformning**. 
 
-    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles.png)
+    ![Vælg Vis som roller](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles.png)
 
-    I **Vis som roller** kan du få vist de roller, som du har oprettet.
+    Vinduet **Vis som roller** vises, hvor du kan få vist de roller, som du har oprettet.
 
-    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
+    ![Vinduet Vis som roller](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
 
-3. Vælg en rolle, du har oprettet, >**OK** for at anvende rollen. Rapporterne gengiver de data, der er relevante for rollen. 
+3. Vælg en rolle, du har oprettet, og vælg derefter **OK** for at anvende rollen. 
 
-4. Du kan også vælge **Anden bruger** og angive en specifik bruger. Det er bedst at angive brugerens hovednavn, da det er det navn, som Power BI-tjenesten og Power BI-rapportserver bruger.
+   Rapporterne gengiver de data, der er relevante for rollen.
 
-    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
+4. Du kan også vælge **Anden bruger** og angive en specifik bruger. 
 
-1. Vælg **OK** for at få gengivet rapporten baseret på det, som brugeren kan se. 
+    ![Vælg en anden bruger](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
 
-I Power BI Desktop viser **Anden bruger** kun forskellige resultater, hvis du bruger dynamisk sikkerhed baseret på dine DAX-udtryk. 
+   Det er bedst at angive brugerens hovednavn, da det er det navn, som Power BI-tjenesten og Power BI-rapportserver bruger.
+
+   I Power BI Desktop viser **Anden bruger** kun forskellige resultater, hvis du bruger dynamisk sikkerhed baseret på dine DAX-udtryk. 
+
+5. Vælg **OK**. 
+
+   Rapporten gengives baseret på det, som brugeren kan se.
+
+
 

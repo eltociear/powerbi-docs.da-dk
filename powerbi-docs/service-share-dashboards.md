@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e6e66a4459abefbc66ec4e70b882cddc4771facf
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 96f78ff87dc4f955e134815e6237e4fb5a1ca1e7
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565668"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426673"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Del Power BI-dashboards og -rapporter med kolleger og andre
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Med Power BI får du også [adskillige andre måder at samarbejde om og distribuere dashboards og rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -90,6 +90,8 @@ Det er kun dine direkte modtagere, der kan se det delte dashboard eller den delt
 
 Personer uden for din organisation kan slet ikke se nogen data, hvis sikkerhed på rolle- eller rækkeniveau er implementeret på Analysis Services-tabelmodeller i det lokale miljø.
 
+Brug en sikkerhedsgruppe, ikke en distributionsgruppe, til at dele med en gruppe, der omfatter personer med eksterne mailadresser. Personer med eksterne mails i en distributionsgruppe kan ikke se det indhold, du deler, medmindre de er Azure Active Directory (Azure AD) B2B-gæstebrugere. Få mere at vide om [Azure AD B2B-gæstebrugere](service-admin-azure-ad-b2b.md).
+
 Hvis du sender et link fra en Power BI-mobilapp til personer uden for din organisation, åbnes dashboardet i en browser, når de klikker på linket, og ikke i Power BI-mobilappen.
 
 ### <a name="allow-external-users-to-edit-content"></a>Tillad eksterne brugere at redigere indhold
@@ -127,7 +129,7 @@ Ting, du skal være opmærksom på angående deling af dashboards og rapporter:
 * Alle kan manuelt [opdatere dataene](refresh-data.md).
 * Hvis du bruger Office 365 til mail, kan du dele med medlemmer af en distributionsgruppe ved at angive den mailadresse, der er knyttet til distributionsgruppen.
 * Kolleger, der deler det samme maildomæne, og kolleger, hvis domæner er anderledes, men registreret i den samme lejer, kan dele dashboardet med andre. Lad os for eksempel antage, at domænerne contoso.com og contoso2.com er registreret i den samme lejer, og din mailadresse er konrads@contoso.com. Både ravali@contoso.com og gustav@contoso2.com kan dele dit dashboard, så længe du giver dem tilladelse til at dele.
-* Hvis dine kolleger allerede har adgang til et bestemt dashboard eller en bestemt rapport, kan du sende et direkte link ved blot at kopiere URL-adressen, når du er på dashboardet eller i rapporten. Eksempel: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
+* Hvis dine kolleger allerede har adgang til et bestemt dashboard eller en bestemt rapport, kan du sende et direkte link ved blot at kopiere URL-adressen, når du er på dashboardet eller i rapporten. For eksempel: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
 * Hvis dine kolleger allerede har adgang til et bestemt dashboard, kan du på samme måde [sende et direkte link til den underliggende rapport](service-share-reports.md). 
 
 ### <a name="share-with-more-than-100-separate-users"></a>Del med flere end 100 separate brugere
@@ -163,7 +165,7 @@ Her er du nødt til at give brugerne tilladelse til at tilgå det underliggende 
     ![Tilføj mailadresser](media/service-share-dashboards/power-bi-add-user-dataset.png)
 
 
-1. Vælg **Tilføj**
+1. Vælg **Tilføj**.
 
 ### <a name="i-cant-share-a-dashboard-or-report"></a>Jeg kan ikke dele et dashboard eller en rapport
 

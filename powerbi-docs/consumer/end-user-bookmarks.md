@@ -5,21 +5,23 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: d5816c4080340b3ff5f29f6000fd203e1a2dedfd
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 5f197f2c2ca85673452a10986f19e26c5802c739
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852271"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496610"
 ---
 # <a name="what-are-bookmarks"></a>Hvad er bogmærker?
 
+[!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
+
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Bogmærker henter den aktuelt konfigurerede visning af en rapportside, herunder filtre, udsnitsværktøjer og tilstanden for visuals. Når du vælger et bogmærke, sender Power BI dig tilbage til den pågældende visning. Der er to typer bogmærker – dem, du selv opretter, og dem, der oprettes af *rapportdesignere*.
+Bogmærker henter den aktuelt konfigurerede visning af en rapportside, herunder filtre, udsnitsværktøjer og tilstanden for visuals. Når du vælger et bogmærke, sender Power BI dig tilbage til den pågældende visning. Der er to typer bogmærker – dem, du selv opretter, og dem, der oprettes af *rapportdesignere*. Enhver Power BI-bruger kan oprette personlige bogmærker. Muligheden for at bruge bogmærker, der er oprettet af andre, kræver dog en Power BI Pro- eller Premium-licens. [Hvilken licens har jeg?](end-user-license.md)
 
 ## <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Brug bogmærker til at dele indsigt og oprette historier i Power BI 
 Bogmærker kan bruges til mange ting. Lad os sige, at du opdager en interessant indsigt og ønsker at bevare den – opret et bogmærke, så du kan vende tilbage til den senere. Hvis du skal afsted, men ønsker at bevare dit aktuelle arbejde, kan du oprette et bogmærke. Du kan også gøre et bogmærke til din standardvisning af rapporten, så hver gang du vender tilbage, åbnes denne visning af rapportsiden først. 
@@ -33,6 +35,9 @@ Hvis du vil åbne ruden Bogmærker, skal du vælge **Bogmærker** > **Vis flere 
 
 ### <a name="report-bookmarks"></a>Rapportbogmærker
 Hvis *rapportdesigneren* har medtaget rapportbogmærker, kan du finde dem under overskriften **Rapportbogmærker**. Denne rapportside har to bogmærker, B1 og B2. 
+
+> [!NOTE]
+> Du skal bruge Power BI Pro eller Premium for at få vist delte rapporter. 
 
 ![Vis rapportbogmærker.](media/end-user-bookmarks/power-bi-report.png)
 

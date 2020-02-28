@@ -7,14 +7,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/31/2020
 ms.author: davidi
-ms.openlocfilehash: a6d949f95f463cb988958551d825a4eae824fb70
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: d3733b651ac8b9687d3b0547cc2f76c04a0d0823
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73865833"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427248"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips og tricks til oprettelse af rapporter i Power BI Desktop
 For at få mest muligt ud af dine data skal du nogle gange have lidt ekstra hjælp. Vi har samlet nogle tip og tricks, som du kan bruge, når du opretter rapporter i Microsoft Power BI Desktop *og* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-udgaver, hvor tilføjelsesprogrammet Power Pivot er aktiveret, og Power-forespørgsel er installeret og aktiveret. 
@@ -36,7 +36,7 @@ Når du er i forespørgselseditorens navigator i Power BI Desktop, og du højrek
 
 * Når du bruger filer som datakilde for en forespørgsel, gemmes den absolutte sti til filen i forespørgslen. Når du deler eller flytter en Power BI Desktop-fil eller Excel-projektmappe, sparer du tid, når du opdaterer stierne, ved kun at opdatere den én gang i stedet for stierne.
 
-Som standard indlæses alle forespørgsler enten i en Excel-projektmappe eller i datamodellen (eller begge). Nogle forespørgsler er mellemliggende trin og er ikke beregnet til slutbrugere. Når der refereres til forespørgsler som angivet ovenfor, er det ofte tilfældet. Du kan styre funktionsmåden for indlæsning af forespørgsler ved at højreklikke på forespørgslen i navigatoren og slå indstillingen "Aktivér indlæsning" til/fra. Når *Aktivér indlæsning* ikke er markeret, er forespørgslen stadig tilgængelig under forespørgselsfanen, og du kan bruge den sammen med andre forespørgsler. Dette er især nyttigt i forbindelse med transformering med fletning, tilføjelse og referencer. Men da resultaterne af forespørgslen ikke indlæses i datamodellen, laver forespørgslen ikke rod på rapportlisten eller i din datamodel. 
+Som standard indlæses alle forespørgsler i datamodellen. Nogle forespørgsler er mellemliggende trin og er ikke beregnet til slutbrugere. Når der refereres til forespørgsler som angivet ovenfor, er det ofte tilfældet. Du kan styre funktionsmåden for indlæsning af forespørgsler ved at højreklikke på forespørgslen i navigatoren og slå indstillingen "Aktivér indlæsning" til/fra. Når *Aktivér indlæsning* ikke er markeret, er forespørgslen stadig tilgængelig under forespørgselsfanen, og du kan bruge den sammen med andre forespørgsler. Dette er især nyttigt i forbindelse med transformering med fletning, tilføjelse og referencer. Men da resultaterne af forespørgslen ikke indlæses i datamodellen, laver forespørgslen ikke rod på rapportlisten eller i din datamodel. 
 
 ## <a name="scatter-charts-need-a-point-identifier"></a>Punktdiagrammer skal bruge et punkt-id
 Her er et eksempel på en simpel tabel med temperaturer og tidspunktet for læsning. Hvis du afbilder dette direkte i et punktdiagram, aggregerer Power BI alle værdierne til et enkelt punkt. Hvis du vil vise individuelle datapunkter, skal du føje et felt til bucket'en Oplysninger i feltet. Det kan du nemt gøre i Power BI Desktop ved at gå til forespørgselsfanen og bruge indstillingen "Tilføj indekskolonne" på båndet "Tilføj kolonne". 
@@ -116,7 +116,7 @@ Hvis vi indlæser datasæt fra aktive anmodninger om kundesupport og et andet da
 > 
 > 
 
-Når vi vil spore alle hændelser og arbejdselementer, der er relateret til et bestemt CustomerName, kan vi ikke bare oprette en relation mellem disse to datasæt. Nogle arbejdselementer er måske ikke relateret til et CustomerName, så dette felt skal være tomt eller NULL. Der kan være flere poster i WorkItems og CustomerIncidents for et hvilket som helst CustomerName. 
+Når vi vil spore alle hændelser og arbejdselementer, der er relateret til et bestemt CustomerName, kan vi ikke blot oprette en relation mellem disse to datasæt. Nogle arbejdselementer er måske ikke relateret til et CustomerName, så dette felt skal være tomt eller NULL. Der kan være flere poster i WorkItems og CustomerIncidents for et hvilket som helst CustomerName. 
 
 ### <a name="creating-relationships-in-power-bi-desktop-when-the-data-has-null-or-blank-values"></a>Opret relationer i Power BI Desktop, når dataene har null-værdier eller tomme værdier
 Datasæt indeholder ofte kolonner med null-værdier eller tomme værdier. Det kan skabe problemer, når du prøver at bruge relationer. Du kan løse problemerne på to måder. Du kan fjerne de rækker, der indeholder rækker med null-værdier eller tomme værdier. Det kan du enten gøre ved hjælp af filterfunktioner under forespørgselsfanen eller ved at vælge indstillingen "bevar kun matchende rækker", hvis du fletter forespørgsler. Du kan også erstatte null-værdierne eller de tomme værdier med værdier, der fungerer i relationer, typisk strenge som "NULL" og "(Blank)". Der findes ikke en korrekt fremgangsmåde her– Hvis du filtrerer rækker ud i forespørgselsfasen, fjernes rækker, og det kan påvirke oversigtsstatistikker og beregninger. Den sidste fremgangsmåde bevarer disse datarækker, men kan få ikke-relaterede rækker til at se ud, som om de er relateret i modellen, hvilket fører til forkerte beregninger. Hvis du bruger den sidste løsning, skal du sørge for at bruge filtre for visningen/diagrammet, hvor det er relevant, for at sikre, at du får nøjagtige resultater. Det vigtigste er, at du evaluerer, hvilke rækker der skal bevares/fjernes, og overordnet forstår, hvad det betyder for analysen. 
@@ -132,7 +132,7 @@ Hvis vi indlæser datasæt fra aktive anmodninger om kundesupport og et andet da
 > 
 > 
 
-Når vi vil spore alle hændelser og arbejdselementer, der er relateret til et bestemt CustomerName, kan vi ikke bare oprette en relation mellem disse to datasæt. Nogle arbejdselementer er måske ikke relateret til et CustomerName, så dette felt skal være tomt eller NULL. Hvis du har tomme værdier eller null-værdier i tabellen CustomerNames, er det måske stadig ikke muligt at oprette en relation – se Opret relationer, hvis mine data indeholder null-værdier eller tomme værdier. Der kan være flere poster i WorkItems og CustomerIncidents for et enkelt CustomerName. 
+Når vi vil spore alle hændelser og arbejdselementer, der er relateret til et bestemt CustomerName, kan vi ikke blot oprette en relation mellem disse to datasæt. Nogle arbejdselementer er måske ikke relateret til et CustomerName, så dette felt skal være tomt eller NULL. Hvis du har tomme værdier eller null-værdier i tabellen CustomerNames, er det måske stadig ikke muligt at oprette en relation – se Opret relationer, hvis mine data indeholder null-værdier eller tomme værdier. Der kan være flere poster i WorkItems og CustomerIncidents for et enkelt CustomerName. 
 
 Hvis der skal oprettes en relation i dette tilfælde, skal vi oprette et logisk datasæt for alle CustomerNames på tværs af de to datasæt. Under fanen Forespørgsel kan du bruge følgende sekvens til at oprette det logiske datasæt:
 

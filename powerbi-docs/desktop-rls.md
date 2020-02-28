@@ -1,5 +1,5 @@
 ---
-title: Forstå sikkerhed på rækkeniveau med Power BI Desktop
+title: Begræns dataadgang med sikkerhed på rækkeniveau (RLS) for Power BI Desktop
 description: Sådan konfigurerer du sikkerhed på rækkeniveau for importerede datasæt og DirectQuery i Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/05/2019
+ms.date: 01/31/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: dc2c1e312592048c90643526a898ebe654907a68
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 7a9aa0ca62ae4f1008d4cf47caa909841f9ec495
+ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760652"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77464355"
 ---
 # <a name="restrict-data-access-with-row-level-security-rls-for-power-bi-desktop"></a>Begræns dataadgang med sikkerhed på rækkeniveau (RLS) for Power BI Desktop
 
@@ -24,9 +24,7 @@ Du kan nu bruge sikkerhed på rækkeniveau med Power BI Desktop til at begrænse
 Du kan nu konfigurere sikkerhed på rækkeniveau for datamodeller, der er importeret til Power BI, med Power BI Desktop. Du kan også konfigurere sikkerhed på rækkeniveau for datasæt, der anvender [DirectQuery](desktop-use-directquery.md), f.eks. SQL Server. Tidligere kunne du kun implementere sikkerhed på rækkeniveau i Analysis Services-modeller i det lokale miljø uden for Power BI. I forbindelse med liveforbindelser i Analysis Services kan du konfigurere sikkerhed på rækkeniveau for modellen i det lokale miljø. Sikkerhedsindstillingen vises ikke for datasæt med direkte forbindelse.
 
 > [!IMPORTANT]
-> Hvis du har defineret roller og regler i Power BI-tjenesten, skal du genskabe disse roller i Power BI Desktop og publicere rapporten i tjenesten.
-
-Få mere at vide om indstillinger for [Sikkerhed på rækkeniveau i Power BI-tjenesten](service-admin-rls.md).
+> Hvis du har defineret roller og regler i Power BI-tjenesten, skal du genskabe disse roller i Power BI Desktop og publicere rapporten i tjenesten. Få mere at vide om indstillinger for [Sikkerhed på rækkeniveau i Power BI-tjenesten](service-admin-rls.md).
 
 [!INCLUDE [include-short-name](./includes/rls-desktop-define-roles.md)]
 
@@ -40,4 +38,4 @@ Få mere at vide om indstillinger for [Sikkerhed på rækkeniveau i Power BI-tje
 
 [Sikkerhed på rækkeniveau med Power BI-tjenesten](service-admin-rls.md)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
