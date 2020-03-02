@@ -39,10 +39,10 @@ Hvis du vil have vist rapporten, skal du gå til **Indstillinger > Administratio
 ![administrationsportal til beskyttelsesmålepunkter](./media/service-security-data-protection-metrics-report/protection-metrics-admin-portal.png)
  
  
-Første gang du åbner rapporten over databeskyttelsesmålepunkter, kan det tage et par sekunder at indlæse den. En rapport og et datasæt, der er berettiget til **Databeskyttelsesmålepunkter (genereret automatisk)** , oprettes i dit private miljø under "Mit arbejdsområde". Vi anbefaler ikke, at du ser den her – det er ikke den fuldt fremviste rapport. Du kan i stedet få vist rapporten på administrationsportalen som beskrevet ovenfor.
+Første gang du åbner rapporten over databeskyttelsesmålepunkter, kan det tage et par sekunder at indlæse den. En rapport og et datasæt, der er berettiget til **Databeskyttelsesmålepunkter (genereret automatisk)** , oprettes i dit private miljø under "Mit arbejdsområde". Vi anbefaler ikke, at du ser den her – det er ikke den komplette rapport. Du kan i stedet få vist rapporten på administrationsportalen som beskrevet ovenfor.
 
 > [!CAUTION]
-> Du kan ikke ændre rapporten eller datasættet på nogen måde, da nye versioner af rapporten lanceres fra tid til anden, og eventuelle ændringer, du har foretaget i den oprindelige rapport, bliver overskrevet, hvis du opdaterer til den nye version.
+> Undlad at ændre rapporten eller datasættet på nogen måde, da nye versioner af rapporten lanceres fra tid til anden, og eventuelle ændringer, du har foretaget i den oprindelige rapport, bliver overskrevet, hvis du opdaterer til den nye version.
 
 ## <a name="report-updates"></a>Rapportopdateringer
 

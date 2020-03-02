@@ -52,7 +52,7 @@ Indstillingen for rapportopdatering definerer, hvordan du starter rapportopdater
 
 På Android-telefoner tilføjes der som standard en opdateringsknap.
 
-Hvis du vil ændre indstillingen for rapportopdatering, skal du gå til elementet for rapportopdatering i interaktionsindstillingerne. Den aktuelle indstilling vises. Tryk på værdien for at åbne et pop op-vindue, hvor du kan vælge en ny værdi.
+Hvis du vil ændre indstillingen for rapportopdatering, skal du gå til punktet for rapportopdatering i interaktionsindstillingerne. Den aktuelle indstilling vises. Tryk på værdien for at åbne et pop op-vindue, hvor du kan vælge en ny værdi.
 
 ![Angiv opdatering](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-set-refresh.png)
 
