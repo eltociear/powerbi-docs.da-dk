@@ -6,21 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 02/27/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: ec93e1575ec5429a3ca4c790150973a23224d97b
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 927e882e9b0cd7195aec6cffd7305d887d1c306e
+ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427777"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782374"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Understøttede browsere til Power BI
 Power BI kører i følgende browsere:
 
 - Microsoft Edge
-- Internet Explorer 11. Visse avancerede funktioner, f.eks. visning af afstamning, understøttes ikke i Internet Explorer. Se [Dataafstamning (prøveversion)](service-data-lineage.md) for at få flere oplysninger.
+- Internet Explorer 11. Visse avancerede funktioner, f.eks. visning af afstamning, understøttes ikke i Internet Explorer. Se [Dataafstamning (prøveversion)](designer/service-data-lineage.md) for at få flere oplysninger.
 - Seneste desktopversion af Chrome
 - Seneste version af Safari Mac
 - Seneste desktopversion af Firefox. Firefox kan ændre de skrifttyper, der bruges i Power BI 

@@ -10,10 +10,10 @@ ms.date: 12/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: c79a8ddd68fa64b0a16663500a3f02e9a991835b
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 02/25/2020
 ms.locfileid: "75730320"
 ---
 # <a name="use-conditional-formatting-in-tables"></a>Brug betinget formatering på tabeller 
@@ -173,7 +173,7 @@ Der er et par overvejelser, du skal gøre, når du arbejder med betinget formate
 - Du kan ikke anvende gradueringsformat med automatiske værdier for maksimum/minimum eller regelbaseret formatering med procentregler, hvis dine data indeholder *NaN*-værdier. NaN står for "Not a number" (ikke et tal) og skyldes ofte en fejl med division med nul. Du kan bruge [funktionen DIVIDE() DAX](https://docs.microsoft.com/dax/divide-function-dax) til at undgå disse fejl.
 - Betinget formatering skal have en sammenlægning eller en måling for at blive anvendt på værdien. Det er derfor, at du får vist 'Først' eller 'Sidst' i eksemplet **Farve efter værdi**. Hvis du opretter din rapport i en flerdimensionel Analysis Service-kube, kan du ikke bruge en attribut til betinget formatering, medmindre kubeejeren har oprettet en måling, der giver værdien.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger om farveformatering under [Tip og tricks til farveformatering i Power BI](visuals/service-tips-and-tricks-for-color-formatting.md)  
 

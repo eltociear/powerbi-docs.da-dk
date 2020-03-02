@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 02/21/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8604ed2c737b7d2a75b3af052878ecb157ffacf1
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: a8bf446174cc16d95842022416352f538dca69ec
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76538606"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609861"
 ---
 # <a name="overview-of-accessibility-in-power-bi"></a>Oversigt over tilgængelighed i Power BI
 
@@ -30,7 +30,7 @@ Et universelt design betyder, at produktet er designet, så det kan bruges af s�
 
 ## <a name="accessibility-standards"></a>Tilgængelighedsstandarder
 
-Power BI har forpligtet sig til at overholde følgende standarder for tilgængelighed. Standarderne hjælper dig med at sikre, at dine Power BI-oplevelser er tilgængelige for så mange personer som muligt. Power BI-mobilapps er certificeret til tilgængelighedsklasse c. Når du bygger tilgængelige rapporter eller dashboards, er indholdet tilgængeligt for alle, der ser det ved hjælp af Power BI-mobilapps.
+Power BI har forpligtet sig til at overholde følgende standarder for tilgængelighed. Standarderne hjælper dig med at sikre, at dine Power BI-oplevelser er tilgængelige for så mange personer som muligt. Når du bygger tilgængelige rapporter eller dashboards, er indholdet tilgængeligt for alle, der ser det ved hjælp af Power BI-mobilapps.
 
 ### <a name="wcag-21"></a>WCAG 2.1
 
