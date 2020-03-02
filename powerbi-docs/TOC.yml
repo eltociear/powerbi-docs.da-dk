@@ -655,8 +655,6 @@
               href: service-export-to-pbix.md
             - name: Rediger SAP-variabler
               href: service-edit-sap-variables.md
-            - name: Bedste praksis for oprettelse af hurtige og pålidelige rapporter
-              href: power-bi-reports-performance.md
         - name: Stil spørgsmål til dine data
           items:
             - name: Brug spørgsmål og svar til at udforske dine data
