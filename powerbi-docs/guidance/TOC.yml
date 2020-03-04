@@ -60,6 +60,16 @@
               href: report-page-tooltips.md
             - name: Anvend detaljeadgang på rapportsiden
               href: report-drillthrough.md
+            - name: Tip til administration af akser
+              href: report-design-tips-axes.md
+            - name: Tip til kontrol af diagramgitterlinjer
+              href: report-tips-chart-gridlines.md
+            - name: Tip til optimering af brugen af mærkater
+              href: report-tips-labels.md
+            - name: Tip til at formatere og implementere forklaringer
+              href: report-tips-legends.md
+            - name: Tip til optimering af visualiseringsfarver
+              href: report-tips-visual-colors.md
         - name: Sideinddelte rapporter i Power BI
           items:
             - name: Hvornår bruges sideinddelte rapporter
