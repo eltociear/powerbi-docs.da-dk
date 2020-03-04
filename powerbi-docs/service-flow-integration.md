@@ -1,29 +1,29 @@
 ---
 title: Power BI-integration med Power Automate
-description: Få mere at vide om, hvordan du opretter Flows udløst af databeskeder i Power BI.
+description: Få mere at vide om, hvordan du opretter Power Automate-flow, der udløses af databeskeder i Power BI.
 author: maggiesMSFT
 ms.reviewer: ''
 featuredvideoid: YhmNstC39Mw
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 02/25/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: e9c6185506d1992a46ee14ff1eafe0c37d9f65c1
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: aafba825c5bd4ece3c8b97256d5943f91b456cd7
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75223793"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609704"
 ---
 # <a name="power-automate-and-power-bi"></a>Power Automate og Power BI
 
-[Power Automate](https://docs.microsoft.com/power-automate/getting-started) er et SaaS-tilbud til automatisering af arbejdsprocesser på tværs af det stigende antal programmer og tjenester, som erhvervsbrugere er afhængige af. Med Flow kan du automatisere opgaver ved at integrere dine foretrukne apps og tjenester (herunder Power BI) for at få meddelelser, synkronisere filer, indsamle data og meget mere. Gentagne opgaver bliver nemme med automatisering af arbejdsprocessen.
+[Power Automate](https://docs.microsoft.com/power-automate/getting-started) er et SaaS-tilbud til automatisering af arbejdsprocesser på tværs af det stigende antal programmer og tjenester, som erhvervsbrugere er afhængige af. Med Power Automate kan du automatisere opgaver ved at integrere dine foretrukne apps og tjenester (herunder Power BI) for at få meddelelser, synkronisere filer, indsamle data og meget mere. Gentagne opgaver bliver nemme med automatisering af arbejdsprocessen.
 
-[Kom i gang med at bruge Flow nu.](https://docs.microsoft.com/power-automate/getting-started)
+[Kom godt i gang med at bruge Power Automate nu.](https://docs.microsoft.com/power-automate/getting-started)
 
-Se, hvordan Sirui opretter et Flow, der sender en detaljeret mail til kollegaer, når der udløses en besked i Power BI. Følg derefter den trinvise vejledning under videoen for at prøve det selv.
+Se, hvordan Sirui opretter et Power Automate-flow, der sender en detaljeret mail til kolleger, når der udløses en besked i Power BI. Følg derefter den trinvise vejledning under videoen for at prøve det selv.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YhmNstC39Mw" frameborder="0" allowfullscreen></iframe>
 
@@ -38,17 +38,17 @@ I denne opgave skal vi bruge en skabelon til at oprette et enkelt flow, der udl�
 1. Log på Power Automate (flow.microsoft.com).
 2. Vælg **Mine flow**.
    
-   ![Menulinjen Flow](media/service-flow-integration/power-bi-my-flows.png)
+   ![Power Automate-menulinje](media/service-flow-integration/power-bi-my-flows.png)
 3. Vælg **Opret fra skabelon**.
    
-    ![Menulinjen Mine flows](media/service-flow-integration/power-bi-template.png)
+    ![Menulinjen Mine flow](media/service-flow-integration/power-bi-template.png)
 4. Brug søgefeltet til at finde Power BI-skabeloner, og vælg **Send en mail til en målgruppe, når en Power BI-databesked udløses > Fortsæt**.
    
     ![søgeresultater](media/service-flow-integration/power-bi-flow-alert.png)
 
 
 ### <a name="build-the-flow"></a>Byg flowet
-Denne skabelon indeholder en udløser (Power BI-databesked om nye olympiske medaljer til Irland) og en handling (send en mail). Når du vælger et felt, viser Flow dynamisk indhold, du kan inkludere.  I dette eksempel inkluderer vi feltværdien og feltets URL-adresse i meddelelsens brødtekst.
+Denne skabelon indeholder en udløser (Power BI-databesked om nye olympiske medaljer til Irland) og en handling (send en mail). Når du vælger et felt, viser Power Automate dynamisk indhold, du kan inkludere.  I dette eksempel inkluderer vi feltværdien og feltets URL-adresse i meddelelsens brødtekst.
 
 ![flowskabelon](media/service-flow-integration/power-bi-template1.png)
 
@@ -59,7 +59,7 @@ Denne skabelon indeholder en udløser (Power BI-databesked om nye olympiske meda
    
    ![Skærmbilledet Send en mail](media/service-flow-integration/power-bi-flow-email.png)
 
-3. Flow opretter en titel og meddelelse for dig, som du kan beholde eller ændre. Alle de værdier, du angav, da du oprettede beskeden i Power BI, er tilgængelige til brug – du skal bare placere markøren og vælge i det område, der er fremhævet med gråt. 
+3. Power Automate opretter en titel og meddelelse for dig, som du kan beholde eller ændre. Alle de værdier, du angav, da du oprettede beskeden i Power BI, er tilgængelige til brug – du skal bare placere markøren og vælge i det område, der er fremhævet med gråt. 
 
    ![Skærmbilledet Send en mail](media/service-flow-integration/power-bi-flow-email-default.png)
 
@@ -69,7 +69,7 @@ Denne skabelon indeholder en udløser (Power BI-databesked om nye olympiske meda
 
     Du kan også acceptere standardbrødteksten i mailen eller oprette din egen. Ovenstående eksempel indeholder nogle få ændringer af meddelelsen.
 
-1. Når du er færdig, skal du vælge **Opret flow** eller **Gem flow**.  Flowet er oprettet og vurderet.  Flow giver dig besked, hvis det finder fejl.
+1. Når du er færdig, skal du vælge **Opret flow** eller **Gem flow**.  Flowet er oprettet og vurderet.  Power Automate giver dig besked, hvis det finder fejl.
 2. Hvis der er fundet fejl, skal du vælge **Rediger flow** for at løse dem, ellers skal du vælge **Udført** for at køre det nye flow.
    
    ![meddelelse om fuldførelse](media/service-flow-integration/power-bi-flow-running.png)
@@ -77,13 +77,13 @@ Denne skabelon indeholder en udløser (Power BI-databesked om nye olympiske meda
    
    ![mail med vigtig besked](media/service-flow-integration/power-bi-flow-email2.png)
 
-## <a name="create-a-flow-that-uses-power-bi---from-scratch-blank"></a>Opret et Flow, der bruger Power BI – fra bunden
+## <a name="create-a-power-automate-that-uses-power-bi---from-scratch-blank"></a>Opret et Power Automate-flow, der bruger Power BI – fra bunden
 I denne opgave skal vi oprette et enkelt flow fra bunden, der udløses af en databesked i Power BI (meddelelse).
 
 1. Log på Power Automate.
 2. Vælg **Mine flow** > **Opret fra blank**.
    
-   ![Menulinje øverst i Flow](media/service-flow-integration/power-bi-my-flows.png)
+   ![Øverste menulinje i Power Automate](media/service-flow-integration/power-bi-my-flows.png)
 3. Brug søgefeltet til at finde en Power BI-udløser, og vælg **Power BI – når en datadrevet besked udløses**.
 
 ### <a name="build-your-flow"></a>Byg dit flow
@@ -96,17 +96,17 @@ I denne opgave skal vi oprette et enkelt flow fra bunden, der udløses af en dat
 3. Søg efter **Outlook**, og vælg **Opret begivenhed**.
    
    ![Byg flowet](media/service-flow-integration/power-bi-create-event.png)
-4. Udfyld begivenhedens felter. Når du vælger et felt, viser Flow dynamisk indhold, du kan inkludere.
+4. Udfyld begivenhedens felter. Når du vælger et felt, viser Power Automate dynamisk indhold, du kan inkludere.
    
    ![fortsæt med at bygge flowet](media/service-flow-integration/power-bi-flow-event.png)
-5. Vælg **Opret flow**, når du er færdig.  Flow gemmer og vurderer flowet. Vælg **Udført** for at køre dette flow, hvis der ikke er nogen fejl.  Det nye flow er føjet til din side **Mine flow**.
+5. Vælg **Opret flow**, når du er færdig.  Power Automate gemmer og evaluerer flowet. Vælg **Udført** for at køre dette flow, hvis der ikke er nogen fejl.  Det nye flow er føjet til din side **Mine flow**.
    
    ![Fuldfør flowet](media/service-flow-integration/power-bi-flow-running.png)
 6. Når flowet udløses af Power BI-databeskeden, modtager du en Outlook-begivenhedsmeddelelse svarende til denne.
    
-    ![Flowet udløser en Outlook-meddelelse](media/service-flow-integration/power-bi-flow-notice.png)
+    ![Power Automate udløser en Outlook-meddelelse](media/service-flow-integration/power-bi-flow-notice.png)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 * [Kom godt i gang med Power Automate](https://docs.microsoft.com/power-automate/getting-started/)
 * [Indstil databeskeder i Power BI-tjenesten](service-set-data-alerts.md)
 * [Indstil databeskeder på din iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)

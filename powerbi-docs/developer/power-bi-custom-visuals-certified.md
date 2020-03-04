@@ -8,13 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 01/12/2019
-ms.openlocfilehash: 4ffab3913560498dd57103f0a25c39f7a03a42ec
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.date: 02/17/2020
+ms.openlocfilehash: 52a99380f8e1afc39ddfc59a401418e61fe6ad58
+ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77026663"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782422"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Få en Power BI-visualisering certificeret
 
@@ -43,11 +43,13 @@ Når du indsender Power BI-visualiseringen, skal du sørge for, at den kompilere
 
 Selvom du ikke behøver at dele din kode i GitHub, skal kodelageret være tilgængeligt, så Power BI-teamet kan gennemgå det. Den bedste måde at gøre det på er ved at levere kildekoden (JavaScript eller type) til GitHub.
 
-Lageret må kun indeholde kode for en enkelt Power BI-visualisering. Det må ikke indeholde kode for flere Power BI-visualiseringer eller ikke-relateret kode.
-
-Lageret skal indeholde en forgrening ved navn **certificering** (skal skrives med små bogstaver). Kildekoden i denne forgrening skal matche den sendte pakke. Denne kode kan kun opdateres under den næste afsendelsesproces, hvis du sender din Power BI-visualisering igen.
+Lageret skal indeholde følgende:
+* Kode for kun én Power BI-visualisering. Det må ikke indeholde kode for flere Power BI-visualiseringer eller ikke-relateret kode.
+* En forgrening ved navn **certificering** (skal skrives med små bogstaver). Kildekoden i denne forgrening skal matche den sendte pakke. Denne kode kan kun opdateres under den næste afsendelsesproces, hvis du sender din Power BI-visualisering igen.
 
 Hvis din Power BI-visualisering bruger private NPM-pakker eller git-undermoduler, skal du give adgang til de ekstra lagre, der indeholder denne kode.
+
+Hvis du vil vide, hvordan et lager med Power BI-visualiseringer ser ud, skal du gennemse GitHub-lageret for at finde [søjlediagrammet med eksempler på Power BI-visualiseringer](https://github.com/microsoft/PowerBI-visuals-sampleBarChartgi).
 
 ### <a name="file-requirements"></a>Filkrav
 
@@ -113,6 +115,18 @@ Sådan anmoder du om Power BI-certificering:
 
 >[!NOTE]
 > Hvis du er midt i en indsendelsesproces for en Power BI-visualisering og skal bruge [Sælgerdashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (det tidligere administrationsværktøj), skal du gennemse instruktionerne til [Indsendelsesproces for certificering via Sælgerdashboard](seller-dashboard.md#seller-dashboard-certification-submission-process).
+
+### <a name="private-repository-submission-process"></a>Processen til indsendelse af privat lager
+
+Hvis du bruger et privat lager, f.eks. GitHub, til at sende din Power BI-visualisering til certificering, skal du følge vejledningen i dette afsnit.
+1. Opret en ny konto til valideringsteamet.
+2. Konfigurer [tofaktorgodkendelse](https://help.github.com/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa) til din konto.
+3. [Generer et nyt sæt genoprettelseskoder](https://help.github.com/github/authenticating-to-github/configuring-two-factor-authentication-recovery-methods#generating-a-new-set-of-recovery-codes).
+4. Når du indsender din Power BI-visualisering, skal du angive følgende:
+    * Et link til lageret
+    * Legitimationsoplysninger til logon (inklusive en adgangskode)
+    * Genoprettelseskoder
+    * Skrivebeskyttede tilladelser til vores konto ([pbicvsupport](https://github.com/pbicvsupport))
 
 ## <a name="certified-power-bi-visuals"></a>Certificerede Power BI-visualiseringer
 
@@ -227,7 +241,7 @@ De certificerede Power BI-visuals er angivet nedenfor. Klik på linket for at å
 
 Du kan finde flere oplysninger om visualiseringer under [Ofte stillede spørgsmål om certificerede visualiseringer](power-bi-custom-visuals-faq.md#certified-power-bi-visuals).
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Udvikling af en brugerdefineret visualisering i Power BI](../developer/custom-visual-develop-tutorial.md)
 * [Microsofts afspilningsliste for brugerdefinerede visualiseringer på YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  

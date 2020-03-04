@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 02/25/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 044952c6ce5e3b1550067f9d288f8eab02b868bb
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 4f256d9b0cbecf76ff002cc0214155b8b36014ee
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223718"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609894"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Store modeller i Power BI Premium (prøveversion)
 
-I Power BI-datasæt kan der gemmes data i en højkomprimeret cache i hukommelsen for at optimere forespørgselsydeevnen. Dette muliggør hurtig brugerinteraktivitet i forbindelse med store datasæt. Funktionen Store modeller gør det muligt at øge størrelsen på datasæt i Power BI Premium til mere end 10 GB. Datasættets størrelse er i stedet begrænset af Power BI Premium-kapacitetsstørrelsen. Dette svarer til den måde Azure Analysis Services fungerer på med hensyn til begrænsninger af modelstørrelse. Du kan finde flere oplysninger om kapacitetsstørrelser i Power BI Premium under Kapacitetsnoder. Du kan konfigurere store modeller for alle Premium P-SKU'er og integrerede A-SKU'er, men de fungerer kun sammen med [nye arbejdsområder](service-create-the-new-workspaces.md).
+I Power BI-datasæt kan der gemmes data i en højkomprimeret cache i hukommelsen for at optimere forespørgselsydeevnen og muliggøre hurtig brugerinteraktivitet på tværs af store datasæt. Funktionen Store modeller gør det muligt at øge størrelsen på datasæt i Power BI Premium til mere end 10 GB. Datasættets størrelse er i stedet begrænset af Power BI Premium-kapacitetens størrelse, som minder om, hvordan Azure Analysis Services fungerer i forbindelse med begrænsninger for modelstørrelser. Du kan finde flere oplysninger om kapacitetsstørrelser i Power BI Premium under Kapacitetsnoder. Du kan konfigurere store modeller for alle Premium P-SKU'er og integrerede A-SKU'er, men de fungerer kun sammen med [nye arbejdsområder](service-create-the-new-workspaces.md).
 
 Store modeller påvirker ikke PBIX-uploadstørrelsen, der stadig er begrænset til 10 GB. I stedet øges datasæt til mere end 10 GB i tjenesten ved opdatering. Du kan bruge trinvis opdatering til at konfigurere et datasæt, så det bliver større end 10 GB.
 
@@ -90,7 +90,7 @@ Du kan kontrollere status for datasætkonvertering til og fra Premium-filer ved 
 
 Power BI bruger dynamisk hukommelsesadministration til at fjerne inaktive datasæt fra hukommelsen. Power BI fjerner datasæt, så der kan indlæses andre datasæt til at håndtering af brugerforespørgsler. Administration af dynamisk hukommelse giver mulighed for, at summen af datasætstørrelser bliver betydeligt større end den hukommelse, der er tilgængelig på kapaciteten, men et enkelt datasæt skal kunne være i hukommelsen. Du finder flere oplysninger om administration af dynamisk hukommelse under [Sådan fungerer kapaciteter](service-premium-what-is.md#how-capacities-function).
 
-Du bør overveje virkningen af fjernelse på store modeller. På trods af hurtig indlæsning af datasæt kan der stadig være en mærkbar forsinkelse for brugere, hvis de skal vente på, at store fjernede datasæt genindlæses. Derfor anbefales funktionen Store modeller i sin nuværende form primært til kapaciteter, der er dedikeret til virksomheds-BI-krav frem for dem, der er blandet med selvbetjenings-BI-krav. Der er mindre sandsynlighed for, at kapaciteter, der er dedikeret til virksomheds-BI-krav, udløser fjernelse og behov for at genindlæse datasæt. Kapaciteter for selvbetjenings-BI kan på den anden side kan have mange små datasæt, der oftere indlæses i og uden for hukommelsen.
+Du bør overveje virkningen af fjernelse på store modeller. På trods af hurtig indlæsning af datasæt kan der stadig være en mærkbar forsinkelse for brugere, hvis de skal vente på, at store fjernede datasæt genindlæses. Derfor anbefales funktionen Store modeller i sin nuværende form primært til kapaciteter, der er dedikeret til virksomheds-BI-krav frem for kapaciteter, der er blandet med selvbetjenings-BI-krav. Der er mindre sandsynlighed for, at kapaciteter, der er dedikeret til virksomheds-BI-krav, udløser fjernelse og behov for at genindlæse datasæt. Kapaciteter for selvbetjenings-BI kan på den anden side kan have mange små datasæt, der oftere indlæses i og uden for hukommelsen.
 
 ## <a name="checking-dataset-size"></a>Kontrol af datasætstørrelsen
 
@@ -110,7 +110,7 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
  [DATABASE_NAME] = '<Dataset Name>') //Sum USED_SIZE (bytes)
 ```
 
-## <a name="current-feature-restrictions"></a>Aktuelle funktionsbegrænsninger
+## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 
 Vær opmærksom på følgende begrænsninger, når du bruger store modeller:
 
@@ -118,4 +118,46 @@ Vær opmærksom på følgende begrænsninger, når du bruger store modeller:
 - **Multi-Geo-understøttelse**: Datasæt, der er aktiveret til Premium-filer, mislykkes på kapaciteter, hvor [Multi-Geo](service-admin-premium-multi-geo.md) også er aktiveret.
 
 - **Download Power BI Desktop**: Hvis et datasæt er gemt i Premium-filer, mislykkes [download som en. pbix](service-export-to-pbix.md)-fil.
-- **Understøttede områder**: Store modeller understøttes i alle Azure-områder, der understøtter Premium files Storage. Du kan få mere at vide ved at se [Produkter tilgængelige efter område](https://azure.microsoft.com/global-infrastructure/services/?products=storage).
+- **Understøttede områder**: Store modeller understøttes i alle Azure-områder, der understøtter Premium files Storage. Hvis du vil vide mere, skal du se [Produkter, der er tilgængelige efter område](https://azure.microsoft.com/global-infrastructure/services/?products=storage), og se tabellen i det følgende afsnit.
+
+
+## <a name="availability-in-regions"></a>Tilgængelighed efter område
+
+Store modeller er ikke tilgængelige i alle områder, hvor Power BI tilbydes. Store modeller i Power BI er kun tilgængelige i Azure-områder, der understøtter [Azure Premium Files Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers).
+
+Følgende liste indeholder områder, hvor store modeller i Power BI er tilgængelige. Det er kun de områder, der er på følgende liste, hvor store modeller understøttes:
+
+
+|Azure-område  |Forkortelse for Azure-område  |
+|---------|---------|
+|Det østlige Australien     | australiaeast        |
+|Det sydøstlige Australien     | australiasoutheast        |
+|Det centrale USA     | centralus        |
+|Det østlige Asien     | eastasia        |
+|Det østlige USA     | eastus        |
+|Det østlige USA 2     | eastus2        |
+|Det østlige Japan     | japaneast        |
+|Det vestlige Japan     | japanwest        |
+|Det centrale Sydkorea     | koreacentral        |
+|Det sydlige Sydkorea     | koreasouth        |
+|Det nordcentrale USA     | northcentralus        |
+|Det nordlige Europa     | northeurope        |
+|Det sydcentrale USA     | southcentralus        |
+|Det sydøstlige Asien     | southeastasia        |
+|Det sydlige Storbritannien     | uksouth        |
+|Det vestlige Storbritannien     | ukwest        |
+|Det vestlige Europa     | westeurope        |
+|Det vestlige USA     | westus        |
+|Det vestlige USA 2     | westus2        |
+
+
+
+## <a name="next-steps"></a>Næste trin
+
+Følgende links indeholder oplysninger, der kan være nyttige til at arbejde med store modeller:
+
+* [Azure Premium Files Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers)
+* [Konfigurer understøttelse af Multi-Geo til Power BI Premium](service-admin-premium-multi-geo.md)
+* [Medbring dine egne krypteringsnøgler til Power BI](service-encryption-byok.md)
+* [Sådan fungerer kapaciteter](service-premium-what-is.md#how-capacities-function)
+* [Trinvis opdatering](service-premium-incremental-refresh.md)

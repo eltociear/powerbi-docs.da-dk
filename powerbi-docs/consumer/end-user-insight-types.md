@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 02/24/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 184aeb1f26e54bb8b8935f2f06ec6cad2e282ecf
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: a89cb77b99356f9f282b522c2041e96210a026e9
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537897"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576774"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Indsigtstyper, der understøttes af Power BI
 
@@ -55,7 +55,7 @@ Registrerer de tilfælde, hvor flere målinger viser et lignende mønster eller 
 ![Eksempel på korrelation](./media/end-user-insight-types/pbi-auto-insight-types-correlation.png)
 
 ### <a name="low-variance"></a>Lav varians
-Registrerer tilfælde, hvor datapunkter ikke er langt fra middelværdien.
+Registrerer de tilfælde, hvor datapunkter for en dimension ikke er langt fra middelværdien, så "variansen" er lav. Lad os antage, at du har målet "salg" og en dimension "område". Når du ser på tværs af områder, kan du se, at der er meget lidt forskel mellem datapunkterne og middelværdien (for datapunkterne). Indsigten udløses, når variansen af salg på tværs af alle områder er lavere end en tærskel. Det vil sige, at når salget er forholdsvis ens på tværs af alle områder.
 
 ![Eksempel på lav varians](./media/end-user-insight-types/power-bi-low-variance.png)
 
@@ -75,7 +75,9 @@ Finder periodiske mønstre i tidsseriedata, f.eks. ugentlige, månedlige eller �
 ![Eksempel på sæsonudsving](./media/end-user-insight-types/pbi-auto-insight-types-seasonality-new.png)
 
 ### <a name="steady-share"></a>Konstant deling
-Fremhæver tilfælde, hvor der er en overordnet-underordnet-korrelation mellem andelen af en underordnet værdi i forhold til den samlede værdi af den overordnede på tværs af en kontinuerlig variabel.
+Fremhæver tilfælde, hvor der er en overordnet-underordnet-korrelation mellem andelen af en underordnet værdi i forhold til den samlede værdi af den overordnede på tværs af en kontinuerlig variabel. Indsigten med den konstante deling gælder for konteksten af en måling, en dimension og en anden dato-/klokkeslætsdimension. Denne indsigt udløses, når en bestemt dimensionsværdi, f.eks. "det nordøstlige område", har en konstant procentdel af det samlede salg på tværs af denne dato-/klokkeslætsdimension.
+
+Indsigten med den konstante deling ligner den lave varians, da de begge relaterer til den manglende varians for en værdi på tværs af tiden. Indsigten med den konstante deling måler dog den manglende varians for **den overordnede procentdel** på tværs af tiden, mens indsigten med lav varians måler den manglende varians for de absolutte målingsværdier på tværs af en dimension.
 
 ![Eksempel på konstant deling](./media/end-user-insight-types/pbi-auto-insight-types-steadyshare.png)
 

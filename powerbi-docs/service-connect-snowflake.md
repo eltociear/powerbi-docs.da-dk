@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/20/2019
 ms.author: gepopell
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 03e6e8efae5cd4a5f61e3d07bc0b3c524b3b0a46
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 5e5519e30be30d6367791d1b6822196b407a21b1
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77429343"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576857"
 ---
 #  <a name="connecting-to-snowflake-in-power-bi-service"></a>Oprettelse af forbindelse til Snowflake i Power BI-tjenesten
 
@@ -49,7 +49,7 @@ På grund af den måde, Power BI fungerer på, fungerer SSO kun, når der ikke k
 
 * Hvis du kun bruger en Snowflake-kilde i din datamodel, kan du bruge SSO, hvis du vælger ikke at bruge datagatewayen i det lokale miljø
 * Hvis du bruger en Snowflake-kilde sammen med en anden kilde, kan du bruge SSO, hvis ingen af kilderne bruger datagatewayen i det lokale miljø
-* Hvis du bruger en Snowflake-kilde via datagatewayen i det lokale miljø, kan du bruge AAD-legitimationsoplysninger, men ikke SSO. Det kan være relevant, hvis du forsøger at få adgang til en VNet fra en enkelt IP-adresse, hvor gatewayen er installeret, i stedet for fra hele Power BI-IP-intervallet.
+* Hvis du benytter en Snowflake-kilde via en datagateway i det lokale miljø, understøttes AAD-legitimationsoplysninger ikke i øjeblikket. Det kan være relevant, hvis du forsøger at få adgang til en VNet fra en enkelt IP-adresse, hvor gatewayen er installeret, i stedet for fra hele Power BI-IP-intervallet.
 * Hvis du bruger en Snowflake-kilde sammen med en anden kilde, der kræver en gateway, skal du også bruge Snowflake via datagatewayen i det lokale miljø og kan ikke bruge SSO.
 
 Du kan finde flere oplysninger om, hvordan du bruger datagatewayen i det lokale miljø, i artiklen [Hvad er en datagateway i det lokale miljø?](https://docs.microsoft.com/power-bi/service-gateway-onprem)

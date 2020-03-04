@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/23/2020
-ms.openlocfilehash: d4e233e55731d77d4136c1b6ef1e341a2d043234
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.date: 02/27/2020
+ms.openlocfilehash: 251f89dd031d9a2bda146266308dc528f05eddb2
+ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77026709"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782439"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 
@@ -165,6 +165,10 @@ Angiver headerværdier for alle URL-adresser, der svarer til det angivne søgem�
 #### <a name="transparent-database-encryption"></a>Gennemsigtig databasekryptering
 
 Power BI-rapportserver understøtter nu gennemsigtig databasekryptering for katalogdatabasen til Power BI-rapportserver for Enterprise- og Standard-udgaverne.
+
+#### <a name="power-bi-visuals-api"></a>Visualiserings-API i Power BI
+
+API-version 2.6 leveres med denne frigivelse.
 
 #### <a name="microsoft-report-builder-update"></a>Opdatering til Microsoft Report Builder
 
@@ -446,34 +450,34 @@ Den nye version af Power BI Desktop optimeret til Power BI-rapportserver fra mar
 
 Blandt de mange nye funktioner er følgende funktioner særligt interessante.
 
-#### <a name="rule-based-conditional-formatting-for-table-and-matrixhttpspowerbimicrosoftcomblogpower-bi-desktop-november-2017-feature-summaryconditionalformatting"></a>[Regelbaseret betinget formatering til tabel og matrix](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
+#### <a name="rule-based-conditional-formatting-for-table-and-matrix"></a>[Regelbaseret betinget formatering til tabel og matrix](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
 
 Opret regler baseret på betingelser. Du kan f.eks. farvelægge baggrunden eller vælge skrifttypefarven for en kolonne baseret på tabellens eller matrixens specifikke forretningslogik.
 
-#### <a name="show-and-hide-pageshttpspowerbimicrosoftcomblogpower-bi-desktop-january-2018-feature-summaryhidepages"></a>[Vis og skjul sider](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
+#### <a name="show-and-hide-pages"></a>[Vis og skjul sider](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
 
 Du ønsker at give læserne adgang til din rapport, men nogle af siderne er ikke helt færdige. Nu kan du skjule dem, til de er færdige. Du kan også skjule sider i den normale navigation og give læsere adgang til en side ved hjælp af bogmærker eller detaljeadgang.
 
-#### <a name="bookmarkinghttpspowerbimicrosoftcomblogpower-bi-desktop-march-2018-feature-summarybookmarking"></a>[Bogmærker](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
+#### <a name="bookmarking"></a>[Bogmærker](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
 
 Opret bogmærker, som fortæller om dataene i din rapport.
 
 - [Tværgående fremhævning til bogmærker](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting): Bogmærker bevarer og viser rapportsidens tværgående fremhævninger på det tidspunkt, bogmærket blev oprettet.
 - [Større fleksibilitet med bogmærker](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility): Bogmærker afspejler de egenskaber, du angiver i din rapport, og påvirker udelukkende de visualiseringer, du vælger.
 
-#### <a name="multi-select-data-points-across-multiple-chartshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarycrosshighlight"></a>[Markér flere datapunkter på tværs af diagrammer](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
+#### <a name="multi-select-data-points-across-multiple-charts"></a>[Markér flere datapunkter på tværs af diagrammer](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
 
 Markér flere datapunkter i flere diagrammer, og anvend krydsfiltrering på hele siden.
 
-#### <a name="sync-slicers-across-multiple-pages-of-your-reporthttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarysyncslicers"></a>[Synkroniser udsnitsværktøjer på tværs af flere sider i en rapport](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
+#### <a name="sync-slicers-across-multiple-pages-of-your-report"></a>[Synkroniser udsnitsværktøjer på tværs af flere sider i en rapport](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
 
 Et udsnitsværktøj kan anvendes på én, to eller flere sider i en rapport.
 
-#### <a name="quick-measureshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summaryquickmeasures"></a>[Hurtigmålinger](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
+#### <a name="quick-measures"></a>[Hurtigmålinger](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
 
 Opret nye målinger baseret på eksisterende målinger og numeriske kolonner i en tabel.
 
-#### <a name="drilling-down-filters-other-visualshttpspowerbimicrosoftcomblogpower-bi-desktop-december-feature-summarydrillfiltersothervisuals"></a>[Detaljeudledning filtrerer andre visualiseringer](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
+#### <a name="drilling-down-filters-other-visuals"></a>[Detaljeudledning filtrerer andre visualiseringer](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
 
 Når du foretager detaljeudledning i en bestemt kategori i en visualisering, kan du vælge at filtrere alle visualiseringerne på siden efter den pågældende kategori.
 

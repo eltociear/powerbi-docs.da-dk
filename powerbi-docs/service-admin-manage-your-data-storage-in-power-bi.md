@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/23/2020
+ms.date: 02/25/2020
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: bc8b8c16675e6d413c22d4ae88018222b02b17d6
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.openlocfilehash: f5bf1b55c2e092dc755da9f391c83ce3c42661b2
+ms.sourcegitcommit: 30ed21cca2125001f2f992dc6c5f546f4956631c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76709874"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652513"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Administrer datalager i Power BI-arbejdsområder
 
@@ -28,8 +28,8 @@ Lagerbegrænsninger for arbejdsområdet, uanset om det er i mit arbejdsområde e
 ### <a name="shared-capacity-limits"></a>Grænser for delt kapacitet
 For arbejdsområder i delt kapacitet: 
 
-- Der er en lagergrænse pr. arbejdsområde på 10 GB.
-- I forbindelse med arbejdsområder i apps kan det samlede forbrug ikke overstige 10 GB ganget med antallet af Pro-licenser i lejeren.
+- Der er en lagergrænse pr. arbejdsområde på 100 GB.
+- I forbindelse med arbejdsområder i apps kan det samlede forbrug ikke overstige lejerens lagergrænse på 10 GB ganget med antallet af Pro-licenser i lejeren.
 
 ### <a name="premium-capacity-limits"></a>Grænser for Premium-kapacitet
 For arbejdsområder i Premium-kapacitet:

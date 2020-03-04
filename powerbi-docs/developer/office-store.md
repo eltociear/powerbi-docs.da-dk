@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 12/02/2019
-ms.openlocfilehash: ec1bd8666a9d76b4ccfa7793415488f85a24dfdb
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.date: 02/13/2020
+ms.openlocfilehash: 031e1fd5d5c57e37e0d70541d6662b0af7b91b07
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74999884"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576792"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publicer Power BI-visualiseringer i Partnercenter
 
@@ -39,7 +39,7 @@ Når du er klar til at indsende din Power BI-visualisering, skal du bekræfte, a
 | Skærmbilleder |Ja |Angiv mindst ét skærmbillede. Formatet kan være .png, .jpg, .jpeg eller .gif. Dimensionerne skal være nøjagtigt 1366 px (bredde) gange 768 px (højde). Filens størrelse må ikke være større end 1024 kb.<br>Effekten vil være større, hvis du tilføjer tekstbobler for at fremhæve fordelene ved de vigtigste funktioner, som vises på hvert skærmbillede. |
 | Supportlink |Ja |Angiv en URL-adresse til support til dine kunder. Dette link angives som en del af dine poster på Sælgerdashboard og er synligt for brugerne, når de får adgang til dine visualiseringsposter i AppSource. URL-adressen skal indeholde https:// eller https://. |
 | Link til dokument om beskyttelse af personlige oplysninger |Ja |Angiv et link til politikken for beskyttelse af personlige oplysninger for visualiseringen. Dette link angives som en del af dine poster på Sælgerdashboard og er synligt for brugerne, når de får adgang til dine visualiseringsposter i AppSource. Linket skal indeholde https:// eller https://. |
-| Slutbrugerlicensaftale (EULA) |Ja |Du skal uploade en fil med slutbrugerlicensaftalen. Det kan enten være din egen slutbrugerlicensaftale, eller du kan bruge den standardslutbrugerlicensaftale, der findes i Office Store, til Power BI-visualiseringer. Hvis du vil bruge standardslutbrugerlicensaftalen, skal du indsætte følgende URL-adresse i dialogboksen "Slutbrugerlicensaftale" til filupload på Sælgerdashboard. [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). Filen er evt. på engelsk. |
+| Slutbrugerlicensaftale (EULA) |Ja |Du skal angive en EULA-fil til din Power BI-visualisering. |
 | Videolink |Nej |Du kan øge brugernes interesse for din brugerdefinerede visualisering ved at angive et link til en video om visualiseringen. URL-adressen skal indeholde https:// eller https://. |
 | GitHub-lager |Nej |Del et offentligt link til et [GitHub](https://www.github.com)-lager med kilder til dine Power BI-visualiseringer og eksempeldata. Det giver andre udviklere mulighed for at angive feedback og foreslå forbedringer af din kode. |
 
@@ -112,7 +112,7 @@ Når du har indsendt visualiseringen, vil du kunne se statussen for den i [appda
 
 Når du har oprettet din visualisering, kan du vælge at få den [certificeret](../developer/power-bi-custom-visuals-certified.md), hvis du vil.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Udvikling af en brugerdefineret visualisering i Power BI](visuals/custom-visual-develop-tutorial.md)  
 [Visualiseringer i Power BI](../visuals/power-bi-report-visualizations.md)  
