@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 826af7b224b901b6dc9f3926260b1d920836a792
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: f86317b12e3637d6522eebc2f304786c1b39c083
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76040343"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290607"
 ---
 # <a name="extend-visuals-with-report-page-tooltips"></a>Udvid visualiseringer med værktøjstip til rapportsider
 
@@ -88,5 +88,5 @@ Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende 
 - [Opret værktøjstip på basis af rapportsider i Power BI Desktop](../desktop-tooltips.md)
 - [Tilpasning af værktøjstip i Power BI Desktop](../desktop-custom-tooltips.md)
 - [Brug visualiseringer til at forbedre Power BI-rapporter](../desktop-visual-elements-for-reports.md)
-- Videoen Guy in a Cube: [Værktøjstip til rapportside i Power BI – Sådan opretter du et i Power BI Desktop](https://www.youtube.com/watch?v=URTA7JZsAtw)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)

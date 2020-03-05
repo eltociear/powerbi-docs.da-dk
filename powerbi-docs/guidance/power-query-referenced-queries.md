@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: a0127a6ffa0d698a94e368532c44d0f83c362b42
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 49601798ae920d956441c5580079625bf7408e07
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75002391"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290561"
 ---
 # <a name="referencing-power-query-queries"></a>Henvisning til Power Query-forespørgsler
 
@@ -54,5 +54,5 @@ Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende 
 
 - [Selvbetjent dataforberedelse i Power BI](../service-dataflows-overview.md)
 - [Oprettelse og brug af dataflow i Power BI](../service-dataflows-create-use.md)
-- Videoen Guy in a Cube: [Inside Power Query reference queries for Power BI and Excel](https://www.youtube.com/watch?v=3uKNNZqBIkg)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)
