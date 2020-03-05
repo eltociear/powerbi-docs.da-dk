@@ -164,6 +164,6 @@ Af hensyn til brugerne skal du tilføje en licensnøgle eller tokenrelaterede fe
 
 Du kan finde flere oplysninger om Power BI-visualiseringer under [Ofte stillede spørgsmål om Power BI-visualiseringer med yderligere køb](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Få mere at vide om, hvordan du kan publicere din brugerdefinerede Power BI-visualisering i [Microsoft AppSource](office-store.md), så andre kan finde og bruge den.

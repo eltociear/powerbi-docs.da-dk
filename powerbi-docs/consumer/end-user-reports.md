@@ -59,7 +59,7 @@ Dette betyder ikke, at du ikke kan gemme dine ændringer. Det kan du godt, men d
 | Datakilder |Én eller flere rapporter og et eller flere datasæt pr. dashboard |Et enkelt datasæt pr. rapport |
 | Filtrering |Der kan ikke filtreres eller laves udsnit |Der er mange forskellige måder at filtrere, fremhæve og lave udsnit på |
 | Angivelse af beskeder |Der kan oprettes beskeder, som sendes til dig via mail, når dashboardet opfylder visse betingelser |Nej |
-| Udvalgt |Der kan angives ét dashboard som dit udvalgte dashboard |Der kan ikke oprettes en udvalgt rapport |
+| Funktion |Der kan angives ét dashboard som dit udvalgte dashboard |Der kan ikke oprettes en udvalgt rapport |
 | Kan underliggende datasættabeller og felter ses? |Nej. Der kan eksporteres data, men datasættets tabeller og felter kan ikke ses på selve dashboardet |Ja. Det er muligt at se de tabeller, felter og værdier fra datasættet, som du har tilladelse til at se |
 | Tilpasning |Nej  |Det er muligt at filtrere, eksportere, få vist relateret indhold, tilføje bogmærker, generere QR-koder, analysere i Excel og meget mere |
 

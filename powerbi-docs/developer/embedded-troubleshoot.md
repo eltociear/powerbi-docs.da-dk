@@ -219,7 +219,7 @@ Når du har modtaget IError-objektet, skal du kigge i den relevante tabel over a
 | Meddelelse | Detaljeret meddelelse | Fejlkode | Årsag(er) |
 |-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------|
 | TokenExpired | Adgangstokenet er udløbet. Send igen med et nyt adgangstoken | 403 | Udløbet token  |
-| Rapporten blev ikke indlæst | Rapporten blev ikke hentet | 404 | <li> Forkert rapport-id <li> Rapporten findes ikke  |
+| LoadReportFailed | Rapporten blev ikke hentet | 404 | <li> Forkert rapport-id <li> Rapporten findes ikke  |
 | Rapporten blev ikke indlæst | Rapporten blev ikke hentet | 403 | Rapport-id'et svarer ikke til tokenet |
 | LoadReportFailed | Rapporten blev ikke hentet | 500 | Det angivne rapport-id er ikke et GUID |
 | Ugyldige parametre | Parameteren powerbiToken er ikke angivet | I/T | <li> Der er ikke angivet et adgangstoken <li> Der er ikke angivet et rapport-id |
