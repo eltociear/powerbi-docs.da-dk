@@ -146,7 +146,7 @@ Brug ruden Værktøjer til at lære Spørgsmål og svar begreber, det ikke genke
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 Visualiseringen til Spørgsmål og svar kan integreres med Office og Bing for at forsøge at matche almindelige ord, der ikke genkendes, med felter i dit datasæt.  
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan integrere et naturligt sprog på flere forskellige måder. Du kan få flere oplysninger i følgende artikler:
 

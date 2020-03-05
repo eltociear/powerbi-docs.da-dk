@@ -115,7 +115,7 @@ Når du har indsendt visualiseringen, vil du kunne se statussen for den i [appda
 
 Når du har oprettet din visualisering, kan du vælge at få den [certificeret](../developer/power-bi-custom-visuals-certified.md), hvis du vil.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Udvikling af en brugerdefineret visualisering i Power BI](visuals/custom-visual-develop-tutorial.md)  
 [Visualiseringer i Power BI](../visuals/power-bi-report-visualizations.md)  

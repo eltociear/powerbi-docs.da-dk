@@ -650,6 +650,6 @@ valueFormatter.create({});
 // returns: an instance of IValueFormatter.
 ```
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Føj lokaliseringer til en brugerdefineret visual i Power BI](localization.md)  

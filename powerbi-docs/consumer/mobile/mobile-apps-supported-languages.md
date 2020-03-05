@@ -53,7 +53,7 @@ Power BI-mobilapps understøtter i øjeblikket kun disse sprog:
 * Ukrainsk – українська
 * Vietnamesisk – Tiếng Việt
 
-## <a name="notes"></a>Bemærk!
+## <a name="notes"></a>Noter
 * Power BI bruger det sprog, der svarer til landestandarden for den mobile enhed. Du kan ikke angive et andet sprog.
 * Meddelelser findes kun på engelsk. Hvis nogen f.eks. deler et dashboard med dig, er meddelelsen på engelsk. 
 

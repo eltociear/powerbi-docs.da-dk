@@ -215,6 +215,6 @@ let legend: string = this.localization.getDisplayName("Role_Legend");
 
 Den returnerer "Legend" for en-US og "Обозначения" for ru-RU
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Læs om, hvordan du bruger formateringshjælpeprogrammer til at levere oversatte formater](utils-formatting.md)

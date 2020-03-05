@@ -43,11 +43,11 @@ Læs mere om [Microsoft-håndbevægelser i mixed reality](https://developer.micr
 
 **Fastgør et element** 
 
-Brug air tap på **tegnestiftsikonet** ![Tegnestiftsikonet](./media/mobile-mixed-reality-app/power-bi-hololens-pin.png) for at fastgøre et dashboard eller en rapport fra Windows klassisk-visningen i Windows Holographic-visningen. Du kan fastgøre forskellige elementer i Windows Holographic-visningen. 
+Brug air tap på **tegnestiftsikonet**![Tegnestiftsikonet](./media/mobile-mixed-reality-app/power-bi-hololens-pin.png) for at fastgøre et dashboard eller en rapport fra Windows klassisk-visningen i Windows Holographic-visningen. Du kan fastgøre forskellige elementer i Windows Holographic-visningen. 
 
 **Skift til Windows Holographic-visning**
 
-Når du har fastgjort elementer i Windows klassisk-visningen, kan du bruge air tap på ikonet for **fuld skærm** ![Ikonet for fuld skærm](./media/mobile-mixed-reality-app/power-bi-hololens-fullscreen.png) for at skifte til Windows Holographic-visning. 
+Når du har fastgjort elementer i Windows klassisk-visningen, kan du bruge air tap på ikonet for **fuld skærm**![Ikonet for fuld skærm](./media/mobile-mixed-reality-app/power-bi-hololens-fullscreen.png) for at skifte til Windows Holographic-visning. 
 
 
 ## <a name="holographic-view-basics"></a>Grundlæggende elementer i Windows Holographic-visningen

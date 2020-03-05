@@ -202,7 +202,7 @@ Fejlmeddelelse: "'AuthenticationContext' doesn't contain a definition for 'Acqui
 
    Prøv at hente [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727), hvis du får vist denne fejl.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Nu, hvor du har et adgangstoken, kan du kalde Power BI REST-API'en for at integrere indhold. Du kan finde oplysninger under [Sådan integrerer du dit Power BI-indhold](embed-sample-for-customers.md#embed-content-within-your-application).
 

@@ -934,6 +934,6 @@ Du kan anvende algoritmen datareduktion til sektionen `rows` i tilknytningstabel
 
 Du kan anvende algoritmen datareduktion til sektionerne `rows` og `columns` i tilknytningsmatrixen Datavisning.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Læs, hvordan du [tilføjer understøttelse af detailudledning for tilknytning af datavisninger i Power BI-visuals](drill-down-support.md).

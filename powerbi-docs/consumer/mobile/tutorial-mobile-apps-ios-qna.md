@@ -1,5 +1,5 @@
 ---
-title: 'Selvstudium: Stil spørgsmål med den virtuelle analytiker Spørgsmål og svar i iOS-apps'
+title: 'Selvstudium: Stil spørgsmål med den virtuelle Spørgsmål og svar-analytiker i iOS-apps'
 description: I dette selvstudium kan du stille spørgsmål om eksempeldata med dine egne ord ved hjælp af den virtuelle analytiker Spørgsmål og svar i Power BI-mobilappen på din iOS-enhed.
 author: paulinbar
 ms.reviewer: ''
@@ -15,7 +15,7 @@ ms.contentlocale: da-DK
 ms.lasthandoff: 01/06/2020
 ms.locfileid: "75221761"
 ---
-# <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-the-power-bi-ios-apps"></a>Selvstudium: Stil spørgsmål om dine data ved hjælp af den virtuelle analytiker Spørgsmål og svar i iOS-apps med Power BI
+# <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-the-power-bi-ios-apps"></a>Selvstudium: Stil spørgsmål om dine data ved hjælp af den virtuelle Spørgsmål og svar-analytiker i iOS-apps med Power BI
 
 Den nemmeste måde at få mere at vide om dine data er at stille spørgsmål om dem med dine egne ord. I dette selvstudium kan du stille spørgsmål og få vist udvalgt indsigt om eksempeldata med den virtuelle analytiker Spørgsmål og svar i Microsoft Power BI-mobilappen på iPad eller iPhone. 
 
@@ -27,7 +27,7 @@ Gælder for:
 
 Den virtuelle analytiker Spørgsmål og svar er en BI-samtaleoplevelse, der har adgang til underliggende data i Spørgsmål og svar i [Power BI-tjenesten](https://powerbi.com). Den foreslår indsigt i data, og du kan skrive eller indtale dine egne spørgsmål.
 
-![Bedste salg i den virtuelle analytiker Spørgsmål og svar](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
+![Bedste virtuelle Spørgsmål og svar-analytiker](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
 
 I dette selvstudium skal du:
 
@@ -62,17 +62,17 @@ Når du har fuldført forudsætningerne og downloadet eksempeldataene, er du kla
 
     ![Åbn den virtuelle analytiker Spørgsmål og svar](./media/tutorial-mobile-apps-ios-qna/power-bi-qna-open-qna.png)
 
-    Den virtuelle analytiker Spørgsmål og svar indeholder nogle forslag til at komme i gang.
+    Den virtuelle Spørgsmål og svar-analytiker indeholder nogle forslag til at komme i gang.
 
     ![Forslag til den virtuelle analytiker Spørgsmål og svar](./media/tutorial-mobile-apps-ios-qna/power-bi-qna-suggestions.png)
 
 3. Tryk på **udvalgt indsigt**.
 
-4. Den virtuelle analytiker Spørgsmål og svar foreslår nogle indsigtsmuligheder. Rul til højre, og tryk på **Indsigt 2**.
+4. Den virtuelle Spørgsmål og svar-analytiker foreslår nogle indsigtsmuligheder. Rul til højre, og tryk på **Indsigt 2**.
 
     ![Udvalgt indsigt](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-suggest-insight-2.png)
 
-   Den virtuelle analytiker Spørgsmål og svar viser Indsigt 2.
+   Den virtuelle Spørgsmål og svar-analytiker viser Indsigt 2.
 
     ![Få vist udvalgt indsigt](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-show-insight-2.png)
 
@@ -80,7 +80,7 @@ Når du har fuldført forudsætningerne og downloadet eksempeldataene, er du kla
 
     ![Åbn diagram i fokustilstand](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-open-insight-2.png)
 
-6. Tryk på pilen i øverste venstre hjørne for at gå tilbage til oplevelsen med den virtuelle analytiker Spørgsmål og svar.
+6. Tryk på pilen i øverste venstre hjørne for at gå tilbage til den virtuelle Spørgsmål og svar-analytikeroplevelse.
 
 ## <a name="clean-up-resources"></a>Fjern ressourcer
 

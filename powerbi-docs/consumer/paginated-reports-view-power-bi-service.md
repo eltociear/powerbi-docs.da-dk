@@ -52,6 +52,6 @@ Du kan også eksportere sideinddelte rapporter til en række formater:
     ![Vælg et eksportformat](media/paginated-reports-view-power-bi-service/power-bi-paginated-export.png)
 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Sideinddelte rapporter i Power BI-tjenesten](end-user-paginated-report.md)

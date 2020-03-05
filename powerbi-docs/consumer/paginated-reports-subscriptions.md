@@ -37,7 +37,7 @@ Når du konfigurerer abonnementer, vælger du ofte, hvordan du vil modtage mails
 
 - Der findes ingen indstilling til **Efter dataopdatering** for hyppigheden i forbindelse med sideinddelte rapporter. Du får altid de nyeste værdier fra den underliggende datakilde. 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten](../service-report-subscribe.md)
 

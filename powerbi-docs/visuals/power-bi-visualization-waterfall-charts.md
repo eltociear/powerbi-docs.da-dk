@@ -115,7 +115,7 @@ Se lidt nærmere på, hvad der bidrager mest til ændringerne måned for måned.
 
     ![vandfaldsdiagram](media/power-bi-visualization-waterfall-charts/power-bi-axis-waterfall.png)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Rediger, hvordan visualiseringer interagerer i en Power BI-rapport](../service-reports-visual-interactions.md)
 

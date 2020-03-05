@@ -372,7 +372,7 @@ button.addEventListener("click", (mouseEvent) => {
 });
 ```
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Læs om, hvordan du kan bruge valg til at forbinde visualegenskaber og datapunkter](objects-properties.md#objects-selector)
 

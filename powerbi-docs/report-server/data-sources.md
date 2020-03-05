@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/21/2020
+ms.date: 03/02/2020
 ms.author: maggies
-ms.openlocfilehash: 343c7d7e81d8e8ec53383feab6dc4dcfb17129d6
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 08eca8ecb9aa941c2670a801113bc711bff409b2
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540584"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237517"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakilder på Power BI-rapportserver
 Power BI-rapporter kan oprette forbindelse til en række datakilder. Der er adgang til forskellige datakilder, afhængigt af hvordan dataene bruges. Dataene kan importeres, eller der kan foretages forespørgsler om data direkte ved hjælp af DirectQuery eller en direkte forbindelse til SQL Server Analysis Services.
@@ -41,7 +41,7 @@ Det er muligt, at andre datakilder fungerer, selvom de ikke står på listen ove
 | Azure Blob Storage |Ja |Ja |Nej |
 | Azure Data Lake Store |Ja |Nej |Nej |
 | Azure HDInsight (HDFS) |Ja |Nej |Nej |
-| Azure HDInsight (Spark) |Ja |Ja |Nej |
+| Azure HDInsight (Spark) |Ja |Nej |Nej |
 | Azure Table Storage |Ja |Ja |Nej |
 | Dynamics 365 (online) |Ja |Nej |Nej |
 | Facebook |Ja |Nej |Nej |
@@ -128,7 +128,7 @@ Power BI-rapportserver understøtter ikke OAuth-baseret godkendelse i forbindels
 | Azure Blob Storage |Ja |Ja |Nej |Nej |
 | Azure Data Lake Store |Nej |Nej |Nej |Nej |
 | Azure HDInsight (HDFS) |Nej |Nej |Nej |Nej |
-| Azure HDInsight (Spark) |Ja |Ja |Nej |Nej |
+| Azure HDInsight (Spark) |Nej |Nej |Nej |Nej |
 | Azure Table Storage |Nej |Ja |Nej |Nej |
 | Dynamics 365 (online) |Nej |Nej |Nej |Nej |
 | Facebook |Nej |Nej |Nej |Nej |

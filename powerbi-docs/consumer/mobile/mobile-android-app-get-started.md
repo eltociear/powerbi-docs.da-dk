@@ -96,7 +96,7 @@ Microsoft Intune giver virksomhederne mulighed for at kontrollere ting som anmod
 
 Læs mere om at [konfigurere Power BI-mobilapps med Microsoft Intune](../../service-admin-mobile-intune.md). 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 Her er nogle andre ting, du kan gøre i Android-enhedsappen til Power BI med dashboards og rapporter i Power BI samt rapporter og KPI'er i Power BI-rapportserveren eller Reporting Services-webportalen.
 
 ### <a name="power-bi-dashboards-and-reports"></a>Power BI-dashboards og -rapporter

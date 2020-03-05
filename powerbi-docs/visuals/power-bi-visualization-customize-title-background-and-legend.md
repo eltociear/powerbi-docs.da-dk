@@ -160,7 +160,7 @@ Her er en liste over de visualiseringer og tilpasningsindstillinger, der er tilg
 | Træstruktur | ja | ja | ja |
 | Vandfaldsdiagram | ja | ja | ja |
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 - [Tilpas egenskaberne for X- og Y-aksen](power-bi-visualization-customize-x-axis-and-y-axis.md)
 

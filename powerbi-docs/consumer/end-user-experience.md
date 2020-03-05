@@ -168,7 +168,7 @@ Når du er færdig med denne hurtige introduktion, kan du slette dashboardet, ra
 
 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 > [!div class="nextstepaction"]
 > [Læsevisning i Power BI-tjenesten](end-user-reading-view.md)

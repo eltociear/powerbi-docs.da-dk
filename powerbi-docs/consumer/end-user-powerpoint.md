@@ -91,5 +91,5 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
 * **Downloadtidspunktet** på det forreste slide af den eksporterede PowerPoint-fil svarer til eksporttidspunktet iht. den tidszone, der er angivet på din computer.
 * Filtre for URL-dresser respekteres ikke i øjeblikket, når du vælger **Aktuelle værdier** til din eksport.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 [Udskriv en rapport](end-user-print.md)

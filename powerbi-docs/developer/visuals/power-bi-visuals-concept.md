@@ -126,7 +126,7 @@ Handlinger og efterfølgende opdateringer i Power BI-visualiseringer optræder i
 
     Hvis du vil vide mere om hændelsestjenesten, skal du se [Gengiv hændelser i visualiseringer i Power BI](event-service.md).
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Er du interesseret i at oprette dine egne visualiseringer og føje dem til Microsoft AppSource? Se følgende artikler:
 

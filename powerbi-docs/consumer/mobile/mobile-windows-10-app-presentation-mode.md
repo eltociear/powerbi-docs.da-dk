@@ -54,7 +54,7 @@ Du kan fradocke værktøjslinjen og trække den til en hvilken som helst placeri
 ![Rapport i præsentationstilstand og fradocket værktøjslinje](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-drag-toolbar-2.png)
 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 * [Få vist dashboards og rapporter i fuldskærmsvisning fra Power BI-tjenesten](../end-user-focus.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

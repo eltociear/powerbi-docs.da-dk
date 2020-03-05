@@ -51,7 +51,7 @@ Power BI-appen til Android giver administratorer mulighed for at konfigurere int
 | Nøgle | Type | Værdier | Beskrivelse |
 |---|---|---|---|
 | com.microsoft.powerbi.mobile.ReportTapInteraction | Streng |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Konfigurer, om tryk på visualisering også vil lave et datapunktvalg. |
-| com.microsoft.powerbi.mobile.RefreshAction | Streng |  <nobr>pull-to-refresh</nobr><br> knappen | Konfigurer, om brugeren skal have en knap til at opdatere rapporten, eller om han bruger træk-opdatering. |
+| com.microsoft.powerbi.mobile.RefreshAction | Streng |  <nobr>pull-to-refresh</nobr><br>knappen | Konfigurer, om brugeren skal have en knap til at opdatere rapporten, eller om han bruger træk-opdatering. |
 | com.microsoft.powerbi.mobile.FooterAppearance | Streng |  forankret<br>dynamisk | Konfigurer, om rapportfoden skal fastgøres nederst i rapporten eller skjules automatisk. |
 
 ## <a name="deploying-app-configuration-settings"></a>Udrulning af konfigurationsindstillinger for apps

@@ -7,14 +7,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 03/03/2020
 ms.author: davidi
-ms.openlocfilehash: a33efaf4e0ecd871170873df072f24bf8f824cdc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 41a0d100817f23d3a395f05cefbe60a0214bfb59
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871162"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260847"
 ---
 # <a name="power-bi-videos"></a>Power BI-videoer
 Vi har en YouTube-kanal til Power BI! Du kan besøge [vores kanal](https://www.youtube.com/user/mspowerbi/videos) og, hvis du ikke kender til Power BI, er det en god idé at starte med [Analysér og visualiser data med Power BI-afspilningsliste](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP).
@@ -43,7 +43,6 @@ Her er et par videoer fra afspilningslisten, som kan hjælpe dig med at komme i 
 Se følgende samling af kilder og indhold for flere videoer.
 
 * [Automatiseret læring for Power BI](https://powerbi.microsoft.com/guided-learning/) – en serie af lærerige rundvisninger i Power BI i små bidder
-* [Guy in a Cube-kanal](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w) – nye videoer om funktioner og egenskaber i Power BI
 
 ## <a name="next-steps"></a>Næste trin
 [Hvad er Power BI?](fundamentals/power-bi-overview.md)

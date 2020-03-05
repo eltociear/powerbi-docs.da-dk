@@ -1,6 +1,6 @@
 ---
-title: Den virtuelle analytiker Spørgsmål og svar i iOS-apps – Power BI
-description: Stil spørgsmål om eksempeldata med dine egne ord ved hjælp af den virtuelle analytiker Spørgsmål og svar i Power BI-mobilappen på din iOS-enhed.
+title: Virtuel Spørgsmål og svar-analytiker i iOS-apps – Power BI
+description: Stil spørgsmål om eksempeldata med dine egne ord ved hjælp af den virtuelle Spørgsmål og svar-analytiker i Power BI-mobilappen på din iOS-enhed.
 author: mshenhav
 ms.reviewer: ''
 ms.service: powerbi
@@ -15,9 +15,9 @@ ms.contentlocale: da-DK
 ms.lasthandoff: 12/19/2019
 ms.locfileid: "75219552"
 ---
-# <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Den virtuelle analytiker Spørgsmål og svar i iOS-apps – Power BI
+# <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Virtuel Spørgsmål og svar-analytiker i iOS-apps – Power BI
 
-Den nemmeste måde at få mere at vide om dine data er at stille spørgsmål om dem med dine egne ord. I denne artikel kan du stille spørgsmål og få vist udvalgt indsigt i eksempeldata med den virtuelle analytiker Spørgsmål og svar i Microsoft Power BI-mobilappen på iPad, iPhone og iPod Touch. 
+Den nemmeste måde at få mere at vide om dine data er at stille spørgsmål om dem med dine egne ord. I denne artikel kan du stille spørgsmål og få vist udvalgt indsigt i eksempeldata med den virtuelle Spørgsmål og svar-analytiker i Microsoft Power BI-mobilappen på iPad, iPhone og iPod Touch. 
 
 Gælder for:
 
@@ -25,9 +25,9 @@ Gælder for:
 |:--- |:--- |
 | iPhone-telefoner |iPad-tablets |
 
-Den virtuelle analytiker Spørgsmål og svar er en BI-samtaleoplevelse, der har adgang til underliggende Spørgsmål og svar-data i Power BI-tjenesten [(https://powerbi.com)](https://powerbi.com). Den foreslår indsigt i data, og du kan skrive eller indtale dine egne spørgsmål.
+Den virtuelle Spørgsmål og svar-analytiker er en BI-samtaleoplevelse, der har adgang til underliggende Spørgsmål og svar-data i Power BI-tjenesten [(https://powerbi.com)](https://powerbi.com). Den foreslår indsigt i data, og du kan skrive eller indtale dine egne spørgsmål.
 
-![Bedste salg i den virtuelle analytiker Spørgsmål og svar](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
+![Bedste virtuelle Spørgsmål og svar-analytiker](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
 
 Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
 
@@ -44,8 +44,8 @@ Når du har fuldført forudsætningerne, er du klar til at prøve den virtuelle 
 ## <a name="try-asking-questions-on-your-iphone-or-ipad"></a>Prøv at stille spørgsmål på din iPhone eller iPad
 1. Tryk på knappen Arbejdsområder på den nederste navigationslinje på din iPhone eller iPad ![knappen arbejdsområder](./media/mobile-apps-ios-qna/power-bi-iphone-workspaces-button.png), gå til Mit arbejdsområde, og åbn dashboardet med eksemplet Analyse af detailhandel.
 
-2. Tryk på ![ikonet for den virtuelle analytiker Spørgsmål og svar](././media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png) i handlingsmenuen i bunden af siden (øverst på siden på en iPad).
-     Den virtuelle analytiker Spørgsmål og svar indeholder nogle forslag til at komme i gang.
+2. Tryk på ![ikonet for den virtuelle Spørgsmål og svar-analytiker](././media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png) i handlingsmenuen i bunden af siden (øverst på siden på en iPad).
+     Den virtuelle Spørgsmål og svar-analytiker indeholder nogle forslag til at komme i gang.
 3. Skriv **vis**, tryk på **salg** på listen over forslag > **Send** ![ikonet Send](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Vis salg](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-show-sales.png)
@@ -60,7 +60,7 @@ Når du har fuldført forudsætningerne, er du klar til at prøve den virtuelle 
     Diagrammet åbnes i fokuseringstilstand i appen.
 
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-expanded-chart.png)
-7. Tryk på pilen i øverste venstre hjørne for at gå tilbage til chatvinduet i den virtuelle analytiker Spørgsmål og svar.
+7. Tryk på pilen i øverste venstre hjørne for at gå tilbage til den virtuelle Spørgsmål og svar-analytikers chatvindue.
 8. Tryk på X til højre for tekstfeltet for at slette teksten og starte forfra.
 9. Prøv et nyt spørgsmål: Tryk på **bedste** blandt nøgleordene, tryk på **salg efter gennemsnit $/enhed l** > **Send** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
@@ -75,7 +75,7 @@ Når du har fuldført forudsætningerne, er du klar til at prøve den virtuelle 
 ## <a name="try-saying-your-questions"></a>Prøv at sige dine spørgsmål
 Nu kan du stille spørgsmål om dine data i Power BI-mobilappen ved at tale i stedet for at indtaste.
 
-1. Tryk på ikonet for den virtuelle analytiker Spørgsmål og svar ![Ikonet for den virtuelle analytiker Spørgsmål og svar](././media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png) i handlingsmenuen i bunden af siden (øverst på siden på en iPad).
+1. Tryk på ikonet for den virtuelle Spørgsmål og svar-analytiker ![Ikonet for den virtuelle Spørgsmål og svar-analytiker](././media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png) i handlingsmenuen i bunden af siden (øverst på siden på en iPad).
 2. Tryk på mikrofonikonet ![](media/mobile-apps-ios-qna/power-bi-ios-qna-mic-icon.png).
 
     ![](media/mobile-apps-ios-qna/power-bi-ios-qna-mic-on.png)
@@ -95,14 +95,14 @@ Se afsnittet om talegenkendelse under [Nyheder i iOS](https://go.microsoft.com/f
 
     Din feedback er anonym og hjælper os med at forbedre vores svar på spørgsmål.
 
-## <a name="enhance-your-qa-virtual-analyst-results"></a>Udvid dine resultater fra den virtuelle analytiker Spørgsmål og svar
-Du kan forbedre de resultater, du og dine kunder får, når de bruger den virtuelle analytiker Spørgsmål og svar på et datasæt, enten ved at stille mere målrettede spørgsmål eller med et forbedret datasæt.
+## <a name="enhance-your-qa-virtual-analyst-results"></a>Udvid dine resultater fra den virtuelle Spørgsmål og svar-analytiker
+Du kan forbedre de resultater, du og dine kunder får, når de bruger den virtuelle Spørgsmål og svar-analytiker på et datasæt, enten ved at stille mere målrettede spørgsmål eller med et forbedret datasæt.
 
 ### <a name="how-to-ask-questions"></a>Sådan spørger du
-* Følg disse [tip til at stille spørgsmål i Spørgsmål og svar](../end-user-q-and-a-tips.md) i Power BI-tjenesten eller den virtuelle analytiker Spørgsmål og svar i din mobilapp til iOS.
+* Følg disse [tip til at stille spørgsmål i Spørgsmål og svar](../end-user-q-and-a-tips.md) i Power BI-tjenesten eller den virtuelle Spørgsmål og svar-analytiker i din mobilapp til iOS.
 
 ### <a name="how-to-enhance-the-dataset"></a>Sådan forbedres datasættet
-* Udvid datasættet i Power BI Desktop eller i Power BI-tjenesten for at [få dine data til at fungere godt sammen med den virtuelle analytiker Spørgsmål og svar](../../service-prepare-data-for-q-and-a.md).
+* Udvid datasættet i Power BI Desktop eller i Power BI-tjenesten for at [få dine data til at fungere godt sammen med den virtuelle Spørgsmål og svar-analytiker](../../service-prepare-data-for-q-and-a.md).
 
 ## <a name="next-steps"></a>Næste trin
 * [Spørgsmål og svar i Power BI-tjenesten](../end-user-q-and-a.md)

@@ -616,6 +616,6 @@ På det sidste trin får du vist visual'et med genvejsmenuen:
 
 ![Visual'et med understøttelse af detailudledning](./media/dev-matrix-visual-drilldown-demo.gif)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger under [Forstå tilknytning af datavisning i Power BI-visualiseringer](dataview-mappings.md).

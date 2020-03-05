@@ -35,6 +35,6 @@ Når du får vist en rapport, der indeholder parametre, viser værktøjslinjen f
 
 5. **Default values** Hvis alle parametre har standardværdier, køres rapporten automatisk ved første visning. Nogle parametre i denne rapport har ikke standardværdier, så du kan ikke se rapporten, før du vælger værdier.  
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Sideinddelte rapporter i Power BI-tjenesten](end-user-paginated-report.md)

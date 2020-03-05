@@ -20,7 +20,7 @@ Gælder for:
 
 | ![iPhone](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/android-tablet-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhones |iPad-tablets |Android-telefoner |Android-tablets |
+| iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |
 
 Du kan anmærke og dele et øjebliksbillede af et felt, en rapport eller en visualisering fra Power BI-mobilappen på iOS- og Android-enheder. Dine modtagere kan se det, præcis som det var, når du sender mailen med et link. Du kan sende et øjebliksbillede af felter til alle – ikke kun til kolleger på samme maildomæne. Du kan tilføje anmærkninger – streger, tekst eller stempler – før du deler.
 

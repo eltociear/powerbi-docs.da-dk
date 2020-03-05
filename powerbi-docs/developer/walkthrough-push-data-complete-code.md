@@ -231,7 +231,7 @@ Når du har fulgt trin 2 til 5 i **Push af data til et datasæt**, bør din komp
 [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md)  
 [Hent et datasæt, der kan føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md)  
 [Føj rækker til en Power BI-tabel](walkthrough-push-data-add-rows.md)  
-[Power BI REST-API-reference](https://docs.microsoft.com/rest/api/power-bi/)  
+[Reference til Power BI REST-API](https://docs.microsoft.com/rest/api/power-bi/)  
 [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

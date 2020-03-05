@@ -92,7 +92,7 @@ Når du abonnerer på en sideinddelt rapport, sender Power BI dig en mail med ra
 
  
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 - [Power BI-rapporter](end-user-reports.md)
 - Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).
 

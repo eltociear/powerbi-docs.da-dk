@@ -163,6 +163,6 @@ Certificering er en valgfri proces, og det er op til dig at beslutte, om du vil 
 
 Du er meget velkommen til at kontakte supportteamet til Power BI-visualiseringer på pbicvsupport@microsoft.com, hvis du har spørgsmål, kommentarer eller problemer.  
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger under [Fejlfinding af Power BI-visualiseringer](power-bi-custom-visuals-troubleshoot.md).

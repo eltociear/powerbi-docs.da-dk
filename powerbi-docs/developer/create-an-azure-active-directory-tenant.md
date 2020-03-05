@@ -95,6 +95,6 @@ Nu, hvor du har en Azure AD-lejer, kan du bruge denne lejer til at teste element
 
 [Hvad er en Azure Active-mappe?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) 
  
-[Hurtig introduktion: Konfigurer et udviklingsmiljø](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
+[Hurtig start: Konfigurer et udviklingsmiljø](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

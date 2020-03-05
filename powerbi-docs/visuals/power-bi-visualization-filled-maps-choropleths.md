@@ -136,7 +136,7 @@ Hvis du ikke har adgang til data om breddegrad og længdegrad, men du har redige
 
 Du kan få hjælp til kortvisualiseringer under [Tip og råd til kortvisualiseringer](../power-bi-map-tips-and-tricks.md).
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Figurkort](desktop-shape-map.md)
 

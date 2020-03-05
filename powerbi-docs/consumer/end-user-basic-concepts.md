@@ -24,7 +24,7 @@ ms.locfileid: "77496887"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Denne artikel forudsætter, at du allerede har læst [Oversigt over Power BI](../fundamentals/power-bi-overview.md) og har identificeret dig selv som [Power BI-**_forbruger_**](end-user-consumer.md). Forbrugere modtager Power BI-indhold, f.eks. dashboards og rapporter, fra kolleger. Forbrugere bruger Power BI-tjenesten, som er den webstedsbaserede version af Power BI.
+Denne artikel forudsætter, at du allerede har læst [Oversigt over Power BI](../fundamentals/power-bi-overview.md) og har identificeret dig selv som [Power BI- **_forbruger_** ](end-user-consumer.md). Forbrugere modtager Power BI-indhold, f.eks. dashboards og rapporter, fra kolleger. Forbrugere bruger Power BI-tjenesten, som er den webstedsbaserede version af Power BI.
 
 Modtagelse af indhold fra andre kræver en Power BI Pro-brugerlicens eller en licens til en Power BI Premium-kapacitet. [Slå licenstypen op](end-user-license.md)
 
@@ -58,7 +58,7 @@ _______________________________________________________
 
 ### <a name="introduction-to-building-blocks"></a>Introduktion til byggestenene
 
-For Power BI-forbrugere er de fem byggesten: **_visualiseringer_**, **_dashboards_**, **_rapporter_**, **_apps_** og **_datasæt_**. Disse omtales nogle gange som *Power BI*-**_indhold_** *Indhold* findes i **_arbejdsområder_**. En typisk arbejdsproces omfatter alle byggestenene: En Power BI-*designer* (gul i nedenstående diagram) indsamler data fra *datasæt*, overfører dem til Power BI med henblik på analyse, opretter *rapporter* med mange *visualiseringer*, der fremhæver interessante fakta og indsigt, fastgør visualiseringerne fra rapporter til et dashboard og deler rapporter og dashboards med *forbrugere* som dig (sort i nedenstående diagram). *Designeren* deler dem i form af *apps* eller andre former for delt indhold.
+For Power BI-forbrugere er de fem byggesten: **_visualiseringer_** , **_dashboards_** , **_rapporter_** , **_apps_** og **_datasæt_** . Disse omtales nogle gange som *Power BI*- **_indhold_** *Indhold* findes i **_arbejdsområder_** . En typisk arbejdsproces omfatter alle byggestenene: En Power BI-*designer* (gul i nedenstående diagram) indsamler data fra *datasæt*, overfører dem til Power BI med henblik på analyse, opretter *rapporter* med mange *visualiseringer*, der fremhæver interessante fakta og indsigt, fastgør visualiseringerne fra rapporter til et dashboard og deler rapporter og dashboards med *forbrugere* som dig (sort i nedenstående diagram). *Designeren* deler dem i form af *apps* eller andre former for delt indhold.
 
 ![Et diagram over en grundlæggende Power BI-arbejdsproces.](media/end-user-basic-concepts/power-bi-workflow.png)
 

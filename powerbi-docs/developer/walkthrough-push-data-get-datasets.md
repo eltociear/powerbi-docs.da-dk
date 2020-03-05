@@ -42,7 +42,7 @@ Sådan henter du et datasæt.
 
 Indsæt denne kode i Program.cs.
 
-* In static void Main(string[] args):
+* I static void Main(string[] args):
   
   ```csharp
   static void Main(string[] args)
@@ -272,7 +272,7 @@ namespace walkthrough_push_data
 [Newtonsoft.Json](https://www.newtonsoft.com/json)  
 [Hent datasæt](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)  
 [Overfør data til Power BI](walkthrough-push-data.md)  
-[Oversigt over Power BI REST-API'en](overview-of-power-bi-rest-api.md)  
+[Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
 [Power BI REST-API-reference](https://docs.microsoft.com/rest/api/power-bi/)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

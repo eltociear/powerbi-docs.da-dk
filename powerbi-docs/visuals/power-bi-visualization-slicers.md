@@ -51,9 +51,9 @@ Power BI-udsnitsværktøjer understøtter ikke:
    
 1. Gå til filen **Retail Analysis sample PBIX.pbix**, og vælg derefter **Åbn**.
 
-1. I ruden til venstre skal du vælge ikonet **Rapport** ![Ikonet Rapport](media/power-bi-visualization-kpi/power-bi-report-view.png) for at åbne filen i rapportvisning.
+1. I ruden til venstre skal du vælge ikonet **Rapport**![Ikonet Rapport](media/power-bi-visualization-kpi/power-bi-report-view.png) for at åbne filen i rapportvisning.
 
-1. Uden at have markeret noget på rapportlærredet skal du på siden **Oversigt** vælge ikonet **Udsnit** ![Ikonet Udsnit](media/power-bi-visualization-slicers/slicer-icon.png) i ruden **Visualiseringer** for at oprette et nyt udsnit. 
+1. Uden at have markeret noget på rapportlærredet skal du på siden **Oversigt** vælge ikonet **Udsnit**![Ikonet Udsnit](media/power-bi-visualization-slicers/slicer-icon.png) i ruden **Visualiseringer** for at oprette et nyt udsnit. 
 
 1. Med det nye udsnit markeret skal du vælge **Distrikt** > **DM** i ruden **Felter** for at udfylde udsnittet. 
 
@@ -163,7 +163,7 @@ I den aktuelle rapport på siden **Månedligt salg for distrikt** er der et udsn
 ## <a name="format-slicers"></a>Formatér udsnit
 Der findes forskellige indstillinger til formatering afhængigt af udsnitstypen. Hvis du bruger retningen **Vandret**, layoutet **Dynamisk** og **elementfarver**, kan du oprette knapper eller felter i stedet for almindelige listeelementer og få elementer i udsnit til at tilpasse størrelse, så de passer til forskellige skærmstørrelser og layout.  
 
-1. Med udsnittet **District Manager** markeret på en vilkårlig side skal du i ruden **Visualiseringer** vælge ikonet **Formatér** ![Ikonet Formatér](media/power-bi-visualization-slicers/power-bi-paintroller.png) for at få vist kontrolelementerne til formatering. 
+1. Med udsnittet **District Manager** markeret på en vilkårlig side skal du i ruden **Visualiseringer** vælge ikonet **Formatér**![Ikonet Formatér](media/power-bi-visualization-slicers/power-bi-paintroller.png) for at få vist kontrolelementerne til formatering. 
     
     ![Valg af formatering](media/power-bi-visualization-slicers/3-format.png)
     

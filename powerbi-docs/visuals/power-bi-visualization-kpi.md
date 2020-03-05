@@ -99,7 +99,7 @@ KPI'er er også tilgængelige i Power BI-tjenesten og på dine mobilenheder. Det
 
 Hvis KPI'en ikke ligner det ovenfor, kan det skyldes, at du ikke har sorteret efter **FiscalMonth**. KPI'er har ikke en sorteringsindstilling. Du skal starte igen og sortere efter **FiscalMonth**, *før* du konverterer din visualisering til en KPI.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Tip og tricks til Power BI-kortvisualiseringer](power-bi-map-tips-and-tricks.md)
 

@@ -645,7 +645,7 @@ Som resultatet får du visualiseringen med knapper og værdier `highlighted valu
 
 ![Visualiseringen med tilknytning og fremhævning af matrixdatavisninger](./media/dev-matrix-visual-highlight-demo.gif)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Læs om tilknytninger af matrixdatavisning](dataview-mappings.md#matrix-data-mapping)
 

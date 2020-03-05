@@ -224,7 +224,7 @@ Når en visualisering er avanceret, hjælper det at tilføje aksetitler.  Titler
 
 Du kan finde flere oplysninger under [Tip og tricks til farveformatering i Power BI](service-tips-and-tricks-for-color-formatting.md) og [Tilpas visualiseringernes titler, forklaringer og baggrunde](power-bi-visualization-customize-title-background-and-legend.md). Og søg efter nye opdateringer til formatering af titler, der kommer snart. 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 - [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
 

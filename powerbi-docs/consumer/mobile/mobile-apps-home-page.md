@@ -32,11 +32,11 @@ Når du åbner Power BI-mobilappen, kommer du til startsiden, hvor du hurtigt ka
 
 Under fanen Hurtig adgang kan du se oftest anvendte og senest viste rapporter, dashboards og apps, grupperet i to sektioner, der kan skjules. Hvis du vil se en længere liste over dine senest viste elementer, skal du trykke på **Se alle** til højre for Seneste. 
 
-## <a name="activity-feed"></a>Aktivitetsfeed
+## <a name="activity-feed"></a>Aktivitetsopdatering
 
 Aktivitetsfeedet hjælper dig med at holde styr på, hvad der sker med dit Power BI-indhold. Du får vist alle dine seneste meddelelser, beskeder, kommentarer og @mentions.
 
-![Aktivitetsfeed](./media/mobile-apps-home-page/powerbi-mobile-app-activity.png)
+![Aktivitetsopdatering](./media/mobile-apps-home-page/powerbi-mobile-app-activity.png)
 
 Opdateringerne i feedet omfatter:
 * **Opdaterede data**: Når de underliggende data i en af rapporterne eller på et af dashboardene i dine Favoritter eller Seneste opdateres.
@@ -52,7 +52,7 @@ Aktivitetselementer samles, så alle dataopdateringer, der kommer fra samme app 
 
 Nederst på siden finder du navigationslinjen.
 
-![Aktivitetsfeed](./media/mobile-apps-home-page/powerbi-mobile-app-navbar.png)
+![Aktivitetsopdatering](./media/mobile-apps-home-page/powerbi-mobile-app-navbar.png)
 
 Navigationslinjen giver hurtig adgang til:
 
@@ -65,11 +65,11 @@ Navigationslinjen giver hurtig adgang til:
 * ![eksempel ikon](./media/mobile-apps-home-page/powerbi-mobile-app-samples-icon.png) **Eksempler** – Power BI-eksempler, du kan bruge til at få mere at vide om Power BI-egenskaber.
 * ![scanner ikon](./media/mobile-apps-home-page/powerbi-mobile-app-scanner-icon.png) **Scanner** – det enhedskamera, du kan bruge som scanner til at scanne [stregkoder](../../mobile-apps-scan-barcode-iphone.md) og [QR-koder](../../mobile-apps-qr-code.md).
 
-## <a name="header"></a>Overskrift
+## <a name="header"></a>Sidehoved
 
 Øverst på siden angiver overskriften navnet på Power BI-siden, -rapporten eller -dashboardet, du er på.
 
-![overskrift](./media/mobile-apps-home-page/powerbi-mobile-app-header.png)
+![header](./media/mobile-apps-home-page/powerbi-mobile-app-header.png)
 
 Overskriften indeholder følgende navigationselementer:
 * **Profilbillede eller avatar** – åbner sidepanelet, hvor du kan [skifte mellem dine konti til Power BI-tjenesten og rapportserver](../../mobile-app-ssrs-kpis-mobile-on-premises-reports.md), samt adgang til indstillinger for Power BI-mobilappen.

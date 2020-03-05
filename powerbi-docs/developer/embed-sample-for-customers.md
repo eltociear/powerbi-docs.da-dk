@@ -184,7 +184,7 @@ Udfyld oplysningerne for **ApplicationSecret** ud fra sektionen **Nøgler** i se
 
 Hvis du vil hente **ApplicationSecret**, skal du følge disse trin:
 
-1. Log på [Azure-portalen](https://portal.azure.com).
+1. Log på [Azure Portal](https://portal.azure.com).
 
 2. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg derefter **Appregistreringer**.
 
@@ -454,7 +454,7 @@ Følg nedenstående trin for at tildele en dedikeret kapacitet til et arbejdsomr
 
     ![arbejdsområde knyttet til en kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 I dette selvstudium har du lært, hvordan du integrerer Power BI-indhold i en app for dine kunder. Du kan også prøve at integrere Power BI-indhold til din organisation.
 

@@ -61,7 +61,7 @@ Du får derefter følgende filstruktur:
 > [!NOTE]
 > Du skal importere. css-filen som en .less-fil, da Power BI Visuals Tools samler de eksterne CSS-regler.
 
-## <a name="usage"></a>Brug
+## <a name="usage"></a>Forbrug
 
 ### <a name="define-interface-for-data-points"></a>Definer grænsefladen for datapunkter
 
@@ -280,7 +280,7 @@ this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
 
 Nu er dit visual klar til at håndtere valg.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Læs om, hvordan du kan håndtere valg ved skift af bogmærker](bookmarks-support.md#visuals-with-selection)
 

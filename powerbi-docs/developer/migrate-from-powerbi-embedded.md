@@ -194,7 +194,7 @@ Du bør rydde op i Azure.
 * Fjern alle arbejdsområder fra den udrullede løsning i Azure Embedded i Power BI Workspace Collection.
 * Slet alle de arbejdsområdesamlinger, der findes i Azure.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Integrer med Power BI](embedding.md)  
 [Overførselsværktøj til Power BI Workspace Collection](migrate-tool.md)  

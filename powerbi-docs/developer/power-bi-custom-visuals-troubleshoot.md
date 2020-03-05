@@ -40,6 +40,6 @@ Kør visualiseringsserveren med kommandoen `pbiviz start` i terminalens kommando
 
 Du er meget velkommen til at kontakte supportteamet til Power BI-visualiseringer: *pbicvsupport@microsoft.com*  , hvis du har spørgsmål, kommentarer eller problemer.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger under [Ofte stillede spørgsmål om Power BI-visualiseringer](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).
