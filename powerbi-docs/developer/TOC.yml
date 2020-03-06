@@ -140,6 +140,8 @@
           items:
             - name: Kapacitet og SKU'er i integrerede Power BI-analyser
               href: embedded-capacity.md
+            - name: Kapacitetsplanlægning
+              href: embedded-capacity-planning.md
             - name: Bedste fremgangsmåder for ydelse
               href: embedded-performance-best-practices.md
             - name: Tjenesteprincipal
