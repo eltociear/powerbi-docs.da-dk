@@ -22,7 +22,7 @@ Med *relationer med en mange til mange-kardinalitet* i Power BI Desktop kan du j
 
 ![En mange til mange-relation i ruden "Rediger relation", Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
 
-En *relation med en mange til mange-kardinalitet* i Power BI Desktop består af en del af tre relaterede funktioner:
+En *relation med en mange til mange-kardinalitet* i Power BI Desktop består af en af tre relaterede funktioner:
 
 * **Sammensatte modeller**: En *sammensat model* gør det muligt for en rapport at have to eller flere dataforbindelser, herunder DirectQuery-forbindelser eller Import, i en hvilken som helst kombination. Du kan finde flere oplysninger under [Brug sammensatte modeller i Power BI Desktop](desktop-composite-models.md).
 
@@ -32,9 +32,9 @@ En *relation med en mange til mange-kardinalitet* i Power BI Desktop består af 
 
 ## <a name="what-a-relationship-with-a-many-many-cardinality-solves"></a>Hvad en relation med en mange til mange-kardinalitet løser
 
-Før *relationer med en mange til mange-kardinalitet* blev tilgængelig, var relationen mellem to tabeller defineret i Power BI. Mindst en af tabelkolonnerne i relationen skulle indeholde entydige værdier. Men ofte indeholdt ingen af kolonnerne entydige værdier.
+Før *relationer med en mange til mange-kardinalitet* blev tilgængelige, var relationen mellem to tabeller defineret i Power BI. Mindst en af tabelkolonnerne i relationen skulle indeholde entydige værdier. Men ofte indeholdt ingen af kolonnerne entydige værdier.
 
-To tabeller kan f.eks. have en kolonne med navnet Land. Værdierne i kolonnen Land var dog ikke entydige i nogen af tabellerne. Du skulle oprette en midlertidig løsning for at joinforbinde sådanne tabeller. Det kan være en midlertidig løsning at oprette ekstra tabeller med de nødvendige entydige værdier. Med *relationer med en mange til mange-kardinalitet* kan du forbinde sådanne tabeller direkte ved hjælp af en relation med en kardinalitet på *mange til mange*.
+To tabeller kunne f.eks. have en kolonne med navnet Land. Værdierne i kolonnen Land var dog ikke entydige i nogen af tabellerne. Du skulle oprette en midlertidig løsning for at joinforbinde sådanne tabeller. Det kan være en midlertidig løsning at oprette ekstra tabeller med de nødvendige entydige værdier. Med *relationer med en mange til mange-kardinalitet* kan du forbinde sådanne tabeller direkte ved hjælp af en relation med en kardinalitet på *mange til mange*.
 
 ## <a name="use-relationships-with-a-many-many-cardinality"></a>Brug relationer med en mange til mange-kardinalitet
 
@@ -87,7 +87,7 @@ Før udgivelsen af Power BI Desktop i juli 2018 kunne du ikke oprette en direkte
 
 * Opret derefter en relation mellem de to oprindelige tabeller til den nye tabel ved hjælp af almindelige *Mange-1*-relationer.
 
-Du kan gøre tabellen med midlertidige løsninger synlig. Eller du kan skjule tabellen med midlertidige løsninger, så den ikke vises på listen **Felter**. Hvis du skjuler tabellen, vil relationen *Mange-1* ofte være angivet til at filtrere i begge retninger, og du kan bruge feltet State fra begge tabeller. Den senere tværgående filtrering vil blive overført til den anden tabel. Denne tilgang er vist på følgende billede:
+Du kan gøre tabellen med den midlertidige løsning synlig. Eller du kan skjule tabellen med midlertidige løsninger, så den ikke vises på listen **Felter**. Hvis du skjuler tabellen, vil relationen *Mange-1* ofte være angivet til at filtrere i begge retninger, og du kan bruge feltet State fra begge tabeller. Den senere tværgående filtrering vil blive overført til den anden tabel. Denne tilgang er vist på følgende billede:
 
 ![Tabellen Hidden State, visningen Relationer, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_08.png)
 
@@ -98,7 +98,7 @@ En visualisering, der viser **State** (fra tabellen **CityData**) sammen med tot
 > [!NOTE]
 > Da delstaten fra tabellen **CityData** bruges i denne midlertidige løsning, vises der kun delstater fra den tabel, så delstaten TX vises ikke. Rækken Total indeholder oplysninger om alt **Sales** (inklusive for TX), men i modsætning til *Mange-1*-relationer vises der ikke en tom række for sådanne rækker, der ikke stemmer overens. På samme måde vil en tom række ikke dække **Sales**, hvor der er en null-værdi for **State**.
 
-Lad os antage, at du også føjer en by til denne visualisering. **Sales**, der vises for City vil simpelthen være en gentagelse af **Sales** for den tilsvarende **State**, selvom indbyggertallet pr. City er kendt. Dette scenarie forekommer normalt, når kolonnegrupperingen ikke er relateret til en samlet måling som vist her:
+Lad os antage, at du også føjer en by til denne visualisering. **Sales**, der vises for City, vil simpelthen være en gentagelse af **Sales** for den tilsvarende **State**, selvom indbyggertallet pr. City er kendt. Dette scenarie forekommer normalt, når kolonnegrupperingen ikke er relateret til en samlet måling som vist her:
 
 ![State, City Population og Sales, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_10.png)
 
