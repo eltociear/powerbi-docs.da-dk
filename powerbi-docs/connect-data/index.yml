@@ -1,0 +1,71 @@
+### YamlMime:Landing
+title: Opret forbindelse til data i Power BI – dokumentation
+summary: Med Power BI-dokumentationen får du ekspertoplysninger og svar på, hvordan du imødekommer dine behov, uanset hvordan du bruger Power BI.
+metadata:
+  title: Opret forbindelse til data i Power BI – dokumentation
+  description: Med Power BI-dokumentationen får du ekspertoplysninger og svar på, hvordan du imødekommer dine behov, uanset hvordan du bruger Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/25/2020
+  ms.openlocfilehash: a46c459c61f85b2f8cb4885f93c1893724485dff
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: da-DK
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924132"
+landingContent:
+- title: Opret forbindelse til data i Power BI
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Datakilder
+      url: ../desktop-data-sources.md
+    - text: Datavisning i Power BI Desktop
+      url: ../desktop-data-view.md
+  - linkListType: tutorial
+    links:
+    - text: Importér data fra en webside
+      url: ../desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
+- title: Gateways
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Datagateways i det lokale miljø
+      url: ../service-gateway-onprem.md
+  - linkListType: tutorial
+    links:
+    - text: Opret forbindelse til data i det lokale miljø i SQL Server
+      url: ../service-gateway-sql-tutorial.md
+  - linkListType: how-to-guide
+    links:
+    - text: Brug personlige gateways
+      url: ../service-gateway-personal-mode.md
+- title: Skabelonapps
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Hvad er skabelonapps?
+      url: ../service-template-apps-overview.md
+  - linkListType: concept
+    links:
+    - text: Opret skabelonapps
+      url: ../service-template-apps-create.md
+    - text: Distribuer skabelonapps i din organisation
+      url: ../service-template-apps-install-distribute.md
+- title: Opdater data
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Opdatering af data
+      url: ../refresh-data.md
+    - text: Trinvis opdatering i Power BI Premium
+      url: ../service-premium-incremental-refresh.md
+  - linkListType: how-to-guide
+    links:
+    - text: Konfigurer planlagt opdatering
+      url: ../refresh-scheduled-refresh.md

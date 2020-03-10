@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Dokumentation til Power BI-administratorer
-summary: Med dokumentationen til Power BI-administratorer får du ekspertoplysninger og svar som løsning på problemerne, uanset hvordan du bruger Power BI.
+title: Power BI-dokumentation til administratorer og virksomheder
+summary: Power BI-dokumentation til administratorer og virksomheder indeholder ekspertoplysninger og svar på, hvordan du imødekommer dine behov, uanset hvordan du bruger Power BI.
 metadata:
-  title: Dokumentation til Power BI-administratorer
-  description: Med dokumentationen til Power BI-administratorer får du ekspertoplysninger og svar som løsning på problemerne, uanset hvordan du bruger Power BI.
+  title: Power BI-dokumentation til administratorer og virksomheder
+  description: Power BI-dokumentation til administratorer og virksomheder indeholder ekspertoplysninger og svar på, hvordan du imødekommer dine behov, uanset hvordan du bruger Power BI.
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi-service
@@ -11,15 +11,15 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 10/25/2019
-  ms.openlocfilehash: 533b8dc4ccc800e3120f3a01c6069e224c2df27e
-  ms.sourcegitcommit: ee0ea65de52b38e5976d6eb15516b0b240fa40f9
+  ms.date: 03/03/2020
+  ms.openlocfilehash: b419ba38a28d3f4a05ea7c6db2b595af86df288d
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 10/26/2019
-  ms.locfileid: "72959512"
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78919438"
 landingContent:
-- title: Om Power BI til administratorer
+- title: Power BI for administratorer og virksomheder
   linkLists:
   - linkListType: overview
     links:
@@ -46,6 +46,20 @@ landingContent:
     - text: Tilføj Power BI med en Office 365-partner
       url: ../service-admin-syndication-partner.md
 - title: Lejere
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Hvor findes min lejer?
+      url: ../service-admin-where-is-my-tenant-located.md
+    - text: Find brugere, der er logget på
+      url: ../service-admin-access-usage.md
+    - text: Overvågning af Power BI
+      url: ../service-admin-auditing.md
+    - text: Spor tjenestetilstand
+      url: ../service-admin-health.md
+    - text: Lukker din Power BI-konto
+      url: ../service-admin-closing-your-account.md
+- title: Power BI Premium
   linkLists:
   - linkListType: how-to-guide
     links:

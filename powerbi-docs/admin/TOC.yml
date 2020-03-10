@@ -1,4 +1,4 @@
-- name: Dokumentation til Power BI-administratorer
+- name: Power BI til administratorer og virksomheder
   href: index.yml
   expanded: true
   items:
@@ -9,8 +9,8 @@
           href: ../service-admin-administering-power-bi-in-your-organization.md
         - name: Hvor findes min lejer?
           href: ../service-admin-where-is-my-tenant-located.md
-        - name: Overfør til lokale tyske områder
-          href: service-admin-migrate-data-germany.md
+        - name: Hvad er Power BI Premium?
+          href: ../service-premium-what-is.md
     - name: Begreber
       expanded: true
       items:
@@ -20,6 +20,20 @@
           href: ../service-admin-faq.md
         - name: Høj tilgængelighed og ofte stillede spørgsmål om failover
           href: ../service-admin-failover.md
+        - name: Overfør til lokale tyske områder
+          href: service-admin-migrate-data-germany.md
+        - name: Ofte stillede spørgsmål til Germany Cloud-kunder
+          href: ../service-govde-faq.md
+        - name: Power BI Premium
+          items:
+            - name: Administration af Premium-kapaciteter
+              href: ../service-premium-capacity-manage.md
+            - name: Optimering af Premium-kapaciteter
+              href: ../service-premium-capacity-optimize.md
+            - name: Premium-kapacitetsscenarier
+              href: ../service-premium-capacity-scenarios.md
+            - name: Ofte stillede spørgsmål om Power BI Premium
+              href: ../service-premium-faq.md
     - name: 'Sådan gør du:'
       items:
         - name: Licenser og tilmelding
@@ -28,7 +42,11 @@
               href: ../service-admin-licensing-organization.md
             - name: Køb Power BI Pro
               href: ../service-admin-purchasing-power-bi-pro.md
-            - name: Tilmeld dig med en Microsoft 365-prøveversion
+            - name: Power BI til US Government
+              href: ../service-govus-overview.md
+            - name: Tilmeld en US Government-organisation
+              href: ../service-govus-signup.md
+            - name: Tilmeld dig en Microsoft 365-prøveversion
               href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
             - name: Tilføj Power BI med en Microsoft 365-partner
               href: ../service-admin-syndication-partner.md
@@ -44,6 +62,8 @@
           href: ../service-admin-closing-your-account.md
         - name: Brug af Azure AD B2B
           href: ../service-admin-azure-ad-b2b.md
+        - name: Administrer logonformular til Power BI Desktop
+          href: ../desktop-admin-sign-in-form.md
         - name: Databeskyttelse
           items:
             - name: Oversigt over databeskyttelse
@@ -58,6 +78,30 @@
           href: ../service-admin-rls.md
         - name: Konfiguration af mobilapps med Intune
           href: ../service-admin-mobile-intune.md
+        - name: Power BI Premium
+          items:
+            - name: Køb Power BI Premium
+              href: ../service-admin-premium-purchase.md
+            - name: Konfigurer og administrer kapaciteter
+              href: ../service-admin-premium-manage.md
+            - name: Konfigurer arbejdsbelastninger
+              href: ../service-admin-premium-workloads.md
+            - name: Overvåg kapaciteter vha. appen
+              href: ../service-admin-premium-monitor-capacity.md
+            - name: Overvåg målepunkter for Premium-arbejdsbelastninger
+              href: ../service-premium-metrics-app.md
+            - name: Overvåg kapaciteter på administrationsportalen
+              href: ../service-admin-premium-monitor-portal.md
+            - name: Konfigurer store modeller (prøveversion)
+              href: ../service-premium-large-models.md
+            - name: Konfigurer multigeografisk område
+              href: ../service-admin-premium-multi-geo.md
+            - name: Medbring dine egne krypteringsnøgler
+              href: ../service-encryption-byok.md
+            - name: Genstart en Premium-kapacitet
+              href: ../service-admin-premium-restart.md
+            - name: Opret forbindelse til datasæt med klientprogrammer og -værktøjer
+              href: ../service-premium-connect-tools.md
     - name: Reference
       items:
         - name: 'PowerShell, REST-API''er og .NET SDK'
@@ -73,3 +117,23 @@
           href: ../service-admin-governance.md
         - name: Power BI sikkerhed
           href: ../service-admin-power-bi-security.md
+        - name: Niveauer for beskyttelse af personlige oplysninger
+          href: ../desktop-privacy-levels.md
+    - name: Fejlfind
+      items:
+        - name: Kan du ikke logge på?
+          href: ../power-bi-cannot-sign-in.md
+        - name: Supportmuligheder til Power BI
+          href: ../service-support-options.md
+        - name: Meddelelser om tjenesteafbrydelser
+          href: ../service-interruption-notifications.md
+        - name: Har du glemt din adgangskode til Power BI?
+          href: ../service-admin-forgot-your-password.md
+        - name: Hentning af yderligere diagnosticeringsoplysninger til Power BI
+          href: ../service-admin-capturing-additional-diagnostic-information-for-power-bi.md
+        - name: Alternativ mailadresse til Power BI
+          href: ../service-admin-alternate-email-address-for-power-bi.md
+        - name: Sådan bruger du det samme konto-logon til Power BI og Azure
+          href: ../service-admin-how-to-use-the-same-account-as-azure.md
+        - name: Office 365 dedikeret - kendte problemer
+          href: ../service-admin-office-365-dedicated-known-issues.md

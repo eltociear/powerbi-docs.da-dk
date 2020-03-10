@@ -1,0 +1,121 @@
+### YamlMime:Landing
+title: Opret rapporter og dashboards i Power BI – dokumentation
+summary: Med Power BI-dokumentationen får du ekspertoplysninger og svar på, hvordan du imødekommer dine behov, uanset hvordan du bruger Power BI.
+metadata:
+  title: Opret rapporter og dashboards i Power BI – dokumentation
+  description: Med Power BI-dokumentationen får du ekspertoplysninger og svar på, hvordan du imødekommer dine behov, uanset hvordan du bruger Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/25/2020
+  ms.openlocfilehash: 592a7bff1f511158de929ce0a225f26558a1997b
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: da-DK
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924178"
+landingContent:
+- title: Kom i gang
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Brug det opdaterede bånd
+      url: ../desktop-ribbon.md
+    - text: Oversigt over tilgængelighed
+      url: ../desktop-accessibility-overview.md
+    - text: Hent eksempeldata
+      url: ../sample-datasets.md
+  - linkListType: tutorial
+    links:
+    - text: Importér og åbn eksempelpakker
+      url: ../sample-tutorial-connect-to-the-samples.md
+  - linkListType: concept
+    links:
+    - text: Visningen Report
+      url: ../desktop-report-view.md
+- title: Visualiseringer
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Oversigt over visualiseringer
+      url: ../visuals/power-bi-report-visualizations.md
+    - text: Visualiseringstyper
+      url: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
+  - linkListType: how-to-guide
+    links:
+    - text: Tip og tricks til Maps
+      url: ../visuals/power-bi-map-tips-and-tricks.md
+    - text: Eksportér data fra et visuelt element
+      url: ../visuals/power-bi-visualization-export-data.md
+    - text: Udsnit
+      url: ../visuals/power-bi-visualization-slicers.md
+- title: Design rapporter
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Rapporttemaer
+      url: ../desktop-report-themes.md
+    - text: Tekstfelter og figurer
+      url: ../power-bi-reports-add-text-and-shapes.md
+  - linkListType: how-to-guide
+    links:
+    - text: Betinget tabelformatering
+      url: ../desktop-conditional-table-formatting.md
+    - text: Brug gruppering
+      url: ../desktop-grouping-and-binning.md
+    - text: Føj bogmærker til en rapport
+      url: ../desktop-bookmarks.md
+- title: Design rapportinteraktioner
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Rapportvisning i Power BI Desktop
+      url: ../desktop-report-view.md
+  - linkListType: how-to-guide
+    links:
+    - text: Udforsk data med Spørgsmål og svar
+      url: ../power-bi-tutorial-q-and-a.md
+    - text: Brug detaljeadgang i en rapport
+      url: ../desktop-drillthrough.md
+    - text: Føj bogmærker til en rapport
+      url: ../desktop-bookmarks.md
+    - text: Føj filtre til en rapport
+      url: ../power-bi-report-filter.md
+- title: Sideinddelte rapporter i Power BI
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Hvad er sideinddelte rapporter i Power BI?
+      url: ../paginated-reports/paginated-reports-report-builder-power-bi.md
+    - text: Report Builder i Power BI
+      url: ../paginated-reports/report-builder-power-bi.md
+  - linkListType: concept
+    links:
+    - text: Eksempler på udtryk
+      url: ../paginated-reports/report-builder-expression-examples.md
+    - text: Tabeller, matrixer og lister
+      url: ../paginated-reports/report-builder-tables-matrices-lists.md
+  - linkListType: how-to-guide
+    links:
+    - text: Opret en rapport på et delt datasæt
+      url: ../paginated-reports/report-builder-shared-datasets.md
+    - text: Opret parametre
+      url: ../paginated-reports/paginated-reports-parameters.md
+- title: Dashboards
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Introduktion til dashboards
+      url: ../service-dashboards.md
+  - linkListType: how-to-guide
+    links:
+    - text: Opret et dashboard
+      url: ../service-dashboard-create.md
+    - text: Fastgør et felt til et dashboard
+      url: ../service-share-dashboards.md
+    - text: Føj billeder eller videoer til et dashboard
+      url: ../service-dashboard-add-widget.md

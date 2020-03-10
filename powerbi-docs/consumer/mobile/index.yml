@@ -1,0 +1,67 @@
+### YamlMime:Landing
+title: Dokumentation til Power BI-mobilapps
+summary: Med Power BI-dokumentationen får du ekspertoplysninger og svar på, hvordan du imødekommer dine behov, uanset hvordan du bruger Power BI.
+metadata:
+  title: Dokumentation til Power BI-mobilapps
+  description: Med Power BI-dokumentationen får du ekspertoplysninger og svar på, hvordan du imødekommer dine behov, uanset hvordan du bruger Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/11/2020
+  ms.openlocfilehash: 96881ecb03132579643517679aaab3c87b7a977f
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: da-DK
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78923902"
+landingContent:
+- title: Om Power BI-mobilappsene
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Hvad er mobilappsene?
+      url: mobile-apps-for-mobile-devices.md
+    - text: Nyheder i mobilappsene
+      url: mobile-whats-new-in-the-mobile-apps.md
+    - text: Startsiden for mobilappen
+      url: mobile-apps-home-page.md
+- title: Kom i gang
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Android-introduktion
+      url: mobile-android-app-get-started.md
+    - text: iOS-introduktion
+      url: mobile-iphone-app-get-started.md
+    - text: Windows 10-introduktion
+      url: mobile-windows-10-phone-app-get-started.md
+  - linkListType: quickstart
+    links:
+    - text: Udforsk dashboards og rapporter
+      url: mobile-apps-quickstart-view-dashboard-report.md
+- title: Udforsk
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Stil spørgsmål til dine data
+      url: tutorial-mobile-apps-ios-qna.md
+  - linkListType: how-to-guide
+    links:
+    - text: Vis data offline
+      url: mobile-apps-offline-data.md
+    - text: Del et dashboard eller en rapport
+      url: mobile-share-dashboard-from-the-mobile-apps.md
+    - text: Indstil databeskeder
+      url: mobile-set-data-alerts-in-the-mobile-apps.md
+- title: Rapporter i det lokale miljø
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Få vist rapporter i det lokale miljø og KPI'er
+      url: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+    - text: Opret forbindelse med OAuth til rapporter i det lokale miljø
+      url: mobile-oauth-ssrs.md

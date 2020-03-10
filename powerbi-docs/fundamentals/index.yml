@@ -1,0 +1,67 @@
+### YamlMime:Landing
+title: Dokumentation til Power BI Introduktion
+summary: Med Power BI-dokumentationen får du ekspertoplysninger og svar på, hvordan du imødekommer dine behov, uanset hvordan du bruger Power BI.
+metadata:
+  title: Dokumentation til Power BI Introduktion
+  description: Med Power BI-dokumentationen får du ekspertoplysninger og svar på, hvordan du imødekommer dine behov, uanset hvordan du bruger Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 03/05/2020
+  ms.openlocfilehash: ec79ce7ca7d7e50f5a3a806ad14de50b786483f5
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: da-DK
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924362"
+landingContent:
+- title: Hvad er Power BI?
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Hvad er Power BI?
+      url: ../power-bi-overview.md
+    - text: Hvad er Power BI Desktop?
+      url: ../desktop-what-is-desktop.md
+    - text: Hvad er Power BI-tjenesten?
+      url: ../power-bi-service-overview.md
+    - text: Sammenligning af Power BI Desktop og tjenesten
+      url: ../service-service-vs-desktop.md
+- title: Nyheder
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Nyheder i Power BI Desktop
+      url: ../desktop-latest-update.md
+    - text: Nyheder i tjenesten
+      url: ../service-whats-new.md
+- title: Introduktion til Learn
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Opret og benyt analyserapporter
+      url: https://docs.microsoft.com/learn/paths/create-use-analytics-reports-power-bi/
+    - text: Hent data i Power BI Desktop
+      url: https://docs.microsoft.com/power-bi/guided-learning/gettingdata?tutorial-step=1
+- title: Licensering
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Tilmeld dig Power BI
+      url: ../service-self-service-signup-for-power-bi.md
+    - text: Funktioner efter licenstype
+      url: ../service-features-license-type.md
+- title: Ressourcer
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Power BI-videoer
+      url: ../videos.md
+    - text: Videoer om Power BI Desktop
+      url: ../desktop-videos.md
+    - text: Webinarer
+      url: ../webinars.md

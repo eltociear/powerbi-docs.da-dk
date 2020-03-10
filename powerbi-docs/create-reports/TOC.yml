@@ -1,0 +1,377 @@
+- name: Opret rapporter og dashboards i Power BI
+  href: index.yml
+  items:
+    - name: Oversigt
+      expanded: true
+      items:
+        - name: Præsentation af rapporteditoren
+          href: ../service-the-report-editor-take-a-tour.md
+        - name: Hvad er sideinddelte rapporter?
+          href: ../paginated-reports/paginated-reports-report-builder-power-bi.md
+    - name: Selvstudier
+      expanded: true
+      items:
+        - name: 'Praktisk laboratorie: Opret en sideinddelt rapport'
+          href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
+        - name: 'Opret en sideinddelt rapport, og upload'
+          href: ../paginated-reports/paginated-reports-quickstart-aw.md
+    - name: Eksempler
+      expanded: true
+      items:
+        - name: Hent eksempeldata til Power BI
+          href: ../sample-datasets.md
+        - name: Importér og åbn eksempelpakker
+          href: ../sample-tutorial-connect-to-the-samples.md
+        - name: Eksempel på kunderentabilitet
+          href: ../sample-customer-profitability.md
+        - name: Eksempel på analyse af it-forbrug
+          href: ../sample-it-spend.md
+        - name: Eksempel på HR
+          href: ../sample-human-resources.md
+        - name: Eksempel på analyse af salgsmuligheder
+          href: ../sample-opportunity-analysis.md
+        - name: Eksempel på indkøbsanalyse
+          href: ../sample-procurement.md
+        - name: Eksempel på analyse af detailhandel
+          href: ../sample-retail-analysis.md
+        - name: Eksempel på salg og marketing
+          href: ../sample-sales-and-marketing.md
+        - name: Eksempel på analyse af leverandørkvalitet
+          href: ../sample-supplier-quality.md
+        - name: Download projektmappen Økonomisk eksempel
+          href: ../sample-financial-download.md
+    - name: Begreber
+      expanded: true
+      items:
+        - name: Power BI-rapporter
+          items:
+            - name: Arbejd med rapportvisning
+              href: ../desktop-report-view.md
+            - name: Typer af filtre i Power BI-rapporter
+              href: ../power-bi-report-filter-types.md
+            - name: Filtre og fremhævninger i rapporter
+              href: ../power-bi-reports-filters-and-highlighting.md
+            - name: Stikprøvetagning i forbindelse med højdensitetslinje
+              href: ../desktop-high-density-sampling.md
+            - name: Om Spørgsmål og svar i forbindelse med Power BI
+              href: ../visuals/power-bi-visualization-q-and-a.md
+            - name: Om tilgængelighed i Power BI
+              href: ../desktop-accessibility-overview.md
+            - name: Naturligt sprog i Spørgsmål og svar
+              items:
+                - name: Introduktion til Spørgsmål og svar
+                  href: ../natural-language/q-and-a-intro.md
+                - name: Værktøjsintroduktion til Spørgsmål og svar
+                  href: ../natural-language/q-and-a-tooling-intro.md
+                - name: Avanceret værktøj til Spørgsmål og svar
+                  href: ../natural-language/q-and-a-tooling-advanced.md
+                - name: Begrænsninger i Spørgsmål og svar
+                  href: ../natural-language/q-and-a-limitations.md
+                - name: Visualiseringstyper i Spørgsmål og svar
+                  href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
+        - name: Sideinddelte rapporter
+          items:
+            - name: Report Builder i Power BI
+              href: ../paginated-reports/report-builder-power-bi.md
+            - name: Rundt om visningen Rapportdesign
+              href: ../paginated-reports/paginated-reports-report-design-view.md
+            - name: Planlægning af en rapport
+              href: ../paginated-reports/report-builder-planning-report.md
+            - name: Report Builder-data
+              href: ../paginated-reports/report-builder-data.md
+            - name: Understøttede datakilder
+              href: ../paginated-reports/paginated-reports-data-sources.md
+            - name: Designtips
+              href: ../paginated-reports/report-builder-design-tips.md
+            - name: 'Tabeller, matrixer, lister'
+              href: ../paginated-reports/report-builder-tables-matrices-lists.md
+            - name: Parametre
+              href: ../paginated-reports/report-builder-parameters.md
+            - name: URL-parametre i sideinddelte rapporter
+              href: ../paginated-reports/report-builder-url-parameters.md
+            - name: Eksempler på udtryk
+              href: ../paginated-reports/report-builder-expression-examples.md
+            - name: Sideinddeling af rapport
+              href: ../paginated-reports/paginated-reports-pagination.md
+            - name: Forhåndsvisning af rapporter
+              href: ../paginated-reports/report-builder-previewing-reports.md
+            - name: Ofte stillede spørgsmål om sideinddelte rapporter
+              href: ../paginated-reports/paginated-reports-faq.md
+    - name: Vejledninger
+      items:
+        - name: Publicer datasæt og rapporter
+          href: ../desktop-upload-desktop-files.md
+        - name: Føj visualiseringer til en Power BI-rapport (del 1)
+          href: ../visuals/power-bi-report-add-visualizations-i.md
+        - name: Føj visualiseringer til en Power BI-rapport (del 2)
+          href: ../visuals/power-bi-report-add-visualizations-ii.md
+        - name: 'Tilpas titler, baggrunde og forklaringer i forbindelse med visualiseringer'
+          href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
+        - name: Vis elementer uden data i Power BI
+          href: ../desktop-show-items-no-data.md
+        - name: Anvend automatisk dato og klokkeslæt
+          href: ../desktop-auto-date-time.md
+        - name: Power BI-rapporter
+          items:
+            - name: Aktivér automatisk sideopdatering (eksempelvisning)
+              href: ../desktop-automatic-page-refresh.md
+            - name: Undersøg rapportelementer med Effektivitetsanalyse
+              href: ../desktop-performance-analyzer.md
+            - name: Føj visuelle elementer til rapporter
+              href: ../desktop-visual-elements-for-reports.md
+            - name: Tilføj rapportværktøjstip for at forbedre dine visualiseringer
+              href: ../desktop-tooltips.md
+            - name: Eksportér rapporter til PDF-filer
+              href: ../desktop-export-to-pdf.md
+            - name: Anvend indsigt til at forklare udsving i visualiseringer (eksempelvisning)
+              href: ../desktop-insights.md
+            - name: 'Brug indsigt til at se, hvordan distributioner varierer (eksempelvisning)'
+              href: ../desktop-insights-find-where-different.md
+            - name: Opret knapper
+              href: ../desktop-buttons.md
+            - name: Opret bogmærker for at gemme og dele indsigt
+              href: ../desktop-bookmarks.md
+            - name: Arbejd med rapporttemaer
+              href: ../desktop-report-themes.md
+            - name: Arbejd med filtre i Power BI-rapporter
+              href: ../power-bi-report-filter.md
+            - name: Brug detaljeadgangsfunktionen
+              href: ../desktop-drillthrough.md
+            - name: Anvend detaljeadgangsfunktionen på tværs af rapporter
+              href: ../desktop-cross-report-drill-through.md
+            - name: Anvend gruppering
+              href: ../desktop-grouping-and-binning.md
+            - name: Opret Power BI-visualiseringer med R
+              href: ../desktop-r-visuals.md
+            - name: Download og brug R-drevne brugerdefinerede visualiseringer
+              href: ../desktop-r-powered-custom-visuals.md
+            - name: Anvend gitterlinjer og fastgørelse til gitter
+              href: ../desktop-gridlines-snap-to-grid.md
+            - name: Anvend indstillinger for sidevisning i Power BI-rapporter
+              href: ../power-bi-report-display-settings.md
+            - name: Tilføj en kolonne fra et eksempel
+              href: ../desktop-add-column-from-example.md
+            - name: Tilføj en brugerdefineret kolonne
+              href: ../desktop-add-custom-column.md
+            - name: Brug integrerede hierarkimærkater
+              href: ../desktop-inline-hierarchy-labels.md
+            - name: Brug det numeriske interval-udsnitsværktøj
+              href: ../desktop-slicer-numeric-range.md
+            - name: Brug det relativt datoudsnit og -filter
+              href: ../desktop-slicer-filter-date-range.md
+            - name: 'Opret et udsnit, du kan tilpasse størrelsen på'
+              href: ../power-bi-slicer-filter-responsive.md
+            - name: Begræns dataadgang med sikkerhed på rækkeniveau
+              href: ../desktop-rls.md
+            - name: Tilpas værktøjstips
+              href: ../desktop-custom-tooltips.md
+            - name: Føj tekstfelter og figurer til rapporter
+              href: ../power-bi-reports-add-text-and-shapes.md
+            - name: Føj et hyperlink til et tekstfelt
+              href: ../service-add-hyperlink-to-text-box.md
+            - name: Føj hyperlinks til en tabel
+              href: ../power-bi-hyperlinks-in-tables.md
+            - name: 'Vis billeder i en tabel, en matrix eller et udsnit'
+              href: ../power-bi-images-tables.md
+            - name: Vis brugerdefinerede formatstrenge
+              href: ../desktop-custom-format-strings.md
+            - name: Anvend betinget tabelformatering
+              href: ../desktop-conditional-table-formatting.md
+            - name: Opret dynamiske udtryksbaserede titler
+              href: ../desktop-conditional-format-visual-titles.md
+            - name: Sortér efter kolonne
+              href: ../desktop-sort-by-column.md
+            - name: Optimer rapporter til mobilapps
+              href: ../desktop-create-phone-report.md
+            - name: Anvend indstillingerne Se data og Se poster
+              href: ../desktop-see-data-see-records.md
+            - name: Tip og gode råd til oprettelse af rapporter
+              href: ../desktop-tips-and-tricks-for-creating-reports.md
+            - name: Gruppér visualiseringer i en rapport
+              href: ../desktop-grouping-visuals.md
+            - name: Opret rapportskabeloner
+              href: ../desktop-templates.md
+            - name: Opret en rapport ud fra et datasæt
+              href: ../service-report-create-new.md
+            - name: Tilføj et filter i en rapport
+              href: ../power-bi-report-add-filter.md
+            - name: Gem en rapport
+              href: ../service-report-save.md
+            - name: Interager med en rapport i redigeringsvisning
+              href: ../service-interact-with-a-report-in-editing-view.md
+            - name: Analysér i Excel
+              href: ../service-analyze-in-excel.md
+            - name: Tip og gode råd til oprettelse af rapporter
+              href: ../power-bi-reports-tips-and-tricks-for-creating.md
+            - name: Arbejd med samlinger i tjenesten
+              href: ../service-aggregates.md
+            - name: Opret en QR-kode for en rapport
+              href: ../service-create-qr-code-for-report.md
+            - name: Eksportér en rapport til Power BI Desktop (eksempelvisning)
+              href: ../service-export-to-pbix.md
+        - name: Visualiseringer
+          items:
+            - name: Føj visualiseringer til Power BI-rapporter
+              href: ../visuals/power-bi-report-visualizations.md
+            - name: Skift visualiseringer i Power BI-rapporter
+              href: ../visuals/power-bi-report-change-visualization-type.md
+            - name: Anvend datapunktgrænser og strategier efter visualiseringstype
+              href: ../visuals/power-bi-data-points.md
+            - name: Vis en visualiserings underliggende data
+              href: ../visuals/service-reports-show-data.md
+            - name: Kom i gang med farveformatering og akseegenskaber
+              href: ../visuals/service-getting-started-with-color-formatting-and-axis-properties.md
+            - name: Tip og trick til farveformatering
+              href: ../visuals/service-tips-and-tricks-for-color-formatting.md
+            - name: Kopiér og indsæt en rapportvisualisering
+              href: ../visuals/power-bi-visualization-copy-paste.md
+            - name: 'Eksportér de data, der blev brugt til at oprette en visualisering'
+              href: ../visuals/power-bi-visualization-export-data.md
+            - name: 'Flyt, tilpas størrelsen på og få en visualisering til at træde frem i en rapport'
+              href: ../visuals/power-bi-visualization-move-and-resize.md
+            - name: 'Rediger, hvordan visualiseringer interagerer i en rapport'
+              href: ../service-reports-visual-interactions.md
+            - name: Tips og tricks til Power BI-kortvisualiseringer
+              href: ../visuals/power-bi-map-tips-and-tricks.md
+            - name: Tilpas egenskaberne for x- og y-aksen
+              href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
+            - name: Interager med ArcGIS Maps i Power BI-visualiseringer
+              href: ../visuals/power-bi-visualizations-arcgis.md
+            - name: Opret ArcGIS Maps for Power BI-visualiseringer
+              href: ../visuals/power-bi-visualization-arcgis.md
+            - name: Opret og brug basisområdediagrammer
+              href: ../visuals/power-bi-visualization-basic-area-chart.md
+            - name: Opret kortvisualiseringer (felter med store tal)
+              href: ../visuals/power-bi-visualization-card.md
+            - name: Opret og brug kombinationsdiagrammer
+              href: ../visuals/power-bi-visualization-combo-chart.md
+            - name: Opret og brug visualiseringer af opdelingstræer (eksempelvisning)
+              href: ../visuals/power-bi-visualization-decomposition-tree.md
+            - name: Opret og brug kransediagrammer
+              href: ../visuals/power-bi-visualization-doughnut-charts.md
+            - name: Opret og brug udfyldte kort (choropleths)
+              href: ../visuals/power-bi-visualization-filled-maps-choropleths.md
+            - name: Opret og brug tragtformede diagrammer
+              href: ../visuals/power-bi-visualization-funnel-charts.md
+            - name: Opret og brug visualiseringer af nøgleinfluencere
+              href: ../visuals/power-bi-visualization-influencers.md
+            - name: Opret og brug KPI-visualiseringer
+              href: ../visuals/power-bi-visualization-kpi.md
+            - name: Opret og brug matrixvisualiseringer
+              href: ../visuals/desktop-matrix-visual.md
+            - name: Opret og brug visualiseringer i Power Apps
+              href: ../visuals/power-bi-visualization-powerapp.md
+            - name: Opret og brug R-visualiseringer
+              href: ../visuals/service-r-visuals.md
+            - name: Opret og brug radiale målerdiagrammer
+              href: ../visuals/power-bi-visualization-radial-gauge-charts.md
+            - name: Opret og brug bånddiagrammer
+              href: ../visuals/desktop-ribbon-charts.md
+            - name: 'Opret og brug punktdiagrammer, boblediagrammer og prikdiagrammer'
+              href: ../visuals/power-bi-visualization-scatter.md
+            - name: Brug punktdiagrammer med høj tæthed
+              href: ../visuals/desktop-high-density-scatter-charts.md
+            - name: Opret og brug Shape Map-visualiseringer (eksempelvisning)
+              href: ../visuals/desktop-shape-map.md
+            - name: Opret og brug udsnit
+              href: ../visuals/power-bi-visualization-slicers.md
+            - name: Arbejd med og anvend tabeller i Power BI-rapporter og på Power BI-dashboards
+              href: ../visuals/power-bi-visualization-tables.md
+            - name: Opret og brug træstrukturer
+              href: ../visuals/power-bi-visualization-treemaps.md
+            - name: Opret og brug vandfaldsdiagrammer
+              href: ../visuals/power-bi-visualization-waterfall-charts.md
+        - name: Naturligt sprog i Spørgsmål og svar
+          items:
+            - name: Visualisering til Spørgsmål og svar
+              href: ../visuals/power-bi-visualization-q-and-a.md
+            - name: Træn Spørgsmål og svar til at forstå spørgsmål
+              href: ../natural-language/q-and-a-tooling-teach-q-and-a.md
+            - name: Bedste praksis for Spørgsmål og svar
+              href: ../natural-language/q-and-a-best-practices.md
+            - name: Brug spørgsmål og svar til at udforske dine data
+              href: ../power-bi-tutorial-q-and-a.md
+            - name: Opret en visualisering med spørgsmål og svar
+              href: ../power-bi-visualization-introduction-to-q-and-a.md
+            - name: Få Excel-data til at fungere godt med spørgsmål og svar
+              href: ../service-prepare-data-for-q-and-a.md
+            - name: Opret udvalgte spørgsmål til Spørgsmål og svar
+              href: ../service-q-and-a-create-featured-questions.md
+            - name: Brug Spørgsmål og svar via direkte forbindelser
+              href: ../service-q-and-a-direct-query.md
+            - name: Quick Insights i Power BI
+              href: ../service-insights.md
+            - name: Optimer data til Hurtig indsigt
+              href: ../service-insights-optimize.md
+        - name: Tilgængelighed
+          items:
+            - name: Design tilgængelige Power BI-rapporter
+              href: ../desktop-accessibility-creating-reports.md
+            - name: Opret Power BI-rapporter med tilgængelighedsværktøjer
+              href: ../desktop-accessibility-creating-tools.md
+            - name: Forbrug Power BI-rapporter med tilgængelighedsværktøjer
+              href: ../desktop-accessibility-consuming-tools.md
+            - name: Tastaturgenveje i Power BI Desktop
+              href: ../desktop-accessibility-keyboard-shortcuts.md
+        - name: Dataafstamning
+          href: ../service-data-lineage.md
+        - name: Sideinddelte rapporter
+          items:
+            - name: Angiv data direkte i en sideinddelt rapport
+              href: ../paginated-reports/paginated-reports-enter-data.md
+            - name: Opret en integreret datakilde
+              href: ../paginated-reports/paginated-reports-embedded-data-source.md
+            - name: Opret et integreret datasæt
+              href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
+            - name: Opret en rapport med et delt Power BI-datasæt
+              href: ../paginated-reports/report-builder-shared-datasets.md
+            - name: Opret parametre
+              href: ../paginated-reports/paginated-reports-parameters.md
+            - name: Overfør en rapportparameter i en URL-adresse
+              href: ../paginated-reports/report-builder-url-pass-parameters.md
+            - name: Udgiv en sideinddelt rapport
+              href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
+        - name: Dashboards
+          items:
+            - name: Introduktion til dashboards
+              href: ../service-dashboards.md
+            - name: Dashboardfelter
+              href: ../service-dashboard-tiles.md
+            - name: Opret et dashboard fra en rapport
+              href: ../service-dashboard-create.md
+            - name: Opret en kopi af et dashboard
+              href: ../service-dashboard-copy.md
+            - name: Fastgør et felt til et dashboard fra en rapport
+              href: ../service-dashboard-pin-tile-from-report.md
+            - name: Fastgør et felt fra ét dashboard til et andet
+              href: ../service-pin-tile-to-another-dashboard.md
+            - name: Fastgør et felt til et dashboard fra Excel
+              href: ../service-dashboard-pin-tile-from-excel.md
+            - name: Fastgør et felt til et dashboard fra Spørgsmål og svar
+              href: ../service-dashboard-pin-tile-from-q-and-a.md
+            - name: Fastgør en hel rapportside til et dashboard
+              href: ../service-dashboard-pin-live-tile-from-report.md
+            - name: Databeskeder i Power BI-tjenesten
+              href: ../service-set-data-alerts.md
+            - name: 'Føj et billede, et tekstfelt, en video eller en kode til et dashboard'
+              href: ../service-dashboard-add-widget.md
+            - name: Rediger et felt
+              href: ../service-dashboard-edit-tile.md
+            - name: Tip til udformning af et fantastisk dashboard
+              href: ../service-dashboards-design-tips.md
+            - name: Optimer et dashboard til telefoner
+              href: ../service-create-dashboard-mobile-phone-view.md
+            - name: Opret en QR-kode for et felt
+              href: ../service-create-qr-code-for-tile.md
+            - name: Dashboard-dataklassificering
+              href: ../service-data-classification.md
+            - name: Dashboardtemaer
+              href: ../service-dashboard-themes.md
+        - name: Andre opgaver
+          items:
+            - name: Omdøb indhold i Power BI
+              href: ../service-rename.md
+            - name: Angiv elementkontakter
+              href: ../service-item-contact.md
+            - name: Slet næsten alt i Power BI
+              href: ../service-delete.md

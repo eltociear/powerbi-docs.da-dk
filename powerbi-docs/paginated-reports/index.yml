@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: Dokumentation til sideinddelte rapporter i Power BI
+summary: Med Power BI-dokumentationen får du ekspertoplysninger og svar på, hvordan du imødekommer dine behov, uanset hvordan du bruger Power BI.
+metadata:
+  title: Dokumentation til sideinddelte rapporter i Power BI
+  description: Med Power BI-dokumentationen får du ekspertoplysninger og svar på, hvordan du imødekommer dine behov, uanset hvordan du bruger Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/25/2020
+  ms.openlocfilehash: 47a77e156c6b59440e0de500a3f2ab9dede01c85
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: da-DK
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924592"
+landingContent:
+- title: Om sideinddelte rapporter i Power BI
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Hvad er sideinddelte rapporter i Power BI?
+      url: paginated-reports-report-builder-power-bi.md
+    - text: Report Builder i Power BI
+      url: report-builder-power-bi.md
+- title: Kom i gang
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Opret en sideinddelt rapport, og upload den
+      url: paginated-reports-quickstart-aw.md
+  - linkListType: concept
+    links:
+    - text: Navigering i visningen Rapportdesign
+      url: paginated-reports-report-design-view.md
+    - text: Planlægning af en sideinddelt rapport
+      url: report-builder-planning-report.md
+- title: Opret forbindelse til data
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Data i Report Builder
+      url: report-builder-data.md
+    - text: Understøttede datakilder
+      url: paginated-reports-data-sources.md
+  - linkListType: how-to-guide
+    links:
+    - text: Opret en integreret datakilde
+      url: paginated-reports-embedded-data-source.md
+    - text: Opret et integreret datasæt
+      url: paginated-reports-create-embedded-dataset.md
+- title: Opret rapporter
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Tabeller, matrixer og lister
+      url: report-builder-tables-matrices-lists.md
+  - linkListType: how-to-guide
+    links:
+    - text: Opret en rapport på et delt datasæt
+      url: report-builder-shared-datasets.md
+    - text: Opret parametre
+      url: paginated-reports-parameters.md
+- title: Finjuster og publicer rapporter
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Eksempler på udtryk
+      url: report-builder-expression-examples.md
+    - text: Sideinddeling af rapport
+      url: paginated-reports-pagination.md
+  - linkListType: how-to-guide
+    links:
+    - text: Overfør en rapportparameter i en URL-adresse
+      url: report-builder-url-pass-parameters.md
+    - text: Udgiv en sideinddelt rapport
+      url: paginated-reports-save-to-power-bi-service.md
