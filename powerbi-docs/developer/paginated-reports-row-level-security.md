@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: f9ed7f47c0f36e540d22270048e93acd2d3a8e21
-ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
+ms.openlocfilehash: 09471cdacacc8d0b1067598cefac41915b0ef0d7
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75953774"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920914"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports-preview"></a>Implementering af sikkerhed på rækkeniveau i integrerede sideinddelte rapporter (prøveversion)
 
@@ -26,13 +26,13 @@ Denne funktion er en sikker måde at få vist et undersæt af dataene på, så d
 
 ## <a name="configuring-a-parameter-to-filter-the-dataset"></a>Konfiguration af en parameter til filtrering af datasættet
 
-Når du anvender sikkerhed på rækkeniveau på en sideinddelt Power BI-rapport, skal du tildele en [parameter](../report-builder-parameters.md) til attributten **UserID**. Denne parameter begrænser de data, der trækkes fra datasættet, før rapporten integreres.
+Når du anvender sikkerhed på rækkeniveau på en sideinddelt Power BI-rapport, skal du tildele en [parameter](../paginated-reports/report-builder-parameters.md) til attributten **UserID**. Denne parameter begrænser de data, der trækkes fra datasættet, før rapporten integreres.
 
 Når du har tildelt parameteren til **UserID**, skal du bruge [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)-API'en til at hente integreringstokenet.
 
 ## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>Brug UserID som et filter på rapport- eller forespørgselsniveau
 
-Du kan bruge **UserId** som et *filter* eller i en *forespørgsel* til datakilden i [Power BI Report Builder](../report-builder-power-bi.md).
+Du kan bruge **UserId** som et *filter* eller i en *forespørgsel* til datakilden i [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
 
 ### <a name="using-the-filter"></a>Brug af filteret
 

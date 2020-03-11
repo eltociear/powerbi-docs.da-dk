@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 2a8dca43077fe12e4903585e3926cc67fe864136
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 90f501b257313c48cbef13517747ff83cd9ea9d1
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76162405"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920774"
 ---
 # <a name="use-cascading-parameters-in-paginated-reports"></a>Anvend overlappende parametre i sideinddelte rapporter
 
-Denne artikel henvender sig til rapportforfattere, der designer [sideinddelte rapporter](../paginated-reports-report-builder-power-bi.md) i Power BI. Den indeholder scenarier til design af overlappende parametre. Overlappende parametre er rapportparametre med afhængigheder. Når en rapportbruger vælger en eller flere parameterværdier, bruges den/de til at angive tilgængelige værdier for en anden parameter.
+Denne artikel henvender sig til rapportforfattere, der designer [sideinddelte rapporter](../paginated-reports/paginated-reports-report-builder-power-bi.md) i Power BI. Den indeholder scenarier til design af overlappende parametre. Overlappende parametre er rapportparametre med afhængigheder. Når en rapportbruger vælger en eller flere parameterværdier, bruges den/de til at angive tilgængelige værdier for en anden parameter.
 
 > [!NOTE]
 > En introduktion til overlappende parametre, og hvordan du konfigurerer dem, er ikke omfattet af denne artikel. Hvis du ikke har fuldstændig kendskab til overlappende parametre, anbefaler vi, at du først læser [Føj overlappende parametre til en rapport (Report Builder og SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs).
@@ -281,7 +281,7 @@ Sørg for at optimere dine datakilder ved at:
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Rapportparametre i Power BI Report Builder](../report-builder-parameters.md)
+- [Rapportparametre i Power BI Report Builder](../paginated-reports/report-builder-parameters.md)
 - [Føj overlappende parametre til en rapport (Report Builder og SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)

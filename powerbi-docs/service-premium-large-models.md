@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/03/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 2c984abaec40028fb01affa8ff7bf0bf87cdd616
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.openlocfilehash: 007ff786fcee5d2a7b7237ad578a202cfcf25b69
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78260870"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401926"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Store modeller i Power BI Premium (prøveversion)
 
@@ -123,7 +123,7 @@ Vær opmærksom på følgende begrænsninger, når du bruger store modeller:
 
 ## <a name="availability-in-regions"></a>Tilgængelighed efter område
 
-Store modeller i Power BI er kun tilgængelige i visse Azure-områder, der understøtter [Azure Premium File Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers).
+Store modeller i Power BI er kun tilgængelige i visse Azure-områder, der understøtter [Azure Premium File Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers).
 
 Følgende liste indeholder områder, hvor store modeller i Power BI er tilgængelige. Det er kun de områder, der er på følgende liste, hvor store modeller understøttes:
 
@@ -156,7 +156,7 @@ Følgende liste indeholder områder, hvor store modeller i Power BI er tilgænge
 
 Følgende links indeholder oplysninger, der kan være nyttige til at arbejde med store modeller:
 
-* [Azure Premium Files Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers)
+* [Azure Premium Files Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers)
 * [Konfigurer understøttelse af Multi-Geo til Power BI Premium](service-admin-premium-multi-geo.md)
 * [Medbring dine egne krypteringsnøgler til Power BI](service-encryption-byok.md)
 * [Sådan fungerer kapaciteter](service-premium-what-is.md#how-capacities-function)

@@ -8,14 +8,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 7be55c8b44a89ad5b317743b62e033cf34a01ef9
-ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
+ms.openlocfilehash: 991f8b47337ba563ecfd223d69d687269a44ed78
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78290676"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041602"
 ---
-# <a name="create-model-relationships-in-power-bi-desktop"></a>Opret modelrelationer i Power BI Desktop
+# <a name="model-relationships-in-power-bi-desktop"></a>Modelrelationer i Power BI Desktop
 
 Denne artikel er henvendt til udviklere af importdatamodeller, der arbejder med Power BI Desktop. Det er et vigtigt emne inden for modeldesign, der er afgørende for at levere intuitive, præcise og optimale modeller.
 
@@ -81,30 +81,30 @@ En **Mange til mange**-relation betyder, at begge kolonner kan indeholde dubletv
 > [!TIP]
 > I Power BI Desktop-modelvisning kan du fortolke en relations kardinalitetstype ved at se på indikatorerne (1 eller \*) på begge sider af relationslinjen. Hvis du vil finde ud af, hvilke kolonner der er relaterede, skal du vælge – eller holde markøren over – relationslinjen for at markere kolonnerne.
 
-### <a name="cross-filter-direction"></a>Retning for krydsfiltrering
+### <a name="cross-filter-direction"></a>Tværgående filterretning
 
-Alle modelrelationer skal defineres med en retning for krydsfiltrering. Dit valg bestemmer den eller de retninger, som filtrene overføres i. De mulige indstillinger for retninger for krydsfiltrering afhænger af kardinalitetstypen.
+Alle modelrelationer skal defineres med en tværgående filterretning. Dit valg bestemmer den eller de retninger, som filtrene overføres i. De mulige indstillinger for tværgående filterretninger afhænger af kardinalitetstypen.
 
-| Kardinalitetstype | Indstillinger for retninger for krydsfiltrering |
+| Kardinalitetstype | Tværgående filtermuligheder |
 | --- | --- |
 | En til mange (eller Mange til en) | Enkelt<br>Begge |
 | En til en | Begge |
 | Mange til mange | Enkelt (Tabel1 til Tabel2)<br>Enkelt (Tabel2 til Tabel1)<br>Begge |
 
-_Enkelt_ retning for krydsfiltrering betyder "enkelt retning", og _Begge_ betyder "begge retninger". En relation, der filtrerer i begge retninger, beskrives som regel som _tovejs_.
+_Enkelt_ tværgående filterretning betyder "enkelt retning", og _Begge_ betyder "begge retninger". En relation, der filtrerer i begge retninger, beskrives som regel som _tovejs_.
 
-I forbindelse med en til mange-relationer er retningen for krydsfiltrering altid fra "en"-siden og eventuelt fra "mange"-siden (tovejs). I forbindelse med en til en-relationer er retningen for krydsfiltrering altid fra begge tabeller. Endelig kan en retning for krydsfiltrering for mange til mange-relationer enten være fra en af tabellerne eller fra begge tabeller. Bemærk, at filtre altid overføres fra den pågældende side, når kardinalitetstypen indeholder en "en"-side.
+I forbindelse med en til mange-relationer er den tværgående filterretning altid fra "en"-siden og eventuelt fra "mange"-siden (tovejs). I forbindelse med en til en-relationer er den tværgående filterretning altid fra begge tabeller. Endelig kan en tværgående filterretning for mange til mange-relationer enten være fra en af tabellerne eller fra begge tabeller. Bemærk, at filtre altid overføres fra den pågældende side, når kardinalitetstypen indeholder en "en"-side.
 
 Når retningen for krydsfiltrering er angivet til **Begge**, er der en yderligere egenskab tilgængelig. Der kan anvendes tovejsfiltrering, når sikkerhed på rækkeniveau håndhæves. Du kan finde flere oplysninger om sikkerhed på rækkeniveau i artiklen [Sikkerhed på rækkeniveau med Power BI Desktop](desktop-rls.md).
 
-Ændring af relationen for retning af krydsfiltrering – herunder deaktiveringen af filteroverførsel – kan også udføres ved en modelberegning. Det opnås ved at bruge DAX-funktionen [CROSSFILTER](/dax/crossfilter-function).
+Ændring af relationen tværgående filterretning – herunder deaktiveringen af filteroverførsel – kan også udføres ved en modelberegning. Det opnås ved at bruge DAX-funktionen [CROSSFILTER](/dax/crossfilter-function).
 
 Tovejs relationer kan påvirke ydeevnen negativt. Når du forsøger at konfigurere en tovejs relation, kan det desuden medføre tvetydige filteroverførselsstier. I dette tilfælde vil Power BI Desktop muligvis ikke bekræfte ændringen i relationen og advare dig med en fejlmeddelelse. Nogle gange kan Power BI Desktop give dig mulighed for at definere tvetydige relationsstier mellem tabeller. Rangplaceringsregler, der påvirker registreringen af flertydighed og stiopløsningen, er beskrevet senere i denne artikel under emnet [Rangplaceringsregler](#precedence-rules).
 
 Vi anbefaler kun at anvende tovejs filtrering, hvis der er behov for det. Du kan finde flere oplysninger i [Vejledning til tovejsrelationer](guidance/relationships-bidirectional-filtering.md).
 
 > [!TIP]
-> I Power BI Desktops modelvisning kan du fortolke retningen for krydsfiltrering for en relation ved at lægge mærke til pilespidsen/pilespidserne langs relationslinjen. En enkelt pilespids repræsenterer et filter med et enkelt retning i pilespidsens retning. En dobbelt pilespids repræsenterer en tovejs relation.
+> I Power BI Desktops modelvisning kan du fortolke en relations tværgående filterretning ved at lægge mærke til pilespidsen/pilespidserne langs relationslinjen. En enkelt pilespids repræsenterer et filter med et enkelt retning i pilespidsens retning. En dobbelt pilespids repræsenterer en tovejs relation.
 
 ### <a name="make-this-relationship-active"></a>Aktivér denne relation
 
@@ -133,7 +133,7 @@ Der findes adskillige DAX-funktioner, som er relevante for modelrelationer. Hver
 - [RELATED](/dax/related-function-dax): Henter værdien fra "en"-siden.
 - [RELATEDTABLE](/dax/relatedtable-function-dax): Hent en tabel med rækker fra "mange"-siden.
 - [USERELATIONSHIP](/dax/userelationship-function-dax): Gennemtvinger brugen af en specifik inaktiv modelrelation.
-- [CROSSFILTER](/dax/crossfilter-function): Ændrer retningen for krydsfiltrering for relationen (til en eller begge) eller deaktiverer filteroverførsel (ingen).
+- [CROSSFILTER](/dax/crossfilter-function): Ændrer relationens tværgående filterretning (til en eller begge) eller deaktiverer filteroverførsel (ingen).
 - [COMBINEVALUES](/dax/combinevalues-function-dax): Joinforbinder to eller flere tekststrenge til én streng. Formålet med denne funktion er at understøtte relationer med flere kolonner i DirectQuery-modeller.
 - [TREATAS](/dax/treatas-function): Anvender resultatet af et tabeludtryk som filtre til kolonner fra en ikke-relateret tabel.
 - [Overordnede og underordnede funktioner](/dax/parent-and-child-functions-dax): En serie relaterede funktioner, der kan bruges til at generere beregnede kolonner for at naturalisere et overordnet/underordnet hierarki. Disse kolonner kan derefter bruges til at oprette et fast hierarki.
@@ -146,13 +146,13 @@ For det første kræves der modelteori for at forstå relationsevalueringer.
 
 En import eller DirectQuery-model henter alle sine data fra enten VertiPaq-cachen eller kildedatabasen. I begge tilfælde kan Power BI afgøre, om der findes en "en"-side af en relation.
 
-En sammensat model kan dog bestå af tabeller ved hjælp af forskellige lagringstilstande (import, DirectQuery eller dobbelt) eller flere DirectQuery-kilder. Hver kilde, herunder VertiPaq-cachen for importdata, anses for at være en _dataø_. Modelrelationer kan derefter klassificeres som _intern_ eller _på tværs_. En intern forbindelse er en, der relaterer til to tabeller inden for en dataø, mens en krydsrelation er relateret til tabeller fra forskellige dataøer. Bemærk, at relationer i import- eller DirectQuery-modeller altid er interne.
+En sammensat model kan dog bestå af tabeller ved hjælp af forskellige lagringstilstande (import, DirectQuery eller dobbelt) eller flere DirectQuery-kilder. Hver kilde, herunder VertiPaq-cachen for importdata, anses for at være en _dataø_. Modelrelationer kan derefter klassificeres som _intern_ eller _på tværs_. En intern forbindelse er en, der relaterer til to tabeller inden for en dataø, mens en tværgående relation er relateret til tabeller fra forskellige dataøer. Bemærk, at relationer i import- eller DirectQuery-modeller altid er interne.
 
 Lad os se et eksempel på en sammensat model.
 
 ![Eksempel på en sammensat model bestående af to øer](media/desktop-relationships-understand/data-island-example.png)
 
-I dette eksempel består den sammensatte model af to øer: en VertiPaq-dataø og en DirectQuery-kildedataø. VertiPaq-dataøen indeholder tre tabeller, og DirectQuery-kildedataøen indeholder to tabeller. Der eksisterer en krydsrelation, som kan relatere en tabel i VertiPaq-dataøen til en tabel i DirectQuery-kildedataøen.
+I dette eksempel består den sammensatte model af to øer: en VertiPaq-dataø og en DirectQuery-kildedataø. VertiPaq-dataøen indeholder tre tabeller, og DirectQuery-kildedataøen indeholder to tabeller. Der eksisterer en tværgående relation, som kan relatere en tabel i VertiPaq-dataøen til en tabel i DirectQuery-kildedataøen.
 
 ### <a name="strong-relationships"></a>Stærke relationer
 
@@ -202,7 +202,7 @@ Der er yderligere begrænsninger i forbindelse med svage relationer:
 - Gennemtvingning af RLS har topologibegrænsninger
 
 > [!NOTE]
-> I Power BI Desktops modelvisning er det ikke altid muligt at afgøre, om en modelrelation er stærk eller svag. En mange til mange-relation er altid svag, da den er en en til mange-relation, når den er en krydsrelation. Hvis du vil finde ud af, om det er en krydsrelation, skal du inspicere tabellagingstilstandene og datakilderne for at nå frem til den korrekte afgørelse.
+> I Power BI Desktops modelvisning er det ikke altid muligt at afgøre, om en modelrelation er stærk eller svag. En mange til mange-relation er altid svag, da den er en en til mange-relation, når den er en tværgående relation. Hvis du vil finde ud af, om det er en tværgående relation, skal du inspicere tabellagingstilstandene og datakilderne for at nå frem til den korrekte afgørelse.
 
 ### <a name="precedence-rules"></a>Rangplaceringsregler
 
@@ -221,13 +221,13 @@ Følgende liste viser en oversigt over filtres overførselsydeevne fra den hurti
 3. Mange til mange-modelrelationer, der opnås med en mellemliggende tabel, og som omfatter mindst én tovejs relation
 4. Relationer på tværs af øer
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 
 - [Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI](guidance/star-schema.md)
 - [Vejledning til en til en-relationer](guidance/relationships-one-to-one.md)
-- [Vejledning til mange til mange-relationer](guidance/relationships-many-to-many.md)
+- [Vejledning til mange til mange-relation](guidance/relationships-many-to-many.md)
 - [Vejledning til aktive i forhold til inaktive relationer](guidance/relationships-active-inactive.md)
 - [Vejledning til tovejsrelationer](guidance/relationships-bidirectional-filtering.md)
 - [Vejledning til fejlfinding af relationer](guidance/relationships-troubleshoot.md)

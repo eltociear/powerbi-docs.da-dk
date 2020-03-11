@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: f8b7cc302cd4a26aa099f723f47865723dccb7c9
-ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
+ms.openlocfilehash: cf11b98d7eacd7b1e245fb0aed62d0f14e7f4c4c
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78290630"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041308"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>Overfør SQL Server Reporting Services-rapporter til Power BI
 
@@ -60,11 +60,11 @@ Vi anbefaler, at du bruger [RDL-overførselsværktøjet](https://github.com/micr
 
 Værktøjet automatiserer følgende opgaver:
 
-- Kontrol af [ikke-understøttede datakilder](../paginated-reports-data-sources.md) og [ikke-understøttede rapportfunktioner](../paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi)
-- Konverterer alle _delte_ ressourcer til _integrerede_ ressourcer:
-  - Delte **datakilder** bliver integrerede datakilder
-  - Delte **datasæt** bliver integrerede datasæt
-- Publicerer rapporter (der består kontrol) som sideinddelte rapporter til et angivet Power BI-arbejdsområde (på en Premium-kapacitet)
+* Kontrol af [ikke-understøttede datakilder](../paginated-reports/paginated-reports-data-sources.md) og [ikke-understøttede rapportfunktioner](../paginated-reports/paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi)
+* Konverterer alle _delte_ ressourcer til _integrerede_ ressourcer:
+  * Delte **datakilder** bliver integrerede datakilder
+  * Delte **datasæt** bliver integrerede datasæt
+* Publicerer rapporter (der består kontrol) som sideinddelte rapporter til et angivet Power BI-arbejdsområde (på en Premium-kapacitet)
 
 Det ændrer eller fjerner ikke dine eksisterende rapporter. Når værktøjet er færdigt, viser det en oversigt over alle handlinger, der er afsluttet – gennemført eller mislykket.
 
@@ -102,7 +102,7 @@ Følgende SSRS-elementtyper kan dog ikke overføres til Power BI:
 
 <sup>1</sup> [RDL-overførselsværktøjet](https://github.com/microsoft/RdlMigration) konverterer automatisk delte datakilder og delte datasæt – forudsat at de bruger understøttede datakilder.
 
-Hvis dine RDL-rapporter bruger funktioner, [der endnu ikke understøttes af sideinddelte rapporter i Power BI](../paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi), kan du planlægge at udvikle dem igen som [Power BI-rapporter](../consumer/end-user-reports.md). Selvom dine RDL-rapporter kan overføres, anbefaler vi, at du overvejer at modernisere dem som Power BI-rapporter, når det giver mening.
+Hvis dine RDL-rapporter bruger funktioner, [der endnu ikke understøttes af sideinddelte rapporter i Power BI](../paginated-reports/paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi), kan du planlægge at udvikle dem igen som [Power BI-rapporter](../consumer/end-user-reports.md). Selvom dine RDL-rapporter kan overføres, anbefaler vi, at du overvejer at modernisere dem som Power BI-rapporter, når det giver mening.
 
 Hvis dine RDL-rapporter skal hente data fra _datakilder i det lokale miljø_, kan de ikke bruge enkeltlogon (SSO). Al datahentning fra disse kilder udføres i øjeblikket ved hjælp af sikkerhedskonteksten for _brugerkontoen for datakildens gateway_. Det er ikke muligt for SQL Server Analysis Services (SSAS) at gennemtvinge sikkerhed på rækkeniveau for hver enkelt bruger.
 
@@ -113,7 +113,7 @@ Sideinddelte rapporter i Power BI er generelt optimeret til **udskrivning** elle
 Målet med fasen _Forbered_ indebærer, at du bliver klar til det hele. Den dækker konfiguration af Power BI-miljøet, planlægning af, hvordan du sikrer og publicerer dine rapporter, og idéer til at genudvikle SSRS-elementer, der ikke overføres.
 
 1. Sørg for, at [arbejdsbelastningen Sideinddelte rapporter](../service-admin-premium-workloads.md#paginated-reports) er aktiveret for din Power BI Premium-kapacitet, og at den har tilstrækkelig hukommelse.
-1. Bekræft support til [datakilder](../paginated-reports-data-sources.md) for din rapport, og opret en [Power BI Gateway](../service-gateway-onprem.md) for at tillade forbindelse til alle datakilder i det lokale miljø.
+1. Bekræft support til [datakilder](../paginated-reports/paginated-reports-data-sources.md) for din rapport, og opret en [Power BI Gateway](../service-gateway-onprem.md) for at tillade forbindelse til alle datakilder i det lokale miljø.
 1. Bliv fortrolig med Power BI-sikkerhed, og planlæg, [hvordan du genopretter dine SSRS-mapper og tilladelser](/sql/reporting-services/security/secure-folders) med [Power BI-arbejdsområder og arbejdsområderoller](../service-new-workspaces.md).
 1. Bliv fortrolig med Power BI-deling, og planlæg, hvordan du distribuerer indhold ved at udgive [Power BI-apps](../service-create-distribute-apps.md).
 1. Overvej at bruge [delte Power BI-datasæt](../service-datasets-build-permissions.md) i stedet for dine SSRS-delte datakilder.
@@ -121,7 +121,7 @@ Målet med fasen _Forbered_ indebærer, at du bliver klar til det hele. Den dæk
 1. Revaluer brugen af det indbyggede felt **UserID** i dine rapporter. Hvis du bruger **UserID** til at sikre rapportdata, skal du forstå, at brugerens hovednavn (UPN) returneres for sideinddelte rapporter (når de hostes i Power BI-tjenesten). Så i stedet for at returnere NT-kontonavnet, f.eks. _AW\mblythe_, returnerer det indbyggede felt noget i stil med _m.Blythe&commat;adventureworks.com_. Du skal revidere definitionerne for dine datasæt og muligvis kildedataene. Når de er revideret og publiceret, anbefaler vi, at du tester dine rapporter grundigt for at sikre, at datatilladelserne fungerer som forventet.
 1. Revaluer brugen af det indbyggede felt **ExecutionTime** i dine rapporter. Det indbyggede felt returnerer dato/klokkeslæt _i UTC (Coordinated Universal Time)_ for sideinddelte rapporter (når de hostes i Power BI-tjenesten). Det kan påvirke standardværdierne for rapportparameteren og rapportere mærkater for udførelsestid (typisk føjet til rapport sidefødder).
 1. Hvis din datakilde er SQL Server (i det lokale miljø), skal du bekræfte, at rapporterne ikke benytter kortvisualiseringer. Kortvisualiseringen afhænger af SQL Server-afstandsdatatyper, og disse typer understøttes ikke af gatewayen. Du kan finde flere oplysninger under [Vejledning til hentning af data for sideinddelte rapporter (komplekse datatyper i SQL Server)](report-paginated-data-retrieval.md#sql-server-complex-data-types).
-1. Sørg for, at dine rapportforfattere har [Power BI Report Builder](../report-builder-power-bi.md) installeret, og at de senere udgaver nemt kan distribueres i hele organisationen.
+1. Sørg for, at dine rapportforfattere har [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) installeret, og at de senere udgaver nemt kan distribueres i hele organisationen.
 
 ## <a name="migration-stage"></a>Overførselsstadie
 
@@ -137,7 +137,7 @@ Alle, der har tilladelse til at få adgang til SSRS-instansen og Power BI-arbejd
 1. Hent hver rapportdefinition, og gem .rdl-filerne lokalt.
 1. Åbn _den seneste version_ af Power BI Report Builder, og opret forbindelse til Power BI-tjenesten ved hjælp af dine legitimationsoplysninger til Microsoft Azure Active Directory.
 1. Åbn hver rapport i Power BI Report Builder, og gør derefter følgende:
-   1. Bekræft, at alle datakilder og datasæt er integreret i rapportdefinitionen, og at de er [understøttede datakilder](../paginated-reports-data-sources.md).
+   1. Bekræft, at alle datakilder og datasæt er integreret i rapportdefinitionen, og at de er [understøttede datakilder](../paginated-reports/paginated-reports-data-sources.md).
    1. Få vist et eksempel på rapporten for at sikre, at den gengives korrekt.
    1. Vælg indstillingen _Gem som_, og vælg derefter _Power BI-tjeneste_.
    1. Vælg det arbejdsområde, der skal indeholde rapporten.
@@ -156,7 +156,7 @@ Du kan også bruge de offentligt tilgængelige SSRS- og Power BI-API'er til at a
 
 Du kan få flere oplysninger om API'erne her:
 
-- [Reference til Power BI REST API](../developer/rest-api-reference.md)
+- [Reference til Power BI REST API](../developer/automation/rest-api-reference.md)
 - [SQL Server Reporting Services REST API'er](/sql/reporting-services/developer/rest-api)
 
 ## <a name="post-migration-stage"></a>Stadie efter overførsel
@@ -165,7 +165,7 @@ Når du har gennemført overførslen, er du klar til stadiet _Efter overførsel_
 
 ### <a name="configure-data-sources"></a>Konfigurer datakilder
 
-Når rapporter er blevet overført til Power BI, skal du sørge for, at deres datakilder er konfigureret korrekt. Det kan involvere tildeling til gatewaydatakilder og [sikker lagring af legitimationsoplysninger til datakilden](../paginated-reports-data-sources.md#azure-sql-database-authentication). Disse handlinger udføres ikke af RDL-overførselsværktøjet.
+Når rapporter er blevet overført til Power BI, skal du sørge for, at deres datakilder er konfigureret korrekt. Det kan involvere tildeling til gatewaydatakilder og [sikker lagring af legitimationsoplysninger til datakilden](../paginated-reports/paginated-reports-data-sources.md#azure-sql-database-authentication). Disse handlinger udføres ikke af RDL-overførselsværktøjet.
 
 ### <a name="review-report-performance"></a>Gennemse rapportens ydeevne
 
@@ -186,17 +186,17 @@ Du kan finde flere oplysninger om disse problemer, herunder bestemte trin til at
 - [Optimering af Premium-kapaciteter](../service-premium-capacity-optimize.md)
 - [Overvåg Premium-kapaciteter i appen](../service-admin-premium-monitor-capacity.md)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 
-- [Hvad er sideinddelte rapporter i Power BI Premium?](../paginated-reports-report-builder-power-bi.md)
+- [Hvad er sideinddelte rapporter i Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - [Vejledning til datahentning for sideinddelte rapporter](report-paginated-data-retrieval.md)
 - [Hvornår bruges sideinddelte rapporter i Power BI](report-paginated-or-power-bi.md)
-- [Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål](../paginated-reports-faq.md)
+- [Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål](../paginated-reports/paginated-reports-faq.md)
 - [Ofte stillede spørgsmål til Power BI Premium](../service-premium-faq.md)
 - [RDL-overførselsværktøj](https://github.com/microsoft/RdlMigration)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-- Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)
+- Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)
 
 Der findes Power BI-partnere, som kan hjælpe din organisation med at gennemføre overførselsprocessen. Hvis du vil i kontakt med en Power BI-partner, skal du gå til [Power BI-partnerportalen](https://powerbi.microsoft.com/partners/).

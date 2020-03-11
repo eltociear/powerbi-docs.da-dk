@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 09fd2197cca31e083c0242b187d7e242244235eb
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: d2f3f36911c72df1b95ceb5bd90043870559cc62
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530366"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920717"
 ---
 # <a name="image-use-guidance-for-paginated-reports"></a>Vejledning til brug af afbildning for sideinddelte rapporter
 
-Denne artikel henvender sig til rapportforfattere, der designer [sideinddelte rapporter](../paginated-reports-report-builder-power-bi.md) i Power BI. Den indeholder forslag, du kan bruge, hvis du arbejder med afbildning. Normalt kan billeder i rapportlayouts vise grafik som et virksomhedslogo eller billeder.
+Denne artikel henvender sig til rapportforfattere, der designer [sideinddelte rapporter](../paginated-reports/paginated-reports-report-builder-power-bi.md) i Power BI. Den indeholder forslag, du kan bruge, hvis du arbejder med afbildning. Normalt kan billeder i rapportlayouts vise grafik som et virksomhedslogo eller billeder.
 
 Billeder kan gemmes på tre forskellige placeringer:
 
@@ -53,6 +53,6 @@ Overvej følgende forslag til professionelle rapportlayouts, nemmere vedligehold
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Hvad er sideinddelte rapporter i Power BI Premium?](../paginated-reports-report-builder-power-bi.md)
+- [Hvad er sideinddelte rapporter i Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)

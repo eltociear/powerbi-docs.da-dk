@@ -8,23 +8,23 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 76d1631b95c30d5ae56ced5d64e5174f6f9db759
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 349459b95a815a52665e50687554f81f90a9c81b
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76041859"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920807"
 ---
 # <a name="avoid-blank-pages-when-printing-paginated-reports"></a>Undgå tomme sider ved udskrivning af sideinddelte rapporter
 
-Denne artikel henvender sig til rapportforfattere, der designer [sideinddelte rapporter](../paginated-reports-report-builder-power-bi.md) i Power BI. Den indeholder anbefalinger, der kan hjælpe dig med at undgå tomme sider, når din rapport eksporteres til et hårdt sideformat – f.eks. PDF eller Microsoft Word – eller udskrives.
+Denne artikel henvender sig til rapportforfattere, der designer [sideinddelte rapporter](../paginated-reports/paginated-reports-report-builder-power-bi.md) i Power BI. Den indeholder anbefalinger, der kan hjælpe dig med at undgå tomme sider, når din rapport eksporteres til et hårdt sideformat – f.eks. PDF eller Microsoft Word – eller udskrives.
 
 ## <a name="page-setup"></a>Sideopsætning
 
 Egenskaber for rapportsidestørrelsen bestemmer sideretning, dimensioner og margener. Få adgang til disse rapportegenskaber ved at:
 
 - Bruge **Egenskabssiden** for rapporter: Højreklik på det mørkegrå område uden for rapportlærredet, og vælg derefter _Rapportegenskaber_.
-- Bruge ruden med [**Egenskaber**](../paginated-reports-report-design-view.md#4-properties-pane): Klik på det mørkegrå område uden for rapportlærredet for at vælge rapportobjektet. Sørg for, at ruden **Egenskaber** er åben.
+- Bruge ruden med [**Egenskaber**](../paginated-reports/paginated-reports-report-design-view.md#4-properties-pane): Klik på det mørkegrå område uden for rapportlærredet for at vælge rapportobjektet. Sørg for, at ruden **Egenskaber** er åben.
 
 På siden **Sideopsætning** på **egenskabssiden** i rapporten får du en brugervenlig grænseflade til at få vist og opdatere indstillingerne for sideopsætning.
 
@@ -91,7 +91,7 @@ Hvis du f.eks. udskriver rapporten på papir, skal du kontrollere, at det korrek
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Hvad er sideinddelte rapporter i Power BI Premium?](../paginated-reports-report-builder-power-bi.md)
-- [Sideinddeling i sideinddelte rapporter i Power BI](../paginated-reports-pagination.md)
+- [Hvad er sideinddelte rapporter i Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
+- [Sideinddeling i sideinddelte rapporter i Power BI](../paginated-reports/paginated-reports-pagination.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)

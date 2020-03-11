@@ -8,20 +8,20 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/28/2019
-ms.openlocfilehash: bdad4a068a5463bd683bc0dbfd20e68873599ace
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: c1944f80616b748d1120d28b1ba91e1f0f2ab6e8
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265142"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041441"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Opret en Azure Active Directory-lejer, du kan bruge med Power BI
 
-Du kan få mere at vide om, hvordan du opretter en ny Azure Active Directory-lejer (Azure AD) til et brugerdefineret program, der kalder [REST API'er for Power BI](rest-api-reference.md).
+Du kan få mere at vide om, hvordan du opretter en ny Azure Active Directory-lejer (Azure AD) til et brugerdefineret program, der kalder [REST API'er for Power BI](automation/rest-api-reference.md).
 
 En lejer repræsenterer en organisation i Azure Active Directory. Det er en dedikeret instans af Azure AD-tjenesten, som en organisation modtager og ejer, når den tilmelder sig en Microsoft-cloudtjeneste, f.eks. Azure, Microsoft Intune eller Office 365. Hver enkelt Azure AD-lejer er specifik og adskilt fra andre Azure AD-lejere.
 
-Når du har en Azure AD-lejer, kan du definere et program og tildele tilladelser, så programmet kan kalde REST API'er for [Power BI](rest-api-reference.md).
+Når du har en Azure AD-lejer, kan du definere et program og tildele tilladelser, så programmet kan kalde REST API'er for [Power BI](automation/rest-api-reference.md).
 
 Din organisation har muligvis allerede en Azure AD-lejer, som du kan bruge til dit program. Du kan også oprette en ny lejer specifikt til dit program. I denne artikel kan du se, hvordan du opretter en ny lejer.
 

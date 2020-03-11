@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 06e46413be709ac3eda2102332740d709092187e
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 32f0c03fc0ae586b8b98c7a4c84c9d4c7bbd9078
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74265350"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920975"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
 Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner i **Power BI-tjenesten**. Du kan finde relaterede oplysninger om nyheder under:
@@ -41,11 +41,11 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 * Nye indstillinger for kapacitet til Power BI Premium.
 * [Brugerdefineret branding](https://powerbi.microsoft.com/blog/announcing-custom-branding-for-your-organization/) til din organisation.
 * Opsummeret dataeksport med tilladelsen Opret.
-* Understøttelse af parametre for URL-adresser til [sideinddelte rapporter](paginated-reports-report-builder-power-bi.md).
+* Understøttelse af parametre for URL-adresser til [sideinddelte rapporter](paginated-reports/paginated-reports-report-builder-power-bi.md).
 * Understøttelse af månedlige mailabonnementer. 
 
 ### <a name="july-2019"></a>Juli 2019
-* Understøttelse af datasæt, der ikke er Premium, til [sideinddelte rapporter](paginated-reports-report-builder-power-bi.md).
+* Understøttelse af datasæt, der ikke er Premium, til [sideinddelte rapporter](paginated-reports/paginated-reports-report-builder-power-bi.md).
 * Generel tilgængelighed af Power BI-[sammenlægninger](desktop-aggregations.md).
 * Send meddelelser om opdatering til andre.
 * [Testværktøj](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) til Power BI Premium-kapaciteter.
@@ -57,7 +57,7 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 * Offentlig prøveversion af [delte og certificerede datasæt](service-datasets-across-workspaces.md).
 * Metrikværdier for kunstig intelligens tilgængelig i [appen Premium Capacity Metrics](service-admin-premium-monitor-capacity.md).
 * Generel tilgængelighed af [skabelonapps](service-template-apps-overview.md) i Power BI.
-* Generel tilgængelighed af [sideinddelte rapporter](paginated-reports-report-builder-power-bi.md) i Power BI.
+* Generel tilgængelighed af [sideinddelte rapporter](paginated-reports/paginated-reports-report-builder-power-bi.md) i Power BI.
 * Offentlig prøveversion af [BYOK](service-encryption-byok.md) (Bring Your Own Key) til Power BI Premium.
 * Rollen Fremviser for [oplevelsen med de nye arbejdsområder](service-new-workspaces.md).
 
@@ -71,7 +71,7 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 * Generel tilgængelighed af den nye arbejdsområdeoplevelse.
 * Nye Power BI-områder i Frankrig og Korea.
 * Opdateret oplevelse med Spørgsmål og svar til dashboards.
-* Understøttelse af Azure Analysis Services i [sideinddelte rapporter](paginated-reports-report-builder-power-bi.md).
+* Understøttelse af Azure Analysis Services i [sideinddelte rapporter](paginated-reports/paginated-reports-report-builder-power-bi.md).
 * Sideinddelte rapporter, der understøttes i Power BI-apps.
 * [Mailabonnementer](https://powerbi.microsoft.com/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) med vedhæftede PDF-filer til sideinddelte rapporter.
 * Power BI Premium-oversigt og arbejdsbelastningsmålinger understøttes i administrationsportalen
@@ -108,7 +108,7 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 
 ### <a name="november-2018"></a>November 2018
 * Power BI-dataforberedelse er tilgængelig med offentlig prøveversion af [dataflows](service-dataflows-overview.md).
-* Offentlig prøveversion af [sideinddelte rapporter](paginated-reports-report-builder-power-bi.md) i Power BI Premium.
+* Offentlig prøveversion af [sideinddelte rapporter](paginated-reports/paginated-reports-report-builder-power-bi.md) i Power BI Premium.
 * Datastørrelse og antal datasæt i hukommelsen i den [kapacitetsovervågningsapp](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### <a name="october-2018"></a>Oktober 2018
@@ -759,7 +759,7 @@ Se [bloggen](https://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-servic
 
 * Pålideligheden ved opdatering med OneDrive er blevet forbedret.  Nogle situationer, hvor projektmapper ikke blev opdateret fra OneDrive, er blevet løst.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 [Hvad er Power BI?](fundamentals/power-bi-overview.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

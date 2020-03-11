@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/04/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 3838c0b487be7faace2e58dd706aa7d172841215
-ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
+ms.openlocfilehash: 049b6ac14c6d35d68815eac32520a4eaa654ad42
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78290492"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920730"
 ---
 # <a name="when-to-use-paginated-reports-in-power-bi"></a>Her skal du bruge sideinddelte rapporter i Power BI
 
-Denne artikel henvender sig til rapportforfattere, der designer rapporter til Power BI. Den indeholder forslag, der kan hjælpe dig med at vælge, hvornår du skal udvikle [sideinddelte rapporter i Power BI](../paginated-reports-report-builder-power-bi.md).
+Denne artikel henvender sig til rapportforfattere, der designer rapporter til Power BI. Den indeholder forslag, der kan hjælpe dig med at vælge, hvornår du skal udvikle [sideinddelte rapporter i Power BI](../paginated-reports/paginated-reports-report-builder-power-bi.md).
 
 > [!NOTE]
 > Udgivelse af sideinddelte rapporter i Power BI kræver et Power BI Premium-abonnement. Rapporter gengives kun, når de er i et arbejdsområde på en dedikeret kapacitet, der har [arbejdsbelastningen for sideinddelte rapporter aktiveret](../service-admin-premium-workloads.md#paginated-reports).
@@ -49,7 +49,7 @@ Der er mange overbevisende scenarier, når du kan få fordel af at udvikle en si
 - **Præcisionslayout**: Du kan designe layout med megen formatering og med perfekt pixel – til den nøjagtige størrelse og placering, der er konfigureret i brøkdele af tommer eller centimeter.
 - **Dynamisk layout**: Du kan fremstille meget dynamiske layout ved at angive mange rapportegenskaber, der skal bruge VB.NET-udtryk. Udtryk har adgang til mange kerne .NET Framework-biblioteker.
 - **Gengivelsesspecifikt layout**: Du kan bruge udtryk til at redigere rapportlayoutet på baggrund af det anvendte gengivelsesformat. Du kan f.eks. designe rapporten til at deaktivere skiftende synlighed (for at opnå detailudledning og færre detaljer), når den gengives ved hjælp af et ikke-interaktivt format, f.eks. PDF.
-- **Oprindelige forespørgsler**: Du behøver ikke først at udvikle et Power BI-datasæt. Det er muligt at oprette oprindelige forespørgsler (eller bruge gemte procedurer) til alle [understøttede datakilder](../paginated-reports-data-sources.md). Forespørgsler kan indeholde parametre.
+- **Oprindelige forespørgsler**: Du behøver ikke først at udvikle et Power BI-datasæt. Det er muligt at oprette oprindelige forespørgsler (eller bruge gemte procedurer) til alle [understøttede datakilder](../paginated-reports/paginated-reports-data-sources.md). Forespørgsler kan indeholde parametre.
 - **Grafiske forespørgselsdesignere**: Power BI Report Builder indeholder grafiske forespørgselsdesignere, der kan hjælpe dig med at skrive og teste dine forespørgsler på datasæt.
 - **Statiske datasæt**: Du kan definere et datasæt og angive data direkte i din rapportdefinition. Denne funktion er især nyttig til at understøtte en demo eller til levering af en blåstempling.
 - **Dataintegration**: Du kan kombinere data fra forskellige datakilder eller med statiske datasæt. Det gøres ved at oprette brugerdefinerede felter ved hjælp af VB.NET-udtryk.
@@ -66,11 +66,11 @@ Der er mange overbevisende scenarier, når du kan få fordel af at udvikle en si
 - **Abonnementer**: Power BI kan levere sideinddelte rapporter efter en tidsplan som mails med vedhæftede filer af rapporter i ethvert format, der understøttes.
 - **Pr. bruger-layout**: Du kan oprette dynamiske rapportlayout på baggrund af den godkendte bruger, der åbner rapporten. Du kan designe rapporten, så du kan filtrere data anderledes, skjule dataområder eller visualiseringer, anvende forskellige formater eller angive brugerspecifikke parameterstandarder.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Hvad er sideinddelte rapporter i Power BI Premium?](../paginated-reports-report-builder-power-bi.md)
+- [Hvad er sideinddelte rapporter i Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - [Overfør SQL Server Reporting Services-rapporter til Power BI](migrate-ssrs-reports-to-power-bi.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)

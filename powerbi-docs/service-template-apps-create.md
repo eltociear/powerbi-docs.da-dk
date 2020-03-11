@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 4b3158cbe26efe05e3d35c1c6c93027738cc817a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 649f4d002c9adbfa882c4ee4320f040f490fd116
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871488"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041717"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Opret en skabelonapp i Power BI
 
@@ -58,7 +58,7 @@ Hvis du vil oprette et skabelonprogram, som du kan distribuere til andre Power B
 
 Som med et almindeligt Power BI-arbejdsområde er dit næste skridt at oprette indholdet i arbejdsområdet.  
 
-- [Opret dit Power BI-indhold](power-bi-creator-landing.md) i dit arbejdsområde.
+- [Opret dit Power BI-indhold](index.yml) i dit arbejdsområde.
 
 Hvis du bruger parametre i Power-forespørgsel, skal du kontrollere, at de har veldefinerede typer (f.eks. Text). Typerne Any og Binary understøttes ikke.
 
