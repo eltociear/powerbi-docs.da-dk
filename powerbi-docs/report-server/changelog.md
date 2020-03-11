@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/27/2020
-ms.openlocfilehash: 993d83e15eafa0e40938eee13cbeabec75389f47
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.date: 03/02/2020
+ms.openlocfilehash: 0a8cf16ddf7fe9e091599f1790a37a83b9923240
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819531"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237954"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -24,6 +24,14 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
 
 ## <a name="january-2020"></a>Januar 2020
 - **Power BI-rapportserver**
+    - *Version: 1.6.7364.4075 (build 15.0.1102.777), udgivet: 2. marts 2020*
+         - Fejlrettelser
+           -  Rettelse til Power BI-rapporter, der ikke kan uploades for visse datakilder
+           -  Rettelse til placeringen af linket til download af Desktop for Power BI-rapportserver fra portalen
+           -  Rettelse til DynamicImageDPI til Excel-gengivelse
+           -  Rettelse til Oracle-forbindelser, der bruger forkert trådkultur i visse scenarier med flere brugere
+           -  Rettelse til standardværdien for CustomHeaders, der forårsager fejl i forbindelse med integrering af rapporter
+           -  Rettelse til SQL-parameternavne, der oprettes forkert i visse tilfælde
     - *Version: 1.6.7327.3007 (build 15.0.1102.759), udgivet: 23. januar 2020*
          - Funktioner
             -  Eksportér til Excel fra Power BI-rapporter.

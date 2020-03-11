@@ -7,6 +7,8 @@
       items:
         - name: Hvad er mobilappsene?
           href: mobile-apps-for-mobile-devices.md
+        - name: Nyheder i mobilappsene
+          href: mobile-whats-new-in-the-mobile-apps.md
         - name: Mød startsiden
           href: mobile-apps-home-page.md
     - name: Hurtige introduktioner
@@ -22,8 +24,6 @@
     - name: Begreber
       expanded: true
       items:
-        - name: Nyheder i mobilappsene
-          href: mobile-whats-new-in-the-mobile-apps.md
         - name: Hent data fra den virkelige verden med mobilappsene
           href: mobile-apps-data-in-real-world-context.md
         - name: Få vist dine data offline i mobilappsene
@@ -44,8 +44,6 @@
               href: mobile-share-dashboard-from-the-mobile-apps.md
             - name: Favoritter i mobilappsene
               href: mobile-apps-favorites.md
-            - name: Konfigurer indstillinger for interaktion (kun telefon)
-              href: mobile-app-interaction-settings.md
             - name: Indstil databeskeder i Power BI-mobilapps
               href: mobile-set-data-alerts-in-the-mobile-apps.md
             - name: Modtag meddelelser i Power BI-mobilapps
@@ -70,6 +68,8 @@
               href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
             - name: Scan en stregkode fra Power BI-mobilappen
               href: mobile-apps-scan-barcode-iphone.md
+            - name: Konfigurer indstillinger for interaktion
+              href: mobile-app-interaction-settings.md
             - name: Konfigurer ved hjælp af administration af mobilenheder
               href: mobile-app-configuration.md
         - name: iOS
@@ -100,7 +100,7 @@
               href: mobile-windows-10-phone-app-get-started.md
             - name: Fastgør et dashboard til startskærmen
               href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-            - name: Få vist Reporting Services-mobilrapporter og KPI'er
+            - name: Få vist rapporter i det lokale miljø og KPI'er
               href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
             - name: Få vist Power BI på Surface Hub
               href: mobile-windows-10-app-presentation-mode.md

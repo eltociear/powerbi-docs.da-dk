@@ -22,7 +22,7 @@ Du kan fastgøre Power BI-dashboards til startskærmen i Windows fra Power BI-mo
 
 ## <a name="pin-a-dashboard-to-your-start-screen-as-a-live-tile"></a>Fastgør et dashboard til startskærmen som et dynamisk felt
 1. Åbn et dashboard.
-2. Tryk på **Fastgør til Start** ![Fastgør til Start-ikon](./media/mobile-pin-dashboard-start-screen-windows-10-phone-app/power-bi-windows-10-pin-start-icon.png).
+2. Tryk på **Fastgør til start** ![ikonet Fastgør til start](./media/mobile-pin-dashboard-start-screen-windows-10-phone-app/power-bi-windows-10-pin-start-icon.png).
    
    ![Øverste menulinje i Windows 10-mobilappen](./media/mobile-pin-dashboard-start-screen-windows-10-phone-app/power-bi-windows-10-pin-start.png)
    

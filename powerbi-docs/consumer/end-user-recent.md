@@ -40,9 +40,9 @@ Hvis du har mere end fem elementer, du har besøgt for nylig, skal du vælge **S
 
 ## <a name="actions-available-from-the-recent-content-list"></a>Tilgængelige handlinger på indholdslisten **Seneste**
 De handlinger, der er tilgængelige for dig, afhænger af de indstillinger, *designeren* af indholdet har tildelt. Nogle af dine muligheder kan omfatte:
-* Vælg stjerneikonet for at [angive et dashboard, en rapport eller en app som Favoritter](end-user-favorite.md) ![stjerneikon](./media/end-user-shared-with-me/power-bi-star-icon.png).
+* Vælg stjerneikonet for at [markere et dashboard, en rapport eller et program som favoritter](end-user-favorite.md) ![stjerneikon](./media/end-user-shared-with-me/power-bi-star-icon.png).
 * Nogle dashboards og rapporter kan deles igen  ![delingsikon](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
-* [Åbn rapporten i Excel](end-user-export.md) ![ikonet for eksport til Excel](./media/end-user-shared-with-me/power-bi-excel.png) 
+* [Åbn rapporten i Excel](end-user-export.md) ![ikonet eksportér til Excel](./media/end-user-shared-with-me/power-bi-excel.png) 
 * [Vis indsigt](end-user-insights.md), som Power BI finder i dataene ![ikonet for indsigt](./media/end-user-shared-with-me/power-bi-insights.png).
 * Hvis dine lister bliver lange, kan du desuden [bruge søgefeltet og sortering til at finde det, du har brug for](end-user-search-sort.md). Hvis du vil finde ud af, om en kolonne kan sorteres, skal du holde over den for at se, om der vises en pil. Hvis du i dette eksempel holder over **Seneste adgang** vises der en pil – dit seneste indhold kan sorteres efter adgangsdato. 
 

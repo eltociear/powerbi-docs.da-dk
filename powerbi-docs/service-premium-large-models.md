@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/25/2020
+ms.date: 03/03/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 4f256d9b0cbecf76ff002cc0214155b8b36014ee
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 2c984abaec40028fb01affa8ff7bf0bf87cdd616
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609894"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260870"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Store modeller i Power BI Premium (prøveversion)
 
@@ -123,7 +123,7 @@ Vær opmærksom på følgende begrænsninger, når du bruger store modeller:
 
 ## <a name="availability-in-regions"></a>Tilgængelighed efter område
 
-Store modeller er ikke tilgængelige i alle områder, hvor Power BI tilbydes. Store modeller i Power BI er kun tilgængelige i Azure-områder, der understøtter [Azure Premium Files Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers).
+Store modeller i Power BI er kun tilgængelige i visse Azure-områder, der understøtter [Azure Premium File Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers).
 
 Følgende liste indeholder områder, hvor store modeller i Power BI er tilgængelige. Det er kun de områder, der er på følgende liste, hvor store modeller understøttes:
 

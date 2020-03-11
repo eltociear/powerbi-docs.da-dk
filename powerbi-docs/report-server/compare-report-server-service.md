@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.date: 02/13/2020
-ms.openlocfilehash: c760450319f5ca32856520bce9c9f9b67a8616d6
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.date: 03/04/2020
+ms.openlocfilehash: a48f9c5938c93376cc5dcdbe3491ee2a7e6813c0
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427754"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290653"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Sammenlign Power BI-rapportserveren med Power BI-tjenesten
 
@@ -24,11 +24,11 @@ Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigti
 
 | Funktioner | Power BI-rapportserver | Power BI-tjeneste | Noter |
 |---------|---------|---------|---------|
-| Installation | I det lokale miljø eller i hostet cloud | Cloud | Power BI-rapportserveren kan installeres i Azure VM'er (hostet cloud), hvis det er givet i licens via Power BI Premium |
+| Installation | I det lokale miljø eller i hostet cloud | Cloud | Power BI-rapportserveren kan udrulles i Azure VM'er (hostet cloud), hvis den er givet i licens via Power BI Premium eller SQL Server Enterprise med Software Assurance|
 | Kildedata | Cloud og/eller i det lokale miljø | Cloud og/eller i det lokale miljø |  |
 | Licens | Power BI Premium eller SQL Server EE med SA (Software Assurance) | Power BI Pro-og/eller Power BI Premium | |  
 | Livscyklus | Politik for moderne livscyklus | Fuldt administreret tjeneste |  |
-| Versionscyklus | Tre gange om året (januar, maj, september) | En gang om måneden | Nyeste funktioner og løsninger optræder først i Power BI-tjenesten. De fleste kernefunktioner findes i Power BI-rapportserveren i de næste par versioner. Nogle funktioner er kun beregnet til Power BI-tjenesten. |
+| Versionscyklus | Tre gange om året (januar, maj, september) | En gang om måneden | Nyeste funktioner og løsninger optræder først i Power BI-tjenesten. I hver udgivelse kommer der en række funktioner til tjenesten fra udgivelser af Power BI Desktop til Power BI-rapportserver. De fleste funktioner er kun beregnet til Power BI-tjenesten. |
 | Opret Power BI-rapporter i Power BI Desktop | Ja | Ja |  |
 | Opret Power BI-rapporter i browseren | Nej | Ja |  |
 | Host og opret forbindelse til delte datasæt i Power BI | Nej | Ja | [Introduktion til datasæt på tværs af arbejdsområder](../service-datasets-across-workspaces.md) |
@@ -56,6 +56,6 @@ Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigti
 | Sammensatte modeller | Nej | Ja |
 | Power BI Desktop | Version, der er optimeret til rapportserveren, kan downloades med rapportserveren | Version, der er optimeret til Power BI-tjenesten, er tilgængelig fra Windows Store | [Power BI Desktop til rapportserveren](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop til Power BI-tjenesten](https://aka.ms/pbidesktopstore) |
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Installer Power BI-rapportserver](install-report-server.md)

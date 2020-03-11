@@ -6,15 +6,15 @@ ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 03/02/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d4be5aa246b6e58b9a6234f30754e16a39341abe
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 72694ea771950b4a12427e0a0696e221fbe993bf
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76160575"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237839"
 ---
 # <a name="manage-your-workspace-in-power-bi-and-office-365"></a>Administrer dit arbejdsområde i Power BI og Office 365
 
@@ -27,7 +27,7 @@ I **Power BI** kan du:
 
 * Tilføje eller fjerne medlemmer af arbejdsområdet, herunder udnævnelse af et medlem af arbejdsområdet til administrator.
 * Redigere navnet på arbejdsområdet.
-* Slette arbejdsområdet.
+* Slet arbejdsområdet, hvilket også sletter Office 365-gruppen.
 
 I **Office 365** kan du:
 

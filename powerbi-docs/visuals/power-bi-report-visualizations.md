@@ -27,7 +27,7 @@ Der er mange forskellige typer visualiseringer, der er tilgængelige direkte fra
 
 ![rude med ikoner for hver visualiseringstype](media/power-bi-report-visualizations/power-bi-icons.png)
 
-Du kan desuden se mangle flere valgmuligheder ved at besøge [webstedet for Microsoft AppSource-community'et](https://appsource.microsoft.com), hvor du kan finde og [downloade](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [brugerdefinerede visualiseringer](../developer/visuals/custom-visual-develop-tutorial.md) leveret af Microsoft og community'et.
+Du har endnu flere valg, hvis du besøger [webstedet for Microsoft AppSource-community'et](https://appsource.microsoft.com), hvor du kan finde og [downloade](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [brugerdefinerede visualiseringer](../developer/visuals/custom-visual-develop-tutorial.md), som leveres af Microsoft og community'et.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 

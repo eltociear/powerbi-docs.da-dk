@@ -35,7 +35,7 @@ Selvom du ikke har adgang til en Reporting Services-webportal, kan du stadig udf
 
 1. Åbn Power BI-appen på din Windows 10-enhed.
 2. Tryk på knappen til global navigation ![Knappen til global navigation](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) i øverste venstre hjørne.
-3. Tryk på ikonet **Indstillinger** ![ikonet Indstillinger](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png), højreklik eller tryk på **Opret forbindelse til serveren**, og tryk derefter på **Få vist eksempler**.
+3. Tryk på ikonet **Indstillinger**![ikonet Indstillinger](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png), højreklik eller tryk på **Opret forbindelse til serveren**, og tryk derefter på **Få vist eksempler**.
    
    ![Få vist SSRS-eksempler](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-win10-connect-ssrs-samples.png)
 4. Åbn mappen Retail Reports eller Sales Reports for at se deres KPI'er og mobilrapporter.

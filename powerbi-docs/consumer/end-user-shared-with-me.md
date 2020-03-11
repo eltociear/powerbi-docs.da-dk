@@ -42,10 +42,10 @@ Du har mulighed for at interagere med de delte dashboards og rapporter, afhængi
 
 ### <a name="actions-available-from-the-shared-with-me-container"></a>Handlinger, der er tilgængelige via objektbeholderen **Delt med mig**
 De handlinger, der er tilgængelige for dig, afhænger af de indstillinger, *designeren* af indholdet har tildelt. Nogle af dine muligheder kan omfatte:
-* Vælg stjerneikonet for at [føje et dashboard eller en rapport til Favoritter](end-user-favorite.md) ![stjerneikon](./media/end-user-shared-with-me/power-bi-star-icon.png).
+* Vælg stjerneikonet for at [markere et dashboard eller en rapport som favoritter](end-user-favorite.md) ![stjerneikon](./media/end-user-shared-with-me/power-bi-star-icon.png).
 * Fjern et dashboard eller en rapport  ![ikon for papirkurv](./media/end-user-shared-with-me/power-bi-delete-icon.png).
 * Nogle dashboards og rapporter kan deles igen  ![delingsikon](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
-* [Åbn rapporten i Excel](end-user-export.md) ![ikonet for eksport til Excel](./media/end-user-shared-with-me/power-bi-excel.png) 
+* [Åbn rapporten i Excel](end-user-export.md) ![ikonet eksportér til Excel](./media/end-user-shared-with-me/power-bi-excel.png) 
 * [Vis indsigt](end-user-insights.md), som Power BI finder i dataene ![ikonet for indsigt](./media/end-user-shared-with-me/power-bi-insights.png).
   
   > [!NOTE]

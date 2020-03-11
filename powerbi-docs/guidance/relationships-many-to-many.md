@@ -6,23 +6,20 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/25/2019
+ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 6ce82516413fe43cfbc1336e2f6f51003277fb4a
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 937f8ca693113cf85d265420da44f7c9f8b68f5f
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76161288"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260438"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Vejledning til mange-til-mange-relation
 
 Denne artikel henvender sig til designere af datamodeller, der arbejder med Power BI Desktop. Den indeholder en beskrivelse af tre forskellige scenarier med udformning af mange til mange-relationer. Den indeholder også en vejledning i, hvordan du skaber vellykkede design med dem i dine modeller.
 
-> [!NOTE]
-> Artiklen omfatter ikke en introduktion til modelrelationer. Hvis du ikke er helt bekendt med relationer, deres egenskaber, eller hvordan du konfigurerer dem, anbefaler vi, at du først læser artiklen [Modelrelationer i Power BI Desktop](../desktop-relationships-understand.md).
->
-> Det er også vigtigt, at du forstår design med stjerneskema. Du kan finde flere oplysninger under [Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI](star-schema.md).
+[!INCLUDE [relationships-prerequisite-reading](includes/relationships-prerequisite-reading.md)]
 
 Faktisk er der tre mange til mange-scenarier. De kan forekomme, når du skal:
 
@@ -164,7 +161,7 @@ Der præsenteres et nøjagtigt resultat i visualiseringen. Modellens anvendeligh
 
 ### <a name="relate-many-to-many-facts-guidance"></a>Vejledning til relatering af fakta med mange til mange-relation
 
-Generelt anbefaler vi ikke, at du relaterer to tabeller af faktatypen direkte ved hjælp af mange til mange-kardinalitet. Den primære årsag er, at modellen ikke giver fleksibilitet i den måde, som rapportvisualiseringerne filtrerer eller grupperer på. I eksemplet er det kun muligt for visualiseringer at filtrere eller gruppere efter tabellen **Ordre** og kolonnen **Ordre-id**. En yderligere årsag vedrører kvaliteten af dine data. Hvis der er integritetsproblemer med dine data, udelades nogle rækker muligvis under forespørgsler på grund af den _svage relation_. Du kan finde flere oplysninger under [Evaluering af relationer](../desktop-relationships-understand.md#relationship-evaluation).
+Generelt anbefaler vi ikke, at du relaterer to tabeller af faktatypen direkte ved hjælp af mange til mange-kardinalitet. Den primære årsag er, at modellen ikke giver fleksibilitet i den måde, som rapportvisualiseringerne filtrerer eller grupperer på. I eksemplet er det kun muligt for visualiseringer at filtrere eller gruppere efter tabellen **Ordre** og kolonnen **Ordre-id**. En yderligere årsag vedrører kvaliteten af dine data. Hvis der er integritetsproblemer med dine data, udelades nogle rækker muligvis under forespørgsler på grund af den _svage relation_. Du kan finde flere oplysninger i [Modelrelationer i Power BI Desktop (Evaluering af relationer)](../desktop-relationships-understand.md#relationship-evaluation).
 
 I stedet for at relatere tabeller af faktatypen direkte, anbefaler vi, at du indfører principper for design af et [stjerneskema](star-schema.md). Det gør du ved at tilføje tabeller af dimensionstypen. Tabeller af dimensionstypen relateres derefter til tabeller af faktatypen ved hjælp af én til mange-relationer. Denne designmetode er robust, da den giver fleksible rapporteringsmuligheder. Den giver dig mulighed for at filtrere eller gruppere ved hjælp af en hvilken som helst af kolonnerne i dimensionstypen og opsummere en hvilken som helst tabel af faktatypen.
 
@@ -187,7 +184,7 @@ Hvis du tager dig tid til at anvende principper for design af et stjerneskema, f
 - Dine rapportvisualiseringer kan _filtrere eller gruppere_ efter en hvilken som helst synlig kolonne fra tabeller af dimensionstypen
 - Dine rapportvisualiseringer kan _opsummere_ en hvilken som helst synlig kolonne fra tabeller af faktatypen
 - Filtre, der er anvendt på tabellerne **Ordrelinje**, **Ordredato** eller **Produkt**, overføres til begge tabeller af faktatypen
-- Alle relationer er én til mange-relationer, og hver relation er en _stærk relation_. Problemer med dataintegritet maskeres ikke. Du kan finde flere oplysninger under [Evaluering af relationer](../desktop-relationships-understand.md#relationship-evaluation).
+- Alle relationer er én til mange-relationer, og hver relation er en _stærk relation_. Problemer med dataintegritet maskeres ikke. Du kan finde flere oplysninger i [Modelrelationer i Power BI Desktop (Evaluering af relationer)](../desktop-relationships-understand.md#relationship-evaluation).
 
 ## <a name="relate-higher-grain-facts"></a>Relater fakta på højere detaljeringsniveau
 
@@ -300,4 +297,6 @@ Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende 
 
 - [Modelrelationer i Power BI Desktop](../desktop-relationships-understand.md)
 - [Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI](star-schema.md)
+- [Vejledning til fejlfinding af relationer](relationships-troubleshoot.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)

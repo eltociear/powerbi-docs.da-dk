@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/25/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 34754f413cd6bb8e520ff8d7f2c9d4a28da73ef5
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 99fd17e8491613affbfe78e7cd9a2f268f588975
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609937"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237977"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -134,6 +134,7 @@ Brugerdefinerede visuelle elementer, der understøttes i **Publicer på internet
 
 - Rapporter med sikkerhed på rækkeniveau.
 - Rapporter, der bruger en vilkårlig Live Connection-datakilde, herunder Analysis Services Tabular, der hostes i det lokale miljø, Analysis Service Multidimensional og Azure Analysis Services.
+- Rapporter, der bruger et [delt datasæt](service-datasets-across-workspaces.md), som er gemt i et andet arbejdsområde fra rapporten.
 - Rapporter, der er delt med dig direkte eller via en organisationsindholdspakke.
 - Rapporter i en gruppe, hvor du ikke er redigeringsmedlem.
 - Visuelle "R"-elementer understøttes i øjeblikket ikke i **Publicer på internettet**-rapporter.

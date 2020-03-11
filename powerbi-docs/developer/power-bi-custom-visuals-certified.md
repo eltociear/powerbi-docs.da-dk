@@ -8,13 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 02/17/2020
-ms.openlocfilehash: 52a99380f8e1afc39ddfc59a401418e61fe6ad58
-ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
+ms.date: 03/01/2020
+ms.openlocfilehash: 8aea9041665de69b2c5be954dc8f13a6402a06e0
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77782422"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260755"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Få en Power BI-visualisering certificeret
 
@@ -56,10 +56,14 @@ Hvis du vil vide, hvordan et lager med Power BI-visualiseringer ser ud, skal du 
 Brug den nyeste version af API'en til at skrive Power BI-visualiseringen.
 
 Lageret skal indeholde følgende filer:
-* **.gitignore** – føj `node_modules` til denne fil. Koden kan ikke indeholde *node_modules*-mappen.
+* **.gitignore** – Føj `node_modules`, `.tmp`, `dist` til denne fil. Koden må ikke indeholde mapperne *node_modules*, *.tmp* eller *dist*.
 * **capabilities.json** – hvis du sender en nyere version af din Power BI-visualisering med ændringer af egenskaberne i denne fil, skal du bekræfte, at de ikke ødelægger rapporter for eksisterende brugere.
-* **pbiviz.json**
-* **package.json**
+* **pbiviz.json** 
+* **package.json**. Følgende pakke skal være installeret for visualiseringen:
+   * ["tslint"](https://www.npmjs.com/package/tslint): "5.18.0" eller nyere
+   * ["typescript"](https://www.npmjs.com/package/typescript): "3.0.0" eller nyere
+   * ["tslint-microsoftcontrib"](https://www.npmjs.com/package/tslint-microsoft-contrib): "6.2.0" eller nyere
+   * Filen skal indeholde en kommando for at køre Linter: "lint": "tslint -c tslint.json -p tsconfig.json"
 * **package-lock.json**
 * **tsconfig.json**
 
@@ -70,7 +74,7 @@ Sørg for, at følgende kommandoer ikke returnerer nogen fejl.
 * `npm install`
 * `pbiviz package`
 * `npm audit` – må ikke returnere nogen advarsler med et højt eller moderat niveau.
-* [TSlint fra Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) uden nogen tilsidesatte konfigurationer. Denne kommando må ikke returnere nogen lint-fejl.
+* [TSlint fra Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) med [den påkrævede konfiguration](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/tslint.json). Denne kommando må ikke returnere nogen lint-fejl.
 
 ### <a name="compiling-requirements"></a>Krav til kompilering
 

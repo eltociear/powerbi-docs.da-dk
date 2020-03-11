@@ -2,26 +2,41 @@
   href: /
   topicHref: /
   items:
-    - name: Power BI
-      tocHref: /power-bi/
-      topicHref: /power-bi/
+    - name: Power Platform
+      href: /power-platform/
+      topicHref: /power-platform/
       items:
-        - name: Forbrugere
-          tocHref: /power-bi/consumer/
-          topicHref: /power-bi/consumer/power-bi-consumer-landing
-        - name: Udvikler
-          tocHref: /power-bi/developer/
-          topicHref: /power-bi/developer/index
+        - name: Power BI
+          tocHref: /power-bi/
+          topicHref: /power-bi/
           items:
-            - name: Brug R-drevne Power BI-visualiseringer i Power BI
+            - name: Forbrugere
+              tocHref: /power-bi/consumer/
+              topicHref: /power-bi/consumer/index
+            - name: Udvikler
               tocHref: /power-bi/developer/
               topicHref: /power-bi/developer/index
-        - name: Kursus med vejledning
-          tocHref: /power-bi/guided-learning/
-          topicHref: /power-bi/guided-learning/
-        - name: rapportserver
-          tocHref: /power-bi/report-server/
-          topicHref: /power-bi/report-server/get-started
-        - name: Vejledning
-          tocHref: /power-bi/guidance/
-          topicHref: /power-bi/guidance/index
+            - name: Kursus med vejledning
+              tocHref: /power-bi/guided-learning/
+              topicHref: /power-bi/guided-learning/
+            - name: rapportserver
+              tocHref: /power-bi/report-server/
+              topicHref: /power-bi/report-server/index
+            - name: Vejledning
+              tocHref: /power-bi/guidance/
+              topicHref: /power-bi/guidance/index
+            - name: 'Samarbejd, del, integrer'
+              tocHref: /power-bi/collaborate-share/
+              topicHref: /power-bi/collaborate-share/index
+            - name: Opret rapporter og dashboards
+              tocHref: /power-bi/create-reports/
+              topicHref: /power-bi/create-reports/index
+            - name: Opret forbindelse til data
+              tocHref: /power-bi/connect-data/
+              topicHref: /power-bi/connect-data/index
+            - name: Kom i gang
+              tocHref: /power-bi/fundamentals/
+              topicHref: /power-bi/fundamentals/index
+            - name: 'Transformér, formgiv og modellér data'
+              tocHref: /power-bi/transform-model/
+              topicHref: /power-bi/transform-model/index
