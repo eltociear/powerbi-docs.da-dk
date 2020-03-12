@@ -31,6 +31,8 @@
               href: ../service-create-distribute-apps.md
             - name: Administrer datalager i arbejdsområder
               href: ../service-admin-manage-your-data-storage-in-power-bi.md
+            - name: Dataafstamning
+              href: service-data-lineage.md
             - name: Opret forbindelse til filer på din gruppes OneDrive
               href: ../service-connect-to-files-in-app-workspace-onedrive-for-business.md
             - name: Samarbejd i et klassisk arbejdsområde

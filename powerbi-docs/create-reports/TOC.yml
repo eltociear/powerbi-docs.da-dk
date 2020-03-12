@@ -313,8 +313,6 @@
               href: ../desktop-accessibility-consuming-tools.md
             - name: Tastaturgenveje i Power BI Desktop
               href: ../desktop-accessibility-keyboard-shortcuts.md
-        - name: Dataafstamning
-          href: ../service-data-lineage.md
         - name: Sideinddelte rapporter
           items:
             - name: Angiv data direkte i en sideinddelt rapport
