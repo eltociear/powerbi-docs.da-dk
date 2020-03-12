@@ -1,19 +1,19 @@
 ---
 title: Fastgør dashboard til startskærmen i Windows 10 – Power BI-mobilapp
 description: Få mere at vide om, hvordan du kan fastgøre et Power BI-dashboard til startskærmen i Windows 10 fra Power BI-mobilappen, så du kan få et hurtigt overblik over vigtige målinger.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
-ms.author: mshenhav
-ms.openlocfilehash: 556ca293458c6874097a4733aaed453130778848
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: 6abeb9244b4ced7cf0b56d4f01686f570c474989
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869851"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114939"
 ---
 # <a name="pin-a-dashboard-to-your-windows-10-start-screen-from-the-power-bi-mobile-app"></a>Fastgør dashboard til din startskærm i Windows 10 fra Power BI-mobilappen
 Du kan fastgøre Power BI-dashboards til startskærmen i Windows fra Power BI-mobilappen til Windows 10. De bliver *dynamiske felter*. Når du trykker på feltet på startskærmen, åbner dashboardet i Power BI-mobilappen til Windows 10.

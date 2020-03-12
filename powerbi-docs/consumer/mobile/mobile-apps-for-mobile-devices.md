@@ -1,20 +1,20 @@
 ---
 title: Hvad er Power BI-mobilapps?
 description: Power BI-mobilappen holder dig i forbindelse med dine data i det lokale miljø eller i clouden. Se dine Power BI-dashboards og -rapporter på din mobilenhed.
-author: mshenhav
+author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
-ms.date: 04/26/2018
-ms.author: mshenhav
+ms.date: 03/11/2020
+ms.author: painbar
 ms.custom: ''
 ms.reviewer: ''
-ms.openlocfilehash: f5e0f44ff8f808c36ad2a89c64d70e847a59df02
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 7318ec8f7305920d107424f381ca59b8836fe8da
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128139"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114800"
 ---
 # <a name="what-are-the-power-bi-mobile-apps"></a>Hvad er Power BI-mobilapps?
 Power BI tilbyder en række mobilapps til iOS-, Android- og Windows 10-mobilenheder. I mobilappsene kan du oprette forbindelse til og interagere med dataene i clouden og i det lokale miljø. 

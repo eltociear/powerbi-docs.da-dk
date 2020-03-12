@@ -6,17 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 6fd970064bbe686a433fba0c0675948576edd8c1
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: d9e291ff4f61f69ec84e39767906a79f65c2f30f
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76039133"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114170"
 ---
 # <a name="visual-types-in-power-bi"></a>Visualiseringstyper i Power BI
+
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
+
 Du finder visualiseringer i rapporter, på dashboards og under Spørgsmål og svar. Nogle af disse visualiseringstyper medfølger Power BI som en del af pakken, og nogle er *brugerdefinerede visualiseringer*. Brugerdefinerede visualiseringer oprettes uden for Power BI og på en måde, der gør det muligt for *rapportdesignere* at føje dem til rapporter og dashboards i Power BI. 
 
 Denne artikel indeholder en oversigt over de visualiseringer, der medfølger til Power BI-tjenesten som en del pakken.  Disse visualiseringstyper er dem, du oftest vil støde på. Du kan finde detaljerede oplysninger om en af disse visualiseringer i dokumentationen til [Power BI Report *Designer* om visuelle typer](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
