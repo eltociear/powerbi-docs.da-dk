@@ -46,6 +46,8 @@
           href: ../power-bi-data-sources.md
         - name: Forudsætninger for Power BI-datakilder
           href: ../desktop-data-source-prerequisites.md
+        - name: Brug af forbedrede metadata for datasæt i Power BI Desktop (eksempelvisning)
+          href: ../desktop-enhanced-dataset-metadata.md
         - name: Arbejd med flerdimensionelle modeller i Power BI
           href: ../desktop-default-member-multidimensional-models.md
         - name: Om brug af DirectQuery i Power BI
