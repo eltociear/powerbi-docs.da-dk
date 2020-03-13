@@ -129,6 +129,8 @@
               href: ../desktop-insights-find-where-different.md
             - name: Opret knapper
               href: ../desktop-buttons.md
+            - name: Opret detaljeadgangsknapper
+              href: ../desktop-drill-through-buttons.md
             - name: Opret bogmærker for at gemme og dele indsigt
               href: ../desktop-bookmarks.md
             - name: Arbejd med rapporttemaer

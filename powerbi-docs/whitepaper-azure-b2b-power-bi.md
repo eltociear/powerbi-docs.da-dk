@@ -10,11 +10,11 @@ ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
 ms.openlocfilehash: 538c533a1b951fd2dff1b481adb94e2b1d0cf87b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870885"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79213597"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere vha. Azure Active Directory B2B
 
@@ -172,7 +172,7 @@ Den anden metode udnytter [Azure SQL Database](https://azure.microsoft.com/servi
 
 Der findes også mere avancerede metoder, men de ovenstående metoder er langt de mest almindelige.
 
-### <a name="case-3-shared-environment-across-partners"></a>3\. eksempel: delt miljø på tværs af partnere
+### <a name="case-3-shared-environment-across-partners"></a>3. eksempel: delt miljø på tværs af partnere
 
 Contoso indgår muligvis et partnerskab med en konkurrent for at udvikle en bil i fællesskab på et delt samlebånd, men distribuerer køretøjet under forskellige mærker eller i forskellige områder. Dette kræver omfattende samarbejde og medejerskab af data, intelligence og analyser på tværs af organisationerne. Denne struktur er også almindelig i konsulentbranchen, hvor et team af konsulenter kan foretage projektbaserede analyser for en klient.
 
@@ -218,7 +218,7 @@ Power BI-integration med Azure AD B2B giver Contoso en problemfri og nem måde a
 
 - Contosos BI-team opretter et arbejdsområde i Power BI
 
-    ![plads](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_12.png)
+    ![arbejdsområde](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_12.png)
     
 
 - Andre forfattere føjes til arbejdsområdet
@@ -306,7 +306,7 @@ Power BI-integration med Azure AD B2B giver Contoso en problemfri og nem måde a
 
     Gæstebrugerne kan derefter få adgang til Contosos app ved at klikke på linket i mailen eller forsyne linket med et bogmærke. Contoso kan også gøre det nemmere for gæstebrugere ved at føje dette link til en eksisterende ekstranetportal, der allerede benyttes af gæstebrugerne.
 
-4. Næste trin
+4. De næste trin
 
     Contoso var ved hjælp af en Power BI-app og Azure AD B2B i stand til hurtigt at oprette en BI-portal til sine leverandører på en måde, der ikke krævede nogen kode. Dette gør det markant lettere at distribuere standardiserede analyser til alle de leverandører, der har brug for det.
 
@@ -331,12 +331,12 @@ Power BI's integration med Azure AD B2B fungerer sammen med alle mailadresser i 
 
 Det er vigtigt at registrere, at Azure AD-kontoen vil blive brugt eller oprettet i den eksterne parts Azure AD. Dette gør det muligt for Lucy at bruge deres eget Brugernavn og adgangskode, og deres legitimationsoplysninger stopper automatisk med at arbejde med andre lejere, når Lucy forlader virksomheden, når deres organisation også bruger Azure AD.
 
-## <a name="licensing"></a>Licensering
+## <a name="licensing"></a>Licenser
 
 Contoso kan vælge en af de tre metoder for at give gæstebrugere fra virksomhedens leverandører og partnerorganisationer licens til at få adgang til Power BI-indhold.
 
 > [!NOTE]
-> _Azure ad B2B's Free-niveauet er nok til at bruge Power bi med Azure ad B2B. Nogle avancerede Azure AD B2B-funktioner som dynamiske grupper kræver yderligere licenser. Du kan finde flere oplysninger i dokumentationen til Azure ad B2B:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_ ](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
+> _Azure ad B2B's Free-niveauet er nok til at bruge Power bi med Azure ad B2B. Nogle avancerede Azure AD B2B-funktioner som dynamiske grupper kræver yderligere licenser. Du kan finde flere oplysninger i dokumentationen til Azure ad B2B:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
 
 ### <a name="approach-1-contoso-uses-power-bi-premium"></a>Tilgang 1: Contoso bruger Power BI Premium
 
