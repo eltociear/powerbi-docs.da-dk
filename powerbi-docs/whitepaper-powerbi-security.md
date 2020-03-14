@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 656f7e532702cef8c38af96e8c9df49ffc36734a
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: 50c8416573b995c34d62129d11926e70d9d4242d
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75304347"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381393"
 ---
 # <a name="power-bi-security-whitepaper"></a>Whitepaper om sikkerhed i Power BI
 
@@ -45,7 +45,7 @@ Hver installation af Power BI består af to klynger – en Web Front End (**WFE*
 
 ![WFE og Back End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-Power BI bruger Azure Active Directory (**AAD**) til godkendelse og administration af konti. Power BI bruger også **Azure Traffic Manager** (ATM) til at dirigere brugertrafik til det nærmeste datacenter, hvilket bestemmes af DNS-posten for den klient, der forsøger at oprette forbindelse, til godkendelsesprocessen og til at downloade statisk indhold og statiske filer. Power BI bruger den WFE, der geografisk er tættest på, til effektivt at distribuere det nødvendige statiske indhold og filerne til brugere, med undtagelse af brugerdefinerede visuelle elementer, der leveres ved hjælp af **Azure Content Delivery Network (CDN)**.
+Power BI bruger Azure Active Directory (**AAD**) til godkendelse og administration af konti. Power BI bruger også **Azure Traffic Manager** (ATM) til at dirigere brugertrafik til det nærmeste datacenter, hvilket bestemmes af DNS-posten for den klient, der forsøger at oprette forbindelse, til godkendelsesprocessen og til at downloade statisk indhold og statiske filer. Power BI bruger geografisk nærmest WFE til at distribuere det nødvendige statiske indhold og filer effektivt til brugere, med undtagelse af Power BI visuelle elementer, der leveres ved hjælp af **Azure Content Delivery Network (CDN)** .
 
 ### <a name="the-wfe-cluster"></a>WFE-klyngen
 
@@ -147,7 +147,7 @@ Sekvensen til godkendelse af brugeren til Power BI-tjenesten sker, som beskrevet
 
 2. Browseren sender en cookie, der blev hentet ved vellykket logon, til Microsoft Online Services, som kontrolleres af **ASP.NET-tjenesten** i **WFE-klyngen**.
 
-3. WFE-klyngen kontakter tjenesten **Azure Active Directory** (**AAD**) for at godkende brugerens abonnement på Power BI-tjenesten og hente et AAD-sikkerhedstoken. Når AAD returnerer godkendelse af brugeren og returnerer et AAD-sikkerhedstoken, konsulterer WFE-klyngen **Global Service for Power BI******, som bevarer en liste over lejere og deres placeringer for Back End-klyngerne i Power BI og bestemmer, hvilke klynger i Power BI-tjenesten der indeholder brugerens lejer. WFE-klyngen dirigerer derefter brugeren til den Power BI-klynge, hvor lejeren er placeret, og returnerer en samling af elementer til brugerens browser:
+3. WFE-klyngen kontakter tjenesten **Azure Active Directory** (**AAD**) for at godkende brugerens abonnement på Power BI-tjenesten og hente et AAD-sikkerhedstoken. Når AAD returnerer godkendelse af brugeren og returnerer et AAD-sikkerhedstoken, konsulterer WFE-klyngen **Global Service for Power BI****** , som bevarer en liste over lejere og deres placeringer for Back End-klyngerne i Power BI og bestemmer, hvilke klynger i Power BI-tjenesten der indeholder brugerens lejer. WFE-klyngen dirigerer derefter brugeren til den Power BI-klynge, hvor lejeren er placeret, og returnerer en samling af elementer til brugerens browser:
 
       - **AAD-sikkerhedstoken**
       - **Oplysninger om session**
@@ -253,7 +253,7 @@ Power BI sikrer overvågning af dataintegritet på følgende måder:
 
 2. Statiske data
 
-   Statiske data omfatter artefakter såsom baggrundsbilleder og brugerdefinerede visualiseringer.
+   Statiske data omfatter artefakter, f. eks. baggrundsbilleder og Power BI visuelle elementer.
 
     &ensp; &ensp; a. Der gemmes intet i forbindelse med rapporter, der er oprettet i Excel til Office 365.
 
@@ -274,7 +274,7 @@ Power BI sikrer overvågning af dataintegritet på følgende måder:
 
 1. Cachelagring – De data, der skal bruges af visualiseringerne på dashboardet, cachelagres normalt og gemmes krypteret i Azure SQL Database. Andre felter såsom fastgjorte visualiseringer fra Excel eller SQL Server Reporting Services (SSRS) gemmes i Azure Blob som billeder og krypteres også.
 
-2. Statiske data – der indeholder artefakter såsom gemte baggrundsbilleder og brugerdefinerede visualiseringer krypteres i Azure Blob Storage.
+2. Statiske data – der omfatter artefakter, f. eks. baggrundsbilleder og Power BI visuelle elementer, der er gemt, krypteret, i Azure blob Storage.
 
 Uanset hvilken krypteringsmetode der bruges, administrerer Microsoft nøglekrypteringen på kundens vegne enten på et hemmeligt lager eller i Azure Key Vault.
 
@@ -318,7 +318,7 @@ Med hver enkelt datakilde opretter en bruger en forbindelse baseret på deres lo
 
 Når en bruger deler forespørgsler, dashboards, rapporter eller en visualisering, afhænger adgang til disse data og visualiseringer af, om de underliggende datakilder understøtter sikkerhed på rolleniveau.
 
-Hvis en underliggende datakilde understøtter **sikkerhed på rolleniveau i Power BI******, anvender Power BI-tjenesten denne sikkerhed på rolleniveau. En bruger, der ikke har tilstrækkelige legitimationsoplysninger til at få adgang til de underliggende data (som kan være en forespørgsel, der bruges i et dashboard, i en rapport eller i andre dataartefakter), kan ikke se data, som brugeren ikke har tilstrækkelige rettigheder til. Hvis en brugers adgang til de underliggende data er forskellig fra den bruger, som oprettede dashboardet eller rapporten, vises der kun data i visualiseringer og andre artefakter på baggrund af det adgangsniveau, som brugeren har til dataene.
+Hvis en underliggende datakilde understøtter **sikkerhed på rolleniveau i Power BI****** , anvender Power BI-tjenesten denne sikkerhed på rolleniveau. En bruger, der ikke har tilstrækkelige legitimationsoplysninger til at få adgang til de underliggende data (som kan være en forespørgsel, der bruges i et dashboard, i en rapport eller i andre dataartefakter), kan ikke se data, som brugeren ikke har tilstrækkelige rettigheder til. Hvis en brugers adgang til de underliggende data er forskellig fra den bruger, som oprettede dashboardet eller rapporten, vises der kun data i visualiseringer og andre artefakter på baggrund af det adgangsniveau, som brugeren har til dataene.
 
 Hvis en datakilde **ikke** understøtter sikkerhed på rolleniveau, anvendes legitimationsoplysningerne til Power BI-logon for den underliggende datakilde. Hvis der leveres andre legitimationsoplysninger under forbindelsen, anvendes disse angivne legitimationsoplysninger. Når en bruger indlæser data i Power BI-tjenesten fra datakilder, der ikke understøtter sikkerhed på rolleniveau, gemmes dataene i Power BI, som beskrevet i afsnittet **Datalager og -flytning** i dette dokument. I forbindelse med datakilder, der ikke understøtter sikkerhed på rolleniveau, bruges de oprindelige legitimationsoplysninger til at få adgang til eller vise dataene, når data deles med andre brugere (f.eks. via et dashboard eller en rapport), eller når dataene opdateres.
 
@@ -334,7 +334,7 @@ Et hurtigt eksempel på forskellen mellem datakilder, der understøtter sikkerhe
 
 Hvis Ralph vil have adgang til det delte dashboard eller den delte rapport, vil den samme sekvens ske på baggrund af hans rolleniveau.
 
-## <a name="power-bi-mobile"></a>Power BI Mobile
+## <a name="power-bi-mobile"></a>Power BI – Mobil
 
 Power BI-Mobil er en samling af apps, der er udviklet til de tre primære mobil platforme: Android-, iOS-og Windows Mobile. Sikkerhedsovervejelser i forbindelse med apps til Power BI – Mobil falder i to kategorier:
 
@@ -372,7 +372,7 @@ Følgende spørgsmål er almindelige spørgsmål og svar om sikkerhed i Power BI
 
 **Hvordan opretter brugere forbindelse og får adgang til datakilder under brug af Power BI?**
 
-* **Power bi legitimationsoplysninger og domænelegitimationsoplysninger:** Brugere logger på Power BI hjælp af en mailadresse. Når en bruger forsøger at oprette forbindelse til en data ressource, sender Power BI den Power BI login-mailadresse som legitimationsoplysninger. I forbindelse med ressourcer, der er forbundet med et domæne (enten i det lokale miljø eller cloudbaseret), matches logonmailen med _brugerens hovednavn_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx) – User Principal Name) af katalogtjenesten for at afgøre, om der er tilstrækkelige legitimationsoplysningerne til at tillade adgang. For organisationer, der bruger arbejdsbaserede mailadresser til at logge på Power BI (den samme mailadresse, de bruger til at logge på arbejdsressourcer, f.eks. _david@contoso.com_), kan tilknytningen ske uden problemer. For organisationer, der ikke bruger arbejdsbaserede mailadresser (f.eks. _david@contoso.onmicrosoft.com_), skal der være tilknyttet et katalog, før der tillades adgang til ressourcer i det lokale miljø med legitimationsoplysningerne til Power BI-logon.
+* **Power bi legitimationsoplysninger og domænelegitimationsoplysninger:** Brugere logger på Power BI hjælp af en mailadresse. Når en bruger forsøger at oprette forbindelse til en data ressource, sender Power BI den Power BI login-mailadresse som legitimationsoplysninger. I forbindelse med ressourcer, der er forbundet med et domæne (enten i det lokale miljø eller cloudbaseret), matches logonmailen med _brugerens hovednavn_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx) – User Principal Name) af katalogtjenesten for at afgøre, om der er tilstrækkelige legitimationsoplysningerne til at tillade adgang. For organisationer, der bruger arbejdsbaserede mailadresser til at logge på Power BI (den samme mailadresse, de bruger til at logge på arbejdsressourcer, f.eks. _david@contoso.com_ ), kan tilknytningen ske uden problemer. For organisationer, der ikke bruger arbejdsbaserede mailadresser (f.eks. _david@contoso.onmicrosoft.com_ ), skal der være tilknyttet et katalog, før der tillades adgang til ressourcer i det lokale miljø med legitimationsoplysningerne til Power BI-logon.
 
 * **SQL Server Analysis Services og Power bi:** For organisationer, der bruger SQL Server Analysis Services i det lokale miljø, har Power BI den Power BI data gateway i det lokale miljø (som er en **gateway**, som der henvises til i tidligere afsnit).  Power BI-datagatewayen i det lokale miljø kan gennemtvinge sikkerhed på rolleniveau for datakilder. Du kan finde flere oplysninger om sikkerhed på rolleniveau under **Godkendelse af brugeren til datakilder** tidligere i dette dokument. Du kan finde flere oplysninger om gateways i [data gateways i det lokale miljø](service-gateway-onprem.md).
 
@@ -438,7 +438,7 @@ Følgende spørgsmål er almindelige spørgsmål og svar om sikkerhed i Power BI
 
   På baggrund af de oplysninger, der angives under den indledende forbindelse til Power BI-tjenesten, kontakter en brugers browser det angivne Azure **CDN** (eller for nogle filer den angivne **WFE**) for at downloade samlingen af angivne fælles filer, som er nødvendige for at muliggøre browserens interaktion med Power BI-tjenesten. Browsersiden inkluderer derefter AAD-tokenet, oplysningerne om sessionen, placeringen af den tilknyttede **Back End**-klynge og samlingen af filer, der blev downloadet fra Azure **CDN** og **WFE**-klyngen, i hele varigheden af den pågældende browsersession for Power BI-tjenesten.
 
-**I forbindelse med brugerdefinerede visualiseringer udfører Microsoft så alle sikkerhedsvurderinger eller vurderinger af beskyttelse af personlige oplysninger for den pågældende kode for den brugerdefinerede visualisering, før elementerne publiceres i galleriet?**
+**I forbindelse med Power BI visuelle elementer udfører Microsoft enhver sikkerheds-eller beskyttelses vurdering af den brugerdefinerede visuelle kode, før de udgiver elementer til galleriet?**
 
 * Nej. Det er kundens ansvar at gennemse og afgøre, om der kan være tillid til koden for den brugerdefinerede visualisering. Alle koder for brugerdefinerede visualiseringer håndteres i et sandkassemiljø, så en evt. fejlbehæftet kode i en brugerdefineret visualisering ikke påvirker resten af Power BI-tjenesten.
 
@@ -480,7 +480,7 @@ Du kan finde flere oplysninger om Power BI i følgende ressourcer.
 - [Introduktion til Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
 - [REST API til Power BI – oversigt](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Reference til Power BI-API](https://msdn.microsoft.com/library/mt147898.aspx)
-- [On-premises data gateway (Datagateway i det lokale miljø)](service-gateway-onprem.md)
+- [Datagateway i lokalt miljø](service-gateway-onprem.md)
 - [Nationale Power BI-cloudmiljøer](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Brug Kerberos til SSO fra Power BI til datakilder i det lokale miljø](service-gateway-sso-overview.md)
