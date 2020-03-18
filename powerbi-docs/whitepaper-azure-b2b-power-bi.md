@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 538c533a1b951fd2dff1b481adb94e2b1d0cf87b
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 955a14b37d59f554fb12b302c16472387c896e54
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79213597"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488585"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere vha. Azure Active Directory B2B
 
@@ -172,7 +172,7 @@ Den anden metode udnytter [Azure SQL Database](https://azure.microsoft.com/servi
 
 Der findes også mere avancerede metoder, men de ovenstående metoder er langt de mest almindelige.
 
-### <a name="case-3-shared-environment-across-partners"></a>3. eksempel: delt miljø på tværs af partnere
+### <a name="case-3-shared-environment-across-partners"></a>3\. eksempel: delt miljø på tværs af partnere
 
 Contoso indgår muligvis et partnerskab med en konkurrent for at udvikle en bil i fællesskab på et delt samlebånd, men distribuerer køretøjet under forskellige mærker eller i forskellige områder. Dette kræver omfattende samarbejde og medejerskab af data, intelligence og analyser på tværs af organisationerne. Denne struktur er også almindelig i konsulentbranchen, hvor et team af konsulenter kan foretage projektbaserede analyser for en klient.
 
@@ -336,7 +336,7 @@ Det er vigtigt at registrere, at Azure AD-kontoen vil blive brugt eller oprettet
 Contoso kan vælge en af de tre metoder for at give gæstebrugere fra virksomhedens leverandører og partnerorganisationer licens til at få adgang til Power BI-indhold.
 
 > [!NOTE]
-> _Azure ad B2B's Free-niveauet er nok til at bruge Power bi med Azure ad B2B. Nogle avancerede Azure AD B2B-funktioner som dynamiske grupper kræver yderligere licenser. Du kan finde flere oplysninger i dokumentationen til Azure ad B2B:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
+> _Azure ad B2B's Free-niveauet er nok til at bruge Power bi med Azure ad B2B. Nogle avancerede Azure AD B2B-funktioner som dynamiske grupper kræver yderligere licenser. Du kan finde flere oplysninger i dokumentationen til Azure ad B2B:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_ ](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
 
 ### <a name="approach-1-contoso-uses-power-bi-premium"></a>Tilgang 1: Contoso bruger Power BI Premium
 
@@ -576,7 +576,7 @@ Med denne indstilling skal Contoso oprette duplikerede id'er for hver partnerbru
 
 ### <a name="alternative-option-2-create-a-custom-power-bi-embedded-application-using-custom-authentication"></a>Alternativ mulighed 2: Opret et brugerdefineret Power BI Embedded program ved hjælp af brugerdefineret godkendelse
 
-En anden mulighed for Contoso er at oprette sit eget brugerdefinerede integrerede Power BI-program med brugerdefineret godkendelse (["Appen ejer data"](https://docs.microsoft.com/power-bi/developer/embed-sample-for-customers)). Selvom mange organisationer ikke har tid eller ressourcer til at oprette et brugerdefineret program til at distribuere Power BI-indhold til deres eksterne partnere, er dette den bedste metode for nogle organisationer og bør overvejes.
+En anden mulighed for Contoso er at oprette sit eget brugerdefinerede integrerede Power BI-program med brugerdefineret godkendelse (["Appen ejer data"](https://docs.microsoft.com/power-bi/developer/embedded/embed-sample-for-customers)). Selvom mange organisationer ikke har tid eller ressourcer til at oprette et brugerdefineret program til at distribuere Power BI-indhold til deres eksterne partnere, er dette den bedste metode for nogle organisationer og bør overvejes.
 
 Organisationer har ofte eksisterende partnerportaler, der centraliserer adgang til alle organisationens ressourcer for partnere, som er isoleret fra interne organisatoriske ressourcer, hvilket giver partnerne en strømlinet oplevelse, da de understøtter mange partnere og deres individuelle brugere.
 
