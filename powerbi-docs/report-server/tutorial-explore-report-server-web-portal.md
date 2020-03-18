@@ -9,11 +9,11 @@ ms.topic: tutorial
 ms.date: 05/06/2019
 ms.author: maggies
 ms.openlocfilehash: 312b86f9e0c0dda0c9c943520c74286e0458acef
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73859243"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207016"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Selvstudium: Udforsk webportalen til Power BI-rapportserver i en VM
 I dette selvstudium skal du oprette en virtuel Azure-maskine med Power BI-rapportserver, der allerede er installeret, så du kan få vist, redigere og administrere eksempler på Power BI og sideinddelte rapporter samt KPI'er.

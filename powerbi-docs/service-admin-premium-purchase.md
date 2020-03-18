@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/13/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 1bf7cc85411fef27e626c330cc07207187302bfc
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: aed0d1e4dec6f6efe49dd39cd5b6fc60f8977e44
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427731"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488608"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Sådan køber du Power BI Premium
 
@@ -112,7 +112,7 @@ Når du annullerer dit Premium-abonnement, eller når din kapacitetslicens udlø
 
 A-SKU'er er tilgængelige via Azure Power BI Embedded-tjenesten. Du kan bruge A-SKU'er på følgende måder:
 
-- Aktivér integrering af Power BI i tredjepartsprogrammer. Se [Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md) for at få flere oplysninger.
+- Aktivér integrering af Power BI i tredjepartsprogrammer. Se [Power BI Embedded](developer/embedded/azure-pbie-what-is-power-bi-embedded.md) for at få flere oplysninger.
 
 - Test Premium-funktionaliteten, før du køber en P-SKU.
 

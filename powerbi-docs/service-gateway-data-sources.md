@@ -11,11 +11,11 @@ ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
 ms.openlocfilehash: 15b3236741eb19d9f08601f9503e0380f54a8d63
-ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558708"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207453"
 ---
 # <a name="manage-data-sources"></a>Administrer datakilder
 
@@ -43,7 +43,7 @@ De fleste handlinger til administration af datakilder kan også udføres vha. AP
 
     ![Indstillinger for datakilde](media/service-gateway-data-sources/data-source-settings.png)
 
-5. Du kan vælge **godkendelsesmetoden****Windows** eller **Basic** (SQL-godkendelse) for SQL Server. Hvis du vælger **Basic**, skal du angive legitimationsoplysningerne for datakilden.
+5. Du kan vælge **godkendelsesmetoden** **Windows** eller **Basic** (SQL-godkendelse) for SQL Server. Hvis du vælger **Basic**, skal du angive legitimationsoplysningerne for datakilden.
 
 6. Du kan konfigurere **Enkeltlogon (SSO)** for din datakilde under [Avancerede indstillinger](service-gateway-sso-overview.md). 
 

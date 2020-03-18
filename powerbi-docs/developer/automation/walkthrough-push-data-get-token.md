@@ -8,22 +8,22 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/29/2019
-ms.openlocfilehash: 4b1c890a69863f3e05dee052efe9529b174f0874
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 7e74b01a6b12302393a3e4bc40b2e9cccfc13d63
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079111"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488263"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Trin 2: Hent et adgangstoken til godkendelse
 
 Denne artikel er det andet trin i serien [Overfør data til et datasæt i Power BI](walkthrough-push-data.md).
 
-I trin 1 [registrerede du en klientapp i Azure AD](../register-app.md). På dette trin henter du et adgangstoken til godkendelse. Power BI-apps er integreret med Azure Active Directory for at give sikker logon og godkendelse til din app. Din app bruger et token til at godkende til Azure AD og få adgang til Power BI-ressourcer.
+I trin 1 [registrerede du en klientapp i Azure AD](../embedded/register-app.md). På dette trin henter du et adgangstoken til godkendelse. Power BI-apps er integreret med Azure Active Directory for at give sikker logon og godkendelse til din app. Din app bruger et token til at godkende til Azure AD og få adgang til Power BI-ressourcer.
 
 ## <a name="get-an-authentication-access-token"></a>Hent et adgangstoken til godkendelse
 
-Før du starter, skal du sikre, at du har fuldført det [forrige trin](../register-app.md) i serien [Overfør data til et datasæt i Power BI](walkthrough-push-data.md). 
+Før du starter, skal du sikre, at du har fuldført det [forrige trin](../embedded/register-app.md) i serien [Overfør data til et datasæt i Power BI](walkthrough-push-data.md). 
 
 Denne fremgangsmåde kræver Visual Studio 2015 eller nyere.
 
@@ -39,7 +39,7 @@ Denne fremgangsmåde kræver Visual Studio 2015 eller nyere.
 
 3. Tilføj den eksempelkode, der er angivet efter disse trin, i Program.cs.
 
-4. Erstat "{ClientID}" med det **klient-id**, du fik i den [tidligere artikel i serien](../register-app.md), når du har registreret din app.
+4. Erstat "{ClientID}" med det **klient-id**, du fik i den [tidligere artikel i serien](../embedded/register-app.md), når du har registreret din app.
 
 5. Kør konsolprogrammet, og log på din Power BI-konto. 
 

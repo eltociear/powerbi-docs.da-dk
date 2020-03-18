@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 183ce11457069612f84bb834d7060a047cae1866
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 71a727d1d7e39661ed86a4fdf574e3f1fa8fb595
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73875078"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488861"
 ---
 # <a name="use-power-bi-qa-to-explore-your-data-and-create-visuals"></a>Brug Spørgsmål og svar i Power BI til at udforske dine data og oprette visuelle elementer
 
 Den hurtigste måde at få svar ud af dine data på er nogle gange at stille et spørgsmål på et naturligt sprog. Funktionen Spørgsmål og svar i Power BI giver dig mulighed for at udforske dine data med dine egne ord.  Første del af denne artikel viser, hvordan du bruger Spørgsmål og svar i Power BI-tjenesten. Den anden del viser, hvad du kan gøre med Spørgsmål og svar, når du opretter rapporter enten i Power BI-tjenesten eller Power BI Desktop. Se artiklen [Spørgsmål og svar til forbrugere](consumer/end-user-q-and-a.md) for at få flere bagrundsoplysninger. 
 
-[Spørgsmål og svar i Power BI-mobilapps](consumer/mobile/mobile-apps-ios-qna.md) og [Spørgsmål og svar med Power BI Embedded](developer/qanda.md) behandles i særskilte artikler. 
+[Spørgsmål og svar i Power BI-mobilapps](consumer/mobile/mobile-apps-ios-qna.md) og [Spørgsmål og svar med Power BI Embedded](developer/embedded/qanda.md) behandles i særskilte artikler. 
 
 Funktionen Spørgsmål og svar er interaktiv, ja endda sjov. Ofte fører ét spørgsmål til andre, da visualiseringerne viser interessante stier, der skal udforskes. Se Amanda demonstrere brugen af Spørgsmål og svar til at oprette visualiseringer, grave ned i disse visuals og fastgøre dem til dashboards.
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
 ms.date: 03/25/2019
-ms.openlocfilehash: 3ff7eb4a771ed8c65d18262f61170f312049a898
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 1a74d856ad46dc6843546919aa4234dc86d2be5c
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079410"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488426"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Hvad kan udviklere bruge Power BI-API'en til?
 
@@ -25,10 +25,10 @@ Her er nogle af de ting, du kan bruge Power BI-API'erne til.
 
 | **Få mere at vide** | **Referer til disse oplysninger** |
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Integrer rapporter, dashboards og felter både for brugere af Power BI og brugere, der ikke anvender Power BI. | [Sådan integreres Power BI-dashboards, -rapporter og -felter](../embed-sample-for-customers.md) |
+| Integrer rapporter, dashboards og felter både for brugere af Power BI og brugere, der ikke anvender Power BI. | [Sådan integreres Power BI-dashboards, -rapporter og -felter](../embedded/embed-sample-for-customers.md) |
 | Udfør administrationsopgaver på Power BI-objekter. | [Reference til Power BI REST-API](https://docs.microsoft.com/rest/api/power-bi/) |
 | Udvid en eksisterende forretningsarbejdsproces til at overføre vigtige data til et Power BI-dashboard. | [Send data via push til et dashboard](walkthrough-push-data.md) |
-| Godkend til Power BI. | [Godkend til Power BI](../get-azuread-access-token.md) |
+| Godkend til Power BI. | [Godkend til Power BI](../embedded/get-azuread-access-token.md) |
 
 > [!NOTE]
 > Power BI-API'erne refererer stadig til arbejdsområder som grupper. Referencer til grupper betyder, at du arbejder med arbejdsområder.

@@ -10,11 +10,11 @@ ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: f1722690ff974a9d4fac6e94243e1024bfbfc12e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877601"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207062"
 ---
 # <a name="filters-and-highlighting-in-power-bi-reports"></a>Filtre og fremhævning i Power BI-rapporter
  Denne artikel introducerer dig for filtrering og fremhævning i Power BI-tjenesten. Brugeroplevelsen er stort den samme i Power BI Desktop. *Filtre* fjerner alt andet end de data, du vil fokusere på. *Fremhævning* er ikke filtrering. Det fjerner ikke data, men fremhæver i stedet et undersæt af de synlige data – data, der ikke fremhæves, forbliver synlige, men nedtonede.

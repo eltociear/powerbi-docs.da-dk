@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: f9832948fdd25d1bd807e0ff5d916b08b55aea95
-ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
+ms.openlocfilehash: fdd7504823f088ed0e88657a6fcccaeb9a5a36d0
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77155013"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79487803"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Vejledning til indstillinger for lejeradministrator
 
@@ -128,7 +128,7 @@ Hvis du skal godkende, at eksterne brugere kan redigere og administrere indhold,
 
 ### <a name="developer-settings"></a>Indstillinger for udviklere
 
-Der er to lejerindstillinger i forbindelse med [integration af Power BI-indhold](../developer/embedding.md). De er:
+Der er to lejerindstillinger i forbindelse med [integration af Power BI-indhold](../developer/embedded/embedding.md). De er:
 
 - Integrer indhold i apps (aktiveret som standard)
 - Tillad, at tjenesteprincipaler bruger Power BI-API'er (deaktiveret som standard)

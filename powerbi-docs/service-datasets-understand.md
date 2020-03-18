@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: eaa4354ed7355c0e01d9f75675cb7fed4bdc9d96
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 6170217119e443a2eb24aac056623dce5070303e
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74133721"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79208005"
 ---
 # <a name="datasets-in-the-power-bi-service"></a>Datasæt i Power BI-tjenesten
 
@@ -26,7 +26,7 @@ Power BI-datasæt repræsenterer en kilde til de data, der er klar til rapporter
 - Oprette forbindelse til en eksisterende datamodel, der ikke er hostet i en Power BI-kapacitet
 - Overføre en Power BI Desktop-fil, der indeholder en model.
 - Overføre en Excel-projektmappe (der indeholder en eller flere tabeller i Excel og/eller en projektmappedatamodel) eller overføre en CSV-fil (kommasepareret)
-- Bruge Power BI-tjenesten til at oprette et [push-datasæt](developer/walkthrough-push-data.md)
+- Bruge Power BI-tjenesten til at oprette et [push-datasæt](developer/automation/walkthrough-push-data.md)
 - Bruge Power BI-tjenesten til at oprette et [streaming eller hybridstreamingdatasæt](service-real-time-streaming.md)
 
 Med undtagelse af streamingdatasæt repræsenterer datasættet en datamodel, der udnytter teknologierne til fintudviklet modellering i [Analysis Services](/analysis-services/analysis-services-overview).

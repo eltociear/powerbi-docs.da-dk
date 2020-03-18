@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: b50ebde94d78ca42437979d792fb6402affe8855
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 571d4a2992a5017114cf94c3f49296769062d8ee
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74696610"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380796"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Forstå tilknytning af datavisning i Power BI-visualiseringer
 
@@ -185,7 +185,7 @@ export class Visual implements IVisual {
 
 Som et resultat heraf viser visual'et en enkelt værdi fra Power BI:
 
-![Eksempel på tilknytning af datavisninger for visual](./media/visual-simple-dataview-mapping.png)
+![Eksempel på tilknytning af datavisninger for visual](media/dataview-mappings/visual-simple-dataview-mapping.png)
 
 ## <a name="categorical-data-mapping"></a>Datatilknytning efter kategori
 
@@ -493,7 +493,7 @@ export class Visual implements IVisual {
 
 Resultatet af visual'et:
 
-![Visual'et med tilknytning af kategoriske datavisninger](./media/categorical-data-view-mapping-visual.png)
+![Visual'et med tilknytning af kategoriske datavisninger](media/dataview-mappings/categorical-data-view-mapping-visual.png)
 
 ## <a name="table-data-mapping"></a>Tilknytning af tabeldata
 
@@ -508,7 +508,7 @@ Med de angivne egenskaber:
     {
         "displayName": "Column",
         "name": "column",
-        "kind": "Measure"
+        "kind": "Grouping"
     },
     {
         "displayName": "Value",
@@ -557,7 +557,7 @@ Dataeksempel:
 
 Databinding:
 
-![Tilknytning af databindinger for tabeldatavisninger](./media/table-dataview-mapping-data.png)
+![Tilknytning af databindinger for tabeldatavisninger](media/dataview-mappings/table-dataview-mapping-data.png)
 
 Power BI viser dine data som tabeldatavisningen. Du bør ikke antage, at dataene står i rækkefølge.
 
@@ -603,7 +603,7 @@ Power BI viser dine data som tabeldatavisningen. Du bør ikke antage, at dataene
 
 Du kan sammenlægge dataene ved at markere det ønskede felt og derefter vælge sum.  
 
-![Datasammenlægning](./media/data-aggregation.png)
+![Datasammenlægning](media/dataview-mappings/data-aggregation.png)
 
 Kodeeksempel for behandling af tilknytning af tabeldatavisninger.
 
@@ -686,7 +686,7 @@ td {
 }
 ```
 
-![Visual'et med tilknytning af tabeldatavisninger](./media/table-dataview-mapping-visual.png)
+![Visual'et med tilknytning af tabeldatavisninger](media/dataview-mappings/table-dataview-mapping-visual.png)
 
 ## <a name="matrix-data-mapping"></a>Matrixdatatilknytning
 
@@ -767,7 +767,7 @@ Datasæt:
 
 Den primære matrix-visualisering af Power BI gengiver dataene som en tabel.
 
-![Matrixvisualisering](./media/matrix-visual-smaple.png)
+![Matrixvisualisering](media/dataview-mappings/matrix-visual-smaple.png)
 
 Visualiseringen henter sin datastruktur som beskrevet i følgende kode (kun de første to tabelrækker vises her):
 

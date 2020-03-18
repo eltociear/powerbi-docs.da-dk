@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/13/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f8a49780804449296194d7adb8091f7f0c5748fe
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 021aeafab4deb5afb39cd3986b3fb68b62b483f0
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427800"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381255"
 ---
 # <a name="add-hyperlinks-urls-to-a-table-or-matrix"></a>Føj links (URL-adresser) til en tabel eller en matrix
 I dette emne lærer du, hvordan du føjer links (URL-adresser) til en tabel. Du kan bruge Power BI Desktop til at føje links (URL-adresser) til et datasæt. Derefter kan du bruge enten Power BI Desktop eller Power BI-tjenesten til at føje disse links til tabeller og matrixer i din rapport. Du kan derefter få vist URL-adressen eller et linkikon eller formatere en anden kolonne som linktekst.

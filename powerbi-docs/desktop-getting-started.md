@@ -6,22 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/09/2019
+ms.date: 03/13/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b32eee568ba560e95899cf0965a11f3bb037aed6
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 719c07abdcdb42916db8a01a7fab28d3f6c98fba
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75222279"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133337"
 ---
 # <a name="get-started-with-power-bi-desktop"></a>Kom i gang med Power BI Desktop
 Velkommen til Introduktionsvejledning til Power BI Desktop. I denne præsentation kan du se, hvordan Power BI Desktop fungerer, hvad det kan gøre, og hvordan du bygger robuste datamodeller og fantastiske rapporter for at styrke din business intelligence.
 
 Du kan få et hurtigt overblik over, hvordan Power BI Desktop fungerer, og hvordan du bruger det, ved kun at scanne skærmbillederne i denne vejledning på få minutter. Hvis du vil have en mere grundig forståelse, kan du læse hver sektion, udføre trinene og slutte af med at få din egen Power BI Desktop-fil, der er klar til at blive postet i [Power BI-tjenesten](https://app.powerbi.com/) og blive delt med andre.
 
-![Power BI Desktop-rapport](media/desktop-getting-started/hero.png)
+![Power BI Desktop-rapport](media/desktop-getting-started/hero-02.png)
 
 Du kan også se videoen [Introduktion til Power BI Desktop](https://www.youtube.com/watch?v=Qgam9M8I0xA) og downloade Excel-projektmappen [Financial Sample](https://go.microsoft.com/fwlink/?LinkID=521962) for at følge med videoen.
 

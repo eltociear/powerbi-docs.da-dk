@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 11be774515552d10846b51863eda6c155b92b57f
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: b0ed499a272fc3f6fc0590117898c64551fedac1
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75758077"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436082"
 ---
 # <a name="create-and-use-combo-charts-in-power-bi"></a>Opret og brug kombinationsdiagrammer i Power BI
 
@@ -98,8 +98,7 @@ I januar var BM% på 35 %, den steg til 45 % i april, faldt i juli og steg igen 
    ![eksempel på klynge i kombinationsdiagram](media/power-bi-visualization-combo-chart/power-bi-clustered-combo.png)    
 
 ## <a name="add-titles-to-the-axes"></a>Føj titler til akserne
-1. Vælg malerrulleikonet 
-1. ![malerrulleikon](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) for at åbne formateringsruden.
+1. Vælg malerrulleikonet ![malerrulleikon](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) for at åbne formateringsruden.
 1. Udvid indstillingerne for **Y-axis** ved at vælge den nedadvendte pil.
 1. For **Y-aksen (søjle)** skal du angive **Placering** til **Venstre**, angive **Titel** til **Til**, **Type** til **Vis kun titel** og **Vis enheder** som **Millioner**.
 

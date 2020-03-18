@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6a3458de09cece30948ff848859f05ed8127d034
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a2ac2820c7beb3a82650716896ddd36b79c82e07
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75757847"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436059"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Opret og brug udfyldte kort (choropleth-kort) i Power BI
 
@@ -63,7 +63,7 @@ I denne video opretter Kim et grundlæggende kort og konverterer det til et udfy
    > 
    > 
 
-[VIDEO https://www.youtube.com/embed/ajTPGNpthcg ]
+> [VIDEO https://www.youtube.com/embed/ajTPGNpthcg ]
 
 ### <a name="create-a-filled-map"></a>Opret et kartogram
 1. Fra ruden Felter skal du vælge feltet **Geo** \> **State**.    
@@ -130,7 +130,7 @@ Kortdata kan være tvetydige.  Der er f.eks. en by, der hedder Paris i Frankrig,
 
 Hvis du har rettigheder til at redigere datasættet i Power BI Desktop, kan du se denne video for at få hjælp til at korrigere tvetydighed på kortet.
 
-[VIDEO https://www.youtube.com/embed/Co2z9b-s_yM ]
+> [VIDEO https://www.youtube.com/embed/Co2z9b-s_yM ]
 
 Hvis du ikke har adgang til data om breddegrad og længdegrad, men du har redigeringsadgang til datasættet, [skal du følge disse instruktioner for at opdatere datasættet](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 

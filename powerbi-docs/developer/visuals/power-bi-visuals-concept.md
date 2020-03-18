@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: bb0834527ba23c6cfcc155cc65cd0318b296ba84
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 96f1fd217a59ee95aed05b790800024dc9f72be9
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75925601"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378131"
 ---
 # <a name="visuals-in-power-bi"></a>Visualiseringer i Power BI
 
@@ -22,7 +22,7 @@ I artiklen beskrives det, hvordan visualiseringer integreres med Power BI, og hv
 
 Følgende figur viser, hvordan almindelige visualiseringsbaserede handlinger, som en bruger benytter, f.eks. ved at vælge et bogmærke, behandles i Power BI.
 
-![Handlingsdiagram for visualiseringer i Power BI](./media/visual-concept.svg)
+![Handlingsdiagram for visualiseringer i Power BI](media/power-bi-visuals-concept/visual-concept.svg)
 
 ## <a name="visuals-get-updates-from-power-bi"></a>Visualiseringer henter opdateringer fra Power BI
 
@@ -131,4 +131,4 @@ Handlinger og efterfølgende opdateringer i Power BI-visualiseringer optræder i
 Er du interesseret i at oprette dine egne visualiseringer og føje dem til Microsoft AppSource? Se følgende artikler:
 
 * [Udvikling af en Power BI-visualisering](./custom-visual-develop-tutorial.md)
-* [Publicer Power BI-visualiseringer i Partnercenter](../office-store.md)
+* [Publicer Power BI-visualiseringer i Partnercenter](office-store.md)

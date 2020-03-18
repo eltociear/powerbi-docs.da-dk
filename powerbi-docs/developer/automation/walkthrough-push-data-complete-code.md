@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 1b927bcca087e832138e4ac02c555e34915febd9
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 4745935e618f47f6092f6a33d879dd95d59b9963
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079318"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488286"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Komplet kodeliste til push af data til et datasæt
 
@@ -225,7 +225,7 @@ Når du har fulgt trin 2 til 5 i **Push af data til et datasæt**, bør din komp
 ## <a name="next-steps"></a>Næste trin
 
 * [Push data til et Power BI-datasæt](walkthrough-push-data.md)
-* [Registrer en app med Azure AD](../register-app.md)  
+* [Registrer en app med Azure AD](../embedded/register-app.md)  
 * [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md)  
 * [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md)  
 * [Hent et datasæt, der kan føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md)  

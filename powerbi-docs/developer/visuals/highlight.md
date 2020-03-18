@@ -6,28 +6,28 @@ ms.author: kesharab
 ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/31/2019
-ms.openlocfilehash: 0c1263760157371f9f4d9fc0f122d6e37d73d720
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: d406396db64b52326bbd8ea2aa485cd3d7451294
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76819163"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380006"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Fremhæv datapunkter i Power BI-visualiseringer
 
 Når et element markeres, filtreres matrixen `values` i objektet `dataView` som standard, så der kun vises de markerede værdier. Det medfører, at det kun er de markerede data, der vises i alle andre visualiseringer på siden.
 
-![standardfunktionsmåde af fremhævning af "datavisning"](./media/highlight-dataview.png)
+![standardfunktionsmåde af fremhævning af "datavisning"](media/highlight/highlight-dataview.png)
 
 Hvis du angiver egenskaben `supportsHighlight` i `capabilities.json` til `true`, får du vist den fulde ikke-filtrerede matrix `values` sammen med en `highlights`-matrix. Matrixen `highlights` har samme længde som matrixen for værdier, og alle værdier, der ikke er markeret, angives til `null`. Når denne egenskab er aktiveret, er det visualiseringens ansvar at fremhæve de relevante data ved at sammenligne `values`-matrixen med `highlights`-matrixen.
 
-!["datavisning" understøtter fremhævning](./media/highlight-dataview-supports.png)
+!["datavisning" understøtter fremhævning](media/highlight/highlight-dataview-supports.png)
 
 I eksemplet vil du bemærke, at én søjle er markeret. Og det er den eneste værdi i den fremhævede matrix. Det er også vigtigt at bemærke, at der kan være flere markeringer og delvise fremhævninger. De fremhævede værdier præsenteres i datavisningen.
 
-> [!Note]
+> [!NOTE]
 > Tilknytning af tabeldatavisninger understøtter ikke fremhævningsfunktionen.
 
 ## <a name="highlight-data-points-with-categorical-data-view-mapping"></a>Fremhæv datapunkter med tilknytning af kategorisk datavisning
@@ -187,7 +187,7 @@ public update(options: VisualUpdateOptions) {
 
 Hvor `categoryValues` er en matrix af kategoriværdier, er `measureValues` en matrix af målinger, og `measureHighlights` er fremhævede dele af værdier.
 
-> [!Note]
+> [!NOTE]
 > Værdier af egenskaben `measureHighlights` kan være mindre end værdien af egenskaben `categoryValues`.
 > Det betyder, at værdien var delvist fremhævet.
 
@@ -271,7 +271,7 @@ div.value {
 
 I resultatet bør du have følgende visning af visualiseringen.
 
-![Visualiseringerne med tilknytning og fremhævning af kategorisk datavisning](./media/dev-categorical-visual-highlight-demo.gif)
+![Visualiseringerne med tilknytning og fremhævning af kategorisk datavisning](media/highlight/dev-categorical-visual-highlight-demo.gif)
 
 ## <a name="highlight-data-points-with-matrix-data-view-mapping"></a>Fremhæv datapunkter med tilknytning af matrixdatavisning
 
@@ -582,7 +582,7 @@ JSON.stringify(options.dataViews[0].matrix.rows.root.children[0].children[0].chi
 
 Hvor egenskaben `value` repræsenterer værdien af noden uden anvendelse af en markering fra andre visualiseringer, og egenskaben fremhævning angiver, hvilken del af dataene der fremhæves.
 
-> [!Note]
+> [!NOTE]
 > Værdien af egenskaben `highlight` kan være mindre end værdien af egenskaben `value`.
 > Det betyder, at værdien var delvist fremhævet.
 
@@ -643,7 +643,7 @@ public update(options: VisualUpdateOptions) {
 
 Som resultatet får du visualiseringen med knapper og værdier `highlighted value/default value`
 
-![Visualiseringen med tilknytning og fremhævning af matrixdatavisninger](./media/dev-matrix-visual-highlight-demo.gif)
+![Visualiseringen med tilknytning og fremhævning af matrixdatavisninger](media/highlight/dev-matrix-visual-highlight-demo.gif)
 
 ## <a name="next-steps"></a>Næste trin
 
