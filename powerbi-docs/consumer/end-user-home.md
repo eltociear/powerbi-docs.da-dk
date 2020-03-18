@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/28/2020
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: dd83388c00b2415c43355bb57c271b430a9abc53
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: 83c834b05846c22577b7987d341c295a1e763b59
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76888794"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79113288"
 ---
 # <a name="find-your-dashboards-reports-and-apps"></a>Find dine dashboards, rapporter og apps
+
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 I Power BI henviser begrebet *indhold* til apps, dashboards og rapporter. Indhold oprettes af Power BI-*designere*, der deler det med kolleger som dig. Dit indhold er tilgængeligt og kan ses i Power BI-tjenesten, og det bedste sted at begynde med at arbejde i Power BI er fra **startsiden** for Power BI.
 
 ## <a name="explore-power-bi-home"></a>Udforsk Power BI Start
@@ -109,7 +111,7 @@ I navigationsruden organiseres dit indhold i objektbeholdere, der svarer til dem
 Du kan også bruge navigationsruden til hurtigt at finde det ønskede indhold. Indhold er organiseret på en måde, der ligner lærredet for startsiden, men det vises på lister i stedet for på kort. 
 
 ## <a name="search-all-of-your-content"></a>Søg i alt dit indhold
-Nogle gange er det hurtigst at finde dit indhold ved at søge efter det. Du har f.eks. opdaget, at et dashboard, du ikke har brugt i et stykke tid, ikke vises på dit lærred for startsiden. Eller måske kommer du i tanke om, at din kollega, Aaron, har delt noget med dig, men du kan ikke huske, hvad han kaldte det, eller hvilken type indhold han delte, eller om det var et dashboard eller en rapport. Eller du kan have så meget indhold, at det er nemmere at søge efter det end at rulle eller sortere. 
+Nogle gange er det hurtigst at finde dit indhold ved at søge efter det. Du har måske opdaget, at et dashboard, du ikke har brugt i et stykke tid, ikke vises på dit lærred for startsiden. Eller måske kommer du i tanke om, at din kollega, Aaron, har delt noget med dig, men du kan ikke huske, hvad han kaldte det, eller hvilken type indhold han delte, eller om det var et dashboard eller en rapport. Eller du kan have så meget indhold, at det er nemmere at søge efter det end at rulle eller sortere. 
  
 Søgefeltet er placeret øverst til højre på startsidens menulinje. Du kan angive hele eller en del af navnet på dashboardet og søge efter det. Du kan også angive din kollegas navn og søge efter indhold, han har delt med dig. Under søgningen søges der efter resultater i alt det indhold, du ejer, eller som du har adgang til.
 

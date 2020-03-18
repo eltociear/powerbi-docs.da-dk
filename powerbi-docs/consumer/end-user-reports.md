@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/05/2019
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 3f6f534b71ba6d8e8798418275c4758a95fc6fb5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 089d1df9a63a30d602ac12f1bf18f32787374654
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851236"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114236"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -41,7 +43,7 @@ Power BI baserer en rapport på et enkelt datasæt. *Designere* af rapporter opr
 Når du udforsker og interagerer med dit indhold, kan du filtrere, lave udsnit, abonnere og eksportere – og du kan ikke ødelægge rapporterne. Dit arbejde påvirker ikke det underliggende datasæt eller det oprindelige delte indhold. Dette gælder for dashboards, rapporter og apps.
 
 > [!NOTE]
-> Husk, at du ikke kan skade dine data. Power BI er et fantastisk sted at udforske og eksperimentere, uden at du behøver at bekymre dig om at ødelægge noget.
+> Husk, at du ikke kan beskadige dine data. Power BI er et fantastisk sted at udforske og eksperimentere, uden at du behøver at bekymre dig om at ødelægge noget.
 
 ### <a name="save-your-changes-or-revert-to-the-default-settings"></a>Gem dine ændringer, eller gendan standardindstillingerne
 

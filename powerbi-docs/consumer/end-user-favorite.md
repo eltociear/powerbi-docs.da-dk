@@ -7,24 +7,25 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/19/2019
+ms.date: 03/09/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 48322b554a7b600bc5cadc7c40fe366c64cd8549
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: bb69d1ecc4e91912b947a2120607e1a0502d8162
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852644"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040498"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-the-power-bi-service"></a>Favoritdashboards, -rapporter og -apps i Power BI-tjenesten
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 Når du gør indhold til en *favorit*, kan du hurtigt få adgang til det fra indholdslisten **Favoritter** og fra **Power BI Start** > **Favoritter og hyppige**. Favoritter er typisk det indhold, du besøger ofte, og de identificeres med en gul stjerne.
 
    ![Ikonet Favoritter](./media/end-user-favorite/power-bi-favorite-nav.png)
 
    ![Ikon for Favoritter og hyppige](./media/end-user-favorite/power-bi-home.png)
-
-Du kan også vælge et enkelt dashboard som et [Udvalgt dashboard](end-user-featured.md) i Power BI-tjenesten.
 
 ## <a name="add-a-dashboard-or-report-as-a-favorite"></a>Tilføj et dashboard eller en rapport som en favorit
 
@@ -67,7 +68,7 @@ Hvis du ikke længere bruger en rapport så ofte, som du plejede, kan du fjerne 
 2. Vælg den gule stjerne ud for det indhold, der skal fjernes som favorit.
 
 > [!NOTE]
-> Du kan også fjerne et dashboard, en rapport eller en app fra Favoritter. Du skal blot åbne og fjerne markeringen af det gule ikon. 
+> Du kan også fjerne et dashboard, en rapport eller en app fra Favoritter. Du skal bare åbne og vælge den gule stjerne for at omdanne den til en hvid stjerne igen. 
 > 
 > 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser

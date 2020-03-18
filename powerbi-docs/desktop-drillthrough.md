@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/08/2019
+ms.date: 03/05/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a7b00b0cb611dd3e0921885ddaca6547fdb43fd3
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 020b7e0a5fd0c3372e3a83d9973a404978e56b7d
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74310981"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401235"
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Brug detaljeadgang i Power BI Desktop
 Med *detaljeadgang* i Power BI Desktop kan du oprette en side i rapporten, som fokuserer på et bestemt objekt, f.eks. en leverandør, en kunde eller en producent. Hvis du vil bruge detaljeadgang, skal du vælge funktionen ved at højreklikke på et datapunkt på andre rapportsider og derefter gå videre ned til siden med fokus for at få de oplysninger, der er filtreret i forhold til konteksten.
@@ -33,6 +33,11 @@ Med *detaljeadgang* i Power BI Desktop kan du oprette en side i rapporten, som f
     Når du føjer et felt til området **Detaljeadgangsfiltre**, opretter Power BI Desktop automatisk et visuelt element for knappen *Tilbage*. Denne visual bliver en knap i publicerede rapporter. De brugere, der benytter din rapport i Power BI-tjenesten, bruger denne knap til at komme tilbage til den rapportside, de kom fra.
 
     ![Detaljeadgang til billede](media/desktop-drillthrough/drillthrough_03.png)
+
+> [!IMPORTANT]
+> Du kan konfigurere og udføre detaljeadgang på en side i den pågældende rapport, du kan dog ikke udføre detaljeadgang på en side i en anden rapport.  
+
+
 
 ## <a name="use-your-own-image-for-a-back-button"></a>Brug dit eget billede på en Tilbage-knap    
  Da knappen Tilbage er et billede, kan du erstatte billedet af denne visual med et hvilken som helst billede, du ønsker. Det fungerer stadig som en tilbage-knap, så brugerne af rapporter kan vende tilbage til den oprindelige side. 
@@ -54,13 +59,12 @@ Hvis du vil bruge dit eget billede til en tilbage-knap, skal du gøre følgende:
 
 ## <a name="pass-all-filters-in-drillthrough"></a>Overfør alle filtre i detaljeadgang
 
-Fra og med versionen af Power BI Desktop fra maj 2018 kan du overføre alle anvendte filtre til detaljeadgangsvinduet. Du kan f.eks. kun vælge en bestemt kategori af produkter og de visuals, der filtreres til denne kategori, og derefter vælge detaljeadgang. Du er måske interesseret i at se, hvordan denne detaljeadgang ville se ud med alle de anvendte filtre.
+Du kan overføre alle filtre til detaljeadgangsvinduet. Du kan f.eks. kun vælge en bestemt kategori af produkter og de visuals, der filtreres til denne kategori, og derefter vælge detaljeadgang. Du er måske interesseret i at se, hvordan denne detaljeadgang ville se ud med alle de anvendte filtre.
 
 Hvis du vil beholde alle anvendte filtre, skal du gå til sektionen **Detaljeadgang** i ruden **Visualiseringer** og slå indstillingen **Overfør alle filtre** **til**. 
 
 ![Behold alle filtre](media/desktop-drillthrough/drillthrough_06.png)
 
-I de versioner af Power BI Desktop, der er udgivet før maj 2018, svarer funktionsmåden til at slå denne indstilling **fra**.
 
 Når du derefter udfører detaljeadgang på et visuelt element, kan du se, hvilke filtre der er anvendt som resultat af det visuelle kildeelement, hvor der er anvendt midlertidige filtre. I sektionen **Detaljeadgang** i ruden **Visualisering**, vises disse midlertidige filtre med kursiv. 
 
@@ -78,7 +82,7 @@ Når du tilføjer et mål eller en numerisk kolonne med en opsummering, kan du f
 
 Så nemt er det at bruge detaljeadgang i dine rapporter. Det kan give dig en udvidet visning af de enhedsoplysninger, som du valgte til dit detaljeadgangsfilter.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du vil måske også være interesseret i følgende artikler:
 

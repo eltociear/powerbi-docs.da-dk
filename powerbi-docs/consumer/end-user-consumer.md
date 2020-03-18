@@ -5,15 +5,15 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 02/18/2020
+ms.date: 02/24/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 100a9302e260a7c8f34c6fa07cc6b231e7271ce6
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: fb1209103c88e78148f746321d5ff8d8bd6e1a20
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496186"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79039923"
 ---
 # <a name="the-power-bi-service-for-consumers"></a>Power BI-tjenesten til forbrugere
 
@@ -45,7 +45,7 @@ Som forbruger har du ikke adgang til alle funktioner i Power BI – og det er he
 
 Du hører uden tvivl udtrykket "Power BI Desktop" eller blot "Desktop". Dette er et separat værktøj, som bruges af *designere*, der udarbejder og deler dashboards og rapporter med dig.  Det er vigtigt, at du er klar over, at der er andre Power BI-værktøjer derude, men så længe du er en forbruger, vil du kun arbejde med Power BI-tjenesten. 
 
-Eftersom du arbejder med *delt* indhold, har du brug for en Power BI Pro- eller Premium-licens. [Hvilken licens har jeg?](end-user-license.md)
+Eftersom du arbejder med *delt* indhold, skal du bruge en **gratis** standardlicens og arbejde i en organisation, der benytter en **Premium-kapacitet**. [Hvilken licens har jeg?](end-user-license.md)
 
 
 ## <a name="safely-interact-with-content"></a>Sikker interaktion med indhold 

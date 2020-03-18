@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 6c2c41221e4a199d6a5d3a800f3820746ef7389a
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: 1d61723b08c26197d94b53188b741fd01d47a620
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76888356"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401188"
 ---
 # <a name="get-power-bi-desktop"></a>Hent Power BI Desktop
 Med Power BI Desktop kan du oprette avancerede forespørgsler, modeller og rapporter, som visualiserer data. Med Power BI Desktop kan du skabe datamodeller, oprette rapporter og dele dit arbejde ved at publicere det i Power BI-tjenesten. Power BI Desktop kan downloades gratis.
@@ -158,6 +158,7 @@ Hvis du udruller Power BI Desktop til dine brugere med et værktøj, der kræver
 
     Outputmappen indeholder en mappe med navnet *AttachedContainer*, som indeholder. msi-filerne.
 
+Opgradering af en installation fra en .exe til en .msi, som du har udtrukket fra en .exe, understøttes ikke.   Hvis du vil foretage denne opgradering, skal du først fjerne den gamle version af Power BI Desktop.
 
 ### <a name="issues-when-using-previous-releases-of-power-bi-desktop"></a>Problemer med brug af tidligere udgaver af Power BI Desktop
 

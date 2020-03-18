@@ -6,45 +6,60 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/21/2020
+ms.date: 03/08/2020
 ms.author: painbar
-ms.openlocfilehash: fee89c65328b70e1f312b39fbad75d7148bd92f2
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: c7280b2b6bb34b070e7ced3785959d61c74cd165
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542283"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041243"
 ---
 # <a name="configure-report-interaction-settings"></a>Konfigurer indstillinger for rapportinteraktion
 
 ## <a name="overview"></a>Oversigt
 
-Power BI-mobilappen har en række konfigurerbare indstillinger for "interaktion", som giver dig mulighed for at styre, hvordan du interagerer med dine data, og for at definere, hvordan nogle af elementerne i Power BI-mobilappen fungerer. Der er i øjeblikket indstillinger for
-* [Interaktion via enkelttryk i forhold til dobbelttryk på rapportvisualiseringer](#single-tap)
-* [Forankret i forhold til dynamisk rapportfod](#docked-report-footer-android-phones) (Android)
-* [Opdatering af rapport ved at trykke på en knap i forhold til at trække](#report-refresh-android-phones) (Android)
+Power BI-mobilappen har en række konfigurerbare indstillinger for "interaktion", som giver dig mulighed for at styre, hvordan du interagerer med dine data, og for at definere, hvordan nogle af elementerne i Power BI-mobilappen fungerer. I nedenstående tabel vises de interaktionsindstillinger, der er tilgængelige i øjeblikket, og de enheder, som har disse indstillinger.
+
+|| Android-telefon | iPhone | Android-tablet  | iPad |
+|-|:-:|:-:|:-:|:-:|
+| [Interaktion via enkelttryk i forhold til dobbelttryk på rapportvisualiseringer](#single-tap) |✔|✔|||
+| [Flere markeringer i forhold til enkelte markeringer af datapunkter på visualiseringer i rapporter](#multi-select) |✔|✔|✔|✔|
+| [Forankret i forhold til dynamisk rapportfod](#docked-report-footer) |✔|✔|||
+| [Opdatering af rapport ved at trykke på en knap i forhold til at trække](#report-refresh) |✔||||
+|
 
 Hvis du vil have vist interaktionsindstillingerne, skal du trykke på dit profilbillede for at åbne [sidepanelet](./mobile-apps-home-page.md#header), vælge **Indstillinger** og finde sektionen **Interaktion**.
 
 ![Interaktionsindstillinger](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-section.png)
 
->[!NOTE]
->Interaktionsindstillinger for knappen Opdater og for forankring af rapportfoden har i øjeblikket ingen effekt på Rapportserver-rapporter. Dette ændres med udgivelsen af Rapportserver januar 2020.
+Indstillingerne for interaktionen er beskrevet i afsnittene nedenfor.
 
 ## <a name="interaction-settings"></a>Interaktionsindstillinger
 
 ### <a name="single-tap"></a>Enkelttryk
 Når du downloader Power BI-mobilappen, er den angivet til interaktion med enkelttryk. Det betyder, at når du trykker på en visualisering for at udføre en handling, f.eks. markering af et udsnitselement, tværgående fremhævning, klik på et link eller en knap osv., vælges det visuelle element, når du trykker, og samtidig udføres den handling, du ønsker.
 
-Hvis du foretrækker det, kan du slå interaktion med enkelttryk fra. Du har derefter interaktion med dobbelttryk. Hvis du vælger interaktion med dobbelttryk, skal du først trykke på et visuelt element for at markere det og derefter trykke på det visuelle element igen for at udføre den ønskede handling.
+Hvis du foretrækker det, kan du slå interaktion med enkelttryk fra. Du har derefter interaktion med dobbelttryk. Hvis du vælger interaktion med dobbelttryk, skal du først trykke på en visualisering for at markere den og derefter trykke på visualiseringen igen for at udføre den ønskede handling.
 
-### <a name="docked-report-footer-android-phones"></a>Forankret rapportfod (Android-telefoner)
+### <a name="multi-select"></a>Vælg flere
+
+Multivalgstilstanden gør det muligt at vælge flere datapunkter på en rapportside. Når multivalgstilstand er slået til, bliver hvert enkelt datapunkt, du trykker på, føjet til de andre valgte datapunkter, og de kombinerede resultater fremhæves automatisk i alle visualiseringerne på siden. Når multivalgstilstanden er slået fra, erstatter den nye markering den aktuelle markering, når du trykker for at vælge et datapunkt.
+
+Hvis du vil fjerne markeringen af et datapunkt, skal du trykke på det igen.
+
+>[!NOTE]
+>Multivalgstilstanden understøttes ikke i brugerdefinerede visualiseringer.
+>
+>Multivalgstilstanden understøttes på Power BI-rapportserver i den næste version af rapportserveren.
+
+### <a name="docked-report-footer"></a>Fastgjort til rapportfoden
 
 Indstillingen for den forankrede rapportfod bestemmer, om rapportfoden forbliver forankret (dvs. fastgjort og altid synlig) nederst i rapporten, eller om den skjules og vises igen på baggrund af dine handlinger i rapporten, f.eks. rulning.
 
 På Android-telefoner er indstillingen for den forankrede rapportfod som standard slået **til**, hvilket betyder, at rapportfoden er forankret og altid synlig nederst i rapporten. Skift indstillingen til **fra**, hvis du foretrækker en dynamisk rapportfod, der vises og forsvinder afhængigt af dine handlinger i rapporten.
 
-### <a name="report-refresh-android-phones"></a>Rapportopdatering (Android-telefoner)
+### <a name="report-refresh"></a>Rapportopdatering
 
 Indstillingen for rapportopdatering definerer, hvordan du starter rapportopdateringer. Du kan enten vælge at have en Opdater-knap i alle rapportoverskrifter eller at bruge træk-handlingen (trække en smule fra toppen til bunden) på rapportsiden for at opdatere rapporten. I figuren nedenfor vises de to alternativer. 
 

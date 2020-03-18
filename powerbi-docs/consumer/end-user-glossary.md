@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/17/2019
+ms.date: 02/18/2020
 ms.author: mihart
-ms.openlocfilehash: e5c3f8b327d6899d83e2304e56e5813a47fc4698
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 4679973cf65ced31a40b3a1bb40c820184e10e2c
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537801"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040098"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
@@ -22,7 +22,9 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 ## <a name="a"></a>A
 
-**account (konto)** Der er forskellige typer af Power BI-konti.  En Power BI Pro-konto er et betalt månedligt abonnement.  En Power BI (gratis)-konto giver mulighed for visning af indhold, der er hostet med Power BI Premium-kapacitet.  
+**account**  Der er forskellige typer Power BI-konti, også kaldet *licenser*.  Kontiene er enten: pr. bruger eller pr. organisation. Kontiene pr. bruger er tilgængelige som *gratis* eller *Pro*.  En *gratis* bruger af Power BI bruger enten en separat udgave af Power BI Desktop eller Power BI-tjenesten i en Premium-organisationskonto. Power BI *Pro*-kontoen pr. bruger er et betalt månedligt abonnement, der gør det muligt at samarbejde og dele indhold med andre *Pro*-brugere. 
+
+Den organisatoriske *Premium*-konto (også kaldet *Premium-kapacitet*) tilføjer et lag af funktioner oven på licenserne pr. bruger. Indehavere af en *gratis* konto pr. bruger i en organisation, der har en *Premium*-licens, kan foretage sig meget mere med Power BI, end *gratis* brugere uden *Premium*. *Gratis* brugere i *Premium*-organisationskonti kan f.eks. samarbejde med kolleger og få vist indhold, der hostes i en Power BI Premium kapacitet.  
 
 **admin portal (administrationsportal)** Den placering, hvor Power BI-administratorer administrerer brugere, funktioner og indstillinger for Power BI i deres organisation. (Bemærk! Office 365, Azure og PowerApps bruger Administration).
 
@@ -170,6 +172,8 @@ Kontrolelementerne langs den venstre kant af Power BI-tjenesten.
 
 Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
 
+**licens** Se *konto*.
+
 **list page (listeside)** eller **content list (indholdsliste)** En af afsnitssiderne for elementerne i navigationsruden. F.eks. Favoritter, Seneste, Mit arbejdsområde osv.
 
 ## <a name="m"></a>M
@@ -226,15 +230,17 @@ Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
 
 **Power BI Embedded** Et produkt, der bruges af udviklere til at integrere Power BI-dashboards og -rapporter i deres egne apps, websteder og -værktøjer.
 
-**Power BI Premium** Et tilføjelsesprogram til Power BI Pro-licensen, der giver organisationer mulighed for at skalere BI-løsninger forudsigeligt gennem købet af dedikeret hardware.
+**Power BI Premium** Et tilføjelsesprogram til Power BI Pro-licensen, der giver organisationer mulighed for at skalere BI-løsninger forudsigeligt gennem købet af dedikeret hardware. Se *konto*.
 
-**Power BI Pro license (Power BI Pro-licens)** En månedlig brugerlicens, der giver mulighed for at oprette dashboards, samarbejde om delte data, automatisk holde data opdateret, overvåge og styre, hvordan der opnås adgang til data, og hvordan de bruges, samt mulighed for at pakke indhold, der skal distribueres (Power BI-apps).
+**Power BI Pro** En månedlig licens pr. bruger, der giver mulighed for at oprette rapporter og dashboards, samarbejde om delte data, automatisk holde data opdateret, overvåge og styre, hvordan der opnås adgang til data, og hvordan de bruges, samt mulighed for at pakke indhold, der skal distribueres (Power BI-apps). Se *konto*.
 
 **Power BI Report Server (Power BI-rapportserver)** Et nyt branded tilbud fra SSRS (SQL Server Reporting Services), der lanceres sammen med Power BI Premium, og som giver organisationer mulighed for at bygge distribuerede hybride BI-systemer (en blanding af udrulninger i cloudmiljøet og i det lokale miljø). Integrationen giver dig en lokaliseret måde at gemme og administrere Power BI-rapporter på.
 
 **Power BI service (Power BI-tjeneste)** En SaaS-onlinetjeneste (Software som en service). Du kan finde flere oplysninger under [Hvad er Power BI](../fundamentals/power-bi-overview.md)?
 
 **Premium workspace (Premium-arbejdsområde)** Et arbejdsområde, der kører i dedikeret kapacitet, hvilket er angivet over for kunderne med et rombeikon.  
+
+**Pro**-licens eller **Pro**-konto. Se *konto*.
 
 **publish (publicer)** *Rapportdesignere* i Power BI-tjenesten samler indholdet af et Power BI-arbejdsområde for at gøre det tilgængeligt for andre som en Power BI-app. *Rapportdesignere* i Power BI Desktop bruger Publicer til at henvise til at sende en Power BI Desktop-rapport i PBIX-format til Power BI-tjenesten, så de kan oprette dashboards ud fra dem og nemt dele dem med andre. 
 

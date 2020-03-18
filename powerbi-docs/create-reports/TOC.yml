@@ -145,7 +145,7 @@
               href: ../desktop-grouping-and-binning.md
             - name: Opret Power BI-visualiseringer med R
               href: ../desktop-r-visuals.md
-            - name: Download og brug R-drevne brugerdefinerede visualiseringer
+            - name: Download og brug R-drevne Power BI-visualiseringer
               href: ../desktop-r-powered-custom-visuals.md
             - name: Anvend gitterlinjer og fastgørelse til gitter
               href: ../desktop-gridlines-snap-to-grid.md

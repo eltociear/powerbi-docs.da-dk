@@ -1,19 +1,19 @@
 ---
 title: Enkeltlogon i Power BI-mobilappen til Windows
 description: Læs om enkeltlogon (SSO – Single Sign-On) i Power BI-mobilappen til Windows. SSO betyder, at du får adgang til alle programmer og ressourcer, du har brug for til din virksomhed, ved at logge på én gang, med en enkelt brugerkonto.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 09/17/2018
-ms.author: mshenhav
-ms.openlocfilehash: 4ec2e43843d37f0966070d39e08ae0ab6160dbf8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: 767ea586ce35d60c99742ada6f90fe342bd59313
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876667"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114732"
 ---
 # <a name="single-sign-on-in-the-power-bi-mobile-windows-app"></a>Enkeltlogon i Power BI-mobilappen til Windows
 

@@ -7,17 +7,19 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/25/2019
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6fdb336faaceee21347f426beb6fdefc0bdb70f4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d97727969ed48c50a86be032835b237d293a1d96
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861683"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114153"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Få vist dashboards og rapporter, der er delt med mig
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -25,7 +27,7 @@ Når en kollega deler indhold med dig ved hjælp af knappen **Del**, vises det i
 
 ![Delingsikon](./media/end-user-shared-with-me/power-bi-share-dashboard.png)
 
-Se Amanda forklare **Delt med mig**-indholdslisten og vise dig, hvordan du navigerer og filtrerer listen. Følg derefter en trinvis vejledning under videoen for at prøve det selv. For at du kan få vist dashboards, der deles med dig, skal du have en Power BI Pro-licens. Læs [Hvad er Power BI Premium?](../service-premium-what-is.md) for at få flere oplysninger.
+Se Amanda forklare **Delt med mig**-indholdslisten og vise dig, hvordan du navigerer og filtrerer listen. Følg derefter en trinvis vejledning under videoen for at prøve det selv. For at du kan få vist dashboards, der deles med dig, skal du have en Power BI Pro-licens. Læs [Hvilken licens har jeg?](end-user-license.md) for at få flere oplysninger.
     
 
 > [!NOTE]

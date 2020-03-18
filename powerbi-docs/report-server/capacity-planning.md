@@ -7,13 +7,13 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
-ms.author: pashah
-ms.openlocfilehash: ad657da4e0a81c6b3b9845d9c130755334f5a97f
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.author: parshah
+ms.openlocfilehash: ecb4f9540651b52f28626f8baa88854ff133b9d0
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565721"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401997"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Vejledning i kapacitetsplanlægning i Power BI-rapportserver
 Power BI-rapportserver er en selvbetjenings-BI og virksomhedsrapporteringsløsning, som kunder kan installere i deres lokale miljø, bag deres firewall. Løsningen kombinerer den interaktive rapporteringskapacitet i Power BI Desktop med serverplatformen i SQL Server Reporting Services i det lokale miljø. I takt med virksomheders stigende og omfattende brug af analyser og rapportering, kan det være en udfordring at udarbejde et budget, der tager højde for de skalerbare løsninger til hardwareinfrastrukturen og de softwarelicenser, der kræves til en virksomheds brugergrundlag. Denne rapports primære sigte er at give en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af adskillelige gennemførsler af belastningstest ved forskellige arbejdsbelastninger i forhold til en rapportserver. Organisationers rapporterings-, forespørgsels- og brugsmønstre varierer betydeligt, men resultaterne forelagt i denne rapport kan, sammen med de anvendte faktiske test og en detaljeret beskrivelse af deres gennemførselsmetode, bruges som referencepunkt for alle, der er i den tidlige planlægningsfase i processen med at installere Power BI-rapportserver.
@@ -21,7 +21,7 @@ Power BI-rapportserver er en selvbetjenings-BI og virksomhedsrapporteringsløsni
 ## <a name="executive-summary"></a>Resume af udførelsen
 Vi har udført to forskellige typer arbejdsbelastninger i forhold til Power BI-rapportserveren; hver arbejdsbelastning bestod i at gengive forskellige typer rapporter samt i at udføre forskellige webportal-handlinger. 
 
-* I "Power BI tung rapport"-arbejdsbelastningen var den hyppigst udførte handling (dvs. handlingen, der udføres 60 % af gangene) at gengive Power BI-rapporter.
+* I "Power BI tung rapport"-arbejdsbelastningen var den hyppigst udførte handling (dvs. handlingen udføres 60 % af gangene) at gengive Power BI-rapporter.
 * I "Sideinddelt tung rapport"-arbejdsbelastningen var den hyppigst udførte handling at gengive sideinddelte rapporter.
 
 Under en topologi med fire servere i Power BI-rapportserver og en forventning om at højst 5 % af brugere vil tilgå en rapportserver på ethvert givent tidspunkt, så viser den følgende tabel det maksimale antal brugere, som Power BI-rapportserver kan håndtere med mindst 99 % pålidelighed. 
@@ -56,7 +56,7 @@ De brugte test i belastningstestkørslerne er offentligt tilgængelige i et GitH
 * Test med simuleret gengivelse af små og store sideinddelte rapporter, og 
 * Test med simuleret udførelse af forskellige typer webportalhandlinger. 
 
-Alle test blev udarbejdet for at udføre en komplet handling (såsom at gengive en rapport, oprette en ny datakilde, osv.). De opnår dette ved at udføre en eller flere webanmodninger til rapportserveren (via API'er). I den virkelige verden kan en bruger have brug for at udføre nogle få mellemliggende handlinger for at gennemføre en af disse komplette handlinger. En bruger skal f.eks. gå til webportalen, navigere til mappen med rapporten, og derefter klikke på den pågældende rapport for at gengive den. Selvom alle de nødvendige handlinger for at udføre en komplet opgave ikke udføres i testene, så omfatter de stadig det meste af belastningen, som pålægges Power BI rapportserveren. Du kan få mere at vide om de forskellige typer af rapporter, der bruges, samt de forskellige handlinger, der udføres, ved at granske GitHub-projektet.  
+Alle test blev udarbejdet for at udføre en komplet handling (såsom at gengive en rapport, oprette en ny datakilde, osv.). De opnår dette ved at udføre en eller flere webanmodninger til rapportserveren (via API'er). I den virkelige verden kan en bruger have brug for at udføre nogle få mellemliggende handlinger for at gennemføre en af disse komplette handlinger. En bruger skal f.eks. gå til webportalen, navigere til mappen med rapporten, og derefter klikke på den pågældende rapport for at gengive den. Selvom alle de nødvendige handlinger for at udføre en komplet opgave ikke udføres i testene, så omfatter de stadig det meste af belastningen, som pålægges Power BI-rapportserveren. Du kan få mere at vide om de forskellige typer af rapporter, der bruges, samt de forskellige handlinger, der udføres, ved at granske GitHub-projektet.  
 
 > [!NOTE]
 > Værktøjet understøttes ikke officielt af Microsoft, men produktteamet bidrager til projektet og de løser problemer, der er indsendt af andre bidragydere.
@@ -68,7 +68,7 @@ Der er to arbejdsbelastningsprofiler i testene: tung Power BI-rapport og sideind
 | --- | --- | --- |
 | **Gengivelse af Power BI-rapporter** |60 % |10 % |
 | **Gengivelse af sideinddelte (RDL) rapporter** |30 % |60 % |
-| **Gengivelsen mobilrapporter** |5 % |20 % |
+| **Gengivelsen mobilrapporter** |5 % |20 % |
 | **Webportalhandlinger** |5 % |10 % |
 
 ### <a name="user-load"></a>Brugerbelastning
@@ -107,7 +107,7 @@ Vælg en rapport for at få vist resultaterne af belastningstesten.
 
 <iframe width="640" height="360" src="https://msit.powerbi.com/view?r=eyJrIjoiOTU0YjJkYTgtNDg4Yy00NzlhLWIwMGYtMzg4YWI2MjNmOTZjIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9" frameborder="0" allowFullScreen="true"></iframe>
 
-## <a name="summary"></a>Sammenfatning
+## <a name="summary"></a>Oversigt
 I hver kørte belastningstest var CPU'en den mest overbelastede ressource under spidsbelastningen af Power BI-rapporteringsserverens computer. På grund af dette bør du den første ressource, du prioriterer, være antallet af antallet af CPU-kerner. Du kan også overveje at skalere ud ved at tilføje flere servere som vært for Power BI-rapportserveren i topologien.
 
 De resultater, der er fremlagt i denne rapport, er opnået ved at udføre en specifik række rapporter, der forbruger en specifik række data, gentaget på en specifik måde. De udgør et nyttigt referencepunkt, men vær opmærksom på, at din brug afhænger af dine rapporter, forespørgsler, brugsmønstre og installation af Power BI-rapportserveren.
@@ -116,7 +116,7 @@ De resultater, der er fremlagt i denne rapport, er opnået ved at udføre en spe
 ### <a name="1-topology"></a>1 Topologi
 **1.1 Power BI-rapportservertopologi**
 
-For udelukkende at fokusere på Power BI-rapportserverens funktionsmåde under forskellige konfigurationer, så blev der brugt en fast VM-konfiguration for hver type computer (med undtagelse af computeren der var vært for Power BI-rapportserveren). Hver computer blev klargjort i overensstemmelse med anden generation (v2) D Serie-computere med Premium Storage-harddiske. Du kan finde detaljerede oplysninger om størrelsen af hver enkelt VM i afsnittet "Generel" på https://azure.microsoft.com/pricing/details/virtual-machines/windows/.
+For udelukkende at fokusere på Power BI-rapportserverens funktionsmåde under forskellige konfigurationer, så blev der brugt en fast VM-konfiguration for hver type computer (med undtagelse af computeren der var vært for Power BI-rapportserveren). Hver computer blev klargjort i overensstemmelse med anden generation (v2) D Serie-computere med Premium Storage-harddiske. Du kan finde detaljerede oplysninger om størrelsen af hver enkelt VM i afsnittet "Generelle formål" på https://azure.microsoft.com/pricing/details/virtual-machines/windows/.
 
 | Type af virtuel maskine | Processor | Hukommelse | Azure VM-størrelse |
 | --- | --- | --- | --- |
@@ -126,7 +126,7 @@ For udelukkende at fokusere på Power BI-rapportserverens funktionsmåde under f
 
 **1.2 Konfiguration af Power BI-rapportservers virtuelle maskine** 
 
-Forskellige konfigurationer af processor og hukommelse er blevet brugt til den virtuelle maskine, der hoster Power BI-rapportserveren. Til forskel fra andre VM'er er denne computer blevet klargjort i overensstemmelse med tredje generation (v3) D Serie-computere med Premium Storage-harddiske. Du kan finde detaljerede oplysninger om størrelsen af denne VM i afsnittet "Generel" på https://azure.microsoft.com/pricing/details/virtual-machines/windows/.
+Forskellige konfigurationer af processor og hukommelse er blevet brugt til den virtuelle maskine, der hoster Power BI-rapportserveren. Til forskel fra andre VM'er er denne computer blevet klargjort i overensstemmelse med tredje generation (v3) D Serie-computere med Premium Storage-harddiske. Du kan finde detaljerede oplysninger om størrelsen af denne VM i afsnittet "Generelle formål" på https://azure.microsoft.com/pricing/details/virtual-machines/windows/.
 
 | Virtuel maskine | Processor | Hukommelse | Azure VM-størrelse |
 | --- | --- | --- | --- |
@@ -143,4 +143,3 @@ Hvis du vil køre værktøjet Reporting Services LoadTest på din eller en Micro
 5. Når du har udrullet miljøet, skal du følge instruktionerne på https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution for at køre de relevante tests.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

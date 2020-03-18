@@ -7,279 +7,284 @@ ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 06/18/2019
-ms.openlocfilehash: be7a708dfcc6ebc40c62a1a9075e2cbf134363b1
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.topic: how-to
+ms.date: 02/24/2020
+ms.openlocfilehash: 3614505cec185779bce3f63c6e7a565a5ef39443
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76818680"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920886"
 ---
-# <a name="microsoft-power-bi-visuals-interactivity-utils"></a>Interaktivitetsutils til Microsoft Power BI-visuals
+# <a name="power-bi-visuals-interactivity-utils"></a>Interaktivitetsutils til Power BI-visuals
 
-Interaktivitetsutils er en række funktioner og klasser, der forenkler implementeringen af krydsvalg og krydsfiltrering for brugerdefinerede visuals i Power BI.
+Interaktivitetshjælpeprogrammer (`InteractivityUtils`) er en række funktioner og klasser, der forenkler implementeringen af krydsvalg og krydsfiltrering.
+
+> [!NOTE]
+> De nye opdateringer af interaktivitetshjælpeprogrammer understøtter kun den nyeste version af Tools (3.x.x og derover).
 
 ## <a name="installation"></a>Installation
 
-> [!NOTE]
-> Hvis du fortsætter med at bruge den gamle version af powerbi-visuals-tools (et versionsnummer mindre end 3.x.x), skal du installere den nye version (3.x.x).
+1. Hvis du vil installere pakken, skal du køre følgende kommando i mappen med din aktuelle Power BI-visualisering.
 
-> [!IMPORTANT]
-> De nye opdateringer af interaktivitetsutils understøtter kun den nyeste version af Tools. [Læs mere om, hvordan du opdaterer din visualkode, så den kan bruges sammen med de nyeste værktøjer](migrate-to-new-tools.md)
+    ```bash
+    npm install powerbi-visuals-utils-interactivityutils --save
+    ```
 
-Hvis du vil installere pakken, skal du køre følgende kommando i mappen med din aktuelle brugerdefinerede visual:
+2. Hvis du bruger version 3.0 eller nyere eller værktøjet, skal du installere `powerbi-models` for at løse afhængigheder.
 
-```bash
-npm install powerbi-visuals-utils-interactivityutils --save
-```
+    ```bash
+    npm install powerbi-models --save
+    ```
 
-Fra version 3,0 eller nyere skal du også installere ```powerbi-models``` for at løse problemer med afhængigheder.
+3. Hvis du vil bruge interaktivitetshjælpeprogrammer, skal du importere den påkrævede komponent i Power BI-visualiseringens kildekode.
 
-```bash
-npm install powerbi-models --save
-```
+    ```typescript
+    import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
+    ```
 
-For at bruge interaktivitetsutils skal du importere den påkrævede komponent i visual'ets kildekode.
+### <a name="including-the-css-files"></a>Medtagning af CSS-filerne
 
-```typescript
-import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
-```
-
-### <a name="including-css-artifacts-to-the-custom-visual"></a>Inkludering af CSS-artefakter i det brugerdefinerede visual
-
-Hvis du vil bruge pakken sammen med dine brugerdefinerede visuals, skal du importere følgende CSS-fil til filen `your.less`:
+Hvis du vil bruge pakken sammen med dine brugerdefinerede Power BI-visualiseringer, skal du importere følgende CSS-fil til filen `.less`.
 
 `node_modules/powerbi-visuals-utils-interactivityutils/lib/index.css`
 
-Du får derefter følgende filstruktur:
+Importér CSS-filen som en `.less`-fil, fordi Power BI-visualiseringsværktøjet ombryder eksterne CSS-regler.
 
 ```less
 @import (less) "node_modules/powerbi-visuals-utils-interactivityutils/lib/index.css";
 ```
 
-> [!NOTE]
-> Du skal importere. css-filen som en .less-fil, da Power BI Visuals Tools samler de eksterne CSS-regler.
+## <a name="selectabledatapoint-properties"></a>Egenskaber for SelectableDataPoint
 
-## <a name="usage"></a>Forbrug
+Datapunkter indeholder normalt valg og værdier. Grænsefladen udvider `SelectableDataPoint`-grænsefladen.
 
-### <a name="define-interface-for-data-points"></a>Definer grænsefladen for datapunkter
-
-Datapunkter indeholder normalt valg og værdier. Grænsefladen udvider `SelectableDataPoint`-grænsefladen. `SelectableDataPoint` indeholder allerede egenskaber:
+`SelectableDataPoint` indeholder allerede egenskaber som beskrevet nedenfor.
 
 ```typescript
-  /** Flag for identifying that data point was selected */
+  /** Flag for identifying that a data point was selected */
   selected: boolean;
+
   /** Identity for identifying the selectable data point for selection purposes */
   identity: powerbi.extensibility.ISelectionId;
-  /**
+
+  /*
    * A specific identity for when data points exist at a finer granularity than
-   * selection is performed.  For example, if your data points should select based
-   * only on series even if they exist as category/series intersections.
+   * selection is performed.  For example, if your data points select based
+   * only on series, even if they exist as category/series intersections.
    */
+
   specificIdentity?: powerbi.extensibility.ISelectionId;
 ```
 
-Det første trin i brugen af interaktivitetsutils er oprettelsen af en forekomst af interaktivitetsutils og lagring af objektet som en egenskab for visual'et
+## <a name="defining-an-interface-for-data-points"></a>Definition af grænsefladen for datapunkter
 
-```typescript
-export class Visual implements IVisual {
-  // ...
-  private interactivity: interactivityBaseService.IInteractivityService<VisualDataPoint>;
-  // ...
-  constructor(options: VisualConstructorOptions) {
+1. Opret en forekomst af interaktivitetshjælpeværktøjer, og gem objektet som en egenskab i visualiseringen
+
+    ```typescript
+    export class Visual implements IVisual {
       // ...
-      this.interactivity = interactivitySelectionService.createInteractivitySelectionService(this.host);
+      private interactivity: interactivityBaseService.IInteractivityService<VisualDataPoint>;
       // ...
-  }
-}
-```
+      constructor(options: VisualConstructorOptions) {
+          // ...
+          this.interactivity = interactivitySelectionService.createInteractivitySelectionService(this.host);
+          // ...
+      }
+    }
+    ```
 
-```typescript
-import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
+    ```typescript
+    import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
 
-export interface VisualDataPoint extends interactivitySelectionService.SelectableDataPoint {
-    value: powerbi.PrimitiveValue;
-}
-```
+    export interface VisualDataPoint extends interactivitySelectionService.SelectableDataPoint {
+        value: powerbi.PrimitiveValue;
+    }
+    ```
 
-Det andet trin er at udvide klassen for basisfunktionsmåden:
+2. Udvid den grundlæggende funktionsmådeklasse.
 
-> [!NOTE]
-> BaseBehavior introducerede i [5.6. x-versionen af interaktivitetsutils](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0). Hvis du bruger den gamle version, skal du oprette funktionsmådeklassen fra eksemplet nedenfor (`BaseBehavior`-klassen er den samme):
+    > [!NOTE]
+    > `BaseBehavior` blev introduceret i [5.6. x-versionen af interaktivitetshjælpeprogrammer](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0). Hvis du bruger en ældre version, skal du oprette funktionsmådeklassen fra eksemplet nedenfor.
 
-Definer grænsefladen for indstillinger for funktionsmådeklassen:
+3. Definer grænsefladen for indstillinger for funktionsmådeklassen.
 
-```typescript
-import { SelectableDataPoint } from "./interactivitySelectionService";
+    ```typescript
+    import { SelectableDataPoint } from "./interactivitySelectionService";
 
-import {
-    IBehaviorOptions,
-    BaseDataPoint
-} from "./interactivityBaseService";
+    import {
+        IBehaviorOptions,
+        BaseDataPoint
+    } from "./interactivityBaseService";
 
-export interface BaseBehaviorOptions<SelectableDataPointType extends BaseDataPoint> extends IBehaviorOptions<SelectableDataPointType> {
-    /** D3 selection object of main elements on the chart */
+    export interface BaseBehaviorOptions<SelectableDataPointType extends BaseDataPoint> extends IBehaviorOptions<SelectableDataPointType> {
+
+    /** d3 selection object of the main elements on the chart */
     elementsSelection: Selection<any, SelectableDataPoint, any, any>;
-    /** D3 selection object of some element on backgroup to hadle click of reset selection */
+
+    /** d3 selection object of some elements on backgroup, to hadle click of reset selection */
     clearCatcherSelection: d3.Selection<any, any, any, any>;
-}
-```
+    }
+    ```
 
-Definer en klasse for `visual behavior`. Den klasse, der er ansvarlig for håndtering af musehændelserne `click`, `contextmenu`.
-Når en bruger klikker på dataelementer, kalder visual'et valghandleren for at vælge datapunkter. Hvis brugeren klikker på baggrunds elementet i visual'et, kalder den clear-valghandleren. Og klassen har tilsvarende metoder: `bindClick`, `bindClearCatcher`, `bindContextMenu`.
+4. Definer en klasse for `visual behavior`. Du kan også udvide klassen `BaseBehavior`.
 
-```typescript
-export class Behavior<SelectableDataPointType extends BaseDataPoint> implements IInteractiveBehavior {
-    /** D3 selection object of main elements on the chart */
-    protected options: BaseBehaviorOptions<SelectableDataPointType>;
-    protected selectionHandler: ISelectionHandler;
+    **Definition af en klasse for `visual behavior`**
 
+    Den klasse, der er ansvarlig for håndtering af musehændelserne `click` `contextmenu`.
+
+    Når en bruger klikker på dataelementer, kalder visualiseringen valghandleren for at vælge datapunkter. Hvis brugeren klikker på baggrundselementet i visualiseringen, kalder den valghandleren for ryd.
+
+    Klassen har følgende tilsvarende metoder:
+    * `bindClick`
+    * `bindClearCatcher`
+    * `bindContextMenu`.
+
+    ```typescript
+    export class Behavior<SelectableDataPointType extends BaseDataPoint> implements IInteractiveBehavior {
+
+        /** d3 selection object of main elements in the chart */
+        protected options: BaseBehaviorOptions<SelectableDataPointType>;
+        protected selectionHandler: ISelectionHandler;
+    
+        protected bindClick() {
+          // ...
+        }
+    
+        protected bindClearCatcher() {
+          // ...
+        }
+    
+        protected bindContextMenu() {
+          // ...
+        }
+    
+        public bindEvents(
+            options: BaseBehaviorOptions<SelectableDataPointType>,
+            selectionHandler: ISelectionHandler): void {
+          // ...
+        }
+    
+        public renderSelection(hasSelection: boolean): void {
+          // ...
+        }
+    }
+    ```
+
+    **Udvidelse af klassen `BaseBehavior`**
+
+    ```typescript
+    import powerbi from "powerbi-visuals-api";
+    import { interactivitySelectionService, baseBehavior } from "powerbi-visuals-utils-interactivityutils";
+
+    export interface VisualDataPoint extends interactivitySelectionService.SelectableDataPoint {
+        value: powerbi.PrimitiveValue;
+    }
+
+    export class Behavior extends baseBehavior.BaseBehavior<VisualDataPoint> {
+      // ...
+    }
+    ```
+
+5. Hvis du vil håndtere klik på elementer, skal du kalde *d3*-valgobjektet for metoden `on`. Dette gælder også for `elementsSelection` og `clearCatcherSelection`.
+
+    ```typescript
     protected bindClick() {
-      // ...
+      const {
+          elementsSelection
+      } = this.options;
+    
+      elementsSelection.on("click", (datum) => {
+          const mouseEvent: MouseEvent = getEvent() as MouseEvent || window.event as MouseEvent;
+          mouseEvent && this.selectionHandler.handleSelection(
+              datum,
+              mouseEvent.ctrlKey);
+      });
     }
+    ```
 
-    protected bindClearCatcher() {
-      // ...
-    }
+6. Tilføj en lignende handler, så hændelsen `contextmenu` kalder valgstyringsmetodens `showContextMenu`.
 
+    ```typescript
     protected bindContextMenu() {
-      // ...
+        const {
+            elementsSelection
+        } = this.options;
+    
+        elementsSelection.on("contextmenu", (datum) => {
+            const event: MouseEvent = (getEvent() as MouseEvent) || window.event as MouseEvent;
+            if (event) {
+                this.selectionHandler.handleContextMenu(
+                    datum,
+                    {
+                        x: event.clientX,
+                        y: event.clientY
+                    });
+                event.preventDefault();
+            }
+        });
     }
+    ```
 
-    public bindEvents(
-        options: BaseBehaviorOptions<SelectableDataPointType>,
-        selectionHandler: ISelectionHandler): void {
-      // ...
-    }
+7. Hvis du vil tildele funktioner til handlere, kalder interaktivitetshjælpeprogrammer metoden `bindEvents`. Føj følgende kald til metoden `bindEvents`:
+    * `bindClick`
+    * `bindClearCatcher`
+    * `bindContextMenu`
 
+    ```typescript
+      public bindEvents(
+          options: BaseBehaviorOptions<SelectableDataPointType>,
+          selectionHandler: ISelectionHandler): void {
+
+          this.options = options;
+          this.selectionHandler = selectionHandler;
+
+          this.bindClick();
+          this.bindClearCatcher();
+          this.bindContextMenu();
+      }
+    ```
+
+8. Metoden `renderSelection` er ansvarlig for at opdatere elementers visualtilstand i diagrammet. Eksempel på implementeringen af `renderSelection`.
+
+    ```typescript
     public renderSelection(hasSelection: boolean): void {
-      // ...
+        this.options.elementsSelection.style("opacity", (category: any) => {
+            if (category.selected) {
+                return 0.5;
+            } else {
+                return 1;
+            }
+        });
     }
-}
-```
+    ```
 
-Du kan også udvide `BaseBehavior`-klassen:
+9. Det sidste trin er oprettelse af en forekomst af `visual behavior` og kald af metoden `bind` for forekomsten af interaktivitetshjælpeprogrammer.
 
-```typescript
-import powerbi from "powerbi-visuals-api";
-import { interactivitySelectionService, baseBehavior } from "powerbi-visuals-utils-interactivityutils";
-
-export interface VisualDataPoint extends interactivitySelectionService.SelectableDataPoint {
-    value: powerbi.PrimitiveValue;
-}
-
-export class Behavior extends baseBehavior.BaseBehavior<VisualDataPoint> {
-  // ...
-}
-```
-
-Hvis du vil håndtere klik på elementer, skal du kalde metoden `on` for D3-valgobjektet (også for elementsSelection og clearCatcherSelection):
-
-```typescript
-protected bindClick() {
-  const {
-      elementsSelection
-  } = this.options;
-
-  elementsSelection.on("click", (datum) => {
-      const mouseEvent: MouseEvent = getEvent() as MouseEvent || window.event as MouseEvent;
-      mouseEvent && this.selectionHandler.handleSelection(
-          datum,
-          mouseEvent.ctrlKey);
-  });
-}
-```
-
-Tilføj en lignende handler, så hændelsen `contextmenu` kalder metoden `showContextMenu` for valgstyringen:
-
-```typescript
-protected bindContextMenu() {
-    const {
-        elementsSelection
-    } = this.options;
-
-    elementsSelection.on("contextmenu", (datum) => {
-        const event: MouseEvent = (getEvent() as MouseEvent) || window.event as MouseEvent;
-        if (event) {
-            this.selectionHandler.handleContextMenu(
-                datum,
-                {
-                    x: event.clientX,
-                    y: event.clientY
-                });
-            event.preventDefault();
-        }
+    ```typescript
+    this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
+        behavior: this.behavior,
+        dataPoints: this.categories,
+        clearCatcherSelection: select(this.target),
+        elementsSelection: selectionMerge
     });
-}
-```
+    ```
 
-Interaktivitetsutils kalder `bindEvents`-metoder for at tildele funktioner til handlere, føje kald af `bindClick`, `bindClearCatcher`og `bindContextMenu` til metoden `bindEvents`:
+    * `selectionMerge` er et *d3*-valgobjekt, som repræsenterer alle elementer, der kan vælges i visualiseringen.
+    * `select(this.target)` er et *d3*-valgobjekt, som repræsenterer visualiseringens primære DOM-elementer.
+    * `this.categories` er datapunkter med elementer, hvor grænsefladen er `VisualDataPoint` eller `categories: VisualDataPoint[];`.
+    * `this.behavior` er en ny forekomst af `visual behavior`, der er oprettet i visualiseringskonstruktøren, som vist nedenfor.
 
-```typescript
-  public bindEvents(
-      options: BaseBehaviorOptions<SelectableDataPointType>,
-      selectionHandler: ISelectionHandler): void {
-
-      this.options = options;
-      this.selectionHandler = selectionHandler;
-
-      this.bindClick();
-      this.bindClearCatcher();
-      this.bindContextMenu();
-  }
-```
-
-Metoden `renderSelection` er ansvarlig for at opdatere elementers visualtilstand i diagrammet.
-
-Eksempel på metoden `renderSelection` for implementering:
-
-```typescript
-public renderSelection(hasSelection: boolean): void {
-    this.options.elementsSelection.style("opacity", (category: any) => {
-        if (category.selected) {
-            return 0.5;
-        } else {
-            return 1;
-        }
-    });
-}
-```
-
-Det sidste trin er oprettelse af en forekomst af `visual behavior` og kald af metoden `bind` for forekomsten af interaktivitetsutils:
-
-```typescript
-this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
-    behavior: this.behavior,
-    dataPoints: this.categories,
-    clearCatcherSelection: select(this.target),
-    elementsSelection: selectionMerge
-});
-```
-
-* `selectionMerge` er et D3-valgobjekt, som repræsenterer alle elementer, der kan vælges, i visual'et.
-
-* `select(this.target)` er et D3-valgobjekt, som repræsenterer visual'ets DOM-hovedelementer.
-
-* `this.categories` er datapunkter med elementer, hvor grænsefladen er `VisualDataPoint` (eller `categories: VisualDataPoint[];`)
-
-* `this.behavior` er en ny forekomst af `visual behavior`
-
-  der er oprettet i visualkonstruktøren:
-
-  ```typescript
-  export class Visual implements IVisual {
-    // ...
-    constructor(options: VisualConstructorOptions) {
+      ```typescript
+      export class Visual implements IVisual {
         // ...
-        this.behavior = new Behavior();
-    }
-    // ...
-  }
-  ```
-
-Nu er dit visual klar til at håndtere valg.
-
+        constructor(options: VisualConstructorOptions) {
+            // ...
+            this.behavior = new Behavior();
+        }
+        // ...
+      }
+      ```
 ## <a name="next-steps"></a>Næste trin
 
 * [Læs om, hvordan du kan håndtere valg ved skift af bogmærker](bookmarks-support.md#visuals-with-selection)

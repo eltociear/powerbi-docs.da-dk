@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 9da9465bea8512b541d3f1af3983df70d184ac26
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5ad960560ba6c99228ba63ee0041789b9ec6ff7d
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875665"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114980"
 ---
 # <a name="what-is-power-bi"></a>Hvad er Power BI?
 **Power BI** er en samling af softwaretjenester, apps og forbindelser, der arbejder sammen for at forvandle usammenhængende data til faste, visuelt fordybende og interaktive indsigter. Dine data kan være et Excel-regneark eller en samling cloudbaserede hybride data warehouses og hybride data warehouses i det lokale miljø. Med Power BI kan du nemt oprette forbindelse til dine datakilder, visualisere og finde vigtigt indhold samt dele det med alle, du vil.
@@ -51,7 +51,7 @@ Udforsk dokumenter, der er relevante for din rolle:
 En typisk arbejdsgang i Power BI starter med at oprette forbindelse til datakilder og at oprette en rapport i Power BI Desktop. Du publicerer derefter den pågældende rapport fra Power BI Desktop til Power BI-tjenesten og deler den, så slutbrugerne i Power BI-tjenesten og på mobilenhederne kan se og interagere med rapporten.
 Denne arbejdsproces er almindelig og viser, hvordan de tre hovedelementer i Power BI komplementerer hinanden.
 
-Her er en detaljeret [sammenligning af Power BI Desktop og Power BI-tjenesten](../designer/service-service-vs-desktop.md).
+Her er en detaljeret [sammenligning af Power BI Desktop og Power BI-tjenesten](../fundamentals/service-service-vs-desktop.md).
 
 ## <a name="on-premises-reporting-with-power-bi-report-server"></a>Rapportering i det lokale miljø med Power BI-rapportserveren
 
@@ -66,6 +66,6 @@ Power BI-rapportserveren er en løsning, som du udruller bag firewallen, og som 
 Læs mere om [Power BI-rapportserver](../report-server/get-started.md).
 
 ## <a name="next-steps"></a>Næste trin
-- [Hurtig introduktion: Find vej i Power BI-tjenesten](../service-the-new-power-bi-experience.md)   
+- [Hurtig start: Find vej i Power BI-tjenesten](../service-the-new-power-bi-experience.md)   
 - [Selvstudium: Kom i gang med Power BI-tjenesten](../service-get-started.md)
-- [Hurtig introduktion: Opret forbindelse til data i Power BI Desktop](../desktop-quickstart-connect-to-data.md)
+- [Hurtig start: Opret forbindelse til data i Power BI Desktop](../desktop-quickstart-connect-to-data.md)

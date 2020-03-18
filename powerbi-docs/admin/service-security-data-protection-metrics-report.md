@@ -3,19 +3,18 @@ title: Rapport over databeskyttelsesmålepunkter
 description: Få mere at vide om rapport over databeskyttelsesmålepunkter
 author: paulinbar
 manager: rkarlin
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 03/11/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 952f47f60e14932ce4b22dbd01bf60d9d7243c62
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: d2bd3308de21aa6064765b820745201efd8b23ab
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542145"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79112484"
 ---
 # <a name="data-protection-metrics-report-preview"></a>Rapport over databeskyttelsesmålepunkter (eksempel)
 
@@ -52,6 +51,7 @@ Forbedrede versioner af rapporten over databeskyttelsesmålepunkter frigives reg
 * For at få adgang til Cloud App Security-oplysninger skal din organisation have den relevante [Cloud App Security-licens](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls#microsoft-cloud-app-security-licensing).
 * Hvis du beslutter at dele oplysninger fra rapporten over databeskyttelsesmålepunkter med en bruger, der ikke er Power BI-administrator, skal du være opmærksom på, at denne rapport indeholder følsomme oplysninger om din organisation.
 * Rapporten over databeskyttelsesmålepunkter er en speciel type rapport og vises ikke på listerne "Delt med mig", "Seneste" og "Favoritter".
+* Rapporten over databeskyttelsesmålepunkter er ikke tilgængelig for [eksterne brugere (Azure Active Directory B2B-gæstebrugere)](../service-admin-azure-ad-b2b.md).
 ## <a name="next-steps"></a>Næste trin
 * [Databeskyttelse i Power BI (prøveversion)](./service-security-data-protection-overview.md)
 * [Brug af Microsoft Cloud App Security-kontrolelementer i Power BI (prøveversion)](./service-security-using-microsoft-cloud-app-security-controls.md)

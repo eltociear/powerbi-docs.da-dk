@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 03/10/2020
 ms.author: kfollis
-ms.openlocfilehash: 261d800dac9b65747e648bc76944a0b8a5077b73
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 1853e710958b5bed0dad011594d9e04ccc99842d
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427087"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041671"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-datakilder
 
@@ -43,7 +43,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Azure HDInsight (HDFS) | Ja | Ja | Nej | Nej | Nej |
 | Azure HDInsight Spark | Ja | Ja | Ja | Nej | Nej |
 | Azure SQL Database | Ja | Ja | Ja | Ja <sup>2</sup> | Nej |
-| Azure SQL Data Warehouse | Ja | Ja | Ja | Nej | Nej |
+| Azure SQL Data Warehouse | Ja | Ja | Ja | Ja <sup>2</sup> | Nej |
 | Azure Table Storage | Ja | Ja | Nej | Ja | Nej |
 | BI Connector | Ja | Ja | Ja | Ja | Ja |
 | BI360 – Budgeting & Financial Reporting | Ja | Ja | Nej | Nej | Nej |
@@ -134,7 +134,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Twilio | Ja | Ja | Nej | Nej | Nej |
 | tyGraph | Ja | Ja | Nej | Nej | Nej |
 | Vertica | Ja | Ja | Ja | Ja | Ja |
-| Web | Ja | Ja | Nej | Ja | Ja |
+| Web | Ja | Ja | Nej | Ja | Ja <sup>6</sup> |
 | Webtrends | Ja | Ja | Nej | Nej | Nej |
 | Workforce Dimensions | Ja | Ja | Nej | Ja | Nej |
 | XML | Ja | Ja | Nej | Ja | Nej <sup>4</sup> |
@@ -143,13 +143,15 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 
 <sup>1</sup> Understøttes med [ACE OLEDB-provideren](https://www.microsoft.com/download/details.aspx?id=54920) installeret på samme maskine som gatewayen.
 
-<sup>2</sup> Understøttes med den samme M-funktion som versionen i det lokale miljø.
+<sup>2</sup> Understøttes med den samme M-funktion som versionen i det lokale miljø, hvilket medfører begrænsede godkendelsesindstillinger (gateway understøtter ikke OAuth).
 
 <sup>3</sup> Filer af typen Excel 1997-2003 (.xls) kræver [ACE OLEDB-provideren](https://www.microsoft.com/download/details.aspx?id=54920).
 
 <sup>4</sup> Kræves til teknologiversionen i det lokale miljø.
 
 <sup>5</sup> Understøttes kun med den [personlige gateway](service-gateway-personal-mode.md).
+
+<sup>6</sup> Kræves til HTML, XLS og Access-databaser
 
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>Enkeltlogon til DirectQuery-kilder
 

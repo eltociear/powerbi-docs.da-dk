@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/09/2020
 ms.author: painbar
-ms.openlocfilehash: 7aa31d9c6eadd4c7c9c88c9006a360a6089f28e2
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: 97d2a3acba87309b74de1776f1325bb4c4a78910
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77259815"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041543"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -21,6 +21,29 @@ Du kan finde relaterede oplysninger om nyheder under:
 * [Power BI-teamets blog til mobilapps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheder i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheder i Power BI-tjenesten](../../service-whats-new.md)  
+
+## <a name="february-2020"></a>Februar 2020
+
+### <a name="multi-select-mode-android-and-ios"></a>Multivalgstilstand (Android og iOS)
+
+Vi har tilføjet muligheden for at vælge flere datapunkter på en rapportside. Når multivalgstilstand er slået til, bliver hvert enkelt datapunkt, du trykker på, føjet til de andre valgte datapunkter, og de kombinerede resultater fremhæves automatisk i alle visualiseringerne på siden. Hvis du vil aktivere multivalgstilstand, skal du gå til siden med [indstillinger for mobilapps](./mobile-app-interaction-settings.md).
+
+>[!NOTE]
+>Multivalgstilstand understøttes på Power BI-rapportserver i den næste version af rapportserveren.
+
+### <a name="report-footer-can-now-always-be-visible-in-the-mobile-app-for-iphones"></a>Rapportfoden kan nu altid ses i mobilappen til iPhones
+
+Nu kan du på din iPhone (på samme måde som din Android-telefon) beslutte at fastgøre rapportfoden nederst på rapportsiden, hvor den altid er synlig og tilgængelig, uanset hvilke handlinger der er på siden. Det gør det nemt at bruge alle de indstillinger, den indeholder. Hvis du vil fastgøre sidefoden, skal du slå **Fastgjort til rapportfoden** til på siden med [indstillinger for mobilapps](./mobile-app-interaction-settings.md).
+
+### <a name="support-for-pbirs-reports-preview-windows"></a>Understøttelse af PBIRS-rapporter (prøveversion) (Windows)
+
+Nu kan du åbne dine PBIRS-rapporter (Power BI-rapportserver) i Power BI-appen.
+
+### <a name="quickly-access-your-recent-items-windows"></a>Få hurtig adgang til dine nyeste elementer (Windows)
+
+Højreklik på Power BI-appens ikon på proceslinjen i Windows for at få en liste over alle dine senest viste elementer. Klik på et element på listen for at få det vist igen.
+
+![Menu til hurtig adgang på proceslinjen](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-windows-taskbar-quick-access.png)
 
 ## <a name="january-2020"></a>Januar 2020
 
@@ -38,7 +61,7 @@ Vi har hørt fra vores Android-brugere, at deres oplevelser med rapporter ikke e
 
 De brugere, der foretrækker den forrige funktion, kan gendanne disse funktionsmåder med mobilappens nye, udvidede [interaktionsindstillinger](./mobile-app-interaction-settings.md).
 
-IT-administratorer kan desuden [eksternt tilsidesætte de nye standardindstillinger](./mobile-app-configuration.md#interaction-settings-android) på vegne af deres brugere ved hjælp af deres MDM-værktøj med en konfigurationsfil til appen. På denne måde kan alle brugere i en organisation have samme funktionsmåde konfigureret for dem.
+IT-administratorer kan desuden [eksternt tilsidesætte de nye standardindstillinger](./mobile-app-configuration.md#interaction-settings-ios-and-android) på vegne af deres brugere ved hjælp af deres MDM-værktøj med en konfigurationsfil til appen. På denne måde kan alle brugere i en organisation have samme funktionsmåde konfigureret for dem.
 
 > [!NOTE]
 > Interaktionsindstillinger for opdateringsknappen og for fastgøring af rapportfoden har i øjeblikket ingen effekt på Rapportserver-rapporter. Dette ændres med udgivelsen af Rapportserver i januar 2020.
@@ -96,7 +119,7 @@ Få mere at vide om [brugerdefineret navigation](https://powerbi.microsoft.com/b
 
 ### <a name="introducting-power-bi-mobile-new-look-preview-ios-and-android"></a>Introduktion af det nye udseende af Power BI – Mobil (prøveversion) (iOS og Android)
 
-Vi har opdateret vores app og introduceret nye oplevelser, hvor vi har tilføjet en hjemmeside, der giver hurtig adgang til dit mest brugte indhold, samt nye navigationsruder, der giver dig en nem måde at navigere i appen på. Med de nye og opdaterede oplevelser er det nu hurtigere og nemmere at finde det, du har brug for, når du har brug for det.
+Vi har opdateret vores app og introduceret nye oplevelser, hvor vi har tilføjet en startside, der giver hurtig adgang til dit mest brugte indhold, samt nye navigationsruder, der giver dig en nem måde at navigere i appen på. Med de nye og opdaterede oplevelser er det nu hurtigere og nemmere at finde det, du har brug for, når du har brug for det.
 Da det nye udseende er en prøveversion, skal du slå det til for at nyde godt af det.
 Læs mere om [det nye udseende af Power BI – Mobil](https://powerbi.microsoft.com/blog/introducing-power-bi-mobile-apps-new-look-preview/).
 
@@ -104,7 +127,7 @@ Læs mere om [det nye udseende af Power BI – Mobil](https://powerbi.microsoft.
 
 ### <a name="secured-access-with-azure-active-directory-ad-application-proxy-ios-and-android"></a>Sikker adgang med Azure Active Directory-proxyprogram (AD) (iOS og Android)
 
-Vi har indgået partnerskab med Azure Active Directory-teamet om at integrere Power BI-mobilapps med en AAD-programproxy (Azure Active Directory). Med denne konfiguration kan du oprette forbindelse til rapportserveren, der er hostet inden for virksomhedsgrænserne, fra appen Power BI – Mobil, uden at det er nødvendigt at konfigurere kompleks konfiguration i det lokale miljø. Læs mere om [Power BI-mobil og Azure AD Application Proxy-integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Få mere at vide om, [hvordan du konfigurerer Azure AD Application Proxy og Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
+Vi har indgået partnerskab med Azure Active Directory-teamet om at integrere Power BI-mobilapps med et AAD-proxyprogram (Azure Active Directory). Med denne konfiguration kan du oprette forbindelse til rapportserveren, der er hostet inden for virksomhedsgrænserne, fra appen Power BI – Mobil, uden at det er nødvendigt at konfigurere kompleks konfiguration i det lokale miljø. Læs mere om [Power BI-mobil og Azure AD Application Proxy-integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Få mere at vide om, [hvordan du konfigurerer Azure AD Application Proxy og Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## <a name="july-2019"></a>Juli 2019
 
@@ -383,7 +406,7 @@ Understøttelse af betinget adgang ved hjælp af administration af mobilenheder 
 
 #### <a name="improved-security-management"></a>Forbedret sikkerhedsstyring 
 
-Vi understøtter nu betinget adgang (CA) og mobil enhedshåndtering (MDM) til Microsoft Intune på Android-enheder, så dine organisations data er bedre sikret. Den er allerede tilgængelig på iOS.
+Vi understøtter nu betinget adgang (CA) og mobilenhedshåndtering (MDM) til Microsoft Intune på Android-enheder, så dine organisations data er bedre sikret. Den er allerede tilgængelig på iOS.
 
 #### <a name="improved-permission-management"></a>Forbedret administration af rettigheder
 
@@ -573,7 +596,7 @@ Læs [Oversigt over funktioner i Power BI-mobilapps i november 2016](https://pow
 Læs [Oversigt over funktioner i Power BI-mobilapps i oktober 2016](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-october-2016/).
 
 #### <a name="all-devices"></a>Alle enheder
-**Favoritter som landingsside** Hvis du har markeret nogen af dine dashboards som favoritter, vil landingssiden være en favorit. 
+**Favoritter som landingsside** Hvis du har markeret nogle af dine dashboards som favoritter, vil landingssiden være en favorit. 
 
 **Forbedret navigation** Den primære navigation har fået et nyt udseende og gruppenavigationen er flyttet til gruppekataloget. 
 
@@ -673,7 +696,7 @@ Meddelelsescenteret i din Power BI-mobilapp viser de nye data eller dashboards, 
 * **QR-koder** er nu også tilgængelige **for rapporter**. Scan koden med Power BI-appen for at gå direkte til en relateret rapport uden behov for navigation eller søgning.
 * **Forbedret dataadministration** til SQL Server 2016 Reporting Services: Reducerede indlæsningstider og reduceret dataforbrug på din enhed.
 * **Mobilrapporter i SQL Server 2016-tema**: Se temaer til mobilrapporter på din enhed.
-* **Geo-filtrering**: Filtrer rapporter efter din aktuelle placering.
+* **Geofiltrering**: Filtrer rapporter efter din aktuelle placering.
 
 ### <a name="april-2016"></a>April 2016
 Se [blogindlæg om Power BI-mobilapps fra april](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-april-2016/) for at få flere oplysninger.
@@ -832,4 +855,3 @@ Forbedringer i Power BI-mobilapps – Android, iOS (iPhone og iPad) og Windows. 
 * Forbedret brugeroplevelse ved adgang til dashboards ved hjælp af rollebaseret sikkerhed. 
 * En ny egenskab giver dig mulighed for at gå frem og tilbage mellem dashboardfelter, så de kan udforskes direkte i fokuseringstilstand uden at skulle vende tilbage til dashboardet for at vælge det næste felt.
 * Yderligere forbedringer af stabilitet og ydeevne. 
-

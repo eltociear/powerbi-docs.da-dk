@@ -11,12 +11,12 @@ ms.topic: quickstart
 ms.date: 01/31/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: fbd629ea7d2c5bb71471ac8073a5a823f1b2c192
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 595ce61bf2020c27420a33871e82ca7ff9025d60
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76975134"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040138"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Hurtig introduktion – Navigation i Power BI-tjenesten
 
@@ -72,7 +72,7 @@ Du kan selv se dem ved at vælge **Arbejdsområder** i navigationsruden til vens
 
 ![Mine arbejdsområder ](./media/end-user-experience/power-bi-workspaces.png)
 
-I **Mit arbejdsområde** gemmes alt det indhold, du ejer og opretter. Tænk på det som din personlige sandkasse eller arbejdsområde til dit eget indhold. For mange Power BI-*forbrugere* vil **Mit arbejdsområde** vedblive med at være tomt, fordi deres job ikke involverer oprettelse af nyt indhold.  *Forbrugere* er defineret som dem, der forbruger data, som er oprettet af andre, og bruger disse data til at træffe forretningsbeslutninger. Hvis du opretter indhold, kan du overveje at læse [Power BI-artiklerne til *designere*](../power-bi-creator-landing.md) i stedet for.
+I **Mit arbejdsområde** gemmes alt det indhold, du ejer og opretter. Tænk på det som din personlige sandkasse eller arbejdsområde til dit eget indhold. For mange Power BI-*forbrugere* vil **Mit arbejdsområde** vedblive med at være tomt, fordi deres job ikke involverer oprettelse af nyt indhold.  *Forbrugere* er defineret som dem, der forbruger data, som er oprettet af andre, og bruger disse data til at træffe forretningsbeslutninger. Hvis du opretter indhold, kan du overveje at læse [Power BI-artiklerne til *rapportdesignere*](../index.yml) i stedet for.
 
 **App-arbejdsområder** indeholder alt indhold til en specifik app.  Når en *designer* opretter en app, samler vedkommende alt det indhold, der er nødvendigt for at bruge den pågældende app, og inkluderer det i appen.  Vælg arbejdsområdet "Salg og marketing" for at se, hvad *designeren* har inkluderet i denne app. 
 
