@@ -51,6 +51,8 @@
               href: ../service-url-filters.md
             - name: Tilmeld dig selv og andre
               href: ../service-report-subscribe.md
+            - name: Udvalgt indhold på startsiden
+              href: service-featured-content.md
             - name: Integrer rapport i Microsoft Teams
               href: ../service-embed-report-microsoft-teams.md
             - name: Integrer rapport i SharePoint Online
