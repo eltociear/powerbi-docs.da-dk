@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 10/25/2019
-  ms.openlocfilehash: 94800e2b5996b9b9fc6bf60c4c95dd72b0725b81
-  ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+  ms.openlocfilehash: b03678dba371ed26a8965c2ebbcd26453689cea2
+  ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 03/14/2020
-  ms.locfileid: "79378242"
+  ms.lasthandoff: 03/18/2020
+  ms.locfileid: "79487757"
 landingContent:
 - title: Om Power BI til udviklere
   linkLists:
@@ -26,9 +26,9 @@ landingContent:
     - text: Hvad kan udviklere foretage sig?
       url: what-can-you-do.md
     - text: Visualiseringer i Power BI
-      url: power-bi-custom-visuals.md
+      url: visuals/power-bi-custom-visuals.md
     - text: Hvad er integrering?
-      url: embedding.md
+      url: embedded/embedding.md
     - text: Hvad er Power BI-API?
       url: automation/overview-of-power-bi-rest-api.md
   - linkListType: reference
@@ -52,42 +52,42 @@ landingContent:
   - linkListType: concept
     links:
     - text: Ofte stillede spørgsmål om visualiseringer
-      url: power-bi-custom-visuals-faq.md
+      url: visuals/power-bi-custom-visuals-faq.md
     - text: Retningslinjer for visualiseringer
-      url: guidelines-powerbi-visuals.md
+      url: visuals/guidelines-powerbi-visuals.md
     - text: Avanceret redigeringstilstand i visualiseringer
       url: visuals/advanced-edit-mode.md
   - linkListType: how-to-guide
     links:
     - text: Få en visualisering certificeret
-      url: power-bi-custom-visuals-certified.md
+      url: visuals/power-bi-custom-visuals-certified.md
     - text: Publicer Power BI-visualiseringer i AppSource
-      url: office-store.md
+      url: visuals/office-store.md
 - title: Integreret analyse
   linkLists:
   - linkListType: tutorial
     links:
     - text: Integrer indhold til kunder
-      url: embed-sample-for-customers.md
+      url: embedded/embed-sample-for-customers.md
     - text: Integrer indhold til din organisation
-      url: embed-sample-for-your-organization.md
+      url: embedded/embed-sample-for-your-organization.md
   - linkListType: concept
     links:
     - text: Sikkerhed på rækkeniveau
-      url: embedded-row-level-security.md
+      url: embedded/embedded-row-level-security.md
     - text: Administrer flere lejere
-      url: embed-multi-tenancy.md
+      url: embedded/embed-multi-tenancy.md
     - text: Integrerede ofte stillede spørgsmål
-      url: embedded-faq.md
+      url: embedded/embedded-faq.md
     - text: Tilladelser
-      url: power-bi-permissions.md
+      url: embedded/power-bi-permissions.md
   - linkListType: how-to-guide
     links:
     - text: Integrer fra apps
-      url: embed-from-apps.md
+      url: embedded/embed-from-apps.md
     - text: Opret en Azure Active Directory-lejer
-      url: create-an-azure-active-directory-tenant.md
+      url: embedded/create-an-azure-active-directory-tenant.md
     - text: Hent et Azure AD-adgangstoken
-      url: get-azuread-access-token.md
+      url: embedded/get-azuread-access-token.md
     - text: Spørgsmål og svar-funktionalitet i Power BI Embedded
-      url: qanda.md
+      url: embedded/qanda.md
