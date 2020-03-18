@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 03/07/2020
 ms.author: painbar
-ms.openlocfilehash: b7a02261e6e00c01befa8ba7716b9e0d132323ea
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 1991381f8b2917fe3bc61a8be22fbdf44e706d71
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496760"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205544"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Du kan fjernkonfigurere Power BI-appen ved hjælp af MDM-værktøjet (Mobile Device Management)
 
@@ -22,8 +22,8 @@ Appen Power BI – Mobil til iOS og Android understøtter appindstillinger, der 
 Appen Power BI – Mobil understøtter følgende konfigurationsscenarier:
 
 * Konfiguration af rapportserveren (iOS og Android)
-* Indstillinger for databeskyttelse (iOS og Android)
-* Interaktionsindstillinger (Android)
+* Indstillinger for databeskyttelse (iOS)
+* Indstillinger for interaktioner (iOS og Android)
 
 ## <a name="report-server-configuration-ios-and-android"></a>Konfiguration af rapportserveren (iOS og Android)
 
@@ -38,20 +38,24 @@ Power BI-appen til iOS og Android gør det muligt for administratorer at fjern-"
 
 ## <a name="data-protection-settings-ios"></a>Indstillinger for databeskyttelse (iOS)
 
-Power BI-appen til iOS og Android giver administratorer mulighed for at tilpasse standardkonfigurationen for sikkerhed og indstillinger for beskyttelse af personlige oplysninger. Du kan gennemtvinge, at brugerne skal angive deres Face ID, Touch ID eller en adgangskode, når du åbner Power BI-appen.
+Power BI-appen til iOS giver administratorer mulighed for at tilpasse standardkonfigurationen for sikkerhed og indstillinger for beskyttelse af personlige oplysninger. Du kan gennemtvinge, at brugerne skal angive deres Face ID, Touch ID eller en adgangskode, når du åbner Power BI-appen.
 
 | Nøgle | Type | Beskrivelse |
 |---|---|---|
 | com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolesk | Standardværdien er False. <br><br>Biometriske data, f.eks TouchID eller FaceID, kan være påkrævet, for at brugerne kan få adgang til appen på deres enhed. Når det er påkrævet, bruges biometriske data ud over godkendelse.<br><br>Hvis du bruger politikker for appbeskyttelse, anbefaler Microsoft, at du deaktiverer denne indstilling for at forhindre dobbelte adgangsprompter. |
 
-## <a name="interaction-settings-android"></a>Interaktionsindstillinger (Android)
+## <a name="interaction-settings-ios-and-android"></a>Indstillinger for interaktioner (iOS og Android)
 
-Power BI-appen til Android giver administratorer mulighed for at konfigurere interaktionsindstillinger, hvis det er besluttet, at standardindstillinger for interaktion skal ændres på tværs af grupper af brugere i en organisation. 
+Power BI-appen til iOS og Android giver administratorer mulighed for at konfigurere interaktionsindstillinger, hvis det er besluttet, at standardindstillinger for interaktion skal ændres på tværs af grupper af brugere i en organisation.
+
+>[!NOTE]
+>Det er ikke alle interaktioner, der understøttes på alle enheder i øjeblikket. Se [Konfiguration af indstillinger for rapportinteraktioner](mobile-app-interaction-settings.md) for et diagram, der viser den aktuelle tilgængelighed på tværs af enheder.
 
 | Nøgle | Type | Værdier | Beskrivelse |
 |---|---|---|---|
-| com.microsoft.powerbi.mobile.ReportTapInteraction | Streng |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Konfigurer, om tryk på visualisering også vil lave et datapunktvalg. |
-| com.microsoft.powerbi.mobile.RefreshAction | Streng |  <nobr>pull-to-refresh</nobr><br>knappen | Konfigurer, om brugeren skal have en knap til at opdatere rapporten, eller om han bruger træk-opdatering. |
+| com.microsoft.powerbi.mobile.ReportTapInteraction | Streng |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Konfigurer, om et tryk på en visualisering også foretager en datapunktsmarkering. |
+| com.microsoft.powerbi.mobile.EnableMultiSelect | Boolesk |  <nobr>True</nobr><br><nobr>False</nobr> | Konfigurerer, om et tryk på et datapunkt erstatter den aktuelle markering eller føjes til den aktuelle markering. |
+| com.microsoft.powerbi.mobile.RefreshAction | Streng |  <nobr>pull-to-refresh</nobr><br>knappen | Konfigurer, om brugeren skal have en knap til at opdatere rapporten, eller om vedkommende skal bruge trækopdatering. |
 | com.microsoft.powerbi.mobile.FooterAppearance | Streng |  forankret<br>dynamisk | Konfigurer, om rapportfoden skal fastgøres nederst i rapporten eller skjules automatisk. |
 
 ## <a name="deploying-app-configuration-settings"></a>Udrulning af konfigurationsindstillinger for apps

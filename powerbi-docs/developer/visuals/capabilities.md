@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: ca29e711e12c3958b608dcc231de628cd7590988
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e3af800696fd593f092cc46f9a59df2d0a5f94e2
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880244"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380293"
 ---
 # <a name="capabilities-and-properties-of-power-bi-visuals"></a>Funktioner og egenskaber for visualiseringer i Power BI 
 
@@ -158,7 +158,7 @@ Hvis du vil definere felter, der kan bindes til data, skal du bruge `dataRoles`.
 
 De foregående dataroller opretter de felter, der vises i følgende billede:
 
-![Datarollefelter](./media/data-role-display.png)
+![Datarollefelter](media/capabilities/data-role-display.png)
 
 ## <a name="define-how-you-want-the-data-mapped-dataviewmappings"></a>Definer, hvordan dataene skal tilknyttes: dataViewMappings
 

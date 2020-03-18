@@ -8,22 +8,22 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/22/2019
-ms.openlocfilehash: c39c7234ec4bc1b632355f92bdfdec9dc2b21ae4
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 932e458c90b248e01a88d45a849838cff27f6dcb
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079272"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488194"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Overfør data til et Power BI-datasæt
 
 Med Power BI-API'en, kan du overføre data til et Power BI-datasæt. I denne artikel viser vi dig, hvordan du kan overføre datasæt for SalesMarkering, der indeholder en produkttabel, til et eksisterende datasæt.
 
-Inden du går i gang, skal du have en Azure AD- (Azure Active Directory) og [Power BI-konto](../create-an-azure-active-directory-tenant.md).
+Inden du går i gang, skal du have en Azure AD- (Azure Active Directory) og [Power BI-konto](../embedded/create-an-azure-active-directory-tenant.md).
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Sådan overfører du data til et datasæt
 
-* Trin 1: [Registrer en app med Azure AD](../register-app.md)
+* Trin 1: [Registrer en app med Azure AD](../embedded/register-app.md)
 * Trin 2: [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md)
 * Trin 3: [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md)
 * Trin 4: [Hent et datasæt for at føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md)
@@ -111,11 +111,11 @@ Hvis du har et Power BI-tabelskema, kan du bruge følgende datatyper.
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>Få mere at vide om at overføre data til Power BI
 
-Du kan få hjælp til at komme i gang med at overføre data til et datasæt i [Trin 1: Registrer en app med Microsoft Azure Active Directory](../register-app.md) i navigationsruden.
+Du kan få hjælp til at komme i gang med at overføre data til et datasæt i [Trin 1: Registrer en app med Microsoft Azure Active Directory](../embedded/register-app.md) i navigationsruden.
 
 ## <a name="next-steps"></a>Næste trin
 
-* [Tilmeld dig Power BI](../create-an-azure-active-directory-tenant.md)  
+* [Tilmeld dig Power BI](../embedded/create-an-azure-active-directory-tenant.md)  
 * [Introduktion til JSON](https://json.org/)  
 * [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
 

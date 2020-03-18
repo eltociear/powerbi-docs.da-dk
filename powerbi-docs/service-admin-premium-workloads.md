@@ -9,16 +9,16 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/14/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: ae05fdcd3a38f10707e991524bac61a305b88794
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: de988442edf4c60841bac757bb67ea5ed5038b25
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427708"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207959"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurer arbejdsbelastninger i en Premium-kapacitet
 
-I denne artikel beskrives, hvordan du aktiverer og konfigurerer arbejdsbelastninger for Power BI Premium-kapaciteter. Kapaciteter understøtter som standard kun de arbejdsbelastninger, der er tilknyttet kørende Power BI-forespørgsler. Du kan også aktivere og konfigurere yderligere arbejdsbelastninger for **[AI (Cognitive Services)](service-cognitive-services.md)** , **[Dataflow](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** og **[Sideinddelte rapporter](paginated-reports-save-to-power-bi-service.md)** .
+I denne artikel beskrives, hvordan du aktiverer og konfigurerer arbejdsbelastninger for Power BI Premium-kapaciteter. Kapaciteter understøtter som standard kun de arbejdsbelastninger, der er tilknyttet kørende Power BI-forespørgsler. Du kan også aktivere og konfigurere yderligere arbejdsbelastninger for **[AI (Cognitive Services)](service-cognitive-services.md)** , **[Dataflow](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** og **[Sideinddelte rapporter](paginated-reports/paginated-reports-save-to-power-bi-service.md)** .
 
 ## <a name="default-memory-settings"></a>Standardindstillinger for hukommelse
 
@@ -67,7 +67,7 @@ Arbejdsbelastningen for datasæt er som standard aktiveret og kan ikke deaktiver
 | **Maks. antal mellemliggende rækker** | Det maksimale antal mellemliggende rækker, der blev returneret af DirectQuery. Standardværdien er 1000000, og det tilladte interval er mellem 100000 og 2147483647. |
 | **Maksimal størrelse på offlinedatasæt (GB)** | Den maksimale størrelse på offlinedatasæt i hukommelsen. Dette er den komprimerede størrelse på disken. Standardværdien er angivet af SKU, og det tilladte interval er mellem 0,1 og 10 GB. |
 | **Maks. antal resulterende rækker** | Det maksimale antal rækker, der returneres i en DAX-forespørgsel. Standardværdien er -1 (ingen grænse), og det tilladte interval er mellem 100000 og 2147483647. |
-| **Grænse for forespørgselshukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse i arbejdsbelastningen, der kan bruges til at udføre en MDX- eller DAX-forespørgsel. |
+| **Grænse for forespørgselshukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse i arbejdsbelastningen, der kan bruges til at udføre en MDX- eller DAX-forespørgsel. Standardværdien er 0, hvilket medfører, at der anvendes en SKU-specifik, automatisk hukommelsesgrænse i forbindelse med forespørgsler. |
 | **Timeout for forespørgsel (sekunder)** | Det maksimale tidsrum, før en forespørgsel udløber. Standarden er 3600 sekunder (1 time). Værdien 0 angiver, at der ikke opstår timeout for forespørgsler. |
 | **Automatisk sideopdatering (prøveversion)** | Til/fra-knap for at tillade Premium-arbejdsområder at have rapporter med automatisk sideopdatering. |
 | **Minimumsinterval for opdatering** | Hvis automatisk sideopdatering er slået til, er der angivet et minimumsinterval for sideopdatering. Standardværdien er fem minutter, og den mindste tilladte værdi er ét sekund. |
@@ -102,6 +102,14 @@ Brug denne indstilling til at styre effekten af ressourcetunge eller dårligt de
 Denne indstilling gælder for alle DAX-og MDX-forespørgsler, der udføres af Power BI-rapporter, Analysér i Excel-rapporter samt andre værktøjer, der kan oprette forbindelse via XMLA-slutpunktet.
 
 Bemærk, at dataopdateringshandlinger muligvis også udfører DAX-forespørgsler som en del af opdatering af dashboardfelter og visualcachelagre, efter at dataene i datasættet er blevet opdateret. Sådanne forespørgsler kan også mislykkes på grund af denne indstilling, og det kan medføre, at dataopdateringshandlingen vises i fejltilstand, selvom dataene i datasættet er blevet opdateret.
+
+Standardindstillingen er 0, hvilket medfører, at der anvendes følgende SKU-specifik, automatisk hukommelsesgrænse i forbindelse med forespørgsler.
+
+|                              | EM1/A1 | EM2/A2 | EM3/A3 | P1/A4 | P2/A5 | P3/A6 |   
+|------------------------------|----------|----------|----------|---------|---------|---------|
+| Automatisk hukommelsesgrænse for forespørgsel | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   |
+|                              |          |          |          |         |         |         |
+
 
 #### <a name="query-timeout"></a>Timeout for forespørgsel
 
@@ -200,7 +208,7 @@ Arbejdsbelastninger kan aktiveres og tildeles til en kapacitet ved hjælp af RES
 
 [Optimering af kapaciteter i Power BI Premium](service-premium-capacity-optimize.md)     
 [Selvbetjent dataforberedelse i Power BI med Dataflow](service-dataflows-overview.md)   
-[Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)   
+[Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports/paginated-reports-report-builder-power-bi.md)   
 [Automatisk sideopdatering i Power BI Desktop (prøveversion)](desktop-automatic-page-refresh.md)
 
 Har du flere spørgsmål? [Spørg Power BI-community'et](https://community.powerbi.com/)

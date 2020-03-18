@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: 590f11f23a04a698459cc4db99efe5308ccc0ce3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 996e409e634292ca0767f34c49931cfbcdcd4b94
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879952"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379512"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Selvstudium: Tilføj enhedstests i visuelle projekter i Power BI
 
@@ -381,7 +381,7 @@ npm run test
 
 `karma.js` kører testcasen i Chrome-browseren.
 
-![Karma JavaScript åbnes i Chrome](./media/karmajs-chrome.png)
+![Karma JavaScript åbnes i Chrome](media/unit-tests-introduction/karmajs-chrome.png)
 
 > [!NOTE]
 > Google Chrome skal installeres lokalt.
@@ -453,7 +453,7 @@ Klassen `SampleBarChartDataBuilder` udvides `TestDataViewBuilder` og implementer
 
 Når du placerer data i datafelt-buckets, opretter Power BI et `dataview`-kategoriobjekt, som er baseret på dine data.
 
-![Datafelt-buckets](./media/fields-buckets.png)
+![Datafelt-buckets](media/unit-tests-introduction/fields-buckets.png)
 
 I enhedstests har du ikke Power BI-kernefunktioner til at genskabe dataene. Du skal dog knytte dine statiske data til `dataview`-kategorien. Klassen `TestDataViewBuilder` kan hjælpe dig med at tilknytte den.
 
@@ -596,23 +596,23 @@ Lines        : 52.83% ( 112/212 )
 
 Det visuelle element åbnes i Chrome-browseren som vist:
 
-![UT starter i Chrome](./media/karmajs-chrome-ut-runned.png)
+![UT starter i Chrome](media/unit-tests-introduction/karmajs-chrome-ut-runned.png)
 
 Oversigten viser, at dækningen er steget. Åbn `coverage\index.html` for at få mere at vide om den aktuelle kodedækning.
 
-![UT-dækningsindeks](./media/code-coverage-index.png)
+![UT-dækningsindeks](media/unit-tests-introduction/code-coverage-index.png)
 
 Eller se på området for mappen `src` :
 
-![Src-mappens dækning](./media/code-coverage-src-folder.png)
+![Src-mappens dækning](media/unit-tests-introduction/code-coverage-src-folder.png)
 
 I filområdet kan du se på kildekoden. Hvis der ikke udføres en bestemt kode under enhedstesten, fremhæver hjælpeprogrammerne `Coverage` rækken med rødt.
 
-![Kodedækningen for filen visual.ts](./media/code-coverage-visual-src.png)
+![Kodedækningen for filen visual.ts](media/unit-tests-introduction/code-coverage-visual-src.png)
 
 > [!IMPORTANT]
 > Kodedækning betyder ikke nødvendigvis, at du har god funktionalitetsdækning af en visualisering. En enkel enhedstest leverede over 96 % dækning i `src\visual.ts`.
 
 ## <a name="next-steps"></a>Næste trin
 
-Når din visualisering er klar, kan du sende den til publicering. Du kan få flere oplysninger under [Publicer Power BI-visualiseringer i AppSource](../office-store.md).
+Når din visualisering er klar, kan du sende den til publicering. Du kan få flere oplysninger under [Publicer Power BI-visualiseringer i AppSource](office-store.md).

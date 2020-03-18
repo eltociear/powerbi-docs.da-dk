@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2db2b4f02dac1ebcd9d24a8217a181efa9ce0779
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 810077e8c651d3d6faf91eecb6fd320c24a69d2f
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76039043"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488792"
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
 
@@ -76,7 +76,7 @@ Da Power BI ikke importerer dataene, behøver du ikke at køre en opdatering af 
 Pushdatasæt indeholder ikke en formel datakildedefinition, så de kræver ikke, at du udfører en opdatering af data i Power BI. Du kan opdatere dem ved at sende dine data til datasættet via push ved hjælp af en ekstern tjeneste eller en proces, f.eks. Azure Stream Analytics. Dette er en fælles tilgang til analyse i realtid med Power BI. Power BI udfører stadig opdateringer af cachen for alle felter, der bruges oven på et pushdatasæt. Du kan finde en detaljeret gennemgang i [Selvstudium: Stream Analytics og Power BI: Et analysedashboard i realtid til streaming af data](/azure/stream-analytics/stream-analytics-power-bi-dashboard).
 
 > [!NOTE]
-> Der er adskillige begrænsninger for Pushtilstand, som dokumenteret i [REST API-begrænsninger i Power BI](developer/api-rest-api-limitations.md).
+> Der er adskillige begrænsninger for Pushtilstand, som dokumenteret i [REST API-begrænsninger i Power BI](developer/automation/api-rest-api-limitations.md).
 
 ### <a name="power-bi-refresh-types"></a>Power BI-opdateringstyper
 
@@ -317,7 +317,7 @@ Advarselsikonet hjælper med at indikere aktuelle problemer med datasættet, men
 
 ## <a name="automatic-page-refresh"></a>Automatisk sideopdatering
 
-Automatisk sideopdatering fungerer på rapportsideniveau og giver rapportforfattere mulighed for at angive et opdateringsinterval for visuelle elementer på en side, der kun er aktiv, når siden forbruges. Automatisk sideopdatering er kun tilgængelig for DirectQuery-datakilder. Minimumsintervallet for opdateringen afhænger af, hvilken type arbejdsområde rapporten er publiceret i, samt kapacitetsadministratorens indstillinger for Premium-arbejdsområder og [integrerede arbejdsområder](developer/embedding.md).
+Automatisk sideopdatering fungerer på rapportsideniveau og giver rapportforfattere mulighed for at angive et opdateringsinterval for visuelle elementer på en side, der kun er aktiv, når siden forbruges. Automatisk sideopdatering er kun tilgængelig for DirectQuery-datakilder. Minimumsintervallet for opdateringen afhænger af, hvilken type arbejdsområde rapporten er publiceret i, samt kapacitetsadministratorens indstillinger for Premium-arbejdsområder og [integrerede arbejdsområder](developer/embedded/embedding.md).
 
 Få mere at vide om automatisk sideopdatering i artiklen [Automatisk sideopdatering](desktop-automatic-page-refresh.md).
 
@@ -338,7 +338,7 @@ Derudover bør du overveje følgende anbefalinger til at etablere og bevare pål
 - Sørg for, at Power BI kan sende meddelelser om mislykkede opdateringer til din postkasse. Spamfiltre kan blokere mails eller flytte dem til en særskilt mappe, hvor du måske ikke bemærker dem med det samme.
 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Konfiguration af planlagt opdatering](refresh-scheduled-refresh.md)  
 [Værktøjer til fejlfinding af opdateringsfejl](service-gateway-onprem-tshoot.md)  

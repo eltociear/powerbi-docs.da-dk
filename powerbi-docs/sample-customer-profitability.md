@@ -10,11 +10,11 @@ ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 160c5736bc2894e629f5bb375dd07e993def1e0c
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74265542"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205291"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Eksempel på kunderentabilitet til Power BI: Få en introduktion
 
@@ -137,7 +137,7 @@ Lad os se nærmere på to af teammedlemmerne, og på hvad det giver os af indsig
 
 1. I udsnittet **Direktør** til venstre skal du vælge Andrews navn for at filtrere rapportsiden, så der kun vises data for Andrew:
 
-   * Hvis du vil se et hurtigt KPI, skal du kigge på Andrews **Omsætningsstatus (Samlet for året)**. Det er grøn, hvilket betyder, at han præsterer godt.
+   * Hvis du vil se et hurtigt KPI, skal du kigge på Andrews **Omsætningsstatus (Samlet for året)** . Det er grøn, hvilket betyder, at han præsterer godt.
    * Diagrammet **Indtægtsvarians i % i forhold til budget efter måned og overordnet** viser, at Andrew klarer sig godt med undtagelse af et fald i februar. Andrews stærkeste område er det østlige område, som omfatter 49 kunder og 5 ud af 7 produkter. Andrews BA i % er hverken den højeste eller den laveste.
    * Diagrammet **Samlet omsætning i år og omsætningsafvigelse i % ift. budget pr. måned** viser en konstant og tilmed rentabel historie. Men hvis du filtrerer ved at vælge firkanten ud for **Central** i områdetræstrukturen, opdager du, at Andrew kun har omsætning i marts og kun i Indiana. Er denne tendens bevidst, eller er det noget, der skal undersøges nærmere?
 
@@ -145,7 +145,7 @@ Lad os se nærmere på to af teammedlemmerne, og på hvad det giver os af indsig
 
    ![Valerys data](media/sample-customer-profitability/customer3.png)
 
-   * Bemærk det røde KPI for **Omsætningsstatus (Samlet for året)**. Dette skal helt sikkert undersøges nærmere.
+   * Bemærk det røde KPI for **Omsætningsstatus (Samlet for året)** . Dette skal helt sikkert undersøges nærmere.
    * Valerys omsætningsafvigelse tegner også et bekymrende billede: Hun opfylder ikke de angivne omsætningsmargener.
    * Valery har kun ni kunder, håndterer kun to produkter og arbejder næsten udelukkende med kunder i det nordlige område. Denne specialisering kan være forklaringen på de stærkt svingende tal.
    * Hvis du vælger firkanten **Nord** i træstrukturen, kan du se, at Valerys bruttoavance i det nordlige område svarer til den overordnede margen.

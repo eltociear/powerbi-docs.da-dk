@@ -10,11 +10,11 @@ ms.date: 10/03/2019
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: 951a05247a02e379c56c45176edb622e683af413
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "73876907"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207729"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Understøttede sprog og lande/områder til Power BI
 
@@ -82,7 +82,7 @@ I øjeblikket er nogle få funktioner kun tilgængelige på engelsk:
 Hold dig informeret, mens vi arbejder på at gøre yderligere funktioner tilgængelige på sprog. 
 
 ### <a name="choose-your-language-in-the-power-bi-service"></a>Vælg dit sprog i Power BI-tjenesten
-1. Vælg ikonet **Indstillinger** ![Indstillingsikon](media/supported-languages-countries-regions/pbi_settings_icon.png) > **Indstillinger** i Power BI-tjenesten.
+1. Vælg ikonet **Indstillinger**![Indstillingsikon](media/supported-languages-countries-regions/pbi_settings_icon.png) > **Indstillinger** i Power BI-tjenesten.
 2. På fanen **Generelt** > **Sprog**.
 3. Vælg dit sprog > **Anvend**.
 
