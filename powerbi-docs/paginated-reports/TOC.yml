@@ -12,6 +12,8 @@
     - name: Selvstudier
       expanded: true
       items:
+        - name: Onlinekursus
+          href: paginated-reports-online-course.md
         - name: 'Praktisk laboratorie: Opret en sideinddelt rapport'
           href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
         - name: 'Opret en sideinddelt rapport, og upload'
