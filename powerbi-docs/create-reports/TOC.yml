@@ -11,8 +11,8 @@
     - name: Selvstudier
       expanded: true
       items:
-        - name: 'Praktisk laboratorie: Opret en sideinddelt rapport'
-          href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
+        - name: 'Onlinekursus: Sideinddelte rapporter'
+          href: ../paginated-reports/paginated-reports-online-course.md
         - name: 'Opret en sideinddelt rapport, og upload'
           href: ../paginated-reports/paginated-reports-quickstart-aw.md
     - name: Eksempler
@@ -99,18 +99,6 @@
               href: ../paginated-reports/paginated-reports-faq.md
     - name: Vejledninger
       items:
-        - name: Publicer datasæt og rapporter
-          href: ../desktop-upload-desktop-files.md
-        - name: Føj visualiseringer til en Power BI-rapport (del 1)
-          href: ../visuals/power-bi-report-add-visualizations-i.md
-        - name: Føj visualiseringer til en Power BI-rapport (del 2)
-          href: ../visuals/power-bi-report-add-visualizations-ii.md
-        - name: 'Tilpas titler, baggrunde og forklaringer i forbindelse med visualiseringer'
-          href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
-        - name: Vis elementer uden data i Power BI
-          href: ../desktop-show-items-no-data.md
-        - name: Anvend automatisk dato og klokkeslæt
-          href: ../desktop-auto-date-time.md
         - name: Power BI-rapporter
           items:
             - name: Aktivér automatisk sideopdatering (eksempelvisning)
@@ -211,12 +199,22 @@
               href: ../service-create-qr-code-for-report.md
             - name: Eksportér en rapport til Power BI Desktop (eksempelvisning)
               href: ../service-export-to-pbix.md
+            - name: Publicer datasæt og rapporter
+              href: ../desktop-upload-desktop-files.md
         - name: Visualiseringer
           items:
+            - name: Føj visualiseringer til en Power BI-rapport (del 1)
+              href: ../visuals/power-bi-report-add-visualizations-i.md
+            - name: Føj visualiseringer til en Power BI-rapport (del 2)
+              href: ../visuals/power-bi-report-add-visualizations-ii.md
             - name: Føj visualiseringer til Power BI-rapporter
               href: ../visuals/power-bi-report-visualizations.md
             - name: Skift visualiseringer i Power BI-rapporter
               href: ../visuals/power-bi-report-change-visualization-type.md
+            - name: 'Tilpas titler, baggrunde og forklaringer i forbindelse med visualiseringer'
+              href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
+            - name: Vis elementer uden data i Power BI
+              href: ../desktop-show-items-no-data.md
             - name: Anvend datapunktgrænser og strategier efter visualiseringstype
               href: ../visuals/power-bi-data-points.md
             - name: Vis en visualiserings underliggende data
@@ -317,6 +315,8 @@
               href: ../desktop-accessibility-keyboard-shortcuts.md
         - name: Sideinddelte rapporter
           items:
+            - name: 'Praktisk laboratorie: Opret en sideinddelt rapport'
+              href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
             - name: Angiv data direkte i en sideinddelt rapport
               href: ../paginated-reports/paginated-reports-enter-data.md
             - name: Opret en integreret datakilde
