@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 03/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 976d53a5a74bc077d3d4642ccec336b1225344ae
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 27ebe50030fbd06f65be5530ee2a2c0a7897f0f5
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77426558"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488723"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser arbejde i nye arbejdsområder i Power BI
 
@@ -54,7 +54,7 @@ Nye opgraderede arbejdsområder og eksisterende klassiske arbejdsområder eksist
 
 ## <a name="roles-in-the-new-workspaces"></a>Roller i de nye arbejdsområder
 
-Hvis du vil give adgang til et nyt arbejdsområde, skal du føje brugergrupper eller enkeltpersoner til en af arbejdsområderollerne: fremvisere, medlemmer, bidragydere eller administratorer. Alle i en brugergruppe får den rolle, du har defineret. Hvis en person er i flere brugergrupper, får personen det højeste tilladelsesniveau, der er angivet af den rolle, personen er blevet tildelt.
+Hvis du vil give adgang til et nyt arbejdsområde, skal du føje brugergrupper eller enkeltpersoner til en af arbejdsområderollerne: administratorer, medlemmer, bidragydere eller fremvisere. Alle i en brugergruppe får den rolle, du har defineret. Hvis en person er i flere brugergrupper, får personen det højeste tilladelsesniveau, der er angivet af den rolle, personen er blevet tildelt.
 
 Du kan bruge roller til at administrere, hvem der kan gøre hvad i et arbejdsområde, så teams kan samarbejde. Nye arbejdsområder gør det muligt at tildele roller til enkeltpersoner og til brugergrupper: sikkerhedsgrupper, Office 365-grupper og distributionslister. 
 
@@ -70,11 +70,14 @@ Her er egenskaberne for de fire roller: administratorer, medlemmer, bidragydere 
 | Publicer og opdater en app. |  X | X  |   |   |
 | Dele et element eller dele en app.<sup>1</sup> |  X | X  |   |   |
 | Give andre tilladelse til at dele elementer igen.<sup>1</sup> |  X | X  |   |   |
+| Fremhæve apps på kollegaers startside |  X | X  |   |   |
+| Fremhæve dashboards og rapporter på kollegaers startside |  X | X  | X |   |
 | Oprette, redigere og slette indhold i arbejdsområdet.  |  X | X  | X  |   |
 | Publicere rapporter til arbejdsområdet, slette indhold.  |  X | X  | X  |   |
 | Oprette en rapport i et andet arbejdsområde, der er baseret på et datasæt i dette arbejdsområde.<sup>1</sup> |  X | X  | X  |   |
 | Kopiere en rapport.<sup>2</sup> | X | X | X |  |
 | Få vist og interagere med et element.<sup>3</sup> |  X | X  | X  | X  |
+| Læs data, der er gemt i dataflow i arbejdsområdet | X | X | X | X |
 
 1. Bidragydere og seere kan dele elementer i et arbejdsområde, hvis de har tilladelsen Del igen.
 2. Hvis du vil kopiere en rapport og oprette en rapport i et andet arbejdsområde, der er baseret på et datasæt i dette arbejdsområde, skal følgende kriterier være opfyldt:
@@ -99,7 +102,7 @@ Vi har givet nogle af funktionerne i de nye arbejdsområder et nyt design. Her e
 * Oprettelse af disse arbejdsområder opretter ikke Office 365-grupper på samme måde som klassiske arbejdsområder. Du kan dog benytte en Office 365-gruppe til at give brugere adgang til dit arbejdsområde ved at tildele området en rolle. 
 * I de klassiske arbejdsområder kan du kun føje enkeltpersoner til medlems- og administratorlisterne. I de nye arbejdsområder kan du føje flere Active Directory-sikkerhedsgrupper, distributionslister eller Office 365-grupper til disse lister for at lette administrationen af brugere. 
 - Du kan oprette en organisationsindholdspakke ud fra et klassisk arbejdsområde. Du kan ikke oprette en ud fra de nye arbejdsområder.
-- Du kan forbruge en organisationsindholdspakke ud fra et klassisk arbejdsområde. Du kan ikke forbruge en fra nye arbejdsområder.
+- Du kan forbruge en organisationsindholdspakke ud fra et klassisk arbejdsområde. Du kan ikke forbruge en fra de nye arbejdsområder.
 
 ## <a name="workspace-contact-list"></a>Liste over arbejdsområdekontakter
 Den nye **kontaktlistefunktion** gør det muligt at angive, hvilke brugere der modtager en meddelelse om de problemer, der opstår i arbejdsområdet. Som standard får alle brugere eller grupper, der er angivet som arbejdsområdeadministrator besked, men du kan tilpasse listen. Brugere eller grupper, der er angivet på listen over kontaktpersoner, vises i brugergrænsefladen for at hjælpe brugerne med at få hjælp i forbindelse med arbejdsområdet. 

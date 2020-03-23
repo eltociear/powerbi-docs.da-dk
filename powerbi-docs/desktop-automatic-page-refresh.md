@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 50daa90f937a9d1c7081d9b22e3c743da950945c
-ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
+ms.openlocfilehash: e7e5e406a0a4c9cdcecfab5a5af681857600feb5
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548572"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488516"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatisk sideopdatering i Power BI Desktop (eksempelvisning)
 
@@ -35,9 +35,9 @@ På følgende billede vises kortet **Sideopdatering**. De nummererede elementer 
 
 ![Kortet Sideopdatering](media/desktop-automatic-page-refresh/automatic-page-refresh-02.png)
 
-1.  Skyderen Automatisk sideopdatering – slår sideopdatering til eller fra
-2.  Intervalværdi for sideopdatering – talværdi for opdateringsinterval
-3.  Intervalenhed for sideopdatering – intervalenhed for sideopdatering
+1.    Skyderen Automatisk sideopdatering – slår sideopdatering til eller fra
+2.    Intervalværdi for sideopdatering – talværdi for opdateringsinterval
+3.    Intervalenhed for sideopdatering – intervalenhed for sideopdatering
 
 Her kan du aktivere sideopdatering og vælge opdateringsvarighed. Standardværdien er 30 minutter, og det mindste opdateringsinterval er 1 sekund. Din rapport begynder at blive opdateret med det interval, du har angivet. 
 
@@ -62,10 +62,10 @@ På følgende billede vises resultaterne af en DirectQuery i Effektivitetsanalys
 
 Lad os overveje nogle andre egenskaber for denne datakilde. 
 
-1.  Data ankommer hvert andet sekund. 
-2.  Effektivitetsanalysen viser den maksimale forespørgselstid + visningstid på ca. 4,9 sekunder (4688 millisekunder). 
-3.  Datakilden er konfigureret til at håndtere cirka 1000 samtidige forespørgsler pr. sekund. 
-4.  Du forventer, at ca. 10 brugere skal have vist rapporten samtidig.
+1.    Data ankommer hvert andet sekund. 
+2.    Effektivitetsanalysen viser den maksimale forespørgselstid + visningstid på ca. 4,9 sekunder (4688 millisekunder). 
+3.    Datakilden er konfigureret til at håndtere cirka 1000 samtidige forespørgsler pr. sekund. 
+4.    Du forventer, at ca. 10 brugere skal have vist rapporten samtidig.
 
 Resultatet er derfor som følger:
 
@@ -83,13 +83,13 @@ Lad os derefter se på, hvordan du potentielt kan registrere og diagnosticere yd
 
 Du kan også angive intervaller for automatisk sideopdatering for rapporter, der er oprettet i Power BI Desktop, og som er publiceret til Power BI-tjenesten. 
 
-Automatisk sideopdatering for rapporter i Power BI-tjenesten er konfigureret med en fremgangsmåde, der minder om konfigurationen i Power BI Desktop. Når den er konfigureret i Power BI-tjenesten, understøtter den automatiske opdatering af sider også [integreret Power BI](developer/embedding.md)-indhold. På følgende billede vises konfigurationen **Sideopdatering** for Power BI-tjenesten:
+Automatisk sideopdatering for rapporter i Power BI-tjenesten er konfigureret med en fremgangsmåde, der minder om konfigurationen i Power BI Desktop. Når den er konfigureret i Power BI-tjenesten, understøtter den automatiske opdatering af sider også [integreret Power BI](developer/embedded/embedding.md)-indhold. På følgende billede vises konfigurationen **Sideopdatering** for Power BI-tjenesten:
 
 ![Automatisk sideopdatering i Power BI-tjenesten](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
 
-1.  Skyderen Automatisk sideopdatering – slår sideopdatering til eller fra
-2.  Intervalværdi for sideopdatering – talværdi for opdateringsinterval, skal være et heltal
-3.  Intervalenhed for sideopdatering – intervalenhed for sideopdatering
+1.    Skyderen Automatisk sideopdatering – slår sideopdatering til eller fra
+2.    Intervalværdi for sideopdatering – talværdi for opdateringsinterval, skal være et heltal
+3.    Intervalenhed for sideopdatering – intervalenhed for sideopdatering
 
 ### <a name="page-refresh-intervals"></a>Sideopdateringsintervaller
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 40e11f6423df12355800a2c62876e5de1f8b3f82
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 344b041b8cca3e6ed4be1f40c0e783df18315679
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73867470"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378587"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Stikprøvetagning af linjer med høj tæthed i Power BI
 Fra og med udgivelsen af **Power BI Desktop** fra juni 2017 og opdateringerne til **Power BI-tjenesten** findes der en ny algoritme til stikprøvetagning, som forbedrer visuelle elementer, der bruger stikprøver af data med høj tæthed. Du kan f.eks. oprette et kurvediagram ud fra dine detailbutikkers salgsresultater, hvor hver butik har mere end ti tusinde salgskvitteringer hvert år. I et kurvediagram med disse salgsoplysninger tages der en datastikprøve (der vælges en relevant repræsentation af disse data for at illustrere, hvordan salget varierer over tid) af dataene for hver enkelt butik, og der oprettes et kurvediagram med flere serier, som dermed repræsenterer de underliggende data. Dette er almindelig praksis ved visualisering af data med høj tæthed. Stikprøvetagning af data med høj tæthed er blevet forbedret i Power BI Desktop. Der er flere oplysninger om dette i denne artikel.
@@ -46,7 +46,7 @@ For enhver given visualisering gælder følgende visuelle begrænsninger:
 Det maksimale antal datagrænser er højere for følgende visuelle typer, som er *undtagelser* for datapunktgrænsen på 3.500:
 
 * Maksimalt **150.000** datapunkter for R-visuals.
-* **30.000** datapunkter for brugerdefinerede visualiseringer.
+* **30.000** datapunkter for Power BI-visuals.
 * **10.000** datapunkter for punktdiagrammer (3.500 er standarden for punktdiagrammer).
 * **3.500** for alle andre visualiseringer.
 
@@ -61,12 +61,12 @@ Som tidligere nævnt er minimumgranuleringen for hver serie 350 punkter, maksimu
 
 Hver placering er repræsenteret af to datapunkter, der bliver placeringens repræsentative datapunkter i visualiseringen. Datapunkterne er simpelthen den mindste og højeste værdi for den pågældende placering og ved at vælge mindste og højeste sikrer processen til gruppering i beholdere, at vigtige høje værdier eller betydningsfulde lave værdier registreres og gengives i visualiseringen.
 
-Det kan lyde som en stor mængde analyse for at sikre, at lejlighedsvise udenforliggende værdier registreres og gengives i visualiseringen, men det er netop årsagen til den nye algoritme og processen til gruppering i beholdere.
+Det kan lyde som en stor mængde analyse for at sikre, at lejlighedsvise udenforliggende værdier registreres og gengives i visual'et, men det er netop årsagen til den nye algoritme og processen til gruppering i beholdere.
 
 ## <a name="tooltips-and-high-density-line-sampling"></a>Værktøjstip og stikprøvetagning af linjer med høj tæthed
 Det er vigtigt at bemærke, at denne proces til gruppering af data, som resulterer i, at minimum- og maksimumværdien for en given placering registreres og vises, kan påvirke måden, som værktøjstip vises på, når du peger på datapunkterne. For at vise, hvordan og hvorfor dette sker, kan vi gå tilbage til vores eksempel med aktiekurserne.
 
-Lad os forestille os, at du opretter en visualisering baseret på aktiekursen, og at du sammenligner to forskellige aktier, som begge bruger **Stikprøvetagning med høj tæthed**. De underliggende data for hver serie indeholder mange datapunkter (det kan være, at du registrerer aktiekursen hvert sekund på dagen). Algoritmen til stikprøvetagning af linjer med høj tæthed grupperer i beholdere for hver serie uafhængigt af hinanden.
+Lad os forestille os, at du opretter et visual baseret på aktiekursen, og at du sammenligner to forskellige aktier, som begge bruger **Stikprøvetagning med høj tæthed**. De underliggende data for hver serie indeholder mange datapunkter (det kan være, at du registrerer aktiekursen hvert sekund på dagen). Algoritmen til stikprøvetagning af linjer med høj tæthed grupperer i beholdere for hver serie uafhængigt af hinanden.
 
 Nu antager vi, at den første aktie stiger i pris kl. 12:02 og derefter hurtigt falder igen ti sekunder senere. Det er et vigtigt datapunkt. Når gruppering i beholdere finder sted for den pågældende aktie, vil den højeste værdi kl. 12:02 være et repræsentativt datapunkt for denne placering.
 

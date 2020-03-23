@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f197f2c2ca85673452a10986f19e26c5802c739
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 7d1e355f2c28679f5c2101d250a9fc2d5c99a2bd
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496610"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205636"
 ---
 # <a name="what-are-bookmarks"></a>Hvad er bogmærker?
 
@@ -157,7 +157,7 @@ Note that selecting **Ungroup** for any bookmark from a group takes all bookmark
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 I denne version af **bogmærker** er der nogle få begrænsninger og overvejelser at tage betragtning.
 
-* De fleste brugerdefinerede visuals fungerer fint sammen med bogmærker. Hvis du oplever problemer med et bogmærke og en brugerdefineret visual, kan du kontakte forfatteren af denne visual og bede om at få føjet understøttelse af bogmærker til deres visuals. 
+* De fleste Power BI-visuals fungerer fint sammen med bogmærker. Hvis du oplever problemer med et bogmærke og et Power BI-visual, kan du kontakte forfatteren af dette visual og bede om at få føjet understøttelse af bogmærker til deres visuals.
 * Hvis du tilføjer et visuelt element på en rapportside, når du har oprettet et bogmærke, vises det visuelle element i standardtilstanden. Det betyder også, at hvis du vil indføre et udsnitsværktøj på en side, hvor du tidligere har oprettet bogmærker, optræder udsnittet i standardtilstanden.
 * Normalt har det ingen indflydelse på dine bogmærker, hvis *rapportdesigneren* opdaterer eller publicerer rapporten igen. Men hvis designeren foretager større ændringer i rapporten, f.eks. fjerner felter, der bruges af et bogmærke, modtager du en fejlmeddelelse, næste gang du forsøger at åbne bogmærket. 
 

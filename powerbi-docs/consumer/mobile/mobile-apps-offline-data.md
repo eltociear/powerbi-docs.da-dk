@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
-ms.openlocfilehash: 2974f257509d88a469f981bbdecf8cdca47c8e9e
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 9c38aef858d723e548529f450e34d0480de5f8b2
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75219065"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435438"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Få vist dine data offline i Power BI-mobilapps
 Gælder for:
@@ -21,6 +21,9 @@ Gælder for:
 | ![iPhone](./media/mobile-apps-offline-data/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-offline-data/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-offline-data/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-apps-offline-data/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-apps-offline-data/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-enheder |
+
+>[!NOTE]
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 En fordel ved at få vist Power BI i en mobilapp i stedet for i en mobilbrowser er, at du kan se dine data, selvom du ikke har oprettet forbindelse til et netværk. 
 

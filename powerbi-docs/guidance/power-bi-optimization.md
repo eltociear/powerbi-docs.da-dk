@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 0f29b70a42375be945d206672116219b7d5a3b48
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: d718c9c7f627d735c083a46c1483815e3744faca
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609989"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378863"
 ---
 # <a name="optimization-guide-for-power-bi"></a>Optimeringsvejledning til Power BI
 
@@ -69,7 +69,7 @@ Ovenstående princip gælder tilsvarende for antallet af visualiseringer, der f�
 
 #### <a name="evaluate-custom-visual-performance"></a>Evaluer brugerdefinerede visualiseringers ydeevne
 
-Sørg for at gennemprøve hvert brugerdefinerede visuelle element for at sikre høj ydeevne. Brugerdefinerede visuelle elementer med dårlig optimering kan påvirke hele rapportens ydeevne negativt.
+Sørg for at gennemprøve hvert brugerdefinerede visuelle element for at sikre høj ydeevne. Power BI-visuals med dårlig optimering kan påvirke hele rapportens ydeevne negativt.
 
 ### <a name="power-bi-paginated-reports"></a>Sideinddelte rapporter i Power BI
 

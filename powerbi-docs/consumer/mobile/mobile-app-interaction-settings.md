@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/08/2020
 ms.author: painbar
-ms.openlocfilehash: c7280b2b6bb34b070e7ced3785959d61c74cd165
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 58ef9c6760194e3f11374bdb0663552fd11ce285
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041243"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377369"
 ---
 # <a name="configure-report-interaction-settings"></a>Konfigurer indstillinger for rapportinteraktion
 
@@ -49,7 +49,7 @@ Multivalgstilstanden gør det muligt at vælge flere datapunkter på en rapports
 Hvis du vil fjerne markeringen af et datapunkt, skal du trykke på det igen.
 
 >[!NOTE]
->Multivalgstilstanden understøttes ikke i brugerdefinerede visualiseringer.
+>Multivalgstilstanden understøttes ikke i Power BI-visuals.
 >
 >Multivalgstilstanden understøttes på Power BI-rapportserver i den næste version af rapportserveren.
 

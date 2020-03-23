@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
 ms.date: 03/04/2020
-ms.openlocfilehash: 4c48b9c2695c7feab5897527c9ff2fbf2a2d0455
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 7762ace1da913713567b79a9650b3f07aa71146d
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78920950"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381048"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Sammenlign Power BI-rapportserveren med Power BI-tjenesten
 
@@ -52,7 +52,7 @@ Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigti
 | Avanceret samarbejde i Office 365 | Nej | Ja | [Samarbejd i et arbejdsområde](../service-collaborate-power-bi-workspace.md) med Office 365 |
 | R-visualiseringer | Nej | Ja | [Opret R-visualiseringer](../desktop-r-visuals.md) i Power BI Desktop, og publicer dem i Power BI-tjenesten. Du kan ikke gemme Power BI-rapporter med R-visualiseringer på Power BI-rapportserveren.  |
 | Prøveversionsfunktioner | Nej | Ja | [Tilmeld dig prøveversioner af funktioner i Power BI-tjenesten](../consumer/end-user-preview-features.md) |
-| Brugerdefinerede visualiseringer | Ja | Ja | [Brugerdefinerede visualiseringer i Power BI](../developer/power-bi-custom-visuals.md) |
+| Power BI-visualiseringer | Ja | Ja | [Power BI-visuals](../developer/visuals/power-bi-custom-visuals.md) |
 | Sammensatte modeller | Nej | Ja |
 | Power BI Desktop | Version, der er optimeret til rapportserveren, kan downloades med rapportserveren | Version, der er optimeret til Power BI-tjenesten, er tilgængelig fra Windows Store | [Power BI Desktop til rapportserveren](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop til Power BI-tjenesten](https://aka.ms/pbidesktopstore) |
 

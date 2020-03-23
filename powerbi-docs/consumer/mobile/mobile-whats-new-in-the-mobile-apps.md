@@ -8,19 +8,22 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/09/2020
 ms.author: painbar
-ms.openlocfilehash: 97d2a3acba87309b74de1776f1325bb4c4a78910
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 6885f635f96da3bbea039f445e83cd7cada144ce
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041543"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435967"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
 
 * [Power BI-teamets blog til mobilapps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheder i Power BI Desktop](../../desktop-latest-update.md)  
-* [Nyheder i Power BI-tjenesten](../../service-whats-new.md)  
+* [Nyheder i Power BI-tjenesten](../../service-whats-new.md)
+
+>[!NOTE]
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="february-2020"></a>Februar 2020
 
@@ -396,7 +399,7 @@ Når nogen deler en rapport med dig nu, vises den på siden **Delt med mig** sam
 
 #### <a name="improved-hyperlink-support"></a>Forbedret linkunderstøttelse
 
-Du kan nu trykke på links i brugerdefinerede visualiseringer for at åbne dem i din mobilbrowser.
+Du kan nu trykke på links i Power BI-visuals for at åbne dem i din mobilbrowser.
 
 #### <a name="intune-integration-android"></a>Intune-integration (Android)
 
@@ -470,7 +473,7 @@ Læs [oversigten over funktioner i mobilapps for april 2017](https://powerbi.mic
 #### <a name="all-devices"></a>Alle enheder
 **Baggrundsfarve for telefonrapporter** Når du definerer en baggrundsfarve for en rapport i Power BI Desktop, får telefonrapporten den samme baggrundsfarve. Mere om [optimering af rapportsider for telefoner](../../desktop-create-phone-report.md).
 
-**Udarbejd mobilvenlige brugerdefinerede visuelle elementer** Læs denne [Udviklerguide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) med tip til oprettelse af brugerdefinerede visuelle elementer, der ser godt ud og fungerer godt på mobilenheder.
+**Udarbejd mobilvenlige Power BI-visuals** Læs denne [Udviklerguide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) med tip til oprettelse af Power BI-visuals, der ser godt ud og fungerer godt på mobilenheder.
 
 #### <a name="ios-devices"></a>iOS-enheder
 **Tal med dataene: Stil spørgsmål ved at tale** Nu kan du [stille spørgsmål til dine data med Q&A](mobile-apps-ios-qna.md) ved at tale i stedet for at skrive. 

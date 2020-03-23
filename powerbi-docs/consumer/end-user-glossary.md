@@ -8,12 +8,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
-ms.openlocfilehash: 4679973cf65ced31a40b3a1bb40c820184e10e2c
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 19a3b1bbf5f2ea3043b92d97a66196ca3e32118c
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79040098"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377230"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
@@ -188,7 +188,7 @@ Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
 
 ## <a name="n"></a>N
 
-**native (oprindelig)** Er inkluderet i produktet. Power BI leveres f.eks. med et sæt *oprindelige* visualiseringstyper. Men du kan også importere andre typer, f.eks brugerdefinerede visuals.
+**native (oprindelig)** Er inkluderet i produktet. Power BI leveres f.eks. med et sæt *oprindelige* visualiseringstyper. Men du kan også importere andre typer, f.eks Power BI-visuals.
 
 **navigation pane (navigationsrude)** eller **nav pane** Kontrolelementerne langs den venstre kant i Power BI-tjenesten.
 

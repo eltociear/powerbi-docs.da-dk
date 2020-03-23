@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 11/25/2019
 ms.author: painbar
-ms.openlocfilehash: 8703bfa60116b7e60f1e6bec931b0f6183f7dd31
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 0313dc2014130ded9b9ed4ad112aa26803d92d28
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75218534"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435714"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Hurtig start: Vis dashboards og rapporter i Power BI-mobilappene
 I denne hurtige introduktion får du en hurtig rundvisning i Power BI – Mobil-appen og udforsker et eksempeldashboard og en eksempelrapport. Power BI-appen til iOS vises, men du kan nemt følge med på andre enheder.
@@ -23,6 +23,9 @@ Gælder for:
 | ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](./media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | ![Windows 10-enheder](./media/mobile-apps-quickstart-view-dashboard-report/win-10-logo-30-px.png) |
 |:--- |:--- |:--- |:--- |
 | iPhone | iPad | Android | Windows 10 |
+
+>[!NOTE]
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 Dashboards er en portal til din virksomheds livscyklus og processer. Det er en oversigt – et samlet sted, hvor du kan se virksomhedens aktuelle resultater. Rapporter er interaktive visninger af dine data, hvor visualiseringer repræsenterer forskellige resultater og indsigter fra disse data. 
 

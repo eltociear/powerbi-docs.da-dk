@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/21/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4194afb71dec7b50d75def0677489d3ff009917e
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: f9e0288c91f65d10329aaac29df8eb6e7a81f297
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79113766"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377152"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Eksportér rapporter fra Power BI til PowerPoint
 
@@ -78,7 +78,7 @@ Hvad du herefter gør med dit PowerPoint-slidesæt eller nogen af billederne i h
 Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbejder med funktionen **Eksportér til PowerPoint**.
 
 * R-visualiseringer og Python understøttes ikke i øjeblikket. Sådanne visualiseringer eksporteres som et tomt billede til PowerPoint med en fejlmeddelelse, hvor der står, at den pågældende visualisering ikke understøttes.
-* Brugerdefinerede visualiseringer, der er blevet certificeret, understøttes. I [Få en brugerdefineret visualisering certificeret](../developer/power-bi-custom-visuals-certified.md) kan du finde flere oplysninger om certificerede brugerdefinerede visualiseringer, herunder hvordan du får en brugerdefineret visualisering certificeret. Brugerdefinerede visualiseringer, der ikke er blevet certificeret, understøttes ikke. De eksporteres som et tomt billede til PowerPoint med en fejlmeddelelse, hvor der står, at den pågældende visualisering ikke understøttes.
+* Power BI-visuals, der er blevet certificeret, understøttes. I [Få en brugerdefineret visualisering certificeret](../developer/power-bi-custom-visuals-certified.md) kan du finde flere oplysninger om certificerede brugerdefinerede visualiseringer, herunder hvordan du får en brugerdefineret visualisering certificeret. Brugerdefinerede visualiseringer, der ikke er blevet certificeret, understøttes ikke. De eksporteres som et tomt billede til PowerPoint med en fejlmeddelelse, hvor der står, at den pågældende visualisering ikke understøttes.
 * ESRI-visualiseringen understøttes ikke
 * Rapporter med mere end 30 rapportsider kan ikke eksporteres i øjeblikket.
 * Visuals med rullepaneler eksporteres i standardtilstanden. I visual'et i PowerPoint vises kun den øverste del af dataene. Det er ikke muligt at rulle i PowerPoint, da hvert enkelt dias er et billede. 

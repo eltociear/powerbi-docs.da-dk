@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: d37e9530b56d577ae4f4a32780a46ba00ede8107
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 23291659a12bb08becf0d9a4f57a41a93eadbc5e
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114811"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435576"
 ---
 # <a name="get-notifications-in-the-power-bi-mobile-apps"></a>Modtag meddelelser i Power BI-mobilapps
 Gælder for:
@@ -21,6 +21,9 @@ Gælder for:
 | ![iPhone](./media/mobile-apps-notification-center/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-notification-center/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-notification-center/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-apps-notification-center/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-apps-notification-center/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-enheder |
+
+>[!NOTE]
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 I meddelelserne modtager du oplysninger omkring din Power BI-oplevelse direkte i Power BI-tjenesten eller på din mobilenhed. Når du åbner Meddelelser, vil du se en sekventiel feed med meddelelser om [beskeder, du har indstillet](mobile-set-data-alerts-in-the-mobile-apps.md), nye dashboards, der er blevet delt med dig, ændringer i din gruppes arbejdsområde, oplysninger om Power BI-hændelser og -møder og meget mere.
 

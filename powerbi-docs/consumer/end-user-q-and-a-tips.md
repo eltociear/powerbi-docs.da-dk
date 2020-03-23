@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 83db194ab670f1726f9598193dc2d3addf2eae72
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: d97ff72c385edd4c59c6eb72ce1eb873656923c9
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114281"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376816"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tip til at stille spørgsmål med Spørgsmål og svar i Power BI
 
@@ -67,7 +67,7 @@ Listen nedenfor bruger nutid, men alle tider genkendes i de fleste tilfælde. "e
 |  |  |
 |**Top N**     |     (sortering, rangering): top, bund, højeste, laveste, første, sidste, næste, tidligste, nyeste, ældste, seneste            |
 |        |         |
-|**Visualiseringstyper**     |  alle visualiseringstyper, der er indbygget i Power BI.  Hvis det er en indstilling i ruden med visuelle effekter, kan du medtage den i dit spørgsmål.  Undtagelsen til denne regel er [brugerdefinerede visualiseringer](../developer/power-bi-custom-visuals.md), som du manuelt har føjet til ruden Visualiseringer.  |
+|**Visualiseringstyper**     |  alle visualiseringstyper, der er indbygget i Power BI.  Hvis det er en indstilling i ruden med visuelle effekter, kan du medtage den i dit spørgsmål.  Undtagelsen til denne regel er [Power BI-visuals](../developer/visuals/power-bi-custom-visuals.md), som du manuelt har føjet til ruden Visualiseringer.  |
 |  |  Eksempel: vis distrikter efter måned og samlet salg som søjlediagram               |
 |        |         |
 |**HV (relation, kvalificeret)**  | hvornår, hvor, hvilken, hvem, hvor mange, hvor meget, hvor ofte, hvor mange gange, hvor hyppigt, antal, tal, mængde, hvor længe, hvad                |

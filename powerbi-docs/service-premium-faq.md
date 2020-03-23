@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: ff2f22620cf062dcc342323e71dc7401b5991cd7
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 6b2876ca78e07cf7c3c2b778ef9c571745baa1e5
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74697031"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488654"
 ---
 # <a name="power-bi-premium-faq"></a>Ofte stillede spørgsmål om Power BI Premium
 
@@ -75,7 +75,7 @@ Power BI Premium fås som et tilføjelsesprogram til Power BI Pro. Office 365 E5
 
 **Hvad er Power BI Report Server? Betyder det, at Power BI bliver tilgængeligt i det lokale miljø?**
 
-Power BI Report Server er en server i det lokale miljø-server, der muliggør installation og distribution af interaktive rapporter i Power BI og sideinddelte rapporter inden for organisationens firewalls grænser. Power BI-rapportserver er tilgængelig via Power BI Premium eller som en fordel for kunder med SQL Server Enterprise Edition med Software Assurance. Du kan finde oplysninger om licenser under [Licensering af Power BI-rapportserver](report-server/get-started.md#licensing-power-bi-report-server). Kontakt din Microsoft-repræsentant for at få flere oplysninger.
+Power BI-rapportserver er en server i det lokale miljø-server, der muliggør installation og distribution af interaktive rapporter i Power BI og sideinddelte rapporter inden for organisationens firewalls grænser. Power BI-rapportserver er tilgængelig via Power BI Premium eller som en fordel for kunder med SQL Server Enterprise Edition med Software Assurance. Du kan finde oplysninger om licenser under [Licensering af Power BI-rapportserver](report-server/get-started.md#licensing-power-bi-report-server). Kontakt din Microsoft-repræsentant for at få flere oplysninger.
 
 Med Power BI Premium kan det samme antal virtuelle kerner, som en organisation klargør i clouden, installeres i det lokale miljø via Power BI-rapportserver. Der er ingen grund til at opdele kapaciteten. Organisationer kan vælge Power BI i clouden eller vælge at beholde rapporter i det lokale miljø med Power BI Report Server og flytte til clouden i eget tempo.
 
@@ -88,6 +88,6 @@ Du kan finde flere oplysninger i [Kom i gang med Power BI Report Server](report-
 [Whitepaper til Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 [Planlægning af et whitepaper til Power BI Enterprise Deployment](https://aka.ms/pbienterprisedeploy)
 [Aktivering af udvidet prøveversion af Pro](service-extended-pro-trial.md)
-[Ofte stillede spørgsmål om Power BI Embedded](developer/embedded-faq.md)
+[Ofte stillede spørgsmål om Power BI Embedded](developer/embedded/embedded-faq.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

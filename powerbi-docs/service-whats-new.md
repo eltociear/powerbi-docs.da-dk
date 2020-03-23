@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 32f0c03fc0ae586b8b98c7a4c84c9d4c7bbd9078
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 878e4a2e033d33e8c6bb027f35976c19e8b108c9
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78920975"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488838"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
 Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner i **Power BI-tjenesten**. Du kan finde relaterede oplysninger om nyheder under:
 
-- Produktbemærkninger til [Nyheder i business intelligence, oktober '18 ](https://docs.microsoft.com/business-applications-release-notes/October18/intelligence-platform/planned-features) fra gruppen Microsoft Business Applications: De seneste opdateringer til vores virksomhedsprogrammer.
+- Produktbemærkninger til [Nyheder i business intelligence, oktober '18](https://docs.microsoft.com/business-applications-release-notes/October18/intelligence-platform/planned-features) fra gruppen Microsoft Business Applications: De seneste opdateringer til vores virksomhedsprogrammer.
 - [Nyheder i Power BI Desktop](desktop-latest-update.md)  
 - [Nyheder i mobilappsene til Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [Power BI-temaets blog](https://powerbi.microsoft.com/blog/)
@@ -91,7 +91,7 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 * Filtreret eksport til PPT og PDF.
 * [Indstillinger for hjælp og support](https://powerbi.microsoft.com/blog/tailoring-help-and-support-for-power-bi-users/) i administrationsportalen.
 * Data-lineage-oplevelse til [dataflows](service-dataflows-overview.md).
-* Indstilling for certificerede brugerdefinerede visualiseringer i administrationsportalen.
+* Indstilling for certificerede Power BI-visuals i administrationsportalen.
 
 ### <a name="january-2019"></a>Januar 2019
 * [Integration af sikre Power BI-rapporter](service-embed-secure.md) i interne portaler eller på interne websteder.
@@ -126,7 +126,7 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 * Forbedringer af Power BI-[rapportens URL-adressefilter](service-url-filters.md).
 
 ### <a name="july-2018"></a>Juli 2018
-* Understøttelse af brugerdefinerede visualiseringer for [faste filtre](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/).
+* Understøttelse af Power BI-visuals for [faste filtre](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/).
 * [API'er og PowerShell-cmdlet'er](https://powerbi.microsoft.com/blog/announcing-apis-and-powershell-cmdlets-for-power-bi-administrators/) til Power BI-administratorer.
 * [Multi-Geo-understøttelse](service-admin-premium-multi-geo.md) for Power BI Premium.
 
@@ -153,20 +153,20 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 ### <a name="february-2018"></a>Februar 2018
 * Installér automatisk [Power BI-apps](service-create-distribute-apps.md) for slutbrugere.
 * P4- og P5-kapaciteter under Power BI Premium
-* Eksempelvisning af [brugerdefinerede organisationsvisualiseringer](developer/power-bi-custom-visuals-organization.md).
+* Prøveversion af [Power BI-visuals til organisationer](developer/visuals/power-bi-custom-visuals-organization.md).
 
 ### <a name="january-2018"></a>Januar 2018
-*   Del Power BI-rapporter, og føj dem til favoritter.
-*   Understøttelse af OAuth2- og DirectQuery-enkeltlogon til Azure SQL Database og Data Warehouse.
-*   Overvågning i området: Overvågningslogge gemmes nu i det samme Office 365-område som deres lejer.
-*   General tilgængelighed af SharePoint Online [Power BI-rapportwebdel](https://go.microsoft.com/fwlink/p/?LinkId=825698).
-*   Administratorstyring af at mulighed for at slå visning af brugerdefinerede visualiseringer fra for alle brugere i lejeren.
-*   Understøttelse af planlagt opdatering til Azure Analysis Services (AAS).
+*    Del Power BI-rapporter, og føj dem til favoritter.
+*    Understøttelse af OAuth2- og DirectQuery-enkeltlogon til Azure SQL Database og Data Warehouse.
+*    Overvågning i området: Overvågningslogge gemmes nu i det samme Office 365-område som deres lejer.
+*    General tilgængelighed af SharePoint Online [Power BI-rapportwebdel](https://go.microsoft.com/fwlink/p/?LinkId=825698).
+*    Administratorstyring af mulighed for at slå visning af Power BI-visuals fra for alle brugere i lejeren.
+*    Understøttelse af planlagt opdatering til Azure Analysis Services (AAS).
 
 ## <a name="previous-months-2017"></a>Forrige måneder (2017)
 ### <a name="october-and-november-2017"></a>Oktober og november 2017
-*   Selektiv publicering af indhold med [Power BI Apps](service-create-distribute-apps.md).
-*   Ekstern brugerdistribution med [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
+*    Selektiv publicering af indhold med [Power BI Apps](service-create-distribute-apps.md).
+*    Ekstern brugerdistribution med [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
 * Anbefalinger til AI-drevne apps.
 * Opdateringer af grænsefladen på felter i dashboard.
 * Understøttelse af mailabonnementer til apps. 
@@ -183,8 +183,8 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 * Kend din målgruppe med [forbrugsdata for hver enkelt bruger](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
 * Kom i gang med [Power BI-tjenesteapps](service-connect-to-services.md) til onlinetjenester.
 * Oprettelse af forbindelse til IBM Netezza med datagatewayen i det lokale miljø via både forbindelsestilstanden Import og DirectQuery.
-* [Dynamisk RLS](developer/embedded-row-level-security.md) understøttes nu af Power BI Embedded.
-* Avanceret [filtrerings-API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) er nu føjet til 1.7-versionen af API'en til brugerdefinerede visuelle elementer.
+* [Dynamisk RLS](developer/embedded/embedded-row-level-security.md) understøttes nu af Power BI Embedded.
+* Avanceret [filtrerings-API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) er nu føjet til 1.7-versionen af API'en til Power BI-visuals.
 
 ### <a name="july-2017"></a>Juli 2017
 * Understøttelse af [mailabonnementer](consumer/end-user-subscribe.md) på dashboards.
@@ -197,7 +197,7 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 * Flere API-forbedringer til [automatisering af planlagt opdatering](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), [kloning og gentilknytning af rapporter](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), [opdatering af gatewaytilknytninger](https://msdn.microsoft.com/library/mt784650.aspx) og meget mere
 * Relative links i Power BI-apps fra felter i dashboardet til andre dashboards og rapporter.
 * [Impala-connector](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#impala) er offentligt tilgængelig på Power BI Desktop.
-* Udvidelse af visuelle egenskaber i Power BI med [interaktive brugerdefinerede R-visuals](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).
+* Udvidelse af visuelle egenskaber i Power BI med [interaktive R Power BI-visuals](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).
 
 ### <a name="april-and-may-2017"></a>April og maj 2017
 * Måling og øgning af din påvirkning med [forbrugsdata for dashboards og rapporter](service-usage-metrics.md).
@@ -213,7 +213,7 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 * Forbedrede [fejlfindingsmeddelelser for DAX-forespørgsler](https://powerbi.microsoft.com/blog/power-bi-service-march-feature-summary/#DAXtroubleshooting).
 * Bedre kontrol over dine datasæt med [brugerdefinerede tidsplaner for opdatering af cache](https://powerbi.microsoft.com/blog/announcing-custom-cache-refresh-schedules-in-the-power-bi-service/).
 * Oprettelse af forbindelse til [Amazon Redshift](https://powerbi.microsoft.com/blog/announcing-support-for-amazon-redshift-reports-in-the-power-bi-service/).
-* Gennemse [brugerdefinerede visuelle elementer i Power BI i Office Store](https://powerbi.microsoft.com/blog/custom-visuals-now-available-in-the-office-store/).
+* Gennemse [Power BI-visuals i Power BI i Office Store](https://powerbi.microsoft.com/blog/custom-visuals-now-available-in-the-office-store/).
 * Prøveversion: [Abonner på rapportsider](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) for at bevare overblikket over dine data.
 * Brug Azure AD-indholdspakken for at få mere at vide om, hvordan dine medarbejdere og partnere bruger Azure AD.
 
@@ -225,7 +225,7 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 ### <a name="january-2017"></a>Januar 2017
 * Administrer Power BI ved hjælp af [Power BI-administratorrollen](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#pbiadminrole).
 * [Power BI-overvågningslogge](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#auditlogs) i Office 365-overvågningsportalen er globalt tilgængelige.
-* Version 1.4 af [udviklerværktøjer og API'er til brugerdefinerede visuelle elementer](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) er udgivet.
+* Version 1.4 af [udviklerværktøjer og API'er til Power BI-visuals](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) er udgivet.
 * [Funktionssæt til streaming i realtid](https://powerbi.microsoft.com/blog/announcing-general-availability-of-power-bi-real-time-streaming-datasets/) er udgivet og offentligt tilgængeligt.
 * [Send data via push til Power BI ved hjælp af Power Automate](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) uden at skrive en kodelinje.
 * Prøveversion: [Abonner på rapportsider](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) for at bevare overblikket over dine data.

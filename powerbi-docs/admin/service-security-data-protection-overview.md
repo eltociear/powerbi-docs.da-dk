@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/22/2020
+ms.date: 03/12/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: adfa99a3e973108d65a06361ed967bef2ce37eb3
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: fa373fca782a582ec2ac2ef60cb36322efaff327
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537203"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205268"
 ---
 # <a name="data-protection-in-power-bi-preview"></a>Databeskyttelse i Power BI (prøveversion)
 
@@ -105,9 +105,6 @@ Følgende liste indeholder nogle begrænsninger for følsomhedsmærkater i Power
 * [HYOK-beskyttelse](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) understøttes ikke for mærkater, der anvendes i Power BI.
 * Der er [licenskrav](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#subscription-and-licensing-requirements-for-sensitivity-labels) for visning og anvendelse af mærkater i Office-programmer.
 * Følsomhedsmærkater understøttes kun for lejere i det globale cloudmiljø (offentligt). Følsomhedsmærkater understøttes ikke for lejere i andre cloudmiljøer.
-* Følsomhedsmærkater understøttes ikke for [eksterne brugere (Azure Active Directory B2B-gæstebrugere)](../service-admin-azure-ad-b2b.md). Det betyder, at eksterne brugere ikke kan få vist mærkater og bliver blokeret fra at eksportere data til Excel-, PDF- og PPTX-filer. [Fjern mærkaten](../designer/service-security-apply-data-sensitivity-labels.md#removing-sensitivity-labels) for at gøre det muligt for eksterne brugere at eksportere data til disse filtyper.
-
-
 
 ## <a name="next-steps"></a>Næste trin
 

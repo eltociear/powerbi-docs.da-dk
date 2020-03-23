@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/18/2020
+ms.date: 03/07/2020
 ms.author: painbar
-ms.openlocfilehash: 27f6469cb960ff101f45636e0720b935929ff010
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 9f9a0afb766becefa5b74c5737795f6f227e7c27
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76538108"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435760"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -21,6 +21,9 @@ Gælder for:
 | ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![iPad](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android-telefon](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Android-tablet](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Windows 10-enheder](./media/mobile-reports-in-the-mobile-apps/win-10-logo-40-px.png) |
 |:---: |:---: |:---: |:---: |:---: |
 | iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-enheder |
+
+>[!NOTE]
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 En Power BI-rapport er en interaktiv visning af dine data, hvor visualiseringer repræsenterer forskellige resultater og indsigter fra disse data. At få vist rapporter i Power BI-mobilapps er det sidste trin i en proces med tre trin:
 
@@ -59,6 +62,14 @@ Når du downloader Power BI-mobilappen, er den angivet til interaktion med enkel
 Hvis du foretrækker det, kan du skifte til interaktion med dobbelttryk. Hvis du vælger interaktion med dobbelttryk, skal du først trykke på en visualisering for at markere den og derefter trykke på visualiseringen igen for at udføre den ønskede handling.
 
 Hvis du vil skifte til interaktion med dobbelttryk, eller hvis du vil skifte tilbage til interaktion med enkelt tryk, skal du gå til [indstillinger for app-interaktion](./mobile-app-interaction-settings.md).
+
+### <a name="single-select-versus-multi-select-mode-for-data-point-selection"></a>Enkelt markering i forhold til tilstand med flere markeringer for datapunktsmarkering
+
+I en rapport skal du trykke på et datapunkt for at markere det. Du kan vælge, om du vil bruge enkeltmarkering eller tilstand med flere markeringer. Når du trykker på et datapunkt for at markere det i enkeltmarkeringstilstand, erstatter det markerede alle dine forudgående markeringer. Når du trykker på et datapunkt for at markere det i tilstanden med flere markeringer, *føjes* din markering til alle markeringer, du tidligere har foretaget, og det samlede resultat af alle dine markeringer fremhæves på tværs af hele rapportens visualiseringer.
+
+Hvis du vil fjerne markeringen af et datapunkt, skal du bare trykke på det igen.
+
+Hvis du vil skifte mellem enkeltmarkering og tilstanden med flere markeringer, skal du gå til [indstillinger for appinteraktion](./mobile-app-interaction-settings.md).
 
 ### <a name="using-tap-and-long-tap"></a>Brug af tryk og langt tryk
 Et tryk er det samme som et klik med musen. Så hvis du vil fremhæve rapporten på baggrund af et datapunkt, skal du trykke på det pågældende datapunkt.

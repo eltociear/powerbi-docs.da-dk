@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 019a3af81cd3661307fd9de6d0577ac58a11ae6a
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 58f9a56d41bd35987f7c258fafdbff26aedf5df1
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78919786"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488815"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Integrer en rapport på en sikker portal eller et websted
 
@@ -104,7 +104,7 @@ newUrl += "&$filter=Industries/Industry eq '" + filterValue + "'";
 
 }
 
-//Assumes there’s an iFrame on the page with id=”iFrame”
+//Assumes there's an iFrame on the page with id="iFrame"
 
 var report = document.getElementById("iFrame")
 
@@ -133,9 +133,9 @@ Du kan tilføje lige så mange knapper, du vil, og på den måde skabe en bruger
 
 * Den klassiske SharePoint Server understøttes ikke, da den kræver Internet Explorer-versioner, der er ældre end 11, eller aktivering af tilstanden Kompatibilitetsvisning.
 
-* Hvis du vil have en oplevelse med enkeltlogon, skal du bruge indstillingen [Integrer i SharePoint Online](service-embed-report-spo.md) eller skabe en brugerdefineret integration ved hjælp af integreringsmetoden [brugeren ejer data](developer/embed-sample-for-your-organization.md). 
+* Hvis du vil have en oplevelse med enkeltlogon, skal du bruge indstillingen [Integrer i SharePoint Online](service-embed-report-spo.md) eller skabe en brugerdefineret integration ved hjælp af integreringsmetoden [brugeren ejer data](developer/embedded/embed-sample-for-your-organization.md). 
 
-* Muligheden for automatisk godkendelse, der er tilgængelig med indstillingen **Integrer** fungerer ikke sammen med Power BI JavaScript API. Til JavaScript-API til Power BI skal du bruge integreringsmetoden [brugeren ejer dataene](developer/embed-sample-for-your-organization.md). 
+* Muligheden for automatisk godkendelse, der er tilgængelig med indstillingen **Integrer** fungerer ikke sammen med Power BI JavaScript API. Til JavaScript-API til Power BI skal du bruge integreringsmetoden [brugeren ejer dataene](developer/embedded/embed-sample-for-your-organization.md). 
 
 * Levetiden for godkendelsestokenet styres ud fra dine AAD-indstillinger. Når godkendelsestokenet udløber, skal brugeren opdatere sin browser for at få et opdateret godkendelsestoken. Standardlevetiden er én time, men den kan være kortere eller længere i din organisation.
 

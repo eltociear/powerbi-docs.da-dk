@@ -7,12 +7,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: d4e8ab0effef52071f592902a6c2fdb2649ff52d
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 4a9dcf14d1745087e2596507d4c7dbc7a03b5ab3
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114767"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435323"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Filtrer en rapport efter geografisk placering i Power BI-mobilapps
 Gælder for:
@@ -25,8 +25,9 @@ Når du får vist en Power BI-rapport på din mobilenhed, vises der da et lille 
 
 > [!NOTE]
 > Du kan kun filtrere efter placering, hvis de geografiske navne i rapporten er på engelsk, f.eks. "New York City" eller "Germany". Windows 10-tablets og -pc'er understøtter ikke geografisk filtrering, men Windows 10-telefoner gør.
-> 
-> 
+
+>[!NOTE]
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="filter-your-report-by-your-geographic-location"></a>Filtrer din rapport efter din geografiske placering
 1. Åbn en rapport i Power BI-mobilappen på din mobilenhed.

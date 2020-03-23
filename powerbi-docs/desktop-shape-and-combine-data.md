@@ -10,11 +10,11 @@ ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: d6a36f8ef3ef5d668fe8d6021758b651cdbf7fd5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877811"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79206763"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Selvstudium: Form og kombiner data i Power BI Desktop
 
@@ -107,7 +107,7 @@ Inden vi kan arbejde med denne forespørgsel, skal vi foretage nogle få ændrin
 1. Højreklik på et trin. Forespørgselseditor indeholder en menu, der giver dig mulighed for at udføre følgende opgaver: 
    - **Omdøb**: Omdøb trinnet.
    - **Slet**: Slet trinnet.
-   - **Slet** **Indtil slutning**: Fjern det aktuelle trin og alle efterfølgende trin.
+   - **Slet** **indtil slutning**: Fjern det aktuelle trin og alle efterfølgende trin.
    - **Flyt op**: Flyt trinnet op på listen.
    - **Flyt ned**: Flyt trinnet ned på listen.
 

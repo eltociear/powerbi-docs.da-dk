@@ -10,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 04ee1386547ed888531ea139227969d49629863d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 79f18faf56fba8afa85afd808f6faa1bd16811d8
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74699538"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381140"
 ---
 # <a name="troubleshooting-tile-errors"></a>Fejlfinding af feltfejl
 Nedenfor er de mest almindelige fejl, der kan opstå med felter, sammen med en forklaring.
@@ -35,9 +35,10 @@ Vi kunne ikke få adgang til dine data, fordi datakilden ikke var tilgængelig. 
 
 Kontakt ejeren af dashboardet for at sikre, at datakilderne og modellen findes og er tilgængelige for din konto.
 
-**Brugerdefinerede visualiseringer er blevet deaktiveret af din administrator.**
+**Power BI-visuals er blevet deaktiveret af din administrator.**
 
-Din Power BI-administrator har deaktiveret brugen af brugerdefinerede visualiseringer for din organisation eller sikkerhedsgruppe. Du kan ikke bruge brugerdefinerede visualiseringer fra [Microsoft Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) eller importere private visualiseringer fra en fil. Du kan kun bruge de foruddefinerede pakkede sæt af visualiseringer.
+Din Power BI-administrator har deaktiveret brugen af Power BI-visuals for din organisation eller sikkerhedsgruppe.
+Du kan ikke bruge Power BI-visuals fra [Microsoft Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) eller importere private visuals fra en fil. Du kan kun bruge de foruddefinerede pakkede sæt af visualiseringer.
 
 
 **Dataformer skal indeholde mindst én gruppe eller beregning med data som output. Kontakt ejeren af dashboardet.**

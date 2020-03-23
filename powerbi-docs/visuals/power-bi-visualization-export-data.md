@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/16/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f4e7d1aa580f7ad95da103fc2cb1e7e069a80ee6
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 9823e35fb2ddb99cf2932fa83e92598ba40f6690
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "78946870"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381370"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Eksportér de data, der blev brugt til at oprette en visualisering
 
@@ -252,7 +252,7 @@ Disse begrænsninger og overvejelser gælder for Power BI Desktop og Power BI-tj
 
 - Hvis visualiseringen bruger data fra mere end én datatabel, og der ikke findes nogen relation for disse tabeller i datamodellen, eksporterer Power BI kun data for den første tabel.
 
-- Brugerdefinerede visualiseringer og R-visualiseringer understøttes ikke i øjeblikket.
+- Power BI-visuals og R-visuals understøttes ikke i øjeblikket.
 
 - I Power BI kan du omdøbe et felt (en kolonne) ved at dobbeltklikke på feltet og skrive et nyt navn. Power BI henviser til det nye navn som et *alias*. Det er muligt at have dublerede feltnavne i en Power BI-rapport, men det understøttes ikke i Excel. Hvis Power BI eksporterer dataene til Excel, gendannes feltaliasserne derfor til de oprindelige feltnavne (kolonnenavne).  
 

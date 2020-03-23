@@ -6,20 +6,20 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 8829cb8af41611fb29cd4fc22da7706e80ef3210
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4379fbfe051b69a2c9502a033ba462c1dded2022
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880349"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380619"
 ---
 # <a name="tooltips-in-power-bi-visuals"></a>Værktøjstip i visualiseringer i Power BI
 
-Visualiseringer kan nu anvende understøttelse af Power BI-værktøjstip. Power BI-værktøjstip håndterer følgende interaktioner:
+Visuals kan nu anvende understøttelse af Power BI-værktøjstip. Power BI-værktøjstip håndterer følgende interaktioner:'''
 
-* Vis et værktøjstip.
+* Vis et værktøjstip.'''
 * Skjul et værktøjstip.
 * Flyt et værktøjstip.
 
@@ -27,7 +27,7 @@ Værktøjstip kan vise et tekstelement med en titel, en værdi i en given farve 
 
 Følgende billede viser et værktøjstip i et eksempel på et søjlediagram:
 
-![Værktøjstip i eksempel på søjlediagram](./media/tooltips-in-samplebarchart.png)
+![Værktøjstip i eksempel på søjlediagram](media/add-tooltips/tooltips-in-samplebarchart.png)
 
 Billedet af værktøjstippet ovenfor angiver kategori og værdi for en enkelt søjle i diagrammet. Du kan udvide et enkelt værktøjstip for at få vist flere værdier.
 
@@ -209,7 +209,7 @@ Følgende er et eksempel på et skema
 
 Du kan definere værktøjstip til rapportsider i ruden **Format.**
 
-![Værktøjstip til rapportsider](media/report-page-tooltip.png)
+![Værktøjstip til rapportsider](media/add-tooltips/report-page-tooltips.png)
 
 * `supportedTypes`: Den konfiguration af værktøjstip, der understøttes af visualiseringen og afspejles på feltoversigten. 
    * `default`: Angiver, om binding af "automatiske" værktøjstip via datafelter understøttes. 

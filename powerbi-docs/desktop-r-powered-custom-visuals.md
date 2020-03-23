@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9cc5c40328955f54cb0f37567d7ff91d37a302ce
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 020967948e3f0551de50e4485be0dde450a4f18b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128244"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378679"
 ---
 # <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>Brug R-drevne Power BI-visualiseringer i Power BI
 
@@ -129,7 +129,7 @@ Power BI-teamet arbejder aktivt på at mindske disse problemer, før de opstår 
 
    b.  Fra R-konsollen skal du køre følgende:
 
-       source(“C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R”)
+       source("C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R")
 
    Typiske standardinstallationsplaceringer er følgende:
 
@@ -145,11 +145,11 @@ Power BI-teamet arbejder aktivt på at mindske disse problemer, før de opstår 
 
    b. Hvis det forrige trin ikke virker, kan du ændre **Værktøjer > Globale indstillinger > Pakker** i **R Studio**, markere afkrydsningsfeltet for **Brug Internet Explorer bibliotek/proxy for HTTP** og derefter gentage trin 3.b. fra trinnene ovenfor.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde yderligere oplysninger om R i Power BI i følgende artikler.
 
-* [Galleri med Power BI-visualiseringer](https://app.powerbi.com/visuals/)
+* [Galleri med Power BI-visuals](https://app.powerbi.com/visuals/)
 * [Kørsel af R-scripts i Power BI Desktop](desktop-r-scripts.md)
 * [Opret visuelle R-elementer i Power BI Desktop](desktop-r-visuals.md)
 * [Brug en ekstern R-IDE med Power BI](desktop-r-ide.md)

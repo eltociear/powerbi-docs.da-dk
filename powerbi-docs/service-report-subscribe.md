@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/03/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4d8a5c1cceb66b7103a58c7bcebfa46dbdd97430
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 5208c72016a148f86a119bdddd2bbd1f69d3456b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74831117"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381025"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten
 
@@ -95,17 +95,17 @@ Et abonnement slutter, hvis Pro-licensen udløber, hvis ejeren sletter dashboard
 * For mailabonnementer på rapporter kan du ikke oprette et abonnement til dig selv, hvis datasættet anvender sikkerhed på rækkeniveau. Du kan ikke tilmelde andre et abonnement på en rapport med sikkerhed på rækkeniveau, medmindre du bruger en sideinddelt rapport, som giver dig mulighed for at sende abonnementet til andre, der bruger din sikkerhedskontekst. 
 * Rapportsideabonnementer er bundet til navnet på siden i rapporten. Hvis du abonnerer på en rapportside og omdøber den, skal du genoprette dit abonnement.
 * Din organisation kan konfigurere bestemte indstillinger i Azure Active Directory, som begrænser muligheden for at bruge mailabonnementer i Power BI.  Disse begrænsninger omfatter, men er ikke begrænset til, multifaktorgodkendelse eller IP-intervalbegrænsning, når ressourcer tilgås.
-* Mailabonnementer på rapporter/dashboards, der bruger direkte forbindelser, understøttes i øjeblikket ikke, når andre end dig selv tilmeldes et abonnement, medmindre du bruger en sideinddelt rapport, som giver dig mulighed for at sende abonnementet til andre, som bruger din sikkerhedskontekst. 
-* Mailabonnementer understøtter ikke de fleste [brugerdefinerede visualiseringer](developer/power-bi-custom-visuals.md).  Den eneste undtagelse er de brugerdefinerede visuelle elementer, der er blevet [certificeret](developer/power-bi-custom-visuals-certified.md).  
-* Mailabonnementer understøtter ikke R-drevne brugerdefinerede visualiseringer på nuværende tidspunkt.  
-* Mailabonnementer sendes med rapportens tilstande for standardfilter og -udsnit. Hvis du ændrer standardværdierne, efter du har oprettet abonnementet, vises de ikke i mailen.  Sideinddelte rapporter understøtter denne egenskab og giver dig mulighed for at angive de specifikke parameterværdier pr. abonnement.   
+* Mailabonnementer på rapporter/dashboards, der bruger direkte forbindelser, understøttes i øjeblikket ikke, når andre end dig selv tilmeldes et abonnement, medmindre du bruger en sideinddelt rapport, som giver dig mulighed for at sende abonnementet til andre, som bruger din sikkerhedskontekst.
+* Mailabonnementer understøtter ikke de fleste [Power BI-visuals](developer/visuals/power-bi-custom-visuals.md).  Den eneste undtagelse er de Power BI-visuals, der er blevet [certificeret](developer/visuals/power-bi-custom-visuals-certified.md).  
+* Mailabonnementer understøtter ikke R-drevne Power BI-visuals på nuværende tidspunkt.  
+* Mailabonnementer sendes med rapportens tilstande for standardfilter og -udsnit. Hvis du ændrer standardværdierne, efter du har oprettet abonnementet, vises de ikke i mailen.  Sideinddelte rapporter understøtter denne egenskab og giver dig mulighed for at angive de specifikke parameterværdier pr. abonnement.
 * For dashboardabonnementer specifikt understøttes visse typer felter endnu ikke.  Det omfatter: streamingfelter, videofelter, felter med brugerdefineret webindhold.     
 * Hvis du deler et dashboard med en kollega uden for din lejer, kan du ikke også oprette et abonnement for den pågældende kollega. Så hvis du er aaron@xyz.com, kan du dele med anyone@ABC.com, men du kan endnu ikke oprette abonnement for anyone@ABC.com, og vedkommende kan ikke abonnere på delt indhold.      
 * Power BI afbryder automatisk midlertidigt opdatering af datasæt, der er knyttet til dashboards og rapporter, som ikke er blevet besøgt i mere end to måneder.  Men hvis du føjer et abonnement til et dashboard eller en rapport, afbrydes det ikke midlertidigt, selvom det ikke besøges.    
 * Hvis du ikke modtager abonnementsmailene, skal du kontrollere, at din brugers hovednavn (UPN) kan modtage mails. 
 * Hvis dit dashboard eller din rapport er i Premium-kapacitet, kan du bruge mailaliasser for grupper til abonnementer i stedet for at oprette abonnementer for kollegaer én mailadresse ad gangen. Aliasserne er baseret på det aktuelle Active Directory. 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 - [Meld dig selv og andre til et abonnement på en sideinddelt rapport i Power BI-tjenesten](consumer/paginated-reports-subscriptions.md)
 - Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)    

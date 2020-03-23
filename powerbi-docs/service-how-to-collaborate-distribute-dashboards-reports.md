@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 03/12/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7633f0771a87c01d53261d13135d831e95e80136
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 86992d2e1426616f8d902a9f49d35407fde60ef2
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881333"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376747"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Måder at dele dit arbejde i Power BI på
 
@@ -23,10 +23,12 @@ Du har oprettet dashboards og rapporter. Måske har du også samarbejdet med kol
 * Samarbejd med kolleger om at oprette relevante rapporter og dashboards i *arbejdsområder*.
 * Gruppér disse dashboards og rapporter i *apps*, og distribuer dem til en større gruppe eller hele organisationen.
 * Opret *delte datasæt*, som dine kolleger kan bruge som udgangspunkt for deres egne rapporter i deres egne arbejdsområder.
-* Opret en *skabelonapp*, som du kan distribuere til eksterne Power BI-brugere via Microsoft AppSource.
 * Del dashboards eller rapporter med nogle få personer fra tjenesten eller Power BI-mobilapps.
+* Anmærk og del fra Power BI-mobilapps.
+* Integrer en rapport i Microsoft Teams.
 * Udskriv rapporter.
 * *Integrer* rapporter på sikre portaler eller offentlige websteder.
+* Opret en *skabelonapp*, som du kan distribuere til eksterne Power BI-brugere via Microsoft AppSource.
 
 Uanset hvilken indstilling du vælger, skal du bruge en [Power BI Pro-licens](service-features-license-type.md) for at dele dit indhold, ellers skal indholdet være i en [Premium-kapacitet](service-premium-what-is.md). Licenskrav varierer alt efter de kolleger, der får vist dine dashboards, afhængigt af den valgte indstilling. De følgende afsnit går længere ned i detaljen. 
 
@@ -44,7 +46,7 @@ I arbejdsområder findes der roller, der bestemmer, hvilke tilladelser dine koll
 
 Du kan selvfølgelig lægge indhold i Mit arbejdsområde og dele det derfra. Arbejdsområder er mere velegnede til samarbejde end Mit arbejdsområde, da de gør det muligt at eje indhold i fællesskab. Du og hele dit team kan nemt foretage opdateringer eller give andre adgang. Mit arbejdsområde er mest velegnet til enkeltpersoner til skiftende eller personligt indhold.
 
-Lad os forestille os, at du har et færdigt dashboard, du skal dele med dine kollegaer. Hvordan kan du bedst give dem adgang til dashboardet? Svaret afhænger af en række faktorer. 
+Lad os forestille os, at du har et færdigt dashboard, du skal dele med dine kolleger. Hvordan kan du bedst give dem adgang til dashboardet? Svaret afhænger af en række faktorer. 
 
 - Hvis kolleger skal holde dashboardet opdateret eller skal have adgang til alt indholdet i arbejdsområdet, kan du overveje at føje dem til arbejdsområdet. 
 - Hvis kolleger bare skal have vist dashboardet og ikke alt indholdet i arbejdsområdet, kan du igen vælge mellem en række alternativer. Hvis nogle få personer har brug for dette ene dashboard, kan deling af dashboardet være den bedste løsning.
@@ -97,6 +99,10 @@ Du kan dele et snapshot af feltet, rapporten eller dit visual, og modtagerne ser
 Flere oplysninger om [anmærkning og deling af felter, rapporter og visuelle elementer](consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) fra iOS- og Android-mobilapps.
 
 Du kan også [dele et snapshot af et felt](consumer/mobile/mobile-windows-10-phone-app-get-started.md) fra Power BI-appen til Windows 10-enheder.
+
+## <a name="embed-a-report-in-microsoft-teams"></a>Integrer en rapport i Microsoft Teams
+
+Øg det databaserede samarbejde i din organisation ved at integrere dine Power BI-rapporter og sideinddelte Power BI-rapporter i Microsoft Teams. Du kan tilføje separate Power BI-faner for hver enkelt rapport og give hver fane rapportens navn eller et andet navn. Dine kollegaer kan få vist dine rapporter under Power BI-fanerne i Teams. De kan også åbne vinduet Samtale og kommentere rapporten direkte i Teams. Læs mere om [integration af en rapport i Microsoft Teams](service-embed-report-microsoft-teams.md).
 
 ## <a name="print-or-save-as-pdf-or-other-static-file"></a>Udskriv eller gem som pdf-fil eller en anden statisk fil
 

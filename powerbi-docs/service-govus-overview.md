@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/19/2020
+ms.date: 03/13/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 590b00f5eb03b1bd31430866a52faa4748f9b32a
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: b36bc6d23b56b4118f848ad9fa4e8f39dbc65d2d
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496933"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376718"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til kunder i den amerikanske stat
 Denne artikel er for kunder inden for de amerikanske offentlige myndigheder, der udruller Power BI som en del af en Office 365-plan til offentlige myndigheder. Planer til offentlige myndigheder er designet til at opfylde de særlige behov hos organisationer, der overholder amerikanske standarder og sikkerhedsstandarder. Power BI-tjenesten, der er udviklet til kunder inden for de amerikanske offentlige myndigheder, adskiller sig fra den kommercielle version af Power BI-tjenesten. Disse funktionsforskelle og egenskaber er beskrevet i følgende afsnit.
@@ -46,7 +46,7 @@ Office 365 indeholder forskellige miljøer, så de offentlige myndigheder kan op
 Når du har udrullet Office 365, kan du tilføje et Power BI-abonnement. Følg den trinvise vejledning i, hvordan du [tilmelder din amerikanske offentlige organisation](service-govus-signup.md#existing-office-government-cloud-customers), for at købe Power BI Pro-tjenesten til offentlige myndigheder. Køb tilstrækkeligt mange licenser til alle de brugere, der skal bruge Power BI, og tildel derefter disse licenser til individuelle brugerkonti.
 
 > [!IMPORTANT]
-> Power BI US Government er kun tilgængelig som en gratis licens. Hver enkelt bruger skal tildeles en Pro-licens for at få adgang til Government Community Cloud. Hvis en brugerkonto har fået tildelt en gratis licens, er vedkommende kun autoriseret til at få adgang til den kommercielle cloud og vil opleve problemer med godkendelse og adgang. Hvis du vil gennemgå forskellene mellem licenstyper, skal du se [Funktioner i Power BI-tjenesten efter licenstype](service-features-license-type.md).
+> Power BI US Government er kun tilgængelig som en gratis licens. Hver enkelt bruger skal tildeles en Pro-licens for at få adgang til Government Community Cloud. Hvis en brugerkonto har fået tildelt en gratis licens, er vedkommende kun autoriseret til at få adgang til den kommercielle cloud og vil opleve problemer med godkendelse og adgang. Hvis du har købt Power BI Premium, behøver du ikke at tildele Pro-licenser for at aktivere brugeradgang.  Alle brugere i organisationen har adgang til rapporter, der er delt med dem, så længe rapporten er udgivet til en Premium-kapacitet. Hvis du vil gennemgå forskellene mellem licenstyper, skal du se [Funktioner i Power BI-tjenesten efter licenstype](service-features-license-type.md).
 >
 >
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 03/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a15b309cd2e50eb47242895c808eaa4386c53a4b
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.openlocfilehash: 360461a009187df5fdf2769e7c9a03e7d194b5ad
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78401320"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378495"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -32,6 +32,81 @@ Linkene ud for hver opdatering betyder følgende:
 Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
 
 I de følgende afsnit beskrives tidligere måneders opdateringer til **Power BI Desktop**.
+
+
+## <a name="february-2020-update-2785740642"></a>Opdatering fra februar 2020 (2.78.5740.642)
+
+Vi elsker vores opdateringer fra februar og synes, at vores nye funktioner er bedre end en hjerteformet æske chokolade. 
+
+> [!IMPORTANT]
+> Fra og med udgivelsen i september 2019 udgives Power BI Desktop kun som en enkelt .exe-fil, der indeholder alle understøttede sprog. .msi-versionen udgives ikke længere.
+
+Linkene ud for hver funktion på opdateringslisten i Power BI Desktop fortolkes på følgende måde:
+
+* [blog]: Most features are explained in a section in the monthly update blog post.
+* [video]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
+* [artikel]: Some features have an article that provides more detail.
+* De resterende er selvforklarende og vil ikke være tilknyttet en artikel eller video.
+
+Følgende opdateringer var nye i Power BI Desktop i denne måned:
+
+
+### <a name="data-management"></a>Dataadministration
+* Trinvins opdatering er nu generelt tilgængelig [[video]](https://youtu.be/TN61JvbUAxk?t=16)  [[artikel]](service-premium-incremental-refresh.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Incremental_refresh) 
+
+### <a name="reporting"></a>Rapportering
+* Hierarkisk udsnit (prøveversion) [[video]](https://youtu.be/TN61JvbUAxk?t=207)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Hierarchical_slicer) 
+* Opdateret bånd (prøveversion) [[video]](https://youtu.be/TN61JvbUAxk?t=424)  [[artikel]](desktop-ribbon.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Ribbon) 
+
+
+### <a name="modeling"></a>Modellering
+* Nye DAX-funktioner: FirstNonBlankValue, LastNonBlankValue [[video]](https://youtu.be/TN61JvbUAxk?t=716)  [[article]](https://docs.microsoft.com/dax/firstnonblankvalue-function-dax)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_New_DAX_Functions) 
+
+### <a name="visuals"></a>Visualiseringer
+* Nye brugerdefinerede visuals [[video]](https://youtu.be/TN61JvbUAxk?t=835)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Visualizations) 
+
+
+### <a name="template-apps"></a>Skabelonapps
+* Microsoft 365-forbrugsanalyser [[video]](https://youtu.be/TN61JvbUAxk?t=910)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Microsoft_365_usage) 
+* NFL Analytics by P3 [[video]](https://youtu.be/TN61JvbUAxk?t=928)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_NFL)
+* Acterys til QuickBooks, Zero og WorkflowMax [[video]](https://youtu.be/TN61JvbUAxk?t=932)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Acterys) 
+
+
+### <a name="data-preparation"></a>Dataforberedelse
+* Forespørgselsdiagnosticering – understøttelse af brugere, der ikke er administratorer [[video]](https://youtu.be/TN61JvbUAxk?t=938)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_non_admin_support) 
+
+
+### <a name="data-connectivity"></a>Dataforbindelse
+* MicroStrategy-connector (offentligt tilgængelig) [[video]](https://youtu.be/TN61JvbUAxk?t=962)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_MicroStrategy_connector) 
+* FHIR-connector (offentligt tilgængelig) [[video]](https://youtu.be/TN61JvbUAxk?t=962)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_FHIR) 
+* Yderligere connectors: Factset, TIBCO, Jamf Pro, Asana [[video]](https://youtu.be/TN61JvbUAxk?t=978)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Factset_connector) 
+
+
+
+Du kan finde detaljerede oplysninger om hver af disse nye funktioner i [oversigten over funktioner i Power BI Desktop](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/).
+
+Tjek [nyhederne i Power BI-tjenesten](service-whats-new.md) og [nyhederne i mobilappsene til Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+> [!NOTE]
+> Se de [datakilder, der er tilgængelige for Power BI Desktop](desktop-data-sources.md). Vores liste vokser hele tiden, så vend tilbage med jævne mellemrum.
+
+
+## <a name="power-bi-desktop-monthly-update-video"></a>Video om månedlig opdatering til Power BI Desktop
+I følgende video beskrives hver af disse opdateringer. Du kan også se videoen fra blogindlægget:
+
+> [!VIDEO https://www.youtube.com/embed/TN61JvbUAxk]
+
+Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisation kræver det. Vi anbefaler altid, at du bruger den nyeste version af Power BI Desktop i stedet for en tidligere version. Der er følgende begrænsninger for alle tidligere versioner:
+
+* Der ydes ikke service til tidligere versioner af Power BI Desktop – du skal altid bruge den nyeste version for at få de nyeste funktioner og opdateringer.
+* Du kan muligvis ikke åbne filer, der er oprettet eller gemt i nyere versioner af Power BI Desktop, med tidligere versioner af Power BI Desktop. 
+* Hvis du får vist en advarsel, når du indlæser en rapport, der er gemt i en nyere version af Power BI Desktop, og derefter gemmer rapporten i den tidligere version, mister du alle oplysninger, der er relateret til nye funktioner.
+* Vi arkiverer kun de engelske versioner af Power BI Desktop.
+
+Vælg følgende links for at downloade denne tidligere version: 
+
+* [Power BI Desktop-version fra februar 2020 – 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-02.exe)
+* [Power BI Desktop-version fra februar 2020 – 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-02_x64.exe)
 
 
 ## <a name="december-2019-update-2765678661"></a>Opdatering fra december 2019 (2.76.5678.661)
@@ -67,7 +142,7 @@ Følgende opdateringer var nye i Power BI Desktop i denne måned:
 
 ### <a name="visuals"></a>Visualiseringer
 * Tilpasning af ruden Visuals (offentligt tilgængelig) [[video]](https://youtu.be/eCEwgZsVUOs?t=865)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#personalizeViz) 
-* Nye brugerdefinerede visuals [[video]](https://youtu.be/eCEwgZsVUOs?t=886)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#xViz) 
+* Nye Power BI-visuals [[video]](https://youtu.be/eCEwgZsVUOs?t=886)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#xViz) 
 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
@@ -391,7 +466,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 
 
 ### <a name="visuals"></a>Visualiseringer
-* Nye brugerdefinerede visualiseringer og opdateringer [[video]](https://youtu.be/sf4n7VXoQHY?t=956)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#xviz) 
+* Nye Power BI-visuals og opdateringer [[video]](https://youtu.be/sf4n7VXoQHY?t=956)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#xviz) 
 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
@@ -457,7 +532,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 
 ### <a name="visuals"></a>Visualiseringer
 * PowerApps-visualisering er nu certificeret [[video]](https://youtu.be/l7OMRUF9UYg?t=894)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#powerapps) 
-* Tre nye brugerdefinerede visualiseringer og opdateringer [[video]](https://youtu.be/l7OMRUF9UYg?t=932)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#infocard) 
+* Tre nye Power BI-visuals og opdateringer [[video]](https://youtu.be/l7OMRUF9UYg?t=932)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#infocard) 
 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
@@ -531,7 +606,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 
 ### <a name="visuals"></a>Visualiseringer
 * Ruden Tilpasset visualisering (prøveversion) [[video]](https://youtu.be/7k-nP38uHyQ?t=1349)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#personalizedVizPane) 
-* Tre nye brugerdefinerede visualiseringer og opdateringer [[video]](https://youtu.be/7k-nP38uHyQ?t=1391)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#synopticVisual) 
+* Tre nye Power BI-visuals og opdateringer [[video]](https://youtu.be/7k-nP38uHyQ?t=1391)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#synopticVisual) 
 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
@@ -600,7 +675,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 
 ### <a name="visuals"></a>Visualiseringer
 * Opdateringer til ArcGIS Maps for Power BI [[video]](https://youtu.be/O8GlHDz8xUQ?t=1093)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#esri) 
-* Seks nye brugerdefinerede visualiseringer og opdateringer [[video]](https://youtu.be/O8GlHDz8xUQ?t=1199)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#mapbox) 
+* Seks nye Power BI-visuals og opdateringer [[video]](https://youtu.be/O8GlHDz8xUQ?t=1199)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#mapbox) 
 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
@@ -659,7 +734,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 ### <a name="modeling"></a>Modellering
 * Ny DAX-funktion – ALLCROSSFILTERED [[video]](https://youtu.be/vih35kSrEHU?t=970)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dax) 
 
-### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
+### <a name="power-bi-visuals"></a>Power BI-visualiseringer
 * Én ny brugerdefineret visualisering [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#rainbowGauge) 
 
 
@@ -737,9 +812,9 @@ Følgende opdateringer var nye i **Power BI Desktop** i marts:
 * Ny modelleringsvisning er nu offentligt tilgængelig [[video]](https://youtu.be/rBPGH6eYlT0?t=417)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#modellingView) 
 * Nye DAX-funktioner [[video]](https://youtu.be/rBPGH6eYlT0?t=560)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#DAX) 
 
-### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
-* Indstilling for nye certificerede brugerdefinerede visualiseringer i administrationsportalen [[video]](https://youtu.be/rBPGH6eYlT0?t=624)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#certifiedAdminSetting) 
-* To nye brugerdefinerede visualiseringer [[video]](https://youtu.be/rBPGH6eYlT0?t=693)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#customVisuals) 
+### <a name="power-bi-visuals"></a>Power BI-visualiseringer
+* Indstilling for nye certificerede Power BI-visuals i administrationsportalen [[video]](https://youtu.be/rBPGH6eYlT0?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#certifiedAdminSetting) 
+* To nye Power BI-visuals [[video]](https://youtu.be/rBPGH6eYlT0?t=693)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#customVisuals) 
 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
@@ -797,8 +872,8 @@ Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 * Automatisk genererede forslag til oversigten over spørgsmål og svar [[video]](https://youtu.be/dMD25wfElLg?t=1121)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#autoSuggestions) 
 * Forbedret Python-script og R Script-editor [[video]](https://youtu.be/dMD25wfElLg?t=1282)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#scriptEditor) 
 
-### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
-* Ti nye brugerdefinerede visualisering, funktion til nye brugerdefinerede visualiseringer [[video]](https://youtu.be/dMD25wfElLg?t=1324)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#customVisuals) 
+### <a name="power-bi-visuals"></a>Power BI-visualiseringer
+* Ti nye Power BI-visuals, ny Power BI-visuals-funktion [[video]](https://youtu.be/dMD25wfElLg?t=1324)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#customVisuals) 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
 
@@ -873,7 +948,7 @@ Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 * Understøttelse af tilgængelighed af datavisning [[video]](https://youtu.be/AHNlkjRFdYI?t=1253)[[artikel]](desktop-composite-models.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#dataView) 
 
 
-### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
+### <a name="power-bi-visuals"></a>Power BI-visualiseringer
 
 * En ny brugerdefineret visualisering [[video]](https://youtu.be/AHNlkjRFdYI?t=1370)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#customVisuals) 
 
@@ -934,9 +1009,9 @@ Følgende opdateringer var nye i **Power BI Desktop** i november:
 * Forbedringer af tilgængeligheden af udformning [[video]](https://youtu.be/1xsXXoyTxfk?t=2023)[[artikel]](desktop-accessibility.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingAccessibility) 
 * Nye DAX-funktioner [[video]](https://youtu.be/1xsXXoyTxfk?t=2066)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23dax) 
 
-### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
+### <a name="power-bi-visuals"></a>Power BI-visualiseringer
 
-* Fem nye brugerdefinerede visualiseringer [[video]](https://youtu.be/1xsXXoyTxfk?t=2108)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23customVisuals) 
+* Fem nye Power BI-visuals [[video]](https://youtu.be/1xsXXoyTxfk?t=2108)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23customVisuals) 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
 
@@ -981,9 +1056,9 @@ Følgende opdateringer var nye i **Power BI Desktop** i oktober:
 * Understøttelse af sammensatte modeller og sammenlægning i Power BI-tjenesten (prøveversion) [[video]](https://youtu.be/8E6UokaDtc0)[[artikel – sammenlægninger]](desktop-aggregations.md)[[artikel – sammensatte modeller]](desktop-composite-models.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23compositeModels) 
 * Forklar forøgelsen i forbindelse med ikke-additive målinger [[video]](https://youtu.be/8E6UokaDtc0?t=107)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23Insights) 
 
-### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
+### <a name="power-bi-visuals"></a>Power BI-visualiseringer
 
-* Fem nye brugerdefinerede visualiseringer [[video]](https://youtu.be/ZfJSSG17SEY)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23customVisuals) 
+* Fem nye Power BI-visuals [[video]](https://youtu.be/ZfJSSG17SEY)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23customVisuals) 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
 
@@ -1036,9 +1111,9 @@ Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 
 * Sammenlægninger (prøveversion) [[video]](https://youtu.be/Rzw2WyI09kY?t=11m37s)[[artikel]](desktop-aggregations.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#aggregations) 
 
-### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
+### <a name="power-bi-visuals"></a>Power BI-visualiseringer
 
-* Fem nye brugerdefinerede visualiseringer [[video]](https://youtu.be/Rzw2WyI09kY?t=23m8s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#customVisuals) 
+* Fem nye Power BI-visuals [[video]](https://youtu.be/Rzw2WyI09kY?t=23m8s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#customVisuals) 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
 
@@ -1091,9 +1166,9 @@ Følgende opdateringer var nye i **Power BI Desktop** i august:
 * Python-integration [[video]](https://youtu.be/dgv5HhHxxe8?t=11m14s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#python) 
 * Forbedringer i spørgsmål og svar [[video]](https://youtu.be/dgv5HhHxxe8?t=13m1s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#Q&A) 
 
-### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
+### <a name="power-bi-visuals"></a>Power BI-visualiseringer
 
-* Fem nye brugerdefinerede visualiseringer [[video]](https://youtu.be/dgv5HhHxxe8?t=19m48s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#customVisuals) 
+* Fem nye Power BI-visuals [[video]](https://youtu.be/dgv5HhHxxe8?t=19m48s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#customVisuals) 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
 
@@ -1145,11 +1220,11 @@ Følgende opdateringer var nye i **Power BI Desktop** i juli:
 
 * Indsigt i distributionsfaktor [[video]](https://youtu.be/Mtig3rmIUe0?t=37m)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#distributionFactor) 
 
-### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
+### <a name="power-bi-visuals"></a>Power BI-visualiseringer
 
 * Power BI-certificeret kategori [[video]](https://youtu.be/Mtig3rmIUe0?t=41m13s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#certifiedVisuals) 
 * Deaktivering af specifikke organisationsrelaterede visualiseringer [[video]](https://youtu.be/Mtig3rmIUe0?t=42m32s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#orgCustomVisuals) 
-* Fire nye brugerdefinerede visualiseringer [[video]](https://youtu.be/Mtig3rmIUe0?t=44m)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#visio) 
+* Fire nye Power BI-visuals [[video]](https://youtu.be/Mtig3rmIUe0?t=44m)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#visio) 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
 
@@ -1187,9 +1262,9 @@ Følgende opdateringer var nye i **Power BI Desktop** i juni:
 * Formatér datamærkater separat for hver måling i et kombinationsdiagram [[video]](https://youtu.be/4VpGtWSrssE?t=9m29s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#comboLabels) 
 * Længere telefonrapporter [[video]](https://youtu.be/4VpGtWSrssE?t=11m26s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#phoneReports) 
 
-### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
+### <a name="power-bi-visuals"></a>Power BI-visualiseringer
 
-* To nye brugerdefinerede visualiseringer [[video]](https://youtu.be/4VpGtWSrssE?t=17m42s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#customVisuals) 
+* To nye Power BI-visuals [[video]](https://youtu.be/4VpGtWSrssE?t=17m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#customVisuals) 
 
 ### <a name="modeling"></a>Modellering
 * Filtrering og sortering i datavisning [[video]](https://youtu.be/4VpGtWSrssE?t=13m11s)[[artikel]](desktop-data-view.md#filtering-in-data-view)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#filterAndSort) 
@@ -1236,15 +1311,15 @@ Følgende opdateringer var nye i **Power BI Desktop** i maj:
 
 ### <a name="analytics"></a>Analyse
 
-* Mål detaljeadgang [[video]](https://youtu.be/-_GMCE1TLvQ?t=2m9s)[[artikel]](desktop-drillthrough.md#pass-all-filters-in-drillthrough)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#measureDrillthrough) 
+* Mål detaljeadgang [[video]](https://youtu.be/-_GMCE1TLvQ?t=2m9s)[[artikel]](desktop-drillthrough.md#pass-all-filters-in-drill-through)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#measureDrillthrough) 
 
 ### <a name="power-bi-premium"></a>Power BI Premium
 
 * Trinvis opdatering (prøveversion) [[video]](https://youtu.be/-_GMCE1TLvQ?t=7m42s)[[artikel]](service-premium-incremental-refresh.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#incrementalRefresh) 
 
-### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
+### <a name="power-bi-visuals"></a>Power BI-visualiseringer
 
-* Mange nye brugerdefinerede visualiseringer [[video]](https://youtu.be/-_GMCE1TLvQ?t=9m44s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#customVisuals) 
+* Mange nye Power BI-visuals [[video]](https://youtu.be/-_GMCE1TLvQ?t=9m44s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#customVisuals) 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
 
@@ -1291,13 +1366,13 @@ Følgende opdateringer var nye i **Power BI Desktop** i april:
 
 ### <a name="analytics"></a>Analyse
 
-* Opdater dit sproglige skema [[video]](https://youtu.be/W_Nb73Od_AI?t=22m)[[artikel]](developer/power-bi-custom-visuals-organization.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#linguisticSchema) 
+* Opdater dit sproglige skema [[video]](https://youtu.be/W_Nb73Od_AI?t=22m)[[artikel]](developer/visuals/power-bi-custom-visuals-organization.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#linguisticSchema) 
 * Ny DAX-funktion: COMBINEVALUES() [[video]](https://youtu.be/W_Nb73Od_AI?t=23m37s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#combineValues) 
 
-### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
+### <a name="power-bi-visuals"></a>Power BI-visualiseringer
 
-* Visualiseringer til organisationer er nu generelt tilgængelige [[video]](https://youtu.be/W_Nb73Od_AI?t=26m11s)[[artikel]](developer/power-bi-custom-visuals-organization.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#organizationalVisuals) 
-* Mange nye brugerdefinerede visualiseringer [[video]](https://youtu.be/W_Nb73Od_AI?t=28m8s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#overviewByCloudScope) 
+* Visualiseringer til organisationer er nu generelt tilgængelige [[video]](https://youtu.be/W_Nb73Od_AI?t=26m11s)[[artikel]](developer/visuals/power-bi-custom-visuals-organization.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#organizationalVisuals) 
+* Mange nye Power BI-visuals [[video]](https://youtu.be/W_Nb73Od_AI?t=28m8s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#overviewByCloudScope) 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
 
@@ -1334,9 +1409,9 @@ Vi føler os lige så heldige som en firkløver med opdateringer til **Power BI 
 * Slå overskriften i visualiseringer fra i Læsetilstand for en rapport [[video]](https://youtu.be/kuI6MMzDh34?t=12m25s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualHeader) 
 * Forbedret standardplacering af visualiseringer [[video]](https://youtu.be/kuI6MMzDh34?t=14m45s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualPlacement) 
 
-### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
+### <a name="power-bi-visuals"></a>Power BI-visualiseringer
 
-* Mange nye brugerdefinerede visualiseringer [[video]](https://youtu.be/kuI6MMzDh34?t=15m43s)[[artikel]](developer/power-bi-custom-visuals-organization.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#customVisuals) 
+* Mange nye Power BI-visuals [[video]](https://youtu.be/kuI6MMzDh34?t=15m43s)  [[artikel]](developer/visuals/power-bi-custom-visuals-organization.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#customVisuals) 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
 
@@ -1393,9 +1468,9 @@ Følgende opdateringer var nye i **Power BI Desktop** i februar 2018:
 * Søgning i ruderne Formatering og Analyse [[video]](https://youtu.be/KeVB5RwMzJo?t=14m46s)[[artikel]](desktop-analytics-pane.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search) 
 
 
-### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
+### <a name="power-bi-visuals"></a>Power BI-visualiseringer
 
-* Brugerdefinerede visualiseringer til organisationer (prøveversion) [[video]](https://youtu.be/KeVB5RwMzJo?t=19m23s)[[artikel]](developer/power-bi-custom-visuals-organization.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#organizationalVisuals) 
+* Power BI-visuals til organisationer (prøveversion) [[video]](https://youtu.be/KeVB5RwMzJo?t=19m23s)  [[artikel]](developer/visuals/power-bi-custom-visuals-organization.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#organizationalVisuals) 
 
 
 ### <a name="analytics"></a>Analyse
@@ -1455,7 +1530,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i januar:
 -   Vis datoer som et hierarki (eksempel) [[video]](https://youtu.be/W8Pp5wuCXJw?t=7m41s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#dateHierarchy) 
 -   Føj en ankerdato til et relativt datoudsnit [[video]](https://youtu.be/W8Pp5wuCXJw?t=9m22s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#anchorDate) 
 -   Top N-valg i spørgsmål og svar [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#topN) 
--   Mange nye brugerdefinerede visualiseringer [[video]](https://youtu.be/W8Pp5wuCXJw?t=11m32s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#customVisuals) 
+-   Mange nye Power BI-visuals [[video]](https://youtu.be/W8Pp5wuCXJw?t=11m32s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#customVisuals) 
 
 ### <a name="analytics"></a>Analyse
 
@@ -1505,7 +1580,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i december:
 -   Punktvisualiseringer på baggrund af x- og y-aksegrupperinger [[video]](https://youtu.be/ZPU8B-1BxjI?t=15m12s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#scatterChart) 
 -   Stikprøvetagning med høj tæthed for kort, baseret på breddegrad og længdegrad [[video]](https://youtu.be/ZPU8B-1BxjI?t=17m3s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#highDensityMaps) 
 -   Dynamiske udsnitsværktøjer [[video]](https://youtu.be/sI3yRjdnJ7w?t=20m9s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#responsive) 
--   Nyligt udgivne brugerdefinerede visualiseringer [[video]](https://youtu.be/ZPU8B-1BxjI?t=18m25s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#customVisuals) 
+-   Nyligt udgivne Power BI-visuals [[video]](https://youtu.be/ZPU8B-1BxjI?t=18m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#customVisuals) 
 
 
 ### <a name="analytics"></a>Analyse
@@ -1560,7 +1635,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i november:
 -   Esri Plus-abonnement er nu tilgængeligt for ArcGIS Maps til Power BI [[video]](https://youtu.be/sI3yRjdnJ7w?t=10m31s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#esriPlus) 
 -   Rapportindstillinger til langsomme datakilder [[video]](https://youtu.be/sI3yRjdnJ7w?t=16m11s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#slowDataSource) 
 -   Bedre ydeevne for filtrering [[video]](https://youtu.be/sI3yRjdnJ7w?t=20m9s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#filtering) 
--   Nyligt udgivne brugerdefinerede visualiseringer [[video]](https://youtu.be/sI3yRjdnJ7w?t=20m50s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#customVisuals) 
+-   Nyligt udgivne Power BI-visuals [[video]](https://youtu.be/sI3yRjdnJ7w?t=20m50s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#customVisuals) 
 
 
 ### <a name="analytics"></a>Analyse
@@ -1665,7 +1740,7 @@ Følgende opdateringer er nye i **Power BI Desktop** i september:
     -   Dialogboks med genvejstaster [[video]](https://youtu.be/moTQJlnClJw?t=28m50s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#shortcuts)[[artikel]](desktop-accessibility.md)
 -   Punktdiagram med stikprøvetagning med høj tæthed [[video]](https://youtu.be/moTQJlnClJw?t=30m22s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#highDensityScatter)[[artikel]](desktop-high-density-scatter-charts.md)
 -   Kontrolelement med gitterlinje [[video]](https://youtu.be/moTQJlnClJw?t=33m53s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#gridlines)[[artikel]](desktop-gridlines-snap-to-grid.md)
--   Nye brugerdefinerede visualiseringer [[video]](https://youtu.be/moTQJlnClJw?t=36m4s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#communityVisuals)
+-   Nye Power BI-visuals [[video]](https://youtu.be/moTQJlnClJw?t=36m4s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#communityVisuals)
     -   Kalender fra Tallan [[video]](https://youtu.be/moTQJlnClJw?t=36m26s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#calendarByTallan)
     -   Enlighten Aquarium [[video]](https://youtu.be/moTQJlnClJw?t=38m11s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#enlightenAquarium)
     -   Visio-visualisering (prøveversion) [[video]](https://youtu.be/moTQJlnClJw?t=40m15s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#visio)
@@ -1701,7 +1776,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i august:
 -   Brugerdefinerede indstillinger for subtotaler for hvert matrixniveau [[video]](https://youtu.be/ND8U0yXroaQ?t=4m29s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#customSubtotal)
 -   Stregtyper og indstillinger for forklaringer [[video]](https://youtu.be/ND8U0yXroaQ?t=6m54s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#lineStyles)
 -   Bedre ydeevne for punktdiagrammer [[video]](https://youtu.be/ND8U0yXroaQ?t=13m59s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#scatterChartPerformance)
--   Nye brugerdefinerede visualiseringer [[video]](https://youtu.be/ND8U0yXroaQ?t=14m32s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#customVisuals)
+-   Nye Power BI-visuals [[video]](https://youtu.be/ND8U0yXroaQ?t=14m32s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#customVisuals)
     -   Dot Plot fra MAQ Software [[video]](https://youtu.be/ND8U0yXroaQ?t=14m45s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#dotPlot)
     -   Power KPI [[video]](https://youtu.be/ND8U0yXroaQ?t=19m11s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#powerKPI)
     -   Tragtafbildning [[video]](https://youtu.be/ND8U0yXroaQ?t=21m55s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#funnelPlot)
@@ -1743,7 +1818,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i juli:
 
 -   Generel adgang til nye tabel- og matrixvisualiseringer [[video]](https://youtu.be/4X96ow7FnSY?t=1m27s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#tableAndMatrix)
 -   Omdøbning af felter i visualiseringer [[video]](https://youtu.be/4X96ow7FnSY?t=6m3s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#rename)
--   Butiksintegration for brugerdefinerede visualiseringer [[video]](https://youtu.be/4X96ow7FnSY?t=8m7s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#customVisualsStore)
+-   Butiksintegration for Power BI-visuals [[video]](https://youtu.be/4X96ow7FnSY?t=8m7s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#customVisualsStore)
 -   Relative datofiltre [[video]](https://youtu.be/4X96ow7FnSY?t=10m46s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#relativeDateFilter)
 -   Dynamisk layout for visualiseringer (prøveversion) [[video]](https://youtu.be/4X96ow7FnSY?t=12m14s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals)
 -   Nyt vandfaldsdiagram – detaljer [[video]](https://youtu.be/4X96ow7FnSY?t=14m29s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#waterfall)
@@ -1751,7 +1826,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i juli:
     -   Analysér ned i fladekort [[video]](https://youtu.be/4X96ow7FnSY?t=18m11s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownChoropleth)
     -   Analysér ned i kartogram [[video]](https://youtu.be/4X96ow7FnSY?t=19m14s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownCartogram)
     -   Analysér ned i afspiller [[video]](https://youtu.be/4X96ow7FnSY?t=20m17s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownPlayer)
-    -   Certificerede brugerdefinerede visualiseringer [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#certifiedCustomVisuals)
+    -   Certificerede Power BI-visuals [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#certifiedCustomVisuals)
 
 
 ### <a name="analytics--modeling"></a>Analyse og modellering:
@@ -2123,7 +2198,7 @@ Følgende opdateringer var nye i Power BI Desktop i oktober:
 -   Placeringer [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#binning)[[video]](https://youtu.be/UXEYSvgvMaQ?t=12m17s)
 -   Top n filter [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#topN)[[video]](https://youtu.be/UXEYSvgvMaQ?t=13m55s)
 -   Inkluder/ekskluder datapunkter [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#includeExclude)[[video]](https://youtu.be/UXEYSvgvMaQ?t=15m36s)
--   Brugerdefinerede visualiseringer baseret på R [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#rCustomVisuals)
+-   R-drevne Power BI-visuals[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#rCustomVisuals)
 
 
 ### <a name="data-connectors"></a>Dataconnectors:

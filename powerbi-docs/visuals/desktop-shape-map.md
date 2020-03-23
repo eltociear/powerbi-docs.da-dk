@@ -2,19 +2,19 @@
 title: Brug Figurkort i Power BI Desktop (prøveversion)
 description: Opret relative sammenligninger mellem områder ved hjælp af Figurkort i Power BI Desktop
 author: mihart
-ms.reviewer: amanda, justyna, sujata
+ms.reviewer: justyna, sujata
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/14/2019
+ms.date: 03/18/2020
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3a043a343994c02a916102b83fe79d1ccd5208bf
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 67c2acad74827c515c92ed0d16dd642170b8dc61
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762318"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525654"
 ---
 # <a name="create-shape-map-visualizations-in-power-bi-desktop-preview"></a>Opret visualiseringer af figurkort i Power BI Desktop (eksempelvisning)
 
@@ -22,7 +22,7 @@ ms.locfileid: "75762318"
 
 Opret en visualisering af typen **Figurkort** til at sammenligne områder på et kort ved hjælp af farver. I modsætning til visualiseringen **Kort** kan **Figurkort** ikke vise den nøjagtige geografiske placering af datapunkter på et kort. I stedet er dens primære formål at vise relative sammenligninger mellem områder på et kort ved at give dem forskellige farver.
 
-Visualiseringen **Figurkort** er baseret på ESRI/TopoJSON-kort, der kan anvendes med brugerdefinerede kort, som du opretter. Eksempler på brugerdefinerede kort er: geografiske kort, kort over siddepladser, kort over etager med mere. Muligheden for at bruge brugerdefinerede kort er ikke tilgængelig i denne evalueringsversion af **Figurkort**.
+**Figurkort**-visuals er baseret på TopoJSON-kort, der kan anvendes med brugerdefinerede kort, som du opretter. Eksempler på brugerdefinerede kort er: geografiske kort, kort over siddepladser, kort over etager med mere. Muligheden for at bruge brugerdefinerede kort er ikke tilgængelig i denne evalueringsversion af **Figurkort**.
 
 ## <a name="creating-shape-maps"></a>Opret figurkort
 Du kan afprøve kontrolelementet **Figurkort** med de kort, som medfølger i denne prøveversion, eller du kan bruge dine egne brugerdefinerede kort, så længe de opfylder de krav, der er angivet i afsnittet **Brug brugerdefinerede kort** nedenfor.
@@ -400,7 +400,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | us-ma |Massachusetts |MA |
 | us-ia |Iowa |IA |
 | us-nh |New Hampshire |NH |
-| us-or |Oregon |ELLER |
+| us-or |Oregon |OR |
 | us-mn |Minnesota |MN |
 | us-vt |Vermont |VT |
 | us-id |Idaho |Id |

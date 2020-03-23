@@ -1,20 +1,20 @@
 ---
 title: Den nye filtreringsoplevelse i Power BI-rapporter
-description: Filtrene i Power BI får ny funktionalitet og et nyt design.
+description: Filtrene i Power BI har fået ny funktionalitet og et nyt design.
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 02/26/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e991b84dede16f35a732c54ff916ec02f5610783
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: f4dbbdd30b403c8ac14db069b826f26af0bce24a
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762525"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79201806"
 ---
 # <a name="work-with-filters-in-power-bi-reports"></a>Arbejd med filtre i Power BI-rapporter
 
@@ -44,7 +44,7 @@ Den nye filtreringsoplevelse er som standard slået til for nye rapporter. Du ka
 
 1. I en eksisterende rapport i Power BI Desktop skal du vælge **Filer** > **Indstillinger** > **Indstillinger**
 2. Under **Aktuel fil** skal du vælge **Rapportindstillinger**.
-3. Under **Filtreringsoplevelse** skal du vælge **Aktivér den opdaterede filtreringsrude, og vis filtre i rapportens visuelle overskrift**.
+3. Under **Filtreringsoplevelse** skal du vælge **Aktivér den opdaterede filtreringsrude, og vis filtre i rapportens visuelle header for denne rapport**.
 
 ### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>Slå nye filtre til for en eksisterende rapport i tjenesten
 
@@ -52,9 +52,12 @@ Hvis du har aktiveret **det nye udseende** i Power BI-tjenesten ![Nyt udseende a
 
 Hvis du ikke har aktiveret det nye udseende, kan du alligevel få vist den nye filtreringsoplevelse ved at benytte denne fremgangsmåde.
 
-1. Vælg fanen **Rapporter** på indholdslisten for et arbejdsområde i Power BI-tjenesten.
-2. Find den rapport, du vil aktivere, og vælg ikonet **Indstillinger**![ikonet Rapportindstillinger](media/power-bi-report-filter/power-bi-settings-icon.png) for den pågældende rapport.
-3. Under **Filtreringsoplevelse** skal du vælge **Aktivér den opdaterede filtreringsrude, og vis filtre i rapportens visuelle overskrift**.
+1. Åbn indholdslisten for et arbejdsområde i Power BI-tjenesten.
+2. Find den rapport, du vil aktivere, Vælg **Flere indstillinger (...)** , og vælg derefter **Indstillinger** for den pågældende rapport.
+
+    ![Rapportindstillinger](media/power-bi-report-filter/power-bi-filter-options.png)
+
+3. Under **Filtreringsoplevelse** skal du vælge **Aktivér den opdaterede filtreringsrude, og vis filtre i rapportens visuelle header for denne rapport**.
 
     ![Aktivér ruden med opdaterede filtre](media/power-bi-report-filter/power-bi-service-filter-enable.png)
 
@@ -82,11 +85,21 @@ Efter du har aktiveret den nye filtreringsrude, kan du se den til højre for den
 
 1. Dine rapportforbrugere kan som standard se filtreringsruden. Hvis de ikke skal kunne se den, skal du vælge ikonet med øjet ud for **Filtre**.
 
-    ![Ikon med øje for Power BI-filter](media/power-bi-report-filter/power-bi-filter-eye.png)
+    ![Ikon med øje for Power BI-filter](media/power-bi-report-filter/power-bi-filter-eye-icon.png)
 
 2. Du begynder at bygge din nye filtreringsrude ved at trække de ønskede felter til den nye filtreringsrude enten som en visualisering, en side eller som filtre på rapporteringsniveau.
 
 Når du føjer en visualisering til et rapportlærred, tilføjer Power BI automatisk et filter i filtreringsruden for hvert felt i visualiseringen. 
+
+## <a name="hide-the-filters-pane-while-editing"></a>Skjul ruden Filtre, mens du redigerer
+
+Power BI Desktop har fået et nyt bånd, der er tilgængeligt som prøveversion. Med til/fra-knappen **Filtre** under fanen **Vis** kan du få vist eller skjule ruden Filtre. Denne funktion er nyttig, når du ikke bruger ruden Filtre og har brug for ekstra plads på skærmen. Denne tilføjelse justerer ruden Filtre med de andre ruder, som du kan åbne og lukke, f. eks. ruderne Bogmærker og Valg. 
+
+![Vis eller skjul ruden Filtre under redigering](media/power-bi-report-filter/power-bi-filter-hide.png)
+
+Denne indstilling skjuler kun ruden filtre i Power BI Desktop. Hvis du vil skjule ruden Filtre for dine slutbrugere, skal du i stedet vælge **øje**-ikonet ud for **Filtre**.
+
+![Ikonet med øjet](media/power-bi-report-filter/power-bi-filter-eye.png) 
 
 ## <a name="lock-or-hide-filters"></a>Lås eller skjul filtre
 
@@ -124,16 +137,16 @@ Du kan også formatere disse elementer for filterkort, afhængigt af om de er an
 1. I rapporten skal du klikke på selve rapporten eller baggrunden (*tapetet*), og derefter skal du i ruden **Visualiseringer** vælge **Formatér**. 
     Du kan se formateringsindstillinger for rapportsiden, tapetet samt filtreringsruden og filterkort.
 
-1. Udvid **Filtreringsruden** for at angive farven på baggrunden, ikonet og den venstre kant, som skal komplementere rapportsiden.
+1. Udvid **ruden Filtre** for at angive farven på baggrunden, ikonet og den venstre kant, som skal komplementere rapportsiden.
 
-    ![Udvid Filtreringsruden](media/power-bi-report-filter/power-bi-format-filter-pane.png)
+    ![Udvid ruden Filtre](media/power-bi-report-filter/power-bi-format-filter-pane.png)
 
 1. Udvid **Filterkort** for at angive farve og kant for **Tilgængelig** og **Anvendt**. Hvis du angiver forskellige farver for kortene Tilgængelig og Anvendt, er det oplagt, hvilke filtre der anvendes. 
   
     ![Udvid filterkort](media/power-bi-report-filter/power-bi-format-filter-cards.png)
 
-## <a name="theming-for-filter-pane"></a>Temaer for filtreringsruden
-Du kan nu ændre standardindstillingerne for filtreringsruden med temafilen. Her er et eksempel på kodestykke for et tema, der kan hjælpe dig i gang:
+## <a name="theming-for-filters-pane"></a>Temaer for ruden Filtre
+Du kan nu ændre standardindstillingerne for ruden Filtre med temafilen. Her er et eksempel på kodestykke for et tema, der kan hjælpe dig i gang:
 
  
 ```
@@ -204,9 +217,9 @@ Du kan nu ændre standardindstillingerne for filtreringsruden med temafilen. Her
 }] 
 ```
 
-## <a name="sort-the-filter-pane"></a>Sortér filtreringsruden
+## <a name="sort-the-filters-pane"></a>Sortér ruden Filtre
 
-Brugerdefineret sorteringsfunktionalitet er en del af den nye oplevelse med filtreringsruden. Oprettere af rapporter kan trække og slippe filtre for at omarrangere dem i en hvilken som helst rækkefølge.
+Brugerdefineret sorteringsfunktionalitet er en del af den nye oplevelse med ruden Filtre. Oprettere af rapporter kan trække og slippe filtre for at omarrangere dem i en hvilken som helst rækkefølge.
 
 ![Omarranger sorteringsrækkefølge for filtre](media/power-bi-report-filter/power-bi-filter-sort.gif)
 
@@ -223,11 +236,25 @@ Når du redigerer filtreringsruden, kan du dobbeltklikke på titlen for at redig
 
 ![Omdøb et filter](media/power-bi-report-filter/power-bi-filter-rename.png)
 
+## <a name="filters-pane-search"></a>Søgning i ruden Filtre
+
+Du kan bruge søgefunktionen i ruden Filtre rude til at søge efter titel på tværs af dine filterkort. Denne funktion er praktisk, hvis du har flere forskellige filterkort i ruden Filtre og har brug for hjælp til at finde de relevante.
+
+![Søg efter et filter](media/power-bi-report-filter/power-bi-filter-search.png)
+
+Du kan også formatere søgefeltet på samme måde, som du kan formatere de andre elementer i ruden Filtre.
+
+![Formater søgefeltet](media/power-bi-report-filter/power-bi-filter-format-search.png)
+
+Denne søgefunktion i ruden Filtre er som standard er slået til, men du kan også vælge at slå den til eller fra ved at vælge **Aktivér søgning for ruden Filtre** i rapportindstillingerne i dialogboksen Indstillinger.
+
+![Slå søgning til eller fra](media/power-bi-report-filter/power-bi-enable-search-filter.png)
+
 ## <a name="restrict-changes-to-filter-type"></a>Begræns ændringer af filtertype
 
 Under sektionen Filtreringsoplevelse i rapportindstillingerne kan du styre, om brugere kan ændre filtertypen.
 
-![Begræns ændring af filtertype](media/power-bi-report-filter/power-bi-filter-restrict-change.png)
+![Begræns ændring af filtertype](media/power-bi-report-filter/power-bi-enable-change-filter-type.png)
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: cf11b98d7eacd7b1e245fb0aed62d0f14e7f4c4c
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: b87848953722d33235a11729a3643c627cca7234
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041308"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525608"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>Overfør SQL Server Reporting Services-rapporter til Power BI
 
@@ -194,6 +194,7 @@ Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 - [Vejledning til datahentning for sideinddelte rapporter](report-paginated-data-retrieval.md)
 - [Hvornår bruges sideinddelte rapporter i Power BI](report-paginated-or-power-bi.md)
 - [Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål](../paginated-reports/paginated-reports-faq.md)
+- [Onlinekursus: Sideinddelte rapporter på én dag](../paginated-reports/paginated-reports-online-course.md)
 - [Ofte stillede spørgsmål til Power BI Premium](../service-premium-faq.md)
 - [RDL-overførselsværktøj](https://github.com/microsoft/RdlMigration)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

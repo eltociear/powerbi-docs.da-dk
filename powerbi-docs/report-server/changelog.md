@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.openlocfilehash: 0a8cf16ddf7fe9e091599f1790a37a83b9923240
-ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+ms.openlocfilehash: f27f03a88a39ce046ae64454b9b092e87c07d0a3
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78237954"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381094"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -200,7 +200,7 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
         - Funktioner
             - SAP HANA SSO Direct Query understøttes nu med Kerberos for Power BI-rapporter
             - Brugerdefineret Visual API udgivet sammen med frigivelsen, version 1.13.0
-            - Brugerdefinerede visualiseringer går tilbage til en tidligere version, der er kompatibel med den aktuelle version af server-API'et (hvis tilgængeligt)
+            - Power BI-visuals går tilbage til en tidligere version, der er kompatibel med den aktuelle version af server-API'et (hvis tilgængeligt)
 
 - **Power BI Desktop (optimeret til Power BI-rapportserver)**
     - *Version: 2.61.5192.641 (august 2018), udgivet: 15. august, 2018*
@@ -322,7 +322,7 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
             - Koden `{{UserId}}` fortolkes som de gemte legitimationsoplysninger i stedet for den bruger, der kører rapporten i Power BI-rapporter
             - Nogle billeder gengives ikke i rapporter i Power BI-rapportserver
             - Det var ikke muligt at ændre navnet på en Power BI-rapport i Power BI-rapportserver
-            - Der kunne ikke indlæses brugerdefinerede visuelle elementer i Power BI-mobilappen (det kræver geninstallation af mobilappen for at rydde op i det lokale cachelager)
+            - Der kunne ikke indlæses Power BI-visuals i Power BI-mobilappen (det kræver geninstallation af mobilappen for at rydde op i det lokale cachelager)
 
     - *Build 14.0.600.271,udgivet: 12. juni, 2017*
         - Første udgivelse af Power BI-rapportserver

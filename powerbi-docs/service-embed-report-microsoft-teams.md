@@ -1,5 +1,5 @@
 ---
-title: Integrer rapport ved hjælp af Power BI-fanen til Microsoft Teams
+title: Integrer rapporter ved hjælp af Power BI-fanen til Microsoft Teams
 description: Med fanen Power BI til Microsoft Teams kan du nemt integrere interaktive rapporter i kanaler og chats.
 author: LukaszPawlowski-MS
 ms.author: lukaszp
@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 01/31/2020
-ms.openlocfilehash: fb4846a777dda4787e1ed0be7de869367a616ea5
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.date: 03/12/2020
+ms.openlocfilehash: fe8b5ed0e3cdf0003986ffe6eab18e97e83f3dec
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530481"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381194"
 ---
 # <a name="embed-report-with-the-power-bi-tab-for-microsoft-teams"></a>Integrer rapport ved hjælp af Power BI-fanen til Microsoft teams
 
@@ -35,7 +35,7 @@ Der er følgende forudsætninger, for at **Power BI-fanen til Microsoft Teams** 
 ## <a name="embed-your-report"></a>Integrer din rapport
 Hvis du vil integrere din rapport i en Microsoft Teams-kanal eller -chat, skal du tilføje den som beskrevet nedenfor.
 
-1. Åbn den ønskede kanal eller chat i Microsoft Teams, og vælg ikonet **+**.
+1. Åbn den ønskede kanal eller chat i Microsoft Teams, og vælg ikonet **+** .
 
     ![Føj en fane til en kanal eller chat](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-add.png)
 
@@ -68,6 +68,18 @@ Integrering af en rapport i Microsoft Teams giver ikke automatisk brugerne tilla
 > Sørg for at gennemse, hvem der kan få vist rapporten, i Power BI-tjenesten, og giv adgang til dem, der er ikke angivet.
 
 Du kan f.eks. sikre, at alle i dit team har adgang til rapporter, som du integrerer, ved at placere dem i et enkelt arbejdsområde i Power BI og give Office 365-gruppen for dit team adgang til arbejdsområdet.
+
+## <a name="start-a-conversation"></a>Start en samtale
+
+Når du føjer en Power BI-rapportfane til Teams, opretter Teams automatisk en fanesamtale, der skal ledsage rapporten. 
+
+- Vælg **Vis fanesamtale** i øverste højre hjørne.
+
+    ![Ikon for Vis fanesamtale](media/service-embed-report-microsoft-teams/power-bi-teams-conversation-icon.png)
+
+    Den første kommentar er et link til rapporten. Alle i den pågældende Teams-kanal kan se og diskutere rapporten i samtalen.
+
+    ![Fanesamtale](media/service-embed-report-microsoft-teams/power-bi-teams-conversation-tab.png)
 
 ## <a name="known-issues-and-limitations"></a>Kendte problemer og begrænsninger
 

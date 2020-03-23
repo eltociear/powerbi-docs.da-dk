@@ -7,18 +7,18 @@ manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: 79ad33a632a1f4935f462bcde0d36f2ccc55a2bd
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.openlocfilehash: 80c53b183f37dc09ee83ff20bd97f944bdcbc9b4
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76818979"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379323"
 ---
 # <a name="dataviewutils"></a>DataViewUtils
 
-`DataViewUtils` er en række funktioner og klasser til forenkling af fortolkning af DataView-objektet for brugerdefinerede Power BI-visuals
+`DataViewUtils` er en række funktioner og klasser til forenkling af fortolkning af DataView-objektet for Power BI-visuals
 
 ## <a name="installation"></a>Installation
 

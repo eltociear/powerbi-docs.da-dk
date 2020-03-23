@@ -8,18 +8,18 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 279e6895122f6b82f8e7670d982a8b50c78ec83a
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.openlocfilehash: ba1909c5fc75abdf7338572c646d98fca83595b0
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78260410"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133261"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI
 
 Denne artikel henvender sig til personer, der skaber Power BI Desktop-datamodeller. Heri beskrives, hvad et stjerneskemadesign er, og hvilken relevans det har for udvikling af Power BI-datamodeller, der er optimeret til ydeevne og anvendelighed.
 
-Det er ikke meningen, at denne artikel skal indeholde en komplet beskrivelse af stjerneskemadesign. Du kan finde flere oplysninger ved at se publiceret indhold, såsom **The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling** (2. udgave, 2002) af Ralph Kimball et al.
+Det er ikke meningen, at denne artikel skal indeholde en komplet beskrivelse af stjerneskemadesign. Du kan finde flere oplysninger ved at se publiceret indhold, såsom **The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling** (3. udgave, 2013) af Ralph Kimball et al.
 
 ## <a name="star-schema-overview"></a>Oversigt over stjerneskema
 
@@ -37,7 +37,7 @@ Dimensionstabeller indeholder generelt et relativt lille antal rækker. Faktatab
 
 Stjerneskemadesign og mange af de relaterede begreber, der introduceres i denne artikel, er yderst relevante for udvikling af Power BI-modeller, der er optimeret til ydeevne og anvendelighed.
 
-Hver Power BI-rapportvisualisering genererer en forespørgsel, der sendes til Power BI-modellen (som Power BI-tjenesten kalder for et datasæt). Disse forespørgsler bruges til at filtrere, gruppere og opsummere modeldata. En veldesignet model er derfor en model, der indeholder tabeller til filtrering og gruppering samt tabeller til opsummering. Dette design passer godt med principperne for et stjerneskema:
+Hver visualisering i en Power BI-rapport genererer en forespørgsel, der sendes til Power BI-modellen (som Power BI-tjenesten kalder for et datasæt). Disse forespørgsler bruges til at filtrere, gruppere og opsummere modeldata. En veldesignet model er derfor en model, der indeholder tabeller til filtrering og gruppering samt tabeller til opsummering. Dette design passer godt med principperne for et stjerneskema:
 
 - Dimensionstabeller understøtter _filtrering_ og _gruppering_
 - Faktatabeller understøtter _opsummering_
@@ -67,7 +67,7 @@ I et stjerneskemadesign er en **måling** en kolonne i en faktatabel, der gemmer
 
 I en Power BI-model har en **måling** en anden – men lignende – definition. Det er en formel, som er skrevet i [DAX (Data Analysis Expressions)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference), der resulterer i opsummering. DAX-sammenlægningsfunktioner, som SUM, MIN., MAKS., GENNEMSNIT osv., bruges ofte i målingsudtryk til at skabe et skalarværdisæt på forespørgselstidspunktet (værdierne gemmes aldrig i modellen). Målingsudtryk kan variere fra simple kolonnesammenlægninger til mere avancerede formler, der tilsidesætter filterkontekst og/eller relationsoverførsler. Du kan finde flere oplysninger i artiklen [Grundlæggende om DAX i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics).
 
-Det er vigtigt at forstå, at Power BI-modeller understøtter en anden metode for at resultere i opsummering. En hvilken som helst kolonne – og som regel numeriske kolonner – kan opsummeres i en rapportvisualisering eller ved hjælp af Spørgsmål og svar. Disse kolonner kaldes _implicitte målinger_. De er praktiske for dig som modeludvikler, da du i mange tilfælde ikke har brug for at oprette målinger. Kolonnen **Salgsbeløb** for Adventure Works-forhandlersalg kan opsummeres på flere måder (sum, antal, gennemsnit, median, min., maks. osv.), uden at det er nødvendigt at oprette en måling for hver mulige sammenlægningstype.
+Det er vigtigt at forstå, at Power BI-modeller understøtter en anden metode for at resultere i opsummering. En hvilken som helst kolonne – og som regel numeriske kolonner – kan opsummeres i en visualisering i en rapport eller ved hjælp af Spørgsmål og svar. Disse kolonner kaldes _implicitte målinger_. De er praktiske for dig som modeludvikler, da du i mange tilfælde ikke har brug for at oprette målinger. Kolonnen **Salgsbeløb** for Adventure Works-forhandlersalg kan opsummeres på flere måder (sum, antal, gennemsnit, median, min., maks. osv.), uden at det er nødvendigt at oprette en måling for hver mulige sammenlægningstype.
 
 ![Eksempel på ikon på feltliste](media/star-schema/field-list-example.png)
 

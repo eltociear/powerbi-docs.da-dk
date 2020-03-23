@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 4459ae95ccd900b0592dbae1048800bcd4609307
-ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
+ms.openlocfilehash: d349e19e4f5cc73cadf2a281b07a220ff7c076bf
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74178263"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376770"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Ofte stillede spørgsmål om Power BI til Germany Cloud-kunder
 **Power BI-tjenesten** har en version, der er tilgængelig for EU/EFTA-kunder, ofte kaldet Microsoft Cloud Deutschland (MCD). Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til EU/EFTA-kunder og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten** eller Power BI-tjenester, der leveres til regeringskunder.
@@ -44,7 +44,7 @@ Følgende spørgsmål og svar giver vigtige oplysninger om Power BI Pro-tjeneste
    
    * [Power BI Desktop](https://powerbi.microsoft.com/desktop/)
    * [Power BI Mobile](https://powerbi.microsoft.com/mobile/)
-   * [Datagateway i det lokale miljø](https://powerbi.microsoft.com/gateway/)
+   * [On-premises data gateway (Datagateway i det lokale miljø)](https://powerbi.microsoft.com/gateway/)
    * [Power BI Publisher til Excel](https://powerbi.microsoft.com/excel-dashboard-publisher/)
 6. **Er der nogen funktionsbegrænsninger i Power BI-tjenesten for Germany Cloud?**
    
@@ -65,7 +65,7 @@ Følgende spørgsmål og svar giver vigtige oplysninger om Power BI Pro-tjeneste
 | Office-portal for brugerlicensadministration, tjenestetilstandsstatus og supportanmodninger af administratorer |[https://portal.office.de/](https://portal.office.de/) |[https://portal.office.com/](https://portal.office.com/) |
 | AAD-myndighed Uri-adresse |[https://login.microsoftonline.de/common/oauth2/authorize/](https://login.microsoftonline.de/common/oauth2/authorize/) |[https://login.microsoftonline.com/common/oauth2/authorize/](https://login.microsoftonline.com/common/oauth2/authorize/) |
 | Power BI-tjenesteressources Uri-adresse |[https://analysis.cloudapi.de/powerbi/api](https://analysis.cloudapi.de/powerbi/api) |[https://analysis.windows.net/powerbi/api](https://analysis.windows.net/powerbi/api) |
-| Bibliotek med brugerdefinerede visuals |[https://app.powerbi.de/visuals/](https://app.powerbi.de/visuals/) |[https://app.powerbi.com/visuals/](https://app.powerbi.com/visuals/) |
+| Bibliotek med Power BI-visuals |[https://app.powerbi.de/visuals/](https://app.powerbi.de/visuals/) |[https://app.powerbi.com/visuals/](https://app.powerbi.com/visuals/) |
 | Registrering af et program til Power BI (til Embedded) |[https://app.powerbi.de/apps](https://app.powerbi.de/apps) |[https://app.powerbi.com/apps](https://app.powerbi.com/apps) |
 | Azure-portal (til Embedded) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
 | Community |[https://community.powerbi.com/](https://community.powerbi.com/) |[https://community.powerbi.com/](https://community.powerbi.com/) |

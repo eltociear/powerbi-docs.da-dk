@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 07ddf82b120e0e4b77b7545863b536282f849de3
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: c757534ba0d93fb5eb04f10ee7b8792c8c9e4af3
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114433"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435783"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Del et dashboard eller en rapport fra Power BI-mobilappsene
 Gælder for:
@@ -21,6 +21,9 @@ Gælder for:
 | ![iPhone](./media/mobile-share-dashboard-from-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-share-dashboard-from-the-mobile-apps/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-share-dashboard-from-the-mobile-apps/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-share-dashboard-from-the-mobile-apps/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-share-dashboard-from-the-mobile-apps/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-enheder |
+
+>[!NOTE]
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 Med en [Power BI Pro-licens](../../service-features-license-type.md) kan du invitere andre til at få vist dine dashboards og rapporter ved at dele links fra Power BI-mobilappsene. Du kan dele med hvem som helst i eller uden for organisationen, uanset om de har en mailkonto i organisationen eller ej. De skal dog have en Power BI Pro-licens, ellers skal indholdet være i en [Premium-kapacitet](../../service-premium-what-is.md).
 

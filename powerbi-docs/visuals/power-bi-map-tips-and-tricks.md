@@ -7,15 +7,15 @@ featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/30/2019
+ms.date: 03/17/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 28d142ae92353f415f3cf29db959b24a8040c50b
-ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
+ms.openlocfilehash: e5c89a8089929b7d87d2a1291ef2c5d3a5b012b7
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558581"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525907"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tips og tricks til Power BI-kortvisualiseringer
 Power BI kan integreres med Bing Maps for at angive standardkortkoordinater (en proces, der kaldes geokodning), så du kan oprette kort. De bruger algoritmer til at identificere den korrekte placering, men nogle gange benyttes et kvalificeret gæt. Hvis Power BI forsøger, men ikke kan oprette kortvisualiseringen selv, bliver der gjort brug af Bing Kort. 

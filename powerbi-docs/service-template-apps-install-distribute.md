@@ -1,134 +1,130 @@
 ---
-title: Distribuer skabelonprogrammer i din organisation – Power BI
+title: Installér og distribuer skabelonprogrammer i din organisation – Power BI
 description: Få mere at vide om installation, tilpasning og distribution af skabelonprogrammer i din organisation i Power BI.
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 09/14/2019
-ms.author: tebercov
-ms.openlocfilehash: dcb037fdf064611947719a57316f31d901e3b81d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.topic: how-to
+ms.date: 03/15/2020
+ms.author: painbar
+ms.openlocfilehash: 08aadc3027c5b265194e4239b150ea5d27fe2e43
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73871410"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436105"
 ---
-# <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Installér og distribuer skabelonprogrammer i din organisation – Power BI
+# <a name="install-and-distribute-template-apps-in-your-organization"></a>Installér og distribuer skabelonapps i din organisation
 
-Er du Power BI-analytiker? Hvis du er det, så kan du i denne artikel se en forklaring på, hvordan du installerer *skabelonprogrammer* for at oprette forbindelse til mange af de tjenester, du bruger til at drive din forretning, f.eks. Salesforce, Microsoft Dynamics og Google Analytics. Du kan redigere dashboardet og rapporterne, så de opfylder din organisations behov, og derefter distribuere dem til dine kolleger som et *program*. 
+Er du Power BI-analytiker? Hvis du er det, forklares det i denne artikel, hvordan du installerer [skabelonapps](service-template-apps-overview.md) for at oprette forbindelse til mange af de tjenester, du bruger til at drive din forretning, f.eks. Salesforce, Microsoft Dynamics og Google Analytics. Du kan derefter ændre skabelonappens færdigbyggede dashboard og rapporter, så de opfylder din organisations behov, og derefter distribuere dem til dine kolleger som [apps](consumer/end-user-apps.md). 
 
 ![Installerede Power BI-programmer](media/service-template-apps-install-distribute/power-bi-get-apps.png)
 
-Hvis du er interesseret i at oprette skabelonprogrammer, som du selv distribuerer, skal du se [Opret et skabelonprogram i Power BI](service-template-apps-create.md). Power BI-partnere kan udarbejde Power BI-programmer med kun lidt eller ingen kode og udrulle dem til Power BI-kunder. 
+Hvis du er interesseret i selv at oprette skabelonprogrammer til distribution uden for organisationen, skal du se [Opret en skabelonapp i Power BI](service-template-apps-create.md). Power BI-partnere kan med lidt eller ingen kodning opbygge Power BI-apps og gøre dem tilgængelige for Power BI-kunder. 
 
 ## <a name="prerequisites"></a>Forudsætninger  
 
-Her er kravene til installation, tilpasning og distribution af et skabelonprogram: 
+Hvis du vil installere, tilpasse og distribuere en skabelonapp, skal du have følgende: 
 
-- En [Power BI Pro-licens](service-self-service-signup-for-power-bi.md)
-- Kendskab til de [grundlæggende begreber i Power BI](service-basic-concepts.md)
-- Gyldigt installationslink fra udvikleren af skabelonprogrammet eller AppSource. 
-- Tilladelse til at installere skabelonprogrammer. 
+* En [Power BI Pro-licens](service-self-service-signup-for-power-bi.md).
+* Tilladelse til at installere skabelonapps i din lejer.
+* Et gyldigt installationslink til appen, som du enten får fra AppSource eller fra appopretteren.
+* Et godt kendskab til de [grundlæggende begreber i Power BI](service-basic-concepts.md).
 
 ## <a name="install-a-template-app"></a>Installér et skabelonprogram
-
-Du modtager måske et link til et skabelonprogram. Ellers kan du søge i AppSource efter et, der interesserer dig. I begge tilfælde kan du redigere det og selv distribuere det i din egen organisation, efter du har installeret det.
-
-### <a name="search-appsource-from-a-browser"></a>Søg i AppSource fra en browser
-
-Vælg dette link for at åbne AppSource, der er filtreret efter Power BI-programmer, i en browser:
-
-- https://appsource.microsoft.com/marketplace/apps?product=power-bi
-
-### <a name="search-appsource-from-the-power-bi-service"></a>Søg i AppSource fra Power BI-tjenesten
 
 1. Vælg **Programmer** > **Hent programmer** i navigationsruden i Power BI-tjenesten.
 
     ![Hent apps](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
 
-2. Vælg **Programmer** i AppSource.
+1. Vælg **Apps** i vinduet AppSource, der vises. Gennemse, eller søg efter den ønskede app, og vælg derefter **Hent den nu**.
 
     ![Søg i AppSource](media/service-template-apps-install-distribute/power-bi-appsource.png)
 
-3. Gennemse, eller søg efter programmet, og vælg derefter **Hent det nu**.
+1. Vælg **Installér** i den dialogboks, der vises.
 
-4. Vælg **Installér** i dialogboksen.
+    ![Installér app](media/service-template-apps-install-distribute/power-install-dialog.png)
+    
+    Appen installeres sammen med et tilknyttet arbejdsområde. **Hvis du beslutter at tilpasse appen, kan du gøre det i dette tilknyttede arbejdsområde**.
 
-    ![Installér app](media/service-template-apps-install-distribute/power-install-dialog.png) Hvis du har en Power BI Pro-licens, installeres appen med dets tilknyttede arbejdsområde. Du kan tilpasse programmet i det tilknyttede arbejdsområde.
+    > [!NOTE]
+    > Hvis du bruger et installationslink for en app, der ikke er angivet i AppSource, får du vist en valideringsdialogboks, hvor du skal bekræfte dit valg.
+    >
+    >Hvis du vil installere en skabelonapp, der ikke er angivet i AppSource, skal du anmode din administrator om de relevante tilladelser. Se [Skabelonappens indstillinger](service-admin-portal.md#template-apps-settings) i Power BI-administrationsportalen for at få flere oplysninger.
 
-    Når installationen er fuldført, får du vist en meddelelse om, at dit nye program er klar.
-4. Vælg **Gå til program**.
-5. Vælg en af tre indstillinger under **Kom i gang med dit nye program**:
+    Når installationen er fuldført, får du besked om, at din nye app er klar.
 
-    ![Kom i gang med dit program](media/service-template-apps-create/power-bi-template-app-get-started.png)
+    ![Gå til app](media/service-template-apps-install-distribute/power-bi-go-to-app.png)
 
-    - **Udforsk programmet**: Grundlæggende udforskning af eksempeldata. Start her for at se nærmere på programmets layout. 
-    - **Forbind data**: Skift datakilden fra eksempeldataene til din egen datakilde. Du kan omdefinere parametre for datasæt og legitimationsoplysninger for datakilden. Se [Kendte begrænsninger](service-template-apps-tips.md#known-limitations) i artiklen om tip til skabelonprogrammer. 
-    - **Gå til arbejdsområde** (mest avancerede indstilling): Du kan foretage alle de ændringer, der er tilladt af programudvikleren.
+## <a name="connect-to-data"></a>Opret forbindelse til data
 
-    Eller du kan springe denne dialogboks over og få adgang til det tilknyttede arbejdsområde direkte via **Arbejdsområder** i navigationsruden.
-    >[!NOTE]
-    >Når du installerer en skabelonapp, installeres der både en *organisationsapp* og et *arbejdsområde*. Læs mere om [distribution af apps i Power BI](service-create-distribute-apps.md).
- 
-6. Før du deler den med dine kolleger, er det en god idé at oprette forbindelse til dine egne data. Det kan også være en god idé at redigere rapporten eller dashboardet, så de fungerer for din organisation. På dette tidspunkt kan du også tilføje andre rapporter eller dashboards.
+1. Vælg **Gå til program**. Vinduet **Kom i gang med din nye app** vises.
 
-   Hvis du vælger et installationslink for en app, der ikke er angivet på AppSource, får du vist valideringsdialogboksen, hvor du skal bekræfte dit valg.
+   ![Kom i gang med dit program](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
 
-   ![Installér app](media/service-template-apps-install-distribute/power-install-unvalidated-dialog.png)
+1. Klik på **Opret forbindelse**.
+    
+    Derved åbnes en dialogboks eller en række dialogbokse, hvor du ændrer datakilden fra eksempeldataene til din egen datakilde. Dette betyder normalt, at du omdefinerer parametrene for datasæt og legitimationsoplysningerne for datakilden. Se [Kendte begrænsninger](service-template-apps-tips.md#known-limitations).
+    
+    I eksemplet nedenfor kræver det to dialogbokse at oprette forbindelse til data.
 
-   >[!NOTE]
-   >Du skal anmode om tilladelse fra administratoren for at installere skabelonapps, der ikke er vist på AppSource. Du kan finde flere oplysninger på Power BI[-administrationsportal, indstillingen Skabelonprogram](service-admin-portal.md#template-apps-settings).
+   ![Dialogbokse til oprettelse af forbindelse til data](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
-## <a name="customize-and-publish-the-app"></a>Tilpas og publicer appen
+    Når du er færdig med at udfylde forbindelsesdialogboksene, starter processen til oprettelse af forbindelse. Et banner informerer dig om, at du får vist eksempeldata.
 
-Når du har opdateret programmet til din organisation, er du klar til at udgive det. Fremgangsmåden er den samme som udgivelse af et hvilket som helst andet program.
+    ![Visning af eksempeldata.](media/service-template-apps-install-distribute/power-bi-template-app-viewing-sample-data.png)
 
-1. Når du er færdig med tilpasningen, skal du vælge **Opdater program** i øverste højre hjørne af listevisningen af arbejdsområdet.  
+    Vent på, at oprettelsen af forbindelse til og opdateringen af dataene er færdig. Hvis du vil vide, hvornår denne proces er færdig, skal du se statusindikatoren i datasætrækken (nyt udseende) eller tabulator (gammelt udseende).
 
-    ![Start programinstallation](media/service-template-apps-install-distribute/power-bi-start-install-app.png)
+   Når oprettelsen af forbindelse til og opdateringen af data er færdig, skal du opdatere din browser. Banneret informerer nu om, at du skal opdatere appen for at anvende de ændringer, du foretager i appen, og dele den.
 
-2. Under **Detaljer** kan du redigere beskrivelsen og baggrundsfarven.
+    ![Tilpas og del app](media/service-template-apps-install-distribute/power-bi-template-app-customize-share.png)
 
-   ![Angiv beskrivelse og farve for programmet](media/service-template-apps-install-distribute/power-bi-install-app-details.png)
+## <a name="customize-and-share-the-app"></a>Tilpas og del appen
 
-3. I **Navigation** kan du bruge den nye navigationsgenerator til din app eller enten vælge dashboardet eller rapporten som landingsside. Du kan få flere oplysninger ved at se [Design navigationsoplevelsen](service-create-distribute-apps.md#design-the-navigation-experience).
+Når du har opdateret browseren efter oprettelsen af forbindelse til og opdateringen af data, kan du nu se det arbejdsområde, der er knyttet til appen. Nu kan du redigere artefakterne der på samme måde som i et hvilket som helst arbejdsområde. Husk imidlertid, at eventuelle ændringer, du foretager, overskrives, når du opdaterer appen med en ny version, medmindre du gemmer de elementer, du har ændret, under et andet navn. [Se flere oplysninger om, hvordan du overskriver](#overwrite-behavior).
 
-   ![Angiv programlandingsside](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+Du kan finde oplysninger om redigering af artefakter i arbejdsområdet under
+* [Præsentation af rapporteditoren i Power BI](service-the-report-editor-take-a-tour.md)
+* [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 
-4. Under **Adgang** giver du adgang til de valgte brugere eller til hele organisationen.  
-
-   ![Angiv programadgang](media/service-template-apps-install-distribute/power-bi-install-access.png)
-
-5. Vælg **Opdater program**. 
-
-6. Når det er udgivet, kan du kopiere linket og dele det med alle, du har givet adgang til. Når du har delt det med dem, kan de også se det på fanen **Min organisation** i AppSource.
+Når du er færdig med at foretage ændringer af artefakterne i arbejdsområdet, er du klar til at publicere og dele appen. Se [Publicer din app](service-create-distribute-apps.md#publish-your-app) for at få mere at vide om, hvordan du gør det.
 
 ## <a name="update-a-template-app"></a>Opdater en skabelonapp
 
-Forfattere af skabelonapps kan udgive nye versioner af deres skabelonapps via AppSource eller et direkte link. Når de gør det, kan du opdatere skabelonappen, når du installerer appen igen med den samme eller nyere version.
+Fra tid til anden offentliggør oprettere af skabelonapps nye forbedrede versioner af deres skabelonapps enten via AppSource, direkte links eller begge dele.
 
-  >[!NOTE]
-  >Hvis du installerer en ny version, overskrives alle de ændringer, du har foretaget af rapporterne og dashboardene. Hvis du vil beholde dine opdaterede rapporter og dashboards, kan du gemme dem med et andet navn eller en anden placering, før du installerer dem.
+Hvis du oprindeligt har downloadet appen fra AppSource, og der bliver en ny version af appen skabelon tilgængelig, vises der et opdateringsbanner i Power BI-tjenesten med oplysninger om, at en ny appversion er tilgængelig.
 
-- **Overskriv en eksisterende version:** Det eksisterende arbejdsområde overskrives med den opdaterede version af skabelonappen.
+  ![Meddelelse om opdatering af skabelonapp](media/service-template-apps-install-distribute/power-bi-new-app-version-notification.png)
 
-   ![Opdater en skabelonapp](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
+>[!NOTE]
+>Hvis du oprindeligt fik appen via et direkte link og ikke via AppSource, skal du kontakte opretteren af skabelonappen for at få oplysninger om, hvornår en ny version er tilgængelig.
 
-- **Installér i et nyt arbejdsområde:** En ny version af arbejdsområdet og appen installeres, som du skal konfigurere igen
+  Hvis du vil installere opdateringen, skal du enten klikke **Hent** på meddelelsesbanneret eller finde appen igen i AppSource og vælge **Hent nu**. Hvis du har fået et direkte link til opdateringen af opretteren af skabelonappen, skal du blot klikke på linket.
+  
+  Du bliver spurgt, om du vil overskrive den aktuelle version, eller om du vil installere den nye version i et nyt arbejdsområde. "Overskriv" er valgt som standard.
+
+  ![Opdater en skabelonapp](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
+
+- **Overskriv en eksisterende version:** Det eksisterende arbejdsområde overskrives med den opdaterede version af skabelonappen. [Se flere oplysninger om, hvordan du overskriver](#overwrite-behavior).
+
+- **Installér i et nyt arbejdsområde:** Installerer en ny version af arbejdsområdet og appen, som du skal omkonfigurere (dvs. oprette forbindelse til data samt definere navigation og tilladelser).
 
 ### <a name="overwrite-behavior"></a>Funktionsmåden for overskrivning
 
-* I forbindelse med overskrivning opdateres rapporter, dashboards og datasæt i *arbejdsområdet* og ikke i appen. Navigation i, konfiguration af og tilladelser for appen ændres ikke i forbindelse med overskrivning.
-* Når du har opdateret arbejdsområdet, skal du *opdatere appen* for at anvende ændringer fra arbejdsområdet i organisationsappen.
-* Konfigurerede parametre og godkendelse bevares i forbindelse med overskrivning. Efter opdateringen startes en automatisk opdatering af datasættet. I løbet af denne periode vises oplevelsen med *eksempeldata* i organisationsappen, i rapporter og på dashboards.
+* I forbindelse med overskrivning opdateres rapporter, dashboards og datasæt i arbejdsområdet og ikke i appen. Navigation i, konfiguration af og tilladelser for appen ændres ikke i forbindelse med overskrivning.
+* Når du har opdateret arbejdsområdet, skal du **opdatere appen for at anvende ændringer fra arbejdsområdet i appen**.
+* Konfigurerede parametre og godkendelse bevares i forbindelse med overskrivning. Efter opdateringen startes en automatisk opdatering af datasættet. **I forbindelse med denne opdatering vises der eksempeldata i appen, rapporterne og dashboards**.
+
   ![Eksempeldata](media/service-template-apps-install-distribute/power-bi-sample-data.png)
-* I forbindelse med overskrivning vises eksempeldata altid, indtil opdateringen er fuldført. Hvis forfatteren af skabelonappen har foretaget ændringer af datasættet eller parametrene, kan brugerne af arbejdsområdet og appen fortsat se oplevelsen med *eksempeldata*.
-* *Nye* rapporter eller dashboards, du har føjet til arbejdsområdet, slettes aldrig i forbindelse med overskrivning. De oprindelige rapporter og dashboards overskrives med ændringer fra den oprindelige forfatter.
+
+* I forbindelse med overskrivning vises eksempeldata altid, indtil opdateringen er fuldført. Hvis forfatteren af skabelonappen har foretaget ændringer af datasættet eller parametrene, kan brugerne af arbejdsområdet og appen ikke se de nye data, før opdateringen er fuldført. I stedet får de fortsat vist eksempeldata i denne periode.
+* Nye rapporter eller dashboards, du har føjet til arbejdsområdet, slettes aldrig i forbindelse med overskrivning. De oprindelige rapporter og dashboards overskrives kun med ændringer fra den oprindelige forfatter.
 
 >[!IMPORTANT]
->Husk, at [opdatere appen](#customize-and-publish-the-app) efter overskrivning for at anvende ændringerne af rapporten og dashboardet for brugerne af din organisationsapp.
+>Husk, at [opdatere appen](#customize-and-share-the-app) efter overskrivning for at anvende ændringerne af rapporten og dashboardet for brugerne af din organisationsapp.
 
 ## <a name="next-steps"></a>Næste trin
 

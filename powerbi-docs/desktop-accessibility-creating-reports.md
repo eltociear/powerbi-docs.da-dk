@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2b43727799316ade5ccdb868077360da0b315c56
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: ae13bc69d7049dc9cf5c9d71ce0961ec566252bf
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75925678"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379093"
 ---
 # <a name="design-power-bi-reports-for-accessibility"></a>Design tilgængelige Power BI-rapporter
 Du kan designe og oprette flotte rapporter og samtidig have øje for tilgængelighed. Når du opbygger en rapport, bør du oprette den, så den kan bruges af så mange personer som muligt, uanset hvem din målgruppe er, uden at det er nødvendigt at tilpasse den til en slags specialdesign.
@@ -104,7 +104,7 @@ Alternativ tekst (alternative tekstbeskrivelser) bruges til at beskrive udseende
 
 ![Feltet Alternativ tekst](media/desktop-accessibility/accessibility-creating-reports-05.png)
 
-Alternativ tekst bør indeholde oplysninger om den indsigt, du ønsker, at forbrugeren af rapporten får fra visualiseringen. Da en skærmlæser læser titlen og visualiseringstypen op, skal du kun udfylde en beskrivelse. Et eksempel på alternativ tekst for den følgende visualisering kunne f.eks. være: *Samlet brugertilfredshed efter farven på det solgte produkt yderligere opdelt efter produktklasse.*
+Alternativ tekst bør indeholde oplysninger om den indsigt, du ønsker, at forbrugeren af rapporten får fra et visual. Da en skærmlæser læser titlen og visualiseringstypen op, skal du kun udfylde en beskrivelse. Et eksempel på alternativ tekst for den følgende visualisering kunne f.eks. være: *Samlet brugertilfredshed efter farven på det solgte produkt yderligere opdelt efter produktklasse.*
 
 ![Brug beskrivende alternativ tekst](media/desktop-accessibility/accessibility-creating-reports-06.png)
 
@@ -162,7 +162,7 @@ Selvom vi foreslår, at rapportforfattere slår datamærkater og mærker til, ka
 
 ![Brug datamærkater med omhu](media/desktop-accessibility/accessibility-creating-reports-16.png)
 
-Hvis du er usikker på, om din visualisering eller rapport er for spraglet, kan du teste det ved at udføre en [test, hvor du kniber øjnene sammen](https://chrome.google.com/webstore/detail/the-squint-test/gppnipfbappicilfniaimcnagbpfflpg).  Hvis dine øjne tiltrækkes mere af datamærkaterne end datapunkterne, bør du slå datamærkaterne fra.
+Hvis du er usikker på, om dit visual eller din rapport er for spraglet, kan du teste det ved at udføre en [test, hvor du kniber øjnene sammen](https://chrome.google.com/webstore/detail/the-squint-test/gppnipfbappicilfniaimcnagbpfflpg).  Hvis dine øjne tiltrækkes mere af datamærkaterne end datapunkterne, bør du slå datamærkaterne fra.
 
 
 ### <a name="themes-contrast-and-colorblind-friendly-colors"></a>Temaer, kontrast og farver, der er gode til farveblinde
@@ -197,7 +197,7 @@ Indbygning af tilgængelighed bør være en del af denne proces. Du finder måsk
 
 ### <a name="keep-your-report-simple-and-consistent"></a>Hold din rapport enkel og ensartet
 
-Hold din rapport så enkel som muligt. Folk forsøger ofte at angive for meget i en enkelt visualisering. Hvis man nedbryder den i flere visualiseringer, bliver den ofte enklere og nemmere at forstå. Overvej at bruge flere visualiseringer, hvis de viser forskellige facetter af dataene, og brug filtre eller visuelle interaktioner til at skabe en mere omfattende oplevelse. Samtidig kan du holde antallet af visualiseringer på en side til et minimum. Prøv at undgå unødvendig redundans og rod på siden. Du behøver ikke to visualiseringer til at vise det samme. Forbrugere af rapporter kan blive overvældet over alle de oplysninger, de får fra alt for mange visualiseringer, eller de kan have begrænset opmærksomhed og blive distraheret. Det gør ikke alene din rapport nemmere at bruge, men alt for mange visualiseringer på en side kan gøre ydeevnen af rapporten langsommere.
+Hold din rapport så enkel som muligt. Folk forsøger ofte at angive for meget i en enkelt visualisering. Hvis man nedbryder den i flere visualiseringer, bliver den ofte enklere og nemmere at forstå. Overvej at bruge flere visualiseringer, hvis de viser forskellige facetter af dataene, og brug filtre eller visuelle interaktioner til at skabe en mere omfattende oplevelse. Samtidig kan du holde antallet af visualiseringer på en side til et minimum. Prøv at undgå unødvendig redundans og rod på siden. Du behøver ikke to visuals til at vise det samme. Forbrugere af rapporter kan blive overvældet over alle de oplysninger, de får fra alt for mange visualiseringer, eller de kan have begrænset opmærksomhed og blive distraheret. Det gør ikke alene din rapport nemmere at bruge, men alt for mange visualiseringer på en side kan gøre ydeevnen af rapporten langsommere.
 
 Sørg for, at din rapport er ensartet ved at bruge den samme skriftfarve og -typografi for alle visualiseringer i hele rapporten. Brug den samme skriftstørrelse til alle titler på visualiseringer, datamærkater og aksetitler. Hvis du bruger udsnit på flere rapportsider, bør du bevare dem på samme placering på hver side i rapporten.
 
@@ -253,8 +253,8 @@ Ud over at levere tilgængelighedsværktøjer og -funktionalitet indeholder Powe
 * Sørg for, at alle dekorative billeder er markeret som skjulte i tabulatorrækkefølgen, så de ikke læses op af en skærmlæser.
 * Undgå at bruge så mange dekorative billeder, at de bliver distraherende.
 
-### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
-* Kontrollér den tilgængelige tabel **Vis data** for brugerdefinerede visualiseringer. Hvis de viste oplysninger ikke er nok, skal du kigge efter en anden visualisering.
+### <a name="power-bi-visuals"></a>Power BI-visualiseringer
+* Kontrollér den tilgængelige tabel **Vis data** for Power BI-visuals. Hvis de viste oplysninger ikke er nok, skal du kigge efter en anden visualisering.
 * Hvis du bruger den brugerdefinerede visualisering *Afspilningsakse*, skal du sørge for, at den ikke afspilles automatisk. Gør det tydeligt, at brugeren skal trykke på knappen Afspil/pause for at starte/stoppe de skiftende værdier.
 
 ### <a name="across-visuals-on-the-page"></a>På tværs af visualiseringer på siden

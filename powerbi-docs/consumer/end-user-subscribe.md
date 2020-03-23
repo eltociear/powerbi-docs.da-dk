@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 03/09/2020
+ms.date: 03/17/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 869da47cd64e93a930fe6e92071345be093617a7
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 11e9bfb2c8dce526ad81395645165c2c7dd70a00
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114026"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525700"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Abonner på en rapport eller et dashboard i Power BI-tjenesten 
 
@@ -65,7 +65,7 @@ Uanset om du abonnerer på et dashboard eller en rapport, er processen den samme
 
 3. Hvis alt ser rigtigt ud, skal du vælge **Gem og luk** for at gemme abonnementet. Du modtager en mail og et snapshot af dashboardet eller rapporten iht. den plan, du har angivet. For alle abonnementer, hvor hyppigheden er angivet til **Efter dataopdatering**, sendes der kun en mail efter den første planlagte opdatering på den pågældende dag.
    
-   ![mail snapshot af dashboard](media/end-user-subscribe/power-bi-email.png)
+   ![mail snapshot af dashboard](media/end-user-subscribe/power-bi-email-old.png)
    
     Opdatering af rapportsiden opdaterer ikke datasættet. Det er kun ejeren af datasættet, der kan opdatere et datasæt manuelt. Hvis du vil søge efter navnet på ejeren af det eller de underliggende datasæt, skal du vælge rullelisten på den øverste menulinje eller søge efter den oprindelige abonnementsmail.
    
@@ -80,14 +80,14 @@ Det er kun dig, der kan administrere de abonnementer, du opretter. Vælg **Abonn
 Et abonnement slutter, hvis Pro-licensen udløber, dashboardet eller rapporten slettes af ejeren, eller hvis den brugerkonto, der blev brugt til oprettelse af abonnementet, slettes.
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
-* Hvis du vil undgå abonnementsmail i mappen spam, skal du føje dit Power Platform-mailalias (PowerPlat-noreply@microsoft.com) til dine kontakter. Hvis du bruger Microsoft Outlook, skal du højreklikke på aliasset og vælge **Føj til Outlook-kontaktpersoner**. 
+* Hvis du vil undgå abonnementsmails i mappen med uønsket post, skal du føje dit Power BI-mailalias (no-reply-powerbi@microsoft.com) til dine kontakter. Hvis du bruger Microsoft Outlook, skal du højreklikke på aliasset og vælge **Føj til Outlook-kontaktpersoner**. 
 * Dashboards med mere end 25 fastgjorte felter eller 4 fastgjorte liverapportsider gengives muligvis ikke fuldstændigt i abonnementsmails, der sendes til brugerne. Det anbefales, at du kontakter designeren af dashboardet og beder vedkommende om at reducere antallet af fastgjorte felter til mindre end 25 og fastgjorte liverapporter til mindre end 4 for at sikre, at mailen gengives korrekt.  
 * Hvis der er anvendt sikkerhed på rækkeniveau på nogen af felterne, bliver disse felter ikke vist for e-mailabonnementer på dashboard.  Hvis datasættet bruger RLS, vil du ikke kunne oprette et abonnement for mailabonnementer på rapporter.
 * Hvis linkene i din mail (til indholdet) ikke længere fungerer, kan det være, at indholdet er blevet slettet. Under skærmbilledet i mailen kan du se, om du eller en anden har tilmeldt dig. Hvis en anden person har, kan du bede denne kollega om enten at annullere mailene eller at tilmelde dig igen.
 * Rapportsideabonnementer er bundet til navnet på siden i rapporten. Hvis du abonnerer på en rapportside, og den bliver omdøbt, skal du genoprette dit abonnement.
 * Hvis du ikke kan bruge abonnementsfunktionen, skal du kontakte din systemadministrator. Din organisation kan have deaktiveret denne funktion.  
-* Mailabonnementer understøtter ikke de fleste [brugerdefinerede visuelle elementer](../developer/power-bi-custom-visuals.md).  Undtagelsen er de brugerdefinerede visualiseringer, der er blevet [certificeret](../developer/power-bi-custom-visuals-certified.md).  
-* Mailabonnementer understøtter ikke R-drevne brugerdefinerede visuals på nuværende tidspunkt.  
+* Mailabonnementer understøtter ikke de fleste [Power BI-visuals](../developer/visuals/power-bi-custom-visuals.md).  Undtagelsen er de Power BI-visuals, der er blevet [certificeret](../developer/visuals/power-bi-custom-visuals-certified.md).  
+* Mailabonnementer understøtter ikke R-drevne Power BI-visuals på nuværende tidspunkt.  
 * Særligt for dashboardabonnementer understøttes nogle typer af felter endnu ikke.  Det omfatter: streamingfelter, videofelter, felter med brugerdefineret webindhold.     
 * Abonnementer mislykkes muligvis på dashboards og rapporter med meget store billeder på grund af størrelsesbegrænsninger for mails.    
 * Power BI afbryder automatisk midlertidigt opdatering af datasæt, der er knyttet til dashboards og rapporter, som ikke er blevet besøgt i mere end to måneder.  Men hvis du føjer et abonnement til et dashboard eller en rapport, sættes det ikke på pause, selvom det ikke besøges.

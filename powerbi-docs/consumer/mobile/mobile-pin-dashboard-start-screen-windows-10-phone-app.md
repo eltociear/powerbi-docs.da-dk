@@ -8,17 +8,20 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 6abeb9244b4ced7cf0b56d4f01686f570c474989
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 2b77f2e2ce52d83a8eda56472d4a9a5dd1365e1f
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114939"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435737"
 ---
 # <a name="pin-a-dashboard-to-your-windows-10-start-screen-from-the-power-bi-mobile-app"></a>Fastgør dashboard til din startskærm i Windows 10 fra Power BI-mobilappen
 Du kan fastgøre Power BI-dashboards til startskærmen i Windows fra Power BI-mobilappen til Windows 10. De bliver *dynamiske felter*. Når du trykker på feltet på startskærmen, åbner dashboardet i Power BI-mobilappen til Windows 10.
 
 ![Dynamisk felt i Windows](./media/mobile-pin-dashboard-start-screen-windows-10-phone-app/power-bi-windows-10-pin-start-screen.png)
+
+>[!NOTE]
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="pin-a-dashboard-to-your-start-screen-as-a-live-tile"></a>Fastgør et dashboard til startskærmen som et dynamisk felt
 1. Åbn et dashboard.

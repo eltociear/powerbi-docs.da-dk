@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/27/2020
-ms.openlocfilehash: 251f89dd031d9a2bda146266308dc528f05eddb2
-ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
+ms.openlocfilehash: 6ee1740d536a1bfd248b91d002142470b3894180
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77782439"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381301"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 
@@ -317,7 +317,7 @@ Understøttelse af disse funktioner i Power BI-rapporter:
 
 **Tilgængelighedsfunktioner** Der er for mange tilgængelighedsfunktioner til at vise dem allesammen: f.eks. [understøttelse af tilgængelighed til ruden med listen over felter](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). Ruden med listen over felter er fuldt tilgængelig. Du kan navigere rundt i ruden ved blot at bruge tastaturet og en skærmlæser, og du kan bruge genvejsmenuen til at føje felter til din rapportside.
 
-#### <a name="custom-visuals"></a>Brugerdefinerede visuelle elementer
+#### <a name="power-bi-visuals"></a>Power BI-visualiseringer
 
 - Med denne version leveres API-version 2.3.
 
@@ -381,11 +381,11 @@ SAP HANA SSO Direct Query understøttes nu med Kerberos for Power BI-rapporter.
 >[!Note]
 >Dette scenarie understøttes kun, når SAP HANA behandles som en relationel datakilde med rapporter, du har oprettet i Power BI Desktop.  Hvis du vil aktivere dette i Power BI Desktop, skal du gå til DirectQuery-menuen under Indstillinger, markere "Behandl SAP HANA som en relationel kilde" og klikke på OK.
 
-#### <a name="custom-visuals"></a>Brugerdefinerede visuelle elementer
+#### <a name="power-bi-visuals"></a>Power BI-visualiseringer
 
 - Med denne version leveres API version 1.13.0.
 
-- Nu kan brugerdefinerede visualiseringer falde tilbage på en tidligere version, der er kompatibel med den aktuelle version af server-API'et (hvis tilgængeligt).
+- Nu kan Power BI-visuals gå tilbage til en tidligere version, der er kompatibel med den aktuelle version af server-API'en (hvis tilgængelig).
 
 ### <a name="reporting"></a>Rapportering 
 
@@ -613,7 +613,7 @@ Power BI-rapportserver understøtter nu de nye Power BI-tabel- og matrixvisuals.
 
 * Prøveversion af Power BI-rapportserver gjort tilgængelig
 * Mulighed for at publicere Power BI-rapporter i det lokale miljø
-  * understøttelse af brugerdefinerede visualiseringer
+  * understøttelse af Power BI-visuals
   * Kun understøttelse af **Analysis Services-liveforbindelser**, men med flere datakilder på vej.
   * Appen Power BI - Mobil er blevet opdateret til at vise Power BI-rapporter, der hostes i Power BI-rapportserver
 * Forbedret samarbejde i rapporter med kommentarer

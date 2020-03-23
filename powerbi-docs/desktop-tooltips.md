@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f6f0db28103b937d2074e6f339c9aaa61bfd688
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 2492996c8bbc6ea7a8d359b4b1015de67bb17430
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879626"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378702"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Opret værktøjstip baseret på rapportsider i Power BI Desktop
-Du kan oprette visuelt omfattende **værktøjstip til rapporter**, som vises, når du holder over visualiseringer, på baggrund af rapportsider, du opretter i **Power BI Desktop**. Ved at oprette en rapportside, der fungerer som et værktøjstip, kan dine brugerdefinerede værktøjstip indeholde visualiseringer, billeder og mange andre samlinger af elementer, du opretter på en rapportside. 
+Du kan oprette visuelt omfattende **værktøjstip til rapporter**, som vises, når du holder over visualiseringer, på baggrund af rapportsider, du opretter i **Power BI Desktop**. Ved at oprette en rapportside, der fungerer som et værktøjstip, kan dine brugerdefinerede værktøjstipindeholde visualiseringer, billeder og mange andre samlinger af elementer, du opretter på en rapportside. 
 
 ![Værktøjstip til rapporter i Power BI Desktop](media/desktop-tooltips/desktop-tooltips_00a.png)
 
@@ -112,7 +112,7 @@ Når en visualisering fremhæves på tværs i en rapport, viser værktøjstippen
 Der er nogle få begrænsninger og overvejelser i forbindelse med **værktøjstip**, som du skal være opmærksom på.
 
 * Fra og med udgivelsen af **Power BI Desktop** i december 2018 understøtter visualiseringer af typen Knapper værktøjstip.
-* Værktøjstip til rapporter understøttes ikke for brugerdefinerede visualiseringer. 
+* Værktøjstip til rapporter understøttes ikke for Power BI-visuals. 
 * Klynger understøttes ikke i øjeblikket som felter, der kan vises i værktøjstip til rapporter. 
 * Når du vælger et felt, der skal vises for værktøjstip til rapporter, når du bruger et felt i forhold til en kategori, vises visualiseringer, der indeholder det pågældende felt, kun det angivne værktøjstip, når der er overensstemmelse mellem opsummeringen og det valgte felt. 
 

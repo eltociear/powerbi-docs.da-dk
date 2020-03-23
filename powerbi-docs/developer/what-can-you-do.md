@@ -1,6 +1,6 @@
 ---
 title: Hvad kan udviklere bruge Power BI til?
-description: Power BI tilbyder en bred vifte af muligheder for udviklere. Det går fra integration til brugerdefinerede visualiseringer og streaming af datasæt.
+description: Power BI tilbyder en bred vifte af muligheder for udviklere. Det går fra integration til Power BI-visuals og streaming af datasæt.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: overview
@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 03/15/2019
-ms.openlocfilehash: 4e8ce6d9a892abf3e24ecae6dee1e3ea23504d31
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: c92eea927368d885a297fd83d39f528f7dae848e
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041349"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79487780"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Hvad kan udviklere bruge Power BI til?
 
-Udviklere har forskellige muligheder, når de forsøger at inkludere Power BI-indhold i programmer. Som udvikler kan du bruge disse indstillinger, herunder **integrering med Power BI**, **brugerdefinerede visualiseringer** og **pushoverførsel af data i Power BI**.
+Udviklere har forskellige muligheder, når de forsøger at inkludere Power BI-indhold i programmer. Som udvikler kan du bruge disse indstillinger, herunder **integrering med Power BI**, **Power BI-visuals** og **pushoverførsel af data i Power BI**.
 
 ## <a name="embedding-power-bi-content"></a>Integrer Power BI-indhold
 
@@ -27,19 +27,19 @@ Du kan gennemgå [Embedding-konfigurationsværktøjet](https://aka.ms/embedsetup
 
 Vælg den løsning, der er den rette for dig:
 
-* Med [Embedding for your customers](embedding.md#embedding-for-your-customers) kan du integrere dashboards og rapporter for de brugere, der ikke har en konto til Power BI. Kør løsningen [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData).
+* Med [Embedding for your customers](embedded/embedding.md#embedding-for-your-customers) kan du integrere dashboards og rapporter for de brugere, der ikke har en konto til Power BI. Kør løsningen [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData).
 
-* Med [Embedding for your organization](embedding.md#embedding-for-your-organization) kan du udvide Power BI-tjenesten. Kør løsningen [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData).
+* Med [Embedding for your organization](embedded/embedding.md#embedding-for-your-organization) kan du udvide Power BI-tjenesten. Kør løsningen [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData).
 
 ![PBIE-eksempel](media/what-can-you-do/what-can-you-do-02.png)
 
-Hvis du vil have mere at vide om integration med Power BI, kan du se [Integration med Power BI](embedding.md).
+Hvis du vil have mere at vide om integration med Power BI, kan du se [Integration med Power BI](embedded/embedding.md).
 
-## <a name="developing-custom-visuals"></a>Udvikling af brugerdefinerede visualiseringer
+## <a name="developing-power-bi-visuals"></a>Udvikling af Power BI-visuals
 
-Du kan bruge brugerdefinerede visualiseringer i Power BI til at oprette unikke visualiseringer, som er skræddersyet til dig eller din virksomhed. Disse brugerdefinerede visualiseringer er ofte oprettet af udviklere. De bygges, når mængden af visualiseringer, der er inkluderet i Power BI, ikke opfylder dine behov.
+Du kan bruge Power BI-visuals i Power BI til at oprette unikke visuals, som er skræddersyet til dig eller din virksomhed. Disse Power BI-visuals er ofte oprettet af udviklere. De bygges, når mængden af visualiseringer, der er inkluderet i Power BI, ikke opfylder dine behov.
 
-Med brugerdefinerede visualiseringer kan du oprette dine egne visualiseringer, som du kan bruge i Power BI-rapporter. Brugerdefinerede visualiseringer skrives i TypeScript, der er en udvidelse af JavaScript. TypeScript understøtter visse avancerede funktioner og tidlig adgang til ES6/ES7-funktioner. Formatering af visualiseringer håndteres ved hjælp af overlappende typografiark (CSS). For nemheds skyld bruger vi præcompileren Less, der understøtter nogle avancerede funktioner, f.eks. indlejring, variabler, betingelser, løkker og andre funktioner. Hvis du ikke vil bruge nogen af disse funktioner, kan du bare skrive almindelige overlappende CSS i Less-filen.
+Med Power BI-visuals kan du oprette dine egne visuals, som du kan bruge i Power BI-rapporter. Power BI-visuals skrives i TypeScript, der er en udvidelse af JavaScript. TypeScript understøtter visse avancerede funktioner og tidlig adgang til ES6/ES7-funktioner. Formatering af visualiseringer håndteres ved hjælp af overlappende typografiark (CSS). For nemheds skyld bruger vi præcompileren Less, der understøtter nogle avancerede funktioner, f.eks. indlejring, variabler, betingelser, løkker og andre funktioner. Hvis du ikke vil bruge nogen af disse funktioner, kan du bare skrive almindelige overlappende CSS i Less-filen.
 
 ![CV-eksempel](media/what-can-you-do/powerbi-custom-visual-store.png)
 
@@ -57,7 +57,7 @@ Du kan se nogle af de ting, du kan gøre med Power BI-API'erne, i [Hvad kan udvi
 
 ## <a name="next-steps"></a>Næste trin
 
-[Integrer med Power BI](embedding.md)  
+[Integrer med Power BI](embedded/embedding.md)  
 
 [Udvikling af en brugerdefineret visualisering i Power BI](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
 

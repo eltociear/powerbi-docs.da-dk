@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/23/2020
+ms.date: 03/12/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5a4ed3ffc833b2405a3c231b80047c71b40a64cc
-ms.sourcegitcommit: 08f65ea314b547b41b51afef6876e56182190266
+ms.openlocfilehash: 2316fcf5d0b5c0a4c63e4786b80b8c7e20c643e3
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "76753691"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378955"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Brug af rapporttemaer i Power BI Desktop
 
@@ -195,7 +195,7 @@ Det er også muligt at angive farven på et datapunkt manuelt ved hjælp af afsn
 
 ![Gendan til standard](media/desktop-report-themes/report-themes_9.png)
 
-Desuden kan mange brugerdefinerede visualiseringer ikke anvendes på rapporttemaer.
+Desuden kan mange Power BI-visuals ikke anvendes på rapporttemaer.
 
 ## <a name="custom-report-theme-files-you-can-use-right-now"></a>Brugerdefinerede rapporttemafiler, som kan bruges i øjeblikket
 
@@ -271,7 +271,7 @@ Alt andet ud over **name** er valgfrit, hvilket betyder, at du kan tilføje de r
 
 Under **name** kan du tilføje nogle grundlæggende farverelaterede egenskaber:
 
-- **dataColors**: Listen over hexadecimale farvekoder til brug sammen med farvefigurer, der repræsenterer data i visualiseringer i Power BI Desktop. Listen kan indeholde et vilkårligt antal farver. Når alle farver fra denne liste er blevet brugt, og hvis visualiseringen stadig har brug for flere farver, vender den tilbage til at bruge Power BI's standardfarvepalet.
+- **dataColors**: Listen over hexadecimale farvekoder til brug sammen med farvefigurer, der repræsenterer data i visualiseringer i Power BI Desktop. Listen kan indeholde et vilkårligt antal farver. Når alle farver fra denne liste er blevet brugt, og hvis visual'et stadig har brug for flere farver, vender det tilbage til at bruge Power BI's standardfarvepalet.
 - **good**, **neutral**, **bad**: Disse egenskaber angiver de statusfarver, der bruges af vandfaldsdiagrammet og det visuelle element KPI.
 - **maximum**, **center**, **minimum**, **null**: Disse farver angiver de forskellige gradueringsfarver i dialogboksen med betinget formatering.
 
@@ -312,10 +312,10 @@ Du kan se de seks farveklasser, som du kan formatere, i følgende tabel.  Navnen
 |---------|---------|
 | **firstLevelElements** <br> **foreground**    (frarådes) | Angiver baggrundsfarve (uden for datapunkter) <br> Tendenslinjens farve <br>  Standardfarven på tekstfelt <br> Skriftfarven for tabel-og matrixværdier og totaler samt farve på akser på datalinje <br> Kortdatamærkater <br> Farven på billedforklaringsværdi for måler <br> Farven på KPI-mål <br>  KPI-tekstfarve <br> Farven på udsnit (i fokustilstand)  <br> Skriftfarven for rulleelement i udsnit <br> Skriftfarven for numerisk input i udsnit <br> Skriftfarven for udsnitsoverskrift <br> Farven på forholdslinje i punktdiagram <br> Farven på prognoselinje i kurvediagram <br> Farven på navnelinje på kort <br> Tekstfarven for filterrude og kort|
 | **secondLevelElements** <br> **foregroundNeutralSecondary** (frarådes) | "lette" [sekundære tekstklasser](#setting-formatted-text-defaults) <br> Mærkatfarver  <br> Farven på forklaring <br> Farven på aksemærkat <br> Skriftfarve for tabel-og matrixheadere <br> Stregfarve for målerens mål og målets navnelinje <br>  Farven på KPI-tendensakse <br> Farven på skyder i udsnit <br> Skriftfarve for udsnitselement <br> Farven på kontur i udsnit <br> Farven, når der peges, i et kurvediagram <br> Farven på korttitel på flere rækker <br> Stregfarve for bånddiagram <br> Kantfarve for figurkort <br> Skriftfarve for knaptekst <br> Linjefarve for knapikon <br> Farve for knapkontur |
-| **thirdLevelElements** <br >**backgroundLight** (frarådes) | Gitterlinjefarve for akse <br> Gitterfarven på tabel og matrix <br> Baggrundsfarve for udsnitsheader (i fokustilstand)  <br> Konturfarve for kort med flere rækker  <br> Udfyldningsfarve <br> Baggrundsfarve for målerbue <br> Anvendt baggrundsfarve for filterkort <br> |
-| **fourthLevelElements** <br> **foregroundNeutralTertiary** (frarådes) | nedtonet farve på forklaring <br> Farven på kortkategorimærkat <br> Farven på kortkategorimærkat for flere rækker <br> Linjefarven på kort med flere rækker <br> Stregfarve for konverteringsrate i tragtformet diagram
+| **thirdLevelElements** <br >**backgroundLight** (frarådes) | Gitterlinjefarve for akse <br> Gitterfarven på tabel og matrix <br> Baggrundsfarve for udsnitsheader (i fokustilstand)  <br> Konturfarve for kort med flere rækker  <br> Udfyldningsfarve <br> Baggrundsfarve for målerbue <br> Anvendt baggrundsfarve for filterkort <br> Når baggrund = FFFFFF: <br> Udfyldningsfarve til deaktiveret knap <br> Konturfarve til deaktiveret knap <br> |
+| **fourthLevelElements** <br> **foregroundNeutralTertiary** (frarådes) | nedtonet farve på forklaring <br> Farven på kortkategorimærkat <br> Farven på kortkategorimærkat for flere rækker <br> Linjefarven på kort med flere rækker <br> Stregfarve for konverteringsrate i tragtformet diagram <br> Skriftfarve til tekst til deaktiveret knap <br> Stregfarve til ikon for deaktiveret knap <br> |
 | **background** | Baggrundsfarve på mærkat (inde i datapunkter) <br> Baggrundsfarve for rulleelementer i udsnit  <br> Stregfarve for kransediagram <br> Stregfarve for træstruktur <br> Baggrundsfarve for kombinationsdiagram <br> Udfyldningsfarve til knap <br> Baggrundsfarve for filterrude og tilgængeligt filterkort |
-| **secondaryBackground** <br> **backgroundNeutral** (frarådes) | Konturfarven på tabel- og matrixgitter <br> Standardfarve for figurkort <br> Båndets fyldfarve for bånddiagram (når indstillingen tilpas til seriens farve er slået fra) |
+| **secondaryBackground** <br> **backgroundNeutral** (frarådes) | Konturfarven på tabel- og matrixgitter <br> Standardfarve for figurkort <br> Båndets fyldfarve for bånddiagram (når indstillingen tilpas til seriens farve er slået fra) <br> Når baggrund != FFFFFF: <br> Udfyldningsfarve til deaktiveret knap <br> Konturfarve til deaktiveret knap <br> |
 | **tableAccent** | Tilsidesætter konturfarve for tabel-og matrixgitter, når den findes |
 
 Her er et eksempel på et tema, der angiver farveklasserne:
@@ -423,7 +423,7 @@ Du skal bruge en bestemt visual og et kortnavn til afsnittene **visualName** og 
 
 Brug en stjerne i anførselstegn for **visualName** og **cardName**, hvis du vil have, at den pågældende indstilling gælder for alle visualiseringer eller kort med en egenskab. Hvis du bruger en stjerne for både visualiseringen og kortnavnet, anvender du en indstilling globalt i rapporten på effektiv vis, f.eks. skrifttypestørrelse eller en bestemt skrifttypefamilie for al tekst på tværs af alle visuelle elementer.
 
-Her er et eksempel, der angiver nogle få egenskaber gennem typografier for visualiseringer:
+Her er et eksempel, der angiver nogle få egenskaber gennem typografier for visuals:
 
 ```json
 {
@@ -464,7 +464,7 @@ I dette eksempel angives følgende indstillinger:
 
 - Aktiverer tekstombrydning overalt.
 - Angiver gitterlinjetype til punkteret for alle visuelle elementer med en kategoriakse.
-- Angiver formatering for de tilgængelige og anvendte filterkort (bemærk formatet, der bruger "$id" til at angive de forskellige versioner af filterkortene).
+- Angiver formatering for de tilgængelige og anvendte filterkort (bemærk formatet, der bruger "$id" til at angive de forskellige versioner af filterkortene)
 - Angiver boblestørrelsen for punktdiagrammer til -10.
 
 > [!NOTE]

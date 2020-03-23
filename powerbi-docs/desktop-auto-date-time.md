@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 01996f3460b7c7a507796bd3f071f7887a69854e
-ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
+ms.openlocfilehash: 6ec4e5afe63fbdf754fcb20ec8cd12379740d33d
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77154206"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79201533"
 ---
 # <a name="apply-auto-datetime-in-power-bi-desktop"></a>Anvend automatisk dato/klokkeslæt i Power BI Desktop
 
@@ -33,7 +33,7 @@ Når indstillingen er aktiveret, opretter Power BI Desktop en skjult tabel for a
 Alle tabeller med automatisk dato/klokkeslæt er i realiteten en [beregnet tabel](desktop-calculated-tables.md), der genererer rækker med data ved hjælp af DAX-funktionen [CALENDAR](/dax/calendar-function-dax). De enkelte tabeller omfatter også seks beregnede kolonner: **Day**, **MonthNo**, **Month**, **QuarterNo**, **Quarter** og **Year**.
 
 > [!NOTE]
-> Kolonnenavnene og værdierne oversættes og formateres i Power BI i henhold til [modelsproget](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop).
+> Kolonnenavnene og værdierne oversættes og formateres i Power BI i henhold til [modelsproget](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop). Hvis modellen f. eks. blev oprettet ved hjælp af engelsk, viser den stadig månedsnavne osv. på engelsk, også selvom den vises med en koreansk klient.
 
 I Power BI Desktop oprettes der også en relation mellem kolonnen **Date** i tabellen med automatisk dato/klokkeslæt og kolonnen med modeldatoen.
 

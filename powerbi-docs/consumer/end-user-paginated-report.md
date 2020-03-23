@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 0ab2ececd4ede03a10094be53a2c08617463cc53
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: c4c21dc0f02e547cd7319d789a3eb66cce1f4b88
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79113107"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377345"
 ---
 # <a name="paginated-reports-in-the-power-bi-service"></a>Sideinddelte rapporter i Power BI-tjenesten
 
@@ -36,7 +36,7 @@ Denne enkle sideinddelte rapport genererer profit efter år, når du har valgt p
 
 ![Enkel rapport med én parameter](./media/end-user-paginated-report/power-bi-report-simple.png)
 
-Sammenlignet med sideinddelte rapporter er Power BI-rapporter meget mere interaktive. Power BI rapporter giver mulighed for ad hoc-rapportering og understøtter mange flere typer visuals, herunder brugerdefinerede visuals.
+Sammenlignet med sideinddelte rapporter er Power BI-rapporter meget mere interaktive. Power BI-rapporter giver mulighed for ad hoc-rapportering og understøtter mange flere typer visuals, herunder Power BI-visuals.
 
 ## <a name="identify-a-paginated-report"></a>Identificer en sideinddelt rapport
 

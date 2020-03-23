@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: 2c7ae8180f51592319c9aaca85272553480cd283
-ms.sourcegitcommit: 0da17de80c9651f9f4474d1abb1bdaaade8808fb
+ms.openlocfilehash: bad6b507e970319003a8d338ecf29a2afc948e9c
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "75498504"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435553"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Føj til Favoritter, og få dem vist i Power BI-mobilapps
 Gælder for:
@@ -21,6 +21,9 @@ Gælder for:
 | ![iPhone](./media/mobile-apps-favorites/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-favorites/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-favorites/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-apps-favorites/android-tablet-logo-50-px.png) | ![Android-tablet](./media/mobile-apps-favorites/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-enheder |
+
+>[!NOTE]
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 Læs, hvordan du føjer dine Power BI-dashboards, -rapporter og -apps samt dine rapporter og KPI'er i Power BI-rapportserver og Reporting Services i det lokale miljø til Favoritter og får dem vist i mobilapps.
 

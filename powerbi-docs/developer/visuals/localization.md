@@ -7,16 +7,16 @@ manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: ad63a1b97c744e8614e584874c4d896a85598e48
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: bb323737934ade08ed4998bdcf8d441e8951732c
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76819117"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379831"
 ---
-# <a name="add-the-locale-in-power-bi-for-custom-visuals"></a>Tilføj landestandarden i Power BI for brugerdefinerede visuals
+# <a name="add-the-locale-in-power-bi-for-power-bi-visuals"></a>Tilføj landestandarden i Power BI for Power BI-visuals
 
 I visuals kan Power BI-landestandarden hentes, så indholdet kan lokaliseres til det relevante sprog.
 
@@ -24,7 +24,7 @@ Læs mere om [Understøttede sprog og lande/områder til Power BI](./../../suppo
 
 Det kan f. eks. være hentning af landestandarden i visual'et Eksempelsøjlediagram.
 
-![Lokalisering i visual'et Eksempelsøjlediagram](media/locale-in-samplebarchart.png)
+![Lokalisering i visual'et Eksempelsøjlediagram](media/localization/locale-in-samplebarchart.png)
 
 Hvert af disse liggende søjlediagrammer er oprettet under en anden landestandard (engelsk, baskisk og hindi), og det vises i værktøjstippet.
 
@@ -95,13 +95,13 @@ zh-TW | 中國 (kinesisk traditionelt)
 > [!NOTE]
 > I PowerBI Desktop indeholder egenskaben for landestandard sproget i den PowerBI Desktop, der er installeret.
 
-## <a name="localizing-the-property-pane-for-custom-visuals"></a>Lokalisering af egenskabsruden for brugerdefinerede visuals
+## <a name="localizing-the-property-pane-for-power-bi-visuals"></a>Lokalisering af egenskabsruden for Power BI-visuals
 
 Felter i egenskabsruden kan lokaliseres for at give en mere integreret og sammenhængende oplevelse. Det får det brugerdefinerede visual til at fungere som alle andre kernevisuals i Power BI.
 
 Et ikke-lokaliseret brugerdefineret visual, der er oprettet ved hjælp af kommandoen `pbiviz new`, viser f. eks. følgende felter i egenskabsruden:
 
-![Lokalisering i egenskabsrude](media/property-pane.png)
+![Lokalisering i egenskabsrude](media/localization/property-pane.png)
 
 både kategoridataene og målingsdataene er defineret i filen capabilitiess.json som `displayName`.
 
@@ -132,7 +132,7 @@ Tilføj derefter en mappe med navnet stringResources. Mappen indeholder alle din
 
 I vores eksempel kan vi sige, at vi vil understøtte arabisk og hebraisk. Vi skal tilføje to JSON-filer på følgende måde:
 
-![Lokaliseringsstrenge i mappen med strengressourcer](media/stringresources-files.png)
+![Lokaliseringsstrenge i mappen med strengressourcer](media/localization/stringresources-files.png)
 
 Alle JSON-filer definerer en enkelt landestandard (denne fil skal være en af landestandarderne fra den understøttede liste ovenfor) med strengværdierne for de ønskede nøgler for viste navne. I vores eksempel ser den hebraiske strengressourcefil ud på følgende måde:
 
@@ -161,13 +161,13 @@ Hent den lokaliserede version af Power BI Desktop fra https://powerbi.microsoft.
 
 Hvis du bruger webklienten (browseren) i tjenesten, skal du ændre dit sprog i indstillingerne:
 
-![Lokalisering i webtjeneste](media/webservice-settings.png)
+![Lokalisering i webtjeneste](media/localization/webservice-settings.png)
 
 ## <a name="resource-file"></a>Ressourcefil
 
 Føj en ressource.resjson-fil til en mappe, der er navngivet som den landestandard, du vil bruge i mappen stringResources. Det er en-US og ru-RU i vores eksempel.
 
-![Den nye resjson-fil](media/new-resjson.png)
+![Den nye resjson-fil](media/localization/new-resjson.png)
 
 Derefter skal du tilføje alle de lokaliseringsstrenge, du vil bruge, i den resources.resjson-fil, du tilføjede i det forrige trin.
 

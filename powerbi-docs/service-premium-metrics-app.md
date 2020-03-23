@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 12/19/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: b7a45309c3bfad27cc3b26990ee148a9e44b8998
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: ae11ec64a0bffbd3e64c0fd677a7225c2b31f521
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75927108"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488677"
 ---
 # <a name="power-bi-premium-metrics-app"></a>Appen Power BI Premium Metrics
 
@@ -262,7 +262,7 @@ Hvis der ikke er tilstrækkelig hukommelse til at indlæse et datasæt til en in
 
 Du diagnosticerer det første scenarie ved først at finde ud af, om begrænsningen skyldes utilstrækkelig hukommelse. Du kan benytte følgende fremgangsmåde.
 
-1.  Vælg det datasæt, du er interesseret i, i **tabel A** ved at klikke på det: 
+1.    Vælg det datasæt, du er interesseret i, i **tabel A** ved at klikke på det: 
 
     ![Tabel A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -305,7 +305,7 @@ I forbindelse med dedikerede kapaciteter begrænser Power BI antallet af opdater
 
 Når du skal diagnosticere det andet scenarie, skal du først afgøre, om begrænsningen skyldes, at du løber ind i den maksimale samtidighed for opdateringer. Du kan benytte følgende fremgangsmåde.
 
-1.  Vælg det datasæt, du er interesseret i, i **tabel A** ved at klikke på det: 
+1.    Vælg det datasæt, du er interesseret i, i **tabel A** ved at klikke på det: 
 
     ![Tabel A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -341,6 +341,6 @@ Når du skal diagnosticere det andet scenarie, skal du først afgøre, om begræ
 * [Hvidbog om Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 * [Hvidbog om planlægning af en Power BI Enterprise-installation](https://aka.ms/pbienterprisedeploy)
 * [Aktivering af den udvidede Pro-prøveversion](service-extended-pro-trial.md)
-* [Ofte stillede spørgsmål om Power BI Embedded](developer/embedded-faq.md)
+* [Ofte stillede spørgsmål om Power BI Embedded](developer/embedded/embedded-faq.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

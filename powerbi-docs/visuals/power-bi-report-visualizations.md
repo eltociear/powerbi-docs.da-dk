@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/28/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 02617e690c347448ecb1c313bc86969dabeb9984
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: bd8053123d8a5c2fa0c4362cb2a534021208ba36
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099082"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381462"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualiseringer i Power BI-rapporter
 
@@ -27,7 +27,7 @@ Der er mange forskellige typer visualiseringer, der er tilgængelige direkte fra
 
 ![rude med ikoner for hver visualiseringstype](media/power-bi-report-visualizations/power-bi-icons.png)
 
-Du har endnu flere valg, hvis du besøger [webstedet for Microsoft AppSource-community'et](https://appsource.microsoft.com), hvor du kan finde og [downloade](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [brugerdefinerede visualiseringer](../developer/visuals/custom-visual-develop-tutorial.md), som leveres af Microsoft og community'et.
+Du har endnu flere valg, hvis du besøger [webstedet for Microsoft AppSource-community'et](https://appsource.microsoft.com), hvor du kan finde og [downloade](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [Power BI-visuals](../developer/visuals/custom-visual-develop-tutorial.md), som leveres af Microsoft og community'et.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
@@ -40,7 +40,7 @@ Hvis du ikke har erfaring med Power BI, eller hvis du har brug for at opfriske d
 
 ## <a name="upload-a-custom-visualization-and-use-it-in-power-bi"></a>Upload en brugerdefineret visualisering, og brug den i Power BI
 
-Tilføj en brugerdefineret visualisering, som du selv har oprettet, eller som du har fundet på [webstedet for Microsoft AppSource-community'et](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Er du i det kreative hjørne? Dyk ned i kildekoden, og brug vores [udviklerværktøjer](../developer/visuals/custom-visual-develop-tutorial.md) til at oprette en ny visualiseringstype, og [del den med community'et](../developer/office-store.md). Hvis du vil have mere at vide om udvikling af brugerdefinerede visualiseringer, kan du se [Udvikling af en brugerdefineret visualisering i Power BI](../developer/visuals/custom-visual-develop-tutorial.md).
+Tilføj en brugerdefineret visualisering, som du selv har oprettet, eller som du har fundet på [webstedet for Microsoft AppSource-community'et](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Er du i det kreative hjørne? Dyk ned i kildekoden, og brug vores [udviklerværktøjer](../developer/visuals/custom-visual-develop-tutorial.md) til at oprette en ny visualiseringstype, og [del den med community'et](../developer/visuals/office-store.md). Hvis du vil have mere at vide om udvikling af brugerdefinerede visualiseringer, kan du se [Udvikling af en brugerdefineret visualisering i Power BI](../developer/visuals/custom-visual-develop-tutorial.md).
 
 ## <a name="personalize-your-visualization-pane-preview"></a>Tilpas din visualiseringsrude (prøveversion)
 
@@ -52,7 +52,7 @@ Når en visualisering er blevet fastgjort, flyttes den til liveudgaven sammen me
 
 ![Tilpasset visualiseringsrude](media/power-bi-report-visualizations/power-bi-personalized-visualization-pane.png)
 
-Mens denne funktion er tilgængelig som prøveversion, kan du kun se dine fastgjorte visualiseringer i Power BI Desktop. Desuden skal du være logget på, for at denne funktion er tilgængelig.
+Mens denne funktion er tilgængelig som prøveversion, kan du kun se dine fastgjorte visuals i Power BI Desktop. Desuden skal du være logget på, for at denne funktion er tilgængelig.
 
 ## <a name="change-the-visualization-type"></a>Ret visualiseringstypen
 
@@ -70,4 +70,4 @@ Når du har fået tilpasset visualiseringen til det, du har brug for i Power BI-
 ## <a name="next-steps"></a>Næste trin
 
 * [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-* [Brugerdefinerede visualiseringer](../developer/power-bi-custom-visuals.md)
+* [Power BI-visuals](../developer/visuals/power-bi-custom-visuals.md)

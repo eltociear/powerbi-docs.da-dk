@@ -7,14 +7,14 @@ manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: e87235232860897765ef95bf0ec865410adf8fd1
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.openlocfilehash: 531da1ede8b83af9fb8093a3178c945f374b835c
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819485"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379384"
 ---
 # <a name="chart-utils"></a>Diagramhjælpeprogrammer
 
@@ -681,7 +681,7 @@ let formattedValue = formatter.format(value);
 
 ## <a name="legend-service"></a>Forklaringstjeneste
 
-Tjenesten `Legend` leverer hjælpegrænseflader til oprettelse og administration af PBI-forklaringer til brugerdefinerede visualiseringer
+Tjenesten `Legend` leverer hjælpegrænseflader til oprettelse og administration af PBI-forklaringer til Power BI-visuals
 
 Modulet indeholder følgende funktioner og grænseflader:
 

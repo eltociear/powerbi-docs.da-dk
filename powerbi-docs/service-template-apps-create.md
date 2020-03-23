@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 649f4d002c9adbfa882c4ee4320f040f490fd116
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 6b7b472b0c16c47ae2497c5dc8c74cc1c4d778d4
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041717"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436013"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Opret en skabelonapp i Power BI
 
@@ -30,7 +30,7 @@ Her er kravene til at udarbejde et skabelonprogram:
 - En [Power BI Pro-licens](service-self-service-signup-for-power-bi.md)
 - En [installation af Power BI Desktop](desktop-get-the-desktop.md) (valgfrit)
 - Kendskab til de [grundlæggende begreber i Power BI](service-basic-concepts.md)
-- Tilladelser til at dele en skabelonapp offentligt. Du kan finde flere oplysninger på Power BI[-administrationsportal, indstillingen Skabelonprogram](service-admin-portal.md#template-apps-settings).
+- Tilladelser til at dele en skabelonapp (du kan finde flere oplysninger i Power BI-[administrationsportalen, Skabelonappens indstillinger](service-admin-portal.md#template-apps-settings)
 
 ## <a name="create-the-template-workspace"></a>Opret skabelonen for arbejdsområdet
 
@@ -87,7 +87,7 @@ Nu, hvor du har indhold i dit arbejdsområde, er du klar til at pakke det i et s
 
     Aktivér **Ny navigationsgenerator**, hvor du kan definere navigationsruden i appen. Du kan finde flere oplysninger i artiklen [Design navigationsoplevelsen](service-create-distribute-apps.md#design-the-navigation-experience).
 
-   ![Angiv programlandingsside](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+   ![Angiv programlandingsside](media/service-template-apps-create/power-bi-install-app-content.png)
     
     **Programmets landingside:** Hvis du vælger at framelde navigationsgeneratoren, har du mulighed for at vælge appens landingsside. Angiv en rapport eller et dashboard som landingsside for dit program. Brug en landingsside, der giver det rette indtryk.
 
@@ -109,7 +109,7 @@ Nu, hvor du har indhold i dit arbejdsområde, er du klar til at pakke det i et s
     - **Påkrævet**: Brug dette til at kræve, at installationsprogrammet angiver en brugerspecifik parameter.
     - **Lås**: Låsning forhindrer, at installationsprogrammet opdaterer en parameter.
 
-    **Adgang** I testfasen kan du bestemme, hvem i din organisation der kan installere og teste dit program. Bare rolig, du kan altid vende tilbage og ændre disse indstillinger senere. Indstillingen påvirker ikke adgangen til det distribuerede skabelonprogram.
+    **Adgang** I testfasen kan du bestemme, hvem i din organisation der kan installere og teste dit program. Bare rolig, du kan altid vende tilbage og ændre disse indstillinger senere. Indstillingen påvirker ikke adgangen til den distribuerede skabelonapp.
 
 2. Vælg **Opret program**.
 

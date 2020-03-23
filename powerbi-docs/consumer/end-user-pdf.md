@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3e23f56da424ae18565b6cbec591c9d855f23139
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: e45d3e109d072984d6c01b2cbdfdd9b53e936a3b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79113131"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377207"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Eksportér rapporter fra Power BI til PDF
 
@@ -53,7 +53,7 @@ Så nemt er det. Du kan downloade filen og åbne den med en hvilken som helst PD
 Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbejder med funktionen **Eksportér til PDF**.
 
 * R-visualiseringer og Python understøttes ikke i øjeblikket. Disse visualiseringer er tomme i PDF'en, og der vises en fejlmeddelelse. 
-* Brugerdefinerede visualiseringer, der er blevet certificeret, understøttes. I [Få en brugerdefineret visualisering certificeret](../developer/power-bi-custom-visuals-certified.md) kan du finde flere oplysninger om certificerede brugerdefinerede visualiseringer, herunder hvordan du får en brugerdefineret visualisering certificeret. Brugerdefinerede visualiseringer, der ikke er blevet certificeret, understøttes ikke. De vises med en fejlmeddelelse i PDF'en.
+* Power BI-visuals, der er blevet certificeret, understøttes. I [Få en Power BI-visual certificeret](../developer/visuals/power-bi-custom-visuals-certified.md) kan du finde flere oplysninger om certificerede Power BI-visuals, herunder hvordan du får en Power BI-visual certificeret. Power BI-visuals, der ikke er blevet certificeret, understøttes ikke. De vises med en fejlmeddelelse i PDF'en.
 * ESRI-visualiseringen understøttes ikke
 * Rapporter med mere end 30 rapportsider kan ikke eksporteres i øjeblikket.
 * Processen med at eksportere rapporten til PDF kan tage nogle minutter at fuldføre, så vær tålmodig. Faktorer, som kan påvirke den tid, det kræver, omfatter rapportens struktur og den aktuelle belastning på Power BI-tjenesten.

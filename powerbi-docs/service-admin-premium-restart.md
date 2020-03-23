@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/17/2019
+ms.date: 03/12/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 34b409bc6c319594c6b8e79acd48e5ed0d674ced
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 8bb95da5383eedac57fb705f697a8481e934e379
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698457"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79202016"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Genstart en Power BI Premium-kapacitet
 
@@ -30,7 +30,9 @@ Power BI forbedrer konstant, hvordan brugere af Premium-kapacitet beskyttes mod 
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Er det sikkert at genstarte? Mister jeg nogen data?
 
-Alle de gemte data, definitioner, rapporter og dashboards på din kapacitet forbliver intakte efter genstart. Når du genstarter en kapacitet, stoppes alle igangværende planlagte opdateringer og ad hoc-opdateringer. Tjenesten forsøger at opdatere igen, når kapaciteten er tilgængelig. De brugere, der interagerer med kapaciteten, mister det arbejde, der ikke er gemt. De skal opdatere deres browsere, når genstarten er fuldført.
+Alle de gemte data, definitioner, rapporter og dashboards på din kapacitet forbliver intakte efter genstart. Når du genstarter en kapacitet, stoppes igangværende planlagte opdateringer og ad hoc-opdateringer midlertidigt af opdateringsprogrammet i de fleste tilfælde. De genstartes derefter på grund af den logik for nyt forsøg på opdatering, der er indbygget i Power BI. Tjenesten forsøger igen at udføre eventuelle berørte opdateringer, når kapaciteten bliver tilgængelig. Status for opdateringer kan ikke ændres i brugergrænsefladen under genstartsprocessen. 
+
+De brugere, der interagerer med kapaciteten, mister det arbejde, der ikke er gemt, under en genstartsproces. Brugerne skal opdatere deres browsere, når genstarten er fuldført.
 
 ## <a name="how-do-i-restart-a-capacity"></a>Hvordan genstarter jeg en kapacitet?
 

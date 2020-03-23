@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 632c1f1a9f0cba3f403cae4a471df6b7e699f481
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.openlocfilehash: dcb7ba5dabbbb0387b92908f7e299d61f2145d44
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76710151"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376586"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tip til udarbejdelse af skabelonapps i Power BI
 
@@ -157,7 +157,7 @@ Hvis du vil omdirigere en bruger til appens downloadlink i Power BI, skal du se 
 | Datakilder | Der tillades datakilder, som understøttes for planlagt dataopdatering i cloudmiljøet. <br>Understøttes ikke: <li> DirectQuery</li><li>Direkte forbindelser (ingen Azure AS)</li> <li>Datakilder i det lokale miljø (personlige gateways og virksomhedsgateways understøttes ikke)</li> <li>Realtid (pushdatasæt understøttes ikke)</li> <li>Sammensatte modeller</li></ul> |
 | Datasæt: på tværs af arbejdsområde | Datasæt på tværs af arbejdsområder er ikke tilladt  |
 | Forespørgselsparametre | Understøttes ikke: Parametre af typen "Any" eller "Binary" blokerer opdateringshandlinger for datasæt |
-| Brugerdefinerede visualiseringer | Der understøttes kun offentligt tilgængelige visualiseringer. [Brugerdefinerede visualiseringer til virksomheder](developer/power-bi-custom-visuals-organization.md) understøttes ikke |
+| Power BI-visualiseringer | Der understøttes kun offentligt tilgængelige Power BI-visuals. [Power BI-visuals til organisationer](developer/visuals/power-bi-custom-visuals-organization.md) understøttes ikke |
 
 ## <a name="next-steps"></a>Næste trin
 

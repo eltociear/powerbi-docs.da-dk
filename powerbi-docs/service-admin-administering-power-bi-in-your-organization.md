@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 864854e774defee16d446a513622e1134c77d75c
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: cfe877d6fac96124badc19f6ab685523077132fc
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/10/2020
-ms.locfileid: "77115256"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381278"
 ---
 # <a name="what-is-power-bi-administration"></a>Hvad er Power BI-administration?
 
@@ -59,7 +59,7 @@ Administratorer udfører mange opgaver for at yde support til Power BI-lejeren i
 | Administrer Premium-kapacitet |<ul><li>Opnå og arbejd med Premium-kapacitet<br><li>Opnå tjenestekvalitet|
 | Administrer Embedded-kapacitet |<ul><li>Få Embedded-kapacitet for at gøre det mere simpelt for softwareproducenter og udviklere at bruge Power BI-funktioner</ul>|
 | Sørg for overholdelse af interne politikker, love og bestemmelser | <ul><li>Administrer klassificering af virksomhedsdata<br><li>Hjælp til at gennemtvinge udgivelse af indhold og dele politikker</ul>|
-| Administrer Power BI-ressourcer |<ul><li>Administrer arbejdsområder<br><li>Udgiv brugerdefinerede visuelle elementer<br><li>Kontrollér koder, der bruges til at integrere Power BI i andre programmer|
+| Administrer Power BI-ressourcer |<ul><li>Administrer arbejdsområder<br><li>Publicer Power BI-visuals<br><li>Kontrollér koder, der bruges til at integrere Power BI i andre programmer|
 | Levér hjælp og support til brugere af lejeren |<ul><li>Foretag fejlfinding af dataadgang og andre problemer</ul>|
 | Andre opgaver |<ul><li>Udrul Power BI Desktop, f.eks. ved hjælp af Microsoft Endpoint Configuration Manager<br><li>Administrer installation af Power BI-mobilapp med Intune<br><li>Administrer beskyttelse af personlige oplysninger og sikkerhed, f.eks. kildens datasikkerhed</ul>|
 
@@ -69,7 +69,7 @@ Der er flere værktøjer, der er relateret til Power BI-administration, og de vi
 
 | **Værktøj** | **Typiske opgaver** |
 | --- | --- |
-| Power BI-administrationsportal |<ul><li>Opnå og arbejd med Premium-kapacitet</li><li>Opnå tjenestekvalitet</li><li>Administrer klassificering af virksomhedsdata</li><li>Hjælp til at gennemtvinge udgivelse af indhold og dele politikker</li><li>Administrer arbejdsområder<br><li>Udgiv brugerdefinerede visuelle elementer</li><li>Kontrollér koder, der bruges til at integrere Power BI i andre programmer</li><li>Foretag fejlfinding af dataadgang og andre problemer</li></ul>|
+| Power BI-administrationsportal |<ul><li>Opnå og arbejd med Premium-kapacitet</li><li>Opnå tjenestekvalitet</li><li>Administrer klassificering af virksomhedsdata</li><li>Hjælp til at gennemtvinge udgivelse af indhold og dele politikker</li><li>Administrer arbejdsområder<br><li>Publicer Power BI-visuals</li><li>Kontrollér koder, der bruges til at integrere Power BI i andre programmer</li><li>Foretag fejlfinding af dataadgang og andre problemer</li></ul>|
 | Microsoft 365 Administration |<ul><li>Administrer brugertilmelding</li><li>Køb og tildel Pro-licenser</li><li>Bloker brugeres adgang til Power BI</li></ul>|
 | Office 365 Security & Compliance Center |<ul><li>Gennemse og administrer overvågning af hændelser</li></ul>|
 | Azure Active Directory (AAD) på Azure-portalen |<ul><li>Konfigurer betinget adgang til Power BI-ressourcer via AAD</li><li>Klargør Power BI Embedded-kapacitet</li></ul>|

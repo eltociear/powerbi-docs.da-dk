@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: db636f16729847c40806bc328efbbdd700e79083
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 0bbdc13e1adf52ba90435f22920e4351e8f34404
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114740"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435944"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Kom i gang med Power BI-mobilapp til Windows 10
 Power BI-mobilappen til Windows 10 gør det muligt at bruge Power BI på din tablet eller telefon. Du får opdateret, berøringsfølsom mobiladgang til dine virksomhedsoplysninger. Få vist og interager med virksomhedens dashboards, uanset hvor du er, direkte fra [Start i Windows](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -28,8 +28,11 @@ Derefter kan du interagere med dine dashboards og rapporter, udforske dataene og
 * [**Hent Power BI-mobilappen til Windows 10**](https://go.microsoft.com/fwlink/?LinkID=526478) fra Windows Store.
   
   Din enhed skal køre Windows 10. Appen fungerer på enheder med mindst 3 GB RAM og 8 GB internt lager.
+
+  >[!NOTE]
+  >Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
    
-* Find ud af, [hvad der er nyt i Power BI-mobilappene](mobile-whats-new-in-the-mobile-apps.md).
+* Find ud af, [hvad der er nyt i Power BI-mobilappsene](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>Tilmeld dig Power BI-tjenesten på internettet
 Hvis du endnu ikke har tilmeldt dig, kan du gå til [Power BI-tjenesten](https://powerbi.com/). Tilmeld dig din egen konto for at oprette og lagre dashboards og rapporter samt samle dine data. Log derefter på Power BI fra din Windows 10-enhed for at få vist dine egne dashboards overalt.

@@ -9,23 +9,23 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: d9e291ff4f61f69ec84e39767906a79f65c2f30f
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 6bf8ccd9048262ce05aff68819ecdb31a44ddfe2
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114170"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377184"
 ---
 # <a name="visual-types-in-power-bi"></a>Visualiseringstyper i Power BI
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-Du finder visualiseringer i rapporter, på dashboards og under Spørgsmål og svar. Nogle af disse visualiseringstyper medfølger Power BI som en del af pakken, og nogle er *brugerdefinerede visualiseringer*. Brugerdefinerede visualiseringer oprettes uden for Power BI og på en måde, der gør det muligt for *rapportdesignere* at føje dem til rapporter og dashboards i Power BI. 
+Du finder visualiseringer i rapporter, på dashboards og under Spørgsmål og svar. Nogle af disse visual-typer følger med Power BI som en del af pakken, og nogle er *Power BI-visuals*. Brugerdefinerede visualiseringer oprettes uden for Power BI og på en måde, der gør det muligt for *rapportdesignere* at føje dem til rapporter og dashboards i Power BI. 
 
 Denne artikel indeholder en oversigt over de visualiseringer, der medfølger til Power BI-tjenesten som en del pakken.  Disse visualiseringstyper er dem, du oftest vil støde på. Du kan finde detaljerede oplysninger om en af disse visualiseringer i dokumentationen til [Power BI Report *Designer* om visuelle typer](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 > [!NOTE]
-> Du kan få mere at vide om brugerdefinerede visualiseringer ved at søge efter dem i afsnittet **Power BI-visualiseringer** i [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). For hver enkelt visualisering finder du en beskrivelse, forfatteroplysninger og enten skærmbilleder eller en video. 
+> Du kan få mere at vide om Power BI-visuals ved at søge efter dem i afsnittet **Power BI-visuals** i [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). For hver enkelt visualisering finder du en beskrivelse, forfatteroplysninger og enten skærmbilleder eller en video. 
 
 ## <a name="list-of-visuals-available-in-power-bi"></a>Liste over visualiseringer, der er tilgængelige i Power BI
 Du finder alle disse visualiseringer på dashboards, i rapporter og [angivet under Spørgsmål og svar](end-user-q-and-a.md) i Power BI. Hvis du vil vide mere om, hvordan du interagerer med visualiseringer, skal du se [Interager med visualiseringer i rapporter, på dashboards og i apps](end-user-visualizations.md)
@@ -237,7 +237,7 @@ Vandfaldsdiagrammer er et godt valg:
 - til illustration af antal medarbejdere ved årets start og slutning
 - til visualisering af, hvor mange penge du tjener og bruger hver måned, samt den løbende kontobalance.
 
-## <a name="qna"></a>Fortæl Spørgsmål og svar, hvilken visualisering der skal bruges
+## <a name="tell-qa-which-visual-to-use"></a><a name="qna"></a>Fortæl Spørgsmål og svar, hvilken visualisering der skal bruges
 Når du skriver forespørgsler i naturligt sprog med Spørgsmål og svar i Power BI, kan du angive visualiseringstypen i din forespørgsel.  Eksempel:
 
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 2c8a8356fe20136d0325efe51934a7db3d4b113e
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: e303d85083624bb67e73729024875d0f6f44fc42
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496887"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377138"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>Grundlæggende begreber for forbrugere af Power BI-tjenesten
 
@@ -118,7 +118,7 @@ Her er blot nogle af de visualiseringer, du kan støde på i Power BI: vandfald,
 
 Se den [fulde liste over visualiseringer, der er inkluderet i Power BI](../power-bi-visualization-types-for-reports-and-q-and-a.md).
 
-Visualiseringer, der kaldes *brugerdefinerede visualiseringer*, er også tilgængelige fra community'et. Hvis du modtager en rapport med en visualisering, du ikke genkender, er det sandsynligvis en brugerdefineret visualisering. Hvis du har brug for hjælp til at forstå den brugerdefinerede visualisering, kan du slå navnet på *designeren* af rapporten eller dashboardet op og kontakte vedkommende.
+Visualiseringer, der kaldes *Power BI-visuals*, er også tilgængelige fra community'et. Hvis du modtager en rapport med en visualisering, du ikke genkender, er det sandsynligvis en brugerdefineret visualisering. Hvis du har brug for hjælp til at forstå den brugerdefinerede visualisering, kan du slå navnet på *designeren* af rapporten eller dashboardet op og kontakte vedkommende.
 
 Én visualisering i en rapport...
 

@@ -1,36 +1,45 @@
 ---
-title: Brug af knapper i Power BI
-description: Med knapper i Power BI Desktop kan du lave rapporter og dashboards, der fungerer som apps, og sørge for, at brugerne bliver mere involveret
+title: Brug knapper i Power BI
+description: Du kan tilføje knapper i Power BI-rapporter, der får dine rapporter til at fungere som apps, og sørge for, at brugerne bliver mere involveret.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 03/12/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a38b54bdacd0f60ee0151ad7c1a2084cebac2a37
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6629165ec031fea0d1c1af443e1d7b311bc743aa
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878723"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79201588"
 ---
-# <a name="using-buttons-in-power-bi"></a>Brug af knapper i Power BI
-Ved hjælp af **knapper** i Power BI kan du oprette rapporter og dashboards, der fungerer på samme måde som apps, og dermed skabe et indtagende miljø, så brugerne kan holde over, klikke og yderligere interagere med Power BI-indhold. Du kan føje knapper til rapporter i **Power BI Desktop** og dele eller publicere disse rapporter i Power BI-tjenesten, så der oprettes dashboards, der giver brugerne en funktionsmåde, som ligner den i apps.
+# <a name="use-buttons-in-power-bi"></a>Brug knapper i Power BI
+Ved hjælp af **knapper** i Power BI kan du oprette rapporter, der fungerer på samme måde som apps, og dermed skabe et indtagende miljø, så brugerne kan holde over, klikke og yderligere interagere med Power BI-indhold. Du kan føje knapper til rapporter i **Power BI Desktop** og i **Power BI-tjenesten**. Når du deler dine rapporter i Power BI-tjeneste, får brugerne en applignende visning.
 
-![Knapper i Power BI](media/desktop-buttons/desktop-buttons_01.png)
+![Knapper i Power BI](media/desktop-buttons/power-bi-buttons.png)
 
-Knapper, som du opretter i **Power BI Desktop**, kan bruges i rapporter eller dashboards, der publiceres i **Power BI-tjenesten**.
+## <a name="create-buttons-in-reports"></a>Opret knapper i rapporter
 
-## <a name="creating-buttons-in-reports"></a>Oprettelse af knapper i rapporter
-Du opretter knapper i en rapport i **Power BI Desktop** på følgende måde: På båndet **Hjem** skal du vælge **Knapper**. Så vises der en rullemenu, hvor du kan vælge mellem en række knapper og finde den, du vil have, som vist på følgende billede. 
+### <a name="create-a-button-in-power-bi-desktop"></a>Opret en knap i Power BI Desktop
 
-![Tilføj kontrolelementet knap i Power BI Desktop](media/desktop-buttons/desktop-buttons_02.png)
+Du opretter knapper i **Power BI Desktop** på følgende måde: Vælg **Knapper** på båndet **Indsæt**, hvorefter der vises en rullemenu, hvor du kan vælge den ønskede knap, som vist på følgende billede. 
 
-Når du opretter en knap og vælger den på rapportcanvasset, kan du i ruden **Visualiseringer** se mange måder, som du kan tilpasse knappen på, så den passer til dine behov. Du kan f.eks. slå **Knaptekst** til eller fra ved at skifte skyderen på det pågældende kort i ruden **Visualiseringer**. Du kan redigere flere egenskaber for knappen. Du kan bl.a. ændre ikonet for knappen, udfyldning af knappen, titlen eller den handling, som udføres, når brugerne klikker på knappen i en rapport eller på et dashboard.
+![Tilføj kontrolelementet knap i Power BI Desktop](media/desktop-buttons/power-bi-button-dropdown.png)
 
-![Formatér en knap i Power BI Desktop](media/desktop-buttons/desktop-buttons_03.png)
+### <a name="create-a-button-in-the-power-bi-service"></a>Opret en knap i Power BI-tjenesten
+
+Hvis du vil oprette en knap, skal du åbne rapporten i redigeringsvisning i **Power BI-tjenesten**. Vælg **Knapper** i den øverste menulinje, hvorefter der vises en rullemenu, hvor du kan vælge den ønskede knap, som vist på følgende billede. 
+
+![Tilføj et knapkontrolelement i Power BI-tjenesten](media/desktop-buttons/power-bi-button-service-dropdown.png)
+
+## <a name="customize-a-button"></a>Tilpas en knap
+
+Uanset om du opretter knappen i Power BI Desktop eller i Power BI-tjenesten, er resten af processen den samme. Når du vælger knappen på rapportcanvasset, kan du i ruden **Visualiseringer** se mange måder, som du kan tilpasse knappen på, så den passer til dine behov. Du kan f.eks. slå **Knaptekst** til eller fra ved at skifte skyderen på det pågældende kort i ruden **Visualiseringer**. Du kan bl.a. også ændre ikonet for knappen, udfyldningen af knappen, titlen eller den handling, som udføres, når brugerne vælger knappen i en rapport.
+
+![Formatér en knap i en Power BI-rapport](media/desktop-buttons/power-bi-button-properties.png)
 
 ## <a name="set-button-properties-when-idle-hovered-over-or-selected"></a>Angiv egenskaber for knappen, når den er inaktiv, når der holdes over den, eller når den vælges
 
@@ -43,37 +52,46 @@ På følgende kort i ruden **Visualiseringer** kan du justere formateringen elle
 * Kontur
 * Udfyldning
 
-For hver tilstand kan du vælge, hvordan knappes skal fremstå. Udvid ét af disse kort, og vælg den rullemenu, der vises øverst på kortet. På følgende billede kan du se, at kortet **Kontur** udvidet med rullemenuen valgt for at vise de tre tilstande:
+For hver tilstand kan du vælge, hvordan knappes skal fremstå. Udvid ét af disse kort, og vælg den rullemenu, der vises øverst på kortet. På følgende billede kan du se, at kortet **Ikon** er udvidet med rullemenuen valgt for at vise de tre tilstande.
 
-![Tre tilstande for en knap i Power BI Desktop](media/desktop-buttons/desktop-buttons_04.png)
+![Tre tilstande for en knap i en Power BI-rapport](media/desktop-buttons/power-bi-button-format.png)
 
 
 ## <a name="select-the-action-for-a-button"></a>Vælg handlingen for knappen
 
 Du kan vælge, hvilken handling der udføres, når en bruger vælger en knap i Power BI. Du får adgang til indstillingerne for knappens handlinger via kortet **Handling** i ruden **Visualiseringer**.
 
-![Handlinger for en knap i Power BI](media/desktop-buttons/desktop-buttons_05.png)
+![Handlinger for en knap i Power BI](media/desktop-buttons/power-bi-button-action.png)
 
-Indstillingerne for en knaps handlinger er:
+Her er indstillingerne for knaphandlinger:
 
-* Tilbage
-* Bogmærke
-* Spørgsmål og svar
+- **Tilbage** sender brugeren tilbage til den forrige side i rapporten. Dette er nyttigt til sider med detaljeadgang.
+- **Bogmærke** viser den rapportside, der er knyttet til et bogmærke, som er defineret for den aktuelle rapport. Få mere at vide om [bogmærker i Power BI](desktop-bookmarks.md). 
+- **Detaljeadgang (prøveversion)** sender brugeren til en side med detaljeadgang, der er filtreret efter deres valg, uden at der bruges bogmærker. Få mere at vide om, [detaljeaniveauknapper i rapporter](desktop-drill-through-buttons.md).
+- **Sidenavigation** sender brugeren til en anden side i rapporten, også uden at der bruges bogmærker. Se [Opret sidenavigation](#create-page-navigation) i denne artikel for at få flere oplysninger.
+- **Spørgsmål og svar** åbner et vindue med **stifinder til Spørgsmål og svar**. 
 
-Når **Tilbage** vælges, vender brugeren tilbage til den forrige side i rapporten. Dette er særligt nyttigt for sider med detailudledning.
-
-Når **Bogmærke** vælges, præsenteres den rapportside, der er knyttet til et bogmærke, som er defineret for den aktuelle rapport. Du kan [få mere at vide om bogmærker i Power BI](desktop-bookmarks.md). 
-
-Når **Spørgsmål og svar** vælges i rullemenuen, vises vinduet **Stifinder med spørgsmål og svar**. 
-
-For nogle knapper er der valgt en standardhandling automatisk. For knappen **Spørgsmål og svar** er **Spørgsmål og svar** f.eks. valgt automatisk som standardhandling. Du kan få mere at vide om **Stifinder med spørgsmål og svar** i [dette blogindlæg](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#Q&AExplorer).
+For nogle knapper er der automatisk valgt en standardhandling. For knappen **Spørgsmål og svar** er **Spørgsmål og svar** f.eks. valgt automatisk som standardhandling. Du kan få mere at vide om **Stifinder med spørgsmål og svar** i [dette blogindlæg](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#Q&AExplorer).
 
 Du kan prøve eller teste de knapper, du opretter for din rapport, ved hjælp af *Ctrl + klik* på den knap, du vil bruge. 
+
+### <a name="create-page-navigation"></a>Opret sidenavigation
+
+Med **handling**stypen **sidenavigation**kan du hurtigt oprette en hel navigationsoplevelse uden at skulle gemme eller administrere bogmærker.
+
+Hvis du vil konfigurere en sidenavigationsknap, skal du oprette en knap med **Sidenavigation** som handlingstype og vælge **destination**ssiden.
+
+![Handlingen Sidenavigation](media/desktop-buttons/power-bi-page-navigation.png)
+
+Du kan hurtigt opbygge en brugerdefineret navigationsrude. Du undgår at skulle redigere og administrere bogmærker, hvis du vil ændre, hvilke sider der skal vises i navigationsruden.
+
+![Opret en navigationsside](media/desktop-buttons/power-bi-build-navigation-pane.png)
+
+Derudover kan du oprette en betinget formatering af værktøjstippet, som du kan gøre med andre knaptyper.
 
 ## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om de funktioner, der er ens eller interagerer med knapper, i følgende artikler:
 
-* [Brug detaljeadgang i Power BI Desktop](desktop-drillthrough.md)
-* [Vis et dashboardfelt eller en rapport i fokustilstand](consumer/end-user-focus.md)
+* [Brug detaljeadgang i Power BI-rapporter](desktop-drillthrough.md)
 * [Brug bogmærker til at dele indsigt og oprette historier i Power BI](desktop-bookmarks.md)
 

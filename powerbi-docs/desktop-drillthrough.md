@@ -1,38 +1,40 @@
 ---
-title: Brug detaljeadgang i Power BI Desktop
-description: Lær, hvordan du bruger detaljeadgang til at analysere data på en ny rapportside i Power BI Desktop
+title: Konfigurer detaljeadgang i Power BI-rapporter
+description: Lær, hvordan du bruger detaljeadgang til at analysere data på en ny rapportside i Power BI-rapporter
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/05/2020
+ms.date: 03/12/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 020b7e0a5fd0c3372e3a83d9973a404978e56b7d
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.openlocfilehash: 5a494341ff6ee9c5fe4b2c2119749f58f2fd540d
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78401235"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79201445"
 ---
-# <a name="use-drillthrough-in-power-bi-desktop"></a>Brug detaljeadgang i Power BI Desktop
-Med *detaljeadgang* i Power BI Desktop kan du oprette en side i rapporten, som fokuserer på et bestemt objekt, f.eks. en leverandør, en kunde eller en producent. Hvis du vil bruge detaljeadgang, skal du vælge funktionen ved at højreklikke på et datapunkt på andre rapportsider og derefter gå videre ned til siden med fokus for at få de oplysninger, der er filtreret i forhold til konteksten.
+# <a name="set-up-drill-through-in-power-bi-reports"></a>Konfigurer detaljeadgang i Power BI-rapporter
+Med *detaljeadgang* i Power BI-rapporter kan du oprette en side i rapporten, som fokuserer på et bestemt objekt, f.eks. en leverandør, en kunde eller en producent. Når dine rapportlæsere bruger detaljeadgang, højreklikker de på et datapunkt på andre rapportsider og går videre ned til siden med fokus for at få de oplysninger, der er filtreret i forhold til konteksten. Du kan også [oprette en knap, der giver adgang](desktop-drill-through-buttons.md) til detaljer, når de klikker på den.
 
-![Brug detaljeadgang](media/desktop-drillthrough/drillthrough_01.png)
+Du kan konfigurere detaljeadgang i dine rapporter i Power BI Desktop eller i Power BI-tjenesten.
 
-## <a name="using-drillthrough"></a>Brug detaljeadgang
-1. Hvis du vil bruge detaljeadgang, skal du oprette en rapportside med de visualiseringer, du vil have til den type enhed, som du vil have detaljeadgang til. 
+![Brug af detaljeadgang](media/desktop-drillthrough/power-bi-drill-through-right-click.png)
 
-    Lad os f.eks. sige, at du vil angive detaljeadgang til producenter. Så kan du oprette en side med detaljeadgang med visuelle elementer, der viser det samlede salg, enheder leveret i alt, salg efter kategori, salg efter område osv. Det betyder, at når du får detaljeadgang til denne side, er de pågældende visuals specifikke for den valgte producent.
+## <a name="set-up-the-drill-through-destination-page"></a>Sådan konfigurerer du destinationssiden for detaljeadgang
+1. Hvis du vil konfigurere detaljeadgang, skal du oprette en rapportside med de visuals, du vil have til den type enhed, som du vil have detaljeadgang til. 
+
+    Lad os f.eks. sige, at du vil angive detaljeadgang til producenter. Så kan du oprette en side med detaljeadgang med visuals, der viser det samlede salg, enheder leveret i alt, salg efter kategori, salg efter område osv. Det betyder, at når du får detaljeadgang til denne side, er de pågældende visuals specifikke for den valgte producent.
 
 2. På siden med detaljeadgang kan du derefter gå til sektionen **Felter** i ruden **Visualiseringer** og trække det felt, du vil aktivere detaljeadgang til, til området **Detaljeadgangsfiltre**.
 
-    ![Detaljeadgang til område](media/desktop-drillthrough/drillthrough_02.png)
+    ![Område med detaljeadgang](media/desktop-drillthrough/drillthrough_02.png)
 
-    Når du føjer et felt til området **Detaljeadgangsfiltre**, opretter Power BI Desktop automatisk et visuelt element for knappen *Tilbage*. Denne visual bliver en knap i publicerede rapporter. De brugere, der benytter din rapport i Power BI-tjenesten, bruger denne knap til at komme tilbage til den rapportside, de kom fra.
+    Når du føjer et felt til området **Detaljeadgangsfiltre**, opretter Power BI automatisk et visuelt element for knappen *Tilbage*. Denne visual bliver en knap i publicerede rapporter. De brugere, der benytter din rapport i Power BI-tjenesten, bruger denne knap til at komme tilbage til den rapportside, de kom fra.
 
-    ![Detaljeadgang til billede](media/desktop-drillthrough/drillthrough_03.png)
+    ![Billede til detaljeadgang](media/desktop-drillthrough/drillthrough_03.png)
 
 > [!IMPORTANT]
 > Du kan konfigurere og udføre detaljeadgang på en side i den pågældende rapport, du kan dog ikke udføre detaljeadgang på en side i en anden rapport.  
@@ -53,11 +55,11 @@ Hvis du vil bruge dit eget billede til en tilbage-knap, skal du gøre følgende:
     
      Nu kan brugerne højreklikke på et datapunkt i din rapport og få en genvejsmenu, der understøtter detaljeadgang til denne side. 
 
-    ![Detaljeadgangsmenu](media/desktop-drillthrough/drillthrough_04.png)
+    ![Menu for detaljeadgang](media/desktop-drillthrough/drillthrough_04.png)
 
     Når brugerne vælger at få detaljeadgang, filtreres siden, så den viser oplysninger om det datapunkt, de har højreklikket på. Lad os f.eks. sige, at de har højreklikket på et datapunkt om producenten Contoso og valgt at få detaljeadgang. Den side med detaljeadgang, som de skal du gå til, filtreres til Contoso.
 
-## <a name="pass-all-filters-in-drillthrough"></a>Overfør alle filtre i detaljeadgang
+## <a name="pass-all-filters-in-drill-through"></a>Overfør alle filtre i detaljeadgang
 
 Du kan overføre alle filtre til detaljeadgangsvinduet. Du kan f.eks. kun vælge en bestemt kategori af produkter og de visuals, der filtreres til denne kategori, og derefter vælge detaljeadgang. Du er måske interesseret i at se, hvordan denne detaljeadgang ville se ud med alle de anvendte filtre.
 
@@ -65,16 +67,15 @@ Hvis du vil beholde alle anvendte filtre, skal du gå til sektionen **Detaljeadg
 
 ![Behold alle filtre](media/desktop-drillthrough/drillthrough_06.png)
 
-
-Når du derefter udfører detaljeadgang på et visuelt element, kan du se, hvilke filtre der er anvendt som resultat af det visuelle kildeelement, hvor der er anvendt midlertidige filtre. I sektionen **Detaljeadgang** i ruden **Visualisering**, vises disse midlertidige filtre med kursiv. 
+Når du derefter udfører detaljeadgang på et visuelt element, kan du se, hvilke filtre der er anvendt som resultat af det visuelle kildeelement, hvor der er anvendt midlertidige filtre. I afsnittet **Detaljeadgang** i ruden **Visualisering**, vises disse midlertidige filtre med kursiv. 
 
 ![Midlertidige filtre med kursiv](media/desktop-drillthrough/drillthrough_07.png)
 
 Selvom du kan gøre dette med sider med værktøjstip, ville det give en forkert oplevelse, fordi værktøjstippet ikke ser ud til at fungere korrekt. Derfor anbefales det ikke at gøre dette med værktøjstip.
 
-## <a name="add-a-measure-to-drillthrough"></a>Føj et mål til detaljeadgang
+## <a name="add-a-measure-to-drill-through"></a>Føj et mål til detaljeadgang
 
-Ud over at overføre alle filtre til vinduet med detaljeadgang kan du også tilføje et mål (eller en numerisk kolonne med en opsummering) i detaljeområdet. Træk detaljeadgangsfeltet til kortet **Detaljeadgang** for at anvende det. 
+Ud over at overføre alle filtre til vinduet med detaljeadgang kan du også tilføje et mål (eller en numerisk kolonne med en opsummering) i detaljeområdet. Træk detaljeniveaufeltet til kortet **Detaljeadgang** for at anvende det. 
 
 ![Føj et mål til detaljeadgang](media/desktop-drillthrough/drillthrough_08.png)
 
@@ -86,6 +87,6 @@ Så nemt er det at bruge detaljeadgang i dine rapporter. Det kan give dig en udv
 
 Du vil måske også være interesseret i følgende artikler:
 
-* [Brug tværgående detaljeadgang i rapport i Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Brug tværgående detaljeadgang i Power BI-rapporter](desktop-cross-report-drill-through.md)
 * [Brug af udsnitsværktøjer i Power BI Desktop](visuals/power-bi-visualization-slicers.md)
 

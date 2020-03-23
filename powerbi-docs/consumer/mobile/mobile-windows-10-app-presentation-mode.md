@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/08/2020
 ms.author: painbar
-ms.openlocfilehash: f900a329ccbfa2a6e80883baec9694ddeaf3833a
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: 3be0ab1eb45716d0b9b7736d3e5bf5b8bfc25891
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77260024"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435990"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Få vist rapporter og dashboards i præsentationstilstand på Surface Hub og Windows 10-enheder
 Du kan bruge præsentationstilstand til at vise rapporter og dashboards i fuld skærm på Windows 10-enheder og Surface Hub. 
@@ -28,8 +28,9 @@ Du kan også [få vist dashboards og rapporter i fuldskærmsvisning fra Power BI
 
 > [!NOTE]
 > Præsentationstilstand adskiller sig fra [fokuseringstilstand for felter](mobile-tiles-in-the-mobile-apps.md).
-> 
-> 
+
+>[!NOTE]
+>Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="use-presentation-mode"></a>Brug præsentationstilstand
 Tryk på ikonet **Fuld skærm** i Power BI-mobilappen for at gå til fuldskærmsvisning.

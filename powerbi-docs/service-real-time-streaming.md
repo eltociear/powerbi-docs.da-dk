@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 047aa5e19089555538c874702dd50da0f1146ff1
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: ed1100a418259845e6a2656e1c5bab6d80358df0
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/10/2020
-ms.locfileid: "77115279"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381071"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming i realtid i Power BI
 Med streaming i realtid med Power BI kan du streame data og opdatere dashboards i realtid. Alle visuelle elementer eller dashboards, der kan oprettes i Power BI, kan også oprettes til at vise og opdatere data og visuelle elementer i realtid. Enhederne og kilderne til streamingdata kan være sensorer på fabrikker, sociale medier, forbrugsdata for tjenester og alt andet, hvorfra tidsfølsomme data kan indsamles eller overføres.
@@ -33,7 +33,7 @@ Der er tre typer datasæt i realtid, som er beregnet til visning af dashboards i
 Først skal vi forstå, hvordan disse datasæt adskiller sig fra hinanden (dette afsnit), derefter drøfter vi, hvordan data kan pushoverføres til disse hvert af disse datasæt.
 
 ### <a name="push-dataset"></a>Pushhdatasæt
-Med et **pushdatasæt** sendes der data til Power BI-tjenesten. Når datasættet oprettes, opretter Power BI-tjenesten automatisk en ny database i tjenesten til at lagre dataene i. Da der er en underliggende database, som fortsætter med at lagre dataene, når de kommer ind, kan der oprettes rapporter med dataene. Disse rapporter og deres visuelle elementer er ligesom andre visuelle elementer i rapporter, hvilket betyder, at du kan bruge alle Power BIs funktioner til oprettelse af visuelle elementer, herunder brugerdefinerede visuelle elementer, databeskeder, fastgjorte dashboardfelter og meget mere.
+Med et **pushdatasæt** sendes der data til Power BI-tjenesten. Når datasættet oprettes, opretter Power BI-tjenesten automatisk en ny database i tjenesten til at lagre dataene i. Da der er en underliggende database, som fortsætter med at lagre dataene, når de kommer ind, kan der oprettes rapporter med dataene. Disse rapporter og deres visuals er ligesom andre rapport-visuals, hvilket betyder, at du kan bruge alle Power BI's funktioner til oprettelse af rapporter, herunder Power BI-visuals, databeskeder, fastgjorte dashboardfelter og meget mere.
 
 Når en rapport oprettes ved hjælp af pushdatasættet, kan alle dens visuelle elementer fastgøres til et dashboard. På dette dashboard opdateres visuelle elementer i realtid, når dataene opdateres. Dashboardet udløser en opdatering af feltet i tjenesten, hver gang der modtages nye data.
 
@@ -45,16 +45,16 @@ Der er to ting, du skal være opmærksom på vedrørende fastgjorte felter fra e
 ### <a name="streaming-dataset"></a>Streamingdatasæt
 Med et **streamingdatasæt** overføres data også til Power BI-tjenesten med én vigtig forskel: Power BI gemmer kun dataene i en midlertidig cache, som hurtigt udløber. Den midlertidige cache bruges kun til at vise visuelle elementer, som har en midlertidig historik, f.eks. et kurvediagram, der har et tidsvindue på en time.
 
-Med et **streamingdatasæt** er der *ingen* underliggende database, så du *kan ikke* oprette visuelle elementer i rapporter, der bruger de data, der kommer ind fra streamen. Som sådan kan du ikke bruge rapportens funktionalitet, f.eks. filtrering, brugerdefinerede visuelle elementer og andre rapportfunktioner.
+Med et **streamingdatasæt** er der *ingen* underliggende database, så du *kan ikke* oprette visuelle elementer i rapporter, der bruger de data, der kommer ind fra streamen. Du kan ikke som sådan bruge rapportens funktioner, f.eks. filtrering, Power BI-visuals og andre rapportfunktioner.
 
-Den eneste måde at visualisere et streamingdatasæt er at tilføje et felt og bruge streamingdatasættet som en datakilde for **brugerdefinerede streamingdata**. De brugerdefinerede streamingfelter, der er baseret på et **streamingdatasæt**, er optimeret til hurtigt at vise data i realtid. Der er meget lidt ventetid mellem det tidspunkt, hvor data pushoverføres til Power BI-tjenesten, og hvor det visuelle element opdateres, da det ikke er nødvendigt for data at blive angivet i eller læst fra en database.
+Den eneste måde at visualisere et streamingdatasæt er at tilføje et felt og bruge streamingdatasættet som en datakilde for **brugerdefinerede streamingdata**. De brugerdefinerede streamingfelter, der er baseret på et **streamingdatasæt**, er optimeret til hurtigt at vise data i realtid. Der er meget lidt ventetid mellem det tidspunkt, hvor data pushoverføres til Power BI-tjenesten, og hvor visualiseringen opdateres, da det ikke er nødvendigt for data at blive angivet i eller læst fra en database.
 
 I praksis bruges streamingdatasæt og deres tilhørende streamingvisualiseringer bedst i situationer, hvor det er vigtigt at minimere ventetiden mellem det tidspunkt, hvor data pushoverføres, og hvor de visualiseres. Det er desuden bedste praksis, at dataene pushoverføres i et format, der kan visualiseres, som det er, uden nogen yderligere akkumuleringer. Eksempler på data, der er klar, som de er, omfatter temperaturer og forudberegnede gennemsnit.
 
 ### <a name="pubnub-streaming-dataset"></a>PubNub-streamingdatasæt
 Med et **PubNub**-streamingdatasæt bruger Power BI-webklienten PubNub SDK til at læse en eksisterende PubNub-datastream, og der lagres ingen data af Power BI-tjenesten.
 
-Som med **streamingdatasæt** er der med **PubNub-streamingdatasættet** ingen underliggende database i Power BI, så du ikke kan oprette rapportens visualiseringer i forhold til de data, der kommer ind, og kan ikke drage fordel af rapportfunktioner som filtrering, brugerdefinerede visuelle elementer osv. **PubNub-streamingdatasættet** kan også kun visualiseres ved at føje et felt til dashboardet og konfigurere en PubNub-datastream som kilden.
+Som det også gælder for **streamingdatasæt** er der ingen underliggende database i Power BI for **PubNub-streamingdatasættet**, så du kan ikke oprette rapport-visuals i forhold til de data, der kommer ind, og kan ikke drage fordel af rapportfunktioner som filtrering, Power BI-visuals osv. **PubNub-streamingdatasættet** kan også kun visualiseres ved at føje et felt til dashboardet og konfigurere en PubNub-datastream som kilden.
 
 Felter, der er baseret på et **PubNub-streamingdatasæt**, er optimeret til hurtigt at vise data i realtid. Da Power Bi er direkte forbundet til PubNub-datastreamen, er der meget lidt ventetid mellem det tidspunkt, hvor data pushoverføres til Power BI-tjenesten, og hvor det visuelle element opdateres.
 
@@ -64,9 +64,7 @@ I følgende tabel (eller matrix, om du vil) beskrives de tre typer datasæt til 
 ![](media/service-real-time-streaming/real-time-streaming_11.png)
 
 > [!NOTE]
-> Se [denne artikel](https://docs.microsoft.com/power-bi/developer/api-rest-api-limitations) for at få oplysninger om **Push**-grænser for, hvor mange data der kan modtages via pushoverførsel.
-> 
-> 
+> Se [denne artikel](developer/automation/api-rest-api-limitations.md) for at få oplysninger om **Push**-grænser for, hvor mange data der kan modtages via pushoverførsel.
 
 ## <a name="pushing-data-to-datasets"></a>Pushoverfør data til datasæt
 I det forrige afsnit blev de tre primære typer realtidsdatasæt beskrevet, som du kan bruge i realtidsstreaming, og hvordan de adskiller sig fra hinanden. I dette afsnit beskrives, hvordan du kan oprette og pushoverføre data til disse datasæt.
@@ -110,7 +108,7 @@ Når **Analyse af historikdata** er deaktiveret (den er som standard deaktiveret
 ### <a name="using-azure-stream-analytics-to-push-data"></a>Brug Azure Stream Analytics til at pushoverføre data
 Du kan tilføje Power BI som et output i **Azure Stream Analytics** (ASA) og derefter visualisere de datastreams i Power BI-tjenesten i realtid. I dette afsnit beskrives de tekniske detaljer om, hvordan denne proces sker.
 
-Azure Stream Analytics bruger Power BI REST API'er til at oprette dens outputdatastream til Power BI med *Standardtilstand* indstillet til *pushStreaming* (se tidligere afsnit i denne artikel for at få oplysninger om *Standardtilstand*), hvilket resulterer i et datasæt, der kan drage fordel af både **push** og **streaming**. Under oprettelsen af datasættet indstiller Azure Stream Analytics også flaget **retentionPolicy* til *basicFIFO*. Med denne indstilling lagrer den database, der understøtter sine pushdatasæt, 200.000 rækker, og når denne grænse er nået, fjernes rækkerne på en "først ind, først ud"-metode (FIFO).
+Azure Stream Analytics bruger Power BI REST API'er til at oprette dens outputdatastream til Power BI med *Standardtilstand* indstillet til *pushStreaming* (se tidligere afsnit i denne artikel for at få oplysninger om *Standardtilstand*), hvilket resulterer i et datasæt, der kan drage fordel af både **push** og **streaming**. Under oprettelsen af datasættet angiver Azure Stream Analytics også flaget **retentionPolicy** til *basicFIFO*. Med denne indstilling gemmer den database, der understøtter dens pushdatasæt, 200.000 rækker, og når den grænse er nået, fjernes rækkerne efter princippet "først ind-først ud" (FIFO – first-in first-out).
 
 > [!CAUTION]
 > Hvis din Azure Stream Analytics-anmodning resulterer i meget hurtig output til Power BI (f.eks. et eller to pr. sekund), starter Azure Stream Analytics batching af disse output til en enkelt anmodning. Dette kan medføre, at anmodningsstørrelsen overskrider grænsen for streamingfeltet. I det tilfælde kan streamingfelter ikke gengives, som nævnt i tidligere afsnit. I de tilfælde er den bedste fremgangsmåde at reducere hastigheden for dataoutput til Power BI. I stedet for en maksimumværdi pr. sekund kan du f.eks. indstille den til et maksimum over ti sekunder.

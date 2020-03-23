@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 08d222f03991bdf605f8e465ff0152d40d07d815
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 00ea3e70b34ecdaf2c5bd8b8728153bfb26f899b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75761881"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378978"
 ---
 # <a name="create-bookmarks-in-power-bi-desktop-to-share-insights-and-build-stories"></a>Opret bogmærker i Power BI Desktop for at dele indsigt og oprette tekstenheder
 Med *bogmærker* i Power BI Desktop kan du registrere den aktuelt konfigurerede visning af en rapportside, herunder filtreringen af og tilstanden for visualiseringerne. Du kan vende tilbage til denne tilstand senere ved at vælge det gemte bogmærke. 
@@ -198,11 +198,11 @@ Sådan aktiverer du funktionen til eksempelvisning af bogmærker:
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 I denne version af bogmærkefunktioner er der nogle få begrænsninger og overvejelser at tage betragtning.
 
-* De fleste brugerdefinerede visuals fungerer fint sammen med bogmærker. Men hvis du oplever problemer med et bogmærke og en brugerdefineret visual, kan du kontakte forfatteren af denne visual og bede om at få føjet understøttelse af bogmærker til deres visuals. 
+* De fleste Power BI-visuals fungerer fint sammen med bogmærker. Men hvis du oplever problemer med et bogmærke og en brugerdefineret visual, kan du kontakte forfatteren af denne visual og bede om at få føjet understøttelse af bogmærker til deres visuals. 
 * Hvis du tilføjer et visuelt element på en rapportside, når du har oprettet et bogmærke, vises det visuelle element i standardtilstanden. Det vil sige, at hvis du vil tilføje et udsnit på en side, hvor du tidligere har oprettet bogmærker, optræder udsnittet i standardtilstanden.
 * Hvis du flytter rundt på et visuelt element, efter at der er oprettet et bogmærke, afspejles det automatisk i bogmærket. 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om de funktioner, der ligner eller interagerer med bogmærker, i følgende artikler:
 
 * [Brug detaljeadgang i Power BI Desktop](desktop-drillthrough.md)

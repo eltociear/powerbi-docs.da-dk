@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/25/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 99fd17e8491613affbfe78e7cd9a2f268f588975
-ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+ms.openlocfilehash: 0876d5ecd1d58c909242bbc05be213780d3aefdc
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78237977"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488769"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -124,9 +124,9 @@ Når du har oprettet din integreringskode for **Publicer på internettet** og de
 
 Dataopdateringer afspejles automatisk i din integrerede rapport eller det visuelle element. Det kan tage ca. én time, før opdaterede data kan ses fra integreringskoder. Du kan deaktivere automatisk opdatering ved at vælge **Opdater ikke** i tidsplanen for det datasæt, der bruges af rapporten.  
 
-## <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
+## <a name="power-bi-visuals"></a>Power BI-visualiseringer
 
-Brugerdefinerede visuelle elementer, der understøttes i **Publicer på internettet**. Når du bruger **Publicer på internettet**, behøver brugere, som du deler dit publicerede visuelle element med, ikke at aktivere brugerdefinerede visuelle elementer for at få vist rapporten.
+Power BI-visuals understøttes i **Publicer på internettet**. Når du bruger **Publicer på internettet**, behøver brugere, som du deler dit publicerede visual med, ikke at aktivere Power BI-visuals for at få vist rapporten.
 
 ## <a name="limitations"></a>Begrænsninger
 
@@ -144,7 +144,7 @@ Brugerdefinerede visuelle elementer, der understøttes i **Publicer på internet
 - Forespørgselsmodeller for enkeltlogon til data.
 - Fortrolige eller beskyttede oplysninger.
 - [Delte og certificerede datasæt](service-datasets-share.md).
-- Muligheden for automatisk godkendelse, der er tilgængelig med indstillingen **Integrer** fungerer ikke sammen med Power BI JavaScript API. Til Power BI JavaScript API kan du bruge den strategi til integreringen, at [brugeren ejer dataene](developer/embed-sample-for-your-organization.md).
+- Muligheden for automatisk godkendelse, der er tilgængelig med indstillingen **Integrer** fungerer ikke sammen med Power BI JavaScript API. Til Power BI JavaScript API kan du bruge den strategi til integreringen, at [brugeren ejer dataene](developer/embedded/embed-sample-for-your-organization.md).
 
 ## <a name="tenant-setting"></a>Lejerindstillinger
 

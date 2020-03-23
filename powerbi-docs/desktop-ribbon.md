@@ -6,30 +6,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 03/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: df8c84b5b7baf55a32e07e3e48cb02317fdf7875
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: cbaf3244ce8e8aa2755b6b47bf6381c191293306
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527401"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133233"
 ---
-# <a name="use-the-updated-ribbon-in-power-bi-desktop-preview"></a>Brug det opdaterede bånd i Power BI Desktop (eksempelvisning)
+# <a name="use-the-updated-ribbon-in-power-bi-desktop"></a>Brug det opdaterede bånd i Power BI Desktop
 
-Fra og med den opdateringen fra november 2019 tilpasser Power BI Desktop sit bånd, så det matcher udseendet og oplevelsen i andre Microsoft-produkter, f. eks. Microsoft Office.
+Fra og med den opdateringen i marts 2020 tilpasser Power BI Desktop sit bånd, så det matcher udseendet og oplevelsen i andre Microsoft-produkter, f. eks. Microsoft Office. Det opdaterede bånd vises i de månedlige opdateringer fra november 2019 som en prøveversionsfunktion og fra og med opdateringen i marts 2020, er det nye bånd standardoplevelsen.
 
 ![Nyt bånd i Power BI Desktop](media/desktop-ribbon/desktop-ribbon-02.png)
 
-Det opdaterede bånd findes som prøveversion, så vi kan indsamle feedback fra brugere og kunder og sikre, at oplevelsen er fremragende. Vi forventer nogle få måneders prøveversion, feedback og forbedringer, før det opdaterede Power BI Desktop-bånd bliver offentligt tilgængeligt. 
-
 ## <a name="how-to-enable-the-updated-ribbon"></a>Sådan aktiverer du det opdaterede bånd
 
-Det opdaterede bånd i Power BI er en prøveversionsfunktion, som skal aktiveres. Du aktiverer den ved at vælge **Fil > Indstillinger > Indstillinger** og derefter vælge **Funktioner i prøveversionen** i venstre kolonne. I højre rude findes valget **Opdateret bånd**. Markér afkrydsningsfeltet ud for **Opdateret bånd** for at aktivere prøveversionsfunktionen. Du skal genstarte Power BI Desktop, før prøveversionsfunktionen kan træde i kraft.
+Fra og med opdateringen i marts 2020 er det opdaterede bånd som standard slået til. I tidligere versioner af Power BI Desktop (fra og med opdateringen i november 2019) er det opdaterede bånd i Power BI en prøveversionsfunktion og skal aktiveres. Du aktiverer den i de pågældende tidligere opdateringer ved at vælge **Filer > Indstillinger > Indstillinger** og derefter vælge **Funktioner i prøveversionen** i venstre kolonne. I højre rude findes valget **Opdateret bånd**. Markér afkrydsningsfeltet ud for **Opdateret bånd** for at aktivere prøveversionsfunktionen. Du skal genstarte Power BI Desktop, før prøveversionsfunktionen kan træde i kraft.
 
 ![Det opdaterede bånd i Power BI Desktop](media/desktop-ribbon/desktop-ribbon-01.png)
 
+> [!NOTE]
+> I Power BI Desktop-versioner fra og med marts 2020, er det ikke nødvendigt at aktivere det opdaterede bånd, da det nye bånd fra marts 2020 er standardoplevelsen.
 
 ## <a name="features-of-the-new-ribbon"></a>Funktioner i det nye bånd
 

@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 02/14/2020
-ms.openlocfilehash: d688e54607283a6bcb67f895a89ca991f68bc01b
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 8de530871739a18c1afc72cee3e0da5fc70ebb16
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78922476"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379346"
 ---
 # <a name="color-utils"></a>Farvehjælpeprogrammer
 Denne artikel kan hjælpe dig med at installere, importere og bruge hjælpeprogrammer til farver. I denne artikel beskrives det, hvordan brugen af farvehjælpeprogrammer forenkler anvendelsen af temaer og paletter for visualiseringens datapunkter i Power BI-visualiseringer.
@@ -40,7 +40,7 @@ For at bruge interaktivitetsutils skal du importere den påkrævede komponent i 
 import { ColorHelper } from "powerbi-visuals-utils-colorutils";
 ```
 
-Få mere at vide om, hvordan du installerer og bruger ColorUtils i dine brugerdefinerede visualiseringer:
+Få mere at vide om, hvordan du installerer og bruger ColorUtils i dine Power BI-visuals:
 
 * [Usage Guide] Brugervejledningen indeholder en beskrivelse af en offentlig API til pakken. Du kan finde en beskrivelse og et par eksempler til hver offentlige grænseflade for pakken.
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/13/2020
+ms.date: 03/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f13c8f34fbbe927ee6929a0b3e717248aedd63d0
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: fa0686171ee6f9e171e69d60f804d8e141530103
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427547"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207246"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 
@@ -90,7 +90,8 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 * Snowflake
 * Essbase
 * AtScale-kuber
-* BI Connector Data Virtuality LDW (beta)
+* BI Connector 
+* Data Virtuality LDW (beta)
 * Denodo
 * Dremio
 * Exasol
@@ -127,6 +128,7 @@ Kategorien **Azure** indeholder følgende dataforbindelser:
 * Azure SQL Database
 * Azure SQL Data Warehouse
 * Azure Analysis Services-database
+* Azure Database for PostgreSQL
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB
@@ -154,8 +156,8 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (i det lokale miljø)
 * Microsoft Azure Consumption Insights (beta)
-* Azure DevOps (beta)
-* Azure DevOps Server (beta)
+* Azure DevOps (kun forummer)
+* Azure DevOps Server (kun forummer)
 * Salesforce-objekter
 * Salesforce-rapporter
 * Google Analytics
@@ -164,7 +166,6 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Data.World - Get Dataset (Beta)
 * GitHub (beta)
 * LinkedIn Sales Navigator (Beta)
-* MailChimp (beta)
 * Marketo (beta)
 * Mixpanel (beta)
 * Planview Enterprise One – PRM (beta)
@@ -178,6 +179,7 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * tyGraph (beta)
 * Webtrends (beta)
 * Zendesk (beta)
+* Asana (beta)
 * Dynamics 365 Customer Insights (beta)
 * Emigo-datakilde
 * Entersoft Business Suite (Beta)
@@ -205,6 +207,7 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Microsoft Exchange
 * Hadoop-fil (HDFS)
 * Spark
+* Hive LLAP (beta)
 * R-script
 * Python-script
 * ODBC
@@ -220,6 +223,7 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Siteimprove (beta)
 * SurveyMonkey (beta)
 * Tenforce (Smart)List (Beta)
+* TIBCO(R) Data Virtualization (beta)
 * Vena (beta)
 * Workforce Dimensions (beta)
 * Zucchetti HR Infinity (beta)

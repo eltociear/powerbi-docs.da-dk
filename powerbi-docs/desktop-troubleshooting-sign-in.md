@@ -9,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 03/05/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 50cb15e95f051dd6860112243514464dd80a8b1e
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.openlocfilehash: 299329cad78d831a3b77e55107e94a234d6f64b1
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78401185"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133214"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Fejlfinding af logonproblemer i Power BI Desktop
 Der kan være situationer, hvor du forsøger at logge på **Power BI Desktop**, men støder på fejl. Der er to primære årsager til logonproblemer: **Proxy-godkendelsesfejl** og **fejl ved omdirigering til URL-adresser, der ikke er HTTPS**. 
@@ -75,4 +75,37 @@ Hvis du vil indhente sporingsoplysninger i **Power BI Desktop**, skal du udføre
     `C:\Users/<user name>/AppData/Local/Microsoft/Power BI Desktop/Traces`
 
 Der kan være mange sporingsfiler i denne mappe. Sørg for kun at sende de seneste filer til din administrator, så det er lettere at identificere fejlen hurtigt. 
+
+
+## <a name="using-default-system-credentials-for-web-proxy"></a>Brug af systemets standardlegitimationsoplysninger for webproxy
+
+Webanmodninger, der er udstedt af Power BI Desktop, bruger ikke webproxy-legitimationsoplysninger. I netværk, der bruger en proxyserver, er Power BI Desktop muligvis ikke i stand til at oprette webanmodninger. 
+
+Fra og med Power BI Desktop-udgivelsen i marts 2020 kan system- og netværksadministratorer gøre det muligt at bruge systemets standardlegitimationsoplysninger til godkendelse af webproxyer. Administratorer kan oprette en registreringsdatabasepost med navnet **UseDefaultCredentialsForProxy** og angive værdien til én (1) for at aktivere brugen af systemets standardlegitimationsoplysninger til godkendelse af webproxyer.
+
+Posten i registreringsdatabasen kan placeres på en af følgende placeringer:
+
+`[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Microsoft Power BI Desktop]`
+`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop]`
+
+Det er ikke nødvendigt at have posten i registreringsdatabasen på begge placeringer.
+
+![Registreringsdatabasenøgle til brug af systemets standardlegitimationsoplysninger](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in-03.png)
+
+Når posten i registreringsdatabasen er oprettet (det kan være nødvendigt at genstarte), bruges de proxyindstillinger, der er defineret i Internet Explorer, når Power BI Desktop foretager webanmodninger. 
+
+Som det er tilfældet med eventuelle ændringer af proxyindstillinger eller indstillinger for legitimationsoplysninger, er der sikkerhedshensyn at tage ved oprettelse af denne post i registreringsdatabasen, så administratorer skal sikre, at de har konfigureret proxyerne til Internet Explorer korrekt, før de aktiverer denne funktion.         
+
+### <a name="limitations-and-considerations-for-using-default-system-credentials"></a>Begrænsninger og overvejelser ved brug af systemets standardlegitimationsoplysninger
+
+Der er en række sikkerhedshensyn, som administratorer bør overveje, inden de aktiverer denne funktion. 
+
+Følgende anbefalinger skal følges, når denne funktion aktiveres for klienter:
+
+* Brug kun **Forhandling** som godkendelsesskemaet for proxyserveren for at sikre, at det kun er de proxyservere, der har joinforbindelse til Active Directory-netværket, der bruges af klienten. 
+* Brug ikke **NTLM-fallback** på klienter, der bruger denne funktion.
+* Hvis brugerne ikke er på et netværk med en proxy, når denne funktion er aktiveret og konfigureret som anbefalet i dette afsnit, anvendes den proces, hvor det forsøges at kontakte proxyserveren og bruge systemets standardlegitimationsoplysninger, ikke.
+
+
+[Brug af systemets standardlegitimationsoplysninger til webproxy](#using-default-system-credentials-for-web-proxy)
 
