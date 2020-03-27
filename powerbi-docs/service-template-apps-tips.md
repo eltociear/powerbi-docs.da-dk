@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 03/24/2020
 ms.author: tebercov
-ms.openlocfilehash: dcb7ba5dabbbb0387b92908f7e299d61f2145d44
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 92d5a5177b0fa03af583e9e89ce574c0197f3f7a
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79376586"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273219"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tip til udarbejdelse af skabelonapps i Power BI
 
@@ -150,7 +150,7 @@ Hvis du vil omdirigere en bruger til appens downloadlink i Power BI, skal du se 
 
 | Funktion | Kendt begrænsning |
 |---------|---------|
-|Indhold:  Datasæt   | Nøjagtigt ét datasæt skal være til stede. Der tillades kun datasæt, som er udarbejdet i Power BI Desktop (.pbix-filer). <br>Understøttes ikke: Datasæt fra andre skabelonprogrammer, datasæt på tværs af arbejdsområder, sideinddelte rapporter (.rdl-filer), Excel-projektmapper |
+|Indhold:  Datasæt   | Nøjagtigt ét datasæt skal være til stede. Der tillades kun datasæt, som er udarbejdet i Power BI Desktop (.pbix-filer). <br>Understøttes ikke: Datasæt fra andre skabelonprogrammer, datasæt på tværs af arbejdsområder, sideinddelte rapporter (.rdl-filer), Excel-projektmapper, forbedrede metadata for datasæt |
 |Indhold: Dashboards | Felter i realtid tillades ikke (med andre ord, understøttes push- eller streamingdatasæt ikke) |
 |Indhold: Dataflow | Understøttes ikke: Dataflow |
 |Indhold fra filer | Der tillades kun PBIX-filer. <br>Understøttes ikke: .rdl-filer (sideinddelte rapporter), Excel-projektmapper   |

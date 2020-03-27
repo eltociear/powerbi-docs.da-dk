@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/13/2020
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5693e75ff186c3edb95eeaa92d26823e0e0d3a60
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: d5b57b782af52542ed944b5e5e7504a974ee9d81
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76039056"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273334"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Kør Python-scripts i Power BI Desktop
 
@@ -109,6 +109,14 @@ Sådan kører du dit Python-script i Power BI Desktop:
 Hvis Python ikke er installeret eller identificeret, vises der en advarsel. Du kan også få vist en advarsel, hvis du har flere installationer på den lokale maskine. Vend tilbage, og gennemgå de forrige sektioner Installer Python og Aktivér Python-scripting.
 
 ![Advarsel om, at Python ikke er installeret](media/desktop-python-scripts/python-scripts-3.png)
+
+#### <a name="using-custom-python-distributions"></a>Brug af brugerdefinerede Python-distributioner
+
+Power BI udfører scripts direkte ved hjælp af den eksekverbare fil python. exe fra en brugerangivet mappe (angivet via siden Indstillinger). Der kan opstå et problem, hvor kørslen mislykkes, i distributioner, der kræver et ekstra trin ved klargøring af miljøet (f. eks. Conda).
+
+Det anbefales, at du bruger den officielle Python distribution fra https://www.python.org/ for at undgå relaterede problemer.
+
+En mulig løsning er, at du starter Power BI Desktop fra din brugerdefinerede prompt til Python-miljøet.
 
 ### <a name="refresh"></a>Opdater
 

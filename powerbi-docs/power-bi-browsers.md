@@ -6,26 +6,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/27/2020
+ms.date: 03/25/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: a7112ff766b3b32b374b203d9f2206cabbd7fa2e
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: abe556231978d762dab652263aa2c55cf3c8a955
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79115040"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273265"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Understøttede browsere til Power BI
-Power BI kører i følgende browsere:
+
+Power BI er designet til at kunne bruges sammen med en hvilken som helst af disse understøttede browsere, men ydeevnen varierer afhængigt af dit valg af browser. Især hvis du bruger Internet Explorer, kan du opleve en dårlig ydeevne. Det anbefales på det kraftigste, at du skifter fra Internet Explorer til en moderne browser, herunder Microsoft Edge, for at opnå en bedre ydeevne. Vi forventer, at Microsoft Edge-ydeevnen bliver stadig bedre med Edge Chromium. Hvis du stadig oplever en uacceptabel ydeevne, kan du teste andre understøttede moderne browsere for at se, om de fungerer bedre til din Power BI-løsning.
+
+Power BI understøtter disse browsere på alle platforme, hvor de er tilgængelige.
 
 - Microsoft Edge
 - Internet Explorer 11. Visse avancerede funktioner, f.eks. visning af afstamning, understøttes ikke i Internet Explorer. Se [Dataafstamning (prøveversion)](collaborate-share/service-data-lineage.md) for at få flere oplysninger.
 - Seneste desktopversion af Chrome
 - Seneste version af Safari Mac
 - Seneste desktopversion af Firefox. Firefox kan ændre de skrifttyper, der bruges i Power BI 
-
-Disse browsere understøttes på alle platforme, hvor de er tilgængelige.
 
 > [!NOTE]
 > Power BI kører ikke i nogen browsere i iOS10 eller tidligere versioner.
@@ -34,4 +35,3 @@ Disse browsere understøttes på alle platforme, hvor de er tilgængelige.
 * [Hvad er Power BI?](power-bi-overview.md)
 * Prøv at spørge [Power BI-community'et](https://community.powerbi.com/)
 * Har du stadig problemer? Gå til [supportsiden for Power BI](https://powerbi.microsoft.com/support/)
-

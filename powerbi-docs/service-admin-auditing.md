@@ -10,12 +10,12 @@ ms.date: 01/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 6cf298f6fd4d6d99163b2c0f5674b40cfc14bbfc
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 1102022edca3afad2a658facdf43da7b8bca547d
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75657184"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113778"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spor brugeraktiviteter i Power BI
 
@@ -49,13 +49,13 @@ Du kan bruge et administrativt program, der er baseret på REST API'er til Power
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?startDateTime='2019-08-31T00:00:00'&endDateTime='2019-08-31T23:59:59'
 ```
 
-Hvis antallet af poster er stort, returnerer API'en **ActivityEvents** kun ca. 5.000 til 10.000 poster og et fortsættelsestoken. Du skal derefter kalde API'en **ActivityEvents** igen med fortsættelsestokenet for at hente den næste batch af poster, indtil du har hentet alle poster og ikke længere modtager et fortsættelsestoken. I følgende eksempel kan du se, hvordan du bruger fortsættelsestokenet.
+Hvis antallet af poster er stort, returnerer API'en **ActivityEvents** kun ca. 5.000 til 10.000 poster og et fortsættelsestoken. Kald derefter API'en **ActivityEvents** igen med fortsættelsestokenet for at hente den næste batch af poster, indtil du har hentet alle poster og ikke længere modtager et fortsættelsestoken. I følgende eksempel kan du se, hvordan du bruger fortsættelsestokenet.
 
 ```
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?continuationToken='%2BRID%3ARthsAIwfWGcVAAAAAAAAAA%3D%3D%23RT%3A4%23TRC%3A20%23FPC%3AARUAAAAAAAAAFwAAAAAAAAA%3D'
 ```
 
-Hvis resultaterne indeholder et fortsættelsestoken, skal du sørge for at kalde API'en igen, uanset antallet af returnerede poster, med det pågældende token for at hente de resterende data, indtil der ikke længere returneres et fortsættelsestoken. Det kan ske, at et kald også returnerer et fortsættelsestoken uden nogen hændelsesposter. Følgende eksempel viser, hvordan du kan udføre en løkke med et fortsættelsestoken, der returneres i svaret:
+Hvis resultaterne indeholder et fortsættelsestoken, skal du sørge for at kalde API'en igen, uanset antallet af returnerede poster, ved hjælp af det pågældende token for at hente de resterende data, indtil der ikke længere returneres et fortsættelsestoken. Det kan ske, at et kald også returnerer et fortsættelsestoken uden nogen hændelsesposter. Følgende eksempel viser, hvordan du kan udføre en løkke med et fortsættelsestoken, der returneres i svaret:
 
 ```
 while(response.ContinuationToken != null)
@@ -68,12 +68,15 @@ while(response.ContinuationToken != null)
 }
 completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 ```
-
+> [!NOTE]
+> Det kan tage op til 24 timer, før alle begivenheder vises, selvom alle data normalt er tilgængelige meget hurtigere.
+>
+>
 ### <a name="get-powerbiactivityevent-cmdlet"></a>Cmdlet'en Get-PowerBIActivityEvent
 
-Det er ligetil at downloade aktivitetshændelser ved hjælp af administrations-cmdlet'er i Power BI til PowerShell, der indeholder cmdlet'en **Get-PowerBIActivityEvent**, som automatisk håndterer fortsættelsestokenet for dig. Cmdlet'en **Get-PowerBIActivityEvent** bruger en parameter af typen StartDateTime og EndDateTime med de samme begrænsninger som REST API'en **ActivityEvents**. Det vil sige, at startdato og slutdato skal referere til den samme datoværdi, da du kun kan hente aktivitetsdataene for én dag ad gangen.
+Download aktivitetshændelser ved hjælp af Power BI Management-cmdlet'er til PowerShell. Cmdlet'en**Get-PowerBIActivityEvent** håndterer automatisk fortsættelsestokenet for dig. Cmdlet'en **Get-PowerBIActivityEvent** bruger en parameter af typen StartDateTime og EndDateTime med de samme begrænsninger som REST API'en **ActivityEvents**. Det vil sige, at startdato og slutdato skal referere til den samme datoværdi, da du kun kan hente aktivitetsdataene for én dag ad gangen.
 
-Følgende script viser, hvordan du downloader alle Power BI-aktiviteter. Kommandoen konverterer resultaterne fra JSON til .NET-objekter, så der opnås direkte adgang til separate aktivitetsegenskaber.
+Følgende script viser, hvordan du downloader alle Power BI-aktiviteter. Kommandoen konverterer resultaterne fra JSON til .NET-objekter, så der opnås direkte adgang til separate aktivitetsegenskaber. Disse eksempler viser det mindste mulige og det største mulige tidsstempel for en dag for at sikre, at ingen hændelser springes over.
 
 ```powershell
 Login-PowerBI
@@ -111,7 +114,7 @@ Du skal opfylde disse krav for at få adgang til overvågningslogfiler:
 
 - Du skal enten være global administrator eller være tildelt rollen Overvågningslogge eller Skrivebeskyttede overvågningslogge i Exchange Online for at få adgang til overvågningsloggen. Disse roller er som standard tildelt rollegrupperne Administration af overholdelse og Organisationsstyring på siden **Tilladelser** i Exchange Administration.
 
-    Hvis du vil give konti, der ikke er administratorer, adgang til overvågningsloggene, skal du tilføje brugeren som medlem af en af disse rollegrupper. Hvis du vil gøre det på en anden måde, kan du oprette en brugerdefineret rollegruppe i Exchange Administration, tildele rollen Overvågningslogge eller Skrivebeskyttede overvågningslogge til denne gruppe og derefter føje den konto, der ikke er administrator, til den nye rollegruppe. Du kan finde flere oplysninger under [Administrer rollegrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
+    Hvis du vil give konti, der ikke er administratorer, adgang til overvågningslogfilerne, skal du tilføje brugeren som medlem af en af disse rollegrupper. Hvis du vil gøre det på en anden måde, kan du oprette en brugerdefineret rollegruppe i Exchange Administration, tildele rollen Overvågningslogge eller Skrivebeskyttede overvågningslogge til denne gruppe og derefter føje den konto, der ikke er administrator, til den nye rollegruppe. Du kan finde flere oplysninger under [Administrer rollegrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
 
     Hvis du ikke kan få adgang til Exchange Administration via Microsoft 365 Administration, skal du gå til https://outlook.office365.com/ecp og logge på ved hjælp af dine legitimationsoplysninger.
 
@@ -258,7 +261,7 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 | Power BI-mappe er oprettet                           | CreateFolder                                |                                          |
 | Oprettet Power BI-gateway                          | CreateGateway                               |                                          |
 | Power BI-gruppe er oprettet                            | CreateGroup                                 |                                          |
-| Power BI-rapport er oprettet                           | CreateReport                                |                                          |
+| Power BI-rapport er oprettet                           | CreateReport <sup>1</sup>                                |                                          |
 | Dataflowet er overført til ekstern lagerkonto     | DataflowMigratedToExternalStorageAccount    | Anvendes ikke i øjeblikket                       |
 | Dataflowtilladelser er tilføjet                        | DataflowPermissionsAdded                    | Anvendes ikke i øjeblikket                       |
 | Dataflowtilladelser er fjernet                      | DataflowPermissionsRemoved                  | Anvendes ikke i øjeblikket                       |
@@ -294,7 +297,7 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 | Power BI-kommentar er postet                           | PostComment                                 |                                          |
 | Power BI-dashboard er udskrevet                        | PrintDashboard                              |                                          |
 | Power BI-rapportside er udskrevet                      | PrintReport                                 |                                          |
-| Power BI-rapport er publiceret på internettet                  | PublishToWebReport                          |                                          |
+| Power BI-rapport er publiceret på internettet                  | PublishToWebReport <sup>2</sup>                         |                                          |
 | Power BI-dataflowhemmelighed er modtaget fra Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Datakilde fjernet fra Power BI-gateway         | RemoveDatasourceFromGateway                 |                                          |
 | Power BI-gruppemedlemmer er fjernet                    | DeleteGroupMembers                          |                                          |
@@ -333,6 +336,10 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 | Power BI-felt er vist                              | ViewTile                                    |                                          |
 | Power BI-forbrugsdata er vist                     | ViewUsageMetrics                            |                                          |
 |                                                   |                                             |                                          |
+
+<sup>1</sup> Publicering fra Power BI Desktop til tjenesten er en CreateReport-hændelse i tjenesten.
+
+<sup>2</sup> PublishtoWebReport henviser til funktionen [Publicer på internettet](service-publish-to-web.md).
 
 ## <a name="next-steps"></a>Næste trin
 

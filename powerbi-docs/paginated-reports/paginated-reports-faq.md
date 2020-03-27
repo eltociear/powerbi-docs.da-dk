@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 02/28/2020
-ms.openlocfilehash: d9d97715853ab87ac507ff41117ab176b8620e2e
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.date: 03/18/2020
+ms.openlocfilehash: 885c6b98e66a6ce2fd8069cc86bf50440cb94b4b
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79205245"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113598"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål 
 
@@ -68,13 +68,17 @@ Du kan uploade sideinddelte rapporter til Mit arbejdsområde uden en Pro-licens,
 
 Du får vist en fejlmeddelelse, og du kan ikke få vist rapporten, før arbejdsbelastningen er slået til igen. Du kan stadig slette rapporten fra arbejdsområdet.
 
-### <a name="what-is-the-default-memory-for-each-of-the-premium-skus-supported-for-paginated-reports"></a>Hvad er standardhukommelsen for hver af de Premium SKU'er, der understøttes for sideinddelte rapporter?
+### <a name="what-is-the-default-memory-for-each-of-the-premium-skus-that-support-paginated-reports"></a>Hvad er standardhukommelsen for hver af de Premium SKU'er, der understøtter sideinddelte rapporter?
 
 Standardhukommelsen for hver Premium SKU for sideinddelte rapporter er:
 
 - **P1/A4**: 20 % som standard, minimum 10 %
 - **P2/A5**: 20 % som standard, minimum 5 %
 - **P3/A6**: 20 % som standard, minimum 2,5 %
+
+Power BI-lejeradministratorer kan ændre standardprocenten for maksimal hukommelse i administrationsportalen. Se arbejdsbelastningsafsnittet **Sideinddelte rapporter** under **Power BI Premium** under fanen **Kapacitetsindstillinger**.
+
+:::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Sideinddelte rapporter under fanen Kapacitetsindstillinger":::
 
 ## <a name="general"></a>Generelt
 

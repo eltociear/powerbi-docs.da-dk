@@ -5,15 +5,15 @@ author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 622d01632b9c9cbe6203090b3ac2149d4bc94474
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 0b420a41474349f86be682987ff9f8144debab11
+ms.sourcegitcommit: 075a0ade4134d28f578fda78996595e8cd9f3555
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207867"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80147371"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicer en app i Power BI
 
@@ -28,6 +28,7 @@ Forretningsbrugere kan få dine apps på flere måder:
 - De kan finde og installere din app fra Microsoft AppSource.
 - Du kan sende dem et direkte link.
 - Du kan automatisk installere dem i dine kollegaers Power BI-konti, hvis Power BI-administratoren giver dig tilladelse til det.
+- Power BI sender ingen mails til interne brugere, når du distribuerer eller opdaterer en app. Hvis du distribuerer den til eksterne brugere, modtager disse brugere en mail med et direkte link. 
 
 Du kan oprette appen med tilpasset, indbygget navigation, så brugerne nemt kan finde rundt i dit indhold. De kan ikke ændre indholdet af appen. De kan interagere med det enten i Power BI-tjenesten eller en af mobilappsene – og selv filtrere, markere og sortere data. De får automatisk opdateringer, og du kan styre, hvor ofte dataene opdateres. Du kan også give dem tilladelsen Opret for at oprette forbindelse til de underliggende datasæt og oprette kopier af rapporterne i appen. Læs mere om [tilladelsen Opret](service-datasets-build-permissions.md).
 

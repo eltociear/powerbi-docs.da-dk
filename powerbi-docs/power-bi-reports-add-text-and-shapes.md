@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b90bfd9482e28faa8d9dfb0d089ca07656663b53
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 6e5281b03ecf9de5414b334d4f88658fb9741d3f
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762456"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273196"
 ---
 # <a name="add-text-boxes-and-shapes-to-power-bi-reports"></a>Tilføj tekstfelter og figurer i Power BI-rapporter
 Du kan føje tekstfelter og figurer til rapporter ved hjælp af Power BI-tjenesten og Power BI Desktop. I begge tilfælde skal du have redigeringstilladelser til rapporten. Hvis en rapport er blevet delt med dig i Power BI-tjenesten, har du ikke redigeringstilladelser. 
@@ -63,8 +63,10 @@ Se med, når Will bruger Power BI Desktop til at [føje statiske billeder til en
    > 
 
 ## <a name="next-steps"></a>Næste trin
-[Føj et hyperlink til et tekstfelt](service-add-hyperlink-to-text-box.md)
 
-[Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
+Du vil måske også være interesseret i følgende artikler:
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+* [Føj et hyperlink til et tekstfelt](service-add-hyperlink-to-text-box.md)
+* [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
+* [Tip til forbedring af analyse med former, billeder og ikoner i Power BI-rapporter](guidance/report-tips-shapes-images-icons.md)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -10,12 +10,12 @@ ms.date: 03/16/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 97aad9a72cba6fe195208902e2a3d986b3225a3d
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 48f26229ea77bbe26ee07d46925d41cadcce7c12
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488700"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114432"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -233,7 +233,12 @@ Brugere kan se forskellige indstillinger på brugergrænsefladen afhængigt af i
 
 ### <a name="export-data"></a>Eksportér data
 
-Brugere i virksomheden kan eksportere data fra et felt eller en visualisering. Få mere at vide om [eksport af data fra et felt eller en visualisering](visuals/power-bi-visualization-export-data.md).
+Brugere i virksomheden kan eksportere data fra et felt eller en visualisering. Dette styrer, Analysér i Excel, eksport til. csv, overførsler af datasæt (. pbix) og funktionerne i Power BI Service Live Connect. Få mere at vide om [eksport af data fra et felt eller en visualisering](visuals/power-bi-visualization-export-data.md).
+
+>[!NOTE]
+> Før introduktionen af indstillingen Eksportér til Excel styrede denne indstilling også eksport af data til Excel-filer. Du finder flere oplysninger i [noten under Eksportér til Excel](#export-to-excel).
+
+![Indstillingen Eksportér data](media/service-admin-portal/powerbi-admin-portal-export-data-setting.png)
 
 På følgende billede ses indstillingen for at eksportere data fra et felt.
 
@@ -241,6 +246,15 @@ På følgende billede ses indstillingen for at eksportere data fra et felt.
 
 > [!NOTE]
 > Hvis **Eksportér data** deaktiveres, kan brugere ikke anvende funktionen [Analysér i Excel](service-analyze-in-excel.md) og heller ikke bruge Power BI-tjenestens direkte forbindelse.
+
+### <a name="export-to-excel"></a>Eksportér til Excel
+
+Brugere i organisationen kan eksportere dataene fra en visualisering til en Excel-fil.
+
+![Indstillingen Eksportér til Excel](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
+
+>[!IMPORTANT]
+> Før introduktionen af indstillingen Eksportér til Excel styrede indstillingen Eksportér data eksport til en Excel-fil. I de lejere, der fandtes før introduktionen af indstillingen Eksportér to Excel, kan lejeradministratorerne derfor se, at der er *Ikke-anvendte ændringer*, første gang de ser indstillingen Eksportér til Excel. De skal anvende disse ændringer, før den nye indstilling træder i kraft. I modsat fald styres eksporten til en Excel-fil fortsat af indstillingen Eksportér data.
 
 ### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Eksportér rapporter som PowerPoint-præsentationer eller PDF-dokumenter
 

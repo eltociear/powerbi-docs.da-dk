@@ -9,12 +9,12 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 08/29/2019
-ms.openlocfilehash: b8301ca17559b81d4db132fbeaa0955ce68a4c6e
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 7a5ec7ef1f66a4a5b6ec80c80e9fd37e19bb2813
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78922522"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113548"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Videregiv en rapportparameter i en URL-adresse til en sideinddelt rapport i Power BI 
 
@@ -64,8 +64,8 @@ Hvis du vil videregive en boolesk værdi, skal du bruge 0 for falsk og 1 for san
 
 > [!NOTE]
 > Hvis din rapport indeholder en rapportparameter, som har en standardværdi, og værdien for egenskaben**Spørg** er **falsk** (dvs. egenskaben **Spørg bruger** ikke er valgt i Rapportstyring), kan du ikke videregive en værdi for den pågældende rapportparameter i en URL-adresse. Det giver administratorer mulighed for at forhindre, at slutbrugerne kan tilføje eller ændre værdierne for visse rapportparametre.
-
-> Power BI understøtter ikke en forespørgselsstreng på mere end 900 tegn.  Denne værdi kan overskrides, hvis du bruger URL-parametre til at få vist din sideinddelte rapport.  Det er især tilfældet, hvis du bruger parametre med flere værdier.
+> 
+> Power BI understøtter ikke en forespørgselsstreng på mere end 2.000 tegn.  Denne værdi kan overskrides, hvis du bruger URL-parametre til at få vist din sideinddelte rapport.  Det er især tilfældet, hvis du bruger parametre med flere værdier.
 
 ## <a name="additional-examples"></a>Yderligere eksempler 
 

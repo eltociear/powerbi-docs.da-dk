@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 03/25/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: b20820490ec88d34d4ee75c135cc54277e473545
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: 79f3fa8c9c175b698cb91784f95d3bb9d8ca0cc5
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77076628"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273242"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
@@ -193,11 +193,17 @@ Denne uoverensstemmelse er nyttig, når du vil se forskellige resultater: filtre
 Der er et par ting, du skal være opmærksom på, når du bruger parametre for forespørgselsstrengen.
 
 * Når du bruger operatoren *in*, skal værdierne til højre for *in* være en kommasepareret liste angivet i parenteser.    
-* Power BI-rapportserver understøtter også muligheden for at angive yderligere filtre ved hjælp af URL-parameteren "filter".  I Power BI-rapportserver kan URL-adressen f.eks. se ud som følger: https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
-* Filtrering af forespørgselsstrengen fungerer ikke sammen med [Publicer på internettet](service-publish-to-web.md) eller [Eksportér til PDF](consumer/end-user-pdf.md).
-* [Integrer med rapportwebdelen i SharePoint Online](service-embed-report-spo.md) understøtter ikke URL-adressefiltre.
-* Datatypen long er (2^53-1) på grund af begrænsninger i Javascript.
+* Power BI-rapportserver understøtter også muligheden for at angive yderligere filtre ved hjælp af URL-parameteren "filter". Her er et eksempel på, hvordan URL-adressen kan se ud i Power BI-rapportserver: `https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'`
 * URL-adresse-filtre for rapporter har en grænse på 10-udtryk (10 filtre, der er forbundet med OG).
+* Datatypen long er (2^53-1) på grund af begrænsninger i JavaScript.
+
+URL-filtre understøttes i nogle integrationsscenarier og ikke i andre.
+
+- [Integration af en rapport i en sikker portal eller et sikkert websted](service-embed-secure.md) understøttes.
+- URL-filtre understøttes i Power BI Embedded. Se [Avancerede filterfunktioner for URL-adresser i Power BI Embedded](https://azure.microsoft.com/updates/power-bi-embedded-advanced-url-filtering-capabilities) for at få flere oplysninger.
+- Filtrering af forespørgselsstrengen fungerer ikke sammen med [Publicer på internettet](service-publish-to-web.md) eller [Eksportér til PDF](consumer/end-user-pdf.md).
+- [Integrer med rapportwebdelen i SharePoint Online](service-embed-report-spo.md) understøtter ikke URL-adressefiltre.
+- Teams tillader ikke angivelse af en URL-adresse.
 
 ## <a name="next-steps"></a>Næste trin
 

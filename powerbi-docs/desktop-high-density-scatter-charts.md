@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ae33d7aac0eb42e925e78b8b76a9d7106cdf9d20
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: b603ced5775d72c09419ea5e18b2eb03b2680e95
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73867433"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273357"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Udsnit med høj tæthed i Power BI-punktdiagrammer
 Fra og med udgivelsen af **Power BI Desktop** fra september 2017 og opdateringerne til **Power BI-tjenesten** findes der en ny udsnitsalgoritme, som forbedrer den måde, punktdiagrammer viser data med høj tæthed på.
@@ -85,7 +85,8 @@ Algoritmen Udsnit med høj tæthed er en vigtig forbedring af Power BI, men der 
 * Algoritmen for **Stikprøvetagning med høj tæthed** fungerer kun med direkte forbindelser til modeller, der er baseret på Power BI-tjenesten, importerede modeller eller DirectQuery.
 
 ## <a name="next-steps"></a>Næste trin
-Du kan finde flere oplysninger om udsnit med høj tæthed i andre diagrammer i følgende artikel.
+
+Du kan finde flere oplysninger om udsnit med høj tæthed i følgende artikler:
 
 * [Linjeudsnit med høj tæthed i Power BI](desktop-high-density-sampling.md)
-
+* [Tip til sortering og distribution af dataafbildninger i Power BI-rapporter](guidance/report-tips-sort-distribute-data-plots.md)
