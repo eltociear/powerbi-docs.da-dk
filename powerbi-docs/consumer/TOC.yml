@@ -102,12 +102,12 @@
               href: end-user-favorite.md
             - name: 'Udskriv et dashboard, udskriv et dashboard-felt, udskriv en rapportside'
               href: end-user-print.md
+            - name: 'Vis indhold, der er delt med mig'
+              href: end-user-shared-with-me.md
             - name: Vis relateret indhold
               href: end-user-related.md
             - name: Vis seneste indhold
               href: end-user-recent.md
-            - name: Vis indhold i objektbeholderen Delt med mig
-              href: end-user-shared-with-me.md
             - name: Abonner på en rapport eller et dashboard
               href: end-user-subscribe.md
             - name: Søg og sortér indhold i Power BI

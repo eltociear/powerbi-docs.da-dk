@@ -100,7 +100,7 @@
               href: ../service-encryption-byok.md
             - name: Genstart en Premium-kapacitet
               href: ../service-admin-premium-restart.md
-            - name: Opret forbindelse til datasæt med klientprogrammer og -værktøjer
+            - name: Netværksmulighed for datasæt med XMLA-slutpunktet (prøveversion)
               href: ../service-premium-connect-tools.md
     - name: Reference
       items:
