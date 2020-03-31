@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 50c8416573b995c34d62129d11926e70d9d4242d
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 88c32a3d32a8d6c6653fa9badcf728bad0ee2c54
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381393"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404567"
 ---
 # <a name="power-bi-security-whitepaper"></a>Whitepaper om sikkerhed i Power BI
 
@@ -135,7 +135,7 @@ Godkendelse af brugeren til Power BI-tjenesten består af en række anmodninger,
 
 Sekvensen til godkendelse af brugeren til Power BI-tjenesten sker, som beskrevet under følgende trin og vist på følgende billeder.
 
-1. En bruger starter en forbindelse til Power BI-tjenesten i en browser enten ved at skrive Power BI-adressen i adresselinjen (f.eks. https://app.powerbi.com) eller ved at vælge _Log på_ på Power BI-landingssiden (https://powerbi.microsoft.com). Forbindelsen oprettes ved hjælp af TLS 1.2 og HTTPS, og HTTPS bruges til al efterfølgende kommunikation mellem browseren og Power BI-tjenesten. Anmodningen sendes til **Azure Traffic Manager**.
+1. En bruger starter en forbindelse til Power BI-tjeneste via en browser enten ved at skrive Power BI adressen på adresselinjen (f. eks. `https://app.powerbi.com`) eller ved at vælge _Log på_ fra landingssiden Power BI (https://powerbi.microsoft.com). Forbindelsen oprettes ved hjælp af TLS 1.2 og HTTPS, og HTTPS bruges til al efterfølgende kommunikation mellem browseren og Power BI-tjenesten. Anmodningen sendes til **Azure Traffic Manager**.
 
 2. **Azure Traffic Manager** kontrollerer brugerens DNS-post for at finde det nærmeste datacenter, hvor Power BI er udrullet, og reagerer på DNS-posten med IP-adressen på WFE-klyngen, som brugeren skal sendes til.
 
@@ -480,7 +480,7 @@ Du kan finde flere oplysninger om Power BI i følgende ressourcer.
 - [Introduktion til Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
 - [REST API til Power BI – oversigt](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Reference til Power BI-API](https://msdn.microsoft.com/library/mt147898.aspx)
-- [Datagateway i lokalt miljø](service-gateway-onprem.md)
+- [Datagateway i det lokale miljø](service-gateway-onprem.md)
 - [Nationale Power BI-cloudmiljøer](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Brug Kerberos til SSO fra Power BI til datakilder i det lokale miljø](service-gateway-sso-overview.md)
