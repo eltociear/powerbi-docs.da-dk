@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 815566f715bb4544fc4b002ea2c31e21e2684792
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 281d5b616b58fce4326e6d719502e443c249372a
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760813"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403184"
 ---
 # <a name="connect-to-project-online-data-through-power-bi-desktop"></a>Opret forbindelse til Project Online-data via Power BI Desktop
 Du kan oprette forbindelse til data i Project Online via Power BI Desktop.
@@ -31,7 +31,7 @@ Du kan oprette forbindelse til data i Project Online via Power BI Desktop.
    
    Hvis adressen til dit Project Web App-websted ligner *https://\<tenantname\>.sharepoint.com/sites/pwa*, skal den adresse, du angiver for dit OData-feed, være *https://\<tenantname\>.sharepoint.com/sites/pwa/\_api/Projectdata*.
    
-   I dette eksempel bruger vi https://contoso.sharepoint.com/sites/pwa/default.aspx
+   I dette eksempel bruger vi `https://contoso.sharepoint.com/sites/pwa/default.aspx`
 5. Power BI Desktop beder dig om at blive godkendt med din Office 365-konto. Vælg Organisationskonto, og angiv derefter dine legitimationsoplysninger.
    
    ![](media/desktop-project-online-connect-to-data/image.png)

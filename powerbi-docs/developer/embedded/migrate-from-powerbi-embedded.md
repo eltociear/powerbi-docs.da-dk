@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 20546e0c9251f39ca49f6d713d5db48401937505
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: a8ce4209610e229ae1da7773bd7cb10bd522f72c
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114399"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404041"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded
 
@@ -126,13 +126,13 @@ Cachelagrede datasæt, der refererer til PBIX-filer, og som havde importerede da
 
 **Proces**
 
-1. Udfør et kald til GET https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources og gem forbindelsesstreng er modtaget.
+1. Udfør et kald til GET `https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources` og gem forbindelsesstreng er modtaget.
 2. Udfør et kald til API'et Download PBIX fra PaaS-arbejdsområdet.
 3. Gem PBIX.
 4. Udfør et kald til Import PBIX til SaaS-arbejdsområdet.
-5. Opdater forbindelsesstreng ved at udføre et kald – POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
-6. Hent identifikatorer for GW og datakilde ved at udføre et kald – GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
-7. Opdater brugerens legitimationsoplysninger ved at udføre et kald – PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
+5. Opdater forbindelsesstreng ved at udføre et kald – POST  `https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections`
+6. Hent identifikatorer for GW og datakilde ved at udføre et kald – GET `https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources`
+7. Opdater brugerens legitimationsoplysninger ved at udføre et kald – PATCH `https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}`
 
 #### <a name="old-dataset--reports"></a>Gamle datasæt og rapporter
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 80b97757ab0ab8fefa23f4481abb2d8bc02de78d
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 66a1253233ab623ff2332a7b112575a7509c0e3c
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79492485"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403698"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sikkerhed på rækkeniveau med Power BI Embedded
 
@@ -217,7 +217,7 @@ Her er trinnene, så du kan begynde at konfigurere funktionen CustomData() med d
 
 7. Brug Power BI-API'er til at anvende funktionen CustomData i dit program.  Når et token genereres med funktionen CustomData, skal du have et brugernavn. Brugernavnet skal være lig med UPN for masterbrugeren. Masterbrugeren skal være medlem af den eller de roller, du har oprettet. Hvis der ikke er angivet nogen roller, bruges alle de roller, masterbrugeren er medlem af, til evaluering af sikkerhed på rækkeniveau.
 
-    Når du arbejder med en [tjenesteprincipal](embed-service-principal.md), skal du også udføre trinnene ovenfor i stedet for at bruge en masterkonto. Når du genererer et integreret token, skal du bruge den [tjenesteprincipalens objekt-id](embed-service-principal.md#how-to-get-the-service-principal-object-id) som brugernavn.
+    Når du arbejder med en [tjenesteprincipal](embed-service-principal.md), skal du også udføre trinnene ovenfor i stedet for at bruge en masterkonto. Når du genererer et integreret token, skal du bruge den [tjenesteprincipalens objekt-id](embed-service-principal.md) som brugernavn.
 
     > [!Note]
     > Når du er klar til at udrulle dit program til produktion, må feltet eller indstillingen for masterbrugerkontoen ikke være synlig for slutbrugeren.

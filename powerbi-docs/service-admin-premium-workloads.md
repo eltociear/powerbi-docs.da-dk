@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/14/2020
+ms.date: 03/24/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: de988442edf4c60841bac757bb67ea5ed5038b25
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: d468ab70f47edcd5487b548596f4aea4080cd994
+ms.sourcegitcommit: 8267a7383d6506dae42f87e4f4a2362b875b2911
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207959"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80329638"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurer arbejdsbelastninger i en Premium-kapacitet
 
@@ -28,7 +28,7 @@ Arbejdsbelastninger for forespørgsler optimeres til og begrænses af de ressour
 
 |                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| AI | I/T | I/T | 20 % som standard, minimum 20 % | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 % |
+| AI | 40 % som standard, minimum 40 % | 20 % som standard, minimum 20 % | 20 % som standard, minimum 8 % | 20 % som standard, minimum 4 % | 20 % som standard, minimum 2 % |
 | Dataflow | I/T |20 % som standard, minimum 12 %  | 20 % som standard, minimum 5 %  | 20 % som standard, minimum 3 % | 20 % som standard, minimum 2 %  |
 | Sideinddelte rapporter | I/T |I/T | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 % | 20 % som standard, minimum 2,5 % |
 | | | | | | |
@@ -37,7 +37,7 @@ Arbejdsbelastninger for forespørgsler optimeres til og begrænses af de ressour
 
 |                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
 |-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| AI | I/T                      | 20 % som standard, minimum 100 %                     | 20 % som standard, minimum 50 %                     | 20 % som standard, minimum 20 % | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 % |
+| AI | I/T  | 40 % som standard, minimum 40 %  | 20 % som standard, minimum 20 % | 20 % som standard, minimum 8 % | 20 % som standard, minimum 4 % | 20 % som standard, minimum 2 % |
 | Dataflow         | 40 % som standard, minimum 40 % | 24 % som standard, minimum 24 % | 20 % som standard, minimum 12 % | 20 % som standard, minimum 5 %  | 20 % som standard, minimum 3 % | 20 % som standard, minimum 2 %   |
 | Sideinddelte rapporter | I/T                      | I/T                      | I/T                     | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 % | 20 % som standard, minimum 2,5 % |
 | | | | | | |

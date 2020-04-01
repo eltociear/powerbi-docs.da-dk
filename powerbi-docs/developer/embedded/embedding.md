@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: 779ca338a211e569c0dd7f529208cf7bfb1bcf7c
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: ade60bf8b786f70002f0af0672acf951348fee49
+ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79492324"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80487819"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Integreret analyse med Power BI
 
@@ -34,7 +34,7 @@ Vælg den løsning, der er den rette for dig:
 * Med [Embedding for your organization](embedding.md#embedding-for-your-organization) kan du udvide Power BI-tjenesten. Implementer løsningen [Integrer for din organisation](https://aka.ms/embedsetup/UserOwnsData) for at gøre det.
 * Med [Integrering for dine kunder](embedding.md#embedding-for-your-customers) kan du integrere dashboards og rapporter for de brugere, der ikke har en Power BI-konto. Implementer løsningen [Integrer for dine kunder](https://aka.ms/embedsetup/AppOwnsData) for at gøre det.
 
-![PBIE-eksempel](../media/what-can-you-do/what-can-you-do-02.png)
+![PBIE-eksempel](media/embedding/what-can-you-do-02.png)
 
 ## <a name="use-apis"></a>Brug API'er
 

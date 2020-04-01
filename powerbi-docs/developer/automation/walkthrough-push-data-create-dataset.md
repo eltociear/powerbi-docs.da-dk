@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: a013053e3a7948f340b8c27e154cc7578cdea672
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 149b4f8663838c0a87609a1ec24358fb9ee9727e
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079134"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403627"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Trin 3: Opret et datasæt i Power BI
 Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
 
 I **trin 2** af Send data til et datasæt, [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md), fik du et token til godkendelse til **Azure AD**. I dette trin skal du bruge dette token for at kalde handlingen [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets).
 
-Du kalder en REST-ressource ved at bruge en URL-adresse, som finder ressourcen, og sende en JSON-streng (JavaScript Object Notation), som beskriver datasættet, til Power BI-tjenesteressourcen. En REST-ressource identificerer den del af Power BI-tjenesten, som du vil arbejde med. For at sende data til datasættet skal målressourcen være et **datasæt**. Den URL-adresse, der identificerer et datasæt, er https://api.PowerBI.com/v1.0/myorg/datasets. Hvis du pusher data i en gruppe, er URL-adressen https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
+Du kalder en REST-ressource ved at bruge en URL-adresse, som finder ressourcen, og sende en JSON-streng (JavaScript Object Notation), som beskriver datasættet, til Power BI-tjenesteressourcen. En REST-ressource identificerer den del af Power BI-tjenesten, som du vil arbejde med. For at sende data til datasættet skal målressourcen være et **datasæt**. Den URL-adresse, der identificerer et datasæt, er `https://api.PowerBI.com/v1.0/myorg/datasets`. Hvis du pusher data i en gruppe, er URL-adressen `https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets`.
 
 For at godkende en Power BI REST-handling skal du føje det token, du fik under [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md), til en anmodningsheader:
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 6dd5b7838a1f59971e11a4674853abead7af0b90
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 0042c7db70cac103d04d1c48d06c12b71634b541
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79492784"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403658"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -96,7 +96,7 @@ Brugeren kan løse problemet ved at kalde [refreshUserPermissions API](https://d
 
 Du kan bruge PBI-portalen til at finde dit PBI-lejerområde.
 
-[https://app.powerbi.com/](https://app.powerbi.com/ ) > ? > Om Power BI
+[https://app.powerbi.com/](`https://app.powerbi.com/`) > ? > Om Power BI
 
 ![Om Power BI](media/embedded-faq/about-01.png)
 ![Lejerområde](media/embedded-faq/tenant-location-01.png)
@@ -200,7 +200,7 @@ Dette er vigtigt, når du tilføjer tjenesteprincipalen som **administrator** ti
 
 **[Program-id'et](embed-sample-for-customers.md#application-id)** bruges til at oprette adgangstokenet, når program-id'et vedtages som godkendelse.
 
-Hvis du vil henvise til en tjenesteprincipal for at udføre handlinger eller foretage ændringer, skal du bruge **[objekt-id'et for tjenesteprincipalen](embed-service-principal.md#how-to-get-the-service-principal-object-id)** , f.eks. ved anvendelse af en tjenesteprincipal som administrator i et arbejdsområde.
+Hvis du vil henvise til en tjenesteprincipal for at udføre handlinger eller foretage ændringer, skal du bruge **[objekt-id'et for tjenesteprincipalen](embed-service-principal.md)** , f.eks. ved anvendelse af en tjenesteprincipal som administrator i et arbejdsområde.
 
 ### <a name="can-you-manage-an-on-premises-data-gateway-with-service-principal"></a>Kan man administrere en datagateway i det lokale miljø med en tjenesteprincipal?
 
