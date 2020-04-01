@@ -19,6 +19,16 @@
             - name: Udvikler
               tocHref: /power-bi/developer/
               topicHref: /power-bi/developer/index
+              items:
+                - name: Integreret analyse
+                  tocHref: /power-bi/developer/embedded/
+                  topicHref: /power-bi/developer/embedded/
+                - name: Power BI-visualiseringer
+                  tocHref: /power-bi/developer/visuals/
+                  topicHref: /power-bi/developer/visuals/
+                - name: Automatisering
+                  tocHref: /power-bi/developer/automation/
+                  topicHref: /power-bi/developer/automation/
             - name: Kursus med vejledning
               tocHref: /power-bi/guided-learning/
               topicHref: /power-bi/guided-learning/
