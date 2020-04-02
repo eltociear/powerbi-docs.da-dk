@@ -1,0 +1,65 @@
+### YamlMime:Landing
+title: Dokumentation til Power BI Automation
+summary: Med Power BI Automation kan du udføre administrationsopgaver på Power BI-objekter som rapporter, datasæt og arbejdsområder.
+metadata:
+  title: Dokumentation til Power BI Automation
+  description: Med Power BI Automation kan du udføre administrationsopgaver på Power BI-objekter som rapporter, datasæt og arbejdsområder.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page
+  ms.collection: collection
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.date: 31/03/2020
+  ms.openlocfilehash: 33f3caa20bc29c41b9d2c43f6727947ce9b7d446
+  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.translationtype: HT
+  ms.contentlocale: da-DK
+  ms.lasthandoff: 04/01/2020
+  ms.locfileid: "80516393"
+landingContent:
+- title: Kom i gang
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Få mere at vide om, hvad du kan bruge Power BI-API til
+      url: overview-of-power-bi-rest-api.md
+  - linkListType: tutorial
+    links:
+    - text: 'Selvstudium: Overfør data til et datasæt'
+      url: walkthrough-push-data.md
+    - text: 'Selvstudium: Hent et adgangstoken til godkendelse'
+      url: walkthrough-push-data-get-token.md
+    - text: 'Selvstudium: Opret et datasæt'
+      url: walkthrough-push-data-create-dataset.md
+    - text: Hent et datasæt for at indsætte rækker
+      url: walkthrough-push-data-get-datasets.md
+    - text: Føj rækker til en Power BI-tabel
+      url: walkthrough-push-data-add-rows.md
+- title: Arbejd med data
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Politik for automatisk opbevaring for data i realtid
+      url: api-automatic-retention-policy-for-real-time-data.md
+    - text: Begrænsninger for REST-API'er til Power BI
+      url: api-rest-api-limitations.md
+    - text: Egenskaber for datasæt
+      url: api-dataset-properties.md
+  - linkListType: how-to-guide
+    links:
+    - text: Konfigurer legitimationsoplysninger
+      url: configure-credentials.md
+- title: Referencer og ressourcer
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: REST-API'er til Power BI
+      url: https://docs.microsoft.com/rest/api/power-bi/
+    - text: Reference til Power BI REST-API
+      url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
+    - text: Developer Center
+      url: https://powerbi.microsoft.com/developers/
+    - text: Power BI-biblioteker
+      url: https://www.nuget.org/profiles/powerbi

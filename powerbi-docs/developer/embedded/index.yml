@@ -1,0 +1,83 @@
+### YamlMime:Landing
+title: Dokumentation til integreret Power BI-analyse
+summary: Få mere at vide om, hvordan du bruger de to integrerede analyseløsninger, Power BI Embedded og integrering ved hjælp af Power BI Premium.
+metadata:
+  title: Dokumentation til integreret Power BI-analyse
+  description: Få mere at vide om, hvordan du bruger de to integrerede analyseløsninger, Power BI Embedded og integrering ved hjælp af Power BI Premium.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page
+  ms.collection: collection
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.date: 31/03/2020
+  ms.openlocfilehash: 3f7bf1ebb51e7f9e5916e16280a2e10d7339df73
+  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.translationtype: HT
+  ms.contentlocale: da-DK
+  ms.lasthandoff: 04/01/2020
+  ms.locfileid: "80516255"
+landingContent:
+- title: Kom i gang
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Hvad er integrering med Power BI?
+      url: embedding.md
+    - text: Hvad er Power BI Embedded i Azure?
+      url: azure-pbie-what-is-power-bi-embedded.md
+    - text: Ofte stillede spørgsmål
+      url: embedded-faq.md
+- title: Integrer rapporter eller dashboards
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 'Selvstudium: Integrer Power BI-indhold i en app til dine kunder'
+      url: embed-sample-for-customers.md
+    - text: 'Selvstudium: Integrer Power BI-indhold i en app til din organisation'
+      url: embed-sample-for-your-organization.md
+    - text: 'Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder'
+      url: embed-paginated-reports-customers.md
+    - text: 'Selvstudium: Integrer Power BI-indhold i dit program for nationale cloudmiljøer'
+      url: embed-sample-for-customers-national-clouds.md
+  - linkListType: reference
+    links:
+    - text: Embedding-konfigurationsværktøj
+      url: https://app.powerbi.com/embedsetup
+    - text: Udviklereksempler og -scripts
+      url: https://github.com/Microsoft/PowerBI-Developer-Samples
+- title: Planlægning af produktion
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Kapacitet og SKU'er
+      url: embedded-capacity.md
+    - text: Kapacitetsplanlægning
+      url: embedded-capacity-planning.md
+  - linkListType: concept
+    links:
+    - text: Bedste fremgangsmåder for ydelse
+      url: embedded-performance-best-practices.md
+    - text: Power BI-tilladelser
+      url: power-bi-permissions.md
+    - text: Spørgsmål og svar
+      url: qanda.md
+    - text: Foretag fejlfinding af dit integrerede program
+      url: embedded-troubleshoot.md
+- title: Referencer og ressourcer
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: REST-API'er til Power BI
+      url: https://docs.microsoft.com/rest/api/power-bi/
+    - text: Reference til Power BI REST-API
+      url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
+    - text: Developer Center
+      url: https://powerbi.microsoft.com/developers/
+    - text: Power BI-biblioteker
+      url: https://www.nuget.org/profiles/powerbi
+    - text: Teststed
+      url: https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html
+    - text: JavaScript-wiki
+      url: https://github.com/Microsoft/powerbi-javascript/wiki

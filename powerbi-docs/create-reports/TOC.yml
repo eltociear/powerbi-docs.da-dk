@@ -20,6 +20,8 @@
       items:
         - name: Hent eksempler til Power BI
           href: ../sample-datasets.md
+        - name: 'Amerikansk COVID-19-eksempel:'
+          href: sample-covid-19-us.md
         - name: Eksempel på kunderentabilitet
           href: ../sample-customer-profitability.md
         - name: Eksempel på analyse af it-forbrug

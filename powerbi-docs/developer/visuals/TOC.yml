@@ -1,0 +1,120 @@
+- name: Dokumentation til Power BI-visualiseringer
+  href: index.yml
+  expanded: true
+  items:
+    - name: Oversigt
+      expanded: true
+      items:
+        - name: Visualiseringer i Power BI
+          href: power-bi-custom-visuals.md
+    - name: Selvstudier
+      expanded: true
+      items:
+        - name: Udvikl en Power BI-visualisering
+          href: custom-visual-develop-tutorial.md
+        - name: Tilføj formateringsindstillinger
+          href: custom-visual-develop-tutorial-format-options.md
+        - name: Tilføj enhedstests for det visuelle projekt
+          href: unit-tests-introduction.md
+    - name: Begreber
+      items:
+        - name: Struktur for visual-projekter i Power BI
+          href: visual-project-structure.md
+        - name: Visualiseringskoncepter
+          href: power-bi-visuals-concept.md
+        - name: Visualiseringer til organisationer i Power BI
+          href: power-bi-custom-visuals-organization.md
+        - name: Retningslinjer for Power BI-visualiseringer
+          href: guidelines-powerbi-visuals.md
+        - name: Ofte stillede spørgsmål om visualiseringer
+          href: power-bi-custom-visuals-faq.md
+        - name: Brug af funktionaliteter
+          href: capabilities.md
+        - name: Tilknytning af datavisning
+          href: dataview-mappings.md
+        - name: Objekter og egenskaber
+          href: objects-properties.md
+        - name: Avanceret redigeringstilstand
+          href: advanced-edit-mode.md
+    - name: 'Sådan gør du:'
+      items:
+        - name: Få en Power BI-visualisering certificeret
+          href: power-bi-custom-visuals-certified.md
+        - name: Publicer Power BI-visualiseringer i AppSource
+          href: office-store.md
+        - name: Brug R-drevne Power BI-visualiseringer i Power BI
+          href: ../../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
+        - name: Interaktioner mellem visualiseringer
+          href: visuals-interactions.md
+        - name: Tilføj markeringer
+          href: selection-api.md
+        - name: Føj værktøjstip til visualiseringer
+          href: add-tooltips.md
+        - name: Tilføj analyserude
+          href: analytics-pane.md
+        - name: Filtrer visualiseringer
+          href: filter-api.md
+        - name: Hent flere data
+          href: fetch-more-data.md
+        - name: Tilføj understøttelse af bogmærker
+          href: bookmarks-support.md
+        - name: Tilføj understøttelse af genvejsmenuer
+          href: context-menu.md
+        - name: Tilføj understøttelse af detailudledning
+          href: drill-down-support.md
+        - name: Fremhæv data i visualiseringer
+          href: highlight.md
+        - name: Tilføj understøttelse af tilstand med høj kontrast
+          href: high-contrast-support.md
+        - name: Aktivér synkroniseringsudsnit
+          href: enable-sync-slicers.md
+        - name: Fejlfind visualiseringer
+          href: visuals-how-to-debug.md
+        - name: Fejlfind visualiseringer i Power BI
+          href: power-bi-custom-visuals-troubleshoot.md
+    - name: Reference
+      items:
+        - name: Landingside
+          href: landing-page.md
+        - name: Start URL-adresse
+          href: launch-url.md
+        - name: Lokalt lager-API
+          href: local-storage.md
+        - name: Gengivelse af hændelser
+          href: event-service.md
+        - name: Sortering
+          href: sort-options.md
+        - name: Lokalisering
+          href: localization.md
+        - name: Hjælpeprogrammer til visualiseringer i Power BI
+          items:
+            - name: Tilføjelse af eksterne biblioteker
+              href: adding-external-libraries.md
+            - name: Interaktivitetsutils
+              href: utils-interactivity-selections.md
+            - name: Formateringshjælpeprogrammer
+              href: utils-formatting.md
+            - name: Datavisningshjælpeprogrammer
+              href: utils-dataview.md
+            - name: Diagramhjælpeprogrammer
+              href: utils-chart.md
+            - name: Farvehjælpeprogrammer
+              href: utils-color.md
+            - name: SVG-hjælpeprogrammer
+              href: utils-svg.md
+            - name: Typehjælpeprogrammer
+              href: utils-type.md
+            - name: Hjælpeprogrammer til værktøjstip
+              href: utils-tooltip.md
+            - name: Datavisningshjælpeprogrammer
+              href: utils-dataview.md
+    - name: Ressourcer
+      items:
+        - name: Udviklingscenter
+          href: 'https://powerbi.microsoft.com/developers/'
+        - name: Eksempler på Power BI-visualiseringer
+          href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
+        - name: Git-lager for Power BI-visualiseringer
+          href: 'https://go.microsoft.com/fwlink/?linkid=848277'
+        - name: Oprettelse af SSL-certifikat
+          href: create-ssl-certificate.md

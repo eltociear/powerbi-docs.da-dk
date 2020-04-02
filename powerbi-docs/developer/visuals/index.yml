@@ -1,0 +1,59 @@
+### YamlMime:Landing
+title: Dokumentation til Power BI-visualiseringer
+summary: Du kan også udvikle dine egne Power BI-visualiseringer, der skal bruges af dig, din organisation eller hele Power BI-community'et. Vores dokumentation indeholder de oplysninger, du har brug for.
+metadata:
+  title: Dokumentation til Power BI-visualiseringer
+  description: Du kan også udvikle dine egne Power BI-visualiseringer, der skal bruges af dig, din organisation eller hele Power BI-community'et. Vores dokumentation indeholder de oplysninger, du har brug for.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page
+  ms.collection: collection
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.date: 31/03/2020
+  ms.openlocfilehash: d68b08f941ebe04c41e29f1260332e6f2b0d332c
+  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.translationtype: HT
+  ms.contentlocale: da-DK
+  ms.lasthandoff: 04/01/2020
+  ms.locfileid: "80516232"
+landingContent:
+- title: Kom i gang
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Visualiseringer i Power BI
+      url: power-bi-custom-visuals.md
+    - text: Struktur for visual-projekter i Power BI
+      url: visual-project-structure.md
+    - text: Ofte stillede spørgsmål
+      url: power-bi-custom-visuals-faq.md
+- title: Udvikl en Power BI-visualisering
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 'Selvstudium: Udvikl en Power BI-visualisering'
+      url: custom-visual-develop-tutorial.md
+    - text: 'Selvstudium: Føj formateringsindstillinger til en visualisering i Power BI'
+      url: custom-visual-develop-tutorial-format-options.md
+  - linkListType: concept
+    links:
+    - text: Retningslinjer for Power BI-visualiseringer
+      url: guidelines-powerbi-visuals.md
+- title: Publicer Power BI-visuals
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Publicer Power BI-visualiseringer i Partnercenter
+      url: office-store.md
+    - text: Få en Power BI-visualisering certificeret
+      url: power-bi-custom-visuals-certified.md
+- title: Referencer og ressourcer
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Eksempler på Power BI-visualiseringer
+      url: https://microsoft.github.io/PowerBI-visuals/samples/
+    - text: Git-lager
+      url: https://github.com/Microsoft/PowerBI-visuals
