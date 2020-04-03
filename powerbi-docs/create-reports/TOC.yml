@@ -317,8 +317,6 @@
               href: ../desktop-accessibility-keyboard-shortcuts.md
         - name: Sideinddelte rapporter
           items:
-            - name: 'Praktisk laboratorie: Opret en sideinddelt rapport'
-              href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
             - name: Angiv data direkte i en sideinddelt rapport
               href: ../paginated-reports/paginated-reports-enter-data.md
             - name: Opret en integreret datakilde
