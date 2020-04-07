@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: aa916afbf439beb7019bd6f0af30cc56ad903704
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 17742c48d9ac5cb49b6d04fe6fe4674e7f6c7ac9
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207223"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404874"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Selvstudium: Opret en sideinddelt rapport, og upload den til Power BI-tjenesten
 
@@ -286,7 +286,7 @@ Yderligere en forbedring af formateringen, inden du publicerer rapporten til Pow
 
 Nu, hvor du har oprettet denne sideinddelte rapport, er det tid til at uploade den til Power BI-tjenesten.
 
-1. I Power BI-tjenesten (https://app.powerbi.com) i navigationsruden skal du vælge **Arbejdsområder** > **Opret arbejdsområde**.
+1. Vælg **Arbejdsområder** > **Opret arbejdsområde** i navigationsruden i Power BI-tjenesten (`https://app.powerbi.com`).
 
 2. Navngiv dit arbejdsområde **Azure AW** eller et andet entydigt navn. Du er indtil videre det eneste medlem. 
 

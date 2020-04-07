@@ -1,37 +1,37 @@
 ---
-title: Opret forbindelse til eksemplerne i Power BI-tjenesten
-description: Få mere at vide om, hvordan du installerer og udforsker eksempler i Power BI-tjenesten.
+title: Udforsk Eksempel på detailhandelsanalyse
+description: Få mere at vide om, hvordan du installerer og udforsker Eksempel på detailhandelsanalyse i Power BI-tjenesten og Power BI Desktop.
 author: maggiesMSFT
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2019
+ms.date: 03/27/2020
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: c1fbd57f1c92c9900178eb212a1369d25fdf838a
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: f18ec650167b7872cb332bc9ccd606f7ea1f7500
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762157"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404599"
 ---
-#  <a name="import-and-open-sample-packs-for-power-bi"></a>Importér og åbn eksempelpakker til Power BI
+# <a name="explore-the-retail-analysis-sample"></a>Udforsk Eksempel på detailhandelsanalyse
 
 I denne vejledning lærer du, hvordan du kan: 
-- importere en eksempelindholdspakke, føje den til Power BI-tjenesten og åbne indholdet. En *indholdspakke* er en eksempeltype, hvor datasættet er pakket sammen med et dashboard og en rapport. 
-- åbne en .pbix-eksempelfil i Power BI Desktop.
+- Importér indholdspakken Eksempel på detailanalyse, føj den til Power BI-tjenesten og åbn indholdet. En *indholdspakke* er en eksempeltype, hvor datasættet er pakket sammen med et dashboard og en rapport. 
+- Åbn .PBIX-filen med Eksempel på detailhandelsanalyse i Power BI Desktop.
 
 Hvis du gerne vil have flere baggrundsoplysninger, kan du se [Eksempeldatasæt til Power BI](sample-datasets.md). I den artikel lærer du alt om eksemplerne. Hvordan du får fat i dem, hvor du gemmer dem, hvordan du bruger dem og nogle af de historier, som hvert eksempel fortæller. 
 
 ## <a name="prerequisites"></a>Forudsætninger
-Eksemplerne er tilgængelige for Power BI-tjenesten og Power BI Desktop. Hvis du vil følge med, bruger vi eksemplet på detailhandelsanalyse.
+Eksemplerne er tilgængelige for Power BI-tjenesten og Power BI Desktop. Hvis du vil følge med, skal du bruge Eksempel på detailhandelsanalyse.
 
 Indholdspakke med eksemplet *Retail Analysis*, der bruges i dette selvstudium, består af et dashboard, en rapport og et datasæt.
 Lær denne indholdspakke og dens scenarie at kende ved at se [Eksempel på detailhandelsanalyse til Power BI: Få en præsentation](sample-retail-analysis.md), før du går i gang.
 
-## <a name="samples-in-the-power-bi-service"></a>Eksempler i Power BI-tjenesten
+## <a name="import-the-sample-in-the-power-bi-service"></a>Importér eksemplet i Power BI-tjenesten
 
 1. Åbn Power BI-tjenesten (app.powerbi.com), log på, og åbn det arbejdsområde, hvor du vil gemme eksemplet. 
 
@@ -94,7 +94,7 @@ Udforsk nu dashboardet, datasættet og rapporten på egen hånd. Der er mange fo
      
     ![Rapporten Indsigt](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
-## <a name="samples-in-power-bi-desktop"></a>Eksempler i Power BI Desktop 
+## <a name="download-the-sample-in-power-bi-desktop"></a>Hent eksemplet til Power BI Desktop 
 Når du åbner PBIX-eksempelfilen for første gang i Power BI Desktop, vises den i Rapportvisning, hvor du kan udforske, oprette og redigere et vilkårligt antal rapportsider med visualiseringer. Med Rapportvisning får du næsten samme designoplevelse som i Redigeringsvisning af en rapport i Power BI-tjenesten. Du kan f.eks. flytte visualiseringer rundt og kopiere, indsætte og flette dem. 
 
 I modsætning til redigering af en rapport i Power BI-tjenesten kan du i Power BI Desktop arbejde med dine forespørgsler og modellere dine data for at sikre, at dataene giver den bedste indsigt i dine rapporter. Du kan derefter gemme din Power BI Desktop-fil et sted efter eget valg, uanset om det er på dit lokale drev eller i cloudmiljøet.
@@ -119,7 +119,7 @@ Når du downloader en PBIX-fil med et eksempel, har du ikke blot downloadet *en 
 
     I Datavisning kan du undersøge, udforske og forstå data i din Power BI Desktop-model. Det er forskelligt fra den måde, du får vist tabeller, kolonner og data på i Forespørgselseditor. Dataene i Datavisning er allerede indlæst i modellen.
 
-    Når du udformer dine data, har du nogle gange brug for at se, hvad der rent faktisk findes i rækkerne og kolonnerne i en tabel uden at skulle oprette en visualisering på rapportlærredet. Dette er særligt tilfældet, når du opretter målinger og beregnede kolonner, eller du har brug for at identificere en datatype eller datakategori.
+    Når du udformer dine data, har du nogle gange brug for at se, hvad der rent faktisk findes i rækkerne og kolonnerne i en tabel uden at skulle oprette et visual på rapportlærredet. Dette er særligt tilfældet, når du opretter målinger og beregnede kolonner, eller du har brug for at identificere en datatype eller datakategori.
 
 1. Skift til [Relationsvisning](desktop-relationship-view.md) ved at vælge følgende ikon: ![Ikonet Relationsvisning](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png).
  

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5b6b8658e4480173c32a591c2fc763a238cfd13a
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: f1e48fb2f20c531f4dc66e86d13b76f54165b81c
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73872702"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404750"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)
 
@@ -24,6 +24,7 @@ I Power BI kan du tilføje CEM-mapper (Common Data Model), der er gemt i organis
 
 Der er et par krav til oprettelse af dataflow fra CDM-mapper, som beskrevet på følgende liste:
 
+* En administrator skal knytte ADLS Gen2-lagerkontoen i Power BI, før den kan bruges. Se [Opret forbindelse til Azure Data Lake Storage Gen2 til dataflowlager](service-dataflows-connect-azure-data-lake-storage-gen2.md) for at få mere at vide om, hvordan du knytter en ADLS Gen2-konto til Power BI.
 * Oprettelse af dataflow fra CDM-mapper er *kun* tilgængeligt i den [nye arbejdsområdeoplevelse](service-create-the-new-workspaces.md). 
 * Tilføjelse af en CDM-mappe til Power BI kræver, at brugeren, der tilføjer mappen, skal have [autorisationer til CDM-mappen og dens filer](https://go.microsoft.com/fwlink/?linkid=2029121).
 * Du skal være tildelt læse- og kørselstilladelser til alle filer og mapper i CDM-mappen for at føje dem til Power BI.
@@ -57,7 +58,7 @@ Når du arbejder med tilladelser til et dataflow, der er oprettet ud fra en CDM-
 
 Følgende lister hjælper med at tydeliggøre, hvordan dataflow fra CDM-mapper fungerer med Power BI.
 
-Power BI Pro, Premium og integrerede arbejdsområder:
+Arbejdsområderne Power BI Pro, Premium og Embedded:
 * Dataflow fra CDM-mapper kan ikke redigeres
 * Tilladelser til at læse et dataflow, der er oprettet ud fra en CDM-mappe administreres af ejeren af CDM-mappen og ikke af Power BI
 
@@ -65,7 +66,7 @@ Power BI Desktop:
 * Det er kun brugere, der har tilladelse til både det arbejdsområde, hvor dataflowet blev oprettet, og CDM-mappen, der kan få adgang til data fra Power BI Dataflow-connectoren
 
 
-Punkterne på følgende liste skal også tages i betragtning:
+På følgende liste er der beskrevet nogle yderligere overvejelser:
 
 * Oprettelse af dataflow fra CDM-mapper er *kun* tilgængelig i den [nye arbejdsområdeoplevelse](service-create-the-new-workspaces.md)
 * Linkede objekter er ikke tilgængelige for dataflow, der er oprettet via CDM-mapper
@@ -73,11 +74,11 @@ Punkterne på følgende liste skal også tages i betragtning:
 
 **Power BI Desktop**-kunderne kan ikke få adgang til dataflow, der er gemt under Azure Data Lake Storage Gen2-kontoen, medmindre de er ejer af dataflowet, eller de udtrykkeligt er godkendt til dataflowets CDM-mappe. Overvej følgende situation:
 
-1.  Anna opretter et nyt arbejdsområde og konfigurerer det til at gemme dataflow fra en CDM-mappe.
-2.  Ben, der også er medlem af det arbejdsområde, Anna har oprettet, vil gerne bruge Power BI Desktop og dataflowconnectoren til at hente data fra det dataflow, Anna har oprettet.
-3.  Ben får vist en fejl, da han ikke er føjet til dataflowets CDM-mappe som en godkendt bruger i datasøen.
+1.    Anna opretter et nyt arbejdsområde og konfigurerer det til at gemme dataflow fra en CDM-mappe.
+2.    Ben, der også er medlem af det arbejdsområde, Anna har oprettet, vil gerne bruge Power BI Desktop og dataflowconnectoren til at hente data fra det dataflow, Anna har oprettet.
+3.    Ben får vist en fejl, da han ikke er føjet til dataflowets CDM-mappe som en godkendt bruger i datasøen.
 
-    ![Fejl under forsøg på at bruge dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
+  ![Fejl under forsøg på at bruge dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
 Problemet kan løses ved, at Ben tildeles læsetilladelser til CDM-mappen og dens filer. Du kan få mere at vide om, hvordan du give adgang til CDM-mappen i [denne artikel](https://go.microsoft.com/fwlink/?linkid=2029121).
 

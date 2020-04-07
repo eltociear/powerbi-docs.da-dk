@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 156b00c7f7287f12397afea422a38f3870d6c399
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 51c9b8a570abf2686abe9b26a4d9e111e8ef022a
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858419"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404646"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af leveringskvalitet til Power BI: Få en introduktion
 
@@ -62,7 +62,7 @@ Du kan også hente eksemplet på analyse af leverandørkvalitet som en [PBIX-fil
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hent Excel-projektmappen for dette eksempel
 
-Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](https://go.microsoft.com/fwlink/?LinkId=529779). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, kan du finde flere oplysninger under [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](https://go.microsoft.com/fwlink/?LinkId=529779). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power View og Power Pivot, kan du finde flere oplysninger under [Udforsk Excel-eksemplerne i Excel](sample-datasets.md#explore-excel-samples-inside-excel).
 
 ## <a name="downtime-caused-by-defective-materials"></a>Nedetid på grund af defekte materialer
 Lad os analysere den nedetid, der skyldes defekte materialer, og se, hvilke forhandlere der er ansvarlige.  
@@ -109,7 +109,7 @@ Nu vil vi se nærmere på, hvilke anlæg der er bedst til administration af defe
     ![Vælg Indvirkning](media/sample-supplier-quality/supplier7.png)  
 
     Læg mærke til, at **Logistik** er den mest problematiske kategori i boblediagrammet. Det er den største kategori i forhold til det samlede antal defekter, defektrapporter og nedetid i minutter. Lad os se nærmere på denne kategori.  
-3. Vælg boblen **Logistik** i boblediagrammet, og læg mærke til anlæggene i Springfield, IL og Naperville, IL. Naperville ser ud til at klare sig meget bedre inden for administration af defekte leveringer, fordi den har et højt antal kasseringer og få indvirkninger, sammenlignet med Springfield’s høje antal indvirkninger.  
+3. Vælg boblen **Logistik** i boblediagrammet, og læg mærke til anlæggene i Springfield, IL og Naperville, IL. Naperville ser ud til at klare sig meget bedre inden for administration af defekte leveringer, fordi den har et højt antal kasseringer og få indvirkninger, sammenlignet med Springfield's høje antal indvirkninger.  
 
    ![Vælg Logistik](media/sample-supplier-quality/supplier8.png)  
 4. Vælg **Eksempel på analyse af leverandørkvalitet** i den øverste navigationsrude for at vende tilbage til dashboardet.

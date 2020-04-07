@@ -1,167 +1,191 @@
 ---
 title: Tjenesteprincipal med Power BI
-description: Få mere at vide om, hvordan du registrerer et program i Azure Active Directory ved hjælp af en tjenesteprincipal, som kan bruges til at integrere Power BI-indhold.
+description: Få mere at vide om, hvordan du registrerer et program i Azure Active Directory ved hjælp af en tjenesteprincipal og en programhemmelighed, som kan bruges til at integrere Power BI-indhold.
 author: KesemSharabi
 ms.author: kesharab
-ms.reviewer: nishalit
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/12/2019
-ms.openlocfilehash: ce72abc3f3b60423344c2b28f39d9bdbfbcee7cd
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.date: 03/30/2020
+ms.openlocfilehash: 9ec08ebe583110b2775f107be0ace2a03929c72d
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79493497"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403551"
 ---
-# <a name="service-principal-with-power-bi"></a>Tjenesteprincipal med Power BI
+# <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Integrering af Power BI-indhold med tjenesteprincipal og programhemmelighed
 
-Med en **tjenesteprincipal** kan du integrere Power BI-indhold i et program og bruge automatisering med Power BI ved hjælp af et **kun program**-token. En tjenesteprincipal er nyttig, når du bruger **Power BI Embedded**, eller når du **automatiserer Power BI-opgaver og -processer**.
+Tjeneste principalen er en godkendelsesmetode, der kan bruges til at lade et Microsoft Azure AD-program få adgang indhold og API'er i Power BI-tjenesten.
 
-Når du arbejder med Power BI Embedded, er der fordele ved at bruge en tjenesteprincipal. En af de primære fordele er, at du ikke behøver en masterkonto (Power BI Pro-licens, der blot er et brugernavn og adgangskode til at logge på med) til at godkende dit program. En tjenesteprincipal bruger et program-id og en programhemmelighed til at godkende programmet.
+Når du opretter en Azure Active Directory-app, oprettes der et [tjenesteprincipalobjekt](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object). Tjenesteprincipalobjektet, der også blot kaldes *tjenesteprincipal*, gør det muligt for Microsoft Azure AD at godkende din app. Når appen er godkendt, kan den få adgang til Microsoft Azure AD-lejerressourcer.
 
-Når du arbejder på at automatisere Power BI-opgaver, kan du også oprette et script for den måde, du vil behandle og administrere tjenesteprincipalerne på i forbindelse med skalering.
+For at kunne godkende skal tjenesteprincipalen bruge Microsoft Azure AD-appens *program-id* og et af følgende:
+* Programhemmelighed
+* Certifikat
 
-## <a name="application-and-service-principal-relationship"></a>Relation mellem program og tjenesteprincipal
+I denne artikel beskrives godkendelse af tjenesteprincipalen ved hjælp af et *program-id* og en *programhemmelighed*. Hvis du vil godkende ved hjælp af en tjenesteprincipal med et certifikat, skal du se [Power BI certifikatbaseret godkendelse]().
 
-For at få adgang til ressourcer, der sikrer en Azure AD-lejer, repræsenterer den enhed, der kræver adgang, en sikkerhedskonto. Denne handling gør sig gældende for både brugere (brugerens hovednavn) og programmer (tjenesteprincipal).
+## <a name="method"></a>Metode
 
-Sikkerhedskontoen definerer adgangspolitikken og tilladelserne for brugere og programmer i Azure AD-lejeren. Denne adgangspolitik aktiverer kernefunktioner, såsom godkendelse af brugere og programmer i forbindelse med logon og autorisation i forbindelse med ressourceadgang. Du kan finde flere oplysninger i artiklen [Program og tjenesteprincipal i Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
+Hvis du vil bruge tjenesteprincipalen og et program-id med integreret analyse, skal du følge disse trin:
 
-Når du registrerer et Azure AD-program på Azure Portal, oprettes der to objekter i din Azure AD-lejer:
+1. Opret en [Microsoft Azure AD-app](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-management).
 
-* Et [objekt for programmet](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#application-object)
-* Et [objekt for tjenesteprincipalen](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object)
+    1. Opret Microsoft Azure AD-appens hemmelighed.
+    
+    2. Hent appens *program-id* og *programhemmelighed*.
 
-Anse objektet for programmet for at være den *globale* repræsentation af dit program, som skal bruges på tværs af alle lejere, og objektet for tjenesteprincipalen for at være den *lokale* repræsentation, som skal bruges i en bestemt lejer.
+    >[!NOTE]
+    >Disse trin er beskrevet i **trin 1**. Du kan finde flere oplysninger om, hvordan du opretter en Microsoft Azure AD-app, i artiklen [Opret en Microsoft Azure ADD-app](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal).
 
-Objektet for programmet fungerer som den skabelon, hvorfra fælles egenskaber og standardegenskaber, som skal bruges i forbindelse med oprettelse af tilsvarende objekter for tjenesteprincipalen, *afledes*.
+2. Opret en Microsoft Azure AD-sikkerhedsgruppe.
 
-Der kræves en tjenesteprincipal for hver lejer, hvor programmet bruges. Det gør det muligt at etablere en identitet til logon og adgang til ressourcer, som er sikret af lejeren. Et program af typen enkelt lejer har kun én tjenesteprincipal (i sin startlejer), som blev oprettet og godkendt til brug under registreringen af programmet.
+3. Aktivér indstillingerne for Power BI-tjenesteadministration.
 
-## <a name="service-principal-with-power-bi-embedded"></a>Tjenesteprincipal med Power BI Embedded
+4. Føj tjenesteprincipalen til dit arbejdsområde.
 
-Med en tjenesteprincipal kan du maskere oplysningerne om din masterkonto i dit program ved hjælp af et program-id og en programhemmelighed. Du behøver ikke længere at bruge hårdkodning for din masterkonto i dit program for at kunne godkende.
+5. Integrer dit indhold.
 
-Da **Power BI-API'erne** og **Power BI .NET SDK** nu understøtter kald ved hjælp af en tjenesteprincipal, kan du bruge [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/) med en tjenesteprincipal. Du kan f.eks. foretage ændringer af arbejdsområder, såsom oprette arbejdsområder, tilføje eller fjerne brugere fra arbejdsområder og importere indhold i arbejdsområder.
+> [!IMPORTANT]
+> Når du aktiverer en tjenesteprincipal, der skal bruges med Power BI, er AD-tilladelserne for programmet ikke længere gældende. Tilladelserne for programmet administreres derefter via Power BI-administrationsportalen.
 
-Du kan kun bruge en tjenesteprincipal, hvis dine Power BI-artefakter og -ressourcer er gemt i det [nye Power BI-arbejdsområde](../../service-create-the-new-workspaces.md).
+## <a name="step-1---create-an-azure-ad-app"></a>Trin 1 – Opret en Microsoft Azure AD-app
 
-## <a name="service-principal-vs-master-account"></a>Tjenesteprincipal i forhold til masterkonto
+Opret en Microsoft Azure AD-app ved hjælp af en af disse metoder:
+* Opret appen i [Microsoft Azure-portalen](https://ms.portal.azure.com/#allservices)
+* Opret appen ved hjælp af [PowerShell-](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
 
-Der er forskelle mellem at bruge en tjenesteprincipal og en standardmasterkonto (Power BI Pro-licens) til godkendelse. I nedenstående tabel fremhæves nogle væsentlige forskelle.
+### <a name="creating-an-azure-ad-app-in-the-microsoft-azure-portal"></a>Oprettelse af en Microsoft Azure AD-app i Microsoft Azure-portalen
 
-| Funktion | Masterbrugerkonto <br> (Power BI Pro-licenser) | Tjenesteprincipal <br> (kun program-token) |
-|------------------------------------------------------|---------------------|-------------------|
-| Kan logge på Power BI-tjenesten  | Ja | Nej |
-| Aktiveret på Power BI-administrationsportalen | Nej | Ja |
-| [Fungerer sammen med arbejdsområder (v1)](../../service-create-workspaces.md) | Ja | Nej |
-| [Fungerer sammen med de nye arbejdsområder (v2)](../../service-create-the-new-workspaces.md) | Ja | Ja |
-| Man skal være administrator af et arbejdsområde, hvis det bruges med Power BI Embedded | Ja | Ja |
-| Kan bruge REST API'er til Power BI | Ja | Ja |
-| Der skal være en global administrator for at kunne oprettes | Ja | Nej |
-| Kan installere og administrere en datagateway i det lokale miljø | Ja | Nej |
+1. Log på [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
-## <a name="get-started-with-a-service-principal"></a>Kom i gang med en tjenesteprincipal
+2. Søg efter **appregistreringer**, og klik på linket **Appregistreringer**.
 
-I modsætning til den traditionelle brug af en masterkonto kræves der nogle få andre ting til konfigurationen, når tjenesteprincipalen (kun program-token) bruges. Du skal konfigurere det rette miljø for at komme godt i gang med tjenesteprincipalen (kun program-token).
+    ![azure-appregistrering](media/embed-service-principal/azure-app-registration.png)
 
-1. [Registrer et serverbaseret webprogram](register-app.md) i Azure Active Directory (AAD), som skal bruges med Power BI. Når du har registreret et program, kan du hente et program-id, en programhemmelighed og et objekt-id for tjenesteprincipalen for at få adgang til dit Power BI-indhold. Du kan oprette en tjenesteprincipal med [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+3. Klik på **Ny registrering**.
 
-    Nedenfor er et eksempel på et script, der kan bruges til at oprette et nyt program til Azure Active Directory.
+    ![ny registrering](media/embed-service-principal/new-registration.png)
 
-    ```powershell
-    # The app id - $app.appid
-    # The service principal object id - $sp.objectId
-    # The app key - $key.value
+4. Udfyld de påkrævede oplysninger:
+    * **Navn** – Angiv et navn til programmet
+    * **Understøttede kontotyper** – Vælg understøttede kontotyper
+    * (Valgfrit) **URI til omdirigering** – Angiv en URI, hvis det er nødvendigt
 
-    # Sign in as a user that is allowed to create an app.
-    Connect-AzureAD
+5. Klik på **Registrer**.
 
-    # Create a new AAD web application
-    $app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
+6. Efter registrering er *program-id'et* tilgængeligt via fanen **Oversigt**. Kopiér og gem *program-id'et* til senere brug.
 
-    # Creates a service principal
-    $sp = New-AzureADServicePrincipal -AppId $app.AppId
+    ![program-id](media/embed-service-principal/application-id.png)
 
-    # Get the service principal key.
-    $key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
-    ```
+7. Klik på fanen **Certifikater og hemmeligheder**.
 
-   > [!Important]
-   > Når du aktiverer en tjenesteprincipal, der skal bruges med Power BI, er AD-tilladelserne for programmet ikke længere gældende. Tilladelserne for programmet administreres derefter via Power BI-administrationsportalen.
+     ![program-id](media/embed-service-principal/certificates-and-secrets.png)
 
-2.  **Anbefalet** – Opret en sikkerhedsgruppe i Azure Active Directory (AAD), og føj det [program](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals), du oprettede, til denne sikkerhedsgruppe. Du kan oprette en AAD-sikkerhedsgruppe med [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+8. Klik på **Ny klienthemmelighed**
 
-    Nedenfor er et eksempel på et script, der kan bruges til at oprette en ny sikkerhedsgruppe og føje et program til denne sikkerhedsgruppe.
+    ![ny klienthemmelighed](media/embed-service-principal/new-client-secret.png)
 
-    ```powershell
-    # Required to sign in as a tenant admin
-    Connect-AzureAD
+9. Angiv en beskrivelse i vinduet *Tilføj klienthemmelighed*, angiv, hvornår klientens hemmelighed skal udløbe, og klik på **Tilføj**.
 
-    # Create an AAD security group
-    $group = New-AzureADGroup -DisplayName <Group display name> -SecurityEnabled $true -MailEnabled $false -MailNickName notSet
+10. Kopiér og gem værdien for *Klienthemmelighed*.
 
-    # Add the service principal to the group
-    Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
-    ```
+    ![værdi for klienthemmelighed](media/embed-service-principal/client-secret-value.png)
 
-3. Som Power BI-administrator skal du aktivere tjenesteprincipalen under **Indstillinger for udvikler** på Power BI-administrationsportalen. Føj den sikkerhedsgruppe, du oprettede i Azure AD, til det specifikke afsnit for sikkerhedsgruppen under **Indstillinger for udvikler**. Du kan også aktivere adgang til tjenesteprincipal for hele organisationen. I så fald er trin 2 ikke nødvendig.
+    >[!NOTE]
+    >Når du forlader dette vindue, skjules værdien for klienthemmeligheden, og du kan ikke se eller kopiere den igen.
 
-   > [!Important]
-   > Tjenesteprincipaler har adgang til alle lejerindstillinger, der er aktiveret for hele organisationen eller aktiveret for sikkerhedsgrupper, der har tjenesteprincipaler som en del af gruppen. Hvis du vil begrænse tjenesteprincipalens adgang til specifikke lejerindstillinger, skal du kun tillade adgang til specifikke sikkerhedsgrupper eller oprette en dedikeret sikkerhedsgruppe for tjenesteprincipaler og ekskludere den pågældende tjenesteprincipal.
+### <a name="creating-an-azure-ad-app-using-powershell"></a>Oprettelse af en Microsoft Azure AD-app ved hjælp af PowerShell
 
-    ![Administrationsportal](media/embed-service-principal/admin-portal.png)
+Dette afsnit indeholder et eksempelscript til oprettelse af en ny Microsoft Azure AD-app ved hjælp af [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
-4. Konfigurer dit [Power BI-miljø](embed-sample-for-customers.md#set-up-your-power-bi-environment).
+```powershell
+# The app ID - $app.appid
+# The service principal object ID - $sp.objectId
+# The app key - $key.value
 
-5. Tilføj tjenesteprincipalen som **administrator** til det nye arbejdsområde, du har oprettet. Du kan administrere denne opgave via [API'erne](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) eller Power BI-tjenesten.
+# Sign in as a user that's allowed to create an app
+Connect-AzureAD
 
-    ![Føj en tjenesteprincipal til et arbejdsområde som administrator](media/embed-service-principal/add-service-principal-in-the-UI.png)
+# Create a new Azure AD web application
+$app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
 
-6. Du kan nu vælge at integrere indhold i et eksempelprogram eller i dit eget program.
+# Creates a service principal
+$sp = New-AzureADServicePrincipal -AppId $app.AppId
 
-    * [Integrer indhold ved hjælp af eksempelprogrammet](embed-sample-for-customers.md#embed-content-using-the-sample-application)
-    * [Integrer indhold i dit program](embed-sample-for-customers.md#embed-content-within-your-application)
+# Get the service principal key
+$key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
+```
 
-7. Nu er du klar til at [begynde at producere noget](embed-sample-for-customers.md#move-to-production).
+## <a name="step-2---create-an-azure-ad-security-group"></a>Trin 2 – Opret en Microsoft Azure AD-sikkerhedsgruppe
 
-## <a name="migrate-to-service-principal"></a>Migrer til tjenesteprincipalen
+Din tjenesteprincipal har ikke adgang til Power BI-indholdet og API'erne. Hvis du vil give tjenesteprincipalen adgang, skal du oprette en sikkerhedsgruppe i Microsoft Azure AD og tilføje den tjenesteprincipal, du har oprettet til den pågældende sikkerhedsgruppe.
 
-Du kan migrere for at bruge en tjenesteprincipal, hvis du i øjeblikket bruger en masterkonto med Power BI eller Power BI Embedded.
+Du kan oprette en Microsoft Azure AD-sikkerhedsgruppe på to måder:
+* Manuelt (i Azure)
+* Brug af PowerShell
 
-Fuldfør de tre første trin i afsnittet [Kom i gang med en tjenesteprincipal](#get-started-with-a-service-principal), og følg nedenstående oplysninger, når processen er fuldført.
+### <a name="create-a-security-group-manually"></a>Opret en sikkerhedsgruppe manuelt
 
-Hvis du allerede bruger de [nye arbejdsområder](../../service-create-the-new-workspaces.md) i Power BI, skal du tilføje tjenesteprincipalen som **administrator** til arbejdsområderne med dine Power BI-artefakter. Hvis du derimod bruger de [traditionelle arbejdsområder](../../service-create-workspaces.md), skal du kopiere eller flytte dine Power BI-artefakter og -ressourcer til de nye arbejdsområder og derefter tilføje tjenesteprincipalen som **administrator** til disse arbejdsområder.
+Hvis du vil oprette en Azure-sikkerhedsgruppe manuelt, skal du følge vejledningen i artiklen [Opret en basisgruppe, og tilføj medlemmer ved hjælp af Azure Active Directory (Create a basic group and add members using Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
-Der er ingen funktion i brugergrænsefladen, som kan bruges til at flytte Power BI-artefakter og -ressourcer fra ét arbejdsområde til et andet, så du skal bruge [API'er](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) til at udføre denne opgave. Når du bruger API'er med tjenesteprincipalen, har du brug for objekt-id'et for tjenesteprincipalen.
+### <a name="create-a-security-group-using-powershell"></a>Opret en sikkerhedsgruppe ved hjælp af PowerShell
 
-### <a name="how-to-get-the-service-principal-object-id"></a>Sådan får du objekt-id'et for tjenesteprincipalen
+Nedenfor er et eksempelscript, der kan bruges til at oprette en ny sikkerhedsgruppe og føje et program til den pågældende sikkerhedsgruppe.
 
-Hvis du vil tildele en tjenesteprincipal til et nyt arbejdsområde, skal du bruge [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). Hvis du vil henvise til en tjenesteprincipal for at udføre handlinger eller foretage ændringer, skal du bruge **objekt-id'et for tjenesteprincipalen**, f.eks. ved anvendelse af en tjenesteprincipal som administrator i et arbejdsområde.
+>[!NOTE]
+>Hvis du vil give tjenesteprincipaler adgang til hele organisationen, skal du springe dette trin over.
 
-Herunder finder du trin til at hente objekt'id'et for tjenesteprincipalen fra Azure Portal.
+```powershell
+# Required to sign in as a tenant admin
+Connect-AzureAD
 
-1. Opret en ny programregistrering på Azure Portal.  
+# Create an Azure AD security group
+$group = New-AzureADGroup -DisplayName <Group display name> -SecurityEnabled $true -MailEnabled $false -MailNickName notSet
 
-2. Vælg derefter navnet på det program, du oprettede, under **Administreret program i lokal mappe**.
+# Add the service principal to the group
+Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
+```
 
-   ![Administreret program i en lokal mappe](media/embed-service-principal/managed-application-in-local-directory.png)
+## <a name="step-3---enable-the-power-bi-service-admin-settings"></a>Trin 3 – Aktivér indstillingerne for Power BI-tjenesteadministration
 
-    > [!NOTE]
-    > Objektet-id'et på billedet ovenfor er ikke det, der bruges med tjenesteprincipalen.
+Hvis en Microsoft Azure AD-app skal kunne få adgang til Power BI-indholdet og API'erne, skal en Power BI-administrator have mulighed for at aktivere adgangen til tjenesteprincipalen i Power BI-administrationsportalen.
 
-3. Vælg **Egenskaber** for at se objekt-id'et.
+Føj den sikkerhedsgruppe, du oprettede i Microsoft Azure AD, til det specifikke afsnit for sikkerhedsgruppen under **Indstillinger for udvikler**.
 
-    ![Egenskaber for objekt-id'et for tjenesteprincipalen](media/embed-service-principal/service-principal-object-id-properties.png)
+>[!IMPORTANT]
+>Tjenesteprincipalerne har adgang til alle de lejerindstillinger, de er aktiveret for. Afhængigt af administratorindstillingerne omfatter dette specifikke sikkerhedsgrupper eller hele organisationen.
+>
+>Hvis du vil begrænse tjenesteprincipalers adgang til specifikke lejerindstillinger, skal du kun give adgang til specifikke sikkerhedsgrupper. Du kan også oprette en dedikeret sikkerhedsgruppe til tjenesteprincipaler og udelukke den fra de ønskede lejerindstillinger.
 
-Nedenfor er et eksempel på et script, der kan bruges til at hente objekt-id'et for tjenesteprincipalen med PowerShell.
+![Administrationsportal](media/embed-service-principal/admin-portal.png)
 
-   ```powershell
-   Get-AzureADServicePrincipal -Filter "DisplayName eq '<application name>'"
-   ```
+## <a name="step-4---add-the-service-principal-as-an-admin-to-your-workspace"></a>Trin 4 – Tilføj tjenesteprincipalen som administrator til dit arbejdsområde
+
+Hvis du vil aktivere dine Microsoft Azure AD-adgangsartefakter, f. eks. rapporter, dashboards og datasæt i Power BI-tjenesten, skal du tilføje tjenestens principalenhed som medlem eller administrator til dit arbejdsområde.
+
+>[!NOTE]
+>Dette afsnit indeholder instruktioner til brugergrænsefladen. Du kan også føje en tjenesteprincipal til et arbejdsområde ved hjælp af [Grupper – Tilføj API for gruppebruger](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser).
+
+1. Rul til det arbejdsområde, du vil aktivere adgang til, og vælg **Adgang til arbejdsområde** i menuen **Mere**.
+
+    ![Indstillinger for arbejdsområde](media/embed-service-principal/workspace-access.png)
+
+2. Tilføj tjenesteprincipalen som **Administrator** eller **Medlem** til det nye arbejdsområde.
+
+    ![Arbejdsområdeadministrator](media/embed-service-principal/add-service-principal-in-the-UI.png)
+
+## <a name="step-5---embed-your-content"></a>Trin 5 – Integrer dit indhold
+
+Du kan integrere dit indhold i et eksempelprogram eller i dit eget program.
+
+* [Integrer indhold ved hjælp af eksempelprogrammet](embed-sample-for-customers.md#embed-content-using-the-sample-application)
+* [Integrer indhold i dit program](embed-sample-for-customers.md#embed-content-within-your-application)
+
+Når dit indhold er integreret, er du klar til at [gå videre til produktionen](embed-sample-for-customers.md#move-to-production).
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
@@ -178,7 +202,8 @@ Nedenfor er et eksempel på et script, der kan bruges til at hente objekt-id'et 
 
 ## <a name="next-steps"></a>Næste trin
 
-* [Registrer et program](register-app.md)
 * [Power BI Embedded til dine kunder](embed-sample-for-customers.md)
-* [Objekter for et program og en tjenesteprincipal i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+
 * [Sikkerhed på rækkeniveau ved hjælp af datagateway i det lokale miljø med tjenesteprincipal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+
+* [Integration af Power BI-indhold med tjenesteprincipal og et certifikat]()

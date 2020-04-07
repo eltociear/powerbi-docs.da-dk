@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: f86b9ae056770240485ff1984be4714faec9dc83
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 280e29d90e956ba47de6a0ff80b6f29bc0f00a18
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207913"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404080"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundlæggende begreber for designere i Power BI-tjenesten
 
 Formålet med denne artikel er at give dig indblik i Power BI-tjenesten: De forskellige elementer, hvordan de arbejder sammen, og hvordan du kan arbejde med dem. Du får muligvis mere ud af den, hvis du allerede har [tilmeldt dig Power BI-tjenesten](service-self-service-signup-for-power-bi.md) og [tilføjet nogle data](service-get-data.md). Som designer starter du normalt en typisk arbejdsgang med at oprette rapporter i Power BI Desktop. Derefter publicerer du dem til Power BI-tjenesten, hvor du kan fortsætte med at ændre dem. Du kan også oprette dashboards baseret på dine rapporter i Power BI-tjenesten. 
 
-Hvis du ikke har dine egne rapporter endnu, kan du i forbindelse med denne artikel installere en [indholdspakke med Power BI-eksempler](sample-datasets.md#the-power-bi-samples-as-content-packs).
+Hvis du ikke har dine egne rapporter endnu, kan du i forbindelse med denne artikel installere et af [Power BI-eksemplerne](sample-datasets.md).
 
 ![Startskærmen i Power BI-tjenesten i en browser](media/service-basic-concepts/power-bi-home-screen.png)
 

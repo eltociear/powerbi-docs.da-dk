@@ -6,22 +6,26 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/05/2020
+ms.date: 03/10/2020
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 0f0957962a761623262268f8c84c338000ba56f2
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 6886bc628add44f94c91b77cada97abf81635e78
+ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79078973"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80302287"
 ---
 # <a name="collaborate-in-workspaces"></a>Samarbejd i et arbejdsområde
 
  *Arbejdsområder* er steder, hvor du kan samarbejde med kolleger om bestemt indhold. Arbejdsområder oprettes af *Power BI-designere* til at opbevare samlinger af dashboards, rapporter og apps. 
 
+## <a name="types-of-workspaces"></a>Typer af arbejdsområder
+I **Mit arbejdsområde** gemmes alt det indhold, du ejer og opretter. Tænk på det som din personlige sandkasse eller arbejdsområde til dit eget indhold. For mange Power BI-forbrugere vil **Mit arbejdsområde** vedblive med at være tomt, fordi deres job ikke involverer oprettelse af nyt indhold. Forbrugere er defineret som dem, der forbruger data, som er oprettet af andre, og bruger disse data til at træffe forretningsbeslutninger. Hvis du opretter indhold, kan du overveje at læse [Power BI-artiklerne til designere](../create-reports/index.yml) i stedet for.
 
-<art showing different wss>
+**App-arbejdsområder** indeholder alt indhold til en specifik app. Når en *designer* opretter en app, samler vedkommende alt det indhold, der er nødvendigt for at bruge den pågældende app, og inkluderer det i appen. Dette omfatter: dashboards, rapporter, apps og datasæt. Det er ikke alle apps, der indeholder disse fire indholdselementer. En app kan indeholde blot ét dashboard eller tre af hver indholdstype eller endda 20 rapporter. Det afhænger af, hvad *designeren* inkluderer i appen. Det mest almindelige er, at app-arbejdsområder til *forbrugere* ikke indeholder datasæt.
+
+<!--<art showing different wss> -->
 
 ## <a name="roles-in-the-workspaces"></a>Roller i arbejdsområderne
 
@@ -42,3 +46,16 @@ Der kan være tilfælde, hvor du bliver inviteret til et arbejdsområde uden for
 ## <a name="next-steps"></a>Næste trin
 * [Apps i Power BI](end-user-apps.md)    
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+
+
+
+
+
+
+
+
+
+
+
+
+

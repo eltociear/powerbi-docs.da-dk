@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ab2aa7f1771c09a7ec725f9cc533717e7daf11a0
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 52ebb1bf049024051846936237d35b202f00d630
+ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79383499"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80464593"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Visualiseringer til virksomheder i Power BI
 
@@ -35,7 +35,7 @@ I følgende artikel kan du få mere at vide om, hvordan du bruger Power BI-visua
 I følgende artikel kan du få mere at vide om, hvordan du administrerer, udruller og håndterer Power BI-visualiseringer til organisationer i din organisation: [Få mere at vide om udrulning og administration af Power BI-visualiseringer til organisationer](https://go.microsoft.com/fwlink/?linkid=866790).
 
 > [!WARNING]
-> En brugerdefineret visualisering kan indeholde kode, der kan udgøre en risiko for sikkerheden eller beskyttelse af personlige oplysninger. Sørg for, at du har tillid til forfatteren af og kilden til en brugerdefineret visualisering, før du udruller den i virksomhedens lager.
+> Et Power BI-visual, der er installeret fra en fil, kan indeholde kode, der kan udgøre en risiko for sikkerheden eller beskyttelsen af personlige oplysninger. Sørg for, at du har tillid til forfatteren af og kilden til filen med Power BI-visual'et, før du udruller den til virksomhedens lager.
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
@@ -45,7 +45,9 @@ Administrator:
 
 * Ældre Power BI-visualiseringer (f.eks. Power BI-visualiseringer, som ikke er bygget oven på de nye versionerede API'er) understøttes ikke
 
-* Hvis en brugerdefineret visualisering slettes fra lageret, gengives alle eksisterende rapporter, som bruger den slettede visualisering, ikke. Du kan ikke fortryde en sletning fra lageret. Brug funktionen "Deaktiver" til at deaktivere en brugerdefineret visualisering midlertidigt.
+* Hvis et Power BI-visual fra ApSource eller en fil slettes fra lageret, gengives eventuelle eksisterende rapporter, som bruger det slettede visual, ikke. Sletning fra lageret kan ikke fortrydes. Hvis du midlertidig vil deaktivere et Power BI-visual fra ApSource eller en fil, skal du bruge funktionen "Deaktiver".
+
+* Organisatoriske Power BI-visuals understøttes ikke på Power BI-rapportserveren.
 
 Slutbruger:
 

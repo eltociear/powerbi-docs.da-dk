@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9338bc914c7f4e4afd826bcd3e3452e7c7a3ef35
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 403537f8cd18948c99cc4dffb911009771a8b806
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76040433"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404745"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Oprettelse og brug af dataflow i Power BI
 
@@ -92,7 +92,7 @@ Alle standardfelter, der ikke er tilknyttet, får *Null*-værdier for at bevare 
 
 Alle kildekolonner, der ikke er tilknyttet, forbliver, som de er, for at sikre, at resultatet af tilknytningen er et standardobjekt med brugerdefinerede felter.
 
-Når du har fuldført dine valg, og dit objekt og dets dataindstillinger er klar til at blive gemt, kan du vælge **Gem** i menuen. Bemærk, at du kan oprette flere objekter ved at vælge knappen **Tilføj objekter**, og du kan redigere objekterne for at tilpasse forespørgslerne og de objekter, du har oprettet.
+Når du har fuldført dine valg, og din enhed og dens dataindstillinger er klar til at blive gemt, kan du vælge **Gem** i menuen. Bemærk, at du kan oprette flere objekter ved at vælge knappen **Tilføj objekter**, og du kan redigere objekterne for at tilpasse forespørgslerne og de objekter, du har oprettet.
 
 ![Gem objekttilknytningen](media/service-dataflows-create-use/dataflows-create-use_09.png)
 
@@ -150,9 +150,9 @@ Det kan ske, at der opstår problemer med dataflowet, når der oprettes forbinde
 
 * **Salesforce-connector** – Brug af en prøvekonto til Salesforce med dataflow resulterer i en forbindelsesfejl, uden at der angives nogen oplysninger. For at løse problemet skal du bruge en produktionskonto til Salesforce eller en udviklerkonto til test.
 
-* **SharePoint-connector** – Sørg for at angive rodadressen på SharePoint-webstedet uden nogen undermapper eller dokumenter. Brug f.eks. links, der ligner følgende: https://microsoft.sharepoint.com/teams/ObjectModel/ 
+* **SharePoint-connector** – Sørg for at angive rodadressen på SharePoint-webstedet uden nogen undermapper eller dokumenter. Brug f.eks. links, der ligner følgende: `https://microsoft.sharepoint.com/teams/ObjectModel/` 
 
-* **JSON-fileconnector** – I øjeblikket kan du kun oprette forbindelse til en JSON-fil ved hjælp af basisgodkendelse.  Oprettelse af forbindelse til en JSON-fil ved hjælp af legitimationsoplysningerne i URL-adressen (f.eks, https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg...) er **ikke** understøttet i øjeblikket.  
+* **JSON-fileconnector** – I øjeblikket kan du kun oprette forbindelse til en JSON-fil ved hjælp af basisgodkendelse.  Oprettelse af forbindelse til en JSON-fil ved hjælp af legitimationsoplysningerne i URL-adressen (f.eks, `https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg`.) understøttes **ikke** i øjeblikket.  
 
 * **Azure SQL Data Warehouse** – Dataflow understøtter i øjeblikket ikke AAD-godkendelse (Azure Active Directory) for Azure SQL Data Warehouse. Brug basisgodkendelse til dette scenarie.
 

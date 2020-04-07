@@ -6,15 +6,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 03/26/2020
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 810077e8c651d3d6faf91eecb6fd320c24a69d2f
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 63275e882d71cd5c47a9a10baf4f0975abc2a845
+ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488792"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80302470"
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
 
@@ -92,7 +92,7 @@ En handling til opdatering af Power BI kan bestå af flere opdateringstyper, her
 
 #### <a name="data-refresh"></a>Opdatering af data
 
-For Power BI-brugere betyder opdatering af data typisk import af data fra de oprindelige datakilder til et datasæt enten på baggrund af en tidsplan for opdatering eller en opdatering on-demand. Du kan udføre flere opdateringer af datasæt dagligt, hvilket kan være nødvendigt, hvis den underliggende kildedata ændres ofte. Power BI begrænser datasæt på en delt kapacitet til otte daglige opdateringer. Hvis datasættet befinder sig på en Premium-kapacitet, kan du planlægge op til 48 opdateringer pr. dag under indstillingerne for datasættet. Du kan finde flere oplysninger under [Konfigurer planlagt opdatering](#configure-scheduled-refresh) senere i denne artikel.
+For Power BI-brugere betyder opdatering af data typisk import af data fra de oprindelige datakilder til et datasæt enten på baggrund af en tidsplan for opdatering eller en opdatering on-demand. Du kan udføre flere opdateringer af datasæt dagligt, hvilket kan være nødvendigt, hvis den underliggende kildedata ændres ofte. Power BI begrænser datasæt på en delt kapacitet til otte daglige opdateringer. Hvis datasættet befinder sig på en Premium-kapacitet, kan du planlægge op til 48 opdateringer pr. dag under indstillingerne for datasættet. Du kan finde flere oplysninger under [Konfigurer planlagt opdatering](#configure-scheduled-refresh) senere i denne artikel. Datasæt på en Premium-kapacitet med [XMLA-slutpunktet](service-premium-connect-tools.md), der er aktiveret til læsning/skrivning, understøtter ubegrænsede opdateringshandlinger, når de konfigureres programmeringsmæssigt med TMSL eller PowerShell.
 
 Det er også vigtigt at fremhæve, at begrænsningen for delt kapacitet for daglige opdateringer gælder for både planlagte opdateringer og API-opdateringer. Du kan også udløse en opdatering on-demand ved at vælge **Opdater nu** i menuen for datasættet, som vist på følgende skærmbillede. Opdateringer on-demand er ikke inkluderet i begrænsningen for opdateringer. Bemærk også, at datasæt på en Premium-kapacitet ikke pålægger begrænsninger for API-opdateringer. Hvis du er interesseret i at skabe din egen opdateringsløsning ved hjælp af REST API til Power BI, skal du se [Datasæt – Opdater datasæt](/rest/api/power-bi/datasets/refreshdataset).
 

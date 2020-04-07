@@ -6,20 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 04/01/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: de7a01f70d179237c45205447f564b3833db2156
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 15a4d88ac9de5d50caeb975afa8ad1758246031f
+ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881831"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80551074"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Download en rapport fra Power BI-tjenesten til Power BI Desktop (prøveversion)
 I Power BI Desktop kan du publicere en rapport (en *.pbix*-fil) fra din lokale computer til Power BI-tjenesten. Power BI-rapporter kan også gå i den modsatte retning: Du kan downloade en rapport fra Power BI-tjenesten til Power BI Desktop. Filtypenavnet for en Power BI-rapport er i begge tilfælde .pbix.
 
-Der er et par begrænsninger og overvejelser, du skal være opmærksom på, som behandles senere i denne artikel.
+Der er et par begrænsninger og overvejelser, du skal være opmærksom på, som behandles i afsnittet [Overvejelser og fejlfinding](#considerations-and-troubleshooting) i denne artikel.
 
 ![Rullelisten Filer](media/service-export-to-pbix/power-bi-file-export.png)
 
@@ -55,6 +55,7 @@ Der er nogle få vigtige overvejelser og begrænsninger knyttet til download af 
 * Du skal altid bruge den nyeste version af Power BI Desktop, når du åbner downloadede filer. Downloadede .pbix-filer åbnes muligvis ikke i versioner af Power BI Desktop, der ikke er de nyeste.
 * Hvis administratoren har deaktiveret muligheden for at downloade data, er denne funktion ikke synlig i Power BI-tjenesten.
 * Datasæt med trinvis opdatering kan ikke downloades til en .pbix-fil.
+* Hvis du opretter en Power BI-rapport, der er baseret på et datasæt i ét arbejdsområde og publicerer den i et andet arbejdsområde, kan du og dine brugere ikke downloade den. Overførselsfunktionen understøttes i øjeblikket ikke i dette scenarie.
 
 ## <a name="next-steps"></a>Næste trin
 Se videoen **Guy in a Cube** om denne funktion, den varer ét minut:

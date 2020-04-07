@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: parshah
-ms.openlocfilehash: ecb4f9540651b52f28626f8baa88854ff133b9d0
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.openlocfilehash: 8b30089fe04c832734bd418cc58fabb7b574a082
+ms.sourcegitcommit: dc18209dccb6e2097a92d87729b72ac950627473
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78401997"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80361783"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Vejledning i kapacitetsplanlægning i Power BI-rapportserver
 Power BI-rapportserver er en selvbetjenings-BI og virksomhedsrapporteringsløsning, som kunder kan installere i deres lokale miljø, bag deres firewall. Løsningen kombinerer den interaktive rapporteringskapacitet i Power BI Desktop med serverplatformen i SQL Server Reporting Services i det lokale miljø. I takt med virksomheders stigende og omfattende brug af analyser og rapportering, kan det være en udfordring at udarbejde et budget, der tager højde for de skalerbare løsninger til hardwareinfrastrukturen og de softwarelicenser, der kræves til en virksomheds brugergrundlag. Denne rapports primære sigte er at give en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af adskillelige gennemførsler af belastningstest ved forskellige arbejdsbelastninger i forhold til en rapportserver. Organisationers rapporterings-, forespørgsels- og brugsmønstre varierer betydeligt, men resultaterne forelagt i denne rapport kan, sammen med de anvendte faktiske test og en detaljeret beskrivelse af deres gennemførselsmetode, bruges som referencepunkt for alle, der er i den tidlige planlægningsfase i processen med at installere Power BI-rapportserver.
@@ -116,7 +116,7 @@ De resultater, der er fremlagt i denne rapport, er opnået ved at udføre en spe
 ### <a name="1-topology"></a>1 Topologi
 **1.1 Power BI-rapportservertopologi**
 
-For udelukkende at fokusere på Power BI-rapportserverens funktionsmåde under forskellige konfigurationer, så blev der brugt en fast VM-konfiguration for hver type computer (med undtagelse af computeren der var vært for Power BI-rapportserveren). Hver computer blev klargjort i overensstemmelse med anden generation (v2) D Serie-computere med Premium Storage-harddiske. Du kan finde detaljerede oplysninger om størrelsen af hver enkelt VM i afsnittet "Generelle formål" på https://azure.microsoft.com/pricing/details/virtual-machines/windows/.
+For udelukkende at fokusere på Power BI-rapportserverens funktionsmåde under forskellige konfigurationer, så blev der brugt en fast VM-konfiguration for hver type computer (med undtagelse af computeren der var vært for Power BI-rapportserveren). Hver computer blev klargjort i overensstemmelse med anden generation (v2) D Serie-computere med Premium Storage-harddiske. Du kan finde detaljerede oplysninger om størrelsen af hver enkelt VM i afsnittet ["Generelle formål"](https://azure.microsoft.com/pricing/details/virtual-machines/windows/).
 
 | Type af virtuel maskine | Processor | Hukommelse | Azure VM-størrelse |
 | --- | --- | --- | --- |
@@ -126,7 +126,7 @@ For udelukkende at fokusere på Power BI-rapportserverens funktionsmåde under f
 
 **1.2 Konfiguration af Power BI-rapportservers virtuelle maskine** 
 
-Forskellige konfigurationer af processor og hukommelse er blevet brugt til den virtuelle maskine, der hoster Power BI-rapportserveren. Til forskel fra andre VM'er er denne computer blevet klargjort i overensstemmelse med tredje generation (v3) D Serie-computere med Premium Storage-harddiske. Du kan finde detaljerede oplysninger om størrelsen af denne VM i afsnittet "Generelle formål" på https://azure.microsoft.com/pricing/details/virtual-machines/windows/.
+Forskellige konfigurationer af processor og hukommelse er blevet brugt til den virtuelle maskine, der hoster Power BI-rapportserveren. Til forskel fra andre VM'er er denne computer blevet klargjort i overensstemmelse med tredje generation (v3) D Serie-computere med Premium Storage-harddiske. Du kan finde detaljerede oplysninger om størrelsen af denne VM i [afsnittet"Generelle formål"](https://azure.microsoft.com/pricing/details/virtual-machines/windows/.)
 
 | Virtuel maskine | Processor | Hukommelse | Azure VM-størrelse |
 | --- | --- | --- | --- |

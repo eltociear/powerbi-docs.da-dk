@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 03/27/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 852bdcdeb71f6dae555c37467145bad6b584e324
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: 1208a598c08b87d0e479e4d8901f880a5dfa6900
+ms.sourcegitcommit: dc18209dccb6e2097a92d87729b72ac950627473
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527612"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80361857"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Trinvis opdatering i Power BI
 
@@ -136,7 +136,7 @@ En trinvis opdatering på 10 dage er selvfølgelig meget mere effektiv end en ko
 >
 > Reducer præcisionen til et niveau, der er acceptabelt i forhold til dine krav om opdateringshyppighed.
 >
-> Vi har planer om at gøre det muligt at definere brugerdefinerede forespørgsler til registrering af ændrede data på et senere tidspunkt. Dette kan bruges til helt at undgå at skulle bevare kolonneværdien.
+> Definer en brugerdefineret forespørgsel om registrering af dataændringer ved hjælp af XMLA-slutpunktet, og undgå helt at bevare kolonneværdien. Du kan finde flere oplysninger i brugerdefinerede forespørgsler om registrering af dataændringer nedenfor.
 
 #### <a name="only-refresh-complete-periods"></a>Opdater kun samlede perioder
 
@@ -155,7 +155,7 @@ Du kan nu opdatere modellen. Den første opdatering kan tage længere tid, da ov
 
 ## <a name="query-timeouts"></a>Timeout for forespørgsel
 
-I artiklen [Fejlfinding i forbindelse med opdatering](https://docs.microsoft.com/power-bi/refresh-troubleshooting-refresh-scenarios) forklares det, at der kan opstå timeout for opdateringshandlinger i Power BI-tjenesten. Forespørgsler kan også være begrænset af standardtimeout for datakilden. De fleste relationskilder tillader tilsidesættelse af timeout i M-udtryk. I udtrykket nedenfor bruges [funktionen SQL Server-dataadgang ](https://msdn.microsoft.com/query-bi/m/sql-database) f.eks. til at angive det til to timer. Hver periode, der er defineret af politikintervallerne, sender en forespørgsel, der overholder indstillingen for timeout for kommandoer.
+I artiklen [Fejlfinding i forbindelse med opdatering](refresh-troubleshooting-refresh-scenarios.md) forklares det, at der kan opstå timeout for opdateringshandlinger i Power BI-tjenesten. Forespørgsler kan også være begrænset af standardtimeout for datakilden. De fleste relationskilder tillader tilsidesættelse af timeout i M-udtryk. I udtrykket nedenfor bruges [funktionen SQL Server-dataadgang ](https://docs.microsoft.com/powerquery-m/sql-database) f.eks. til at angive det til to timer. Hver periode, der er defineret af politikintervallerne, sender en forespørgsel, der overholder indstillingen for timeout for kommandoer.
 
 ```powerquery-m
 let
@@ -166,7 +166,89 @@ in
     #"Filtered Rows"
 ```
 
-## <a name="limitations"></a>Begrænsninger
+## <a name="xmla-endpoint-benefits-for-incremental-refresh"></a>Fordele ved XMLA-slutpunktet for trinvis opdatering
 
-Gradvis opdatering understøttes i øjeblikket kun for [sammensatte modeller](desktop-composite-models.md) for datakilder fra SQL Server, Azure SQL Database, SQL Data Warehouse, Oracle og Teradata.
+[XMLA-slutpunktet](service-premium-connect-tools.md) for datasæt i en Premium-kapacitet kan aktiveres til læse-/skrivehandlinger, hvilket kan give store fordele for trinvis opdatering. Opdateringshandlinger via XMLA-slutpunktet er ikke begrænset til [48 opdateringer pr. dag](refresh-data.md#data-refresh), og timeout for [den planlagte opdatering](refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) er ikke pålagt, hvilket kan være nyttigt i scenarier med trinvis opdatering.
 
+### <a name="refresh-management-with-sql-server-management-studio-ssms"></a>Administration af opdatering med SQL Server Management Studio (SSMS)
+
+Med XMLA-slutpunktet kan læse-/skriveaktiveret SSMS bruges til at få vist og administrere partitioner, der er oprettet ved anvendelse af politikker for trinvis opdatering.
+
+![Partitioner i SSMS](media/service-premium-incremental-refresh/ssms-partitions.png)
+
+#### <a name="refresh-historical-partitions"></a>Opdater historiske partitioner
+
+Dette gør det muligt f.eks. at opdatere en bestemt historisk partition, der ikke er i det trinvise interval, for at udføre en tilbagedateret opdatering uden at skulle opdatere alle historiske data.
+
+#### <a name="override-incremental-refresh-behavior"></a>Tilsidesæt funktionsmåde for trinvis opdatering
+
+Med SSMS får du også mere kontrol over, hvordan du aktiverer trinvise opdateringer ved hjælp af [TMSL (Tabular Model Scripting Language)](https://docs.microsoft.com/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current) og [TOM (Tabular Object Model)](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current). I SSMS kan du f. eks. højreklikke på en tabel i Object Explorer og derefter vælge menupunktet **Behandl tabel**. Klik derefter på knappen **Script** for at generere en TMSL-opdateringskommando.
+
+![Knappen Script i dialogboksen Behandl tabel](media/service-premium-incremental-refresh/ssms-process-table.png)
+
+Følgende parametre kan indsættes i TMSL-opdateringskommandoen for at tilsidesætte standardfunktionsmåden for trinvis opdatering.
+
+- **applyRefreshPolicy** – Hvis en tabel har defineret en trinvis opdateringspolitik, bestemmer applyRefreshPolicy, om politikken anvendes eller ej. Hvis politikken ikke anvendes, efterlader en Behandl komplet-handling partitionsdefinitionerne uændrede, og der udføres en fuld opdatering af alle partitioner i tabellen. Standardværdien er True.
+
+- **effectiveDate** – Hvis der anvendes en politik for trinvis opdatering, skal den kende den aktuelle dato for at bestemme det rullende vindues intervaller for det historiske interval og det trinvise interval. Parameteren effectiveDate gør det muligt for dig at tilsidesætte den aktuelle dato. Dette er nyttigt i forbindelse med test, demoer og forretningsscenarier, hvor data opdateres trinvist til en dato i fortiden eller fremtiden (f. eks. budgetter i fremtiden). Standardværdien er den [aktuelle dato](#current-date).
+
+```json
+{ 
+  "refresh": {
+    "type": "full",
+
+    "applyRefreshPolicy": true,
+    "effectiveDate": "12/31/2013",
+
+    "objects": [
+      {
+        "database": "IR_AdventureWorks", 
+        "table": "FactInternetSales" 
+      }
+    ]
+  }
+}
+```
+
+### <a name="custom-queries-for-detect-data-changes"></a>Brugerdefinerede forespørgsler om registrering af dataændringer
+
+Du kan bruge TMSL og/eller TOM til at tilsidesætte funktionsmåden for de registrerede dataændringer. Det kan ikke kun bruges til at undgå, at kolonnen med den seneste opdatering i cachen i hukommelsen bevares, men det kan gøre det muligt at aktivere scenarier, hvor en konfigurations-/instruktionstabel klargøres af ETL-processer, med det formål kun at markere de partitioner, der skal opdateres. Det kan skabe en mere effektiv trinvis opdateringsproces, hvor kun de påkrævede perioder opdateres, uanset hvor længe det er, siden dataopdateringerne fandt sted.
+
+pollingExpression er beregnet til at være et M-letvægtsudtryk eller et navn på en anden M-forespørgsel. Det skal returnere en skalaværdi og udføres for hver partition. Hvis den returnerede værdi er forskellig fra den værdi, der blev returneret, sidste gang en trinvis opdatering forekom, er partitionen markeret med henblik på fuld behandling.
+
+Følgende eksempel dækker alle 120 måneder i det historiske område for tilbagedaterede ændringer. Hvis du angiver 120 måneder i stedet for 10 år, er datakomprimering muligvis ikke helt lige så effektiv, men du undgår at skulle opdatere et helt historisk år, hvilket ville være dyrere, og en måned ville være tilstrækkelig til en tilbagedateret ændring.
+
+```json
+"refreshPolicy": {
+    "policyType": "basic",
+    "rollingWindowGranularity": "month",
+    "rollingWindowPeriods": 120,
+    "incrementalGranularity": "month",
+    "incrementalPeriods": 120,
+    "pollingExpression": "<M expression or name of custom polling query>",
+    "sourceExpression": [
+    "let ..."
+    ]
+}
+```
+
+## <a name="metadata-only-deployment"></a>Udrulning udelukkende af metadata
+
+Når du publicerer en ny version af en PBIX-fil fra Power BI Desktop til et arbejdsområde i Power BI-tjenesten, bliver du bedt om at erstatte det eksisterende datasæt, hvis der allerede findes et datasæt med det samme navn.
+
+![Prompt om erstatning af datasæt](media/service-premium-incremental-refresh/replace-dataset-prompt.png)
+
+I nogle tilfælde vil du muligvis ikke erstatte datasættet, især i tilfælde af trinvis opdatering. Datasættet i Power BI Desktop kan være meget mindre end det, der er i tjenesten. Hvis der er anvendt en politik for trinvis opdatering på datasættet i tjenesten, kan det indeholde flere års historiske data, der går tabt, hvis datasættet erstattes. Opdatering af alle historiske data kan tage flere timer og resultere i systemnedetid for brugerne.
+
+Det er bedre at udføre en udrulning udelukkende af metadata. Dette gør det muligt at installere nye objekter uden at miste de historiske data. Hvis du f. eks. har tilføjet et par målinger, kan du nøjes med at udrulle de nye målinger uden at skulle opdatere dataene, hvilket sparer meget tid.
+
+Når XMLA-slutpunktet er konfigureret til læsning/skrivning, sørger det for kompatibilitet med de værktøjer, der får dette til at ske. ALM Toolkit er f. eks. et skemasammenligningsværktøj til Power BI-datasæt og kan kun bruges til udrulning af metadata.
+
+Hent og installér den nyeste version af ALM Toolkit fra [git-lageret til Analysis Services](https://github.com/microsoft/Analysis-Services/releases). Dokumentationslinks og oplysninger om support er tilgængelige via Hjælp-båndet. Hvis du vil udføre en udrulning udelukkende af metadata, skal du udføre en sammenligning og vælge den kørende Power BI Desktop-instans som kilde og det eksisterende datasæt i tjenesten som destination. Overvej de forskelle, der vises, og spring over opdateringerne af tabellen med partitionerne med trinvise opdatering, eller brug dialogboksen Indstillinger til at angive, at du vil beholde partitioner til tabelopdateringer. Valider valget for at sikre destinationsmodellens integritet, og opdater derefter.
+
+![ALM Toolkit](media/service-premium-incremental-refresh/alm-toolkit.png)
+
+## <a name="see-also"></a>Se også
+
+[Netværksmulighed for datasæt med XMLA-slutpunktet](service-premium-connect-tools.md)   
+[Fejlfinding i forbindelse med opdatering af scenarier](refresh-troubleshooting-refresh-scenarios.md)   
