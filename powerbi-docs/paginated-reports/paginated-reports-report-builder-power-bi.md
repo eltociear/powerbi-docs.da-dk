@@ -8,20 +8,18 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/27/2019
-ms.openlocfilehash: 7ab9ac60e416502f69401fcea87a697f53176448
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: 924c2850efe1e9e09a8f6f350be616695ab061ea
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80404792"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621562"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Hvad er sideinddelte rapporter i Power BI Premium?
 
 Sideinddelte rapporter, der længe har været standardrapportformatet i SQL Server Reporting Services, er nu tilgængelige i Power BI-tjenesten. Disse rapporter kan udskrives eller deles. De kaldes "sideinddelte", fordi de er formateret til at passe godt på en side. De viser alle data i en tabel, selvom tabellen strækker sig over flere sider. De kaldes også nogle gange "perfekt pixel", fordi du kan styre deres rapportsidelayout helt præcist. Sideinddelte rapporter er baseret på RDL-rapportteknologien i SQL Server Reporting Services. Report Builder er det separate værktøj, der bruges til oprettelse af sideinddelte rapporter. 
 
 Sideinddelte rapporter kan indeholde mange sider. Denne rapport indeholder f.eks. 563 sider. Hver side viser præcis én side pr. faktura og har gentagne sidehoveder og sidefødder.
-
-Prøv det [praktiske laboratorie: Opret en sideinddelt Microsoft Power BI-rapport](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 
 ![Sideinddelt](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
@@ -87,5 +85,4 @@ Her er nogle andre funktioner, der ikke understøttes i den første version:
 - [Installér Power BI Report Builder fra Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Selvstudium: Opret en sideinddelt rapport](paginated-reports-quickstart-aw.md)
 - [Angiv data direkte i en sideinddelt rapport](paginated-reports-enter-data.md)
-- [Praktisk laboratorie: Opret en sideinddelt Microsoft Power BI-rapport](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
-- [Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder](../developer/embed-paginated-reports-customers.md).
+- [Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder](../developer/embed-paginated-reports-customers.md)

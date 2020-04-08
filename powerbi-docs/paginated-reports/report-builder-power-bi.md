@@ -9,18 +9,16 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 5ef6068135e8adcbfd242ca4a6491396101d214e
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 0118bc427ce58f48d50b3e8ed4e918bf66c6e8fc
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78923005"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621537"
 ---
 # <a name="power-bi-report-builder"></a>Power BI Report Builder
 
  Power BI Report Builder er et værktøj, der bruges til at oprette sideinddelte rapporter.  Når du designer en sideinddelt rapport, opretter du en rapportdefinition, der angiver, hvilke data der skal hentes, hvor du kan få dem, og hvordan de skal vises. Når du kører rapporten, bruger rapportbehandleren den angivne rapportdefinition, henter dataene og kombinerer dem med rapportlayoutet for at generere rapporten. Du kan få forhåndsvist rapporten i Report Builder. Derefter kan du publicere rapporten i Power BI-tjenesten.
-
-Prøv det [praktiske laboratorie: Opret en sideinddelt Microsoft Power BI-rapport](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 
 Foretrækker du at lære fra videoer? Se videoserien om sideinddelte rapporter i Power BI på YouTube af Chris Finlan, der er Principal Program Manager for Power BI.
 
@@ -30,13 +28,13 @@ Følgende sideinddelte rapport indeholder en matrix med række- og kolonnegruppe
 
 ![Sideinddelt rapport i Power BI-tjenesten](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
-##  <a name="JumpStartReptCreation"></a> Kom godt i gang med at oprette rapporter  
+##  <a name="jump-start-report-creation"></a><a name="JumpStartReptCreation"></a> Kom godt i gang med at oprette rapporter  
  
 -   **Start med guiden Tabel, matrix eller diagram**. Opret en forbindelse til datakilden, træk og slip felter for at oprette en forespørgsel for datasæt, vælg layout og stil, og tilpas din rapport.  
   
 -   **Start med guiden Kort** for at oprette rapporter, der viser aggregerede data på en geografisk eller geometriske baggrund. Kortdata kan være afstandsdata fra en Transact-SQL-forespørgsel eller en ESRI-formfil (Environmental Systems Research Institute, Inc.). Du kan også tilføje en feltbaggrund fra Microsoft Bing Kort.  
 
-##  <a name="DesignRept"></a> Design rapporten  
+##  <a name="design-your-report"></a><a name="DesignRept"></a> Design rapporten  
   
 -   **Opret sideinddelte rapporter med layouts af typen tabel, matrix og diagram samt formaliafrit layout.** Opret tabelrapporter for kolonnebaserede data, matrixrapporter (f.eks. rapporter med tværgående faner eller pivottabeller) til opsummerede data, diagramrapporter til grafiske data og formaliafrie rapporter til alt andet. Der kan integreres andre rapporter og diagrammer sammen med lister, grafik og kontrolelementer til dynamiske webbaserede programmer i rapporter.  
   
@@ -52,7 +50,7 @@ Følgende sideinddelte rapport indeholder en matrix med række- og kolonnegruppe
   
 -   **Integrer eller henvis til billeder** og andre ressourcer, herunder eksternt indhold.  
   
-##  <a name="ManageRpt"></a> Administrer din rapport  
+##  <a name="manage-your-report"></a><a name="ManageRpt"></a> Administrer din rapport  
   
 -   **Gem definitionen af rapporten** på din computer eller på rapportserveren, hvor du kan administrere den og dele den med andre.  
   
@@ -63,5 +61,4 @@ Følgende sideinddelte rapport indeholder en matrix med række- og kolonnegruppe
 ## <a name="next-steps"></a>Næste trin
 
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-- Prøv det [praktiske laboratorie: Opret en sideinddelt Microsoft Power BI-rapport](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
 - Se [videoserien om sideinddelte rapporter i Power BI](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ) på YouTube af Chris Finlan, der er Principal Program Manager for Power BI

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 1db56c2844d217bf6bff633609893e5a97a6dae5
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 91fc7e9e3664f21d50b475f316a9a6c64875fab4
+ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114895"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80802116"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Få vist Power BI-rapporter, der er optimeret til din telefon
 
@@ -39,10 +39,11 @@ Alle andre funktioner i Power BI-rapporterne kan stadig bruges i de rapporter, d
 ## <a name="filter-the-report-page-on-a-phone"></a>Filtrer rapportsiden på en telefon
 Hvis der er defineret filtre i en rapport, der er optimeret til telefoner, kan du bruge filtrene, når du får vist rapporten på en telefon. Rapporten åbnes på din telefon filtreret efter de værdier, der filtreres efter i rapporten på internettet. Du får vist en meddelelse om, at der er aktive filtre på siden. Du kan ændre filtrene på telefonen.
 
-1. Tryk på filterikonet ![Telefonfilterikon](./media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) nederst på siden. 
+1. Tryk på filterikonet ![Telefonfilterikon](./media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) nederst på siden.
+
 2. Brug grundlæggende eller avanceret filtrering for at få vist de resultater, du er interesseret i.
    
-    ![Avanceret filter i Power BI-telefonrapport](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
+    ![Avanceret filter i Power BI-telefonrapport](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.png)
 
 ## <a name="cross-highlight-visuals"></a>Tværgående fremhævning i visualiseringer
 Tværgående fremhævning af visualiseringer i stående visning fungerer på samme måde som i Power BI-tjenesten og i telefoner i liggende visning: Når du vælger data i en visualisering, fremhæves relaterede data i de andre visualiseringer på siden.
