@@ -60,6 +60,8 @@
               href: mobile-apps-view-phone-report.md
             - name: Få vist rapporter i det lokale miljø i mobilappsene
               href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+            - name: 'Beskyt med Face ID, Touch ID, Passcode eller Fingerprint ID'
+              href: mobile-native-secure-access.md
             - name: Få adgang til indhold fra en ekstern organisation (B2B)
               href: mobile-apps-b2b.md
             - name: Scan en Power BI QR-kode fra din telefon
@@ -76,8 +78,6 @@
           items:
             - name: Kom i gang med iOS-appen
               href: mobile-iphone-app-get-started.md
-            - name: 'Beskyt med Face ID, Touch ID eller adgangskode'
-              href: mobile-ios-native-secure-access.md
             - name: Virtuel Spørgsmål og svar-analytiker i iOS-mobilapps
               href: mobile-apps-ios-qna.md
             - name: Integration af Power BI-mobilapp med Siri-genveje
@@ -90,6 +90,10 @@
           items:
             - name: Kom i gang med Android-appen
               href: mobile-android-app-get-started.md
+            - name: Brug genveje i Android-appen
+              href: mobile-app-quick-access-shortcuts.md
+            - name: Find og få adgang til indhold med Google Search
+              href: mobile-app-find-access-google-search.md
             - name: Løsning af "Der er ikke tillid til din virksomheds SSL-certifikat"
               href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
             - name: Løsning af "Det er nødvendigt at opdatere Android System Webview"
