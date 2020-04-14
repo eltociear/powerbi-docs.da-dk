@@ -7,20 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 04/06/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: a61288c9792d562e9a5efecd43d879d6df6d1782
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 268aa73506be5cc025645672f402b88646497b1c
+ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698871"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80813069"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Overvåg Premium-kapaciteter vha. appen
 
 Overvågning af dine kapaciteter er afgørende for at træffe beslutninger om den bedste måde, du kan udnytte dine ressourcer i Premium-kapaciteten på. Du kan overvåge kapacitet via administrationsportalen eller programmet **Power BI Premium Capacity Metrics**. Denne artikel indeholder en beskrivelse af brugen af programmet Premium Capacity Metrics. Programmet giver de mest detaljerede oplysninger om ydeevnen af dine kapaciteter. Hvis du vil have et overblik over målepunkter for den gennemsnitlige brug på et højere niveau for de seneste syv dage, skal du bruge administrationsportalen. Du kan finde flere oplysninger om overvågning på portalen under [Overvåg Premium-kapaciteter på administrationsportalen](service-admin-premium-monitor-portal.md).
 
 Programmet opdateres jævnligt med nye funktioner og funktionalitet. Sørg for, at du kører den nyeste version. Hvis en tidligere version af programmet allerede er installeret, er det bedst at slette den fra dine programmer og derefter trykke på CTRL + F5 for at opdatere.
+
+> [!IMPORTANT]
+> Hvis der er et højt forbrug af ressourcer i din Power BI Premium-kapacitet, hvilket medfører problemer med ydeevne eller pålidelighed, kan du modtage notifikationer via mail for at identificere og løse problemet. Dette kan være en strømlinet metode til fejlfinding af overbelastede kapaciteter. Se [notifikationer om kapacitet og pålidelighed](service-interruption-notifications.md#capacity-and-reliability-notifications) for at få flere oplysninger.
 
 ## <a name="install-the-app"></a>Installér programmet
 
@@ -60,7 +63,7 @@ Dashboardet indeholder følgende målepunkter:
 
 #### <a name="top"></a>Øverst
 
-| Data | Beskrivelse |
+| Metrikværdi | Beskrivelse |
 | --- | --- |
 | Version | Appversion. | 
 | Kapaciteter | Antallet af kapaciteter, som du er administrator for. | 
@@ -69,7 +72,7 @@ Dashboardet indeholder følgende målepunkter:
 
 #### <a name="system-summary"></a>Systemoversigt
 
-| Data | Beskrivelse |
+| Metrikværdi | Beskrivelse |
 | --- | --- |
 | Kapacitet med højeste CPU-udnyttelse | Kapacitet med det maksimale antal gange, hvor CPU'en overskred 80 % af tærsklerne i løbet af de seneste syv dage. |
 | Antal gange med højeste CPU-udnyttelse | Antal gange, hvor CPU'en for den navngivne kapacitet overskred 80 % af tærsklerne i løbet af de seneste syv dage. | 
@@ -79,7 +82,7 @@ Dashboardet indeholder følgende målepunkter:
 
 #### <a name="dataset-summary"></a>Oversigt over datasæt
 
-| Data | Beskrivelse |
+| Metrikværdi | Beskrivelse |
 | --- | --- |
 | Datasæt | Det samlede antal datasæt på tværs af alle arbejdsområder i dine kapaciteter.|
 | Den gennemsnitlige størrelse af datasæt (MB) | Den gennemsnitlige størrelse af datasæt på tværs af alle arbejdsområder i dine kapaciteter.|  
@@ -106,7 +109,7 @@ Dashboardet indeholder følgende målepunkter:
 
 #### <a name="dataflow-summary"></a>Oversigt over dataflow
 
-| Data | Beskrivelse |
+| Metrikværdi | Beskrivelse |
 | --- | --- |
 | Dataflow |  Det samlede antal dataflow på tværs af alle arbejdsområder i dine kapaciteter.|
 | Opdateringer i alt | Det samlede antal opdateringer i løbet af de seneste syv dage.|  
@@ -120,7 +123,7 @@ Dashboardet indeholder følgende målepunkter:
 
 #### <a name="paginated-report-summary"></a>Oversigt over sideinddelt rapport
 
-| Data | Beskrivelse |
+| Metrikværdi | Beskrivelse |
 | --- | --- |
 | Sideinddelte rapporter |  Det samlede antal sideinddelte rapporter på tværs af alle arbejdsområder i dine kapaciteter. |
 | Visninger i alt | Det samlede antal gange, som alle rapporter er blevet set af brugere. | 
@@ -134,7 +137,7 @@ Dashboardet indeholder følgende målepunkter:
 
 #### <a name="ai-summary"></a>Oversigt over kunstig intelligens
 
-| Data | Beskrivelse |
+| Metrikværdi | Beskrivelse |
 | --- | --- |
 | Funktionsudførelse med kunstig intelligens | Det samlede antal udførelser i løbet af de seneste syv dage. |
 | Pålidelighed af funktionsudførelse med kunstig intelligens (%) | Antallet af vellykkede udførelser delt med det samlede antal udførelser i løbet af de seneste syv dage. |

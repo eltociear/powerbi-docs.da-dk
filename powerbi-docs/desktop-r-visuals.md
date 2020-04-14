@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/04/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 729a50e251a9c2ae083375e187ff133022f3ce91
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: 061a2a99ad4cc812aac0d66ec4993001187179a0
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114859"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979885"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Opret Power BI-visualiseringer ved hjælp af R
 Med Power BI Desktop kan du bruge *R* til at visualisere dine data. [R](https://mran.revolutionanalytics.com/documents/what-is-r) er et sprog og et miljø til statistisk databehandling og grafik.
@@ -142,6 +142,8 @@ R-visualiseringer i Power BI Desktop har følgende begrænsninger:
 * Fremhævninger: R-visualiseringer reagerer på fremhævning af andre visualiseringer, men du kan ikke vælge elementer i en R-visualisering for at filtrere på tværs af andre elementer.
 
 * Visningsenheder: Det er kun afbildninger, der afbildes på den R-enhed, som bruges til standardvisning, der vises korrekt på canvasset. Undgå at bruge en anden R-enhed til visning.
+
+* Omdøber kolonne: Visuelle R-elementer understøtter ikke omdøbning af inputkolonner. Der refereres til kolonner fra deres oprindelige navn under udførelsen af scriptet.
 
 * RRO-installationer: I denne udgivelse identificeres RRO-installationer ikke automatisk i 32-bit versionen af Power BI Desktop. Du skal manuelt angive stien til R-installationsmappen under **Indstillinger** > **Indstillinger** > **R-script**.
 

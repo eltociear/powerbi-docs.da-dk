@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: ee3cfec0c735ad52f9a036e75f61c1ab0400567b
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 043f27a2fb695811ac867689b4a63efdefded2e6
+ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75217800"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80802043"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Scan en stregkode med din enhed fra Power BI-mobilappen
 Scan stregkoder i den virkelige verden for at gå direkte til filtrerede BI-oplysninger i Power BI-mobilappen.
@@ -21,9 +21,9 @@ Scan stregkoder i den virkelige verden for at gå direkte til filtrerede BI-oply
 
 Gælder for:
 
-| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | 
-|:--- |:--- |
-| iPhone | Android (telefon og tablet) | 
+| ![iPhone](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![iPad-tablets](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![Android-telefon](././media/mobile-apps-qr-code/android-logo-40-px.png) | ![Android-tablet](././media/mobile-apps-qr-code/android-logo-40-px.png) |
+|:--- |:--- |:--- |:--- |
+|iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |
 
 Lad os sige, at en kollegaer har [mærket et stregkodefelt i en rapport i Power BI Desktop](../../desktop-mobile-barcodes.md) og delt rapporten med dig. 
 
@@ -59,14 +59,14 @@ Her er nogle meddelelser, som du kan få vist, når du scanner en stregkode på 
 Den rapport, du vælger at filtrere, er baseret på en datamodel, der ikke indeholder denne stregkodeværdi. For eksempel: Produktet "mineralvand" er ikke omfattet af rapporten.  
 
 ### <a name="allsome-of-the-visuals-in-the-report-dont-contain-any-value"></a>Alle/nogle af de visuelle elementer i rapporten indeholder ikke en værdi
-Den stregkodeværdi, du scannede, findes i din model, men alle/nogle af de visuelle elementer på rapporten indeholder ikke denne værdi, og derfor returnerer filtreringen til en tom tilstand. Prøv at se på andre rapportsider, eller rediger dine egne rapporter i Power BI Desktop, så de indeholder denne værdi 
+Den stregkodeværdi, du scannede, findes i din model, men alle/nogle af de visuelle elementer i rapporten indeholder ikke denne værdi, og derfor returnerer filtreringen en tom tilstand. Prøv at se på andre rapportsider, eller rediger dine egne rapporter i Power BI Desktop, så de indeholder denne værdi 
 
 ### <a name="looks-like-you-dont-have-any-reports-that-can-be-filtered-by-barcodes"></a>"Det ser ud til, at du ikke har nogen rapporter, der kan filtreres efter stregkoder".
-Det betyder, at du ikke har rapporter, der er aktiveret med en stregkode. Stregkodescanneren kan kun filtrere rapporter, som har en kolonne, der er markeret som **Stregkode**.  
+Det betyder, at du ikke har rapporter, hvor stregkoder er aktiveret. Stregkodescanneren kan kun filtrere rapporter, som har en kolonne, der er markeret som **Stregkode**.  
 
 Kontrollér, at du eller rapportens ejer har mærket en kolonne som **Stregkode** i Power BI Desktop. Få mere at vide om [markering af et stregkodefelt i Power BI Desktop](../../desktop-mobile-barcodes.md)
 
-### <a name="couldnt-filter-report---looks-like-this-barcode-doesnt-exist-in-the-report-data"></a>"Rapporten kunne ikke filtreres– Det ser ud til, at denne stregkode ikke findes i rapportdataene".
+### <a name="couldnt-filter-report---looks-like-this-barcode-doesnt-exist-in-the-report-data"></a>"Rapporten kunne ikke filtreres – det ser ud til, at denne stregkode ikke findes i rapportdataene".
 Den rapport, du valgte at filtrere, er baseret på en datamodel, der ikke indeholder denne stregkodeværdi. For eksempel: Produktet "mineralvand" er ikke omfattet af rapporten. Du kan scanne et andet produkt, vælge en anden rapport (hvis der findes flere rapporter) eller få vist rapporten ufiltreret. 
 
 ## <a name="next-steps"></a>Næste trin

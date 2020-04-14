@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/24/2020
+ms.date: 04/08/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: d468ab70f47edcd5487b548596f4aea4080cd994
-ms.sourcegitcommit: 8267a7383d6506dae42f87e4f4a2362b875b2911
+ms.openlocfilehash: aa44f0c8c11cb26ecfc7763ec127ca8a8505536a
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80329638"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979908"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurer arbejdsbelastninger i en Premium-kapacitet
 
@@ -65,7 +65,7 @@ Arbejdsbelastningen for datasæt er som standard aktiveret og kan ikke deaktiver
 | **Maks. hukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse, som datasæt kan bruge i en kapacitet. |
 | **XMLA-slutpunkt** | Angiver, at forbindelser fra klientprogrammer overholder det medlemskab af sikkerhedsgrupper, der er angivet for arbejdsområdet og appniveauerne. Du kan få mere at vide i [Opret forbindelse til datasæt med klientprogrammer og -værktøjer](service-premium-connect-tools.md). |
 | **Maks. antal mellemliggende rækker** | Det maksimale antal mellemliggende rækker, der blev returneret af DirectQuery. Standardværdien er 1000000, og det tilladte interval er mellem 100000 og 2147483647. |
-| **Maksimal størrelse på offlinedatasæt (GB)** | Den maksimale størrelse på offlinedatasæt i hukommelsen. Dette er den komprimerede størrelse på disken. Standardværdien er angivet af SKU, og det tilladte interval er mellem 0,1 og 10 GB. |
+| **Maksimal størrelse på offlinedatasæt (GB)** | Den maksimale størrelse på offlinedatasæt i hukommelsen. Dette er den komprimerede størrelse på disken. Standardværdien er 0, hvilket er den højeste grænse, der er defineret af SKU'et. Det tilladte interval er mellem 0 og kapacitetens størrelsesgrænse. |
 | **Maks. antal resulterende rækker** | Det maksimale antal rækker, der returneres i en DAX-forespørgsel. Standardværdien er -1 (ingen grænse), og det tilladte interval er mellem 100000 og 2147483647. |
 | **Grænse for forespørgselshukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse i arbejdsbelastningen, der kan bruges til at udføre en MDX- eller DAX-forespørgsel. Standardværdien er 0, hvilket medfører, at der anvendes en SKU-specifik, automatisk hukommelsesgrænse i forbindelse med forespørgsler. |
 | **Timeout for forespørgsel (sekunder)** | Det maksimale tidsrum, før en forespørgsel udløber. Standarden er 3600 sekunder (1 time). Værdien 0 angiver, at der ikke opstår timeout for forespørgsler. |
@@ -203,6 +203,9 @@ Arbejdsbelastninger kan aktiveres og tildeles til en kapacitet ved hjælp af RES
 ## <a name="monitoring-workloads"></a>Overvågning af arbejdsbelastninger
 
 [Power BI Premium-appen Capacity Metrics](service-admin-premium-monitor-capacity.md) omfatter datasæt, dataflows og målepunkter i sideinddelte rapporter til overvågning af arbejdsbelastninger, der er aktiveret for dine kapaciteter. 
+
+> [!IMPORTANT]
+> Hvis der er et højt forbrug af ressourcer i din Power BI Premium-kapacitet, hvilket medfører problemer med ydeevne eller pålidelighed, kan du modtage meddelelser via mail for at identificere og løse problemet. Se [notifikationer om kapacitet og pålidelighed](service-interruption-notifications.md#capacity-and-reliability-notifications) for at få flere oplysninger.
 
 ## <a name="next-steps"></a>Næste trin
 

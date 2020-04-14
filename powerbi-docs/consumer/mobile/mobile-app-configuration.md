@@ -2,18 +2,17 @@
 title: Konfigurationsindstillinger i Power BI-appen
 description: Sådan tilpasser du funktionsmåden for Power BI ved hjælp af MDM-værktøjet
 author: paulinbar
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/07/2020
+ms.date: 04/05/2020
 ms.author: painbar
-ms.openlocfilehash: 1991381f8b2917fe3bc61a8be22fbdf44e706d71
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: ce147be4c23b738e1a09296a5d798fb0f94efe13
+ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79205544"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80802020"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Du kan fjernkonfigurere Power BI-appen ved hjælp af MDM-værktøjet (Mobile Device Management)
 
@@ -22,7 +21,7 @@ Appen Power BI – Mobil til iOS og Android understøtter appindstillinger, der 
 Appen Power BI – Mobil understøtter følgende konfigurationsscenarier:
 
 * Konfiguration af rapportserveren (iOS og Android)
-* Indstillinger for databeskyttelse (iOS)
+* Indstillinger for databeskyttelse (iOS og Android)
 * Indstillinger for interaktioner (iOS og Android)
 
 ## <a name="report-server-configuration-ios-and-android"></a>Konfiguration af rapportserveren (iOS og Android)
@@ -36,13 +35,16 @@ Power BI-appen til iOS og Android gør det muligt for administratorer at fjern-"
 | com.microsoft.powerbi.mobile.ServerVist navn | Streng | [valgfri]<br><br>Standardværdien er "Rapportserver"<br><br>Et navn, der bruges i appen til at repræsentere serveren. |
 | com.microsoft.powerbi.mobile.OverrideServerDetails | Boolesk | [valgfri]<br><br>Standardværdien er True. Når værdien er angivet til True, tilsidesætter den alle eksisterende rapportserverdefinitioner på mobilenheden. Eksisterende servere, der allerede er konfigureret, slettes. Dette forhindrer også, at brugeren kan fjerne konfigurationen.<br><br>Hvis indstillingen er angivet til "False", tilføjes de overførte værdier, og eksisterende indstillinger ændres ikke. Hvis den samme URL-adresse allerede er konfigureret i mobilappen, forbliver konfigurationen, som den er. Appen beder ikke brugeren om at godkende igen for den samme server. |
 
-## <a name="data-protection-settings-ios"></a>Indstillinger for databeskyttelse (iOS)
+## <a name="data-protection-settings-ios-and-android"></a>Indstillinger for databeskyttelse (iOS og Android)
 
-Power BI-appen til iOS giver administratorer mulighed for at tilpasse standardkonfigurationen for sikkerhed og indstillinger for beskyttelse af personlige oplysninger. Du kan gennemtvinge, at brugerne skal angive deres Face ID, Touch ID eller en adgangskode, når du åbner Power BI-appen.
+Power BI-mobilappen til iOS og Android giver administratorer mulighed for at tilpasse standardkonfigurationen for sikkerhed og indstillinger for beskyttelse af personlige oplysninger. I forbindelse med iOS kan du gennemtvinge, at brugerne skal angive deres Face ID, Touch ID eller en adgangskode, når de åbner Power BI-mobilappen. Hvis der bruges Android, kan du tvinge brugerne til at anvende biometrisk godkendelse (fingeraftryks-id).
 
 | Nøgle | Type | Beskrivelse |
 |---|---|---|
-| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolesk | Standardværdien er False. <br><br>Biometriske data, f.eks TouchID eller FaceID, kan være påkrævet, for at brugerne kan få adgang til appen på deres enhed. Når det er påkrævet, bruges biometriske data ud over godkendelse.<br><br>Hvis du bruger politikker for appbeskyttelse, anbefaler Microsoft, at du deaktiverer denne indstilling for at forhindre dobbelte adgangsprompter. |
+| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolesk | Standardværdien er False. <br><br>Biometriske data, f.eks TouchID eller FaceID (iOS) eller fingeraftryks-id (Android), kan være påkrævet, for at brugerne kan få adgang til appen på deres enhed. Når det er påkrævet, bruges biometriske data ud over godkendelse.<br><br>Hvis du bruger politikker for appbeskyttelse, anbefaler Microsoft, at du deaktiverer denne indstilling for at forhindre dobbelte adgangsprompter. |
+
+>[!NOTE]
+>Indstillinger for databeskyttelse vil kun blive anvendt på Android-enheder, der understøtter biometrisk godkendelse.
 
 ## <a name="interaction-settings-ios-and-android"></a>Indstillinger for interaktioner (iOS og Android)
 

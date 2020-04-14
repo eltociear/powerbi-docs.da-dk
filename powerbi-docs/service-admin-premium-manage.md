@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/17/2019
+ms.date: 04/06/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: e60aed5b538eab3b630f42a665d96256cc07879c
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 2aa62197bc9af359962f25394d4f202a945d97d8
+ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74700090"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80813092"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Konfigurer og administrer kapaciteter i Power BI Premium
 
@@ -94,6 +94,10 @@ Power BI-administratorer og globale Office 365-administratorer kan ændre Power 
     Administratorer kan frit oprette, tilpasse størrelsen af og slette noder, så længe de har de fornødne antal v-kerner.
 
     P-varenumre kan ikke nedgraderes til EM-varenumre. Du kan placere markøren over deaktiverede indstillinger for at få vist en forklaring.
+
+> [!IMPORTANT]
+> Hvis der er et højt forbrug af ressourcer i din Power BI Premium-kapacitet, hvilket medfører problemer med ydeevne eller pålidelighed, kan du modtage notifikationer via mail for at identificere og løse problemet. Se [notifikationer om kapacitet og pålidelighed](service-interruption-notifications.md#capacity-and-reliability-notifications) for at få flere oplysninger.
+
 
 ### <a name="manage-user-permissions"></a>Administrer brugertilladelser
 

@@ -7,21 +7,21 @@ featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 04/02/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 8f5d11b53526c5d266b96a8f21c42fecc66d3795
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a67d983d11ae8fa2f82a540c0649c2da475d5249
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74163758"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621620"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Databeskeder i Power BI-tjenesten
 
 Angiv beskeder, så du får besked, når dataene på dine dashboards ændres ud over de grænser, du har angivet.
 
-Du kan angive beskeder på felter, hvis du har en Power BI Pro-licens. Du kan også angive beskeder, hvis nogen deler et dashboard, der er i en [Premium-kapacitet](service-premium-what-is.md). Der kan kun angives beskeder på felter, der er fastgjort via rapportvisualiseringer, og kun på målere, KPI'er og kort. Beskeder kan angives på visuelle elementer, der er oprettet ud fra streamingdatasæt, som du fastgør fra en rapport til et dashboard. Der kan ikke angives beskeder for streamingfelter, der er oprettet direkte på dashboardet ved hjælp af **Tilføj felt** > **Brugerdefinerede streamingdata**.
+Du kan konfigurere beskeder på felter i Mit arbejdsområde. Du kan også konfigurere beskeder, hvis nogen deler et dashboard, der er i en [Premium-kapacitet](service-premium-what-is.md). Hvis du har en Power BI Pro-licens, kan du også konfigurere beskeder på felter i andre arbejdsområder. Der kan kun angives beskeder på felter, der er fastgjort via rapportvisualiseringer, og kun på målere, KPI'er og kort. Beskeder kan angives på visuelle elementer, der er oprettet ud fra streamingdatasæt, som du fastgør fra en rapport til et dashboard. Der kan ikke angives beskeder for streamingfelter, der er oprettet direkte på dashboardet ved hjælp af **Tilføj felt** > **Brugerdefinerede streamingdata**.
 
 Det er kun dig, der kan se de angivne beskeder, selvom du deler dashboardet. Selv ejeren af dashboardet kan ikke se de vigtige beskeder, du angiver for din visning af deres dashboard. Databeskeder er fuldt synkroniseret på tværs af platforme. Angiv og få vist databeskeder [i Power BI-mobilapps](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) og i Power BI-tjenesten. De er ikke tilgængelige for Power BI Desktop. Du kan endda automatisere og integrere beskeder med Power Automate. Du kan prøve det selv i denne artikel om [Power Automate og Power BI](service-flow-integration.md).
 
@@ -123,7 +123,7 @@ Der er mange måder at administrere dine beskeder på:
 * Beskeder fungerer kun i forbindelse med streamingdatasæt, hvis du opretter en rapportvisualisering for KPI/kort/måler og derefter fastgør visualiseringen til dashboardet.
 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Opret en Power Automate, der indeholder en databesked](service-flow-integration.md).
 

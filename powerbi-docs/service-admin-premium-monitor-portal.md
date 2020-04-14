@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/10/2019
+ms.date: 04/06/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 51d7b29eee1394ec1bbcad8d69b39b4e45ecdb18
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 7f300cca6614f638f88886a913b30a93d0f52cfd
+ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74700067"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80813000"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Overvåg kapaciteter på administrationsportalen
 
@@ -23,6 +23,9 @@ Fanen **Tilstand** i området **Kapacitetsindstillinger** i administrationsporta
 ![Fanen Kapacitetstilstand på portalen](media/service-admin-premium-monitor-portal/admin-portal-health.png)
 
 Hvis du har brug for mere omfattende målepunkter, skal du bruge appen [Power BI Premium-kapacitetsmålinger](service-admin-premium-monitor-capacity.md). Appen indeholder detailudledning og filtrering og de mest detaljerede målepunkter til næsten alle aspekter, der påvirker kapacitetsydeevnen. Du finder flere oplysninger under [Overvåg Premium-kapaciteter vha. appen](service-admin-premium-monitor-capacity.md).
+
+> [!IMPORTANT]
+> Hvis der er et højt forbrug af ressourcer i din Power BI Premium-kapacitet, hvilket medfører problemer med ydeevne eller pålidelighed, kan du modtage notifikationer via mail for at identificere og løse problemet. Se [notifikationer om kapacitet og pålidelighed](service-interruption-notifications.md#capacity-and-reliability-notifications) for at få flere oplysninger.
 
 ## <a name="system-metrics"></a>Systemmålepunkter
 

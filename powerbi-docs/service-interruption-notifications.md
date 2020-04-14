@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/16/2019
+ms.date: 04/06/2020
 ms.author: kfollis
-ms.openlocfilehash: cb117cb325255f63a0c5d21eddc01e9806358f7f
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 984991d8640df04c19b6461f5f0faaf0a50fe4ed
+ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74697238"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80812958"
 ---
 # <a name="service-interruption-notifications"></a>Meddelelser om tjenesteafbrydelser
 
@@ -31,6 +31,28 @@ Der sendes meddelelser, når der er en _længere forsinkelse_ i handlinger såso
 
 > [!NOTE]
 > Denne funktion er i øjeblikket kun tilgængelig for dedikerede kapaciteter i Power BI Premium. Den er ikke tilgængelig til delt eller integreret kapacitet.
+
+## <a name="capacity-and-reliability-notifications"></a>Notifikationer om kapacitet og pålidelighed
+
+Når en Power BI Premium-kapacitet har længere perioder med et stort ressourceforbrug, der kan have indflydelse på pålideligheden, sendes der en notifikation via mail. Eksempler på sådanne indvirkninger omfatter store forsinkelser i handlinger, f.eks. åbning af en rapport, opdatering af datasæt og udførelse af forespørgsler. 
+
+Notifikationen indeholder oplysninger om årsagen til det høje ressourceforbrug, herunder følgende:
+
+* Datasæt-id for det ansvarlige datasæt
+* Handlingstype
+* Den CPU-tid, der er forbundet med det høje ressourceforbrug
+
+Power BI sender også notifikationer via mail, når der registreres en overbelastning af en Power BI Premium-kapacitet. I mailen forklares den sandsynlige årsag til overbelastningen, hvilke handlinger der har genereret overbelastningen i de seneste 10 minutter, og hvor meget belastning hver handling har genereret. 
+
+Hvis du har mere end én Premium-kapacitet, indeholder mailen oplysninger om disse kapaciteter i den overbelastede periode, så du kan overveje at flytte de arbejdsområder, der indeholder ressourceintensive elementer, til de kapaciteter, der har mindst belastning.
+
+Mailnotifikationerne med oplysninger om overbelastning sendes kun, når overbelastningsgrænsen udløses. Du modtager ikke endnu en mail, når belastningen i den pågældende Premium-kapacitet vender tilbage til et niveau uden overbelastning.
+
+På følgende billede vises et eksempel på en mailnotifikation:
+
+
+![mail med notifikation om overbelastning af kapacitet](media/service-interruption-notifications/refresh-notification-email-2.png)
+
 
 ## <a name="enable-notifications"></a>Aktivér meddelelser
 

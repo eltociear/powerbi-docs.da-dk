@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 60432c110df7c20aa13969d70ed7c2a90d0ef575
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: 9f9b0ec77d0273374d940332abd5d186c2604866
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114836"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979816"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>Opret og brug R-visuals i Power BI
 Visuelle R-elementer kan i øjeblikket kun oprettes i **Power BI Desktop** og derefter publiceres på Power BI-tjenesten. Du kan finde flere oplysninger om oprettelse af R-visuals under [Opret i Power BI-visuals ved hjælp af R](../desktop-r-visuals.md).
@@ -94,6 +94,7 @@ Visuelle R-elementer i Power BI-tjenesten har nogle få begrænsninger:
 * Visuelle R-elementer reagerer på fremhævning af andre elementer, men du kan ikke klikke på elementer i det visuelle R-element for at filtrere andre elementer i tværgående retning.
 * Visuelle R-elementer understøttes ikke i øjeblikket for datatypen *Tid*. Brug dato/klokkeslæt i stedet.
 * Visuelle R-elementer vises ikke, når du bruger **Publicer på internettet**.
+* Visuelle R-elementer understøtter ikke omdøbning af inputkolonner. Der refereres til kolonner fra deres oprindelige navn under udførelsen af scriptet.
 * Visuelle R-elementer udskrives i øjeblikket ikke sammen med dashboard- og rapportudskrivning
 * Visuelle R-elementer understøttes ikke i øjeblikket i DirectQuery-tilstand for Analysis Services
 * Visuelle R-elementer indeholder muligheden for at konvertere tekstmærkater til grafiske elementer. Det kræver følgende ekstra trin at gøre det i Power BI-tjenesten:

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ba1909c5fc75abdf7338572c646d98fca83595b0
-ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
+ms.openlocfilehash: a2e53d27a8ca49e9fc318fd25cc20acbb7bacc38
+ms.sourcegitcommit: 34cca70ba84f37b48407d5d8a45c3f51fb95eb3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79133261"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80751611"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI
 
@@ -75,7 +75,7 @@ Der er dog tre overbevisende grunde til, at du bør oprette målinger selv for s
 
 - Når du ved, at rapportforfatterne sender forespørgsler til modellen ved hjælp af [flerdimensionelle udtryk (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017), skal modellen indeholde _eksplicitte målinger_. Eksplicitte målinger defineres ved hjælp af DAX. Denne designmetode er yderst relevant, når der sendes en forespørgsel til et Power BI-datasæt ved hjælp af MDX, da MDX ikke kan opnå opsummering af kolonneværdier. MDX bruges især, når der udføres [analyser i Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel), fordi pivottabeller udsteder MDX-forespørgsler.
 - Når du ved, at rapportforfatterne opretter sideinddelte rapporter i Power BI ved hjælp af MDX-forespørgselsdesigneren, skal modellen indeholde eksplicitte metoder. Det er kun MDX-forespørgselsdesigneren, der understøtter [serversamlinger](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). Hvis det er nødvendigt for rapportforfatterne at have målinger, der evalueres af Power BI (i stedet for af det sideinddelte rapportprogram), skal de derfor bruge MDX-forespørgselsdesigneren.
-- Hvis du vil sikre dig, at dine rapportforfattere kun kan opsummere kolonner på bestemte måder. Kolonnen **Enhedspris** for forhandlersalg (der repræsenterer en pris pr. enhed) kan f.eks. opsummeres, men kun ved hjælp af bestemte sammenlægningsfunktioner. Den bør aldrig lægges sammen, men den kan passende opsummeres ved hjælp af andre sammenlægningsfunktioner (min., maks., gennemsnit osv.). I dette tilfælde kan modeludvikleren skjule kolonnen **Enhedspris** og oprette målinger for alle relevante sammenlægningsfunktioner.
+- Hvis du vil sikre dig, at dine rapportforfattere kun kan opsummere kolonner på bestemte måder. Kolonnen **Enhedspris** for forhandlersalg (der repræsenterer en pris pr. enhed) kan f.eks. opsummeres, men kun ved hjælp af bestemte sammenlægningsfunktioner. Den bør aldrig lægges sammen, men den kan passende opsummeres ved hjælp af andre sammenlægningsfunktioner som f.eks. min., maks., gennemsnit osv. I dette tilfælde kan modeludvikleren skjule kolonnen **Enhedspris** og oprette målinger for alle relevante sammenlægningsfunktioner.
 
 Denne designtilgang fungerer godt til rapporter, der forfattes i Power BI-tjenesten, og til Spørgsmål og svar. Direkte forbindelser i Power BI Desktop giver dog rapportforfattere mulighed for at få vist skjulte felter i ruden **Felter**, der kan resultere i omgåelse af denne designtilgang.
 
@@ -188,7 +188,7 @@ I Power BI-modellen kan det være hensigtsmæssigt at føje kolonnen med salgsor
 
 ![Eksempel på forringet dimension](media/star-schema/degenerate-dimension.png)
 
-Du kan finde flere oplysninger i [Vejledning til en til en-relationer (Forringede dimensioner)](relationships-one-to-one.md#degenerate-dimensions).
+Hvis Adventure Works' tabel over forhandlersalg har kolonnerne ordrenummer _og_ ordrelinjenummer, og de er påkrævet til filtrering, ville det dog være et godt design at oprette en dimensionstabel. Du kan finde flere oplysninger i [Vejledning til en til en-relationer (Forringede dimensioner)](relationships-one-to-one.md#degenerate-dimensions).
 
 ## <a name="factless-fact-tables"></a>Faktafrie faktatabeller
 
@@ -196,7 +196,7 @@ En **faktafri faktatabel** indeholder ingen målingskolonner. Den indeholder kun
 
 Der kan gemmes observationer, defineret af dimensionsnøgler, i en faktafri faktatabel. En bestemt kunde kan f.eks. være logget på dit websted på en bestemt dato og et bestemt klokkeslæt. Du kan definere en måling for at tælle rækkerne i den faktafrie faktatabel for at analysere, hvornår og hvor mange kunder der er logget på.
 
-En bedre måde at bruge faktatabeller på er ved at gemme relationer mellem dimensioner, og det er den designtilgang til Power BI-modeller, vi anbefaler, hvor du også definerer mange til mange-dimensionsrelationer. I et design med mange til mange-dimensionrelationer refereres der til den faktafrie faktatabel som en _brotabel_.
+En bedre måde at bruge faktatabeller på er ved at gemme relationer mellem dimensioner, og det er den designtilgang til Power BI-modeller, vi anbefaler, hvor du også definerer mange til mange-dimensionsrelationer. I et [design med mange til mange-dimensionsrelationer](relationships-many-to-many.md#relate-many-to-many-dimensions) refereres der til den faktafrie faktatabel som en _brotabel_.
 
 Du kan f.eks. overveje, at sælgere kan tildeles et _eller flere_ salgsområder. Brotabellen er designet som en faktafri faktatabel, der består af to kolonner: sælgernøglen og områdenøglen. Duplikerede værdier kan gemmes i begge kolonner.
 

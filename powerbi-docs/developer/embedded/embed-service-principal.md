@@ -9,24 +9,18 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/30/2020
-ms.openlocfilehash: 9ec08ebe583110b2775f107be0ace2a03929c72d
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: 7ae2752627e24c5de2feed372009061e523a3fc8
+ms.sourcegitcommit: 34cca70ba84f37b48407d5d8a45c3f51fb95eb3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80403551"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80751624"
 ---
 # <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Integrering af Power BI-indhold med tjenesteprincipal og programhemmelighed
 
-Tjeneste principalen er en godkendelsesmetode, der kan bruges til at lade et Microsoft Azure AD-program få adgang indhold og API'er i Power BI-tjenesten.
+[!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
 
-Når du opretter en Azure Active Directory-app, oprettes der et [tjenesteprincipalobjekt](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object). Tjenesteprincipalobjektet, der også blot kaldes *tjenesteprincipal*, gør det muligt for Microsoft Azure AD at godkende din app. Når appen er godkendt, kan den få adgang til Microsoft Azure AD-lejerressourcer.
-
-For at kunne godkende skal tjenesteprincipalen bruge Microsoft Azure AD-appens *program-id* og et af følgende:
-* Programhemmelighed
-* Certifikat
-
-I denne artikel beskrives godkendelse af tjenesteprincipalen ved hjælp af et *program-id* og en *programhemmelighed*. Hvis du vil godkende ved hjælp af en tjenesteprincipal med et certifikat, skal du se [Power BI certifikatbaseret godkendelse]().
+I denne artikel beskrives godkendelse af tjenesteprincipalen ved hjælp af et *program-id* og en *programhemmelighed*.
 
 ## <a name="method"></a>Metode
 
@@ -55,12 +49,12 @@ Hvis du vil bruge tjenesteprincipalen og et program-id med integreret analyse, s
 ## <a name="step-1---create-an-azure-ad-app"></a>Trin 1 – Opret en Microsoft Azure AD-app
 
 Opret en Microsoft Azure AD-app ved hjælp af en af disse metoder:
-* Opret appen i [Microsoft Azure-portalen](https://ms.portal.azure.com/#allservices)
+* Opret appen i [Microsoft Azure-portalen](https://portal.azure.com/#allservices)
 * Opret appen ved hjælp af [PowerShell-](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
 
 ### <a name="creating-an-azure-ad-app-in-the-microsoft-azure-portal"></a>Oprettelse af en Microsoft Azure AD-app i Microsoft Azure-portalen
 
-1. Log på [Microsoft Azure](https://ms.portal.azure.com/#allservices).
+1. Log på [Microsoft Azure](https://portal.azure.com/#allservices).
 
 2. Søg efter **appregistreringer**, og klik på linket **Appregistreringer**.
 
@@ -72,7 +66,7 @@ Opret en Microsoft Azure AD-app ved hjælp af en af disse metoder:
 
 4. Udfyld de påkrævede oplysninger:
     * **Navn** – Angiv et navn til programmet
-    * **Understøttede kontotyper** – Vælg understøttede kontotyper
+    * **Understøttede kontotyper** – vælg den Azure AD-konto, du har brug for
     * (Valgfrit) **URI til omdirigering** – Angiv en URI, hvis det er nødvendigt
 
 5. Klik på **Registrer**.
@@ -205,5 +199,3 @@ Når dit indhold er integreret, er du klar til at [gå videre til produktionen](
 * [Power BI Embedded til dine kunder](embed-sample-for-customers.md)
 
 * [Sikkerhed på rækkeniveau ved hjælp af datagateway i det lokale miljø med tjenesteprincipal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
-
-* [Integration af Power BI-indhold med tjenesteprincipal og et certifikat]()

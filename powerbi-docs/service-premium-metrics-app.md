@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/19/2019
+ms.date: 04/06/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: ae11ec64a0bffbd3e64c0fd677a7225c2b31f521
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: c15576ac6ab9b20a3492341c05d2f9d8eb42e107
+ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488677"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80813046"
 ---
 # <a name="power-bi-premium-metrics-app"></a>Appen Power BI Premium Metrics
 
@@ -27,6 +27,9 @@ Du kan bruge appen **Power BI Premium Metrics** til at administrere dit Power BI
 ![Appen Power BI Premium Metrics](media/service-premium-metrics-app/premium-metrics-app-00.png)
 
 I de følgende afsnit beskrives landingssiden og de tre målepunktssider i en rapport i detaljer. 
+
+> [!IMPORTANT]
+> Hvis der er et højt forbrug af ressourcer i din Power BI Premium-kapacitet, hvilket medfører problemer med ydeevne eller pålidelighed, kan du modtage notifikationer via mail for at identificere og løse problemet. Se [notifikationer om kapacitet og pålidelighed](service-interruption-notifications.md#capacity-and-reliability-notifications) for at få flere oplysninger.
 
 ## <a name="premium-capacity-health-center"></a>Premium Capacity Health Center
 

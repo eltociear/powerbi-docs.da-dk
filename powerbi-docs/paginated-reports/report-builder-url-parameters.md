@@ -8,13 +8,13 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
-ms.date: 09/10/2019
-ms.openlocfilehash: 35df214da19d5f35130408ce8128643f52682428
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.date: 04/02/2020
+ms.openlocfilehash: df59d09a1e8557842904b46eded0a83c86448224
+ms.sourcegitcommit: e0833ec22b263f919025acae88551570b4def0cd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78922223"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80647704"
 ---
 # <a name="url-parameters-in-paginated-reports-in-power-bi"></a>URL-parametre i sideinddelte rapporter i Power BI
 
@@ -78,6 +78,14 @@ Du kan bruge følgende parametre som en del af en URL-adresse til at konfigurere
 - CSV 
 - PDF 
 - XML 
+
+**Tilstand for parameterpanel** angiver, om parameterpanelet er lukket eller åbent, når rapporten indlæses, eller er fuldstændig skjult.
+
+-   rdl:parameterPanelState
+
+    - 'collapsed': Indlæs rapporten med parameterpanelet lukket. Parameterknappen er aktiveret, så brugerne kan klikke på knappen for at udvide.
+    - 'hidden': Indlæs rapporten med parameterpanelet lukket og parameterknappen deaktiveret.
+    - 'expanded' (standard): Indlæs rapporten med parameterpanelet åbent og parameterknappen aktiveret.
 
 **Enhedsoplysninger** Du kan angive yderligere outputparametre for følgende eksportformater. 
 
