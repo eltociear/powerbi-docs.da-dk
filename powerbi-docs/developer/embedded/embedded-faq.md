@@ -96,7 +96,7 @@ Brugeren kan løse problemet ved at kalde [refreshUserPermissions API](https://d
 
 Du kan bruge PBI-portalen til at finde dit PBI-lejerområde.
 
-[https://app.powerbi.com/](`https://app.powerbi.com/`) > ? > Om Power BI
+`https://app.powerbi.com/` > ? > Om Power BI
 
 ![Om Power BI](media/embedded-faq/about-01.png)
 ![Lejerområde](media/embedded-faq/tenant-location-01.png)
