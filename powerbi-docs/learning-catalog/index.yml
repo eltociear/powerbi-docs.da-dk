@@ -1,0 +1,132 @@
+### YamlMime:Landing
+title: Læringskatalog for Power BI
+summary: Find alle træningsmuligheder til Power BI
+metadata:
+  title: Læringskatalog for Power BI
+  description: Find frem til de Power BI-træningsmuligheder, der er relevante for rollerne i din organisation.
+  ms.service: powerbi
+  ms.topic: landing-page
+  author: loreleishannonmsft
+  ms.author: v-lshann
+  ms.date: 04/08/2020
+  ms.openlocfilehash: aff1866616a10e5df124619261d8398bda5c51a3
+  ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+  ms.translationtype: HT
+  ms.contentlocale: da-DK
+  ms.lasthandoff: 04/13/2020
+  ms.locfileid: "81269035"
+landingContent:
+- title: Forretningsbeslutningstagere
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Læringskatalog til beslutningstagere i erhvervslivet og tekniske beslutningstagere
+      url: learning-catalog-bdm.md#
+- title: Forbrugere
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Læringskatalog til forbrugere
+      url: learning-catalog-consumer.md#
+- title: Rapportoprettere
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Læringskatalog til rapportoprettere
+      url: learning-catalog-report-creator.md#
+    - text: Kom i gang
+      url: learning-catalog-report-creator.md#get-started
+    - text: Dashboards
+      url: learning-catalog-report-creator.md#dashboards
+    - text: Rapportdesign
+      url: learning-catalog-report-creator.md#report-design
+    - text: Visualisering
+      url: learning-catalog-report-creator.md#visualization
+    - text: Integration
+      url: learning-catalog-report-creator.md#integration
+- title: Dataanalytikere
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Læringskatalog til dataanalytikere
+      url: learning-catalog-data-analyst.md#
+    - text: Kom i gang
+      url: learning-catalog-data-analyst.md#get-started
+    - text: Bedste praksis
+      url: learning-catalog-data-analyst.md#best-practices
+    - text: Casestudier
+      url: learning-catalog-data-analyst.md#case-studies
+    - text: Dashboards
+      url: learning-catalog-data-analyst.md#dashboards
+    - text: Visualiseringer
+      url: learning-catalog-data-analyst.md#visualizations
+    - text: Styring og udrulning
+      url: learning-catalog-data-analyst.md#governance-deployment
+    - text: Integration
+      url: learning-catalog-data-analyst.md#integration
+    - text: Sikkerhed
+      url: learning-catalog-data-analyst.md#security
+- title: Administratorer
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Læringskatalog til administratorer
+      url: learning-catalog-administrator.md
+    - text: Kom i gang
+      url: learning-catalog-administrator.md#get-started
+    - text: Installér
+      url: learning-catalog-administrator.md#deploy
+- title: Udviklere
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Læringskatalog til udviklere
+      url: learning-catalog-developer.md
+    - text: Kom i gang
+      url: learning-catalog-developer.md#get-started
+    - text: Integreret
+      url: learning-catalog-developer.md#embedded
+    - text: DAX
+      url: learning-catalog-developer.md#dax
+    - text: Udvikling
+      url: learning-catalog-developer.md#development
+- title: Partneres førsalgsroller
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Læringskatalog til partneres førsalgsroller
+      url: learning-catalog-presales.md#
+- title: Funktionelle konsulenter
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Læringskatalog til funktionelle programkonsulenter
+      url: learning-catalog-functional-consultant.md
+    - text: Kom i gang
+      url: learning-catalog-functional-consultant.md#get-started
+    - text: Bedste praksis
+      url: learning-catalog-functional-consultant.md#best-practices
+    - text: Casestudier
+      url: learning-catalog-functional-consultant.md#case-studies
+    - text: Dashboards
+      url: learning-catalog-functional-consultant.md#dashboards
+    - text: Styring og udrulning
+      url: learning-catalog-functional-consultant.md#governance-deployment
+    - text: Integration
+      url: learning-catalog-functional-consultant.md#integration
+    - text: Sikkerhed
+      url: learning-catalog-functional-consultant.md#security
+    - text: Visualiseringer
+      url: learning-catalog-functional-consultant.md#visualizations
+- title: Løsningsarkitekter
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Læringskatalog til løsningsarkitekter
+      url: learning-catalog-solution-architect.md
+    - text: Kom i gang
+      url: learning-catalog-solution-architect.md#get-started
+    - text: Casestudier
+      url: learning-catalog-solution-architect.md#case-studies
+    - text: Ydeevne
+      url: learning-catalog-solution-architect.md#performance

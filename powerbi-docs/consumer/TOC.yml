@@ -18,12 +18,14 @@
           href: end-user-experience.md
         - name: Find indhold ved hjælp af landingsiden Startside
           href: end-user-home.md
-        - name: Få mere at vide om at stille spørgsmål på et naturligt sprog
-          href: end-user-q-and-a.md
+        - name: 'Liste over funktioner, der er tilgængelige for forbrugerne'
+          href: end-user-features.md
         - name: Log på for første gang
           href: end-user-sign-in.md
         - name: Hvilken Power BI-licens har jeg?
           href: end-user-license.md
+        - name: Få mere at vide om at stille spørgsmål på et naturligt sprog
+          href: end-user-q-and-a.md
         - name: Gå til det 'nye udseende'
           href: ../service-new-look.md
         - name: 'Det "nye udseende": Hvor blev handlingerne af?'
@@ -60,6 +62,8 @@
               href: end-user-report-filter.md
             - name: 'Få mere at vide om, hvordan rapportvisuals krydsfiltrerer hinanden'
               href: end-user-interactions.md
+            - name: Interager med rapportudsnitsværktøjer
+              href: end-user-slicer.md
             - name: Eksportér en rapport til PDF
               href: end-user-pdf.md
             - name: Eksportér en rapport til PowerPoint

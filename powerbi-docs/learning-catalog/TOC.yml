@@ -1,0 +1,21 @@
+- name: Læringskatalog
+  href: index.yml
+  items:
+    - name: Forretningsbeslutningstagere
+      href: learning-catalog-bdm.md
+    - name: Forbrugere
+      href: learning-catalog-consumer.md
+    - name: Rapportoprettere
+      href: learning-catalog-report-creator.md
+    - name: Dataanalytikere
+      href: learning-catalog-data-analyst.md
+    - name: Administratorer
+      href: learning-catalog-administrator.md
+    - name: Udviklere
+      href: learning-catalog-developer.md
+    - name: Partneres førsalgsroller
+      href: learning-catalog-presales.md
+    - name: Funktionelle konsulenter
+      href: learning-catalog-functional-consultant.md
+    - name: Løsningsarkitekter
+      href: learning-catalog-solution-architect.md

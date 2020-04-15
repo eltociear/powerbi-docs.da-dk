@@ -48,6 +48,8 @@
           href: embed-from-apps.md
         - name: Eksportér rapport til fil
           href: export-to.md
+        - name: Eksportér den sideinddelte rapport til fil
+          href: export-paginated-report.md
         - name: Installér apps automatisk
           href: embed-auto-install-app.md
         - name: Opret en Azure Active Directory-lejer

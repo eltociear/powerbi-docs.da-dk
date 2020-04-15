@@ -81,7 +81,9 @@
           items:
             - name: Opret og brug dataflow
               href: ../service-dataflows-create-use.md
-            - name: Brug den forbedrede beregningsmaskine med dataflow
+            - name: Hæv eller certificer dataflow
+              href: service-dataflows-promote-certify.md
+            - name: Brug det forbedrede beregningsprogram med dataflows
               href: ../service-dataflows-enhanced-compute-engine.md
             - name: Beregnede enheder med Power BI Premium
               href: ../service-dataflows-computed-entities-premium.md
