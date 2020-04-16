@@ -29,9 +29,12 @@
                 - name: Automatisering
                   tocHref: /power-bi/developer/automation/
                   topicHref: /power-bi/developer/automation/
-            - name: Kursus med vejledning
+            - name: Guidet læring
               tocHref: /power-bi/guided-learning/
               topicHref: /power-bi/guided-learning/
+            - name: Læringskatalog
+              tocHref: /power-bi/learning-catalog/
+              topicHref: /power-bi/learning-catalog/index
             - name: rapportserver
               tocHref: /power-bi/report-server/
               topicHref: /power-bi/report-server/index
