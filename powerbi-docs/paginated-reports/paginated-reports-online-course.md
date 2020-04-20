@@ -9,16 +9,16 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 4df77ee94ee72e2104b7964f1835b446bde6b676
-ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
+ms.openlocfilehash: 325e62bbf326e9f30d4c41299998c61cc5d7f487
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80621474"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267589"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Onlinekursus: Sideinddelte Power BI-rapporter på én dag
 
-Onlinekurset **Sideinddelte Power BI-rapporter på én dag** gør dig i stand til at skrive rapporter med den tekniske viden, der kræves for at oprette, udgive og distribuere sideinddelte Power BI-rapporter. Det har en varighed på næsten 4 timer og 20 minutter, er tilgængeligt efter behov og koster ikke noget.
+Onlinekurset **Sideinddelte Power BI-rapporter på én dag** gør dig i stand til at skrive rapporter med den tekniske viden, der kræves for at oprette, udgive og distribuere sideinddelte Power BI-rapporter. Det har en varighed på næsten 4 timer og 20 minutter, er tilgængeligt efter behov og koster ikke noget. Der er også en [selvstudiepakke](#self-study-kit), som du kan downloade og bruge til at fuldføre otte praktiske øvelser.
 
 Kurset henvender sig især til:
 
@@ -39,7 +39,7 @@ Når du er færdig med kurset, ved du, hvordan du:
 
 Se velkomst- og introduktionsvideoen for at starte kurset.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DN1t5p9aui0" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/DN1t5p9aui0]
 
 ## <a name="course-outline"></a>Kursusoversigt
 
@@ -79,9 +79,32 @@ Se velkomst- og introduktionsvideoen for at starte kurset.
   - Video 23: [Bonusindhold: Udviklingen inden for sideinddelte rapporter](https://www.youtube.com/watch?v=pevpai65MvY&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Video 24: [Bonusindhold: Sænkning af indgangsbarrieren](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
-## <a name="additional-content"></a>Yderligere indhold
+## <a name="self-study-kit"></a>Selvstudiepakke
 
-Vi offentliggør snart PowerPoint-præsentationen og de praktiske øvelser som et selvstudium. Vend tilbage til denne artikel senere for at få downloadlinkene.
+Du kan downloade og konfigurere en selvstudiepakke, der består af præsentationsindhold og otte praktiske laboratorier:
+
+1. Brug [dette link](https://aka.ms/priad-ilt-student) for at downloade selvstudiepakken (. zip) til din pc.
+1. Åbn filegenskaberne, og markér feltet Fjern blokering (Windows kan have markeret filen som potentielt upålidelig).
+1. Udpak filindholdet til en mappe i filsystemet. Vi anbefaler, at du opretter en mappe, der er let at finde, måske ved at kalde den **Kurser**. Laboratoriedokumenterne refererer til denne placering som **&lt;CourseFolder&gt;** .
+
+Når den er udpakket, har du mappen **PowerBIPRIAD**, og den indeholder følgende mapper:
+
+- **Lab01A** (og alle andre laboratoriemapper). Laboratoriemapperne indeholder laboratoriedokument- og laboratorieressourcerne, som kan indeholde aktiver og løsningsfiler.
+- **MySolution**: I denne mappe gemmes dine løsningsfiler. Du får besked i vejledningen til laboratoriet, når du skal bruge den.
+- **Presentation**: Denne mappe indeholder den kursuspræsentationsfil, der er tilgængelig som et PDF-dokument.
+
+### <a name="getting-started"></a>Introduktion
+
+Vi anbefaler, at du først ser onlinekurset. Du kan henvise til præsentationsteorien ved at åbne filen **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\ PowerBIPRIAD_Presentation.pdf**. Præsentationen omfatter otte laboratorieslides, der angiver, hvornår det er tid til at afprøve teorien i praksis. Den indeholder også mange links til ressourcer, der kan hjælpe dig med at finde relateret indhold.
+
+Når du er klar til at begynde det første laboratorium, skal du åbne filen **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\ PowerBIPRIAD_Lab01A. pdf**. Dette dokument hjælper dig med at logge på Power BI-tjenesten, overføre et datasæt og derefter installere [Power BI Report Builder](report-builder-power-bi.md).
+
+> [!NOTE]
+> Du er ansvarlig for at have din egen Power BI-konto. Hvis du ikke allerede har en, kan du se [Tilmeld dig Power BI som enkeltperson](../service-self-service-signup-for-power-bi.md).
+>
+> Du skal logge på Power BI for at udgive en Power BI Desktop-fil til et arbejdsområde. Udgivelsen resulterer i et datasæt, der bruges som en rapportdatakilde. Du behøver ikke at have en Power BI Pro-licens eller et Power BI Premium-abonnement for at bruge et datasæt som en rapportdatakilde.
+>
+> Nogle laboratorieopgaver omfatter dog udgivelse af sideinddelte rapporter i et arbejdsområde. Du kan kun åbne en sideinddelt rapport, når den er gemt i et arbejdsområde i en [dedikeret kapacitet](../service-premium-what-is.md#dedicated-capacities), hvor arbejdsbelastningen for sideinddelte rapporter er aktiveret. Hvis du ikke har adgang til et egnet arbejdsområde, får du vist et link, hvor du kan se en video, der viser rapportudgivelse i stedet for.
 
 ## <a name="next-steps"></a>Næste trin
 

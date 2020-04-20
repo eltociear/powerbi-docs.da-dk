@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: be8716cebb091dafcc927b4bd1ecd0942ad88b47
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: cd2086facbeb581a4418a3358a79cca0e80140ff
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79208051"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267336"
 ---
 # <a name="dataset-modes-in-the-power-bi-service"></a>Tilstande for datasæt i Power BI-tjenesten
 
@@ -77,19 +77,10 @@ Der er flere fordele ved at bruge DirectQuery-modeller:
 - Rapporter i realtid kan udvikles ved hjælp af funktionen [Automatisk sideopdatering](desktop-automatic-page-refresh.md)
 - Felter i dashboardet kan, når de er baseret på DirectQuery-modeller, blive opdateret automatisk så ofte som hvert 15. minut
 
-Men der er dog adskillige ulemper og begrænsninger forbundet med DirectQuery-modeller:
+Men der er dog visse begrænsninger forbundet med DirectQuery-modeller:
 
-- Modellen skal være baseret på en enkelt understøttet datakilde. Det er derfor, en eventuel dataintegration allerede skal ske i datakilden. De datakilder, der understøttes, er relations- og analysesystemer, som understøtter mange populære datalagre.
-
-    > [!TIP]
-    > Mange Microsoft-datakilder understøttes. Microsoft-datakilder inkluderer SQL Server, Azure Data Bricks, Azure HDInsight Spark (Beta), Azure SQL Database og Azure SQL Data Warehouse. Du kan finde flere oplysninger i artiklen [Datakilder, der understøttes af DirectQuery i Power BI](desktop-directquery-data-sources.md).
-
-- Ydeevnen kan være langsom, hvilket kan påvirke Power BI-tjeneste negativt. Dette problem kan opstå, fordi nogle forespørgsler er CPU-tunge for Power BI-tjenesten. Det kan også skyldes, at datakilden ikke er optimeret til de forespørgsler, Power BI sender.
-- Power Query-forespørgsler skal kunne delegeres. Dette krav betyder, at Power Query-logik ikke kan være for komplekst. Derudover skal logikken være begrænset til at bruge M-udtryk og -funktioner, der kan omdannes til oprindelige forespørgsler, som forstås af datakilden.
-- DAX-formularer er begrænset til kun at bruge funktioner, der kan omdannes til oprindelige forespørgsler, som forstås af datakilden. Desuden er der ingen understøttelse af beregnede tabeller eller DAX Time Intelligence-funktioner.
-- Modelforespørgsler, der kræver hentning af mere end en million rækker, mislykkes
-- Rapporter og dashboards med flere visualiseringer kan vise inkonsekvente resultater, især når datakilden er svingende.
-- Funktionerne Spørgsmål og svar og Hurtig indsigt understøttes ikke
+- DAX-formularer er begrænset til kun at bruge funktioner, der kan omdannes til oprindelige forespørgsler, som forstås af datakilden. Beregnede kolonner understøttes ikke.
+- Funktionerne Spørgsmål og svar og Hurtig indsigt understøttes ikke.
 
 Fra et ressourcemæssigt perspektiv i Power BI-tjenesten kræver DirectQuery-modeller:
 

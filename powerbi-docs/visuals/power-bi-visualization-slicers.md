@@ -1,31 +1,35 @@
 ---
 title: Udsnitsværktøjer i Power BI
 description: Et Power BI-udsnit er en alternativ metode til filtrering, som begrænser den del af datasættet, der vises i andre visualiseringer i en rapport.
-author: v-thepet
+author: maggiesMSFT
 ms.reviewer: ''
-featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: tutorial
-ms.date: 11/04/2019
-ms.author: mihart
+ms.topic: conceptual
+ms.date: 04/06/2020
+ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 97ad95346715cd5ad38f41d6e7b9df3cc7493f40
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 105a9afe7292412227f67ef80e15eb23eb7d5f71
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265427"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006779"
 ---
 # <a name="slicers-in-power-bi"></a>Udsnitsværktøjer i Power BI
 
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-Du kan f.eks. give rapportlæserne mulighed for at se de overordnede salgstal, men samtidig fremhæve resultaterne for individuelle distriktschefer og forskellige tidsperioder. Du kan oprette separate rapporter eller diagrammer til sammenligning. Eller du kan bruge udsnitsværktøjer. Et udsnit er en alternativ metode til filtrering, som begrænser den del af datasættet, der vises i andre visualiseringer i en rapport. 
-
-I dette selvstudium bruges det gratis [eksempel på detailhandelsanalyse](../sample-retail-analysis.md) til at gennemgå, hvordan du opretter, formaterer og bruger liste- og datointervaludsnit. Mor dig med at opdage måder, du kan formatere og bruge udsnit på. 
+Du kan f.eks. give rapportlæserne mulighed for at se de overordnede salgstal, men samtidig fremhæve resultaterne for individuelle distriktschefer og forskellige tidsperioder. Du kan oprette separate rapporter eller diagrammer til sammenligning. Du kan også bruge *udsnitsværktøjer*. Et udsnit er en alternativ metode til filtrering, som begrænser den del af datasættet, der vises i andre visualiseringer i en rapport. 
 
 ![Animation af udsnit](media/power-bi-visualization-slicers/slicer2.gif)
+
+I denne artikel gennemgås, hvordan du opretter og formaterer et grundlæggende udsnitsværktøj ved hjælp af det gratis [eksempel på en detailhandelsanalyse](../sample-retail-analysis.md). Det gennemgås også, hvordan du kan styre, hvilke visualiseringer der påvirkes af et udsnitsværktøj, og hvordan du synkroniserer med udsnitsværktøjer på andre sider. Her er nogle andre artikler, der indeholder fremgangsmåder til, hvordan du opretter bestemte typer udsnitsværktøjer:
+
+- [Udsnitsværktøjer til numerisk område](../desktop-slicer-numeric-range.md).
+- [Udsnitsværktøjer til relative datoudsnit](desktop-slicer-filter-date-range.md).
+- Dynamiske [udsnitsværktøjer, hvis størrelse kan ændres](../power-bi-slicer-filter-responsive.md).
+- [Hierarkiske udsnitsværktøjer](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md) med flere felter.
 
 ## <a name="when-to-use-a-slicer"></a>Hvornår man bruger et udsnit
 Udsnit er et fantastisk valg, når du vil:
@@ -40,14 +44,11 @@ Power BI-udsnitsværktøjer understøtter ikke:
 - Inputfelter
 - Detailudledning
 
+## <a name="create-a-slicer"></a>Opret et udsnit
 
-## <a name="create-slicers"></a>Opret udsnit
+Dette udsnitsværktøj filtrerer data efter distriktschef. Hvis du vil følge med i denne fremgangsmåde, kan du downloade eksempelfilen [PBIX-eksempel på detailhandelsanalyse](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-**Opret et nyt udsnit for at filtrere data efter distriktschef**
-
-1. Download [PBIX-filen Retail Analysis Sample](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
-
-1. Vælg **Filer** > **Åbn** på menulinjen i Power BI Desktop.
+1. Åbn Power BI Desktop, og vælg **Filer** > **Åbn**.
    
 1. Gå til filen **Retail Analysis sample PBIX.pbix**, og vælg derefter **Åbn**.
 
@@ -73,36 +74,6 @@ Power BI-udsnitsværktøjer understøtter ikke:
 
    >[!TIP]
    >Udsnitslisteelementer sorteres som standard i stigende rækkefølge. Hvis du i stedet vil ændre sorteringsrækkefølgen til faldende, skal du vælge ellipsen ( **...** ) i øverste højre hjørne af udsnittet og vælge **Sortér faldende**.
-
-**Opret et nyt udsnit for at filtrere data efter datointerval**
-
-1. Vælg siden **Oversigt** i rapporten. Hvis der ikke er valgt noget på rapportlærredet, skal du vælge **Store** >  **OpenDate** i ruden **Felter**.
-
-    Denne handling udfylder feltet **Værdier** i ruden **Visualiseringer** for at oprette en ny visualisering.
-
-1. Mens den nye visualisering er valgt i rapporten, skal du vælge ikonet **Udsnit** i ruden **Visualiseringer** for at konvertere den nye visualisering til et udsnit. Dette **OpenDate**-udsnit er en skyder med det angivne datointerval.
-    
-    ![Opret OpenDate-visualisering](media/power-bi-visualization-slicers/power-bi-date-slicer.png)
-
-1. Tilpas størrelsen på udsnittet, og træk udsnittet og de andre elementer på lærredet for at gøre plads til udsnittet. Selvom udsnittets størrelse tilpasses i forhold til udsnittet, skjules det, og datoerne beskæres, hvis udsnittet bliver for lille. 
-
-1. Vælg et andet datointerval på skyderen, vælg et datofelt for at angive en dato, eller brug en pop op-kalender for at gør det nemt at vælge nøjagtige datoer. Bemærk, hvordan det påvirker de øvrige visualiseringer på siden.
-    
-    >[!NOTE]
-    >Numeriske data og data af typen dato/klokkeslæt kan oprettet udsnit med skydere som standard. Fra og med Power BI-opdateringen i februar 2018 vil skyderen med heltalsintervaller nu fastgøre til heltalsværdier og ikke vise decimaler. 
-
-1. Hvis du vil ændre udsnitstypen, skal du markere udsnittet, pege på det øverste højre hjørne af udsnittet, vælge karatikonet, der vises, og vælge en af de andre indstillinger, for eksempel **Liste** eller **Før**. Bemærk, hvordan udsnittets udseende og indstillingerne ændres. 
- 
-    ![Nyt område til udsnit](media/power-bi-visualization-slicers/power-bi-between-slicer.png)
-
-
-Hvis du vil have flere oplysninger om, hvordan du opretter udsnit med datoområder eller talintervaller, skal du se følgende video og se [Brug udsnittet til talintervaller i Power BI Desktop](../desktop-slicer-numeric-range.md).
-   > [!NOTE]
-   > I denne video bruges en ældre version af Power BI Desktop.
-   > 
-   > 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
 
 ## <a name="control-which-page-visuals-are-affected-by-slicers"></a>Styr, hvilke visualiseringer på siden der påvirkes af udsnit
 Som standard påvirker udsnit på rapportsider alle andre visualiseringer på den samme side – også hinanden. Når du vælger værdier i de liste- og datoudsnit, du har oprettet, kan du se ændringerne i de andre visualiseringer. De filtrerede data er skæringspunktet for de værdier, der er valgt i begge udsnit. 
@@ -208,7 +179,7 @@ Du kan finde flere oplysninger om vandrette retninger og dynamisk layout under [
 
 ### <a name="title-options"></a>Titelindstillinger
 **Titel** er som standard slået **til**. Dette valg viser datafeltets navn øverst i udsnittet. 
-- I dette selvstudium skal du formatere titelteksten på følgende måde: 
+- I denne artikel skal du formatere titelteksten på følgende måde: 
    - **Skriftfarve**: rød
    - **Tekststørrelse**: **14 pt**
    - **Justering**: **Centrer**
@@ -216,7 +187,7 @@ Du kan finde flere oplysninger om vandrette retninger og dynamisk layout under [
 
 
 ### <a name="items-options-list-slicers-only"></a>Indstillinger for elementer (kun listeudsnit)
-1. I dette selvstudium skal du formatere indstillingerne for **Elementer** på følgende måde:
+1. Formater indstillingerne **Elementer** på følgende måde:
     - **Skriftfarve**: sort
     - **Baggrund**: lys rød
     - **Tekststørrelse**: **10 pt**

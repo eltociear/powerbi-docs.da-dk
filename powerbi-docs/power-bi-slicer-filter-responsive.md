@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/04/2018
+ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: aa7dc612d7a1b16fdc02fb1b40c98257cda3183d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 2feb20907bbcffcb8aa395705b34604ebbedb682
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877593"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006497"
 ---
 # <a name="create-a-responsive-slicer-you-can-resize-in-power-bi"></a>Opret et dynamisk udsnitsværktøj, som du kan ændre størrelsen på i Power BI
+
+[!INCLUDE [applies-to](includes/applies-to.md)] [!INCLUDE [yes-desktop](includes/yes-desktop.md)] [!INCLUDE [yes-service](includes/yes-service.md)]
 
 Dynamiske udsnitsværktøjer kan ændres i størrelsen, så de passer til at vilkårligt område i rapporten. Du kan ændre udsnitsværktøjets størrelse og form, fra vandret til firkantet til lodret, og værdierne i udsnitsværktøjet omarrangerer sig selv iht. dine ønsker. I Power BI Desktop og i Power BI-tjenesten kan du oprette vandrette udsnitsværktøjer og gøre udsnitsværktøjer til dato/område dynamiske. Udsnitsværktøjer til dato/område har også forbedrede berøringsområder, så det er lettere at ændre dem med en fingerspids. Du kan gøre dynamiske udsnitsværktøjer så små eller store, som du vil; de ændres også automatisk i størrelsen for at passe godt i rapporter i Power BI-tjenesten og også i Power BI-mobilapps. 
 
@@ -26,7 +28,7 @@ Dynamiske udsnitsværktøjer kan ændres i størrelsen, så de passer til at vil
 
 Det første trin i at oprette et dynamisk udsnitsværktøj er at oprette et grundlæggende udsnitsværktøj. 
 
-1. Vælg ![ikonet](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer-icon.png) **Udsnitsværktøj** i ruden **Visualiseringer**.
+1. Vælg ![ikonet](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer-icon.png)**Udsnitsværktøj** i ruden **Visualiseringer**.
 2. Træk feltet, du vil filtrere, hen på **Felt**.
 
     ![Føj et felt til udsnitsværktøjet](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-1-create.png)

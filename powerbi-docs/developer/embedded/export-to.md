@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 03/24/2020
-ms.openlocfilehash: 35b5c5f05a9c0ae5a36875671a919df12843e295
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.openlocfilehash: 472797cf30d6b88a59af5b3846e9b710bf4607c7
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273288"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267497"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Eksportér Power BI-rapport til fil (prøveversion)
 
@@ -21,7 +21,7 @@ ms.locfileid: "80273288"
 * **PDF**
 * **PNG**
     * Når du eksporterer til en PNG, komprimeres en rapport med flere sider til en zip-fil
-    * Hver fil i zip-filen for PNG repræsenterer en rapportside
+    * Hver fil i zip-filen repræsenterer en rapportside
     * Sidenavnene er de samme som returværdierne for API'erne [Hent sider](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) eller [Hent sider i gruppe](https://docs.microsoft.com/rest/api/power-bi/reports/getpagesingroup)
 
 ## <a name="usage-examples"></a>Eksempler på brug
@@ -30,13 +30,13 @@ Du kan bruge eksportfunktionen på flere forskellige måder. Her er nogle eksemp
 
 * **Knappen Send til udskriv** – I dit program kan du oprette en knap, der udløser et eksportjob, når der klikkes på den. Jobbet kan eksportere den viste rapport som en PDF eller en PPTX, og når den er fuldført, kan brugeren modtage filen som et download. Ved hjælp af bogmærker kan du eksportere rapporten i en bestemt tilstand, herunder konfigurerede filtre, udsnit og yderligere indstillinger. Da API'en er asynkron, kan det tage et stykke tid, før filen er tilgængelig.
 
-* **Vedhæftet fil i mail** – Send en automatiseret mail i angivne intervaller med en vedhæftet PDF-rapport. Dette scenarie kan være nyttigt, hvis du vil automatisere afsendelse af en ugentlig rapport til ledere.
+* **Vedhæftet fil i mail** – send en automatiseret mail i angivne intervaller med en vedhæftet PDF-rapport. Dette scenarie kan være nyttigt, hvis du vil automatisere afsendelse af en ugentlig rapport til ledere.
 
 ## <a name="using-the-api"></a>Brug af API'en
 
 Før du bruger API'en, skal du bekræfte, at følgende [lejerindstillinger for administratoren](../../service-admin-portal.md#tenant-settings) er aktiveret:
 * **Eksportér rapporter som PowerPoint-præsentationer eller PDF-dokumenter** – Aktiveret som standard.
-* **Eksportér rapporter som billedfiler** – Kræves kun til PNG og er deaktiveret som standard.
+* **Eksportér rapporter som billedfiler** – kræves kun til *PNG* og er deaktiveret som standard.
 
 API'en er asynkron. Når API'en [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) kaldes, udløses et eksportjob. Efter et eksportjob er udløst, kan du bruge [polling](https://docs.microsoft.com/rest/api/power-bi/reports/getexporttofilestatus) til at spore jobbet, indtil det er fuldført.
 
@@ -73,9 +73,9 @@ Hvis du vil eksportere ved hjælp af sikkerhed på rækkeniveau, skal du have f�
 
 ### <a name="data-protection"></a>Databeskyttelse
 
-PDF- og PPTX-formaterne understøtter [følsomhedsmærkater](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). Hvis du eksporterer en rapport med en følsomhedsmærkat til en PDF eller en PPTX, vises rapporten med dens følsomhedsmærkater i den eksporterede fil.
+PDF- og PPTX-formaterne understøtter [følsomhedsmærkater](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). Hvis du eksporterer en rapport med et følsomhedsmærkat til en PDF eller en PPTX, vises rapporten med dens følsomhedsmærkater i den eksporterede fil.
 
-En rapport med en følsomhedsmærkat kan ikke eksporteres til en PDF- eller PPTX-fil ved hjælp af en [tjenesteprincipal](embed-service-principal.md).
+En rapport med et følsomhedsmærkat kan ikke eksporteres til en PDF- eller PPTX-fil ved hjælp af en [tjenesteprincipal](embed-service-principal.md).
 
 ### <a name="localization"></a>Lokalisering
 
@@ -103,7 +103,7 @@ Et job, der overskrider sit antal af samtidige anmodninger, afsluttes ikke. Hvis
 * I forbindelse med en offentlig prøveversion er antallet af Power BI-rapportsider, der kan eksporteres pr. time, begrænset til 50 pr. kapacitet.
 * Eksporterede rapporter må ikke overstige en filstørrelse på 250 MB.
 * Følsomhedsmærkater understøttes ikke, når du eksporterer til PNG.
-* En rapport med en følsomhedsmærkat kan ikke eksporteres til en PDF- eller PPTX-fil ved hjælp af en [tjenesteprincipal](embed-service-principal.md).
+* En rapport med et følsomhedsmærkat kan ikke eksporteres til en PDF- eller PPTX-fil ved hjælp af en [tjenesteprincipal](embed-service-principal.md).
 * Det antal sider, der kan inkluderes i en eksporteret rapport, er 30. Hvis rapporten indeholder flere sider, returnerer API'en en fejl, og eksportjobbet annulleres.
 * [Personlige bogmærker](../../consumer/end-user-bookmarks.md#personal-bookmarks) og [vedvarende filtre](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) understøttes ikke.
 * De Power BI-visualiseringer, der er angivet nedenfor, understøttes ikke. Når der eksporteres en rapport, som indeholder disse visualiseringer, bliver de dele af rapporten, der indeholder disse visualiseringer, ikke gengivet, og der vises et fejlsymbol.
@@ -263,6 +263,9 @@ private async Task<ExportedFile> ExportPowerBIReport(
 ## <a name="next-steps"></a>Næste trin
 
 Gennemse, hvordan du integrerer indhold for dine kunder og din organisation:
+
+> [!div class="nextstepaction"]
+>[Eksportér den sideinddelte rapport til fil](export-paginated-report.md)
 
 > [!div class="nextstepaction"]
 >[Integrer indhold for dine kunder](embed-sample-for-customers.md)

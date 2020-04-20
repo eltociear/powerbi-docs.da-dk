@@ -1,28 +1,41 @@
 ---
-title: Brug udsnitsværktøjet til numerisk område i Power BI Desktop
-description: Læs om, hvordan du kan bruge et udsnitsværktøj til at begrænse resultatet til numeriske intervaller i Power BI Desktop
+title: Brug udsnitsværktøjet til numeriske områder i Power BI
+description: Få mere at vide om, hvordan du kan bruge et udsnitsværktøj til at begrænse resultatet til numeriske intervaller i Power BI.
 author: davidiseminger
 ms.reviewer: ''
+featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 04/06/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0fcc666febb4444b5ee83a1646e1e0c3ef9c6d82
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: bd5f937154edf9f8b6a86fb7f53690943a7f3a53
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539296"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006635"
 ---
-# <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Brug udsnitsværktøjet til numerisk område i Power BI Desktop
+# <a name="use-the-numeric-range-slicer-in-power-bi"></a>Brug udsnitsværktøjet til numeriske områder i Power BI
+
+[!INCLUDE [applies-to](includes/applies-to.md)] [!INCLUDE [yes-desktop](includes/yes-desktop.md)] [!INCLUDE [yes-service](includes/yes-service.md)]
 
 Med udsnitsværktøjet til numerisk område kan du anvende forskellige filtre på en numerisk kolonne i din datamodel. Der er tre muligheder for at filtrere dine numeriske data: mellem tal, mindre end eller lig med et tal samt større end eller lig med et tal. Denne enkle teknik er en effektiv måde at filtrere dine data på.
 
 ![Visual med udsnitsværktøjet til numerisk område](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
 
-## <a name="use-the-numeric-range-slicer"></a>Brug det numeriske interval-udsnitsværktøj
+## <a name="video"></a>Video
+
+I denne video gennemgås det, hvordan du opretter et udsnitsværktøj til numeriske områder.
+
+> [!NOTE]
+> I denne video bruges en ældre version af Power BI Desktop.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
+
+
+## <a name="add-a-numeric-range-slicer"></a>Tilføj udsnitsværktøj til numeriske områder
 
 Du kan bruge udsnitsværktøjet til numerisk område ligesom ethvert andet udsnitsværktøj. Du skal blot oprette et **udsnitsværktøj**, der er synligt for din rapport, og derefter vælge en numerisk værdi for **Felt**-værdien. På følgende billede er feltet **LineTotal** markeret.
 

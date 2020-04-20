@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 04/08/2020
-ms.openlocfilehash: ff63e38e52a3c8970edfa5b6d9e2ccabeff2e16a
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.openlocfilehash: abe0b97a4c4f593f8bb22be8b72c12295d0f656c
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80979793"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006451"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -29,7 +29,7 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
            -  Rettelse til Power BI-rapporter, der ikke kan uploades for visse datakilder
            -  Rettelse til placeringen af linket til download af Desktop for Power BI-rapportserver fra portalen
            -  Rettelse til DynamicImageDPI til Excel-gengivelse
-           -  Rettelse til Oracle-forbindelser, der bruger forkert trådkultur i visse scenarier med flere brugere (se [dokumentation til UseInstalledUICulture] (https://docs.microsoft.com/power-bi/report-server/connect-data-sources) for at få flere oplysninger)
+           -  Rettelse til Oracle-forbindelser, der bruger forkert trådkultur i visse scenarier med flere brugere (se [dokumentation til UseInstalledUICulture](https://docs.microsoft.com/power-bi/report-server/connect-data-sources) for at få flere oplysninger)
            -  Rettelse til standardværdien for CustomHeaders, der forårsager fejl i forbindelse med integrering af rapporter
            -  Rettelse til SQL-parameternavne, der oprettes forkert i visse tilfælde
     - *Version: 1.6.7327.3007 (build 15.0.1102.759), udgivet: 23. januar 2020*

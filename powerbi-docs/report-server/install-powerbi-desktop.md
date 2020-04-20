@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/13/2020
-ms.openlocfilehash: dfb6c313e989514da2aa04facd6c6136a0eadc1a
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: dfb57d6344e6a8e020404f9cd23c957967b960f7
+ms.sourcegitcommit: a9ebab692c670192b62a31bfe99447908506251b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80404192"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "81122244"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installér Power BI Desktop optimeret til Power BI-rapportserver
 
@@ -96,6 +96,10 @@ Rapporter i Power BI-rapportserver understøtter ikke disse funktioner i Power B
 ### <a name="custom-security"></a>Brugerdefineret sikkerhed
 
 Power BI Desktop optimeret til Power BI-rapportserver understøtter ikke brugerdefineret sikkerhed. Hvis din Power BI-rapportserver er konfigureret med en brugerdefineret sikkerhedsudvidelse, kan du ikke gemme en Power BI-rapport fra Power BI Desktop (optimeret til Power BI-rapportserver) til instansen af Power BI-rapportserveren. Du skal gemme PBIX-rapportfilen fra Power BI Desktop og uploade den til portalwebstedet for Power BI-rapportserver.
+
+### <a name="saving-reports-to-a-power-bi-report-server-in-a-different-domain"></a>Gem rapporter på en Power BI-rapportserver på et andet domæne
+
+Når du gemmer en Power BI-rapport på Power BI-rapportserver, bruges dine Windows-legitimationsoplysninger. Hvis du gemmer direkte på en rapportserver i et andet domæne, understøttes dine Windows-legitimationsoplysninger ikke. Du kan bruge en webbrowser til at få vist rapportserveren og manuelt overføre filen fra computeren i stedet for.
 
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop til tidligere versioner af Power BI-rapportserver
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 02/27/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: cb58b71d4fe15458516dc0b1d3f25d79e6ef1a62
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 165651beab2e20f033d20480e78a3876931ea806
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79126046"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267267"
 ---
 # <a name="data-lineage-preview"></a>Dataafstamning (prøveversion)
 I moderne BI-projekter (Business Intelligence) kan det være en udfordring for mange kunder at forstå flowet af data fra datakilden til destinationen. Udfordringen er endnu større, hvis du har oprettet avancerede analyseprojekter, der strækker sig over flere datakilder, artefakter og afhængigheder. Spørgsmål som "Hvad sker der, hvis jeg ændrer disse data?" eller "Hvorfor er denne rapport ikke ajourført?" kan være vanskelige at besvare. Det kan være nødvendigt med et team af eksperter eller en grundig undersøgelse for at forstå dem. Vi har designet en dataafstamningsvisning for at hjælpe dig med at besvare disse spørgsmål.
@@ -93,3 +93,4 @@ Afstamningsvisning er et interaktivt lærred. Du kan bruge musen og touchpad'en 
 ## <a name="next-steps"></a>Næste trin
 
 * [Introduktion til datasæt på tværs af arbejdsområder (prøveversion)](../service-datasets-across-workspaces.md)
+* [Effektanalyse af datasæt](service-dataset-impact-analysis.md)

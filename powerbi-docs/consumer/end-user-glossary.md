@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 04/07/2020
 ms.author: mihart
-ms.openlocfilehash: 19a3b1bbf5f2ea3043b92d97a66196ca3e32118c
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 2e5b8cf174e5e2180a42d2ccb3d2b43ba31b2d38
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79377230"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267221"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
@@ -36,8 +36,7 @@ Den organisatoriske *Premium*-konto (også kaldet *Premium-kapacitet*) tilføjer
 
 **annotate (anmærke)** At skrive linjer, tekst eller stempler på et snapshot af et felt, en rapport eller en visual i Power BI-mobilappen på iOS- og Android-enheder.
 
-**app, apps** 
-
+**App eller apps** omfatter dashboards, rapporter og datasæt. De henviser også til mobilapps til brug af indhold, f.eks. Power BI-appen til iOS.
 
 **AppSource** Centraliseret onlinelager, hvor du kan gennemse og udforske dashboards, rapporter, datasæt og apps, som du kan downloade.
 
@@ -203,7 +202,7 @@ Almindeligt brugt: navigationsrude, ved lidt plads: nav.rude
 
 **OneDrive for Business** vs. **OneDrive** OneDrive er en privat konto, og OneDrive for Business er til arbejdskonti.  
 
-**On-premises (i det lokale miljø)** Den term, der bruges til at skelne mellem lokal beregning (hvor computerressourcer befinder sig i en kundes egne faciliteter) fra cloudbaseret databehandling.
+**I det lokale miljø** er den term, der bruges til at skelne mellem lokal beregning (hvor computerressourcer befinder sig i en kundes egne faciliteter) og cloudbaseret databehandling.
 
 
 ## <a name="p"></a>P

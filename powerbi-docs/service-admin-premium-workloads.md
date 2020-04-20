@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/08/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: aa44f0c8c11cb26ecfc7763ec127ca8a8505536a
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.openlocfilehash: a252c10b247ad5fc06565139bc69fc43a9add467
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80979908"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267474"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurer arbejdsbelastninger i en Premium-kapacitet
 
@@ -24,23 +24,13 @@ I denne artikel beskrives, hvordan du aktiverer og konfigurerer arbejdsbelastnin
 
 Arbejdsbelastninger for forespørgsler optimeres til og begrænses af de ressourcer, som er fastlagt af din SKU for Premium-kapacitet. Premium-kapaciteter understøtter også yderligere arbejdsbelastninger, der kan bruge din kapacitets ressourcer. Standardværdier for hukommelse for disse arbejdsbelastninger er baseret på de kapacitetsnoder, der er tilgængelige for din SKU. Det maksimale antal hukommelsesindstillinger kan ikke akkumuleres. Hukommelse op til den angivne maksimale værdi tildeles dynamisk for AI og dataflow, men tildeles statisk for sideinddelte rapporter.
 
-### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Microsoft Office-SKU'er til SaaS-scenarier (Software som en service)
-
-|                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
-|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| AI | 40 % som standard, minimum 40 % | 20 % som standard, minimum 20 % | 20 % som standard, minimum 8 % | 20 % som standard, minimum 4 % | 20 % som standard, minimum 2 % |
-| Dataflow | I/T |20 % som standard, minimum 12 %  | 20 % som standard, minimum 5 %  | 20 % som standard, minimum 3 % | 20 % som standard, minimum 2 %  |
-| Sideinddelte rapporter | I/T |I/T | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 % | 20 % som standard, minimum 2,5 % |
-| | | | | | |
-
-### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Microsoft Azure-SKU'er til PaaS-scenarier (Platform as a Service)
-
-|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
-|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| AI | I/T  | 40 % som standard, minimum 40 %  | 20 % som standard, minimum 20 % | 20 % som standard, minimum 8 % | 20 % som standard, minimum 4 % | 20 % som standard, minimum 2 % |
-| Dataflow         | 40 % som standard, minimum 40 % | 24 % som standard, minimum 24 % | 20 % som standard, minimum 12 % | 20 % som standard, minimum 5 %  | 20 % som standard, minimum 3 % | 20 % som standard, minimum 2 %   |
-| Sideinddelte rapporter | I/T                      | I/T                      | I/T                     | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 % | 20 % som standard, minimum 2,5 % |
-| | | | | | |
+|                   | EM1/A1                  | EM2/A2                  | EM3/A3                  | P1/A4                  | P2/A5                  | P3/A6                   |
+|-------------------|---------------------------|---------------------------|---------------------------|--------------------------|--------------------------|---------------------------|
+| AI                | Ikke-understøttet               | 40 % som standard, minimum 40 %  | 20 % som standard, minimum 20 %  | 20 % som standard, minimum 8 %  | 20 % som standard, minimum 4 %  | 20 % som standard, minimum 2 %   |
+| Datasæt          | 100 % som standard, minimum 67 % | 100 % som standard, minimum 40 % | 100 % som standard, minimum 20 % | 100 % som standard, minimum 8 % | 100 % som standard, minimum 4 % | 100 % som standard, minimum 2 %  |
+| Dataflow         | 40 % som standard, minimum 40 %  | 24 % som standard, minimum 24 %  | 20 % som standard, minimum 12 %  | 20 % som standard, minimum 5 %  | 20 % som standard, minimum 3 %  | 20 % som standard, minimum 2 %   |
+| Sideinddelte rapporter | Ikke-understøttet               | Ikke-understøttet               | Ikke-understøttet               | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 %  | 20 % som standard, minimum 2,5 % |
+|                   |                           |                           |                           |                          |                          |                           |
 
 ## <a name="workload-settings"></a>Indstillinger for arbejdsbelastning
 
@@ -85,7 +75,14 @@ Bemærk, at denne indstilling kun påvirker DirectQuery-forespørgsler, mens [Ma
 
 Brug denne indstilling for at undgå, at forfattere af rapporter publicerer et stort datasæt, der kan have negativ indvirkning på kapaciteten. Bemærk, at Power BI ikke kan bestemme den faktiske størrelse i hukommelsen, før datasættet indlæses i hukommelsen. Det er muligt, at et datasæt med en lille offlinestørrelse kan have et større hukommelsesforbrug end et datasæt med en stor offlinestørrelse.
 
-Hvis du har et eksisterende datasæt, der er større end den størrelse, du angiver for denne indstilling, kan datasættet ikke indlæses, når en bruger forsøger at få adgang til det.
+Hvis du har et eksisterende datasæt, der er større end den størrelse, du angiver for denne indstilling, kan datasættet ikke indlæses, når en bruger forsøger at få adgang til det. Indlæsning af datasættet kan også mislykkes, hvis det er større end den maksimale hukommelse, der er konfigureret for datasættenes arbejdsbelastning.
+
+For at beskytte systemets ydeevne er der anvendt et ekstra SKU-specifikt fast loft for den maksimale størrelse på et offlinedatasæt, uanset hvilken værdi der er konfigureret. Dette faste loft gælder ikke for Power BI-datasæt, der er optimeret til store datastørrelser. Du kan finde flere oplysninger i [Store modeller i Power BI Premium](service-premium-large-models.md).
+
+|                                           | EM1/A1 | EM2/A2 | EM3/A3 | P1/A4 | P2/A5 | P3/A6 |   
+|-------------------------------------------|----------|----------|----------|---------|---------|---------|
+| Fast loft for maksimal størrelse på offlinedatasæt | 3 GB     | 5 GB     | 6 GB     | 10 GB   | 10 GB   | 10 GB   |
+|                                           |          |          |          |         |         |         |
 
 #### <a name="max-result-row-set-count"></a>Maks. antal resulterende rækker
 
@@ -110,6 +107,7 @@ Standardindstillingen er 0, hvilket medfører, at der anvendes følgende SKU-spe
 | Automatisk hukommelsesgrænse for forespørgsel | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   |
 |                              |          |          |          |         |         |         |
 
+For at beskytte systemets ydeevne gennemtvinges et fast loft på 10 GB for alle forespørgsler, der udføres af Power BI-rapporter, uanset hvilken hukommelsesgrænse for forespørgslen der er konfigureret af brugeren. Dette faste loft gælder ikke for forespørgsler, der er udstedt af værktøjer, som bruger Analysis Services-protokollen (også kaldet XMLA). Brugerne bør overveje at forenkle forespørgslen eller dens beregninger, hvis forespørgslen bruger for meget hukommelse.
 
 #### <a name="query-timeout"></a>Timeout for forespørgsel
 
@@ -132,8 +130,8 @@ Vær opmærksom på, at Power BI-rapporter tilsidesætter denne standard med en 
 
 Når denne indstilling er aktiveret, gør automatisk sideopdatering det muligt for brugere i din Premium-kapacitet at opdatere sider i deres rapport med et angivet interval i forbindelse med DirectQuery-kilder. Som kapacitetsadministrator kan du gøre følgende:
 
-1.  Slå automatisk sideopdatering til og fra.
-2.  Definere et minimumsinterval for opdatering.
+- Slå automatisk sideopdatering til og fra.
+- Definere et minimumsinterval for opdatering.
 
 På følgende billede vises placeringen af indstillingen for intervallet for automatisk opdatering:
 
@@ -165,9 +163,9 @@ Når du opdaterer et dataflow, opretter arbejdsbelastningen for dataflow en obje
 
 Det anbefales, at du bruger appen [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) til at analysere ydeevnen af arbejdsbelastningen for dataflow.
 
-I nogle tilfælde forbedres ydeevnen ikke ved at øge størrelsen af objektbeholderen. Hvis dataflowet f.eks. kun henter data fra en kilde uden at udføre betydelige beregninger, vil det sandsynligvis ikke hjælpe at ændre størrelsen af objektbeholderen. Det kan hjælpe at øge størrelsen af objektbeholderen, hvis det giver arbejdsbelastningen for dataflowet mulighed for at allokere mere hukommelse til opdateringshandlinger. Når der er allokeret mere hukommelse, kan det reducere den tid, det tager at opdatere beregningstunge enheder.
+I nogle tilfælde forbedres ydeevnen ikke ved at øge størrelsen af objektbeholderen. Hvis dataflowet for eksempel kun henter data fra en kilde uden at udføre væsentlige beregninger, hjælper det sandsynligvis ikke at ændre størrelsen på objektbeholderen. Det kan hjælpe at øge størrelsen af objektbeholderen, hvis det giver arbejdsbelastningen for dataflowet mulighed for at allokere mere hukommelse til opdateringshandlinger. Når der er allokeret mere hukommelse, kan det reducere den tid, det tager at opdatere beregningstunge enheder.
 
-Værdien af Størrelse på objektbeholder kan ikke overstige den maksimale hukommelse for arbejdsbelastningen for dataflow. En P1-kapacitet har f.eks. 25 GB hukommelse. Hvis Maks. hukommelse (%) for arbejdsbelastningen for dataflow er angivet til 20 %, kan Størrelse af objektbeholder (MB) ikke overstige 5000. I alle tilfælde kan Størrelse på objektbeholder ikke overstige Maks. hukommelse, heller ikke selvom du har angivet en højere værdi.
+Værdien Størrelse på objektbeholder kan ikke overstige den maksimale hukommelse for arbejdsbelastningen for dataflow. En P1-kapacitet har f.eks. 25 GB hukommelse. Hvis Maks. hukommelse (%) for arbejdsbelastningen for dataflow er angivet til 20 %, kan Størrelse af objektbeholder (MB) ikke overstige 5000. I alle tilfælde kan Størrelse på objektbeholder ikke overstige Maks. hukommelse, heller ikke selvom du har angivet en højere værdi.
 
 ### <a name="paginated-reports"></a>Sideinddelte rapporter
 

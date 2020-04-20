@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0b420a41474349f86be682987ff9f8144debab11
-ms.sourcegitcommit: 075a0ade4134d28f578fda78996595e8cd9f3555
+ms.openlocfilehash: 93cb384c06fc78f8d006aed02aef323bf3a72d31
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80147371"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006307"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicer en app i Power BI
 
@@ -43,25 +43,26 @@ Når dashboards og rapporter i dit arbejdsområde er klar, skal du vælge, hvilk
 
 1. I listevisning i arbejdsområdet bestemmer du, hvilke dashboards og rapporter der skal **medtages i appen**.
 
-     ![Vælg dashboardet, der skal publiceres](media/service-create-distribute-apps/power-bi-apps-incude-dashboard.png)
+    ![Vælg dashboardet, der skal publiceres](media/service-create-distribute-apps/power-bi-apps-incude-dashboard.png)
 
-     Hvis du vælger ikke at inkludere en rapport, der har et relateret dashboard, får du vist en advarsel ud for rapporten. Du kan stadig publicere appen, men det relaterede dashboard mangler delene fra den pågældende rapport.
+    Hvis du vælger ikke at inkludere en rapport, der har et relateret dashboard, får du vist en advarsel ud for rapporten. Du kan stadig publicere appen, men det relaterede dashboard mangler delene fra den pågældende rapport.
 
-     ![Advarsel om relateret dashboard](media/service-create-distribute-apps/power-bi-apps-report-warning.png)
+    ![Advarsel om relateret dashboard](media/service-create-distribute-apps/power-bi-apps-report-warning.png)
 
 2. Vælg knappen **Publicer app** øverst til højre for at starte processen til oprettelse og publicering af en app fra arbejdsområdet.
    
-     ![Publicer app](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
+    ![Publicer app](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
 
 3. Under **Installation** skal du angive navnet og en beskrivelse, så brugerne nemmere kan finde appen. Du kan angive en temafarve for at gøre den personlig. Du kan også tilføje et link til et supportwebsted.
    
-     ![Byg din app](media/service-create-distribute-apps/power-bi-apps-build-your-apps.png)
+    ![Byg din app](media/service-create-distribute-apps/power-bi-apps-build-your-apps.png)
 
 4. Under **Navigation** skal du vælge det indhold, der skal publiceres som en del af appen. Derefter kan du tilføje appnavigation for at organisere indholdet i sektioner. Se [Design navigationsoplevelsen til din app](#design-the-navigation-experience) i denne artikel for at få flere oplysninger.
    
-     ![Appnavigation](media/service-create-distribute-apps/power-bi-apps-navigation.png)
+    ![Appnavigation](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
 5. Under **Tilladelser** skal du bestemme, hvem der har adgang til appen, og hvad de kan gøre med den. 
+
     - I [klassiske arbejdsområder](service-create-workspaces.md): alle i din organisation, bestemte personer eller ADD-sikkerhedsgrupper (Azure Active Directory).
     - I [arbejdsområder med den nye oplevelse](service-create-the-new-workspaces.md): bestemte personer, AAD-sikkerhedsgrupper og -distributionslister samt Office 365 Grupper. Alle brugere af arbejdsområdet får automatisk adgang til appen for arbejdsområdet.
     - Du kan give brugere af appen tilladelse til at oprette forbindelse til appens underliggende datasæt ved hjælp af tilladelsen Opret. De får vist disse datasæt, når de søger efter delte datasæt. Læs mere om [at give brugerne mulighed for at oprette forbindelse til appens datasæt](#allow-users-to-connect-to-datasets) i denne artikel.
@@ -73,11 +74,11 @@ Når dashboards og rapporter i dit arbejdsområde er klar, skal du vælge, hvilk
 
 6. Du kan installere appen automatisk for modtagerne, hvis din Power BI-administrator har aktiveret denne indstilling for dig på Power BI-administrationsportalen. Læs mere om, hvordan du [installerer en app automatisk](#automatically-install-apps-for-end-users), i denne artikel.
 
-     ![Apptilladelser](media/service-create-distribute-apps/power-bi-apps-permissions.png)
+    ![Apptilladelser](media/service-create-distribute-apps/power-bi-apps-permissions.png)
 
 7. Når du vælger **Publicer app**, får du vist en meddelelse med en bekræftelse af, at den er klar til at blive publiceret. I dialogboksen **Del denne app** kan du kopiere den URL-adresse, der er et direkte link til denne app.
    
-     ![Afslutning af appen](media/service-create-distribute-apps/power-bi-apps-success.png)
+    ![Afslutning af appen](media/service-create-distribute-apps/power-bi-apps-success.png)
 
 Du kan sende dette direkte link til de personer, du har delt den med, eller de kan finde din app under fanen Apps ved at gå til **Download og udforsk flere apps fra AppSource**. Læs mere om [appoplevelsen for forretningsbrugere](consumer/end-user-apps.md).
 
@@ -86,11 +87,11 @@ Når du publicerer din app, vil du muligvis ændre eller opdatere den. Det er ne
 
 1. Åbn det apparbejdsområde, der svarer til appen. 
    
-     ![Åbn arbejdsområde](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
+    ![Åbn arbejdsområde](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
 
 2. Foretag de ønskede ændringer i dashboards eller rapporter.
  
-     Arbejdsområdet er dit testområde, så dine ændringer sendes ikke live i appen, før du publicerer igen. Her kan du foretage ændringer, uden at det påvirker publicerede apps.  
+    Arbejdsområdet er dit testområde, så dine ændringer sendes ikke live i appen, før du publicerer igen. Her kan du foretage ændringer, uden at det påvirker publicerede apps.  
  
     > [!IMPORTANT]
     > Hvis du fjerner en rapport og opdaterer appen, mister dine appforbrugere alle tilpasninger, f.eks. bogmærker, kommentarer osv., også selvom du tilføjer rapporten i appen igen.  
@@ -111,6 +112,7 @@ Når du slår **Ny navigationsgenerator** til, kan du designe brugerdefineret na
 ![Appnavigation](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
 Du kan tilpasse appnavigationen yderligere på følgende måde:
+
 * Omarranger elementer ved hjælp af pil op/ned. 
 * Omdøb elementer i **Rapportdetaljer**, **Dashboarddetaljer** og **Projektmappedetaljer**.
 * Skjul bestemte elementer i navigationen.
@@ -121,16 +123,20 @@ Når du tilføjer et **link**, kan du vælge, hvor linket åbnes, i **Link-detal
 
 ### <a name="considerations-for-using-the-new-navigation-builder-option"></a>Overvejelser ved brug af den nye navigationsgenerator
 Her er nogle generelle ting, du skal huske på, når du bruger den nye navigationsgenerator:
-* Rapportsider vises i appens navigationsområde som en sektion, der kan udvides
+
+* Rapportsider vises i appens navigationsområde som en sektion, der kan udvides. Når en rapport har én synlig side, er det kun rapportnavnet, der vises. Når du klikker på rapportnavnet i navigationen, åbnes den første side i rapporten. 
+
+    > [!NOTE]
+    > Din rapport kan kun indeholde én synlig side, fordi du har konfigureret navigation til de øvrige sider med knapper eller detaljeadgang.
+
 * Hvis du slår den nye navigationsgenerator fra og derefter publicerer eller opdaterer din app, mister du de tilpasninger, du har foretaget. Du mister f.eks. alle sektioner, angivelser af rækkefølge, links og brugerdefinerede navne for navigationselementer.
+* Det er muligt ikke at bruge App Builder.
 
 Når du tilføjer links til din appnavigation og vælger indstillingen Indholdsområde:
 * Sørg for, at linket kan integreres. Nogle tjenester blokerer for integrering af deres indhold på tredjepartswebsteder, som f.eks. Power BI.
 * Integration af Power BI-tjenesteindhold, f.eks. rapporter eller dashboards, i andre arbejdsområder understøttes ikke. 
 * Integrer indhold på Power BI-rapportserveren via det oprindelige integrerings-URL-indhold fra en udrulning i det lokale miljø. Udfør trinnene i [Opret URL-adressen til Power BI-rapportserveren](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#create-the-power-bi-report-url) for at få URL-adressen. Vær opmærksom på, at der er gældende godkendelsesregler, så hvis du vil have vist indholdet, skal du have en VPN-forbindelse til serveren i det lokale miljø. 
 * Der vises en sikkerhedsadvarsel øverst i det integrerede indhold for at gøre opmærksom på, at indholdet ikke er i Power BI.
-
-
 
 ## <a name="automatically-install-apps-for-end-users"></a>Installér automatisk apps for slutbrugere
 Hvis en administrator giver dig tilladelser, kan du installere apps automatisk og *pushe* dem til slutbrugere. Denne pushfunktionalitet gør det lettere at distribuere de rette apps til de rette personer eller grupper. Din app vises automatisk på dine slutbrugeres liste over appindhold. De behøver ikke at søge efter den i Microsoft AppSource eller at følge et installationslink. Se, hvordan administratorer gør det muligt at [pushe apps til slutbrugerne](service-admin-portal.md#push-apps-to-end-users), i artiklen på Power BI-administrationsportalen.
@@ -181,22 +187,28 @@ Et medlem af et arbejdsområde kan annullere publicering af appen.
 
 * I et arbejdsområde skal du vælge de tre prikker ( **...** ) i øverste højre hjørne > **Annuller publicering af app**.
   
-     ![Annuller publicering af app](media/service-create-distribute-apps/power-bi-app-unpublish.png)
+    ![Annuller publicering af app](media/service-create-distribute-apps/power-bi-app-unpublish.png)
 
 Denne handling fjerner installationen af appen for alle, du har udgivet den til, så de ikke længere har adgang til den. Den sletter ikke arbejdsområdet eller dets indhold.
 
 ## <a name="view-your-published-app"></a>Se din publicerede app
 
-Når forbrugerne af din app åbner din app, kan de se den navigation, du har oprettet, i stedet for Power BI-standardnavigationsruden. Appnavigationen indeholder en liste over rapporter og dashboards i de sektioner, du har defineret. Den viser også de enkelte sider i de enkelte rapporter og ikke kun navnet på rapporten.
+Når forbrugerne af din app åbner din app, kan de se den navigation, du har oprettet, i stedet for Power BI-standardnavigationsruden. Appnavigationen indeholder en liste over rapporter og dashboards i de sektioner, du har defineret. Den viser også de enkelte sider i de enkelte rapporter og ikke kun navnet på rapporten. Du kan udvide og skjule den venstre navigationslinje ved hjælp af pilene i menulinjen.
 
 ![App med navigation](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
+
+I fuldskærmsvisning kan du få vist eller skjule navigationsvisningen ved at vælge indstillingen i hjørnet.
+
+![Fuldskærmsnavigation](media/service-create-distribute-apps/full-screen-app-show-navigation.png)
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 Ting, du skal være opmærksom i forbindelse med publicering af apps:
 
+* Tilladelsessiden ændrer ikke tilladelsen for datasæt i andre arbejdsområder. Du får vist en advarsel om, at du skal give adgang til disse datasæt uafhængigt af hinanden. Det er en god idé at kontakte ejeren af datasættet, før du begynder at oprette din app, for at sikre, at det er OK at give alle dine appbrugere adgang til disse datasæt. 
 * Du kan højst have 100 brugere eller grupper på adgangslisten til appen. Du kan dog give mere end 100 brugere adgang til appen. Hvis du vil gøre det, skal du bruge en eller flere brugergrupper, der indeholder alle de ønskede brugere.
 * Hvis den bruger, der blev føjet til adgangslisten, allerede havde adgang til appen via arbejdsområdet, vises vedkommende ikke på adgangslisten til appen i forbindelse med den nye arbejdsområdeoplevelse.  
-
+* Når du bruger det nye udseende for Power BI-tjenesten, vises URL-adressen til supportwebstedet på kortet med oplysninger om elementet. Læs mere om [det nye udseende i Power BI](service-new-look.md).
+* I forbindelse med apps kan du give brugerne mulighed for at dele appen og appens underliggende datasæt ved hjælp af tilladelsen til deling. Denne indstilling er som standard slået fra for nye apps. Vi anbefaler, at du aktiverer denne indstilling for dine eksisterende apps og opdaterer tilladelsen til de underliggende datasæt. Indstillingen blev aktiveret for eksisterende apps, fordi apps indledningsvis blev udviklet til at erstatte indholdspakker, der havde denne funktionsmåde.
 
 ## <a name="next-steps"></a>Næste trin
 * [Opret et arbejdsområde](service-create-workspaces.md)
