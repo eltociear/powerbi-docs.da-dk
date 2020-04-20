@@ -108,6 +108,8 @@
               href: gateway-onprem-sizing.md
             - name: Overvåg rapportens ydeevne
               href: monitor-report-performance.md
+            - name: Fejlfind rapportens ydeevne
+              href: report-performance-troubleshoot.md
     - name: Hvidbøger
       items:
         - name: Oversigt over whitepapers
