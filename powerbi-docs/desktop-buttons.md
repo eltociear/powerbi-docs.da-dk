@@ -1,20 +1,20 @@
 ---
 title: Brug knapper i Power BI
 description: Du kan tilføje knapper i Power BI-rapporter, der får dine rapporter til at fungere som apps, og sørge for, at brugerne bliver mere involveret.
-author: davidiseminger
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/12/2020
-ms.author: davidi
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6629165ec031fea0d1c1af443e1d7b311bc743aa
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: c703a4b67b642af5199413e80ff1e140905a2338
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79201588"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439819"
 ---
 # <a name="use-buttons-in-power-bi"></a>Brug knapper i Power BI
 Ved hjælp af **knapper** i Power BI kan du oprette rapporter, der fungerer på samme måde som apps, og dermed skabe et indtagende miljø, så brugerne kan holde over, klikke og yderligere interagere med Power BI-indhold. Du kan føje knapper til rapporter i **Power BI Desktop** og i **Power BI-tjenesten**. Når du deler dine rapporter i Power BI-tjeneste, får brugerne en applignende visning.

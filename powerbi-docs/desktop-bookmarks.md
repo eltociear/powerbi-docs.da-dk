@@ -1,20 +1,20 @@
 ---
 title: Brug bogmærker i Power BI Desktop til at dele indsigt og oprette tekstenheder
 description: Du kan bruge bogmærker i Power BI Desktop til at gemme visninger og indstillinger i dine rapporter og oprette præsentationer med tekstenheder
-author: davidiseminger
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/18/2019
-ms.author: davidi
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 00ea3e70b34ecdaf2c5bd8b8728153bfb26f899b
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: b986b86642e5ac3e6a8394010bf27922daaf5ea7
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79378978"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439911"
 ---
 # <a name="create-bookmarks-in-power-bi-desktop-to-share-insights-and-build-stories"></a>Opret bogmærker i Power BI Desktop for at dele indsigt og oprette tekstenheder
 Med *bogmærker* i Power BI Desktop kan du registrere den aktuelt konfigurerede visning af en rapportside, herunder filtreringen af og tilstanden for visualiseringerne. Du kan vende tilbage til denne tilstand senere ved at vælge det gemte bogmærke. 

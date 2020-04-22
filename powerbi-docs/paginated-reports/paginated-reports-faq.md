@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.openlocfilehash: 885c6b98e66a6ce2fd8069cc86bf50440cb94b4b
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.date: 04/21/2020
+ms.openlocfilehash: dcf154105b8940bd400fbb4e630a1d1cfd00ddf0
+ms.sourcegitcommit: 8775168ed916c517c57c696ebe45699e638b86e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80113598"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81766279"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål 
 
@@ -88,6 +88,8 @@ Sideinddelte rapporter er bedst til scenarier, hvor der kræves megen formaterin
 
 Power BI-rapporter er optimeret til udforskning og interaktivitet.  En salgsrapport, hvor forskellige sælgere vil opdele dataene i den samme rapport for deres specifikke område/branche/kunde og se, hvordan tallene ændres, vil fungere bedst som en Power BI-rapport.
 
+Du kan få flere oplysninger i [Her skal du bruge sideinddelte rapporter i Power BI](../guidance/report-paginated-or-power-bi.md).
+
 ### <a name="the-documentation-says-power-bi-report-builder-is-the-preferred-authoring-tool-can-i-create-paginated-reports-in-sql-server-data-tools-for-power-bi"></a>Ifølge dokumentationen er Power BI Report Builder det foretrukne værktøj til oprettelse. Kan jeg oprette sideinddelte rapporter i SQL Server Data Tools til Power BI?
 
 Ja, men Power BI-tjenesten giver dig kun mulighed for at uploade et enkelt element ad gangen, så mange af de scenarier, forfattere bruger med SQL Server Data Tools (SSDT), understøttes endnu ikke. Du kan se en komplet [liste over ikke-understøttede funktioner](#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) senere i disse Ofte stillede spørgsmål.  
@@ -110,10 +112,8 @@ Sideinddelte rapporter understøtter i øjeblikket ikke følgende elementer:
 
 - Delte datakilder
 - Delte datasæt
-- Underrapporter
 - Detaljeadgang og klikfrekvens til andre rapporter
 - Linkede rapporter
-- Lag i Bing-kort
 - Brugerdefinerede skrifttyper
 
 Du får vist en fejlmeddelelse, hvis du forsøger at uploade en fil, som indeholder en ikke-understøttet funktion i Power BI-tjenesten – med undtagelse af slå til/fra og sortering.

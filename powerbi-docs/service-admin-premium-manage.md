@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/06/2020
+ms.date: 04/17/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 2aa62197bc9af359962f25394d4f202a945d97d8
-ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
+ms.openlocfilehash: 9dbbf38b69d71811de4dd599951529234068b178
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80813092"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637915"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Konfigurer og administrer kapaciteter i Power BI Premium
 
@@ -95,8 +95,8 @@ Power BI-administratorer og globale Office 365-administratorer kan ændre Power 
 
     P-varenumre kan ikke nedgraderes til EM-varenumre. Du kan placere markøren over deaktiverede indstillinger for at få vist en forklaring.
 
-> [!IMPORTANT]
-> Hvis der er et højt forbrug af ressourcer i din Power BI Premium-kapacitet, hvilket medfører problemer med ydeevne eller pålidelighed, kan du modtage notifikationer via mail for at identificere og løse problemet. Se [notifikationer om kapacitet og pålidelighed](service-interruption-notifications.md#capacity-and-reliability-notifications) for at få flere oplysninger.
+
+
 
 
 ### <a name="manage-user-permissions"></a>Administrer brugertilladelser

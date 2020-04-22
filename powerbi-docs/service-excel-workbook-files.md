@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 45f3ff801b2f1bffd2396fe9f59ea32dd4b11ffb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a6dd3040fd765010c5d6baaf76991f7d1be4cfa7
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877054"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637903"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Hent data fra Excel-projektmappefiler
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -50,11 +50,11 @@ Se denne nyttige video, hvis du vil vide mere om, hvordan du sikrer dig, at dine
 <iframe width="500" height="281" src="https://www.youtube.com/embed/l2wy4XgQIu0" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="where-your-workbook-file-is-saved-makes-a-difference"></a>Det gør en forskel, hvor din projektmappe er gemt
-**Lokal** – Hvis du gemmer din projektmappefil på et lokalt drev på din computer eller på en anden placering i din organisation, kan du indlæse din fil i Power BI fra Power BI. Filen forbliver på den lokale harddisk, så det er ikke hele filen, der importeres til Power BI. Der sker det, at et nyt datasæt oprettes i Power BI, og data og en eventuel datamodel fra projektmappen indlæses i datasættet. Hvis projektmappen indeholder Power View-ark , vises de på Power BI-webstedet under Rapporter. Excel 2016 har også funktionen **Publicer** (i menuen **Filer**). Brugen af **Publicer** svarer grundlæggende til brugen af **Hent Data > Filer > lokalfil** fra Power BI, men det er ofte lettere at opdatere datasættet i Power BI, hvis du jævnligt foretager ændringer i projektmappen.
+**Lokal** – Hvis du gemmer din projektmappefil på et lokalt drev på din computer eller på en anden placering i din organisation, kan du indlæse din fil i Power BI fra Power BI. Filen bliver på den lokale harddisk, så det er ikke hele filen, der importeres til Power BI. Der sker det, at et nyt datasæt oprettes i Power BI, og data og en eventuel datamodel fra projektmappen indlæses i datasættet. Hvis projektmappen indeholder Power View-ark , vises de på Power BI-webstedet under Rapporter. Excel 2016 har også funktionen **Publicer** (i menuen **Filer**). Brugen af **Publicer** svarer grundlæggende til brugen af **Hent Data > Filer > lokalfil** fra Power BI, men det er ofte lettere at opdatere datasættet i Power BI, hvis du jævnligt foretager ændringer i projektmappen.
 
 **OneDrive – erhverv** – Hvis du har OneDrive for Business, og du logger på med den samme konto, du bruger til at logge på Power BI, er det den klart mest effektive metode til at holde dit arbejde i Excel synkroniseret med datasæt, rapporter og dashboards i Power BI. Da både Power BI og OneDrive findes i skyen, opretter Power BI *forbindelse* til din projektmappe på OneDrive ca. hver time. Hvis der findes ændringer, opdateres datasættet, rapporter og dashboards automatisk i Power BI. Du kan også bruge Publicer til at opdatere dit datasæt og dine rapporter i Power Bi med det samme, på samme måde som hvis du gemmer din projektmappe på et lokalt drev. Ellers synkroniserer Power BI automatisk, normalt inden for en time.
 
-**OneDrive – personlig** – Hvis du gemmer dine projektmappefiler på din egen OneDrive-konto, får du mange af de samme fordele som med OneDrive for Business. Den største forskel er, at når du første gang opretter forbindelse til din fil (med funktionen Hent data > Filer > OneDrive - personlig), skal du logge på OneDrive med din Microsoft-konto, som normalt er forskellig fra, hvad du bruger til at logge på Power BI. Når du logger på med OneDrive med din Microsoft-konto, skal du sørge for at vælge indstillingen Forbliv logget på. På denne måde kan Power BI oprette forbindelse til din projektmappefil ca. hver time og sikre, at dit datasæt og dine rapporter i Power BI er synkroniseret.
+**OneDrive – personlig** – Hvis du gemmer dine projektmappefiler på din egen OneDrive-konto, får du mange af de samme fordele som med OneDrive for Business. Den største forskel er, at når du første gang opretter forbindelse til din fil (med funktionen Hent data > Filer > OneDrive - personlig), skal du logge på OneDrive med din Microsoft-konto, hvilket normalt er anderledes, end hvad du bruger til at logge på Power BI. Når du logger på med OneDrive med din Microsoft-konto, skal du sørge for at vælge indstillingen Forbliv logget på. På denne måde kan Power BI oprette forbindelse til din projektmappefil ca. hver time og sikre, at dit datasæt og dine rapporter i Power BI er synkroniseret.
 
 **SharePoint – teamwebsteder** – Lagring af dine Power BI Desktop-filer på SharePoint – Teamwebsteder er stort set det samme som at gemme på OneDrive for Business. Den største forskel er, hvordan du opretter forbindelse til filen fra Power BI. Du kan angive en URL-adresse, eller du kan oprette forbindelse til rodmappen.
 
@@ -124,8 +124,6 @@ Når du i øjeblikket vælger Importér, importerer Power BI kun data, der er de
 **Planlæg opdatering** – Hvis din Excel-projektmappefil opretter forbindelse til eksterne datakilder, eller hvis du har importeret fra et lokalt drev, kan du konfigurere planlagt opdatering for at sikre, at dit datasæt eller din rapport altid er opdateret. Konfigurationen af planlagt opdatering er i de fleste tilfælde meget nem at udføre, men de nærmere detaljer ligger uden for emnet af denne artikel. Se [Opdatering af data i Power BI](refresh-data.md) for at få mere at vide.
 
 [Publicer i Power BI fra Excel 2016](service-publish-from-excel.md)
-
-[Power BI Publisher til Excel](publisher-for-excel.md)
 
 [Opdatering af data i Power BI](refresh-data.md)
 

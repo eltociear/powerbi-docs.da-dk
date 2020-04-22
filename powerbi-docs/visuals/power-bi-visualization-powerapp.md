@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/17/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3be5f9efe3a6e18ba46f6990b09952d37b967e16
-ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
+ms.openlocfilehash: 5628a114b872b7c0d92d5079198616a20fe85b87
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79525930"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637781"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Selvstudium: Integrer en Power Apps-visualisering i en Power BI-rapport
 
@@ -53,7 +53,7 @@ Når du føjer Power Apps-visualiseringen til din rapport, starter den Power App
 
 3. I ruden **Felter** skal du vælge **Name**, **Product Code** og **Sales Stage**. 
 
-    ![vælg felter](media/power-bi-visualization-powerapp/power-bi-fields.jpg)
+    ![vælg felter](media/power-bi-visualization-powerapp/power-bi-fields.png)
 
 4. I Power Apps-visualiseringen skal du vælge det Power Apps-miljø, hvor du vil oprette appen og derefter klikke eller trykke på **Opret ny**.
 

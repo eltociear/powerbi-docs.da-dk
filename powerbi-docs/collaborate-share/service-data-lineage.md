@@ -1,5 +1,5 @@
 ---
-title: Dataafstamning (prøveversion)
+title: Dataafstamning
 description: I moderne BI-projekter (Business Intelligence) er det en vigtig udfordring for mange kunder at forstå flowet af data fra datakilden til destinationen.
 author: paulinbar
 ms.reviewer: ''
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.date: 02/27/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 165651beab2e20f033d20480e78a3876931ea806
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: fc1f55fbadfaa6c25dd9140a41064eaa876013df
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267267"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525393"
 ---
-# <a name="data-lineage-preview"></a>Dataafstamning (prøveversion)
+# <a name="data-lineage"></a>Dataafstamning
 I moderne BI-projekter (Business Intelligence) kan det være en udfordring for mange kunder at forstå flowet af data fra datakilden til destinationen. Udfordringen er endnu større, hvis du har oprettet avancerede analyseprojekter, der strækker sig over flere datakilder, artefakter og afhængigheder. Spørgsmål som "Hvad sker der, hvis jeg ændrer disse data?" eller "Hvorfor er denne rapport ikke ajourført?" kan være vanskelige at besvare. Det kan være nødvendigt med et team af eksperter eller en grundig undersøgelse for at forstå dem. Vi har designet en dataafstamningsvisning for at hjælpe dig med at besvare disse spørgsmål.
 
 ![Afstamningsvisning i Power BI](media/service-data-lineage/service-data-lineage-view.png)
