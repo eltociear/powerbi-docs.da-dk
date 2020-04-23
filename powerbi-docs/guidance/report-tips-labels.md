@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/15/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 54364162b48b591e0f8eccdeb05e07f02656632a
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.openlocfilehash: 98bb0e31a8cc92f5969f62f8b2a9e03637790fc3
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "81006566"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82065541"
 ---
 # <a name="tips-to-optimize-the-use-of-labels-in-power-bi-reports"></a>Tip til optimering af brugen af mærkater i Power BI-rapporter
 
@@ -37,7 +37,7 @@ Kort sagt, så omfatter de fire mest populære tip til optimering af brugen af m
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Tip til oprettelse af flotte rapporter](../power-bi-reports-tips-and-tricks-for-creating.md)
+- [Tip til oprettelse af flotte rapporter](../desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine-video: [De fire mest populære tip til optimering af brugen af mærkater i Power BI](https://www.youtube.com/watch?v=ywx5xUN5VQM)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)

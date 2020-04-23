@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/15/2020
 ms.author: v-pemyer
-ms.openlocfilehash: eeb8689ee1c5ba704c4aad9b61ce9b6feab725bf
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.openlocfilehash: c40d93cc06204ee7a935727c3b38494fdeb71256
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "81006106"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82065519"
 ---
 # <a name="tips-to-control-chart-gridlines-in-power-bi-reports"></a>Tip til styring af diagramgitterlinjer i Power BI-rapporter
 
@@ -36,7 +36,7 @@ Kort sagt, så omfatter de tre mest populære tip til styring af gitterlinjer i 
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Tip til oprettelse af flotte rapporter](../power-bi-reports-tips-and-tricks-for-creating.md)
+- [Tip til oprettelse af flotte rapporter](../desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine-video: [De tre mest populære tip til styring af diagramgitterlinjer i Power BI](https://www.youtube.com/watch?v=Y-igshes2LI)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)
