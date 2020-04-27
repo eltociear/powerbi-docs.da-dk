@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/02/2019
+ms.date: 04/20/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: bbb5eeee7422670c771f7bbfb4b051de0538a10a
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 02f6bc83c7d939bd54c5c9a06067185ab0618183
+ms.sourcegitcommit: 1f768dfef27cd8887318671f91427f72d02370c6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207821"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81675629"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Opret nye arbejdsområder i Power BI
 
@@ -127,7 +127,7 @@ I den nye arbejdsområdeoplevelse kan du ikke oprette eller bruge organisationsi
 
     ![Indholdsliste for arbejdsområder](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
-1. Føj sikkerhedsgrupper, distributionslister, Office 365-grupper eller enkeltpersoner til disse arbejdsområder som medlemmer, bidragydere eller administratorer. Se [Roller i de nye arbejdsområder](service-new-workspaces.md#roles-in-the-new-workspaces) for at få en forklaring på de forskellige roller.
+1. Føj sikkerhedsgrupper, distributionslister, Office 365-grupper eller enkeltpersoner til disse arbejdsområder som seere, medlemmer, bidragydere eller administratorer. Se [Roller i de nye arbejdsområder](service-new-workspaces.md#roles-in-the-new-workspaces) for at få en forklaring på de forskellige roller.
 
     ![Arbejdsområder – tilføj medlemmer, administratorer og bidragydere](media/service-create-the-new-workspaces/power-bi-workspace-add-members.png)
 

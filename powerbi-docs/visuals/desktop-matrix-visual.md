@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6a45dcc195514bc1af71470beeead9f73a798942
-ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
+ms.openlocfilehash: c091295d50bac576af411d967b9902d6804f82be
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576833"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637856"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Opret matrixvisualiseringer i Power BI
 
@@ -57,7 +57,8 @@ Matrixens udvidelsestilstand gemmes sammen med rapporten. En matrix kan fastgør
 
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
-
+> [!NOTE]
+> Hvis du bygger en rapport oven på en multidimensionel Analysis Services-model, er der nogle særlige overvejelser, når du skal udvide/skjule, hvis modellen bruger funktionen Standardmedlem. Du kan få flere oplysninger under [Arbejde med flerdimensionelle modeller i Power BI](../desktop-default-member-multidimensional-models.md)
 
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Brug detailudledning til matrixvisualiseringen
 Med matrixvisualiseringen kan du foretage en mængde interessante aktiviteter for detailudledning, der ikke var tilgængelige før. Du kan f.eks. foretage detailudledning ved hjælp af rækker, kolonner og endda til individuelle afsnit og celler. Lad os se på, hvordan hver enkelt af disse fungerer.

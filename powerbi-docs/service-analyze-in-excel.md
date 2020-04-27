@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/13/2020
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: a142b950375014c4d1adba917cceb2c6d9af4825
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: df905c4174c366f64b58d257786f002c607f3edb
+ms.sourcegitcommit: 1f768dfef27cd8887318671f91427f72d02370c6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427685"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81675674"
 ---
 # <a name="analyze-in-excel"></a>Analysér i Excel
 Der er tidspunkter, hvor du måske vil bruge Excel til at få vist og interagere med et datasæt, du har i Power BI. Det kan du gøre med **Analysér i Excel**, og du kan få adgang til pivottabel-, diagram- og udsnitsfunktioner i Excel, der er baseret på datasættet, der findes i Power BI.
@@ -68,9 +68,7 @@ Selvom du er logget på Power BI i din browser, kan du blive bedt om at logge p�
 ### <a name="users-with-multiple-power-bi-accounts"></a>Brugere med flere Power BI-konti
 Nogle brugere har flere Power BI-konti, og disse brugere kan opleve situationer, hvor de er logget på Power BI med én konto, men den konto, der har adgang til datasættet, der bruges i Analysér i Excel, er en anden konto. I disse situationer kan du få vist fejlen **Forbudt** eller en logonfejl, når du forsøger at få adgang til et datasæt, der bruges i en projektmappe i Analysér i Excel.
 
-Du får mulighed for at logge på igen, og på dette tidspunkt kan du så logge på med den Power BI-konto, der har adgang til datasættet, som Analysér i Excel skal have adgang til. Du kan også vælge **Profil** fra båndfanen **Power BI** i Excel, som identificerer den konto, du er i øjeblikket er logget på med, og få et link, så du kan du logge af (og derefter logge på med en anden konto). Du kan [downloade Power BI Publisher til Excel](https://www.microsoft.com/download/details.aspx?id=50729), hvis du ikke allerede har installeret den. Det er sådan, Power BI-båndet installeres i Excel.
-
-![Se din profil](media/service-analyze-in-excel/pbi_anlz_excel_profile.png)
+Du får mulighed for at logge på igen, og på dette tidspunkt kan du så logge på med den Power BI-konto, der har adgang til datasættet, som Analysér i Excel skal have adgang til. Du kan også vælge dit navn på det øverste bånd i Excel, som identificerer den konto, du er logget på med i øjeblikket. Log af, og log på med en anden konto.
 
 ### <a name="enable-data-connections"></a>Aktivér dataforbindelser
 Når du vil analysere dine Power BI-data i Excel, bliver du bedt om at bekræfte filnavnet og stien til .odc-filen og derefter vælge **Aktivér**.

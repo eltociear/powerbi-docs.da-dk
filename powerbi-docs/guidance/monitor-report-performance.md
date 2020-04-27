@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b1ab74ec7f7f6594450ec2cf95528d06dc45f613
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 2962d5f8504b7214cb685457c59b11f1d9d7b85e
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77610012"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525531"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Overvåg rapportens ydeevne i Power BI
 
@@ -23,7 +23,7 @@ Overvåg rapportens ydeevne i Power BI Desktop ved at bruge [appen Power BI Prem
 Overvågning af ydeevne er relevant i følgende situationer:
 
 - Opdateringen af importdatamodellen er langsom.
-- Dine DirectQuery-eller LiveConnection-rapporter er langsomme.
+- Dine DirectQuery-eller Live Connection-rapporter er langsomme.
 - Dine modelberegninger er langsomme.
 
 Langsomme forespørgsler eller rapportvisualiseringer bør være omdrejningspunktet for fortsat optimering.
@@ -85,6 +85,7 @@ Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 
 - [Forespørgselsdiagnosticering](/power-query/QueryDiagnostics)
 - [Effektivitetsanalyse](../desktop-performance-analyzer.md)
+- [Fejlfind rapportens ydeevne i Power BI](report-performance-troubleshoot.md)
 - [Appen Power BI Premium Metrics](../service-premium-metrics-app.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)

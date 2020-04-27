@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: f1e48fb2f20c531f4dc66e86d13b76f54165b81c
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: cc47820e5903426d4f3635c78e0dc108049f897e
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80404750"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439336"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)
 
@@ -30,6 +30,12 @@ Der er et par krav til oprettelse af dataflow fra CDM-mapper, som beskrevet på 
 * Du skal være tildelt læse- og kørselstilladelser til alle filer og mapper i CDM-mappen for at føje dem til Power BI.
 
 I følgende afsnit beskrives, hvordan du opretter et dataflow fra en CDM-mappe.
+
+## <a name="authorizing-users-for-cdm-folders-to-create-a-dataflow"></a>Godkendelse af brugere til CDM-mapper i forbindelse med oprettelse af et dataflow
+
+Hvis du vil oprette et dataflow fra en CDM-mappe, skal følgende tilladelser tilføjes:
+* Den bruger, der skal have adgang til CDM-mappen via Power BI, skal være angivet under rollen **Storage Blob-dataejer** for lagerkontoen.
+* Den bruger, der skal have adgang til mappen CDM via Power BI, skal have **læseadgang** og **kørselsadgang** til adgangskontrollisterne både for selve CDM-mappen og de filer eller mapper, den indeholder. 
 
 ## <a name="create-a-dataflow-from-a-cdm-folder"></a>Opret et dataflow fra en CDM-mappe
 

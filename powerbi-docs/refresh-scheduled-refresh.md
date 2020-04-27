@@ -1,20 +1,20 @@
 ---
 title: Konfigurer planlagt opdatering
 description: Følgende forklarer, hvordan man vælger en gateway og konfigurerer planlagt opdatering.
-author: maggiesMSFT
+author: davidiseminger
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.author: maggies
+ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 622273ed4c8d6f2faee46d3cc84d981f86bd8c92
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: cc0527d093118fdb585800d0038f824223098119
+ms.sourcegitcommit: 1f768dfef27cd8887318671f91427f72d02370c6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74958396"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81675687"
 ---
 # <a name="configure-scheduled-refresh"></a>Konfigurer planlagt opdatering
 
@@ -32,13 +32,13 @@ Sådan får du vist skærmbilledet **Planlagt opdatering**:
 
 ## <a name="gateway-connection"></a>Gatewayforbindelse
 
-Her vil du se forskellige valgmuligheder, afhængigt af om du har en personlig gateway eller en virksomhedsgateway, der er online og tilgængelig.
+Her kan du se forskellige valgmuligheder, afhængigt af om du har en personlig gateway eller en virksomhedsgateway, der er online og tilgængelig.
 
-Hvis ingen gateway er tilgængelig, kan du se, at **Gatewayforbindelse** er deaktiveret. Du vil også se en besked om, hvordan du kan installere en personlig gateway.
+Hvis ingen gateway er tilgængelig, kan du se, at **Gatewayforbindelse** er deaktiveret. Du kan også se en besked om, hvordan du kan installere en personlig gateway.
 
 ![Gateway ikke konfigureret](media/refresh-scheduled-refresh/gateway-not-configured.png)
 
-Hvis du har konfigureret en personlig gateway, kan den vælges, hvis den er online. Den vil blive vist som offline, hvis den ikke er tilgængelig.
+Hvis du har konfigureret en personlig gateway, og den er online, kan den vælges. Den vises som offline, hvis den ikke er tilgængelig.
 
 ![Gatewayforbindelse](media/refresh-scheduled-refresh/gateway-connection.png)
 
@@ -84,14 +84,18 @@ Du skal indstille skyderen **Hold dine data opdateret** til **Ja** for at konfig
 
 ## <a name="whats-supported"></a>Hvad understøttes?
 
+
+> [!NOTE]
+> Den planlagte opdatering deaktiveres også automatisk efter fire på hinanden følgende fejl.
+
 Visse datasæt understøttes i forhold til forskellige gateways til planlagte opdateringer. Her er en forklaring på, hvad der er tilgængeligt.
 
 ### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personlig
 
 **Power BI Desktop**
 
-* Alle onlinedatakilder, der vises i **Hent data** og Forespørgselseditor i Power BI Desktop.
-* Alle datakilder i det lokale miljø, der vises i **Hent data** og Forespørgselseditor i Power BI Desktop, undtagen Hadoop-fil (HDFS) og Microsoft Exchange.
+* Alle onlinedatakilder, der vises i **Hent data** og Query-editor i Power BI Desktop.
+* Alle datakilder i det lokale miljø, der vises i **Hent data** og Query-editor i Power BI Desktop, undtagen Hadoop-fil (HDFS) og Microsoft Exchange.
 
 **Excel**
 
@@ -113,7 +117,7 @@ Nogle gange går opdateringen af data muligvis ikke som forventet. Dette skyldes
 - [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)
 - [Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 - [Opdatering af data i Power BI](refresh-data.md)  
 - [Power BI Gateway – Personal](service-gateway-personal-mode.md)  

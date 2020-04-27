@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 325e62bbf326e9f30d4c41299998c61cc5d7f487
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: 5ff7891ce704ebaf8677df6f0872396ffa1b04a2
+ms.sourcegitcommit: 1f768dfef27cd8887318671f91427f72d02370c6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267589"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81675652"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Onlinekursus: Sideinddelte Power BI-rapporter på én dag
 
@@ -83,7 +83,7 @@ Se velkomst- og introduktionsvideoen for at starte kurset.
 
 Du kan downloade og konfigurere en selvstudiepakke, der består af præsentationsindhold og otte praktiske laboratorier:
 
-1. Brug [dette link](https://aka.ms/priad-ilt-student) for at downloade selvstudiepakken (. zip) til din pc.
+1. Brug [dette link](https://aka.ms/priad-student) for at downloade selvstudiepakken (. zip) til din pc.
 1. Åbn filegenskaberne, og markér feltet Fjern blokering (Windows kan have markeret filen som potentielt upålidelig).
 1. Udpak filindholdet til en mappe i filsystemet. Vi anbefaler, at du opretter en mappe, der er let at finde, måske ved at kalde den **Kurser**. Laboratoriedokumenterne refererer til denne placering som **&lt;CourseFolder&gt;** .
 
@@ -105,6 +105,10 @@ Når du er klar til at begynde det første laboratorium, skal du åbne filen **&
 > Du skal logge på Power BI for at udgive en Power BI Desktop-fil til et arbejdsområde. Udgivelsen resulterer i et datasæt, der bruges som en rapportdatakilde. Du behøver ikke at have en Power BI Pro-licens eller et Power BI Premium-abonnement for at bruge et datasæt som en rapportdatakilde.
 >
 > Nogle laboratorieopgaver omfatter dog udgivelse af sideinddelte rapporter i et arbejdsområde. Du kan kun åbne en sideinddelt rapport, når den er gemt i et arbejdsområde i en [dedikeret kapacitet](../service-premium-what-is.md#dedicated-capacities), hvor arbejdsbelastningen for sideinddelte rapporter er aktiveret. Hvis du ikke har adgang til et egnet arbejdsområde, får du vist et link, hvor du kan se en video, der viser rapportudgivelse i stedet for.
+
+## <a name="instructor-kit"></a>Instruktørpakke
+
+Brug [dette link](https://aka.ms/priad-instructor) for at downloade instruktørpakken (. zip) til din pc.
 
 ## <a name="next-steps"></a>Næste trin
 

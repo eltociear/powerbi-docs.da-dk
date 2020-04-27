@@ -6,33 +6,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 04/08/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: eefae2b230bf087635b79ed4645a9297b7194edd
-ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
+ms.openlocfilehash: 410058cad59fdf134b54b45754ef06c0d382c4ef
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79525631"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439934"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Køb og tildel Power BI Pro-brugerlicenser
 
 >[!IMPORTANT]
->Er du bruger og klar til at opgradere til en Power BI Pro-licens? Gå direkte til [Introduktion til Power BI Pro](https://go.microsoft.com/fwlink/?LinkId=2106428&clcid=0x409&cmpid=pbidocs-purchasing-power-bi-pro) for at konfigurere din konto.
+>Denne artikel er til administratorer. Er du bruger og klar til at opgradere til en Power BI Pro-licens? Gå direkte til [Introduktion til Power BI Pro](https://go.microsoft.com/fwlink/?LinkId=2106428&clcid=0x409&cmpid=pbidocs-purchasing-power-bi-pro) for at konfigurere din konto.
 
-Power BI Pro er en individuel brugerlicens, der giver brugerne mulighed for at læse og interagere med rapporter og dashboards, som andre har publiceret til Power BI-tjenesten. Brugere med denne licenstype kan dele indhold og samarbejde med andre Power BI Pro-brugere. Det er kun brugere med en Power BI Pro-brugerlicens, der kan publicere eller dele indhold med andre brugere eller bruge indhold, der er oprettet af andre, medmindre indholdet er hostet i en Power BI Premium-kapacitet. Du kan finde flere oplysninger under _Sammenligning af Power BI-funktioner_ i afsnittet [Power BI-priser](https://powerbi.microsoft.com/pricing/).
+Power BI Pro er en individuel brugerlicens, der giver brugerne mulighed for at læse og interagere med rapporter og dashboards, som andre har publiceret til Power BI-tjenesten. Brugere med denne licenstype kan dele indhold og samarbejde med andre Power BI Pro-brugere. Det er kun brugere med en Power BI Pro-brugerlicens, der kan publicere eller dele indhold med andre brugere eller bruge indhold, der er oprettet af andre, medmindre indholdet er hostet i en Power BI Premium-kapacitet. Du kan få flere oplysninger om de tilgængelige licens- og abonnementstyper under [Power BI-licenser i din organisation](service-admin-licensing-organization.md).
 
 ## <a name="purchase-power-bi-pro-user-licenses"></a>Køb Power BI Pro-brugerlicenser
 
 I denne artikel forklares det, hvordan du køber Power BI Pro-brugerlicenser i Microsoft 365 Administration. Når du har købt licenser, kan du tildele dem til brugere enten i Microsoft 365 Administration eller i Azure Portal.
 
 > [!NOTE]
-> Fra og med den 14. januar 2020 er selvbetjeningsindkøb, abonnements- og licensstyringsfunktioner til Power Platform-produkter (Power BI, Power Apps og Power Automate) tilgængelige til kommercielle Cloud-kunder. Du kan finde flere oplysninger om, hvordan du aktiverer eller deaktiverer selvbetjeningsindkøb i din organisation, under [Ofte stillede spørgsmål om selvbetjeningsindløb](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
+> Fra og med den 14. januar 2020 er selvbetjeningsindkøb, abonnements- og licensstyringsfunktioner til Power Platform-produkter (Power BI, Power Apps og Power Automate) tilgængelige til kommercielle Cloud-kunder. Du kan få flere oplysninger under [Ofte stillede spørgsmål om køb via selvbetjening](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq). Hvis du vil aktivere eller deaktivere købsmuligheder via selvbetjening, kan du se under [Aktivér eller deaktiver tilmelding og køb via selvbetjening](admin/service-admin-disable-self-service.md).
 
 ### <a name="prerequisites"></a>Forudsætninger
 
-Hvis du vil købe og tildele licenser via Microsoft 365 Administration, skal du være medlem af rollen **[Global administrator eller Faktureringsadministrator](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)** i Microsoft 365.
+Hvis du vil købe og tildele licenser via Microsoft 365 Administration, skal du være medlem af rollen [Global administrator eller Faktureringsadministrator](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) i Microsoft 365.
 
 Du skal være ejer af det Azure-abonnement, som Power BI bruger til opslag i Azure Active Directory, for at tildele licenser via Azure Portal.
 
@@ -80,10 +80,10 @@ Benyt følgende fremgangsmåde for at tildele Power BI Pro-licenser til individu
 
 ## <a name="next-steps"></a>Næste trin
 
-Nu, hvor du har tildelt licenser, kan du få mere at vide om Power BI Pro.
+- [Power BI-licenser i din organisation](service-admin-licensing-organization.md)
 
-[Power BI-licenser i din organisation](service-admin-licensing-organization.md)
+ - [Find Power BI-brugere, der er logget på](service-admin-access-usage.md)
 
-[Find Power BI-brugere, der er logget på](service-admin-access-usage.md)
+ - [Tilmeld dig Power BI som enkeltperson](service-self-service-signup-for-power-bi.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
