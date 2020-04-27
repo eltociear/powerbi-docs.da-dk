@@ -6,24 +6,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/17/2019
+ms.date: 04/16/2020
 ms.author: painbar
-ms.openlocfilehash: c9a42949ca517860c8b3f0e6faa07d49bd8054e8
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 42fa16228deea88f606e348d1a87f9d465c8c2ea
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79376678"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82066319"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Hvad er Power BI-skabelonprogrammer?
 
 Med de nye Power BI-*skabelonprogrammer* kan Power BI-partnere udarbejde programmer i Power BI med kun lidt eller ingen kode og udrulle dem til Power BI-kunder.  Denne artikel indeholder en oversigt over Power BI-skabelonprogrammet.
 
-Skabelonprogrammer er en erstatning for de aktuelle tjenesteindholdspakker. Som Power BI-partner kan du oprette indhold, der er klar til brug, for dine kunder og selv publicere det.  
+Som Power BI-partner kan du oprette indhold, der er klar til brug, for dine kunder og selv publicere det.  
 
 Du kan udarbejde skabelonprogrammer, som gør det muligt for dine kunder at oprette forbindelse til og instantiere fra deres egne konti. Som domæneeksperter kan de låse op for data på en måde, så deres virksomhedsbrugere nemt kan bruge dem.  
 
-Du kan sende dine skabelonprogrammer til Cloud Partner-portalen. Programmerne bliver derefter offentligt tilgængelige på [markedspladsen til Power BI-programmer](https://app.powerbi.com/getdata/services) og på [Microsoft AppSource](https://appsource.microsoft.com/?product=power-bi). Her er en overordnet oversigt over oplevelsen med at oprette en offentlig skabelon.
+Du sender skabelonprogrammer til Partnercenter. Programmerne bliver derefter offentligt tilgængelige på [markedspladsen til Power BI-programmer](https://app.powerbi.com/getdata/services) og på [Microsoft AppSource](https://appsource.microsoft.com/?product=power-bi). Her er en overordnet oversigt over oplevelsen med at oprette en offentlig skabelon.
 
 ## <a name="power-bi-apps-marketplace"></a>Markedsplads til Power BI-programmer
 
@@ -38,7 +38,7 @@ Med Power BI-skabelonprogrammer kan brugere af Power BI Pro eller Power BI Premi
 Der er flere faser i den generelle proces for udvikling og indsendelse af et skabelonprogram. Nogle faser kan indeholde mere end én aktivitet samtidigt.
 
 
-| Fase | Power BI Desktop |  |Power BI-tjeneste  |  |Cloud Partner-portal  |
+| Fase | Power BI Desktop |  |Power BI-tjeneste  |  |Partnercenter  |
 |---|--------|--|---------|---------|---------|
 | **Et** | Udarbejd en datamodel og en rapport i en .pbix-fil |  | Opret et arbejdsområde. Importér en PBIX-fil. Opret et supplerende dashboard  |  | Registrer dig som partner |
 | **To** |  |  | Opret en testpakke, og kør intern validering        |  | |
@@ -49,7 +49,7 @@ Der er flere faser i den generelle proces for udvikling og indsendelse af et ska
 
 Du skal have tilladelse til at oprette et skabelonprogram. Du kan finde flere oplysninger på Power BI-administrationsportal, indstillingen Skabelonprogram. 
 
-Hvis du vil udgive et skabelonprogram i Power BI-tjenesten og AppSource, skal du opfylde kravene til at [blive udgiver på Cloud Marketplace](https://docs.microsoft.com/azure/marketplace/become-publisher).
+Hvis du vil udgive et skabelonprogram i Power BI-tjenesten og AppSource, skal du opfylde kravene til at [blive udgiver på Partnercenter](https://docs.microsoft.com/azure/marketplace/become-publisher).
  
 ## <a name="high-level-steps"></a>Overordnede trin
 
@@ -67,7 +67,7 @@ Her er de overordnede trin.
 
 6. Hæv testprogrammet til præproduktion for at indsende programmet til validering i AppSource og teste det uden for din egen lejer. 
 
-7. Send indholdet til Cloud Partner-platformen, så det kan blive udgivet. 
+7. Indsend indholdet til [Partnercenter](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) med henblik på udgivelse. 
 
 8. Gå "live" med dit tilbud i AppSource, og flyt programmet til produktion i Power BI.
 
@@ -75,11 +75,11 @@ Her er de overordnede trin.
 
 ## <a name="requirements"></a>Krav
 
-Du skal have tilladelse til at oprette et skabelonprogram. Du kan finde flere oplysninger på Power BI[-administrationsportal, indstillingen Skabelonprogram](service-admin-portal.md#template-apps-settings). 
+Du skal have tilladelse til at oprette et skabelonprogram. Du kan finde flere oplysninger på Power BI[-administrationsportal, indstillingen Skabelonprogram](service-admin-portal.md#template-apps-settings).
 
-Hvis du vil udgive et skabelonprogram i Power BI-tjenesten og AppSource, skal du opfylde kravene til at [blive udgiver på Cloud Marketplace](https://docs.microsoft.com/azure/marketplace/become-publisher).
+Hvis du vil udgive et skabelonprogram i Power BI-tjenesten og AppSource, skal du opfylde kravene til at [blive udgiver på Partnercenter](https://docs.microsoft.com/azure/marketplace/become-publisher).
  > [!NOTE] 
- > Indsendelser af skabelonapps administreres i [Cloud Partner-portal](https://cloudpartner.azure.com). Brug den samme Microsoft Developer Center-registreringskonto for at logge på. Du skal kun have én Microsoft-konto til dine tilbud i AppSource. Konti skal ikke være specifikke for individuelle tjenester eller tilbud.
+ > Indsendelser af skabelonprogrammer administreres i [Partnercenter](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Brug den samme Microsoft Developer Center-registreringskonto for at logge på. Du skal kun have én Microsoft-konto til dine tilbud i AppSource. Konti skal ikke være specifikke for individuelle tjenester eller tilbud.
 
 ## <a name="tips"></a>Tip! 
 

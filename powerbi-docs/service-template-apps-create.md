@@ -1,5 +1,5 @@
 ---
-title: Opret skabelonapps i Power BI
+title: Opret skabelonprogrammer i Power BI
 description: Sådan opretter du skabelonprogrammer i Power BI, som du kan distribuere til Power BI-kunder.
 author: teddybercovitz
 ms.reviewer: ''
@@ -8,14 +8,14 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 6b7b472b0c16c47ae2497c5dc8c74cc1c4d778d4
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: 4062cb8a417ce20f4d6823a3e68d26ad12b9a6c9
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436013"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82066342"
 ---
-# <a name="create-a-template-app-in-power-bi"></a>Opret en skabelonapp i Power BI
+# <a name="create-a-template-app-in-power-bi"></a>Opret et skabelonprogram i Power BI
 
 Med de nye Power BI-*skabelonprogrammer* kan Power BI-partnere udarbejde programmer i Power BI med kun lidt eller ingen kode og udrulle dem til Power BI-kunder.  Denne artikel indeholder en trinvis vejledning til at oprette et Power BI-skabelonprogram.
 
@@ -30,7 +30,7 @@ Her er kravene til at udarbejde et skabelonprogram:
 - En [Power BI Pro-licens](service-self-service-signup-for-power-bi.md)
 - En [installation af Power BI Desktop](desktop-get-the-desktop.md) (valgfrit)
 - Kendskab til de [grundlæggende begreber i Power BI](service-basic-concepts.md)
-- Tilladelser til at dele en skabelonapp (du kan finde flere oplysninger i Power BI-[administrationsportalen, Skabelonappens indstillinger](service-admin-portal.md#template-apps-settings)
+- Tilladelser til at dele et skabelonprogram (du kan finde flere oplysninger på Power BI-[administrationsportalen, indstillinger for skabelonprogram](service-admin-portal.md#template-apps-settings)
 
 ## <a name="create-the-template-workspace"></a>Opret skabelonen for arbejdsområdet
 
@@ -46,9 +46,9 @@ Hvis du vil oprette et skabelonprogram, som du kan distribuere til andre Power B
 
 3. Angiv et navn, en beskrivelse (valgfrit) og et logobillede (valgfrit) for dit arbejdsområde.
 
-4. Udvid afsnittet **Avanceret**, og vælg **Udvikl en skabelonapp**.
+4. Udvid afsnittet **Avanceret**, og vælg **Udvikl en skabelonprogram**.
 
-    ![Udvikl en skabelonapp](media/service-template-apps-create/power-bi-template-app-develop.png)
+    ![Udvikl et skabelonprogram](media/service-template-apps-create/power-bi-template-app-develop.png)
 
 5. Vælg **Gem**.
 >[!NOTE]
@@ -70,26 +70,26 @@ Nu, hvor du har indhold i dit arbejdsområde, er du klar til at pakke det i et s
 
 1. Vælg **Opret program** i skabelonen for arbejdsområdet.
 
-    ![Opret app](media/service-template-apps-create/power-bi-create-app.png)
+    ![Opret program](media/service-template-apps-create/power-bi-create-app.png)
 
     Her udfylder du yderligere indstillinger i fem kategorier for oprettelse for dit skabelonprogram:
 
     **Branding**
 
     ![Branding](media/service-template-apps-create/power-bi-create-branding.png)
-    - Appnavn
+    - Navn på program
     - Beskrivelse
     - Supportwebsted (link præsenteres under programoplysningerne, efter skabelonprogrammet er blevet distribueret igen som organisationsprogram)
     - Programlogo (begrænsning på filstørrelsen på 45 K, 1:1 højde-bredde-forhold, formaterne .png .jpg og .jpeg)
-    - Appens temafarve
+    - Programmets temafarve
 
     **Navigation**
 
-    Aktivér **Ny navigationsgenerator**, hvor du kan definere navigationsruden i appen. Du kan finde flere oplysninger i artiklen [Design navigationsoplevelsen](service-create-distribute-apps.md#design-the-navigation-experience).
+    Aktivér **Ny navigationsgenerator**, hvor du kan definere navigationsruden i programmet. Du kan finde flere oplysninger i artiklen [Design navigationsoplevelsen](service-create-distribute-apps.md#design-the-navigation-experience).
 
    ![Angiv programlandingsside](media/service-template-apps-create/power-bi-install-app-content.png)
     
-    **Programmets landingside:** Hvis du vælger at framelde navigationsgeneratoren, har du mulighed for at vælge appens landingsside. Angiv en rapport eller et dashboard som landingsside for dit program. Brug en landingsside, der giver det rette indtryk.
+    **Programmets landingside:** Hvis du vælger at framelde navigationsgeneratoren, har du mulighed for at vælge programmets landingsside. Angiv en rapport eller et dashboard som landingsside for dit program. Brug en landingsside, der giver det rette indtryk.
 
     **Kontrolelement**
 
@@ -109,7 +109,7 @@ Nu, hvor du har indhold i dit arbejdsområde, er du klar til at pakke det i et s
     - **Påkrævet**: Brug dette til at kræve, at installationsprogrammet angiver en brugerspecifik parameter.
     - **Lås**: Låsning forhindrer, at installationsprogrammet opdaterer en parameter.
 
-    **Adgang** I testfasen kan du bestemme, hvem i din organisation der kan installere og teste dit program. Bare rolig, du kan altid vende tilbage og ændre disse indstillinger senere. Indstillingen påvirker ikke adgangen til den distribuerede skabelonapp.
+    **Adgang** I testfasen kan du bestemme, hvem i din organisation der kan installere og teste dit program. Bare rolig, du kan altid vende tilbage og ændre disse indstillinger senere. Indstillingen påvirker ikke adgangen til det distribuerede skabelonprogram.
 
 2. Vælg **Opret program**.
 
@@ -166,7 +166,7 @@ Lad os gennemgå faserne:
 
     Hvis du ikke kan se denne indstilling, skal du kontakte din Power BI-administrator, som skal give dig [tilladelse til at udvikle skabelonprogrammer](service-admin-portal.md#template-apps-settings) på administrationsportalen.
 11. Vælg **Hæv** for at bekræfte dit valg.
-12. Kopiér denne nye URL-adresse for at dele den uden for din lejer med henblik på test. Dette link er også det, du sender for at begynde processen med at distribuere dit program på AppSource ved at oprette et [nyt tilbud på Cloud-partnerportalen](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Send kun links til præproduktion til Cloud-partnerportalen. Du kan først hæve denne pakke til produktion i Power BI, når programmet er blevet godkendt, og du har fået en meddelelse om, at det er udgivet i AppSource.
+12. Kopiér denne nye URL-adresse for at dele den uden for din lejer med henblik på test. Dette link er også det, du sender for at begynde processen med at distribuere dit program på AppSource ved at oprette et [nyt tilbud på Partnercenter](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Send kun links til præproduktion til Partnercenter. Du kan først hæve denne pakke til produktion i Power BI, når programmet er blevet godkendt, og du har fået en meddelelse om, at det er udgivet i AppSource.
 13. Når programmet er klar til produktion eller deling via AppSource, skal du gå tilbage til ruden **Udgivelsesadministration** og vælge **Hæv program** ud for **Præproduktion**.
 14. Vælg **Hæv** for at bekræfte dit valg.
 
@@ -174,10 +174,10 @@ Lad os gennemgå faserne:
 
     ![Program i produktion](media/service-template-apps-create/power-bi-template-app-production.png)
 
-Hvis du vil gøre dit program tilgængeligt for tusindvis af Power BI-brugere i hele verden, opfordrer vi dig til at sende det til AppSource. Du kan se yderligere oplysninger under [Power BI-programtilbud](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
+Hvis du vil gøre dit program tilgængeligt for tusindvis af Power BI-brugere i hele verden, opfordrer vi dig til at sende det til AppSource. Du kan se yderligere oplysninger under [Power BI-programtilbud](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
 ## <a name="next-steps"></a>Næste trin
 
 Se, hvordan dine kunder kan interagere med dit skabelonprogram under [Installér, tilpas og distribuer skabelonprogrammer i din organisation](service-template-apps-install-distribute.md).
 
-Du kan se yderligere oplysninger om, hvordan du distribuerer dit program under [Power BI-programtilbud](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
+Du kan se yderligere oplysninger om, hvordan du distribuerer dit program under [Power BI-programtilbud](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).

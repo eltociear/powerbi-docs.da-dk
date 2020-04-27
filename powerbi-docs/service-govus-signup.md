@@ -1,128 +1,79 @@
 ---
 title: Tilmelding til Power BI for offentlige myndigheder i USA
-description: For offentlige myndigheder i USA, få mere at vide om, hvordan du tilmelder din US Government-organisation til Power BI US Government-tjenesten
+description: Offentlige myndigheder i USA kan få mere at vide om, hvordan de tilmelder sig Power BI, som er Government Community Cloud.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
-ms.author: davidi
+ms.date: 04/07/2020
+ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 7edfe46173b1d9b2537c5fd980b245af09fd1f53
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 3f001c91c89b18b43c953669272b4d5be37dd154
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74178273"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81436251"
 ---
-# <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Tilmeld din US Government-organisation til Power BI-tjenesten
-**Power BI-tjenesten** har en version tilgængelig for offentlige myndigheder i USA som en del af abonnementer på **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der drøftes i denne artikel, er designet til kunder med US Government og er særskilt og forskellig fra den kommercielle version af **Power BI-tjeneten**.
+# <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Tilmeld din offentlige myndighed i USA til Power BI-tjenesten
 
-For at få flere oplysninger om **Power BI-tjenesten** til US Government, herunder funktioner og begrænsninger, skal du se [Power BI til offentlige myndigheder i USA – overblik](service-govus-overview.md).
+Der er en version af Power BI-tjenesten, som er en del af [Office 365 Government-planerne](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans?rtc=1). Denne artikel er beregnet til offentlige myndigheder i USA, og den tilmeldingsproces, som er beskrevet heri, er anderledes end for den kommercielle version af Power BI-tjenesten.
+
+Du kan finde flere oplysninger om Power BI-tjenesten til offentlige myndigheder i USA ved at se [Power BI til offentlige myndigheder i USA – oversigt](service-govus-overview.md).
 
 > [!NOTE]
-> Denne artikel er beregnet til administratorer, der har tilladelse til at tilmelde deres US Government-organisation til Power BI. Hvis du er slutbruger, skal du kontakte din administrator for at få et abonnement på Power BI til US Government.
+> Denne artikel er beregnet til administratorer, der har tilladelse til at tilmelde deres offentlige myndighed i USA til Power BI. Hvis du er slutbruger, skal du kontakte din administrator for at få et abonnement på Power BI til offentlige myndigheder i USA.
 > 
 > 
 
-![](media/service-govus-signup/service_govus_signup_1.png)
+## <a name="select-the-right-sign-up-process-for-your-us-government-organization"></a>Vælg den rette tilmeldingsproces for din offentlige myndighed i USA
 
-## <a name="select-the-right-sign-up-process-for-your-us-government-organization"></a>Vælg den rette tilmeldingsproces for din US Government-organisation
-Din US Government-organisation kan være ny i **Office Government Cloud**, eller den har muligvis allerede et abonnement. De følgende afsnit beskriver tilmeldingsproceduren, baseret på hvor du er med Office Government Cloud og Power BI, og den kan variere alt afhængigt af dit eksisterende abonnement.
+Din offentlige myndighed i USA kan være nybegynder i forhold til Government Community Cloud eller kan allerede have et abonnement. I følgende afsnit beskrives tilmeldingstrinnene baseret på, hvor du er i forhold til Office 365 Government-planerne og Power BI. Trinnene er forskellige afhængigt af din aktuelle tilmelding.
 
-Når du har tilmeldt dig Power BI US Government, kan du muligvis først bruge visse funktioner, når dine salgs- eller supportrepræsentanter har færdiggjort din onboardingproces. Se [Power BI til offentlige myndigheder i USA - overblik](service-govus-overview.md) for at få mere at vide om disse funktioner. Kontakt dine salgs- eller supportrepræsentanter for at færdiggøre onboardingprocessen, og få aktiveret disse funktioner.
+Når du har tilmeldt dig Power BI US Government, skal du arbejde sammen med dit kontoteam for at starte processen for [*angivelse på* hvidliste](#additional-signup-information), som er beskrevet i denne artikel. Dette trin er nødvendigt for at aktivere din organisation fuldt ud i Government Community Cloud.
 
-### <a name="us-government-organizations-that-are-new-office-cloud-customers"></a>US Government-organisationer der er nye Office Cloud-kunder
-Hvis din organisation er ny **Office Government Cloud**-kunde, skal du følge nedenestående trin:
+## <a name="sign-up-for-a-new-office-365-government-plan"></a>Tilmeld dig en ny Office 365 Government-plan
+
+Hvis din organisation er nybegynder i forhold til Government Community Cloud, skal du følge disse trin for at få en Office 365 Government-plan:
 
 > [!NOTE]
-> Disse trin skal udføres af administratoren af portalen.
+> Disse trin skal udføres af den globale administrator.
 >
 
-1. Gå til [https://products.office.com/government/office-365-web-services-for-government](https://products.office.com/government/office-365-web-services-for-government).
+1. Gå til [Office 365 Government-planer](https://products.office.com/government/office-365-web-services-for-government).
+2. Vælg **Kom i gang med en gratis prøveversion**.
+3. Udfyld formularen for at fortælle os om din organisation. Brug rullemenuen til at vælge din organisationstype.
 
->[!NOTE]
->Hvis du ikke vil tilmelde dig Office Government Cloud lige nu, skal du kontakte din salgsrepræsentant.
->
+   ![Vælg organisationstype under tilmelding til prøveversion](media/service-govus-signup/gcc-trial-signup.png)
 
-2. Vælg Office G3, og udfyld formularen til en prøveversion af Office
-3. Når du er blevet Office Cloud-kunde, skal du gå videre til proceduren nedenfor for "Eksisterende Office Government Cloud-kunder"
+4. Send formularen for at starte onboardingprocessen. Din Microsoft-repræsentant eller -partner kan hjælpe dig med eventuelle spørgsmål.
 
-### <a name="existing-office-government-cloud-customers"></a>Eksisterende Office Government Cloud-kunder
-Hvis din organisation er eksisterende **Office Government Cloud**-kunde, men du ikke har et **Power BI**-abonnement (gratis eller øvrige), skal du følge disse trin:
+Når processen er fuldført, skal du følge trinnene for eksisterende Office 365 Government-kunder for at tilføje et Power BI-abonnement.
+
+## <a name="add-power-bi-to-an-office-365-government-plan"></a>Føj Power BI til din Office 365 Government-plan
+
+Hvis din organisation allerede har en Office 365 Government-plan, skal du følge disse trin for at tilføje et Power BI-abonnement:
 
 > [!NOTE]
-> Disse trin skal udføres af administratoren af portalen.
+> Disse trin skal udføres af den globale administrator.
 > 
 > 
 
-1. Log på din eksisterende Office Government Cloud-konto, og gå til administrationsportalen
-2. Vælg **Fakturering**.
-3. Vælg **Køb tjeneste**.
-4. Vælg indstillingen Power BI Pro Government, og vælg mellem **Prøv** og **Køb nu**
-5. Fuldfør din ordre
-6. Tildel brugere til kontoen.
-   
-   ![](media/service-govus-signup/service_govus_signup_5.png)
-7. Log på **Power BI-tjenesten** for kunder med US Government på [https://app.powerbigov.us](https://app.powerbigov.us)
+1. Log på Microsoft 365 Administration ved hjælp af dine legitimationsoplysninger som global administrator eller faktureringsadministrator.
+2. Vælg **Fakturering** > **Køb tjenester**.
+4. Søg efter eller rul ned for at finde Power BI Pro Government-tilbuddet, og vælg **Prøv** eller **Køb nu**.
+5. Fuldfør din ordre.
+6. Tildel licenser til brugerkonti.
 
 ## <a name="additional-signup-information"></a>Yderligere tilmeldingsoplysninger
-Nedenstående er yderligere oplysninger for tilmelding til **Power BI US Government** i forskellige licensoverflytningssituationer.
 
-### <a name="direct-power-bi-trial-to-pro-customer-onboarding"></a>Prøveversion af Direct Power BI til onboarding af Pro-kunde
-* Klik på og følg – Fakturering > Køb tjeneste > Power BI Pro Gov, og vælg køb og ikke prøveversion
-* Udfyld de nødvendige oplysninger og hent licenserne
-* Fjern Power BI Pro-prøveversionen, eller fjern de gamle licenser, og tildel de nye til brugerne
-* Log på [https://app.powerbigov.us](https://app.powerbigov.us)
+Før du kan bruge Power BI-tjenester til offentlige myndigheder i USA, skal du arbejde sammen med dit Microsoft-kontoteam for at indlede *angivelse på hvidliste* for din organisation. Angivelse på hvidliste er en proces, som Power BI-teknikerteamet bruger til at flytte kunder fra det kommercielle cloudmiljø til det sikre Government Community Cloud. Dette trin sikrer, at funktioner, der er tilgængelige i US Government-cloudmiljøet, fungerer som forventet. 
 
-### <a name="reseller-power-bi-trial-to-pro-customer-onboarding"></a>Prøveversion af Reseller Power BI til onboarding af Pro-kunde
-Gå til **Fakturering > Abonnementer**, og vælg **Power BI Pro for Government**-abonnement. Du kan se:
+Du starter processen for angivelse på hvidliste ved at kontakte dit Microsoft-kontoteam for at få hjælp. Det er kun administratorer, der kan anmode om angivelse på hvidliste. Processen tager ca. tre uger. I løbet af denne tid udfører Power BI-teknikerteamet relevante ændringer for at sikre, at din lejer fungerer korrekt i US Government-cloudmiljøet.
 
-* Tilgængelig
-* Tildelt
-* Linkene Tildel til brugere
-* Hvis du stadig har tildelt prøveversionen:
-  * Klik på **Tildelt** under prøveabonnement, og fjern brugerne, der skal føjes til betalt
-  * Gå til Betalt abonnement, og tildel disse brugere
-
-### <a name="whitelisting-instructions"></a>Whitelisting-instruktioner
-*Whitelisting* er en proces, som Power BI-teknikere bruger til at flytte kunder fra det kommercielle cloudmiljø til det sikre, Government-cloudmiljø. Dette sikrer, at funktioner, der er tilgængelige i US Government-clouden, fungerer som forventet. Alle eksisterende (eller nye) offentlige myndigheder i USA, der køber US Government **Power BI**-tjenester for første gang, *skal* iværksætte følgende whitelisting-proces. Processen skal udføres inden opsætning eller overflytning til US Government **Power BI**-tjenester. 
-
-Hvis du vil have din lejer på en *hvidliste* for US Government-cloudmiljøet, skal du kontakte Microsoft-kontoteamet for at få hjælp til at få den på hvidlisten. Det er kun administratorer, der kan udføre denne anmodning. *Whitelisting*-processen tager ca. tre uger, hvor Power BI-teknikere udfører de relevante ændringer for at sikre, at din lejer fungerer korrekt i US Government-clouden.
-
-Kunder, der overflyttes fra Power BI **gratis**-licenser til **Power BI US Government** (og pr. definition, overflyttes til de tilknyttede **Pro**-licensfunktioner beskrevet tidligere i denne artikel), vil opleve problemerne, der er beskrevet i det følgende afsnit i denne artikel, indtil deres lejer er overført via *whitelisting* af Power BI-teknikere.
-
-### <a name="mixed-free-and-pro-licenses-in-us-government-tenants"></a>Blandede gratis- og Pro-licenser i US Government-lejere
-Hvis du har både gratis- og US Government Pro-licenser i din lejer, vil både gratis- og (US Government) Pro-licenser fortsat være til stede, men en af licenstyperne vil ikke fungerer korrekt. Hvis din lejer gennemfører en vellykket *whitelisting*-proces, så sker følgende:
-
-* Brugere af en gratis licens kan ikke længere logge på Power BI via **Power BI Desktop**, og de vil opleve funktionalitetshuller, som beskrevet i følgende afsnit.
-* Alle klienter, der er tildelt US Government Pro-licenser, fungerer som forventet, herunder brugen af gateways, Power BI Desktop og Mobile-apps.
-
-Når der bruges en blanding af gratis- og Pro-licenser i en US Government-lejer, og under *whitelisting*-processen, bør følgende forventes:
-
-**Før overførslen via _whitelisting_** :
-
-* Brugere med gratislicenser kører i kommerciel cloud
-* Pro US Government-licenser vises i portalen, og administratoren kan tildele disse licenser til brugere. Pro US Government-brugere mister ikke data fra deres gratislicenser, når administratoren tildeler en US Government Pro-licens. De tildelte brugere har adgang til Power BI Pro-funktioner til US Government-kunder, men funktionalitetshullerne i den følgende opstilling med punkttegn vil være til stede, indtil lejeren gennemfører en vellykket *whitelisting*-proces:
-  
-  * Gateway, Mobile og Power BI Desktop kan ikke godkende
-  * Du kan ikke få adgang til kommercielle Azure-datakilder
-  * PBIX-filer skal manuelt uploades fra den kommercielle Power BI-tjeneste
-  * Power BI-mobilapps er ikke tilgængelige
-
-**Efter overførslen via _whitelisting_** :
-
-* Gratisbrugere, der kører i den kommercielle Power BI-tjeneste, kan fortsætte med at køre, men de holder op med at godkende som forventet.
-* Pro-brugere, der kører i US Government-clouden, kan bruge tjenesten **Power BI til regeringskunder i USA** som forventet.
-
-For at identificere brugere i din lejer, der kører den gratis licens af Power BI, kan administratorer køre licensrapporten, hvorefter gratislicensbrugere vises som **Power BI Standard**.
 
 ## <a name="next-steps"></a>Næste trin
-Du kan gøre mange forskellige ting med Power BI. Yderligere oplysninger og læring, herunder en artikel, der viser, hvordan du tilmelder dig tjenesten, findes i følgende ressourcer:
 
-* [Oversigt over Power BI til US Government](service-govus-overview.md)
-* [Automatiseret læring til Power BI](guided-learning/index.yml)
-* [Kom i gang med Power BI-tjenesten](service-get-started.md)
-* [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
-
+* [Oversigt over Power BI til offentlige myndigheder i USA](service-govus-overview.md)
+- [Hvordan køber jeg Microsoft 365 Government?](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy#how-do-i-buy-microsoft-365-government)

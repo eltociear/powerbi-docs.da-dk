@@ -6,19 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2019
+ms.date: 04/15/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 2216fb2b18fd0f35fe9ece25ae2bfeea26672a66
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 69b42452af53b8929f49a6bde6b47b0cf3cc152e
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872037"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525554"
 ---
 # <a name="the-new-look-where-did-the-actions-go"></a>Det "nye udseende": Hvor blev handlingerne af?
 
 Power BI-tjenesten (app.powerbi.com) har fået et nyt udseende, der gør det lettere at få vist og interagere med dine rapporter. Derfor er mange af menuhandlingerne blevet flyttet. Tabellerne i denne artikel knytter den gamle placering til den nye. Hvis du vil have flere oplysninger om baggrunden, skal du se [det "nye udseende" af Power BI-tjenesten](service-new-look.md).
+
+Leder du efter oplysninger om det nye udseende af **Power BI Desktop**? Se [Brug det opdaterede bånd i Power BI Desktop](desktop-ribbon.md).
 
 ## <a name="report-actions-in-the-new-look"></a>Rapporthandlinger i det nye udseende
 
@@ -56,7 +58,7 @@ Power BI-tjenesten (app.powerbi.com) har fået et nyt udseende, der gør det let
 | Tilføj felt | Tilføj felt | Menulinjen Flere indstillinger (...) > Tilføj felt |
 | Kommentarer | Kommentarer | Kommentarer |
 | Vis relaterede | Vis relaterede | Menulinjen Flere indstillinger (...) > Få vist relaterede |
-| Angiv som udvalgt | Angiv som udvalgt| Menulinjen Flere indstillinger (...) > Angiv som udvalgt|
+| Angiv som fremhævet | Angiv som fremhævet| Menulinjen Flere indstillinger (...) > Angiv som udvalgt|
 | Favorit | Favorit | Favorit |
 | Abonner | Abonner |Abonner |
 | Del | Del | Del |

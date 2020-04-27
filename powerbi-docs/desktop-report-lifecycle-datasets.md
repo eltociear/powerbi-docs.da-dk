@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 278aa4c28db97c348e683b759e8a7f9415f19c3e
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 1312e56edfb17c57334af263b9f38c3dd97c1894
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79206832"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525416"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Opret forbindelse til datasæt i Power BI-tjenesten fra Power BI Desktop
 
@@ -91,7 +91,7 @@ Vælg **Hent data** på båndet **Hjem** i Power BI Desktop, vælg **Power Platf
 
 Hvis du ikke er logget på Power BI, bliver du bedt om at logge på. Når du er logget på, viser Power BI, hvilke arbejdsområder du er medlem af. Du kan vælge, hvilket arbejdsområde der indeholder det datasæt, du vil oprette en direkte forbindelse til Power BI-tjenesten i.
 
-Datasættene på listen er alle de delte datasæt, du har tilladelsen Opret til, i et hvilket som helst arbejdsområde. Du kan søge efter et bestemt datasæt og se dets navn, ejer og arbejdsområdet, hvor det befinder sig, samt hvornår det senest blev opdateret. Øverst på listen kan du også se de **godkendte** datasæt, uanset om de er certificerede eller fremhævede.
+Datasættene på listen er alle de delte datasæt, du har tilladelsen Opret til, i et hvilket som helst arbejdsområde. Du kan søge efter et bestemt datasæt og se dets navn, ejer og arbejdsområdet, hvor det befinder sig, samt hvornår det senest blev opdateret. Øverst på listen kan du også se **GODKENDT** for datasæt, uanset om de er certificerede eller fremhævede.
 
 ![Liste over tilgængelige datasæt](media/desktop-report-lifecycle-datasets/desktop-select-shared-dataset.png)
 

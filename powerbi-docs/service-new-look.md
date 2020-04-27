@@ -6,19 +6,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2019
+ms.date: 04/15/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: c69e0247ecde7d6bd1cf158761a2ff9efd31d2d3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: de30da9c5cf6ad2046a99fb327cdad825725a14d
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881377"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637838"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Power BI-tjenestens nye udseende
 
-Power BI-tjenesten (app.powerbi.com) har fået et nyt udseende, der gør det lettere at få vist og interagere med dine rapporter. Det nye udseende er enklere og bygger på dit kendskab til andre Microsoft-produkter. På tværs af Power BI-tjenesten har vi sat rapportindhold i fokus ved at skifte til et lysere farvetema og opdatere ikoner. Her er en oversigt over, hvad der er ændret i det nye udseende. Du kan finde flere oplysninger i de nummererede afsnit:
+Power BI-tjenesten (app.powerbi.com) har fået et nyt udseende, der gør det lettere at få vist og interagere med dine rapporter. Det nye udseende er enklere og bygger på dit kendskab til andre Microsoft-produkter. På tværs af Power BI-tjenesten har vi sat rapportindhold i fokus ved at skifte til et lysere farvetema og opdatere ikoner. 
+
+Leder du efter oplysninger om det nye udseende af **Power BI Desktop**? Se [Brug det opdaterede bånd i Power BI Desktop](desktop-ribbon.md).
+
+Her er en oversigt over, hvad der er ændret i det nye udseende. Du kan finde flere oplysninger i de nummererede afsnit:
 
 ![Oversigt over ændringer i det nye udseende](media/service-new-look/power-bi-new-look-changes.png)
 
@@ -36,7 +40,7 @@ Alle brugere af Power BI-tjenesten kan vælge det nye udseende. Du skal blot sku
 
 ![Tilmeld dig det nye udseende](media/service-new-look/power-bi-new-look-off.png)
 
-Hvis du har brug for at vende tilbage til det gamle udseende, skal du blot skubbe tilbage til **fra** ![Nyt udseende til](media/service-new-look/power-bi-new-look-toggle-on.png). Hvis du ikke kan se indstillingen, skal du vælge ellipsemenuen i øverste højre hjørne.
+Hvis du har brug for at vende tilbage til det gamle udseende, skal du blot skubbe tilbage til **fra** for ![Nyt udseende til](media/service-new-look/power-bi-new-look-toggle-on.png). Hvis du ikke kan se indstillingen, skal du vælge ellipsemenuen i øverste højre hjørne.
 
 ![Frameld dig det nye udseende](media/service-new-look/power-bi-new-look-on.png)
 
@@ -77,7 +81,7 @@ De seneste opdateringer, f. eks. visning af anvendte filtre og den nye rude med 
 
 ## <a name="dashboard-new-look-experience"></a>Dashboardets nye udseende 
 
-Dashboards har også en forenklet handlingslinje på samme måde som rapporter og apps, så du får en ensartet oplevelse, samtidig med at de funktionsmæssige forskelle bevares. Her er en gennemgang af handlinger i et dashboard.
+Dashboards har også en forenklet handlingslinje på samme måde som rapporter og programmer, så du får en ensartet oplevelse, samtidig med at de funktionsmæssige forskelle bevares. Her er en gennemgang af handlinger i et dashboard.
  
 ![Handlingslinje for dashboardet i det nye udseende](media/service-new-look/power-bi-dashboard-action-bar-new-look.gif)
 
@@ -87,4 +91,6 @@ Vi har bibeholdt den samme oprettelsesoplevelse som den i Desktop. Ændringerne 
 
 ## <a name="next-steps"></a>Næste trin
 
-[Power BI for forbrugere](consumer/end-user-consumer.md)
+- [Brug det opdaterede bånd i Power BI Desktop](desktop-ribbon.md)
+- [Tilmed dig det nye udseende af arbejdsområder](collaborate-share/service-workspaces-new-look.md)
+- [Power BI for forbrugere](consumer/end-user-consumer.md)

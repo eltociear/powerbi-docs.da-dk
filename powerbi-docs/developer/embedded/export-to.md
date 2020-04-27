@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 03/24/2020
-ms.openlocfilehash: 472797cf30d6b88a59af5b3846e9b710bf4607c7
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: db907897256ef4afc0bdb9a253a23880b6e79f53
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267497"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525462"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Eksportér Power BI-rapport til fil (prøveversion)
 
@@ -106,6 +106,7 @@ Et job, der overskrider sit antal af samtidige anmodninger, afsluttes ikke. Hvis
 * En rapport med et følsomhedsmærkat kan ikke eksporteres til en PDF- eller PPTX-fil ved hjælp af en [tjenesteprincipal](embed-service-principal.md).
 * Det antal sider, der kan inkluderes i en eksporteret rapport, er 30. Hvis rapporten indeholder flere sider, returnerer API'en en fejl, og eksportjobbet annulleres.
 * [Personlige bogmærker](../../consumer/end-user-bookmarks.md#personal-bookmarks) og [vedvarende filtre](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) understøttes ikke.
+* Nationale cloudmiljøer understøttes ikke.
 * De Power BI-visualiseringer, der er angivet nedenfor, understøttes ikke. Når der eksporteres en rapport, som indeholder disse visualiseringer, bliver de dele af rapporten, der indeholder disse visualiseringer, ikke gengivet, og der vises et fejlsymbol.
     * Ikke-certificerede Power BI-visualiseringer
     * R-visualiseringer

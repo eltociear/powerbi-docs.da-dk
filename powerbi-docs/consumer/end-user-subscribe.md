@@ -10,12 +10,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 03/24/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: bfec81aaa47f210855c4db4c8c97ab259b685110
-ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
+ms.openlocfilehash: 10d1e87fabc54c5886930c52ce60ed4a62479847
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80302434"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525429"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Abonner på en rapport eller et dashboard i Power BI-tjenesten 
 
@@ -29,11 +29,11 @@ Det sprog, der er angivet under Power BI-indstillingerne, bruges til mail og sna
 
 ![Rullelisten Sprog](./media/end-user-subscribe/power-bi-language.png)
 
-Når du modtager mailen, indeholder den et link til at "gå til rapport eller dashboard". På mobile enheder med Power BI-apps installeret, startes appen (i modsætning til standardhandlingen med at åbne rapporten eller dashboardet på Power BI-webstedet), hvis du vælger dette link.
+Når du modtager mailen, indeholder den et link til at "gå til rapport eller dashboard". På mobilenheder med Power BI-apps installeret, startes appen (i modsætning til standardhandlingen med at åbne rapporten eller dashboardet på Power BI-webstedet), hvis du vælger dette link.
 
 
 ## <a name="requirements"></a>Krav
-Hvis du vil **oprette** et abonnement til dig selv, skal du have en bestemt type [licens](end-user-license.md). Hvis du ikke kan oprette et abonnement, skal du kontakte din Power BI-administrator. **Abonnement til andre** kan kun oprettes af ejeren af dashboardet eller rapporten. Det er lidt anderledes at abonnere på sideinddelte rapporter. Du finder flere oplysninger i  [Meld dig selv og andre til et abonnement på en sideinddelt rapport i Power BI-tjenesten](paginated-reports-subscriptions.md) . 
+Hvis du vil **oprette** et abonnement til dig selv, skal du have en bestemt type [licens](end-user-license.md). Hvis du ikke kan oprette et abonnement, skal du kontakte din Power BI-administrator. **Abonnement til andre** kan kun oprettes af ejeren af dashboardet eller rapporten. Det er lidt anderledes at abonnere på sideinddelte rapporter. Du kan finde flere oplysninger i [Meld dig selv og andre til et abonnement på en sideinddelt rapport i Power BI-tjenesten](paginated-reports-subscriptions.md). 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>Abonner på et dashboard eller en rapportside
 Uanset om du abonnerer på et dashboard eller en rapport, er processen den samme. Du bruger den samme knap til at abonnere på dashboards og rapporter i Power BI-tjenesten.
@@ -55,9 +55,9 @@ Uanset om du abonnerer på et dashboard eller en rapport, er processen den samme
 
     c. Alternativt kan du tilføje et emne og mailoplysninger. 
 
-    d. Vælg en **Hyppighed** for dit abonnement.  Du kan vælge Dagligt, Ugentligt eller Efter dataopdatering (dagligt).  Hvis du kun vil modtage abonnementsmailen på bestemte dage, skal du vælge **Ugentligt** og vælge, hvilke dage du vil modtage den.  Hvis du f.eks. kun vil modtage abonnementsmailen på hverdage, skal du vælge **Ugentligt** som hyppighed og fjerne markeringen i felterne for lørdag og søndag. Hvis du vælger  **Månedligt**, skal du angive den eller de dage på måneden, hvor du vil modtage abonnementsmailen.   
+    d. Vælg en **Hyppighed** for dit abonnement.  Du kan vælge Dagligt, Ugentligt eller Efter dataopdatering (dagligt).  Hvis du kun vil modtage abonnementsmailen på bestemte dage, skal du vælge **Ugentligt** og vælge, hvilke dage du vil modtage den.  Hvis du f.eks. kun vil modtage abonnementsmailen på hverdage, skal du vælge **Ugentligt** som hyppighed og fjerne markeringen i felterne for lørdag og søndag. Hvis du vælger **Månedligt**, skal du angive den eller de dage på måneden, hvor du vil modtage abonnementsmailen.   
 
-    e. Hvis du vælger Dagligt, Hver time, Månedligt eller Ugentligt, kan du også vælge et Planlagt tidspunkt for abonnementet. Du kører den hver hele time eller 15, 30 eller 45 minutter over. Vælg morgen (AM) eller eftermiddag/aften (PM). Du kan også angive tidszonen. Hvis du vælger Hver time, skal du vælge det planlagte tidspunkt, hvor abonnementet skal starte, så kommer det hver time derefter.  
+    e. Hvis du vælger Dagligt, Hver time, Månedligt eller Ugentligt, kan du også vælge et planlagt tidspunkt for abonnementet. Du kører den hver hele time eller 15, 30 eller 45 minutter over. Vælg morgen (AM) eller eftermiddag/aften (PM). Du kan også angive tidszonen. Hvis du vælger Hver time, skal du vælge det planlagte tidspunkt, som abonnementet skal starte på, hvorefter det kører hver time.  
 
     f. Planlæg start- og slutdato ved at angive datoer i datofelterne. Starttidspunktet for dit abonnement er som standard den dato, du opretter den, og slutdatoen vil være et år senere. Du kan ændre den til en hvilken som helst dato i fremtiden (op til år 9999) når som helst, før abonnementet slutter. Når et abonnement når en slutdato, ophører det, indtil du aktiveret det igen.  Du modtager en meddelelse, før den planlagte slutdato, hvor du bliver spurgt, om du vil forlænge det.     
 
@@ -73,7 +73,7 @@ Uanset om du abonnerer på et dashboard eller en rapport, er processen den samme
 
 
 ## <a name="manage-your-subscriptions"></a>Administrer dine abonnementer
-Det er kun dig, der kan administrere de abonnementer, du opretter. Vælg **Abonner** igen, og vælg **Administrer alle abonnementer** i nederste venstre hjørne. Se skærmbilleder ovenfor. De abonnementer, der vises, afhænger af, hvilket arbejdsområde der er aktivt i øjeblikket. Hvis du vil se alle dine abonnementer på én gang for alle arbejdsområder, skal du sørge for, at  **Mit arbejdsområde**  er aktivt. Du kan få hjælp til arbejdsområder i  [Arbejdsområder i Power BI](end-user-workspaces.md). 
+Det er kun dig, der kan administrere de abonnementer, du opretter. Vælg **Abonner** igen, og vælg **Administrer alle abonnementer** i nederste venstre hjørne. Se skærmbilleder ovenfor. De abonnementer, der vises, afhænger af, hvilket arbejdsområde der er aktivt i øjeblikket. Hvis du vil se alle dine abonnementer på én gang for alle arbejdsområder, skal du sørge for, at **Mit arbejdsområde** er aktivt. Du kan få hjælp til arbejdsområder i [Arbejdsområder i Power BI](end-user-workspaces.md). 
 
 ![se alle abonnementer under Mit arbejdsområde](./media/end-user-subscribe/power-bi-manage-subscriptions.png)
 
