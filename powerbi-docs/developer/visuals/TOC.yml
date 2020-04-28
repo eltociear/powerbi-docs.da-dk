@@ -26,6 +26,8 @@
           href: power-bi-custom-visuals-organization.md
         - name: Retningslinjer for Power BI-visualiseringer
           href: guidelines-powerbi-visuals.md
+        - name: Tip til ydeevne
+          href: performance-tips.md
         - name: Ofte stillede spørgsmål om visualiseringer
           href: power-bi-custom-visuals-faq.md
         - name: Brug af funktionaliteter
@@ -70,6 +72,8 @@
           href: enable-sync-slicers.md
         - name: Fejlfind visualiseringer
           href: visuals-how-to-debug.md
+        - name: Mobiludvikling
+          href: mobile-development.md
         - name: Fejlfind visualiseringer i Power BI
           href: power-bi-custom-visuals-troubleshoot.md
     - name: Reference
@@ -104,6 +108,8 @@
               href: utils-svg.md
             - name: Typehjælpeprogrammer
               href: utils-type.md
+            - name: Hjælpeprogrammer til test
+              href: utils-test.md
             - name: Hjælpeprogrammer til værktøjstip
               href: utils-tooltip.md
             - name: Datavisningshjælpeprogrammer
