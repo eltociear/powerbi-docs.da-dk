@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 27ebe50030fbd06f65be5530ee2a2c0a7897f0f5
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 40bbec8a6a28def6cde9128b51c8919fd4f493de
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488723"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120340"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser arbejde i nye arbejdsområder i Power BI
 
@@ -60,30 +60,7 @@ Du kan bruge roller til at administrere, hvem der kan gøre hvad i et arbejdsomr
 
 Når du tildeler roller til en brugergruppe, har enkeltpersoner i gruppen adgang til indhold. Hvis du indlejrer brugergrupper, har alle brugere i grupperne tilladelse.
 
-Her er egenskaberne for de fire roller: administratorer, medlemmer, bidragydere og fremvisere. Al denne funktionalitet, undtagen visning og interaktion, kræver en Power BI Pro-licens.
-
-|Funktion   | Administrator  | Medlem  | Bidragsyder  | Fremviser |
-|---|---|---|---|---|
-| Opdatere og slette arbejdsområdet.  | X  |   |   |   | 
-| Tilføje/fjerne personer, herunder andre administratorer.  | X  |   |   |   |
-| Tilføje medlemmer eller andre med lavere tilladelser.  |  X | X  |   |   |
-| Publicer og opdater en app. |  X | X  |   |   |
-| Dele et element eller dele en app.<sup>1</sup> |  X | X  |   |   |
-| Give andre tilladelse til at dele elementer igen.<sup>1</sup> |  X | X  |   |   |
-| Fremhæve apps på kollegaers startside |  X | X  |   |   |
-| Fremhæve dashboards og rapporter på kollegaers startside |  X | X  | X |   |
-| Oprette, redigere og slette indhold i arbejdsområdet.  |  X | X  | X  |   |
-| Publicere rapporter til arbejdsområdet, slette indhold.  |  X | X  | X  |   |
-| Oprette en rapport i et andet arbejdsområde, der er baseret på et datasæt i dette arbejdsområde.<sup>1</sup> |  X | X  | X  |   |
-| Kopiere en rapport.<sup>2</sup> | X | X | X |  |
-| Få vist og interagere med et element.<sup>3</sup> |  X | X  | X  | X  |
-| Læs data, der er gemt i dataflow i arbejdsområdet | X | X | X | X |
-
-1. Bidragydere og seere kan dele elementer i et arbejdsområde, hvis de har tilladelsen Del igen.
-2. Hvis du vil kopiere en rapport og oprette en rapport i et andet arbejdsområde, der er baseret på et datasæt i dette arbejdsområde, skal følgende kriterier være opfyldt:
-    - Du skal bruge en licens til Power BI Pro. Du kan finde flere oplysninger i det næste afsnit om [Licensering](#licensing).
-    - Du skal have Build-tilladelse til datasættet. Personer med rolle som administrator, medlem og bidragyder har Build-tilladelse til datasæt for dette arbejdsområde gennem deres rolle i arbejdsområdet.
-2. Selvom du ikke har en Power BI Pro-licens, kan du få vist og interagere med elementer i Power BI-tjenesten, hvis elementerne findes i et arbejdsområde i en Premium-kapacitet.
+[!INCLUDE [power-bi-workspace-roles-table](includes/power-bi-workspace-roles-table.md)]
 
 ## <a name="licensing"></a>Licensering
 Alle de brugere, du føjer til et arbejdsområde i den delte kapacitet, skal have en Power BI Pro-licens. I arbejdsområdet kan disse brugere samarbejde om dashboards og rapporter, som du vil publicere til en større målgruppe eller måske til hele organisationen. 

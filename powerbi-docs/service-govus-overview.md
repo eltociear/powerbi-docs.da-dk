@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 8a6351c96a2d2bef596cbdd693b4b7035fc16e14
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.openlocfilehash: a9a5f3fd5304e64209b6069741dffcc3fa9b07c8
+ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81436339"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82256159"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til US Government-kunder
 Denne artikel er for kunder inden for de amerikanske offentlige myndigheder, der udruller Power BI som en del af en Office 365-plan til offentlige myndigheder. Planer til offentlige myndigheder er designet til at opfylde de særlige behov hos organisationer, der overholder amerikanske standarder og sikkerhedsstandarder. Power BI-tjenesten, der er udviklet til US Government-kunder, adskiller sig fra den kommercielle version af Power BI-tjenesten. Disse funktionsforskelle og egenskaber er beskrevet i følgende afsnit.
@@ -88,7 +88,7 @@ Der er visse forskelle mellem offentlige planer og kommercielle planer for at im
 |Rapportoprettelse|Opret og få vist dashboards og rapporter|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Planlagt dataopdatering|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Teamdashboards, der kan opdateres|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Sideinddelte rapporter|Tilgængelig|Tilgængelig|Er på vej|
+|  |Sideinddelte rapporter|Tilgængelig|Er på vej|Er på vej|
 |  |Skabelonapps|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
 |Opret forbindelse til data|Importér data og rapporter fra Excel|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Importér data fra CSV-filer|Tilgængelig|Tilgængelig|Tilgængelig|
