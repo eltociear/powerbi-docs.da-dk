@@ -2,20 +2,20 @@
 title: COVID-19-sporingseksempel til centralregeringen og delstatsregeringerne i USA
 description: Hent og rediger eksempelrapporten med data fra centralregeringen og delstatsregeringerne i USA for COVID-19-pandemien.
 author: LukaszPawlowski-MS
-ms.reviewer: ''
+ms.reviewer: maggies
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/06/2020
+ms.date: 04/28/2020
 ms.author: lukaszp
 LocalizationGroup: Samples
-ms.openlocfilehash: 66e76c21e7d5171d24ff1518745a35947aa7ca42
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.openlocfilehash: 8cdc4a9a78c20c7c4e6986b63a3af61a319df1b6
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80979770"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584917"
 ---
 # <a name="covid-19-tracking-sample-for-us-state-and-local-governments"></a>COVID-19-sporingseksempel til centralregeringen og delstatsregeringerne i USA
 
@@ -48,7 +48,7 @@ Hvis du vil medtage den interaktive grafik på dit websted, skal du kopiere og i
 <iframe width="1600" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
 ```
 
-Integreringskoden er et HTML iFrame-element, som du kan indsætte på en vilkårlig HTML-side. Juster bredden og højden på iFrame-elementet, så det passer til dit websted. Eksempelrapporten er oprettet med størrelsesforholdet 16:9, så vælg en størrelse, hvor dette forhold bevares. Når grafikken er implementeret korrekt, vises den uden ekstra grå kanter. Det er nyttigt at [gennemse tip og trick til tilpasning af iFrame-størrelsen](../service-publish-to-web.md#tips-and-tricks-for-iframe-height-and-width), når du foretager disse ændringer.
+Integreringskoden er et HTML iFrame-element, som du kan indsætte på en vilkårlig HTML-side. Juster bredden og højden på iFrame-elementet, så det passer til dit websted. Eksempelrapporten er oprettet med størrelsesforholdet 16:9, så vælg en størrelse, hvor dette forhold bevares. Når grafikken er implementeret korrekt, vises den uden ekstra grå kanter. Det er nyttigt at [gennemse tip og trick til tilpasning af iFrame-størrelsen](../service-publish-to-web.md#tips-for-iframe-height-and-width), når du foretager disse ændringer.
 
 ## <a name="option-2-customize-the-sample-power-bi-file"></a>Mulighed 2: Tilpas Power BI-eksempelfilen
 
@@ -112,7 +112,7 @@ Hvis du vil publicere den tilpassede rapport på dit websted, er det bedst at ko
 
 ### <a name="create-a-publish-to-web-embed-code"></a>Opret en integreringskode til publicering på internettet 
 
-Hvis du vil integrere din brugerdefinerede rapport på dit eget websted, skal du følge vejledningen til, hvordan du kan [oprette din egen integreringskode til publicering på internettet](../service-publish-to-web.md#how-to-use-publish-to-web).
+Hvis du vil integrere din brugerdefinerede rapport på dit eget websted, skal du følge vejledningen til, hvordan du kan [oprette din egen integreringskode til publicering på internettet](../service-publish-to-web.md#create-embed-codes-with-publish-to-web).
 
 Når du publicerer din integreringskode, kan du bruge iFrame i bekræftelsesdialogboksen til at integrere på dit websted.
 
