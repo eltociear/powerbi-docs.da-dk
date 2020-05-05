@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f42455033a0853cc9a962d3167ed8a69a0f42c4e
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 3b8985158092227fde5eb64eddabc9990d0606f6
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496923"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120269"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer og brug apps med dashboards og rapporter i Power BI
 
@@ -28,6 +28,11 @@ Nu hvor du har en [grundlæggende forståelse af apps](end-user-apps.md), skal v
 Der er flere måder at få en ny app på. En kollega, der designer en rapport, kan installere appen automatisk på din Power BI-konto eller sende dig et direkte link til en app. Du kan også gå til AppSource og søge efter apps, der er tilgængelige for dig fra appdesignere både i og uden for din virksomhed. 
 
 I Power BI på din mobilenhed kan du kun installere en app fra et direkte link og ikke fra AppSource. Hvis appdesigneren installerer appen automatisk, kan du se den på din liste over apps.
+
+## <a name="apps-and-licenses"></a>Apps og licenser
+Det er ikke alle Power BI-brugere, der kan få vist og interagere med apps. 
+- Hvis du har en gratis licens, kan du åbne apps, der er blevet delt med dig, og som er gemt i et arbejdsområde i en Premium-kapacitet.
+- Hvis du har en Pro-licens, kan du åbne apps, der er blevet delt med dig.
 
 ## <a name="install-an-app-from-a-direct-link"></a>Installer en app fra et direkte link
 Den nemmeste måde selv at installere en ny app på er ved at få et direkte link fra appens designer.  
@@ -45,7 +50,10 @@ Når du vælger linket i mailen på din mobilenhed, installeres appen automatisk
 ![Apps indholdsliste på mobilenhed](./media/end-user-app-view/power-bi-ios.png)
 
 ## <a name="get-the-app-from-microsoft-appsource"></a>Hent appen fra Microsoft AppSource
-Du kan også finde og installere apps fra Microsoft AppSource. Der vises kun programmer, du har adgang til, dvs. programudvikleren har givet dig eller alle tilladelse.
+Du kan også finde og installere apps fra Microsoft AppSource. Der vises kun programmer, du har adgang til, dvs. programudvikleren har givet dig eller alle tilladelse. 
+
+> [!NOTE]
+> Hvis du benytter en gratis brugerlicens, kan du downloade apps, men vil ikke kunne se dem, medmindre du opgraderer til en Power BI Pro-konto, eller appen er gemt i en Premium-kapacitet. Du kan finde flere oplysninger under [licenser til forbrugere](end-user-license.md).
 
 1. Vælg **Apps**  > **Hent apps**. 
    
@@ -79,7 +87,12 @@ I dette eksempel åbner vi en af Microsofts eksempelapps. På AppSource kan du f
 
 5. I Power BI-tjenesten vises en meddelelse, når appen er blevet installeret. Vælg **Gå til app** for at åbne appen. Afhængigt af hvordan designeren oprettede appen, vises enten appdashboardet eller apprapporten.
 
+
+
     ![Appen blev installeret ](./media/end-user-apps/power-bi-app-ready.png)
+
+    > [!NOTE]
+    > Hvis du benytter en gratis brugerlicens, kan du downloade apps, men vil ikke kunne se dem, medmindre du opgraderer til en Power BI Pro-konto. 
 
     Du kan også åbne appen direkte fra din appindholdsliste ved at vælge **Apps** og **Sales & Marketing**.
 
@@ -123,8 +136,6 @@ Fra tid til tiden kan appudviklere udgive nye versioner af deres apps. Hvordan d
     > Hvis du installerer en ny version, overskrives alle de ændringer, du har foretaget af rapporter og dashboards. Hvis du vil beholde dine opdaterede rapporter og dashboards, kan du gemme dem med et andet navn eller på en anden placering, før du installerer dem. 
 
     4. Når du har installeret den opdaterede version, skal du vælge **Opdater app** for at fuldføre opdateringsprocessen. 
-
-    <!--![Update app](./media/end-user-app-view/power-bi-new-app-version-update-app.png) -->
 
 
 ## <a name="next-steps"></a>Næste trin

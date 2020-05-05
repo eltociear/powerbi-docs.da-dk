@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/21/2020
-ms.openlocfilehash: dcf154105b8940bd400fbb4e630a1d1cfd00ddf0
-ms.sourcegitcommit: 8775168ed916c517c57c696ebe45699e638b86e8
+ms.date: 04/29/2020
+ms.openlocfilehash: 3677e29e4ca9bc13bf0c7397d854dea62ec5f70f
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81766279"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585005"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål 
 
@@ -173,6 +173,11 @@ Nej, kontrolelementet til rapportfremviser er i øjeblikket ikke tilgængeligt.
 ### <a name="can-you-search-for-paginated-reports-from-the-new-home-experience-in-the-power-bi-service"></a>Kan man søge efter sideinddelte rapporter fra den nye Hjem-oplevelse i Power BI-tjenesten?
 
 Ja, du kan nu søge efter dine sideinddelte rapporter fra Hjem.  Du kan også se dem i andre dele af den nye Hjem-oplevelse.
+
+## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
+Det er noget, du skal huske på, når du arbejder med dato/klokkeslæt-felter i sideinddelte rapporter.
+
+- Der er i øjeblikket nogen globaliseringsbegrænsninger, der er knyttet til dato/klokkeslæt-parametre. Alle parametre for dato/klokkeslæt i Power BI-tjenesten hentes i amerikansk format (MM/DD/ÅÅÅÅ), uanset hvordan du designer dato/klokkeslæt i Power BI Report Builder.
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/20/2019
+ms.date: 04/24/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c2290963db54f150eed8176c2820c59f8f138666
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: a118cd0874410e538ca8329e0b8c0ed1bdb430b7
+ms.sourcegitcommit: 834cad24901f7fd966c4010e36a7904bc120e57f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223263"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82149610"
 ---
 # <a name="connect-to-an-oracle-database"></a>Opret forbindelse til en Oracle-database
 Hvis du vil oprette forbindelse til en Oracle-database med Power BI Desktop, skal den korrekte Oracle-klientsoftware være installeret på den computer, der kører Power BI Desktop. Den Oracle-klientsoftware, du bruger, afhænger af, hvilken version af Power BI Desktop du har installeret: 32-bit eller 64-bit.
@@ -22,6 +22,10 @@ Hvis du vil oprette forbindelse til en Oracle-database med Power BI Desktop, ska
 Understøttede Oracle-versioner: 
 - Oracle 9 og nyere
 - Oracle-klientsoftware 8.1.7 eller nyere
+
+> [!NOTE]
+> Hvis du konfigurerer en Oracle-database til Power BI-rapportserver, kan du se oplysningerne i artiklen [Oracle-forbindelsestype](https://docs.microsoft.com/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15). 
+
 
 ## <a name="determining-which-version-of-power-bi-desktop-is-installed"></a>Sådan finder du ud af, hvilken version af Power BI Desktop der er installeret
 For at finde ud af, hvilken version af Power BI Desktop der er installeret, skal du vælge **Filer** > **Hjælp** > **Om** og derefter se linjen **Version**. På følgende billede er der installeret en 64-bit version af Power BI Desktop:
@@ -65,3 +69,5 @@ Hvis du har downloadet Power BI Desktop via Microsoft Store, kan du muligvis ikk
 * Hvis du vil bruge versionen fra Microsoft Store: Kopiér oraons.dll fra _12.X.X\client_X_ til _12.X.X\client_X\bin_ på din lokale computer, hvor _X_ repræsenterer versions- og mappenummeret.
 
 Hvis du får vist fejlmeddelelsen *Objektreference er ikke angivet* i Power BI Gateway, når du opretter forbindelse til en Oracle-database, skal du følge vejledningen under [Administrer din datakilde – Oracle](service-gateway-onprem-manage-oracle.md).
+
+Hvis du bruger Power BI-rapportserver, kan du se vejledningen i artiklen [Oracle-forbindelsestype](https://docs.microsoft.com/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15).

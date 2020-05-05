@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3f263e67b866f6d6a3ea76257c64bbb2308a25d2
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.openlocfilehash: 281cb03e8d22688b23970c66b0fbc5a5bec1e15d
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75729707"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584760"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 I denne artikel beskrives de datatyper, der understøttes i Power BI Desktop, og DAX-udtryk (Data Analysis Expressions). 
@@ -35,6 +35,8 @@ I Power BI Desktop kan du angive en kolonnes datatype i forespørgselseditoren e
 ![](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
 Rullelisten Datatype i forespørgselseditoren har to datatyper, der ikke i øjeblikket er til stede i data- eller rapportvisningen: **Date/Time/Timezone** og **Duration**. Når en kolonne med disse datatyper indlæses i modellen og vises i data- eller rapportvisningen, konverteres en kolonne med datatypen Dato/klokkeslæt/tidszone til datatypen Dato/klokkeslæt, og en kolonne med datatypen Varighed konverteres til et decimaltal.
+
+Datatypen **binær** understøttes ikke i øjeblikket uden for Forespørgselseditoren. Du kan bruge den i Forespørgselseditoren, når du indlæser binære filer, hvis du konverterer datatypen til andre datatyper, før du indlæser den i en Power BI-model. Datatypen findes i menuerne Datavisning og Rapportvisning af hensyn til ældre funktioner, men hvis du forsøger at indlæse binære kolonner i Power BI-modellen, kan du støde på fejl.  
 
 ### <a name="number-types"></a>Taltyper
 Power BI Desktop understøtter tre taltyper:
@@ -71,6 +73,16 @@ Power BI Desktop understøtter fem dato/klokkeslæt-datatyper i forespørgselsvi
 
 ### <a name="blanksnulls-type"></a>Typen med tomme værdier/null-værdier
 **Blank** – er en datatype i DAX, der repræsenterer og erstatter SQL null-værdier. Du kan oprette en tom værdi ved hjælp af funktionen [BLANK](https://msdn.microsoft.com/library/ee634820.aspx) og undersøge, om der er tomme værdier, ved hjælp af den logiske funktion [ISBLANK](https://msdn.microsoft.com/library/ee634204.aspx).
+
+### <a name="binary-data-type"></a>Binær datatype
+
+Den binære datatype kan bruges til at repræsentere andre data med et binært format. Du kan bruge den i Forespørgselseditoren, når du indlæser binære filer, hvis du konverterer datatypen til andre datatyper, før du indlæser den i en Power BI-model. Binære kolonner understøttes ikke i Power BI-datamodellen. Datatypen findes i menuerne Datavisning og Rapportvisning af hensyn til ældre funktioner, men hvis du forsøger at indlæse binære kolonner i Power BI-modellen, kan du støde på fejl.
+
+
+> [!NOTE]
+>  Hvis en binær kolonne er i outputtet i et forespørgselstrin, kan det medføre fejl, hvis du forsøger at opdatere dataene via en gateway. Det anbefales, at du eksplicit fjerner alle binære kolonner som det sidste trin i dine forespørgsler.    
+> 
+>
 
 ### <a name="table-data-type"></a>Tabeldatatype
 DAX bruger en tabeldatatype i mange funktioner, f.eks sammenlægninger og time intelligence-beregninger. Nogle funktioner kræver en reference til en tabel, andre funktioner returnerer en tabel, der kan bruges som input til andre funktioner. I nogle funktioner, der kræver en tabel som input, kan du angive et udtryk, der evaluerer til en tabel. For visse funktioner er en reference til en basistabel påkrævet. Du kan finde oplysninger om kravene i bestemte funktioner i [DAX-funktionsreference](https://msdn.microsoft.com/library/ee634396.aspx).

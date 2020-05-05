@@ -1,21 +1,22 @@
 ---
 title: Power BI-webinarer
 description: Power BI-webinarer
-author: v-tatero
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/01/2019
+ms.date: 04/23/2020
 ms.author: kfollis
-ms.openlocfilehash: 08e1303d0f1a5ee9e0e3e4e778e3f81e0a183df5
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: cfdb4f380cd8ad9655593798f591a4c915988c43
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267543"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120085"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
+[//]: # "Tatevik Tatero er en leverandør, der arbejder med Chauncy Freels og hjælper med at vedligeholde listen over webinarer"
 
 Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når du vil.
 
@@ -89,7 +90,7 @@ Kom i gang med disse populære webinarer, når det passer dig
 <br>ved Olaf Hubel og Miguel Martinez
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 
-**Ganske enkelt betagende – Tip til bedre visualiseringsdesign** (webinaret er på engelsk)
+**Ganske enkelt betagende – tip til bedre design af visualiseringer** (webinaret er på engelsk)
 <br>ved Miranda Li
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
@@ -164,10 +165,6 @@ Se optagne sessioner når som helst
 <br>ved Stephen Cracknell og Stuart Macanliss fra US Medical IT
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
-**Anvendte efterretninger til salg og tjenester** (webinaret er på engelsk)
-<br>ved Ed Bobrin fra Avanade
-<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
-
 **Producenter: Din branche gennemgår en digital transformation – bevar din førerposition ved at benytte analyser til at optimere rentabiliteten**
 <br>ved Jon Thompson fra Blue Margin og Jim Pastor fra Elgin Fastener Group
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/digital-transformation-in-manufacturing.html?Is=Website)
@@ -186,7 +183,7 @@ Se optagne sessioner når som helst
 
 ### <a name="community"></a>Community ###
 
-**Tip, tricks og værktøjer fra ejerne af PowerBI.** (webinaret er på engelsk)
+**Tip, tricks og værktøjer fra ejerne af PowerBI.Tips** (webinaret er på engelsk)
 <br>ved Mike Carlo og Seth Bauer
 <br>[Se nu](https://www.youtube.com/watch?v=fnj1_e3HXow)
 
@@ -210,14 +207,14 @@ Se optagne sessioner når som helst
 <br>ved Ted Pattison
 <br>[Se nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
-### <a name="advanced-topics"></a>Avancerede emner ###
+### <a name="advanced-topics"></a>Avancerede emner
 
 **Avanceret analyse med Excel og Power BI**
 <br>ved Nagasaikiran Kambhampati og Miguel Martinez
 <br>[Tilmeld dig for at se med](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
 <br>[Hent Advanced Analytics Starter Kit for at følge med](https://aka.ms/pbiaawebinar)
 
-**[Webinarserie om struktur til indføring af Power BI.](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
+**Webinarserie om struktur til indføring af Power BI**
 <br>ved Manu Kanwarpal og Paul Henwood
 <br>[Tilmeld dig, og se med nu – del 1 – Indføring: Indfør en datadrevet kultur](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
 <br>[Tilmeld dig, og se med nu – del 2 – Styring: Styr din brug af Power BI](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
@@ -225,36 +222,13 @@ Se optagne sessioner når som helst
 <br>[Tilmeld dig, og se med nu – del 4 – Sikkerhed: Hold dine data sikre med Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
 <br>[Tilmeld dig, og se med nu – del 5 – Udrulning: Udrulning af Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
-**Webinarserien Office 365 Finance Pros**
-<br>af Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky og Miguel Martinez
-<br>Få tip, tricks og bedste praksis, så du kan få mere ud af dit daglige arbejde ved hjælp af Office 365.
-<br>[Tilmeld dig, og se det nu](https://aka.ms/Office365FinanceProsPBI)
-
 **Bliv en full stack-Jedi til Power BI – en gennemgang af Power BI's mest avancerede funktioner via Star Wars-data** (webinaret er på engelsk)
 <br>ved Gil Raviv
 <br>[Se nu](https://www.youtube.com/watch?v=r0Qk5V8dvgg)
 
-**Sådan implementerer du en vellykket datastyringsstrategi, som gør din organisation mere sikker**
-<br>ved Ajay Anandan
-<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/powerbi-data-governance-strategy-ondemand.html?Is=Website)
-
-**Sæt fart på indførelsen af moderne BI med Power BI Premium**
-<br>ved Sirui Sun og Miguel Martinez
-<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/powerbi-premium-webinar-ondemand.html?Is=Website)
-
-**Nye og spændende ting i Power BI-rapportserver** (webinaret er på engelsk)
-<br>ved Riccardo Muti, Chris Finlan og Chinmay Joshi
-<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/whats-new-powerbi-report-server.html?Is=Website)
-
-**Sådan laver Microsoft Power BI**
-<br>ved Kirkland Barrett
-<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-29-BIATMIcrosoft274828_01Registration-ForminBody.html?Is=Website)
-
 ## <a name="see-also"></a>Se også
 
 - [Power BI-whitepapers](whitepapers.md)
-
-- [On-demand-sessioner fra Microsoft Data Insights Summit 2017](https://community.powerbi.com/t5/Data-Insights-Summit-2017-On/bd-p/DataInsightsSummit2017OnDemand?Is=Website)
 
 - [Hvad er Power BI?](fundamentals/power-bi-overview.md)
 

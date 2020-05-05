@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8c4db4d659c64fba8b7a79e6e36a5f27d8dd5d34
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 986c09e404e0190a3efee8480d413d49cbd49186
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869362"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584811"
 ---
 # <a name="keyboard-shortcuts-in-power-bi-desktop"></a>Tastaturgenveje i Power BI Desktop
 
@@ -56,6 +56,7 @@ Idet vi løbende forbedrer tilgængeligheden, omfatter ovenstående liste også 
 | Vælg flere | **Ctrl + Enter** eller **Ctrl + mellemrum** |
 | Højreklik | <ul><li>Windows-tastatur: **Windows-genvejstasten + F10**. Windows-genvejstasten er mellem Alt-tasten til venstre og pil til venstre</li><li>Andet tastatur: **Skift + F10**</li></ul> |
 | Ryd det markerede | **Ctrl + Skift + C** |
+| Vis eller skjul felter | **Ctrl + H** |
 
 ## <a name="table-and-matrix-navigation"></a>Navigation i tabel og matrix
 | For at udføre denne handling          | Tryk på                |

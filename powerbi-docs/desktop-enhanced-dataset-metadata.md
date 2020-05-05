@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/31/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 54c3622b0a4dd6c690c2f22a0b93aed39e9d2799
-ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
+ms.openlocfilehash: 301d6397e4a3ae4498234bae3ad8a49aa7552722
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80464622"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584683"
 ---
 # <a name="using-enhanced-dataset-metadata-preview"></a>Brug af forbedrede metadata for datasæt (prøveversion)
 
@@ -46,6 +46,7 @@ Når prøveversionsfunktionen er aktiveret, forsøger Power BI Desktop at opgrad
 
 I prøveversionen gælder følgende begrænsninger, når prøveversionsfunktionen er aktiveret.
 
+### <a name="unsupported-features-and-connectors"></a>Funktioner og forbindelser, der ikke understøttes
 Når du åbner en eksisterende PBIX- eller PBIT-fil, der ikke er blevet opgraderet, mislykkes opgraderingen, hvis datasættet indeholder en af følgende funktioner eller connectors. Hvis denne fejl opstår, påvirker det normalt ikke brugeroplevelsen med det samme, og Power BI Desktop fortsætter med at bruge det tidligere metadataformat.
 
 * Python-scripts
@@ -67,6 +68,8 @@ Når du åbner en eksisterende PBIX- eller PBIT-fil, der ikke er blevet opgrader
 
 Derudover kan PBIX- og PBIT-filer, der allerede er blevet opgraderet til at bruge **forbedrede metadata for datasæt**, *ikke* bruge ovenstående funktioner eller connectors i den aktuelle version.
 
+### <a name="lineage-view"></a>Dataafstamningsvisning
+Datasæt, der bruger det nye metadataformat, viser i øjeblikket ikke links til dataflow i afstamningsvisningen i Power BI-tjenesten.
 
 ## <a name="next-steps"></a>Næste trin
 

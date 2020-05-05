@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 04/28/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9823e35fb2ddb99cf2932fa83e92598ba40f6690
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: f82bde423d910cb5622e5e709890502e96daab36
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381370"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585392"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Eksportér de data, der blev brugt til at oprette en visualisering
 
@@ -242,7 +242,7 @@ Disse begrænsninger og overvejelser gælder for Power BI Desktop og Power BI-tj
 
 - Eksport ved hjælp af *underliggende data* fungerer ikke, hvis du aktiverer indstillingen *Vis elementer uden data* for den visualisering, som Power BI eksporterer.
 
-- Når du bruger DirectQuery, kan Power BI maks. eksportere 16 MB dekomprimerede data. Det kan være et utilsigtet resultat, hvis du eksporterer mindre end det maksimale antal rækker. Dette er sandsynligt, hvis:
+- Når du bruger DirectQuery, kan Power BI maks. eksportere 16 MB dekomprimerede data. Det kan være et utilsigtet resultat, hvis du eksporterer mindre end det maksimale antal rækker på 150.000. Dette er sandsynligt, hvis:
 
     - Der er mange kolonner.
 

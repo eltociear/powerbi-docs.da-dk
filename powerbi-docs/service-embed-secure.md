@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 58f9a56d41bd35987f7c258fafdbff26aedf5df1
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 4be8a1ce88d50461ca51bb65278b823046459e30
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488815"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585008"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Integrer en rapport på en sikker portal eller et websted
 
@@ -22,11 +22,13 @@ Med den nye **Integrer**-indstilling i Power BI kan du nemt og sikkert integrere
 
 Indstillingen **Integrer** understøtter [Filtre for URL-adresser](service-url-filters.md) og indstillinger for URL-adresser. Den giver dig mulighed for at integrere på portaler ved hjælp af en strategi med begrænset kode, der kun kræver grundlæggende kendskab til HTML og JavaScript.
 
-## <a name="how-to-embed-power-bi-reports-into-portals"></a>Sådan **integrerer** du Power BI-rapporter på portaler
+## <a name="how-to-embed-power-bi-reports-into-portals"></a>Sådan integrerer du Power BI-rapporter på portaler
 
-1. Den nye indstilling **Integrer** er tilgængelig på menuen **Filer** til rapporter i Power BI-tjenesten.
+1. Åbn en rapport i Power BI-tjenesten.
 
-    ![Indstillingen Integrer på rullelisten](media/service-embed-secure/secure-embed-drop-down-menu.png)
+2. I menuen **Flere indstillinger (...)** skal du vælge **Integrer** >  **Websted eller portal**.
+
+    ![Indstillingen Websted eller portal](media/service-embed-secure/power-bi-more-options-website.png)
 
 2. Vælg indstillingen **Integrer** for at åbne en dialogboks, der indeholder et link og en iFrame, som du kan bruge til at integrere rapporten på en sikker måde.
 

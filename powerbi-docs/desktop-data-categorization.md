@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 218a05c41c3befed8f8600f6a584560f5be92a1f
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.openlocfilehash: 4ce9946672514d3d3f181c573789b256888a4372
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76709565"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584829"
 ---
 # <a name="specify-data-categories-in-power-bi-desktop"></a>Angiv datakategorier i Power BI Desktop
 I Power BI Desktop kan du angive *datakategorien* for en kolonne, så Power BI Desktop ved, hvordan dens værdier skal behandles i en visualisering.
@@ -33,7 +33,7 @@ Skal Power BI Desktop vise et billede af verden med landene fremhævet? Eller sk
 **Sådan angiver du en datakategori**
 
 1. I visningen **Rapport** eller **Data** på listen **Felter** skal du vælge det felt, der skal sorteres efter en anden kategorisering.
-2. På båndet skal du i området **Egenskaber** under fanen **Udformning** vælge rullepilen ud for **Datakategori**.  Dermed får du vist listen over de datakategorier, du kan vælge imellem til kolonnen. Nogle valgmuligheder kan være deaktiveret, hvis de ikke fungerer med den aktuelle datatype for kolonnen.  Hvis en kolonne f.eks. er en binær datatype, kan du ikke vælge geografiske datakategorier i Power BI Desktop. 
+2. På båndet skal du i området **Egenskaber** under fanen **Udformning** vælge rullepilen ud for **Datakategori**.  Dermed får du vist listen over de datakategorier, du kan vælge imellem til kolonnen. Nogle valgmuligheder kan være deaktiveret, hvis de ikke fungerer med den aktuelle datatype for kolonnen.  Hvis en kolonne f.eks. er en dato- eller klokkeslætsdatatype, kan du ikke vælge geografiske datakategorier i Power BI Desktop. 
 3. Vælg den ønskede kategori.
 
    ![](media/desktop-data-categorization/desktop-data-categorization.png)

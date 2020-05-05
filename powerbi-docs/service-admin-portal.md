@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/16/2020
+ms.date: 04/27/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 48f26229ea77bbe26ee07d46925d41cadcce7c12
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: e44a50a6e44006c0b23b0d57917f16260fdbe2f8
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114432"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585408"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -203,32 +203,30 @@ På følgende billede ses den meddelelse, som vises, når du deler med en ekster
 
 ### <a name="publish-to-web"></a>Publicer på internettet
 
-Brugere i virksomheden kan publicere rapporter på internettet. [Få mere at vide](service-publish-to-web.md). Det gør rapporten og de data, den indeholder, tilgængelige for alle på internettet.
+Som administrator for en Power BI-lejer giver indstillingen **Publicer på internettet** dig mulighed for at vælge, hvilke brugere der kan oprette integreringskoder til udgivelse af rapporter på internettet. Denne funktion gør rapporten og de data, den indeholder, tilgængelige for alle på internettet. Få mere at vide om [publicering på internettet](service-publish-to-web.md).
 
 > [!NOTE]
-> En Power BI-administrator skal tillade oprettelse af nye integreringskoder for publicering på internettet. Organisationer kan have eksisterende integreringskoder. Gennemse de aktuelt udgivne rapporter på siden [Integreringskoder](service-admin-portal.md#embed-codes).
+> Det er kun Power BI-administratorer, der kan tillade oprettelse af nye integreringskoder til publicering på internettet. Organisationer kan have eksisterende integreringskoder. Se afsnittet [Integreringskoder](service-admin-portal.md#embed-codes) i administrationsportalen for at gennemse de aktuelt udgivne rapporter.
 
-På følgende billede ses menuen **Filer** for en rapport, når indstillingen **Publicer på internettet** er aktiveret.
+På følgende billede ses menuen **Flere indstillinger (...)** for en rapport, når indstillingen **Publicer på internettet** er aktiveret.
 
-![Publicer på internettet i menuen Filer](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+![Publicer på internettet i menuen Flere indstillinger](media/service-admin-portal/power-bi-more-options-publish-web.png)
 
-Indstillingen **Publicer på internettet** giver mulighed for at angive, hvilke brugere der kan oprette integreringskoder.
+Indstillingen **Publicer på internettet** i administrationsportalen gør det muligt at angive, hvilke brugere der kan oprette integreringskoder.
 
 ![Indstillingen Publicer på internettet](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
 
-
-Brugerne bliver bedt om at kontakte Power BI-administratoren, så de kan få tilladelse til at oprette en integreringskode, når indstillingen **Vælg, hvordan integreringskoder fungerer** er angivet til **Tillad kun eksisterende integreringskoder** , og indstillingen **Publicer på internettet** er angivet til **Aktiveret**.
+Administratorer kan indstille **Publicer på internettet** til **Aktiveret** og **Vælg, hvordan integreringskoder fungerer** til **Tillad kun eksisterende integreringskoder**. I dette tilfælde kan brugerne oprette integreringskoder, men de skal kontakte Power BI-administratoren for at få tilladelse til at gøre det.
 
 ![Prompten Publicer på internettet](media/service-publish-to-web/publish_to_web_admin_prompt.png)
-
 
 Brugere kan se forskellige indstillinger på brugergrænsefladen afhængigt af indstillingen **Publicer på internettet**.
 
 |Funktion |Aktiveret for hele organisationen |Deaktiveret for hele organisationen |Specifikke sikkerhedsgrupper   |
 |---------|---------|---------|---------|
-|**Publicer på internettet** under rapportens menu **Filer**.|Aktiveret for alle|Ikke synligt for alle|Kun synligt for godkendte brugere eller grupper.|
+|**Publicer på internettet** i menuen **Flere indstillinger (...)** for rapporten|Aktiveret for alle|Ikke synligt for alle|Kun synligt for godkendte brugere eller grupper.|
 |**Håndter integreringskoder** under **Indstillinger**|Aktiveret for alle|Aktiveret for alle|Aktiveret for alle<br><br>Indstillingen * **Slet** er kun synlig for godkendte brugere eller grupper.<br>* **Hent koder** er aktiveret for alle.|
-|**Integrer koder** i administrationsportalen|Status afspejler et af følgende:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret|Status viser **Deaktiveret**|Status afspejler et af følgende:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret<br><br>Hvis en bruger ikke er godkendt på grund af indstillingen af lejeren, vises status som **krænket**.|
+|**Integrer koder** i administrationsportalen|Status afspejler et af følgende:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret|Status viser **Deaktiveret**|Status afspejler et af følgende:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret<br><br>Hvis en bruger ikke er godkendt på grund af indstillingen af lejeren, vises status som **Krænkelse**.|
 |Eksisterende publicerede rapporter|Alle aktiveret|Alle deaktiveret|Rapporter fortsætter med at gengive for alle.|
 
 ### <a name="export-data"></a>Eksportér data

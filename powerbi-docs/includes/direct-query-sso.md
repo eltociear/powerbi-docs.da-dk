@@ -5,14 +5,14 @@ services: powerbi
 author: davidiseminger
 ms.service: powerbi
 ms.topic: include
-ms.date: 05/31/2019
+ms.date: 04/28/2020
 ms.author: davidi
-ms.openlocfilehash: eec30d11c1bd99271416ab1a3a2dbb581687e315
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: d56988986cfd994bb21c9bc25d024903719472cf
+ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698300"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255840"
 ---
 ## <a name="single-sign-on"></a>Enkeltlogon
 
@@ -22,9 +22,7 @@ Du aktiverer SSO ved at gå til indstillinger for datasæt, åbne fanen **Dataki
 
 ![Dialogboksen Configure Azure SQL DQ (Konfigurer Azure SQL DQ)](media/direct-query-sso/sso-dialog.png)
 
-Når indstillingen for enkeltlogon er aktiveret, og dine brugere får adgang til rapporter, som er baseret på datakilden, sender Power BI deres godkendte Azure AD-legitimationsoplysninger i forespørgslerne til Azure SQL-databasen eller data warehouse. På den måde kan Power BI overholde de sikkerhedsindstillinger, der er konfigureret på datakildeniveauet.
+Når indstillingen for enkeltlogon er aktiveret, og dine brugere får adgang til rapporter, som er baseret på datakilden, sender Power BI deres godkendte Azure AD-legitimationsoplysninger i forespørgslerne til Azure SQL-databasen eller data warehouse. Denne indstilling gør det muligt for Power BI overholde de sikkerhedsindstillinger, der er konfigureret på datakildeniveauet.
 
 Indstillingen SSO gælder for alle datasæt, der bruger denne datakilde. Den påvirker ikke den godkendelsesmetode, der bruges til import af scenarier.
 
-> [!Note]
-> Azure MFA (Multi-Factor Authentication) understøttes ikke. Brugere, der gerne vil bruge SSO med Azure SQL DirectQuery, skal fritages fra MFA.

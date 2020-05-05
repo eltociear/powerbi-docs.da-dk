@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 105a9afe7292412227f67ef80e15eb23eb7d5f71
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.openlocfilehash: 1ba284aa3c925ef0679572ca55cad9e5267d3f21
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "81006779"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585054"
 ---
 # <a name="slicers-in-power-bi"></a>Udsnitsværktøjer i Power BI
 
@@ -131,6 +131,11 @@ I den aktuelle rapport på siden **Månedligt salg for distrikt** er der et udsn
     >[!NOTE]
     >Hvis du synkroniserer et udsnit med en side, men ikke gør det synligt på siden, vil udsnitsvalgene på de andre sider stadig filtrere dataene på siden.
  
+## <a name="filtering-slicers"></a>Filtrering af udsnitsværktøjer
+Du kan anvende filtre på visualiseringsniveau på udsnit for at reducere listen over værdier, der vises i udsnittet. Du kan f.eks. filtrere tomme værdier fra et listeudsnit eller filtrere bestemte datoer fra et intervaludsnit. Når du gør det, påvirker det kun *de værdier, der vises i udsnittet* og ikke *det filter, udsnittet anvender for andre visualiseringer*, når du foretager et valg. Lad os f.eks. sige, at du anvender et filter på et intervaludsnit, så det kun er bestemte datoer, der vises. Valget for udsnittet viser kun de første og sidste datoer fra området, men du vil stadig kunne se andre datoer i dine andre visualiseringer. Når du har ændret det valgte område i udsnittet, kan du se, at de andre visualiseringer opdateres. Hvis du rydder udsnittet, vises alle datoer igen.
+
+Se [Filtertyper](../power-bi-report-filter-types.md) for at få flere oplysninger om filtre på visualiseringsniveau.
+
 ## <a name="format-slicers"></a>Formatér udsnit
 Der findes forskellige indstillinger til formatering afhængigt af udsnitstypen. Hvis du bruger retningen **Vandret**, layoutet **Dynamisk** og **elementfarver**, kan du oprette knapper eller felter i stedet for almindelige listeelementer og få elementer i udsnit til at tilpasse størrelse, så de passer til forskellige skærmstørrelser og layout.  
 
