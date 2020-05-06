@@ -11,10 +11,10 @@ ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: ab629c15f1e1e998c3870b95993cdf7348cb15ff
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872833"
 ---
 # <a name="create-a-copy-of-a-dashboard-in-power-bi-service"></a>Opret en kopi af et dashboard i Power BI-tjenesten
@@ -46,7 +46,7 @@ Hvis du vil lave en kopi af et dashboard, skal du være dashboardets *forfatter*
     f. Dele dit dashboard direkte med kollegaer, eller som en del af en Power BI-app. 
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Tip til udformning af et fantastisk dashboard](service-dashboards-design-tips.md) 
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

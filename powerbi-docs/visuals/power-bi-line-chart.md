@@ -10,10 +10,10 @@ ms.date: 06/26/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: e46aa05ac326b5c959da8a29329fa92f4aec0b4d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871067"
 ---
 # <a name="line-charts-in-power-bi"></a>Kurvediagrammer i Power BI
@@ -35,11 +35,11 @@ I denne vejledning bruges appen Sales and Marketing Sample til at oprette et kur
     ![konvertér til kurvediagram](media/power-bi-line-charts/power-bi-convert-to-line.png)
    
 
-4. Filtrer dit kurvediagram, så det viser data for årene 2012-2014. Hvis filtreringsruden er skjult, skal du udvide den nu. I ruden Felter skal du vælge **Dato** \> **År** og trække det til ruden Filtre. Slip det under overskriften **Filtre på denne visualisering**. 
+4. Filtrer dit kurvediagram, så det viser data for årene 2012-2014. Hvis filtreringsruden er skjult, skal du udvide den nu. I ruden Felter skal du vælge **Dato** \> **År** og trække det til ruden Filtre. Slip det under overskriften **Filters on this visual**. 
      
     ![linje ud for ruden Felter](media/power-bi-line-charts/power-bi-year-filter.png)
 
-    Skift **Avancerede filtre** til **Grundlæggende filtre**, og vælg **2012**, **2013** og **2014**.
+    Skift **Advanced filters** til **Basic filters**, og vælg **2012**, **2013** og **2014**.
 
     ![Filtrer efter år](media/power-bi-line-charts/power-bi-filter-year.png)
 
@@ -51,7 +51,7 @@ I denne vejledning bruges appen Sales and Marketing Sample til at oprette et kur
 Kurvediagrammer kan have mange forskellige kurver. Og i nogle tilfælde kan værdierne på kurverne være så divergerende, at det ikke er godt at vise dem sammen. Lad os se på, hvordan vi tilføjer ekstra kurver i vores nuværende diagram, og lær, hvordan du formaterer diagrammet, når de værdier, der er repræsenteret af kurverne, er meget forskellige. 
 
 ### <a name="add-additional-lines"></a>Tilføj flere kurver
-I stedet for at kigge på enheder i alt for alle områder som en enkelt kurve i diagrammet kan vi opdele enheder i alt efter område. Tilføj flere kurver ved at trække **Geo** > **Område** til området med forklaring.
+I stedet for at kigge på enheder i alt for alle områder som en enkelt kurve i diagrammet kan vi opdele enheder i alt efter område. Tilføj flere kurver ved at trække **Geo** > **Region** til området med forklaring.
 
    ![Én kurve for hvert område](media/power-bi-line-charts/power-bi-line-regions.png)
 

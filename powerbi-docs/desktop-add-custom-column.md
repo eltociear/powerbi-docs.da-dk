@@ -10,10 +10,10 @@ ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 443053bc973005d3e2a655b1222d049a4251e7d7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73878885"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Tilføj en brugerdefineret kolonne i Power BI Desktop
@@ -38,7 +38,7 @@ Følg disse trin for at begynde at oprette en brugerdefineret kolonne:
 
 2. Under fanen **Tilføj kolonne** på båndet skal du vælge **Brugerdefineret kolonne**.
 
-   ![Vælg Brugerdefineret kolonne](media/desktop-add-custom-column/add-custom-column_02.png)
+   ![Vælg brugerdefineret kolonne](media/desktop-add-custom-column/add-custom-column_02.png)
 
    Vinduet **Tilføj brugerdefineret kolonne** vises.
 
@@ -79,7 +79,7 @@ Vinduet **Tilføj brugerdefineret kolonne** indeholder følgende funktioner:
 
 ## <a name="use-the-advanced-editor-for-custom-columns"></a>Brug Avanceret editor til brugerdefinerede kolonner
 
-Når du har oprettet din forespørgsel, kan du også bruge **Avanceret editor** til at redigere et hvilket som helst trin i din forespørgsel. Det gør du ved at gennemgå disse trin:
+Når du har oprettet din forespørgsel, kan du også bruge **Avanceret editor** til at redigere et hvilket som helst trin i din forespørgsel. Hvis du vil gøre dette, skal du følge disse trin:
 
 1. I vinduet **Forespørgselseditor** skal du vælge fanen **Vis** på båndet. 
 
@@ -90,7 +90,7 @@ Når du har oprettet din forespørgsel, kan du også bruge **Avanceret editor** 
    ![Siden Avanceret editor](media/desktop-add-custom-column/add-custom-column_07.png)
 
    
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - Du kan oprette en brugerdefineret kolonne på andre måder, f.eks. ved at oprette en kolonne baseret på eksempler, du angiver i Forespørgselseditor. Du kan finde flere oplysninger i [Tilføj en kolonne fra et eksempel i Power BI Desktop](desktop-add-column-from-example.md).
 

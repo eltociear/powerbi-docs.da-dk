@@ -10,10 +10,10 @@ ms.date: 01/23/2020
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 1f5cedba1c32f152cd6e4a9f9f51d0355ac05ce5
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77497328"
 ---
 # <a name="tutorial-analyze-facebook-data-by-using-power-bi-desktop"></a>Selvstudium: Analysér Facebook-data ved hjælp af Power BI Desktop
@@ -152,7 +152,7 @@ Nu, hvor du har importeret dataene fra Facebook-siden, kan du hurtigt og nemt f�
    
 5. Hvis du vil bortfiltrere tomme rækker, skal du vælge **meddelelse (alle)** i ruden **Filtre**, vælge **Markér alle** og derefter vælge **Tomme** for at fjerne markeringen af den. 
 
-   Indtastningen i ruden **Filtre** ændres til **meddelelse er ikke (tom)**, og rækken **(Tom)** forsvinder fra diagramvisualiseringen.
+   Indtastningen i ruden **Filtre** ændres til **meddelelse er ikke (tom)** , og rækken **(Tom)** forsvinder fra diagramvisualiseringen.
    
    ![Bortfiltrer tom række](media/desktop-tutorial-facebook-analytics/barchart3.png)
    
@@ -164,8 +164,8 @@ Visualiseringen bliver mere interessant, men du kan ikke se meget af teksten i o
    
 2. Med diagrammet markeret skal du vælge **ikonet Formatér** (malerrullen) i ruden **Visualiseringer**.
    
-3. Vælg pilen i rullemenuen ved siden af **Y-akse**, og træk skyderen ved siden af **Maksimumstørrelse** hele vejen til højre (**50 %**). 
-4. Reducer også **Tekststørrelsen** til **10 pkt.**, så der kan være mere tekst.
+3. Vælg pilen i rullemenuen ved siden af **Y-akse**, og træk skyderen ved siden af **Maksimumstørrelse** hele vejen til højre (**50 %** ). 
+4. Reducer også **Tekststørrelsen** til **10 pkt.** , så der kan være mere tekst.
    
    ![Formatering af ændringer](media/desktop-tutorial-facebook-analytics/barchart4.png)
    
@@ -236,7 +236,7 @@ Giv diagrammet en mere beskrivende og spændende titel:
 
 3. Vælg rullelistepilen ud for **Skrifttypefarve**, og vælg derefter en grøn farve for at matche de grønne søjler i visualiseringerne.
 
-4. Øg **Tekststørrelsen** til **10 pkt.**, og ret **Skrifttypefamilien** til **Segoe (Bold)**.
+4. Øg **Tekststørrelsen** til **10 pkt.** , og ret **Skrifttypefamilien** til **Segoe (Bold)** .
 
 5. Eksperimentér med andre formateringsindstillinger for at ændre udseendet af visualiseringerne. 
 

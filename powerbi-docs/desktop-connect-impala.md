@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: edac9f4eb0269e1d6ae359db6e8060b64697658c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73878531"
 ---
 # <a name="connect-to-an-impala-database-in-power-bi-desktop"></a>Opret forbindelse til en Impala-database i Power BI Desktop
@@ -49,7 +49,7 @@ Der er et par begrænsninger og overvejelser, du skal være opmærksom på i for
 
 * Impala-connectoren understøttes af datagatewayen i det lokale miljø via en af de tre understøttede godkendelsesmetoder.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Du kan oprette forbindelse til mange forskellige datakilder ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
 
 * [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)

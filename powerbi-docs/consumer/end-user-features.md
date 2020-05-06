@@ -11,17 +11,17 @@ ms.date: 04/17/2020
 ms.author: mihart
 LocalizationGroup: consumers
 ms.openlocfilehash: 4c4b923199ccd35433b7bf743314395fc70bbe30
-ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "82065716"
 ---
 # <a name="power-bi-feature-list-for-consumers-and-others-with-free-licenses"></a>Liste over Power BI-funktioner til *forbrugere* og andre med gratis licenser
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-Som *forbruger*kan du bruge Power BI-tjenesten til at udforske rapporter og dashboards, så du kan træffe forretningsbeslutninger. Disse rapporter og dashboards oprettes af *designere*, der har Power BI *Pro*-licenser. Pro-brugere har mulighed for at dele indhold med deres kolleger og styre, hvad deres kolleger kan og ikke kan foretage sig med dette indhold. Nogle gange kan designere dele indhold ved at sende dig links, og i nogle tilfælde installeres indholdet automatisk og vises i Power BI under **Programmer** eller **Delt med mig**.
+Som *forbruger*kan du bruge Power BI-tjenesten til at udforske rapporter og dashboards, så du kan træffe forretningsbeslutninger. Disse rapporter og dashboards oprettes af *designere*, der har Power BI *Pro*-licenser. Pro-brugere har mulighed for at dele indhold med deres kolleger og styre, hvad deres kolleger kan og ikke kan foretage sig med dette indhold. Nogle gange kan designere dele indhold ved at sende dig links, og i nogle tilfælde installeres indholdet automatisk og vises i Power BI under **Apps** eller **Delt med mig**.
 
 Der er mange forskellige måder, designere kan dele indhold på. Denne artikel henvender sig til *forbrugere* af Power BI, og vi vil derfor kun beskrive, hvordan forbrugerne modtager og interagerer med indhold. Du kan finde flere oplysninger om andre måder at dele indhold på under [Måder at dele dit arbejde på i Power BI](../service-how-to-collaborate-distribute-dashboards-reports.md).
 
@@ -37,7 +37,7 @@ I denne artikel kan du se, hvilke funktioner i Power BI-tjenesten der er tilgæn
 Lad os gennemgå nogle Power BI-koncepter, før vi kommer til listen. Dette er en hurtig gennemgang. Hvis du har brug for flere oplysninger, kan du besøge [Licenser til forbrugere](end-user-license.md) eller [Grundlæggende koncepter i Power BI](end-user-basic-concepts.md).
 
 ### <a name="workspaces-and-roles"></a>Arbejdsområder og roller
-Der er to typer arbejdsområder: **Mit arbejdsområde** og programarbejdsområder. Det er kun dig, der har adgang til dit **Mit arbejdsområde**. Samarbejde og deling kræver, at *designerne* af indholdet, som har Pro-licenser, bruger et programarbejdsområde. 
+Der er to typer arbejdsområder: **Mit arbejdsområde** og apparbejdsområder. Det er kun dig, der har adgang til dit **Mit arbejdsområde**. Samarbejde og deling kræver, at *designerne* af indholdet, som har Pro-licenser, bruger et programarbejdsområde. 
 
 I programarbejdsområder tildeles *roller* af designere for at administrere, hvem der kan gøre hvad i det pågældende arbejdsområde. *Forbrugere* tildeles normalt rollen **Læser**. 
 
@@ -68,7 +68,7 @@ Den anden kolonne repræsenterer en *forbruger*.  En forbruger:
 - Har en gratis brugerlicens.
 - Er en del af en organisation, der har et abonnement på en Premium-kapacitet.
 - henter indhold (programmer, dashboards, rapporter) fra Pro-brugere, der deler dette indhold ved hjælp af programarbejdsområder i en dedikeret kapacitet.
-- Er tildelt rollen **Læser** for disse programarbejdsområder. 
+- Er tildelt rollen **Læser** for disse apparbejdsområder. 
 
 ### <a name="legend"></a>Forklaring
 ![grøn prik](media/end-user-license/power-bi-green-dot.png) – funktionen er tilgængelig i det aktuelle scenarie    
@@ -81,15 +81,15 @@ Den anden kolonne repræsenterer en *forbruger*.  En forbruger:
 
 |Funktioner   | Scenarie 1: Gratis Power BI-bruger, der ikke har adgang til indhold, som er hostet i en dedikeret kapacitet.    | Scenarie 2: Gratis Power BI-bruger med tilladelser som **Læser** til indhold, der er gemt i en dedikeret kapacitet. Denne person er en *forbruger* i Power BI. |
 |---|---|---|
-|**Programmer** 
+|**Apps** 
 |Installeres automatisk | ![orange x](media/end-user-features/orange-x.png) | ![grøn prik](media/end-user-license/power-bi-green-dot.png)*| 
 |Åbn | ![orange x](media/end-user-features/orange-x.png) | ![grøn prik](media/end-user-license/power-bi-green-dot.png)  | 
 |Favorit | ![orange x](media/end-user-features/orange-x.png) | ![grøn prik](media/end-user-license/power-bi-green-dot.png)  |
  |Rediger, opdater, del igen, udgiv igen |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
- |Opret et nyt program |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
- |AppSource: Download og åbn | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
+ |Opret ny app |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
+ |Appsource: Download og åbn | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
 |Organisationslager: Hent og åbn|![orange x](media/end-user-features/orange-x.png)  |![grøn prik](media/end-user-license/power-bi-green-dot.png)  |
- |**Programarbejdsområder**
+ |**Apparbejdsområder**
 | Opret, rediger eller slet arbejdsområde eller indhold  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
 |Tilføj godkendelser | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
 |Åbn og få vist  |  ![orange x](media/end-user-features/orange-x.png) |  ![grøn prik](media/end-user-license/power-bi-green-dot.png)  | 

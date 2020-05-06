@@ -10,10 +10,10 @@ ms.date: 01/16/2019
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: 33d0b7850b5e396d8f03e80cbcb32768fb26bf6d
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81439796"
 ---
 # <a name="use-cross-report-drillthrough-in-power-bi"></a>Brug detaljeadgang på tværs af rapporter i Power BI
@@ -70,7 +70,7 @@ Du kan konfigurere en destination for detaljeadgang på tværs af rapporter i Po
 1. Hvis du kun bruger siden til detaljeadgang på tværs af rapporter, skal du slette knappen **Tilbage**, der automatisk føjes til lærredet. Knappen **Tilbage** fungerer kun til navigation i en rapport. 
 1. Når du har konfigureret destinationssiden, skal du gemme rapporten, hvis du bruger Power BI-tjenesten, eller gemme og publicere rapporten, hvis du bruger Power BI Desktop.
 
-Det var det. Dine rapporter er klar til detaljeadgang på tværs af rapporter. 
+Det er det hele. Dine rapporter er klar til detaljeadgang på tværs af rapporter. 
 
 ## <a name="use-cross-report-drillthrough"></a>Anvend tværgående detaljeadgang i rapport
 
@@ -100,7 +100,7 @@ I forbindelse med detaljeadgang på tværs af rapporter overfører Power BI filt
 
 Hvis du vil vende tilbage til kilderapporten efter detaljeadgangen på tværs af rapporter, skal du bruge knappen **Tilbage** i browseren. 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du vil måske også være interesseret i følgende artikler:
 

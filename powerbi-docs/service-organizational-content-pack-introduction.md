@@ -10,10 +10,10 @@ ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: b766cc4eae71b94a28e12ba989f85542fec2ab83
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871979"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion til organisationsindholdspakker i Power BI
@@ -71,7 +71,7 @@ Livscyklus ser noget nær således ud:
 ## <a name="data-security"></a>Datasikkerhed
 Alle medlemmer af distributionsgruppen har de samme tilladelser til dataene som vedkommende, der har oprettet indholdspakken. Den eneste undtagelse er tabellariske SSAS-datasæt (SQL Server Analysis Services) i det lokale miljø. Fordi rapporter og dashboards opretter direkte forbindelse til SSAS-modellen i det lokale miljø, bruges legitimationsoplysningerne for hvert enkelte medlem af distributionsgruppen til at bestemme, hvilke data de kan få adgang til.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Opret og publicer en organisationsindholdspakke](service-organizational-content-pack-create-and-publish.md)
 * [Opret og distribuer en app i Power BI](service-create-distribute-apps.md) 
 * [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)

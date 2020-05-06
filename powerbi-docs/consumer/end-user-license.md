@@ -11,10 +11,10 @@ ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: consumers
 ms.openlocfilehash: 8610f5c0efbc3da394e4de7c263a88aad813eae2
-ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "82066002"
 ---
 # <a name="using-the-power-bi-service-as-a-consumer"></a>Brug af Power BI-tjenesten som *forbruger*
@@ -43,7 +43,7 @@ Det er muligt at have mere end én licens på samme tid.  Tjenesten giver dig al
 
 Premium er et abonnement for organisationer, der giver dig en anden måde at gemme indhold på, nemlig i en dedikeret kapacitet. Med Premium kan alle – uanset om de befinder sig i eller uden for organisationen – få vist dit Power BI-indhold uden at købe individuelle Power BI Pro-licenser. 
 
-Premium muliggør omfattende distribution af indhold for Pro-brugere uden at kræve Pro-licenser for modtagere, der får vist indholdet. Der kræves Pro-licenser til indholdsdesignere. Designerne opretter forbindelse til datakilder og modeldata og opretter rapporter og dashboards, der er pakket som arbejdsområdeapps. Brugere uden en Pro-licens kan stadig få adgang til et arbejdsområde, der er i en Power BI Premium-kapacitet, så længe de har rollen Læser.
+Premium muliggør omfattende distribution af indhold for Pro-brugere uden at kræve Pro-licenser for modtagere, der får vist indholdet. Der kræves Pro-licenser til indholdsdesignere. Designerne opretter forbindelse til datakilder og modeldata og opretter rapporter og dashboards, der er pakket som arbejdsområdeapps. Brugere uden en Pro-licens kan stadig få adgang til et arbejdsområde, der er i en Power BI Premium-kapacitet, så længe de har rollen Fremviser.
 
 I disse arbejdsområder tildeler designere roller, f.eks. **Læser**, **Bidragyder**, **Medlem** og **Administrator**, som afgør, i hvor høj grad kolleger kan interagere med indholdet. Du kan finde flere oplysninger under [tilladelser og roller i arbejdsområder](end-user-workspaces.md). 
 
@@ -57,11 +57,11 @@ Besøg [din Microsoft-side **Min konto**](https://portal.office.com/account) for
 
 Den første bruger, Pradtanna, har Office 365 E5, som omfatter en Power BI Pro-licens.
 
-![Fanen Abonnementer på Office Portal](media/end-user-license/power-bi-license-office.png)
+![Fanen Abonnementer i Office Portal](media/end-user-license/power-bi-license-office.png)
 
 Den anden bruger, Zalan, har en gratis Power BI-licens. 
 
-![Fanen Abonnementer på Office Portal](media/end-user-license/power-bi-license-free.png)
+![Fanen Abonnementer i Office Portal](media/end-user-license/power-bi-license-free.png)
 
 ## <a name="find-out-if-you-have-access-to-premium-capacity"></a>Find ud af, om du har adgang til Premium-kapacitet
 
@@ -113,7 +113,7 @@ I diagrammet nedenfor repræsenterer venstre side de Pro-brugere, der opretter o
 
     ![billede af tre arbejdsområder](media/end-user-license/power-bi-dedicated.jpg)
 
-Power BI Pro-*designeren* kan dele og samarbejde med andre Pro-brugere i et hvilket som helst af de tre arbejdsområder. Men den eneste måde, at Power BI Pro-brugeren kan dele og samarbejde med brugere af den gratis version på, er ved hjælp af Arbejdsområde B, som er i en dedikeret Premium-kapacitet.  I arbejdsområdet tildeler designeren roller til samarbejdspartnerne. Din rolle bestemmer, hvilke handlinger du kan udføre i arbejdsområdet. *Forbrugere* i Power BI tildeles normalt rollen *Læser*. Du kan finde flere oplysninger om roller i [Arbejdsområder til Power BI-forbrugere](end-user-workspaces.md).
+Power BI Pro-*designeren* kan dele og samarbejde med andre Pro-brugere i et hvilket som helst af de tre arbejdsområder. Men den eneste måde, at Power BI Pro-brugeren kan dele og samarbejde med brugere af den gratis version på, er ved hjælp af Arbejdsområde B, som er i en dedikeret Premium-kapacitet.  I arbejdsområdet tildeler designeren roller til samarbejdspartnerne. Din rolle bestemmer, hvilke handlinger du kan udføre i arbejdsområdet. *Forbrugere* i Power BI tildeles normalt rollen *Fremviser*. Du kan finde flere oplysninger om roller i [Arbejdsområder til Power BI-forbrugere](end-user-workspaces.md).
 
 
 

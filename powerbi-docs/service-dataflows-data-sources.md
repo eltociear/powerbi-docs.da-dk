@@ -10,10 +10,10 @@ ms.date: 09/20/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 650fb243152d9bf2ca2ecfc37143145d734b78fe
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872669"
 ---
 # <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Opret forbindelse til datakilder til Power BI-dataflow
@@ -49,7 +49,7 @@ Du kan få vist de tilgængelige datakilder ved at vælge **Hent Data** i oprett
 Datakilder til dataflow er organiseret i følgende kategorier, der vises langs toppen af dialogboksen **Hent data**:
 
 * Alle kategorier
-* Fil
+* Filer
 * Database
 * Power BI
 * Azure
@@ -60,7 +60,7 @@ Kategorien **Alle kategorier** indeholder alle datakilder fra alle kategorier.
 
 Kategorien **Fil** indeholder følgende tilgængelige dataforbindelser til dataflow:
 
-* Adgang
+* Giv adgang
 * Excel
 * JSON
 * Tekst/CSV
@@ -69,10 +69,10 @@ Kategorien **Fil** indeholder følgende tilgængelige dataforbindelser til dataf
 Kategorien **Database** indeholder følgende tilgængelige dataforbindelser til dataflow:
 
 * IBM DB2-database
-* MySQL-database
-* Oracle Database
+* MySQL Database
+* Oracle-database
 * PostgreSQL-database
-* SQL Server Database
+* SQL Server-database
 * Sybase-database
 * Teradata
 * Vertica
@@ -92,7 +92,7 @@ Kategorien **Azure** indeholder følgende tilgængelige dataforbindelser til dat
 Kategorien **Onlinetjenester** indeholder følgende tilgængelige dataforbindelser til dataflow:
 
 * Amazon Redshift
-* Common Data Service for Apps
+* Common Data Service til Apps
 * Microsoft Exchange Online
 * Salesforce-objekter
 * Salesforce-rapporter

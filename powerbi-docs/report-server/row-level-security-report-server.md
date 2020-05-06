@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
 ms.openlocfilehash: 7436b97cdeacf08f1d4ed9374ec615d56ae92db1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73859189"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Sikkerhed på rækkeniveau i Power BI-rapportserver
@@ -97,7 +97,7 @@ Forfattere til rapporter har ikke adgang til at få vist rapportdataene i Power 
 
  
 
-## <a name="faq"></a>Ofte stillede spørgsmål 
+## <a name="faq"></a>OFTE STILLEDE SPØRGSMÅL OM 
 
 ### <a name="can-i-create-these-roles-for-analysis-services-data-sources"></a>Kan jeg oprette disse roller til Analysis Services-datakilder? 
 
@@ -116,7 +116,7 @@ Nej. Du beskytter individuelle rækker, men brugerne kan altid se enten detaljer
 Ja, hvis du allerede har eksisterende roller defineret og tildelt medlemmer i Power BI-rapportserver, kan du oprette yderligere roller og publicere din rapport, uden at det påvirker aktuelle tildelinger. 
  
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Hvad er Power BI-rapportserveren?](get-started.md) 
 [Administratorhåndbog](admin-handbook-overview.md)  

@@ -10,10 +10,10 @@ ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
 ms.openlocfilehash: cc85fb07f50a42952e9b293908a797b1cbac023f
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74958350"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det var ikke muligt at føje Power BI til en partners Office 365-abonnement
@@ -52,7 +52,7 @@ Du kan tilmelde dig en gratis prøveversion af Power BI. Hvis du ikke køber Pow
 
 ### <a name="enable-ad-hoc-subscriptions"></a>Aktivér ad hoc-abonnementer
 
-Individuelle tilmeldinger (også kaldet ad hoc-abonnementer) er som standard deaktiveret. I dette tilfælde kan du se følgende meddelelse, når du forsøger at tilmelde dig: *Din it-afdeling har deaktiveret tilmelding til Microsoft Power BI*.
+Individuelle tilmeldinger (også kaldet ad hoc-abonnementer) er som standard deaktiveret. I dette tilfælde får du vist følgende meddelelse, når du forsøger at tilmelde dig: *IT-afdelingen har deaktiveret tilmelding til Microsoft Power BI*.
 
 ![Billede af beklagelse](media/service-admin-syndication-partner/sorry.png)
 

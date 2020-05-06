@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 LocalizationGroup: Premium
 ms.openlocfilehash: 18ae8828ce5811b4f06038b18ff6b423562c335b
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637696"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Overvåg kapaciteter på administrationsportalen
@@ -67,7 +67,7 @@ Hver arbejdsbelastning har flere målepunkter. Den type målepunkter der vises, 
 
 #### <a name="datasets"></a>Datasæt
 
-##### <a name="refresh"></a>Opdater
+##### <a name="refresh"></a>Refresh
 
 | **Målepunkt** | **Beskrivelse** |
 | --- | --- |
@@ -118,7 +118,7 @@ Hver arbejdsbelastning har flere målepunkter. Den type målepunkter der vises, 
 > [!NOTE]
 > Detaljerede målepunkter for **AI**-arbejdsbelastningen er endnu ikke tilgængelige.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Nu, hvor du har en forståelse af, hvordan du overvåger Power BI Premium-kapaciteter, kan du få mere at vide om optimering af kapaciteter.
 

@@ -11,10 +11,10 @@ ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 2de2cd80dbffc8c65a4577fffd6a8e41bc6116d2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73873783"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Føj et link til et tekstfelt i en rapport
@@ -59,8 +59,8 @@ Du kan finde oplysninger om links i Power BI-tabeller og -matrixer under [Føj l
 
    Linket fjernes i Power BI Desktop, men teksten beholdes.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Tekstfelter og figurer i Power BI-rapporter](power-bi-reports-add-text-and-shapes.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
+Har du flere spørgsmål? [Prøv Power BI-community'et](https://community.powerbi.com/).
 

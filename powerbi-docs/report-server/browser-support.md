@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
 ms.openlocfilehash: 724bd7a9a11c42520c520019f1c4a67415aa5487
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874297"
 ---
 # <a name="browser-support-for-power-bi-report-server"></a>Browsersupport til Power BI Report Server
@@ -110,9 +110,9 @@ Brug en browser med aktivering af scriptsupport. Hvis browseren ikke kan køre s
   
   **(+)**  Seneste offentligt udgivne version
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Administratoroversigt](admin-handbook-overview.md)  
-[Installer Power BI-rapportserver](install-report-server.md)  
+[Installér Power BI-rapportserver](install-report-server.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 

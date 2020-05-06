@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: painbar
 ms.openlocfilehash: 6020a6cb72be4e8d7be0485c7787fefc097e679d
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75220029"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Vis rapporter og KPI'er fra rapportserveren i det lokale miljø i Power BI-mobilapps
@@ -23,7 +23,7 @@ Gælder for:
 
 | ![iPhone](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/iphone-logo-50-px.png) | ![iPad](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-tablet-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |
+| iPhones |iPad-tablets |Android-telefoner |Android-tablets |
 
 
 ![Startside for rapportserver i mobilappsene](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-pbi-report-server-home.png)
@@ -68,7 +68,7 @@ Du kan se Power BI-rapporter, Reporting Services-mobilrapporter og KPI'er i Powe
    
      `https://<servername>/reports`
    
-     ELLER
+     OR
    
      `https://<servername>/reports`
    
@@ -88,7 +88,7 @@ Hvis du får vist Power BI i iOS- eller Android-mobilappen, kan din it-administr
 
     ![Log på rapportserveren](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-sign-in.png)
 
-2.  Oplysningerne for rapportserveren er allerede udfyldt på siden **Opret forbindelse til server**. Tryk på **Opret forbindelse**.
+2.  Detaljerne om rapportserveren er allerede udfyldt på siden **Opret forbindelse til server**. Tryk på **Opret forbindelse**.
 
     ![Rapportserveroplysningerne er udfyldt](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-remote-configure-connect-server.png)
 
@@ -112,7 +112,7 @@ Power BI-rapporter, Reporting Services-mobilrapporter og KPI'er vises i de samme
     ![Power BI-rapport optimeret til mobil visning](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-report.png)
 * Tryk på en KPI for at få den vist i fokuseret tilstand.
   
-    ![KPI i fokuseret tilstand](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/pbi_ipad_ssmrp_tile.png)
+    ![KPI i fokuseringstilstand](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/pbi_ipad_ssmrp_tile.png)
 
 ## <a name="view-your-favorite-kpis-and-reports"></a>Se dine foretrukne KPI'er og rapporter
 Du kan markere KPI'er og rapporter som favoritter på webportalen og derefter se dem i en enkelt praktisk mappe på din mobilenhed sammen med din foretrukne Power BI-dashboards.
@@ -130,7 +130,7 @@ Du kan markere KPI'er og rapporter som favoritter på webportalen og derefter se
 2. Tryk på navnet på den server, som du ikke vil oprette forbindelse til.
 3. Tryk på **Fjern server**.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)  
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+* Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

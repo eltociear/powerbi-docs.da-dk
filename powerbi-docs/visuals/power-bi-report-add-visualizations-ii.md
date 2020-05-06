@@ -10,10 +10,10 @@ ms.date: 10/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 132c795724b6f3744e0648ac1f3229c5e6538a97
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75758416"
 ---
 # <a name="add-visuals-to-a-power-bi-report-part-2"></a>Føj visualiseringer til en Power BI-rapport (del 2)
@@ -36,7 +36,7 @@ I dette selvstudium bruges [PBIX-filen med eksemplet på detailhandelsanalyse](h
 
 1. Åbn **PBIX-filen med eksemplet Detailhandelsanalyse** i rapportvisning ![ikon for skærmbillede af rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
+1. Vælg ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
 
 ## <a name="add-visualizations-to-the-report"></a>Tilføj visualiseringer i rapporten
 
@@ -69,7 +69,7 @@ Opret en visualisering ved at vælge et felt i ruden **Felter**. Den type visual
 2. Tilføj en forklaring.  Hvis du vil se dataene efter butiksnavn, skal du trække **Butik** > **Kæde** til området Forklaring.  
    ![rapportlærred med pil fra kæden på feltlisten til kæden i forklaringsbucket'en](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * Få mere at vide om [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md).  
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

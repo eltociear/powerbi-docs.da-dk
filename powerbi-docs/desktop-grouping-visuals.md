@@ -10,10 +10,10 @@ ms.date: 08/12/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: ced98b8290059b3098ce83efdd05bb2a20e2d5ee
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761128"
 ---
 # <a name="group-visuals-in-power-bi-desktop-reports"></a>Gruppér visualiseringer i Power BI Desktop-rapporter
@@ -65,7 +65,7 @@ Du kan også anvende en baggrundsfarve for en gruppe ved hjælp afsnittet **Form
 Når du har anvendt en baggrundsfarve, markerer du gruppen ved at klikke på området mellem de visuelle elementer i gruppen (sammenlign dette med at klikke på det tomme område mellem visuelle elementer i en gruppe, hvilket ikke markerer gruppen). 
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Du kan få flere oplysninger om gruppering ved at se følgende video:
 
 * [Gruppering i Power BI Desktop – video](https://youtu.be/sf4n7VXoQHY?t=10)

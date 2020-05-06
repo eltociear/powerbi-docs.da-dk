@@ -10,10 +10,10 @@ ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 25ed90dba0c164a44d691f8247023f2ff7e0a67f
-ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76913525"
 ---
 # <a name="create-report-templates-for-power-bi-desktop"></a>Opret rapportskabeloner til Power BI Desktop
@@ -66,9 +66,9 @@ Når du har angivet de påkrævede parametre, bliver du bedt om at angive placer
 
 Når der er angivet parametre og data, oprettes en rapport med alle de sider, visualiseringer, datamodelartefakter og forespørgsler, der var en del af den rapport, som skabelonen er baseret på. 
 
-Det var det. Det er nemt at oprette og bruge rapportskabeloner i Power BI Desktop, så du nemt kan genskabe overbevisende layout og andre rapportaspekter og dele dem med andre.
+Det er det hele. Det er nemt at oprette og bruge rapportskabeloner i Power BI Desktop, så du nemt kan genskabe overbevisende layout og andre rapportaspekter og dele dem med andre.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Du er måske også interesseret i at få mere at vide om **forespørgselsparametre**:
 * [Bruger du forespørgselsparametre i Power BI Desktop?](https://docs.microsoft.com/power-query/power-query-query-parameters)
 

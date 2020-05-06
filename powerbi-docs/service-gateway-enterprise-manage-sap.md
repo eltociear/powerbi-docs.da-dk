@@ -10,10 +10,10 @@ ms.date: 07/16/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: 6c944b52deb72e556506d88f4358af2c816b46fc
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698158"
 ---
 # <a name="manage-your-data-source---sap-hana"></a>Administrer din datakilde – SAP HANA
@@ -52,7 +52,7 @@ Når du opretter datakilden, er den tilgængelig til brug med enten DirectQuery-
 > [!NOTE]
 > Server- og databasenavne skal matche mellem Power BI Desktop og datakilden i datagatewayen i det lokale miljø.
 
-Linket mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse navne skal være ens. Hvis du f.eks. angiver en IP-adresse for servernavnet i Power BI Desktop, skal du bruge IP-adressen for datakilden i konfigurationen af gatewayen. Hvis du bruger *SERVER\INSTANCE* i Power BI Desktop, skal du også bruge det i den datakilde, der er konfigureret for gateway'en.
+Forbindelsen mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse navne skal være ens. Hvis du f.eks. angiver en IP-adresse for servernavnet i Power BI Desktop, skal du bruge IP-adressen for datakilden i konfigurationen af gatewayen. Hvis du bruger *SERVER\INSTANCE* i Power BI Desktop, skal du også bruge det i den datakilde, der er konfigureret for gateway'en.
 
 Dette krav gælder både for DirectQuery og planlagt opdatering.
 
@@ -68,10 +68,10 @@ Hvis du er angivet under fanen **Brugere** i den datakilde, der er konfigureret 
 
 ![Visning af brugerne](media/service-gateway-enterprise-manage-sap/powerbi-gateway-enterprise-schedule-refresh.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
-* [Fejlfinding af datagateway i det lokale miljø](/data-integration/gateway/service-gateway-tshoot)
+* [Fejlfinding af datagateway i lokalt miljø](/data-integration/gateway/service-gateway-tshoot)
 * [Foretag fejlfinding af gateways – Power BI](service-gateway-onprem-tshoot.md) 
 
-Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
 

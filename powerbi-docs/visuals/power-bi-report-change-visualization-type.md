@@ -10,10 +10,10 @@ ms.date: 10/28/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: c9de9031fdbee48fca3b9a025fe2547ec08a5f20
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871034"
 ---
 # <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Skift visualiseringstype i en Power BI-rapport
@@ -34,7 +34,7 @@ Prøv forskellige visualiseringstyper i Power BI-tjenesten og Power BI Desktop f
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 Hvis du ændrer visualiseringstypen i rapporten, efter at du har fastgjort den til dit dashboard, opdateres feltet på dashboardet ikke automatisk. Det vil sige, at hvis du har brugt Power BI-tjenesten til at fastgøre visualiseringen som et kurvediagram og derefter har ændret det til et liggende søjlediagram i rapporten, så bliver den allerede fastgjorte version af disse data ved med at være et kurvediagram. Fastgør det liggende søjlediagram for også at se det på dashboardet.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Mere om [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
 
 [Power BI – Grundlæggende begreber](../consumer/end-user-basic-concepts.md)

@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 03/24/2020
 LocalizationGroup: Common tasks
 ms.openlocfilehash: 10d1e87fabc54c5886930c52ce60ed4a62479847
-ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81525429"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Abonner på en rapport eller et dashboard i Power BI-tjenesten 
@@ -29,7 +29,7 @@ Det sprog, der er angivet under Power BI-indstillingerne, bruges til mail og sna
 
 ![Rullelisten Sprog](./media/end-user-subscribe/power-bi-language.png)
 
-Når du modtager mailen, indeholder den et link til at "gå til rapport eller dashboard". På mobilenheder med Power BI-apps installeret, startes appen (i modsætning til standardhandlingen med at åbne rapporten eller dashboardet på Power BI-webstedet), hvis du vælger dette link.
+Når du modtager mailen, indeholder den et link til at "gå til rapport eller dashboard". På mobile enheder med Power BI-apps installeret, startes appen (i modsætning til standardhandlingen med at åbne rapporten eller dashboardet på Power BI-webstedet), hvis du vælger dette link.
 
 
 ## <a name="requirements"></a>Krav
