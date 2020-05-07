@@ -11,10 +11,10 @@ ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: b0ed499a272fc3f6fc0590117898c64551fedac1
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79436082"
 ---
 # <a name="create-and-use-combo-charts-in-power-bi"></a>Opret og brug kombinationsdiagrammer i Power BI
@@ -43,7 +43,7 @@ I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](https
 
 1. Åbn **PBIX-filen med eksemplet Detailhandelsanalyse** i rapportvisning ![ikon for skærmbillede af rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
+1. Vælg ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
 
 
 
@@ -68,7 +68,7 @@ Se, hvordan Will opretter et kombinationsdiagram ved hjælp af salgs- og marketi
     ![eksempel på selvstudium med kombinationsdiagram](media/power-bi-visualization-combo-chart/combotutorial1new.png)
 5. Vælg **Flere indstillinger** (...) i øverste højre hjørne af visualiseringen, og vælg **Sortér efter > FiscalMonth**. Hvis du vil ændre sorteringsrækkefølgen, skal du vælge ellipsen igen og vælge enten **Sortér stigende** eller **Sortér faldende**. I dette eksempel bruger vi **Sortér stigende**.
 
-6. Konvertér søjlediagrammet til et kombinationsdiagram. Der er to kombinationsdiagrammer: **Kurvediagram og stablet søjlediagram** og **Kurvediagram og grupperet søjlediagram**. Vælg søjlediagrammet, og vælg derefter **Line and clustered column chart** fra fanen **Visualizations**.
+6. Konvertér søjlediagrammet til et kombinationsdiagram. Der findes to kombinationsdiagrammer: **kurvediagram og stablet søjlediagram** og **kurvediagram og grupperet søjlediagram**. Vælg søjlediagrammet, og vælg derefter **Line and clustered column chart** fra fanen **Visualizations**.
 
     ![eksempel på konvertering af kombinationsdiagram](media/power-bi-visualization-combo-chart/converttocombo-new2.png)
 7. Fra ruden **Felter** kan du derefter trække **Sales** \> **Last Year Sales** til beholderen **Line Values**.
@@ -124,8 +124,8 @@ Nu kan du f.eks.:
 
 Fremhævning af en kolonne eller kurve i kombinationsdiagrammet fører til tværgående fremhævning og krydsfiltrering af andre visualiseringer på rapportsiden... og omvendt. Hvis du vil ændre denne standardfunktionsmåde, skal du bruge [visuelle interaktioner](../service-reports-visual-interactions.md).
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Kransediagrammer i Power BI](power-bi-visualization-doughnut-charts.md)
 
-[Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+[Typer af visualiseringer i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

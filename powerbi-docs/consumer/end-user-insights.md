@@ -11,10 +11,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 891a9b1a5afee26bdb2d6b363ccd2cee5f2461cb
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79377277"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Få vist dataindsigt på dashboardfelter med Power BI
@@ -64,6 +64,6 @@ Vælg **Afslut Fokustilstand** i øverste venstre hjørne for at vende tilbage t
 - **Vis indsigter** fungerer ikke med alle typer af dashboardfelter. Det er f.eks. ikke tilgængeligt for Power BI-visuals.<!--[Power BI visuals](end-user-custom-visuals.md)-->
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Få mere at vide om de [tilgængelige typer Hurtig indsigt](end-user-insight-types.md)
 

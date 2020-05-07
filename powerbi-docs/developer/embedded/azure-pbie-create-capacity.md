@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.reviewer: zakharb
 ms.date: 02/05/2019
 ms.openlocfilehash: 57204602900e76e7bd5034e96f6385e5e944c04e
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114790"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Opret Power BI Embedded-kapacitet på Azure-portalen
@@ -58,7 +58,7 @@ Du kan navigere til **Alle tjenester** > **Power BI Embedded** for at se, om kap
 
 ![Dashboard på Azure-portalen med Power BI Embedded-kapacitet](media/azure-pbie-create-capacity/azure-portal-dashboard.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 For at bruge den nye Power BI Embedded-kapacitet skal du gå til Power BI-administrationsportalen for at tildele arbejdsområder. Du kan finde flere oplysninger under [Administrer kapaciteter i Power BI Premium og Power BI Embedded](https://powerbi.microsoft.com/documentation/powerbi-admin-premium-manage/).
 

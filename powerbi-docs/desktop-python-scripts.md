@@ -10,10 +10,10 @@ ms.date: 01/13/2020
 ms.author: otarb
 LocalizationGroup: Connect to data
 ms.openlocfilehash: d5b57b782af52542ed944b5e5e7504a974ee9d81
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80273334"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Kør Python-scripts i Power BI Desktop
@@ -96,7 +96,7 @@ Sådan kører du dit Python-script i Power BI Desktop:
 
    ![Hent data. vælg Python-script](media/desktop-python-scripts/python-scripts-1.png)
 
-1. Vælg **Opret forbindelse**. Den senest installerede lokale Python-version vælges som dit Python-program. Kopiér scriptet til dialogboksen **Python-script**, der vises. Her angiver vi det simple Python-script, der blev vist før.
+1. Vælg **Connect**. Den senest installerede lokale Python-version vælges som dit Python-program. Kopiér scriptet til dialogboksen **Python-script**, der vises. Her angiver vi det simple Python-script, der blev vist før.
 
    ![Eksempel på Python-script](media/desktop-python-scripts/python-scripts-6.png)
 
@@ -118,11 +118,11 @@ Det anbefales, at du bruger den officielle Python distribution fra https://www.p
 
 En mulig løsning er, at du starter Power BI Desktop fra din brugerdefinerede prompt til Python-miljøet.
 
-### <a name="refresh"></a>Opdater
+### <a name="refresh"></a>Refresh
 
 Du kan opdatere et Python-script i Power BI Desktop. Hvis du vil opdatere, skal du gå til båndet **Hjem** og vælge **Opdater**. Når du opdaterer et Python-script, køres Python-scriptet i Power BI Desktop igen.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan finde yderligere oplysninger om Python i Power BI i følgende artikler.
 

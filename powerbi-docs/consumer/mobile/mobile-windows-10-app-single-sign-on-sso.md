@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: e9156e539ee9f1a344b89f7814c148829498e5fc
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435921"
 ---
 # <a name="single-sign-on-in-the-power-bi-mobile-windows-app"></a>Enkeltlogon i Power BI-mobilappen til Windows
@@ -34,8 +34,8 @@ Du kan også bruge SSO, hvis du allerede bruger Power BI-mobilappen til Windows,
 
 Hvis du ikke vil bruge dine aktuelle Windows-legitimationsoplysninger til den aktive session til at logge på Power BI, skal du blot gå til **indstillinger**, logge af og logge på med dine andre legitimationsoplysninger. 
  
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Kom i gang med Power BI-mobilappen til Windows 10](mobile-windows-10-phone-app-get-started.md)
-- Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

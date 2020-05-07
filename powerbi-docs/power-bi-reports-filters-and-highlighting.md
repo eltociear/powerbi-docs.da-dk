@@ -1,6 +1,6 @@
 ---
 title: Filtre og fremhævning i Power BI-rapporter
-description: Om filtre og fremhævning i Power BI-rapporter
+description: Om filtre og markering i Power BI-rapporter
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,10 +10,10 @@ ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: f1722690ff974a9d4fac6e94243e1024bfbfc12e
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79207062"
 ---
 # <a name="filters-and-highlighting-in-power-bi-reports"></a>Filtre og fremhævning i Power BI-rapporter
@@ -89,7 +89,7 @@ Vælg en værdi eller aksemærkat i en visualisering for at fremhæve de andre v
 ![Tværgående fremhævning](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Den nye filtreringsoplevelse i Power BI-rapporter](power-bi-report-filter.md)
 

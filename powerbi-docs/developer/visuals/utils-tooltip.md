@@ -9,10 +9,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 02/14/2020
 ms.openlocfilehash: 67470ec405806f44fdb483e857d222ad4ff05a45
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79379162"
 ---
 # <a name="tooltip-utils"></a>Hjælpeprogrammer til værktøjstip
@@ -33,7 +33,7 @@ npm install powerbi-visuals-utils-colorutils --save
 ```
 Med denne kommando installeres pakken, og der tilføjes en pakke som en afhængighed af din ```package.json```
 
-## <a name="usage"></a>Forbrug
+## <a name="usage"></a>Brug
 
 > Brugervejledningen indeholder en beskrivelse af en offentligt API til pakken. Du kan finde en beskrivelse og et par eksempler til hver offentlige grænseflade for pakken.
 

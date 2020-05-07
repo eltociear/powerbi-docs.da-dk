@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
 ms.openlocfilehash: fdd7504823f088ed0e88657a6fcccaeb9a5a36d0
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79487803"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Vejledning til indstillinger for lejeradministrator
@@ -86,7 +86,7 @@ Vi anbefaler, at du tildeler én eller flere sikkerhedsgrupper. Tilladelse til a
 
 ![Indstillingen "Del indhold med eksterne brugere" vises.](media/admin-tenant-settings/share-content-with-external-users.png)
 
-### <a name="publish-to-web"></a>Publicer på internettet
+### <a name="publish-to-web"></a>Udgiv på internettet
 
 Funktionen [Publicer på internettet](../service-publish-to-web.md) gør det muligt at publicere offentlige rapporter på internettet. Hvis funktionen ikke anvendes korrekt, er der en risiko for, at fortrolige oplysninger bliver tilgængelige live på internettet.
 
@@ -100,7 +100,7 @@ Desuden er der mulighed for at vælge, hvordan dine integreringskoder fungerer. 
 
 Vi anbefaler også, at du gennemgår [Publicer integreringskoder på internettet](https://app.powerbi.com/admin-portal/embedCodes) jævnligt. Fjern koder, hvis de medfører publicering af private eller fortrolige oplysninger.
 
-### <a name="export-data"></a>Eksportér data
+### <a name="export-data"></a>Eksport af data
 
 Du kan begrænse brugernes eksport af data fra dashboardfelter eller rapportvisualiseringer.
 
@@ -137,11 +137,11 @@ Hvis du ikke vil bruge udvikler-API'erne til at integrere indhold, anbefaler vi,
 
 ![Udviklerindstillingerne vises.](media/admin-tenant-settings/developer-settings.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
 - [Hvad er Power BI-administration?](../service-admin-administering-power-bi-in-your-organization.md)
 - [Administrer Power BI på administrationsportalen](../service-admin-portal.md)
-- Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)
