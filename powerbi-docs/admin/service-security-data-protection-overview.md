@@ -11,10 +11,10 @@ ms.date: 03/22/2020
 ms.author: painbar
 LocalizationGroup: Data from files
 ms.openlocfilehash: 97e7bf44233e0986459be9edf719cd21cd3d7a01
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637594"
 ---
 # <a name="data-protection-in-power-bi-preview"></a>Databeskyttelse i Power BI (prøveversion)
@@ -105,7 +105,7 @@ Følgende liste indeholder nogle begrænsninger for følsomhedsmærkater i Power
 * [HYOK-beskyttelse](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) understøttes ikke for mærkater, der anvendes i Power BI.
 * Der er [licenskrav](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels) for visning og anvendelse af mærkater i Office-programmer.
 * Følsomhedsmærkater understøttes kun for lejere i det globale cloudmiljø (offentligt). Følsomhedsmærkater understøttes ikke for lejere i andre cloudmiljøer.
-* Følsomhedsmærkater for data understøttes ikke for skabelonprogrammer. Følsomhedsmærkater, der er angivet af opretteren af skabelonprogrammet, fjernes, når programmet udtrækkes og installeres. Følsomhedsmærkater, der føjes til artefakter i et installeret skabelonprogram af programbrugeren, mistes (nulstilles til ingenting), når programmet opdateres.
+* Følsomhedsmærkater for data understøttes ikke for skabelonapps. Følsomhedsmærkater, der er angivet af opretteren af skabelonprogrammet, fjernes, når programmet udtrækkes og installeres. Følsomhedsmærkater, der føjes til artefakter i et installeret skabelonprogram af programbrugeren, mistes (nulstilles til ingenting), når programmet opdateres.
 * Power BI understøtter ikke følsomhedsmærkater for beskyttelsestyperne **Videresend ikke** og **Ad hoc**.
 
 ## <a name="next-steps"></a>Næste trin

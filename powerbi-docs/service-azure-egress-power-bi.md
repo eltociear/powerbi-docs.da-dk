@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from databases
 ms.openlocfilehash: 17175e1accb5013b960c5e1a71ae036b3dda72f3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73855578"
 ---
 # <a name="power-bi-and-azure-egress"></a>Udgående data i Power BI og Azure
@@ -28,7 +28,7 @@ Du kan finde ud af, hvor din Power BI-lejer er placeret, i artiklen [Hvor findes
 
 For Power BI Premium Multi-Geo-kunder forholder det sig sådan, at hvis din Power BI-lejer ikke er i den optimale placering for nogle af dine Azure-baserede datakilder, kan du installere Power BI Premium Multi-Geo i det ønskede Azure-område og få fordel af at have din Power BI-lejer og Azure-datakilder i det samme Azure-område.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan få flere oplysninger om Power BI Premium eller Multi-Geo i følgende ressourcer:
 

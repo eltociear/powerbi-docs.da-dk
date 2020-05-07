@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: c3b1b7288d0d277fc866ea47887335d10279c6cc
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73799770"
 ---
 Med DAX er der mange funktioner, der er tilgængelige til at forme eller på anden måde at analysere dataene. Disse funktioner kan grupperes i en række kategorier:
@@ -41,7 +41,7 @@ Men særlige sammenlægningsfunktioner, der slutter med **X**, f.eks. **SUMX**, 
 ## <a name="counting-functions"></a>Optællingsfunktioner
 Ofte brugte **optællingsfunktioner** i DAX omfatter følgende:
 
-* COUNT
+* ANTAL
 * COUNTA
 * COUNTBLANK
 * COUNTROWS
@@ -52,7 +52,7 @@ Disse funktioner tæller forskellige elementer, f.eks. entydige værdier, ikke-t
 ## <a name="logical-functions"></a>Logiske funktioner
 Samlingen af **logiske** funktioner i DAX omfatter:
 
-* AND
+* OG
 * OR
 * NOT
 * IF

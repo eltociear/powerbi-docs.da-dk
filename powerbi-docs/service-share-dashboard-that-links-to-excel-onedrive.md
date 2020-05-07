@@ -10,10 +10,10 @@ ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: ee32d10ffeb22160b054661ca91c46890a877fa3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871474"
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>Del et Power BI-dashboard, der linker til en Excel-fil i OneDrive
@@ -53,7 +53,7 @@ Deling af et dashboard fra et Power BI-arbejdsområde ligner deling af et dashbo
 
 ![Del fra OneDrive](media/service-share-dashboard-that-links-to-excel-onedrive/pbi_onedriveshare.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Fastgør et felt til et Power BI-dashboard fra Excel](service-dashboard-pin-tile-from-excel.md)
 * [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

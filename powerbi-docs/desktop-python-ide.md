@@ -1,5 +1,5 @@
 ---
-title: Brug et eksternt Python-IDE sammen med Power BI
+title: Brug en ekstern Python IDE med Power BI
 description: Du kan starte og bruge et eksternt IDE med Power BI
 author: otarb
 ms.reviewer: ''
@@ -10,13 +10,13 @@ ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
 ms.openlocfilehash: dbdd4076c9944cf0335ed1f6b6aa43a2a3887189
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73865979"
 ---
-# <a name="use-an-external-python-ide-with-power-bi"></a>Brug et eksternt Python-IDE sammen med Power BI
+# <a name="use-an-external-python-ide-with-power-bi"></a>Brug en ekstern Python IDE med Power BI
 Du kan bruge dit eksterne Python IDE (Integrated Development Environment) sammen med **Power BI Desktop** til at oprette og tilpasse Python scripts og derefter bruge de pågældende scripts i Power BI.
 
 ![](media/desktop-python-ide/python-ide-1.png)
@@ -80,7 +80,7 @@ Start af et Python-IDE direkte fra Power BI Desktop har nogle få begrænsninger
 
 * Automatisk eksport af dit script fra Python-IDE'et til **Power BI Desktop** understøttes ikke.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Du kan finde yderligere oplysninger om Python i Power BI i følgende artikler.
 
 * [Kørsel af Python-scripts i Power BI Desktop](desktop-python-scripts.md)

@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: v-pemyer
 ms.openlocfilehash: 59cb62a9186da03a265fc3a8711d7275c3772af3
-ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75623055"
 ---
 # <a name="disable-power-query-background-refresh"></a>Deaktiver baggrundsopdatering i Power Query
@@ -38,9 +38,9 @@ Det er altid muligt at opdatere eksempelcachen. Du kan opdatere den til en enkel
 
 ![Kommandoer i Power Query-editor til opdatering af eksempeldata](media/power-query-background-refresh/power-query-refresh-preview-data.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
 - [Power Query-dokumentation](/power-query/)
-- Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

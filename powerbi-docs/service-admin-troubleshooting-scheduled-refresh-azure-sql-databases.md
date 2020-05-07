@@ -1,5 +1,5 @@
 ---
-title: Fejlfinding i forbindelse med planlagt opdatering af Azure SQL Databases
+title: Fejlfinding af planlagt opdatering af Azure SQL Databases
 description: Fejlfinding i forbindelse med planlagt opdatering af Azure SQL Databases i Power BI
 author: maggiesMSFT
 ms.reviewer: kayu
@@ -11,10 +11,10 @@ ms.author: maggies
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 292f80b4fec7da9ff6ce42e3611bf4d6353bae2d
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74791963"
 ---
 # <a name="troubleshooting-scheduled-refresh-for-azure-sql-databases-in-power-bi"></a>Fejlfinding i forbindelse med planlagt opdatering af Azure SQL Databases i Power BI
@@ -23,7 +23,7 @@ Du kan finde detaljerede oplysninger om opdatering under [Opdater data i Power B
 
 Hvis du får vist en fejl med fejlkoden 400, når du redigerer legitimationsoplysningerne, kan du under konfigurationen af den planlagte opdatering af Azure SQL-database prøve følgende for at konfigurere den relevante firewallregel:
 
-1. Log på [Azure Portal](https://portal.azure.com).
+1. Log på [Azure-portalen](https://portal.azure.com).
 
 1. Gå til den Azure SQL-database, du konfigurerer opdateringen for.
 

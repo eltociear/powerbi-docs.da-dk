@@ -1,5 +1,5 @@
 ---
-title: Brug et eksternt R IDE med Power BI
+title: Brug en ekstern R IDE med Power BI
 description: Du kan starte et eksternt IDE og bruge det med Power BI
 author: davidiseminger
 ms.reviewer: ''
@@ -11,13 +11,13 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 4440db5888eeeab638eab4ea3819107d37bdbdbd
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75223458"
 ---
-# <a name="use-an-external-r-ide-with-power-bi"></a>Brug et eksternt R IDE med Power BI
+# <a name="use-an-external-r-ide-with-power-bi"></a>Brug en ekstern R IDE med Power BI
 Med **Power BI Desktop** kan du bruge dit eksterne R IDE (integreret udviklingsmiljø) til at oprette og afgrænse R scripts og derefter bruge disse scripts i Power BI.
 
 ![](media/desktop-r-ide/r-ide_1a.png)
@@ -60,7 +60,7 @@ Benyt følgende fremgangsmåde for at starte en R-IDE fra **Power BI Desktop**:
    ![](media/desktop-r-ide/r-ide_5.png)
    
    > [!NOTE]
-   > Standardsammenlægningstypen for visuelle R-elementer er *Opsummer ikke*.
+   > Standardsammenlægningstypen for R-visualiseringer er *Opsummer ikke*.
    > 
    > 
 5. Du kan nu starte din R-IDE direkte fra **Power BI Desktop**. Vælg knappen **Start R-IDE**, der findes til højre for titellinjen **R-scripteditor**, som vist nedenfor.
@@ -82,8 +82,8 @@ Start af en R-IDE direkte fra Power BI Desktop har nogle få begrænsninger:
 * Automatisk eksport af dit script fra din R-IDE til **Power BI Desktop** understøttes ikke.
 * **R-klient**-editoren (RGui.exe) understøttes ikke, fordi selve editoren ikke understøtter åbning af filer.
 
-## <a name="next-steps"></a>Næste trin
-Du kan finde yderligere oplysninger om R i Power BI i følgende artikler.
+## <a name="next-steps"></a>De næste trin
+Du kan finde flere oplysninger om R i Power BI i følgende artikler.
 
 * [Kørsel af R-scripts i Power BI Desktop](desktop-r-scripts.md)
 * [Opret visuelle Power BI-elementer ved hjælp af R](desktop-r-visuals.md)

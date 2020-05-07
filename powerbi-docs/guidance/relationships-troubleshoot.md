@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
 ms.openlocfilehash: e2854d82d858bb1963b691d32d561c7b3bbfc11a
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78263639"
 ---
 # <a name="relationship-troubleshooting-guidance"></a>Vejledning til fejlfinding af relationer
@@ -52,10 +52,10 @@ Her er en liste over problemer sammen med mulige løsninger.
 |Sikkerhed på rækkeniveau håndhæves ikke korrekt|– Relationerne overføres ikke mellem tabeller. _Følg tjeklisten ovenfor_<br />– Sikkerhed på rækkeniveau håndhæves, men en tovejsrelation er ikke aktiveret til overførsel. Se [Sikkerhed på rækkeniveau med Power BI Desktop](../desktop-rls.md)|
 |||
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
 - [Modelrelationer i Power BI Desktop](../desktop-relationships-understand.md)
-- Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)

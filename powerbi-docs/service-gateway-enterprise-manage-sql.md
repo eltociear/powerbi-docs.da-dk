@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: c0dc3b9eeb7932ca0cb6784fd6a46857821d1b12
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698112"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Administrer din datakilde – SQL Server
@@ -57,7 +57,7 @@ Når du opretter datakilden, er den tilgængelig til brug med enten DirectQuery-
 > [!NOTE]
 > Server- og databasenavne skal matche mellem Power BI Desktop og datakilden i datagatewayen i det lokale miljø.
 
-Linket mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse navne skal være ens. Hvis du f.eks. angiver en IP-adresse for servernavnet i Power BI Desktop, skal du bruge IP-adressen for datakilden i konfigurationen af gatewayen. Hvis du bruger *SERVER\INSTANCE* i Power BI Desktop, skal du også bruge det i den datakilde, der er konfigureret for gatewayen.
+Forbindelsen mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse navne skal være ens. Hvis du f.eks. angiver en IP-adresse for servernavnet i Power BI Desktop, skal du bruge IP-adressen for datakilden i konfigurationen af gatewayen. Hvis du bruger *SERVER\INSTANCE* i Power BI Desktop, skal du også bruge det i den datakilde, der er konfigureret for gatewayen.
 
 Dette krav gælder både for DirectQuery og planlagt opdatering.
 
@@ -73,12 +73,12 @@ Hvis du er angivet under fanen **Brugere** i den datakilde, der er konfigureret 
 
 ![Visning af brugerne](media/service-gateway-enterprise-manage-sql/powerbi-gateway-enterprise-schedule-refresh.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * [Opret forbindelse til data i det lokale miljø i SQL Server](service-gateway-sql-tutorial.md)
-* [Fejlfinding af datagateway i det lokale miljø](/data-integration/gateway/service-gateway-tshoot)
+* [Fejlfinding af datagateway i lokalt miljø](/data-integration/gateway/service-gateway-tshoot)
 * [Foretag fejlfinding af gateways – Power BI](service-gateway-onprem-tshoot.md)
 * [Brug Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø](service-gateway-sso-kerberos.md)
 
-Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
 

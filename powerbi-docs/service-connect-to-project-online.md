@@ -10,10 +10,10 @@ ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 32d731c354d848809d336392ef51f667b14427d8
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74565693"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Opret forbindelse til Project Web App med Power BI
@@ -27,7 +27,7 @@ Opret forbindelse til [Project Web App-skabelonappen](https://appsource.microsof
 
     ![Hent apps](media/service-connect-to-project-online/GetApps.png)
 
-2. Markér **Hent** i feltet **Tjenester**.
+2. I feltet **Tjenester** skal du vælge **Hent**.
    
    ![AppSource](media/service-connect-to-project-online/AppSource.png)
 3. I AppSource skal du vælge fanen **Apps** og søge/vælge **Microsoft Project Web App**.
@@ -69,7 +69,7 @@ Opret forbindelse til [Project Web App-skabelonappen](https://appsource.microsof
 
 Download [GitHub PBIT-filen](https://github.com/OfficeDev/Project-Power-BI-Content-Packs) for at tilpasse og opdatere indholdspakken yderligere.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Kom i gang med Power BI](service-get-started.md)
 
 [Hent data i Power BI](service-get-data.md)

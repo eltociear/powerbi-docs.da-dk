@@ -10,10 +10,10 @@ ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 0e870163552e64594e574669ed8dea6937633282
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75757709"
 ---
 # <a name="create-and-use-doughnut-charts-in-power-bi"></a>Opret og brug kransediagrammer i Power BI
@@ -32,7 +32,7 @@ I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](https
 
 1. Åbn **PBIX-filen med eksemplet Detailhandelsanalyse** i rapportvisning ![ikon for skærmbillede af rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
+1. Vælg ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
 
 
 ## <a name="create-a-doughnut-chart"></a>Opret et kransediagram
@@ -54,9 +54,9 @@ I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](https
 * Er der for mange kategorier, er det svært at læse og fortolke diagrammet.
 * Kransediagrammer er bedst egnet til at sammenligne en bestemt del med helheden og ikke sammenligne de enkelte dele med hinanden. 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Tragtformede diagrammer i Power BI](power-bi-visualization-funnel-charts.md)
 
-[Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+[Typer af visualiseringer i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 

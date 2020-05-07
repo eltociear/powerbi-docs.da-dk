@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/07/2019
 ms.author: painbar
 ms.openlocfilehash: b84d7a23cf947b18302c761ff5f78143bf3356aa
-ms.sourcegitcommit: 50c4bebd3432ef9c09eacb1ac30f028ee4e66d61
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/12/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73925851"
 ---
 # <a name="configure-power-bi-mobile-app-access-to-report-server-remotely"></a>Konfigurer Power BI-mobilapps eksternt for rapportservere
@@ -43,7 +43,7 @@ I følgende tabel kan du se disse par.
 | com.microsoft.powerbi.mobile.ServerURL-adresse | Streng | URL-adresse til rapportserver <br> Skal starte med http/https |
 | com.microsoft.powerbi.mobile.ServerBrugernavn | Streng | [valgfri] <br> Det brugernavn, der skal bruges til at oprette forbindelse til serveren. <br> Hvis der ikke findes et brugernavn, vil appen bede brugeren skrive brugernavnet til forbindelsen.| 
 | com.microsoft.powerbi.mobile.ServerVist navn | Streng | [valgfri] <br> Standardværdien er "Rapportserver" <br> Et navn, der bruges til at repræsentere serveren i appen | 
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolesk | Standardværdien er True <br>Når værdien er angivet til "True", tilsidesætter den alle eksisterende rapportserverdefinitioner på mobilenheden. Eksisterende servere, der allerede er konfigureret, slettes. <br> Dette forhindrer også, at brugeren kan fjerne konfigurationen. <br> Hvis indstillingen er angivet til “False”, tilføjes de overførte værdier, og eksisterende indstillinger ændres ikke. <br> Hvis den samme URL-adresse allerede er konfigureret i mobilappen, forbliver konfigurationen, som den er. Appen beder ikke brugeren om at godkende igen for den samme server. |
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | Standardværdien er True <br>Når værdien er angivet til "True", tilsidesætter den alle eksisterende rapportserverdefinitioner på mobilenheden. Eksisterende servere, der allerede er konfigureret, slettes. <br> Dette forhindrer også, at brugeren kan fjerne konfigurationen. <br> Hvis indstillingen er angivet til “False”, tilføjes de overførte værdier, og eksisterende indstillinger ændres ikke. <br> Hvis den samme URL-adresse allerede er konfigureret i mobilappen, forbliver konfigurationen, som den er. Appen beder ikke brugeren om at godkende igen for den samme server. |
 
 Her er et eksempel på, hvordan du indstiller konfigurationspolitikken ved hjælp af Intune.
 
@@ -67,11 +67,11 @@ Her er et eksempel på, hvordan du indstiller konfigurationspolitikken ved hjæl
 
 Nu kan de få vist og interagere med KPI'er og Power BI-rapporter på rapportserveren.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Aktivér fjernadgang til Power BI - Mobil med Azure AD-programproxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
 - [Administratoroversigt](admin-handbook-overview.md)  
-- [Installer Power BI-rapportserver](install-report-server.md)  
+- [Installér Power BI-rapportserver](install-report-server.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

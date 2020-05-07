@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 46072ca4c21857476dea6308a891f261109a2388
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73878060"
 ---
 # <a name="multi-select-data-elements-in-visuals-using-power-bi-desktop"></a>Markér flere dataelementer i visualiseringer ved hjælp af Power BI Desktop
@@ -28,7 +28,7 @@ Ved hjælp af markering af flere kan du nu markere mere end ét datapunkt på en
 
 Dette lyder som en simpel egenskab, men det åbner op for et hav af muligheder, når du opretter, deler og interagerer med rapporter. 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du vil måske også være interesseret i følgende artikler:
 

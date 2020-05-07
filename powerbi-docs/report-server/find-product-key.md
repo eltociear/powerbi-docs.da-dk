@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
 ms.openlocfilehash: f6eba8e1138f3c7e934de7152acf52a020c19f07
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73859691"
 ---
 # <a name="how-to-find-your-report-server-product-key"></a>Sådan finder du produktnøglen til din rapportserver
@@ -29,9 +29,9 @@ Hvis du har købt Power BI Premium, finder du produktnøglen til Power BI-rappor
 
 ![Nøgle til Power BI-rapportserver i Premium-indstillinger](media/find-product-key/pbirs-product-key.png)
 
-Når du vælger **Power BI-rapportserver-nøgle**, vises der en dialogboks med din produktnøgle. Du kan kopiere den og bruge den med installationen.
+Når du vælger **Power BI-rapportserver-nøgle**, vises der en dialogboks med din produktnøgle. Du kan kopiere den og bruge den til installationen.
 
-![Produktnøgle til Power BI-rapportserver](media/find-product-key/pbirs-product-key-dialog.png)
+![Power BI Report Server-produktnøgle](media/find-product-key/pbirs-product-key-dialog.png)
 
 ## <a name="purchased-software-assurance-agreement"></a>Har købt en Software Assurance-aftale
 Hvis du har en SQL Server Enterprise SA-aftale, kan du få din produktnøgle fra [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/). Se efter den seneste version af SQL Server under den seneste servicepakke. Hvis du ikke kan se versionen der, skal du se under RTM-frigivelsen af den seneste SQL Server-version.
@@ -43,9 +43,9 @@ Hvis du har en SQL Server Enterprise SA-aftale, kan du få din produktnøgle fra
 
 ![](media/find-product-key/vlsc-download.png "Volume Licensing Service Center")
 
-## <a name="next-steps"></a>Næste trin
-[Installer Power BI-rapportserver](install-report-server.md)  
-[Installer Power BI Desktop optimeret til Power BI-rapportserver](install-powerbi-desktop.md)  
+## <a name="next-steps"></a>De næste trin
+[Installér Power BI-rapportserver](install-report-server.md)  
+[Installér Power BI Desktop optimeret til Power BI Report Server](install-powerbi-desktop.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 

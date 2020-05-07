@@ -10,10 +10,10 @@ ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: cdd4f4f5058b57cbf59a3a0b35286243bd8c8f37
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75731669"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Selvstudium: Opret beregnede kolonner i Power BI Desktop
@@ -129,7 +129,7 @@ Tabellen **Stores** indeholder heldigvis en kolonne ved navn **Status** med vær
 
 Beregnede kolonner kan forbedre vores data og give bedre indsigt. Du har lært at oprette beregnede kolonner på ruden **Felter** og formellinjen, bruge forslagslister og værktøjstip til at hjælpe med at oprette formler, kalde DAX-funktioner som f.eks. RELATED og IF med de korrekte argumenter og bruge beregnede kolonner i rapportvisualiseringer.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Hvis du vil vide mere om DAX-formler og oprette beregnede kolonner med mere avancerede formler, skal du se [Grundlæggende DAX i Power BI Desktop](desktop-quickstart-learn-dax-basics.md). Denne artikel har fokus på de grundlæggende koncepter i DAX, for eksempel syntaks, funktioner og en dybere forståelse af kontekst.
 

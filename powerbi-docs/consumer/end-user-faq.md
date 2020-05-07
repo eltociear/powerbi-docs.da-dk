@@ -10,10 +10,10 @@ ms.date: 02/20/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 9a59f8e230ecd8eec6338e92b7fb01e525831617
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79039974"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Ofte stillede spørgsmål om Power BI
@@ -54,7 +54,7 @@ Hvis din virksomhed har købt Power BI-licenser eller en Premium-kapacitetskonto
 
 Tilmeld dig Power BI-tjenesten som enkeltperson. Se [den selvbetjente tilmeldingsproces til Power BI](../service-self-service-signup-for-power-bi.md)
 
-## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Hvorfor skal jeg logge på med min arbejdsmail?
+## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Hvorfor skal jeg tilmelde mig med min arbejdsmail?
 
 Power BI understøtter ikke mailadresser, der leveres af forbrugermailtjenester eller udbydere af telekommunikation. Få mere at vide om [den selvbetjente tilmeldingsproces til Power BI](../service-self-service-signup-for-power-bi.md).
 
@@ -105,11 +105,11 @@ Få mere at vide om sikkerhed, beskyttelse af personlige oplysninger og overhold
 
 ## <a name="how-do-i-undo-in-power-bi"></a>Hvordan fortryder jeg i Power BI?
 
-Du kan som i mange andre Microsoft-tjenester og -software benytte en nem måde at fortryde din sidste kommando i Power BI.
+Som mange andre Microsoft-tjenester og -software giver Power BI en nem måde at fortryde den seneste kommando på.
 
 * For at **fortryde** din seneste handling, eller de seneste par handlinger, skal du trykke på CTRL+Z.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * [Hvad er en Power BI-forbruger?](end-user-consumer.md)
 * [Hvordan benytter en forbruger Power BI?](end-user-reading-view.md)

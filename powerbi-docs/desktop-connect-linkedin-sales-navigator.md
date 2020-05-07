@@ -10,10 +10,10 @@ ms.date: 11/11/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: cd952dfa690d079d662f09e1e01c34dadf129b7b
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74565627"
 ---
 # <a name="connect-to-linkedin-sales-navigator-in-power-bi-desktop"></a>Opret forbindelse til LinkedIn Sales Navigator i Power BI Desktop
@@ -79,8 +79,8 @@ Du kan downloade **LinkedIn Sales Navigator**-skabelonappen fra følgende link:
 
 Skabelonappen indeholder fire faner, der kan hjælpe dig med at analysere og dele dine oplysninger:
 
-* Forbrug
-* Søg
+* Brug
+* Search
 * InMail
 * SSI
 
@@ -116,8 +116,8 @@ Når dataene er opdateret, kan du se, at appen er udfyldt med dine egne data.
 
 Hvis du støder på problemer, når du opretter forbindelse til dine data, kan du kontakte support til LinkedIn Sales Navigator på https://www.linkedin.com/help/sales-navigator. 
 
-## <a name="next-steps"></a>Næste trin
-Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
+## <a name="next-steps"></a>De næste trin
+Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Hvis du vil have mere at vide om datakilder, kan du se følgende ressourcer:
 
 * [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)

@@ -10,10 +10,10 @@ ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: f3c1f047e3be7520005458294381877d1198ee21
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73878619"
 ---
 # <a name="expression-based-titles-in-power-bi-desktop"></a>Udtryksbaserede titler i Power BI Desktop
@@ -70,7 +70,7 @@ Der er nogle få begrænsninger for den aktuelle implementering af udtryksbasere
 * Det felt, du opretter til titlen, skal være en strengdatatype. Målinger, der returnerer tal eller dato/klokkeslæt (eller andre datatyper), understøttes ikke i øjeblikket.
 * Udtryksbaserede titler overføres ikke, når du fastgør en visualisering til et dashboard.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Denne artikel beskrev, hvordan du opretter DAX-udtryk, der ændrer titlerne på dine visuelle elementer til dynamiske felter, der kan ændres, når brugere interagerer med dine rapporter. Følgende artikler kan også være nyttige.
 

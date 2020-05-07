@@ -10,10 +10,10 @@ ms.date: 03/02/2017
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 1ed588b0ca183e090d12f9aa0df23460a6037ed4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872206"
 ---
 # <a name="optimize-your-data-for-power-bi-quick-insights"></a>Optimer dine data til Power BI Quick Insights
@@ -24,7 +24,7 @@ Vil du forbedre Quick Insights-resultater?  Hvis du er ejer af datasæt, skal du
 * Undgå (eller skjul) kolonner med duplikerede oplysninger.  Dette tager værdifuld tid fra søgning efter mønstre, der giver mere mening.  Eksempelvis en kolonne med delstatsnavne skrevet ud og en anden kolonne med forkortede delstatsnavne.
 * Modtager du en fejlmeddelelse, der angiver, at dine data ikke er statistisk signifikante?  Dette kan ske med modeller, der er meget simple, eller som ikke indeholder mange data, eller som ikke har dato- eller numeriske kolonner.
 
-### <a name="next-steps"></a>Næste trin
+### <a name="next-steps"></a>De næste trin
 [Power BI Quick Insights](consumer/end-user-insights.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

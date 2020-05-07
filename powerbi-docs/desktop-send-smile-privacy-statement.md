@@ -10,15 +10,15 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 39fa082133b519feab004f475110a3a701ff085c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73876110"
 ---
 # <a name="power-bi-desktop-send-a-smile-privacy-statement"></a>Erklæring om beskyttelse af personlige oplysninger for Send en smiley i Power BI Desktop
 
-Fra og med marts 2018-versionen af **Power BI Desktop** gøres der brug af platformen Windows Fejlrapportering i forbindelse med fejlrapportering i stedet for funktionaliteten *Send en smiley* eller *Send en sur smiley*. Du kan finde flere oplysninger om platformen Windows Fejlrapportering på [bloggen om beskyttelse af personlige oplysninger i Windows](https://blogs.windows.com/windowsexperience/2018/01/24/microsoft-introduces-new-privacy-tools-ahead-of-data-privacy-day/). 
+Fra og med marts 2018-versionen af **Power BI Desktop** gøres der brug af platformen Windows Fejlrapportering i forbindelse med fejlrapportering i stedet for funktionaliteten *Send et smil* eller *Send et lidt trist ansigt*. Du kan finde flere oplysninger om platformen Windows Fejlrapportering på [bloggen om beskyttelse af personlige oplysninger i Windows](https://blogs.windows.com/windowsexperience/2018/01/24/microsoft-introduces-new-privacy-tools-ahead-of-data-privacy-day/). 
 
 ## <a name="for-versions-of-power-bi-desktop-prior-to-march-2018"></a>Versioner af Power BI Desktop fra før marts 2018
 

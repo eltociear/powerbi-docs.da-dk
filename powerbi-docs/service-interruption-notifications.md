@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 04/17/2020
 ms.author: kfollis
 ms.openlocfilehash: 85b26b68c4943e0bc100be7a298730cec34cfc78
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637760"
 ---
 # <a name="service-interruption-notifications"></a>Meddelelser om tjenesteafbrydelser
@@ -51,7 +51,7 @@ En administrator af Power BI-lejeren aktiverer meddelelser på administrationspo
 > [!NOTE]
 > Power BI sender meddelelser fra kontoen no-reply-powerbi@microsoft.com. Sørg for, at denne konto er anført på hvidlisten, så meddelelserne ikke ender i en spammappe eller en mappe med uønsket post.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Supportmuligheder til Power BI Pro og Power BI Premium](service-support-options.md)
 

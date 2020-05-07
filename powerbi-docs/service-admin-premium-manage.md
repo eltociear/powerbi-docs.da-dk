@@ -1,6 +1,6 @@
 ---
 title: Konfigurer og administrer kapaciteter i Power BI Premium
-description: Få mere at vide om, hvordan du kan administrere Power BI Premium og give adgang til indhold for hele organisationen.
+description: Få mere at vide om, hvordan du kan administrere Power BI Premium og give adgang til indhold til hele organisationen.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 04/17/2020
 LocalizationGroup: Premium
 ms.openlocfilehash: 9dbbf38b69d71811de4dd599951529234068b178
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637915"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Konfigurer og administrer kapaciteter i Power BI Premium
@@ -153,19 +153,19 @@ Du kan også tildele et arbejdsområde til en Premium-kapacitet fra det pågæld
 
 Når arbejdsområdet er gemt, flyttes det og al dets indhold til Premium-kapacitet, uden at slutbrugerne oplever nogen tjenesteafbrydelser.
 
-## <a name="power-bi-report-server-product-key"></a>Produktnøgle til Power BI-rapportserver
+## <a name="power-bi-report-server-product-key"></a>Power BI Report Server-produktnøgle
 
 På fanen **Kapacitetsindstillinger** i Power BI-administratorportalen kan du få adgang til produktnøglen til Power BI-rapportserver. Den kan kun tilgås af globale administratorer eller brugere tildelt Power BI-tjenesteadministratorrollen, og hvis man har erhvervet et Power BI Premium-varenummer.
 
 ![Power BI Report Server-nøgle i kapacitetsindstillinger](media/service-admin-premium-manage/pbirs-product-key.png)
 
-Når du vælger **Power BI Report Server-nøgle** vises en dialogboks med din produktnøgle. Du kan kopiere den og bruge den med installationen.
+Når du vælger **Power BI-rapportserver-nøgle**, vises der en dialogboks med din produktnøgle. Du kan kopiere den og bruge den til installationen.
 
 ![Power BI Report Server-produktnøgle](media/service-admin-premium-manage/pbirs-product-key-dialog.png)
 
 Du kan finde flere oplysninger under [Installér Power BI-rapportserveren](report-server/install-report-server.md).
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Administration af Premium-kapaciteter](service-premium-capacity-manage.md)
 

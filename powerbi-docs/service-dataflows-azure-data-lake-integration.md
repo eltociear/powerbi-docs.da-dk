@@ -10,13 +10,13 @@ ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 5b13fdc1f65fe2650ea0fb4fee1be20611ac3e8b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73877312"
 ---
-# <a name="dataflows-and-azure-data-lake-integration-preview"></a>Integration af dataflow og Azure Data Lake (prøveversion)
+# <a name="dataflows-and-azure-data-lake-integration-preview"></a>Integration af dataflow og Azure Data Lake (eksempelvisning)
 
 Som standard gemmes data, der bruges med Power BI, i et internt lager, der leveres af Power BI. Med integrationen af dataflow og Azure Data Lake Storage Gen2 (ADLS Gen2) kan du gemme dine dataflow på din organisations Azure Data Lake Storage Gen2-konto. 
 
@@ -70,7 +70,7 @@ Personer eller tjenester uden for Power BI kan også gøre brug af alternative f
 ).
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Denne artikel indeholdt en oversigt over integration af Power BI-dataflow, CDM-mapper og Azure Data Lake Storage Gen2. Du kan finde flere oplysninger i følgende artikler:
 
@@ -78,7 +78,7 @@ Du kan finde flere oplysninger om dataflow, CDM og Azure Data Lake Storage Gen2 
 
 * [Konfigurer indstillinger for dataflow for et arbejdsområde (prøveversion)](service-dataflows-configure-workspace-storage-settings.md)
 * [Føj en CDM-mappe til Power BI som et dataflow (prøveversion)](service-dataflows-add-cdm-folder.md)
-* [Slut Azure Data Lake Storage Gen2 til et dataflowlager (prøveversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
+* [Opret forbindelse til Azure Data Lake Storage Gen2 til dataflowlager (eksempelvisning)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 Du kan finde generelle oplysninger om dataflow i disse artikler:
 
@@ -94,6 +94,6 @@ Du kan finde flere oplysninger om Azure-lager i disse artikler:
 Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:
 * [Common Data Model – oversigt](https://docs.microsoft.com/powerapps/common-data-model/overview)
 * [CDM-mapper](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [Fildefinition af CDM-model](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Definition af CDM-modelfil](https://go.microsoft.com/fwlink/?linkid=2045521)
 
 Du kan altid prøve [at stille spørgsmål i Power BI-community'et](https://community.powerbi.com/).

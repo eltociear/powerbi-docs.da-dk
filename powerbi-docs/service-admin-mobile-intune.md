@@ -10,10 +10,10 @@ ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
 ms.openlocfilehash: 2f2c0b2c6ba4d991dd6293b435acc07659013f5b
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698503"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Konfiguration af mobilapps med Microsoft Intune
@@ -105,7 +105,7 @@ Du kan oprette programmet eller politikken først. Det har ingen betydning, i hv
 
 1. Angiv URL-adressen for appen, som vi hentede under [Trin 1](#step-1-get-the-url-for-the-application), og vælg **Næste**.
 
-    ![Programinstallation: Android](media/service-admin-mobile-intune/intune-add-software-android1.png)
+    ![Softwareinstallation: Android](media/service-admin-mobile-intune/intune-add-software-android1.png)
 
 1. Angiv en **Udgiver**, et **Navn** og en **Beskrivelse**. Du kan vælge at angive et **Ikon**. **Kategori** er til appen Firmaportal. Når du er færdig, skal du vælge **Næste**.
 
@@ -184,7 +184,7 @@ Du installerer programmet via appen *Firmaportal*. Hvis du ikke har installeret 
 
     ![Angiv pinkode](media/service-admin-mobile-intune/intune-powerbi-pin.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Konfigurer og udrul politikker for administration af mobilapps i Microsoft Intune-konsollen](/intune/app-protection-policies/)  
 

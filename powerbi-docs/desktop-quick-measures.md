@@ -11,10 +11,10 @@ ms.date: 11/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 4e5ea5e5fcbffb5c61434ecc26a90d80d1cd1736
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74415375"
 ---
 # <a name="use-quick-measures-for-common-calculations"></a>Brug hurtigmålinger til almindelige beregninger
@@ -53,14 +53,14 @@ De fem beregningstyper for hurtigmåling med deres beregninger er følgende:
   * Total for måned til dato
   * Ændring år for år
   * Ændring kvartal for kvartal
-  * Ændring måned for måned
+  * Månedsvis ændring
   * Glidende gennemsnit
 * **Totaler**
   * Løbende total
   * I alt for kategori (filtre anvendt)
   * I alt for kategori (filtre ikke anvendt)
 * **Matematiske funktioner**
-  * Tilføjelse
+  * Addition
   * Subtraktion
   * Multiplikation
   * Division
@@ -134,5 +134,5 @@ Der er nogle få begrænsninger og overvejelser, du skal være opmærksom på.
 Du kan bruge dine egne brugerdefinerede datotabeller med hurtigmålinger for time intelligence. Hvis du bruger en ekstern model i tabelformat, skal du sikre dig, at den primære datokolonne i tabellen blev markeret som en datotabel, som beskrevet i [Angiv mærke som datotabel, der skal bruges sammen med time intelligence](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular), da den blev bygget. Hvis du importerer din egen datotabel, skal du sørge for at markere den som en datotabel, som beskrevet i [Angiv og brug datotabeller i Power BI Desktop](desktop-date-tables.md).
 
 ### <a name="additional-information-and-examples"></a>Yderligere oplysninger og eksempler
-Har du en idé til en hurtigmåling, som ikke allerede findes? Fantastisk! Se siden med [idéer til Power BI](https://go.microsoft.com/fwlink/?linkid=842906), og send dine idéer og DAX-formler til de hurtigmålinger, du godt kunne tænke dig i Power BI Desktop. Vi vil overveje at føje dem til listen over hurtigmålinger i en fremtidig version.
+Har du en idé til en hurtigmåling, som ikke allerede findes? Fint. Se siden med [idéer til Power BI](https://go.microsoft.com/fwlink/?linkid=842906), og send dine idéer og DAX-formler til de hurtigmålinger, du godt kunne tænke dig i Power BI Desktop. Vi vil overveje at føje dem til listen over hurtigmålinger i en fremtidig version.
 

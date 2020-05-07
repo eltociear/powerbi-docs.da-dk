@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: 100417202fca148be0e2e976ce0cd84167c803d9
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74958424"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Opdater data fra en lokal SQL Server-database
@@ -46,7 +46,7 @@ Benyt følgende procedure til at oprette en grundlæggende Power BI-rapport ved 
 
 1. I Power BI Desktop på fanen **Start** skal du vælge **Hent data** \> **SQL Server**.
 
-2. I dialogboksen **SQL Server-database** skal du angive navnet på din **Server** og **Database (valgfrit)**. Sørg for, at **Dataforbindelsestilstand** er **Import**, og vælg derefter **OK**.
+2. I dialogboksen **SQL Server-database** skal du angive navnet på din **Server** og **Database (valgfrit)** . Sørg for, at **Dataforbindelsestilstand** er **Import**, og vælg derefter **OK**.
 
     ![SQL Server-database](./media/service-gateway-sql-tutorial/sql-server-database.png)
 
@@ -75,7 +75,7 @@ Benyt følgende procedure til at oprette en grundlæggende Power BI-rapport ved 
 
 5. Træk **EndDate** til **Filtre på rapportniveau**, og markér kun afkrydsningsfeltet for **(Tom)** under **Grundlæggende filtrering**.
 
-    ![Filtre på rapportniveau](./media/service-gateway-sql-tutorial/report-level-filters.png)
+    ![Filtre på rapporteringsniveau](./media/service-gateway-sql-tutorial/report-level-filters.png)
 
     Diagrammet bør nu se ud som i det følgende.
 
@@ -103,7 +103,7 @@ Du har oprettet forbindelse direkte til din lokale SQL Server-database i Power B
 
 3. Udvid **Gatewayforbindelse**, og bekræft, at der er angivet mindst én gateway. Hvis du ikke har en gateway, kan du gå tilbage til afsnittet [Forudsætninger](#prerequisites) tidligere i dette selvstudium for at få et link til produktdokumentationen, der beskriver, hvordan du installerer og konfigurerer en gateway.
 
-    ![Gatewayforbindelse](./media/service-gateway-sql-tutorial/gateway-connection.png)
+    ![Gateway-forbindelse](./media/service-gateway-sql-tutorial/gateway-connection.png)
 
 4. Under **Handlinger** skal du udvide til/fra-knappen for at få vist datakilderne og derefter vælge linket **Føj til gateway**.
 
@@ -134,7 +134,7 @@ Du har oprettet forbindelse direkte til din lokale SQL Server-database i Power B
 
 Nu, hvor du har forbundet dit datasæt i Power BI til din SQL Server-database i det lokale miljø via en datagateway, skal du følge disse trin for at konfigurere en tidsplan for opdatering. Opdatering af datasættet efter en tidsplan hjælper med at sikre, at dine rapporter og dashboards indeholder de nyeste data.
 
-1. I navigationsruden til venstre skal du vælge **Mit arbejdsområde** \> **Datasæt**. Vælg ellipsen (**. . .**) for datasættet **AdventureWorksProducts**, og vælg derefter **Planlæg opdatering**.
+1. I navigationsruden til venstre skal du vælge **Mit arbejdsområde** \> **Datasæt**. Vælg ellipsen ( **. . .** ) for datasættet **AdventureWorksProducts**, og vælg derefter **Planlæg opdatering**.
 
     > [!NOTE]
     > Sørg for at vælge ellipsen for datasættet **AdventureWorksProducts** og ikke ellipsen for rapporten med det samme navn. Genvejsmenuen for rapporten **AdventureWorksProducts** indeholder ikke indstillingen **Planlæg opdatering**.
@@ -168,7 +168,7 @@ Følg nu disse trin, så de opdaterede data kan bevæge sig gennem gatewayforbin
 
 1. Vælg og udvid **Mit arbejdsområde** i navigationsruden i Power BI-tjenesten.
 
-2. Under **Datasæt** skal du vælge ellipsen (**. . .**) for datasættet **AdventureWorksProducts** og derefter vælge **Opdater nu**.
+2. Under **Datasæt** skal du vælge ellipsen ( **. . .** ) for datasættet **AdventureWorksProducts** og derefter vælge **Opdater nu**.
 
     ![Opdater nu](./media/service-gateway-sql-tutorial/refresh-now.png)
 

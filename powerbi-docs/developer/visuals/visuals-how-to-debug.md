@@ -9,10 +9,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 02/14/2020
 ms.openlocfilehash: 9469127ea28b0370edebd4c044bd929ff22c488f
-ms.sourcegitcommit: 1f768dfef27cd8887318671f91427f72d02370c6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81675703"
 ---
 # <a name="how-to-debug-power-bi-visuals"></a>Sådan foretager du fejlfinding af Power BI-visualiseringer
@@ -89,6 +89,6 @@ Du kan også indstille browseren til at afbryde ved opfangede undtagelser. Dette
 
 ![Datarollefelter](media/visuals-how-to-debug/how-to-debug-chrome.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Foretag fejlfinding af Power BI-visualiseringer](power-bi-custom-visuals-troubleshoot.md)
 * Du kan finde flere oplysninger og få svar på spørgsmål i [Ofte stillede spørgsmål om Power BI-visualiseringer](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)
