@@ -1,6 +1,6 @@
 ---
 title: Installér Power BI-rapportserver
-description: Find ud af, hvordan du installerer Power BI-rapportserver.
+description: Find ud af, hvordan du installerer Power BI Report Server.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -9,15 +9,15 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/16/2020
 ms.openlocfilehash: 0b57ec084477955086b3d1bb0acd0a3139d325c6
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76160598"
 ---
 # <a name="install-power-bi-report-server"></a>Installér Power BI-rapportserver
 
-Find ud af, hvordan du installerer Power BI-rapportserver.
+Find ud af, hvordan du installerer Power BI Report Server.
 
 ## <a name="download-power-bi-report-server"></a>Download Power BI-rapportserver
 
@@ -32,7 +32,7 @@ Vi anbefaler, at du læser [Hardware- og softwarekrav til installation af Power 
  > [!IMPORTANT]
  > Du kan installere Power BI-rapportserver i et miljø med en skrivebeskyttet domænecontroller (RODC), men Power BI-rapportserver skal have adgang til domænecontroller med læse-/skriveadgang for at fungere korrekt. Hvis Power BI-rapportserver kun har adgang til en skrivebeskyttet domænecontroller, kan der opstå fejl under forsøg på at administrere tjenesten.
 
-### <a name="power-bi-report-server-product-key"></a>Produktnøgle til Power BI-rapportserver
+### <a name="power-bi-report-server-product-key"></a>Power BI Report Server-produktnøgle
 
 Du kan få produktnøglen til Power BI-rapportserver fra to forskellige kilder:
 
@@ -47,9 +47,9 @@ Hvis du har købt Power BI Premium, har du på fanen **Premium-indstillinger** i
 
 ![Premium-indstillinger](../report-server/media/install-report-server/pbirs-product-key.png "Nøgle til Power BI-rapportserver i Premium-indstillinger")
 
-Når du vælger **Power BI-rapportserver-nøgle**, vises en dialogboks med din produktnøgle. Du kan kopiere den og bruge den med installationen.
+Når du vælger **Power BI-rapportserver-nøgle**, vises en dialogboks med din produktnøgle. Du kan kopiere den og bruge den til installationen.
 
-![Produktnøgle](../report-server/media/install-report-server/pbirs-product-key-dialog.png "Produktnøgle til Power BI-rapportserver")
+![Produktnøgle](../report-server/media/install-report-server/pbirs-product-key-dialog.png "Power BI Report Server-produktnøgle")
 
 #### <a name="sql-server-enterprise-software-assurance-sa"></a>SQL Server Enterprise Software Assurance (SA)
 
@@ -148,11 +148,11 @@ Hvis du tilgår rapportserveren fra en fjerncomputer, skal du sikre dig, at du h
 * Hvis du vil konfigurere webportalen, så du kan få adgang til den på en computer for at få vist og administrere rapporter, skal du se [Konfigurer en firewall til rapportserveradgang](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access) og [Konfigurer en rapportserver til fjernadministration](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-for-remote-administration).
 * Du kan finde flere oplysninger om, hvordan du angiver egenskaber for Report Server-systemet i SQL Server Management Studio, på [siden med avancerede serveregenskaber](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services). Medmindre andet er angivet, gælder indstillingerne for både Power BI-rapportserver og SQL Server Reporting Services.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Administratoroversigt](admin-handbook-overview.md)  
 [Sådan finder du produktnøglen til din rapportserver](find-product-key.md)  
-[Installer Power BI Desktop optimeret til Power BI-rapportserver](install-powerbi-desktop.md)  
+[Installér Power BI Desktop optimeret til Power BI Report Server](install-powerbi-desktop.md)  
 [Bekræft installationen af Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 [Konfigurer kontoen til rapportservertjenesten](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 [Konfigurer rapportserverens URL-adresser](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
@@ -160,6 +160,6 @@ Hvis du tilgår rapportserveren fra en fjerncomputer, skal du sikre dig, at du h
 [Initialiser en rapportserver](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server)  
 [Konfigurer SSL-forbindelser på en rapportserver](https://docs.microsoft.com/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)  
 [Konfigurer Windows-tjenestekonti og -tilladelser](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
-[Browserunderstøttelse af Power BI Report Server](browser-support.md)
+[Browserunderstøttelse af Power BI-rapportserver](browser-support.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

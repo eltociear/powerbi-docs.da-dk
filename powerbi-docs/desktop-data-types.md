@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 281cb03e8d22688b23970c66b0fbc5a5bec1e15d
-ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
+ms.openlocfilehash: f689ba79f9cce7d6ee815e0712491e7d00647fe8
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82584760"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841658"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 I denne artikel beskrives de datatyper, der understøttes i Power BI Desktop, og DAX-udtryk (Data Analysis Expressions). 
@@ -79,10 +79,11 @@ Power BI Desktop understøtter fem dato/klokkeslæt-datatyper i forespørgselsvi
 Den binære datatype kan bruges til at repræsentere andre data med et binært format. Du kan bruge den i Forespørgselseditoren, når du indlæser binære filer, hvis du konverterer datatypen til andre datatyper, før du indlæser den i en Power BI-model. Binære kolonner understøttes ikke i Power BI-datamodellen. Datatypen findes i menuerne Datavisning og Rapportvisning af hensyn til ældre funktioner, men hvis du forsøger at indlæse binære kolonner i Power BI-modellen, kan du støde på fejl.
 
 
+
+
 > [!NOTE]
 >  Hvis en binær kolonne er i outputtet i et forespørgselstrin, kan det medføre fejl, hvis du forsøger at opdatere dataene via en gateway. Det anbefales, at du eksplicit fjerner alle binære kolonner som det sidste trin i dine forespørgsler.    
 > 
->
 
 ### <a name="table-data-type"></a>Tabeldatatype
 DAX bruger en tabeldatatype i mange funktioner, f.eks sammenlægninger og time intelligence-beregninger. Nogle funktioner kræver en reference til en tabel, andre funktioner returnerer en tabel, der kan bruges som input til andre funktioner. I nogle funktioner, der kræver en tabel som input, kan du angive et udtryk, der evaluerer til en tabel. For visse funktioner er en reference til en basistabel påkrævet. Du kan finde oplysninger om kravene i bestemte funktioner i [DAX-funktionsreference](https://msdn.microsoft.com/library/ee634396.aspx).

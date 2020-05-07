@@ -9,10 +9,10 @@ ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 13b9e37d4a64493dfdcac02d9df86a1e19a1c24b
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921165"
 ---
 # <a name="report-design-tips-in-power-bi-report-builder"></a>Tip til rapportdesign i Power BI Report Builder
@@ -20,7 +20,7 @@ ms.locfileid: "78921165"
   
    
   
-##  <a name="DesigningReports"></a> Design af rapporter  
+##  <a name="designing-reports"></a><a name="DesigningReports"></a> Design af rapporter  
   
 -   En veldesignet rapport indeholder oplysninger, der fører til handling. Identificer de spørgsmål, som rapporten skal hjælpe med at besvare. Husk på disse spørgsmål, når du designer rapporten.  
   
@@ -36,7 +36,7 @@ ms.locfileid: "78921165"
   
  Du kan finde flere oplysninger om ting, du skal overveje, når du designer din rapport, i [Planlægning af en rapport i Report Builder](report-builder-planning-report.md).  
   
-##  <a name="NamingConventions"></a> Navngivningskonventioner for rapporter, datasæt og datakilder  
+##  <a name="naming-conventions-for-reports-data-sources-and-datasets"></a><a name="NamingConventions"></a> Navngivningskonventioner for rapporter, datasæt og datakilder  
   
 -   Brug navngivningskonventioner for datakilder og datasæt, der dokumenterer datakilden.  
   
@@ -44,7 +44,7 @@ ms.locfileid: "78921165"
   
     2.  **Datasæt.** Brug et navn, der angiver, hvilken datakilde den er baseret på.  
   
-##  <a name="Data"></a> Arbejde med data  
+##  <a name="working-with-data"></a><a name="Data"></a> Arbejde med data  
   
 -   Det første trin er at få alle de data, du vil arbejde med, vist i ruden Rapportdata. I takt med at du finjusterer de spørgsmål, som rapporten er designet til at besvare, skal du tænke på, hvordan du vil begrænse dataene i rapportens datasæt, så der kun er det, der er behov for.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "78921165"
   
 -   Afhængigt af dine krav kan du vise navne og placeringer for rapportdatakilder, kommandotekst for forespørgslen for datasættet og parameterværdier i rapporten. Det første spørgsmål, som mange nye brugere stiller, handler om, hvor dataene kommer fra. Du kan skjule tekstfelter med denne type oplysninger betinget for at reducere rodet i rapporten og lade brugerne vælge, om de vil se dem. Prøv at tilføje disse oplysninger på den sidste side i rapporten. Angiv synligheden af tekstfeltet på baggrund af en parameter, som brugeren kan ændre.  
   
-##  <a name="DesignSurface"></a> Interaktion med rapportdesignområdet  
+##  <a name="interacting-with-the-report-design-surface"></a><a name="DesignSurface"></a> Interaktion med rapportdesignområdet  
  Rapportdesignområdet er ikke WYSIWIG. Når du placerer rapportelementer i designområdet, påvirker deres relative placering den måde, elementerne vises på, på den gengivne rapportside. Blanktegn bevares.  
   
 -   Brug fastgørelseslinjer og layout til at justere og arrangere elementer i rapportdesignområdet. Du kan f.eks. justere toppen eller kanterne af de valgte elementer, udvide et element, så det passer til størrelsen på et andet element, eller justere afstanden mellem elementerne.  
@@ -77,7 +77,7 @@ ms.locfileid: "78921165"
   
 -   Hvis du vil trække felter fra ruden Rapportdata til ruden Gruppering, skal du undgå at trække feltet på tværs af andre rapportelementer i designområdet, da dette markerer de andre elementer og fjerner tablixdataområdet. Træk feltet ned i ruden Rapportdata og derefter på tværs af ruden Gruppering.  
   
-###  <a name="Selecting"></a> Valg af elementer  
+###  <a name="selecting-items"></a><a name="Selecting"></a> Valg af elementer  
  Du markerer det ønskede objekt i rapportdesignområdet ved hjælp af ESC-tasten ved at højreklikke i kontekstmenuen, ved hjælp af ruden Egenskaber eller ruden Gruppering.  
   
 -   -   Tryk på ESC for at gennemse stakken af rapportelementer, der optager den samme plads i designområdet.  
@@ -89,31 +89,31 @@ ms.locfileid: "78921165"
     -   Hvis du vil arbejde med rækkegrupper og kolonnegrupper i et tablixdataområde, skal du vælge gruppen i ruden Gruppering.  
 
   
-##  <a name="ReportItems"></a> Arbejde med bestemte typer rapportelementer  
+##  <a name="working-with-specific-types-of-report-items"></a><a name="ReportItems"></a> Arbejde med bestemte typer rapportelementer  
   
-###  <a name="Parameters"></a> Arbejde med parametre  
+###  <a name="working-with-parameters"></a><a name="Parameters"></a> Arbejde med parametre  
   
 -   Det primære formål med rapportparametre er at filtrere data på datakilden og kun hente det, der er nødvendigt til rapportens formål.  
   
 -   Find en balance mellem at aktivere interaktivitet og hjælpe en bruger med at få de resultater, der vil have, for rapportparametre. Du kan f.eks. angive standardværdier for en parameter til værdier, som du ved er populære.  
   
-###  <a name="Text"></a> Arbejde med tekst  
+###  <a name="working-with-text"></a><a name="Text"></a> Arbejde med tekst  
   
 -   Når du indsætter flere linjer i et tekstfelt, tilføjes teksten som én tekstkørsel. Hver tekstkørsel kan kun formateres som en enhed. Hvis du vil formatere hver linje uafhængigt af hinanden, skal du indsætte en ny linje ved at trykke på RETURN i tekstkørslen efter behov. Du kan derefter anvende formatering og typografier på hver linje uafhængigt af teksten i tekstfeltet.  
   
 -   Du kan angive formategenskaber og handlinger for et tekstfelt eller pladsholdertekst i tekstfeltet. Hvis der kun er én linje med tekst, er det mere effektivt at angive egenskaberne for tekstfelt end for teksten.  
   
-###  <a name="Expressions"></a> Arbejde med udtryk  
+###  <a name="working-with-expressions"></a><a name="Expressions"></a> Arbejde med udtryk  
   
 -   Forstå formaterne af simple og komplekse udtryk. Du kan skrive formatet af simple udtryk direkte i tekstfelter, egenskaber i ruden Egenskab eller på steder i dialogbokse, der accepterer et udtryk.
   
 -   Når du opretter et udtryk, hjælper det at oprette hver del uafhængigt af hinanden og kontrollere dens værdi. Du kan derefter kombinere alle dele i et færdigt udtryk. En nyttig teknik er at tilføje et tekstfelt i en matrixcelle, vise hver del af udtrykket og angive betinget synlighed for tekstfeltet. For at styre kanttype og farven, når tekstfeltet er skjult, skal du først placere tekstfeltet i et rektangel og derefter angive kanttypen og farven på rektanglet, så de passer til matrixen.  
   
-###  <a name="Indicators"></a> Arbejde med indikatorer  
+###  <a name="working-with-indicators"></a><a name="Indicators"></a> Arbejde med indikatorer  
   
 -   En indikator viser som standard mindst tre tilstande. Når du har føjet en indikator til en rapport, kan du konfigurere den ved at tilføje eller fjerne tilstande. Vælg en indikator, der varierer både i farve og form, for at gøre den lettere at se for brugerne.  
   
-##  <a name="Rendering"></a> Styring af gengivelse af rapportelementer på rapportsiden  
+##  <a name="controlling-the-rendering-of-report-items-on-the-report-page"></a><a name="Rendering"></a> Styring af gengivelse af rapportelementer på rapportsiden  
   
 -   Rapportelementer udvides i rapportdesignområdet for at passe til indholdet fra det tilknyttede datasæt eller udtryk eller den tilknyttede underrapport eller tekst.  
   
@@ -145,6 +145,6 @@ ms.locfileid: "78921165"
 
  Kombinationen af denne funktionsmåde, egenskaberne for bredde og højde af rapportelementer, størrelsen af rapportens brødtekst, definitionen af højde og bredde for siden, margenindstillingerne for den overordnede rapport og understøttelse af specifik gengivelse for sider bestemmer alt sammen, hvilke rapportelementer der passer sammen på en gengivet side.
  
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)  

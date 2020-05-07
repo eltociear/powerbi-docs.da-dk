@@ -11,10 +11,10 @@ ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: b2a05f3112a9272d5e41cff20729c445c7a0ae39
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76038558"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Opdater et datasæt, der er gemt på OneDrive eller SharePoint Online
@@ -39,7 +39,7 @@ Power BI understøtter **Opdater** og **Planlæg opdatering** for de datasæt, d
 > [!NOTE]
 > Onedrive-opdatering af datasæt med direkte forbindelse understøttes. Ændring af datasættet med direkte forbindelse fra ét datasæt til et andet i en rapport, der allerede er udgivet, understøttes dog ikke i scenariet OneDrive-opdatering.
 
-### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personlig
+### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
 * Alle onlinedatakilder, der vises i **Hent data** og **Forespørgselseditor** i Power BI Desktop.
 * Alle datakilder i det lokale miljø, der vises i **Hent data** og **Forespørgselseditor** i Power BI Desktop, undtagen Hadoop-fil (HDFS) og Microsoft Exchange.
 
@@ -81,5 +81,5 @@ Nogle gange går opdateringen af data muligvis ikke som forventet. Du støder ty
 
 [Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
 

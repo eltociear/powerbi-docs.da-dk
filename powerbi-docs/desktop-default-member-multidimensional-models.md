@@ -10,10 +10,10 @@ ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: ea60400a4522dd496e19d508f13760581c0b2620
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761243"
 ---
 # <a name="work-with-multidimensional-models-in-power-bi"></a>Arbejd med flerdimensionelle modeller i Power BI
@@ -100,7 +100,7 @@ Power BI rydder ikke et **standardmedlem** for en given kolonne, hvis:
 * Kolonnen er oven over en anden kolonne i ARP'en, og Power BI har et filterkort for den pågældende kolonne i standardtilstand.
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 I denne artikel beskrives funktionsmåden for Power BI, når du arbejder med standardmedlemmer i flerdimensionelle modeller. Du vil måske også være interesseret i følgende artikler: 
 

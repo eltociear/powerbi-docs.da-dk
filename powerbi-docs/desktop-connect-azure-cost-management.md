@@ -11,10 +11,10 @@ ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: ed6832bd92ca2bea0d64bbaeb41569b6a8fb6ddc
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77026686"
 ---
 # <a name="create-visuals-and-reports-with-the-azure-cost-management-connector-in-power-bi-desktop"></a>Opret visualiseringer og rapporter med Azure Cost Management-connectoren i Power BI Desktop
@@ -100,7 +100,7 @@ Når du vælger **Indlæs**, indlæses dataene i Power BI Desktop.
 Når de markerede data er indlæst, vises de tabeller og felter, som du har valgt, i ruden **Felter**.
 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan oprette forbindelse til mange forskellige datakilder ved hjælp af Power BI Desktop. Du kan få flere oplysninger i følgende artikler:
 

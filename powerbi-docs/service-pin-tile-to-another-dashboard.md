@@ -10,10 +10,10 @@ ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 8e0c598d02b808e997bf0c1f47322e132860100c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73881226"
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Fastgør et felt fra ét dashboard til et andet dashboard
@@ -28,7 +28,7 @@ ms.locfileid: "73881226"
 3. Hold over det felt, du vil fastgøre. Vælg **Flere indstillinger** (...), og vælg **Fastgør felt**.  
    
    ![ellipsemenu](media/service-pin-tile-to-another-dashboard/power-bi-pin-another-dash.png)
-4. Fastgør feltet til et eksisterende dashboard eller et nyt dashboard. 
+4. Fastgør feltet til et eksisterende dashboard eller til et nyt dashboard. 
    
    * **Eksisterende dashboard**: Vælg navnet på dashboard'et på rullelisten.
    * **Nyt dashboard**: Angiv navnet på det nye dashboard.
@@ -40,7 +40,7 @@ ms.locfileid: "73881226"
    ![Fastgør til dashboardvindue](media/service-pin-tile-to-another-dashboard/power-bi-pin-success.png)
 6. Vælg **Gå til dashboard** for at se det fastgjorte felt. Der kan du [omdøbe, sammenkæde, flytte og tilpasse størrelsen af](service-dashboard-edit-tile.md) den fastgjorte visualisering.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Felter i Power BI](consumer/end-user-tiles.md)  
 [Dashboards i Power BI](consumer/end-user-dashboards.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

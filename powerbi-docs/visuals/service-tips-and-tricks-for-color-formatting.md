@@ -10,20 +10,20 @@ ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 0b633f2482c5b9f1624f39e4f2c0e07afc55353f
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76894958"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tip og tricks til farveformatering i Power BI
 Power BI indeholder mange forskellige måder at tilpasse dine dashboards og rapporter på. Denne artikel indeholder en samling af tip, som kan gøre dine Power BI-visualiseringer mere overbevisende, interessante og tilpasset efter dine behov.
 
-Der findes følgende tip. Har du et andet fantastiske tip? Fantastisk! Send det til os, og vi finder ud af, om det skal føjes til listen.
+Der findes følgende tip. Har du et andet fantastiske tip? Fint. Send det til os, og vi finder ud af, om det skal føjes til listen.
 
 * Anvend et tema på hele rapporten
 * Skift farve på et enkelt datapunkt
-* Betinget formatering
+* Conditional formatting
 * Basér farverne i et diagram på en numerisk værdi
 * Basér farven på datapunkter på en feltværdi
 * Tilpas farver, der bruges i farveskalaen
@@ -149,6 +149,6 @@ Hvis du vil kassere alle de ændringer, du har foretaget på kortet Formatering,
 ## <a name="feedback"></a>Feedback
 Har du et tip, du vil dele? Send det til os, og vi finder ud af, om det skal medtages her.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Introduktion til farveformatering og akseegenskaber](service-getting-started-with-color-formatting-and-axis-properties.md)
 

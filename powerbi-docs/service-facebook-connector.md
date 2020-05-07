@@ -10,10 +10,10 @@ ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 882cddf7728a27e78056a35c14fde20f00678e33
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77527696"
 ---
 # <a name="use-the-facebook-connector-for-power-bi-desktop"></a>Brug Facebook-connectoren til Power BI Desktop
@@ -22,7 +22,7 @@ Facebook-connectoren i **Power BI Desktop** er afhængig af Facebook Graph API'e
 Du kan se et [selvstudium om Facebook-connectoren til Power BI Desktop](desktop-tutorial-facebook-analytics.md).
 
 > [!IMPORTANT]
-> **Meddelelse om udfasning af Facebook-dataconnector:** Import og opdatering af data fra Facebook i Excel fungerer ikke længere korrekt fra april 2020. Du kan bruge Facebook-connectoren *Get & Transform (Power Query)* indtil dette tidspunkt. Efter denne dato kan du ikke længere oprette forbindelse til Facebook og modtager derfor en fejlmeddelelse. Vi anbefaler, at du ændrer eller fjerner eksisterende *Get & Transform-forespørgsler (Power Query)*, der bruger Facebook-connectoren så hurtigt som muligt for at undgå uventede resultater.
+> **Meddelelse om udfasning af Facebook-dataconnector:** Import og opdatering af data fra Facebook i Excel fungerer ikke længere korrekt fra april 2020. Du kan bruge Facebook-connectoren *Get & Transform (Power Query)* indtil dette tidspunkt. Efter denne dato kan du ikke længere oprette forbindelse til Facebook og modtager derfor en fejlmeddelelse. Vi anbefaler, at du ændrer eller fjerner eksisterende *Get & Transform-forespørgsler (Power Query)* , der bruger Facebook-connectoren så hurtigt som muligt for at undgå uventede resultater.
 
 
 Facebook lod v1.0 af sin Graph API udløbe d. 30 april 2015. Power BI bruger Graph-API'en i baggrunden for Facebook-connectoren, hvilket giver dig mulighed for at oprette forbindelse til dine data og analysere dem.

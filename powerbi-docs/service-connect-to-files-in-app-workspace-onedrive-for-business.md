@@ -9,10 +9,10 @@ ms.date: 04/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 180fd8d451be794070d8b0f4d37c40965671d23d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73854871"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Opret forbindelse til filer, der gemmes i OneDrive for dit Power BI-arbejdsområde
@@ -75,10 +75,10 @@ Nu, hvor dine filer er i OneDrive for Business for dit arbejdsområde, står du 
    
     ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-connect.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Opret apps og arbejdsområder i Power BI](service-create-distribute-apps.md)
 * [Importér data fra Excel-projektmapper](service-get-data-from-files.md)
 * [Opret forbindelse til hele Excel-projektmapper](service-excel-workbook-files.md)
-* Har du flere spørgsmål? [Prøv Power BI-community'et](https://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 * Har du feedback? Besøg [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi)
 

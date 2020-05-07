@@ -10,10 +10,10 @@ ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
 ms.openlocfilehash: c2a4719a03e37569e40d4247939a9f2c73379e52
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872505"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Fra Excel-projektmappe til fantastisk rapport i Power BI-tjenesten
@@ -133,11 +133,11 @@ Lad os sige, at du gerne vil dele dashboardet med din chef. Du kan dele dit dash
 
    ![Del dashboardvindue](media/service-from-excel-to-stunning-report/power-bi-share-dash-new.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * [Kom i gang med Power BI-tjenesten](service-get-started.md)
 * [Kom i gang med Power BI Desktop](desktop-getting-started.md)
 * [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
+Har du flere spørgsmål? [Prøv Power BI-community'et](https://community.powerbi.com/).
 

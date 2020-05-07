@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a33c8a45f4f32efb0a47df82b8af23d42c281ae9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73855537"
 ---
 # <a name="get-data-from-comma-separated-value-csv-files"></a>Hent data fra filer med kommaseparerede værdier (.CSV)
@@ -26,12 +26,12 @@ Hvis du har en .CSV-fil, skal du hente den ind på dit Power BI-websted som et d
 >[!TIP]
 >Mange organisationer udsender en .CSV-fil med opdaterede data hver dag. For at sikre at dit datasæt i Power BI forbliver synkroniseret med din opdaterede fil, skal du sørge for, at filen er gemt i OneDrive med det samme navn.
 
-## <a name="where-your-file-is-saved-makes-a-difference"></a>Det gør en forskel, hvor din fil gemmes
-**Lokal** – Hvis du gemmer din .CSV-fil på et lokalt drev på din computer eller en anden placering i din organisation fra Power BI, kan du *importere* filen til Power BI. Filen forbliver på den lokale harddisk, så det er ikke hele filen, der importeres til Power BI. I virkeligheden sker der det, at der oprettes et nyt datasæt i Power BI, og data fra .CSV-filen indlæses i datasættet.
+## <a name="where-your-file-is-saved-makes-a-difference"></a>Det gør en forskel, hvor du gemmer din fil
+**Lokal** – Hvis du gemmer din .CSV-fil på et lokalt drev på din computer eller en anden placering i din organisation fra Power BI, kan du *importere* filen til Power BI. Filen bliver på den lokale harddisk, så det er ikke hele filen, der importeres til Power BI. I virkeligheden sker der det, at der oprettes et nyt datasæt i Power BI, og data fra .CSV-filen indlæses i datasættet.
 
 **OneDrive – erhverv** – Hvis du har OneDrive for Business, og du logger på med den samme konto, du bruger til at logge på Power BI, er det den klart mest effektive metode til at holde din .CSV-fil synkroniseret med datasæt, rapporter og dashboards i Power BI. Da både Power BI og OneDrive findes i skyen, *opretter Power BI forbindelse* til din fil på OneDrive ca. hver time. Hvis der findes ændringer, opdateres datasættet, rapporter og dashboards automatisk i Power BI.
 
-**OneDrive – personlig** – Hvis du gemmer dine filer på din egen OneDrive-konto, får du mange af de samme fordele som med OneDrive for Business. Den største forskel er, at når du første gang opretter forbindelse til din fil (med funktionen Hent data > Filer > OneDrive - personlig), skal du logge på OneDrive med din Microsoft-konto, som normalt er forskellig fra, hvad du bruger til at logge på Power BI. Når du logger på dit OneDrive med din Microsoft-konto, skal du sørge for at vælge indstillingen Forbliv logget på. På denne måde kan Power BI oprette forbindelse til din fil ca. hver time og sikre, at dit datasæt i Power BI er synkroniseret.
+**OneDrive – personlig** – Hvis du gemmer dine filer på din egen OneDrive-konto, får du mange af de samme fordele som med OneDrive for Business. Den største forskel er, at når du første gang opretter forbindelse til din fil (med funktionen Hent data > Filer > OneDrive - personlig), skal du logge på OneDrive med din Microsoft-konto, hvilket normalt er anderledes, end hvad du bruger til at logge på Power BI. Når du logger på dit OneDrive med din Microsoft-konto, skal du sørge for at vælge indstillingen Forbliv logget på. På denne måde kan Power BI oprette forbindelse til din fil ca. hver time og sikre, at dit datasæt i Power BI er synkroniseret.
 
 **SharePoint – teamwebsteder** – Lagring af dine Power BI Desktop-filer på SharePoint – Teamwebsteder er stort set det samme som at gemme på OneDrive for Business. Den største forskel er, hvordan du opretter forbindelse til filen fra Power BI. Du kan angive en URL-adresse, eller du kan oprette forbindelse til rodmappen.
 

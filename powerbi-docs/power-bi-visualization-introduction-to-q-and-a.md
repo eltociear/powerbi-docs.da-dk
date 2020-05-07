@@ -10,10 +10,10 @@ ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 817ce82b94817530854d85c7dbcca17a313fc438
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874451"
 ---
 # <a name="create-a-visual-with-power-bi-qa"></a>Opret en visualisering med Spørgsmål og svar i Power BI
@@ -67,7 +67,7 @@ Hvordan oprettes dette kurvediagram ved hjælp af Spørgsmål og svar?
 
     Du kan se, at de sluttede med det samme visual. Hvis du opretter den på denne måde, er det ikke for kompliceret. Men det var nemmere at oprette den med Spørgsmål og svar!
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Brug Spørgsmål og svar på dashboards og i rapporter](power-bi-tutorial-q-and-a.md)  
 - [Spørgsmål og svar til forbrugere](consumer/end-user-q-and-a.md)
