@@ -10,10 +10,10 @@ ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: cf1d67318fc86b1044e38e6f4f5f56c9473c39a1
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74265471"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Aktivér Spørgsmål og svar via direkte forbindelser i Power BI
@@ -60,7 +60,7 @@ Der er nogle begrænsninger for funktionen:
 
 ## <a name="next-steps"></a>De næste trin
 
-- [On-premises data gateway (Datagateway i det lokale miljø)](service-gateway-onprem.md)  
+- [Datagateway i lokalt miljø](service-gateway-onprem.md)  
 - [Administrer din datakilde – Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 - [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)  
 - [Spørgsmål og svar i Power BI – Oversigt](consumer/end-user-q-and-a.md)  

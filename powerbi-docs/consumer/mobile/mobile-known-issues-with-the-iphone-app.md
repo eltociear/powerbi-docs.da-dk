@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 0162d78fd4358f415ac52ea70bd3460d3c28b722
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114913"
 ---
 # <a name="fixing-communication-failures-in-ios-mobile-apps---power-bi"></a>Rette "kommunikationsfejl" i iOS-mobilapps – Power BI
 
 | ![iPhone](./media/mobile-known-issues-with-the-iphone-app/iphone-logo-50-px.png) | ![iPad](./media/mobile-known-issues-with-the-iphone-app/ipad-logo-50-px.png) |
 |:--- |:--- |
-| iPhone-telefoner |iPad-tablets |
+| iPhones |iPad-tablets |
 
 ## <a name="we-encountered-communication-failures"></a>"Vi har registreret kommunikationsfejl"
 "Vi har registreret kommunikationsfejl. De kan være knyttet til proxyindstillingerne for din Wi-Fi-forbindelse. Skift til en anden Wi-Fi-forbindelse for at løse problemet."

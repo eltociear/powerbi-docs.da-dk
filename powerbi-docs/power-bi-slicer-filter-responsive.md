@@ -10,10 +10,10 @@ ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: 2feb20907bbcffcb8aa395705b34604ebbedb682
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81006497"
 ---
 # <a name="create-a-responsive-slicer-you-can-resize-in-power-bi"></a>Opret et dynamisk udsnitsværktøj, som du kan ændre størrelsen på i Power BI
@@ -28,7 +28,7 @@ Dynamiske udsnitsværktøjer kan ændres i størrelsen, så de passer til at vil
 
 Det første trin i at oprette et dynamisk udsnitsværktøj er at oprette et grundlæggende udsnitsværktøj. 
 
-1. Vælg ![ikonet](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer-icon.png)**Udsnitsværktøj** i ruden **Visualiseringer**.
+1. Vælg **ikonet**![Udsnitsværktøj](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer-icon.png) i ruden **Visualiseringer**.
 2. Træk feltet, du vil filtrere, hen på **Felt**.
 
     ![Føj et felt til udsnitsværktøjet](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-1-create.png)
@@ -79,7 +79,7 @@ Du kan benytte den samme fremgangsmåde til at gøre et udsnitsværktøj til tid
 - Nye runde håndtag på udsnitsværktøjerne afhjælper berøringsbevægelser. 
 - Når et visuelt element bliver for lille til at være praktisk anvendeligt, så ændres det til et ikon, der repræsenterer den visuelle type. For at interagere med det skal du blot dobbeltklikke for at åbne det i fokustilstand. Det sparer værdifuld plads på rapportsiden, uden at funktionaliteten går tabt.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Udsnitsværktøjer i Power BI-tjenesten](visuals/power-bi-visualization-slicers.md)
 - Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

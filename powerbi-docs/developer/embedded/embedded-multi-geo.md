@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: 269fe87a61df3470a8d11e4934ff1fca4bde7e86
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114652"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Multi-Geo-understøttelse af Power BI Embedded
@@ -81,7 +81,7 @@ Vi har foretaget nogle ændringer af eksisterende API'er for at understøtte adm
 
 * Multi-Geo medfører ikke en forbedring af ydeevnen generelt set. Indlæsning af rapporter og dashboards omfatter stadig anmodninger til det lokale område for metadata.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Få mere at vide om Power BI Embedded-kapaciteter og Multi-Geo-indstillinger for alle kapaciteter ved at klikke på nedenstående links.
 

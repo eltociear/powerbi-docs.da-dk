@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: painbar
 ms.openlocfilehash: 177f029073320c8db68b532fdb282b745c69a408
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80802634"
 ---
 # <a name="find-and-access-your-content-with-google-search"></a>Søg efter og få adgang til indhold med Google-søgning
@@ -35,7 +35,7 @@ I søgefeltet i Google skal du søge ved hjælp af formularen ***søg efter &lt;
 
 ![Resultat af Google-søgning i Power BI-mobilappen til Android](media/mobile-app-find-access-google-search/mobile-google-search.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Brug af Android-appgenveje i Power BI Android-appen](mobile-app-quick-access-shortcuts.md)
 * [Integration af iOS-enhedssøgning (spotlight) med Power BI-mobilappen til iOS](mobile-apps-ios-search-integration.md)
 * [Favoritter i Power BI-mobilapps](mobile-apps-favorites.md)

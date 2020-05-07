@@ -10,10 +10,10 @@ ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
 ms.openlocfilehash: 32ca01d06f4fc8c3f90f73bf8137349eed0220a6
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698825"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Find Power BI-brugere, der er logget på
@@ -29,7 +29,7 @@ Alle brugere (herunder personer, der ikke er administratorer) kan se en rapport 
 
 * Din lejer skal have en Azure Active Directory Premium-licens tilknyttet.
 
-* Du skal være i en af følgende roller: Global administrator, Sikkerhedsadministrator eller Sikkerhedslæser.
+* Du skal have en af følgende roller: Global administrator, Sikkerhedsadministrator eller Sikkerhedslæser.
 
 ## <a name="use-the-azure-portal-to-view-sign-ins"></a>Brug Azure Portal til at få vist logon
 
@@ -63,7 +63,7 @@ Du kan [downloade en rapport over logonaktivitet](/azure/active-directory/report
 
 Relaterede logondata er tilgængelige i op til 30 dage. Du kan finde flere oplysninger i [Politikker om opbevaring af Azure Active Directory-rapport](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Brug af overvågning i din organisation](service-admin-auditing.md)
 

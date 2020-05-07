@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 03/12/2020
 LocalizationGroup: Premium
 ms.openlocfilehash: ccc14cb041c5131d2cb06a8ad362b7054bcde857
-ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80464703"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Genstart en Power BI Premium-kapacitet
@@ -40,7 +40,7 @@ Følg denne fremgangsmåde for at genstarte en kapacitet.
 
 1. I Power BI-administrationsportalen skal du på fanen **Kapacitetsindstillinger** gå til din kapacitet. 
 
-1. Føj *funktionsflaget* **CapacityRestart** til kapacitetens URL-adresse: `https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true`.
+1. Føj **funktionsflaget** *CapacityRestart* til kapacitetens URL-adresse: `https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true`.
 
 1. Under **Avancerede indstillinger** > **CAPACITY RESTART** skal du vælge **Genstart kapacitet**.
 
@@ -56,7 +56,7 @@ Den bedste måde at undgå problemer på er at lære brugerne om effektiv datamo
 
 Vi anbefaler også, at du [overvåger kapaciteterne](service-admin-premium-monitor-capacity.md) jævnligt for tendenser, der indikerer, at der er underliggende problemer. Vi planlægger jævnligt versioner af appen til overvågning og andre værktøjer, så du kan overvåge og administrere kapaciteterne mere effektivt.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Hvad er Power BI Premium?](service-premium-what-is.md)
 

@@ -10,10 +10,10 @@ ms.date: 03/25/2020
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: abe556231978d762dab652263aa2c55cf3c8a955
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80273265"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Understøttede browsere til Power BI
@@ -31,7 +31,7 @@ Power BI understøtter disse browsere på alle platforme, hvor de er tilgængeli
 > [!NOTE]
 > Power BI kører ikke i nogen browsere i iOS10 eller tidligere versioner.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Hvad er Power BI?](power-bi-overview.md)
 * Prøv at spørge [Power BI-community'et](https://community.powerbi.com/)
 * Har du stadig problemer? Gå til [supportsiden for Power BI](https://powerbi.microsoft.com/support/)

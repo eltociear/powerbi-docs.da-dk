@@ -10,14 +10,14 @@ ms.date: 03/05/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 299329cad78d831a3b77e55107e94a234d6f64b1
-ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79133214"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Fejlfinding af logonproblemer i Power BI Desktop
-Der kan være situationer, hvor du forsøger at logge på **Power BI Desktop**, men støder på fejl. Der er to primære årsager til logonproblemer: **Proxy-godkendelsesfejl** og **fejl ved omdirigering til URL-adresser, der ikke er HTTPS**. 
+Der kan være situationer, hvor du forsøger at logge på **Power BI Desktop**, men støder på fejl. Der er to primære årsager til logonproblemer: **fejl ved proxygodkendelse** og **fejl ved omdirigering til URL-adresser, der ikke er HTTPS-sikret**. 
 
 Hvis du vil finde ud af, hvad der forårsager dit logonproblem, skal du først kontakte administratoren og levere diagnosticeringsoplysninger, så administratoren kan finde årsagen til problemet. Ved at spore problemer, der er knyttet til logonproblemet, kan administratorer afgøre, hvilke af følgende fejl der er skyld i dit problem. 
 
@@ -55,7 +55,7 @@ Aktuelle versioner af **Power BI Desktop** bruger den aktuelle version af ADAL (
 
 Følgende undtagelser i *Power BI Desktop*-sporingsfiler er knyttet til denne fejl:
 
-* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: Omdirigering til URL-adresser, der ikke er HTTPS, understøttes ikke i webvisning*
+* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: Omdirigering af URL-adresser, der ikke er HTTPS-sikrede, understøttes ikke i webvisning*
 * *ErrorCode: non_https_redirect_failed*
 
 Hvis fejlen *ErrorCode: non_https_redirect_failed* opstår, betyder det, at en eller flere omdirigeringssider eller providere i rækken af omdirigeringer ikke er et HTTPS-beskyttet slutpunkt, eller at en certifikatudsteder af en eller flere omdirigeringer ikke er blandt de rodnøgler, enheden har tillid til. Alle providere i rækken af logonomdirigeringer skal bruge en HTTPS-sikret URL-adresse. Du kan få løst dette problem ved at kontakte administratoren og anmode om, at sikrede URL-adresser bruges til deres godkendelseswebsteder. 

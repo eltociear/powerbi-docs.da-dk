@@ -9,10 +9,10 @@ ms.date: 04/06/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
 ms.openlocfilehash: b951e96a5d81603dc91e4fc47a2b412d4140f85d
-ms.sourcegitcommit: 34cca70ba84f37b48407d5d8a45c3f51fb95eb3c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80752044"
 ---
 # <a name="connect-to-the-hospital-emergency-response-decision-support-dashboard"></a>Opret forbindelse til Dashboard til understøttelse af beslutninger i forbindelse med hospitalernes akutberedskab
@@ -86,7 +86,7 @@ Når du installerer Power Platform-løsningen til hospitalernes akutberedskab, k
 
 ## <a name="schedule-report-refresh"></a>Planlæg rapportopdatering
 
-Når dataene er blevet opdateret, [kan du konfigurere en opdateringsplan](../refresh-scheduled-refresh.md) for at holde rapportdataene opdaterede.
+Når dataene er blevet opdateret, [kan du konfigurere en opdateringsplan](../refresh-scheduled-refresh.md) for at holde rapportdataene opdateret.
 
 1. Vælg **Power BI** på den øverste overskriftslinje.
 

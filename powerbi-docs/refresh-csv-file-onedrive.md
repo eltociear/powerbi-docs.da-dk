@@ -1,6 +1,6 @@
 ---
 title: Opdater et datasæt, der er oprettet fra en .CSV-fil på OneDrive
-description: Opdater et datasæt, der er baseret på en fil med kommaseparerede værdier (.csv) på OneDrive
+description: Opdater et datasæt, der er oprettet ud fra en fil med kommaseparerede værdier (.csv) fil på OneDrive
 author: davidiseminger
 ms.reviewer: kayu
 ms.custom: seodec18
@@ -11,10 +11,10 @@ ms.date: 09/12/2019
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: d18d3a5b5d85a121f67c5b3109a150a21ab72d1a
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74699699"
 ---
 # <a name="refresh-a-dataset-created-from-a-csv-file-on-onedrive-or-sharepoint-online"></a>Opdater et datasæt, der er baseret på en .CSV-fil på OneDrive eller SharePoint Online
@@ -42,7 +42,7 @@ Hvis du foretager ændringer i din .csv-fil på OneDrive, som ikke kan synkronis
 ## <a name="when-things-go-wrong"></a>Når det går galt
 Hvis du ændrer data i .csv-filen på OneDrive, og disse ændringer ikke afspejles i Power BI, er det sandsynligvis, fordi Power BI ikke kan oprette forbindelse til dit OneDrive. Prøv at oprette forbindelse til filen, og importér den igen. Hvis du bliver bedt om at logge på, skal du vælge **Forbliv logget på**.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Værktøjer til fejlfinding i forbindelse med opdateringsfejl](service-gateway-onprem-tshoot.md)
 [Fejlfinding i forbindelse med opdatering af scenarier](refresh-troubleshooting-refresh-scenarios.md)
 

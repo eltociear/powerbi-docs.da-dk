@@ -11,10 +11,10 @@ ms.topic: overview
 ms.custom: seodec18
 ms.date: 12/10/2018
 ms.openlocfilehash: f04621fdfe7e6055d84fa4d2672c874837ff5ea4
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79495268"
 ---
 # <a name="what-is-power-bi-embedded-in-azure"></a>Hvad er Power BI Embedded i Azure?
@@ -39,7 +39,7 @@ Har du en eksisterende app med integreret Power BI-indhold ved hjælp af Power B
 
 Med Power BI Embedded kan du fokusere på det, du er bedst til: at bygge fantastiske apps. Du kan administrere og udvikle med Power BI Embedded ved hjælp af de værktøjer og færdigheder, du allerede har.
 
-* [**Azure Portal**](https://portal.azure.com/): Et webbaseret program til administration af alle Azure-tjenester
+* [**Azure-portalen**](https://portal.azure.com/): en webbaseret app til administration af alle Azure-tjenester
 * [**Visual Studio Code**](https://code.visualstudio.com/docs): et gratis kodeprogram med åben kildekode, som du kan downloade og køre på Windows, macOS eller Linux, og som understøtter udvidelser
 * [**Power BI Desktop**](https://powerbi.microsoft.com/desktop/): et gratis værktøj, du kan downloade og bruge til at oprette avancerede interaktive rapporter med visuel analyse
 
@@ -47,11 +47,11 @@ Ved hjælp af REST API giver Power BI Embedded dig mulighed for at udvikle i eth
 
 ## <a name="engage-with-the-power-bi-engineering-team"></a>Kom i kontakt med Power BI-teknikerteamet
 
-* [Communities](https://community.powerbi.com/): Stil spørgsmål om Power BI
-* [Power BI-idéer](https://ideas.powerbi.com): Anmod om og stem på funktioner
-* [Reddit](https://www.reddit.com/r/PowerBI/): Diskuter Power BI
+* [Communities](https://community.powerbi.com/): stil spørgsmål om Power BI
+* [Power BI-idéer](https://ideas.powerbi.com): anmod om og stem på funktioner
+* [Reddit](https://www.reddit.com/r/PowerBI/): diskuter Power BI
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Se [siden med priser](https://azure.microsoft.com/pricing/details/power-bi-embedded/) for at få detaljer om kapacitetsnoden.
 

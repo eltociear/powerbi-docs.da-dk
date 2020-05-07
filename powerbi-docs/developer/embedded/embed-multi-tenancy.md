@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
 ms.openlocfilehash: 435f643ba155bc9d6c67d1131d946769e3d61730
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79494946"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Administrer flere lejere med Power BI Embedded-analyse
@@ -252,7 +252,7 @@ Når slutbrugere redigerer eller opretter rapporter, kan de bruge produktionsdat
 * Du kan få oplysninger om det antal opdateringer, der kan køre samtidigt på en kapacitet, i [ressourcestyring og optimering](../../service-premium-what-is.md#capacity-nodes).
 * Den gennemsnitlige tid, det tager at skalere en kapacitet, er mellem 1-2 minutter. Kapaciteten er ikke tilgængelig i denne periode. Det anbefales at bruge en scale-out-tilgang for at [undgå nedetid](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script).
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * [Integreret analyse med Power BI](embedding.md)
 * [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)

@@ -10,10 +10,10 @@ ms.date: 03/26/2020
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: e503d2c68b4b726ab44c3bec0fad7001da33e184
-ms.sourcegitcommit: 8267a7383d6506dae42f87e4f4a2362b875b2911
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/27/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80329625"
 ---
 # <a name="publish-to-power-bi-from-microsoft-excel"></a>Publicer i Power BI fra Microsoft Excel
@@ -90,7 +90,7 @@ Når du er færdig, kan du gå til Power BI direkte fra Excel.
 
 ![gå til Power BI](media/service-publish-from-excel/pbi_gotopbi.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Excel-data i Power BI](service-excel-workbook-files.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

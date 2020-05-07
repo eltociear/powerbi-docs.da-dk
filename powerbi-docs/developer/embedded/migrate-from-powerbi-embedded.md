@@ -8,10 +8,10 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.openlocfilehash: a8ce4209610e229ae1da7773bd7cb10bd522f72c
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80404041"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded
@@ -25,14 +25,14 @@ Med Power BI Embedded få du én API-grænseflade, en ensartet række funktioner
 Den nuværende Power BI Workspace Collection er fortsat tilgængelig i en begrænset periode. Kunder, der har en Enterprise Agreement, får adgang i forbindelse med udløbet af deres eksisterende aftaler. Kunder, der har fået Power BI Workspace Collection via direkte kanaler eller or CSP-kanaler, har fortsat adgang i ét år fra det tidspunkt, hvor Power BI Embedded bliver frigivet som generel tilgængelig.  I denne artikel får du hjælp til at blive overført fra Power BI Workspace Collection til det nye Power BI Embedded, og du kan læse om, hvilke ændringer du kan forvente i applikationen.
 
 > [!IMPORTANT]
-> Selvom overførslen vil være afhængig af Power BI Embedded, er brugerne af din applikation ikke afhængige af Power BI, når de bruger et **integreringstoken**. De behøver ikke at tilmelde sig Power BI for at få vist det integrerede indhold i din app. Du kan bruge denne integreringstilgang i forbindelse med Embedded for brugere uden Power BI.
+> Selvom overførslen vil være afhængig af Power BI Embedded, er brugerne af din applikation ikke afhængige af Power BI, når de bruger et **integreringstoken**. De behøver ikke at tilmelde sig Power BI for at få vist det integrerede indhold i din applikation. Du kan bruge denne integreringstilgang i forbindelse med Embedded for brugere uden Power BI.
 
 ![Integreringsflow](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
 
 Inden du begynder overførslen til det nye Power BI Embedded, kan du tage en hurtig gennemgang, der hjælper dig med at konfigurere dit nye Power BI Embedded-miljø ved hjælp af [værktøjet til konfiguration af integrering](https://aka.ms/embedsetup).
 
 Vælg den løsning, der er den rette for dig:
-* **Embed for your customers** – når du er interesseret i en løsning, hvor [appen ejer dataene](https://aka.ms/embedsetup/AppOwnsData). Med [Embedding for your customers](embedding.md#embedding-for-your-customers) kan du integrere dashboards og rapporter for de brugere, der ikke har en konto til Power BI. 
+* **Embed for your customers** – når du er interesseret i en løsning, hvor [appen ejer dataene](https://aka.ms/embedsetup/AppOwnsData). [Embedding for your customers](embedding.md#embedding-for-your-customers) giver mulighed for at integrere dashboards og rapporter for de brugere, der ikke har en Power BI-konto. 
 
 * **Embed for your organization** – når du er interesseret i en løsning, hvor [brugeren ejer dataene](https://aka.ms/embedsetup/UserOwnsData). Med [Embedding for your organization](embedding.md#embedding-for-your-organization) kan du udvide Power BI-tjenesten.
 
@@ -44,7 +44,7 @@ Der er et par ting, du skal gøre som forberedelse til at overføre fra Power BI
 
     Du skal beslutte, hvilken lejerkonfiguration du vil bruge.
 
-   * Skal du bruge virksomhedens eksisterende Power BI-lejer?
+   * Vil du bruge virksomhedens eksisterende Power BI-lejer?
    * Skal du bruge en separat lejer til din app?
    * Skal du bruge en separat lejer for hver kunde?
 
@@ -79,7 +79,7 @@ Du skal registrere en app i Azure AD og tildele den visse tilladelser.
 
 ### <a name="register-an-application"></a>Registrer en app
 
-Du skal registrere din app i Azure AD, før du kan foretage REST API-kald. Dette omfatter at få til Azure-portalen for at anvende yderligere konfiguration ud over Power BI-appregistreringssiden. Du kan finde flere oplysninger under [Registrer en Azure AD-app for at integrere Power BI-indhold](register-app.md).
+Du skal registrere din app i Azure AD, før du kan foretage REST-API-kald. Dette omfatter at få til Azure-portalen for at anvende yderligere konfiguration ud over Power BI-appregistreringssiden. Du kan finde flere oplysninger i [Registrer en Azure AD-app for at integrere Power BI-indhold](register-app.md).
 
 Du bør registrere appen med appens **master**konto.
 
@@ -99,7 +99,7 @@ Brugeren skal have en Pro-licens, før der kan oprettes et arbejdsområde i Powe
 
 Du kan overføre indhold fra dine arbejdsområdesamlinger til Power BI Embedded samtidig med din aktuelle løsning, og det medfører ikke nogen nedetid.
 
-Der findes et **overførselsværktøj**, som du kan bruge til at kopiere indhold fra Power BI Workspace Collection til Power BI Embedded. Dette er især praktisk, hvis du har meget indhold. Du kan finde flere oplysninger under [Overførselsværktøjet i Power BI Embedded](migrate-tool.md).
+Der findes et **overførselsværktøj**, som du kan bruge til at kopiere indhold fra Power BI Workspace Collection til Power BI Embedded. Praktisk, hvis du har en meget indhold. Du kan finde flere oplysninger under [Overførselsværktøjet i Power BI Embedded](migrate-tool.md).
 
 Overførsel af indhold er baseret primært på to-API'er.
 
@@ -116,7 +116,7 @@ Der findes flere typer rapporter, som kræver hver deres overførselsproces.
 
 Cachelagrede datasæt, der refererer til PBIX-filer, og som havde importerede data i modsætning til en dynamisk forbindelse eller en DirectQuery-forbindelse.
 
-**Proces**
+**Flow**
 
 1. Udfør et kald til API'et Download PBIX fra PaaS-arbejdsområdet.
 2. Gem PBIX.
@@ -124,7 +124,7 @@ Cachelagrede datasæt, der refererer til PBIX-filer, og som havde importerede da
 
 #### <a name="directquery-dataset--report"></a>DirectQuery-datasæt og -rapport
 
-**Proces**
+**Flow**
 
 1. Udfør et kald til GET `https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources` og gem forbindelsesstreng er modtaget.
 2. Udfør et kald til API'et Download PBIX fra PaaS-arbejdsområdet.
@@ -138,7 +138,7 @@ Cachelagrede datasæt, der refererer til PBIX-filer, og som havde importerede da
 
 Dette er de datasæt/rapporter, der er oprettet før oktober 2016. Download PBIX understøtter ikke de PBIX'er, som blev uploadet før oktober 2016
 
-**Proces**
+**Flow**
 
 1. Hent PBIX fra dit udviklingsmiljø (din interne versionsstyring).
 2. Udfør et kald til Import PBIX til SaaS-arbejdsområdet.
@@ -147,7 +147,7 @@ Dette er de datasæt/rapporter, der er oprettet før oktober 2016. Download PBIX
 
 Download PBIX understøtter ikke *Push API*-datasæt. Data fra Push API-datasæt kan ikke overføres fra PaaS til SaaS.
 
-**Proces**
+**Flow**
 
 1. Udfør et kald til API'et "Create dataset" med datasæt-Json for at oprette datasæt i SaaS-arbejdsområdet.
 2. Byg rapporten igen for det oprettede datasæt*.
@@ -180,7 +180,7 @@ I din app kan du knytte de brugere, du administrerer i appen, til en *master*bru
 Når du er klar til at skifte til produktionsmiljøet, skal du bruge følgende.
 
 * Hvis du bruger en separat lejer til udvikling, skal du sikre, at dine arbejdsområder samt dashboards og rapporter er tilgængelige i dit produktionsmiljø. Du skal også sikre, at du har oprettet appen i Azure AD for din produktionslejer, og at du har tildelt de nødvendige apptilladelser som angivet på trin 1.
-* Køb den kapacitet, der opfylder dine behov. I dette [whitepaper om planlægning af analysekapacitet i Power BI Embedded](https://aka.ms/pbiewhitepaper) kan du få oplysninger, så du kan få en bedre forståelse af, hvor meget kapacitet og hvilken type du har brug for. Du kan [købe kapacitet](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) i Azure.
+* Køb den kapacitet, der passer med dit behov. I dette [whitepaper om planlægning af analysekapacitet i Power BI Embedded](https://aka.ms/pbiewhitepaper) kan du få oplysninger, så du kan få en bedre forståelse af, hvor meget kapacitet og hvilken type du har brug for. Du kan [købe kapacitet](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) i Azure.
 * Rediger arbejdsområdet, og tildel det til en Premium-kapacitet under avanceret.
 
     ![Premium-kapacitet](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity02.png)
@@ -194,17 +194,17 @@ Du bør rydde op i Azure.
 * Fjern alle arbejdsområder fra den udrullede løsning i Azure Embedded i Power BI Workspace Collection.
 * Slet alle de arbejdsområdesamlinger, der findes i Azure.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Integrer med Power BI](embedding.md)  
 [Overførselsværktøj til Power BI Workspace Collection](migrate-tool.md)  
 [Kodestykker til overførsel af indhold fra Power BI Workspace Collection](migrate-code-snippets.md)  
 [Sådan integrerer du Power BI-dashboards, -rapporter og -felter](embed-sample-for-your-organization.md)  
 [Power BI Premium – hvad er det?](../../service-premium-what-is.md)  
-[Git-lager til JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)  
+[Git-lager for JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Git-lager til Power BI C#](https://github.com/Microsoft/PowerBI-CSharp)  
 [Integreringseksempel til JavaScript](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Whitepaper om planlægning af analysekapacitet i Workspace Collection](https://aka.ms/pbiewhitepaper)  
-[Hvidbog om Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
+[Hvidbog til Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
-Flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
