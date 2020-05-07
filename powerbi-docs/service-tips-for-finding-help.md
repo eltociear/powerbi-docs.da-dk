@@ -10,10 +10,10 @@ ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: 10540ed49064b9e28543ce46b43d8bb2d9ca6cf7
-ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74178238"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 tips til at få hjælp til dine Power BI-spørgsmål
@@ -29,7 +29,7 @@ Eksperter, der skal bruge svar til Power BI, bruger ofte søgning. Vil du finde 
 Power BI-teamet opdaterer og forbedrer løbende Power BI-dokumentationen og oplæring. Du kan finde fantastisk indhold, herunder optagelser af webinarer, hvidbøger, vejledt læring og links til blogindlæg om alle de nyeste funktioner.
 
 ## <a name="3-read-the-power-bi-blog-for-the-latest-news"></a>3 Læs de seneste nyheder i Power BI-bloggen
-Power BI-teamet forklarer alle de nye funktioner i deres regelmæssige [Power BI-blogindlæg](https://powerbi.microsoft.com/blog/). Find ud af, hvad der er nyt i alt fra Power BI Desktop til Power BI-mobilapps. Sørg for at vende tilbage ofte for at se vores nyheder: Du kan bruge et par minutter hver uge på at skimme blogindlæggene. Du ved aldrig, hvornår du kan få brug for de oplysninger, du så for et par måneder siden.
+Power BI-teamet forklarer alle de nye funktioner i deres regelmæssige [Power BI-blogindlæg](https://powerbi.microsoft.com/blog/). Find ud af, hvad der er nyt i alt fra Power BI Desktop til Power BI-mobilapps. Gør det til en vane tit at vende tilbage for at se nyheder: Brug et par minutter hver uge på at skimme blogindlægene. Du ved aldrig, hvornår du kan få brug for de oplysninger, du så for et par måneder siden.
 
 ## <a name="4-try-twitter"></a>4 Prøv Twitter
 Der er mange Power BI-kunder og -eksperter på Twitter. Stil dit spørgsmål i et tweet. Tilføj hashtags #powerbi og #powerbihelp, så de personer, der kender Power BI, kan se dit tweet.
@@ -67,7 +67,7 @@ Hvis alt andet mislykkes, er det sidste tip at observere systemet. Folk spørger
 
 Lad os f.eks. sige, at du er usikker på, om du kan dele dashboards med en sikkerhedsgruppe. Besvar det spørgsmål ved at gå til dialogboksen for deling, og prøv at tilføje en sikkerhedsgruppe. Lige meget hvad så finder du svaret efter denne test.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Hvad er Power BI?](fundamentals/power-bi-overview.md)
 * Prøv at spørge [Power BI-community'et](https://community.powerbi.com/)
 * Har du stadig problemer? Besøg [supportsiden for Power BI](https://powerbi.microsoft.com/support/)

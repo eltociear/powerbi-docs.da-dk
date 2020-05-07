@@ -10,10 +10,10 @@ ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
 ms.openlocfilehash: 96a006f60e08d35ef6bbe13a2033d866814ec5b2
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74697537"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Hvad er en datagateway i det lokale miljø?
@@ -22,7 +22,7 @@ ms.locfileid: "74697537"
 
 Datagatewayen i det lokale miljø fungerer som en bro, der giver hurtig og sikker dataoverførsel mellem lokale data (data, der ikke er i cloudmiljøet) og adskillige Microsoft-cloudtjenester. Disse cloudtjenester omfatter Power BI, PowerApps, Power Automate, Azure Analysis Services og Azure Logic Apps. Ved hjælp af en gateway kan organisationer opbevare databaser og andre datakilder på deres netværk i det lokale miljø og samtidig sikkert bruge disse lokale data i cloudtjenester.
 
-## <a name="how-the-gateway-works"></a>Sådan virker gatewayen
+## <a name="how-the-gateway-works"></a>Sådan fungerer gatewayen
 
 ![Oversigt over gateways](media/service-gateway-onprem/on-premises-data-gateway.png)
 

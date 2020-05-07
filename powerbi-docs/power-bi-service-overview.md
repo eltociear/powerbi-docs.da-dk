@@ -10,10 +10,10 @@ ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: 22446936f36074379242bd54af15c9bb2864e4a8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73875000"
 ---
 # <a name="what-is-the-power-bi-service"></a>Hvad er Power BI-tjenesten?
@@ -39,4 +39,4 @@ Når du har oprettet rapporter og dashboards, kan du dele dem, så slutbrugerne 
 ## <a name="next-steps"></a>Næste trin
 - Hurtig start til forbrugere: [Bliv fortrolig med Power BI-tjenesten](consumer/end-user-experience.md)   
 - [Selvstudium: Kom i gang med Power BI-tjenesten](service-get-started.md)
-- [Hurtig introduktion: Opret forbindelse til data i Power BI Desktop](desktop-quickstart-connect-to-data.md)
+- [Hurtig start: Opret forbindelse til data i Power BI Desktop](desktop-quickstart-connect-to-data.md)

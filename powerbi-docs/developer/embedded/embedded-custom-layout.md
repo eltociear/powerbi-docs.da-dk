@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: reference
 ms.date: 12/19/2017
 ms.openlocfilehash: e114c208093c9f3401c43e9ea44502e65d6d84fd
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79493198"
 ---
 # <a name="custom-layouts"></a>Brugerdefinerede layout
@@ -61,8 +61,8 @@ enum DisplayOption {
 }
 ```
 
-- `pageSize`: Brug sidestørrelsen til at styre lærredets størrelse (dvs. det hvide rapportområde).
-- `displayOptions`: De mulige værdier er: FitToWidth, FitToPage eller ActualSize. Den styrer skaleringen af canvasset, så det passer til iframe.
+- `pageSize`: Brug sidestørrelsen til at styre canvasområdets størrelse (dvs. det hvide rapportområde).
+- `displayOptions`: Mulige værdier er: FitToWidth, FitToPage eller ActualSize. Den styrer skaleringen af canvasset, så det passer til iframe.
 - `pagesLayout`: Styrer layoutet for det enkelte visuelle element. se PagesLayout for at få flere oplysninger.
 
 ## <a name="pages-layout"></a>Layout for sider

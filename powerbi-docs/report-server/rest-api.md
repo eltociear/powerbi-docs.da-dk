@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.openlocfilehash: 9b8e795c4a55f9efd6fd534d92d95b36c93cf2c0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874065"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Foretag udvikling med REST API'er til Power BI-rapportserver
@@ -54,7 +54,7 @@ Til en moderne REST API er der for brug for moderne API-dokumentation. REST API 
 
 [Fiddler](https://www.telerik.com/fiddler) er et værktøj til test af HTTP-anmodnings-/svarmeddelelser. Fiddler er en gratis webfejlfindingsproxy, der kan opfange dine REST-anmodninger, og som gør det lettere at diagnosticere HTTP-anmodnings-/svarmeddelelser.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Se de tilgængelige API'er på [SwaggerHub](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0).
 

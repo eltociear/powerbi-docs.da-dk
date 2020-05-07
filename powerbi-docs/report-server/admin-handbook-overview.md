@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: maggies
 ms.openlocfilehash: a93b3def115aaadbc33f6d0985aeea424558f248
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73860214"
 ---
 # <a name="admin-overview-power-bi-report-server"></a>Administratoroversigt, Power BI-rapportserver
@@ -28,7 +28,7 @@ Før du begynder at installere, opgradere eller overføre til Power BI-rapportse
 ### <a name="installing"></a>Installation
 Hvis du anvender en ny Power BI-rapportserver, kan du hente hjælp i følgende dokument. 
 
-[Installer Power BI-rapportserver](install-report-server.md)
+[Installér Power BI-rapportserver](install-report-server.md)
 
 ### <a name="migration"></a>Overførsel
 Der findes ingen opgradering til SQL Server Reporting Services. Hvis du har en eksisterende SQL Server Reporting Services-udgave, som du vil gøre til Power BI-rapportserver, skal du overføre den. Der kan også være andre årsager til at foretage en overførsel. Gennemse overførselsdokumentet for at få flere oplysninger.
@@ -43,10 +43,10 @@ Størstedelen af konfigurationen sker i Report Server Configuration Manager. Tje
 ## <a name="security"></a>Sikkerhed
 Sikkerhed og beskyttelse er vigtigt for alle organisationer. Du kan få mere at vide om godkendelse, roller og rettigheder i [sikkerheds](https://docs.microsoft.com/sql/reporting-services/security/reporting-services-security-and-protection)dokumentationen.
 
-## <a name="next-steps"></a>Næste trin
-[Installer Power BI-rapportserver](install-report-server.md)  
+## <a name="next-steps"></a>De næste trin
+[Installér Power BI-rapportserver](install-report-server.md)  
 [Find produktnøglen til din rapportserver](find-product-key.md)  
-[Installer Power BI Desktop optimeret til Power BI-rapportserver](install-powerbi-desktop.md)  
+[Installér Power BI Desktop optimeret til Power BI Report Server](install-powerbi-desktop.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 

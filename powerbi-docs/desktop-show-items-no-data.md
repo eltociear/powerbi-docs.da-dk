@@ -10,10 +10,10 @@ ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a8d99a041edbbe353badbb580940e918b30a0a9d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73879723"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Vis elementer uden data i Power BI
@@ -163,7 +163,7 @@ Hvis **Vis elementer uden data** f.eks. er aktiveret for ét felt i en matrixvis
 
 ![Vis elementer uden data er automatisk aktiveret for felter i den samme visualisering](media/desktop-show-items-no-data/show-items-no-data-05.png)
 
-I modsætning hertil er **Vis elementer uden data** *ikke* aktiveret automatisk for feltet *Kontinent*, som vises i bucketen **Kolonner**. 
+I modsætning hertil er **Vis elementer uden data***ikke* aktiveret automatisk for feltet *Kontinent*, som vises i bucketen **Kolonner**. 
 
 Funktionsmåden af visualiseringen ses ofte, når en visualisering konverteres til en anden type, f.eks. konvertering af en matrixvisualisering til en tabelvisualisering. Ved sådanne konverteringer er **Vis elementer uden data** automatisk aktiveret for alle felter, der flyttes til en bucket, hvor funktionen er aktiveret for et felt i det pågældende bucket. Hvis funktionen **Vis elementer uden data** er aktiveret for *Leverandør-id* i forrige eksempel, og visualiseringen konverteres til en tabel, flyttes feltet *Kontinent* fra bucketen **Kolonner** (sammen med felterne i bucketen **Rækker**) til den eneste bucket, der bruges i en tabelvisualisering, nemlig bucketen **Værdier**. Derfor vil **Vis elementer uden data** være aktiveret for alle felter i bucketen **Værdier**.
 

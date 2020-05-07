@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maggies
 ms.openlocfilehash: 6e341f80e3631228c28590ccf0a7711e0b624f2c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874227"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Konfigurer Kerberos til at bruge Power BI-rapporter
@@ -213,9 +213,9 @@ Når al den ovenstående konfiguration er på plads, bør din rapport blive vist
 
 Mens denne konfiguration bør fungere i de fleste tilfælde, kan der med Kerberos være en anden konfiguration afhængigt af dit miljø. Hvis rapporten stadig ikke indlæses, skal du kontakte din domæneadministrator for at få undersøgt det nærmere, eller du kan kontakte support.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Administratoroversigt](admin-handbook-overview.md)  
-[Installer Power BI-rapportserver](install-report-server.md)  
+[Installér Power BI-rapportserver](install-report-server.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

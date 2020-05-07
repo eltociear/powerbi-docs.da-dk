@@ -10,10 +10,10 @@ ms.date: 06/06/2019
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: 21b7b93b4e522a8e6a49d22b54c9ddd83cb5e042
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74699615"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>Opdater et datasæt baseret på en Excel-arbejdsmappe på OneDrive eller SharePoint Online
@@ -32,7 +32,7 @@ Du kan opdatere datasættet i Power BI-tjenesten. Når du opdaterer manuelt elle
 
 I Power BI understøttes **Opdater nu** og **Planlæg opdatering** for de datasæt, der er oprettet via Power BI Desktop-filer, som er importeret fra et lokalt drev, hvor Hent data/Forespørgselseditor bruges til at oprette forbindelse til og indlæse data fra en af følgende datakilder:  
 
-### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personlig
+### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
 
 * Alle onlinedatakilder, der vises i Hent data og Query Editor i Power BI Desktop.
 * Alle datakilder i det lokale miljø, der vises i Hent data og Forespørgselseditor i Power BI Desktop, undtagen Hadoop-fil (HDFS) og Microsoft Exchange.
@@ -61,9 +61,9 @@ Hvis du foretager ændringer i din fil på OneDrive, som ikke kan synkroniseres 
 
 Når du opretter forbindelse til en Excel-projektmappe på OneDrive for Business eller SharePoint Online, har du to valgmuligheder i forhold til, hvordan du flytter indholdet fra din projektmappe til Power BI.
 
-[**Importér Excel-data til Power BI** ](service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi) – Når du importerer en Excel-projektmappe fra dit OneDrive for Business eller SharePoint Online, fungerer det som beskrevet ovenfor.
+[**Importér Excel-data til Power BI**](service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi) – Når du importerer en Excel-projektmappe fra dit OneDrive for Business eller SharePoint Online, fungerer det som beskrevet ovenfor.
 
-[**Opret forbindelse, administrer og se Excel i Power BI** ](service-excel-workbook-files.md#one-excel-workbook--two-ways-to-use-it) – Når du bruger denne valgmulighed, skal du oprette forbindelse fra Power BI direkte til din projektmappe på OneDrive for Business eller SharePoint Online.
+[**Opret forbindelse, administrer og se Excel i Power BI**](service-excel-workbook-files.md#one-excel-workbook--two-ways-to-use-it) – Når du bruger denne valgmulighed, skal du oprette forbindelse fra Power BI direkte til din projektmappe på OneDrive for Business eller SharePoint Online.
 
 Når du opretter forbindelse til en Excel-projektmappe på denne måde, oprettes der ikke et datasæt i Power BI. Men projektmappen vises i Power BI-tjenesten under Rapporter med et Excel-ikon ud for navnet. I modsætning til Excel Online kan du oprette en tidsplan for opdateringer, når du opretter forbindelse til din projektmappe fra Power BI, hvis din projektmappe har forbindelse til eksterne datakilder, der indlæser data i Excel-datamodellen.
 
@@ -92,7 +92,7 @@ Derefter skal du i **Indlæs til** sørge for at vælge **Føj disse data til da
 
 ### <a name="what-if-i-use-get-external-data-in-power-pivot"></a>Hvad sker der, hvis jeg bruger Hent eksterne data i Power Pivot?
 
-Det er ikke noget problem. Når du bruger Power Pivot til at oprette forbindelse til og forespørge om data fra en lokal eller onlinedatakilde, indlæses dataene automatisk i datamodellen.
+Intet problem. Når du bruger Power Pivot til at oprette forbindelse til og forespørge om data fra en lokal eller onlinedatakilde, indlæses dataene automatisk i datamodellen.
 
 ## <a name="how-do-i-schedule-refresh"></a>Hvordan kan jeg planlægge en opdatering?
 
@@ -102,7 +102,7 @@ Du kan finde oplysninger om, hvordan du konfigurerer en tidsplan for opdatering,
 
 ## <a name="when-things-go-wrong"></a>Når det går galt
 
-Når tingene går galt, skyldes det som regel, at Power BI ikke kan logge på datakilder, at gatewayen er offline, eller hvis datasættet opretter forbindelse til en datakilde i det lokale miljø. Kontrollér, at Power BI kan logge på datakilderne. Hvis en adgangskode, du bruger til at logge på en datakilde, ændres, eller Power BI logges af datakilden, kan du prøve at logge på datakilderne igen vha. legitimationsoplysningerne for datakilden.
+Når tingene går galt, skyldes det som regel, at Power BI ikke kan logge på datakilder, at gatewayen er offline, eller hvis datasættet opretter forbindelse til en datakilde i det lokale miljø. Kontrollér, at Power BI kan logge på datakilderne. Hvis du har ændret den adgangskode, du bruger til at logge på en datakilde med, eller hvis Power BI logges af datakilden, skal du prøve at logge på datakilderne igen vha. legitimationsoplysningerne for datakilden.
 
 Sørg for, at indstillingen **Send mig en mail med meddelelse om opdateringsfejl** er markeret. Du vil have det at vide med det samme, hvis en planlagt opdatering mislykkes.
 

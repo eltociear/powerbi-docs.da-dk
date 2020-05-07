@@ -11,10 +11,10 @@ ms.date: 12/5/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 6abca661a1553bfabc3da35fe714ff9bced5555a
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74907614"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vandfaldsdiagrammer i Power BI
@@ -56,7 +56,7 @@ I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](https
 
 1. Åbn **PBIX-filen med eksemplet Detailhandelsanalyse** i rapportvisning ![ikon for skærmbillede af rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
+1. Vælg ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
 
 
 ## <a name="create-a-waterfall-chart"></a>Opret et vandfaldsdiagram
@@ -73,7 +73,7 @@ Du opretter et vandfaldsdiagram, der viser afvigelsen i salg (anslået salg i fo
 
     ![Visualiseringsskabeloner](media/power-bi-visualization-waterfall-charts/convert-waterfall.png)
 
-1. Vælg **Time** > **FiscalMonths** for at føje det til området **Category**.
+1. Vælg **Tid** > **Regnskabsmåned** for at føje det til beholderen **Kategori**.
 
     ![Vandfaldsdiagram](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-month.png)
 
@@ -115,8 +115,8 @@ Se lidt nærmere på, hvad der bidrager mest til ændringerne måned for måned.
 
     ![vandfaldsdiagram](media/power-bi-visualization-waterfall-charts/power-bi-axis-waterfall.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * [Rediger, hvordan visualiseringer interagerer i en Power BI-rapport](../service-reports-visual-interactions.md)
 
-* [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Typer af visualiseringer i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

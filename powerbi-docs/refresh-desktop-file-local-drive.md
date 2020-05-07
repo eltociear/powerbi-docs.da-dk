@@ -10,10 +10,10 @@ ms.date: 06/04/2019
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: 63d49a439d10acc5d7cda10b76b04a26fcdb085a
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698802"
 ---
 # <a name="refresh-a-dataset-created-from-a-power-bi-desktop-file-on-a-local-drive"></a>Opdater et datasæt, der er oprettet via en Power BI Desktop-fil på et lokalt drev
@@ -22,7 +22,7 @@ ms.locfileid: "74698802"
 
 I Power BI understøttes "Opdater nu" og "Planlæg opdatering" for de datasæt, der er oprettet via Power BI Desktop-filer, som er importeret fra et lokalt drev, hvor Hent data/Forespørgselseditor bruges til at oprette forbindelse til og indlæse data fra en af følgende datakilder:
 
-### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personlig
+### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
 
 - Alle onlinedatakilder, der vises i Hent data og Query Editor i Power BI Desktop.
 - Alle datakilder i det lokale miljø, der vises i Hent data og Forespørgselseditor i Power BI Desktop, undtagen Hadoop-fil (HDFS) og Microsoft Exchange.
@@ -35,11 +35,11 @@ I Power BI understøttes "Opdater nu" og "Planlæg opdatering" for de datasæt, 
 >
 >
 
-Du kan udføre en manuel engangsopdatering direkte i Power BI Desktop ved at vælge **Opdater** under Hjem på båndet. Når du vælger **Opdater** her, opdateres dataene i *filens* model med de opdaterede data fra den oprindelige datakilde. Denne type opdatering, som foretages i selve Power BI Desktop, er forskellig fra den manuelle eller planlagte opdatering i Power BI, og det er vigtigt at forstå forskellen.
+Du kan udføre en manuel engangsopdatering direkte i Power BI Desktop ved at vælge **Opdater** under Hjem på båndet. Når du vælger **Opdater** her, opdateres dataene i *filens* model med de opdaterede data fra den oprindelige datakilde. Denne type opdatering, udelukkende fra selve Power BI Desktop-programmet, er forskellig fra den manuelle eller planlagte opdatering Power BI, og det er vigtigt at forstå forskellen.
 
-![Opdater](media/refresh-desktop-file-local-drive/pbix-refresh.png)
+![Refresh](media/refresh-desktop-file-local-drive/pbix-refresh.png)
 
-Når du importerer din Power BI Desktop-fil fra et lokalt drev, indlæses data og andre oplysninger om modellen i et datasæt i Power BI-tjenesten. Du skal opdatere dataene i datasættet i Power BI-tjenesten, ikke i Power BI Desktop, da dine rapporter i Power BI-tjenesten er baseret på disse data. Da datakilderne er eksterne, kan du manuelt opdatere datasættet vha. **Opdater nu**, eller du kan oprette en tidsplan for opdatering vha. **Planlæg opdatering**.
+Når du importerer din Power BI Desktop-fil fra et lokalt drev, indlæses data og andre oplysninger om modellen i et datasæt i Power BI-tjenesten. Du vil opdatere dataene i datasættet i Power BI-tjenesten, ikke Power BI Desktop, da det er det, dine rapporter i Power BI-tjenesten er baseret på. Da datakilderne er eksterne, kan du manuelt opdatere datasættet vha. **Opdater nu**, eller du kan oprette en tidsplan for opdatering vha. **Planlæg opdatering**.
 
 Når du opdaterer datasættet, oprettes der ikke forbindelse til filen på det lokale drev via Power BI for at forespørge om opdaterede data. Oplysningerne i datasættet bruges til at oprette forbindelse direkte til datakilderne for at forespørge om opdaterede data, som derefter indlæses i datasættet.
 
@@ -56,7 +56,7 @@ Du kan finde oplysninger om, hvordan du konfigurerer en tidsplan for opdatering,
 
 ## <a name="when-things-go-wrong"></a>Når det går galt
 
-Når tingene går galt, skyldes det som regel, at Power BI ikke kan logge på datakilder, at gatewayen er offline, eller hvis datasættet opretter forbindelse til en datakilde i det lokale miljø. Kontrollér, at Power BI kan logge på datakilderne. Hvis en adgangskode, du bruger til at logge på en datakilde med, ændres, eller Power BI logges af datakilden, skal du prøve at logge på datakilderne igen vha. legitimationsoplysningerne for datakilden.
+Når tingene går galt, skyldes det som regel, at Power BI ikke kan logge på datakilder, at gatewayen er offline, eller hvis datasættet opretter forbindelse til en datakilde i det lokale miljø. Kontrollér, at Power BI kan logge på datakilderne. Hvis du har ændret den adgangskode, du bruger til at logge på en datakilde med, eller hvis Power BI logges af datakilden, skal du prøve at logge på datakilderne igen vha. legitimationsoplysningerne for datakilden.
 
 Sørg for, at indstillingen **Send mig en mail med meddelelse om opdateringsfejl** er markeret. Du vil have det at vide med det samme, hvis en planlagt opdatering mislykkes.
 

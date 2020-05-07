@@ -11,10 +11,10 @@ ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: d620c1def289cea39a90092876ce275eea8ee699
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73853069"
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Fastgør en hel rapportside, som et dynamisk felt, til et Power BI-dashboard
@@ -37,12 +37,12 @@ Se Amanda fastgøre en dynamisk rapportside til et dashboard, og følg derefter 
 2. Vælg **Fastgør dynamisk side** på menulinjen, uden at der er valgt visualiseringer.
    
    ![Ikon til fastgørelse af dynamisk side](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page.png) 
-3. Fastgør feltet til et eksisterende dashboard eller et nyt dashboard. Læg mærke til den fremhævede tekst: *Ved at fastgøre en dynamisk side vises ændringer i rapporter på dashboardfeltet, når siden opdateres.*
+3. Fastgør feltet til et eksisterende dashboard eller til et nyt dashboard. Læg mærke til den fremhævede tekst: *Med Fastgør dynamisk side kan du få ændringer af rapporter vist i dashboardfeltet, når siden opdateres.*
    
    * Eksisterende dashboard: Vælg navnet på dashboardet på rullelisten. Dashboards, der er blevet delt med dig, vises ikke på rullelisten.
    * Nyt dashboard: Skriv navnet på det nye dashboard.
      
-     ![Dialogboksen Fastgør til dashboard](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page-dialog.png)
+     ![Fastgør til dashboarddialogboks](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page-dialog.png)
 4. Vælg **Fastgør dynamisk**. En meddelelse om fuldførelse (næsten helt oppe i højre hjørne) giver dig besked om, at siden er blevet føjet til dit dashboard som et felt.
 
 ## <a name="open-the-dashboard-to-see-the-pinned-live-tile"></a>Åbn dashboardet for at se det fastgjorte felt
@@ -51,7 +51,7 @@ Se Amanda fastgøre en dynamisk rapportside til et dashboard, og følg derefter 
    
     ![dashboards med et dynamisk felt](media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Dashboards i Power BI](consumer/end-user-dashboards.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

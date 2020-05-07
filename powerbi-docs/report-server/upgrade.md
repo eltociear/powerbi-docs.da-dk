@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/05/2017
 ms.openlocfilehash: eac019bc31396359b7520e057f2384adce386a96
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73873944"
 ---
-# <a name="upgrade-power-bi-report-server"></a>Opgrader Power BI-rapportserver
+# <a name="upgrade-power-bi-report-server"></a>Opgrader Power BI Report Server
 
 Find ud af, hvordan du opgraderer Power BI Report Server.
 
@@ -58,11 +58,11 @@ Power BI Report Server bruger konfigurationsfilerne til at gemme programindstill
 
 Det er nemt at opgradere Power BI Report Server. Der er kun et par trin til installation af filerne.
 
-1. Find placeringen for PowerBIReportServer.exe, og start installationen.
+1. Find placeringen af PowerBIReportServer.exe, og start installationen.
 
 2. Vælg **Opgrader Power BI Report Server**.
 
-    ![Opgrader Power BI-rapportserver](media/upgrade/reportserver-upgrade1.png "Opgrader Power BI-rapportserver")
+    ![Opgrader Power BI-rapportserver](media/upgrade/reportserver-upgrade1.png "Opgrader Power BI Report Server")
 
 3. Læs og acceptér licensens vilkår og betingelser, og vælg derefter **Opgrader**.
 
@@ -76,10 +76,10 @@ Det er nemt at opgradere Power BI Report Server. Der er kun et par trin til inst
 
 Når rapportserveren er opgraderet, skal du sikre dig, at Power Bi-rapportforfattere opgraderer til versionen af Power BI Desktop, der er optimeret til Power Bi Report Server, som stemmer overens med serveren.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * [Administratoroversigt](admin-handbook-overview.md)  
-* [Installer Power BI Desktop optimeret til Power BI-rapportserver](install-powerbi-desktop.md)  
+* [Installér Power BI Desktop optimeret til Power BI Report Server](install-powerbi-desktop.md)  
 * [Bekræft installationen af Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 * [Konfigurer kontoen til rapportservertjenesten](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 * [Konfigurer rapportserverens URL-adresser](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
@@ -87,6 +87,6 @@ Når rapportserveren er opgraderet, skal du sikre dig, at Power Bi-rapportforfat
 * [Initialiser en rapportserver](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server)  
 * [Konfigurer SSL-forbindelser på en rapportserver](https://docs.microsoft.com/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)  
 * [Konfigurer Windows-tjenestekonti og -tilladelser](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
-* [Browserunderstøttelse af Power BI Report Server](browser-support.md)
+* [Browserunderstøttelse af Power BI-rapportserver](browser-support.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

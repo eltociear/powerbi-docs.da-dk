@@ -10,10 +10,10 @@ ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 95170ec36c5b4da0314c858ae415c3bbcb2ab556
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73877412"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips til udformning af et fantastisk Power BI-dashboard
@@ -79,7 +79,7 @@ For at kunne mestre kunsten at lave et godt dashboard-design bør du overveje at
 * *Envisioning Information* af Edward Tufte  
 * *Advanced Presentations* by Design af Andrew Abela   
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Opret et dashboard fra en rapport](service-dashboard-create.md)  
 [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

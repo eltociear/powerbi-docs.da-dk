@@ -10,10 +10,10 @@ ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: f1598aabee45359b312d39f836cede8ca4198bb2
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75758617"
 ---
 # <a name="display-a-visualizations-underlying-data"></a>Vis en visualiserings underliggende data
@@ -71,7 +71,7 @@ Du kan også fokusere på ét dataelement i en visualisering og analysere de und
 - Du kan ikke bruge Se poster, når der benyttes en beregnet måling i det pågældende visual.
 - Du kan ikke bruge Se poster, når du har oprettet forbindelse til en live flerdimensionel model.  
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Eksportér data fra Power BI-visualiseringer](power-bi-visualization-export-data.md)    
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

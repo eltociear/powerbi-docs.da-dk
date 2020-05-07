@@ -10,10 +10,10 @@ ms.date: 06/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: c96b4ebae574a3b6a6fa54c5f5dc99b5bc948a90
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874414"
 ---
 # <a name="types-of-filters-in-power-bi-reports"></a>Typer af filtre i Power BI-rapporter
@@ -76,7 +76,7 @@ Pass-through-filtre er filtre på visualiseringsniveau, der er oprettet via spø
 
 I denne tabel sammenlignes det, som forfattere kan gøre med de forskellige filtertyper.
 
-| Filtertype | Rediger | Ryd | Slet | Skjul | Lås | Sortér | Omdøb |
+| Filtertype | Rediger | Clear | Slet | Skjul | Lås | Sort | Omdøb |
 |----|----|----|----|----|----|----|----|
 | Manuelle filtre | Y | Y | Y | Y | Y | Y | Y |
 | Automatiske filtre | Y | Y | N | Y | Y | Y | Y |
@@ -90,7 +90,7 @@ I denne tabel sammenlignes det, som forfattere kan gøre med de forskellige filt
 
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Føj filtre til rapporter](power-bi-report-add-filter.md)
 

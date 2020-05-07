@@ -10,10 +10,10 @@ ms.date: 10/20/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: 143851013679dd0356c1ea5036c3d724b1dc436d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73875185"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Føj et filter til en rapport i Power BI
@@ -89,7 +89,7 @@ Nu skal vi føje et nyt felt til vores visual som et filter på visualiseringsni
      
     ![Tilføj et felt i ruden Filtre](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
-    Bemærk, at **District Manager** *ikke* føjes til selve visualiseringen. Visualiseringen består stadig af **StoreNumberName** som akse og **This Year Sales** som værdi.  
+    Bemærk, at **District Manager***ikke* føjes til selve visualiseringen. Visualiseringen består stadig af **StoreNumberName** som akse og **This Year Sales** som værdi.  
      
     ![Feltet findes ikke i visualiseringen](media/power-bi-report-add-filter/power-bi-visualization.png)
 
@@ -172,7 +172,7 @@ Lad os se, hvordan filteret til detaljeadgang fungerer.
 - Hvis du ikke får vist ruden Felter, skal du sikre dig, at du er i [Redigeringsvisning](service-interact-with-a-report-in-editing-view.md) for rapporten    
 - Hvis du har foretaget mange ændringer af filtrene, og du vil vende tilbage til de indstillinger, som rapportens forfatter har angivet, skal du vælge **Nulstil til standard** på den øverste menulinje.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Få en præsentation af ruden Rapportfiltre](consumer/end-user-report-filter.md)
 
 [Filtre og fremhævning i rapporter](power-bi-reports-filters-and-highlighting.md)

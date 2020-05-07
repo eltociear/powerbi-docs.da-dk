@@ -10,10 +10,10 @@ ms.date: 03/19/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 4e9bd94a044d88c4f0a767738d07b97ddc989f7e
-ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "82065610"
 ---
 # <a name="featured-dashboards-in-the-power-bi-service"></a>Udvalgte dashboards i Power BI-tjenesten
@@ -59,7 +59,7 @@ Hvis du beslutter, at du ikke vil have et dashboard markeret som udvalgt, skal d
 
     ![Deaktiver udvalgt dashboard er valgt](./media/end-user-featured/power-bi-unfeature.png)
    
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 - [Gør et dashboard til favorit](end-user-favorite.md)    
 - Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).
 

@@ -11,10 +11,10 @@ ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: d0f258af383327fb25c8f0e896677bbd19eca6c4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73877420"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fastgør et felt til et Power BI-dashboard fra Excel
@@ -54,12 +54,12 @@ Du kan ikke redigere din projektmappe i Power BI. Men hvis du har brug for at fo
    
     ![vælg celler i Excel-projektmappe](media/service-dashboard-pin-tile-from-excel/pbi_selectrange.png)
 2. Vælg ikonet for fastgørelse ![tegnestiftikon](media/service-dashboard-pin-tile-from-excel/pbi_pintile_small.png) . 
-3. Fastgør feltet til et eksisterende dashboard eller et nyt dashboard. 
+3. Fastgør feltet til et eksisterende dashboard eller til et nyt dashboard. 
    
    * Eksisterende dashboard: Vælg navnet på dashboardet på rullelisten.
    * Nyt dashboard: Skriv navnet på det nye dashboard.
    
-     ![Dialogboksen Fastgør til dashboard](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
+     ![Fastgør til dashboarddialogboks](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
 4. Vælg **Fastgør**. En meddelelse om fuldførelse (næsten helt oppe i højre hjørne) giver dig besked om, at området er blevet føjet til dit dashboard som et felt. 
    
     ![Fastgjort til dashboarddialogboks](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
@@ -80,9 +80,9 @@ Hvis du vælger et felt til projektmappen, åbnes den sammenkædede projektmappe
  ![video](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
-Funktioner, der ikke understøttes: Power BI bruger Excel Services til at hente felterne i projektmappen. Eftersom nogle funktioner fra Excel ikke understøttes i Excel Services REST API, vil de derfor ikke kunne ses på felter i Power BI. Eksempel: Minidiagrammer, betinget formatering angivet via ikoner og klokkeslætsudsnit. Se en fuldstændig liste over ikke-understøttede funktioner i [Ikke-understøttede funktioner i Excel Services REST API](https://msdn.microsoft.com/library/office/ff394477.aspx)
+Funktioner, der ikke understøttes: Power BI bruger Excel Services til at hente felterne i projektmappen. Eftersom nogle funktioner fra Excel ikke understøttes i Excel Services REST API, vil de derfor ikke kunne ses på felter i Power BI. Eksempel: minidiagrammer, betinget formatering angivet via ikoner og klokkeslætsudsnit. Se en fuldstændig liste over ikke-understøttede funktioner i [Ikke-understøttede funktioner i Excel Services REST API](https://msdn.microsoft.com/library/office/ff394477.aspx)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Del et dashboard, der indeholder links til en Excel-projektmappe](service-share-dashboard-that-links-to-excel-onedrive.md)
 
 [Hent data fra Excel-projektmapper](service-excel-workbook-files.md)

@@ -1,6 +1,6 @@
 ---
-title: Videoer om Power BI Desktop
-description: Videoer om Power BI Desktop
+title: Videoer i Power BI Desktop
+description: Videoer i Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,13 +10,13 @@ ms.date: 01/02/2020
 ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: 8dbd72b310d6e62619a61d34001afc1f7bc44189
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75730990"
 ---
-# <a name="power-bi-desktop-videos"></a>Videoer om Power BI Desktop
+# <a name="power-bi-desktop-videos"></a>Videoer i Power BI Desktop
 
 Power BI Desktop har en [YouTube-kanal](https://www.youtube.com/playlist?list=PL1N57mwBHtN2q1WbU5O29rrn_A0lkVv9p)!
 
