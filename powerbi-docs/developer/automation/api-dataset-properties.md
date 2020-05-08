@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: e74e390a5d228cb4a158d422cf0adab48b573cce
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79079663"
 ---
 # <a name="dataset-properties"></a>Egenskaber for datasæt
@@ -22,12 +22,12 @@ Den aktuelle v1 for datasæts API giver kun mulighed for at oprette et datasæt 
 > [!IMPORTANT]
 > Der kan tilgås på siden [Datasæts handlingsgrupper](https://docs.microsoft.com/rest/api/power-bi/datasets).
 
-## <a name="dataset"></a>Datasæt
+## <a name="dataset"></a>Dataset
 
 Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
 ---------|---------|---------|---------|---------
-id     |  Guid       | Entydigt id for datasættet overalt i systemet.        | Sandt        | Falsk        
-name     | Streng        | Datasættets brugerdefinerede navn.        | Falsk        | Sandt        
+id     |  Guid       | Entydigt id for datasættet overalt i systemet.        | Sand        | Falsk        
+name     | Streng        | Datasættets brugerdefinerede navn.        | Falsk        | Sand        
 tabeller     | Tabel[]        | Samling af tabeller.        |  Falsk       | Falsk        
 relationer     | Relation[]        | Samling af relationer mellem tabeller.        | Falsk        |  Falsk  
 standardtilstand     | Streng        | Bestemmer, om datasættet sendes via push, streames elle begge dele, med værdierne "Push" og "Streaming".         | Falsk        |  Falsk
@@ -36,29 +36,29 @@ standardtilstand     | Streng        | Bestemmer, om datasættet sendes via push
 
 Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
 ---------|---------|---------|---------|---------
-name     | Streng        |  Tabellens brugerdefinerede navn. Bruges også som id for tabellen.       | Falsk        |  Sandt       
-kolonner     |  Kolonne[]       |  Samling af kolonner.       | Falsk        |  Sandt       
+name     | Streng        |  Tabellens brugerdefinerede navn. Bruges også som id for tabellen.       | Falsk        |  Sand       
+kolonner     |  Kolonne[]       |  Samling af kolonner.       | Falsk        |  Sand       
 målinger     | måling[]        |  Samling af målinger.       | Falsk        |  Falsk       
-isHidden     | Boolesk        | Hvis true, er tabellen skjult for klientværktøjer.        | Falsk        | Falsk        
+isHidden     | Boolean        | Hvis true, er tabellen skjult for klientværktøjer.        | Falsk        | Falsk        
 
 ## <a name="column"></a>Kolonne
 
 Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
 ---------|---------|---------|---------|---------
-name     |  Streng        | Kolonnens brugerdefinerede navn.        |  Falsk       | Sandt       
-dataType     |  Streng       |  Understøttede [EDM-datatyper](https://msdn.microsoft.com/library/ee382832.aspx) og begrænsninger. Se [Begrænsninger for datatypen](#data-type-restrictions).      |  Falsk       | Sandt        
+name     |  Streng        | Kolonnens brugerdefinerede navn.        |  Falsk       | Sand       
+dataType     |  Streng       |  Understøttede [EDM-datatyper](https://msdn.microsoft.com/library/ee382832.aspx) og begrænsninger. Se [Begrænsninger for datatypen](#data-type-restrictions).      |  Falsk       | Sand        
 formatString     | Streng        | En streng, der beskriver, hvordan værdien skal formateres, når den vises. Hvis du vil vide mere om strengformatering, se [FORMAT_STRING-indholdet](https://msdn.microsoft.com/library/ms146084.aspx).      | Falsk        | Falsk        
 sortByColumn    | Streng        |   Strengnavnet på en kolonne i samme tabel, der bruges til at bestille den aktuelle kolonne.     | Falsk        | Falsk       
-dataCategory     | Streng        |  Strengværdi, der bruges til datakategorien, som beskriver dataene i denne kolonne. Nogle almindelige værdier omfatter: Address, City, Continent, Country, Image, ImageUrl, Latitude, Longitude, Organization, Place, PostalCode, StateOrProvince, WebUrl       |  Falsk       | Falsk        
-isHidden    |  Boolesk       |  Egenskaben, der angiver, om kolonnen er skjult i visningen. Standard er false.       | Falsk        | Falsk        
+dataCategory     | Streng        |  Strengværdi, der bruges til datakategorien, som beskriver dataene i denne kolonne. Almindelige værdier omfatter: adresse, by, kontinent, land, billede, BilledUrl, breddegrad, længdegrad, organisation, sted, postnummer, stat eller land, WebUrl       |  Falsk       | Falsk        
+isHidden    |  Boolean       |  Egenskaben, der angiver, om kolonnen er skjult i visningen. Standardindstillingen er false.       | Falsk        | Falsk        
 summarizeBy     | Streng        |  Standardmetode for sammenlægning til kolonnen. Værdier omfatter: standard, ingen, sum, min, maks, antal, gennemsnit, distinctCount     |  Falsk       | Falsk
 
 ## <a name="measure"></a>Måling
 
 Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
 ---------|---------|---------|---------|---------
-name     | Streng        |  Målingens brugerdefinerede navn.       |  Falsk       | Sandt        
-udtryk     | Streng        | Et gyldigt DAX-udtryk.        | Falsk        |  Sandt       
+name     | Streng        |  Målingens brugerdefinerede navn.       |  Falsk       | Sand        
+udtryk     | Streng        | Et gyldigt DAX-udtryk.        | Falsk        |  Sand       
 formatString     | Streng        |  En streng, der beskriver, hvordan værdien skal formateres, når den vises. Hvis du vil vide mere om strengformatering, se [FORMAT_STRING-indholdet](https://msdn.microsoft.com/library/ms146084.aspx).       | Falsk        | Falsk        
 isHidden     | Streng        |  Hvis true, er tabellen skjult for klientværktøjer.       |  Falsk       | Falsk       
 
@@ -66,12 +66,12 @@ isHidden     | Streng        |  Hvis true, er tabellen skjult for klientværktø
 
 Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet 
 ---------|---------|---------|---------|---------
-name     | Streng        | Relationens brugerdefinerede navn. Bruges også som id for relationen.        | Falsk       | Sandt        
-crossFilteringBehavior     | Streng        |    Relationens retning for filtrering: OneDirection (standard), BothDirections, automatisk       | Falsk        | Falsk        
-fromTable     | Streng        | Navnet på fremmed nøgle-tabellen.        | Falsk        | Sandt         
-fromColumn    | Streng        | Navnet på fremmed nøgle-kolonnen.        | Falsk        | Sandt         
-toTable    | Streng        | Navnet på tabellen med den primære nøgle.        | Falsk        | Sandt         
-toColumn     | Streng        | Navnet på kolonnen med den primære nøgle.        | Falsk        | Sandt        
+name     | Streng        | Relationens brugerdefinerede navn. Bruges også som id for relationen.        | Falsk       | Sand        
+crossFilteringBehavior     | Streng        |    Relationens filterretning: OneDirection (standard), BothDirections, automatisk       | Falsk        | Falsk        
+fromTable     | Streng        | Navnet på fremmed nøgle-tabellen.        | Falsk        | Sand         
+fromColumn    | Streng        | Navnet på fremmed nøgle-kolonnen.        | Falsk        | Sand         
+toTable    | Streng        | Navnet på tabellen med den primære nøgle.        | Falsk        | Sand         
+toColumn     | Streng        | Navnet på kolonnen med den primære nøgle.        | Falsk        | Sand        
 
 ## <a name="data-type-restrictions"></a>Begrænsninger for datatypen
 
@@ -81,7 +81,7 @@ Datatype  |Begrænsninger
 ---------|---------
 Int64     |   Int64.MaxValue og Int64.MinValue er ikke tilladt.      
 Double     |  Værdierne Double.MaxValue og Double.MinValue er ikke tilladt. NaN understøttes ikke. +Infinity og -Infinity understøttes ikke i visse funktioner (f.eks. Min, Max).       
-Boolesk     |   Sand eller falsk.
+Boolean     |   Sand eller falsk.
 Datetime    |   Under indlæsning af data beregnes værdier baseret på brøkdele af dagen i hele multipler af 1/300 sekunder (3,33 ms).      
 Streng     |  Tillader i øjeblikket op til 4.000 tegn pr. strengværdi.
 Decimal|præcision = 28, skala = 4

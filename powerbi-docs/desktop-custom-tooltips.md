@@ -1,5 +1,5 @@
 ---
-title: Tilpasning af værktøjstips i Power BI Desktop
+title: Tilpasser værktøjstips i Power BI Desktop
 description: Opret brugerdefinerede værktøjstip for visualiseringer ved hjælp af træk og slip
 author: davidiseminger
 ms.reviewer: ''
@@ -10,10 +10,10 @@ ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 93177ac56bc2d8ecfe4b85f4ab66daef6bf0f0f3
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76160997"
 ---
 # <a name="customize-tooltips-in-power-bi-desktop"></a>Tilpas værktøjstip i Power BI Desktop

@@ -55,7 +55,7 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=848723'
             - name: Integrer rapporter
               href: quickstart-embed.md
-    - name: 'Sådan gør du:'
+    - name: Sådan gør du
       items:
         - name: Installer Power BI Desktop
           href: install-powerbi-desktop.md

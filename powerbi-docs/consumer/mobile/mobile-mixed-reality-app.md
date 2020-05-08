@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 99e9c407a92d126ddc4c6f4822106cfa6458dbac
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205912"
 ---
 # <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI til Mixed Reality-app (Eksempel)
 Se dine dashboards og rapporter i Power BI til Mixed Reality-appen (prøveversion) i en virtuel verden, eller placer dem, så du kan se dem på særlige steder i dine omgivelser. 
 
-[Download Power BI for Mixed Reality-appen](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab) fra Windows Store: I Windows Store hedder den "Power BI – Mobil". Interager med dine dashboards og rapporter i den virtuelle verden, og vælg dem, du vil placere. 
+[Download Power BI til Mixed Reality](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab)-appen fra Windows Store. I Windows Store hedder appen "Power BI - Mobil". Interager med dine dashboards og rapporter i den virtuelle verden, og vælg dem, du vil placere. 
 
 ## <a name="two-views-windows-classic-and-holographic"></a>To visninger: Windows klassisk og Windows Holographic
 
@@ -96,7 +96,7 @@ Her er nogle få begrænsninger og overvejelser, du skal være opmærksom på i 
 - Dashboards og rapporter opdateres hvert 45. sekund, efterhånden som dataene ændrer sig.
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Hent data fra den virkelige verden med Power BI-mobilappsene](mobile-apps-data-in-real-world-context.md)
 

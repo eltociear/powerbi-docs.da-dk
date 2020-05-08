@@ -11,10 +11,10 @@ ms.date: 03/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 7ff02eb07d4b052892cc80ab4710223d8d302a9f
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78893433"
 ---
 # <a name="customize-visualization-titles-backgrounds-and-legends"></a>Tilpas visualiseringernes titler, baggrunde og forklaringer
@@ -49,7 +49,7 @@ Hvis du vil følge med, skal du logge på Power BI Desktop og åbne rapporten [R
 
 1. Flyt skyderen **Titel** til **Til**.
 
-1. Hvis du vil ændre titlen, skal du skrive **Store count by month opened** i feltet *Titeltekst*.
+1. Hvis du vil ændre titlen, skal du skrive *Store count by month opened* i feltet **Titeltekst**.
 
     ![Skærmbillede af ruden Format med titelteksten indtastet.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png)
 
@@ -153,16 +153,16 @@ Her er en liste over de visualiseringer og tilpasningsindstillinger, der er tilg
 | Cirkel | ja | ja | ja |
 | Spørgsmål og svar | ja | ja | i/t |
 | Punktdiagram | ja | ja | ja |
-| Form | ja | ja | ja |
+| Figur | ja | ja | ja |
 | Udsnit | ja | ja | i/t |
 | Tabel | ja | ja | i/t |
 | Tekstfelt | nej | ja | i/t |
-| Træstruktur | ja | ja | ja |
+| Treemap | ja | ja | ja |
 | Vandfaldsdiagram | ja | ja | ja |
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
-- [Tilpas egenskaberne for X- og Y-aksen](power-bi-visualization-customize-x-axis-and-y-axis.md)
+- [Tilpas egenskaberne for x- og y-aksen](power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 - [Introduktion til farveformatering og akseegenskaber](service-getting-started-with-color-formatting-and-axis-properties.md)
 

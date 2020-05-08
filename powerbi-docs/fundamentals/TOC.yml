@@ -17,13 +17,13 @@
       items:
         - name: Hvad er nyt i den nyeste opdatering af Power BI Desktop?
           href: ../desktop-latest-update.md
-        - name: Nyheder i Power BI-tjenesten
+        - name: Hvad er nyt i Power BI service
           href: ../service-whats-new.md
         - name: Om Power BI-tjenesten
           href: ../service-basic-concepts.md
         - name: Ti tips til at få hjælp
           href: ../service-tips-for-finding-help.md
-        - name: Licensering
+        - name: Licenser
           items:
             - name: Tilmeld dig Power BI
               href: ../service-self-service-signup-for-power-bi.md
@@ -47,7 +47,7 @@
           href: ../videos.md
         - name: Webinarer
           href: ../webinars.md
-        - name: Videoer om Power BI Desktop
+        - name: Videoer i Power BI Desktop
           href: ../desktop-videos.md
         - name: Arkiv for Power BI Desktop-opdateringer
           href: ../desktop-latest-update-archive.md

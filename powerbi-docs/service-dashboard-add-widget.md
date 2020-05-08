@@ -11,10 +11,10 @@ ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 0c9e3db46c66fcd440ebd304370d31539dd5c5c7
-ms.sourcegitcommit: 313a5a6a01c09038a6152d681103accbd2faf437
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/20/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76282024"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>Føj billeder, videoer og mere til dit dashboard
@@ -126,7 +126,7 @@ Du kan bruge PubNub til at føje streamingdata, f.eks. Twitter-feeds eller senso
 4. Udfyld felterne **Navn på datasæt**, **Abonnementsnøgle** og **Kanalnavn**. Hvis det er en sikker forbindelse, har den også en autorisationsnøgle. Du kan bruge eksempelværdierne fra PubNub til at prøve det.
 5. Vælg **Næste**.
     Du kan se de felter, der er tilgængelige i datasættet, med deres datatyper og JSON-format.
-6. Vælg **Opret forbindelse**.
+6. Vælg **Connect**.
     Du har oprettet et streamingdatasæt.
 7. Gå tilbage til dashboardet, og vælg **Tilføj felt** > **Brugerdefinerede streamingdata** > **Næste** igen.
 8. Vælg det datasæt for sensordata, du oprettede > **Næste**.
@@ -150,7 +150,7 @@ Du kan bruge PubNub til at føje streamingdata, f.eks. Twitter-feeds eller senso
 
    Du kan se de felter, der er tilgængelige i datasættet, med deres datatyper og JSON-format.
 
-6. Vælg **Opret forbindelse**.
+6. Vælg **Connect**.
 
    Du har oprettet et streamingdatasæt.
 
@@ -240,8 +240,8 @@ Sådan foretager du ændringer af et eksisterende felt:
 * Du kan gøre det lettere at flytte feltet på dashboardet ved at tilføje en titel og evt. en undertitel.
 * Hvis du vil integrere indhold fra et websted, men webstedet ikke giver dig integreringskoden, der skal kopieres og indsættes, skal du se embed.ly for at få hjælp til at generere integreringskoden.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Introduktion til dashboardfelter for Power BI-designere](service-dashboard-tiles.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
+Har du flere spørgsmål? [Prøv Power BI-community'et](https://community.powerbi.com/).
 

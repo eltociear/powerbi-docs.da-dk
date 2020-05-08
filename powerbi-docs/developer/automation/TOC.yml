@@ -12,13 +12,13 @@
       items:
         - name: Overfør data til et datasæt
           href: walkthrough-push-data.md
-        - name: Hent et adgangstoken til godkendelse
+        - name: Hent en adgangstoken til godkendelse
           href: walkthrough-push-data-get-token.md
         - name: Opret et datasæt
           href: walkthrough-push-data-create-dataset.md
         - name: Få et datasæt til at tilføje rækker
           href: walkthrough-push-data-get-datasets.md
-        - name: Føj rækker til en tabel
+        - name: Tilføj rækker til en tabel
           href: walkthrough-push-data-add-rows.md
     - name: Begreber
       items:
@@ -32,7 +32,7 @@
               href: api-dataset-properties.md
             - name: Versionering af datamodel
               href: api-data-model-versioning.md
-    - name: 'Sådan gør du:'
+    - name: Sådan gør du
       items:
         - name: Konfigurer legitimationsoplysninger
           href: configure-credentials.md
@@ -42,7 +42,7 @@
           href: 'https://docs.microsoft.com/rest/api/power-bi'
         - name: Reference til Power BI REST-API
           href: rest-api-reference.md
-        - name: Komplet kodeliste
+        - name: Færdiggør kodeliste
           href: walkthrough-push-data-complete-code.md
     - name: Ressourcer
       items:

@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: eaf2e7fed056653f2ee44e25b493e6b5e170a8dd
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761450"
 ---
 # <a name="connect-to-data-by-using-power-bi-desktop-generic-interfaces"></a>Opret forbindelse til data med generiske grænseflader i Power BI Desktop 
@@ -56,7 +56,7 @@ Følgende liste indeholder nogle eksempler på de datakilder, som **Power BI Des
 | ODBC |Hive |[Hive ODBC-driveren](https://www.simba.com/drivers/hive-odbc-jdbc/) |
 | ODBC |IBM Netezza |[IBM Netezza-oplysninger](https://www.ibm.com/support/knowledgecenter/SSULQD_7.2.1/com.ibm.nz.datacon.doc/c_datacon_plg_overview.html) |
 | ODBC |Presto |[Presto ODBC-driveren](https://www.simba.com/drivers/presto-odbc-jdbc/) |
-| ODBC |Projekt Online |[Project Online-artikel](desktop-project-online-connect-to-data.md) |
+| ODBC |Project Online |[Project Online-artikel](desktop-project-online-connect-to-data.md) |
 | ODBC |Progress OpenEdge |[Blogindlæg om Progress OpenEdge ODBC-driveren](https://www.progress.com/blogs/connect-microsoft-power-bi-to-openedge-via-odbc-driver) |
 
 ## <a name="data-sources-accessible-through-ole-db"></a>Datakilder, der er tilgængelige via OLE DB
@@ -106,8 +106,8 @@ Følgende liste indeholder nogle eksempler på de datakilder, som **Power BI Des
 | R Script |SPSS-filer |[R Script-vejledning fra CRAN](https://cran.r-project.org/doc/manuals/R-data.html) |
 | R Script |Statistiske R-filer |[R Script-vejledning fra CRAN](https://cran.r-project.org/doc/manuals/R-data.html) |
 
-## <a name="next-steps"></a>Næste trin
-Du kan oprette forbindelse til mange forskellige typer datakilder ved hjælp af **Power BI Desktop**. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
+## <a name="next-steps"></a>De næste trin
+Du kan oprette forbindelse til mange forskellige typer datakilder ved hjælp af **Power BI Desktop**. Hvis du vil have mere at vide om datakilder, kan du se følgende ressourcer:
 
 * [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)

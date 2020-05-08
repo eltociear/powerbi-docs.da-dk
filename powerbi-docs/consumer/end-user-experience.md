@@ -12,10 +12,10 @@ ms.date: 01/31/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 595ce61bf2020c27420a33871e82ca7ff9025d60
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79040138"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Hurtig introduktion – Navigation i Power BI-tjenesten
@@ -26,7 +26,7 @@ Nu, hvor du kender de grundlæggende funktioner i Power BI, kan vi se nærmere p
  
 ## <a name="prerequisites"></a>Forudsætninger
 
-- Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
+- Hvis du ikke er tilmeldt Power BI, skal du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
 
 - Læs om [grundlæggende begreber i Power BI-tjenesten](end-user-basic-concepts.md)
 
@@ -127,7 +127,7 @@ Du kan få flere oplysninger i [Favoritter](end-user-favorite.md)
 Hvis du vil vide mere, kan du se [Seneste i Power BI](end-user-recent.md)
 
 ### <a name="search-and-sort-content"></a>Søg og sortér indholdet
-Når du er ny bruger af Power BI-tjenesten, har du kun lidt indhold. Men når dine kolleger begynder at dele indhold med dig, og du begynder at downloade apps, kan du få en lang liste med indhold. På dette tidspunkt vil du opdage, at søgning og sortering er meget nyttigt.
+Når du er ny bruger af Power BI-tjenesten, har du kun lidt indhold. Men når kollegaer begynder at dele indhold med dig, og du begynder at downloade apps, kan du få en lang liste med indhold. Det er i den situation, at søgning og sortering er meget praktisk.
 
 Søgefunktionen er tilgængelig næsten overalt i Power BI-tjenesten. Se blot efter søgefeltet eller søgeikonet med et forstørrelsesglas.    
 ![forstørrelsesglasikon](./media/end-user-experience/power-bi-search-icon.png)
@@ -168,7 +168,7 @@ Når du er færdig med denne hurtige introduktion, kan du slette dashboardet, ra
 
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 > [!div class="nextstepaction"]
 > [Læsevisning i Power BI-tjenesten](end-user-reading-view.md)

@@ -9,10 +9,10 @@ ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 30ab632d11befd34ff9a234e441b345c696fb54d
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78922982"
 ---
 # <a name="planning-a-report-in-power-bi-report-builder"></a>Planlægning af en rapport i Power BI Report Builder
@@ -47,6 +47,6 @@ Overvej, om du vil skjule rapportelementer, herunder dataområder, grupper og ko
   
 Du kan gemme din rapport på din lokale computer og fortsætte med at arbejde på den eller køre den lokalt med dine egne oplysninger. Men hvis du vil dele rapporten med andre, skal du gemme den på Power BI. Hvis du gemmer den på Power BI, kan andre køre den, når de vil. Alternativt kan du konfigurere et abonnement og e-mail-levering af rapporten til andre personer. Du kan få rapporten leveret i et bestemt eksportformat, hvis du foretrækker det. 
   
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
