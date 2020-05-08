@@ -1,5 +1,5 @@
 ---
-title: Komplet kodeliste
+title: Færdiggør kodeliste
 description: Gennemgang af push af data – komplet kodeliste
 author: KesemSharabi
 ms.author: kesharab
@@ -9,15 +9,15 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: 4745935e618f47f6092f6a33d879dd95d59b9963
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79488286"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Komplet kodeliste til push af data til et datasæt
 
-Denne artikel er en del af en trinvis gennemgang af [push af data til et datasæt](walkthrough-push-data.md).
+Denne artikel er en del af en trinvis vejledning til, hvordan du [overfører data til et datasæt](walkthrough-push-data.md).
 
 Når du har fulgt trin 2 til 5 i **Push af data til et datasæt**, bør din komplette kildekode se ud som følger.
 
@@ -222,15 +222,15 @@ Når du har fulgt trin 2 til 5 i **Push af data til et datasæt**, bør din komp
       }
 ```
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * [Push data til et Power BI-datasæt](walkthrough-push-data.md)
 * [Registrer en app med Azure AD](../embedded/register-app.md)  
-* [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md)  
+* [Hent en adgangstoken til godkendelse](walkthrough-push-data-get-token.md)  
 * [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md)  
-* [Hent et datasæt, der kan føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md)  
+* [Hent et datasæt for at føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md)  
 * [Føj rækker til en Power BI-tabel](walkthrough-push-data-add-rows.md)  
 * [Reference til Power BI REST-API](https://docs.microsoft.com/rest/api/power-bi/)  
-* [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
+* [Oversigt over Power BI REST-API'en](overview-of-power-bi-rest-api.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

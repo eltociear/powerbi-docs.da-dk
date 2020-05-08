@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 7d61a57a928df95bd2210bf58cc44e37d14c393d
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114465"
 ---
 # <a name="ios-device-search-spotlight-integration-with-power-bi-mobile-ios-app-preview"></a>Integration af iOS-enhedssøgning (spotlight) med Power BI Mobil-appen til iOS (prøveversion)
@@ -31,7 +31,7 @@ Sådan finder du elementer ved hjælp af enhedssøgning:
    Søgeresultaterne omfatter Power BI-elementer af følgende typer:
 
     * Dashboards
-    * Rapporter
+    * Reports
     * Apps
     * Arbejdsområder
     * Elementer, der deles af den kontakt, du søger efter
@@ -47,7 +47,7 @@ Enhedssøgning via Siri omfatter også forslag, der er baseret på de handlinger
 >Du deaktiverer enhedssøgning og Siri-forslag ved at gå til **Enhedsindstillinger** > **Power BI-indstillinger** > **Siri og søgning** og deaktivere indstillingen **Siri og forslag**.
 >
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Få mere at vide om Power BI-mobilappen ved at gøre følgende: 
 
 * Downloade [Power BI-mobilappen til iPhone](https://go.microsoft.com/fwlink/?LinkId=522062)

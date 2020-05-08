@@ -10,15 +10,15 @@ ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 09/28/2017
 ms.openlocfilehash: 07c9c12366b100936e03fe07358ee180e026dfc5
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114744"
 ---
 # <a name="pause-and-start-your-power-bi-embedded-capacity-in-the-azure-portal"></a>Stands og start din Power BI Embedded-kapacitet på Azure-portalen
 
-I denne artikel beskriver vi, hvordan du standser og starter en Power BI Embedded-kapacitet i Microsoft Azure. Dette forudsætter, at du har oprettet Power BI Embedded-kapacitet. Hvis du ikke har gjort det, skal du se [Opret Power BI Embedded-kapacitet på Azure-portalen](azure-pbie-create-capacity.md) for at komme i gang.
+I denne artikel beskriver vi, hvordan du standser og starter en Power BI Embedded-kapacitet i Microsoft Azure. Dette antager, at du har oprettet en Power BI Embedded-kapacitet. Hvis du ikke har det, kan du se [Opret Power BI Embedded-kapacitet på Azure-portalen](azure-pbie-create-capacity.md) for at komme i gang.
 
 Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://azure.microsoft.com/free/), før du begynder.
 
@@ -71,7 +71,7 @@ Du kan genoptage forbrug af kapaciteten ved at starte den igen. Når du starter 
 
 Hvis der findes indhold, der er tilknyttet kapaciteten, vil det være tilgængeligt, når den starter igen.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Hvis du vil skalere din kapacitet op eller ned, skal du se [Skalér din Power BI Embedded-kapacitet](azure-pbie-scale-capacity.md).
 

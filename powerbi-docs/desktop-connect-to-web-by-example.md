@@ -10,10 +10,10 @@ ms.date: 01/21/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 2c09f21565cdf9987aad2027a148823fb32e2e55
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76538948"
 ---
 # <a name="get-webpage-data-by-providing-examples"></a>Få websidedata ved at angive eksempler
@@ -59,9 +59,9 @@ Når du er tilfreds med de data, der udtrækkes fra websiden, skal du vælge **O
 
 Herefter kan du oprette visuelle elementer eller på anden måde bruge websidedataene, når du opretter dine Power BI Desktop-rapporter.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
-Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
+Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Hvis du vil have mere at vide om datakilder, kan du se følgende ressourcer:
 
 * [Tilføj en kolonne ud fra et eksempel i Power BI Desktop](desktop-add-column-from-example.md)
 * [Opret forbindelse til websider fra Power BI Desktop](desktop-connect-to-web.md)

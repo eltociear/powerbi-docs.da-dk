@@ -10,10 +10,10 @@ ms.date: 10/08/2019
 ms.author: lukaszp
 LocalizationGroup: Common tasks
 ms.openlocfilehash: 7ed0920f66c178c23e6c4db22ff6acd998619522
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76160552"
 ---
 # <a name="set-contact-information-for-reports-and-dashboards-in-the-power-bi-service"></a>Angiv kontaktoplysninger for rapporter og dashboards i Power BI-tjenesten
@@ -63,6 +63,6 @@ Oplysningerne på listen over kontakter bruges også andre steder. Den vises f.e
 * Listen over kontaktpersoner på elementniveau bliver ikke skubbet til apps, når de udgives. Den nye appnavigation indeholder en URL-adresse til support, som du kan konfigurere som en hjælp til at administrere feedback fra et stort antal appbrugere.
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

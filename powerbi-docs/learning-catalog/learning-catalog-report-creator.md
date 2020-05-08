@@ -7,10 +7,10 @@ ms.topic: article
 ms.date: 03/25/2020
 ms.author: v-lshann
 ms.openlocfilehash: f318aa59f33a9993b31787fcb3e0036286616608
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81268805"
 ---
 # <a name="report-creator-learning-catalog"></a>Læringskatalog til rapportoprettere
@@ -26,9 +26,9 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra gru
 | [Forbered dine data til Power BI](https://youtu.be/l2wy4XgQIu0)  | Se nogle få enkle tip til, hvordan du forbereder dine Excel-data til Power BI. | 1 min. 20 sek.      |
 | [Microsoft Power BI's YouTube-kanal](https://www.youtube.com/user/mspowerbi/videos) | YouTube-kanal med indhold fra Microsofts Power BI-produktteam  | Videoer   |                |
 | [Introduktion til Power BI](https://info.microsoft.com/getting-started-with-power-bi-ondemand.html?Is=Website)  | Spekulerer du på, hvordan du kommer i gang med Power BI? Hvordan opretter jeg forbindelse til data og visualiserer dem første gang? Få mere at vide om, hvordan du hurtigt kan komme i gang med Power BI og få indsigt i dine forretningsdata på ingen tid.  | Webinar   |                |
-| [Kom i gang med Power BI-mobilappen](https://info.microsoft.com/ww-Landing-Getting-Started-with-the-Power-BI-Mobile-App-Video.html) | Se dette webinar for at få mere at vide om, hvordan du kan holde dig ajour med dine data vha. din mobilenhed. Få mere at vide om, hvordan du kan forbedre din oplevelse med mobiloptimerede layout, interager med dine data på farten, få pushmeddelelser, når dine data kræver opmærksomhed, og del og samarbejd med dine kollegaer fra din mobilenhed. | Webinar    |                |
+| [Kom i gang med Power BI-mobilappen](https://info.microsoft.com/ww-Landing-Getting-Started-with-the-Power-BI-Mobile-App-Video.html) | Se dette webinar for at få mere at vide om, hvordan du kan holde dig ajour med dine data vha. din mobilenhed. Hør, hvordan du kan forbedre din oplevelse med mobiloptimerede layout, interager med dine data på farten, få pushmeddelelser, når dine data kræver opmærksomhed, og del og samarbejd med dine kolleger fra din mobilenhed. | Webinar    |                |
 | [Tip, tricks og værktøjer fra ejerne af PowerBI.Tips](https://www.youtube.com/watch?v=fnj1_e3HXow)(webinaret er på engelsk) | I denne meget specielle brugergruppe møder du ejerne af PowerBI.Tips og Power BI MVP'er, Seth Baur og Mike Carlo, der deler ud af deres store viden med tricks, tip og værktøjer, de har publiceret til http://PowerBI.Tips inden for de seneste 18 måneder.  | YouTube-video  | 1 t. 7 min. 40 sek. |
-| [Paul Turleys SQL Server BI-blog](https://sqlserverbi.blog/) | Deling af Paul Turleys oplevelser med Microsoft-dataplatformen, SQL Server BI, datamodellering, SSAS-design, Power Pivot, Power BI, avanceret SSRS-design, Power BI, dashboards og visualiseringer siden 2009   | Blog                                  |                |
+| [Paul Turleys SQL Server BI-blog](https://sqlserverbi.blog/) | Et indblik i Paul Turleys oplevelser med Microsoft-dataplatformen, SQL Server BI, datamodellering, SSAS-design, Power Pivot, Power BI, avanceret SSRS-design, Power BI, dashboards og visualiseringer siden 2009   | Blog                                  |                |
 | [Guy in a cube](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)  | Videobloggen om Power BI, herunder opsummeringer af ugentlige oplysninger og tekniske videoer, der fokuserer på Microsoft Business Intelligence-stack (herunder Power BI, Reporting Services og Analysis Services). | Blog  |                |
 ## <a name="dashboards"></a>Dashboards<a name="dashboards"></a>
 | Indhold | Beskrivelse  | Formatér | Længde   |

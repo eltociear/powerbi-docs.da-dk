@@ -10,10 +10,10 @@ ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 1aaacfae3c9af4517f6b028852e46059884dd3d5
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79113856"
 ---
 # <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>Interager med visualiseringer i rapporter, på dashboards og i apps
@@ -66,7 +66,7 @@ I forbindelse med mange af disse indstillinger kan din administrator eller *desi
 | [Filtrer og fremhæv på tværs af de andre visualiseringer på siden](end-user-report-filter.md).  | nej      | ja  | i/t |
 | [Foretag detailudledning af en visualisering, der har et hierarki](end-user-drill.md).  | nej  | ja   | nej |
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Tilbage til [Grundlæggende begreber for forbrugere](end-user-basic-concepts.md)    
 [Vælg en visualisering for at åbne en rapport](end-user-report-open.md)    
 [Typer af visualiseringer, der er tilgængelige i Power BI](end-user-visual-type.md)

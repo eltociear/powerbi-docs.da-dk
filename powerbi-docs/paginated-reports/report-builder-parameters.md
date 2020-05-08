@@ -10,17 +10,17 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/06/2019
 ms.openlocfilehash: 823f2ea621d16eb911284cadeced2fb676fa5c75
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78923051"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Rapportparametre i Power BI Report Builder
 
 I dette emne beskrives den almindelige brug af rapportparametre i Power BI Report Builder, hvilke egenskaber du kan angive og meget mere. Ved hjælp af rapportparametre kan du styre rapportdata, oprette forbindelse mellem relaterede rapporter og variere præsentationen af rapporter. Du kan bruge rapportparametre i sideinddelte rapporter, du opretter i Report Builder.
 
-## <a name="bkmk_Common_Uses_for_Parameters"></a> Almindelig brug af parametre
+## <a name="common-uses-for-parameters"></a><a name="bkmk_Common_Uses_for_Parameters"></a> Almindelig brug af parametre
 
  Her er nogle af de mest almindelige måder at bruge parametre på.  
   
@@ -36,7 +36,7 @@ I dette emne beskrives den almindelige brug af rapportparametre i Power BI Repor
   
 - Giv brugerne mulighed for at tilpasse rapportdata og udseendet ved at inkludere parametre i et udtryk.  
   
-## <a name="UserInterface"></a> Visning af en rapport med parametre
+## <a name="viewing-a-report-with-parameters"></a><a name="UserInterface"></a> Visning af en rapport med parametre
 
 Når du får vist en rapport, der indeholder parametre, viser værktøjslinjen for rapportfremviseren de enkelte parametre, så du kan angive værdier interaktivt. I illustrationen nedenfor vises parameterområdet for en rapport med parametrene @ReportMonth, @ReportYear, @EmployeeID, @ShowAll, @ExpandTableRows, @CategoryQuota og @SalesDate.  
 
@@ -54,7 +54,7 @@ Når du får vist en rapport, der indeholder parametre, viser værktøjslinjen f
   
 6. **Få vist rapport** Når du har angivet parameterværdier, skal du klikke på **Vis rapport** for at køre rapporten. Hvis alle parametre har standardværdier, køres rapporten automatisk ved første visning.  
   
-## <a name="bkmk_Create_Parameters"></a> Oprettelse af parametre
+## <a name="creating-parameters"></a><a name="bkmk_Create_Parameters"></a> Oprettelse af parametre
 
 Du kan oprette rapportparametre på et par forskellige måder.
   
@@ -97,14 +97,14 @@ Opret en parameter manuelt via ruden Rapportdata. Du kan konfigurere rapportpara
   
 - Kør rapporten uden først at skulle vælge en parameterværdi, fordi der er blevet oprettet en standardværdi for parameteren.  
   
-## <a name="bkmk_Report_Parameters"></a> Egenskaber for rapportparameter
+## <a name="report-parameter-properties"></a><a name="bkmk_Report_Parameters"></a> Egenskaber for rapportparameter
 
  Du kan ændre egenskaberne for rapportparametre ved hjælp af dialogboksen Egenskaber for rapport. I følgende tabel opsummeres de egenskaber, du kan angive for hver parameter:  
   
 |Egenskab|Beskrivelse|  
 |--------------|-----------------|  
 |Navn|Skriv et navn på parameteren, hvor der skelnes mellem store og små bogstaver. Navnet skal begynde med et bogstav og kan indeholder bogstaver, tal og et understregningstegn (_). Navnet må ikke indeholde mellemrum. For automatisk oprettede parametre svarer navnet til parameteren i forespørgslen for datasæt. Manuelt oprettede parametre svarer som standard til ReportParameter1.|  
-|Spørg|Den tekst, der vises ved siden af parameteren på værktøjslinjen i rapportfremviseren.|  
+|Prompt|Den tekst, der vises ved siden af parameteren på værktøjslinjen i rapportfremviseren.|  
 |Datatype|En rapportparameter skal være en af følgende datatyper:<br /><br /> **Boolesk**. Brugeren vælger Sand eller Falsk via en alternativknap.<br /><br /> **DateTime**. Brugeren vælger en dato via et kalenderkontrolelement.<br /><br /> **Heltal**. Brugeren skriver værdier i et tekstfelt.<br /><br /> **Flydende**. Brugeren skriver værdier i et tekstfelt.<br /><br /> **Tekst**. Brugeren skriver værdier i et tekstfelt.<br /><br /> Når der er defineret tilgængelige værdier for en parameter, vælger brugeren værdier via en rulleliste, selv når datatypen er **DateTime**.|  
 |Tillad tom værdi|Vælg denne indstilling, hvis værdien af parameteren kan være en tom streng eller en tom værdi.<br /><br /> Hvis du angiver gyldige værdier for en parameter, og du vil have, at en tom værdi skal være en af de gyldige værdier, skal du inkludere den som en af de angivne værdier. Valg af denne indstilling inkluderer ikke automatisk en tom værdi for tilgængelige værdier.|  
 |Tillad null-værdi|Vælg denne indstilling, hvis værdien af parameteren kan være en null-værdi.<br /><br /> Hvis du angiver gyldige værdier for en parameter, og du vil have, at en null-værdi skal være en af de gyldige værdier, skal du inkludere null som en af de angivne værdier. Valg af denne indstilling inkluderer ikke automatisk en null-værdi for tilgængelige værdier.|  
@@ -116,7 +116,7 @@ Opret en parameter manuelt via ruden Rapportdata. Du kan konfigurere rapportpara
 |Standardværdier|Angiv standardværdier fra en forespørgsel eller fra en statisk liste.<br /><br /> Når hver parameter har en standardværdi, køres rapporten automatisk ved første visning.|  
 |Avanceret|Angiv attributten **UsedInQuery** for rapportdefinitionen, som er en værdi, der indikerer, om denne parameter direkte eller indirekte påvirker dataene i en rapport.<br /><br /> **Bestem automatisk, hvornår der skal opdateres**<br /> Vælg denne indstilling, når rapportbehandleren skal fastsætte en indstilling for denne værdi. Værdien er **Sand**, hvis rapportbehandleren registrerer en forespørgsel for datasæt med en direkte eller indirekte reference til denne parameter, eller hvis rapporten indeholder underrapporter.<br /><br /> **Opdater altid**<br /> Vælg denne indstilling, når rapportparameteren bruges direkte eller indirekte i en forespørgsel for datasæt eller et parameterudtryk. Denne indstilling angiver **UsedInQuery** til Sand.<br /><br /> **Opdater aldrig**<br /> Vælg denne indstilling, når rapportparameteren ikke bruges direkte eller indirekte i en forespørgsel for datasæt eller et parameterudtryk. Denne indstilling angiver **UsedInQuery** til Falsk.<br /><br /> **Forsigtig!** Brug **Opdater aldrig** med forsigtighed. På rapportserveren bruges **UsedInQuery** til at hjælpe med at styre cacheindstillinger for rapportdata og gengivne rapporter og parameterindstillinger for snapshotrapporter. Hvis du angiver **Opdater aldrig** forkert, kan du være skyld i, at forkerte rapportdata eller rapporter cachelagres, eller at der er uensartede data i en snapshotrapport. |  
   
-##  <a name="bkmk_Dataset_Parameters"></a> Forespørgsel for datasæt  
+##  <a name="dataset-query"></a><a name="bkmk_Dataset_Parameters"></a> Forespørgsel for datasæt  
  Hvis du vil filtrere dataene i forespørgslen for datasættet, kan du inkludere en delsætning som begrænsning, der begrænser de hentede data ved at angive værdier for at inkludere eller udelade resultater i resultatsættet.  
   
  Brug forespørgselsdesigner til datakilden for at udarbejde en parameteriseret forespørgsel.  
@@ -125,7 +125,7 @@ Opret en parameter manuelt via ruden Rapportdata. Du kan konfigurere rapportpara
   
 -   For forespørgsler, der er baseret på en flerdimensionel datakilde, f.eks. Microsoft SQL Server Analysis Services, kan du angive, om du vil oprette en parameter baseret på et filter, som du angiver i forespørgselsdesigneren. 
   
-##  <a name="bkmk_Manage_Parameters"></a> Administration af parameter for en publiceret rapport  
+##  <a name="parameter-management-for-a-published-report"></a><a name="bkmk_Manage_Parameters"></a> Administration af parameter for en publiceret rapport  
  Når du designer en rapport, gemmes rapportparametrene i rapportdefinitionen. Når du publicerer en rapport, gemmes og administreres rapportparametrene fra rapportdefinitionen.  
   
  Du kan bruge følgende for en publiceret rapport:  
@@ -140,12 +140,12 @@ Opret en parameter manuelt via ruden Rapportdata. Du kan konfigurere rapportpara
   
  Indstillinger for udførelse af rapporten kan påvirke den måde, parametre behandles på. En rapport, der kører som et snapshot, kan ikke bruge parametre, der er afledt fra en forespørgsel, medmindre forespørgslen indeholder standardværdier for parametrene.  
   
-##  <a name="bkmk_Parameters_Subscription"></a> Parametre for et abonnement  
+##  <a name="parameters-for-a-subscription"></a><a name="bkmk_Parameters_Subscription"></a> Parametre for et abonnement  
  Du kan definere et abonnement til at være efter behov eller til et snapshot og angive parameterværdier, der skal bruges under behandlingen af abonnementet.  
   
 -   **Rapport on-demand.**  For en rapport af typen on-demand kan du angive en anden parameterværdi end den publicerede værdi for hver parameter, der er angivet for rapporten. Lad os f.eks. antage, at du har en Opkaldsservice-rapport, der bruger parameteren *Tidsperiode* til at returnere kundeserviceanmodninger for den aktuelle dag, uge eller måned. Hvis standardparameterværdien for rapporten er angivet til **i dag**, kan dit abonnement bruge en anden parameterværdi (f.eks. **uge** eller **måned**) til at skabe en rapport, der indeholder ugentlige eller månedlige tal.  
   
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)  
 - [Anvend overlappende parametre i sideinddelte rapporter](../guidance/paginated-report-cascading-parameter.md)
