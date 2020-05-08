@@ -10,19 +10,19 @@ ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: quickstart
 ms.openlocfilehash: 5aed52ec232d3e603d69bfe93640187401279ff6
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75885230"
 ---
-# <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Hurtig start: Opret forbindelse til data i Power BI Desktop
+# <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Hurtig introduktion: Opret forbindelse til data i Power BI Desktop
 
 I denne hurtige introduktion opretter du forbindelse til data ved hjælp af Power BI Desktop, som er det første skridt til oprettelse af datamodeller og rapporter.
 
 ![Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_01.png)
 
-Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
+Hvis du ikke er tilmeldt Power BI, skal du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -70,7 +70,7 @@ Når du har indlæst tabellerne, vises dataene i ruden **Felter**. Du kan udvide
 
 Det var det hele! Du har oprettet forbindelse til data i Power BI Desktop, indlæst disse data, og nu kan du se alle de tilgængelige felter i disse tabeller.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Der er mange forskellige ting, du kan gøre med Power BI Desktop, når du har oprettet forbindelse til data. Du kan oprette visualiseringer og rapporter. Tag et kig på følgende ressourcer for at komme i gang:
 

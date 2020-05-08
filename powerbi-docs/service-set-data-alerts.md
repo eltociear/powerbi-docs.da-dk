@@ -11,10 +11,10 @@ ms.date: 04/02/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: a67d983d11ae8fa2f82a540c0649c2da475d5249
-ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80621620"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Databeskeder i Power BI-tjenesten
@@ -32,7 +32,7 @@ Det er kun dig, der kan se de angivne beskeder, selvom du deler dashboardet. Sel
 
 ## <a name="set-data-alerts-in-the-power-bi-service"></a>Indstil databeskeder i Power BI-tjenesten
 
-Se, hvordan Amanda føjer nogle beskeder til felterne på dashboardet. Følg derefter den trinvise vejledning under videoen for at prøve det selv.
+Se, hvordan Amanda føjer nogle beskeder til felterne på dashboardet. Følg derefter en trinvis vejledning under videoen for at prøve det selv.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
 
@@ -56,13 +56,13 @@ I dette eksempel bruges et kortfelt fra eksempeldashboardet Retail Analysis. Hvi
 
 1. Vælg **Gem og luk**.
 
-## <a name="receiving-alerts"></a>Modtag beskeder
+## <a name="receiving-alerts"></a>Modtagelse af beskeder
 
 Når de sporede data når en af de angivne tærskelværdier, som du har angivet, sker der flere ting. Først tjekker Power BI, om der er gået mere end én time eller mere end et døgn (afhænger af den valgte indstilling) siden den seneste besked. Du får en besked, hvis dataene har overskredet grænsen.
 
 Derefter sendes en besked til dit **meddelelsescenter** og eventuelt en mail via Power BI. Hver enkelt besked indeholder et direkte link til dine data. Vælg linket for at se det relevante felt, hvor du kan udforske, dele og få mere at vide.  
 
-* Hvis du har indstillet beskeden til at sende en mail til dig, modtager du mail i din indbakke.
+* Hvis du har angivet for beskeden, at du skal have tilsendt en mail, kan du finde noget i stil med dette i din indbakke.
 
    ![Mail med vigtig besked](media/service-set-data-alerts/powerbi-alerts-email.png)
 
@@ -123,7 +123,7 @@ Der er mange måder at administrere dine beskeder på:
 * Beskeder fungerer kun i forbindelse med streamingdatasæt, hvis du opretter en rapportvisualisering for KPI/kort/måler og derefter fastgør visualiseringen til dashboardet.
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * [Opret en Power Automate, der indeholder en databesked](service-flow-integration.md).
 

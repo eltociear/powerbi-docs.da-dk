@@ -42,7 +42,7 @@
           href: embedded-faq.md
         - name: Power BI-tilladelser
           href: power-bi-permissions.md
-    - name: 'Sådan gør du:'
+    - name: Sådan gør du
       items:
         - name: Integrer fra en app
           href: embed-from-apps.md

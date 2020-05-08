@@ -10,10 +10,10 @@ ms.date: 03/12/2020
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: c703a4b67b642af5199413e80ff1e140905a2338
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81439819"
 ---
 # <a name="use-buttons-in-power-bi"></a>Brug knapper i Power BI
@@ -50,7 +50,7 @@ På følgende kort i ruden **Visualiseringer** kan du justere formateringen elle
 * Knaptekst
 * Ikon
 * Kontur
-* Udfyldning
+* Udfyld
 
 For hver tilstand kan du vælge, hvordan knappes skal fremstå. Udvid ét af disse kort, og vælg den rullemenu, der vises øverst på kortet. På følgende billede kan du se, at kortet **Ikon** er udvidet med rullemenuen valgt for at vise de tre tilstande.
 
@@ -89,7 +89,7 @@ Du kan hurtigt opbygge en brugerdefineret navigationsrude. Du undgår at skulle 
 
 Derudover kan du oprette en betinget formatering af værktøjstippet, som du kan gøre med andre knaptyper.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Du kan finde flere oplysninger om de funktioner, der er ens eller interagerer med knapper, i følgende artikler:
 
 * [Brug detaljeadgang i Power BI-rapporter](desktop-drillthrough.md)

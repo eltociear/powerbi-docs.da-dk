@@ -10,10 +10,10 @@ ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 9f9b0ec77d0273374d940332abd5d186c2604866
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80979816"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>Opret og brug R-visuals i Power BI
@@ -65,7 +65,7 @@ Som et andet eksempel viser følgende billede den fejlmeddelelse, der vises, nå
 
 ![Skærmbillede, der viser en kørselsfejl](media/service-r-visuals/r-visuals-service-5.png)
 
-## <a name="licensing"></a>Licensering
+## <a name="licensing"></a>Licenser
 R-visuals kræver en [Power BI Pro](../service-self-service-signup-for-power-bi.md)-licens for at kunne gengives i rapporter, opdateres, filtreres og filtreres i tværgående retning. Du kan finde flere oplysninger om Power BI Pro-licenser, og hvordan de adskiller sig fra gratis licenser, under [Power BI Pro-indhold – Hvad er det?](../service-admin-purchasing-power-bi-pro.md)
 
 Gratis brugere af Power BI kan kun anvende felter, der deles med dem i Premium-arbejdsområder. Du kan få mere at vide under [Køb af Power BI Pro](../service-admin-purchasing-power-bi-pro.md).
@@ -73,7 +73,7 @@ Gratis brugere af Power BI kan kun anvende felter, der deles med dem i Premium-a
 I nedenstående tabel beskrives visuelle R-elementers funktioner baseret på licenser.
 
 
-|  |Forfatter til R-visualiseringer i Power BI Desktop  | Opret PBI-servicerapporter med R-visualiseringer |Vis visuelle R-elementer i rapporter  | Vis R-felter i dashboards |
+|  |Forfatter til R-visualiseringer i Power BI Desktop  | Opret PBI-servicerapporter med visuelle R-elementer |Vis visuelle R-elementer i rapporter  | Vis R-felter i dashboards |
 |---------|---------|---------|---------|--------|
 |**Gæst** (Power BI Embedded)     |  Understøttet|  Ikke understøttet      | Kun understøttet i Premium/Azure-kapacitet  | Kun understøttet i Premium/Azure-kapacitet |
 |**Ikke-administreret lejer** (domæne er ikke bekræftet) | Understøttet | Ikke understøttet |  Ikke understøttet |Understøttet (B2B-scenarie) |
@@ -86,12 +86,12 @@ I nedenstående tabel beskrives visuelle R-elementers funktioner baseret på lic
 Visuelle R-elementer i Power BI-tjenesten har nogle få begrænsninger:
 
 * Understøttelse af R-visuals er begrænset til de pakker, der er identificeret [i Få mere at vide om, hvilke R-pakker der understøttes](../service-r-packages-support.md). Der er i øjeblikket ingen understøttelse af brugerdefinerede pakker.
-* Begrænsninger for datastørrelse – data, der bruges af det visuelle R-element til afbildning, er begrænset til 150.000 rækker. Hvis der er valgt flere end 150.000 rækker, bruges kun de øverste 150.000 rækker, og der vises en meddelelse på billedet. Desuden er der en grænse på 250 MB for inputdataene.
+* Begrænsninger for datastørrelse – data, der bruges af det visuelle R-element til afbildning, er begrænset til 150.000 rækker. Hvis der vælges mere end 150.000 rækker, er det kun de øverste 150.000 rækker, der bruges, og der vises en meddelelse på billedet. Desuden er der en grænse på 250 MB for inputdataene.
 * Opløsning – alle R-visuals vises ved 72 DPI.
 * Afbildningsenhed – kun afbildning til standardenheden understøttes. 
 * Begrænsning af beregningstid – hvis en beregning af et visuelt R-element overskrider 60 sekunder, får scriptet timeout, hvilket medfører en fejl.
-* Visuelle R-elementer opdateres ved dataopdateringer, filtrering og fremhævning. Selve billedet er imidlertid ikke interaktivt og understøtter ikke værktøjstip.
-* Visuelle R-elementer reagerer på fremhævning af andre elementer, men du kan ikke klikke på elementer i det visuelle R-element for at filtrere andre elementer i tværgående retning.
+* R-visualiseringer opdateres, når data opdateres, filtreres eller fremhæves. Selve billedet er imidlertid ikke interaktivt og understøtter ikke værktøjstip.
+* R-visualiseringer reagerer på fremhævning af andre visualiseringer, men du kan ikke klikke på elementer i R-visualiseringen for at filtrere på tværs af andre elementer.
 * Visuelle R-elementer understøttes ikke i øjeblikket for datatypen *Tid*. Brug dato/klokkeslæt i stedet.
 * Visuelle R-elementer vises ikke, når du bruger **Publicer på internettet**.
 * Visuelle R-elementer understøtter ikke omdøbning af inputkolonner. Der refereres til kolonner fra deres oprindelige navn under udførelsen af scriptet.
@@ -118,7 +118,7 @@ R-pakker er samlinger af R-funktioner, data og kompileret kode, der er samlet i 
 
 Visuelle R-elementer i **Power BI-tjenesten** understøttes af de pakker, der findes i afsnittet med **Understøttede pakker** i [denne artikel](../service-r-packages-support.md). Hvis du ikke kan finde en pakke, du er interesseret i, på listen med understøttede pakker, kan du anmode om support til pakken. Se [R-pakker i Power BI-tjenesten](../service-r-packages-support.md) for at få oplysninger om, hvordan du anmoder om support.
 
-### <a name="requirements-and-limitations-of-r-packages"></a>Krav og begrænsninger for R-pakker
+### <a name="requirements-and-limitations-of-r-packages"></a>R-pakkers krav og begrænsninger
 Der er en række krav og begrænsninger for R-pakker:
 
 * Power BI-tjenesten understøtter i de fleste tilfælde R-pakker med gratis og open source-softwarelicenser, f.eks. GPL-2, GPL-3, MIT+ osv.

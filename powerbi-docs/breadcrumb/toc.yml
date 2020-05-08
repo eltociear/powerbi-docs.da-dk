@@ -16,14 +16,14 @@
             - name: Mobil
               tocHref: /power-bi/consumer/mobile/
               topicHref: /power-bi/consumer/mobile/index
-            - name: Udvikler
+            - name: Developer
               tocHref: /power-bi/developer/
               topicHref: /power-bi/developer/index
               items:
                 - name: Integreret analyse
                   tocHref: /power-bi/developer/embedded/
                   topicHref: /power-bi/developer/embedded/
-                - name: Power BI-visualiseringer
+                - name: Power BI-visualisering
                   tocHref: /power-bi/developer/visuals/
                   topicHref: /power-bi/developer/visuals/
                 - name: Automatisering
@@ -35,7 +35,7 @@
             - name: Læringskatalog
               tocHref: /power-bi/learning-catalog/
               topicHref: /power-bi/learning-catalog/index
-            - name: rapportserver
+            - name: Report Server
               tocHref: /power-bi/report-server/
               topicHref: /power-bi/report-server/index
             - name: Vejledning
@@ -50,7 +50,7 @@
             - name: Opret forbindelse til data
               tocHref: /power-bi/connect-data/
               topicHref: /power-bi/connect-data/index
-            - name: Kom i gang
+            - name: Kom godt i gang
               tocHref: /power-bi/fundamentals/
               topicHref: /power-bi/fundamentals/index
             - name: 'Transformér, formgiv og modellér data'

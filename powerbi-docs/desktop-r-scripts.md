@@ -10,10 +10,10 @@ ms.date: 01/14/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 358a61c13418bd29a9e83ed7029e8b90f9a5988e
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76161509"
 ---
 # <a name="run-r-scripts-in-power-bi-desktop"></a>Kør R-scripts i Power BI Desktop
@@ -61,13 +61,13 @@ Du kan styre, hvilken R-installation der skal bruges til at køre dit script. Du
 
 ![Indstillinger for R-script, dialogboksen Indstillinger, Power BI Desktop](media/desktop-r-scripts/r-scripts-4.png)
 
-### <a name="refresh"></a>Opdater
+### <a name="refresh"></a>Refresh
 
 Du kan opdatere et R-script i Power BI Desktop. Når du opdaterer et R-script, køres R-scriptet i Power BI Desktop igen i Power BI Desktop-miljøet.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
-Du kan finde yderligere oplysninger om R i Power BI i følgende artikler.
+Du kan finde flere oplysninger om R i Power BI i følgende artikler.
 
-* [Opret Power BI-visuals ved hjælp af R](desktop-r-visuals.md)
+* [Opret visuelle Power BI-elementer ved hjælp af R](desktop-r-visuals.md)
 * [Brug en ekstern R-IDE med Power BI](desktop-r-ide.md)
