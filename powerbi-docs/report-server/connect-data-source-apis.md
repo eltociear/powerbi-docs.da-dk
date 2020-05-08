@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/21/2020
 ms.author: maggies
 ms.openlocfilehash: 9ca5d47a938210c10903c916c54713b89923e287
-ms.sourcegitcommit: 34cca70ba84f37b48407d5d8a45c3f51fb95eb3c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80751531"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server"></a>Skift forbindelsesstrenge til datakilden i Power BI-rapporter ved hjælp PowerShell – Power BI-rapportserver
@@ -66,7 +66,7 @@ Du kan ændre forbindelsesstrenge til datakilden i Power BI-rapporter i Power BI
     Set-RsRestItemDataSource -RsItem '/MyPbixReport' -RsItemType 'PowerBIReport' -DataSources $dataSources
     ```
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Sideinddelte rapportdatakilder på Power BI-rapportserver](connect-data-sources.md) 
 

@@ -11,10 +11,10 @@ ms.topic: overview
 ms.date: 01/03/2019
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 22c367dbc6160928541570bf2de37c51edcbfc14
-ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80550872"
 ---
 # <a name="visuals-in-power-bi"></a>Visualiseringer i Power BI
@@ -72,7 +72,7 @@ Hvis du er webudvikler og er interesseret i at oprette din egen visualisering og
 > [!WARNING]
 > En Power BI-visualisering kan indeholde kode, der kan udgøre en risiko for sikkerheden eller beskyttelsen af personlige oplysninger. Vær sikker på, at du har tillid til forfatteren og kilden til Power BI-visualiseringen, før du importerer den i din rapport.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * Hvis du er udvikler, skal du starte med selvstudiet [Udvikling af en Power BI-visualisering](custom-visual-develop-tutorial.md).
 
