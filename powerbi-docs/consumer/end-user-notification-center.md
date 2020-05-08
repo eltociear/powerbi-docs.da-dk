@@ -11,10 +11,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: d92d7a3095ff2f252a09834becf90d5efc1811a0
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79113078"
 ---
 # <a name="view-power-bi-notifications"></a>Få vist Power BI-meddelelser
@@ -44,8 +44,8 @@ Se, hvordan Amanda gennemser, administrerer og besvarer meddelelser. Følg deref
    ![Meddelelsescenter](./media/end-user-notification-center/power-bi-notification-center.png)
 4. Hvis du vil afvise en meddelelse, skal du vælge ikonet X.
 
-## <a name="next-steps"></a>Næste trin
-* [Databeskeder i Power BI-tjenesten](end-user-alerts.md)
+## <a name="next-steps"></a>De næste trin
+* [Databeskeder i Power BI-tjeneste](end-user-alerts.md)
 * [Indstil databeskeder i iPhone-appen (Power BI til iOS)](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Indstil databeskeder i Power BI-mobilappen til Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

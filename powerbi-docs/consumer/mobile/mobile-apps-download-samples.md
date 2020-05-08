@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: painbar
 ms.openlocfilehash: 82a299dad5d58ca03d2b05ae02c49e0da0478303
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75256787"
 ---
 # <a name="downloading-samples-to-my-workspace-in-the-power-bi-service"></a>Download af eksempler til Mit arbejdsområde i Power BI-tjenesten
@@ -44,6 +44,6 @@ Du skal have en konto i Power BI-tjenesten, før du kan downloade data. Hvis du 
   
 Du er nu klar til at få vist eksemplerne på din mobilenhed.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Hurtig start](mobile-apps-quickstart-view-dashboard-report.md)
-* Har du spørgsmål? Tag et kig på [mobilappsektionen i Power BI-community'et](https://go.microsoft.com/fwlink/?linkid=839277)
+* Har du nogen spørgsmål? Tag et kig på [mobilappsektionen i Power BI-community'et](https://go.microsoft.com/fwlink/?linkid=839277)

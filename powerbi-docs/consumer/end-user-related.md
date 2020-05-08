@@ -11,10 +11,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 0d3bbbf9042d2b0d1a42ab9c1f759ccfd03c6609
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114376"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Få vist relateret indhold i Power BI-tjenesten
@@ -74,7 +74,7 @@ Her kan du handle direkte på det relaterede indhold. Vælg f.eks. et dashboard-
 * Hvis du vil åbne Relateret indhold for en rapport, skal du være i [Læsevisning](end-user-reading-view.md).
 * Funktionen Relateret indhold fungerer ikke til streaming af datasæt.
 
-## <a name="next-steps"></a>Næste trin
-* [Introduktion til Power BI-tjenesten](../service-get-started.md)
+## <a name="next-steps"></a>De næste trin
+* [Kom i gang med Power BI-tjenesten](../service-get-started.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

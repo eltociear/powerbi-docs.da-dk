@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 04/05/2020
 ms.author: painbar
 ms.openlocfilehash: ce147be4c23b738e1a09296a5d798fb0f94efe13
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80802020"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Du kan fjernkonfigurere Power BI-appen ved hjælp af MDM-værktøjet (Mobile Device Management)
@@ -57,7 +57,7 @@ Power BI-appen til iOS og Android giver administratorer mulighed for at konfigur
 |---|---|---|---|
 | com.microsoft.powerbi.mobile.ReportTapInteraction | Streng |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Konfigurer, om et tryk på en visualisering også foretager en datapunktsmarkering. |
 | com.microsoft.powerbi.mobile.EnableMultiSelect | Boolesk |  <nobr>True</nobr><br><nobr>False</nobr> | Konfigurerer, om et tryk på et datapunkt erstatter den aktuelle markering eller føjes til den aktuelle markering. |
-| com.microsoft.powerbi.mobile.RefreshAction | Streng |  <nobr>pull-to-refresh</nobr><br>knappen | Konfigurer, om brugeren skal have en knap til at opdatere rapporten, eller om vedkommende skal bruge trækopdatering. |
+| com.microsoft.powerbi.mobile.RefreshAction | Streng |  <nobr>pull-to-refresh</nobr><br> knappen | Konfigurer, om brugeren skal have en knap til at opdatere rapporten, eller om vedkommende skal bruge trækopdatering. |
 | com.microsoft.powerbi.mobile.FooterAppearance | Streng |  forankret<br>dynamisk | Konfigurer, om rapportfoden skal fastgøres nederst i rapporten eller skjules automatisk. |
 
 ## <a name="deploying-app-configuration-settings"></a>Udrulning af konfigurationsindstillinger for apps

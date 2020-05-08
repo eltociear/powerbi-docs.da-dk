@@ -10,10 +10,10 @@ ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 00effa1838327a9463671cf9be2f5764be71deb4
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80404687"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af it-forbrug til Power BI: Få en introduktion
@@ -47,7 +47,7 @@ Du behøver ikke en Power BI-licens for at udforske eksemplerne i Power BI Deskt
   
    ![Opret forbindelse til eksempel](media/sample-it-spend/it-connect.png)
    
-5. Power BI importerer indholdspakken og føjer derefter et nyt dashboard, en ny rapport og et nyt datasæt til dit aktuelle arbejdsområde.
+5. Power BI importerer indholdspakken og føjer derefter et nyt dashboard, en rapport og datasæt til dit aktuelle arbejdsområde.
    
    ![Post i IT Spend Analysis Sample](media/sample-it-spend/it-spend-analysis-sample-entry.png)
   

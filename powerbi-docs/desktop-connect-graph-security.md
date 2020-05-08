@@ -11,10 +11,10 @@ ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
 ms.openlocfilehash: ef8e874c1f1a47d65845b87dccd441746651a68b
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74999784"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Opret forbindelse til Microsoft Graph Security API i Power BI Desktop
@@ -48,7 +48,7 @@ Følg disse trin for at bruge connectoren:
 
 1. Vælg **Hent data** > **Mere** på båndet **Hjem** i Power BI Desktop.
 2. Vælg **Onlinetjenester** fra listen over kategorier i venstre side af vinduet.
-3. Vælg **Microsoft Graph Security (beta)**.
+3. Vælg **Microsoft Graph Security (beta)** .
 
     ![Dialogboksen Hent data](media/desktop-connect-graph-security/GetData.PNG)
     
@@ -64,7 +64,7 @@ Følg disse trin for at bruge connectoren:
 
     ![Dialogboksen Administratorsamtykke](media/desktop-connect-graph-security/AdminConsent.PNG)
     
-7. Når du er logget på, kan du se følgende dialogboks, der angiver, at du er blevet godkendt. Vælg **Opret forbindelse**.
+7. Når du er logget på, kan du se følgende dialogboks, der angiver, at du er blevet godkendt. Vælg **Connect**.
 
     ![Dialogboksen "Du er i øjeblikket logget på"](media/desktop-connect-graph-security/SignedIn.PNG)
     
