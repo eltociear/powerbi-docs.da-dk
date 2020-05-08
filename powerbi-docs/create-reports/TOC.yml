@@ -62,7 +62,7 @@
             - name: Naturligt sprog i Spørgsmål og svar
               items:
                 - name: Introduktion til Spørgsmål og svar
-                  href: ../natural-language/q-and-a-tooling-intro.md
+                  href: ../natural-language/q-and-a-intro.md
                 - name: Værktøjsintroduktion til Spørgsmål og svar
                   href: ../natural-language/q-and-a-tooling-intro.md
                 - name: Avanceret værktøj til Spørgsmål og svar
@@ -99,6 +99,14 @@
               href: ../paginated-reports/report-builder-previewing-reports.md
             - name: Ofte stillede spørgsmål om sideinddelte rapporter
               href: ../paginated-reports/paginated-reports-faq.md
+        - name: Udrulningspipelines
+          items:
+            - name: Introduktion til udrulningspipelines
+              href: deployment-pipelines-overview.md
+            - name: Om udrulningsprocessen
+              href: deployment-pipelines-process.md
+            - name: Bedste praksis
+              href: deployment-pipelines-best-practices.md
     - name: Vejledninger
       items:
         - name: Power BI-rapporter
@@ -121,22 +129,20 @@
               href: ../desktop-buttons.md
             - name: Opret detaljeadgangsknapper
               href: ../desktop-drill-through-buttons.md
+            - name: Brug detaljeadgangsfunktionen
+              href: ../desktop-drillthrough.md
+            - name: Anvend detaljeadgangsfunktionen på tværs af rapporter
+              href: ../desktop-cross-report-drill-through.md
             - name: Opret bogmærker for at gemme og dele indsigt
               href: ../desktop-bookmarks.md
             - name: Arbejd med rapporttemaer
               href: ../desktop-report-themes.md
             - name: Arbejd med filtre i rapporter
               href: ../power-bi-report-filter.md
-            - name: Brug detaljeadgangsfunktionen
-              href: ../desktop-drillthrough.md
-            - name: Anvend detaljeadgangsfunktionen på tværs af rapporter
-              href: ../desktop-cross-report-drill-through.md
+            - name: Tilføj et filter i en rapport
+              href: ../power-bi-report-add-filter.md
             - name: Anvend gruppering
               href: ../desktop-grouping-and-binning.md
-            - name: Opret Power BI-visualiseringer med R
-              href: ../desktop-r-visuals.md
-            - name: Download og brug R-drevne Power BI-visualiseringer
-              href: ../desktop-r-powered-custom-visuals.md
             - name: Anvend gitterlinjer og fastgørelse til gitter
               href: ../desktop-gridlines-snap-to-grid.md
             - name: Anvend indstillinger for sidevisning i rapporter
@@ -153,6 +159,8 @@
               href: ../desktop-slicer-numeric-range.md
             - name: Relative datoudsnitsværktøjer og -filtre
               href: ../visuals/desktop-slicer-filter-date-range.md
+            - name: Relative klokkeslætsværktøjer og -filtre
+              href: slicer-filter-relative-time.md
             - name: 'Opret et udsnit, du kan tilpasse størrelsen på'
               href: ../power-bi-slicer-filter-responsive.md
             - name: Føj flere felter til et udsnitsværktøj
@@ -189,8 +197,6 @@
               href: ../desktop-templates.md
             - name: Opret en rapport ud fra et datasæt
               href: ../service-report-create-new.md
-            - name: Tilføj et filter i en rapport
-              href: ../power-bi-report-add-filter.md
             - name: Gem en rapport
               href: ../service-report-save.md
             - name: Interager med en rapport i redigeringsvisning
@@ -201,6 +207,8 @@
               href: ../service-aggregates.md
             - name: Opret en QR-kode for en rapport
               href: ../service-create-qr-code-for-report.md
+            - name: Lad brugerne tilpasse visualiseringer (eksempelvisning)
+              href: power-bi-personalize-visuals.md
             - name: Eksportér en rapport til Power BI Desktop (eksempelvisning)
               href: ../service-export-to-pbix.md
             - name: Publicer datasæt og rapporter
@@ -267,6 +275,10 @@
               href: ../visuals/power-bi-visualization-powerapp.md
             - name: R-visualiseringer
               href: ../visuals/service-r-visuals.md
+            - name: Opret Power BI-visualiseringer med R
+              href: ../desktop-r-visuals.md
+            - name: Download og brug R-drevne Power BI-visualiseringer
+              href: ../desktop-r-powered-custom-visuals.md
             - name: Radiale målerdiagrammer
               href: ../visuals/power-bi-visualization-radial-gauge-charts.md
             - name: Bånddiagrammer
@@ -371,6 +383,12 @@
               href: ../service-data-classification.md
             - name: Dashboardtemaer
               href: ../service-dashboard-themes.md
+        - name: Udrulningspipelines
+          items:
+            - name: Kom i gang
+              href: deployment-pipelines-get-started.md
+            - name: Fejlfinding
+              href: deployment-pipelines-troubleshooting.md
         - name: Andre opgaver
           items:
             - name: Omdøb indhold
