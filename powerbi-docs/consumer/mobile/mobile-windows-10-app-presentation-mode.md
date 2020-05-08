@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 02/08/2020
 ms.author: painbar
 ms.openlocfilehash: 3be0ab1eb45716d0b9b7736d3e5bf5b8bfc25891
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435990"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Få vist rapporter og dashboards i præsentationstilstand på Surface Hub og Windows 10-enheder
@@ -55,7 +55,7 @@ Du kan fradocke værktøjslinjen og trække den til en hvilken som helst placeri
 ![Rapport i præsentationstilstand og fradocket værktøjslinje](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-drag-toolbar-2.png)
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Få vist dashboards og rapporter i fuldskærmsvisning fra Power BI-tjenesten](../end-user-focus.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+* Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

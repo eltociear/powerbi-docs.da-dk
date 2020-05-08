@@ -10,10 +10,10 @@ ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 3ec372a51177e5979cdfbca8408e11801aefb414
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74791588"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Brug brugerdefinerede formatstrenge i Power BI Desktop
@@ -148,7 +148,7 @@ I følgende tabel identificeres de tegn, du kan bruge til at oprette **brugerdef
 | (&quot;ABC&quot;) | Viser strengen i dobbelte citationstegn (&quot; &quot;). |
 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 Du vil måske også være interesseret i følgende artikler:
 
 * [VBA-formatstrenge](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)

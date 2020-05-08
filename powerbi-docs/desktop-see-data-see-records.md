@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 66fe4a9eb109565108cd150369b2260a9d3e1d06
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73877777"
 ---
 # <a name="use-see-data-and-see-records-in-power-bi-desktop"></a>Brug Vis data og Vis poster i visualiseringer i Power BI Desktop
@@ -32,7 +32,7 @@ Du kan bruge **Vis data** til at få vist en tekstversion af de værdier, der br
 >  - Tragt
 >  - Kort
 >  - Cirkeldiagram
->  - Træstruktur
+>  - Treemap
 
 ## <a name="use-see-data-in-power-bi-desktop"></a>Brug af Vis data i Power BI Desktop
 
@@ -86,7 +86,7 @@ Du vender tilbage til rapporten ved at vælge **< Tilbage til rapport** i øvers
 > - Du kan ikke bruge **Vis poster**, når der benyttes en beregnet måling i den pågældende visual.
 > - Du kan ikke bruge **Vis poster**, når du har forbindelse til en live flerdimensionel model.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 **Power BI Desktop** indeholder mange forskellige funktioner til formatering af rapporter og dataadministration. I følgende ressourcer kan du se nogle eksempler:
 
 * [Brug gruppering og gruppering i beholder i Power BI Desktop](desktop-grouping-and-binning.md)

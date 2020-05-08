@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 02/13/2020
 LocalizationGroup: Premium
 ms.openlocfilehash: aed0d1e4dec6f6efe49dd39cd5b6fc60f8977e44
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79488608"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Sådan køber du Power BI Premium
@@ -35,7 +35,7 @@ Du kan oprette en ny lejer, hvor der er konfigureret en P1-SKU i Power BI Premiu
 
 ### <a name="create-a-new-tenant-with-power-bi-premium-p1"></a>Opret en ny lejer med Power BI Premium P1
 
-Hvis du ikke har en eksisterende lejer og vil oprette en, kan du købe Power BI Premium samtidigt. Følgende link fører dig gennem processen med at oprette en ny lejer og giver dig mulighed for at købe Power BI Premium: [Tilbud på Power BI Premium P1](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). Når du opretter din lejer, får du automatisk tildelt rollen Global administrator for Microsoft 365 for den pågældende lejer.
+Hvis du ikke har en eksisterende lejer og vil oprette en, kan du købe Power BI Premium samtidigt. Følgende link fører dig gennem processen med at oprette en ny lejer og giver dig mulighed for at købe Power BI Premium: [tilbud om Power BI Premium P1](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). Når du opretter din lejer, får du automatisk tildelt rollen Global administrator for Microsoft 365 for den pågældende lejer.
 
 Når du har købt kapacitet, kan du få mere at vide om, hvordan du [administrerer kapaciteter](service-admin-premium-manage.md#manage-capacity) og [tildeler arbejdsområder](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity) til en kapacitet.
 
@@ -169,7 +169,7 @@ Følg disse trin for at købe A-SKU'er via Azure Portal:
 
 Når du har købt kapacitet, kan du få mere at vide om, hvordan du [administrerer kapaciteter](service-admin-premium-manage.md#manage-capacity) og [tildeler arbejdsområder](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity) til en kapacitet.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Konfigurer og administrer kapaciteter i Power BI Premium](service-admin-premium-manage.md)\
 [Side med Power BI-prisfastsættelse](https://powerbi.microsoft.com/pricing/)\

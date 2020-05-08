@@ -10,10 +10,10 @@ ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: ed1100a418259845e6a2656e1c5bab6d80358df0
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79381071"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming i realtid i Power BI
@@ -43,7 +43,7 @@ Der er to ting, du skal være opmærksom på vedrørende fastgjorte felter fra e
 * Når et visuelt element fastgøres til et dashboard, kan du bruge **Spørgsmål og svar** til at stille spørgsmål til pushdatasættet på et naturligt sprog. Når du har foretaget en **Spørgsmål og svar**-forespørgsel, kan du fastgøre det resulterende visuelle element tilbage på dashboardet, og dette dashboard opdateres *også* i realtid.
 
 ### <a name="streaming-dataset"></a>Streamingdatasæt
-Med et **streamingdatasæt** overføres data også til Power BI-tjenesten med én vigtig forskel: Power BI gemmer kun dataene i en midlertidig cache, som hurtigt udløber. Den midlertidige cache bruges kun til at vise visuelle elementer, som har en midlertidig historik, f.eks. et kurvediagram, der har et tidsvindue på en time.
+Med et **streamingdatasæt** pushoverføres data også til Power BI-tjenesten med én vigtig forskel: Power BI gemmer kun dataene i en midlertidig cache, som hurtigt udløber. Den midlertidige cache bruges kun til at vise visuelle elementer, som har en midlertidig historik, f.eks. et kurvediagram, der har et tidsvindue på en time.
 
 Med et **streamingdatasæt** er der *ingen* underliggende database, så du *kan ikke* oprette visuelle elementer i rapporter, der bruger de data, der kommer ind fra streamen. Du kan ikke som sådan bruge rapportens funktioner, f.eks. filtrering, Power BI-visuals og andre rapportfunktioner.
 
@@ -240,7 +240,7 @@ Automatisk sideopdatering fungerer på rapportsideniveau og giver rapportforfatt
 Få mere at vide om automatisk sideopdatering i artiklen [Automatisk sideopdatering](desktop-automatic-page-refresh.md).
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Her er nogle links, som du kan finde nyttige, når du arbejder med streaming i realtid i Power BI:
 
 * [Oversigt over Power BI REST API med data i realtid](https://docs.microsoft.com/rest/api/power-bi/)

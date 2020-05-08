@@ -11,10 +11,10 @@ ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: bdd2ec136ae741e15e0cb60d141c651cd5fb6749
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79207591"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Rediger eller fjern et dashboard-felt
@@ -129,7 +129,7 @@ Når du vælger et felt, føres du normalt hen til rapporten, hvor feltet blev o
 1. Vælg **Fastgør felt** ![tegnestiftsikon](media/service-dashboard-edit-tile/pinnooutline.png) i rullemenuen for ellipsen.
 2. Vælg, om du vil fastgøre en dublet af dette felt til et eksisterende dashboard eller til et nyt dashboard. 
    
-   ![Dialogboksen Fastgør til dashboard](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
+   ![Fastgør til dashboarddialogboks](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
 3. Vælg **Fastgør**.
 
 <a name="delete"></a>
@@ -140,7 +140,7 @@ Når du vælger et felt, føres du normalt hen til rapporten, hvor feltet blev o
 2. Når du sletter et felt, slettes den underliggende visualisering ikke. Åbn den underliggende rapport ved at vælge feltet "Beløb". Åbn den sidste side i rapporten for at se, at den oprindelige visualisering ikke er blevet slettet fra rapporten. 
 
 - - -
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Dashboardfelter i Power BI](consumer/end-user-tiles.md)
 
 [Dashboards i Power BI](consumer/end-user-dashboards.md)

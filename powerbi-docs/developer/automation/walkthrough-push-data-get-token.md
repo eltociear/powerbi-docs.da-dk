@@ -1,5 +1,5 @@
 ---
-title: Hent et adgangstoken til godkendelse
+title: Hent en adgangstoken til godkendelse
 description: Gå videre til overførsel af data – hent et adgangstoken til godkendelse
 author: KesemSharabi
 ms.author: kesharab
@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/29/2019
 ms.openlocfilehash: 7e74b01a6b12302393a3e4bc40b2e9cccfc13d63
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79488263"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Trin 2: Hent et adgangstoken til godkendelse
@@ -21,7 +21,7 @@ Denne artikel er det andet trin i serien [Overfør data til et datasæt i Power 
 
 I trin 1 [registrerede du en klientapp i Azure AD](../embedded/register-app.md). På dette trin henter du et adgangstoken til godkendelse. Power BI-apps er integreret med Azure Active Directory for at give sikker logon og godkendelse til din app. Din app bruger et token til at godkende til Azure AD og få adgang til Power BI-ressourcer.
 
-## <a name="get-an-authentication-access-token"></a>Hent et adgangstoken til godkendelse
+## <a name="get-an-authentication-access-token"></a>Hent en adgangstoken til godkendelse
 
 Før du starter, skal du sikre, at du har fuldført det [forrige trin](../embedded/register-app.md) i serien [Overfør data til et datasæt i Power BI](walkthrough-push-data.md). 
 
@@ -115,7 +115,7 @@ Når du har hentet et godkendelsestoken, kan du kalde enhver Power BI-handling.
 I næste artikel i serien kan du se, hvordan du [opretter et datasæt i Power BI](walkthrough-push-data-create-dataset.md).
 
 
-## <a name="complete-code-listing"></a>Komplet kodeliste
+## <a name="complete-code-listing"></a>Færdiggør kodeliste
 
 ```csharp
 using System;
@@ -180,10 +180,10 @@ namespace walkthrough_push_data
 
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * Den næste artikel i denne serie er [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md)
-* [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
+* [Oversigt over Power BI REST-API'en](overview-of-power-bi-rest-api.md)  
 * [REST-API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

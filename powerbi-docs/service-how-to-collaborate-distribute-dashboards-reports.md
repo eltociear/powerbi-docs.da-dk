@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 03/12/2020
 LocalizationGroup: Share your work
 ms.openlocfilehash: 86992d2e1426616f8d902a9f49d35407fde60ef2
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79376747"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Måder at dele dit arbejde i Power BI på
@@ -132,7 +132,7 @@ Med **Publicer på internettet** kan du publicere Power BI-rapporter på hele in
 *Skabelonapps* er designet til at blive distribueret offentligt, ofte i Microsoft AppSource. Du opretter en app, og med kun lidt eller ingen kode kan du udrulle den til Power BI-kunder. Dine kunder opretter forbindelse til deres egne data og bruger deres egne konti. Læs mere om [Power BI-skabelonapps](service-template-apps-overview.md).
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * [Del dashboards med kolleger og andre](service-share-dashboards.md)
 * [Opret og publicer en app i Power BI](service-create-distribute-apps.md)

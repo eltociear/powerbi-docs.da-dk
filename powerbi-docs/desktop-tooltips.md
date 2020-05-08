@@ -10,14 +10,14 @@ ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 2492996c8bbc6ea7a8d359b4b1015de67bb17430
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79378702"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Opret værktøjstip baseret på rapportsider i Power BI Desktop
-Du kan oprette visuelt omfattende **værktøjstip til rapporter**, som vises, når du holder over visualiseringer, på baggrund af rapportsider, du opretter i **Power BI Desktop**. Ved at oprette en rapportside, der fungerer som et værktøjstip, kan dine brugerdefinerede værktøjstipindeholde visualiseringer, billeder og mange andre samlinger af elementer, du opretter på en rapportside. 
+Du kan oprette visuelt omfattende **værktøjstip til rapporter**, som vises, når du holder over visualiseringer, på baggrund af rapportsider, du opretter i **Power BI Desktop**. Ved at oprette en rapportside, der fungerer som et værktøjstip, kan dine brugerdefinerede værktøjstip{1}{2}indeholde visualiseringer, billeder og mange andre samlinger af elementer, du opretter på en rapportside. 
 
 ![Værktøjstip til rapporter i Power BI Desktop](media/desktop-tooltips/desktop-tooltips_00a.png)
 
@@ -118,7 +118,7 @@ Der er nogle få begrænsninger og overvejelser i forbindelse med **værktøjsti
 
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Du kan finde flere oplysninger om funktioner, der ligner eller interagerer med værktøjstip til rapporter, i følgende artikler:
 
 * [Brug detaljeadgang i Power BI Desktop](desktop-drillthrough.md)

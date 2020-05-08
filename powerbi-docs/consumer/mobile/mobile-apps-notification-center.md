@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 23291659a12bb08becf0d9a4f57a41a93eadbc5e
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435576"
 ---
 # <a name="get-notifications-in-the-power-bi-mobile-apps"></a>Modtag meddelelser i Power BI-mobilapps
@@ -71,8 +71,8 @@ Du kan ændre, hvordan Power BI underretter dig.
 
     ![Vælg Meddelelser](./media/mobile-apps-notification-center/power-bi-notifications-windows10-settings.png)
 
-## <a name="next-steps"></a>Næste trin
-* [Databeskeder i Power BI-tjenesten](../../service-set-data-alerts.md)
+## <a name="next-steps"></a>De næste trin
+* [Databeskeder i Power BI-tjeneste](../../service-set-data-alerts.md)
 * [Indstil databeskeder i iPhone-appen (Power BI til iOS)](mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Indstil databeskeder i Power BI-mobilappen til Windows 10](mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Download den nyeste version af Power BI-mobilapps](https://powerbi.microsoft.com/mobile/) til mobilenheder

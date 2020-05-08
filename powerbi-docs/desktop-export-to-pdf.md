@@ -10,10 +10,10 @@ ms.date: 02/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 6e468ac429c26f3b1880501914816ac60f8b7858
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79378725"
 ---
 # <a name="export-reports-to-pdf-from-power-bi-desktop"></a>Eksportér rapporter til PDF-format fra Power BI Desktop
@@ -40,7 +40,7 @@ Da baggrunden ikke eksporteres til PDF-filen, skal du være ekstra opmærksom p�
 
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Der findes alle mulige interessante visualiseringer og funktioner i **Power BI Desktop**. Du kan finde flere oplysninger i følgende ressourcer:
 
 * [Brug visualiseringer til at forbedre Power BI-rapporter](desktop-visual-elements-for-reports.md)

@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: b603ced5775d72c09419ea5e18b2eb03b2680e95
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80273357"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Udsnit med høj tæthed i Power BI-punktdiagrammer
@@ -33,7 +33,7 @@ Tidligere valgte **Power BI** et udsnit af eksempeldatapunkter i alle de underli
 
 Når du aktiverer **Stikprøvetagning med høj tæthed**, implementeres en algoritme i Power BI, der fjerner overlappende punkter og sikrer, at punkterne i visualiseringen kan nås, når der interageres med visualiseringen. Algoritmen sikrer også, at alle punkter i datasættet er repræsenteret i visualiseringen Det giver en kontekst for betydningen af de udvalgte punkter i stedet for bare at afbilde et repræsentativt udsnit.
 
-Udsnit af data med høj tæthed tages pr. definition for at kunne oprette visualiseringer forholdsvist hurtigt og bruge disse visualiseringer interaktivt. For mange datapunkter i et visuelt element kan gøre det for tungt og gøre tendenserne mindre synlige. Udsnitsalgoritmen er derfor udviklet for at udvælge data, så man opnår den bedste visualisering og sikrer, at alle data er repræsenteret. I Power BI er algoritmen nu blevet forbedret for at opnå den bedste kombination af svartid, repræsentation og tydelig bevarelse af vigtige punkter i det samlede datasæt.
+Stikprøver af data med høj tæthed tages pr. definition for at kunne oprette visualiseringer forholdsvist hurtigt og bruge disse visualiseringer interaktivt. For mange datapunkter i et visuelt element kan gøre det for tungt og gøre tendenserne mindre synlige. Udsnitsalgoritmen er derfor udviklet for at udvælge data, så man opnår den bedste visualisering og sikrer, at alle data er repræsenteret. I Power BI er algoritmen nu blevet forbedret for at opnå den bedste kombination af svartid, repræsentation og tydelig bevarelse af vigtige punkter i det samlede datasæt.
 
 > [!NOTE]
 > Punktdiagrammer, der bruger algoritmen **Udsnit med høj tæthed**, afbildes bedst i firkantede visualiseringer, som det er tilfældet med alle punktdiagrammer.
@@ -84,7 +84,7 @@ Algoritmen Udsnit med høj tæthed er en vigtig forbedring af Power BI, men der 
 
 * Algoritmen for **Stikprøvetagning med høj tæthed** fungerer kun med direkte forbindelser til modeller, der er baseret på Power BI-tjenesten, importerede modeller eller DirectQuery.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan finde flere oplysninger om udsnit med høj tæthed i følgende artikler:
 
