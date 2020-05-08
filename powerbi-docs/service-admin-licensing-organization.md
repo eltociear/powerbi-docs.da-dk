@@ -10,10 +10,10 @@ ms.date: 04/08/2020
 ms.author: kfollis
 LocalizationGroup: Administration
 ms.openlocfilehash: a41e9453158c38a208fe7f4ac937b4e86a515f4b
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81436316"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI-licenser i din organisation
@@ -93,7 +93,7 @@ Som administrator kan du købe Power BI Pro-licenser via Microsoft 365 eller via
 
 ### <a name="power-bi-pro-license-expiration"></a>Udløb af Power BI Pro-licens
 
-Der er en respitperiode, efter en Power BI Pro-licens er udløbet. For licenser, der er en del af et volumenlicenskøb, er respitperioden 90 dage. Hvis du har købt licensen direkte, er respitperioden 30 dage.
+Der er en respitperiode, efter en Power BI Pro-licens er udløbet. For licenser, der er en del af et volumenlincenskøb, er respitperioden 90 dage. Hvis du har købt licensen direkte, er respitperioden 30 dage.
 
 Power BI Pro har den samme abonnementslivscyklus som Office 365. Du kan finde flere oplysninger under [Hvad sker der med mine data og adgang, når mit abonnement på Office 365 til virksomheder slutter?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
 

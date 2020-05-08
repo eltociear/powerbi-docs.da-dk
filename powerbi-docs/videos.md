@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 03/03/2020
 ms.author: davidi
 ms.openlocfilehash: 41a0d100817f23d3a395f05cefbe60a0214bfb59
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78260847"
 ---
 # <a name="power-bi-videos"></a>Power BI-videoer
@@ -31,7 +31,7 @@ Her er et par videoer fra afspilningslisten, som kan hjælpe dig med at komme i 
   
   <iframe width="560" height="315" src="https://www.youtube.com/embed/07uBWhaCo78" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-* Power BI til udviklere
+* Power BI for udviklere
   <iframe width="560" height="315" src="https://www.youtube.com/embed/47uXJW1GIUY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
 
 ## <a name="watch-some-of-our-new-uploads"></a>Se nogle af vores nye uploads
@@ -44,7 +44,7 @@ Se følgende samling af kilder og indhold for flere videoer.
 
 * [Automatiseret læring for Power BI](https://powerbi.microsoft.com/guided-learning/) – en serie af lærerige rundvisninger i Power BI i små bidder
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Hvad er Power BI?](fundamentals/power-bi-overview.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

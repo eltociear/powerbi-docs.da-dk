@@ -10,12 +10,12 @@ ms.author: kfollis
 ms.date: 12/05/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 831c6f1d2cecfa51b64c8ff77f14ead9f644bcc7
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.openlocfilehash: 70f10620932708dd178b635f966a55f8139cde65
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81439980"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841152"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Sikkerhed på rækkeniveau (RLS) med Power BI
 
@@ -51,7 +51,7 @@ Du kan kun oprette eller redigere roller i Power BI Desktop.
 
 ### <a name="add-members"></a>Tilføj medlemmer
 
-Du kan føje et medlem til rollen ved at skrive mailadressen eller navnet på den bruger, sikkerhedsgruppe eller distributionsliste, du vil tilføje. Du kan ikke tilføje grupper, der er oprettet i Power BI. Du kan tilføje medlemmer, som [ikke er fra organisationen](whitepaper-azure-b2b-power-bi.md#data-security-for-external-partners).
+Du kan føje et medlem til rollen ved at skrive mailadressen eller navnet på den bruger, sikkerhedsgruppe eller distributionsliste, du vil tilføje. Du kan ikke tilføje grupper, der er oprettet i Power BI. Du kan tilføje medlemmer, som [ikke er fra organisationen](guidance/whitepaper-azure-b2b-power-bi.md#data-security-for-external-partners).
 
 ![Tilføj et medlem](media/service-admin-rls/rls-add-member.png)
 

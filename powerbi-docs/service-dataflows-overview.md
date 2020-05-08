@@ -10,17 +10,17 @@ ms.date: 04/01/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 28be15b1f62f410c14faaa5d3e8c36060596c466
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79208120"
 ---
 # <a name="self-service-data-prep-in-power-bi"></a>Selvbetjent dataforberedelse i Power BI
 
 Efterhånden som datamængden vokser, stiger behovet for at konvertere dataene i korrekt udformede oplysninger, som der kan handles på. Vi vil gerne have data, der er klar til analyse, til udfyldning af visuelle elementer, rapporter og dashboards, så vi hurtigt kan konvertere vores datamængder til viden, som der kan handles på. Med **selvbetjening til dataforberedelse** til big data i Power BI kan du gå fra data til Power BI-indsigt med bare nogle få klik.
 
-![Brug dataflows i Power BI](media/service-dataflows-overview/powerbi-dataflows_01.png)
+![Brug dataflow i Power BI](media/service-dataflows-overview/powerbi-dataflows_01.png)
 
 Power BI introducerer **dataflows**, der kan hjælpe virksomheder med at samle data fra forskellige kilder og forberede dem til modellering. Analytikere kan nemt oprette dataflows ved hjælp af velkendte værktøjer til selvbetjening. Dataflows anvendes til at indsamle, transformere, integrere og forbedre big data ved at definere datakildeforbindelser, ETL-logik, opdatere tidsplaner og meget mere. Desuden gør den nye modelbaserede beregningsmotor, som er en del af dataflows, processen med dataforberedelse lettere at håndtere, mere deterministisk og mindre besværlig for såvel dataanalytikere som rapportoprettere. På samme måde som regneark håndterer genberegninger for alle berørte formler, håndterer dataflows alle ændringer af et objekt eller dataelement på dine vegne, hvilket automatiserer opdatering og letter det, der tidligere selv i forbindelse med almindelige dataopdateringer krævede kedelige og tidskrævende logiske kontroller. Med dataflows kan opgaver, der tidligere krævede opsyn af dataeksperter (og tog mange timer eller dage at fuldføre) nu håndteres med nogle få klik af analytikere og rapportoprettere. 
 
@@ -76,7 +76,7 @@ For at kunne køre dataflowfunktioner og arbejdsbelastninger på et Power BI Pre
 |Dataflow-funktionalitet | Power BI Pro |   Power BI Premium |
 |---------|---------|---------|
 |Planlagt opdatering| 8 pr. dag|  48|
-|Samlet lager| 10 GB pr. bruger  |100 TB pr. node|
+|Samlet lagerplads| 10 GB pr. bruger  |100 TB pr. node|
 |Oprettelse af dataflow med Power-forespørgsel online|    +   |+|
 |Administration af dataflow i Power BI|   +|  +|
 |Dataflows Data Connector i Power BI Desktop|  +|  +|

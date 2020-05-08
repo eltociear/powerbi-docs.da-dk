@@ -10,10 +10,10 @@ ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 81581b861f731ac287cc18f4ab1fdf77ab7a4e7c
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79040107"
 ---
 # <a name="your-content-is-up-to-date"></a>Dit indhold er opdateret
@@ -95,7 +95,7 @@ En anden måde at holde indholdet opdateret på, er at abonnere på en rapport e
 ## <a name="set-data-alerts"></a>Indstil databeskeder
 Vil du have besked, hvis dataene ændres over eller under en grænse, du har angivet? [Opret en databesked](end-user-alerts.md).  Det er nemt at holde dig opdateret ved hjælp af databeskeder. Brug databeskeder til at få Power BI til at sende dig en mail, hvis en værdi i en rapport når over eller under en bestemt grænse.  Det kan f.eks. være, hvis lagerbeholdningen af en vare når under 25, eller hvis salget overstiger et mål.  
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Opret en databesked](end-user-alerts.md)    
 [Abonner på dashboards og rapporter](end-user-subscribe.md)    
 [Vis relateret indhold](end-user-related.md)    

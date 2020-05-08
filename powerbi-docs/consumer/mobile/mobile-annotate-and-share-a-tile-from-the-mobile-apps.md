@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 5d1a014b32bcb3ce90938659e2b6478518e8aefc
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205498"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Anmærk og del et felt, en rapport eller en visualisering i Power BI-mobilapps
@@ -20,7 +20,7 @@ Gælder for:
 
 | ![iPhone](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/android-tablet-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |
+| iPhones |iPad-tablets |Android-telefoner |Android-tablets |
 
 Du kan anmærke og dele et øjebliksbillede af et felt, en rapport eller en visualisering fra Power BI-mobilappen på iOS- og Android-enheder. Dine modtagere kan se det, præcis som det var, når du sender mailen med et link. Du kan sende et øjebliksbillede af felter til alle – ikke kun til kolleger på samme maildomæne. Du kan tilføje anmærkninger – streger, tekst eller stempler – før du deler.
 
@@ -71,7 +71,7 @@ Du kan også [dele et felt fra Power BI-mobilappen til Windows 10-enheder](mobil
    Mailen indeholder et billede og et link til feltet, rapporten eller visualiseringen. 
 4. Tryk på **Send**.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Del et dashboard fra din Power BI-mobilapp](mobile-share-dashboard-from-the-mobile-apps.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+* Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

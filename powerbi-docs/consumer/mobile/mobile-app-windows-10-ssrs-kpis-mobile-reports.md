@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 03/09/2020
 ms.author: painbar
 ms.openlocfilehash: 67daafc0938216b135b31d3190c191402e9a10de
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435369"
 ---
 # <a name="view-on-premises-reports-and-kpis-in-the-power-bi-windows-app"></a>Vis rapporter og KPI'er i det lokale miljø i Power BI Windows-appen
@@ -46,7 +46,7 @@ Gennemse eksemplerne for at interagere med KPI'er og mobilrapporter.
 
 ## <a name="connect-to-a-reporting-services-report-server"></a>Opret forbindelse til en Reporting Services-rapportserver
 1. Tryk på **Indstillinger** ![ikonet Indstillinger](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png) nederst i navigationsruden
-2. Tryk på **Opret forbindelse til server**.
+2. Tryk på **Opret forbindelse til serveren**.
 3. Udfyld serveradressen og dit brugernavn og din adgangskode. Brug dette format til serveradressen:
    
      `https://<servername>/reports` ELLER   `https://<servername>/reports`
@@ -72,7 +72,7 @@ Reporting Services-KPI'er, mobilrapporter og Power BI-rapporter (prøveversion) 
 
 ![Rapportmapper](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-folders.png)
 
-* Tryk på en KPI for at få den vist i fokuseringstilstand.
+* Tryk på en KPI for at få den vist i fokuseret tilstand.
   
     ![KPI i fokuseringstilstand](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-kpis.png)
 * Tryk på en mobilrapport for at åbne og interagere med den i Power BI-appen.
@@ -105,8 +105,8 @@ Du opretter ikke Reporting Services-KPI'er og -mobilrapporter i Power BI-mobilap
 * [Opret dine egne Reporting Services-mobilrapporter](https://msdn.microsoft.com/library/mt652547.aspx), og publicer dem på en Reporting Services-webportal.
 * Opret [KPI'er på en Reporting Services-webportal](https://msdn.microsoft.com/library/mt683632.aspx)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Kom i gang med Power BI-mobilappen til Windows 10](mobile-windows-10-phone-app-get-started.md)  
 * [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)  
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+* Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

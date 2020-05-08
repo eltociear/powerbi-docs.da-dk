@@ -1,21 +1,21 @@
 ---
-title: Tip til udarbejdelse af skabelonprogrammer i Power BI
+title: Tip til udarbejdelse af skabelonapps i Power BI
 description: Tip til udarbejdelse af forespørgsler, datamodeller, rapporter og dashboards for at skabe gode skabelonprogrammer
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 03/24/2020
-ms.author: tebercov
-ms.openlocfilehash: 12ba04381c5227c897f4b1f13def4c52999bc1a5
-ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
+ms.date: 05/04/2020
+ms.author: painbar
+ms.openlocfilehash: 266e44b5e5ecff2f86bcd3d43ce91368cc57b9e1
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82066276"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781288"
 ---
-# <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tip til udarbejdelse af skabelonprogrammer i Power BI
+# <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tip til udarbejdelse af skabelonapps i Power BI
 
 Når du [udarbejder dit skabelonprogram](service-template-apps-create.md) i Power BI, er en del af det logistikken til oprettelse af arbejdsområdet, test af det og produktion. Men en anden vigtige del er naturligvis at udarbejde rapporten og dashboardet. Vi kan opdele processen for udarbejdelse i fire primære komponenter. Når du arbejder på disse komponenter, hjælper det dig med at oprette det bedst mulige skabelonprogram:
 
@@ -23,7 +23,7 @@ Når du [udarbejder dit skabelonprogram](service-template-apps-create.md) i Powe
 * I **datamodellen** opretter du [relationer](desktop-create-and-manage-relationships.md), [målinger](desktop-measures.md) og forbedringer af Spørgsmål og svar.  
 * **[Rapportsider](desktop-report-view.md)** indeholder visualiseringer og filtre, som kan hjælpe med at give indsigt i dine data.  
 * **[Dashboards](consumer/end-user-dashboards.md)** og [felter](service-dashboard-create.md) hjælper med at give et overblik over den inkluderede indsigt.
-* Eksempeldata gør det nemt at finde dit program umiddelbart efter installationen.
+* Eksempeldata gør det nemt at finde din app umiddelbart efter installationen.
 
 Du kender hver enkelt del som eksisterende funktioner i Power BI. Når du udarbejder et skabelonprogram, er der flere ting, du bør overveje for hver enkelt del. Du kan finde flere oplysninger under de enkelte afsnit herunder.
 
@@ -38,7 +38,7 @@ Du kommer i gang ved at oprette forbindelse til din API fra Power BI Desktop, s�
 Du kan bruge de dataconnectorer, der findes i Power BI Desktop, til at oprette forbindelse til din API. Du kan bruge Web Data Connector (Hent Data -> Web) til at oprette forbindelse til din Rest API eller OData-connectoren (Hent Data -> OData-feed) for at oprette forbindelse til dit OData-feed.
 
 > [!NOTE]
-> Skabelonprogrammer understøtter i øjeblikket ikke brugerdefinerede connectorer. Det anbefales, at du undersøger det ved at bruge Odatafeed Auth 2.0 som en hjælp til nogle forbindelses-use cases eller indsender din connector til certificering. Du kan finde flere oplysninger om, hvordan du udvikler en connector og certificerer den, i [dokumentationen til dataconnectorer](https://aka.ms/DataConnectors).
+> Skabelonapps understøtter i øjeblikket ikke brugerdefinerede connectorer. Det anbefales, at du undersøger det ved at bruge Odatafeed Auth 2.0 som en hjælp til nogle forbindelses-use cases eller indsender din connector til certificering. Du kan finde flere oplysninger om, hvordan du udvikler en connector og certificerer den, i [dokumentationen til dataconnectorer](https://aka.ms/DataConnectors).
 
 ### <a name="consider-the-source"></a>Tag højde for kilden
 Forespørgsler definerer de data, der inkluderes i datamodellen. Afhængigt af størrelsen af dit system bør disse forespørgsler også inkludere filtre for at sikre, at dine kunder arbejder med en håndterbar størrelse, der passer til dit forretningsscenarie.
@@ -113,52 +113,38 @@ Når du vil oprette et dashboard for dit skabelonprogram, skal du blot uploade d
 * Overvej at anvende grupperinger på dashboardet til forskellige scenarier enten lodret eller vandret.  
 
 ## <a name="sample-data"></a>Eksempeldata
-Skabelonprogrammer, som bruges i fasen til oprettelse af programmer, ombryder de cachelagrede data i arbejdsområdet som en del af programmet:
+Skabelonapps, som bruges i fasen til oprettelse af apps, ombryder de cachelagrede data i arbejdsområdet som en del af appen:
 
-* Det gør det muligt for installationsprogrammet at forstå funktionaliteten i og formålet med programmet, før der oprettes forbindelse til data.
-* Skaber en oplevelse, der får installationsprogrammet til at udforske programfunktioner yderligere, hvilket medfører oprettelse af forbindelse til datasættet for programmet.
+* Det gør det muligt for installationsprogrammet at forstå funktionaliteten i og formålet med appen, før der oprettes forbindelse til data.
+* Skaber en oplevelse, der får installationsprogrammet til at udforske appfunktioner yderligere, hvilket medfører oprettelse af forbindelse til appdatasættet.
 
-Det anbefales, at du har gode eksempeldata, før du opretter programmet. Sørg for, at din programrapport og dine dashboards er udfyldt med data.
+Det anbefales, at du har gode eksempeldata, før du opretter appen. Sørg for, at din apprapport og dine dashboards er udfyldt med data.
 
 ## <a name="publishing-on-appsource"></a>Publicering på AppSource
-Skabelonprogrammer kan publiceres på AppSource. Følg disse retningslinjer, før du sender dit program til AppSource:
+Skabelonapps kan publiceres på AppSource. Følg disse retningslinjer, før du sender din app til AppSource:
 
-* Sørg for at oprette et skabelonprogram med engagerende eksempeldata, som kan hjælpe den person, der installerer programmet, med at forstå, hvad programmet kan gøre (en tom rapport og et tomt dashboard godkendes ikke).
-Skabelonprogrammer understøtter kun programmer med eksempeldata. Husk at markere afkrydsningsfeltet for det statiske program. [Få mere at vide](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Sørg for at oprette en skabelonapp med engagerende eksempeldata, som kan hjælpe den person, der installerer appen, med at forstå, hvad appen kan gøre (en tom rapport og et tomt dashboard godkendes ikke).
+Skabelonapps understøtter eksempeldata kun for apps. Husk at markere afkrydsningsfeltet for den statiske app. [Få mere at vide](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Få en vejledning, som valideringsteamet skal følge, der omfatter legitimationsoplysninger og parametre, som kræves for at oprette forbindelse til data.
-* Programmet skal inkludere et programikon i Power BI og på dit CPP-tilbud. [Få mere at vide](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Programmet skal inkludere et appikon i Power BI og på dit CPP-tilbud. [Få mere at vide](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Konfigureret landingsside. [Få mere at vide](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Sørg for at følge dokumentationen på [Partnercenter -> Tilbud om Power BI-program](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
-* Hvis et dashboard er en del af dit program, skal du sørge for, at det ikke er tomt.
-* Installér programmet ved hjælp af linket til programmet, før du udgiver den, og kontrollér, at du kan oprette forbindelse til datasættet, og at programoplevelsen er, som du forventer.
+* Hvis et dashboard er en del af din app, skal du sørge for, at det ikke er tomt.
+* Installér appen ved hjælp af linket til appen, før du udgiver den, og kontrollér, at du kan oprette forbindelse til datasættet, og at appoplevelsen er, som du forventer.
 * Før du uploader pbix til arbejdsområdet for skabelonen, skal du huske at fjerne alle unødvendige forbindelser.
 * Følg [Bedste praksis for design af rapporter og visuals](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) for Power BI for at opnå maksimal indflydelse på dine brugere og blive godkendt til distribution.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
-## <a name="create-a-download-link-for-the-app"></a>Opret et downloadlink til programmet
+## <a name="create-a-download-link-for-the-app"></a>Opret et downloadlink til appen
 
-Når du har publiceret skabelonprogrammet på AppSource, kan du overveje at oprette et downloadlink fra dit websted til enten:
+Når du har publiceret skabelonappen på AppSource, kan du overveje at oprette et downloadlink fra dit websted til enten:
 * AppSource-downloadside – kan ses offentligt, få linket fra din AppSource-side.
 * Power BI – kan ses af en Power BI-bruger.
 
-Hvis du vil omdirigere en bruger til programmets downloadlink i Power BI, skal du se følgende kodeeksempel: [GitHub-lager](https://github.com/microsoft/Template-apps-examples/tree/master/src).
-[![Downloadlink til program](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
+Hvis du vil omdirigere en bruger til appens downloadlink i Power BI, skal du se følgende kodeeksempel: [GitHub-lager](https://github.com/microsoft/Template-apps-examples/tree/master/src).
 
-
-
-## <a name="known-limitations"></a>Kendte begrænsninger
-
-| Funktion | Kendt begrænsning |
-|---------|---------|
-|Indhold:  Datasæt   | Nøjagtigt ét datasæt skal være til stede. Der tillades kun datasæt, som er udarbejdet i Power BI Desktop (.pbix-filer). <br>Understøttes ikke: Datasæt fra andre skabelonprogrammer, datasæt på tværs af arbejdsområder, sideinddelte rapporter (.rdl-filer), Excel-projektmapper, forbedrede metadata for datasæt |
-|Indhold: Dashboards | Felter i realtid tillades ikke (med andre ord, understøttes push- eller streamingdatasæt ikke) |
-|Indhold: Dataflow | Understøttes ikke: Dataflow |
-|Indhold fra filer | Der tillades kun PBIX-filer. <br>Understøttes ikke: .rdl-filer (sideinddelte rapporter), Excel-projektmapper   |
-| Datakilder | Der tillades datakilder, som understøttes for planlagt dataopdatering i cloudmiljøet. <br>Understøttes ikke: <li> DirectQuery</li><li>Direkte forbindelser (ingen Azure AS)</li> <li>Datakilder i det lokale miljø (personlige gateways og virksomhedsgateways understøttes ikke)</li> <li>Realtid (pushdatasæt understøttes ikke)</li> <li>Sammensatte modeller</li></ul> |
-| Datasæt: på tværs af arbejdsområde | Datasæt på tværs af arbejdsområder er ikke tilladt  |
-| Forespørgselsparametre | Understøttes ikke: Parametre af typen "Any" eller "Binary" blokerer opdateringshandlinger for datasæt |
-| Power BI-visualiseringer | Der understøttes kun offentligt tilgængelige Power BI-visuals. [Power BI-visuals til organisationer](developer/visuals/power-bi-custom-visuals-organization.md) understøttes ikke |
+[![Downloadlink til app](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
 
 ## <a name="next-steps"></a>Næste trin
 
-[Hvad er Power BI-skabelonprogrammer?](service-template-apps-overview.md)
+[Hvad er Power BI-skabelonapps?](service-template-apps-overview.md)
