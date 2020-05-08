@@ -42,9 +42,9 @@
               href: ../service-premium-capacity-optimize.md
             - name: Premium-kapacitetsscenarier
               href: ../service-premium-capacity-scenarios.md
-            - name: Ofte stillede spørgsmål om Power BI Premium
+            - name: Ofte stillede spørgsmål til Power BI Premium
               href: ../service-premium-faq.md
-    - name: 'Sådan gør du:'
+    - name: Sådan gør du
       items:
         - name: Licenser og tilmelding
           items:
@@ -131,7 +131,7 @@
           href: ../service-admin-power-bi-security.md
         - name: Niveauer for beskyttelse af personlige oplysninger
           href: ../desktop-privacy-levels.md
-    - name: Fejlfind
+    - name: Fejlfinding
       items:
         - name: Kan du ikke logge på?
           href: ../power-bi-cannot-sign-in.md
@@ -147,5 +147,3 @@
           href: ../service-admin-alternate-email-address-for-power-bi.md
         - name: Sådan bruger du det samme konto-logon til Power BI og Azure
           href: ../service-admin-how-to-use-the-same-account-as-azure.md
-        - name: Office 365 dedikeret - kendte problemer
-          href: ../service-admin-office-365-dedicated-known-issues.md

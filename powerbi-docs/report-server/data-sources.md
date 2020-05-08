@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 04/08/2020
 ms.author: maggies
 ms.openlocfilehash: 166f72a717c99457e1d6b8e9a1f30535a9b4686f
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80979839"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakilder på Power BI-rapportserver
@@ -30,7 +30,7 @@ Det er muligt, at andre datakilder fungerer, selvom de ikke står på listen ove
 
 | **Datakilde** | **Cachelagrede data** | **Planlagt opdatering** | **Live/DirectQuery** |
 | --- | --- | --- | --- |
-| SQL Server Database |Ja |Ja |Ja |
+| SQL Server-database |Ja |Ja |Ja |
 | SQL Server Analysis Services |Ja |Ja |Ja |
 | Azure SQL Database |Ja |Ja |Ja |
 | Azure SQL Data Warehouse |Ja |Ja |Ja |
@@ -47,7 +47,7 @@ Det er muligt, at andre datakilder fungerer, selvom de ikke står på listen ove
 | Facebook |Ja |Nej |Nej |
 | Mappe |Ja |Ja |Nej |
 | Google Analytics |Ja |Nej |Nej |
-| Hadoop File (HDFS) |Ja |Nej |Nej |
+| Hadoop-fil (HDFS) |Ja |Nej |Nej |
 | IBM DB2-database |Ja |Ja |Nej |
 | Impala |Ja |Nej |Nej |
 | JSON |Ja |Ja |Nej |
@@ -57,9 +57,9 @@ Det er muligt, at andre datakilder fungerer, selvom de ikke står på listen ove
 | OData-feed |Ja |Ja |Nej |
 | ODBC |Ja |Ja |Nej |
 | OLE DB |Ja |Ja |Nej |
-| Oracle Database |Ja |Ja |Ja |
+| Oracle-database |Ja |Ja |Ja |
 | PostgreSQL-database |Ja |Ja |Nej |
-| Power BI-tjeneste |Nej |Nej |Nej |
+| Power BI-tjenesten |Nej |Nej |Nej |
 | R Script |Ja |Nej |Nej |
 | Salesforce-objekter |Ja |Nej |Nej |
 | Salesforce-rapporter |Ja |Nej |Nej |
@@ -118,7 +118,7 @@ Power BI-rapportserver understøtter ikke OAuth-baseret godkendelse i forbindels
 
 | **Datakilde** | **Anonym godkendelse** | **Nøglegodkendelse** | **Brugernavn og adgangskode** | **Windows-godkendelse** |
 | --- | --- | --- | --- | --- |
-| SQL Server Database |Nej |Nej |Ja |Ja |
+| SQL Server-database |Nej |Nej |Ja |Ja |
 | SQL Server Analysis Services |Nej |Nej |Ja |Ja |
 | Web |Ja |Nej |Ja |Ja |
 | Azure SQL Database |Nej |Nej |Ja |Nej |
@@ -139,13 +139,13 @@ Power BI-rapportserver understøtter ikke OAuth-baseret godkendelse i forbindels
 | Impala |Nej |Nej |Nej |Nej |
 | Microsoft Exchange |Nej |Nej |Nej |Nej |
 | Microsoft Exchange Online |Nej |Nej |Nej |Nej |
-| MySQL-database |Nej |Nej |Ja |Ja |
+| MySQL Database |Nej |Nej |Ja |Ja |
 | OData-feed |Ja |Ja |Ja |Ja |
 | ODBC |Ja |Nej |Ja |Ja |
 | OLE DB |Ja |Nej |Ja |Ja |
-| Oracle Database |Nej |Nej |Ja |Ja |
+| Oracle-database |Nej |Nej |Ja |Ja |
 | PostgreSQL-database |Nej |Nej |Ja |Nej |
-| Power BI-tjeneste |Nej |Nej |Nej |Nej |
+| Power BI-tjenesten |Nej |Nej |Nej |Nej |
 | R Script |Nej |Nej |Nej |Nej |
 | Salesforce-objekter |Nej |Nej |Nej |Nej |
 | Salesforce-rapporter |Nej |Nej |Nej |Nej |
@@ -198,18 +198,18 @@ Power BI-rapportserver understøtter ikke OAuth-baseret godkendelse i forbindels
 
 | **Datakilde** | **Anonym godkendelse** | **Nøglegodkendelse** | **Brugernavn og adgangskode** | **Windows-godkendelse** | **Integreret Windows-godkendelse** |
 | --- | --- | --- | --- | --- | --- |
-| SQL Server Database |Nej |Nej |Ja |Ja |Ja |
+| SQL Server-database |Nej |Nej |Ja |Ja |Ja |
 | SQL Server Analysis Services |Nej |Nej |Ja |Ja |Ja |
 | Azure SQL Database |Nej |Nej |Ja |Nej |Nej |
 | Azure SQL Data Warehouse |Nej |Nej |Ja |Nej |Nej |
-| Oracle Database |Nej |Nej |Ja |Ja |Ja |
+| Oracle-database |Nej |Nej |Ja |Ja |Ja |
 | SAP Business Warehouse-server |Nej |Nej |Ja |Nej |Nej |
 | SAP HANA-database |Nej |Nej |Ja |Ja |Ja** |
 | Teradata |Nej |Nej |Ja |Ja |Ja |
 
 **SAP HANA understøtter kun DirectQuery med integreret Windows-godkendelse, når det bruges som en relationsdatabase i den publicerede Power BI Desktop-fil (.pbix).
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Nu, hvor du har oprettet forbindelse til datakilden, kan du [oprette en rapport](quickstart-create-powerbi-report.md) ved hjælp af dataene fra denne datakilde.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

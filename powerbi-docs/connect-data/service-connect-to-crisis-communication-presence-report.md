@@ -9,10 +9,10 @@ ms.date: 04/06/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
 ms.openlocfilehash: f637bb10ed7ec27dcb3da07fc04cae39328ffebe
-ms.sourcegitcommit: 34cca70ba84f37b48407d5d8a45c3f51fb95eb3c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80752251"
 ---
 # <a name="connect-to-the-crisis-communication-presence-report"></a>Opret forbindelse til rapport om eksisterende krisekommunikation
@@ -57,7 +57,7 @@ Når du installerer krisekommunikationseksemplet, skal du notere [stien til mapp
 
 1. Vælg ikonet på siden med apps for at åbne appen.
 
-1. Vælg **Udforsk** på velkomstskærmen.
+1. På velkomstskærmen skal du vælge **Udforsk**.
 
    ![Velkomstskærmbilledet for skabelonappen](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-splash-screen.png)
 

@@ -62,7 +62,7 @@
             - name: Naturligt sprog i Spørgsmål og svar
               items:
                 - name: Introduktion til Spørgsmål og svar
-                  href: ../natural-language/q-and-a-intro.md
+                  href: ../natural-language/q-and-a-tooling-intro.md
                 - name: Værktøjsintroduktion til Spørgsmål og svar
                   href: ../natural-language/q-and-a-tooling-intro.md
                 - name: Avanceret værktøj til Spørgsmål og svar
@@ -327,6 +327,10 @@
               href: ../paginated-reports/report-builder-shared-datasets.md
             - name: Opret parametre
               href: ../paginated-reports/paginated-reports-parameters.md
+            - name: Underrapporter
+              href: ../paginated-reports/subreports.md
+            - name: Foretag fejlfinding af underrapporter
+              href: ../paginated-reports/subreports-troubleshoot.md
             - name: Overfør en rapportparameter i en URL-adresse
               href: ../paginated-reports/report-builder-url-pass-parameters.md
             - name: Udgiv en sideinddelt rapport
