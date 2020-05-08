@@ -9,10 +9,10 @@ ms.topic: quickstart
 ms.date: 12/16/2019
 ms.author: painbar
 ms.openlocfilehash: 9af7fd95bcdaf0d747d1a3f2313f965d18a888e3
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205659"
 ---
 # <a name="a-quick-tour-of-the-mobile-app-home-page"></a>En hurtig rundvisning af startsiden for mobilappen
@@ -84,7 +84,7 @@ Overskriften indeholder følgende navigationselementer:
 
     ![søgeside](./media/mobile-apps-home-page/powerbi-mobile-app-search-page.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 I denne rundvisning har du udforsket startsiden for Power BI-mobilappen. Læs mere om brug af Power BI-mobilappen. 
 * [Udforsk dashboards og rapporter](../../mobile-apps-quickstart-view-dashboard-report.md)
 * [Udforsk rapporter i Power BI-mobilappsene](../../mobile-reports-in-the-mobile-apps.md)

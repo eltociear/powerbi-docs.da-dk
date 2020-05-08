@@ -30,7 +30,7 @@
           href: mobile-apps-offline-data.md
         - name: Power BI til Mixed Reality-app (Eksempel)
           href: mobile-mixed-reality-app.md
-    - name: 'Sådan gør du:'
+    - name: Sådan gør du
       items:
         - name: Alle mobilapps
           items:
@@ -52,7 +52,7 @@
               href: mobile-apps-deep-link-specific-location.md
             - name: Filtrer en rapport ud fra placering i Power BI-mobilapps
               href: mobile-apps-geographic-filtering.md
-            - name: Brug af OAuth til at oprette forbindelse til Reporting Services
+            - name: Bruger OAuth til at oprette forbindelse til Reporting Services
               href: mobile-oauth-ssrs.md
         - name: iOS og Android
           items:

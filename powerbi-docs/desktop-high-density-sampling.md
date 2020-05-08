@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 344b041b8cca3e6ed4be1f40c0e783df18315679
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79378587"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Stikprøvetagning af linjer med høj tæthed i Power BI
@@ -91,7 +91,7 @@ Den nye algoritme for stikprøvetagning af linjer med høj tæthed er en vigtig 
 * Indstillingen **Vis elementer uden data** understøttes ikke med den nye algoritme.
 * Den nye algoritme understøttes ikke, når du bruger en direkte forbindelse til en model, der hostes i SQL Server Analysis Services (version 2016 eller tidligere). Den understøttes i modeller, der hostes i **Power BI** eller Azure Analysis Services.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Du kan finde oplysninger om stikprøvetagning med høj tæthed i punktdiagrammer i følgende artikel.
 
 * [Stikprøvetagning med høj tæthed i Power BI-punktdiagrammer](desktop-high-density-scatter-charts.md)

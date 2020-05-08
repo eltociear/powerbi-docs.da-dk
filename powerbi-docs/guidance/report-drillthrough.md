@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/28/2019
 ms.author: v-pemyer
 ms.openlocfilehash: d5599db57ef7b105575dcb7ee4b4342f374624f0
-ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78290573"
 ---
 # <a name="use-report-page-drillthrough"></a>Anvend detaljeadgang på rapportsiden
@@ -65,7 +65,7 @@ Vi anbefaler følgende fremgangsmåder på tidspunktet for oprettelse af rapport
 > [!TIP]
 > Det er også muligt at konfigurere detaljeadgang til dine sideinddelte Power BI-rapporter. Det kan du gøre ved at føje links til Power BI-rapporter. Links kan definere [URL-parametre](https://powerbi.microsoft.com/blog/url-parameters-for-paginated-reports-are-now-available/).
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 

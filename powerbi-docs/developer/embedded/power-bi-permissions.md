@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/01/2018
 ms.openlocfilehash: 51c43a19613381d39e0397864e55baed2022663c
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79491358"
 ---
 # <a name="power-bi-permissions"></a>Power BI-tilladelser
@@ -28,7 +28,7 @@ Med Power BI-tilladelser får et program mulighed for at foretage visse handling
 | Føj data til en brugers datasæt |Giver en app adgang til at tilføje eller slette rækker i en brugers datasæt. Denne tilladelse giver ikke appen adgangen til brugerens data. |Data.Alter_Any |
 | Opret indhold |Appen kan automatisk oprette indhold og datasæt for en bruger. |Content.Create |
 | Få vist brugergrupper |Appen kan få vist alle grupper, som den bruger, der er logget på, tilhører. |Group.Read |
-| Få vist alle grupper |Appen kan få vist alle grupper, som den bruger, der er logget på, tilhører. |Group.Read |
+| Se alle grupper |Appen kan få vist alle grupper, som den bruger, der er logget på, tilhører. |Group.Read |
 | Læs og skriv alle grupper |Appen kan få vist og skrive til alle grupper for den bruger, der er logget på, samt grupper, som brugeren har adgang til. |Group.ReadWrite.All |
 | Vis alle dashboards |Appen kan få vist alle dashboards for den bruger, der er logget på, samt dashboards, som brugeren har adgang til. |Dashboard.Read.All |
 | Vis alle rapporter |Appen kan få vist alle rapporter for den bruger, der er logget på, samt rapporter, som brugeren har adgang til. Appen kan også se dataene i rapporter samt strukturen. |Report.Read.All |

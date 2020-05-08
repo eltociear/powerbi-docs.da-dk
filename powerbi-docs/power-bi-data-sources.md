@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/10/2020
 ms.author: kfollis
 ms.openlocfilehash: 1853e710958b5bed0dad011594d9e04ccc99842d
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79041671"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-datakilder
@@ -62,12 +62,12 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Exasol | Ja | Ja | Ja | Ja | Ja |
 | Excel | Ja <sup>3</sup> | Ja <sup>3</sup> | Nej | Ja <sup>3</sup> | Nej <sup>4</sup> |
 | Facebook | Ja | Ja | Nej | Nej | Nej |
-| Fil | Ja | Ja | Nej | Ja | Ja |
+| Filer | Ja | Ja | Nej | Ja | Ja |
 | Mappe | Ja | Ja | Nej | Ja | Ja |
 | GitHub | Ja | Ja | Nej | Nej | Nej |
 | Google Analytics | Ja | Ja | Nej | Nej | Nej |
 | Google BigQuery | Ja | Ja | Nej | Nej | Nej |
-| Hadoop File (HDFS) | Ja | Nej | Nej | Nej | Nej |
+| Hadoop-fil (HDFS) | Ja | Nej | Nej | Nej | Nej |
 | Interaktiv HDInsight-forespørgsel | Ja | Ja | Ja | Nej | Nej |
 | IBM DB2 | Ja | Ja | Ja | Ja | Nej |
 | IBM Informix Database | Ja | Ja | Nej | Ja | Nej |
@@ -111,7 +111,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Roamler | Ja | Ja | Nej | Ja | Nej |
 | Salesforce-objekter | Ja | Ja | Nej | Nej | Nej |
 | Salesforce-rapporter | Ja | Ja | Nej | Nej | Nej |
-| SAP Business Warehouse-meddelelsesserver | Ja | Ja | Ja | Ja | Ja |
+| SAP Business Warehouse-beskedserver | Ja | Ja | Ja | Ja | Ja |
 | SAP Business Warehouse-server | Ja | Ja | Ja | Ja | Ja |
 | SAP HANA | Ja | Ja | Ja | Ja | Ja |
 | SharePoint-mappe | Ja | Ja | Nej | Ja | Nej <sup>4</sup> |
@@ -172,7 +172,7 @@ Indstillingen for SSO gælder for alle datasæt, der bruger denne datakilde. Den
 > [!Note]
 > Azure MFA (Multi-Factor Authentication) understøttes ikke. Brugere, der gerne vil bruge enkeltlogon med DirectQuery, skal fritages fra multifaktorgodkendelse.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Opret forbindelse til data i Power BI Desktop](desktop-quickstart-connect-to-data.md)  
 [Brug af DirectQuery in Power BI](desktop-directquery-about.md)  

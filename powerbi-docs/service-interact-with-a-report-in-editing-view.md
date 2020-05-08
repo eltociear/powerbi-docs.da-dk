@@ -10,10 +10,10 @@ ms.date: 02/26/2020
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: 791df63db1ef87bd5d61d80f97e225ae63feae2c
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79201501"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-the-power-bi-service"></a>Interager med en rapport i Redigeringsvisning i Power BI-tjenesten
@@ -41,7 +41,7 @@ Se listen over emner under overskriften **Rapporter** i indholdsfortegnelsen til
 En Power BI Pro-licens er påkrævet for at redigere rapporter, der er oprettet af andre, samt for at dele rapporter med andre.  Hvis du ikke har en Pro-licens, kan du stadig oprette rapporter, men du kan ikke [dele dem](service-share-reports.md).
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Tilbage til [Læsevisning og Redigeringsvisning i Power BI-tjenesten](consumer/end-user-reading-view.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

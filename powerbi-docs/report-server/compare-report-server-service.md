@@ -10,10 +10,10 @@ ms.subservice: powerbi-report-server
 ms.custom: mvc
 ms.date: 03/04/2020
 ms.openlocfilehash: 7762ace1da913713567b79a9650b3f07aa71146d
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79381048"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Sammenlign Power BI-rapportserveren med Power BI-tjenesten
@@ -22,9 +22,9 @@ Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigti
 
 ## <a name="features-of-power-bi-report-server-and-the-power-bi-service"></a>Funktioner i Power BI-rapportserveren og Power BI-tjenesten
 
-| Funktioner | Power BI-rapportserver | Power BI-tjeneste | Noter |
+| Funktioner | Power BI Report Server | Power BI Service | Noter |
 |---------|---------|---------|---------|
-| Installation | I det lokale miljø eller i hostet cloud | Cloud | Power BI-rapportserveren kan udrulles i Azure VM'er (hostet cloud), hvis den er givet i licens via Power BI Premium eller SQL Server Enterprise med Software Assurance|
+| Udrulning | I det lokale miljø eller i hostet cloud | Cloud | Power BI-rapportserveren kan udrulles i Azure VM'er (hostet cloud), hvis den er givet i licens via Power BI Premium eller SQL Server Enterprise med Software Assurance|
 | Kildedata | Cloud og/eller i det lokale miljø | Cloud og/eller i det lokale miljø |  |
 | Licens | Power BI Premium eller SQL Server EE med SA (Software Assurance) | Power BI Pro-og/eller Power BI Premium | |  
 | Livscyklus | Politik for moderne livscyklus | Fuldt administreret tjeneste |  |
@@ -50,12 +50,12 @@ Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigti
 | Sikkerhed på rækkeniveau (RLS) | Ja | Ja | Tilgængelige i både DirectQuery- (datakilde) og importtilstand <br><br>Sikkerhed på rækkeniveau i [Power BI-tjenesten](../service-admin-rls.md) <br><br>Sikkerhed på rækkeniveau i [Power BI-rapportserver](row-level-security-report-server.md) |
 | Fuldskærmsvisning | Nej | Ja | [Fuldskærmsvisning](../consumer/end-user-focus.md) i Power BI-tjenesten |
 | Avanceret samarbejde i Office 365 | Nej | Ja | [Samarbejd i et arbejdsområde](../service-collaborate-power-bi-workspace.md) med Office 365 |
-| R-visualiseringer | Nej | Ja | [Opret R-visualiseringer](../desktop-r-visuals.md) i Power BI Desktop, og publicer dem i Power BI-tjenesten. Du kan ikke gemme Power BI-rapporter med R-visualiseringer på Power BI-rapportserveren.  |
-| Prøveversionsfunktioner | Nej | Ja | [Tilmeld dig prøveversioner af funktioner i Power BI-tjenesten](../consumer/end-user-preview-features.md) |
-| Power BI-visualiseringer | Ja | Ja | [Power BI-visuals](../developer/visuals/power-bi-custom-visuals.md) |
+| R-visuals | Nej | Ja | [Opret R-visualiseringer](../desktop-r-visuals.md) i Power BI Desktop, og publicer dem i Power BI-tjenesten. Du kan ikke gemme Power BI-rapporter med R-visualiseringer på Power BI-rapportserveren.  |
+| Funktioner til eksempelvisning | Nej | Ja | [Tilmeld dig prøveversioner af funktioner i Power BI-tjenesten](../consumer/end-user-preview-features.md) |
+| Power BI-visualisering | Ja | Ja | [Power BI-visuals](../developer/visuals/power-bi-custom-visuals.md) |
 | Sammensatte modeller | Nej | Ja |
 | Power BI Desktop | Version, der er optimeret til rapportserveren, kan downloades med rapportserveren | Version, der er optimeret til Power BI-tjenesten, er tilgængelig fra Windows Store | [Power BI Desktop til rapportserveren](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop til Power BI-tjenesten](https://aka.ms/pbidesktopstore) |
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
-[Installer Power BI-rapportserver](install-report-server.md)
+[Installér Power BI-rapportserver](install-report-server.md)

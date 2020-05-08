@@ -10,10 +10,10 @@ ms.date: 02/14/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: b7ff14b4932ba77b47fdb603124d29858c622fc7
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77427644"
 ---
 # <a name="use-aggregations-in-power-bi-desktop"></a>Brug sammenlægninger i Power BI Desktop
@@ -48,8 +48,8 @@ I dialogboksen **Administrer sammenlægninger** vises der en række for hver kol
 Rullelisten **Opsummering** i dialogboksen **Administrer sammenlægninger** indeholder følgende værdier:
 - Antal
 - GroupBy
-- Maks.
-- Min.
+- MAKS
+- Min
 - Sum
 - Optæl tabelrækker
 
@@ -75,7 +75,7 @@ De fleste valideringer gennemtvinges ved at deaktivere værdier på rullelisten 
 
 ### <a name="aggregation-tables-are-hidden"></a>Sammenlægningstabeller er skjulte
 
-Brugere med skrivebeskyttet adgang til datasættet kan ikke forespørge sammenlægningstabeller. Dette forhindrer sikkerhedsproblemer, når de bruges sammen med *sikkerhed på rækkeniveau (RLS)*. Brugere og forespørgsler refererer til detaljetabellen, ikke sammenlægningstabellen, og de behøver ikke at kende til sammenlægningstabellen.
+Brugere med skrivebeskyttet adgang til datasættet kan ikke forespørge sammenlægningstabeller. Dette forhindrer sikkerhedsproblemer, når de bruges sammen med *sikkerhed på rækkeniveau (RLS)* . Brugere og forespørgsler refererer til detaljetabellen, ikke sammenlægningstabellen, og de behøver ikke at kende til sammenlægningstabellen.
 
 Derfor er sammenlægningstabeller skjulte i visningen **Rapport**. Hvis tabellen ikke allerede er skjult, angiver dialogboksen **Administrer sammenlægninger** den som skjult, når du vælger **Anvend alle**.
 
@@ -118,7 +118,7 @@ Hvis følgende dimensionstabeller er dem, der bruges mest til forespørgsler med
 
 - Geografi
 - Kunde
-- Dato
+- Date (dato)
 - Produktunderkategori
 - Produktkategori
 
@@ -158,7 +158,7 @@ Stærke relationer omfatter følgende kombinationer af lagringstilstande, hvor b
 
 Det eneste tilfælde, hvor en relation *på tværs af kilder* anses for at være stærk, er, hvis begge tabeller er angivet til Import. Mange til mange-relationer anses altid for at være svage.
 
-Se [Sammenlægninger baseret på GroupBy-kolonner](#aggregation-based-on-groupby-columns) for at få mere at vide om sammenlægningsforekomster *på tværs af kilder*, der ikke er afhængige af relationer. 
+Se *Sammenlægninger baseret på GroupBy-kolonner* for at få mere at vide om sammenlægningsforekomster [på tværs af kilder](#aggregation-based-on-groupby-columns), der ikke er afhængige af relationer. 
 
 ### <a name="relationship-based-aggregation-query-examples"></a>Eksempler på relationsbaserede sammenlægningsforespørgsler
 
@@ -295,7 +295,7 @@ Det følgende JSON-kodestykke viser et eksempel på outputtet fra hændelsen, n�
 
 Sammenlægninger, der kombinerer DirectQuery-, Import- og/eller Dual-lagringstilstande, kan returnere forskellige data, medmindre cachehukommelsen holdes synkroniseret med kildedataene. Udførelse af forespørgsler vil f.eks. ikke forsøge at maskere dataproblemer ved at filtrere DirectQuery-resultater for at matche cachelagrede værdier. Der er fastlagt teknikker til at håndtere sådanne problemer ved kilden, hvis det er nødvendigt. Optimeringer af ydeevnen må kun anvendes på måder, der ikke kompromitterer din mulighed for at imødekomme forretningskrav. Det er dit ansvar at kende dine dataflow og at designe i henhold hertil. 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Du kan finde flere oplysninger om sammensatte modeller under:
 

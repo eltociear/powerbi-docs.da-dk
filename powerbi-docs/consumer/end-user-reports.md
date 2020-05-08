@@ -10,10 +10,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: 089d1df9a63a30d602ac12f1bf18f32787374654
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114236"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
@@ -61,7 +61,7 @@ Dette betyder ikke, at du ikke kan gemme dine ændringer. Det kan du godt, men d
 | Datakilder |Én eller flere rapporter og et eller flere datasæt pr. dashboard |Et enkelt datasæt pr. rapport |
 | Filtrering |Der kan ikke filtreres eller laves udsnit |Der er mange forskellige måder at filtrere, fremhæve og lave udsnit på |
 | Angivelse af beskeder |Der kan oprettes beskeder, som sendes til dig via mail, når dashboardet opfylder visse betingelser |Nej |
-| Funktion |Der kan angives ét dashboard som dit udvalgte dashboard |Der kan ikke oprettes en udvalgt rapport |
+| Udvalgt |Der kan angives ét dashboard som dit udvalgte dashboard |Der kan ikke oprettes en udvalgt rapport |
 | Kan underliggende datasættabeller og felter ses? |Nej. Der kan eksporteres data, men datasættets tabeller og felter kan ikke ses på selve dashboardet |Ja. Det er muligt at se de tabeller, felter og værdier fra datasættet, som du har tilladelse til at se |
 | Tilpasning |Nej  |Det er muligt at filtrere, eksportere, få vist relateret indhold, tilføje bogmærker, generere QR-koder, analysere i Excel og meget mere |
 
@@ -82,7 +82,7 @@ Eller måske er du en *forbruger*, der modtager rapporter fra andre. Du vil gern
 > [!TIP]
 > Hvis du ikke kunne finde det, du ledte efter her, kan du bruge indholdsfortegnelsen til venstre til at gennemse alle artikler om *Rapporter*.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Åbn og få vist en rapport](end-user-report-open.md)    
 [Dashboards i Power BI-tjenesten](end-user-dashboards.md)

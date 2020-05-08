@@ -10,10 +10,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 4870fac504f36600c13af49c5798d896eeb59261
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79113162"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Indsigtstyper, der understøttes af Power BI
@@ -88,7 +88,7 @@ Registrerer for data på tværs af en tidsserie, når der er specifikke datoer o
 
 ![Eksempel på tidsserier med udenforliggende værdier](./media/end-user-insight-types/pbi-auto-insight-types-time-series-outliers.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Power BI-indsigter](end-user-insights.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

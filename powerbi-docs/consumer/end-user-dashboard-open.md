@@ -10,10 +10,10 @@ ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 64809b2542cbe64951dc2f8fae12b13b8f6bc79e
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77496304"
 ---
 # <a name="view-a-dashboard"></a>Få vist et dashboard
@@ -44,7 +44,7 @@ Du kan finde dashboards i alle objektbeholderne i navigationsruden.
 
 ![dashboardikon](media/end-user-dashboard-open/power-bi-open-dashboards.gif)
 
-- **Hjem** 
+- **Startside** 
 - **Favoritter** – Hvis du har [angivet et dashboard som favorit](end-user-favorite.md)
 - **Seneste** – Hvis du har besøgt et dashboard for nylig
 - **Apps** – De fleste apps indeholder både dashboards og rapporter
@@ -53,6 +53,6 @@ Du kan finde dashboards i alle objektbeholderne i navigationsruden.
 
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * Bliv fortrolig med dashboards ved at se præsentationen af et af vores [eksempler på et dashboard](../sample-tutorial-connect-to-the-samples.md).    
 * Få mere at vide om [dashboardfelter](end-user-tiles.md), og hvad der sker, når du vælger et.

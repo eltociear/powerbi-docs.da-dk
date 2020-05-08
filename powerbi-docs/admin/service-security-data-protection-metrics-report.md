@@ -10,10 +10,10 @@ ms.date: 03/11/2020
 ms.author: painbar
 LocalizationGroup: Data from files
 ms.openlocfilehash: d2bd3308de21aa6064765b820745201efd8b23ab
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79112484"
 ---
 # <a name="data-protection-metrics-report-preview"></a>Rapport over databeskyttelsesmålepunkter (eksempel)
@@ -52,7 +52,7 @@ Forbedrede versioner af rapporten over databeskyttelsesmålepunkter frigives reg
 * Hvis du beslutter at dele oplysninger fra rapporten over databeskyttelsesmålepunkter med en bruger, der ikke er Power BI-administrator, skal du være opmærksom på, at denne rapport indeholder følsomme oplysninger om din organisation.
 * Rapporten over databeskyttelsesmålepunkter er en speciel type rapport og vises ikke på listerne "Delt med mig", "Seneste" og "Favoritter".
 * Rapporten over databeskyttelsesmålepunkter er ikke tilgængelig for [eksterne brugere (Azure Active Directory B2B-gæstebrugere)](../service-admin-azure-ad-b2b.md).
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Databeskyttelse i Power BI (prøveversion)](./service-security-data-protection-overview.md)
 * [Brug af Microsoft Cloud App Security-kontrolelementer i Power BI (prøveversion)](./service-security-using-microsoft-cloud-app-security-controls.md)
 * [Om rollen Power BI-tjenesteadministrator](../service-admin-role.md)

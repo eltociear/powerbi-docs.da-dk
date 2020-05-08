@@ -9,10 +9,10 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.openlocfilehash: c3c6e8d7ddb823eb1e857b102c2f6c788e366141
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114949"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Brug OAuth til at oprette forbindelse til Power BI-rapportserver og SSRS
@@ -246,7 +246,7 @@ Du kan konfigurere, at [Fiddler](https://www.telerik.com/fiddler) skal fungere s
 
 Hvis det lykkes at logge på ved hjælp af Fiddler, oplever du måske et certifikatproblem med enten WAP-programmet eller ADFS-serveren. 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Registrer en hovednavn for tjenesten for en rapportserver](https://msdn.microsoft.com/library/cc281382.aspx)  
 [Rediger en Reporting Services-konfigurationsfil](https://msdn.microsoft.com/library/bb630448.aspx)  

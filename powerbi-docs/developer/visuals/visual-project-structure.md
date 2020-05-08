@@ -1,5 +1,5 @@
 ---
-title: Struktur for visual-projekter i Power BI
+title: Visuel projektstruktur i Power BI
 description: I denne artikel beskrives mappe- og filstrukturen i et visuelt projekt i Power BI
 author: KesemSharabi
 ms.author: kesharab
@@ -9,13 +9,13 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2020
 ms.openlocfilehash: 18267f06bd43166cb1958d3aff73913a31189953
-ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80550749"
 ---
-# <a name="power-bi-visual-project-structure"></a>Struktur for visual-projekter i Power BI
+# <a name="power-bi-visual-project-structure"></a>Visuel projektstruktur i Power BI
 
 Den bedste måde at komme i gang med at oprette en ny Power BI-visualisering på er ved at bruge Power BI-værktøjet til visualiseringer [pbiviz](https://www.npmjs.com/package/powerbi-visuals-tools).
 
@@ -170,7 +170,7 @@ Kommentarerne i den følgende kodetekst fra `pbiviz.json`-filen beskriver metada
 }
 ```
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * Hvis du vil vide mere om interaktionerne mellem en visualisering, en bruger og Power BI, kan du se [Visuelle koncepter i Power BI](./power-bi-visuals-concept.md).
 

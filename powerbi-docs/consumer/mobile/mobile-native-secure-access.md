@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: painbar
 ms.openlocfilehash: ce7b3c3bc667023ef36650d8c551caaceab04c02
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80802795"
 ---
 # <a name="protect-power-bi-app-with-face-id-touch-id-passcode-or-biometric-data"></a>Beskyt Power BI-app med Face ID, Touch ID, adgangskode eller biometriske data 
@@ -24,7 +24,7 @@ Gælder for:
 
 | ![iPhone](./media/mobile-native-secure-access/ios-logo-40-px.png) | ![iPad-tablets](./media/mobile-native-secure-access/ios-logo-40-px.png) | ![Android-telefon](././media/mobile-native-secure-access/android-logo-40-px.png) | ![Android-tablet](././media/mobile-native-secure-access/android-logo-40-px.png) |
 |:--- |:--- |:--- |:--- |
-|iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |
+|iPhones |iPad-tablets |Android-telefoner |Android-tablets |
 
 ## <a name="turn-on-face-id-touch-id-or-passcode-on-ios"></a>Aktivér Face ID, Touch ID eller adgangskode i iOS
 
@@ -61,5 +61,5 @@ Nogle organisationer har politikker for sikkerhed og krav til overholdelse af an
 
 Power BI-appen til iOS gør det muligt for administratorer at styre sikker adgang til mobilappen ved at pushe konfigurationsindstillingerne for appen fra Microsoft Intune og andre MDM-løsninger (Mobile Device Management). Administratorer kan bruge appbeskyttelsespolitikken til at aktivere denne indstilling for alle brugere eller en gruppe af brugere. Se [Brug af MDM til at fjernkonfigurere Power BI-mobilappen](mobile-app-configuration.md#data-protection-settings-ios-and-android) for at få flere oplysninger.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Brug af MDM til at fjernkonfigurere Power BI-mobilappen](mobile-app-configuration.md)

@@ -11,10 +11,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 63c18ae6452b36a72ab72eb6fdf0ce14a73011e9
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114118"
 ---
 # <a name="navigation-for-power-bi-consumers-global-search"></a>Navigation for Power BI-forbrugere: global søgning
@@ -58,7 +58,7 @@ Ikke alle kolonner kan sorteres. Hold over kolonneoverskrifterne for at finde ud
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 * **Sortér efter** ikke tilgængelig efter ejer i forbindelse med datasæt.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Sorter visualiseringer i rapporter](end-user-change-sort.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

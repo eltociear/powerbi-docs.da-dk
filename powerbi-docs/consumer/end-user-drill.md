@@ -10,10 +10,10 @@ ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 7c0c08e8056232fa7c60b20faf48b0137a19bc5f
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77496390"
 ---
 # <a name="drill-mode-in-a-visual-in-power-bi"></a>Analysetilstand i en visualisering i Power BI
@@ -149,7 +149,7 @@ Bemærk, at totalerne er de samme for **By**, **Postnummer** og **Navn**. Dette 
 - Du skal have en Power BI Pro- eller Premium-licens for at få vist en rapport, der er blevet delt med dig. [Hvilken licens har jeg?](end-user-license.md)
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 [Visualiseringer i Power BI-rapporter](../visuals/power-bi-report-visualizations.md)
 
