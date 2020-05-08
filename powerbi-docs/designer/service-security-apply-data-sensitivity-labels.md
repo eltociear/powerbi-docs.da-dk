@@ -10,10 +10,10 @@ ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
 ms.openlocfilehash: ab171f81224c3c6cf90070bf221e6b93285d8caa
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81006405"
 ---
 # <a name="apply-data-sensitivity-labels-in-power-bi-preview"></a>Anvend datafølsomhedsmærkater i Power BI (prøveversion)
@@ -83,7 +83,7 @@ Du skal gøre følgende overvejelser, når du anvender datafølsomhedsmærkater:
 * Følsomhedsmærkater understøttes kun for lejere i det globale cloudmiljø (offentligt). Følsomhedsmærkater understøttes ikke for lejere i andre cloudmiljøer.
 * Følsomhedsmærkater understøttes ikke for [eksterne brugere (Azure Active Directory B2B-gæstebrugere)](../service-admin-azure-ad-b2b.md). Det betyder, at eksterne brugere ikke kan få vist mærkater og bliver blokeret fra at eksportere data til Excel-, PDF- og PPTX-filer. [Fjern mærkaten](#removing-sensitivity-labels) for at gøre det muligt for eksterne brugere at eksportere data til disse filtyper.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Denne artikel indeholdt en beskrivelse af, hvordan du anvender datafølsomhedsmærkater i Power BI. Følgende artikler indeholder flere oplysninger om databeskyttelse i Power BI. 
 

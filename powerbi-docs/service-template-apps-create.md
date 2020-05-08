@@ -1,21 +1,21 @@
 ---
-title: Opret skabelonprogrammer i Power BI
+title: Opret skabelonapps i Power BI
 description: Sådan opretter du skabelonprogrammer i Power BI, som du kan distribuere til Power BI-kunder.
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 09/15/2019
-ms.author: tebercov
-ms.openlocfilehash: 4062cb8a417ce20f4d6823a3e68d26ad12b9a6c9
-ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
+ms.date: 05/04/2020
+ms.author: painbar
+ms.openlocfilehash: 5de7268dfa792a85d813e98280f00c87e5e98447
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82066342"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781633"
 ---
-# <a name="create-a-template-app-in-power-bi"></a>Opret et skabelonprogram i Power BI
+# <a name="create-a-template-app-in-power-bi"></a>Opret en skabelonapp i Power BI
 
 Med de nye Power BI-*skabelonprogrammer* kan Power BI-partnere udarbejde programmer i Power BI med kun lidt eller ingen kode og udrulle dem til Power BI-kunder.  Denne artikel indeholder en trinvis vejledning til at oprette et Power BI-skabelonprogram.
 
@@ -30,7 +30,7 @@ Her er kravene til at udarbejde et skabelonprogram:
 - En [Power BI Pro-licens](service-self-service-signup-for-power-bi.md)
 - En [installation af Power BI Desktop](desktop-get-the-desktop.md) (valgfrit)
 - Kendskab til de [grundlæggende begreber i Power BI](service-basic-concepts.md)
-- Tilladelser til at dele et skabelonprogram (du kan finde flere oplysninger på Power BI-[administrationsportalen, indstillinger for skabelonprogram](service-admin-portal.md#template-apps-settings)
+- Tilladelser til at dele en skabelonapp (du kan finde flere oplysninger i Power BI-[administrationsportalen, Skabelonappens indstillinger](service-admin-portal.md#template-apps-settings)
 
 ## <a name="create-the-template-workspace"></a>Opret skabelonen for arbejdsområdet
 
@@ -46,9 +46,9 @@ Hvis du vil oprette et skabelonprogram, som du kan distribuere til andre Power B
 
 3. Angiv et navn, en beskrivelse (valgfrit) og et logobillede (valgfrit) for dit arbejdsområde.
 
-4. Udvid afsnittet **Avanceret**, og vælg **Udvikl en skabelonprogram**.
+4. Udvid afsnittet **Avanceret**, og vælg **Udvikl en skabelonapp**.
 
-    ![Udvikl et skabelonprogram](media/service-template-apps-create/power-bi-template-app-develop.png)
+    ![Udvikl en skabelonapp](media/service-template-apps-create/power-bi-template-app-develop.png)
 
 5. Vælg **Gem**.
 >[!NOTE]
@@ -70,26 +70,26 @@ Nu, hvor du har indhold i dit arbejdsområde, er du klar til at pakke det i et s
 
 1. Vælg **Opret program** i skabelonen for arbejdsområdet.
 
-    ![Opret program](media/service-template-apps-create/power-bi-create-app.png)
+    ![Opret app](media/service-template-apps-create/power-bi-create-app.png)
 
     Her udfylder du yderligere indstillinger i fem kategorier for oprettelse for dit skabelonprogram:
 
     **Branding**
 
     ![Branding](media/service-template-apps-create/power-bi-create-branding.png)
-    - Navn på program
+    - Appnavn
     - Beskrivelse
     - Supportwebsted (link præsenteres under programoplysningerne, efter skabelonprogrammet er blevet distribueret igen som organisationsprogram)
     - Programlogo (begrænsning på filstørrelsen på 45 K, 1:1 højde-bredde-forhold, formaterne .png .jpg og .jpeg)
-    - Programmets temafarve
+    - Appens temafarve
 
     **Navigation**
 
-    Aktivér **Ny navigationsgenerator**, hvor du kan definere navigationsruden i programmet. Du kan finde flere oplysninger i artiklen [Design navigationsoplevelsen](service-create-distribute-apps.md#design-the-navigation-experience).
+    Aktivér **Ny navigationsgenerator**, hvor du kan definere navigationsruden i appen. Du kan finde flere oplysninger i artiklen [Design navigationsoplevelsen](service-create-distribute-apps.md#design-the-navigation-experience).
 
    ![Angiv programlandingsside](media/service-template-apps-create/power-bi-install-app-content.png)
     
-    **Programmets landingside:** Hvis du vælger at framelde navigationsgeneratoren, har du mulighed for at vælge programmets landingsside. Angiv en rapport eller et dashboard som landingsside for dit program. Brug en landingsside, der giver det rette indtryk.
+    **Programmets landingside:** Hvis du vælger at framelde navigationsgeneratoren, har du mulighed for at vælge appens landingsside. Angiv en rapport eller et dashboard som landingsside for dit program. Brug en landingsside, der giver det rette indtryk.
 
     **Kontrolelement**
 
@@ -109,7 +109,7 @@ Nu, hvor du har indhold i dit arbejdsområde, er du klar til at pakke det i et s
     - **Påkrævet**: Brug dette til at kræve, at installationsprogrammet angiver en brugerspecifik parameter.
     - **Lås**: Låsning forhindrer, at installationsprogrammet opdaterer en parameter.
 
-    **Adgang** I testfasen kan du bestemme, hvem i din organisation der kan installere og teste dit program. Bare rolig, du kan altid vende tilbage og ændre disse indstillinger senere. Indstillingen påvirker ikke adgangen til det distribuerede skabelonprogram.
+    **Adgang** I testfasen kan du bestemme, hvem i din organisation der kan installere og teste dit program. Bare rolig, du kan altid vende tilbage og ændre disse indstillinger senere. Indstillingen påvirker ikke adgangen til den distribuerede skabelonapp.
 
 2. Vælg **Opret program**.
 
