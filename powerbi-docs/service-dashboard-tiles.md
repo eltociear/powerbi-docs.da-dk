@@ -11,10 +11,10 @@ ms.date: 04/17/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: efa5acbe70ea4541c2f9819d5260cb662ca0adac
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637869"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introduktion til dashboardfelter for Power BI-designere
@@ -41,7 +41,7 @@ Der er mange forskellige måder at føje (fastgøre) et felt til et dashboard p�
 * [En rapport](service-dashboard-pin-tile-from-report.md)
 * [Et andet dashboard](service-pin-tile-to-another-dashboard.md)
 * [Excel-projektmappe på OneDrive for Business](service-dashboard-pin-tile-from-excel.md)
-* [Quick Insights (Hurtig indsigt)](service-insights.md)
+* [Quick Insights](service-insights.md)
 * [En sideinddelt rapport i det lokale miljø i Power BI-rapportserver eller SQL Server Reporting Services](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 Du kan oprette separate felter til billeder, tekstfelter, videoer, streamingdata og webindhold direkte på dashboardet ved hjælp af kontrolelementet [Tilføj felt](service-dashboard-add-widget.md).
@@ -92,7 +92,7 @@ Når du vælger et felt, afhænger næste handling af, hvordan du oprettede felt
 * Lad os sige, at du vælger et felt, der er oprettet fra en sideinddelt rapport i det lokale miljø i Power BI-rapportserver eller SQL Server Reporting Services. Hvis du ikke har adgang til netværket, hvor rapportserveren er placeret, bliver du ført til en side, der angiver, at serveren ikke blev fundet (HTTP 404), når du vælger et felt. Enheden skal have netværksadgang til rapportserveren, for at du kan få vist rapporten.
 * Selvom den oprindelige visualisering, der blev brugt til at oprette feltet, bliver ændret, så ændres feltet ikke. Hvis du f.eks. fastgør et kurvediagram fra en rapport og derefter ændrer kurvediagrammet til et søjlediagram, fortsætter dashboardfeltet med at vise et kurvediagram. Dataene opdateres, men det gør visualiseringstypen ikke.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 - [Opret et kort (felt med stort tal) til dit dashboard](power-bi-visualization-card.md)
 - [Introduktion til dashboards for Power BI-designere](service-dashboards.md)  
 - [Opdatering af data i Power BI](refresh-data.md)
@@ -100,5 +100,5 @@ Når du vælger et felt, afhænger næste handling af, hvordan du oprettede felt
 - [Integrering af Power BI-felter i Office-dokumenter](https://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 - [Fastgør Reporting Services-elementer til Power BI-dashboards](https://msdn.microsoft.com/library/mt604784.aspx)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
+Har du flere spørgsmål? [Prøv Power BI-community'et](https://community.powerbi.com/).
 

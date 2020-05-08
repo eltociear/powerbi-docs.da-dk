@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 4a9dcf14d1745087e2596507d4c7dbc7a03b5ab3
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435323"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Filtrer en rapport efter geografisk placering i Power BI-mobilapps
@@ -19,7 +19,7 @@ Gælder for:
 
 | ![iPhone](./media/mobile-apps-geographic-filtering/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-geographic-filtering/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-geographic-filtering/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | ![Windows Phone](./media/mobile-apps-geographic-filtering/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
-| iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-telefoner |
+| iPhones |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-telefoner |
 
 Når du får vist en Power BI-rapport på din mobilenhed, vises der da et lille ikon med en tavlenål i øverste højre hjørne? Hvis der gør det, kan du filtrere rapporten baseret på din geografiske placering.
 
@@ -48,8 +48,8 @@ Alle tre følgende betingelser skal være opfyldt, før du kan se placeringskode
 
 Læs mere om at [konfigurere geografisk filtrering](../../desktop-mobile-geofiltering.md) i Power BI Desktop.
 
-### <a name="next-steps"></a>Næste trin
-* [Opret forbindelse til Power BI-data fra den virkelige verden](mobile-apps-data-in-real-world-context.md) med mobilappen
+### <a name="next-steps"></a>De næste trin
+* [Opret forbindelse til Power BI-data fra den virkelige verden](mobile-apps-data-in-real-world-context.md) med mobilappsene
 * [Datakategorisering i Power BI Desktop](../../desktop-data-categorization.md) 
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+* Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

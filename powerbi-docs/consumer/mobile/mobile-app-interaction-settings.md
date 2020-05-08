@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/08/2020
 ms.author: painbar
 ms.openlocfilehash: 58ef9c6760194e3f11374bdb0663552fd11ce285
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79377369"
 ---
 # <a name="configure-report-interaction-settings"></a>Konfigurer indstillinger for rapportinteraktion
@@ -40,7 +40,7 @@ Indstillingerne for interaktionen er beskrevet i afsnittene nedenfor.
 ### <a name="single-tap"></a>Enkelttryk
 Når du downloader Power BI-mobilappen, er den angivet til interaktion med enkelttryk. Det betyder, at når du trykker på en visualisering for at udføre en handling, f.eks. markering af et udsnitselement, tværgående fremhævning, klik på et link eller en knap osv., vælges det visuelle element, når du trykker, og samtidig udføres den handling, du ønsker.
 
-Hvis du foretrækker det, kan du slå interaktion med enkelttryk fra. Du har derefter interaktion med dobbelttryk. Hvis du vælger interaktion med dobbelttryk, skal du først trykke på en visualisering for at markere den og derefter trykke på visualiseringen igen for at udføre den ønskede handling.
+Hvis du foretrækker det, kan du slå interaktion med enkelttryk fra. Du har derefter interaktion med dobbelttryk. Hvis du vælger interaktion med dobbelttryk, skal du først trykke på et visuelt element for at markere det og derefter trykke på det visuelle element igen for at udføre den ønskede handling.
 
 ### <a name="multi-select"></a>Vælg flere
 
@@ -67,7 +67,7 @@ Indstillingen for rapportopdatering definerer, hvordan du starter rapportopdater
 
 På Android-telefoner tilføjes der som standard en opdateringsknap.
 
-Hvis du vil ændre indstillingen for rapportopdatering, skal du gå til elementet for rapportopdatering i interaktionsindstillingerne. Den aktuelle indstilling vises. Tryk på værdien for at åbne et pop op-vindue, hvor du kan vælge en ny værdi.
+Hvis du vil ændre indstillingen for rapportopdatering, skal du gå til punktet for rapportopdatering i interaktionsindstillingerne. Den aktuelle indstilling vises. Tryk på værdien for at åbne et pop op-vindue, hvor du kan vælge en ny værdi.
 
 ![Angiv opdatering](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-set-refresh.png)
 
@@ -76,6 +76,6 @@ Hvis du vil ændre indstillingen for rapportopdatering, skal du gå til elemente
 Interaktioner kan også konfigureres eksternt af en administrator ved hjælp af et MDM-værktøj med en fil til konfiguration af en app. På denne måde er det muligt at standardisere rapportens interaktionsoplevelse i hele organisationen eller for bestemte grupper af brugere i organisationen. Se [Konfigurer interaktion ved hjælp af administration af mobilenheder](./mobile-app-configuration.md) for at få flere oplysninger.
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Arbejde med rapporter](./mobile-reports-in-the-mobile-apps.md#interact-with-reports)
 * [Konfigurer interaktion ved hjælp af administration af mobilenheder](./mobile-app-configuration.md)

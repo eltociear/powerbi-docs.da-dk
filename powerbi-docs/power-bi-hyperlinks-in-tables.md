@@ -11,10 +11,10 @@ ms.date: 02/13/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 021aeafab4deb5afb39cd3986b3fb68b62b483f0
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79381255"
 ---
 # <a name="add-hyperlinks-urls-to-a-table-or-matrix"></a>Føj links (URL-adresser) til en tabel eller en matrix
@@ -145,7 +145,7 @@ Spørgsmål: Kan jeg bruge en brugerdefineret URL-adresse som et hyperlink i en 
 Svar: Nej. Du kan bruge et linkikon. Hvis du har brug for brugerdefineret tekst til dine hyperlinks, og din liste over URL-adresser er kort, bør du overveje at bruge et tekstfelt i stedet for.
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Visualiseringer i Power BI-rapporter](visuals/power-bi-report-visualizations.md)
 
 [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)

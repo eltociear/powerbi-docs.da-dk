@@ -10,10 +10,10 @@ ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: eb2c513e8ee8ad1c8ad93866f688e40f6c5af56d
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76160782"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Introduktion til dashboards for Power BI-designere
@@ -52,16 +52,16 @@ Muligheden for at oprette et dashboard anses som en *opretterfunktion*  og kræv
 | Sider |Én side |Én eller flere sider |
 | Datakilder |Én eller flere rapporter og et eller flere datasæt pr. dashboard |Et enkelt datasæt pr. rapport |
 | Tilgængelig i Power BI Desktop |Nej | Ja. Kan udarbejde og få vist rapporter i Power BI Desktop |
-| Abonner |Ja. Der kan abonneres på et dashboard |Ja. Muligt at abonnere på en rapportside |
+| Abonnement |Ja. Der kan abonneres på et dashboard |Ja. Muligt at abonnere på en rapportside |
 | Filtrering |Nej. Der kan ikke filtreres eller laves udsnit |Ja. Der er mange forskellige måder at filtrere, fremhæve og lave udsnit på |
 | Fremhævet |Ja. Muligt at angive ét dashboard som dit *udvalgte* dashboard |Nej |
-| Favorit | Ja. Muligt at vælge flere dashboards som *favoritter* | Ja. Muligt at vælge flere rapporter som *favoritter*
+| Markér som Favorit | Ja. Muligt at vælge flere dashboards som *favoritter* | Ja. Muligt at vælge flere rapporter som *favoritter*
 | Angivelse af beskeder |Ja. Tilgængelig for dashboardfelter i visse tilfælde |Nej |
 | Forespørgsler på et naturligt sprog (Spørgsmål og svar) |Ja | Ja, hvis du har tilladelse til at redigere rapporten og det underliggende datasæt |
 | Kan underliggende datasættabeller og felter ses? |Nej. Data kan eksporteres, men tabeller og felter på selve dashboardet kan ikke ses |Ja |
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * Bliv fortrolig med dashboards ved at se præsentationen af et af vores [eksempler på et dashboard](sample-tutorial-connect-to-the-samples.md).
 * Få mere at vide om [dashboardfelter](service-dashboard-tiles.md).
 * Vil du holde øje med et enkelt dashboardfelt og modtage en mail, når den når en bestemt grænse? [Opret en besked på et felt](service-set-data-alerts.md).

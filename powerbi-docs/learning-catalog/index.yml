@@ -10,10 +10,10 @@ metadata:
   ms.author: v-lshann
   ms.date: 04/08/2020
   ms.openlocfilehash: 9f03f812eb20454f655a876438312ba50b521a29
-  ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 04/16/2020
+  ms.lasthandoff: 05/05/2020
   ms.locfileid: "81439290"
 landingContent:
 - title: Forretningsbeslutningstagere
@@ -34,7 +34,7 @@ landingContent:
     links:
     - text: Læringskatalog til rapportoprettere
       url: learning-catalog-report-creator.md#
-    - text: Kom i gang
+    - text: Kom godt i gang
       url: learning-catalog-report-creator.md#get-started
     - text: Dashboards
       url: learning-catalog-report-creator.md#dashboards
@@ -50,7 +50,7 @@ landingContent:
     links:
     - text: Læringskatalog til dataanalytikere
       url: learning-catalog-data-analyst.md#
-    - text: Kom i gang
+    - text: Kom godt i gang
       url: learning-catalog-data-analyst.md#get-started
     - text: Bedste praksis
       url: learning-catalog-data-analyst.md#best-practices
@@ -72,7 +72,7 @@ landingContent:
     links:
     - text: Læringskatalog til administratorer
       url: learning-catalog-administrator.md
-    - text: Kom i gang
+    - text: Kom godt i gang
       url: learning-catalog-administrator.md#get-started
     - text: Installér
       url: learning-catalog-administrator.md#deploy
@@ -82,7 +82,7 @@ landingContent:
     links:
     - text: Læringskatalog til udviklere
       url: learning-catalog-developer.md
-    - text: Kom i gang
+    - text: Kom godt i gang
       url: learning-catalog-developer.md#get-started
     - text: Integreret
       url: learning-catalog-developer.md#embedded
@@ -102,7 +102,7 @@ landingContent:
     links:
     - text: Læringskatalog til funktionelle programkonsulenter
       url: learning-catalog-functional-consultant.md
-    - text: Kom i gang
+    - text: Kom godt i gang
       url: learning-catalog-functional-consultant.md#get-started
     - text: Bedste praksis
       url: learning-catalog-functional-consultant.md#best-practices
@@ -124,7 +124,7 @@ landingContent:
     links:
     - text: Læringskatalog til løsningsarkitekter
       url: learning-catalog-solution-architect.md
-    - text: Kom i gang
+    - text: Kom godt i gang
       url: learning-catalog-solution-architect.md#get-started
     - text: Casestudier
       url: learning-catalog-solution-architect.md#case-studies

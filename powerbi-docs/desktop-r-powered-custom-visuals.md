@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
 ms.openlocfilehash: 020967948e3f0551de50e4485be0dde450a4f18b
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79378679"
 ---
 # <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>Brug R-drevne Power BI-visualiseringer i Power BI
@@ -145,9 +145,9 @@ Power BI-teamet arbejder aktivt på at mindske disse problemer, før de opstår 
 
    b. Hvis det forrige trin ikke virker, kan du ændre **Værktøjer > Globale indstillinger > Pakker** i **R Studio**, markere afkrydsningsfeltet for **Brug Internet Explorer bibliotek/proxy for HTTP** og derefter gentage trin 3.b. fra trinnene ovenfor.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
-Du kan finde yderligere oplysninger om R i Power BI i følgende artikler.
+Du kan finde flere oplysninger om R i Power BI i følgende artikler.
 
 * [Galleri med Power BI-visuals](https://app.powerbi.com/visuals/)
 * [Kørsel af R-scripts i Power BI Desktop](desktop-r-scripts.md)

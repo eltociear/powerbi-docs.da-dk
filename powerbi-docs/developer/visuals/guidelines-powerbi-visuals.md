@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
 ms.openlocfilehash: 1602743230f1a369fe3da48fa37a313b9d9bbea4
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435875"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Retningslinjer for Power BI-visualiseringer
@@ -158,10 +158,10 @@ Brug landingssiden til at tydeliggøre over for brugerne, hvordan de kan bruge d
 
 Af hensyn til brugerne skal du tilføje en licensnøgle eller tokenrelaterede felter øverst i formateringsruden.
 
-## <a name="faq"></a>Ofte stillede spørgsmål
+## <a name="faq"></a>OFTE STILLEDE SPØRGSMÅL OM
 
 Du kan finde flere oplysninger om Power BI-visualiseringer under [Ofte stillede spørgsmål om Power BI-visualiseringer med yderligere køb](power-bi-custom-visuals-faq.md#visuals-with-additional-purchases).
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 Få mere at vide om, hvordan du kan publicere din brugerdefinerede Power BI-visualisering i [Microsoft AppSource](office-store.md), så andre kan finde og bruge den.

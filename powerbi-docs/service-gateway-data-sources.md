@@ -11,10 +11,10 @@ ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
 ms.openlocfilehash: 15b3236741eb19d9f08601f9503e0380f54a8d63
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79207453"
 ---
 # <a name="manage-data-sources"></a>Administrer datakilder
@@ -62,7 +62,7 @@ Hvis du bruger **Brug SSO via Kerberos til DirectQuery- og importforespørgsler*
 
     ![Avancerede indstillinger](media/service-gateway-data-sources/advanced-settings.png)
 
-8. Vælg **Tilføj**. Du får vist *Forbindelsen er oprettet*, hvis processen lykkes.
+8. Vælg **Tilføj** Du får vist *Forbindelsen er oprettet*, hvis processen lykkes.
 
     ![Forbindelsen er oprettet](media/service-gateway-data-sources/connection-successful.png)
 
@@ -87,7 +87,7 @@ Linket mellem dit datasæt og datakilden i gatewayen er baseret på dit serverna
 
 Hvis du er angivet under fanen **Brugere** i den datakilde, der er konfigureret i gatewayen, og server- og databasenavnet stemmer overens, får du vist gatewayen som en mulighed, der kan bruges sammen med en planlagt opdatering.
 
-![Gatewayforbindelse](media/service-gateway-data-sources/gateway-connection.png)
+![Gateway-forbindelse](media/service-gateway-data-sources/gateway-connection.png)
 
 > [!WARNING]
 > Hvis dit datasæt indeholder flere datakilder, skal hver enkelt datakilde føjes til gatewayen. Hvis en eller flere datakilder ikke er føjet til gatewayen, kan du ikke se gatewayen som tilgængelig i forbindelse med en planlagt opdatering.
@@ -132,7 +132,7 @@ Når du føjer en datakilde til gatewayen, skal du angive legitimationsoplysning
 
 Du kan finde oplysninger om, hvilke datakilder datagatewayen i det lokale miljø understøtter, i [Power BI-datakilder](power-bi-data-sources.md).
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * [Administrer din datakilde – Analysis Services](service-gateway-enterprise-manage-ssas.md)
 * [Administrer din datakilde – SAP HANA](service-gateway-enterprise-manage-sap.md)

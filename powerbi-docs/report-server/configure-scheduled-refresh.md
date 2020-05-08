@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: davidi
 ms.openlocfilehash: cab64bdcd5707cfd0b1578e82334de4b5c84495c
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81439957"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Sådan konfigurerer du en planlagt opdatering af en Power BI-rapport
@@ -78,12 +78,12 @@ Få vist status for en plan for planlagt opdatering på webportalen.
    | Opdatering af data |Opdatering af dataene i modellen. |
    | Fjernelse af legitimationsoplysninger fra modellen |De legitimationsoplysninger, der bruges til at oprette forbindelse til datakilden fra modellen, blev fjernet. |
    | Lagring af modellen i kataloget |Opdateringen af data er fuldført, og den opdaterede model gemmes i katalogdatabasen på rapportserveren igen. |
-   | Fuldført: Opdatering af data |Opdateringen er færdig. |
+   | Fuldført: Dataopdatering |Opdateringen er færdig. |
    | Fejl: |Der opstod en fejl under opdateringen, og fejlen vises. |
 
 Websiden skal opdateres, for at du kan se den aktuelle status. Status ændres ikke automatisk.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Du kan få mere at vide om oprettelse og ændring af tidsplaner under [Opret, rediger og slet tidsplaner](https://docs.microsoft.com/sql/reporting-services/subscriptions/create-modify-and-delete-schedules).
 
 Du kan finde oplysninger om fejlfinding i forbindelse med planlagt opdatering under [Fejlfinding i forbindelse med planlagt opdatering på Power BI-rapportserver](scheduled-refresh-troubleshoot.md).

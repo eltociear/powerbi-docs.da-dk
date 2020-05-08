@@ -10,10 +10,10 @@ ms.date: 03/12/2020
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: d3cb3c8093446d4417a59c5f64ab6b85a765e3c8
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79206441"
 ---
 # <a name="create-a-drill-through-button-in-power-bi-preview"></a>Opret en detaljeniveauknap i Power BI (prøveversion)
@@ -107,7 +107,7 @@ I dette eksempel er knappen deaktiveret, fordi to visuals begge indeholder et en
 - Knappens formatering som deaktiveret er knyttet til farveklasserne i rapporttemaet. Få mere at vide om [farveklasser](desktop-report-themes.md#setting-structural-colors).
 - Detaljeadgangshandlingen virker i alle indbyggede visuals og kan bruges sammen med *nogle* visuals, der er importeret fra AppSource. Det er dog ikke sikkert, at de kan bruges sammen med *alle* visuals, der er importeret fra AppSource.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Du kan finde flere oplysninger om de funktioner, der er ens eller interagerer med knapper, i følgende artikler:
 
 * [Opret knapper](desktop-buttons.md)
