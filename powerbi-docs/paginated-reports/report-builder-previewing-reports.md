@@ -9,10 +9,10 @@ ms.assetid: ba6b5bdd-d8c6-4aa8-ba32-3a10b11969d4
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: afbc31e3ece8bc72ad52bb2fe7c3d871b2f68e1b
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78922936"
 ---
 # <a name="previewing-reports-in-power-bi-report-builder"></a>Forhåndsvisning af rapporter i Power BI Report Builder
@@ -70,7 +70,7 @@ Du får ofte forhåndsvist en rapport som en del af en opdatering og derefter la
 ## <a name="external-report-items"></a>Eksterne rapportelementer  
  Rapporten kan indeholde elementer såsom eksterne billeder, der gemmes separat fra rapporten. Da elementerne gemmes separat, kan de muligvis blive flyttet til en anden placering eller blive slettet. Hvis det sker, kan din rapport muligvis ikke blive forhåndsvist. Du kan opdatere rapporten for at angive den opdaterede placering af elementet, eller hvis elementet blev slettet, kan du erstatte den med et eksisterende element eller fjerne referencen til elementet fra rapporten.  
   
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
   

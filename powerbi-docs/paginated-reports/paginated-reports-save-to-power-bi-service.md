@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/03/2020
-ms.openlocfilehash: 0207cbdbc3fae8636f8fd73a008d54ee7d10c5f9
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.date: 05/04/2020
+ms.openlocfilehash: 3e7e1590adbf953db4232ddffa5f26778e5670c2
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78921602"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781610"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publicer en sideinddelt rapport i Power BI-tjenesten
 
@@ -107,9 +107,6 @@ Ligesom alle andre Power BI-rapporter skal du oprette eller oprette forbindelse 
 
 1. Du kan se yderligere oplysninger og næste trin i artiklen [Hvad er en datagateway i det lokale miljø](../service-gateway-onprem.md) til Power BI-tjenesten.
 
-### <a name="gateway-limitations"></a>Gateway-begrænsninger
-
-I øjeblikket understøtter gateways ikke parametre med flere værdier.
 
 
 ## <a name="next-steps"></a>Næste trin

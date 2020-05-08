@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
 ms.openlocfilehash: 4b30e2fbf4ec3607b3ee155749a1ddeeb9f76cad
-ms.sourcegitcommit: 075a0ade4134d28f578fda78996595e8cd9f3555
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/24/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80147348"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Konfigurer understøttelse af Multi-Geo til Power BI Premium
@@ -96,7 +96,7 @@ Du kan fjerne arbejdsområder fra Multi-Geo-kapacitet på to måder:
 
 - Funktionen [Dataflow](service-dataflows-overview.md) understøttes ikke på Multi-GEO i øjeblikket.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Hvad er Power BI Premium?](service-premium-what-is.md)
 - [Multi-Geo til Power BI Embedded-kapaciteter](developer/embedded/embedded-multi-geo.md)

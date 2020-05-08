@@ -1,6 +1,6 @@
 ---
 title: Vejledning i kapacitetsplanlægning i Power BI-rapportserver
-description: Denne rapport omfatter en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af gennemførslen af belastningstest ved forskellige arbejdsbelastninger.
+description: 'Denne rapport omfatter en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af gennemførslen af belastningstest ved forskellige arbejdsbelastninger. '
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 04/02/2020
 ms.author: maggies
 ms.openlocfilehash: 25bf9d8a05805fad268152c64b5aefa36f602803
-ms.sourcegitcommit: e0833ec22b263f919025acae88551570b4def0cd
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80647654"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Vejledning i kapacitetsplanlægning i Power BI-rapportserver
@@ -41,7 +41,7 @@ Installationen af Power BI-rapportserveren omfattede de følgende virtuelle mask
 
 * Active Directory-domænecontroller: blev brugt af SQL Server-databaseprogrammet, SQL Server Analysis Services og Power BI-rapportserveren til sikker godkendelse af alle anmodninger.
 * SQL Server-databaseprogrammet og SQL Server Analysis Services: blev brugt til at lagre alle databaser til rapporterne til forbrug, når vi gengav dem.
-* Power BI-rapportserver
+* Power BI Report Server
 * Power BI-rapportserverdatabase. Rapportserverdatabasen er hostet på en anden maskine end Power BI-rapportserveren, så den ikke skal konkurrere om ressourcer med SQL Server-databaseprogrammet mht. hukommelse, CPU, netværk og harddisk.
 
 ![](media/capacity-planning/report-server-topology.png)
@@ -62,13 +62,13 @@ Alle test blev udarbejdet for at udføre en komplet handling (såsom at gengive 
 > Værktøjet understøttes ikke officielt af Microsoft, men produktteamet bidrager til projektet og de løser problemer, der er indsendt af andre bidragydere.
 
 ### <a name="workloads"></a>Arbejdsbelastninger
-Der er to arbejdsbelastningsprofiler i testene: tung Power BI-rapport og sideinddelt tung rapport. I nedenstående tabel beskrives fordelingen af anmodninger, der udføres i forhold til rapportserveren.
+Der bruges to arbejdsbelastningsprofiler i testene: Power BI-tung rapport og sideinddelt tung rapport. I nedenstående tabel beskrives fordelingen af anmodninger, der udføres i forhold til rapportserveren.
 
 | Aktivitet | Power BI tung rapport, hyppighed | Sideinddelt tung rapport, hyppighed |
 | --- | --- | --- |
 | **Gengivelse af Power BI-rapporter** |60 % |10 % |
 | **Gengivelse af sideinddelte (RDL) rapporter** |30 % |60 % |
-| **Gengivelsen mobilrapporter** |5 % |20 % |
+| **Gengivelsen mobilrapporter** |5 % |20 % |
 | **Webportalhandlinger** |5 % |10 % |
 
 ### <a name="user-load"></a>Brugerbelastning

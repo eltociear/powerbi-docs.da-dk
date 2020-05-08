@@ -10,10 +10,10 @@ ms.date: 04/15/2020
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: de30da9c5cf6ad2046a99fb327cdad825725a14d
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637838"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Power BI-tjenestens nye udseende
@@ -81,7 +81,7 @@ De seneste opdateringer, f. eks. visning af anvendte filtre og den nye rude med 
 
 ## <a name="dashboard-new-look-experience"></a>Dashboardets nye udseende 
 
-Dashboards har også en forenklet handlingslinje på samme måde som rapporter og programmer, så du får en ensartet oplevelse, samtidig med at de funktionsmæssige forskelle bevares. Her er en gennemgang af handlinger i et dashboard.
+Dashboards har også en forenklet handlingslinje på samme måde som rapporter og apps, så du får en ensartet oplevelse, samtidig med at de funktionsmæssige forskelle bevares. Her er en gennemgang af handlinger i et dashboard.
  
 ![Handlingslinje for dashboardet i det nye udseende](media/service-new-look/power-bi-dashboard-action-bar-new-look.gif)
 

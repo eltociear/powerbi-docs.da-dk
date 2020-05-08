@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 01/22/2020
 LocalizationGroup: Dashboards
 ms.openlocfilehash: d3f359ad4c968407dff143458b65954844f9a22d
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76829276"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience"></a>Overvåg forbrugsdata i den nye arbejdsområdeoplevelse
@@ -26,7 +26,7 @@ Hvis du opretter rapporter i moderne arbejdsområder, har du adgang til forbedre
 ![Ny rapport med forbrugsdata](media/service-modern-usage-metrics/power-bi-modern-usage-metrics.png)
 
 > [!NOTE]
-> Du kan kun køre rapporter med forbrugsdata i Power BI-tjenesten. Men hvis du gemmer en rapport med forbrugsdata eller fastgør den til et dashboard, kan du åbne og interagere med denne rapport på mobilenheder.
+> Du kan kun køre forbrugsdatarapporter i Power BI-tjenesten. Men hvis du gemmer en rapport med forbrugsdata eller fastgør den til et dashboard, kan du åbne og interagere med denne rapport på mobilenheder.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -60,7 +60,7 @@ Det er kun brugere med rettigheder som administrator, medlem eller bidragyder, d
 Når du får vist den forbedrede rapport med forbrugsdata ved at følge ovenstående procedure, genererer Power BI en færdigbygget rapport med forbrugsdata for det pågældende indhold for de sidste 30 dage. Rapporten ligner de Power BI-rapporter, du allerede kender. Du kan oprette udsnit baseret på, hvordan dine slutbrugere fik adgang, om de fik adgang via internettet eller mobilapp osv. Rapporten med forbrugsdata udvikler sig, i takt med at din rapport udvikler sig, og den opdateres hver dag med nye data.
 
 > [!NOTE]
-> Rapporter med forbrugsdata vises ikke i Seneste, Arbejdsområder, Favoritter eller på andre indholdslister. De kan ikke føjes til en app. Hvis du fastgør et felt fra en rapport med forbrugsdata til et dashboard, kan du ikke føje det pågældende dashboard til en app.
+> Rapporter med forbrugsdata vises ikke i Seneste, Arbejdsområder, Favoritter eller på andre indholdslister. De kan ikke føjes til en app. Hvis du fastgør et felt fra en forbrugsdatarapport til et dashboard, kan du ikke føje det pågældende dashboard til en app.
 
 ### <a name="usage-metrics-report-dataset"></a>Datasæt til rapport med forbrugsdata
 
@@ -76,7 +76,7 @@ Den forbedrede rapport med forbrugsdata indeholder følgende rapportsider:
 
 ### <a name="which-metrics-are-reported"></a>Hvilke forbrugsdata rapporteres?
 
-| **Side** | **Metrikværdi** | **Beskrivelse** |
+| **Side** | **Målepunkt** | **Beskrivelse** |
 | --- | --- | --- |
 | Rapportanvendelse | Rapportvisninger | Der registreres en rapportvisning, hver gang en person åbner en rapport. Bemærk, at definitionen af en visning adskiller sig fra tidligere rapporter med forbrugsdata. Ændring af rapportsider anses ikke længere for at være en yderligere visning. |
 | Rapportanvendelse | Unikke seere | En seer er en person, der har åbnet rapporten mindst én gang i tidsperioden (baseret på AAD-brugerkontoen). |

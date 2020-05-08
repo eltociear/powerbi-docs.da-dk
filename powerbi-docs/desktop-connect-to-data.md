@@ -11,10 +11,10 @@ ms.date: 01/21/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 751a53e2bfe0c9743a71cc41aa349afa23fd013a
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76539104"
 ---
 # <a name="connect-to-data-sources-in-power-bi-desktop"></a>Opret forbindelse til datakilderne i Power BI Desktop
@@ -39,7 +39,7 @@ Vælg **Hent data** > **Andet** > **Web**. I **Fra web** skal du angive adressen
 
 ![Angiv en adresse på en webkilde](media/desktop-connect-to-data/connecttodata_3.png)
 
-Når du vælger **OK**, begynder funktionen *Forespørgsel* i Power BI Desktop at arbejde. Power BI Desktop kontakter webressourcen, og i **navigatorvinduet** returneres resultaterne af det, der blev fundet på den pågældende webside. I dette tilfælde blev der fundet en tabel og det generelle dokument. Vi er interesseret i tabellen, så vi vælger den på listen. I **navigatorvinduet** vises der et eksempel.
+Når du vælger **OK**, begynder *forespørgsel*sfunktionen i Power BI Desktop at arbejde. Power BI Desktop kontakter webressourcen, og i **navigatorvinduet** returneres resultaterne af det, der blev fundet på den pågældende webside. I dette tilfælde blev der fundet en tabel og det generelle dokument. Vi er interesseret i tabellen, så vi vælger den på listen. I **navigatorvinduet** vises der et eksempel.
 
 ![Eksempelvisning af data i Navigator](media/desktop-connect-to-data/datasources_fromnavigatordialog.png)
 
@@ -49,7 +49,7 @@ Vælg **Transformer data** for at indlæse tabellen og starte Power-forespørgse
 
 ![Power Query-editor med Forespørgselsindstillinger](media/desktop-connect-to-data/designer_gsg_editquery.png)
 
-Alle disse resultater er tekst i stedet for tal, og vi skal bruge tal. Det er ikke noget problem. Du skal blot højreklikke på kolonneoverskriften og vælge **Skift type**  > **Heltal** for at ændre dem. Hvis du vil markere mere end én kolonne, skal du først markere en kolonne og derefter holde Skift nede, vælge yderligere tilstødende kolonner og derefter højreklikke på en kolonneoverskrift for at ændre alle de valgte kolonner. Brug Ctrl til at vælge de kolonner, der ikke er tilstødende.
+Alle disse resultater er tekst i stedet for tal, og vi skal bruge tal. Intet problem. Du skal blot højreklikke på kolonneoverskriften og vælge **Skift type**  > **Heltal** for at ændre dem. Hvis du vil markere mere end én kolonne, skal du først markere en kolonne og derefter holde Skift nede, vælge yderligere tilstødende kolonner og derefter højreklikke på en kolonneoverskrift for at ændre alle de valgte kolonner. Brug Ctrl til at vælge de kolonner, der ikke er tilstødende.
 
 ![Skift datatypen til Heltal](media/desktop-connect-to-data/designer_gsg_changedatatype.png)
 
@@ -67,7 +67,7 @@ Mens datamodellen indlæst, kan vi i **rapportvisningen** i Power BI Desktop gå
 
 Det er selvfølgelig en simpel model med en enkelt dataforbindelse. De fleste Power BI Desktop-rapporter vil have forbindelser til forskellige datakilder, formet til dine behov, med relationer, der opretter en mere omfattende datamodel.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 Du kan gøre mange forskellige ting med Power BI Desktop. Du kan finde flere oplysninger om funktionerne i følgende ressourcer:
 
 * [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
@@ -76,7 +76,7 @@ Du kan gøre mange forskellige ting med Power BI Desktop. Du kan finde flere opl
 * [Udform og kombiner data i Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Udfør almindelige forespørgselsopgaver i Power BI Desktop](desktop-common-query-tasks.md)   
 
-Vil du give os feedback? Fantastisk! Brug menupunktet **Indsend en idé** i Power BI Desktop, eller besøg [Feedback fra community](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). Vi ser frem til at høre fra dig!
+Vil du give os feedback? Fint. Brug menupunktet **Indsend en idé** i Power BI Desktop, eller besøg [Feedback fra community](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). Vi ser frem til at høre fra dig!
 
-![Send en idé](media/desktop-connect-to-data/sendfeedback.png)
+![Send en ide](media/desktop-connect-to-data/sendfeedback.png)
 

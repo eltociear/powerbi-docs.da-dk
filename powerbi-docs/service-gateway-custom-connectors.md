@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
 ms.openlocfilehash: 51d03582ec91b926526a075a356323eb4f95a84b
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77609874"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Brug brugerdefinerede dataconnectors med datagatewayen i det lokale miljø
@@ -30,7 +30,7 @@ Når du opretter rapporter i Power BI Desktop, der bruger brugerdefinerede datac
 
 Når du installerer versionen fra juli 2018 af datagatewayen i det lokale miljø eller en nyere version, kan du se fanen **Connectors** i programmet til datagatewayen i det lokale miljø. I feltet **Indlæs brugerdefinerede dataconnectors fra mappe** skal du vælge en mappe, der kan tilgås af den bruger, som kører gatewaytjenesten. Standardbrugeren er *NT SERVICE\PBIEgwService*. Gatewayen indlæser automatisk de brugerdefinerede connectorfiler, der er placeret i den pågældende mappe. De vises på listen over dataconnectors.
 
-![Brugerdefinerede dataforbindelser](media/service-gateway-custom-connectors/gateway-onprem-customconnector1.png)
+![Brugerdefinerede datatilslutninger](media/service-gateway-custom-connectors/gateway-onprem-customconnector1.png)
 
 Hvis du bruger datagatewayen i det lokale miljø (personlig tilstand), kan du uploade din Power BI-rapport til Power BI-tjenesten og bruge gatewayen til at opdatere den.
 
@@ -48,7 +48,7 @@ Når denne indstilling er aktiveret, kan du se dine brugerdefinerede connectors 
 * Hvis brugerdefinerede connectors skal kunne fungere sammen med datagatewayen i det lokale miljø, skal de implementere sektionen "TestConnection" i koden til den brugerdefinerede connector. Dette afsnit er ikke påkrævet, når du bruger brugerdefinerede connectors med Power BI Desktop. Du kan derfor have en connector, der fungerer sammen med Power BI Desktop, men ikke med gatewayen. Du kan finde flere oplysninger om, hvordan du implementerer afsnittet TestConnection i [denne dokumentation](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support).
 * OAuth for brugerdefinerede connectorer via gateways understøttes i øjeblikket kun for gatewayadministratorer, men ikke for andre brugere af datakilder.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * [Administrer din datakilde – Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 * [Administrer din datakilde – SAP HANA](service-gateway-enterprise-manage-sap.md)  
@@ -58,4 +58,4 @@ Når denne indstilling er aktiveret, kan du se dine brugerdefinerede connectors 
 * [Konfigurer proxyindstillinger for datagatewayen i det lokale miljø](/data-integration/gateway/service-gateway-proxy)
 * [Brug Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø](service-gateway-sso-kerberos.md)  
 
-Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).

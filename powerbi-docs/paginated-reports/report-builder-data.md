@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.date: 06/06/2019
 ms.openlocfilehash: fea4e4927b009e30bc040593f9237cc49ff73956
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921441"
 ---
 # <a name="report-data-in-power-bi-report-builder"></a>Rapportdata i Power BI Report Builder
@@ -23,7 +23,7 @@ Rapportdata kan stamme fra flere kilder af data i din organisation. Dit første 
 Få mere at vide om, hvordan [opretter en integreret datakilde til sideinddelte rapporter i Power BI Report Builder](paginated-reports-embedded-data-source.md).
 
 
-##  <a name="BkMk_ReportDataTerms"></a> Vilkår  
+##  <a name="terms"></a><a name="BkMk_ReportDataTerms"></a> Vilkår  
   
 - **Dataforbindelse.** Også kendt som en *datakilde*. En dataforbindelse omfatter et navn og forbindelsesegenskaber, der er afhængige af forbindelsestypen. En dataforbindelse indeholder med vilje ikke legitimationsoplysninger. En dataforbindelse angiver ikke, hvilke data der skal hentes fra den eksterne datakilde. For at gøre det skal du angive en forespørgsel, når du opretter et datasæt.  
   
@@ -33,7 +33,7 @@ Få mere at vide om, hvordan [opretter en integreret datakilde til sideinddelte 
   
 - **Legitimationsoplysninger.** Legitimationsoplysningerne er de godkendelsesoplysninger, der skal angives for at give dig adgang til eksterne data.  
   
-##  <a name="BkMk_ReportDataTips"></a> Tip til at angive rapportdata
+##  <a name="tips-for-specifying-report-data"></a><a name="BkMk_ReportDataTips"></a> Tip til at angive rapportdata
 
  Brug følgende oplysninger til at designe din strategi for data i rapporten.  
   
@@ -57,7 +57,7 @@ Få mere at vide om, hvordan [opretter en integreret datakilde til sideinddelte 
   
 - Datakilder og datasæt forfattes i en rapport og publiceres til Power BI-tjenesten. Når de er publiceret, kan du konfigurere legitimationsoplysninger direkte i Power BI-tjenesten eller i din Enterprise Gateway. 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)  
 - [Vejledning til datahentning for sideinddelte rapporter](../guidance/report-paginated-data-retrieval.md)

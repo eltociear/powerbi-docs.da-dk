@@ -83,7 +83,7 @@
               href: ../service-dataflows-create-use.md
             - name: Hæv eller certificer dataflow
               href: service-dataflows-promote-certify.md
-            - name: Brug det forbedrede beregningsprogram med dataflows
+            - name: Brug den forbedrede beregningsmaskine med dataflow
               href: ../service-dataflows-enhanced-compute-engine.md
             - name: Beregnede enheder med Power BI Premium
               href: ../service-dataflows-computed-entities-premium.md
@@ -99,11 +99,11 @@
               href: ../service-dataflows-developer-resources.md
             - name: Opret forbindelse til dataflow i Power BI Desktop
               href: ../desktop-connect-dataflows.md
-            - name: Integration af dataflow og Azure Data Lake (prøveversion)
+            - name: Integration af dataflow og Azure Data Lake (eksempelvisning)
               href: ../service-dataflows-azure-data-lake-integration.md
             - name: Opret forbindelse til Azure Data Lake Storage Gen2 for dataflowlager
               href: ../service-dataflows-connect-azure-data-lake-storage-gen2.md
-            - name: Konfigurer indstillinger for dataflow for arbejdsområder (prøveversion)
+            - name: Konfigurer indstillinger for dataflow for arbejdsområde (eksempelvisning)
               href: ../service-dataflows-configure-workspace-storage-settings.md
             - name: Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)
               href: ../service-dataflows-add-cdm-folder.md

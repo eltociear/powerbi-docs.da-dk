@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/30/2019
 ms.author: v-pemyer
 ms.openlocfilehash: 49601798ae920d956441c5580079625bf7408e07
-ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78290561"
 ---
 # <a name="referencing-power-query-queries"></a>Henvisning til Power Query-forespørgsler
@@ -48,7 +48,7 @@ Du kan designe dataflow for at sammenfatte kildedataene og transformationerne. D
 
 Hvis **Forespørgsel1** i eksemplet redesignes som en dataflowenhed, kan **Forespørgsel2**, **Forespørgsel3** og **Forespørgsel4** bruge den som en datakilde. Med dette design evalueres den enhed, der hentes af **Forespørgsel1**, kun én gang.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
