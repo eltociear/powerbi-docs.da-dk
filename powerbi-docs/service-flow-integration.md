@@ -11,10 +11,10 @@ ms.date: 02/25/2020
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: aafba825c5bd4ece3c8b97256d5943f91b456cd7
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77609704"
 ---
 # <a name="power-automate-and-power-bi"></a>Power Automate og Power BI
@@ -23,7 +23,7 @@ ms.locfileid: "77609704"
 
 [Kom godt i gang med at bruge Power Automate nu.](https://docs.microsoft.com/power-automate/getting-started)
 
-Se, hvordan Sirui opretter et Power Automate-flow, der sender en detaljeret mail til kolleger, når der udløses en besked i Power BI. Følg derefter den trinvise vejledning under videoen for at prøve det selv.
+Se, hvordan Sirui opretter et Power Automate-flow, der sender en detaljeret mail til kolleger, når der udløses en besked i Power BI. Følg derefter en trinvis vejledning under videoen for at prøve det selv.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YhmNstC39Mw" frameborder="0" allowfullscreen></iframe>
 
@@ -81,12 +81,12 @@ Denne skabelon indeholder en udløser (Power BI-databesked om nye olympiske meda
 I denne opgave skal vi oprette et enkelt flow fra bunden, der udløses af en databesked i Power BI (meddelelse).
 
 1. Log på Power Automate.
-2. Vælg **Mine flow** > **Opret fra blank**.
+2. Vælg **Mine flow** > **Opret fra bunden af**.
    
    ![Øverste menulinje i Power Automate](media/service-flow-integration/power-bi-my-flows.png)
 3. Brug søgefeltet til at finde en Power BI-udløser, og vælg **Power BI – når en datadrevet besked udløses**.
 
-### <a name="build-your-flow"></a>Byg dit flow
+### <a name="build-your-flow"></a>Opret dit flow
 1. Vælg navnet på beskeden på rullelisten.  Hvis du vil vide mere om, hvordan du opretter en besked, skal du læse [Databeskeder i Power BI](service-set-data-alerts.md).
    
     ![vælg navnet på den vigtige besked](media/service-flow-integration/power-bi-totalstores2.png)
@@ -106,8 +106,8 @@ I denne opgave skal vi oprette et enkelt flow fra bunden, der udløses af en dat
    
     ![Power Automate udløser en Outlook-meddelelse](media/service-flow-integration/power-bi-flow-notice.png)
 
-## <a name="next-steps"></a>Næste trin
-* [Kom godt i gang med Power Automate](https://docs.microsoft.com/power-automate/getting-started/)
+## <a name="next-steps"></a>De næste trin
+* [Kom i gang med Power Automate](https://docs.microsoft.com/power-automate/getting-started/)
 * [Indstil databeskeder i Power BI-tjenesten](service-set-data-alerts.md)
 * [Indstil databeskeder på din iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Indstil databeskeder i Power BI-mobilappen til Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)

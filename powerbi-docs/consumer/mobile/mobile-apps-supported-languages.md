@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 4f135a411d69835e925cf97b418bda6ae80adc1a
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79113192"
 ---
 # <a name="supported-languages-in-the-power-bi-mobile-apps"></a>Understøttede sprog i Power BI-mobilapps
@@ -57,8 +57,8 @@ Power BI-mobilapps understøtter i øjeblikket kun disse sprog:
 * Power BI bruger det sprog, der svarer til landestandarden for den mobile enhed. Du kan ikke angive et andet sprog.
 * Meddelelser findes kun på engelsk. Hvis nogen f.eks. deler et dashboard med dig, er meddelelsen på engelsk. 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Understøttede sprog og lande/områder til Power BI](../../supported-languages-countries-regions.md)
-* Har du spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).
+* Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
 * Har du stadig problemer? Gå til [supportsiden for Power BI](https://powerbi.microsoft.com/support/).
 

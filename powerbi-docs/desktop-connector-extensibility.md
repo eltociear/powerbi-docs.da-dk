@@ -10,10 +10,10 @@ ms.date: 01/02/2020
 ms.author: gepopell
 LocalizationGroup: Connect to data
 ms.openlocfilehash: b604ade56335e65b25501eb9fe3d3c2fd185a6f0
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761385"
 ---
 # <a name="connector-extensibility-in-power-bi"></a>Forbindelsesudvidelse i Power BI
@@ -24,7 +24,7 @@ Hvis du vil bruge ikke-certificerede brugerdefinerede connectors, som du eller e
 
 En anden mulighed er, at udvikleren skal signere connectoren med et certifikat og angive de oplysninger, du har brug for, for at kunne bruge den uden at ændre dine sikkerhedsindstillinger. Du kan få flere oplysninger under [Om tredjepartsconnectors, der er tillid til](desktop-trusted-third-party-connectors.md).
 
-## <a name="custom-connectors"></a>Brugerdefinerede forbindelser
+## <a name="custom-connectors"></a>Brugerdefinerede connectorer
 
 Ikke-certificerede brugerdefinerede connectors kan variere fra små API'er, som er vigtige for din virksomhed, til store branchespecifikke tjenester, som Microsoft ikke har frigivet en connector til. Mange connectors distribueres af leverandører. Hvis du skal bruge en bestemt dataconnector, skal du kontakte leverandøren. 
 

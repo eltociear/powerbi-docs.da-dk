@@ -11,10 +11,10 @@ ms.date: 01/29/2020
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 16041ebc9ba293ab166178e008b12277d94e89c3
-ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76894781"
 ---
 # <a name="filter-and-share-a-power-bi-report"></a>Filtrer og del en Power BI-rapport
@@ -78,9 +78,9 @@ Gem rapporten.
 7. Når du deler dette link, kan modtagerne se din filtrerede rapport. 
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Måder at dele dit arbejde på i Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Del et dashboard](service-share-dashboards.md)
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
+* Har du flere spørgsmål? [Prøv Power BI-community'et](https://community.powerbi.com/).
 * Har du feedback? Indsend dine forslag på [webstedet for Power BI-community'et](https://community.powerbi.com/).
 

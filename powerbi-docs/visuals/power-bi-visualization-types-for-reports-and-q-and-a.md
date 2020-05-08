@@ -10,10 +10,10 @@ ms.date: 01/14/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 12c2d839c14a4a982505f56b7d605bacc5edc728
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79381416"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
@@ -41,10 +41,10 @@ Du kan finde flere oplysninger under [Grundlæggende områdediagram](power-bi-vi
 >[!TIP]
 >Liggende søjlediagrammer er standarden for at finde en specifik værdi på tværs af en række kategorier.
 
-### <a name="cards-multi-row"></a>Kort: Med flere rækker
+### <a name="cards-multi-row"></a>Kort: flere rækker
 ![Kort med flere rækker](media/power-bi-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
-### <a name="cards-single-number"></a>Kort: Enkelt tal
+### <a name="cards-single-number"></a>Kort: enkelt tal
 ![talkort](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_card.png)
 
 Du kan finde flere oplysninger under [Opret et kort (med et felt med et stort tal)](power-bi-visualization-card.md).
@@ -102,7 +102,7 @@ Du kan finde flere oplysninger under [KPI'er i Power BI](power-bi-visualization-
 >[!TIP]
 >Fremhæver en overordnet form af en hel serie af værdier – som regel over tid.
 
-### <a name="maps-basic-maps"></a>Kort: Basiskort
+### <a name="maps-basic-maps"></a>Kort: grundlæggende kort
 ![Basiskort](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi-nancy_viz_map.png)
 
 >[!TIP]
@@ -115,7 +115,7 @@ Du kan finde flere oplysninger under [Tip og tricks til kortvisualiseringer](pow
 
 Du kan finde flere oplysninger under [ArcGIS-kort i Power BI](power-bi-visualization-arcgis.md).
 
-### <a name="maps-filled-maps-choropleth"></a>Kort: Kartogrammer (Choropleth)
+### <a name="maps-filled-maps-choropleth"></a>Kort: kartogrammer (Choropleth)
 ![Kartogram](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
 
 >[!TIP]
@@ -133,7 +133,7 @@ Du kan finde flere oplysninger under [Figurkort i Power BI](desktop-shape-map.md
 
 
 ### <a name="matrix"></a>Matrix
-![matrix](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
+![Matrix](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
 
 >[!TIP]
 >En tabel understøtter to dimensioner, men en matrix gør det lettere at få vist data på tværs af flere dimensioner på en meningsfuld måde – det understøtter et trinvist layout. Matricen samler automatisk dataene og gør det muligt at foretage detailudledning. 
@@ -162,7 +162,7 @@ Du kan finde flere oplysninger under [Føj en Power Apps-visualisering til din r
 Du kan finde flere oplysninger under [Visualiseringer af Spørgsmål og svar i Power BI](power-bi-visualization-q-and-a.md).
 
 ### <a name="r-script-visuals"></a>R-script-visualiseringer
-![R-visualiseringer](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visuals.png)
+![R-visuals](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visuals.png)
 
 >[!TIP]
 >Visualiseringer, der er oprettet med R-scripts, også kaldet *R-visuals*, kan vise avanceret dataformatering og analyse, f.eks. prognoser, ved hjælp af styrken i R's omfattende analyse- og visualiseringsfunktioner. R-visuals kan oprettes i Power BI Desktop og publiceres i Power BI-tjenesten.   
@@ -234,6 +234,6 @@ Når du skriver forespørgsler i naturligt sprog med Spørgsmål og svar i Power
 
 ![Spørgsmålsfelt til Spørgsmål og svar med visualiseringstypen angivet](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)    
 [Den rette visuelle reference fra sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

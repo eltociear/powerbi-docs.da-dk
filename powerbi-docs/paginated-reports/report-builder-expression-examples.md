@@ -9,10 +9,10 @@ ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 48e81c91a4555b4c8ea847ddffb1413058bbb152
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921142"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Eksempler på udtryk i Power BI Report Builder
@@ -37,7 +37,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
 ## <a name="functions"></a>Funktioner  
  Mange udtryk i en rapport indeholder funktioner. Du kan formatere data, anvende logik og få adgang til rapportmetadata ved hjælp af disse funktioner. Du kan skrive udtryk, der bruger funktioner, via kørselsbiblioteket i Microsoft Visual Basic samt via navneområderne `xref:System.Convert` og `xref:System.Math`. Du kan føje referencer til funktioner i brugerdefineret kode. Du kan også bruge klasser fra Microsoft .NET Framework, herunder `xref:System.Text.RegularExpressions`.  
   
-##  <a name="VisualBasicFunctions"></a> Funktioner i Visual Basic  
+##  <a name="visual-basic-functions"></a><a name="VisualBasicFunctions"></a> Funktioner i Visual Basic  
  Du kan bruge funktioner i Visual Basic til at håndtere de data, der vises i tekstfelter, eller der bruges til parametre, egenskaber eller andre områder af rapporten. Dette afsnit indeholder eksempler, der demonstrerer nogle af disse funktioner. Du kan finde flere oplysninger i [Medlemmer af kørselsbiblioteket i Visual Basic](https://go.microsoft.com/fwlink/?LinkId=198941) på MSDN.  
   
  .NET Framework indeholder mange muligheder for brugerdefinerede formater, f.eks. specifikke datoformater. Du kan finde flere oplysninger i [Formateringstyper](/dotnet/standard/base-types/formatting-types).  
@@ -56,7 +56,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
     = Round(1.3*5)/5  
     ```  
   
-###  <a name="DateFunctions"></a> Datofunktioner  
+###  <a name="date-functions"></a><a name="DateFunctions"></a> Datofunktioner  
   
 -   Funktionen **Today** leverer den aktuelle dato. Dette udtryk kan bruges i et tekstfelt til at vise datoen i rapporten eller i en parameter til at filtrere data baseret på den aktuelle dato.  
   
@@ -161,7 +161,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
 |For et år siden|`=DateSerial(Year(Parameters!TodaysDate.Value)-1,Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value))`|  
 |For to år siden|`=DateSerial(Year(Parameters!TodaysDate.Value)-2,Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value))`|  
   
-###  <a name="StringFunctions"></a> Strengfunktioner  
+###  <a name="string-functions"></a><a name="StringFunctions"></a> Strengfunktioner  
   
 -   Kombiner mere end et felt ved hjælp af sammenkædningsoperatorer og konstanter i Visual Basic. Følgende udtryk returnerer to felter på hvert sin separate linje i det samme tekstfelt:  
   
@@ -211,7 +211,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
     > [!NOTE]  
     >  Bekræft, at der ikke er nogen ekstra mellemrum i værdien af Fields!Phone.Value, og at den er af typen `xref:System.String`.  
   
-### <a name="lookup"></a>Lookup  
+### <a name="lookup"></a>Opslag  
   
 -   Ved at angive et nøglefelt kan du bruge funktionen **Lookup** til at hente en værdi fra et datasæt for en en-til-en-relation, f.eks. et nøgleværdipar. Følgende udtryk viser produktnavnet fra et datasæt ("Produkt"), så produkt-id'et matcher:  
   
@@ -227,7 +227,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
     =Join(LookupSet(Fields!ContactID.Value, Fields!PersonID.Value, Fields!PhoneNumber.Value, "PhoneList"),",")  
     ```  
   
-###  <a name="ConversionFunctions"></a> Konverteringsfunktioner  
+###  <a name="conversion-functions"></a><a name="ConversionFunctions"></a> Konverteringsfunktioner  
  Du kan bruge funktionerne i Visual Basic til at konvertere et felt fra én datatype til en anden datatype. Konverteringsfunktioner kan bruges til at konvertere standarddatatypen for et felt til den datatype, der er nødvendig til at foretage beregninger eller til at kombinere tekst.  
   
 -   Med følgende udtryk konverteres konstanten 500 til typen Decimal, så den kan sammenlignes med datatypen penge i Transact-SQL i feltet Værdi for et filterudtryk.  
@@ -242,7 +242,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
     =CStr(Parameters!MySelection.Count)  
     ```  
   
-###  <a name="DecisionFunctions"></a> Beslutningsfunktioner  
+###  <a name="decision-functions"></a><a name="DecisionFunctions"></a> Beslutningsfunktioner  
   
 -   Med funktionen **Iif** returneres én af to værdier, afhængigt af om udtrykket er sandt eller ej. I følgende udtryk bruges funktionen **Iif** til at returnere den booleske værdi **Sand**, hvis værdien af `LineTotal` overstiger 100. Ellers returneres **Falsk**:  
   
@@ -297,10 +297,10 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
   
     ```  
   
-##  <a name="ReportFunctions"></a> Rapportfunktioner  
+##  <a name="report-functions"></a><a name="ReportFunctions"></a> Rapportfunktioner  
  Du kan tilføje en reference til andre rapportfunktioner, der håndterer data i en rapport, i et udtryk. Dette afsnit indeholder eksempler på to af disse funktioner. 
   
-###  <a name="Sum"></a> Sum  
+###  <a name="sum"></a><a name="Sum"></a> Sum  
   
 -   Funktionen **Sum** kan sammenlægge værdierne i en gruppe eller et dataområde. Denne funktion kan være nyttig i en gruppes sidehoved eller sidefod. Med følgende udtryk vises summen af data i gruppen Ordre eller dataområdet:  
   
@@ -314,7 +314,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
     =Sum(IIF(Fields!State.Value = "Finished", 1, 0))  
     ```  
   
-###  <a name="RowNumber"></a> RowNumber  
+###  <a name="rownumber"></a><a name="RowNumber"></a> RowNumber  
   
 -   Når funktionen **RowNumber** bruges i et tekstfelt i et dataområde, vises rækkenummeret for hver forekomst af tekstfeltet, hvori udtrykket forekommer. Denne funktion kan være nyttig til at nummerere rækker i en tabel. Den kan også være nyttig i forbindelse med mere komplekse opgaver, f.eks. at levere sideskift baseret på antallet af rækker. Du kan finde flere oplysninger under [Sideskift](#PageBreaks) i dette emne.  
   
@@ -324,10 +324,10 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
     =RowNumber(Nothing)  
     ```  
   
-##  <a name="AppearanceofReportData"></a> Udseendet af rapportdata  
+##  <a name="appearance-of-report-data"></a><a name="AppearanceofReportData"></a> Udseendet af rapportdata  
  Du kan bruge udtryk til at ændre den måde, data vises på i en rapport. Du kan f.eks. vise værdierne af to felter i et enkelt tekstfelt, vise oplysninger om rapporten eller påvirke den måde, sideskift indsættes på i rapporten.  
   
-###  <a name="PageHeadersandFooters"></a> Sidehoveder og sidefødder  
+###  <a name="page-headers-and-footers"></a><a name="PageHeadersandFooters"></a> Sidehoveder og sidefødder  
  Når du designer en rapport, vil du måske vise navnet på rapporten og sidenummeret i rapportens sidefod. Brug følgende udtryk til at gøre det:  
   
 -   Følgende udtryk indeholder navnet på rapporten og det klokkeslæt, den blev kørt på. Det kan placeres i et tekstfelt i rapportens sidefod eller i brødteksten i rapporten. Klokkeslættet er formateret med formateringsstrengen fra .NET Framework til det korte datoformat:  
@@ -367,7 +367,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
 > [!NOTE]  
 >  Du kan kun referere til ét rapportelement pr. udtryk i et sidehoved eller en sidefod. Du kan også referere til navnet på tekstfeltet i udtryk i sidehovedet og sidefoden, men ikke til det faktiske dataudtryk i tekstfeltet.  
   
-###  <a name="PageBreaks"></a> Sideskift  
+###  <a name="page-breaks"></a><a name="PageBreaks"></a> Sideskift  
  I nogle rapporter vil du måske placere et sideskift efter et angivet antal rækker i stedet for eller måske ud over på grupper eller rapportelementer. Det gør du ved at oprette en gruppe, der indeholder de grupper eller detaljerede poster, du vil have. Føj et sideskift til gruppen, og tilføj derefter et gruppeudtryk for at gruppere efter et angivet antal rækker.  
   
 -   Når følgende udtryk placeres i gruppeudtrykket, tildeles et nummer til hvert sæt af 25 rækker. Når et sideskift er defineret for gruppen, resulterer dette udtryk i et sideskift for 25. række.  
@@ -382,10 +382,10 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
     =Ceiling(RowNumber(Nothing)/Parameters!RowsPerPage.Value)  
     ```  
   
-##  <a name="Properties"></a> Egenskaber  
+##  <a name="properties"></a><a name="Properties"></a> Egenskaber  
  Udtryk bruges ikke kun til at vise data i tekstfelter. De kan også bruges til at ændre den måde, egenskaber anvendes på i forhold til rapportelementer. Du kan ændre typografioplysningerne for et rapportelement eller ændre dets synlighed.  
   
-###  <a name="Formatting"></a> Formatering  
+###  <a name="formatting"></a><a name="Formatting"></a> Formatering  
   
 -   Når følgende udtryk bruges i egenskaben Color for et tekstfelt, ændres farven på teksten afhængigt af værdien af feltet `Profit`:  
   
@@ -415,7 +415,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
 ### <a name="chart-colors"></a>Diagramfarver  
  Du kan bruge brugerdefineret kode til at styre den rækkefølge, som farver knyttes til datapunktværdier, for at angive farver for et diagram af typen Figur. Dette hjælper dig med at bruge ensartede farver for flere diagrammer, der har de samme kategorigrupper. 
   
-###  <a name="Visibility"></a> Synlighed  
+###  <a name="visibility"></a><a name="Visibility"></a> Synlighed  
  Du kan vise og skjule elementer i en rapport ved hjælp af egenskaber for synlighed for rapportelementet. I et dataområde, f.eks. en tabel, kan du starte med skjule detaljerækker på baggrund af værdien i et udtryk.  
   
 -   Når følgende udtryk bruges til indledende synlighed for detaljerækker i en gruppe, vises detaljerækkerne for al salg, der overstiger 90 % i feltet `PctQuota`:  
@@ -436,7 +436,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
     =IIF(Fields!Column_1.IsMissing, true, false)  
     ```  
   
-###  <a name="Hyperlinks"></a> URL-adresser  
+###  <a name="urls"></a><a name="Hyperlinks"></a> URL-adresser  
  Du kan tilpasse URL-adresser ved hjælp af rapportdata samt betinget styre, om URL-adresser tilføjes som en handling for et tekstfelt.  
   
 -   Når følgende udtryk bruges som en handling for et tekstfelt, genereres der en brugerdefineret URL-adresse, som angiver feltet `EmployeeID` i datasættet som en URL-parameter.  
@@ -451,10 +451,10 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
     =IIF(Parameters!IncludeURLs.Value,"https://adventure-works.com/productcatalog",Nothing)  
     ```  
   
-##  <a name="ReportData"></a> Rapportdata  
+##  <a name="report-data"></a><a name="ReportData"></a> Rapportdata  
  Udtryk kan bruges til at håndtere data, der bruges i rapporten. Du kan referere til parametre og andre rapportoplysninger. Du kan tilmed ændre den forespørgsel, der bruges til at hente dataene til rapporten.  
   
-###  <a name="Parameters"></a> Parametre  
+###  <a name="parameters"></a><a name="Parameters"></a> Parametre  
  Du kan bruge udtryk i en parameter til at variere standardværdien for parameteren. Du kan f.eks. bruge en parameter til at filtrere data for en bestemt bruger på baggrund af det bruger-id, der bruges til at køre rapporten.  
   
 -   Når følgende udtryk bruges som standardværdien for en parameter, indsamles bruger-id'et for den person, der kører rapporten:  
@@ -475,7 +475,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
     =Fields(Parameters!ParameterField.Value).Value  
     ```  
   
-##  <a name="CustomCode"></a> Brugerdefineret kode  
+##  <a name="custom-code"></a><a name="CustomCode"></a> Brugerdefineret kode  
  Du kan bruge brugerdefineret kode integreret i en rapport. 
   
 ### <a name="using-group-variables-for-custom-aggregation"></a>Brug af gruppevariabler til brugerdefineret aggregering  
@@ -514,7 +514,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
   
      Dette hjælper med at undgå kørselsundtagelser. Du kan nu bruge et udtryk som `=IIF(Me.Value < 0, "red", "black")` i egenskaben **Color** for tekstfeltet til at vise tekst betinget baseret på, om værdierne er større eller mindre end 0.  
   
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
   

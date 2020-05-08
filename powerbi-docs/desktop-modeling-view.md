@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: b9df4398c410f52e3d5cdd51a99a40de107f5867
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75760876"
 ---
 # <a name="work-with-modeling-view-in-power-bi-desktop"></a>Arbejde med udformningsvisning i Power BI Desktop
@@ -50,7 +50,7 @@ Du kan f.eks. ændre [lagringstilstanden](desktop-storage-mode.md) for flere tab
 ![Vælg flere tabeller ved at holde CTRL nede, og angiv derefter fælles egenskaber på tværs af alle valgte tabeller](media/desktop-modeling-view/modeling-view_06.png)
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 I følgende artikler beskrives flere detaljer om datamodeller og DirectQuery.
 
