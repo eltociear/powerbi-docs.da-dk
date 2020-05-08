@@ -10,10 +10,10 @@ ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 16d58090a9a7c6e64fbf2ace23fdf342d1768a30
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73881092"
 ---
 # <a name="make-excel-data-work-well-with-qa-in-power-bi"></a>Få dine Excel-data til at fungere godt med Spørgsmål og svar i Power BI
@@ -42,7 +42,7 @@ Her er nogle tip til at få mest ud af Spørgsmål og svar i din projektmappe.
 
 * Åbn datasættet i Power BI Desktop, og opret nye kolonner, opret beregnede målinger, sammenkæd felter for at oprette entydige værdier, klassificer data efter type (f.eks. datoer, strenge, geografi, billeder, URL-adresser) m.m.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Spørgsmål og svar til forbrugere](consumer/end-user-q-and-a.md)  
 - [Brug Spørgsmål og svar på dashboards og i rapporter](power-bi-tutorial-q-and-a.md)

@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: reference
 ms.date: 05/25/2018
 ms.openlocfilehash: e7f7a94eb94054510046e5e873281cf68eb3bf3d
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79079364"
 ---
 # <a name="power-bi-rest-api-reference"></a>Reference til Power BI REST-API
@@ -20,7 +20,7 @@ ms.locfileid: "79079364"
 Power BI er en cloudbaseret tjeneste, som du kan bruge til at oprette brugerdefinerede dashboardprogrammer. REST API'en til Power BI er en REST-baseret API, der giver programmatisk adgang til alle artefakter, som tjenesten bruger, f.eks.:
 * Datasæt
 * Dashboards
-* Rapporter
+* Reports
 * Gateways
 
 Der er følgende handlinger til Power BI REST API'en:

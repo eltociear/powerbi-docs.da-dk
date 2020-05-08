@@ -10,10 +10,10 @@ ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 3936ebfedb1e4e51fe93b948a49de0b9fb133c52
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73881282"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Fjern din forbindelse til en Power BI-organisationsindholdspakke
@@ -32,7 +32,7 @@ Hvis du vil fjerne en indholdspakke, skal du fjerne dens datasæt.
 
 Hvis du fjerner datasættet, fjernes også alle tilknyttede rapporter og dashboards. Når du fjerner forbindelsen til indholdspakken, slettes indholdspakken imidlertid ikke fra din organisations AppSource.  Du kan altid vende tilbage til AppSource og føje indholdspakken til dit arbejdsområde igen. Du kan kun [slette en indholdspakke fra AppSource](service-organizational-content-pack-manage-update-delete.md), hvis du har oprettet den.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 * [Introduktion til organisationsindholdspakker](service-organizational-content-pack-introduction.md) 
 * [Opret og distribuer en app i Power BI](service-create-distribute-apps.md) 
 * [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)  

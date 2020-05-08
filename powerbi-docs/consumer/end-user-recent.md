@@ -11,10 +11,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
 ms.openlocfilehash: f59d83823ee14648cb8c3d3fe740074d057d3425
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114366"
 ---
 # <a name="recent-content-in-the-power-bi-service"></a>**Seneste** indhold i Power BI-tjenesten
@@ -52,7 +52,7 @@ De handlinger, der er tilgængelige for dig, afhænger af de indstillinger, *des
     ![sortér alt senest indhold](./media/end-user-recent/power-bi-recent-sort.png)
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 [Power BI-tjenesteapps](end-user-apps.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

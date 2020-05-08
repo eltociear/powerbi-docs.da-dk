@@ -10,13 +10,13 @@ ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 516d3a682b669400a015aaec101c7e79c14dbb44
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76889345"
 ---
-# <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurer indstillinger for dataflow for arbejdsområder (prøveversion)
+# <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurer indstillinger for dataflow for arbejdsområde (eksempelvisning)
 
 Med Power BI og dataflow kan du gemme definitionsfilen og datafiler for et dataflow for et arbejdsområde på din Azure Data Lake Storage Gen2-konto. Administratorer af arbejdsområder kan konfigurere Power BI til dette, og i denne artikel gennemgås de trin, der er nødvendige for at komme dertil. 
 
@@ -96,34 +96,34 @@ Arbejdsområderne Power BI Pro, Premium og Embedded:
 
 På følgende liste er der beskrevet nogle yderligere overvejelser:
 
-* Når lagringsplaceringen for et dataflow er konfigureret, kan den ikke ændres.
+* Når der er konfigureret en placering for dataflowlageret, kan den ikke ændres.
 * Det er kun ejeren af et dataflow, der er gemt i Azure Data Lake Storage Gen2, som kan få adgang til dataene.
 * Datakilder i det lokale miljø i delte Power BI-kapaciteter understøttes ikke i dataflow, der er gemt i din organisations Azure Data Lake Storage Gen2.
 
-**Power BI Desktop**-kunder kan ikke få adgang til dataflow, der er gemt på Azure Data Lake Storage Gen2-kontoen, medmindre de er ejeren af dataflowet. Overvej følgende situation:
+**Power BI Desktop**-kunder kan ikke få adgang til dataflow, der er gemt på Azure Data Lake Storage Gen2-kontoen, medmindre de er ejeren af dataflowet. Se følgende eksempel:
 
 1.  Anna opretter et nyt arbejdsområde og konfigurerer det til at gemme dataflow i organisationens datasø.
-2.  Ben, der også er medlem af det arbejdsområde, Anna har oprettet, vil gerne bruge Power BI Desktop og dataflowconnectoren til at hente data fra det dataflow, Anna har oprettet.
+2.  Ben, der også er medlem af det arbejdsområde, Anna har oprettet, ønsker at bruge Power BI Desktop og dataflowconnectoren til at hente data fra det dataflow, Anna har oprettet.
 3.  Ben får vist en fejl, da han ikke er føjet til dataflowets CDM-mappe som en godkendt bruger i datasøen.
 
     ![Fejl under forsøg på at bruge dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
-Denne artikel indeholdt en vejledning i, hvordan du konfigurerer et arbejdsområdelager til dataflow. Du kan finde flere oplysninger i følgende artikler:
+I denne artikel får du vejledning i, hvordan du konfigurerer arbejdsområdelager til dataflow. Du kan finde flere oplysninger i følgende artikler:
 
 Du kan finde flere oplysninger om dataflow, CDM og Azure Data Lake Storage Gen2 i følgende artikler:
 
 * [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md)
 * [Føj en CDM-mappe til Power BI som et dataflow (prøveversion)](service-dataflows-add-cdm-folder.md)
-* [Slut Azure Data Lake Storage Gen2 til et dataflowlager (prøveversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
+* [Opret forbindelse til Azure Data Lake Storage Gen2 til dataflowlager (eksempelvisning)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 Du kan finde generelle oplysninger om dataflow i disse artikler:
 
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Brug beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
-* [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
+* [Brug af beregnede enheder i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
+* [Brug af dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
 * [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
 
 Du kan finde flere oplysninger om Azure-lager i disse artikler:
@@ -135,6 +135,6 @@ Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:
 
 * [Common Data Model – oversigt](https://docs.microsoft.com/powerapps/common-data-model/overview)
 * [CDM-mapper](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [Fildefinition af CDM-model](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Definition af CDM-modelfil](https://go.microsoft.com/fwlink/?linkid=2045521)
 
 Du kan altid prøve [at stille spørgsmål i Power BI-community'et](https://community.powerbi.com/).

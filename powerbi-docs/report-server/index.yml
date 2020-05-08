@@ -13,10 +13,10 @@ metadata:
   ms.author: maggies
   ms.date: 03/03/2020
   ms.openlocfilehash: f727b8832c29c4bfca448a03898620c183eb13a2
-  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 03/07/2020
+  ms.lasthandoff: 05/05/2020
   ms.locfileid: "78924615"
 landingContent:
 - title: Om Power BI-rapportserver
@@ -29,9 +29,9 @@ landingContent:
     links:
     - text: Sammenligning af Power BI-rapportserveren og -tjenesten
       url: compare-report-server-service.md
-    - text: Nyheder i Power BI-rapportserver
+    - text: Nyheder i Power BI Report Server
       url: whats-new.md
-- title: Kom i gang
+- title: Kom godt i gang
   linkLists:
   - linkListType: tutorial
     links:

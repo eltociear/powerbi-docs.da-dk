@@ -10,10 +10,10 @@ ms.date: 03/02/2020
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 72694ea771950b4a12427e0a0696e221fbe993bf
-ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78237839"
 ---
 # <a name="manage-your-workspace-in-power-bi-and-office-365"></a>Administrer dit arbejdsområde i Power BI og Office 365
@@ -82,7 +82,7 @@ Når du distribuerer din app fra arbejdsområdet, bliver det billede, du tilføj
 
 1. Vælg **Gem** eller **Fjern**.
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 * [Publicer en app i Power BI](service-create-distribute-apps.md)
 

@@ -9,10 +9,10 @@ ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
 ms.openlocfilehash: c342a7472666ee50b7213e7d933ad36da85ce7f6
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76975027"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Opret forbindelse til de tjenester, du bruger med Power BI
@@ -29,7 +29,7 @@ Når du har installeret appen, kan du få vist dashboardet og rapporterne i appe
 
 ![Google Analytics-app i Power BI-mobilappen](media/service-connect-to-services/power-bi-service-mobile-app-240.png)
 
-## <a name="get-started"></a>Kom i gang
+## <a name="get-started"></a>Kom godt i gang
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
 ## <a name="edit-the-dashboard-and-reports"></a>Rediger dashboardet og rapporterne
@@ -55,7 +55,7 @@ Hvis du vil have flere oplysninger om, hvordan du opretter forbindelse til beste
 **Tomme felter**  
 Når Power BI opretter forbindelse til tjenesten første gang, kan du evt. se et tomt sæt felter på dashboardet. Hvis du stadig kan se et tomt dashboard efter to timer, er der sandsynligvis ikke oprettet forbindelse. Hvis du ikke får vist en fejlmeddelelse, der indeholder oplysninger om, hvordan du løser problemet, skal du oprette en supportanmodning.
 
-* Vælg ikonet med spørgsmålstegnet (**?**) i øverste højre hjørne > **Få hjælp**.
+* Vælg ikonet med spørgsmålstegnet ( **?** ) i øverste højre hjørne > **Få hjælp**.
   
     ![Få hjælp-ikonet](media/service-connect-to-services/power-bi-service-get-help.png)
 
@@ -70,5 +70,5 @@ Hvis du er interesseret i at oprette skabelonprogrammer, som du selv distribuere
 ## <a name="next-steps"></a>De næste trin
 * [Distribuer apps til dine kolleger](service-create-distribute-apps.md)
 * [Opret nye arbejdsområder i Power BI](service-create-the-new-workspaces.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+* Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

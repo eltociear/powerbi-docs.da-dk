@@ -9,10 +9,10 @@ ms.assetid: 76d3ac86-650c-46fe-8086-8b3edcea3882
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 96c62fec55f87a31970b624a79314656ced0c159
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921119"
 ---
 # <a name="expressions-in-power-bi-report-builder"></a>Udtryk i Power BI Report Builder
@@ -30,7 +30,7 @@ ms.locfileid: "78921119"
   
  Hvis du vil angive udtryk manuelt, skal du vælge et element i designområdet og bruge genvejsmenuer og dialogbokse til at angive egenskaberne for elementet. Når du ser knappen ***(fx)*** eller værdien `<Expression>` på en rulleliste, ved du, at du kan angive egenskaben til et udtryk. 
   
-##  <a name="Types"></a> Forståelse af simple og komplekse udtryk  
+##  <a name="understanding-simple-and-complex-expressions"></a><a name="Types"></a> Forståelse af simple og komplekse udtryk  
  Udtryk begynder med et lighedstegn (=) og skrives i Microsoft Visual Basic. Udtryk kan indeholde en kombination af konstanter, operatorer og referencer til indbyggede værdier (felter, samlinger og funktioner) samt til ekstern eller brugerdefineret kode.  
   
  Du kan bruge udtryk til at angive værdien for mange egenskaber for rapportelementer. De mest almindelige egenskaber er værdier for tekstfelter og pladsholdertekst. Hvis et tekstfelt kun indeholder ét udtryk, er udtrykket typisk værdien af egenskaben for tekstfeltet. Hvis et tekstfelt indeholder flere udtryk, er hvert udtryk værdien af pladsholdertekst i tekstfeltet.  
@@ -50,7 +50,7 @@ ms.locfileid: "78921119"
 ![Format af eksempel på udtryk i Report Builder](media/report-builder-expressions/report-builder-expression-sample-values-format.png)  
 
 
-## <a name="DisplayText"></a> Forståelse af præfikssymboler i simple udtryk  
+## <a name="understanding-prefix-symbols-in-simple-expressions"></a><a name="DisplayText"></a> Forståelse af præfikssymboler i simple udtryk  
 
 Der bruges symboler i simple udtryk til at indikere, om referencen er til et felt, en parameter, en indbygget samling eller samlingen ReportItems. I følgende tabel kan du se eksempler på vist tekst og udtryk i tekst:  
   
@@ -61,7 +61,7 @@ Der bruges symboler i simple udtryk til at indikere, om referencen er til et fel
 |Indbyggede felter|`[&ReportName]`|`=Globals!ReportName.Value`|  
 |Bogstavelig værdi af tegn, der bruges til vist tekst|`\[Sales\]`|`[Sales]`|  
   
-##  <a name="References"></a> Skrivning af komplekse udtryk  
+##  <a name="writing-complex-expressions"></a><a name="References"></a> Skrivning af komplekse udtryk  
  Udtryk kan indeholde referencer til funktioner, operatorer, konstanter, felter, parametre, elementer fra indbyggede samlinger og integreret brugerdefineret kode eller brugerdefinerede assemblies.  
   
  I følgende tabel kan du se de referencetyper, du kan inkludere i et udtryk:  
@@ -74,7 +74,7 @@ Der bruges symboler i simple udtryk til at indikere, om referencen er til et fel
 |Indbyggede rapport- og aggregeringsfunktioner|Beskriver de indbyggede funktioner, f.eks. `Sum` eller `Previous`, du kan få adgang til fra et udtryk.|`=Previous(Sum(Fields!Sales.Value))`|  
 |Referencer til brugerdefineret kode og assembly i udtryk i Report Builder |Beskriver, hvordan du kan få adgang til de indbyggede CLR-klasser `xref:System.Math` og `xref:System.Convert`, andre CLR-klasser, biblioteksfunktioner for kørselstid i Visual Basic eller metoder fra en ekstern assembly.<br /><br /> Beskriver, hvordan du kan få adgang til brugerdefineret kode, der er integreret i din rapport, eller som du kompilerer og installerer som en brugerdefineret assembly på både rapportklienten og rapportserveren.|`=Sum(Fields!Sales.Value)`<br /><br /> `=CDate(Fields!SalesDate.Value)`<br /><br /> `=DateAdd("d",3,Fields!BirthDate.Value)`<br /><br /> `=Code.ToUSD(Fields!StandardCost.Value)`|  
    
-##  <a name="Valid"></a> Validering af udtryk  
+##  <a name="validating-expressions"></a><a name="Valid"></a> Validering af udtryk  
  Når du opretter et udtryk for en bestemt egenskab for et rapportelement, afhænger de referencer, du kan inkludere i et udtryk, af de værdier, som egenskaben for rapportelementet kan acceptere, og af det omfang, som egenskaben evalueres i. Eksempel:  
   
 -   Udtrykket [Sum] beregner som standard summen af data, der er inden for omfanget, på det tidspunkt, hvor udtrykket evalueres. For en celle i en tabel afhænger omfanget af medlemskaber af række- og kolonnegrupper. 
@@ -83,6 +83,6 @@ Der bruges symboler i simple udtryk til at indikere, om referencen er til et fel
   
 -   Syntaksen af udtrykket valideres på designtidspunktet. Validering af omfanget af et udtryk forekommer, når du publicerer rapporten. I forbindelse med validering, der afhænger af de faktiske data, kan der kun registreres fejl på kørselstidspunktet. Nogle af disse udtryk producerer #Fejl som en fejlmeddelelse i den gengivne rapport. 
 
-## <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>De næste trin
 
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
