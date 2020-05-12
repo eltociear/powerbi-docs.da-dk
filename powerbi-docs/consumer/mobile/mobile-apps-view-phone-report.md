@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/11/2020
+ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: 91fc7e9e3664f21d50b475f316a9a6c64875fab4
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.openlocfilehash: eba723e4e75c7ce051921a907d2a3d0aa9536833
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80802116"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841773"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Få vist Power BI-rapporter, der er optimeret til din telefon
 
@@ -131,7 +131,7 @@ Rapportforfattere kan [definere detaljeadgang](https://docs.microsoft.com/power-
 
 
 ## <a name="next-steps"></a>Næste trin
-* [Opret rapporter, der er optimeret til Power BI-telefonapps](../../desktop-create-phone-report.md)
+* [Opret rapporter, der optimeret til Power BI-mobilapps](../../desktop-create-phone-report.md)
 * [Opret en telefonvisning af et dashboard i Power BI](../../service-create-dashboard-mobile-phone-view.md)
 * [Opret dynamiske visualiseringer, der er optimeret til alle størrelser](../../visuals/desktop-create-responsive-visuals.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

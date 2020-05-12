@@ -3,21 +3,23 @@ title: Radiale målerdiagrammer i Power BI
 description: Radiale målerdiagrammer i Power BI
 author: mihart
 ms.reviewer: ''
-featuredvideoid: xmja6Epqa
+featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e783b4357d4db39e09aabbb1df39e1bb5c84532e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7c6c4dbe9f17464483f5b44542ffbe04f715d4bd
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73880894"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866926"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Radiale målerdiagrammer i Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -27,12 +29,8 @@ Et radialt målerdiagram har en cirkulær bue og viser en enkelt værdis status 
 
 I dette eksempel er du en bilhandler, der sporer det gennemsnitlige salg pr. måned for salgsteamet. Nålen repræsenterer et salgsmål på 140 biler. Det mindst mulige gennemsnitssalg er 0, og maksimum er 200.  Den blå farve viser, at teamet i øjeblikket er på et salg på 120 i denne måned. Der er heldigvis stadig en uge til at nå målet.
 
-Se med, når Will viser, hvordan du opretter visualiseringer med en enkelt måling: målere, kort og KPI'er.
-   > [!NOTE]
-   > I denne video bruges en ældre version af Power BI Desktop.
-   > 
-   > 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+> [!NOTE]
+> Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet.
 
 ## <a name="when-to-use-a-radial-gauge"></a>Situationer, hvor du kan bruge en radial måler
 

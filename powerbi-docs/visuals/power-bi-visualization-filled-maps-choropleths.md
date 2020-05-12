@@ -8,16 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/05/2019
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a2ac2820c7beb3a82650716896ddd36b79c82e07
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ba344d66f967d502d9de8adef7defcae434fb3ef
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79436059"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865454"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Opret og brug udfyldte kort (choropleth-kort) i Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -55,15 +57,8 @@ I dette selvstudium bruges [PBIX-filen med eksemplet til Salg og marketing](http
 
 1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
 
-
-## <a name="create-a-basic-filled-map"></a>Opret et grundlæggende udfyldt kort
-I denne video opretter Kim et grundlæggende kort og konverterer det til et udfyldt kort.
-   > [!NOTE]
-   > I denne video bruges en ældre version af Power BI Desktop.
-   > 
-   > 
-
-> [VIDEO https://www.youtube.com/embed/ajTPGNpthcg ]
+> [!NOTE]
+> Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet.    
 
 ### <a name="create-a-filled-map"></a>Opret et kartogram
 1. Fra ruden Felter skal du vælge feltet **Geo** \> **State**.    

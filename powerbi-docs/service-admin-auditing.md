@@ -10,12 +10,12 @@ ms.date: 01/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 1102022edca3afad2a658facdf43da7b8bca547d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c2a8372a5c31e41b49746ebbea3ba4801eeac493
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80113778"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866650"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spor brugeraktiviteter i Power BI
 
@@ -243,7 +243,7 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 | Power BI-gruppemedlemmer er tilføjet                      | AddGroupMembers                             |                                          |
 | Administratoren har knyttet dataflowlagerkontoen til lejer | AdminAttachedDataflowStorageAccountToTenant | Anvendes ikke i øjeblikket                       |
 | Analyseret Power BI-datasæt                         | AnalyzedByExternalApplication               |                                          |
-| Power BI-rapport er analyseret                          | AnalyzeInExcel                              |                                          |
+| Power BI-rapport er analyseret                          | AnalyzeInExcel                              | Genereres, når brugerne interagerer med tjenesten. Der oprettes ikke en overvågningshændelse ved download af filen `*.odc`                                         |
 | Tilknyttet lagerkonto for dataflow                 | AttachedDataflowStorageAccount              |                                          |
 | Bundne Power BI-datasæt til gateway                | BindToGateway                               |                                          |
 | Annulleret opdatering af dataflow                        | CancelDataflowRefresh                       |                                          |

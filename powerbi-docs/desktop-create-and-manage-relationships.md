@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 6f71cf9b8325441fe3827a259daf3bcbe15765a5
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 373ad0d230b3d9d7b9d35909d086b0611637f0e2
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76709940"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866328"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Opret og administrer relationer i Power BI Desktop
 Når du importerer flere tabeller, er det muligt, at du skal udføre analyser ved hjælp af data fra alle disse tabeller. Der skal være relationer mellem disse tabeller, før du kan beregne præcise resultater og vise korrekte oplysninger i dine rapporter. I Power BI Desktop er det nemt at oprette disse relationer. I de fleste tilfælde behøver du faktisk ikke at foretage dig noget – funktionen Registrer automatisk gør det for dig. Men nogle gange skal du muligvis selv oprette relationer, eller du skal muligvis foretage ændringer i en relation. I begge tilfælde er det vigtigt at forstå relationer i Power BI Desktop, og hvordan du opretter og redigerer dem.
@@ -271,7 +271,7 @@ Hvis du angiver tværgående filtrering i én retning, og du opretter en rapport
 
  ![Tværgående filterretning](media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png)
 
-Filterspecifikationen overføres fra **CompanyProject** til **CompanyEmployee** (som vist på følgende billede), men den kan ikke overføres til **CompanyEmployee**. 
+Filterspecifikationen overføres fra **CompanyProject** til **ProjectHours** (som vist på følgende billede), men den overføres ikke til **CompanyEmployee**. 
 
  ![Eksempel på tværgående filtrering](media/desktop-create-and-manage-relationships/candmrel_singledircrossfiltering.png)
 

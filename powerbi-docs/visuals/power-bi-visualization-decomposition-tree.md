@@ -8,16 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 01/10/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8aa392b69d21905901f8304c577b87b00ed19057
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f7c907d31d4d58a9f39ad982e7d94f3f5ba3f118
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75885281"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865562"
 ---
 # <a name="create-and-view-decomposition-tree-visuals-in-power-bi-preview"></a>Opret og få vist fordelingstrævisualiseringer i Power BI (eksempelvisning)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Fordelingstrævisual'et i Power BI giver dig mulighed for at visualisere data på tværs af flere dimensioner. Den samler automatisk data og giver dig mulighed for at foretage detailudledning i dine dimensioner i vilkårlig rækkefølge. Det er også en AI-visualisering (kunstig intelligens), så du kan bede den om at finde den næste dimension, så du kan foretage detailudledning på baggrund af bestemte kriterier. Det gør det til et værdifuldt værktøj til ad hoc-udforskning og udførelse af rodårsags analyser.
@@ -29,6 +32,8 @@ I dette selvstudium bruges der to eksempler:
 - Et scenario for forsyningskæden, der analyserer hvor stor en procentdel af produkterne, en virksomhed har i restlager (ikke på lager).  
 - Et salgsscenarie, der analyserer salg af videospil i efter mange faktorer, f. eks. spilgenre og udgiver.
 
+> [!NOTE]
+> Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet.    
 
 ## <a name="get-started"></a>Kom i gang
 Vælg ikonet for fordelingstræet i ruden Visualiseringer.

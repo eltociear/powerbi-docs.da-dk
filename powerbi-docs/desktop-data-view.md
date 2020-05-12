@@ -6,19 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: a82465adb5b0c7fe8be0e6e724c5eda1bfcf7ec0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1fee95bbfb790a1c61d82131579c8fb43980ca05
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79206947"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866719"
 ---
 # <a name="work-with-data-view-in-power-bi-desktop"></a>Arbejde med Datavisning i Power BI Desktop
 
 Med *Datavisning* kan du få hjælp til at undersøge, udforske og forstå data i din *Power BI Desktop*-model. Det er forskelligt fra den måde, du får vist tabeller, kolonner og data på i *Power-forespørgselseditor*. Med Datavisning får du vist dine data, *når* de er blevet indlæst i modellen.
+
+> [!NOTE]
+> Da der i Datavisning vises data efter, hvornår de er indlæst i modellen, er ikonet Datavisning ikke synligt, hvis alle datakilder er baseret på DirectQuery. 
 
 Når du udformer dine data, har du nogle gange brug for at se, hvad der rent faktisk findes i en tabel eller kolonne uden at skulle oprette en visualisering på rapportcanvasset. Du vil muligvis gerne se helt ned på rækkeniveauet. Denne mulighed er især praktisk, når du opretter målinger og beregnede kolonner, eller når du har brug for at identificere en datatype eller datakategori.
 
@@ -48,3 +51,14 @@ Du kan filtrere de enkelte værdier, eller du kan bruge avanceret filtrering på
 
 > [!NOTE]
 > Når der oprettes en Power BI-model med en anden landestandard end den, du aktuelt anvender i brugergrænsefladen, vises søgefeltet ikke i brugergrænsefladen for Datavisning for andet end tekstfelter. Dette gælder f.eks. for en model, der er oprettet på engelsk (USA), som du får vist på spansk.
+
+
+## <a name="next-steps"></a>Næste trin
+
+Du kan gøre mange forskellige ting med Power BI Desktop. Du kan finde flere oplysninger om funktionerne i følgende ressourcer:
+
+* [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
+* [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)
+* [Datatyper i Power BI Desktop](desktop-data-types.md)
+* [Udform og kombiner data med Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Almindelige forespørgselsopgaver i Power BI Desktop](desktop-common-query-tasks.md)

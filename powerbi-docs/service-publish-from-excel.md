@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e503d2c68b4b726ab44c3bec0fad7001da33e184
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ca3e954f64665798c439fba47c3135e93fe51ac0
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80329625"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866788"
 ---
 # <a name="publish-to-power-bi-from-microsoft-excel"></a>Publicer i Power BI fra Microsoft Excel
 Med Microsoft Excel 2016 og nyere kan du publicere dine Excel-projektmapper direkte i dit [Power BI](https://powerbi.microsoft.com)-arbejdsområde, hvor du kan oprette meget interaktive rapporter og dashboards, der er baseret på data i din projektmappe. Derefter kan du dele din indsigt med andre i organisationen.
@@ -42,7 +42,7 @@ Excel understøtter publicering af lokale Excel-filer. De behøver ikke at blive
 > Du kan kun publicere lokale filer, hvis du bruger Excel 2016 (eller nyere) sammen med et Office 365-abonnement. Separate Excel 2016-installationer kan publiceres til Power BI, men kun når projektmappen gemmes i OneDrive for Business eller SharePoint Online.
 > 
 
-Når du vælger **Publicer**, kan du vælge det arbejdsområde, du vil publicere til. Arbejdsområdet kan være dit personlige arbejdsområde eller et gruppearbejdsområde, du har adgang til, som vist på følgende billede.
+Når du vælger **Publicer**, kan du vælge det arbejdsområde, du vil publicere til. Hvis din Excel-fil er placeret på OneDrive for Business, kan du kun publicere til dit *Mit arbejdsområde*. Hvis din Excel-fil er placeret på et lokalt drev, kan du publicere til *Mit arbejdsområde* eller et delt arbejdsområde, som du har adgang til.
 
 ![Publicer i Power BI](media/service-publish-from-excel/pbi_choose_workspace.png)
 
@@ -90,7 +90,7 @@ Når du er færdig, kan du gå til Power BI direkte fra Excel.
 
 ![gå til Power BI](media/service-publish-from-excel/pbi_gotopbi.png)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 [Excel-data i Power BI](service-excel-workbook-files.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

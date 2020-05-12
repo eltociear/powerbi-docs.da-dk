@@ -10,10 +10,10 @@ ms.topic: troubleshooting
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
 ms.openlocfilehash: 73e2c923500a2d78072a711bc7662a5923811bba
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74699331"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Foretag fejlfinding af gateways – Power BI
@@ -230,7 +230,7 @@ Når du bruger gateway'en til en planlagt opdatering, kan **Opdateringshistorik*
 
     ![Sådan vælger du en planlagt opdatering](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 
-2. I **Indstillinger for...** &gt; **Planlæg opdatering**, vælg **Opdateringshistorik**.
+2. I **Indstillinger for...** &gt; **Planlæg opdatering** skal du vælge **Opdater historik**.
 
     ![Vælg opdateringshistorik](media/service-gateway-onprem-tshoot/scheduled-refresh-2.png)
 

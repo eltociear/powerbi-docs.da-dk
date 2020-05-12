@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 93cb384c06fc78f8d006aed02aef323bf3a72d31
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c2e68b894c7f3e259fd2236d655d562257383433
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81006307"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866558"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicer en app i Power BI
 
@@ -63,8 +63,8 @@ Når dashboards og rapporter i dit arbejdsområde er klar, skal du vælge, hvilk
 
 5. Under **Tilladelser** skal du bestemme, hvem der har adgang til appen, og hvad de kan gøre med den. 
 
-    - I [klassiske arbejdsområder](service-create-workspaces.md): alle i din organisation, bestemte personer eller ADD-sikkerhedsgrupper (Azure Active Directory).
-    - I [arbejdsområder med den nye oplevelse](service-create-the-new-workspaces.md): bestemte personer, AAD-sikkerhedsgrupper og -distributionslister samt Office 365 Grupper. Alle brugere af arbejdsområdet får automatisk adgang til appen for arbejdsområdet.
+    - I [klassiske arbejdsområder](service-create-workspaces.md): alle i din organisation, bestemte personer eller Azure AD-sikkerhedsgrupper (Azure Active Directory).
+    - I [arbejdsområder med den nye oplevelse](service-create-the-new-workspaces.md): bestemte personer, Azure AD-sikkerhedsgrupper og -distributionslister samt Office 365 Grupper. Alle brugere af arbejdsområdet får automatisk adgang til appen for arbejdsområdet.
     - Du kan give brugere af appen tilladelse til at oprette forbindelse til appens underliggende datasæt ved hjælp af tilladelsen Opret. De får vist disse datasæt, når de søger efter delte datasæt. Læs mere om [at give brugerne mulighed for at oprette forbindelse til appens datasæt](#allow-users-to-connect-to-datasets) i denne artikel.
     - Brugere med tilladelse til at oprette kan også have tilladelse til at kopiere rapporter fra denne app til et andet arbejdsområde. Læs mere om at [give brugere mulighed for at kopiere rapporter i appen](#allow-users-to-copy-reports) i denne artikel.
     

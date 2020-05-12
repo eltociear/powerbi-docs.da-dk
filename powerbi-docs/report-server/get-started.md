@@ -4,17 +4,17 @@ description: Få et overblik over Power BI-rapportserveren for at forstå, hvord
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/22/2019
+ms.date: 04/29/2020
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 26593f4869d6b8d2c1c206a8bedd3c0d214581b3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3e01bd0d7314cba1eb46dacff01b350c6685a6e9
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73859547"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613578"
 ---
 # <a name="what-is-power-bi-report-server"></a>Hvad er Power BI-rapportserveren?
 
@@ -23,7 +23,7 @@ Power BI-rapportserveren er en rapportserver med en webportal i det lokale milj�
 ![Webportalen til Power BI-rapportserver](media/get-started/power-bi-report-server-overview.png)
 
 ## <a name="comparing-power-bi-report-server"></a>Sammenlign Power BI-rapportserveren 
-Power BI-rapportserveren ligner både SQL Server Reporting Services og Power BI-onlinetjenesten, men på forskellige måder. På samme måde som Power BI-tjenesten er Power BI-rapportserveren vært for Power BI-rapporter (.PBIX), Excel-filer og sideinddelte rapporter (.RDL). På samme måde som Reporting Services findes Power BI-rapportserveren i det lokale miljø. Power BI-rapportserverens funktioner er overordnede i forhold til Reporting Services: Alt det, du kan bruge Reporting Services til, kan du også bruge Power BI-rapportserveren til, inklusive understøttelse af Power BI-rapporter. Se [Sammenlign Power BI-rapportserveren med Power BI-tjenesten](compare-report-server-service.md) for at få flere oplysninger.
+Power BI-rapportserveren ligner både SQL Server Reporting Services og Power BI-onlinetjenesten, men på forskellige måder. På samme måde som med Power BI-tjenesten er Power BI-rapportserveren vært for Power BI-rapporter (.pbix), Excel-filer og sideinddelte rapporter (.rdl). På samme måde som Reporting Services findes Power BI-rapportserveren i det lokale miljø. Power BI-rapportserverens funktioner er overordnede i forhold til Reporting Services: Alt det, du kan bruge Reporting Services til, kan du også bruge Power BI-rapportserveren til, inklusive understøttelse af Power BI-rapporter. Se [Sammenlign Power BI-rapportserveren med Power BI-tjenesten](compare-report-server-service.md) for at få flere oplysninger.
 
 ## <a name="licensing-power-bi-report-server"></a>Licens til Power BI-rapportserveren
 Power BI-rapportserver er tilgængelig via to forskellige licenser: [Power BI Premium](../service-premium-what-is.md) og [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) med Software Assurance. Med en Power BI Premium-licens kan du oprette en hybrid udrulning med en blanding af clouden og det lokale miljø.  
@@ -41,7 +41,7 @@ Afhængigt af dine tilladelser kan du administrere indholdet på webportalen. Du
 Mere om [webportalen til Power BI-rapportserveren](https://docs.microsoft.com/sql/reporting-services/web-portal-ssrs-native-mode).
 
 ## <a name="power-bi-reports"></a>Power BI-rapporter
-Du kan oprette Power BI-rapporter (.PBIX) med den version af Power BI Desktop, der er optimeret til rapportserveren. Derefter kan du udgive og få vist dem på webportalen i dit eget miljø.
+Du opretter Power BI-rapporter (.pbix) med den version af Power BI Desktop, der er optimeret til rapportserveren. Derefter publicerer du dem og får dem vist på webportalen i dit eget miljø.
 
 ![Power BI-rapporter på Power BI-rapportserveren](media/get-started/powerbi-reports.png)
 
@@ -50,7 +50,7 @@ En Power BI-rapport er en visning med flere perspektiver af en datamodel med vis
 Læs om [installation af Microsoft Power BI Desktop](install-powerbi-desktop.md).
 
 ## <a name="paginated-reports"></a>Sideinddelte rapporter
-Sideinddelte rapporter (.RDL) er dokumentlignende rapporter med visualiseringer, hvor tabeller udvides vandret og lodret for at vise alle de indeholdte data, og de fortsætter fra side til side efter behov. De er velegnede, når du vil oprette dokumenter med fast layout og perfekte pixel, der er optimeret til udskrivning, f.eks. PDF- og Word-filer. 
+Sideinddelte rapporter (.rdl) er dokumentlignende rapporter med visualiseringer, hvori tabeller udvides vandret og lodret for at vise alle de inkluderede data, og de fortsætter fra side til side efter behov. De er velegnede, når du vil oprette dokumenter med fast layout og perfekte pixel, der er optimeret til udskrivning, f.eks. PDF- og Word-filer. 
 
 ![Sideinddelte rapporter på Power BI-rapportserveren](media/get-started/paginated-reports.png)
 

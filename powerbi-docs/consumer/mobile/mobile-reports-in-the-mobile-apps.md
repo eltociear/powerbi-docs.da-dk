@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/07/2020
+ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: 9f9a0afb766becefa5b74c5737795f6f227e7c27
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: f2aeb720221fa79aa95f9674aa1e3ac610b28c19
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79435760"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841727"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -45,7 +45,7 @@ Der findes to ikoner til rapporter i Power BI-mobilappsene:
 * ![Ikon for rapport, der er optimeret til telefoner](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) angiver en rapport, der har mindst én rapportside, som er optimeret til telefoner, og som vises i stående format.
 
 > [!NOTE]
-> Når du holder din telefon i liggende retning, får du altid det liggende layout, selvom rapportsiden har et layout, der er optimeret til telefoner.
+> Når du holder din telefon i liggende retning, får du altid det liggende layout, selvom rapportsiden har et layout, der er optimeret til mobiltelefoner.
 
 Hvis du vil hente en rapport fra et dashboard, skal du trykke på **Flere indstillinger** (...) i øverste højre hjørne af et felt og derefter trykke på **Åbn rapport**:
   

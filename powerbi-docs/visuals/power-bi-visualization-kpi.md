@@ -3,32 +3,28 @@ title: KPI-visualiseringer (Key Performance Indicator)
 description: Opret KPI-visualiseringer (Key Performance Indicator) i Power BI
 author: mihart
 ms.reviewer: ''
-featuredvideoid: xmja6EpqaO0
+featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 01/30/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5d21fc3a2e585922e65e1385ed1fc436a6dbcf22
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7f865c53a1a47ad53137f0e7659917689243b914
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76974981"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865160"
 ---
 # <a name="create-key-performance-indicator-kpi-visualizations"></a>Opret KPI-visualiseringer (Key Performance Indicator)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Et nøgletal (KPI) er en visuel ledetråd, der viser fremgangen mod et målbart mål. Du kan finde flere oplysninger om KPI'er under [KPI'er-indikatorer (Key Performance Indicators) i PowerPivot](/previous-versions/sql/sql-server-2012/hh272050(v=sql.110)).
 
-Se med, når Will viser, hvordan du opretter visualiseringer med en enkelt måling: målere, kort og KPI'er.
-   > [!NOTE]
-   > I denne video bruges en ældre version af Power BI Desktop.
-   > 
-   > 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="when-to-use-a-kpi"></a>Hvornår bruger man et KPI
 
@@ -55,6 +51,9 @@ I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](https
 1. Åbn **PBIX-filen med eksemplet Detailhandelsanalyse** i rapportvisning. ![Skærmbillede af rapportvisningsikonet.](media/power-bi-visualization-kpi/power-bi-report-view.png)
 
 1. Vælg **+** for at tilføje en ny side. ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png)
+
+> [!NOTE]
+> Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet.    
 
 ## <a name="how-to-create-a-kpi"></a>Sådan opretter du et KPI
 
@@ -99,10 +98,10 @@ KPI'er er også tilgængelige i Power BI-tjenesten og på dine mobilenheder. Det
 
 Hvis KPI'en ikke ligner det ovenfor, kan det skyldes, at du ikke har sorteret efter **FiscalMonth**. KPI'er har ikke en sorteringsindstilling. Du skal starte igen og sortere efter **FiscalMonth**, *før* du konverterer din visualisering til en KPI.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Tip og tricks til Power BI-kortvisualiseringer](power-bi-map-tips-and-tricks.md)
 
-* [Typer af visualiseringer i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
