@@ -7,22 +7,27 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/18/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 67c2acad74827c515c92ed0d16dd642170b8dc61
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 5717d543d5c70bbbe7c25ed3e55778639d777170
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79525654"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866535"
 ---
 # <a name="create-shape-map-visualizations-in-power-bi-desktop-preview"></a>Opret visualiseringer af figurkort i Power BI Desktop (eksempelvisning)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Opret en visualisering af typen **Figurkort** til at sammenligne områder på et kort ved hjælp af farver. I modsætning til visualiseringen **Kort** kan **Figurkort** ikke vise den nøjagtige geografiske placering af datapunkter på et kort. I stedet er dens primære formål at vise relative sammenligninger mellem områder på et kort ved at give dem forskellige farver.
 
 **Figurkort**-visuals er baseret på TopoJSON-kort, der kan anvendes med brugerdefinerede kort, som du opretter. Eksempler på brugerdefinerede kort er: geografiske kort, kort over siddepladser, kort over etager med mere. Muligheden for at bruge brugerdefinerede kort er ikke tilgængelig i denne evalueringsversion af **Figurkort**.
+
+> [!NOTE]
+> Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet.
 
 ## <a name="creating-shape-maps"></a>Opret figurkort
 Du kan afprøve kontrolelementet **Figurkort** med de kort, som medfølger i denne prøveversion, eller du kan bruge dine egne brugerdefinerede kort, så længe de opfylder de krav, der er angivet i afsnittet **Brug brugerdefinerede kort** nedenfor.
@@ -113,9 +118,9 @@ Du skal være opmærksom på nogle få ting i forbindelse med denne prøveversio
 
 Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurkort**.
 
-### <a name="australia-states"></a>Australien: delstater
+### <a name="australia-states"></a>Australien: Stater
 
-| ID | forkortelse | iso | name | postal |
+| Id | forkortelse | iso | name | postal |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -126,9 +131,9 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | au-nsw |NSW |AU-NSW |New South Wales |NSW |
 | au-act |ACT |AU-ACT |Australian Capital Territory |ACT |
 
-### <a name="austria-states"></a>Østrig: delstater
+### <a name="austria-states"></a>Østrig: Stater
 
-| ID | iso | name | navn-en | postal |
+| Id | iso | name | navn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -136,13 +141,13 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | at-st |AT-6 |Steiermark |Styria |ST |
 | at-sz |AT-5 |Salzburg |Salzburg |SZ |
 | at-oo |AT-4 |Oberösterreich |Upper Austria |OO |
-| at-no |AT-3 |Niederösterreich |Lower Austria |NEJ |
+| at-no |AT-3 |Niederösterreich |Lower Austria |NO |
 | at-ka |AT-2 |Kärnten |Carinthia |KA |
 | at-bu |AT-1 |Burgenland |Burgenland |BU |
 
-### <a name="brazil-states"></a>Brasilien: delstater
+### <a name="brazil-states"></a>Brasilien: Stater
 
-| ID |
+| Id |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -176,9 +181,9 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | Litigated Zone 3 |
 | Litigated Zone 4 |
 
-### <a name="canada-provinces"></a>Canada: provinser
+### <a name="canada-provinces"></a>Canada: Provinser
 
-| ID | iso | name | postal |
+| Id | iso | name | postnummer |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -194,9 +199,9 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | ca-bc |CA-BC |British Columbia |BC |
 | ca-ab |CA-AB |Alberta |AB |
 
-### <a name="france-regions"></a>Frankrig: regioner
+### <a name="france-regions"></a>Frankrig: Regioner
 
-| ID | name | navn-en |
+| Id | name | navn-en |
 | --- | --- | --- |
 | Auvergne-Rhone-Alpes |  |  |
 | Bourgogne-Franche-Comte |  |  |
@@ -216,9 +221,9 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | Provence-Alpes-Cote d'Azur |Provence-Alpes-Côte d'Azur |Provence-Alpes-Cote d'Azur |
 |  |  |  |
 
-### <a name="germany-states"></a>Tyskland: delstater
+### <a name="germany-states"></a>Tyskland: Stater
 
-| ID | iso | name | navn-en | postal |
+| Id | iso | name | navn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -232,14 +237,14 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | de-nw |DE-NW |Nordrhein-Westfalen |North Rhine-Westphalia |NW |
 | de-ni |DE-NI |Niedersachsen |Lower Saxony |NI |
 | de-he |DE-HE |Hessen |Hesse |HE |
-| de-hh |DE-HH |Hamborg |Hamborg |HH |
+| de-hh |DE-HH |Hamborg |Hamburg |HH |
 | de-hb |DE-HB |Bremen |Bremen |HB |
 | de-by |DE-BY |Bayern |Bavaria |BY |
 | de-bw |DE-BW |Baden-Württemberg |Baden-Wurttemberg |BW |
 
-### <a name="ireland-counties"></a>Irland: amter
+### <a name="ireland-counties"></a>Irland: Amter
 
-| ID |
+| Id |
 | --- |
 | Wicklow |
 | Wexford |
@@ -268,13 +273,13 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | Cavan |
 | Carlow |
 
-### <a name="italy-regions"></a>Italien: regioner
+### <a name="italy-regions"></a>Italien: Regioner
 
-| ID | iso | name | navn-en | postal |
+| Id | iso | name | navn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
-| it-um |IT-55 |Umbria |Umbria |UM |
+| it-um |IT-55 |Umbrien |Umbria |UM |
 | it-tt |IT-32 |Trentino-Alto Adige |Trentino-South Tyrol |TT |
 | it-tc |IT-52 |Toscana |Tuscany |TC |
 | it-sc |IT-82 |Sicilien |Sicily |SC |
@@ -283,19 +288,19 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | it-ml |IT-67 |Molise |Molise |ML |
 | it-mh |IT-57 |Marche |Marche |MH |
 | it-lm |IT-25 |Lombardiet |Lombardy |LM |
-| it-lg |IT-42 |Ligurien |Ligurien |LG |
+| it-lg |IT-42 |Ligurien |Liguria |LG |
 | it-lz |IT-62 |Lazio |Lazio |LZ |
 | it-fv |IT-36 |Friuli-Venezia Giulia |Friuli-Venezia Giulia |FV |
 | it-er |IT-45 |Emilia-Romagna |Emilia-Romagna |ER |
 | it-cm |IT-72 |Campania |Campania |CM |
-| it-lb |IT-78 |Calabrien |Calabrien |LB |
+| it-lb |IT-78 |Calabrien |Calabria |LB |
 | it-bc |IT-77 |Basilicata |Basilicata |BC |
 | it-pu |IT-75 |Apulien |Puglia |PU |
 | it-ab |IT-65 |Abruzzo |Abruzzo |AB |
 
-### <a name="mexico-states"></a>Mexico: delstater
+### <a name="mexico-states"></a>Mexico: Stater
 
-| ID | abreviatura | iso | name | navn-en | postal |
+| Id | abreviatura | iso | name | navn-en | postnummer |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -330,9 +335,9 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | mx-bcn |B.C. |MX-BCN |Baja California |Baja California |BN |
 | mx-agu |Ags. |MX-AGU |Aguascalientes |Aguascalientes |AG |
 
-### <a name="netherlands-provinces"></a>Nederlandene: provinser
+### <a name="netherlands-provinces"></a>Nederlandene: Provinser
 
-| ID | iso | name | navn-en |
+| Id | iso | name | navn-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -347,18 +352,18 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | nl-fl |NL-FL |Flevoland |Flevoland |
 | nl-dr |NL-DR |Drenthe |Drenthe |
 
-### <a name="uk-countries"></a>Storbritannien: lande/områder
+### <a name="uk-countries"></a>Storbritannien: Lande
 
-| ID | iso | name |
+| Id | iso | name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Skotland |
 | gb-nir |GB-NIR |Nordirland |
 | gb-eng |GB-ENG |England |
 
-### <a name="usa-states"></a>USA: stater
+### <a name="usa-states"></a>USA: Stater
 
-| ID | name | postal |
+| Id | name | postnummer |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |
@@ -367,7 +372,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | us-la |Louisiana |LA |
 | us-ar |Arkansas |AR |
 | us-sc |South Carolina |SC |
-| us-ga |Georgien |GA |
+| us-ga |Georgia |GA |
 | us-ms |Mississippi |MS |
 | us-al |Alabama |AL |
 | us-nm |New Mexico |NM |
@@ -403,7 +408,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | us-or |Oregon |OR |
 | us-mn |Minnesota |MN |
 | us-vt |Vermont |VT |
-| us-id |Idaho |ID |
+| us-id |Idaho |Id |
 | us-wi |Wisconsin |WI |
 | us-wy |Wyoming |WY |
 | us-sd |South Dakota |SD |
@@ -412,8 +417,8 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | us-mt |Montana |MT |
 | us-wa |Washington |WA |
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Matrixvisual i Power BI Desktop](desktop-matrix-visual.md)
 
-* [Typer af visualiseringer i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

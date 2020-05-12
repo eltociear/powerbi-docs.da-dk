@@ -4,16 +4,16 @@ description: Få mere at vide om installation, tilpasning og distribution af ska
 author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 03/15/2020
+ms.subservice: powerbi-template-apps
+ms.topic: conceptual
+ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: 08aadc3027c5b265194e4239b150ea5d27fe2e43
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: 86fe618508504faebc920c77a1f9605da59040d9
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436105"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781664"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization"></a>Installér og distribuer skabelonapps i din organisation
 
@@ -65,9 +65,9 @@ Hvis du vil installere, tilpasse og distribuere en skabelonapp, skal du have fø
 
 1. Klik på **Opret forbindelse**.
     
-    Derved åbnes en dialogboks eller en række dialogbokse, hvor du ændrer datakilden fra eksempeldataene til din egen datakilde. Dette betyder normalt, at du omdefinerer parametrene for datasæt og legitimationsoplysningerne for datakilden. Se [Kendte begrænsninger](service-template-apps-tips.md#known-limitations).
+    Derved åbnes en dialogboks eller en række dialogbokse, hvor du ændrer datakilden fra eksempeldataene til din egen datakilde. Dette betyder normalt, at du omdefinerer parametrene for datasæt og legitimationsoplysningerne for datakilden. Se [Kendte begrænsninger](service-template-apps-overview.md#known-limitations).
     
-    I eksemplet nedenfor kræver det to dialogbokse at oprette forbindelse til data.
+    I eksemplet nedenfor kræves der to dialogbokse for at oprette forbindelse til data.
 
    ![Dialogbokse til oprettelse af forbindelse til data](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
@@ -95,14 +95,18 @@ Når du er færdig med at foretage ændringer af artefakterne i arbejdsområdet,
 
 Fra tid til anden offentliggør oprettere af skabelonapps nye forbedrede versioner af deres skabelonapps enten via AppSource, direkte links eller begge dele.
 
-Hvis du oprindeligt har downloadet appen fra AppSource, og der bliver en ny version af appen skabelon tilgængelig, vises der et opdateringsbanner i Power BI-tjenesten med oplysninger om, at en ny appversion er tilgængelig.
+Hvis du oprindeligt har downloadet appen fra AppSource, får du besked på to måder, når en ny version af skabelonappen bliver tilgængelig:
+* Der vises et opdateringsbanner i Power BI-tjenesten, der informerer dig om, at der er en ny appversion tilgængelig.
+  ![Meddelelse om opdatering af skabelonapp](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-banner.png)
+* Du modtager en meddelelse i meddelelsesruden i Power BI.
 
-  ![Meddelelse om opdatering af skabelonapp](media/service-template-apps-install-distribute/power-bi-new-app-version-notification.png)
+
+  ![Meddelelse om opdatering af skabelonapp](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-pane.png)
 
 >[!NOTE]
 >Hvis du oprindeligt fik appen via et direkte link og ikke via AppSource, skal du kontakte opretteren af skabelonappen for at få oplysninger om, hvornår en ny version er tilgængelig.
 
-  Hvis du vil installere opdateringen, skal du enten klikke **Hent** på meddelelsesbanneret eller finde appen igen i AppSource og vælge **Hent nu**. Hvis du har fået et direkte link til opdateringen af opretteren af skabelonappen, skal du blot klikke på linket.
+  Hvis du vil installere opdateringen, skal du enten klikke på **Hent den** på meddelelsesbanneret eller i meddelelsescentret eller finde appen igen i AppSource og vælge **Hent den nu**. Hvis du har fået et direkte link til opdateringen af opretteren af skabelonappen, skal du blot klikke på linket.
   
   Du bliver spurgt, om du vil overskrive den aktuelle version, eller om du vil installere den nye version i et nyt arbejdsområde. "Overskriv" er valgt som standard.
 

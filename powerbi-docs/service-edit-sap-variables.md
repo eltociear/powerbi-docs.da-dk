@@ -9,16 +9,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/12/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: cec8d598713000ec1d2b5a1fb72ebaa7d8932faf
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: a05b677a3a6c826c8207af29e965a7cd76149fbe
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74010868"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841037"
 ---
 # <a name="edit-sap-variables-in-the-power-bi-service"></a>Rediger SAP-variabler i Power BI-tjenesten
 
-Når du bruger SAP Business Warehouse eller SAP HANA med DirectQuery, kan forfattere af rapporter nu give slutbrugere mulighed for at redigere SAP-variabler i **Power BI-tjenesten** for Premium- og delte arbejdsområder. Bemærk, at denne funktion IKKE fungerer for rapporter under fanen Delt med mig i Mit arbejdsområde. 
+Når du bruger SAP Business Warehouse eller SAP HANA med DirectQuery, kan forfattere af rapporter nu give slutbrugere mulighed for at redigere SAP-variabler i **Power BI-tjenesten** for Premium- og delte arbejdsområder. Bemærk, at denne funktion IKKE fungerer til rapporter under fanen Delt med mig i Mit arbejdsområde og Apps, der er oprettet fra V1-arbejdsområder. 
 
 ![Dialogboksen Rediger variabler](media/service-edit-sap-variables/sap-edit-variables-dialog.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/26/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: fe349e9eb29f85315e568d5851ce8206186cb61b
-ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
+ms.openlocfilehash: 776ef09de58c2bb3b47a6d55ae5e8cf2be0cf228
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80302661"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613652"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint-preview"></a>Netværksmulighed for datasæt med XMLA-slutpunktet (prøveversion)
 
@@ -229,9 +229,22 @@ XMLA-skrivehandlinger i datasæt, der er oprettet i Power BI Desktop og publicer
 
 Når du opretter forbindelse til datakilder og forespørger data, bruger Power BI Desktop Power Query-M-udtryk som indbyggede datakildeerklæringer. Indbyggede datakildeerklæringer i form af Power Query M-udtryk understøttes i Power BI Premium-arbejdsområder, men understøttes ikke af Azure Analysis Services eller SQL Server Analysis Services. I stedet opretter Analysis Services-værktøjer til datamodellering, f.eks. Visual Studio, metadata ved hjælp af *strukturerede* datakildeerklæringer og/eller *provider*datakildeerklæringer. Med XMLA-slutpunktet understøtter Power BI Premium også strukturerede datakilder og providerdatakilder, men ikke som en del af indbyggede datakildeerklæringer i form af Power Query M-udtryk i Power BI Desktop-modeller. Du kan få mere at vide under [Om providere](https://docs.microsoft.com/azure/analysis-services/analysis-services-datasource#understanding-providers).
 
-### <a name="power-bi-desktop-in-live-connect-mode"></a>Power BI Desktop i Live Connect-tilstand
+### <a name="power-bi-desktop-in-live-connect-mode"></a>Power BI Desktop i tilstanden for liveforbindelse
 
-Power BI Desktop kan oprette forbindelse til et Power BI Premium-datasæt, som om det var en modeldatabase, der blev installeret på Azure Analysis Services eller SQL Server Analysis Services. I dette tilfælde bruger Power BI Desktop XMLA-slutpunktet. Det anbefales dog, at Power BI Desktop-brugere i stedet bruger funktionen Live Connect, der er oprettet specielt til Power BI-datasæt. Brug af Live Connect giver en forbedret udforskningsoplevelse, der viser godkendelsesniveauet for datasæt, og brugerne behøver ikke at holde styr på URL-adresser til arbejdsområder, men kan blot skrive navnet på datasættet. Du kan få mere at vide under [Opret forbindelse til datasæt i Power BI-tjenesten fra Power BI Desktop](desktop-report-lifecycle-datasets.md).
+Power BI Desktop kan oprette forbindelse til et Power BI Premium-datasæt ved hjælp af en liveforbindelse. Når du bruger en liveforbindelse, skal dataene ikke replikeres lokalt, hvilket gør det nemmere for brugerne at bruge semantiske modeller. Der er to måder, som brugerne kan oprette forbindelse på:
+
+Ved at vælge **Power BI-datasæt** og derefter vælge et datasæt for at oprette en rapport. Dette er den **anbefalede** måde for brugerne at oprette en liveforbindelse til datasæt på. Denne metode giver en forbedret oplevelse i forbindelse med at finde godkendelsesniveauet for datasættene. Brugerne behøver ikke at finde og holde styr på URL-adresser til arbejdsområdet. For at finde et datasæt skal brugerne blot skrive navnet på datasættet eller rulle ned for at finde det datasæt, de leder efter.
+
+![Opret liveforbindelse til datasæt](media/service-premium-connect-tools/dataset-live-connect.png)
+
+Den anden måde, som brugerne kan bruge til at oprette en liveforbindelse på, er ved hjælp af **Hent data** > **Analysis Services**, ved at angive navnet på et Power BI Premium-arbejdsområde som en URL-adresse og vælge **Opret liveforbindelse**. Til sidst skal de vælge et datasæt i Navigator. I dette tilfælde bruger Power BI Desktop XMLA-slutpunktet til at oprette liveforbindelse til datasættet, som om det var en Analysis Services-datamodel. 
+
+![Opret liveforbindelse til Analysis Services-datasæt](media/service-premium-connect-tools/as-live-connect.png)
+
+Organisationer, som har eksisterende rapporter med liveforbindelse til Analysis Services-datamodeller, der er beregnet til at blive overført til Power BI Premium-datasæt, skal kun ændre URL-adressen for servernavnet i **Omdan data** > **Indstillinger for datakilde**.
+
+> [!NOTE]
+> Publicering af en rapport til Power BI-tjenesten understøttes endnu ikke i forbindelse med den offentlige prøveversion af læsning/skrivning af XMLA, når Power BI Desktop bruges til at oprette forbindelse til et Power BI Premium-datasæt ved hjælp af **Hent data** > **Analysis Services** og valg af indstillingen **Opret liveforbindelse**.
 
 ## <a name="audit-logs"></a>Overvågningslogge
 

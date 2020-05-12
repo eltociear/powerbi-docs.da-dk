@@ -1,19 +1,19 @@
 ---
 title: Træn Spørgsmål og svar til at forstå spørgsmål og udtryk i Spørgsmål og svar i Power BI
 description: Sådan bruger du Spørgsmål og svar i Power BI til at udforske dine data
-author: mohaali
+author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/17/2019
-ms.author: mohaali
+ms.date: 04/21/2020
+ms.author: maggies
 LocalizationGroup: Ask questions of your datadefintion
-ms.openlocfilehash: 695ad9143aa7074e079ae8606a9ad0eb6f6c964f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e5b870201943b93bfdaec2881005785c2f3c470b
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874912"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865754"
 ---
 # <a name="teach-qa-to-understand-questions-and-terms-in-power-bi-qa"></a>Træn Spørgsmål og svar til at forstå spørgsmål og udtryk i Spørgsmål og svar i Power BI
 
@@ -26,7 +26,7 @@ I afsnittet **Træn Spørgsmål og svar** i konfigurationen af Spørgsmål og sv
 
 1. På båndet **Udformning** i Power BI Desktop skal du vælge **Konfiguration af Spørgsmål og svar** > **Træn Spørgsmål og svar**.
 
-    ![Rødt synonym i Træn Spørgsmål og svar](media/qna-tooling-teach-synonym-red.png)
+    ![Rødt synonym i Træn Spørgsmål og svar](media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonym-red.png)
 
 2. Skriv en sætning med et begreb, som ikke genkendes i Spørgsmål og svar, og vælg **Send**.
 
@@ -36,7 +36,7 @@ I afsnittet **Træn Spørgsmål og svar** i konfigurationen af Spørgsmål og sv
     
 3. Under **Definer de begreber, som ikke blev forstået i Spørgsmål og svar** skal du angive en definition.
 
-    ![Forhåndsvisning af synonym i Træn Spørgsmål og svar](media/qna-tooling-teach-fixpreview.png)
+    ![Forhåndsvisning af synonym i Træn Spørgsmål og svar](media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-fixpreview.png)
 
 4. Vælg **Gem** for at se en forhåndsvisning af den opdaterede visualisering.
 
@@ -61,7 +61,7 @@ Spørgsmål og svar registrerer automatisk, når et ukendt ord er et substantiv 
 
 Du udfylder feltet med begrebet fra dine data.
 
-![Prompt med synonym i Træn Spørgsmål og svar](media/qna-tooling-synonym-prompt.png)
+![Prompt med synonym i Træn Spørgsmål og svar](media/q-and-a-tooling-teach-q-and-a/qna-tooling-synonym-prompt.png)
 
 Hvis du angiver noget andet end et felt fra datamodellen, kan du få uønskede resultater.
 
@@ -73,17 +73,26 @@ Nogle gange vil du måske definere begreber, der fungerer som en betingelse for 
 
 Du udfylder feltet med betingelsen.
 
-![Prompt med synonym i Træn Spørgsmål og svar](media/qna-tooling-adjectives.png)
+![Prompt med synonym i Træn Spørgsmål og svar](media/q-and-a-tooling-teach-q-and-a/qna-tooling-adjectives.png)
 
 Nogle eksempler på betingelser, som du kan definere, er:
 
-- "Land" som er "USA"
-- "Land" som ikke er "USA"
-- "Vægt" > 2000
-- "Vægt" = 2000
-- "Vægt" < 2000
+- Land, som er USA
+- Land, som ikke er USA
+- Produkter > 100
+- Produkter større end 100
+- Produkter = 100
+- Produkter er lig med 100
+- Produkter < 100
+- Produkter er mindre end 100
 
-Du kan kun definere en enkelt betingelse i værktøjet. Hvis du vil definere mere komplekse betingelser, skal du bruge DAX til at oprette en beregnet kolonne og derefter bruge afsnittet med værktøjer til at oprette en enkelt betingelse for den beregnede kolonne. Målinger understøttes ikke. Brug i stedet beregnede kolonner.
+I disse eksempler kan "Produkter" enten være et kolonnenavn eller en måling. 
+
+Du kan også angive en sammenlægning i selve udtrykket i Spørgsmål og svar. Hvis "populære produkter" f.eks. er produkter med mindst 100 solgte enheder, kan du definere produkter med "sum af solgte enheder > 100" som populær.  
+
+:::image type="content" source="media/q-and-a-tooling-teach-q-and-a/power-bi-qna-popular-products.png" alt-text="Definer "populære produkter"":::
+
+Du kan kun definere en enkelt betingelse i værktøjet. Hvis du vil definere mere komplekse betingelser, skal du bruge DAX til at oprette en beregnet kolonne eller måling og derefter bruge afsnittet med værktøjer til at oprette en enkelt betingelse for den pågældende kolonne eller måling.
 
 ## <a name="manage-terms"></a>Administrer begreber
 
@@ -93,10 +102,8 @@ Når du har angivet definitioner, kan du gå tilbage for at se alle de rettelser
 
 2. Slet de begreber, du ikke længere har brug for. Du kan i øjeblikket ikke redigere begreber. Hvis du vil omdefinere et begreb, skal du slette begrebet og definere det.
 
-    ![Administrer begreber i Spørgsmål og svar](media/qna-manage-terms.png)
+    ![Administrer begreber i Spørgsmål og svar](media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png)
 
 ## <a name="next-steps"></a>Næste trin
 
-Der er en række bedste praksisser for forbedring af programmet til naturligt sprog. Du kan få flere oplysninger i følgende artikel:
-
-* [Bedste praksis for Spørgsmål og svar](q-and-a-best-practices.md)
+Der er en række bedste praksisser for forbedring af programmet til naturligt sprog. Du kan finde flere oplysninger under [Bedste praksis for Spørgsmål og svar](q-and-a-best-practices.md).

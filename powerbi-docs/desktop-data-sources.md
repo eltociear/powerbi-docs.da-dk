@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/13/2020
+ms.date: 04/16/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fa0686171ee6f9e171e69d60f804d8e141530103
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 5247b2c990c8c0cfd29da0e8a30cdc8691000106
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79207246"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866811"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 
@@ -95,8 +95,8 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 * Denodo
 * Dremio
 * Exasol
-* Indexima (Beta)
-* InterSystems IRIS (Beta)
+* Indexima (beta)
+* InterSystems IRIS (beta)
 * Jethro (beta)
 * Kyligence
 * MarkLogic
@@ -139,7 +139,7 @@ Kategorien **Azure** indeholder følgende dataforbindelser:
 * Interaktiv HDInsight-forespørgsel
 * Azure Data Explorer (Kusto)
 * Azure Cost Management
-* Azure Time Series Insights (beta)
+
 
 På følgende billede vises vinduet **Hent data** for **Azure**.
 
@@ -163,9 +163,9 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Google Analytics
 * Adobe Analytics
 * appFigures (beta)
-* Data.World - Get Dataset (Beta)
+* Data.World – Get Dataset (beta)
 * GitHub (beta)
-* LinkedIn Sales Navigator (Beta)
+* LinkedIn Sales Navigator (beta)
 * Marketo (beta)
 * Mixpanel (beta)
 * Planview Enterprise One – PRM (beta)
@@ -174,7 +174,7 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Smartsheet
 * SparkPost (beta)
 * SweetIQ (beta)
-* Planview Enterprise One - CTM (Beta)
+* Planview Enterprise One – CTM (beta)
 * Twilio (beta)
 * tyGraph (beta)
 * Webtrends (beta)
@@ -182,15 +182,18 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Asana (beta)
 * Dynamics 365 Customer Insights (beta)
 * Emigo-datakilde
-* Entersoft Business Suite (Beta)
+* Entersoft Business Suite (beta)
 * FactSet Analytics (beta)
 * Industrial App Store
-* Intune Data Warehouse (Beta)
+* Intune Data Warehouse (beta)
 * Microsoft Graph Security (beta)
-* Product Insights (Beta)
+* Product Insights (beta)
 * Quick Base
 * TeamDesk (beta)
-* Workplace Analytics (Beta)
+* Workplace Analytics (beta)
+* Projectplace til Power BI (beta)
+* Webtrends Analytics (beta)
+* Zoho Creator (beta)
 
 På følgende billede vises vinduet **Hent data** for **Onlinetjenester**.
 
@@ -212,21 +215,24 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Python-script
 * ODBC
 * OLE DB
-* BI360 - Budgeting & Financial Reporting (Beta)
+* BI360 – Budgeting & Financial Reporting (beta)
+* Cognite Data Fusion (beta)
 * FHIR
-* Information Grid (Beta)
+* Information Grid (beta)
 * Jamf Pro (beta)
 * MicroStrategy for Power BI
 * Paxatas
-* QubolePresto (Beta)
-* Roamler (Beta)
-* Siteimprove (beta)
+* QubolePresto (beta)
+* Roamler (beta)
+* Siteimprove
 * SurveyMonkey (beta)
-* Tenforce (Smart)List (Beta)
 * TIBCO(R) Data Virtualization (beta)
 * Vena (beta)
 * Workforce Dimensions (beta)
 * Zucchetti HR Infinity (beta)
+* Tenforce (Smart)List
+* Shortcuts Business Insights (beta)
+* Vessel Insight (beta)
 * Tom forespørgsel
 
 På følgende billede vises vinduet **Hent data** for **Andet**.

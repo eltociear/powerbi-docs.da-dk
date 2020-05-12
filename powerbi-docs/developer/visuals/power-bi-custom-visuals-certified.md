@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 2dee596648c9921cefab6903167e780bfacb122e
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: b759d19046ddb375646743a50025689ab9a566c0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80113894"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613528"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Få en Power BI-visualisering certificeret
 
@@ -82,8 +82,6 @@ Brug den nyeste version af [powerbi-visuals-tools](https://www.npmjs.com/package
 
 Du skal kompilere din Power BI-visualisering med `pbiviz package`. Hvis du bruger dine egne buildscripts, skal du angive en `npm run package` brugerdefineret buildkommando.
 
-
-
 ### <a name="source-code-requirements"></a>Kildekodekrav
 
 Kontrollér, at du følger politiklisten med [ekstra certificering for Power BI-visualiseringer](https://docs.microsoft.com/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification). Hvis din udgivelse ikke følger disse retningslinjer, vil mailen med afvisningen fra Partnercenter indeholde numrene på de politikker, der er angivet i dette link.
@@ -150,6 +148,25 @@ Når en Power BI-visualisering er certificeret, får den et badge, der angiver, 
     ![Certificeret Power BI-visualisering på Power BI-grænsefladen](media/power-bi-custom-visuals-certified/certified-visual-blue.png)
 
 * Du kan kun få vist certificerede Power BI-visualiseringer ved at vælge filterindstillingen *Power BI-certificeret*.
+
+## <a name="publication-timeline"></a>Tidslinje for publicering
+
+Udrulning i AppSource er en proces, der kan tage et stykke tid. Din Power BI-visualisering kan downloades fra AppSource, når processen er fuldført.
+
+### <a name="when-will-users-be-able-to-download-my-visual"></a>Hvornår kan brugerne downloade min visualisering?
+
+* Hvis det er første gang, du har indsendt en Power BI-visualisering, kan brugerne downloade den et par timer efter, du har modtaget en mail fra AppSource.
+
+* Hvis du har indsendt en opdatering til en eksisterende Power BI-visualisering, kan brugerne downloade den inden for en måned efter indsendelsen.
+
+    >[!NOTE]
+    > *Versionsfeltet* i AppSource opdateres med den dag, din Power BI blev godkendt af AppSource, hvilket er ca. en uge efter, du har indsendt visualiseringen. Brugerne kan downloade den opdaterede visualisering, men de opdaterede egenskaber træder ikke i kraft. Visualiseringens nye egenskaber vil påvirke brugerens rapporter efter ca. en måned. 
+
+### <a name="when-will-my-power-bi-visual-display-a-certification-badge"></a>Hvornår vises der et certificeringsbadge for min Power BI-visualisering?
+
+* Hvis det er første gang, du har indsendt en Power BI-visualisering, vises certificeringsbadgen inden for en dag efter, du har modtaget godkendelsesmailen fra AppSource.
+
+* Hvis du anmoder om certificering af en eksisterende Power BI-visualisering, bliver certificeringsbadgen synlig inden for en måned efter indsendelsen.
 
 ## <a name="next-steps"></a>Næste trin
 

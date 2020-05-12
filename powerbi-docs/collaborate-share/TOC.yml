@@ -10,7 +10,7 @@
     - name: Begreber
       expanded: true
       items:
-        - name: Organiser dit arbejde
+        - name: Organiser arbejde i arbejdsområder
           href: ../service-new-workspaces.md
         - name: Overvåg brug i klassiske arbejdsområder
           href: ../service-usage-metrics.md

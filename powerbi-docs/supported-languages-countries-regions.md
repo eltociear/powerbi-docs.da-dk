@@ -6,19 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 04/23/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 951a05247a02e379c56c45176edb622e683af413
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 401cc419401756c9576ce6efc25a34b7aa667024
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207729"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781512"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Understøttede sprog og lande/områder til Power BI
 
-I denne artikel kan du se en liste over understøttede sprog og lande/områder for Power BI-tjenesten, Power BI Desktop og Power BI-dokumentationen.
+Denne artikel dækker understøttede sprog og lande/områder for Power BI-tjenesten, Power BI Desktop og Power BI-dokumentationen.
 
 ## <a name="countries-and-regions-where-power-bi-is-available"></a>Lande og områder, hvor Power BI er tilgængelig
 Se [listen over international tilgængelighed](https://products.office.com/business/international-availability) for at få vist en liste over lande og områder, hvor Power BI er tilgængelig. 
@@ -72,7 +72,7 @@ Power BI-tjenesten (i browseren) er tilgængelig på følgende 44 sprog:
 * Vietnamesisk – Tiếng Việt
 
 ### <a name="whats-translated"></a>Hvad er oversat
-I Power BI oversættes menuer, knapper, meddelelser og andre elementer af oplevelsen til dit sprog. Rapportindhold, f.eks. automatisk genererede titler, filtre og værktøjstip, oversættes, men dine data oversættes ikke automatisk. I rapporter ændres layoutet af visualiseringer ikke, hvis du bruger et sprog, der går fra højre mod venstre, f.eks. hebraisk.
+I Power BI oversættes menuer, knapper, meddelelser og andre elementer af oplevelsen til dit sprog. Power BI oversætter f.eks. rapportindhold såsom automatisk genererede titler, filtre og værktøjstip. Dine data oversættes dog ikke automatisk. I rapporter ændres layoutet af visualiseringer ikke, hvis du bruger et sprog, der går fra højre mod venstre, f.eks. hebraisk.
 
 I øjeblikket er nogle få funktioner kun tilgængelige på engelsk:
 
@@ -126,11 +126,12 @@ Du kan få Power BI Desktop på to måder: Du kan downloade det som et separat i
 
 ### <a name="choose-a-language-for-power-bi-desktop"></a>Vælg et sprog til Power BI Desktop 
 1. Installér Power BI Desktop [fra Windows Store](https://aka.ms/pbidesktopstore) eller som et [separat installationsprogram](https://aka.ms/pbiSingleInstaller).
-2. Søg efter **Windows-indstillinger** på din computer for at ændre sproget. 
-3. Vælg **Tid og sprog**.
+2. Hvis du vil ændre sproget, skal du vælge **Indstillinger** i Windows-menuen
+
+3. I **Windows-indstillinger** skal du vælge **Tid og sprog**.
    
      ![Dialogboksen Windows-indstillinger](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
-4. Vælg **Område og sprog**, vælg et sprog, og vælg derefter **Benyt som standard**.
+4. Vælg **Sprog**, og vælg et sprog. Vælg **Tilføj et Windows-visningssprog i Microsoft Store**, hvis det er nødvendigt.
    
      ![Dialogboks med Windows-sprogindstillinger](media/supported-languages-countries-regions/power-bi-service-language-settings.png)
    
@@ -143,8 +144,30 @@ Hvis du vil tilsidesætte standarden og bruge Power BI Desktop på et andet spro
 
 Sprogunderstøttelse i Power BI Desktop er begrænset til de sprog, der vises på rullelisten Applikationssprog.
 
+### <a name="verify-power-bi-desktop-default-number-and-date-formatting"></a>Bekræft standardformatering af tal og dato i Power BI Desktop
+
+Power BI Desktop henter standardformateringen af tal og datoer fra Windows-områdeindstillingerne. Du kan kontrollere eller ændre disse indstillinger, hvis det er nødvendigt.
+
+1. Vælg **Indstillinger** i Windows-menuen
+
+2. I **Windows-indstillinger** skal du vælge **Tid og sprog**.
+   
+     ![Dialogboksen Windows-indstillinger](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
+
+3. Vælg **Område** > **Yderligere indstillinger for dato, klokkeslæt og område**.
+
+    :::image type="content" source="media/supported-languages-countries-regions/power-bi-service-region-settings.png" alt-text="Yderligere indstillinger for dato, klokkeslæt og område":::
+
+4. I **Ur og område** skal du vælge **Skift dato-, klokkeslæts- eller talformater**.
+
+    :::image type="content" source="media/supported-languages-countries-regions/power-bi-service-check-region-settings.png" alt-text="Indstillinger for ur og område":::
+
+5. Kontrollér, at **Match Windows-visningssprog** er valgt, eller ret det, hvis det er nødvendigt.
+
+    :::image type="content" source="media/supported-languages-countries-regions/power-bi-service-match-windows.png" alt-text="Match Windows-visningssprog":::
+
 ### <a name="choose-the-locale-for-importing-data-into-power-bi-desktop"></a>Vælg landestandarden til import af data til Power BI Desktop
-Uanset om du downloader Power BI Desktop eller installerer den fra Windows Store, kan du vælge en landestandard for en bestemt rapport, der skal være en anden end landestandarden i din version af Power BI Desktop. Landestandarden ændrer den måde, data fortolkes på, når de importeres fra datakilden, f.eks. om "3/4/2017" fortolkes som 3. april eller 4. marts. 
+Uanset om du downloader Power BI Desktop eller installerer den fra Windows Store, kan du vælge en landestandard for en bestemt rapport, der skal være en anden end landestandarden i din version af Power BI Desktop. Landestandarden ændrer den måde, som Power BI fortolker data på, når de importeres fra datakilden. Skal datoen "3/4/2017" f.eks. fortolkes som 3. april eller 4. marts?
 
 1. Gå til **Filer** > **Indstillinger** > **Indstillinger** i Power BI Desktop.
 2. Vælg **Internationale indstillinger** under **Aktuel fil**.
@@ -158,7 +181,7 @@ Uanset om du downloader Power BI Desktop eller installerer den fra Windows Store
 Du kan ud over angivelse af sproget for Power BI Desktop-programmet også angive modelsproget. Modelsproget påvirker hovedsageligt to ting:
 
 - Hvordan vi sammenligner og sorterer strenge. Eftersom tyrkisk indeholder to i'er, kan de to ende i forskellige rækkefølger ved sortering, afhængigt af sorteringen i databasen. 
-- Det sprog, der bruges i Power BI Desktop, ved oprettelse af skjulte datotabeller fra datofelter. Felter kaldes f.eks. Monat/Måned/Mois, osv.
+- Det sprog, der bruges i Power BI Desktop, ved oprettelse af skjulte datotabeller fra datofelter. Felter kaldes f.eks. Måned/Monat/Mois osv.
 
 > [!NOTE]
 > Power BI-modellen bruger i øjeblikket en landestandard, hvor der ikke skelnes mellem store og små bogstaver (og som ikke er kana-følsom), så "ABC" og "abc" behandles på samme måde. Hvis "ABC" indlæses i databasen først, indlæses andre strenge, der kun afviger i forbindelse med brugen af store og små bogstaver, f.eks. "Abc", ikke som en separat værdi.

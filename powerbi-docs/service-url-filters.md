@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/25/2020
+ms.date: 05/04/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 79f3fa8c9c175b698cb91784f95d3bb9d8ca0cc5
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.openlocfilehash: 2c9b7a5d13f2bc0f74d82dd2ad78efdb76ff6a14
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273242"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781418"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
@@ -156,7 +156,9 @@ Der er andre forskelle mellem V3 og V4. OData V3 understøtter ikke datoer, kun 
 
 ## <a name="special-characters-in-url-filters"></a>Specialtegn i URL-filtre
 
-Specialtegn og mellemrum kræver yderligere formatering. Når din forespørgsel indeholder mellemrum, tankestreger eller andre tegn, der ikke er ASCII, skal du foranstille en *escape-kode*, der starter med et understregningstegn og et X ( **_x**) og derefter angive den firecifrede **Unicode** efterfulgt af endnu et understregningstegn. Hvis Unicode-værdien består af færre end fire tegn, skal du foranstille den med nuller. Her vises nogle eksempler.
+### <a name="special-characters-in-table-and-column-names"></a>Specialtegn i tabel- og kolonnenavne
+
+Specialtegn og mellemrum i tabel- og kolonnenavne kræver yderligere formatering. Når din forespørgsel indeholder mellemrum, tankestreger eller andre tegn, der ikke er ASCII, skal du foranstille en *escape-kode*, der starter med et understregningstegn og et X ( **_x**) og derefter angive den firecifrede **Unicode** efterfulgt af endnu et understregningstegn. Hvis Unicode-værdien består af færre end fire tegn, skal du foranstille den med nuller. Her vises nogle eksempler.
 
 |Identifikator  |Unicode-værdi  | Kode til Power BI  |
 |---------|---------|---------|
@@ -169,6 +171,24 @@ Navn_x0020_på_x0020_tabel/Kolonne_x002B_Plus eq 3 ![specialtegn til gengivelse 
 
 
 Tabel_x0020_specialtegn/_x005B_Kolonne_x0020_Kantparenteser_x005D_ eq '[C]' ![specialtegn til gengivelse af tabelvisualisering](media/service-url-filters/power-bi-special-characters2.png)
+
+### <a name="special-characters-in-values"></a>Specialtegn i værdier
+
+Filtre for URL-adresser understøtter allerede alle specialtegn i feltværdier undtagen enkelt anførselstegn ('). Det er det eneste tegn, du skal angive "escape" for. Hvis du vil søge efter et enkelt anførselstegn, skal du bruge to enkelte anførselstegn (''). 
+
+Eksempel:
+
+- `?filter=Table/Name eq 'O''Brien'` bliver: 
+
+    :::image type="content" source="media/service-url-filters/power-bi-url-filter-obrien.png" alt-text="Navnet er O'Brien":::
+
+- `?filter=Table/Name eq 'Lee''s Summit'` bliver:
+
+    :::image type="content" source="media/service-url-filters/power-bi-url-filter-lees.png" alt-text="Lees møde":::
+
+- `in`-operatoren understøtter også denne angivelse af "escape": `?filter=Table/Name in ('Lee''s Summit', 'O''Brien')` bliver:
+
+    :::image type="content" source="media/service-url-filters/power-bi-url-filter-in.png" alt-text="Lees møde eller O'Brien":::
 
 ## <a name="use-dax-to-filter-on-multiple-values"></a>Brug DAX til at filtrere efter flere værdier
 

@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: cfe877d6fac96124badc19f6ab685523077132fc
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: f7e21f5b9f2ac01fec19a7113cf595464619a0e0
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381278"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841980"
 ---
 # <a name="what-is-power-bi-administration"></a>Hvad er Power BI-administration?
 
@@ -50,7 +50,7 @@ Rollen Power BI Service Administrator gør det ikke muligt at tildele licenser t
 
 ## <a name="administrative-tasks"></a>Administrative opgaver
 
-Administratorer udfører mange opgaver for at yde support til Power BI-lejeren i deres organisation, hvilket beskrives i følgende tabel.
+Administratorer udfører mange opgaver for at yde support til Power BI i deres organisation, hvilket beskrives i følgende tabel.
 
 | **Opgaveområde** | **Typiske opgaver** |
 | --- | --- |
@@ -78,7 +78,7 @@ Der er flere værktøjer, der er relateret til Power BI-administration, og de vi
 
 ## <a name="next-steps"></a>Næste trin
 
-Vi håber, at du ved at læse denne artikel har fået hurtig indsigt i jobbet som Power BI-administrator og i de specifikke roller, opgaver og værktøjer, der er involveret. Vi anbefaler følgende artikelemner, så du kan få en større forståelse.
+Vi håber, at du ved at læse denne artikel har fået hurtig indsigt i jobbet som Power BI-administrator og i de specifikke roller, opgaver og værktøjer, der er involveret. Følgende artikler anbefales, hvis du vil have mere at vide.
 
 - [Brug Power BI-administrationsportalen](service-admin-portal.md)
 - [Vejledning til indstillinger for lejeradministrator](guidance/admin-tenant-settings.md)

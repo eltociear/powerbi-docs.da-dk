@@ -2,27 +2,35 @@
 title: Kurvediagrammer i Power BI
 description: Kurvediagrammer i Power BI
 author: mihart
-ms.reviewer: amac
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/26/2019
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e46aa05ac326b5c959da8a29329fa92f4aec0b4d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0f430747187729cbb939b67795ff0507770bb0f1
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73871067"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82867018"
 ---
 # <a name="line-charts-in-power-bi"></a>Kurvediagrammer i Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 Et kurvediagram er en række datapunkter, der er repræsenteret af prikker og forbundet med lige linjer. Et kurvediagram kan have en eller flere linjer. Kurvediagrammer har en X- og en Y-akse. 
 
 ![simpelt kurvediagram](media/power-bi-line-charts/power-bi-line.png)
 
+
+
 ## <a name="create-a-line-chart"></a>Opret et kurvediagram
 I denne vejledning bruges appen Sales and Marketing Sample til at oprette et kurvediagram, der viser dette års salg efter kategori. Hvis du vil følge med, skal du hente eksempelappen fra appsource.com.
+
+> [!NOTE]
+> Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet.
 
 1. Start på en tom rapportside. Hvis du bruger Power BI-tjenesten, skal du åbne rapporten i [redigeringsvisning](../service-interact-with-a-report-in-editing-view.md).
 
@@ -45,7 +53,7 @@ I denne vejledning bruges appen Sales and Marketing Sample til at oprette et kur
 
 6. Du kan eventuelt [tilpasse størrelsen og farven på diagrammets tekst](power-bi-visualization-customize-title-background-and-legend.md). 
 
-    ![Forøg skriftstørrelsen, og skift skrifttypen for Y-aksen](media/power-bi-line-charts/power-bi-line-3years.png)
+    ![Øg skriftstørrelsen, og skift skrifttypen for Y-aksen](media/power-bi-line-charts/power-bi-line-3years.png)
 
 ## <a name="add-additional-lines-to-the-chart"></a>Tilføj flere kurver i diagrammet
 Kurvediagrammer kan have mange forskellige kurver. Og i nogle tilfælde kan værdierne på kurverne være så divergerende, at det ikke er godt at vise dem sammen. Lad os se på, hvordan vi tilføjer ekstra kurver i vores nuværende diagram, og lær, hvordan du formaterer diagrammet, når de værdier, der er repræsenteret af kurverne, er meget forskellige. 

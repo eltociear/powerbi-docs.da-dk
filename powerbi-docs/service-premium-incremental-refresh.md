@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/27/2020
+ms.date: 04/30/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 1208a598c08b87d0e479e4d8901f880a5dfa6900
-ms.sourcegitcommit: dc18209dccb6e2097a92d87729b72ac950627473
+ms.openlocfilehash: 386fefeb18e3b365c95819de1956f6739b547137
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80361857"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613620"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Trinvis opdatering i Power BI
 
@@ -70,7 +70,7 @@ Filteret i datokolonnen bruges til dynamisk partitionering af dataene i interval
 
 #### <a name="query-folding"></a>Forespørgselsfoldning
 
-Det er vigtigt, at partitionsfiltre pushes til kildesystemet, når der sendes forespørgsler til opdatering. For at kunne pushe filtrering ned skal datakilden understøtte forespørgselsfoldning. De fleste datakilder, der understøtter SQL-forespørgsler, understøtter forespørgselsfoldning. Det gør datakilder, som flade filer, BLOBs, web og OData-feeds, imidlertid ikke. I de tilfælde, hvor filteret ikke understøttes af datakildens backend, kan det ikke pushes ned. I sådanne tilfælde kompenserer miksprogrammet og anvender filteret lokalt, hvilket kan kræve, at hele datasættet skal hentes fra datakilden. Dette kan medføre, at trinvis opdatering er meget langsom, og processen kan løbe tør for ressourcer enten i Power BI-tjenesten eller i datagatewayen i det lokale miljø, hvis de bruges.
+Det er vigtigt, at partitionsfiltre pushes til kildesystemet, når der sendes forespørgsler til opdatering. For at kunne pushe filtrering ned skal datakilden understøtte forespørgselsfoldning. De fleste datakilder, der understøtter SQL-forespørgsler, understøtter forespørgselsfoldning. Datakilder såsom flade filer, BLOB-filer og webfeeds gør dog typisk ikke. I de tilfælde, hvor filteret ikke understøttes af datakildens backend, kan det ikke pushes ned. I sådanne tilfælde kompenserer miksprogrammet og anvender filteret lokalt, hvilket kan kræve, at hele datasættet skal hentes fra datakilden. Dette kan medføre, at trinvis opdatering er meget langsom, og processen kan løbe tør for ressourcer enten i Power BI-tjenesten eller i datagatewayen i det lokale miljø, hvis de bruges.
 
 På grund af de forskellige supportniveauer af forespørgselsfoldning for de enkelte datakilder anbefales det, at det kontrolleres, at filterlogikken er inkluderet i kildeforespørgslerne. For at gøre det nemmere forsøger Power BI Desktop til at udføre denne kontrol for dig. Hvis det var ikke muligt at bekræfte, vises der en advarsel i dialogboksen til trinvis opdatering, når du definerer politikken for trinvis opdatering. SQL-baserede datakilder, som SQL, Oracle og Teradata, kan bruge denne advarsel. Andre datakilder kan muligvis ikke bekræfte uden at spore forespørgsler. Hvis Power BI Desktop ikke kan bekræfte, vises følgende advarsel. Hvis du får vist denne advarsel og gerne vil kontrollere, at den nødvendige forespørgselsdelegering finder sted, kan du bruge funktionen Forespørgselsdiagnosticering eller spore de forespørgsler, du har modtaget fra kildedatabasen.
 

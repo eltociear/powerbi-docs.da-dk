@@ -1,18 +1,18 @@
 ---
 title: Begrænsninger for Spørgsmål og svar i Power BI
 description: Aktuelle begrænsninger for Spørgsmål og svar i Power BI
-author: mohaali
+author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/18/2019
-ms.author: mohaali
-ms.openlocfilehash: 9f1beed3408d53a58a0fb725f9d98a4a95bb1b7c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 04/21/2020
+ms.author: maggies
+ms.openlocfilehash: b71fd2986fb79adf88493416ac8234f2656aefa9
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874896"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866765"
 ---
 # <a name="limitations-of-power-bi-qa"></a>Begrænsninger for Spørgsmål og svar i Power BI
 
@@ -27,7 +27,7 @@ Spørgsmål og svar i Power BI understøtter følgende konfigurationer af dataki
 - Importtilstand
 - Liveforbindelse til Azure Analysis Services
 - Liveforbindelse til SQL Server Analysis Services (med en gateway)
-- Power BI-datasæt. Der rapporteres en fejl med Spørgsmål og svar i Power BI Desktop, når der bruges et Power BI-datasæt. Fejlen forsvinder dog, når du publicerer rapporten i Power BI-tjenesten.
+- Power BI-datasæt.
 
 Sikkerhed på rækkeniveau understøttes i hver af disse konfigurationer.
 
@@ -36,7 +36,7 @@ Sikkerhed på rækkeniveau understøttes i hver af disse konfigurationer.
 Spørgsmål og svar i Power BI understøtter i øjeblikket ikke følgende konfigurationer:
 
 - Sikkerhed på objektniveau med alle typer datakilder
-- DirectQuery mod en hvilken som helst kilde. En løsning, der kan understøtte dette, er at bruge liveforbindelse med Azure Analysis Services, som bruger DirectQuery.
+- DirectQuery mod en hvilken som helst kilde. En løsning er at bruge Liveforbindelse med Azure Analysis Services, som bruger DirectQuery.
 - Sammensatte modeller
 - Reporting Services 
 
@@ -46,7 +46,7 @@ Den nye dialogboks for værktøjer giver brugerne mulighed for at tilpasse og fo
 
 ## <a name="review-question-limitations"></a>Begrænsninger for repetitionsspørgsmål
 
-Spørgsmål, du har stillet til din datamodel, gemmes kun i 28 dage i repetitionsspørgsmålene. Når du bruger den nye egenskab for repetitionsspørgsmål, vil du måske opleve, at nogle spørgsmål ikke er registreret. Dette er tilsigtet, da programmet for naturligt sprog udfører en række trin til rensning af data for at sikre, at alle tastetryk fra en bruger ikke registreres eller vises.
+Spørgsmål, du har stillet til din datamodel, gemmes kun i 28 dage i repetitionsspørgsmålene. Når du bruger den nye egenskab for repetitionsspørgsmål, vil du måske opleve, at nogle spørgsmål ikke er registreret. De registreres ikke som standard, da programmet for naturligt sprog udfører en række trin til rensning af data for at sikre, at alle tastetryk fra en bruger ikke registreres eller vises.
 
 Lejeradministratorer kan bruge indstillingerne for lejeradministrator til at administrere muligheden for at gemme spørgsmål. Tilladelserne er baseret på sikkerhedsgrupper. 
 
@@ -61,11 +61,14 @@ Med Træn Spørgsmål og svar kan du rette to typer fejl:
 
 I øjeblikket understøtter vi ikke omdefinering af et genkendt begreb eller definering af andre typer betingelser eller sætninger. Når du definerer filtreringsbetingelser, kan du desuden kun bruge en begrænset delmængde af sprog, herunder:
 
-- "Land" som er "USA"
-- "Land" som ikke er "USA"
-- "Vægt" > 2000
-- "Vægt" = 2000
-- "Vægt" < 2000
+- Land, som er USA
+- Land, som ikke er USA
+- Produkter > 100
+- Produkter større end 100
+- Produkter = 100
+- Produkter er lig med 100
+- Produkter < 100
+- Produkter er mindre end 100
 
 > [!NOTE]
 > Værktøjer til Spørgsmål og svar understøtter kun importtilstand. De understøtter endnu ikke, at der oprettes forbindelse til en datakilde i det lokale miljø eller en Azure Analysis Services-datakilde. Denne aktuelle begrænsning vil blive fjernet i efterfølgende udgaver af Power BI.
@@ -75,3 +78,7 @@ I øjeblikket understøtter vi ikke omdefinering af et genkendt begreb eller def
 - Brug af målinger i betingelser understøttes ikke i øjeblikket. Konvertér i stedet målinger til beregnede kolonner for at få dem til at fungere.
 - Flere betingelser understøttes ikke. Du kan løse problemet ved at oprette en DAX-beregnet kolonne, der evaluerer en boolesk sætning med flere betingelser og bruge dette felt i stedet.
 - Hvis du ikke angiver en filterbetingelse, når Spørgsmål og svar beder om en delmængde af data, kan du ikke gemme definitionen, selvom der ikke er nogen rød understregning under hele sætningen.
+
+## <a name="next-steps"></a>Næste trin
+
+Der er en række bedste praksisser for forbedring af programmet til naturligt sprog. Du kan finde flere oplysninger under [Bedste praksis for Spørgsmål og svar](q-and-a-best-practices.md).

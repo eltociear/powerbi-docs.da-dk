@@ -10,10 +10,10 @@ ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: 1dfb75595de939f99bf269d67bf9c29a2f0db249
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871621"
 ---
 # <a name="save-a-report-in-power-bi-service-and-power-bi-desktop"></a>Gem en rapport i Power BI-tjenesten og Power BI Desktop
@@ -28,7 +28,7 @@ Når du har foretaget ændringer af en rapport i Power BI, kan du gemme den, gem
 1. Hvis du forsøger at navigere væk fra en rapport, og rapporten indeholder ændringer, vises en meddelelse i Power BI.
    
    ![Gem ændringer](media/service-report-save/power-bi-unsaved.png)
-2. En anden måde at gemme rapporten på er ved at vælge **FIL** \> **Gem** eller **Gem som**. Hvis du er i [Læsevisning](consumer/end-user-reading-view.md), kan du kun se muligheden Gem som. 
+2. En anden måde at gemme rapporten på er ved at vælge **FILER** \> **Gem** eller **Gem som**. Hvis du er i [Læsevisning](consumer/end-user-reading-view.md), kan du kun se muligheden Gem som. 
    
    ![Gem rapport](media/service-report-save/power-bi-save-new.png)
 3. Hvis dette er en ny rapport (Gem) eller en ny version af en eksisterende rapport (Gem som), skal du give den et beskrivende navn.  **Rapporten føjes til det aktive arbejdsområde**.

@@ -1,30 +1,32 @@
 ---
 title: Brug af et udsnitsværktøj eller filter til relative datoer i Power BI
 description: Få mere at vide om, hvordan du bruger et udsnitsværktøj eller -filter til at begrænse relative datoområder i Power BI Desktop.
-author: mihart
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/06/2020
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9ce36bfa61b16bd30e59bc8491af80efdfdc8a35
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f63a56ea350d089b82eb7a18470e1bcc439d1151
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81006776"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866512"
 ---
-# <a name="use-a-relative-date-slicer-and-filter-in-power-bi"></a>Brug af et udsnitsværktøj og filter til relative datoer i Power BI
+# <a name="creating-a-relative-date-slicer-and-filter-in-power-bi"></a>Oprettelse af et udsnit eller et filter for relativ dato i Power BI
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 Med det **relative datoudsnit** eller det **relative datofilter** kan du anvende tidsbaserede filtre på en hvilken som helst datokolonne i datamodellen. Du kan f.eks. bruge det **relative datoudsnit** til kun at vise salgsdata, der er oprettet i løbet af de sidste 30 dage (eller måned eller kalendermåneder osv.). Når du opdaterer dataene, anvender den relative tidsperiode automatisk den relevante relative datobegrænsning.
 
-![Skærmbillede af en rapport med en pil, der peger på et relativt datoudsnit.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
+![Skærmbillede af en rapport med en pil, der peger på et udsnit for relativ dato.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
 
-## <a name="use-the-relative-date-range-slicer"></a>Brug udsnitsværktøjet til relative datoområder
+Hvis du vil dele din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet.
+
+## <a name="create-the-relative-date-range-slicer"></a>Opret udsnittet for det relative datoområde
 
 Du kan bruge det relative datoudsnit på samme måde som alle andre udsnit. Opret en visualisering med et **udsnit** til din rapport, og vælg derefter en datoværdi for værdien **Felt**. På følgende billede har vi markeret feltet *Ordredato*.
 
@@ -42,7 +44,7 @@ Du har følgende valgmuligheder for den første indstilling i det *relative dato
 
 ![Skærmbillede af indstillingsmulighederne for Relativ med den første indstilling fremhævet.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
 
-* Seneste
+* Sidste
 
 * Næste
 
@@ -70,7 +72,7 @@ Den tredje indstilling giver dig mulighed for at vælge datomålingen. Du har f�
 
 * År (kalender)
 
-Hvis du vælger **Måneder** på listen, og indtaster *2* i midterste indstilling, sker der følgende:
+Hvis du vælger **Måneder** på listen og angiver *2* i den midterste indstilling, sker følgende:
 
 * Hvis dags dato er 20. juli,
 
@@ -80,7 +82,7 @@ Hvis du vælger **Måneder** på listen, og indtaster *2* i midterste indstillin
 
 Hvis du til sammenligning har valgt *Måneder (kalender)* , viser de begrænsede visualiseringer data fra 1. maj til 30. juni (de to sidste hele kalendermåneder).
 
-## <a name="using-the-relative-date-range-filter"></a>Brug det relative datoområdefilter
+## <a name="create-the-relative-date-range-filter"></a>Opret filteret for det relative datoområde
 
 Du kan også oprette et relativt datoområdefilter for din rapportside eller hele rapporten. Det kan du gøre ved at trække datofeltet til oversigten **Filtre på sideniveau** eller **Filtre på rapportniveau** i ruden **Felt**:
 
@@ -100,10 +102,11 @@ Følgende begrænsninger og overvejelser, der aktuelt gælder for det **relative
 
 * Datamodeller i **Power BI** indeholder ikke oplysninger om tidszone. Modeller kan gemme tider, men der er ingen angivelse af den tidszone, de er i.
 
-* Udsnittet og filteret er altid baseret på tidspunktet i UTC-tid. Hvis du konfigurerer et filter i en rapport og sender det til en kollega i en anden tidszone, ser I begge de samme data. Medmindre du befinder dig i UTC-tidszonen, skal du og din kollega tage højde for den tidsforskydning, der gælder for jer.
+* Udsnittet og filteret er altid baseret på tidspunktet i UTC-tid. Hvis du konfigurerer et filter i en rapport og sender det til en kollega i en anden tidszone, ser I begge de samme data. Medmindre I befinder jer i UTC-tidszonen, skal I begge tage højde for den tidsforskydning, der gælder for jer.
 
 * Du kan konvertere data, der er hentet i en lokal tidszone, til UTC-tid ved hjælp af **forespørgselseditoren**.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
-Få mere at vide om, hvordan du [bruger gruppering og gruppering i beholder i Power BI Desktop](../desktop-grouping-and-binning.md).
+- [Brug et udsnit og et filter for relativ dato i Power BI](desktop-slicer-filter-date-range.md)
+- [Udsnitsværktøjer i Power BI](power-bi-visualization-slicers.md)

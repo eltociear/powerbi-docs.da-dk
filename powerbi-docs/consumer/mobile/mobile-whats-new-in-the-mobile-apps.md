@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/09/2020
+ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: af9a1ad5dd13f4f57947b0ca92459e7691eab5fd
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.openlocfilehash: 8235f95d724b34e7ea815579e6f8ed6a1f71e409
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80802089"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841704"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -24,6 +24,14 @@ Du kan finde relaterede oplysninger om nyheder under:
 
 >[!NOTE]
 >Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="april-2020"></a>April 2020
+
+### <a name="sharing-from-workspaces-is-now-available"></a>Deling fra arbejdsområder er nu tilgængelig
+Vi har tilføjet muligheden for at dele rapporter og dashboards fra arbejdsområder. Du kan nu dele dit indhold fra "Mit arbejdsområde" og fra andre arbejdsområder, hvis ejeren af arbejdsområdet tillader det, på samme måde som i Power BI-tjenesten. 
+
+### <a name="dashboards-now-support-full-screen-mode-ios-and-android"></a>Dashboards understøtter nu fuldskærmsvisning (iOS og Android)
+Nu kan du få vist dine dashboards i fuldskærmsvisning, hvilket giver dig mere plads til at få vist dit dashboardindhold. 
 
 ## <a name="march-2020"></a>Marts 2020
 
@@ -871,4 +879,4 @@ Forbedringer i Power BI-mobilapps – Android, iOS (iPhone og iPad) og Windows. 
 * Forbedret gengivelse af kortdele i fokuseringstilstand for at maksimere skærmpladsen.
 * Forbedret brugeroplevelse ved adgang til dashboards ved hjælp af rollebaseret sikkerhed. 
 * En ny egenskab giver dig mulighed for at gå frem og tilbage mellem dashboardfelter, så de kan udforskes direkte i fokuseringstilstand uden at skulle vende tilbage til dashboardet for at vælge det næste felt.
-* Yderligere forbedringer af stabilitet og ydeevne. 
+* Yderligere forbedringer af stabilitet og ydeevne.

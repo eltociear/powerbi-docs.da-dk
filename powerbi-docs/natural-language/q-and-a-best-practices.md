@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: mohaali
-ms.openlocfilehash: 02faed03e84c9d3a9f9ebd536116ffa0287dba4e
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: b5865219d84c8fa388f297824550fd715f0c2923
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841911"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866838"
 ---
 # <a name="best-practices-to-optimize-qa-in-power-bi"></a>Bedste praksis for optimering af Spørgsmål og svar i Power BI
 Det er effektivt, når du bruger almindelige udtryk og naturligt sprog til dataforespørgsler. Det er endnu mere effektivt, når dine data svarer, hvilket er, hvad der sker i Spørgsmål og svar i Power BI.
@@ -195,8 +195,10 @@ Dette trin gælder specielt for Spørgsmål og svar (og ikke for Power BI-rappor
 
 Dette trin kan være vigtigt. Selv med helt enkle tabel- og kolonnenavne stiller brugere af Spørgsmål og svar spørgsmål med ord, der lige falder dem ind. De vælger ikke fra en foruddefineret liste over kolonner. Jo mere fornuftige synonymer, du tilføjer, jo bedre er brugernes oplevelse med din rapport. Du tilføjer synonymer ved at gå til Modelvisning i Power BI Desktop, vælge fanen Udformning og vælge et felt eller en tabel. I ruden Egenskaber kan du se feltet **Synonymer**, hvor du kan tilføje synonymer.
 
-
-
-![Ruden Egenskaber med synonymer i Spørgsmål og svar](media/qna-modelling-pane-synonyms.png)
+![Ruden Egenskaber med synonymer i Spørgsmål og svar](media/q-and-a-best-practices/qna-modelling-pane-synonyms.png)
 
  Vær forsigtig, når du tilføjer synonymer. Hvis du føjer det samme synonym til mere end én kolonne eller tabel, indfører du en flertydighed. Spørgsmål og svar benytter kontekst, hvor det er muligt, til at vælge mellem flertydige synonymer, men ikke alle forespørgsler har tilstrækkelig kontekst. Når en bruger f.eks. spørger "tæl kunderne", og du har tre ting med synonymet "kunde" i din model, så får vedkommende nok ikke det ønskede svar. I disse tilfælde skal du sørge for, at det primære synonym er entydigt, for det er det, der bruges i gentagelsen. Det kan gøre brugeren opmærksom på flertydigheden (f.eks. en tilpasning af "vis antallet af arkiverede kundejournaler") og give vedkommende et praj om, at forespørgslen måske bør ændres.
+
+## <a name="next-steps"></a>Næste trin
+
+[Introduktion til Spørgsmål og svar i Power BI](q-and-a-intro.md)

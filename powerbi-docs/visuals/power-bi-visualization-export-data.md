@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/28/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f82bde423d910cb5622e5e709890502e96daab36
-ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
+ms.openlocfilehash: e3e0108f539a7c42b41c36f743a0b8b79f3b61b8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82585392"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781725"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Eksportér de data, der blev brugt til at oprette en visualisering
 
@@ -265,6 +265,8 @@ Disse begrænsninger og overvejelser gælder for Power BI Desktop og Power BI-tj
   1. Vælg **Hent eksterne data** > **Fra tekst**.
   
   1. Gå til den lokale mappe, hvor filen er gemt, og vælg *.csv*-filen.
+
+- Når du eksporterer til *.csv*, kan du "escape" nogle tegn med en foranstillet **'** .
 
 - Power BI-administratorer kan deaktivere dataeksporten.
 
