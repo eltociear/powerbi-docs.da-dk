@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: bb323737934ade08ed4998bdcf8d441e8951732c
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: fece594fa6236f01c707f0b84ddca977fb32dede
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379831"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349281"
 ---
 # <a name="add-the-locale-in-power-bi-for-power-bi-visuals"></a>Tilføj landestandarden i Power BI for Power BI-visuals
 
 I visuals kan Power BI-landestandarden hentes, så indholdet kan lokaliseres til det relevante sprog.
 
-Læs mere om [Understøttede sprog og lande/områder til Power BI](./../../supported-languages-countries-regions.md)
+Læs mere om [Understøttede sprog og lande/områder til Power BI](./../../fundamentals/supported-languages-countries-regions.md)
 
 Det kan f. eks. være hentning af landestandarden i visual'et Eksempelsøjlediagram.
 

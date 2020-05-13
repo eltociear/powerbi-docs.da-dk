@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 3410d8fa8c2f9300fccbe47683a90cbca8ff8383
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8a3a80ea7bb318944961a57ac6fdac695aa46253
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79205521"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349442"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Vis dashboards og rapporter i Power BI-mobilappsene
 Gælder for:
@@ -29,8 +29,8 @@ Dashboards er en portal til din virksomhed og jeres processer. Et dashboard er e
 
 Hvis du vil have vist dashboards og rapporter på din mobilenhed, skal du oprette dashboards eller oprette forbindelse til dashboards i en webbrowser. 
 
-1. Gå til Power BI-tjenesten ([https://www.powerbi.com](https://www.powerbi.com)), og [opret en konto](../../service-self-service-signup-for-power-bi.md).
-2. [Opret dine egne Power BI-dashboards og -rapporter](../../service-get-started.md), eller opret forbindelse til eksisterende [Power BI-apps](../../service-connect-to-services.md) for at få adgang til et stort udvalg af tjenester, f.eks [Microsoft Dynamics CRM](../../service-connect-to-microsoft-dynamics-crm.md).
+1. Gå til Power BI-tjenesten ([https://www.powerbi.com](https://www.powerbi.com)), og [opret en konto](../../fundamentals/service-self-service-signup-for-power-bi.md).
+2. [Opret dine egne Power BI-dashboards og -rapporter](../../fundamentals/service-get-started.md), eller opret forbindelse til eksisterende [Power BI-apps](../../connect-data/service-connect-to-services.md) for at få adgang til et stort udvalg af tjenester, f.eks [Microsoft Dynamics CRM](../../connect-data/service-connect-to-services.md).
 
 Her er et Power BI-dashboard i Power BI-tjenesten:
 
@@ -45,14 +45,14 @@ Her er et Power BI-dashboard i Power BI-tjenesten:
     ![Tryk på dashboard](./media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-home.png)
    
    * De gule stjerner ![Stjerner for favoritter](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) viser, hvilke dashboards der er favoritter. 
-   * Notationen under hvert dashboardnavn (i dette tilfælde "MBI") ![Dataklassifikation](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) viser, hvordan dataene i hvert dashboard klassificeres. Læs mere om [dataklassifikation i Power BI](../../service-data-classification.md).
+   * Notationen under hvert dashboardnavn (i dette tilfælde "MBI") ![Dataklassifikation](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) viser, hvordan dataene i hvert dashboard klassificeres. Læs mere om [dataklassifikation i Power BI](../../create-reports/service-data-classification.md).
    
    Som standard ser Power BI-dashboards en smule anderledes ud på din iPhone. Alle felterne vises med samme størrelse, og de er arrangeret fra top til bund.
    
     ![Dashboard i stående format](./media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-portrait.png)
    
    > [!TIP]
-   > Hvis du ejer dashboardet, kan du i Power BI-tjenesten [oprette en visning af dashboardet specifikt til telefoner](../../service-create-dashboard-mobile-phone-view.md) i stående format. 
+   > Hvis du ejer dashboardet, kan du i Power BI-tjenesten [oprette en visning af dashboardet specifikt til telefoner](../../create-reports/service-create-dashboard-mobile-phone-view.md) i stående format. 
    > 
    > 
    
@@ -85,7 +85,7 @@ Du kan også "klemme sammen" med fingrene for at zoome ind og ud på forskellige
    ![Startside for dashboards](./media/mobile-apps-view-dashboard/power-bi-ipad-dashboard-home.png)
    
    * De gule stjerner ![Stjerner for favoritter](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) viser, hvilke dashboards der er favoritter. 
-   * Notationen under hvert dashboardnavn (i dette tilfælde "MBI") ![Dataklassifikation](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) viser, hvordan dataene i hvert dashboard klassificeres. Læs mere om [dataklassifikation i Power BI](../../service-data-classification.md).
+   * Notationen under hvert dashboardnavn (i dette tilfælde "MBI") ![Dataklassifikation](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) viser, hvordan dataene i hvert dashboard klassificeres. Læs mere om [dataklassifikation i Power BI](../../create-reports/service-data-classification.md).
 3. Du kan dele et dashboard fra dit arbejdsområde. Tryk på de tre prikker ( **...** ) i nederste højre hjørne af dashboardfeltet, og tryk på **Inviter andre**.
    
    ![Invitationsikon](./media/mobile-apps-view-dashboard/power-bi-ipad-tile-invite-others.png)
@@ -109,13 +109,13 @@ Du kan også "klemme sammen" med fingrene for at zoome ind og ud på forskellige
 
     De gule stjerner ![Stjerner for favoritter](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) viser, hvilke dashboards der er favoritter. 
 
-    Notationen under hvert dashboardnavn (i dette tilfælde "MBI") ![Dataklassifikation](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) viser, hvordan dataene i hvert dashboard klassificeres. Læs mere om [dataklassifikation i Power BI](../../service-data-classification.md).
+    Notationen under hvert dashboardnavn (i dette tilfælde "MBI") ![Dataklassifikation](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) viser, hvordan dataene i hvert dashboard klassificeres. Læs mere om [dataklassifikation i Power BI](../../create-reports/service-data-classification.md).
 
     Power BI-dashboards ser en smule anderledes ud på din Android-telefon. Alle felterne vises med samme bredde, og de er arrangeret fra top til bund.
 
     ![Dashboard i stående format](./media/mobile-apps-view-dashboard/pbi_andr_dash.png)
 
-    Hvis du ejer dashboardet, kan du i Power BI-tjenesten [oprette en visning af dashboardet specifikt til telefoner](../../service-create-dashboard-mobile-phone-view.md) i stående format. 
+    Hvis du ejer dashboardet, kan du i Power BI-tjenesten [oprette en visning af dashboardet specifikt til telefoner](../../create-reports/service-create-dashboard-mobile-phone-view.md) i stående format. 
 
 1. Når du er på dashboardet, kan du trykke på knappen **Flere indstillinger** (...) ud for navnet for at invitere en kollega, opdatere det eller se oplysninger om dashboardet:
    
@@ -132,7 +132,7 @@ Du kan også "klemme sammen" med fingrene for at zoome ind og ud på forskellige
    ![Startside for dashboards](./media/mobile-apps-view-dashboard/power-bi-android-tablet-dashboard-home.png)
    
    * De gule stjerner ![Stjerner for favoritter](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) viser, hvilke dashboards der er favoritter. 
-   * Notationen under hvert dashboardnavn (i dette tilfælde "MBI") ![Dataklassifikation](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) viser, hvordan dataene i hvert dashboard klassificeres. Læs mere om [dataklassifikation i Power BI](../../service-data-classification.md).
+   * Notationen under hvert dashboardnavn (i dette tilfælde "MBI") ![Dataklassifikation](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) viser, hvordan dataene i hvert dashboard klassificeres. Læs mere om [dataklassifikation i Power BI](../../create-reports/service-data-classification.md).
 3. Når du er på dashboardet, kan du trykke på knappen **Flere indstillinger** (...) ud for navnet for at invitere en kollega, opdatere det eller se oplysninger om dashboardet:
    
    ![Menuen med tre prikker](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
@@ -150,11 +150,10 @@ Hvis du ejer dashboardet, kan du *i Power BI-tjenesten* oprette en visning af da
 
 ![Vis dashboard på telefon](./media/mobile-apps-view-dashboard/power-bi-phone-dashboard-in-progress.png)
 
-Læs mere om at [oprette en telefonvisning af et dashboard](../../service-create-dashboard-mobile-phone-view.md).
+Læs mere om at [oprette en telefonvisning af et dashboard](../../create-reports/service-create-dashboard-mobile-phone-view.md).
 
 ## <a name="next-steps"></a>De næste trin
 * [Download Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867) fra Google Play  
 * [Introduktion til Android-appen til Power BI](mobile-android-app-get-started.md)  
 * [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)
 * Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 5ff7891ce704ebaf8677df6f0872396ffa1b04a2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ada695b2a568358f96010feb320226437beeb075
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81675652"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349166"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Onlinekursus: Sideinddelte Power BI-rapporter på én dag
 
@@ -100,11 +100,11 @@ Vi anbefaler, at du først ser onlinekurset. Du kan henvise til præsentationste
 Når du er klar til at begynde det første laboratorium, skal du åbne filen **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\ PowerBIPRIAD_Lab01A. pdf**. Dette dokument hjælper dig med at logge på Power BI-tjenesten, overføre et datasæt og derefter installere [Power BI Report Builder](report-builder-power-bi.md).
 
 > [!NOTE]
-> Du er ansvarlig for at have din egen Power BI-konto. Hvis du ikke allerede har en, kan du se [Tilmeld dig Power BI som enkeltperson](../service-self-service-signup-for-power-bi.md).
+> Du er ansvarlig for at have din egen Power BI-konto. Hvis du ikke allerede har en, kan du se [Tilmeld dig Power BI som enkeltperson](../fundamentals/service-self-service-signup-for-power-bi.md).
 >
 > Du skal logge på Power BI for at udgive en Power BI Desktop-fil til et arbejdsområde. Udgivelsen resulterer i et datasæt, der bruges som en rapportdatakilde. Du behøver ikke at have en Power BI Pro-licens eller et Power BI Premium-abonnement for at bruge et datasæt som en rapportdatakilde.
 >
-> Nogle laboratorieopgaver omfatter dog udgivelse af sideinddelte rapporter i et arbejdsområde. Du kan kun åbne en sideinddelt rapport, når den er gemt i et arbejdsområde i en [dedikeret kapacitet](../service-premium-what-is.md#dedicated-capacities), hvor arbejdsbelastningen for sideinddelte rapporter er aktiveret. Hvis du ikke har adgang til et egnet arbejdsområde, får du vist et link, hvor du kan se en video, der viser rapportudgivelse i stedet for.
+> Nogle laboratorieopgaver omfatter dog udgivelse af sideinddelte rapporter i et arbejdsområde. Du kan kun åbne en sideinddelt rapport, når den er gemt i et arbejdsområde i en [dedikeret kapacitet](../admin/service-premium-what-is.md#dedicated-capacities), hvor arbejdsbelastningen for sideinddelte rapporter er aktiveret. Hvis du ikke har adgang til et egnet arbejdsområde, får du vist et link, hvor du kan se en video, der viser rapportudgivelse i stedet for.
 
 ## <a name="instructor-kit"></a>Instruktørpakke
 

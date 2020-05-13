@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: c766393c9a4c81c484afe6f934e1ebb8314d0fb9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 56b3a4f67f5bc6dda777ea7c94b92c65abb4f3b0
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77426627"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349396"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Introduktion til Power BI-mobilappen på iOS-enheder
 Microsoft Power BI til iOS-appen på iPhone eller iPad leverer BI-mobiloplevelsen til Power BI, Power BI-rapportserver og Reporting Services. Få vist og interager med dit firmas dashboards lokalt og i skyen overalt – med direkte, berøringsfølsom mobiladgang. Udforsk data i dashboards, og del dem med dine kollegaer i mails eller sms-beskeder. Og hold dig ajour med dine mest tidsfølsomme data på dit [Apple Watch](mobile-apple-watch.md).  
@@ -22,7 +22,7 @@ Microsoft Power BI til iOS-appen på iPhone eller iPad leverer BI-mobiloplevelse
 
 Du kan oprette Power BI-rapporter i Power BI Desktop og publicere dem:
 
-* [Publicer dem til Power BI-tjenesten](../../service-get-started.md), og opret dashboards.
+* [Publicer dem til Power BI-tjenesten](../../fundamentals/service-get-started.md), og opret dashboards.
 * [Publicer dem i det lokale miljø på Power BI rapportserver](../../report-server/quickstart-create-powerbi-report.md).
 
 Derefter interagerer du i Power BI-mobilappen til iOS med dine dashboards og rapporter, både lokalt og i clouden.
@@ -79,11 +79,9 @@ Microsoft Intune giver virksomhederne mulighed for at kontrollere ting som anmod
 > Hvis du bruger Power BI-mobilappen på din iOS-enhed, og din organisation har konfigureret Microsoft Intune MAM, er opdateringen af data i baggrunden slået fra. Næste gang du bruger appen, vil Power BI opdatere dataene fra Power BI-tjenesten på internettet.
 > 
 
-Læs mere om at [konfigurere Power BI-mobilapps med Microsoft Intune](../../service-admin-mobile-intune.md). 
+Læs mere om at [konfigurere Power BI-mobilapps med Microsoft Intune](../../admin/service-admin-mobile-intune.md). 
 
 ## <a name="next-steps"></a>Næste trin
 
 * [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-
-

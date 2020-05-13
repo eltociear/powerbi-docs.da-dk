@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b87848953722d33235a11729a3643c627cca7234
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: d9fd23a0cf5c3ed26c78e4c53ae600bf74daca91
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79525608"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348177"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>Overfør SQL Server Reporting Services-rapporter til Power BI
 
@@ -37,7 +37,7 @@ Før du starter overførslen, skal du kontrollere, at dit miljø opfylder visse 
 
 ### <a name="preparing-for-migration"></a>Forberedelse til overførsel
 
-Når du forbereder overførsel af dine rapporter til Power BI, skal du først bekræfte, at din organisation har et [Power BI Premium](../service-premium-what-is.md)-abonnement. Dette abonnement er påkrævet for at hoste og køre dine sideinddelte rapporter i Power BI.
+Når du forbereder overførsel af dine rapporter til Power BI, skal du først bekræfte, at din organisation har et [Power BI Premium](../admin/service-premium-what-is.md)-abonnement. Dette abonnement er påkrævet for at hoste og køre dine sideinddelte rapporter i Power BI.
 
 ### <a name="supported-versions"></a>Understøttede versioner
 
@@ -112,12 +112,12 @@ Sideinddelte rapporter i Power BI er generelt optimeret til **udskrivning** elle
 
 Målet med fasen _Forbered_ indebærer, at du bliver klar til det hele. Den dækker konfiguration af Power BI-miljøet, planlægning af, hvordan du sikrer og publicerer dine rapporter, og idéer til at genudvikle SSRS-elementer, der ikke overføres.
 
-1. Sørg for, at [arbejdsbelastningen Sideinddelte rapporter](../service-admin-premium-workloads.md#paginated-reports) er aktiveret for din Power BI Premium-kapacitet, og at den har tilstrækkelig hukommelse.
-1. Bekræft support til [datakilder](../paginated-reports/paginated-reports-data-sources.md) for din rapport, og opret en [Power BI Gateway](../service-gateway-onprem.md) for at tillade forbindelse til alle datakilder i det lokale miljø.
-1. Bliv fortrolig med Power BI-sikkerhed, og planlæg, [hvordan du genopretter dine SSRS-mapper og tilladelser](/sql/reporting-services/security/secure-folders) med [Power BI-arbejdsområder og arbejdsområderoller](../service-new-workspaces.md).
-1. Bliv fortrolig med Power BI-deling, og planlæg, hvordan du distribuerer indhold ved at udgive [Power BI-apps](../service-create-distribute-apps.md).
-1. Overvej at bruge [delte Power BI-datasæt](../service-datasets-build-permissions.md) i stedet for dine SSRS-delte datakilder.
-1. Brug [Power BI Desktop](../desktop-what-is-desktop.md) til at udvikle mobiloptimerede rapporter. Du kan evt. bruge [den brugerdefinerede visualisering til Power KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) i stedet for dine SSRS-mobilrapporter og-KPI'er.
+1. Sørg for, at [arbejdsbelastningen Sideinddelte rapporter](../admin/service-admin-premium-workloads.md#paginated-reports) er aktiveret for din Power BI Premium-kapacitet, og at den har tilstrækkelig hukommelse.
+1. Bekræft support til [datakilder](../paginated-reports/paginated-reports-data-sources.md) for din rapport, og opret en [Power BI Gateway](../connect-data/service-gateway-onprem.md) for at tillade forbindelse til alle datakilder i det lokale miljø.
+1. Bliv fortrolig med Power BI-sikkerhed, og planlæg, [hvordan du genopretter dine SSRS-mapper og tilladelser](/sql/reporting-services/security/secure-folders) med [Power BI-arbejdsområder og arbejdsområderoller](../collaborate-share/service-new-workspaces.md).
+1. Bliv fortrolig med Power BI-deling, og planlæg, hvordan du distribuerer indhold ved at udgive [Power BI-apps](../collaborate-share/service-create-distribute-apps.md).
+1. Overvej at bruge [delte Power BI-datasæt](../connect-data/service-datasets-build-permissions.md) i stedet for dine SSRS-delte datakilder.
+1. Brug [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) til at udvikle mobiloptimerede rapporter. Du kan evt. bruge [den brugerdefinerede visualisering til Power KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) i stedet for dine SSRS-mobilrapporter og-KPI'er.
 1. Revaluer brugen af det indbyggede felt **UserID** i dine rapporter. Hvis du bruger **UserID** til at sikre rapportdata, skal du forstå, at brugerens hovednavn (UPN) returneres for sideinddelte rapporter (når de hostes i Power BI-tjenesten). Så i stedet for at returnere NT-kontonavnet, f.eks. _AW\mblythe_, returnerer det indbyggede felt noget i stil med _m.Blythe&commat;adventureworks.com_. Du skal revidere definitionerne for dine datasæt og muligvis kildedataene. Når de er revideret og publiceret, anbefaler vi, at du tester dine rapporter grundigt for at sikre, at datatilladelserne fungerer som forventet.
 1. Revaluer brugen af det indbyggede felt **ExecutionTime** i dine rapporter. Det indbyggede felt returnerer dato/klokkeslæt _i UTC (Coordinated Universal Time)_ for sideinddelte rapporter (når de hostes i Power BI-tjenesten). Det kan påvirke standardværdierne for rapportparameteren og rapportere mærkater for udførelsestid (typisk føjet til rapport sidefødder).
 1. Hvis din datakilde er SQL Server (i det lokale miljø), skal du bekræfte, at rapporterne ikke benytter kortvisualiseringer. Kortvisualiseringen afhænger af SQL Server-afstandsdatatyper, og disse typer understøttes ikke af gatewayen. Du kan finde flere oplysninger under [Vejledning til hentning af data for sideinddelte rapporter (komplekse datatyper i SQL Server)](report-paginated-data-retrieval.md#sql-server-complex-data-types).
@@ -171,9 +171,9 @@ Når rapporter er blevet overført til Power BI, skal du sørge for, at deres da
 
 Vi anbefaler på det kraftigste, at du fuldfører følgende handlinger for at sikre den bedst mulige brugeroplevelse med rapporter:
 
-1. Test rapporterne i hver [browser, der understøttes af Power BI](../power-bi-browsers.md), for at bekræfte, at rapporten gengives korrekt.
+1. Test rapporterne i hver [browser, der understøttes af Power BI](../fundamentals/power-bi-browsers.md), for at bekræfte, at rapporten gengives korrekt.
 1. Kør testene for at sammenligne rapporternes gengivelsestid i SSRS og Power BI. Kontrollér, at Power BI-rapporter gengives inden for en acceptabel tid.
-1. Hvis Power BI-rapporter ikke gengives, fordi der ikke er tilstrækkelig hukommelse, skal du tildele [yderligere ressourcer til Power BI Premium-kapacitet](../service-admin-premium-workloads.md#paginated-reports).
+1. Hvis Power BI-rapporter ikke gengives, fordi der ikke er tilstrækkelig hukommelse, skal du tildele [yderligere ressourcer til Power BI Premium-kapacitet](../admin/service-admin-premium-workloads.md#paginated-reports).
 1. I forbindelse med rapporter med lang gengivelse kan du overveje at få Power BI til at levere dem til dine rapportbrugere som [mailabonnementer med rapporter som vedhæftede filer](../consumer/paginated-reports-subscriptions.md).
 1. For Power BI-rapporter, der er baseret på Power BI-datasæt, skal du gennemgå modeldesign for at sikre, at de er fuldt optimerede.
 
@@ -183,8 +183,8 @@ Fasen Efter overførsel er afgørende for, hvordan du afhjælper eventuelle prob
 
 Du kan finde flere oplysninger om disse problemer, herunder bestemte trin til at forstå og afhjælpe dem, i følgende artikler:
 
-- [Optimering af Premium-kapaciteter](../service-premium-capacity-optimize.md)
-- [Overvåg Premium-kapaciteter i appen](../service-admin-premium-monitor-capacity.md)
+- [Optimering af Premium-kapaciteter](../admin/service-premium-capacity-optimize.md)
+- [Overvåg Premium-kapaciteter i appen](../admin/service-admin-premium-monitor-capacity.md)
 
 ## <a name="next-steps"></a>Næste trin
 
@@ -195,7 +195,7 @@ Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 - [Hvornår bruges sideinddelte rapporter i Power BI](report-paginated-or-power-bi.md)
 - [Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål](../paginated-reports/paginated-reports-faq.md)
 - [Onlinekursus: Sideinddelte rapporter på én dag](../paginated-reports/paginated-reports-online-course.md)
-- [Ofte stillede spørgsmål til Power BI Premium](../service-premium-faq.md)
+- [Ofte stillede spørgsmål til Power BI Premium](../admin/service-premium-faq.md)
 - [RDL-overførselsværktøj](https://github.com/microsoft/RdlMigration)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)

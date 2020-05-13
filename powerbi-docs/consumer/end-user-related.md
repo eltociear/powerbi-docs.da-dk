@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 0d3bbbf9042d2b0d1a42ab9c1f759ccfd03c6609
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3dcd968d00d98106a8b717e635b8a7fdf958dc70
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114376"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347326"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Få vist relateret indhold i Power BI-tjenesten
 
@@ -47,12 +47,12 @@ Ruden **Relateret indhold** åbnes. I forbindelse med et dashboard vises alle de
 
 ![Ruden Relateret indhold](./media/end-user-related/power-bi-view-related-dashboard.png)
 
-Her kan du handle direkte på det relaterede indhold.  Vælg f.eks. navnet på en rapport eller et dashboard for at åbne den eller det.  For en rapport på listen skal du vælge et ikon for at [analysere i Excel](../service-analyze-in-excel.md) eller [få indsigt](end-user-insights.md). I forbindelse med et datasæt kan du se seneste opdateringsdato og -klokkeslæt, [analysere i Excel](../service-analyze-in-excel.md) og [få indsigt](end-user-insights.md).  
+Her kan du handle direkte på det relaterede indhold.  Vælg f.eks. navnet på en rapport eller et dashboard for at åbne den eller det.  For en rapport på listen skal du vælge et ikon for at [analysere i Excel](../collaborate-share/service-analyze-in-excel.md) eller [få indsigt](end-user-insights.md). I forbindelse med et datasæt kan du se seneste opdateringsdato og -klokkeslæt, [analysere i Excel](../collaborate-share/service-analyze-in-excel.md) og [få indsigt](end-user-insights.md).  
 
 
 
 ## <a name="view-related-content-for-a-dataset"></a>Få vist relateret indhold for et datasæt
-Du skal som minimum bruge *visningstilladelser* til et datasæt for at åbne ruden **Relateret indhold**. I dette eksempel bruger vi [eksemplet Indkøbsanalyse](../sample-procurement.md).
+Du skal som minimum bruge *visningstilladelser* til et datasæt for at åbne ruden **Relateret indhold**. I dette eksempel bruger vi [eksemplet Indkøbsanalyse](../create-reports/sample-procurement.md).
 
 Find overskriften **Arbejdsområder** i navigationsruden, og vælg et arbejdsområde på listen. Hvis du har indhold i et arbejdsområde, vises det på lærredet til højre. 
 
@@ -67,7 +67,7 @@ Vælg ikonet for at åbne ruden **Relateret indhold**.
 
 ![Ruden Relateret indhold åbnes over Power BI-indholdsvisningen](media/end-user-related/power-bi-dataset.png)
 
-Her kan du handle direkte på det relaterede indhold. Vælg f.eks. et dashboard- eller rapportnavn for at åbne det.  For alle dashboards på listen skal du vælge et ikon for at [dele dashboardet med andre](../service-share-dashboards.md) eller for at åbne vinduet **Indstillinger** for dashboardet. For en rapport skal du vælge ikonet for at [analysere i Excel](../service-analyze-in-excel.md), [omdøbe](../service-rename.md) eller [få indsigt](end-user-insights.md).  
+Her kan du handle direkte på det relaterede indhold. Vælg f.eks. et dashboard- eller rapportnavn for at åbne det.  For alle dashboards på listen skal du vælge et ikon for at [dele dashboardet med andre](../collaborate-share/service-share-dashboards.md) eller for at åbne vinduet **Indstillinger** for dashboardet. For en rapport skal du vælge ikonet for at [analysere i Excel](../collaborate-share/service-analyze-in-excel.md), [omdøbe](../create-reports/service-rename.md) eller [få indsigt](end-user-insights.md).  
 
 ## <a name="limitations-and-troubleshooting"></a>Begrænsninger og fejlfinding
 * Hvis du ikke kan se "Få vist relaterede", skal du i stedet kigget efter ![ikonet Få vist relaterede](./media/end-user-related/power-bi-view-related-icon-new.png). Vælg ikonet for at åbne ruden **Relateret indhold**.
@@ -75,6 +75,5 @@ Her kan du handle direkte på det relaterede indhold. Vælg f.eks. et dashboard-
 * Funktionen Relateret indhold fungerer ikke til streaming af datasæt.
 
 ## <a name="next-steps"></a>De næste trin
-* [Kom i gang med Power BI-tjenesten](../service-get-started.md)
+* [Kom i gang med Power BI-tjenesten](../fundamentals/service-get-started.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

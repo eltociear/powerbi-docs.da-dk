@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: maggies
-ms.openlocfilehash: 5ef019c1c8d488735509ac3c2767fbc9d395786a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 074bc95a9e259df84211d3f922831db323d506cc
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78922085"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348660"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Angiv data direkte i en sideinddelt rapport i Report Builder – Power BI
 
@@ -22,7 +22,7 @@ I denne artikel kan du få mere at vide om en funktion i den nye version af SQL 
 ## <a name="prerequisites"></a>Forudsætninger
 
 - Hvis du vil angive data direkte i en sideinddelt rapport, skal du installere den nye version af [Report Builder fra Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53613). 
-- Hvis du vil gemme din sideinddelte rapport i Power BI-tjenesten, skal du bruge en [Power BI Pro-konto](../service-self-service-signup-for-power-bi.md) og have skriveadgang til et arbejdsområde i en [Power BI Premium-kapacitet](../service-premium-what-is.md).
+- Hvis du vil gemme din sideinddelte rapport i Power BI-tjenesten, skal du bruge en [Power BI Pro-konto](../fundamentals/service-self-service-signup-for-power-bi.md) og have skriveadgang til et arbejdsområde i en [Power BI Premium-kapacitet](../admin/service-premium-what-is.md).
 - Hvis du vil gemme din sideinddelte rapport på en rapportserver, skal du have tilladelse til at [redigere filen RsReportServer.config](#upload-the-paginated-report-to-a-report-server).
 
 ## <a name="get-started"></a>Kom godt i gang

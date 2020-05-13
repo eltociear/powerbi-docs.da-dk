@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/27/2020
-ms.openlocfilehash: 6ee1740d536a1bfd248b91d002142470b3894180
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3ce1ae5207af6f4aaf844679bcd3ae52d2c13819
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79381301"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348154"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 
@@ -23,8 +23,8 @@ Download [Power BI-rapportserver og Power BI Desktop optimeret til Power BI-rapp
 
 Du kan finde relaterede oplysninger om nyheder i Power BI under:
 
-* [Nyheder i Power BI-tjenesten](../service-whats-new.md)
-* [Nyheder i Power BI Desktop](../desktop-latest-update.md)
+* [Nyheder i Power BI-tjenesten](../fundamentals/service-whats-new.md)
+* [Nyheder i Power BI Desktop](../fundamentals/desktop-latest-update.md)
 * [Nyheder i mobilappsene til Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
 
 ## <a name="january-2020"></a>Januar 2020
@@ -128,7 +128,7 @@ I denne måned udgiver vi et nyt filformat: .pbids, som du kan bruge til at str�
 
 Når en rapportforfatter åbner en. pbids-fil, spørger Power BI Desktop efter godkendelse for at oprette forbindelse til den datakilde, der er angivet i filen. Brugeren vælger derefter de tabeller, der skal indlæses i modellen. Brugerne skal muligvis også vælge databasen, hvis der ikke blev angivet en i filen. Herfra kan rapportforfatteren begynde at oprette visualiseringer.
 
-Find oplysninger og eksempler under afsnittet [Brug .pbids-filer til at hente data](../desktop-data-sources.md#using-pbids-files-to-get-data) i artiklen "Datakilder i Power BI Desktop".
+Find oplysninger og eksempler under afsnittet [Brug .pbids-filer til at hente data](../connect-data/desktop-data-sources.md#using-pbids-files-to-get-data) i artiklen "Datakilder i Power BI Desktop".
 
 *Forbedringer af ydeevnen i forbindelse med udformningshandlinger*
 
@@ -239,11 +239,11 @@ Her er nogle af højdepunkterne i denne version:
 
 #### <a name="performance-analyzer"></a>Effektivitetsanalyse 
 
-Hvis din rapport kører langsommere end forventet, kan du prøve Effektivitetsanalyse i Power BI Desktop. Når du starter det, oprettes der en logfil med oplysninger om alle de handlinger, du foretager i rapporten. Læse mere om [Effektivitetsanalyse](../desktop-performance-analyzer.md).
+Hvis din rapport kører langsommere end forventet, kan du prøve Effektivitetsanalyse i Power BI Desktop. Når du starter det, oprettes der en logfil med oplysninger om alle de handlinger, du foretager i rapporten. Læse mere om [Effektivitetsanalyse](../create-reports/desktop-performance-analyzer.md).
 
 #### <a name="new-modeling-view"></a>Ny udformningsvisning
 
-I den nye Udformningsvisning i Power BI Desktop kan du få vist og arbejde med komplekse datasæt, der indeholder mange tabeller. Højdepunkterne omfatter flere diagramlayout og masseredigering af kolonner, målinger og tabeller. Læs mere om [Udformningsvisning](../desktop-modeling-view.md).
+I den nye Udformningsvisning i Power BI Desktop kan du få vist og arbejde med komplekse datasæt, der indeholder mange tabeller. Højdepunkterne omfatter flere diagramlayout og masseredigering af kolonner, målinger og tabeller. Læs mere om [Udformningsvisning](../transform-model/desktop-modeling-view.md).
 
 #### <a name="accessible-visual-interaction"></a>Tilgængelig interaktion med visualiseringer
 
@@ -251,11 +251,11 @@ Nu kan du få adgang til datapunkter i mange af de indbyggede visualiseringer ve
 
 #### <a name="conditional-formatting-titles-and-web-url-actions"></a>Handlinger med titler og URL-adresser i forbindelse med betinget formatering
 
-Power BI-rapporter er interaktive. Det giver mening, at titler i en rapport er dynamiske, så de afspejler rapportens aktuelle tilstand. Du kan bruge den samme udtryksbundne formatering til at gøre URL-adresserne til dine knapper, figurer og billeder dynamiske. Læs mere om [udtryksbaserede titler](../desktop-conditional-format-visual-titles.md).
+Power BI-rapporter er interaktive. Det giver mening, at titler i en rapport er dynamiske, så de afspejler rapportens aktuelle tilstand. Du kan bruge den samme udtryksbundne formatering til at gøre URL-adresserne til dine knapper, figurer og billeder dynamiske. Læs mere om [udtryksbaserede titler](../create-reports/desktop-conditional-format-visual-titles.md).
 
 #### <a name="cross-highlight-by-axis-labels"></a>Krydsfremhævning af aksemærkater
 
-Vælg kategorimærkaterne på aksen i en visualisering for at krydsfremhæve andre elementer på en side, ligesom du ville vælge datapunkter i en visualisering. Læs mere om [krydsfremhævning](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+Vælg kategorimærkaterne på aksen i en visualisering for at krydsfremhæve andre elementer på en side, ligesom du ville vælge datapunkter i en visualisering. Læs mere om [krydsfremhævning](../create-reports/power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
 
 #### <a name="all-the-new-features"></a>Alle de nye funktioner
 

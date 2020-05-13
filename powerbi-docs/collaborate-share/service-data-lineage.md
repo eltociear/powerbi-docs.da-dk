@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 02/27/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: fc1f55fbadfaa6c25dd9140a41064eaa876013df
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 101217023576783a32491b21ba254d54736b27db
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525393"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348200"
 ---
 # <a name="data-lineage"></a>Dataafstamning
 I moderne BI-projekter (Business Intelligence) kan det være en udfordring for mange kunder at forstå flowet af data fra datakilden til destinationen. Udfordringen er endnu større, hvis du har oprettet avancerede analyseprojekter, der strækker sig over flere datakilder, artefakter og afhængigheder. Spørgsmål som "Hvad sker der, hvis jeg ændrer disse data?" eller "Hvorfor er denne rapport ikke ajourført?" kan være vanskelige at besvare. Det kan være nødvendigt med et team af eksperter eller en grundig undersøgelse for at forstå dem. Vi har designet en dataafstamningsvisning for at hjælpe dig med at besvare disse spørgsmål.
@@ -88,9 +88,9 @@ Afstamningsvisning er et interaktivt lærred. Du kan bruge musen og touchpad'en 
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
-- Afstamningsvisning er ikke tilgængelig i Internet Explorer. Se [Understøttede browsere til Power BI](../power-bi-browsers.md) for at få mere at vide.
+- Afstamningsvisning er ikke tilgængelig i Internet Explorer. Se [Understøttede browsere til Power BI](../fundamentals/power-bi-browsers.md) for at få mere at vide.
 
 ## <a name="next-steps"></a>De næste trin
 
-* [Introduktion til datasæt på tværs af arbejdsområder (prøveversion)](../service-datasets-across-workspaces.md)
+* [Introduktion til datasæt på tværs af arbejdsområder (prøveversion)](../connect-data/service-datasets-across-workspaces.md)
 * [Effektanalyse af datasæt](service-dataset-impact-analysis.md)

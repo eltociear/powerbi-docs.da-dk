@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 04/15/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e74a59d3ff4a5568352c647ec9f384ad8c3a09b8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 53a4ae78fa996c1e48ed0c16e0caf15e4f687697
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81638519"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347924"
 ---
 # <a name="opt-in-to-the-workspace-new-look-preview"></a>Tilmed dig det nye udseende af arbejdsområder (prøveversion)
 
-Arbejdsområder har fået et nyt udseende, der falder sammen med Power BI-tjenestens [nye udseende](../service-new-look.md). Alle der bruger Power BI-tjenesten (app.powerbi.com) kan tilmelde sig. Når du aktiverer det **nye udseende** på den sorte overskriftslinje, vælger du det nye udseende for rapporter og arbejdsområder. Alle arbejdsområder, både klassiske og nye, kan drage fordel af det nye udseende.
+Arbejdsområder har fået et nyt udseende, der falder sammen med Power BI-tjenestens [nye udseende](../consumer/service-new-look.md). Alle der bruger Power BI-tjenesten (app.powerbi.com) kan tilmelde sig. Når du aktiverer det **nye udseende** på den sorte overskriftslinje, vælger du det nye udseende for rapporter og arbejdsområder. Alle arbejdsområder, både klassiske og nye, kan drage fordel af det nye udseende.
 
-Leder du efter oplysninger om det nye udseende af **Power BI Desktop**? Se under [Brug det opdaterede bånd i Power BI Desktop](../desktop-ribbon.md).
+Leder du efter oplysninger om det nye udseende af **Power BI Desktop**? Se under [Brug det opdaterede bånd i Power BI Desktop](../create-reports/desktop-ribbon.md).
 
 ## <a name="features-of-the-new-look"></a>Funktioner i det nye udseende
 
@@ -50,7 +50,6 @@ Hvis du har brug for at vende tilbage til det gamle udseende, skal du blot skubb
 
 ## <a name="next-steps"></a>Næste trin
 
-- [Brug det opdaterede bånd i Power BI Desktop](../desktop-ribbon.md)
-- [Det "nye udseende" af Power BI-tjenesten](../service-new-look.md)
+- [Brug det opdaterede bånd i Power BI Desktop](../create-reports/desktop-ribbon.md)
+- [Det "nye udseende" af Power BI-tjenesten](../consumer/service-new-look.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

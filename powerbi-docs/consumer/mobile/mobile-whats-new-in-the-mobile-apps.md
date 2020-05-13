@@ -8,19 +8,19 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: 8235f95d724b34e7ea815579e6f8ed6a1f71e409
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: dd3d3702524bc8939720a177dcdcc291081542f4
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841704"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349258"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
 
 * [Power BI-teamets blog til mobilapps](https://powerbi.microsoft.com/blog/tag/mobile/)
-* [Nyheder i Power BI Desktop](../../desktop-latest-update.md)  
-* [Nyheder i Power BI-tjenesten](../../service-whats-new.md)
+* [Nyheder i Power BI Desktop](../../fundamentals/desktop-latest-update.md)  
+* [Nyheder i Power BI-tjenesten](../../fundamentals/service-whats-new.md)
 
 >[!NOTE]
 >Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
@@ -476,7 +476,7 @@ Læs [oversigten over funktioner i mobilapps for juli 2017](https://powerbi.micr
 
 ### <a name="june-2107"></a>Juni 2017
 #### <a name="all-devices"></a>Alle enheder
-**Opret appfavoritter** Du kan allerede gøre et dashboard til en favorit. For nylig [tilføjede Power BI apps](../../service-create-distribute-apps.md), og du kan nu også gøre apps til favoritter. 
+**Opret appfavoritter** Du kan allerede gøre et dashboard til en favorit. For nylig [tilføjede Power BI apps](../../collaborate-share/service-create-distribute-apps.md), og du kan nu også gøre apps til favoritter. 
 
 ### <a name="may-2017"></a>Maj 2017
 #### <a name="all-devices"></a>Alle enheder
@@ -493,7 +493,7 @@ Læs mere om [hvordan dit Power BI-indhold er organiseret](mobile-apps-quickstar
 Læs [oversigten over funktioner i mobilapps for april 2017](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-march-april-2017/)
 
 #### <a name="all-devices"></a>Alle enheder
-**Baggrundsfarve for telefonrapporter** Når du definerer en baggrundsfarve for en rapport i Power BI Desktop, får telefonrapporten den samme baggrundsfarve. Mere om [optimering af rapportsider for telefoner](../../desktop-create-phone-report.md).
+**Baggrundsfarve for telefonrapporter** Når du definerer en baggrundsfarve for en rapport i Power BI Desktop, får telefonrapporten den samme baggrundsfarve. Mere om [optimering af rapportsider for telefoner](../../create-reports/desktop-create-phone-report.md).
 
 **Udarbejd mobilvenlige Power BI-visuals** Læs denne [Udviklerguide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) med tip til oprettelse af Power BI-visuals, der ser godt ud og fungerer godt på mobilenheder.
 
@@ -553,7 +553,7 @@ Læs [oversigten over funktioner i mobilapps for januar 2017](https://powerbi.mi
 #### <a name="all-devices"></a>Alle enheder
 **Indlæs mere end 100 rækker i tabeller og matrixer** Hvis du har en stor tabel eller matrix på dit dashboard eller i en rapport, vises der nu så mange data som muligt i feltet. I fokuseringstilstand kan du rulle ned for at indlæse ekstra rækker.
 
-**Telefonrapport – offentlig tilgængelighed** Power BI-telefonrapporter er nu offentligt tilgængelige. Du kan tilpasse en stående visning af en eksisterende rapport for mobilbrugere i Power BI Desktop. Få mere at vide om [oprettelse af telefonrapporter i Power BI Desktop](../../desktop-create-phone-report.md) og [rapportoplevelsen på telefoner](mobile-apps-view-phone-report.md).
+**Telefonrapport – offentlig tilgængelighed** Power BI-telefonrapporter er nu offentligt tilgængelige. Du kan tilpasse en stående visning af en eksisterende rapport for mobilbrugere i Power BI Desktop. Få mere at vide om [oprettelse af telefonrapporter i Power BI Desktop](../../create-reports/desktop-create-phone-report.md) og [rapportoplevelsen på telefoner](mobile-apps-view-phone-report.md).
 
 #### <a name="ios"></a>iOS
 **Eksempel på SSRS-godkendelse ved hjælp af ADFS (Active Directory Federation Services)** Nu kan du logge på lokale SQL Server Reporting Services-servere fra din mobilenhed med din organisationskonto. Læs mere om [brug af OAuth til at oprette forbindelse til SSRS-servere](mobile-oauth-ssrs.md).
@@ -644,7 +644,7 @@ Læs [Oversigt over funktioner i Power BI-mobilapps i oktober 2016](https://powe
 #### <a name="all-phones"></a>Alle telefoner
 **Favoritter** Få vist din foretrukne dashboards fra alle Power BI-mobilapps og administrer listen over favoritter fra Power BI-mobilapps til iOS- og Windows 10-enheder. Læs mere om [favoritter i Power BI-mobilappene](mobile-apps-favorites.md).
 
-**Klassificering af dashboarddata** Få vist de data, som dashboardejere har tildelt til deres dashboards. Læs mere om [klassificering af dashboards](../../service-data-classification.md).
+**Klassificering af dashboarddata** Få vist de data, som dashboardejere har tildelt til deres dashboards. Læs mere om [klassificering af dashboards](../../create-reports/service-data-classification.md).
 
 **Datadrevne vigtige beskeder** Få meddelelse om en vigtig besked, når dataene ændres på forudangivne måder for KPI'er, målinger og kortfelter. Få mere at vide om:
 
@@ -659,14 +659,14 @@ Læs [Oversigt over funktioner i Power BI-mobilapps i oktober 2016](https://powe
 
 **Understøttelse af Intune MAM** Øget understøttelse af Microsoft Intune MAM-funktioner (Mobile Application Management).
 
-Læs mere om [Microsoft Intune i Power BI-mobilapps](../../service-admin-mobile-intune.md).
+Læs mere om [Microsoft Intune i Power BI-mobilapps](../../admin/service-admin-mobile-intune.md).
 
 #### <a name="windows-10-devices"></a>Windows 10-enheder
 **Fuldskærms- og præsentationstilstande** Du kan få vist rapporter i præsentationstilstand på Surface Hub, og du kan få vist dashboards, rapporter og felter i fuldskærmsvisning på Windows 10-enheder.
 
 ### <a name="july-2016"></a>Juli 2016
 #### <a name="all-phones"></a>Alle telefoner
-I Power BI-tjenesten kan du nu [oprette en visning af et dashboard specielt til telefoner](../../service-create-dashboard-mobile-phone-view.md) i stående tilstand. 
+I Power BI-tjenesten kan du nu [oprette en visning af et dashboard specielt til telefoner](../../create-reports/service-create-dashboard-mobile-phone-view.md) i stående tilstand. 
 
 #### <a name="android-phones"></a>Android-telefoner
 **Fanen Foretrukne** Få adgang til dine foretrukne dashboards fra en enkelt placering.
@@ -795,7 +795,7 @@ Alle forbedringerne i januar er allerede i den nye [Power BI-app til Windows 10-
 
 **R-felter og webwidgets** Få vist disse nye felttyper på dashboards på din mobilenhed.
 
-**Bing-dashboards** I Power BI-tjenesten kan du nu oprette [dashboards med Bing-søgeresultater](../../service-connect-to-services.md) og få dem vist på din mobilenhed.
+**Bing-dashboards** I Power BI-tjenesten kan du nu oprette [dashboards med Bing-søgeresultater](../../connect-data/service-connect-to-services.md) og få dem vist på din mobilenhed.
 
 **Rapportsider fastgjort som felter til dashboards** Nu hvor du kan fastgøre en hel rapportside til et dashboard i Power BI-tjenesten, kan du få vist rapportsider i Power BI-appen på din iPhone eller på din Android-telefon.
 
@@ -805,41 +805,42 @@ Power BI-teamet afsluttede 2015 på fornem vis med flere overordnede tilføjelse
 #### <a name="sql-server-2016-reporting-services-mobile-reports-in-ios"></a>SQL Server 2016 Reporting Services-mobilrapporter i iOS
 Nu kan du få vist dine SQL Server-mobilrapporter i Power BI-appen på din iOS-enhed, uanset om det er en iPad eller iPhone. Læs mere:
 
-* Blogindlæg om [SQL 16 SSRS på Power BI-app til iOS](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/sql-16-ssrs-on-power-bi-app-for-ios.aspx)
+* Blogindlæg om [SQL 16 SSRS på Power BI-app til iOS](https://powerbi.microsoft.com/blog/sql-16-ssrs-on-power-bi-app-for-ios/
+)
 * Få vist dokumentation til [SQL Server-mobilrapporter og KPI'er i apps til iPhone og iPad](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)
 
 #### <a name="power-bi-app-for-windows-10-phones"></a>Power BI-app til Windows 10-enheder
 Den nye Power BI-app til Windows 10-telefoner er optimeret til touch og mobil produktivitet. Udforsk dashboards og rapporter, inviter kollegaer til at få vist data, og del indsigt via mail for at få engageret dit team. Du kan også [fastgøre Power BI-dashboards til startskærmen på din Windows-telefon](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
-* Læs [blogindlæg om Power BI-app til Windows 10-telefoner](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/announcing-the-power-bi-app-for-windows-10-mobile.aspx).
+* Læs [blogindlæg om Power BI-app til Windows 10-telefoner](https://powerbi.microsoft.com/blog/announcing-the-power-bi-app-for-windows-10-mobile/).
 * [Kom i gang med Power BI-mobilappen til Windows 10-telefoner](mobile-windows-10-phone-app-get-started.md).
 
 #### <a name="other-additions"></a>Andre tilføjelser
-Læs [blogindlæg om Power BI-mobilapps fra december](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/power-bi-mobile-apps-update-_2d00_-december-2015.aspx) for at få flere oplysninger.
+Læs [blogindlæg om Power BI-mobilapps fra december](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-2d00-december-2015/) for at få flere oplysninger.
 
 * Du kan modtage meddelelser, når en kollega deler et dashboard med dig. (iOS)
 * Få vist hele fastgjorte rapportsider på dine dashboards. (iOS og Android)
-* [Scan en QR-kode](https://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx), og gå direkte til et relevant felt på din Android-telefon.
+* [Scan en QR-kode](https://powerbi.microsoft.com/blog/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes/), og gå direkte til et relevant felt på din Android-telefon.
 
 ### <a name="november-2015"></a>November 2015
-Læs [blogindlæg om Power BI – Mobil fra november 2015](https://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-mobile-apps-update-_2d00_-november-2015.aspx).
+Læs [blogindlæg om Power BI – Mobil fra november 2015](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-2d00-november-2015/).
 
 #### <a name="all-power-bi-mobile-apps"></a>Alle Power BI-mobilapps
 * En ny velkomstoplevelse.
 * Forbedret datakapacitet i diagrammer.
 
 #### <a name="ios-and-android-mobile-apps"></a>iOS- og Android-mobilapps
-* Virksomheder kan nu [konfigurere Power BI-mobilapps til iOS og Android med Microsoft Intune](../../service-admin-mobile-intune.md) for at administrere enheder og apps.
+* Virksomheder kan nu [konfigurere Power BI-mobilapps til iOS og Android med Microsoft Intune](../../admin/service-admin-mobile-intune.md) for at administrere enheder og apps.
 
 #### <a name="iphone-mobile-app"></a>iPhone-mobilapp
 * [Føj et billedfelt til et dashboard](mobile-iphone-app-get-started.md) direkte fra din iPhone.
-* [Opret QR-koder i Power BI-tjenesten](../../service-create-qr-code-for-tile.md), og scan dem derefter fra din iPhone for at åbne Power BI-appen til et bestemt felt.
+* [Opret QR-koder i Power BI-tjenesten](../../create-reports/service-create-qr-code-for-tile.md), og scan dem derefter fra din iPhone for at åbne Power BI-appen til et bestemt felt.
 
 #### <a name="the-power-bi-app-for-windows-devices"></a>Power BI-appen til Windows-enheder
-* [Link direkte fra et felt til en bestemt webadresse](../../service-dashboard-edit-tile.md#hyperlink).
+* [Link direkte fra et felt til en bestemt webadresse](../../create-reports/service-dashboard-edit-tile.md#hyperlink).
 
 ### <a name="october-2015"></a>Oktober 2015
-Læs [blogindlæg om Power BI – Mobil fra midt i oktober](https://blogs.msdn.com/b/powerbi/archive/2015/10/21/power-bi-mobile-mid-october-updates-are-here.aspx).
+Læs [blogindlæg om Power BI – Mobil fra midt i oktober](https://powerbi.microsoft.com/blog/power-bi-mobile-mid-october-updates-are-here/).
 
 #### <a name="all-power-bi-mobile-apps"></a>Alle Power BI-mobilapps
 * Kurvediagrammer med en procentdel-baseret y-akse beregner nu det visuelle område i overensstemmelse med de faktiske data. Grafen starter nu fra det laveste datapunkt i diagrammet i stedet for fra en standardværdi.
@@ -851,12 +852,12 @@ Læs [blogindlæg om Power BI – Mobil fra midt i oktober](https://blogs.msdn.c
 * Hold dig ajour med dine gruppers nyeste dashboards ved at modtage meddelelser på din iPhone, hver gang et gruppemedlem føjer et dashboard til en af dine grupper.
   
     ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
-* Du kan nu få vist dashboards vandret blot ved at dreje telefonen. Læs mere om [liggende tilstand i iPhone-appen](https://blogs.msdn.com/b/powerbi/archive/2015/11/02/enjoy-the-landscape-with-the-power-bi-iphone-app.aspx).
+* Du kan nu få vist dashboards vandret blot ved at dreje telefonen. Læs mere om [liggende tilstand i iPhone-appen](https://powerbi.microsoft.com/blog/enjoy-the-landscape-with-the-power-bi-iphone-app/).
   
     ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
 
 ### <a name="september-2015"></a>September 2015
-Forbedringer i Power BI-mobilapps – Android, iOS (iPhone og iPad) og Windows. Læs [blogindlæg om Power BI – Mobil fra midt i september](https://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).
+Forbedringer i Power BI-mobilapps – Android, iOS (iPhone og iPad) og Windows. Læs [blogindlæg om Power BI – Mobil fra midt i september](https://powerbi.microsoft.com/blog/power-bi-mobile-mid-september-updates-are-here/).
 
 #### <a name="android"></a>Android
 * Understøttelse af gruppearbejdsområder: Samarbejd med kolleger i gruppearbejdsområder. 

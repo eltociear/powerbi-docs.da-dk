@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/20/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 9a59f8e230ecd8eec6338e92b7fb01e525831617
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a22bba65b44446e7027627a24ebcf316f8f073d4
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79039974"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348384"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Ofte stillede spørgsmål om Power BI
 
@@ -42,21 +42,21 @@ Du kan få mere at vide under [Hvilken type licens har jeg?](end-user-license.md
 
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Hvad hvis jeg har spørgsmål til Power BI Premium?
 
-For spørgsmål knyttet til Power BI Premium henvises til [Power BI Premium – ofte stillede spørgsmål](../service-premium-faq.md).
+For spørgsmål knyttet til Power BI Premium henvises til [Power BI Premium – ofte stillede spørgsmål](../admin/service-premium-faq.md).
 
 ## <a name="what-is-power-bi-desktop"></a>Hvad er Power BI Desktop?
 
-Power BI Desktop er et gratis program, du kan installere direkte på dine egne computere. Power BI Desktop fungerer i sammenhæng med Power BI-tjenesten.  Datateknikere, rapportdesignere, administratorer og udviklere arbejder med Power BI Desktop for at oprette rapporter og gøre dem tilgængelige for *forbrugere* af Power BI-tjenesten. Læs mere om [Hvad er Power BI Desktop](../desktop-what-is-desktop.md).
+Power BI Desktop er et gratis program, du kan installere direkte på dine egne computere. Power BI Desktop fungerer i sammenhæng med Power BI-tjenesten.  Datateknikere, rapportdesignere, administratorer og udviklere arbejder med Power BI Desktop for at oprette rapporter og gøre dem tilgængelige for *forbrugere* af Power BI-tjenesten. Læs mere om [Hvad er Power BI Desktop](../fundamentals/desktop-what-is-desktop.md).
 
 ## <a name="what-do-i-need-to-use-the-power-bi-service-as-a-consumer"></a>Hvad kræves der, for at jeg kan bruge Power BI-tjenesten som *forbruger*?
 
 Hvis din virksomhed har købt Power BI-licenser eller en Premium-kapacitetskonto, skal du bare have en webbrowser og legitimationsoplysninger. Du logger på med din arbejdsmailadresse og en adgangskode (angivet af din Power BI-administrator).  
 
-Tilmeld dig Power BI-tjenesten som enkeltperson. Se [den selvbetjente tilmeldingsproces til Power BI](../service-self-service-signup-for-power-bi.md)
+Tilmeld dig Power BI-tjenesten som enkeltperson. Se [den selvbetjente tilmeldingsproces til Power BI](../fundamentals/service-self-service-signup-for-power-bi.md)
 
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Hvorfor skal jeg tilmelde mig med min arbejdsmail?
 
-Power BI understøtter ikke mailadresser, der leveres af forbrugermailtjenester eller udbydere af telekommunikation. Få mere at vide om [den selvbetjente tilmeldingsproces til Power BI](../service-self-service-signup-for-power-bi.md).
+Power BI understøtter ikke mailadresser, der leveres af forbrugermailtjenester eller udbydere af telekommunikation. Få mere at vide om [den selvbetjente tilmeldingsproces til Power BI](../fundamentals/service-self-service-signup-for-power-bi.md).
 
 ## <a name="does-power-bi-support-mobile-devices"></a>Understøtter Power BI mobile enheder?
 
@@ -80,12 +80,12 @@ Du kan downloade Power BI-mobilappsene fra deres respektive butikker – det er 
 
 Du kan bruge følgende ressourcer til at komme i gang:
 
-* [Power BI-blog](https://blogs.msdn.com/b/powerbi/)
-* [Webinarer](../webinars.md)
+* [Power BI-blog](https://powerbi.microsoft.com/blog/)
+* [Webinarer](../fundamentals/webinars.md)
 * Sådan kommer du i gang med vores [YouTube-kanal](https://www.youtube.com/user/mspowerbi)
 * Artiklen [Kom i gang med Power BI som en *forbruger*](index.yml)
 * [Tilmeld dig vores community](https://community.powerbi.com/), og stil spørgsmål
-* Se [10 tips til at få hjælp](../service-tips-for-finding-help.md) for at få flere forslag.
+* Se [10 tips til at få hjælp](../fundamentals/service-tips-for-finding-help.md) for at få flere forslag.
 
 ## <a name="what-browsers-does-power-bi-support"></a>Hvilke browsere understøtter Power BI?
 
@@ -93,7 +93,7 @@ Her er en komplet liste over [understøttede browsere til Power BI](../service-b
 
 ## <a name="what-regions-and-languages-does-power-bi-support"></a>Hvilke områder og sprog understøtter Power BI?
 
-Her er en komplet liste over [områder og sprog, der understøttes af Power BI](../supported-languages-countries-regions.md).
+Her er en komplet liste over [områder og sprog, der understøttes af Power BI](../fundamentals/supported-languages-countries-regions.md).
 
 ## <a name="where-can-i-learn-more-about-security"></a>Hvor kan jeg få mere at vide om sikkerhed?
 
@@ -101,7 +101,7 @@ Få mere at vide om sikkerhed, beskyttelse af personlige oplysninger og overhold
 
 * Dette whitepaper om [Power BI-sikkerhed](https://go.microsoft.com/fwlink/?LinkId=829185)
 
-* Denne artikel om [understøttelse af Power BI sikkerhed](../service-admin-power-bi-security.md)
+* Denne artikel om [understøttelse af Power BI sikkerhed](../admin/service-admin-power-bi-security.md)
 
 ## <a name="how-do-i-undo-in-power-bi"></a>Hvordan fortryder jeg i Power BI?
 

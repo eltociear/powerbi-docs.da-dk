@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: af3ae969d0aedab3cc49e8d286ce71313da3d6bc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 557334ed8aecccd646fde92a6d2cfa7852aff36b
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77259780"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347211"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Introduktion til Power BI-mobilappen på Android-enheder
 Android-appen til Microsoft Power BI leverer BI-mobiloplevelsen til Power BI, Power BI Report Server og Reporting Services. Få vist og interager med dit firmas dashboards lokalt og i skyen overalt – med direkte, berøringsfølsom mobiladgang. Udforsk dataene i dashboards, og del dem med dine kollegaer i mails eller tekstmeddelelser. 
@@ -46,7 +46,7 @@ Find ud af, [hvad der er nyt i Power BI-mobilappene](../../mobile-whats-new-in-t
 Hvis du endnu ikke har tilmeldt dig, kan du gå til [Power BI-tjenesten](https://powerbi.com/) og tilmelde din egen konto for at oprette og lagre dashboards og rapporter samt samle dine data. Log derefter på Power BI fra din Android-enhed for at se dine egne dashboards overalt.
 
 1. I Power BI-tjenesten skal du trykke på [Tilmeld](https://go.microsoft.com/fwlink/?LinkID=513879) for at oprette en Power BI-konto.
-2. Gå i gang med at [oprette dine egne dashboards og rapporter](../../service-get-started.md).
+2. Gå i gang med at [oprette dine egne dashboards og rapporter](../../fundamentals/service-get-started.md).
 
 ## <a name="get-started-with-the-power-bi-app-on-your-device"></a>Kom i gang med Power BI-appen på din enhed
 1. Fra startskærmen på din Android-enhed åbner du Power BI til Android-app.
@@ -94,17 +94,17 @@ Microsoft Intune giver virksomhederne mulighed for at kontrollere ting som anmod
 > 
 > 
 
-Læs mere om at [konfigurere Power BI-mobilapps med Microsoft Intune](../../service-admin-mobile-intune.md). 
+Læs mere om at [konfigurere Power BI-mobilapps med Microsoft Intune](../../admin/service-admin-mobile-intune.md). 
 
 ## <a name="next-steps"></a>Næste trin
 Her er nogle andre ting, du kan gøre i Android-enhedsappen til Power BI med dashboards og rapporter i Power BI samt rapporter og KPI'er i Power BI-rapportserveren eller Reporting Services-webportalen.
 
 ### <a name="power-bi-dashboards-and-reports"></a>Power BI-dashboards og -rapporter
-* Få vist [dine apps](../../service-create-distribute-apps.md).
+* Få vist [dine apps](../../collaborate-share/service-create-distribute-apps.md).
 * Få vist dine [dashboards](../../mobile-apps-view-dashboard.md).
 * Udforske [fliserne på dine dashboards](../../mobile-tiles-in-the-mobile-apps.md).
 * Åbne [Power BI-rapporter](../../mobile-reports-in-the-mobile-apps.md).
-* Få vist [dine apps](../../service-create-distribute-apps.md).
+* Få vist [dine apps](../../collaborate-share/service-create-distribute-apps.md).
 * [Anmærke og dele fliser](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md).
 * Dele [dashboards](../../mobile-share-dashboard-from-the-mobile-apps.md).
 * [Scanne en Power BI QR-kode](../../mobile-apps-qr-code.md) med din Android-telefon for at åbne et relateret dashboardfelt eller en relateret rapport. 
@@ -119,5 +119,3 @@ Her er nogle andre ting, du kan gøre i Android-enhedsappen til Power BI med das
 * [Download Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867) fra Android App Store.
 * [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-
-
