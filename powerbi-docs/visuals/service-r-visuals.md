@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: eee7b67fcfaed987170baa8cb5a0b3c8cba86350
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: a7de3dfbbd378ea96f56c1d6d37d273434f5c2f9
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866401"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349810"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>Opret og brug R-visuals i Power BI
 
 [!INCLUDE[consumer-appliesto-nnyn](../includes/consumer-appliesto-nnyn.md)]
 
-Visuelle R-elementer kan i øjeblikket kun oprettes i **Power BI Desktop** og derefter publiceres på Power BI-tjenesten. Du kan finde flere oplysninger om oprettelse af R-visuals under [Opret i Power BI-visuals ved hjælp af R](../desktop-r-visuals.md).
+Visuelle R-elementer kan i øjeblikket kun oprettes i **Power BI Desktop** og derefter publiceres på Power BI-tjenesten. Du kan finde flere oplysninger om oprettelse af R-visuals under [Opret i Power BI-visuals ved hjælp af R](../create-reports/desktop-r-visuals.md).
 
 ## <a name="viewing-r-visuals-in-the-power-bi-service"></a>Opret R-visuals i Power BI-tjenesten
 Power BI-tjenesten understøtter visning og interaktion med visuelle elementer, der er oprettet med R-scripts. Visuelle elementer, der er oprettet med R-scripts, også kaldet *R-visuals*, kan vise avanceret dataformatering og analyse, f.eks. prognoser, ved hjælp af styrken i R's omfattende analyse- og visualiseringsfunktioner.
@@ -34,7 +34,7 @@ Det følgende billede viser et Power BI-dashboard med en samling af visuelle R-e
 
 ![Skærmbillede af rapportlærredet for Power BI-tjenesten](media/service-r-visuals/power-bi-r-visuals.png)
 
-Visuelle R-elementer oprettes i en [Power BI Desktop-rapport](../desktop-get-the-desktop.md), som rapporten vist på følgende billede.
+Visuelle R-elementer oprettes i en [Power BI Desktop-rapport](../fundamentals/desktop-get-the-desktop.md), som rapporten vist på følgende billede.
 
 ![Desktop-rapport med to visuals](media/service-r-visuals/power-bi-r-visual-desktop.png)
 
@@ -44,7 +44,7 @@ Når rapporten er oprettet i **Power BI Desktop**, kan du udgive rapporten på P
 
 Du kan downloade denne [Power BI Desktop-eksempelfil](https://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix-fil), der indeholder nogle visuelle R-elementer, for at se, hvordan det fungerer, og for at eksperimentere.
 
-Visuelle R-elementer, der er oprettet i **Power BI Desktop**, og derefter publiceres på Power BI-tjenesten, fungerer i de fleste tilfælde som andre visuelle elementer på Power BI-tjenesten. Du kan arbejde med, filtrere, oprette udsnit af og fastgøre dem til et dashboard eller dele dem med andre. Du kan finde flere oplysninger om at dele dashboards og visuelle elementer under [Del et dashboard med kolleger og andre](../service-share-dashboards.md). Én forskel fra andre visuelle elementer er, at visuelle R-elementer ikke kan vise værktøjstip og ikke kan bruges til at filtrere andre visuelle elementer.
+Visuelle R-elementer, der er oprettet i **Power BI Desktop**, og derefter publiceres på Power BI-tjenesten, fungerer i de fleste tilfælde som andre visuelle elementer på Power BI-tjenesten. Du kan arbejde med, filtrere, oprette udsnit af og fastgøre dem til et dashboard eller dele dem med andre. Du kan finde flere oplysninger om at dele dashboards og visuelle elementer under [Del et dashboard med kolleger og andre](../collaborate-share/service-share-dashboards.md). Én forskel fra andre visuelle elementer er, at visuelle R-elementer ikke kan vise værktøjstip og ikke kan bruges til at filtrere andre visuelle elementer.
 
 Som du kan se på billedet nedenfor, vises og fungerer visuelle R-elementer på Power BI-tjenesten, enten i dashboards eller rapporter, stort set som et hvilken som helst andet visuelt element, og brugerne behøver ikke at være opmærksomme på det underliggende R-script, der oprettede det visuelle element.
 
@@ -69,9 +69,9 @@ Som et andet eksempel viser følgende billede den fejlmeddelelse, der vises, nå
 ![Skærmbillede, der viser en kørselsfejl](media/service-r-visuals/r-visuals-service-5.png)
 
 ## <a name="licensing"></a>Licenser
-R-visuals kræver en [Power BI Pro](../service-self-service-signup-for-power-bi.md)-licens for at kunne gengives i rapporter, opdateres, filtreres og filtreres i tværgående retning. Du kan finde flere oplysninger om Power BI Pro-licenser, og hvordan de adskiller sig fra gratis licenser, under [Power BI Pro-indhold – Hvad er det?](../service-admin-purchasing-power-bi-pro.md)
+R-visuals kræver en [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md)-licens for at kunne gengives i rapporter, opdateres, filtreres og filtreres i tværgående retning. Du kan finde flere oplysninger om Power BI Pro-licenser, og hvordan de adskiller sig fra gratis licenser, under [Power BI Pro-indhold – Hvad er det?](../admin/service-admin-purchasing-power-bi-pro.md)
 
-Gratis brugere af Power BI kan kun anvende felter, der deles med dem i Premium-arbejdsområder. Du kan få mere at vide under [Køb af Power BI Pro](../service-admin-purchasing-power-bi-pro.md).
+Gratis brugere af Power BI kan kun anvende felter, der deles med dem i Premium-arbejdsområder. Du kan få mere at vide under [Køb af Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md).
 
 I nedenstående tabel beskrives visuelle R-elementers funktioner baseret på licenser.
 
@@ -88,7 +88,7 @@ I nedenstående tabel beskrives visuelle R-elementers funktioner baseret på lic
 ## <a name="known-limitations"></a>Kendte begrænsninger
 Visuelle R-elementer i Power BI-tjenesten har nogle få begrænsninger:
 
-* Understøttelse af R-visuals er begrænset til de pakker, der er identificeret [i Få mere at vide om, hvilke R-pakker der understøttes](../service-r-packages-support.md). Der er i øjeblikket ingen understøttelse af brugerdefinerede pakker.
+* Understøttelse af R-visuals er begrænset til de pakker, der er identificeret [i Få mere at vide om, hvilke R-pakker der understøttes](../connect-data/service-r-packages-support.md). Der er i øjeblikket ingen understøttelse af brugerdefinerede pakker.
 * Begrænsninger for datastørrelse – data, der bruges af det visuelle R-element til afbildning, er begrænset til 150.000 rækker. Hvis der vælges mere end 150.000 rækker, er det kun de øverste 150.000 rækker, der bruges, og der vises en meddelelse på billedet. Desuden er der en grænse på 250 MB for inputdataene.
 * Opløsning – alle R-visuals vises ved 72 DPI.
 * Afbildningsenhed – kun afbildning til standardenheden understøttes. 
@@ -119,7 +119,7 @@ R-pakker er samlinger af R-funktioner, data og kompileret kode, der er samlet i 
 
 **Power BI Desktop** kan bruge enhver type R-pakke uden begrænsninger. Du kan selv installere R-pakker til brug i **Power BI Desktop** (for eksempel ved hjælp af [RStudio IDE](https://www.rstudio.com/)).
 
-Visuelle R-elementer i **Power BI-tjenesten** understøttes af de pakker, der findes i afsnittet med **Understøttede pakker** i [denne artikel](../service-r-packages-support.md). Hvis du ikke kan finde en pakke, du er interesseret i, på listen med understøttede pakker, kan du anmode om support til pakken. Se [R-pakker i Power BI-tjenesten](../service-r-packages-support.md) for at få oplysninger om, hvordan du anmoder om support.
+Visuelle R-elementer i **Power BI-tjenesten** understøttes af de pakker, der findes i afsnittet med **Understøttede pakker** i [denne artikel](../connect-data/service-r-packages-support.md). Hvis du ikke kan finde en pakke, du er interesseret i, på listen med understøttede pakker, kan du anmode om support til pakken. Se [R-pakker i Power BI-tjenesten](../connect-data/service-r-packages-support.md) for at få oplysninger om, hvordan du anmoder om support.
 
 ### <a name="requirements-and-limitations-of-r-packages"></a>R-pakkers krav og begrænsninger
 Der er en række krav og begrænsninger for R-pakker:
@@ -130,11 +130,10 @@ Der er en række krav og begrænsninger for R-pakker:
   
   * For R-visuals kan du installere en vilkårlig pakke, herunder brugerdefinerede R-pakker
   * For brugerdefinerede R-visuals understøttes kun offentlige CRAN-pakker til automatisk installation af pakkerne.
-* Af hensyn til sikkerhed og beskyttelse af personlige oplysninger understøtter vi i øjeblikket ikke R-pakker, der leverer klient-/serverforespørgsler via internettet (f.eks. RgoogleMaps) i tjenesten. Brug af netværk er blokeret for denne type forsøg. Se [R-pakker i Power BI-tjenesten](../service-r-packages-support.md) for at få en liste over R-pakker, der understøttes og ikke understøttes.
+* Af hensyn til sikkerhed og beskyttelse af personlige oplysninger understøtter vi i øjeblikket ikke R-pakker, der leverer klient-/serverforespørgsler via internettet (f.eks. RgoogleMaps) i tjenesten. Brug af netværk er blokeret for denne type forsøg. Se [R-pakker i Power BI-tjenesten](../connect-data/service-r-packages-support.md) for at få en liste over R-pakker, der understøttes og ikke understøttes.
 * Godkendelsesprocessen for at medtage en ny R-pakke har et træ af afhængigheder. Nogle afhængigheder, der skal være installeret i tjenesten, kan ikke understøttes.
 
 ### <a name="supported-packages"></a>Understøttede pakker:
 Du finder en lang liste over understøttede R-pakker (og den korte liste over pakker, der ikke understøttes) i følgende artikel:
 
-* [R-pakker i Power BI-tjenesten](../service-r-packages-support.md)
-
+* [R-pakker i Power BI-tjenesten](../connect-data/service-r-packages-support.md)

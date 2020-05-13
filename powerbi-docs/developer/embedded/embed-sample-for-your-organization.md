@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 332b9d500aa45ed25199630422e89f890a81f6a3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 125c8ddbdda48b5c7249a6f810d33a65a5f908ee
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80621639"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349787"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Selvstudium: Integrer Power BI-indhold i en app til din organisation
 
@@ -31,7 +31,7 @@ I dette selvstudium får du at vide, hvordan du udfører følgende opgaver:
 
 Du skal have følgende for at komme i gang:
 
-* En [Power BI Pro-konto](../../service-self-service-signup-for-power-bi.md).
+* En [Power BI Pro-konto](../../fundamentals/service-self-service-signup-for-power-bi.md).
 * Et [Microsoft Azure](https://azure.microsoft.com/)-abonnement.
 * Du skal have din egen konfiguration af [Azure Active Directory-lejer](create-an-azure-active-directory-tenant.md).
 * Hvis du vil integrere sideinddelte rapporter, skal du som minimum have en P1-kapacitet. Se [Hvilken størrelse Premium-kapacitet skal jeg bruge til sideinddelte rapporter?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
@@ -60,7 +60,7 @@ Når du har oprettet dit program i Azure, skal du åbne programmet i Azure, navi
 
 ### <a name="create-a-workspace"></a>Opret et arbejdsområde
 
-Hvis du integrerer rapporter, dashboards eller felter for dine kunder, skal du placere dit indhold i et arbejdsområde. Der er forskellige typer arbejdsområder, som du kan konfigurere: [traditionelle arbejdsområder](../../service-create-workspaces.md) eller [nye arbejdsområder](../../service-create-the-new-workspaces.md).
+Hvis du integrerer rapporter, dashboards eller felter for dine kunder, skal du placere dit indhold i et arbejdsområde. Der er forskellige typer arbejdsområder, som du kan konfigurere: [traditionelle arbejdsområder](../../collaborate-share/service-create-workspaces.md) eller [nye arbejdsområder](../../collaborate-share/service-create-the-new-workspaces.md).
 
 ### <a name="create-and-publish-your-power-bi-reports"></a>Opret og udgiv dine Power BI-rapporter
 
@@ -381,9 +381,9 @@ Nu, hvor du er færdig med at udvikle dit program, er tiden kommet til at underb
 
 ### <a name="create-a-dedicated-capacity"></a>Opret en dedikeret kapacitet
 
-Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for indholdet i dit arbejdsområde. I forbindelse med sideinddelte rapporter skal du som minimum understøtte dit arbejdsområde med en P1-kapacitet. Du kan oprette en dedikeret kapacitet ved hjælp af [Power BI Premium ](../../service-premium-what-is.md).
+Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for indholdet i dit arbejdsområde. I forbindelse med sideinddelte rapporter skal du som minimum understøtte dit arbejdsområde med en P1-kapacitet. Du kan oprette en dedikeret kapacitet ved hjælp af [Power BI Premium ](../../admin/service-premium-what-is.md).
 
-I tabellen nedenfor kan du se en oversigt over de Power BI Premium-SKU'er, der er tilgængelige i [Microsoft Office 365](../../service-admin-premium-purchase.md):
+I tabellen nedenfor kan du se en oversigt over de Power BI Premium-SKU'er, der er tilgængelige i [Microsoft Office 365](../../admin/service-admin-premium-purchase.md):
 
 | Kapacitetsnode | Samlet antal vCores<br/>(back-end + front-end) | Back end-vCores | Front-end-vCores | Grænser for DirectQuery/liveforbindelser |
 | --- | --- | --- | --- | --- | --- |
@@ -418,7 +418,7 @@ Når du har oprettet en dedikeret kapacitet, kan du tildele dit arbejdsområde t
 
 ## <a name="admin-settings"></a>Administratorindstillinger
 
-Globale administratorer, eller Power BI-tjenesteadministratorer, kan slå muligheden for at bruge REST-API'erne til eller fra for en lejer. Power BI-administratorer kan angive denne indstilling for hele organisationen eller for enkelte sikkerhedsgrupper. Den er som standard aktiveret for hele organisationen. Du kan foretage disse ændringer i [Power BI-administrationsportalen](../../service-admin-portal.md).
+Globale administratorer, eller Power BI-tjenesteadministratorer, kan slå muligheden for at bruge REST-API'erne til eller fra for en lejer. Power BI-administratorer kan angive denne indstilling for hele organisationen eller for enkelte sikkerhedsgrupper. Den er som standard aktiveret for hele organisationen. Du kan foretage disse ændringer i [Power BI-administrationsportalen](../../admin/service-admin-portal.md).
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: c3218e20274c0607c2bbec86e961685ccd276659
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f02c383ddbe9eddca180ad8bd29816730c249561
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80487759"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349603"
 ---
 # <a name="what-is-power-bi"></a>Hvad er Power BI?
 **Power BI** er en samling af softwaretjenester, apps og forbindelser, der arbejder sammen for at forvandle usammenhængende data til faste, visuelt fordybende og interaktive indsigter. Dine data kan være et Excel-regneark eller en samling cloudbaserede hybride data warehouses og hybride data warehouses i det lokale miljø. Med Power BI kan du nemt oprette forbindelse til dine datakilder, visualisere og finde vigtigt indhold samt dele det med alle, du vil.
@@ -42,9 +42,9 @@ Det kan også være, du bruger alle elementer af Power BI på forskellige tidspu
 Den måde, du bruger Power BI på, kan være baseret på, hvilken funktion eller tjeneste i Power BI der er det bedste værktøj i din situation. Du kan f.eks. bruge Power BI Desktop til at oprette rapporter for dit eget team om statistikker for kundeengagementer, og du kan få vist lager og produktionsfremskridt på et dashboard i realtid i Power BI-tjenesten. Alle dele af Power BI er tilgængelige for dig, og derfor er det fleksibelt og overbevisende.
 
 Udforsk dokumenter, der er relevante for din rolle:
-- Power BI Desktop til [*designere*](../desktop-what-is-desktop.md)
+- Power BI Desktop til [*designere*](desktop-what-is-desktop.md)
 - Power BI for [*forbrugere*](../consumer/end-user-consumer.md)
-- Power BI for [*administratorer*](../service-admin-administering-power-bi-in-your-organization.md)
+- Power BI for [*administratorer*](../admin/service-admin-administering-power-bi-in-your-organization.md)
 - Power BI til *udviklere*
     * [Integreret analyse med Power BI](../developer/embedded/embedding.md)
     * [Hvad er Power BI Embedded i Azure?](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md)
@@ -71,5 +71,5 @@ Læs mere om [Power BI-rapportserver](../report-server/get-started.md).
 
 ## <a name="next-steps"></a>Næste trin
 - [Hurtig start: Find vej i Power BI-tjenesten](../service-the-new-power-bi-experience.md)   
-- [Selvstudium: Kom i gang med Power BI-tjenesten](../service-get-started.md)
-- [Hurtig start: Opret forbindelse til data i Power BI Desktop](../desktop-quickstart-connect-to-data.md)
+- [Selvstudium: Kom i gang med Power BI-tjenesten](service-get-started.md)
+- [Hurtig start: Opret forbindelse til data i Power BI Desktop](../connect-data/desktop-quickstart-connect-to-data.md)
