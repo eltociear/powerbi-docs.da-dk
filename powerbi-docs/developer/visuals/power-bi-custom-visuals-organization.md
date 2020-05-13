@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 52ebb1bf049024051846936237d35b202f00d630
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 6683efbf9fa9dea9215914c097f249362fbffff2
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80464593"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278807"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Visualiseringer til virksomheder i Power BI
 
@@ -42,8 +42,6 @@ I følgende artikel kan du få mere at vide om, hvordan du administrerer, udrull
 Der er adskillige overvejelser og begrænsninger, som du skal være opmærksom på.
 
 Administrator:
-
-* Ældre Power BI-visualiseringer (f.eks. Power BI-visualiseringer, som ikke er bygget oven på de nye versionerede API'er) understøttes ikke
 
 * Hvis et Power BI-visual fra ApSource eller en fil slettes fra lageret, gengives eventuelle eksisterende rapporter, som bruger det slettede visual, ikke. Sletning fra lageret kan ikke fortrydes. Hvis du midlertidig vil deaktivere et Power BI-visual fra ApSource eller en fil, skal du bruge funktionen "Deaktiver".
 

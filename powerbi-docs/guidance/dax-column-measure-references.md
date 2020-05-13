@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 3ca49008639f7e3e084c8d045bc911aff57b7b21
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 42d99c7139586a78565198b59bc74716261537e0
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75498731"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279612"
 ---
 # <a name="dax-column-and-measure-references"></a>DAX: Referencer til kolonner og målinger
 
@@ -43,7 +43,7 @@ Det anbefales, at du altid kvalificerer dine kolonnereferencer fuldt ud. Årsage
 
 ## <a name="measures"></a>Målinger
 
-En måling er et objekt på modelniveau. Derfor skal målingsnavne være entydige inden for modellen. Men i ruden **Felter** kan rapportforfattere se de målinger, der er knyttet til en enkelt modeltabel. Denne tilknytning er angivet af kosmetiske årsager, og du kan konfigurere den ved at angive egenskaben **Hjemmetabel** for målingen. Du kan finde flere oplysninger under [Målinger i Power BI Desktop (organisering af målinger)](../desktop-measures.md#organizing-your-measures).
+En måling er et objekt på modelniveau. Derfor skal målingsnavne være entydige inden for modellen. Men i ruden **Felter** kan rapportforfattere se de målinger, der er knyttet til en enkelt modeltabel. Denne tilknytning er angivet af kosmetiske årsager, og du kan konfigurere den ved at angive egenskaben **Hjemmetabel** for målingen. Du kan finde flere oplysninger under [Målinger i Power BI Desktop (organisering af målinger)](../transform-model/desktop-measures.md#organizing-your-measures).
 
 Det er muligt at bruge en fuldt kvalificeret måling i udtryk. DAX IntelliSense foreslår det endda. Det er dog ikke nødvendigt, og det er ikke en anbefalet praksis. Hvis du ændrer hjemmetabellen for en måling, brydes alle udtryk, der bruger en fuldt kvalificeret målingsreference til den. Du er derefter nødt til at redigere alle brudte formler for at fjerne (eller opdatere) målingsreferencen.
 
@@ -68,3 +68,4 @@ Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 
 - [Henvisning til DAX (Data Analysis Expressions)](/dax/)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+

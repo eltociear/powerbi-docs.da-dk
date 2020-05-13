@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 2f70b98ed540a2e5b87e5a949e30b0c1c02069d1
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: aea24e96acadbf9fee9e6dbf3aa395e09ef8e541
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "74700380"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279635"
 ---
 # <a name="dax-avoid-converting-blanks-to-values"></a>DAX: Undgå at konvertere BLANKs til værdier
 
@@ -66,7 +66,7 @@ I tabelvisual'et vises der nu kun de kunder, der har haft salg inden for den akt
 ![Der vises nu fire rækker med data i det samme tabelvisual. Hver række gælder for en kunde, der har en salgsværdi, og værdierne for Profit Margin har en anden værdi end nul.](media/dax-avoid-converting-blank/table-visual-good.png)
 
 > [!TIP]
-> Når det er nødvendigt, kan du konfigurere visualiseringen til at vise alle grupper (der returnerer værdier eller er BLANK) i filterkonteksten ved at aktivere indstillingen [Vis elementer uden data](../desktop-show-items-no-data.md).
+> Når det er nødvendigt, kan du konfigurere visualiseringen til at vise alle grupper (der returnerer værdier eller er BLANK) i filterkonteksten ved at aktivere indstillingen [Vis elementer uden data](../create-reports/desktop-show-items-no-data.md).
 
 ## <a name="recommendation"></a>Anbefaling
 
@@ -80,3 +80,4 @@ Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 
 - [Henvisning til DAX (Data Analysis Expressions)](/dax/)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+

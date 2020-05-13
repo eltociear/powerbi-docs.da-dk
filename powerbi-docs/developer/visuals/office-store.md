@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 90e914cf9b5c03542436750253fd959808403214
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1aa682a71fe7469f8a9c7d5415fb843400e5d312
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82613551"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148321"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publicer Power BI-visualiseringer i Partnercenter
 
@@ -27,7 +27,7 @@ Når du har oprettet en Power BI-visualisering, kan du publicere den i AppSource
 
 ## <a name="preparing-to-submit-your-power-bi-visual"></a>Forberedelse til indsendelse af Power BI-visualisering
 
-Før du indsender en Power BI-visualisering til AppSource, skal du sørge for, at du har læst [retningslinjerne for Power BI-visualiseringer](guidelines-powerbi-visuals.md) og [testet din brugerdefinerede visualisering](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md).
+Før du indsender en Power BI-visualisering til AppSource, skal du sørge for, at du har læst [retningslinjerne for Power BI-visualiseringer](guidelines-powerbi-visuals.md) og [testet din brugerdefinerede visualisering](./submission-testing.md).
 
 Når du er klar til at indsende din Power BI-visualisering, skal du bekræfte, at visualiseringen overholder alle de krav, der er angivet nedenfor.
 
@@ -99,9 +99,10 @@ Følg nedenstående trin for at indsende din Power BI-visualisering til Partnerc
 
 10. Vælg **Produktkonfiguration**, og klik på **Gennemse og publicer**.
 
+
 ## <a name="tracking-submission-status-and-usage"></a>Se statussen for indsendelsen og brugsdata
 
-* Du kan gennemse [valideringspolitikkerne](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
+Du kan gennemse [valideringspolitikkerne](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
 * Når du har indsendt visualiseringen, vil du kunne se statussen for den i [appdashboardet](https://sellerdashboard.microsoft.com/Application/Summary/).
 

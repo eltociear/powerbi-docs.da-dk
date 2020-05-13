@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: fdd7504823f088ed0e88657a6fcccaeb9a5a36d0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1ab1ed139a62b1929cb1b4da411bf7949a5d151e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79487803"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279750"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Vejledning til indstillinger for lejeradministrator
 
@@ -21,7 +21,7 @@ Denne artikel er målrettet Power BI-administratorer, der er ansvarlige for at k
 
 Vi yder vejledning om bestemte lejerindstillinger, der hjælper med at forbedre Power BI-oplevelsen, eller som kan udsætte din organisation for risiko. Vi anbefaler, at du altid konfigurerer din lejer i henhold til din organisations politikker og processer.
 
-[Lejerindstillinger](../service-admin-portal.md#tenant-settings) administreres på [administrationsportalen](https://app.powerbi.com/admin-portal/tenantSettings) og kan konfigureres af en [Power BI-tjenesteadministrator](../service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi). Mange lejerindstillinger kan begrænse egenskaber og funktioner til et begrænset antal brugere. Derfor anbefaler vi, at du først får kendskab til indstillingerne for at planlægge de sikkerhedsgrupper, du har brug for. Det kan måske være, at du kan anvende den samme sikkerhedsgruppe for flere indstillinger.
+[Lejerindstillinger](../admin/service-admin-portal.md#tenant-settings) administreres på [administrationsportalen](https://app.powerbi.com/admin-portal/tenantSettings) og kan konfigureres af en [Power BI-tjenesteadministrator](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi). Mange lejerindstillinger kan begrænse egenskaber og funktioner til et begrænset antal brugere. Derfor anbefaler vi, at du først får kendskab til indstillingerne for at planlægge de sikkerhedsgrupper, du har brug for. Det kan måske være, at du kan anvende den samme sikkerhedsgruppe for flere indstillinger.
 
 ## <a name="improve-power-bi-experience"></a>Opnå en bedre Power BI-oplevelse
 
@@ -88,7 +88,7 @@ Vi anbefaler, at du tildeler én eller flere sikkerhedsgrupper. Tilladelse til a
 
 ### <a name="publish-to-web"></a>Udgiv på internettet
 
-Funktionen [Publicer på internettet](../service-publish-to-web.md) gør det muligt at publicere offentlige rapporter på internettet. Hvis funktionen ikke anvendes korrekt, er der en risiko for, at fortrolige oplysninger bliver tilgængelige live på internettet.
+Funktionen [Publicer på internettet](../collaborate-share/service-publish-to-web.md) gør det muligt at publicere offentlige rapporter på internettet. Hvis funktionen ikke anvendes korrekt, er der en risiko for, at fortrolige oplysninger bliver tilgængelige live på internettet.
 
 Indstillingen **Publicer på internettet** er som standard aktiveret for hele organisationen, men den begrænser muligheden for at oprette integreringskoder for brugere, der ikke er administratorer. Du finder den i gruppen **Indstillinger for eksport og deling**.
 
@@ -109,7 +109,7 @@ Indstillingen **Eksportér data** er som standard aktiveret for hele organisatio
 Vi anbefaler, at du tildeler én eller flere sikkerhedsgrupper. Tilladelse til at publicere rapporter kan blive tildelt _eller afvist_ for disse grupper.
 
 > [!IMPORTANT]
-> Deaktivering af denne indstilling begrænser også brugen af funktionerne [Analysér i Excel](../service-analyze-in-excel.md) og [liveforbindelse](../desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) i Power BI-tjenesten.
+> Deaktivering af denne indstilling begrænser også brugen af funktionerne [Analysér i Excel](../collaborate-share/service-analyze-in-excel.md) og [liveforbindelse](../connect-data/desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) i Power BI-tjenesten.
 
 ![Indstillingen "Eksportér data" vises.](media/admin-tenant-settings/export-data.png)
 
@@ -118,7 +118,7 @@ Vi anbefaler, at du tildeler én eller flere sikkerhedsgrupper. Tilladelse til a
 
 ### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Tillad, at eksterne brugere kan redigere og administrere indhold i organisationen
 
-Det er muligt, at eksterne gæstebrugere kan redigere og administrere Power BI-indhold. Se flere oplysninger under [Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B](../service-admin-azure-ad-b2b.md).
+Det er muligt, at eksterne gæstebrugere kan redigere og administrere Power BI-indhold. Se flere oplysninger under [Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B](../admin/service-admin-azure-ad-b2b.md).
 
 Indstillingen **Tillad, at eksterne gæstebrugere kan redigere og administrere indhold i organisationen** er som standard deaktiveret for hele organisationen. Du finder den i gruppen **Indstillinger for eksport og deling**.
 
@@ -141,7 +141,8 @@ Hvis du ikke vil bruge udvikler-API'erne til at integrere indhold, anbefaler vi,
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Hvad er Power BI-administration?](../service-admin-administering-power-bi-in-your-organization.md)
-- [Administrer Power BI på administrationsportalen](../service-admin-portal.md)
+- [Hvad er Power BI-administration?](../admin/service-admin-administering-power-bi-in-your-organization.md)
+- [Administrer Power BI på administrationsportalen](../admin/service-admin-portal.md)
 - Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)
+
