@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: 7284532d95cce780f4022477faab9033adcd764a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c619f37ac062eec02eb379ba7cd97731254a171a
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79492600"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279382"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bedste praksis for ydeevnen i Power BI Embedded
 
@@ -59,7 +59,7 @@ Når du integrerer flere rapporter i den samme iframe, skal du ikke generere en 
 
 Organisationer med Power BI Premium-kapacitet eller Power BI Embedded-kapacitet kan drage fordel af cachelagring af forespørgsler for at fremskynde rapporter, der er knyttet til et datasæt.
 
-[Få mere at vide om cachelagring af forespørgsler i Power BI](../../power-bi-query-caching.md).
+[Få mere at vide om cachelagring af forespørgsler i Power BI](../../connect-data/power-bi-query-caching.md).
 
 ## <a name="preload"></a>Forudindlæs
 
@@ -99,7 +99,7 @@ Cachelagrede data gengives, når de er tilgængelige, men der genereres ingen yd
 Hvis du vil undersøge ydeevnen af rapportelementerne, kan du bruge Effektivitetsanalyse i Power BI Desktop.
 Med Effektivitetsanalyse kan du se og registrere logge, der måler, hvordan hver af dine rapportelementer klarer sig.
 
-[Få mere at vide om Effektivitetsanalyse](../../desktop-performance-analyzer.md).
+[Få mere at vide om Effektivitetsanalyse](../../create-reports/desktop-performance-analyzer.md).
 
 > [!NOTE]
 > Husk altid at sammenligne ydeevnen af den integrerede rapport med ydeevnen på powerbi.com. Det kan muligvis hjælpe dig med at forstå, hvor dine problemer med ydeevnen opstod

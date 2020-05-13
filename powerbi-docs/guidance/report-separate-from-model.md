@@ -8,18 +8,18 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/11/2020
 ms.author: v-pemyer
-ms.openlocfilehash: dad451da460abed65a69990394522f268d7f21cd
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 971c699170103d5521763679c93d3641c094cc58
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525241"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277427"
 ---
 # <a name="separate-reports-from-models-in-power-bi-desktop"></a>Adskil rapporter fra modeller i Power BI Desktop
 
 Når du opretter en ny Power BI Desktop-løsning, er "hent data" en af de første opgaver, du skal udføre. Når du henter data, kan det ende med to meget forskellige resultater. Det kan være:
 
-- At der oprettes en [direkte forbindelse](../desktop-report-lifecycle-datasets.md) til en model, som allerede er udgivet, og som kan være et Power BI-datasæt eller en Analysis Services-model, der hostes eksternt.
+- At der oprettes en [direkte forbindelse](../connect-data/desktop-report-lifecycle-datasets.md) til en model, som allerede er udgivet, og som kan være et Power BI-datasæt eller en Analysis Services-model, der hostes eksternt.
 - At udviklingen af en ny model startes, som enten kan være en importmodel, en DirectQuery-model eller en sammensat model.
 
 Denne artikel omhandler det andet scenarie. Den indeholder vejledning til, om en rapport og en model bør kombineres i en enkelt Power BI Desktop-fil.
@@ -67,7 +67,7 @@ Vi anbefaler, at du kontakter ejeren af hver relaterede artefakt for at give ved
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Opret forbindelse til datasæt i Power BI-tjenesten fra Power BI Desktop](../desktop-report-lifecycle-datasets.md)
+- [Opret forbindelse til datasæt i Power BI-tjenesten fra Power BI Desktop](../connect-data/desktop-report-lifecycle-datasets.md)
 - [Få vist relateret indhold i Power BI-tjenesten](../consumer/end-user-related.md)
 - [Dataafstamning](../collaborate-share/service-data-lineage.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

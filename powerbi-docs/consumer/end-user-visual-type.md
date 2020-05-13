@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 6bf8ccd9048262ce05aff68819ecdb31a44ddfe2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: acfcd863a537153e70734d5f83e89e384438885e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377184"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279428"
 ---
 # <a name="visual-types-in-power-bi"></a>Visualiseringstyper i Power BI
 
@@ -152,7 +152,7 @@ Rapportdesignere kan oprette en Power-app og integrere den i en Power BI-rapport
 ![Visualiseringer af Spørgsmål og svar](media/end-user-visual-type/power-bi-q-and-a.png)
 
 >[!TIP]
->På samme måde som [oplevelsen med Spørgsmål og svar på dashboards](../power-bi-tutorial-q-and-a.md) kan du bruge visualiseringen af Spørgsmål og svar til at stille spørgsmål om dine data i et naturligt sprog. 
+>På samme måde som [oplevelsen med Spørgsmål og svar på dashboards](../create-reports/power-bi-tutorial-q-and-a.md) kan du bruge visualiseringen af Spørgsmål og svar til at stille spørgsmål om dine data i et naturligt sprog. 
 
 Du kan finde flere oplysninger under [Visualiseringer af Spørgsmål og svar i Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
@@ -248,3 +248,4 @@ Når du skriver forespørgsler i naturligt sprog med Spørgsmål og svar i Power
 ## <a name="next-steps"></a>Næste trin
 [Interager med visualiseringer i rapporter, på dashboards og i apps](end-user-visualizations.md)    
 [Den rette visuelle reference fra sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+

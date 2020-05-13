@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: e2854d82d858bb1963b691d32d561c7b3bbfc11a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7ccff80391ed0625aac063af3bf7a86b83cd7e85
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78263639"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278117"
 ---
 # <a name="relationship-troubleshooting-guidance"></a>Vejledning til fejlfinding af relationer
 
@@ -44,18 +44,18 @@ Her er en liste over problemer sammen med mulige løsninger.
 
 |Problem|Mulige årsager|
 |---------|---------|
-|Der vises ingen resultater i visualiseringen|– Der er endnu ikke indlæst nogen data i modellen<br />– Der findes ingen data i filterkonteksten<br />– Sikkerhed på rækkeniveau håndhæves<br />– Relationerne overføres ikke mellem tabeller. _Følg tjeklisten ovenfor_<br />– Sikkerhed på rækkeniveau håndhæves, men en tovejsrelation er ikke aktiveret til overførsel. Se [Sikkerhed på rækkeniveau med Power BI Desktop](../desktop-rls.md)|
+|Der vises ingen resultater i visualiseringen|– Der er endnu ikke indlæst nogen data i modellen<br />– Der findes ingen data i filterkonteksten<br />– Sikkerhed på rækkeniveau håndhæves<br />– Relationerne overføres ikke mellem tabeller. _Følg tjeklisten ovenfor_<br />– Sikkerhed på rækkeniveau håndhæves, men en tovejsrelation er ikke aktiveret til overførsel. Se [Sikkerhed på rækkeniveau med Power BI Desktop](../create-reports/desktop-rls.md)|
 |Den samme værdi for hver gruppering vises i visualiseringen |– Der findes ingen relationer<br />– Relationerne overføres ikke mellem tabeller. _Følg tjeklisten ovenfor_|
 |Der vises resultater i visualiseringen, men de er ikke korrekte|– Visualiseringen er konfigureret forkert<br />– Målingslogikken er forkert<br />– Modeldataene skal opdateres<br />– Kildedataene er forkerte<br />– Relationskolonnerne er forkert relateret (kolonnen **Produkt-id** er f.eks. tilknyttet **Kunde-id**)<br />– Det er en relation mellem to DirectQuery-tabeller, og "en"-siden af kolonnen i en relation indeholder dubletværdier|
-|Der vises TOMME grupperinger eller udsnit/filterelementer, og kildekolonnerne indeholder ikke TOMME værdier|– Det er en stærk relation, og "mange"-siden af kolonnen indeholder værdier, der ikke er gemt i "en"-siden af kolonnen. Se [Modelrelationer i Power BI Desktop (Stærke relationer)](../desktop-relationships-understand.md#strong-relationships)<br />– Det er en stærk en til en-relation, og relaterede kolonner indeholder TOMME værdier. Se [Modelrelationer i Power BI Desktop (Stærke relationer)](../desktop-relationships-understand.md#strong-relationships)<br />– Der gemmes TOMME værdier for "mange"-siden af kolonnen i en inaktiv relation, eller der er værdier, som ikke er gemt på "en"-siden|
-|Der mangler data i visualiseringen|– Der er anvendt forkerte/uventede filtre<br />– Sikkerhed på rækkeniveau håndhæves<br />– Det er en svag relation, og der er TOMME værdier i relaterede kolonner, eller der er problemer med dataintegritet. Se [Modelrelationer i Power BI Desktop (Svage relationer)](../desktop-relationships-understand.md#weak-relationships)<br />– Det er en relation mellem to DirectQuery-tabeller, og relationen er konfigureret til at [antage referentiel integritet](../desktop-relationships-understand.md#assume-referential-integrity), men der er problemer med dataintegritet (uoverensstemmende værdier i relaterede kolonner)|
-|Sikkerhed på rækkeniveau håndhæves ikke korrekt|– Relationerne overføres ikke mellem tabeller. _Følg tjeklisten ovenfor_<br />– Sikkerhed på rækkeniveau håndhæves, men en tovejsrelation er ikke aktiveret til overførsel. Se [Sikkerhed på rækkeniveau med Power BI Desktop](../desktop-rls.md)|
+|Der vises TOMME grupperinger eller udsnit/filterelementer, og kildekolonnerne indeholder ikke TOMME værdier|– Det er en stærk relation, og "mange"-siden af kolonnen indeholder værdier, der ikke er gemt i "en"-siden af kolonnen. Se [Modelrelationer i Power BI Desktop (Stærke relationer)](../transform-model/desktop-relationships-understand.md#strong-relationships)<br />– Det er en stærk en til en-relation, og relaterede kolonner indeholder TOMME værdier. Se [Modelrelationer i Power BI Desktop (Stærke relationer)](../transform-model/desktop-relationships-understand.md#strong-relationships)<br />– Der gemmes TOMME værdier for "mange"-siden af kolonnen i en inaktiv relation, eller der er værdier, som ikke er gemt på "en"-siden|
+|Der mangler data i visualiseringen|– Der er anvendt forkerte/uventede filtre<br />– Sikkerhed på rækkeniveau håndhæves<br />– Det er en svag relation, og der er TOMME værdier i relaterede kolonner, eller der er problemer med dataintegritet. Se [Modelrelationer i Power BI Desktop (Svage relationer)](../transform-model/desktop-relationships-understand.md#weak-relationships)<br />– Det er en relation mellem to DirectQuery-tabeller, og relationen er konfigureret til at [antage referentiel integritet](../transform-model/desktop-relationships-understand.md#assume-referential-integrity), men der er problemer med dataintegritet (uoverensstemmende værdier i relaterede kolonner)|
+|Sikkerhed på rækkeniveau håndhæves ikke korrekt|– Relationerne overføres ikke mellem tabeller. _Følg tjeklisten ovenfor_<br />– Sikkerhed på rækkeniveau håndhæves, men en tovejsrelation er ikke aktiveret til overførsel. Se [Sikkerhed på rækkeniveau med Power BI Desktop](../create-reports/desktop-rls.md)|
 |||
 
 ## <a name="next-steps"></a>De næste trin
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Modelrelationer i Power BI Desktop](../desktop-relationships-understand.md)
+- [Modelrelationer i Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: 3277bba0a4351f17d671adf9a70aae4adb7ddbac
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: d30dfaa36bc55e8da769d4eaf0f7c2d1b9be0724
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525370"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83145204"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Selvstudium: Integrer Power BI-indhold i dit program for nationale cloudmiljøer
 
@@ -38,7 +38,7 @@ De forskellige nationale cloudmiljøer er:
 
 ![Integreret dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-Før du begynder denne gennemgang, skal du have en **Power BI**-konto. Hvis du ikke har konfigureret en konto, kan du vælge det rette nationale cloudmiljø for dig afhængigt af typen af land eller offentlige myndighed. Du kan tilmelde dig en [Power BI-konto af typen US Government](../../service-govus-signup.md), [en cloudkonto af typen Power BI til Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) eller en [cloudkonto af typen Power BI til Kina](https://www.21vbluecloud.com/powerbi/).
+Før du begynder denne gennemgang, skal du have en **Power BI**-konto. Hvis du ikke har konfigureret en konto, kan du vælge det rette nationale cloudmiljø for dig afhængigt af typen af land eller offentlige myndighed. Du kan tilmelde dig en [Power BI-konto af typen US Government](../../admin/service-govus-signup.md), [en cloudkonto af typen Power BI til Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) eller en [cloudkonto af typen Power BI til Kina](https://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > Vil du integrere et dashboard for din organisation i stedet? Se i [Integrer et dashboard i en app for din organisation](embed-sample-for-your-organization.md).

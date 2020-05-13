@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
-ms.openlocfilehash: d3813636010dcbf5c866248111755beb0dca99b8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c7f377c1295d4cd8f0d226331fcb6db697786e5a
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "74834626"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83141258"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Meld dig selv og andre til et abonnement på sideinddelte rapporter i Power BI-tjenesten 
 
@@ -39,7 +39,6 @@ Når du konfigurerer abonnementer, vælger du ofte, hvordan du vil modtage mails
 
 ## <a name="next-steps"></a>Næste trin
 
-[Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten](../service-report-subscribe.md)
+[Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten](../collaborate-share/service-report-subscribe.md)
 
 [Sideinddelte rapporter i Power BI-tjenesten](end-user-paginated-report.md)
-

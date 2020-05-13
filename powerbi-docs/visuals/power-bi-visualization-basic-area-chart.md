@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 18d16440e8894e69101357af700c9b295eaa30c6
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: f6960d3087ba5b271c6c130df59e6e667e838165
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866951"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277151"
 ---
 # <a name="create-and-use-basic-area-charts"></a>Opret og brug basisområdediagrammer
 
@@ -68,7 +68,7 @@ I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](https
    d.  Hvis du vil vise diagrammet pr. måned, skal du vælge ellipsemenuen (øverst til højre i visualiseringen) og vælge **Sortér efter måned**. Hvis du vil ændre sorteringsrækkefølgen, skal du vælge ellipsen igen og vælge enten **Sortér stigende** eller **Sortér faldende**.
 
 ## <a name="highlighting-and-cross-filtering"></a>Fremhævning og krydsfiltrering
-Du kan få mere at vide om brug af ruden Filters under [Føj et filter til en rapport](../power-bi-report-add-filter.md).
+Du kan få mere at vide om brug af ruden Filters under [Føj et filter til en rapport](../create-reports/power-bi-report-add-filter.md).
 
 For at fremhæve et bestemt område i diagrammet skal du markere dette område eller dets øverste kant.  Hvis der er andre visualiseringer på samme side, vil den i modsætning til andre visualiseringstyper ikke krydsfiltrere med de andre visualiseringer på rapportsiden, når et grundlæggende område markeres. Områdediagrammer kan dog krydsfiltreres af andre visualiseringer på rapportsiden. 
 
@@ -78,7 +78,7 @@ For at fremhæve et bestemt område i diagrammet skal du markere dette område e
 
     ![Filtereksempler](media/power-bi-visualization-basic-area-chart/power-bi-area-chart-filters.gif) 
 
-Hvis du vil vide mere, kan du se [Visuelle interaktioner i rapporter](../service-reports-visual-interactions.md)
+Hvis du vil vide mere, kan du se [Visuelle interaktioner i rapporter](../create-reports/service-reports-visual-interactions.md)
 
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding   
@@ -87,4 +87,6 @@ Hvis du vil vide mere, kan du se [Visuelle interaktioner i rapporter](../service
 
 ## <a name="next-step"></a>Næste trin
 [Rapporter i Power BI](power-bi-visualization-card.md)  
+
+
 

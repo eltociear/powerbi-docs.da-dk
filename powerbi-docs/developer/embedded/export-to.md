@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 03/24/2020
-ms.openlocfilehash: db907897256ef4afc0bdb9a253a23880b6e79f53
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1d51c16502d3217e0158add2126d0b5726d87ff1
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525462"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83144724"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Eksportér Power BI-rapport til fil (prøveversion)
 
@@ -34,7 +34,7 @@ Du kan bruge eksportfunktionen på flere forskellige måder. Her er nogle eksemp
 
 ## <a name="using-the-api"></a>Brug af API'en
 
-Før du bruger API'en, skal du bekræfte, at følgende [lejerindstillinger for administratoren](../../service-admin-portal.md#tenant-settings) er aktiveret:
+Før du bruger API'en, skal du bekræfte, at følgende [lejerindstillinger for administratoren](../../admin/service-admin-portal.md#tenant-settings) er aktiveret:
 * **Eksportér rapporter som PowerPoint-præsentationer eller PDF-dokumenter** – Aktiveret som standard.
 * **Eksportér rapporter som billedfiler** – kræves kun til *PNG* og er deaktiveret som standard.
 

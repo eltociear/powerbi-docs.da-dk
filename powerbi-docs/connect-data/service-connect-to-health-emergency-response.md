@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b951e96a5d81603dc91e4fc47a2b412d4140f85d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 65f1246185584b5887d97bb9188b43e016e78e8f
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80752044"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279244"
 ---
 # <a name="connect-to-the-hospital-emergency-response-decision-support-dashboard"></a>Opret forbindelse til Dashboard til understøttelse af beslutninger i forbindelse med hospitalernes akutberedskab
 Skabelonappen Dashboard til understøttelse af beslutninger i forbindelse med hospitalernes akutberedskab er rapporteringskomponenten i [Microsoft Power Platform-løsningen til akutberedskab](https://powerapps.microsoft.com/blog/emergency-response-solution-a-microsoft-power-platform-solution-for-healthcare-emergency-response/). Dashboardet viser beredskabschefers samlede data på tværs af sundhedssystemet for at hjælpe dem med at træffe rettidige og korrekte beslutninger.
@@ -86,21 +86,21 @@ Når du installerer Power Platform-løsningen til hospitalernes akutberedskab, k
 
 ## <a name="schedule-report-refresh"></a>Planlæg rapportopdatering
 
-Når dataene er blevet opdateret, [kan du konfigurere en opdateringsplan](../refresh-scheduled-refresh.md) for at holde rapportdataene opdateret.
+Når dataene er blevet opdateret, [kan du konfigurere en opdateringsplan](../connect-data/refresh-scheduled-refresh.md) for at holde rapportdataene opdateret.
 
 1. Vælg **Power BI** på den øverste overskriftslinje.
 
    ![Power BI-brødkrumme](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-powerbi-breadcrumb.png)
 
-1. I navigationsruden til venstre skal du finde arbejdsområdet for Dashboard til understøttelse af beslutninger i forbindelse med hospitalernes akutberedskab under **Arbejdsområder** og følge instruktionerne, der er beskrevet i artiklen [Konfigurer planlagt opdatering](../refresh-scheduled-refresh.md).
+1. I navigationsruden til venstre skal du finde arbejdsområdet for Dashboard til understøttelse af beslutninger i forbindelse med hospitalernes akutberedskab under **Arbejdsområder** og følge instruktionerne, der er beskrevet i artiklen [Konfigurer planlagt opdatering](../connect-data/refresh-scheduled-refresh.md).
 
 ## <a name="customize-and-share"></a>Tilpas og del
 
-Se [Tilpas og del appen](../service-template-apps-install-distribute.md#customize-and-share-the-app) for at få flere oplysninger. Sørg for at gennemse [ansvarsfraskrivelserne for rapporten](../create-reports/sample-covid-19-us.md#disclaimers), før du udgiver eller distribuerer appen.
+Se [Tilpas og del appen](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app) for at få flere oplysninger. Sørg for at gennemse [ansvarsfraskrivelserne for rapporten](../create-reports/sample-covid-19-us.md#disclaimers), før du udgiver eller distribuerer appen.
 
 ## <a name="next-steps"></a>Næste trin
 * [Om rapporten Hospitalernes akutberedskab](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard)
 * [Konfigurer og få mere at vide om skabelonen med krisekommunikationseksemplet i Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-* [Hvad er Power BI-skabelonapps?](../service-template-apps-overview.md)
-* [Installér og distribuer skabelonapps i din organisation](../service-template-apps-install-distribute.md)
+* [Hvad er Power BI-skabelonapps?](../connect-data/service-template-apps-overview.md)
+* [Installér og distribuer skabelonapps i din organisation](../connect-data/service-template-apps-install-distribute.md)

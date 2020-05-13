@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
-ms.openlocfilehash: c5e1e0b90f24a81940edab46633f49df41d25fdc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 711c920f5b0b7feeeeb2297e0f93714e1e89f1a2
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75219838"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148198"
 ---
 # <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Få vist Power BI-indhold, der er delt med dig, fra en ekstern organisation
 
@@ -28,7 +28,7 @@ Gælder for:
 
 ## <a name="accessing-shared-content"></a>Adgang til delt indhold
 
-**Først skal du have en person fra en ekstern organisation til at dele et element med dig.** Når nogen [deler et element med dig](../../service-share-dashboards.md), enten fra den samme organisation eller fra en ekstern organisation, modtager du en mail med et link til det delte element. Når du følger linket på din mobilenhed, åbnes Power BI-mobilappen. Hvis appen registrerer, at elementet er delt fra en ekstern organisation, opretter appen forbindelse til den pågældende organisation igen med din identitet. Appen indlæser derefter alle de elementer, der blev delt med dig fra den pågældende organisation.
+**Først skal du have en person fra en ekstern organisation til at dele et element med dig.** Når nogen [deler et element med dig](../../collaborate-share/service-share-dashboards.md), enten fra den samme organisation eller fra en ekstern organisation, modtager du en mail med et link til det delte element. Når du følger linket på din mobilenhed, åbnes Power BI-mobilappen. Hvis appen registrerer, at elementet er delt fra en ekstern organisation, opretter appen forbindelse til den pågældende organisation igen med din identitet. Appen indlæser derefter alle de elementer, der blev delt med dig fra den pågældende organisation.
 
 ![Åbning af et delt element fra mail i Power BI ](./media/mobile-apps-b2b/mobile-b2b-open-item-email-new.png)
 

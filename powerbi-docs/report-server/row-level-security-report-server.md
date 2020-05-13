@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: 7436b97cdeacf08f1d4ed9374ec615d56ae92db1
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: d94e9696ee41e8bd76f7d11aab794ccd2dc701b3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73859189"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277979"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Sikkerhed på rækkeniveau i Power BI-rapportserver
 
@@ -33,7 +33,7 @@ Som standard bruger filtrering af sikkerhed på rækkeniveau envejsfiltre, uanse
 
 Marker dette afkrydsningsfelt, når du implementerer [dynamisk sikkerhed på rækkeniveau](https://docs.microsoft.com/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters) baseret på brugernavn eller logon-id. 
 
-Du kan få mere at vide i [Tovejskrydsfiltrering ved hjælp af DirectQuery i Power BI Desktop](../desktop-bidirectional-filtering.md) og det tekniske whitepaper [Sikring af modellen for tabellarisk BI-semantik](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
+Du kan få mere at vide i [Tovejskrydsfiltrering ved hjælp af DirectQuery i Power BI Desktop](../transform-model/desktop-bidirectional-filtering.md) og det tekniske whitepaper [Sikring af modellen for tabellarisk BI-semantik](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
 [!INCLUDE [rls-desktop-view-as-roles](../includes/rls-desktop-view-as-roles.md)]
 
@@ -84,7 +84,7 @@ Her er de aktuelle begrænsninger for sikkerhed på rækkeniveau i Power BI-mode
 
 Brugere, der havde rapporter ved hjælp af username() i DAX-funktionen, vil bemærke en ny funktionsmåde, nu hvor brugerens hovednavn returneres, undtagen når DirectQuery med integreret sikkerhed benyttes.  Eftersom sikkerhed på rækkeniveau ikke overholdes i dette scenarie, er funktionsmåden i det pågældende scenarie uændret.
 
-Du kan kun definere sikkerhed på rækkeniveau for de datasæt, der er oprettet ved hjælp af Power BI Desktop. Hvis du vil aktivere sikkerhed på rækkeniveau for de datasæt, der er oprettet i Excel, skal du først konvertere dine filer til .pbix-filer (Power BI Desktop). Få mere at vide om [konvertering af Excel-filer](../desktop-import-excel-workbooks.md).
+Du kan kun definere sikkerhed på rækkeniveau for de datasæt, der er oprettet ved hjælp af Power BI Desktop. Hvis du vil aktivere sikkerhed på rækkeniveau for de datasæt, der er oprettet i Excel, skal du først konvertere dine filer til .pbix-filer (Power BI Desktop). Få mere at vide om [konvertering af Excel-filer](../connect-data/desktop-import-excel-workbooks.md).
 
 Kun ETL- (extraction, transformation og loading) og DirectQuery-forbindelser, der bruger lagrede legitimationsoplysninger, understøttes. Direkte forbindelser til Analysis Services og DirectQuery-forbindelser, der bruger integreret godkendelse, skal håndteres i den underliggende datakilde. 
 
@@ -122,3 +122,4 @@ Ja, hvis du allerede har eksisterende roller defineret og tildelt medlemmer i Po
 [Administratorhåndbog](admin-handbook-overview.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+

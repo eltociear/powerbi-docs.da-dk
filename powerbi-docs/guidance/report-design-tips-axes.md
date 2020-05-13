@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 9a1d0abc065380a30b1868710bea31d0bf1fa89f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 110aadce6bafd61b3c8b60a7370cedecf0d27ae0
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82066144"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278094"
 ---
 # <a name="tips-to-manage-axes-in-power-bi-reports"></a>Tip til administration af akser i Power BI-rapporter
 
@@ -41,7 +41,8 @@ Kort sagt, så omfatter de otte mest populære tip til administration af akser i
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Tip til oprettelse af flotte rapporter](../desktop-tips-and-tricks-for-creating-reports.md)
+- [Tip til oprettelse af flotte rapporter](../create-reports/desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine-video: [De otte mest populære tip til effektiv administration af akser i Power BI](https://www.youtube.com/watch?v=3t9W7Xvpzo0)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)
+

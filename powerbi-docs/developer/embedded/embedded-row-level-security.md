@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 19abcd84809f0bf8d3560fd8734d30fcf31b9ecb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 71f204058bfa94c61df8299d2a2c7c9063caad5d
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80550965"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277013"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sikkerhed på rækkeniveau med Power BI Embedded
 
@@ -21,7 +21,7 @@ ms.locfileid: "80550965"
 
 Du bør læse denne artikel, hvis du integrerer for brugere, der ikke anvender Power Bi (appen ejer dataene), hvilket er typisk ved et Independent Software Vendor-scenarie (ISV). Konfigurer integreringstokenet for at tage højde for brugeren og rollen.
 
-Hvis du integrerer til Power BI-brugere (brugeren ejer dataene) i din organisation, fungerer sikkerhed på rækkeniveau på samme måde, som det gør direkte i Power BI-tjenesten. Der er ikke mere, du skal gøre i dit program. Du kan finde flere oplysninger i [Sikkerhed på rækkeniveau med Power BI](../../service-admin-rls.md).
+Hvis du integrerer til Power BI-brugere (brugeren ejer dataene) i din organisation, fungerer sikkerhed på rækkeniveau på samme måde, som det gør direkte i Power BI-tjenesten. Der er ikke mere, du skal gøre i dit program. Du kan finde flere oplysninger i [Sikkerhed på rækkeniveau med Power BI](../../admin/service-admin-rls.md).
 
 ![Vigtige elementer i forbindelse med sikkerhed på rækkeniveau.](media/embedded-row-level-security/powerbi-embedded-rls-components.png)
 
@@ -29,7 +29,7 @@ Hvis du vil benytte sikkerhed på rækkeniveau, er der tre vigtige begreber, du 
 
 **Brugere** – slutbrugere, der får vist artefakten (dashboardet, feltet, rapporten eller datasættet). I Power BI Embedded identificeres brugerne ved hjælp af egenskaben username i et integreringstoken.
 
-**Roller** – brugerne tilhører roller. En rolle er en objektbeholder til regler og kan have navne i stil med *Sales Manager* eller *Sales Rep*. Du opretter roller i Power BI Desktop. Du kan finde flere oplysninger i [Sikkerhed på rækkeniveau med Power BI Desktop](../../desktop-rls.md).
+**Roller** – brugerne tilhører roller. En rolle er en objektbeholder til regler og kan have navne i stil med *Sales Manager* eller *Sales Rep*. Du opretter roller i Power BI Desktop. Du kan finde flere oplysninger i [Sikkerhed på rækkeniveau med Power BI Desktop](../../create-reports/desktop-rls.md).
 
 **Regler** – rollerne har regler, og reglerne er de faktiske filtre, der anvendes på dataene. Reglerne kan f.eks. være noget så simpelt som "Country = USA" eller noget, der er meget mere dynamisk.
 Resten af denne artikel indeholder et eksempel på, hvordan du opretter sikkerhed på rækkeniveau og derefter bruger det i et integreret program. Vi bruger PBIX-filen [Retail Analysis Sample](https://go.microsoft.com/fwlink/?LinkID=780547) i eksemplet.
@@ -135,7 +135,7 @@ Den faktiske identitet, der leveres for egenskaben brugernavn, skal være en Win
 
 ### <a name="on-premises-data-gateway-configuration"></a>Konfigurer en datagateway i det lokale miljø
 
-En [datagateway i det lokale miljø](../../service-gateway-onprem.md) bruges, når du arbejder med Analysis Services-liveforbindelser. Når du genererer et integreringstoken med et id angivet, skal den overordnede konto være angivet som en administrator af gatewayen. Hvis den overordnede konto ikke er angivet, anvendes sikkerhed på rækkeniveau ikke på egenskaben for dataene. En bruger uden administrative rettigheder kan levere roller, men skal angive sit eget brugernavn til den eksisterende identitet.
+En [datagateway i det lokale miljø](../../connect-data/service-gateway-onprem.md) bruges, når du arbejder med Analysis Services-liveforbindelser. Når du genererer et integreringstoken med et id angivet, skal den overordnede konto være angivet som en administrator af gatewayen. Hvis den overordnede konto ikke er angivet, anvendes sikkerhed på rækkeniveau ikke på egenskaben for dataene. En bruger uden administrative rettigheder kan levere roller, men skal angive sit eget brugernavn til den eksisterende identitet.
 
 ### <a name="use-of-roles"></a>Brug af roller
 
@@ -235,9 +235,9 @@ Her er trinnene, så du kan begynde at konfigurere funktionen CustomData() med d
 
 Når du beslutter dig for at filtrere dine data i en rapport, kan du bruge **RLS (sikkerhed på rækkeniveau)** eller **JavaScript-filtre**.
 
-[Sikkerhed på rækkeniveau](../../service-admin-rls.md) er en funktion, der filtrerer data på datamodelniveau. Din backend-datakilde styrer dine RLS-indstillinger. Den integrerede tokengeneration, der er baseret på din datamodel, angiver brugernavnet og rollerne for sessionen. Den kan ikke tilsidesættes, fjernet eller styres af koden på klientsiden, og derfor anses den for at være sikker. Vi anbefaler brugen af RLS til filtrering af data på en sikker måde. Du kan filtrere data med RLS ved hjælp af en af nedenstående indstillinger.
+[Sikkerhed på rækkeniveau](../../admin/service-admin-rls.md) er en funktion, der filtrerer data på datamodelniveau. Din backend-datakilde styrer dine RLS-indstillinger. Den integrerede tokengeneration, der er baseret på din datamodel, angiver brugernavnet og rollerne for sessionen. Den kan ikke tilsidesættes, fjernet eller styres af koden på klientsiden, og derfor anses den for at være sikker. Vi anbefaler brugen af RLS til filtrering af data på en sikker måde. Du kan filtrere data med RLS ved hjælp af en af nedenstående indstillinger.
 
-* [Konfiguration af roller i en Power BI-rapport](../../desktop-rls.md).
+* [Konfiguration af roller i en Power BI-rapport](../../create-reports/desktop-rls.md).
 * Konfiguration af roller på datakildeniveau (kun direkte forbindelse til Analysis Services).
 * Ved hjælp af programmering med et [Integreringstoken](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) via `EffectiveIdentity`. Når du bruger et integreringstoken, går det faktiske filter gennem integreringstokenet for en bestemt session.
 

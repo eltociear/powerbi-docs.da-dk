@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/03/2020
-ms.openlocfilehash: f437b1d1fbfc1e905878fbb99875f1fc455e7b14
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 23018dce94efad6c63a22b6ee3a2c0919475adb5
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79493244"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83145141"
 ---
 # <a name="capacity-planning-in-power-bi-embedded-analytics"></a>Kapacitetsplanlægning i Power BI Embedded-analyser
 
@@ -51,7 +51,7 @@ Her er nogle eksempler på, hvordan du kan bruge planlægningsværktøjet.
 
 Hvis du vil se virkningen af belastningstesten i appen Metrics, når testene er blevet kørt, skal du følge vejledningen nedenfor. Du kan forvente en forsinkelse på op til 15 minutter, fra det tidspunkt hvor testen starter med at generere belastning, indtil indlæsningen er synlig i målepunkterne.
 
-1. Udvid fanen **Datasæt** på landingssiden i [Metrics-appen](../../service-admin-premium-monitor-capacity.md).
+1. Udvid fanen **Datasæt** på landingssiden i [Metrics-appen](../../admin/service-admin-premium-monitor-capacity.md).
 2. Start en opdatering efter behov ved at klikke på **Opdater nu**. Administratorer skal.
 
     ![Power BI Premium-kapacitetsmålinger](media/embedded-capacity-planning/embedded-capacity-planning.png)

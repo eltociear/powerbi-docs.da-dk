@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 6d342773f35adef5f7b61953b06e526a42be75dc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 9e3527d4e32143a3bc261226a5f10c371bcaaef4
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76537387"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83131985"
 ---
 # <a name="using-microsoft-cloud-app-security-controls-in-power-bi-preview"></a>Brug af Microsoft Cloud App Security-kontrolelementer i Power BI (prøveversion)
 
@@ -60,7 +60,7 @@ Cloud App Security indeholder også to dedikerede, indbyggede registreringer til
 
 Med følsomhedsmærkater kan du klassificere og hjælpe med at beskytte følsomt indhold, så personer i din organisation kan samarbejde med partnere uden for din organisation, men stadig være påpasselige og opmærksomme på følsomt indhold og data. 
 
-Du kan læse artiklen om [følsomhedsmærkater i Power BI](../designer/service-security-apply-data-sensitivity-labels.md), der indeholder detaljer om processen med at bruge følsomhedsmærkater i Power BI. Nedenfor kan du se et [eksempel på en Power BI-politik, der er baseret på følsomhedsmærkater](#example).
+Du kan læse artiklen om [følsomhedsmærkater i Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md), der indeholder detaljer om processen med at bruge følsomhedsmærkater i Power BI. Nedenfor kan du se et [eksempel på en Power BI-politik, der er baseret på følsomhedsmærkater](#example).
 
 ## <a name="built-in-microsoft-cloud-app-security-detections-for-power-bi"></a>Indbygget Microsoft Cloud App Security-registreringer til Power BI
 
@@ -136,7 +136,7 @@ Denne artikel indeholdt en beskrivelse af, hvordan Microsoft Cloud App Security 
 
 * [Oversigt over databeskyttelse i Power BI](service-security-data-protection-overview.md)
 * [Aktivér datafølsomhedsmærkater i Power BI](service-security-enable-data-sensitivity-labels.md)
-* [Anvend datafølsomhedsmærkater i Power BI](../designer/service-security-apply-data-sensitivity-labels.md)
+* [Anvend datafølsomhedsmærkater i Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
 
 Du vil måske også være interesseret i følgende Azure- og sikkerhedsartikler:
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/24/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6af8568dc39544ce064643c8dfb80fa2932cf13a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 52522c03a285290fbc01da49328516f62ddfc60a
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82149664"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279221"
 ---
 # <a name="connect-to-the-regional-emergency-response-dashboard"></a>Opret forbindelse til det områderelaterede dashboard til akutberedskab
 Det områderelaterede dashboard til akutberedskab er komponenten til rapportering i [Microsoft Power Platform-løsningen til områderelateret akutberedskab](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview). Administratorer af regionale organisationer kan få vist dashboardet i deres Power BI-lejer, så de hurtigt kan få vist vigtige data og målepunkter, der kan hjælpe dem med at træffe effektive beslutninger.
@@ -82,21 +82,21 @@ Når du installerer løsningen til områderelateret akutberedskab, kan du se [UR
 
 ## <a name="schedule-report-refresh"></a>Planlæg rapportopdatering
 
-Når dataene er blevet opdateret, [kan du konfigurere en opdateringsplan](../refresh-scheduled-refresh.md) for at holde rapportdataene opdateret.
+Når dataene er blevet opdateret, [kan du konfigurere en opdateringsplan](../connect-data/refresh-scheduled-refresh.md) for at holde rapportdataene opdateret.
 
 1. Vælg **Power BI** på den øverste overskriftslinje.
 
    ![Power BI-brødkrumme](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-powerbi-breadcrumb.png)
 
-1. I navigationsruden til venstre skal du finde arbejdsområdet for Dashboard til områderelateret akutberedskab under **Arbejdsområder** og følge instruktionerne, der er beskrevet i artiklen [Konfigurer planlagt opdatering](../refresh-scheduled-refresh.md).
+1. I navigationsruden til venstre skal du finde arbejdsområdet for Dashboard til områderelateret akutberedskab under **Arbejdsområder** og følge instruktionerne, der er beskrevet i artiklen [Konfigurer planlagt opdatering](../connect-data/refresh-scheduled-refresh.md).
 
 ## <a name="customize-and-share"></a>Tilpas og del
 
-Se [Tilpas og del appen](../service-template-apps-install-distribute.md#customize-and-share-the-app) for at få flere oplysninger. Sørg for at gennemse [ansvarsfraskrivelserne for rapporten](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview#disclaimer), før du udgiver eller distribuerer appen.
+Se [Tilpas og del appen](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app) for at få flere oplysninger. Sørg for at gennemse [ansvarsfraskrivelserne for rapporten](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview#disclaimer), før du udgiver eller distribuerer appen.
 
 ## <a name="next-steps"></a>Næste trin
 * [Om Dashboard til områderelateret akutberedskab](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/portals-admin-reporting#get-insights)
 * [Konfigurer og få mere at vide om skabelonen med krisekommunikationseksemplet i Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-* [Hvad er Power BI-skabelonapps?](../service-template-apps-overview.md)
-* [Installér og distribuer skabelonapps i din organisation](../service-template-apps-install-distribute.md)
+* [Hvad er Power BI-skabelonapps?](../connect-data/service-template-apps-overview.md)
+* [Installér og distribuer skabelonapps i din organisation](../connect-data/service-template-apps-install-distribute.md)

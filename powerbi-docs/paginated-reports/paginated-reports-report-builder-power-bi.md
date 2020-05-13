@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/27/2019
-ms.openlocfilehash: 924c2850efe1e9e09a8f6f350be616695ab061ea
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 55e74809b47b2906edac9a06f701aa30b3498f80
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80621562"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83144736"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Hvad er sideinddelte rapporter i Power BI Premium?
 
@@ -23,7 +23,7 @@ Sideinddelte rapporter kan indeholde mange sider. Denne rapport indeholder f.eks
 
 ![Sideinddelt](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-Du kan få vist et eksempel på rapporten i Report Builder og derefter publicere den i Power BI-tjenesten, `https://app.powerbi.com`. Du skal bruge en Power BI Pro-licens for at publicere en rapport i tjenesten. Du kan publicere og dele sideinddelte rapporter i Mit arbejdsområde eller i arbejdsområder, så længe arbejdsområdet er placeret i en Power BI Premium-kapacitet. En Power BI-administrator skal også aktivere sideinddelte rapporter under [afsnittet for Premium-kapaciteter](../service-admin-premium-workloads.md#paginated-reports) på Power BI-administrationsportalen. 
+Du kan få vist et eksempel på rapporten i Report Builder og derefter publicere den i Power BI-tjenesten, `https://app.powerbi.com`. Du skal bruge en Power BI Pro-licens for at publicere en rapport i tjenesten. Du kan publicere og dele sideinddelte rapporter i Mit arbejdsområde eller i arbejdsområder, så længe arbejdsområdet er placeret i en Power BI Premium-kapacitet. En Power BI-administrator skal også aktivere sideinddelte rapporter under [afsnittet for Premium-kapaciteter](../admin/service-admin-premium-workloads.md#paginated-reports) på Power BI-administrationsportalen. 
 
 ## <a name="create-reports-in-power-bi-report-builder"></a>Opret rapporter i Power BI Report Builder
 

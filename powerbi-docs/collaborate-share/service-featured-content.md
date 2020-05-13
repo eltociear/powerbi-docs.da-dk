@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 01e41520ec4cc391e241cd53a03c3e71d15379d7
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4d8b3d48828840920b6bbd792c9fe9da40308b39
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79496257"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83142298"
 ---
 # <a name="feature-content-on-colleagues-power-bi-home-page"></a>Fremhæv indhold på kollegaers Power BI Start-side
 
@@ -24,9 +24,9 @@ Du kan fremhæve dashboards, rapporter og apps, så de vises i afsnittet Udvalgt
 
 ## <a name="who-can-feature-content"></a>Hvem kan fremhæve indhold?
 
-Det er op til din Power BI-lejeradministrator at aktivere muligheden for at fremhæve indhold i din lejer. Administratoren vælger også, hvem der kan fremhæve indhold. Du kan finde flere oplysninger i artiklen om [administrationsportalen](../service-admin-portal.md#featured-content).
+Det er op til din Power BI-lejeradministrator at aktivere muligheden for at fremhæve indhold i din lejer. Administratoren vælger også, hvem der kan fremhæve indhold. Du kan finde flere oplysninger i artiklen om [administrationsportalen](../admin/service-admin-portal.md#featured-content).
 
-Hvis du er en af de udvalgte grupper i din organisation med dette ansvar, skal du have en Power BI Pro-licens. Hvis du vil bruge dashboards og rapporter, skal du have rollen Administrator, Medlem eller Bidragsyder i arbejdsområdet. Hvis du vil fremhæve selve appen, skal du have rollen Administrator eller Medlem i arbejdsområdet. Se [Roller i de nye arbejdsområder](../service-new-workspaces.md#roles-in-the-new-workspaces) for at få flere oplysninger.
+Hvis du er en af de udvalgte grupper i din organisation med dette ansvar, skal du have en Power BI Pro-licens. Hvis du vil bruge dashboards og rapporter, skal du have rollen Administrator, Medlem eller Bidragsyder i arbejdsområdet. Hvis du vil fremhæve selve appen, skal du have rollen Administrator eller Medlem i arbejdsområdet. Se [Roller i de nye arbejdsområder](service-new-workspaces.md#roles-in-the-new-workspaces) for at få flere oplysninger.
 
 ## <a name="who-sees-featured-content"></a>Hvem kan se fremhævet indhold?
 
@@ -58,7 +58,6 @@ Nu kan alle, der har adgang til denne app, også se den i afsnittet **Udvalgte**
 
 ## <a name="next-steps"></a>De næste trin
 
-* [Hvordan kan jeg samarbejde på og dele dashboards og rapporter?](../service-how-to-collaborate-distribute-dashboards-reports.md)
-* [Administrer fremhævet indhold i administrationsportalen](../service-admin-portal.md#manage-featured-content)
+* [Hvordan kan jeg samarbejde på og dele dashboards og rapporter?](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
+* [Administrer fremhævet indhold i administrationsportalen](../admin/service-admin-portal.md#manage-featured-content)
 * Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

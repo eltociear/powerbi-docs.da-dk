@@ -9,12 +9,12 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 3e01bd0d7314cba1eb46dacff01b350c6685a6e9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 39ccb9120b7dd61d7f160c296d2de799b7f3fe23
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82613578"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83141099"
 ---
 # <a name="what-is-power-bi-report-server"></a>Hvad er Power BI-rapportserveren?
 
@@ -26,7 +26,7 @@ Power BI-rapportserveren er en rapportserver med en webportal i det lokale milj�
 Power BI-rapportserveren ligner både SQL Server Reporting Services og Power BI-onlinetjenesten, men på forskellige måder. På samme måde som med Power BI-tjenesten er Power BI-rapportserveren vært for Power BI-rapporter (.pbix), Excel-filer og sideinddelte rapporter (.rdl). På samme måde som Reporting Services findes Power BI-rapportserveren i det lokale miljø. Power BI-rapportserverens funktioner er overordnede i forhold til Reporting Services: Alt det, du kan bruge Reporting Services til, kan du også bruge Power BI-rapportserveren til, inklusive understøttelse af Power BI-rapporter. Se [Sammenlign Power BI-rapportserveren med Power BI-tjenesten](compare-report-server-service.md) for at få flere oplysninger.
 
 ## <a name="licensing-power-bi-report-server"></a>Licens til Power BI-rapportserveren
-Power BI-rapportserver er tilgængelig via to forskellige licenser: [Power BI Premium](../service-premium-what-is.md) og [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) med Software Assurance. Med en Power BI Premium-licens kan du oprette en hybrid udrulning med en blanding af clouden og det lokale miljø.  
+Power BI-rapportserver er tilgængelig via to forskellige licenser: [Power BI Premium](../admin/service-premium-what-is.md) og [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) med Software Assurance. Med en Power BI Premium-licens kan du oprette en hybrid udrulning med en blanding af clouden og det lokale miljø.  
 
 > [!NOTE]
 > I forbindelse med Power BI Premium er Power BI-rapportserveren kun inkluderet med P-SKU'er. Den er ikke inkluderet i forbindelse med EM-SKU'er.
@@ -71,5 +71,3 @@ Mere [dokumentation til Report Server-udviklere](https://docs.microsoft.com/sql/
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-
-

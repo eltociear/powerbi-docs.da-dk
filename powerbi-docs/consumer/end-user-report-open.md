@@ -8,12 +8,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
-ms.openlocfilehash: 6ffdc73e5e9ef9ccd416378c19da587986c80b55
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 661277337c00f160c010351ba5f827b6e0fc2f8f
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114345"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277611"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Få vist en rapport i Power BI-tjenesten for *forbrugere*
 
@@ -99,14 +99,14 @@ Rapporter kan åbnes fra et dashboard. De fleste [dashboardfelter](end-user-tile
     ![rapport, der er åbnet i Læsevisning](./media/end-user-report-open/power-bi-report-tabs.png)
 
 > [!NOTE]
-> Det er ikke alle felter, der fører til en rapport. Hvis du vælger et felt, der er [oprettet med spørgsmål og svar](end-user-q-and-a.md), så åbnes skærmbilledet spørgsmål og svar. Hvis du vælger et felt, der er [oprettet ved hjælp af dashboardets widget **Tilføj felt**](../service-dashboard-add-widget.md), kan der ske flere ting: En video kan blive afspillet, et websted åbnet m.m.  
+> Det er ikke alle felter, der fører til en rapport. Hvis du vælger et felt, der er [oprettet med spørgsmål og svar](end-user-q-and-a.md), så åbnes skærmbilledet spørgsmål og svar. Hvis du vælger et felt, der er [oprettet ved hjælp af dashboardets widget **Tilføj felt**](../create-reports/service-dashboard-add-widget.md), kan der ske flere ting: En video kan blive afspillet, et websted åbnet m.m.  
 
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Der er stadig flere måder at åbne en rapport
 Når du bliver mere fortrolig med at navigere i Power BI-tjenesten, finder du ud af, hvilke arbejdsprocesser der fungerer bedst for dig. Der er et par enkelte andre måder at få adgang til rapporter på:
 - Via navigationsruden ved hjælp af [Favoritter](end-user-favorite.md) og [Seneste](end-user-recent.md)    
 - Brug [Få vist relaterede](end-user-related.md)    
-- Via en mail, når nogen [deler med dig](../service-share-reports.md), eller du [angiver en advarsel](end-user-alerts.md)    
+- Via en mail, når nogen [deler med dig](../collaborate-share/service-share-reports.md), eller du [angiver en advarsel](end-user-alerts.md)    
 - Fra dit [Meddelelsescenter](end-user-notification-center.md)    
 - Fra et arbejdsområde
 - og meget mere

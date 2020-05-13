@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/08/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 28acd982faed44a0912a486262c9db7611531265
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c0f4e8fd72f3808633cde64a880130798fabb173
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81447481"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83138310"
 ---
 # <a name="get-a-power-bi-subscription-for-your-organization"></a>Få et Power BI-abonnement til din organisation
 
@@ -41,7 +41,7 @@ Følge disse trin for at tilmelde dig:
 
 ## <a name="sign-up-through-microsoft-365"></a>Tilmeld dig via Microsoft 365
 
-Hvis du er global administrator eller faktureringsadministrator af Microsoft 365, kan du få et Power BI-abonnement til din organisation. Du kan få flere oplysninger under [Hvem kan købe og tildele licenser?](../service-admin-licensing-organization.md#who-can-purchase-and-assign-licenses)
+Hvis du er global administrator eller faktureringsadministrator af Microsoft 365, kan du få et Power BI-abonnement til din organisation. Du kan få flere oplysninger under [Hvem kan købe og tildele licenser?](service-admin-licensing-organization.md#who-can-purchase-and-assign-licenses)
 
 > [!NOTE]
 >

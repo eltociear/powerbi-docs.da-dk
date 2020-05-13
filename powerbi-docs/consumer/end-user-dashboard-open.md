@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 64809b2542cbe64951dc2f8fae12b13b8f6bc79e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8f71eab47aba9621805891b10874ea9e501ed0bf
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77496304"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277910"
 ---
 # <a name="view-a-dashboard"></a>Få vist et dashboard
 
@@ -49,10 +49,10 @@ Du kan finde dashboards i alle objektbeholderne i navigationsruden.
 - **Seneste** – Hvis du har besøgt et dashboard for nylig
 - **Apps** – De fleste apps indeholder både dashboards og rapporter
 - **Delt med mig** – Hvis en kollega har [delt et dashboard med dig](end-user-shared-with-me.md)
-- **Mit arbejdsområde** – Hvis du har downloadet nogle [Power BI-eksempler](../sample-datasets.md)
+- **Mit arbejdsområde** – Hvis du har downloadet nogle [Power BI-eksempler](../create-reports/sample-datasets.md)
 
 
 
 ## <a name="next-steps"></a>De næste trin
-* Bliv fortrolig med dashboards ved at se præsentationen af et af vores [eksempler på et dashboard](../sample-tutorial-connect-to-the-samples.md).    
+* Bliv fortrolig med dashboards ved at se præsentationen af et af vores [eksempler på et dashboard](../create-reports/sample-tutorial-connect-to-the-samples.md).    
 * Få mere at vide om [dashboardfelter](end-user-tiles.md), og hvad der sker, når du vælger et.

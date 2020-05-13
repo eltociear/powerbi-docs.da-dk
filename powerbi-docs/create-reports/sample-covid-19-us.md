@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/28/2020
 ms.author: lukaszp
 LocalizationGroup: Samples
-ms.openlocfilehash: 8cdc4a9a78c20c7c4e6986b63a3af61a319df1b6
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: aca7fc70bc70de553eee070ce5e1522b96c94880
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82584917"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277887"
 ---
 # <a name="covid-19-tracking-sample-for-us-state-and-local-governments"></a>COVID-19-sporingseksempel til centralregeringen og delstatsregeringerne i USA
 
@@ -48,7 +48,7 @@ Hvis du vil medtage den interaktive grafik på dit websted, skal du kopiere og i
 <iframe width="1600" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
 ```
 
-Integreringskoden er et HTML iFrame-element, som du kan indsætte på en vilkårlig HTML-side. Juster bredden og højden på iFrame-elementet, så det passer til dit websted. Eksempelrapporten er oprettet med størrelsesforholdet 16:9, så vælg en størrelse, hvor dette forhold bevares. Når grafikken er implementeret korrekt, vises den uden ekstra grå kanter. Det er nyttigt at [gennemse tip og trick til tilpasning af iFrame-størrelsen](../service-publish-to-web.md#tips-for-iframe-height-and-width), når du foretager disse ændringer.
+Integreringskoden er et HTML iFrame-element, som du kan indsætte på en vilkårlig HTML-side. Juster bredden og højden på iFrame-elementet, så det passer til dit websted. Eksempelrapporten er oprettet med størrelsesforholdet 16:9, så vælg en størrelse, hvor dette forhold bevares. Når grafikken er implementeret korrekt, vises den uden ekstra grå kanter. Det er nyttigt at [gennemse tip og trick til tilpasning af iFrame-størrelsen](../collaborate-share/service-publish-to-web.md#tips-for-iframe-height-and-width), når du foretager disse ændringer.
 
 ## <a name="option-2-customize-the-sample-power-bi-file"></a>Mulighed 2: Tilpas Power BI-eksempelfilen
 
@@ -93,18 +93,18 @@ For at komme i gang skal du [downloade. pbix-filen (her)](https://go.microsoft.c
 
 ### <a name="publish-your-report-to-the-power-bi-service"></a>Publicer rapporten i Power BI-tjenesten
 
-Når du har tilpasset din rapport, som du ønsker, kan du [følge de trin, der er beskrevet her, for at publicere din rapport](../desktop-upload-desktop-files.md) i Power BI-tjenesten.
+Når du har tilpasset din rapport, som du ønsker, kan du [følge de trin, der er beskrevet her, for at publicere din rapport](../create-reports/desktop-upload-desktop-files.md) i Power BI-tjenesten.
 
 ### <a name="configure-scheduled-refresh"></a>Konfigurer planlagt opdatering
 
-Hvis du vil holde dataene i rapporten opdateret, kan du [konfigurere en planlagt opdatering](../refresh-scheduled-refresh.md), når du publicerer din rapport.
+Hvis du vil holde dataene i rapporten opdateret, kan du [konfigurere en planlagt opdatering](../connect-data/refresh-scheduled-refresh.md), når du publicerer din rapport.
 
 Når du følger trinnene, skal du vælge følgende indstillinger:
 
 1. Godkendelsesmetode for legitimationsoplysninger for datakilde: Anonym
 2. Indstilling for niveau for beskyttelse af personlige oplysninger for denne datakilde: Offentlig
 
-Hvis du vil teste indstillingen for opdatering, skal du vælge indstillingen [Opdater nu](../refresh-data.md#data-refresh), der er tilgængelig i datasætelementet.
+Hvis du vil teste indstillingen for opdatering, skal du vælge indstillingen [Opdater nu](../connect-data/refresh-data.md#data-refresh), der er tilgængelig i datasætelementet.
 
 De opdaterede data indlæses, hver gang tidsplanen kører. De underliggende data leveres af USAFacts og opdateres muligvis ikke så ofte som din tidsplan for opdatering. Se [USAFacts-webstedet](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) for at vide, hvornår de underliggende data senest blev opdateret. 
 
@@ -112,7 +112,7 @@ Hvis du vil publicere den tilpassede rapport på dit websted, er det bedst at ko
 
 ### <a name="create-a-publish-to-web-embed-code"></a>Opret en integreringskode til publicering på internettet 
 
-Hvis du vil integrere din brugerdefinerede rapport på dit eget websted, skal du følge vejledningen til, hvordan du kan [oprette din egen integreringskode til publicering på internettet](../service-publish-to-web.md#create-embed-codes-with-publish-to-web).
+Hvis du vil integrere din brugerdefinerede rapport på dit eget websted, skal du følge vejledningen til, hvordan du kan [oprette din egen integreringskode til publicering på internettet](../collaborate-share/service-publish-to-web.md#create-embed-codes-with-publish-to-web).
 
 Når du publicerer din integreringskode, kan du bruge iFrame i bekræftelsesdialogboksen til at integrere på dit websted.
 
@@ -143,7 +143,7 @@ Du kan også mikse dataene i denne rapport med data fra en anden kilde. Følgend
 
     :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-load-data.png" alt-text="Indlæs data fra internettet":::
 
-    I artiklen [Opret forbindelse til websider fra Power BI Desktop](../desktop-connect-to-web.md) kan du finde flere oplysninger om indlæsning af data fra internettet.
+    I artiklen [Opret forbindelse til websider fra Power BI Desktop](../connect-data/desktop-connect-to-web.md) kan du finde flere oplysninger om indlæsning af data fra internettet.
     
 Du kan derefter bruge Power BI Desktop til at visualisere dataene. Følg til sidst fremgangsmåden i **Mulighed 2:** [Publicer din rapport til Power BI-tjenesten](#publish-your-report-to-the-power-bi-service) for at publicere rapporten og oprette en brugerdefineret integreringskode. 
 
@@ -168,4 +168,8 @@ Johns Hopkins University-data er copyright 2020 Johns Hopkins University, alle r
 
 ## <a name="next-steps"></a>Næste trin
 
-[Hent eksempler til Power BI](../sample-datasets.md)
+[Hent eksempler til Power BI](../create-reports/sample-datasets.md)
+
+
+
+

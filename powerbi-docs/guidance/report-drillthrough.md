@@ -8,16 +8,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2019
 ms.author: v-pemyer
-ms.openlocfilehash: d5599db57ef7b105575dcb7ee4b4342f374624f0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 853f6d7f5cd6696be55edeea101bc0ca51922ad3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78290573"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278071"
 ---
 # <a name="use-report-page-drillthrough"></a>Anvend detaljeadgang på rapportsiden
 
-Denne artikel henvender sig til rapportforfattere, der designer Power BI-rapporter. Den indeholder forslag og anbefalinger til oprettelse af [detaljeadgang på rapportsider](../desktop-drillthrough.md).
+Denne artikel henvender sig til rapportforfattere, der designer Power BI-rapporter. Den indeholder forslag og anbefalinger til oprettelse af [detaljeadgang på rapportsider](../create-reports/desktop-drillthrough.md).
 
 Det anbefales, at du designer din rapport for at gøre det muligt for rapportbrugere at opnå følgende flow:
 
@@ -58,8 +58,8 @@ Vi anbefaler følgende fremgangsmåder på tidspunktet for oprettelse af rapport
 - **Detaljeadgangsfiltre:** Angiv detaljeadgangsfiltre, så du kan få vist et realistisk resultat, når du designer detaljeadgangssiden. Sørg for at fjerne disse filtre, før du publicerer rapporten.
 - **Yderligere funktioner:** En detaljeadgangsside er som enhver anden rapportside. Du kan endda forbedre den med yderligere interaktive funktioner, herunder udsnitsværktøjer og filtre.
 - **Tomme:** Undgå at tilføje visuals, der kan vises som BLANK eller producere fejl, når der anvendes detaljeadgangsfiltre.
-- **Sidesynlighed:** Overvej at skjule detaljeadgangssider. Hvis du beslutter at beholde en detaljeadgangsside, skal du sørge for at tilføje en knap, der gør det muligt for brugerne at rydde alle tidligere angivne detaljeadgangsfiltre. Tildel et [bogmærke](../desktop-bookmarks.md) til knappen. Bogmærket skal være konfigureret til at fjerne alle filtre.
-- **Knappen Tilbage:** Der tilføjes automatisk en tilbage[knap](../desktop-buttons.md), når du tildeler et detaljeadgangsfilter. Det er en god idé at beholde den. På denne måde kan dine rapportbrugere nemt vende tilbage til kildesiden.
+- **Sidesynlighed:** Overvej at skjule detaljeadgangssider. Hvis du beslutter at beholde en detaljeadgangsside, skal du sørge for at tilføje en knap, der gør det muligt for brugerne at rydde alle tidligere angivne detaljeadgangsfiltre. Tildel et [bogmærke](../create-reports/desktop-bookmarks.md) til knappen. Bogmærket skal være konfigureret til at fjerne alle filtre.
+- **Knappen Tilbage:** Der tilføjes automatisk en tilbage[knap](../create-reports/desktop-buttons.md), når du tildeler et detaljeadgangsfilter. Det er en god idé at beholde den. På denne måde kan dine rapportbrugere nemt vende tilbage til kildesiden.
 - **Søgning:** Vær med til at fremme kendskabet til en detaljeadgangsside ved at angive teksten til ikonet for visualheaderen eller føje instruktioner til et tekstfelt. Du kan også designe en overlejring som beskrevet i [dette blogindlæg-](https://alluringbi.com/2019/10/23/overlays-for-true-self-serve-reporting/).
 
 > [!TIP]
@@ -69,6 +69,6 @@ Vi anbefaler følgende fremgangsmåder på tidspunktet for oprettelse af rapport
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Brug detaljeadgang i Power BI Desktop](../desktop-drillthrough.md)
+- [Brug detaljeadgang i Power BI Desktop](../create-reports/desktop-drillthrough.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)

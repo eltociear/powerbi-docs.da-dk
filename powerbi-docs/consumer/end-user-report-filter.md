@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: cb3947ec7aaf6d67a22eb1d7543a57e66e87f5f3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 029970885070fad34e38697aa4c81fce316b7410
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114450"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277657"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Få en præsentation af ruden Rapportfiltre
 
@@ -25,7 +25,7 @@ ms.locfileid: "79114450"
 
 I denne artikel ser vi nærmere på ruden **Filtre** i rapporter i Power BI-tjenesten. Brug filtre for at få ny indsigt i dine data.
 
-Der er mange forskellige måder at filtrere data på i Power BI. Du kan få flere oplysninger under [Om filtre og fremhævning i Power BI-rapporter](../power-bi-reports-filters-and-highlighting.md).
+Der er mange forskellige måder at filtrere data på i Power BI. Du kan få flere oplysninger under [Om filtre og fremhævning i Power BI-rapporter](../create-reports/power-bi-reports-filters-and-highlighting.md).
 
 ![Skærmbillede af en rapport i browseren med en pil, der peger på indstillingen Filtre.](media/end-user-report-filter/power-bi-report.png)
 

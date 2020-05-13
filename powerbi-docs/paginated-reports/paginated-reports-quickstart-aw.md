@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 17742c48d9ac5cb49b6d04fe6fe4674e7f6c7ac9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 45edb3695acdcc5519fb0b62cebc853ff25ce97a
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80404874"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83145217"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Selvstudium: Opret en sideinddelt rapport, og upload den til Power BI-tjenesten
 
@@ -43,7 +43,7 @@ Her er forudsætningerne for oprettelse af den sideinddelte rapport:
 Her er forudsætningerne for at overføre din sideinddelte rapport til Power BI-tjenesten:
 
 - Du skal bruge en [licens til Power BI Pro](../service-admin-power-bi-pro-in-your-organization.md).
-- Du skal bruge et arbejdsområde i tjenesten i en [Power BI Premium-kapacitet](../service-premium-what-is.md). Den har rombeikonet ![Premium-rombeikon](media/paginated-reports-quickstart-aw/premium-diamond.png) ved siden af navnet på arbejdsområdet.
+- Du skal bruge et arbejdsområde i tjenesten i en [Power BI Premium-kapacitet](../admin/service-premium-what-is.md). Den har rombeikonet ![Premium-rombeikon](media/paginated-reports-quickstart-aw/premium-diamond.png) ved siden af navnet på arbejdsområdet.
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Opret matrixen ved hjælp af en guide
   
@@ -329,4 +329,3 @@ Nu, hvor du har oprettet denne sideinddelte rapport, er det tid til at uploade d
 ## <a name="next-steps"></a>Næste trin
 
 [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-

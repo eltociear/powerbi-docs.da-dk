@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 92aa2c5d8da91590f5d491090761a6a6b1501061
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 43905b05bfe796c416bb8d91901497f6ca1e573e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78263800"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278255"
 ---
 # <a name="one-to-one-relationship-guidance"></a>Vejledning til en til en-relationer
 
@@ -99,7 +99,7 @@ Når det er muligt, anbefaler vi dig at undlade at oprette modeller med en til e
 - Begrænse muligheden for at oprette hierarkier, da deres niveauer skal være baseret på kolonner fra den _samme tabel_
 - Give uventede resultater, når der ikke er et komplet match af rækker mellem tabellerne
 
-Bestemte anbefalinger varierer, afhængigt af om en til en-relationen er i _et internt område_ eller _mellem områder_. Du kan finde flere oplysninger om evaluering af relationer i [Modelrelationer i Power BI Desktop (evaluering af relationer)](../desktop-relationships-understand.md#relationship-evaluation).
+Bestemte anbefalinger varierer, afhængigt af om en til en-relationen er i _et internt område_ eller _mellem områder_. Du kan finde flere oplysninger om evaluering af relationer i [Modelrelationer i Power BI Desktop (evaluering af relationer)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 ### <a name="intra-island-one-to-one-relationship"></a>En til en-relation i et internt område
 
@@ -107,7 +107,7 @@ Når der er en én til en-relation i et _internt område_ mellem tabeller, anbef
 
 I følgende trin præsenteres en metodik til at konsolidere og udforme en til en-relaterede data:
 
-1. **Flet forespørgsler**: Når du [kombinerer to forespørgsler](../desktop-shape-and-combine-data.md#combine-queries), skal du overveje fuldstændigheden af dataene i hver forespørgsel. Hvis én forespørgsel indeholder et komplet sæt af rækker (f.eks. en masterliste), skal du flette den anden forespørgsel med den. Konfigurer flettetransformationen til at bruge en _venstre ydre joinforbindelse_, som er standardtypen for joinforbindelser. Denne type joinforbindelse sikrer, at du bevarer alle rækker i den første forespørgsel og supplerer dem med alle matchende rækker i den anden forespørgsel. Udvid alle påkrævede kolonner i den anden forespørgsel til den første forespørgsel.
+1. **Flet forespørgsler**: Når du [kombinerer to forespørgsler](../connect-data/desktop-shape-and-combine-data.md#combine-queries), skal du overveje fuldstændigheden af dataene i hver forespørgsel. Hvis én forespørgsel indeholder et komplet sæt af rækker (f.eks. en masterliste), skal du flette den anden forespørgsel med den. Konfigurer flettetransformationen til at bruge en _venstre ydre joinforbindelse_, som er standardtypen for joinforbindelser. Denne type joinforbindelse sikrer, at du bevarer alle rækker i den første forespørgsel og supplerer dem med alle matchende rækker i den anden forespørgsel. Udvid alle påkrævede kolonner i den anden forespørgsel til den første forespørgsel.
 2. **Deaktiver indlæsning af forespørgsel**: Sørg for at [deaktivere indlæsningen](import-modeling-data-reduction.md#disable-power-query-query-load) af den anden forespørgsel. På den måde bliver resultaterne fra den ikke indlæst som en modeltabel. Denne konfiguration reducerer størrelsen af datamodellageret og hjælper med at fjerne rodet i ruden **Felter**.
 
     I vores eksempel kan rapportforfattere nu finde en enkelt tabel med navnet **Produkt** i ruden **Felter**. Den indeholder alle produktrelaterede felter.
@@ -131,11 +131,11 @@ I vores eksempel kan rapportforfattere finde feltet **Kategori** i visningsmappe
 
 ![Feltet Kategori vises i ruden Felter i en visningsmappe med navnet Marketing.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-display-folder.png)
 
-Hvis du stadig beslutter dig for at definere en til en-relationer i et internt område i din model, skal du sikre, at der er matchende rækker i de relaterede tabeller, når det er muligt. Da en til en-relationer i et internt område evalueres som en [stærk relation](../desktop-relationships-understand.md#strong-relationships), kan problemer med dataintegritet i dine rapportvisualiseringer blive vist som TOMME. Du kan se et eksempel på en TOM gruppering i den første tabelvisualisering, som er præsenteret i denne artikel.
+Hvis du stadig beslutter dig for at definere en til en-relationer i et internt område i din model, skal du sikre, at der er matchende rækker i de relaterede tabeller, når det er muligt. Da en til en-relationer i et internt område evalueres som en [stærk relation](../transform-model/desktop-relationships-understand.md#strong-relationships), kan problemer med dataintegritet i dine rapportvisualiseringer blive vist som TOMME. Du kan se et eksempel på en TOM gruppering i den første tabelvisualisering, som er præsenteret i denne artikel.
 
 ### <a name="inter-island-one-to-one-relationship"></a>En til en-relation mellem områder
 
-Når der er en én til en-relation _mellem områder_ mellem tabeller, er der ingen alternative modeldesign – medmindre du konsoliderer dataene i dine datakilder på forhånd. Power BI evaluerer en til en-relationen i modellen som en [svag relation](../desktop-relationships-understand.md#weak-relationships). Du skal derfor nøje sikre, at der er matchende rækker i de relaterede tabeller, da rækker, som ikke matches, fjernes fra forespørgselsresultaterne.
+Når der er en én til en-relation _mellem områder_ mellem tabeller, er der ingen alternative modeldesign – medmindre du konsoliderer dataene i dine datakilder på forhånd. Power BI evaluerer en til en-relationen i modellen som en [svag relation](../transform-model/desktop-relationships-understand.md#weak-relationships). Du skal derfor nøje sikre, at der er matchende rækker i de relaterede tabeller, da rækker, som ikke matches, fjernes fra forespørgselsresultaterne.
 
 Lad os se, hvad der sker, når felter fra begge tabeller føjes til en tabelvisualisering, og der er en svag relation mellem tabellerne.
 
@@ -147,7 +147,7 @@ Der vises kun to rækker i tabellen. Produkt-SKU'en CL-02 mangler, da der ikke e
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Modelrelationer i Power BI Desktop](../desktop-relationships-understand.md)
+- [Modelrelationer i Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - [Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI](star-schema.md)
 - [Vejledning til fejlfinding af relationer](relationships-troubleshoot.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

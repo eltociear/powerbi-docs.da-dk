@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/12/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 61322db7085bd41539c0c79d483403b794f23f26
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8c91e2a07143a6355b7049e80cbdc3e4ba906013
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114313"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83145373"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Udskriv fra Power BI-tjenesten
 
@@ -116,7 +116,6 @@ Rapporter kan udskrives med én side ad gangen.
 * Svar: Gå tilbage til dashboardet eller rapporten i standardvisning, og åbn visual'et i fokustilstand og derefter i fuldskærmsvisning. 
 
 ## <a name="next-steps"></a>Næste trin
-[Del dashboards og rapporter med kollegaer og andre](../service-share-dashboards.md)
+[Del dashboards og rapporter med kollegaer og andre](../collaborate-share/service-share-dashboards.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

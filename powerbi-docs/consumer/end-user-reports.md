@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 089d1df9a63a30d602ac12f1bf18f32787374654
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 28af5cd89e918fad7fc7064479ac95c67ca3cee3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114236"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277450"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
 
@@ -76,7 +76,7 @@ Eller måske er du en *forbruger*, der modtager rapporter fra andre. Du vil gern
 
 * Start med en [præsentation af Power BI-tjenesten](end-user-basic-concepts.md), så du ved, hvor du kan finde rapporter og værktøjer til rapporten.
 * Få mere at vide om, hvordan du [åbner en rapport](end-user-report-open.md) og alle de [handlinger, der er tilgængelige for forbrugere](end-user-reading-view.md).
-* Bliv fortrolig med rapporter ved at se præsentationen af et af vores [eksempler](../sample-tutorial-connect-to-the-samples.md).  
+* Bliv fortrolig med rapporter ved at se præsentationen af et af vores [eksempler](../create-reports/sample-tutorial-connect-to-the-samples.md).  
 * Hvis du vil se, hvilke datasæt rapporten bruger, og hvilke dashboards der indeholder visualiseringer fra rapporten (*fastgjorte*), skal du se [Få vist relateret indhold i Power BI-tjenesten](end-user-related.md).
 
 > [!TIP]
@@ -86,3 +86,4 @@ Eller måske er du en *forbruger*, der modtager rapporter fra andre. Du vil gern
 
 [Åbn og få vist en rapport](end-user-report-open.md)    
 [Dashboards i Power BI-tjenesten](end-user-dashboards.md)
+

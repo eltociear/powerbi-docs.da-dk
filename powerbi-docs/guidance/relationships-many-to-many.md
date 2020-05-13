@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 937f8ca693113cf85d265420da44f7c9f8b68f5f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8718c67c592bf96d50efed475c0d27b4ec80ca04
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78260438"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278324"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Vejledning til mange-til-mange-relation
 
@@ -161,7 +161,7 @@ Der præsenteres et nøjagtigt resultat i visualiseringen. Modellens anvendeligh
 
 ### <a name="relate-many-to-many-facts-guidance"></a>Vejledning til relatering af fakta med mange til mange-relation
 
-Generelt anbefaler vi ikke, at du relaterer to tabeller af faktatypen direkte ved hjælp af mange til mange-kardinalitet. Den primære årsag er, at modellen ikke giver fleksibilitet i den måde, som rapportvisualiseringerne filtrerer eller grupperer på. I eksemplet er det kun muligt for visualiseringer at filtrere eller gruppere efter tabellen **Ordre** og kolonnen **Ordre-id**. En yderligere årsag vedrører kvaliteten af dine data. Hvis der er integritetsproblemer med dine data, udelades nogle rækker muligvis under forespørgsler på grund af den _svage relation_. Du kan finde flere oplysninger i [Modelrelationer i Power BI Desktop (Evaluering af relationer)](../desktop-relationships-understand.md#relationship-evaluation).
+Generelt anbefaler vi ikke, at du relaterer to tabeller af faktatypen direkte ved hjælp af mange til mange-kardinalitet. Den primære årsag er, at modellen ikke giver fleksibilitet i den måde, som rapportvisualiseringerne filtrerer eller grupperer på. I eksemplet er det kun muligt for visualiseringer at filtrere eller gruppere efter tabellen **Ordre** og kolonnen **Ordre-id**. En yderligere årsag vedrører kvaliteten af dine data. Hvis der er integritetsproblemer med dine data, udelades nogle rækker muligvis under forespørgsler på grund af den _svage relation_. Du kan finde flere oplysninger i [Modelrelationer i Power BI Desktop (Evaluering af relationer)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 I stedet for at relatere tabeller af faktatypen direkte, anbefaler vi, at du indfører principper for design af et [stjerneskema](star-schema.md). Det gør du ved at tilføje tabeller af dimensionstypen. Tabeller af dimensionstypen relateres derefter til tabeller af faktatypen ved hjælp af én til mange-relationer. Denne designmetode er robust, da den giver fleksible rapporteringsmuligheder. Den giver dig mulighed for at filtrere eller gruppere ved hjælp af en hvilken som helst af kolonnerne i dimensionstypen og opsummere en hvilken som helst tabel af faktatypen.
 
@@ -184,7 +184,7 @@ Hvis du tager dig tid til at anvende principper for design af et stjerneskema, f
 - Dine rapportvisualiseringer kan _filtrere eller gruppere_ efter en hvilken som helst synlig kolonne fra tabeller af dimensionstypen
 - Dine rapportvisualiseringer kan _opsummere_ en hvilken som helst synlig kolonne fra tabeller af faktatypen
 - Filtre, der er anvendt på tabellerne **Ordrelinje**, **Ordredato** eller **Produkt**, overføres til begge tabeller af faktatypen
-- Alle relationer er én til mange-relationer, og hver relation er en _stærk relation_. Problemer med dataintegritet maskeres ikke. Du kan finde flere oplysninger i [Modelrelationer i Power BI Desktop (Evaluering af relationer)](../desktop-relationships-understand.md#relationship-evaluation).
+- Alle relationer er én til mange-relationer, og hver relation er en _stærk relation_. Problemer med dataintegritet maskeres ikke. Du kan finde flere oplysninger i [Modelrelationer i Power BI Desktop (Evaluering af relationer)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 ## <a name="relate-higher-grain-facts"></a>Relater fakta på højere detaljeringsniveau
 
@@ -209,7 +209,7 @@ En relation mellem tabellerne **Dato** og **Mål** skal være en én til mange-r
 
 Du skal dog være omhyggelig med at sikre, at filtre på måneds- eller datoniveau giver et meningsfyldt resultat. Uden nogen speciel beregningslogik kan den første dag i hvert år bogstaveligt talt blive rapporteret som måldatoer i rapportvisualiseringer. Alle andre dage – og alle måneder undtagen januar – vil opsummere målantallet som TOMT.
 
-I følgende matrixvisualisering kan du se, hvad der sker, når rapportbrugeren zoomer ind fra et år til dets måneder. Kolonnen **Målantal** opsummeres i visualiseringen. (Indstillingen [Vis elementer uden data](../desktop-show-items-no-data.md) er aktiveret for matrixrækker.)
+I følgende matrixvisualisering kan du se, hvad der sker, når rapportbrugeren zoomer ind fra et år til dets måneder. Kolonnen **Målantal** opsummeres i visualiseringen. (Indstillingen [Vis elementer uden data](../create-reports/desktop-show-items-no-data.md) er aktiveret for matrixrækker.)
 
 ![Målantallet vises som 270 for året 2020 i en matrixvisualisering. Når den udvides til at vise månederne i 2020, er januar 270, og alle andre antal på månedsniveau er TOMME.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-bad.png)
 
@@ -295,7 +295,7 @@ Når du har brug for at relatere en tabel af dimensionstypen til en tabel af fak
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Modelrelationer i Power BI Desktop](../desktop-relationships-understand.md)
+- [Modelrelationer i Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - [Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI](star-schema.md)
 - [Vejledning til fejlfinding af relationer](relationships-troubleshoot.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

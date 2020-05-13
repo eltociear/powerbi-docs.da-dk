@@ -8,16 +8,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 5a6b7bda8bf5e8d80ae8b22a71035f8bc362fb89
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e3af0828afcc7c085b896fe9e1b99f3b10bfdd5f
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377736"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277841"
 ---
 # <a name="extend-visuals-with-report-page-tooltips"></a>Udvid visualiseringer med værktøjstip til rapportsider
 
-Denne artikel henvender sig til rapportforfattere, der designer Power BI-rapporter. Den indeholder forslag og anbefalinger til oprettelse af [værktøjstip til rapportsider](../desktop-tooltips.md).
+Denne artikel henvender sig til rapportforfattere, der designer Power BI-rapporter. Den indeholder forslag og anbefalinger til oprettelse af [værktøjstip til rapportsider](../create-reports/desktop-tooltips.md).
 
 ## <a name="suggestions"></a>Forslag
 
@@ -29,7 +29,7 @@ Værktøjstippene til rapportsiden kan forbedre oplevelsen for dine rapportbruge
 > [!NOTE]
 > Et rapportvisual kan kun vise et sideværktøjstip, når filtrene for værktøjstipsiden er kompatible med visualdesignet. Et visual, der grupperer efter _produkt_, er f. eks. kompatibelt med en værktøjstipside, der filtrerer efter _produkt_.
 >
-> Sideværktøjstip understøtter ikke interaktivitet. Hvis rapportbrugerne skal interagere, kan du i stedet oprette en [detaljeadgangsside](../desktop-drillthrough.md).
+> Sideværktøjstip understøtter ikke interaktivitet. Hvis rapportbrugerne skal interagere, kan du i stedet oprette en [detaljeadgangsside](../create-reports/desktop-drillthrough.md).
 >
 > Power BI-visuals for understøtter ikke sideværktøjstip.
 
@@ -65,7 +65,7 @@ Visualheadere kan konfigureres til at vise sideværktøjstip til visualheadere. 
 
 Der kan også vises sideværktøjstip til visualheadere i knapper, billeder, tekstfelter og figurer.
 
-I følgende eksempel kan du se, hvad der sker, når rapportbrugeren holder markøren over [ikonet for den visuelle overskrift](../desktop-visual-elements-for-reports.md).
+I følgende eksempel kan du se, hvad der sker, når rapportbrugeren holder markøren over [ikonet for den visuelle overskrift](../create-reports/desktop-visual-elements-for-reports.md).
 
 ![En rapportbruger holder markøren over ikonet for visualheaderen (ikonet med spørgsmålstegnet). Der vises et RTF-formateret værktøjstip.](media/report-page-tooltips/suggestion-add-help.png)
 
@@ -85,8 +85,8 @@ Vi anbefaler følgende fremgangsmåder på tidspunktet for oprettelse af rapport
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Opret værktøjstip på basis af rapportsider i Power BI Desktop](../desktop-tooltips.md)
-- [Tilpasning af værktøjstip i Power BI Desktop](../desktop-custom-tooltips.md)
-- [Brug visualiseringer til at forbedre Power BI-rapporter](../desktop-visual-elements-for-reports.md)
+- [Opret værktøjstip på basis af rapportsider i Power BI Desktop](../create-reports/desktop-tooltips.md)
+- [Tilpasning af værktøjstip i Power BI Desktop](../create-reports/desktop-custom-tooltips.md)
+- [Brug visualiseringer til at forbedre Power BI-rapporter](../create-reports/desktop-visual-elements-for-reports.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)
