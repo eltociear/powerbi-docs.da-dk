@@ -8,26 +8,26 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 723cc7b2767f6a5ee4394bca74e507fc688b3af8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ace93dfe358c85e54863dece0303c889c6a766b2
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75223647"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279589"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Vejledning til DirectQuery-model i Power BI Desktop
 
 Denne artikel er henvendt til designere af datamodeller, som udvikler DirectQuery-modeller i Power BI enten ved hjælp af Power BI Desktop eller Power BI-tjenesten. Heri beskrives use cases, begrænsninger og vejledning til DirectQuery. Vejledningen er især designet til at hjælpe dig med at afgøre, om DirectQuery er den rette tilstand for din model, og til at forbedre ydeevnen af dine rapporter, som er baseret på DirectQuery-modeller. Denne artikel er relevant for DirectQuery-modeller, der hostes i Power BI-tjenesten eller Power BI-rapportserver.
 
-Det er ikke meningen, at artiklen skal indeholde en komplet drøftelse af designet af DirectQuery-modellen. Du kan finde en introduktion i artiklen [DirectQuery-modeller i Power BI Desktop](../desktop-directquery-about.md). Hvis du vil have en mere tilbundsgående drøftelse, skal du se dette whitepaper: [DirectQuery i SQL Server 2016 Analysis Services](https://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf). Vær opmærksom på, at dette whitepaper indeholder en beskrivelse af, hvordan DirectQuery bruges i SQL Server Analysis Services. Meget af indholdet er dog stadig relevant for Power BI DirectQuery-modeller.
+Det er ikke meningen, at artiklen skal indeholde en komplet drøftelse af designet af DirectQuery-modellen. Du kan finde en introduktion i artiklen [DirectQuery-modeller i Power BI Desktop](../connect-data/desktop-directquery-about.md). Hvis du vil have en mere tilbundsgående drøftelse, skal du se dette whitepaper: [DirectQuery i SQL Server 2016 Analysis Services](https://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf). Vær opmærksom på, at dette whitepaper indeholder en beskrivelse af, hvordan DirectQuery bruges i SQL Server Analysis Services. Meget af indholdet er dog stadig relevant for Power BI DirectQuery-modeller.
 
-Denne artikel dækker ikke direkte sammensatte modeller. En sammensat model består af mindst én DirectQuery-kilde og muligvis flere. Den vejledning, der beskrives i denne artikel, er stadig relevant – i hvert fald delvist – for design af sammensatte modeller. Konsekvenserne ved at kombinere Import-tabeller med DirectQuery-tabeller er dog ikke omfattet af denne artikel. Du kan finde flere oplysninger under [Brug sammensatte modeller i Power BI Desktop](../desktop-composite-models.md).
+Denne artikel dækker ikke direkte sammensatte modeller. En sammensat model består af mindst én DirectQuery-kilde og muligvis flere. Den vejledning, der beskrives i denne artikel, er stadig relevant – i hvert fald delvist – for design af sammensatte modeller. Konsekvenserne ved at kombinere Import-tabeller med DirectQuery-tabeller er dog ikke omfattet af denne artikel. Du kan finde flere oplysninger under [Brug sammensatte modeller i Power BI Desktop](../transform-model/desktop-composite-models.md).
 
 Det er vigtigt at forstå, at DirectQuery-modeller pålægger Power BI-miljøet (Power BI-tjenesten eller Power BI-rapportserver) og også de underliggende datakilder en anden arbejdsbelastning. Hvis du beslutter dig for, at DirectQuery er den relevante designtilgang, anbefaler vi, at du engagerer de rette personer til projektet. Vi ser ofte, at en vellykket DirectQuery-modeludrulning skyldes et team af it-medarbejdere, der arbejder tæt sammen. Teamet består normalt af modeludviklere og administratorer af kildedatabasen. Det kan også omfatte dataarkitekter og udviklere af data warehouses og ETL. Optimeringer skal ofte anvendes direkte på datakilden for at få gode resultater i forbindelse med ydeevnen.
 
 ## <a name="design-in-power-bi-desktop"></a>Design i Power BI Desktop
 
-Der kan oprettes direkte forbindelse til datakilder både i Azure SQL Data Warehouse og Azure HDInsight Spark, uden at det er nødvendigt at bruge Power BI Desktop. Det opnås i Power BI-tjenesten ved at "hente data" og vælge feltet Databaser. Du kan finde flere oplysninger i [Azure SQL Data Warehouse med DirectQuery](../service-azure-sql-data-warehouse-with-direct-connect.md).
+Der kan oprettes direkte forbindelse til datakilder både i Azure SQL Data Warehouse og Azure HDInsight Spark, uden at det er nødvendigt at bruge Power BI Desktop. Det opnås i Power BI-tjenesten ved at "hente data" og vælge feltet Databaser. Du kan finde flere oplysninger i [Azure SQL Data Warehouse med DirectQuery](../connect-data/service-azure-sql-data-warehouse-with-direct-connect.md).
 
 Selvom direkte forbindelse er praktisk, anbefaler vi ikke, at du bruger denne tilgang. Den primære årsag er, at det ikke er muligt at opdatere modelstrukturen, hvis skemaet for den underliggende datakilde ændres.
 
@@ -77,8 +77,8 @@ En DirectQuery-model kan optimeres på mange måder, som beskrevet i følgende p
     Der er én undtagelse til denne vejledning, og det vedrører brugen af DAX-funktionen [COMBINEVALUES](/dax/combinevalues-function-dax). Formålet med denne funktion er at understøtte modelrelationer med flere kolonner. I stedet for at generere et udtryk, som relationen bruger, genererer den et prædikat for joinforbindelse af flere kolonner i SQL.
 - **Undgå relationer for kolonner med "entydigt id":** Power BI understøtter ikke oprindeligt datatypen GUID (entydigt id). Når du definerer en relation mellem kolonner af denne type, genererer Power BI en kildeforespørgsel med en joinforbindelse, der involverer en tvungen konvertering. Denne konvertering af forespørgsel i forhold til tid resulterer ofte i dårlig ydeevne. Indtil dette bliver optimeret, er den eneste løsning at materialisere kolonnerne for en alternativ datatype på den underliggende database.
 - **Skjul én side-kolonnen med relationer:** Én side-kolonnen med relationer bør skjules. (Det er normalt den primære nøglekolonne i tabeller af dimensionstypen.) Når den er skjult, er den ikke tilgængelig i ruden **Felter** og kan derfor ikke bruges til at konfigurere en visualisering. Mange sider-kolonnen kan forblive synlig, hvis det er nyttigt for at gruppere eller filtrere rapporter efter kolonneværdier. Du kan f.eks. overveje at skabe en model, hvor der findes en relation mellem tabellerne **Salg** og **Produkt**. Relationskolonnerne indeholder værdier med varenumre for produktet (enhed for lagerbeholdning). Hvis produktets varenummer skal føjes til visualiseringer, skal det være synligt i tabellen **Salg**. Når denne kolonne bruges til at filtrere eller gruppere i en visualisering, genererer Power BI en forespørgsel, der ikke behøver at joinforbinde tabellerne **Salg** og **Produkt**.
-- **Angiv relationer for at gennemtvinge integritet:** Egenskaben **Antag referentiel integritet** for DirectQuery-relationer bestemmer, om Power BI genererer kildeforespørgsler ved hjælp af en indre joinforbindelse i stedet for en ydre joinforbindelse. Det forbedrer generelt ydeevnen af forespørgsler, selvom det afhænger af specifikationerne for kilden til relationsdatabasen. Du kan finde flere oplysninger i [Indstillinger for antagelse af referentiel integritet i Power BI Desktop](../desktop-assume-referential-integrity.md).
-- **Undgå at bruge tovejsfiltrering af relationer:** Brug af tovejsfiltrering af relationer kan resultere i forespørgselssætninger, som ikke fungerer korrekt. Brug kun denne relationsfunktion, når det er nødvendigt, og det er normalt tilfældet, når du implementerer en mange til mange-relation på tværs af en brotabel. Du kan finde flere oplysninger i [Relationer med mange til mange-kardinalitet i Power BI Desktop](../desktop-many-to-many-relationships.md).
+- **Angiv relationer for at gennemtvinge integritet:** Egenskaben **Antag referentiel integritet** for DirectQuery-relationer bestemmer, om Power BI genererer kildeforespørgsler ved hjælp af en indre joinforbindelse i stedet for en ydre joinforbindelse. Det forbedrer generelt ydeevnen af forespørgsler, selvom det afhænger af specifikationerne for kilden til relationsdatabasen. Du kan finde flere oplysninger i [Indstillinger for antagelse af referentiel integritet i Power BI Desktop](../connect-data/desktop-assume-referential-integrity.md).
+- **Undgå at bruge tovejsfiltrering af relationer:** Brug af tovejsfiltrering af relationer kan resultere i forespørgselssætninger, som ikke fungerer korrekt. Brug kun denne relationsfunktion, når det er nødvendigt, og det er normalt tilfældet, når du implementerer en mange til mange-relation på tværs af en brotabel. Du kan finde flere oplysninger i [Relationer med mange til mange-kardinalitet i Power BI Desktop](../transform-model/desktop-many-to-many-relationships.md).
 - **Begræns parallelle forespørgsler:** Du kan angive det maksimale antal forbindelser, som DirectQuery åbner for hver underliggende datakilde. Det styrer antallet af forespørgsler, der sendes til datakilden samtidigt.
 
     ![Power BI Desktop-vinduet åbnes, og siden DirectQuery i den aktuelle fil er valgt. Egenskaben Maksimale antal forbindelser pr. datakilde er fremhævet.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-directquery.png)
@@ -121,9 +121,9 @@ Foruden ovenstående liste over optimeringsteknikker kan hver af følgende rappo
 
 ## <a name="convert-to-a-composite-model"></a>Konvertér til en sammensat model
 
-Fordelene ved Import- og DirectQuery-modeller kan kombineres i en enkelt model ved at konfigurere lagringstilstanden for modeltabellerne. Lagringstilstanden for tabellen kan være Import eller DirectQuery eller begge dele, hvilket kaldes for Dobbelt. Når en model indeholder tabeller med forskellige lagringstilstande, kaldes den for en sammensat model. Du kan finde flere oplysninger under [Brug sammensatte modeller i Power BI Desktop](../desktop-composite-models.md).
+Fordelene ved Import- og DirectQuery-modeller kan kombineres i en enkelt model ved at konfigurere lagringstilstanden for modeltabellerne. Lagringstilstanden for tabellen kan være Import eller DirectQuery eller begge dele, hvilket kaldes for Dobbelt. Når en model indeholder tabeller med forskellige lagringstilstande, kaldes den for en sammensat model. Du kan finde flere oplysninger under [Brug sammensatte modeller i Power BI Desktop](../transform-model/desktop-composite-models.md).
 
-Der kan opnås mange forbedringer af funktionerne og ydeevnen ved at konvertere en DirectQuery-model til en sammensat model. Der kan integreres mere end én DirectQuery-kilde i en sammensat model, og modellen kan også indeholde sammenlægninger. Sammenlægningstabeller kan føjes til DirectQuery-tabeller for at importere en opsummeret repræsentation af tabellen. Der kan opnås en dramatisk forbedring af ydeevnen, når visualiseringerne forespørger samlinger på højere niveau. Du kan finde flere oplysninger i [Sammenlægninger i Power BI Desktop](../desktop-aggregations.md).
+Der kan opnås mange forbedringer af funktionerne og ydeevnen ved at konvertere en DirectQuery-model til en sammensat model. Der kan integreres mere end én DirectQuery-kilde i en sammensat model, og modellen kan også indeholde sammenlægninger. Sammenlægningstabeller kan føjes til DirectQuery-tabeller for at importere en opsummeret repræsentation af tabellen. Der kan opnås en dramatisk forbedring af ydeevnen, når visualiseringerne forespørger samlinger på højere niveau. Du kan finde flere oplysninger i [Sammenlægninger i Power BI Desktop](../transform-model/desktop-aggregations.md).
 
 ## <a name="educate-users"></a>Oplær brugere
 
@@ -137,7 +137,7 @@ Når du leverer rapporter om flygtige datakilder, skal du sørge for at oplære 
 
 Du kan finde flere oplysninger om DirectQuery i følgende ressourcer:
 
-- [DirectQuery-modeller i Power BI Desktop](../desktop-directquery-about.md)
-- [Brug DirectQuery i Power BI Desktop](../desktop-use-directquery.md)
-- [Fejlfinding af DirectQuery-model i Power BI Desktop](../desktop-directquery-troubleshoot.md)
+- [DirectQuery-modeller i Power BI Desktop](../connect-data/desktop-directquery-about.md)
+- [Brug DirectQuery i Power BI Desktop](../connect-data/desktop-use-directquery.md)
+- [Fejlfinding af DirectQuery-model i Power BI Desktop](../connect-data/desktop-directquery-troubleshoot.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/11/2019
 ms.author: painbar
-ms.openlocfilehash: ff33bc2005918ba08c6098afd91a020e0cb6ba79
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 288ac6620af03c49d0a7f96e219e88d855381caf
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435806"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279543"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Indstil databeskeder i Power BI-mobilapps
 Gælder for:
@@ -29,7 +29,7 @@ Du kan angive beskeder på felter, hvis du har en licens til Power BI Pro, eller
 > [!WARNING]
 > Datadrevne beskeder indeholder oplysninger om dine data. Hvis din enhed bliver stjålet, anbefaler vi, at du går til Power BI-tjenesten og slår alle regler for datadrevne beskeder fra. 
 > 
-> Få mere at vide om at [administrere databeskeder i Power BI-tjenesten](../../service-set-data-alerts.md).
+> Få mere at vide om at [administrere databeskeder i Power BI-tjenesten](../../create-reports/service-set-data-alerts.md).
 > 
 > 
 
@@ -58,7 +58,7 @@ Du kan angive beskeder på felter, hvis du har en licens til Power BI Pro, eller
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-add-another-alert-rule.png)
 
 ### <a name="manage-alerts-on-your-iphone-or-ipad"></a>Administrer beskeder på din iPhone eller iPad
-Du kan administrere individuelle beskeder på din mobilenhed eller [administrere alle dine beskeder i Power BI-tjenesten](../../service-set-data-alerts.md).
+Du kan administrere individuelle beskeder på din mobilenhed eller [administrere alle dine beskeder i Power BI-tjenesten](../../create-reports/service-set-data-alerts.md).
 
 1. Tryk på et tal- eller målerfelt på et dashboard, som der er oprettet en besked for.  
    
@@ -92,7 +92,7 @@ Du kan administrere individuelle beskeder på din mobilenhed eller [administrere
 8. Tryk på **Gem**.
 
 ### <a name="manage-alerts-on-an-android-device"></a>Administrer beskeder på en Android-enhed
-Du kan administrere individuelle beskeder i din Power BI-mobilapp, eller du kan [administrere alle dine beskeder i Power BI-tjenesten](../../service-set-data-alerts.md).
+Du kan administrere individuelle beskeder i din Power BI-mobilapp, eller du kan [administrere alle dine beskeder i Power BI-tjenesten](../../create-reports/service-set-data-alerts.md).
 
 1. Tryk på et kort- eller målerfelt på et dashboard, som der er oprettet en besked for.  
 2. Tryk på det udfyldte klokkeikon ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-filled-alert-bell.png).  
@@ -131,7 +131,7 @@ Du kan administrere individuelle beskeder i din Power BI-mobilapp, eller du kan 
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-add-another-alert.png)
 
 ### <a name="manage-alerts-on-a-windows-device"></a>Administrer beskeder på en Windows-enhed
-Du kan administrere individuelle beskeder i din Power BI-mobilapp, eller du kan [administrere alle dine beskeder i Power BI-tjenesten](../../service-set-data-alerts.md).
+Du kan administrere individuelle beskeder i din Power BI-mobilapp, eller du kan [administrere alle dine beskeder i Power BI-tjenesten](../../create-reports/service-set-data-alerts.md).
 
 1. Tryk på et kort- eller målerfelt på et dashboard, som der er oprettet en besked for.  
 2. Tryk på klokkeikonet ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-on.png).  
@@ -172,7 +172,6 @@ Datakilder er ofte indstillet til at blive opdateret dagligt, selvom nogle opdat
 * Beskeder fungerer ikke med felter, der indeholder data, som streames.
 
 ## <a name="next-steps"></a>Næste trin
-* [Administrer dine beskeder i Power BI-tjenesten](../../service-set-data-alerts.md)
+* [Administrer dine beskeder i Power BI-tjenesten](../../create-reports/service-set-data-alerts.md)
 * [Power BI Mobile Meddelelsescenter](mobile-apps-notification-center.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

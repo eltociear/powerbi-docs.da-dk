@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: f2aeb720221fa79aa95f9674aa1e3ac610b28c19
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: 48b13b73455d39eb7dc8cbf9df3e95408592f7f5
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841727"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279497"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -27,7 +27,7 @@ Gælder for:
 
 En Power BI-rapport er en interaktiv visning af dine data, hvor visualiseringer repræsenterer forskellige resultater og indsigter fra disse data. At få vist rapporter i Power BI-mobilapps er det sidste trin i en proces med tre trin:
 
-1. [Opret rapporter i Power BI Desktop](../../desktop-report-view.md). Du kan endda [optimere en rapport til telefoner](mobile-apps-view-phone-report.md) i Power BI Desktop.
+1. [Opret rapporter i Power BI Desktop](../../create-reports/desktop-report-view.md). Du kan endda [optimere en rapport til telefoner](mobile-apps-view-phone-report.md) i Power BI Desktop.
 2. Publicer disse rapporter i Power BI-tjenesten [(https://powerbi.com)](https://powerbi.com) eller [Power BI-rapportserver](../../report-server/get-started.md).  
 3. Derefter kan du interagere med rapporterne i Power BI-mobilappsene.
 
@@ -100,7 +100,7 @@ Rapportforfattere kan definere hierarkier i dataene og relationer mellem rapport
 Når du trykker på en bestemt del af en visualisering og derefter trykker på indstillingen *detaljeadgang*, tager Power BI dig til en anden side i rapporten, der er filtreret, så den værdi, du har klikket på, vises. En forfatter af en rapport kan angive en eller flere muligheder for detaljeadgang, som hver især fører dig til en anden side. Hvis det er tilfældet, kan du vælge, hvilken mulighed du vil foretage detaljeadgang for. Du kan bruge knappen Tilbage til at komme tilbage til den forrige side.
 
 
-Du kan få flere oplysninger ved at læse om, hvordan du [tilføjer detaljeadgang i Power BI Desktop](../../desktop-drillthrough.md).
+Du kan få flere oplysninger ved at læse om, hvordan du [tilføjer detaljeadgang i Power BI Desktop](../../create-reports/desktop-drillthrough.md).
    
    > [!IMPORTANT]
    > I Power BI-mobilapps aktiveres detailudledning i matrix-og tabelvisualiseringer kun via celleværdier, ikke via kolonne-eller rækkeoverskrifter.
@@ -164,6 +164,5 @@ Se [indstillinger for app-interaktion](./mobile-app-interaction-settings.md) for
 
 ## <a name="next-steps"></a>Næste trin
 * [Få vist og interager med Power BI-rapporter, der er optimeret til din telefon](mobile-apps-view-phone-report.md)
-* [Opret en version af en rapport, der er optimeret til telefoner](../../desktop-create-phone-report.md)
+* [Opret en version af en rapport, der er optimeret til telefoner](../../create-reports/desktop-create-phone-report.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 4f289bf319bf29de8f8765d55bf3400048420af5
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: de84dd7e9021abf1198f2dc4f910afb8bd078ac6
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76829046"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279520"
 ---
 # <a name="on-premises-data-gateway-sizing"></a>Størrelse af datagateway i det lokale miljø
 
-Denne artikel er målrettet Power BI-administratorer, der skal installere og administrere [datagatewayen i det lokale miljø](../service-gateway-onprem.md).
+Denne artikel er målrettet Power BI-administratorer, der skal installere og administrere [datagatewayen i det lokale miljø](../connect-data/service-gateway-onprem.md).
 
 Gatewayen er påkrævet, når Power BI skal have adgang til data, der ikke er tilgængelige direkte via internettet. Den kan installeres på en server i det lokale miljø eller på en VM-hostet IaaS (Infrastruktur som en service).
 
@@ -39,8 +39,8 @@ Arbejdsbelastningen for _cachelagrede data_ henter og transformerer kildedata ti
 
 Arbejdsbelastningen _Direkte forbindelse og DirectQuery_ bruges mest i pass-through-tilstand. Power BI-tjenesten sender forespørgsler, og gatewayen svarer med forespørgselsresultater. Generelt fylder forespørgselsresultater ikke ret meget.
 
-- Du kan finde flere oplysninger om direkte forbindelse under [Datasæt i Power BI-tjenesten (eksternt hostede modeller)](../service-datasets-understand.md#external-hosted-models).
-- Du kan finde flere oplysninger om DirectQuery under [Datasæt i Power BI-tjenesten (eksternt hostede modeller)](../service-dataset-modes-understand.md#directquery-mode).
+- Du kan finde flere oplysninger om direkte forbindelse under [Datasæt i Power BI-tjenesten (eksternt hostede modeller)](../connect-data/service-datasets-understand.md#external-hosted-models).
+- Du kan finde flere oplysninger om DirectQuery under [Datasæt i Power BI-tjenesten (eksternt hostede modeller)](../connect-data/service-dataset-modes-understand.md#directquery-mode).
 
 Denne arbejdsbelastning kræver CPU-ressourcer til routing af forespørgsler og forespørgselsresultater. Der er normalt meget mindre CPU-efterspørgsel end det, der kræves af arbejdsbelastningen for cachelagrede data – især når det er nødvendigt for at transformere data til cachelagring.
 
@@ -62,13 +62,13 @@ Det kan afhænge af følgende variabler, hvordan du bestemmer den korrekte stør
   - Antallet af samtidige rapportbrugere
   - Antallet af visuals på rapportsider (hvert enkelt visual sender mindst én forespørgsel)
   - Frekvensen af opdateringer af forespørgselscache for Power BI-dashboard
-  - Antallet af rapporter i realtid, der bruger funktionen [Automatisk sideopdatering](../desktop-automatic-page-refresh.md)
-  - Angiver, om datasæt gennemtvinger [sikkerhed på rækkeniveau (RLS)](../desktop-rls.md)
+  - Antallet af rapporter i realtid, der bruger funktionen [Automatisk sideopdatering](../create-reports/desktop-automatic-page-refresh.md)
+  - Angiver, om datasæt gennemtvinger [sikkerhed på rækkeniveau (RLS)](../create-reports/desktop-rls.md)
 
 Generelt kræver direkte forbindelse og DirectQuery-arbejdsbelastninger tilstrækkelige CPU-ressourcer, mens arbejdsbelastninger for cachelagede data kræver mere CPU og hukommelse. Begge arbejdsbelastninger afhænger af, at der er en god forbindelse til Power BI-tjenesten og datakilderne.
 
 > [!NOTE]
-> Power BI-kapaciteter sætter grænser for parallelle modelopdateringer og Direkte forbindelse- og DirectQuery-gennemløb. Der er ingen grund til at tilpasse gatewaystørrelsen, så den leverer mere end det, Power BI-tjenesten understøtter. Der gælder andre begrænsninger med Premium SKU (og A SKU med en tilsvarende størrelse). Du kan finde flere oplysninger i [Hvad er Power BI Premium? (kapacitetsnoder)](../service-premium-what-is.md#capacity-nodes).
+> Power BI-kapaciteter sætter grænser for parallelle modelopdateringer og Direkte forbindelse- og DirectQuery-gennemløb. Der er ingen grund til at tilpasse gatewaystørrelsen, så den leverer mere end det, Power BI-tjenesten understøtter. Der gælder andre begrænsninger med Premium SKU (og A SKU med en tilsvarende størrelse). Du kan finde flere oplysninger i [Hvad er Power BI Premium? (kapacitetsnoder)](../admin/service-premium-what-is.md#capacity-nodes).
 
 ## <a name="recommendations"></a>Anbefalinger
 
@@ -84,9 +84,9 @@ Planlæg den bedst mulige forbindelse mellem Power BI-tjenesten og din gateway s
 
 - Tilstræb pålidelighed, hurtige hastigheder og lave, ensartede ventetider
 - Fjern – eller reducer – maskinhop mellem gatewayen og dine datakilder
-- Fjern alle netværksbegrænsninger, der pålægges af firewall-proxy-laget. Du kan finde flere oplysninger om Power BI's slutpunkter i [URL-adresser til hvidliste for Power BI](../power-bi-whitelist-urls.md).
+- Fjern alle netværksbegrænsninger, der pålægges af firewall-proxy-laget. Du kan finde flere oplysninger om Power BI's slutpunkter i [URL-adresser til hvidliste for Power BI](../admin/power-bi-whitelist-urls.md).
 - Konfigurer [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) til at oprette en privat, administreret forbindelse til Power BI
-- Ved datakilder i Azure VM'er, skal du sikre, at VM'er er [placeret sammen med Power BI-tjenesten](../service-admin-where-is-my-tenant-located.md)
+- Ved datakilder i Azure VM'er, skal du sikre, at VM'er er [placeret sammen med Power BI-tjenesten](../admin/service-admin-where-is-my-tenant-located.md)
 - Sørg for, at der er en god forbindelse mellem gatewaymaskinen og Active Directory i det lokale miljø for arbejdsbelastninger for direkte forbindelser til SQL Server Analysis Services (SSAS), der involverer dynamisk sikkerhed på rækkeniveau
 
 ### <a name="clustering"></a>Clustering
@@ -105,17 +105,17 @@ Datasætdesign og deres indstillinger kan påvirke arbejdsbelastningen for gatew
 For importdatasæt:
 
 - Konfigurer mindre hyppig opdatering af data
-- Konfigurer [trinvis opdatering](../service-premium-incremental-refresh.md) for at minimere den mængde data, der skal overføres
+- Konfigurer [trinvis opdatering](../admin/service-premium-incremental-refresh.md) for at minimere den mængde data, der skal overføres
 - Når det er muligt, skal du sørge for, at der foretages [forespørgselsdelegering](power-query-folding.md)
-- Konverter designet til en DirectQuery-model eller [sammensat](../service-dataset-modes-understand.md#composite-mode) model, især ved store datamængder eller behov for resultater med kort ventetid
+- Konverter designet til en DirectQuery-model eller [sammensat](../connect-data/service-dataset-modes-understand.md#composite-mode) model, især ved store datamængder eller behov for resultater med kort ventetid
 
 For DirectQuery-datasæt:
 
 - Optimere datakilder samt model- og rapportdesign – du kan finde flere oplysninger under [Vejledning til DirectQuery-modeller i Power BI Desktop](directquery-model-guidance.md)
-- Opret [sammenlægninger](../desktop-aggregations.md) for at cachelagre resultater på højere niveauer og dermed reducere antallet af DirectQuery-anmodninger
-- Begræns intervaller for [Automatisk sideopdatering](../desktop-automatic-page-refresh.md) i rapportdesign og kapacitetsindstillinger
+- Opret [sammenlægninger](../transform-model/desktop-aggregations.md) for at cachelagre resultater på højere niveauer og dermed reducere antallet af DirectQuery-anmodninger
+- Begræns intervaller for [Automatisk sideopdatering](../create-reports/desktop-automatic-page-refresh.md) i rapportdesign og kapacitetsindstillinger
 - Begræns opdateringsfrekvensen for dashboardcachen, især når der gennemtvinges dynamisk sikkerhed på rækkeniveau
-- Konverter designet til en importmodel eller [sammensat](../service-dataset-modes-understand.md#composite-mode) model, især ved mindre datamængder eller i forbindelse med ikke-midlertidige data
+- Konverter designet til en importmodel eller [sammensat](../connect-data/service-dataset-modes-understand.md#composite-mode) model, især ved mindre datamængder eller i forbindelse med ikke-midlertidige data
 
 For Direkte forbindelse-datasæt:
 
@@ -125,10 +125,10 @@ For Direkte forbindelse-datasæt:
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Vejledning i at installere en datagateway til Power BI](../service-gateway-deployment-guidance.md)
+- [Vejledning i at installere en datagateway til Power BI](../connect-data/service-gateway-deployment-guidance.md)
 - [Konfigurer proxyindstillinger for datagatewayen i det lokale miljø](/data-integration/gateway/service-gateway-proxy)
 - [Overvåg og optimer ydeevne for datagateways i det lokale miljø](/data-integration/gateway/service-gateway-performance)
-- [Foretag fejlfinding af gateways – Power BI](../service-gateway-onprem-tshoot.md)
+- [Foretag fejlfinding af gateways – Power BI](../connect-data/service-gateway-onprem-tshoot.md)
 - [Foretag fejlfinding af datagatewayen i det lokale miljø](/data-integration/gateway/service-gateway-tshoot)
 - [Vigtigheden af forespørgselsdelegering](power-query-folding.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
