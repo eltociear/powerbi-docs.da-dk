@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0f430747187729cbb939b67795ff0507770bb0f1
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 9f7cd6c277a02ce4e44db40930184cce955e5948
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867018"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83274184"
 ---
 # <a name="line-charts-in-power-bi"></a>Kurvediagrammer i Power BI
 
@@ -32,7 +32,7 @@ I denne vejledning bruges appen Sales and Marketing Sample til at oprette et kur
 > [!NOTE]
 > Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet.
 
-1. Start på en tom rapportside. Hvis du bruger Power BI-tjenesten, skal du åbne rapporten i [redigeringsvisning](../service-interact-with-a-report-in-editing-view.md).
+1. Start på en tom rapportside. Hvis du bruger Power BI-tjenesten, skal du åbne rapporten i [redigeringsvisning](../create-reports/service-interact-with-a-report-in-editing-view.md).
 
 2. Vælg **Salgsfakta** \> **Enheder i alt** i ruden Felter, og vælg **Dato** > **Måned**.  Power BI opretter et søjlediagram på dit rapportlærred.
 
@@ -74,7 +74,7 @@ Hvis du vil have vist meget divergerende værdier i ét diagram, kan du bruge et
    ![yderst divergerende værdier](media/power-bi-line-charts/power-bi-dual-axes.png)
 
 ## <a name="highlighting-and-cross-filtering"></a>Fremhævning og krydsfiltrering
-Du kan få mere at vide om brug af ruden Filters under [Føj et filter til en rapport](../power-bi-report-add-filter.md).
+Du kan få mere at vide om brug af ruden Filters under [Føj et filter til en rapport](../create-reports/power-bi-report-add-filter.md).
 
 Hvis vi vælger et datapunkt i et kurvediagram, fører det til tværgående fremhævning og krydsfiltrering af andre visualiseringer på rapportsiden... og omvendt. Hvis du vil følge med, skal du åbne fanen **Markedsandel**.  
 
@@ -86,7 +86,7 @@ I dette eksempel har vi valgt et datapunkt, der omfatter: July 2014, %Units Mark
 
 Bemærk, hvordan søjlediagrammet fremhæves på tværs, og hvordan måleren er krydsfiltreret.
 
-Hvis du vil administrere, hvordan diagrammer krydsfremhæver og krydsfiltrerer hinanden, skal du se [Interaktioner mellem visualiseringer i en Power BI-rapport](../service-reports-visual-interactions.md)
+Hvis du vil administrere, hvordan diagrammer krydsfremhæver og krydsfiltrerer hinanden, skal du se [Interaktioner mellem visualiseringer i en Power BI-rapport](../create-reports/service-reports-visual-interactions.md)
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 * Et kurvediagram kan ikke have to Y-akser.  Du skal i stedet bruge et kombinationsdiagram.
@@ -95,5 +95,8 @@ Hvis du vil administrere, hvordan diagrammer krydsfremhæver og krydsfiltrerer h
 ## <a name="next-steps"></a>Næste trin
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+
+
 
 

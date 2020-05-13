@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 27d6ddd9b24e09805bd22150a22347e5cd93c8e0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 66ef36f669b5f34c19f283cf9ebc8be2b12332ec
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79492830"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148658"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Kapacitet og SKU'er i integrerede Power BI-analyser
 
@@ -38,7 +38,7 @@ Programmer, der bruger Power BI Embedded, gør det muligt for brugerne at forbru
 
 ### <a name="power-bi-premium"></a>Power BI Premium
 
-[Power BI Premium](../../service-premium-what-is.md) er kapacitetsmæssigt gearet mod virksomheder, som vil have en komplet BI-løsning, der giver adgang til en enkelt visning af virksomheden, kunderne og leverandørerne.
+[Power BI Premium](../../admin/service-premium-what-is.md) er kapacitetsmæssigt gearet mod virksomheder, som vil have en komplet BI-løsning, der giver adgang til en enkelt visning af virksomheden, kunderne og leverandørerne.
 
 Power BI Premium er et SaaS-produkt, der giver mulighed for brugere at forbruge indhold gennem mobilapps, internt udviklede apps eller i Power BI-portalen (Power BI-tjeneste). Dette gør det muligt for Power BI Premium at levere en løsning til både interne og eksterne kundeorienterede programmer.
 
@@ -46,21 +46,21 @@ Power BI Premium er et SaaS-produkt, der giver mulighed for brugere at forbruge 
 
 Hver enkelt kapacitet tilbyder en række SKU'er, og hver enkelt SKU indeholder forskellige ressourceniveauer til hukommelses- og computerkraft. Den type SKU, du har brug for, afhænger af den løsningstype, du vil udrulle.
 
-Hvis du vil vide, hvilke arbejdsbelastninger der understøttes for hvert enkelt niveau, kan du se i artiklen [Konfigurer arbejdsbelastninger i en Premium-kapacitet](../../service-admin-premium-workloads.md)
+Hvis du vil vide, hvilke arbejdsbelastninger der understøttes for hvert enkelt niveau, kan du se i artiklen [Konfigurer arbejdsbelastninger i en Premium-kapacitet](../../admin/service-admin-premium-workloads.md)
 
 Brug disse link til at planlægge og teste din kapacitet:
 * [Kapacitetsplanlægning](embedded-capacity-planning.md)
-* [Testmetoder](../../service-premium-capacity-optimize.md#testing-approaches)
+* [Testmetoder](../../admin/service-premium-capacity-optimize.md#testing-approaches)
 
 ### <a name="power-bi-embedded-skus"></a>Power BI Embedded-SKU'er
 
-Power BI Embedded leveres med en [*a*-SKU](../../service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
+Power BI Embedded leveres med en [*a*-SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
 
 ### <a name="power-bi-premium-skus"></a>Power BI Premium-SKU'er
 
 Power BI Premium tilbyder to SKU'er, *P* og *EM*.
-* [Forstå forskellene mellem *P*- og *EM*-SKU'er](../../service-premium-what-is.md#subscriptions-and-licensing)
-* [Køb en Premium-SKU](../../service-admin-premium-purchase.md)
+* [Forstå forskellene mellem *P*- og *EM*-SKU'er](../../admin/service-premium-what-is.md#subscriptions-and-licensing)
+* [Køb en Premium-SKU](../../admin/service-admin-premium-purchase.md)
 
 ### <a name="which-sku-should-i-use"></a>Hvilken SKU skal jeg bruge?
 

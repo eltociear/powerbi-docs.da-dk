@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/15/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 098c01aacca7fca0621efe12367f2f66cd0d9d96
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 85cecc300ac3586c3702e8a7fa5e5c4a4dc6a65c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82066101"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278945"
 ---
 # <a name="tips-to-format-and-implement-legends-in-power-bi-reports"></a>Tip til formatering og implementering af forklaringer i Power BI-rapporter
 
@@ -39,7 +39,8 @@ Kort sagt, så omfatter de seks mest populære tip til formatering og implemente
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Tip til oprettelse af flotte rapporter](../desktop-tips-and-tricks-for-creating-reports.md)
+- [Tip til oprettelse af flotte rapporter](../create-reports/desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine-video: [De seks mest populære tip til formatering og implementering af forklaringer i Power BI](https://www.youtube.com/watch?v=r9XnHmuWkZQ)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)
+

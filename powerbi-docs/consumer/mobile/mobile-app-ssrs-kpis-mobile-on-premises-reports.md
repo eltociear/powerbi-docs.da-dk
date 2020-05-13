@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: painbar
-ms.openlocfilehash: 6020a6cb72be4e8d7be0485c7787fefc097e679d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 387f0cd4ecea59fd55af0a9eceff2272ddd8097b
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75220029"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278853"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Vis rapporter og KPI'er fra rapportserveren i det lokale miljø i Power BI-mobilapps
 
@@ -107,7 +107,7 @@ Power BI-rapporter, Reporting Services-mobilrapporter og KPI'er vises i de samme
   > Analysér ned og op er i øjeblikket ikke aktiveret i Power BI-rapporter på en Power BI-rapportserver.
   
     ![Power BI-rapport](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-report-server-report.png)
-* I Power BI Desktop kan ejere [optimere en rapport](../../desktop-create-phone-report.md) til Power BI-mobilapps. På din mobiltelefon har optimerede rapporter et særligt ikon, ![ikonet for Optimeret Power BI-rapport](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png), og layout.
+* I Power BI Desktop kan ejere [optimere en rapport](../../create-reports/desktop-create-phone-report.md) til Power BI-mobilapps. På din mobiltelefon har optimerede rapporter et særligt ikon, ![ikonet for Optimeret Power BI-rapport](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png), og layout.
   
     ![Power BI-rapport optimeret til mobil visning](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-report.png)
 * Tryk på en KPI for at få den vist i fokuseret tilstand.
@@ -133,4 +133,3 @@ Du kan markere KPI'er og rapporter som favoritter på webportalen og derefter se
 ## <a name="next-steps"></a>De næste trin
 * [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)  
 * Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

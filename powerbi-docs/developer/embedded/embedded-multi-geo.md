@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 269fe87a61df3470a8d11e4934ff1fca4bde7e86
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3b51fbfda8f63834a0b2445bd2b2b23734b8e234
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114652"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83149243"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Multi-Geo-understøttelse af Power BI Embedded
 
 **Multi-Geo-understøttelse af Power BI Embedded** betyder, at ISV'er og organisationer, der bygger programmer ved at bruge Power BI Embedded til at integrere analyser i deres apps, nu kan udrulle deres data i forskellige områder over hele verden.
 
-Nu kan kunder, der bruger **Power BI Embedded**, konfigurere en **A-kapacitet** ved hjælp af indstillinger for **Multi-Geo** baseret på de samme funktioner og begrænsninger, som [Power BI Premium understøtter ved hjælp af Multi-Geo](../../service-admin-premium-Multi-Geo.md).
+Nu kan kunder, der bruger **Power BI Embedded**, konfigurere en **A-kapacitet** ved hjælp af indstillinger for **Multi-Geo** baseret på de samme funktioner og begrænsninger, som [Power BI Premium understøtter ved hjælp af Multi-Geo](../../admin/service-admin-premium-Multi-Geo.md).
 
 ## <a name="creating-new-power-bi-embedded-capacity-resource-with-multi-geo"></a>Opret ny ressource til Power BI Embedded-kapacitet med Multi-Geo
 
@@ -89,6 +89,6 @@ Få mere at vide om Power BI Embedded-kapaciteter og Multi-Geo-indstillinger for
 
 * [Opret Power BI Embedded-kapacitet](azure-pbie-create-capacity.md)
 
-* [Multi-Geo i Power BI Premium-kapaciteter](../../service-admin-premium-multi-geo.md)
+* [Multi-Geo i Power BI Premium-kapaciteter](../../admin/service-admin-premium-multi-geo.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

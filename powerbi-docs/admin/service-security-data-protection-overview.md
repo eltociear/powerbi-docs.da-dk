@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/22/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 97e7bf44233e0986459be9edf719cd21cd3d7a01
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: d7fc915c9c21460670bf86f308b756196886983a
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81637594"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83132049"
 ---
 # <a name="data-protection-in-power-bi-preview"></a>Databeskyttelse i Power BI (prøveversion)
 
@@ -113,6 +113,6 @@ Følgende liste indeholder nogle begrænsninger for følsomhedsmærkater i Power
 Denne artikel indeholdt en oversigt over databeskyttelse i Power BI. Følgende artikler indeholder flere oplysninger om databeskyttelse i Power BI. 
 
 * [Aktivér datafølsomhedsmærkater i Power BI](service-security-enable-data-sensitivity-labels.md)
-* [Anvend datafølsomhedsmærkater i Power BI](../designer/service-security-apply-data-sensitivity-labels.md)
+* [Anvend datafølsomhedsmærkater i Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
 * [Brug af Microsoft Cloud App Security-kontrolelementer i Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
 * [Rapport over databeskyttelsesmålepunkter](service-security-data-protection-metrics-report.md)

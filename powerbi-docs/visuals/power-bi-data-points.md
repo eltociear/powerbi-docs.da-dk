@@ -7,16 +7,18 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/10/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 98af83c726cfd4e5b4e6744cbcfa1f7e5a69f57b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a874875c470cd85720570e57b7c6d7cf50dabca1
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79381439"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83274161"
 ---
 # <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Anvend datapunktgrænser og strategier efter visualiseringstype
+
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]    
 
 Når du gengiver en visualisering i Power BI, skal visualiseringen være hurtig og præcis. Det kræver, at der er konfigureret underliggende algoritmer for hver visualiseringstype. Visualiseringer i Power BI skal være fleksible nok til at håndtere forskellige størrelser af datasæt. Nogle datasæt har kun en håndfuld datapunkter, mens andre datasæt har petabyte af datapunkter. I denne artikel forklares de strategier, der bruges af Power BI til at gengive visualiseringer.
 
@@ -57,7 +59,7 @@ Dynamiske grænser anvendes automatisk, når serveren er funktionsdygtig som bes
 ## <a name="strategies-and-data-point-limits-by-visual-type"></a>Strategier og datapunktgrænser efter visualiseringstype
 
 ### <a name="area-chart"></a>Områdediagram
-Se [Sådan fungerer stikprøvetagning af linjer](../desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
+Se [Sådan fungerer stikprøvetagning af linjer](../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
 ### <a name="barcolumn-chart"></a>Søjlediagrammer/liggende søjlediagrammer
 - I kategoritilstand
@@ -97,10 +99,10 @@ Det udfyldte kort kan bruge statistikker eller dynamisk grænser. Power BI fors�
 - Nederste 3.500
 
 ### <a name="line-chart"></a>Kurvediagram
-Se [Sådan fungerer stikprøvetagning af linjer](../desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
+Se [Sådan fungerer stikprøvetagning af linjer](../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
 ### <a name="line-chart-high-density"></a>Kurvediagram, høj tæthed
-Se [Stikprøvetagning med høj tæthed](../desktop-high-density-sampling.md)
+Se [Stikprøvetagning med høj tæthed](../create-reports/desktop-high-density-sampling.md)
 
 ### <a name="map"></a>Kort 
 - Maksimumpunkter: 3,500
@@ -109,9 +111,9 @@ Afhængigt af konfigurationen kan et kort have:
 - Placering: Øverste 3.500
 - Placering, størrelse: Øverste 3.500
 - Samlinger af placering, breddegrad og længdegrad (+/-størrelse): Øverste 3.500
-- Længdegrad, breddegrad: se [punktdiagram med høj tæthed](desktop-high-density-scatter-charts.md)
+- Længdegrad, breddegrad: se [punktdiagram med høj tæthed](../create-reports/desktop-high-density-scatter-charts.md)
 - Breddegrad, længdegrad, størrelse: Øverste 3.500
-- Forklaring, længdegrad, breddegrad: se [punktdiagram med høj tæthed](desktop-high-density-scatter-charts.md)
+- Forklaring, længdegrad, breddegrad: se [punktdiagram med høj tæthed](../create-reports/desktop-high-density-scatter-charts.md)
 - Forklaring, breddegrad, længdegrad, størrelse: Øverste 233-forklaringer, øverste 15-breddegrad og -længdegrad (kan bruge statistikker eller dynamiske grænser)
 - Placering, forklaring, breddegrad og længdegrad som samlinger (+/-størrelse): Øverste 233-placeringer, øverste 15-forklaringer (kan bruge statistikker eller dynamiske grænser)
 

@@ -7,12 +7,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 4a9dcf14d1745087e2596507d4c7dbc7a03b5ab3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7ee8887752f6a5161e0046e4aac1711f2ce64922
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435323"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276208"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Filtrer en rapport efter geografisk placering i Power BI-mobilapps
 Gælder for:
@@ -39,17 +39,16 @@ Når du får vist en Power BI-rapport på din mobilenhed, vises der da et lille 
 ## <a name="why-dont-i-see-location-tags-on-a-report"></a>Hvorfor kan jeg ikke se placeringskoder i en rapport?
 Alle tre følgende betingelser skal være opfyldt, før du kan se placeringskoder. 
 
-* Den person, der oprettede rapporten i Power BI Desktop, skal have [kategoriseret geografiske data](../../desktop-mobile-geofiltering.md) for mindst én kolonne, f.eks. By, Stat eller Land/Område.
+* Den person, der oprettede rapporten i Power BI Desktop, skal have [kategoriseret geografiske data](../../transform-model/desktop-mobile-geofiltering.md) for mindst én kolonne, f.eks. By, Stat eller Land/Område.
 * Du befinder dig på en af de placeringer, hvor der findes data i kolonnen.
 * Du bruger en af disse mobilenheder:
   * iOS (iPad, iPhone, iPod).
   * Android (telefon og tablet).
   * Windows 10-telefon (andre typer Windows 10-enheder som pc'er og tablets understøtter ikke geografisk filtrering).
 
-Læs mere om at [konfigurere geografisk filtrering](../../desktop-mobile-geofiltering.md) i Power BI Desktop.
+Læs mere om at [konfigurere geografisk filtrering](../../transform-model/desktop-mobile-geofiltering.md) i Power BI Desktop.
 
 ### <a name="next-steps"></a>De næste trin
 * [Opret forbindelse til Power BI-data fra den virkelige verden](mobile-apps-data-in-real-world-context.md) med mobilappsene
-* [Datakategorisering i Power BI Desktop](../../desktop-data-categorization.md) 
+* [Datakategorisering i Power BI Desktop](../../transform-model/desktop-data-categorization.md) 
 * Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/25/2020
 ms.author: v-pemyer
-ms.openlocfilehash: e532c78254dffc9a3f95a165f509f8cc0553f09b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 639999044da94c3f31abdf63737a876b63dc83c9
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82065933"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278899"
 ---
 # <a name="tips-to-sort-and-distribute-data-plots-in-power-bi-reports"></a>Tip til sortering og distribution af dataafbildninger i Power BI-rapporter
 
@@ -42,7 +42,8 @@ Kort sagt omfatter de ni bedste tip til sortering og distribution af dataafbildn
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Tip til oprettelse af flotte rapporter](../desktop-tips-and-tricks-for-creating-reports.md)
+- [Tip til oprettelse af flotte rapporter](../create-reports/desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine-video: [De ni bedste tip til sortering og distribution af dataafbildninger i Power BI](https://www.youtube.com/watch?v=BnhA4qa-9Jk)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)
+

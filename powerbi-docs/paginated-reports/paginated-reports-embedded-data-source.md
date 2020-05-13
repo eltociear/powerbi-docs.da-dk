@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.openlocfilehash: 83fadfe5f690a87563d20b9c6385b9a37193b9c9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b70db42732143d5db938ad793be8aa3997ecdd8c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78921763"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276898"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Opret en integreret datakilde for sideinddelte rapporter i Power BI-tjenesten
 
@@ -27,11 +27,11 @@ I denne artikel kan du læse om, hvordan du opretter og redigerer en integreret 
 - Oracle 
 - Teradata 
 
-I forbindelse med følgende datakilder skal du bruge følgende indstilling for [SQL Server Analysis Services-forbindelse](../service-premium-connect-tools.md):
+I forbindelse med følgende datakilder skal du bruge følgende indstilling for [SQL Server Analysis Services-forbindelse](../admin/service-premium-connect-tools.md):
 
 - Power BI Premium-datasæt
 
-Sideinddelte rapporter opretter forbindelse til datakilder i det lokale miljø via en [Power BI-gateway](../service-gateway-onprem.md). Du kan konfigurere gatewayen, når du har publiceret rapporten til Power BI-tjenesten.
+Sideinddelte rapporter opretter forbindelse til datakilder i det lokale miljø via en [Power BI-gateway](../connect-data/service-gateway-onprem.md). Du kan konfigurere gatewayen, når du har publiceret rapporten til Power BI-tjenesten.
 
 Se [Rapportdata i Power BI Report Builder](report-builder-data.md) for at få mere detaljerede oplysninger.
 
@@ -93,3 +93,4 @@ Sideinddelte rapporter, der opretter forbindelse til Power BI-datasæt, følger 
 
 - [Opret et integreret datasæt til en sideinddelt rapport i Power BI-tjenesten](paginated-reports-create-embedded-dataset.md)
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+

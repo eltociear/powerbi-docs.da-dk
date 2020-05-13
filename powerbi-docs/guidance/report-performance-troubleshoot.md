@@ -8,18 +8,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/15/2020
 ms.author: v-pemyer
-ms.openlocfilehash: a5230a39706ce5d6941c00386160fe10114442e1
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: dd3be575946502a886bbf2b89e2a1844f4046ea7
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81527985"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276944"
 ---
 # <a name="troubleshoot-report-performance-in-power-bi"></a>Foretag fejlfinding af en rapports ydeevne i Power BI
 
 Denne artikel indeholder en vejledning, der gør det muligt for udviklere og administratorer at foretage fejlfinding af langsom rapportydeevne. Det gælder både for Power BI-rapporter og sideinddelte Power BI-rapporter.
 
-Langsomme rapporter kan identificeres af rapportbrugere, der oplever, at det tager lang tid at indlæse eller opdatere rapporterne, når der interageres med udsnit eller andre funktioner. Når rapporter hostes på en Premium-kapacitet, kan langsomme rapporter også identificeres ved at overvåge [Power BI Premium Metrics-programmet](../service-admin-premium-monitor-capacity.md). Dette program hjælper dig med at overvåge tilstanden af og kapaciteten i dit Power BI Premium-abonnement.
+Langsomme rapporter kan identificeres af rapportbrugere, der oplever, at det tager lang tid at indlæse eller opdatere rapporterne, når der interageres med udsnit eller andre funktioner. Når rapporter hostes på en Premium-kapacitet, kan langsomme rapporter også identificeres ved at overvåge [Power BI Premium Metrics-programmet](../admin/service-admin-premium-monitor-capacity.md). Dette program hjælper dig med at overvåge tilstanden af og kapaciteten i dit Power BI Premium-abonnement.
 
 ## <a name="follow-flowchart-steps"></a>Følg trinnene i rutediagrammet
 
@@ -44,7 +44,7 @@ Det første, du skal finde ud af, er, om den langsomme rapport er hostet på en 
 
 ### <a name="premium-capacity"></a>Premium-kapacitet
 
-Når rapporten hostes på en Premium-kapacitet, skal du bruge **Power BI Premium Metrics-programmet** til at fastslå, om kapaciteten til hosting af rapporten ofte overstiger kapacitetsressourcerne. Det er tilfældet for CPU'en, når den ofte overstiger 80 %. Hvis det er hukommelse, sker det, når den [aktive hukommelsesmetrik](../service-premium-metrics-app.md#the-active-memory-metric) overstiger 50. Når ressourcerne er under pres, kan det være tid til at [administrere eller skalere kapaciteten](../service-admin-premium-manage.md) (afslutning 1 i rutediagrammet). Når der er tilstrækkelige ressourcer, kan du undersøge aktivitet for kapaciteten under typisk rapportbrug (afslutning 2 i rutediagrammet).
+Når rapporten hostes på en Premium-kapacitet, skal du bruge **Power BI Premium Metrics-programmet** til at fastslå, om kapaciteten til hosting af rapporten ofte overstiger kapacitetsressourcerne. Det er tilfældet for CPU'en, når den ofte overstiger 80 %. Hvis det er hukommelse, sker det, når den [aktive hukommelsesmetrik](../admin/service-premium-metrics-app.md#the-active-memory-metric) overstiger 50. Når ressourcerne er under pres, kan det være tid til at [administrere eller skalere kapaciteten](../admin/service-admin-premium-manage.md) (afslutning 1 i rutediagrammet). Når der er tilstrækkelige ressourcer, kan du undersøge aktivitet for kapaciteten under typisk rapportbrug (afslutning 2 i rutediagrammet).
 
 ### <a name="shared-capacity"></a>Delt kapacitet
 
@@ -53,14 +53,14 @@ Når rapporten hostes på en delt kapacitet, er det ikke muligt at overvåge kap
 Først skal du fastslå, om den langsomme ydeevne forekommer på bestemte tidspunkter på dagen eller i måneden. Hvis det er tilfældet – og mange brugere åbner rapporten på disse tidspunkter – skal du overveje to muligheder:
 
 - Øg gennemløbet af forespørgslen ved at migrere datasættet til [Azure Analysis Services](/azure/analysis-services/analysis-services-overview) eller en Premium-kapacitet (afslutning 4 i rutediagrammet).
-- Brug [Effektivitetsanalyse](../desktop-performance-analyzer.md) i Power BI Desktop til at finde ud af, hvordan hvert element i din rapport, f.eks. visualiseringer og DAX-formler, opfører sig. Det er især nyttigt at fastslå, om det er forespørgslen eller gengivelsen af visualiseringen, der bidrager til ydeevneproblemer (afslutning 5 i rutediagrammet).
+- Brug [Effektivitetsanalyse](../create-reports/desktop-performance-analyzer.md) i Power BI Desktop til at finde ud af, hvordan hvert element i din rapport, f.eks. visualiseringer og DAX-formler, opfører sig. Det er især nyttigt at fastslå, om det er forespørgslen eller gengivelsen af visualiseringen, der bidrager til ydeevneproblemer (afslutning 5 i rutediagrammet).
 
 Hvis du fastslår, at der ikke er noget tidsmønster, skal du overveje, om den langsomme ydeevne er isoleret til en bestemt geografi eller et bestemt område. Hvis det er tilfældet, er det sandsynligt, at datakilden er ekstern, og at der er en langsom netværkskommunikation. I dette tilfælde skal du overveje følgende:
 
 - Ret arkitekturen ved hjælp af [Azure Analysis Services](/azure/analysis-services/analysis-services-overview) (afslutning 3 i rutediagrammet).
 - Optimer [ydeevnen af datagatewayen i det lokale miljø](/data-integration/gateway/service-gateway-performance) (afslutning 3 i rutediagrammet).
 
-Hvis du fastslår, at der ikke er noget tidsmønster _og_ den langsomme ydeevne forekommer i alle områder, skal du undersøge, om der forekommer langsom ydeevne på bestemte enheder, klienter eller webbrowsere. Hvis det ikke er tilfældet, kan du bruge [Effektivitetsanalyse](../desktop-performance-analyzer.md) i Power BI Desktop, som beskrevet tidligere, til at optimere rapporten eller modellen (afslutning 5 i rutediagrammet).
+Hvis du fastslår, at der ikke er noget tidsmønster _og_ den langsomme ydeevne forekommer i alle områder, skal du undersøge, om der forekommer langsom ydeevne på bestemte enheder, klienter eller webbrowsere. Hvis det ikke er tilfældet, kan du bruge [Effektivitetsanalyse](../create-reports/desktop-performance-analyzer.md) i Power BI Desktop, som beskrevet tidligere, til at optimere rapporten eller modellen (afslutning 5 i rutediagrammet).
 
 Når du fastslår, at det er bestemte enheder, klienter eller webbrowsere, der bidrager til den langsomme ydeevne, anbefaler vi, at du opretter en supportanmodning via [Power BI-supportsiden](https://powerbi.microsoft.com/support/) (afslutning 6 i rutediagrammet).
 
@@ -70,7 +70,7 @@ Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 
 - [Power BI-vejledning](index.yml)
 - [Overvågning af rapportens ydeevne](monitor-report-performance.md)
-- [Effektivitetsanalyse](../desktop-performance-analyzer.md)
+- [Effektivitetsanalyse](../create-reports/desktop-performance-analyzer.md)
 - Whitepaper: [Planlægning af en Power BI Enterprise-udrulning](https://go.microsoft.com/fwlink/?linkid=2057861)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)

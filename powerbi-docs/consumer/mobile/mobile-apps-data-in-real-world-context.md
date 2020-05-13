@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: e7d3d19bdef1b19d397ac7db13cdec2317f8ab42
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 512d9f5662a87b3819b7151eb0fc3a4d6a540dd6
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114586"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278508"
 ---
 # <a name="get-data-from-the-real-world-with-the-power-bi-mobile-apps"></a>Hent data fra den virkelige verden med Power BI-mobilappsene
 Power BI-mobilapps kan forbinde den virkelige verden direkte med relaterede BI-oplysninger på en række forskellige måder. 
@@ -25,14 +25,14 @@ Opret en QR-kode for en rapport, eller opret et felt i et dashboard, og anbring 
 
 Mere om:
 
-* [Oprettelse af en QR-kode for et felt i Power BI](../../service-create-qr-code-for-tile.md)
+* [Oprettelse af en QR-kode for et felt i Power BI](../../create-reports/service-create-qr-code-for-tile.md)
 * [Scanning af en Power BI-QR-kode fra din mobilenhed](mobile-apps-qr-code.md)
 * [Scanning af en QR-kode med Power BI til Mixed Reality-appen](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
 
 ## <a name="qr-codes-for-reports"></a>QR-koder for rapporter
 Opret en QR-kode for en rapport.  Når dine kollegaer scanner koden med deres iPhones (snart også muligt med Android-telefoner), får de vist den rapport, du har knyttet til den pågældende QR-kode. 
 
-Mere om at [oprette en QR-kode for en rapport i Power BI](../../service-create-qr-code-for-report.md)
+Mere om at [oprette en QR-kode for en rapport i Power BI](../../create-reports/service-create-qr-code-for-report.md)
 
 ## <a name="barcodes"></a>Stregkoder
 Markér stregkodedata i din rapport, så dine kollegaer kan scanne en stregkode på et produkt og gå direkte til den pågældende rapport, som er filtreret for det pågældende produkt.
@@ -41,7 +41,7 @@ Markér stregkodedata i din rapport, så dine kollegaer kan scanne en stregkode 
 
 Mere om:
 
-* [Markering af stregkodedata i en rapport](../../desktop-mobile-barcodes.md)
+* [Markering af stregkodedata i en rapport](../../transform-model/desktop-mobile-barcodes.md)
 * [Scanning af en stregkode fra Power BI-appen på din iPhone](mobile-apps-scan-barcode-iphone.md)
 
 ## <a name="filter-by-location"></a>Filtrer efter placering
@@ -50,6 +50,5 @@ Kategoriser geografiske data i en rapport i Power BI Desktop. Når dine kollegae
 Mere om at [filtrere efter placering](mobile-apps-geographic-filtering.md).
 
 ## <a name="next-steps"></a>De næste trin
-* [Opret en QR-kode for et felt i Power BI](../../service-create-qr-code-for-tile.md)
-* [Opret en QR-kode for en rapport i Power BI](../../service-create-qr-code-for-report.md)
-
+* [Opret en QR-kode for et felt i Power BI](../../create-reports/service-create-qr-code-for-tile.md)
+* [Opret en QR-kode for en rapport i Power BI](../../create-reports/service-create-qr-code-for-report.md)

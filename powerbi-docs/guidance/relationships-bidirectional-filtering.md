@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 502e37cda5533fe6d9b1ce45faa67f809dbeec78
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 9c883b32d03362e5d0e0d6d5ed074cb627fabaf1
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78263685"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273177"
 ---
 # <a name="bi-directional-relationship-guidance"></a>Vejledning til tovejsrelationer
 
@@ -134,10 +134,11 @@ I følgende tabelvisualisering vises statistik for hvert solgte produkt. Kolonne
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Modelrelationer i Power BI Desktop](../desktop-relationships-understand.md)
+- [Modelrelationer i Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - [Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI](star-schema.md)
 - [Vejledning til en til en-relationer](relationships-one-to-one.md)
 - [Vejledning til mange til mange-relation](relationships-many-to-many.md)
 - [Vejledning til fejlfinding af relationer](relationships-troubleshoot.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)
+

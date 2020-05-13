@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 067171f7ec74beccdb5a312c1cac5bbc6c87541f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 511dc42a3090f838654cda84f596d34f02bb3439
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377644"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275081"
 ---
 # <a name="data-retrieval-guidance-for-paginated-reports"></a>Vejledning til datahentning for sideinddelte rapporter
 
@@ -101,14 +101,14 @@ Vi anbefaler _datasætparameterisering_, når du forventer, at det er usandsynli
 
 ## <a name="non-native-data-sources"></a>Ikke-oprindelige datakilder
 
-Hvis du har brug for at udvikle sideinddelte rapporter baseret på datakilder, der ikke [oprindeligt understøttes af sideinddelte rapporter](../paginated-reports/paginated-reports-data-sources.md), kan du starte med at udvikle en Power BI Desktop-datamodel. På den måde kan du oprette forbindelse til mere end 100 [Power BI-datakilder](../power-bi-data-sources.md). Når du har publiceret til Power BI-tjenesten, kan du derefter udvikle en sideinddelt rapport, der opretter forbindelse til Power BI-datasættet.
+Hvis du har brug for at udvikle sideinddelte rapporter baseret på datakilder, der ikke [oprindeligt understøttes af sideinddelte rapporter](../paginated-reports/paginated-reports-data-sources.md), kan du starte med at udvikle en Power BI Desktop-datamodel. På den måde kan du oprette forbindelse til mere end 100 [Power BI-datakilder](../connect-data/power-bi-data-sources.md). Når du har publiceret til Power BI-tjenesten, kan du derefter udvikle en sideinddelt rapport, der opretter forbindelse til Power BI-datasættet.
 
 ## <a name="data-integration"></a>Dataintegration
 
 Hvis du har brug for at kombinere data fra flere datakilder, har du to muligheder:
 
 - **Kombiner rapportdatasæt**: Hvis datakilderne [oprindeligt understøttes af sideinddelte rapporter](../paginated-reports/paginated-reports-data-sources.md), kan du overveje at oprette beregnede felter, der bruger Report Builder-funktionerne [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) eller [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function).
-- **Udvikl en Power BI Desktop-model**: Det er dog mere effektivt, hvis du udvikler en datamodel i Power BI Desktop. Du kan bruge Power-forespørgsel til at kombinere forespørgsler, der er baseret på en [vilkårlig understøttet datakilde](../power-bi-data-sources.md). Når du har publiceret til Power BI-tjenesten, kan du derefter udvikle en sideinddelt rapport, der opretter forbindelse til Power BI-datasættet.
+- **Udvikl en Power BI Desktop-model**: Det er dog mere effektivt, hvis du udvikler en datamodel i Power BI Desktop. Du kan bruge Power-forespørgsel til at kombinere forespørgsler, der er baseret på en [vilkårlig understøttet datakilde](../connect-data/power-bi-data-sources.md). Når du har publiceret til Power BI-tjenesten, kan du derefter udvikle en sideinddelt rapport, der opretter forbindelse til Power BI-datasættet.
 
 ## <a name="sql-server-complex-data-types"></a>Komplekse datatyper i SQL Server
 

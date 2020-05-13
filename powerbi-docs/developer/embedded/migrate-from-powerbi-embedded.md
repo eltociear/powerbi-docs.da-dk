@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: a8ce4209610e229ae1da7773bd7cb10bd522f72c
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8d4145e1fdfdd6c1e9409dc305a5767eec8ace53
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80404041"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148531"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded
 
@@ -200,7 +200,7 @@ Du bør rydde op i Azure.
 [Overførselsværktøj til Power BI Workspace Collection](migrate-tool.md)  
 [Kodestykker til overførsel af indhold fra Power BI Workspace Collection](migrate-code-snippets.md)  
 [Sådan integrerer du Power BI-dashboards, -rapporter og -felter](embed-sample-for-your-organization.md)  
-[Power BI Premium – hvad er det?](../../service-premium-what-is.md)  
+[Power BI Premium – hvad er det?](../../admin/service-premium-what-is.md)  
 [Git-lager for JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Git-lager til Power BI C#](https://github.com/Microsoft/PowerBI-CSharp)  
 [Integreringseksempel til JavaScript](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/05/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 90d5e48ca200a6817338ae6c44595905cc76bfed
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 97e0a4f6e522997e6f132d1c3dbc493188ba66ba
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80752665"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275472"
 ---
 # <a name="connect-to-the-covid-19-us-tracking-report"></a>Opret forbindelse til den amerikanske sporingsrapport for COVID-19
 I denne artikel får du oplysninger om, hvordan du installerer skabelonappen til den amerikanske sporingsrapport for COVID-19, og hvordan du opretter forbindelse til datakilderne.
@@ -54,14 +54,14 @@ Når du har installeret skabelonappen og oprettet forbindelse til datakilderne, 
 
 ## <a name="schedule-report-refresh"></a>Planlæg rapportopdatering
 
-Når dataene er blevet opdateret, er du i det arbejdsområde, der er knyttet til appen. Du kan [konfigurere en opdateringsplan](../refresh-scheduled-refresh.md) for at holde rapportdataene opdaterede.
+Når dataene er blevet opdateret, er du i det arbejdsområde, der er knyttet til appen. Du kan [konfigurere en opdateringsplan](../connect-data/refresh-scheduled-refresh.md) for at holde rapportdataene opdaterede.
 
 ## <a name="customize-and-share"></a>Tilpas og del
 
-Se [Tilpas og del appen](../service-template-apps-install-distribute.md#customize-and-share-the-app) for at få flere oplysninger. Sørg for at gennemse [ansvarsfraskrivelserne for rapporten](../create-reports/sample-covid-19-us.md#disclaimers), før du udgiver eller distribuerer appen.
+Se [Tilpas og del appen](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app) for at få flere oplysninger. Sørg for at gennemse [ansvarsfraskrivelserne for rapporten](../create-reports/sample-covid-19-us.md#disclaimers), før du udgiver eller distribuerer appen.
 
 ## <a name="next-steps"></a>Næste trin
 * [Eksempel på sporing af COVID-19 til centralregeringen og delstatsregeringerne i USA](../create-reports/sample-covid-19-us.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-* [Hvad er Power BI-skabelonapps?](../service-template-apps-overview.md)
-* [Installér og distribuer skabelonapps i din organisation](../service-template-apps-install-distribute.md)
+* [Hvad er Power BI-skabelonapps?](../connect-data/service-template-apps-overview.md)
+* [Installér og distribuer skabelonapps i din organisation](../connect-data/service-template-apps-install-distribute.md)

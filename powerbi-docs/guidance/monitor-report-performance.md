@@ -9,16 +9,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 2962d5f8504b7214cb685457c59b11f1d9d7b85e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 9245dd6c25917b2c8c861ea5b83710cd8b52bb22
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525531"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279014"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Overvåg rapportens ydeevne i Power BI
 
-Overvåg rapportens ydeevne i Power BI Desktop ved at bruge [appen Power BI Premium Metrics](../service-premium-metrics-app.md), få mere at vide om, hvor flaskehalsene er, og om hvordan du kan forbedre rapportens ydeevne.
+Overvåg rapportens ydeevne i Power BI Desktop ved at bruge [appen Power BI Premium Metrics](../admin/service-premium-metrics-app.md), få mere at vide om, hvor flaskehalsene er, og om hvordan du kan forbedre rapportens ydeevne.
 
 Overvågning af ydeevne er relevant i følgende situationer:
 
@@ -39,7 +39,7 @@ Brug [forespørgselsdiagnosticering](/power-query/QueryDiagnostics) i Power BI D
 
 ## <a name="use-performance-analyzer"></a>Brug Effektivitetsanalyse
 
-Brug [Ydeevneanalyse](../desktop-performance-analyzer.md) i Power BI Desktop for at finde ud af, hvordan ydeevnen er for alle dine rapportelementer, f.eks. visualiseringer og DAX-formler. Det er især nyttigt at afgøre, om det er forespørgslen eller gengivelsen af visualiseringen, der bidrager til ydeevneproblemer.
+Brug [Ydeevneanalyse](../create-reports/desktop-performance-analyzer.md) i Power BI Desktop for at finde ud af, hvordan ydeevnen er for alle dine rapportelementer, f.eks. visualiseringer og DAX-formler. Det er især nyttigt at afgøre, om det er forespørgslen eller gengivelsen af visualiseringen, der bidrager til ydeevneproblemer.
 
 ## <a name="use-sql-server-profiler"></a>Brug af SQL Server Profiler
 
@@ -77,15 +77,15 @@ En fordel ved at bruge SQL Server Profiler er, at det er muligt at gemme et SQL 
 
 ## <a name="monitor-premium-metrics"></a>Overvåg Premium-målepunkter
 
-I forbindelse med Power BI Premium-kapaciteter kan du bruge appen **Power BI Premium Metrics** til at administrere dit Power BI Premium-abonnements tilstand og kapacitet. Du kan finde flere oplysninger under [Power BI Premium-appen](../service-premium-metrics-app.md).
+I forbindelse med Power BI Premium-kapaciteter kan du bruge appen **Power BI Premium Metrics** til at administrere dit Power BI Premium-abonnements tilstand og kapacitet. Du kan finde flere oplysninger under [Power BI Premium-appen](../admin/service-premium-metrics-app.md).
 
 ## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 
 - [Forespørgselsdiagnosticering](/power-query/QueryDiagnostics)
-- [Effektivitetsanalyse](../desktop-performance-analyzer.md)
+- [Effektivitetsanalyse](../create-reports/desktop-performance-analyzer.md)
 - [Fejlfind rapportens ydeevne i Power BI](report-performance-troubleshoot.md)
-- [Appen Power BI Premium Metrics](../service-premium-metrics-app.md)
+- [Appen Power BI Premium Metrics](../admin/service-premium-metrics-app.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)

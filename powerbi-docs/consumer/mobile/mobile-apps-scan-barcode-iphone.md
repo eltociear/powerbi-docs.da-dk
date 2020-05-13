@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: 043f27a2fb695811ac867689b4a63efdefded2e6
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: dfe5e6350d0209f836900a921aadc5347b181766
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80802043"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276162"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Scan en stregkode med din enhed fra Power BI-mobilappen
 Scan stregkoder i den virkelige verden for at gå direkte til filtrerede BI-oplysninger i Power BI-mobilappen.
@@ -25,7 +25,7 @@ Gælder for:
 |:--- |:--- |:--- |:--- |
 |iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |
 
-Lad os sige, at en kollegaer har [mærket et stregkodefelt i en rapport i Power BI Desktop](../../desktop-mobile-barcodes.md) og delt rapporten med dig. 
+Lad os sige, at en kollegaer har [mærket et stregkodefelt i en rapport i Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md) og delt rapporten med dig. 
 
 ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
 
@@ -64,13 +64,12 @@ Den stregkodeværdi, du scannede, findes i din model, men alle/nogle af de visue
 ### <a name="looks-like-you-dont-have-any-reports-that-can-be-filtered-by-barcodes"></a>"Det ser ud til, at du ikke har nogen rapporter, der kan filtreres efter stregkoder".
 Det betyder, at du ikke har rapporter, hvor stregkoder er aktiveret. Stregkodescanneren kan kun filtrere rapporter, som har en kolonne, der er markeret som **Stregkode**.  
 
-Kontrollér, at du eller rapportens ejer har mærket en kolonne som **Stregkode** i Power BI Desktop. Få mere at vide om [markering af et stregkodefelt i Power BI Desktop](../../desktop-mobile-barcodes.md)
+Kontrollér, at du eller rapportens ejer har mærket en kolonne som **Stregkode** i Power BI Desktop. Få mere at vide om [markering af et stregkodefelt i Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md)
 
 ### <a name="couldnt-filter-report---looks-like-this-barcode-doesnt-exist-in-the-report-data"></a>"Rapporten kunne ikke filtreres – det ser ud til, at denne stregkode ikke findes i rapportdataene".
 Den rapport, du valgte at filtrere, er baseret på en datamodel, der ikke indeholder denne stregkodeværdi. For eksempel: Produktet "mineralvand" er ikke omfattet af rapporten. Du kan scanne et andet produkt, vælge en anden rapport (hvis der findes flere rapporter) eller få vist rapporten ufiltreret. 
 
 ## <a name="next-steps"></a>Næste trin
-* [Markér et stregkodefelt i Power BI Desktop](../../desktop-mobile-barcodes.md)
+* [Markér et stregkodefelt i Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md)
 * [Dashboard-felter i Power BI](../end-user-tiles.md)
 * [Dashboards i Power BI](../end-user-dashboards.md)
-

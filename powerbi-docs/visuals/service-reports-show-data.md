@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/4/2019
+ms.date: 12/4/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f1598aabee45359b312d39f836cede8ca4198bb2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b2c587be792e0ad6318dd066cb239949b30cc9e5
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75758617"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276553"
 ---
 # <a name="display-a-visualizations-underlying-data"></a>Vis en visualiserings underliggende data
+
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 ## <a name="show-data"></a>Vis data
 En Power BI-visualisering er oprettet vha. data fra dine datasæt. Hvis du vil se bag kulisserne, kan du i Power BI *få vist* de data, der bruges til at oprette visualiseringen. Når du vælger **Vis data**, vises dataene under (eller ud for) visualiseringen i Power BI.
@@ -24,7 +26,7 @@ En Power BI-visualisering er oprettet vha. data fra dine datasæt. Hvis du vil s
 Du kan også eksportere de data, der bruges til at oprette visualiseringen som en .xlsx- eller .csv-fil og få den vist i Excel. Du kan finde flere oplysninger under [Eksportér data fra Power BI-visualiseringer](power-bi-visualization-export-data.md).
 
 > [!NOTE]
-> Både *Vis data* og *Eksportér data* er tilgængelige i Power BI-tjenesten og Power BI Desktop. Power BI Desktop indeholder dog et ekstra lag detaljer, og [*Vis poster* viser de faktiske rækker fra datasættet](../desktop-see-data-see-records.md).
+> Både *Vis data* og *Eksportér data* er tilgængelige i Power BI-tjenesten og Power BI Desktop. Power BI Desktop indeholder dog et ekstra lag detaljer, og [*Vis poster* viser de faktiske rækker fra datasættet](../create-reports/desktop-see-data-see-records.md).
 > 
 > 
 
@@ -75,4 +77,5 @@ Du kan også fokusere på ét dataelement i en visualisering og analysere de und
 [Eksportér data fra Power BI-visualiseringer](power-bi-visualization-export-data.md)    
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+
 

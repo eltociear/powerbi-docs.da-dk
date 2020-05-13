@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/22/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4f0bfdbf3eb3856f872c872fbe0880ad39839e07
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 31563e5bb5b91468b8913c3204e9d27607716c77
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867593"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279198"
 ---
 # <a name="use-a-relative-time-slicer-and-filter-in-power-bi"></a>Brug et udsnit og filter for relativ tid i Power BI
 
@@ -24,7 +24,7 @@ I forbindelse med scenarier med hurtige opdateringer kan filtrering til et mindr
 
 :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Eksempel på relativ tid":::
 
-Du behøver ikke at bruge denne funktion sammen med funktionen til [automatisk opdatering af side](../desktop-automatic-page-refresh.md). Men mange scenarier med relativ tid passer dog godt sammen med funktionen til automatisk opdatering af siden.  
+Du behøver ikke at bruge denne funktion sammen med funktionen til [automatisk opdatering af side](../create-reports/desktop-automatic-page-refresh.md). Men mange scenarier med relativ tid passer dog godt sammen med funktionen til automatisk opdatering af siden.  
 
 > [!NOTE]
 > Når du anvender et filter eller et udsnit for relativ tid på side- eller rapportniveau, filtreres alle visualiseringer på denne side eller i denne rapport til nøjagtigt det samme tidsinterval ved hjælp af en delt *ankertid*. Da visualiseringer kan have en smule forskellige udførelsestider, sikrer denne ankertid, at visualiseringerne synkroniseres på tværs af din side eller på tværs af din rapport. Læs mere om [ankertider](#understanding-anchor-time) i denne artikel.
@@ -107,4 +107,3 @@ Følgende begrænsninger og overvejelser gælder i øjeblikket for udsnittet og 
 
 - [Brug et udsnit og et filter for relativ dato i Power BI](../visuals/desktop-slicer-filter-date-range.md)
 - [Udsnitsværktøjer i Power BI](../visuals/power-bi-visualization-slicers.md)
-

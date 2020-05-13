@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0a9bebd51e64c18e0c354386e168661542b9c5bf
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: b26cd958ad637f0dc3c27c7a0f6ccbe2591d37b7
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866581"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279175"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Opret matrixvisualiseringer i Power BI
 
@@ -62,7 +62,7 @@ Matrixens udvidelsestilstand gemmes sammen med rapporten. En matrix kan fastgør
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
 > [!NOTE]
-> Hvis du bygger en rapport oven på en multidimensionel Analysis Services-model, er der nogle særlige overvejelser, når du skal udvide/skjule, hvis modellen bruger funktionen Standardmedlem. Du kan få flere oplysninger under [Arbejde med flerdimensionelle modeller i Power BI](../desktop-default-member-multidimensional-models.md)
+> Hvis du bygger en rapport oven på en multidimensionel Analysis Services-model, er der nogle særlige overvejelser, når du skal udvide/skjule, hvis modellen bruger funktionen Standardmedlem. Du kan få flere oplysninger under [Arbejde med flerdimensionelle modeller i Power BI](../connect-data/desktop-default-member-multidimensional-models.md)
 
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Brug detailudledning til matrixvisualiseringen
 Med matrixvisualiseringen kan du foretage en mængde interessante aktiviteter for detailudledning, der ikke var tilgængelige før. Du kan f.eks. foretage detailudledning ved hjælp af rækker, kolonner og endda til individuelle afsnit og celler. Lad os se på, hvordan hver enkelt af disse fungerer.
@@ -211,7 +211,7 @@ Hvis du har en kolonne eller måling, der indeholder webadresser, kan du bruge b
 
 Slå **URL-adresse til websted** til, og vælg et felt, der skal bruges som URL-adressen for kolonnen. Når værdierne i det pågældende felt (kolonne) er anvendt, bliver de til aktive links. Peg på linket for at få det vist, og vælg det for at gå til den pågældende side. 
 
-Se [Betinget tabelformatering](../desktop-conditional-table-formatting.md) for at få flere oplysninger
+Se [Betinget tabelformatering](../create-reports/desktop-conditional-table-formatting.md) for at få flere oplysninger
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Skygge og skrifttypefarver med matrixvisualiseringer
 Når du bruger matrixvisualiseringen, kan du anvende betinget formatering (farver, skygge og datalinjer) i cellernes baggrund i matrixen, og du kan anvende betinget formatering på selve teksten og værdierne.
@@ -233,3 +233,5 @@ Vælg *Avancerede kontrolelementer* for at få vist en dialogboks, hvor du kan f
 [Power Apps-visualisering til Power BI](power-bi-visualization-powerapp.md)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+

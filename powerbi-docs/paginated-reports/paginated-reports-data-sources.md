@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 04/28/2020
-ms.openlocfilehash: ad75cf6b85a896fbdc275748dc31c620206e08a2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 865b60800b68aed410f10964148afdf2791b1ae1
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82692881"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279152"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Understøttede datakilder for sideinddelte rapporter i Power BI
 
@@ -38,7 +38,7 @@ Du skal angive flere oplysninger for Azure SQL Database-datakilder, som beskreve
 
 ## <a name="other-data-sources"></a>Andre datakilder
 
-Foruden ovenstående datakilder, der understøttes i det oprindelige miljø, kan følgende datakilder tilgås via en [Power BI-datagateway](../service-gateway-onprem.md):
+Foruden ovenstående datakilder, der understøttes i det oprindelige miljø, kan følgende datakilder tilgås via en [Power BI-datagateway](../connect-data/service-gateway-onprem.md):
 
 - SQL Server
 - SQL Server Analysis Services
@@ -74,3 +74,4 @@ Her er de understøttede godkendelsestyper for Azure SQL Database-datakilder:
 [Publicer en sideinddelt rapport i Power BI-tjenesten](../consumer/paginated-reports-view-power-bi-service.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+

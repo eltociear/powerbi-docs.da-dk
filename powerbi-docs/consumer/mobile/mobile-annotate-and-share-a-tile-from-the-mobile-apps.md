@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 5d1a014b32bcb3ce90938659e2b6478518e8aefc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 31a899001b5a821a38a3de01db0357c26f2e58dc
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79205498"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83149197"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Anmærk og del et felt, en rapport eller en visualisering i Power BI-mobilapps
 Gælder for:
@@ -28,7 +28,7 @@ Du kan anmærke og dele et øjebliksbillede af et felt, en rapport eller en visu
 
 *En rapport med anmærkninger*
 
-Mailen med snapshottet af feltet, rapporten eller visualiseringen indeholder også et link til det faktiske objekt i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)). Dine modtagere kan klikke på linket og gå direkte til feltet, rapporten eller visualiseringen, hvis både du og modtagerne har Power BI Pro-licenser, eller hvis indholdet er i en [Premium-kapacitet](../../service-premium-what-is.md), og du allerede har delt et element med disse modtagere. 
+Mailen med snapshottet af feltet, rapporten eller visualiseringen indeholder også et link til det faktiske objekt i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)). Dine modtagere kan klikke på linket og gå direkte til feltet, rapporten eller visualiseringen, hvis både du og modtagerne har Power BI Pro-licenser, eller hvis indholdet er i en [Premium-kapacitet](../../admin/service-premium-what-is.md), og du allerede har delt et element med disse modtagere. 
 
 Du kan også [dele et felt fra Power BI-mobilappen til Windows 10-enheder](mobile-windows-10-phone-app-get-started.md), men du kan ikke anmærke det.
 
@@ -74,4 +74,3 @@ Du kan også [dele et felt fra Power BI-mobilappen til Windows 10-enheder](mobil
 ## <a name="next-steps"></a>De næste trin
 * [Del et dashboard fra din Power BI-mobilapp](mobile-share-dashboard-from-the-mobile-apps.md)
 * Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

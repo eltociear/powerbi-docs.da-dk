@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: c9957b1f190f3e2cfc2aa5f082eb11df4d647b5f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e5f4fc253fbb7427de8adb21305f66769abcd428
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435898"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273080"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Udforsk felter i Power BI-mobilappsene
 Kan anvendes med:
@@ -52,7 +52,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-tile-link.png)
    
-    Links kan føre til andre Power BI-dashboards eller til en ekstern URL-adresse. Du kan [trykke på linket](../../service-dashboard-edit-tile.md#hyperlink) for at åbne det i Power BI-appen. Hvis det er en ekstern side, beder Power BI dig om at give tilladelse til det.
+    Links kan føre til andre Power BI-dashboards eller til en ekstern URL-adresse. Du kan [trykke på linket](../../create-reports/service-dashboard-edit-tile.md#hyperlink) for at åbne det i Power BI-appen. Hvis det er en ekstern side, beder Power BI dig om at give tilladelse til det.
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
@@ -77,7 +77,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
    
-    Links kan føre til andre Power BI-dashboards eller til en ekstern URL-adresse. Du kan [trykke på linket](../../service-dashboard-edit-tile.md#hyperlink) for at åbne det i Power BI-appen. Hvis det er en ekstern side, beder Power BI dig om at give tilladelse til det.
+    Links kan føre til andre Power BI-dashboards eller til en ekstern URL-adresse. Du kan [trykke på linket](../../create-reports/service-dashboard-edit-tile.md#hyperlink) for at åbne det i Power BI-appen. Hvis det er en ekstern side, beder Power BI dig om at give tilladelse til det.
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
@@ -98,7 +98,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
     Tryk på **Åbn rapport** ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) for at [få vist den bagvedliggende rapport](mobile-reports-in-the-mobile-apps.md).
    
-    [Klikke på linket](../../service-dashboard-edit-tile.md#hyperlink), hvis der er et link. Links kan føre til Power BI-dashboards eller til en ekstern URL-adresse.
+    [Klikke på linket](../../create-reports/service-dashboard-edit-tile.md#hyperlink), hvis der er et link. Links kan føre til Power BI-dashboards eller til en ekstern URL-adresse.
 3. Tryk på **Udvid felt** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-focus-mode-icon.png). Det åbnes i fokustilstand, hvor det er lettere at se og udforske feltdataene. I denne tilstand kan du:
    
    Dreje et cirkeldiagram, så udsnittets værdi bliver vist øverst i diagrammet.  
@@ -130,4 +130,3 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
 ## <a name="next-steps"></a>Næste trin
 * [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

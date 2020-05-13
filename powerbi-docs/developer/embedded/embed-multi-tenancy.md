@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 435f643ba155bc9d6c67d1131d946769e3d61730
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: cd30727e6329ca91413f2023f7dc3bd715bcbca6
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79494946"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276001"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Administrer flere lejere med Power BI Embedded-analyse
 
@@ -40,7 +40,7 @@ I denne artikel beskrives og analyseres de forskellige tilgange i forhold til fl
 
 **Power BI-lejer** – et sæt Power BI-ressourcer, der er forbundet med en enkelt AAD-lejer.
 
-**[Power BI-arbejdsområde](../../service-create-workspaces.md)** – en objektbeholder til indhold i Power BI.
+**[Power BI-arbejdsområde](../../collaborate-share/service-create-workspaces.md)** – en objektbeholder til indhold i Power BI.
 
 **Power BI-artefakter** – der er flere Power BI-artefakter i Power BI-arbejdsområder, f.eks dashboards, rapporter, datasæt og dataflow.
 
@@ -52,11 +52,11 @@ I denne artikel beskrives og analyseres de forskellige tilgange i forhold til fl
 
 **AAD-programbruger (tjenesteprincipal)** – den identitet, der repræsenterer SaaS-programmet i Power BI, og som SaaS-programmet bruger ved kald af Power BI-API'er. Skal være et AAD-webprogram. Kan erstatte brugen af en *masterbruger* til at godkende med Power BI.
 
-**Kapacitet** – et sæt ressourcer, der er dedikeret til at køre Power BI-tjenesten. [Power BI Premium-kapaciteter](../../service-premium-what-is.md) – beregnet til virksomheder, der bruger Power BI internt, mens [Power BI Embedded-kapaciteter](azure-pbie-create-capacity.md) er beregnet til programudviklere til at udvikle SaaS-programmer til tredjeparter.
+**Kapacitet** – et sæt ressourcer, der er dedikeret til at køre Power BI-tjenesten. [Power BI Premium-kapaciteter](../../admin/service-premium-what-is.md) – beregnet til virksomheder, der bruger Power BI internt, mens [Power BI Embedded-kapaciteter](azure-pbie-create-capacity.md) er beregnet til programudviklere til at udvikle SaaS-programmer til tredjeparter.
 
-**[Power BI Pro-licens](../../service-admin-purchasing-power-bi-pro.md)** – en brugerbaseret licens, der giver rettigheder til at publicere indhold i arbejdsområder, forbruge apps uden Premium-kapacitet, dele dashboards og abonnere på dashboards og rapporter.
+**[Power BI Pro-licens](../../admin/service-admin-purchasing-power-bi-pro.md)** – en brugerbaseret licens, der giver rettigheder til at publicere indhold i arbejdsområder, forbruge apps uden Premium-kapacitet, dele dashboards og abonnere på dashboards og rapporter.
 
-**[Data-forbindelsestilstande](../../desktop-directquery-about.md)** – knytter datakilder til Power BI, hvilket kan gøres i forskellige tilstande:
+**[Data-forbindelsestilstande](../../connect-data/desktop-directquery-about.md)** – knytter datakilder til Power BI, hvilket kan gøres i forskellige tilstande:
 
    * Import – hvilket er den mest almindelige måde at hente data på.
    * DirectQuery – opret forbindelse direkte til dataene i kildelageret.
@@ -104,9 +104,9 @@ Power BI Embedded understøtter Multi-Geo-installation (prøveversion). [Multi-G
 
 ### <a name="cost"></a>Omkostning
 
-[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) har en ressourcebaseret købsmodel på samme måde som **Power BI Premium**. Du kan købe en eller flere kapaciteter med fast beregningskapacitet og hukommelse. Denne kapacitet er det vigtigste omkostningselement, når du arbejder med **Power BI Embedded**. Der er ingen grænse for antallet af brugere, der benytter kapaciteten. Den eneste begrænsning er ydeevnen for kapaciteten. En [Power BI Pro-licens](../../service-admin-licensing-organization.md) er påkrævet for hver *masterbruger* eller bestemte brugere, der skal have adgang til Power BI-portalen.
+[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) har en ressourcebaseret købsmodel på samme måde som **Power BI Premium**. Du kan købe en eller flere kapaciteter med fast beregningskapacitet og hukommelse. Denne kapacitet er det vigtigste omkostningselement, når du arbejder med **Power BI Embedded**. Der er ingen grænse for antallet af brugere, der benytter kapaciteten. Den eneste begrænsning er ydeevnen for kapaciteten. En [Power BI Pro-licens](../../admin/service-admin-licensing-organization.md) er påkrævet for hver *masterbruger* eller bestemte brugere, der skal have adgang til Power BI-portalen.
 
-Vi anbefaler, at du tester og måler den forventede belastning på din kapacitet ved at simulere livemiljøet og forbruget og køre belastningstest i kapaciteten. Du kan måle belastningen og ydeevnen med de forskellige målepunkter, der er tilgængelige i Azure-kapaciteten eller [Premium-appen Capacity Metrics](../../service-admin-premium-monitor-capacity.md).
+Vi anbefaler, at du tester og måler den forventede belastning på din kapacitet ved at simulere livemiljøet og forbruget og køre belastningstest i kapaciteten. Du kan måle belastningen og ydeevnen med de forskellige målepunkter, der er tilgængelige i Azure-kapaciteten eller [Premium-appen Capacity Metrics](../../admin/service-admin-premium-monitor-capacity.md).
 
 ### <a name="content-customization-and-authoring"></a>Tilpasning og oprettelse af indhold
 
@@ -131,7 +131,7 @@ Der er to primære metoder til administration af lejerens data.
 
 Hvis SaaS-programlageret indeholder en separat database pr. lejer, er det naturlige valg at bruge datasæt med en enkelt lejer i Power BI med forbindelsesstrengen for hvert datasæt, der peger på den tilsvarende database.
 
-Hvis SaaS-programlageret bruger en database med flere lejere for alle lejere, er det er nemt at adskille lejere efter arbejdsområde. Du kan konfigurere databaseforbindelsen til Power BI-datasættet med en parameteriseret databaseforespørgsel, der kun henter den relevante lejers data. Du kan opdatere forbindelsen ved hjælp af [Power BI Desktop](../../desktop-query-overview.md) eller ved hjælp af [API'en](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) med [parametre](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) på forespørgslen.
+Hvis SaaS-programlageret bruger en database med flere lejere for alle lejere, er det er nemt at adskille lejere efter arbejdsområde. Du kan konfigurere databaseforbindelsen til Power BI-datasættet med en parameteriseret databaseforespørgsel, der kun henter den relevante lejers data. Du kan opdatere forbindelsen ved hjælp af [Power BI Desktop](../../transform-model/desktop-query-overview.md) eller ved hjælp af [API'en](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) med [parametre](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) på forespørgslen.
 
 ### <a name="data-isolation"></a>Dataisolation
 
@@ -193,7 +193,7 @@ Med sikkerhedsbaseret isolation på rækkeniveau opnås dataadskillelse ved hjæ
 
 ### <a name="scalability"></a>Skalerbarhed
 
-Med sikkerhedsbaseret isolation på rækkeniveau skal dataene være inden for størrelsesgrænsen for datasættet, som i øjeblikket er 10 GB. Med introduktionen af [trinvis opdatering](../../service-premium-incremental-refresh.md) og den kommende version af et XMLA-slutpunkt for Power BI-datasæt, forventes størrelsesgrænsen for datasæt at øges betydeligt. Dataene skal dog stadig passe til kapacitetens hukommelse med tilstrækkelig hukommelse til, at dataopdateringer kan køre. Udrulninger i stor skala har brug for en stor kapacitet for at undgå, at brugerne oplever problemer, som følge af at hukommelsen overstiger grænserne for den aktuelle kapacitet. En stor mængde data kan også håndteres via [sammenlægninger](../../desktop-aggregations.md) eller ved at oprette forbindelse til datakilden direkte ved hjælp af en DirectQuery eller en direkte forbindelse i stedet for cachelagring af alle data i Power BI-kapaciteten.
+Med sikkerhedsbaseret isolation på rækkeniveau skal dataene være inden for størrelsesgrænsen for datasættet, som i øjeblikket er 10 GB. Med introduktionen af [trinvis opdatering](../../admin/service-premium-incremental-refresh.md) og den kommende version af et XMLA-slutpunkt for Power BI-datasæt, forventes størrelsesgrænsen for datasæt at øges betydeligt. Dataene skal dog stadig passe til kapacitetens hukommelse med tilstrækkelig hukommelse til, at dataopdateringer kan køre. Udrulninger i stor skala har brug for en stor kapacitet for at undgå, at brugerne oplever problemer, som følge af at hukommelsen overstiger grænserne for den aktuelle kapacitet. En stor mængde data kan også håndteres via [sammenlægninger](../../transform-model/desktop-aggregations.md) eller ved at oprette forbindelse til datakilden direkte ved hjælp af en DirectQuery eller en direkte forbindelse i stedet for cachelagring af alle data i Power BI-kapaciteten.
 
 ### <a name="automation--operational-complexity"></a>Automatisering og driftsmæssig kompleksitet
 
@@ -244,17 +244,17 @@ Når slutbrugere redigerer eller opretter rapporter, kan de bruge produktionsdat
 
 **Overvejelser og begrænsninger i forbindelse med Power BI-kapacitet:**
 
-* Hver kapacitet kan kun bruge den hukommelse og de V-kerner, kapaciteten har fået tildelt, i overensstemmelse med det [SKU, der er købt](../../service-premium-what-is.md).
-* Du kan finde den anbefalede datasætstørrelse for hver SKU i [store datasæt i Premium](../../service-premium-what-is.md#large-datasets).
+* Hver kapacitet kan kun bruge den hukommelse og de V-kerner, kapaciteten har fået tildelt, i overensstemmelse med det [SKU, der er købt](../../admin/service-premium-what-is.md).
+* Du kan finde den anbefalede datasætstørrelse for hver SKU i [store datasæt i Premium](../../admin/service-premium-what-is.md#large-datasets).
 * Den maksimale datasætstørrelse i en dedikeret kapacitet er 10 GB.
 * Antallet af planlagte opdateringer for et datasæt i *importtilstand* i løbet af en dag er 48.
 * Intervallet mellem planlagte opdateringer for et datasæt i *importtilstand* er 30 minutter.
-* Du kan få oplysninger om det antal opdateringer, der kan køre samtidigt på en kapacitet, i [ressourcestyring og optimering](../../service-premium-what-is.md#capacity-nodes).
+* Du kan få oplysninger om det antal opdateringer, der kan køre samtidigt på en kapacitet, i [ressourcestyring og optimering](../../admin/service-premium-what-is.md#capacity-nodes).
 * Den gennemsnitlige tid, det tager at skalere en kapacitet, er mellem 1-2 minutter. Kapaciteten er ikke tilgængelig i denne periode. Det anbefales at bruge en scale-out-tilgang for at [undgå nedetid](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script).
 
 ## <a name="next-steps"></a>De næste trin
 
 * [Integreret analyse med Power BI](embedding.md)
 * [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)
-* [Power BI Premium](../../service-premium-what-is.md)
+* [Power BI Premium](../../admin/service-premium-what-is.md)
 * [Sikkerhed på rækkeniveau](embedded-row-level-security.md)

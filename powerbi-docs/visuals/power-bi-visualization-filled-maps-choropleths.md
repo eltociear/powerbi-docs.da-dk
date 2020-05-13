@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ba344d66f967d502d9de8adef7defcae434fb3ef
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: ae73f2e32d34c3e1b37991358545997c4b4bb961
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865454"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272896"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Opret og brug udfyldte kort (choropleth-kort) i Power BI
 
@@ -92,12 +92,12 @@ I dette selvstudium bruges [PBIX-filen med eksemplet til Salg og marketing](http
 7. Kartogrammet har grønne og røde skygger, hvor rød repræsenterer de lavere tillidstal, og grøn repræsenterer den højere, mere positive tillid.  For at få vist yderligere detaljer skal du trække et felt til brønden Værktøjstip.  Her har vi tilføjet **SalesFact** > **Synspunktforskydning**. Når du fremhæver staten Idaho (ID), ses det, at synspunktforskydningen er lav – 6.
    ![kartogram, der viser Idaho-værktøjstip](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho-filled-map.png)
 
-10. [Gem rapporten](../service-report-save.md).
+10. [Gem rapporten](../create-reports/service-report-save.md).
 
 I Power BI kan du i høj grad selv styre udseendet af dit kartogram. Leg lidt med disse datafarvekontrolelementer, indtil du får det ønskede udseende. 
 
 ## <a name="highlighting-and-cross-filtering"></a>Fremhævning og krydsfiltrering
-Du kan få mere at vide om brug af ruden Filters under [Føj et filter til en rapport](../power-bi-report-add-filter.md).
+Du kan få mere at vide om brug af ruden Filters under [Føj et filter til en rapport](../create-reports/power-bi-report-add-filter.md).
 
 Hvis du fremhæver en placering på et kartogram, krydsfiltreres de andre visualiseringer på rapportsiden... og omvendt.
 
@@ -136,3 +136,5 @@ Du kan få hjælp til kortvisualiseringer under [Tip og råd til kortvisualiseri
 [Figurkort](desktop-shape-map.md)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+

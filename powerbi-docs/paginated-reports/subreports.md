@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 04/29/2020
-ms.openlocfilehash: 65d1401a66f8e670df1af3097f0e99fb6b647022
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 784e3fd3883adb9fc5b773cc730b992135d7ef8b
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82615697"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272804"
 ---
 # <a name="subreports-in-power-bi-paginated-reports"></a>Underrapporter i sideinddelte rapporter i Power BI
 
@@ -74,7 +74,7 @@ Nu, hvor du har gemt begge rapporter i det samme Premium-arbejdsområde, kan du 
   
  Du kan placere en underrapport i den primære del af rapporten eller i et dataområde. Hvis du placerer en underrapport i et dataområde, gentages underrapporten med hver forekomst af gruppen eller rækken i dataområdet. Du kan overføre en værdi fra gruppen eller rækken til underrapporten. I egenskaben for værdi i underrapporten skal du bruge et feltudtryk for det felt, der indeholder den værdi, du vil overføre til parameteren for underrapporten.  
   
- Du kan finde flere oplysninger om at arbejde med parametre og underrapporter i [Tilføj en underrapport og parametre](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-subreport-and-parameters-report-builder-and-ssrs.md) i dokumentationen til SQL Server Reporting Services.  
+ Du kan finde flere oplysninger om at arbejde med parametre og underrapporter i [Tilføj en underrapport og parametre](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-subreport-and-parameters-report-builder-and-ssrs) i dokumentationen til SQL Server Reporting Services.  
 
 ## <a name="preview-paginated-reports-in-report-builder"></a>Se en forhåndsvisning af sideinddelte rapport i Report Builder
 

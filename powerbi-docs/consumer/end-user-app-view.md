@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3b8985158092227fde5eb64eddabc9990d0606f6
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a38b3aa72c37d10ce19344ebe6f3c3f286661d62
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82120269"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275518"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer og brug apps med dashboards og rapporter i Power BI
 
@@ -65,7 +65,7 @@ Du kan også finde og installere apps fra Microsoft AppSource. Der vises kun pro
 
 ## <a name="get-an-app-from-the-microsoft-appsource-website"></a>Hent en app fra Microsoft AppSource-webstedet 
 
-I dette eksempel åbner vi en af Microsofts eksempelapps. På AppSource kan du finde apps til mange af de tjenester, du bruger til at køre din virksomhed.  Tjenester som f.eks. Salesforce, Microsoft Dynamics, Google Analytics, GitHub, Zendesk, Marketo og mange flere. Du kan få mere at vide i [Apps til tjenester, du bruger sammen med Power BI](../service-connect-to-services.md). 
+I dette eksempel åbner vi en af Microsofts eksempelapps. På AppSource kan du finde apps til mange af de tjenester, du bruger til at køre din virksomhed.  Tjenester som f.eks. Salesforce, Microsoft Dynamics, Google Analytics, GitHub, Zendesk, Marketo og mange flere. Du kan få mere at vide i [Apps til tjenester, du bruger sammen med Power BI](../connect-data/service-connect-to-services.md). 
 
 1. Åbn [https://appsource.microsoft.com](https://appsource.microsoft.com) i en browser, og vælg **Power BI-apps**.
 
@@ -142,3 +142,4 @@ Fra tid til tiden kan appudviklere udgive nye versioner af deres apps. Hvordan d
 * [Tilbage til oversigten over apps](end-user-apps.md)
 * [Få vist en Power BI-rapport](end-user-report-open.md)
 * [Andre måder, indhold deles med dig på](end-user-shared-with-me.md)
+

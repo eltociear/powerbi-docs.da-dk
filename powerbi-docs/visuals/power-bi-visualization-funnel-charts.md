@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b60a4c14873427bd06d2b6abce48c9d3d3008859
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 6eee86423fdfc1e1a9338aa4fecfd5eae0c0d111
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865247"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272850"
 ---
 # <a name="create-and-use-funnel-charts"></a>Opret og brug tragtformede diagrammer
 
@@ -94,20 +94,23 @@ Nu kan du oprette dit eget tragtformede diagram, der viser antallet af salgsmuli
      
      ![oplysninger om søjlen Forslag](media/power-bi-visualization-funnel-charts/funnelhover-new.png)
 
-6. [Gem rapporten](../service-report-save.md).
+6. [Gem rapporten](../create-reports/service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Fremhævning og krydsfiltrering
-Du kan få mere at vide om brug af ruden Filters under [Føj et filter til en rapport](../power-bi-report-add-filter.md).
+Du kan få mere at vide om brug af ruden Filters under [Føj et filter til en rapport](../create-reports/power-bi-report-add-filter.md).
 
 Fremhævning af en søjle i et tragtformet diagram krydsfiltrerer andre visualiseringer på rapportsiden ... og omvendt. For at kunne følge med skal du føje nogle flere visualiseringer til den rapportside, der indeholder det tragtformede diagram.
 
 1. Vælg søjlen **Proposal** i det tragtformede diagram. Dette krydsfremhæver de andre visualiseringer på siden. Du kan bruge Ctrl til at vælge flere objekter.
    
    ![kort video, der viser visuelle interaktioner](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
-2. Under [Interaktion med visualiseringer i Power BI](../service-reports-visual-interactions.md) kan du se, hvordan du angiver indstillinger for krydsfremhævning og krydsfiltrering af visualiseringer.
+2. Under [Interaktion med visualiseringer i Power BI](../create-reports/service-reports-visual-interactions.md) kan du se, hvordan du angiver indstillinger for krydsfremhævning og krydsfiltrering af visualiseringer.
 
 ## <a name="next-steps"></a>Næste trin
 
 [Målere i Power BI](power-bi-visualization-radial-gauge-charts.md)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+
+

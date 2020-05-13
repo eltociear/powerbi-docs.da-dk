@@ -8,19 +8,19 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/04/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 049b6ac14c6d35d68815eac32520a4eaa654ad42
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f1608fd2511e38758b5bf05041d625cf524fff34
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78920730"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83127823"
 ---
 # <a name="when-to-use-paginated-reports-in-power-bi"></a>Her skal du bruge sideinddelte rapporter i Power BI
 
 Denne artikel henvender sig til rapportforfattere, der designer rapporter til Power BI. Den indeholder forslag, der kan hjælpe dig med at vælge, hvornår du skal udvikle [sideinddelte rapporter i Power BI](../paginated-reports/paginated-reports-report-builder-power-bi.md).
 
 > [!NOTE]
-> Udgivelse af sideinddelte rapporter i Power BI kræver et Power BI Premium-abonnement. Rapporter gengives kun, når de er i et arbejdsområde på en dedikeret kapacitet, der har [arbejdsbelastningen for sideinddelte rapporter aktiveret](../service-admin-premium-workloads.md#paginated-reports).
+> Udgivelse af sideinddelte rapporter i Power BI kræver et Power BI Premium-abonnement. Rapporter gengives kun, når de er i et arbejdsområde på en dedikeret kapacitet, der har [arbejdsbelastningen for sideinddelte rapporter aktiveret](../admin/service-admin-premium-workloads.md#paginated-reports).
 
 Sideinddelte rapporter i Power BI er optimeret til **udskrivning** eller **generering af PDF**. De giver dig også mulighed for at oprette layout med megen formatering og perfekt pixel. Så sideinddelte rapporter er velegnede til driftsrapporter, f.eks. salgsfakturaer.
 
@@ -36,7 +36,7 @@ Vi anbefaler, at du evt. overvejer at bruge en sideinddelt rapport i Power BI, n
 
 Når du allerede har SSRS-rapporter (SQL Server Reporting Services) [RDL-rapporter (Report Definition Language)](/sql/reporting-services/reports/report-definition-language-ssrs), kan du vælge at udvikle dem igen som [Power BI-rapporter](../consumer/end-user-reports.md) eller overføre dem som sideinddelte rapporter til Power BI. Du kan få flere oplysninger ved at se [Overfør SQL Server Reporting Services-rapporter til Power BI](migrate-ssrs-reports-to-power-bi.md).
 
-Når du har udgivet en sideinddelt rapport til et Power BI-arbejdsområde, er de sideinddelte rapporter tilgængelige side om side med Power BI-rapporter. De kan derefter nemt distribueres ved hjælp af [Power BI-apps](../service-create-distribute-apps.md).
+Når du har udgivet en sideinddelt rapport til et Power BI-arbejdsområde, er de sideinddelte rapporter tilgængelige side om side med Power BI-rapporter. De kan derefter nemt distribueres ved hjælp af [Power BI-apps](../collaborate-share/service-create-distribute-apps.md).
 
 Du kan overveje at udvikle SSRS-rapporter i stedet for at overføre dem. Det er især tilfældet for de rapporter, der er beregnet til at levere analyser. I disse tilfælde vil Power BI-rapporter sandsynligvis levere bedre rapporter for brugeren.
 

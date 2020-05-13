@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/28/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e3e0108f539a7c42b41c36f743a0b8b79f3b61b8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 49e4653152e8981222d3a2589781546eb25bcd0e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82781725"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273011"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Eksportér de data, der blev brugt til at oprette en visualisering
 
@@ -54,7 +54,7 @@ Se med, når Will eksporterer dataene fra en af visualiseringerne i hans rapport
 
 ## <a name="export-data-from-a-report"></a>Eksportér data fra en rapport
 
-Hvis du vil følge med, skal du åbne [eksempelrapporten med en indkøbsanalyse](../sample-procurement.md) i Power BI-tjenesten i redigeringsvisning. Tilføj en ny tom rapportside. Følg derefter nedenstående trin for at tilføje en samling, et hierarki og et filter på visualiseringsniveau.
+Hvis du vil følge med, skal du åbne [eksempelrapporten med en indkøbsanalyse](../create-reports/sample-procurement.md) i Power BI-tjenesten i redigeringsvisning. Tilføj en ny tom rapportside. Følg derefter nedenstående trin for at tilføje en samling, et hierarki og et filter på visualiseringsniveau.
 
 ### <a name="create-a-stacked-column-chart"></a>Opret et stablet søjlediagram
 
@@ -94,7 +94,7 @@ Vælg indstillingen for **Opsummerede data**, hvis du vil eksportere dataene til
 
     - **Underliggende data**
 
-    Hvis du vil have hjælp til at forstå sammenlægninger, kan du se under [Aggregater i Power BI](../service-aggregates.md).
+    Hvis du vil have hjælp til at forstå sammenlægninger, kan du se under [Aggregater i Power BI](../create-reports/service-aggregates.md).
 
 
     > [!NOTE]
@@ -133,7 +133,7 @@ Når du vælger **Eksportér**, eksporterer Power BI dataene til en *.xlsx*-fil,
 
     - **Underliggende data**
 
-    Hvis du vil have hjælp til at forstå sammenlægninger, kan du se under [Aggregater i Power BI](../service-aggregates.md).
+    Hvis du vil have hjælp til at forstå sammenlægninger, kan du se under [Aggregater i Power BI](../create-reports/service-aggregates.md).
 
 
     > [!NOTE]
@@ -164,7 +164,7 @@ Der er flere strategier, som Power BI-administratorer og -designere bør bruge t
 
 - Power BI-administratorer kan slå dataeksport fra for deres organisation. 
 
-- Ejere af datasæt kan angive sikkerhed på rækkeniveau (RLS). RLS vil begrænse adgangen til skrivebeskyttede brugere. Men hvis du har konfigureret en apps arbejdsområde og givet medlemmerne redigeringstilladelse, anvendes RLS-rollerne ikke på dem. Du kan finde flere oplysninger i [Sikkerhed på rækkeniveau](../service-admin-rls.md).
+- Ejere af datasæt kan angive sikkerhed på rækkeniveau (RLS). RLS vil begrænse adgangen til skrivebeskyttede brugere. Men hvis du har konfigureret en apps arbejdsområde og givet medlemmerne redigeringstilladelse, anvendes RLS-rollerne ikke på dem. Du kan finde flere oplysninger i [Sikkerhed på rækkeniveau](../admin/service-admin-rls.md).
 
 - Rapportdesignere kan skjule kolonner, så de ikke vises på listen **Felter**. Du kan finde flere oplysninger under [Egenskaber for datasæt](../developer/automation/api-dataset-properties.md)
 

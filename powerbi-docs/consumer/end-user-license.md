@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: consumers
-ms.openlocfilehash: 8610f5c0efbc3da394e4de7c263a88aad813eae2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 14e3b0f2956252e0b09abcf314d6e14b9a9709ad
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82066002"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83129487"
 ---
 # <a name="using-the-power-bi-service-as-a-consumer"></a>Brug af Power BI-tjenesten som *forbruger*
 
@@ -47,7 +47,7 @@ Premium muliggør omfattende distribution af indhold for Pro-brugere uden at kr�
 
 I disse arbejdsområder tildeler designere roller, f.eks. **Læser**, **Bidragyder**, **Medlem** og **Administrator**, som afgør, i hvor høj grad kolleger kan interagere med indholdet. Du kan finde flere oplysninger under [tilladelser og roller i arbejdsområder](end-user-workspaces.md). 
 
-Du kan finde flere oplysninger om Premium-kapacitet under [Hvad er Microsoft Power BI Premium?](../service-premium-what-is.md)
+Du kan finde flere oplysninger om Premium-kapacitet under [Hvad er Microsoft Power BI Premium?](../admin/service-premium-what-is.md)
 
 
 ## <a name="find-out-which-licenses-you-have"></a>Find ud af, hvilke licenser du har

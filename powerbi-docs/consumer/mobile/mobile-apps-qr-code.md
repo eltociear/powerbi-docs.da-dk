@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: 55b71508380a424ba48e4d24ac6c6fc70d9a570d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c4d1ce3a4a15c2d79951865e03131e001260e2c9
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80802066"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276070"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Scan en Power BI QR-kode fra din mobilenhed
 Gælder for:
@@ -24,7 +24,7 @@ Gælder for:
 
 QR-koder i Power BI kan forbinde noget i den virkelige verden direkte med relaterede BI-oplysninger &#150; du behøver ikke at navigere eller søge.
 
-Et eksempel kan være, at en kollega har [oprettet en QR-kode i Power BI-tjenesten](../../service-create-qr-code-for-tile.md) for en rapport eller et felt i et dashboard og har delt dashboardet eller rapporten med dig. Samtidig placerer vedkommende QR-koden på et sted, hvor du har adgang til den, for eksempel i en mail eller på en vare. 
+Et eksempel kan være, at en kollega har [oprettet en QR-kode i Power BI-tjenesten](../../create-reports/service-create-qr-code-for-tile.md) for en rapport eller et felt i et dashboard og har delt dashboardet eller rapporten med dig. Samtidig placerer vedkommende QR-koden på et sted, hvor du har adgang til den, for eksempel i en mail eller på en vare. 
 
 Du kan scanne QR-koden for at få direkte adgang til feltet eller rapporten direkte fra din telefon. Det gør du ved hjælp af scanneren i Power BI-appen eller en anden scannerapp, du har installeret på din telefon. 
 
@@ -75,8 +75,7 @@ Hvis din kollega ikke har delt dashboardet eller rapporten med dig, kan du anmod
 
 ## <a name="next-steps"></a>De næste trin
 * [Opret forbindelse til Power BI-data fra den virkelige verden](mobile-apps-data-in-real-world-context.md) med mobilappsene
-* [Opret en QR-kode for et felt i Power BI-tjenesten](../../service-create-qr-code-for-tile.md)
-* [Opret en QR-kode for en rapport i Power BI-tjenesten](../../service-create-qr-code-for-report.md)
+* [Opret en QR-kode for et felt i Power BI-tjenesten](../../create-reports/service-create-qr-code-for-tile.md)
+* [Opret en QR-kode for en rapport i Power BI-tjenesten](../../create-reports/service-create-qr-code-for-report.md)
 * Du kan også [scanne en QR-kode med Power BI til Mixed Reality-appen](mobile-mixed-reality-app.md).
 * Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

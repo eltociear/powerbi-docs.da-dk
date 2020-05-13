@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/30/2020
-ms.openlocfilehash: 7ae2752627e24c5de2feed372009061e523a3fc8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 40f713c2fd021ea8ecea5789b8ad0bc54cff2294
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80751624"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275955"
 ---
 # <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Integrering af Power BI-indhold med tjenesteprincipal og programhemmelighed
 
@@ -183,14 +183,14 @@ Når dit indhold er integreret, er du klar til at [gå videre til produktionen](
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
-* Tjenesteprincipalen fungerer kun med [nye arbejdsområder](../../service-create-the-new-workspaces.md).
+* Tjenesteprincipalen fungerer kun med [nye arbejdsområder](../../collaborate-share/service-create-the-new-workspaces.md).
 * **Mit arbejdsområde** understøttes ikke til brug sammen med tjenesteprincipalen.
 * Der kræves dedikeret kapacitet for at kunne begynde at producere.
 * Du kan ikke logge på Power BI-portalen ved hjælp af en tjenesteprincipal.
 * Der kræves rettigheder som Power BI-administrator for at kunne aktivere tjenesteprincipalen under Indstillinger for udvikler på Power BI-administrationsportalen.
 * Du kan ikke installere eller administrere en datagateway i det lokale miljø ved hjælp af en tjenesteprincipal.
 * Programmer til [integration i din organisation](embed-sample-for-your-organization.md) kan ikke bruge en tjenesteprincipal.
-* Administration af [dataflow](../../service-dataflows-overview.md) understøttes ikke.
+* Administration af [dataflow](../../transform-model/service-dataflows-overview.md) understøttes ikke.
 * Tjenesteprincipaler understøtter i øjeblikket ingen administrator-API'er.
 * Når du bruger en tjenesteprincipal med en [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview)-datakilde, skal selve tjenesteprincipalen have tilladelser til en forekomst af Azure Analysis Services. Brug af en sikkerhedsgruppe, der indeholder tjenesteprincipalen til dette formål, fungerer ikke.
 

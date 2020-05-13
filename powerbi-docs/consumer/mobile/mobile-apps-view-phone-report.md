@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: eba723e4e75c7ce051921a907d2a3d0aa9536833
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: d3584ebc5233ccffc007118ac87ada49e906b34c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841773"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273517"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Få vist Power BI-rapporter, der er optimeret til din telefon
 
@@ -48,7 +48,7 @@ Hvis der er defineret filtre i en rapport, der er optimeret til telefoner, kan d
 ## <a name="cross-highlight-visuals"></a>Tværgående fremhævning i visualiseringer
 Tværgående fremhævning af visualiseringer i stående visning fungerer på samme måde som i Power BI-tjenesten og i telefoner i liggende visning: Når du vælger data i en visualisering, fremhæves relaterede data i de andre visualiseringer på siden.
 
-Læs mere om [filtre og fremhævning i Power BI](../../power-bi-reports-filters-and-highlighting.md).
+Læs mere om [filtre og fremhævning i Power BI](../../create-reports/power-bi-reports-filters-and-highlighting.md).
 
 ## <a name="select-visuals"></a>Vælg visualiseringer
 Når du vælger en visualisering i en rapport på en telefon, fremhæves visualiseringen, og der fokuseres på den, så du ikke kan bruge fingerbevægelser på dit canvas.
@@ -131,8 +131,7 @@ Rapportforfattere kan [definere detaljeadgang](https://docs.microsoft.com/power-
 
 
 ## <a name="next-steps"></a>Næste trin
-* [Opret rapporter, der optimeret til Power BI-mobilapps](../../desktop-create-phone-report.md)
-* [Opret en telefonvisning af et dashboard i Power BI](../../service-create-dashboard-mobile-phone-view.md)
+* [Opret rapporter, der optimeret til Power BI-mobilapps](../../create-reports/desktop-create-phone-report.md)
+* [Opret en telefonvisning af et dashboard i Power BI](../../create-reports/service-create-dashboard-mobile-phone-view.md)
 * [Opret dynamiske visualiseringer, der er optimeret til alle størrelser](../../visuals/desktop-create-responsive-visuals.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

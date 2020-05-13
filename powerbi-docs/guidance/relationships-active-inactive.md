@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: a8c8c50369911e76376ccbda3a95743813fde6bb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3e3e44647ca7c85c09a3e7f4b3c309947559f5d3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78263662"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273218"
 ---
 # <a name="active-vs-inactive-relationship-guidance"></a>Vejledning til aktive i forhold til inaktive relationer
 
@@ -114,7 +114,7 @@ Dette modeldesign understøtter udarbejdelse af følgende rapportdesign.
 
 Rapportsiden filtrerer efter 4. kvartal 2019. Tabelvisualiseringen grupperer efter måned og viser forskellige salgsstatistikker. Målingerne **Ordrer** og **Afsendte ordrer** giver forskellige resultater. De bruger begge den samme opsummeringslogik (antal rækker i tabellen **Salg**), men forskellig filteroverførsel fra tabellen **Dato**.
 
-Bemærk, at kvartalsudsnittet indeholder en TOM værdi. Dette udsnit vises som et resultat af [tabeludvidelsen](../desktop-relationships-understand.md#strong-relationships). Hvor hver tabel med **Salg** indeholder en række med ordredato, har nogle rækker en TOM afsendelsesdato, fordi disse ordrer endnu ikke er afsendt. Der tages også højde for inaktive relationer i tabeludvidelsen, og derfor kan der vises TOMME værdier, fordi der er TOMME værdier på mange-siden af relationen, eller fordi der er problemer med dataintegritet.
+Bemærk, at kvartalsudsnittet indeholder en TOM værdi. Dette udsnit vises som et resultat af [tabeludvidelsen](../transform-model/desktop-relationships-understand.md#strong-relationships). Hvor hver tabel med **Salg** indeholder en række med ordredato, har nogle rækker en TOM afsendelsesdato, fordi disse ordrer endnu ikke er afsendt. Der tages også højde for inaktive relationer i tabeludvidelsen, og derfor kan der vises TOMME værdier, fordi der er TOMME værdier på mange-siden af relationen, eller fordi der er problemer med dataintegritet.
 
 ## <a name="recommendations"></a>Anbefalinger
 
@@ -129,7 +129,7 @@ Under særlige omstændigheder kan du dog definere en eller flere inaktive relat
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Modelrelationer i Power BI Desktop](../desktop-relationships-understand.md)
+- [Modelrelationer i Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - [Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI](star-schema.md)
 - [Vejledning til fejlfinding af relationer](relationships-troubleshoot.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0481a09aaeac4f6c76c49d3a816ac880cdb9d60b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e82c82430b42874e512265b9dae113b86925a51d
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114065"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273264"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Dashboard-felter i Power BI
 
@@ -69,7 +69,7 @@ Har brug for hjælp til at forstå de komponenter, der udgør Power BI?  Se [Pow
 3. Vælg et tomt område på canvasset for at lukke handlingsmenuen.
 
 ### <a name="select-click-a-tile"></a>Vælg (klik på) et felt
-Når du vælger et felt, afhænger næste handling af, hvordan feltet blev oprettet, og om det har et [brugerdefineret link](../service-dashboard-edit-tile.md). Hvis det har et brugerdefineret link, føres du til linket ved at vælge feltet. Ellers føres du til rapporten, Excel Online-projektmappen, SSRS-rapporten, der er i det lokale miljø, eller spørgsmål i Spørgsmål og svar, der blev brugt til at oprette feltet.
+Når du vælger et felt, afhænger næste handling af, hvordan feltet blev oprettet, og om det har et [brugerdefineret link](../create-reports/service-dashboard-edit-tile.md). Hvis det har et brugerdefineret link, føres du til linket ved at vælge feltet. Ellers føres du til rapporten, Excel Online-projektmappen, SSRS-rapporten, der er i det lokale miljø, eller spørgsmål i Spørgsmål og svar, der blev brugt til at oprette feltet.
 
 > [!NOTE]
 > Undtagelsen til dette er videofelter, der er oprettet direkte på dashboardet ved hjælp af **Tilføj felt**. Hvis du vælger et videofelt (der blev oprettet på denne måde), afspilles videoen direkte på dashboardet.   
@@ -85,6 +85,8 @@ Når du vælger et felt, afhænger næste handling af, hvordan feltet blev opret
 * Hvis den oprindelige visualisering, der blev brugt til at oprette feltet, ændres, er det ikke tilfældet med feltet.  Hvis *designeren* f.eks. har fastgjort et kurvediagram fra en rapport og derefter har ændret kurvediagrammet til et søjlediagram, vises der fortsat et kurvediagram på dashboardfeltet. Dataene opdateres, men visualiseringstypen bliver ikke.
 
 ## <a name="next-steps"></a>De næste trin
-[Opdatering af data](../refresh-data.md)
+[Opdatering af data](../connect-data/refresh-data.md)
 
 [Power BI – Grundlæggende begreber](end-user-basic-concepts.md)
+
+

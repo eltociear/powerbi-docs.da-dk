@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1ba284aa3c925ef0679572ca55cad9e5267d3f21
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c72863407fea0cf550643e5193a8b514b2bb51bd
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82585054"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276323"
 ---
 # <a name="slicers-in-power-bi"></a>Udsnitsværktøjer i Power BI
 
@@ -24,11 +24,11 @@ Du kan f.eks. give rapportlæserne mulighed for at se de overordnede salgstal, m
 
 ![Animation af udsnit](media/power-bi-visualization-slicers/slicer2.gif)
 
-I denne artikel gennemgås, hvordan du opretter og formaterer et grundlæggende udsnitsværktøj ved hjælp af det gratis [eksempel på en detailhandelsanalyse](../sample-retail-analysis.md). Det gennemgås også, hvordan du kan styre, hvilke visualiseringer der påvirkes af et udsnitsværktøj, og hvordan du synkroniserer med udsnitsværktøjer på andre sider. Her er nogle andre artikler, der indeholder fremgangsmåder til, hvordan du opretter bestemte typer udsnitsværktøjer:
+I denne artikel gennemgås, hvordan du opretter og formaterer et grundlæggende udsnitsværktøj ved hjælp af det gratis [eksempel på en detailhandelsanalyse](../create-reports/sample-retail-analysis.md). Det gennemgås også, hvordan du kan styre, hvilke visualiseringer der påvirkes af et udsnitsværktøj, og hvordan du synkroniserer med udsnitsværktøjer på andre sider. Her er nogle andre artikler, der indeholder fremgangsmåder til, hvordan du opretter bestemte typer udsnitsværktøjer:
 
-- [Udsnitsværktøjer til numerisk område](../desktop-slicer-numeric-range.md).
+- [Udsnitsværktøjer til numerisk område](../create-reports/desktop-slicer-numeric-range.md).
 - [Udsnitsværktøjer til relative datoudsnit](desktop-slicer-filter-date-range.md).
-- Dynamiske [udsnitsværktøjer, hvis størrelse kan ændres](../power-bi-slicer-filter-responsive.md).
+- Dynamiske [udsnitsværktøjer, hvis størrelse kan ændres](../create-reports/power-bi-slicer-filter-responsive.md).
 - [Hierarkiske udsnitsværktøjer](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md) med flere felter.
 
 ## <a name="when-to-use-a-slicer"></a>Hvornår man bruger et udsnit
@@ -92,7 +92,7 @@ Brug visuelle interaktioner til at forhindre, at nogle visualiseringer på siden
 
    Når du vælger navne og datoområder i udsnittet, vil diagrammet **Total Sales Variance by FiscalMonth and District Manager** nu forblive uændret.
 
-Du kan finde flere oplysninger om redigering af interaktioner under [Rediger, hvordan visualiseringer interagerer i en Power BI-rapport](../service-reports-visual-interactions.md).
+Du kan finde flere oplysninger om redigering af interaktioner under [Rediger, hvordan visualiseringer interagerer i en Power BI-rapport](../create-reports/service-reports-visual-interactions.md).
 
 ## <a name="sync-and-use-slicers-on-other-pages"></a>Synkroniser og brug udsnit på andre sider
 Fra og med opdateringen af Power BI i februar 2018 kan du synkronisere et udsnit og bruge det på en hvilken som helst side i en rapport. 
@@ -134,7 +134,7 @@ I den aktuelle rapport på siden **Månedligt salg for distrikt** er der et udsn
 ## <a name="filtering-slicers"></a>Filtrering af udsnitsværktøjer
 Du kan anvende filtre på visualiseringsniveau på udsnit for at reducere listen over værdier, der vises i udsnittet. Du kan f.eks. filtrere tomme værdier fra et listeudsnit eller filtrere bestemte datoer fra et intervaludsnit. Når du gør det, påvirker det kun *de værdier, der vises i udsnittet* og ikke *det filter, udsnittet anvender for andre visualiseringer*, når du foretager et valg. Lad os f.eks. sige, at du anvender et filter på et intervaludsnit, så det kun er bestemte datoer, der vises. Valget for udsnittet viser kun de første og sidste datoer fra området, men du vil stadig kunne se andre datoer i dine andre visualiseringer. Når du har ændret det valgte område i udsnittet, kan du se, at de andre visualiseringer opdateres. Hvis du rydder udsnittet, vises alle datoer igen.
 
-Se [Filtertyper](../power-bi-report-filter-types.md) for at få flere oplysninger om filtre på visualiseringsniveau.
+Se [Filtertyper](../create-reports/power-bi-report-filter-types.md) for at få flere oplysninger om filtre på visualiseringsniveau.
 
 ## <a name="format-slicers"></a>Formatér udsnit
 Der findes forskellige indstillinger til formatering afhængigt af udsnitstypen. Hvis du bruger retningen **Vandret**, layoutet **Dynamisk** og **elementfarver**, kan du oprette knapper eller felter i stedet for almindelige listeelementer og få elementer i udsnit til at tilpasse størrelse, så de passer til forskellige skærmstørrelser og layout.  
@@ -169,7 +169,7 @@ Der findes forskellige indstillinger til formatering afhængigt af udsnitstypen.
 
     ![Indstillinger for vandrette retninger](media/power-bi-visualization-slicers/6-buttons.png)
 
-Du kan finde flere oplysninger om vandrette retninger og dynamisk layout under [Opret et dynamisk udsnitsværktøj, som du kan ændre størrelsen på i Power BI](../power-bi-slicer-filter-responsive.md).
+Du kan finde flere oplysninger om vandrette retninger og dynamisk layout under [Opret et dynamisk udsnitsværktøj, som du kan ændre størrelsen på i Power BI](../create-reports/power-bi-slicer-filter-responsive.md).
 
 ### <a name="selection-controls-options-list-slicers-only"></a>Indstillinger for Kontrolelementer til markering (angiv kun udsnit)
 1. Under **Kontrolelementer til markering** skal du slå **Vis indstillingen "Vælg alle"** **til** for at føje et **Vælg alle**-element til udsnittet. 
@@ -222,4 +222,3 @@ Du kan få flere oplysninger i følgende artikler:
 - [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 - [Tabeller i Power BI](power-bi-visualization-tables.md)
-

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 7415750d59155f690cf0ff1ced25b31669f73710
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b6b84d9e6c5f0dee912ccf80cf6949618b16d8c5
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114560"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83149000"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Overførselsværktøj i Power BI Embedded
 
@@ -271,7 +271,7 @@ Du kan finde flere oplysninger under [Sådan overfører du indhold fra arbejdsom
 
 [Integrer med Power BI](embedding.md)  
 [Sådan overfører du indhold i arbejdsområdesamlingen i Power BI Embedded til Power BI](migrate-from-powerbi-embedded.md)  
-[Power BI Premium – hvad er det?](../../service-premium-what-is.md)  
+[Power BI Premium – hvad er det?](../../admin/service-premium-what-is.md)  
 [Git-lager til JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Git-lager til Power BI C#](https://github.com/Microsoft/PowerBI-CSharp)  
 [Integreret JavaScript-eksempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

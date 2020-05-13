@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: d718c9c7f627d735c083a46c1483815e3744faca
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f189ea2944f86a3caabfbc51ae5b2887bc7c89bb
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79378863"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278601"
 ---
 # <a name="optimization-guide-for-power-bi"></a>Optimeringsvejledning til Power BI
 
@@ -26,7 +26,7 @@ Denne artikel indeholder en vejledning, der gør det muligt for udviklere og adm
 
 ## <a name="optimizing-the-data-model"></a>Optimering af datamodellen
 
-Datamodellen understøtter hele visualiseringsfunktionaliteten. Datamodeller hostes enten eksternt eller internt, og i Power BI refereres de til som _datasæt_. Det er vigtigt at forstå dine muligheder og vælge den rette type datasæt for din løsning. De tre tilstande for datasæt: Import, DirectQuery og Sammensat. Du kan finde flere oplysninger i [Datasæt i Power BI-tjenesten](../service-datasets-understand.md) og [Datasættilstande i Power BI-tjenesten](../service-dataset-modes-understand.md).
+Datamodellen understøtter hele visualiseringsfunktionaliteten. Datamodeller hostes enten eksternt eller internt, og i Power BI refereres de til som _datasæt_. Det er vigtigt at forstå dine muligheder og vælge den rette type datasæt for din løsning. De tre tilstande for datasæt: Import, DirectQuery og Sammensat. Du kan finde flere oplysninger i [Datasæt i Power BI-tjenesten](../connect-data/service-datasets-understand.md) og [Datasættilstande i Power BI-tjenesten](../connect-data/service-dataset-modes-understand.md).
 
 Du kan finde en vejledning til en bestemt datasættilstand i:
 
@@ -40,7 +40,7 @@ Power BI-visualiseringer kan være dashboards, Power BI-rapporter eller sideindd
 
 ### <a name="dashboards"></a>Dashboards
 
-Det er vigtigt at forstå, at Power BI vedligeholder en cache til dine dashboardfelter – undtagen dynamiske rapportfelter og streamingfelter. Du kan finde flere oplysninger i [Dataopdatering i Power BI (Feltopdatering)](../refresh-data.md#tile-refresh). Hvis dit datasæt gennemtvinger dynamisk [sikkerhed på rækkeniveau (RLS)](../service-admin-rls.md), skal du sørge for at forstå konsekvenserne for ydeevnen, efterhånden som felter cachelagres for hver enkelt bruger.
+Det er vigtigt at forstå, at Power BI vedligeholder en cache til dine dashboardfelter – undtagen dynamiske rapportfelter og streamingfelter. Du kan finde flere oplysninger i [Dataopdatering i Power BI (Feltopdatering)](../connect-data/refresh-data.md#tile-refresh). Hvis dit datasæt gennemtvinger dynamisk [sikkerhed på rækkeniveau (RLS)](../admin/service-admin-rls.md), skal du sørge for at forstå konsekvenserne for ydeevnen, efterhånden som felter cachelagres for hver enkelt bruger.
 
 Når du fastgør dynamiske rapportfelter til et dashboard, bliver de ikke betjent fra forespørgselscachen. I stedet fungerer de på samme måde som rapporter og afgiver forespørgsler til back-end-kerner ad hoc.
 
@@ -75,7 +75,7 @@ Sørg for at gennemprøve hvert brugerdefinerede visuelle element for at sikre h
 
 Design af sideinddelte rapporter i Power BI kan optimeres ved at anvende bedste praksis-design til rapportens datahentning. Du kan finde flere oplysninger under [Vejledning til hentning af data for sideinddelte rapporter](report-paginated-data-retrieval.md).
 
-Du skal også sikre, at din kapacitet har tilstrækkelig hukommelse til [arbejdsbelastningen for sideinddelte rapporter](../service-admin-premium-workloads.md#paginated-reports).
+Du skal også sikre, at din kapacitet har tilstrækkelig hukommelse til [arbejdsbelastningen for sideinddelte rapporter](../admin/service-admin-premium-workloads.md#paginated-reports).
 
 ## <a name="optimizing-the-environment"></a>Optimering af miljøet
 
@@ -83,11 +83,11 @@ Du kan optimere Power BI-miljøet ved at konfigurere kapacitetsindstillinger, ti
 
 ### <a name="capacity-settings"></a>Kapacitetsindstillinger
 
-Når du bruger dedikerede kapaciteter – som er tilgængelige med Power BI Premium (P-SKU'er) eller Power BI Embedded (A-SKU'er, A4-A6), kan du administrere kapacitetsindstillinger. Du kan finde flere oplysninger under [Administration af Premium-kapacitet](../service-premium-capacity-manage.md). Du kan finde en vejledning i, hvordan du optimerer din kapacitet, under [Optimering af Premium-kapaciteter](../service-premium-capacity-optimize.md).
+Når du bruger dedikerede kapaciteter – som er tilgængelige med Power BI Premium (P-SKU'er) eller Power BI Embedded (A-SKU'er, A4-A6), kan du administrere kapacitetsindstillinger. Du kan finde flere oplysninger under [Administration af Premium-kapacitet](../admin/service-premium-capacity-manage.md). Du kan finde en vejledning i, hvordan du optimerer din kapacitet, under [Optimering af Premium-kapaciteter](../admin/service-premium-capacity-optimize.md).
 
 ### <a name="gateway-sizing"></a>Tilpasning af gateway-størrelse
 
-En gateway er påkrævet, når Power BI skal have adgang til data, der ikke er tilgængelige direkte via internettet. Du kan installere en [datagateway i det lokale miljø](../service-gateway-onprem.md) på en server i det lokale miljø eller på en VM-hostet IaaS (Infrastruktur som en service).
+En gateway er påkrævet, når Power BI skal have adgang til data, der ikke er tilgængelige direkte via internettet. Du kan installere en [datagateway i det lokale miljø](../connect-data/service-gateway-onprem.md) på en server i det lokale miljø eller på en VM-hostet IaaS (Infrastruktur som en service).
 
 Hvis du vil vide mere om gatewayarbejdsbelastninger og have anbefalinger til tilpasning af størrelsen, skal du se [Tilpasning af størrelse på datagateway i det lokale miljø](gateway-onprem-sizing.md).
 
@@ -96,7 +96,7 @@ Hvis du vil vide mere om gatewayarbejdsbelastninger og have anbefalinger til til
 Netværksventetid kan påvirke rapporters ydeevne ved at øge den tid, der kræves for anmodninger om at oprette forbindelse til Power BI-tjenesten, og for at svarene leveres. Lejere i Power BI tildeles et bestemt område.
 
 > [!TIP]
-> Du kan få hjælp til at se, hvor din lejer er placeret, under [Hvor findes min Power BI-lejer?](../service-admin-where-is-my-tenant-located.md)
+> Du kan få hjælp til at se, hvor din lejer er placeret, under [Hvor findes min Power BI-lejer?](../admin/service-admin-where-is-my-tenant-located.md)
 
 Når brugere fra en lejer tilgår Power BI-tjenesten, så føres vedkommendes anmodninger altid til dette område. Når anmodninger kommer til Power BI-tjenesten, sender tjenesten muligvis flere anmodninger, f.eks. til den underliggende datakilde eller datagatewayen, som også er underlagt netværksventetid.
 
@@ -115,3 +115,7 @@ Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 - Whitepaper: [Planlægning af en Power BI Enterprise-udrulning](https://go.microsoft.com/fwlink/?linkid=2057861)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)
+
+
+
+

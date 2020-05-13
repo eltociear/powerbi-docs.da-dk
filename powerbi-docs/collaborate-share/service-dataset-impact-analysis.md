@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/13/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: d6d62583d6ef6bd1fcc1630b46bdb5d97c221f16
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: edb34fc5592a6b851ae2c48690a772d75049fb48
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525324"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83274851"
 ---
 # <a name="dataset-impact-analysis"></a>Effektanalyse af datasæt
 
@@ -54,7 +54,7 @@ Forbrugsdataene relaterer til de seneste 30 dage, eksklusive dags dato. Antallet
 
 ## <a name="notify-contacts"></a>Giv kontakter besked
 
-Hvis du har foretaget en ændring af et datasæt eller påtænker at gøre det, kan det være en god idé at kontakte de relevante brugere for at fortælle dem om det. Når du giver kontakterne besked, sendes der en mail til [lister over kontakter](../service-create-the-new-workspaces.md#workspace-contact-list) for alle de påvirkede arbejdsområder. Dit navn vises på mailen, så kontakterne kan finde dig og besvare dig i en ny mailtråd. 
+Hvis du har foretaget en ændring af et datasæt eller påtænker at gøre det, kan det være en god idé at kontakte de relevante brugere for at fortælle dem om det. Når du giver kontakterne besked, sendes der en mail til [lister over kontakter](../collaborate-share/service-create-the-new-workspaces.md#workspace-contact-list) for alle de påvirkede arbejdsområder. Dit navn vises på mailen, så kontakterne kan finde dig og besvare dig i en ny mailtråd. 
 
 1. Klik på **Giv kontakter besked** i ruden Effektanalyse. Dialogboksen Giv kontakter besked vises.
 
@@ -89,5 +89,6 @@ Når du foretager en ændring af et datasæt i Power BI Desktop og derefter publ
 
 ## <a name="next-steps"></a>Næste trin
 
-* [Introduktion til datasæt på tværs af arbejdsområder (prøveversion)](../service-datasets-across-workspaces.md)
+* [Introduktion til datasæt på tværs af arbejdsområder (prøveversion)](../connect-data/service-datasets-across-workspaces.md)
 * [Dataafstamning](service-data-lineage.md)
+

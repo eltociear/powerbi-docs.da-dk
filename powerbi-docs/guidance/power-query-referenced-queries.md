@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 49601798ae920d956441c5580079625bf7408e07
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 242f1e44e3314af900d9f4d4e4fb7380b28b4103
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78290561"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278669"
 ---
 # <a name="referencing-power-query-queries"></a>Henvisning til Power Query-forespørgsler
 
@@ -42,7 +42,7 @@ Brugen af funktionen [Table.Buffer](/powerquery-m/table-buffer) i **Forespørgse
 
 Generelt anbefales det, at du refererer til forespørgsler for at undgå duplikering af logik på tværs af dine forespørgsler. Men som beskrevet i denne artikel kan denne designmetode bidrage til langsomme dataopdateringer og overbelastede datakilder.
 
-Det anbefales, at du i stedet opretter et [dataflow](../service-dataflows-overview.md). Brug af et dataflow kan forbedre opdateringstiden for data og reducere indvirkningen på dine datakilder.
+Det anbefales, at du i stedet opretter et [dataflow](../transform-model/service-dataflows-overview.md). Brug af et dataflow kan forbedre opdateringstiden for data og reducere indvirkningen på dine datakilder.
 
 Du kan designe dataflow for at sammenfatte kildedataene og transformationerne. Da dataflow er et permanent lager med data i Power BI-tjenesten, sker datahentningen hurtigt. Så selv når reference til forespørgsler resulterer i flere anmodninger til dataflowet, kan opdateringstiden for data forbedres.
 
@@ -52,7 +52,7 @@ Hvis **Forespørgsel1** i eksemplet redesignes som en dataflowenhed, kan **Fores
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
-- [Selvbetjent dataforberedelse i Power BI](../service-dataflows-overview.md)
-- [Oprettelse og brug af dataflow i Power BI](../service-dataflows-create-use.md)
+- [Selvbetjent dataforberedelse i Power BI](../transform-model/service-dataflows-overview.md)
+- [Oprettelse og brug af dataflow i Power BI](../transform-model/service-dataflows-create-use.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)
