@@ -21,7 +21,7 @@
             - name: Deaktiver baggrundsopdatering i Power Query
               href: power-query-background-refresh.md
             - name: Bedste praksis i forbindelse med dataflow
-              href: ../service-dataflows-best-practices.md
+              href: ../transform-model/service-dataflows-best-practices.md
         - name: Datamodellering
           items:
             - name: Hvad er et stjerneskema?
@@ -114,7 +114,7 @@
       items:
         - name: Oversigt over whitepapers
           href: whitepapers.md
-        - name: Whitepaper om sikkerhed i Power BI
+        - name: Whitepaper om Power BI-sikkerhed
           href: whitepaper-powerbi-security.md
         - name: Power BI Premium-udrulning
           href: whitepaper-powerbi-premium-deployment.md

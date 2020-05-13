@@ -27,9 +27,9 @@
         - name: Få mere at vide om at stille spørgsmål på et naturligt sprog
           href: end-user-q-and-a.md
         - name: Gå til det 'nye udseende'
-          href: ../service-new-look.md
+          href: service-new-look.md
         - name: 'Det "nye udseende": Hvor blev handlingerne af?'
-          href: ../service-new-look-where-actions.md
+          href: service-new-look-where-actions.md
     - name: 'Sådan gør du:'
       items:
         - name: Dashboards
@@ -93,7 +93,7 @@
             - name: Detailudledning i en visualisering
               href: end-user-drill.md
             - name: Interager med ArcGIS-kort
-              href: ../power-bi-visualizations-arcgis.md
+              href: ../visuals/power-bi-visualizations-arcgis.md
         - name: Almindelige opgaver
           items:
             - name: Eksportér data til Excel

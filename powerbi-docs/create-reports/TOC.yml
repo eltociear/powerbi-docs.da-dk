@@ -5,7 +5,7 @@
       expanded: true
       items:
         - name: Præsentation af rapporteditoren
-          href: ../service-the-report-editor-take-a-tour.md
+          href: service-the-report-editor-take-a-tour.md
         - name: Hvad er sideinddelte rapporter?
           href: ../paginated-reports/paginated-reports-report-builder-power-bi.md
     - name: Selvstudier
@@ -19,46 +19,46 @@
       expanded: true
       items:
         - name: Hent eksempler til Power BI
-          href: ../sample-datasets.md
+          href: sample-datasets.md
         - name: 'Amerikansk COVID-19-eksempel:'
           href: sample-covid-19-us.md
         - name: Eksempel på kunderentabilitet
-          href: ../sample-customer-profitability.md
+          href: sample-customer-profitability.md
         - name: Eksempel på analyse af it-forbrug
-          href: ../sample-it-spend.md
+          href: sample-it-spend.md
         - name: Eksempel på HR
-          href: ../sample-human-resources.md
+          href: sample-human-resources.md
         - name: Eksempel på analyse af salgsmuligheder
-          href: ../sample-opportunity-analysis.md
+          href: sample-opportunity-analysis.md
         - name: Eksempel på indkøbsanalyse
-          href: ../sample-procurement.md
+          href: sample-procurement.md
         - name: Eksempel på analyse af detailhandel
-          href: ../sample-retail-analysis.md
+          href: sample-retail-analysis.md
         - name: Udforsk eksempel på analyse af detailhandel
-          href: ../sample-tutorial-connect-to-the-samples.md
+          href: sample-tutorial-connect-to-the-samples.md
         - name: Eksempel på salg og marketing
-          href: ../sample-sales-and-marketing.md
+          href: sample-sales-and-marketing.md
         - name: Eksempel på analyse af leverandørkvalitet
-          href: ../sample-supplier-quality.md
+          href: sample-supplier-quality.md
         - name: Download projektmappen Økonomisk eksempel
-          href: ../sample-financial-download.md
+          href: sample-financial-download.md
     - name: Begreber
       expanded: true
       items:
         - name: Power BI-rapporter
           items:
             - name: Arbejd med rapportvisning
-              href: ../desktop-report-view.md
+              href: desktop-report-view.md
             - name: Filtertyper i rapporter
-              href: ../power-bi-report-filter-types.md
+              href: power-bi-report-filter-types.md
             - name: Filtre og fremhævninger i rapporter
-              href: ../power-bi-reports-filters-and-highlighting.md
+              href: power-bi-reports-filters-and-highlighting.md
             - name: Stikprøvetagning i forbindelse med højdensitetslinje
-              href: ../desktop-high-density-sampling.md
+              href: desktop-high-density-sampling.md
             - name: Om visualiseringer af Spørgsmål og svar
               href: ../visuals/power-bi-visualization-q-and-a.md
             - name: Om tilgængelighed
-              href: ../desktop-accessibility-overview.md
+              href: desktop-accessibility-overview.md
             - name: Naturligt sprog i Spørgsmål og svar
               items:
                 - name: Introduktion til Spørgsmål og svar
@@ -112,107 +112,107 @@
         - name: Power BI-rapporter
           items:
             - name: Aktivér automatisk sideopdatering (eksempelvisning)
-              href: ../desktop-automatic-page-refresh.md
+              href: desktop-automatic-page-refresh.md
             - name: Undersøg rapportelementer med Effektivitetsanalyse
-              href: ../desktop-performance-analyzer.md
+              href: desktop-performance-analyzer.md
             - name: Føj visuelle elementer til rapporter
-              href: ../desktop-visual-elements-for-reports.md
+              href: desktop-visual-elements-for-reports.md
             - name: Tilføj rapportværktøjstip for at forbedre dine visualiseringer
-              href: ../desktop-tooltips.md
+              href: desktop-tooltips.md
             - name: Eksportér rapporter til PDF-filer
-              href: ../desktop-export-to-pdf.md
+              href: desktop-export-to-pdf.md
             - name: Anvend indsigt til at forklare udsving i visualiseringer (eksempelvisning)
-              href: ../desktop-insights.md
+              href: desktop-insights.md
             - name: 'Brug indsigt til at se, hvordan distributioner varierer (eksempelvisning)'
-              href: ../desktop-insights-find-where-different.md
+              href: desktop-insights-find-where-different.md
             - name: Opret knapper
-              href: ../desktop-buttons.md
+              href: desktop-buttons.md
             - name: Opret detaljeadgangsknapper
-              href: ../desktop-drill-through-buttons.md
+              href: desktop-drill-through-buttons.md
             - name: Brug detaljeadgangsfunktionen
-              href: ../desktop-drillthrough.md
+              href: desktop-drillthrough.md
             - name: Anvend detaljeadgangsfunktionen på tværs af rapporter
-              href: ../desktop-cross-report-drill-through.md
+              href: desktop-cross-report-drill-through.md
             - name: Opret bogmærker for at gemme og dele indsigt
-              href: ../desktop-bookmarks.md
+              href: desktop-bookmarks.md
             - name: Arbejd med rapporttemaer
-              href: ../desktop-report-themes.md
+              href: desktop-report-themes.md
             - name: Arbejd med filtre i rapporter
-              href: ../power-bi-report-filter.md
+              href: power-bi-report-filter.md
             - name: Tilføj et filter i en rapport
-              href: ../power-bi-report-add-filter.md
+              href: power-bi-report-add-filter.md
             - name: Anvend gruppering
-              href: ../desktop-grouping-and-binning.md
+              href: desktop-grouping-and-binning.md
             - name: Anvend gitterlinjer og fastgørelse til gitter
-              href: ../desktop-gridlines-snap-to-grid.md
+              href: desktop-gridlines-snap-to-grid.md
             - name: Anvend indstillinger for sidevisning i rapporter
-              href: ../power-bi-report-display-settings.md
+              href: power-bi-report-display-settings.md
             - name: Tilføj en kolonne fra et eksempel
-              href: ../desktop-add-column-from-example.md
+              href: desktop-add-column-from-example.md
             - name: Tilføj en brugerdefineret kolonne
-              href: ../desktop-add-custom-column.md
+              href: desktop-add-custom-column.md
             - name: Brug integrerede hierarkimærkater
-              href: ../desktop-inline-hierarchy-labels.md
+              href: desktop-inline-hierarchy-labels.md
             - name: Udsnit
               href: ../visuals/power-bi-visualization-slicers.md
             - name: Udsnitsværktøjer til numerisk område
-              href: ../desktop-slicer-numeric-range.md
+              href: desktop-slicer-numeric-range.md
             - name: Relative datoudsnitsværktøjer og -filtre
               href: ../visuals/desktop-slicer-filter-date-range.md
             - name: Relative klokkeslætsværktøjer og -filtre
               href: slicer-filter-relative-time.md
             - name: 'Opret et udsnit, du kan tilpasse størrelsen på'
-              href: ../power-bi-slicer-filter-responsive.md
+              href: power-bi-slicer-filter-responsive.md
             - name: Føj flere felter til et udsnitsværktøj
               href: power-bi-slicer-hierarchy-multiple-fields.md
             - name: Begræns dataadgang med sikkerhed på rækkeniveau
-              href: ../desktop-rls.md
+              href: desktop-rls.md
             - name: Tilpas værktøjstips
-              href: ../desktop-custom-tooltips.md
+              href: desktop-custom-tooltips.md
             - name: Føj tekstfelter og figurer til rapporter
-              href: ../power-bi-reports-add-text-and-shapes.md
+              href: power-bi-reports-add-text-and-shapes.md
             - name: Føj et hyperlink til et tekstfelt
-              href: ../service-add-hyperlink-to-text-box.md
+              href: service-add-hyperlink-to-text-box.md
             - name: Føj hyperlinks til en tabel
-              href: ../power-bi-hyperlinks-in-tables.md
+              href: power-bi-hyperlinks-in-tables.md
             - name: 'Vis billeder i en tabel, en matrix eller et udsnit'
-              href: ../power-bi-images-tables.md
+              href: power-bi-images-tables.md
             - name: Vis brugerdefinerede formatstrenge
-              href: ../desktop-custom-format-strings.md
+              href: desktop-custom-format-strings.md
             - name: Anvend betinget tabelformatering
-              href: ../desktop-conditional-table-formatting.md
+              href: desktop-conditional-table-formatting.md
             - name: Opret dynamiske udtryksbaserede titler
-              href: ../desktop-conditional-format-visual-titles.md
+              href: desktop-conditional-format-visual-titles.md
             - name: Sortér efter kolonne
-              href: ../desktop-sort-by-column.md
+              href: desktop-sort-by-column.md
             - name: Optimer rapporter til mobilapps
-              href: ../desktop-create-phone-report.md
+              href: desktop-create-phone-report.md
             - name: Anvend indstillingerne Se data og Se poster
-              href: ../desktop-see-data-see-records.md
+              href: desktop-see-data-see-records.md
             - name: Tip og gode råd til oprettelse af rapporter
-              href: ../desktop-tips-and-tricks-for-creating-reports.md
+              href: desktop-tips-and-tricks-for-creating-reports.md
             - name: Gruppér visualiseringer i en rapport
-              href: ../desktop-grouping-visuals.md
+              href: desktop-grouping-visuals.md
             - name: Opret rapportskabeloner
-              href: ../desktop-templates.md
+              href: desktop-templates.md
             - name: Opret en rapport ud fra et datasæt
-              href: ../service-report-create-new.md
+              href: service-report-create-new.md
             - name: Gem en rapport
-              href: ../service-report-save.md
+              href: service-report-save.md
             - name: Interager med en rapport i redigeringsvisning
-              href: ../service-interact-with-a-report-in-editing-view.md
+              href: service-interact-with-a-report-in-editing-view.md
             - name: Analysér i Excel
-              href: ../service-analyze-in-excel.md
+              href: ../collaborate-share/service-analyze-in-excel.md
             - name: Arbejd med samlinger i tjenesten
-              href: ../service-aggregates.md
+              href: service-aggregates.md
             - name: Opret en QR-kode for en rapport
-              href: ../service-create-qr-code-for-report.md
+              href: service-create-qr-code-for-report.md
             - name: Lad brugerne tilpasse visualiseringer (eksempelvisning)
               href: power-bi-personalize-visuals.md
             - name: Eksportér en rapport til Power BI Desktop (eksempelvisning)
-              href: ../service-export-to-pbix.md
+              href: service-export-to-pbix.md
             - name: Publicer datasæt og rapporter
-              href: ../desktop-upload-desktop-files.md
+              href: desktop-upload-desktop-files.md
         - name: Visualiseringer
           items:
             - name: Føj visualiseringer til en rapport (del 1)
@@ -226,7 +226,7 @@
             - name: 'Tilpas titler, baggrunde og forklaringer i forbindelse med visualiseringer'
               href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
             - name: Vis elementer uden data
-              href: ../desktop-show-items-no-data.md
+              href: desktop-show-items-no-data.md
             - name: Anvend datapunktgrænser og strategier efter visualiseringstype
               href: ../visuals/power-bi-data-points.md
             - name: Vis en visualiserings underliggende data
@@ -242,7 +242,7 @@
             - name: 'Flyt, tilpas størrelsen på og få en visualisering til at træde frem i en rapport'
               href: ../visuals/power-bi-visualization-move-and-resize.md
             - name: 'Rediger, hvordan visualiseringer interagerer i en rapport'
-              href: ../service-reports-visual-interactions.md
+              href: service-reports-visual-interactions.md
             - name: Tip og tricks til kortvisualiseringer
               href: ../visuals/power-bi-map-tips-and-tricks.md
             - name: Tilpas egenskaberne for x- og y-aksen
@@ -276,9 +276,9 @@
             - name: R-visualiseringer
               href: ../visuals/service-r-visuals.md
             - name: Opret Power BI-visualiseringer med R
-              href: ../desktop-r-visuals.md
+              href: desktop-r-visuals.md
             - name: Download og brug R-drevne Power BI-visualiseringer
-              href: ../desktop-r-powered-custom-visuals.md
+              href: desktop-r-powered-custom-visuals.md
             - name: Radiale målerdiagrammer
               href: ../visuals/power-bi-visualization-radial-gauge-charts.md
             - name: Bånddiagrammer
@@ -304,29 +304,29 @@
             - name: Bedste praksis for Spørgsmål og svar
               href: ../natural-language/q-and-a-best-practices.md
             - name: Brug spørgsmål og svar til at udforske dine data
-              href: ../power-bi-tutorial-q-and-a.md
+              href: power-bi-tutorial-q-and-a.md
             - name: Opret en visualisering med spørgsmål og svar
-              href: ../power-bi-visualization-introduction-to-q-and-a.md
+              href: power-bi-visualization-introduction-to-q-and-a.md
             - name: Få Excel-data til at fungere godt med spørgsmål og svar
-              href: ../service-prepare-data-for-q-and-a.md
+              href: service-prepare-data-for-q-and-a.md
             - name: Opret udvalgte spørgsmål til Spørgsmål og svar
-              href: ../service-q-and-a-create-featured-questions.md
+              href: service-q-and-a-create-featured-questions.md
             - name: Brug Spørgsmål og svar via direkte forbindelser
-              href: ../service-q-and-a-direct-query.md
+              href: service-q-and-a-direct-query.md
             - name: Hurtig indsigt
-              href: ../service-insights.md
+              href: service-insights.md
             - name: Optimer data til Hurtig indsigt
-              href: ../service-insights-optimize.md
+              href: service-insights-optimize.md
         - name: Tilgængelighed
           items:
             - name: Design tilgængelige rapporter
-              href: ../desktop-accessibility-creating-reports.md
+              href: desktop-accessibility-creating-reports.md
             - name: Opret rapporter med tilgængelighedsværktøjer
-              href: ../desktop-accessibility-creating-tools.md
+              href: desktop-accessibility-creating-tools.md
             - name: Anvend rapporter med tilgængelighedsfunktioner
-              href: ../desktop-accessibility-consuming-tools.md
+              href: desktop-accessibility-consuming-tools.md
             - name: Tastaturgenveje i Power BI Desktop
-              href: ../desktop-accessibility-keyboard-shortcuts.md
+              href: desktop-accessibility-keyboard-shortcuts.md
         - name: Sideinddelte rapporter
           items:
             - name: Angiv data direkte i en sideinddelt rapport
@@ -350,39 +350,39 @@
         - name: Dashboards
           items:
             - name: Introduktion til dashboards
-              href: ../service-dashboards.md
+              href: service-dashboards.md
             - name: Dashboardfelter
-              href: ../service-dashboard-tiles.md
+              href: service-dashboard-tiles.md
             - name: Opret et dashboard fra en rapport
-              href: ../service-dashboard-create.md
+              href: service-dashboard-create.md
             - name: Opret en kopi af et dashboard
-              href: ../service-dashboard-copy.md
+              href: service-dashboard-copy.md
             - name: Fastgør et felt til et dashboard fra en rapport
-              href: ../service-dashboard-pin-tile-from-report.md
+              href: service-dashboard-pin-tile-from-report.md
             - name: Fastgør et felt fra ét dashboard til et andet
-              href: ../service-pin-tile-to-another-dashboard.md
+              href: service-pin-tile-to-another-dashboard.md
             - name: Fastgør et felt til et dashboard fra Excel
-              href: ../service-dashboard-pin-tile-from-excel.md
+              href: service-dashboard-pin-tile-from-excel.md
             - name: Fastgør et felt til et dashboard fra Spørgsmål og svar
-              href: ../service-dashboard-pin-tile-from-q-and-a.md
+              href: service-dashboard-pin-tile-from-q-and-a.md
             - name: Fastgør en hel rapportside til et dashboard
-              href: ../service-dashboard-pin-live-tile-from-report.md
+              href: service-dashboard-pin-live-tile-from-report.md
             - name: Databeskeder i tjenesten
-              href: ../service-set-data-alerts.md
+              href: service-set-data-alerts.md
             - name: 'Føj et billede, et tekstfelt, en video eller en kode til et dashboard'
-              href: ../service-dashboard-add-widget.md
+              href: service-dashboard-add-widget.md
             - name: Rediger et felt
-              href: ../service-dashboard-edit-tile.md
+              href: service-dashboard-edit-tile.md
             - name: Tip til udformning af et fantastisk dashboard
-              href: ../service-dashboards-design-tips.md
+              href: service-dashboards-design-tips.md
             - name: Optimer et dashboard til telefoner
-              href: ../service-create-dashboard-mobile-phone-view.md
+              href: service-create-dashboard-mobile-phone-view.md
             - name: Opret en QR-kode for et felt
-              href: ../service-create-qr-code-for-tile.md
+              href: service-create-qr-code-for-tile.md
             - name: Dashboard-dataklassificering
-              href: ../service-data-classification.md
+              href: service-data-classification.md
             - name: Dashboardtemaer
-              href: ../service-dashboard-themes.md
+              href: service-dashboard-themes.md
         - name: Udrulningspipelines
           items:
             - name: Kom i gang
@@ -392,8 +392,8 @@
         - name: Andre opgaver
           items:
             - name: Omdøb indhold
-              href: ../service-rename.md
+              href: service-rename.md
             - name: Angiv elementkontakter
-              href: ../service-item-contact.md
+              href: service-item-contact.md
             - name: Slet næsten alt
-              href: ../service-delete.md
+              href: service-delete.md

@@ -90,7 +90,7 @@ I disse eksempler kan "Produkter" enten være et kolonnenavn eller en måling.
 
 Du kan også angive en sammenlægning i selve udtrykket i Spørgsmål og svar. Hvis "populære produkter" f.eks. er produkter med mindst 100 solgte enheder, kan du definere produkter med "sum af solgte enheder > 100" som populær.  
 
-:::image type="content" source="media/q-and-a-tooling-teach-q-and-a/power-bi-qna-popular-products.png" alt-text="Definer "populære produkter"":::
+:::image type="content" source="media/q-and-a-tooling-teach-q-and-a/power-bi-qna-popular-products.png" alt-text="Definer populære produkter":::
 
 Du kan kun definere en enkelt betingelse i værktøjet. Hvis du vil definere mere komplekse betingelser, skal du bruge DAX til at oprette en beregnet kolonne eller måling og derefter bruge afsnittet med værktøjer til at oprette en enkelt betingelse for den pågældende kolonne eller måling.
 

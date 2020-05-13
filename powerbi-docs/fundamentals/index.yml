@@ -12,33 +12,33 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 03/05/2020
-  ms.openlocfilehash: 04ce4ce2ec0038ff6e79a2e65de8279a3a73dcad
-  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+  ms.openlocfilehash: cbe4b08f84dcd4246bceb83933366d1086d27bd0
+  ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 05/05/2020
-  ms.locfileid: "81439589"
+  ms.lasthandoff: 05/13/2020
+  ms.locfileid: "83348775"
 landingContent:
 - title: Hvad er Power BI?
   linkLists:
   - linkListType: overview
     links:
     - text: Hvad er Power BI?
-      url: ../power-bi-overview.md
+      url: power-bi-overview.md
     - text: Hvad er Power BI Desktop?
-      url: ../desktop-what-is-desktop.md
+      url: desktop-what-is-desktop.md
     - text: Hvad er Power BI-tjenesten?
-      url: ../power-bi-service-overview.md
+      url: power-bi-service-overview.md
     - text: Sammenligning af Power BI Desktop og tjenesten
-      url: ../service-service-vs-desktop.md
+      url: service-service-vs-desktop.md
 - title: Nyheder
   linkLists:
   - linkListType: concept
     links:
     - text: Nyheder i Power BI Desktop
-      url: ../desktop-latest-update.md
+      url: desktop-latest-update.md
     - text: Nyheder i tjenesten
-      url: ../service-whats-new.md
+      url: service-whats-new.md
 - title: Introduktion til Learn
   linkLists:
   - linkListType: learn
@@ -47,21 +47,21 @@ landingContent:
       url: https://docs.microsoft.com/learn/paths/create-use-analytics-reports-power-bi/
     - text: Hent data vha. Power BI Desktop
       url: https://docs.microsoft.com/learn/modules/get-data-power-bi/?tutorial-step=1
-- title: Licenser
+- title: Licensering
   linkLists:
   - linkListType: concept
     links:
     - text: Tilmeld dig Power BI
-      url: ../service-self-service-signup-for-power-bi.md
+      url: service-self-service-signup-for-power-bi.md
     - text: Funktioner efter licenstype
-      url: ../service-features-license-type.md
+      url: service-features-license-type.md
 - title: Ressourcer
   linkLists:
   - linkListType: reference
     links:
     - text: Power BI-videoer
-      url: ../videos.md
-    - text: Videoer i Power BI Desktop
-      url: ../desktop-videos.md
+      url: videos.md
+    - text: Videoer om Power BI Desktop
+      url: desktop-videos.md
     - text: Webinarer
-      url: ../webinars.md
+      url: webinars.md

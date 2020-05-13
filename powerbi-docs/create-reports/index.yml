@@ -12,27 +12,27 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 03/30/2020
-  ms.openlocfilehash: 7c31ca6f71f4dad0d7ee6f94908cc89a17cd9799
-  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+  ms.openlocfilehash: 4c8b301e95dddbfc80f1a4b3c4a7a464da267dfc
+  ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 05/05/2020
-  ms.locfileid: "80464686"
+  ms.lasthandoff: 05/13/2020
+  ms.locfileid: "83275978"
 landingContent:
 - title: Kom i gang
   linkLists:
   - linkListType: get-started
     links:
     - text: Brug det opdaterede bånd
-      url: ../desktop-ribbon.md
+      url: desktop-ribbon.md
     - text: Oversigt over tilgængelighed
-      url: ../desktop-accessibility-overview.md
+      url: desktop-accessibility-overview.md
     - text: Hent eksempeldata
-      url: ../sample-datasets.md
+      url: sample-datasets.md
   - linkListType: tutorial
     links:
     - text: Importér og åbn eksempelpakker
-      url: ../sample-tutorial-connect-to-the-samples.md
+      url: sample-tutorial-connect-to-the-samples.md
   - linkListType: sample
     links:
     - text: 'COVID-19-eksempel: Amerikanske data'
@@ -58,33 +58,33 @@ landingContent:
   - linkListType: concept
     links:
     - text: Rapporttemaer
-      url: ../desktop-report-themes.md
+      url: desktop-report-themes.md
     - text: Tekstfelter og figurer
-      url: ../power-bi-reports-add-text-and-shapes.md
+      url: power-bi-reports-add-text-and-shapes.md
   - linkListType: how-to-guide
     links:
     - text: Betinget tabelformatering
-      url: ../desktop-conditional-table-formatting.md
+      url: desktop-conditional-table-formatting.md
     - text: Brug gruppering
-      url: ../desktop-grouping-and-binning.md
+      url: desktop-grouping-and-binning.md
     - text: Føj bogmærker til en rapport
-      url: ../desktop-bookmarks.md
+      url: desktop-bookmarks.md
 - title: Design rapportinteraktioner
   linkLists:
   - linkListType: concept
     links:
     - text: Rapportvisning i Power BI Desktop
-      url: ../desktop-report-view.md
+      url: desktop-report-view.md
   - linkListType: how-to-guide
     links:
     - text: Udforsk data med Spørgsmål og svar
-      url: ../power-bi-tutorial-q-and-a.md
+      url: power-bi-tutorial-q-and-a.md
     - text: Brug detaljeadgang i en rapport
-      url: ../desktop-drillthrough.md
+      url: desktop-drillthrough.md
     - text: Føj bogmærker til en rapport
-      url: ../desktop-bookmarks.md
+      url: desktop-bookmarks.md
     - text: Føj filtre til en rapport
-      url: ../power-bi-report-filter.md
+      url: power-bi-report-filter.md
 - title: Sideinddelte rapporter i Power BI
   linkLists:
   - linkListType: overview
@@ -110,12 +110,12 @@ landingContent:
   - linkListType: concept
     links:
     - text: Introduktion til dashboards
-      url: ../service-dashboards.md
+      url: service-dashboards.md
   - linkListType: how-to-guide
     links:
     - text: Opret et dashboard
-      url: ../service-dashboard-create.md
+      url: service-dashboard-create.md
     - text: Fastgør et felt til et dashboard
-      url: ../service-dashboard-pin-tile-from-report.md
+      url: service-dashboard-pin-tile-from-report.md
     - text: Føj billeder eller videoer til et dashboard
-      url: ../service-dashboard-add-widget.md
+      url: service-dashboard-add-widget.md

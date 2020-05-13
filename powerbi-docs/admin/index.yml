@@ -12,56 +12,56 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 03/17/2020
-  ms.openlocfilehash: 12bd1e2ac706925301ca139bd84cef249c71e18c
-  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+  ms.openlocfilehash: d64c608be40aa156b3df23d5dd5ad01d50ab00dc
+  ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 05/05/2020
-  ms.locfileid: "79488470"
+  ms.lasthandoff: 05/13/2020
+  ms.locfileid: "83130063"
 landingContent:
 - title: Power BI for administratorer og virksomheder
   linkLists:
   - linkListType: overview
     links:
     - text: Hvad er Power BI-administration?
-      url: ../service-admin-administering-power-bi-in-your-organization.md
+      url: service-admin-administering-power-bi-in-your-organization.md
     - text: Hvad er Power BI Premium?
-      url: ../service-premium-what-is.md
+      url: service-premium-what-is.md
   - linkListType: concept
     links:
     - text: Administrationsrolle i Office 365
-      url: ../service-admin-role.md
-- title: Kom godt i gang
+      url: service-admin-role.md
+- title: Kom i gang
   linkLists:
   - linkListType: concept
     links:
     - text: Licenser til din organisation
-      url: ../service-admin-licensing-organization.md
+      url: service-admin-licensing-organization.md
     - text: Brug af administrationsportalen
-      url: ../service-admin-portal.md
+      url: service-admin-portal.md
   - linkListType: how-to-guide
     links:
     - text: Køb Power BI Pro
-      url: ../service-admin-purchasing-power-bi-pro.md
+      url: service-admin-purchasing-power-bi-pro.md
     - text: Tilmeld dig en Office 365-prøveversion
-      url: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+      url: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
     - text: Tilføj Power BI med en Office 365-partner
-      url: ../service-admin-syndication-partner.md
+      url: service-admin-syndication-partner.md
 - title: Administrer din organisation
   linkLists:
   - linkListType: concept
     links:
     - text: Premium-kapacitetsscenarier
-      url: ../service-premium-capacity-scenarios.md
+      url: service-premium-capacity-scenarios.md
   - linkListType: how-to-guide
     links:
     - text: Hvor findes min lejer?
-      url: ../service-admin-where-is-my-tenant-located.md
+      url: service-admin-where-is-my-tenant-located.md
     - text: Find brugere, der er logget på
-      url: ../service-admin-access-usage.md
+      url: service-admin-access-usage.md
     - text: Overvågning af Power BI
-      url: ../service-admin-auditing.md
+      url: service-admin-auditing.md
     - text: Spor tjenestetilstand
-      url: ../service-admin-health.md
+      url: service-admin-health.md
     - text: Lukker din Power BI-konto
-      url: ../service-admin-closing-your-account.md
+      url: service-admin-closing-your-account.md

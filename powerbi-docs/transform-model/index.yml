@@ -12,70 +12,70 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 03/03/2020
-  ms.openlocfilehash: 738bc26097120b0075f3ca1ffb0787f241aec982
-  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+  ms.openlocfilehash: d8d30cc860146e904c788dcd374d580d5a3fcf0b
+  ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 05/05/2020
-  ms.locfileid: "78924523"
+  ms.lasthandoff: 05/13/2020
+  ms.locfileid: "83279106"
 landingContent:
 - title: Omdan og udform data
   linkLists:
   - linkListType: overview
     links:
     - text: Oversigt over forespørgselseditor
-      url: ../desktop-query-overview.md
+      url: desktop-query-overview.md
   - linkListType: tutorial
     links:
     - text: Form og kombiner data
-      url: ../desktop-shape-and-combine-data.md
+      url: ../connect-data/desktop-shape-and-combine-data.md
   - linkListType: concept
     links:
     - text: Almindelige forespørgselsopgaver
-      url: ../desktop-common-query-tasks.md
+      url: desktop-common-query-tasks.md
   - linkListType: how-to-guide
     links:
     - text: Kombiner filer (binære filer)
-      url: ../desktop-combine-binaries.md
+      url: desktop-combine-binaries.md
 - title: Modellér data
   linkLists:
   - linkListType: concept
     links:
     - text: Modelleringsvisning
-      url: ../desktop-modeling-view.md
+      url: desktop-modeling-view.md
     - text: Mange til mange-relationer
-      url: ../desktop-many-to-many-relationships.md
+      url: desktop-many-to-many-relationships.md
   - linkListType: how-to-guide
     links:
     - text: Opret og administrer relationer
-      url: ../desktop-create-and-manage-relationships.md
+      url: desktop-create-and-manage-relationships.md
     - text: Anvend datakategorier
-      url: ../desktop-data-categorization.md
+      url: desktop-data-categorization.md
 - title: Beregninger
   linkLists:
   - linkListType: tutorial
     links:
     - text: Få grundlæggende oplysninger om DAX
-      url: ../desktop-quickstart-learn-dax-basics.md
+      url: desktop-quickstart-learn-dax-basics.md
     - text: Opret beregnede kolonner
-      url: ../desktop-tutorial-create-calculated-columns.md
+      url: desktop-tutorial-create-calculated-columns.md
   - linkListType: concept
     links:
     - text: Beregnede tabeller
-      url: ../desktop-calculated-tables.md
+      url: desktop-calculated-tables.md
   - linkListType: how-to-guide
     links:
     - text: Brug Hurtigmålinger
-      url: ../desktop-quick-measures.md
+      url: desktop-quick-measures.md
 - title: Selvbetjent dataforberedelse
   linkLists:
   - linkListType: overview
     links:
     - text: Selvbetjent dataforberedelse i Power BI
-      url: ../desktop-quickstart-connect-to-data.md
+      url: ../connect-data/desktop-quickstart-connect-to-data.md
   - linkListType: concept
     links:
     - text: 'Dataflow: Selvbetjent dataforberedelse'
-      url: ../service-dataflows-overview.md
+      url: service-dataflows-overview.md
     - text: Opret og brug dataflow
-      url: ../service-dataflows-create-use.md
+      url: service-dataflows-create-use.md

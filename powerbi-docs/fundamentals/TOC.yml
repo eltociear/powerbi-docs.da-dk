@@ -6,50 +6,50 @@
       expanded: true
       items:
         - name: Hvad er Power BI?
-          href: ../power-bi-overview.md
+          href: power-bi-overview.md
         - name: Hvad er Power BI Desktop?
-          href: ../desktop-what-is-desktop.md
+          href: desktop-what-is-desktop.md
         - name: Hvad er Power BI-tjenesten?
-          href: ../power-bi-service-overview.md
+          href: power-bi-service-overview.md
         - name: Sammenligning af Power BI Desktop og tjenesten
-          href: ../service-service-vs-desktop.md
+          href: service-service-vs-desktop.md
     - name: Begreber
       items:
         - name: Hvad er nyt i den nyeste opdatering af Power BI Desktop?
-          href: ../desktop-latest-update.md
-        - name: Hvad er nyt i Power BI service
-          href: ../service-whats-new.md
+          href: desktop-latest-update.md
+        - name: Nyheder i Power BI-tjenesten
+          href: service-whats-new.md
         - name: Om Power BI-tjenesten
-          href: ../service-basic-concepts.md
+          href: service-basic-concepts.md
         - name: Ti tips til at få hjælp
-          href: ../service-tips-for-finding-help.md
-        - name: Licenser
+          href: service-tips-for-finding-help.md
+        - name: Licensering
           items:
             - name: Tilmeld dig Power BI
-              href: ../service-self-service-signup-for-power-bi.md
+              href: service-self-service-signup-for-power-bi.md
             - name: Funktioner efter licenstype
-              href: ../service-features-license-type.md
+              href: service-features-license-type.md
     - name: Vejledninger
       items:
         - name: Hent Power BI Desktop
-          href: ../desktop-get-the-desktop.md
+          href: desktop-get-the-desktop.md
         - name: Kom i gang med Power BI Desktop
-          href: ../desktop-getting-started.md
+          href: desktop-getting-started.md
     - name: Reference
       items:
         - name: Understøttede sprog og lande/områder
-          href: ../supported-languages-countries-regions.md
+          href: supported-languages-countries-regions.md
         - name: Understøttede browsere
-          href: ../power-bi-browsers.md
+          href: power-bi-browsers.md
     - name: Ressourcer
       items:
         - name: Videoer
-          href: ../videos.md
+          href: videos.md
         - name: Webinarer
-          href: ../webinars.md
-        - name: Videoer i Power BI Desktop
-          href: ../desktop-videos.md
+          href: webinars.md
+        - name: Videoer om Power BI Desktop
+          href: desktop-videos.md
         - name: Arkiv for Power BI Desktop-opdateringer
-          href: ../desktop-latest-update-archive.md
+          href: desktop-latest-update-archive.md
         - name: Erklæring om beskyttelse af personlige oplysninger for Send en smiley i Power BI Desktop
-          href: ../desktop-send-smile-privacy-statement.md
+          href: desktop-send-smile-privacy-statement.md

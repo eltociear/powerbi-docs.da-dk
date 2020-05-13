@@ -6,114 +6,114 @@
       expanded: true
       items:
         - name: Oversigt over forespørgselseditor
-          href: ../desktop-query-overview.md
+          href: desktop-query-overview.md
         - name: Selvbetjent dataforberedelse med dataflow
-          href: ../service-dataflows-overview.md
+          href: service-dataflows-overview.md
     - name: Selvstudier
       expanded: true
       items:
         - name: Opret dine egne målinger
-          href: ../desktop-tutorial-create-measures.md
+          href: desktop-tutorial-create-measures.md
         - name: Opret beregnede kolonner
-          href: ../desktop-tutorial-create-calculated-columns.md
+          href: desktop-tutorial-create-calculated-columns.md
     - name: Begreber
       expanded: true
       items:
         - name: Om modelrelationer
-          href: ../desktop-relationships-understand.md
+          href: desktop-relationships-understand.md
         - name: Arbejd med modelvisning
-          href: ../desktop-modeling-view.md
+          href: desktop-modeling-view.md
         - name: Administrer akkumuleringer
-          href: ../desktop-aggregations.md
+          href: desktop-aggregations.md
         - name: Brug sammensatte modeller
-          href: ../desktop-composite-models.md
+          href: desktop-composite-models.md
         - name: Anvend mange til mange-relationer
-          href: ../desktop-many-to-many-relationships.md
+          href: desktop-many-to-many-relationships.md
         - name: Administrer lagertilstand
-          href: ../desktop-storage-mode.md
+          href: desktop-storage-mode.md
         - name: Aktivér tovejskrydsfiltrering
-          href: ../desktop-bidirectional-filtering.md
+          href: desktop-bidirectional-filtering.md
         - name: Arbejd med flerdimensionelle modeller i Power BI
-          href: ../desktop-default-member-multidimensional-models.md
+          href: ../connect-data/desktop-default-member-multidimensional-models.md
     - name: Vejledninger
       items:
         - name: Udfør almindelige forespørgselsopgaver
-          href: ../desktop-common-query-tasks.md
+          href: desktop-common-query-tasks.md
         - name: Opret og administrer relationer
-          href: ../desktop-create-and-manage-relationships.md
+          href: desktop-create-and-manage-relationships.md
         - name: Brug ruden Analytics
-          href: ../desktop-analytics-pane.md
+          href: desktop-analytics-pane.md
         - name: Arbejd med datavisning
-          href: ../desktop-data-view.md
+          href: ../connect-data/desktop-data-view.md
         - name: Anvend grundlæggende oplysninger om DAX
-          href: ../desktop-quickstart-learn-dax-basics.md
+          href: desktop-quickstart-learn-dax-basics.md
         - name: Arbejd med relationsvisning
-          href: ../desktop-relationship-view.md
+          href: desktop-relationship-view.md
         - name: Omdan og udform data
           items:
             - name: Kombiner filer (binære filer)
-              href: ../desktop-combine-binaries.md
+              href: desktop-combine-binaries.md
             - name: Brug AI Insights (prøveversion)
-              href: ../desktop-ai-insights.md
+              href: desktop-ai-insights.md
         - name: Modeller dine data
           items:
             - name: Opret hurtigmålinger til almindelige beregninger
-              href: ../desktop-quick-measures.md
+              href: desktop-quick-measures.md
             - name: Opret og brug What if-parametre til at visualisere variabler
-              href: ../desktop-what-if.md
+              href: desktop-what-if.md
             - name: Angiv datakategorier i Power BI Desktop
-              href: ../desktop-data-categorization.md
+              href: desktop-data-categorization.md
             - name: Markér stregkodefelter i Power BI til mobilappen
-              href: ../desktop-mobile-barcodes.md
+              href: desktop-mobile-barcodes.md
             - name: Angiv geografiske filtre i Power BI til mobilappen
-              href: ../desktop-mobile-geofiltering.md
+              href: desktop-mobile-geofiltering.md
             - name: Opret beregnede kolonner
-              href: ../desktop-calculated-columns.md
+              href: desktop-calculated-columns.md
             - name: Opret beregnede tabeller
-              href: ../desktop-calculated-tables.md
+              href: desktop-calculated-tables.md
             - name: Opret målinger til dataanalyse
-              href: ../desktop-measures.md
+              href: desktop-measures.md
             - name: Importér og få vist KPI'er
-              href: ../desktop-import-and-display-kpis.md
+              href: desktop-import-and-display-kpis.md
             - name: Anvend automatisk dato og klokkeslæt
-              href: ../desktop-auto-date-time.md
+              href: desktop-auto-date-time.md
         - name: Selvbetjent dataforberedelse
           items:
             - name: Opret og brug dataflow
-              href: ../service-dataflows-create-use.md
+              href: service-dataflows-create-use.md
             - name: Hæv eller certificer dataflow
               href: service-dataflows-promote-certify.md
-            - name: Brug den forbedrede beregningsmaskine med dataflow
-              href: ../service-dataflows-enhanced-compute-engine.md
+            - name: Brug det forbedrede beregningsprogram med dataflows
+              href: service-dataflows-enhanced-compute-engine.md
             - name: Beregnede enheder med Power BI Premium
-              href: ../service-dataflows-computed-entities-premium.md
+              href: service-dataflows-computed-entities-premium.md
             - name: Opret forbindelse til datakilder med dataflow
-              href: ../service-dataflows-data-sources.md
+              href: service-dataflows-data-sources.md
             - name: Brug dataflow med datakilder i det lokale miljø
-              href: ../service-dataflows-on-premises-gateways.md
+              href: service-dataflows-on-premises-gateways.md
             - name: Link enheder mellem dataflow
-              href: ../service-dataflows-linked-entities.md
+              href: service-dataflows-linked-entities.md
             - name: Brug gradvis opdatering med dataflow
-              href: ../service-dataflows-incremental-refresh.md
+              href: service-dataflows-incremental-refresh.md
             - name: Udviklerressourcer til dataflow
-              href: ../service-dataflows-developer-resources.md
+              href: service-dataflows-developer-resources.md
             - name: Opret forbindelse til dataflow i Power BI Desktop
-              href: ../desktop-connect-dataflows.md
-            - name: Integration af dataflow og Azure Data Lake (eksempelvisning)
-              href: ../service-dataflows-azure-data-lake-integration.md
+              href: desktop-connect-dataflows.md
+            - name: Integration af dataflow og Azure Data Lake (prøveversion)
+              href: service-dataflows-azure-data-lake-integration.md
             - name: Opret forbindelse til Azure Data Lake Storage Gen2 for dataflowlager
-              href: ../service-dataflows-connect-azure-data-lake-storage-gen2.md
-            - name: Konfigurer indstillinger for dataflow for arbejdsområde (eksempelvisning)
-              href: ../service-dataflows-configure-workspace-storage-settings.md
+              href: service-dataflows-connect-azure-data-lake-storage-gen2.md
+            - name: Konfigurer indstillinger for dataflow for arbejdsområder (prøveversion)
+              href: service-dataflows-configure-workspace-storage-settings.md
             - name: Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)
-              href: ../service-dataflows-add-cdm-folder.md
+              href: service-dataflows-add-cdm-folder.md
             - name: Integrer Machine Learning i Power BI
-              href: ../service-machine-learning-integration.md
+              href: service-machine-learning-integration.md
             - name: Brug Cognitive Services i Power BI
-              href: ../service-cognitive-services.md
+              href: service-cognitive-services.md
             - name: Automatiseret Machine Learning i Power BI
-              href: ../service-machine-learning-automated.md
+              href: service-machine-learning-automated.md
     - name: Reference
       items:
         - name: Genveje til formeleditor
-          href: ../desktop-formula-editor.md
+          href: desktop-formula-editor.md
