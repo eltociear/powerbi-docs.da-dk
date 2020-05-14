@@ -72,6 +72,8 @@
               href: end-user-bookmarks.md
             - name: Føj spotlight til en rapport
               href: end-user-spotlight.md
+            - name: Tilpas en visualisering
+              href: end-user-personalize-visuals.md
             - name: Sideinddelte rapporteri på Power BI
               items:
                 - name: Sideinddelte rapporter
