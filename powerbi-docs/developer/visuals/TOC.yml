@@ -12,6 +12,10 @@
       items:
         - name: Udvikl en Power BI-visualisering
           href: custom-visual-develop-tutorial.md
+        - name: Opret reaktionsbaserede visualiseringer
+          href: create-react-visual.md
+        - name: Opret et liggende søjlediagram
+          href: create-bar-chart.md
         - name: Tilføj formateringsindstillinger
           href: custom-visual-develop-tutorial-format-options.md
         - name: Tilføj enhedstests for det visuelle projekt
@@ -38,14 +42,20 @@
           href: objects-properties.md
         - name: Avanceret redigeringstilstand
           href: advanced-edit-mode.md
+        - name: Funktionen supportsKeyboardFocus
+          href: supportskeyboardfocus-feature.md
+        - name: supportsMultiVisualSelection-feature.md
+          href: supportsmultivisualselection-feature.md
     - name: 'Sådan gør du:'
       items:
         - name: Få en Power BI-visualisering certificeret
           href: power-bi-custom-visuals-certified.md
         - name: Publicer Power BI-visualiseringer i AppSource
           href: office-store.md
+        - name: Test din Power BI-visualisering
+          href: submission-testing.md
         - name: Brug R-drevne Power BI-visualiseringer i Power BI
-          href: ../../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
+          href: ../../create-reports/desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
         - name: Interaktioner mellem visualiseringer
           href: visuals-interactions.md
         - name: Tilføj markeringer
@@ -64,6 +74,8 @@
           href: context-menu.md
         - name: Tilføj understøttelse af detailudledning
           href: drill-down-support.md
+        - name: Føj farver til din visualisering
+          href: add-colors-power-bi-visual.md
         - name: Fremhæv data i visualiseringer
           href: highlight.md
         - name: Tilføj understøttelse af tilstand med høj kontrast
@@ -78,10 +90,14 @@
           href: power-bi-custom-visuals-troubleshoot.md
     - name: Reference
       items:
+        - name: Ændringslog
+          href: changelog.md
         - name: Landingside
           href: landing-page.md
         - name: Start URL-adresse
           href: launch-url.md
+        - name: Visualiserings-API
+          href: visual-api.md
         - name: Lokalt lager-API
           href: local-storage.md
         - name: Gengivelse af hændelser
@@ -119,8 +135,8 @@
         - name: Udviklingscenter
           href: 'https://powerbi.microsoft.com/developers/'
         - name: Eksempler på Power BI-visualiseringer
-          href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
-        - name: Git-lager for Power BI-visualiseringer
+          href: samples.md
+        - name: Git-lager for brugerdefinerede visualiseringer
           href: 'https://go.microsoft.com/fwlink/?linkid=848277'
         - name: Oprettelse af SSL-certifikat
           href: create-ssl-certificate.md
