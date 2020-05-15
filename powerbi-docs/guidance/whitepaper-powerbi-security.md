@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: ff8b6a139d0088b2ff2acc8f73b75431e500ba51
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4454269803c45948c21c4448ab76b5397d3388b2
+ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279083"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83407522"
 ---
 # <a name="power-bi-security-whitepaper"></a>Whitepaper om Power BI-sikkerhed
 
@@ -263,7 +263,7 @@ Power BI sikrer overvågning af dataintegritet på følgende måder:
 
     &ensp;&ensp;a. Der cachelagres intet i forbindelse med rapporter, der er oprettet i Excel til Office 365.
 
-    &ensp;&ensp;b. I forbindelse med Power BI-rapporter cachelagres data for de viste visualiseringer krypteret i Azure SQL Database.
+    &ensp;&ensp;b. I forbindelse med Power BI rapporter cachelagres dataene for de viste visuelle elementer og gemmes i den visuelle data cache, der er beskrevet i det følgende afsnit.
  
 
 4. Oprindelige .pbix-filer (Power BI Desktop) eller .xlsx-filer (Excel), der er publiceret i Power BI
@@ -272,11 +272,20 @@ Power BI sikrer overvågning af dataintegritet på følgende måder:
 
 #### <a name="dashboards-and-dashboard-tiles"></a>Dashboards og dashboardfelter
 
-1. Cachelagring – De data, der skal bruges af visualiseringerne på dashboardet, cachelagres normalt og gemmes krypteret i Azure SQL Database. Andre felter såsom fastgjorte visualiseringer fra Excel eller SQL Server Reporting Services (SSRS) gemmes i Azure Blob som billeder og krypteres også.
+1. Cache lagre – de data, der skal bruges af de visuelle elementer på dashboardet, er normalt cachelagret og lagret i den visuelle data cache, der er beskrevet i det følgende afsnit. Andre felter såsom fastgjorte visualiseringer fra Excel eller SQL Server Reporting Services (SSRS) gemmes i Azure Blob som billeder og krypteres også.
 
 2. Statiske data – der omfatter artefakter, f. eks. baggrundsbilleder og Power BI visuelle elementer, der er gemt, krypteret, i Azure blob Storage.
 
-Uanset hvilken krypteringsmetode der bruges, administrerer Microsoft nøglekrypteringen på kundens vegne enten på et hemmeligt lager eller i Azure Key Vault.
+Uanset hvilken krypteringsmetode der bruges, administrerer Microsoft sig nøglekryptering på vegne af kunder.
+
+#### <a name="visual-data-cache"></a>Visuel data cache
+
+Visuelle datacache lagres på forskellige placeringer, afhængigt af om datasættet er hostet på en Power BI Premium kapacitet. For datasæt, der ikke er tilknyttet en kapacitet, cachelagres de visuelle data og gemmes krypteret i en Azure-SQL Database. For datasæt, der hostes på en kapacitet, kan de visuelle datacache lagres på følgende placeringer:
+
+* Azure Blob Storage
+* Azure Premium-filer
+* Noden Power BI Premium kapacitet
+
 
 ### <a name="data-transiently-stored-on-non-volatile-devices"></a>Midlertidigt gemte data på permanente enheder
 
