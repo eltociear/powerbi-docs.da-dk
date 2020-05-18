@@ -339,6 +339,8 @@
               href: ../paginated-reports/report-builder-shared-datasets.md
             - name: Opret parametre
               href: ../paginated-reports/paginated-reports-parameters.md
+            - name: Angiv rapportvisninger
+              href: ../paginated-reports/page-view.md
             - name: Underrapporter
               href: ../paginated-reports/subreports.md
             - name: Foretag fejlfinding af underrapporter
