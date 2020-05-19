@@ -12,7 +12,7 @@
       expanded: true
       items:
         - name: 'Onlinekursus: Sideinddelte rapporter'
-          href: ../paginated-reports/paginated-reports-online-course.md
+          href: ../learning-catalog/paginated-reports-online-course.md
         - name: 'Opret en sideinddelt rapport, og upload'
           href: ../paginated-reports/paginated-reports-quickstart-aw.md
     - name: Eksempler
