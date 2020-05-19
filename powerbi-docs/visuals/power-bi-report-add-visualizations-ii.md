@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/28/2018
+ms.date: 05/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 132c795724b6f3744e0648ac1f3229c5e6538a97
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c8b0012224d145f40cb6b9784da1a40957efce50
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75758416"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277772"
 ---
 # <a name="add-visuals-to-a-power-bi-report-part-2"></a>Føj visualiseringer til en Power BI-rapport (del 2)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -36,7 +38,7 @@ I dette selvstudium bruges [PBIX-filen med eksemplet på detailhandelsanalyse](h
 
 1. Åbn **PBIX-filen med eksemplet Detailhandelsanalyse** i rapportvisning ![ikon for skærmbillede af rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Vælg ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
+1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
 
 ## <a name="add-visualizations-to-the-report"></a>Tilføj visualiseringer i rapporten
 
@@ -59,7 +61,7 @@ Opret en visualisering ved at vælge et felt i ruden **Felter**. Den type visual
 5. [Tilpas størrelsen af visualiseringen](power-bi-visualization-move-and-resize.md) ved at vælge visualiseringen, tage fat i en af konturcirklerne og trække. Gør den bred nok, så rullepanelet fjernes, men lille nok, så der er plads nok til at tilføje endnu en visualisering.
    
    ![skærmbillede af visualisering som områdediagram](media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png)
-6. [Gem rapporten](../service-report-save.md).
+6. [Gem rapporten](../create-reports/service-report-save.md).
 
 ### <a name="add-a-map-visualization-that-looks-at-sales-by-location"></a>Tilføj en kortvisualisering med salg efter placering
 
@@ -69,7 +71,10 @@ Opret en visualisering ved at vælge et felt i ruden **Felter**. Den type visual
 2. Tilføj en forklaring.  Hvis du vil se dataene efter butiksnavn, skal du trække **Butik** > **Kæde** til området Forklaring.  
    ![rapportlærred med pil fra kæden på feltlisten til kæden i forklaringsbucket'en](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
 
-## <a name="next-steps"></a>De næste trin
+> [!NOTE]
+> Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet. Se [deling af rapporter](../collaborate-share/service-share-reports.md).
+
+## <a name="next-steps"></a>Næste trin
 * Få mere at vide om [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md).  
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

@@ -6,17 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 04/30/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2433f030f00ec8cd337d97c4402b83ed6c4c5a00
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 526d2face5b963b27ac17335bbe223c5e3bec672
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76895185"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276576"
 ---
 # <a name="getting-started-with-the-formatting-pane"></a>Introduktion til formateringsruden
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 Hvis du har redigeringstilladelser til en rapport, er der mange tilgængelige formateringsindstillinger. I Power BI-rapporter kan du ændre farven på dataserier, datapunkter og endda baggrunden i visualiseringer. Du kan ændre, hvordan x-aksen og y-aksen vises. Du kan også formatere skrifttypeegenskaber for visualiseringer, figurer og titler. Power BI giver dig fuld kontrol over, hvordan dine rapporter vises.
 
 Start med at åbne en rapport i Power BI Desktop eller Power BI-tjenesten. De har begge næsten identiske formateringsindstillinger. Når du åbner en rapport i Power BI-tjenesten, skal du sørge for at vælge **Rediger** fra menulinjen. 
@@ -154,8 +157,10 @@ Vi har valgt visualiseringen for at gøre den aktiv og åbne fanen Formatering. 
 Det er blot nogle få af de mulige formateringsopgaver. Åbn en rapport i redigeringstilstand, og hav det sjovt med at udforske ruden Formatering, der gør det muligt at oprette smukke og informative visualiseringer.
 
 ## <a name="next-steps"></a>Næste trin
-Du kan få flere oplysninger i følgende artikel:  
+Du kan få flere oplysninger i følgende artikel: 
+
+* [Deling af rapporter](../collaborate-share/service-share-reports.md)
 
 * [Tip og tricks til farveformatering i Power BI](service-tips-and-tricks-for-color-formatting.md)  
-* [Betinget formatering af tabeller](../desktop-conditional-table-formatting.md)
+* [Betinget formatering af tabeller](../create-reports/desktop-conditional-table-formatting.md)
 

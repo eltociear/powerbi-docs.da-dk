@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: d9ebab8c52be8872865b0c308e8629c92603bbaa
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f9248b659bec744f7da02c4d2639f30bd646bb48
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80403780"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276047"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder (prøveversion)
 
@@ -34,14 +34,14 @@ Du skal have følgende for at komme i gang:
 * En [tjenesteprincipal (kun app-token)](embed-service-principal.md)
 * Et [Microsoft Azure](https://azure.microsoft.com/)-abonnement
 * Din egen konfiguration af [Azure Active Directory-lejer](create-an-azure-active-directory-tenant.md)
-* Mindst en [kapacitet](#create-a-dedicated-capacity) på A4-eller P1, hvor arbejdsbelastning for [sideinddelte rapporter](../../service-admin-premium-workloads.md#paginated-reports) er aktiveret
+* Mindst en [kapacitet](#create-a-dedicated-capacity) på A4-eller P1, hvor arbejdsbelastning for [sideinddelte rapporter](../../admin/service-admin-premium-workloads.md#paginated-reports) er aktiveret
 
 Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), før du begynder.
 
 > [!IMPORTANT]
 > * Du skal bruge en **tjenesteprincipal**. Masterbruger understøttes ikke.
 > * Datakilder, der kræver enkeltlogon (SSO), understøttes ikke.
-> * Power BI-datasæt understøttes ikke som en [datakilde](../../service-get-data.md).
+> * Power BI-datasæt understøttes ikke som en [datakilde](../../connect-data/service-get-data.md).
 
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurer dit Power BI-miljø
 
@@ -49,12 +49,12 @@ Hvis du integrerer en sideinddelt rapport, skal du tildele et arbejdsområde til
 
 ### <a name="create-an-app-workspace"></a>Opret et apparbejdsområde
 
-Men hvis du bruger en [tjenesteprincipal](embed-service-principal.md) til at logge på dit program, skal du bruge de [nye arbejdsområder](../../service-create-the-new-workspaces.md). Som *tjenesteprincipal* skal du også være administrator for eller medlem af de apparbejdsområder, der er knyttet til dit program.
+Men hvis du bruger en [tjenesteprincipal](embed-service-principal.md) til at logge på dit program, skal du bruge de [nye arbejdsområder](../../collaborate-share/service-create-the-new-workspaces.md). Som *tjenesteprincipal* skal du også være administrator for eller medlem af de apparbejdsområder, der er knyttet til dit program.
 
 ### <a name="create-a-dedicated-capacity"></a>Opret en dedikeret kapacitet
 
 Før du importerer eller uploader en sideinddelt rapport, der skal integreres, skal det arbejdsområde, der indeholder rapporten, være tildelt til mindst en kapacitet på A4 eller P1. Du kan vælge mellem to kapacitetstyper:
-* **Power BI Premium** – når du integrerer en sideinddelt rapport, kræves der en *P*-SKU-kapacitet. Når du integrerer Power BI-indhold, kaldes denne løsning for *Power BI integration*. Du kan finde flere oplysninger om dette abonnement under [Hvad er Power BI Premium?](../../service-premium-what-is.md)
+* **Power BI Premium** – når du integrerer en sideinddelt rapport, kræves der en *P*-SKU-kapacitet. Når du integrerer Power BI-indhold, kaldes denne løsning for *Power BI integration*. Du kan finde flere oplysninger om dette abonnement under [Hvad er Power BI Premium?](../../admin/service-premium-what-is.md)
 * **Azure Power BI Embedded** – du kan købe en dedikeret kapacitet på [Microsoft Azure-portalen](https://portal.azure.com). Dette abonnement bruger *A*-SKU'erne. Hvis du vil integrere sideinddelte rapporter, skal du mindst have et *A4*-abonnement. Du kan finde flere oplysninger om, hvordan du opretter en kapacitet til Power BI Embedded, under [Opret kapacitet til Power BI Embedded på Azure-portalen](azure-pbie-create-capacity.md).
 
 I nedenstående tabel beskrives ressourcerne og grænserne for de enkelte SKU'er. Hvis du vil finde ud af, hvilken kapacitet der passer bedst til dine behov, skal du se tabellen [Hvilken SKU skal jeg købe til mit scenarie?](https://docs.microsoft.com/power-bi/developer/embedded-faq#which-solution-should-i-choose)
@@ -242,7 +242,7 @@ Report report = reports.Value.FirstOrDefault();
 
 ### <a name="create-the-embed-token"></a>Opret integrationstokenet
 
-Generer et integreringstoken, som kan bruges fra JavaScript-API'en. Hvis du vil oprette et integreringstoken til integrering af sideinddelte Power BI-rapporter, skal du bruge API'en [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup).
+Generér et integreringstoken, som kan bruges fra JavaScript-API'en. Hvis du vil oprette et integreringstoken til integrering af sideinddelte Power BI-rapporter, skal du bruge API'en [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup).
 
 Du kan se et eksempel på, hvordan du opretter et integreringstoken, i filen  *Services\EmbedService.cs* i [eksempelprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples).
 

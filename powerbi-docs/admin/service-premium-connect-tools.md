@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/26/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 7bb3dc401fedbb55f5ed81fa5e859cbfee5a1a26
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 7a363af0bb8d6db9f0fd370b7c4b987b51c88221
+ms.sourcegitcommit: faa8cfb66e79ea16ba46605f752cc9ca57924d0e
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274437"
+ms.locfileid: "83382732"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint-preview"></a>Netværksmulighed for datasæt med XMLA-slutpunktet (prøveversion)
 
@@ -29,6 +29,9 @@ Power BI Premium-arbejdsområder og -datasæt på kompatibilitetsniveau 1500 og 
 I Power BI Premium bruges [XMLA](https://docs.microsoft.com/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current)-protokollen (XML for Analysis) til kommunikation mellem klientprogrammer og det program, som administrerer dine Power BI-arbejdsområder og datasæt. Denne kommunikation sker via det, der ofte kaldes XMLA-slutpunkter. XMLA er den samme kommunikationsprotokol, der bruges af Microsoft Analysis Services-programmet, som under overfladen udfører semantisk modellering, styring, livscyklus og dataadministration i Power BI.
 
 Som standard er *skrivebeskyttet* netværksmulighed ved hjælp af slutpunktet aktiveret for **arbejdsbelastningen for datasæt** i en kapacitet. Med skrivebeskyttet netværksmulighed kan datavisualiseringsprogrammer og -værktøjer forespørge datasætmodeldata, metadata, hændelser og skemaer. *Læse-/skrive*handlinger, der bruger slutpunktet, kan aktiveres, hvilket giver yderligere administration af datasæt, styring, avanceret semantisk modellering, fejlfinding og overvågning. Når læse-/skrive-handlinger er aktiveret, har Power BI Premium-datasæt mere paritet med Azure Analysis Services' og SQL Server Analysis Services' tabellariske modelleringsværktøjer og -processer i virksomhedsklasse.
+
+> [!NOTE]
+> Det anbefales, at du bruger den moderne arbejdsområdeoplevelse, især når du opretter forbindelse til dine datasæt ved hjælp af XMLA-slutpunktet. Handlinger som f.eks. oprettelse eller sletning af datasæt understøttes ikke med klassiske arbejdsområder. Hvis du vil opgradere klassiske arbejdsområder til den moderne oplevelse, skal du se [Opgrader klassiske arbejdsområder i Power BI](../collaborate-share/service-upgrade-workspaces.md).
 
 ## <a name="data-modeling-and-management-tools"></a>Datamodellerings- og administrationsværktøjer
 

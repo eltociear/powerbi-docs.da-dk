@@ -7,16 +7,18 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.date: 01/10/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 413e30c04ac02e6b957f03494bf6a488edeacac0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e7c59ddd15a85eeabe0edae6d6a9649f56092ab7
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75885317"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83141434"
 ---
 # <a name="create-key-influencers-visualizations"></a>Opret visualiseringer af nøglefaktorer
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -401,7 +403,7 @@ Visualiseringen evaluerer alle forklarende faktorer samlet. En faktor kan være 
 - Værelser er muligvis ikke en lige så vigtig faktor, som de var, før husets størrelse blevet taget i betragtning. 
 
 
-
+Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet. Se [deling af rapporter](../collaborate-share/service-share-reports.md).
 
 ## <a name="next-steps"></a>Næste trin
 - [Kombinationsdiagrammer i Power BI](power-bi-visualization-combo-chart.md)

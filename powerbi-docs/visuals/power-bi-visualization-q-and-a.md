@@ -1,20 +1,23 @@
 ---
 title: Brug visualiseringen til Spørgsmål og svar i Power BI
 description: Sådan konfigurerer du visualiseringen til Spørgsmål og svar i Power BI
-author: mihart
+author: rien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/19/2019
 ms.author: mohaali
-ms.openlocfilehash: a17f98859e637621fbae037610359c8f29391a98
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e94b27945f277c352773e7f9eaa3979fa8bc7451
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75762272"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148356"
 ---
 # <a name="introduction-to-power-bi-qa-visualizations"></a>Introduktion til visualiseringer til Spørgsmål og svar i Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -45,10 +48,12 @@ Visualiseringen til Spørgsmål og svar består af fire kernekomponenter.
 
 1. Åbn filen i rapportvisning ![Skærmbillede af ikonet for rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Vælg ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
+1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
 
+Hvis du får vist en fejl, når du opretter visualiseringen til Spørgsmål og svar, skal du kontrollere afsnittet med [begrænsninger](../natural-language/q-and-a-limitations.md) for at se, om konfigurationen af datakilden understøttes.    
 
-Hvis du får vist en fejl, når du opretter visualiseringen til Spørgsmål og svar, skal du kontrollere afsnittet med [begrænsninger](../natural-language/q-and-a-limitations.md) for at se, om konfigurationen af datakilden understøttes.
+> [!NOTE]
+> Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet. Se [deling af rapporter](../collaborate-share/service-share-reports.md).
 
 ## <a name="create-a-qa-visual-using-a-suggested-question"></a>Opret visualiseringen til Spørgsmål og svar ved hjælp af et foreslået spørgsmål
 I denne øvelse vælger vi et af de foreslåede spørgsmål til at oprette vores visualisering til Spørgsmål og svar. 
@@ -146,7 +151,7 @@ Brug ruden Værktøjer til at lære Spørgsmål og svar begreber, det ikke genke
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 Visualiseringen til Spørgsmål og svar kan integreres med Office og Bing for at forsøge at matche almindelige ord, der ikke genkendes, med felter i dit datasæt.  
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan integrere et naturligt sprog på flere forskellige måder. Du kan få flere oplysninger i følgende artikler:
 

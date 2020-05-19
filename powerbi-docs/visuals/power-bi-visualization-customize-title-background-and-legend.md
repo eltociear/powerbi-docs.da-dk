@@ -10,14 +10,17 @@ ms.topic: conceptual
 ms.date: 03/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7ff02eb07d4b052892cc80ab4710223d8d302a9f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 5a55fca07e4a0e5f9c027bcd17c3fba66a09958e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78893433"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277128"
 ---
 # <a name="customize-visualization-titles-backgrounds-and-legends"></a>Tilpas visualiseringernes titler, baggrunde og forklaringer
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 
 I dette selvstudium lærer du, hvordan du kan tilpasse dine visualiseringer, på flere måder. Du har mange muligheder for at tilpasse dine visualiseringer. Den bedste måde, du kan lære om dem alle på, er at udforske ruden **Format** (vælg malerrulleikonet). I denne artikel kan du se, hvordan du tilpasser en visualiseringstitel, en forklaring og en baggrund samt tilføjer et tema.
 
@@ -30,12 +33,15 @@ Du kan ikke tilpasse alle visualiseringer. Se den [komplette liste](#visualizati
 
 - Rapporten Retail Analysis Sample
 
+> [!NOTE]
+> Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet. Se [deling af rapporter](../collaborate-share/service-share-reports.md).
+
 ## <a name="customize-visualization-titles-in-reports"></a>Tilpas titler på visualiseringer i rapporter
 
-Hvis du vil følge med, skal du logge på Power BI Desktop og åbne rapporten [Retail Analysis Sample](../sample-datasets.md).
+Hvis du vil følge med, skal du logge på Power BI Desktop og åbne rapporten [Retail Analysis Sample](../create-reports/sample-datasets.md).
 
 > [!NOTE]
-> Når du fastgør en visualisering på et dashboard, bliver den til et dashboardfelt. Du kan også tilpasse selve felterne med [nye titler og undertitler, links og tilpasning af størrelsen](../service-dashboard-edit-tile.md).
+> Når du fastgør en visualisering på et dashboard, bliver den til et dashboardfelt. Du kan også tilpasse selve felterne med [nye titler og undertitler, links og tilpasning af størrelsen](../create-reports/service-dashboard-edit-tile.md).
 
 1. Gå til siden **New Stores** i rapporten **Retail Analysis Sample**.
 
@@ -49,7 +55,7 @@ Hvis du vil følge med, skal du logge på Power BI Desktop og åbne rapporten [R
 
 1. Flyt skyderen **Titel** til **Til**.
 
-1. Hvis du vil ændre titlen, skal du skrive *Store count by month opened* i feltet **Titeltekst**.
+1. Hvis du vil ændre titlen, skal du skrive **Store count by month opened** i feltet *Titeltekst*.
 
     ![Skærmbillede af ruden Format med titelteksten indtastet.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png)
 
@@ -153,17 +159,19 @@ Her er en liste over de visualiseringer og tilpasningsindstillinger, der er tilg
 | Cirkel | ja | ja | ja |
 | Spørgsmål og svar | ja | ja | i/t |
 | Punktdiagram | ja | ja | ja |
-| Figur | ja | ja | ja |
+| Form | ja | ja | ja |
 | Udsnit | ja | ja | i/t |
 | Tabel | ja | ja | i/t |
 | Tekstfelt | nej | ja | i/t |
-| Treemap | ja | ja | ja |
+| Træstruktur | ja | ja | ja |
 | Vandfaldsdiagram | ja | ja | ja |
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
-- [Tilpas egenskaberne for x- og y-aksen](power-bi-visualization-customize-x-axis-and-y-axis.md)
+- [Tilpas egenskaberne for X- og Y-aksen](power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 - [Introduktion til farveformatering og akseegenskaber](service-getting-started-with-color-formatting-and-axis-properties.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+
+

@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 12/28/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c9de9031fdbee48fca3b9a025fe2547ec08a5f20
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 33511dd5a61882de77d6089a5f77e70361f3cbed
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73871034"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277588"
 ---
 # <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Skift visualiseringstype i en Power BI-rapport
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -29,12 +31,14 @@ Prøv forskellige visualiseringstyper i Power BI-tjenesten og Power BI Desktop f
 3. Vælg den nye visualiseringstype i ruden Visualiseringer. 
    
    ![video, der viser ændring af et søjlediagram til et kurvediagram](media/power-bi-report-change-visualization-type/change-viz/change-viz.gif).
-4. (Valgfri) [Fastgør din visualisering](../service-dashboard-pin-tile-from-report.md) til dit dashboard som et felt. 
+4. (Valgfri) [Fastgør din visualisering](../create-reports/service-dashboard-pin-tile-from-report.md) til dit dashboard som et felt. 
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 Hvis du ændrer visualiseringstypen i rapporten, efter at du har fastgjort den til dit dashboard, opdateres feltet på dashboardet ikke automatisk. Det vil sige, at hvis du har brugt Power BI-tjenesten til at fastgøre visualiseringen som et kurvediagram og derefter har ændret det til et liggende søjlediagram i rapporten, så bliver den allerede fastgjorte version af disse data ved med at være et kurvediagram. Fastgør det liggende søjlediagram for også at se det på dashboardet.
 
-## <a name="next-steps"></a>De næste trin
+Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet. Se [deling af rapporter](../collaborate-share/service-share-reports.md).
+
+## <a name="next-steps"></a>Næste trin
 Mere om [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
 
 [Power BI – Grundlæggende begreber](../consumer/end-user-basic-concepts.md)

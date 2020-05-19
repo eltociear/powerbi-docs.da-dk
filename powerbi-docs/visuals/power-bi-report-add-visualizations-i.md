@@ -2,28 +2,28 @@
 title: Del 1, Føj visualiseringer til en rapport i Power BI
 description: Del 1, Føj visualiseringer til en rapport i Power BI
 author: mihart
-ms.reviewer: ''
-featuredvideoid: IkJda4O7oGs
+ms.reviewer: rien
+featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 05/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b275d4e7fdb4e289d2331a2f58db504071ea609b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: fda9c63abbf20eb08adbebacc3f9351c80a2847b
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75758594"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148012"
 ---
 # <a name="add-visuals-to-a-power-bi-report-part-1"></a>Føj visualiseringer til en Power BI-rapport (del 1)
 
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-I denne artikel får du en hurtig introduktion til at oprette en visualisering i en rapport. Det gælder for både Power BI-tjenesten og Power BI Desktop. Hvis det drejer sig om mere avanceret indhold, kan du [se del 2](power-bi-report-add-visualizations-ii.md) i denne serie. Se Amanda demonstrere nogle få metoder til at oprette, redigere og formatere visualiseringer på et rapportcanvas. Prøv det derefter selv ved hjælp af [Sales and Marketing-eksemplet](../sample-datasets.md) for at oprette din egen rapport.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
+I denne artikel får du en hurtig introduktion til at oprette en visualisering i en rapport. Det gælder for både Power BI-tjenesten og Power BI Desktop. Hvis det drejer sig om mere avanceret indhold, kan du [se del 2](power-bi-report-add-visualizations-ii.md) i denne serie.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -36,6 +36,9 @@ I dette selvstudium bruges [PBIX-filen til Salg og marketing](https://download.m
 1. Åbn **PBIX-filen med eksemplet til Salg og marketing** i rapportvisning ![ikon for skærmbillede af rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
 1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
+
+> [!NOTE]
+> Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet. Se [deling af rapporter](../collaborate-share/service-share-reports.md)
 
 ## <a name="add-visualizations-to-the-report"></a>Tilføj visualiseringer i rapporten
 
@@ -76,4 +79,3 @@ I dette selvstudium bruges [PBIX-filen til Salg og marketing](https://download.m
 * [Del 2: Føj visualiseringer til en rapport i Power BI](power-bi-report-add-visualizations-ii.md)
 
 * [Interagere med visualiseringerne](../consumer/end-user-reading-view.md) i rapporten.
-

@@ -6,24 +6,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/29/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0b633f2482c5b9f1624f39e4f2c0e07afc55353f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c2800ab9d57732448db9e4fe647a0601a20a816c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76894958"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276599"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tip og tricks til farveformatering i Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 Power BI indeholder mange forskellige måder at tilpasse dine dashboards og rapporter på. Denne artikel indeholder en samling af tip, som kan gøre dine Power BI-visualiseringer mere overbevisende, interessante og tilpasset efter dine behov.
 
-Der findes følgende tip. Har du et andet fantastiske tip? Fint. Send det til os, og vi finder ud af, om det skal føjes til listen.
+Der findes følgende tip. Har du et andet fantastiske tip? Fantastisk! Send det til os, og vi finder ud af, om det skal føjes til listen.
 
 * Anvend et tema på hele rapporten
 * Skift farve på et enkelt datapunkt
-* Conditional formatting
+* Betinget formatering
 * Basér farverne i et diagram på en numerisk værdi
 * Basér farven på datapunkter på en feltværdi
 * Tilpas farver, der bruges i farveskalaen
@@ -40,7 +43,7 @@ Når ruderne **Filtre** og **Visualiseringer** vises langs højre side af rappor
 ![rapportcanvas i redigeringsvisning](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
 ## <a name="apply-a-theme"></a>Anvend et tema
-Med rapporttemaer kan du anvende designændringer på hele rapporten, f.eks. bruge virksomhedsfarver, ændre ikonsæt eller anvende ny visualstandardformatering. Når du anvender et rapporttema, anvendes farver og formatering fra det valgte tema på alle visuals i rapporten. Du kan få mere at vide under [Brug rapporttemaer](../desktop-report-themes.md)
+Med rapporttemaer kan du anvende designændringer på hele rapporten, f.eks. bruge virksomhedsfarver, ændre ikonsæt eller anvende ny visualstandardformatering. Når du anvender et rapporttema, anvendes farver og formatering fra det valgte tema på alle visuals i rapporten. Du kan få mere at vide under [Brug rapporttemaer](../create-reports/desktop-report-themes.md)
 
 ![Ikonet Skift tema på menulinjen](media/service-tips-and-tricks-for-color-formatting/power-bi-theme.png)
 
@@ -149,6 +152,8 @@ Hvis du vil kassere alle de ændringer, du har foretaget på kortet Formatering,
 ## <a name="feedback"></a>Feedback
 Har du et tip, du vil dele? Send det til os, og vi finder ud af, om det skal medtages her.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 [Introduktion til farveformatering og akseegenskaber](service-getting-started-with-color-formatting-and-axis-properties.md)
+
+[Deling af rapporter](../collaborate-share/service-share-reports.md).
 

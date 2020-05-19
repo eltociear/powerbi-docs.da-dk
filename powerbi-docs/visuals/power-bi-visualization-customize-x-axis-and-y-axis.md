@@ -7,17 +7,19 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/3/2019
+ms.date: 05/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 830fbe945405f8ad7aadd7ceac9fb1967daad22b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 6504e49c67d3c2344033f0cad53394ec5ae87e21
+ms.sourcegitcommit: 52177142c3e1f49147dff08fe48600a85a814a2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75758100"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82944814"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Tilpas egenskaberne for x- og y-aksen
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -216,13 +218,12 @@ Når en visualisering er avanceret, hjælper det at tilføje aksetitler.  Titler
 
 1. Formatér titlerne. I dette eksempel har vi forkortet en af titlerne og reduceret skriftstørrelsen for begge. 
     - Skriftstørrelse: **9**
-    - Forkortet **aksetitel** for den første Y-akse (søjlediagrammet): Sidste års salg og dette års salg
+    - Forkortet **aksetitel** for den første Y-akse (søjlediagrammet): Sidste års salg og dette års salg. 
+    
+     ![Skærmbillede af kombinationsdiagrammet med fuld visning af titler.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual.png)
 
-    ![Skærmbillede af kombinationsdiagrammet med fuld visning af titler.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual.png)
-
-
-
-Du kan finde flere oplysninger under [Tip og tricks til farveformatering i Power BI](service-tips-and-tricks-for-color-formatting.md) og [Tilpas visualiseringernes titler, forklaringer og baggrunde](power-bi-visualization-customize-title-background-and-legend.md). Og søg efter nye opdateringer til formatering af titler, der kommer snart. 
+    Du kan finde flere oplysninger under [Tip og tricks til farveformatering i Power BI](service-tips-and-tricks-for-color-formatting.md) og [Tilpas visualiseringernes titler, forklaringer og baggrunde](power-bi-visualization-customize-title-background-and-legend.md). 
+    
 
 ## <a name="next-steps"></a>Næste trin
 

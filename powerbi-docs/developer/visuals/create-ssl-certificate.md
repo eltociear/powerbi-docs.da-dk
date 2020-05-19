@@ -1,134 +1,204 @@
 ---
-title: Opret et SSL-certifikat
-description: Omgåelsesvejledning til at oprette certifikater manuelt for udviklerserver
+title: Opret SSL-certifikater til Power BI-visualiseringer
+description: Få mere at vide om, hvordan du genererer SSL-certifikater ved hjælp af Power BI Visual Tools i Windows, Mac eller Linux eller manuelt.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 06/18/2019
-ms.openlocfilehash: fab40863d7beae4892a56975aa5e92c4fe5486ac
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.date: 05/08/2020
+ms.openlocfilehash: 37bd8f15dcf17cd0f967e819338a719edf2a3054
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79380266"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276369"
 ---
 # <a name="create-an-ssl-certificate"></a>Opret et SSL-certifikat
 
-I denne artikel beskrives det, hvordan du opretter et SSL-certifikat.
+I denne artikel beskrives det, hvordan du opretter og installerer SSL-certifikater (Secure Sockets Layer) til Power BI-visualiseringer.
 
-Kør følgende kommando for at generere certifikatet ved hjælp af PowerShell `New-SelfSignedCertificate` cmdlet'en på Windows 8 eller nyere:
+I forbindelse med Windows-, macOS X- og Linux-procedurerne skal **PBIVIZ**-pakken Power BI Visual Tools være installeret. Du kan finde flere oplysninger under [Konfigurer udviklermiljøet](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial#setting-up-the-developer-environment). 
+
+## <a name="create-a-certificate-on-windows"></a>Opret et certifikat i Windows
+
+Kør følgende kommando for at generere certifikatet ved hjælp af PowerShell cmdlet'en `New-SelfSignedCertificate` i Windows 8 eller nyere:
+
+```powershell
+pbiviz --install-cert
+```
+
+I Windows 7 kræver `pbiviz`-værktøjet, at OpenSSL-værktøjet er tilgængeligt fra kommandolinjen. Du installerer OpenSSL ved at gå til [OpenSSL](https://www.openssl.org) eller [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries).
+
+Du kan finde flere oplysninger og instruktioner til installation af et certifikat under [Opret og installér et certifikat til Windows](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial#windows).
+
+## <a name="create-a-certificate-on-macos-x"></a>Opret et certifikat i macOS X
+
+Værktøjet OpenSSL er almindeligvis tilgængeligt i operativsystemet macOS X.
+
+Du kan også installere OpenSSL-værktøjet ved at køre en af følgende kommandoer:
+
+- Fra *Brew*-pakkestyring:
+  
+  ```cmd
+  brew install openssl
+  brew link openssl --force
+  ```
+
+- Ved hjælp af *MacPorts*:
+  
+  ```cmd
+  sudo port install openssl
+  ```
+
+Når du har installeret OpenSSL-værktøjet, skal du køre følgende kommando for at oprette et nyt certifikat:
 
 ```cmd
 pbiviz --install-cert
 ```
 
-Værktøjet kræver installation af OpenSSL til Windows 7. OpenSSL-værktøjet skal være tilgængeligt fra kommandolinjen.
+Du kan finde flere oplysninger og instruktioner under [Opret og installér et certifikat til OS X](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial#osx).
 
-Hvis du vil installere OpenSSL, skal du gå ind på webstedet [OpenSSL](https://www.openssl.org) eller [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries).
+## <a name="create-a-certificate-on-linux"></a>Opret et certifikat i Linux
 
-## <a name="create-a-certificate-mac-os-x"></a>Opret et certifikat (Mac OS X)
+OpenSSL-værktøjet er almindeligvis tilgængeligt i operativsystemet Linux.
 
-Normalt er funktionen OpenSSL tilgængelig i operativsystemet Linux eller Mac OS X.
+Før du starter, skal du køre følgende kommandoer for at sikre, at `openssl` og `certutil` er installeret:
 
-Du kan også installere værktøjet ved at køre en af følgende kommandoer:
-
-* Fra *Brew*-pakkestyring:
-
-    ```cmd
-    brew install openssl
-    brew link openssl --force
-    ```
-
-* Ved hjælp af *MacPorts*:
-
-    ```cmd
-    sudo port install openssl
-    ```
-
-Når du har installeret OpenSSL-værktøjet til oprettelse af et nyt certifikat, skal du køre følgende kommando:
-
-```cmd
-pbiviz --install-cert
+```sh
+which openssl
+which certutil
 ```
 
-## <a name="create-a-certificate-linux"></a>Opret et certifikat (Linux)
+Hvis `openssl` og `certutil` ikke er installeret, skal du installere værktøjerne `openssl` og `libnss3`.
 
-Hvis OpenSSL-værktøjet ikke er tilgængeligt på dit Linux-operativsystem, kan du installere det ved hjælp af en af følgende kommandoer:
+### <a name="create-the-ssl-configuration-file"></a>Opret SSL-konfigurationsfilen
 
-* Til *APT*-pakkestyring:
+Opret en fil, der hedder */tmp/openssl.cnf*, som indeholder følgende tekst:
 
-    ```cmd
-    sudo apt-get install openssl
-    ```
+```
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+subjectAltName = @alt_names
 
-* Til *Yellowdog Updater*:
-
-    ```cmd
-    yum install openssl
-    ```
-
-* Til *Redhat Package Manager*:
-
-    ```cmd
-    rpm install openssl
-    ```
-
-Hvis OpenSSL-programmet allerede er tilgængeligt i operativsystemet, skal du oprette et nyt certifikat ved at køre følgende kommando:
-
-```cmd
-pbiviz --install-cert
+[ alt_names ]
+DNS.1=localhost
 ```
 
-Alternativt kan du få OpenSSL-programmet ved at gå til webstedet [OpenSSL](https://www.openssl.org) eller [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries).
+### <a name="generate-root-certificate-authority"></a>Generer rodcertificeringsnøglecenter
 
-## <a name="generate-the-certificate-manually"></a>Generér certifikatet manuelt
+Hvis du vil generere et rodcertificeringsnøglecenter til at signere lokale certifikater, skal du køre følgende kommandoer:
 
-Du kan angive certifikater, som er genereret af et hvilket som helst værktøj.
-
-Hvis OpenSSL-programmet allerede er installeret på systemet, skal du generere et nyt certifikat ved at køre følgende kommandoer:
-
-```cmd
-openssl req -x509 -newkey rsa:4096 -keyout PowerBICustomVisualTest_private.key -out PowerBICustomVisualTest_public.crt -days 365
+```sh
+touch $HOME/.rnd
+openssl req -x509 -nodes -new -sha256 -days 1024 -newkey rsa:2048 -keyout /tmp/local-root-ca.key -out /tmp/local-root-ca.pem -subj "/C=US/CN=Local Root CA/O=Local Root CA"
+openssl x509 -outform pem -in /tmp/local-root-ca.pem -out /tmp/local-root-ca.crt
 ```
 
-Du kan som regel finde webserver-certifikater til PowerBI-værktøjer ved at køre en af følgende:
+### <a name="generate-a-certificate-for-localhost"></a>Generér et certifikat for localhost 
 
-* For den globale forekomst af værktøjerne:
+Kør følgende kommandoer for at oprette et certifikat til `localhost` ved hjælp af det genererede rodcertificeringsnøglecenter og *openssl.cnf*:
 
-    ```cmd
-    %appdata%\npm\node_modules\PowerBI-visuals-tools\certs
-    ```
+```sh
+PBIVIZ=`which pbiviz`
+PBIVIZ=`dirname $PBIVIZ`
+PBIVIZ="$PBIVIZ/../lib/node_modules/powerbi-visuals-tools/certs"
+# Make sure that $PBIVIZ contains the correct certificate directory path. ls $PBIVIZ should list 'blank' file.
+openssl req -new -nodes -newkey rsa:2048 -keyout $PBIVIZ/PowerBIVisualTest_private.key -out $PBIVIZ/PowerBIVisualTest.csr -subj "/C=US/O=PowerBI Visuals/CN=localhost"
+openssl x509 -req -sha256 -days 1024 -in $PBIVIZ/PowerBIVisualTest.csr -CA /tmp/local-root-ca.pem -CAkey /tmp/local-root-ca.key -CAcreateserial -extfile /tmp/openssl.cnf -out $PBIVIZ/PowerBIVisualTest_public.crt
+```
 
-* For den lokale forekomst af værktøjerne:
+### <a name="add-root-certificates"></a>Tilføj rodcertifikater
 
-    ```cmd
-    <custom visual project root>\node_modules\PowerBI-visuals-tools\certs
-    ```
+Hvis du vil føje et rodcertifikat til Chrome-browserens database, skal du køre:
 
-Hvis du bruger PEM-formatet, skal du gemme certifikatfilen som *PowerBICustomVisualTest_public.crt* og gemme privateKey som *PowerBICustomVisualTest_public.key*.
+```sh
+certutil -A -n "Local Root CA" -t "CT,C,C" -i /tmp/local-root-ca.pem -d sql:$HOME/.pki/nssdb
+```
 
-Hvis du bruger PFX-formatet, skal du gemme certifikatfilen som *PowerBICustomVisualTest_public.pfx*.
+Hvis du vil føje et rodcertifikat til Mozilla Firefox-browserens database, skal du køre:
 
-Hvis PFX-certifikatfilen kræver et adgangsudtryk, skal du gøre følgende:
+```sh
+for certDB in $(find $HOME/.mozilla* -name "cert*.db")
+do
+certDir=$(dirname ${certDB});
+certutil -A -n "Local Root CA" -t "CT,C,C" -i /tmp/local-root-ca.pem -d sql:${certDir}
+done
+```
+
+Hvis du vil tilføje et rodcertifikat i hele systemet, skal du køre:
+
+```sh
+sudo cp /tmp/local-root-ca.pem /usr/local/share/ca-certificates/
+sudo update-ca-certificates
+```
+
+### <a name="remove-root-certificates"></a>Fjern rodcertifikater
+
+Hvis du vil fjerne et rodcertifikat, skal du køre:
+
+```sh
+sudo rm /usr/local/share/ca-certificates/local-root-ca.pem
+sudo update-ca-certificates --fresh
+```
+
+## <a name="generate-a-certificate-manually"></a>Generér et certifikat manuelt
+
+Du kan også generere et SSL-certifikat manuelt ved hjælp af OpenSSL. Du kan angive et hvilket som helst værktøj til at generere certifikaterne.
+
+Hvis OpenSSL-værktøjet allerede er installeret, skal du generere et nyt certifikat ved at køre:
+
+```cmd
+openssl req -x509 -newkey rsa:4096 -keyout PowerBIVisualTest_private.key -out PowerBIVisualTest_public.crt -days 365
+```
+
+Du kan som regel finde `PowerBI-visuals-tools`-webservercertifikater ved at køre en af følgende kommandoer:
+
+- For den globale forekomst af værktøjerne:
+  
+  ```cmd
+  %appdata%\npm\node_modules\PowerBI-visuals-tools\certs
+  ```
+
+- For den lokale forekomst af værktøjerne:
+  
+  ```cmd
+  <Power BI visual project root>\node_modules\PowerBI-visuals-tools\certs
+  ```
+
+### <a name="pem-format"></a>PEM-format
+
+Hvis du bruger certifikatformatet PEM (Privacy Enhanced Mail), skal du gemme certifikatfilen som *PowerBIVisualTest_public.crt* og gemme den private nøgle som *PowerBIVisualTest_private.key*.
+
+### <a name="pfx-format"></a>PFX-format
+
+Hvis du bruger certifikatformatet PFX (Personal Information Exchange), skal du gemme certifikatfilen som *PowerBIVisualTest_public.pfx*.
+
+Hvis PFX-certifikatfilen kræver et adgangsudtryk:
+
 1. I konfigurationsfilen skal du angive:
-
-    ```cmd
-    \PowerBI-visuals-tools\config.json
-    ```
-
-1. I afsnittet `server` skal du angive adgangsudtrykket ved at erstatte pladsholderen "*DIT ADGANGSUDTRYK*":
+   
+   ```cmd
+   \PowerBI-visuals-tools\config.json
+   ```
+   
+1. I afsnittet `server` skal du angive adgangsudtrykket ved at erstatte pladsholderen "\<DIT ADGANGSUDTRYK> :
 
     ```cmd
     "server":{
         "root":"webRoot",
         "assetsRoute":"/assets",
-        "privateKey":"certs/PowerBICustomVisualTest_private.key",
-        "certificate":"certs/PowerBICustomVisualTest_public.crt",
-        "pfx":"certs/PowerBICustomVisualTest_public.pfx",
+        "privateKey":"certs/PowerBIVisualTest_private.key",
+        "certificate":"certs/PowerBIVisualTest_public.crt",
+        "pfx":"certs/PowerBIVisualTest_public.pfx",
         "port":"8080",
-        "passphrase":"YOUR PASSPHRASE"
+        "passphrase":"<YOUR PASSPHRASE>"
     }
     ```
+
+## <a name="next-steps"></a>Næste trin
+- [Udvikling af en Power BI-visualisering](custom-visual-develop-tutorial.md)
+- [Eksempler på Power BI-visualiseringer](samples.md)
+- [Publicer Power BI-visualiseringer i AppSource](office-store.md)

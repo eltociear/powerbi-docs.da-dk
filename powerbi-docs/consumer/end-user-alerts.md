@@ -7,23 +7,26 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: tutorial
-ms.date: 02/18/2020
+ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5f4dc1d1f3e707a59ef81e63be42714c499d050f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4cad37b9d4a7bf9e74a29312786a02b26fce5463
+ms.sourcegitcommit: faa8cfb66e79ea16ba46605f752cc9ca57924d0e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77496525"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83382755"
 ---
 # <a name="tutorial-set-alerts-on-power-bi-dashboards"></a>Selvstudium: Angiv beskeder i dashboards i Power BI
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Angiv beskeder, så du får besked, når dataene på dine dashboards ændres ud over de grænser, du har angivet. Beskeder fungerer på målere, KPI'er og kort. Denne funktion er stadig under udvikling, og du kan få flere oplysninger i afsnittet [Tip og fejlfinding nedenfor](#tips-and-troubleshooting).
+Angiv beskeder, så du får besked, når dataene på dine dashboards ændres ud over de grænser, du har angivet. Der kan kun angives beskeder på felter, der er fastgjort via rapportvisualiseringer, og kun på målere, KPI'er og kort. 
+
+*Forbrugere* kan føje beskeder til felter på dashboards, som de har oprettet i **Mit arbejdsområde**. *Forbrugere* kan også føje beskeder til felter på dashboards, der er delt med dem i en [Premium-kapacitet](end-user-license.md). Hvis du har en Power BI Pro-licens, kan du også konfigurere beskeder på felter i andre arbejdsområder.
+Denne funktion er stadig under udvikling, og du kan få flere oplysninger i afsnittet [Tip og fejlfinding nedenfor](#tips-and-troubleshooting).
 
 ![felt, kort, KPI](media/end-user-alerts/card-gauge-kpi.png)
 
@@ -44,12 +47,12 @@ Denne artikel omhandler følgende:
 
 Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
 
-I dette eksempel bruges et dashboardkort fra eksempelappen Sales & Marketing. Denne app er tilgængelig på [Microsoft AppSource](https://appsource.microsoft.com). Du kan få hjælp til at hente appen i [Installér og brug apps sammen med Power BI](end-user-app-view.md).
+I dette eksempel bruges et dashboardkort fra eksempelappen Sales & Marketing. Denne app er tilgængelig på [Microsoft AppSource](https://appsource.microsoft.com). Du kan få hjælp til at hente appen i [Installér og brug Salg og marketing-appen](end-user-app-marketing.md).
 
 1. Vælg ellipsen i en dashboardmåler, et KPI eller et kortfelt.
    
    ![kortfelt](media/end-user-alerts/power-bi-cards.png)
-2. Vælg klokkeikonet ![beskedikon](media/end-user-alerts/power-bi-bell-icon.png) eller **Administrer beskeder** for at tilføje en eller flere beskeder for **Butikker i alt**.
+2. Vælg klokkeikonet ![beskedikon](media/end-user-alerts/power-bi-bell-icon.png) eller **Administrer beskeder** for at tilføje en eller flere beskeder for **% enhedsmarkedsandelen**.
 
    ![Kortfelt med de valgte ellipser](media/end-user-alerts/power-bi-ellipses.png)
 
@@ -111,10 +114,10 @@ Der er mange måder at administrere dine beskeder på: Fra selve dashboardfeltet
 
 ## <a name="tips-and-troubleshooting"></a>Tip og fejlfinding 
 
-* Beskeder kan kun angives for målere, KPI'er og kort.
-* Hvis du ikke kan angive en besked for en måler, en KPI eller et kort, skal du kontakte din systemadministrator for at få hjælp. Nogle gange er beskeder slået fra eller utilgængelige for dit dashboard eller for bestemte typer dashboardfelter.
+* Hvis du ikke kan angive en besked for en måler, en KPI eller et kort, skal du kontakte din lejeradministrator for at få hjælp. Nogle gange er beskeder slået fra eller utilgængelige for dit dashboard eller for bestemte typer dashboardfelter.
 * Beskeder fungerer kun i forbindelse med opdaterede data. De fungerer ikke med statistiske data. De fleste af de eksempler, der leveres af Microsoft, er statiske. 
-* *Forbrugere* opretter ikke deres egne dashboards, *designere* opretter dashboards og deler dem med forbrugere. Muligheden for at modtage og få vist delt indhold kræver en Power BI Pro- eller Premium-licens. Du kan få flere oplysninger ved at læse [Hvilken licens har jeg?](end-user-license.md) 
+* Muligheden for at modtage og få vist delt indhold kræver en Power BI Pro- eller Premium-licens. Du kan få flere oplysninger ved at læse [Hvilken licens har jeg?](end-user-license.md)
+* Beskeder kan angives på visuelle elementer, der er oprettet ud fra streamingdatasæt, som er fastgjort fra en rapport til et dashboard. Der kan ikke angives beskeder for streamingfelter, der er oprettet direkte på dashboardet ved hjælp af **Tilføj felt** > **Brugerdefinerede streamingdata**.
 
 
 ## <a name="clean-up-resources"></a>Fjern ressourcer
