@@ -110,6 +110,8 @@
               href: monitor-report-performance.md
             - name: Fejlfind rapportens ydeevne
               href: report-performance-troubleshoot.md
+            - name: Bedste praksis for udrulningspipelines
+              href: ../create-reports/deployment-pipelines-best-practices.md
     - name: Hvidbøger
       items:
         - name: Oversigt over whitepapers
