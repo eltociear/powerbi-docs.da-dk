@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 27509d42b09b9524b204da5ab0ce76f3d180a057
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 06033a65acd090f0297a53bfbf0f0a004b68649a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83293162"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561564"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 I denne artikel beskrives de datatyper, der understøttes i Power BI Desktop, og DAX-udtryk (Data Analysis Expressions). 
@@ -72,7 +72,7 @@ Power BI Desktop understøtter fem dato/klokkeslæt-datatyper i forespørgselsvi
 **True/False** – en boolesk værdi, der er enten true eller false.
 
 ### <a name="blanksnulls-type"></a>Typen med tomme værdier/null-værdier
-**Blank** – er en datatype i DAX, der repræsenterer og erstatter SQL null-værdier. Du kan oprette en tom værdi ved hjælp af funktionen [BLANK](https://msdn.microsoft.com/library/ee634820.aspx) og undersøge, om der er tomme værdier, ved hjælp af den logiske funktion [ISBLANK](https://msdn.microsoft.com/library/ee634204.aspx).
+**Blank** – er en datatype i DAX, der repræsenterer og erstatter SQL null-værdier. Du kan oprette en tom værdi ved hjælp af funktionen [BLANK](/dax/blank-function-dax) og undersøge, om der er tomme værdier, ved hjælp af den logiske funktion [ISBLANK](/dax/isblank-function-dax).
 
 ### <a name="binary-data-type"></a>Binær datatype
 
@@ -86,7 +86,7 @@ Den binære datatype kan bruges til at repræsentere andre data med et binært f
 > 
 
 ### <a name="table-data-type"></a>Tabeldatatype
-DAX bruger en tabeldatatype i mange funktioner, f.eks sammenlægninger og time intelligence-beregninger. Nogle funktioner kræver en reference til en tabel, andre funktioner returnerer en tabel, der kan bruges som input til andre funktioner. I nogle funktioner, der kræver en tabel som input, kan du angive et udtryk, der evaluerer til en tabel. For visse funktioner er en reference til en basistabel påkrævet. Du kan finde oplysninger om kravene i bestemte funktioner i [DAX-funktionsreference](https://msdn.microsoft.com/library/ee634396.aspx).
+DAX bruger en tabeldatatype i mange funktioner, f.eks sammenlægninger og time intelligence-beregninger. Nogle funktioner kræver en reference til en tabel, andre funktioner returnerer en tabel, der kan bruges som input til andre funktioner. I nogle funktioner, der kræver en tabel som input, kan du angive et udtryk, der evaluerer til en tabel. For visse funktioner er en reference til en basistabel påkrævet. Du kan finde oplysninger om kravene i bestemte funktioner i [DAX-funktionsreference](/dax/dax-function-reference).
 
 ## <a name="implicit-and-explicit-data-type-conversion-in-dax-formulas"></a>Konvertering af implicitte og eksplicitte datatyper i DAX-formler
 Hver DAX-funktion har specifikke krav til de datatyper, der bruges som input og output. Visse funktioner kræver f.eks. heltal for nogle argumenter og datoer for andre. Andre funktioner kræver tekst eller tabeller.
@@ -197,4 +197,3 @@ Håndteringen af tomme værdier i handlinger som f.eks. addition eller sammenkæ
 | TRUE OG BLANK |FALSE |TRUE |
 | BLANK ELLER BLANK |BLANK |Fejl |
 | BLANK OG BLANK |BLANK |Fejl |
-

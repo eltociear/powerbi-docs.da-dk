@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: e74e390a5d228cb4a158d422cf0adab48b573cce
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7dad7071fbf887c36443cacdb9be83d83e0b89be
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79079663"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561495"
 ---
 # <a name="dataset-properties"></a>Egenskaber for datasæt
 
@@ -46,8 +46,8 @@ isHidden     | Boolean        | Hvis true, er tabellen skjult for klientværktø
 Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
 ---------|---------|---------|---------|---------
 name     |  Streng        | Kolonnens brugerdefinerede navn.        |  Falsk       | Sand       
-dataType     |  Streng       |  Understøttede [EDM-datatyper](https://msdn.microsoft.com/library/ee382832.aspx) og begrænsninger. Se [Begrænsninger for datatypen](#data-type-restrictions).      |  Falsk       | Sand        
-formatString     | Streng        | En streng, der beskriver, hvordan værdien skal formateres, når den vises. Hvis du vil vide mere om strengformatering, se [FORMAT_STRING-indholdet](https://msdn.microsoft.com/library/ms146084.aspx).      | Falsk        | Falsk        
+dataType     |  Streng       |  Understøttede [EDM-datatyper](/dotnet/framework/data/adonet/entity-data-model-primitive-data-types) og begrænsninger. Se [Begrænsninger for datatypen](#data-type-restrictions).      |  Falsk       | Sand        
+formatString     | Streng        | En streng, der beskriver, hvordan værdien skal formateres, når den vises. Hvis du vil vide mere om strengformatering, se [FORMAT_STRING-indholdet](/analysis-services/multidimensional-models/mdx/mdx-cell-properties-format-string-contents).      | Falsk        | Falsk        
 sortByColumn    | Streng        |   Strengnavnet på en kolonne i samme tabel, der bruges til at bestille den aktuelle kolonne.     | Falsk        | Falsk       
 dataCategory     | Streng        |  Strengværdi, der bruges til datakategorien, som beskriver dataene i denne kolonne. Almindelige værdier omfatter: adresse, by, kontinent, land, billede, BilledUrl, breddegrad, længdegrad, organisation, sted, postnummer, stat eller land, WebUrl       |  Falsk       | Falsk        
 isHidden    |  Boolean       |  Egenskaben, der angiver, om kolonnen er skjult i visningen. Standardindstillingen er false.       | Falsk        | Falsk        
@@ -59,7 +59,7 @@ Navn  |Type  |Beskrivelse  |Skrivebeskyttet  |Påkrævet
 ---------|---------|---------|---------|---------
 name     | Streng        |  Målingens brugerdefinerede navn.       |  Falsk       | Sand        
 udtryk     | Streng        | Et gyldigt DAX-udtryk.        | Falsk        |  Sand       
-formatString     | Streng        |  En streng, der beskriver, hvordan værdien skal formateres, når den vises. Hvis du vil vide mere om strengformatering, se [FORMAT_STRING-indholdet](https://msdn.microsoft.com/library/ms146084.aspx).       | Falsk        | Falsk        
+formatString     | Streng        |  En streng, der beskriver, hvordan værdien skal formateres, når den vises. Hvis du vil vide mere om strengformatering, se [FORMAT_STRING-indholdet](/analysis-services/multidimensional-models/mdx/mdx-cell-properties-format-string-contents).       | Falsk        | Falsk        
 isHidden     | Streng        |  Hvis true, er tabellen skjult for klientværktøjer.       |  Falsk       | Falsk       
 
 ## <a name="relationship"></a>Relation
