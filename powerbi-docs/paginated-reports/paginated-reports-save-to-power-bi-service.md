@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 05/04/2020
-ms.openlocfilehash: a634844093f103c942b70cd81d93822ca240cf0a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 39609d0bf3681de2b01f433143556ac102ee0662
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83272022"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565477"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publicer en sideinddelt rapport i Power BI-tjenesten
 
@@ -113,6 +113,4 @@ Ligesom alle andre Power BI-rapporter skal du oprette eller oprette forbindelse 
 
 - [Publicer en sideinddelt rapport i Power BI-tjenesten](../consumer/paginated-reports-view-power-bi-service.md)
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-- [Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder](../developer/embed-paginated-reports-customers.md)
-
-
+- [Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder](../developer/embedded/embed-paginated-reports-customers.md)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: deb72b1b66d4cbc87c2e317bb1fe1428c079cfea
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2c71f26949f19ed1beb29a162c18dc36ed689c21
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83308940"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565340"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Administrer din datakilde – Analysis Services
 
@@ -54,9 +54,9 @@ Du kan eventuelt konfigurere niveauet for beskyttelse af personlige oplysninger 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb5EEjkHoLg" frameborder="0" allowfullscreen></iframe>
 
-Hver gang en bruger interagerer med en rapport, der har forbindelse til Analysis Services, overføres det effektive brugernavn til gatewayen og derefter til den lokale Analysis Services-server. Den mailadresse, du bruger til at logge på Power BI med, sendes til Analysis Services som den effektive bruger. Den overføres i forbindelsesegenskaben [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth). 
+Hver gang en bruger interagerer med en rapport, der har forbindelse til Analysis Services, overføres det effektive brugernavn til gatewayen og derefter til den lokale Analysis Services-server. Den mailadresse, du bruger til at logge på Power BI med, sendes til Analysis Services som den effektive bruger. Den overføres i forbindelsesegenskaben [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services#bkmk_auth). 
 
-Denne mailadresse skal matche et defineret UPN (brugerens hovednavn) på det lokale Active Directory-domæne. UPN'et er en egenskab for en Active Directory-konto. Windows-kontoen skal være til stede i en Analysis Services-rolle. Hvis der ikke findes et match i Active Directory, logges der ikke på. Hvis du vil vide mere om Active Directory og brugernavngivelse, skal du se [Attributter for brugernavngivning](https://msdn.microsoft.com/library/ms677605.aspx).
+Denne mailadresse skal matche et defineret UPN (brugerens hovednavn) på det lokale Active Directory-domæne. UPN'et er en egenskab for en Active Directory-konto. Windows-kontoen skal være til stede i en Analysis Services-rolle. Hvis der ikke findes et match i Active Directory, logges der ikke på. Hvis du vil vide mere om Active Directory og brugernavngivelse, skal du se [Attributter for brugernavngivning](/windows/win32/ad/naming-properties).
 
 Du kan også [knytte dit Power BI-logonnavn til et UPN for en lokal mappe](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources).
 
@@ -203,7 +203,7 @@ En brugers mulighed for at forespørge på og få vist modeldata bestemmes af:
 - De roller, som deres Windows-brugerkonto tilhører, som medlem.
 - Dynamisk sikkerhed på rækkeniveau, hvis den er konfigureret.
 
-Det er uden for denne artikels omfang at drøfte implementering af roller og dynamisk sikkerhed på rækkeniveau i modeller. Få yderligere oplysninger i [Roller (SSAS-tabel)](https://msdn.microsoft.com/library/hh213165.aspx) og [Sikkerhedsroller (Analysis Services – flerdimensionelle data)](https://msdn.microsoft.com/library/ms174840.aspx) på MSDN. Hvis du vil have den mest detaljerede forståelse af sikkerhed med en tabellarisk model, skal du downloade og læse [dette whitepaper om sikring af den tabellariske, semantiske BI-model](https://msdn.microsoft.com/library/jj127437.aspx).
+Det er uden for denne artikels omfang at drøfte implementering af roller og dynamisk sikkerhed på rækkeniveau i modeller. Få yderligere oplysninger i [Roller (SSAS-tabel)](/analysis-services/tabular-models/roles-ssas-tabular) og [Sikkerhedsroller (Analysis Services – flerdimensionelle data)](/analysis-services/multidimensional-models/olap-logical/security-roles-analysis-services-multidimensional-data) på MSDN. Hvis du vil have den mest detaljerede forståelse af sikkerhed med en tabellarisk model, skal du downloade og læse [dette whitepaper om sikring af den tabellariske, semantiske BI-model](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
 ## <a name="what-about-azure-ad"></a>Hvad med Azure AD?
 

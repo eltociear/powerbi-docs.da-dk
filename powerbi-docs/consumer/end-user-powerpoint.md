@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/12/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1dbb35ab45a1172044cedb7fbe484ed4da6c43db
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: f70c41e40ff2da385b2f63798b93dec3fcd7b7c5
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348361"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565735"
 ---
 # <a name="export-reports-to-powerpoint"></a>Eksportér rapporter til PowerPoint
 
@@ -31,7 +31,7 @@ Med Power BI-tjenesten (app.powerbi.com) kan du publicere din rapport i Microsof
 
 Du kan hurtigt eksportere din **Power BI-rapport** til **PowerPoint**. Følg de trin, der er beskrevet i det næste afsnit.
 
-Du kan også kopiere én visualisering ad gangen fra Power BI-tjenesten og indsætte den i PowerPoint (eller et andet program, der understøtter indsættelse). Vælg ikonet **Kopiér som billede** for at kopiere visualiseringen til Udklipsholder. Åbn derefter PowerPoint, og indsæt visualiseringen. Du kan finde flere oplysninger under [Kopiér visualiseringer som statiske billeder](../power-bi-visualization-copy-paste.md).
+Du kan også kopiere én visualisering ad gangen fra Power BI-tjenesten og indsætte den i PowerPoint (eller et andet program, der understøtter indsættelse). Vælg ikonet **Kopiér som billede** for at kopiere visualiseringen til Udklipsholder. Åbn derefter PowerPoint, og indsæt visualiseringen. Du kan finde flere oplysninger under [Kopiér visualiseringer som statiske billeder](../visuals/power-bi-visualization-copy-paste.md).
 
 ![Vælg ikonet Kopiér som billede](media/end-user-powerpoint/power-bi-copy.png)
 
@@ -87,12 +87,12 @@ Hvad du herefter gør med dit PowerPoint-slidesæt eller nogen af billederne i h
 Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbejder med funktionen **Eksportér til PowerPoint**.
  
 
-* Filtre for [URL-adresser](../service-url-filters.md) respekteres ikke i øjeblikket, når du vælger **Aktuelle værdier** til din eksport.
+* Filtre for [URL-adresser](../collaborate-share/service-url-filters.md) respekteres ikke i øjeblikket, når du vælger **Aktuelle værdier** til din eksport.
 
 * Når du eksporterer til PowerPoint, vil denne skrifttype blive erstattet af en standardskrifttype, hvis der benyttes en brugerdefineret skrifttype i rapporten.
 
 * Følgende visualiseringstyper understøttes ikke, og de eksporteres ikke til PowerPoint:
-   - [Brugerdefinerede visualiseringer, der ikke er blevet certificeret](../developer/power-bi-custom-visuals-certified.md), understøttes ikke. 
+   - [Brugerdefinerede visualiseringer, der ikke er blevet certificeret](../developer/visuals/power-bi-custom-visuals-certified.md), understøttes ikke. 
    - [ESRI ArcGIS-visualiseringen](../visuals/power-bi-visualizations-arcgis.md) understøttes ikke
    - R- og Python-visualiseringer understøttes ikke.
    - Baggrundsbilleder beskæres med diagrammets omgivende område. Det anbefales, at du fjerner baggrundsbilleder, før du eksporterer til PowerPoint.
@@ -109,5 +109,5 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
 
 
 ## <a name="next-steps"></a>Næste trin
-[Kopiér visualiseringer som statiske billeder](../power-bi-visualization-copy-paste.md)    
+[Kopiér visualiseringer som statiske billeder](../visuals/power-bi-visualization-copy-paste.md)    
 [Udskriv en rapport](end-user-print.md)

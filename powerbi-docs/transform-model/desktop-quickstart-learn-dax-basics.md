@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 9ff04510a786fa89e1e461e6eefee1af90e58a8e
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 783a9bdce34345afd87be379aff7e073ff8c548d
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83313379"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565850"
 ---
 # <a name="apply-dax-basics-in-power-bi-desktop"></a>Anvend Grundlæggende DAX i Power BI Desktop
 Denne artikel henvender sig til nye brugere af Power BI Desktop. Den giver dig en hurtig og nem introduktion til, hvordan du kan bruge DAX (Data Analysis Expressions) til at løse en række grundlæggende problemer med beregning og dataanalyse. Vi gennemgår nogle konceptbaserede oplysninger, en række opgaver, du kan udføre, og et videnstjek for at teste, hvad du har lært. Når du har gennemgået denne artikel, bør du have en god forståelse af de vigtigste grundlæggende begreber i DAX.
@@ -66,7 +66,7 @@ Når den føjes til en rapport, beregner og returnerer denne måling værdier ve
 
 Du tænker måske "Udfører denne måling ikke præcist det samme, som hvis jeg bare føjede feltet SalesAmount til min rapport?" Jo, det gør den. Men der er en god grund til at oprette vores egne måling, der sammenlægger værdier fra feltet SalesAmount: Vi kan bruge det som et argument i andre formler. Det virker muligvis en smule forvirrende lige nu, men i takt med at du får flere færdigheder i forbindelse med DAX-formler, vil viden om denne måling gøre dine formler og din model mere effektiv. Senere vil du faktisk kunne se målingen Total Sales blive vist som et argument i andre formler.
 
-Lad os gennemgå et par andre ting om denne formel. Vi har specielt introduceret en funktion, [SUM](https://msdn.microsoft.com/library/ee634387.aspx). Funktioner er formler, der er skrevet på forhånd, og som gør det nemmere at udføre komplekse beregninger og manipulationer med tal, datoer, tid, tekst og meget mere. Du får mere at vide om funktioner senere.
+Lad os gennemgå et par andre ting om denne formel. Vi har specielt introduceret en funktion, [SUM](/dax/sum-function-dax). Funktioner er formler, der er skrevet på forhånd, og som gør det nemmere at udføre komplekse beregninger og manipulationer med tal, datoer, tid, tekst og meget mere. Du får mere at vide om funktioner senere.
 
 Du kan også se, at kolonnenavnet [SalesAmount] kom efter den Salgs-tabel, som kolonnen tilhører. Dette navn kaldes et fuldt kvalificeret kolonnenavn, fordi det indeholder kolonnenavnet med det foranstillede tabelnavn. Kolonner, der refereres til i den samme tabel, kræver ikke, at tabelnavnet inkluderes i formlen, hvilket kan gøre lange formler, der refererer til mange kolonner, kortere og nemmere at læse. Det er dog god praksis at inkludere tabelnavnet i dine målingsformler, selv når de er i den samme tabel.
 
@@ -121,7 +121,7 @@ Du gjorde det! Du har lige oprettet en kompleks måling ved hjælp af DAX og end
 
 Du er lige blevet introduceret til flere vigtige aspekter af DAX-formler: 
 
-- Denne formel indeholdt to funktioner. [PREVIOUSQUARTER](https://msdn.microsoft.com/library/ee634385.aspx), der er en intelligensfunktion for tid, indlejres som et argument, der overføres til filtreringsfunktionen [CALCULATE](https://msdn.microsoft.com/library/ee634825.aspx). 
+- Denne formel indeholdt to funktioner. [PREVIOUSQUARTER](/dax/previousquarter-function-dax), der er en intelligensfunktion for tid, indlejres som et argument, der overføres til filtreringsfunktionen [CALCULATE](/dax/calculate-function-dax). 
 
    DAX-formler kan indeholde op til 64 indlejrede funktioner. Det er usandsynligt, at en formel nogen sinde vil indeholde så mange indlejrede funktioner. En sådan formel ville faktisk være vanskelig at oprette og foretage fejlfinding af, og den ville sandsynligvis heller ikke være ret hurtig.
 
@@ -142,7 +142,7 @@ Svarene er angivet i slutningen af denne artikel.
 ### <a name="functions"></a>Funktioner
 Funktioner er foruddefinerede formler, der udfører beregninger ved hjælp af bestemte værdier, kaldet argumenter, i en bestemt rækkefølge eller struktur. Argumenter kan være andre funktioner, en anden formel, et udtryk, kolonnereferencer, tal, tekst, logiske værdier som f.eks. TRUE eller FALSE eller konstanter.
 
-DAX indeholder følgende kategorier af funktioner: [Dato og klokkeslæt](https://msdn.microsoft.com/library/ee634786.aspx), [Tidsintelligens](https://msdn.microsoft.com/library/ee634763.aspx),[Oplysninger](https://msdn.microsoft.com/library/ee634552.aspx), [Logisk](https://msdn.microsoft.com/library/ee634365.aspx),[Matematisk](https://msdn.microsoft.com/library/ee634241.aspx), [Statistisk](https://msdn.microsoft.com/library/ee634822.aspx), [Tekst](https://msdn.microsoft.com/library/ee634938.aspx), [Overordnet/underordnet](https://msdn.microsoft.com/library/mt150102.aspx) og [Andet](https://msdn.microsoft.com/library/mt150101.aspx). Hvis du kender funktioner i formler i Excel, vil mange af funktionerne i DAX virke bekendte for dig. Men DAX-funktioner er imidlertid helt specielle på følgende måder:
+DAX indeholder følgende kategorier af funktioner: [Dato og klokkeslæt](/dax/date-and-time-functions-dax), [Tidsintelligens](/dax/time-intelligence-functions-dax),[Oplysninger](/dax/information-functions-dax), [Logisk](/dax/logical-functions-dax),[Matematisk](/dax/math-and-trig-functions-dax), [Statistisk](/dax/statistical-functions-dax), [Tekst](/dax/text-functions-dax), [Overordnet/underordnet](/dax/parent-and-child-functions-dax) og [Andet](/dax/other-functions-dax). Hvis du kender funktioner i formler i Excel, vil mange af funktionerne i DAX virke bekendte for dig. Men DAX-funktioner er imidlertid helt specielle på følgende måder:
 
 * En DAX-funktion refererer altid til en hel kolonne eller tabel. Hvis du kun vil bruge bestemte værdier fra en tabel eller kolonne, kan du føje filtre til formlen.
 * Har du behov for at tilpasse beregningerne række for række, har DAX funktioner, der giver dig mulighed for at bruge den aktuelle rækkeværdi eller en relateret værdi som en form for argument, så du kan foretage beregninger, der varierer alt efter indhold. Du får mere at vide om kontekst senere.
@@ -150,7 +150,7 @@ DAX indeholder følgende kategorier af funktioner: [Dato og klokkeslæt](https:/
 * DAX indeholder en lang række funktioner til tidsintelligens. Med disse funktioner kan du definere eller vælge datoområder og udføre dynamiske beregninger baseret på dem. Du kan f.eks. sammenligne beløb på tværs af parallelle perioder.
 * Excel har en meget populær funktion, LOPSLAG. DAX-funktioner bruger ikke en celle eller et celleområde som reference, på samme måde som LOPSLAG gør i Excel. DAX-funktioner bruger en kolonne eller en tabel som reference. I Power BI Desktop skal du huske på, at du arbejder med en relationsdatamodel. Det er let at slå værdier op i en anden tabel, og i de fleste tilfælde behøver du slet ikke at oprette formler.
   
-  Som du kan se, kan funktionerne i DAX hjælpe dig med at oprette effektive formler. Reelt har vi kun lige berørt de grundlæggende elementer i funktioner. I takt med at du får flere DAX-færdigheder, vil du oprette formler ved hjælp af mange forskellige funktioner. Et af de bedste steder at finde detaljer om hver enkelt DAX-funktion er i [referencen til DAX-funktioner](https://msdn.microsoft.com/query-bi/dax/data-analysis-expressions-dax-reference).
+  Som du kan se, kan funktionerne i DAX hjælpe dig med at oprette effektive formler. Reelt har vi kun lige berørt de grundlæggende elementer i funktioner. I takt med at du får flere DAX-færdigheder, vil du oprette formler ved hjælp af mange forskellige funktioner. Et af de bedste steder at finde detaljer om hver enkelt DAX-funktion er i [referencen til DAX-funktioner](/dax/).
 
 ### <a name="functions-quickquiz"></a>Hurtig funktionstest
 1. Hvad refererer en funktion altid til?
@@ -210,7 +210,7 @@ Som du kan forestille dig, giver det utrolige og effektive muligheder at kunne d
 Svarene er angivet i slutningen af denne artikel.
 
 ## <a name="summary"></a>Oversigt
-Nu hvor du har en grundlæggende forståelse af de vigtigste begreber i DAX, kan du begynder at oprette DAX-formler til målinger på egen hånd. Det kan være lidt svært at blive fortrolig med DAX, men der er mange ressourcer, du kan bruge. Når du har læst denne artikel og forsøgt dig med nogle af dine egne formler, kan du få mere at vide om andre DAX-begreber og -formler, der kan hjælpe dig med at løse dine forretningsproblemer. Der er mange DAX-ressourcer tilgængelig for dig, hvoraf den vigtigste er [referencen Data Analysis Expressions (DAX)](https://msdn.microsoft.com/library/gg413422.aspx).
+Nu hvor du har en grundlæggende forståelse af de vigtigste begreber i DAX, kan du begynder at oprette DAX-formler til målinger på egen hånd. Det kan være lidt svært at blive fortrolig med DAX, men der er mange ressourcer, du kan bruge. Når du har læst denne artikel og forsøgt dig med nogle af dine egne formler, kan du få mere at vide om andre DAX-begreber og -formler, der kan hjælpe dig med at løse dine forretningsproblemer. Der er mange DAX-ressourcer tilgængelig for dig, hvoraf den vigtigste er [referencen Data Analysis Expressions (DAX)](/dax/).
 
 Da DAX har eksisteret i flere år i andre Microsoft BI-værktøjer, f.eks. Power Pivot og Analysis Services-tabelmodeller, findes der en stor mængde nyttige oplysninger. Du kan finde flere oplysninger i bøger, hvidbøger og blogs både fra Microsoft og andre, der arbejder professionelt med BI. [DAX Resource Center Wiki on TechNet](https://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx) er også et godt sted at starte.
 
@@ -224,11 +224,10 @@ Funktioner:
 
 1. En tabel og en kolonne.
 2. Ja. En formel kan indeholde op til 64 indlejrede funktioner.
-3. [Tekstfunktioner](https://msdn.microsoft.com/library/ee634938.aspx).
+3. [Tekstfunktioner](/dax/text-functions-dax).
 
 Kontekst:
 
 1. Rækkekontekst og filterkontekst.
 2. En eller flere filtre i en beregning, der angiver en enkelt værdi.
 3. Den aktuelle række.
-

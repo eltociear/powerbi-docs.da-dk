@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 858ecc07deabf5b91295220c2b92791b998ecf3a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: e5394a9ac7b7dbfc9edcfac53ea87d061e306a47
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349235"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565827"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Selvstudium: Opret beregnede kolonner i Power BI Desktop
 
@@ -46,7 +46,7 @@ I din salgsrapport vil du gerne have vist produktkategorier sammen med produktun
 
 2. En ny beregnet kolonne hedder som standard **Kolonne**. Hvis du ikke omdøber den, navngives nye ekstra kolonner **Kolonne 2**, **Kolonne 3** osv. Din kolonne skal være lettere at identificere, så eftersom navnet **Kolonne** allerede er markeret på formellinjen, kan du omdøbe den ved at indtaste **ProductFullCategory** og derefter indtaste et lighedstegn ( **=** ).
 
-3. Værdierne i den nye kolonne skal starte med navnet i feltet **ProductCategory**. Eftersom denne kolonne er i en anden, men relateret tabel, kan du bruge funktionen [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) til at hjælpe med at hente kolonnen.
+3. Værdierne i den nye kolonne skal starte med navnet i feltet **ProductCategory**. Eftersom denne kolonne er i en anden, men relateret tabel, kan du bruge funktionen [RELATED](/dax/related-function-dax) til at hjælpe med at hente kolonnen.
 
    Skriv et **r** efter lighedstegnet. På en rulleliste vises alle de DAX-funktioner, der begynder med r. Når du vælger en funktion, vises en beskrivelse af funktionens effekt. Efterhånden som du skriver, skaleres forslagslisten tættere på den funktion, du har brug for. Vælg **RELATED**, og tryk derefter på **Enter**.
 
@@ -97,7 +97,7 @@ Nu kan du bruge den nye kolonne **ProductFullCategory** til at kigge på **Sales
 
 Contoso Sales-eksemplet indeholder salgsdata for både aktive og inaktive butikker. Du vil sikre, at salget for aktive butikker adskilles tydeligt fra salget i inaktive butikker i din rapport ved at oprette et felt af typen **Active StoreName**. I den nye beregnede kolonne **Active StoreName**, vises alle aktive butikker med butikkens fulde navn, mens salg for inaktive butikker grupperes sammen på ét linjeelement, der hedder **Inactive**.
 
-Tabellen **Stores** indeholder heldigvis en kolonne ved navn **Status** med værdier som "On" for aktive butikker og "Off" for inaktive butikker, som vi kan bruge til at oprette værdier for vores nye kolonne **Active StoreName**. Din DAX-formel bruger den logiske funktion [IF](https://msdn.microsoft.com/library/ee634824.aspx) til at kontrollere alle butikkernes **Status** og returnerer en bestemt værdi, afhængigt af resultatet. Hvis en butiks **Status** er "On" (Aktiveret), returnerer formlen butikkens navn. Hvis den er "Off" (Deaktiveret), tildeler formlen et "Inactive" til **Active StoreName**.
+Tabellen **Stores** indeholder heldigvis en kolonne ved navn **Status** med værdier som "On" for aktive butikker og "Off" for inaktive butikker, som vi kan bruge til at oprette værdier for vores nye kolonne **Active StoreName**. Din DAX-formel bruger den logiske funktion [IF](/dax/if-function-dax) til at kontrollere alle butikkernes **Status** og returnerer en bestemt værdi, afhængigt af resultatet. Hvis en butiks **Status** er "On" (Aktiveret), returnerer formlen butikkens navn. Hvis den er "Off" (Deaktiveret), tildeler formlen et "Inactive" til **Active StoreName**.
 
 1. Opret en ny beregnet kolonne med navnet **Active StoreName** i tabellen **Stores** på formellinjen.
 
@@ -133,4 +133,4 @@ Beregnede kolonner kan forbedre vores data og give bedre indsigt. Du har lært a
 
 Hvis du vil vide mere om DAX-formler og oprette beregnede kolonner med mere avancerede formler, skal du se [Grundlæggende DAX i Power BI Desktop](desktop-quickstart-learn-dax-basics.md). Denne artikel har fokus på de grundlæggende koncepter i DAX, for eksempel syntaks, funktioner og en dybere forståelse af kontekst.
 
-Husk at føje [DAX-reference (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx) til dine favoritter. Det er her, du finder detaljerede oplysninger om DAX-syntaks, operatorer og mere end 200 DAX-funktioner.
+Husk at føje [DAX-reference (Data Analysis Expressions)](/dax/) til dine favoritter. Det er her, du finder detaljerede oplysninger om DAX-syntaks, operatorer og mere end 200 DAX-funktioner.

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 12/16/2019
 ms.author: painbar
-ms.openlocfilehash: 9af7fd95bcdaf0d747d1a3f2313f965d18a888e3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 16d62af90855c99f9d50c35dd411ef50f2a9a4e6
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79205659"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565163"
 ---
 # <a name="a-quick-tour-of-the-mobile-app-home-page"></a>En hurtig rundvisning af startsiden for mobilappen
 I denne rundvisning bliver du bekendt med startsiden for Power BI-mobilappen og den navigationshjælp, du får, så du kan komme hurtigt til det, du har brug for.
@@ -41,7 +41,7 @@ Aktivitetsfeedet hjælper dig med at holde styr på, hvad der sker med dit Power
 Opdateringerne i feedet omfatter:
 * **Opdaterede data**: Når de underliggende data i en af rapporterne eller på et af dashboardene i dine Favoritter eller Seneste opdateres.
 * **Nye kommentarer**: Når personer opretter en kommentar i en rapport eller på et dashboard, der er i dine Favoritter eller Seneste, eller når nogen nævner dig i en kommentar.
-* **Databeskeder**: Når data når en grænse, som du tidligere har angivet i en [databesked](../../mobile-set-data-alerts-in-the-mobile-apps.md).
+* **Databeskeder**: Når data når en grænse, som du tidligere har angivet i en [databesked](mobile-set-data-alerts-in-the-mobile-apps.md).
 * **Appopdateringer**: Når en appforfatter publicerer en opdatering til en app, du bruger.
 
  Tryk på et aktivitetselement for at hoppe til det relevante sted, så du kan få mere at vide.
@@ -57,13 +57,13 @@ Nederst på siden finder du navigationslinjen.
 Navigationslinjen giver hurtig adgang til:
 
 * ![ikonet start](./media/mobile-apps-home-page/powerbi-mobile-app-home-icon.png) **Start** – returnerer dig til startsiden.
-* ![ikonet favoritter](./media/mobile-apps-home-page/powerbi-mobile-app-favorites-icon.png) **Favoritter** – de rapporter, dashboards og apps, du har markeret som [favoritter](../../mobile-apps-favorites.md).
+* ![ikonet favoritter](./media/mobile-apps-home-page/powerbi-mobile-app-favorites-icon.png) **Favoritter** – de rapporter, dashboards og apps, du har markeret som [favoritter](mobile-apps-favorites.md).
 * ![ikonet apps](./media/mobile-apps-home-page/powerbi-mobile-app-apps-icon.png) **Apps** – de apps, du har installeret på din konto.
 * ![ikonet arbejdsområder](./media/mobile-apps-home-page/powerbi-mobile-app-workspaces-icon.png) **Arbejdsområder** – de arbejdsmapper, der indeholder rapporter og dashboards, som indholdsforfattere skaber.
 * ![ikonet seneste](./media/mobile-apps-home-page/powerbi-mobile-app-recents-icon.png) **Seneste** – de elementer, du senest har fået vist.
 * ![ikonet delt med mig](./media/mobile-apps-home-page/powerbi-mobile-app-shared-with-me-icon.png) **Delt med mig** – de elementer, andre personer har delt med dig.
 * ![eksempel ikon](./media/mobile-apps-home-page/powerbi-mobile-app-samples-icon.png) **Eksempler** – Power BI-eksempler, du kan bruge til at få mere at vide om Power BI-egenskaber.
-* ![scanner ikon](./media/mobile-apps-home-page/powerbi-mobile-app-scanner-icon.png) **Scanner** – det enhedskamera, du kan bruge som scanner til at scanne [stregkoder](../../mobile-apps-scan-barcode-iphone.md) og [QR-koder](../../mobile-apps-qr-code.md).
+* ![scanner ikon](./media/mobile-apps-home-page/powerbi-mobile-app-scanner-icon.png) **Scanner** – det enhedskamera, du kan bruge som scanner til at scanne [stregkoder](mobile-apps-scan-barcode-iphone.md) og [QR-koder](mobile-apps-qr-code.md).
 
 ## <a name="header"></a>Sidehoved
 
@@ -72,11 +72,11 @@ Navigationslinjen giver hurtig adgang til:
 ![header](./media/mobile-apps-home-page/powerbi-mobile-app-header.png)
 
 Overskriften indeholder følgende navigationselementer:
-* **Profilbillede eller avatar** – åbner sidepanelet, hvor du kan [skifte mellem dine konti til Power BI-tjenesten og rapportserver](../../mobile-app-ssrs-kpis-mobile-on-premises-reports.md), samt adgang til indstillinger for Power BI-mobilappen.
+* **Profilbillede eller avatar** – åbner sidepanelet, hvor du kan [skifte mellem dine konti til Power BI-tjenesten og rapportserver](mobile-app-ssrs-kpis-mobile-on-premises-reports.md), samt adgang til indstillinger for Power BI-mobilappen.
 
     ![sidepanel](./media/mobile-apps-home-page/powerbi-mobile-app-side-panel.png)
 
-* **Meddelelser** – åbner [meddelelsessiden](../../mobile-apps-notification-center.md), hvor du kan få vist og få adgang til dine meddelelser. En prik på meddelelsesklokken angiver, at du har nye meddelelser.
+* **Meddelelser** – åbner [meddelelsessiden](mobile-apps-notification-center.md), hvor du kan få vist og få adgang til dine meddelelser. En prik på meddelelsesklokken angiver, at du har nye meddelelser.
 
     ![meddelelsessiden](./media/mobile-apps-home-page/powerbi-mobile-app-notifications-page.png)
 
@@ -86,5 +86,5 @@ Overskriften indeholder følgende navigationselementer:
 
 ## <a name="next-steps"></a>De næste trin
 I denne rundvisning har du udforsket startsiden for Power BI-mobilappen. Læs mere om brug af Power BI-mobilappen. 
-* [Udforsk dashboards og rapporter](../../mobile-apps-quickstart-view-dashboard-report.md)
-* [Udforsk rapporter i Power BI-mobilappsene](../../mobile-reports-in-the-mobile-apps.md)
+* [Udforsk dashboards og rapporter](mobile-apps-quickstart-view-dashboard-report.md)
+* [Udforsk rapporter i Power BI-mobilappsene](mobile-reports-in-the-mobile-apps.md)

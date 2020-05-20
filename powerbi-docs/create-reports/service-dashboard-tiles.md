@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/17/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0b0bf61672d383900dad50e5fe7404f7f4a7f0bc
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 96a780d7d7b100acb283623107d4ec841666bb8f
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348913"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561656"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introduktion til dashboardfelter for Power BI-designere
 
@@ -23,7 +23,7 @@ Et felt er et snapshot af dine data, der er fastgjort til dashboardet. Et felt k
 
 ![Power BI-dashboard](media/service-dashboard-tiles/power-bi-dashboard.png)
 
-Dashboards og dashboardfelter er en funktion i Power BI-tjenesten ikke Power BI Desktop. Du kan ikke oprette dashboards på mobilenheder, men du kan [få vist og dele]../consumer/mobile/mobile-apps-view-dashboard.md) dem der.
+Dashboards og dashboardfelter er en funktion i Power BI-tjenesten ikke Power BI Desktop. Du kan ikke oprette dashboards på mobilenheder, men du kan [få vist og dele](../consumer/mobile/mobile-apps-view-dashboard.md) dem der.
 
 Ud over fastgørelse af felter kan du oprette separate felter direkte på dashboardet ved hjælp af kontrolelementet [Tilføj felt](service-dashboard-add-widget.md). Separate felter omfatter: tekstfelter, billeder, videoer, streamingdata og webindhold.
 
@@ -98,6 +98,6 @@ Når du vælger et felt, afhænger næste handling af, hvordan du oprettede felt
 - [Opdatering af data i Power BI](../connect-data/refresh-data.md)
 - [Grundlæggende begreber for designere i Power BI-tjenesten](../fundamentals/service-basic-concepts.md)
 - [Integrering af Power BI-felter i Office-dokumenter](https://powerbi.microsoft.com/blog/integrating-power-bi-tiles-into-office-documents/)
-- [Fastgør Reporting Services-elementer til Power BI-dashboards](https://msdn.microsoft.com/library/mt604784.aspx)
+- [Fastgør Reporting Services-elementer til Power BI-dashboards](/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).

@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: f02c383ddbe9eddca180ad8bd29816730c249561
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 9a7e7319bf8f5ccf517596d708dea4c1f4a41590
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349603"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564443"
 ---
 # <a name="what-is-power-bi"></a>Hvad er Power BI?
 **Power BI** er en samling af softwaretjenester, apps og forbindelser, der arbejder sammen for at forvandle usammenhængende data til faste, visuelt fordybende og interaktive indsigter. Dine data kan være et Excel-regneark eller en samling cloudbaserede hybride data warehouses og hybride data warehouses i det lokale miljø. Med Power BI kan du nemt oprette forbindelse til dine datakilder, visualisere og finde vigtigt indhold samt dele det med alle, du vil.
@@ -70,6 +70,6 @@ Power BI-rapportserveren er en løsning, som du udruller bag firewallen, og som 
 Læs mere om [Power BI-rapportserver](../report-server/get-started.md).
 
 ## <a name="next-steps"></a>Næste trin
-- [Hurtig start: Find vej i Power BI-tjenesten](../service-the-new-power-bi-experience.md)   
+- [Hurtig start: Find vej i Power BI-tjenesten](../consumer/end-user-experience.md)   
 - [Selvstudium: Kom i gang med Power BI-tjenesten](service-get-started.md)
 - [Hurtig start: Opret forbindelse til data i Power BI Desktop](../connect-data/desktop-quickstart-connect-to-data.md)

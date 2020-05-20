@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9a9248f68f85f6dec2a70842c0931d7dd448d690
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4a6ba7f171f462fe6fe0d386305c82b486db5ed4
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276829"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565020"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Punktdiagrammer, boblediagrammer og prikdiagrammer i Power BI
 
@@ -128,7 +128,7 @@ Nu tilføjer jeg en tredje dimension.
     > [!NOTE]
     > Flere datapunkter kan betyde en længere indlæsningstid. Hvis du vælger at publicere rapporter med begrænsninger i den højere ende af skalaen, skal du sørge for at teste dine rapporter på både internettet og mobilenheder. Du ønsker at bekræfte, at diagrammets ydeevne svarer til dine brugeres forventninger.
 
-1. Fortsæt med at formatere farver, navne, titler, baggrund og mere i dine visualiseringer. Hvis du vil [forbedre tilgængeligheden](../desktop-accessibility.md), bør du overveje at føje mærkeformer til hver enkelt linje. Hvis du vil vælge mærkeformen, skal du udvide **Figurer**, vælge **Mærkeform** og derefter vælge en form.
+1. Fortsæt med at formatere farver, navne, titler, baggrund og mere i dine visualiseringer. Hvis du vil [forbedre tilgængeligheden](../create-reports/desktop-accessibility-overview.md), bør du overveje at føje mærkeformer til hver enkelt linje. Hvis du vil vælge mærkeformen, skal du udvide **Figurer**, vælge **Mærkeform** og derefter vælge en form.
 
     ![Skærmbillede af rullelisten Figurer, hvor indstillingerne for mærkeformerne er fremhævet.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 

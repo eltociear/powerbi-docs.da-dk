@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 35e5d3b93305f8f2271db6343164cad8b57a4bfd
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: c687486af1293660af5496e27ea707bb1afeec80
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348844"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564546"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Introduktion til dashboards for Power BI-designere
 
@@ -22,7 +22,7 @@ Et *dashboard* i Power BI er en enkelt side, der ofte kaldes et lærred, som for
 
 ![Dashboard](media/service-dashboards/power-bi-dashboard2.png)
 
-Et dashboard er kun en funktion i Power BI-tjenesten. De er ikke tilgængelige i Power BI Desktop. Selvom du ikke kan oprette dashboards på mobilenheder, kan du [få vist og dele]../consumer/mobile/mobile-apps-view-dashboard.md) dem der.
+Et dashboard er kun en funktion i Power BI-tjenesten. De er ikke tilgængelige i Power BI Desktop. Selvom du ikke kan oprette dashboards på mobilenheder, kan du [få vist og dele](../consumer/mobile/mobile-apps-view-dashboard.md) dem der.
 
 ## <a name="dashboard-basics"></a>Grundlæggende om dashboards 
 

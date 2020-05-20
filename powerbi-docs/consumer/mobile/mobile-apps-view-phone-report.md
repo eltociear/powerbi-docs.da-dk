@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: d3584ebc5233ccffc007118ac87ada49e906b34c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 380057c2c65db3ea659adc39d692d8955201483b
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273517"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565117"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Få vist Power BI-rapporter, der er optimeret til din telefon
 
@@ -60,7 +60,7 @@ Telefonrapporter tilbyder også en fokustilstand: Du får en større visning af 
 
 * Tryk på de tre prikker ( **...** ) i øverste højre hjørne af en visualisering i en rapport på telefonen, og vælg **Udvid til fokustilstand**.
   
-    ![Udvid til fokustilstand](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
+    ![Udvid til fokustilstand](media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
 
 Det, du foretager dig i fokustilstand, påvirker dit rapportlærred og omvendt. Hvis du for eksempel fremhæver en værdi i en visualisering og derefter går tilbage til hele rapporten, filtreres rapporten efter den værdi, du fremhævede i visualiseringen.
 
@@ -72,7 +72,7 @@ Nogle handlinger kan kun udføres i Fokustilstand på grund af den begrænsede s
   
     Hvis du vil rydde alle ændringerne fra en visualisering, skal du trykke på de tre prikker ( **...** ) > **Tilbagefør**.
   
-    ![Vend tilbage](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
+    ![Vend tilbage](media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
   
     Hvis du bruger Tilbagefør på rapportniveau, ryddes dine ændringer fra alle visualiseringer. Hvis du bruger Tilbagefør på visualiseringsniveau, ryddes ændringer i den valgte visualisering.   
 
@@ -86,14 +86,14 @@ Der findes få typer detailudledning:
 2. Der vises værktøjstip, og hvis der er defineret et hierarki, vises der en pil for detailudledning og færre detaljer i sidefoden for værktøjstippet.
 3. Tryk på pil ned for detailudledning
 
-    ![Tryk på detailudledning](././media/mobile-apps-view-phone-report/report-drill-down.png)
+    ![Tryk på detailudledning](media/mobile-apps-view-phone-report/report-drill-down.png)
     
 4. Tryk på pil op for færre detaljer.
 
 ### <a name="drill-to-next-level"></a>Udvid til næste niveau
 1. Tryk på de tre prikker ( **...** ) i øverste højre hjørne i en rapport på telefonen, og vælg **Udvid til fokustilstand**.
    
-    ![Udvid til fokustilstand](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
+    ![Udvid til fokustilstand](media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
    
     I dette eksempel viser søjlerne de aktuelle værdier for stater.
 2. Tryk på udforskningsikonet ![Ikonet Udforsk](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) nederst til venstre.
@@ -111,7 +111,7 @@ Der findes få typer detailudledning:
     ![Stadig udvidet til nederste niveau](./media/mobile-apps-view-phone-report/power-bi-back-to-phone-report-expanded-levels.png)
 5. Hvis du vil tilbage til det oprindelige niveau, skal du trykke på de tre prikker ( **...** ) igen og vælge **Tilbagefør**.
    
-    ![Vend tilbage](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
+    ![Vend tilbage](media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
 
 ## <a name="drill-through-from-a-value"></a>Detaljeadgang fra en værdi
 Detaljeadgang knytter værdier på én rapportside til andre rapportsider. Når du får detaljeadgang fra et datapunkt til en anden rapportside, bruges datapunktets værdier til at filtrere siden med detaljeadgang, eller den vil være i konteksten for de valgte data.
@@ -121,11 +121,11 @@ Rapportforfattere kan [definere detaljeadgang](https://docs.microsoft.com/power-
 2. Der vises værktøjstip, og hvis der er defineret detaljeadgang, vises der en pil for detaljeadgang i sidefoden for værktøjstippet.
 3. Tryk på pilen for detaljeadgang
 
-    ![Tryk på detaljeadgang](././media/mobile-apps-view-phone-report/report-drill-through1.png)
+    ![Tryk på detaljeadgang](media/mobile-apps-view-phone-report/report-drill-through1.png)
 
 4. Vælg den rapportside, du vil have detaljeadgang til
 
-    ![Vælg en rapportside](././media/mobile-apps-view-phone-report/report-drill-through2.png)
+    ![Vælg en rapportside](media/mobile-apps-view-phone-report/report-drill-through2.png)
 
 5. Brug knappen Tilbage i appoverskriften for at gå tilbage til den side, du startede fra.
 
@@ -133,5 +133,5 @@ Rapportforfattere kan [definere detaljeadgang](https://docs.microsoft.com/power-
 ## <a name="next-steps"></a>Næste trin
 * [Opret rapporter, der optimeret til Power BI-mobilapps](../../create-reports/desktop-create-phone-report.md)
 * [Opret en telefonvisning af et dashboard i Power BI](../../create-reports/service-create-dashboard-mobile-phone-view.md)
-* [Opret dynamiske visualiseringer, der er optimeret til alle størrelser](../../visuals/desktop-create-responsive-visuals.md)
+* [Opret dynamiske visualiseringer, der er optimeret til alle størrelser](../../visuals/power-bi-report-visualizations.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

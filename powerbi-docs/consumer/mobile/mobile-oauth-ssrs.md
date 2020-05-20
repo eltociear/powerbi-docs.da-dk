@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
-ms.openlocfilehash: c3c6e8d7ddb823eb1e857b102c2f6c788e366141
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 40bbf09e684b4fd3f86564c9b469c6ff248954a6
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114949"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565712"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Brug OAuth til at oprette forbindelse til Power BI-rapportserver og SSRS
 
@@ -60,7 +60,7 @@ Der er ikke meget, der skal konfigureres på Reporting Services-siden. Vi skal b
 
 Tjenestens hovednavn er et entydigt id for en tjeneste, der bruger Kerberos-godkendelse. Du skal sikre, at du har et korrekt HTTP-hovednavn for tjenesten for rapportserveren.
 
-Du kan finde oplysninger om, hvordan du konfigurerer det korrekte hovednavn for tjenesten for rapportserveren, under [Registrer et hovednavn for tjenesten for en rapportserver](https://msdn.microsoft.com/library/cc281382.aspx).
+Du kan finde oplysninger om, hvordan du konfigurerer det korrekte hovednavn for tjenesten for rapportserveren, under [Registrer et hovednavn for tjenesten for en rapportserver](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server).
 
 ### <a name="enabling-negotiate-authentication"></a>Aktivering af forhandling af godkendelse
 
@@ -74,7 +74,7 @@ Hvis du vil gøre det muligt, at en rapportserver kan bruge Kerberos-godkendelse
 </AuthenticationTypes>
 ```
 
-Du kan finde flere oplysninger under [Rediger en Reporting Services-konfigurationsfil](https://msdn.microsoft.com/library/bb630448.aspx) og [Konfigurer Windows-godkendelse på en rapportserver](https://msdn.microsoft.com/library/cc281253.aspx).
+Du kan finde flere oplysninger under [Rediger en Reporting Services-konfigurationsfil](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config) og [Konfigurer Windows-godkendelse på en rapportserver](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
 
 ## <a name="active-directory-federation-services-adfs-configuration"></a>Konfigurationen af ADFS (Active Directory Federation Services)
 
@@ -248,9 +248,9 @@ Hvis det lykkes at logge på ved hjælp af Fiddler, oplever du måske et certifi
 
 ## <a name="next-steps"></a>De næste trin
 
-[Registrer en hovednavn for tjenesten for en rapportserver](https://msdn.microsoft.com/library/cc281382.aspx)  
-[Rediger en Reporting Services-konfigurationsfil](https://msdn.microsoft.com/library/bb630448.aspx)  
-[Konfigurer Windows-godkendelse på en rapportserver](https://msdn.microsoft.com/library/cc281253.aspx)  
+[Registrer en hovednavn for tjenesten for en rapportserver](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server)  
+[Rediger en Reporting Services-konfigurationsfil](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config)  
+[Konfigurer Windows-godkendelse på en rapportserver](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server)  
 [Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services)  
 [Web Application Proxy i Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server)  
 [Udgivelse af programmer vha. ADFS-forhåndsgodkendelse](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  

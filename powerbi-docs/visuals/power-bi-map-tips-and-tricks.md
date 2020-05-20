@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 89b81286819e5f286a26efeb6b36d6336446132c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 8a7b5785712aeac318b3d8a2bbd14ab7170a435f
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83277818"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565896"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tips og tricks til Power BI-kortvisualiseringer
 
@@ -55,7 +55,7 @@ I Power BI Desktop kan du sikre, at felterne er korrekt geokodede ved at angive 
 **2. Brug mere end én kolonne for placeringen.**     
  Nogle gange er det ikke tilstrækkeligt at indstille datakategorier, for at Bing kan skabe de rette resultater. Nogle betegnelser er tvetydige, fordi placeringen findes i flere lande eller områder. For eksempel findes der en by med navnet ***Southampton*** i både England, Pennsylvania og New York.
 
-Power BI bruger Bings [ustrukturerede URL-skabelontjeneste](https://msdn.microsoft.com/library/ff701714.aspx) til at hente breddegrad- og længdegradkoordinater baseret på adresseværdierne for lande. Hvis dine data ikke indeholder tilstrækkelige placeringsdata, skal du tilføje disse kolonner og kategorisere dem.
+Power BI bruger Bings [ustrukturerede URL-skabelontjeneste](/bingmaps/rest-services/locations/find-a-location-by-address) til at hente breddegrad- og længdegradkoordinater baseret på adresseværdierne for lande. Hvis dine data ikke indeholder tilstrækkelige placeringsdata, skal du tilføje disse kolonner og kategorisere dem.
 
  Hvis du for eksempel kun har kolonnen City, kan det være svært for Bing at finde den korrekte geokodning. Tilføj flere geokolonner for at gøre placeringen entydig.  Nogle gange kræver det, at du tilføjer en eller flere placeringskolonner i datasættet – i dette filælde stat/provins. Og glem ikke at kategorisere dataene korrekt (se nr. 1 herover).
 
@@ -97,5 +97,3 @@ Når du bruger detailudledning med geografiske hierarkier, er det vigtigt at vid
 [Visualiseringer i Power BI](power-bi-report-visualizations.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-
-

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: fb7bf439cdf2f7ebd6058aba6b147f800b9cf258
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 45f3aa4ccf92237085db0c7517c291fe8d0f0428
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79113044"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564877"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Sådan krydsfiltrerer visualiseringer hinanden i en Power BI-rapport
 
@@ -55,7 +55,7 @@ Lad os definere disser begreber, i takt med at vi kigger på rapportsiderne nede
     ![Rapportside efter segmentet Moderation i kransediagrammet er valgt](media/end-user-interactions/power-bi-visual-filters.png)
 
 ## <a name="next-steps"></a>Næste trin
-[Sådan bruger du rapportfiltre](../power-bi-how-to-report-filter.md)    
+[Sådan bruger du rapportfiltre](../consumer/end-user-report-filter.md)
 
 
-[Om filtrering og fremhævning](end-user-report-filter.md). 
+[Om filtrering og fremhævning](end-user-report-filter.md).

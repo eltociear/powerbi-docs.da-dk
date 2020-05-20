@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 593847d229dcd4e2081843523a0a988415a9ef81
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: cab4accfa11a4c92c1672314e2157659ef68f21a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83297969"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564740"
 ---
 # <a name="optimize-power-bi-reports-for-the-mobile-app"></a>Optimer Power BI-rapporter til mobilappen
 Du kan forbedre visningsoplevelsen af rapporter i mobilapps ved at oprette et stående layout. I Power BI Desktop og Power BI-tjenesten omarrangerer du rapportvisualiseringer og ændrer størrelsen af dem for at få en optimal oplevelse i stående retning.  
@@ -58,7 +58,7 @@ Når størrelsen af visualiseringen ændres, prioriterer Power BI datavisningen.
 
 ![Tilpasning af størrelse for dynamiske visualiseringer](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
 
-Du kan vælge, om du vil gøre hver enkelt visualisering dynamisk. Læs mere om at [optimere visualiseringer](../visuals/desktop-create-responsive-visuals.md).
+Du kan vælge, om du vil gøre hver enkelt visualisering dynamisk. Læs mere om at [optimere visualiseringer](../visuals/power-bi-report-visualizations.md).
 
 ## <a name="considerations-when-creating-phone-report-layouts"></a>Overvejelser ved oprettelse af layouts for telefonrapporter
 * Hvad angår rapporter med flere sider, kan du optimere alle siderne eller kun nogle få. 
@@ -108,5 +108,5 @@ Læserne af rapporten kan vende deres telefon eller tablet, så den ligger på s
 ## <a name="next-steps"></a>De næste trin
 * [Opret en telefonvisning af et dashboard i Power BI](service-create-dashboard-mobile-phone-view.md).
 * [Få vist Power BI-rapporter, der er optimeret til din telefon](../consumer/mobile/mobile-apps-view-phone-report.md).
-* [Opret dynamiske visualiseringer, der er optimeret til alle størrelser](../visuals/desktop-create-responsive-visuals.md).
+* [Opret dynamiske visualiseringer, der er optimeret til alle størrelser](../visuals/power-bi-report-visualizations.md).
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
