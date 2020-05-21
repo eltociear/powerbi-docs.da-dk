@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 955a14b37d59f554fb12b302c16472387c896e54
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: 7ab103c5d7b568e7315f67193da4d8da25b77a6c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82843635"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565431"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere vha. Azure Active Directory B2B
 
@@ -415,7 +415,7 @@ Når denne bruger åbner den app, der er delt med dem, vises der nu kun en rappo
 
 Et andet interessant emne er at se, hvordan dynamisk sikkerhed på rækkeniveau (RLS) fungerer sammen med Azure AD B2B.
 
-Dynamisk sikkerhed på rækkeniveau fungerer ved at filtrere dataene i modellen ud fra brugernavnet for den person, der opretter forbindelse til Power BI. I stedet for at tilføje flere forskellige roller for grupper af brugere, definerer du brugerne i modellen. Vi beskriver ikke mønsteret i detaljer her. Kasper de Jong har lavet en detaljeret beskrivelse af alle typer sikkerhed på rækkeniveau i [Snydeark til dynamisk sikkerhed i Power BI Desktop](https://www.kasperonbi.com/power-bi-desktop-dynamic-security-cheat-sheet/) og i [dette whitepaper](https://msdn.microsoft.com/library/jj127437.aspx).
+Dynamisk sikkerhed på rækkeniveau fungerer ved at filtrere dataene i modellen ud fra brugernavnet for den person, der opretter forbindelse til Power BI. I stedet for at tilføje flere forskellige roller for grupper af brugere, definerer du brugerne i modellen. Vi beskriver ikke mønsteret i detaljer her. Kasper de Jong har lavet en detaljeret beskrivelse af alle typer sikkerhed på rækkeniveau i [Snydeark til dynamisk sikkerhed i Power BI Desktop](https://www.kasperonbi.com/power-bi-desktop-dynamic-security-cheat-sheet/) og i [dette whitepaper](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
 Lad os se på et lille eksempel – Contoso har en enkel rapport om salg efter grupper:
 
@@ -504,7 +504,7 @@ De gæstebrugere, der har fået adgang via lejerindstillingen Tillad, at ekstern
 
 - Direkte publicering fra Power BI Desktop til Power BI-tjenesten.
 - Gæstebrugere kan ikke bruge Power BI Desktop til at oprette forbindelse til tjenestedatasæt i Power BI-tjenesten.
-- Klassiske arbejdsområder, der er knyttet til Office 365-grupper: gæstebrugere kan ikke oprette eller være administratorer af disse arbejdsområder. De kan være medlemmer.
+- Klassiske arbejdsområder, der er knyttet til Microsoft 365 grupper: gæstebrugere kan ikke oprette eller være administratorer af disse arbejdsområder. De kan være medlemmer.
 - Afsendelse af ad hoc-invitationer understøttes ikke for adgangslister for arbejdsområder.
 - Power BI Publisher til Excel understøttes ikke for gæstebrugere.
 - Gæstebrugere kan ikke installere en Power BI Gateway og forbinde den med din organisation.
@@ -606,7 +606,7 @@ Hvis man bruger Power BI Embedded, kan man med portalen udnytte fordelagtige lic
 
 
 
-## <a name="faq"></a>OFTE STILLEDE SPØRGSMÅL OM
+## <a name="faq"></a>Ofte stillede spørgsmål
 
 **Kan contoso sende en invitation, der automatisk indløses, så brugeren kun er "klar til at gå i gang"? Eller skal brugeren altid klikke dig igennem til indløsnings-URL-adressen?**
 

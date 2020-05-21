@@ -6,22 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/28/2019
+ms.date: 05/19/2020
 ms.author: maggies
-ms.openlocfilehash: 8b103902f7a151dcbfee9fa6ff54830129a65c14
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 98b5323efa8b6c6c0e1d6f1dbab640fe5f4cae4c
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279060"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693960"
 ---
 # <a name="whitepapers-for-power-bi"></a>Whitepapers til Power BI
 
 Whitepapers gør det muligt at udforske Power BI-emner på et mere detaljeret niveau. Her kan du finde en liste over tilgængelige whitepapers til Power BI.
 
-| Whitepaper | Description | Dato |
+| Whitepaper | Beskrivelse | Dato |
 | --- | --- | --- |
-| [Planlægning af en Power BI Enterprise-udrulning](https://go.microsoft.com/fwlink/?linkid=2057861) |I denne tekniske hvidbog beskrives, hvilke overvejelser der skal gøres for at få en velfungerende og sikker Power BI-udrulning i organisationen. | Juli 2018 |
+| [Planlægning af en Power BI Enterprise-udrulning](https://aka.ms/PBIEnterpriseDeploymentWP) |Dette opdaterede tekniske White Paper skitserer overvejelser og bedste fremgangsmåder for en velfungerende og sikker organisations Power BI implementering. | Maj 2020 |
 | [Power BI og dataflow](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Denne hvidbog beskriver dataflow i tekniske detaljer, og den beskriver de funktioner og initiativer, der ligger bag dataflowets funktioner og funktionalitet. | November 2018 |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Beskriver Power BI Premium, både som den findes, når startes, og hvordan den udvikler sig. | Oktober 2017 |
 | [Planlægning og installation af Power BI Premium](whitepaper-powerbi-premium-deployment.md)| Denne rapport indeholder en vejledning og bedste praksis for planlægning og installation af Premium-kapacitet for veldefinerede arbejdsbelastninger.| Marts 2019 |
@@ -38,4 +38,4 @@ Whitepapers gør det muligt at udforske Power BI-emner på et mere detaljeret ni
 
 [!INCLUDE [GDPR-related guidance](../includes/gdpr-hybrid-note.md)]
 
-Flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
