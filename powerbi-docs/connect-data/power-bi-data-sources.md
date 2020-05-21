@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/10/2020
 ms.author: kfollis
-ms.openlocfilehash: a29dcd8c89d064678e558d5ebfee7ccb3cc8a8e0
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2aa12ec3d55e491535d12107fc70709f9d41c3f0
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83330100"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438079"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-datakilder
 
@@ -62,12 +62,12 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Exasol | Ja | Ja | Ja | Ja | Ja |
 | Excel | Ja <sup>3</sup> | Ja <sup>3</sup> | Nej | Ja <sup>3</sup> | Nej <sup>4</sup> |
 | Facebook | Ja | Ja | Nej | Nej | Nej |
-| Filer | Ja | Ja | Nej | Ja | Ja |
+| Fil | Ja | Ja | Nej | Ja | Ja |
 | Mappe | Ja | Ja | Nej | Ja | Ja |
 | GitHub | Ja | Ja | Nej | Nej | Nej |
 | Google Analytics | Ja | Ja | Nej | Nej | Nej |
-| Google BigQuery | Ja | Ja | Nej | Nej | Nej |
-| Hadoop-fil (HDFS) | Ja | Nej | Nej | Nej | Nej |
+| Google BigQuery | Ja | Ja | Ja | Nej | Nej |
+| Hadoop File (HDFS) | Ja | Nej | Nej | Nej | Nej |
 | Interaktiv HDInsight-forespørgsel | Ja | Ja | Ja | Nej | Nej |
 | IBM DB2 | Ja | Ja | Ja | Ja | Nej |
 | IBM Informix Database | Ja | Ja | Nej | Ja | Nej |
@@ -111,7 +111,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Roamler | Ja | Ja | Nej | Ja | Nej |
 | Salesforce-objekter | Ja | Ja | Nej | Nej | Nej |
 | Salesforce-rapporter | Ja | Ja | Nej | Nej | Nej |
-| SAP Business Warehouse-beskedserver | Ja | Ja | Ja | Ja | Ja |
+| SAP Business Warehouse-meddelelsesserver | Ja | Ja | Ja | Ja | Ja |
 | SAP Business Warehouse-server | Ja | Ja | Ja | Ja | Ja |
 | SAP HANA | Ja | Ja | Ja | Ja | Ja |
 | SharePoint-mappe | Ja | Ja | Nej | Ja | Nej <sup>4</sup> |
@@ -172,7 +172,7 @@ Indstillingen for SSO gælder for alle datasæt, der bruger denne datakilde. Den
 > [!Note]
 > Azure MFA (Multi-Factor Authentication) understøttes ikke. Brugere, der gerne vil bruge enkeltlogon med DirectQuery, skal fritages fra multifaktorgodkendelse.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Opret forbindelse til data i Power BI Desktop](desktop-quickstart-connect-to-data.md)  
 [Brug af DirectQuery in Power BI](desktop-directquery-about.md)  
