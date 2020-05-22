@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: f4211b177c60c9bb990c6dc2c8aa8094ab9e69f0
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: a80870963cf045730fff18413884d9871354b169
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565271"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83792921"
 ---
 # <a name="power-bi-security-whitepaper"></a>Whitepaper om Power BI-sikkerhed
 
@@ -91,11 +91,11 @@ Metadata om en brugers Power BI-abonnement, f.eks. dashboards, rapporter, senest
 
 ## <a name="tenant-creation"></a>Oprettelse af lejer
 
-Der er dedikeret en lejer af Azure AD-tjenesten, som en organisation modtager og ejer, når den tilmelder sig en Microsoft-cloudtjeneste, f.eks. Azure, Microsoft Intune, Power BI eller Office 365. Hver enkelt Azure AD-lejer er specifik og adskilt fra andre Azure AD-lejere.
+En lejer er en dedikeret instans af Azure AD-tjenesten, som en organisation modtager og ejer, når den tilmelder sig en Microsoft Cloud service som f. eks. Azure, Microsoft Intune, Power BI eller Microsoft 365. Hver enkelt Azure AD-lejer er specifik og adskilt fra andre Azure AD-lejere.
 
 En lejer indeholder brugerne i en virksomhed og oplysninger om dem – deres adgangskoder, brugerprofildata, tilladelser og osv. Den indeholder også grupper, programmer og andre oplysninger, der vedrører en organisation og dens sikkerhed. Du kan finde flere oplysninger under [Hvad er en Azure AD-lejer?](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
-Der oprettes en Power BI-lejer i det datacenter, der anses for at være tættest på de oplysninger om land (eller område) og stat, som er angivet for lejeren i Azure Active Directory, og som blev angivet, da Office 365 eller Power BI-tjenesten oprindeligt blev klargjort. Power BI-lejeren flytter i dag ikke fra den pågældende datacenterplacering.
+Der er oprettet en Power BI lejer i datacenteret, der skønnes tættest på det land (eller den region) og den tilstandsoplysninger, der er angivet for lejeren i Azure Active Directory, som blev leveret, da Microsoft 365 eller Power BI-tjeneste blev klargjort klargjort. Power BI-lejeren flytter i dag ikke fra den pågældende datacenterplacering.
 
 ### <a name="multiple-geographies-multi-geo"></a>Flere geografiske områder (multi-geo)
 
@@ -129,7 +129,7 @@ Du kan finde flere oplysninger om, hvor dine data gemmes, og hvordan de bruges, 
 
 ## <a name="user-authentication"></a>Brugergodkendelse
 
-Godkendelse af brugeren til Power BI-tjenesten består af en række anmodninger, svar og omdirigeringer mellem brugerens browser og Power BI-tjenesten eller de Azure-tjenester, som bruges af Power BI. I sekvensen beskrives processen for godkendelse af brugeren i Power BI. Du kan finde flere oplysninger om mulighederne for en organisations modeller til godkendelse af brugeren (logonmodeller) under [Sådan vælges en logonmodel til Office 365](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/).
+Godkendelse af brugeren til Power BI-tjenesten består af en række anmodninger, svar og omdirigeringer mellem brugerens browser og Power BI-tjenesten eller de Azure-tjenester, som bruges af Power BI. I sekvensen beskrives processen for godkendelse af brugeren i Power BI. Du kan finde flere oplysninger om mulighederne for en organisations bruger godkendelses modeller (Sign-in-modeller) under [valg af logon model til Microsoft 365](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/).
 
 ### <a name="authentication-sequence"></a>Godkendelsessekvens
 
@@ -245,9 +245,9 @@ Power BI sikrer overvågning af dataintegritet på følgende måder:
 
 1. Metadata (rapportdefinition)
 
-   a. Rapporter kan enten være Excel til Office 365-rapporter eller Power BI-rapporter. På baggrund af typen af rapport gælder følgende for metadata:
+   a. Rapporter kan enten være Excel til Microsoft 365 rapporter eller Power BI rapporter. På baggrund af typen af rapport gælder følgende for metadata:
         
-    &ensp;&ensp;a. Excel-rapportmetadata gemmes krypteret i SQL Azure. Metadata gemmes også i Office 365.
+    &ensp;&ensp;a. Excel-rapportmetadata gemmes krypteret i SQL Azure. Metadata lagres også i Microsoft 365.
 
     &ensp;&ensp;b. Power BI-rapporter gemmes krypteret i Azure SQL Database.
 
@@ -255,13 +255,13 @@ Power BI sikrer overvågning af dataintegritet på følgende måder:
 
    Statiske data omfatter artefakter, f. eks. baggrundsbilleder og Power BI visuelle elementer.
 
-    &ensp;&ensp;a. Der gemmes intet i forbindelse med rapporter, der er oprettet i Excel til Office 365.
+    &ensp;&ensp;a. For rapporter, der er oprettet med Excel til Microsoft 365, er intet gemt.
 
     &ensp;&ensp;b. I forbindelse med Power BI-rapporter gemmes og krypteres statiske data i Azure Blob Storage.
 
 3. Cacher
 
-    &ensp;&ensp;a. Der cachelagres intet i forbindelse med rapporter, der er oprettet i Excel til Office 365.
+    &ensp;&ensp;a. For rapporter, der er oprettet med Excel til Microsoft 365, er der intet i cachen.
 
     &ensp;&ensp;b. I forbindelse med Power BI rapporter cachelagres dataene for de viste visuelle elementer og gemmes i den visuelle data cache, der er beskrevet i det følgende afsnit.
  
