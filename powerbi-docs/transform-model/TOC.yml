@@ -83,6 +83,8 @@
               href: service-dataflows-create-use.md
             - name: Hæv eller certificer dataflow
               href: service-dataflows-promote-certify.md
+            - name: Brug DirectQuery med dataflow i Power BI (prøveversion)
+              href: service-dataflows-directquery.md
             - name: Brug det forbedrede beregningsprogram med dataflows
               href: service-dataflows-enhanced-compute-engine.md
             - name: Beregnede enheder med Power BI Premium

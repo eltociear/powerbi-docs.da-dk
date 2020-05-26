@@ -43,7 +43,7 @@
               href: ../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md
             - name: Samarbejd i et klassisk arbejdsområde
               href: service-collaborate-power-bi-workspace.md
-            - name: Administrer din gruppe i Power BI og Office 365
+            - name: Administrer din gruppe i Power BI og Microsoft 365
               href: service-manage-app-workspace-in-power-bi-and-office-365.md
         - name: Publicer og del dit arbejde
           items:
@@ -71,9 +71,11 @@
           items:
             - name: Analysér i Excel
               href: service-analyze-in-excel.md
+            - name: Udvalgte Power BI-tabeller i Excel
+              href: service-excel-featured-tables.md
             - name: Foretag fejlfinding af analysering i Excel
               href: desktop-troubleshooting-analyze-in-excel.md
-            - name: 'Fejl: Der blev ikke fundet nogen data i din Excel-projektmappe'
+            - name: 'Fejl: Der blev ikke fundet data i din Excel-projektmappe'
               href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
             - name: Power Automate og Power BI
               href: service-flow-integration.md

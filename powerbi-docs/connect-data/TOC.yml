@@ -208,8 +208,8 @@
               href: refresh-data.md
             - name: Konfigurer planlagt opdatering
               href: refresh-scheduled-refresh.md
-            - name: Opdater center
-              href: refresh-center.md
+            - name: Opdater oversigter
+              href: refresh-summaries.md
             - name: Konfigurer trinvis opdatering
               href: ../admin/service-premium-incremental-refresh.md
             - name: Opdater et datasæt fra en lokal Power BI Desktop-fil
