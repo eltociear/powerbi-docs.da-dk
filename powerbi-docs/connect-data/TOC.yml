@@ -174,7 +174,7 @@
           items:
             - name: Brug datasæt på tværs af arbejdsområder
               href: service-datasets-across-workspaces.md
-            - name: Del dataark (eksempelvisning)
+            - name: Del datasæt
               href: service-datasets-share.md
             - name: Opret tilladelse til delte datasæt
               href: service-datasets-build-permissions.md
