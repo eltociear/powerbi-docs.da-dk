@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/30/2020
-ms.openlocfilehash: 40f713c2fd021ea8ecea5789b8ad0bc54cff2294
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 5e9b14fb0eccc0418ca7d5b4a7859f26c1781d50
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275955"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84121198"
 ---
 # <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Integrering af Power BI-indhold med tjenesteprincipal og programhemmelighed
 
@@ -188,7 +188,6 @@ Når dit indhold er integreret, er du klar til at [gå videre til produktionen](
 * Der kræves dedikeret kapacitet for at kunne begynde at producere.
 * Du kan ikke logge på Power BI-portalen ved hjælp af en tjenesteprincipal.
 * Der kræves rettigheder som Power BI-administrator for at kunne aktivere tjenesteprincipalen under Indstillinger for udvikler på Power BI-administrationsportalen.
-* Du kan ikke installere eller administrere en datagateway i det lokale miljø ved hjælp af en tjenesteprincipal.
 * Programmer til [integration i din organisation](embed-sample-for-your-organization.md) kan ikke bruge en tjenesteprincipal.
 * Administration af [dataflow](../../transform-model/service-dataflows-overview.md) understøttes ikke.
 * Tjenesteprincipaler understøtter i øjeblikket ingen administrator-API'er.
