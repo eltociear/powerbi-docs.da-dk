@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 08b9585195e805548546e832915e07f0e02265f5
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: dd474da6a3fb61b6fd78dc55a6b0313e51bbb773
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348269"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693580"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicer en app i Power BI
 
@@ -64,7 +64,7 @@ Når dashboards og rapporter i dit arbejdsområde er klar, skal du vælge, hvilk
 5. Under **Tilladelser** skal du bestemme, hvem der har adgang til appen, og hvad de kan gøre med den. 
 
     - I [klassiske arbejdsområder](service-create-workspaces.md): alle i din organisation, bestemte personer eller Azure AD-sikkerhedsgrupper (Azure Active Directory).
-    - I [arbejdsområder med den nye oplevelse](service-create-the-new-workspaces.md): bestemte personer, Azure AD-sikkerhedsgrupper og -distributionslister samt Office 365 Grupper. Alle brugere af arbejdsområdet får automatisk adgang til appen for arbejdsområdet.
+    - I [arbejdsområder med den nye oplevelse](service-create-the-new-workspaces.md): bestemte personer, Azure AD-sikkerhedsgrupper og -distributionslister samt Microsoft 365 Grupper. Alle brugere af arbejdsområdet får automatisk adgang til appen for arbejdsområdet.
     - Du kan give brugere af appen tilladelse til at oprette forbindelse til appens underliggende datasæt ved hjælp af tilladelsen Opret. De får vist disse datasæt, når de søger efter delte datasæt. Læs mere om [at give brugerne mulighed for at oprette forbindelse til appens datasæt](#allow-users-to-connect-to-datasets) i denne artikel.
     - Brugere med tilladelse til at oprette kan også have tilladelse til at kopiere rapporter fra denne app til et andet arbejdsområde. Læs mere om at [give brugere mulighed for at kopiere rapporter i appen](#allow-users-to-copy-reports) i denne artikel.
     

@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 9e9ed930cc557250a9e1702d6010536ed069cd7b
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: afa8513267be4ec2de18a9adda7995c88f4f2aa8
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83129532"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438033"
 ---
 # <a name="what-is-power-bi-administration"></a>Hvad er Power BI-administration?
 
@@ -36,17 +36,17 @@ Der er flere roller, som er relateret til Power BI-administration, og de vises i
 
 | **Type af administrator** | **Administrativt omfang** | **Power BI-omfang** |
 | --- | --- | --- |
-| Office 365 Global Administrator | Office 365 | Kan administrere alle aspekter af en Power BI-lejer og andre tjenester. |
-| Office 365-faktureringsadministrator | Office 365 | Kan erhverve licenser til Power BI via Office 365-abonnementer. |
-| Power BI Service Administrator | Power BI-lejer | Har fuld kontrol over en Power BI-lejer og de tilhørende administrative funktioner (undtagen licensering). |
+| Global administrator | Microsoft 365 | Kan administrere alle aspekter af en Power BI-lejer og andre tjenester. |
+| Faktureringsadministrator | Microsoft 365 | Kan erhverve licenser til Power BI via Office 365-abonnementer. |
+| Administrator af Power BI-tjenesten | Power BI-lejer | Har fuld kontrol over en Power BI-lejer og de tilhørende administrative funktioner (undtagen licensering). |
 | Administrator af Power BI Premium-kapacitet | En enkelt Premium-kapacitet | Har fuld kontrol over en Premium-kapacitet og de tilhørende administrative funktioner. |
 | Administrator af Power BI Embedded-kapacitet | En enkelt Embedded-kapacitet | Har fuld kontrol over en Embedded-kapacitet og de tilhørende administrative funktioner. |
 
-Globale administratorer i Office 365 eller Azure Active Directory har administratorrettigheder i Power BI. Office 365 Global Administrator kan tildele andre brugere til rollen Power BI Service Administrator, der giver administrative rettigheder i forhold til Power BI-funktioner.
+Globale administratorer i Microsoft 365 eller Azure Active Directory har administratorrettigheder i Power BI. En global administrator kan tildele rollen som administrator af Power BI-tjenesten til andre brugere, hvilket kun giver administrative rettigheder til Power BI-funktioner.
 
-Power BI Service Administrators har adgang til Power BI-administrationsportalen, som indeholder forskellige indstillinger for lejerniveau, hvad angår funktionalitet, sikkerhed og overvågning. Tjenesteadministratorer har fuld adgang til alle ressourcer i en Power BI-lejer. I de fleste tilfælde identificerer tjenesteadministratorer problemer og følger derefter op på problemerne sammen med ressourceejerne for at foretage det nødvendige.
+Administratorer af Power BI-tjenesten har adgang til Power BI-administrationsportalen, som indeholder forskellige indstillinger for lejerniveau, hvad angår funktionalitet, sikkerhed og overvågning. Administratorer af tjenesten har fuld adgang til alle ressourcer i en Power BI-lejer. I de fleste tilfælde identificerer administratorer af tjenesten problemer og følger derefter op på problemerne sammen med ressourceejerne for at foretage det nødvendige.
 
-Rollen Power BI Service Administrator gør det ikke muligt at tildele licenser til brugere eller at se overvågningslogge i Office 365. Opgaven i forbindelse med administration af Power BI kan derfor i øjeblikket ikke udføres af brugere, der kun er medlemmer af rollen Power BI Service Administrator.
+Rollen som administrator af Power BI-tjenesten giver ikke mulighed for at tildele licenser til brugere eller at få vist overvågningslogge i Microsoft 365. Opgaven i forbindelse med administration af Power BI kan derfor i øjeblikket ikke udføres af brugere, der kun er medlemmer af rollen som administrator af Power BI-tjenesten.
 
 ## <a name="administrative-tasks"></a>Administrative opgaver
 

@@ -1,5 +1,5 @@
 ---
-title: Registrer Power BI-tjenestetilstand i Office 365
+title: Spor Power BI-tjenestetilstand i Microsoft 365
 description: Få mere at vide om, hvordan du får vist aktuelle og tidligere tjenestetilstande i Microsoft 365 Administration.
 author: kfollis
 ms.reviewer: ''
@@ -9,20 +9,20 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 9d0ed841da3f398b8e0a8dc0a35ed040ccf3cab6
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 3498b893d7916c37d21e66908cbea4e6a919f978
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83139799"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563724"
 ---
-# <a name="track-power-bi-service-health-in-office-365"></a>Registrer Power BI-tjenestetilstand i Office 365
+# <a name="track-power-bi-service-health-in-microsoft-365"></a>Spor Power BI-tjenestetilstand i Microsoft 365
 
 Microsoft 365 Administration indeholder vigtige værktøjer til Power BI-administratorer. Disse værktøjer omfatter aktuelle og historiske oplysninger om tjenestetilstand. Du skal have en af følgende roller for at få adgang til oplysningerne om tjenestetilstand:
 
-* Power BI Service Administrator
+* Administrator af Power BI-tjenesten
 
-* Office 365 Global Administrator
+* Global administrator
 
 Du kan finde flere oplysninger om roller under [Administratorroller, der er relateret til Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 

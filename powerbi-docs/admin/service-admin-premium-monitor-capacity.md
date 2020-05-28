@@ -7,47 +7,43 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/11/2020
+ms.date: 05/18/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 84ce61c98048690c1560a2c49aed07591a22119f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 8bea8c2fc59deeb6aec4817f27d10371518f523e
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83137627"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564302"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Overvåg Premium-kapaciteter vha. appen
 
 Overvågning af dine kapaciteter er afgørende for at træffe beslutninger om den bedste måde, du kan udnytte dine ressourcer i Premium-kapaciteten på. Du kan overvåge kapacitet via administrationsportalen eller programmet **Power BI Premium Capacity Metrics**. Denne artikel indeholder en beskrivelse af brugen af programmet Premium Capacity Metrics. Programmet giver de mest detaljerede oplysninger om ydeevnen af dine kapaciteter. Hvis du vil have et overblik over målepunkter for den gennemsnitlige brug på et højere niveau for de seneste syv dage, skal du bruge administrationsportalen. Du kan finde flere oplysninger om overvågning på portalen under [Overvåg Premium-kapaciteter på administrationsportalen](service-admin-premium-monitor-portal.md).
 
-Programmet opdateres jævnligt med nye funktioner og funktionalitet. Sørg for, at du kører den nyeste version. Hvis en tidligere version af programmet allerede er installeret, er det bedst at slette den fra dine programmer og derefter trykke på CTRL + F5 for at opdatere.
+Programmet opdateres jævnligt med nye funktioner og funktionalitet. Sørg for, at du kører den nyeste version. Når en ny version bliver tilgængelig, modtager du en [meddelelse](../connect-data/service-template-apps-install-distribute.md#update-a-template-app).
 
 > [!IMPORTANT]
 > Hvis der er et højt forbrug af ressourcer i din Power BI Premium-kapacitet, hvilket medfører problemer med ydeevne eller pålidelighed, kan du modtage notifikationer via mail for at identificere og løse problemet. Dette kan være en strømlinet metode til fejlfinding af overbelastede kapaciteter. Se [notifikationer om kapacitet og pålidelighed](service-interruption-notifications.md#capacity-and-reliability-notifications) for at få flere oplysninger.
 
 ## <a name="install-the-app"></a>Installér programmet
 
-Du kan gå direkte til [programmet Premium Capacity Metrics](https://app.powerbi.com/groups/me/getapps/services/capacitymetrics) eller installere det på samme måde som med andre programmer i Power BI.
-
-1. I Power BI skal du klikke på **Apps**.
-
-    ![Gå til Apps](media/service-admin-premium-monitor-capacity/apps.png)
-
-2. I højre side skal du klikke på **Hent apps**.
-3. I kategorien **Apps** skal du søge efter **Power BI-appen Capacity Metrics**.
-4. Abonner for at installere appen.
-
-Vær tålmodig. Det tager nogle få minutter at installere og opdatere målepunkterne. Hvis der vises tomme målepunkter i programmet, kan du trykke på F5 for at opdatere din browser.
+Gå til [Opret forbindelse til Power BI Premium Capacity Metrics](../connect-data/service-connect-to-pbi-premium-capacity-metrics.md) for at se, hvordan du installerer appen og opretter forbindelse til data. Alternativt kan du [gå direkte til appen](https://go.microsoft.com/fwlink/?linkid=2114036).
 
 ## <a name="get-app-refresh-history"></a>Få historik over programopdateringer
 
-Hvis du vil kontrollere, hvornår programmet Premium Capacity Metrics sidst blev opdateret, skal du klikke på **Indstillinger** > **Datasæt** > **Power BI Premium Capacity Metrics** > **Opdateringshistorik**. 
+Sådan kontrollerer du, hvornår appen Premium Capacity Metrics blev opdateret sidst:
 
-![Opdateringshistorik under Indstillinger](media/service-admin-premium-monitor-capacity/settings-refresh-history.png)
+1. Gå til det arbejdsområde, der blev installeret sammen med appen.
 
-Den seneste opdatering vises. Ellers skal du klikke på **Opdateringshistorik** for at se planlagte opdateringer og opdateringer efter behov.
+   ![Gå til apparbejdsområde.](media/service-admin-premium-monitor-capacity/settings-refresh-history.png)
 
-![Seneste opdatering](media/service-admin-premium-monitor-capacity/settings-last-refresh.png)
+1. Klik på knappen **Planlæg opdatering** ud for datasættet.
+
+   ![Knappen Planlæg opdatering](media/service-admin-premium-monitor-capacity/schedule-refresh.png)
+
+   Den seneste opdatering vises. Klik på **Opdater historik** for at se planlagte opdateringer og opdateringer efter behov.
+
+   ![Seneste opdatering](media/service-admin-premium-monitor-capacity/settings-last-refresh.png)
 
 ## <a name="monitor-capacities-with-the-app"></a>Overvåg kapaciteter vha. appen
 

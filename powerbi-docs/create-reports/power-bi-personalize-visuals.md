@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/09/2020
+ms.date: 05/09/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: abc936c6ea4b61e4837e05fbde110e5159296815
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: ab232d4e5b6d17e7f20ed8a41875ca47693eb285
+ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867110"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83407601"
 ---
 # <a name="let-users-personalize-visuals-in-a-report"></a>Lad brugerne tilpasse visualiseringer i en rapport
 
@@ -26,7 +26,7 @@ Når du deler en rapport med en bred målgruppe, vil nogle af brugerne måske ge
  
 ## <a name="what-report-consumers-can-change"></a>Hvad kan forbrugere af rapporter ændre?
 
-Denne funktion giver forbrugerne mulighed for at få yderligere indsigt via ad hoc-udforskning af visualiseringer i en Power BI-rapport. Funktionen er ideel til rapportudviklere, der gerne vil aktivere grundlæggende udforskningsscenarier for læserne af deres rapport. Læserne af rapporten kan udføre følgende ændringer:
+Denne funktion giver forbrugerne mulighed for at få yderligere indsigt via ad hoc-udforskning af visualiseringer i en Power BI-rapport. Hvis du vil have mere at vide om, hvordan du bruger denne funktion som forbruger, skal du se [Tilpas visualiseringer i dine rapporter](../consumer/end-user-personalize-visuals.md). Funktionen er ideel til rapportudviklere, der gerne vil aktivere grundlæggende udforskningsscenarier for læserne af deres rapport. Læserne af rapporten kan udføre følgende ændringer:
 
 - Ret visualiseringstypen
 - Udskift en måling eller dimension
@@ -84,69 +84,6 @@ Slå skyderen for **Tilpas visualisering** >  **Til** eller **Fra**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="Skyder for tilpasning af visualisering til eller fra":::
 
-## <a name="personalize-visuals-in-the-power-bi-service"></a>Tilpas visualiseringer i Power BI-tjenesten
-
-Når en visualisering tilpasses, kan forbrugerne udforske dine data på mange måder uden at forlade læsevisningen af rapporten. I følgende eksempler vises forskellige måder, som brugerne kan redigere en visualisering på for at få opfyldt deres behov. 
-
-1. Åbn en rapport i læsevisning i Power BI-tjenesten.
-
-2. I øverste højre hjørne af visualiseringen skal du vælge ikonet **Tilpas denne visualisering** ![ikonet Tilpas denne visualisering](media/power-bi-personalize-visuals/power-bi-personalize-visual-icon.png). 
-
-### <a name="change-the-visualization-type"></a>Ret visualiseringstypen
-
-Du kan få vist visualiseringen i en anden repræsentation ved at ændre **visualiseringstypen**.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-visual-type.png" alt-text="Skift visualiseringstype":::
- 
-### <a name="swap-out-a-measure-or-dimension"></a>Udskift en måling eller dimension
-Du kan udskifte en måling eller dimension på X-aksen ved at vælge det felt, du vil udskifte, og derefter vælge en anden måling eller dimension.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-axis.png" alt-text="Skift akse":::
- 
-### <a name="add-or-remove-a-legend"></a>Tilføj eller fjern en forklaring
-Når du tilføjer en forklaring, kan du farvekode en visualisering baseret på en kategori. Du kan fjerne farvekodningen for kategorien ved at rydde feltet **Forklaring** i ruden **Tilpas**. 
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-legend.png" alt-text="Tilføj eller fjern forklaringen":::
-
-### <a name="compare-two-or-more-different-measures"></a>Sammenlign to eller flere forskellige målinger
-Du kan sammenligne værdier for forskellige målinger ved hjælp af ikonet + for at tilføje flere målinger for en visualisering.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-compare-measures.png" alt-text="Sammenlign målinger":::
-
-### <a name="change-aggregations"></a>Skift sammenlægninger
-Du kan ændre, hvordan en måling beregnes ved at ændre sammenlægningerne i ruden **Tilpas**.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-aggregation.png" alt-text="Skift sammenlægninger":::
-
-### <a name="capture-changes"></a>Registrer ændringer 
-Ved hjælp af personlige bogmærker kan du registrere dine ændringer, så du kan vende tilbage til din tilpassede visning. 
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-bookmark.png" alt-text="Opret et bogmærke":::
- 
-Du kan også gøre bogmærket til din standardvisning.
-
-### <a name="share-changes"></a>Del ændringer 
-Hvis du har tilladelse til at læse og dele igen, kan du vælge at inkludere dine ændringer, når du deler rapporten.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-share-changes.png" alt-text="Del ændringer":::
- 
-### <a name="reset-all-your-changes-to-a-report"></a>Nulstil alle dine ændringer af en rapport
-
-Vælg **Nulstil til standard** for at fjerne alle dine ændringer af rapporten og vende tilbage til forfatterens seneste gemte visning af rapporten.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-reset-all.png" alt-text="Nulstil alle ændringer":::
- 
-### <a name="reset-all-your-changes-to-a-visual"></a>Nulstil alle dine ændringer af en visualisering
-
-Vælg **Nulstil denne visualisering** for at fjerne alle dine ændringer af en bestemt visualisering og vende tilbage til forfatterens seneste gemte visning af den pågældende visualisering.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-reset-visual.png" alt-text="Nulstil alle ændringer af visualiseringer":::
- 
-### <a name="clear-recent-changes"></a>Ryd seneste ændringer
-
-Vælg viskelæderikonet for at rydde alle seneste ændringer, du har foretaget, siden du åbnede ruden **Tilpas**.  
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-revert-changes.png" alt-text="Omdan seneste ændringer":::
 
 ## <a name="limitations-and-known-issues"></a>Begrænsninger og kendte problemer
 
@@ -164,7 +101,8 @@ Der er også nogle kendte problemer, som vi er i gang med at håndtere:
 
 ## <a name="next-steps"></a>Næste trin
 
+[Tilpas visualiseringer i dine rapporter](../consumer/end-user-personalize-visuals.md).     
+
 Prøv den nye funktionalitet til tilpasning af visualiseringer. Giv os din feedback på denne funktion, og hvordan vi fortsat kan forbedre den, på [webstedet med Power BI-ideer](https://ideas.powerbi.com/forums/265200-power-bi). 
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

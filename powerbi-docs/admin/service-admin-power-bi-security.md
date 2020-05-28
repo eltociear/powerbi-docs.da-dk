@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: 4524e7c6cb8297f3c9bf71284140ddc31b38e33f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 59400f05544efa9f4ffcca6ef3ebdf1b12423d33
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275403"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564380"
 ---
 # <a name="power-bi-security"></a>Power BI-sikkerhed
 
@@ -45,9 +45,9 @@ Den stiplede linje i billedet herover af **Back-End**-klyngen viser grænsen mel
 
 ## <a name="user-authentication"></a>Brugergodkendelse
 
-Power BI bruger Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) til at godkende brugere, der logger på Power BI-tjenesten, og bruger til gengæld legitimationsoplysningerne til Power BI-logon, når en bruger forsøger at få adgang til ressourcer, som kræver godkendelse. Brugere logger på Power BI-tjenesten ved hjælp af den mailadresse, der blev brugt til at oprette deres Power BI-konto. Power BI bruger den pågældende logonmail som det *effektive brugernavn*, der videresendes til ressourcer, når en bruger forsøger at oprette forbindelse til data. Det *effektive brugernavn* knyttes derefter til en *brugers hovednavn* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)) og fortolkes til den tilknyttede Windows-domænekonto, som godkendelse gælder i forhold til.
+Power BI bruger Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) til at godkende brugere, der logger på Power BI-tjenesten, og bruger til gengæld legitimationsoplysningerne til Power BI-logon, når en bruger forsøger at få adgang til ressourcer, som kræver godkendelse. Brugere logger på Power BI-tjenesten ved hjælp af den mailadresse, der blev brugt til at oprette deres Power BI-konto. Power BI bruger den pågældende logonmail som det *effektive brugernavn*, der videresendes til ressourcer, når en bruger forsøger at oprette forbindelse til data. Det *effektive brugernavn* knyttes derefter til [*brugerens hovednavn* (UPN – User Principal Name)](/windows/win32/secauthn/user-name-formats) og fortolkes henhold til den tilknyttede Windows-domænekonto, som godkendelse anvendes i forhold til.
 
-For organisationer, der brugte arbejdsmails til at logge på Power BI (f.eks. <em>david@contoso.com</em>), er tilknytningen af det *effektive brugernavn* til UPN ligetil. For organisationer, der ikke brugte arbejdsmails til at logge på Power BI (f.eks. <em>david@contoso.onmicrosoft.com</em>), vil tilknytning mellem AAD og de lokale legitimationsoplysninger kræve [katalogsynkronisering](https://technet.microsoft.com/library/jj573653.aspx) for at fungere korrekt.
+For organisationer, der brugte arbejdsmails til at logge på Power BI (f.eks. <em>david@contoso.com</em>), er tilknytningen af det *effektive brugernavn* til UPN ligetil. For organisationer, der ikke brugte arbejdsmails til at logge på Power BI (f.eks. <em>david@contoso.onmicrosoft.com</em>), vil tilknytning mellem AAD og de lokale legitimationsoplysninger kræve [katalogsynkronisering](/azure/active-directory-domain-services/synchronization) for at fungere korrekt.
 
 Platformssikkerhed i forbindelse med Power BI indeholder også miljøsikkerhed med flere lejere, netværkssikkerhed og mulighed for at tilføje ekstra sikkerhedsforanstaltninger baseret på AAD.
 
@@ -68,4 +68,3 @@ Denne gennemtvingelse kan udføres administrativt ved at angive registreringsdat
 **Power BI Desktop** respekterer de indstillinger for registreringsdatabasenøgler, der er beskrevet i disse artikler, og der oprettes kun forbindelse ved hjælp af den tilladte TLS-version på baggrund af disse indstillinger i registreringsdatabasen, når de findes.
 
 Du kan finde flere oplysninger om, hvordan du angiver disse registreringsdatabasenøgler, i artiklen [TLS-indstillinger i registreringsdatabasen](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
-

@@ -10,22 +10,22 @@ ms.date: 04/27/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8ff022c09fc58f5ebeadbb869039c00c6dd28533
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b08184e92730bd3a42a91424883d07cecec82549
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275587"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564466"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
 På administrationsportalen kan du administrere en Power BI-*lejer* for din organisation. Portalen indeholder elementer såsom metrikværdier, adgang til Microsoft 365 Administration og indstillinger.
 
-Hele administrationsportalen kan tilgås af alle brugere, som er globale administratorer i Office 365, eller som er blevet tildelt rollen Power BI-tjenesteadministrator. Hvis du ikke har en af disse roller, kan du kun se **Kapacitetsindstillinger** på portalen. Du kan finde flere oplysninger om Power BI-tjenesteadministratorrollen under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md).
+Hele administrationsportalen kan tilgås af alle brugere, som er globale administratorer, eller som er blevet tildelt rollen som administrator af Power BI-tjenesten. Hvis du ikke har en af disse roller, kan du kun se **Kapacitetsindstillinger** på portalen. Du kan finde flere oplysninger om rollen som administrator af Power BI-tjenesten under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md).
 
 ## <a name="how-to-get-to-the-admin-portal"></a>Sådan finder du vej til administrationsportalen
 
-Din konto skal være markeret som en **Global administrator** i Office 365 eller Azure AD (Azure Active Directory), eller den skal være tildelt Power BI-tjenesteadministratorrollen, for at du kan få adgang til Power BI-administrationsportalen. Du kan finde flere oplysninger om Power BI-tjenesteadministratorrollen under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md). Benyt følgende fremgangsmåde for at tilgå Power BI-administrationsportalen.
+Din konto skal være markeret som **Global administrator** i Microsoft 365 eller Azure AD (Azure Active Directory), eller den skal være tildelt rollen som administrator af Power BI-tjenesten, før du kan få adgang til Power BI-administrationsportalen. Du kan finde flere oplysninger om rollen som administrator af Power BI-tjenesten under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md). Benyt følgende fremgangsmåde for at tilgå Power BI-administrationsportalen.
 
 1. Vælg tandhjulet Indstillinger i øverste højre hjørne af Power BI-tjenesten.
 
@@ -85,7 +85,7 @@ Med disse oplysninger kan du få reel indsigt i, hvordan personer bruger Power B
 
 ## <a name="control-usage-metrics"></a>Kontrollér forbrugsdata
 
-Rapporter med forbrugsdata er en funktion, som Power BI- eller Office 365-administratoren kan slå til eller fra. Administratorer har detaljeret kontrol over, hvilke brugere der har adgang til forbrugsdata. Det er slået **Til** som standard for alle brugere i organisationen.
+Rapporter med forbrugsdata er en funktion, som Power BI- eller Microsoft 365-administratoren kan slå til eller fra. Administratorer har detaljeret kontrol over, hvilke brugere der har adgang til forbrugsdata. Det er slået **Til** som standard for alle brugere i organisationen.
 
 Administratorer kan også bestemme, om oprettere af indhold kan se brugerspecifikke data i forbrugsdata. 
 
@@ -189,10 +189,10 @@ Arbejdsområder er steder, hvor brugerne kan samarbejde om dashboards, rapporter
 
 :::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="Opret de nye arbejdsområdeoplevelser":::
 
-I forbindelse med klassiske arbejdsområder, der er baseret på Office 365 Grupper, finder administrationen fortsat sted i Office 365-administrationsportalen og Azure Active Directory.
+I forbindelse med klassiske arbejdsområder, der er baseret på Microsoft 365 Grupper, finder administrationen fortsat sted på administrationsportalen og i Azure Active Directory.
 
 > [!NOTE]
-> Indstillingen **Opret arbejdsområder (i den nye arbejdsområdeoplevelse)** er som standard angivet til kun at give de brugere, der kan oprette Office 365-grupper, tilladelse til at oprette nye arbejdsområder i Power BI. Sørg for at angive en værdi i Power BI-administrationsportalen for at sikre, at relevante brugere kan oprette arbejdsområder.
+> Indstillingen **Opret arbejdsområder (i den nye arbejdsområdeoplevelse)** er som standard angivet til kun at give de brugere, der kan oprette Microsoft 365-grupper, tilladelse til at oprette nye arbejdsområder i Power BI. Sørg for at angive en værdi i Power BI-administrationsportalen for at sikre, at relevante brugere kan oprette arbejdsområder.
 
 **Liste over arbejdsområder**
 
@@ -334,7 +334,7 @@ På følgende billede vises indstillingen **Hele min organisation**, når du opr
 
 ### <a name="create-template-apps-and-organizational-content-packs"></a>Opret skabelonbaserede apps og indholdspakker for organisationen
 
-Brugere i virksomheden kan oprette skabelonbaserede apps og indholdspakker for organisationen, der bruger datasæt baseret på én datakilde i Power BI Desktop. Få mere at vide om [skabelonapps](../template-content-pack-authoring.md).
+Brugere i virksomheden kan oprette skabelonbaserede apps og indholdspakker for organisationen, der bruger datasæt baseret på én datakilde i Power BI Desktop. Få mere at vide om [skabelonapps](../connect-data/service-template-apps-create.md).
 
 ### <a name="push-apps-to-end-users"></a>Push apps til slutbrugere
 
@@ -625,7 +625,3 @@ Se [Fremhævet indhold](#featured-content) i denne artikel for at få oplysninge
 [Overvågning af Power BI i din virksomhed](service-admin-auditing.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-
-
-
-
