@@ -6,57 +6,57 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/24/2020
+ms.date: 05/17/2020
 ms.author: mihart
 LocalizationGroup: Administration
-ms.openlocfilehash: b74d06c9be03ae98fb6c8b2e38f665f9bbcc92b1
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 9db228253e0e88105108a1b3a5eaf725c73e0abb
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83345049"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563525"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Tilmelding til Power BI med en ny prøveversion af Microsoft 365
 
-I denne artikel beskrives det, hvordan du kan tilmelde dig Power BI, hvis du ikke allerede har en arbejds- eller skolemailkonto. 
+I denne artikel beskrives det, hvordan du kan tilmelde dig Power BI, hvis du ikke allerede har en arbejds- eller skolemailkonto.
 
 Hvis du har problemer med at tilmelde dig Power BI med din mailadresse, skal du først kontrollere, at det er en [mailadresse, der kan bruges med Power BI](../fundamentals/service-self-service-signup-for-power-bi.md#supported-email-addresses). Hvis det ikke lykkes, kan du tilmelde dig en Microsoft 365-prøveversion og oprette en arbejdskonto. Derefter skal du bruge den nye arbejdskonto til at tilmelde dig Power BI-tjenesten. Du kan stadig bruge Power BI, efter prøveversionen af Microsoft 365 er udløbet.
 
 > [!NOTE]
 > Office 365 blev for nylig omdøbt til Microsoft 365. Du kan stadig støde på, at det omtales som Office 365, indtil alle vores artikler er opdateret.
 
-1. Tilmeld dig en prøveversion af Microsoft 365 [på Microsoft 365-webstedet](https://www.microsoft.com/en-us/microsoft-365/business/compare-more-office-365-for-business-plans).
+## <a name="sign-up-for-a-microsoft-365-trial-of-office"></a>Tilmeld dig en Microsoft 365-prøveversion af Office
+Tilmeld dig en Microsoft 365-prøveversion [på Microsoft 365-webstedet](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). Hvis du ikke allerede har en konto, guider Microsoft dig igennem trinnene til at oprette en. Da kommercielle mailkonti (f.eks. Hotmail og Gmail) ikke fungerer sammen med Microsoft 365, skal du oprette en ny konto, der gør.  Denne mailkonto vil ligne følgende *zalan@onmicrosoft.com* .
 
-    ![velkomstside](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-now.png)
+![Vælg Prøv gratis](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-free.png)
 
-    ![Vælg at tilmelde dig en ny konto](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-existing.png)
+Hvis du vælger **Office 365 E5**, indeholder din prøveversion Power BI Pro. Prøveversionen af Power BI Pro udløber samtidig med prøveversionen af Office 365 E5, som i øjeblikket er 30 dage. Hvis du i stedet vælger **Office 365 E3**, kan du tilmelde dig Power BI som *gratis* bruger og opgradere til **Pro** og få en 60-dages prøveversion. 
 
-    ![opret en arbejds- eller skolekonto](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-email.png)
+1. Angiv din mailadresse. Microsoft giver dig besked om, om denne mailadresse fungerer sammen med Microsoft 365, eller om du har brug for at oprette en ny mailadresse.  ![velkomstside](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-setup.png)
 
-    ![Vælg at tilmelde dig en ny konto](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-no-email.png)
+    Hvis du har brug for en ny mailadresse, guider Microsoft dig igennem trinnene. Første trin er at oprette en ny konto. Vælg **Konfigurer konto**.
 
-    ![angiv dine kontaktoplysninger](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-welcome-you.png)
+    ![Vælg at tilmelde dig en ny konto](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-email.png)
 
-    
+2. Angiv oplysninger om den nye konto.
 
-1. Opret dit nye logonnavn til dit arbejde, der ser ud som you@yourcompany.onmicrosoft.com. Dette er det logon, du skal bruge med Power BI.
+    ![opret en arbejds- eller skolekonto](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-enter-info.png)
 
-    ![opret arbejdsadresse](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-address.png)
+3. Opret din nye mailadresse og adgangskode. Opret et nyt logonnavn, der ligner you@yourcompany.onmicrosoft.com. Det er dette logon, du skal bruge med din nye Office 365-konto og med Power BI.
 
-    ![hent kode som sms](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-robot.png)    
+    ![Vælg at tilmelde dig en ny konto](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-account.png)
 
-1. Du skal muligvis vente, mens din nye lejer bliver oprettet. 
+4. Det er det hele.  Du har nu en mailadresse, som du kan bruge til at tilmelde dig Power BI. Forsæt til [Tilmeld dig Power BI-tjenesten som enkeltperson](../service-self-service-signup-for-power-bi.md)
 
-Det er det hele.  Du har nu en mailadresse, som du kan bruge til at tilmelde dig Power BI. Forsæt til [Tilmeld dig Power BI-tjenesten som enkeltperson](../fundamentals/service-self-service-signup-for-power-bi.md)
+     ![angiv dine kontaktoplysninger](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-thank.png)
 
-
-
-
+    Du skal muligvis vente, mens din nye lejer bliver oprettet.
 
 ## <a name="important-considerations"></a>Vigtige overvejelser
-Hvis du har problemer med at logge på med den nye konto, kan du prøve at bruge en privat browsersession.    
 
-Ved hjælp af denne metode til tilmelding opretter du en ny organisationslejer, og du bliver administrator for lejeren. Du kan finde flere oplysninger under [Hvad er Power BI-administration?](service-admin-administering-power-bi-in-your-organization.md). Du kan føje nye brugere til din lejer og derefter dele med dem, som beskrevet i [dokumentationen til Microsoft 365 Administration](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+Hvis du har problemer med at logge på med den nye konto, kan du prøve at bruge en privat browsersession.
+
+Ved hjælp af denne metode til tilmelding opretter du en ny organisationslejer, og du bliver administrator for lejeren. Du kan finde flere oplysninger under [Hvad er Power BI-administration?](service-admin-administering-power-bi-in-your-organization.md). Du kan føje nye brugere til din lejer og derefter dele med dem, som beskrevet i [dokumentationen til Microsoft 365 Administration](https://support.office.com/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ## <a name="next-steps"></a>Næste trin
 

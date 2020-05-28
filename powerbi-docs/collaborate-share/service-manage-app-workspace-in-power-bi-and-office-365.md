@@ -1,6 +1,6 @@
 ---
-title: Administrer dit arbejdsområde i Power BI og Office 365
-description: Arbejdsområder i Power BI er en samarbejdsbaseret oplevelse bygget på Office 365-grupper. Administrer dine arbejdsområder i både Power BI og Office 365.
+title: Administrer dit arbejdsområde i Power BI og Microsoft 365
+description: Arbejdsområder i Power BI er en samarbejdsbaseret oplevelse baseret på Microsoft 365-grupper. Administrer dine arbejdsområder i både Power BI og Microsoft 365.
 author: maggiesMSFT
 ms.reviewer: lukasz
 ms.service: powerbi
@@ -9,27 +9,27 @@ ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 27f3c88607f57be8b5abffdbec71ecfe80beea23
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 1365eba697538255ea8c23b03f0b5db71a7ba1cd
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348062"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693801"
 ---
-# <a name="manage-your-workspace-in-power-bi-and-office-365"></a>Administrer dit arbejdsområde i Power BI og Office 365
+# <a name="manage-your-workspace-in-power-bi-and-microsoft-365"></a>Administrer dit arbejdsområde i Power BI og Microsoft 365
 
-Som opretter eller administrator af et [arbejdsområde i Power BI](service-create-distribute-apps.md) eller Office 365 kan du administrere visse aspekter af arbejdsområdet i Power BI. Andre aspekter kan du administrere i Office 365.
+Som opretter eller administrator af et [arbejdsområde i Power BI](service-create-distribute-apps.md) eller Microsoft 365 kan du administrere visse aspekter af arbejdsområdet i Power BI. Andre aspekter du kan administrere i Microsoft 365.
 
 > [!NOTE]
-> Den nye arbejdsområdeoplevelse ændrer relationen mellem Power BI-arbejdsområder og Office 365-grupper. Du opretter ikke automatisk en Office 365-gruppe, hver gang du opretter et af de nye arbejdsområder. Læs om [oprettelse af nye arbejdsområder](service-create-the-new-workspaces.md).
+> Den nye arbejdsområdeoplevelse ændrer relationen mellem Power BI-arbejdsområder og Microsoft 365-grupper. Du opretter ikke automatisk en Microsoft 365-gruppe, hver gang du opretter et af de nye arbejdsområder. Læs om [oprettelse af nye arbejdsområder](service-create-the-new-workspaces.md).
 
 I **Power BI** kan du:
 
 * Tilføje eller fjerne medlemmer af arbejdsområdet, herunder udnævnelse af et medlem af arbejdsområdet til administrator.
 * Redigere navnet på arbejdsområdet.
-* Slet arbejdsområdet, hvilket også sletter Office 365-gruppen.
+* Slette arbejdsområdet, hvilket også sletter Microsoft 365-gruppen.
 
-I **Office 365** kan du:
+I **Microsoft 365** kan du:
 
 * Tilføje eller fjerne gruppemedlemmer af arbejdsområdet, herunder udnævnelse af et medlem til ejer.
 * Redigere gruppenavn, billede, beskrivelse og andre indstillinger.
@@ -53,9 +53,9 @@ Du skal bruge en [Power BI Pro-licens](../fundamentals/service-features-license-
 
 1. Vælg **Gem** eller **Annuller**.
 
-## <a name="edit-power-bi-workspace-properties-in-office-365"></a>Rediger egenskaberne for Power BI-arbejdsområder i Office 365
+## <a name="edit-power-bi-workspace-properties-in-microsoft-365"></a>Rediger egenskaberne for Power BI-arbejdsområder i Microsoft 365
 
-Du kan også redigere aspekter af et arbejdsområde direkte i Outlook til Office 365.
+Du kan også redigere aspekter af et arbejdsområde direkte i Outlook til Microsoft 365.
 
 ### <a name="edit-the-members-of-the-workspace-group"></a>Rediger medlemmerne af gruppen for arbejdsområdet
 
@@ -63,17 +63,17 @@ Du kan også redigere aspekter af et arbejdsområde direkte i Outlook til Office
 
    ![Rediger arbejdsområder i Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis-members.png)
 
-   Dette åbner gruppevisningen i Outlook til Office 365 af dit arbejdsområde. Du skal muligvis logge på din firmakonto.
+   Dette åbner gruppevisningen i Outlook til Microsoft 365 af dit arbejdsområde. Du skal muligvis logge på din firmakonto.
 
 1. Vælg rollen ud for teammedlemmets navn for at udnævne personen til **Medlem** eller **Ejer**. Vælg **X** for at fjerne personen fra gruppen.
 
-   ![Rediger en gruppe i Office 365](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_managegroupo365.png)
+   ![Rediger en gruppe i Microsoft 365](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_managegroupo365.png)
 
 ### <a name="add-an-image-and-set-other-workspace-properties"></a>Tilføj et billede, og angiv andre egenskaber for arbejdsområdet
 
-Når du distribuerer din app fra arbejdsområdet, bliver det billede, du tilføjer her, billedet for din app. Se afsnittet [Føj et billede til dit Office 365-arbejdsområde](service-create-workspaces.md#add-an-image-to-your-office-365-workspace-optional) i artiklen **Opret de nye arbejdsområder**.
+Når du distribuerer din app fra arbejdsområdet, bliver det billede, du tilføjer her, billedet for din app. Se afsnittet [Føj et billede til dit Microsoft 365-arbejdsområde](service-create-workspaces.md#add-an-image-to-your-microsoft-365-workspace-optional) i artiklen **Opret de nye arbejdsområder**.
 
-1. I visningen Outlook til Office 365 i dit arbejdsområde skal du gå til fanen **Om** og vælge **Rediger**.
+1. I visningen Outlook til Microsoft 365 i dit arbejdsområde skal du gå til fanen **Om** og vælge **Rediger**.
 
     ![Ikonet Rediger gruppe](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_editgroupo365.png)
 1. Du kan redigere navnet, beskrivelsen og sproget for grupperelaterede meddelelser. Du kan også tilføje et billede og angive andre egenskaber her.
@@ -82,7 +82,7 @@ Når du distribuerer din app fra arbejdsområdet, bliver det billede, du tilføj
 
 1. Vælg **Gem** eller **Fjern**.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Publicer en app i Power BI](service-create-distribute-apps.md)
 

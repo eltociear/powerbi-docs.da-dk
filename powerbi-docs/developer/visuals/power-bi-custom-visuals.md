@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: overview
 ms.date: 01/03/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 22c367dbc6160928541570bf2de37c51edcbfc14
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e9dc53eb3f49a1ef62e4e3539ac7eb6d92b317af
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80550872"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561633"
 ---
 # <a name="visuals-in-power-bi"></a>Visualiseringer i Power BI
 
@@ -41,7 +41,7 @@ Microsoft og medlemmer af community'et bidrager med deres Power BI-visualisering
 
 ### <a name="what-is-appsource"></a>Hvad er AppSource?
 
-[AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) er det sted, hvor du finder apps, tilføjelsesprogrammer og udvidelser til din Microsoft-software. AppSource forbinder millioner af brugere af produkter som Office 365, Azure, Dynamics 365, Cortana og Power BI med løsninger, der kan hjælpe dem med at arbejde mere effektivt og med større indsigt end før.
+[AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) er det sted, hvor du finder apps, tilføjelsesprogrammer og udvidelser til din Microsoft-software. AppSource forbinder millioner af brugere af produkter såsom Microsoft 365, Azure, Dynamics 365, Cortana og Power BI med løsninger, der hjælper dem med at arbejde mere effektivt og med større indsigt end før.
 
 ### <a name="certified-power-bi-visuals"></a>Certificerede Power BI-visualiseringer
 
@@ -72,7 +72,7 @@ Hvis du er webudvikler og er interesseret i at oprette din egen visualisering og
 > [!WARNING]
 > En Power BI-visualisering kan indeholde kode, der kan udgøre en risiko for sikkerheden eller beskyttelsen af personlige oplysninger. Vær sikker på, at du har tillid til forfatteren og kilden til Power BI-visualiseringen, før du importerer den i din rapport.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * Hvis du er udvikler, skal du starte med selvstudiet [Udvikling af en Power BI-visualisering](custom-visual-develop-tutorial.md).
 
