@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ba0e04ff4cd56566f7d33445fafa7c8cfcc6b7ad
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4114287099300c371a6b02961a968702acb98f92
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83284790"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565454"
 ---
 # <a name="share-a-dataset-preview"></a>Del et datasæt (prøveversion)
 
@@ -24,7 +24,7 @@ Som forfatter af *datamodeller* i Power BI Desktop opretter du *datasæt*, som d
 
 1. Du starter ved at oprette en .pbix-fil med en datamodel i Power BI Desktop. Hvis du planlægger at tilbyde dette datasæt, så andre kan oprette rapporter, designer du muligvis slet ikke en rapport i .pbix-filen.
 
-    Det er bedste praksis at gemme .pbix-filen i en Office 365-gruppe.
+    Det er bedste praksis at gemme .pbix-filen i en Microsoft 365-gruppe.
 
 1. Publicer .pbix-filen i et [arbejdsområde med den nye oplevelse](../collaborate-share/service-create-the-new-workspaces.md) i Power BI-tjenesten.
     
@@ -51,7 +51,7 @@ Når du har et delt datasæt i dit arbejdsområde, vil du måske gerne vide, hvi
  
     ![Dialogboksen Relateret indhold](media/service-datasets-build-permissions/power-bi-dataset-related-workspaces.png)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 - [Brug datasæt på tværs af arbejdsområder (prøveversion)](service-datasets-across-workspaces.md)
-- Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: a143a9b158d8a00fc129953a601f9e4c8f19875f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 69084048b46c77452bf94f04fd79a97c4f09af5b
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279704"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565988"
 ---
 # <a name="auto-datetime-guidance-in-power-bi-desktop"></a>Vejledning til automatisk dato/klokkeslæt i Power BI Desktop
 
@@ -34,7 +34,10 @@ I følgende punktopstilling beskrives overvejelser – og mulige begrænsninger 
     Det er derfor vigtigt, at filtrering eller gruppering udføres på kolonnen **År**. Når der zoomes ind på detaljeniveauet ved hjælp af hierarkiet, filtreres år, medmindre niveauet **År** er fjernet med vilje. Hvis der ikke er et filter eller en gruppe for år, vil en gruppering efter måned f.eks. opsummere værdier på tværs af alle år for den pågældende måned.
 - **Filtrering af dato for en enkelt tabel:** Da hver datokolonne producerer sin egen (skjulte) tabel med automatisk dato/klokkeslæt, er det ikke muligt at anvende et tidsfilter på én tabel og overføre den til flere modeltabeller. Filtrering på denne måde er et almindeligt modelkrav, når der rapporteres om flere emner (tabellen af faktatypen), f.eks. salg og salgsbudget. Når automatisk dato/klokkeslæt bruges, skal rapportforfatteren anvende filtre på hver enkelte datokolonne.
 - **Modelstørrelse:** Hver datokolonne, der genererer en skjult tabel med automatisk dato/klokkeslæt, vil resultere i en øget modelstørrelse og også forlænge opdateringstiden for data.
-- **Andre rapporteringsværktøjer:** Det er ikke muligt at arbejde med tabeller med automatisk dato/klokkeslæt, når du bruger [Analysér i Excel](../collaborate-share/service-analyze-in-excel.md) eller opretter forbindelse til modellen ved hjælp af rapportdesignere, der ikke er i Power BI.
+- **Andre rapporteringsværktøjer:** Det er ikke muligt at arbejde med tabeller med automatisk dato/klokkeslæt, når:
+  - der bruges [Analysér i Excel](../collaborate-share/service-analyze-in-excel.md).
+  - der bruges Analysis Services-forespørgselsdesignere til sideinddelte rapporter i Power BI.
+  - der oprettes forbindelse til modellen ved hjælp af rapportdesignere, som ikke er Power BI.
 
 ## <a name="recommendations"></a>Anbefalinger
 

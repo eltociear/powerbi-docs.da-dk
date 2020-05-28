@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.date: 04/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4995671fe5a3a4af0e74ce97d3227f73f005dc3f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 62d0282af47b0d57a0b9ac307b422191b440b45c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348522"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564081"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Opret forbindelse til filer, der gemmes i OneDrive for dit Power BI-arbejdsområde
 Når du har [oprettet et arbejdsområde i Power BI](../collaborate-share/service-create-distribute-apps.md), kan du gemme dine Excel-, CSV- og Power BI Desktop-filer på OneDrive for Business for dit Power BI-arbejdsområde. Du kan fortsætte med at opdatere de filer, du gemmer i OneDrive. Disse opdateringer afspejles automatisk i dine Power BI-rapporter og på dine Power BI-dashboards, som er baseret på filerne. 
 
 > [!NOTE]
-> Den nye arbejdsområdeoplevelse ændrer relationen mellem Power BI-arbejdsområder og Office 365-grupper. Du opretter ikke automatisk en Office 365-gruppe, hver gang du opretter et af de nye arbejdsområder. Læs om [oprettelse af nye arbejdsområder](../collaborate-share/service-create-the-new-workspaces.md)
+> Den nye arbejdsområdeoplevelse ændrer relationen mellem Power BI-arbejdsområder og Microsoft 365-grupper. Du opretter ikke automatisk en Microsoft 365-gruppe, hver gang du opretter et af de nye arbejdsområder. Læs om [oprettelse af nye arbejdsområder](../collaborate-share/service-create-the-new-workspaces.md)
 
 Tilføjelse af filer til dit arbejdsområde er en proces med to trin: 
 
@@ -34,10 +34,10 @@ Tilføjelse af filer til dit arbejdsområde er en proces med to trin:
 1. I Power BI-tjenesten skal du vælge pilen ud for Arbejdsområder > vælge ellipsen ( **…** ) ud for navnet på dit arbejdsområde. 
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
-2. Vælg **Filer** for at åbne OneDrive for Business for dit arbejdsområde i Office 365.
+2. Vælg **Filer** for at åbne OneDrive for Business for dit arbejdsområde i Microsoft 365.
    
    > [!NOTE]
-   > Hvis du ikke ser **Filer** i menuen til arbejdsområdet, skal du vælge **Medlemmer** for at åbne OneDrive for Business for dit arbejdsområde. Her skal du vælge **Filer**. Office 365 konfigurerer en OneDrive-lagerplacering til din apps gruppearbejdsområdefiler. Denne proces kan tage noget tid. 
+   > Hvis du ikke ser **Filer** i menuen til arbejdsområdet, skal du vælge **Medlemmer** for at åbne OneDrive for Business for dit arbejdsområde. Her skal du vælge **Filer**. Microsoft 365 konfigurerer en OneDrive-lagerplacering til din apps filer i gruppearbejdsområdet. Denne proces kan tage noget tid.
    > 
    > 
 3. Her kan du uploade dine filer til OneDrive for Business for dit apparbejdsområde. Vælg **Upload**, og gå til dine filer.
@@ -75,9 +75,9 @@ Nu, hvor dine filer er i OneDrive for Business for dit arbejdsområde, står du 
    
     ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-connect.png)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 * [Opret apps og arbejdsområder i Power BI](../collaborate-share/service-create-distribute-apps.md)
 * [Importér data fra Excel-projektmapper](service-get-data-from-files.md)
 * [Opret forbindelse til hele Excel-projektmapper](service-excel-workbook-files.md)
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv Power BI-community'et](https://community.powerbi.com/)
 * Har du feedback? Besøg [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi)

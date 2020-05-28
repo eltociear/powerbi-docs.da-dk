@@ -7,15 +7,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 05/15/2020
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 9ee04211c44fb342e4baf904bcfa73bab489a1ba
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: f057395361840b7b16fa8a7cde5a6d2513196845
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273632"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438217"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten
 
@@ -105,12 +105,13 @@ Power BI-administratorer kan bruge Power BI-overvågningslogge til at få vist o
 
 ### <a name="general"></a>Generelt
 
-- I sjældne tilfælde kan det tage længere tid end 15 minutter at levere mailabonnementer til deres modtagere. Hvis det sker, anbefaler vi, at du kører en opdatering af dine data og dit mailabonnement på forskellige tidspunkter for at sikre rettidig levering. Hvis problemet fortsætter, skal du kontakte Power BI-support.
-- Hvis du vil undgå abonnementsmails i mappen med uønsket post, skal du føje dit Power BI-mailalias [no-reply-powerbi@microsoft.com](mailto:no-reply-powerbi@microsoft.com)) til dine kontakter. Hvis du bruger Microsoft Outlook, skal du højreklikke på aliasset og vælge **Føj til Outlook-kontaktpersoner**.
+- Dit abonnement påbegynder behandling på det tidspunkt, du angiver for abonnementet, ligesom med andre BI-produkter.  Når rapportbehandlingen er fuldført, sættes abonnementet i kø og sendes til modtagerne af mailen.  Vi bestræber os på at behandle og levere abonnementer så hurtigt som muligt. Men nogle gange ved spidsbelastningsperioder kan du opleve en længere forskydning på grund af det antal abonnementer, som Power BI kan sende på én gang. De fleste kunder bør ikke opleve en forskydning på mere end 15 minutter for behandling og afsendelse af rapporter. Det kan tage op til 30 minutter på bestemte tidspunkter og for bestemte lejere, der har markant forbrug.  Vi forventer aldrig nogen forskydning i forbindelse med levering på mere end 60 minutter fra det tidspunkt, som abonnementet er planlagt.  Hvis du oplever en så lang forskydning, skal du først sikre, at adressen `no-reply-powerbi@microsoft.com` er angivet på hvidlisten af din mailudbyder.  Hvis den er det, skal du kontakte Power BI-support for at få hjælp.
 - Mailabonnementer for rapporter/dashboards, der bruger datasæt med direkte forbindelser, understøttes i øjeblikket ikke, når du abonnerer på brugere ud over dig selv, undtagen i forbindelse med sideinddelte rapporter. Du kan tilmelde andre til et abonnement på en sideinddelt rapport ved hjælp af din sikkerhedskontekst. Læs mere om at [abonnere på sideinddelte rapporter](../consumer/paginated-reports-subscriptions.md).
 - Power BI afbryder automatisk midlertidigt opdatering af datasæt, der er knyttet til dashboards og rapporter, som ikke er blevet besøgt i mere end to måneder. Men hvis du føjer et abonnement til et dashboard eller en rapport, afbrydes det ikke midlertidigt, selvom det ikke besøges.
 - Hvis du ikke modtager abonnementsmailene, skal du kontrollere, at din brugers hovednavn (UPN) kan modtage mails.
 - Hvis dit dashboard eller din rapport er i Premium-kapacitet, kan du bruge mailaliasser for grupper til abonnementer i stedet for at oprette abonnementer for kollegaer én mailadresse ad gangen. Aliasserne er baseret på det aktuelle Active Directory.
+- Hvis dit indhold ikke er i Premium-kapacitet, er det kun Power BI Pro-brugere, der kan modtage mailabonnementer. 
+- Abonnementer understøtter i øjeblikket ikke bogmærker.
 
 ### <a name="dashboards"></a>Dashboards
 
@@ -118,7 +119,7 @@ Power BI-administratorer kan bruge Power BI-overvågningslogge til at få vist o
 - I sjældne tilfælde kan det tage længere tid end 15 minutter at levere mailabonnementer til deres modtagere. Hvis det sker, anbefaler vi, at du kører en opdatering af dine data og dit mailabonnement på forskellige tidspunkter for at sikre rettidig levering. Hvis problemet fortsætter, skal du kontakte Power BI-support.
 - For mailabonnementer på dashboards vises nogle felter ikke, hvis der er anvendt sikkerhed på rækkeniveau for dem.
 - Visse typer felter understøttes endnu ikke for dashboardabonnementer. Det er bl.a. streamingfelter, videofelter og felter med brugerdefineret webindhold.
-- Hvis du deler et dashboard med en kollega uden for din lejer, kan du ikke også oprette et abonnement for den pågældende kollega, *medmindre* dashboardet er placeret i et Premium-arbejdsområde eller -app. Så hvis du er aaron@contoso.com, kan du dele med anyone@fabrikam.com, men du kan endnu ikke oprette abonnement for anyone@fabrikam.com, og vedkommende kan ikke abonnere på delt indhold.
+- Hvis du deler et dashboard med en kollega uden for din lejer, kan du ikke også oprette et abonnement for den pågældende kollega, *medmindre* dashboardet er placeret i et Premium-arbejdsområde eller -app. Så hvis du er `aaron@contoso.com`, kan du dele med `anyone@fabrikam.com`, men du kan endnu ikke oprette abonnement for `anyone@fabrikam.com`, og vedkommende kan ikke abonnere på delt indhold.
 
 ### <a name="reports"></a>Rapporter
 

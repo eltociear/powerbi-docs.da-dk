@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/23/2020
+ms.date: 05/18/2020
 ms.author: kfollis
-ms.openlocfilehash: 7ed9f22f262e03885681cf2fdc36867533837cdc
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 1a90a9826d794f84933a75213043c31a9a67a4b5
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83360916"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83566034"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 [//]: # "Tatevik Tatero er en leverandør, der arbejder med Chauncy Freels og hjælper med at vedligeholde listen over webinarer"
@@ -22,13 +22,20 @@ Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når
 
 ## <a name="upcoming-webinars"></a>Kommende webinarer
 
-Der er ikke planlagt webinarer endnu. Tjek igen senere for at se flere kommende arrangementer.
+**Hvad er forskellen på Analytics og BI?**
+<br>ved Nate Findley og Charles Feddersen, Microsoft
+<br>[Tilmeld dig for at se med d. 3. juni 2020 kl. 10:00-11:00 PDT]( https://info.microsoft.com/ww-landing-What-is-the-difference-between-analytics-and-business-intelligence.html?lcid=en-u)
+
 
 >[Kommende webinarer fra Power BI-community'et](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Udvalgte webinarer
 
 Kom i gang med disse populære webinarer, når det passer dig
+
+**Udforsk den samlede økonomiske indvirkning af Microsoft Power BI**
+<br>ved Megan Tomlin, Microsoft, og Jonathan Lipsitz, Forrester Consulting
+<br>[Se nu]( https://info.microsoft.com/ww-landing-Explore-the-Total-Economic-Impact-Of-Microsoft-Power-BI.html?Lcid=EN-US)
 
 **Analyse i virtuel Azure-hændelse: Opnå hurtigere indsigt med Azure Synapse Analytics**
 <br>af Gayle Sheppard og John MacIntyre
@@ -86,7 +93,7 @@ Kom i gang med disse populære webinarer, når det passer dig
 <br>ved Nimrod Shalit
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-PBI-JavaScript-API-video.html)
 
-**Power BI, Excel og Office 365: Optimer dine virksomhedsdata**
+**Power BI, Excel og Microsoft 365: Optimer dine virksomhedsdata**
 <br>ved Olaf Hubel og Miguel Martinez
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 

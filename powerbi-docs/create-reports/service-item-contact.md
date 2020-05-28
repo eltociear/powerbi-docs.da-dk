@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/08/2019
 ms.author: lukaszp
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 3f0d60bb780b980d3840072568e30d6b4e09da34
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 5330b4c42794f0fa3110cef57f6d62ead0381e52
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348999"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561782"
 ---
 # <a name="set-contact-information-for-reports-and-dashboards-in-the-power-bi-service"></a>Angiv kontaktoplysninger for rapporter og dashboards i Power BI-tjenesten
 I denne artikel kan du se, hvordan du angiver kontaktoplysninger for et dashboard eller en rapport i Power BI-tjenesten.
@@ -24,11 +24,11 @@ I denne artikel kan du se, hvordan du angiver kontaktoplysninger for et dashboar
 
 Du kan føje flere brugere eller grupper til kontakten for et element. De kan være:
 * En person
-* En Office 365-gruppe
+* En Microsoft 365-gruppe
 * En mailaktiveret sikkerhedsgruppe
 * En distributionsliste
 
-Den person, der opretter en ny rapport eller et nyt dashboard, er som standard kontakten for den eller det. Hvis du angiver en værdi, tilsidesætter den standarden. Du kan naturligvis fjerne alle personer eller grupper fra listen over kontakter. Når du gør det, vises Office 365-gruppen for arbejdsområdet for klassiske arbejdsområder. For arbejdsområder med den nye arbejdsområdeoplevelse bruges [listen over kontakter for arbejdsområdet](../collaborate-share/service-create-the-new-workspaces.md#workspace-contact-list). Hvis listen over kontakter for arbejdsområdet ikke er angivet, vises administratorerne af arbejdsområdet.
+Den person, der opretter en ny rapport eller et nyt dashboard, er som standard kontakten for den eller det. Hvis du angiver en værdi, tilsidesætter den standarden. Du kan naturligvis fjerne alle personer eller grupper fra listen over kontakter. Når du gør det, vil Microsoft 365-gruppen for arbejdsområdet blive vist for klassiske arbejdsområder. For arbejdsområder med den nye arbejdsområdeoplevelse bruges [listen over kontakter for arbejdsområdet](../collaborate-share/service-create-the-new-workspaces.md#workspace-contact-list). Hvis listen over kontakter for arbejdsområdet ikke er angivet, vises administratorerne af arbejdsområdet.
 
 Kontaktoplysningerne vises for folk, når de får vist elementet. 
 
@@ -63,6 +63,6 @@ Oplysningerne på listen over kontakter bruges også andre steder. Den vises f.e
 * Listen over kontaktpersoner på elementniveau bliver ikke skubbet til apps, når de udgives. Den nye appnavigation indeholder en URL-adresse til support, som du kan konfigurere som en hjælp til at administrere feedback fra et stort antal appbrugere.
 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/16/2020
+ms.date: 05/19/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5fb1b96f46761bf0c724abb8e36de8bb93634fdc
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: f84fcc4b32468ab8ffddbb593ae97ea8fb20442a
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347642"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693616"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 
@@ -99,6 +99,7 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 * InterSystems IRIS (beta)
 * Jethro (beta)
 * Kyligence
+* Linkar PICK Style/MultiValue Databases (beta)
 * MarkLogic
 
 > [!NOTE]
@@ -139,6 +140,7 @@ Kategorien **Azure** indeholder følgende dataforbindelser:
 * Interaktiv HDInsight-forespørgsel
 * Azure Data Explorer (Kusto)
 * Azure Cost Management
+* Azure Time Series Insights (beta)
 
 
 På følgende billede vises vinduet **Hent data** for **Azure**.
@@ -187,12 +189,13 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Industrial App Store
 * Intune Data Warehouse (beta)
 * Microsoft Graph Security (beta)
+* Projectplace til Power BI (beta)
 * Product Insights (beta)
 * Quick Base
 * TeamDesk (beta)
-* Workplace Analytics (beta)
-* Projectplace til Power BI (beta)
 * Webtrends Analytics (beta)
+* Witivio (beta)
+* Workplace Analytics (beta)
 * Zoho Creator (beta)
 
 På følgende billede vises vinduet **Hent data** for **Onlinetjenester**.
@@ -215,7 +218,7 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Python-script
 * ODBC
 * OLE DB
-* BI360 – Budgeting & Financial Reporting (beta)
+* Solver
 * Cognite Data Fusion (beta)
 * FHIR
 * Information Grid (beta)
@@ -224,15 +227,14 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Paxatas
 * QubolePresto (beta)
 * Roamler (beta)
+* Shortcuts Business Insights (beta)
 * Siteimprove
 * SurveyMonkey (beta)
+* Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (beta)
 * Vena (beta)
 * Workforce Dimensions (beta)
 * Zucchetti HR Infinity (beta)
-* Tenforce (Smart)List
-* Shortcuts Business Insights (beta)
-* Vessel Insight (beta)
 * Tom forespørgsel
 
 På følgende billede vises vinduet **Hent data** for **Andet**.

@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 04/27/2020
-ms.openlocfilehash: c424572cf222e4b2f65354e7b9a0959b60a56fca
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 7034bd544ee9c14dd5f32df9335faefd4221e4ac
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83143802"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693901"
 ---
 # <a name="embed-reports-in-microsoft-teams-with-the-power-bi-tab"></a>Integrer rapporter i Microsoft Teams ved hjælp af Power BI-fanen
 
@@ -28,7 +28,8 @@ Du kan sikre, at **Power BI-fanen til Microsoft Teams** fungerer, ved at sørge 
 - At brugerne har en Power BI Pro-licens, eller at rapporten er indeholdt i en [Power BI Premium-kapacitet (EM- eller P-SKU)](../admin/service-premium-what-is.md) med en Power BI-licens.
 - Microsoft Teams har en Power BI-fane.
 - Brugerne er logget på Power BI-tjenesten for at aktivere deres Power BI-licens, så de kan bruge rapporten.
-- Brugeren har tilladelse til at få vist rapporten.
+- Hvis du vil tilføje en rapport i Microsoft Teams via Power BI-fanen, skal du mindst have rollen som Seer i det arbejdsområde, der hoster rapporten. Se [Roller i de nye arbejdsområder](service-new-workspaces.md#roles-in-the-new-workspaces) for at få oplysninger om de forskellige roller.
+- Brugerne skal have tilladelse til at få vist rapporten, før de kan se den under Power BI-fanen i Microsoft Teams.
 
 Hvis **linkeksempler** skal kunne fungere, skal du også sikre, at:
 - Brugerne opfylder kravene til at bruge Power BI-fanen til Microsoft Teams.
@@ -90,12 +91,12 @@ Følg disse trin for at få et linkeksempel af indhold i Power BI-tjenesten.
 
 ## <a name="grant-access-to-reports"></a>Giv adgang til rapporter
 
-Integrering af en rapport i Microsoft Teams eller afsendelse af et link til et element giver ikke automatisk brugerne tilladelse til at få vist rapporten. Du skal [give brugerne tilladelse til at få vist rapporten i Power BI](service-share-dashboards.md). Du kan bruge en Office 365-gruppe for dit team for at gøre det nemmere. 
+Integrering af en rapport i Microsoft Teams eller afsendelse af et link til et element giver ikke automatisk brugerne tilladelse til at få vist rapporten. Du skal [give brugerne tilladelse til at få vist rapporten i Power BI](service-share-dashboards.md). Du kan bruge en Microsoft 365-gruppe for dit team for at gøre det nemmere.
 
 > [!IMPORTANT]
 > Sørg for at gennemse, hvem der kan få vist rapporten, i Power BI-tjenesten, og giv adgang til dem, der er ikke angivet.
 
-Du kan f.eks. sikre, at alle i dit team har adgang til rapporter, ved at placere dem i et enkelt arbejdsområde i Power BI og give Office 365-gruppen for dit team adgang til arbejdsområdet.
+Du kan f.eks. sikre, at alle i dit team har adgang til rapporter, ved at placere rapporterne i et enkelt arbejdsområde i Power BI og give Microsoft 365-gruppen for dit team adgang til arbejdsområdet.
 
 ## <a name="link-previews"></a>Linkeksempler 
 
@@ -123,7 +124,7 @@ Når du føjer en Power BI-rapportfane til Teams, opretter Teams automatisk en f
 - Power BI understøtter ikke de samme oversatte sprog som Microsoft Teams. Derfor ser du muligvis ikke den korrekte oversættelse i den integrerede rapport.
 - Power BI-dashboards kan ikke integreres i Power BI-fanen til Microsoft Teams.
 - Brugere uden en Power BI-licens eller en tilladelse til rapporten, får vist meddelelsen "Indholdet er ikke tilgængeligt".
-- Der kan opstå tekniske problemer, hvis du bruger Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
+- Der kan opstå tekniske problemer, hvis du bruger Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Microsoft 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 - [URL-filtre](service-url-filters.md) understøttes ikke med Power BI-fanen til Microsoft Teams.
 - I de nationale cloudmiljøer er den nye Power BI-fane ikke tilgængelig. Der er muligvis en ældre version tilgængelig, som ikke understøtter den nye arbejdsområdeoplevelse eller rapporter i Power BI-apps. 
 - Når du har gemt fanen, kan du ikke ændre navnet på fanen under fanen Indstillinger. Du kan bruge funktionen til omdøbning for at ændre navnet.
