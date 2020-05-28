@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/13/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: edb34fc5592a6b851ae2c48690a772d75049fb48
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: dd7387bcb008d10ec8887ac777431b5423d43f4c
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274851"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120337"
 ---
 # <a name="dataset-impact-analysis"></a>Effektanalyse af datasæt
 
@@ -54,7 +54,7 @@ Forbrugsdataene relaterer til de seneste 30 dage, eksklusive dags dato. Antallet
 
 ## <a name="notify-contacts"></a>Giv kontakter besked
 
-Hvis du har foretaget en ændring af et datasæt eller påtænker at gøre det, kan det være en god idé at kontakte de relevante brugere for at fortælle dem om det. Når du giver kontakterne besked, sendes der en mail til [lister over kontakter](../collaborate-share/service-create-the-new-workspaces.md#workspace-contact-list) for alle de påvirkede arbejdsområder. Dit navn vises på mailen, så kontakterne kan finde dig og besvare dig i en ny mailtråd. 
+Hvis du har foretaget en ændring af et datasæt eller påtænker at gøre det, kan det være en god idé at kontakte de relevante brugere for at fortælle dem om det. Når du giver kontakterne besked, sendes der en mail til [lister over kontakter](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list) for alle de påvirkede arbejdsområder. Dit navn vises på mailen, så kontakterne kan finde dig og besvare dig i en ny mailtråd. 
 
 1. Klik på **Giv kontakter besked** i ruden Effektanalyse. Dialogboksen Giv kontakter besked vises.
 
