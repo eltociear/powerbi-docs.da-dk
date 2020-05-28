@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 96f1fd217a59ee95aed05b790800024dc9f72be9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: af3bf93469887a449f60fa051b7e7b5fb85060df
+ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79378131"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83407687"
 ---
 # <a name="visuals-in-power-bi"></a>Visualiseringer i Power BI
 
@@ -102,7 +102,7 @@ Handlinger og efterfølgende opdateringer i Power BI-visualiseringer optræder i
 
 * En bruger anvender et filter via visualiseringen.
 
-    En visualisering kan kalde metoden `applyJsonFilter` og overføre betingelser for at filtrere efter data i andre visualiseringer. Der er flere tilgængelige filtertyper, herunder basisfiltre, avancerede filtre og tuplefiltre.
+    En visualisering kan kalde metoden `applyJsonFilter` og overføre betingelser for at filtrere efter data i andre visualiseringer. Der er flere tilgængelige filtertyper, herunder basisfiltre, avancerede filtre og tupelfiltre.
 
     Du kan finde flere oplysninger i [API til visualisering af filtre i Power BI](filter-api.md).
 
@@ -126,7 +126,7 @@ Handlinger og efterfølgende opdateringer i Power BI-visualiseringer optræder i
 
     Hvis du vil vide mere om hændelsestjenesten, skal du se [Gengiv hændelser i visualiseringer i Power BI](event-service.md).
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Er du interesseret i at oprette dine egne visualiseringer og føje dem til Microsoft AppSource? Se følgende artikler:
 

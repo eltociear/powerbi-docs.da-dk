@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 459eaf6ba8b4f6e09b2df5f55956dc77adee9667
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: ce18b3cb077e0fee2eea4d0d31327329f405a51a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83344382"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563757"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration af Power BI – ofte stillede spørgsmål
 
@@ -81,7 +81,7 @@ Der er tre scenarier, der kan gøre sig gældende for brugere i din organisation
 
 ### <a name="how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant"></a>Hvordan forhindrer jeg, at brugerne tilmelder sig min eksisterende Microsoft 365-lejer?
 
-Som Global administrator i Microsoft 365 er der nogle trin, du kan udføre, for at forhindre, at brugerne tilmelder sig din eksisterende Microsoft 365-lejer. Hvis du blokerer adgangen, mislykkes brugernes forsøg på at tilmelde sig, og der vises en besked om, at de skal kontakte administratoren for deres organisation. Du behøver ikke at gentage denne proces, hvis du allerede har deaktiveret automatisk licensdistribution (f.eks. via Office 365 for Education til studerende, undervisere og ansatte).
+Som global administrator er der nogle trin, du kan udføre, for at forhindre, at brugerne tilmelder sig din eksisterende Microsoft 365-lejer. Hvis du blokerer adgangen, mislykkes brugernes forsøg på at tilmelde sig, og der vises en besked om, at de skal kontakte administratoren for deres organisation. Du behøver ikke at gentage denne proces, hvis du allerede har deaktiveret automatisk licensdistribution (f.eks. via Office 365 for Education til studerende, undervisere og ansatte).
 
 Brug følgende PowerShell-script til at forhindre, at nye brugere tilmelder sig en administreret lejer. ([Få mere at vide om PowerShell][1].)
 
@@ -169,7 +169,7 @@ Der er tre scenarier, der kan gøre sig gældende for brugere i din organisation
 
 ### <a name="how-do-we-manage-power-bi"></a>Hvordan administrerer vi Power BI?
 
-Power BI indeholder en Power BI-administrationsportal til brugere med rollen Global administrator i Microsoft 365 og brugere med rollen Administrator i Power BI-tjenesten. Hvis du vil bruge Power BI-administrationsportalen, skal du markere din konto som **Global administrator** i Microsoft 365 eller Azure Active Directory, eller nogen skal tildele rollen Administrator i Power BI-tjenesten til din brugerkonto. Få mere at vide under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md) og [Power BI-administrationsportalen](service-admin-portal.md). Portalen indeholder muligheden for at styre indstillingerne i hele lejeren, få vist brugsstatistikker for Power BI og et link til Microsoft 365-administrationscentret, hvor du kan administrere brugere og grupper.
+Power BI indeholder en Power BI-administrationsportal til brugere med rollen Global administrator i Microsoft 365 og brugere med rollen som administrator af Power BI-tjenesten. Hvis du vil bruge Power BI-administrationsportalen, skal du markere din konto som **Global administrator** i Microsoft 365 eller Azure Active Directory, eller nogen skal tildele rollen som administrator af Power BI-tjenesten til din brugerkonto. Få mere at vide under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md) og [Power BI-administrationsportalen](service-admin-portal.md). Portalen indeholder muligheden for at styre indstillingerne i hele lejeren, få vist brugsstatistikker for Power BI og et link til Microsoft 365-administrationscentret, hvor du kan administrere brugere og grupper.
 
 ### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Hvad er processen til administration af en lejer, der er oprettet af Microsoft for brugerne?
 
@@ -184,7 +184,7 @@ Når en bruger via selvbetjening melder sig til en cloudtjeneste, som bruger Azu
 Hvis du ikke foretager dig noget, opretter tjenesten en lejer for hvert brugermaildomæne og underdomæne. Hvis du ønsker, at alle brugerne skal være i samme lejer uanset deres mailadresseudvidelser: Opret en destinationslejer i forvejen, eller brug en eksisterende lejer. Tilføj derefter alle eksisterende domæner og underdomæner, der skal konsolideres i den pågældende lejer. Alle brugerne med mailadresser, der slutter med de pågældende domæner og underdomæner, tilføjes automatisk i destinationslejeren, når de tilmelder sig.
 
 > [!IMPORTANT]
-> Når du først har oprettet brugerne, er der er ikke en automatisk mekanisme, der kan flytte brugerne på tværs af lejere. Hvis du vil have mere at vide om tilføjelse af domæner til en enkelt Microsoft 365-lejer, skal du se [Føj dine brugere og domæner til Office 365](/office365/admin/setup/add-domain/).
+> Når du først har oprettet brugerne, er der er ikke en automatisk mekanisme, der kan flytte brugerne på tværs af lejere. Hvis du vil have mere at vide om tilføjelse af domæner til en enkelt Microsoft 365-lejer, skal du se [Føj dine brugere og domæner til Microsoft 365](/office365/admin/setup/add-domain/).
 
 ### <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>Hvordan fjerner jeg Power BI for brugere, der allerede er tilmeldt?
 
@@ -259,9 +259,9 @@ Microsoft har skabt Power BI med Microsoft 365 som grundlag, der igen er bygger 
 [Hvad er Power BI Premium?](service-premium-what-is.md)  
 [Hvordan køber jeg Power BI Premium?](service-admin-premium-purchase.md)  
 [Hvidbog om Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
-[Administrer din gruppe i Power BI og Office 365](../collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md)  
-[Administration af brugerkonto i Office 365](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
-[Administration af gruppe i Office 365](/office365/admin/email/create-edit-or-delete-a-security-group/)  
+[Administrer din gruppe i Power BI og Microsoft 365](../collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md)  
+[Administration af arbejds- eller skolekonto](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
+[Administration af Microsoft 365-gruppe](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

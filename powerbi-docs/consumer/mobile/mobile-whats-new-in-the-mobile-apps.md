@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: dd3d3702524bc8939720a177dcdcc291081542f4
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 7d0933b20c942df724a4d21fbba438cdc8748969
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349258"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565294"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -274,7 +274,7 @@ Hvis du åbner et rapportlink, der indeholder en forespørgselsstreng, åbnes de
 
 ### <a name="shared-credentials-now-in-android"></a>Delte legitimationsoplysninger (nu i Android)
 
-Aldrig har det været nemmere at logge på Power BI fra din mobilapp. Med delte legitimationsoplysninger har vi gjort logonprocessen nemmere ved at bruge legitimationsoplysningerne til andre Office 365-apps på enheden til at godkende dig i Power BI-tjenesten.
+Aldrig har det været nemmere at logge på Power BI fra din mobilapp. Med delte legitimationsoplysninger har vi gjort logonprocessen nemmere ved at bruge legitimationsoplysningerne til andre Microsoft 365-apps på enheden til at godkende dig i Power BI-tjenesten.
 
 ### <a name="in-app-urls-now-in-android"></a>URL-adresser i appen (nu i Android) 
 
@@ -294,7 +294,7 @@ Læs Power BI-[blogindlægget om sideinddelte rapporter på mobilenheder](https:
 
 ### <a name="shared-credentials-ios"></a>Delte legitimationsoplysninger (iOS)
 
-Aldrig har det været nemmere at logge på Power BI fra din mobilapp. Med delte legitimationsoplysninger har vi gjort logonprocessen nemmere ved at bruge legitimationsoplysningerne til andre Office 365-apps på enheden til at godkende dig i Power BI-tjenesten.
+Aldrig har det været nemmere at logge på Power BI fra din mobilapp. Med delte legitimationsoplysninger har vi gjort logonprocessen nemmere ved at bruge legitimationsoplysningerne til andre Microsoft 365-apps på enheden til at godkende dig i Power BI-tjenesten.
 
 ### <a name="in-app-urls-ios"></a>URL-adresser i apps (iOS) 
 

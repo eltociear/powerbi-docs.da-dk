@@ -8,12 +8,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: mihart
-ms.openlocfilehash: 101cdbc7ad7ea5d07edf182765d305ad2f1fa8c7
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ebdd84dd4de054df08ac79dc2d28f7862cbb284b
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82120108"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564889"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
@@ -26,7 +26,7 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 Det organisatoriske *Premium*-abonnement (også kaldet *Premium-kapacitet*) tilføjer et lag af funktioner oven på licenserne pr. bruger. Indehavere af en *gratis* konto pr. bruger i en organisation, der har et *Premium*-abonnement, kan foretage sig meget mere med Power BI end *gratis* brugere uden *Premium*. *Gratis* brugere i *Premium*-organisationskonti kan f.eks. samarbejde med kolleger og få vist indhold, der hostes i en Power BI Premium kapacitet. 
 
-**admin portal (administrationsportal)** Den placering, hvor Power BI-administratorer administrerer brugere, funktioner og indstillinger for Power BI i deres organisation. (Bemærk! Office 365, Azure og PowerApps bruger Administration).
+**admin portal (administrationsportal)** Den placering, hvor Power BI-administratorer administrerer brugere, funktioner og indstillinger for Power BI i deres organisation. (Bemærk! Microsoft 365, Azure og PowerApps bruger Administration.)
 
 **aggregates (aggregeringer)** Når værdierne i flere rækker er grupperet som input i kriterier for at danne en enkelt værdi af vigtigere betydning eller en måling.
 

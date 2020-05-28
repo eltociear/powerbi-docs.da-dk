@@ -10,22 +10,22 @@ ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8fc1f2a668a0dfff4418749e7f3de7e0379b603f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 42203c65f6351422bbb65b5a0dc2245ac6a7b190
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83129068"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564609"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spor brugeraktiviteter i Power BI
 
-Det kan være vigtigt at vide, hvem der udfører en bestemt handling på et element i din Power BI-lejer, for at hjælpe din organisation med at opfylde sine krav, f.eks. at efterleve lovmæssig overholdelse af angivne standarder og datastyring. Med Power BI har du to muligheder for at spore brugeraktivitet: [Power BI-aktivitetslog](#use-the-activity-log) og [samlet Office 365-overvågningslog](#use-the-audit-log). Disse logge indeholder begge en komplet kopi af [Power BI-overvågningsdataene](#operations-available-in-the-audit-and-activity-logs), men der er flere vigtige forskelle, som er opsummeret i følgende tabel.
+Det kan være vigtigt at vide, hvem der udfører en bestemt handling på et element i din Power BI-lejer, for at hjælpe din organisation med at opfylde sine krav, f.eks. at efterleve lovmæssig overholdelse af angivne standarder og datastyring. Med Power BI har du to muligheder for at spore brugeraktivitet: [Power BI-aktivitetsloggen](#use-the-activity-log) og den [samlede overvågningslog](#use-the-audit-log). Disse logge indeholder begge en komplet kopi af [Power BI-overvågningsdataene](#operations-available-in-the-audit-and-activity-logs), men der er flere vigtige forskelle, som er opsummeret i følgende tabel.
 
-| **Samlet Office 365-overvågningslog** | **Power BI-aktivitetslog** |
+| **Samlet overvågningslog** | **Power BI-aktivitetslog** |
 | --- | --- |
 | Omfatter hændelser fra SharePoint Online, Exchange Online, Dynamics 365 og andre tjenester foruden Power BI-overvågningshændelser. | Omfatter kun Power BI-overvågningshændelser. |
 | Det er kun brugere, der har tilladelserne Skrivebeskyttede overvågningslogge eller Overvågningslogge, som har adgang, f.eks. globale administratorer og auditører. | Globale administratorer og administratorer af Power BI-tjenesten har adgang. |
-| Globale administratorer og auditører kan søge i den samlede overvågningslog ved hjælp af Office 365 Security & Compliance Center, Microsoft 365 Security Center og Microsoft 365 Compliance Center. | Der er endnu ingen brugergrænseflade til at søge efter aktivitetsloggen. |
+| Globale administratorer og auditører kan søge i den samlede overvågningslog ved hjælp af Microsoft 365 Sikkerhedscenter og Microsoft 365 Overholdelsescenter. | Der er endnu ingen brugergrænseflade til at søge efter aktivitetsloggen. |
 | Globale administratorer og auditører kan downloade poster i overvågningsloggen ved hjælp af administrations-API'er og -cmdlet'er i Office 365. | Globale administratorer og administratorer af Power BI-tjenesten kan downloade poster i aktivitetsloggen ved hjælp af en REST API i Power BI og en administrations-cmdlet. |
 | Bevarer overvågningsdata i 90 dage | Bevarer aktivitetsdata i 30 dage (offentlig prøveversion). |
 | Bevarer overvågningsdata, selvom lejeren flyttes til et andet Azure-område. | Bevarer ikke aktivitetsdata, når lejeren flyttes til et andet Azure-område. |
@@ -105,7 +105,7 @@ $activities[0]
 
 ## <a name="use-the-audit-log"></a>Brug overvågningsloggen
 
-Hvis din opgave er at spore brugeraktiviteter på tværs af Power BI og Office 365, arbejder du med overvågning i Office 365 Security & Compliance Center eller bruger PowerShell. Overvågning er afhængig af funktionaliteten i Exchange Online, som er klargjort automatisk til at understøtte Power BI.
+Hvis din opgave er at spore brugeraktiviteter på tværs af Power BI og Microsoft 365, arbejder du med overvågning i Office 365 Security & Compliance Center eller bruger PowerShell. Overvågning er afhængig af funktionaliteten i Exchange Online, som er klargjort automatisk til at understøtte Power BI.
 
 Du kan filtrere overvågningsdataene efter datointerval, bruger, dashboard, rapport, datasæt og aktivitetstype. Du kan også downloade aktiviteterne i en csv-fil (fil med kommaseparerede værdier), der kan analyseres offline.
 
@@ -184,7 +184,7 @@ Området **Resultater** indeholder følgende oplysninger om hver hændelse, der 
 
 #### <a name="view-the-details-for-an-event"></a>Få vist oplysninger om en hændelse
 
-Hvis du vil se flere oplysninger om en hændelse, skal du vælge hændelsesposten på listen over søgeresultater. Siden **Detaljer** vises, som indeholder de detaljerede egenskaber fra hændelsesposten. På siden **Detaljer** vises egenskaberne afhængigt af den Office 365-tjeneste, som hændelsen opstod i.
+Hvis du vil se flere oplysninger om en hændelse, skal du vælge hændelsesposten på listen over søgeresultater. Siden **Detaljer** vises, som indeholder de detaljerede egenskaber fra hændelsesposten. På siden **Detaljer** vises egenskaberne afhængigt af den Microsoft 365-tjeneste, som hændelsen opstod i.
 
 Vælg **Flere oplysninger** for at få vist disse detaljer. Alle poster i Power BI har en værdi på 20 for egenskaben RecordType. Du kan finde oplysninger om andre egenskaber i [Detaljerede egenskaber i overvågningsloggen](/office365/securitycompliance/detailed-properties-in-the-office-365-audit-log/).
 

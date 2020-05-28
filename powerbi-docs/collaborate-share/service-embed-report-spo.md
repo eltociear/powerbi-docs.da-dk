@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 04/27/2020
-ms.openlocfilehash: 60232b81633542d28b4cd52baf171557e95074c6
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 046ebacc69642c1e7f399f0a44d7c5a32e411cb1
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83143609"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693868"
 ---
 # <a name="embed-a-report-web-part-in-sharepoint-online"></a>Integrer en rapportwebdel i SharePoint Online
 
@@ -79,7 +79,7 @@ Integrering af en rapport i SharePoint Online giver ikke automatisk brugerne til
 > [!IMPORTANT]
 > Sørg for at gennemse, hvem der kan få vist rapporten, i Power BI-tjenesten, og giv adgang til dem, der er ikke angivet.
 
-Der er to måder at give adgang til rapporten i Power BI på. Hvis du bruger en Office 365-gruppe til at udarbejde dit SharePoint Online-teamwebsted, er den første måde, at du skal angive brugeren som medlem af **arbejdsområdet i Power BI-tjenesten** og på **SharePoint-siden**. Hvis du vil have flere oplysninger, skal du se, hvordan du [administrerer et arbejdsområde](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Der er to måder at give adgang til rapporten i Power BI på. Hvis du bruger en Microsoft 365-gruppe til at udarbejde dit SharePoint Online-teamwebsted, er den første måde, at du skal angive brugeren som medlem af **arbejdsområdet i Power BI-tjenesten** og på **SharePoint-siden**. Hvis du vil have flere oplysninger, skal du se, hvordan du [administrerer et arbejdsområde](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 Den anden måde er at integrere en rapport i en app og dele den direkte med brugerne:  
 
@@ -157,7 +157,7 @@ Brugere, der ser en rapport i SharePoint, skal enten have en **Power BI Pro-lice
 
 * Power BI understøtter ikke de samme oversatte sprog som SharePoint Online. Derfor ser du muligvis ikke den korrekte oversættelse i den integrerede rapport.
 
-* Der kan opstå tekniske problemer, hvis du bruger Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
+* Der kan opstå tekniske problemer, hvis du bruger Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Microsoft 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 
 * Power BI-webdelen er ikke tilgængelig til [nationale cloudmiljøer](https://powerbi.microsoft.com/clouds/).
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 706703985242284725fb4fc2d42bf46e54c605c7
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: e5effe6f397dd53fe6347708774118e9c491abc1
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83285802"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564137"
 ---
 # <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>Brug links til OneDrive for Business i Power BI Desktop
 Mange brugere har Excel-projektmapper gemt på deres OneDrive for Business-drev, som vil være velegnet til brug sammen med Power BI Desktop. Med Power BI Desktop kan du bruge onlinelinks til Excel-filer, der er gemt i OneDrive for Business, til at oprette rapporter og visuals. Du kan bruge en OneDrive for Business-gruppekonto eller din egen OneDrive for Business-konto.
@@ -44,7 +44,7 @@ Du kan bruge det link, du lige har kopieret til Udklipsholder, i Power BI Deskto
 3. Fjern strenge *? web = 1* i slutningen af linket, så Power BI Desktop kan navigere til filen, og vælg derefter **OK**.
    
     ![](media/desktop-use-onedrive-business-links/power-bi-web-link-confirmation.png) 
-4. Hvis Power BI Desktop beder dig om legitimationsoplysninger, skal du enten vælge **Windows** (i forbindelse med SharePoint-websteder i det lokale miljø) eller **Organisationskonto** (i forbindelse med Office 365- eller OneDrive for Business-websteder).
+4. Hvis Power BI Desktop beder om legitimationsoplysninger, skal du enten vælge **Windows** (for SharePoint-websteder i det lokale miljø) eller **Organisationskonto** (for Microsoft 365- eller OneDrive for Business-websteder).
    
    ![](media/desktop-use-onedrive-business-links/odb-links_06.png)
 

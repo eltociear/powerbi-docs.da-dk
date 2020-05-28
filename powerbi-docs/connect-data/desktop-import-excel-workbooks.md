@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0a9880eea0511b942c3c7310a059caf5cd9415e1
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 68dce4919dcc15cfcdd6a7c6776d569e43f9666b
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83292058"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561720"
 ---
 # <a name="import-excel-workbooks-into-power-bi-desktop"></a>Importér Excel-projektmapper til Power BI Desktop
 Med Power BI Desktop kan du nemt importere Excel-projektmapper, der indeholder forespørgsler fra Power-forespørgsel, Power Pivot-modeller og regneark fra Power-visning, til Power BI Desktop. Power BI Desktop opretter automatisk rapporter og visualiseringer, der er baseret på Excel-projektmappen. Når de er importeret, kan du fortsætte med at forbedre og tilpasse rapporterne i Power BI Desktop ved hjælp af de eksisterende funktioner og de nye funktioner, der udgives sammen med de månedlige opdateringer af Power BI Desktop.
@@ -30,7 +30,7 @@ Med Power BI Desktop kan du nemt importere Excel-projektmapper, der indeholder f
    Selvom der i øjeblikket ikke er nogen begrænsninger på størrelsen eller antallet af objekter i projektmappen, tager det længere tid for Power BI Desktop at analysere og importere store projektmapper.
 
    > [!NOTE]
-   > Hvis du vil indlæse eller importere Excel-filer fra delte OneDrive for Business-mapper eller fra Office 365-gruppemapper, skal du bruge URL-adressen til Excel-filen og angive den i datakilden Web i Power BI Desktop. Der er et par trin, du skal udføre for at formatere URL-adressen til OneDrive for Business korrekt. Gå til [Brug OneDrive for Business-links i Power BI Desktop](desktop-use-onedrive-business-links.md) for at få flere oplysninger og de korrekte trin.
+   > Hvis du vil indlæse eller importere Excel-filer fra delte OneDrive for Business-mapper eller fra Microsoft 365-gruppemapper, skal du bruge URL-adressen til Excel-filen og angive den i datakilden Web i Power BI Desktop. Der er et par trin, du skal udføre for at formatere URL-adressen til OneDrive for Business korrekt. Gå til [Brug OneDrive for Business-links i Power BI Desktop](desktop-use-onedrive-business-links.md) for at få flere oplysninger og de korrekte trin.
    > 
    > 
 

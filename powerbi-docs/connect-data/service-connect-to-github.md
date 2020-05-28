@@ -5,18 +5,20 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/25/2020
+ms.date: 05/19/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1be2d3db9dbf341def86c087344ef7a32cd006a0
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2d5a2f319753323dd391cf6f5dceb970de1720b5
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83337713"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693402"
 ---
 # <a name="connect-to-github-with-power-bi"></a>Opret forbindelse til GitHub med Power BI
 I denne artikel gennemgår vi, hvordan du trækker data fra din GitHub-konto med en skabelonapp i Power BI. Med skabelonappen oprettes et arbejdsområde med et dashboard, et sæt rapporter og et datasæt, der giver dig mulighed for at udforske dine GitHub-data. Med GitHub-appen til Power BI kan du få indsigt i dit GitHub-lager med data om bidrag, problemer, pullanmodninger og aktive brugere.
+
+![GitHub-skabelonapp](media/service-connect-to-github/service-github-app-report.png)
 
 Når du har installeret skabelonappen, kan du ændre dashboardet og rapporten. Du kan derefter distribuere den som en app til kolleger i organisationen.
 
@@ -27,55 +29,69 @@ Du kan også prøve [GitHub-selvstudiet](service-tutorial-connect-to-github.md).
 >[!NOTE]
 >Denne skabelonap kræver, at GitHub-kontoen har adgang til lageret. Flere oplysninger om kravene nedenfor.
 >
->Denne skabelonapp understøtter ikke GitHub Enterprise. 
+>Denne skabelonapp understøtter ikke GitHub Enterprise.
 
-## <a name="how-to-connect"></a>Sådan opretter du forbindelse
-[!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
-   
-3. Vælg **GitHub** \> **Hent nu**.
-4. Vælg **Installér** under **Installér denne Power BI-app?** .
-4. Vælg feltet **GitHub** i ruden **App**.
+## <a name="install-the-app"></a>Installér programmet
 
-    ![GitHub-felt i Power BI](media/service-connect-to-github/power-bi-github-tile.png)
+1. Klik på følgende link for at få adgang til appen: [GitHub-skabelonapp](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
 
-6. Under **Kom i gang med din nye app** skal du vælge **Opret forbindelse**.
+1. Vælg [**Hent den nu**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github) på AppSource-siden for appen.
 
-    ![Kom i gang med din nye app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
+    [![GitHub-skabelonapp i AppSource](media/service-connect-to-github/service-github-template-app-appsource-get-it-now.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
 
-5. Angiv lagernavnet og lagerejeren. Herunder kan du se detaljer om, hvordan du [finder de pågældende parametre](#FindingParams).
-   
-    ![Navn på GitHub-lager i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect.png)
+1. Vælg **Installér**. 
 
-5. Angiv dine GitHub-legitimationsoplysninger (dette trin kan springes over, hvis du allerede er logget på med din browser). 
-6. Som **godkendelsesmetode** skal du vælge **oAuth2** \> **Log på**. 
-7. Følg skærmbillederne for GitHub-godkendelse. Giv GitHub-skabelonappen til Power BI tilladelse til GitHub-dataene.
-   
-   ![GitHub-godkendelse i Power BI](media/service-connect-to-github/github_authorize.png)
-   
-    Power BI opretter forbindelse til GitHub og dine data.  Dataene opdateres én gang om dagen. Når Power BI importerer dataene, får du vist indholdet af dit nye GitHub-arbejdsområde.
+    ![Installér GitHub-skabelonappen](media/service-connect-to-github/service-regional-emergency-response-select-install.png)
 
-## <a name="modify-and-distribute-your-app"></a>Rediger og distribuer din app
+    Når appen er installeret, kan du se den på siden med dine apps.
 
-Du har installeret GitHub-skabelonappen. Det betyder, at du også har oprettet GitHub-arbejdsområdet. I arbejdsområdet kan du ændre rapporten og dashboardet og derefter distribuere den som en *app* til kolleger i din organisation. 
+   ![GitHub-app på siden Apps](media/service-connect-to-github/service-github-app-apps-page-icon.png)
 
-1. Vælg pilen ud for navnet på arbejdsområdet i navigationsruden. Du kan se, at arbejdsområdet indeholder et dashboard og en rapport.
+## <a name="connect-to-data-sources"></a>Opret forbindelse til datakilder
 
-    ![App i navigationsruden](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+1. Vælg ikonet på siden med apps for at åbne appen.
 
-8. Vælg det nye [GitHub-dashboard](https://powerbi.microsoft.com/integrations/github).    
-    ![GitHub-dashboard i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
+1. På velkomstskærmen skal du vælge **Udforsk app**.
 
-3. Hvis du vil have vist alt indholdet i dit nye GitHub-arbejdsområde, skal du vælge **Arbejdsområder** > **GitHub**.
- 
-   ![GitHub-arbejdsområde i navigationsruden](media/service-connect-to-github/power-bi-github-left-nav.png)
+   ![Velkomstskærmbilledet for skabelonappen](media/service-connect-to-github/service-github-app-splash-screen.png)
 
-    Denne visning er indholdslisten for arbejdsområdet. I øverste højre hjørne kan du se **Opdater app.** Når du er klar til at distribuere din app til dine kolleger, er det her, du starter. 
+   Appen åbnes, og der vises eksempeldata.
 
-    ![GitHub-indholdsliste](media/service-connect-to-github/power-bi-github-content-list.png)
+1. Vælg linket **Opret forbindelse til dine data** på banneret øverst på siden.
 
-2. Vælg **rapporter** og **Datasæt** for at få vist andre elementer i arbejdsområdet.
+   ![GitHub-appen opretter forbindelse til dit datalink](media/service-connect-to-github/service-github-app-connect-data.png)
 
-    Læs, hvordan du [distribuerer apps](../collaborate-share/service-create-distribute-apps.md) til dine kolleger.
+1. Angiv navnet på og ejeren af lageret i den dialogboks, der vises. Herunder kan du se detaljer om, hvordan du [finder de pågældende parametre](#FindingParams). Klik på **Næste**, når du er færdig.
+
+   ![Navn på GitHub-lager i Power BI](media/service-connect-to-github/power-bi-github-app-tutorial-connect.png)
+
+1. I den næste dialogboks, der vises, skal du kontrollere, at godkendelsesmetoden er angivet til **OAuth2**. Du behøver ikke at foretage dig andet med indstillingen for beskyttelse af personlige oplysninger. Når du er klar, skal du klikke på **Log på**.
+
+   ![GitHub-godkendelsesmetode i Power BI](media/service-connect-to-github/power-bi-github-authentication.png)
+
+1. Angiv dine GitHub-legitimationsoplysninger, og følg GitHub-godkendelsesprocessen. Dette trin kan springes over, hvis du allerede er logget på med din browser.
+
+   ![GitHub-godkendelsesprocessen i Power BI](media/service-connect-to-github/power-bi-github-authenticate-process.png)
+
+
+Når du har logget på, opretter rapporten forbindelse til datakilderne og udfyldes med opdaterede data. Aktivitetsovervågningen aktiveres i dette tidsrum.
+
+![Igangværende opdatering af Power BI GitHub-appen](media/service-connect-to-github/service-github-app-refresh-monitor.png)
+
+Dine rapportdata opdateres automatisk én gang om dagen, medmindre du deaktiverede dette under logonprocessen. Du kan også [konfigurere din egen opdateringsplan](./refresh-scheduled-refresh.md) for at holde rapportdataene opdateret, hvis du vil.
+
+## <a name="customize-and-share"></a>Tilpas og del
+
+Du tilpasser og deler din app ved at vælge blyantikonet i øverste højre hjørne af siden.
+
+![Rediger app](media/service-template-apps-install-distribute/power-bi-template-app-edit-app.png)
+
+
+Du kan finde oplysninger om redigering af artefakter i arbejdsområdet under
+* [Præsentation af rapporteditoren i Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
+* [Grundlæggende begreber for designere i Power BI-tjenesten](../fundamentals/service-basic-concepts.md)
+
+Når du er færdig med at foretage ændringer af artefakterne i arbejdsområdet, er du klar til at publicere og dele appen. Se [Publicer din app](../collaborate-share/service-create-distribute-apps.md#publish-your-app) for at få mere at vide om, hvordan du gør det.
 
 ## <a name="whats-included-in-the-app"></a>Dette er inkluderet i prøveversionen
 Følgende data er tilgængelige fra GitHub i Power BI:     

@@ -1,5 +1,5 @@
 ---
-title: Visuel projektstruktur i Power BI
+title: Struktur for visual-projekter i Power BI
 description: I denne artikel beskrives mappe- og filstrukturen i et visuelt projekt i Power BI
 author: KesemSharabi
 ms.author: kesharab
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2020
-ms.openlocfilehash: 18267f06bd43166cb1958d3aff73913a31189953
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ce0f22c17ed718d3e2ad4e4fa9d9514edd315583
+ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80550749"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83407422"
 ---
-# <a name="power-bi-visual-project-structure"></a>Visuel projektstruktur i Power BI
+# <a name="power-bi-visual-project-structure"></a>Struktur for visual-projekter i Power BI
 
 Den bedste måde at komme i gang med at oprette en ny Power BI-visualisering på er ved at bruge Power BI-værktøjet til visualiseringer [pbiviz](https://www.npmjs.com/package/powerbi-visuals-tools).
 
@@ -113,7 +113,7 @@ Denne fil indeholder [TSLint-konfigurationen](https://palantir.github.io/tslint/
 Kommentarerne i den følgende kodetekst fra `pbiviz.json`-filen beskriver metadataposterne.
 
 > [!NOTE]
-> * Fra version 3.x.x af **pbiviz**-værktøjet understøttes `externalJS` ikke.
+> * Fra version 3.x.x af værktøjet **pbiviz** understøttes `externalJS` ikke.
 > * Hvis du vil have hjælp til lokaliseringen, skal du [føje landestandarden for Power BI til visualiseringen](./localization.md).
 
 ```json
@@ -170,7 +170,7 @@ Kommentarerne i den følgende kodetekst fra `pbiviz.json`-filen beskriver metada
 }
 ```
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * Hvis du vil vide mere om interaktionerne mellem en visualisering, en bruger og Power BI, kan du se [Visuelle koncepter i Power BI](./power-bi-visuals-concept.md).
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/07/2020
 ms.author: davidi
-ms.openlocfilehash: f66e564091c30e11604d0ab3fe58ba1f93addb28
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: e7e7c0f8df0f41d673920cf4af596ca33d46519c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349097"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564569"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips og tricks til oprettelse af rapporter i Power BI Desktop
 For at få mest muligt ud af dine data skal du nogle gange have lidt ekstra hjælp. Vi har samlet nogle tip og tricks, som du kan bruge, når du opretter rapporter i Microsoft Power BI Desktop *og* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-udgaver, hvor tilføjelsesprogrammet Power Pivot er aktiveret, og Power-forespørgsel er installeret og aktiveret. 
@@ -92,7 +92,7 @@ Start processen ved hjælp af indstillingen "Reference" i den forespørgsel, der
 >[!NOTE]
 >Det er en god ide at tænke over sorteringsrækkefølgen, før du opretter visuelle elementer. 
 
-Næste trin i processen er at definere en relation mellem forespørgslerne "Buckets" og "Detaljer" i bucketkolonnen. I Power BI Desktop skal du klikke på **Administrer relationer** på båndet. Opret en relation, hvor Buckets er i den venstre tabel, og Detaljer er i den højre tabel, og vælg det felt, du bruger til histogrammet. 
+Næste trin i processen er at definere en relation mellem forespørgslerne "Buckets" og "Detaljer" i bucketkolonnen. I Power BI Desktop skal du klikke på **Administrer relationer** på båndet. Opret en relation, hvor Buckets er i tabellen til venstre og Detaljer er i tabellen til højre. Vælg derefter det felt, du bruger til histogrammet. 
 
 Sidste trin er oprettelse af histogrammet. Træk feltet Bucket fra tabellen "Buckets". Fjern standardfeltet fra det søjlediagram, der oprettes. Nu skal du trække histogramfeltet fra tabellen "Detaljer" til det samme visuelle element. I feltoversigten skal du ændre standardaggregatet til Antal. Resultatet er histogrammet. Hvis du opretter endnu et visuelt element, f.eks. en trævisning ud fra tabellen Detaljer, skal du vælge et datapunkt i trævisningen for at se fremhævningen i histogrammet og vise histogrammet for det valgte datapunkt i forhold til tendensen for hele datasættet.
 
@@ -112,7 +112,7 @@ Lad os tage et kig på et eksempel:
 
 Hvis vi indlæser datasæt fra aktive anmodninger om kundesupport og et andet datasæt med arbejdsopgaver, der har skemaer som følger:
 
-> CustomerInicdents: {IncidentID, CustomerName, IssueName, OpenedDate, Status} WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName } 
+> CustomerIncidents: {IncidentID, CustomerName, IssueName, OpenedDate, Status} WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName } 
 > 
 > 
 
@@ -158,7 +158,7 @@ DAX er sproget til beregning af formler i Power BI Desktop. Det er optimeret til
 
 [Få mere at vide om grundlæggende DAX-funktioner i Power BI Desktop](../transform-model/desktop-quickstart-learn-dax-basics.md)
 
-[Henvisning til DAX (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx)
+[Henvisning til DAX (Data Analysis Expressions)](/dax/)
 
 [DAX-ressourcecenter](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
 
