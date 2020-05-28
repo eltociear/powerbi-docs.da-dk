@@ -6,12 +6,12 @@ ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
 ms.author: v-lshann
-ms.openlocfilehash: 0a0964f82c80017b53feb668cca8399b18a72cfc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8d7642dfbac40b3a31190bc02835a4132ee12e11
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81268506"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564076"
 ---
 # <a name="functional-application-consultant-learning-catalog"></a>Læringskatalog til funktionelle programkonsulenter
 
@@ -82,7 +82,7 @@ I forbindelse med funktionelle konsulenter viste vores undersøgelse af jobopgav
 | [Bedre sammen: Fem fordele Excel-brugere får ved at bruge Power BI](https://info.microsoft.com/excel-powerbi-better-together-ondemand.html)  | Excel er et af de mest populære programmer i verden. Millioner af enkeltpersoner og virksomheder bruger det til alt lige fra simpel dataindtastning og regnskab til mere avancerede statistiske data og dataanalyser. Mange personer er dog ikke klar over, at de kan udvide funktionaliteten i Excel markant – samt spare tid og øge deres effektivitet – når de bruger det sammen med et andet Microsoft-program: Power BI. Vi vil gerne udforske fem forskellige årsager til, at du og din virksomhed kan drage fordel af at bruge Excel og Power BI sammen. Når du er færdig, bør du have al den viden, du skal bruge for at kickstarte din organisations mulighed for at analysere, fortolke og drage nytte af dataene. | Webinar |   |
 | [Mere end regneark](https://info.microsoft.com/CA-PowerBI-WBNR-FY18-05May-09-DataBeyondtheSpreadsheet-MCW0006385_02OnDemandRegistration-ForminBody.html)  | Må vi få alle Excel-brugere og-analytikeres opmærksomhed: Arbejd mere effektivt, levér mere værdi, og fokuser på det, der er vigtigt. Få mere at vide om, hvordan du kan oprette flotte rapporter, som folk gerne vil bruge, dele data visuelt på en måde, som kollegerne kan forstå uden en forklaring, og gøre indsigt tilgængelig for alle, der har brug for at forstå oplysninger – uanset hvor de er. Se Microsoft Power BI in action i denne onlinesession.  | Webinar |   |
 | [Få den rette indsigt via Power BI og Visio](https://info.microsoft.com/ww-ondemand-powerbi-and-visio.html) | Deltag i dette webinar for at lære, hvordan du kombinerer Power BI-dashboards og Microsoft Visio-diagrammer for at få effektiv visuel indsigt. Visio og Power BI er yderst visuelle og supplerer hinanden på en naturlig måde. I Visio kan du oprette illustrerende diagrammer, f.eks. arbejdsprocesser og layout fra den virkelige verden, der er forbundet med hinanden. Power BI hjælper dig med at bygge intuitive dashboards ved hjælp af diagrammer og kort, hvor du kan måle nøgletalsindikatorer og spore mål.| Webinar |   |
-| [Power BI, Excel og Office 365: Optimer dine virksomhedsdata](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)  | I denne session, der er spækket med demonstrationer, får du mere at vide om, hvordan du kan bruge den unikke effektivitet i Microsoft Excel i Power BI til at give virksomhedens analyser og indsigt et boost.  | Webinar |   |
+| [Power BI, Excel og Microsoft 365: Optimer dine virksomhedsdata](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)  | I denne session, der er spækket med demonstrationer, får du mere at vide om, hvordan du kan bruge den unikke effektivitet i Microsoft Excel i Power BI til at give virksomhedens analyser og indsigt et boost.  | Webinar |   |
 | [Brug af Power BI med Dynamics 365 Finance and Operations](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations-OnDemand.html)   | Tilmeld dig dette webinar for at få mere at vide om, hvordan rapporteringsløsningerne i Power BI kan integreres og administreres i Dynamics 365 Finance and Operations ved hjælp af Azure Data Lake. Få mere at vide om, hvordan du hurtigt kan levere indsigt, der kan handles på, uden afbrydelser af tjenesten og dele analytiske løsninger med virksomheden ved hjælp af Power BI.  | Webinar |   |
 ## <a name="security"></a>Sikkerhed<a name="security"></a>
 | Indhold   | Beskrivelse  | Formatér   | Længde   |

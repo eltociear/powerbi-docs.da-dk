@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0a362861aecda7fc9f7cac4820d4826d640a9dd6
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 700b9a5dffc3abff00fb2ea738d0517a676a689b
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83144225"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693756"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Opret nye arbejdsområder i Power BI
 
@@ -22,14 +22,14 @@ Power BI introducerer en ny arbejdsområdeoplevelse. Arbejdsområder er stadig d
 
 Her er forskellene. I de nye arbejdsområder kan du:
 
-- Tildele arbejdsområderoller til brugergrupper: sikkerhedsgrupper, distributionslister, Office 365-grupper og enkeltpersoner.
-- Oprette et arbejdsområde i Power BI uden at oprette en Office 365-gruppe.
+- Tildele arbejdsområderoller til brugergrupper: sikkerhedsgrupper, distributionslister, Microsoft 365-grupper og enkeltpersoner.
+- Oprette et arbejdsområde i Power BI uden at oprette en Microsoft 365-gruppe.
 - Bruge mere detaljerede arbejdsområderoller til administration af mere fleksible tilladelser i et arbejdsområde.
 
 Er du klar til at overføre dit klassiske arbejdsområde? Se [Opgrader klassiske arbejdsområder til de nye arbejdsområder i Power BI](service-upgrade-workspaces.md) for at få flere oplysninger.
 
 > [!NOTE]
-> Hvis du vil gennemtvinge sikkerhed på rækkeniveau for Power BI Pro-brugere, der gennemser indhold i et arbejdsområde, skal du tildele brugerne læseadgang.
+> Hvis du vil gennemtvinge sikkerhed på rækkeniveau for Power BI Pro-brugere, der gennemser indhold i et arbejdsområde, skal du tildele brugerne rollen Seer.
 
 Du kan få mere baggrundsviden i artiklen [nye arbejdsområder](service-new-workspaces.md).
 
@@ -43,7 +43,7 @@ Du kan få mere baggrundsviden i artiklen [nye arbejdsområder](service-new-work
    
      ![Ny arbejdsområdeoplevelse](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     Hvis du vælger **Gå tilbage til klassisk**, opretter du et [arbejdsområde, der er baseret på en Office 365-gruppe](service-create-workspaces.md). 
+     Hvis du vælger **Gå tilbage til klassisk**, opretter du et [arbejdsområde, der er baseret på en Microsoft 365-gruppe](service-create-workspaces.md). 
 
 2. Giv arbejdsområdet et navn. Hvis navnet ikke er tilgængeligt, skal du redigere det, så der angives et entydigt navn.
    
@@ -55,7 +55,7 @@ Du kan få mere baggrundsviden i artiklen [nye arbejdsområder](service-new-work
     
     [Tilføj en **liste over kontakter**](#workspace-contact-list). Administratorer af arbejdsområder er som standard kontakter. 
     
-    [Angiv et **OneDrive-arbejdsområde**](#workspace-onedrive) ved blot at skrive navnet på en eksisterende Office 365-gruppe og ikke URL-adressen. Nu kan dette arbejdsområde bruge lagringsplaceringen for Office 365-gruppens filer. 
+    [Angiv et **Arbejdsområde for OneDrive**](#workspace-onedrive) ved blot at skrive navnet på en eksisterende Microsoft 365-gruppe og ikke URL-adressen. Nu kan dette arbejdsområde bruge lagerplaceringen for Microsoft 365-gruppens filer.
 
     ![Angiv en OneDrive-placering](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
@@ -87,11 +87,11 @@ Du kan angive, hvilke brugere der skal modtage en meddelelse om de problemer, de
 
 ## <a name="workspace-onedrive"></a>Arbejdsområde for OneDrive
 
-Funktionen Arbejdsområde for OneDrive giver dig mulighed for at konfigurere en Office 365-gruppe, hvis SharePoint-dokumentbiblioteks fillagring er tilgængelig for arbejdsområdebrugere. Du opretter gruppen uden for Power BI først. 
+Funktionen Arbejdsområde for OneDrive giver dig mulighed for at konfigurere en Microsoft 365-gruppe, hvis fillager for SharePoint-dokumentbibliotek er tilgængeligt til brugere af arbejdsområdet. Du opretter gruppen uden for Power BI først.
 
-Power BI synkroniserer ikke tilladelser for brugere eller grupper, der er konfigureret til at have adgang til arbejdsområdet med medlemskabet af Office 365-gruppen. Bedste praksis er at give den samme Office 365-gruppe, hvis fillager du konfigurerer i denne indstilling for Office 365-gruppen, [adgang til arbejdsområdet](#give-access-to-your-workspace). Administrer derefter adgangen til arbejdsområdet ved at administrere medlemskabet af Office 365-gruppen. 
+Power BI synkroniserer ikke tilladelser for brugere eller grupper, der er konfigureret til at have adgang til arbejdsområdet med medlemskabet af Microsoft 365-gruppen. Bedste praksis er at give den samme Microsoft 365-gruppe, hvis fillager du konfigurerer i denne indstilling for Microsoft 365-gruppen, [adgang til arbejdsområdet](#give-access-to-your-workspace). Administrer derefter adgangen til arbejdsområdet ved at administrere medlemskabet af Microsoft 365-gruppen.
 
-1. Få adgang til den nye indstilling for **OneDrive-arbejdsområdet** på en af to måder:
+1. Få adgang til den nye indstilling for **Arbejdsområde for OneDrive** på en af to måder:
 
     I ruden **Opret et arbejdsområde**, når du opretter det første gang.
 
@@ -99,13 +99,13 @@ Power BI synkroniserer ikke tilladelser for brugere eller grupper, der er konfig
 
     ![Indstillinger for arbejdsområde](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
-2. Under **Avanceret** > **OneDrive-arbejdsområde** skal du skrive navnet på den Office 365-gruppe, du oprettede tidligere. Power BI registrerer automatisk OneDrive for gruppen.
+2. Under **Avanceret** > **Arbejdsområde for OneDrive** skal du skrive navnet på den Microsoft 365-gruppe, du oprettede tidligere. Power BI registrerer automatisk OneDrive for gruppen.
 
     ![Angiv en OneDrive-placering](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
 3. Vælg **Gem**.
 
-### <a name="access-the-workspace-onedrive-location"></a>Få adgang til arbejdsområdets OneDrive-placering
+### <a name="access-the-workspace-onedrive-location"></a>Få adgang til placeringen af Arbejdsområde for OneDrive
 
 Når du har konfigureret placeringen af OneDrive, kommer du dertil på samme måde, som du kommer til andre datakilder i Power BI-tjenesten.
 
@@ -129,7 +129,7 @@ I den nye arbejdsområdeoplevelse kan du ikke oprette eller bruge organisationsi
 
     ![Indholdsliste for arbejdsområder](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
-1. Føj sikkerhedsgrupper, distributionslister, Office 365-grupper eller enkeltpersoner til disse arbejdsområder som seere, medlemmer, bidragydere eller administratorer. Se [Roller i de nye arbejdsområder](service-new-workspaces.md#roles-in-the-new-workspaces) for at få en forklaring på de forskellige roller.
+1. Føj sikkerhedsgrupper, distributionslister, Microsoft 365-grupper eller enkeltpersoner til disse arbejdsområder som seere, medlemmer, bidragydere eller administratorer. Se [Roller i de nye arbejdsområder](service-new-workspaces.md#roles-in-the-new-workspaces) for at få en forklaring på de forskellige roller.
 
     ![Arbejdsområder – tilføj medlemmer, administratorer og bidragydere](media/service-create-the-new-workspaces/power-bi-workspace-add-members.png)
 

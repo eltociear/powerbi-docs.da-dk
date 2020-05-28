@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2b7c442ef39bba58b7ac7f8224928d29ea56d9c6
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 311473aea5748c94bfa6a757482659176930544b
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348131"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693822"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Integrer en rapport på en sikker portal eller et websted
 
@@ -50,7 +50,7 @@ Indstillingen **Integrer** understøtter [Filtre for URL-adresser](service-url-f
 
 Indstillingen **Integrer** giver ikke automatisk brugere tilladelse til at få vist rapporten. Visningstilladelser angives i Power BI-tjenesten.
 
-I Power BI-tjenesten kan du dele integrerede rapporter med brugere, der skal have adgang. Hvis du bruger en Office 365-gruppe, kan du angive brugeren som medlem af et arbejdsområde. Hvis du vil have flere oplysninger, kan du se, hvordan du [administrerer dit arbejdsområde i Power BI og Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
+I Power BI-tjenesten kan du dele integrerede rapporter med brugere, der skal have adgang. Hvis du bruger en Microsoft 365-gruppe, kan du angive brugeren som medlem af arbejdsområdet. Hvis du vil have flere oplysninger, kan du se, hvordan du [administrerer dit arbejdsområde i Power BI og Microsoft 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="licensing"></a>Licensering
 

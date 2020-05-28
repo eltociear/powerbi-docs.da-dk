@@ -6,19 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 05/19/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: d3cb3c8093446d4417a59c5f64ab6b85a765e3c8
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 562e011bf280930fdcaf19cc87edc97b2bec131b
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83301511"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83694043"
 ---
-# <a name="create-a-drill-through-button-in-power-bi-preview"></a>Opret en detaljeniveauknap i Power BI (prøveversion)
+# <a name="create-a-drill-through-button-in-power-bi"></a>Opret en detaljeniveauknap i Power BI
 
-Når du opretter en knap i Power BI, kan du vælge handlingen **Detaljeadgang (prøveversion)** . Denne handlingstype opretter en knap, der giver detaljeadgang til en fokuseret side, så der kan hentes oplysninger, der er filtreret til en bestemt kontekst.
+Når du opretter en knap i Power BI, kan du vælge handlingen **Detaljeadgang**. Denne handlingstype opretter en knap, der giver detaljeadgang til en fokuseret side, så der kan hentes oplysninger, der er filtreret til en bestemt kontekst.
 
 En detaljeniveauknap kan være nyttig, hvis du vil øge synligheden af vigtige detaljeadgangsscenarier i dine rapporter.
 
@@ -107,7 +107,7 @@ I dette eksempel er knappen deaktiveret, fordi to visuals begge indeholder et en
 - Knappens formatering som deaktiveret er knyttet til farveklasserne i rapporttemaet. Få mere at vide om [farveklasser](desktop-report-themes.md#setting-structural-colors).
 - Detaljeadgangshandlingen virker i alle indbyggede visuals og kan bruges sammen med *nogle* visuals, der er importeret fra AppSource. Det er dog ikke sikkert, at de kan bruges sammen med *alle* visuals, der er importeret fra AppSource.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om de funktioner, der er ens eller interagerer med knapper, i følgende artikler:
 
 * [Opret knapper](desktop-buttons.md)

@@ -9,46 +9,46 @@ ms.topic: conceptual
 ms.date: 05/07/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c534a72594692c5cf404b095492e7d6425f23329
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 701f478ce4dd59d77c1722b1386cd79ad3fbf2a0
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273655"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693792"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser arbejde i nye arbejdsområder i Power BI
 
 *Arbejdsområder* er steder, hvor du kan samarbejde med kolleger om at oprette samlinger af dashboards, rapporter, datasæt og sideinddelte rapporter. Den nye arbejdsområdeoplevelse hjælper dig med bedre at administrere adgang til indhold. I denne artikel beskrives de nye arbejdsområder, og hvordan de adskiller sig fra de klassiske arbejdsområder.  På samme måde som med klassiske arbejdsområder bruges arbejdsområder stadig til at oprette og distribuere apps. Er du parat til at oprette et nyt arbejdsområde? Læs [Opret en ny arbejdsområdeoplevelse](service-create-the-new-workspaces.md).
 
-Nye opgraderede arbejdsområder og eksisterende klassiske arbejdsområder eksisterer side om side. Den nye arbejdsområdeoplevelse er standardtypen for arbejdsområder. Du kan stadig fortsætte med at oprette og bruge [klassiske arbejdsområder](service-create-workspaces.md), der er baseret på Office 365 Grupper, hvis du har brug for det. Er du klar til at overføre dit klassiske arbejdsområde? Se [Opgrader klassiske arbejdsområder til de nye arbejdsområder i Power BI](service-upgrade-workspaces.md) for at få flere oplysninger.
+Nye opgraderede arbejdsområder og eksisterende klassiske arbejdsområder eksisterer side om side. Den nye arbejdsområdeoplevelse er standardtypen for arbejdsområder. Du kan stadig oprette og bruge [klassiske arbejdsområder](service-create-workspaces.md), der er baseret på Microsoft 365 Grupper, hvis du har brug for det. Er du klar til at overføre dit klassiske arbejdsområde? Se [Opgrader klassiske arbejdsområder til de nye arbejdsområder i Power BI](service-upgrade-workspaces.md) for at få flere oplysninger.
 
 Med de nye arbejdsområder kan du:
 
-- Tildele arbejdsområderoller til brugergrupper: sikkerhedsgrupper, distributionslister, Office 365-grupper og enkeltpersoner.
-- Opret et arbejdsområde i Power BI uden at oprette en underliggende tilknyttet Office 365-gruppe. Al administration af arbejdsområder sker i Power BI, ikke i Office 365.
-- Du kan fortsætte med at administrere brugeradgang til indhold via Office 365-grupper, hvis du vil det. Du skal blot tilføje en Office 365-gruppe på adgangslisten for arbejdsområdet.
+- Tildele arbejdsområderoller til brugergrupper: sikkerhedsgrupper, distributionslister, Microsoft 365-grupper og enkeltpersoner.
+- Oprette et arbejdsområde i Power BI uden at oprette en underliggende tilknyttet Microsoft 365-gruppe. Al administration af arbejdsområder sker i Power BI, ikke i Microsoft 365.
+- Fortsætte med at administrere brugeradgang til indhold via Microsoft 365-grupper, hvis du vil det. Du skal blot tilføje en Microsoft 365-gruppe på adgangslisten for arbejdsområdet.
 - Bruge mere detaljerede arbejdsområderoller til administration af mere fleksible tilladelser i et arbejdsområde.
 
-Power BI fortsætter med at vise alle Office 365-grupper, som du er medlem af. Dette forhindrer, at eksisterende arbejdsprocesser ændres.
+Power BI fortsætter med at vise alle Microsoft 365-grupper, som du er medlem af. Dette forhindrer, at eksisterende arbejdsprocesser ændres.
 
 ## <a name="new-and-classic-workspace-differences"></a>Forskelle på det nye og det klassiske arbejdsområde
 
 Vi har givet nogle af funktionerne i de nye arbejdsområder et nyt design. Her er de væsentligste forskelle.
 
-* Oprettelse af disse arbejdsområder opretter ikke Office 365-grupper på samme måde som klassiske arbejdsområder. Du kan dog benytte en Office 365-gruppe til at give brugere adgang til dit arbejdsområde ved at tildele området en rolle. 
-* I de klassiske arbejdsområder kan du kun føje enkeltpersoner til medlems- og administratorlisterne. I de nye arbejdsområder kan du føje flere Active Directory-sikkerhedsgrupper, distributionslister eller Office 365-grupper til disse lister for at lette administrationen af brugere. 
+- Oprettelse af disse arbejdsområder opretter ikke Microsoft 365-grupper på samme måde som klassiske arbejdsområder. Du kan dog nu bruge en Microsoft 365-gruppe til at give brugere adgang til dit arbejdsområde ved at tildele området en rolle.
+- I de klassiske arbejdsområder kan du kun føje enkeltpersoner til medlems- og administratorlisterne. I de nye arbejdsområder kan du føje flere Active Directory-sikkerhedsgrupper, distributionslister eller Microsoft 365-grupper til disse lister for at lette administrationen af brugere.
 - Du kan oprette en organisationsindholdspakke ud fra et klassisk arbejdsområde. Du kan ikke oprette en ud fra de nye arbejdsområder.
 - Du kan forbruge en organisationsindholdspakke ud fra et klassisk arbejdsområde. Du kan ikke forbruge en fra de nye arbejdsområder.
 
 ### <a name="workspace-features-that-work-differently"></a>Funktioner for arbejdsområder, som fungerer anderledes
 
-Nogle funktioner fungerer anderledes i forhold til aktuelle arbejdsområder i de nye arbejdsområder. Disse forskelle er bevidst og er et resultat af den feedback, vi har modtaget fra kunder. De giver mulighed for en mere fleksibel tilgang til samarbejde med arbejdsområder.
+Nogle funktioner fungerer anderledes i forhold til aktuelle arbejdsområder i de nye arbejdsområder. Disse forskelle er bevidst og er baseret på den feedback, vi har modtaget fra kunder. De giver mulighed for en mere fleksibel tilgang til samarbejde med arbejdsområder.
 
-- **Håndhævelse af licenser**: Publicering af rapporter til den nye arbejdsområdeoplevelse håndhæver eksisterende licensregler. Brugere, der samarbejder i arbejdsområder eller deler indhold med andre i Power BI-tjenesten, skal bruge en Power BI Pro-licens. Brugere uden en Pro-licens får vist fejlmeddelelsen "Kun brugere med Power BI Pro-licenser kan publicere til dette arbejdsområde".
+- **Håndhævelse af licenser**: Publicering af rapporter til den nye arbejdsområdeoplevelse sker på baggrund af de eksisterende licensregler. Brugere, der samarbejder i arbejdsområder eller deler indhold med andre i Power BI-tjenesten, skal bruge en Power BI Pro-licens. Brugere uden en Pro-licens får vist fejlmeddelelsen "Kun brugere med Power BI Pro-licenser kan publicere til dette arbejdsområde".
 - **Medlemmer kan enten dele eller ikke dele igen**: Rollen som bidragyder erstatter denne indstilling.
-- **Skrivebeskyttede arbejdsområder**: I stedet for at give brugere skrivebeskyttet adgang til et arbejdsområde, kan du tildele dem rollen som læser. Det giver tilsvarende skrivebeskyttet adgang til indholdet i et arbejdsområde.
-- **Brugere med en Pro-licens** kan få adgang til arbejdsområdet, hvis det er i en Power BI Premium-kapacitet, også selvom brugerne kun har rollen som læser.
-- **Tillad brugere at eksportere data**: Brugere med rollen som læser kan eksportere data, hvis de har tilladelse til at oprette for datasættene i arbejdsområdet. Læs mere om [tilladelsen Opret for datasæt](../connect-data/service-datasets-build-permissions.md).
+- **Skrivebeskyttede arbejdsområder**: I stedet for at give brugere skrivebeskyttet adgang til et arbejdsområde, kan du tildele dem rollen Seer. Det giver tilsvarende skrivebeskyttet adgang til indholdet i et arbejdsområde.
+- **Brugere med en Pro-licens** kan få adgang til arbejdsområdet, hvis det er i en Power BI Premium-kapacitet, men kun hvis de har rollen Seer.
+- **Tillad brugere at eksportere data**: Brugere med rollen Seer kan eksportere data, hvis de har tilladelse til at oprette for datasættene i arbejdsområdet. Læs mere om [tilladelsen Opret for datasæt](../connect-data/service-datasets-build-permissions.md).
 - Knappen **Forlad arbejdsområde** findes ikke.
 
 ### <a name="workspace-contact-list"></a>Liste over arbejdsområdekontakter
@@ -59,38 +59,38 @@ Læs mere om [angivelse af listen over kontaktpersoner i arbejdsområdet](servic
 
 ### <a name="workspace-onedrive"></a>Arbejdsområde for OneDrive
 
-Funktionen Arbejdsområde for OneDrive giver dig mulighed for at konfigurere en Office 365-gruppe, hvis SharePoint-dokumentbiblioteks fillagring er tilgængelig for arbejdsområdebrugere. Du opretter gruppen uden for Power BI.
+Funktionen Arbejdsområde for OneDrive giver dig mulighed for at konfigurere en Microsoft 365-gruppe, hvis fillager for SharePoint-dokumentbibliotek er tilgængeligt til brugere af arbejdsområdet. Du opretter gruppen uden for Power BI.
 
-Power BI synkroniserer ikke tilladelser for brugere eller grupper, der er konfigureret til at have adgang til arbejdsområdet med medlemskabet af Office 365-gruppen. Den bedste fremgangsmåde er at administrere arbejdsområdeadgang via den samme Office 365-gruppe, hvis fillagring du konfigurerer i denne indstilling. 
+Power BI synkroniserer ikke tilladelser for brugere eller grupper, der er konfigureret til at have adgang til arbejdsområdet med medlemskabet af Microsoft 365-gruppen. Bedste praksis er at administrere adgang til arbejdsområdet via den samme Microsoft 365-gruppe, hvis fillager du konfigurerer i denne indstilling.
 
 Læs mere om, hvordan du [angiver og får adgang til Arbejdsområde for OneDrive](service-create-the-new-workspaces.md#workspace-onedrive).  
 
 ## <a name="roles-in-the-new-workspaces"></a>Roller i de nye arbejdsområder
 
-Hvis du vil give adgang til et nyt arbejdsområde, skal du føje brugergrupper eller enkeltpersoner til en af arbejdsområderollerne: administratorer, medlemmer, bidragydere eller fremvisere. Alle i en brugergruppe får den rolle, du har defineret. Hvis en person er i flere brugergrupper, får personen det højeste tilladelsesniveau, der er angivet af den rolle, personen er blevet tildelt.
+Hvis du vil give adgang til et nyt arbejdsområde, skal du føje brugergrupper eller enkeltpersoner til en af arbejdsområderollerne: administratorer, medlemmer, bidragydere eller seere. Alle i en brugergruppe får den rolle, du har defineret. Hvis en person er i flere brugergrupper, får personen det højeste tilladelsesniveau, der er angivet for den rolle, personen er blevet tildelt.
 
-Du kan bruge roller til at administrere, hvem der kan gøre hvad i et arbejdsområde, så teams kan samarbejde. Nye arbejdsområder gør det muligt at tildele roller til enkeltpersoner og til brugergrupper: sikkerhedsgrupper, Office 365-grupper og distributionslister. 
+Du kan bruge roller til at administrere, hvem der kan gøre hvad i et arbejdsområde, så teams kan samarbejde. Nye arbejdsområder gør det muligt at tildele roller til enkeltpersoner og til brugergrupper: sikkerhedsgrupper, Microsoft 365-grupper og distributionslister.
 
 Når du tildeler roller til en brugergruppe, har enkeltpersoner i gruppen adgang til indhold. Hvis du indlejrer brugergrupper, har alle brugere i grupperne tilladelse.
 
 [!INCLUDE [power-bi-workspace-roles-table](../includes/power-bi-workspace-roles-table.md)]
 
 > [!NOTE]
-> Hvis du vil gennemtvinge sikkerhed på rækkeniveau (RLS) for brugere, der gennemser indhold i et arbejdsområde, kan du bruge rollen Fremviser. Hvis du vil gennemtvinge RLS uden at give adgang til arbejdsområdet, kan du publicere en Power BI-app til disse brugere eller bruge deling til at distribuere indhold.
+> Hvis du vil gennemtvinge sikkerhed på rækkeniveau (RLS) for brugere, der gennemser indhold i et arbejdsområde, kan du bruge rollen Seer. Hvis du vil gennemtvinge RLS uden at give adgang til arbejdsområdet, kan du publicere en Power BI-app til disse brugere eller bruge deling til at distribuere indhold.
 
 ## <a name="licensing"></a>Licensering
 Alle de brugere, du føjer til et arbejdsområde i den delte kapacitet, skal have en Power BI Pro-licens. I arbejdsområdet kan disse brugere samarbejde om dashboards og rapporter, som du vil publicere til en større målgruppe eller måske til hele organisationen. 
 
 Hvis du vil distribuere indhold til andre i din organisation, kan du tildele Power BI Pro-licenser til disse brugere eller anbringe arbejdsområdet i en Power BI Premium-kapacitet.
 
-Når arbejdsområdet er i en Power BI Premium-kapacitet, kan brugere med rollen som Fremviser få adgang til arbejdsområdet, også selvom de ikke har en Power BI Pro-licens. Men hvis du tildeler disse brugere en rolle på et højere niveau som f.eks. administrator, medlem eller bidragyder, vil de blive bedt om at starte en Pro-prøveversion, når de forsøger at få adgang til arbejdsområdet. Hvis du vil bruge rollen som læser til brugere uden Pro-licens, skal du sørge for, at de ikke har andre arbejdsområderoller, enten individuelt eller via en brugergruppe.
+Når arbejdsområdet er i en Power BI Premium-kapacitet, kan brugere med rollen som Seer få adgang til arbejdsområdet, også selvom de ikke har en Power BI Pro-licens. Men hvis du tildeler disse brugere en rolle på et højere niveau som f.eks. administrator, medlem eller bidragyder, vil de blive bedt om at starte en Pro-prøveversion, når de forsøger at få adgang til arbejdsområdet. Hvis du vil bruge rollen Seer til brugere uden Pro-licens, skal du sørge for, at de ikke har andre arbejdsområderoller, enten individuelt eller via en brugergruppe.
 
 > [!NOTE]
 > Publicering af rapporter til den nye arbejdsområdeoplevelse har strengere håndhævelse af eksisterende licensregler. Hvis du forsøger at udgive fra Power BI Desktop eller andre klientværktøjer uden en Pro-licens, får du vist fejlmeddelelsen "Kun brugere med Power BI Pro-licenser kan publicere til dette arbejdsområde".
 
 ## <a name="administering-new-workspace-experience-workspaces"></a>Administration af arbejdsområder i den nye arbejdsområdeoplevelse
 
-Arbejdsområder til administration af nye arbejdsområder er nu plads i Power BI-administrationsportalen. Power BI-administratorer bestemmer, hvem i en organisation der kan oprette arbejdsområder og distribuere apps. Administratorer kan se status for alle arbejdsområder i deres organisation. De kan også administrere og genoprette arbejdsområder. Læs mere om [Oprettelse af nye arbejdsområder](../admin/service-admin-portal.md#create-the-new-workspaces) i artiklen om administrationsportalen.
+Arbejdsområder til administration af nye arbejdsområder er nu på plads i Power BI-administrationsportalen. Power BI-administratorer bestemmer, hvem i en organisation der kan oprette arbejdsområder og distribuere apps. Administratorer kan se status for alle arbejdsområder i deres organisation. De kan også administrere og genoprette arbejdsområder. Læs mere om [Oprettelse af nye arbejdsområder](../admin/service-admin-portal.md#create-the-new-workspaces) i artiklen om administrationsportalen.
 
 ## <a name="guest-users"></a>Gæstebrugere
 
@@ -125,11 +125,11 @@ Nej. Links til eksisterende elementer i de klassiske arbejdsområder påvirkes i
 
 **Opgraderes eksisterende arbejdsområder til den nye arbejdsområdeoplevelse i forbindelse med, at den bliver generelt tilgængelig?**
 
-Nej. Den nye generelt tilgængelige arbejdsområdeoplevelse ændrer kun standardtypen for arbejdsområder til den nye arbejdsområdeoplevelse. Eksisterende klassiske arbejdsområder, der er baseret på Office 365 Grupper, forbliver uændrede.
+Nej. Den nye generelt tilgængelige arbejdsområdeoplevelse ændrer kun standardtypen for arbejdsområder til den nye arbejdsområdeoplevelse. Eksisterende klassiske arbejdsområder, der er baseret på Microsoft 365 Grupper, forbliver uændrede.
 
-**Oprettes arbejdsområder stadig automatisk for Office 365 Grupper**
+**Oprettes der stadig automatisk arbejdsområder for Microsoft 365 Grupper?**
 
-Ja. Da vi understøtter begge typer arbejdsområder samtidig, fortsætter vi med at opstille alle de Office 365-grupper, som du har adgang til, på listen over arbejdsområder.
+Ja. Da vi understøtter begge typer arbejdsområder samtidig, fortsætter vi med at vise alle de Microsoft 365-grupper, som du har adgang til, på listen over arbejdsområder.
 
 ## <a name="next-steps"></a>Næste trin
 

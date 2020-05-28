@@ -9,37 +9,37 @@ ms.topic: conceptual
 ms.date: 04/23/2019
 ms.author: kfollis
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 3a6f1f692d615da14be9092290fd7c8c9e6bf168
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 6c6bbf8476087532fd3a049a0e4bde3191892325
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83129446"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564055"
 ---
 # <a name="use-an-alternate-email-address"></a>Brug af en alternativ mailadresse
 
 Når du tilmelder dig Power BI, angiver du en mailadresse. Power BI bruger som standard denne adresse til at sende dig opdateringer om aktiviteter i tjenesten. Hvis nogen for eksempel sender en invitation til deling til dig, sendes den til denne adresse.
 
-I nogle tilfælde vil du måske have disse mails sendt til en alternativ mailadresse i stedet for den, du har tilmeldt dig med. I denne artikel forklares det, hvordan du angiver en alternativ adresse i Office 365 og PowerShell. I artiklen forklares det også, hvordan en mailadresse løses i Azure Active Directory (Azure AD).
+I nogle tilfælde vil du måske have disse mails sendt til en alternativ mailadresse i stedet for den, du har tilmeldt dig med. Denne artikel indeholder en forklaring af, hvordan du angiver en alternativ adresse i Microsoft 365 og PowerShell. I artiklen forklares det også, hvordan en mailadresse løses i Azure Active Directory (Azure AD).
 
 > [!NOTE]
 > Angivelse af en alternativ mailadresse påvirker ikke den mailadresse, som Power BI bruger til tjenesteopdateringer, nyhedsbreve og anden kommunikation. Denne kommunikation sendes altid til den mailadresse, du brugte, da du tilmeldte dig Power BI.
 
-## <a name="use-office-365"></a>Brug Office 365
+## <a name="use-microsoft-365"></a>Brug Microsoft 365
 
-Følg disse trin for at angive en alternativ adresse i Office 365.
+Følg disse trin for at angive en alternativ adresse i Microsoft 365.
 
-1. Åbn [siden med personlige oplysninger i Office 365](https://portal.office.com/account/#personalinfo). Hvis du bliver bedt om at logge på, skal du logge på med den mailadresse og adgangskode, du bruger til Power BI.
+1. Åbn siden med [personlige oplysninger](https://portal.office.com/account/#personalinfo) på din konto. Hvis du bliver bedt om at logge på, skal du logge på med den mailadresse og adgangskode, du bruger til Power BI.
 
 1. Vælg **Personlige oplysninger** i menuen til venstre.
 
 1. I afsnittet **Kontaktoplysninger** skal du vælge **Rediger**.
 
-    Hvis du ikke kan redigere dine oplysninger, betyder det, at din mailadresse administreres af Office 365-administratoren. Kontakt administratoren for at opdatere din mailadresse.
+    Hvis du ikke kan redigere dine oplysninger, betyder det, at din mailadresse administreres af administratoren. Kontakt administratoren for at opdatere din mailadresse.
 
     ![Kontaktoplysninger](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
 
-1. I feltet **Alternativ mailadresse** skal du angive den mailadresse, som Office 365 skal bruge til opdateringer fra Power BI.
+1. I feltet **Alternativ mailadresse** skal du angive den mailadresse, som Microsoft 365 skal bruge til Power BI-opdateringer.
 
 ## <a name="use-powershell"></a>Brug PowerShell
 
