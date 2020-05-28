@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 05/04/2020
+ms.date: 05/19/2020
 ms.author: painbar
-ms.openlocfilehash: 762d88789bb68777886a126589802b9e8d854879
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: a68c8a452752981b2526c450820e8d277f5c0b10
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347441"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83692966"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization"></a>Installér og distribuer skabelonapps i din organisation
 
@@ -59,11 +59,19 @@ Hvis du vil installere, tilpasse og distribuere en skabelonapp, skal du have fø
 
 ## <a name="connect-to-data"></a>Opret forbindelse til data
 
-1. Vælg **Gå til program**. Vinduet **Kom i gang med din nye app** vises.
+1. Vælg **Gå til program**.
 
-   ![Kom i gang med dit program](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
+1. I vinduet **Kom i gang med din nye app** skal du vælge **Udforsk**.
 
-1. Klik på **Opret forbindelse**.
+   ![Velkomstskærmbilledet for skabelonappen](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
+
+   Appen åbnes, og der vises eksempeldata.
+
+1. Vælg linket **Opret forbindelse til dine data** på banneret øverst på siden.
+
+   ![GitHub-appen opretter forbindelse til dit datalink](media/service-template-apps-install-distribute/power-bi-template-app-connect-data.png)
+
+
     
     Derved åbnes en dialogboks eller en række dialogbokse, hvor du ændrer datakilden fra eksempeldataene til din egen datakilde. Dette betyder normalt, at du omdefinerer parametrene for datasæt og legitimationsoplysningerne for datakilden. Se [Kendte begrænsninger](service-template-apps-overview.md#known-limitations).
     
@@ -71,19 +79,20 @@ Hvis du vil installere, tilpasse og distribuere en skabelonapp, skal du have fø
 
    ![Dialogbokse til oprettelse af forbindelse til data](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
-    Når du er færdig med at udfylde forbindelsesdialogboksene, starter processen til oprettelse af forbindelse. Et banner informerer dig om, at du får vist eksempeldata.
+    Når du er færdig med at udfylde forbindelsesdialogboksene, starter processen til oprettelse af forbindelse. Et banner informerer dig om, at dataene opdateres, og at du i mellemtiden får vist eksempeldata.
 
     ![Visning af eksempeldata.](media/service-template-apps-install-distribute/power-bi-template-app-viewing-sample-data.png)
 
-    Vent på, at oprettelsen af forbindelse til og opdateringen af dataene er færdig. Hvis du vil vide, hvornår denne proces er færdig, skal du se statusindikatoren i datasætrækken (nyt udseende) eller tabulator (gammelt udseende).
-
-   Når oprettelsen af forbindelse til og opdateringen af data er færdig, skal du opdatere din browser. Banneret informerer nu om, at du skal opdatere appen for at anvende de ændringer, du foretager i appen, og dele den.
-
-    ![Tilpas og del app](media/service-template-apps-install-distribute/power-bi-template-app-customize-share.png)
+   Dine rapportdata opdateres automatisk én gang om dagen, medmindre du deaktiverede dette under logonprocessen. Du kan også [konfigurere din egen opdateringsplan](./refresh-scheduled-refresh.md) for at holde rapportdataene opdateret, hvis du vil.
 
 ## <a name="customize-and-share-the-app"></a>Tilpas og del appen
 
-Når du har opdateret browseren efter oprettelsen af forbindelse til og opdateringen af data, kan du nu se det arbejdsområde, der er knyttet til appen. Nu kan du redigere artefakterne der på samme måde som i et hvilket som helst arbejdsområde. Husk imidlertid, at eventuelle ændringer, du foretager, overskrives, når du opdaterer appen med en ny version, medmindre du gemmer de elementer, du har ændret, under et andet navn. [Se flere oplysninger om, hvordan du overskriver](#overwrite-behavior).
+Når du har oprettet forbindelse til dine data, og dataopdateringen er fuldført, kan du tilpasse alle de rapporter og dashboards, som appsene indeholder, samt dele appen med dine kolleger. Du skal dog huske på, at eventuelle ændringer, du foretager, overskrives, når du opdaterer appen med en ny version, medmindre du gemmer de elementer, du har ændret, under et andet navn. [Se flere oplysninger om, hvordan du overskriver](#overwrite-behavior).
+
+Du tilpasser og deler din app ved at vælge blyantikonet i øverste højre hjørne af siden.
+
+![Rediger app](media/service-template-apps-install-distribute/power-bi-template-app-edit-app.png)
+
 
 Du kan finde oplysninger om redigering af artefakter i arbejdsområdet under
 * [Præsentation af rapporteditoren i Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
@@ -132,4 +141,4 @@ Hvis du oprindeligt har downloadet appen fra AppSource, får du besked på to m�
 
 ## <a name="next-steps"></a>Næste trin
 
-[Opret arbejdsområder med dine kolleger i Power BI](../collaborate-share/service-create-workspaces.md)
+[Opret arbejdsområder med dine kolleger i Power BI](../collaborate-share/service-create-the-new-workspaces.md)

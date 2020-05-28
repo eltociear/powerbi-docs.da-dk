@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/07/2019
-ms.openlocfilehash: e2c59ba84700aaf83c4cc9d16d009696c42dfc54
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 26823061a6c0b92b1a6159a75e26f79232bf3ebc
+ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114583"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83407625"
 ---
 # <a name="connect-a-report-to-a-dataset-using-dynamic-binding"></a>Forbind en rapport til et datasæt ved hjælp af dynamisk binding 
 
@@ -28,7 +28,7 @@ Som en del af integreringsprocessen skal du sørge for, at du *genererer et toke
 
 ## <a name="generating-a-token-with-sufficient-permissions"></a>Generering af et token med tilstrækkelige tilladelser
 
-Dynamisk binding understøttes i begge scenarier: *Integrering for din organisation* og *Integrering for dine kunder*. I nedenstående tabel beskrives overvejelserne for hvert scenarie.
+Dynamisk binding understøttes til scenarier både med *Integrering for din organisation* og *Integrering for dine kunder*. I nedenstående tabel beskrives overvejelserne for hvert scenarie.
 
 |Scenarie  |Ejerskab af data  |Token  |Krav  |
 |---------|---------|---------|---------|

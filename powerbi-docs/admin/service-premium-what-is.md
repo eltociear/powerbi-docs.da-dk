@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 05/15/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: c206e35651ef28c03151c6c5af8e5bae453d5d2b
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 290174f7848e4518a4b1489d0a90136e86d245da
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274368"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438240"
 ---
 # <a name="what-is-power-bi-premium"></a>Hvad er Power BI Premium?
 
@@ -59,6 +59,7 @@ Med Power BI Premium får du *dedikerede kapaciteter*. I modsætning til en delt
 * Excel-projektmapper (medmindre data importeres først i Power BI Desktop)
 * [Send datasæt via push](/rest/api/power-bi/pushdatasets)
 * [Streamingdatasæt](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
+* [Spørgsmål og svar](../create-reports/power-bi-tutorial-q-and-a.md)
 
 Der er placeret arbejdsområder i kapaciteter. Hver bruger af Power BI har et personligt arbejdsområde, der er kendt som **Mit arbejdsområde**. Der kan oprettes flere arbejdsområder – kendt som **arbejdsområder** – for at muliggøre samarbejde. Arbejdsområder, herunder personlige arbejdsområder, oprettes som standard i den delte kapacitet. Når du har Premium-kapaciteter, kan både Mine arbejdsområder og arbejdsområder tildeles til Premium-kapaciteter.
 
@@ -68,7 +69,7 @@ Som beskrevet i afsnittet [Abonnementer og licenser](#subscriptions-and-licensin
 
 Behandling opnås ved et angivet antal v-kerner, der er ligeligt fordelt mellem backend og frontend.
 
-**Backend-v-kernerne** er ansvarlige for det tunge arbejde i Power BI, herunder behandling af forespørgsler, cachestyring, kørsel af R-servere, modelopdatering, behandling på naturligt sprog (Spørgsmål og svar) og gengivelse af rapporter og billeder på serversiden. Backend-v-kerner tildeles en fast mængde hukommelse, der primært bruges til at hoste modeller, som også kaldes aktive datasæt.
+De **virtuelle back end-kerner** er ansvarlige for Power BI-kernefunktionalitet, herunder behandling af forespørgsler, administration af cache, kørsel af R-tjenester, opdatering af model og gengivelse af rapporter og billeder på serversiden. Backend-v-kerner tildeles en fast mængde hukommelse, der primært bruges til at hoste modeller, som også kaldes aktive datasæt.
 
 **Frontend-v-kerner** er ansvarlige for webtjenesten, dashboardet og dokumentstyringen af rapporter, administration af adgangsrettigheder, planlægning, API'er, uploads og downloads og generelt alt, hvad der er relateret til brugeroplevelsen.
 
@@ -154,7 +155,7 @@ Overvågning på portalen giver et hurtigt overordnet overblik over målepunkter
 
 ![Administrationsportal](media/service-premium-what-is/premium-admin-portal-health.png)
 
-Programmet **Power BI Premium Capacity Metrics** giver de mest detaljerede oplysninger om ydeevnen af dine kapaciteter. Programmet indeholder et overordnet dashboard og mere detaljerede rapporter.
+Appen **Power BI Premium Capacity Metrics** giver de mest detaljerede oplysninger om ydeevnen af dine kapaciteter. Programmet indeholder et overordnet dashboard og mere detaljerede rapporter.
 
 ![Appdashboardet Målepunkter](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
@@ -228,7 +229,7 @@ Med Premium kan alle – uanset om de befinder sig i eller uden for organisation
 
 ![Indholdsdeling](media/service-premium-what-is/premium-sharing.png)
 
-Premium muliggør omfattende distribution af indhold for Pro-brugere uden at kræve Pro-licenser for modtagere, der får vist indholdet. Pro-licenser kræves for oprettere af indhold. Oprettere opretter forbindelse til datakilder og modeldata og opretter rapporter og dashboards, der er pakket som arbejdsområdeapps. Brugere uden en Pro-licens kan stadig få adgang til et arbejdsområde, der er i en Power BI Premium-kapacitet, så længe de har rollen Fremviser. 
+Premium muliggør omfattende distribution af indhold for Pro-brugere uden at kræve Pro-licenser for modtagere, der får vist indholdet. Pro-licenser kræves for oprettere af indhold. Oprettere opretter forbindelse til datakilder og modeldata og opretter rapporter og dashboards, der er pakket som arbejdsområdeapps. Brugere uden en Pro-licens kan stadig få adgang til et arbejdsområde, der er i en Power BI Premium-kapacitet, så længe de har rollen Seer. 
 
 Du kan få mere at vide under [Power BI-licenser](service-admin-licensing-organization.md).
 

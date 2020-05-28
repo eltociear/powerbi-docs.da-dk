@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 3fdb969888d023ca9683c2460086f2fb8157c3c3
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a48d83223ab02d2f9f043dde2facebd6ad73c27a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83304547"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565666"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Slet næsten alt i Power BI-tjenesten
 I denne artikel kan du lære, hvordan du sletter et dashboard, en rapport, en projektmappe, et datasæt, en app og et arbejdsområde i Power BI-tjenesten.
@@ -82,7 +82,7 @@ Hvis et datasæt er en del af en eller flere [organisationsindholdspakker](../co
 
 ## <a name="delete-a-workspace"></a>Slet et arbejdsområde
 > [!WARNING]
-> Når du opretter et arbejdsområde, opretter du en Office 365-gruppe. Når du sletter et arbejdsområde, sletter du denne Office 365-gruppe. Det betyder, at gruppen også slettes fra andre O365-produkter, f.eks. SharePoint og Microsoft Teams.
+> Når du opretter et arbejdsområde, opretter du en Microsoft 365-gruppe. Og når du sletter et arbejdsområde, sletter du denne Microsoft 365-gruppe. Det betyder, at gruppen også slettes fra andre Microsoft 365-produkter, f.eks. SharePoint og Microsoft Teams.
 >
 >
 

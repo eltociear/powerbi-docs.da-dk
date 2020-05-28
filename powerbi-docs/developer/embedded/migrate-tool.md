@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: b6b84d9e6c5f0dee912ccf80cf6949618b16d8c5
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 5df9ddd44bdc8952dab14809ce3facd74e5d3753
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83149000"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564160"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Overførselsværktøj i Power BI Embedded
 
@@ -49,7 +49,7 @@ Du skal starte med at oprette en ny overførselsplan. Du kan oprette en ny overf
 3. Du bliver bedt om at logge på. Du skal logge på med dit Azure-abonnement.
 
    > [!IMPORTANT]
-   > Dette er **ikke** din Office 365-organisationskonto, som du bruger til at logge på Power BI.
+   > Dette er **ikke** din organisationskonto, som du bruger til at logge på Power BI.
 
 4. Vælg det Azure-abonnement, som indeholder dine Power BI Embedded-arbejdsområdesamlinger.
 

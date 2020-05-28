@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: e621deb2cc2db74d8836900aa65105a075d4cd3c
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: c7d1c9a29c95cb039c90fd339f6e6a38de111916
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83139455"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563683"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Konfiguration af mobilapps med Microsoft Intune
 
@@ -24,7 +24,7 @@ Microsoft Intune giver organisationer mulighed for at administrere enheder og pr
 
 Denne artikel forudsætter, at Intune er konfigureret korrekt, og at du har enheder tilmeldt i Intune. Artiklen er ikke tænkt som en komplet konfigurationsvejledning til Microsoft Intune. Du kan finde flere oplysninger om Intune under [Hvad er Intune?](/intune/introduction-intune/)
 
-Microsoft Intune kan fungere sammen med administration af mobilenheder (MDM) i Office 365. Hvis du bruger MDM, vises "tilmeldt MDM" på enheden, men den kan administreres i Intune.
+Microsoft Intune kan fungere sammen med administration af mobilenheder i Microsoft 365. Hvis du bruger MDM, vises "tilmeldt MDM" på enheden, men den kan administreres i Intune.
 
 > [!NOTE]
 > Når du konfigurerer Intune, er dataopdatering i baggrunden slået fra for Power BI-mobilappen på din iOS- eller Android-enhed. Power BI opdaterer dataene via Power BI-tjenesten på internettet, når du åbner appen.
@@ -105,7 +105,7 @@ Du kan oprette programmet eller politikken først. Det har ingen betydning, i hv
 
 1. Angiv URL-adressen for appen, som vi hentede under [Trin 1](#step-1-get-the-url-for-the-application), og vælg **Næste**.
 
-    ![Softwareinstallation: Android](media/service-admin-mobile-intune/intune-add-software-android1.png)
+    ![Programinstallation: Android](media/service-admin-mobile-intune/intune-add-software-android1.png)
 
 1. Angiv en **Udgiver**, et **Navn** og en **Beskrivelse**. Du kan vælge at angive et **Ikon**. **Kategori** er til appen Firmaportal. Når du er færdig, skal du vælge **Næste**.
 
@@ -184,7 +184,7 @@ Du installerer programmet via appen *Firmaportal*. Hvis du ikke har installeret 
 
     ![Angiv pinkode](media/service-admin-mobile-intune/intune-powerbi-pin.png)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Konfigurer og udrul politikker for administration af mobilapps i Microsoft Intune-konsollen](/intune/app-protection-policies/)  
 

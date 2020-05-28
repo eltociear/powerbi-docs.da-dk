@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8d70b291b4ff2b157c15967d602cfbee8e12965a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 1d37225e1de1ffdf0617a84c3b0514d32494c563
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83144293"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693941"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Opret klassiske arbejdsområder i Power BI
 
@@ -22,30 +22,30 @@ I Power BI kan du oprette *arbejdsområder*, som er steder, hvor du kan samarbej
 
 **Vidste du det?** Power BI tilbyder en ny arbejdsområdeoplevelse, som nu er standard. Læs [Organiser arbejde i de nye arbejdsområder](service-new-workspaces.md) for at få oplysninger om de nye arbejdsområder. Er du klar til at overføre dit klassiske arbejdsområde? Se [Opgrader klassiske arbejdsområder til de nye arbejdsområder i Power BI](service-upgrade-workspaces.md) for at få flere oplysninger.
 
-Når du opretter et klassisk arbejdsområde, opretter du en underliggende tilknyttet Office 365-gruppe. Al administration af arbejdsområder foregår i Office 365. Du kan føje kollegaer til disse arbejdsområder som medlemmer eller administratorer. I arbejdsområdet kan alle samarbejde i dashboards, rapporter og andre artikler, som du vil publicere til en større målgruppe. Alle de brugere, du føjer til et arbejdsområde, skal have en Power BI Pro-licens. 
+Når du opretter et klassisk arbejdsområde, opretter du en underliggende tilknyttet Microsoft 365-gruppe. Al administration af arbejdsområder foregår i Microsoft 365. Du kan føje kollegaer til disse arbejdsområder som medlemmer eller administratorer. I arbejdsområdet kan alle samarbejde i dashboards, rapporter og andre artikler, som du vil publicere til en større målgruppe. Alle de brugere, du føjer til et arbejdsområde, skal have en Power BI Pro-licens.
 
 ## <a name="video-apps-and-workspaces"></a>Video: Apps og arbejdsområder
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## <a name="create-a-classic-workspace-based-on-an-office-365-group"></a>Opret et klassisk arbejdsområde på baggrund af en Office 365-gruppe
+## <a name="create-a-classic-workspace-based-on-a-microsoft-365-group"></a>Opret et klassisk arbejdsområde baseret på en Microsoft 365-gruppe
 
-Når du opretter et arbejdsområde, oprettes det ud fra en Office 365-gruppe.
+Når du opretter et arbejdsområde, oprettes det ud fra en Microsoft 365-gruppe.
 
 [!INCLUDE [powerbi-service-create-app-workspace](../includes/powerbi-service-create-app-workspace.md)]
 
-Bemærk, at når du opretter arbejdsområdet første gang, skal du muligvis vente omkring en time, før det er overført til Office 365. 
+Du skal måske en vente en times tid, første gang du opretter arbejdsområdet, før det er overført til Microsoft 365.
 
-### <a name="add-an-image-to-your-office-365-workspace-optional"></a>Føj et billede til dit Office 365-arbejdsområde (valgfrit)
+### <a name="add-an-image-to-your-microsoft-365-workspace-optional"></a>Føj et billede til dit Microsoft 365-arbejdsområde (valgfrit)
 Power BI opretter som standard en lille farvet cirkel for din app med appens forbogstaver. Det kan også være, at du vil tilpasse den med et billede. Hvis du vil tilføje et billede, skal du have en Exchange Online-licens.
 
 1. Vælg **Arbejdsområder**, vælg **Flere indstillinger** (...) ud for navnet på arbejdsområdet og derefter **Medlemmer**. 
    
      ![Vælg medlemmer af arbejdsområdet](media/service-create-workspaces/power-bi-workspace-old-members.png)
    
-    Outlook til Office 365-kontoen til arbejdsområdet åbnes i et nyt browservindue.
+    Outlook til Microsoft 365-kontoen til arbejdsområdet åbnes i et nyt browservindue.
 2. Vælg blyanten **Rediger**.
    
-     ![Office 365-blyantsikon](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
+     ![Blyantikon til Microsoft 365](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
 3. Vælg kameraikonet, og find det billede, du vil bruge.
    
      ![Vælg kameraikonet](media/service-create-workspaces/power-bi-workspace-old-camera.png)
@@ -54,7 +54,7 @@ Power BI opretter som standard en lille farvet cirkel for din app med appens for
 
 4. Vælg **OK** og derefter **Gem**.
    
-    Billedet erstatter den farvede cirkel i Office 365 Outlook-vinduet. 
+    Billedet erstatter den farvede cirkel i Outlook til Microsoft 365-vinduet.
    
      ![Tilpasset billede](media/service-create-workspaces/power-bi-workspace-old-new-image.png)
    

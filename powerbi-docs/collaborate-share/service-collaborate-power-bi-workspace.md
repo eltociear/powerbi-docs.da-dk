@@ -1,6 +1,6 @@
 ---
 title: Samarbejd i et klassisk arbejdsområde
-description: Læs om, hvordan du samarbejder om Power BI Desktop-filer i dit arbejdsområde og med Office 365-tjenester såsom deling af filer på OneDrive for Business, samtaler i Exchange, kalender og opgaver.
+description: Læs om, hvordan du samarbejder om Power BI Desktop-filer i dit arbejdsområde og med Microsoft 365-tjenester såsom deling af filer på OneDrive for Business, samtaler i Exchange, kalender og opgaver.
 author: maggiesMSFT
 ms.reviewer: lukaszp
 ms.service: powerbi
@@ -9,20 +9,20 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 70e5a77b4a0669669cd7a80894e3a32b9b8ac49b
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 7c95bf46998b18534994ebf083d3a118a061f555
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348223"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693560"
 ---
 # <a name="collaborate-in-a-classic-workspace"></a>Samarbejd i et klassisk arbejdsområde
 Power BI-arbejdsområder er fantastiske steder, hvor du kan samarbejde med dine kolleger om dashboards, rapporter og datasæt for at oprette *apps*. Denne artikel omhandler de oprindelige, *klassiske* arbejdsområder.  
 
-Samarbejde slutter ikke med arbejdsområder i Power BI. Når du opretter et af de klassiske arbejdsområder i Power BI, opretter du automatisk en Office 365-gruppe i baggrunden. Office 365 tilbyder andre gruppetjenester såsom deling af filer på OneDrive for Business, samtaler i Exchange, delte kalendere og opgaver osv. Læs mere om [grupper i Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
+Samarbejde slutter ikke med arbejdsområder i Power BI. Når du opretter et af de klassiske arbejdsområder i Power BI, opretter du automatisk en Microsoft 365-gruppe i baggrunden. Microsoft 365 tilbyder andre gruppetjenester såsom deling af filer på OneDrive for Business, samtaler i Exchange, delte kalendere og opgaver osv. Læs mere om [grupper i Microsoft 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
 
 > [!NOTE]
-> Den nye arbejdsområdeoplevelse ændrer relationen mellem Power BI-arbejdsområder og Office 365-grupper. Når du opretter et af de nye arbejdsområder i Power BI, opretter du ikke længere automatisk en Office 365-gruppe i baggrunden. Du kan finde flere oplysninger under [Opret de nye arbejdsområder i Power BI](service-create-the-new-workspaces.md).
+> Den nye arbejdsområdeoplevelse ændrer relationen mellem Power BI-arbejdsområder og Microsoft 365-grupper. Når du opretter et af de nye arbejdsområder i Power BI, opretter du ikke længere automatisk en Microsoft 365-gruppe i baggrunden. Du kan finde flere oplysninger under [Opret de nye arbejdsområder i Power BI](service-create-the-new-workspaces.md).
 
 Du skal have en [Power BI Pro-licens](../fundamentals/service-features-license-type.md) for at oprette et arbejdsområde.
 
@@ -41,38 +41,38 @@ Når du har oprettet en Power BI Desktop-fil, kan du publicere den i et arbejdso
    
     Herfra er det som enhver anden rapport i Power BI. Du og andre i arbejdsområdet kan redigere rapporten og gemme felter på et dashboard efter eget valg.
 
-## <a name="collaborate-in-office-365"></a>Samarbejd i Office 365
-Samarbejde i Office 365 starter fra det klassiske arbejdsområde i Power BI.
+## <a name="collaborate-in-microsoft-365"></a>Samarbejd i Microsoft 365
+Samarbejde i Microsoft 365 starter fra det klassiske arbejdsområde i Power BI.
 
 1. I Power BI-tjenesten skal du vælge pilen ud for **Arbejdsområder** > og vælge **Flere indstillinger** (…) ud for navnet på dit arbejdsområde. 
    
    ![Menuen Arbejdsområder](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
 2. I denne menu kan du samarbejde med din gruppe på nogle få måder: 
    
-   * Hav en [gruppesamtale i Office 365](#have-a-group-conversation-in-office-365).
+   * Hav en [gruppesamtale i Microsoft 365](#have-a-group-conversation-in-microsoft-365).
    * [Planlæg en begivenhed](#schedule-an-event-on-the-group-workspace-calendar) i kalenderen for gruppearbejdsområdet.
    
-   Første gang du går til gruppearbejdsområdet i Office 365, kan det tage noget tid. Giv det 15 til 30 minutter, og opdater derefter din browser.
+   Første gang, du går til gruppearbejdsområdet i Microsoft 365, kan det tage noget tid. Giv det 15 til 30 minutter, og opdater derefter din browser.
 
-## <a name="have-a-group-conversation-in-office-365"></a>Hav en gruppesamtale i Office 365
+## <a name="have-a-group-conversation-in-microsoft-365"></a>Hav en gruppesamtale i Microsoft 365
 1. Vælg **Flere indstillinger** (...) ud for navnet på dit arbejdsområde \> **Samtaler**. 
    
     ![Fanen Samtaler](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
-   Mail- og samtalewebstedet for dit gruppearbejdsområde åbnes i Outlook til Office 365.
+   Mail- og samtalewebstedet for dit gruppearbejdsområde åbnes i Outlook til Microsoft 365.
    
    ![Menupunktet Kalender](media/service-collaborate-power-bi-workspace/pbi_grps_o365convo.png)
-2. Læs mere om [gruppesamtaler i Outlook til Office 365](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
+2. Læs mere om [gruppesamtaler i Outlook til Microsoft 365](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## <a name="schedule-an-event-on-the-group-workspace-calendar"></a>Planlæg en begivenhed i kalenderen for gruppearbejdsområdet
 1. Vælg **Flere indstillinger** (...) ud for navnet på arbejdsområdet \> **Kalender**. 
    
    ![Fanen Kalender](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
-   Kalenderen for dit gruppearbejdsområde åbnes i Outlook til Office 365.
+   Kalenderen for dit gruppearbejdsområde åbnes i Outlook til Microsoft 365.
    
-   ![Outlook til Office 365](media/service-collaborate-power-bi-workspace/pbi_grps_o365_calendar.png)
-2. Læs mere om [gruppekalendere i Outlook i Office 365](https://support.office.com/Article/Add-edit-and-subscribe-to-group-events-0cf1ad68-1034-4306-b367-d75e9818376a).
+   ![Outlook til Microsoft 365](media/service-collaborate-power-bi-workspace/pbi_grps_o365_calendar.png)
+2. Læs mere om [gruppekalendere i Outlook i Microsoft 365](https://support.office.com/Article/Add-edit-and-subscribe-to-group-events-0cf1ad68-1034-4306-b367-d75e9818376a).
 
 ## <a name="manage-a-classic-workspace"></a>Administrer et klassisk arbejdsområde
 Hvis du er ejer eller administrator af et arbejdsområde, kan du også tilføje eller fjerne medlemmer af arbejdsområdet. Læs mere om [administration af et Power BI-arbejdsområde](service-manage-app-workspace-in-power-bi-and-office-365.md).

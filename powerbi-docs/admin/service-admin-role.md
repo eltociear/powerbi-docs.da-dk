@@ -1,6 +1,6 @@
 ---
-title: Om Power BI-tjenesteadministratorroller
-description: I denne artikel beskrives Power BI-tjenesteadministratoren og de specifikke roller, der giver administratorrettigheder.
+title: Om roller som administrator af Power BI-tjenesten
+description: I denne artikel beskrives rollen som administrator af Power BI-tjenesten og de specifikke roller, der giver administratorrettigheder.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 01/02/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: fc1a0c524a3cb4a713cbaf049c259a4b96714131
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: a5a956f65943f557d21a942bde4be1de40a84692
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83136405"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438194"
 ---
-# <a name="understanding-power-bi-service-administrator-roles"></a>Om Power BI-tjenesteadministratorroller
+# <a name="understanding-power-bi-service-administrator-roles"></a>Om roller som administrator af Power BI-tjenesten
 
-Hvis du vil administrere en Power BI-lejer, skal du have en af følgende roller: Power BI-administrator, Power Platform-administrator eller Global administrator i Microsoft 365. Administratorer af Microsoft 365-brugeradministration tildeler brugere til rollerne Power BI-administrator eller Power Platform-administrator i Microsoft 365 Administration eller ved hjælp af et PowerShell-script. Du kan finde flere oplysninger under [Tildel roller til brugerkonti med Office 365 PowerShell](/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell).
+Hvis du vil administrere en Power BI-lejer, skal du have en af følgende roller: Power BI-administrator, Power Platform-administrator eller Global administrator i Microsoft 365. Administratorer af Microsoft 365-brugeradministration tildeler brugere til rollerne Power BI-administrator eller Power Platform-administrator i Microsoft 365 Administration eller ved hjælp af et PowerShell-script. Du kan finde flere oplysninger under [Tildel roller til brugerkonti med PowerShell](/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell).
 
 Brugere med rollerne Power BI-administrator eller Power Platform-administrator har fuld kontrol over en Power BI-lejer og de tilhørende administrative funktioner (undtagen licensering). Når en bruger er tildelt, har vedkommende adgang til [Power BI-administrationsportalen](service-admin-portal.md). Her har vedkommende adgang til lejerbaserede forbrugsdata og kan kontrollere lejerbaseret forbrug af Power BI-funktioner. Disse administratorroller er ideelle til brugere, som skal have adgang til Power BI-administrationsportalen, men ikke skal have tildelt anden administrativ adgang i Microsoft 365.
 
@@ -27,7 +27,7 @@ Brugere med rollerne Power BI-administrator eller Power Platform-administrator h
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 
-Rollerne Power BI administrator og Power Platform-administrator giver ikke følgende muligheder:
+Rollerne som administrator af Power BI-tjenesten og Power Platform giver ikke følgende muligheder:
 
 * Mulighed for at ændre brugere og licenser i Microsoft 365 Administration.
 
@@ -64,7 +64,7 @@ Du kan også tildele brugere roller ved hjælp af PowerShell. Brugere administre
    PS C:\Windows\system32> Connect-AzureAD
    ```
 
-1. Derefter skal du hente **ObjectId** for rollen **Power BI-tjenesteadministrator**. Du kan køre [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole) for at hente **ObjectId**
+1. Derefter skal du hente **ObjectId** for rollen som **administrator af Power BI-tjenesten**. Du kan køre [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole) for at hente **ObjectId**
 
     ```
     PS C:\Windows\system32> Get-AzureADDirectoryRole

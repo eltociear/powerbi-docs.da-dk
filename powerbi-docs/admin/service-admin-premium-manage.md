@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: f4bf863d7d87bd908165976940b868be55e367f9
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 6155453f00ae64eee2cf74db7426b36248def796
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83138646"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564403"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Konfigurer og administrer kapaciteter i Power BI Premium
 
@@ -24,11 +24,11 @@ Få mere at vide om, hvordan du administrerer Power BI Premium- og Power BI Embe
 
 ![Indstillingsskærm for Power BI-kapacitet](media/service-admin-premium-manage/premium-capacity-management.png)
 
-*Kapacitet* er en grundlæggende funktion i Power BI Premium og Power BI Embedded. Det er en række ressourcer, som er reserveret udelukkende til din organisation. Adgang til dedikeret kapacitet giver dig mulighed for at publicere dashboards, rapporter og datasæt til brugere i hele organisationen uden at være nødt til at købe licenser til dem. Det garanterer også pålidelig, ensartet ydeevne for det indhold, der hostes i kapacitet. Du kan finde flere oplysninger i [Hvad er Power BI Premium?](../service-premium.md).
+*Kapacitet* er en grundlæggende funktion i Power BI Premium og Power BI Embedded. Det er en række ressourcer, som er reserveret udelukkende til din organisation. Adgang til dedikeret kapacitet giver dig mulighed for at publicere dashboards, rapporter og datasæt til brugere i hele organisationen uden at være nødt til at købe licenser til dem. Det garanterer også pålidelig, ensartet ydeevne for det indhold, der hostes i kapacitet. Du kan finde flere oplysninger i [Hvad er Power BI Premium?](service-premium-what-is.md).
 
 ## <a name="manage-capacity"></a>Administrer kapacitet
 
-Når du har købt kapacitetsnoder i Office 365, konfigurerer du kapaciteten i Power BI-administrationsportalen. Du kan administrere Power BI Premium-kapaciteter i afsnittet med **kapacitetsindstillinger** i portalen.
+Når du har købt kapacitetsnoder i Microsoft 365, konfigurerer du kapaciteten på Power BI-administrationsportalen. Du kan administrere Power BI Premium-kapaciteter i afsnittet med **kapacitetsindstillinger** i portalen.
 
 ![Kapacitetsindstillinger i administrationsportalen](media/service-admin-premium-manage/admin-portal-premium.png)
 
@@ -60,7 +60,7 @@ Hvis du har tilgængelige v-kerner, skal du konfigurere en ny kapacitet på føl
 
     ![Konfigurer en ny kapacitet](media/service-admin-premium-manage/set-up-capacity.png)
 
-Kapacitetsadministratorer såvel som Power BI-administratorer og globale Office 365-administratorer får derefter vist kapaciteten på oversigten i administratorportalen.
+Kapacitetsadministratorer såvel som Power BI-administratorer og globale administratorer kan derefter se kapaciteten i oversigten på administratorportalen.
 
 ### <a name="capacity-settings"></a>Kapacitetsindstillinger
 
@@ -68,7 +68,7 @@ Kapacitetsadministratorer såvel som Power BI-administratorer og globale Office 
 
     ![Kapacitetshandlinger i området for kapacitetsadministration](media/service-admin-premium-manage/capacity-actions.png)
 
-1. Du kan se, hvem tjenestens administratorer er, kapacitetens varenummer/størrelse, og hvilket område kapaciteten er i.
+1. Du kan se, hvem administratorer af tjenesten er, kapacitetens varenummer/størrelse, og hvilket område kapaciteten er i.
 
     ![Kapacitetsindstillinger](media/service-admin-premium-manage/capacity-settings.png)
 
@@ -81,7 +81,7 @@ Kapacitetsadministratorer såvel som Power BI-administratorer og globale Office 
 
 ### <a name="change-capacity-size"></a>Skift kapacitetsstørrelse
 
-Power BI-administratorer og globale Office 365-administratorer kan ændre Power BI Premium-kapacitet. Kapacitetsadministratorer, der ikke er Power BI-administrator eller global Office 365-administrator, har ikke adgang til denne indstilling.
+Power BI-administratorer og globale administratorer kan ændre Power BI Premium-kapacitet. Kapacitetsadministratorer, der ikke er en Power BI-administrator eller global administrator, har ikke adgang til denne indstilling.
 
 1. Vælg **Skift kapacitetsstørrelse**.
 
@@ -118,7 +118,7 @@ Der er to måder at tildele et arbejdsområde til en kapacitet på: via administ
 
 ### <a name="assign-from-the-admin-portal"></a>Tildel fra administrationsportalen
 
-Ud over Power BI-administratorer og globale Office 365-administratorer kan kapacitetsadministratorer massetildele arbejdsområder inden for afsnittet med Premium-kapacitetsadministration i administrationsportalen. Når du administrerer en kapacitet, får du vist et afsnit med **arbejdsområder**, hvor du kan tildele arbejdsområder.
+Ud over Power BI-administratorer og globale administratorer kan kapacitetsadministratorer massetildele arbejdsområder i afsnittet til administration af Premium-kapacitet på administrationsportalen. Når du administrerer en kapacitet, får du vist et afsnit med **arbejdsområder**, hvor du kan tildele arbejdsområder.
 
 ![Afsnit for tildeling af arbejdsområde i kapacitetsadministration](media/service-admin-premium-manage/capacity-manage-workspaces.png)
 
@@ -157,7 +157,7 @@ Når arbejdsområdet er gemt, flyttes det og al dets indhold til Premium-kapacit
 
 ## <a name="power-bi-report-server-product-key"></a>Produktnøgle til Power BI-rapportserver
 
-På fanen **Kapacitetsindstillinger** i Power BI-administratorportalen kan du få adgang til produktnøglen til Power BI-rapportserver. Den kan kun tilgås af globale administratorer eller brugere tildelt Power BI-tjenesteadministratorrollen, og hvis man har erhvervet et Power BI Premium-varenummer.
+På fanen **Kapacitetsindstillinger** i Power BI-administratorportalen kan du få adgang til produktnøglen til Power BI-rapportserver. Den kan kun tilgås af globale administratorer eller brugere tildelt rollen som administrator af Power BI-tjenesten, og hvis man har erhvervet et Power BI Premium-varenummer.
 
 ![Power BI Report Server-nøgle i kapacitetsindstillinger](media/service-admin-premium-manage/pbirs-product-key.png)
 
