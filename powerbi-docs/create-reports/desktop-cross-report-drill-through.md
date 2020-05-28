@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0c9f9c0f24ad40fadb7d0bd61cd6a6ce7d318e74
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 178ad340a9a3ccd9d6427dc6bad03b6d8d08ce90
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83297831"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83694060"
 ---
 # <a name="use-cross-report-drillthrough-in-power-bi"></a>Brug detaljeadgang på tværs af rapporter i Power BI
 
@@ -31,7 +31,7 @@ Handlingen for detaljeadgang åbner *destinationssiden* i *destinationsrapporten
 I denne artikel kan du se, hvordan du opretter og bruger detaljeadgang på tværs af rapporter til Power BI-rapporter.
 
 > [!NOTE]
-> Du kan ikke bruge detaljeadgang på tværs af rapporter med individuelt delt [Delt med mig-rapporter](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report) i **Mit arbejdsområde**. Hvis du vil bruge detaljeadgang på tværs af rapporter, skal du have adgang til rapporter i det arbejdsområde, hvor de blev delt.
+> Du kan ikke bruge detaljeadgang på tværs af rapporter med [Delt med mig-rapporter](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report), der er delt individuelt. Hvis du vil bruge detaljeadgang på tværs af rapporter, skal du tilgå rapporter i arbejdsområder, som du er medlem af.
 
 ## <a name="enable-cross-report-drillthrough"></a>Aktivér tværgående detaljeadgang i rapport
 
@@ -70,7 +70,7 @@ Du kan konfigurere en destination for detaljeadgang på tværs af rapporter i Po
 1. Hvis du kun bruger siden til detaljeadgang på tværs af rapporter, skal du slette knappen **Tilbage**, der automatisk føjes til lærredet. Knappen **Tilbage** fungerer kun til navigation i en rapport. 
 1. Når du har konfigureret destinationssiden, skal du gemme rapporten, hvis du bruger Power BI-tjenesten, eller gemme og publicere rapporten, hvis du bruger Power BI Desktop.
 
-Det er det hele. Dine rapporter er klar til detaljeadgang på tværs af rapporter. 
+Det var det. Dine rapporter er klar til detaljeadgang på tværs af rapporter. 
 
 ## <a name="use-cross-report-drillthrough"></a>Anvend tværgående detaljeadgang i rapport
 
@@ -100,7 +100,7 @@ I forbindelse med detaljeadgang på tværs af rapporter overfører Power BI filt
 
 Hvis du vil vende tilbage til kilderapporten efter detaljeadgangen på tværs af rapporter, skal du bruge knappen **Tilbage** i browseren. 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du vil måske også være interesseret i følgende artikler:
 
