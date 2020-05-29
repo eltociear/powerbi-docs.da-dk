@@ -1,22 +1,22 @@
 ---
-title: Del et datasæt (prøveversion)
+title: Deling af et datasæt
 description: Som ejer af datasæt kan du oprette og dele dine datasæt, så andre kan bruge dem. Få mere at vide om, hvordan du deler dem.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/01/2019
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4114287099300c371a6b02961a968702acb98f92
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 4082647338adcca8518cc4d9c3a3b88cc3e04f4f
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565454"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83794077"
 ---
-# <a name="share-a-dataset-preview"></a>Del et datasæt (prøveversion)
+# <a name="share-a-dataset"></a>Deling af et datasæt
 
 Som forfatter af *datamodeller* i Power BI Desktop opretter du *datasæt*, som du kan distribuere i Power BI-tjenesten. Derefter kan andre rapportforfattere bruge dine datasæt som udgangspunkt for deres egne rapporter. I denne artikel får du mere at vide om, hvordan du deler dine datasæt. Hvis du vil vide mere om, hvordan du får og fjerner adgangen til dine delte datasæt, kan du læse om [tilladelsen Opret](service-datasets-build-permissions.md).
 
@@ -26,7 +26,7 @@ Som forfatter af *datamodeller* i Power BI Desktop opretter du *datasæt*, som d
 
     Det er bedste praksis at gemme .pbix-filen i en Microsoft 365-gruppe.
 
-1. Publicer .pbix-filen i et [arbejdsområde med den nye oplevelse](../collaborate-share/service-create-the-new-workspaces.md) i Power BI-tjenesten.
+1. Publicer .pbix-filen i en [ny arbejdsområdeoplevelse](../collaborate-share/service-create-the-new-workspaces.md) i Power BI-tjenesten.
     
     Andre medlemmer af dette arbejdsområde kan allerede oprette rapporter i andre arbejdsområder baseret på dette datasæt.
 
@@ -53,5 +53,5 @@ Når du har et delt datasæt i dit arbejdsområde, vil du måske gerne vide, hvi
 
 ## <a name="next-steps"></a>Næste trin
 
-- [Brug datasæt på tværs af arbejdsområder (prøveversion)](service-datasets-across-workspaces.md)
+- [Brug datasæt på tværs af arbejdsområder](service-datasets-across-workspaces.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
