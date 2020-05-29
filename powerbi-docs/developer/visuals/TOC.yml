@@ -12,7 +12,7 @@
       items:
         - name: Udvikl en Power BI-visualisering
           href: custom-visual-develop-tutorial.md
-        - name: Opret reaktionsbaserede visualiseringer
+        - name: Opret React-baserede visualiseringer
           href: create-react-visual.md
         - name: Opret et liggende søjlediagram
           href: create-bar-chart.md
@@ -20,9 +20,9 @@
           href: custom-visual-develop-tutorial-format-options.md
         - name: Tilføj enhedstests for det visuelle projekt
           href: unit-tests-introduction.md
-    - name: Begreber
+    - name: Koncepter
       items:
-        - name: Struktur for visual-projekter i Power BI
+        - name: Struktur for visuelle projekter i Power BI
           href: visual-project-structure.md
         - name: Visualiseringskoncepter
           href: power-bi-visuals-concept.md
@@ -36,7 +36,7 @@
           href: power-bi-custom-visuals-faq.md
         - name: Brug af funktionaliteter
           href: capabilities.md
-        - name: Tilknytning af datavisning
+        - name: Tilknytninger af datavisninger
           href: dataview-mappings.md
         - name: Objekter og egenskaber
           href: objects-properties.md
@@ -52,6 +52,8 @@
           href: power-bi-custom-visuals-certified.md
         - name: Publicer Power BI-visualiseringer i AppSource
           href: office-store.md
+        - name: Opret R-drevne visualiseringer
+          href: create-r-based-power-bi-desktop.md
         - name: Test din Power BI-visualisering
           href: submission-testing.md
         - name: Brug R-drevne Power BI-visualiseringer i Power BI
@@ -92,9 +94,9 @@
       items:
         - name: Ændringslog
           href: changelog.md
-        - name: Landingside
+        - name: Landingsside
           href: landing-page.md
-        - name: Start URL-adresse
+        - name: Start-URL-adresse
           href: launch-url.md
         - name: Visualiserings-API
           href: visual-api.md
@@ -110,25 +112,25 @@
           items:
             - name: Tilføjelse af eksterne biblioteker
               href: adding-external-libraries.md
-            - name: Interaktivitetsutils
+            - name: Hjælpeprogrammer til interaktivitet
               href: utils-interactivity-selections.md
-            - name: Formateringshjælpeprogrammer
+            - name: Hjælpeprogrammer til formatering
               href: utils-formatting.md
-            - name: Datavisningshjælpeprogrammer
+            - name: Hjælpeprogrammer til datavisning
               href: utils-dataview.md
-            - name: Diagramhjælpeprogrammer
+            - name: Hjælpeprogrammer til diagrammer
               href: utils-chart.md
-            - name: Farvehjælpeprogrammer
+            - name: Hjælpeprogrammer til farver
               href: utils-color.md
             - name: SVG-hjælpeprogrammer
               href: utils-svg.md
-            - name: Typehjælpeprogrammer
+            - name: Hjælpeprogrammer til typer
               href: utils-type.md
             - name: Hjælpeprogrammer til test
               href: utils-test.md
             - name: Hjælpeprogrammer til værktøjstip
               href: utils-tooltip.md
-            - name: Datavisningshjælpeprogrammer
+            - name: Hjælpeprogrammer til datavisning
               href: utils-dataview.md
     - name: Ressourcer
       items:
