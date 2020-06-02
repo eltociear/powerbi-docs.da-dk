@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/17/2020
 ms.author: mihart
 LocalizationGroup: Administration
-ms.openlocfilehash: 9db228253e0e88105108a1b3a5eaf725c73e0abb
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 9c13f29b29742e62cb08c973e5444a7879e6222a
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563525"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812213"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Tilmelding til Power BI med en ny prøveversion af Microsoft 365
 
@@ -22,11 +22,8 @@ I denne artikel beskrives det, hvordan du kan tilmelde dig Power BI, hvis du ikk
 
 Hvis du har problemer med at tilmelde dig Power BI med din mailadresse, skal du først kontrollere, at det er en [mailadresse, der kan bruges med Power BI](../fundamentals/service-self-service-signup-for-power-bi.md#supported-email-addresses). Hvis det ikke lykkes, kan du tilmelde dig en Microsoft 365-prøveversion og oprette en arbejdskonto. Derefter skal du bruge den nye arbejdskonto til at tilmelde dig Power BI-tjenesten. Du kan stadig bruge Power BI, efter prøveversionen af Microsoft 365 er udløbet.
 
-> [!NOTE]
-> Office 365 blev for nylig omdøbt til Microsoft 365. Du kan stadig støde på, at det omtales som Office 365, indtil alle vores artikler er opdateret.
-
 ## <a name="sign-up-for-a-microsoft-365-trial-of-office"></a>Tilmeld dig en Microsoft 365-prøveversion af Office
-Tilmeld dig en Microsoft 365-prøveversion [på Microsoft 365-webstedet](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). Hvis du ikke allerede har en konto, guider Microsoft dig igennem trinnene til at oprette en. Da kommercielle mailkonti (f.eks. Hotmail og Gmail) ikke fungerer sammen med Microsoft 365, skal du oprette en ny konto, der gør.  Denne mailkonto vil ligne følgende *zalan@onmicrosoft.com* .
+Tilmeld dig en prøveversion af Microsoft 365 [på Microsoft 365-webstedet](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). Hvis du ikke allerede har en konto, guider Microsoft dig igennem trinnene til at oprette en. Da kommercielle mailkonti (f.eks. Hotmail og Gmail) ikke fungerer sammen med Microsoft 365, skal du oprette en ny konto, der gør.  Denne mailkonto vil ligne følgende *zalan@onmicrosoft.com* .
 
 ![Vælg Prøv gratis](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-free.png)
 
@@ -42,7 +39,7 @@ Hvis du vælger **Office 365 E5**, indeholder din prøveversion Power BI Pro. Pr
 
     ![opret en arbejds- eller skolekonto](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-enter-info.png)
 
-3. Opret din nye mailadresse og adgangskode. Opret et nyt logonnavn, der ligner you@yourcompany.onmicrosoft.com. Det er dette logon, du skal bruge med din nye Office 365-konto og med Power BI.
+3. Opret din nye mailadresse og adgangskode. Opret et nyt logonnavn, der ligner you@yourcompany.onmicrosoft.com. Det er dette logon, du skal bruge med din nye skole eller arbejdskonto og med Power BI.
 
     ![Vælg at tilmelde dig en ny konto](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-account.png)
 

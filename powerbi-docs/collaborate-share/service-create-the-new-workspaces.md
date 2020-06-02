@@ -6,32 +6,35 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/07/2020
+ms.date: 05/26/2020
 ms.author: maggies
+ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 700b9a5dffc3abff00fb2ea738d0517a676a689b
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: edc06d7a46589c999e4bf18613c0c75f6d5bf983
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83693756"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120575"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Opret nye arbejdsområder i Power BI
 
-Power BI introducerer en ny arbejdsområdeoplevelse. Arbejdsområder er stadig det sted, hvor du samarbejder med kolleger om at oprette samlinger af dashboards, rapporter og sideinddelte rapporter. Derefter kan du gruppere disse samlinger i en *app*, som du kan distribuere til hele organisationen eller til bestemte personer eller grupper.
+I denne artikel forklares det, hvordan du opretter et af de *nye arbejdsområder* i stedet for et *klassisk* arbejdsområde. Begge typer arbejdsområder er steder, hvor du kan samarbejde med kolleger. I arbejdsområderne kan du oprette samlinger af dashboards, rapporter og sideinddelte rapporter. Hvis du vil, kan du også bundte samlingen til en *app* og distribuere den til en bredere målgruppe.
 
-Her er forskellene. I de nye arbejdsområder kan du:
+Her kan du se, hvordan det nye arbejdsområde er forskelligt fra det gamle. I de nye arbejdsområder kan du:
 
-- Tildele arbejdsområderoller til brugergrupper: sikkerhedsgrupper, distributionslister, Microsoft 365-grupper og enkeltpersoner.
+- Tildele arbejdsområderoller til brugergrupper og enkeltpersoner.
 - Oprette et arbejdsområde i Power BI uden at oprette en Microsoft 365-gruppe.
-- Bruge mere detaljerede arbejdsområderoller til administration af mere fleksible tilladelser i et arbejdsområde.
+- Bruge mere detaljerede arbejdsområderoller til administration af mere fleksible tilladelser.
+
+:::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-sales-marketing.png" alt-text="Eksempel på arbejdsområde for salg og marketing":::
+
+Du kan få mere baggrundsviden i artiklen [nye arbejdsområder](service-new-workspaces.md).
 
 Er du klar til at overføre dit klassiske arbejdsområde? Se [Opgrader klassiske arbejdsområder til de nye arbejdsområder i Power BI](service-upgrade-workspaces.md) for at få flere oplysninger.
 
 > [!NOTE]
-> Hvis du vil gennemtvinge sikkerhed på rækkeniveau for Power BI Pro-brugere, der gennemser indhold i et arbejdsområde, skal du tildele brugerne rollen Seer.
-
-Du kan få mere baggrundsviden i artiklen [nye arbejdsområder](service-new-workspaces.md).
+> Hvis du vil gennemtvinge sikkerhed på rækkeniveau for Power BI Pro-brugere, der gennemser indhold i et arbejdsområde, skal du tildele brugerne læseadgang.
 
 ## <a name="create-one-of-the-new-workspaces"></a>Opret et af de nye apparbejdsområder
 
@@ -43,21 +46,19 @@ Du kan få mere baggrundsviden i artiklen [nye arbejdsområder](service-new-work
    
      ![Ny arbejdsområdeoplevelse](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     Hvis du vælger **Gå tilbage til klassisk**, opretter du et [arbejdsområde, der er baseret på en Microsoft 365-gruppe](service-create-workspaces.md). 
+     Hvis du vælger **Gå tilbage til klassisk**, opretter du et [klassisk arbejdsområde](service-create-workspaces.md), der er baseret på en Microsoft 365-gruppe.
 
-2. Giv arbejdsområdet et navn. Hvis navnet ikke er tilgængeligt, skal du redigere det, så der angives et entydigt navn.
+2. Giv arbejdsområdet et entydigt navn. Hvis navnet ikke er tilgængeligt, skal du redigere det, så der angives et entydigt navn.
    
-     Appen til arbejdsområdet har det samme navn og ikon som arbejdsområdet.
+     Den app, du opretter fra arbejdsområdet, har det samme navn og ikon som arbejdsområdet.
    
 1. Her er nogle valgfrie elementer, du kan angive for dit arbejdsområde:
 
     Upload et **billede til arbejdsområdet**. Filer kan være .png- eller .jpg-format. Filstørrelsen skal være mindre end 45 KB.
     
-    [Tilføj en **liste over kontakter**](#workspace-contact-list). Administratorer af arbejdsområder er som standard kontakter. 
+    [Tilføj en **liste over kontakter**](#create-a-contact-list). Administratorer af arbejdsområder er som standard kontakter. 
     
-    [Angiv et **Arbejdsområde for OneDrive**](#workspace-onedrive) ved blot at skrive navnet på en eksisterende Microsoft 365-gruppe og ikke URL-adressen. Nu kan dette arbejdsområde bruge lagerplaceringen for Microsoft 365-gruppens filer.
-
-    ![Angiv en OneDrive-placering](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
+    [Angiv et **OneDrive for arbejdsområdet**](#set-a-workspace-onedrive) for at bruge en fillagerplacering for en Microsoft 365-gruppe. 
 
     Hvis du vil tildele arbejdsområdet til en **dedikeret kapacitet**, skal du på fanen **Premium** vælge **Dedikeret kapacitet**.
      
@@ -67,9 +68,9 @@ Du kan få mere baggrundsviden i artiklen [nye arbejdsområder](service-new-work
 
     Power BI opretter arbejdsområdet og åbner det. Det vises på listen over de arbejdsområder, du er medlem af. 
 
-## <a name="workspace-contact-list"></a>Liste over arbejdsområdekontakter
+## <a name="create-a-contact-list"></a>Opret en kontaktliste
 
-Du kan angive, hvilke brugere der skal modtage en meddelelse om de problemer, der opstår i arbejdsområdet. Som standard får alle brugere eller grupper, der er angivet som administrator af arbejdsområdet besked, men du kan tilpasse listen ved at føje dem til *listen over kontakter*. Brugere eller grupper på listen over kontakter vises i brugergrænsefladen for at hjælpe brugerne med at få hjælp til arbejdsområdet.
+Du kan angive, hvilke brugere der skal modtage en meddelelse om de problemer, der opstår i arbejdsområdet. Som standard får alle brugere eller grupper, der er angivet som arbejdsområdeadministrator, besked, men du kan føje andre til *kontaktlisten*. Brugere eller grupper på listen over kontakter vises i brugergrænsefladen for at hjælpe brugerne med at få hjælp til arbejdsområdet.
 
 1. Få adgang til den nye indstilling **Liste over kontakter** på en af to måder:
 
@@ -85,13 +86,13 @@ Du kan angive, hvilke brugere der skal modtage en meddelelse om de problemer, de
 
 3. Vælg **Gem**.
 
-## <a name="workspace-onedrive"></a>Arbejdsområde for OneDrive
+## <a name="set-a-workspace-onedrive"></a>Angiv et OneDrive for arbejdsområdet
 
-Funktionen Arbejdsområde for OneDrive giver dig mulighed for at konfigurere en Microsoft 365-gruppe, hvis fillager for SharePoint-dokumentbibliotek er tilgængeligt til brugere af arbejdsområdet. Du opretter gruppen uden for Power BI først.
+Funktionen Arbejdsområde for OneDrive giver dig mulighed for at konfigurere en Microsoft 365-gruppe, hvis fillager for SharePoint-dokumentbibliotek er tilgængeligt til brugere af arbejdsområdet. Du opretter gruppen uden for Power BI først. 
 
-Power BI synkroniserer ikke tilladelser for brugere eller grupper, der er konfigureret til at have adgang til arbejdsområdet med medlemskabet af Microsoft 365-gruppen. Bedste praksis er at give den samme Microsoft 365-gruppe, hvis fillager du konfigurerer i denne indstilling for Microsoft 365-gruppen, [adgang til arbejdsområdet](#give-access-to-your-workspace). Administrer derefter adgangen til arbejdsområdet ved at administrere medlemskabet af Microsoft 365-gruppen.
+Power BI synkroniserer ikke tilladelser for brugere eller grupper, der er konfigureret til at have adgang til arbejdsområdet med medlemskabet af Microsoft 365-gruppen. Bedste praksis er at give den samme Microsoft 365-gruppe, hvis fillager du konfigurerer i denne indstilling for Microsoft 365-gruppen, [adgang til arbejdsområdet](#give-access-to-your-workspace). Administrer derefter adgangen til arbejdsområdet ved at administrere medlemskabet af Microsoft 365-gruppen. 
 
-1. Få adgang til den nye indstilling for **Arbejdsområde for OneDrive** på en af to måder:
+1. Få adgang til den nye indstilling for **OneDrive-arbejdsområdet** på en af to måder:
 
     I ruden **Opret et arbejdsområde**, når du opretter det første gang.
 
@@ -99,13 +100,13 @@ Power BI synkroniserer ikke tilladelser for brugere eller grupper, der er konfig
 
     ![Indstillinger for arbejdsområde](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
-2. Under **Avanceret** > **Arbejdsområde for OneDrive** skal du skrive navnet på den Microsoft 365-gruppe, du oprettede tidligere. Power BI registrerer automatisk OneDrive for gruppen.
+2. Under **Avanceret** > **Arbejdsområde for OneDrive** skal du skrive navnet på den Microsoft 365-gruppe, du oprettede tidligere. Skriv blot navnet og ikke URL-adressen. Power BI registrerer automatisk OneDrive for gruppen.
 
     ![Angiv en OneDrive-placering](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
 3. Vælg **Gem**.
 
-### <a name="access-the-workspace-onedrive-location"></a>Få adgang til placeringen af Arbejdsområde for OneDrive
+### <a name="access-the-workspace-onedrive-location"></a>Få adgang til arbejdsområdets OneDrive-placering
 
 Når du har konfigureret placeringen af OneDrive, kommer du dertil på samme måde, som du kommer til andre datakilder i Power BI-tjenesten.
 
@@ -117,19 +118,21 @@ Når du har konfigureret placeringen af OneDrive, kommer du dertil på samme må
 
     ![Placering af filer i arbejdsområdet – hent data](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
 
-### <a name="connecting-to-third-party-services-in-new-workspaces"></a>Opret forbindelse til tredjepartstjenester i nye arbejdsområder
+### <a name="connect-to-apps-in-new-workspaces"></a>Opret forbindelse til apps i nye arbejdsområder
 
-I den nye arbejdsområdeoplevelse laver vi en ændring for at fokusere på *apps*. Apps til tredjepartstjenester gør det nemt for brugerne at hente data fra de tjenester, de bruger, f.eks. Microsoft Dynamics CRM, Salesforce eller Google Analytics.
+De nye arbejdsområdeoplevelser opretter og forbruger *apps* i stedet for indholdspakker. Apps er samlinger af dashboards, rapporter og datasæt, der opretter forbindelse til tjenester fra tredjeparter og organisationsdata. Apps gør det nemt at hente data fra tjenesterne, f.eks. Microsoft Dynamics CRM, Salesforce og Google Analytics.
 
-I den nye arbejdsområdeoplevelse kan du ikke oprette eller bruge organisationsindholdspakker. Du kan i stedet bruge de apps, der leveres, til at oprette forbindelse til tredjepartstjenester eller bede dine interne teams om at levere apps til en indholdspakke, du bruger i øjeblikket. 
+I den nye arbejdsområdeoplevelse kan du ikke oprette eller bruge organisationsindholdspakker. Bed dine interne teams om at levere apps til alle de indholdspakker, du bruger i øjeblikket. 
 
 ## <a name="give-access-to-your-workspace"></a>Giv adgang til dit arbejdsområde
 
-1. Da du er administrator kan du på indholdslisten for arbejdsområder se en ny handling, **Adgang**.
+Alle, der har en administratorrolle i et arbejdsområde, kan give andre adgang til arbejdsområdet.
+
+1. Da du er administrator, kan du på indholdslisten for arbejdsområder se **Adgang**.
 
     ![Indholdsliste for arbejdsområder](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
-1. Føj sikkerhedsgrupper, distributionslister, Microsoft 365-grupper eller enkeltpersoner til disse arbejdsområder som seere, medlemmer, bidragydere eller administratorer. Se [Roller i de nye arbejdsområder](service-new-workspaces.md#roles-in-the-new-workspaces) for at få en forklaring på de forskellige roller.
+1. Føj sikkerhedsgrupper, distributionslister, Microsoft 365-grupper eller enkeltpersoner til disse arbejdsområder som administratorer, medlemmer, bidragydere eller læsere. Se [Roller i de nye arbejdsområder](service-new-workspaces.md#roles-in-the-new-workspaces) for at få en forklaring på de forskellige roller.
 
     ![Arbejdsområder – tilføj medlemmer, administratorer og bidragydere](media/service-create-the-new-workspaces/power-bi-workspace-add-members.png)
 
@@ -138,9 +141,9 @@ I den nye arbejdsområdeoplevelse kan du ikke oprette eller bruge organisationsi
 
 ## <a name="distribute-an-app"></a>Distribuer en app
 
-Hvis du vil distribuere officielt indhold til en stor målgruppe i din organisation, kan du publicere en app fra dit arbejdsområde.  Når indholdet er klar, skal du vælge, hvilke dashboards og rapporter du vil publicere, og derefter skal du publicere dem som en *app*. Du kan oprette en app fra hvert arbejdsområde.
+Hvis du vil distribuere officielt indhold til en stor målgruppe i din organisation, kan du publicere en *app* fra dit arbejdsområde.  Når indholdet er klar, skal du vælge, hvilke dashboards og rapporter du vil publicere, og derefter skal du publicere dem som en app. Du kan oprette en app fra hvert arbejdsområde.
 
-Læs om [publicering af en app fra de nye arbejdsområder](service-create-distribute-apps.md)
+Læs om, hvordan du [publicerer en app fra de nye arbejdsområder](service-create-distribute-apps.md).
 
 ## <a name="next-steps"></a>Næste trin
 * Læs om [organisering af arbejde i den nye arbejdsområdeoplevelse i Power BI](service-new-workspaces.md)

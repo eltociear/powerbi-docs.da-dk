@@ -10,12 +10,12 @@ ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 42203c65f6351422bbb65b5a0dc2245ac6a7b190
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: c0f8e6f0282e4a862c8fc92e922a412ba0f56098
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564609"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812421"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spor brugeraktiviteter i Power BI
 
@@ -26,7 +26,7 @@ Det kan være vigtigt at vide, hvem der udfører en bestemt handling på et elem
 | Omfatter hændelser fra SharePoint Online, Exchange Online, Dynamics 365 og andre tjenester foruden Power BI-overvågningshændelser. | Omfatter kun Power BI-overvågningshændelser. |
 | Det er kun brugere, der har tilladelserne Skrivebeskyttede overvågningslogge eller Overvågningslogge, som har adgang, f.eks. globale administratorer og auditører. | Globale administratorer og administratorer af Power BI-tjenesten har adgang. |
 | Globale administratorer og auditører kan søge i den samlede overvågningslog ved hjælp af Microsoft 365 Sikkerhedscenter og Microsoft 365 Overholdelsescenter. | Der er endnu ingen brugergrænseflade til at søge efter aktivitetsloggen. |
-| Globale administratorer og auditører kan downloade poster i overvågningsloggen ved hjælp af administrations-API'er og -cmdlet'er i Office 365. | Globale administratorer og administratorer af Power BI-tjenesten kan downloade poster i aktivitetsloggen ved hjælp af en REST API i Power BI og en administrations-cmdlet. |
+| Globale administratorer og auditører kan downloade poster i overvågningsloggen ved hjælp af administrations-API'er og -cmdlet'er i Microsoft 365. | Globale administratorer og administratorer af Power BI-tjenesten kan downloade poster i aktivitetsloggen ved hjælp af en REST API i Power BI og en administrations-cmdlet. |
 | Bevarer overvågningsdata i 90 dage | Bevarer aktivitetsdata i 30 dage (offentlig prøveversion). |
 | Bevarer overvågningsdata, selvom lejeren flyttes til et andet Azure-område. | Bevarer ikke aktivitetsdata, når lejeren flyttes til et andet Azure-område. |
 
@@ -239,6 +239,7 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 
 | Brugervenligt navn                                     | Handlingsnavn                              | Noter                                  |
 |---------------------------------------------------|---------------------------------------------|------------------------------------------|
+| Udvalgte Power BI-tabeller i Excel, der er blevet tilgået | AnalyzedByExternalApplication |    |
 | Datakilde er føjet til Power BI-gateway             | AddDatasourceToGateway                      |                                          |
 | Adgang til Power BI-mapper er tilføjet                      | AddFolderAccess                             | Anvendes ikke i øjeblikket                       |
 | Power BI-gruppemedlemmer er tilføjet                      | AddGroupMembers                             |                                          |
@@ -299,6 +300,7 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 | Power BI-dashboard er udskrevet                        | PrintDashboard                              |                                          |
 | Power BI-rapportside er udskrevet                      | PrintReport                                 |                                          |
 | Power BI-rapport er publiceret på internettet                  | PublishToWebReport <sup>2</sup>                         |                                          |
+| Udvalgte udgivne eller opdaterede tabeller | UpdateFeaturedTables <sup>3</sup>   | |
 | Power BI-dataflowhemmelighed er modtaget fra Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Datakilde fjernet fra Power BI-gateway         | RemoveDatasourceFromGateway                 |                                          |
 | Power BI-gruppemedlemmer er fjernet                    | DeleteGroupMembers                          |                                          |
@@ -341,6 +343,8 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 <sup>1</sup> Publicering fra Power BI Desktop til tjenesten er en CreateReport-hændelse i tjenesten.
 
 <sup>2</sup> PublishtoWebReport henviser til funktionen [Publicer på internettet](../collaborate-share/service-publish-to-web.md).
+
+<sup>3</sup> UpdateFeaturedTables refererer til [udvalgte Power BI-tabeller i Excel](../collaborate-share/service-excel-featured-tables.md).
 
 ## <a name="next-steps"></a>Næste trin
 

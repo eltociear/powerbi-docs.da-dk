@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/19/2020
+ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9de8c9611b24eaa627b3ddf044f13d36d7b9a3d4
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: 469b8b13f77c56f9371ae8c1c81dcb94278c62e0
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83694567"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83794012"
 ---
 # <a name="use-directquery-with-dataflows-in-power-bi-preview"></a>Brug DirectQuery med dataflow i Power BI (prøveversion)
 
@@ -22,7 +22,7 @@ Du kan bruge DirectQuery til at oprette direkte forbindelse til dataflow og derm
 
 Brug af DirectQuery med dataflow muliggør følgende forbedringer af dine processer for Power BI og dataflow:
 
-* **Undgå separate opdateringsplaner** – DirectQuery opretter direkte forbindelse til et dataflow, hvilket fjerner behovet for at oprette et datasæt. Derfor betyder brug af DirectQuery med dine dataflow, at du ikke længere har brug for separate opdateringsplaner for dataflowet og datasættet for at sikre, at dine data er synkroniseret.
+* **Undgå separate opdateringsplaner** – DirectQuery opretter direkte forbindelse til et dataflow, hvilket fjerner behovet for at oprette et importeret datasæt. Derfor betyder brug af DirectQuery med dine dataflow, at du ikke længere har brug for separate opdateringsplaner for dataflowet og datasættet for at sikre, at dine data er synkroniseret.
 
 * **Filtrering af data** – DirectQuery er nyttig til at arbejde med en filtreret visning af dataene i et dataflow. Hvis du vil filtrere data og dermed arbejde med en mindre delmængde af dataene, kan du bruge DirectQuery (og beregningsprogrammet) til at filtrere data i dataflow og arbejde med den filtrerede delmængde, du har brug for.
 
@@ -38,7 +38,7 @@ Der er også nogle forudsætninger for at bruge DirectQuery med dataflow:
 
 ## <a name="enable-directquery-for-dataflows"></a>Aktivér DirectQuery til dataflow
 
-Det forbedrede beregningsprogram skal være i sin optimerede tilstand for at sikre, at dit dataflow er tilgængeligt til DirectQuery-adgang. Du aktiverer DirectQuery til dataflow ved at angive den nye indstilling **Forbedret beregningsprogram** til **Optimeret**. På følgende billede kan du se, hvordan indstillingen er korrekt valgt.
+Det forbedrede beregningsprogram skal være i sin optimerede tilstand for at sikre, at dit dataflow er tilgængeligt til DirectQuery-adgang. Du aktiverer DirectQuery til dataflow ved at angive den nye indstilling **Forbedret beregningsprogram** til **Til**. På følgende billede kan du se, hvordan indstillingen er korrekt valgt.
 
 ![Aktivér det forbedrede beregningsprogram til dataflow](media/service-dataflows-directquery/dataflows-directquery-01.png)
 
@@ -50,7 +50,15 @@ Når du har anvendt denne indstilling, skal du opdatere dataflowet, før optimer
 Der er nogle få kendte begrænsninger med DirectQuery og dataflow, som forklaret på følgende liste.
 
 * DirectQuery til dataflow fungerer ikke med prøveversionsfunktionen **forbedrede metadata** aktiveret. Denne udeladelse forventes at blive fjernet i en kommende månedlig udgivelse af Power BI Desktop.
+
 * I prøveperioden for denne funktion kan nogle kunder opleve timeout eller problemer med ydeevnen, når de bruger DirectQuery med dataflow. Sådanne problemer bliver aktivt håndteret i prøveperioden.
+
+* Sammensatte/blandede modeller, der har import- og DirectQuery-datakilder, understøttes ikke i øjeblikket.
+
+* Store dataflow kan have problemer med timeout ved visning af visualiseringer. Denne begrænsning forventes at blive fjernet som en del af denne funktions generelle tilgængelighed. Samtidig bør store dataflow, hvor der er problemer med timeout, bruge importtilstand.
+
+* Under indstillinger for datakilde viser dataflow-connectoren ugyldige legitimationsoplysninger, hvis du bruger DirectQuery. Dette påvirker ikke funktionsmåden, og datasættet fungerer korrekt. Dette problem vil blive løst, når funktionen bliver offentlig tilgængelig.
+
 
 
 ## <a name="next-steps"></a>Næste trin

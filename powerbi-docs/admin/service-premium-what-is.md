@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/15/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 290174f7848e4518a4b1489d0a90136e86d245da
-ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
+ms.openlocfilehash: 7c9f198ac15311948e1789173851a6c85debc856
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83438240"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812444"
 ---
 # <a name="what-is-power-bi-premium"></a>Hvad er Power BI Premium?
 
@@ -50,7 +50,7 @@ Azure Power BI Embedded ligger ganske vist uden for denne artikels rammer, men e
 
 ### <a name="purchasing"></a>Indkøb
 
-Power BI Premium-abonnementer købes af administratorer i Microsoft 365 Administration. Kun globale Office 365-administratorer eller faktureringsadministratorer kan købe SKU'er. Når de er blevet købt, modtager lejeren et tilsvarende antal v-kerner, som kan tildeles til kapaciteter, der kaldes *gruppering af v-kerner*. Køb af en P3-SKU giver f.eks. lejeren 32 v-kerner. Du kan finde flere oplysninger under [Sådan køber du Power BI Premium](service-admin-premium-purchase.md).
+Power BI Premium-abonnementer købes af administratorer i Microsoft 365 Administration. Kun globale administratorer eller faktureringsadministratorer kan købe SKU'er. Når de er blevet købt, modtager lejeren et tilsvarende antal v-kerner, som kan tildeles til kapaciteter, der kaldes *gruppering af v-kerner*. Køb af en P3-SKU giver f.eks. lejeren 32 v-kerner. Du kan finde flere oplysninger under [Sådan køber du Power BI Premium](service-admin-premium-purchase.md).
 
 ## <a name="dedicated-capacities"></a>Dedikerede kapaciteter
 
@@ -127,13 +127,13 @@ Afsnitsnoter:
 
 ### <a name="regional-support"></a>Områdesupport
 
-Når du opretter en ny kapacitet, kan globale Office 365-administratorer og administratorer af Power BI-tjenesten angive et område, hvor arbejdsområder, der er tildelt til kapaciteten, er placeret. Dette kaldes **Multi-Geo**. Med Multi-Geo kan organisationer opfylde krav til dataplacering ved at implementere indhold i datacentre i et bestemt område, også selvom det er forskelligt fra det område, som Office 365-abonnementet gælder for. Du kan få mere at vide under [Multi-Geo-understøttelse i Power BI Premium](service-admin-premium-multi-geo.md).
+Når du opretter en ny kapacitet, kan globale administratorer og administratorer af Power BI-tjenesten angive et område, hvor arbejdsområder, der er tildelt til kapaciteten, placeres. Dette kaldes **Multi-Geo**. Med Multi-Geo kan organisationer opfylde krav til dataplacering ved at implementere indhold i datacentre i et bestemt område, også selvom det er forskelligt fra det område, som Office 365-abonnementet gælder for. Du kan få mere at vide under [Multi-Geo-understøttelse i Power BI Premium](service-admin-premium-multi-geo.md).
 
 ### <a name="capacity-management"></a>Kapacitetsadministration
 
 Administration af Premium-kapaciteter omfatter oprettelse eller sletning af kapaciteter, tildeling af administratorer, tildeling af arbejdsområder, konfiguration af arbejdsbelastninger, overvågning og udførelse af justeringer til optimering af kapacitetsydeevnen. 
 
-Globale Office 365-administratorer eller administratorer af Power BI-tjenesten kan oprette Premium-kapaciteter fra tilgængelige v-kerner eller redigere eksisterende Premium-kapaciteter. Når der oprettes en kapacitet, angives kapacitetens størrelse og det geografiske område, og der tildeles mindst én kapacitetsadministrator. 
+Globale administratorer eller administratorer af Power BI-tjenesten kan oprette Premium-kapaciteter fra tilgængelige v-kerner eller redigere eksisterende Premium-kapaciteter. Når der oprettes en kapacitet, angives kapacitetens størrelse og det geografiske område, og der tildeles mindst én kapacitetsadministrator. 
 
 Når der oprettes kapaciteter, udføres de fleste administrative opgaver på [administrationsportalen](service-admin-portal.md).
 
@@ -155,7 +155,7 @@ Overvågning på portalen giver et hurtigt overordnet overblik over målepunkter
 
 ![Administrationsportal](media/service-premium-what-is/premium-admin-portal-health.png)
 
-Appen **Power BI Premium Capacity Metrics** giver de mest detaljerede oplysninger om ydeevnen af dine kapaciteter. Programmet indeholder et overordnet dashboard og mere detaljerede rapporter.
+Programmet **Power BI Premium Capacity Metrics** giver de mest detaljerede oplysninger om ydeevnen af dine kapaciteter. Programmet indeholder et overordnet dashboard og mere detaljerede rapporter.
 
 ![Appdashboardet Målepunkter](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
@@ -229,7 +229,7 @@ Med Premium kan alle – uanset om de befinder sig i eller uden for organisation
 
 ![Indholdsdeling](media/service-premium-what-is/premium-sharing.png)
 
-Premium muliggør omfattende distribution af indhold for Pro-brugere uden at kræve Pro-licenser for modtagere, der får vist indholdet. Pro-licenser kræves for oprettere af indhold. Oprettere opretter forbindelse til datakilder og modeldata og opretter rapporter og dashboards, der er pakket som arbejdsområdeapps. Brugere uden en Pro-licens kan stadig få adgang til et arbejdsområde, der er i en Power BI Premium-kapacitet, så længe de har rollen Seer. 
+Premium muliggør omfattende distribution af indhold for Pro-brugere uden at kræve Pro-licenser for modtagere, der får vist indholdet. Pro-licenser kræves for oprettere af indhold. Oprettere opretter forbindelse til datakilder og modeldata og opretter rapporter og dashboards, der er pakket som arbejdsområdeapps. Brugere uden en Pro-licens kan stadig få adgang til et arbejdsområde, der er i en Power BI Premium-kapacitet, så længe de har rollen Fremviser. 
 
 Du kan få mere at vide under [Power BI-licenser](service-admin-licensing-organization.md).
 

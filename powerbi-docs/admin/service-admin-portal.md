@@ -6,26 +6,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/27/2020
+ms.date: 05/12/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: b08184e92730bd3a42a91424883d07cecec82549
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 605d35d55f3191b230d9c4a8d118e2c238283ff2
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564466"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733576"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
 På administrationsportalen kan du administrere en Power BI-*lejer* for din organisation. Portalen indeholder elementer såsom metrikværdier, adgang til Microsoft 365 Administration og indstillinger.
 
-Hele administrationsportalen kan tilgås af alle brugere, som er globale administratorer, eller som er blevet tildelt rollen som administrator af Power BI-tjenesten. Hvis du ikke har en af disse roller, kan du kun se **Kapacitetsindstillinger** på portalen. Du kan finde flere oplysninger om rollen som administrator af Power BI-tjenesten under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md).
+Hele administrationsportalen kan tilgås af alle brugere, som er globale administratorer, eller som er blevet tildelt rollen som administrator af Power BI-tjenesten. Hvis du ikke har en af disse roller, kan du kun se **Kapacitetsindstillinger** på portalen. Du kan finde flere oplysninger om Power BI-tjenesteadministratorrollen under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md).
 
 ## <a name="how-to-get-to-the-admin-portal"></a>Sådan finder du vej til administrationsportalen
 
-Din konto skal være markeret som **Global administrator** i Microsoft 365 eller Azure AD (Azure Active Directory), eller den skal være tildelt rollen som administrator af Power BI-tjenesten, før du kan få adgang til Power BI-administrationsportalen. Du kan finde flere oplysninger om rollen som administrator af Power BI-tjenesten under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md). Benyt følgende fremgangsmåde for at tilgå Power BI-administrationsportalen.
+Din konto skal være markeret som **Global administrator** i Microsoft 365 eller Azure AD (Azure Active Directory), eller den skal være tildelt rollen som administrator af Power BI-tjenesten, før du kan få adgang til Power BI-administrationsportalen. Du kan finde flere oplysninger om Power BI-tjenesteadministratorrollen under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md). Benyt følgende fremgangsmåde for at tilgå Power BI-administrationsportalen.
 
 1. Vælg tandhjulet Indstillinger i øverste højre hjørne af Power BI-tjenesten.
 
@@ -356,6 +356,16 @@ Brugere i organisationen kan anvende ArcGIS Maps for Power BI-visualiseringen fr
 ### <a name="use-global-search-for-power-bi-preview"></a>Brug global søgning til Power BI (prøveversion)
 
 Brugere i organisationen kan bruge eksterne søgefunktioner, der bruger Azure Search.
+
+## <a name="featured-tables-settings"></a>Udvalgte tabelindstillinger
+
+Lejerindstillingen **Tillad forbindelser til udvalgte tabeller** under **Lejerindstillinger** gør det muligt for Power BI-administratorer at styre, hvem der i organisationen kan bruge udvalgte tabeller i Excel-datatypegalleriet. 
+
+:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="Alle forbindelser til udvalgte tabeller":::
+
+Forbindelser til udvalgte tabeller deaktiveres også, hvis lejerindstillingen **Eksportér data** er angivet til **Deaktiveret**.
+
+Læs mere om [Udvalgte Power BI-tabeller i Excel](../collaborate-share/service-excel-featured-tables.md).
 
 ## <a name="power-bi-visuals-settings"></a>Indstillinger for Power BI-visuals
 

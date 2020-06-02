@@ -4,26 +4,39 @@ description: Sideinddelte rapporter, der længe har været standardrapportformat
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
+featuredvideoid: jXTiYJKw1Rs
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 05/14/2020
-ms.openlocfilehash: 0cf3fcdbcfb49d501ccbb7fa191b566e298c84b7
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.date: 05/19/2020
+ms.openlocfilehash: 69d6f3c828066a66c59ab8becf4fd4f43e54c547
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565500"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733410"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Hvad er sideinddelte rapporter i Power BI Premium?
 
-Sideinddelte rapporter, der længe har været standardrapportformatet i SQL Server Reporting Services, er nu tilgængelige i Power BI-tjenesten. Disse rapporter kan udskrives eller deles. De kaldes "sideinddelte", fordi de er formateret til at passe godt på en side. De viser alle data i en tabel, selvom tabellen strækker sig over flere sider. De kaldes også nogle gange "perfekt pixel", fordi du kan styre deres rapportsidelayout helt præcist. Sideinddelte rapporter er baseret på RDL-rapportteknologien i SQL Server Reporting Services. Report Builder er det separate værktøj, der bruges til oprettelse af sideinddelte rapporter. 
+*Sideinddelte rapporter* er udviklet til at skulle udskrives eller deles. De kaldes *sideinddelte*, fordi de er formateret til at passe godt på en side. De viser alle data i en tabel, selvom tabellen strækker sig over flere sider. De kaldes også *perfekt pixel*, fordi du kan styre deres rapportsidelayout helt præcist. Power BI Report Builder er det separate værktøj, der bruges til oprettelse af sideinddelte rapporter. Sideinddelte rapporter er baseret på RDL-rapportteknologien, som er det lange standardrapportformat i SQL Server Reporting Services. 
 
-Sideinddelte rapporter kan indeholde mange sider. Denne rapport indeholder f.eks. 563 sider. Hver side viser præcis én side pr. faktura og har gentagne sidehoveder og sidefødder.
+Sideinddelte rapporter indeholder ofte mange sider. Denne rapport indeholder f.eks. 563 sider. Hver side viser præcis én side pr. faktura og har gentagne sidehoveder og sidefødder.
 
 ![Sideinddelt](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
 Du kan få vist et eksempel på rapporten i Report Builder og derefter publicere den i Power BI-tjenesten, `https://app.powerbi.com`. Du skal bruge en Power BI Pro-licens for at publicere en rapport i tjenesten. Du kan publicere og dele sideinddelte rapporter i Mit arbejdsområde eller i arbejdsområder, så længe arbejdsområdet er placeret i en Power BI Premium-kapacitet. En Power BI-administrator skal også aktivere sideinddelte rapporter under [afsnittet for Premium-kapaciteter](../admin/service-admin-premium-workloads.md#paginated-reports) på Power BI-administrationsportalen. 
+
+## <a name="compare-power-bi-reports-and-paginated-reports"></a>Sammenlign Power BI-rapporter og sideinddelte rapporter
+
+En stor fordel ved sideinddelte rapporter er muligheden for at udskrive alle dataene i en tabel, uanset hvor lang den er. Forestil dig, at du placerer en tabel i en Power BI-rapport. Du kan se nogle af dens rækker i tabellen på siden, og du har et rullepanel, hvor du kan se resten. Hvis du udskriver den pågældende side eller eksporterer den til PDF, udskrives kun de rækker, som du fik vist på siden. 
+
+Antag nu, at du placerer den samme tabel i en sideinddelt rapport. Når du udskriver eller eksporterer den til PDF, har den sideinddelte rapport lige så mange sider, som det er nødvendigt for at udskrive alle rækker i tabellen. 
+
+I den følgende video viser Microsoft Most Valued Professional – Data Platform Peter Myers og Principal Program Manager Chris Finlan, hvordan man udskriver en lignende tabel i de to rapportformater. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jXTiYJKw1Rs?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT" frameborder="0" allowfullscreen></iframe>
+
+Denne video er en del af et videobaseret kursus, der består af otte moduler [Sideinddelte rapporter i Power BI på én dag](../learning-catalog/paginated-reports-online-course.md). Kurset har til formål at sætte dig i stand til at skrive rapporter med den tekniske viden, der kræves for at oprette, udgive og distribuere sideinddelte Power BI-rapporter.
 
 ## <a name="create-reports-in-power-bi-report-builder"></a>Opret rapporter i Power BI Report Builder
 

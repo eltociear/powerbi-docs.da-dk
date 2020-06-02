@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: ce18b3cb077e0fee2eea4d0d31327329f405a51a
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 25b5665aa531c347d43a197b53938aec569b9d2d
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563757"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812168"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration af Power BI – ofte stillede spørgsmål
 
@@ -27,8 +27,8 @@ Denne artikel omhandler ofte stillede spørgsmål om Power BI-administration. Du
 * [Brug af PowerShell](#using-powershell)
 * [Hvordan tilmelder brugerne sig Power BI?](#how-do-users-sign-up-for-power-bi)
 * [Hvordan tilmelder individuelle brugere i min organisation sig?](#how-do-individual-users-in-my-organization-sign-up)
-* [Hvordan kan jeg forhindre brugere i at tilmelde sig min eksisterende Office 365-lejer?](#how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant)
-* [Hvordan kan jeg forhindre brugere i at tilmelde sig min eksisterende Office 365-lejer?](#how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant)
+* [Hvordan kan jeg forhindre brugere i at tilmelde sig min eksisterende organisation?](#how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant)
+* [Hvordan kan jeg tillade brugere at tilmelde sig min eksisterende organisation?](#how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant)
 * [Hvordan kontrollerer jeg, om blokering er aktiveret i lejeren?](#how-do-i-check-if-i-have-the-block-on-in-the-tenant)
 * [Hvordan kan jeg forhindre mine eksisterne brugere i at begynde at bruge Power BI?](#how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi)
 * [Hvordan kan jeg tillade mine eksisterende brugere at tilmelde sig Power BI?](#how-can-i-allow-my-existing-users-to-sign-up-for-power-bi)
@@ -169,7 +169,7 @@ Der er tre scenarier, der kan gøre sig gældende for brugere i din organisation
 
 ### <a name="how-do-we-manage-power-bi"></a>Hvordan administrerer vi Power BI?
 
-Power BI indeholder en Power BI-administrationsportal til brugere med rollen Global administrator i Microsoft 365 og brugere med rollen som administrator af Power BI-tjenesten. Hvis du vil bruge Power BI-administrationsportalen, skal du markere din konto som **Global administrator** i Microsoft 365 eller Azure Active Directory, eller nogen skal tildele rollen som administrator af Power BI-tjenesten til din brugerkonto. Få mere at vide under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md) og [Power BI-administrationsportalen](service-admin-portal.md). Portalen indeholder muligheden for at styre indstillingerne i hele lejeren, få vist brugsstatistikker for Power BI og et link til Microsoft 365-administrationscentret, hvor du kan administrere brugere og grupper.
+Power BI indeholder en Power BI-administrationsportal til brugere med rollen Global administrator i Microsoft 365 og brugere med rollen Administrator i Power BI-tjenesten. Hvis du vil bruge Power BI-administrationsportalen, skal du markere din konto som **Global administrator** i Microsoft 365 eller Azure Active Directory, eller nogen skal tildele rollen Administrator i Power BI-tjenesten til din brugerkonto. Få mere at vide under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md) og [Power BI-administrationsportalen](service-admin-portal.md). Portalen indeholder muligheden for at styre indstillingerne i hele lejeren, få vist brugsstatistikker for Power BI og et link til Microsoft 365-administrationscentret, hvor du kan administrere brugere og grupper.
 
 ### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Hvad er processen til administration af en lejer, der er oprettet af Microsoft for brugerne?
 

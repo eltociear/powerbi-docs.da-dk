@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/08/2019
 ms.author: lukaszp
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 5330b4c42794f0fa3110cef57f6d62ead0381e52
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 08a05a266dd505dd991d90738b81a2e7d413f090
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83561782"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84119878"
 ---
 # <a name="set-contact-information-for-reports-and-dashboards-in-the-power-bi-service"></a>Angiv kontaktoplysninger for rapporter og dashboards i Power BI-tjenesten
 I denne artikel kan du se, hvordan du angiver kontaktoplysninger for et dashboard eller en rapport i Power BI-tjenesten.
@@ -28,7 +28,7 @@ Du kan føje flere brugere eller grupper til kontakten for et element. De kan v�
 * En mailaktiveret sikkerhedsgruppe
 * En distributionsliste
 
-Den person, der opretter en ny rapport eller et nyt dashboard, er som standard kontakten for den eller det. Hvis du angiver en værdi, tilsidesætter den standarden. Du kan naturligvis fjerne alle personer eller grupper fra listen over kontakter. Når du gør det, vil Microsoft 365-gruppen for arbejdsområdet blive vist for klassiske arbejdsområder. For arbejdsområder med den nye arbejdsområdeoplevelse bruges [listen over kontakter for arbejdsområdet](../collaborate-share/service-create-the-new-workspaces.md#workspace-contact-list). Hvis listen over kontakter for arbejdsområdet ikke er angivet, vises administratorerne af arbejdsområdet.
+Den person, der opretter en ny rapport eller et nyt dashboard, er som standard kontakten for den eller det. Hvis du angiver en værdi, tilsidesætter den standarden. Du kan naturligvis fjerne alle personer eller grupper fra listen over kontakter. Når du gør det, vil Microsoft 365-gruppen for arbejdsområdet blive vist for klassiske arbejdsområder. For arbejdsområder med den nye arbejdsområdeoplevelse bruges [listen over kontakter for arbejdsområdet](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list). Hvis listen over kontakter for arbejdsområdet ikke er angivet, vises administratorerne af arbejdsområdet.
 
 Kontaktoplysningerne vises for folk, når de får vist elementet. 
 

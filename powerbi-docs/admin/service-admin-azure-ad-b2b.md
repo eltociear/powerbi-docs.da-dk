@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 25b136bfa15b00333400b80781d968d0b40d9779
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 2bb54bf7340e89b86bfbfd56390b79a7051dd709
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564489"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812272"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B
 
@@ -111,7 +111,7 @@ Gæstebrugeren har allerede en Power BI Pro-licens, der er tildelt i deres lejer
 
 ## <a name="guest-users-who-can-edit-and-manage-content"></a>Gæstebrugere, der kan redigere og administrere indhold
 
-Når du bruger funktionen [Tillad, at eksterne gæstebrugere kan redigere og administrere indhold i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization), får de angivne gæstebrugere yderligere adgang til din organisations Power BI. Gæster med tilladelse kan se alt indhold, de har tilladelse til, få adgang til startsiden, gennemse arbejdsområder, installere apps, se, hvor de er på adgangslisten, og bidrage med indhold til arbejdsområder. De kan oprette eller være administrator af arbejdsområder, der bruger den nye arbejdsområdeoplevelse. Der er visse begrænsninger. Du finder en liste over disse begrænsninger i afsnittet Overvejelser og begrænsninger.
+Når du bruger funktionen [Tillad, at eksterne gæstebrugere kan redigere og administrere indhold i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization), får de angivne gæstebrugere yderligere adgang til din organisations Power BI. Gæster med tilladelse kan se alt indhold, de har tilladelse til, få adgang til startsiden, gennemse arbejdsområder, installere apps, se, hvor de er på adgangslisten, og bidrage med indhold til arbejdsområder. De kan oprette eller være administrator af arbejdsområder, der bruger den nye oplevelse i arbejdsområdet. Der er visse begrænsninger. Du finder en liste over disse begrænsninger i afsnittet Overvejelser og begrænsninger.
  
 Du kan hjælpe gæster med tilladelse med at logge på Power BI ved at give dem lejerens URL-adresse. Du kan finde lejerens URL-adresse ved at følge disse trin.
 
@@ -153,7 +153,7 @@ Du kan hjælpe gæster med tilladelse med at logge på Power BI ved at give dem 
 * Der findes Active Directory-indstillinger, der kan begrænse, hvad eksterne gæstebrugere kan foretage sig overordnet i organisationen. Dette gælder også for dit Power BI-miljø. I følgende dokumentation beskrives indstillingerne:
     * [Administrer indstillinger for eksternt samarbejde](/azure/active-directory/b2b/delegate-invitations#configure-b2b-external-collaboration-settings)
     * [Tillad eller bloker invitationer til B2B-brugere fra bestemte organisationer](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)
-    * [Tillad eller bloker gæstebrugeres adgang til Power BI-tjenesten](/azure/active-directory/conditional-access/overview)
+    * [Brug betinget adgang til at tillade eller blokere adgang](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
     
 * Deling uden for organisationen understøttes ikke i nationale cloudmiljøer. I stedet skal du oprette brugerkonti i din organisation, som eksterne brugere kan bruge til at få adgang til indholdet. 
 

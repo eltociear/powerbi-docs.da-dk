@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 05/27/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e5effe6f397dd53fe6347708774118e9c491abc1
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 71acc85ecd74b2606d00c4e3b63b6f7532c9487c
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564137"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84119999"
 ---
 # <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>Brug links til OneDrive for Business i Power BI Desktop
 Mange brugere har Excel-projektmapper gemt på deres OneDrive for Business-drev, som vil være velegnet til brug sammen med Power BI Desktop. Med Power BI Desktop kan du bruge onlinelinks til Excel-filer, der er gemt i OneDrive for Business, til at oprette rapporter og visuals. Du kan bruge en OneDrive for Business-gruppekonto eller din egen OneDrive for Business-konto.
@@ -26,11 +26,10 @@ Der kræves nogle få specifikke trin, før du kan hente et onlinelink fra OneDr
    
    > [!NOTE]
    > Grænsefladen i browseren ligner måske ikke helt følgende billede. Der er mange måder at vælge **Åbn i Excel** på for filer i grænsefladen for browseren med OneDrive for Business. Du kan bruge en hvilken som helst indstilling, der giver dig mulighed for at åbne filen i Excel.
-   > 
-   > 
    
    ![](media/desktop-use-onedrive-business-links/odb-links_02.png)
-2. I Excel skal du vælge **Filer** > **Oplysninger**og derefter vælge **Kopiér sti** over **Beskyt projektmappe**.
+
+2. I Excel skal du vælge **Filer** > **Info** og derefter vælge knappen **Kopiér sti**, som vist på følgende billede.
    
    ![](media/desktop-use-onedrive-business-links/onedrive-copy-path.png)
 

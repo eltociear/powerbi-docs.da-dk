@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/09/2020
+ms.date: 05/21/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: ab232d4e5b6d17e7f20ed8a41875ca47693eb285
-ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
+ms.openlocfilehash: 27f71da8a8396de30254c1a02307aa48281db5a8
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83407601"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793606"
 ---
 # <a name="let-users-personalize-visuals-in-a-report"></a>Lad brugerne tilpasse visualiseringer i en rapport
 
@@ -91,7 +91,7 @@ Der er i øjeblikket nogle få begrænsninger for funktionen, som du skal være 
 
 - Denne funktion understøttes ikke i integrerede scenarier, herunder publicer på internettet.
 - Brugerudforskninger bevares ikke automatisk. Du skal gemme din visning som et personligt bogmærke for at registrere dine ændringer.
-- Du kan ikke ændre visualiseringer i Power BI-mobilapps. Ændringer af visualiseringer, som du gemmer som et personligt bogmærke, mens du er i Power BI-tjenesten, bevares i mobilapps.
+- Denne funktion understøttes i Power BI-mobilapps til iOS- og Android-tablets og i Power BI Windows-appen. Den understøttes ikke i Power BI-mobilapps til telefoner. Ændringer af visualiseringer, som du gemmer som et personligt bogmærke, mens du er i Power BI-tjenesten, bevares i alle Power BI-mobilapps.
 
 Der er også nogle kendte problemer, som vi er i gang med at håndtere:
 
