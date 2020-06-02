@@ -1,27 +1,27 @@
 ---
-title: Fremhæv dit datasæt (prøveversion) – Power BI
+title: Fremhæv dit datasæt – Power BI
 description: Få mere at vide om, hvordan du fremhæver dit datasæt for at guide virksomhedsbrugere til pålidelige datasæt af høj kvalitet.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 379249ac50f61df07c4adaffe53e0df29a311086
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3e17b31aa75e1778e92408787a248db810d4d08d
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83284744"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83792989"
 ---
-# <a name="promote-your-dataset-preview"></a>Fremhæv dit datasæt (prøveversion)
+# <a name="promote-your-dataset---power-bi"></a>Fremhæv dit datasæt – Power BI
 
 Forfattere af Power BI-rapporten har nu muligvis adgang til mange forskellige datasæt, så virksomheder skal guide dem til pålidelige datasæt af høj kvalitet. Power BI indeholder to måder at *godkende* datasæt på:
 
 - **Fremhævning**: Som ejer af et datasæt kan du fremhæve dine egne datasæt, når de er klar til almindelig brug. Et hvilket som helst medlem af et arbejdsområde med skriverettigheder kan fremhæve et datasæt. Der er ingen begrænsninger på, hvem der kan fremhæve et datasæt. Fremhævning understøtter samarbejdsmæssig spredning af datasæt i organisationer. Denne artikel handler om at fremhæve dit datasæt.
-- **Certificering**: Du kan anmode om certificering for et fremhævet datasæt. En udvalgt gruppe af brugere, der er defineret under indstillingen **Certificering af datasæt** for lejeradministratoren, beslutter, hvilke datasæt der skal certificeres. Du kan finde flere oplysninger i [Certificer datasæt (prøveversion)](service-datasets-certify.md).
+- **Certificering**: Du kan anmode om certificering for et fremhævet datasæt. En udvalgt gruppe af brugere, der er defineret under indstillingen **Certificering af datasæt** for lejeradministratoren, beslutter, hvilke datasæt der skal certificeres. Du kan finde flere oplysninger i [Certificer datasæt](service-datasets-certify.md).
 
 ## <a name="promote-a-dataset"></a>Fremhæv et datasæt
 

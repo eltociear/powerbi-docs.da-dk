@@ -1,22 +1,22 @@
 ---
-title: Introduktion til datasæt på tværs af arbejdsområder (prøveversion)
+title: Introduktion til datasæt på tværs af arbejdsområder
 description: Få mere at vide om, hvordan du deler et datasæt med brugere på tværs af organisationen. De kan derefter oprette rapporter baseret på dit datasæt i deres egne arbejdsområder.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/01/2019
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3fe0478a7fa570b4d88f4493c4b27fec083041ae
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 0458498b5677f20bac3a2e50f884d820ef1c3648
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83285457"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793618"
 ---
-# <a name="intro-to-datasets-across-workspaces-preview"></a>Introduktion til datasæt på tværs af arbejdsområder (prøveversion)
+# <a name="intro-to-datasets-across-workspaces"></a>Introduktion til datasæt på tværs af arbejdsområder
 
 Business intelligence er en aktivitet baseret på samarbejde. Det er vigtigt at oprette standardiserede datasæt, der fungerer som fælles udgangspunkt. Derefter er registrering og genbrug af disse standardiserede datasæt helt centralt. Når eksperter inden for datamodellering i din organisation opretter og deler optimerede datasæt, kan oprettere af rapporter bruge disse datasæt som udgangspunkt for at oprette præcise rapporter. Din organisation har derefter ensartede data, når der skal træffes beslutninger, samt en sund datakultur.
 
@@ -33,9 +33,9 @@ Oprettelse af rapporter baseret på datasæt i forskellige arbejdsområder og ko
 - I Power BI Desktop kan du publicere Live Connect-rapporter i forskellige arbejdsområder, så længe deres datasæt befinder sig i arbejdsområder med den nye oplevelse.
 - Når du kopierer rapporter på tværs af arbejdsområder, skal destinationsarbejdsområdet være et arbejdsområde med den nye oplevelse.
 
-## <a name="discover-datasets-preview"></a>Opdag datasæt (prøveversion)
+## <a name="discover-datasets"></a>Opdag datasæt
 
-Når du opretter en rapport oven på et eksisterende datasæt, skal du som det første oprette forbindelse til datasættet enten i Power BI-tjenesten eller i Power BI Desktop. Læs om [registrering af datasæt fra forskellige arbejdsområder (prøveversion)](service-datasets-discover-across-workspaces.md)
+Når du opretter en rapport oven på et eksisterende datasæt, skal du som det første oprette forbindelse til datasættet enten i Power BI-tjenesten eller i Power BI Desktop. Læs om [registrering af datasæt fra forskellige arbejdsområder](service-datasets-discover-across-workspaces.md)
 
 ## <a name="copy-a-report"></a>Kopiér en rapport
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 05/26/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 45229edbc6ed2c9e9c4618d44b4b74e42d0037b8
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 9df00079488b248f2e5bab52395a637e37045a24
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274598"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84119980"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Konfigurer understøttelse af Multi-Geo til Power BI Premium
 
@@ -68,6 +68,8 @@ Disse elementer forbliver i lejerens lokalområde:
 - Tilladelser
 - Datasæts legitimationsoplysninger
 
+
+
 ## <a name="view-capacity-regions"></a>Få vist kapacitetsområder
 
 I administrationsportalen kan du få vist alle kapaciteterne for din Power BI-lejer og de områder, hvor de er placeret i øjeblikket.
@@ -93,10 +95,11 @@ Du kan fjerne arbejdsområder fra Multi-Geo-kapacitet på to måder:
 - Bekræft, at enhver bevægelse, du indleder mellem områder, opfylder alle erhvervs- og myndighedsbestemmelser før igangsætning af dataoverførslen.
 - En cachelagret forespørgsel, der er gemt i et fjernområde, forbliver i dette område som inaktive data. Dog kan andre data under overførsel føres frem og tilbage mellem flere geografiske områder.
 - Når du flytter data fra ét område til et andet i et Multi-Geo-miljø, kan kildedataene forblive i det område, hvorfra dataene blev flyttet, i op til 30 dage. I denne periode har slutbrugere ikke adgang til dem. De fjernes fra det pågældende område og destrueres i løbet perioden på 30 dage.
+- Forespørgselsteksten og forespørgselsresultattrafikken for importerede datamodeller passerer ikke gennem hjemmeområdet. Rapportens metadata kommer stadig fra det eksterne område, og visse DNS-routing-tilstande kan føre trafik ud af området. 
 
 - Funktionen [Dataflow](../transform-model/service-dataflows-overview.md) understøttes ikke på Multi-GEO i øjeblikket.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 - [Hvad er Power BI Premium?](service-premium-what-is.md)
 - [Multi-Geo til Power BI Embedded-kapaciteter](../developer/embedded/embedded-multi-geo.md)

@@ -1,22 +1,22 @@
 ---
-title: Opret rapporter baseret på datasæt fra forskellige arbejdsområder (prøveversion) – Power BI
+title: Opret rapporter baseret på datasæt fra forskellige arbejdsområder – Power BI
 description: Få mere at vide om, hvordan du deler et datasæt med brugere på tværs af organisationen. De kan derefter oprette rapporter baseret på dit datasæt i deres egne arbejdsområder.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: af8cab7403a0ee34505ff395248aec188fd54666
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 0e7574f9f1d3b4d6c818115af1f2cb4dcd7b8374
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83284721"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793040"
 ---
-# <a name="create-reports-based-on-datasets-from-different-workspaces-preview"></a>Opret rapporter baseret på datasæt fra forskellige arbejdsområder (prøveversion)
+# <a name="create-reports-based-on-datasets-from-different-workspaces"></a>Opret rapporter baseret på datasæt fra forskellige arbejdsområder
 
 Få mere at vide om, hvordan du opretter rapporter i dine egne arbejdsområder baseret på datasæt i andre arbejdsområder. Hvis du vil oprette en rapport ud fra et eksisterende datasæt, kan du starte fra Power BI Desktop eller fra Power BI-tjenesten, i Mit arbejdsområde eller i en [ny arbejdsområdeoplevelse](../collaborate-share/service-create-the-new-workspaces.md).
 
@@ -61,5 +61,5 @@ Der er to forskellige typer godkendte datasæt. Ejere af datasæt kan *fremhæve
 
 ## <a name="next-steps"></a>Næste trin
 
-- [Brug datasæt på tværs af arbejdsområder (prøveversion)](service-datasets-across-workspaces.md)
+- [Brug datasæt på tværs af arbejdsområder](service-datasets-across-workspaces.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

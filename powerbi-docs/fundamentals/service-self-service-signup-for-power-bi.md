@@ -6,19 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/27/2020
+ms.date: 05/20/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 721479910a430bb04dc6404936b37fbb00a2c5a8
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: cbc89e5f428e13cce35a1d293752091958d82496
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361974"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83813824"
 ---
 # <a name="sign-up-for-the-power-bi-service-as-an-individual"></a>Tilmeld dig Power BI-tjenesten som enkeltperson
 
-Power BI kan både være et værktøj til analyse af personlige data og fungere som grundlag for analyser og beslutningstagning i forhold til gruppeprojekter, afdelinger eller hele selskaber. Denne artikel indeholder en forklaring af, hvordan du tilmelder dig Power BI som enkeltperson. Hvis du er en Power BI-administrator eller global administrator, skal du se [Tilladelser for administratorrollen i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+Power BI kan både være et værktøj til analyse af personlige data og fungere som grundlag for analyser og beslutningstagning i forhold til gruppeprojekter, afdelinger eller hele selskaber. Denne artikel indeholder en forklaring af, hvordan du tilmelder dig Power BI som enkeltperson. Hvis du er global administrator eller faktureringsadministrator, skal du se [Power BI-licens til din organisation](../admin/service-admin-licensing-organization.md).
 
 ## <a name="what-is-power-bi"></a>Hvad er Power BI?
 Power BI er en samlet selvbetjenings- og business intelligence-platform til virksomheder og kombinerer en intuitiv brugeroplevelse med intelligente datavisualiseringer for at give en omfattende indsigt i data. Rapporter kan deles i Microsoft-værktøjer, f.eks. Teams, SharePoint, PowerPoint, eller inden for andre produktivitetsprodukter. Det tilbydes som en online SaaS (software som en service) med to tilhørende programmer: Et Microsoft Windows-skrivebordsprogram, der hedder Power BI Desktop, til oprettelse af rapporter og oprindelige BI-mobilapps, der kan bruges til at bruge rapporter på iOS- og Android-enheder. 
@@ -74,7 +74,7 @@ De nøjagtige trin til tilmelding kan variere, afhængigt af din organisation, o
 
        ![Kom i gang](media/service-self-service-signup-for-power-bi/power-bi-did-you.png)
    
-    - Hvis du får vist en meddelelse i stil med denne, skal du acceptere vilkårene og betingelserne.
+    - Hvis du får vist en meddelelse i stil med denne, skal du gennemse vilkårene og betingelserne. Hvis du accepterer, skal du vælge **Start**. 
 
         ![Kom i gang](media/service-self-service-signup-for-power-bi/power-bi-almost.png)
 
@@ -91,7 +91,7 @@ Tillykke med din tilmelding til en Power BI-konto for første gang! Nu har du en
 
 ![Dialogboks med Power BI-prøveversion](media/service-self-service-signup-for-power-bi/power-bi-start-trial.png)    
 
-<sup>2</sup> I nogle organisationer er din Power BI-standardkonto muligvis en licens på Power BI **Pro**. Nogle versioner af Office 365 indeholder f.eks. en Power BI Pro-licens. Du kan få mere at vide om, hvordan du slår din brugerlicens op, i [Hvilken licens jeg har?](../consumer/end-user-license.md)
+<sup>2</sup> I nogle organisationer er din Power BI-standardkonto muligvis en licens på Power BI **Pro**. Nogle versioner af Microsoft 365 indeholder f.eks. en Power BI Pro-licens. Du kan få mere at vide om, hvordan du slår din brugerlicens op, i [Hvilken licens jeg har?](../consumer/end-user-license.md)
 
 
 
@@ -112,13 +112,13 @@ I de fleste tilfælde kan du tilmelde dig Power BI ved at følge den beskrevne p
 | Symptom/fejlmeddelelse | Årsag og løsning |
 | ----------------------- | -------------------- |
 | <strong>Personlige mailadresser (f.eks. nancy@gmail.com)</strong> Under tilmeldingen vil du modtage en meddelelse som denne: <br /><br /> *Du har angivet en personlig mailadresse: Angiv din arbejdsmailadresse, så vi kan gemme dit firmas data på sikker vis.* <br /><br /> eller <br /><br /> *Det ligner en personlig mailadresse. Angiv din arbejdsmailadresse, så vi kan sætte dig i forbindelse med andre i dit firma. Og bare rolig. Vi deler ikke din adresse med nogen.* | Power BI understøtter ikke mailadresser, der leveres af forbrugermailtjenester eller udbydere af telekommunikation. <br /><br /> Prøv at tilmelde dig igen ved hjælp af en mailadresse, der er knyttet til dit arbejde eller din skole, for at fuldføre tilmeldingen. <br /><br /> Hvis du stadig ikke kan tilmelde dig og er villig til at gennemføre en mere avanceret tilmeldingsproces, kan du [tilmelde dig et nyt Office 365-prøveabonnement og bruge denne mailadresse til tilmeldingen](../admin/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). <br /><br /> Du kan også få en eksisterende bruger til at [invitere dig som gæst](../admin/service-admin-azure-ad-b2b.md). |
-| **Tilmelding via selvbetjening er deaktiveret**: Under tilmeldingen modtager du en meddelelse som denne: <br /><br /> *Vi kan ikke færdiggøre din tilmelding. Din it-afdeling har deaktiveret tilmelding til Microsoft Power BI. Kontakt it-afdelingen for at fuldføre tilmeldingen.* <br /><br /> | Din organisations [globale administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles.md) har deaktiveret selvbetjeningstilmelding for Power BI. <br /><br /> Kontakt den globale administrator for at fuldføre tilmeldingen, og bed vedkommende om at [følge instruktionerne for at aktivere tilmeldingen](../admin/service-admin-disable-self-service.md). <br/><br/> Dette problem kan også opstå, hvis du har tilmeldt dig Office 365 via en partner. I dette tilfælde skal du kontakte den organisation, der er ansvarlig for at give dig Office 365. |
-| **Mailadressen er ikke et Office 365-id** Under tilmeldingen modtager du en meddelelse som denne: <br /><br /> *Vi kan ikke finde dig på contoso.com.  Bruger du et andet id på arbejdet eller i skolen? <br /><br />Prøv at logge på med det, og hvis det ikke virker, skal du kontakte din it-afdeling.* | Din organisation bruger id'er til at logge på Office 365 og andre Microsoft-tjenester, som er anderledes end din mailadresse.  Din mailadresse kan f.eks. være Nancy.Smith@contoso.com, men dit id er nancys@contoso.com. <br /><br /> Brug det id, som din organisation har tildelt dig, så du kan logge på Office 365 eller andre Microsoft-tjenester, for at fuldføre tilmeldingen.  Hvis du ikke ved, hvad det er, kan du kontakte din globale administrator. <br /><br /> Hvis du stadig ikke kan tilmelde dig og er villig til at gennemføre en mere avanceret tilmeldingsproces, kan du [tilmelde dig et nyt Office 365-prøveabonnement og bruge denne mailadresse til tilmeldingen](../admin/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
+| **Tilmelding via selvbetjening er deaktiveret**: Under tilmeldingen modtager du en meddelelse som denne: <br /><br /> *Vi kan ikke færdiggøre din tilmelding. Din it-afdeling har deaktiveret tilmelding til Microsoft Power BI. Kontakt it-afdelingen for at fuldføre tilmeldingen.* <br /><br /> | Din organisations [globale administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles.md) har deaktiveret selvbetjeningstilmelding for Power BI. <br /><br /> Kontakt den globale administrator for at fuldføre tilmeldingen, og bed vedkommende om at [følge instruktionerne for at aktivere tilmeldingen](../admin/service-admin-disable-self-service.md). <br/><br/> Dette problem kan også opstå, hvis du har tilmeldt dig Microsoft 365 via en partner. I dette tilfælde skal du kontakte den organisation, der er ansvarlig for at give dig Microsoft 365. |
+| **Mailadressen er ikke et Microsoft 365-id** Under tilmeldingen modtager du en meddelelse som denne: <br /><br /> *Vi kan ikke finde dig på contoso.com.  Bruger du et andet id på arbejdet eller i skolen? <br /><br />Prøv at logge på med det, og hvis det ikke virker, skal du kontakte din it-afdeling.* | Din organisation bruger id'er til at logge på Microsoft 365 og andre Microsoft-tjenester, som er anderledes end din mailadresse.  Din mailadresse kan f.eks. være Nancy.Smith@contoso.com, men dit id er nancys@contoso.com. <br /><br /> Brug det id, som din organisation har tildelt dig, så du kan logge på Microsoft 365 eller andre Microsoft-tjenester, for at fuldføre tilmeldingen.  Hvis du ikke ved, hvad det er, kan du kontakte din globale administrator. <br /><br /> Hvis du stadig ikke kan tilmelde dig og er villig til at gennemføre en mere avanceret tilmeldingsproces, kan du [tilmelde dig et nyt Office 365-prøveabonnement og bruge denne mailadresse til tilmeldingen](../admin/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 Power BI-logon genkender ikke din adgangskode  |  Nogle gange kræver det nogle flere forsøg. Hvis du forsøger at indtaste din adgangskode flere gange, og du stadig ikke kan logge på, kan du prøve at køre din browser i Incognito- (Chrome) eller InPrivate-tilstand (Edge).
 
 ## <a name="next-steps"></a>Næste trin
 
-[Køb Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md)  
-[Power BI-serviceaftale til individuelle brugere](https://powerbi.microsoft.com/terms-of-service/)  
+[Power BI-funktioner efter licenstype](../consumer/end-user-features.md)    
+[Tips til at finde hjælp](../fundamentals/service-tips-for-finding-help.md)    
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

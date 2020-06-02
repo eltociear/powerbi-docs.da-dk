@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 892414704592347af81ed29763a4d6a34bb12c0f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 189710c613c7d48f76ee0bb23a430ac4d9908c74
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83133460"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83792876"
 ---
 # <a name="power-bi-premium-faq"></a>Ofte stillede spørgsmål om Power BI Premium
 
@@ -41,8 +41,8 @@ Power BI Premium er en kapacitet-baseret licens, mens Power BI Pro er en brugerb
 * Oprette personlige dashboards (fastgøres til nye dashboard).
 * Analyserer data i Excel eller Power BI Desktop.
 * Deler med understøttelse af Excel Web App.
-* Deler dashboards og samarbejder med Office 365 Grupper.
-* Integrerer indhold med Microsoft Teams.
+* Del dashboards, og samarbejd med Microsoft 365 Grupper
+* Integrere indhold med Microsoft Teams.
 
 **Skal jeg have Power BI Pro for at kunne bruge Power BI Premium?**  
 Ja. Power BI Pro er nødvendigt for at kunne publicere rapporter, dele dashboards, samarbejde med kolleger i arbejdsområder og foretage andre relaterede aktiviteter. Power BI Pro er ikke påkrævet for at forbruge indhold i Premium-kapacitet.

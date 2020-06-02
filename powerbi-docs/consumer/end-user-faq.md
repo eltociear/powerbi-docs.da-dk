@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 05/20/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 39d30cc7949565872fd638f289756be6541eee0d
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 530b1dd757f8fe0bfdb120601ae8ea28d95ed835
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564980"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793686"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Ofte stillede spørgsmål om Power BI
 
@@ -27,14 +27,14 @@ ms.locfileid: "83564980"
 
 Power BI-tjenesten er en cloudbaseret analysetjeneste til virksomheder, der gør det muligt for alle at visualisere og analysere data hurtigere, mere effektivt og på en mere forståelig måde. Det forbinder brugere med en bred række data gennem brugervenlige dashboards, interaktive rapporter og overbevisende visualiseringer, der gør data levende. Læs mere om [Power BI](../fundamentals/power-bi-overview.md).
 
-## <a name="what-is-the-microsoft-power-bi-service-for-consumers"></a>Hvad er Microsoft Power BI-tjenesten til *forbrugere*?
+## <a name="what-is-a-power-bi-consumers"></a>Hvad er Power BI-*forbrugere*?
 
 Den måde, du interagerer med Power BI på, afhænger af din jobfunktion. Som slutbruger eller *forbruger* er du den person, der modtager indhold (dashboards, rapporter og apps) fra kolleger. Du arbejder i online- eller mobilversionen af Power BI, som kaldes Power BI-tjenesten, og gennemgår og interagerer med dette indhold, så du kan træffe forretningsbeslutninger.  Læs mere om [Power BI til forbrugere](index.yml).
 
 
 ## <a name="whats-the-difference-between-power-bi-pro-and-power-bi-premium"></a>Hvad er forskellen mellem Power BI Pro og Power BI Premium?
 
-Power BI Pro er en individuel brugerlicens, der giver adgang til alt indhold og alle funktioner i Power BI-tjenesten. Du kan også dele indhold og samarbejde med andre Pro-brugere. Det er kun Pro-brugere, der kan publicere indhold til arbejdsområder, dele dashboards og abonnere på dashboards og rapporter. Denne type licens er typisk tildelt *rapportdesignere*, udviklere og administratorer i Power BI. 
+Power BI Pro er en individuel brugerlicens, der giver adgang til alt indhold og alle funktioner i Power BI-tjenesten. Du kan også dele indhold og samarbejde med andre Pro-brugere. Det er kun Pro-brugere, der kan publicere indhold til arbejdsområder, dele dashboards og abonnere på dashboards og rapporter. 
 
 Power BI Premium indeholder dedikeret kapacitet til at levere en mere ensartet ydeevne. Det understøtter også større datamængder i Power BI. I Premium kan de enkelte brugere udføre omfattende distribution af indhold fra Pro-brugere, og det kræver ikke en Pro-licens pr. bruger at få vist indholdet. Det betyder, at *forbrugere* kan samarbejde med kolleger og få vist og interagere med dashboards, rapporter og apps, der er blevet delt med dem. 
 
@@ -54,7 +54,7 @@ Hvis din virksomhed har købt Power BI-licenser eller en Premium-kapacitetskonto
 
 Tilmeld dig Power BI-tjenesten som enkeltperson. Se [den selvbetjente tilmeldingsproces til Power BI](../fundamentals/service-self-service-signup-for-power-bi.md)
 
-## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Hvorfor skal jeg tilmelde mig med min arbejdsmail?
+## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Hvorfor skal jeg logge på med min arbejdsmail?
 
 Power BI understøtter ikke mailadresser, der leveres af forbrugermailtjenester eller udbydere af telekommunikation. Få mere at vide om [den selvbetjente tilmeldingsproces til Power BI](../fundamentals/service-self-service-signup-for-power-bi.md).
 
@@ -105,11 +105,11 @@ Få mere at vide om sikkerhed, beskyttelse af personlige oplysninger og overhold
 
 ## <a name="how-do-i-undo-in-power-bi"></a>Hvordan fortryder jeg i Power BI?
 
-Som mange andre Microsoft-tjenester og -software giver Power BI en nem måde at fortryde den seneste kommando på.
+Du kan som i mange andre Microsoft-tjenester og -software benytte en nem måde at fortryde din sidste kommando i Power BI.
 
 * For at **fortryde** din seneste handling, eller de seneste par handlinger, skal du trykke på CTRL+Z.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Hvad er en Power BI-forbruger?](end-user-consumer.md)
 * [Hvordan benytter en forbruger Power BI?](end-user-reading-view.md)

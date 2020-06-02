@@ -1,22 +1,22 @@
 ---
-title: Certificer datasæt (prøveversion) – Power BI
+title: Certificer datasæt – Power BI
 description: Få mere at vide om, hvordan du guider virksomhedsbrugere til pålidelige datasæt af høj kvalitet.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: bdce9ec797d00b34f657ed66df6b7a5ce373334d
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a6d03521cd3962dcf9549d99076d8606b1142976
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83284997"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83792928"
 ---
-# <a name="certify-datasets-preview"></a>Certificer datasæt (prøveversion)
+# <a name="certify-datasets---power-bi"></a>Certificer datasæt – Power BI
 
 Din organisation kan certificere datasæt, der er den autoritative kilde til vigtige oplysninger. Disse datasæt vises prominent, når designere af rapporten begynder at oprette en rapport og leder efter pålidelige data. Certificering kan være en yderst selektiv proces, hvor kun de mest værdifulde datasæt bliver certificeret. Power BI-lejeradministratorer har en ny indstilling, så de omhyggeligt kan styre, hvem der kan certificere datasæt. Derfor kan administratorer sikre, at certificering af datasættet resulterer i meget pålidelige og autoritative datasæt, der er udviklet til brug på tværs af organisationen.
 

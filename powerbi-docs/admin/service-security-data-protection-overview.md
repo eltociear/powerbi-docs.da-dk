@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/22/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: d7fc915c9c21460670bf86f308b756196886983a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: d70262908df5568066533d1b638c7a1495a3f30b
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83132049"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733226"
 ---
 # <a name="data-protection-in-power-bi-preview"></a>Databeskyttelse i Power BI (prøveversion)
 
@@ -23,7 +23,7 @@ Moderne virksomheder har strenge forretningsregler og krav til, hvordan de hånd
 
 Med databeskyttelse i Power BI kan du gøre følgende:
 
-* Brug følsomhedsmærkater fra Microsoft til at klassificere indhold i Power BI-tjenesten (dashboards, rapporter, datasæt og dataflow) og forsyne det med mærkater ved hjælp af den samme taksonomi, der bruges til at klassificere og beskytte filer i Office 365. 
+* Brug følsomhedsmærkater fra Microsoft til at klassificere indhold i Power BI-tjenesten (dashboards, rapporter, datasæt og dataflow) og forsyne det med mærkater ved hjælp af den samme taksonomi, der bruges til at klassificere og beskytte filer i Microsoft 365.
 
 * Gennemtving beskyttelsesindstillinger, f.eks. kryptering eller vandmærker, når du eksporterer data fra Power BI-tjenesten til filer ved at anvende indholdets følsomhedsmærkat og beskyttelse (Excel, PowerPoint og PDF). 
 
@@ -35,7 +35,7 @@ Med databeskyttelse i Power BI kan du gøre følgende:
 
 Følsomhedsmærkater oprettes og administreres enten i [Microsoft 365 Security Center](https://security.microsoft.com/) eller [Microsoft 365 Compliance Center](https://compliance.microsoft.com/).
 
-Hvis du vil have adgang til følsomhedsmærkater i et af disse centre, skal du navigere til **Klassificering > Følsomhedsmærkater**. Disse følsomhedsmærkater kan bruges af flere Microsoft-tjenester, f.eks. Microsoft Azure Information Protection, Office-programmer og Office 365-tjenester.
+Hvis du vil have adgang til følsomhedsmærkater i et af disse centre, skal du navigere til **Klassificering** > **Følsomhedsmærkater**. Disse følsomhedsmærkater kan bruges af flere Microsoft-tjenester, f.eks. Microsoft Azure Information Protection, Office-programmer og Microsoft 365-tjenester.
 
 > [!IMPORTANT]
 > Kunder, der bruger Microsoft Azure Information Protection, skal overføre mærkaterne til en af de tidligere angivne tjenester, før følsomhedsmærkaterne kan bruges i Power BI. Derudover understøttes følsomhedsmærkater kun i offentlige cloudmiljøer, og de understøttes ikke for lejere i cloudmiljøer, f.eks. nationale cloudmiljøer.

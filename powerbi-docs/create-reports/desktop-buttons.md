@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 05/21/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: c703a4b67b642af5199413e80ff1e140905a2338
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: f92ce45cd739072dcb7056eb0be6696b4cab32e4
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83298544"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83813405"
 ---
 # <a name="use-buttons-in-power-bi"></a>Brug knapper i Power BI
 Ved hjælp af **knapper** i Power BI kan du oprette rapporter, der fungerer på samme måde som apps, og dermed skabe et indtagende miljø, så brugerne kan holde over, klikke og yderligere interagere med Power BI-indhold. Du kan føje knapper til rapporter i **Power BI Desktop** og i **Power BI-tjenesten**. Når du deler dine rapporter i Power BI-tjeneste, får brugerne en applignende visning.
@@ -50,12 +50,11 @@ På følgende kort i ruden **Visualiseringer** kan du justere formateringen elle
 * Knaptekst
 * Ikon
 * Kontur
-* Udfyld
+* Udfyldning
 
 For hver tilstand kan du vælge, hvordan knappes skal fremstå. Udvid ét af disse kort, og vælg den rullemenu, der vises øverst på kortet. På følgende billede kan du se, at kortet **Ikon** er udvidet med rullemenuen valgt for at vise de tre tilstande.
 
 ![Tre tilstande for en knap i en Power BI-rapport](media/desktop-buttons/power-bi-button-format.png)
-
 
 ## <a name="select-the-action-for-a-button"></a>Vælg handlingen for knappen
 
@@ -67,7 +66,7 @@ Her er indstillingerne for knaphandlinger:
 
 - **Tilbage** sender brugeren tilbage til den forrige side i rapporten. Dette er nyttigt til sider med detaljeadgang.
 - **Bogmærke** viser den rapportside, der er knyttet til et bogmærke, som er defineret for den aktuelle rapport. Få mere at vide om [bogmærker i Power BI](desktop-bookmarks.md). 
-- **Detaljeadgang (prøveversion)** sender brugeren til en side med detaljeadgang, der er filtreret efter deres valg, uden at der bruges bogmærker. Få mere at vide om, [detaljeaniveauknapper i rapporter](desktop-drill-through-buttons.md).
+- **Detaljeadgang** sender brugeren til en side med detaljeadgang, der er filtreret efter deres valg, uden at der bruges bogmærker. Få mere at vide om, [detaljeaniveauknapper i rapporter](desktop-drill-through-buttons.md).
 - **Sidenavigation** sender brugeren til en anden side i rapporten, også uden at der bruges bogmærker. Se [Opret sidenavigation](#create-page-navigation) i denne artikel for at få flere oplysninger.
 - **Spørgsmål og svar** åbner et vindue med **stifinder til Spørgsmål og svar**. 
 
@@ -75,23 +74,73 @@ For nogle knapper er der automatisk valgt en standardhandling. For knappen **Sp�
 
 Du kan prøve eller teste de knapper, du opretter for din rapport, ved hjælp af *Ctrl + klik* på den knap, du vil bruge. 
 
-### <a name="create-page-navigation"></a>Opret sidenavigation
+## <a name="create-page-navigation"></a>Opret sidenavigation
 
-Med **handling**stypen **sidenavigation**kan du hurtigt oprette en hel navigationsoplevelse uden at skulle gemme eller administrere bogmærker.
+Med **handlingstypen** **Sidenavigation**kan du hurtigt oprette en hel navigationsoplevelse uden at skulle gemme eller administrere bogmærker.
 
 Hvis du vil konfigurere en sidenavigationsknap, skal du oprette en knap med **Sidenavigation** som handlingstype og vælge **destination**ssiden.
 
 ![Handlingen Sidenavigation](media/desktop-buttons/power-bi-page-navigation.png)
 
-Du kan hurtigt opbygge en brugerdefineret navigationsrude. Du undgår at skulle redigere og administrere bogmærker, hvis du vil ændre, hvilke sider der skal vises i navigationsruden.
+Du kan oprette en brugerdefineret navigationsrude og føje navigationsknapperne til den. Du undgår at skulle redigere og administrere bogmærker, hvis du vil ændre, hvilke sider der skal vises i navigationsruden.
 
 ![Opret en navigationsside](media/desktop-buttons/power-bi-build-navigation-pane.png)
 
 Derudover kan du oprette en betinget formatering af værktøjstippet, som du kan gøre med andre knaptyper.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="set-the-navigation-destination-conditionally"></a>Indstil betingelserne for navigationsdestinationen
+
+Du kan bruge betinget formatering til at angive navigationsdestinationen baseret på resultatet af en måling. Det kan f.eks. være, at du vil spare plads på dit rapportlærred ved at have en enkelt knap til at navigere til forskellige sider, der er baseret på brugerens valg.
+
+:::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Naviger med en Start-knap":::
+ 
+Hvis du vil oprette det eksempel, der er vist ovenfor, skal du starte med at oprette en tabel med en enkelt kolonne med navnene på navigationsdestinationerne:
+
+:::image type="content" source="media/desktop-buttons/button-create-table.png" alt-text="Opret en tabel":::
+
+Power BI bruger den nøjagtige strengforekomst til at angive destinationen for detaljeadgang. Du skal derfor dobbelttjekke, at de angivne værdier justeres præcist i forhold til navnene på detaljeadgangssiderne.
+
+Når du har oprettet tabellen, kan du føje den til siden som et enkelt udsnit:
+
+:::image type="content" source="media/desktop-buttons/button-navigate-slicer.png" alt-text="Naviger til udsnit":::
+
+Opret derefter en sidenavigationsknap, og vælg indstillingen for betinget formatering for destinationen:
+
+:::image type="content" source="media/desktop-buttons/button-set-page-nav-destination.png" alt-text="Sidenavigationsknap":::
+ 
+Vælg navnet på den kolonne, du har oprettet, i dette tilfælde **Vælg en destination**:
+
+:::image type="content" source="media/desktop-buttons/button-select-destination.png" alt-text="Vælg en destination":::
+
+Nu kan knappen navigere til forskellige sider afhængigt af brugerens valg.
+
+:::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Naviger med en Start-knap":::
+ 
+### <a name="shapes-and-images-for-navigation"></a>Figurer og billeder til navigation
+
+Handlingen sidenavigation understøttes for former og billeder, ikke kun knapper. Her er et eksempel på brug af en af de indbyggede former:
+
+:::image type="content" source="media/desktop-buttons/button-navigation-arrow.png" alt-text="Brug en pil til navigation":::
+ 
+Her er et eksempel på brug af et billede:
+
+:::image type="content" source="media/desktop-buttons/button-navigation-image.png" alt-text="Brug et billede til navigation":::
+ 
+## <a name="buttons-support-fill-images"></a>Knapper understøtter udfyldningbilleder
+
+Knapper understøtter udfyldningbilleder. Du kan tilpasse knappens udseende og funktionsmåde med udfyldningsbilleder kombineret med de indbyggede knaptilstande: standard, peg, på tryk og deaktiveret (til detaljeadgang).
+
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-fill-images.png" alt-text="Udfyldningsbilleder af detaljeniveauknap":::
+
+Indstil **udfyldning** på **Til**, og opret derefter billeder for de forskellige tilstande.
+
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-fill-state-settings.png" alt-text="Indstillinger for udfyldningsbilleder":::
+
+
+## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om de funktioner, der er ens eller interagerer med knapper, i følgende artikler:
 
 * [Brug detaljeadgang i Power BI-rapporter](desktop-drillthrough.md)
 * [Brug bogmærker til at dele indsigt og oprette historier i Power BI](desktop-bookmarks.md)
+* [Opret en detaljeniveauknap](desktop-drill-through-buttons.md)
 

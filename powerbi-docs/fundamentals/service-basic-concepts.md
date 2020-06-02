@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 0620ca7373f247cf5475f43ddaceb69ded60bc59
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: bcd5713b2ee7f053448718bc5dd93c24b0d53de6
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83358432"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83813870"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundlæggende begreber for designere i Power BI-tjenesten
 
@@ -29,7 +29,7 @@ Hvis du ikke har dine egne rapporter endnu, kan du i forbindelse med denne artik
 Når du åbner Power BI-tjenesten i en browser, begynder du på startskærmen. Her er de elementer, du kan se:
 
 1. Navigationsrude
-2. Office 365-appstarter
+2. Microsoft 365-programstarter
 3. Power BI-startknap
 4. Ikonknapper, herunder indstillinger, hjælp og feedback
 5. Søgefelt
@@ -106,7 +106,7 @@ Lad os fortsætte med næste emne: rapporter.
 * [Eksempel på datasæt til Power BI](../create-reports/sample-datasets.md)
 
 ## <a name="reports"></a>Rapporter
-En Power BI-rapport er en eller flere sider med visualiseringer, f.eks. kurvediagrammer, kort og træstrukturdiagrammer. Visualiseringer kaldes også **_visualiseringer_** . Alle visualiseringerne i en rapport stammer fra et enkelt datasæt. Du kan oprette rapporter fra bunden i Power BI, importere dem med dashboards, som kolleger deler med dig, eller Power BI kan oprette dem, når du opretter forbindelse til datasæt fra Excel, Power BI Desktop, databaser og SaaS-programmer.  Når du f.eks. opretter forbindelse til en Excel-projektmappe, der indeholder Power View-ark, opretter Power BI en rapport, der er baseret på de ark. Og når du opretter forbindelse til et SaaS-program, importerer Power BI en færdigbygget rapport.
+En Power BI-rapport er en eller flere sider med visualiseringer, f.eks. kurvediagrammer, kort og træstrukturdiagrammer. Visualiseringer kaldes også **_visualiseringer_**. Alle visualiseringerne i en rapport stammer fra et enkelt datasæt. Du kan oprette rapporter fra bunden i Power BI, importere dem med dashboards, som kolleger deler med dig, eller Power BI kan oprette dem, når du opretter forbindelse til datasæt fra Excel, Power BI Desktop, databaser og SaaS-programmer.  Når du f.eks. opretter forbindelse til en Excel-projektmappe, der indeholder Power View-ark, opretter Power BI en rapport, der er baseret på de ark. Og når du opretter forbindelse til et SaaS-program, importerer Power BI en færdigbygget rapport.
 
 Der er to forskellige tilstande, hvor du kan få vist og interagere med rapporter: *Læsevisning* og *Redigeringsvisning*. Når du åbner en rapport, åbnes den i Læsevisning. Hvis du har redigeringstilladelser, kan du se **Rediger rapport** i øverste venstre hjørne, og du kan få vist rapporten i Redigeringsvisning.  Hvis en rapport er i et arbejdsområde, kan alle med rollen *administrator*, *medlem* eller *bidragyder* redigere den. De har adgang til alle egenskaberne til udforskning, design, oprettelse og deling i Redigeringsvisning for den pågældende rapport. De personer, de deler rapporten med, kan udforske og interagere med rapporten i Læsevisning.   
 
@@ -228,8 +228,8 @@ Bemærk ikonet "C" efter dashboardtitlen. Dette dashboard er markeret med [datak
 
 ![Ikon for dataklassificering](media/service-basic-concepts/power-bi-title.png)
 
-### <a name="6-office-365-app-launcher"></a>6. **Office 365-appstarter**
-Appstarteren giver nem adgang til alle dine Office 365-apps med et enkelt klik. Her kan du hurtigt starte din mail, dine dokumenter, din kalender med mere.
+### <a name="6-microsoft-365-app-launcher"></a>6. **Microsoft 365-programstarter**
+Appstarteren giver nem adgang til alle dine Microsoft 365-apps med et enkelt klik. Her kan du hurtigt starte din mail, dine dokumenter, din kalender med mere.
 
 ![Office-appstarter](media/service-basic-concepts/power-bi-waffle.png)
 

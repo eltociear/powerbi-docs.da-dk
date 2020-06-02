@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 03/24/2020
+ms.date: 05/11/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: e5d87e3b41d6048b214fca45fc99df35f997d3c1
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: dfb307a53ac4fd75188965618a08bb4bdee5689b
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347285"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83794186"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Abonner på en rapport eller et dashboard i Power BI-tjenesten 
 
@@ -93,7 +93,7 @@ Et abonnement slutter, hvis Pro-licensen udløber, dashboardet eller rapporten s
 * Særligt for dashboardabonnementer understøttes nogle typer af felter endnu ikke.  Det omfatter: streamingfelter, videofelter, felter med brugerdefineret webindhold.     
 * Abonnementer mislykkes muligvis på dashboards og rapporter med meget store billeder på grund af størrelsesbegrænsninger for mails.    
 * Power BI afbryder automatisk midlertidigt opdatering af datasæt, der er knyttet til dashboards og rapporter, som ikke er blevet besøgt i mere end to måneder.  Men hvis du føjer et abonnement til et dashboard eller en rapport, sættes det ikke på pause, selvom det ikke besøges.
-* I sjældne tilfælde kan det tage længere tid end 15 minutter at levere mailabonnementer til deres modtagere.  Hvis det sker, anbefaler vi, at du kører en opdatering af dine data og dit mailabonnement på forskellige tidspunkter for at sikre rettidig levering.  Hvis problemet fortsætter, skal du kontakte Power BI-support.
+* Husk, at dit abonnement påbegynder behandling på det tidspunkt, du angiver for abonnementet, på samme måde som med andre BI-produkter.  Når rapportbehandlingen er fuldført, sættes abonnementet i kø og sendes til modtagerne af mailen.  Selvom vi bestræber os på at behandle og levere alle abonnementer så hurtigt som muligt, er der til tider spidsbelastning, hvor du kan opleve en længere forsinkelse på grund af antallet af abonnementer, der kan sendes på én gang.  Størstedelen af kunderne bør ikke opleve en forsinkelse på mere end 15 minutter til behandling og afsendelse af deres rapporter, men det kan tage op til 30 minutter for bestemte tidspunkter og lejere med betydelig brug.  Vi forventer aldrig nogen forskydning i forbindelse med levering på mere end 60 minutter fra det tidspunkt, som abonnementet er planlagt.  Hvis en kunde oplever en forsinkelse af denne længde, skal de først sikre, at adressen no-reply-powerbi@microsoft.com er anført af deres mail-udbyder.  Hvis den er det, skal de kontakte Power BI-support for at få hjælp.
 
 ## <a name="next-steps"></a>Næste trin
 

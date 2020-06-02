@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/28/2019
-ms.openlocfilehash: 67a9725e55f82e325466789064f5738222919ac8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c8c62709775bb269eb57b2f88c174f1dc4fd13ad
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114721"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83794105"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Opret en Azure Active Directory-lejer, du kan bruge med Power BI
 
 Du kan få mere at vide om, hvordan du opretter en ny Azure Active Directory-lejer (Azure AD) til et brugerdefineret program, der kalder [REST API'er for Power BI](../automation/rest-api-reference.md).
 
-En lejer repræsenterer en organisation i Azure Active Directory. Det er en dedikeret instans af Azure AD-tjenesten, som en organisation modtager og ejer, når den tilmelder sig en Microsoft-cloudtjeneste, f.eks. Azure, Microsoft Intune eller Office 365. Hver enkelt Azure AD-lejer er specifik og adskilt fra andre Azure AD-lejere.
+En lejer repræsenterer en organisation i Azure Active Directory. Det er en dedikeret instans af Azure AD-tjenesten, som en organisation modtager og ejer, når den tilmelder sig en Microsoft-cloudtjeneste, f.eks. Azure, Microsoft Intune eller Microsoft 365. Hver enkelt Azure AD-lejer er specifik og adskilt fra andre Azure AD-lejere.
 
 Når du har en Azure AD-lejer, kan du definere et program og tildele tilladelser, så programmet kan kalde REST API'er for [Power BI](../automation/rest-api-reference.md).
 
@@ -27,7 +27,7 @@ Din organisation har muligvis allerede en Azure AD-lejer, som du kan bruge til d
 
 ## <a name="create-an-azure-active-directory-tenant"></a>Opret en Azure Active Directory-lejer
 
-Hvis du vil integrere Power BI i dit brugerdefinerede program, skal du definere et program i Azure AD, hvilket kræver en Azure AD-mappe. Denne mappe er din *lejer*. Hvis din organisation endnu ikke har en lejer, fordi den ikke bruger Power BI eller Office 365, så [skal du oprette et udviklingsmiljø](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Du skal også oprette en, hvis du ikke vil have, at dit program bliver blandet med organisationens lejer, hvilket giver dig mulighed for at isolere ting. Eller måske vil du kun oprette et program til testformål.
+Hvis du vil integrere Power BI i dit brugerdefinerede program, skal du definere et program i Azure AD, hvilket kræver en Azure AD-mappe. Denne mappe er din *lejer*. Hvis din organisation endnu ikke har en lejer, fordi den ikke bruger Power BI eller Microsoft 365, så [skal du oprette et udviklingsmiljø](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Du skal også oprette en, hvis du ikke vil have, at dit program bliver blandet med organisationens lejer, hvilket giver dig mulighed for at isolere ting. Eller måske vil du kun oprette et program til testformål.
 
 Sådan opretter du en ny Azure AD-lejer:
 

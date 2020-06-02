@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/09/2020
+ms.date: 05/27/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dfd44b7130c1c7e4e1d2d7a9c9f15208cb0d9b0c
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 05df39b58334b33046fde0f95b9f1ca596c1eec1
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563281"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120565"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>Om brug af DirectQuery i Power BI
 
@@ -184,7 +184,7 @@ Enhver interaktion i rapporten kan medføre, at visualiseringer opdateres. Hvis 
 
 På samme måde vil redigering af en ny rapport kræve, at der sendes forespørgsler for hvert enkelt trin i forbindelse med produktionen af den endelige visualisering.
 
-Nogle af resultaterne cachelagres. Opdateringen af en visualisering afspejles øjeblikkeligt, hvis de præcis samme resultater er blevet hentet for nylig. Hvis sikkerhed på rækkeniveau ikke er defineret, deles disse cachelagringer ikke på tværs af brugere.
+Nogle af resultaterne cachelagres. Opdateringen af en visualisering afspejles øjeblikkeligt, hvis de præcis samme resultater er blevet hentet for nylig. Hvis sikkerheden på rækkeniveau er defineret, deles disse cachelagringer ikke på tværs af brugere.
 
 #### <a name="dashboard-refresh"></a>Dashboardopdatering
 
@@ -359,13 +359,13 @@ For visse DirectQuery-kilder indeholder denne log alle forespørgsler, der sende
 
 Sporingsfilen findes i mappen *AppData* for den aktuelle bruger:
 
-*\<Bruger>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces*
+*\<User>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces*
 
 Hvis du vil finde denne mappe, skal du i Power BI Desktop vælge **Filer** > **Indstillinger** > **Indstillinger** og derefter vælge **Diagnosticering**. Følgende dialogboks vises:
 
 ![Et link til at åbne sporingsmappen](media/desktop-directquery-about/directquery-about_06.png)
 
-Når du vælger **Åbn crashdump/sporingsmappe** under **Diagnosticeringsindstillinger**, åbnes følgende mappe: *\<Bruger>\AppData\Local\Microsoft\Power BI Desktop\Sporinger*.
+Når du vælger **Åbn crashdump/sporingsmappe** under **Diagnosticeringsindstillinger**, åbnes følgende mappe: *\<User>\AppData\Local\Microsoft\Power BI Desktop\Traces*.
 
 Når du navigerer til denne mappes overordnede mappe, vises mappen, der indeholder *AnalysisServicesWorkspaces*, som vil indeholde én mappe for et arbejdsområde for hver åbne forekomst af Power BI Desktop. Disse mapper er navngivet med et heltalssuffiks, f.eks. *AnalysisServicesWorkspace2058279583*.
 
@@ -381,7 +381,7 @@ Hvis du vil åbne sporingsfilen, skal du benytte følgende fremgangsmåde:
 
 1. Vælg **Filer** > **Åbn** > **Sporingsfil** i SQL Server Profiler.
 
-1. Angiv stien til sporingsfilen for den åbne Power BI-session, f.eks.: *C:\Bruger\<bruger>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data*.
+1. Angiv stien til sporingsfilen for den åbne Power BI-session, f.eks.: *C:\Users\<user>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data*.
 
 1. Åbn *FlightRecorderCurrent.trc*.
 

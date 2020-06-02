@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a3a7d7b0afa4a1eb3d6af81d3e6ba1315e291c4b
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 25a0f5abe07b82c2397ab2800802eba6f624a27c
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83324718"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84119933"
 ---
 # <a name="group-visuals-in-power-bi-desktop-reports"></a>Gruppér visualiseringer i Power BI Desktop-rapporter
 Med **gruppering** kan du i **Power BI Desktop** gruppere visuelle elementer i din rapport, f.eks. knapper, tekstfelter, figurbilleder og alle visuelle elementer, som du opretter, på samme måde som du grupperer elementer i PowerPoint. Når du grupperer visuelle elementer i en rapport, kan du behandle gruppen som et enkelt objekt, så det bliver nemmere, hurtigere og mere intuitivt at flytte, tilpasse størrelsen og arbejde med lag i din rapport.
@@ -33,6 +33,8 @@ Grupper vises i ruden **Valg**. Du kan have lige så mange grupper af visualiser
 ![indlejrede grupper](media/desktop-grouping-visuals/grouping-visuals-03.png)
 
 Du kan også trække og slippe individuelle visuelle elementer i ruden **Valg** for at inkludere dem i en gruppe, fjerne dem fra en gruppe, indlejre en gruppe eller fjerne en gruppe eller et individuelt visuelt element fra en indlejring. Du skal blot trække det visuelle element, du vil justere, og placere det på det ønskede sted. Lagdelingen af visuelle elementer, hvis de overlapper hinanden, bestemmes af deres rækkefølge på *Rækkefølge for lag*.
+
+Det er nemt at omdøbe en gruppe: du dobbeltklikker bare på gruppenavnet i ruden **Markering** og indtaster derefter det nye navn på din gruppe.
 
 ![træk og slip grupper](media/desktop-grouping-visuals/grouping-visuals-04.png)
 
@@ -65,7 +67,7 @@ Du kan også anvende en baggrundsfarve for en gruppe ved hjælp afsnittet **Form
 Når du har anvendt en baggrundsfarve, markerer du gruppen ved at klikke på området mellem de visuelle elementer i gruppen (sammenlign dette med at klikke på det tomme område mellem visuelle elementer i en gruppe, hvilket ikke markerer gruppen). 
 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 Du kan få flere oplysninger om gruppering ved at se følgende video:
 
 * [Gruppering i Power BI Desktop – video](https://youtu.be/sf4n7VXoQHY?t=10)

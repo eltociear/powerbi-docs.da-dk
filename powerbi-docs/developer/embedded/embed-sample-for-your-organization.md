@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 125c8ddbdda48b5c7249a6f810d33a65a5f908ee
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 49465556d7b11b911e24df06ab6598bb2dbe9707
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349787"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83794123"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Selvstudium: Integrer Power BI-indhold i en app til din organisation
 
@@ -383,7 +383,7 @@ Nu, hvor du er færdig med at udvikle dit program, er tiden kommet til at underb
 
 Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for indholdet i dit arbejdsområde. I forbindelse med sideinddelte rapporter skal du som minimum understøtte dit arbejdsområde med en P1-kapacitet. Du kan oprette en dedikeret kapacitet ved hjælp af [Power BI Premium ](../../admin/service-premium-what-is.md).
 
-I tabellen nedenfor kan du se en oversigt over de Power BI Premium-SKU'er, der er tilgængelige i [Microsoft Office 365](../../admin/service-admin-premium-purchase.md):
+I tabellen nedenfor kan du se en oversigt over de Power BI Premium-varenumre, der er tilgængelige i [Microsoft 365](../../admin/service-admin-premium-purchase.md):
 
 | Kapacitetsnode | Samlet antal vCores<br/>(back-end + front-end) | Back end-vCores | Front-end-vCores | Grænser for DirectQuery/liveforbindelser |
 | --- | --- | --- | --- | --- | --- |

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 2e32a61891cee2fb5e2a80167d5283962dc164bb
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: fdb3db1db1fe82743658f6a6073386701e7fe961
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83134867"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84121007"
 ---
 # <a name="managing-premium-capacities"></a>Administration af Premium-kapaciteter
 
@@ -23,7 +23,7 @@ Administration af Power BI Premium omfatter oprettelse, administration og overv�
 
 ## <a name="creating-and-managing-capacities"></a>Oprettelse og administration af kapaciteter
 
-På siden **Kapacitetsindstillinger** på Power BI-administrationsportalen vises antallet af købte v-kerner og tilgængelige Premium-kapaciteter. På siden kan globale Office 365-administratorer eller administratorer af Power BI-tjenesten oprette Premium-kapaciteter fra tilgængelige v-kerner eller redigere eksisterende Premium-kapaciteter.
+På siden **Kapacitetsindstillinger** på Power BI-administrationsportalen vises antallet af købte v-kerner og tilgængelige Premium-kapaciteter. På siden kan globale administratorer eller administratorer af Power BI-tjenesten oprette Premium-kapaciteter fra tilgængelige v-kerner eller redigere eksisterende Premium-kapaciteter.
 
 Når en Premium-kapacitet oprettes, skal administratoren definere:
 
@@ -47,7 +47,7 @@ Kapacitetsstørrelsen vælges på en tilgængelig liste over SKU-muligheder, som
 
 En Premium-kapacitet kan tildeles et andet område end Power BI-lejerens hjemmeområde – også kendt som flere geografiske områder. Flere geografiske områder giver dig administrativ kontrol over, hvilke datacentre dit Power BI-indhold findes på inden for definerede geografiske områder. En multi-geo-installation kommer til sin ret i forbindelse med overholdelse af angivne standarder i store virksomheder eller regeringer, fremfor i forbindelse med ydeevne og skalering. Indlæsning af rapporter og dashboards omfatter stadig anmodninger til det lokale område for metadata. Du kan få mere at vide under [Multi-Geo-understøttelse i Power BI Premium](service-admin-premium-multi-geo.md).
 
-Administratorer af Power BI-tjenesten og globale Office 365-administratorer kan redigere Premium-kapaciteter. De kan:
+Administratorer af Power BI-tjenesten og globale administratorer kan redigere Premium-kapaciteter. De kan:
 
 - ændre kapacitetsstørrelsen for at skalere ressourcer op eller ned.
 - tilføje eller fjerne kapacitetsadministratorer.
@@ -67,7 +67,7 @@ Det er muligt at slette en Premium-kapacitet, og det medfører ikke sletning af 
 
 Arbejdsområder kan tildeles til en Premium-kapacitet på Power BI-administrationsportalen eller i ruden **Arbejdsområde** for et arbejdsområde.
 
-Kapacitetsadministratorer samt globale Office 365-administratorer eller administratorer af Power BI-tjenesten kan massetildele arbejdsområder på Power BI-administrationsportalen. Massetildelingen kan gælde for:
+Kapacitetsadministratorer samt globale administratorer eller administratorer af Power BI-tjenesten kan massetildele arbejdsområder på Power BI-administrationsportalen. Massetildelingen kan gælde for:
 
 - **Arbejdsområder efter brugere** – Alle arbejdsområder, der ejes af disse brugere, herunder personlige arbejdsområder, tildeles til Premium-kapaciteten. Dette omfatter tildeling påny af arbejdsområder, når de er allerede er tildelt til en anden Premium-kapacitet. Herudover tildeles brugerne også tilladelser til arbejdsområdetildelinger.
 

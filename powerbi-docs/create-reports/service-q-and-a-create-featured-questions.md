@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 05/26/2020
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 4b80d329c89299cbe87fb29aa340733f0031192a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 6e3d44c9871332842ed0e3f3d9b9fb5fc64a5a65
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348982"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84121110"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Opret udvalgte spørgsmål til Spørgsmål og svar i Power BI
 Hvis du ejer et datasæt, kan du tilføje dine egne udvalgte spørgsmål i det pågældende datasæt. Spørgsmål og svar i Power BI viser disse spørgsmål til kolleger, der bruger rapporter baseret på dette datasæt.  De udvalgte spørgsmål giver dine kollegaer en ide om, hvilke typer af spørgsmål, de kan stille om datasættet. Det er op til dig, hvilke udvalgte spørgsmål, du tilføjer – tilføj populære spørgsmål, spørgsmål, der viser interessante resultater, eller spørgsmål, der kan være svære at sætte ord på.
@@ -26,7 +26,7 @@ Hvis du ejer et datasæt, kan du tilføje dine egne udvalgte spørgsmål i det p
 
 ## <a name="create-a-featured-question"></a>Opret et udvalgt spørgsmål
 
-I denne artikel anvendes [Eksempel på detailanalyse](sample-datasets.md). Følg disse trinvise instruktioner for selv at prøve at udforske et datasæt.
+I denne artikel anvendes [Retail Analysis Sales-eksemplet](sample-datasets.md). Følg disse trinvise instruktioner for selv at prøve at udforske et datasæt.
 
 1. Markér feltet Spørgsmål og svar øverst i dashboardet.   Bemærk, at Spørgsmål og svar allerede hjælper ved at vise en liste over udtryk, der findes i datasættet.
 2. Hvis du vil føje noget til listen, skal du vælge tandhjulsikonet i øverste højre hjørne af Power BI.  
@@ -37,10 +37,10 @@ I denne artikel anvendes [Eksempel på detailanalyse](sample-datasets.md). Følg
    ![Menuen Indstillinger](media/service-q-and-a-create-featured-questions/power-bi-settings.png)
 5. Skriv dit spørgsmål i tekstfeltet, og vælg **Anvend**.   Du kan også tilføje et andet spørgsmål ved at vælge **Tilføj et spørgsmål**.  
    ![Ruden Udvalgte spørgsmål fra Spørgsmål og svar](media/service-q-and-a-create-featured-questions/power-bi-type-featured-question.png)
-6. Gå tilbage til Power BI-dashboardet for Eksempel på detailanalyse, og anbring markøren i spørgsmålsfeltet.   
+6. Gå tilbage til Power BI-dashboardet for Retail Analysis Sample, og anbring markøren i spørgsmålsfeltet.   
    ![Spørgsmålsfelt i Spørgsmål og svar med udvalgt spørgsmål](media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question-to-start.png)
 7. Det nye udvalgte spørgsmål, **Sales by territory as a map**, er det første på listen. Vælg det.  
-8. Svaret vises som en visualisering i form af et udfyldt kort.  
+8. Power BI opretter svaret og viser det som en udfyldt kortvisualisering.  
    ![Svar på udvalgt spørgsmål i Spørgsmål og svar: kortvisualisering](media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question.png)
 
 ## <a name="next-steps"></a>Næste trin

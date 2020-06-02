@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: d30dfaa36bc55e8da769d4eaf0f7c2d1b9be0724
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 889f7359e0711ecafb44caa6cf98f8a4df6bb0fa
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83145204"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83794047"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Selvstudium: Integrer Power BI-indhold i dit program for nationale cloudmiljøer
 
@@ -54,7 +54,7 @@ I denne artikel vises den kode, der bruges i [prøveappen App Owns Data](https:/
 * Government Community Cloud (GCC):
 
     > [!NOTE]
-    > Integration af Power BI-indhold fra en GCC (Government Community Cloud) kan kun udføres med et Office 365-varenummer. Andre nationale cloudkunder kan bruge [Office 365- eller Azure-varenumre](embedded-faq.md).
+    > Integration af Power BI-indhold fra en GCC (Government Community Cloud) kan kun udføres med et Microsoft 365-varenummer. Andre nationale cloudkunder kan bruge [Microsoft 365- eller Azure-varenumre](embedded-faq.md).
 
 1. Overskriv Cloud.config-filen med GCCCloud.config-indhold.
 

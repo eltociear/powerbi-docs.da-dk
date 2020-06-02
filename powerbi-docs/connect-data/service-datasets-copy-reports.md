@@ -1,22 +1,22 @@
 ---
-title: Kopiér rapporter fra andre apps eller arbejdsområder (prøveversion) – Power BI
+title: Kopiér rapporter fra andre apps eller arbejdsområder – Power BI
 description: Få mere at vide om, hvordan du kan oprette en kopi af en rapport og gemme den i dit eget arbejdsområde.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8716a304e5b117c027d75db149ebcc8d95efebfe
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: d70f029568dca578bb76350a42b5146ecc335759
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83312620"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793094"
 ---
-# <a name="copy-reports-from-other-workspaces-preview"></a>Kopiér rapporter fra andre arbejdsområder (prøveversion)
+# <a name="copy-reports-from-other-workspaces"></a>Kopiér rapporter fra andre arbejdsområder
 
 Når du finder en rapport, du vil bruge i et arbejdsområde eller en app, kan du lave en kopi af den og gemme den i et andet arbejdsområde. Du kan derefter ændre din kopi af rapporten og tilføje eller slette visualiseringer og andre elementer. Du behøver ikke at oprette datamodellen. Den er allerede oprettet for dig. Og det er meget nemmere at redigere en eksisterende rapport end at starte forfra. Når du opretter en app fra dit arbejdsområde, kan du dog nogle gange ikke publicere din kopi af rapporten i appen. Se yderligere oplysninger under [Overvejelser og begrænsninger i artiklen "Brug datasæt på tværs af arbejdsområder"](service-datasets-across-workspaces.md#considerations-and-limitations).
 
@@ -104,7 +104,7 @@ Du kan beslutte, du ikke længere vil have rapporten og dens tilknyttede delte d
     > Hvis du sletter det delte datasæt i dette arbejdsområde, slette datasættet ikke. Der er kun referencen til det, der slettes.
 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
-- [Brug datasæt på tværs af arbejdsområder (prøveversion)](service-datasets-across-workspaces.md)
-- Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- [Brug datasæt på tværs af arbejdsområder](service-datasets-across-workspaces.md)
+- Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

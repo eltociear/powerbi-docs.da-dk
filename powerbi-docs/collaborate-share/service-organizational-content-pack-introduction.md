@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ad60e65406ee69bed4e544486c955765203ddc5c
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: a2c4925e03a0e356ca44556fa7e545459c487dac
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347993"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733387"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion til organisationsindholdspakker i Power BI
 > [!NOTE]
@@ -27,7 +27,7 @@ Distribuerer du jævnligt rapporter via mail til dit team? Prøv dette i stedet:
 
 Oprettelse af indholdspakker adskiller sig fra deling af dashboards eller samarbejde om dem i et arbejdsområde. Læs [Hvordan kan jeg samarbejde på og dele dashboards og rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) for at finde det bedste valg til din situation. 
 
-I AppSource kan du gennemse eller søge efter indholdspakker, der er publiceret til hele organisationen, til distribution eller sikkerhedsgrupper og til [Office 365-grupper, du er medlem af](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). Hvis du ikke er medlem af en bestemt gruppe, kan du ikke se indholdspakker, som er delt med denne gruppe. Alle medlemmer af gruppen har samme skrivebeskyttede adgang til indholdspakkens data, rapporter, projektmapper og dashboards (medmindre det er en SSAS-datakilde (SQL Server Analysis Services), hvorved dine rettigheder nedarves sammen med datakilden).
+I AppSource kan du gennemse eller søge efter indholdspakker, der er publiceret til hele organisationen, til distribution eller sikkerhedsgrupper og til [Microsoft 365-grupper, du er medlem af](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). Hvis du ikke er medlem af en bestemt gruppe, kan du ikke se indholdspakker, som er delt med denne gruppe. Alle medlemmer af gruppen har samme skrivebeskyttede adgang til indholdspakkens data, rapporter, projektmapper og dashboards (medmindre det er en SSAS-datakilde (SQL Server Analysis Services), hvorved dine rettigheder nedarves sammen med datakilden).
 
 Disse dashboards, rapporter og Excel-projektmapper er skrivebeskyttede, men du kan kopiere og bruge de dashboards og rapporter som udgangspunkt for at oprette din egen personligt tilpassede version af indholdspakken.
 
@@ -71,7 +71,7 @@ Livscyklus ser noget nær således ud:
 ## <a name="data-security"></a>Datasikkerhed
 Alle medlemmer af distributionsgruppen har de samme tilladelser til dataene som vedkommende, der har oprettet indholdspakken. Den eneste undtagelse er tabellariske SSAS-datasæt (SQL Server Analysis Services) i det lokale miljø. Fordi rapporter og dashboards opretter direkte forbindelse til SSAS-modellen i det lokale miljø, bruges legitimationsoplysningerne for hvert enkelte medlem af distributionsgruppen til at bestemme, hvilke data de kan få adgang til.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 * [Opret og publicer en organisationsindholdspakke](service-organizational-content-pack-create-and-publish.md)
 * [Opret og distribuer en app i Power BI](service-create-distribute-apps.md) 
 * [Grundlæggende begreber for designere i Power BI-tjenesten](../fundamentals/service-basic-concepts.md)

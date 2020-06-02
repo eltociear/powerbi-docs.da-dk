@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: tessa
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/28/2020
+ms.date: 05/20/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 49e4653152e8981222d3a2589781546eb25bcd0e
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 01f2d8add417b1d1d37ef043ccb3c48c2609162d
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273011"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83813594"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Eksportér de data, der blev brugt til at oprette en visualisering
 
@@ -30,7 +30,7 @@ Hvis du har tilladelser til dataene, kan du se og eksportere de data, Power BI b
 
 ## <a name="viewing-and-exporting-data"></a>Visning og eksport af data
 
-Hvis du gerne vil have vist de data, der bruges til at oprette en visualisering, [kan du få vist de pågældende data i Power BI](service-reports-show-data.md). Du kan også eksportere disse data til Excel som en *.xlsx*- eller *.csv*-fil. Indstillingen for eksport af data kræver en Pro- eller Premium-licens samt redigeringstilladelser til datasættet og rapporten. <!--If you have access to the dashboard or report but the data is classified as *highly confidential*, Power BI will not allow you to export the data.-->
+Hvis du gerne vil have vist de data, der bruges til at oprette en visualisering, [kan du få vist de pågældende data i Power BI](service-reports-show-data.md). Du kan også eksportere disse data til Excel som en *.xlsx*- eller *.csv*-fil. Indstillingen for eksport af data kræver en Pro- eller Premium-licens samt redigeringstilladelser til datasættet og rapporten. Hvis du har adgang til dashboardet eller rapporten, men dataene er klassificeret som *yderst fortrolige*, kan du ikke eksportere dataene med Power BI.
 
 Se med, når Will eksporterer dataene fra en af visualiseringerne i hans rapport, gemmer dem som en *.xlsx*-fil og åbner dem i Excel. Følg derefter den trinvise vejledning under videoen for at prøve det selv. Bemærk, at i denne video bruges en ældre version af Power BI.
 
@@ -244,7 +244,7 @@ Disse begrænsninger og overvejelser gælder for Power BI Desktop og Power BI-tj
 
 - Når du bruger DirectQuery, kan Power BI maks. eksportere 16 MB dekomprimerede data. Det kan være et utilsigtet resultat, hvis du eksporterer mindre end det maksimale antal rækker på 150.000. Dette er sandsynligt, hvis:
 
-    - Der er mange kolonner.
+    - Der er for mange kolonner. Prøv at reducere antallet af kolonner og eksportere igen.
 
     - Der er data, som er vanskelige at komprimere.
 

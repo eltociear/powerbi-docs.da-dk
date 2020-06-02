@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 05/07/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7a1922dabc267249dc4ae419f295d2c05e30d5fd
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: faa4c567af6cf27ea852f17a2ba3a11e4f651dc3
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83146163"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733525"
 ---
 # <a name="upgrade-classic-workspaces-to-the-new-workspaces-in-power-bi"></a>Opgrader klassiske arbejdsområder til de nye arbejdsområder i Power BI
 
-I denne artikel forklares det, hvordan du opgraderer eller *overfører* et klassisk arbejdsområde til den nye arbejdsområdeoplevelse. Du kan opgradere et hvilket som helst klassisk arbejdsområde. De nye arbejdsområder har mere detaljerede arbejdsområderoller, så du bedre kan administrere adgang til indhold. Du har også større fleksibilitet i forbindelse med administration af opgraderede arbejdsområder, da de er mere løst forbundet med deres oprindelige Office 365-gruppe. Få mere at vide [om den nye arbejdsområdeoplevelse](service-new-workspaces.md). 
+I denne artikel forklares det, hvordan du opgraderer eller *overfører* et klassisk arbejdsområde til den nye arbejdsområdeoplevelse. Du kan opgradere et hvilket som helst klassisk arbejdsområde. De nye arbejdsområder har mere detaljerede arbejdsområderoller, så du bedre kan administrere adgang til indhold. Du har også større fleksibilitet i forbindelse med administration af opgraderede arbejdsområder, da de er mere løst forbundet med deres oprindelige Microsoft 365-gruppe. Få mere at vide [om den nye arbejdsområdeoplevelse](service-new-workspaces.md).
 
 >[!NOTE]
 >Opgradering af et arbejdsområde er tilgængelig som en offentlig prøveversion. 
@@ -36,7 +36,7 @@ Du skal gøre flere ting *efter* opgraderingen. Det er bedst at planlægge dem, 
 
 ## <a name="upgrade-a-classic-workspace"></a>Opgrader et klassisk arbejdsområde
 
-Enhver arbejdsområdeadministrator kan opgradere arbejdsområdet. Hvis du vil være administrator af et klassisk arbejdsområde, skal du være ejer af den underliggende Office 365-gruppe. Hvis du vil opgradere et arbejdsområde, skal du følge disse trin:
+Enhver arbejdsområdeadministrator kan opgradere arbejdsområdet. Hvis du vil være administrator af et klassisk arbejdsområde, skal du være ejer af den underliggende Microsoft 365-gruppe. Hvis du vil opgradere et arbejdsområde, skal du følge disse trin:
 
 1. Vælg **Flere indstillinger** ( **...** ) > **Flere indstillinger** på listen over arbejdsområder.
 
@@ -64,7 +64,7 @@ Brugere, der aktivt bruger arbejdsområdet, bliver bedt om at opdatere deres bro
 
 - URL-adresserne og id'erne for dit arbejdsområde, indholdet i det og den app, der er publiceret fra arbejdsområdet, ændres ikke. Indhold fra indholdspakker, der er installeret i dit arbejdsområde, håndteres separat. Se [Indholdspakker under opgradering](#content-packs-during-upgrade) i denne artikel for at få flere oplysninger.
 - Indholdspakker understøttes ikke i den nye arbejdsområdeoplevelse. Læs afsnittene om [publicerede indholdspakker](#published-content-packs) og [installerede indholdspakker](#installed-content-packs) for at få mere at vide om, hvordan de skal håndteres under opgraderingen. Vi anbefaler, at du sletter indholdspakker, der er installeret eller publiceret i arbejdsområdet, før du opgraderer.
-- Office 365-gruppen til dit klassiske arbejdsområde påvirkes ikke af opgraderingen af arbejdsområdet i Power BI. Alle teams, SharePoint-websteder, postkasser og andre ressourcer, der administreres af Office 365, ændres ikke. De forbliver intakte, når du opgraderer dit Power BI-arbejdsområde. Office 365-gruppen findes som før.
+- Microsoft 365-gruppen til dit klassiske arbejdsområde påvirkes ikke af opgraderingen af arbejdsområdet i Power BI. Alle teams, SharePoint-websteder, postkasser og andre ressourcer, der administreres af Microsoft 365, ændres ikke. De forbliver intakte, når du opgraderer dit Power BI-arbejdsområde. Microsoft 365-gruppen findes som før.
 - Den måde, dit arbejdsområde sikres på efter opgraderingen, er ændret. Se afsnittet [Tilladelser efter opgradering](#permissions-after-upgrade) for at få flere oplysninger.
 - Der er mulighed for at **gå tilbage til et klassisk arbejdsområde**, hvis du har brug for det. Der er dog visse aspekter af dit arbejdsområde, der ikke gendannes helt, som de var, før de blev opgraderet. Hvis du begynder at bruge funktioner, der kun fungerer i den nye arbejdsområdeoplevelse, kan du ikke gå tilbage. Muligheden for at gå tilbage er tilgængelig i 30 dage, efter at du har opgraderet.
 
@@ -74,26 +74,26 @@ Vælg **Adgang** på menulinjen øverst på listen over arbejdsområder for at g
 
 ![Adgang på menulinjen](media/service-upgrade-workspaces/power-bi-workspace-access-menu-bar.png)
 
-Alle ejere af Office 365-grupper føjes individuelt til rollen Administrator for det opgraderede arbejdsområde. Selve Office 365-gruppen føjes til en arbejdsområderolle. Den rolle, som den føjes til, afhænger af, om det klassiske arbejdsområde er *skrivebeskyttet* eller *i læse/skrivetilstand*:
+Alle ejere af Microsoft 365-grupper føjes individuelt til rollen Administrator for det opgraderede arbejdsområde. Selve Microsoft 365-gruppen føjes til en arbejdsområderolle. Den rolle, som den føjes til, afhænger af, om det klassiske arbejdsområde er *skrivebeskyttet* eller *i læse/skrivetilstand*:
 
-- Når arbejdsområdet er indstillet til **Medlemmer kan redigere Power BI-indhold**, føjes Office 365-gruppen til listen med arbejdsområdets adgangsliste med rollen **Medlem** efter opgraderingen.
-- Når arbejdsområdet er indstillet til **Medlemmer kan kun læse Power BI-indhold**, føjes Office 365-gruppen til listen med arbejdsområdets adgangsliste med rollen **Seer** efter opgraderingen.
+- Når arbejdsområdet er indstillet til **Medlemmer kan redigere Power BI-indhold**, føjes Microsoft 365-gruppen til listen med arbejdsområdets adgangsliste med rollen **Medlem** efter opgraderingen.
+- Når arbejdsområdet er indstillet til **Medlemmer kan kun læse Power BI-indhold**, føjes Microsoft 365-gruppen til listen med arbejdsområdets adgangsliste med rollen **Seer** efter opgraderingen.
 
-Da Office 365-gruppen har fået tildelt en rolle i arbejdsområdet, har alle brugere, der føjes til Office 365-gruppen efter opgraderingen, den pågældende rolle i arbejdsområdet. Men hvis du føjer nye ejere til Office 365-gruppen efter opgraderingen, har de ikke rollen Administrator i arbejdsområdet.
+Da Microsoft 365-gruppen har fået tildelt en rolle i arbejdsområdet, har alle brugere, der føjes til Microsoft 365-gruppen efter opgraderingen, den pågældende rolle i arbejdsområdet. Men hvis du føjer nye ejere til Microsoft 365-gruppen efter opgraderingen, har de ikke rollen Administrator i arbejdsområdet.
 
 
 ### <a name="differences-in-roles-before-and-after-upgrade"></a>Forskelle i roller før og efter opgradering
 
-Arbejdsområderoller er forskellige i det klassiske og det nye arbejdsområde. Den nye arbejdsområdeoplevelse giver dig mulighed for at tildele arbejdsområderoller til Office 365-grupper, sikkerhedsgrupper og distributionslister.
+Arbejdsområderoller er forskellige i det klassiske og det nye arbejdsområde. Den nye arbejdsområdeoplevelse giver dig mulighed for at tildele arbejdsområderoller til Microsoft 365-grupper, sikkerhedsgrupper og distributionslister.
 
 - **Medlemmer** kan dele individuelle elementer og give adgang til hele arbejdsområdet via rollerne Medlem, Bidragyder eller Seer
 - **Seere** kan kun få vist indhold og kan ikke eksportere underliggende data eller analysere i Excel i forbindelse med nogen arbejdsområdedatasæt, medmindre de har tilladelsen Opret.
 
 Alle brugere, der har adgang til elementer i arbejdsområdet via deling eller apptilladelse, har fortsat adgang til disse elementer. Alle, der har adgang til arbejdsområdet, har også adgang til den app, der er publiceret fra arbejdsområdet. Disse brugere vises ikke på appens adgangsliste.
 
-Det anbefales, at du evaluerer, om du vil bruge den nye Bidragyder-rolle. Når du har opgraderet, kan du ændre Office 365-gruppen, så den har rollen Bidragyder i ruden Adgang.
+Det anbefales, at du evaluerer, om du vil bruge den nye Bidragyder-rolle. Når du har opgraderet, kan du ændre Microsoft 365-gruppen, så den har rollen Bidragyder i ruden Adgang.
 
-Efter opgraderingen kan du overveje at oprette en sikkerheds- eller Office 365-gruppe eller en distributionsliste til arbejdsområdeadministratorer i stedet for at administrere adgang via rolletildelinger til individuelle brugere.
+Efter opgraderingen kan du overveje at oprette en sikkerheds- eller Microsoft 365-gruppe eller en distributionsliste til arbejdsområdeadministratorer i stedet for at administrere adgang via rolletildelinger til individuelle brugere.
 
 Læs mere om [roller i de nye arbejdsområder](service-new-workspaces.md#roles-in-the-new-workspaces).
 
@@ -105,7 +105,7 @@ Hvis arbejdsområdet er i den delte kapacitet, skal brugere med rollen Seer ogs�
 
 ## <a name="other-new-workspace-features"></a>Andre nye funktioner i arbejdsområdet
 
-Den nye arbejdsområdeoplevelse har funktioner, som de klassiske arbejdsområder ikke har. Én forskel er muligheden for at angive en liste over kontakter, der ikke er arbejdsområdeadministratorer eller -ejere. Én lighed er, at den stadig har forbindelse til Office 365-gruppens SharePoint-dokumentbiblioteket. 
+Den nye arbejdsområdeoplevelse har funktioner, som de klassiske arbejdsområder ikke har. Én forskel er muligheden for at angive en liste over kontakter, der ikke er arbejdsområdeadministratorer eller -ejere. Én lighed er, at den stadig har forbindelse til Microsoft 365-gruppens SharePoint-dokumentbiblioteket.
 
 ### <a name="modify-the-contact-list"></a>Modificer listen over kontakter
 
@@ -113,13 +113,13 @@ Den nye arbejdsområdeoplevelse har funktioner, som de klassiske arbejdsområder
 
     ![Indstillinger for arbejdsområde](media/service-upgrade-workspaces/power-bi-new-workspace-settings.png)
 
-2. Under **Avanceret**er arbejdsområdet **Kontaktliste** konfigureret til at være den Office 365-gruppe, som arbejdsområdet blev opgraderet fra. Du kan føje flere brugere eller grupper til listen over kontakter eller ændre den til arbejdsområdeadministratorer.
+2. Under **Avanceret**er arbejdsområdet **Kontaktliste** konfigureret til at være den Microsoft 365-gruppe, som arbejdsområdet blev opgraderet fra. Du kan føje flere brugere eller grupper til listen over kontakter eller ændre den til arbejdsområdeadministratorer.
 
     ![Kontaktliste](media/service-upgrade-workspaces/power-bi-contact-list-workspace.png)
 
 ### <a name="the-workspace-onedrive"></a>OneDrive for arbejdsområdet 
 
-Efter opgraderingen har **OneDrive** for arbejdsområdet forbindelse til SharePoint-dokumentbiblioteket for Office 365-gruppen. Dette dokumentbibliotek vises som indstillingen **OneDrive** i oplevelsen **Hent data > Filer** visning. Vær opmærksom på, at ikke alle brugere af arbejdsområdet har tilladelse til dette dokumentbibliotek, hvis de ikke er i Office 365-gruppen.
+Efter opgraderingen har **OneDrive** for arbejdsområdet forbindelse til SharePoint-dokumentbiblioteket for Microsoft 365-gruppen. Dette dokumentbibliotek vises som indstillingen **OneDrive** i oplevelsen **Hent data > Filer** visning. Vær opmærksom på, at ikke alle brugere af arbejdsområdet har tilladelse til dette dokumentbibliotek, hvis de ikke er i Microsoft 365-gruppen.
 
 ## <a name="content-packs-during-upgrade"></a>Indholdspakker under opgradering
 
@@ -142,9 +142,9 @@ Der er dog nogle vigtige ændringer:
 
 ## <a name="go-back-to-a-classic-workspace"></a>Gå tilbage til et klassisk arbejdsområde
 
-Som en del af opgraderingsoplevelsen har du mulighed for at gå tilbage til et klassisk arbejdsområde i 30 dage efter opgraderingen. Denne egenskab gendanner tilknytningen mellem arbejdsområdeindhold og den oprindelige Office 365-gruppe. Den er tilgængelig, hvis organisationen støder på store problemer under brugen af den nye arbejdsområdefunktionalitet. Der er dog begrænsninger. Læs [Overvejelser i forbindelse med at skifte tilbage til klassisk](#considerations-for-switching-back-to-classic) i denne artikel først.
+Som en del af opgraderingsoplevelsen har du mulighed for at gå tilbage til et klassisk arbejdsområde i 30 dage efter opgraderingen. Denne egenskab gendanner tilknytningen mellem arbejdsområdeindhold og den oprindelige Microsoft 365-gruppe. Den er tilgængelig, hvis organisationen støder på store problemer under brugen af den nye arbejdsområdefunktionalitet. Der er dog begrænsninger. Læs [Overvejelser i forbindelse med at skifte tilbage til klassisk](#considerations-for-switching-back-to-classic) i denne artikel først.
 
-Hvis du vil gå tilbage, skal du være ejer af den Office 365-gruppe, arbejdsområdet var knyttet til, inden det blev opgraderet. Følg disse trin:
+Hvis du vil gå tilbage, skal du være ejer af den Microsoft 365-gruppe, arbejdsområdet var knyttet til, inden det blev opgraderet. Følg disse trin:
 
 1. Vælg **Flere indstillinger** ( **...** ) > **Indstillinger for arbejdsområde** på listen over arbejdsområder.
 
@@ -166,7 +166,7 @@ Hvis du vil gå tilbage, skal du være ejer af den Office 365-gruppe, arbejdsomr
 
 Du kan ikke skifte tilbage, hvis et af følgende udsagn om arbejdsområdet er sandt:
 
-- Office 365-gruppen blev slettet.
+- Microsoft 365-gruppen blev slettet.
 - Det er mere end 30 dage siden, du har opgraderet.
 - Datasæt i arbejdsområdet bruges af rapporter eller dashboards i andre arbejdsområder. Hvordan opstår denne situation? Lad os sige, at du har udgivet en indholdspakke fra arbejdsområdet før opgraderingen, og at nogen har installeret indholdspakken i et andet arbejdsområde. Umiddelbart efter opgraderingen bruges datasættene af rapporter og dashboards i den pågældende indholdspakke.
 - Arbejdsområdet er en del af en administrationspipeline for en programlivscyklus.
@@ -176,17 +176,17 @@ Du kan ikke skifte tilbage, hvis et af følgende udsagn om arbejdsområdet er sa
 
 Når du skifter tilbage til et klassisk arbejdsområde, gendanner du ikke en nøjagtig kopi af det oprindelige arbejdsområde. Følgende ændringer bliver foretaget:
 
-- Tilladelser til arbejdsområdet angives af den Office 365-gruppe, som det opgraderede arbejdsområde oprindeligt havde forbindelse til.
-  - Alle administratorer af Office 365-gruppen bliver administratorer af det klassiske arbejdsområde.
-  - Alle medlemmer af Office 365-gruppen bliver medlemmer af det klassiske arbejdsområde. Hvis det klassiske arbejdsområde er indstillet til **Medlemmer kan kun læse Power BI-indhold**. Denne indstilling gendannes.
-  - Alle brugere eller brugergrupper, der er føjet til arbejdsområdet, efter at opgraderingen er fuldført (uden for Office 365-gruppen), mister adgangen til arbejdsområdet. Føj dem til Office 365-gruppen for at give dem adgang. Bemærk, at Office 365-grupper ikke tillader indlejring af sikkerheds-eller distributionsgrupper i medlemskabet.
+- Tilladelser til arbejdsområdet angives af den Microsoft 365-gruppe, som det opgraderede arbejdsområde oprindeligt havde forbindelse til.
+  - Alle administratorer af Microsoft 365-gruppen bliver administratorer af det klassiske arbejdsområde.
+  - Alle medlemmer af Microsoft 365-gruppen bliver medlemmer af det klassiske arbejdsområde. Hvis det klassiske arbejdsområde er indstillet til **Medlemmer kan kun læse Power BI-indhold**. Denne indstilling gendannes.
+  - Alle brugere eller brugergrupper, der er føjet til arbejdsområdet, efter at opgraderingen er fuldført (uden for Microsoft 365-gruppen), mister adgangen til arbejdsområdet. Føj dem til Microsoft 365-gruppen for at give dem adgang. Bemærk, at Microsoft 365-grupper ikke tillader indlejring af sikkerheds-eller distributionsgrupper i medlemskabet.
   - Brugere, der har fået adgang til appen for arbejdsområdet, har stadig adgang til appen.
   - Brugere, der har fået adgang til elementer i arbejdsområdet via deling, har stadig adgang til dem.
 - Indholdspakker, der blev publiceret fra det klassiske arbejdsområde før opgraderingen, gendannes ikke.
 - Indholdspakker, der blev installeret i det klassiske arbejdsområde før opgraderingen, gendannes ikke.
 - Abonnementer, der er oprettet af brugere i arbejdsområdet efter opgradering, fjernes. Abonnementer, der fandtes før opgraderingen, fungerer fortsat som forventet.
 - Databeskeder bevares ikke. De fjernes.
-- Hvis du har omdøbt arbejdsområdet efter opgraderingen, gendannes navnet på arbejdsområdet, så det svarer til navnet på Office 365-gruppen.
+- Hvis du har omdøbt arbejdsområdet efter opgraderingen, gendannes navnet på arbejdsområdet, så det svarer til navnet på Microsoft 365-gruppen.
 - Igangværende handlinger, f. eks. opdateringer, påvirkes ikke af opgraderingen af arbejdsområdet.
 
 
@@ -195,9 +195,9 @@ Når du skifter tilbage til et klassisk arbejdsområde, gendanner du ikke en nø
 Nogle organisationer ønsker at flytte mange eller alle arbejdsområder til den nye arbejdsområdeoplevelse. Værktøjet til opgradering af arbejdsområde gør det muligt for arbejdsområdeadministratorer at opgradere. For organisationer, der vil administrere denne, kan de udføre følgende trin.
 
 1. Listen over arbejdsområder i Power BI-administrationsportalen og den tilsvarende API indeholder en liste over alle arbejdsområder i Power BI. Klassiske arbejdsområder vises som typen Gruppe på listen.
-2. Du skal samarbejde med de enkelte Office 365-gruppeejere eller Office 365-administratoren for at få dem til at opgradere arbejdsområdet. Hvis du vil opgradere arbejdsområdet, skal du være ejer af gruppen.
+2. Du skal samarbejde med de enkelte gruppeejere eller din administrator i Microsoft 365 for at få dem til at opgradere arbejdsområdet. Hvis du vil opgradere arbejdsområdet, skal du være ejer af gruppen.
 
-Funktionen til opgradering af arbejdsområdet indeholder ikke værktøjer til masseopgradering eller programmatisk opgradering. Derudover vises nye Office 365-grupper, der er oprettet i din organisation, stadig i Power BI. 
+Funktionen til opgradering af arbejdsområdet indeholder ikke værktøjer til masseopgradering eller programmatisk opgradering. Derudover vises nye Microsoft 365-grupper, der er oprettet i din organisation, stadig i Power BI.
    
    
 ## <a name="known-issues"></a>Kendte problemer

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b0ee72fdfdf504537073b0de22e5c386ca2572ad
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 8e991a8696ac35ed0a7d4b448bb4dd83d9a19c42
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83327938"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793454"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming i realtid i Power BI
 Med streaming i realtid med Power BI kan du streame data og opdatere dashboards i realtid. Alle visuelle elementer eller dashboards, der kan oprettes i Power BI, kan også oprettes til at vise og opdatere data og visuelle elementer i realtid. Enhederne og kilderne til streamingdata kan være sensorer på fabrikker, sociale medier, forbrugsdata for tjenester og alt andet, hvorfra tidsfølsomme data kan indsamles eller overføres.
@@ -52,7 +52,7 @@ Den eneste måde at visualisere et streamingdatasæt er at tilføje et felt og b
 I praksis bruges streamingdatasæt og deres tilhørende streamingvisualiseringer bedst i situationer, hvor det er vigtigt at minimere ventetiden mellem det tidspunkt, hvor data pushoverføres, og hvor de visualiseres. Det er desuden bedste praksis, at dataene pushoverføres i et format, der kan visualiseres, som det er, uden nogen yderligere akkumuleringer. Eksempler på data, der er klar, som de er, omfatter temperaturer og forudberegnede gennemsnit.
 
 ### <a name="pubnub-streaming-dataset"></a>PubNub-streamingdatasæt
-Med et **PubNub**-streamingdatasæt bruger Power BI-webklienten PubNub SDK til at læse en eksisterende PubNub-datastream, og der lagres ingen data af Power BI-tjenesten. Da dette kald foretages direkte fra webklienten, skal du hvidliste trafik til PubNub, hvis du kun tillader hvidlistet udgående trafik fra dit netværk. Se vejledningen i supportartiklen om [angivelse af udgående trafik for PubNub på en hvidliste](https://support.pubnub.com/support/solutions/articles/14000043522-can-i-whitelist-ips-for-pubnub-traffic-).
+Med et **PubNub**-streamingdatasæt bruger Power BI-webklienten PubNub SDK til at læse en eksisterende PubNub-datastream, og der lagres ingen data af Power BI-tjenesten. Da dette kald foretages direkte fra webklienten, skal du føje trafik til PubNub til listen som tilladt, hvis du kun tillader udgående trafik, der er føjet til hvidlisten, fra dit netværk. Se vejledningen i supportartiklen om [angivelse af udgående trafik for PubNub på en hvidliste](https://support.pubnub.com/support/solutions/articles/14000043522-can-i-whitelist-ips-for-pubnub-traffic-).
 
 Som det også gælder for **streamingdatasæt** er der ingen underliggende database i Power BI for **PubNub-streamingdatasættet**, så du kan ikke oprette rapport-visuals i forhold til de data, der kommer ind, og kan ikke drage fordel af rapportfunktioner som filtrering, Power BI-visuals osv. **PubNub-streamingdatasættet** kan også kun visualiseres ved at føje et felt til dashboardet og konfigurere en PubNub-datastream som kilden.
 
@@ -215,7 +215,7 @@ Streamingdatasæt er udviklet til at vise de nyeste data. Du kan bruge streaming
 Til pushdatasæt kan du prøve at oprette en rapportvisualisering med det sidste N-filter, forudsat at du har et tidsstempel i skemaet.
 
 #### <a name="can-i-connect-to-push-or-streaming-datasets-in-power-bi-desktop"></a>Kan jeg oprette forbindelse til push- eller streamingdatasæt i Power BI Desktop?
-Dette er desværre ikke muligt på nuværende tidspunkt.
+Push- og hybride datasæt kan være direkte forbundet i Power BI Desktop, men der kan ikke oprettes forbindelse til andre streaming-datasæt i Power BI Desktop.
 
 #### <a name="given-the-previous-question-how-can-i-do-any-modeling-on-real-time-datasets"></a>I lyset af det forrige spørgsmål, hvordan udfører jeg så nogen udformning af realtidsdatasæt?
 Udformning er ikke muligt på et streamingdatasæt, da dataene ikke er gemt permanent. Til pushdatasæt kan du bruge Opdater datasættet/tabel REST API'er for at tilføje målinger og relationer. 

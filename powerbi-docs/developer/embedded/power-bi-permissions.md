@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 10/01/2018
-ms.openlocfilehash: 51c43a19613381d39e0397864e55baed2022663c
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.date: 05/19/2020
+ms.openlocfilehash: 7d33a8ee54595870850accc52f4aabb82d195b62
+ms.sourcegitcommit: 4a975334d5b94144f4570a6435574d4484b77af2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79491358"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83838508"
 ---
 # <a name="power-bi-permissions"></a>Power BI-tilladelser
 
@@ -23,20 +23,22 @@ Med Power BI-tilladelser får et program mulighed for at foretage visse handling
 
 | Vist navn | Beskrivelse | Værdi for omfang |
 | --- | --- | --- |
-| Få vist alle datasæt |Appen kan få vist alle datasæt for den bruger, der er logget på, samt datasæt, som brugeren har adgang til. |Dataset.Read.All |
+| Se alle datasæt |Appen kan få vist alle datasæt for den bruger, der er logget på, samt datasæt, som brugeren har adgang til. |Dataset.Read.All |
 | Læs og skriv alle datasæt |Appen kan få vist og skrive til alle datasæt for den bruger, der er logget på, samt datasæt, som brugeren har adgang til. |Dataset.ReadWrite.All |
 | Føj data til en brugers datasæt |Giver en app adgang til at tilføje eller slette rækker i en brugers datasæt. Denne tilladelse giver ikke appen adgangen til brugerens data. |Data.Alter_Any |
 | Opret indhold |Appen kan automatisk oprette indhold og datasæt for en bruger. |Content.Create |
-| Få vist brugergrupper |Appen kan få vist alle grupper, som den bruger, der er logget på, tilhører. |Group.Read |
+| Se brugergrupper |Appen kan få vist alle grupper, som den bruger, der er logget på, tilhører. |Group.Read |
 | Se alle grupper |Appen kan få vist alle grupper, som den bruger, der er logget på, tilhører. |Group.Read |
 | Læs og skriv alle grupper |Appen kan få vist og skrive til alle grupper for den bruger, der er logget på, samt grupper, som brugeren har adgang til. |Group.ReadWrite.All |
 | Vis alle dashboards |Appen kan få vist alle dashboards for den bruger, der er logget på, samt dashboards, som brugeren har adgang til. |Dashboard.Read.All |
+| Læs og skriv til alle dashboards | Appen kan få vist og redigere alle dashboards for den bruger, der er logget på, samt alle dashboards, som brugeren har adgang til. | Dashboard.ReadWrite.All |
 | Vis alle rapporter |Appen kan få vist alle rapporter for den bruger, der er logget på, samt rapporter, som brugeren har adgang til. Appen kan også se dataene i rapporter samt strukturen. |Report.Read.All |
 | Læs og skriv alle rapporter |Appen kan få vist og skrive til alle rapporter for den bruger, der er logget på, samt rapporter, som brugeren har adgang til. Det giver ikke ret til at oprette en ny rapport. |Report.ReadWrite.All |
 | Læs og skriv alle kapaciteter |Appen kan få vist og skrive til alle kapaciteter for den bruger, der er logget på, samt kapaciteter, som brugeren har adgang til. Det giver ikke ret til at oprette en ny kapacitet. |Capacities.ReadWrite.All |
 | Læs alle kapaciteter |Appen kan få vist og skrive til alle kapaciteter for den bruger, der er logget på, samt kapaciteter, som brugeren har adgang til. Det giver ikke ret til at oprette en ny kapacitet. |Capacities.Read.All |
 | Læs og skriv alt indhold i lejeren |Appen kan få vist og skrive til alle artefakter, f.eks. grupper, rapporter, dashboards og datasæt i Power BI. Forudsat at den bruger, der er logget på, er Power BI-tjenesteadministrator. |Tenant.ReadWrite.All |
-| Vis alt indhold i lejeren |Appen kan få vist til alle artefakter, f.eks. grupper, rapporter, dashboards og datasæt i Power BI. Forudsat at den bruger, der er logget på, er Power BI-tjenesteadministrator. |Tenant.Read.All |
+| Vis alt indhold i lejeren |Hvis den bruger, der er logget på, er Power BI-tjenesteadministrator, kan appen få vist og skrive til alle artefakter,&mdash;herunder grupper, rapporter, dashboards og datasæt,&mdash;i Power BI. |Tenant.Read.All |
+| Læs og skriv til alle arbejdsområder | Appen kan få vist og redigere alle arbejdsområder, som den bruger, der er logget på, har adgang til. | Workspace.ReadWrite.All |
 
 Et program kan anmode om tilladelser, når det forsøger at logge på en brugers side for første gang, ved at sende de ønskede tilladelser i parameteren for omfanget i forbindelse med kaldet. Hvis tilladelserne gives, returneres der et adgangstoken til appen, som kan bruges ved fremtidige API-kald. Adgangen kan kun bruges af et bestemt program.
 
@@ -53,4 +55,4 @@ Du kan kalde API'en for at godkende vha. et brugernavn og en adgangskode. Hvis d
 * **Autorisationstoken** – Autorisationstoken bruges til at godkende API-kald på vegne af en anden bruger. De vil være begrænset til et bestemt program. Tokens har en bestemt levetid, og når de udløber, skal de opdateres.
 * **Opdateringstoken** – Når tokens udløber, er der en proces til opdatering af dem.
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).

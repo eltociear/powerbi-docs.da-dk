@@ -1,5 +1,5 @@
 ---
-title: Hvor findes min Power BI-lejer?
+title: Hvor er min Power BI-lejer placeret?
 description: Find ud af, hvor din Power BI-lejer er placeret, og hvordan denne placering markeres. Dette er vigtigt at forstå, da det kan påvirke de interaktioner, du har med tjenesten.
 author: kfollis
 ms.reviewer: ''
@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 4a763b31333004a8cdecda5262967473817bc983
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: a797547562a8968591ca6551f85a56e0da98d680
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83136025"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793271"
 ---
-# <a name="where-is-my-power-bi-tenant-located"></a>Hvor findes min Power BI-lejer?
+# <a name="where-is-my-power-bi-tenant-located"></a>Hvor er min Power BI-lejer placeret?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0fOxaHJPvdM?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -34,7 +34,7 @@ Følg disse trin, for at finde det område din lejer befinder sig i.
 
 ## <a name="how-the-data-region-is-selected"></a>Sådan vælges dataområdet
 
-Dataområdet er baseret på det land, du vælger, når du opretter lejeren. Dette valg gælder for tilmelding til Office 365 og Power BI, da disse oplysninger deles. Hvis dette er en ny lejer, skal du vælge det relevante land på listen, når du tilmelder dig.
+Dataområdet er baseret på det land, du vælger, når du opretter lejeren. Dette valg gælder for tilmelding til Microsoft 365 og Power BI, da disse oplysninger deles. Hvis dette er en ny lejer, skal du vælge det relevante land på listen, når du tilmelder dig.
 
 ![Valg af land](media/service-admin-where-is-my-tenant-located/sign-up-country-selection.png)
 

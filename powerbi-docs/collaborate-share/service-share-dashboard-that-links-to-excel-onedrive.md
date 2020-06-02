@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1cd90c4348c33726cdf171f4948b617498c63a1f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 3fcf15d7179c86b2c6859fe3c5704ac2cf1b9ce5
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348039"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733065"
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>Del et Power BI-dashboard, der linker til en Excel-fil i OneDrive
 I Power BI kan du [oprette forbindelse til Excel-projektmapper på OneDrive for Business](../connect-data/service-excel-workbook-files.md) og fastgøre felter til et dashboard fra den projektmappe. Når du deler det dashboard eller opretter en indholdspakke, der indeholder dette dashboard:
@@ -49,11 +49,11 @@ Når du [publicerer en indholdspakke](service-organizational-content-pack-create
 5. Vælg **Publicer**.
 
 ## <a name="share-a-dashboard-from-a-power-bi-workspace"></a>Del et dashboard fra et arbejdsområde i Power BI
-Deling af et dashboard fra et Power BI-arbejdsområde ligner deling af et dashboard fra dit eget arbejdsområde, bortset fra at filerne er placeret i et Office 365-arbejdsområde i stedet for din private OneDrive for Business. Rediger tilladelserne til Excel-projektmappen, før du deler dashboardet med personer uden for arbejdsområdet.
+Deling af et dashboard fra et Power BI-arbejdsområde ligner deling af et dashboard fra dit eget arbejdsområde, bortset fra at filerne er placeret i et Microsoft 365-arbejdsområde i stedet for din private OneDrive for Business. Rediger tilladelserne til Excel-projektmappen, før du deler dashboardet med personer uden for arbejdsområdet.
 
 ![Del fra OneDrive](media/service-share-dashboard-that-links-to-excel-onedrive/pbi_onedriveshare.png)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 * [Fastgør et felt til et Power BI-dashboard fra Excel](../create-reports/service-dashboard-pin-tile-from-excel.md)
 * [Grundlæggende begreber for designere i Power BI-tjenesten](../fundamentals/service-basic-concepts.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

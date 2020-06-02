@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/11/2020
-ms.openlocfilehash: 66ef36f669b5f34c19f283cf9ebc8be2b12332ec
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.date: 05/17/2020
+ms.openlocfilehash: 1e2426b12bf6205e5ed2fc6cfb0540c67740df7d
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83148658"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83813617"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Kapacitet og SKU'er i integrerede Power BI-analyser
 
@@ -64,74 +64,22 @@ Power BI Premium tilbyder to SKU'er, *P* og *EM*.
 
 ### <a name="which-sku-should-i-use"></a>Hvilken SKU skal jeg bruge?
 
-I denne tabel finder du en oversigt over funktioner, den nødvendige kapacitet og den specifikke SKU, der kræves til hver enkelt. 
+I nedenstående tabel finder du en oversigt over funktioner, den nødvendige kapacitet og det specifikke varenummer, der kræves til hver enkelt.
 
-</br>
-<table>
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<tbody>
-<tr>
-<td style="text-align: center"; colspan="2"><p><b>Funktion</b></p></td>
-<td style="text-align: center">
-<p><b>Power BI Embedded</b></p>
-</td>
-<td style="text-align: center"; colspan="2">
-<p><b>Power BI Premium</b></p>
-</td>
-</tr>
-<tr>
-<td><p><em>Hvad forbruges?</em><p></td>
-<td><p><em>Hvad forbruger?</em><p></td>
-<td style="text-align: center"><p><em>A-SKU'er</br>(Azure)</em></p></td>
-<td style="text-align: center"><p><em>EM-SKU'er</br>(Office)</em></p></td>
-<td style="text-align: center"><p><em>P-SKU'er</br>(Office)</em></p></td>
-</tr>
-<tr>
-<td>Integrer artefakter fra et Power BI-arbejdsområde</td>
-<td>
-</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td rowspan="2">Power BI-rapporter</td>
-<td>Et integreret program til din organisation</br>(brugeren ejer data)</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td>Et integreret program til dine kunder</br>(appen ejer data)</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td rowspan="3">Power BI-indhold<br>(med en gratis Power BI-licens)</td>
-<td>Power BI-tjenesten</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td>Power BI – Mobil</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td>MS Office-apps</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-</tbody>
-</table>
+I denne tabel refererer en brugerdefineret app til en webapp, der er oprettet ved hjælp af integreret analyse. Når du integrerer til en brugerdefineret webapp som udvikler (ved hjælp af JavaScript, .NET SDK'er eller REST API'er), har du mulighed for at styre og tilpasse UX. Denne mulighed er ikke tilgængelig, når du bruger andre indstillinger for integrering, f.eks. Power BI-tjeneste og Power BI – Mobil.
+
+
+|         |         |         |
+|---------|---------|---------|
+|**Scenarie**</br><p></p>|**Azure**</br>(A-varenummer)|**Office**</br>(P- og EM-varenumre)|
+|[Integrer indhold for dine kunder](embed-sample-for-customers.md)</br>(appen ejer data)     |✔        |✔        |
+|[Integrer til din organisation](embed-sample-for-your-organization.md)</br>(brugeren ejer data)     |✖        |✔         |
+|Microsoft 365-apps</br>(tidligere kaldet Office 365-apps)<ul><li>[Integrer i Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Integrer i SharePoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✖        |✔        |
+|[Sikker URL-integrering](../../collaborate-share/service-embed-secure.md)</br>(integrer fra Power BI-tjenesten)     |✖        |✔        |
+
+>[!NOTE]
+>* Publicering af indhold til arbejdsområdet i en Power BI-app kræver en [Power BI Pro-licens](../../admin/service-admin-purchasing-power-bi-pro.md).
+>* Kun **P-varenummer** tillader gratis Power BI-brugere at bruge Power BI-apps og delt indhold i en Power BI-tjeneste.
 
 ### <a name="capacity-considerations"></a>Kapacitetsovervejelser
 
@@ -147,33 +95,33 @@ I nedenstående tabel vises betalings- og forbrugsovervejelser pr. kapacitet.
 </tr>
 <tr>
 <td><p><strong>Tilbud</strong></p></td>
-<td style="text-align: center;"><p>Azure</p></td>
-<td style="text-align: center;" colspan="2"><p>Office</p></td>
+<td style="text-align: center"><p>Azure</p></td>
+<td style="text-align: center" colspan="2"><p>Office</p></td>
 </tr>
 <tr>
 <td><p><strong>SKU</strong></p></td>
-<td style="text-align: center;"><p>A</p></td>
-<td style="text-align: center;"><p>EM</p></td>
-<td style="text-align: center;"><p>P</p></td>
+<td style="text-align: center"><p>A</p></td>
+<td style="text-align: center"><p>EM</p></td>
+<td style="text-align: center"><p>P</p></td>
 </tr>
 <tr>
 <td><p><strong>Fakturering</strong></td>
-<td style="text-align: center;">Pr. time</td>
-<td style="text-align: center;">Månedligt</td>
-<td style="text-align: center;">Månedligt</td>
+<td style="text-align: center">Pr. time</td>
+<td style="text-align: center">Månedligt</td>
+<td style="text-align: center">Månedligt</td>
 </tr>
 <tr>
 <td><p><strong>Forpligtelse</strong></td>
-<td style="text-align: center;">Ingen</td>
-<td style="text-align: center;">Årligt</td>
-<td style="text-align: center;">Månedligt eller årligt</td>
+<td style="text-align: center">Ingen</td>
+<td style="text-align: center">Årligt</td>
+<td style="text-align: center">Månedligt eller årligt</td>
 </tr>
 <tr>
 <td valign="top"><p><strong>Forbrug</strong></td>
-<td style="text-align: center;">Azure-ressourcer kan:</br>- <a href="azure-pbie-scale-capacity.md">skaleres op eller ned</a></br>- <a href="azure-pbie-pause-start.md">afbrydes midlertidigt og genoptages</a>
-</td>
-<td style="text-align: center;">Integrer i apps og i</br> Microsoft-programmer</td>
-<td style="text-align: center;">Integrer i apps og</br> i Power BI-tjenesten</td>
+<td style="text-align: center">Azure-ressourcer kan:<li><a href="azure-pbie-scale-capacity.md">skaleres op eller ned</a></li><li><a href="azure-pbie-pause-start.md">afbrydes midlertidigt og genoptages</a>
+</td></li>
+<td style="text-align: center">Integrer i apps og i</br> Microsoft-programmer</td>
+<td style="text-align: center">Integrer i apps og</br> i Power BI-tjenesten</td>
 </tr>
 </tbody>
 </table>
@@ -184,7 +132,7 @@ I nedenstående tabel beskrives ressourcerne og begrænsningerne for hver SKU.
 
 | Kapacitetsnoder | V-kerner i alt | Backend-v-kerner | RAM (GB) | Frontend-v-kerner | DirectQuery/direkte forbindelser (pr. sek.) | Parallel opdatering af modeller |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0.5 | 2.5 | 0.5 | 3,75 | 1 |
+| EM1/A1 | 1 | 0,5 | 2.5 | 0,5 | 3,75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7,5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
@@ -194,7 +142,7 @@ I nedenstående tabel beskrives ressourcerne og begrænsningerne for hver SKU.
 | P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 > [!div class="nextstepaction"]
 >[Integrer indhold for dine kunder](embed-sample-for-customers.md)

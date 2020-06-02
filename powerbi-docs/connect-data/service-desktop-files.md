@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5368370cc25e12fdeab333b42a064ec4db66c301
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 8db571d3635ad224c293a4d2ab86f4bcb9197fe0
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347372"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120068"
 ---
 # <a name="get-data-from-power-bi-desktop-files"></a>Hent data fra Power BI Desktop-filer
 ![](media/service-desktop-files/pbid_file_icon.png)
@@ -47,7 +47,9 @@ Når du overfører data til **Power BI Desktop** og opretter nogle få rapporter
    ![](media/service-desktop-files/pbid_find_your_file.png)
 
 ## <a name="publish-a-file-from-power-bi-desktop-to-your-power-bi-site"></a>Publicer en fil fra Power BI Desktop på dit Power BI-websted
-Når du bruger Publicer fra Power BI Desktop fungerer det på samme måde som funktionen Hent Data i Power BI, når du importerer din fil fra et lokalt drev eller opretter forbindelse til den på OneDrive.  Her er en kort vejledning, men du kan se under [Publicer fra Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) for at få mere at vide.
+Brugen af Publicer fra Power BI Desktop fungerer på samme måde som funktionen Hent Data i Power BI, når det gælder import af dine fildata fra et lokalt drev eller oprettelse af forbindelse til dem på OneDrive. Der er dog forskel: Hvis du uploader fra et lokalt drev, skal du opdatere dataene ofte for at sikre, at online og lokale versioner af dataene stemmer overens. 
+
+Her er en kort vejledning, men du kan se under [Publicer fra Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) for at få mere at vide.
 
 1. I Power BI Desktop skal du klikke på **Filer** > **Publicer** > **Publicer på Power BI** eller klikke på **Publicer** på båndet.
    
