@@ -20,7 +20,7 @@
           href: embed-paginated-reports-customers.md
         - name: Integrer indhold for nationale cloudmiljøer
           href: embed-sample-for-customers-national-clouds.md
-    - name: Begreber
+    - name: Koncepter
       items:
         - name: Kapacitet og SKU'er i integrerede Power BI-analyser
           href: embedded-capacity.md
@@ -28,8 +28,6 @@
           href: embedded-capacity-planning.md
         - name: Bedste fremgangsmåder for ydelse
           href: embedded-performance-best-practices.md
-        - name: Tjenesteprincipal
-          href: embed-service-principal.md
         - name: Sikkerhed på rækkeniveau
           href: embedded-row-level-security.md
         - name: Sideinddelte rapporter med sikkerhed på rækkeniveau
@@ -44,6 +42,10 @@
           href: power-bi-permissions.md
     - name: 'Sådan gør du:'
       items:
+        - name: Integrer ved hjælp af en tjenesteprincipal med et certifikat
+          href: embed-service-principal-certificate.md
+        - name: Integrer ved hjælp af en tjenesteprincipal med en apphemmelighed
+          href: embed-service-principal.md
         - name: Integrer fra en app
           href: embed-from-apps.md
         - name: Eksportér rapport til fil
