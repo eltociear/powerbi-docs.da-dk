@@ -6,15 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/07/2020
+ms.date: 05/27/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 9f94d6a1b99bce40d3f901dd71877da3f6b236af
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: f4f0bc5de0480748344fa029c774c4d262facc08
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83792893"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159691"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til US Government-kunder
 Denne artikel er for kunder inden for de amerikanske offentlige myndigheder, der udruller Power BI som en del af en Microsoft 365-plan til offentlige myndigheder. Planer til offentlige myndigheder er designet til at opfylde de særlige behov hos organisationer, der overholder amerikanske standarder og sikkerhedsstandarder. Power BI-tjenesten, der er udviklet til US Government-kunder, adskiller sig fra den kommercielle version af Power BI-tjenesten. Disse funktionsforskelle og egenskaber er beskrevet i følgende afsnit.
@@ -97,7 +98,7 @@ Der er visse forskelle mellem offentlige planer og kommercielle planer for at im
 |Dataadministration|Dataadministrationsgateway|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Datakryptering i Azure SQL Database|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Datakryptering i Blob Storage for Power BI|Tilgængelig|Tilgængelig|Tilgængelig|
-|Integration på tværs af produkter|Integrer i SharePoint Online ved hjælp af Power BI-webdelen|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
+|Integration på tværs af produkter|Integrer i SharePoint Online ved hjælp af Power BI-webdelen|Tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
 |  |Integrer i SharePoint Online ved hjælp af Embed-webdelen|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Dataflows og AI-funktioner|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
 |  |Power Automate-forbindelse til datadrevne underretninger|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
