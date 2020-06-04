@@ -56,8 +56,8 @@ Fremgangsmåden til fremhævning af et dashboard og en rapport er den samme.
 
 Nu kan alle, der har adgang til denne app, også se den i afsnittet **Udvalgte** på **startsiden**.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Hvordan kan jeg samarbejde på og dele dashboards og rapporter?](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Administrer fremhævet indhold i administrationsportalen](../admin/service-admin-portal.md#manage-featured-content)
-* Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

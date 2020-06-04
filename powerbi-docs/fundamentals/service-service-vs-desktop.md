@@ -56,7 +56,7 @@ Når du har oprettet dine rapporter, kan du gemme dem i et *arbejdsområde* i **
 
 Dataflows hjælper virksomheder med at samle data fra forskellige kilder og forberede dem til modellering. Analytikere kan nemt oprette dataflows ved hjælp af velkendte værktøjer til selvbetjening. Analytikere bruger dataflows til at indsamle, transformere, integrere og forbedre big data ved at definere datakildeforbindelser, ETL-logik, opdatere tidsplaner og meget mere. Læs mere om [selvbetjent dataforberedelse med dataflows](../transform-model/service-dataflows-overview.md).
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 

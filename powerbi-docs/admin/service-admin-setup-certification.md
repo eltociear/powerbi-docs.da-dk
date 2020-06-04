@@ -39,9 +39,9 @@ Certificering af datasæt og dataflwos er en del *godkendelsen* af datasættet e
 1. Angiv de grupper og brugere, der har tilladelse til at certificere datasæt og dataflows. Disse godkendte certificeringseksperter kan bruge knappen Certificering i afsnittet Certificering i dialogboksen med indstillinger for godkendelsen af [datasættet](../connect-data/service-datasets-promote.md#request-dataset-certification) eller [dataflowet](../transform-model/service-dataflows-promote-certify.md#certify-a-dataflow).
 1. Klik på **Anvend**.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 * [Fremhæv datasæt](../connect-data/service-datasets-promote.md)
 * [Certificer datasæt](../connect-data/service-datasets-certify.md)
 * [Fremhæv datasæt](../transform-model/service-dataflows-promote-certify.md#promote-a-dataflow)
 * [Certificer datasæt](../transform-model/service-dataflows-promote-certify.md#certify-a-dataflow)
-* Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

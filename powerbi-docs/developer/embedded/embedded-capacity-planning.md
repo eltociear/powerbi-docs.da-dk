@@ -62,7 +62,7 @@ Hvis du vil se virkningen af belastningstesten i appen Metrics, når testene er 
 
 Lageret har åben kildekode, og brugerne opfordres til at bidrage og tilføje yderligere værktøjer, der er relateret til Power BI Premium- og Embedded-kapaciteter, og forbedre de eksisterende.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 > [!div class="nextstepaction"]
 >[Kapacitet og SKU'er i Power BI Embedded-analyser](embedded-capacity.md)

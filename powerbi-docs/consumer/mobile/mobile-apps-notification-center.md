@@ -71,8 +71,8 @@ Du kan ændre, hvordan Power BI underretter dig.
 
     ![Vælg Meddelelser](./media/mobile-apps-notification-center/power-bi-notifications-windows10-settings.png)
 
-## <a name="next-steps"></a>De næste trin
-* [Databeskeder i Power BI-tjeneste](../../create-reports/service-set-data-alerts.md)
+## <a name="next-steps"></a>Næste trin
+* [Databeskeder i Power BI-tjenesten](../../create-reports/service-set-data-alerts.md)
 * [Indstil databeskeder i iPhone-appen (Power BI til iOS)](mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Indstil databeskeder i Power BI-mobilappen til Windows 10](mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Download den nyeste version af Power BI-mobilapps](https://powerbi.microsoft.com/mobile/) til mobilenheder

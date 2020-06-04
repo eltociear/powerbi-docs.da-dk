@@ -74,7 +74,7 @@ Du kan blot vende din telefon til liggende format for at få vist dashboards i l
 
 ![Dashboard i liggende format](././media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-landscape.png)
 
-Du kan også "klemme sammen" med fingrene for at zoome ind og ud på forskellige områder af dit dashboard, og du kan panorere for at navigere i det. Du kan også [trykke på et felt](mobile-tiles-in-the-mobile-apps.md) for at åbne feltet i Fokustilstand og interagere med dine data.
+Du kan også "knibe sammen" med fingrene for at zoome ind og ud på forskellige områder af dit dashboard, og du kan panorere for at navigere i det. Du kan også [trykke på et felt](mobile-tiles-in-the-mobile-apps.md) for at åbne feltet i Fokustilstand og interagere med dine data.
 
 ## <a name="view-dashboards-on-your-ipad"></a>Få vist dashboards på din iPad
 1. Åbn Power BI-appen.
@@ -88,7 +88,7 @@ Du kan også "klemme sammen" med fingrene for at zoome ind og ud på forskellige
    * Notationen under hvert dashboardnavn (i dette tilfælde "MBI") ![Dataklassifikation](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) viser, hvordan dataene i hvert dashboard klassificeres. Læs mere om [dataklassifikation i Power BI](../../create-reports/service-data-classification.md).
 3. Du kan dele et dashboard fra dit arbejdsområde. Tryk på de tre prikker ( **...** ) i nederste højre hjørne af dashboardfeltet, og tryk på **Inviter andre**.
    
-   ![Invitationsikon](./media/mobile-apps-view-dashboard/power-bi-ipad-tile-invite-others.png)
+   ![Ikonet Inviter](./media/mobile-apps-view-dashboard/power-bi-ipad-tile-invite-others.png)
 4. Du kan også trykke på et dashboard for at åbne det og få vist felterne i dashboardet. Du kan interagere med felterne på et dashboard:
    
    * [Tryk på et felt for at interagere](mobile-tiles-in-the-mobile-apps.md) med feltet.
@@ -152,8 +152,8 @@ Hvis du ejer dashboardet, kan du *i Power BI-tjenesten* oprette en visning af da
 
 Læs mere om at [oprette en telefonvisning af et dashboard](../../create-reports/service-create-dashboard-mobile-phone-view.md).
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 * [Download Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867) fra Google Play  
 * [Introduktion til Android-appen til Power BI](mobile-android-app-get-started.md)  
 * [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)
-* Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

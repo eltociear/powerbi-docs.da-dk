@@ -74,6 +74,6 @@ Her kan du handle direkte på det relaterede indhold. Vælg f.eks. et dashboard-
 * Hvis du vil åbne Relateret indhold for en rapport, skal du være i [Læsevisning](end-user-reading-view.md).
 * Funktionen Relateret indhold fungerer ikke til streaming af datasæt.
 
-## <a name="next-steps"></a>De næste trin
-* [Kom i gang med Power BI-tjenesten](../fundamentals/service-get-started.md)
+## <a name="next-steps"></a>Næste trin
+* [Introduktion til Power BI-tjenesten](../fundamentals/service-get-started.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

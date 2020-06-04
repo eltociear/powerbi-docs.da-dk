@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.custom: seodec18
-ms.openlocfilehash: f74bfb92508564a01422729eefc251acc124baea
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: c3a3bd98dc65e3b73ffe04b95fa9001c90af1d53
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83692716"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84315919"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>URL-adresser til hvidliste for Power BI
 [//]: # "suparnap og miwehnia er kontakter til vedligeholdelse af listen"
@@ -46,14 +46,15 @@ Hvis du vil bruge Power BI, skal du kunne oprette forbindelse til slutpunkterne 
 
 | Række | Formål | Destination(er) | Port(e) |
 | --- | --- | --- | --- |
-| 1 | **Påkrævet:** Back-end-API'er | *.analysis.windows.net | TCP 443 |
-| 2 | **Påkrævet:** Back-end-API'er | *.pbidedicated.windows.net | TCP 443 |
-| 3 | **Påkrævet:** CDN (Content Delivery Network) | content.powerapps.com | TCP 443 |
-| 4 | **Påkrævet:** Microsoft 365-integration | Se dokumentationen til [Almindelige URL-adresser til Microsoft 365 og Office Online](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | I/T |
-| 5 | **Påkrævet:** Portal | app.powerbi.com | TCP 443 |
-| 6 | **Påkrævet:** Tjenestetelemetri | dc.services.visualstudio.com | TCP 443 |
-| 7 | **Valgfrit:** Meddelelser til orientering | dynmsg.modpim.com | TCP 443 |
-| 8 | **Valgfrit:** NPS-undersøgelser | nps.onyx.azure.net | TCP 443 |
+| 1 | **Påkrævet:** Back-end-API'er | api.powerbi.com | TCP 443 |
+| 2 | **Påkrævet:** Back-end-API'er | *.analysis.windows.net | TCP 443 |
+| 3 | **Påkrævet:** Back-end-API'er | *.pbidedicated.windows.net | TCP 443 |
+| 4 | **Påkrævet:** CDN (Content Delivery Network) | content.powerapps.com | TCP 443 |
+| 5 | **Påkrævet:** Microsoft 365-integration | Se dokumentationen til [Almindelige URL-adresser til Microsoft 365 og Office Online](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | I/T |
+| 6 | **Påkrævet:** Portal | app.powerbi.com | TCP 443 |
+| 7 | **Påkrævet:** Tjenestetelemetri | dc.services.visualstudio.com | TCP 443 |
+| 8 | **Valgfrit:** Meddelelser til orientering | dynmsg.modpim.com | TCP 443 |
+| 9 | **Valgfrit:** NPS-undersøgelser | nps.onyx.azure.net | TCP 443 |
 | | | |
 
 ## <a name="administration"></a>Administration

@@ -31,7 +31,7 @@ Tidligere valgte **Power BI** et udsnit af eksempeldatapunkter i alle de underli
 
 Når du aktiverer **Udsnit med høj tæthed**, implementeres en algoritme i Power BI, der fjerner overlappende punkter og sikrer, at punkterne i visualiseringen kan nås, når der interageres med visualiseringen. Algoritmen sikrer også, at alle punkter i datasættet er repræsenteret i visualiseringen Det giver en kontekst for betydningen af de udvalgte punkter i stedet for bare at afbilde et repræsentativt udsnit.
 
-Stikprøver af data med høj tæthed tages pr. definition for at kunne oprette visualiseringer forholdsvist hurtigt og bruge disse visualiseringer interaktivt. For mange datapunkter i et visuelt element kan gøre det for tungt og gøre tendenserne mindre synlige. Udsnitsalgoritmen er derfor udviklet for at udvælge data, så man opnår den bedste visualisering og sikrer, at alle data er repræsenteret. I Power BI er algoritmen nu blevet forbedret for at opnå den bedste kombination af svartid, repræsentation og tydelig bevarelse af vigtige punkter i det samlede datasæt.
+Udsnit af data med høj tæthed tages pr. definition for at kunne oprette visualiseringer forholdsvist hurtigt og bruge disse visualiseringer interaktivt. For mange datapunkter i et visuelt element kan gøre det for tungt og gøre tendenserne mindre synlige. Udsnitsalgoritmen er derfor udviklet for at udvælge data, så man opnår den bedste visualisering og sikrer, at alle data er repræsenteret. I Power BI er algoritmen nu blevet forbedret for at opnå den bedste kombination af svartid, repræsentation og tydelig bevarelse af vigtige punkter i det samlede datasæt.
 
 > [!NOTE]
 > Punktdiagrammer, der bruger algoritmen **Udsnit med høj tæthed**, afbildes bedst i firkantede visualiseringer, som det er tilfældet med alle punktdiagrammer.
@@ -84,7 +84,7 @@ Algoritmen Udsnit med høj tæthed er en vigtig forbedring af Power BI, men der 
 
 * Algoritmen **Udsnit med høj tæthed** fungerer kun med liveforbindelser til modeller, der er baseret på Power BI-tjenesten, importerede modeller eller DirectQuery.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om udsnit med høj tæthed i andre diagrammer i følgende artikel.
 
 * [Stikprøvetagning af linjer med høj tæthed i Power BI](../create-reports/desktop-high-density-sampling.md)

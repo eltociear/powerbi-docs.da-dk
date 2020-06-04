@@ -73,7 +73,7 @@ Du kan også fokusere på ét dataelement i en visualisering og analysere de und
 - Du kan ikke bruge Se poster, når der benyttes en beregnet måling i det pågældende visual.
 - Du kan ikke bruge Se poster, når du har oprettet forbindelse til en live flerdimensionel model.  
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 [Eksportér data fra Power BI-visualiseringer](power-bi-visualization-export-data.md)    
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

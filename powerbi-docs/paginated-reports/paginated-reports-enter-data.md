@@ -25,7 +25,7 @@ I denne artikel kan du få mere at vide om en funktion i den nye version af SQL 
 - Hvis du vil gemme din sideinddelte rapport i Power BI-tjenesten, skal du bruge en [Power BI Pro-konto](../fundamentals/service-self-service-signup-for-power-bi.md) og have skriveadgang til et arbejdsområde i en [Power BI Premium-kapacitet](../admin/service-premium-what-is.md).
 - Hvis du vil gemme din sideinddelte rapport på en rapportserver, skal du have tilladelse til at [redigere filen RsReportServer.config](#upload-the-paginated-report-to-a-report-server).
 
-## <a name="get-started"></a>Kom godt i gang
+## <a name="get-started"></a>Kom i gang
 
 Når du har downloadet og installeret Report Builder, skal du benytte samme arbejdsproces, som du bruger til at føje en integreret datakilde og et datasæt til din rapport. I følgende procedure kan du under **Datakilder** se en ny indstilling: **Angiv data**.  Du behøver kun at konfigurere denne datakilde én gang i en rapport. Derefter kan du oprette flere tabeller med angivne data som separate datasæt, der alle anvender denne enkelte datakilde.
 
@@ -95,7 +95,7 @@ Når du har redigeret den, bør listen over dataudbydere se ud som følger i con
 
 Det var det. Du kan nu publicere rapporter, der bruger denne nye funktionalitet til rapportserveren.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 - [Hvad er Power BI-rapportserveren?](../report-server/get-started.md)

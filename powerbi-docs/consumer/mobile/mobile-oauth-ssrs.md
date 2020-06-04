@@ -7,23 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/11/2020
-ms.openlocfilehash: 40bbf09e684b4fd3f86564c9b469c6ff248954a6
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.date: 06/01/2020
+ms.openlocfilehash: 3ca896512103aa285170eadc8435003257e57ac3
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565712"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84316080"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Brug OAuth til at oprette forbindelse til Power BI-rapportserver og SSRS
 
 Du kan bruge OAuth til at oprette forbindelse til Power BI-rapportserver og Reporting Services for at få vist mobilrapporter eller KPI'er. Få mere at vide om, hvordan du konfigurerer dit miljø til at understøtte OAuth-godkendelse med Power BI-mobilappen for at oprette forbindelse til Power BI-rapportserver og SQL Server Reporting Services 2016 eller nyere.
-
-Se, hvordan Adam opretter forbindelse fra Power BI Mobile til SSRS ved hjælp af OAuth:
-
-
-<iframe width="560" height="350" src="https://www.youtube.com/embed/okzPAI2uUek" frameborder="0" allowfullscreen></iframe>
-
 
 > [!NOTE]
 > Visning af Power BI-rapporter, der hostes på Power BI-rapportserver ved hjælp af WAP-godkendelse, understøttes nu til iOS- og Android-apps.
@@ -246,7 +240,7 @@ Du kan konfigurere, at [Fiddler](https://www.telerik.com/fiddler) skal fungere s
 
 Hvis det lykkes at logge på ved hjælp af Fiddler, oplever du måske et certifikatproblem med enten WAP-programmet eller ADFS-serveren. 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Registrer en hovednavn for tjenesten for en rapportserver](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server)  
 [Rediger en Reporting Services-konfigurationsfil](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config)  

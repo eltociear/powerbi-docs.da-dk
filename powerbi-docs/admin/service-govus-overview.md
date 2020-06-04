@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 06/02/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: f4f0bc5de0480748344fa029c774c4d262facc08
-ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
+ms.openlocfilehash: 8be103d01b5f46c510a1e3658d5a5e29d566a5ff
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84159691"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84336538"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til US Government-kunder
 Denne artikel er for kunder inden for de amerikanske offentlige myndigheder, der udruller Power BI som en del af en Microsoft 365-plan til offentlige myndigheder. Planer til offentlige myndigheder er designet til at opfylde de særlige behov hos organisationer, der overholder amerikanske standarder og sikkerhedsstandarder. Power BI-tjenesten, der er udviklet til US Government-kunder, adskiller sig fra den kommercielle version af Power BI-tjenesten. Disse funktionsforskelle og egenskaber er beskrevet i følgende afsnit.
@@ -83,12 +83,12 @@ Der er visse forskelle mellem offentlige planer og kommercielle planer for at im
 |  |Brug Active Directory-grupper til deling af adgangskontrol|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Overvågning via Office 365 Security and Compliance Administration Center|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Deling med eksterne brugere|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Forbrugsmålepunkter for dashboards og rapporter|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
+|  |Forbrugsmålepunkter for dashboards og rapporter|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Azure B2B mellem GCC og den kommercielle cloud|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
 |Rapportoprettelse|Opret og få vist dashboards og rapporter|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Planlagt dataopdatering|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Teamdashboards, der kan opdateres|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Sideinddelte rapporter|Tilgængelig|Er på vej|Er på vej|
+|  |Sideinddelte rapporter|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Skabelonapps|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
 |Opret forbindelse til data|Importér data og rapporter fra Excel|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Importér data fra CSV-filer|Tilgængelig|Tilgængelig|Tilgængelig|

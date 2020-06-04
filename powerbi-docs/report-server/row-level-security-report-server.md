@@ -97,7 +97,7 @@ Forfattere til rapporter har ikke adgang til at få vist rapportdataene i Power 
 
  
 
-## <a name="faq"></a>OFTE STILLEDE SPØRGSMÅL OM 
+## <a name="faq"></a>Ofte stillede spørgsmål 
 
 ### <a name="can-i-create-these-roles-for-analysis-services-data-sources"></a>Kan jeg oprette disse roller til Analysis Services-datakilder? 
 
@@ -116,7 +116,7 @@ Nej. Du beskytter individuelle rækker, men brugerne kan altid se enten detaljer
 Ja, hvis du allerede har eksisterende roller defineret og tildelt medlemmer i Power BI-rapportserver, kan du oprette yderligere roller og publicere din rapport, uden at det påvirker aktuelle tildelinger. 
  
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Hvad er Power BI-rapportserveren?](get-started.md) 
 [Administratorhåndbog](admin-handbook-overview.md)  

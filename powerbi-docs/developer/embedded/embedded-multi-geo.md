@@ -81,7 +81,7 @@ Vi har foretaget nogle ændringer af eksisterende API'er for at understøtte adm
 
 * Multi-Geo medfører ikke en forbedring af ydeevnen generelt set. Indlæsning af rapporter og dashboards omfatter stadig anmodninger til det lokale område for metadata.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Få mere at vide om Power BI Embedded-kapaciteter og Multi-Geo-indstillinger for alle kapaciteter ved at klikke på nedenstående links.
 
