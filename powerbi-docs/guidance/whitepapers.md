@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 06/03/2020
 ms.author: maggies
-ms.openlocfilehash: f0bf8edc3c954bf5c79d76c1a3bdba1a08ae40ae
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: 529be27d10a5ac1a352473be14e6e7184493bdf9
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84121087"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84336791"
 ---
 # <a name="whitepapers-for-power-bi"></a>Whitepapers til Power BI
 
@@ -21,7 +21,7 @@ Whitepapers gør det muligt at udforske Power BI-emner på et mere detaljeret ni
 
 | Whitepaper | Beskrivelse | Dato |
 | --- | --- | --- |
-| [Planlægning af en Power BI Enterprise-udrulning](https://aka.ms/PBIEnterpriseDeploymentWP) |Dette opdaterede tekniske White Paper skitserer overvejelser og bedste fremgangsmåder for en velfungerende og sikker organisations Power BI implementering. | Maj 2020 |
+| [Planlægning af en Power BI Enterprise-udrulning](https://aka.ms/PBIEnterpriseDeploymentWP) |Dette opdaterede tekniske White Paper skitserer overvejelser og bedste fremgangsmåder for en velfungerende og sikker organisations Power BI implementering. | Juni 2020 |
 | [Power BI og dataflow](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Denne hvidbog beskriver dataflow i tekniske detaljer, og den beskriver de funktioner og initiativer, der ligger bag dataflowets funktioner og funktionalitet. | November 2018 |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Beskriver Power BI Premium, både som den findes, når startes, og hvordan den udvikler sig. | Oktober 2017 |
 | [Planlægning og installation af Power BI Premium](whitepaper-powerbi-premium-deployment.md)| Indholdet af denne hvidbog er indbygget i generelle retningslinjer. Se linket for at få vejledning og bedste fremgangsmåder til planlægning og udrulning af Premium-kapacitet til veldefinerede arbejdsbelastninger.| Marts 2019 |
