@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 12/12/2019
-ms.openlocfilehash: 7eef6c7522bc364bc4b66c9567189dd7aec72239
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.date: 06/02/2020
+ms.openlocfilehash: 75b880876a08a78d822fc1203de40a7bb8311afe
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349833"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84337067"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Selvstudium: Integrer Power BI-indhold i en app til dine kunder
 
@@ -46,7 +46,7 @@ Hvis du vælger at konfigurere miljøet manuelt, kan du dog fortsætte nedenfor.
 
 ### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Registrer et program i Azure Active Directory (Azure AD)
 
-[Registrer dit program](register-app.md) med Azure Active Directory for at give dit program adgang til [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/). Når du registrerer dit program, får du mulighed for at oprette en identitet for programmet og angive tilladelser til Power BI REST-ressourcer. Den måde, du kommer i gang med at registrere et program på, afhænger af, om du vil bruge en masterkonto eller en [tjenesteprincipal](embed-service-principal.md).
+[Registrer dit program](register-app.md) med Azure Active Directory for at give dit program adgang til [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/). Når du registrerer dit program, får du mulighed for at oprette en identitet for programmet og angive [tilladelser til Power BI REST-ressourcer](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent). Den måde, du kommer i gang med at registrere et program på, afhænger af, om du vil bruge en masterkonto eller en [tjenesteprincipal](embed-service-principal.md).
 
 Den valgte metode påvirker, hvilken programtype du registrerer i Azure.
 
@@ -135,7 +135,7 @@ Hvis du vil hente **applicationId**, skal du følge disse trin:
 
 Denne attribut er påkrævet for begge AuthenticationTypes (masterkonto og [tjenesteprincipal](embed-service-principal.md)).
 
-Udfyld oplysningerne for **workspaceId** med GUID for arbejdsområdet fra Power BI. Du kan få disse oplysninger enten fra URL-adressen, når du er logget på Power BI-tjenesten, eller ved hjælp af Powershell.
+Udfyld oplysningerne for **workspaceId** med GUID for arbejdsområdet fra Power BI. Du kan få disse oplysninger enten fra URL-adressen, når du er logget på Power BI-tjenesten, eller ved hjælp af PowerShell.
 
 URL-adresse <br>
 
@@ -147,13 +147,13 @@ PowerShell <br>
 Get-PowerBIworkspace -name "App Owns Embed Test"
 ```
 
-   ![workspaceId fra powershell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
+   ![workspaceId fra PowerShell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
 
 ### <a name="report-id"></a>Rapport-id
 
 Denne attribut er påkrævet for begge AuthenticationTypes (masterkonto og [tjenesteprincipal](embed-service-principal.md)).
 
-Udfyld **reportId** med GUID for rapporten fra Power BI. Du kan få disse oplysninger enten fra URL-adressen, når du er logget på Power BI-tjenesten, eller ved hjælp af Powershell.
+Udfyld **reportId** med GUID for rapporten fra Power BI. Du kan få disse oplysninger enten fra URL-adressen, når du er logget på Power BI-tjenesten, eller ved hjælp af PowerShell.
 
 URL-adresse<br>
 
@@ -165,7 +165,7 @@ PowerShell <br>
 Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
 ```
 
-![reportId fra powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
+![reportId fra PowerShell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
 
 ### <a name="power-bi-username-and-password"></a>Brugernavn og adgangskode til Power BI
 
@@ -206,7 +206,7 @@ Hvis du vil hente **ApplicationSecret**, skal du følge disse trin:
 
 Denne attribut bruges kun til [tjenesteprincipalen](embed-service-principal.md) som AuthenticationType.
 
-Udfyld oplysningerne om **tenant** med dit lejer-id til Azure. Du kan få disse oplysninger fra [Azure AD Administration](/onedrive/find-your-office-365-tenant-id), når du er logget på Power BI-tjenesten, eller ved hjælp af Powershell.
+Udfyld oplysningerne om **lejeren** med dit lejer-id til Azure. Du kan få disse oplysninger fra [Azure AD Administration](/onedrive/find-your-office-365-tenant-id), når du er logget på Power BI-tjenesten, eller ved hjælp af PowerShell.
 
 ### <a name="run-the-application"></a>Kør programmet
 

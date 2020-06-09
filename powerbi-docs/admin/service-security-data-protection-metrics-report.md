@@ -6,34 +6,34 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/11/2020
+ms.date: 05/23/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: e16acffd683b14eb48a6e21ddc456caeac25efc3
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: fdc246d1edb487ce7280ceee8a3727d2faeb0252
+ms.sourcegitcommit: 12f26ae9a2615cb287fee9046b0dc713af764c04
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83132009"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "84229007"
 ---
-# <a name="data-protection-metrics-report-preview"></a>Rapport over databeskyttelsesmålepunkter (eksempel)
+# <a name="data-protection-metrics-report"></a>Rapport over databeskyttelsesmålepunkter
 
 ## <a name="what-is-the-data-protection-metrics-report"></a>Hvad er rapporten over databeskyttelsesmålepunkter?
-Rapporten over databeskyttelsesmålepunkter er en dedikeret rapport, som [Power BI-administratorer](../admin/service-admin-role.md) kan bruge til at overvåge og registrere brug og anvendelse af datafølsomhedsmærkater i deres lejer.
+Rapporten over databeskyttelsesmålepunkter er en dedikeret rapport, som [Power BI-administratorer](../service-admin-role.md) kan bruge til at overvåge og registrere brug og anvendelse af datafølsomhedsmærkater i deres lejer.
 
 ![Rapport over databeskyttelsesmålepunkter](./media/service-security-data-protection-metrics-report/protection-metrics-seven-days-1.png)
  
 Rapporten indeholder:
 * Et 100 % stablet søjlediagram, der viser forbruget af daglige følsomhedsmærkater i lejeren for de seneste 7, 30 eller 90 dage. Dette diagram gør det nemt at spore den relative brug af de forskellige mærkattyper over tid.
 * Kransediagrammer, der viser den aktuelle tilstand for brug af følsomhedsmærkater i lejeren for dashboards, rapporter, datasæt og dataflows.
-* Et link til Cloud App Security-portalen, hvor Power BI-beskeder, brugere, der er i fare, aktivitetslogge og andre oplysninger er tilgængelige. Du kan få flere oplysninger under [Brug af Microsoft Cloud App Security-kontrolelementer i Power BI (prøveversion)](./service-security-using-microsoft-cloud-app-security-controls.md).
+* Et link til Cloud App Security-portalen, hvor Power BI-beskeder, brugere, der er i fare, aktivitetslogge og andre oplysninger er tilgængelige. Du kan få flere oplysninger under [Brug af Microsoft Cloud App Security-kontrolelementer i Power BI](./service-security-using-microsoft-cloud-app-security-controls.md).
 
 Rapporten opdateres hver 24. time.
 
 ## <a name="viewing-the-data-protection-metrics-report"></a>Visning af rapporten over databeskyttelsesmålepunkter
 
-Du skal have en [Power BI-administratorrolle](../admin/service-admin-role.md) for at åbne og få vist rapporten.
-Hvis du vil have vist rapporten, skal du gå til **Indstillinger > Administrationsportal** og vælge **Beskyttelsesmålepunkter (prøveversion)** .
+Du skal have en [Power BI-administratorrolle](../service-admin-role.md) for at åbne og få vist rapporten.
+Hvis du vil have vist rapporten, skal du gå til **Indstillinger > Administrationsportal** og vælge **Beskyttelsesmålepunkter**.
 
 ![administrationsportal til beskyttelsesmålepunkter](./media/service-security-data-protection-metrics-report/protection-metrics-admin-portal.png)
  
@@ -51,9 +51,9 @@ Forbedrede versioner af rapporten over databeskyttelsesmålepunkter frigives reg
 * For at få adgang til Cloud App Security-oplysninger skal din organisation have den relevante [Cloud App Security-licens](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls#microsoft-cloud-app-security-licensing).
 * Hvis du beslutter at dele oplysninger fra rapporten over databeskyttelsesmålepunkter med en bruger, der ikke er Power BI-administrator, skal du være opmærksom på, at denne rapport indeholder følsomme oplysninger om din organisation.
 * Rapporten over databeskyttelsesmålepunkter er en speciel type rapport og vises ikke på listerne "Delt med mig", "Seneste" og "Favoritter".
-* Rapporten over databeskyttelsesmålepunkter er ikke tilgængelig for [eksterne brugere (Azure Active Directory B2B-gæstebrugere)](../admin/service-admin-azure-ad-b2b.md).
-## <a name="next-steps"></a>De næste trin
-* [Databeskyttelse i Power BI (prøveversion)](./service-security-data-protection-overview.md)
-* [Brug af Microsoft Cloud App Security-kontrolelementer i Power BI (prøveversion)](./service-security-using-microsoft-cloud-app-security-controls.md)
-* [Om rollen Power BI-tjenesteadministrator](../admin/service-admin-role.md)
-* [Aktivér datafølsomhedsmærkater i Power BI](./service-security-enable-data-sensitivity-labels.md)
+* Rapporten over databeskyttelsesmålepunkter er ikke tilgængelig for [eksterne brugere (Azure Active Directory B2B-gæstebrugere)](../service-admin-azure-ad-b2b.md).
+## <a name="next-steps"></a>Næste trin
+* [Databeskyttelse i Power BI](./service-security-data-protection-overview.md)
+* [Brug af Microsoft Cloud App Security-kontrolelementer i Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
+* [Om rollen Power BI-tjenesteadministrator](service-admin-role.md)
+* [Aktivér datafølsomhedsmærkater i Power BI](service-security-enable-data-sensitivity-labels.md)

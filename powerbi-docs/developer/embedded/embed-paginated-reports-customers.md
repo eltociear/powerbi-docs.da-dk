@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: f9248b659bec744f7da02c4d2639f30bd646bb48
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 78487f52df9f62e85e80f02d9653c9ac2f5b52c7
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276047"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84337113"
 ---
-# <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder (prøveversion)
+# <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder
 
 Med **Power BI Embedded i Azure** eller **Power BI-integration i Office** kan du integrere sideinddelte rapporter i et program ved hjælp af "appen ejer dataene". **App owns data** handler om at have et program, der bruger Power BI som sin integrerede analyseplatform. Som **ISV** eller **udvikler** kan du oprette Power BI-indhold, der viser sideinddelte rapporter i et program, som er fuldt integreret og interaktivt, uden at brugerne skal have en Power BI-licens. I dette selvstudium kan du se, hvordan du integrerer en sideinddelt rapport i et program ved hjælp af Power BI .NET SDK med Power BI JavaScript-API'en.
 
@@ -40,7 +40,7 @@ Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://
 
 > [!IMPORTANT]
 > * Du skal bruge en **tjenesteprincipal**. Masterbruger understøttes ikke.
-> * Datakilder, der kræver enkeltlogon (SSO), understøttes ikke.
+> * Datakilder, der kræver enkeltlogon (SSO), understøttes ikke. Du kan finde en liste over understøttede datasæt og deres godkendelsesmetoder under [Understøttede datakilder til sideinddelte rapporter i Power BI](../../paginated-reports/paginated-reports-data-sources.md). 
 > * Power BI-datasæt understøttes ikke som en [datakilde](../../connect-data/service-get-data.md).
 
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurer dit Power BI-miljø

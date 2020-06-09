@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/15/2020
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: f057395361840b7b16fa8a7cde5a6d2513196845
-ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
+ms.openlocfilehash: c43b0710c15fcc77a08aa789a92d840d2425f5ab
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83438217"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84315942"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten
 
@@ -71,6 +71,10 @@ Det er lidt anderledes at abonnere på sideinddelte rapporter. Du kan finde fler
 1. (Valgfrit) Vælg, om du vil medtage et link til indholdet i Power BI, og om du vil give brugere adgang til det indhold, som du tilmelder dem.  Hvis du vælger at inkludere et link, så du opnår den bedste funktionalitet, skal du sørge for, at alle brugere har adgang til rapporten.
 2. Vælg **Gem og luk**. Dem, der abonnerer, modtager en mail og et snapshot af dashboardet eller rapportsiden med den hyppighed og det tidspunkt, du har valgt. Du kan i alt oprette op til 24 abonnementer pr. rapport eller dashboard, og du kan angive entydige modtagere, tidspunkter og hyppigheder for hvert abonnement. For alle abonnementer, der er angivet til **Efter dataopdatering** for dashboardet eller rapporten, sendes der stadig kun en mail efter den første planlagte opdatering.
 
+    > [!NOTE]
+    > Hvis du redigerer abonnementet, efter at du har gemt og lukket, er valget til at give brugere adgang til det indhold, du abonnerer på, aktiveret, uanset dine tidligere valg.
+    >
+
     > [!TIP]
     > Vil du sende mailen fra et abonnement med det samme eller on-demand når som helst? Vælg **Kør nu** for abonnementerne for det dashboard eller den rapport, du vil sende. Du får vist en meddelelse om, at en mail er på vej til alle med det pågældende abonnement. Denne handling tæller ikke i forhold til grænsen på 24 planlagte abonnementskørsler pr. dag pr. rapport eller dashboard. Dette udløser IKKE en opdatering af data i det underliggende datasæt.
     >
@@ -112,6 +116,7 @@ Power BI-administratorer kan bruge Power BI-overvågningslogge til at få vist o
 - Hvis dit dashboard eller din rapport er i Premium-kapacitet, kan du bruge mailaliasser for grupper til abonnementer i stedet for at oprette abonnementer for kollegaer én mailadresse ad gangen. Aliasserne er baseret på det aktuelle Active Directory.
 - Hvis dit indhold ikke er i Premium-kapacitet, er det kun Power BI Pro-brugere, der kan modtage mailabonnementer. 
 - Abonnementer understøtter i øjeblikket ikke bogmærker.
+- Indstillingen for at give adgang til rapporten/dashboardet vises altid som aktiveret, når du redigerer et eksisterende abonnement.  Hvis du fjerner markeringen i denne indstilling og gemmer abonnementet, gemmes den pågældende tilstand. Men når du skifter til at redigere rapporten igen, bliver den som standard markeret.
 
 ### <a name="dashboards"></a>Dashboards
 

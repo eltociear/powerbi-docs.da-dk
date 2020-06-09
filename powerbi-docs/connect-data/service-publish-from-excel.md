@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: ca3e954f64665798c439fba47c3135e93fe51ac0
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 9bbd5cbafa7f6c17fd9b9a02b93a27cc5859ee4a
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83305605"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84272764"
 ---
 # <a name="publish-to-power-bi-from-microsoft-excel"></a>Publicer i Power BI fra Microsoft Excel
 Med Microsoft Excel 2016 og nyere kan du publicere dine Excel-projektmapper direkte i dit [Power BI](https://powerbi.microsoft.com)-arbejdsområde, hvor du kan oprette meget interaktive rapporter og dashboards, der er baseret på data i din projektmappe. Derefter kan du dele din indsigt med andre i organisationen.
@@ -39,7 +39,7 @@ Hvis du vælger **Eksportér**, kan du eksportere tabeldata og dens datamodel ti
 Excel understøtter publicering af lokale Excel-filer. De behøver ikke at blive gemt på OneDrive for Business eller SharePoint Online.
 
 > [!IMPORTANT]
-> Du kan kun publicere lokale filer, hvis du bruger Excel 2016 (eller nyere) sammen med et Office 365-abonnement. Separate Excel 2016-installationer kan publiceres til Power BI, men kun når projektmappen gemmes i OneDrive for Business eller SharePoint Online.
+> Du kan kun publicere lokale filer, hvis du bruger Excel 2016 (eller nyere) sammen med et Microsoft 365-abonnement. Separate Excel 2016-installationer kan publiceres til Power BI, men kun når projektmappen gemmes i OneDrive for Business eller SharePoint Online.
 > 
 
 Når du vælger **Publicer**, kan du vælge det arbejdsområde, du vil publicere til. Hvis din Excel-fil er placeret på OneDrive for Business, kan du kun publicere til dit *Mit arbejdsområde*. Hvis din Excel-fil er placeret på et lokalt drev, kan du publicere til *Mit arbejdsområde* eller et delt arbejdsområde, som du har adgang til.

@@ -10,18 +10,21 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 04/28/2020
 LocalizationGroup: Data from databases
-ms.openlocfilehash: aa1ae57d928633ce61ab66a8e0e905118c3a7877
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: aa4f07e32d66e7f9bdb2da7d210b2cc8c178b172
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83302155"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84316034"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database med DirectQuery
 
 Få mere at vide om, hvordan du kan oprette direkte forbindelse til Azure SQL Database og oprette rapporter, der bruger livedata. Du kan beholde dine data ved kilden i stedet for i Power IB.
 
 Med DirectQuery sendes forespørgsler tilbage til din Azure SQL Database, mens du udforsker dataene i rapportvisning. Denne oplevelse foreslås til brugere, der kender de databaser og enheder, de opretter forbindelse til.
+
+> [!Important]
+> I denne beskrivelse antages det, at Azure SQL-database ikke er i en VNET, eller at der er aktiveret et privat slutpunkt for linket.
 
 **Bemærk!**
 
@@ -32,7 +35,7 @@ Med DirectQuery sendes forespørgsler tilbage til din Azure SQL Database, mens d
 * Spørgsmål og svar er ikke tilgængelig for DirectQuery-datasæt.
 * Skemaændringer hentes ikke automatisk.
 
-Disse begrænsninger og noter kan ændres, når vi fortsætter med at forbedre oplevelserne. Trinnene til at oprette forbindelse er beskrevet nedenfor.
+Disse begrænsninger og noter kan ændres, efterhånden som vi fortsat forbedrer oplevelserne. Trinnene til at oprette forbindelse er beskrevet nedenfor.
 
 > [!Important]
 > Vi har forbedret vores netværksmuligheder til Azure SQL Database.  For at få den bedste oplevelse og oprette forbindelse til din Azure SQL Database-datakilde kan du bruge Power BI Desktop.  Når du har bygget din model og rapport, kan du udgive den på Power BI-tjenesten.  Den direkte forbindelse til Azure SQL Database i Power BI-tjenesten frarådes nu.
@@ -51,7 +54,7 @@ Du kan finde dit fulde gyldige servernavn og databasenavn på Azure Portal.
 
 [!INCLUDE [direct-query-sso](../includes/direct-query-sso.md)]
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Brug DirectQuery i Power BI Desktop](desktop-use-directquery.md)  
 * [Hvad er Power BI?](../fundamentals/power-bi-overview.md)  

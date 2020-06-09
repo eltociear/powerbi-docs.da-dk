@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/02/2019
-ms.openlocfilehash: e47cb22ba4c30c8090e2e9552e1994a5c545b47b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e8c45145695d61bcd7173e2202db98ec306c4b4d
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80404015"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84336860"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Registrer et Azure AD-program, som skal bruges sammen med Power BI
 
@@ -54,7 +54,7 @@ Sådan registrerer du dit program ved hjælp af værktøjet Power BI App Registr
 
 5. Hvis du har valgt **serverbaseret webprogram** som programtype, skal du fortsætte med at angive en værdi for **URL-adresse til startside** og **URL-adresse til omdirigering**. **URL-adressen til omdirigering** fungerer sammen med en hvilken som helst gyldig URL-adresse og bør stemme overens med det program, du har oprettet. Hvis du har valgt **oprindeligt**, skal du fortsætte til trin 6.
 
-6. Vælg de Power BI-API'er, som dit program har brug for. Du kan få flere oplysninger om adgangstilladelser til Power BI i [Power BI-tilladelser](power-bi-permissions.md). Vælg derefter **Registrer**.
+6. Vælg de Power BI-API'er, som dit program har brug for. Du kan få flere oplysninger om Power BI-adgangstilladelser i [Tilladelser og indhold i slutpunktet for Microsoft-identitetsplatformen](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent). Vælg derefter **Registrer**.
 
     ![Vælg de API'er, du vil registrere](media/register-app/register-app-new-app-registration-apis-register.png)
 
@@ -194,7 +194,7 @@ Du skal være logget på enten via *hovedkontoen*, der er brugt til integrering,
    }
    ```
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Nu, hvor du har registreret dit program i Azure AD, skal du godkende brugere i dit program. Du kan finde flere oplysninger under [Godkend brugere, og få et Azure AD-adgangstoken til din Power BI-app](get-azuread-access-token.md).
 

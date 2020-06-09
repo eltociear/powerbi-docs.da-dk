@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 636aaf59a3a949b5b3571012d12cecc234e9763b
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: e91698413df11a2f593128a616948935b65c0c4e
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347947"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84272902"
 ---
 # <a name="filter-and-share-a-power-bi-report"></a>Filtrer og del en Power BI-rapport
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Hvad nu hvis du vil dele en filtreret version af en rapport? Måske vil du have, at der kun vises data for en bestemt by eller sælger eller et bestemt år, i rapporten. I denne artikel forklares det, hvordan du filtrerer en rapport og deler den filtrerede version af rapporten. En anden måde at dele en filtreret rapport på er at [føje forespørgselsparametre til rapportens URL-adresse](service-url-filters.md). I begge tilfælde filtrers rapporten, når modtagerne åbner den. De kan rydde filtervalgene i rapporten.
@@ -77,9 +77,13 @@ Gem rapporten.
 
 7. Når du deler dette link, kan modtagerne se din filtrerede rapport. 
 
+## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
+Ting, du skal være opmærksom på angående deling af rapporter:
 
-## <a name="next-steps"></a>De næste trin
+* Når du deler et datasæt ved at administrere tilladelser, ved at dele rapporter eller dashboards eller ved at udgive en app, giver du adgang til hele datasættet, medmindre [sikkerhed på rækkeniveau (RLS)](../admin/service-admin-rls.md) begrænser deres adgang. Rapportforfattere kan bruge funktioner, der tilpasser brugeroplevelser, når de får vist eller interagerer med rapporter, f.eks. at skjule kolonner, begrænse handlinger på visualiseringer og andet. Disse brugerdefinerede brugeroplevelser begrænser ikke, hvilke data brugere kan få adgang til i datasættet. Brug [sikkerhed på rækkeniveau (RLS)](../admin/service-admin-rls.md) i datasættet, så hver enkelt brugers legitimationsoplysninger bestemmer, hvilke data de kan få adgang til.
+
+## <a name="next-steps"></a>Næste trin
 * [Måder at dele dit arbejde på i Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Del et dashboard](service-share-dashboards.md)
-* Har du flere spørgsmål? [Prøv Power BI-community'et](https://community.powerbi.com/).
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
 * Har du feedback? Indsend dine forslag på [webstedet for Power BI-community'et](https://community.powerbi.com/).

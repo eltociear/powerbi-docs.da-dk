@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 06/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e126451bf016bf4e9dcce7b7a4df51db9ed20386
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: ec0d12ddf91b04654b90c5a3e7cdfda24bc04604
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83320509"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84315896"
 ---
 # <a name="the-enhanced-compute-engine"></a>Det forbedrede beregningsprogram
 
@@ -31,6 +31,9 @@ I følgende afsnit beskrives det, hvordan du aktiverer det forbedrede beregnings
 Det forbedrede beregningsprogram aktiveres fra siden **Kapacitetsindstillinger** i Power BI-tjenesten i afsnittet **Dataflows**. Det forbedrede beregningsprogram er som standard slået **Fra**. Hvis du vil slå det til, skal du skifte til **Til** som vist på følgende billede og gemme dine indstillinger. 
 
 ![Slå det forbedrede beregningsprogram til](media/service-dataflows-enhanced-compute-engine/enhanced-compute-engine-01.png)
+
+> [!IMPORTANT]
+> Det udvidede beregningsprogram fungerer kun for Power BI-kapaciteter på A3 og derover.
 
 Når du har slået det forbedrede beregningsprogram til, kan du vende tilbage til dataflows og se en forbedring af ydeevnen i alle beregnede enheder, der udfører komplekse handlinger, f.eks. handlinger som *joinforbindelser* eller *gruppér efter* for dataflows, der er oprettet ud fra eksisterende sammenkædede enheder på samme kapacitet. 
 

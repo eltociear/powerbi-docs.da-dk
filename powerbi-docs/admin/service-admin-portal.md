@@ -10,12 +10,12 @@ ms.date: 05/12/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 605d35d55f3191b230d9c4a8d118e2c238283ff2
-ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
+ms.openlocfilehash: 460ab380798975065eb90bf904b2b5bacd1edd2c
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83733576"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84315965"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -85,7 +85,7 @@ Med disse oplysninger kan du få reel indsigt i, hvordan personer bruger Power B
 
 ## <a name="control-usage-metrics"></a>Kontrollér forbrugsdata
 
-Rapporter med forbrugsdata er en funktion, som Power BI- eller Microsoft 365-administratoren kan slå til eller fra. Administratorer har detaljeret kontrol over, hvilke brugere der har adgang til forbrugsdata. Det er slået **Til** som standard for alle brugere i organisationen.
+Rapporter med forbrugsdata er en funktion, som Power BI- eller den globale administrator kan slå til eller fra. Administratorer har detaljeret kontrol over, hvilke brugere der har adgang til forbrugsdata. Det er slået **Til** som standard for alle brugere i organisationen.
 
 Administratorer kan også bestemme, om oprettere af indhold kan se brugerspecifikke data i forbrugsdata. 
 
@@ -132,6 +132,9 @@ Hvis du vil bruge overvågningslogs, skal du sørge for, at indstillingen [**Opr
 ## <a name="tenant-settings"></a>Lejerindstillinger
 
 Fanen **Lejerindstillinger** giver dig detaljeret kontrol over de funktioner, der er til rådighed for din organisation. Hvis du har bekymringer om følsomme data, kan det være, at nogle af vores funktioner ikke er passende for din organisation, eller du vil måske kun have, at en bestemt funktion er tilgængelig for en bestemt gruppe.
+
+> [!NOTE]
+> Lejerindstillinger, der styrer tilgængeligheden af funktioner i Power BI-brugergrænsefladen, kan hjælpe med at oprette politikker for styring, men de er ikke en sikkerhedsmåling. Indstillingen **Eksport af data** begrænser f.eks. ikke tilladelser for en Power BI-bruger på et datasæt. Power BI-brugere med læseadgang til et datasæt har tilladelse til at forespørge dette datasæt og kan bevare resultaterne uden at bruge funktionen **Eksport af data** i Power BI-brugergrænsefladen.
 
 På følgende billede ses flere indstillinger under fanen **Lejerindstillinger**.
 

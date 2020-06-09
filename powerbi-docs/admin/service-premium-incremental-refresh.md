@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: eb9a10c715a03adc9149ca8793ff248a23b9914d
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: 2257e38183d87ef7fd4fdd12546c2a191a7acf74
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84121013"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159875"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Trinvis opdatering i Power BI
 
@@ -230,7 +230,7 @@ Følgende eksempel dækker alle 120 måneder i det historiske område for tilbag
 
 ## <a name="metadata-only-deployment"></a>Udrulning udelukkende af metadata
 
-Når du publicerer en ny version af en PBIX-fil fra Power BI Desktop til et arbejdsområde i Power BI-tjenesten, bliver du bedt om at erstatte det eksisterende datasæt, hvis der allerede findes et datasæt med det samme navn.
+Når du publicerer en ny version af en PBIX-fil fra Power BI Desktop til et arbejdsområde i Power BI Premium, bliver du bedt om at erstatte det eksisterende datasæt, hvis der allerede findes et datasæt med det samme navn.
 
 ![Prompt om erstatning af datasæt](media/service-premium-incremental-refresh/replace-dataset-prompt.png)
 

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/06/2020
+ms.date: 05/27/2020
 ms.author: maggies
-ms.openlocfilehash: 548e66685c7b460829e171d097d18640cd5b0f57
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3bd792c585f42add6652205a6e4a99fe116ad20f
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78922591"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159783"
 ---
 # <a name="configure-power-bi-report-server-with-azure-application-proxy"></a>Konfigurer en Power BI-rapportserver med Azure-proxyprogram
 
@@ -166,7 +166,10 @@ Vi har konfigureret den eksterne URL-adresse til `https://pbirsazureapp-umaconto
 
 ![Standardforbindelsesgruppe](media/azure-application-proxy/report-server-application-proxy-1.png)
 
-Vi har ikke foretaget nogen ændringer i afsnittet **Yderligere indstillinger**. Det er konfigureret til at fungere sammen med standardindstillingerne:
+Vi har ikke foretaget nogen ændringer i afsnittet **Yderligere indstillinger**. Det er konfigureret til at fungere sammen med standardindstillingerne.
+
+> [!IMPORTANT]
+> Når du konfigurerer programproxyen, skal du være opmærksom på, at egenskaben **for timeout for backend-programmet** er indstillet til **Standard** (85 sekunder). Hvis du har rapporter, der tager mere end 85 sekunder at udføre, kan du angive denne egenskab til **Lang** (180 sekunder), hvilket er den højeste mulige timeoutværdi. Når den er konfigureret til **Lang**, skal alle rapporter fuldføres inden for 180 sekunder, eller de får timeout og resulterer i en fejl.
 
 ![Yderligere indstillinger](media/azure-application-proxy/report-server-application-proxy-1.png)
 

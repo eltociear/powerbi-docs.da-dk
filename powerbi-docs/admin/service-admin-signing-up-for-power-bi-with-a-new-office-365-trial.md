@@ -8,21 +8,23 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/17/2020
 ms.author: mihart
+ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 9c13f29b29742e62cb08c973e5444a7879e6222a
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: bab0eba6e2ae3d0ec8ede57f9875385dbb26a60a
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83812213"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159852"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Tilmelding til Power BI med en ny prøveversion af Microsoft 365
 
-I denne artikel beskrives det, hvordan du kan tilmelde dig Power BI, hvis du ikke allerede har en arbejds- eller skolemailkonto.
+I denne artikel beskrives det, hvordan du kan tilmelde dig Power BI-tjenesten, hvis du ikke allerede har en arbejds- eller skolemailkonto.
 
 Hvis du har problemer med at tilmelde dig Power BI med din mailadresse, skal du først kontrollere, at det er en [mailadresse, der kan bruges med Power BI](../fundamentals/service-self-service-signup-for-power-bi.md#supported-email-addresses). Hvis det ikke lykkes, kan du tilmelde dig en Microsoft 365-prøveversion og oprette en arbejdskonto. Derefter skal du bruge den nye arbejdskonto til at tilmelde dig Power BI-tjenesten. Du kan stadig bruge Power BI, efter prøveversionen af Microsoft 365 er udløbet.
 
 ## <a name="sign-up-for-a-microsoft-365-trial-of-office"></a>Tilmeld dig en Microsoft 365-prøveversion af Office
+
 Tilmeld dig en prøveversion af Microsoft 365 [på Microsoft 365-webstedet](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). Hvis du ikke allerede har en konto, guider Microsoft dig igennem trinnene til at oprette en. Da kommercielle mailkonti (f.eks. Hotmail og Gmail) ikke fungerer sammen med Microsoft 365, skal du oprette en ny konto, der gør.  Denne mailkonto vil ligne følgende *zalan@onmicrosoft.com* .
 
 ![Vælg Prøv gratis](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-free.png)

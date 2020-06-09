@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 04/27/2020
-ms.openlocfilehash: 7034bd544ee9c14dd5f32df9335faefd4221e4ac
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: 5d0c9fcfbd35b8b42e8196f6f014c96803f6ffc5
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83693901"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159530"
 ---
 # <a name="embed-reports-in-microsoft-teams-with-the-power-bi-tab"></a>Integrer rapporter i Microsoft Teams ved hjælp af Power BI-fanen
 
@@ -48,7 +48,7 @@ Hvis du vil integrere din rapport i en Microsoft Teams-kanal eller -chat, skal d
 
     ![Liste over Microsoft Teams-faner, der viser Power BI](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab.png)
 
-3. Du kan benytte indstillingerne til at vælge en rapport fra et arbejdsområde fra Delt med mig eller fra en Power BI-app.
+3. Du kan benytte indstillingerne til at vælge en rapport fra et arbejdsområde eller en Power BI-app.
 
     ![Indstillinger for Power BI-fanen til Microsoft Teams](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab-settings.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Power BI-licenser i din organisation
-description: Oversigt over de forskellige licenstyper, der er tilgængelige i Power BI, og hvordan administratorer køber og administrerer licenser for deres organisation.
+title: Power BI-licenser for brugere i din organisation
+description: Oversigt over de forskellige brugerlicenstyper, der er tilgængelige i Power BI, og hvordan administratorer køber og administrerer licenser for brugere i deres organisation.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
@@ -8,15 +8,16 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/14/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: a0ce3eab2992c59c5b887db1f0838f88db7ad2da
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 5bac52e98830c97262945e1434880f9c178a0932
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563482"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159990"
 ---
-# <a name="power-bi-licensing-in-your-organization"></a>Power BI-licenser i din organisation
+# <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>Licens til Power BI-tjenesten for brugere i din organisation
 
 Det, en bruger kan gøre i Power BI-tjenesten, afhænger af den type af licens pr. bruger, som vedkommende har. Det adgangsniveau, som brugeren får gennem sin licens, afhænger af, om det arbejdsområde, der tilgås, er tildelt til en Power BI Premium-kapacitet. Alle brugere af Power BI-tjenesten skal have en licens.
 
@@ -34,7 +35,7 @@ Du skal have tildelt en administratorrolle for at kunne købe eller tildele lice
 | Global administrator | Brugeradministrator |
 |  | Global administrator |
 
-Disse roller administrerer organisationen. Du kan finde flere oplysninger om roller som administrator af Power BI-tjenesten under [Om roller som administrator af Power BI-tjenesten](service-admin-role.md).
+Disse roller administrerer organisationen. Du kan finde flere oplysninger om administratorroller i Power BI-tjenesten under [Beskrivelse af administratorroller i Power BI](service-admin-role.md).
 
 ## <a name="get-power-bi-for-your-organization"></a>Få Power BI til din organisation
 

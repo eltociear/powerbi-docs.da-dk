@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/21/2019
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 48d3e997e0150f28ee4bfa41d282d3ba312bc230
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: af095964846cad264d1ac0ffd82e0c2ac6988a0e
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273609"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273408"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Overvåg forbrugsdata for Power BI-dashboards og -rapporter
 
@@ -134,7 +134,7 @@ Hvis du vil se forbrugsdataene for alle dashboards eller for alle rapporter i ar
 
 ## <a name="power-bi-admin-controls-for-usage-metrics"></a>Kontrolelementer for forbrugsdata i Power BI-administration
 
-Rapporter med forbrugsdata er en funktion, som Power BI- eller Office 365-administratoren kan slå til eller fra. Administratorer har detaljeret kontrol over, hvilke brugere der har adgang til forbrugsdata. De er slået **Til** som standard for alle brugere i organisationen.
+Rapporter med forbrugsdata er en funktion, som den global administrator eller Power BI-administratoren kan slå til eller fra. Administratorer har detaljeret kontrol over, hvilke brugere der har adgang til forbrugsdata. De er slået **Til** som standard for alle brugere i organisationen.
 
 > [!NOTE]
 > Kun administratorer for Power BI-lejeren kan se administrationsportalen og redigere indstillingerne. 

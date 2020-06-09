@@ -10,14 +10,14 @@ ms.topic: tutorial
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f7c907d31d4d58a9f39ad982e7d94f3f5ba3f118
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 7e93e8a08b6dd662f3ada089c5ee8745bb24b3e2
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865562"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84337044"
 ---
-# <a name="create-and-view-decomposition-tree-visuals-in-power-bi-preview"></a>Opret og få vist fordelingstrævisualiseringer i Power BI (eksempelvisning)
+# <a name="create-and-view-decomposition-tree-visuals-in-power-bi"></a>Opret og få vist fordelingstrævisualiseringer i Power BI
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
@@ -32,6 +32,9 @@ I dette selvstudium bruges der to eksempler:
 - Et scenario for forsyningskæden, der analyserer hvor stor en procentdel af produkterne, en virksomhed har i restlager (ikke på lager).  
 - Et salgsscenarie, der analyserer salg af videospil i efter mange faktorer, f. eks. spilgenre og udgiver.
 
+Du kan finde den pbix, der er anvendt i forsyningskædescenariet her: [Eksempel på forsyningskæde.pbix](
+https://github.com/microsoft/powerbi-desktop-samples/blob/master/Sample%20Reports/Supply%20Chain%20Sample.pbix).
+
 > [!NOTE]
 > Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet.    
 
@@ -39,17 +42,21 @@ I dette selvstudium bruges der to eksempler:
 Vælg ikonet for fordelingstræet i ruden Visualiseringer.
 ![Vandmærke for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-watermark.png)
 
-Visualiseringen kræver to typer input.
+Visualiseringen kræver to typer input:
 
-**Analysér** – den metrikværdi, du vil analysere. Det skal være en måling eller en aggregering.  
-**Forklar efter** – en eller flere dimensioner, hvor du gerne vil foretage detailudledning.
+ - **Analysér** – den metrikværdi, du vil analysere. Det skal være en måling eller en aggregering.  
+ - **Forklar efter** – en eller flere dimensioner, hvor du gerne vil foretage detailudledning.
 
-Når du trækker din måling til feltbrønd, viser de visuelle opdateringer den aggregerede måling. I eksemplet nedenfor visualiserer vi, hvor mange % af produkterne, der gennemsnitligt er i restordre (5,07%) ![Rodnode for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-root.png)
+Når du trækker din måling til feltbrønd, viser de visuelle opdateringer den aggregerede måling. I eksemplet nedenfor visualiserer vi, hvor mange % af produkterne der gennemsnitligt er i restordre (5,07%).
+
+![Rodnode for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-root.png)
 
 Næste trin er af hente en eller flere dimensioner, hvor du vil foretage detailudledning. Føj disse felter til bucket'en **Forklar efter**. Bemærk, at der vises et plustegn ud for rodnoden. Hvis du vælger knappen +, kan du vælge, hvilket felt du vil foretage detailudledning i (du kan foretage detailudledning i felterne i en hvilken som helst rækkefølge).
+
 ![Menu for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-menu.png)
 
 Hvis du vælger **Forventningsbias** udvides træet, og målingerne analyseres efter værdierne i kolonnen. Denne proces kan gentages ved at vælge en anden node, hvor der skal foretages detailudledning.
+
 ![Udvidelse af fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-expansion.png)
 
 Når du vælger en node fra det sidste niveau, filtreres dataene i tværgående retning. Når du vælger en node fra et tidligere niveau, ændres stien.
@@ -72,10 +79,12 @@ Du kan bruge "AI-opdelinger" til at finde ud af, hvor du efterfølgende skal kig
 
 Analysen kan fungere på to måder, afhængigt af dine indstillinger. Standardfunktionsmåden er følgende:
 
-**Højeste værdi**: Tager alle tilgængelige felter i betragtning og bestemmer, hvilke data der skal foretages detailudledning i for at få den højeste værdi af den måling, der analyseres.  
-**Laveste værdi**: Tager alle tilgængelige felter i betragtning og bestemmer, hvilke data der skal foretages detailudledning i for at få den laveste værdi af den måling, der analyseres.  
+ - **Højeste værdi**: Tager alle tilgængelige felter i betragtning og bestemmer, hvilke data der skal foretages detailudledning i for at få den højeste værdi af den måling, der analyseres.  
+ - **Laveste værdi**: Tager alle tilgængelige felter i betragtning og bestemmer, hvilke data der skal foretages detailudledning i for at få den laveste værdi af den måling, der analyseres.  
 
-Hvis du vælger **Højeste værdi** i eksemplet med restordrer, resulterer det i følgende: ![AI-opdeling for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-ai-split.png)
+Hvis du vælger **Højeste værdi** i eksemplet med restordrer, resulterer det i følgende:
+
+![AI-opdeling for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-ai-split.png)
 
 Der vises en elpære ud for **Produkttype**, der angiver, at dette var en 'AI-opdeling'. Træet indeholder også en punkteret linje, der anbefaler noden **Patient Monitoring**, da det resulterer i den højeste værdi for restordrer (9,2 %). 
 
@@ -83,7 +92,9 @@ Peg på elpæren for at se et værktøjstip. I dette eksempel er værktøjstippe
 
 Du kan konfigurere visual'et for at finde **relative** AI-opdelinger i modsætning til **absolutte** opdelinger. 
 
-I relativ tilstand søges der efter høje værdier, der skiller sig ud (sammenlignet med de øvrige data i kolonnen). Lad os tage et kig på et eksempel, der illustrerer dette: ![Absolut opdeling for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-ai-absolute.png)
+I relativ tilstand søges der efter høje værdier, der skiller sig ud (sammenlignet med de øvrige data i kolonnen). Lad os tage et kig på et eksempel, der illustrerer dette:
+
+![Absolut opdeling for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-ai-absolute.png)
 
 I skærmbilledet ovenfor kigger vi på Nordamerikas salg af videospil. Vi opdeler først træet ved **Udgivernavn** og foretager derefter en detailudledning i Nintendo. Hvis du vælger **Højeste værdi** resulterer det i en udvidelse af **Platform er Nintendo**. Da Nintendo (udgiveren) kun udvikler til Nintendo-konsoller, findes der kun én værdi som ikke overraskende er den højeste værdi.
 
@@ -111,9 +122,13 @@ Hvis du foretrækker ikke at bruge nogen AI-opdelinger i træet, har du også mu
 
 ## <a name="tree-interactions-with-ai-splits"></a>Træinteraktioner med AI-opdelinger
 
-Du kan have flere på hinanden følgende AI-niveauer. Du kan også blande forskellige typer AI-niveauer (gå fra Højeste værdi til Laveste værdi og tilbage til Højeste værdi): ![Flere stier for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-multi-ai-path.png)
+Du kan have flere på hinanden følgende AI-niveauer. Du kan også blande forskellige typer AI-niveauer (gå fra Højeste værdi til Laveste værdi og tilbage til Højeste værdi):
 
-Hvis du vælger en anden node i træet, genberegnes AI-opdelingerne fra bunden. I eksemplet nedenfor er den valgte node ændret på niveauet **Forventningsbias**. De efterfølgende niveauer ændres for at give de korrekte højeste og laveste værdier ![AI-interaktioner for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-ai-interactions.png)
+![Flere AI-stier for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-multi-ai-path.png)
+
+Hvis du vælger en anden node i træet, genberegnes AI-opdelingerne fra bunden. I eksemplet nedenfor er den valgte node ændret på niveauet **Forventningsbias**. De efterfølgende niveauer ændres for at give de korrekte højeste og laveste værdier
+
+![AI-interaktioner for fordelingstræ](media/power-bi-visualization-decomposition-tree/tree-ai-interactions.png)
 
 AI-niveauer genberegnes også, når du filtrerer fordelingstræet efter et andet visual. I eksemplet nedenfor ses det, at restordre-% er højest for fabrik #0477.
 
@@ -144,15 +159,11 @@ Fordelingstræet understøttes ikke i følgende scenarier:
 
 AI-opdelinger understøttes ikke i følgende scenarier:  
 -   Azure Analysis Services
--   Direkte forespørgsel
 -   Power BI-rapportserver
 -   Udgiv på internettet
 -   Komplekse målinger og målinger fra udvidelsesskemaer i 'Analysér'
 
-Andre begrænsninger for prøveversionen:
-- Power BI – Mobil  
-- Fastgørelse til dashboard
-- Vis datafunktionalitet
+Andre begrænsninger:
 - Understøttelse i Spørgsmål og svar
 
 ## <a name="next-steps"></a>Næste trin

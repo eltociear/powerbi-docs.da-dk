@@ -6,15 +6,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
-ms.date: 09/13/2019
+ms.date: 05/28/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 38f3b9e40001b5cc3d90d35ed56e768237345e5d
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: f28182b8ecfcadae92f64a725622493ebd7a6c61
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84119812"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84160243"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Fejlfinding i forbindelse med opdatering af scenarier
 
@@ -23,7 +23,14 @@ Her kan du finde oplysninger om forskellige scenarier, som du kan stå overfor, 
 > [!NOTE]
 > Hvis du oplever et scenarie, der ikke er angivet nedenfor, og det medfører problemer for dig, kan du bede om yderligere hjælp på [communitywebstedet](https://community.powerbi.com/), eller du kan oprette en [supportanmodning](https://powerbi.microsoft.com/support/).
 >
->
+
+Du skal altid sikre, at de grundlæggende krav til opdatering er opfyldt og bekræftet. Disse grundlæggende krav omfatter:
+
+* Kontrollér, at gatewayversionen er opdateret
+* Kontrollér, at rapporten har en gateway markeret – hvis ikke, kan datakilden være ændret, eller den mangler muligvis
+
+Når du har bekræftet, at disse krav er opfyldt, kan du gennemgå følgende afsnit for at få mere at vide om fejlfinding. 
+
 
 ## <a name="email-notifications"></a>Mailmeddelelser
 

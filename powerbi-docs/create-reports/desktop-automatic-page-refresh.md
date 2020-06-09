@@ -7,15 +7,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/26/2019
+ms.date: 06/03/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7c9ba490a2cc30d42fee4f2317dbf5d4026ab59a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 1ff21d0508889fecda5022edb0e48714c8be3ed6
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83299694"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84337090"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatisk sideopdatering i Power BI Desktop (eksempelvisning)
 
@@ -25,7 +25,7 @@ Funktionen til automatisk sideopdatering i Power BI lader din aktive rapportside
 
 ## <a name="using-automatic-page-refresh"></a>Brug af automatisk sideopdatering
 
-Hvis du vil have vist denne prøveversion, skal du aktivere funktionen til automatisk sideopdatering i Power BI Desktop. Gå til **Fil > Indstillinger**, vælg derefter **Indstillinger**, og vælg **Funktioner til eksempelvisning** i ruden til venstre. Aktivér funktionen ved at markere afkrydsningsfeltet ud for *Automatisk sideopdatering*. Automatisk sideopdatering er kun tilgængelig for DirectQuery-datakilder.
+Hvis du vil have vist denne prøveversion, skal du aktivere funktionen til automatisk sideopdatering i Power BI Desktop. Gå til **Fil > Indstillinger**, vælg derefter **Indstillinger**, og vælg **Funktioner til eksempelvisning** i ruden til venstre. Aktivér funktionen ved at markere afkrydsningsfeltet ud for *Automatisk sideopdatering*. Automatisk sideopdatering er *kun* tilgængelig for DirectQuery-datakilder.
 
 Hvis du vil bruge automatisk sideopdatering, skal du vælge den rapportside, du vil aktivere opdatering for. Vælg ikonet **Formatering** (en malerulle) i ruden **Visualiseringer**, og find **Sideopdatering** nederst i ruden. 
 
@@ -121,15 +121,15 @@ Her er nogle oplysninger om de to forskellige arbejdsområdescenarier:
 
  1. *Funktion til/fra*: Hvis din kapacitetsadministrator har besluttet at deaktivere funktionen, kan du ikke konfigurere nogen form for sideopdatering i din publicerede rapport.
 
- 2. *Minimumsinterval for opdatering*: Når du aktiverer funktionen, skal din kapacitetsadministrator konfigurere et minimumsinterval for opdateringen. Hvis intervallet er lavere end minimumsintervallet, tilsidesætter Power BI-tjenesten intervallet for at overholde det minimumsinterval, der er angivet af kapacitetsadministratoren.
+ 2. *Minimumsinterval for opdatering*: Når du aktiverer funktionen, skal din kapacitetsadministrator konfigurere et minimumsinterval for opdateringen. Hvis intervallet er lavere end minimumsintervallet, *tilsidesætter* Power BI-tjenesten intervallet for at overholde det minimumsinterval, der er angivet af kapacitetsadministratoren. Denne tilsidesættelse kaldes *tilsidesættelse af kapacitetsadministrator* i følgende tabel. 
 
-I nedenstående tabel beskrives flere detaljer, hvor denne funktion er tilgængelig, og grænserne for hver kapacitetstype og [lagertilstand](../connect-data/service-dataset-modes-understand.md)
+I nedenstående tabel beskrives flere detaljer, hvor denne funktion er tilgængelig, og grænserne for hver kapacitetstype og [lagertilstand](../connect-data/service-dataset-modes-understand.md):
 
 | Lagertilstand | Dedikeret kapacitet | Delt kapacitet |
 | --- | --- | --- |
 | Direkte forespørgsel | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 1 sekund <br>**Tilsidesættelse af kapacitetsadministrator**  – ja. | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 30 minutter <br>**Tilsidesættelse af kapacitetsadministrator** – nej. |
 | Importér | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. |
-| Blandet tilstand (DQ + andre) | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 1 sekund <br>**Tilsidesættelse af kapacitetsadministrator**  – ja. | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 30 minutter <br>**Tilsidesættelse af kapacitetsadministrator** – nej. |
+| Blandet tilstand (DirectQuery + andre datakilder) | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 1 sekund <br>**Tilsidesættelse af kapacitetsadministrator**  – ja. | **Understøttet** – ja. <br>**Minimumsinterval for opdatering** – 30 minutter <br>**Tilsidesættelse af kapacitetsadministrator** – nej. |
 | Live connect AS | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. |
 | Live connect PBI | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. | **Understøttet** – nej. <br>**Minimumsinterval for opdatering** – I/T. <br>**Tilsidesættelse af kapacitetsadministrator** – I/T. |
 
@@ -186,7 +186,7 @@ Dette afsnit indeholder almindelige spørgsmål og svar
     * Det tager op til fem minutter, før ændringer af indstillinger for automatisk sideopdatering, der foretages i administratorgrænsefladen, træder i kraft.
     * Ud over at aktivere automatisk sideopdatering for kapaciteten skal du også aktivere funktionen for de sider i en rapport, du vil have opdateret.
 
-3. Min rapport fungerer i blandet tilstand (DQ + import). Ikke alle visuelle elementer opdateres.
+3. Min rapport fungerer i blandet tilstand (blandet tilstand betyder, at rapporten har en DirectQuery-forbindelse og en Importér datakilde). Ikke alle visuelle elementer opdateres.
 
     * Hvis dine visuelle elementer refererer til importtabeller, er dette forventeligt. Funktionen Import understøtter ikke automatisk sideopdatering.
     * Se spørgsmål 1 i dette afsnit.
@@ -211,6 +211,7 @@ Dette afsnit indeholder almindelige spørgsmål og svar
 Du kan få flere oplysninger i følgende artikler:
 
 * [Brug af DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
+* [Brug sammensatte modeller i Power BI Desktop](../transform-model/desktop-composite-models.md)
 * [Brug Effektivitetsanalyse til at undersøge ydeevnen for rapportelementer](desktop-performance-analyzer.md)
 * [Udrulning og administration af Power BI Premium-kapaciteter](../guidance/whitepaper-powerbi-premium-deployment.md)
 * [Datakilder i Power BI Desktop](../connect-data/desktop-data-sources.md)

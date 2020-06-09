@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: dd474da6a3fb61b6fd78dc55a6b0313e51bbb773
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: a26a93851d3914527bbb61275d763f95f21d7603
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83693580"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84336814"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicer en app i Power BI
 
@@ -209,6 +209,7 @@ Ting, du skal være opmærksom i forbindelse med publicering af apps:
 * Hvis den bruger, der blev føjet til adgangslisten, allerede havde adgang til appen via arbejdsområdet, vises vedkommende ikke på adgangslisten til appen i forbindelse med den nye arbejdsområdeoplevelse.  
 * Når du bruger det nye udseende for Power BI-tjenesten, vises URL-adressen til supportwebstedet på kortet med oplysninger om elementet. Læs mere om [det nye udseende i Power BI](../consumer/service-new-look.md).
 * I forbindelse med apps kan du give brugerne mulighed for at dele appen og appens underliggende datasæt ved hjælp af tilladelsen til deling. Denne indstilling er som standard slået fra for nye apps. Vi anbefaler, at du aktiverer denne indstilling for dine eksisterende apps og opdaterer tilladelsen til de underliggende datasæt. Indstillingen blev aktiveret for eksisterende apps, fordi apps indledningsvis blev udviklet til at erstatte indholdspakker, der havde denne funktionsmåde.
+* Apps kan maksimalt have 200 dashboards. 
 
 ## <a name="next-steps"></a>Næste trin
 * [Opret et arbejdsområde](service-create-workspaces.md)

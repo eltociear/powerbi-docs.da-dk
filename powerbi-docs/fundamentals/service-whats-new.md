@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 2f98071000715c65f50f39eb4d121a4af6e72f99
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: b43d52445c9a5232ba1747a9dae9333da8697f84
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83813341"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273063"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
 Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner i **Power BI-tjenesten**. Du kan finde relaterede oplysninger om nyheder under:
@@ -646,7 +646,7 @@ Se [bloggen](https://powerbi.microsoft.com/blog/power-bi-service-weekly-update-1
 * Med denne uges tjenesteopdatering kan du, når du opretter nye rapporter, nu vælge mellem flere sidestørrelser samt definere din egen sidestørrelse. Dette størrelsen og højde-bredde-forholdet for hver side i rapporten.
 * Vi har tilføjet yderligere understøttelse af formatering af visuelle elementer for billeder og boblediagrammer. Du kan låse størrelsesforholdet under tilpasning af billeder for at undgå billedforvrængning, og bobler i punktdiagrammer kan konfigureres til at være udfyldt eller ej.
 * I dag sender Power BI delingsinvitationer til en alternativ mailadresse. Når et dashboard deles med dig, sender vi invitationslinket både til din oprindelige mailadresse og til din alternative mailadresse (hvis du har konfigureret en).
-* Power BI er tilgængeligt for alle kunder, herunder dem på Dedicated Multitenant-arkitekturen (DonMT) i O365. Du kommer til at bruge Power BI som en delt tjeneste i en tilstand med flere lejere. I de fleste tilfælde kan du tilmelde dig Power BI ved at følge den simple [selvbetjente tilmeldingsproces](https://powerbi.microsoft.com/) – du skal blot angive din arbejdsmailadresse og angive dit navn og en adgangskode for at komme i gang. Hvis du er lejeradministrator, kan du tildele dine brugere licenser ved at følge vejledningen [her](https://go.microsoft.com/fwlink/?LinkId=627174).
+* Power BI er tilgængeligt for alle kunder, herunder dem på Microsoft 365-arkitekturen Dedicated on Multitenant (DonMT). Du kommer til at bruge Power BI som en delt tjeneste i en tilstand med flere lejere. I de fleste tilfælde kan du tilmelde dig Power BI ved at følge den simple [selvbetjente tilmeldingsproces](https://powerbi.microsoft.com/) – du skal blot angive din arbejdsmailadresse og angive dit navn og en adgangskode for at komme i gang. Hvis du er lejeradministrator, kan du tildele dine brugere licenser ved at følge vejledningen [her](https://go.microsoft.com/fwlink/?LinkId=627174).
 * Azure Audit Logs giver dig mulighed at få vist driftslogge fra control-plane i dit Azure-abonnement. Power BI Azure Audit Logs-indholdspakken kan hjælpe dig med nemt at analysere og visualisere det hav af oplysninger, der findes i disse logge. Indholdspakken gør det muligt at oprette forbindelse til dine data og begynde at få indsigt med køreklare dashboards og rapporter. Læs vores [blog](https://powerbi.microsoft.com/blog/monitor-azure-audit-logs-with-power-bi/) og [onlinedokumentation](../connect-data/service-connect-to-services.md) for at få mere at vide.
 
 [Få mere at vide på vores blog](https://powerbi.microsoft.com/blog/power-bi-weekly-service-update-0929/).

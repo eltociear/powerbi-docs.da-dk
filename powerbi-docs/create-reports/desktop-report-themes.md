@@ -7,94 +7,115 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/16/2020
+ms.date: 06/01/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1f29d59d3b10f8dc963d8ba1965638bc01bae0c8
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 40a145814938b15b55476f4cc0536290cd009cfe
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83335689"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273129"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Brug af rapporttemaer i Power BI Desktop
 
 Med *rapporttemaer* i Power BI Desktop kan du anvende designændringer på hele rapporten, f.eks. bruge virksomhedsfarver, ændre ikonsæt eller anvende ny standardformatering for visualiseringer. Når du anvender et rapporttema, anvendes farver og formatering fra det valgte tema som standard på alle visuals i rapporten. Der gælder nogle få undtagelser, som er beskrevet senere i denne artikel.
 
-![Rapporttemaer](media/desktop-report-themes/report-themes-1a.png)
+Du kan vælge rapporttemaer ved at navigere til båndet **Vis** og derefter vælge rullepilen i afsnittet **Temaer** på båndet og derefter vælge det ønskede tema. Tilgængelige temaer ligner de temaer, der ses i andre Microsoft-produkter, f.eks. Microsoft PowerPoint.
 
-Der findes to typer rapporttemaer, indbyggede rapporttemaer og brugerdefinerede rapporttemafiler:
+![Rapporttemaer](media/desktop-report-themes/report-themes-01.png)
 
-- Indbyggede rapporttemaer indeholder forskellige typer foruddefinerede farveskemaer, der installeres sammen med Power BI Desktop. Du vælger indbyggede rapporttemaer direkte fra menuen Power BI Desktop.
+Der findes to typer rapporttemaer, indbyggede rapporttemaer og brugerdefinerede rapporttemafiler.
 
-- Brugerdefinerede rapporttemafiler er rapporttemaer, der er oprettet i JSON-filer, som definerer deres grundlæggende struktur. Hvis du vil anvende et brugerdefineret rapporttema, skal du importere den tilhørende JSON-fil i Power BI Desktop og anvende den til din rapport.
+- **Indbyggede** rapporttemaer indeholder forskellige typer foruddefinerede farveskemaer, der installeres sammen med Power BI Desktop. Du vælger indbyggede rapporttemaer direkte fra menuen Power BI Desktop.
 
-  Du kan også tilpasse et eksisterende rapporttema fra Power BI Desktop ved hjælp af dialogboksen [**Tilpas tema**](#create-and-customize-a-theme-in-power-bi-desktop).
+- Der oprettes **brugerdefinerede** rapporttemaer ved at justere et aktuelt tema og derefter gemme det som et brugerdefineret tema eller oprette dit brugerdefinerede tema ved hjælp af en JSON-fil. JSON-filen giver detaljeret kontrol over mange aspekter af et rapporttema, som beskrevet senere i denne artikel. 
 
-Du kan også tilpasse og standardisere næsten alle elementer, der vises, i afsnittet **Formatering** i ruden **Visualiseringer** enten via tilpasninger, der foretages direkte i Power BI Desktop eller via JSON-temafilen. Målet er at give dig fuld kontrol over, hvordan din standardrapport ser ud på et detaljeret niveau.
+Lad os diskutere, hvordan rapporttemaer fungerer og derefter gå videre til, hvordan du opretter brugerdefinerede rapporttemaer.
+
 
 ## <a name="how-report-themes-work"></a>Sådan fungerer rapporttemaer
 
-Hvis du vil anvende et rapporttema på en rapport i Power BI Desktop, kan du vælge mellem de [tilgængelige indbyggede rapporttemaer](#built-in-report-themes), du kan [importere en JSON-fil med et brugerdefineret tema](#import-custom-report-theme-files), eller du kan [bruge dialogboksen **Tilpas tema**](#create-and-customize-a-theme-in-power-bi-desktop).
+Hvis du vil anvende et rapporttema på en Power BI Desktop-rapport, kan du vælge mellem følgende indstillinger:
 
-Du kan finde flere oplysninger om, hvilke standarder der kan tilpasses, i afsnittet med [rapporttemaets JSON-format](#report-theme-json-file-format) nedenfor.
+* Vælg mellem de [tilgængelige indbyggede rapporttemaer](#built-in-report-themes), der er indbygget i Power BI Desktop
+* Tilpas et tema ved hjælp af dialogboksen **Tilpas tema**
+* [Importér en JSON-fil med et brugerdefineret tema](#import-custom-report-theme-files).
+
+Vi ser nærmere på hver af disse muligheder efter tur.
 
 ### <a name="built-in-report-themes"></a>Indbyggede rapporttemaer
 
 Sådan vælger du blandt de tilgængelige indbyggede rapporttemaer:
 
-1. Vælg **Skift tema** på båndet **Hjem**.
+1. Vælg rullepilen **Temaer** knappen **Skift tema** på båndet **Vis**.
 
-   ![Vælg et rapporttema](media/desktop-report-themes/report-themes-2a.png)
+   ![Vælg et rapporttema](media/desktop-report-themes/report-themes-02.png)
 
-2. Vælg et af de inkluderede temaer i rullemenuen.
+2. Vælg blandt de inkluderede temaer på rullemenuen, der vises.
+
+   ![Vælg et rapporttema](media/desktop-report-themes/report-themes-03.png)
 
    Rapporttemaet anvendes nu på rapporten.
 
-I følgende tabel vises de tilgængelige indbyggede rapporttemaer.
+    I følgende tabel vises de tilgængelige indbyggede rapporttemaer.
+    
+    | Indbygget rapporttema | Standardfarvesekvens |
+    |------ |---------- |
+    | Standard | ![Standard](media/desktop-report-themes/report-themes-color-scheme-default.png)|
+    | Highrise | ![Highrise](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
+    | Leder | ![Leder](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
+    | Grænse| ![Grænse](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
+    | Forny | ![Forny](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
+    | Blomstring | ![Blomstring](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
+    | Tidevand| ![Tidevand](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
+    | Temperatur | ![Temperatur](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
+    | Sol| ![Sol](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
+    | Divergerende | ![Divergerende](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
+    | Storm | ![Storm](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
+    | Klassisk | ![Klassisk](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
+    | Bypark | ![Bypark](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
+    | Klasselokale | ![Klasselokale](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
+    | Sikker for farveblinde | ![Sikker for farveblinde](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
+    | Elektrisk | ![Elektrisk](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
+    | Høj kontrast | ![Høj kontrast](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
+    | Solnedgang | ![Solnedgang](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
+    | Tusmørke | ![Tusmørke](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
+    
+3. Du kan også gennemse samlingen af de temaer, der er oprettet af medlemmer af Power BI-community'et, ved at vælge **Temagalleri** på rullelisten Temaer.
 
-| Indbygget rapporttema | Standardfarvesekvens |
-|------ |---------- |
-| Standard | ![Standard](media/desktop-report-themes/report-themes-color-scheme-default.png)|
-| Highrise | ![Highrise](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
-| Leder | ![Leder](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
-| Grænse| ![Grænse](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
-| Forny | ![Forny](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
-| Blomstring | ![Blomstring](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
-| Tidevand| ![Tidevand](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
-| Temperatur | ![Temperatur](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
-| Sol| ![Sol](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
-| Divergerende | ![Divergerende](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
-| Storm | ![Storm](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
-| Klassisk | ![Klassisk](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
-| Bypark | ![Bypark](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
-| Klasselokale | ![Klasselokale](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
-| Sikker for farveblinde | ![Sikker for farveblinde](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
-| Elektrisk | ![Elektrisk](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
-| Høj kontrast | ![Høj kontrast](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
-| Solnedgang | ![Solnedgang](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
-| Tusmørke | ![Tusmørke](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
+   ![Temagalleri](media/desktop-report-themes/report-themes-04.png)
+
+    Fra galleriet kan du vælge et tema, du kan lide, og downloade den tilknyttede JSON-fil. 
+
+    Hvis du vil installere den downloadede fil, skal du vælge **Søg efter temaer** på rullelisten **Temaer**, gå til den placering, hvor du har downloadet JSON-filen, og vælge den for at importere temaet i Power BI Desktop som et nyt tema.
+
+    Når det lykkes, viser Power BI en dialogboks, hvor importen blev fuldført.
+
+   ![Import af temaet lykkedes](media/desktop-report-themes/report-themes-05.png)
 
 ## <a name="customize-report-themes"></a>Tilpas rapporttemaer
 
-Fra og med december 2019-versionen af Power BI Desktop kan du tilpasse et rapporttema på to måder:
+Du kan også tilpasse og standardisere næsten alle elementer, der vises, i afsnittet **Formatering** i ruden **Visualiseringer** enten via tilpasninger, der foretages direkte i Power BI Desktop eller via JSON-temafilen. Målet er at give dig fuld kontrol over, hvordan din standardrapport ser ud på et detaljeret niveau.
+
+De to måder at tilpasse rapporttemaer på er følgende:
 
 - [Opret og tilpas et tema i Power BI Desktop](#create-and-customize-a-theme-in-power-bi-desktop)
 - [Opret og tilpas en JSON-fil med et brugerdefineret rapporttema](#introduction-to-report-theme-json-files)
 
+Lad os tage et kig på hver af disse fremgangsmåder i følgende afsnit.
+
 ### <a name="create-and-customize-a-theme-in-power-bi-desktop"></a>Opret og tilpas et tema i Power BI Desktop
 
-Sådan tilpasser du et tema direkte i Power BI Desktop:
+Hvis du vil tilpasse et tema direkte i Power BI Desktop, kan du vælge et tema, der er tæt på det, du ønsker, og foretage et par justeringer. Først skal du vælge det tema, der er tæt på (eller blot starte med et hvilket som helst tema, og tilpasse det væk fra det), og du kan benytte følgende fremgangsmåde:
 
-1. På båndet **Hjem** skal du vælge **Skift tema** > **Tilpas det aktuelle tema**.
+1. På båndet **Vis** skal du vælge knappen **Temaer** på rullelisten og vælge **Tilpas det aktuelle tema**.
 
-   Der åbnes en dialogboks, som viser, hvordan du kan tilpasse det rapporttema, der i øjeblikket anvendes på rapporten.
+   ![Tilpas temaet](media/desktop-report-themes/report-themes-06.png)
 
-   ![Tilpas temaet](media/desktop-report-themes/report-themes_5b.png)
+2. Der vises en dialogboks, hvor du kan foretage alle former for ændringer af det aktuelle tema, og derefter kan du gemme dine indstillinger som et nyt tema.
 
-2. Hvis du synes om et eksisterende tema og ønsker at foretage et par justeringer, skal du markere (eller importere) temaet og derefter vælge **Tilpas det aktuelle tema**.
-
-   ![Tilpas det aktuelle tema](media/desktop-report-themes/report-themes_5c.png)
+   ![Tilpas det aktuelle tema](media/desktop-report-themes/report-themes-07.png)
 
 Temaindstillinger, der kan tilpasses, findes i følgende kategorier, som afspejles i dialogboksen **Tilpas tema**:
 
@@ -113,11 +134,11 @@ Hvis du tilpasser det aktuelle tema på denne måde, kan du hurtigt og nemt tilp
 
 ### <a name="import-custom-report-theme-files"></a>Importér brugerdefinerede rapporttemafiler
 
-Sådan importerer du en brugerdefineret rapporttemafil:
+Du kan også importere en brugerdefineret rapporttemafil ved at benytte følgende fremgangsmåde:
 
-1. Vælg **Skift tema** på båndet **Hjem**, og vælg derefter **Importér tema** på rullelisten.
+1. Vælg båndet **Vis**, på rullelisten **Temaer** skal du vælge **Gennemse temaer**.
 
-   ![Importér tema](media/desktop-report-themes/report-themes-3a.png)
+   ![Importér tema](media/desktop-report-themes/report-themes-08.png)
 
    Der vises et vindue, hvorfra du kan søge efter placeringen af JSON-temafilen.
 
@@ -127,7 +148,7 @@ Sådan importerer du en brugerdefineret rapporttemafil:
 
    Når temafilen er blevet indlæst, får du besked i Power BI Desktop.
 
-   ![Temaet blev importeret](media/desktop-report-themes/report-themes_5.png)
+   ![Import af temaet lykkedes](media/desktop-report-themes/report-themes-05.png)
 
 ## <a name="introduction-to-report-theme-json-files"></a>Introduktion til JSON-filer til rapporttemaer
 
@@ -172,7 +193,7 @@ Sådan får du vist de tilgængelige farver i et rapporttema:
 
 3. Vælg rullelisten for et element for at få vist oplysninger om **temafarver** i rapporttemaet.
 
-   ![Temafarver](media/desktop-report-themes/report-themes_8.png)
+   ![Temafarver](media/desktop-report-themes/report-themes-09.png)
 
 Når vi f.eks. har anvendt de mange grønne og brune farver fra Skt. Patricks dag-temaet, skal vi vælge en visualisering. Se alle de grønne farver? Det skyldes, at disse farver var en del af det rapporttema, som vi importerede og anvendte.
 
@@ -184,7 +205,7 @@ Lad os sige, at du anvender et brugerdefineret farvesæt (eller en individuel fa
 
 Det er også muligt at angive farven på et datapunkt manuelt ved hjælp af afsnittet **Temafarver**. Farverne opdateres *ikke*, når du anvender et nyt rapporttema. Hvis du vil have standardfarverne tilbage, så de opdateres, når du anvender et nyt rapporttema, skal du vælge **Vend tilbage til standard** i paletten med **temafarver** i farvevælgeren.
 
-![Gendan til standard](media/desktop-report-themes/report-themes_9.png)
+![Gendan til standard](media/desktop-report-themes/report-themes-10.png)
 
 Desuden kan mange Power BI-visuals ikke anvendes på rapporttemaer.
 
@@ -230,9 +251,9 @@ Her er nogle flere rapporttemaer, som du kan bruge som udgangspunkt:
 
 Rapporttemaer kan gøre dine Power BI Desktop-rapporter til en farverig afspejlning af dig, din organisation eller også den aktuelle sæson eller helligdag.
 
-## <a name="export-report-themes-preview"></a>Eksportér rapporttemaer (prøveversion)
+## <a name="export-report-themes"></a>Eksportér rapporttemaer
 
-Fra og med udgivelsen af Power BI Desktop i december 2019 kan du nu vælge at eksportere det aktuelt anvendte rapporttema direkte fra Power BI Desktop til en JSON-fil. Når du har eksporteret et rapporttema, kan du bruge det igen i andre rapporter. Med denne indstilling kan du eksportere JSON-filen til de fleste af de indbyggede temaer. De eneste undtagelser er de grundlæggende temaer, Classic og Standard, som andre temaer bygger på, når de importeres.
+Du kan eksportere det aktuelt anvendte rapporttema direkte fra Power BI Desktop til en JSON-fil. Når du har eksporteret et rapporttema, kan du bruge det igen i andre rapporter. Med denne indstilling kan du eksportere JSON-filen til de fleste af de indbyggede temaer. De eneste undtagelser er de grundlæggende temaer, Classic og Standard, som andre temaer bygger på, når de importeres.
 
 Sådan eksporterer du det tema, der aktuelt anvendes, fra Power BI Desktop:
 

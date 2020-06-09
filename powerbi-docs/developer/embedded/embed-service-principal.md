@@ -1,6 +1,6 @@
 ---
-title: Tjenesteprincipal med Power BI
-description: Få mere at vide om, hvordan du registrerer et program i Azure Active Directory ved hjælp af en tjenesteprincipal og en programhemmelighed, som kan bruges til at integrere Power BI-indhold.
+title: Integrer Power BI-indhold med tjenesteprincipal og en programhemmelighed
+description: Få mere at vide om, hvordan du godkender for integreret analyse ved hjælp af en tjenesteprincipal i et Azure Active Director-program og en programhemmelighed.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,19 +8,24 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/30/2020
-ms.openlocfilehash: 5e9b14fb0eccc0418ca7d5b4a7859f26c1781d50
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.date: 05/12/2020
+ms.openlocfilehash: da7db691628b0fbcfd42d6a35f99b18b4cfdcc88
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84121198"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84315764"
 ---
-# <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Integrering af Power BI-indhold med tjenesteprincipal og programhemmelighed
+# <a name="embed-power-bi-content-with-service-principal-and-an-application-secret"></a>Integrer Power BI-indhold med tjenesteprincipal og en programhemmelighed
 
 [!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
 
 I denne artikel beskrives godkendelse af tjenesteprincipalen ved hjælp af et *program-id* og en *programhemmelighed*.
+
+>[!NOTE]
+>Vi anbefaler, at du sikrer dine backend-tjenester ved hjælp af certifikater i stedet for hemmelige nøgler.
+>* [Få mere at vide om at hente adgangstoken fra Azure AD ved hjælp af hemmelige nøgler eller certifikater](https://docs.microsoft.com/azure/architecture/multitenant-identity/client-assertion).
+>* [Integrer Power BI-indhold med tjenesteprincipal og et certifikat](embed-service-principal-certificate.md).
 
 ## <a name="method"></a>Metode
 
@@ -54,30 +59,12 @@ Opret en Microsoft Azure AD-app ved hjælp af en af disse metoder:
 
 ### <a name="creating-an-azure-ad-app-in-the-microsoft-azure-portal"></a>Oprettelse af en Microsoft Azure AD-app i Microsoft Azure-portalen
 
-1. Log på [Microsoft Azure](https://portal.azure.com/#allservices).
-
-2. Søg efter **appregistreringer**, og klik på linket **Appregistreringer**.
-
-    ![azure-appregistrering](media/embed-service-principal/azure-app-registration.png)
-
-3. Klik på **Ny registrering**.
-
-    ![ny registrering](media/embed-service-principal/new-registration.png)
-
-4. Udfyld de påkrævede oplysninger:
-    * **Navn** – Angiv et navn til programmet
-    * **Understøttede kontotyper** – vælg den Azure AD-konto, du har brug for
-    * (Valgfrit) **URI til omdirigering** – Angiv en URI, hvis det er nødvendigt
-
-5. Klik på **Registrer**.
-
-6. Efter registrering er *program-id'et* tilgængeligt via fanen **Oversigt**. Kopiér og gem *program-id'et* til senere brug.
-
-    ![program-id](media/embed-service-principal/application-id.png)
+[!INCLUDE[service create app](../../includes/service-principal-create-app.md)]
 
 7. Klik på fanen **Certifikater og hemmeligheder**.
 
      ![program-id](media/embed-service-principal/certificates-and-secrets.png)
+
 
 8. Klik på **Ny klienthemmelighed**
 
@@ -157,7 +144,7 @@ Føj den sikkerhedsgruppe, du oprettede i Microsoft Azure AD, til det specifikke
 
 ![Administrationsportal](media/embed-service-principal/admin-portal.png)
 
-## <a name="step-4---add-the-service-principal-as-an-admin-to-your-workspace"></a>Trin 4 – Tilføj tjenesteprincipalen som administrator til dit arbejdsområde
+## <a name="step-4---add-the-service-principal-to-your-workspace"></a>Trin 4 – Føj tjenesteprincipalen til dit arbejdsområde
 
 Hvis du vil aktivere dine Microsoft Azure AD-adgangsartefakter, f. eks. rapporter, dashboards og datasæt i Power BI-tjenesten, skal du tilføje tjenestens principalenhed som medlem eller administrator til dit arbejdsområde.
 
@@ -181,20 +168,21 @@ Du kan integrere dit indhold i et eksempelprogram eller i dit eget program.
 
 Når dit indhold er integreret, er du klar til at [gå videre til produktionen](embed-sample-for-customers.md#move-to-production).
 
-## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
-
-* Tjenesteprincipalen fungerer kun med [nye arbejdsområder](../../collaborate-share/service-create-the-new-workspaces.md).
-* **Mit arbejdsområde** understøttes ikke til brug sammen med tjenesteprincipalen.
-* Der kræves dedikeret kapacitet for at kunne begynde at producere.
-* Du kan ikke logge på Power BI-portalen ved hjælp af en tjenesteprincipal.
-* Der kræves rettigheder som Power BI-administrator for at kunne aktivere tjenesteprincipalen under Indstillinger for udvikler på Power BI-administrationsportalen.
-* Programmer til [integration i din organisation](embed-sample-for-your-organization.md) kan ikke bruge en tjenesteprincipal.
-* Administration af [dataflow](../../transform-model/service-dataflows-overview.md) understøttes ikke.
-* Tjenesteprincipaler understøtter i øjeblikket ingen administrator-API'er.
-* Når du bruger en tjenesteprincipal med en [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview)-datakilde, skal selve tjenesteprincipalen have tilladelser til en forekomst af Azure Analysis Services. Brug af en sikkerhedsgruppe, der indeholder tjenesteprincipalen til dette formål, fungerer ikke.
+[!INCLUDE[service principal limitations](../../includes/service-principal-limitations.md)]
 
 ## <a name="next-steps"></a>Næste trin
 
-* [Power BI Embedded til dine kunder](embed-sample-for-customers.md)
+>[!div class="nextstepaction"]
+>[Registrer et program](register-app.md)
 
-* [Sikkerhed på rækkeniveau ved hjælp af datagateway i det lokale miljø med tjenesteprincipal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+> [!div class="nextstepaction"]
+>[Power BI Embedded til dine kunder](embed-sample-for-customers.md)
+
+>[!div class="nextstepaction"]
+>[Objekter for et program og en tjenesteprincipal i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+
+>[!div class="nextstepaction"]
+>[Sikkerhed på rækkeniveau ved hjælp af datagateway i det lokale miljø med tjenesteprincipal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+
+>[!div class="nextstepaction"]
+>[Integrer Power BI-indhold med tjenesteprincipal og et certifikat](embed-service-principal-certificate.md)

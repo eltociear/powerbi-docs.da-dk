@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/20/2020
+ms.date: 06/01/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4a363ce72002003981f1bcbe46e0f5367f89860f
-ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
+ms.openlocfilehash: 417d5a03ed45897896db15f2fd31d3badae837c5
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83733460"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273454"
 ---
 # <a name="publish-datasets-and-reports-from-power-bi-desktop"></a>Udgiv datasæt og rapporter fra Power BI Desktop
 Når du udgiver en Power BI Desktop-fil i Power BI-tjenesten, udgiver du dataene i modellen på dit Power BI-arbejdsområde. Det samme gælder for de rapporter, du har oprettet i visningen **Rapport**. Du kan se et nyt datasæt med det samme navn og alle rapporter i navigatoren til dit arbejdsområde.
@@ -23,13 +23,12 @@ Hvis du udgiver fra Power BI Desktop, har det samme effekt, som hvis du bruger *
 
 > [!NOTE]
 > De ændringer, du foretager i rapporten i Power BI, gemmes ikke i den oprindelige Power BI Desktop-fil igen. Dette omfatter, når du tilføjer, sletter eller ændrer visualiseringer i rapporter.
-> 
-> 
 
 ## <a name="to-publish-a-power-bi-desktop-dataset-and-reports"></a>Sådan udgiver du Power BI Desktop-datasæt og -rapporter
 1. I Power BI Desktop skal du vælge **Filer** \> **Udgiv** \> **Publicer i Power BI** eller vælge **Udgiv** på båndet.  
 
    ![Knappen Publicer](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
+
 
 2. Log på Power BI.
 3. Vælg en destination.
@@ -55,3 +54,7 @@ Denne proces er ret ligetil, men der er et par ting, du skal vide:
    ![Advarsel om genudgivelse af et datasæt](media/desktop-upload-desktop-files/pbid-dataset-impact-analysis-desktop-warning.png)
 
    [Få mere at vide om Effektanalyse af datasæt](../collaborate-share/service-dataset-impact-analysis.md).
+
+> [!NOTE]
+> Nogle dataforbindelser i Power BI-rapporter kan indeholde links til data i stedet for at inkludere dataene i det datasæt, der importeres til Power BI-tjenesten. Det kan f.eks. være, at DirectQuery-forbindelser opretter forbindelse til data, mens opdateringer eller interaktioner forekommer, i stedet for at importere selve dataene. Hvis sammenkædede datakilder i din rapport er i det lokale miljø, kan du bruge en gateway til at få adgang til dem fra Power BI. Du kan finde flere oplysninger i [Hvad er en datagateway i det lokale miljø?](../connect-data/service-gateway-onprem.md).
+> 

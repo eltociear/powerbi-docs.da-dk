@@ -1,26 +1,27 @@
 ---
-title: Det var ikke muligt at føje Power BI til O365-partner
-description: Det var ikke muligt at føje Power BI til en Microsoft 365-syndikeringspartner. Den syndikerede model er en indkøbsmodel, der bruges af Microsoft 365.
+title: Køb Power BI via din Microsoft 365-partner
+description: Få mere at vide om, hvordan du føjer Power BI til et Microsoft 365-abonnement, der er købt via en partner. Den syndikerede model er en indkøbsmodel, der bruges af Microsoft 365.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 05/27/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 2c590875b4dee81f7ca54434d6e5895be885be97
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: bc00c69869ea58aee8b4d0a79fce6b24489bde18
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83812329"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159723"
 ---
-# <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det var ikke muligt at føje Power BI til en partners Office 365-abonnement
+# <a name="add-power-bi-to-a-microsoft-365-partner-subscription"></a>Føj Power BI til et Microsoft 365-partnerabonnement
 
-Microsoft 365 giver firmaer mulighed for at forhandle Microsoft 365 samlet og integreret med deres egne løsninger, hvilket giver slutkunderne et enkelt kontaktpunkt for køb, fakturering og support.
+Microsoft 365 giver firmaer mulighed for at forhandle Microsoft 365 samlet og integreret med deres egne løsninger, hvilket giver kunderne et enkelt kontaktpunkt for køb, fakturering og support.
 
-Hvis du er interesseret i at købe Power BI sammen med dit Office 365-abonnement, anbefaler vi, at du kontakter din partner for at gøre det. Hvis din partner ikke tilbyder Power BI i øjeblikket, har du andre muligheder, du kan benytte dig af.
+Hvis du er interesseret i at føje Power BI til dit Microsoft 365-abonnement, anbefaler vi, at du kontakter din partner for at gøre det. Hvis din partner ikke i øjeblikket tilbyder Power BI, kan du følge de indstillinger, der er beskrevet nedenfor.
 
 ## <a name="work-with-your-partner-to-purchase-power-bi"></a>Arbejd sammen med din partner om at købe Power BI
 
@@ -36,13 +37,15 @@ Afhængigt af relationen med din partner kan du muligvis købe Power BI direkte 
 
 1. Gå til [Microsoft 365 Administration](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
-1. Åbn **Fakturering** i menuen til venstre:
+1. Åbn **Fakturering** i menuen til venstre, og vælg derefter **Dine produkter**:
 
-    * Hvis du kan se **Abonnementer**, kan du købe tjenesten direkte fra Microsoft, eller du kan kontakte en anden partner, der tilbyder Power BI.
+   ![Menuen Fakturering i Microsoft 365 Administration](media/service-admin-syndication-partner/365-my-products.png)
 
-        ![Fakturering – med abonnementer](media/service-admin-syndication-partner/billingsub.png)
+ 1. Se efter **Abonnementer** som vist på billedet nedenfor. Hvis du kan se **Abonnementer**, kan du købe tjenesten direkte fra Microsoft, eller du kan kontakte en anden partner, der tilbyder Power BI.
 
-    * Hvis du ikke kan se **Abonnementer**, kan du ikke købe direkte fra Microsoft eller en anden partner.
+    ![Dine produkter med abonnementer](media\service-admin-syndication-partner\365-subscriptions.png)
+
+    Hvis du ikke kan se **Abonnementer**, kan du ikke købe direkte fra Microsoft eller en anden partner.
 
 Hvis din partner ikke tilbyder Power BI, og du ikke kan købe direkte fra Microsoft eller en anden partner, kan du overveje at tilmelde dig en gratis prøveversion.
 
@@ -56,31 +59,11 @@ Individuelle tilmeldinger (også kaldet ad hoc-abonnementer) er som standard dea
 
 ![Billede af beklagelse](media/service-admin-syndication-partner/sorry.png)
 
-Hvis du vil aktivere ad hoc-abonnementer, kan du kontakte din partner og anmode om at få aktiveret dem. Hvis du er administrator for din lejer og ved, hvordan du bruger Azure Active Directory PowerShell-kommandoer, kan du selv aktivere ad hoc-abonnementer. [Azure Active Directory PowerShell til Graph](/powershell/azure/active-directory/install-adv2/)
-
-1. Log på Azure Active Directory-domæneservices ved hjælp af dine legitimationsoplysninger til Microsoft 365. I den første linje i nedenstående script bliver du bedt om dine legitimationsoplysninger. Den anden linje opretter forbindelse til Azure Active Directory.
-
-    ```powershell
-    $msolcred = get-credential
-    connect-msolservice -credential $msolcred
-    ```
-
-    ![Angiv dine legitimationsoplysninger](media/service-admin-syndication-partner/aad-signin.png)
-
-1. Når du er logget på, kan du køre følgende kommando for at kontrollere den aktuelle indstilling for `AllowAdHocSubscriptions`.
-
-    ```powershell
-    Get-MsolCompanyInformation
-    ```
-
-1. Kør følgende kommando for at aktivere gratis tilmeldinger.
-
-    ```powershell
-    Set-MsolCompanySettings -AllowAdHocSubscriptions $true
-    ```
+Hvis du vil aktivere ad hoc-abonnementer, kan du kontakte din partner og anmode om at få aktiveret dem. Hvis du er administrator for din lejer og ved, hvordan du bruger Azure Active Directory PowerShell-kommandoer, kan du selv aktivere ad hoc-abonnementer. Du kan finde flere oplysninger ved at følge fremgangsmåden i [Aktivér eller deaktiver køb via selvbetjening](service-admin-disable-self-service.md).
 
 ## <a name="next-steps"></a>Næste trin
 
-[Power BI-licenser i din organisation](service-admin-licensing-organization.md)
+* [Power BI-licenser i din organisation](service-admin-licensing-organization.md)
+* [Køb og tildel Power BI Pro-licenser](service-admin-purchasing-power-bi-pro.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

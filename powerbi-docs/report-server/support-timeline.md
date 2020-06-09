@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/03/2020
-ms.openlocfilehash: 3546254c8bff56ac4caefbdd0b5f8df901256a59
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.date: 05/27/2020
+ms.openlocfilehash: 288e511c38df0326d07fad87f5d239cd5b0cfec0
+ms.sourcegitcommit: 0d8261a3cdef05ed8d4eb2aaffff2c1cc2098624
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77527562"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84126267"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Supporttidslinje til Power BI Report Server
 
@@ -35,16 +35,17 @@ Denne supportpolitik giver os mulighed for hurtigt at levere innovationer til vo
 | Marts 2018 | 19. marts 2018 | Understøttes ikke længere |
 | August 2018 | 15. august 2018 | Understøttes ikke længere |
 | Januar 2019 | 23. januar 2019 | Understøttes ikke længere |
-| Maj 2019 | 22. maj 2019 | 22. maj 2020 |
+| Maj 2019 | 22. maj 2019 | Understøttes ikke længere |
 | September 2019 | September 2019 | September 2020 
 | Januar 2020 | Januar 2020 | Januar 2021
+| Maj 2020 | Maj 2020 | Maj 2021
 
 Hvis du vil downloade Power BI-rapportserver og Power BI Desktop optimeret til Power BI-rapportserver, skal du gå til [Rapportering i det lokale miljø med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
 
-## <a name="next-steps"></a>De næste trin
-[Nyheder i Power BI Report Server](whats-new.md)  
+## <a name="next-steps"></a>Næste trin
+[Nyheder i Power BI-rapportserver](whats-new.md)  
 [Hvad er Power BI-rapportserveren?](get-started.md)
 [Administratoroversigt](admin-handbook-overview.md)  
-[Installér Power BI-rapportserver](install-report-server.md)  
+[Installer Power BI-rapportserver](install-report-server.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

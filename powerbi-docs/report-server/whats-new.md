@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/27/2020
-ms.openlocfilehash: f4585e4c1eb629b4676b74157c0520d70540da7b
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.date: 05/27/2020
+ms.openlocfilehash: ee725457475f1bccd593e2331d9e62c85ef08762
+ms.sourcegitcommit: 0d8261a3cdef05ed8d4eb2aaffff2c1cc2098624
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565140"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84126290"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 
@@ -23,9 +23,56 @@ Download [Power BI-rapportserver og Power BI Desktop optimeret til Power BI-rapp
 
 Du kan finde relaterede oplysninger om nyheder i Power BI under:
 
-* [Nyheder i Power BI-tjenesten](../fundamentals/service-whats-new.md)
-* [Nyheder i Power BI Desktop](../fundamentals/desktop-latest-update.md)
-* [Nyheder i mobilappsene til Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+- [Nyheder i Power BI-tjenesten](../fundamentals/service-whats-new.md)
+- [Nyheder i Power BI Desktop](../fundamentals/desktop-latest-update.md)
+
+## <a name="may-2020"></a>Maj 2020
+
+Blandt de fremhævede elementer i denne opdatering er de hierarkiske udsnitsværktøjer og visualiseringer med opdelingstræ og forespørgselsdiagnosticering. Det følgende er en komplet liste over nye og opdaterede funktioner. Du kan finde flere oplysninger i [Blogindlægget om Power BI-rapportserver fra maj 2020](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2020-feature-summary/). 
+
+### <a name="reporting"></a>Rapportering
+
+- Hierarkisk udsnitsværktøj
+- Nye handlingstyper for knapper:
+
+    - Sidenavigation
+    - Detaljeadgang
+
+- Knapper understøtter nu udfyldningsbilleder
+- Sortering af tabeller med flere kolonner
+- Dobbelt akse til kurvediagrammer
+- Valg med rektangel for visuelle elementer
+- Betinget formatering af totaler og subtotaler i tabel og matrix
+- Dialogboksen Tilpas tema
+- Registrering af betinget formatering
+- Fordelingstræ
+- Opdateringer til filterrude:
+
+    - Ny oplevelse af filterruden
+    - Filterrudesøgning
+    
+### <a name="modeling"></a>Modellering
+
+- Nye DAX-funktioner:
+
+    - FirstNonBlankValue
+    - LastNonBlankValue
+    - Coalesce
+
+- Standard DAX-separatorer
+
+### <a name="visualizations"></a>Visualiseringer
+
+- Nye visualiseringsikoner
+- Visuelle baggrundsskygger
+
+### <a name="data-preparation"></a>Dataforberedelse
+
+- Forespørgselsdiagnosticering
+
+### <a name="other"></a>Andet
+
+- Brug af systemets standardlegitimationsoplysninger for webproxy
 
 ## <a name="january-2020"></a>Januar 2020
 
@@ -561,13 +608,13 @@ Denne udgave understøtter scale-out. Brug en belastningsjustering, og angiv ser
 
 Administratorer kan angive følgende egenskaber for serverfarmen under Avancerede egenskaber i SSMS:
 
-* EnableCustomVisuals: Sand/falsk
-* EnablePowerBIReportEmbeddedModels: Sand/falsk
-* EnablePowerBIReportExportData: Sand/falsk
-* MaxFileSizeMb: Standarden er nu 1000
-* ModelCleanupCycleMinutes: Hvor ofte der kontrolleres for at fjerne modeller fra hukommelsen
-* ModelExpirationMinutes: Hvor lang tid, før en model er udløbet og fjernes, baseret på sidste gang den blev brugt
-* ScheduleRefreshTimeoutMinutes: Hvor længe dataopdateringen kan vare for en tilstand. Standarden er to timer.  Der er ingen fastsat øvre grænse.
+- EnableCustomVisuals: Sand/falsk
+- EnablePowerBIReportEmbeddedModels: Sand/falsk
+- EnablePowerBIReportExportData: Sand/falsk
+- MaxFileSizeMb: Standarden er nu 1000
+- ModelCleanupCycleMinutes: Hvor ofte der kontrolleres for at fjerne modeller fra hukommelsen
+- ModelExpirationMinutes: Hvor lang tid, før en model er udløbet og fjernes, baseret på sidste gang den blev brugt
+- ScheduleRefreshTimeoutMinutes: Hvor længe dataopdateringen kan vare for en tilstand. Standarden er to timer.  Der er ingen fastsat øvre grænse.
 
 **Konfigurationsfil rsreportserver.config**
 
@@ -597,9 +644,9 @@ Excel og Power BI indeholder en portefølje af værktøjer, som er de eneste af 
 
 Vi har udgivet en [gennemgang af, hvordan du tilføjer Office Online Server (OOS) i miljøet i din prøveversion af Power BI-rapportserver](excel-oos.md). Kunder, der har en volumenlicenskonto, kan downloade OOS fra Volume License Service Center uden omkostninger og få skrivebeskyttet funktionalitet. Efter konfigurationen kan brugerne få vist og interagere med Excel-projektmapper, der:
 
-* ikke har nogen afhængigheder af eksterne data
-* har en direkte forbindelse til en ekstern SQL Server Analysis Services-datakilde
-* har en PowerPivot-datamodel.
+- ikke har nogen afhængigheder af eksterne data
+- har en direkte forbindelse til en ekstern SQL Server Analysis Services-datakilde
+- har en PowerPivot-datamodel.
 
 ### <a name="support-for-new-table-and-matrix-visuals"></a>Understøttelse af nye tabel- og matrixvisuals
 
@@ -607,22 +654,21 @@ Power BI-rapportserver understøtter nu de nye Power BI-tabel- og matrixvisuals.
 
 ## <a name="june-2017"></a>Juni 2017
 
-* Power BI-rapportserver er blevet gjort offentligt tilgængeligt (GA).
+- Power BI-rapportserver er blevet gjort offentligt tilgængeligt (GA).
 
 ## <a name="may-2017"></a>Maj 2017
 
-* Prøveversion af Power BI-rapportserver gjort tilgængelig
-* Mulighed for at publicere Power BI-rapporter i det lokale miljø
-  * understøttelse af Power BI-visuals
-  * Kun understøttelse af **Analysis Services-liveforbindelser**, men med flere datakilder på vej.
-  * Appen Power BI - Mobil er blevet opdateret til at vise Power BI-rapporter, der hostes i Power BI-rapportserver
-* Forbedret samarbejde i rapporter med kommentarer
+- Prøveversion af Power BI-rapportserver gjort tilgængelig
+- Mulighed for at publicere Power BI-rapporter i det lokale miljø
+  - understøttelse af Power BI-visuals
+  - Kun understøttelse af **Analysis Services-liveforbindelser*, men med flere datakilder på vej.
+  - Appen Power BI - Mobil er blevet opdateret til at vise Power BI-rapporter, der hostes i Power BI-rapportserver
+- Forbedret samarbejde i rapporter med kommentarer
 
 ## <a name="next-steps"></a>Næste trin
 
 Kontrollér disse kilder for at holde dig ajour med nye funktioner i Power BI-rapportserver.
 
-* [Microsoft Power BI-blog](https://powerbi.microsoft.com/blog/)
-* [Guy in a Cube YouTube-kanal](https://aka.ms/guyinacube)
+- [Microsoft Power BI-blog](https://powerbi.microsoft.com/blog/)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

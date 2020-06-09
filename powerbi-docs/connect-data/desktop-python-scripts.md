@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 06/02/2020
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d5b57b782af52542ed944b5e5e7504a974ee9d81
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2792c5b35d68dd38554209fe8fe065710c339381
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83291414"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84336837"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Kør Python-scripts i Power BI Desktop
 
@@ -96,7 +96,7 @@ Sådan kører du dit Python-script i Power BI Desktop:
 
    ![Hent data. vælg Python-script](media/desktop-python-scripts/python-scripts-1.png)
 
-1. Vælg **Connect**. Den senest installerede lokale Python-version vælges som dit Python-program. Kopiér scriptet til dialogboksen **Python-script**, der vises. Her angiver vi det simple Python-script, der blev vist før.
+1. Vælg **Opret forbindelse**. Den senest installerede lokale Python-version vælges som dit Python-program. Kopiér scriptet til dialogboksen **Python-script**, der vises. Her angiver vi det simple Python-script, der blev vist før.
 
    ![Eksempel på Python-script](media/desktop-python-scripts/python-scripts-6.png)
 
@@ -118,11 +118,15 @@ Det anbefales, at du bruger den officielle Python distribution fra https://www.p
 
 En mulig løsning er, at du starter Power BI Desktop fra din brugerdefinerede prompt til Python-miljøet.
 
-### <a name="refresh"></a>Refresh
+### <a name="refresh"></a>Opdater
 
 Du kan opdatere et Python-script i Power BI Desktop. Hvis du vil opdatere, skal du gå til båndet **Hjem** og vælge **Opdater**. Når du opdaterer et Python-script, køres Python-scriptet i Power BI Desktop igen.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="known-limitations"></a>Kendte begrænsninger
+
+I øjeblikket kan du ikke bruge python-scripts i rapporter, der er oprettet med funktionen **Udvidet metadata (prøveversion)** aktiveret. Eksisterende rapporter vil fortsat fungere. Hvis du vil vide mere, skal du se [Brug af udvidet metadata for datasæt (prøveversion)](desktop-enhanced-dataset-metadata.md). 
+
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde yderligere oplysninger om Python i Power BI i følgende artikler.
 

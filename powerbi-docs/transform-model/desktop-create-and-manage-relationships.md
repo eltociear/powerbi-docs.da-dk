@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 05/28/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 373ad0d230b3d9d7b9d35909d086b0611637f0e2
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a0000d2e0da3613bb74e8d3d0aed2dd7fa3e3dcc
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83326029"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84160266"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Opret og administrer relationer i Power BI Desktop
 Når du importerer flere tabeller, er det muligt, at du skal udføre analyser ved hjælp af data fra alle disse tabeller. Der skal være relationer mellem disse tabeller, før du kan beregne præcise resultater og vise korrekte oplysninger i dine rapporter. I Power BI Desktop er det nemt at oprette disse relationer. I de fleste tilfælde behøver du faktisk ikke at foretage dig noget – funktionen Registrer automatisk gør det for dig. Men nogle gange skal du muligvis selv oprette relationer, eller du skal muligvis foretage ændringer i en relation. I begge tilfælde er det vigtigt at forstå relationer i Power BI Desktop, og hvordan du opretter og redigerer dem.
@@ -59,7 +59,7 @@ Når du opretter eller redigerer en relation, kan du konfigurere yderligere inds
 ### <a name="cardinality"></a>Kardinalitet
 Indstillingen **Kardinalitet** kan have en af følgende indstillinger:
 
-**Mange til én (\*:1)** : En mange-til-en-relation er den mest almindelige, standardtype af relationer. Det betyder, at kolonnen i én tabel kan have mere end én forekomst af en værdi, og at den anden relaterede tabel, der ofte kaldes opslagstabellen, kun har én forekomst af en værdi.
+**Mange til én (\*:1)** : En mange-til-en-relation er den mest almindelige, standardtype af relationer. Det betyder, at kolonnen i en given tabel kan have mere end én forekomst af en værdi, og at den anden relaterede tabel, der ofte kaldes opslagstabellen, kun har én forekomst af en værdi.
 
 **Én til én (1:1)** : I en relation af typen én til én har kolonnen i én tabel kun én forekomst af en bestemt værdi, og den anden relaterede tabel har kun én forekomst af en bestemt værdi.
 

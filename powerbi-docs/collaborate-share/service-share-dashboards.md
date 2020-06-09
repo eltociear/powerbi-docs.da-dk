@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d094e3411bd5b8bef9b4a8f488412d903723a703
-ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
+ms.openlocfilehash: cf971de1a60636def852080a523c227f08b4f888
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83733548"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84272925"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Del Power BI-dashboards og -rapporter med kolleger og andre
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Med Power BI får du også [adskillige andre måder at samarbejde om og distribuere dashboards og rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -26,7 +26,7 @@ Du skal bruge en [Power BI Pro-licens](../fundamentals/service-features-license-
 
 Du kan dele dashboards og rapporter fra de fleste steder i Power BI-tjenesten: Favoritter, seneste, Mit arbejdsområde og delt med mig, hvis ejeren tillader det. Du kan også dele fra andre arbejdsområder, hvis du har rollen som [administrator, medlem eller bidragyder](service-new-workspaces.md#roles-in-the-new-workspaces) i arbejdsområdet. 
 
-Når du deler et dashboard eller en rapport, kan de personer, du deler med, få det/den vist og interagere med det/den, men ikke redigere det/den. De kan se de samme data som dig i dashboardet eller rapporten, medmindre [sikkerhed på rækkeniveau (RLS)](../admin/service-admin-rls.md) anvendes. De kolleger, du deler med, kan også dele med deres kolleger, hvis du giver dem lov til det. Personer uden for organisationen kan få vist og interagere med dashboardet eller rapporten, men kan ikke dele det/den. 
+Når du deler et dashboard eller en rapport, kan de personer, du deler med, få det/den vist og interagere med det/den, men ikke redigere det/den. De kan se de samme data, som du kan se i dashboardet og rapporterne og få adgang til hele det underliggende datasæt, medmindre sikkerhed på rækkeniveau (RLS) anvendes på det underliggende datasæt.  De kolleger, du deler med, kan også dele med deres kolleger, hvis du giver dem lov til det. Personer uden for organisationen kan få vist og interagere med dashboardet eller rapporten, men kan ikke dele det/den. 
 
 Du kan ikke *dele* direkte fra Power BI Desktop. Du kan [publicere rapporter fra Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) til Power BI-tjenesten. Du kan dog [dele et dashboard fra Power BI-mobilapps](../consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).  
 
@@ -123,7 +123,7 @@ Det er kun ejeren af dashboardet eller rapporten, der kan slå videredeling til 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 Ting, du skal være opmærksom på angående deling af dashboards og rapporter:
 
-* Generelt kan se du og dine kolleger se de samme data på dashboardet eller i rapporten. Hvis du derfor har tilladelse til at se flere data, end de har, vil de kunne se alle dine data på dashboardet eller i rapporten. Men hvis [sikkerhed på rækkeniveau (RLS)](../admin/service-admin-rls.md) er anvendt på datasættet, der er underliggende for et dashboard eller en rapport, afgør den enkelte persons legitimationsoplysninger, hvilke data vedkommende kan få adgang til.
+* Når du deler et dashboard med kollegaer, som du også deler det underliggende datasæt med. Dine kollegaer får adgang til hele datasættet, medmindre [sikkerhed på rækkeniveau (RLS)](../admin/service-admin-rls.md) begrænser deres adgang. Rapportforfattere kan bruge funktioner, der tilpasser brugeroplevelser, når de får vist eller interagerer med rapporter, f.eks. at skjule kolonner, begrænse handlinger på visualiseringer og andet. Disse brugerdefinerede brugeroplevelser begrænser ikke, hvilke data brugere kan få adgang til i datasættet. Brug [sikkerhed på rækkeniveau (RLS)](../admin/service-admin-rls.md) i datasættet, så hver enkelt brugers legitimationsoplysninger bestemmer, hvilke data de kan få adgang til.
 * Alle, som du deler dashboardet med, kan se det og interagere med de relaterede rapporter i [Læsevisning](../consumer/end-user-reading-view.md#reading-view). Generelt kan de ikke oprette rapporter eller gemme ændringer af eksisterende rapporter. Hvis du dog vælger **Tillad at brugerne opretter nyt indhold ved hjælp af de underliggende datasæt**, kan de oprette deres egne rapporter i andre arbejdsområder, der er baseret på datasættet for dette dashboard eller denne rapport.
 * Selvom ingen kan se eller downloade datasættet, kan de få adgang til datasættet direkte ved hjælp af funktionen Analysér i Excel. En administrator kan begrænse muligheden for at bruge Analysér i Excel for alle i en gruppe. Begrænsningen er dog for alle i den pågældende gruppe og for hvert arbejdsområde, gruppen tilhører.
 * Alle kan manuelt [opdatere dataene](../connect-data/refresh-data.md).

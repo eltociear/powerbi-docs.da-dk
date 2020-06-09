@@ -6,19 +6,22 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 05/29/2020
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 3544a5330a21036e0ddecb351fd67b424ca6ebc7
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: cceeb3c874bf3320b7c826790c46b4cafd6d45a2
+ms.sourcegitcommit: b66c913a50a5100082e1c8ff7cd1c4f76f514fe7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348867"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "84219499"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Aktivér Spørgsmål og svar via direkte forbindelser i Power BI
-## <a name="what-is-the-on-premises-data-gateway--what-is-a-live-connection"></a>Hvad er datagatewayen i det lokale miljø?  Hvad er en direkte forbindelse?
-Datasæt i Power BI kan importeres til Power BI, eller du kan oprette en direkte forbindelse til dem. Datasæt til direkte forbindelser bliver ofte kaldt for "i det lokale miljø". De direkte forbindelser administreres ved hjælp af en [gateway](../connect-data/service-gateway-onprem.md), og data og forespørgsler sendes frem og tilbage ved hjælp af direkte forespørgsler.
+
+Du kan importere datasæt i Power BI, eller du kan oprette en *direkte forbindelse* til dem. Datasæt til direkte forbindelser er ofte i det lokale miljø. Hvis det er tilfældet, kan du administrere direkte forbindelser ved hjælp af en [gateway](../connect-data/service-gateway-onprem.md). Data og forespørgsler sendes frem og tilbage ved hjælp af direkte forespørgsler.
+
+> [!NOTE]
+> Direkte forbindelser understøtter også Azure Analysis Services-datasæt, der ikke kræver en gateway.
 
 ## <a name="qa-for-on-premises-data-gateway-datasets"></a>Spørgsmål og svar til datasæt i datagateway i lokalt miljø
 Hvis du vil bruge Spørgsmål og svar med datasæt, får du adgang via en gateway, men du skal aktivere dem først.
@@ -58,9 +61,9 @@ Der er nogle begrænsninger for funktionen:
 * Sikkerhed på objektniveau understøttes ikke. Spørgsmål og svar overholder ikke sikkerhed på objektniveau og kan afsløre tabel- eller kolonnenavne til brugere, som ikke har adgang til dem. Du skal aktivere RLS for at sikre, at også værdier er sikret korrekt. 
 * Direkte forbindelser understøttes kun med datagateway i lokalt miljø. Denne funktion kan derfor ikke bruges med den personlige gateway.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
-- [Datagateway i lokalt miljø](../connect-data/service-gateway-onprem.md)  
+- [On-premises data gateway (Datagateway i det lokale miljø)](../connect-data/service-gateway-onprem.md)  
 - [Administrer din datakilde – Analysis Services](../connect-data/service-gateway-enterprise-manage-ssas.md)  
 - [Grundlæggende begreber for designere i Power BI-tjenesten](../fundamentals/service-basic-concepts.md)  
 - [Spørgsmål og svar i Power BI – Oversigt](../consumer/end-user-q-and-a.md)  

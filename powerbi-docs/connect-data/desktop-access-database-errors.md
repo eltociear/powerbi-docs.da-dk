@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 1816fb7926ed378cdb70ce2e0ade08893828ce4c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 1d0dcc80c358fa4c6f0768d515c399a3f381bfe7
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83301327"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273362"
 ---
 # <a name="troubleshoot-importing-access-and-excel-xls-files-in-power-bi-desktop"></a>Fejlfind import af .xls-filer i Access og Excel i Power BI Desktop
 
@@ -30,7 +30,7 @@ Hvis der i fejlmeddelelsen i Power BI Desktop står, at Access-databaseprogramme
 
 ## <a name="situation-2-the-access-database-engine-bit-version-32-bit-or-64-bit-is-different-from-your-power-bi-desktop-bit-version"></a>Situation 2: Bit-versionen (32-bit eller 64-bit) af Access-databaseprogrammet er forskellig fra bit-versionen af Power BI Desktop
 
-Denne situation opstår ofte, når den installerede version af Microsoft Office er 32-bit, og den installerede version af Power BI Desktop er 64-bit. Det modsatte kan også forekomme, og i begge tilfælde vil der være en uoverensstemmelse mellem bit-versionerne. Hvis du bruger et Office 365-abonnement, skal du se [Situation 3](#situation-3-trouble-using-access-or-xls-files-with-an-office-365-subscription) for at se et andet problem og en anden løsning. En af følgende løsninger kan løse problemet med uoverensstemmende bit-versioner:
+Denne situation opstår ofte, når den installerede version af Microsoft Office er 32-bit, og den installerede version af Power BI Desktop er 64-bit. Det modsatte kan også forekomme, og i begge tilfælde vil der være en uoverensstemmelse mellem bit-versionerne. Hvis du bruger et Microsoft 365-abonnement, skal du se [Situation 3](#situation-3-trouble-using-access-or-xls-files-with-a-microsoft-365-subscription) for at se et andet problem og en anden løsning. En af følgende løsninger kan løse problemet med uoverensstemmende bit-versioner:
 
 ### <a name="solution-1"></a>Løsning 1
 
@@ -79,9 +79,9 @@ Hvis du vil installere begge bit-versioner af Access-databaseprogrammet, skal du
    
        c:\users\joe\downloads\AccessDatabaseEngine_x64.exe /passive
 
-## <a name="situation-3-trouble-using-access-or-xls-files-with-an-office-365-subscription"></a>Situation 3: Problemer med at bruge Access- eller .xls-filer med et Office 365-abonnement
+## <a name="situation-3-trouble-using-access-or-xls-files-with-a-microsoft-365-subscription"></a>Situation 3: Problemer med at bruge Access- eller .xls-filer med et Microsoft 365-abonnement
 
-Hvis du bruger et Office 365-abonnement, uanset om det er **Office 2013** eller **Office 2016**, er udbyderen af Access-databaseprogrammet registreret på en virtuel placering i registreringsdatabasen, som *kun* Microsoft Office-processer har adgang til. Miksprogrammet (der er ansvarlig for at køre Excel, som ikke er i Office 365, og Power BI Desktop, som ikke er en Office-proces) kan ikke bruge udbyderen af Access-databaseprogrammet.
+Hvis du bruger et Microsoft 365-abonnement, uanset om det er **Office 2013** eller **Office 2016**, er udbyderen af Access-databaseprogrammet registreret på en virtuel placering i registreringsdatabasen, som *kun* Microsoft Office-processer har adgang til. Miksprogrammet (der er ansvarlig for at køre Excel, som ikke er i Office 365, og Power BI Desktop, som ikke er en Office-proces) kan ikke bruge udbyderen af Access-databaseprogrammet.
 
 Du kan løse problemet ved at [downloade og installere den videredistribuerbare version af Access-databaseprogrammet](https://www.microsoft.com/download/details.aspx?id=13255), der stemmer overens med bit-versionen af din installation af Power BI Desktop. Du kan finde flere oplysninger om bit-versioner i de tidligere afsnit i denne artikel.
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4082647338adcca8518cc4d9c3a3b88cc3e04f4f
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: b6e45113662117d5c6c793211644c4895f666a40
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83794077"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273339"
 ---
 # <a name="share-a-dataset"></a>Deling af et datasæt
 
@@ -28,7 +28,7 @@ Som forfatter af *datamodeller* i Power BI Desktop opretter du *datasæt*, som d
 
 1. Publicer .pbix-filen i en [ny arbejdsområdeoplevelse](../collaborate-share/service-create-the-new-workspaces.md) i Power BI-tjenesten.
     
-    Andre medlemmer af dette arbejdsområde kan allerede oprette rapporter i andre arbejdsområder baseret på dette datasæt.
+    Andre medlemmer af dette arbejdsområde kan allerede oprette rapporter i andre arbejdsområder baseret på dette datasæt. Brug indstillingen Administrer tilladelser på datasættet på arbejdsområdets indholdsliste for at give flere brugere adgang til datasættet. 
 
 1. Du kan også [publicere en app](../collaborate-share/service-create-distribute-apps.md) fra dette arbejdsområde. Når du gør det, skal du på siden **Tilladelser** angive, hvem der har tilladelser, og hvad de kan gøre.
 
@@ -50,6 +50,11 @@ Når du har et delt datasæt i dit arbejdsområde, vil du måske gerne vide, hvi
 1. I dialogboksen **Relateret indhold** vises alle relaterede elementer. På denne liste kan du se relaterede elementer i dette arbejdsområde og **andre arbejdsområder**.
  
     ![Dialogboksen Relateret indhold](media/service-datasets-build-permissions/power-bi-dataset-related-workspaces.png)
+
+## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
+Ting, du skal være opmærksom på angående deling af datasæt:
+
+* Når du deler et datasæt ved at administrere tilladelser, ved at dele rapporter eller dashboards eller ved at udgive en app, giver du adgang til hele datasættet, medmindre [sikkerhed på rækkeniveau (RLS)](../admin/service-admin-rls.md) begrænser deres adgang. Rapportforfattere kan bruge funktioner, der tilpasser brugeroplevelser, når de får vist eller interagerer med rapporter, f.eks. at skjule kolonner, begrænse handlinger på visualiseringer og andet. Disse brugerdefinerede brugeroplevelser begrænser ikke, hvilke data brugere kan få adgang til i datasættet. Brug [sikkerhed på rækkeniveau (RLS)](../admin/service-admin-rls.md) i datasættet, så hver enkelt brugers legitimationsoplysninger bestemmer, hvilke data de kan få adgang til.
 
 ## <a name="next-steps"></a>Næste trin
 

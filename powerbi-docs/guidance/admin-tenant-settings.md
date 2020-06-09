@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 1ab1ed139a62b1929cb1b4da411bf7949a5d151e
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b024ff52585a4b9b46b60e3230a059b3d07d7b24
+ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279750"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273893"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Vejledning til indstillinger for lejeradministrator
 
@@ -44,7 +44,7 @@ Disse URL-adresser bliver tilgængelige som links i menuen Hjælp i Power BI.
 ![Indstillingen "Publicer "Hent hjælp"-oplysninger" vises.](media/admin-tenant-settings/publish-get-help-information.png)
 
 ## <a name="manage-risk"></a>Administrer risiko
-
+Indstillingerne til at administrere risici kan hjælpe dig med at oprette politikker for styring af politikker i din Power BI-lejer. Vær dog opmærksom på, at styringsindstillingerne ikke er en sikkerhedsmåling. Hvis du f.eks. deaktiverer indstillingen **Eksportér data**, fjernes funktionen fra Power BI-brugergrænsefladen og hjælper på denne måde Power BI-brugere med at overholde organisationens styringspolitikker, men den forhindrer ikke brugerne i at eksportere data ved hjælp af andre indstillinger. Set fra et sikkerhedsmæssigt synspunkt har en Power BI-bruger med læseadgang til et datasæt tilladelse til at forespørge dette datasæt og kan bevare resultaterne, uanset hvilke funktioner der er tilgængelige i Power BI-brugergrænsefladen.
 ### <a name="receive-email-notification-service-outages-or-incidents"></a>Modtag mails i forbindelse med tjenesteudfald eller hændelser
 
 Du kan få besked via mail, hvis lejeren påvirkes af et tjenesteudfald eller en hændelse. På denne måde kan du proaktivt reagere på hændelser.
@@ -86,7 +86,7 @@ Vi anbefaler, at du tildeler én eller flere sikkerhedsgrupper. Tilladelse til a
 
 ![Indstillingen "Del indhold med eksterne brugere" vises.](media/admin-tenant-settings/share-content-with-external-users.png)
 
-### <a name="publish-to-web"></a>Udgiv på internettet
+### <a name="publish-to-web"></a>Publicer på internettet
 
 Funktionen [Publicer på internettet](../collaborate-share/service-publish-to-web.md) gør det muligt at publicere offentlige rapporter på internettet. Hvis funktionen ikke anvendes korrekt, er der en risiko for, at fortrolige oplysninger bliver tilgængelige live på internettet.
 
@@ -100,7 +100,7 @@ Desuden er der mulighed for at vælge, hvordan dine integreringskoder fungerer. 
 
 Vi anbefaler også, at du gennemgår [Publicer integreringskoder på internettet](https://app.powerbi.com/admin-portal/embedCodes) jævnligt. Fjern koder, hvis de medfører publicering af private eller fortrolige oplysninger.
 
-### <a name="export-data"></a>Eksport af data
+### <a name="export-data"></a>Eksportér data
 
 Du kan begrænse brugernes eksport af data fra dashboardfelter eller rapportvisualiseringer.
 
@@ -137,12 +137,12 @@ Hvis du ikke vil bruge udvikler-API'erne til at integrere indhold, anbefaler vi,
 
 ![Udviklerindstillingerne vises.](media/admin-tenant-settings/developer-settings.png)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
 - [Hvad er Power BI-administration?](../admin/service-admin-administering-power-bi-in-your-organization.md)
 - [Administrer Power BI på administrationsportalen](../admin/service-admin-portal.md)
-- Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)
 

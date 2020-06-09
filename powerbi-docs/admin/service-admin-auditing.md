@@ -8,14 +8,14 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/11/2020
 ms.author: kfollis
-ms.custom: seodec18
+ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: c0f8e6f0282e4a862c8fc92e922a412ba0f56098
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: f479bb865a11de57587a0302738411327327ed33
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83812421"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84272672"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spor brugeraktiviteter i Power BI
 
@@ -133,9 +133,9 @@ Power BI-overvågningslogs er tilgængelige direkte via [Office 365 Security & C
 
 1. Vælg **Overvågningslogger**.
 
-1. Vælg **Gå til O365 Administration**.
+1. Vælg **Gå til Microsoft 365 Administration**.
 
-   ![Skærmbillede af administrationsportalen, hvor indstillingerne Overvågningslogge og Gå til Microsoft O365 Administration er markeret.](media/service-admin-auditing/audit-log-o365-admin-center.png)
+   ![Skærmbillede af administrationsportalen, hvor indstillingerne Overvågningslogge og Gå til Microsoft 365 Administration er markeret.](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
 ### <a name="search-only-power-bi-activities"></a>Søg kun i Power BI-aktiviteter
 

@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.custom: seodec18
+ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 7c9f198ac15311948e1789173851a6c85debc856
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: 1c72507759a69dc03f3d8b1510aef0e3ad369dd2
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83812444"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84272741"
 ---
 # <a name="what-is-power-bi-premium"></a>Hvad er Power BI Premium?
 
@@ -36,7 +36,7 @@ I denne artikel introduceres vigtige funktioner i Power BI Premium. Hvor det er 
 
 ## <a name="subscriptions-and-licensing"></a>Abonnementer og licenser
 
-Power BI Premium er et Office 365-abonnement på lejerniveau, der er tilgængeligt i to SKU-serier (lagerenheder):
+Power BI Premium er et Microsoft 365-abonnement på lejerniveau, der er tilgængeligt i to SKU-serier (lagerenheder):
 
 - **P**-SKU'er (P1-P5) til integrering og virksomhedsfunktioner kræver en månedlig eller årlig forpligtelse, faktureres månedsvis og indeholder en licens til at installere Power BI-rapportserveren i det lokale miljø.
 
@@ -127,7 +127,7 @@ Afsnitsnoter:
 
 ### <a name="regional-support"></a>Områdesupport
 
-Når du opretter en ny kapacitet, kan globale administratorer og administratorer af Power BI-tjenesten angive et område, hvor arbejdsområder, der er tildelt til kapaciteten, placeres. Dette kaldes **Multi-Geo**. Med Multi-Geo kan organisationer opfylde krav til dataplacering ved at implementere indhold i datacentre i et bestemt område, også selvom det er forskelligt fra det område, som Office 365-abonnementet gælder for. Du kan få mere at vide under [Multi-Geo-understøttelse i Power BI Premium](service-admin-premium-multi-geo.md).
+Når du opretter en ny kapacitet, kan globale administratorer og administratorer af Power BI-tjenesten angive et område, hvor arbejdsområder, der er tildelt til kapaciteten, placeres. Dette kaldes **Multi-Geo**. Med Multi-Geo kan organisationer opfylde krav til dataplacering ved at implementere indhold i datacentre i et bestemt område, også selvom det er forskelligt fra det område, som Microsoft 365-abonnementet gælder for. Du kan få mere at vide under [Multi-Geo-understøttelse i Power BI Premium](service-admin-premium-multi-geo.md).
 
 ### <a name="capacity-management"></a>Kapacitetsadministration
 

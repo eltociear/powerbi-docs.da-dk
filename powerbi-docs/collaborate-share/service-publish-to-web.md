@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/25/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 28e19c750819b883adc2319c171ef1cb7b3125f1
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 136376da9d00e5f40397f0d4152e83d17a171168
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273885"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84272971"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -169,8 +169,7 @@ Mindre organisationer eller enkeltpersoner, der har tilmeldt sig Power BI, har m
 
 Etablerede organisationer har normalt allerede en Power BI-administrator. Personer med en af følgende roller kan fungere som Power BI-administrator:
 
-- Office 365-administratorer
-- Azure Active Directory-administratorer
+- Globale administratorer
 - Brugere med rollen Power BI-tjenesteadministrator i Azure Active Directory
 
 Du skal [finde en af disse personer](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) i organisationen og bede vedkommende om at opdatere [lejerindstillingerne for Publicer på internettet](../admin/service-admin-portal.md#publish-to-web) i administrationsportalen.
