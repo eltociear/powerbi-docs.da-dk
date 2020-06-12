@@ -187,7 +187,7 @@ Brugersamtykke er deaktiveret for lejeren.
 
 ### <a name="cs1061-error"></a>CS1061-fejl
 
-Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727), hvis du oplever fejlmeddelelsen: "'AuthenticationContext' doesn't contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)".
+Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727), hvis du oplever fejlmeddelelsen: "'AuthenticationContext' indeholder ikke en definition for 'AcquireToken', og der kan ikke findes en tilgængelig 'AcquireToken', der accepterer et første argument af typen 'AuthenticationContext' (mangler du en henvisning til et direktiv eller en assembly?)".
 
 ## <a name="data-sources"></a>Datakilder
 

@@ -88,7 +88,7 @@ I øjeblikket er de eneste understøttede sammenlægninger mod deterministiske A
 
 Du skal aktivere Always Encrypted i forbindelsesstrengen for en SQL Server-datakilde. Læs mere om, hvordan du aktiverer [Always Encrypted i programforespørgsler](https://docs.microsoft.com/sql/relational-databases/security/encryption/develop-using-always-encrypted-with-net-framework-data-provider#enabling-always-encrypted-for-application-queries).
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Always Encrypted](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine) i SQL Server og Azure SQL Database
 
