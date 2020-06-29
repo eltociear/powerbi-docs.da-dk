@@ -74,6 +74,8 @@
               href: end-user-spotlight.md
             - name: Tilpas en visualisering
               href: end-user-personalize-visuals.md
+            - name: Analysér svingninger i visualiseringer
+              href: end-user-analyze-visuals.md
             - name: Sideinddelte rapporteri på Power BI
               items:
                 - name: Sideinddelte rapporter
@@ -92,6 +94,8 @@
               href: end-user-visual-type.md
             - name: 'Vis de data, der blev brugt til at oprette visualiseringen'
               href: end-user-show-data.md
+            - name: 'Kopiér en visualisering, og indsæt den et andet sted'
+              href: end-user-copy-paste.md
             - name: Detailudledning i en visualisering
               href: end-user-drill.md
             - name: Interager med ArcGIS-kort

@@ -9,7 +9,7 @@
           href: overview.md
         - name: Optimeringsvejledning til Power BI
           href: power-bi-optimization.md
-    - name: Begreber
+    - name: Koncepter
       expanded: true
       items:
         - name: Omdan og udform data
@@ -28,6 +28,8 @@
               href: star-schema.md
             - name: Reducer størrelse på datamodel
               href: import-modeling-data-reduction.md
+            - name: Opret datatabeller
+              href: model-date-tables.md
             - name: Vejledning til automatisk dato og klokkeslæt
               href: auto-date-time.md
             - name: En til en-relationer
@@ -44,6 +46,8 @@
               href: directquery-model-guidance.md
             - name: Vejledning til sammensat model
               href: composite-model-guidance.md
+            - name: Vejledning til sikkerhed på rækkeniveau
+              href: rls-guidance.md
         - name: DAX
           items:
             - name: DIVIDE-funktion vs. divisionsoperator (/)

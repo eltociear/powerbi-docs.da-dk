@@ -40,7 +40,7 @@
           href: service-tutorial-build-machine-learning-model.md
         - name: Opdater data fra SQL Server
           href: service-gateway-sql-tutorial.md
-    - name: Begreber
+    - name: Koncepter
       items:
         - name: Power BI-datakilder
           href: power-bi-data-sources.md
@@ -122,6 +122,8 @@
               href: desktop-connect-to-web.md
             - name: Opret forbindelse til et Snowflake-databehandlingswarehouse
               href: desktop-connect-snowflake.md
+            - name: Opret forbindelse til Snowflake i Power BI-tjenesten
+              href: service-connect-snowflake.md
             - name: Opret visualiseringer med Azure Cost Management-connectoren
               href: desktop-connect-azure-cost-management.md
             - name: Opret forbindelse til Microsoft Azure Consumption Insights data

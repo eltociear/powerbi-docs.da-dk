@@ -21,7 +21,7 @@
       items:
         - name: Stil spørgsmål i iOS-mobilappsene
           href: tutorial-mobile-apps-ios-qna.md
-    - name: Begreber
+    - name: Koncepter
       expanded: true
       items:
         - name: Hent data fra den virkelige verden med mobilappsene
@@ -30,7 +30,7 @@
           href: mobile-apps-offline-data.md
         - name: Power BI til Mixed Reality-app (Eksempel)
           href: mobile-mixed-reality-app.md
-    - name: Sådan gør du
+    - name: 'Sådan gør du:'
       items:
         - name: Alle mobilapps
           items:
@@ -52,7 +52,7 @@
               href: mobile-apps-deep-link-specific-location.md
             - name: Filtrer en rapport ud fra placering i Power BI-mobilapps
               href: mobile-apps-geographic-filtering.md
-            - name: Bruger OAuth til at oprette forbindelse til Reporting Services
+            - name: Brug af OAuth til at oprette forbindelse til Reporting Services
               href: mobile-oauth-ssrs.md
         - name: iOS og Android
           items:
@@ -84,6 +84,8 @@
               href: mobile-apps-iOS-siri-Shortcuts.md
             - name: Integration af iOS-enhedssøgning
               href: mobile-apps-iOS-search-integration.md
+            - name: Mørk tilstand
+              href: mobile-apps-dark-mode.md
             - name: Power BI-app til Apple Watch
               href: mobile-apple-watch.md
         - name: Android-enheder
@@ -106,7 +108,7 @@
               href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
             - name: Få vist rapporter i det lokale miljø og KPI'er
               href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
-            - name: Få vist Power BI på Surface Hub
+            - name: Præsentationstilstand på Surface Hub- og Windows 10-enheder
               href: mobile-windows-10-app-presentation-mode.md
             - name: Enkeltlogon i Windows-appen
               href: mobile-windows-10-app-single-sign-on-sso.md

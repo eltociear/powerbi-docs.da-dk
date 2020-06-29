@@ -7,7 +7,7 @@
       items:
         - name: Måder at dele dit arbejde på
           href: service-how-to-collaborate-distribute-dashboards-reports.md
-    - name: Begreber
+    - name: Koncepter
       expanded: true
       items:
         - name: Organiser arbejde i arbejdsområder
@@ -49,8 +49,12 @@
           items:
             - name: Del dashboards og rapporter
               href: service-share-dashboards.md
+            - name: Anmod om adgang til en rapport eller et dashboard
+              href: service-request-access.md
             - name: Filtrer og del en rapport
               href: service-share-reports.md
+            - name: Foretag fejlfinding af deling af rapporter eller dashboards
+              href: service-troubleshoot-sharing.md
             - name: Filtrer en rapport ved hjælp af parametre i URL-adressen
               href: service-url-filters.md
             - name: Tilmeld dig selv og andre

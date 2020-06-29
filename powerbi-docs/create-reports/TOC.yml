@@ -42,11 +42,13 @@
           href: sample-supplier-quality.md
         - name: Download projektmappen Økonomisk eksempel
           href: sample-financial-download.md
-    - name: Begreber
+    - name: Koncepter
       expanded: true
       items:
         - name: Power BI-rapporter
           items:
+            - name: Moderne bånd i Power BI
+              href: desktop-ribbon.md
             - name: Arbejd med rapportvisning
               href: desktop-report-view.md
             - name: Filtertyper i rapporter

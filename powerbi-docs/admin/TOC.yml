@@ -11,7 +11,7 @@
           href: service-admin-where-is-my-tenant-located.md
         - name: Hvad er Power BI Premium?
           href: service-premium-what-is.md
-    - name: Begreber
+    - name: Koncepter
       expanded: true
       items:
         - name: Administrationsrolle i Microsoft 365
@@ -24,7 +24,7 @@
               href: service-govus-overview.md
             - name: Tilmeld en US Government-organisation
               href: service-govus-signup.md
-        - name: Power BI i regionale cloudmiljøer
+        - name: Power BI i nationale cloudmiljøer
           items:
             - name: Overfør til lokale tyske områder
               href: service-admin-migrate-data-germany.md
@@ -116,6 +116,8 @@
               href: service-premium-connect-tools.md
             - name: Automatisering med tjenesteprincipaler
               href: service-premium-service-principal.md
+            - name: Foretag fejlfinding af XMLA-slutpunktsforbindelse
+              href: troubleshoot-xmla-endpoint.md
     - name: Reference
       items:
         - name: 'PowerShell, REST-API''er og .NET SDK'
