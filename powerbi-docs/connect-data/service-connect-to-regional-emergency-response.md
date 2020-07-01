@@ -4,16 +4,16 @@ description: Sådan henter og installerer du skabelonappen Dashboard til område
 author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/24/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 52522c03a285290fbc01da49328516f62ddfc60a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3cf846ef7fa7b47b0eaa90c850885af65a4bab80
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279221"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85229665"
 ---
 # <a name="connect-to-the-regional-emergency-response-dashboard"></a>Opret forbindelse til det områderelaterede dashboard til akutberedskab
 Det områderelaterede dashboard til akutberedskab er komponenten til rapportering i [Microsoft Power Platform-løsningen til områderelateret akutberedskab](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview). Administratorer af regionale organisationer kan få vist dashboardet i deres Power BI-lejer, så de hurtigt kan få vist vigtige data og målepunkter, der kan hjælpe dem med at træffe effektive beslutninger.
