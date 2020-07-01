@@ -4,16 +4,16 @@ description: Opret forbindelse til mange af de tjenester, du bruger til at køre
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7465d2f94fcddd37e20b1c1e5a2679810d1a135c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: fa4c8102eeb41fb754604eb646c11f44891413c9
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83325155"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85236246"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Opret forbindelse til de tjenester, du bruger med Power BI
 Med Power BI kan du oprette forbindelse til mange af de tjenester, du bruger til at køre din virksomhed, f.eks. Salesforce, Microsoft Dynamics CRM og Google Analytics. Power BI starter med at bruge dine legitimationsoplysninger til at oprette forbindelse til tjenesten. Den opretter et *arbejdsområde* i Power BI med et dashboard og et sæt Power BI-rapporter, der automatisk viser dine data og giver visuel indsigt om din virksomhed.

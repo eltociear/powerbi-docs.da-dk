@@ -5,16 +5,16 @@ author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: f4e70bdcd877c29063a73cc24111d4dc04aa39b9
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 94d55f92a6be47d6a53cbdaad4d9ff657d572957
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83280972"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85235873"
 ---
 # <a name="create-a-responsive-slicer-you-can-resize-in-power-bi"></a>Opret et dynamisk udsnitsværktøj, som du kan ændre størrelsen på i Power BI
 
@@ -28,7 +28,7 @@ Dynamiske udsnitsværktøjer kan ændres i størrelsen, så de passer til at vil
 
 Det første trin i at oprette et dynamisk udsnitsværktøj er at oprette et grundlæggende udsnitsværktøj. 
 
-1. Vælg **ikonet**![Udsnitsværktøj](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer-icon.png) i ruden **Visualiseringer**.
+1. Vælg ![ikonet](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer-icon.png)**Udsnitsværktøj** i ruden **Visualiseringer**.
 2. Træk feltet, du vil filtrere, hen på **Felt**.
 
     ![Føj et felt til udsnitsværktøjet](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-1-create.png)

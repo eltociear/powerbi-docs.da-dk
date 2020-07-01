@@ -5,16 +5,16 @@ author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4498557d1bd38ce457b2e79d637e713af11c945a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a1cf9c96b976acbfd9a5cefe4d413b4aa0fac9bf
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83325040"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85236274"
 ---
 # <a name="connect-to-smartsheet-with-power-bi"></a>Opret forbindelse til Smartsheet med Power BI
 I denne artikel gennemgår vi, hvordan du trækker data fra din Smartsheet-konto med en skabelonapp i Power BI. Smartsheet byder på en nem platform til samarbejde og fildeling. Smartsheet-skabelonappen til Power BI indeholder et dashboard, rapporter og datasæt, som viser en oversigt over din Smartsheet-konto. Du kan også bruge [Power BI Desktop](desktop-connect-to-data.md) til at oprette forbindelse direkte til individuelle ark i din konto. 
