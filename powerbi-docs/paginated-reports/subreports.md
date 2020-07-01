@@ -6,14 +6,14 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/29/2020
-ms.openlocfilehash: 784e3fd3883adb9fc5b773cc730b992135d7ef8b
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 9ced88289b2170d503a8394d5b83175659178e85
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83272804"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85239587"
 ---
 # <a name="subreports-in-power-bi-paginated-reports"></a>Underrapporter i sideinddelte rapporter i Power BI
 
@@ -23,7 +23,7 @@ En *underrapport* er et sideinddelt rapportelement, der viser en anden sideindde
   
  I denne illustration stammer de kontaktoplysninger, der vises i hovedrapporten Salgsordre, faktisk fra underrapporten Kontakter.  
   
-Du opretter og redigerer definitionsfiler for sideinddelte rapporter (. rdl) i Power BI Report Builder. Du kan uploade underrapporter, der er gemt i SQL Server Reporting Services, til et Premium-arbejdsområde i Power BI-tjenesten. Hovedrapporterne og underrapporterne skal publiceres i det samme arbejdsområde. Installér [Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).
+Du opretter og redigerer definitionsfiler for sideinddelte rapporter (. rdl) i Power BI Report Builder. Du kan uploade underrapporter, der er gemt i SQL Server Reporting Services, til et Premium-arbejdsområde i Power BI-tjenesten. Hovedrapporterne og underrapporterne skal publiceres i det samme arbejdsområde. Installér [Power BI Report Builder](https://aka.ms/pbireportbuilder).
   
 ## <a name="work-with-report-builder-and-the-power-bi-service"></a>Arbejd med Report Builder og Power BI-tjenesten
 

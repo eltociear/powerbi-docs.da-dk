@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 06/19/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b0e52ebf4f529c7da75e79becf30c74d6e2c0248
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 64fa13f3e95f43813c657eb9be195fb03e57a06b
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77496326"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354909"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Dashboards til brugere af Power BI-tjenesten
 
@@ -32,7 +32,6 @@ De visualiseringer, du kan se på dashboardet, kaldes *felter* og er *fastgjort*
 > Dashboards kan [vises og deles på mobilenheder](mobile/mobile-apps-view-dashboard.md).
 >
 > Power BI Pro er påkrævet for at få vist et dashboard, der er delt med dig.
-> 
 
 Visualiseringerne på et dashboard stammer fra rapporter, og hver rapport er baseret på et datasæt. Du kan faktisk opfatte et dashboard som en måde at få adgang til underliggende rapporter og datasæt på. Når du vælger en visualisering, bliver du ført til den rapport (og det datasæt), der blev brugt til at oprette den.
 

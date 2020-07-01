@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/30/2018
-ms.openlocfilehash: 5df9ddd44bdc8952dab14809ce3facd74e5d3753
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 60e80311ff12da2bc79b7f844c81c7b5c8f4c3ac
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564160"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354863"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Overførselsværktøj i Power BI Embedded
 
@@ -151,7 +151,7 @@ Du kan højreklikke på en gruppe og vælge at omdøbe gruppen direkte under Upl
 
 Under fanen **Download** kan du sen en liste over rapporterne og de tilknyttede metadata. Du kan se statussen for eksporten sammen med den tidligere eksportstatus.
 
-![](media/migrate-tool/migrate-tool-download-tab.png)
+![download](media/migrate-tool/migrate-tool-download-tab.png)
 
 Du har to muligheder.
 

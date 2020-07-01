@@ -4,15 +4,15 @@ description: Opret en sideinddelt rapport i Power BI Report Builder baseret på 
 ms.date: 02/12/2020
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 6f77b2c4ffa7b42cf99a75b4ae88ae0aeb631499
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a13f346feeddc8196cb35e06acf027baeaa7a151
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276622"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85239786"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Opret en sideinddelt rapport baseret på et delt datasæt i Power BI
 
@@ -26,7 +26,7 @@ Datasættet behøver ikke at være i et arbejdsområde i en Premium-kapacitet, o
 
 Her er en liste over, hvad du skal bruge, og hvad du ikke behøver for at bruge et delt datasæt i Power BI Report Builder.
 
-- Power BI Report Builder. [Download og installér Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).
+- Power BI Report Builder. [Download og installér Power BI Report Builder](https://aka.ms/pbireportbuilder).
 - Hvis du vil have adgang til et Power BI datasæt, skal du have Build-tilladelse til datasættet. Læs mere om [Build-tilladelse](../connect-data/service-datasets-build-permissions.md).
 - Du behøver ikke en Power BI Pro-licens for at oprette en sideinddelt rapport i Report Builder. 
 - Du skal have en Power BI Pro-licens for at publicere din sideinddelte rapport. Du skal også som minimum have rollen bidragyder for et arbejdsområde i en Premium-kapacitet. 
