@@ -6,16 +6,16 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2de2cd80dbffc8c65a4577fffd6a8e41bc6116d2
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2960bb75e408011cbdf6b05117ac7f6073517f9b
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83315932"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238140"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Føj et link til et tekstfelt i en rapport
 Du kan føje et tekstfelt til en rapport i Power BI Desktop eller Power BI-tjenesten. Du kan fastgøre et tekstfelt fra en rapport til et dashboard eller føje et direkte til et dashboard. Uanset hvor tekstfeltet er, kan du altid føje et link til det. I denne artikel kan du se, hvordan du føjer et link til et tekstfelt i en rapport. 

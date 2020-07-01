@@ -6,16 +6,16 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 601e23fae6579344afa83799b04fbcba3f81a6b4
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: c08d4959b8e3958651282ac0fd52e6ed80a6b345
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83344566"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85237266"
 ---
 # <a name="apply-page-display-settings-in-a-power-bi-report"></a>Anvend indstillingerne for sidevisning i en Power BI-rapport
 Vi forstår, at det er yderst vigtigt, at dit rapportlayout altid er helt perfekt. Det kan nogle gange være udfordrende, fordi du og dine kolleger kan få vist disse rapporter på skærme med forskellige højde-bredde-forhold og størrelser. 

@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 425bf50ad6eb4da9b50f7d9cdc760ef71cb7bff2
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 90a8cf81c2dd0dae3a31a15197785e64432f1a01
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83339001"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85237897"
 ---
 # <a name="create-calculated-columns-in-power-bi-desktop"></a>Opret beregnede kolonner i Power BI Desktop
 Med beregnede kolonner kan du føje nye data til en tabel, der allerede findes i din model. Men i stedet for at forespørge efter og indlæse værdier i din nye kolonne fra en datakilde kan du oprette en DAX-formel (Data Analysis Expressions), der definerer værdierne i kolonnen. I Power BI Desktop oprettes der beregnede kolonner ved hjælp af funktionen Ny kolonne i visningen **Rapport**.

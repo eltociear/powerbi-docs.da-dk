@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4e5ea5e5fcbffb5c61434ecc26a90d80d1cd1736
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2bb48ad44c1f1d440fb5741fc55cc4a83f315dc8
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83306226"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85237150"
 ---
 # <a name="use-quick-measures-for-common-calculations"></a>Brug hurtigmålinger til almindelige beregninger
 Du kan bruge *hurtigmålinger* til nemt og hurtigt at udføre almindelige og effektive beregninger. En hurtigmåling kører et sæt af DAX-kommandoer (Data Analysis Expressions) i baggrunden og viser derefter resultaterne, så du kan bruge dem i din rapport. Du behøver ikke at skrive DAX-formlen. Det bliver gjort for dig baseret på det input, du angiver i en dialogboks. Der er mange tilgængelige kategorier med beregninger og måder, som du kan tilpasse hver beregning til dine behov på. Det bedste af det hele er nok, at du kan se den DAX-formel, der udføres af hurtigmålingen, så du kan lære mere om DAX.
