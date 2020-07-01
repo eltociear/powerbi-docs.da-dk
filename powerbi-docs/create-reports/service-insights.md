@@ -7,16 +7,16 @@ featuredvideoid: et_MLSL2sA8
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4178d9cc5ce6f8e671c0d996bb64ee9a1389acdb
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 5523c08b81a129bab70f1c087e8895dedf83621f
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83306594"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85221086"
 ---
 # <a name="generate-data-insights-automatically-with-power-bi"></a>Generér automatisk dataindsigt med Power BI
 Har du et nyt datasæt, og er du ikke helt sikker på, hvor du skal starte?  Har du brug for hurtigt at oprette et dashboard?  Vil du hurtigt søge efter indsigter, som du måske gik glip af?

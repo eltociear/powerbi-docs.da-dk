@@ -5,15 +5,15 @@ author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: 56b3a4f67f5bc6dda777ea7c94b92c65abb4f3b0
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 1f71c2c835c729f3a0afe824835deaee719568c2
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349396"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85219982"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Introduktion til Power BI-mobilappen på iOS-enheder
 Microsoft Power BI til iOS-appen på iPhone eller iPad leverer BI-mobiloplevelsen til Power BI, Power BI-rapportserver og Reporting Services. Få vist og interager med dit firmas dashboards lokalt og i skyen overalt – med direkte, berøringsfølsom mobiladgang. Udforsk data i dashboards, og del dem med dine kollegaer i mails eller sms-beskeder. Og hold dig ajour med dine mest tidsfølsomme data på dit [Apple Watch](mobile-apple-watch.md).  
