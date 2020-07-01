@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 04/29/2020
-ms.openlocfilehash: 0089a38c852d82acaebc8cab0f0fb653c6a304cb
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: f18f8b56db8635d407417949bc35adb61fb4a2c5
+ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565620"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84427557"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål 
 
@@ -96,7 +96,7 @@ Ja, men Power BI-tjenesten giver dig kun mulighed for at uploade et enkelt eleme
 
 ### <a name="what-versions-of-report-builder-do-you-support"></a>Hvilke versioner af Report Builder understøttes?
 
-Vi har udgivet Power BI Report Builder som det primære værktøj til oprettelse af sideinddelte rapporter i Power BI-tjenesten. Installér [Power BI Report Builder fra Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513).
+Vi har udgivet Power BI Report Builder som det primære værktøj til oprettelse af sideinddelte rapporter i Power BI-tjenesten. Installér [Power BI Report Builder fra Microsoft Download Center](https://aka.ms/pbireportbuilder).
 
 ### <a name="how-do-i-move-existing-reports-i-have-saved-in-sql-server-reporting-services-to-power-bi"></a>Hvordan flytter jeg eksisterende rapporter, som jeg har gemt i SQL Server Reporting Services, til Power BI?
 
@@ -181,5 +181,5 @@ Det er noget, du skal huske på, når du arbejder med dato/klokkeslæt-felter i 
 
 ## <a name="next-steps"></a>Næste trin
 
-- [Installér Power BI Report Builder fra Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
+- [Installér Power BI Report Builder fra Microsoft Download Center](https://aka.ms/pbireportbuilder)
 - [Selvstudium: Opret en sideinddelt rapport](paginated-reports-quickstart-aw.md)

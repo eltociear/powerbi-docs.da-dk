@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/18/2020
+ms.date: 06/16/2020
 ms.author: kfollis
-ms.openlocfilehash: 1a90a9826d794f84933a75213043c31a9a67a4b5
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 872c847f25c15b46338127dd4a5a15cc536e5ee2
+ms.sourcegitcommit: 3e7e3cb2c2e398cffe8733d99e3ac832ee056dc9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83566034"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84973401"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 [//]: # "Tatevik Tatero er en leverandør, der arbejder med Chauncy Freels og hjælper med at vedligeholde listen over webinarer"
@@ -22,12 +22,7 @@ Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når
 
 ## <a name="upcoming-webinars"></a>Kommende webinarer
 
-**Hvad er forskellen på Analytics og BI?**
-<br>ved Nate Findley og Charles Feddersen, Microsoft
-<br>[Tilmeld dig for at se med d. 3. juni 2020 kl. 10:00-11:00 PDT]( https://info.microsoft.com/ww-landing-What-is-the-difference-between-analytics-and-business-intelligence.html?lcid=en-u)
-
-
->[Kommende webinarer fra Power BI-community'et](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
+[Kommende webinarer fra Power BI-community'et](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Udvalgte webinarer
 

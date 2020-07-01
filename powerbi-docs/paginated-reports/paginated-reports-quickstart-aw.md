@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 81e293f4dbf15a21c2546a54f140b163ebc93c05
-ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
+ms.openlocfilehash: 5243f80fea732e01fee600d738ae6e6cde56e261
+ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "83565643"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84427715"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Selvstudium: Opret en sideinddelt rapport, og upload den til Power BI-tjenesten
 
@@ -36,7 +36,7 @@ Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://
 
 Her er forudsætningerne for oprettelse af den sideinddelte rapport:
 
-- Installér [Power BI Report Builder fra Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513). 
+- Installér [Power BI Report Builder fra Microsoft Download Center](https://aka.ms/pbireportbuilder). 
 
 - Følg den hurtige introduktion [Opret en Azure SQL-databaseprøve på Azure-portalen](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Kopiér og gem værdien i feltet **Servernavn** på fanen **Oversigt**. Husk det brugernavn og den adgangskode, du oprettede i Azure.
 

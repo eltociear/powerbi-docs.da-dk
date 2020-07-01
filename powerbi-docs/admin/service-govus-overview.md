@@ -10,14 +10,15 @@ ms.date: 06/02/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 8be103d01b5f46c510a1e3658d5a5e29d566a5ff
-ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
+ms.openlocfilehash: 3d50b8678abd54d2a4543b5a2d187f32b491b063
+ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84336538"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84427128"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til US Government-kunder
+
 Denne artikel er for kunder inden for de amerikanske offentlige myndigheder, der udruller Power BI som en del af en Microsoft 365-plan til offentlige myndigheder. Planer til offentlige myndigheder er designet til at opfylde de særlige behov hos organisationer, der overholder amerikanske standarder og sikkerhedsstandarder. Power BI-tjenesten, der er udviklet til US Government-kunder, adskiller sig fra den kommercielle version af Power BI-tjenesten. Disse funktionsforskelle og egenskaber er beskrevet i følgende afsnit.
 
 ## <a name="add-power-bi-to-your-microsoft-365-government-plan"></a>Føj Power BI til din Microsoft 365-plan til offentlige myndigheder
@@ -33,13 +34,14 @@ Hvis du er ny kunde, skal du validere din organisations berettigelse, før du ka
 >
 >
 ## <a name="government-cloud-instances"></a>Instanser i det offentlige cloud
+
 Microsoft 365 indeholder forskellige miljøer, så de offentlige myndigheder kan opfylde de forskellige overensstemmelseskrav. Du kan finde flere oplysninger om hvert miljø under:
 
 * [Microsoft 365 GCC (Government Community Cloud)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) er udviklet til forbundsmyndigheder samt statslige og lokale myndigheder.
 
 * [Microsoft 365 GCC High (Government Community Cloud High)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) er udviklet til forbundsmyndigheder, forsvarsindustrien, rumfartsindustrien og andre organisationer, der opbevarer kontrollerede ikke-klassificerede oplysninger. Dette miljø egner sig til nationale sikkerhedsorganisationer og virksomheder med ITAR-data (International Traffic in Arms Regulations) eller DFARS-krav (Defense Federal Acquisition Regulations Supplement).
 
-* [Microsoft 365 DoD-miljøet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) er udviklet udelukkende til det amerikanske forsvarsministerium. 
+* [Microsoft 365 DoD-miljøet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) er udviklet udelukkende til det amerikanske forsvarsministerium.
 
 ## <a name="connect-to-power-bi-for-us-government"></a>Oversigt over Power BI til US Government
 
@@ -68,7 +70,7 @@ Azure er fordelt på flere cloudmiljøer. Du kan som standard aktivere firewallr
 * USGov Texas
 * USGov Arizona
 
-Pladserne for IP-adresse er tilgængelige i det offentlige cloudmiljø. Hvis du vil have adgang til cloud-IP-intervallerne for US Government, skal du downloade filen [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063). 
+Pladserne for IP-adresse er tilgængelige i det offentlige cloudmiljø. Hvis du vil have adgang til cloud-IP-intervallerne for US Government, skal du downloade filen [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063).
 
 Hvis du vil konfigurere firewalls for SQL-databaser, skal du følge fremgangsmåden for at [oprette og administrere IP-firewallregler](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
 
@@ -84,7 +86,7 @@ Der er visse forskelle mellem offentlige planer og kommercielle planer for at im
 |  |Overvågning via Office 365 Security and Compliance Administration Center|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Deling med eksterne brugere|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Forbrugsmålepunkter for dashboards og rapporter|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Azure B2B mellem GCC og den kommercielle cloud|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
+|  |Azure B2B mellem GCC og den kommercielle cloud|Tilgængelig|Tilgængelig|Tilgængelig|
 |Rapportoprettelse|Opret og få vist dashboards og rapporter|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Planlagt dataopdatering|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Teamdashboards, der kan opdateres|Tilgængelig|Tilgængelig|Tilgængelig|
@@ -112,4 +114,4 @@ Der er visse forskelle mellem offentlige planer og kommercielle planer for at im
 * [Tilmeld dig Power BI til US Government](service-govus-signup.md)
 * [Microsoft Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
 * [Power Automate US Government](https://docs.microsoft.com/power-automate/us-govt)
-* <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Demo om Power BI US Government</a>
+* [Demo om Power BI US Government](https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government)
