@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b2094b2438966bd2da88de032fd7b7979065746b
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: a043e230ba74432254248ee70db495bc75a3d28b
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83359375"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85232499"
 ---
 # <a name="get-power-bi-desktop"></a>Hent Power BI Desktop
 Med Power BI Desktop kan du oprette avancerede forespørgsler, modeller og rapporter, som visualiserer data. Med Power BI Desktop kan du skabe datamodeller, oprette rapporter og dele dit arbejde ved at publicere det i Power BI-tjenesten. Power BI Desktop kan downloades gratis.
