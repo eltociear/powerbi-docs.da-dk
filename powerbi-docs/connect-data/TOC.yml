@@ -94,6 +94,8 @@
                   href: desktop-python-ide.md
                 - name: Opret visualiseringer med Python
                   href: desktop-python-visuals.md
+                - name: 'Få mere at vide om, hvilke Python-pakker der understøttes'
+                  href: service-python-packages-support.md
             - name: Kør R-scripts
               href: desktop-r-scripts.md
             - name: Brug R i Forespørgselseditor

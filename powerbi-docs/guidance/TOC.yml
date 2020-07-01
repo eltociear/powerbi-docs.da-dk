@@ -66,6 +66,8 @@
               href: dax-column-measure-references.md
             - name: Undgå at bruge FILTER som et filterargument
               href: dax-avoid-avoid-filter-as-filter-argument.md
+            - name: Eksempelmodel
+              href: dax-sample-model.md
         - name: Power BI-rapporter
           items:
             - name: Separate rapporter fra modeller

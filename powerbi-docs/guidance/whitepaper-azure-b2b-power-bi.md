@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 7ab103c5d7b568e7315f67193da4d8da25b77a6c
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 2783f434e2bb1d6d45ed1a9442c60da7b09e7ae4
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565431"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782790"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere vha. Azure Active Directory B2B
 
@@ -71,7 +71,7 @@ Nogle organisationer kræver mere kontrol over, hvornår der tilføjes eksterne 
 
 
 
-1. Processen starter med en it-administrator, der inviterer gæstebrugeren enten manuelt eller gennem API'en i Azure Active Directory.
+1. Processen starter med en IT-administrator, der inviterer gæstebrugeren enten manuelt eller via den API, der leveres af Azure Active Directory
 2. Brugeren accepterer invitationen til organisationen.
 3. Når brugeren har accepteret invitationen, kan en bruger i Power BI dele en rapport eller et dashboard med den eksterne bruger eller en sikkerhedsgruppe, som brugeren er i. På samme måde som med almindelig deling i Power BI modtager den eksterne bruger en mail med linket til elementet.
 4. Når den eksterne bruger får adgang via linket, overføres brugerens godkendelse i vedkommendes mappe til Contosos Azure AD og bruges til at få adgang til Power BI-indhold.

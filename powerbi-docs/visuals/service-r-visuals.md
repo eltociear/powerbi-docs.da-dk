@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 11/14/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 722516004a454f970b7a88e2bf4c48d1d0176b6b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 91ca05a144166abbc903d42ba30a5c70b839987d
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237343"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782808"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>Opret og brug R-visuals i Power BI
 
@@ -104,15 +104,19 @@ Visuelle R-elementer i Power BI-tjenesten har nogle få begrænsninger:
   
   * Tilføj derefter følgende linje i begyndelsen af R-scriptet:
     
-        powerbi_rEnableShowText =  1
+```powerbi_rEnableShowText =  1```
+
 * Kinesiske, japanske og koreanske skrifttyper kræver, at alle yderligere følgende trin fungerer korrekt i Power BI-tjenesten:
   
   * Først skal du installere R-pakken *showtext* og alle dens afhængigheder. Du kan gøre det ved at køre følgende script:
     
-        *install.packages("showtext")*
+```install.packages("showtext")```
+
   * Tilføj derefter følgende linje i begyndelsen af R-scriptet:
     
-        powerbi_rEnableShowTextForCJKLanguages =  1
+```R script
+powerbi_rEnableShowTextForCJKLanguages =  1
+```
 
 ## <a name="overview-of-r-packages"></a>Oversigt over R-pakker
 R-pakker er samlinger af R-funktioner, data og kompileret kode, der er samlet i et veldefineret format. Når R er installeret, indeholder den et standardsæt af pakker, og andre pakkerne er tilgængelige til download og installation. Når en R-pakke er installeret, skal den indlæses i sessionen for at kunne bruges. Den primære datakilde for gratis R-pakker er CRAN – [Comprehensive R Archive Network](https://cran.r-project.org/web/packages/available_packages_by_name.html).
