@@ -4,16 +4,17 @@ description: I moderne BI-projekter (Business Intelligence) er det en vigtig udf
 author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: conceptual
-ms.date: 02/27/2020
+ms.subservice: powerbi-eim
+ms.topic: how-to
+ms.date: 06/15/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 101217023576783a32491b21ba254d54736b27db
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 697aa38a08acb561cca9b0ccba5656281157237e
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348200"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85226418"
 ---
 # <a name="data-lineage"></a>Dataafstamning
 I moderne BI-projekter (Business Intelligence) kan det være en udfordring for mange kunder at forstå flowet af data fra datakilden til destinationen. Udfordringen er endnu større, hvis du har oprettet avancerede analyseprojekter, der strækker sig over flere datakilder, artefakter og afhængigheder. Spørgsmål som "Hvad sker der, hvis jeg ændrer disse data?" eller "Hvorfor er denne rapport ikke ajourført?" kan være vanskelige at besvare. Det kan være nødvendigt med et team af eksperter eller en grundig undersøgelse for at forstå dem. Vi har designet en dataafstamningsvisning for at hjælpe dig med at besvare disse spørgsmål.
