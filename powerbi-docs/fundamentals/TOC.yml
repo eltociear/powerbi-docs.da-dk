@@ -13,7 +13,11 @@
           href: power-bi-service-overview.md
         - name: Sammenligning af Power BI Desktop og tjenesten
           href: service-service-vs-desktop.md
-    - name: Begreber
+    - name: Selvstudier
+      items:
+        - name: Kom i gang med Power BI-tjenesten
+          href: service-get-started.md
+    - name: Koncepter
       items:
         - name: Hvad er nyt i den nyeste opdatering af Power BI Desktop?
           href: desktop-latest-update.md
