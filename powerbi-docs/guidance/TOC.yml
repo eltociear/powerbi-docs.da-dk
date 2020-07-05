@@ -118,6 +118,14 @@
               href: report-performance-troubleshoot.md
             - name: Bedste praksis for udrulningspipelines
               href: ../create-reports/deployment-pipelines-best-practices.md
+    - name: Center of Excellence (COE)
+      items:
+        - name: Microsofts BI-transformation
+          href: center-of-excellence-microsoft-business-intelligence-transformation.md
+        - name: Opret et COE
+          href: center-of-excellence-establish.md
+        - name: BI-løsningsarkitektur i COE
+          href: center-of-excellence-business-intelligence-solution-architecture.md
     - name: Hvidbøger
       items:
         - name: Oversigt over whitepapers
