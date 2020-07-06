@@ -5,15 +5,15 @@ author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/19/2020
 ms.author: painbar
-ms.openlocfilehash: a68c8a452752981b2526c450820e8d277f5c0b10
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: e66d1b8b57af9ee04239e7222db742b64cc25883
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83692966"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85235702"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization"></a>Installér og distribuer skabelonapps i din organisation
 
@@ -38,15 +38,19 @@ Hvis du vil installere, tilpasse og distribuere en skabelonapp, skal du have fø
 
     ![Hent apps](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
 
-1. Vælg **Apps** i vinduet AppSource, der vises. Gennemse, eller søg efter den ønskede app, og vælg derefter **Hent den nu**.
+1. Vælg **Skabelonapps** på den markedsplads til Power BI-apps, der vises. Alle de tilgængelige skabelonapps i AppSource vises. Gå til den skabelon, du søger efter, eller få vist et filtreret valg ved hjælp af søgefeltet. Hvis du skriver en del af navnet på skabelonappen eller i en kategori, f. eks. økonomi, analyse, marketing osv., bliver det nemmere at finde det element, du leder efter.
 
     ![Søg i AppSource](media/service-template-apps-install-distribute/power-bi-appsource.png)
+
+1. Når du finder den skabelonapp, du søger efter, skal du klikke på den. Tilbuddet på skabelonappen vises. Klik på **HENT DEN NU**.
+
+   ![Tilbud på skabelonapp](media/service-template-apps-install-distribute/power-bi-template-app-offer.png)
 
 1. Vælg **Installér** i den dialogboks, der vises.
 
     ![Installér app](media/service-template-apps-install-distribute/power-install-dialog.png)
     
-    Appen installeres sammen med et tilknyttet arbejdsområde. **Hvis du beslutter at tilpasse appen, kan du gøre det i dette tilknyttede arbejdsområde**.
+    Appen installeres sammen med et arbejdsområde med det samme navn, som indeholder alle de artefakter, der skal bruges til yderligere [tilpasning](#customize-and-share-the-app).
 
     > [!NOTE]
     > Hvis du bruger et installationslink for en app, der ikke er angivet i AppSource, får du vist en valideringsdialogboks, hvor du skal bekræfte dit valg.

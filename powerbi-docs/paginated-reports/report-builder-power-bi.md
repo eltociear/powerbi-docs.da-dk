@@ -1,7 +1,7 @@
 ---
 title: Power BI Report Builder
 description: Power BI Report Builder er et værktøj, der bruges til at oprette sideinddelte rapporter.
-ms.date: 11/27/2019
+ms.date: 06/29/2020
 ms.service: powerbi
 ms.subservice: report-builder
 featuredvideoid: 78TZeiEhveY
@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 0118bc427ce58f48d50b3e8ed4e918bf66c6e8fc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a0c22be90b609e25a6403e33cb646b35e9467c07
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80621537"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782756"
 ---
 # <a name="power-bi-report-builder"></a>Power BI Report Builder
 
- Power BI Report Builder er et værktøj, der bruges til at oprette sideinddelte rapporter.  Når du designer en sideinddelt rapport, opretter du en rapportdefinition, der angiver, hvilke data der skal hentes, hvor du kan få dem, og hvordan de skal vises. Når du kører rapporten, bruger rapportbehandleren den angivne rapportdefinition, henter dataene og kombinerer dem med rapportlayoutet for at generere rapporten. Du kan få forhåndsvist rapporten i Report Builder. Derefter kan du publicere rapporten i Power BI-tjenesten.
+ Power BI Report Builder er et værktøj til oprettelse af sideinddelte rapporter, som du kan publicere på Power BI-tjenesten.  Når du designer en sideinddelt rapport, opretter du en rapportdefinition, der angiver, hvilke data der skal hentes, hvor du kan få dem, og hvordan de skal vises. Når du kører rapporten, bruger rapportbehandleren den angivne rapportdefinition, henter dataene og kombinerer dem med rapportlayoutet for at generere rapporten. Du kan få forhåndsvist rapporten i Report Builder. Derefter kan du publicere rapporten i Power BI-tjenesten.
+ 
+Klar til at begynde at oprette? [Installér Power BI Report Builder](https://aka.ms/pbireportbuilder) fra Microsoft Download Center.
 
 Foretrækker du at lære fra videoer? Se videoserien om sideinddelte rapporter i Power BI på YouTube af Chris Finlan, der er Principal Program Manager for Power BI.
 
@@ -58,7 +60,7 @@ Følgende sideinddelte rapport indeholder en matrix med række- og kolonnegruppe
   
 -   **Angiv abonnementer.** Når du publicerer rapporten i Power BI-tjenesten, kan du konfigurere rapporten, så den køres på et bestemt tidspunkt, og sende den som et mailabonnement.  
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 - Se [videoserien om sideinddelte rapporter i Power BI](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ) på YouTube af Chris Finlan, der er Principal Program Manager for Power BI

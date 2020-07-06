@@ -5,22 +5,24 @@ author: davidiseminger
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
-ms.date: 11/01/2017
+ms.topic: how-to
+ms.date: 06/10/2020
 ms.author: davidi
-ms.openlocfilehash: cab64bdcd5707cfd0b1578e82334de4b5c84495c
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3814c0532d94af3265bd608fc7837df982f9b6c4
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81439957"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85236097"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Sådan konfigurerer du en planlagt opdatering af en Power BI-rapport
-Hvis du vil opdatere dataene i din Power BI-rapport, skal du oprette en plan for planlagt opdatering. Det gør du i området *Administrer* i en Power BI-rapport.
+Hvis du vil opdatere data i din Power BI-rapport på Power BI-rapportserver, skal du oprette en plan for planlagt opdatering. Du kan oprette denne plan i området *Administrer* i en Power BI-rapport på rapportserveren.
 
 ![Vellykkede planlagt opdatering af en Power BI-rapport](media/configure-scheduled-refresh/scheduled-refresh-success.png)
 
 ## <a name="configure-data-source-credentials"></a>Konfigurer legitimationsoplysningerne for datakilden
+Du skal bruge de nødvendige tilladelser til at oprette en plan for planlagt opdatering. Tilladelser er defineret i rolledefinitionerne for rapportserveren. Se [Rolledefinitioner – foruddefinerede roller](https://docs.microsoft.com/sql/reporting-services/security/role-definitions-predefined-roles) i dokumentationen til SQL Server Reporting Services for at få flere oplysninger.
+
 Før du kan oprette en plan for planlagt dataopdatering, skal du angive legitimationsoplysningerne for **hver enkelt datakilde**, der bruges i din Power BI-rapport.
 
 1. Højreklik på Power BI-rapporten på webportalen, og vælg **Administrer**.
@@ -78,12 +80,12 @@ Få vist status for en plan for planlagt opdatering på webportalen.
    | Opdatering af data |Opdatering af dataene i modellen. |
    | Fjernelse af legitimationsoplysninger fra modellen |De legitimationsoplysninger, der bruges til at oprette forbindelse til datakilden fra modellen, blev fjernet. |
    | Lagring af modellen i kataloget |Opdateringen af data er fuldført, og den opdaterede model gemmes i katalogdatabasen på rapportserveren igen. |
-   | Fuldført: Dataopdatering |Opdateringen er færdig. |
+   | Fuldført: Opdatering af data |Opdateringen er færdig. |
    | Fejl: |Der opstod en fejl under opdateringen, og fejlen vises. |
 
 Websiden skal opdateres, for at du kan se den aktuelle status. Status ændres ikke automatisk.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 Du kan få mere at vide om oprettelse og ændring af tidsplaner under [Opret, rediger og slet tidsplaner](https://docs.microsoft.com/sql/reporting-services/subscriptions/create-modify-and-delete-schedules).
 
 Du kan finde oplysninger om fejlfinding i forbindelse med planlagt opdatering under [Fejlfinding i forbindelse med planlagt opdatering på Power BI-rapportserver](scheduled-refresh-troubleshoot.md).

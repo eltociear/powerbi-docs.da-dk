@@ -1,6 +1,6 @@
 ---
 title: Hvad er sideinddelte rapporter i Power BI Premium?
-description: Sideinddelte rapporter, der længe har været standardrapportformatet i SQL Server Reporting Services, er nu tilgængelige i Power BI-tjenesten. Disse rapporter kan udskrives eller deles. Du kan styre rapportlayoutet præcist. De viser alle data i en tabel, også selvom tabellen strækker sig over flere sider.
+description: Sideinddelte rapporter er nu tilgængelige i Power BI-tjenesten. De har længe været standardformatet for rapporter i SQL Server Reporting Services. Disse rapporter kan udskrives eller deles. Du kan styre rapportlayoutet præcist. De viser alle data i en tabel, også selvom tabellen strækker sig over flere sider.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 05/19/2020
-ms.openlocfilehash: 69d6f3c828066a66c59ab8becf4fd4f43e54c547
-ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
+ms.openlocfilehash: 7483b6878a7f7c2e01be7869827f8de66499cc5f
+ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83733410"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85393769"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Hvad er sideinddelte rapporter i Power BI Premium?
 
@@ -95,7 +95,8 @@ Her er nogle andre funktioner, der ikke understøttes i den første version:
  
 ## <a name="next-steps"></a>Næste trin
 
-- [Installér Power BI Report Builder fra Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
+- [Installér Power BI Report Builder fra Microsoft Download Center](https://aka.ms/pbireportbuilder)
 - [Selvstudium: Opret en sideinddelt rapport](paginated-reports-quickstart-aw.md)
+- [Onlinekursus: Sideinddelte Power BI-rapporter på én dag](../learning-catalog/paginated-reports-online-course.md)
 - [Angiv data direkte i en sideinddelt rapport](paginated-reports-enter-data.md)
 - [Selvstudium: Integrer sideinddelte Power BI-rapporter i et program til dine kunder](../developer/embedded/embed-paginated-reports-customers.md)

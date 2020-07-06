@@ -1,6 +1,6 @@
 ---
 title: Brug sikkerhed på rækkeniveau med integreret Power BI-indhold
-description: Få mere at vide om, hvordan du integrerer Power BI-indhold i din app.
+description: Få mere at vide om, hvordan du integrerer Power BI-indhold i din app
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 71f204058bfa94c61df8299d2a2c7c9063caad5d
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b412af6899b9299fc4fde8ea217569747a445e45
+ms.sourcegitcommit: 52f365af6ea5359e39d4d4547f1d61e5e0d08c5f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83277013"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84795133"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sikkerhed på rækkeniveau med Power BI Embedded
 
@@ -88,16 +88,19 @@ API'en accepterer en liste over identiteter med angivelse af de relevante datas�
 
 Du kan oprette integreringstokenet ved hjælp af metoden **GenerateTokenInGroup** på **PowerBIClient.Reports**.
 
-Du kan f.eks. ændre eksemplet [PowerBIEmbedded_AppOwnsData](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData). *Services\EmbedService.cs line 76 and 77* kunne opdateres fra:
+Du kan f.eks. ændre *[PowerBI-Developer-Samples](https://github.com/Microsoft/PowerBI-Developer-Samples) > .NET Framework > Integrer for dine kunder > **PowerBIEmbedded_AppOwnsData***-eksempel.
+
+**Før ændringen**
 
 ```csharp
-// Generate Embed Token.
-var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
+// Generate Embed Token with effective identities.
+generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view", identities: new List<EffectiveIdentity> { rls });
 
-var tokenResponse = await client.Reports.GenerateTokenInGroupAsync(GroupId, report.Id, generateTokenRequestParameters);
+// Generate Embed Token for reports without effective identities.
+generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
 ```
 
-to
+**Efter ændringen**
 
 ```csharp
 var generateTokenRequestParameters = new GenerateTokenRequest("View", null, identities: new List<EffectiveIdentity> { new EffectiveIdentity(username: "username", roles: new List<string> { "roleA", "roleB" }, datasets: new List<string> { "datasetId" }) });
@@ -144,6 +147,9 @@ Roller kan angives med identiteten i et integreringstoken. Hvis der ikke angives
 ### <a name="using-the-customdata-feature"></a>Brug af funktionen CustomData
 
 Funktionen CustomData fungerer kun for modeller, der findes i **Azure Analysis Services**, og den fungerer kun i **Connect-live**tilstand. Til forskel fra brugere og roller kan CustomData-funktionen ikke angives i en PBIX-fil. Når et token genereres med funktionen CustomData, skal du have et brugernavn.
+
+>[!NOTE]
+>CustomData-brugernavnet må kun være på 256 tegn.
 
 Funktionen CustomData gør det muligt for dig at tilføje et rækkefilter, når du får vist Power BI-data i dit program, mens du bruger **Azure Analysis Services** som datakilde (visning af Power BI-data, der er forbundet med Azure Analysis Services i dit program).
 

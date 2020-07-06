@@ -1,6 +1,6 @@
 ---
 title: Brug sikkerhed på rækkeniveau med integreret Power BI-indhold
-description: Få mere at vide om, hvordan du integrerer Power BI-indhold i dit program.
+description: Få mere at vide om, hvordan du integrerer Power BI-indhold i din app.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: 8d3068453ea2d166b0b55fbba45d8452431de319
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a929374e3d974606d27defed4a7faa99e5450c87
+ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79491726"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84427864"
 ---
-# <a name="implementing-row-level-security-in-embedded-paginated-reports-preview"></a>Implementering af sikkerhed på rækkeniveau i integrerede sideinddelte rapporter (prøveversion)
+# <a name="implementing-row-level-security-in-embedded-paginated-reports"></a>Implementering af sikkerhed på rækkeniveau i integrerede sideinddelte rapporter
 
 Når du integrerer en sideinddelt rapport, kan du styre, hvilke data der skal vises. Det gør det muligt at skræddersy de viste oplysninger pr. bruger. Hvis du f. eks. har en sideinddelt Power BI-rapport, der omfatter globale salgsresultater, kan du integrere den, så kun salgsresultater fra en bestemt region er tilgængelige.
 
@@ -28,7 +28,7 @@ Denne funktion er en sikker måde at få vist et undersæt af dataene på, så d
 
 Når du anvender sikkerhed på rækkeniveau på en sideinddelt Power BI-rapport, skal du tildele en [parameter](../../paginated-reports/report-builder-parameters.md) til attributten **UserID**. Denne parameter begrænser de data, der trækkes fra datasættet, før rapporten integreres.
 
-Når du har tildelt parameteren til **UserID**, skal du bruge [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)-API'en til at hente integreringstokenet.
+Når du har tildelt parameteren til **UserID**, skal du bruge [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup)-API'en til at hente integreringstokenet.
 
 ## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>Brug UserID som et filter på rapport- eller forespørgselsniveau
 
@@ -78,7 +78,7 @@ Du kan bruge **UserId** som et *filter* eller i en *forespørgsel* til datakilde
 
 ## <a name="passing-the-configured-parameter-using-the-embed-token"></a>Overførsel af den konfigurerede parameter ved hjælp af integreringtokenet
 
-Når du integrerer en sideinddelt rapport til dine kunder, bruges [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)-API'en til at hente integreringtokenet. Dette token kan også bruges til at filtrere nogle af de data, der trækkes ud af de sideinddelte rapporter.
+Når du integrerer en sideinddelt rapport til dine kunder, bruges [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup)-API'en til at hente integreringtokenet. Dette token kan også bruges til at filtrere nogle af de data, der trækkes ud af de sideinddelte rapporter.
 
 Hvis du kun vil vise nogle af dataene, skal du tildele feltet `username` med de oplysninger, du vil have vist. Hvis du f. eks. angiver *grøn* i feltet `username` i en sideinddelt rapport, der har en farveparameter, begrænser det integrerede token for eksempel de integrerede data til kun at vise de data, der har værdien *grøn* i farvekolonnen.
 

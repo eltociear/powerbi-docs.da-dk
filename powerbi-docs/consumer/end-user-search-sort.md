@@ -6,16 +6,16 @@ ms.reviewer: willt
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 03/11/2020
+ms.topic: how-to
+ms.date: 06/25/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 63c18ae6452b36a72ab72eb6fdf0ce14a73011e9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 62acc84c7459cadd758a036f1db04685b5e9c2b5
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114118"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782544"
 ---
 # <a name="navigation-for-power-bi-consumers-global-search"></a>Navigation for Power BI-forbrugere: global søgning
 
@@ -39,11 +39,11 @@ Når du er ny bruger af Power BI-tjenesten, har du kun lidt indhold (dashboards,
 
 ## <a name="sorting-content-lists"></a>Sortering af indholdslister
 
-Hvis du kun har begrænset indhold, er det muligvis ikke nødvendigt at sortere.  Men når du har lange lister over dashboards og rapporter, kan du bruge sortering til at finde det, du har brug for. Denne **Delt med mig**-indholdsliste omfatter f.eks. 63 punkter. 
+Hvis du kun har begrænset indhold, er det muligvis ikke nødvendigt at sortere.  Men når du har lange lister over dashboards og rapporter, kan du bruge sortering til at finde det, du har brug for. Denne **Delt med mig**-indholdsliste omfatter f.eks. 257 punkter. 
 
-![delt med mig-indholdsliste](./media/end-user-search-sort/power-bi-long-lists.png)
+![delt med mig-indholdsliste](./media/end-user-search-sort/power-bi-all-shared.png)
 
-I øjeblikket er indholdslisten sorteret efter dato, fra nyeste til ældste. Hvis du vil ændre sorteringskriterierne, skal du vælge pilen til højre for **Dato (nyeste)** .
+I øjeblikket sorteres indholdslisten alfabetisk efter navn fra A til Å. Hvis du vil ændre sorteringskriterierne, skal du vælge pilen til højre for **Navn (A-Å)** .
 
 ![Rullemenuen Sortér](./media/end-user-search-sort/power-bi-sort-date.png)
 
@@ -58,7 +58,9 @@ Ikke alle kolonner kan sorteres. Hold over kolonneoverskrifterne for at finde ud
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 * **Sortér efter** ikke tilgængelig efter ejer i forbindelse med datasæt.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 [Sorter visualiseringer i rapporter](end-user-change-sort.md)
+
+[Sortering af data i visualiseringer](end-user-change-sort.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

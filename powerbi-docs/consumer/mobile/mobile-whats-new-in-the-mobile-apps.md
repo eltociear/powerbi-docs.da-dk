@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 06/24/2020
 ms.author: painbar
-ms.openlocfilehash: 7d0933b20c942df724a4d21fbba438cdc8748969
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 9655783decee99bc90071cdfbd66a8b58d8272f4
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565294"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782586"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -24,6 +24,20 @@ Du kan finde relaterede oplysninger om nyheder under:
 
 >[!NOTE]
 >Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="june-2020"></a>Juni 2020
+### <a name="show-your-bookmarks-in-slideshows-windows"></a>Vis dine bogmærker i slideshow (Windows)
+Nu kan du automatisk medtage rapporter og personlige bogmærker i dine diasshows som en del af præsentationen for at fremhæve specifikke indsigter i dine data.
+[Prøv det!](mobile-windows-10-app-presentation-mode.md#use-presentation-mode)
+
+## <a name="may-2020"></a>Maj 2020
+### <a name="weve-added-dark-mode-to-power-bi-mobile-ios"></a>Vi har føjet mørk tilstand til Power BI - Mobil (iOS)
+Prøv den nye mørke tilstand i Power BI - Mobil-appen til iOS13. I mørk tilstand kan du se lys tekst på en mørk baggrund, hvilket reducerer skærmens lysstyrke og gør den nemmere at se dit indhold. Du kan skifte mellem temaer i indstillingerne for appens udseende. [Få mere at vide](mobile-apps-dark-mode.md)
+
+![Mørk tilstand i Power BI - Mobil-appene](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-dark-mode.png)
+
+### <a name="apply-bookmarks-in-presentation-mode-windows"></a>Anvend bogmærker i præsentationstilstand (Windows)
+Når du præsenterer en rapport i præsentationstilstand, kan du nu anvende både personlige og rapportens bogmærker på rapportsider for at fortælle historien om dine data. [Prøv det!](mobile-windows-10-app-presentation-mode.md#use-presentation-mode)
 
 ## <a name="april-2020"></a>April 2020
 

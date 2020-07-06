@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 364736ae8f4cf800c9c63282feb07f8e081aeb42
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 83e1725b7ce7d38a00d0564702977c3a8eef7c1d
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83289206"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85222867"
 ---
 # <a name="enable-encryption-for-sap-hana"></a>Aktivér kryptering for SAP HANA
 
@@ -38,7 +38,7 @@ Sørg for, at din HANA-server er konfigureret til at bruge OpenSSL som kryptogra
 
 Opret en anmodning om signering af et X509-certifikat for HANA-serveren.
 
-1. Brug SSH til at oprette forbindelse til den Linux-maskine, hvorpå HANA-serveren kører som \<sid\>-administrator.
+1. Brug SSH til at oprette forbindelse til den Linux-maskine, hvorpå HANA-serveren kører som \<sid\>administrator.
 
 1. Gå til startmappen _/__usr/sap/\<sid\>/home_.
 
@@ -104,7 +104,7 @@ Test forbindelsen i Power BI Desktop eller Power BI-tjenesten.
 
         ![Valider servercertifikat i tjenesten](media/desktop-sap-hana-encryption/validate-server-certificate-service.png)
 
-    - Power BI-tjenesten
+    - Power BI-tjeneste
 
         ![Valider servercertifikat i Desktop](media/desktop-sap-hana-encryption/validate-server-certificate-desktop.png)
 

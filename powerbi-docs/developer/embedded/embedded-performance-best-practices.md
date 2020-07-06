@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: c619f37ac062eec02eb379ba7cd97731254a171a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: ba0a85958fad500bd27f4697a7f46961ca430f49
+ms.sourcegitcommit: 0b1e96de184caf2371adedcc3ee43bcb88048187
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279382"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85299566"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bedste praksis for ydeevnen i Power BI Embedded
 
 Denne artikel indeholder anbefalinger til hurtigere gengivelse af rapporter, dashboards og felter i dit program.
 
 > [!Note]
-> Husk, at indlæsningstiden hovedsageligt afhænger af de elementer, der er relevante for selve rapporten og dataene, herunder visualiseringer, størrelsen af dataene og kompleksiteten af forespørgslerne og de beregnede mål. Du kan finde flere oplysninger i [Optimeringsvejledning til Power BI](../../guidance/power-bi-optimization.md).
+> Husk, at indlæsningstiden hovedsageligt afhænger af de elementer, der er relevante for selve rapporten og dataene, herunder visualiseringer, størrelsen af dataene og kompleksiteten af forespørgslerne og de mål. Du kan finde flere oplysninger i [Optimeringsvejledning til Power BI](../../guidance/power-bi-optimization.md).
 
 ## <a name="update-tools-and-sdk-packages"></a>Opdater værktøjer og SDK-pakker
 
@@ -36,7 +36,7 @@ Metoden `powerbi.embed(element, config)` modtager et element og en konfiguration
 
 ### <a name="embed-url"></a>Integreret URL-adresse
 
-Undgå at generere den integrerede URL-adresse selv. Sørg i stedet for at få den integrerede URL-adresse ved at kalde API'en for [Hent rapporter](/rest/api/power-bi/reports/getreportsingroup), [Hent dashboards](/rest/api/power-bi/dashboards/getdashboardsingroup) eller [Hent felter](/rest/api/power-bi/dashboards/gettilesingroup). Vi har føjet en ny parameter til URL-adressen kaldet **_config_** , som bruges til forbedringer af ydeevnen.
+Undgå at generere den integrerede URL-adresse selv. Sørg i stedet for at få den integrerede URL-adresse ved at kalde API'en for [Hent rapporter](/rest/api/power-bi/reports/getreportsingroup), [Hent dashboards](/rest/api/power-bi/dashboards/getdashboardsingroup) eller [Hent felter](/rest/api/power-bi/dashboards/gettilesingroup). Vi har føjet en ny parameter til URL-adressen kaldet **_config_**, som bruges til forbedringer af ydeevnen.
 
 ### <a name="permissions"></a>Tilladelser
 
@@ -53,7 +53,7 @@ Hvis du integrerer rapporter med de samme filtre, bogmærker og udsnit for at fo
 Når du integrerer flere rapporter i den samme iframe, skal du ikke generere en ny iframe for hver rapport. Brug i stedet `powerbi.embed(element, config)` med en anden konfiguration for at integrere den nye rapport.
 
 > [!NOTE]
-> Det er muligvis ikke særligt effektivt at skifte mellem rapporter for et scenarie af typen "Appen ejer data", da det er nødvendigt at generere et nyt integreringstoken.
+> Hvis du skifter mellem rapporter, når du integrerer for dine kunder (også kaldet et "app ejer data"-scenarie), skal du bruge et indlejringstoken med tilladelser til alle rapporter og datasæt. Du kan finde flere oplysninger under [Opret token-API](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken).
 
 ## <a name="query-caching"></a>Cachelagring af forespørgsel
 

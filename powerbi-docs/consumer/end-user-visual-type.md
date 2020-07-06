@@ -5,27 +5,29 @@ author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 03/11/2020
+ms.topic: how-to
+ms.date: 06/24/2020
 ms.author: mihart
+ms.custom: contperfq4
 LocalizationGroup: Consumer
-ms.openlocfilehash: acfcd863a537153e70734d5f83e89e384438885e
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 605b3fbc49d9a9dbf60b6963a89487ca15284b29
+ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279428"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85393835"
 ---
 # <a name="visual-types-in-power-bi"></a>Visualiseringstyper i Power BI
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-Du finder visualiseringer i rapporter, på dashboards og under Spørgsmål og svar. Nogle af disse visual-typer følger med Power BI som en del af pakken, og nogle er *Power BI-visuals*. Brugerdefinerede visualiseringer oprettes uden for Power BI og på en måde, der gør det muligt for *rapportdesignere* at føje dem til rapporter og dashboards i Power BI. 
+Visuals (også kaldet *diagrammer* og *visualiseringer*) er billedgengivelser af dine data. Nogle almindelige eksempler er søjlediagrammer, kort, punktdiagrammer og radiale målere. Du finder visualiseringer i rapporter, på dashboards og under Spørgsmål og svar.
 
-Denne artikel indeholder en oversigt over de visualiseringer, der medfølger til Power BI-tjenesten som en del pakken.  Disse visualiseringstyper er dem, du oftest vil støde på. Du kan finde detaljerede oplysninger om en af disse visualiseringer i dokumentationen til [Power BI Report *Designer* om visuelle typer](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
+De visuals, der er beskrevet på denne side, er dem, der følger med Power BI. Disse visualtyper er dem, du oftest støder på. Denne side giver et hurtigt overblik over de medfølgende visuals. Du kan finde detaljerede oplysninger om disse visuals i dokumentationen om visualtyper til [Power BI Report *Designer*](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
-> [!NOTE]
-> Du kan få mere at vide om Power BI-visuals ved at søge efter dem i afsnittet **Power BI-visuals** i [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). For hver enkelt visualisering finder du en beskrivelse, forfatteroplysninger og enten skærmbilleder eller en video. 
+Visuals, som ikke automatisk er inkluderet i Power BI, kaldes *brugerdefinerede visuals*. Brugerdefinerede visuals kan importeres til Power BI fra eksterne websteder, f. eks. Microsoft AppSource, eller fra interne kilder, f. eks. organisationslageret. Import af brugerdefinerede visuals kræver redigeringsrettigheder til rapporten. Hvis du vil vide mere om disse tilføjelsesvisuals kan du besøge [Visualiseringer i Power BI](../developer/visuals/power-bi-custom-visuals.md).
+
+
 
 ## <a name="list-of-visuals-available-in-power-bi"></a>Liste over visualiseringer, der er tilgængelige i Power BI
 Du finder alle disse visualiseringer på dashboards, i rapporter og [angivet under Spørgsmål og svar](end-user-q-and-a.md) i Power BI. Hvis du vil vide mere om, hvordan du interagerer med visualiseringer, skal du se [Interager med visualiseringer i rapporter, på dashboards og i apps](end-user-visualizations.md)
@@ -64,6 +66,12 @@ Kombinationsdiagrammer er et fantastisk valg i følgende tilfælde:
 - til at illustrere sammenhængen mellem to målinger i én visualisering
 - til at kontrollere, om en måling opfylder målet, der er defineret af en anden måling
 - til at spare plads på lærredet.
+
+
+### <a name="decomposition-tree"></a>Fordelingstræ
+![fordelingstræ](media/end-user-visual-type/power-bi-decomposition.png)
+
+Fordelingstrævisual'et giver dig mulighed for at visualisere data på tværs af flere dimensioner. Den samler automatisk data og giver dig mulighed for at foretage detailudledning i dine dimensioner i vilkårlig rækkefølge. Det er også en AI-visualisering (kunstig intelligens), så du kan bede den om at finde den næste dimension, så du kan foretage detailudledning på baggrund af bestemte kriterier. Det gør det til et værdifuldt værktøj til ad hoc-udforskning og udførelse af rodårsags analyser.
 
 ### <a name="doughnut-charts"></a>Kransediagrammer
 ![kransediagram](media/end-user-visual-type/donut-small.png)
@@ -210,12 +218,12 @@ Tabeller er et godt valg til at:
 - Se data i tabelformat.
 - Se numeriske data efter kategorier.
 
-### <a name="treemaps"></a>Træstrukturer
-![træstrukturdiagram](media/end-user-visual-type/pbi-nancy-viz-tree.png)
+### <a name="tree-maps"></a>Trækort
+![trækortdiagram](media/end-user-visual-type/pbi-nancy-viz-tree.png)
 
-Træstrukturer er diagrammer med farvede rektangler, hvor størrelsen repræsenterer værdien.  De kan være hierarkiske, hvor rektangler er indlejret i de primære rektangler. Pladsen inde i hvert rektangel er allokeret ud fra den værdi, der måles. Og rektanglerne er arrangeret efter størrelse fra øverst til venstre (størst) til nederst til højre (mindst).
+Trækort er diagrammer med farvede rektangler, hvor størrelsen repræsenterer værdien.  De kan være hierarkiske, hvor rektangler er indlejret i de primære rektangler. Pladsen inde i hvert rektangel er allokeret ud fra den værdi, der måles. Og rektanglerne er arrangeret efter størrelse fra øverst til venstre (størst) til nederst til højre (mindst).
 
-Træstrukturer er et godt valg:
+Trækort er et godt valg:
 - til at vise store mængder hierarkiske data
 - når et liggende søjlediagram ikke kan håndtere det store antal værdier effektivt
 - til at vise proportionerne mellem de enkelte dele og en helhed

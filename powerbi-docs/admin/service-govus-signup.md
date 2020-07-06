@@ -10,12 +10,12 @@ ms.date: 04/07/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: f494533c8b79dce250f3f25c706896d542f01f26
-ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
+ms.openlocfilehash: 885490554acfec10503ba8ce7bc1db6937ec8fce
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84159553"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485455"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Tilmeld din offentlige myndighed i USA til Power BI-tjenesten
 
@@ -32,7 +32,7 @@ Du kan finde flere oplysninger om Power BI-tjenesten til offentlige myndigheder 
 
 Din offentlige myndighed i USA kan være nybegynder i forhold til Government Community Cloud eller kan allerede have et abonnement. I følgende afsnit beskrives tilmeldingstrinnene baseret på, hvor du er i forhold til Microsoft 365 Government-planerne og Power BI. Trinnene er forskellige afhængigt af din aktuelle tilmelding.
 
-Når du har tilmeldt dig Power BI US Government, skal du arbejde sammen med dit kontoteam for at starte processen for [*angivelse på* hvidliste](#additional-signup-information), som er beskrevet i denne artikel. Dette trin er nødvendigt for at aktivere din organisation fuldt ud i Government Community Cloud.
+Når du har tilmeldt dig Power BI US Government, skal du arbejde sammen med dit kontoteam for at starte [hvidlisteprocessen](#additional-signup-information), som er beskrevet i denne artikel. Dette trin er nødvendigt for at aktivere din organisation fuldt ud i Government Community Cloud.
 
 ## <a name="sign-up-for-a-new-microsoft-365-government-plan"></a>Tilmeld dig en ny Microsoft 365 Government-plan
 
@@ -69,9 +69,9 @@ Hvis din organisation allerede har en Microsoft 365 Government-plan, skal du fø
 
 ## <a name="additional-signup-information"></a>Yderligere tilmeldingsoplysninger
 
-Før du kan bruge Power BI-tjenester til offentlige myndigheder i USA, skal du arbejde sammen med dit Microsoft-kontoteam for at indlede *angivelse på hvidliste* for din organisation. Angivelse på hvidliste er en proces, som Power BI-teknikerteamet bruger til at flytte kunder fra det kommercielle cloudmiljø til det sikre Government Community Cloud. Dette trin sikrer, at funktioner, der er tilgængelige i US Government-cloudmiljøet, fungerer som forventet. 
+Før du kan bruge Power BI-tjenester til offentlige myndigheder i USA, skal du arbejde sammen med dit Microsoft-kontoteam for at føje din organisation til vores hvidliste. Hvidlisteprocessen bruges af Power BI-teknikerteamet til at flytte kunder fra det kommercielle cloudmiljø til det sikre Government Community Cloud. Dette trin sikrer, at funktioner, der er tilgængelige i US Government-cloudmiljøet, fungerer som forventet. 
 
-Du starter processen for angivelse på hvidliste ved at kontakte dit Microsoft-kontoteam for at få hjælp. Det er kun administratorer, der kan anmode om angivelse på hvidliste. Processen tager ca. tre uger. I løbet af denne tid udfører Power BI-teknikerteamet relevante ændringer for at sikre, at din lejer fungerer korrekt i US Government-cloudmiljøet.
+Du starter hvidlisteprocessen ved at kontakte dit Microsoft-kontoteam for at få hjælp. Kun administratorer kan anmode om tilføjelse til hvidlisten. Processen tager ca. tre uger. I løbet af denne tid udfører Power BI-teknikerteamet relevante ændringer for at sikre, at din lejer fungerer korrekt i US Government-cloudmiljøet.
 
 
 ## <a name="next-steps"></a>Næste trin

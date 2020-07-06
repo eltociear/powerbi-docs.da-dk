@@ -8,15 +8,15 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: 149b4f8663838c0a87609a1ec24358fb9ee9727e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8860a06355f201c463e97d81021a8e5476ac98c8
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80403627"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354978"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Trin 3: Opret et datasæt i Power BI
-Denne artikel er en del af en trinvis vejledning til, hvordan du [overfører data til et datasæt](walkthrough-push-data.md).
+Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
 
 I **trin 2** af Send data til et datasæt, [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md), fik du et token til godkendelse til **Azure AD**. I dette trin skal du bruge dette token for at kalde handlingen [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets).
 
@@ -26,7 +26,7 @@ For at godkende en Power BI REST-handling skal du føje det token, du fik under 
 
 Når du kalder handlingen [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets), oprettes der et nyt datasæt. 
 
-![](media/walkthrough-push-data-create-dataset/powerbi-developer-create-dataset.png)
+![opret datasæt](media/walkthrough-push-data-create-dataset/powerbi-developer-create-dataset.png)
 
 Sådan opretter du et datasæt i Power BI.
 
@@ -44,7 +44,7 @@ Sådan opretter du et datasæt i Power BI.
 
 Føj denne kode til Program.cs.
 
-* In static void Main(string[] args):
+* I static void Main(string[] args):
   
     ```csharp
     static void Main(string[] args)
@@ -107,11 +107,11 @@ Føj denne kode til Program.cs.
 
 I det næste trin kan du se, hvordan du [henter et datasæt for at føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md).
 
-Herunder kan du se den [komplette kode](#code).
+Nedenfor kan du se den [komplette kodeliste](#code).
 
 <a name="code"/>
 
-## <a name="complete-code-listing"></a>Færdiggør kodeliste
+## <a name="complete-code-listing"></a>Komplet kodeliste
 
 ```csharp
 using System;
@@ -226,14 +226,14 @@ namespace walkthrough_push_data
 
 [Næste trin >](walkthrough-push-data-get-datasets.md)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 * [Hent et datasæt for at føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md)  
-* [Hent en adgangstoken til godkendelse](walkthrough-push-data-get-token.md)  
+* [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md)  
 * [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset)  
 [PostDatasetInGroup](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdatasetingroup)  
 * [Send data til et Power BI-dashboard](walkthrough-push-data.md)  
-* [Oversigt over Power BI REST-API'en](overview-of-power-bi-rest-api.md)  
-* [Reference til Power BI REST-API](https://docs.microsoft.com/rest/api/power-bi/)  
+* [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
+* [Power BI REST-API-reference](https://docs.microsoft.com/rest/api/power-bi/)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

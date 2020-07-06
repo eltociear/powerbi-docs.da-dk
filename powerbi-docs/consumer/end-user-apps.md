@@ -5,17 +5,17 @@ author: mihart
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/19/2020
 ms.author: mihart
-ms.custom: licensing support
+ms.custom: licensing support, css_fy20Q4
 LocalizationGroup: Share your work
-ms.openlocfilehash: baa556b1db10827b5979331ddcc22fa1e111a661
-ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
+ms.openlocfilehash: ed50045aca966face5d758c9036508bdfef81d5e
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84160151"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85236540"
 ---
 # <a name="apps-in-power-bi"></a>Apps i Power BI
 
@@ -43,15 +43,17 @@ Med apps ser du automatisk ændringerne, hver gang appens forfatteren udgiver op
 
 <!-- add conceptual art -->
 ## <a name="get-a-new-app"></a>Hent en ny app
-Du kan hente apps på nogle forskellige måder. Nogle af måderne er angivet nedenfor.  Du kan dog finde detaljerede trinvise instruktioner til, hvordan du henter og udforsker en app i [Åbn og interager med en app](end-user-app-view.md).
+Den bedste måde at få en ny app på er via [markedspladsen for Power BI-apps](https://app.powerbi.com/groups/me/getapps/apps).
 
-- Appdesigneren kan installere appen automatisk på din Power BI-konto, og næste gang du åbner Power BI-tjenesten, får du vist den nye app på **appindholdslisten**. 
-- Appdesigneren kan sende dig et direkte link til en app via mail. Hvis du vælger linket, åbner appen i Power BI-tjenesten.
-- I Power BI på din mobilenhed kan du kun installere en app fra et direkte link og ikke fra AppSource. Hvis appens forfatter installerer appen automatisk, kan du se den på listen over apps.
-- Du kan søge efter apps i [AppSource](https://appsource.microsoft.com). AppSource indeholder apps, der er udgivet af rapportdesignere både i og uden for din virksomhed. Du kan f.eks. finde en app på AppSource til en tjeneste, som du allerede bruger, f.eks Google Analytics, GitHub eller Microsoft Dynamics. Du kan også finde apps, der er eksempler, som du kan bruge til at få mere at vide om Power BI.  
+![Markedsplads for Power BI-apps](./media/end-user-apps/power-bi-app-marketplace.png)
 
+Der er andre måder at hente apps på. Nogle af disse måder er angivet nedenfor. Du kan dog finde detaljerede trinvise instruktioner til, hvordan du henter og udforsker en app i [Åbn og interager med en app](end-user-app-view.md).
 
-## <a name="next-step"></a>Næste trin
+* Appdesigneren kan installere appen automatisk på din Power BI-konto, og næste gang du åbner Power BI-tjenesten, får du vist den nye app på **appindholdslisten**. 
+* Appdesigneren kan sende dig et direkte link til en app via mail. Hvis du vælger linket, åbner appen i Power BI-tjenesten.
+* I Power BI på din mobilenhed kan du kun installere en app fra et direkte link og ikke fra AppSource. Hvis appens forfatter installerer appen automatisk, kan du se den på listen over apps. 
+
+## <a name="next-steps"></a>Næste trin
 * [Åbn og interager med en app](end-user-app-view.md)
 * [Andre måder at dele indhold på](end-user-shared-with-me.md)
 

@@ -4,15 +4,15 @@ description: Få mere at vide om, hvordan du hurtigt kan få adgang til indhold,
 author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/06/2020
 ms.author: painbar
-ms.openlocfilehash: 1aa2e80e7624fb50878c70e464aac7edd943e0a8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ec4763118360ea02362e3f49fe9776224e9c087a
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80802772"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85229402"
 ---
 # <a name="use-android-app-shortcuts-in-the-power-bi-android-app"></a>Brug af Android-appgenveje i Power BI Android-appen
 
@@ -33,7 +33,7 @@ Med Power BI-mobilappen til Android kan du få direkte adgang til de rapporter e
 
 Du kan oprette en genvej til en rapport eller et dashboard.
 
-1. Klik på **Flere indstillinger...** i menuen Handlinger, og vælg **Tilføj genvej**.
+1. Klik på **Flere indstillinger...** i menuen Handlinger i en rapport, og tryk på **Tilføj genvej**. Tryk på **Tilføj genvej** i menuen Handlinger fra et dashboard.
 
    ![Tilføj genvej, menuen Handlinger](media/mobile-app-quick-access-shortcuts/mobile-add-shortcut-action-menu.png)
 
@@ -44,7 +44,6 @@ Du kan oprette en genvej til en rapport eller et dashboard.
    Disse to oplevelser er illustreret nedenfor.
 
    ![Banneret Tilføj genvej](media/mobile-app-quick-access-shortcuts/mobile-add-shortcut-banner.png)
-
 
  1. Dialogboksen **Tilføj genvej** åbnes med navnet på dit element. Du kan redigere navnet, hvis du vil. Tryk på **Tilføj**, når du er færdig.
 
@@ -60,7 +59,7 @@ Du kan oprette en genvej til en rapport eller et dashboard.
 
 ## <a name="edit-the-shortcut-name"></a>Rediger navnet på genvejen
 
-Hvis du vil redigere navnet på en genvej, skal du vælge **Flere indstillinger...** i menuen Handlinger og derefter vælge **Rediger genvejsnavn**
+Hvis du vil redigere navnet på en genvej fra en rapport, skal du vælge **Flere indstillinger...** i menuen Handlinger og derefter vælge **Rediger genvejsnavn**. Tryk på **Tilføj genvej** fra et dashboard. Dialogboksen **Rediger genvejsnavn** vises.
 
  ![Rediger genvejsnavn](media/mobile-app-quick-access-shortcuts/mobile-edit-shortcut.png)
 

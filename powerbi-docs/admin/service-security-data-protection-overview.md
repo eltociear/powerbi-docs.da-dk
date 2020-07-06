@@ -4,17 +4,17 @@ description: Få mere at vide om, hvordan databeskyttelse fungerer i Power BI
 author: paulinbar
 manager: rkarlin
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 05/21/2020
+ms.subservice: powerbi-eim
+ms.topic: how-to
+ms.date: 06/15/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: fa969f8f738cf09e9e01e284de8f60e2fd8ce9ab
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: 4575c80106329a00c959db73c2851c99959f41ec
+ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84315666"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85393651"
 ---
 # <a name="data-protection-in-power-bi"></a>Databeskyttelse i Power BI
 

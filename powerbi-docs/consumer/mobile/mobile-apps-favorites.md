@@ -5,15 +5,15 @@ author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: bad6b507e970319003a8d338ecf29a2afc948e9c
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ee2ce1161f5afbdc39520a0102d3289f00792207
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435553"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85240207"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Føj til Favoritter, og få dem vist i Power BI-mobilapps
 Gælder for:
@@ -52,27 +52,23 @@ Du kan markere KPI'er og rapporter som favoritter på en Power BI-rapportserver 
 ## <a name="make-a-dashboard-or-report-a-favorite-in-the-ios-and-windows-10-mobile-apps"></a>Føj et dashboard eller en rapport til Favoritter i iOS- og Windows 10-mobilapps
 Du kan føje et Power BI-dashboard eller en Power BI-rapport til Favoritter fra listen over dashboards eller rapporter eller fra selve dashboardet eller rapporten.
 
-* På listen over dashboards eller rapporter skal du trykke på den tomme stjerne ud for navnet ![ikonet Ikke føjet til Favoritter](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). Stjernen bliver derefter gul ![ikonet Favoritter](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png).
+* På listen over dashboards eller rapporter skal du trykke på den tomme stjerne ud for navnet ![ikonet Ikke føjet til Favoritter](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). Stjernen bliver derefter sort ![ikonet Favoritter](./././media/mobile-apps-favorites/power-bi-mobile-favorite-selected-black.png).
   
     ![Dashboard tilføjet Favoritter](./media/mobile-apps-favorites/power-bi-mobile-make-dashboard-favorite.png)
-* Hvis du er på et dashboard, skal du trykke på den tomme stjerne ![ikonet Ikke favorit](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png) på båndet. Hvis du er i en rapport, finder du stjernen under **Flere indstillinger** (...).  Stjernen bliver sort ![ikonet Favorit](./././media/mobile-apps-favorites/power-bi-mobile-favorite-selected-black.png).
+* Hvis du er i et dashboard eller en rapport, skal du trykke på **Flere indstillinger** (...) i overskriften og derefter trykke på den tomme stjerne ![ikonet Ikke føjet til Favoritter](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png) i den menu, der vises. Stjernen bliver sort ![ikonet Favoritter](./././media/mobile-apps-favorites/power-bi-mobile-favorite-selected-black.png).
   
     ![Ikonet Favoritter er valgt](./media/mobile-apps-favorites/power-bi-mobile-favorite-selected.png)
 
 ## <a name="make-a-dashboard-or-report-a-favorite-in-the-android-mobile-apps"></a>Føj et dashboard eller en rapport til Favoritter i Android-mobilapps
 Du kan føje et dashboard eller en rapport til Favoritter fra listen over dashboards eller rapporter eller fra selve dashboardet eller rapporten.
 
-* På listen over dashboards eller rapporter i mobilappen skal du trykke på den lodrette knap **Flere indstillinger** (...) ud for navnet og derefter trykke på stjernen Favoritter på den infofane, der vises.
+* På listen over dashboards eller rapporter i mobilappen skal du trykke på stjernen ud for navnet på rapporten eller dashboardet for at markere elementet som Favorit eller fjerne det fra Favoritter.
   
     ![Android-menuen Favoritter](./media/mobile-apps-favorites/power-bi-android-make-favorite.png)
 
-* Når du er på et dashboard, skal du trykke på den tomme stjerne på båndet ![ikonet Ikke føjet til Favoritter](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). Stjernen bliver mørkegrå ![ikonet Favoritter](./media/mobile-apps-favorites/power-bi-android-favorite-icon.png).
+* Tryk på **Flere indstillinger (...)** , mens du er i et dashboard, og vælg derefter **Favoritter**.
   
     ![Android-stjernen Favoritter](./media/mobile-apps-favorites/power-bi-android-favorite-in-dashboard.png)
-
-* Hvis du er i en rapport, skal du stryge ned for at få vist båndet, trykke på **Flere indstillinger** (...) og derefter rulle ned for at finde den tomme stjerne ![ikonet Ikke favorit](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png) og trykke på den. Stjernen bliver mørkegrå ![ikonet Favorit](./media/mobile-apps-favorites/power-bi-android-favorite-icon.png).
-  
-    ![Android-stjernen Favoritter](./media/mobile-apps-favorites/power-bi-android-favorite-in-report.png)
 
 ## <a name="make-favorite-power-bi-report-server-and-reporting-services-reports-and-kpis"></a>Gør Power BI-rapportserver- og Reporting Services-rapporter og -KPI'er til favoritter
 Du kan se dine foretrukne Power BI-rapportserver- og Reporting Services-rapporter og -KPI'er i Power BI-mobilapps, men du kan ikke gøre dem til favoritter i mobilapps. Du kan [angive dem som favoritter på webportalen](../../report-server/tutorial-explore-report-server-web-portal.md#tag-your-favorites). 

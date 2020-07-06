@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/21/2020
+ms.date: 06/11/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 42e3f36689e62b196f5d8cb82bd4dd5ee118bf8b
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: 0a09311c5fdb1a8b2e008996d993015f33ee9b5f
+ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83793392"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "84739247"
 ---
 # <a name="using-enhanced-dataset-metadata-preview"></a>Brug af forbedrede metadata for datasæt (prøveversion)
 
@@ -64,11 +64,13 @@ Sikkerhedskopifilen oprettes, når rapporten er opgraderet, så eventuelle ændr
 I prøveversionen gælder følgende begrænsninger, når prøveversionsfunktionen er aktiveret.
 
 ### <a name="unsupported-features-and-connectors"></a>Funktioner og forbindelser, der ikke understøttes
+
+Følgende begrænsninger gælder:
+
 Når du åbner en eksisterende PBIX- eller PBIT-fil, der ikke er blevet opgraderet, mislykkes opgraderingen, hvis datasættet indeholder en af følgende funktioner eller connectors. Hvis denne fejl opstår, påvirker det normalt ikke brugeroplevelsen med det samme, og Power BI Desktop fortsætter med at bruge det tidligere metadataformat.
 
-* Alle brugerdefinerede connectorer
+* Alle brugerdefinerede connectors (begrænsning i versionen fra maj 2020)
 * Python-scripts
-* Brugerdefinerede forbindelser
 * Azure DevOps Server
 * BI Connector
 * Denodo
@@ -84,16 +86,15 @@ Når du åbner en eksisterende PBIX- eller PBIT-fil, der ikke er blevet opgrader
 * M-udtryk, der indeholder visse tegnkombinationer, f. eks. "\\n", i kolonnenavne
 * Når du bruger datasæt med funktionen til **forbedrede metadata for datasæt** aktiveret, kan der ikke konfigureres enkeltlogondatakilder (SSO) i Power BI-tjenesten
 
-Rapporter, der bruger disse connectorer på listen, opgraderes ikke til det nye format. Rapporter, der allerede er opgraderet, eller som er oprettet efter aktivering af denne nye funktion, understøtter ikke tilføjelse af de angivne ikke-understøttede funktioner eller connectorer. 
+Hvis du bruger Power BI Desktop-versionen fra **juni 2020** (eller nyere), *understøttes* alle brugerdefinerede connectors og alle indbyggede connectors for Power BI Desktop og Power BI-tjenesten. Hvis gatewayen støder på problemer under publiceringsprocessen, når versionen fra 2020 eller nyere bruges, publiceres datasættet, men brugerne skal publicere rapporten igen for at opdatere dataene. Dialogboksen **Indstillinger for datakilde** er den eneste indikator for, at der opstod problemer med publiceringsprocessen.
+
+Rapporter, der bruger ikke-understøttede connectorer eller funktioner, opgraderes ikke til det nye format. Rapporter, der allerede er opgraderet, eller som er oprettet efter aktivering af denne nye funktion, understøtter ikke tilføjelse af de angivne ikke-understøttede funktioner eller connectorer. 
 
 Forespørgsler med dynamiske datakilder understøttes ikke. Rapporter, der har dynamiske datakilder, opgraderes ikke til det nye format, og de rapporter, der allerede er blevet opgraderet eller er oprettet for nylig med funktionen aktiveret, understøtter ikke tilføjelse af dynamiske datakilder. En forespørgsel har en dynamisk datakilde, hvis kilden ændres afhængigt af en parameter, funktionsinput eller midlertidig funktion. 
 
 Forespørgsler med fejl i upstream-trin eller -forgreninger understøttes ikke. 
 
-Derudover kan PBIX- og PBIT-filer, der allerede er blevet opgraderet til at bruge **forbedrede metadata for datasæt**, *ikke* bruge ovenstående funktioner eller connectors i den aktuelle version.
-
-
-
+Derudover kan PBIX- og PBIT-filer, der allerede er blevet opgraderet til at bruge **forbedrede metadata for datasæt**, *ikke* bruge ovenstående funktioner (eller ikke-understøttede connectors).
 
 ### <a name="lineage-view"></a>Dataafstamningsvisning
 Datasæt, der bruger det nye metadataformat, viser i øjeblikket ikke links til dataflow i afstamningsvisningen i Power BI-tjenesten.

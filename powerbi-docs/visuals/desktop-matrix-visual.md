@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/10/2020
+ms.date: 06/18/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b26cd958ad637f0dc3c27c7a0f6ccbe2591d37b7
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: beb744e1293db077111df8212c0861154aa86242
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279175"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354702"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Opret matrixvisualiseringer i Power BI
 
@@ -49,17 +49,17 @@ Når du ser på totaler og subtotaler, skal du huske, at disse værdier er baser
 ## <a name="expanding-and-collapsing-row-headers"></a>Udvidelse og skjulning af rækkeoverskrifter
 Du kan udvide rækkeoverskrifter på to måder. Den første er gennem genvejsmenuen. Du kan se indstillinger for udvidelse af den specifikke rækkeoverskrift, du har valgt, hele niveauet eller alt ned til det sidste niveau i hierarkiet. Du har lignende muligheder for at skjule rækkeoverskrifter.
 
-![](media/desktop-matrix-visual/power-bi-expand1.png)
+![menu, der viser Udvid og Markering](media/desktop-matrix-visual/power-bi-expand1.png)
 
 Du kan også føje +/--knapper til rækkeoverskrifterne via formateringsruden under kortet **Rækkeoverskrifter**. Som standard svarer ikonerne svare til rækkeoverskriftens formatering, men du kan tilpasse ikoners farver og størrelser separat, hvis du vil.
 
 Når ikonerne er slået til, fungerer de på samme måde som med pivottabelikoner i Excel.
 
-![](media/desktop-matrix-visual/power-bi-expand2.png)
+![matrix, der viser ikoner, som er aktiveret](media/desktop-matrix-visual/power-bi-expand2.png)
 
 Matrixens udvidelsestilstand gemmes sammen med rapporten. En matrix kan fastgøres til et dashboard, der er udvidet eller skjult. Når det pågældende dashboardfelt er valgt, og rapporten åbnes, kan udvidelses tilstanden stadig ændres i rapporten. 
 
-![](media/desktop-matrix-visual/power-bi-expand3.png)
+![matrix, der viser udvidelsestilstand](media/desktop-matrix-visual/power-bi-expand3.png)
 
 > [!NOTE]
 > Hvis du bygger en rapport oven på en multidimensionel Analysis Services-model, er der nogle særlige overvejelser, når du skal udvide/skjule, hvis modellen bruger funktionen Standardmedlem. Du kan få flere oplysninger under [Arbejde med flerdimensionelle modeller i Power BI](../connect-data/desktop-default-member-multidimensional-models.md)

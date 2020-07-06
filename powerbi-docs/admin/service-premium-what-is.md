@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 06/13/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 1c72507759a69dc03f3d8b1510aef0e3ad369dd2
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: 83383b93d9f61c30c22afa30a5d092aa62ce3a10
+ms.sourcegitcommit: 94fc44928bff09d874793964b5d7443db40934cd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272741"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "84754176"
 ---
 # <a name="what-is-power-bi-premium"></a>Hvad er Power BI Premium?
 
@@ -85,12 +85,10 @@ Ressourcerne og grænserne for hver Premium-SKU (og A-SKU'er i en tilsvarende st
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
-| P4 | 64 | 32 | 200 | 32 | 240 | 48 |
-| P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
-> [!NOTE]
-> Det kan være en fordel at bruge en enkelt større SKU (f.eks. én P2-SKU) til at kombinere mindre SKU'er (f.eks. to P1-SKU'er). Du kan f.eks. bruge større modeller og opnå bedre parallelitet med P2.
+>[!NOTE]
+>Det kan være en fordel at bruge en enkelt større SKU (f.eks. én P2-SKU) til at kombinere mindre SKU'er (f.eks. to P1-SKU'er). Du kan f.eks. bruge større modeller og opnå bedre parallelitet med P2.
 
 ### <a name="capacity-workloads"></a>Kapacitetsarbejdsbelastninger
 
@@ -179,17 +177,17 @@ Afhængigt af SKU'en understøtter Power BI Premium upload af Power BI Desktop-m
 
 ### <a name="size-considerations"></a>Overvejelser i forbindelse med størrelse
 
-Store datasæt kan være ressourcekrævende. Du skal som minimum have en P1-SKU for datasæt, der er større end 1 GB. Selvom publicering af store datasæt til arbejdsområder, som understøttes af A-SKU'er op til A3, kan fungere, vil en opdatering af dem ikke fungere.
+Store datasæt kan være ressourcekrævende. Du skal som minimum have en P1- eller en A4-SKU for datasæt, der er større end 1 GB. Selvom publicering af store datasæt til arbejdsområder, som understøttes af A-SKU'er op til A3, kan fungere, vil en opdatering af dem ikke fungere.
 
 I følgende tabel vises de anbefalede SKU'er for upload af .pbix-filer eller publicering til Power BI-tjenesten:
 
    |SKU  |.pbix-størrelse   |
    |---------|---------|
-   |P1    | < 3 GB        |
-   |P2    | < 6 GB        |
-   |P3, P4, P5    | op til 10 GB   |
+   |P1/A4    | < 3 GB        |
+   |P2/A5    | < 6 GB        |
+   |P3/A6, P4, P5    | op til 10 GB   |
 
-Power BI Embedded A4-SKU'en er lig med P1-SKU'en, A5-SKU'en = P2 og A6-SKU'en = P3. Hvis du publicerer datasæt til A- og EM-SKU'er, kan det returnere fejl, der ikke er specifikke for størrelsesbegrænsningen af modellen i den delte kapacitet. Opdateringsfejl for datasæt i A- og EM-SKU'er skyldes sandsynligvis timeout.
+Power BI Embedded A4-SKU'en er lig med P1-SKU'en, A5-SKU'en = P2 og A6-SKU'en = P3.
 
 Hvis du aktiverer [store modeller](service-premium-large-models.md) på et datasæt, kan størrelsen af .pbix-filen stadig være gældende i forbindelse med filupload eller publicering. Datasæt kan dog blive meget større end disse begrænsninger, når trinvis opdatering kombineres med store modeller. I forbindelse med store modeller begrænses størrelsen af datasættet kun til størrelsen af Power BI Premium-kapaciteten.
 
@@ -211,7 +209,7 @@ Du kan få mere at vide under [Trinvis opdatering i Power BI Premium](service-pr
 
 ## <a name="paginated-reports"></a>Sideinddelte rapporter
 
-Sideinddelte rapporter, der understøttes på P1-P3- og A4-A6-SKU'er, er baseret på RDL-teknologi (Report Definition Language) i SQL Server Reporting Services. De er baseret på RDL-teknologien, men er ikke det samme som Power BI-rapportserveren, som er en rapporteringsplatform, der kan downloades, og som du kan installere i det lokale miljø. Også inkluderet i Power BI Premium. Sideinddelte rapporter formateres, så de passer til en side, der kan udskrives eller deles. Data vises i en tabel, også selvom tabellen strækker sig over flere sider. Ved hjælp af det gratis Windows-skrivebordsprogram [**Power BI Report Builder**](https://go.microsoft.com/fwlink/?linkid=2086513) kan brugere oprette sideinddelte rapporter og publicere dem til tjenesten.
+Sideinddelte rapporter, der understøttes på P1-P3- og A4-A6-SKU'er, er baseret på RDL-teknologi (Report Definition Language) i SQL Server Reporting Services. De er baseret på RDL-teknologien, men er ikke det samme som Power BI-rapportserveren, som er en rapporteringsplatform, der kan downloades, og som du kan installere i det lokale miljø. Også inkluderet i Power BI Premium. Sideinddelte rapporter formateres, så de passer til en side, der kan udskrives eller deles. Data vises i en tabel, også selvom tabellen strækker sig over flere sider. Ved hjælp af det gratis Windows-skrivebordsprogram [**Power BI Report Builder**](https://aka.ms/pbireportbuilder) kan brugere oprette sideinddelte rapporter og publicere dem til tjenesten.
 
 I Power BI Premium er sideinddelte rapporter en arbejdsbelastning, der skal aktiveres for en kapacitet ved hjælp af administrationsportalen. Kapacitetsadministratorer kan aktivere og derefter angive mængden af hukommelse som en procentdel af kapacitetens overordnede hukommelsesressourcer. I modsætning til andre typer arbejdsbelastninger kører Power BI Premium sideinddelte rapporter i et afgrænset område i kapaciteten. Den maksimale hukommelse, der angives for dette område, bruges, uanset om arbejdsbelastningen er aktiv eller ej. Standarden er 20 %. 
 

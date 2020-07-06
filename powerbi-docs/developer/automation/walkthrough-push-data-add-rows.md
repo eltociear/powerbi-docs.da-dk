@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: ecd5b71d0b64e235d69d2b6d3933d393cb684b04
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ba37d9fc79405518a59ff188fdb5890e6af8043c
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79079249"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85355024"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Trin 5: Føj rækker til en Power BI-tabel
 
@@ -23,7 +23,7 @@ I **trin 4** af Overfør data til et datasæt, [Få et datasæt til at føje ræ
 
 Når du kalder handlingen [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows), føjer du rækker til et datasæt.
 
-![](media/walkthrough-push-data-add-rows/powerbi-developer-add-rows.png)
+![tilføj rækker](media/walkthrough-push-data-add-rows/powerbi-developer-add-rows.png)
 
 Her kan du føje rækker til et datasæt ved hjælp af Power BI-API.
 

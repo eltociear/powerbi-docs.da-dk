@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/21/2019
 LocalizationGroup: Dashboards
-ms.openlocfilehash: af095964846cad264d1ac0ffd82e0c2ac6988a0e
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: b5f4d615c04583e59b618b415c8c239c9295c8a8
+ms.sourcegitcommit: 0b1e96de184caf2371adedcc3ee43bcb88048187
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84273408"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85299589"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Overvåg forbrugsdata for Power BI-dashboards og -rapporter
 
@@ -158,6 +158,7 @@ Det er vigtigt at forstå, at der kan opstå forskelle, når du sammenligner for
 * Forbrugsdata kan nogle gange tælle et lavere antal aktiviteter på grund af uensartede netværksforbindelser, programmer til blokering af annoncer eller andre problemer, der kan afbryde afsendelse af hændelserne fra klienten.
 * Visse typer af visninger er ikke inkluderet i forbrugsdata, som det er beskrevet tidligere i denne artikel.
 * Forbrugsdata kan nogle gange tælle et højere antal aktiviteter i situationer, hvor klienten opdateres, uden at der er behov for at sende en anmodning tilbage til Power BI-tjenesten.
+* Deling er deaktiveret for rapporten med forbrugsmålepunkter. Hvis du vil give personer læseadgang til rapporten, skal du først give dem adgang til arbejdsområdet.
 
 ### <a name="other-considerations"></a>Andre overvejelser
 

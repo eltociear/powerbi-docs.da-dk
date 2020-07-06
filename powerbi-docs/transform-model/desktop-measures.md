@@ -5,22 +5,22 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 809f0ec23dd0b7c1ef4cd41dde27fd0c8fdefd33
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 752e43fa3471419a76338f9db81f08a6180b6aba
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83324488"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238228"
 ---
 # <a name="create-measures-for-data-analysis-in-power-bi-desktop"></a>Opret målinger til dataanalyse i Power BI Desktop
 
 Du kan få hjælp af Power BI Desktop til at oprette indsigt i dine data med nogle få klik. Men nogle gange indeholder disse data bare ikke alt det, du skal bruge for at få svar på nogle af dine vigtigste spørgsmål. Det kan målinger hjælpe dig med.
 
-Målinger bruges i nogle af de mest almindelige dataanalyser. Enkle opsummeringer, f.eks. sum, gennemsnit, minimum, maksimum og antal, kan angives via området **Felter**. De beregnede resultater fra målinger ændres altid som reaktion på din interaktion med dine rapporter. Det giver mulighed hurtig og dynamisk dataudforskning ad hoc. Lad os se nærmere på det. Du kan finde flere oplysninger under [Opret beregnede mål](/learn/modules/model-data-power-bi/4b-create-calculated-measures).
+Målinger bruges i nogle af de mest almindelige dataanalyser. Enkle opsummeringer, f.eks. sum, gennemsnit, minimum, maksimum og antal, kan angives via området **Felter**. De beregnede resultater fra målinger ændres altid som reaktion på din interaktion med dine rapporter. Det giver mulighed hurtig og dynamisk dataudforskning ad hoc. Lad os se nærmere på det. Du kan finde flere oplysninger under [Opret målinger](/learn/modules/model-data-power-bi/4b-create-calculated-measures).
 
 ## <a name="understanding-measures"></a>Om målinger
 

@@ -5,17 +5,17 @@ author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 05/03/2019
+ms.topic: how-to
+ms.date: 06/16/2020
 ms.author: maggies
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: 469f217426f4c66c6d1d0d72192efbda8391689c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4addd87085eb4321253bcf34842ca135f536f981
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83315288"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238109"
 ---
 # <a name="work-with-aggregates-sum-average-and-so-on-in-the-power-bi-service"></a>Arbejde med aggregeringer (sum, gennemsnit osv.) i Power BI-tjenesten
 
@@ -152,13 +152,13 @@ Du kan også aggregere et felt, der ikke er et numerisk felt. Hvis du f.eks. har
 
 Spørgsmål:  Hvorfor har jeg ikke en indstilling for **Opsummer ikke**?
 
-Svar:  Det felt, du har valgt, er sandsynligvis et beregnet mål eller avanceret mål, der er oprettet i Excel eller [Power BI Desktop](../transform-model/desktop-measures.md). Hvert beregnede mål har sin egen hard-coded formel. Du kan ikke ændre den aggregering, som Power BI bruger. F.eks, hvis det er en sum, kan den kun være en sum. Listen **Felter** viser *beregnede mål* med lommeregnersymbolet.
+Svar:  Det felt, du har valgt, er sandsynligvis en beregnet måling i en flerdimensionel model eller en måling oprettet i Excel eller [Power BI Desktop](../transform-model/desktop-measures.md). Hver måling har sin egen hårdt kodede formel. Du kan ikke ændre den aggregering, som Power BI bruger. F.eks, hvis det er en sum, kan den kun være en sum. Listen **Felter** viser *målinger* med lommeregnersymbolet.
 
 Spørgsmål:  Mit felt **er** numerisk, så hvorfor kan jeg kun vælge **Antal** og **Distinkt antal**?
 
 Svar 1:  Den sandsynlige forklaring er, at datasættets ejer *ikke* har klassificeret feltet som et tal. Hvis et datasæt f.eks. har feltet **År**, kan ejeren af datasættet kategorisere værdien som tekst. Det er mere sandsynligt, at Power BI tæller feltet **År** (f.eks. antallet af personer, der er født i 1974). Det er mindre sandsynligt, at Power BI sammenlægger eller udregner gennemsnittet. Hvis du er ejeren, kan du åbne datasættet i Power BI Desktop og bruge fanen **Udformning** for at ændre datatypen.
 
-Svar 2: Hvis feltet har et lommeregnerikon, betyder det, at det er en *beregnet måling*. Hvert beregnet mål har sin egen kodede formel, som kun ejeren af datasættet kan ændre. Den beregning, som Power BI bruger, kan være en simpel aggregering, f.eks. et gennemsnit eller en sum. Det kan også være noget mere kompliceret, som f.eks. en "procentdel af bidraget til forældrekategori" eller "løbende totalværdi siden årets begyndelse". Power BI sammenlægger eller beregner ikke gennemsnittet af resultaterne. Det genberegner i stedet blot (ved hjælp af den kodede formel) hvert datapunkt.
+Svar 2: Hvis feltet har et lommeregnerikon, betyder det, at det er en *måling*. Hver måling har sin egen formel, som kun ejeren af datasættet kan ændre. Den beregning, som Power BI bruger, kan være en simpel aggregering, f.eks. et gennemsnit eller en sum. Det kan også være noget mere kompliceret, som f.eks. en "procentdel af bidraget til forældrekategori" eller "løbende totalværdi siden årets begyndelse". Power BI sammenlægger eller beregner ikke gennemsnittet af resultaterne. Det genberegner i stedet blot (ved hjælp af den kodede formel) hvert datapunkt.
 
 Svar 3:  En anden mulighed er, at du har valgt at benytte feltet i en *bucket*, der kun tillader kategoriværdier.  Hvis dette er tilfældet, så har du kun adgang til antal og distinkt antal.
 

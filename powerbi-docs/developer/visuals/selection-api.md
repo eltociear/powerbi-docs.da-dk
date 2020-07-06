@@ -7,14 +7,14 @@ ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 2cca057b2a91129745fe739160ffbb3e9e25b6da
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 57f443ec11d918966c25b9d59a1656bb02983fbb
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80113686"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238040"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Føj interaktivitet til visuals efter valg af Power BI-visuals
 
@@ -188,7 +188,7 @@ Du skal udfylde visualdatakurvene.
 Der er `Manufacturer` som kategori (kolonner), `Type` som serier (rækker) og `Value` som `Values` for serierne.
 
 > [!NOTE]
-> `Values` er påkrævet til serier, da visual'et i henhold til tilknytningen af datavisningen forventer, at `Values` grupperes efter `Rows` data.
+> `Values` er påkrævet til serier, da visualiseringen i henhold til tilknytningen af datavisningen forventer, at `Values` grupperes efter `Rows` data.
 
 #### <a name="create-selections-for-categories"></a>Opret valg til kategorier
 
@@ -372,7 +372,7 @@ button.addEventListener("click", (mouseEvent) => {
 });
 ```
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Læs om, hvordan du kan bruge valg til at forbinde visualegenskaber og datapunkter](objects-properties.md#objects-selector)
 

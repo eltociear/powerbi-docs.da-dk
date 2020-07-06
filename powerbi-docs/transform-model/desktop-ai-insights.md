@@ -1,22 +1,22 @@
 ---
-title: Opret forbindelse til AI-indstiger i Power BI Desktop (prøveversion)
+title: Opret forbindelse til AI-indsigter i Power BI Desktop
 description: Opret nemt forbindelse til og brug data fra AI-indsigt i Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 11/12/2019
+ms.topic: how-to
+ms.date: 06/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fec1a1a632244ef0c1923e2d68f76a7364d3c7b8
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 7f067e87bf155b45be1d4c34f27d41649b6247df
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83311723"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85237973"
 ---
-# <a name="use-ai-insights-in-power-bi-desktop-preview"></a>Brug kunstig intelligens i Power BI Desktop (eksempelvisning)
+# <a name="use-ai-insights-in-power-bi-desktop"></a>Brug AI-indsigter i Power BI Desktop
 
 I Power BI kan du bruge AI-indsigter til at få adgang til en samling af forudoplærte modeller til maskinel indlæring, der forbedrer din dataforberedelse. Der er adgang til AI-indsigt i **Power Query Editor**, og der er adgang til de tilhørende funktioner via fanerne **Hjem** og **Tilføj kolonne** i **Power Query Editor**. 
 
@@ -26,7 +26,10 @@ I denne artikel beskrives funktionerne Tekstanalyse og Vision, der begge kommer 
 
 ## <a name="how-to-enable-ai-insights"></a>Sådan aktiverer du AI-indsigter
 
-AI-indsigter i Power BI er en prøveversionsfunktion, som skal aktiveres. Du aktiverer den ved at vælge **Fil > Indstillinger > Indstillinger** og derefter vælge **Funktioner i prøveversionen** i venstre kolonne. I ruden til højre kan du vælge en **funktionsbrowser for AI-indsigter**. Markér afkrydsningsfeltet ud for **Funktionsbrowser for AI-indsigter** for at aktivere prøveversionsfunktionen. Du skal genstarte Power BI Desktop, før prøveversionsfunktionen kan træde i kraft.
+AI-indsigter er gjort offentligt tilgængelig i Power BI Desktop-versionen fra juni 2020. For tidligere versioner af Power BI Desktop skal du aktivere AI-indsigter i Power BI ved at vælge **Filer > Indstillinger > Indstillinger** og derefter **Prøveversionsfunktioner** fra venstre kolonne. I ruden til højre kan du vælge en **funktionsbrowser for AI-indsigter**. Markér afkrydsningsfeltet ud for **Funktionsbrowser for AI-indsigter** for at aktivere prøveversionsfunktionen. Du skal genstarte Power BI Desktop, før prøveversionsfunktionen kan træde i kraft.
+
+> [!NOTE]
+> AI-indsigter er offentligt tilgængelig for alle versioner af Power BI Desktop fra og med juni 2020, og behøver ikke at være aktiveret som prøveversionsfunktion for disse versioner.
 
 ![Brug kunstig intelligens i Power BI Desktop](media/desktop-ai-insights/ai-insights-01.png)
 

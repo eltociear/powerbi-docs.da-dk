@@ -6,15 +6,15 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/25/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 136376da9d00e5f40397f0d4152e83d17a171168
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: 5e7fe8a7c71927a1e89bd4e86209c580ae1f3b29
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272971"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85225673"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -118,11 +118,11 @@ Når du har oprettet en integreringskode for **Publicer på internettet**, kan d
 
 ## <a name="updates-to-reports-and-data-refresh"></a>Opdateringer af rapporter og data
 
-Når du har oprettet din integreringskode for **Publicer på internettet** og deler den, opdateres rapporten med de ændringer, du foretager, og linket til integreringskoden bliver straks aktivt. Alle, der åbner linket, kan se den. Men efter denne indledende handling kan det dog vare to til tre timer, før opdateringer af rapporter eller visualiseringer bliver synlige for dine brugere. Se afsnittet [**Sådan fungerer det**](#howitworks) senere i denne artikel, hvis du vil vide mere. 
+Når du har oprettet din integreringskode for **Publicer på internettet** og deler den, opdateres rapporten med de ændringer, du foretager, og linket til integreringskoden bliver straks aktivt. Alle, der åbner linket, kan se den. Efter den indledende oprettelse kan der gå op til to timer efter opdateringer af rapporter eller visuals, før brugerne kan se dem. Dataene cachelagres i én time fra det tidspunkt, hvor de hentes. Det anbefales ikke, at du bruger Publicer på internettet til data, der ofte skal opdateres. Se afsnittet [**Sådan fungerer det**](#howitworks) senere i denne artikel, hvis du vil vide mere. 
 
 ### <a name="data-refresh"></a>Opdatering af data
 
-Dataopdateringer afspejles automatisk i din integrerede rapport eller det visuelle element. Det kan tage ca. én time, før opdaterede data kan ses fra integreringskoder. Du kan deaktivere automatisk opdatering ved at vælge **Opdater ikke** i tidsplanen for det datasæt, der bruges af rapporten.  
+Dataopdateringer afspejles automatisk i din integrerede rapport eller det visuelle element. Det kan tage op til to timer, før opdaterede data kan ses fra integreringskoder. Du kan deaktivere automatisk opdatering ved at vælge **Opdater ikke** i tidsplanen for det datasæt, der bruges af rapporten.  
 
 ## <a name="power-bi-visuals"></a>Power BI-visualiseringer
 
@@ -159,7 +159,7 @@ Du skal være Microsoft Power BI-bruger for at anvende **Publicer på internette
 
 Når du opretter en integreringskode ved hjælp af **Publicer på internettet**, bliver rapporten synlig for brugere på internettet. Den er offentligt tilgængelig, så du kan forvente, at brugerne nemt kan dele rapporten via sociale medier på et senere tidspunkt. Når brugere får vist rapporten, enten ved at åbne den direkte offentlige URL-adresse eller se den integreret på en webside eller blog, cachelagrer Power BI rapportdefinitionen og resultaterne af de forespørgsler, der kræves for at få vist rapporten. Denne cachelagring sikrer, at tusindvis af samtidige brugere kan se rapporten, uden at det påvirker ydeevnen.
 
-Cachen har en lang levetid. Hvis du opdaterer rapportdefinitionen (f.eks. hvis du ændrer dens visningstilstand) eller opdaterer rapportdataene, kan det tage cirka en time, før ændringerne afspejles i den version af rapporten, der ses af brugerne. Da hvert element og dataværdi cachelagres uafhængigt af hinanden, når en dataopdatering finder sted, kan der vises en kombination af aktuelle og tidligere værdier for en bruger. Det anbefales derfor, at du planlægger dit arbejde på forhånd og først opretter integreringskoden for **Publicer på internettet**, når du er tilfreds med indstillingerne. Hvis dine data opdateres, skal du minimere antallet af opdateringer og udføre opdateringerne uden for arbejdstiden.
+Dataene cachelagres i én time fra det tidspunkt, hvor de hentes. Hvis du opdaterer rapportdefinitionen (f.eks. hvis du ændrer dens visningstilstand) eller opdaterer rapportdataene, kan det tage op til to timer, før ændringerne afspejles i den version af rapporten, der ses af brugerne. Da hvert element og dataværdi cachelagres uafhængigt af hinanden, når en dataopdatering finder sted, kan der vises en kombination af aktuelle og tidligere værdier for en bruger. Det anbefales derfor, at du planlægger dit arbejde på forhånd og først opretter integreringskoden for **Publicer på internettet**, når du er tilfreds med indstillingerne. Hvis dine data opdateres, skal du minimere antallet af opdateringer og udføre opdateringerne uden for arbejdstiden. Det anbefales ikke, at du bruger Publicer på internettet til data, der ofte skal opdateres.
 
 ## <a name="find-your-power-bi-administrator"></a>Find din Power BI-administrator
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: 42304e60740c215b1300e66f074807aea10ec6f9
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: cbc8f6366e23aa7fbfb447bbfe56909c09f3e3fd
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84317046"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354472"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>Selvstudium: Byg en tragtformet afbildning fra R-script til R-visualisering
 I denne artikel beskrives det, hvordan du opretter en tragtformet afbildning ved hjælp af R-script i R-visualisering trin for trin.
@@ -89,13 +89,13 @@ Det visuelle element er endnu ikke brugervenligt, fordi brugeren skal kende ræk
 
    Du skal opdatere sektioner: `dataRoles` og `dataViewMappings`, som definerer navne, typer, værktøjstip og maks. kolonner for hvert inputfelt.
 
-   ![](./samples/funnel-plot/chapter-3/funnel-r-visual-v02/capabilities-before-vs-after.png)
+   ![før og efter](./samples/funnel-plot/chapter-3/funnel-r-visual-v02/capabilities-before-vs-after.png)
    
    Du kan finde flere oplysninger under [egenskaber](./capabilities.md).
 
 1. Rediger *script.r* for at understøtte `Population`, `Number` og `Tooltips` som inputdatarammer i stedet for `dataset`, eller hent [script.r](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02/script.r).
 
-   ![](./samples/funnel-plot/chapter-3/funnel-r-visual-v02/script-r-before-vs-after.png)
+   ![script](./samples/funnel-plot/chapter-3/funnel-r-visual-v02/script-r-before-vs-after.png)
 
    > [!TIP]
    > Hvis du vil følge ændringerne i R-script, skal du søge efter kommentarblokke: 
@@ -125,7 +125,7 @@ Det visuelle element er endnu ikke brugervenligt, fordi brugeren skal kende ræk
 
    Download [capabilities.jsonN](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/capabilities.json), se [objektegenskaber](./objects-properties.md) for at få flere oplysninger
 
-   ![](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/capabilities-before-after.PNG)
+   ![egenskaber](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/capabilities-before-after.PNG)
 
 1. Rediger *src/settings.ts* for at afspejle [denne settings.ts](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/src/settings.ts). Denne fil er skrevet i TypeScript.  
 
@@ -133,7 +133,7 @@ Det visuelle element er endnu ikke brugervenligt, fordi brugeren skal kende ræk
    - Angiv ny grænseflade, der skal indeholde egenskabsværdien
    - Definer en medlemsegenskab og standardværdier
 
-   ![](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/settings-ts-before-after.PNG)
+   ![indstillinger](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/settings-ts-before-after.PNG)
 
 1. Rediger *script.r* for at afspejle [dette script.r](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script.r). Dette tilføjer understøttelse af parametrene i brugergrænsefladen ved at tilføje `if.exists` opkald pr. brugerparameter.
 
@@ -150,7 +150,7 @@ Det visuelle element er endnu ikke brugervenligt, fordi brugeren skal kende ræk
    > #RVIZ_IN_PBI_GUIDE:END:Removed to enable user parameters
    > ```
 
-   ![](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
+   ![script før og efter](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
 
    Du kan beslutte ikke at fremvise parametrene til brugergrænsefladen, som vi gjorde.  
 

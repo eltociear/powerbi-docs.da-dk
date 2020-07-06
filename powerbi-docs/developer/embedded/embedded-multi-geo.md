@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/05/2019
-ms.openlocfilehash: 3b51fbfda8f63834a0b2445bd2b2b23734b8e234
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 9c99d48a0b9d50312d2ae5ce152826fcf1ab9319
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83149243"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238781"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Multi-Geo-understøttelse af Power BI Embedded
 
@@ -80,6 +80,8 @@ Vi har foretaget nogle ændringer af eksisterende API'er for at understøtte adm
 * Når du flytter data fra ét område til et andet i et Multi-Geo-miljø, kan kildedataene forblive i det område, som dataene blev flyttet fra, i op til 30 dage. I denne periode har brugere ikke adgang til dem. De fjernes fra det pågældende område og destrueres i løbet perioden på 30 dage.
 
 * Multi-Geo medfører ikke en forbedring af ydeevnen generelt set. Indlæsning af rapporter og dashboards omfatter stadig anmodninger til det lokale område for metadata.
+
+* I en integration til dit kundescenarie vil forespørgselsteksten og resultatet af forespørgslen fortsat blive overført via startlejeren.
 
 ## <a name="next-steps"></a>Næste trin
 

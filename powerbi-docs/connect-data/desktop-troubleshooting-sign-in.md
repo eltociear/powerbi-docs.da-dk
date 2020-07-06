@@ -9,15 +9,15 @@ ms.topic: troubleshooting
 ms.date: 03/05/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 299329cad78d831a3b77e55107e94a234d6f64b1
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: e1358cb8cbe37e0b44cd6a60069ad9ec707d12d8
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83287527"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485501"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Fejlfinding af logonproblemer i Power BI Desktop
-Der kan være situationer, hvor du forsøger at logge på **Power BI Desktop**, men støder på fejl. Der er to primære årsager til logonproblemer: **fejl ved proxygodkendelse** og **fejl ved omdirigering til URL-adresser, der ikke er HTTPS-sikret**. 
+Der kan være situationer, hvor du forsøger at logge på **Power BI Desktop**, men støder på fejl. Der er to primære årsager til logonproblemer: **Proxy-godkendelsesfejl** og **fejl ved omdirigering til URL-adresser, der ikke er HTTPS**. 
 
 Hvis du vil finde ud af, hvad der forårsager dit logonproblem, skal du først kontakte administratoren og levere diagnosticeringsoplysninger, så administratoren kan finde årsagen til problemet. Ved at spore problemer, der er knyttet til logonproblemet, kan administratorer afgøre, hvilke af følgende fejl der er skyld i dit problem. 
 
@@ -37,13 +37,13 @@ Følgende undtagelser i *Power BI Desktop*-sporingsfiler er knyttet til denne fe
 
 Når denne fejl opstår, skyldes det højst sandsynligt, at en proxyserver til godkendelse på netværket blokerer webanmodninger, der er udstedt af **Power BI Desktop**. 
 
-Hvis dit netværk bruger en proxyserver til godkendelse, kan din administrator løse problemet ved at hvidliste følgende domæner på proxyserveren til godkendelse:
+Hvis dit netværk bruger en proxyserver til godkendelse, kan din administrator løse problemet ved at føje følgende domæner på proxyserveren til hvidlisten:
 
 * app.powerbi.com
 * api.powerbi.com
 * domæner i navneområdet *.analysis.windows.net
 
-For kunder, der er en del af en cloudløsning til offentlige myndigheder, kan dette problem løses ved at hvidliste følgende domæner på proxyserveren til godkendelse:
+For kunder, der er en del af en cloudløsning til offentlige myndigheder, kan dette problem løses ved at føje følgende domæner til en hvidliste på proxyserveren for godkendelse:
 
 * app.powerbigov.us
 * api.powerbigov.us
@@ -55,7 +55,7 @@ Aktuelle versioner af **Power BI Desktop** bruger den aktuelle version af ADAL (
 
 Følgende undtagelser i *Power BI Desktop*-sporingsfiler er knyttet til denne fejl:
 
-* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: Omdirigering af URL-adresser, der ikke er HTTPS-sikrede, understøttes ikke i webvisning*
+* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: Omdirigering til URL-adresser, der ikke er HTTPS, understøttes ikke i webvisning*
 * *ErrorCode: non_https_redirect_failed*
 
 Hvis fejlen *ErrorCode: non_https_redirect_failed* opstår, betyder det, at en eller flere omdirigeringssider eller providere i rækken af omdirigeringer ikke er et HTTPS-beskyttet slutpunkt, eller at en certifikatudsteder af en eller flere omdirigeringer ikke er blandt de rodnøgler, enheden har tillid til. Alle providere i rækken af logonomdirigeringer skal bruge en HTTPS-sikret URL-adresse. Du kan få løst dette problem ved at kontakte administratoren og anmode om, at sikrede URL-adresser bruges til deres godkendelseswebsteder. 

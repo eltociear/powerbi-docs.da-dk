@@ -8,36 +8,39 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/13/2019
-ms.openlocfilehash: fa8759d7edb519240140263bcd01bfdddd9c7d86
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 3cf415cbd14da28d523a042fdf4099fe464a4a8b
+ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83141066"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "84739178"
 ---
 # <a name="power-bi-visuals-api-changelog"></a>Ændringslog for visualiserings-API i Power BI
 Denne side indeholder en hurtig oversigt over API-versionerne. De versioner, der er angivet her, anses som stabile og ændres ikke.
 
-## <a name="api-v26"></a>API v 2.6
+## <a name="api-v320"></a>API v3.2.0
+  * Understøtter **[supportsMultiVisualSelection](./supportsmultivisualselection-feature.md)**
+
+## <a name="api-v260"></a>API v2.6.0
   * Tilføjer **isInFocus** til opdateringsindstilling og metoden **switchFocusModeState** til visuel vært
   * Understøtter tilpasning af **subtotaler**
 
-## <a name="api-v25"></a>API v 2.5
+## <a name="api-v250"></a>API v2.5.0
   * Understøtter **[ruden Analyse](./analytics-pane.md)**
   * Understøtter metoderne `SelectionIdBuilder` **withMatrixNode** og **withTable**
   * Understøtter ikke længere `DataRepetitionSelector`-grænsefladen, som er erstattet med `data.CustomVisualOpaqueIdentity`-grænsefladen
 
-## <a name="api-v23"></a>API v 2.3
+## <a name="api-v230"></a>API v2.3.0
   * **[Landingsside-API](./landing-page.md)**
   * **[Lokalt lager-API](./local-storage.md)**
   * **[API til tupelfilter (filter til flere kolonner)](./filter-api.md#the-tuple-filter-api-multi-column-filter)**
   * **[API til gengivelse af hændelser](./event-service.md#render-events-in-power-bi-visuals)**
 
-## <a name="api-v22"></a>API v 2.2
+## <a name="api-v220"></a>API v2.2.0
   * Understøtter **[gendannelse af JSON-filter fra DataView](./filter-api.md#restore-the-json-filter-from-the-data-view)**
   * **[ContextMenu-API](./context-menu.md)**
 
-## <a name="api-v21"></a>API v 2.1
+## <a name="api-v210"></a>API v2.1.0
   * Forbedret ydeevne:
     * Hurtigere indlæsningstider
     * Mindre hukommelsesforbrug
@@ -58,32 +61,32 @@ Denne side indeholder en hurtig oversigt over API-versionerne. De versioner, der
    ```
 * Egenskaben `proto` gemmer ikke længere skjulte metadata\data i dataView. Visualiseringer, som får adgang til egenskaber via `proto`, kan blive ødelagt af denne opdatering.
 
-## <a name="api-v113"></a>API v 1.13
+## <a name="api-v1130"></a>API v1.13.0
 * Understøtter **[Synkroniser udsnit](./enable-sync-slicers.md)** . Bemærk, at dette kun fungerer for enkelte feltudsnit på grund af den aktuelle PBI-kodetilstand, [læs mere](/power-bi/desktop-slicers).
 * Tilgængelighed: [Understøttelse af høj kontrast](./high-contrast-support.md) 
 * Tilgængelighed: Tillad tastaturfokusflag
 
-## <a name="api-v112"></a>API v 1.12
+## <a name="api-v1120"></a>API v1.12.0
 * Understøtter temaer
 * Understøtter **[fetchMoreData](./fetch-more-data.md)** . Bemærk, at **Hent flere data-API'en** overskrider den maksimale grænse på 30.000 datapunkter
 * **[API til værktøjstip til lærred](./add-tooltips.md#add-report-page-tooltips)**
 
-## <a name="api-v111"></a>API v 1.11
+## <a name="api-v1110"></a>API v1.11.0
 * **[FilterManager-API](./filter-api.md)**
 * Understøtter **[bogmærker](./bookmarks-support.md)** 
 
-## <a name="api-v110"></a>API v 1.10
+## <a name="api-v1100"></a>API v1.10.0
 * Tilføjer `ILocalizationManager`
 * **Godkendelses-API**
 
-## <a name="api-v19"></a>API v 1.9
+## <a name="api-v190"></a>API v1.9.0
 * **[launchUrl-API](./launch-url.md)**
 
-## <a name="api-v18"></a>API v 1.8
+## <a name="api-v180"></a>API v1.8.0
 * Understøtter den nye type **fillRule** (graduering) i egenskabsskemaer
 * Understøtter **regel**egenskab i skemaegenskaber for objektegenskaber
 
-## <a name="api-v17"></a>API v 1.7
+## <a name="api-v170"></a>API v1.7.0
 * Understøtter **[RESJSON](./localization.md#resource-file)**
 
 ## <a name="api-v162"></a>API v 1.6.2

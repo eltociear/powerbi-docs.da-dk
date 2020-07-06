@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/29/2020
+ms.date: 06/18/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c2800ab9d57732448db9e4fe647a0601a20a816c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b273b5ea265815f26e58010356790186163c4aa8
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276599"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354610"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tip og tricks til farveformatering i Power BI
 
@@ -62,11 +62,11 @@ Forestil dig nu, at du vil fremhæve segmentet **Convenience** for at vise, hvor
 
 Udvid kortet **Datafarver**, og slå skyderen Til for **Vis alle**. Farverne vises nu for hvert dataelement i visualiseringen. Du kan nu redigere et hvilket som helst datapunkt.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
+![Formatrude med Vis alle indstillet til Til](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
 
 Angiv **Convenience** til orange. 
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-one-color.png)
+![søjlediagram med én orange kolonne](media/service-tips-and-tricks-for-color-formatting/power-bi-one-color.png)
 
 Når du har foretaget et valg, får datapunktet **Convenience** en pæn orange nuance, der helt sikkert skiller sig ud.
 
@@ -96,7 +96,7 @@ Brug rullemenuerne i ruden **Standardfarve** til at identificere de felter, der 
 
 Du kan også formatere farven på visualiseringen ved hjælp af et felt, der ikke er en del af visualiseringen. På følgende billede benyttes **Procentvis markedsandel SPLY ÅTD**. 
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-colors.png)
+![søjlediagram med flere nuancer af blå](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-colors.png)
 
 
 Du kan se, at selvom vi har solgt flere enheder af både **Produktivitet** og **Ekstrem** (deres kolonner er højere), har **Moderation** en større **Procentvis markedsandel SPLY ÅTD** (kolonnen indeholder en mere mættet farve).
@@ -106,7 +106,7 @@ Du kan også ændre den måde, som værdierne knyttes til disse farver på. På 
 
 Læg mærke til på dette første billede, hvordan søjlerne i diagrammet afspejler det farveforløb, der vises i bjælken. Den højeste værdi er grøn, den laveste er orange, og hver søjle mellem er farvet med en nuance af spektret mellem grøn og orange.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional4.png)
+![søjlediagram, der viser farveforløb for farver fra grøn til orange](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional4.png)
 
 Lad os nu se, hvad sker der, hvis vi angiver numeriske værdier i værdifelterne **Minimum** og **Maksimum**. Vælg **Brugerdefineret** på rullelisterne for både **Minimum** og **Maksimum**, angiv **Minimum** til 3.500, og angiv **Maksimum** til 6.000.
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 69084048b46c77452bf94f04fd79a97c4f09af5b
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: b95eafbe797dcc28c54aa9781b0422820ccf1f4b
+ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565988"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85393605"
 ---
 # <a name="auto-datetime-guidance-in-power-bi-desktop"></a>Vejledning til automatisk dato/klokkeslæt i Power BI Desktop
 
@@ -26,7 +26,7 @@ Med indstillingen _Automatisk dato/klokkeslæt_ får du praktisk, hurtig og brug
 
 I følgende punktopstilling beskrives overvejelser – og mulige begrænsninger – relateret til indstillingen _Automatisk dato/klokkeslæt_.
 
-- **Gælder for alle eller ingen:** Når indstillingen _Automatisk dato/klokkeslæt_ er aktiveret, gælder den for alle datokolonner (undtagen beregnede kolonner) i importtabeller, som ikke er på &quot;mange&quot;-siden af en relation. Den kan ikke selektivt aktiveres eller deaktiveres for hver enkelt kolonne.
+- **Gælder for alle eller ingen:** Når indstillingen _Automatisk dato/klokkeslæt_ er aktiveret, gælder den for alle datokolonner i importtabeller, som ikke er på &quot;mange&quot;-siden af en relation. Den kan ikke selektivt aktiveres eller deaktiveres for hver enkelt kolonne.
 - **Kun kalenderperioder:** Kolonnerne År og Kvartal er relateret til kalenderperioder. Det betyder, at året starter den 1. januar og slutter den 31. december. Der er ingen mulighed for at tilpasse årets startdato (eller slutdato).
 - **Tilpasning:** Det er ikke muligt at tilpasse de værdier, der bruges til at beskrive tidsperioder. Det er desuden ikke muligt at tilføje yderligere kolonner for at beskrive andre tidsperioder, f.eks. uger.
 - **Filtrering af år:** Værdierne for kolonnerne **Kvartal**, **Måned** og **Dag** indeholder ikke værdien År. Kolonnen **Måned** indeholder f.eks. kun månedsnavne (dvs. januar, februar osv.). Værdierne er ikke helt selvbeskrivende, og i nogle rapportdesign kommunikerer de muligvis ikke filterkonteksten for år.
@@ -51,6 +51,7 @@ Hvis indstillingen _Automatisk dato/klokkeslæt_ ikke er relevant for dine proje
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
+- [Opret datotabeller i Power BI Desktop](model-date-tables.md)
 - [Automatisk dato/klokkeslæt i Power BI Desktop](../transform-model/desktop-auto-date-time.md)
 - [Angiv og brug datotabeller i Power BI Desktop](../transform-model/desktop-date-tables.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

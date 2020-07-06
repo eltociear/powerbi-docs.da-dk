@@ -5,16 +5,16 @@ author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/4/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b2c587be792e0ad6318dd066cb239949b30cc9e5
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b74c0948ba8d22f1917f9750f86e899c8a99a904
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276553"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85239386"
 ---
 # <a name="display-a-visualizations-underlying-data"></a>Vis en visualiserings underliggende data
 
@@ -70,7 +70,7 @@ Du kan også fokusere på ét dataelement i en visualisering og analysere de und
 
 - Hvis knappen **Se poster** på båndet er deaktiveret og nedtonet, betyder det, at den valgte visualisering ikke understøtter Se poster.
 - Du kan ikke ændre dataene i visningen Se poster og gemme dem i rapporten igen.
-- Du kan ikke bruge Se poster, når der benyttes en beregnet måling i det pågældende visual.
+- Du kan ikke bruge Se poster, når der benyttes en beregnet måling i en flerdimensionel model.
 - Du kan ikke bruge Se poster, når du har oprettet forbindelse til en live flerdimensionel model.  
 
 ## <a name="next-steps"></a>Næste trin

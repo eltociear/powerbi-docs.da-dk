@@ -6,15 +6,15 @@ ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 311473aea5748c94bfa6a757482659176930544b
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: a2e7445db843788293a20fbbebdffd2952dfeb6a
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83693822"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85226210"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Integrer en rapport på en sikker portal eller et websted
 
@@ -139,7 +139,7 @@ Du kan tilføje lige så mange knapper, du vil, og på den måde skabe en bruger
 
 * Muligheden for automatisk godkendelse, der er tilgængelig med indstillingen **Integrer** fungerer ikke sammen med Power BI JavaScript API. Til JavaScript-API til Power BI skal du bruge integreringsmetoden [brugeren ejer dataene](../developer/embedded/embed-sample-for-your-organization.md). 
 
-* Levetiden for godkendelsestokenet styres ud fra dine AAD-indstillinger. Når godkendelsestokenet udløber, skal brugeren opdatere sin browser for at få et opdateret godkendelsestoken. Standardlevetiden er én time, men den kan være kortere eller længere i din organisation.
+* Levetiden for godkendelsestokenet styres ud fra dine AAD-indstillinger. Når godkendelsestokenet udløber, skal brugeren opdatere sin browser for at få et opdateret godkendelsestoken. Standardlevetiden er én time, men den kan være kortere eller længere i din organisation.  I dette scenarie er det ikke muligt automatisk at opdatere tokenet.
 
 ## <a name="next-steps"></a>Næste trin
 

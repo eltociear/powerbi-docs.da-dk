@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 06/16/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e03a453b95a797b281f789e8aed40b3879b54e02
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: dd0cfbcb2b4e4d18a7aa69fb65063f9d81e0a14a
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563864"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354794"
 ---
 # <a name="create-and-use-basic-area-charts"></a>Opret og brug basisområdediagrammer
 
@@ -26,7 +26,7 @@ Basisområdediagrammet (også kendt som lagdelt områdediagram) er baseret på k
 
 Områdediagrammer fremhæver omfanget af ændringer over tid og kan bruges til at fremhæve den samlede værdi på tværs af en udvikling. Data, som repræsenterer indtjening over tid, kan f.eks. afbildes i et områdediagram for at fremhæve den samlede indtjening.
 
-![](media/power-bi-visualization-basic-area-chart/power-bi-chart-example.png)
+![basisområdediagram](media/power-bi-visualization-basic-area-chart/power-bi-chart-example.png)
 
 > [!NOTE]
 > Når du deler din rapport med en Power BI-kollega, kræves det, at I begge har individuelle Power BI Pro-licenser, eller at rapporten er gemt i en Premium-kapacitet.

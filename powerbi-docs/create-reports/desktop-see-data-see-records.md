@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: d1aca2499ecf2be3e38fe36bd00f5ff5b2c17cc7
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: f70876b3b8c1815576ed019f88b67296f7aec052
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83793827"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238608"
 ---
 # <a name="use-visual-table-and-data-point-table-in-power-bi-desktop"></a>Brug den visuelle tabel og datapunkttabellen i Power BI Desktop
 I **Power BI Desktop** kan du analysere alle visualiseringers detaljer og få vist en tekstrepræsentation af de underliggende data eller enkelte dataposter for den valgte visual. Disse funktioner kaldes nogle gange for *klikfrekvens*, *detaljeadgang* eller *detaljeadgang til oplysninger*.
@@ -82,7 +82,7 @@ Du vender tilbage til rapporten ved at vælge **< Tilbage til rapport** i øvers
 > [!NOTE]
 >**Datapunkttabel** har følgende begrænsninger:
 > - Du kan ikke ændre dataene i visningen **Datapunkttabel** og gemme dem i rapporten igen.
-> - Du kan ikke bruge **Datapunkttabel**, når der benyttes en beregnet måling i det pågældende visualisering.
+> - Du kan ikke bruge **Datapunkttabel**, når der benyttes en beregnet måling i det pågældende visualisering i en (flerdimensional) målingsgruppe.
 > - Du kan ikke bruge **Datapunkttabel**, når du har oprettet forbindelse til en live flerdimensionel model.
 
 ## <a name="next-steps"></a>Næste trin

@@ -5,17 +5,17 @@ author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: f479bb865a11de57587a0302738411327327ed33
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: ff61cdf25c83b1062fd7c4a471a49269d20c57a8
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272672"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782405"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spor brugeraktiviteter i Power BI
 
@@ -244,8 +244,9 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 | Adgang til Power BI-mapper er tilføjet                      | AddFolderAccess                             | Anvendes ikke i øjeblikket                       |
 | Power BI-gruppemedlemmer er tilføjet                      | AddGroupMembers                             |                                          |
 | Administratoren har knyttet dataflowlagerkontoen til lejer | AdminAttachedDataflowStorageAccountToTenant | Anvendes ikke i øjeblikket                       |
-| Analyseret Power BI-datasæt                         | AnalyzedByExternalApplication               |                                          |
-| Power BI-rapport er analyseret                          | AnalyzeInExcel                              | Genereres, når brugerne interagerer med tjenesten. Der oprettes ikke en overvågningshændelse ved download af filen `*.odc`                                         |
+| Analyseret Power BI-datasæt                         | AnalyzedByExternalApplication               | Genereres, når brugerne interagerer med tjenesten                                         |
+| Power BI-rapport er analyseret                          | AnalyzeInExcel                              |                                          |
+| Tildelt et arbejdsområde til en udrulningspipeline                          | AssignWorkspaceToPipeline                              |                                          |
 | Tilknyttet lagerkonto for dataflow                 | AttachedDataflowStorageAccount              |                                          |
 | Bundne Power BI-datasæt til gateway                | BindToGateway                               |                                          |
 | Annulleret opdatering af dataflow                        | CancelDataflowRefresh                       |                                          |
@@ -254,7 +255,9 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 | Power BI-datasætforbindelser er ændret              | SetAllConnections                           |                                          |
 | Ændrede administratorer af Power BI-gateway                   | ChangeGatewayAdministrators                 |                                          |
 | Ændrede brugere af datakilde fra Power BI-gateway        | ChangeGatewayDatasourceUsers                |                                          |
+| Oprettede en brugerdefineret visualisering til virksomheder                          | InsertOrganizationalGalleryItem                                |                                          |
 | Power BI organisationsindholdspakke er oprettet      | CreateOrgApp                                |                                          |
+| Opret installationspipeline      | CreateAlmPipeline                                |                                          |
 | Power BI-app er oprettet                              | CreateApp                                   |                                          |
 | Power BI-dashboard er oprettet                        | CreateDashboard                             |                                          |
 | Power BI-dataflow er oprettet                         | CreateDataflow                              |                                          |
@@ -264,9 +267,13 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 | Oprettet Power BI-gateway                          | CreateGateway                               |                                          |
 | Power BI-gruppe er oprettet                            | CreateGroup                                 |                                          |
 | Power BI-rapport er oprettet                           | CreateReport <sup>1</sup>                                |                                          |
+| Brugerdefineret visuelt element anmodede om Azure AD-adgangstoken                           | GenerateCustomVisualAADAccessToken                                |                                          |
+| Brugerdefineret visualisering anmodede om adgang til Office Web Apps                           | GenerateCustomVisualWACAccessToken                                |                                          |
 | Dataflowet er overført til ekstern lagerkonto     | DataflowMigratedToExternalStorageAccount    | Anvendes ikke i øjeblikket                       |
 | Dataflowtilladelser er tilføjet                        | DataflowPermissionsAdded                    | Anvendes ikke i øjeblikket                       |
 | Dataflowtilladelser er fjernet                      | DataflowPermissionsRemoved                  | Anvendes ikke i øjeblikket                       |
+| Slettede en brugerdefineret visualisering til virksomheder     | DeleteOrganizationalGalleryItem                                |                                          |
+| Slettede en installationspipeline      | DeleteAlmPipeline                                |                                          |
 | Power BI-organisationsindholdspakke er slettet      | DeleteOrgApp                                |                                          |
 | Power BI-kommentar er slettet                          | DeleteComment                               |                                          |
 | Power BI-dashboard er slettet                        | DeleteDashboard                             | Anvendes ikke i øjeblikket                       |
@@ -278,6 +285,7 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 | Slettet Power BI-gateway                          | DeleteGateway                               |                                          |
 | Power BI-gruppe er slettet                            | DeleteGroup                                 |                                          |
 | Power BI-rapport er slettet                           | DeleteReport                                |                                          |
+| Udrullede til en pipelinefase                           | DeployAlmPipeline                                |                                          |
 | Datakilder til Power BI-datasæt er fundet          | GetDatasources                              |                                          |
 | Downloadet Power BI-rapport                        | DownloadReport                              |                                          |
 | Redigerede egenskaber for dataflow                        | EditDataflowProperties                      |                                          |
@@ -302,6 +310,7 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 | Power BI-rapport er publiceret på internettet                  | PublishToWebReport <sup>2</sup>                         |                                          |
 | Udvalgte udgivne eller opdaterede tabeller | UpdateFeaturedTables <sup>3</sup>   | |
 | Power BI-dataflowhemmelighed er modtaget fra Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
+| Fjernede et arbejdsområde fra en udrulningspipeline         | UnassignWorkspaceFromPipeline                 |                                          |
 | Datakilde fjernet fra Power BI-gateway         | RemoveDatasourceFromGateway                 |                                          |
 | Power BI-gruppemedlemmer er fjernet                    | DeleteGroupMembers                          |                                          |
 | Arbejdsområde er fjernet fra en kapacitet                 | RemoveWorkspacesFromCapacity                |                                          |
@@ -321,9 +330,12 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 | Overtog et Power BI-dataflow                     | TookOverDataflow                             |                                          |
 | Publicering af Power BI-app er fjernet                          | UnpublishApp                                |                                          |
 | Opdater indstillinger for ressourcestyring af kapacitet      | UpdateCapacityResourceGovernanceSettings    | Findes i øjeblikket ikke i Microsoft 365 Administration |
+| Opdaterede en brugerdefineret visualisering til virksomheder                     | UpdateOrganizationalGalleryItem                   |                                          |
 | Kapacitetsadministrator er opdateret                            | UpdateCapacityAdmins                        |                                          |
 | Vist navn for kapacitet er opdateret                     | UpdateCapacityDisplayName                   |                                          |
 | Opdaterede tilladelser for tildeling af dataflowlager   | UpdatedDataflowStorageAssignmentPermissions |                                          |
+| Opdaterede adgang til installationspipeline   | UpdateAlmPipelineAccess |                                          |
+| Opdaterede konfiguration for installationspipeline   | SetConfigurationAlmPipeline |                                          |
 | Power BI-indstillinger for organisation er opdateret          | UpdatedAdminFeatureSwitch                   |                                          |
 | Power BI-appen er opdateret                              | UpdateApp                                   |                                          |
 | Power BI-dataflowet er opdateret                         | UpdateDataflow                              |                                          |

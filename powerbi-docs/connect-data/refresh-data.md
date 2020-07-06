@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 05/27/2020
+ms.topic: how-to
+ms.date: 06/16/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 9bc8f7c100acc3805fbe6ab949e3584cb5fd26e1
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: ddb5e4d1476025965e6227e9ae443441f2060fcd
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84121034"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85219729"
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
 
@@ -112,7 +112,7 @@ Power BI udfører en opdatering på baggrund af et element-id i OneDrive, så du
 Du kan flytte filen til en anden placering (f.eks. ved hjælp af træk og slip), og opdateringen vil fortsat fungere, da Power BI stadig kender fil-id'et. Hvis du kopierer filen til en anden placering, oprettes der dog en ny forekomst af filen og et nyt fil-id. Derfor er din Power BI-filreference ikke længere gyldig, og opdateringen vil mislykkes.
 
 > [!NOTE]
-> Det kan tage Power BI op til 10 minutter at opdatere et datasæt, selvom synkroniseringen er fuldført på din lokale computer, og efter du har brugt *Opdater nu* i Power BI-tjenesten.
+> Det kan tage Power BI op til 60 minutter at opdatere et datasæt, selvom synkroniseringen er fuldført på din lokale computer, og efter du har brugt *Opdater nu* i Power BI-tjenesten.
 
 Hvis du vil se tidligere synkroniseringscyklusser, skal du kigge på OneDrive-fanen i opdateringshistorikken. På følgende skærmbillede kan du se en fuldført synkroniseringscyklus for et prøvedatasæt.
 
@@ -202,14 +202,15 @@ I modsætning til en datagateway til virksomheder behøver du ikke at føje data
 
 ![Konfigurer legitimationsoplysninger for datakilden for gatewayen](media/refresh-data/configure-data-source-credentials-gateway.png)
 
-> [!NOTE]
-> Den personlige datagateway understøtter ikke datasæt i DirectQuery-/LiveConnect-tilstand. På siden med indstillinger for datasæt bliver du muligvis bedt om at installere den, men hvis du kun har en personlig gateway, kan du ikke konfigurere en gatewayforbindelse. Sørg for, at du har en datagateway til virksomheder, der understøtter disse typer datasæt.
 
 ### <a name="accessing-cloud-data-sources"></a>Adgang til datakilder i cloudmiljøet
 
 Datasæt, der bruger datakilder i cloudmiljøet, f.eks. Azure SQL DB, kræver ikke en datagateway, hvis Power BI kan etablere en direkte netværksforbindelse til kilden. Du kan derfor administrere konfigurationen af disse datakilder ved hjælp af afsnittet **Legitimationsoplysninger for datakilde** under indstillingerne for datasæt. Som vist på følgende skærmbillede behøver du ikke konfigurere en gatewayforbindelse.
 
 ![Konfigurer legitimationsoplysninger for datakilden uden en gateway](media/refresh-data/configure-data-source-credentials.png)
+
+> [!NOTE]
+> Hver bruger kan kun have ét sæt legitimationsoplysninger pr. datakilde på tværs af alle de datasæt, de ejer, uanset hvilke arbejdsområder datasættene er placeret på. 
 
 ### <a name="accessing-on-premises-and-cloud-sources-in-the-same-source-query"></a>Adgang til kilder i det lokale miljø og cloudmiljøet i den samme kildeforespørgsel
 

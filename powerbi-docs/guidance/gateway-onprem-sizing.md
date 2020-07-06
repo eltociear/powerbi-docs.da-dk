@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: de84dd7e9021abf1198f2dc4f910afb8bd078ac6
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b195e0bc11068b819a2f3133ed9ae135e3c30ffb
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279520"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485938"
 ---
 # <a name="on-premises-data-gateway-sizing"></a>Størrelse af datagateway i det lokale miljø
 
@@ -84,7 +84,7 @@ Planlæg den bedst mulige forbindelse mellem Power BI-tjenesten og din gateway s
 
 - Tilstræb pålidelighed, hurtige hastigheder og lave, ensartede ventetider
 - Fjern – eller reducer – maskinhop mellem gatewayen og dine datakilder
-- Fjern alle netværksbegrænsninger, der pålægges af firewall-proxy-laget. Du kan finde flere oplysninger om Power BI's slutpunkter i [URL-adresser til hvidliste for Power BI](../admin/power-bi-whitelist-urls.md).
+- Fjern alle netværksbegrænsninger, der pålægges af firewall-proxy-laget. Du kan finde flere oplysninger om Power BI's slutpunkter i [Føj Power BI URL-adresser til din hvidliste](../admin/power-bi-whitelist-urls.md).
 - Konfigurer [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) til at oprette en privat, administreret forbindelse til Power BI
 - Ved datakilder i Azure VM'er, skal du sikre, at VM'er er [placeret sammen med Power BI-tjenesten](../admin/service-admin-where-is-my-tenant-located.md)
 - Sørg for, at der er en god forbindelse mellem gatewaymaskinen og Active Directory i det lokale miljø for arbejdsbelastninger for direkte forbindelser til SQL Server Analysis Services (SSAS), der involverer dynamisk sikkerhed på rækkeniveau

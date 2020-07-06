@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/30/2020
+ms.date: 06/17/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 526d2face5b963b27ac17335bbe223c5e3bec672
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: e4f5007d60f7634b671f1178a7279fe5cc35be89
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276576"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354587"
 ---
 # <a name="getting-started-with-the-formatting-pane"></a>Introduktion til formateringsruden
 
@@ -28,11 +28,11 @@ Start med at åbne en rapport i Power BI Desktop eller Power BI-tjenesten. De ha
 
 Når du er ved at redigere en rapport, og du har valgt en visualisering, åbnes ruden **Visualiseringer**. Brug denne rude til at ændre visualiseringer. Direkte under ruden **Visualiseringer** er der tre ikoner: ikonet **Felter** (stablede søjler), ikonet **Formatér** (en malerrulle) og ikonet **Analytics** (et forstørrelsesglas). På billedet herunder er ikonet **Felter** valgt, hvilket er angivet med en gul linje under ikonet.
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format.png)
+![Ruden Visualiseringer med ikonet Ruder valgt](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format.png)
 
 Når du vælger **Formatér**, vises de tilpasninger, som er tilgængelige for den visualisering, der er valgt i øjeblikket, i området under ikonet.  
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format-selected.png)
+![Ruden Visualiseringer med ikonet Formatér valgt](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format-selected.png)
 
 Du kan tilpasse mange elementer i hver visualisering. De tilgængelige indstillinger afhænger af den valgte visual. Nogle af disse indstillinger er:
 
@@ -119,7 +119,7 @@ Selv efter at du har anvendt en typografi, kan du fortsætte med at formatere eg
 ## <a name="changing-axis-properties"></a>Rediger akseegenskaber
 
 Det er ofte nyttigt at ændre x-aksen eller y-aksen. På samme måde som at arbejde med farver kan du ændre en akse ved at vælge ikonet for pil ned til venstre for den akse, du vil ændre, som det vises på følgende billede.  
-![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-y-axis.png)
+![Ruden Formatér med pil til Y-akse-kort](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-y-axis.png)
 
 I eksemplet nedenfor har vi formateret Y-aksen ved at:
 - flytte mærkaterne til højre side af visualiseringen

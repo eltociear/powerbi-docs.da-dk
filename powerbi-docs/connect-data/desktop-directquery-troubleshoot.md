@@ -5,15 +5,15 @@ author: peter-myers
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 002df4e6c3eec7095258647a0015042efb98257f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 54091175b49a0465a56a689190965429715a4754
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83292495"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485547"
 ---
 # <a name="troubleshoot-developing-directquery-models-in-power-bi-desktop"></a>Fejlfind udvikling af DirectQuery-modeller i Power BI Desktop
 
@@ -42,13 +42,13 @@ For nogle DirectQuery-kilder indeholder denne log alle forespørgsler, der er se
 - Teradata
 - SAP HANA
 
-Sporingsfilen findes i mappen **AppData** for den aktuelle bruger: _\\\<Bruger>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces_
+Sporingsfilen kan findes i mappen **AppData** for den aktuelle bruger: _\\\<User>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces_
 
 Her er en nem måde at få adgang til denne mappe: I Power BI Desktop skal du vælge _Filer > Indstillinger > Indstillinger_ og derefter vælge siden **Diagnosticering**. Følgende vindue vises:
 
 ![Power BI Desktop-vinduet åbnes, og siden Global diagnosticering er valgt. Afsnittet Diagnosticeringsindstillinger indeholder to egenskaber: Aktivér sporing, og omgå cachelageret for geokodning. Indstillingen Aktivér sporing er aktiveret. Afsnittet Samling af crashdump indeholder knappen Aktivér nu og et link til at åbne mappen crashdump/sporinger.](media/desktop-directquery-troubleshoot/desktop-directquery-troubleshoot-desktop-file-options-diagnostics.png)
 
-Når du vælger linket **Åbn mappen crashdump/sporinger** under Samling af crashdump, åbnes følgende mappe: _\\\<Bruger>\AppData\Local\Microsoft\Power BI Desktop\Sporinger_
+Når du vælger linket **Åbn crashdump/sporingsmappe** under Samling af crashdump, åbnes følgende mappe: _\\\<User>\AppData\Local\Microsoft\Power BI Desktop\Traces_
 
 Når du navigerer til denne mappes overordnede mappe vises mappen, der indeholder _AnalysisServicesWorkspaces_, som vil indeholde én undermappe for et arbejdsområde for hver åbne forekomst af Power BI Desktop. Disse undermapper er navngivet med et heltalssuffiks, f.eks. _AnalysisServicesWorkspace2058279583_.
 
@@ -63,7 +63,7 @@ Når du downloader og installerer SQL Server Management Studio, skal du køre SQ
 Hvis du vil åbne sporingsfilen, skal du benytte følgende fremgangsmåde:
 
 1. Vælg _Filer > Åbn > Sporingsfil_ i SQL Server Profiler
-2. Angiv stien til sporingsfilen for den åbne Power BI-session, f.eks.: _\\\<Bruger>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data_
+2. Angiv stien til sporingsfilen for den aktuelt åbne Power BI-session, f.eks.: _\\\<User>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data_
 3. Åbn _FlightRecorderCurrent.trc_
 
 Alle hændelser fra den aktuelle session vises. Der vises et anmærket eksempel nedenfor, hvor grupper af hændelser er fremhævet. Hver enkelt gruppe har følgende:

@@ -5,17 +5,17 @@ author: maggiesMSFT
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/26/2020
 ms.author: maggies
 ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: edc06d7a46589c999e4bf18613c0c75f6d5bf983
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: c3a625dcdd58f881c9314e821753f66098e073f5
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84120575"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354426"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Opret nye arbejdsområder i Power BI
 
@@ -144,6 +144,20 @@ Alle, der har en administratorrolle i et arbejdsområde, kan give andre adgang t
 Hvis du vil distribuere officielt indhold til en stor målgruppe i din organisation, kan du publicere en *app* fra dit arbejdsområde.  Når indholdet er klar, skal du vælge, hvilke dashboards og rapporter du vil publicere, og derefter skal du publicere dem som en app. Du kan oprette en app fra hvert arbejdsområde.
 
 Læs om, hvordan du [publicerer en app fra de nye arbejdsområder](service-create-distribute-apps.md).
+
+## <a name="security-settings"></a>Sikkerhedsindstillinger
+
+**Tillad, at bidragydere opdaterer appen for dette arbejdsområde** gør det muligt for arbejdsområdeadministratorer at delegere muligheden for at opdatere appen for arbejdsområdet til de brugere, der har rollen Bidragyder. Som standard er det kun arbejdsområder og medlemmer, der kan publicere og opdatere appen for arbejdsområdet. 
+
+Når det indstillingen er aktiveret, kan bidragydere:
+* Opdatere appmetadata som navn, ikon, beskrivelse, supportwebsted og farve
+* Tilføje eller fjerne elementer, der er inkluderet i appen, f. eks. tilføje rapporter eller datasæt
+* Ændre appnavigationen eller det standardelementet, som appen åbnes i
+
+Bidragydere kan dog ikke:
+* Publicere appen for første gang
+* Ændre, hvem der har tilladelse til appen
+
 
 ## <a name="next-steps"></a>Næste trin
 * Læs om [organisering af arbejde i den nye arbejdsområdeoplevelse i Power BI](service-new-workspaces.md)

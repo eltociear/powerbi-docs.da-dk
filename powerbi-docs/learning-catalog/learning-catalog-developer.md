@@ -1,17 +1,17 @@
 ---
 title: Læringskatalog til udviklere
 description: Find alle træningsmuligheder til Power BI
-author: loreleishannonmsft
+author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: v-lshann
-ms.openlocfilehash: 6262b7ba0f3d01db6f9f5ff24f411de6ec4f35cb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.author: margoc
+ms.openlocfilehash: edc2e40c219a8bbe1d57a5cfda774e7f9f87856d
+ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81268598"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84532620"
 ---
 # <a name="developer-learning-catalog"></a>Læringskatalog til udviklere
 
@@ -27,17 +27,13 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra gru
 ## <a name="embedded"></a>Embedded<a name="embedded"></a>
 | Indhold | Beskrivelse | Formatér  | Længde      |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------|
+|[Onlinekursus: Power BI Developer på en dag](developer-online-course.md)|Et videobaseret kursus, som giver appudviklere den tekniske viden, der kræves for at integrere Power BI-indhold. Vi anbefaler, at du ser videoerne i den indspillede sekvens, der starter med video 1 og slutter med video 20.|YouTube-afspilningsliste og selvstudiepakke|3 t. 20 min.|
 | [Bedste praksis for administration af Power BI Embedded-analyser til udrulninger med flere lejere](https://info.microsoft.com/ww-landing-PBI-webinar-Best-Practices-for-Managing-Power-BI-Embedded-video.html) | Power BI Embedded er en effektiv tjeneste, der gør det muligt for dig at bruge Power BI som whitelabel-løsning i dine egne programmer. Se dette webinar for at få mere at vide om, hvordan du administrerer Power BI Embedded-udrulninger.   | Webinar       |                |
 | [Få mere at vide om Power BI Embedded på 20 minutter](https://info.microsoft.com/ww-ondemand-power-bi-embedded-in-20-min.html) (webinaret er på engelsk)  | Vi præsenterer dette webinar for at give dig en introduktion til Power BI Embedded. Efter dette webinar har brugerne en forståelse af, hvad Power BI Embedded er, de næste trin for at komme i gang med produktet, og hvor de kan finde hjælp/ressourcer. | Webinar       |                |
 | [Udvikling med Power BI Embedding ved Ted Pattison – opdatering fra april 2018](https://www.youtube.com/watch?v=swnGlrRy588) (webinaret er på engelsk)  | I dette webinar, der henvender sig til udviklere, diskuterer Ted Pattison de seneste forbedringer af Power BI Embedded-platformen, og hvordan de kan udnyttes af ISV'er og virksomhedsudviklere. | YouTube-video | 59 min. 49 sek.  |
 | [Power BI Embedding, version 2 – hele historien](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Embedding-Version-2-The-Full-Story/td-p/229527) (webinaret er på engelsk)    | Webinaret blev præsenteret den 10. august 2017 af Power BI MVP Ted Pattison fra Critical Path Training. Webinaret dækker, hvordan du udvikler ved hjælp af de nye funktioner til integrering af Power BI, der er tilgængelige via Power BI Premium.  | Webinar       | 1 t. 7 min. 23 sek. |
 | [Selvstudium: Integrer Power BI-indhold i en applikation for dine kunder](https://docs.microsoft.com/power-bi/developer/embed-sample-for-customers#step-1-setup-your-embedded-analytics-development-environment) | Med Power BI Embedded i Azure eller Power BI-integration i Office kan du integrere rapporter, dashboards eller felter i et program ved hjælp af "appen ejer dataene".  | Dokumentation |                |
 | [Få mere at vide om Power BI Embedded på 20 minutter](https://info.microsoft.com/ww-ondemand-power-bi-embedded-in-20-min.html) (webinaret er på engelsk)  | Vi præsenterer dette webinar for at give dig en introduktion til Power BI Embedded. Efter dette webinar har brugerne en forståelse af, hvad Power BI Embedded er, de næste trin for at komme i gang med produktet, og hvor de kan finde hjælp/ressourcer. | Webinar       |                |
-## <a name="dax"></a>DAX<a name="dax"></a>
-| Indhold | Beskrivelse | Formatér  | Længde      |
-|--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------|
-| [Praktiske DAX til Power BI ved Phil Seamark](https://www.youtube.com/watch?v=1fGfqzS37qs) (webinaret er på engelsk)  | Som supplement til sin nye bog gennemgår Phil Seamark nogle af de bedste fremgangsmåder for praktiske DAX i Power BI   | YouTube-video | 59 min. 41 sek. |
-| [Kreative DAX-løsninger ved Philip Seamark](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/10-2-18-Webinar-Creative-DAX-solutions-by-Philip-Seamark/td-p/516250) (webinaret er på engelsk) | Vidste du, at DAX-sproget kan langt mere end blot at køre en SUM over en kolonne eller tælle rækker i en tabel? DAX er bygget oven på en af de hurtigste databaser i hele verden. Deltag i webinaret med Charles Sterling og Philip Seamark, når de udforsker nogle usædvanlige og kreative scenarier, som du muligvis ikke havde forestillet dig kunne lade sig gøre. | Webinar       | 58 min. 12 sek. |
 ## <a name="development"></a>Udvikling<a name="development"></a>
 | Indhold | Beskrivelse | Formatér  | Længde      |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------|

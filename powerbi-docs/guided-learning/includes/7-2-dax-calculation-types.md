@@ -1,17 +1,17 @@
 ---
-ms.openlocfilehash: 4ea1b2141cf9a072f11a3a62789c7c0ec5b500a4
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0296512b59baf828dd284088e0109af819aee261
+ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73799767"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84562321"
 ---
 Der er to primære beregninger, som du kan oprette ved hjælp af DAX:
 
 * **beregnede kolonner**
-* **beregnede målinger**
+* **målinger**
 
-Før du begynder at rode med at oprette en af dem, er det fornuftigt at have godt styr på DAX-syntaksen for tabeller og kolonner, som du skal bruge ved oprettelse af enten **beregnede kolonner** eller **beregnede målinger**.
+Før du begynder at rode med at oprette en af dem, er det fornuftigt at have godt styr på DAX-syntaksen for tabeller og kolonner, som du skal bruge ved oprettelse af enten **beregnede kolonner** eller **målinger**.
 
 ## <a name="dax-table-and-column-name-syntax"></a>Navnesyntaks for DAX-tabeller og -kolonner
 Uanset om du opretter en ny kolonne eller måling, er det vigtigt at kende standardformatet for tabelnavne i DAX:
@@ -51,8 +51,8 @@ Der er følgende obligatoriske elementer til en beregnet kolonne:
 
 Hvis du refererer til en tabel eller kolonne i den beregnede kolonneformel, behøver du ikke at angive en række i tabellen – Power BI beregner kolonnen for den aktuelle række for hver beregning.
 
-## <a name="creating-calculated-measures"></a>Opret beregnede målinger
-Brug en **beregnet måling**, når du beregner procenter eller forhold, eller du har brug for komplekse sammenlægninger. Vælg knappen **Ny måling** under fanen **Modellering** for at oprette en måling ved hjælp af en DAX-formel. Der er igen bedst at være i **datavisningen** i Power BI Desktop, da den indeholder **formellinjen** og gør det nemt at skrive DAX-formlen.
+## <a name="creating-measures"></a>Oprettelse af målinger
+Brug en **måling**, når du beregner procenter eller forhold, eller du har brug for komplekse sammenlægninger. Vælg knappen **Ny måling** under fanen **Modellering** for at oprette en måling ved hjælp af en DAX-formel. Der er igen bedst at være i **datavisningen** i Power BI Desktop, da den indeholder **formellinjen** og gør det nemt at skrive DAX-formlen.
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_4.png)
 
@@ -60,7 +60,7 @@ Med **målinger** kan du se et nyt ikon for måling, der vises i ruden **Felter*
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_5.png)
 
-De obligatoriske elementer til en beregnet måling er de samme som til en beregnet kolonne:
+De obligatoriske elementer til en måling er de samme som til en beregnet kolonne:
 
 * et nyt målingsnavn
 * mindst én funktion eller ét udtryk

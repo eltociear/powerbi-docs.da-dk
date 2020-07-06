@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/31/2020
-ms.openlocfilehash: 0391f0f2e4340b01c1f1ad7a3bce860487daabc9
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.date: 06/30/2020
+ms.openlocfilehash: 0339dd4a8fa7b429db01715060bfd146db115e46
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272649"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782741"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -21,9 +21,15 @@ Denne ændringslog er for Power BI-rapportserver, og den viser nye elementer sam
 
 Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder i Power BI-rapportserver](whats-new.md). 
 
-
 ## <a name="may-2020"></a>Maj 2020
 - **Power BI-rapportserver**
+    - *Version: 1.8.7485.35104 (Build 15.0.1103.234), udgivet: 30. juni 2020*
+        - Fejlrettelser
+            - Løste et problem i scale-out-scenarier, hvor rapporter ikke afspejlede ændringer med det samme på serveren efter overførsel.
+    - *Version: 1.8.7468.41510 (Build 15.0.1103.232), udgivet: 15. juni 2020*
+        - Fejlrettelser
+            - Løste et problem, hvor rapporter ikke med det samme afspejlede ændringer på serveren efter overførsel.
+            - Løste et problem, hvor opdatering mislykkedes, når fuzzy-søgning blev brugt til at flette forespørgsler.
     - *Version: 1.8.7450.37410 (Build 15.0.1103.227), udgivet: 27. maj 2020*
          - Funktioner
             -  Der er tilføjet understøttelse af størrelsen af det tilpassede katalog for forbindelsesgruppen (se [MaxCatalogConnectionPoolSizePerProcess-indstilling](https://docs.microsoft.com/sql/reporting-services/report-server/rsreportserver-config-configuration-file?view=sql-server-ver15#bkmk_service) for at få flere oplysninger).

@@ -5,16 +5,16 @@ author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 102145e8c5b2fd3ad19b6703710405d06da5a93a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: f7760021966673b93313809a806473b94c7750d3
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83323223"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85218694"
 ---
 # <a name="make-excel-data-work-well-with-qa-in-power-bi"></a>Få dine Excel-data til at fungere godt med Spørgsmål og svar i Power BI
 Hvis du opretter datamodeller eller opbygger Excel-projektmapper, der skal bruges med Power BI, skal du læse videre...
@@ -40,9 +40,9 @@ Her er nogle tip til at få mest ud af Spørgsmål og svar i din projektmappe.
 
 * Hvis din projektmappe har en Power Pivot-datamodel, kan du foretage endnu flere optimeringer. Læs mere om [Afmystificering af Spørgsmål og svar i Power BI del 2](https://powerbi.microsoft.com/blog/demystifying-power-bi-q-amp-a-part-2/) fra vores interne team af eksperter i naturligt sprog.
 
-* Åbn datasættet i Power BI Desktop, og opret nye kolonner, opret beregnede målinger, sammenkæd felter for at oprette entydige værdier, klassificer data efter type (f.eks. datoer, strenge, geografi, billeder, URL-adresser) m.m.
+* Åbn datasættet i Power BI Desktop, og opret nye kolonner, opret målinger, sammenkæd felter for at oprette entydige værdier, klassificer data efter type (f.eks. datoer, strenge, geografi, billeder, URL-adresser) m.m.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 - [Spørgsmål og svar til forbrugere](../consumer/end-user-q-and-a.md)  
 - [Brug Spørgsmål og svar på dashboards og i rapporter](power-bi-tutorial-q-and-a.md)

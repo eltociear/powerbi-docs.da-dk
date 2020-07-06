@@ -6,19 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/19/2020
+ms.date: 06/25/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a84ebd1374cab596023f55024eb9368a69daab0d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 10db78c01ea074e2b3fab71715a3df92ae207f8e
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236024"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782477"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Rediger, hvordan et diagram sorteres i en rapport i Power BI
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
 
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "85236024"
 
 I Power BI-tjenesten kan du ændre, hvordan en visualisering ser ud, ved at sortere den efter forskellige datafelter. Hvis du ændrer, hvordan du sorterer en visualisering, kan du fremhæve de oplysninger, du vil formidle. Uanset om du bruger numeriske data (f.eks. salgstal) eller tekstdata (f.eks. navne på stater), kan du sortere visualiseringerne efter behov. Power BI indeholder mange sorteringsmuligheder og genvejsmenuer, som du kan bruge. 
 
-Visuals på et dashboard kan ikke sorteres, men i en Power BI-rapport kan du sortere de fleste visualiseringer 
+Visuals i et dashboard kan ikke sorteres. Men i en Power BI-rapport kan du sortere de fleste visualiseringer efter ét felt, og nogle gange to felter, ad gangen. Sortering er ikke tilgængelig for visse typer visualiseringer: trækort, målere, kort osv. 
 
 ## <a name="get-started"></a>Kom i gang
 
@@ -51,6 +51,19 @@ Hvis det er nødvendigt, kan du ændre sorteringsrækkefølgen mellem stigende o
 
 > [!NOTE]
 > Det er ikke alle visualiseringer, der kan sorteres. Følgende visualiseringer kan f.eks. ikke sorteres: træstruktur, kort (map), kartogram, punkt, måler, kort (card) og vandfald.
+
+## <a name="sorting-by-multiple-columns"></a>Sortering efter flere kolonner
+Dataene i denne tabel er sorteret efter **Number of customers**.  Det ses på den lille pil under ordet *Number*. Pilen, der peger nedad, hvilket betyder, at kolonnen er sorteret i *faldende* rækkefølge.
+
+![skærmbillede, der viser den første kolonne, som bruges til sortering](media/end-user-change-sort/power-bi-sort-first.png)
+
+
+Hvis du vil føje flere kolonner til sorteringsrækkefølgen, skal du trykke på Skift og klikke på den kolonneoverskrift, du vil tilføje som den næste i sorteringsrækkefølgen. Hvis du f. eks. klikker på **Number of customers** og trykker på Skift og klikker på **Total revenue**, sorteres tabellen først efter kunder og derefter efter omsætning. Den røde kontur viser områder, hvor sorteringsrækkefølgen er ændret.
+
+![skærmbillede, der viser den anden kolonne, som bruges til sortering](media/end-user-change-sort/power-bi-sort-second.png)
+
+Hvis du trykker på Skift og klikker på den samme kolonne igen, ændres sorteringsretningen for den pågældende kolonne. Hvis du trykker på Skift og klikker på en kolonne, som du tidligere har føjet til sorteringsrækkefølgen, vises den pågældende kolonne bagest i sorteringsrækkefølgen.
+
 
 ## <a name="saving-changes-you-make-to-sort-order"></a>Gem dine ændringer af sorteringsrækkefølgen
 Filtre, udsnitsværktøjer, sortering og andre ændringer af datavisningen, du foretager, gemmes i Power BI-rapporter – selvom du arbejder i [Læsevisning](end-user-reading-view.md). Det betyder, at hvis du navigerer væk fra en rapport og vender tilbage igen senere, er dine sorteringsændringer blevet gemt.  Hvis du vil ændre indstillingerne tilbage til de indstillinger, som rapportens *designer* oprindeligt valgte, skal du vælge **Nulstil til standard** på den øverste menulinje. 

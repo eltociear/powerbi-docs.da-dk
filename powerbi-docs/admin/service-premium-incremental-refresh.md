@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
-ms.date: 05/26/2020
+ms.topic: how-to
+ms.date: 06/22/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 2257e38183d87ef7fd4fdd12546c2a191a7acf74
-ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
+ms.openlocfilehash: a9045c5c088926b24bb9f71e2adf558da6ffa597
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84159875"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85227446"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Trinvis opdatering i Power BI
 
@@ -114,7 +114,7 @@ Under den første opdatering i Power BI-tjenesten kan det tage længere tid at i
 
 #### <a name="current-date"></a>Aktuel dato
 
-Den *aktuelle dato* er baseret på systemdatoen for opdateringstidspunktet. Hvis en planlagt opdatering er aktiveret for datasættet i Power BI-tjenesten, tages der hensyn til den pågældende tidszone, når den aktuelle dato fastsættes. Der tages hensyn til tidszonen for både manuelt udløste og planlagte opdateringer, hvis tidszonen er tilgængelig. En opdatering, der finder sted kl. 20.00 Pacific Time (USA og Canada) og har en angiven tidszone, fastsætter den aktuelle dato ud fra Pacific Time og ikke GMT (hvilket i så fald ville være den efterfølgende dag).
+Den *aktuelle dato* er baseret på systemdatoen for opdateringstidspunktet. Hvis en planlagt opdatering er aktiveret for datasættet i Power BI-tjenesten, tages der hensyn til den pågældende tidszone, når den aktuelle dato fastsættes. Der tages hensyn til tidszonen for både manuelt udløste og planlagte opdateringer gennem Power BI-tjenesten, hvis tidszonen er tilgængelig. En opdatering, der finder sted kl. 20.00 Pacific Time (USA og Canada) og har en angiven tidszone, fastsætter den aktuelle dato ud fra Pacific Time og ikke GMT (hvilket i så fald ville være den efterfølgende dag). Opdateringshandlinger, der ikke blev kaldt via Power BI-tjenesten, f.eks. [TMSL-opdateringskommandoen](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current), tager ikke hensyn til tidszonen for planlagt opdatering
 
 ![Tidszone](media/service-premium-incremental-refresh/time-zone2.png)
 
@@ -186,7 +186,7 @@ Følgende parametre kan indsættes i TMSL-opdateringskommandoen for at tilsides�
 
 - **applyRefreshPolicy** – Hvis en tabel har defineret en trinvis opdateringspolitik, bestemmer applyRefreshPolicy, om politikken anvendes eller ej. Hvis politikken ikke anvendes, efterlader en Behandl komplet-handling partitionsdefinitionerne uændrede, og der udføres en fuld opdatering af alle partitioner i tabellen. Standardværdien er True.
 
-- **effectiveDate** – Hvis der anvendes en politik for trinvis opdatering, skal den kende den aktuelle dato for at bestemme det rullende vindues intervaller for det historiske interval og det trinvise interval. Parameteren effectiveDate gør det muligt for dig at tilsidesætte den aktuelle dato. Dette er nyttigt i forbindelse med test, demoer og forretningsscenarier, hvor data opdateres trinvist til en dato i fortiden eller fremtiden (f. eks. budgetter i fremtiden). Standardværdien er den [aktuelle dato](#current-date).
+- **effectiveDate** – Hvis der anvendes en politik for trinvis opdatering, skal den kende den aktuelle dato for at bestemme det rullende vindues intervaller for det historiske interval og det trinvise interval. Parameteren effectiveDate gør det muligt for dig at tilsidesætte den aktuelle dato. Dette er nyttigt i forbindelse med test, demoer og forretningsscenarier, hvor data opdateres trinvist til en dato i fortiden eller fremtiden (f. eks. budgetter i fremtiden). Standardværdien er den aktuelle dato.
 
 ```json
 { 
@@ -205,6 +205,8 @@ Følgende parametre kan indsættes i TMSL-opdateringskommandoen for at tilsides�
   }
 }
 ```
+
+Du kan få mere at vide om, hvordan du tilsidesætter standardfunktionen til trinvis opdatering med TMSL, under [Opdater kommando](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current).
 
 ### <a name="custom-queries-for-detect-data-changes"></a>Brugerdefinerede forespørgsler om registrering af dataændringer
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 6456d6126245ac6416dd7f50e705a0c731d98623
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 178a2f2037a52b1b08e1006123c30eff1af18af6
+ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83325822"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85393743"
 ---
 # <a name="set-and-use-date-tables-in-power-bi-desktop"></a>Angiv og brug datotabeller i Power BI Desktop
 
@@ -72,9 +72,12 @@ Når du angiver din egen **datotabel**, skal du sikre, at datatypen er angivet k
 3. Angiv datatypen for kolonnen. 
 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
-Du vil måske også være interesseret i følgende artikler:
+Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
 * [Automatisk dato/klokkeslæt i Power BI Desktop](desktop-auto-date-time.md)
+* [Opret datotabeller i Power BI Desktop](../guidance/model-date-tables.md)
 * [Datatyper i Power BI Desktop](../connect-data/desktop-data-types.md)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+* Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)

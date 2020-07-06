@@ -1,19 +1,19 @@
 ---
 title: Power BI-datakilder
 description: Denne artikel indeholder en liste over de datakilder, som Power BI understøtter, herunder oplysninger om DirectQuery og datagatewayen i det lokale miljø.
-author: kfollis
+author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/01/2020
-ms.author: kfollis
-ms.openlocfilehash: 7fcd5b5f7a6365aac597186618ce2b18fcc44d7f
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.date: 06/10/2020
+ms.author: davidi
+ms.openlocfilehash: 0bc6b844457f625d0287f2ec85f582a6ea874624
+ms.sourcegitcommit: 6d3a37eb636e1b71c7dcb9d1c3a9e495b78dec97
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84273385"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "84681853"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-datakilder
 
@@ -90,7 +90,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | Microsoft Graph Security | Ja | Ja | Nej | Ja | Nej |
 | Mixpanel | Ja | Ja | Nej | Nej | Nej |
 | MySQL | Ja | Ja | Nej | Ja | Ja |
-| OData | Ja | Ja | Nej | Ja | Nej |
+| OData | Ja | Ja <sup>7</sup> | Nej | Ja | Nej |
 | ODBC | Ja | Ja | Nej | Ja | Ja |
 | OleDb | Ja | Ja | Nej | Ja | Ja |
 | Oracle | Ja | Ja | Ja | Ja | Ja |
@@ -152,6 +152,8 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 <sup>5</sup> Understøttes kun med den [personlige gateway](service-gateway-personal-mode.md).
 
 <sup>6</sup> Kræves til HTML, XLS og Access-databaser
+
+<sup>7</sup> Power BI-tjenesten understøtter ikke OData-feeds, der kræver godkendelse.
 
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>Enkeltlogon til DirectQuery-kilder
 

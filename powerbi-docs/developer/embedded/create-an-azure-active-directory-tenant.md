@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/28/2019
-ms.openlocfilehash: c8c62709775bb269eb57b2f88c174f1dc4fd13ad
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: f592b7927d713e343f1d3ad11453cbbacc17fffd
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83794105"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354932"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Opret en Azure Active Directory-lejer, du kan bruge med Power BI
 
@@ -60,29 +60,29 @@ Nu, hvor vi har en mappe, skal vi oprette mindst to brugere. En har rollen Globa
 
 1. Kontrollér, at du er på udfoldningsfanen Azure Active Directory på Azure Portal.
 
-    ![](media/create-an-azure-active-directory-tenant/aad-flyout.png)
+    ![Azure AD-flyv ud](media/create-an-azure-active-directory-tenant/aad-flyout.png)
 
     Hvis det ikke er tilfældet, skal du vælge ikonet for Azure Active Directory i navigationen for tjenester til venstre.
 
-    ![](media/create-an-azure-active-directory-tenant/aad-service.png)
+    ![Azure AD-ikon](media/create-an-azure-active-directory-tenant/aad-service.png)
 
 2. Under **Administrer** skal du vælge **Brugere**.
 
-    ![](media/create-an-azure-active-directory-tenant/users-and-groups.png)
+    ![Azure AD-brugere og -grupper](media/create-an-azure-active-directory-tenant/users-and-groups.png)
 
 3. Vælg **Alle brugere**, og vælg derefter **+ ny bruger**.
 
 4. Angiv et **Navn** og **Brugernavn** for den Globale administrator for lejeren. Skift **Mapperollen** til **Global administrator**. Du kan også få vist den midlertidige adgangskode. Når du er færdig, skal du vælge **Opret**.
 
-    ![](media/create-an-azure-active-directory-tenant/global-admin.png)
+    ![Azure AD-global administrator](media/create-an-azure-active-directory-tenant/global-admin.png)
 
 5. Gør det samme for en almindelige bruger af lejeren. Du kan bruge denne konto til din overordnede integreringskonto. Lad **Mapperolle** være angivet som **Bruger** på nuværende tidspunkt. Angiv adgangskoden, og vælg derefter **Opret**.
 
-    ![](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
+    ![Azure AD-bruger](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
 
 6. Tilmeld dig Power BI med den konto, du oprettede under trin 5. Gå til [powerbi.com](https://powerbi.microsoft.com/get-started/), og vælg **Prøv gratis** under **Power BI – Cloudsamarbejde og deling**.
 
-    ![](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
+    ![opret lejer](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
 
     Når du tilmelder dig, bliver du spurgt, om du vil prøve Power BI Pro gratis i 60 dage. Det kan du vælge at gøre, så du kan blive Pro-bruger, hvilket giver dig mulighed for at [begynde at udvikle en integreret løsning](embed-sample-for-customers.md).
 

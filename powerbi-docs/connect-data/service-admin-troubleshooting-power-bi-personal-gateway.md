@@ -5,16 +5,16 @@ author: arthiriyer
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: troubleshooting
+ms.topic: how-to
 ms.date: 5/06/2019
 ms.author: arthii
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: da21acf2c37136b70bdb7ab70060422655ac879c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 108a50017a55a2ac87bb8db2adf4f92bd5dca58f
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83323867"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85231083"
 ---
 # <a name="troubleshooting-power-bi-gateway-personal-mode"></a>Fejlfinding af Power BI-gateway (personlig tilstand)
 
@@ -47,7 +47,7 @@ Der kan opstå mange problemer, hvis gatewayversionen er forældet. Det er gener
 ## <a name="schedule-refresh"></a>Planlæg opdatering
 **Fejl: De cloudlagrede legitimationsoplysninger mangler.**
 
-Du kan få vist denne fejl under indstillinger for \<datasæt\>, hvis du har en planlagt opdatering og derefter fjernet og geninstalleret gatewayen (personlig tilstand). Når du fjerner en gateway (personlig tilstand), så fjernes datakildens legitimationsoplysninger for et datasæt, som er konfigureret til opdatering, fra Power BI-tjenesten.
+Du kan få vist denne fejl under indstillinger for \<dataset\>, hvis du har en planlagt opdatering og derefter fjernet og geninstalleret gatewayen (personlig tilstand). Når du fjerner en gateway (personlig tilstand), så fjernes datakildens legitimationsoplysninger for et datasæt, som er konfigureret til opdatering, fra Power BI-tjenesten.
 
 **Løsning:** I Power BI skal du gå til opdateringsindstillingerne for et datasæt. Under **Administrer datakilder** skal du vælge **Rediger legitimationsoplysninger** for en hvilken som helst datakilde med fejl. Log derefter på datakilden igen.
 

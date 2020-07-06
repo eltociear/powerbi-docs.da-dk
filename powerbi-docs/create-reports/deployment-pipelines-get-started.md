@@ -3,16 +3,16 @@ title: Kom i gang med udrulningspipelines
 description: Få mere at vide om, hvordan du bruger udrulningspipelines i Power BI
 author: KesemSharabi
 ms.author: kesharab
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
-ms.openlocfilehash: 8dc0dc97e2b4bca7154ea0f13273ee2dbaee1b61
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 6e9ed3217a7ee589eaf1469ba179ef8c8bc474e9
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83272827"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354725"
 ---
 # <a name="get-started-with-deployment-pipelines-preview"></a>Kom i gang med udrulningspipelines (prøveversion)
 
@@ -84,7 +84,7 @@ Når udrulningen er fuldført, skal du opdatere datasættet. Du kan finde flere 
 
 Vælg den fase, der skal udrulles fra, og klik på udrulningsknappen. Installationsprocessen opretter et duplikeret arbejdsområde i destinationsfasen. Dette arbejdsområde indeholder alt det indhold, der findes i den aktuelle fase.
 
-[![](media/deployment-pipelines-get-started/deploy.png "Deploy all content")](media/deployment-pipelines-get-started/deploy.png#lightbox)
+[![udrul](media/deployment-pipelines-get-started/deploy.png "Udrul alt indhold")](media/deployment-pipelines-get-started/deploy.png#lightbox)
 
 ### <a name="selective-deployment"></a>Selektiv udrulning
 
@@ -92,7 +92,7 @@ Hvis du kun vil udrulle bestemte elementer, skal du klikke på linket **Vis mere
 
 Da dashboards, rapporter og datasæt er relateret og har afhængigheder, kan du bruge knappen Vælg relateret til at kontrollere alle de elementer, som disse elementer er afhængige af. Hvis du f.eks. vil udrulle en rapport til næste fase, markeres det datasæt, som rapporten er forbundet til, når du klikker på knappen Vælg relateret, så de begge vil blive udrullet på én gang, og rapporten ikke bliver brudt.
 
-[![](media/deployment-pipelines-get-started/selective-deploy.png "Selective deployment")](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
+[![selektiv udrulning](media/deployment-pipelines-get-started/selective-deploy.png "Selektiv udrulning")](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
 
 >[!NOTE]
 > * Du kan ikke udrulle en rapport eller et dashboard til næste fase, hvis de elementer, rapporten eller dashboardet er afhængig af, ikke findes i den fase, du udruller til.
@@ -104,7 +104,7 @@ Du kan vælge at udrulle til en tidligere fase, f.eks. i et scenarie, hvor du ti
 
 Udrulning til en tidligere fase fungerer kun, hvis den forrige fase er tom. Når du udruller til en tidligere fase, kan du ikke vælge bestemte elementer. Alt indhold i fasen vil blive udrullet.
 
-[![](media/deployment-pipelines-get-started/deploy-back.png "Backwards deployment")](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
+[![udrulning bagud](media/deployment-pipelines-get-started/deploy-back.png "Udrulning bagud")](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
 
 ## <a name="step-4---create-dataset-rules"></a>4\. trin – opret regler for datasæt
 
@@ -125,11 +125,11 @@ Regler for datasæt er defineret for datakilder og parametre i hvert datasæt. D
 
 2. Vælg det datasæt, du vil oprette en regel for, i ruden Udrulningsindstillinger.
 
-    [![](media/deployment-pipelines-get-started/dataset-rules.png "Select a dataset")](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
+    [![regler for datasæt](media/deployment-pipelines-get-started/dataset-rules.png "Vælg et datasæt")](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
 
 3. Vælg den type regel, du vil oprette, udvid listen, og klik på **Tilføj regel**.
 
-     [![](media/deployment-pipelines-get-started/add-rule.png "Add a rule")](media/deployment-pipelines-get-started/add-rule.png#lightbox)
+     [![tilføj regel](media/deployment-pipelines-get-started/add-rule.png "Tilføj en regel")](media/deployment-pipelines-get-started/add-rule.png#lightbox)
 
 ### <a name="dataset-rule-types"></a>Typer af datasætregler
 
@@ -154,15 +154,14 @@ Der er to typer regler, som du kan oprette:
 * Hvis den datakilde eller de parametre, der er defineret i en regel, ændres eller fjernes fra kildedatasættet, er reglen ikke gyldig, og udrulningen vil mislykkes.
 
 * Datakilderegler kan kun defineres for følgende datakilder:
-    * Analysis Services
-    * Azure SQL Server
     * Azure Analysis Services
+    * SSAS (SQL Server Analysis Services)
+    * Azure SQL Server
+    * SQL Server
     * OData-feed
     * Oracle
-    * SapHana
+    * SapHana (understøttes kun i importtilstand, ikke direkte forespørgselstilstand)
     * SharePoint
-    * SQL Server
-    * SSAS (SQL Server Analysis Services)
     * Teradata
 
     I forbindelse med andre datakilder anbefaler vi [at bruge parametre til at konfigurere din datakilde](deployment-pipelines-best-practices.md#use-parameters-in-your-model).
@@ -181,7 +180,7 @@ Udrulningstidspunktet er nyttigt til at fastslå, hvornår en fase senest blev o
 
 Når to sekventielle faser har indhold, sammenlignes indholdet på baggrund af metadata for indholdselementerne. Denne sammenligning omfatter ikke sammenligning af data eller opdateringstiden mellem faser.
 
- [![](media/deployment-pipelines-get-started/deployment-flow.png "Comparing stages")](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
+ [![udrulningsflow](media/deployment-pipelines-get-started/deployment-flow.png "Sammenligning af faser")](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
 
 Der vises et sammenligningsikon mellem to sekventielle faser, så det er muligt at få en hurtig visuel oversigt over forskellene. Sammenligningsindikatoren har to tilstande:
 
@@ -202,7 +201,7 @@ Når to sekventielle faser ikke er ens, vises der et link til **sammenligningen*
     >[!NOTE]
     >Udrulningen påvirker ikke elementer med mærkatet *Mangler i*.
 
- [![](media/deployment-pipelines-get-started/compare.png "Compare view")](media/deployment-pipelines-get-started/compare.png#lightbox)
+ [![sammenlign](media/deployment-pipelines-get-started/compare.png "Sammenligningsvisning")](media/deployment-pipelines-get-started/compare.png#lightbox)
 
 ## <a name="overriding-content"></a>Tilsidesættelse af indhold
 

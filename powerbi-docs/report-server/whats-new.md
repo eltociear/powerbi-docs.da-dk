@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/27/2020
-ms.openlocfilehash: ee725457475f1bccd593e2331d9e62c85ef08762
-ms.sourcegitcommit: 0d8261a3cdef05ed8d4eb2aaffff2c1cc2098624
+ms.openlocfilehash: 9cb9939f665dabc910c0605f4c1864f7d80988c3
+ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84126290"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "84739224"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 
@@ -215,7 +215,7 @@ Power BI-rapportserver understøtter nu gennemsigtig databasekryptering for kata
 
 #### <a name="power-bi-visuals-api"></a>Visualiserings-API i Power BI
 
-API-version 2.6 leveres med denne frigivelse.
+API-version 2.6.0 leveres med denne udgivelse.
 
 #### <a name="microsoft-report-builder-update"></a>Opdatering til Microsoft Report Builder
 
@@ -366,7 +366,7 @@ Understøttelse af disse funktioner i Power BI-rapporter:
 
 #### <a name="power-bi-visuals"></a>Power BI-visualiseringer
 
-- Med denne version leveres API-version 2.3.
+- API-version 2.3.0 leveres med denne udgivelse.
 
 ### <a name="administrator-settings"></a>Administratorindstillinger
 

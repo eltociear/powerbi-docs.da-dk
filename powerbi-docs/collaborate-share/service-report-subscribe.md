@@ -6,16 +6,16 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/15/2020
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: c43b0710c15fcc77a08aa789a92d840d2425f5ab
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: d7e1365ce1328e529d056a80b46230b97febc446
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84315942"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485662"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten
 
@@ -109,7 +109,7 @@ Power BI-administratorer kan bruge Power BI-overvågningslogge til at få vist o
 
 ### <a name="general"></a>Generelt
 
-- Dit abonnement påbegynder behandling på det tidspunkt, du angiver for abonnementet, ligesom med andre BI-produkter.  Når rapportbehandlingen er fuldført, sættes abonnementet i kø og sendes til modtagerne af mailen.  Vi bestræber os på at behandle og levere abonnementer så hurtigt som muligt. Men nogle gange ved spidsbelastningsperioder kan du opleve en længere forskydning på grund af det antal abonnementer, som Power BI kan sende på én gang. De fleste kunder bør ikke opleve en forskydning på mere end 15 minutter for behandling og afsendelse af rapporter. Det kan tage op til 30 minutter på bestemte tidspunkter og for bestemte lejere, der har markant forbrug.  Vi forventer aldrig nogen forskydning i forbindelse med levering på mere end 60 minutter fra det tidspunkt, som abonnementet er planlagt.  Hvis du oplever en så lang forskydning, skal du først sikre, at adressen `no-reply-powerbi@microsoft.com` er angivet på hvidlisten af din mailudbyder.  Hvis den er det, skal du kontakte Power BI-support for at få hjælp.
+- Dit abonnement påbegynder behandling på det tidspunkt, du angiver for abonnementet, ligesom med andre BI-produkter.  Når rapportbehandlingen er fuldført, sættes abonnementet i kø og sendes til modtagerne af mailen.  Vi bestræber os på at behandle og levere abonnementer så hurtigt som muligt. Men nogle gange ved spidsbelastningsperioder kan du opleve en længere forskydning på grund af det antal abonnementer, som Power BI kan sende på én gang. De fleste kunder bør ikke opleve en forskydning på mere end 15 minutter for behandling og afsendelse af rapporter. Det kan tage op til 30 minutter på bestemte tidspunkter og for bestemte lejere, der har markant forbrug.  Vi forventer aldrig nogen forskydning i forbindelse med levering på mere end 60 minutter fra det tidspunkt, som abonnementet er planlagt.  Hvis du oplever en så lang forskydning, skal du først sikre, at adressen `no-reply-powerbi@microsoft.com` er angivet på listen over sikre afsendere og ikke er blokeret af din mailudbyder.  Hvis mailen ikke er blokeret, skal du kontakte Power BI-support for at få hjælp.
 - Mailabonnementer for rapporter/dashboards, der bruger datasæt med direkte forbindelser, understøttes i øjeblikket ikke, når du abonnerer på brugere ud over dig selv, undtagen i forbindelse med sideinddelte rapporter. Du kan tilmelde andre til et abonnement på en sideinddelt rapport ved hjælp af din sikkerhedskontekst. Læs mere om at [abonnere på sideinddelte rapporter](../consumer/paginated-reports-subscriptions.md).
 - Power BI afbryder automatisk midlertidigt opdatering af datasæt, der er knyttet til dashboards og rapporter, som ikke er blevet besøgt i mere end to måneder. Men hvis du føjer et abonnement til et dashboard eller en rapport, afbrydes det ikke midlertidigt, selvom det ikke besøges.
 - Hvis du ikke modtager abonnementsmailene, skal du kontrollere, at din brugers hovednavn (UPN) kan modtage mails.
@@ -134,6 +134,7 @@ Power BI-administratorer kan bruge Power BI-overvågningslogge til at få vist o
 - Mailabonnementer understøtter ikke de fleste [brugerdefinerede visualiseringer](../developer/power-bi-custom-visuals.md). Den eneste undtagelse er de brugerdefinerede visuelle elementer, der er blevet [certificeret](../developer/power-bi-custom-visuals-certified.md).
 - Mailabonnementer understøtter ikke R-drevne brugerdefinerede visualiseringer på nuværende tidspunkt.
 - Mailabonnementer sendes med rapportens tilstande for standardfilter og -udsnit. Hvis du ændrer standardværdierne, efter du har oprettet abonnementet, vises de ikke i mailen. Sideinddelte rapporter understøtter denne egenskab og giver dig mulighed for at angive de specifikke parameterværdier pr. abonnement.
+- Lad os sige, at du har en rapport med en direkte forbindelse til Analysis Services, og du har det abonnementssæt, der skal køres, efter opdateringen af dataene. Det køres, første gang Power BI-tjenesten registrerer en ændring i modellen i det lokale miljø, når den forespørger Analysis Services-forekomsten.  Power BI kontrollerer hver time, om der er ændringer i Analysis Services-datamodellen for at bestemme, hvornår abonnementet skal sendes.
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -7,16 +7,16 @@ ms.reviewer: tessa
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/20/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b0fc91eab8c377f5571e66eb7baaf55234fafa97
-ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
+ms.openlocfilehash: f4d1bb58093ed3c78330370d5a44a3f98ee4aae7
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84337021"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238964"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Eksportér de data, der blev brugt til at oprette en visualisering
 
@@ -156,7 +156,7 @@ Når du vælger **Eksportér**, eksporterer Power BI dataene til en *.xlsx*-fil,
 
 ## <a name="customize-the-export-data-user-experience"></a>Tilpas brugeroplevelsen for eksport af data
 
-Brugere, der har fået adgang til en rapport, er **tildelt adgang til hele det underliggende datasæt**, medmindre [sikkerhed på rækkeniveau (RLS) (../admin/service-admin-rls.md) begrænser deres adgang. Rapportforfattere og Power BI-administratorer kan bruge de funktioner, der er beskrevet nedenfor, til at tilpasse brugeroplevelsen.
+Brugere, der har fået adgang til en rapport, bliver **tildelt adgang til hele det underliggende datasæt**, medmindre [sikkerhed på rækkeniveau (RLS)](../admin/service-admin-rls.md) begrænser deres adgang. Rapportforfattere og Power BI-administratorer kan bruge de funktioner, der er beskrevet nedenfor, til at tilpasse brugeroplevelsen.
 
 - Rapportforfattere [beslutter, hvilke *eksportindstillinger*](#set-the-export-options) der er tilgængelige for brugerne.  
 
@@ -171,7 +171,7 @@ Brugere, der har fået adgang til en rapport, er **tildelt adgang til hele det u
 
 ## <a name="protect-data-when-it-is-exported-out-of-power-bi"></a>Beskyt data, når de eksporteres fra Power BI
 
-- Rapportforfattere kan anvende [følsomhedsmærkater](../admin/service-security-data-protection-overview.md) til rapporter.  Disse mærkater bestemmer, hvem der har adgang til rapportdataene, og hvordan dataene eksporteres til Excel, PowerPoint og PDF. Visse følsomhedsniveauer omfatter beskyttelsesindstillinger (f.eks. tilladelser, kryptering), som anvendes, når dataene eksporteres. Hvis følsomhedsniveauet omfatter beskyttelsesindstillinger, anvendes disse indstillinger, når du eksporterer data til Excel, PowerPoint og PDF. Det er kun dem med de rette tilladelser, der kan eksportere, få vist, gemme og dele rapportdataene. 
+- Rapportforfattere kan klassificere og navngive rapporter ved hjælp af Microsoft Information Protection-[følsomhedsetiketter](../admin/service-security-data-protection-overview.md). Hvis følsomhedsetiketten har beskyttelsesindstillinger, anvender Power BI disse beskyttelsesindstillinger, når du eksporterer rapportdata til Excel-, PowerPoint-eller PDF-filer. Kun autoriserede brugere kan åbne beskyttede filer.
 
 - Sikkerheds- og Power BI-administratorer kan bruge [Microsoft Cloud App Security](../admin/service-security-data-protection-overview.md) til at overvåge brugeradgang og -aktivitet, udføre risikoanalyse i realtid og angive mærkatspecifikke kontrolelementer. Organisationer kan f.eks. bruge Microsoft Cloud App Security til at konfigurere en politik, der forhindrer brugere i at downloade følsomme data fra Power BI til enheder, der ikke administreres.
 

@@ -1,36 +1,36 @@
 ---
-title: URL-adresser til hvidliste for Power BI
-description: I denne artikel vises URL-slutpunkter og porte, der skal angives på en sikker liste ved oprettelse af forbindelse til Power BI.
+title: Føj Power BI URL-adresser til listen over tilladte
+description: I denne artikel vises URL-slutpunkter og porte, der skal angives på en liste over tilladte ved oprettelse af forbindelse til Power BI.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 06/25/2020
 ms.custom: seodec18
-ms.openlocfilehash: c3a3bd98dc65e3b73ffe04b95fa9001c90af1d53
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: 38e6668c0fb15d1279923b77042cdedebe6dd139
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84315919"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485064"
 ---
-# <a name="power-bi-urls-for-whitelisting"></a>URL-adresser til hvidliste for Power BI
-[//]: # "suparnap og miwehnia er kontakter til vedligeholdelse af listen"
+# <a name="add-power-bi-urls-to-your-allow-list"></a>Føj Power BI URL-adresser til listen over tilladte
+[//]: # "suparnap, miwehnia og natham er kontakter til vedligeholdelse af listen"
 
-**Power BI-onlinetjenesten**, som også kaldes Power BI SaaS (Software as a Service), kræver forbindelse til internettet. Slutpunkterne nedenfor skulle kunne nås af de kunder, der bruger Power BI-onlinetjenesten.
+Der skal bruges internetforbindelse til Power BI-tjenesten. De slutpunkter, der er angivet i tabellerne i denne artikel, skal være tilgængelige for kunder, der bruger Power BI-tjenesten.
 
-Hvis du vil bruge Power BI-onlinetjenesten, skal du kunne oprette forbindelse til de slutpunkter, der er markeret med **Påkrævet** i tabellen nedenfor, og de slutpunkter, som er markeret med **Påkrævet** på de websteder, der linkes til. Hvis linket til et eksternt websted refererer til en bestemt sektion, skal du kun se slutpunkterne i den sektion.
+Hvis du vil bruge Power BI-tjenesten, skal du kunne oprette forbindelse til de slutpunkter, der er markeret med **Påkrævet** i tabellen nedenfor, og de slutpunkter, som er markeret med **Påkrævet** på de websteder, der linkes til. Hvis linket til et eksternt websted refererer til en bestemt sektion, skal du kun se slutpunkterne i den sektion.
 
-De slutpunker, der er markeret med **Valgfrit**, kan også placeres på en **hvidliste** til bestemte funktioner.
+De slutpunker, der er markeret med **Valgfri**, kan også føjes til lister over tilladte til bestemte funktioner.
 
-Power BI-onlinetjenesten kræver kun, at TCP-port 443 er åben for de viste slutpunkter.
+Power BI-tjenesten kræver kun, at TCP-port 443 er åben for de viste slutpunkter.
 
-Stjernen (*) repræsenterer alle niveauer under roddomænet, og vi bruger I/T, når oplysningerne ikke er tilgængelige. I kolonnen **Destination(er)** vises en liste med FQDN/domæner og links til eksterne websteder, som indeholder yderligere oplysninger om slutpunkter.
+Stjernen (*) repræsenterer alle niveauer under roddomænet, og vi bruger I/T, når oplysningerne ikke er tilgængelige. I kolonnen **Destination(er)** vises en liste med domænenavne og links til eksterne websteder, som indeholder yderligere oplysninger om slutpunkter.
 
 >[!Important]
->Oplysningerne i tabellen nedenfor repræsenterer ikke **U.S. Government-clouden**, **Germany-clouden** og **China-clouden**.
+>Oplysningerne i nedenstående tabeller gælder ikke for Power BI Tyskland, Power BI Kina, der drives af 21Vianet eller Power BI til US Government. Læs [Opret forbindelse mellem Government-tjenester og globale Azure Cloud-tjenester](service-govus-overview.md#connect-government-and-global-azure-cloud-services) for at få mere at vide om kommunikation mellem cloudtjenester.
 
 ## <a name="authentication"></a>Godkendelse
 
@@ -51,7 +51,7 @@ Hvis du vil bruge Power BI, skal du kunne oprette forbindelse til slutpunkterne 
 | 3 | **Påkrævet:** Back-end-API'er | *.pbidedicated.windows.net | TCP 443 |
 | 4 | **Påkrævet:** CDN (Content Delivery Network) | content.powerapps.com | TCP 443 |
 | 5 | **Påkrævet:** Microsoft 365-integration | Se dokumentationen til [Almindelige URL-adresser til Microsoft 365 og Office Online](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | I/T |
-| 6 | **Påkrævet:** Portal | app.powerbi.com | TCP 443 |
+| 6 | **Påkrævet:** Portal | *.powerbi.com | TCP 443 |
 | 7 | **Påkrævet:** Tjenestetelemetri | dc.services.visualstudio.com | TCP 443 |
 | 8 | **Valgfrit:** Meddelelser til orientering | dynmsg.modpim.com | TCP 443 |
 | 9 | **Valgfrit:** NPS-undersøgelser | nps.onyx.azure.net | TCP 443 |
@@ -102,7 +102,7 @@ Power BI er afhængig af, at bestemte slutpunkter kan se og få adgang til Power
 
 ## <a name="related-external-sites"></a>Relaterede eksterne websteder
 
-Power BI-links til andre relaterede websteder. Disse websteder hoster dokumentation, support, forslag til nye funktioner og meget mere. Adgangen til disse websteder påvirker ikke Power BI's funktionalitet, så whitelisting er valgfrit.
+Power BI-links til andre relaterede websteder. Disse websteder hoster dokumentation, support, forslag til nye funktioner og meget mere. Adgangen til disse websteder påvirker ikke Power BI's funktionalitet, så det er valgfrit, om du vil føje dem til lister over tilladte.
 
 | Række | Formål | Destination(er) | Port(e) |
 | --- | --- | --- | --- |

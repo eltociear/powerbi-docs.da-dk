@@ -6,16 +6,16 @@ ms.author: owend
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
-ms.date: 03/26/2020
+ms.topic: how-to
+ms.date: 06/04/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 74ea78bf9f5e845eb86a38bad54ebde5e99ffbb0
-ms.sourcegitcommit: b66c913a50a5100082e1c8ff7cd1c4f76f514fe7
+ms.openlocfilehash: b327730db126ad3f83e0a680d8dc29f384e606fe
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "84219569"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85227424"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint-preview"></a>Netværksmulighed for datasæt med XMLA-slutpunktet (prøveversion)
 
@@ -169,7 +169,7 @@ De metadata, der er angivet via XMLA-slutpunktet, kan oprette forbindelse til da
 
 ### <a name="service-principals"></a>Tjenesteprincipaler
 
-Under den offentlige prøveversion understøttes oprettelse af forbindelse med XMLA-slutpunktet ved hjælp af en [tjenesteprincipal](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) i automatiseringsscenarier endnu ikke.
+Azure-tjenesteprincipaler kan bruges til at udføre automatiserede handlinger på ressource- og tjenesteniveau. Se [Automatiser opgaver for arbejdsområder og datasæt i Premium med tjenesteprincipaler](service-premium-service-principal.md), hvis du vil vide mere.
 
 ## <a name="deploy-model-projects-from-visual-studio-ssdt"></a>Udrul modelprojekter fra Visual Studio (SSDT)
 

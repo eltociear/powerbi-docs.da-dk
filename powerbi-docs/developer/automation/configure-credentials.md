@@ -6,18 +6,22 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
-ms.date: 02/23/2020
-ms.openlocfilehash: bd7758be32d18fd3be06a7847edc7795c2b5f9e1
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.topic: how-to
+ms.date: 06/23/2020
+ms.openlocfilehash: ed35775ac077be7c45807b950530e4e1277d5ac3
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114767"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85355001"
 ---
 # <a name="configure-credentials-programmatically-for-power-bi"></a>Konfigurer legitimationsoplysninger programmatisk for Power BI
 
-Følg disse trin for at konfigurere legitimationsoplysninger programmatisk for Power BI.
+Følg trinene i denne artikel for at konfigurere legitimationsoplysninger programmatisk for Power BI.
+
+>[!NOTE]
+>* Den kaldende bruger skal være ejer af datasættet eller en gateway-administrator. Du kan også bruge en [tjenesteprincipal](../embedded/embed-service-principal-certificate.md). Tjenesteprincipalen kan f.eks. være ejeren af datasættet.
+>* Clouddatakilder og deres tilhørende legitimationsoplysninger administreres på brugerniveau.
 
 ## <a name="update-credentials-flow-for-data-sources"></a>Opdater et flow for legitimationsoplysninger for datakilder
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 06/18/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 3dd50d4f57b3146135cde5e91062ed3b2a0eecc1
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 56ace35adf6a005c4370bf692d8851dc015688c0
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83128546"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782344"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Ofte stillede spørgsmål om høj tilgængelighed, failover og it-katastrofeberedskab i Power BI
 
@@ -38,7 +38,7 @@ Alle Power BI-tjenestekomponenter synkroniserer jævnligt deres sikkerhedskopier
 
 Sikkerhedskopier befinder sig inden for den samme geografiske placering (geo), som du valgte, da din organisation tilmeldte sig Power BI undtagen de undtagelser, der er nævnt i [Microsofts Center for sikkerhed og rettighedsadministration](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). En geografisk placering kan indeholde flere områder, og Microsoft kan replikere data til et hvilket som helst område inden for en bestemt geografisk placering for at sikre datarobusthed. Microsoft replikerer og flytter ikke kundedata uden for den geografiske placering. Du kan finde en kortoversigt over de geografiske placeringer, der tilbydes af Power BI, og områderne i dem i [Microsofts Center for sikkerhed og rettighedsadministration](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location).
 
-## <a name="how-does-microsoft-decide-to-failover"></a>Hvordan beslutter Microsoft sig for at udføre failover?
+## <a name="how-does-microsoft-decide-to-fail-over"></a>Hvordan beslutter Microsoft sig for at udføre failover?
 
 Der er to forskellige systemer, som angiver, hvornår en failover kan være nødvendig:
 
@@ -57,6 +57,9 @@ Det tager ca. 15 minutter for Power BI at komme op og køre igen, når programme
 
 Når en failover udføres, bruger Power BI Azure Storage GEO-replikering til at udføre failover. Sådanne replikeringer har normalt et returpunkt på 15 minutter, men [Azure Storage garanterer ikke denne tidsramme](https://docs.microsoft.com/azure/storage/common/storage-redundancy) med en SLA, og Power BI kan derfor heller ikke garantere en tidsramme. 
 
+## <a name="what-happens-to-workspaces-and-reports-if-my-premium-capacity-becomes-unavailable"></a>Hvad sker der med arbejdsområder og rapporter, hvis min Premium-kapacitet bliver utilgængelig? 
+
+Hvis en Premium-kapacitet bliver utilgængelig, forbliver arbejdsområder og rapporter tilgængelige og synlige for alle Power BI Pro-licenserede brugere, der tidligere har fået adgang til dem.
 
 ## <a name="when-does-my-power-bi-instance-return-to-the-original-region"></a>Hvornår vender min Power BI-forekomst tilbage til det oprindelige område?
 

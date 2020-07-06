@@ -1,17 +1,17 @@
 ---
 title: Læringskatalog til rapportoprettere
 description: Find alle træningsmuligheder til Power BI
-author: loreleishannonmsft
+author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: v-lshann
-ms.openlocfilehash: f318aa59f33a9993b31787fcb3e0036286616608
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.author: margoc
+ms.openlocfilehash: ed36d045047215babb092eb074156c950af9d16f
+ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81268805"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84532275"
 ---
 # <a name="report-creator-learning-catalog"></a>Læringskatalog til rapportoprettere
 
@@ -39,7 +39,8 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra gru
 ## <a name="report-design"></a>Rapportdesign<a name="report-design"></a>
 | Indhold | Beskrivelse  | Formatér | Længde   |
 |-------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------|
-| [Historiefortælling om data med Power BI ved Tristan Malherbe](https://www.youtube.com/watch?v=egk0suekwHo)  | Historiefortælling om data med Power BI ved Tristan Malherbe  | YouTube-video | 59 min. 54 sek.    |
+|[Onlinekursus: Sideinddelt Power BI på én dag](paginated-reports-online-course.md)|Et videobaseret kursus, der har til formål at gøre dig i stand til at skrive rapporter med den tekniske viden, der kræves for at oprette, udgive og distribuere sideinddelte Power BI-rapporter. Vi anbefaler, at du ser videoerne i den indspillede sekvens, der starter med video 1 og slutter med video 24.|YouTube-afspilningsliste og selvstudiepakke|4 t. 20 min.|
+| [Historiefortælling om data med Power BI ved Tristan Malherbe](https://www.youtube.com/watch?v=egk0suekwHo) (webinaret er på engelsk)  | Historiefortælling om data med Power BI ved Tristan Malherbe  | YouTube-video | 59 min. 54 sek.    |
 | [Tip, tricks og værktøjer fra ejerne af PowerBI.Tips](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-Tricks-Tips-and-Tools-from-the-owners-of-PowerBI-Tips/td-p/382848)(webinaret er på engelsk) | Tip, tricks og værktøjer fra ejerne af PowerBI.Tips. I denne meget specielle brugergruppe møder du ejerne af PowerBI.Tips og Power BI MVP'er, Seth Baur og Mike Carlo, der deler ud af deres store viden med tricks, tip og værktøjer, de har publiceret til http://PowerBI.Tips inden for de seneste 18 måneder. Demoerne omfatter deres temagenerator, tilføjelse af datatyper i forespørgselseditoren og deres seneste Power BI-layouts (og en præsentation af deres seneste layout "Cool blå").  | Webinar       | 1 t. 7 min. 4 sek. |
 | [Webinar fra 11-09-2018: Nye værktøjer og nye skabeloner, herunder en gennemgang af, hvad der er ændret i farven](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/9-11-18-Webinar-New-tools-and-new-templates-including-a/td-p/480220) | Deltag i dette webinar med Charles Sterling og grundlæggerne af PowerBI.Tips og Microsoft MVP'er, Seth Baur og Mike Carlo, der deler ud af deres store viden med tricks, tip og værktøjer, de har publiceret til https://PowerBI.Tips inden for de seneste 6 måneder. Demoerne indeholder deres seneste temagenerator, tip og tricks samt de seneste Power BI-layout.  | Webinar       | 53 min. 34 sek.    |
 | [Power BI: Udfør analyse korrekt](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_02OnDemandRegistration-ForminBody.html)  | Hør efter alle analyse- og Excel-visionære: Få mere at vide om, hvordan du laver flotte rapporter, som folk gerne vil bruge, deler interessant indsigt, der er let at forstå, og nedbryder siloer med komplekse data på en sikker måde, så de bliver tilgængelige. Vi deler nye produktinnovationer og vores vision om moderne virksomheds-BI og selvbetjenings-BI, hvilket gør det muligt for din organisation at skabe en datadreven kultur.  | Webinar       |                |

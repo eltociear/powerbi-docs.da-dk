@@ -6,16 +6,16 @@ ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7e3a9d6db1b7f51f02f3dbc94da1d6b35eac3222
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 1e0fdf11eab5ea264e78363984ff49bbc95660d8
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348890"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354311"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Fastgør et felt til et Power BI-dashboard fra en rapport
 
@@ -57,6 +57,11 @@ Nu skal du oprette dit eget dashboard ved hjælp af en af Power BI-eksempelrappo
 En anden mulighed er at fastgøre en hel rapportside til et dashboard, som er en nem måde at fastgøre mere end én visualisering ad gangen på. Når du fastgør en hel side, er felterne *dynamiske*. Det vil sige, at du kan interagere med dem på dashboardet. De ændringer, du foretager på visualiseringer i rapporteditoren, f.eks. ved at tilføje et filter eller ændre de felter, der bruges i diagrammet, afspejles også i dashboardfeltet.  
 
 Du kan få mere at vide under [Fastgør en hel rapportside](service-dashboard-pin-live-tile-from-report.md).
+
+> [!NOTE]
+> Nogle formateringsindstillinger anvendes ikke på visuelle elementer, når de er fastgjort til et dashboard. Indstillinger for kant, skygge og baggrund vil blive ignoreret i den fastgjorte del. For kortvisualiseringer vises den tekst, der bruges til værdien, altid i dashboards ved hjælp af skrifttypefamilien 'DIN'. 
+> 
+>
 
 ## <a name="next-steps"></a>Næste trin
 - [Dashboards til brugere af Power BI-tjenesten](../consumer/end-user-dashboards.md)

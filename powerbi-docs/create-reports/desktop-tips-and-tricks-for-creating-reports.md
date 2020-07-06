@@ -6,15 +6,15 @@ ms.reviewer: willthom
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/07/2020
 ms.author: davidi
-ms.openlocfilehash: e7e7c0f8df0f41d673920cf4af596ca33d46519c
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: ae9a3695c8db084d9c65871314edfef34cde1cb6
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564569"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238474"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips og tricks til oprettelse af rapporter i Power BI Desktop
 For at få mest muligt ud af dine data skal du nogle gange have lidt ekstra hjælp. Vi har samlet nogle tip og tricks, som du kan bruge, når du opretter rapporter i Microsoft Power BI Desktop *og* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-udgaver, hvor tilføjelsesprogrammet Power Pivot er aktiveret, og Power-forespørgsel er installeret og aktiveret. 
@@ -99,13 +99,13 @@ Sidste trin er oprettelse af histogrammet. Træk feltet Bucket fra tabellen "Buc
 ## <a name="histograms"></a>Histogrammer
 I Power BI Desktop kan du bruge et beregnet felt til at definere et histogram. Identificer den tabel og den kolonne, som du vil oprette et histogram for. I beregningsområdet skal du skrive følgende formel:
 
-> Frequency:=COUNTROWS(\<Column Name\>)
+> Hyppighed:=COUNTROWS(\<Column Name\>)
 > 
 > 
 
-Gem dine ændringer, og vend tilbage til din rapport. Føj \<Kolonnenavn\> og Frekvens til en tabel, og konvertér den derefter til et liggende søjlediagram. Sørg for, at \<Kolonnenavn\> er på x-aksen, og at det beregnede felt Frekvens er på y-aksen.
+Gem dine ændringer, og vend tilbage til din rapport. Føj \<Column Name\> og Frekvens til en tabel, og konvertér den derefter til et liggende søjlediagram. Sørg for, at \<Column Name\> er på x-aksen, og at det beregnede felt Frekvens er på y-aksen.
 
-## <a name="tips-and-tricks-for-creating-relationships-in-power-bi-desktop"></a>Tips og tricks til oprettelse af relationer i Power BI Desktop
+## <a name="tips-and-tricks-for-creating-relationships-in-power-bi-desktop"></a>Tip og gode råd til oprettelse af relationer i Power BI Desktop
 Når du indlæser detaljedata fra flere kilder, vil problemer som null-værdier, tomme værdier eller dubletværdier ofte forhindre dig i at oprette relationer. 
 
 Lad os tage et kig på et eksempel: 

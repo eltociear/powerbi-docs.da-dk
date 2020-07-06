@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 05/06/2020
-ms.openlocfilehash: c4a823b0b41def6c10cd8f932bb97e91eb977ecb
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.date: 06/25/2020
+ms.openlocfilehash: fc7e6aa751bab6562e097b8ce14ff8416e6231e7
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83148615"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782568"
 ---
 # <a name="understand-the-deployment-process-preview"></a>Om udrulningsprocessen (prøveversion)
 
@@ -60,7 +60,7 @@ I destinationsfasen forbliver [elementegenskaber, der ikke kopieres](deployment-
 
 Data i destinationsdatasættet bevares, når det er muligt. Hvis der ikke er nogen ændringer af et datasæt, bevares dataene, som de var før udrulningen.
 
-Power BI bevarer de oprindelige data med små ændringer, f.eks. tilføjelse af en tabel eller beregnede målinger, og opdateringen er optimeret til kun at opdatere det, der er nødvendigt. En fuld opdatering er påkrævet for at ændre skemaændringer eller ændre datakildeforbindelsen.
+Power BI bevarer de oprindelige data med små ændringer, f.eks. tilføjelse af en tabel eller målinger, og opdateringen er optimeret til kun at opdatere det, der er nødvendigt. En fuld opdatering er påkrævet for at ændre skemaændringer eller ændre datakildeforbindelsen.
 
 ### <a name="requirements-for-deploying-to-a-stage-with-an-existing-workspace"></a>Krav til at udrulle til en fase med et eksisterende arbejdsområde
 
@@ -152,11 +152,11 @@ Følgende datasætegenskaber kopieres ikke under udrulningen:
 
 Opret en app for hver enkel fase i udrulningspipelinen, så du kan teste hver appopdatering fra slutbrugerens synspunkt. Med en udrulningspipeline kan du nemt administrere denne proces. Brug knappen Publicer eller Vis på arbejdsområdekortet til at publicere eller få vist appen i en bestemt pipelinefase.
 
-[![](media/deployment-pipelines-process/publish.png "Publish app")](media/deployment-pipelines-process/publish.png#lightbox)
+[![publicer app](media/deployment-pipelines-process/publish.png "Publicer app")](media/deployment-pipelines-process/publish.png#lightbox)
 
 I produktionsfasen åbner den primære handlingsknap i nederste venstre hjørne siden til opdatering af appen i Power BI, så alle indholdsopdateringer bliver tilgængelige for brugerne af appen.
 
-[![](media/deployment-pipelines-process/update-app.png "Update app")](media/deployment-pipelines-process/update-app.png#lightbox)
+[![opdater app](media/deployment-pipelines-process/update-app.png "Opdater app")](media/deployment-pipelines-process/update-app.png#lightbox)
 
 >[!IMPORTANT]
 >Udrulningsprocessen omfatter ikke opdatering af appindholdet eller -indstillingerne. Hvis du vil anvende ændringer på indhold eller indstillinger, skal du manuelt opdatere appen i den påkrævede pipelinefase.
@@ -236,13 +236,23 @@ I dette afsnit vises de fleste af begrænsningerne i udrulningspipelines.
 
 * Power BI-elementer som f.eks. rapporter og dashboards, der har Power BI-[følsomhedsmærkater](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi), kan ikke udrulles.
 
-* Datasæt, der er konfigureret med [trinvis opdatering](../admin/service-premium-incremental-refresh.md), kan ikke udrulles.
+* Det maksimale antal Power BI-elementer, der kan udrulles i en enkelt installation, er 300.
 
 * Du kan finde en liste over begrænsninger for arbejdsområdet under [begrænsninger for tildeling af arbejdsområder](deployment-pipelines-get-started.md#workspace-assignment-limitations).
 
-* Du kan se en liste over begrænsninger for datasætregler i [begrænsninger for datasætregler](deployment-pipelines-get-started.md#dataset-rule-limitations)
-
 * Du kan finde en liste over elementer, der ikke understøttes, under [elementer, der ikke understøttes](#unsupported-items).
+
+### <a name="dataset-limitations"></a>Begrænsninger for datasæt
+
+* Datasæt, der er konfigureret med [trinvis opdatering](../admin/service-premium-incremental-refresh.md), kan ikke udrulles.
+
+* Datasæt, der bruger dataforbindelser i realtid, kan ikke udrulles.
+
+* Hvis måldatasættet bruger en [direkte forbindelse](../connect-data/desktop-report-lifecycle-datasets.md) under udrulningen, skal kildedatasættet også bruge denne forbindelsestilstand.
+
+* Efter udrulningen understøttes hentning af et datasæt (fra den fase, det er udrullet til) ikke.
+
+* Du kan se en liste over begrænsninger for datasætregler i [begrænsninger for datasætregler](deployment-pipelines-get-started.md#dataset-rule-limitations).
 
 ## <a name="next-steps"></a>Næste trin
 
