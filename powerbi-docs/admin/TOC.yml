@@ -76,10 +76,12 @@
           href: desktop-admin-sign-in-form.md
         - name: Databeskyttelse
           items:
-            - name: Oversigt over databeskyttelse
-              href: service-security-data-protection-overview.md
-            - name: Aktivér markering af datafølsomhed
+            - name: Følsomhedsmærkater i Power BI
+              href: service-security-sensitivity-label-overview.md
+            - name: Aktivér følsomhedsmærkning
               href: service-security-enable-data-sensitivity-labels.md
+            - name: Sådan anvender du følsomhedsmærkater
+              href: service-security-apply-data-sensitivity-labels.md
             - name: Brug Microsoft Cloud App Security med Power BI
               href: service-security-using-microsoft-cloud-app-security-controls.md
             - name: Rapport over databeskyttelsesmålepunkter
