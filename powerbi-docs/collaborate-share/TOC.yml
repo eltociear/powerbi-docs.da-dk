@@ -38,7 +38,7 @@
             - name: Effektanalyse af datasæt
               href: service-dataset-impact-analysis.md
             - name: Anvend datafølsomhedsmærkater
-              href: ../collaborate-share/service-security-apply-data-sensitivity-labels.md
+              href: ../admin/service-security-apply-data-sensitivity-labels.md
             - name: Opret forbindelse til filer på din gruppes OneDrive
               href: ../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md
             - name: Samarbejd i et klassisk arbejdsområde
