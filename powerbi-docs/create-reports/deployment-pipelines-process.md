@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 06/25/2020
-ms.openlocfilehash: fc7e6aa751bab6562e097b8ce14ff8416e6231e7
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: eee8d67caab4a3d7b888396fa62debaf0aab2490
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782568"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034284"
 ---
 # <a name="understand-the-deployment-process-preview"></a>Om udrulningsprocessen (prøveversion)
 
@@ -234,7 +234,7 @@ I dette afsnit vises de fleste af begrænsningerne i udrulningspipelines.
 
 * Arbejdsområdet skal være placeret i en [Premium-kapacitet](../admin/service-premium-what-is.md).
 
-* Power BI-elementer som f.eks. rapporter og dashboards, der har Power BI-[følsomhedsmærkater](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi), kan ikke udrulles.
+* Power BI-elementer som f.eks. rapporter og dashboards, der har Power BI-[følsomhedsmærkater](../admin/service-security-sensitivity-label-overview.md), kan ikke udrulles.
 
 * Det maksimale antal Power BI-elementer, der kan udrulles i en enkelt installation, er 300.
 
