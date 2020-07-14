@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: 59400f05544efa9f4ffcca6ef3ebdf1b12423d33
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 6e006bc858ad9d82073ced7929c87920da6559ab
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564380"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034154"
 ---
 # <a name="power-bi-security"></a>Power BI-sikkerhed
 
@@ -28,11 +28,11 @@ Hver installation af Power BI består af to klynger – en Web Front End (**WFE*
 
 **WFE**-klyngen administrerer den indledende forbindelses- og godkendelsesproces for Power BI ved hjælp af AAD for at godkende klienter og angive tokens for efterfølgende klientforbindelser til Power BI-tjenesten. Power BI bruger også **Azure Traffic Manager** (ATM) til at dirigere brugertrafik til det nærmeste datacenter, der bestemmes af DNS-posten for den klient, der forsøger at oprette forbindelse, for godkendelsesprocessen og til at downloade statisk indhold og filer. Power BI bruger **Azure Content Delivery Network** (CDN) til effektivt at distribuere det nødvendige statiske indhold og filerne til brugere baseret på geografisk placering.
 
-![](media/service-admin-power-bi-security/pbi_security_v2_wfe.png)
+![Diagram, der viser Power BI-arkitekturen for webfrontend-klyngen.](media/service-admin-power-bi-security/pbi_security_v2_wfe.png)
 
 **Back-End**-klyngen styrer, hvordan godkendte klienter interagerer med Power BI-tjenesten. **Back-End**-klyngen styrer visualiseringer, brugerdashboards, datasæt, rapporter, lagring af data, dataforbindelser, dataopdatering og andre aspekter, når du interagerer med Power BI-tjenesten. **Gatewayrollen** fungerer som en gateway mellem brugeranmodninger og Power BI-tjenesten. Brugere interagerer ikke direkte med nogen roller bortset fra **gatewayrollen**. **Azure API Management** vil til sidst håndtere **gatewayrollen**.
 
-![](media/service-admin-power-bi-security/pbi_security_v2_backend_updated.png)
+![Diagram, der viser Power BI-arkitekturen for webbackend-klyngen.](media/service-admin-power-bi-security/pbi_security_v2_backend_updated.png)
 
 > [!IMPORTANT]
 > Det er vigtigt at bemærke, at kun rollerne **Azure API Management** (APIM) og **Gateway** (GW) er tilgængelige via det offentlige internet. De leverer godkendelse, autorisation, DDoS-beskyttelse, begrænsning (throttling), justering af belastning, routing og andre funktioner.

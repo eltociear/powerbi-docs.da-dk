@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
-ms.openlocfilehash: cfb5e4f1f75437db6235ece0d8661bab3f008649
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: b719dc72d9137ac1c3ffc3eee4669ad6bd61fc9f
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83148429"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034238"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Få vist dine data offline i Power BI-mobilapps
 Gælder for:
@@ -36,13 +36,16 @@ Selvom du er offline, kan du få adgang til at interagere med de dashboards, du 
 
 Du har også skrivebeskyttet adgang til alle de Power BI-rapporter, du tidligere har brugt i mobilappen. Du kan se hele rapporten, men du kan ikke filtrere, krydsfiltrere, sortere eller bruge afsnit i den.
 
+>[!NOTE]
+> Rapporter, der er baseret på DirectQuery, cachelagres ikke og er ikke tilgængelige offline.
+
 ## <a name="background-data-refresh"></a>Opdatering af data i baggrunden
 Dine favoritdashboards og de dashboards og rapporter, du har brugt inden for de seneste to uger, opdateres i baggrunden med dataene i Power BI-tjenesten (ikke datakilden). Hvis du har oprettet forbindelse til Wi-Fi, sker opdateringen i baggrunden hver anden time. Hvis du er på et 3G-netværk, opdateres indholdet i Power BI en gang for hver 24 timer.
 
 Du kan slå opdatering i baggrunden fra, f.eks. hvis du vil undgå netværksbrug. Kontrollér indstillingerne på din enhed.
 
 > [!NOTE]
-> Hvis du bruger Power BI-mobilappen på en iOS-enhed, og din organisation har konfigureret Microsoft Intune MAM, er opdateringen af data i baggrunden slået fra. Næste gang du åbner appen, opdaterer Power BI dataene fra Power BI-tjenesten på internettet.
+> Hvis du bruger Power BI-mobilappen på en iOS-enhed, og din organisation har konfigureret Microsoft Intune MAM, er opdateringen af data i baggrunden slået fra. Næste gang du bruger appen, vil Power BI opdatere dataene fra Power BI-tjenesten på internettet.
 > 
 > Læs mere om at [konfigurere Power BI-mobilapps med Microsoft Intune](../../admin/service-admin-mobile-intune.md). 
 > 
@@ -61,7 +64,7 @@ Når du er offline med Power BI på din mobilenhed, kan du komme ud for følgend
 * I Power BI-mobilapps kan du ikke kan se Power BI Desktop (.pbix)-filer, der er gemt i Power BI Report Server. 
 * Sideinddelte rapporter (RDL) er ikke tilgængelige, når netværket er offline.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 Din feedback hjælper os med at afgøre, hvad der skal implementeres fremover, så husk at stemme på andre funktioner, du gerne vil se i Power BI-mobilapps. 
 
 * [Power BI-apps til mobilenheder](mobile-apps-for-mobile-devices.md)

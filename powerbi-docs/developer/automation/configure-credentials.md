@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/23/2020
-ms.openlocfilehash: ed35775ac077be7c45807b950530e4e1277d5ac3
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: dd85f44057c0e4069a903293ec162028b1cbd66e
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85355001"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034054"
 ---
 # <a name="configure-credentials-programmatically-for-power-bi"></a>Konfigurer legitimationsoplysninger programmatisk for Power BI
 
@@ -49,13 +49,16 @@ Følg trinene i denne artikel for at konfigurere legitimationsoplysninger progra
 
     ---
 
-2. Foretag et kald til [Hent gateway](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) for at hente den offentlige nøgle til gatewayen.
+    >[!NOTE]
+    >Hvis du bruger clouddatakilder, skal du ikke følge de næste trin i dette afsnit. Angiv legitimationsoplysningerne ved hjælp af det gateway-id og datakilde-id, der blev hentet i trin 1, ved at kalde [Opdater datakilde](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource). 
+
+3. Foretag et kald til [Hent gateway](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) for at hente den offentlige nøgle til gatewayen.
 
     ```csharp
     var gateway = pbiClient.Gateways.GetGatewayById(datasource.GatewayId);
     ```
 
-3. Kryptér legitimationsoplysningerne.
+4. Kryptér legitimationsoplysningerne.
 
     # <a name="net-sdk-v3"></a>[.NET SDK v3](#tab/sdk3)
 
@@ -73,7 +76,7 @@ Følg trinene i denne artikel for at konfigurere legitimationsoplysninger progra
 
     ---  
 
-4. Opret detaljer for legitimationsoplysningerne med krypterede legitimationsoplysninger.
+5. Opret detaljer for legitimationsoplysningerne med krypterede legitimationsoplysninger.
 
     # <a name="net-sdk-v3"></a>[.NET SDK v3](#tab/sdk3)
 
@@ -101,7 +104,7 @@ Følg trinene i denne artikel for at konfigurere legitimationsoplysninger progra
 
     ---
 
-5. Foretag et kald til [Opdater datakilde](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) for at angive legitimationsoplysningerne.
+6. Foretag et kald til [Opdater datakilde](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) for at angive legitimationsoplysningerne.
 
     ```csharp
     pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);

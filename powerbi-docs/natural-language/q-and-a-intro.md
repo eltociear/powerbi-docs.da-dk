@@ -5,20 +5,20 @@ author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 07/01/2020
 ms.author: mohaali
-ms.openlocfilehash: 139c9cb31ecbb6853228c0d362b61d5a74debac5
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 295fc7732729fc464676257ab63dcadfa967771b
+ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867777"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939654"
 ---
 # <a name="intro-to-power-bi-qa"></a>Introduktion til Spørgsmål og svar i Power BI
 
-Den hurtigste måde at få et svar ud af dine data på er nogle gange at udføre en søgning i dine data ved hjælp af et naturligt sprog. Funktionen Spørgsmål og svar i Power BI giver dig mulighed for at udforske dine data med dine egne ord ved hjælp af et naturligt sprog. Funktionen Spørgsmål og svar er interaktiv, ja endda sjov. Ofte fører ét spørgsmål til andre, da visualiseringerne viser interessante stier, der skal udforskes. At stille spørgsmålet er kun begyndelsen. Gå på opdagelse i dine data, mens du stiller detaljerede eller generelle spørgsmål, finder nye oplysninger, fokuserer på detaljer eller zoomer ud for at få et større overblik. Oplevelsen er interaktiv og hurtig og drives af et lager i hukommelsen. 
+Den hurtigste måde at få et svar ud af dine data på er nogle gange at udføre en søgning i dine data ved hjælp af et naturligt sprog. Funktionen Spørgsmål og svar i Power BI giver dig mulighed for at udforske dine data med dine egne ord ved hjælp af et naturligt sprog. Funktionen Spørgsmål og svar er interaktiv, ja tilmed sjov. Ofte fører ét spørgsmål til flere, da visualiseringerne afslører interessante stier, der skal udforskes. At stille spørgsmålet er kun begyndelsen. Gå på opdagelse i dine data, mens du stiller detaljerede eller generelle spørgsmål, finder nye oplysninger, fokuserer på detaljer eller zoomer ud for at få et større overblik. Oplevelsen er interaktiv og hurtig og drives af et lager i hukommelsen. 
 
-Spørgsmål og svar i Power BI er gratis og tilgængelig til alle brugere. I Power BI Desktop kan rapportdesignere bruge Spørgsmål og svar til at udforske data og oprette visualiseringer. I Power BI-tjenesten kan alle udforske deres data med Spørgsmål og svar. Hvis du har tilladelse til at redigere et dashboard eller en rapport, kan du også fastgøre resultaterne fra Spørgsmål og svar.
+Spørgsmål og svar i Power BI er gratis og tilgængelig til alle brugere. I Power BI Desktop kan rapportdesignere bruge Spørgsmål og svar til at udforske data og oprette visualiseringer. I Power BI-tjenesten kan alle udforske deres data med Spørgsmål og svar. Vores mobilapps understøtter også Spørgsmål og svar med den virtuelle assistent til Spørgsmål og svar i iOS og en visualisering til Spørgsmål og svar på Android-enheder. Hvis du har tilladelse til at redigere et dashboard eller en rapport, kan du også fastgøre resultaterne fra Spørgsmål og svar.
 
 ## <a name="how-to-use-qa"></a>Sådan bruger du Spørgsmål og svar
 
@@ -97,7 +97,7 @@ Som standard er Spørgsmål og svar tilgængelig øverst på dashboards. Hvis du
 
 ![Dashboard med Spørgsmål og svar](media/qna-dashboard.png)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan integrere et naturligt sprog i dine rapporter på flere forskellige måder. Du kan finde flere oplysninger i disse artikler:
 

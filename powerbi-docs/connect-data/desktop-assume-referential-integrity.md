@@ -1,5 +1,5 @@
 ---
-title: Antag indstillingen referenceintegritet i Power BI Desktop
+title: Indstillingen Antag referentiel integritet i Power BI Desktop
 description: Via DirectQuery kan du lære, hvordan du kan få Power BI Desktop til at antage referentiel integritet
 author: davidiseminger
 ms.reviewer: ''
@@ -9,19 +9,19 @@ ms.topic: how-to
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f8f5e39d320ca0135665977e740fd1dedecb988b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c0a7ef3ef7ce62ca1939791c3dcf198428f1353c
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224851"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034353"
 ---
 # <a name="apply-the-assume-referential-integrity-setting-in-power-bi-desktop"></a>Anvend indstillingen Antag referentiel integritet i Power BI Desktop
 Når der oprettes forbindelse til en datakilde, der bruger **DirectQuery**, kan du bruge indstillingen **Antag referentiel integritet** for at gøre det muligt at køre mere effektive forespørgsler i forhold til datakilden. Denne funktion har et par krav til de underliggende data, og den er kun tilgængelig, når du bruger **DirectQuery**.
 
 Hvis du angiver **Antag referentiel integritet**, kan forespørgsler til datakilden bruge **INNER JOIN**-sætninger i stedet **OUTER JOIN**, hvilket betyder, at forespørgslen bliver mere effektiv.
 
-![](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
+![Skærmbillede af dialogboksen Rediger relation til valg af Antag referentiel integritet.](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
 
 ## <a name="requirements-for-using-assume-referential-integrity"></a>Kravene til brug af Antag referentiel integritet
 Det er en avanceret indstilling, og den er kun aktiveret, når der oprettes forbindelse til data ved hjælp af **DirectQuery**. Følgende krav er nødvendige, for at **Antag referentiel integritet** kan fungere korrekt:
@@ -36,18 +36,18 @@ I følgende eksempel vises, hvordan **Antag referentiel integritet** fungerer, n
 
 1. På følgende billede, der viser tabellen **Orders** og tabellen **Products**, skal du lægge mærke til, at der findes en referentiel integritet mellem **Orders[ProductID]** og **Products[ProductID]** . Kolonnen **[ProductID]** i tabellen **Orders** er aldrig *Null*, og alle værdier vises også i tabellen **Products**. Derfor skal **Antag referentiel integritet**  angives for at få mere effektive forespørgsler (brug af denne indstilling ændrer ikke de værdier, der vises i visuelle elementer).
    
-   ![](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
-2. På næste billede kan du se, at der ikke findes referentiel integritet mellem tabellen **Orders[DepotID]** og **Depots[DepotID]** , fordi **DepotID** er *Null* for nogle *Orders*. Derfor skal **Antag referentiel integritet***ikke* angives.
+   ![Skærmbillede af tabellen Orders og tabellen Products.](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
+2. På næste billede kan du se, at der ikke findes referentiel integritet mellem tabellen **Orders[DepotID]** og **Depots[DepotID]** , fordi **DepotID** er *Null* for nogle *Orders*. Derfor skal **Antag referentiel integritet** *ikke* angives.
    
-   ![](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
-3. Endelig findes der ingen referentiel integritet mellem **Orders[CustomerID]** og **Customers[CustID]** i følgende tabeller. **CustomerID** indeholder nogle værdier (i dette tilfælde *CustX*), der ikke findes i tabellen *Customers*. Derfor skal **Antag referentiel integritet***ikke* angives.
+   ![Skærmbillede af tabellen Orders og tabellen Products.](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
+3. Endelig findes der ingen referentiel integritet mellem **Orders[CustomerID]** og **Customers[CustID]** i følgende tabeller. **CustomerID** indeholder nogle værdier (i dette tilfælde *CustX*), der ikke findes i tabellen *Customers*. Derfor skal **Antag referentiel integritet** *ikke* angives.
    
-   ![](media/desktop-assume-referential-integrity/assume-referential-integrity_4.png)
+   ![Skærmbillede af tabellen Orders og tabellen Customers.](media/desktop-assume-referential-integrity/assume-referential-integrity_4.png)
 
 ## <a name="setting-assume-referential-integrity"></a>Angiv Antag referentiel integritet
 Hvis du vil aktivere denne funktion, skal du markere afkrydsningsfeltet ud for **Antag referentiel integritet** som vist på følgende billede.
 
-![](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
+![Skærmbillede af dialogboksen Rediger relation, der giver dig mulighed for at vælge Antag referentiel integritet.](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
 
 Når indstillingen er valgt, valideres den i forhold til dataene for at sikre, at der ikke er *Null*-værdier eller uoverensstemmende rækker. *Men* i forbindelse med et meget stort antal værdier er valideringen ingen garanti for, at der ikke er problemer med referentiel integritet.
 
@@ -59,7 +59,7 @@ Hvis du angiver **Antag referentiel integritet**, når der er problemer med refe
 * Et visuelt element, der viser totalen for *Order Qty*, viser en værdi på 40
 * Et visuelt element, der viser totalen for *Order Qty by Depot City*, viser en samlet værdi på kun *30*, fordi det ikke omfatter Order ID 1, hvor **DepotID** er *Null* .
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 Få mere at vide om [DirectQuery](desktop-use-directquery.md)
 
 Få mere at vide om [relationer i Power BI](../transform-model/desktop-create-and-manage-relationships.md)

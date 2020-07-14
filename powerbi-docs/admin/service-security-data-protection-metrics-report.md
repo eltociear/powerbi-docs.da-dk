@@ -9,17 +9,17 @@ ms.topic: how-to
 ms.date: 06/15/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 759957b6412f4835aaf170fcebb7fd2beac4e234
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0452dabef54cc899abf7a6cbbd6ab718bf22524e
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227168"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034307"
 ---
 # <a name="data-protection-metrics-report"></a>Rapport over databeskyttelsesmålepunkter
 
 ## <a name="what-is-the-data-protection-metrics-report"></a>Hvad er rapporten over databeskyttelsesmålepunkter?
-Rapporten over databeskyttelsesmålepunkter er en dedikeret rapport, som [Power BI-administratorer](../service-admin-role.md) kan bruge til at overvåge og registrere brug og anvendelse af datafølsomhedsmærkater i deres lejer.
+Rapporten over databeskyttelsesmålepunkter er en dedikeret rapport, som [Power BI-administratorer](../service-admin-role.md) kan bruge til at overvåge og registrere brug og anvendelse af følsomhedsmærkater i deres lejer.
 
 ![Rapport over databeskyttelsesmålepunkter](./media/service-security-data-protection-metrics-report/protection-metrics-seven-days-1.png)
  
@@ -47,13 +47,13 @@ Første gang du åbner rapporten over databeskyttelsesmålepunkter, kan det tage
 
 Forbedrede versioner af rapporten over databeskyttelsesmålepunkter frigives regelmæssigt. Når du åbner rapporten, bliver du spurgt, om du vil åbne den nye version, hvis der er en ny version tilgængelig. Hvis du siger "ja", vil den nye version af rapporten blive indlæst og overskrive den gamle version. Eventuelle ændringer, du har foretaget i den gamle rapport og/eller det pågældende datasæt, går tabt. Du kan vælge ikke at åbne den nye version, men i så fald kan du ikke drage fordel af den nye versions forbedringer. 
 ## <a name="notes-and-considerations"></a>Noter og overvejelser
-* Hvis rapporten over databeskyttelsesmålepunkter skal genereres, skal [Information Protection](./service-security-enable-data-sensitivity-labels.md) være aktiveret på din lejer, og [følsomhedsmærkater skal være blevet anvendt](../collaborate-share/service-security-apply-data-sensitivity-labels.md). 
+* Hvis rapporten over databeskyttelsesmålepunkter skal genereres, skal [Information Protection](./service-security-enable-data-sensitivity-labels.md) være aktiveret på din lejer, og [følsomhedsmærkater skal være blevet anvendt](./service-security-apply-data-sensitivity-labels.md). 
 * For at få adgang til Cloud App Security-oplysninger skal din organisation have den relevante [Cloud App Security-licens](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls#microsoft-cloud-app-security-licensing).
 * Hvis du beslutter at dele oplysninger fra rapporten over databeskyttelsesmålepunkter med en bruger, der ikke er Power BI-administrator, skal du være opmærksom på, at denne rapport indeholder følsomme oplysninger om din organisation.
 * Rapporten over databeskyttelsesmålepunkter er en speciel type rapport og vises ikke på listerne "Delt med mig", "Seneste" og "Favoritter".
 * Rapporten over databeskyttelsesmålepunkter er ikke tilgængelig for [eksterne brugere (Azure Active Directory B2B-gæstebrugere)](../service-admin-azure-ad-b2b.md).
 ## <a name="next-steps"></a>Næste trin
-* [Databeskyttelse i Power BI](./service-security-data-protection-overview.md)
+* [Følsomhedsmærkater i Power BI](./service-security-sensitivity-label-overview.md)
 * [Brug af Microsoft Cloud App Security-kontrolelementer i Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
 * [Om rollen Power BI-tjenesteadministrator](service-admin-role.md)
-* [Aktivér datafølsomhedsmærkater i Power BI](service-security-enable-data-sensitivity-labels.md)
+* [Aktivér følsomhedsmærkater i Power BI](service-security-enable-data-sensitivity-labels.md)

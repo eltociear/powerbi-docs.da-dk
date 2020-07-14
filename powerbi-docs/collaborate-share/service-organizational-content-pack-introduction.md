@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ace3b89051ee5f7b082979f2739cef71ceb05440
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 84ecbb51663629b663373b884af86329f49e974f
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225746"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034468"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion til organisationsindholdspakker i Power BI
 > [!NOTE]
@@ -23,7 +23,7 @@ ms.locfileid: "85225746"
 
 Distribuerer du jævnligt rapporter via mail til dit team? Prøv dette i stedet: Lav en pakke med dine dashboards, rapporter, Excel-projektmapper og datasæt, og publicer dem for dit team som en *organisationsindholdspakke*. Indholdspakker, du opretter, er nemme for dit team at finde &#151; de findes alle sammen i AppSource. Da de er en del af Power BI, udnytter de alle funktionerne i Power BI, herunder interaktiv udforskning af data, nye visuals, spørgsmål og svar, integration med andre datakilder, opdatering af data med mere.
 
-![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
+![Skærmbillede af et dashboard, der viser organisationsindholdspakker.](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 
 Oprettelse af indholdspakker adskiller sig fra deling af dashboards eller samarbejde om dem i et arbejdsområde. Læs [Hvordan kan jeg samarbejde på og dele dashboards og rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) for at finde det bedste valg til din situation. 
 

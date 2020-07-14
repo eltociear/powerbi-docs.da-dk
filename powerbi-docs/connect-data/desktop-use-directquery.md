@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/07/2020
+ms.date: 07/02/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fcf774af00fe65c5f9708f85f6270cda8405896f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4083304a13b75df900e25204b54f62368be43e70
+ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222560"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939498"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Brug DirectQuery i Power BI Desktop
 Når du opretter forbindelse til din datakilde i *Power BI Desktop*, er det altid muligt at importere en kopi af dataene til Power BI Desktop. For nogle datakilder findes der en anden mulighed: Du kan oprette direkte forbindelse til datakilden med DirectQuery.
@@ -53,7 +53,7 @@ Der er i øjeblikket nogle få begrænsninger ved at bruge DirectQuery:
 
 - Der er pålagt begrænsninger på de DAX-udtryk, der er tilladt i målinger, for at sikre, at de forespørgsler, der sendes til den underliggende datakilde, har en acceptabel ydeevne.
 
-- Der er en grænse på én million rækker for returnering af data, når du bruger DirectQuery, medmindre du bruger en Premium-kapacitet. Denne grænse påvirker ikke de sammenlægninger eller beregninger, der bruges til at oprette det datasæt, der returneres ved hjælp af DirectQuery. Det påvirker kun de returnerede rækker. Premium-kapaciteter kan angive maksimale grænser for rækker, som beskrevet i [dette indlæg](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/). 
+- Der er en begrænsning på 1.000.000 rækker for cloudkilder, hvor datakilder i det lokale miljø er begrænset til en defineret nyttelast på ca. 4 MB pr. række (afhængigt af en privat komprimeringsalgoritme) eller en datastørrelse på 16 MB for hele visualiseringen. Nogle af grænserne kan blive hævet, når der anvendes en Premium-kapacitet. Denne grænse påvirker ikke de sammenlægninger eller beregninger, der bruges til at oprette det datasæt, der returneres ved hjælp af DirectQuery. Det påvirker kun de returnerede rækker. Premium-kapaciteter kan angive maksimale grænser for rækker, som beskrevet i [dette indlæg](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/). 
 
     Du kan f.eks. samle 10 mio. rækker med din forespørgsel, der kører på datakilden. Forespørgslen returnerer præcist resultaterne af denne sammenlægning til Power BI ved hjælp af DirectQuery, hvis de returnerede Power BI-data er mindre end 1 mio. rækker. Hvis der returneres mere end 1 millioner rækker fra DirectQuery, returnerer Power BI en fejl (medmindre det er en Premium-kapacitet, og rækkeantallet er under den grænse, som administratoren har angivet).
 

@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/27/2020
-ms.openlocfilehash: 9cb9939f665dabc910c0605f4c1864f7d80988c3
-ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
+ms.date: 07/06/2020
+ms.openlocfilehash: b6f2775d9aa23899a1e27ed58b818024129043b7
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84739224"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034031"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 
@@ -28,9 +28,11 @@ Du kan finde relaterede oplysninger om nyheder i Power BI under:
 
 ## <a name="may-2020"></a>Maj 2020
 
+### <a name="power-bi-desktop-optimized-for-power-bi-report-server"></a>Power BI Desktop optimeret til Power BI-rapportserver
+
 Blandt de fremhævede elementer i denne opdatering er de hierarkiske udsnitsværktøjer og visualiseringer med opdelingstræ og forespørgselsdiagnosticering. Det følgende er en komplet liste over nye og opdaterede funktioner. Du kan finde flere oplysninger i [Blogindlægget om Power BI-rapportserver fra maj 2020](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2020-feature-summary/). 
 
-### <a name="reporting"></a>Rapportering
+#### <a name="reporting"></a>Rapportering
 
 - Hierarkisk udsnitsværktøj
 - Nye handlingstyper for knapper:
@@ -51,7 +53,7 @@ Blandt de fremhævede elementer i denne opdatering er de hierarkiske udsnitsvær
     - Ny oplevelse af filterruden
     - Filterrudesøgning
     
-### <a name="modeling"></a>Modellering
+#### <a name="modeling"></a>Modellering
 
 - Nye DAX-funktioner:
 
@@ -61,18 +63,24 @@ Blandt de fremhævede elementer i denne opdatering er de hierarkiske udsnitsvær
 
 - Standard DAX-separatorer
 
-### <a name="visualizations"></a>Visualiseringer
+#### <a name="visualizations"></a>Visualiseringer
 
 - Nye visualiseringsikoner
 - Visuelle baggrundsskygger
 
-### <a name="data-preparation"></a>Dataforberedelse
+#### <a name="data-preparation"></a>Dataforberedelse
 
 - Forespørgselsdiagnosticering
 
-### <a name="other"></a>Andet
+#### <a name="other"></a>Andet
 
 - Brug af systemets standardlegitimationsoplysninger for webproxy
+
+### <a name="power-bi-report-server"></a>Power BI-rapportserver
+
+#### <a name="power-bi-visuals-api"></a>Visualiserings-API i Power BI
+
+API-version 3.2 leveres med denne udgivelse.
 
 ## <a name="january-2020"></a>Januar 2020
 

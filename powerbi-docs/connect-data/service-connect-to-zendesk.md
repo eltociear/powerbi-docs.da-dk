@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6cac39407cac3af833656a4e94edf9a3c80bbc26
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e32824a58faa3a6a98e4d38f7362c62ab13b069e
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85231621"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034445"
 ---
 # <a name="connect-to-zendesk-with-power-bi"></a>Opret forbindelse til Zendesk med Power BI
 
@@ -28,6 +28,9 @@ Når du har installeret skabelonappen, kan du ændre dashboardet og rapporten. D
 
 >[!NOTE]
 >Du skal bruge en Zendesk-administratorkonto for at oprette forbindelse. Der er flere oplysninger om [kravene](#system-requirements) nedenfor.
+
+>[!WARNING]
+>Før den 15. oktober 2019 tillod Zendesk Support Search-API modtagelsen af 200.000 resultater i alt via sideinddeling af store forespørgsler. For at justere søgeforbruget med det tilsigtede omfang begrænser Zendesk nu det maksimale antal resultater, der returneres, til 1.000 resultater i alt, med et maksimum på 100 resultater pr. side. Den aktuelle Power BI Zendesk-connector kan dog stadig oprette API-kald, der overskrider disse nye grænser, hvilket resulterer i potentielt misvisende resultater.
 
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
 

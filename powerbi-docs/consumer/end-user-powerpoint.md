@@ -7,19 +7,19 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 05/12/2020
+ms.date: 07/01/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: d1120b15974d0e747dc60cf2c56dff1135c9d29c
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 85dc7e9807e11114c4fb6abb988d10c583b9e56c
+ms.sourcegitcommit: 7d7bb755d5a5af30d2b0eab89fb56e4498514890
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782529"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85837033"
 ---
 # <a name="export-reports-to-powerpoint"></a>Eksportér rapporter til PowerPoint
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 
 Med Power BI-tjenesten (app.powerbi.com) kan du publicere din rapport i Microsoft PowerPoint og nemt oprette et slidesæt ud fra din Power BI-rapport. Når du eksporterer til PowerPoint, sker der følgende:
@@ -40,7 +40,7 @@ Vælg en rapport i **Power BI-tjenesten** for at få den vist på lærredet. Du 
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Når den rapport, du vil eksportere til PowerPoint, vises på lærredet, skal du vælge **Eksportér** > **PowerPoint** på menulinjen.
+Når den rapport, du vil eksportere til PowerPoint, vises på lærredet, skal du vælge **Fil** > **Eksportér > PowerPoint** på menulinjen.
 
 ![Vælg Eksportér på menulinjen](media/end-user-powerpoint/power-bi-export.png)
 
@@ -86,6 +86,10 @@ Hvad du herefter gør med dit PowerPoint-slidesæt eller nogen af billederne i h
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbejder med funktionen **Eksportér til PowerPoint**.
  
+
+* Hvis du ikke kan se indstillingen **Eksportér**, skal du sikre, at du har aktiveret det nye udseende, og at du får vist en rapport (ikke et dashboard).
+
+    ![Skærmbillede af det nye udseende, der kan slås til/fra](media/end-user-powerpoint/power-bi-new-look.png)
 
 * Filtre for [URL-adresser](../collaborate-share/service-url-filters.md) respekteres ikke i øjeblikket, når du vælger **Aktuelle værdier** til din eksport.
 

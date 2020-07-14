@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3857478e972caef0a53c1de82f6dcc96650a7386
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d741a489c5655e5a08f49f7197389a67c5d016ed
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225689"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034399"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Administrer, opdater og slet organisationsindholdspakker
 > [!NOTE]
@@ -40,12 +40,12 @@ Når du foretager og gemmer en ændring af det dashboard, som du inkluderede i e
 
 1. Vælg **Se indholdspakker** i meddelelsen.
    
-   ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkchangesmessage.png)
-2. Eller vælg tandhjulsikonet i øverste højre hjørne ![](media/service-organizational-content-pack-manage-update-delete/cog.png), og vælg **Se indholdspakke**.
+   ![Skærmbillede af en meddelelsesdialogboks til valg af Se indholdspakker.](media/service-organizational-content-pack-manage-update-delete/pbi_contpkchangesmessage.png)
+2. Eller vælg tandhjulsikonet i øverste højre hjørne ![skærmbillede af tandhjulsikonet](media/service-organizational-content-pack-manage-update-delete/cog.png), og vælg **Se indholdspakke**.
    
-   ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkview.png)
+   ![Skærmbillede af tandhjulsikonet i det øverste højre hjørne.](media/service-organizational-content-pack-manage-update-delete/pbi_contpkview.png)
    
-   Bemærk advarselsikonet ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkwarningicon.png).  Dette ikon fortæller dig, at du har ændret indholdspakken på en eller anden måde, og den svarer ikke længere til det, du har udgivet.
+   Bemærk advarselsikonet ![Skærmbillede af advarselsikon.](media/service-organizational-content-pack-manage-update-delete/pbi_contpkwarningicon.png).  Dette ikon fortæller dig, at du har ændret indholdspakken på en eller anden måde, og den svarer ikke længere til det, du har udgivet.
 3. Vælg **Rediger**.  
 4. Foretag de nødvendige ændringer i vinduet **Opdater indholdspakke**, og vælg **Opdater**. Meddelelsen **Udført** vises.
    
@@ -55,7 +55,7 @@ Når du foretager og gemmer en ændring af det dashboard, som du inkluderede i e
 ## <a name="update-the-audience-expand-or-restrict-access"></a>Opdater målgruppen: Udvid eller begræns adgangen
 En anden ændring, der er tilgængelig for oprettere af indholdspakker, er at udvide og begrænse adgang til indholdspakken.  Du har måske publiceret en indholdspakke til en bred målgruppe, og du har besluttet dig for at begrænse adgangen til en mindre gruppe.  
 
-1. Vælg tandhjulsikonet ![](media/service-organizational-content-pack-manage-update-delete/cog.png), og vælg **Se Indholdspakker**.
+1. Vælg tandhjulsikonet ![skærmbillede af tandhjulsikon](media/service-organizational-content-pack-manage-update-delete/cog.png), og vælg **Se indholdspakker**.
 2. Vælg **Rediger**. 
 3. Foretag de nødvendige ændringer i vinduet **Opdater indholdspakke**, og vælg **Opdater**. Du kan f.eks. slette den oprindelige distributionsgruppe i feltet **Bestemte grupper** og erstatte den med en anden distributionsgruppe (der har færre medlemmer).
    
@@ -77,7 +77,7 @@ Du kan kun slette en indholdspakke fra AppSource, hvis du har oprettet den. Hvis
 > 
 > 
 
-1. Hvis du vil slette en indholdspakke fra AppSource, skal du gå til det arbejdsområde, hvor du oprettede indholdspakken, vælge tandhjulsikonet ![](media/service-organizational-content-pack-manage-update-delete/cog.png) og vælge **Se indholdspakker**.
+1. Hvis du vil slette en indholdspakke fra AppSource, skal du gå til det arbejdsområde, hvor du oprettede indholdspakken, vælge tandhjulsikonet ![skærmbillede af tandhjulsikon](media/service-organizational-content-pack-manage-update-delete/cog.png) og vælge **Se indholdspakker**.
 2. Vælg **Slet \> Slet**. 
    
    * For gruppemedlemmer, som ikke har tilpasset indholdspakken, fjernes de dashboards og rapporter, der er knyttet til denne indholdspakke, automatisk. De er ikke længere tilgængelige, og indholdspakken vises ikke i navigationsruden.

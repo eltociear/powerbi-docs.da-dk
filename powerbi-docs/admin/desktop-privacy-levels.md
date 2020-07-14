@@ -9,19 +9,19 @@ ms.topic: reference
 ms.date: 09/09/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c6c3ccdc547a8e9fb4e2d471365c9da67f7cf58a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 19189529637fe5511ebd6f736c17b8a10a1d2ef9
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83130264"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86033778"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Niveauer for beskyttelse af personlige oplysninger i Power BI Desktop
 I **Power BI Desktop** angiver niveauerne for beskyttelse af personlige oplysninger et isolationsniveau, der definerer, i hvilket omfang én datakilde isoleres fra andre datakilder. Et begrænsende isolationsniveau blokerer oplysninger, så de ikke udveksles mellem datakilder, men det kan reducere funktionaliteten og have indflydelse på ydeevnen.
 
 Indstillingen **Niveauer for beskyttelse af personlige oplysninger**, der findes i **Filer > Indstillinger > Indstillinger** og derefter **Aktuel fil > Beskyttelse af personlige oplysninger** bestemmer, om Power BI Desktop bruger din indstilling for beskyttelse af personlige oplysninger, når data kombineres. Denne dialogboks indeholder et link til Power BI Desktop-dokumentationen om niveauer for beskyttelse af personlige oplysninger (denne artikel).
 
-![](media/desktop-privacy-levels/desktop_privacylevels1.png)
+![Skærmbillede af dialogboksen Indstillinger.](media/desktop-privacy-levels/desktop_privacylevels1.png)
 
 ## <a name="configure-a-privacy-level"></a>Konfigurer et niveau for beskyttelse af personlige oplysninger
 Ved hjælp af indstillinger for niveauerne for beskyttelse af personlige oplysninger kan du angive et isolationsniveau, der definerer, i hvilket omfang én datakilde skal isoleres fra andre datakilder.
@@ -37,7 +37,7 @@ Dialogboksen med indstillinger for **beskyttelse af personlige oplysninger** for
 
 Hvis du vil konfigurere niveauet for beskyttelse af personlige oplysninger for en datakilde, skal du vælge datakilden og derefter vælge **Rediger**. Dialogboksen **Indstillinger for datakilde** vises, og her kan du vælge det relevante niveau for beskyttelse af personlige oplysninger i menuen nederst i dialogboksen, som vist på følgende billede.
 
-![](media/desktop-privacy-levels/desktop_privacylevels2.png)
+![Skærmbillede af dialogboksen Indstillinger for datakilde.](media/desktop-privacy-levels/desktop_privacylevels2.png)
 
 > [!CAUTION]
 > Du skal konfigurere en datakilde, der indeholder meget følsomme eller fortrolige data, som **Privat**.

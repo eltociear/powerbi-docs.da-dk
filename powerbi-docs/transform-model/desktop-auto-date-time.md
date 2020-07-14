@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ae8121af4e3c16e7e8dd047284034fc95d0403fd
-ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
+ms.openlocfilehash: 0c62e423bdf357a5eee4ef5b03daa7ec145310e7
+ms.sourcegitcommit: 20cfd157af587b3910a2b6deec9518dca4105d71
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85393812"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85943056"
 ---
 # <a name="apply-auto-datetime-in-power-bi-desktop"></a>Anvend automatisk dato/klokkeslæt i Power BI Desktop
 
@@ -61,7 +61,7 @@ Når der findes en tabel med automatisk dato/klokkeslæt for en datokolonne (og 
 
 Det oprettede hierarki til automatisk dato/klokkeslæt kan bruges til at konfigurere en visualisering på præcis samme måde, som almindelige hierarkier kan bruges. Du kan enten konfigurere visualiseringer ved at bruge hele hierarkiet **Datohierarki** eller specifikke niveauer i hierarkiet.
 
-Der er dog tilføjet én funktion, der ikke understøttes af almindelige hierarkier. Når hierarkiet for automatisk dato/klokkeslæt – eller et niveau fra hierarkiet – føjes til et visuelt element, kan rapportens forfattere skifte mellem at bruge hierarkiet og datokolonnen. Denne fremgangsmåde giver mening for nogle visuals, når det eneste, de har brug for, er datokolonnen, ikke hierarkiet og dets niveauer. De starter med at konfigurere visualfeltet (højreklik på visualfeltet, eller klik på pil ned) og bruger derefter genvejsmenuen til at skifte mellem datokolonnen og datohierarkiet.
+Der er dog tilføjet én funktion, der ikke understøttes af almindelige hierarkier. Når hierarkiet for automatisk dato/klokkeslæt – eller et niveau fra hierarkiet – føjes til en visualisering, kan rapportens forfattere skifte mellem at bruge hierarkiet og datokolonnen. Denne fremgangsmåde giver mening for nogle visuals, når det eneste, de har brug for, er datokolonnen, ikke hierarkiet og dets niveauer. De starter med at konfigurere visualfeltet (højreklik på visualfeltet, eller klik på pil ned) og bruger derefter genvejsmenuen til at skifte mellem datokolonnen og datohierarkiet.
 
 ![Eksempel på konfiguration af et felt for et visuelt element til hierarkiet OrderDate. I genvejsmenuen Åbn vises to indstillinger, der gør det muligt at skifte mellem brugen af kolonnen OrderDate og datohierarkiet.](media/desktop-auto-date-time/auto-date-time-configure-visuals-fields.png)
 

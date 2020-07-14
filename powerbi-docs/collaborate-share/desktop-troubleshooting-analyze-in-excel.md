@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: how-to
+ms.topic: troubleshooting
 ms.date: 05/27/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: e1162ecfb9eee7d1a0bfaf5a7ef25244ec8935c0
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3c36a2725748e2c701c65f1737c39f4d56128962
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226812"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034376"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Fejlfinding af Analysér i Excel
 
@@ -45,22 +45,22 @@ Excel-biblioteker skal stemme overens med din version af Windows i forhold til b
 
 Hvis du vil downloade de nyeste Excel-biblioteker, skal du gå til Power BI og vælge **pil ned** i øverste højre hjørne af Power BI-tjenesten og derefter vælge **Analysér i Excel-opdateringer**.
 
-![](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_1.png)
+![Skærmbillede af pil ned-rullemenuen i øverste højre hjørne for at vælge Analysér i Excel-opdateringer.](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_1.png)
 
 I dialogboksen, der vises, skal du vælge **Hent (eksempelvisning)** .
 
-![](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_2.png)
+![Skærmbillede af dialogboksen Analysér i Excel-opdateringer for at vælge download eller knappen Vis udskrift.](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_2.png)
 
 ## <a name="determining-whether-you-need-to-update-your-excel-libraries"></a>Find ud af, om du skal opdatere dine Excel-biblioteker
 Du kan hente den nyeste version af Excel OLE DB-providerbibliotekerne fra linksene i det forrige afsnit. Når du downloader det rette OLE DB-providerbibliotek og starter installationen, udføres der nogle kontroller i forhold til den aktuelt installerede version.
 
 Hvis klientbibliotekerne til Excel OLE DB-provideren er opdateret, får du vist en dialogboks, der ser sådan ud:
 
-![](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
+![Skærmbillede af dialoglogs, hvor du bliver spurgt, om du vil opdatere, hvis der findes en nyere version af klientbiblioteket for Excel OLE DB-providere.](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
 
 Eller hvis den nye version, du er ved at installere, er nyere end versionen på din computer, vises følgende dialogboks:
 
-![](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_2.png)
+![Skærmbillede af dialogboks for at bekræfte en opgradering under installationen af klientbiblioteker til Excel OLE DB-providere.](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_2.png)
 
 Hvis du ser dialogboksen, hvor du bliver bedt om at opgradere, skal du fortsætte med installationen for at få den nyeste version af OLE DB-provideren installeret på computeren.
 

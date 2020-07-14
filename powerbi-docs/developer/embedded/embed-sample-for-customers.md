@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 06/02/2020
-ms.openlocfilehash: 75b880876a08a78d822fc1203de40a7bb8311afe
-ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
+ms.openlocfilehash: bb693b1b46e193a87365537492c83aa2eb8a479a
+ms.sourcegitcommit: b2c60781da6f756102f91346b35a7651fb5dcda3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84337067"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86092233"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Selvstudium: Integrer Power BI-indhold i en app til dine kunder
 
@@ -428,9 +428,12 @@ I nedenstående tabel beskrives ressourcerne og begrænsningerne for hver SKU. H
 
 ### <a name="development-testing"></a>Udviklingstest
 
-Brug af integreringstokens med en Pro-licens er beregnet til udviklingstest, så antallet af integreringstokens, der kan genereres af en Power BI-masterkonto eller -tjenesteprincipal, er begrænset. En dedikeret kapacitet kræver integrering i et produktionsmiljø. Der er ingen grænse for, hvor mange integreringstokens du kan generere med en dedikeret kapacitet. Gå til [Tilgængelige funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) for at undersøge den brugsværdi, der angiver brugen af integrerede tokens i procent. Forbrugsbeløbet er baseret på overordnet konto.
+I forbindelse med udviklingstest kan du bruge integrerede prøveversionstokens med en Pro-licens. Brug en dedikeret kapacitet for at integrere i et produktionsmiljø.
 
-Du kan finde flere oplysninger i [Whitepaper om kapacitetsplanlægning af integreret analyse](https://aka.ms/pbiewhitepaper).
+Det antal prøveversionstokens til integrering, som en Power BI-tjenesteprincipal eller hovedkonto kan generere, er begrænset. Brug API'en [Tilgængelige funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) til at kontrollere procentdelen af dit aktuelle integrerede forbrug. Forbrugsmængden vises pr. tjenesteprincipal eller hovedkonto.
+
+Hvis du løber tør for integreringstokens under test, skal du købe en Power BI Embedded- eller Premium-[kapacitet](embedded-capacity.md). Der er ingen grænse for, hvor mange integreringstokens du kan generere med en dedikeret kapacitet.
+
 
 ### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Tildel et arbejdsområde til en dedikeret kapacitet
 
