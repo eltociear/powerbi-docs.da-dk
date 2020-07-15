@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: a2e7445db843788293a20fbbebdffd2952dfeb6a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e1925c57869a58f111b77c6a50a1289224440ecb
+ms.sourcegitcommit: 01b5fb05f723eab2557e0e420bfde23197987a96
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226210"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86300993"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Integrer en rapport på en sikker portal eller et websted
 
@@ -122,8 +122,6 @@ Du kan tilføje lige så mange knapper, du vil, og på den måde skabe en bruger
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
 * Sideinddelte rapporter understøttes med sikre integrerede scenarier, og sideinddelte rapporter med URL-parametre understøttes også. Du kan læse mere om [at overføre rapportparametre i en URL-adresse for en sideinddelt rapport](../paginated-reports/report-builder-url-pass-parameters.md).
-
-* Understøtter ikke eksterne gæstebrugere med Azure business-to-business (B2B).
 
 * Sikker integration fungerer for rapporter, der er publiceret til Power BI-tjenesten.
 

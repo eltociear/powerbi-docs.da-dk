@@ -2,19 +2,19 @@
 title: Vis de data, der blev brugt til at oprette visualiseringen
 description: I dette dokument forklares det, hvordan Power BI-forbrugere kan "få vist" de data, der bruges til at oprette en visualisering.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 04/28/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6363c369f3ed30ee136d8e043c12c1546b184ef9
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 55f60facc281b49d4dc5e05fa1dbf157227d9374
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238707"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264236"
 ---
 # <a name="show-data-with-power-bi-reports"></a>Vis data med Power BI-rapporter
 

@@ -33,6 +33,10 @@
               href: service-self-service-signup-for-power-bi.md
             - name: Funktioner efter licenstype
               href: service-features-license-type.md
+            - name: Få hjælp til at købe Power BI Pro
+              href: service-self-service-purchase-help.md
+            - name: Få hjælp til at tilmelde dig Power BI
+              href: service-self-service-sign-up-help.md
     - name: Vejledninger
       items:
         - name: Hent Power BI Desktop
