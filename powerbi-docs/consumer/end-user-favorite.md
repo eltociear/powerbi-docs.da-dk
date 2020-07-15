@@ -2,7 +2,7 @@
 title: Favoritter i Power BI-tjenesten (dashboards, rapporter og apps)
 description: Dokumentation om, hvordan du angiver dashboards, rapporter og apps som favoritter i Power BI-tjenesten
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 03/09/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 961020bc1e4296274e9929f663b30bcea60e12b9
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: cf63f7e00c134abb6feed38f1b1000e35932a5c6
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220672"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216063"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-the-power-bi-service"></a>Favoritdashboards, -rapporter og -apps i Power BI-tjenesten
 

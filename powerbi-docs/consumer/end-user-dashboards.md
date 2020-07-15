@@ -2,19 +2,19 @@
 title: Hvad er et dashboard, og hvordan åbner jeg det?
 description: Et dashboard er en vigtig funktion i Power BI-tjenesten.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 06/19/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 64fa13f3e95f43813c657eb9be195fb03e57a06b
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 5f8b2fd4c999853e09852e69406968cad2fb9490
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354909"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216155"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Dashboards til brugere af Power BI-tjenesten
 

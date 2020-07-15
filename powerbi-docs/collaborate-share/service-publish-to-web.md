@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 02/25/2020
+ms.date: 07/08/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5e7fe8a7c71927a1e89bd4e86209c580ae1f3b29
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 26c27c8cd33929c7bb83a8ef5b1faed0fb12e502
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225673"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216551"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -29,10 +29,6 @@ Med indstillingen **Publicer på internettet** i Power BI kan du nemt integrere 
 ## <a name="create-embed-codes-with-publish-to-web"></a>Opret integreringskoder med Publicer på internettet
 
 **Publicer på internettet** er tilgængelig for rapporter, som du kan redigere i dine personlige arbejdsområder eller gruppearbejdsområder.  Indstillingen er ikke tilgængelig for rapporter, der er delt med dig, eller dem, der bruger sikkerhed på rækkeniveau til at beskytte data. Se afsnittet [**Begrænsninger**](#limitations) herunder for at få vist en fuldstændig liste over situationer, hvor **Publicer på internettet** ikke understøttes. Gennemgå **advarslen** tidligere i denne artikel, før du bruger **Publicer på internettet**.
-
-I følgende korte video kan du se, hvordan denne funktion virker. Prøv det derefter selv i nedenstående trin.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UF9QtqE7s4Y" frameborder="0" allowfullscreen></iframe>
 
 I fremgangsmåden nedenfor beskrives det, hvordan du bruger **Publicer på internettet**.
 
