@@ -2,19 +2,19 @@
 title: Få mere at vide om, hvordan knapper fungerer i Power BI-tjenesten
 description: Knapper kan bruges til at starte forskellige handlinger, herunder navigation i rapporten, detaljeadgang og detaljeadgang på tværs af rapporter
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 07/01/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 14024a9c28da93cbe9e6e586ee66f634b63a70b8
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: 51871e9653a1f3d0d48f25de33d4a72603695cf4
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939921"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161784"
 ---
 # <a name="buttons-in-the-power-bi-service"></a>Knapper i Power BI-tjenesten
 I de rapporter, du modtager fra kolleger, har du måske lagt mærke til knapperne og spekuleret på, hvordan du bruger dem. Nogle har ord, nogle har pile, andre har grafik og nogle har endda rullemenuer. I denne artikel gennemgår vi, hvordan du genkender en knap og finder ud af, hvad du kan foretage dig med den.

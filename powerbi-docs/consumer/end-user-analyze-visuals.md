@@ -2,19 +2,19 @@
 title: Brug funktionen Analysér til at forklare udsving i rapportvisuals
 description: Du kan let få indsigt i forøgelser eller reduktioner i Power BI Desktop
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 06/23/2019
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4ffeed66c514882eae0c05bc41dd29f186c2ded9
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 36f370adc68c6b6f8fc15261bfa107411043c65d
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85363830"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86162292"
 ---
 # <a name="use-the-analyze-feature-to-explain-fluctuations-in-report-visuals-preview"></a>Brug funktionen Analysér til at forklare udsving i rapportvisuals (prøveversion)
 
