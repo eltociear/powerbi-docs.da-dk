@@ -47,6 +47,8 @@
       items:
         - name: Power BI-rapporter
           items:
+            - name: Power BI Desktop og eksterne værktøjer
+              href: desktop-external-tools.md
             - name: Moderne bånd i Power BI
               href: desktop-ribbon.md
             - name: Arbejd med rapportvisning
