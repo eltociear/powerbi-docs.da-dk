@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/30/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 41d5350bf2986f9b8f0f01acf97e96eafc3b4db8
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9fcf67a52bde69e62816af09a8fed69c8383927d
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229518"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216174"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Opret forbindelse til Salesforce med Power BI
 Med Power BI kan du kan nemt oprette forbindelse til din konto på Salesforce.com. Med denne forbindelse kan du hente dine Salesforce-data og få et dashboard og rapporter automatisk.
@@ -24,37 +24,37 @@ Læs mere om [integrering af Salesforce](https://powerbi.microsoft.com/integrati
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
 1. Vælg **Hent data** nederst i navigationsruden i Power BI.
    
-   ![](media/service-connect-to-salesforce/pbi_getdata.png) 
+   ![Skærmbillede af knappen Hent data i navigationsruden.](media/service-connect-to-salesforce/pbi_getdata.png) 
 2. Markér **Hent** i feltet **Tjenester**.
    
-   ![](media/service-connect-to-salesforce/pbi_getservices.png) 
+   ![Skærmbillede af dialogboksen Tjenester, der viser knappen Hent.](media/service-connect-to-salesforce/pbi_getservices.png) 
 3. Vælg **Analyser til Salesforce**, og vælg **Hent**.  
    
-   ![](media/service-connect-to-salesforce/salesforce.png)
+   ![Skærmbillede af dialogboksen Analyser til Salesforce, hvor linket Hent den nu vises.](media/service-connect-to-salesforce/salesforce.png)
 4. Vælg **Log på** for at starte logonflowet.
    
-    ![](media/service-connect-to-salesforce/dialog.png)
+    ![Skærmbillede af dialogboksen Opret forbindelse til Salesforce, hvor knappen Log på vises.](media/service-connect-to-salesforce/dialog.png)
 5. Angiv dine Salesforce-legitimationsoplysninger, når du bliver bedt om det. Vælg **Tillad**, og giv Power BI adgang til dine grundlæggende Salesforce-oplysninger og -data.
    
-   ![](media/service-connect-to-salesforce/sf_authorize.png)
+   ![Skærmbillede af Salesforce-legitimationsoplysningerne, der viser, at Power BI anmoder om tilladelse til at få adgang til dine oplysninger.](media/service-connect-to-salesforce/sf_authorize.png)
 6. Konfigurer det, du gerne vil importere til Power BI, ved hjælp af rullemenuen:
    
    * **Dashboard**
      
      Vælg et foruddefineret dashboard, der er baseret på en karakter (f.eks. **Salgschef**). Disse dashboards henter et bestemt sæt af standarddata fra Salesforce, hvilket ikke omfatter brugerdefinerede felter.
      
-     ![](media/service-connect-to-salesforce/pbi_salesforcechooserole.png)
+     ![Skærmbillede af dashboardet Salesforce, der viser muligheden for at vælge et foruddefineret dashboard, som er baseret på en karakter.](media/service-connect-to-salesforce/pbi_salesforcechooserole.png)
    * **Rapporter**
      
      Vælg en eller flere brugerdefinerede rapporter fra din Salesforce-konto. Disse rapporter stemmer overens med dine visninger i Salesforce og kan indeholde data fra brugerdefinerede felter eller objekter.
      
-     ![](media/service-connect-to-salesforce/pbi_salesforcereports.png)
+     ![Skærmbillede af Salesforce-rapporterne, der viser en liste over brugerdefinerede rapporter.](media/service-connect-to-salesforce/pbi_salesforcereports.png)
      
      Hvis du ikke kan se nogen rapporter, kan du tilføje eller oprette dem i din Salesforce-konto og prøve at oprette forbindelse igen.
 
 7. Vælg **Opret forbindelse** for at starte importprocessen. Under importen får du vist en meddelelse om, at importen er i gang. Når importen er fuldført, får du vist et dashboard, en rapport og et datasæt for dine Salesforce-data, som er angivet i navigationsruden.
    
-   ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
+   ![Skærmbillede af dashboardet Salgschef, som viser dashboardet, rapporten og datasættene.](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 
 Du kan ændre dette dashboard for at få vist dine data, som du vil. Du kan stille spørgsmål med Spørgsmål og svar eller [vælge et felt](../consumer/end-user-tiles.md) for at åbne den underliggende rapport og [redigere eller fjerne felterne på dashboardet](../create-reports/service-dashboard-edit-tile.md).
 

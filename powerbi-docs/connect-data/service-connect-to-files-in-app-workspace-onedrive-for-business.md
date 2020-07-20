@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 04/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: fdbb571a30f530ddeba37a7eaf490718b6c8116d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0016c5af8d8e9e154abf3c9e94dc6330a73d358d
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230363"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216264"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Opret forbindelse til filer, der gemmes i OneDrive for dit Power BI-arbejdsområde
 Når du har [oprettet et arbejdsområde i Power BI](../collaborate-share/service-create-distribute-apps.md), kan du gemme dine Excel-, CSV- og Power BI Desktop-filer på OneDrive for Business for dit Power BI-arbejdsområde. Du kan fortsætte med at opdatere de filer, du gemmer i OneDrive. Disse opdateringer afspejles automatisk i dine Power BI-rapporter og på dine Power BI-dashboards, som er baseret på filerne. 
@@ -33,7 +33,7 @@ Tilføjelse af filer til dit arbejdsområde er en proces med to trin:
 ## <a name="1-upload-files-to-the-onedrive-for-business-for-your-workspace"></a>1 Upload filer til OneDrive for Business for dit arbejdsområde
 1. I Power BI-tjenesten skal du vælge pilen ud for Arbejdsområder > vælge ellipsen ( **…** ) ud for navnet på dit arbejdsområde. 
    
-   ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
+   ![Skærmbillede af Power BI-arbejdsområdet, der viser det valgte arbejdsområdenavn.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
 2. Vælg **Filer** for at åbne OneDrive for Business for dit arbejdsområde i Microsoft 365.
    
    > [!NOTE]
@@ -42,7 +42,7 @@ Tilføjelse af filer til dit arbejdsområde er en proces med to trin:
    > 
 3. Her kan du uploade dine filer til OneDrive for Business for dit apparbejdsområde. Vælg **Upload**, og gå til dine filer.
    
-   ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grpfilesonedrive.png)
+   ![Skærmbillede af OneDrive for Business, der viser, hvordan du kan navigere for at uploade en fil.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grpfilesonedrive.png)
 
 ## <a name="2-import-excel-files-as-datasets-or-as-excel-online-workbooks"></a>2 Importér Excel-filer som datasæt eller Excel Online-projektmapper
 Nu, hvor dine filer er i OneDrive for Business for dit arbejdsområde, står du over for et valg. Du kan: 
@@ -54,26 +54,26 @@ Nu, hvor dine filer er i OneDrive for Business for dit arbejdsområde, står du 
 1. Skift til arbejdsområdet i Power BI, så navnet på arbejdsområdet er i øverste venstre hjørne. 
 2. Vælg **Hent data** nederst i navigationsruden. 
    
-   ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-get-data-button.png)
+   ![Skærmbillede af knappen Hent data i navigationsruden.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-get-data-button.png)
 3. Vælg **Hent** i feltet **Filer**.
    
-   ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_getfiles.png)
+   ![Skærmbillede af dialogboksen Filer, der viser knappen Hent.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_getfiles.png)
 4. Vælg **OneDrive** - *navnet på dit arbejdsområde*.
    
-    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
+    ![Skærmbillede af tre felter, hvor du kan vælge dit arbejdsområde, der viser Lokal fil, OneDrive og SharePoint.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
 5. Markér den ønskede fil > **Opret forbindelse**.
    
     Det er her, du skal beslutte, om du vil [importere dataene fra Excel-projektmappen](service-get-data-from-files.md) eller [oprette forbindelse til hele Excel-projektmapper](service-excel-workbook-files.md).
 6. Vælg **Importér** eller **Opret forbindelse**.
    
-    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_importexceldataorwholecrop.png)
+    ![Skærmbillede af dialogboksen OneDrive for Business, der viser Importér fra Excel eller Opret forbindelse til Excel.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_importexceldataorwholecrop.png)
 7. Hvis du vælger **Importér**, så vises projektmappen på fanen **Datasæt**. 
    
-    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-import.png)
+    ![Skærmbillede af arbejdsområderne i Power BI, hvor fanen Datasæt vises.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-import.png)
    
     Hvis du vælger **Opret forbindelse**, så er projektmappen på fanen **Projektmapper**.
    
-    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-connect.png)
+    ![Skærmbillede af arbejdsområderne i Power BI, hvor fanen Projektmapper vises.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-connect.png)
 
 ## <a name="next-steps"></a>Næste trin
 * [Opret apps og arbejdsområder i Power BI](../collaborate-share/service-create-distribute-apps.md)

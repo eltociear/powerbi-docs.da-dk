@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: f70876b3b8c1815576ed019f88b67296f7aec052
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f9fa3ee1c1e0f757eb3b464785c8cb3fe3ab6e78
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238608"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264724"
 ---
 # <a name="use-visual-table-and-data-point-table-in-power-bi-desktop"></a>Brug den visuelle tabel og datapunkttabellen i Power BI Desktop
 I **Power BI Desktop** kan du analysere alle visualiseringers detaljer og få vist en tekstrepræsentation af de underliggende data eller enkelte dataposter for den valgte visual. Disse funktioner kaldes nogle gange for *klikfrekvens*, *detaljeadgang* eller *detaljeadgang til oplysninger*.
@@ -74,7 +74,7 @@ Du kan også højreklikke på et dataelement og vælge **Datapunkttabel** i den 
 
 Når du vælger **Datapunkttabel** for et dataelement, vises alle de data, der er tilknyttet det valgte element, på canvasset i Power BI Desktop. 
 
-![](media/desktop-see-data-see-records/visual-table-09.png)
+![Skærmbillede af et lærred med alle de data, der er knyttet til det valgte element, når du vælger tabellen Datapunkt.](media/desktop-see-data-see-records/visual-table-09.png)
 
 Du vender tilbage til rapporten ved at vælge **< Tilbage til rapport** i øverste venstre hjørne på canvasset.
 

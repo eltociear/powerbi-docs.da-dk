@@ -7,24 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 07/06/2020
-ms.openlocfilehash: b6f2775d9aa23899a1e27ed58b818024129043b7
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.date: 07/08/2020
+ms.openlocfilehash: af737472b85dcfa05935aefa9ddd7a6fcbb746f2
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034031"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214361"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 
-Få mere at vide om, hvad der er nyt i Power BI-rapportserver og i Power BI Desktop optimeret til Power BI-rapportserver. I denne artikel beskrives de primære funktionsområder, og den opdateres, hver gang der udgives en ny version.
+Få mere at vide om, hvad der er nyt i Power BI-rapportserver og i Power BI Desktop optimeret til Power BI-rapportserver. I denne artikel beskrives de primære funktionsområder, og den opdateres, hver gang der udgives en ny version. Se [Ændringslog for Power BI-rapportserver](changelog.md) for at få mere at vide om, hvad der er nyt i Power BI-rapportserver og Power BI Desktop, der er optimeret til Power BI-rapportserver.
 
 Download [Power BI-rapportserver og Power BI Desktop optimeret til Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
-
-Du kan finde relaterede oplysninger om nyheder i Power BI under:
-
-- [Nyheder i Power BI-tjenesten](../fundamentals/service-whats-new.md)
-- [Nyheder i Power BI Desktop](../fundamentals/desktop-latest-update.md)
 
 ## <a name="may-2020"></a>Maj 2020
 

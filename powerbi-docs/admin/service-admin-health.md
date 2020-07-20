@@ -9,18 +9,18 @@ ms.topic: how-to
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 610fe7ea2188d40d42ab91a355df68bc07bb0d84
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3b3faab2a01a00e09560d39e850f40d0672a5863
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228514"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161163"
 ---
 # <a name="track-power-bi-service-health-in-microsoft-365"></a>Spor Power BI-tjenestetilstand i Microsoft 365
 
 Microsoft 365 Administration indeholder vigtige værktøjer til Power BI-administratorer. Disse værktøjer omfatter aktuelle og historiske oplysninger om tjenestetilstand. Du skal have en af følgende roller for at få adgang til oplysningerne om tjenestetilstand:
 
-* Administrator af Power BI-tjenesten
+* Power BI Service Administrator
 
 * Global administrator
 
@@ -38,7 +38,7 @@ Du kan finde flere oplysninger om roller under [Administratorroller, der er rela
 
 1. Du kan se flere oplysninger ved at vælge **Vis oplysninger** for et element. På skærmbilledet herunder kan du se yderligere detaljer, herunder de nyeste statusopdateringer.
 
-    ![Skærmbillede af detaljer om varsler.](media/service-admin-health/advisory-details.png)
+    ![Skærmbillede af Oplysninger om rådgivning med yderligere oplysninger.](media/service-admin-health/advisory-details.png)
 
     Rul ned for at se flere oplysninger, og luk ruden, når du er færdig.
 

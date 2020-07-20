@@ -7,15 +7,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 06/25/2020
+ms.date: 07/09/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 62acc84c7459cadd758a036f1db04685b5e9c2b5
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 1ff7332bc71935cd6b679fa546dc2f1d37551436
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782544"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215752"
 ---
 # <a name="navigation-for-power-bi-consumers-global-search"></a>Navigation for Power BI-forbrugere: global søgning
 
@@ -29,7 +29,7 @@ Når du er ny bruger af Power BI-tjenesten, har du kun lidt indhold (dashboards,
 ## <a name="searching-for-content"></a>Søgning efter indhold
  Søgefunktionen er tilgængelig næsten overalt i Power BI-tjenesten. Kig blot efter søgefeltet eller søgeikonet ![forstørrelsesglasikon](./media/end-user-search-sort/power-bi-search-icon.png).
 
- I søgefeltet skal du skrive hele eller en del af navnet på et dashboard, en rapport, en projektmappe, en app eller en ejer. Power BI søger i hele dit indhold. 
+ Skriv hele eller en del af navnet på et dashboard, en rapport, en projektmappe, et arbejdsområde, en app eller en ejer i feltet Søg. Power BI søger i hele dit indhold. 
 
  ![søg efter en rapport](./media/end-user-search-sort/power-bi-search-field.png) 
 

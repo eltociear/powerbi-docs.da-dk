@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 9e19216f9e080d73cf0965ad430dcc4839bdc617
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 11389b5986d0dd627b0077808a74db5ab2769a65
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348545"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216291"
 ---
 # <a name="connect-to-azure-search-with-power-bi"></a>Opret forbindelse til Azure Search med Power BI
 Med Azure Search Traffic Analytics kan du overvåge og forstå trafikken til Azure Search-tjenesten. Azure Search-indholdspakken til Power BI giver detaljeret indsigt i dine Search-data, herunder søgning, indeksering, tjenestestatistik og ventetid fra de seneste 30 dage. Flere oplysninger finder du i [Azure-blogindlæg](https://azure.microsoft.com/blog/analyzing-your-azure-search-traffic/).
@@ -26,22 +26,22 @@ Opret forbindelse til [Azure Search-indholdspakken](https://app.powerbi.com/getd
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
 1. Vælg **Hent data** nederst i navigationsruden.
    
-   ![](media/service-connect-to-azure-search/pbi_getdata.png) 
+   ![Skærmbillede af Hent data i Power BI Desktop, der viser knappen i ruden Navigator.](media/service-connect-to-azure-search/pbi_getdata.png) 
 2. Markér **Hent** i feltet **Tjenester**.
    
-   ![](media/service-connect-to-azure-search/pbi_getservices.png) 
+   ![Skærmbillede af dialogboksen Tjenester, der viser knappen Hent.](media/service-connect-to-azure-search/pbi_getservices.png) 
 3. Vælg **Azure Search** \> **Hent**.
    
-   ![](media/service-connect-to-azure-search/azuresearch.png)
+   ![Skærmbillede af dialogboksen Azure-tjenester, der viser linket Hent.](media/service-connect-to-azure-search/azuresearch.png)
 4. Angiv navnet på den tabellagerkonto, hvor din Azure Search-analyse er gemt.
    
-   ![](media/service-connect-to-azure-search/params.png)
+   ![Skærmbillede af dialogboksen Opret forbindelse til Azure Search, hvor feltet Navn på Azure Storage-konto vises.](media/service-connect-to-azure-search/params.png)
 5. Vælg **Nøgle** som godkendelsesmetode, og angiv din nøgle til lagerkontoen. Klik på **Log på** for at starte indlæsningsprocessen.
    
-   ![](media/service-connect-to-azure-search/creds.png)
+   ![Skærmbillede af dialogboksen Opret forbindelse til Azure Search, der viser, at Key er angivet i feltet Godkendelsesmetode.](media/service-connect-to-azure-search/creds.png)
 6. Når indlæsningen er fuldført, vises der et nyt dashboard samt en ny rapport og model i navigationsruden. Vælg dashboardet for at få vist de importerede data.
    
-    ![](media/service-connect-to-azure-search/dashboard2.png)
+    ![Skærmbillede af navigationsruden, der viser dashboardet, rapporten og modellen.](media/service-connect-to-azure-search/dashboard2.png)
 
 **Hvad nu?**
 

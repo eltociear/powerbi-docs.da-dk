@@ -9,23 +9,23 @@ ms.topic: how-to
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f121d4fb4e60fc29ef887d27c148aa3063dcee82
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4d2c48f39fff9cd55243848b2ee62d05f9d5db00
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223695"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216398"
 ---
 # <a name="connect-to-sap-hana-data-sources-by-using-directquery-in-power-bi"></a>Opret forbindelse til SAP HANA-datakilder ved hjælp af DirectQuery i Power BI
 Du kan oprette forbindelse til **SAP HANA**-datakilder direkte ved hjælp af **DirectQuery**. Der er to muligheder, når du opretter forbindelse til SAP HANA:
 
-* **Behandl SAP HANA som en flerdimensionel kilde (standard):** I dette tilfælde er funktionsmåden den samme som, når der oprettes forbindelse mellem Power BI og andre flerdimensionelle kilder, f.eks. SAP Business Warehouse eller Analysis Services. Når du opretter forbindelse til SAP HANA ved hjælp af denne indstilling, markeres en enkelt analyse- eller beregningsvisning, og alle målinger, hierarkier og attributter i den pågældende visning er tilgængelige på feltlisten. I takt med at visualiseringerne oprettes, hentes de aggregerede data altid fra SAP HANA. Dette er den anbefalede tilgang og er standard for nye DirectQuery-rapporter via SAP HANA.
+* **Behandl SAP HANA som en flerdimensionel kilde (standard):**  I dette tilfælde er funktionsmåden den samme som, når der oprettes forbindelse mellem Power BI og andre multidimensionelle kilder, f.eks. SAP Business Warehouse eller Analysis Services. Når du opretter forbindelse til SAP HANA ved hjælp af denne indstilling, markeres en enkelt analyse- eller beregningsvisning, og alle målinger, hierarkier og attributter i den pågældende visning er tilgængelige på feltlisten. I takt med at visualiseringerne oprettes, hentes de aggregerede data altid fra SAP HANA. Dette er den anbefalede tilgang og er standard for nye DirectQuery-rapporter via SAP HANA.
 
 * **Behandl SAP HANA som en relationel kilde:** I dette tilfælde behandler Power BI SAP HANA som en relationel kilde. Det giver større fleksibilitet. Men denne tilgang skal bruges varsomt for at sikre, at målinger aggregeres som forventet for at undgå problemer med ydeevnen.
 
 En global værktøjsindstilling styrer, hvilken tilgang der bruges til at oprette forbindelse. Denne indstilling angives ved at vælge **Filer > Indstillinger** og derefter **Indstillinger > DirectQuery**. Markér derefter indstillingen **Behandl SAP HANA som en relationel kilde** som vist på følgende billede. 
 
-![](media/desktop-directquery-sap-hana/directquery-sap-hana_01a.png)
+![Skærmbillede af dialogboksen Indstillinger, hvor DirectQuery-indstillingerne vises.](media/desktop-directquery-sap-hana/directquery-sap-hana_01a.png)
 
 Indstillingen til at behandle SAP HANA som en relationel kilde styrer, hvilken tilgang der bruges for alle *nye* rapporter, der bruger DirectQuery over SAP HANA. Den påvirker ikke eksisterende SAP HANA forbindelser i den aktuelle rapport eller forbindelser i nogen andre rapporter, der åbnes. Hvis indstillingen i øjeblikket ikke er markeret, vil en ny forbindelse, der føjes til SAP HANA ved hjælp af **Hent data**, behandle SAP HANA som en flerdimensionel kilde. Men hvis en anden rapport åbnes, som også opretter forbindelse til SAP HANA, vil denne rapport fortsat fungere i henhold til den indstilling, der blev angivet *på det tidspunkt, den blev oprettet*, hvilket betyder, at alle rapporter, der opretter forbindelse til SAP HANA, som blev oprettet før februar 2018, fortsat vil behandle SAP HANA som en relationel kilde. 
 
@@ -64,18 +64,18 @@ De tilladte udformningshandlinger er mere begrænset end generelt, når DirectQu
 De primære yderligere begrænsninger for udformning, der gælder, når der oprettes forbindelse til SAP HANA ved hjælp af DirectQuery (Behandl som multidimensionel kilde), er følgende: 
 
 * **Ingen understøttelse af beregnede kolonner:** Muligheden for at oprette beregnede kolonner er deaktiveret. Det betyder også, at gruppering og clustering, som opretter beregnede kolonner, ikke er tilgængelig.
-* **Yderligere begrænsninger for målinger:** Der er yderligere begrænsninger i DAX-udtryk, som kan bruges i målinger til at afspejle den samme understøttelse som den, der tilbydes af SAP HANA.
+* **Yderligere begrænsninger for målinger:** Der er yderligere begrænsninger i DAX-udtryk, som kan bruges i målinger, der afspejler den samme understøttelse som den, der tilbydes af SAP HANA.
 * **Ingen understøttelse af definerende relationer:** Der kan kun sendes forespørgsler til en enkelt visning i en rapport, og derfor understøttes definerende relationer ikke.
 * **Ingen datavisning:** **Datavisningen** viser som regel dataene på detaljeniveau i tabeller. Grundet beskaffenheden af OLAP-kilder, f.eks. SAP HANA, er denne visning ikke tilgængelig via SAP HANA.
-* **Kolonne- og måleoplysninger er blevet rettet:** Listen over kolonner og mål, der er registreret på feltlisten, er rettet af den underliggende kilde og kan ikke ændres. Det er f.eks. ikke muligt at slette en kolonne eller at ændre datatypen for den, men den kan dog omdøbes.
+* **Kolonne- og måleoplysninger er faste:** Listen over kolonner og mål, der er registreret på feltlisten, er fastsat af den underliggende kilde og kan ikke ændres. Det er f.eks. ikke muligt at slette en kolonne eller at ændre datatypen for den, men den kan dog omdøbes.
 * **Yderligere begrænsninger i DAX:** Der er flere begrænsninger for DAX, der kan bruges i definitioner af målinger til at afspejle begrænsningerne i kilden. Det er f.eks. ikke muligt at bruge en aggregeringsfunktion via en tabel.
 
 ### <a name="additional-visualization-restrictions"></a>Yderligere begrænsninger for visualiseringer
 
 Der er nogle begrænsninger i visualiseringer, når der oprettes forbindelse til SAP HANA ved hjælp af DirectQuery (Behandl som multidimensionel kilde): 
-* **Ingen aggregering af kolonner:** Det er ikke muligt at ændre aggregeringen for en kolonne i en visualisering. Det er altid *Opsummer ikke*.
+* **Ingen aggregering af kolonner:** Det er ikke muligt at ændre aggregeringen for en kolonne på en visualisering. Det er altid *Opsummer ikke*.
 
-## <a name="treat-sap-hana-as-a-relational-source"></a>Behandl SAP HANA som en relationel kilde 
+## <a name="treat-sap-hana-as-a-relational-source"></a>Behandl SAP HANA som en relationskilde 
 
 Når du vælger at oprette forbindelse til SAP HANA som en relationel kilde, får du lidt mere fleksibilitet. Du kan f.eks. oprette beregnede kolonner, inkludere data fra flere SAP HANA visninger og oprette relationer mellem de oprettede tabeller. Men når du bruger SAP HANA på denne måde, er det vigtigt at forstå bestemte aspekter af, hvordan forbindelser behandles for at sikre følgende: 
 
@@ -84,7 +84,7 @@ Når du vælger at oprette forbindelse til SAP HANA som en relationel kilde, få
 
 Det er en god idé at starte med at præcisere funktionsmåden af en relationel kilde, f.eks SQL Server, når den forespørgsel, der er defineret i **Hent data** eller **Forespørgselseditor** udfører en aggregering. I eksemplet nedenfor returnerer en forespørgsel, der er defineret i **Forespørgselseditor**, gennemsnitsprisen efter *ProductID*.  
 
-![](media/desktop-directquery-sap-hana/directquery-sap-hana_01.png)
+![Diagram, der viser en forespørgsel defineret i Forespørgselseditor, som returnerer gennemsnitsprisen efter Produkt-id.](media/desktop-directquery-sap-hana/directquery-sap-hana_01.png)
 
 Hvis dataene importeres til Power BI (i modsætning til at bruge DirectQuery), vil følgende ske:
 
@@ -112,7 +112,7 @@ Alle disse overvejelser og funktionsmåder nødvendiggør følgende vigtige over
   
 Lad os tage et kig på et eksempel. I det følgende eksempel vælges der fem kolonner (**CalendarQuarter**, **Color**, **LastName**, **ProductLine**, **SalesOrderNumber**) i dialogboksen **Hent data** sammen med målingen *OrderQuantity*. Det betyder, at hvis der senere oprettes en simpel visualisering, som indeholder Min OrderQuantity, vil det resultere i følgende SQL-forespørgsel til SAP HANA. Det gråtonede er undermarkeringen, som indeholder forespørgslen fra **Hent data** / **Forespørgselseditor**. Hvis denne undermarkering resulterer i høj kardinalitet, vil den deraf følgende ydeevne i SAP HANA sandsynligvis være dårlig.  
 
-![](media/desktop-directquery-sap-hana/directquery-sap-hana_03.png)
+![Skærmbillede af et eksempel på en forespørgsel, der viser SQL-forespørgslen til SAP HANA.](media/desktop-directquery-sap-hana/directquery-sap-hana_03.png)
 
    
 På grund af denne funktionsmåde anbefales det, at de elementer, der vælges i **Hent data** eller **Forespørgselseditor**, begrænses til de nødvendige elementer, da det samtidig medfører, at der sendes en rimelig forespørgsel til SAP HANA.  
@@ -141,11 +141,11 @@ På følgende liste beskrives alle kendte problemer, når der oprettes forbindel
 
 * **Flere Power BI kolonner fra en enkelt SAP HANA kolonne** – I forbindelse med nogle beregningsvisninger, hvor en SAP HANA kolonne bruges i mere end ét hierarki, fremvises disse som to separate attributter i SAP HANA. Dette resulterer i, at der oprettes to kolonner i Power BI.  Disse kolonner er dog som standard skjult, og funktionsmåden af alle forespørgsler, der omfatter hierarkierne eller kolonnerne direkte, er korrekt. 
  
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger om DirectQuery i følgende ressourcer:
 
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakilder, der understøttes af DirectQuery](power-bi-data-sources.md)
 * [DirectQuery og SAP BW](desktop-directquery-sap-bw.md)
-* [Datagateway i lokalt miljø](service-gateway-onprem.md)
+* [On-premises data gateway (Datagateway i det lokale miljø)](service-gateway-onprem.md)

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 4f9b69e863b71fda0cece06df7065740bd55463e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 620e71ffa08a02dc0d0080b310fb0252388e1b10
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228889"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161186"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Find Power BI-brugere, der er logget på
 
@@ -29,7 +29,7 @@ Alle brugere (herunder personer, der ikke er administratorer) kan se en rapport 
 
 * Din lejer skal have en Azure Active Directory Premium-licens tilknyttet.
 
-* Du skal have en af følgende roller: Global administrator, Sikkerhedsadministrator eller Sikkerhedslæser.
+* Du skal være i en af følgende roller: Global administrator, Sikkerhedsadministrator eller Sikkerhedslæser.
 
 ## <a name="use-the-azure-portal-to-view-sign-ins"></a>Brug Azure Portal til at få vist logon
 
@@ -51,7 +51,7 @@ Følg disse trin for at få vist logonaktivitet.
 
 Du kan [downloade en rapport over logonaktivitet](/azure/active-directory/reports-monitoring/quickstart-download-sign-in-report) i et af to formater: en CSV-fil eller en JSON-fil.
 
-![Skærmbillede af knappen Download.](media/service-admin-access-usage/download-sign-in-data-csv.png)
+![Skærmbillede af dataeksporten med indstillingen Download fremhævet.](media/service-admin-access-usage/download-sign-in-data-csv.png)
 
 Øverst i rapporten over **logonaktivitet** skal du vælge **Download** og derefter vælge en af følgende muligheder:
 
@@ -63,7 +63,7 @@ Du kan [downloade en rapport over logonaktivitet](/azure/active-directory/report
 
 Relaterede logondata er tilgængelige i op til 30 dage. Du kan finde flere oplysninger i [Politikker om opbevaring af Azure Active Directory-rapport](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 [Brug af overvågning i din organisation](service-admin-auditing.md)
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: 88b5c6c377588003a02f571c29ef8baef5540ae3
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9265cc94aceb53b1b088f2393ca607c83f94b978
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220212"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264806"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Scan en stregkode med din enhed fra Power BI-mobilappen
 Scan stregkoder i den virkelige verden for at gå direkte til filtrerede BI-oplysninger i Power BI-mobilappen.
@@ -27,14 +27,14 @@ Gælder for:
 
 Lad os sige, at en kollegaer har [mærket et stregkodefelt i en rapport i Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md) og delt rapporten med dig. 
 
-![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
+![Skærmbillede af scanning af en produktstregkode, som viser scanneren over stregkoden for en farvet drikkevare.](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
 
 Når du scanner en stregkode for produktet med scanneren i Power BI-appen på din enhed, får du vist rapporten (eller listen over rapporter) med denne stregkode. Du kan åbne denne rapport, filtreret til denne stregkode.
 
 ## <a name="scan-a-barcode-with-the-power-bi-scanner"></a>Scan en stregkode med Power BI-scanneren
 1. Tryk på **Flere indstillinger** (...) på navigationslinjen, og tryk derefter på **Scanner**.
 
-    ![](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
+    ![Skærmbillede af indstillingerne under Mere i navigationsruden, hvor Scanner er markeret.](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
 
 2. Hvis kameraet ikke er aktiveret, skal du godkende Power BI-appen for at bruge kameraet. Dette er en engangsgodkendelse. 
 4. Ret scanneren mod en stregkode på et produkt. Du vil se en liste over rapporter, der er knyttet til denne stregkode.
@@ -43,8 +43,8 @@ Når du scanner en stregkode for produktet med scanneren i Power BI-appen på di
 ## <a name="filter-by-other-barcodes-while-in-a-report"></a>Filtrer efter andre stregkoder, mens du befinder dig inde i en rapport
 Mens du ser på en rapport, der er filtreret efter en stregkode på din enhed, kan det være du gerne vil filtrere den samme rapport ud fra en anden stregkode.
 
-* Hvis stregkodeikonet har et filter ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png), er filtret aktivt, og rapporten er allerede filtreret efter en stregkode. 
-* Hvis ikonet ikke indeholder et filter ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), er filtret ikke aktivt, og rapporten er ikke filtreret efter en stregkode. 
+* Hvis stregkodeikonet har et filter ![Ikonet Filtreret](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png), er filtret aktivt, og rapporten er allerede filtreret efter en stregkode. 
+* Hvis ikonet ikke indeholder et filter ![Ikonet Ufiltreret](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), er filtret ikke aktivt, og rapporten er ikke filtreret efter en stregkode. 
 
 I begge tilfælde skal du trykke på ikonet for at åbne en lille menu med en flydende scanner.
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b343136acb22d213c0e2ad2dfcf83fbda805e88a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d6de937f4be3c503c146c31a32c56b67ee97a8c4
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224119"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214802"
 ---
 # <a name="connect-to-a-snowflake-computing-warehouse-in-power-bi-desktop"></a>Opret forbindelse til et Snowflake-databehandlingswarehouse i Power BI Desktop
 I Power BI Desktop kan du oprette forbindelse til et **Snowflake**-databehandlingswarehouse og bruge de underliggende data på samme måde som enhver anden datakilde i Power BI Desktop. 
@@ -22,15 +22,15 @@ I Power BI Desktop kan du oprette forbindelse til et **Snowflake**-databehandlin
 ## <a name="connect-to-a-snowflake-computing-warehouse"></a>Opret forbindelse til et Snowflake-databehandlingswarehouse
 Hvis du vil oprette forbindelse til et **Snowflake**-databehandlingswarehouse, skal du vælge **Hent data** på båndet **Hjem** i Power BI Desktop. Vælg **Database** blandt kategorierne til venstre, hvorefter du kan se **Snowflake**.
 
-![](media/desktop-connect-snowflake/connect-snowflake-2b.png)
+![Skærmbillede af dialogboksen Hent data, hvor databasen Snowflake er markeret.](media/desktop-connect-snowflake/connect-snowflake-2b.png)
 
 I det viste vindue, **Snowflake**, skal du skrive eller indsætte navnet på dit Snowflake-databehandlingswarehouse i feltet og vælge **OK**. Bemærk, at du kan vælge at **importere** data direkte i Power BI, eller du kan bruge **DirectQuery**. Du kan få mere at vide om [brug af DirectQuery](desktop-use-directquery.md). Bemærk, at AAD SSO kun understøtter DirectQuery.
 
-![](media/desktop-connect-snowflake/connect-snowflake-3.png)
+![Skærmbillede af dialogboksen Snowflake, hvor alternativknappen Importér er markeret.](media/desktop-connect-snowflake/connect-snowflake-3.png)
 
 Når du bliver bedt om det, skal du angive dit brugernavn og din adgangskode.
 
-![](media/desktop-connect-snowflake/connect-snowflake-4.png)
+![Skærmbillede af anmodningen om Snowflake-legitimationsoplysninger, hvor felterne Brugernavn og Adgangskode vises.](media/desktop-connect-snowflake/connect-snowflake-4.png)
 
 > [!NOTE]
 > Når du angiver dit brugernavn og din adgangskode for en bestemt **Snowflake**-server, anvendes de samme legitimationsoplysninger i efterfølgende forsøg på at oprette forbindelse via Power BI Desktop. Du kan ændre disse legitimationsoplysninger ved at gå til **Filer > Indstillinger > Indstillinger for datakilde**.

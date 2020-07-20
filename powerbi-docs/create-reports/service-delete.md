@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/11/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: f74b90b944f40b5d5ff046f60bd67ca4c3c7eb83
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ff31548801f372fa1e20949e5c109cc9214f55e1
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238422"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264486"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Slet næsten alt i Power BI-tjenesten
 I denne artikel kan du lære, hvordan du sletter et dashboard, en rapport, en projektmappe, et datasæt, en app og et arbejdsområde i Power BI-tjenesten.
@@ -125,7 +125,7 @@ Apps kan nemt fjernes fra din side med applisten. Det er dog kun appadministrato
 Selvom du sletter en app fra din side med applisten, slettes appen ikke for andre medlemmer.
 
 1. Vælg **Apps** i navigationsruden for at åbne siden med applisten.
-2. Hold over den app, du vil slette, og vælg sletteikonet ![](media/service-delete/power-bi-delete-report2.png).
+2. Hold musemarkøren over den app, du vil slette, og vælg Slet ![Skraldespandsikon](media/service-delete/power-bi-delete-report2.png)  .
 
    ![vælg Apps](media/service-delete/power-bi-delete-app.png)
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ace93dfe358c85e54863dece0303c889c6a766b2
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 264d3f4a0c611ca01de627b7656584ceb60e7b18
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279589"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214525"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Vejledning til DirectQuery-model i Power BI Desktop
 
@@ -54,9 +54,9 @@ En DirectQuery-model kan optimeres på mange måder, som beskrevet i følgende p
 
 - **Undgå komplekse Power Query-forespørgsler:** Du får et effektivt modeldesign ved at fjerne behovet for Power Query-forespørgsler for at anvende transformationer. Det betyder, at hver forespørgsel knyttes til en enkelt kildetabel eller -visning for relationsdatabasen. Du kan få forhåndsvist en repræsentation af den faktiske SQL-forespørgselssætning for et trin, der er anvendt i Power Query, ved at vælge indstillingen **Vis oprindelig forespørgsel**.
 
-    ![Der vises fem trin under de trin, der er anvendt i Forespørgselseditor. Kontekstmenuen blev åbnet ved hjælp af et højreklik i det sidste trin med navnet "Omdøbte kolonner". Muligheden "Vis oprindelig forespørgsel" er aktiveret og fremhævet.](media/directquery-model-guidance/directquery-model-guidance-query-editor-view-native-query.png)
+    ![Skærmbillede af Power BI Desktop, der viser indstillingen "Vis oprindelig forespørgsel" under Anvendte trin.](media/directquery-model-guidance/directquery-model-guidance-query-editor-view-native-query.png)
     
-    ![Der vises en T-SQL-forespørgsel i vinduet Oprindelig forespørgsel, hvor to kildetabeller joinforbindes.](media/directquery-model-guidance/directquery-model-guidance-native-query-window.png)
+    ![Skærmbillede af Power BI Desktop, der viser vinduet Oprindelig forespørgsel. En forespørgselssætning joinforbinder to kildetabeller.](media/directquery-model-guidance/directquery-model-guidance-native-query-window.png)
 
 - **Undersøg brugen af beregnede kolonner og ændringer af datatyper:** DirectQuery-modeller understøtter tilføjelse af beregninger og Power Query-trin i forbindelse med konvertering af datatyper. En bedre ydeevne opnås dog ved at materialisere transformationsresultaterne i kilden til relationsdatabasen, når det er muligt.
 - **Brug ikke relativ datofiltrering i Power Query:** Det er muligt at definere relativ datofiltrering i en Power Query-forespørgsel. Hvis du f.eks. vil hente de salgsordrer, der er oprettet inden for det seneste år (i forhold til dags dato). Denne filtertype oversættes til en ineffektiv oprindelig forespørgsel på følgende måde:
@@ -81,7 +81,7 @@ En DirectQuery-model kan optimeres på mange måder, som beskrevet i følgende p
 - **Undgå at bruge tovejsfiltrering af relationer:** Brug af tovejsfiltrering af relationer kan resultere i forespørgselssætninger, som ikke fungerer korrekt. Brug kun denne relationsfunktion, når det er nødvendigt, og det er normalt tilfældet, når du implementerer en mange til mange-relation på tværs af en brotabel. Du kan finde flere oplysninger i [Relationer med mange til mange-kardinalitet i Power BI Desktop](../transform-model/desktop-many-to-many-relationships.md).
 - **Begræns parallelle forespørgsler:** Du kan angive det maksimale antal forbindelser, som DirectQuery åbner for hver underliggende datakilde. Det styrer antallet af forespørgsler, der sendes til datakilden samtidigt.
 
-    ![Power BI Desktop-vinduet åbnes, og siden DirectQuery i den aktuelle fil er valgt. Egenskaben Maksimale antal forbindelser pr. datakilde er fremhævet.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-directquery.png)
+    ![Skærmbillede af Power BI Desktop, der viser vinduet DirectQuery-indstillinger.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-directquery.png)
     
     Denne indstilling er kun aktiveret, når der er mindst én DirectQuery-kilde i modellen. Værdien gælder for alle DirectQuery-kilder og for alle nye DirectQuery-kilder, der føjes til modellen.
 
@@ -95,7 +95,7 @@ Rapporter, der er baseret på et DirectQuery-datasæt, kan optimeres på mange m
 
 - **Aktivér teknikker til reduktion af forespørgsler:** _Indstillingerne_ i Power BI Desktop omfatter en side til reduktion af forespørgsler. Der er tre praktiske valgmuligheder på denne side. Det er muligt at deaktivere krydsfremhævning og krydsfiltrering som standard, selvom det kan tilsidesættes ved at redigere interaktioner. Det er også muligt at få vist knappen Anvend på udsnit og filtre. Indstillingerne for udsnit eller filter anvendes først, når brugeren af rapporten klikker på knappen. Hvis du aktiverer disse indstillinger, anbefaler vi, at du gør det, når du starter med at oprette rapporten.
 
-    ![Power BI Desktop-vinduet åbnes, og siden Reduktion af forespørgsler i den aktuelle fil er valgt. Der findes tre muligheder for at reducere antallet af sendte forespørgsler og for at få vist knappen Anvend for udsnit og filtre.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-query-reduction.png)
+    ![Skærmbillede af Power BI Desktop, der viser filteret Reduktion af forespørgsler i vinduet Indstillinger.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-query-reduction.png)
     
 - **Anvend filtre først:** Når du starter med at designe rapporter, anbefaler vi, at du anvender relevante filtre – på rapport-, side- eller visualiseringsniveau – før felterne knyttes til visualiseringens felter. I stedet for f.eks. at trække målingerne **Land** og **Salg** ind og derefter filtrere dem efter et bestemt år, skal du anvende filteret på feltet **År** først. Det skyldes, at hvert enkelt trin i oprettelsen af en visualisering sender en forespørgsel, og selvom det derefter er muligt at foretage en anden ændring, før den første forespørgsel er fuldført, så pålægger det stadig den underliggende datakilde en unødvendig belastning. Når du anvender filtre tidligt, hjælper det generelt med at gøre disse mellemliggende forespørgsler billigere og hurtigere. Hvis du ikke anvender filtre tidligt, kan det også resultere i en overskridelse af grænsen på 1 million rækker, sådan som det er beskrevet ovenfor.
 - **Begræns antallet af visuelle elementer på en side:** Når en rapportside åbnes (og når der anvendes filtre på siden), opdateres alle visualiseringer på siden. Der er dog en grænse for antallet af forespørgsler, der kan sendes parallelt, og som pålægges af Power BI-miljøet, og for indstillingen **Maksimale antal forbindelser pr. datakilde** for modellen, som beskrevet ovenfor. Så i takt med at antallet af visualiseringer på siden øges, er der større risiko for, at de opdateres serielt. Det øger den tid, det tager at opdatere hele siden, og det øger også risikoen for, at visualiseringerne kan vise uoverensstemmende resultater (for flygtige datakilder). Derfor anbefales det at begrænse antallet af visualiseringer på en enkelt side og i stedet anvende flere enklere sider. Et lignende sidelayout kan opnås ved at erstatte flere kortvisualiseringer med en enkelt kortvisualisering med flere rækker.
@@ -105,7 +105,7 @@ Foruden ovenstående liste over optimeringsteknikker kan hver af følgende rappo
 
 - **Målingsfiltre:** Der kan være anvendt filtre på målingerne i de visualiseringer, der indeholder målinger (eller samlinger af kolonner). Nedenstående visualisering viser f.eks. **Salg** efter **Kategori**, men kun for kategorier med et salg på mere end 15 mio. USD.
 
-    ![En tabelvisualisering indeholder to kolonner: Kategori og Salg. I ruden Filtre ses et filter for målingen Salg for værdier, der er større end 15 mio. USD. Tabellen har tre rækker, og i hver række er værdien Salg større end 15 mio. USD.](media/directquery-model-guidance/directquery-model-guidance-example-measure-filter.png)
+    ![Skærmbillede af Power BI Desktop, der viser tabeldata med anvendte filtre.](media/directquery-model-guidance/directquery-model-guidance-example-measure-filter.png)
     
     
     Det kan resultere i, at der sendes to forespørgsler til den underliggende kilde:

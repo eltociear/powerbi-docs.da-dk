@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 178a2f2037a52b1b08e1006123c30eff1af18af6
-ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
+ms.openlocfilehash: cdb992ba337118c9f7fcfef8335dbc31e6e48032
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85393743"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215300"
 ---
 # <a name="set-and-use-date-tables-in-power-bi-desktop"></a>Angiv og brug datotabeller i Power BI Desktop
 
@@ -22,19 +22,19 @@ ms.locfileid: "85393743"
 
 Du finder flere oplysninger om denne automatisk funktionsmåde i artiklen [Automatisk dato/klokkeslæt i Power BI Desktop](desktop-auto-date-time.md).
 
-Mange dataanalytikere foretrækker at oprette deres egne datotabeller, hvilket er fint. I **Power BI Desktop** kan du angive, hvilken tabel din model skal bruge som sin **datotabel**, og derefter oprette datorelaterede visualiseringer, tabeller, hurtigmålinger osv. ved hjælp af denne tabels data for datoer. Når du angiver din egen datotabel, styrer du de datohierarkier, der oprettes i modellen, og du kan bruge dem i **hurtigmålinger** og andre handlinger, der gør brug af modellens datotabel. 
+Mange dataanalytikere foretrækker at oprette deres egne datotabeller, hvilket er fint. I **Power BI Desktop** kan du angive, hvilken tabel din model skal bruge som sin **datotabel**, og derefter oprette datorelaterede visualiseringer, tabeller, hurtigmålinger osv. ved hjælp af denne tabels data for datoer. Når du angiver din egen datotabel, styrer du de datohierarkier, der oprettes i modellen, og du kan bruge dem i **hurtigmålinger** og andre handlinger, der gør brug af modellens datotabel.
 
-![](media/desktop-date-tables/date-tables_01.png)
+![Skærmbillede af Power BI Desktop, der viser dialogboksen "Markér som datotabel".](media/desktop-date-tables/date-tables_01.png)
 
 ## <a name="setting-your-own-date-table"></a>Angivelse af din egen datotabel
 
 Du angiver en **datotabel** ved at markere den tabel, du vil bruge som en datotabel i ruden **Felter**. Højreklik derefter på tabellen, og vælg **Markér som datotabel > Markér som datotabel** i den viste menu, som vist på følgende billede.
 
-![](media/desktop-date-tables/date-tables_02.png)
+![Skærmbillede af Power BI Desktop, der viser "Markér som datotabel"-filterindstillinger i ruden Felter.](media/desktop-date-tables/date-tables_02.png)
 
 Du kan også markere tabellen og derefter vælge **Markér som datotabel** på båndet **Udformning**, som vist her.
 
-![](media/desktop-date-tables/date-tables_02b.png)
+![Skærmbillede af Power BI Desktop, der viser knappen og indstillingsfilteret "Markér som datotabel".](media/desktop-date-tables/date-tables_02b.png)
 
 Når du angiver din egen **datotabel**, udfører Power BI Desktop følgende validering af kolonnen og de tilhørende data for at sikre følgende for dataene:
 
@@ -51,7 +51,7 @@ Der er to mulige scenarier ifm. at oprette din egen datotabel, og begge tilgange
 
 Når du har angivet en datotabel, kan du vælge, hvilken kolonne i denne tabel der er datokolonnen. Du kan angive, hvilken kolonne der skal bruges, ved at markere tabellen i ruden **Felter** og derefter højreklikke på tabellen og vælge **Markér som datotabel > Indstillinger for datatabel**. Følgende vindue vises, hvor du på rullelisten kan vælge, hvilken kolonne der skal bruges som datotabel.
 
-![](media/desktop-date-tables/date-tables_03.png)
+![Skærmbillede af Power BI Desktop, der viser dialogboksen "Markér som datotabel" med vigtig bemærkning.](media/desktop-date-tables/date-tables_03.png)
 
 Vær opmærksom på, at når du angiver din egen datotabel, så opretter **Power BI Desktop** ikke automatisk de hierarkier, som ellers ville blive indbygget i modellen, for dig. Hvis du senere fravælger din datotabel (og ikke længere har en manuelt angivet datotabel), genskaber Power BI Desktop de indbyggede datotabeller, der automatisk blev oprettet, for dig for datokolonnerne i tabellen.
 
@@ -63,11 +63,11 @@ Når du angiver din egen **datotabel**, skal du sikre, at datatypen er angivet k
 
 1. Markér **datotabellen** i ruden **Felter**; du kan udvide den, hvis det er nødvendigt. Vælg derefter den kolonne, som skal bruges som dato.
    
-    ![](media/desktop-date-tables/date-tables_04.png) 
+    ![Skærmbillede af Power BI Desktop, der viser filteret Dato i ruden Filtre.](media/desktop-date-tables/date-tables_04.png) 
 
 2. På fanen **Udformning** skal du vælge **Datatype:** og derefter klikke på rullepilen for at få vist tilgængelige datatyper.
 
-    ![](media/desktop-date-tables/date-tables_05.png)
+    ![Skærmbillede af Power BI Desktop, der viser fanen Udformning med filteret Datatype valgt.](media/desktop-date-tables/date-tables_05.png)
 
 3. Angiv datatypen for kolonnen. 
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/07/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5a363a951e9c8f6cc04f825c64dce811d0a954e8
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7ce25bb448d698f8c1ce4b77e8823e96220a1792
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219315"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264455"
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>Opret en QR-kode for et felt i Power BI, som skal bruges i mobilappsene
 QR-koder i Power BI kan forbinde noget i den virkelige verden direkte med relaterede BI-oplysninger &#151; du behøver ikke at navigere eller søge.
@@ -26,13 +26,13 @@ De kollegaer, du har delt dashboardet med, kan [scanne QR-koden for at få adgan
 
 ## <a name="create-a-qr-code-for-a-tile"></a>Opret en QR-kode for et felt
 1. Åbn et dashboard i Power BI-tjenesten.
-2. Vælg **Flere indstillinger** (...) i øverste højre hjørne af feltet, og vælg **Fokustilstand** ![](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
+2. Vælg **Flere indstillinger** (...) i øverste højre hjørne af feltet, og vælg **Fokustilstand** ![Ikonet Fuldskærmsvisning](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
 3. Vælg **Flere indstillinger** (...) i øverste højre hjørne, og vælg **Generér QR-kode**. 
    
-    ![](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
+    ![Skærmbillede af et felt, hvor en pil udgår fra ellipsen og peger på Generer QR-kode.](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
 4. Der vises en dialogboks med QR-koden. 
    
-    ![](media/service-create-qr-code-for-tile/pbi_qrcode_opportunity_count.png)
+    ![Skærmbillede af en dialogboks, hvor QR-koden er klar til at blive downloadet eller gemt.](media/service-create-qr-code-for-tile/pbi_qrcode_opportunity_count.png)
 5. Her kan du scanne QR-koden eller downloade og gemme den, så du kan: 
    
    * føje den til en mail eller et andet dokument, eller 

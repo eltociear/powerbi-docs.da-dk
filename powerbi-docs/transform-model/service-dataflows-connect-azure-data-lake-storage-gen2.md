@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d6301b4eea49ab4ae5714446e051290cb254c324
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 92244304bcffc3544ca8616fd0b16226361d58c8
+ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354748"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86385946"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Opret forbindelse til Azure Data Lake Storage Gen2 for dataflowlager
 
@@ -46,6 +46,7 @@ Før du kan konfigurere Power BI med en Azure Data Lake Storage Gen2-konto, skal
 2. Lagerkontoen skal oprettes i den samme AAD-lejer som din Power BI-lejer.
 3. Lagerkontoen skal oprettes i det samme område som din Power BI-lejer. Du kan få hjælp til at se, hvor din Power BI-lejer er placeret, under [Hvor findes min Power BI-lejer?](../admin/service-admin-where-is-my-tenant-located.md)
 4. Funktionen *Hierarkisk navneområde* skal være aktiveret for lagerkontoen.
+5. Hvis lagerkontoen ikke er oprettet af den aktuelle bruger, skal du sørge for, at den aktuelle bruger har fået tildelt tilladelsen [Storage BLOB -dataejer](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#storage-blob-data-owner) og [Ejer](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner). Eftersom Ejer ikke indeholder tilladelsen på dataniveau, er BLOB-dataejer påkrævet.
 
 I følgende afsnit finder du en detaljeret gennemgang af de trin, der er nødvendige for at konfigurere din Azure Data Lake Storage Gen2-konto.
 

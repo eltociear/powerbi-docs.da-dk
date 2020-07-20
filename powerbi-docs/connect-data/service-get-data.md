@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 021b5f0856ef4ff3730102efda88fd089a36dfcf
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: bd3ab4a1c6f702ad866211339a3d3a386c4981fa
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83320072"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264412"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakilder til Power BI-tjenesten
 Dataene er i hjertet af Power BI. Lad os antage, at du er i gang med at udforske data. Det kan du gøre ved at oprette diagrammer og dashboards eller stille spørgsmål i **Spørgsmål og svar**. De visualiseringer og svar, du ser, får deres underliggende data fra et datasæt. Men hvor kommer dette datasæt fra? Det kommer fra en datakilde.
@@ -23,14 +23,14 @@ I denne artikel gennemgås de datakildetyper, du kan oprette forbindelse til fra
 
 Du kan hente data fra en af datakilderne i Power BI ved at vælge **Hent Data** i nederste venstre hjørne af siden.
 
-![](media/service-get-data/pbi-getdata-navigation-link.png) 
+![Skærmbillede af Hent data, der vises i nederste venstre hjørne af skærmen med Power BI-tjenesten.](media/service-get-data/pbi-getdata-navigation-link.png) 
 
 Når du har valgt **Hent data**, kan du vælge de data, du vil have adgang til
 
-![](media/service-get-data/pbi-getdata-startscreen.png)
+![Skærmbillede af valg for Hent data, der viser mulighederne for at vælge de data, du vil have adgang til.](media/service-get-data/pbi-getdata-startscreen.png)
 
 ## <a name="discover-content"></a>Find indhold
-![](media/service-get-data/pbi-getdata-discovercontent.png)
+![Skærmbillede af afsnittet Find indhold, der viser partnerlogoer.](media/service-get-data/pbi-getdata-discovercontent.png)
 
 Afsnittet **Find indhold** indeholder alle de data og rapporter, du har brug for, og de er allerede gjort klar til dig. Der er to typer indholdspakker i Power BI: Organisatoriske indholdspakker og tjenester. 
 
@@ -43,7 +43,7 @@ Afsnittet **Find indhold** indeholder alle de data og rapporter, du har brug for
 Afsnittet **Opret nyt indhold** indeholder indstillinger, så du selv kan oprette og importere indhold. I Power BI er der to måder at oprette eller importere dit eget indhold: Filer og databaser. 
 
 ### <a name="files"></a>Filer
-![](media/service-get-data/pbi_getdata_files.png)
+![Ikon for Excel, Power BI Desktop og CSV](media/service-get-data/pbi_getdata_files.png)
 
 **Excel** ( *.xlsx*, *.xlsm*) – en projektmappe i Excel kan indeholde forskellige datatyper. Den kan f.eks, indeholde data, du selv har indtastet i regneark. Den kan også indeholde data, som du har forespurgt og indlæst fra eksterne datakilder ved hjælp af Power-forespørgsel. Power-forespørgsel er tilgængelig via **Hent og omdan** i Excel 2016 eller Power Pivot. Du kan importere data fra tabeller i regneark, eller importere data fra en datamodel. Du kan finde flere oplysninger under [Hent data fra filer til Power BI](service-get-data-from-files.md).
 
@@ -56,7 +56,7 @@ Til andre filtyper som XML-tabel ( *.xml*) eller tekstfiler ( *.txt*) kan du bru
 Det gør også en stor forskel, hvor du gemmer dine filer. OneDrive for Business giver den største fleksibilitet og integration med Power BI. Det er OK for at bevare dine filer på det lokale drev. Men hvis du har brug at opdatere dine data, er der er nogle få ekstra trin. Du kan få flere oplysninger ved at følge nedenstående links til artikler.
 
 ### <a name="databases"></a>Databaser
-![](media/service-get-data/pbi_getdata_databases.png)
+![Skærmbillede af databaserne, der viser databaser i cloudlogoerne.](media/service-get-data/pbi_getdata_databases.png)
 
 **Databaser i cloudmiljøet** – fra Power BI-tjenesten kan du oprette direkte forbindelse til:
 

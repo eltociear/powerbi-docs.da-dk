@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/14/2018
 ms.author: willthom
 LocalizationGroup: Learn more
-ms.openlocfilehash: 538464477a65600efd7b8486ff2fee281d1d4500
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: af67eca7b1a4d1cb82f3b58ea4abdbb8b2ad4671
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83130175"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86160841"
 ---
 # <a name="power-bi-desktop-privacy"></a>Beskyttelse af personlige oplysninger i Power BI Desktop
 
@@ -24,12 +24,12 @@ De oplysninger, vi indsamler fra **Power BI Desktop**-brugere, kan omfatte oplys
  
 Du kan fravælge indsamlingen af disse data ved at gå til **Filer > Indstillinger > Indstillinger** og fjerne markeringen i afkrydsningsfeltet **Send statistikoplysninger** under fanen **Statistikoplysninger** som vist på følgende billede.
 
-![Indstillinger for Send statistikoplysninger](media/desktop-privacy/privacy_01.png)
+![Skærmbillede af indstillingerne for Send statistikoplysninger.](media/desktop-privacy/privacy_01.png)
 
 ## <a name="sending-additional-information"></a>Fremsendelse af yderligere oplysninger
 
 Hvis du oplever nedbrud eller andre problemer, kan du vælge at indsende fejlrapporter og yderligere oplysninger, som kan hjælpe os med at løse problemet i en fremtidig version. Vi indsamler også oplysninger om tilstanden for den **Power BI Desktop**-fil, du arbejder på, f.eks. landestandarden for dokumentet, aktiverede funktionseksempler og lagringstilstand. Det kan omfatte skærmbilleder, fejlmeddelelser og formler fra din model. Elmenterne kan omfatte indhold i de filer, du brugte, da fejlen opstod, så du bør gennemse dem, inden du indsender dem. Inden du indsender oplysningerne, minder vi dig om, at du selv kan vælge, hvilke oplysninger du vil sende til Microsoft.  
  
-Hvis du ikke ønsker at indsende oplysninger, kan du klikke på **Luk**, når der opstår en fejl, eller fravælge, at der indsendes statistikoplysninger som beskrevet ovenfor. 
+Hvis du ikke ønsker at indsende oplysninger, kan du klikke på **Luk**, når der opstår en fejl, eller fravælge, at der indsendes statistikoplysninger som beskrevet ovenfor.
 
-![Dialogboks ved nedbrud](media/desktop-privacy/privacy_02.png)
+![Skærmbillede af dialogboksen ved nedbrud, hvor du kan rapportere problemet eller lukke.](media/desktop-privacy/privacy_02.png)

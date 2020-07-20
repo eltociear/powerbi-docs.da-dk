@@ -10,18 +10,18 @@ ms.topic: overview
 ms.date: 05/29/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 7628106c29be75c4eb01bc9d7d52a3c9ededb9e8
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: c3e56df49caac8b5250a4e382cab253a0a9c5210
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272538"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161324"
 ---
 # <a name="what-is-power-bi-administration"></a>Hvad er Power BI-administration
 
 Power BI-administration er administration af de indstillinger, der gælder for hele organisationen, og som styrer, hvordan Power BI fungerer. Brugere, der er tildelt administratorroller, konfigurerer, overvåger og klargør organisationens ressourcer. Denne artikel indeholder en oversigt over administratorroller, -opgaver og -værktøjer, der hjælper dig til at komme i gang.
 
-![Power BI-administrationsportal](media/service-admin-administering-power-bi-in-your-organization/admin-portal.png)
+![Skærmbillede af Power BI-administrationsportalen, der viser indstillinger for hele organisationen.](media/service-admin-administering-power-bi-in-your-organization/admin-portal.png)
 
 ## <a name="administrator-roles-related-to-power-bi"></a>Administratorroller, der er relateret til Power BI
 

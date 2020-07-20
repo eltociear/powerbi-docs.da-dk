@@ -10,12 +10,12 @@ ms.date: 06/24/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: e050fd4ec3e533c07ecfd0f0604092bec7fc00b5
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 276770b677d85e0e125e7dd87bb0a800248d71c2
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85484926"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161467"
 ---
 # <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>Licens til Power BI-tjenesten for brugere i din organisation
 
@@ -57,7 +57,7 @@ Når du deaktiverer tilmelding via selvbetjening, kan brugerne ikke udforske Pow
 1. Angiv det antal licenser, der kræves for at dække alle dine brugere.
 1. Vælg **Tildel automatisk alle brugere uden licenser**, og tjek derefter ud.
 
-  ![Gratis Power BI-abonnement, der er tildelt automatisk](media/service-admin-licensing-organization/m365-auto-assign.png) 
+  ![Skærmbillede af det gratis automatisk tildelte abonnement Power BI-abonnement med der viser tilmelding til selvbetjening.](media/service-admin-licensing-organization/m365-auto-assign.png)
 
 Hvis du vil se, hvilke brugere i din organisation der måske allerede har en licens, skal du se [Få vist og administrer brugerlicenser](service-admin-manage-licenses.md).
 

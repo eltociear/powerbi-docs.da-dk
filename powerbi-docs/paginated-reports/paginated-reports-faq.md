@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/29/2020
-ms.openlocfilehash: f18f8b56db8635d407417949bc35adb61fb4a2c5
-ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
+ms.date: 07/08/2020
+ms.openlocfilehash: acde398c1d8954b815c86cce77a6be0cfcf1553f
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84427557"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216661"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål 
 
@@ -162,7 +162,7 @@ Ja, dette kan gøres ved at bruge URL-parametre sammen med sideinddelte rapporte
 
 Ja, sideinddelte rapporter understøttes og kan implementeres med apps fra både v1- og v2-arbejdsområder. 
 
-### <a name="will-other-report-specific-features-in-power-bi-like-pinning-to-report-tiles-to-dashboards-work-with-paginated-reports"></a>Vil andre rapportspecifikke funktioner i Power BI, f.eks. fastgørelse af rapportfelter til dashboards, fungere med sideinddelte rapporter?
+### <a name="will-other-report-specific-features-in-power-bi-like-pinning-report-tiles-to-dashboards-work-with-paginated-reports"></a>Kan andre rapportspecifikke funktioner i Power BI, f.eks. fastgørelse af rapportfelter til dashboards, fungere sammen med sideinddelte rapporter?
 
 Vi har planer om, at rapporterne skal understøtte de samme overordnede scenarier i tjenesten så meget som muligt.  Selvom værktøjet til at oprette dem er forskelligt, er det, set fra en brugers synspunkt, ideelt set blot endnu en rapport på deres liste på portalen. De er ligeglade med, hvordan den blev oprettet, så længe de kan gøre det, de har brug for.  Et godt eksempel på denne funktionsparitet er understøttelsen af planlagte kommentarer. Selvom selve funktionen muligvis fungerer en smule anderledes for hver rapporttype, vil du kunne bruge kommentarer til begge.
 

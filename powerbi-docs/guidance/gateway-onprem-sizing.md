@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: b195e0bc11068b819a2f3133ed9ae135e3c30ffb
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: e1a24d8d15881bf8a1948d91758c7592f75ea7ac
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485938"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214215"
 ---
 # <a name="on-premises-data-gateway-sizing"></a>Størrelse af datagateway i det lokale miljø
 
@@ -33,7 +33,7 @@ Arbejdsbelastningen for _cachelagrede data_ henter og transformerer kildedata ti
 1. **Datahentning og transformation**: Dataene hentes og transformeres om nødvendigt. Når det er muligt, sender Power Query-miksprogrammet transformationstrin til datakilden – hvilket kaldes _[forespørgselsdelegering](power-query-folding.md)_ . Hvis det ikke er muligt, skal transformationer udføres af gatewayen. I dette tilfælde forbruger gatewayen flere CPU- og hukommelsesressourcer.
 1. **Overfør**: Data overføres til Power BI-tjenesten – det er vigtigt med en pålidelig og hurtig internetforbindelse, især ved store datamængder
 
-![I et diagram vises datagatewayen i det lokale miljø, der opretter forbindelse til datakilder i det lokale miljø: relationsdatabase, Excel-projektmappe og CSV-filer. Gatewayen henter og transformerer data.](media/gateway-onprem-sizing/gateway-onprem-workload-cached-data.png)
+![Diagram over cachelagrede data, der viser datagatewayen i det lokale miljø, som opretter forbindelse til kilder i det lokale miljø.](media/gateway-onprem-sizing/gateway-onprem-workload-cached-data.png)
 
 ### <a name="live-connection-and-directquery-workloads"></a>Direkte forbindelse- og DirectQuery-arbejdsbelastninger
 
@@ -46,7 +46,7 @@ Denne arbejdsbelastning kræver CPU-ressourcer til routing af forespørgsler og 
 
 Sikker, hurtig og konsekvent forbindelse er vigtig for at sikre, at rapportbrugerne får en dynamisk oplevelse.
 
-![I et diagram vises datagatewayen i det lokale miljø, der opretter forbindelse til datakilder i det lokale miljø: Analysis Services-tabeldatabase og relationsbaserede. Gatewayen fungerer hovedsageligt i pass-through-mode.](media/gateway-onprem-sizing/gateway-onprem-workload-liveconnection-directquery.png)
+![Diagram over direkte forbindelse og DirectQuery, der viser data gatewayen i det lokale miljø, som opretter forbindelse til datakilder i det lokale miljø.](media/gateway-onprem-sizing/gateway-onprem-workload-liveconnection-directquery.png)
 
 ## <a name="sizing-considerations"></a>Overvejelser i forbindelse med størrelse
 

@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 04/01/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 726c265198c7489ac1de055d0fc00b1988109d11
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 807ba59066508d063dba2e2f921eff19cf018bc5
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223325"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214592"
 ---
 # <a name="connect-to-project-online-data-through-power-bi-desktop"></a>Opret forbindelse til Project Online-data via Power BI Desktop
 Du kan oprette forbindelse til data i Project Online via Power BI Desktop.
@@ -37,7 +37,7 @@ Du kan oprette forbindelse til data i Project Online via Power BI Desktop.
 
 5. Power BI Desktop beder dig om at godkende med din arbejds- eller skolekonto. Vælg Organisationskonto, og angiv derefter dine legitimationsoplysninger.
    
-   ![](media/desktop-project-online-connect-to-data/image.png)
+   ![Skærmbillede af Power BI Desktop, der viser anmodningen om legitimationsoplysninger med henblik på oprettelse af forbindelse.](media/desktop-project-online-connect-to-data/image.png)
 
 Den konto, du bruger til at oprette forbindelse til OData-feedet med, skal som minimum have Portfolio Viewer-adgang til Project Web App-webstedet. 
 

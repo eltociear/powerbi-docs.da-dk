@@ -9,15 +9,15 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4827049ee8eff86b2ce71ee9befd3d01760c0840
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 20c289648dc6e9b9784335c0d92f6725328dfffc
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230470"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216318"
 ---
 # <a name="get-data-from-comma-separated-value-csv-files"></a>Hent data fra filer med kommaseparerede værdier (.CSV)
-![](media/service-comma-separated-value-files/csv_icon.png)
+![Ikonet CSV](media/service-comma-separated-value-files/csv_icon.png)
 
 Filer med kommaseparerede værdier, også kaldet CSV-filer, er simple tekstfiler med rækker med data, hvor de enkelte værdier er adskilt af semikolon. Disse filtyper kan indeholde meget store mængder data i en relativt lille filstørrelse, hvilket gør dem til en ideel datakilde for Power BI. Du kan downloade et eksempel på en .CSV-fil [her](https://go.microsoft.com/fwlink/?LinkID=619356).
 
@@ -41,13 +41,13 @@ Hvis du har en .CSV-fil, skal du hente den ind på dit Power BI-websted som et d
 
 1. I Power BI skal du klikke på **Hent data** i navigationsruden.
    
-   ![](media/service-comma-separated-value-files/csv_get_data_button.png)
-2. I **Filer** skal du klikke på **Hent**.
+   ![Skærmbillede af Hent data i Power BI Desktop, der viser knappen i ruden Navigator.](media/service-comma-separated-value-files/csv_get_data_button.png)
+2. Under **Filer** skal du klikke på **Hent**.
    
-   ![](media/service-comma-separated-value-files/csv_files_get.png)
+   ![Skærmbillede af dialogboksen Filer, der viser knappen Hent.](media/service-comma-separated-value-files/csv_files_get.png)
 3. Find din fil.
    
-   ![](media/service-comma-separated-value-files/csv_find_your_file.png)
+   ![Skærmbillede af fire felter, du kan bruge til at finde din fil, der viser Lokal fil, OneDrive – erhverv, OneDrive – personlig og SharePoint.](media/service-comma-separated-value-files/csv_find_your_file.png)
 
 ## <a name="next-steps"></a>Næste trin
 **Udforsk dine data** – Når du har hentet data fra din fil til Power BI, er det tid til at udforske dem. Du skal blot højreklikke på det nye datasæt og derefter klikke på **Udforsk**.

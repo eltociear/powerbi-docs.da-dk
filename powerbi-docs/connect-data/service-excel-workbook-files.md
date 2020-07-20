@@ -9,15 +9,15 @@ ms.topic: how-to
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e86aeaf8f7254e2b28b266135ccc4a0005e927b6
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 870e3dbdc4b18422b0565834764b996d3f096ebf
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236665"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264438"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Hent data fra Excel-projektmappefiler
-![](media/service-excel-workbook-files/excel_icon.png)
+![Excel-ikon](media/service-excel-workbook-files/excel_icon.png)
 
 Microsoft Excel er et af mest anvendte virksomhedsprogrammer. Det er også en af de mest almindelige måder at hente dine data til Power BI på.
 
@@ -61,7 +61,7 @@ Se denne nyttige video, hvis du vil vide mere om, hvordan du sikrer dig, at dine
 ## <a name="one-excel-workbook--two-ways-to-use-it"></a>En Excel-projektmappe – to måder at bruge den på
 Hvis du gemmer dine projektmappefiler på **OneDrive**, er der flere forskellige måder, du kan udforske dine data i Power BI på
 
-![](media/service-excel-workbook-files/excel_import_connect.png)
+![Skærmbillede af OneDrive for Business, der viser indstillingen Importér Excel-data eller Opret forbindelse til Excel-data.](media/service-excel-workbook-files/excel_import_connect.png)
 
 ### <a name="import-excel-data-into-power-bi"></a>Importér Excel-data i Power BI
 Når du vælger **Importér**, importeres alle understøttede data i tabeller og/eller en datamodel til et nyt datasæt i Power BI. Hvis du har Power View-ark, genskabes disse i Power BI som rapporter.
@@ -84,31 +84,31 @@ I Excel 2016 kan du også bruge Publicer > Upload. Det er næsten det samme. Du 
 ## <a name="import-or-connect-to-an-excel-workbook-from-power-bi"></a>Importér eller opret forbindelse til en Excel-projektmappe fra Power BI
 1. I Power BI skal du klikke på **Hent data** i navigationsruden.
    
-   ![](media/service-excel-workbook-files/excel_get_data_button.png)
+   ![Skærmbillede af knappen Hent data i navigationsruden.](media/service-excel-workbook-files/excel_get_data_button.png)
 2. I Filer skal du klikke på **Hent**.
    
-   ![](media/service-excel-workbook-files/excel_files_get.png)
+   ![Skærmbillede af dialogboksen Filer, der viser knappen Hent.](media/service-excel-workbook-files/excel_files_get.png)
 3. Find din fil.
    
-   ![](media/service-excel-workbook-files/excel_find_your_file.png)
+   ![Skærmbillede af fire felter, du kan bruge til at finde din fil, der viser Lokal fil, OneDrive – erhverv, OneDrive – personlig og SharePoint.](media/service-excel-workbook-files/excel_find_your_file.png)
 4. Hvis din projektmappefil er placeret på OneDrive eller SharePoint – Teamwebsteder, skal du vælge **Importér** eller **Opret forbindelse**.
 
 ## <a name="local-excel-workbooks"></a>Lokale Excel-projektmapper
 Du kan også bruge en lokal Excel-fil og overføre den til Power BI. Du skal blot vælge **Lokal fil** i den forrige menu og derefter navigere til den placering, hvor du har gemt dine Excel-projektmapper.
 
-![](media/service-excel-workbook-files/excel_import_6.png)
+![Skærmbillede af feltet Lokal fil, der viser, hvordan du kan navigere for at vælge Excel-projektmapperne.](media/service-excel-workbook-files/excel_import_6.png)
 
 Når du har valgt, kan du vælge at overføre din fil til Power BI.
 
-![](media/service-excel-workbook-files/excel_import_7.png)
+![Skærmbillede af dialogboksen Lokal fil, hvor Overfør din Excel-fil til Power BI er markeret.](media/service-excel-workbook-files/excel_import_7.png)
 
 Når din projektmappe er overført, får du en meddelelse om, at projektmappen er klar.
 
-![](media/service-excel-workbook-files/excel_import_8.png)
+![Skærmbillede af beskeden om at projektmappen er klar.](media/service-excel-workbook-files/excel_import_8.png)
 
 Når projektmappen er klar, kan du finde den i afsnittet **Rapporter** i Power BI.
 
-![](media/service-excel-workbook-files/excel_import_9.png)
+![Skærmbillede af afsnittet Rapporter, der viser den valgte rapport med Excel-dataene.](media/service-excel-workbook-files/excel_import_9.png)
 
 ## <a name="publish-from-excel-2016-to-your-power-bi-site"></a>Publicer fra Excel 2016 til Power BI-webstedet
 Når du bruger funktionen **Publicer i Power BI** i Excel 2016 er det i praksis det samme som at bruge **Hent data** i Power BI til at importere eller oprette forbindelse til din fil. Vi går ikke nærmere i detaljer her, men du kan få mere at vide i [Publicer til Power BI fra Excel 2016](service-publish-from-excel.md).

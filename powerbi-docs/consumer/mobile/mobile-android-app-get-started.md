@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 06/06/2020
 ms.author: painbar
-ms.openlocfilehash: a12f4d81e2cae913ddddd26ca3bd9c820ad716ca
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 725890e3650ff05e0b90e7678bb83e0bc5d01050
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85233030"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86262999"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Introduktion til Power BI-mobilappen på Android-enheder
 Android-appen til Microsoft Power BI leverer BI-mobiloplevelsen til Power BI, Power BI Report Server og Reporting Services. Få vist og interager med dit firmas dashboards lokalt og i skyen overalt – med direkte, berøringsfølsom mobiladgang. Udforsk dataene i dashboards, og del dem med dine kollegaer i mails eller tekstmeddelelser. 
@@ -80,7 +80,7 @@ Nogle Power BI-eksempler efterfølges af flere eksempler til rapportserver.
 Tryk på forstørrelsesglasset i overskriften for at begynde at søge efter dit Power BI-indhold.
 
 ## <a name="view-your-favorite-dashboards-and-reports"></a>Få vist de dashboards og rapporter, du har gjort til favoritter
-Tryk på **Favoritter** (![](./media/mobile-android-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) på navigationslinjen for at få vist siden Favoritter. 
+Tryk på **Favoritter** (![ikonet Favoritter](./media/mobile-android-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) på navigationslinjen for at få vist siden Favoritter. 
 
 Læs mere om [favoritter i Power BI-mobilapperne](mobile-apps-favorites.md).
 

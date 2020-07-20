@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 4f1f8947827500ec89d189e17f8ab2189caaff93
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: fe93fa3f41cf1c340b31ce3c6f817f842f3039ff
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83138976"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161646"
 ---
 # <a name="using-the-same-account-for-power-bi-and-azure"></a>Brug af den samme konto til Power BI og Azure
 
@@ -32,7 +32,7 @@ Du kan tilføje din organisationskonto som en medadministrator i Azure ved at be
 
 1. Vælg **Adgangskontrol (IAM)** i navigationsruden, og vælg derefter **Tilføj** \> **Tilføj medadministrator**.
 
-    ![Tilføj en medadministrator i Azure Portal](media/service-admin-how-to-use-the-same-account-as-azure/add-co-administrator.png)
+    ![Skærmbillede af Adgangskontrol, hvor Tilføj en medadministrator er fremhævet.](media/service-admin-how-to-use-the-same-account-as-azure/add-co-administrator.png)
 
 1. Angiv den mailadresse, der er tilknyttet din organisationskonto, og vælg **Tilføj**.
 

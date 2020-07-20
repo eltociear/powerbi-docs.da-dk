@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/23/2019
 ms.author: kfollis
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 6c6bbf8476087532fd3a049a0e4bde3191892325
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: d2d28d8ea3f7e2e7217124483f90ecc28d44314f
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564055"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161691"
 ---
 # <a name="use-an-alternate-email-address"></a>Brug af en alternativ mailadresse
 
@@ -37,7 +37,7 @@ Følg disse trin for at angive en alternativ adresse i Microsoft 365.
 
     Hvis du ikke kan redigere dine oplysninger, betyder det, at din mailadresse administreres af administratoren. Kontakt administratoren for at opdatere din mailadresse.
 
-    ![Kontaktoplysninger](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
+    ![Skærmbillede af dialogboksen Kontaktoplysninger, der viser, hvordan du angiver en alternativ mail.](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
 
 1. I feltet **Alternativ mailadresse** skal du angive den mailadresse, som Microsoft 365 skal bruge til Power BI-opdateringer.
 

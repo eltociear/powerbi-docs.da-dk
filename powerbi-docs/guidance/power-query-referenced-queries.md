@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 242f1e44e3314af900d9f4d4e4fb7380b28b4103
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 21105513bf77a4ede8d788860a99fedaf3a6c48c
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278669"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214863"
 ---
 # <a name="referencing-power-query-queries"></a>Henvisning til Power Query-forespørgsler
 
@@ -23,13 +23,13 @@ Det betyder helt konkret: _Når en forespørgsel referer til en anden forespørg
 
 Tænk på flere forespørgsler: **Forespørgsel1** henter data fra en webtjeneste, og dens indlæsning er deaktiveret. **Forespørgsel2**, **Forespørgsel3** og **Forespørgsel4** refererer alle til **Forespørgsel1**, og deres output indlæses i datamodellen.
 
-![I visningen Forespørgselsafhængigheder vises forespørgsler, der er beskrevet i forrige afsnit.](media/power-query-referenced-queries/query-dependencies-web-service.png)
+![Diagram, der viser visningen Forespørgselsafhængigheder med forespørgsler, der er beskrevet i forrige afsnit.](media/power-query-referenced-queries/query-dependencies-web-service.png)
 
 Når datamodellen opdateres, antages det ofte, at Power Query henter resultatet for **Forespørgsel1**, og at det genbruges i refererede forespørgsler. Denne antagelse er forkert. Faktisk udfører Power Query **Forespørgsel2**, **Forespørgsel3** og **Forespørgsel4** separat.
 
 Du kan tænke på det, som at **Forespørgsel2** har trinnene fra **Forespørgsel1** integreret. Det er også tilfældet for **Forespørgsel3** og **Forespørgsel4**. I følgende diagram vises et tydeligere billede af, hvordan forespørgslerne udføres.
 
-![En modificeret version af visningen Forespørgselsafhængigheder, der viser Forespørgsel 2, Forespørgsel 3 og Forespørgsel 4. Hver af de tre forespørgsler har Forespørgsel 1 integreret.](media/power-query-referenced-queries/query-dependencies-web-service-concept.png)
+![Diagram, der viser en modificeret version af visningen Forespørgselsafhængigheder, der viser Forespørgsel 2, Forespørgsel 3 og Forespørgsel 4.](media/power-query-referenced-queries/query-dependencies-web-service-concept.png)
 
 **Forespørgsel1** udføres tre gange. De enkelte udførelser kan resultere i langsom opdatering af data og påvirke datakilden negativt.
 

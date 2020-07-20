@@ -10,12 +10,12 @@ ms.date: 09/17/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 670373afb5cb890c87a24a129cd43fde7bd5d892
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 49e0b85cb42b008f8d5e3e38296172e24b868fa8
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83128895"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161209"
 ---
 # <a name="capture-additional-diagnostic-information-for-power-bi"></a>Hent yderligere diagnosticeringsoplysninger til Power BI
 
@@ -39,7 +39,7 @@ Denne artikel indeholder vejledning i, hvordan du manuelt indsamler flere diagno
 
 1. Hvis du vil stoppe profileringen af sessionen, kan du vælge den røde kvadrat under fanen **Netværk** i området med udviklerværktøjer.
 
-   ![Skærmbillede af fanen Netværk i udviklerværktøjer i Microsoft Edge med stopknappen fremhævet.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
+   ![Skærmbillede af fanen Netværk i udviklerværktøjer i Microsoft Edge med stopikonet fremhævet.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
 
 1. Vælg disketteikonet for at eksportere dataene som en HTTP Archive-fil (HAR).
 

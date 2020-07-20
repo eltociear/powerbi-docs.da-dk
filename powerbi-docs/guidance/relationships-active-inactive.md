@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 3e3e44647ca7c85c09a3e7f4b3c309947559f5d3
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: e8ba3203728a72b26d188e96eb1fa66f62f89a55
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273218"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215129"
 ---
 # <a name="active-vs-inactive-relationship-guidance"></a>Vejledning til aktive i forhold til inaktive relationer
 
@@ -29,7 +29,7 @@ Se et eksempel på en importmodel, der er designet til at analysere luftfartssel
 
 Her er et delvist modeldiagram over de to tabeller.
 
-![Et modeldiagram indeholder to tabeller: Fly og Lufthavn. Relationsdesignet er beskrevet i følgende afsnit.](media/relationships-active-inactive/flight-model-1.png)
+![Diagram, der viser en model, som indeholder to tabeller: Fly og Lufthavn. Relationsdesignet er beskrevet i følgende afsnit.](media/relationships-active-inactive/flight-model-1.png)
 
 Der er to modelrelationer mellem tabellerne **Fly** og **Lufthavn**. I tabellen **Fly** er kolonnerne **Afgangslufthavn** og **Ankomstlufthavn** relateret til kolonnen **Lufthavn** i tabellen **Lufthavn**. I et stjerneskemadesign er tabellen **Lufthavn** beskrevet som en [dimension med forskellige roller](star-schema.md#role-playing-dimensions). I denne model er de to roller _afgangslufthavn_ og _ankomstlufthavn_.
 
@@ -39,13 +39,13 @@ Dette modeldesign medfører alvorlige begrænsninger på, hvordan dataene kan ra
 
 Her er det forbedrede modeldesign.
 
-![Modeldiagrammet indeholder nu fire tabeller: Dato, Fly, Afgangslufthavn og Ankomstlufthavn. Relationsdesignet er beskrevet i følgende afsnit.](media/relationships-active-inactive/flight-model-2.png)
+![Diagram, der viser en model, som indeholder fire tabeller: Dato, Fly, Afgangslufthavn og Ankomstlufthavn.](media/relationships-active-inactive/flight-model-2.png)
 
 Modellen indeholder nu to lufthavnstabeller: **Afgangslufthavn** og **Ankomstlufthavn**. Modelrelationerne mellem disse tabeller og tabellen **Fly** er aktive. Bemærk også, at der foran kolonnenavnene i tabellerne **Afgangslufthavn** og **Ankomstlufthavn** nu står _Afgang_ eller _Ankomst_.
 
 Det forbedrede modeldesign understøtter udarbejdelse af følgende rapportdesign.
 
-![En rapportside har to udsnit og en tabelvisualisering. Udsnittene er Måned og Afgangslufthavn. Ankomstlufthavn og forskellige statistikker er angivet i tabelvisualiseringen.](media/relationships-active-inactive/flight-report-design.png)
+![Diagram, der viser en rapportside med to udsnit og et tabelvisual. Udsnittene er Måned og Afgangslufthavn.](media/relationships-active-inactive/flight-report-design.png)
 
 Rapportsiden filtrerer efter Melbourne som afgangslufthavn, og tabelvisualiseringen grupperer efter ankomstlufthavne.
 
@@ -86,7 +86,7 @@ Lad os nu kigge på forskellige model- og rapporteringskrav:
 
 Her er et delvist modeldiagram over de to tabeller.
 
-![Et modeldiagram indeholder to tabeller: Salg og Dato. Tabellen Salg indeholder seks målinger. Relationsdesignet er beskrevet i følgende afsnit.](media/relationships-active-inactive/sales-model.png)
+![Diagram, der viser en model, som indeholder to tabeller: Salg og Dato. Tabellen Salg indeholder seks målinger.](media/relationships-active-inactive/sales-model.png)
 
 Der er to modelrelationer mellem tabellerne **Salg** og **Dato**. I tabellen **Salg** relaterer kolonnerne **Ordredato** og **Afsendelsesdato** til kolonnen **Dato** i tabellen **Dato**. I denne model er de to roller for tabellen **Dato** _ordredato_ og _afsendelsesdato_. Det er relationen til kolonnen **Ordredato**, der er aktiv.
 
@@ -110,7 +110,7 @@ CALCULATE(
 
 Dette modeldesign understøtter udarbejdelse af følgende rapportdesign.
 
-![En rapportside har ét udsnit og en tabelvisualisering. Udsnittet er Kvartal, og den månedlige salgsstatistik angives i tabelvisualiseringen.](media/relationships-active-inactive/sales-report-design.png)
+![Diagram, der viser en rapportside med ét udsnit og et tabelvisual. Udsnittet er Kvartal, og den månedlige salgsstatistik angives i tabelvisualiseringen.](media/relationships-active-inactive/sales-report-design.png)
 
 Rapportsiden filtrerer efter 4. kvartal 2019. Tabelvisualiseringen grupperer efter måned og viser forskellige salgsstatistikker. Målingerne **Ordrer** og **Afsendte ordrer** giver forskellige resultater. De bruger begge den samme opsummeringslogik (antal rækker i tabellen **Salg**), men forskellig filteroverførsel fra tabellen **Dato**.
 

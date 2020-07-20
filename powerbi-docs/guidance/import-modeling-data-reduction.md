@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 2c92fb47f576b750aa4815b56fabece2b5bc1de5
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 396c760a97911a35d7fdc0c608fc35de1cf6586d
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565965"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216799"
 ---
 # <a name="data-reduction-techniques-for-import-modeling"></a>Teknikker til datareduktion i forbindelse med importmodeller
 
@@ -84,7 +84,7 @@ I nogle tilfælde vil modelberegnede kolonner dog være et bedre valg. Det kan v
 
 Power Query-forespørgsler, der er beregnet til at understøtte dataintegration med andre forespørgsler, bør ikke indlæses i modellen. Hvis du vil undgå at indlæse forespørgslen i modellen, skal du sørge for at deaktivere indlæsning af forespørgsler i disse tilfælde.
 
-![Deaktivering af indlæsning af en Power Query-forespørgsel](media/import-modeling-data-reduction/power-query-disable-query-load.png)
+![Skærmbillede af Power Query med indstillingen "Aktivér indlæsning".](media/import-modeling-data-reduction/power-query-disable-query-load.png)
 
 ## <a name="disable-auto-datetime"></a>Deaktiver automatisk dato og klokkeslæt
 

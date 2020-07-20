@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 59cb62a9186da03a265fc3a8711d7275c3772af3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 39eef27e746e636ddb331d28a930c1cd0dca0a5d
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75623055"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214915"
 ---
 # <a name="disable-power-query-background-refresh"></a>Deaktiver baggrundsopdatering i Power Query
 
@@ -28,19 +28,19 @@ Når Power BI Desktop-filen indeholder mange forespørgsler, kan hentning og lag
 
 Du opnår en hurtigere opdatering ved at indstille Power BI Desktop-filen til at opdatere eksempelcachen _i baggrunden_. Du aktiverer den i Power BI Desktop ved at vælge _Filer > Indstillinger og indstillinger > Indstillinger_ og derefter vælge siden _Dataindlæsning_. Du kan derefter aktivere indstillingen **Tillad, at forhåndsvisning af data downloades i baggrunden**. Bemærk, at denne indstilling kun kan angives for den aktuelle fil.
 
-![Indstillinger for Power BI Desktop-baggrundsdata](media/power-query-background-refresh/power-query-options-background-data.png)
+![Skærmbillede af Power BI Desktop med indstillinger for baggrundsdata.](media/power-query-background-refresh/power-query-options-background-data.png)
 
 Aktivering af baggrundsopdatering kan resultere i, at eksempeldata bliver forældede. Hvis det sker, får du en meddelelse med den følgende advarsel i Power Query-editor:
 
-![Advarsel fra Power Query-editor om gamle eksempeldata](media/power-query-background-refresh/power-query-preview-data-old.png)
+![Skærmbillede af Power BI Desktop med advarsel fra Power Query-editor om gamle eksempeldata.](media/power-query-background-refresh/power-query-preview-data-old.png)
 
 Det er altid muligt at opdatere eksempelcachen. Du kan opdatere den til en enkelt forespørgsel eller til alle forespørgsler ved hjælp af kommandoen **Opdater eksempel**. Du finder den på båndet **Hjem** i Power Query-editor.
 
-![Kommandoer i Power Query-editor til opdatering af eksempeldata](media/power-query-background-refresh/power-query-refresh-preview-data.png)
+![Skærmbillede af Power BI Desktop med kommandoer i Power Query-editor til opdatering af eksempeldata.](media/power-query-background-refresh/power-query-refresh-preview-data.png)
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende ressourcer:
 
 - [Power Query-dokumentation](/power-query/)
-- Har du nogen spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 11/26/2019
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 471522e0f66fe4bf03a8c1616d1a24221149f2e0
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 422782c3036f94c1ea764f46135200116092d70c
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229898"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216239"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Opret forbindelse til Office365Mon med Power BI
 Du kan nemt analysere nedetid i Office 365 og ydeevnedata med Power BI og Office365Mon-skabelonappen. Power BI henter dine data, herunder om nedetid og fra tilstandsundersøgelser, og opretter derefter et færdigt dashboard og rapporter ud fra de pågældende data.
@@ -27,23 +27,23 @@ Opret forbindelse til [Office365Mon-skabelonappen](https://msit.powerbi.com/grou
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
 1. Vælg **Hent data** nederst i navigationsruden.
    
-   ![](media/service-connect-to-office365mon/pbi_getdata.png)
+   ![Skærmbillede af knappen Hent data i navigationsruden.](media/service-connect-to-office365mon/pbi_getdata.png)
 2. Markér **Hent** i feltet **Tjenester**.
    
-   ![](media/service-connect-to-office365mon/pbi_getservices.png) 
+   ![Skærmbillede af dialogboksen Tjenester, der viser knappen Hent.](media/service-connect-to-office365mon/pbi_getservices.png) 
 3. Vælg **Office365Mon** \> **Hent**.
    
-   ![](media/service-connect-to-office365mon/o365mon.png)
+   ![Skærmbillede af dialogboksen Office365Mon, der viser linket Hent.](media/service-connect-to-office365mon/o365mon.png)
 4. Som godkendelsesmetode skal du vælge **oAuth2** \> **Log på**.
    
    Når du bliver spurgt, skal du angive dine legitimationsoplysninger til din Office365Mon-administratorkonto og følge godkendelsesprocessen.
    
-   ![](media/service-connect-to-office365mon/creds.png)
+   ![Skærmbillede af dialogboksen Opret forbindelse til Office365Mon, der viser o Auth2 i feltet Godkendelsesmetode.](media/service-connect-to-office365mon/creds.png)
    
-   ![](media/service-connect-to-office365mon/creds2.png)
+   ![Skærmbillede af Office365Mon-logon, hvor du blive bedt om at angive dine legitimationsoplysninger.](media/service-connect-to-office365mon/creds2.png)
 5. Når Power BI har importeret dataene, vises der et nyt dashboard, en ny rapport og et nyt datasæt i navigationsruden. Nye elementer er markeret med en gul stjerne \*, vælg posten Office365Mon.
    
-   ![](media/service-connect-to-office365mon/dashboard4.png)
+   ![Skærmbillede af navigationsruden i Power BI, der viser dashboardet, rapporten og datasættet.](media/service-connect-to-office365mon/dashboard4.png)
 
 **Hvad nu?**
 

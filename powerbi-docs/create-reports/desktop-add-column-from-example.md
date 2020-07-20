@@ -9,17 +9,17 @@ ms.topic: how-to
 ms.date: 01/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9632bfaecc524aac95ec524cccb59ba08a7bc21f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 68f2dc14b713345796ba0472fc3d55f6baedf819
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229079"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263197"
 ---
 # <a name="add-a-column-from-examples-in-power-bi-desktop"></a>Tilføj en kolonne ud fra eksempler i Power BI Desktop
 Med *tilføj kolonne fra eksempler* i Power-forespørgselseditor kan du føje nye kolonner til din datamodel ved at angive en eller flere eksempelværdier for de nye kolonner. Du kan oprette de nye kolonneeksempler fra et valg eller angive input baseret på alle eksisterende kolonner i tabellen.
 
-![](media/desktop-add-column-from-example/add-column-from-example_01.png)
+![Skærmbillede af Power Query-editor, der viser, hvordan du tilføjer en kolonne fra eksempler i Power BI Desktop.](media/desktop-add-column-from-example/add-column-from-example_01.png)
 
 Brug af *tilføj kolonne fra eksempel* kan du hurtigt og nemt oprette nye kolonner, og det er specielt nyttig i følgende situationer:
 
@@ -165,4 +165,3 @@ Mange men ikke alle transformationer er tilgængelige, når du bruger **Tilføj 
 - Sum
 - Tangent
 - Inddeling/intervaller
-

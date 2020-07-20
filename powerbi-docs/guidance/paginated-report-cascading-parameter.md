@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 90f501b257313c48cbef13517747ff83cd9ea9d1
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 35a62923ba69520c1197e7bb80114a22ec1d9a20
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78920774"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214086"
 ---
 # <a name="use-cascading-parameters-in-paginated-reports"></a>Anvend overlappende parametre i sideinddelte rapporter
 
@@ -60,7 +60,7 @@ Lad os se på tre eksempler, som kan hjælpe dig med at begrænse store sæt til
 
 I dette eksempel interagerer rapportbrugeren med fem rapportparametre. Brugeren skal vælge land/område, stat/provins, by og derefter postnummer. En endelig parameter viser derefter de forhandlere, der er placeret i den pågældende geografiske placering.
 
-![På billedet vises fem rapportparametre: Country-region, State-province, City, Postal Code og Reseller. De første fire værdier er angivet, og forhandlerlisten er filtreret til kun fire elementer.](media/paginated-report-cascading-parameter/filter-by-related-columns-example.png)
+![Skærmbillede af parametre for sideinddelte rapporter i Power BI, der viser filtrering efter relaterede kolonner.](media/paginated-report-cascading-parameter/filter-by-related-columns-example.png)
 
 Sådan kan du udvikle de overlappende parametre:
 
@@ -134,7 +134,7 @@ Sådan kan du udvikle de overlappende parametre:
 
 I dette eksempel interagerer rapportbrugeren med en rapportparameter for at vælge det første bogstav i forhandleren. En anden parameter viser derefter de forhandlere, hvis navn begynder med det valgte bogstav.
 
-![På billedet vises to rapportparametre: Group og Reseller. Den første parameterværdi er angivet til bogstavet A, og listen over forhandlere er filtreret til mange elementer, der begynder med det pågældende bogstav.](media/paginated-report-cascading-parameter/filter-by-grouping-column-example.png)
+![Skærmbillede af parametre for sideinddelte rapporter i Power BI, der viser filtrering efter en grupperingskolonne.](media/paginated-report-cascading-parameter/filter-by-grouping-column-example.png)
 
 Sådan kan du udvikle de overlappende parametre:
 
@@ -196,7 +196,7 @@ GO
 
 I dette eksempel interagerer rapportbrugeren med en rapportparameter for at angive et søgemønster. En anden parameter viser derefter forhandlere, når navnet indeholder mønsteret.
 
-![På billedet vises to rapportparametre: Search og Reseller. Den første parameterværdi er angivet til teksten "red" og listen over forhandlere er filtreret til flere elementer, der indeholder den pågældende tekst.](media/paginated-report-cascading-parameter/filter-by-search-pattern-example.png)
+![Skærmbillede af parametre for sideinddelte rapporter i Power BI, der viser filtrering efter søgemønster.](media/paginated-report-cascading-parameter/filter-by-search-pattern-example.png)
 
 Sådan kan du udvikle de overlappende parametre:
 
@@ -242,7 +242,7 @@ I dette scenarie kan du bruge faktadata til at begrænse de tilgængelige værdi
 
 I dette eksempel interagerer rapportbrugeren med tre rapportparametre. De to første angiver et datointerval for salgsordredatoer. Den tredje parameter viser derefter de forhandlere, hvor der er oprettet ordrer i løbet af den pågældende tidsperiode.
 
-![På billedet vises tre rapportparametre: Start Order Date, End Order Date og Reseller. De to datoparametre angives for måneden januar 2020, og forhandlerlisten filtreres til mange elementer, der repræsenterer forhandlere, der har oprettet ordrer i løbet af denne måned.](media/paginated-report-cascading-parameter/filter-relevant-items-example.png)
+![Skærmbillede af parametre for sideinddelte rapporter i Power BI, der viser tre parametre: Start Order Date, End Order Date og Reseller.](media/paginated-report-cascading-parameter/filter-relevant-items-example.png)
 
 Sådan kan du udvikle de overlappende parametre:
 

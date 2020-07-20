@@ -10,12 +10,12 @@ ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: ff61cdf25c83b1062fd7c4a471a49269d20c57a8
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 195d1284fedc9f9c51c6fed2ff03cc0883b16405
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782405"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161715"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spor brugeraktiviteter i Power BI
 
@@ -145,7 +145,7 @@ Begræns resultaterne til aktiviteter, der kun er for Power BI, ved at følge di
 
 2. Vælg **Power BI-aktiviteter**.
 
-   ![Skærmbillede af Søgning i overvågningslog, hvor Power BI-aktiviteter er markeret.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
+   ![Skærmbillede af Søgning i overvågningslog, hvor Power BI-aktiviteter er fremhævet.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
 
 3. Klik et vilkårligt sted uden for markeringsfeltet for at lukke det.
 
@@ -157,13 +157,13 @@ Du kan søge i logfilerne efter datointerval ved hjælp af felterne **Startdato*
 
 Du får vist en fejlmeddelelse, hvis det valgte datointerval er mere end 90 dage. Hvis du bruger det maksimale datointerval på 90 dage, skal du vælge det aktuelle klokkeslæt som **Startdato**. Ellers får du vist en fejlmeddelelse om, at startdatoen ligger tidligere end slutdatoen. Hvis du har slået overvågning til inden for de sidste 90 dage, kan datointervallet ikke starte før den dato, hvor overvågning blev slået til.
 
-![Skærmbillede af Søgning i overvågningslog, hvor indstillingerne Startdato og Slutdato er markeret.](media/service-admin-auditing/search-audit-log-by-date.png)
+![Skærmbillede af Søgning i overvågningslog, hvor indstillingerne Startdato og Slutdato er fremhævet.](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ### <a name="search-the-audit-logs-by-users"></a>Søg i overvågningslogfilerne efter brugere
 
 Du kan søge efter overvågningslogposter for aktiviteter, der er udført af bestemte brugere. Angiv et eller flere brugernavne i feltet **Brugere**. Brugernavnet ligner en mailadresse. Det er den konto, som brugerne logger på Power BI med. Lad dette felt være tomt for at returnere poster for alle brugere (og tjenestekonti) i din organisation.
 
-![Søg efter brugere](media/service-admin-auditing/search-audit-log-by-user.png)
+![Skærmbillede af Søgning i overvågningslog, hvor Brugere er fremhævet.](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ### <a name="view-search-results"></a>Få vist søgeresultaterne
 
@@ -198,7 +198,7 @@ Følg disse trin for at eksportere Power BI-overvågningsloggen til en csv-fil.
 
 1. Vælg enten **Gem indlæste resultater** eller **Download alle resultater**.
 
-    ![Skærmbillede af indstillingen Eksportér resultater.](media/service-admin-auditing/export-auditing-results.png)
+    ![Skærmbillede af indstillingen Eksportér resultater, hvor Download alle resultater er fremhævet.](media/service-admin-auditing/export-auditing-results.png)
 
 ### <a name="use-powershell-to-search-audit-logs"></a>Brug PowerShell til at søge efter overvågningslogs
 

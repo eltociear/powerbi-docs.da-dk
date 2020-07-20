@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 10/24/2018
 ms.author: maggies
-ms.openlocfilehash: f69d55e6c4f0916ac2c0c5083e062b248c4c36de
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b877ec917953bb6ec456a0042035e498c591e1ed
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239429"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86213999"
 ---
 # <a name="how-to-find-your-report-server-product-key"></a>Sådan finder du produktnøglen til din rapportserver
 Se, hvordan du finder produktnøglen til din Power BI-rapportserver, så du kan installere din server i et produktionsmiljø.
@@ -29,9 +29,9 @@ Hvis du har købt Power BI Premium, finder du produktnøglen til Power BI-rappor
 
 ![Nøgle til Power BI-rapportserver i Premium-indstillinger](media/find-product-key/pbirs-product-key.png)
 
-Når du vælger **Power BI-rapportserver-nøgle**, vises der en dialogboks med din produktnøgle. Du kan kopiere den og bruge den til installationen.
+Når du vælger **Power BI-rapportserver-nøgle**, vises der en dialogboks med din produktnøgle. Du kan kopiere den og bruge den med installationen.
 
-![Power BI Report Server-produktnøgle](media/find-product-key/pbirs-product-key-dialog.png)
+![Produktnøgle til Power BI-rapportserver](media/find-product-key/pbirs-product-key-dialog.png)
 
 ## <a name="purchased-software-assurance-agreement"></a>Har købt en Software Assurance-aftale
 Hvis du har en SQL Server Enterprise SA-aftale, kan du få din produktnøgle fra [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/). Se efter den seneste version af SQL Server under den seneste servicepakke. Hvis du ikke kan se versionen der, skal du se under RTM-frigivelsen af den seneste SQL Server-version.
@@ -41,11 +41,11 @@ Hvis du har en SQL Server Enterprise SA-aftale, kan du få din produktnøgle fra
 > 
 > 
 
-![](media/find-product-key/vlsc-download.png "Volume Licensing Service Center")
-
-## <a name="next-steps"></a>De næste trin
-[Installér Power BI-rapportserver](install-report-server.md)  
-[Installér Power BI Desktop optimeret til Power BI Report Server](install-powerbi-desktop.md)  
+![Skærmbillede af SQL Server Enterprise, der viser fanen Downloads og nøgler med integrationsoplysninger for Power BI-rapport.](media/find-product-key/vlsc-download.png "Volume Licensing Service Center")
+ 
+## <a name="next-steps"></a>Næste trin
+[Installer Power BI-rapportserver](install-report-server.md)  
+[Installer Power BI Desktop optimeret til Power BI-rapportserver](install-powerbi-desktop.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 

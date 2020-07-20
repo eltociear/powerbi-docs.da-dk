@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 5a84d46743522a9070c4cd9b16f7a540e3c103df
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d5028e4aaa1bbb864f14c3f3cdb58d136275e5fc
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228630"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161232"
 ---
 # <a name="close-your-power-bi-account"></a>Luk din Power BI-konto
 
@@ -34,7 +34,7 @@ Hvis du har tilmeldt dig Power BI som enkeltperson, kan du lukke din konto via s
 
 1. Vælg en årsag til at lukke kontoen (1). Du kan også angive yderligere oplysninger (2). Vælg derefter **Luk konto**.
 
-    ![Skærmbillede af dialogboksen Luk konto, hvor indstillingen Luk konto er markeret.](media/service-admin-closing-your-account/close-account-settings-3.png)
+    ![Skærmbillede af dialogboksen Luk konto med felter, hvor der kan angives flere oplysninger om lukning af kontoen.](media/service-admin-closing-your-account/close-account-settings-3.png)
 
 1. Bekræft, at du vil lukke din konto.
 
@@ -42,12 +42,12 @@ Hvis du har tilmeldt dig Power BI som enkeltperson, kan du lukke din konto via s
 
     Du bør se en bekræftelse på, at Power BI har lukket din konto. Du kan genåbne din konto herfra, hvis det er nødvendigt.
 
-    ![Skærmbillede af dialogboksen Din konto er lukket.](media/service-admin-closing-your-account/close-account-settings-5.png)
+    ![Skærmbillede af bekræftelsesdialogboksen Din konto er lukket.](media/service-admin-closing-your-account/close-account-settings-5.png)
 
 ## <a name="managed-tenant-users"></a>Brugere i administreret lejer
 
 Hvis din organisation har tilmeldt dig Power BI, skal du kontakte din lejeradministrator. Bed vedkommende om at fjerne tildelingen af licensen fra din konto.
 
-![Administreret kontolukning](media/service-admin-closing-your-account/close-account-managed.png)
+![Skærmbillede af Administreret kontolukning.](media/service-admin-closing-your-account/close-account-managed.png)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -9,15 +9,15 @@ ms.topic: how-to
 ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5b649b3694eab5a573f814efd707155154d54b18
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c34244669b538a5c3138536adbfd022eb00e646d
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236681"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263027"
 ---
 # <a name="get-data-from-power-bi-desktop-files"></a>Hent data fra Power BI Desktop-filer
-![](media/service-desktop-files/pbid_file_icon.png)
+![Ikon for Power BI Desktop-fil](media/service-desktop-files/pbid_file_icon.png)
 
 **Power BI Desktop** gør business intelligence og rapportering let. Uanset om du opretter forbindelse til mange forskellige datakilder, forespørger om og transformerer data, modellerer dine data og opretter effektive og dynamiske rapporter, gør **Power BI Desktop** business intelligence-opgaver intuitive og hurtige. Hvis du ikke har erfaring med **Power BI Desktop**, kan du se under [Introduktion til Power BI Desktop](../fundamentals/desktop-getting-started.md).
 
@@ -38,13 +38,13 @@ Når du overfører data til **Power BI Desktop** og opretter nogle få rapporter
 
 1. I Power BI skal du klikke på **Hent data** i navigationsruden.
    
-   ![](media/service-desktop-files/pbid_get_data_button.png)
+   ![Skærmbillede af knappen Hent data i navigationsruden.](media/service-desktop-files/pbid_get_data_button.png)
 2. Under **Filer** skal du klikke på **Hent**.
    
-   ![](media/service-desktop-files/pbid_files_get.png)
+   ![Skærmbillede af dialogboksen Filer, der viser knappen Hent.](media/service-desktop-files/pbid_files_get.png)
 3. Find din fil. Power BI Desktop-filer har filtypeendelsen .PBIX.
    
-   ![](media/service-desktop-files/pbid_find_your_file.png)
+   ![Skærmbillede af fire felter, du kan bruge til at finde din fil, der viser Lokal fil, OneDrive – erhverv, OneDrive – personlig og SharePoint.](media/service-desktop-files/pbid_find_your_file.png)
 
 ## <a name="publish-a-file-from-power-bi-desktop-to-your-power-bi-site"></a>Publicer en fil fra Power BI Desktop på dit Power BI-websted
 Brugen af Publicer fra Power BI Desktop fungerer på samme måde som funktionen Hent Data i Power BI, når det gælder import af dine fildata fra et lokalt drev eller oprettelse af forbindelse til dem på OneDrive. Der er dog forskel: Hvis du uploader fra et lokalt drev, skal du opdatere dataene ofte for at sikre, at online og lokale versioner af dataene stemmer overens. 
@@ -53,12 +53,12 @@ Her er en kort vejledning, men du kan se under [Publicer fra Power BI Desktop](.
 
 1. I Power BI Desktop skal du klikke på **Filer** > **Publicer** > **Publicer på Power BI** eller klikke på **Publicer** på båndet.
    
-   ![](media/service-desktop-files/pbid_publish.png)
+   ![Skærmbillede af Publicer på båndet, der viser, hvordan du kan publicere fra Power BI Desktop.](media/service-desktop-files/pbid_publish.png)
 2. Log på Power BI. Det skal du kun gøre første gang.
    
    Når du er færdig, får du et link, du kan bruge til at åbne rapporten på Power BI-webstedet.
    
-   ![](media/service-desktop-files/pbid_publishing.png)
+   ![Skærmbillede af dialogboksen til bekræftelse af logon, der viser, at du har logget på, med et link til åbning af din rapport.](media/service-desktop-files/pbid_publishing.png)
 
 ## <a name="next-steps"></a>Næste trin
 **Udforsk dine data** – Når du har hentet data og rapporter fra din fil til Power BI, er det tid til at udforske dem. Hvis din fil allerede indeholder rapporter, vises de i navigationsruden **Rapporter**. Hvis din fil kun indeholder data, kan du oprette nye rapporter. Du skal bare højreklikke på det nye datasæt og derefter klikke på **Udforsk**.

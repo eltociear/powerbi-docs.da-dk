@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 11/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2bb48ad44c1f1d440fb5741fc55cc4a83f315dc8
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 129b4a22e17b5eab03018efae113ff47133e9dda
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237150"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214157"
 ---
 # <a name="use-quick-measures-for-common-calculations"></a>Brug hurtigmålinger til almindelige beregninger
 Du kan bruge *hurtigmålinger* til nemt og hurtigt at udføre almindelige og effektive beregninger. En hurtigmåling kører et sæt af DAX-kommandoer (Data Analysis Expressions) i baggrunden og viser derefter resultaterne, så du kan bruge dem i din rapport. Du behøver ikke at skrive DAX-formlen. Det bliver gjort for dig baseret på det input, du angiver i en dialogboks. Der er mange tilgængelige kategorier med beregninger og måder, som du kan tilpasse hver beregning til dine behov på. Det bedste af det hele er nok, at du kan se den DAX-formel, der udføres af hurtigmålingen, så du kan lære mere om DAX.
@@ -53,14 +53,14 @@ De fem beregningstyper for hurtigmåling med deres beregninger er følgende:
   * Total for måned til dato
   * Ændring år for år
   * Ændring kvartal for kvartal
-  * Månedsvis ændring
+  * Ændring måned for måned
   * Glidende gennemsnit
 * **Totaler**
   * Løbende total
   * I alt for kategori (filtre anvendt)
   * I alt for kategori (filtre ikke anvendt)
 * **Matematiske funktioner**
-  * Addition
+  * Tilføjelse
   * Subtraktion
   * Multiplikation
   * Division
@@ -90,7 +90,7 @@ I vinduet **Hurtigmålinger** under **Beregning** skal du vælge **Gennemsnit pr
 
 Træk **Gennemsnitlig enhedspris** fra ruden **Felter** til feltet **Basisværdi**. Lad **Kategori** blive stående i feltet **Kategori**, og vælg **OK**. 
 
-![](media/desktop-quick-measures/quick-measures_06.png)
+![Skærmbillede af Power BI Desktop, der viser indstillingen Filtre i ruden Felter.](media/desktop-quick-measures/quick-measures_06.png)
 
 Når du vælger **OK**, sker der flere interessante ting.
 
@@ -134,5 +134,5 @@ Der er nogle få begrænsninger og overvejelser, du skal være opmærksom på.
 Du kan bruge dine egne brugerdefinerede datotabeller med hurtigmålinger for time intelligence. Hvis du bruger en ekstern model i tabelformat, skal du sikre dig, at den primære datokolonne i tabellen blev markeret som en datotabel, som beskrevet i [Angiv mærke som datotabel, der skal bruges sammen med time intelligence](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular), da den blev bygget. Hvis du importerer din egen datotabel, skal du sørge for at markere den som en datotabel, som beskrevet i [Angiv og brug datotabeller i Power BI Desktop](desktop-date-tables.md).
 
 ### <a name="additional-information-and-examples"></a>Yderligere oplysninger og eksempler
-Har du en idé til en hurtigmåling, som ikke allerede findes? Fint. Se siden med [idéer til Power BI](https://go.microsoft.com/fwlink/?linkid=842906), og send dine idéer og DAX-formler til de hurtigmålinger, du godt kunne tænke dig i Power BI Desktop. Vi vil overveje at føje dem til listen over hurtigmålinger i en fremtidig version.
+Har du en idé til en hurtigmåling, som ikke allerede findes? Fantastisk! Se siden med [idéer til Power BI](https://go.microsoft.com/fwlink/?linkid=842906), og send dine idéer og DAX-formler til de hurtigmålinger, du godt kunne tænke dig i Power BI Desktop. Vi vil overveje at føje dem til listen over hurtigmålinger i en fremtidig version.
 

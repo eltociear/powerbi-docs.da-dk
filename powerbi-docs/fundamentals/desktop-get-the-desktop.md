@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a043e230ba74432254248ee70db495bc75a3d28b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3038463a9e3447ee9b38ae3cb178f3486d21bc80
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232499"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215104"
 ---
 # <a name="get-power-bi-desktop"></a>Hent Power BI Desktop
 Med Power BI Desktop kan du oprette avancerede forespørgsler, modeller og rapporter, som visualiserer data. Med Power BI Desktop kan du skabe datamodeller, oprette rapporter og dele dit arbejde ved at publicere det i Power BI-tjenesten. Power BI Desktop kan downloades gratis.
@@ -35,13 +35,13 @@ Der er et par måder, hvorpå du kan få adgang til den nyeste version af Power 
 
     - Fra [Power BI-tjenesten](https://docs.microsoft.com/power-bi/service-get-started) skal du vælge ikonet **Download** i øverste højre hjørne og derefter vælge **Power BI Desktop**.
 
-      ![Download Power BI Desktop fra Power BI-tjenesten](media/desktop-get-the-desktop/getpbid_downloads.png)
+      ![Skærmbillede af Microsoft Store, der viser indstillingen til download af Power BI Desktop.](media/desktop-get-the-desktop/getpbid_downloads.png)
 
    - Gå til [produktsiden Power BI Desktop](https://powerbi.microsoft.com/desktop/), og vælg derefter **Download gratis**.
   
 2. Når du er kommet til siden **Power BI Desktop** i Microsoft Store, skal du vælge **Installér**.
 
-     ![Hent Power BI Desktop fra Microsoft Store](media/desktop-get-the-desktop/getpbid_04.png)
+     ![Skærmbillede af Microsoft Store, der viser indstillingen til installation af Power BI Desktop.](media/desktop-get-the-desktop/getpbid_04.png)
 
 Der er nogle fordele ved at hente Power BI Desktop via Microsoft Store:
 
@@ -66,7 +66,7 @@ Følgende overvejelser og begrænsninger gælder, når du installerer Power BI D
   
   Du downloader den eksekverbare Power BI Desktop-fil fra Download Center ved at vælge **Download** via [siden Download Center](https://www.microsoft.com/download/details.aspx?id=58494). Angiv den 32-bit eller 64-bit installationsfil, du vil downloade.
 
-  ![Angiv Power BI Desktop-installationsfilen](media/desktop-get-the-desktop/download-desktop-exe.png)
+  ![Skærmbillede af Download Center, der viser afkrydsningsfeltet til download af 64-bit Power BI Desktop.](media/desktop-get-the-desktop/download-desktop-exe.png)
 
 ### <a name="install-power-bi-desktop-after-downloading-it"></a>Installér Power BI Desktop, når du har downloadet den
 Du bliver bedt om at køre installationsfilen, når du er færdig med at downloade den.
@@ -75,7 +75,7 @@ Fra og med udgivelsen i juli 2019 sendes Power BI Desktop som en enkelt .exe-ins
 
 Efter du har startet installationspakken, installeres Power BI Desktop som et program og køres på din computer.
 
-![Kør Power BI Desktop-installationen](media/desktop-get-the-desktop/designer_gsg_install.png)
+![Skærmbillede af Power BI Desktop-installationen, hvor installationsguiden vises.](media/desktop-get-the-desktop/designer_gsg_install.png)
 
 > [!NOTE]
 > Du kan ikke installere den downloadede version (MSI), som er udgået, og Microsoft Store-versionen af Power BI Desktop på samme computer, hvilket også kaldes for en *side om side*-installation. Du skal fjerne Power BI Desktop manuelt, før du downloader den fra Microsoft Store.
@@ -84,7 +84,7 @@ Efter du har startet installationspakken, installeres Power BI Desktop som et pr
 ## <a name="using-power-bi-desktop"></a>Brug Power BI Desktop
 Når du starter Power BI Desktop, vises der et velkomstbillede.
 
-![Skærmen Velkommen til Power BI Desktop](media/desktop-get-the-desktop/getpbid_05.png)
+![Skærmbillede af Power BI Desktop-installationen, hvor velkomstskærmen vises.](media/desktop-get-the-desktop/getpbid_05.png)
 
 Hvis det er første gang, du bruger Power BI Desktop, dvs. hvis installationen ikke er en opgradering, bliver du bedt om at udfylde en formular eller logge på Power BI-tjenesten, før du kan fortsætte.
 

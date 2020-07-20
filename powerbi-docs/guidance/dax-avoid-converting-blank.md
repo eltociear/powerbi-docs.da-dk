@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: aea24e96acadbf9fee9e6dbf3aa395e09ef8e541
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 6b130016bf4514b817edbf8c91cfb24d2063e6f1
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279635"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215454"
 ---
 # <a name="dax-avoid-converting-blanks-to-values"></a>DAX: Undgå at konvertere BLANKs til værdier
 
@@ -47,7 +47,7 @@ Desuden virker for mange grupperinger ofte også overvældende på dine rapportb
 
 Lad os se, hvad der sker, når målingen **Profit Margin** føjes til et tabelvisual med gruppering efter kunde.
 
-![Et tabelvisual indeholder tre kolonner: Customer, Sales og Profit Margin. I tabellen vises der ca. 10 rækker med data, men det lodrette rullepanel angiver, at der er mange flere rækker, der kan vises. Der vises ingen værdier i kolonnen Sales. I kolonnen Profit Margin vises der kun nul.](media/dax-avoid-converting-blank/table-visual-poor.png)
+![Skærmbillede af Power BI desktop, der viser et tabelvisual af data med én række pr. kunde. Salgsværdier er BLANK, og værdier i Profit Margin er nul %. ](media/dax-avoid-converting-blank/table-visual-poor.png)
 
 I tabelvisual'et vises der et overvældende antal rækker. (Der er reelt 18.484 kunder i modellen, og der gøres forsøg på at vise dem alle i tabellen.) Bemærk, at kunderne i visningen ikke har opnået noget salg. Men de vises alligevel, fordi målingen **Profit Margin** altid returnerer en værdi.
 
@@ -63,7 +63,7 @@ DIVIDE([Profit], [Sales])
 
 I tabelvisual'et vises der nu kun de kunder, der har haft salg inden for den aktuelle filterkontekst. Den forbedrede måling resulterer i en mere effektiv og praktisk oplevelse for dine rapportbrugere.
 
-![Der vises nu fire rækker med data i det samme tabelvisual. Hver række gælder for en kunde, der har en salgsværdi, og værdierne for Profit Margin har en anden værdi end nul.](media/dax-avoid-converting-blank/table-visual-good.png)
+![Skærmbillede af Power BI Desktop med tabelvisual af data, der har filtreret indhold.](media/dax-avoid-converting-blank/table-visual-good.png)
 
 > [!TIP]
 > Når det er nødvendigt, kan du konfigurere visualiseringen til at vise alle grupper (der returnerer værdier eller er BLANK) i filterkonteksten ved at aktivere indstillingen [Vis elementer uden data](../create-reports/desktop-show-items-no-data.md).
@@ -80,4 +80,3 @@ Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 
 - [Henvisning til DAX (Data Analysis Expressions)](/dax/)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

@@ -6,17 +6,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/01/2020
+ms.date: 07/14/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: b8fddd6b88effac3375840dd6034ca93cec52f12
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5cd0dd3b91109e63e5481e2f5e5516fd9ecd245c
+ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238322"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86385969"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Download en rapport fra Power BI-tjenesten til Power BI Desktop (prøveversion)
+      
 I Power BI Desktop kan du publicere en rapport (en *.pbix*-fil) fra din lokale computer til Power BI-tjenesten. Power BI-rapporter kan også gå i den modsatte retning: Du kan downloade en rapport fra Power BI-tjenesten til Power BI Desktop. Filtypenavnet for en Power BI-rapport er i begge tilfælde .pbix.
 
 Der er et par begrænsninger og overvejelser, du skal være opmærksom på, som behandles i afsnittet [Overvejelser og fejlfinding](#considerations-and-troubleshooting) i denne artikel.
@@ -46,6 +47,7 @@ Følg disse trin for at downloade .pbix-filen:
     ![Power BI Desktop-rapporteditor](media/service-export-to-pbix/power-bi-desktop.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
+
 Der er nogle få vigtige overvejelser og begrænsninger knyttet til download af en .pbix-fil fra Power BI-tjenesten.
 
 * Hvis du vil downloade filen, skal du have adgang til at redigere rapporten.
@@ -55,9 +57,12 @@ Der er nogle få vigtige overvejelser og begrænsninger knyttet til download af 
 * Du skal altid bruge den nyeste version af Power BI Desktop, når du åbner downloadede filer. Downloadede .pbix-filer åbnes muligvis ikke i versioner af Power BI Desktop, der ikke er de nyeste.
 * Hvis administratoren har deaktiveret muligheden for at downloade data, er denne funktion ikke synlig i Power BI-tjenesten.
 * Datasæt med trinvis opdatering kan ikke downloades til en .pbix-fil.
+* Datasæt, der er aktiveret for [store modeller,](../admin/service-premium-large-models.md) kan ikke downloades til en. pbix-fil.
+* Datasæt, der er ændret ved hjælp af [XMLA-slutpunkt](../admin/service-premium-connect-tools.md) kan ikke downloades til en. pbix-fil.
 * Hvis du opretter en Power BI-rapport, der er baseret på et datasæt i ét arbejdsområde og publicerer den i et andet arbejdsområde, kan du og dine brugere ikke downloade den. Overførselsfunktionen understøttes i øjeblikket ikke i dette scenarie.
 
 ## <a name="next-steps"></a>Næste trin
+
 Se videoen **Guy in a Cube** om denne funktion, den varer ét minut:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ymWqU5jiUl0" frameborder="0" allowfullscreen></iframe>

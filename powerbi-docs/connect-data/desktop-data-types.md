@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 06033a65acd090f0297a53bfbf0f0a004b68649a
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 40f85c40abd543e4f90a1f571ce648bfc4af7d9e
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83561564"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216461"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 I denne artikel beskrives de datatyper, der understøttes i Power BI Desktop, og DAX-udtryk (Data Analysis Expressions). 
@@ -28,11 +28,11 @@ I Power BI Desktop kan du angive en kolonnes datatype i forespørgselseditoren e
 
 **Datatyper i forespørgselseditoren**
 
-![](media/desktop-data-types/pbiddatatypesinqueryeditort.png)
+![Skærmbillede af båndet Datatype i Query-editor.](media/desktop-data-types/pbiddatatypesinqueryeditort.png)
 
 **Datatyper i datavisning eller rapportvisning**
 
-![](media/desktop-data-types/pbiddatatypesindatareportview.png)
+![Skærmbillede af båndet Datatype i Datavisning.](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
 Rullelisten Datatype i forespørgselseditoren har to datatyper, der ikke i øjeblikket er til stede i data- eller rapportvisningen: **Date/Time/Timezone** og **Duration**. Når en kolonne med disse datatyper indlæses i modellen og vises i data- eller rapportvisningen, konverteres en kolonne med datatypen Dato/klokkeslæt/tidszone til datatypen Dato/klokkeslæt, og en kolonne med datatypen Varighed konverteres til et decimaltal.
 

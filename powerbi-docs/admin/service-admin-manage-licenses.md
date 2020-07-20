@@ -10,12 +10,12 @@ ms.date: 04/08/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 8b110dceb7427e3aeefe8e7ef48e579943a7e6f3
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: af58a79c5c81e8f04e5d0ba714703c202f9c8000
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228442"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161347"
 ---
 # <a name="view-and-manage-power-bi-user-licenses"></a>Få vist og administrer Power BI-brugerlicenser
 
@@ -35,7 +35,7 @@ Du kan se, hvilke Power BI-abonnementer din organisation har, ved at følge diss
 
 Dine aktive Power BI-abonnementer vises sammen med dine andre abonnementer. Du kan måske se et uventet abonnement på Power BI (gratis), som vist her.
 
-  ![Brugeraktiveret gratis Power BI-abonnement](media/service-admin-manage-licenses/power-bi-free-user-activated.png)
+  ![Skærmbillede af Power BI-abonnementet, der viser et gratis abonnement.](media/service-admin-manage-licenses/power-bi-free-user-activated.png)
 
 Denne type abonnement oprettes for dig, når brugerne benytter sig af tilmelding via selvbetjening. Hvis du vil vide mere, skal du se [Power BI i din organisation](https://docs.microsoft.com/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide).
 

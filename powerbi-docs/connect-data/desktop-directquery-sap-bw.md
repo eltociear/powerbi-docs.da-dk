@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 644966663ea9d53b34861f1b33b2cab8f5fcee31
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b7cc8a159139cc53a0e243134b31305dff95812d
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223660"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216446"
 ---
 # <a name="connect-to-sap-business-warehouse-by-using-directquery-in-power-bi"></a>Opret forbindelse til SAP Business Warehouse ved hjælp af DirectQuery i Power BI
 Du kan oprette forbindelse til **SAP Business Warehouse (BW)** -datakilder direkte ved hjælp af **DirectQuery**. Da der arbejdes med OLAP/flere dimensioner i SAP BW, er der mange vigtige forskelle mellem DirectQuery via SAP BW og relationskilder som SQL Server. Disse forskelle kan opsummeres på følgende måde:
@@ -33,9 +33,9 @@ De primære yderligere begrænsninger for udformning, der gælder, når der opre
 
 * **Ingen understøttelse af beregnede kolonner:** Muligheden for at oprette beregnede kolonner er deaktiveret. Det betyder også, at gruppering og clustering, som opretter beregnede kolonner, ikke er tilgængelig.
 * **Yderligere begrænsninger for målinger:** Der er yderligere begrænsninger i DAX-udtryk, som kan bruges i målinger, der afspejler den samme understøttelse som den, der tilbydes af SAP BW.
-* **Ingen understøttelse af definition af relationer:** Relationerne er indbygget i den eksterne SAP-kilde, og der kan ikke defineres yderligere relationer i modellen.
+* **Ingen understøttelse af definerende relationer:** Relationerne er indbygget i den eksterne SAP-kilde, og der kan ikke defineres yderligere relationer i modellen.
 * **Ingen datavisning:** **Datavisningen** viser som regel dataene på detaljeniveau i tabeller. På grund af funktionsmåden for OLAP-kilder, f.eks. SAP BW, er denne visning ikke tilgængelig via SAP BW.
-* **Kolonne- og måleoplysninger er blevet rettet:** Listen over kolonner og mål, der er registreret på feltlisten, er rettet af den underliggende kilde og kan ikke ændres. Det er f.eks. ikke muligt at slette en kolonne eller at ændre datatypen (den kan dog omdøbes).
+* **Kolonne- og måleoplysninger er faste:** Listen over kolonner og mål, der er registreret på feltlisten, er fastsat af den underliggende kilde og kan ikke ændres. Det er f.eks. ikke muligt at slette en kolonne eller at ændre datatypen (den kan dog omdøbes).
 * **Yderligere begrænsninger i DAX:** Der er flere begrænsninger for DAX, der kan bruges i definitioner af målinger til at afspejle begrænsningerne i kilden. Det er f.eks. ikke muligt at bruge en aggregeringsfunktion via en tabel.
 
 ## <a name="additional-visualization-restrictions"></a>Yderligere visualiseringsbegrænsninger
@@ -48,7 +48,7 @@ De primære yderligere begrænsninger for visualisering, der gælder, når der o
 ## <a name="support-for-sap-bw-features"></a>Understøttelse af SAP BW-funktioner
 I følgende tabel vises alle SAP BW-funktioner, der ikke understøttes fuldt ud, eller som fungerer anderledes, når du bruger Power BI.   
 
-| Udvalgt | Beskrivelse |
+| Funktion | Beskrivelse |
 | --- | --- |
 | Lokale beregninger |Lokale beregninger, der er defineret i en BEx-forespørgsel, ændrer de tal, som vises via værktøjer som BEx Analyzer. De afspejles dog ikke i de tal, der returneres fra SAP, på den offentlige MDX-grænseflade. <br/> <br/> **Derfor stemmer de tal, der vises i et visuelt Power BI-element, ikke nødvendigvis overens med tallene for et tilsvarende visuelt element i et SAP-værktøj.**<br/> <br/>  Når der f.eks. oprettes forbindelse til en forespørgselskube fra en BEx-forespørgsel, der angiver, at aggregeringen skal være akkumuleret (dvs. løbende sum), modtager Power BI de grundlæggende tal, og denne indstilling ignoreres.  En analytiker kan derefter anvende en beregning af løbende sum lokalt i Power BI, men er nødt til at være forsigtig, når tallene fortolkes, hvis dette ikke er udført. |
 | Aggregeringer |I nogle tilfælde (især når det drejer sig om flere valutaer) stemmer de aggregerede tal, der returneres af SAPs offentlige grænseflade, ikke overens med dem, der vises af SAP-værktøjer. <br/> <br/> **Derfor stemmer de tal, der vises i et visuelt Power BI-element, ikke nødvendigvis overens med tallene for et tilsvarende visuelt element i et SAP-værktøj.** <br/> <br/> Totaler med forskellige valutaer kan f.eks. vises som "*" i BEx Analyzer, men totalen returneres af SAPs offentlige grænseflade uden oplysninger om, at et sådant aggregeret tal er meningsløst. Dermed vises tallet (f.eks. aggregeringen $, EUR og AUD) af Power BI. |
@@ -56,7 +56,7 @@ I følgende tabel vises alle SAP BW-funktioner, der ikke understøttes fuldt ud,
 | Måleenhed |Måleenheder (f.eks. 230 KG) afspejles ikke i Power BI. |
 | Nøgle i forhold til tekst (kort, mellem, lang) |For en SAP BW-egenskab, f.eks. CostCenter, viser feltlisten en enkelt kolonne, Cost Center.  Hvis denne kolonne bruges, vises standardteksten.  Ved at vise skjulte felter er det også muligt at se kolonnen med det entydige navn (der returnerer det entydige navn, som er tilknyttet af SAP BW og grunden til, at det er entydigt).<br/> <br/>  Nøglen og alle andre tekstfelter er ikke tilgængelige. |
 | Flere hierarkier for en egenskab |I **SAP** kan en egenskab have flere hierarkier. Når en egenskab derefter medtages i en forespørgsel i værktøjer som BEx Analyzer, kan brugeren vælge det hierarki, der skal bruges. <br/> <br/> I **Power BI** kan de forskellige hierarkier ses på feltlisten som forskellige hierarkier på den samme dimension.  Men hvis du vælger flere niveauer fra to forskellige hierarkier på den samme dimension, medfører det, at der returneres tomme data af SAP. |
-| Behandling af ujævne hierarkier |![](media/desktop-directquery-sap-bw/directquery-sap-bw_01.png) |
+| Behandling af ujævne hierarkier |![Skærmbillede af ujævnt indhold, der viser behandlingen af ujævne hierarkier.](media/desktop-directquery-sap-bw/directquery-sap-bw_01.png) |
 | Skaleringsfaktor/vend fortegn |I SAP kan et nøgletal have en skaleringsfaktor (f.eks. 1000) defineret som en formateringsfunktion, hvilket betyder, at alt det, der vises, skaleres med den pågældende faktor. <br/> <br/> Det kan på samme måde indeholde et egenskabssæt, der vender fortegnet. Hvis du bruger dette nøgletal i Power BI (i et visuelt element eller som en del af en beregning), medfører det, at det ikke-skalerede tal bruges (og fortegnet vendes ikke). Den underliggende skaleringsfaktor er ikke tilgængelig. I visuelle elementer i Power BI kan du styre skalaenheder, der vises på aksen (K,M,B), som en del af den visuelle formatering. |
 | Hierarkier, når niveauer vises/forsvinder dynamisk |Når du i starten opretter forbindelse til SAP BW, hentes oplysningerne på niveauerne i et hierarki, hvorved der oprettes et sæt felter på feltlisten. Dette cachelagres, og hvis niveauerne ændres, ændres felterne ikke, før opdateringen er aktiveret. <br/> <br/> Dette er kun muligt i **Power BI Desktop**. En sådan opdatering, der skal afspejle ændringer af niveauerne, kan ikke aktiveres i Power BI-tjenesten efter udgivelsen. |
 | Standardfilter |En BEx-forespørgsel kan indeholde standardfiltre, som automatisk anvendes af SAP BEx Analyzer. Disse filtre vises ikke, og derfor vil den tilsvarende brug i Power BI ikke som standard anvende de samme filtre. |
@@ -74,7 +74,7 @@ I følgende tabel vises alle SAP BW-funktioner, der ikke understøttes fuldt ud,
 | Karakteristiske strukturer | Eventuelle karakteristiske strukturer i den underliggende SAP BW-kilde vil resultere i, at der bliver fremvist en "eksplosion" af målinger i Power BI. Fire målinger vil f.eks. blive fremvist ved to målinger "Sales" og "Costs" og en karakteristisk struktur, der indeholder "Budget" og "Actual": Sales.Budget, Sales.Actual, Costs.Budget, Costs.Actual. |
 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om DirectQuery i følgende ressourcer:
 
 * [DirectQuery i Power BI](desktop-directquery-about.md)

@@ -1,18 +1,18 @@
 ---
 title: Opret en sideinddelt rapport med et delt datasæt i Power BI – Power BI Report Builder
 description: Opret en sideinddelt rapport i Power BI Report Builder baseret på et delt datasæt i Power BI.
-ms.date: 02/12/2020
+ms.date: 07/08/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: a13f346feeddc8196cb35e06acf027baeaa7a151
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d3955b8dde22863e7b0224d335b162846e0741d2
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239786"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216831"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Opret en sideinddelt rapport baseret på et delt datasæt i Power BI
 
@@ -104,6 +104,9 @@ Her kan du se trinnene til hentning af forespørgslen.
     ![Report Builder Query Designer](media/report-builder-shared-datasets/power-bi-report-builder-query-designer.png)
 
 1. Indsæt den forespørgsel, du kopierede fra Power BI Desktop, i den øverste boks.
+
+    > [!NOTE]
+    > Hvis din forespørgsel indeholder funktionen TOPN, skal du slette den fra din forespørgsel.
 
 1. Vælg **Udfør forespørgsel** (det røde udråbstegn, !) for at sikre dig, at forespørgslen fungerer. 
 

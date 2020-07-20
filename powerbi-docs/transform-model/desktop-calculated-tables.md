@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 3f23f18002ce12c3b6706469f36bde077e117941
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8c22b040a1767d616ce1f4d0e4e7fa26e55bfe19
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237890"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214290"
 ---
 # <a name="create-calculated-tables-in-power-bi-desktop"></a>Opret beregnede tabeller i Power BI Desktop
 I de fleste tilfælde opretter du tabeller ved at importere data til din model fra en ekstern datakilde. Men med *beregnede tabeller* kan du tilføje nye tabeller, der er baseret på data, du allerede har indlæst i modellen. I stedet for at forespørge efter og indlæse værdier i din nye tabels kolonner fra en datakilde kan du oprette en [DAX-formel (Data Analysis Expressions)](/dax/index), der definerer værdierne i tabellen.
@@ -31,11 +31,11 @@ Forestil dig f.eks., at du er personalechef, der har en tabel med **Northwest Em
 
 **Northwest Employees**
 
- ![](media/desktop-calculated-tables/calctables_nwempl.png)
+ ![Skærmbillede af Power B I Desktop, der viser tabeldata for Northwest Employees.](media/desktop-calculated-tables/calctables_nwempl.png)
 
 **Southwest Employees**
 
- ![](media/desktop-calculated-tables/calctables_swempl.png)
+ ![Skærmbillede af Power B I Desktop, der viser tabeldata for Northwest Employees.](media/desktop-calculated-tables/calctables_swempl.png)
 
 I Rapportvisning eller Datavisning i Power BI Desktop skal du i gruppen **Beregninger** under fanen **Udformning** vælge **Ny tabel**. Det er lidt nemmere at gøre i Datavisning, da du straks kan se den nye beregnede tabel.
 

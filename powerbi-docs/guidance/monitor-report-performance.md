@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 9245dd6c25917b2c8c861ea5b83710cd8b52bb22
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3c76fed8f5533ad339904c4f8251a7404270a0ae
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279014"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216597"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Overvåg rapportens ydeevne i Power BI
 
@@ -35,7 +35,7 @@ Brug [forespørgselsdiagnosticering](/power-query/QueryDiagnostics) i Power BI D
 > [!NOTE]
 > Forespørgselsdiagnosticering er i øjeblikket en funktion i prøveversion, og du skal derfor aktivere den i _Indstillinger_. Når den er aktiveret, er kommandoerne tilgængelige i vinduet Power-forespørgselseditor under fanen **Værktøjer** på båndet.
 
-![Billede, der viser fanen Værktøjer på båndet i Power-forespørgselseditor. På båndet vises kommandoen Diagnosticer trin, kommandoen Start diagnosticering og kommandoen Stop diagnosticering.](media/monitor-report-performance/power-query-diagnotics.png)
+![Skærmbillede af fanen Værktøjer på båndet i Power Query-editor, der viser kommandoen Diagnosticer trin, kommandoen Start diagnosticering og kommandoen Stop diagnosticering.](media/monitor-report-performance/power-query-diagnotics.png)
 
 ## <a name="use-performance-analyzer"></a>Brug Effektivitetsanalyse
 

@@ -8,18 +8,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 18dc88404b84e786bfee0a15ac169a6e0c1496e4
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: 8e1e590f871e1840209e72eb611bde7b21610c6e
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939933"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86162361"
 ---
 # <a name="microsofts-bi-transformation"></a>Microsofts BI-transformation
 
 Denne artikel er rettet mod it-medarbejdere og it-ledere. Du får mere at vide om vores BI-strategi og -vision, der gør det muligt for os løbende at udnytte vores data som et aktiv. Du får også mere at vide om, hvordan vi fremmer en datakultur, hvor Power BI danner grundlag for vores beslutningstagning.
 
-Først en smule baggrundsviden: I dag påvirker den enorme mængde data både forbrugere og virksomheder i en halsbrækkende fart. Succes i et så dataintensivt miljø kræver analytikere og ledere, der kan gøre de enorme datamængder til koncis indsigt. Udviklingen af Microsofts BI-værktøjer har revolutioneret den måde, som Microsoft selv udforsker deres data og når frem til den rigtige indsigt på, hvilket er nødvendigt for at gøre en forskel i virksomheden.
+Først en smule baggrundsviden: I dag påvirker den enorme mængde data både forbrugere og virksomheder i en halsbrækkende fart. Succes i et så dataintensivt miljø kræver analytikere og ledere, der kan gøre de enorme datamængder til koncis indsigt. Udviklingen af Microsofts BI-værktøjer har ændret den måde, som Microsoft selv udforsker deres data og når frem til den rigtige indsigt på, hvilket er nødvendigt for at gøre en forskel i virksomheden.
 
 Hvordan kan din organisation også revolutionere den måde, den arbejder med data på? Lad os hjælpe dig med nå frem til en forståelse ved at dele historien bag vores BI-transformationsrejse.
 

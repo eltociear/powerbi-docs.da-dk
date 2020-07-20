@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 25b5665aa531c347d43a197b53938aec569b9d2d
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: aed09a9cd26452a03363e8606e45938715595558
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83812168"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161669"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration af Power BI – ofte stillede spørgsmål
 
@@ -130,7 +130,7 @@ Brug følgende PowerShell-script til at deaktivere ad hoc-abonnementer. ([Få me
      connect-msolservice -credential $msolcred
     ```
 
-   ![Skærmbillede af logon til Azure Active Directory via PowerShell](media/service-admin-licensing-organization/azure-ad-sign-in.png)
+   ![Skærmbillede af Azure Active Directory-logon via PowerShell.](media/service-admin-licensing-organization/azure-ad-sign-in.png)
 
 1. Når du logger på, skal du køre følgende kommando for at se, hvordan din lejer i øjeblikket er konfigureret.
 

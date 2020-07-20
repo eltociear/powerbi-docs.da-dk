@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 9a7e7319bf8f5ccf517596d708dea4c1f4a41590
-ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
+ms.openlocfilehash: 6a21288a8f2946bd1e1a874d0810dd9241b1ffe2
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "83564443"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216754"
 ---
 # <a name="what-is-power-bi"></a>Hvad er Power BI?
 **Power BI** er en samling af softwaretjenester, apps og forbindelser, der arbejder sammen for at forvandle usammenhængende data til faste, visuelt fordybende og interaktive indsigter. Dine data kan være et Excel-regneark eller en samling cloudbaserede hybride data warehouses og hybride data warehouses i det lokale miljø. Med Power BI kan du nemt oprette forbindelse til dine datakilder, visualisere og finde vigtigt indhold samt dele det med alle, du vil.
@@ -24,7 +24,7 @@ Power BI består af:
 - En onlinetjeneste af typen SaaS (*Software som en service*) kaldet **Power BI-tjeneste**. 
 - Power BI-**mobilapps** til Windows-, iOS- og Android-enheder.
 
-![Power BI Desktop, tjeneste, mobil](media/power-bi-overview/power-bi-overview-blocks.png)
+![Diagram over Power BI Desktop, Power BI-tjeneste og Power BI – Mobil, der viser integrationen af dem.](media/power-bi-overview/power-bi-overview-blocks.png)
 
 Disse tre elementer &mdash; Power BI Desktop, tjenesten og mobilappsene &mdash; er designet til at lade dig oprette, dele og bruge forretningsindsigt på en måde, der opfylder dit behov og din rolle mest effektivt.
 
@@ -63,7 +63,7 @@ Men hvad hvis du ikke er klar til at flytte til et cloudbaseret miljø og har br
 
 Du kan oprette, udrulle og administrere Power BI – Mobil og sideinddelte rapporter i det lokale miljø med udvalget af brugsklare værktøjer og tjenester, som Power BI-rapportserver indeholder.
 
-![diagram til det lokale miljø](media/power-bi-overview/power-bi-report-server2.png)
+![Diagram over Power BI Desktop, Power BI-tjeneste og Power BI – Mobil, der viser integrationen af dem.](media/power-bi-overview/power-bi-report-server2.png)
 
 Power BI-rapportserveren er en løsning, som du udruller bag firewallen, og som derefter leverer dine rapporter til de rette brugere på forskellige måder, uanset om de skal vises i en webbrowser, på en mobilenhed eller som en mail. Og da Power BI-rapportserveren er kompatibel med Power BI i clouden, kan du flytte til clouden, når du er klar. 
 

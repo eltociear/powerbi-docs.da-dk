@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 344b041b8cca3e6ed4be1f40c0e783df18315679
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a41af59873aa8e0504e7ee808a2e87dba1af1121
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83324626"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86262882"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Stikprøvetagning af linjer med høj tæthed i Power BI
 Fra og med udgivelsen af **Power BI Desktop** fra juni 2017 og opdateringerne til **Power BI-tjenesten** findes der en ny algoritme til stikprøvetagning, som forbedrer visuelle elementer, der bruger stikprøver af data med høj tæthed. Du kan f.eks. oprette et kurvediagram ud fra dine detailbutikkers salgsresultater, hvor hver butik har mere end ti tusinde salgskvitteringer hvert år. I et kurvediagram med disse salgsoplysninger tages der en datastikprøve (der vælges en relevant repræsentation af disse data for at illustrere, hvordan salget varierer over tid) af dataene for hver enkelt butik, og der oprettes et kurvediagram med flere serier, som dermed repræsenterer de underliggende data. Dette er almindelig praksis ved visualisering af data med høj tæthed. Stikprøvetagning af data med høj tæthed er blevet forbedret i Power BI Desktop. Der er flere oplysninger om dette i denne artikel.
 
-![](media/desktop-high-density-sampling/high-density-sampling_01.png)
+![Skærmbillede af kurvediagrammer, der viser datastikprøvetagning med høj tæthed.](media/desktop-high-density-sampling/high-density-sampling_01.png)
 
 > [!NOTE]
 > Algoritmen **Stikprøvetagning med høj tæthed**, der er beskrevet i denne artikel, er tilgængelig både i **Power BI Desktop** og **Power BI-tjenesten**.
@@ -77,7 +77,7 @@ Denne situation vil ofte opstå med værktøjstip. De høje og lave værdier for
 ## <a name="how-to-turn-on-high-density-line-sampling"></a>Sådan slår du stikprøvetagning af linje med høj tæthed til
 Den nye algoritme er som standard slået **til**. Hvis du vil ændre denne indstilling, skal du gå til ruden **Formatering** og vælge kortet **Generelt**. Nederst kan du se en til/fra-skyder med navnet **Stikprøvetagning med høj tæthed**. Hvis du vil slå den fra, skal du skubbe den hen på **Fra**.
 
-![](media/desktop-high-density-sampling/high-density-sampling_02.png)
+![Skærmbillede af en stikprøvetagning med høj tæthed, hvor pile peger på ruden Formatering, kortet Generelt og skyderen Stikprøvetagning med høj tæthed.](media/desktop-high-density-sampling/high-density-sampling_02.png)
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 Den nye algoritme for stikprøvetagning af linjer med høj tæthed er en vigtig forbedring af Power BI, men der er et par ting, du skal vide, når du arbejder med værdier med høj tæthed og data.
@@ -91,7 +91,7 @@ Den nye algoritme for stikprøvetagning af linjer med høj tæthed er en vigtig 
 * Indstillingen **Vis elementer uden data** understøttes ikke med den nye algoritme.
 * Den nye algoritme understøttes ikke, når du bruger en direkte forbindelse til en model, der hostes i SQL Server Analysis Services (version 2016 eller tidligere). Den understøttes i modeller, der hostes i **Power BI** eller Azure Analysis Services.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 Du kan finde oplysninger om stikprøvetagning med høj tæthed i punktdiagrammer i følgende artikel.
 
 * [Stikprøvetagning med høj tæthed i Power BI-punktdiagrammer](desktop-high-density-scatter-charts.md)
