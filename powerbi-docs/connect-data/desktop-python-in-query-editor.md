@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5fb76d5f4e32c1ff7f9d68757e071f1bc69a7ddf
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 6e1c18f61cc822cd9656a49a65c98b225709c540
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223300"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215493"
 ---
 # <a name="use-python-in-query-editor"></a>Brug Python i Power Query-editor
 Du kan bruge **Python**, som er et programmeringssprog, der bruges af statistikere, datavidenskabsfolk og dataanalytikere, i **Forespørgselseditor** i Power BI Desktop. Denne integration af Phyton i **Forespørgselseditor** gør det muligt at udføre datarensning ved hjælp af R og udføre avanceret dataudformning og -analyser i datasæt, herunder fuldførelse af manglende data, forudsigelser og klyngedannelse, blot for at nævne nogle få. **Phyton** er et effektivt sprog og kan bruges i **Forespørgselseditor** til at forberede din datamodel og oprette rapporter.
@@ -27,19 +27,19 @@ Du kan se, hvordan du bruger **Phyton** i **Forespørgselseditor** ved at kigge 
 
 1. Først skal du indlæse data i **Power BI Desktop**. I dette eksempel skal du indlæse filen *EuStockMarkets_NA.csv* og vælge **Hent data > CSV** på båndet **Hjem** i **Power BI Desktop**.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-1.png)
+   ![Skærmbillede af båndet Hent data i Power BI Desktop, hvor CSV er markeret.](media/desktop-python-in-query-editor/python-in-query-editor-1.png)
 2. Vælg filen, og vælg **Åbn**, hvorefter CSV-filen vises i dialogboksen **CSV-fil**.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-2.png)
+   ![Skærmbillede af dialogboksen CSV-fil, som viser den valgte CSV.](media/desktop-python-in-query-editor/python-in-query-editor-2.png)
 3. Når dataene er indlæst, vises de i ruden **Felter** i Power BI Desktop.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-3.png)
+   ![Skærmbillede af ruden Felter, der viser de indlæste data.](media/desktop-python-in-query-editor/python-in-query-editor-3.png)
 4. Åbn **Forespørgselseditor** ved at vælge **Rediger forespørgsler** på fanen **Hjem** i **Power BI Desktop**.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-4.png)
+   ![Skærmbillede af forespørgselseditoren i Power BI Desktop, som viser valgmuligheden Rediger forespørgsler.](media/desktop-python-in-query-editor/python-in-query-editor-4.png)
 5. Vælg **Kør Python-script** under fanen **Transformér**, hvorefter editoren **Kør Python-script** vises (vises i næste trin). Bemærk, at der mangler data i række 15 og 20 på samme måde som i andre rækker, som du ikke kan se på det følgende billede. Fremgangsmåden nedenfor viser, hvordan Python kan udfylde rækkerne for dig.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-5.png)
+   ![Skærmbillede af fanen Transformer, der viser rækker med data.](media/desktop-python-in-query-editor/python-in-query-editor-5.png)
 6. I dette eksempel skal du angive følgende scriptkode:
    
     ```python
@@ -55,13 +55,13 @@ Du kan se, hvordan du bruger **Phyton** i **Forespørgselseditor** ved at kigge 
    
    Når koden indsættes i dialogboksen **Kør Python-script**, ser den ud på følgende måde:
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-5b.png)
+   ![Skærmbillede af dialogboksen Kør Python-script, der viser scriptkoden.](media/desktop-python-in-query-editor/python-in-query-editor-5b.png)
 7. Når du har trykket på **OK**, vises en advarsel om beskyttelse af personlige data i **Forespørgselseditor**.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-6.png)
+   ![Skærmbillede af ruden Forespørgselseditor, der viser advarslen om beskyttelse af personlige oplysninger.](media/desktop-python-in-query-editor/python-in-query-editor-6.png)
 8. Hvis Python-scriptene skal fungere korrekt i Power BI-tjenesten, skal alle datakilder være angivet til *offentlige*. Du kan få flere oplysninger om indstillinger for beskyttelse af personlige oplysninger og deres konsekvenser under [Niveauer for beskyttelse af personlige oplysninger](../admin/desktop-privacy-levels.md).
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-7.png)
+   ![Skærmbillede af dialogboksen Niveau for beskyttelse af personlige oplysninger, der viser, at Offentlig er valgt.](media/desktop-python-in-query-editor/python-in-query-editor-7.png)
    
    Bemærk den nye kolonne i ruden **Felter** ved navn *completedValues*. Bemærk, at der mangler et par dataelementer, f.eks. i række 15 og 18. Se, hvordan Python håndterer dette, i næste afsnit.
    
@@ -71,7 +71,7 @@ Med blot fem linjer Python-script udfyldte **Forespørgselseditor** de manglende
 ## <a name="creating-visuals-from-python-script-data"></a>Oprettelse af visuals fra Python-scriptdata
 Nu kan vi oprette en visual for at se, hvordan Python-scriptkoden udfyldte de manglende værdier ved hjælp af biblioteket *pandas* som vist på følgende billede:
 
-![](media/desktop-python-in-query-editor/python-in-query-editor-8.png)
+![Skærmbillede af det visuelle element, der viser de oprindelige data og fuldførte manglende værdier i Pandas-biblioteket.](media/desktop-python-in-query-editor/python-in-query-editor-8.png)
 
 Når denne visual er fuldført – og alle andre visuals, som du muligvis vil oprette ved hjælp af **Power BI Desktop** – kan du gemme **Power BI Desktop**-filen (der gemmes som en .pbix-fil) og derefter bruge datamodellen, herunder de Python-scripts, der er en del af modellen, i Power BI tjenesten.
 
@@ -88,11 +88,11 @@ Der er nogle begrænsninger til forespørgsler, der indeholder Python-scripts, d
 
 * Alle Python-indstillinger for datakilde for skal være angivet til *offentlige*, og alle andre trin i en forespørgsel, der er oprettet i **Forespørgselseditor**, skal også være offentlige. Du henter indstillinger for datakilde ved at vælge **Fil > Indstillinger og Indstillinger > Indstillinger for datakilde** i **Power BI Desktop**.
   
-  ![](media/desktop-python-in-query-editor/python-in-query-editor-9.png)
+  ![Skærmbillede af menuen Fil i Power BI Desktop, som viser valgmuligheden for indstilling af Datakilde.](media/desktop-python-in-query-editor/python-in-query-editor-9.png)
   
   Vælg datakilderne i dialogboksen **Indstillinger for datakilde**, og vælg derefter **Rediger tilladelser...** . Kontrollér, at **Niveau for beskyttelse af personlige oplysninger** er angivet til *Offentlig*.
   
-  ![](media/desktop-python-in-query-editor/python-in-query-editor-10.png)    
+  ![Skærmbillede af dialogboksen Indstillinger for datakilde, hvor Niveau for beskyttelse af personlige oplysninger er angivet til Offentlig.](media/desktop-python-in-query-editor/python-in-query-editor-10.png)    
 * Hvis du vil aktivere planlagt opdatering af dine Python-visuals eller datasættet, skal du aktivere **Planlagt opdatering** og have en **personlig gateway** installeret på den computer, der indeholder projektmappen og Python-installationen. Du kan få flere oplysninger om begge dele i det forrige afsnit i denne artikel, der indeholder links, så du kan få mere at vide.
 * Indlejrede tabeller (tabel over tabeller) understøttes ikke i øjeblikket 
 

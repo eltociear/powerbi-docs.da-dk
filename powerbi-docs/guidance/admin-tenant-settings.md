@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b024ff52585a4b9b46b60e3230a059b3d07d7b24
-ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
+ms.openlocfilehash: 7dd6c812116d9ba196b157bd12d6362c19ac64ec
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84273893"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216717"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Vejledning til indstillinger for lejeradministrator
 
@@ -41,7 +41,7 @@ Disse URL-adresser bliver tilgængelige som links i menuen Hjælp i Power BI.
 > [!NOTE]
 > Hvis du angiver URL-adressen til **Licensanmodninger** forhindres de enkelte brugere i at tilmelde sig den gratis 60-dages prøveversion af Power BI Pro. De vil i stedet blive henvist til dit interne websted med oplysninger om, hvordan de anskaffer sig en licens – gratis eller Pro.
 
-![Indstillingen "Publicer "Hent hjælp"-oplysninger" vises.](media/admin-tenant-settings/publish-get-help-information.png)
+![Skærmbillede af Power BI Desktop, der viser indstillinger for Hjælp og Support.](media/admin-tenant-settings/publish-get-help-information.png)
 
 ## <a name="manage-risk"></a>Administrer risiko
 Indstillingerne til at administrere risici kan hjælpe dig med at oprette politikker for styring af politikker i din Power BI-lejer. Vær dog opmærksom på, at styringsindstillingerne ikke er en sikkerhedsmåling. Hvis du f.eks. deaktiverer indstillingen **Eksportér data**, fjernes funktionen fra Power BI-brugergrænsefladen og hjælper på denne måde Power BI-brugere med at overholde organisationens styringspolitikker, men den forhindrer ikke brugerne i at eksportere data ved hjælp af andre indstillinger. Set fra et sikkerhedsmæssigt synspunkt har en Power BI-bruger med læseadgang til et datasæt tilladelse til at forespørge dette datasæt og kan bevare resultaterne, uanset hvilke funktioner der er tilgængelige i Power BI-brugergrænsefladen.
@@ -51,7 +51,7 @@ Du kan få besked via mail, hvis lejeren påvirkes af et tjenesteudfald eller en
 
 Vi anbefaler, at du aktiverer indstillingen **Modtag mails ved tjenesteudfald eller hændelser**. Den finder du i gruppen **Indstillinger for hjælp og support**. Tildel en eller flere _mailaktiverede_ sikkerhedsgrupper.
 
-![Indstillingen "Modtag mails ved tjenesteudfald eller hændelser" vises.](media/admin-tenant-settings/receive-email-notifications-for-service-outages-or-incidents.png)
+![Skærmbillede af Power B I Desktop, der viser indstillingen "Modtag mails ved tjenesteudfald eller hændelser".](media/admin-tenant-settings/receive-email-notifications-for-service-outages-or-incidents.png)
 
 ### <a name="information-protection"></a>Information Protection
 
@@ -74,7 +74,7 @@ Vi anbefaler, at du tildeler én eller flere sikkerhedsgrupper. Tilladelse til a
 
 Sørg for at inkludere instruktioner i din dokumentation, så brugerne (der ikke har tilladelse til at oprette arbejdsområder) ved, hvordan de kan anmode om et nyt arbejdsområde.
 
-![Indstillingen "Opret arbejdsområder" vises.](media/admin-tenant-settings/create-workspaces.png)
+![Skærmbillede af Power BI Desktop, der viser indstillingen "Opret arbejdsområder".](media/admin-tenant-settings/create-workspaces.png)
 
 ### <a name="share-content-with-external-users"></a>Del indhold med eksterne brugere
 
@@ -84,7 +84,7 @@ Indstillingen **Del indhold med eksterne brugere** er som standard aktiveret for
 
 Vi anbefaler, at du tildeler én eller flere sikkerhedsgrupper. Tilladelse til at dele indhold med eksterne brugere kan tildeles _eller afvises_ for disse grupper.
 
-![Indstillingen "Del indhold med eksterne brugere" vises.](media/admin-tenant-settings/share-content-with-external-users.png)
+![Skærmbillede af Power BI Desktop, der viser indstillingen "Del indhold med eksterne brugere".](media/admin-tenant-settings/share-content-with-external-users.png)
 
 ### <a name="publish-to-web"></a>Publicer på internettet
 
@@ -96,7 +96,7 @@ Hvis indstillingen er aktiveret, anbefaler vi, at du tildeler én eller flere si
 
 Desuden er der mulighed for at vælge, hvordan dine integreringskoder fungerer. Den er som standard angivet til **Tillad kun eksisterende koder**. Det betyder, at brugerne bliver bedt om at kontakte en Power BI-administrator for at oprette en integreringskode.
 
-![Indstillingen "Publicer på internettet" vises.](media/admin-tenant-settings/publish-to-web.png)
+![Skærmbillede af Power BI Desktop, der viser indstillingen "Udgiv på web".](media/admin-tenant-settings/publish-to-web.png)
 
 Vi anbefaler også, at du gennemgår [Publicer integreringskoder på internettet](https://app.powerbi.com/admin-portal/embedCodes) jævnligt. Fjern koder, hvis de medfører publicering af private eller fortrolige oplysninger.
 
@@ -111,7 +111,7 @@ Vi anbefaler, at du tildeler én eller flere sikkerhedsgrupper. Tilladelse til a
 > [!IMPORTANT]
 > Deaktivering af denne indstilling begrænser også brugen af funktionerne [Analysér i Excel](../collaborate-share/service-analyze-in-excel.md) og [liveforbindelse](../connect-data/desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) i Power BI-tjenesten.
 
-![Indstillingen "Eksportér data" vises.](media/admin-tenant-settings/export-data.png)
+![Skærmbillede af Power BI Desktop, der viser indstillingen "Eksportér data".](media/admin-tenant-settings/export-data.png)
 
 > [!NOTE]
 > Hvis brugerne tillader andre brugere at eksportere data, kan du tilføje et beskyttelseslag ved at gennemtvinge [databeskyttelse](../admin/service-security-data-protection-overview.md). Når det er konfigureret, blokeres eksport af indhold der er markeret som følsomt for ikke-godkendte brugere.
@@ -124,7 +124,7 @@ Indstillingen **Tillad, at eksterne gæstebrugere kan redigere og administrere i
 
 Hvis du skal godkende, at eksterne brugere kan redigere og administrere indhold, anbefaler vi, at du tildeler én eller flere sikkerhedsgrupper. Tilladelse til at publicere rapporter kan blive tildelt _eller afvist_ for disse grupper.
 
-![Indstillingen "Tillad, at eksterne brugere kan redigere og administrere indhold i organisationen" vises.](media/admin-tenant-settings/allow-external-guest-users.png)
+![Skærmbillede af Power BI Desktop, der viser indstillingen "Tillad, at eksterne brugere kan redigere og administrere indhold i organisationen".](media/admin-tenant-settings/allow-external-guest-users.png)
 
 ### <a name="developer-settings"></a>Indstillinger for udviklere
 
@@ -135,7 +135,7 @@ Der er to lejerindstillinger i forbindelse med [integration af Power BI-indhold]
 
 Hvis du ikke vil bruge udvikler-API'erne til at integrere indhold, anbefaler vi, at du deaktiverer dem. Du kan også konfigurere specifikke sikkerhedsgrupper, der udfører dette arbejde.
 
-![Udviklerindstillingerne vises.](media/admin-tenant-settings/developer-settings.png)
+![Skærmbillede af Power BI Desktop, der viser indstillingerne for udviklere.](media/admin-tenant-settings/developer-settings.png)
 
 ## <a name="next-steps"></a>Næste trin
 
@@ -145,4 +145,3 @@ Du kan finde flere oplysninger, der er relateret til denne artikel, i følgende 
 - [Administrer Power BI på administrationsportalen](../admin/service-admin-portal.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com)
-

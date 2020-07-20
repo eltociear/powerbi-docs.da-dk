@@ -1,23 +1,23 @@
 ---
-title: Installer og brug apps med dashboards og rapporter i Power BI
-description: Find, installer og brug apps i Power BI-tjenesten.
+title: Installér og brug apps med dashboards og rapporter i Power BI
+description: Find, installér og brug apps i Power BI-tjenesten.
 author: mihart
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 05/26/2020
+ms.date: 07/08/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8040822453050b06f29ee8c6799e26d1d0a6dbea
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7362eb683dae6318dc0e64de68afb8a8b57d62c6
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238457"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86162104"
 ---
-# <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer og brug apps med dashboards og rapporter i Power BI
+# <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installér og brug apps med dashboards og rapporter i Power BI
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
@@ -28,10 +28,10 @@ Nu hvor du har en [grundlæggende forståelse af apps](end-user-apps.md), skal v
 ## <a name="ways-to-get-a-new-app"></a>Måder at få en ny app på
 Der er flere måder at få en ny app på:
 * Du kan hente den på markedspladsen til Power BI-apps i Power BI.
-* Du kan bruge et direkte link til en app, du har modtaget fra appens opretter. 
-* En rapportdesigner i organisationen kan installere appen automatisk på din Power BI-konto.
+* Du kan bruge et direkte link til en app, som du har modtaget fra appdesigneren. 
+* En appdesigner i organisationen kan installere appen automatisk på din Power BI-konto.
 
-Du kan kun installere en app fra et direkte link i Power BI-mobilappen. Hvis appdesigneren installerer appen automatisk, kan du se den på din liste over apps.
+I Power BI-mobil kan du kun installere en app fra et direkte link. Hvis appdesigneren installerer appen automatisk, kan du se den på din liste over apps.
 
 ## <a name="apps-and-licenses"></a>Apps og licenser
 Det er ikke alle Power BI-brugere, der kan få vist og interagere med apps. 
@@ -41,6 +41,9 @@ Det er ikke alle Power BI-brugere, der kan få vist og interagere med apps.
 ## <a name="get-the-app-from-the-power-bi-apps-marketplace"></a>Hent appen på markedspladsen til Power BI-apps
 
 Du kan finde og installere apps på markedspladsen til Power BI-apps. På markedspladsen til apps kan du få både organisationsapps og skabelonapps.
+
+- En *organisationsapp* er tilgængelig til Power BI-brugere i din organisation. Disse apps omfatter også færdigbyggede dashboards og rapporter, som du kan bruge, som de er, eller som du kan tilpasse og dele. Din organisation kan have apps til sporing af salg, måling af præstation eller analyse af vellykkede ansættelser.
+- Der medfølger færdigbyggede dashboards og rapporter til en *skabelonapp*, som du kan bruge til at oprette forbindelse til mange af de tjenester, du bruger til at drive din forretning, f.eks. SalesForce, Microsoft Dynamics og Google Analytics.
 
 1. [Log på Power BI-tjenesten](./end-user-sign-in.md), hvis du ikke allerede er logget på. 
 
@@ -61,19 +64,19 @@ Du kan finde og installere apps på markedspladsen til Power BI-apps. På marked
 
    Søgefeltet er følsomt over for den fane, du har åbnet – der returneres kun apps af den valgte type. Hvis fanen **Alle apps** er åben, returneres både organisations- og skabelonapps. Det kan være forvirrende, når en organisationsapp og en skabelonapp har samme navn. Husk blot, at skabelonappfelterne har et indkøbsposeikon i øverste højre hjørne.
 
-Når du finder den ønskede app, skal du klikke på **Hent nu** for at installere den.
+Når du finder den ønskede app, skal du vælge **Hent nu** for at installere den.
 * Hvis du installerer en organisationsapp, føjes den straks til din liste over apps.
-* Hvis du installerer en skabelonapp, får du vist skabelonapptilbuddet i AppSource. Se [et eksempel](end-user-app-marketing.md) på, hvordan du henter og installerer en eksempelskabelonapp fra markedspladsen til Power BI-apps. 
+* Hvis du installerer en skabelonapp, får du vist skabelonapptilbuddet i AppSource. Se [et eksempel](end-user-app-marketing.md) på, hvordan du henter og installerer en eksempelskabelonapp fra markedspladsen til Power BI-apps. Appen installeres sammen med et arbejdsområde med samme navn.
 
    > [!NOTE]
-   > Hvis du benytter en gratis brugerlicens, kan du downloade apps, men vil ikke kunne se dem, medmindre du opgraderer til en Power BI Pro-konto, eller appen er gemt i en Premium-kapacitet. Du kan finde flere oplysninger under [licenser til forbrugere](end-user-license.md).
+   > Hvis du bruger en gratis brugerlicens, kan du downloade apps, men du kan ikke få dem vist, medmindre du opgraderer til en Power BI Pro-konto, eller appen gemmes i en delt Premium-kapacitet. Du kan finde flere oplysninger under [licenser til forbrugere](end-user-license.md).
 
-## <a name="install-an-app-from-a-direct-link"></a>Installer en app fra et direkte link
+## <a name="install-an-app-from-a-direct-link"></a>Installér en app fra et direkte link
 Du kan også installere en organisationsapp fra et direkte link i en mail fra appdesigneren.  
 
 **På computeren** 
 
-Når du vælger linket i mailen, åbner Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) appen i din browser. 
+Når du vælger linket i mailen, åbner Power BI-tjenesten ([https://powerbi.com](https://app/powerbi.com)) appen i din browser. 
 
 **På iOS- eller Android-mobilenhed** 
 
@@ -82,9 +85,40 @@ Når du vælger linket i mailen på din mobilenhed, installeres appen automatisk
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Interager med dashboards og rapporter i appen
 Brug lidt tid på at udforske dataene i de dashboards og rapporter, der udgør appen. Du har adgang til alle almindelige Power BI-interaktioner som filtrering, fremhævning, sortering og analyse.  Er du stadig lidt forvirret over forskellen mellem dashboards og rapporter?  Læs [artiklen om dashboards](end-user-dashboards.md) og [artiklen om rapporter](end-user-reports.md).  
 
+### <a name="open-an-app"></a>Åbn en app
+
+Du har installeret en app eller modtaget en app fra en kollega. Hvis du vil have vist denne app, skal du åbne indholdslisten over apps ved at vælge **Apps** i navigationsruden.
+
+![Skærmbillede af indholdslisten Apps](./media/end-user-app-view/power-bi-apps-list.png)
+
+Hold over appen, og vælg den for at åbne den. Afhængigt af appen kan du få vist en meddelelse, der ligner denne:
+
+![Skærmbillede af tre valgmuligheder: udforsk, opret forbindelse og tilpas](./media/end-user-app-view/power-bi-customize.png)
+
+Du kan finde en vejledning i, hvilken indstilling du skal vælge, under [Installér skabelonapps](../connect-data/service-template-apps-install-distribute.md).
+
+Hold over appen for at få vist detaljer, og vælg appkortet for at åbne appen.
+
+![Skærmbillede af tilstanden for at holde over en app med navn, tidsstempel, ejer og handlinger. ](./media/end-user-app-view/power-bi-apps-hover.png)
+
+Appen åbnes. Alle apps ser forskellige ud – forskelligt layout og forskellige visualiseringer, farver og indstillinger. Men alle apps har nogle fælles funktioner.
+
+![Skærmbillede af appen Salg og marketing med forskellige områder, der er identificeret med tal ](./media/end-user-app-view/power-bi-app-numbered.png)
+
+1. Navn på appen og seneste opdateringstidspunkt. Vælg rullepilen for at finde ejeren og kontakten i forbindelse med hjælp.
+1. Vælg **Power BI** for at vende tilbage til [Hjem](end-user-home.md).
+1. Din handlingslinje. 
+1. Lærredet på rapportsiden.
+1. Navigationsruden i appen.  Under navnet på appen er der en liste over rapportsider. Vælg et navn på rapportsiden for at åbne den. I øjeblikket er siden *Rentesats* åben. 
+1. Vælg pilen for at udvide ruden **Filtre**.
+
+Du kan også udforske det tilknyttede arbejdsområde. [Få mere at vide om arbejdsområder](end-user-workspaces.md)
+
+![Skærmbillede af arbejdsområdet Salg og marketing, der viser én rapport og ét datasæt. ](./media/end-user-app-view/power-bi-new-workspace.png)
+
 ## <a name="update-an-app"></a>Opdater en app 
 
-Fra tid til tiden kan appudviklere udgive nye versioner af deres apps. Hvordan du får den nye version, afhænger af, hvordan du har modtaget originalen. 
+Af og til udgiver appdesignere nye versioner af deres apps. Hvordan du får den nye version, afhænger af, hvordan du har modtaget originalen. 
 
 * Hvis du har fået appen fra din organisation, er opdateringen til den nye version helt gennemsigtig – du behøver ikke at foretage dig noget. 
 
@@ -94,7 +128,7 @@ Fra tid til tiden kan appudviklere udgive nye versioner af deres apps. Hvordan d
 
         <!--![App update notification](./media/end-user-app-view/power-bi-new-app-version-notification.png) -->
 
-    2. Når du bliver bedt om at installere den opdaterede app, skal du vælge **Installer**. 
+    2. Når du bliver bedt om at installere den opdaterede app, skal du vælge **Installér**. 
 
         ![Installér opdatering](./media/end-user-app-view/power-bi-install.png) 
 
@@ -106,6 +140,11 @@ Fra tid til tiden kan appudviklere udgive nye versioner af deres apps. Hvordan d
     > Hvis du installerer en ny version, overskrives alle de ændringer, du har foretaget af rapporter og dashboards. Hvis du vil beholde dine opdaterede rapporter og dashboards, kan du gemme dem med et andet navn eller på en anden placering, før du installerer dem. 
 
     4. Når du har installeret den opdaterede version, skal du vælge **Opdater app** for at fuldføre opdateringsprocessen. 
+
+## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
+
+- Muligheden for at installere apps kan slås til og fra af din Power BI-administrator. Kontakt it-afdelingen eller helpdesk, hvis du har brug for at få denne funktion aktiveret.    
+- Brugen af apps kræver enten en Pro-licens, eller at appen er gemt i en delt Premium-kapacitet. [Få mere at vide om licenser](end-user-license.md).
 
 
 ## <a name="next-steps"></a>Næste trin

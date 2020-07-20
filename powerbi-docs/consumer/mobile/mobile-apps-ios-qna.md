@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: de20bc743c582d42d81f2d4c2544e3acf5f1b99c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 60f49775db1f461ff5105ada63920686e5ab5cbf
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234502"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264919"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Virtuel Spørgsmål og svar-analytiker i iOS-apps – Power BI
 
@@ -49,40 +49,40 @@ Når du har fuldført forudsætningerne, er du klar til at prøve den virtuelle 
 3. Skriv **vis**, tryk på **salg** på listen over forslag > **Send** ![ikonet Send](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Vis salg](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-show-sales.png)
-4. Tryk på **efter** blandt nøgleordene, og tryk derefter på **element** på listen over forslag > **Send** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+4. Tryk på **af** fra søgeordene, og tryk derefter på **element** fra listen over forslag > **Send** ![Ikonet Send](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Salg efter vare](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-sale-by-item.png)
-5. Tryk på **som** blandt nøgleordene, tryk på ikonet for søjlediagrammet ![](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png), og tryk derefter på **Send** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+5. Tryk på **som** blandt nøgleordene, tryk på ikonet for søjlediagrammet ![Ikonet søjlediagram](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png), og tryk derefter på **Send** ![Ikonet Send](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 6. Tryk vedvarende på det resulterende diagram og derefter på **Udvid**.
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-expand-feedback.png)
+    ![Skærmbillede af et søjlediagram, der viser en pil, som peger på Udvid.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-expand-feedback.png)
 
     Diagrammet åbnes i fokuseringstilstand i appen.
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-expanded-chart.png)
+    ![Skærmbillede af et søjlediagram, der viser diagrammets fokustilstand.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-expanded-chart.png)
 7. Tryk på pilen i øverste venstre hjørne for at gå tilbage til den virtuelle Spørgsmål og svar-analytikers chatvindue.
 8. Tryk på X til højre for tekstfeltet for at slette teksten og starte forfra.
-9. Prøv et nyt spørgsmål: Tryk på **bedste** blandt nøgleordene, tryk på **salg efter gennemsnit $/enhed l** > **Send** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+9. Prøv et nyt spørgsmål: Tryk på **bedste** blandt søgeordene, tryk på **salg efter gennemsnit $/enhed l** > **Send** ![Ikonet Send](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
-10. Vælg **efter** blandt nøgleordene, tryk på **klokkeslæt** på listen over forslag øverst > **Send** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+    ![Skærmbillede af et spørgsmål, der viser det største salg efter gennemsnitsbeløb pr. enhed.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
+10. Vælg **efter** blandt nøgleordene, tryk på **klokkeslæt** på listen over forslag øverst > **Send** ![Ikonet Send](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
-     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-by-time.png)
-11. Skriv **som**, vælg ikonet for kurvediagrammet ![](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) på listen over forslag > **Send** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+     ![Skærmbillede af et diagram, der viser det største salg efter gennemsnitsbeløb pr. enhed over tid.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-by-time.png)
+11. Skriv **som**, vælg ikonet for kurvediagrammet ![ikonet for Diagram](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) på listen over forslag > **Send** ![Ikonet Send](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-as-line.png)
+    ![Skærmbillede af et søjle- og kurvediagram, der viser en pil fra kolonnen til kurvediagrammet](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-as-line.png)
 
 ## <a name="try-saying-your-questions"></a>Prøv at sige dine spørgsmål
 Nu kan du stille spørgsmål om dine data i Power BI-mobilappen ved at tale i stedet for at indtaste.
 
 1. Tryk på ikonet for den virtuelle Spørgsmål og svar-analytiker ![Ikonet for den virtuelle Spørgsmål og svar-analytiker](././media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png) i handlingsmenuen i bunden af siden (øverst på siden på en iPad).
-2. Tryk på mikrofonikonet ![](media/mobile-apps-ios-qna/power-bi-ios-qna-mic-icon.png).
+2. Tryk på mikrofonikonet ![Mikrofonikon](media/mobile-apps-ios-qna/power-bi-ios-qna-mic-icon.png).
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-qna-mic-on.png)
+    ![Skærmbillede af et spørgsmål, der viser, at mikrofonen er aktiv.](media/mobile-apps-ios-qna/power-bi-ios-qna-mic-on.png)
 
-1. Når mikrofonikonet er aktiveret, kan du begynde at tale. Sig f.eks. "gennemsnitlig enhedspris efter klokkeslæt", og tryk derefter på **Send** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+1. Når mikrofonikonet er aktiveret, kan du begynde at tale. Sig f.eks. "gennemsnitlig enhedspris efter klokkeslæt", og tryk derefter på **Send** ![ikon for Send](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-qna-speech-complete.png)
+    ![Skærmbillede af et spørgsmål, der viser, at talen er fuldført.](media/mobile-apps-ios-qna/power-bi-ios-qna-speech-complete.png)
 
 ### <a name="questions-about-privacy-when-using-speech-to-text"></a>Har du spørgsmål vedrørende anonymitet, når der bruges tale til tekst?
 Se afsnittet om talegenkendelse under [Nyheder i iOS](https://go.microsoft.com/fwlink/?linkid=845624) i Apple iOS Developer-vejledninger.
@@ -91,7 +91,7 @@ Se afsnittet om talegenkendelse under [Nyheder i iOS](https://go.microsoft.com/f
 * Har du brug for hjælp? Sig bare "Hej" eller "Hjælp", hvorefter du kan få hjælp til at starte et nyt spørgsmål.
 * Vil du gerne give feedback om resultaterne? Tryk vedvarende på et diagram eller et andet resultat, og vælg derefter glad eller sur smiley.
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-feedback.png)
+    ![Skærmbillede af et søjlediagram, der viser et feedback med en pil, som peger på et smilende ansigt.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-feedback.png)
 
     Din feedback er anonym og hjælper os med at forbedre vores svar på spørgsmål.
 

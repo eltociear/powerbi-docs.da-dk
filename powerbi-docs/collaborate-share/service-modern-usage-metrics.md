@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ee5536f2c4026ceb019c5f89b6045afd44b35529
-ms.sourcegitcommit: 0b1e96de184caf2371adedcc3ee43bcb88048187
+ms.openlocfilehash: 380fe94a123c26d7502ce68bc21372f791a3508f
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85299612"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86162037"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience"></a>Overvåg forbrugsdata i den nye arbejdsområdeoplevelse
 
@@ -82,7 +82,7 @@ Den forbedrede rapport med forbrugsdata indeholder følgende rapportsider:
 | Rapportanvendelse | Unikke seere | En seer er en person, der har åbnet rapporten mindst én gang i tidsperioden (baseret på AAD-brugerkontoen). |
 | Rapportanvendelse | Visningstendens | Visningstendensen afspejler ændringer i antallet af visninger over tid. Den første halvdel af den valgte tidsperiode sammenlignes med den anden halvdel. |
 | Rapportanvendelse | Datoudsnit | Du kan ændre tidsperioden for siden Rapportanvendelse, f.eks. for at beregne ugentlige tendenser eller tendenser for hver anden uge. I nederste venstre hjørne af siden Rapportanvendelse kan du bestemme den tidligste og seneste dato, hvor forbrugsdata er tilgængelige for den valgte rapport. |
-| Rapportanvendelse | Rangering | På baggrund af antallet af visninger viser rangeringen rapportens popularitet sammenlignet med alle andre rapporter i organisationen.   |
+| Rapportanvendelse | Rangering | På baggrund af antallet af visninger viser rangeringen rapportens popularitet sammenlignet med alle andre rapporter i organisationen. En rangering på 1 medfører, at rapporten har flest visninger af alle rapporter i organisationen.   |
 | Rapportanvendelse | Rapportvisninger pr. dag | Samlet antal visninger pr. dag. |
 | Rapportanvendelse | Rapportseere pr. dag | Samlet antal forskellige brugere, der fik vist rapporten (baseret på AAD-brugerkontoen). |
 | Rapportanvendelse | Distributionsmetode | Hvordan brugerne fik adgang til rapporten, f.eks. ved at være medlem af et arbejdsområde, ved at få rapporten delt med dem eller ved at installere en app. |
@@ -258,6 +258,8 @@ Foruden ovenstående forskelle mellem tidligere og forbedrede rapporter med forb
 - Det kan tage nogle få minutter at initialisere datasættet til rapporten med forbrugsdata, hvilket resulterer i visning af en tom rapport med forbrugsdata, fordi Power BI-brugergrænsefladen ikke venter på, at opdateringen fuldføres. Kontrollér opdateringshistorikken under indstillingerne for datasættet til rapporten med forbrugsdata for at bekræfte, at opdateringshandlingen lykkedes.
 - Initialiseringen af datasættet til rapporten med forbrugsdata mislykkes muligvis, hvis der opstår timeout under opdateringen. Se afsnittet Fejlfinding herunder for at løse dette problem.
 - Deling er deaktiveret for rapporten med forbrugsmålepunkter. Hvis du vil give personer læseadgang til rapporten, skal du først give dem adgang til arbejdsområdet.
+- I nogle scenarier kan du opleve, at ydelsesdataene mangler. Det kan ske, hvis en bruger åbner en rapport og interagerer med den, før den er helt indlæst, eller hvis der opstod en fejl under indlæsningen af rapporten.
+- Ydelsesdata afhænger af, at klienten/enheden sender data til Power BI. Ydelsesdataene når muligvis Power BI afhængigt af netværksventetid, programmer til blokering af annoncer, firewalls og netværksregler angivet af din organisation. Derfor kan ydelsesdataene kun vise et eksempel og kan ikke inkludere eller vise alle brugere. 
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 
@@ -309,7 +311,7 @@ Platformen angiver den teknologi, som en seer brugte til at åbne rapporten: via
 
 **Spørgsmål:** Hvordan fungerer rapportrangering?
 
-**Svar:** På baggrund af antallet af visninger viser rangeringen rapportens popularitet sammenlignet med alle andre rapporter i organisationen.
+**Svar:** På baggrund af antallet af visninger viser rangeringen rapportens popularitet sammenlignet med alle andre rapporter i organisationen. En rangering på 1 medfører, at rapporten har flest visninger af alle rapporter i organisationen.
 
 **Spørgsmål:** Hvad er "unavngivne brugere"?
 

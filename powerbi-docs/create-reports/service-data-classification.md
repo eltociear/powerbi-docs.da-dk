@@ -1,5 +1,5 @@
 ---
-title: Dashboard data-klassificering
+title: Dashboard-dataklassificering
 description: Få mere at vide om dashboard-dataklassificering, herunder hvordan en administrator skal konfigurere det, og hvordan dashboard-ejere kan ændre klassificeringen.
 author: maggiesMSFT
 ms.reviewer: ''
@@ -9,30 +9,30 @@ ms.topic: how-to
 ms.date: 08/10/2017
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4179244dde8f5ebf2cc78bb84c4141e3bb3a6364
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d8c7a8532122487bdf3bcd718eb4089cb7c67008
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238369"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86262805"
 ---
-# <a name="dashboard-data-classification"></a>Dashboard data-klassificering
+# <a name="dashboard-data-classification"></a>Dashboard-dataklassificering
 Hvert dashboard er forskelligt, og afhængigt af den datakilde, du opretter forbindelse til, opdager du sandsynligvis, at du og de kollegaer, du deler med, skal tage forskellige forholdsregler, afhængigt af dataenes følsomhed. Nogle dashboards skal aldrig deles med personer uden for dit firma, eller udskrives, mens andre frit kan deles. Ved at bruge dashboard-dataklassifikation kan du øge bevidstheden hos dem, der ser dine dashboards, om, hvilket sikkerhedsniveau, der skal bruges. Du kan mærke dine dashboards med klassificeringer, der er defineret af din virksomheds it-afdeling, så alle, der ser indholdet, har samme forståelse af dataenes følsomhed.
 
-![](media/service-data-classification/dashboard_tagged_as_hbi.png)
+![Skærmbillede af et dashboard, der viser dataklassificering fra en prøve.](media/service-data-classification/dashboard_tagged_as_hbi.png)
 
 ## <a name="data-classification-tags"></a>Dataklassificeringsmærker
 Dataklassificeringsmærker vises ud for navnet på dashboardet, så alle, der ser det, kender sikkerhedsniveauet, der skal anvendes til dashboardet, og de data, det indeholder.
 
-![](media/service-data-classification/tag_next_to_title.png)
+![Skærmbillede af et dashboard, der viser et dataklassificeringsmærke ud for navnet på dashboardet.](media/service-data-classification/tag_next_to_title.png)
 
 De vises også ud for dashboardfeltet i listen Favoritter.
 
-![](media/service-data-classification/tag_on_dashboard_tile.png)
+![Skærmbillede af listen Favoritter, der viser et dataklassifikationsmærke ud for dashboardfeltet på listen Favoritter.](media/service-data-classification/tag_on_dashboard_tile.png)
 
 Når du holder markøren over mærket, får du vist klassificeringens fulde navn.
 
-![](media/service-data-classification/tag_tooltip.png)
+![Skærmbillede af den HBI-kode, der viser det fulde navn på klassificeringen, når du holder markøren over mærket. ](media/service-data-classification/tag_tooltip.png)
 
 Administratorer kan også angive en URL-adresse for et mærke for at angive flere oplysninger.
 
@@ -48,10 +48,10 @@ Benyt følgende fremgangsmåde for at ændre klassificeringstypen:
 
 1. Gå til indstillinger for dashboardet ved at vælge **ellipsen** ud for dashboardets navn og vælge **Indstillinger**.
    
-    ![](media/service-data-classification/dashboard_settings.png)
+    ![Skærmbillede af et dashboard, der viser valgmuligheden Indstillinger.](media/service-data-classification/dashboard_settings.png)
 2. Under Dashboard-indstillinger kan du se den aktuelle klassificering af dit dashboard og bruge rullemenuen for at ændre klassificeringstypen.
    
-    ![](media/service-data-classification/classification_setting_dropdown.png)
+    ![Skærmbillede af indstillingerne for et dashboard, der viser en aktuel klassificering og rullelisten til valg af dataklassificering.](media/service-data-classification/classification_setting_dropdown.png)
 3. Vælg **Anvend**, når du er færdig.
 
 Når du har anvendt ændringen, kan alle, som du har delt med, se opdateringen, næste gang de indlæser dashboardet.
@@ -61,14 +61,14 @@ Dataklassificering er konfigureret af den globale administrator i din organisati
 
 1. Vælg tandhjulsikonet for Indstillinger, og vælg **Administrationsportal**.
    
-    ![](media/service-data-classification/admin_portal_in_settings.png)
+    ![Skærmbillede af tandhjulet for Indstillinger, som viser valget af administrationsportal.](media/service-data-classification/admin_portal_in_settings.png)
 2. Slå **Dataklassificering for dashboards og rapporter** *Til* på fanen **Lejerindstillinger**.
    
-    ![](media/service-data-classification/data_classification_switch_location.png)
+    ![Skærmbillede af administrationsportalen, der viser lejerindstillingerne og dataklassificeringen for valg af dashboards og rapporter.](media/service-data-classification/data_classification_switch_location.png)
 
 Når det er slået til, bliver du præsenteret for en formular til at oprette forskellige klassificeringer i din organisation.
 
-![](media/service-data-classification/blank_classification_form.png)
+![Skærmbillede af en formular, der viser feltposter for forskellige klassifikationer i din organisation.](media/service-data-classification/blank_classification_form.png)
 
 Hver klassificering har et **navn** og en **oversigt**, der vises på dashboardet. For hver klassificering kan du bestemme, om oversigtsmærket skal vises på dashboardet eller ej, ved at vælge **Vis mærke**. Hvis du vælger ikke at vise klassificeringstypen i dashboardet, vil ejeren stadig kunne se typen ved at kontrollere dashboardets indstillinger. Du kan eventuelt også tilføje en **URL-adresse**, der indeholder flere oplysninger om din organisations klassificeringsretningslinjer og krav til brug.  
 
@@ -76,7 +76,7 @@ Det sidste, du skal beslutte, er hvilken klassificeringstype, der skal bruges so
 
 Når du udfylder formularen med klassificeringstyper, skal du vælge **Anvend** for at gemme ændringerne.
 
-![](media/service-data-classification/filled_in_classification_form.png)
+![Skærmbillede af en formular, der viser fyldte poster med de klassificeringstyper, der kan anvendes.](media/service-data-classification/filled_in_classification_form.png)
 
 På dette tidspunkt vil alle dashboards få tildelt standardklassificeringen. Dashboardejere kan nu opdatere klassificeringstypen til den, der er relevant for deres indhold. Du kan komme tilbage hertil på et senere tidspunkt for at tilføje eller fjerne klassificeringstyper eller ændre standarden.  
 

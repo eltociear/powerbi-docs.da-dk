@@ -2,20 +2,20 @@
 title: Føj kommentarer til dashboards og rapporter
 description: I dette dokument kan du se, hvordan du føjer kommentarer til et dashboard, en rapport eller en visualisering, og hvordan du bruger kommentarer til at føre samtaler med samarbejdspartnere.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/18/2020
+ms.date: 07/07/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 4d9581a617241afbe668d8e1810c0c3f60a0835c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 76a3bd087899126d1c3aa9eed6eb7d20b1441bff
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236035"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161831"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Føj kommentarer til et dashboard eller en rapport
 
@@ -33,7 +33,7 @@ Tilføj en personlig kommentar, eller start en samtale om et dashboard eller en 
 ## <a name="how-to-use-the-comments-feature"></a>Sådan bruges kommentarfunktionen
 Kommentarer kan føjes til et helt dashboard, til individuelle visualiseringer på et dashboard, til en rapportside, til en sideinddelt rapport og til individuelle visualiseringer på en rapportside. Tilføj en generel kommentar eller en kommentar, der er målrettet bestemte kolleger.  
 
-Når du føjer en kommentar til en rapport, henter Power BI de aktuelle værdier for filter og udsnit. Det betyder, at når du vælger eller reagerer på en kommentar, så kan en rapportside eller en visualisering i rapporten blive ændret for at vise dig den filtrerede værdi eller det udsnit, der var aktivt, da kommentaren blev tilføjet.  
+Når du tilføjer en kommentar i en rapport, henter Power BI de aktuelle værdier for filter og udsnit og opretter et [bogmærke](end-user-bookmarks.md). Det betyder, at når du vælger eller reagerer på en kommentar, så kan en rapportside eller en visualisering i rapporten blive ændret for at vise dig den filtrerede værdi eller det udsnit, der var aktivt, da kommentaren blev tilføjet.  
 
 ![video om rapport med filtre](media/end-user-comment/power-bi-comment.gif)
 
@@ -46,15 +46,15 @@ Processen til tilføjelse af kommentarer til et dashboard eller en rapport er de
 
 1. Åbn et Power BI-dashboard eller en rapport, og vælg ikonet **Kommentarer**. Herefter åbnes dialogboksen Kommentarer.
 
-    ![ikonet Kommentarer](media/end-user-comment/power-bi-comment-menu.png)
+    ![ikonet Kommentarer](media/end-user-comment/power-bi-comments-icon.png)
 
     Her kan vi se, at opretteren af dashboardet allerede har tilføjet en generel kommentar.  Alle, der har adgang til dette dashboard, kan se denne kommentar.
 
-    ![ikonet Kommentarer](media/end-user-comment/power-bi-first-comments.png)
+    ![ikonet Kommentarer](media/end-user-comment/power-bi-first-comment.png)
 
 2. Hvis du vil besvare kommentaren, skal du vælge **Besvar**, skrive dit svar og vælge **Send**.  
 
-    ![Ikonet til besvarelse af kommentarer](media/end-user-comment/power-bi-comment-reply.png)
+    ![Ikonet til besvarelse af kommentarer](media/end-user-comment/power-bi-comments-reply.png)
 
     Power BI sender som standard dit svar til den kollega, der begyndte kommentartråden, i dette tilfælde Aaron. 
 
@@ -62,7 +62,7 @@ Processen til tilføjelse af kommentarer til et dashboard eller en rapport er de
 
  3. Hvis du vil tilføje en kommentar, der ikke er en del af en eksisterende tråd, skal du angive din kommentar i det øverste tekstfelt.
 
-    ![Ikonet til besvarelse af kommentarer](media/end-user-comment/power-bi-new-comments.png)
+    ![Ikonet til besvarelse af kommentarer](media/end-user-comment/power-bi-new-commenting.png)
 
     Kommentarerne til dette dashboard ser nu sådan ud.
 
@@ -74,11 +74,11 @@ Ud over at du kan føje kommentarer til et helt dashboard eller en hel rapport, 
 1. Hold over visualiseringen, og vælg **Flere indstillinger** (...).    
 2. Vælg **Åbn kommentarer** på rullelisten.
 
-    ![Tilføj en kommentar er førstevalg](media/end-user-comment/power-bi-report-comment.png)  
+    ![Tilføj en kommentar er førstevalg](media/end-user-comment/power-bi-comment-reports.png)  
 
 3.  Dialogboksen **Kommentarer** åbnes, og de andre visualiseringer på siden nedtones. Dette visuelle element har endnu ikke nogen kommentarer. 
 
-    ![Tilføj en kommentar til dig selv](media/end-user-comment/power-bi-comment-column.png)  
+    ![Tilføj en kommentar til dig selv](media/end-user-comment/power-bi-comments-column.png)  
 
 4. Skriv din kommentar, og vælg derefter **Post**.
 
@@ -94,13 +94,15 @@ Ud over at du kan føje kommentarer til et helt dashboard eller en hel rapport, 
 5. Vælg **Luk** for at vende tilbage til dashboardet eller rapporten.
 
 ### <a name="get-your-colleagues-attention-by-using-the--sign"></a>Få dine kollegers opmærksomhed ved hjælp af @-tegnet
-Uanset om du opretter en kommentar til et dashboard, en rapport, et felt eller en visualisering, kan du få dine kollegers opmærksomhed ved at bruge "\@"-symbolet.  Når du skriver "\@"-symbolet, åbnes der en rulleliste i Power BI, hvor du kan søge efter og vælge personer i din organisation. Bekræftede navne med "\@"-symbolet foran vises med blå skrift. 
+Uanset om du opretter en kommentar til et dashboard, en rapport, et felt eller en visualisering, kan du få dine kollegers opmærksomhed ved at bruge "\@"-symbolet.  Når du skriver "\@"-symbolet, åbnes der en rulleliste i Power BI, hvor du kan søge efter og vælge personer i din organisation. Bekræftede navne med "\@"-symbolet foran vises med blå skrift. @mentioned-personerne modtager straks en mail i deres indbakke, og hvis de bruger en Power BI-mobilapp, modtager de en pushmeddelelse på deres enhed. De kan åbne kommentaren direkte fra meddelelsen, få vist dataene og svare i overensstemmelse hermed.
 
-Her er en samtale, jeg har med visualiserings*designeren*. De bruger @-symbolet til at sikre, at jeg ser kommentaren. Jeg ved, at denne kommentar er til mig. Når jeg åbne dette appdashboard i Power BI, vælger jeg **Kommentarer** i overskriften. Ruden **Kommentarer** viser vores samtale.
+Her er en samtale, jeg har med visualiserings*designeren*. De bruger @-symbolet til at sikre, at jeg ser kommentaren. Jeg modtager en meddelelse og vælger linket for at åbne dette dashboard og den relevante samtale.  
 
 ![Tilføj en kommentaromtale](media/end-user-comment/power-bi-comment-convo.png)  
 
+## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 
+- Bogmærker optages ikke, når du besvarer en samtale. Kun den første kommentar i en samtale opretter et bogmærke.
 
 ## <a name="next-steps"></a>Næste trin
 Tilbage til [visualiseringer til forbrugere](end-user-visualizations.md)    

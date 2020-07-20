@@ -5,14 +5,14 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 04/05/2020
+ms.date: 07/14/2020
 ms.author: painbar
-ms.openlocfilehash: 62d95c09761a22f514bb55b5eadd82a6214fdbeb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f9b6efd07aad3d2058e49f81ae21095b618123ee
+ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235130"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86385923"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Du kan fjernkonfigurere Power BI-appen ved hjælp af MDM-værktøjet (Mobile Device Management)
 
@@ -22,6 +22,7 @@ Appen Power BI – Mobil understøtter følgende konfigurationsscenarier:
 
 * Konfiguration af rapportserveren (iOS og Android)
 * Indstillinger for databeskyttelse (iOS og Android)
+* Deaktiver enkeltlogon (iOS og Android)
 * Indstillinger for interaktioner (iOS og Android)
 
 ## <a name="report-server-configuration-ios-and-android"></a>Konfiguration af rapportserveren (iOS og Android)
@@ -46,6 +47,19 @@ Power BI-mobilappen til iOS og Android giver administratorer mulighed for at til
 >[!NOTE]
 >Indstillinger for databeskyttelse vil kun blive anvendt på Android-enheder, der understøtter biometrisk godkendelse.
 
+## <a name="disable-single-sign-on-ios-and-android"></a>Deaktiver enkeltlogon (iOS og Android)
+
+Som standard giver Power BI-mobilappen en bruger en praktisk enkeltlogons-oplevelse ved at minimere det antal gange, brugeren skal angive et brugernavn og en adgangskode. Denne enkeltlogons-funktionsmåde er baseret på den antagelse, at enheden er brugerens personlige enhed, og at der kun er én bruger, der bruger enheden og apps på den.
+
+Administratorer kan aktivere indstillingen **DisableSingleSignOn** i app-konfigurationsfilen for at fjernkonfigurere appen for at deaktivere enkeltlogon og eksplicit anmode om brugerens adgangskode, når vedkommende logger på.
+
+Denne indstilling er kun for administratorer og konfigureres via fjernforbindelse. Slutbrugeren kan ikke ændre denne indstilling.
+
+| Nøgle | Type | Beskrivelse |
+|---|---|---|
+| com.microsoft.powerbi.mobile.DisableSingleSignOn | Boolesk | Standardværdien er False.<br><br>Når en bruger logger af, genbruger appen ikke eksisterende legitimationsoplysninger, men beder den næste bruger om at angive en adgangskode for at godkende og oprette forbindelse til Power BI-tjenesten.
+ |
+
 ## <a name="interaction-settings-ios-and-android"></a>Indstillinger for interaktioner (iOS og Android)
 
 Power BI-appen til iOS og Android giver administratorer mulighed for at konfigurere interaktionsindstillinger, hvis det er besluttet, at standardindstillinger for interaktion skal ændres på tværs af grupper af brugere i en organisation.
@@ -57,7 +71,7 @@ Power BI-appen til iOS og Android giver administratorer mulighed for at konfigur
 |---|---|---|---|
 | com.microsoft.powerbi.mobile.ReportTapInteraction | Streng |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Konfigurer, om et tryk på en visualisering også foretager en datapunktsmarkering. |
 | com.microsoft.powerbi.mobile.EnableMultiSelect | Boolesk |  <nobr>True</nobr><br><nobr>False</nobr> | Konfigurerer, om et tryk på et datapunkt erstatter den aktuelle markering eller føjes til den aktuelle markering. |
-| com.microsoft.powerbi.mobile.RefreshAction | Streng |  <nobr>pull-to-refresh</nobr><br> knappen | Konfigurer, om brugeren skal have en knap til at opdatere rapporten, eller om vedkommende skal bruge trækopdatering. |
+| com.microsoft.powerbi.mobile.RefreshAction | Streng |  <nobr>pull-to-refresh</nobr><br>knappen | Konfigurer, om brugeren skal have en knap til at opdatere rapporten, eller om vedkommende skal bruge trækopdatering. |
 | com.microsoft.powerbi.mobile.FooterAppearance | Streng |  forankret<br>dynamisk | Konfigurer, om rapportfoden skal fastgøres nederst i rapporten eller skjules automatisk. |
 
 ## <a name="deploying-app-configuration-settings"></a>Udrulning af konfigurationsindstillinger for apps

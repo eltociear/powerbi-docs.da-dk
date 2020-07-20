@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/02/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 17c19fbdf1c5057d287f50531f2b679a19e3a30e
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: ca0a33f42c1b2fd466df9af59bb649ae73d7d594
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939452"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161370"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B
 
@@ -62,7 +62,7 @@ Følg disse trin for at sende en invitation via Azure Portal.
 
 1. Angiv en **mailadresse** og **personlig meddelelse**.
 
-    ![Skærmbillede af dialogboksen Ny gæstebruger på Azure AD-portalen.](media/service-admin-azure-ad-b2b/azure-ad-portal-invite-message.png)
+    ![Skærmbillede af dialogboksen Ny gæstebruger, hvor felterne mail og meddelelse er fremhævet.](media/service-admin-azure-ad-b2b/azure-ad-portal-invite-message.png)
 
 1. Vælg **Inviter**.
 
@@ -70,17 +70,17 @@ Hvis du vil invitere mere end én gæstebruger, skal du bruge PowerShell eller o
 
 Gæstebrugerne skal vælge **Introduktion** i den mailinvitation, de modtager. Gæstebrugeren føjes derefter til organisationen.
 
-![Skærmbillede af Mailinvitation til gæstebruger.](media/service-admin-azure-ad-b2b/guest-user-invite-email.png)
+![Skærmbillede af mail-invitationen til Gæstebrugere med Start her fremhævet.](media/service-admin-azure-ad-b2b/guest-user-invite-email.png)
 
 ### <a name="ad-hoc-invites"></a>Ad hoc-invitationer
 
 Du kan når som helst invitere en ekstern bruger ved at føje personen til dit dashboard eller din rapport via delingsfunktionen eller til din app via adgangssiden. Her er et eksempel på, hvad du skal gøre, når du inviterer en ekstern bruger til at anvende en app.
 
-![Skærmbillede af Ekstern bruger, der er føjet til Appens adgangsliste i Power BI.](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
+![Skærmbillede af en ekstern bruger, der er føjet til appens adgangsliste i Power BI.](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
 
 Gæstebrugeren modtager en mail med besked om, at du har delt appen med vedkommende.
 
-![Skærmbillede af mail om, at appen er delt med gæstebrugeren](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
+![Skærmbillede af den mail, som gæstebrugeren modtager, når appen deles.](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
 
 Gæstebrugeren skal logge på med sin mailadresse for organisationen. Gæstebrugeren vil blive bedt om at acceptere invitationen, når vedkommende har logget på. Efter logon åbnes appen for gæstebrugeren. For at vende tilbage til appen skal vedkommende tilføje linket som bogmærke eller gemme mailen.
 

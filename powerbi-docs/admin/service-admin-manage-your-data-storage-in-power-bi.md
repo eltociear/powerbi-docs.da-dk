@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 02/25/2020
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: bd671e32167837a5b8b96388bb2687616e6cada5
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 50d3adef65791c3fecd1a2125f67318fb8ab0298
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228573"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214256"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Administrer datalager i Power BI-arbejdsområder
 
@@ -48,21 +48,19 @@ Inkluderet i dit datalager er dine egne datasæt og Excel-rapporter samt de elem
 
 Størrelsen på et dashboard, som du deler, varierer, afhængigt af hvad der er fastgjort til det. Hvis du f.eks. fastgør elementer fra to rapporter, der er en del af to forskellige datasæt, omfatter størrelsen begge datasæt.
 
-<a name="manage"/>
-
 ## <a name="manage-items-you-own"></a>Administrer de elementer, du ejer
 
 Se, hvor meget datalager, du bruger på din Power BI-konto, og administrer din konto.
 
 1. Hvis du vil administrere dit eget lager, skal du gå til **Mit arbejdsområde** i navigationsruden.
    
-    ![Mit arbejdsområde](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
+    ![Skærmbillede af navigationsruden med Mit arbejdsområde fremhævet.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
 
-2. Vælg tandhjulsikonet ![Tandhjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i øverste højre hjørne \> **Administrer personligt lager**.
+2. Vælg tandhjulsikonet ![Tandhjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i øverste højre hjørne **Administrer personligt lager**.
    
     Den øverste bjælke viser, hvor meget af din maksimale lagerkapacitet du har brugt.
    
-    ![Administrer lagergrænse](media/service-admin-manage-your-data-storage-in-power-bi/pbi_persnlstorage.png)
+    ![Skærmbillede af grænsen Administrer lager, som viser, hvor meget lagerplads der er brugt.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_persnlstorage.png)
    
     Datasæt og rapporter er opdelt på to faner:
    
@@ -74,14 +72,14 @@ Se, hvor meget datalager, du bruger på din Power BI-konto, og administrer din k
 Vær opmærksom på, at du eller en anden muligvis har rapporter og dashboards, der er baseret på et datasæt. Hvis du sletter datasættet, fungerer disse rapporter og dashboards ikke længere.
 
 ## <a name="manage-your-workspace"></a>Administrer dit arbejdsområde
-1. Vælg pilen ud for **Arbejdsområder** \> vælg navnet på arbejdsområdet.
+1. Vælg pilen ud for **Arbejdsområder**, og vælg navnet på arbejdsområdet.
    
-    ![Vælg et arbejdsområde](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
-2. Vælg tandhjulsikonet ![tandhjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i øverste højre hjørne \> **Administrer gruppelager**.
+    ![Skærmbillede af valgmuligheden Arbejdsområde, der viser arbejdsområdet Salgsgruppe.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
+2. Vælg tandhjulsikonet ![tandhjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i øverste højre hjørne **Administrer gruppelager**.
    
     Den øverste bjælke viser, hvor meget af gruppens maksimale lagerkapacitet der er brugt.
    
-    ![Administrer lager for arbejdsområde](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
+    ![Skærmbillede af Administrer lager, der viser, hvor meget af salgsgruppens lager der er brugt.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
    
     Datasæt og rapporter er opdelt på to faner:
    
@@ -102,17 +100,17 @@ Der er en grænse på 1 GB pr. datasæt, der indlæses i Power BI. Hvis du har v
 ## <a name="what-happens-when-you-reach-a-limit"></a>Det sker der, når du når grænsen
 Når du når din grænse for datakapacitet, får du vist meddelelser i tjenesten. 
 
-Når du vælger tandhjulsikonet ![tandhjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png), får du vist en rød linje, der angiver, at du har overskredet din datakapacitet.
+Når du vælger tandhjulsikonet ![Tandhjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png), får du vist en rød linje, der angiver, at du har overskredet din datakapacitet.
 
-![Lagergrænse er nået](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit.png)
+![Skærmbillede af lagerkapaciteten, der viser den grænse, der er nået.](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit.png)
 
 Denne grænse angives også i **Administrer personligt lager**.
 
- ![Administrer personligt lager, lagergrænsen er nået](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
+ ![Skærmbillede af den personlige lagerkapacitet, som viser, at Janes grænse er nået.](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
 
- Når du forsøger at udføre en handling, som gør, at du når en af grænserne, får du vist en meddelelse, der angiver, at du har overskredet grænsen. Du kan [administrere](#manage) dit lager for at reducere mængden af lagret indhold og komme under grænsen.
+ Når du forsøger at udføre en handling, som gør, at du når en af grænserne, får du vist en meddelelse, der angiver, at du har overskredet grænsen. Du kan [administrere dit lager](#manage-items-you-own) for at reducere mængden af lagret indhold og komme under grænsen.
 
- ![Du har overskredet din lagergrænse](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
+ ![Skærmbillede af dialogboksen Over lagergrænsen, som viser de grænser, der er nået.](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
  ## <a name="next-steps"></a>Næste trin
 

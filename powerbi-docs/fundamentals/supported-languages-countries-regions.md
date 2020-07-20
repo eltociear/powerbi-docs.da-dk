@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/23/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: c3b0a330793abf4242d43c1546dd0362b75683f2
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: da1ec0ec3a10adbd9771e13a97bcb17dcdf73273
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361123"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216900"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Understøttede sprog og lande/områder til Power BI
 
@@ -82,7 +82,7 @@ I øjeblikket er nogle få funktioner kun tilgængelige på engelsk:
 Hold dig informeret, mens vi arbejder på at gøre yderligere funktioner tilgængelige på sprog. 
 
 ### <a name="choose-your-language-in-the-power-bi-service"></a>Vælg dit sprog i Power BI-tjenesten
-1. Vælg ikonet **Indstillinger**![Indstillingsikon](media/supported-languages-countries-regions/pbi_settings_icon.png) > **Indstillinger** i Power BI-tjenesten.
+1. I Power BI-tjenesten skal du vælge ikonet **Indstillinger** ![Skærmbillede af Power BI-tjenesten, der viser ikonet Indstillinger.](media/supported-languages-countries-regions/pbi_settings_icon.png) > **Indstillinger**.
 2. På fanen **Generelt** > **Sprog**.
 3. Vælg dit sprog > **Anvend**.
 
@@ -92,25 +92,25 @@ Power BI registrerer dit sprog baseret på den sprogindstilling, der er angivet 
 #### <a name="internet-explorer-version-11"></a>Internet Explorer (version 11)
 1. Klik på knappen **Funktioner** i øverste højre hjørne af browservinduet:
    
-   ![Knappen Funktioner i Internet Explorer](media/supported-languages-countries-regions/languages1.png)
+   ![Skærmbillede af Internet Explorer, der viser knappen Funktioner.](media/supported-languages-countries-regions/languages1.png)
 2. Klik på **Internetindstillinger**.
 3. Klik på knappen **Sprog** i dialogboksen Internetindstillinger under Udseende på fanen Generelt.
 
 #### <a name="google-chrome-version-42"></a>Google Chrome (version 42)
 1. Klik på menuknappen i øverste højre hjørne af browservinduet:
    
-   ![Menuknap i Chrome](media/supported-languages-countries-regions/languages2.png)
+   ![Skærmbillede af Google Chrome, der viser menuknappen.](media/supported-languages-countries-regions/languages2.png)
 2. Klik på **Indstillinger**.
 3. Klik på **Vis avancerede indstillinger**.
 4. Klik på knappen **Indstillinger for sprog og input** under Sprog.
 5. Klik på **Tilføj**, vælg et sprog, og klik på **OK**.
    
-   ![Sprogliste i Chrome](media/supported-languages-countries-regions/pbi_langs_enus.png)
+   ![Skærmbillede af Google Chrome, der viser sproglisten.](media/supported-languages-countries-regions/pbi_langs_enus.png)
    
    Det nye sprog er i slutningen af listen. 
 6. Træk det nye sprog til toppen af listen, og klik på **Vis Google Chrome på dette sprog**.
    
-   ![Vis Google Chrome på dette sprog](media/supported-languages-countries-regions/pbi_langs_eses.png)
+   ![Skærmbillede af Google Chrome, der viser grænsefladesproget.](media/supported-languages-countries-regions/pbi_langs_eses.png)
    
    Du skal muligvis lukke og genåbne browseren for at se ændringen.
 
@@ -130,10 +130,10 @@ Du kan få Power BI Desktop på to måder: Du kan downloade det som et separat i
 
 3. I **Windows-indstillinger** skal du vælge **Tid og sprog**.
    
-     ![Dialogboksen Windows-indstillinger](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
+     ![Skærmbillede af Power BI Desktop, der viser dialogboksen Windows-indstillinger.](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
 4. Vælg **Sprog**, og vælg et sprog. Vælg **Tilføj et Windows-visningssprog i Microsoft Store**, hvis det er nødvendigt.
    
-     ![Dialogboks med Windows-sprogindstillinger](media/supported-languages-countries-regions/power-bi-service-language-settings.png)
+     ![Skærmbillede af Power BI Desktop, der viser dialogboksen WIndows-sprogindstillinger.](media/supported-languages-countries-regions/power-bi-service-language-settings.png)
    
      Næste gang du starter Power BI Desktop, bruges det sprog, du har angivet som standard. 
 
@@ -152,7 +152,7 @@ Power BI Desktop henter standardformateringen af tal og datoer fra Windows-områ
 
 2. I **Windows-indstillinger** skal du vælge **Tid og sprog**.
    
-     ![Dialogboksen Windows-indstillinger](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
+     ![Skærmbillede af Power BI Desktop, der viser dialogboksen Windows-indstillinger.](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
 
 3. Vælg **Område** > **Yderligere indstillinger for dato, klokkeslæt og område**.
 
@@ -173,7 +173,7 @@ Uanset om du downloader Power BI Desktop eller installerer den fra Windows Store
 2. Vælg **Internationale indstillinger** under **Aktuel fil**.
 3. Vælg en anden landestandard i feltet **Landestandarden for import**. 
    
-   ![Dialogboksen Indstillinger i Power BI Desktop](media/supported-languages-countries-regions/power-bi_supptdlangs-locale.png)
+   ![Skærmbillede af Power BI Desktop, der viser dialogboksen Indstillinger.](media/supported-languages-countries-regions/power-bi_supptdlangs-locale.png)
 4. Vælg **OK**.
 
 ### <a name="choose-the-language-for-the-model-in-power-bi-desktop"></a>Vælg sproget for modellen i Power BI Desktop
@@ -194,7 +194,7 @@ Sådan angives modelsproget.
 2. Under **Global** skal du vælge **Internationale indstillinger**.
 3. Vælg et andet sprog i feltet **Modelsprog**. 
 
-    ![Angiv modelsprog i Power BI Desktop](media/supported-languages-countries-regions/power-bi-supported-model-languages.png)
+    ![Skærmbillede af Power BI Desktop, der viser, hvordan modelsproget angives.](media/supported-languages-countries-regions/power-bi-supported-model-languages.png)
 
 > [!NOTE]
 > Når du har oprettet en Power BI-model, kan sproget i den ikke ændres.

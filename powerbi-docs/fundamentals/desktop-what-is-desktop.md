@@ -9,18 +9,18 @@ ms.topic: overview
 ms.date: 12/16/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: bd95dfcc5d621b5ae4988e187d7cc6d9478feb58
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 2a67bd6c2a3d757475580d218547be689dbb99d2
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361514"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216929"
 ---
 # <a name="what-is-power-bi-desktop"></a>Hvad er Power BI Desktop?
 
 *Power BI Desktop* er et gratis program, som du installerer på din lokale computer, og som giver dig mulighed for at oprette forbindelse til, transformere og visualisere dine data. Med Power BI Desktop kan du oprette forbindelse til flere forskellige datakilder og kombinere dem (også kaldet *udformning*) i en datamodel. Med denne datamodel kan du bygge visualiseringer og samlinger af visualiseringer, som du kan dele som rapporter med andre personer i organisationen. De fleste brugere, der arbejder på Business Intelligence-projekter, bruger Power BI Desktop til at oprette rapporter og bruger derefter *Power BI-tjenesten* til at dele deres rapporter med andre.
 
-![Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_01.png)
+![Skærmbillede af Power BI Desktop, der viser prøvedata.](media/desktop-what-is-desktop/what-is-desktop_01.png)
 
 De mest almindelige anvendelsesområder for Power BI Desktop er følgende:
 
@@ -39,7 +39,7 @@ Der er tre visninger i Power BI Desktop, som du kan vælge i venstre side af læ
 
 På følgende billede kan du se de tre visninger, som forekommer langs venstre side af lærredet:
 
-![Visninger i Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop-07.png)
+![Skærmbillede af Power BI Desktop, der viser panelet Tre visninger.](media/desktop-what-is-desktop/what-is-desktop-07.png)
  
 
 ## <a name="connect-to-data"></a>Opret forbindelse til data
@@ -51,11 +51,11 @@ Sådan opretter du forbindelse til data:
 
    Vinduet **Hent data** vises, og det indeholder de mange kategorier, som Power BI Desktop kan oprette forbindelse til.
 
-   ![Hent data i Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_02.png)
+   ![Skærmbillede af Power BI Desktop, der viser dialogboksen Hent data.](media/desktop-what-is-desktop/what-is-desktop_02.png)
 
 2. Når du vælger en datatype, bliver du bedt om at angive oplysninger, f.eks. URL-adressen og legitimationsoplysningerne, der er nødvendige, for at Power BI Desktop kan oprette forbindelse til datakilden på dine vegne.
 
-   ![Opret forbindelse til en SQL Server-database i Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_03.png)
+   ![Skærmbillede af Power BI Desktop, der viser dialogboksen SQL Server Database.](media/desktop-what-is-desktop/what-is-desktop_03.png)
 
 3. Når du har oprettet forbindelse til en eller flere datakilder, kan du transformere dataene, så de er nyttige for dig.
 
@@ -69,13 +69,13 @@ Sådan starter du Power Query-editor:
 
    Vinduet **Power Query-editor** vises.
 
-   ![Power Query-editor i Power BI Desktop](media/desktop-getting-started/designer_gsg_editquery.png)
+   ![Skærmbillede af Power BI Desktop, der viser vinduet Power Query-editor.](media/desktop-getting-started/designer_gsg_editquery.png)
 
 Hvert trin, du udfører, når du transformerer data (f.eks. omdøbning af en tabel, transformation af en datatype eller sletning af en kolonne), registreres af Power Query-editor. Hver gang denne forespørgsel opretter forbindelse til datakilden, udføres disse trin, så dataene altid formes på den måde, du angiver.
 
 På følgende billede vises ruden **Power Query-editor** for en forespørgsel, der er formet og blevet til en model.
 
- ![Vinduet Power Query-editor](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
+ ![Skærmbillede af Power BI Desktop, der viser vinduet Power Query-editor for en forespørgsel, som er dannet.](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
 
 Når dine data er, som du ønsker det, kan du oprette visuelle elementer. 
 
@@ -83,13 +83,13 @@ Når dine data er, som du ønsker det, kan du oprette visuelle elementer.
 
 Når du har en datamodel, kan du trække *felter* til rapportlærredet for at oprette *visuelle elementer*. Et visuelt element er en grafisk repræsentation af dataene i din model. Du kan vælge mellem mange forskellige typer visuelle elementer i Power BI Desktop. Det følgende visuelle element viser et simpelt søjlediagram. 
 
-![Et visuelt element i Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_04.png)
+![Skærmbillede af Power BI Desktop, der viser et eksempel på et søjlediagram.](media/desktop-what-is-desktop/what-is-desktop_04.png)
 
 Sådan opretter eller ændrer du et visuelt element: 
 
 - Vælg ikonet for visuelt element i ruden **Visualiseringer**. 
 
-   ![Ruden Visualiseringer i Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_05.png)
+   ![Skærmbillede af Power BI Desktop, der viser et ruden Visualiseringer.](media/desktop-what-is-desktop/what-is-desktop_05.png)
 
    Hvis du allerede har et visuelt element, der er markeret på rapportlærredet, ændres det valgte visuelle element til den type, som du har valgt. 
 
@@ -98,13 +98,13 @@ Sådan opretter eller ændrer du et visuelt element:
 
 ## <a name="create-reports"></a>Opret rapporter
 
-Typisk vil du oprette en samling visuelle elementer, der viser forskellige aspekter af de data, du har brugt til at oprette din model i Power BI Desktop. En samling visuelle elementer i én Power BI Desktop-fil kaldes en *rapport*. En rapport kan bestå af en eller flere sider, på samme måde som en Excel-fil kan bestå af et eller flere regneark. 
+Typisk vil du oprette en samling visuelle elementer, der viser forskellige aspekter af de data, du har brugt til at oprette din model i Power BI Desktop. En samling visuelle elementer i én Power BI Desktop-fil kaldes en *rapport*. En rapport kan bestå af en eller flere sider, på samme måde som en Excel-fil kan bestå af et eller flere regneark.
 
 Med Power BI Desktop kan du oprette komplekse og visuelt avancerede rapporter ved hjælp af data fra flere kilder – det hele i én rapport, som du kan dele med andre i din organisation.
 
 På følgende billede kan du se den første side i en Power BI Desktop-rapport, der kaldes **Overview** som vist nederst på billedet. 
 
-![Power BI Desktop-eksempelrapport](media/desktop-what-is-desktop/what-is-desktop_01.png)
+![Skærmbillede af Power BI Desktop, der viser et fanen Oversigt.](media/desktop-what-is-desktop/what-is-desktop_01.png)
 
 ## <a name="share-reports"></a>Del rapporter
 
@@ -114,7 +114,7 @@ Sådan udgiver du en Power BI Desktop-rapport:
 
 1. Vælg **Publicer** fra båndet **Hjem**.
 
-   ![Udgiv en rapport fra Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_06.png)
+   ![Skærmbillede af Power BI Desktop, der viser knappen Publicer.](media/desktop-what-is-desktop/what-is-desktop_06.png)
 
    Power BI Desktop opretter forbindelse til Power BI-tjenesten med din Power BI-konto. 
 

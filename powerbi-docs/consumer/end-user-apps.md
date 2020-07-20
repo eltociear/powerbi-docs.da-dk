@@ -6,16 +6,16 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 04/19/2020
+ms.date: 07/01/2020
 ms.author: mihart
 ms.custom: licensing support, css_fy20Q4
 LocalizationGroup: Share your work
-ms.openlocfilehash: ed50045aca966face5d758c9036508bdfef81d5e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 22e044f11b62d3375eabd97545070caaa0bbcfd7
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236540"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161976"
 ---
 # <a name="apps-in-power-bi"></a>Apps i Power BI
 
@@ -28,10 +28,10 @@ En *app* er en Power BI-indholdstype, der kombinerer relaterede dashboards og ra
 
 Dine apps er organiseret på **appindholdslisten**. Du skal blot vælge **Apps** for at få vist dine apps. Peg på en app for at få vist datoen for den seneste opdatering og ejeren. 
 
-![Apps i Power BI](./media/end-user-apps/power-bi-apps.png)
+![Apps i Power BI](./media/end-user-apps/power-bi-apps-red.png)
 
 
-Brug af appfunktionen kræver en Power BI Pro-licens, eller at appen er gemt i en Premium-kapacitet. Du kan få mere at vide om licenser og Premium-kapacitet i [Licenser til forbrugere](end-user-license.md).
+Brug af appfunktionen kræver en Power BI Pro-licens, eller at appen er gemt i en Premium-kapacitet og delt med dig. Du kan få mere at vide om licenser og Premium-kapacitet i [Licenser til forbrugere](end-user-license.md).
 
 ## <a name="app-designers-and-app-consumers"></a>*Appdesignere* og *appforbrugere*
 Afhængigt af din rolle kan du være en person, der opretter apps (*designer*) til eget brug eller til at dele med kolleger. Eller du kan være en person, der modtager og downloader apps (*forbruger*), der er oprettet af andre. Denne artikel henvender sig til *appforbrugere*.
@@ -43,7 +43,14 @@ Med apps ser du automatisk ændringerne, hver gang appens forfatteren udgiver op
 
 <!-- add conceptual art -->
 ## <a name="get-a-new-app"></a>Hent en ny app
-Den bedste måde at få en ny app på er via [markedspladsen for Power BI-apps](https://app.powerbi.com/groups/me/getapps/apps).
+Der er flere forskellige måder at få en ny app på. Du kan søge efter, finde og installere apps, og appudviklere kan dele apps med dig. 
+
+### <a name="find-and-install-apps-from-the-power-bi-apps-marketplace"></a>Find og installer apps på markedspladsen for Power BI-apps
+En måde at finde apps på er at vælge **Hent app** på skærmen Power BI-apps. 
+
+![Skærmbillede af skærmen Apps, der viser ikonet Hent apps](./media/end-user-apps/power-bi-get-apps-icon.png)
+
+Gennemse listen over apps på markedspladsen for Power BI-apps, indtil du finder en, du vil installere. Vælg mellem **organisationsapps**, som kun er tilgængelige for medarbejdere i din virksomhed, eller **skabelonapps**, der udgives af Microsoft og community'et, så de kan installeres af alle Power BI-brugere. 
 
 ![Markedsplads for Power BI-apps](./media/end-user-apps/power-bi-app-marketplace.png)
 
@@ -51,7 +58,7 @@ Der er andre måder at hente apps på. Nogle af disse måder er angivet nedenfor
 
 * Appdesigneren kan installere appen automatisk på din Power BI-konto, og næste gang du åbner Power BI-tjenesten, får du vist den nye app på **appindholdslisten**. 
 * Appdesigneren kan sende dig et direkte link til en app via mail. Hvis du vælger linket, åbner appen i Power BI-tjenesten.
-* I Power BI på din mobilenhed kan du kun installere en app fra et direkte link og ikke fra AppSource. Hvis appens forfatter installerer appen automatisk, kan du se den på listen over apps. 
+* Du kan kun installere en app fra et direkte link i Power BI på din mobilenhed og ikke fra markedspladsen for apps. Hvis appens forfatter installerer appen automatisk, kan du se den på listen over apps. 
 
 ## <a name="next-steps"></a>Næste trin
 * [Åbn og interager med en app](end-user-app-view.md)

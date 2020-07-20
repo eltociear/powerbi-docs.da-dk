@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/24/2020
+ms.date: 07/08/2020
 ms.author: painbar
-ms.openlocfilehash: 9655783decee99bc90071cdfbd66a8b58d8272f4
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 2a8186f24e7a82604ab941e25c2a5aa471efe614
+ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782586"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86385992"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -24,6 +24,13 @@ Du kan finde relaterede oplysninger om nyheder under:
 
 >[!NOTE]
 >Understøttelse af Power BI-mobilapp til **telefoner, der bruger Windows 10 mobile**, ophører den 16. marts 2021. [Få mere at vide](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="july-2020"></a>Juli 2020
+### <a name="the-power-bi-mobile-app-for-windows-now-supports-organizational-branding"></a>Power BI-mobilappen til Windows understøtter nu organisationsbranding
+De ændringer af Power BI's udseende, som administratoren foretager, så den passer til organisationens brandingtema, vises nu også på Power BI-mobilappen. Sådanne ændringer kan omfatte et nyt farveskema til den øverste navigationslinje, organisationens logo og et bannerbillede.  
+
+### <a name="disable-single-sign-on-via-remote-configuration-ios-and-android"></a>Deaktiver enkeltlogon via fjernkonfiguration (iOS og Android)
+It-administratorer kan nu deaktivere enkeltlogon til Power BI-mobilappen via fjernforbindelse for at øge sikkerheden og overholdelse af tilladelser på flerbrugerenheder. [Få mere at vide!](mobile-app-configuration.md#disable-single-sign-on-ios-and-android)
 
 ## <a name="june-2020"></a>Juni 2020
 ### <a name="show-your-bookmarks-in-slideshows-windows"></a>Vis dine bogmærker i slideshow (Windows)
@@ -860,15 +867,15 @@ Læs [blogindlæg om Power BI – Mobil fra midt i oktober](https://powerbi.micr
 * Kurvediagrammer med en procentdel-baseret y-akse beregner nu det visuelle område i overensstemmelse med de faktiske data. Grafen starter nu fra det laveste datapunkt i diagrammet i stedet for fra en standardværdi.
 * Kurvediagrammer, søjlediagrammer og liggende søjlediagrammer kan nu have datamærkater. 
   
-    ![](media/mobile-whats-new-in-the-mobile-apps/pbi_mobilelinechart.png)
+    ![Skærmbillede af et kurvediagram, der viser VTB-procenten pr. måned med datamærkater. ](media/mobile-whats-new-in-the-mobile-apps/pbi_mobilelinechart.png)
 
 #### <a name="iphone"></a>iPhone
 * Hold dig ajour med dine gruppers nyeste dashboards ved at modtage meddelelser på din iPhone, hver gang et gruppemedlem føjer et dashboard til en af dine grupper.
   
-    ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
+    ![Skærmbillede af et dashboard, der viser en meddelelse på en iPhone.](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
 * Du kan nu få vist dashboards vandret blot ved at dreje telefonen. Læs mere om [liggende tilstand i iPhone-appen](https://powerbi.microsoft.com/blog/enjoy-the-landscape-with-the-power-bi-iphone-app/).
   
-    ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
+    ![Skærmbillede af et dashboard, der viser tilstanden liggende på en iPhone.](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
 
 ### <a name="september-2015"></a>September 2015
 Forbedringer i Power BI-mobilapps – Android, iOS (iPhone og iPad) og Windows. Læs [blogindlæg om Power BI – Mobil fra midt i september](https://powerbi.microsoft.com/blog/power-bi-mobile-mid-september-updates-are-here/).

@@ -9,17 +9,17 @@ ms.topic: how-to
 ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 2679e9fa21b193fa4c19384c2bd7d22660cf657a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0472baffa765f1a1e7d39e365e40a1f596472a16
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235790"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264379"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming i realtid i Power BI
 Med streaming i realtid med Power BI kan du streame data og opdatere dashboards i realtid. Alle visuelle elementer eller dashboards, der kan oprettes i Power BI, kan også oprettes til at vise og opdatere data og visuelle elementer i realtid. Enhederne og kilderne til streamingdata kan være sensorer på fabrikker, sociale medier, forbrugsdata for tjenester og alt andet, hvorfra tidsfølsomme data kan indsamles eller overføres.
 
-![Skærmbillede, der viser resultaterne af miljøsensorer i realtid.](media/service-real-time-streaming/real-time-streaming-10.png)
+![Skærmbillede af dashboardet med miljøsensorer, som viser resultaterne af dataene i realtid.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Denne artikel viser dig, hvordan du konfigurerer streamingdatasæt i realtid i Power BI. Men før vi kommer dertil, er det vigtigt at forstå, hvilke typer datasæt i realtid der er udformet til at blive vist i felter (og dashboards), og hvordan de datasæt adskiller sig.
 
@@ -61,7 +61,7 @@ Felter, der er baseret på et **PubNub-streamingdatasæt**, er optimeret til hur
 ### <a name="streaming-dataset-matrix"></a>Streaming af matrixdatasæt
 I følgende tabel (eller matrix, om du vil) beskrives de tre typer datasæt til streaming i realtid, og hvert datasæts funktioner og begrænsninger angives.
 
-![](media/service-real-time-streaming/real-time-streaming_11.png)
+![Skærmbillede af en tabel, der viser streamingdatasæt-matrixen.](media/service-real-time-streaming/real-time-streaming_11.png)
 
 > [!NOTE]
 > Se [denne artikel](../developer/automation/api-rest-api-limitations.md) for at få oplysninger om **Push**-grænser for, hvor mange data der kan modtages via pushoverførsel.
@@ -92,11 +92,11 @@ Alle anmodninger til REST API'er er sikret med **Azure AD OAuth**.
 ### <a name="using-the-streaming-dataset-ui-to-push-data"></a>Brug Streamingdatasæt-UI til at pushoverføre data
 Du kan oprette et datasæt i Power BI-tjenesten ved at vælge **API**-tilgangen som vist i følgende billede.
 
-![](media/service-real-time-streaming/real-time-streaming_0b.png)
+![Skærmbillede af valgmulighederne Nyt streamingdatasæt, som viser valgmuligheden API.](media/service-real-time-streaming/real-time-streaming_0b.png)
 
 Når du opretter det nye streamingdatasæt, kan du vælge at aktivere **Analyse af historikdata** som vist nedenfor, hvilket har en væsentlig indvirkning.
 
-![](media/service-real-time-streaming/real-time-streaming_0c.png)
+![Skærmbillede af Nyt streamingdatasæt, hvor Analyse af historikdata er aktiveret.](media/service-real-time-streaming/real-time-streaming_0c.png)
 
 Når **Analyse af historikdata** er deaktiveret (den er som standard deaktiveret), opretter du et **streamingdatasæt** som beskrevet tidligere i denne artikel. Når **Analyse af historikdata** er *aktiveret*, bliver det oprettede datasæt både et **streamingdatasæt** og et **pushdatasæt**. Dette er det samme som at bruge Power BI REST API'er til at oprette et datasæt med dens *Standardtilstand* indstillet til *pushStreaming*, som beskrevet tidligere i denne artikel.
 
@@ -125,19 +125,19 @@ For at komme i gang med streaming i realtid skal du vælge en af de to måder, s
 
 Med begge indstillinger skal du konfigurere **Streamingdata** i Power BI. For at gøre dette skal du i dit dashboard (enten et eksisterende dashboard eller et nyt) vælge **Tilføj et felt** og derefter vælge **Brugerdefinerede streamingdata**.
 
-![](media/service-real-time-streaming/real-time-streaming_1.png)
+![Skærmbillede af dashboardet, der viser valget af Brugerdefineret streamingdata i afsnittet Tilføj felt.](media/service-real-time-streaming/real-time-streaming_1.png)
 
 Hvis du endnu ikke har konfigureret streamingdatasæt, så bare rolig: Du kan vælge **Administrer data** for at komme i gang.
 
-![](media/service-real-time-streaming/real-time-streaming_2.png)
+![Skærmbillede af dashboardet, der viser linket Administrer data i feltet Tilføj et brugerdefineret streamingdatafelt.](media/service-real-time-streaming/real-time-streaming_2.png)
 
 På denne side kan du angive slutpunktet for dit streamingdatasæt, hvis du allerede har oprettet et (i tekstfeltet). Hvis du endnu ikke har et streamingdatasæt, skal du vælge plus-ikonet ( **+** ) i øverste højre hjørne for at se de tilgængelige indstillinger til oprettelse af et streamingdatasæt.
 
-![](media/service-real-time-streaming/real-time-streaming_3.png)
+![Skærmbillede af dashboardet, der viser, hvordan du kan angive slutpunktet for dit streamingdatasæt med en pil, der peger på plusikonet.](media/service-real-time-streaming/real-time-streaming_3.png)
 
 Når du klikker på ikonet **+** , vises to indstillinger:
 
-![](media/service-real-time-streaming/real-time-streaming_4a.png)
+![Skærmbillede af valgmulighederne under Nyt streamingdatasæt, der viser indstillingerne API og PubNub.](media/service-real-time-streaming/real-time-streaming_4a.png)
 
 Det næste afsnit beskriver disse indstillinger og går mere i dybden med, hvordan du opretter et **streamingfelt**, eller hvordan du opretter et **datasæt** fra streamingdatakilden, som du kan bruge senere til at oprette rapporter.
 
@@ -152,7 +152,7 @@ I de næste afsnit ser vi skiftevis på begge muligheder.
 ### <a name="using-the-power-bi-rest-api"></a>Brug af POWER BI REST API
 **Power BI REST API** – De seneste forbedringer af Power BI REST API er designet til at gøre realtidsstreaming nemmere for udviklere. Når du vælger **API** i vinduet **Nyt streamingdatasæt**, vises poster, som gør det muligt for Power BI at oprette forbindelse til og bruge dit slutpunkt:
 
-![](media/service-real-time-streaming/real-time-streaming_5.png)
+![Skærmbillede af dialogboksen Nyt streamingdatasæt, der viser Power BI REST-API-poster for forbindelser.](media/service-real-time-streaming/real-time-streaming_5.png)
 
 Hvis du ønsker, at Power BI skal lagre dataene, der sendes via denne datastream, skal du aktivere *Analyse af historikdata*, så vil du kunne udføre rapportering og analyse på den indsamlede datastream. Du kan også [få mere at vide om API'en](https://docs.microsoft.com/rest/api/power-bi/).
 
@@ -163,7 +163,7 @@ Når du foretager *POST*-anmodninger, skal du kontrollere, at anmodningens indho
 ### <a name="using-pubnub"></a>Brug PubNub
 Med integration af **PubNub**-streaming med Power BI kan du bruge dine **PubNub**-datastrømme med lav ventetid (eller oprette nye) og bruge dem i Power BI. Når du vælger **PubNub** og derefter vælger **Næste**, ser du følgende vindue:
 
-![](media/service-real-time-streaming/real-time-streaming_7.png)
+![Skærmbillede af dialogboksen Nyt streamingdatasæt, der viser PubNub-poster for forbindelser.](media/service-real-time-streaming/real-time-streaming_7.png)
 
 > [!WARNING]
 > PubNub-kanaler kan sikres ved hjælp af en PubNub Access Manager (PAM)-godkendelsesnøgle. Denne nøgle deles med alle brugere, som har adgang til dashboardet. Du kan [få mere at vide om PubNub-adgangskontrol](https://www.pubnub.com/docs/web-javascript/pam-security).
@@ -179,7 +179,7 @@ I dette eksempel bruger vi en offentligt tilgængelig stream fra **PubNub**. Her
 
 1. I **Power BI-tjenesten** skal du vælge et dashboard (eller oprette et nyt) og vælge **Tilføj felt** > **Brugerdefineret streamingdata** og derefter vælge knappen  **Næste**.
    
-   ![](media/service-real-time-streaming/real-time-streaming_1.png)
+   ![Skærmbillede af dashboardet, der viser Tilføj felt med valgmuligheden Brugerdefineret streamingdata.](media/service-real-time-streaming/real-time-streaming_1.png)
 2. Hvis du endnu ikke har nogen streamingdatakilder, kan du vælge linket **Administrer data** (lige over knappen **Næste**) og derefter vælge **+ Tilføj streaming data** fra linket øverst til højre i vinduet. Vælg **PubNub**, og vælg derefter **Næste**.
 3. Opret et navn til dit datasæt, indsæt følgende værdier i vinduet, der vises, og vælg derefter **Næste**:
    
@@ -190,13 +190,13 @@ I dette eksempel bruger vi en offentligt tilgængelig stream fra **PubNub**. Her
    
        pubnub-sensor-network
    
-   ![](media/service-real-time-streaming/real-time-streaming_8.png)
+   ![Skærmbillede af dialogboksen Nyt streamingdatasæt, der viser, hvordan du opretter et Datasætnavn og datasætposter i felterne Undernøgle og Kanalnavn.](media/service-real-time-streaming/real-time-streaming_8.png)
 4. I følgende vindue skal du blot vælge standardværdierne (som udfyldes automatisk) og derefter vælge **Opret**.
    
-   ![](media/service-real-time-streaming/real-time-streaming_9.png)
+   ![Skærmbillede af dialogboksen Nyt streamingdatasæt, der viser standardværdier for Datasætnavn og Værdier fra streamingfelter.](media/service-real-time-streaming/real-time-streaming_9.png)
 5. Tilbage i dit Power BI-arbejdsområde skal du oprette et nyt dashboard og derefter tilføje et felt (se ovenstående trin, hvis det er nødvendigt). Denne gang har du et streamingdatasæt at arbejde med, når du opretter et felt og vælger **Brugerdefinerede streamingdata**. Prøv at lege lidt med det. Hvis du føjer *talfelter* til kurvediagrammer og derefter tilføjer andre felter, kan du få et dashboard i realtid, der ligner følgende:
    
-   ![Skærmbillede, der viser resultaterne af miljøsensorer i realtid.](media/service-real-time-streaming/real-time-streaming-10.png)
+   ![Skærmbillede af dashboardet med miljøsensorer, som viser resultaterne i realtid.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Prøv det, og leg lidt med eksempeldatasættet. Opret derefter dit eget datasæt, og stream livedata til Power BI.
 
