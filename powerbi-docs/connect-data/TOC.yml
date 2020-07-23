@@ -156,8 +156,6 @@
           items:
             - name: Hentning af data fra filer
               href: service-get-data-from-files.md
-            - name: Fra Excel til en imponerende rapport
-              href: service-from-excel-to-stunning-report.md
             - name: Hent data fra Excel-projektmappefiler
               href: service-excel-workbook-files.md
             - name: Hent data fra Power BI Desktop-filer
