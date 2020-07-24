@@ -11,6 +11,10 @@
     - name: Selvstudier
       expanded: true
       items:
+        - name: 'Power BI Desktop: Fra Excel til rapport'
+          href: desktop-excel-stunning-report.md
+        - name: 'Power BI-tjeneste: Fra Excel til rapport'
+          href: service-from-excel-to-stunning-report.md
         - name: 'Onlinekursus: Sideinddelte rapporter'
           href: ../learning-catalog/paginated-reports-online-course.md
         - name: 'Opret en sideinddelt rapport, og upload'
