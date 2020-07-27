@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/21/2020
+ms.date: 07/16/2020
 ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5e1b127bae83338264ac450438956e03a5ec24cb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7fecec5ed41f0de9227cf30ed3ba4f39b23f21e9
+ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236644"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459548"
 ---
 # <a name="manage-data-sources"></a>Administrer datakilder
 
@@ -102,6 +102,9 @@ Når du har føjet en datakilde til en gateway, giver du brugere og mailaktivere
 
 Du kan også give brugere og sikkerhedsgrupper administrativ adgang til gatewayen.
 
+> [!NOTE]
+> Brugere med adgang til datakilden kan associere datasæt med datakilden, og oprette forbindelse, baseret på sikkerhedsoplysningerne (enten de gemte legitimationsoplysninger eller enkeltlogon), som blev valgt under oprettelse af en datakilde.
+
 ### <a name="add-users-to-a-data-source"></a>Føj brugere til en datakilde
 
 1. I øverste højre hjørne af Power BI-tjenesten skal du vælge tandhjulsikonet ![tandhjulsikonet for indstillinger](media/service-gateway-data-sources/icon-gear.png) > **Administrer gateways**.
@@ -132,7 +135,7 @@ Når du føjer en datakilde til gatewayen, skal du angive legitimationsoplysning
 
 Du kan finde oplysninger om, hvilke datakilder datagatewayen i det lokale miljø understøtter, i [Power BI-datakilder](power-bi-data-sources.md).
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 * [Administrer din datakilde – Analysis Services](service-gateway-enterprise-manage-ssas.md)
 * [Administrer din datakilde – SAP HANA](service-gateway-enterprise-manage-sap.md)

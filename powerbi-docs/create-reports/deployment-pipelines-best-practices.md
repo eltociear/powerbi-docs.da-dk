@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
-ms.openlocfilehash: e76d820e804a19db148e0db4c2702e002ee2c017
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4dd5698f91177733e150577490775eefb7e2f2ef
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275909"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557180"
 ---
 # <a name="deployment-pipelines-best-practices-preview"></a>Bedste fremgangsmåder for udrulningspipelines (prøveversion)
 
@@ -140,7 +140,7 @@ Sørg for, at disse tre faktorer behandles i dit testmiljø:
 
 Når du tester, kan du bruge den samme kapacitet som produktionsfasen. Det kan dog gøre produktionen ustabil under belastningstest. Hvis du vil undgå, at produktionen bliver ustabil, skal du bruge en anden kapacitet med samme mængde ressourcer som produktionskapaciteten til test. Hvis du vil undgå ekstra omkostninger, kan du bruge [Azure A-kapaciteter](../developer/embedded/azure-pbie-create-capacity.md) for kun at betale for testtiden.
 
-![Diagram over bedste fremgangsmåder for udrulningspipelines](media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png)
+![Et diagram, som viser en udrulningspipeline med et testmiljø, der simulerer produktionsmiljøet.](media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png)
 
 ### <a name="use-dataset-rules-with-a-real-life-data-source"></a>Brug regler for datasæt med en datakilde i realtid
 

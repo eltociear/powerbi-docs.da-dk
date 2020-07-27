@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/08/2020
-ms.openlocfilehash: 037fbdf3c1e4c01bac91e6089f9fa1c7dd1635d1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.date: 07/14/2020
+ms.openlocfilehash: 94cd4fd652fc1b06a73e1ea319a65e1aa5b46c7e
+ms.sourcegitcommit: 8b8d54d46470a311d8654abe92b5a223b696af28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238990"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86437209"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publicer Power BI-visualiseringer i Partnercenter
 
@@ -23,7 +23,7 @@ Når du har oprettet en Power BI-visualisering, kan du publicere den i AppSource
 
 [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) er det sted, hvor du finder SaaS-programmer og -tilføjelsesprogrammer til dine Microsoft-produkter og -tjenester.
 
-![Office Store](media/office-store/appsource-01.png)
+![Skærmbillede af Power BI-visualiseringer i AppSource.](media/office-store/appsource-01.png)
 
 ## <a name="preparing-to-submit-your-power-bi-visual"></a>Forberedelse til indsendelse af Power BI-visualisering
 
@@ -61,7 +61,7 @@ Vedhæft **pbiviz-filen** og **pbix-eksempelrapportfilen** i din mail. Power BI-
 
 ## <a name="submitting-to-appsource"></a>Indsend til AppSource
 
-Hvis du vil indsende din Power BI visualisering til AppSource, skal du have en programpakke fra Power BI-teamet og derefter indsende den til Partnercenter. 
+Hvis du vil indsende din Power BI visualisering til AppSource, skal du have en programpakke fra Power BI-teamet og derefter indsende den til Partnercenter.
 
 ### <a name="getting-the-app-package"></a>Sådan får du programpakken
 
@@ -73,6 +73,11 @@ Power BI-teamet skal kontrollere filerne for nye Power BI-visualiseringer, opdat
 
 Hvis du vil indsende din Power BI-visualisering til Partnercenter, skal du være tilmeldt Partnercenter. Hvis du endnu ikke er tilmeldt, kan du [åbne en udviklerkonto i Partnercenter](https://docs.microsoft.com/office/dev/store/open-a-developer-account).
 
+>[!NOTE]
+>**Individuelle udgivere** kan bruge en af disse metoder til at sende et Power BI-element:
+>* Hvis du har en gammel Seller Dashboard-konto, kan du fortsætte med at bruge denne kontos legitimationsoplysninger til at logge på Partnercenter.
+>* Hvis du ikke har en gammel Seller Dashboard-konto og ikke er registreret til Partner Center, skal du [oprette en udviklerkonto i Partnercenter](https://docs.microsoft.com/office/dev/store/open-a-developer-account) med din arbejdsmail.
+
 Følg nedenstående trin for at indsende din Power BI-visualisering til Partnercenter. Du kan finde flere oplysninger om indsendelsesprocessen under [Indsend din Office-løsning til AppSource via Partnercenter](https://docs.microsoft.com/office/dev/store/use-partner-center-to-submit-to-appsource).
 
 1. Log på **Partnercenter**.
@@ -83,7 +88,7 @@ Følg nedenstående trin for at indsende din Power BI-visualisering til Partnerc
 
 4. Vælg **Opret en ny**, og vælg **Power BI-visualisering** i rullemenuen.
 
-    ![Office Store](media/office-store/power-bi-visual.png)
+    ![Skærmbillede af oprettelse af en ny Power BI-visualisering på Office Store-fanen i Partnercenter.](media/office-store/power-bi-visual.png)
 
 5. I vinduet **Opret en ny Power BI-visualisering** skal du angive navnet på din Power BI-visualisering og vælge **Opret**.
 

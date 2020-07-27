@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
-ms.openlocfilehash: 6e9ed3217a7ee589eaf1469ba179ef8c8bc474e9
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 8ce11c0ac6a5098c49f4d8aba0b0a09f28be975b
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354725"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557250"
 ---
 # <a name="get-started-with-deployment-pipelines-preview"></a>Kom i gang med udrulningspipelines (prøveversion)
 
@@ -31,7 +31,7 @@ Hvis følgende betingelser er opfyldt, kan du få adgang til udrulningspipelines
 >[!NOTE]
 > Du kan også se knappen til udrulningspipelines, hvis du tidligere har oprettet en pipeline, eller hvis en pipeline er blevet delt med dig.
 
-![landingsside for udrulningspipelines](media/deployment-pipelines-get-started/creating-pipeline.png)
+![Et skærmbillede af landingssiden for udrulningspipelines.](media/deployment-pipelines-get-started/creating-pipeline.png)
 
 ## <a name="step-1---create-a-deployment-pipeline"></a>1\. trin – opret en udrulningspipeline
 
@@ -84,7 +84,7 @@ Når udrulningen er fuldført, skal du opdatere datasættet. Du kan finde flere 
 
 Vælg den fase, der skal udrulles fra, og klik på udrulningsknappen. Installationsprocessen opretter et duplikeret arbejdsområde i destinationsfasen. Dette arbejdsområde indeholder alt det indhold, der findes i den aktuelle fase.
 
-[![udrul](media/deployment-pipelines-get-started/deploy.png "Udrul alt indhold")](media/deployment-pipelines-get-started/deploy.png#lightbox)
+[![Et skærmbillede, der viser udrulningsknappen for udviklings- og testfaserne i en udrulningspipeline.](media/deployment-pipelines-get-started/deploy.png)](media/deployment-pipelines-get-started/deploy.png#lightbox)
 
 ### <a name="selective-deployment"></a>Selektiv udrulning
 
@@ -92,7 +92,7 @@ Hvis du kun vil udrulle bestemte elementer, skal du klikke på linket **Vis mere
 
 Da dashboards, rapporter og datasæt er relateret og har afhængigheder, kan du bruge knappen Vælg relateret til at kontrollere alle de elementer, som disse elementer er afhængige af. Hvis du f.eks. vil udrulle en rapport til næste fase, markeres det datasæt, som rapporten er forbundet til, når du klikker på knappen Vælg relateret, så de begge vil blive udrullet på én gang, og rapporten ikke bliver brudt.
 
-[![selektiv udrulning](media/deployment-pipelines-get-started/selective-deploy.png "Selektiv udrulning")](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
+[![Et skærmbillede, der viser indstillingen til selektiv udrulning i installationspipelines, som er tilgængelig, når du har valgt indstillingen Vis mere.](media/deployment-pipelines-get-started/selective-deploy.png)](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
 
 >[!NOTE]
 > * Du kan ikke udrulle en rapport eller et dashboard til næste fase, hvis de elementer, rapporten eller dashboardet er afhængig af, ikke findes i den fase, du udruller til.
@@ -104,7 +104,7 @@ Du kan vælge at udrulle til en tidligere fase, f.eks. i et scenarie, hvor du ti
 
 Udrulning til en tidligere fase fungerer kun, hvis den forrige fase er tom. Når du udruller til en tidligere fase, kan du ikke vælge bestemte elementer. Alt indhold i fasen vil blive udrullet.
 
-[![udrulning bagud](media/deployment-pipelines-get-started/deploy-back.png "Udrulning bagud")](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
+[![Et skærmbillede, der viser knappen Installer til forrige fase, som er tilgængelig i menuerne til test- eller produktionsfasen.](media/deployment-pipelines-get-started/deploy-back.png)](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
 
 ## <a name="step-4---create-dataset-rules"></a>4\. trin – opret regler for datasæt
 
@@ -121,15 +121,15 @@ Regler for datasæt er defineret for datakilder og parametre i hvert datasæt. D
 
 1. I den pipelinefase, du vil oprette en datasætregel for, skal du klikke på **Udrulningsindstillinger**.
 
-    ![udrulningsindstillinger](media/deployment-pipelines-get-started/deployment-settings.png)
+    ![Et skærmbillede af knappen Indstillinger for installation, der er placeret øverst til højre i hvert trin i udrulningsspipelinen.](media/deployment-pipelines-get-started/deployment-settings.png)
 
 2. Vælg det datasæt, du vil oprette en regel for, i ruden Udrulningsindstillinger.
 
-    [![regler for datasæt](media/deployment-pipelines-get-started/dataset-rules.png "Vælg et datasæt")](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
+    [![Et skærmbillede, der viser, hvordan du vælger et datasæt til oprettelse af en datasætregel.](media/deployment-pipelines-get-started/dataset-rules.png)](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
 
 3. Vælg den type regel, du vil oprette, udvid listen, og klik på **Tilføj regel**.
 
-     [![tilføj regel](media/deployment-pipelines-get-started/add-rule.png "Tilføj en regel")](media/deployment-pipelines-get-started/add-rule.png#lightbox)
+     [![Et skærmbillede, der viser, at der bliver valgt en datakilderegel og klikket på indstillingen Tilføj regel.](media/deployment-pipelines-get-started/add-rule.png)](media/deployment-pipelines-get-started/add-rule.png#lightbox)
 
 ### <a name="dataset-rule-types"></a>Typer af datasætregler
 
@@ -152,6 +152,8 @@ Der er to typer regler, som du kan oprette:
 * Når et element fjernes eller slettes, slettes de tilhørende regler også. Disse regler kan ikke gendannes.
 
 * Hvis den datakilde eller de parametre, der er defineret i en regel, ændres eller fjernes fra kildedatasættet, er reglen ikke gyldig, og udrulningen vil mislykkes.
+
+* Der kan ikke defineres parameterregler for parametre af typen *Any* eller *Binary*. Du kan finde flere oplysninger under [begrænsninger for opdateringsparametre til datasæt](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparameters).
 
 * Datakilderegler kan kun defineres for følgende datakilder:
     * Azure Analysis Services
@@ -180,7 +182,7 @@ Udrulningstidspunktet er nyttigt til at fastslå, hvornår en fase senest blev o
 
 Når to sekventielle faser har indhold, sammenlignes indholdet på baggrund af metadata for indholdselementerne. Denne sammenligning omfatter ikke sammenligning af data eller opdateringstiden mellem faser.
 
- [![udrulningsflow](media/deployment-pipelines-get-started/deployment-flow.png "Sammenligning af faser")](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
+ [![Et skærmbillede, der viser en installations pipeline med sammenlignings indikatorer.](media/deployment-pipelines-get-started/deployment-flow.png)](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
 
 Der vises et sammenligningsikon mellem to sekventielle faser, så det er muligt at få en hurtig visuel oversigt over forskellene. Sammenligningsindikatoren har to tilstande:
 
@@ -201,13 +203,13 @@ Når to sekventielle faser ikke er ens, vises der et link til **sammenligningen*
     >[!NOTE]
     >Udrulningen påvirker ikke elementer med mærkatet *Mangler i*.
 
- [![sammenlign](media/deployment-pipelines-get-started/compare.png "Sammenligningsvisning")](media/deployment-pipelines-get-started/compare.png#lightbox)
+ [![Et skærmbillede, der viser sammenligningsindstillingen, som udvider sammenligningsvisningen, hvilket gør det muligt at sammenligne elementer mellem forskellige stadier i udrulningspipelines.](media/deployment-pipelines-get-started/compare.png)](media/deployment-pipelines-get-started/compare.png#lightbox)
 
 ## <a name="overriding-content"></a>Tilsidesættelse af indhold
 
 Når du udruller, efter at du har foretaget ændringer af indholdet i kildefasen, overskrives det indhold, du ændrede i destinationsfasen. Når du har klikket på *Udrul*, får du vist en advarsel med en oversigt over antallet af elementer, der vil blive overskrevet.
 
-![advarsel om udskiftet indhold](media/deployment-pipelines-get-started/replaced-content.png)
+![Et skærmbillede af advarslen om erstattet indhold, der vises, når en installation er ved at medføre ændringer af elementer i den fase, du installerer på.](media/deployment-pipelines-get-started/replaced-content.png)
 
 Du kan få mere at vide om, [hvilke elementer der kopieres til næste fase](deployment-pipelines-process.md#deployed-items)og [de elementer, der ikke kopieres](deployment-pipelines-process.md#unsupported-items), i [Om udrulningsprocessen](deployment-pipelines-process.md).
 

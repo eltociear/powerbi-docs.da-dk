@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/10/2020
+ms.date: 07/15/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a8b2934c47d3bc85b1710927fefb814f027c035
-ms.sourcegitcommit: c006d7aabf90c7b29fb05641d1f94f1ee7132943
+ms.openlocfilehash: f0eef1441eb0bb87b6e7b85e791c47174c752bc7
+ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84685254"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86409415"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -32,6 +32,94 @@ Linkene ud for hver opdatering betyder følgende:
 Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
 
 I de følgende afsnit beskrives tidligere måneders opdateringer til **Power BI Desktop**.
+
+
+## <a name="june-2020-update-2825858301"></a>Opdatering fra juni 2020 (2.82.5858.301)
+
+Power BI Desktop i juni føltes som en frisk ny begyndelse, fyldt med nye funktioner, offentligt tilgængelige funktioner og mange muligheder for at få adgang til og interagere i en verden af data. 
+
+Få den nyeste version af Power BI Desktop from [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). Hvis du kører Windows 10, kan du også få Power BI Desktop fra [Microsoft Store](https://aka.ms/pbidesktopstore). De månedlige versioner er de samme, selvom versionsnummeret kan variere mellem de to, uanset hvilken måde du installerer Power BI Desktop på. Du kan finde flere oplysninger om, hvordan du downloader og installerer Power BI Desktop, under [Få Power BI Desktop](desktop-get-the-desktop.md). 
+
+> [!IMPORTANT]
+> Fra og med udgivelsen i september 2019 udgives Power BI Desktop kun som en enkelt .exe-fil, der indeholder alle understøttede sprog. .msi-versionen udgives ikke længere.
+
+
+Linkene ud for hver funktion på opdateringslisten i Power BI Desktop fortolkes på følgende måde:
+
+* \[blog\]: De fleste funktioner er forklaret i et afsnit i den månedlige opdatering i blogindlægget.
+* \[video\]: Der er et videoklip til nogle funktioner, hvor funktionen drøftes. Videoklippet afspilles under en ny browserfane.
+* \[artikel\]: Til nogle funktioner findes der en artikel, som indeholder flere detaljer.
+* De resterende funktioner er selvforklarende og er ikke tilknyttet en artikel eller video.
+
+Du kan også se hele [videoen om den månedlige opdatering til Power BI Desktop](#power-bi-desktop-monthly-update-video).
+
+Følgende opdateringer er nye i Power BI Desktop i denne måned:
+
+
+### <a name="reporting"></a>Rapportering
+* Forbedringer af oprettelse af mobillayout [[video]](https://youtu.be/WUo8TnHNHYM?t=15)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_mobile) 
+* Automatisk sideopdatering er nu generelt tilgængelig  [[video]](https://youtu.be/WUo8TnHNHYM?t=266)  [[artikel]](../create-reports/desktop-automatic-page-refresh.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_APR) 
+* Hierarkisk udsnitsværktøj er nu generelt tilgængelig [[video]](https://youtu.be/WUo8TnHNHYM?t=819)  [[artikel]](../create-reports/desktop-drill-through-buttons.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Hierarchical_slicer) 
+* Moderne bånd er nu generelt tilgængelig [[video]](https://youtu.be/WUo8TnHNHYM?t=1057)  [[artikel]](../create-reports/desktop-ribbon.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_ribbon) 
+* RLS understøttes nu for udvalgte tabeller i Excels datatypegalleri [[video]](https://youtu.be/WUo8TnHNHYM?t=1075) [[artikel]](../collaborate-share/service-excel-featured-tables.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_RLS) 
+
+
+
+### <a name="analytics"></a>Analyse
+* AI-indsigter er nu generelt tilgængelige [[video]](https://youtu.be/WUo8TnHNHYM?t=1106)  [[artikel]](../transform-model/desktop-ai-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_AI) 
+
+
+### <a name="visuals"></a>Visualiseringer
+* Formateringsindstillinger for punkter i kurvediagram [[video]](https://youtu.be/WUo8TnHNHYM?t=1262)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Line_chart)
+* Mange nye visuals fra flere leverandører [[video]](https://youtu.be/WUo8TnHNHYM?t=1342)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Radar)
+
+### <a name="template-apps"></a>Skabelonapps
+* Fleksibel HR-analyse [[video]](https://youtu.be/WUo8TnHNHYM?t=1482)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Agile_HR_Analytics)
+* Uber-brugerdatarapport [[video]](https://youtu.be/WUo8TnHNHYM?t=1507)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Uber_User_Data)
+
+
+### <a name="modeling"></a>Modellering
+* Modelvisning aktiveret til Live Connect (prøveversion) [[video]](https://youtu.be/WUo8TnHNHYM?t=1527)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Model_view_enabled)
+* Opdateringer af modelvisning [[video]](https://youtu.be/WUo8TnHNHYM?t=1624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Updates_to_Model)
+
+
+### <a name="data-connectivity"></a>Dataforbindelse
+* Palantir Foundry-connector [[video]](https://youtu.be/WUo8TnHNHYM?t=1700)  [[artikel]](../connect-data/desktop-data-sources.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Palantir) 
+
+
+### <a name="other-features"></a>Andre funktioner
+* Nye Power BI-kurser [[video]](https://youtu.be/WUo8TnHNHYM?t=1722)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_pbi_training) 
+
+
+Du kan finde detaljerede oplysninger om hver af disse nye funktioner i [oversigten over funktioner i Power BI Desktop](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/).
+
+Tjek [nyhederne i Power BI-tjenesten](service-whats-new.md) og [nyhederne i mobilappsene til Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+> [!NOTE]
+> Se de [datakilder, der er tilgængelige for Power BI Desktop](../connect-data/desktop-data-sources.md). Vores liste vokser hele tiden, så vend tilbage med jævne mellemrum.
+
+
+### <a name="power-bi-desktop-monthly-update-video"></a>Video om månedlig opdatering til Power BI Desktop
+I følgende video beskrives hver af disse opdateringer. Du kan også se videoen fra blogindlægget:
+
+> [!VIDEO https://www.youtube.com/embed/WUo8TnHNHYM]
+
+
+Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisation kræver det. Vi anbefaler altid, at du bruger den nyeste version af Power BI Desktop i stedet for en tidligere version. Der er følgende begrænsninger for alle tidligere versioner:
+
+* Der ydes ikke service til tidligere versioner af Power BI Desktop – du skal altid bruge den nyeste version for at få de nyeste funktioner og opdateringer.
+* Du kan muligvis ikke åbne filer, der er oprettet eller gemt i nyere versioner af Power BI Desktop, med tidligere versioner af Power BI Desktop. 
+* Hvis du får vist en advarsel, når du indlæser en rapport, der er gemt i en nyere version af Power BI Desktop, og derefter gemmer rapporten i den tidligere version, mister du alle oplysninger, der er relateret til nye funktioner.
+* Vi arkiverer kun de engelske versioner af Power BI Desktop.
+
+Vælg følgende links for at downloade denne tidligere version: 
+
+* [Power BI Desktop-version fra juni 2020 – 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-06.exe)
+* [Power BI Desktop-version fra juni 2020 – 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-06_x64.exe)
+
+
+
+
 
 
 
@@ -945,7 +1033,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 
@@ -1798,7 +1886,7 @@ Linkene ud for hver opdatering betyder følgende:
 -   De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 -   Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer var nye i **Power BI Desktop** i december:
 
@@ -1912,7 +2000,7 @@ Linkene ud for hver opdatering betyder følgende:
 -   De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 -   Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 

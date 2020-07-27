@@ -10,12 +10,12 @@ ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: e82dde5022bf0ad28d37e0ed9a8ac9553fbbd75d
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: aa8277a8d0ddea43aff356ced32c9edad8710c93
+ms.sourcegitcommit: a4e06e401abc67dffab52f34e268467def42a97e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485892"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86875043"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Abonner på en rapport eller et dashboard i Power BI-tjenesten 
 
@@ -25,7 +25,7 @@ ms.locfileid: "85485892"
 
 Det har aldrig været nemmere at holde dig opdateret om dine vigtigste dashboards og rapporter. Abonner på rapportsider og dashboards, der betyder mest for dig, og Power BI sender et snapshot til din indbakke. Fortæl Power BI, hvor ofte du vil modtage mails: dagligt, ugentligt eller efter dataopdatering. Du kan tilmed angive et bestemt tidspunkt for, hvornår Power BI sender mails, eller køre det nu.  Du kan i alt konfigurere op til 24 forskellige abonnementer pr. rapport eller dashboard.
 
-Det sprog, der er angivet under Power BI-indstillingerne, bruges til mail og snapshot (se [Understøttede sprog og lande/regioner til Power BI](../fundamentals/supported-languages-countries-regions.md)). Hvis der ikke er angivet et sprog, bruger Power BI det sprog, der stemmer overens med indstillingen for landestandard i din aktuelle browser. Hvis du vil se eller indstille dine sprogindstillinger, skal du vælge ![tandhjulsikonet](./media/end-user-subscribe/power-bi-settings-icon.png) > **Indstillinger > Generelt > Sprog**. 
+Det sprog, der er angivet under Power BI-indstillingerne, bruges til mail og snapshot (se [Understøttede sprog og lande/regioner til Power BI](../fundamentals/supported-languages-countries-regions.md)). Hvis der ikke er defineret et sprog, bruger Power BI engelsk som reserve. Hvis du vil se eller indstille dine sprogindstillinger, skal du vælge ![tandhjulsikonet](./media/end-user-subscribe/power-bi-settings-icon.png) > **Indstillinger > Generelt > Sprog**. 
 
 ![Rullelisten Sprog](./media/end-user-subscribe/power-bi-language.png)
 

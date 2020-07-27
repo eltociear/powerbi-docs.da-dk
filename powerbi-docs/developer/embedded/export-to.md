@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 03/24/2020
-ms.openlocfilehash: 5763c3fc72632e6e734e0dc0a32854e719709d01
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.date: 07/13/2020
+ms.openlocfilehash: 04dae0a59391ba48c7a8b6858c98ed11490ca946
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034491"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557090"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Eksportér Power BI-rapport til fil (prøveversion)
 
@@ -117,9 +117,10 @@ Et job, der overskrider sit antal af samtidige anmodninger, afsluttes ikke. Hvis
 
 Når du opretter et eksportjob, er der tre trin, du skal følge:
 
-1. Afsendelse af en eksportanmodning.
-2. Polling.
-3. Hentning af filen.
+1. [Afsendelse af en eksportanmodning.](#step-1---sending-an-export-request)
+2. [Polling](#step-2---polling).
+3. [Hentning af filen](#step-3---getting-the-file).
+4. [Brug af filstream](#step-4---using-the-file-stream).
 
 Dette afsnit indeholder eksempler på hvert trin.
 
@@ -231,6 +232,10 @@ public class ExportedFile
     public string FileSuffix;
 }
 ```
+
+### <a name="step-4---using-the-file-stream"></a>Trin 4 – Brug af filstreamen
+
+Når du har filstreamen, kan du håndtere den på den måde, der passer bedst til dine behov. Du kan f.eks. sende en mail til den eller bruge den til at downloade de eksporterede rapporter.
 
 ### <a name="end-to-end-example"></a>Komplet eksempel
 

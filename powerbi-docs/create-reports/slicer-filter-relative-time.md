@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 04/22/2020
+ms.date: 07/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 056d69a866b0b56e83557e77462e03e3e00a2c8d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f1a792c7ad25600f04ca9834b1e5019d4e27efb4
+ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85218511"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86409507"
 ---
 # <a name="use-a-relative-time-slicer-and-filter-in-power-bi"></a>Brug et udsnit og filter for relativ tid i Power BI
 
@@ -22,18 +22,12 @@ ms.locfileid: "85218511"
 
 I forbindelse med scenarier med hurtige opdateringer kan filtrering til et mindre tidsrum være nyttigt. Ved hjælp af udsnittet eller filteret for relativ tid kan du anvende tidsbaserede filtre på en hvilken som helst dato- eller tidskolonne i din datamodel. Du kan f.eks. bruge udsnittet for relativ tid til kun at vise videovisninger inden for det sidste minut eller den sidste time. 
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Eksempel på relativ tid":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Skærmbillede af eksempel på relativ tid.":::
 
 Du behøver ikke at bruge denne funktion sammen med funktionen til [automatisk opdatering af side](../create-reports/desktop-automatic-page-refresh.md). Men mange scenarier med relativ tid passer dog godt sammen med funktionen til automatisk opdatering af siden.  
 
 > [!NOTE]
 > Når du anvender et filter eller et udsnit for relativ tid på side- eller rapportniveau, filtreres alle visualiseringer på denne side eller i denne rapport til nøjagtigt det samme tidsinterval ved hjælp af en delt *ankertid*. Da visualiseringer kan have en smule forskellige udførelsestider, sikrer denne ankertid, at visualiseringerne synkroniseres på tværs af din side eller på tværs af din rapport. Læs mere om [ankertider](#understanding-anchor-time) i denne artikel.
-
-## <a name="turn-on-relative-time-preview"></a>Slå prøveversionsfunktionen for relativ tid til
-
-Filteret for relativ tid er en prøveversion, så du skal slå kontakten for funktionen til. Gå til **Filer** > **Indstillinger** > **Indstillinger**. Under **Globale indstillinger** > **Prøveversionsfunktioner** skal du sørge for, at **Filter for relativ tid** er markeret.
-
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set-preview.png" alt-text="Aktivér prøveversionsfunktionen for relativ tid":::
 
 ## <a name="create-a-relative-time-slicer-or-filter"></a>Opret et udsnit eller et filter for relativ tid
 
@@ -45,7 +39,7 @@ Efter du har aktiveret funktionen, skal du trække og slippe dato- eller tidsfel
 
 2. Vælg visualiseringstypen **Udsnit**.
 
-    :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-create-slicer.png" alt-text="Opret et udsnit for tid":::
+    :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-create-slicer.png" alt-text="Skærmbillede af oprettelse af et tidsudsnit.":::
 
 ### <a name="create-a-filter"></a>Opret et filter
  
@@ -55,27 +49,27 @@ Efter du har aktiveret funktionen, skal du trække og slippe dato- eller tidsfel
 
 Derefter skal du ændre filtertypen til **Relativ tid**.
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set.png" alt-text="Ændret til relativ tid":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set.png" alt-text="Skærmbillede af skift til relativ tid.":::
  
 Sådan ser det ud i et udsnit:
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-slicer.png" alt-text="Relativ tid i et udsnit":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-slicer.png" alt-text="Skærmbillede af relativ tid i et udsnit.":::
 
 Sådan ser det ud på et filterkort: 
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-filter.png" alt-text="Relativ tid i et filter":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-filter.png" alt-text="Skærmbillede af relativ tid i et filter.":::
  
-Med denne nye filtertype har du mulighed for at filtrere baseret på **Sidste**, **Næste** eller **Denne tidsperiode**: 
+Med denne nye filtertype kan du filtrere baseret på **Sidste**, **Næste** eller **Denne tidsperiode**: 
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-last-next.png" alt-text="Vælg Sidste, Næste eller Denne tidsperiode":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-last-next.png" alt-text="Skærmbillede af valg af Sidste, Næste eller Denne tidsperiode.":::
  
 Du kan angive tidsvinduet ved hjælp af et heltal og en tidsenhed: **Minutter** eller **Timer**.
  
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-minutes-hours.png" alt-text="Vælg minutter eller timer":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-minutes-hours.png" alt-text="Skærmbillede af valg af minutter eller timer.":::
 
 Hvis du har brug for at spare plads på lærredet, kan du også oprette filteret for relativ tid som et filterkort i ruden Filtre.
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set-filter.png" alt-text="Angiv i stedet relativ tid i et filter":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set-filter.png" alt-text="Skærmbillede af angivelse af relativ tid i et filter i stedet.":::
  
 ## <a name="understanding-anchor-time"></a>Om ankertid
 
@@ -101,7 +95,7 @@ Følgende begrænsninger og overvejelser gælder i øjeblikket for udsnittet og 
     - Den understøttes ikke via API'en til integrering.
     - Den understøttes ikke for Publicer på internettet.
 
-- **Cachelagring af forespørgsel**: Vi bruger klientcachen. Lad os f.eks. sige, at du angiver "sidste 1 minut", derefter "sidste 5 minutter" og derefter tilbage til "sidste 1 minut". På dette tidspunkt ser du de samme resultater, som da den kørte første gang, medmindre du opdaterer siden, eller siden opdateres automatisk.
+- **Cachelagring af forespørgsel**: Vi bruger klientcachen. Lad os sige, at du angiver "sidste 1 minut", derefter "sidste 5 minutter" og derefter går tilbage til "sidste 1 minut". På dette tidspunkt ser du de samme resultater, som da den kørte første gang, medmindre du opdaterer siden, eller siden opdateres automatisk.
 
 ## <a name="next-steps"></a>Næste trin
 

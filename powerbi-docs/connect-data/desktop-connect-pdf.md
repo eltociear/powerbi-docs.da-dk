@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 07/16/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e68d860800f2265923189e470bc633589e612c11
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 785ad7b7d10a164f8257f8aacab177116c0b553b
+ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224150"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459617"
 ---
 # <a name="connect-to-pdf-files-in-power-bi-desktop"></a>Opret forbindelse til PDF-filer i Power BI Desktop
 I Power BI Desktop kan du oprette forbindelse til en **PDF-fil** og bruge dataene fra filen på samme måde som enhver anden datakilde i Power BI Desktop.
@@ -40,9 +40,13 @@ Fra og med udgivelsen af **Power BI Desktop** i november 2018 kan du angive **St
 
 `Pdf.Tables(File.Contents("c:\sample.pdf"), [StartPage=10, EndPage=11])`
 
+## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 
-## <a name="next-steps"></a>De næste trin
-Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Hvis du vil have mere at vide om datakilder, kan du se følgende ressourcer:
+Når du arbejder med PDF-connectoren på datasæt i en Premium-kapacitet, opretter PDF-connectoren ikke forbindelsen korrekt. Hvis du vil gøre det muligt for PDF-connectoren at arbejde på et datasæt i Premium-kapacitet, skal du konfigurere dette datasæt til at bruge en gateway og bekræfte forbindelsen til dette datasæt via gatewayen.  
+
+
+## <a name="next-steps"></a>Næste trin
+Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
 
 * [Hvad er Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)

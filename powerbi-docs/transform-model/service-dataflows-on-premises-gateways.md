@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 01/08/2020
+ms.date: 07/15/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b4146cef6ae34c7c6e5eb9713242c3a2cb0257ee
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9a3e393fa02d0bccc3e966c467b41883e72ae05e
+ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237769"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459640"
 ---
 # <a name="using-dataflows-with-on-premises-data-sources"></a>Brug af dataflow med datakilder i det lokale miljø
 
@@ -69,6 +69,7 @@ Der er nogle få kendte begrænsninger i forbindelse med brugen af Enterprise Ga
 * Ændring af gatewayen påvirker hele dataflowet.
 * Hvis der er brug for flere gateways, er den bedste fremgangsmåde at oprette flere dataflow (ét for hver enkelt gateway) og bruge funktionerne til compute eller enhedsreference til at samle dataene.
 * Dataflow understøttes kun vha. Enterprise Gateways. Personlige gateways kan ikke vælges på rullelisten, lister og på skærme med indstillinger.
+* Datakilder i det lokale miljø, der er konfigureret med indstillingen [Brug SSO via Kerberos til DirectQuery- og Import-forespørgsler](../connect-data/service-gateway-sso-kerberos.md#run-a-power-bi-report), understøttes ikke i dataflows.
 
 
 ## <a name="next-steps"></a>Næste trin

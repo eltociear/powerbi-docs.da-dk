@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 06/11/2020
+ms.date: 07/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2b9c4a8f4695f8d701eba535180194d29dd8bdec
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5fbaeaafb14fc935e26b4a2d13acf9dc09ea188f
+ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238181"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86409542"
 ---
 # <a name="add-multiple-fields-to-a-hierarchy-slicer"></a>Føj flere felter til et hierarki-udsnitsværktøj
 
@@ -22,22 +22,41 @@ ms.locfileid: "85238181"
 
 Hvis du vil filtrere flere relaterede felter i et enkelt udsnitsværktøj, kan du gøre det ved at opbygge det, der kaldes et *hierarki-udsnitsværktøj*. Du kan oprette disse udsnitsværktøjer i enten Power BI Desktop eller i Power BI-tjenesten.
 
-:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy.png" alt-text="Hierarki-udsnitsværktøj i Power BI":::
+:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy.png" alt-text="Skærmbillede af hierarki-udsnitsværktøjet i Power BI.":::
 
 Når du føjer flere felter til udsnittet, vises der som standard en pil eller *vinkel* ud for de elementer, der kan udvides, for at få elementerne på næste niveau vist.
 
-:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-arrow.png" alt-text="Rulleliste for hierarki-udsnitsværktøj i Power BI":::
+:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-arrow.png" alt-text="Skærmbillede af rullelisten til hierarki-udsnitsværktøjet i Power BI.":::
  
  
 Når du vælger et eller flere underordnede til et element, kan du se en delvist markeret cirkel for elementet på øverste niveau.
  
-:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-semi-selected.png" alt-text="Enkeltmarkeringstilstand for hierarki-udsnitsværktøj i Power BI":::
+:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-semi-selected.png" alt-text="Skærmbillede af enkeltmarkeringstilstand for hierarki-udsnitsværktøjet i Power BI.":::
 
 ## <a name="format-the-slicer"></a>Formatér udsnittet
 
 Funktionsmåden for udsnittet er ikke blevet ændret. Du kan også indstille dit udsnitsværktøj, som du vil. Du kan f.eks. angive det til enkeltmarkeringstilstand. Eller du kan skifte mellem en liste og en rullemenu. 
 
-:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-dropdown.png" alt-text="Hierarki-udsnitsværktøj, der er formateret som et rullelisteudsnitsværktøj":::
+:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-dropdown.png" alt-text="Skærmbillede af hierarki-udsnitsværktøjet, der er formateret som et rullelisteudsnitsværktøj.":::
+
+Du kan også foretage følgende formateringsændringer.
+
+### <a name="change-the-title"></a>Rediger titlen
+
+Du kan redigere titlen på ethvert udsnitsværktøj, men det er især nyttigt til hierarki-udsnitsværktøjer. Navnet på et hierarki-udsnitsværktøj er som standard en liste over feltnavne i hierarkiet.
+
+I dette eksempel viser titlen på udsnitsværktøjet de tre felter i hierarkiet: Type, Platform og Navn.
+
+:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-title.png" alt-text="Skærmbillede af hierarki-udsnitsværktøjet med felterne Type, Platform og Navn.":::
+
+Hvis du vil ændre navnet, skal du markere udsnitsværktøjet og derefter vælge ruden **Formatér**. Under **Header for udsnitsværktøj** kan du se det aktuelle navn på udsnitsværktøjet i feltet **Titeltekst**.
+
+:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-edit-title.png" alt-text="Skærmbillede af ruden Formatér med den aktuelle titel.":::
+
+Vælg teksten, og tilføj et nyt navn.
+
+:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-new-title.png" alt-text="Skærmbillede af ny titel til hierarki-udsnitsværktøjet.":::
+
 
 ### <a name="change-the-expandcollapse-icon"></a>Rediger ikonet Udvid/skjul
 
@@ -47,7 +66,7 @@ Hierarki-udsnitsværktøjer har nogle andre formateringsindstillinger. Du kan æ
 1. Udvid **Elementer** og vælg **ikonet Udvid/skjul**.
 1. Vælg mellem **Chevron**, **Plus/minus** og **Tekstmarkør**.
  
-    :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-caret.png" alt-text="Vælg et udvid-/skjul-ikon til hierarki-udsnitsværktøjet":::
+    :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-caret.png" alt-text="Skærmbillede af Vælg et udvid-/skjul-ikon til hierarki-udsnitsværktøjet.":::
  
 ### <a name="change-the-indentation"></a>Rediger indrykningen
 
@@ -56,7 +75,7 @@ Hvis der ikke er meget plads i din rapport, kan det være en god idé at reducer
 1. Vælg udsnitsværktøjet, og vælg derefter **Format**.
 1. Udvid **Elementer**, og træk **Trinvis layoutindrykning** mindre eller større. Du kan også blot angive et tal i feltet.
 
-    :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-indentation.png" alt-text="Angiv indrykningen for hierarki-udsnitsværktøjet":::
+    :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-indentation.png" alt-text="Angiv indrykningen for hierarki-udsnitsværktøjet.":::
 
 ## <a name="next-steps"></a>Næste trin
 

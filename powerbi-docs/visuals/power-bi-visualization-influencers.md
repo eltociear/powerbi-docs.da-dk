@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d5010097eff980bff59bea049684e381ed948514
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 48f094def0576d6e90a71117cc37ac975304e07f
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237843"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557273"
 ---
 # <a name="create-key-influencers-visualizations"></a>Opret visualiseringer af nøglefaktorer
 
@@ -275,6 +275,7 @@ Der er nogle begrænsninger for visualiseringen af nøglefaktorerne:
 - Direkte forbindelse til Azure Analysis Services og SQL Server Analysis Services understøttes ikke
 - Publicering til internettet understøttes ikke
 - .NET Framework 4.6 eller nyere kræves
+- Integration af SharePoint Online understøttes ikke endnu
 
 ![Numerisk spørgsmål](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
 

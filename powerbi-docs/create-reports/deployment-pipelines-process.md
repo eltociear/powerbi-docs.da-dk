@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 06/25/2020
-ms.openlocfilehash: eee8d67caab4a3d7b888396fa62debaf0aab2490
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: 002a50fd2e8e55d5ec06d7f15420ae8299861b37
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034284"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557204"
 ---
 # <a name="understand-the-deployment-process-preview"></a>Om udrulningsprocessen (prøveversion)
 
@@ -152,11 +152,11 @@ Følgende datasætegenskaber kopieres ikke under udrulningen:
 
 Opret en app for hver enkel fase i udrulningspipelinen, så du kan teste hver appopdatering fra slutbrugerens synspunkt. Med en udrulningspipeline kan du nemt administrere denne proces. Brug knappen Publicer eller Vis på arbejdsområdekortet til at publicere eller få vist appen i en bestemt pipelinefase.
 
-[![publicer app](media/deployment-pipelines-process/publish.png "Publicer app")](media/deployment-pipelines-process/publish.png#lightbox)
+[![Et skærmbillede, som viser knappen Publicer app nederst til højre i produktionsfasen.](media/deployment-pipelines-process/publish.png)](media/deployment-pipelines-process/publish.png#lightbox)
 
 I produktionsfasen åbner den primære handlingsknap i nederste venstre hjørne siden til opdatering af appen i Power BI, så alle indholdsopdateringer bliver tilgængelige for brugerne af appen.
 
-[![opdater app](media/deployment-pipelines-process/update-app.png "Opdater app")](media/deployment-pipelines-process/update-app.png#lightbox)
+[![Et skærmbillede, som viser knappen Opdater app nederst til højre i produktionsfasen.](media/deployment-pipelines-process/update-app.png)](media/deployment-pipelines-process/update-app.png#lightbox)
 
 >[!IMPORTANT]
 >Udrulningsprocessen omfatter ikke opdatering af appindholdet eller -indstillingerne. Hvis du vil anvende ændringer på indhold eller indstillinger, skal du manuelt opdatere appen i den påkrævede pipelinefase.

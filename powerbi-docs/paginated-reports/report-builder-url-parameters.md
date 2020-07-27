@@ -9,12 +9,12 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 05/01/2020
-ms.openlocfilehash: d7e11b40c3a0257e090812ff15f31916cea509f9
-ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
+ms.openlocfilehash: fd92e64ac04a31446214bd6f1661d9ba5c1358d9
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84336768"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557100"
 ---
 # <a name="url-parameters-in-paginated-reports-in-power-bi"></a>URL-parametre i sideinddelte rapporter i Power BI
 
@@ -81,7 +81,15 @@ Tilgængelige værdier er:
 - WORDOPENXML (WORD) 
 - CSV 
 - PDF 
+- ACCESSIBLEPDF (PDF)
 - XML 
+
+**Rapportvisning** angiver den type visning, der skal bruges til at vise rapporten.
+
+-   rdl:reportView
+
+    - 'Interactive' (standard): Indlæs rapporten i interaktiv tilstand.
+    - 'pageView': Indlæs rapporten i sidevisningstilstand.
 
 **Tilstand for parameterpanel** angiver, om parameterpanelet er lukket eller åbent, når rapporten indlæses, eller er fuldstændig skjult.
 
@@ -93,7 +101,7 @@ Tilgængelige værdier er:
 
 **Enhedsoplysninger** Du kan angive yderligere outputparametre for følgende eksportformater. 
 
-PDF:
+PDF/ACCESSIBLEPDF:
 
 - rdl:AccessiblePDF=true/false
 - rdl:Columns=integer

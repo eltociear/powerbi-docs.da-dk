@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 07/08/2020
-ms.openlocfilehash: 8b777cba35f32dcf2d6561b73c350d047d473223
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 1263de975319b7b0e2ef5123d985fa50a126d680
+ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162269"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459594"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -52,11 +52,12 @@ Se [Nyheder i Power BI-rapportserver](whats-new.md) for at få flere oplysninger
 
 
 - **Power BI Desktop (optimeret til Power BI-rapportserver)**
-    - *Version: 2.81.5831.941 (maj 2020), udgivet: 27. maj, 2020* (nyt build og ny version)
+   - *Version: 2.81.5831.1181 (maj 2020), udgivet: 9. juni 2020*
+        - Fejlrettelse
+           -  Rettelse af visualiseringer på markedspladsen
+   - *Version: 2.81.5831.941 (maj 2020), udgivet: 27. maj, 2020* (nyt build og ny version)
         - Indeholder ændringer, der kræves for at oprette forbindelse med Power BI-rapportserver (maj 2020)        
-
-
-
+   
 ## <a name="january-2020"></a>Januar 2020
 - **Power BI-rapportserver**
     - *Version: 1.6.7364.4075 (build 15.0.1102.777), udgivet: 2. marts 2020*

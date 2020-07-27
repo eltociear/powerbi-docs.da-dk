@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c691446d7cc9a976e38cab5aefc385c988cb1552
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 9f434d27a11d171509645594a6f7f67e62c16faa
+ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347763"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86409300"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Opret forbindelse til Microsoft Graph Security API i Power BI Desktop
 
@@ -32,6 +32,7 @@ Samtykke kræver connectorens program-id og -navn, hvilket er nævnt her og tilg
 |----------|-------|
 | **Programnavn** | `MicrosoftGraphSecurityPowerBIConnector` |
 | **Program-id** | `cab163b7-247d-4cb9-be32-39b6056d4189` |
+| **Omdirigerings-URI** | `https://oauth.powerbi.com/views/oauthredirect.html` |
 |||
 
 For at give samtykke for connectoren skal administratoren af din Azure AD-lejer følge en af disse metoder:
@@ -64,7 +65,7 @@ Følg disse trin for at bruge connectoren:
 
     ![Dialogboksen Administratorsamtykke](media/desktop-connect-graph-security/AdminConsent.PNG)
     
-7. Når du er logget på, kan du se følgende dialogboks, der angiver, at du er blevet godkendt. Vælg **Connect**.
+7. Når du er logget på, kan du se følgende dialogboks, der angiver, at du er blevet godkendt. Vælg **Opret forbindelse**.
 
     ![Dialogboksen "Du er i øjeblikket logget på"](media/desktop-connect-graph-security/SignedIn.PNG)
     
@@ -87,7 +88,7 @@ Her er resultaterne for de Microsoft Graph Security-objekter, vi sendte forespø
 
 Nu er du klar til at bruge de importerede data fra Microsoft Graph Security-connector i Power BI Desktop. Du kan oprette grafik eller rapporter. Eller du kan interagere med andre data, du importerer fra Excel-projektmapper, databaser eller andre datakilder.
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 * Se Power BI-eksempler og -skabeloner, som bruger denne connector under [GitHub Power BI-eksempler til Microsoft Graph Security](https://aka.ms/graphsecuritypowerbiconnectorsamples).
 
 * I [dette blogindlæg om Power BI-connectorer til Microsoft Graph Security](https://aka.ms/graphsecuritypowerbiconnectorblogpost) kan du se brugerscenarier og yderligere oplysninger.
