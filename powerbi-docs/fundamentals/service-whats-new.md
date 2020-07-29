@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: b43d52445c9a5232ba1747a9dae9333da8697f84
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: 40f1e0938f54fe55abf8148e12f8842041b42c3d
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84273063"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252768"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
 Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner i **Power BI-tjenesten**. Du kan finde relaterede oplysninger om nyheder under:
@@ -42,7 +42,7 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 
 ### <a name="february-2020"></a>Februar 2020
 * Mulighed for at hæve dashboards, rapporter og apps i Power BI Start.
-* Ny [Power BI-fane](../collaborate-share/service-embed-report-microsoft-teams.md) til integrering af rapporter i Microsoft Teams.
+* Ny [Power BI-fane](../collaborate-share/service-collaborate-microsoft-teams.md) til integrering af rapporter i Microsoft Teams.
 * Generel tilgængelighed af [trinvis opdatering](../admin/service-premium-incremental-refresh.md) med understøttelse af Power BI Pro-brugere.
 * Understøttelse af mailabonnementer til eksterne mailadresser.
 * Generel tilgængelighed af [BYOK](../admin/service-encryption-byok.md) (Bring Your Own Key) til Power BI Premium.

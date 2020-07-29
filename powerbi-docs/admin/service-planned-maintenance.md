@@ -11,12 +11,12 @@ ms.author: kfollis
 ms.custom: MC
 ROBOTS: NOINDEX
 LocalizationGroup: Admin
-ms.openlocfilehash: cc9364129159b5527d309f125d42e661d0b4c206
-ms.sourcegitcommit: a58d10ca62bc55e83b58cf8e8495ac01a4bd6532
+ms.openlocfilehash: 099cd750328bed0b23524d6119c4d7ce91548a23
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/20/2020
-ms.locfileid: "85120549"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252032"
 ---
 # <a name="power-bi-planned-maintenance"></a>Planlagt vedligeholdelse af Power BI
 
@@ -37,7 +37,7 @@ Hvis din organisation berøres, giver vi dig besked på forhånd. Microsoft 365-
 * Brugere af Power BI – Mobil-appen skal bekræfte, at de bruger den nyeste version, logge af og derefter logge på appen igen. Se telefonens app store, eller se siden [Power BI – Mobil](https://powerbi.microsoft.com/mobile/).
 * Kunder, der aktivt har redigeret eller publiceret rapporter, hvor der bruges organisatoriske visuals, skal enten importere visual'et igen via organisationens visualbutik eller downloade en opdateret PBIX, før de publicerer igen. Det gælder uanset om visuals lokale eller fra OneDrive- og SharePoint-placeringer. Hvis du vil have flere oplysninger om organisatoriske visuals, kan du se [Organisatoriske visuals](service-admin-portal.md#organization-visuals).
 * Hvis Excel-projektmapper, der bruger funktionen Analysér i Excel, ikke opdateres, skal du muligvis opdatere forbindelsesstrengen eller hente ODC-forbindelsen for det pågældende datasæt igen. Se [Analysér i Excel](../collaborate-share/service-analyze-in-excel.md#connect-to-power-bi-data) for at få flere oplysninger.
-* Links til Power BI, der er integreret i indhold kan muligvis ikke oprette forbindelse, når vedligeholdelsen er fuldført. Et integreret link i SharePoint eller Teams kan f. eks. resultere i en brugerfejl. Du kan løse problemet ved at gendanne det integrerede link i Power BI og derefter opdatere de placeringer, hvor det bruges. Hvis du vil vide mere om integrerede links, kan du se [Integrer en rapportwebdel i SharePoint Online](../collaborate-share/service-embed-report-spo.md) og [Samarbejd i Microsoft Teams med Power BI](../collaborate-share/service-embed-report-microsoft-teams.md).
+* Links til Power BI, der er integreret i indhold kan muligvis ikke oprette forbindelse, når vedligeholdelsen er fuldført. Et integreret link i SharePoint eller Teams kan f. eks. resultere i en brugerfejl. Du kan løse problemet ved at gendanne det integrerede link i Power BI og derefter opdatere de placeringer, hvor det bruges. Hvis du vil vide mere om integrerede links, kan du se [Integrer en rapportwebdel i SharePoint Online](../collaborate-share/service-embed-report-spo.md) og [Samarbejd i Microsoft Teams med Power BI](../collaborate-share/service-collaborate-microsoft-teams.md).
 
 ## <a name="next-steps"></a>Næste trin
 

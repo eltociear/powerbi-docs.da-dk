@@ -5,19 +5,19 @@ services: powerbi
 author: maggiesMSFT
 ms.service: powerbi
 ms.topic: include
-ms.date: 06/23/2020
+ms.date: 07/24/2020
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: 9ddf9df0feaed2a2a0177d11e9b36f34135801c6
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 6a2fa7aca043c553c9174db81ff575853e526e06
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85365297"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87260251"
 ---
 |Funktion   | Administrator  | Medlem  | Bidragsyder  | Fremviser |
 |---|---|---|---|---|
-| Opdatere og slette arbejdsområdet.  |  |   |   |   | 
+| Opdatere og slette arbejdsområdet.  | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   | 
 | Tilføje/fjerne personer, herunder andre administratorer.  |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   |
 | Tillade, at bidragydere opdaterer appen for arbejdsområdet  |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   |
 | Tilføje medlemmer eller andre med lavere tilladelser.  |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
