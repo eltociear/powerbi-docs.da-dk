@@ -10,12 +10,12 @@ ms.date: 05/12/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f2fb659188a5c413ec7a203c6f1a55bb24826c15
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 90cd12bc7d8d7261e25edd32c5afa7cf144e8202
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228730"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252479"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -185,6 +185,7 @@ I **lejerindstillinger** har administrationsportalen to afsnit til at styre arbe
 
 - Opret den nye arbejdsområdeoplevelse.
 - Brug datasæt på tværs af arbejdsområder.
+- Bloker oprettelse af klassisk arbejdsområde.
 
 ### <a name="create-the-new-workspaces"></a>Opret de nye arbejdsområder
 
@@ -213,6 +214,13 @@ Administratorer kan styre, hvilke brugere i organisationen der kan bruge datasæ
 
 Du kan få flere oplysninger under [Introduktion til datasæt på tværs af arbejdsområder](../connect-data/service-datasets-across-workspaces.md).
 
+### <a name="block-classic-workspace-creation"></a>Bloker oprettelse af klassisk arbejdsområde
+
+Administratorer kan styre, om organisationen kan oprette klassiske arbejdsområder. Når denne indstilling er aktiveret, kan brugere, der opretter et arbejdsområde, kun oprette nye arbejdsområder med den nye arbejdsområdeoplevelse. 
+
+![Bloker oprettelse af klassisk arbejdsområde](media/service-admin-portal/power-bi-admin-block-classic-workspaces.png)
+
+Når indstillingen er aktiveret, vises Office 365-grupper, der er oprettet for nylig, ikke på listen over Power BI-arbejdsområder. Eksisterende klassiske arbejdsområder vises stadig på listen. Når indstillingen er deaktiveret, vises alle Office 365-grupper, som brugeren er medlem af, på listen over arbejdsområder. Få mere at vide om [arbejdsområder med den nye arbejdsområdeoplevelse](../collaborate-share/service-new-workspaces.md).
 
 ## <a name="export-and-sharing-settings"></a>Indstillinger for eksport og deling
 
@@ -369,6 +377,15 @@ Lejerindstillingen **Tillad forbindelser til udvalgte tabeller** under **Lejerin
 Forbindelser til udvalgte tabeller deaktiveres også, hvis lejerindstillingen **Eksportér data** er angivet til **Deaktiveret**.
 
 Læs mere om [Udvalgte Power BI-tabeller i Excel](../collaborate-share/service-excel-featured-tables.md).
+
+## <a name="share-to-teams-tenant-setting"></a>Lejerindstillingen Del i Teams
+
+Indstillingen **Del i Teams** findes i sektionen **Lejerindstillinger** på Power BI-administrationsportalen. Indstillingen giver organisationer mulighed for at skjule **Del i Teams**-knapper i Power BI-tjenesten. Når den er angivet til deaktiveret, kan brugerne ikke se **Del i Teams**-knapper på handlingslinjen eller i genvejsmenuer, når de får vist rapporter og dashboards i Power BI-tjenesten.
+
+![Skærmbillede af lejerindstillingen Del i Teams på Power BI-administrationsportalen.](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
+
+Læs mere om, hvordan du [deler Power BI-indhold i Teams](../collaborate-share/service-share-report-teams.md).
+
 
 ## <a name="power-bi-visuals-settings"></a>Indstillinger for Power BI-visuals
 
@@ -591,7 +608,7 @@ Som standard gemmes data, der bruges med Power BI, i et internt lager, der lever
 
 Som administrator kan du få vist de arbejdsområder, der findes i din lejer. Du kan sortere og filtrere listen over arbejdsområder og få vist detaljerne for hvert arbejdsområde. Kolonnerne i tabellen svarer til de egenskaber, der returneres af [REST API'erne til Power BI Administration](/rest/api/power-bi/admin) for arbejdsområder. Personlige arbejdsområder er af typen **Personlig gruppe**, klassiske arbejdsområder er af typen **Gruppe**, og arbejdsområder med den nye arbejdsområdeoplevelse er af typen **Arbejdsområde**. Du kan finde flere oplysninger under [Organiser arbejde i de nye arbejdsområder](../collaborate-share/service-new-workspaces.md).
 
-Administratorer kan også administrere og genoprette arbejdsområder ved hjælp af enten Power BI Administration eller PowerShell-cmdlet'er. 
+Administratorer kan også administrere og genoprette arbejdsområder ved hjælp af enten administrationsportalen eller PowerShell-cmdlet'er. 
 
 ![Liste over arbejdsområder](media/service-admin-portal/workspaces-list.png)
 

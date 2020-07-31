@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/15/2020
+ms.date: 07/24/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4d752a49587e611c3f42de3f40c68437f36fe3a9
-ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
+ms.openlocfilehash: c1d483b6a29d2463af05cd224ac6b03dd149eb33
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86411830"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252883"
 ---
 # <a name="using-external-tools-in-power-bi-desktop-preview"></a>Brug af eksterne værktøjer i Power BI Desktop (prøveversion)
 
@@ -23,6 +23,13 @@ Fra og med udgivelsen af Power BI Desktop i juli 2020 kan du bruge eksterne vær
 Båndet **Eksterne værktøjer** i Power BI Desktop indeholder knapper til eksterne værktøjer, der er installeret på computeren, og som er registreret i Power BI Desktop. Eksterne værktøjer, der startes fra Power BI Desktop, forbindes automatisk med Analysis Services-programmet, der kører som en del af Power BI Desktop, så brugerne får en problemfri, sammenhængende oplevelse.
 
 ![Båndet med eksterne værktøjer i Power BI Desktop](media/desktop-external-tools/desktop-external-tools-01.png)
+
+Disse udvalgte eksterne værktøjer omfatter følgende med links til deres installationsplacering. De enkelte eksterne værktøjer understøttes af deres respektive designere:
+
+* [Tabular Editor](https://tabulareditor.com/)
+* [DAX Studio](https://daxstudio.org)
+* [ALM Toolkit](http://alm-toolkit.com)
+
 
 De følgende afsnit indeholder en beskrivelse af de handlinger, som de eksterne værktøjer understøtter, en liste over udvalgte værktøjer, der er inkluderet i Power BI Desktop, og en vejledning i, hvordan du registrerer yderligere værktøjer.
 
@@ -43,7 +50,7 @@ Alle datasæt-metadata for [tabelobjektmodeller](https://docs.microsoft.com/anal
 
 ## <a name="featured-external-tools"></a>Udvalgte eksterne værktøjer
 
-Følgende open source-communityværktøjer fungerer sammen med Power BI Desktop. Værktøjernes respektive installationsprogrammer registrerer dem sammen med Power BI Desktop ved installationen:
+Følgende open source-communityværktøjer fungerer sammen med Power BI Desktop. De understøttes af deres respektive designere. Værktøjernes respektive installationsprogrammer registrerer dem sammen med Power BI Desktop ved installationen:
 
 * Tabular Editor
 * DAX Studio
@@ -122,6 +129,18 @@ I 64-bit-miljøer skal du placere filerne i følgende mappe:
 * **Program Files (x86)\Common Files\Microsoft Shared\Power BI Desktop\External Tools**
 
 Filer på denne angivne placering med udvidelsen **.pbitool.json** indlæses af Power BI Desktop ved start.
+
+## <a name="disabling-external-tools-using-the-registry"></a>Deaktivering af eksterne værktøjer ved hjælp af registreringsdatabasen
+
+Eksterne værktøjer kan deaktiveres ved hjælp af **gruppepolitikker** eller ved at redigere registreringsdatabasen, hvilket ligner processen til deaktivering af **brugerdefinerede visualiseringer**.
+
+    Registry key: ```Software\Policies\Microsoft\Power BI Desktop\```
+
+    Registry value: ```EnableExternalTools```
+
+En værdi på 1 (decimal) aktiverer brugen af eksterne værktøjer i Power BI, hvilket er standardværdien.
+
+En værdi på 0 (decimal) deaktiverer brugen af eksterne værktøjer i Power BI.
 
 
 ## <a name="next-steps"></a>Næste trin

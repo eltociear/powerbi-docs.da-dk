@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 05/27/2020
+ms.date: 07/28/2020
 ms.author: maggies
-ms.openlocfilehash: f4237379ffefeeb7ba9d105f5fbd61ff84959807
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 1a9fbfc5d764a9dbda75bd60e0efb6da55efd202
+ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239505"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87364071"
 ---
 # <a name="configure-power-bi-report-server-with-azure-application-proxy"></a>Konfigurer en Power BI-rapportserver med Azure-proxyprogram
 
@@ -110,7 +110,7 @@ Vi skal konfigurere delegeringsindstillingerne på kontoen til rapportservertjen
 3. Vi vil konfigurere begrænset delegering med protokoltransitering. Med begrænset delegering skal du være eksplicit med, hvilke tjenester der skal uddelegeres til.
 4. Højreklik på **kontoen til rapportservertjenesten**, og vælg **Egenskaber**.
 5. Vælg fanen **Delegering**.
-6. Vælg **Hav kun tillid til denne computer i forbindelse med uddelegering til de angivne tjenester**.
+6. Vælg **Hav kun tillid til denne bruger til delegering til angivne tjenester**.
 7. Vælg **Brug enhver godkendelsesprotokol**.
 8. Under **Tjenester, som denne konto kan give uddelegerede legitimationsoplysninger** skal du vælge **Tilføj**.
 9. I den nye dialogboks skal du vælge **Brugere eller computere**.

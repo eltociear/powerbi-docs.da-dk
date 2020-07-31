@@ -7,15 +7,15 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 06/01/2020
+ms.date: 07/28/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 48ff2852f2c7df3a1b005d730a3f91dc9e434f62
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: fdd08c32277dfaa9a619b024a7fb0ece0517f1cb
+ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232245"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87364094"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Brug af rapporttemaer i Power BI Desktop
 
@@ -43,6 +43,9 @@ Hvis du vil anvende et rapporttema på en Power BI Desktop-rapport, kan du vælg
 * [Importér en JSON-fil med et brugerdefineret tema](#import-custom-report-theme-files).
 
 Vi ser nærmere på hver af disse muligheder efter tur.
+
+> [!NOTE]
+> Temaer kan kun anvendes, når du bruger Power BI Desktop. Du kan ikke anvende temaer på eksisterende rapporter i Power BI-tjenesten. 
 
 ### <a name="built-in-report-themes"></a>Indbyggede rapporttemaer
 
@@ -198,6 +201,15 @@ Sådan får du vist de tilgængelige farver i et rapporttema:
 Når vi f.eks. har anvendt de mange grønne og brune farver fra Skt. Patricks dag-temaet, skal vi vælge en visualisering. Se alle de grønne farver? Det skyldes, at disse farver var en del af det rapporttema, som vi importerede og anvendte.
 
 Farverne i farvepaletten er også relative i forhold til det aktuelle tema. Lad os f.eks. antage, at du vælger den tredje farve i den øverste række for et datapunkt. Hvis du på et senere tidspunkt skifter til et andet tema, opdateres datapunktets farve automatisk til den tredje farve i den øverste række i det nye tema, på samme måde som når du ændrer temaer i Microsoft Office.
+
+Når du angiver et rapporttema, ændres de standardfarver, der bruges i visualiseringer, i hele rapporten. Power BI indeholder en liste, der består af hundredvis af farver, for at sikre, at visualiseringer har en lang række entydige farver, der kan vises i en rapport. Når Power BI tildeler farver til en visualiseringsserie, vælges farver efter først til mølle-princippet, efterhånden som seriefarver tildeles. Når du importerer et tema, nulstilles farvetilknytningen for dataserien. 
+
+Power BI registrerer farven for en dynamisk serie og bruger den samme farve til værdien i andre visualiseringer. I en *dynamisk serie* ændres antallet af serier, der vises i visualiseringer, muligvis afhængigt af målinger, værdier eller andre aspekter. Hvis du f.eks. viser *Profit efter område* i en rapport, kan antallet af salgsområder være fem, eller det kan være ni. Antallet af områder er dynamisk, så det opfattes som en dynamisk serie. 
+
+Omvendt er antallet af serier kendt for *statiske serier*. Indtægter af typen *Profit* og *Indtægt* er f.eks. statiske serier. I statiske serier tildeler Power BI farver efter indeks i temapaletterne. Du kan tilsidesætte tildelingen af standardfarver ved at vælge en farve i formateringsruden under **Datafarver**. Du skal muligvis ændre dine udsnitsvalg for at se alle potentielle serieværdier og også for at angive deres farver. Hvis du eksplicit angiver en farve for en enkelt visualisering ved hjælp af ruden **Egenskaber**, anvendes det importerede tema ikke på nogen af de farver, der eksplicit er defineret. 
+
+Hvis du vil tillade, at temaet anvendes på disse eksplicitte farver, skal du bruge **Gendan til standard** i sektionen **Datafarver** for den visualisering, som farven eksplicit er angivet for, for at fortryde anvendelse af den eksplicitte farve og tillade, at temaet anvendes.
+
 
 ### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Situationer, hvor rapporttemafarver ikke bliver i rapporterne
 

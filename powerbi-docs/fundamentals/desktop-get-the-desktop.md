@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 01/29/2020
+ms.date: 07/23/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 3038463a9e3447ee9b38ae3cb178f3486d21bc80
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: ab1dd7be867d886f4944e9771be5c9ff188d2037
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215104"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252630"
 ---
 # <a name="get-power-bi-desktop"></a>Hent Power BI Desktop
 Med Power BI Desktop kan du oprette avancerede forespørgsler, modeller og rapporter, som visualiserer data. Med Power BI Desktop kan du skabe datamodeller, oprette rapporter og dele dit arbejde ved at publicere det i Power BI-tjenesten. Power BI Desktop kan downloades gratis.
@@ -25,6 +25,11 @@ Du kan hente Power BI Desktop på to måder, som beskrevet i følgende afsnit:
 * [Download det direkte som en eksekverbar pakke, du downloader og installerer på din computer](#download-power-bi-desktop-directly).
 
 Ved begge fremgangsmåder hentes den nyeste version af Power BI Desktop på computeren, men der er et par forskelle, du skal være opmærksom på, som beskrevet i følgende afsnit.
+
+
+> [!IMPORTANT]
+> Power BI Desktop opdateres og frigives hver måned med kundefeedback og nye funktioner. Det er kun den nyeste version af Power BI Desktop, der understøttes. Kunder, der kontakter support til Power BI Desktop, bliver bedt om at opgradere til den nyeste version. Du kan hente den nyeste version af Power BI Desktop fra [Windows Store](https://aka.ms/pbidesktopstore) eller som en enkelt eksekverbar fil, der indeholder alle understøttede sprog, som du [downloader](https://www.microsoft.com/download/details.aspx?id=58494) og installerer på din computer.
+
 
 ## <a name="install-as-an-app-from-the-microsoft-store"></a>Installér som en app fra Microsoft Store
 Der er et par måder, hvorpå du kan få adgang til den nyeste version af Power BI Desktop fra Microsoft Store. 

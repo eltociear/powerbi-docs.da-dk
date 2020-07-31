@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: d4bfb6de39f0a8dee678e8224cca1cb03646abca
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 1e1e9afcbcae300e12580fb5f54bdb53e7822c03
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226975"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86952719"
 ---
 # <a name="analyze-in-excel"></a>Analysér i Excel
 Med **Analysér i Excel** kan du hente Power BI-datasæt til Excel og derefter få vist og interagere med dem ved hjælp af pivottabeller, diagrammer, udsnit og andre Excel-funktioner. Hvis du vil bruge **Analysér i Excel**, skal du først downloade funktionen fra Power BI, installere den og derefter vælge et eller flere datasæt, der skal bruges i Excel. 
@@ -62,36 +62,41 @@ Når det er fuldført, er du klar til at vælge en rapport i Power BI-tjenesten 
 
 ## <a name="connect-to-power-bi-data"></a>Opret forbindelse til Power BI-data
 
-I Power BI-tjeneste skal du navigere til det datasæt eller den rapport, du vil analysere i Excel, og vælge menuen **Flere indstillinger** (...) for at finde menupunktet **Analysér i Excel**. På følgende billede kan du se, hvordan du vælger en rapport.
-
-![Opdateringer installeres](media/service-analyze-in-excel/analyze-excel-06.png)
-
-Overførsel af et datasæt fra Power BI-tjeneste til Excel kræver nogle få trin:
+I Power BI-tjenesten skal du navigere til det datasæt eller den rapport, du vil analysere i Excel, og derefter skal du gøre følgende:
 
 1. Vælg menuen **Flere indstillinger**.
-2. Vælg **Analysér i Excel** fra de menupunkter, der vises.
 
-    Power BI-tjenesten opretter derefter en fil af det datasæt, der er designet (og struktureret) til brug med **Analysér i Excel** med .ODC-filtypenavnet. Filen oprettes og starter derefter automatisk en overførselsproces i din browser.
+1. Vælg **Analysér i Excel** fra de menupunkter, der vises.
+
+    På følgende billede kan du se, hvordan du vælger en rapport.
+
+    ![Opdateringer installeres](media/service-analyze-in-excel/analyze-excel-06.png)
     
-    ![Download af ODC-filen](media/service-analyze-in-excel/analyze-excel-07.png)
+    >[!NOTE]
+    >Husk, at hvis du vælger Analysér i Excel fra en rapportmenu, er det rapportens underliggende datasæt, der overføres til Excel.
+
+    Power BI-tjenesten opretter derefter en Excel-fil med det datasæt, der er designet (og struktureret) til brug med **Analysér i Excel**, og starter downloadprocessen i din browser.
     
-    Filnavnet svarer til det datasæt (eller den rapport eller anden datakilde), som det er afledt af. Så hvis rapporten blev kaldt *Seneste-salg*, hedder den hentede fil **Seneste-salg.ODC**.
+    ![Download af Excel-filen](media/service-analyze-in-excel/analyze-in-excel-download-xlsx.png)
 
-3. Åbn .ODC-filen
+    Filnavnet svarer til det datasæt (eller den rapport eller anden datakilde), som det er afledt af. Så hvis rapporten hedder *Kvartalsrapport*, hedder den downloadede fil **Kvartalsrapport.xlsx**.
 
-Filen er allerede knyttet til **Analysér i Excel**, så når du vælger eller starter .ODC-filen, åbnes Excel og starter automatisk indlæsningen af. ODC-filen. Der vises dog sandsynligvis en advarsel om en ekstern datakildetrussel:
+3. Start Excel-filen.
 
-![Sikkerhedsadvarsel](media/service-analyze-in-excel/analyze-excel-08.png)
+    >[!NOTE]
+    >Første gang, du åbner filen, kan du blive nødt til at **aktivere redigering** og derefter **aktivere indhold**, afhængigt af dine indstillinger for [Beskyttet visning](https://support.microsoft.com/en-gb/office/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ui=en-us&rs=en-gb&ad=gb) og [Dokument, der er tillid til](https://support.microsoft.com/en-us/office/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53).
+    >
+    >![Skærmbillede af banneret Beskyttet visning aktiverer redigering](media/service-analyze-in-excel/protected-view-enable-editing-banner.png)
+    >
+    >![Skærmbillede af banneret Dokument, der er tillid til, aktiverer indhold](media/service-analyze-in-excel/trusted-document-enable-content-banner.png)
 
-Vælg **Aktivér** for at indlæse .ODC-filen til **Analysér i Excel**. Excel indlæser filen. 
+## <a name="use-excel-to-analyze-the-data"></a>Brug Excel-til-at-analyse-dataene
 
-## <a name="use-excel-to-analyze-the-data"></a>Analyser dataene med Excel
+Når du har aktiveret redigering og indhold, viser Excel en tom **pivottabel** og **feltliste** fra det Power BI-datasæt, der er klar til at blive analyseret.
 
-Når du har tilladt indlæsningen af .ODC-filen ved at vælge **Aktivér** fra sikkerhedsmeddelelsen, vises der en tom **pivottabel** og **feltliste** fra det Power BI-datasæt, der er klar til at blive analyseret.
+![Excel med data forbundet](media/service-analyze-in-excel/analyze-in-excel-connected.png)
 
-![Excel med data forbundet](media/service-analyze-in-excel/analyze-excel-09.png)
-
-. ODC-filen indeholder en MSOLAP-forbindelsesstreng, der opretter forbindelse til dit datasæt i Power BI. Når du analyserer eller arbejder med dataene, forespørger Excel på dette datasæt i Power BI og returnerer resultaterne til Excel. Hvis dette datasæt opretter forbindelse til en direkte datakilde ved hjælp af DirectQuery, forespørger Power BI på datakilden og returnerer resultatet til Excel.
+Excel-filen indeholder en MSOLAP-forbindelsesstreng, der opretter forbindelse til dit datasæt i Power BI. Når du analyserer eller arbejder med dataene, forespørger Excel på dette datasæt i Power BI og returnerer resultaterne til Excel. Hvis dette datasæt opretter forbindelse til en direkte datakilde ved hjælp af DirectQuery, forespørger Power BI på datakilden og returnerer resultatet til Excel.
 
 Nu, hvor der er oprettet forbindelse til dataene i Power BI, kan du oprette pivottabeller og diagrammer og analysere dette datasæt på samme måde, som du ville arbejde med et lokalt datasæt i Excel.
 
@@ -107,7 +112,7 @@ Der er en række ting, du skal overveje, når du begynder at bruge Analysér i E
 
 
 ### <a name="sign-in-to-power-bi"></a>Log på Power BI
-Selvom du er logget på Power BI i din browser, kan du blive bedt om at logge på Power BI med din Power BI-konto, første gang du åbner en ny. ODC-fil i Excel. Dette godkender forbindelsen fra Excel til Power BI.
+Selvom du er logget på Power BI i din browser, kan du blive bedt om at logge på Power BI med din Power BI-konto, første gang du åbner en ny Excel-fil i Excel. Dette godkender forbindelsen fra Excel til Power BI.
 
 ### <a name="users-with-multiple-power-bi-accounts"></a>Brugere med flere Power BI-konti
 Nogle brugere har flere Power BI-konti. Hvis det er dig, er du muligvis logget på Power BI med én konto, men din anden konto har adgang til det datasæt, der bruges i Analysér i Excel. I dette tilfælde kan du få vist fejlen **Forbudt** eller en logonfejl, når du forsøger at få adgang til et datasæt, der bruges i en projektmappe i Analysér i Excel.

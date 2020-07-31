@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 05/07/2020
 ms.author: davidi
-ms.openlocfilehash: ae9a3695c8db084d9c65871314edfef34cde1cb6
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e2615915503b0eb6d9d1ee08bd2a1fa8599bcf8c
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238474"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86953001"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips og tricks til oprettelse af rapporter i Power BI Desktop
 For at få mest muligt ud af dine data skal du nogle gange have lidt ekstra hjælp. Vi har samlet nogle tip og tricks, som du kan bruge, når du opretter rapporter i Microsoft Power BI Desktop *og* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-udgaver, hvor tilføjelsesprogrammet Power Pivot er aktiveret, og Power-forespørgsel er installeret og aktiveret. 
@@ -54,7 +54,7 @@ Når du bruger en kategorisk værdi (streng) i Power BI til diagramakser eller i
 ## <a name="building-maps-more-easily-with-hints-to-bing"></a>Opret nemmere kort med tip til Bing
 Power BI kan integreres med Bing for at angive standardkortkoordinater (en proces, der kaldes geokodning), så det bliver lettere for dig at oprette kort. Bing bruger nogle algoritmer og tip til at prøve at hente den rette placering, men den gætter. Hvis du vil øge sandsynligheden for en korrekt geokodning, kan du bruge følgende tip:
 
-Når du opretter et kort, ønsker du ofte at afbilde lande, stater og byer. Hvis du i Power BI Desktop bruger navngivne kolonner efter den geografiske betegnelse, hjælper det Bing med at gætte, hvad du ønsker at få vist. Hvis du f.eks. har et felt med amerikanske stater, f.eks. "Californien" og "Washington", returnerer Bing måske placeringen af Washington, DC i stedet for staten Washington for ordet "Washington". Hvis du navngiver kolonnen "Stat" forbedres geokodningen. Det samme gælder kolonner med navnet "Land" og "By". 
+Når du opretter et kort, ønsker du ofte at afbilde lande/områder, stater og byer. Hvis du i Power BI Desktop bruger navngivne kolonner efter den geografiske betegnelse, hjælper det Bing med at gætte, hvad du ønsker at få vist. Hvis du f.eks. har et felt med amerikanske stater, f.eks. "Californien" og "Washington", returnerer Bing måske placeringen af Washington, DC i stedet for staten Washington for ordet "Washington". Hvis du navngiver kolonnen "Stat" forbedres geokodningen. Det samme gælder kolonner med navnet "Land" og "By". 
 
 Nogle betegnelser er tvetydige, når de ses i forbindelse med flere lande/områder. Hvad et land/område i nogle tilfælde opfatter som en 'stat', behandles måske som en 'provins' eller et 'område' i anden sammenhæng. Du kan øge nøjagtigheden af geokodning ved at oprette kolonner, der kan samle flere felter, og bruge dem til at afbilde dataplaceringer. Et eksempel kunne være at i stedet for kun at skrive "Wiltshire" kan du skrive "Wiltshire, England" for at få et mere nøjagtigt resultat af geokodningen. 
 

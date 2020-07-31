@@ -10,12 +10,12 @@ ms.date: 05/17/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: a3df69e52614fba3152f6539b2c4cbcf4f5c87d2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8f79037c4117baaba1a50b6fe4e728b57fad362f
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227675"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252078"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Tilmelding til Power BI med en ny prøveversion af Microsoft 365
 
@@ -25,7 +25,7 @@ Hvis du har problemer med at tilmelde dig Power BI med din mailadresse, skal du 
 
 ## <a name="sign-up-for-a-microsoft-365-trial-of-office"></a>Tilmeld dig en Microsoft 365-prøveversion af Office
 
-Tilmeld dig en prøveversion af Microsoft 365 [på Microsoft 365-webstedet](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). Hvis du ikke allerede har en konto, guider Microsoft dig igennem trinnene til at oprette en. Da kommercielle mailkonti (f.eks. Hotmail og Gmail) ikke fungerer sammen med Microsoft 365, skal du oprette en ny konto, der gør.  Denne mailkonto vil ligne følgende *zalan@onmicrosoft.com* .
+Tilmeld dig en prøveversion af Microsoft 365 [på Microsoft 365-webstedet](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). Hvis du ikke allerede har en konto, guider Microsoft dig igennem trinnene til at oprette en. Da kommercielle mailkonti (f.eks. Hotmail og Gmail) ikke fungerer sammen med Microsoft 365, skal du oprette en ny konto, der gør.  Denne mailkonto vil ligne følgende *zalan\@onmicrosoft.com*.
 
 ![Vælg Prøv gratis](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-free.png)
 

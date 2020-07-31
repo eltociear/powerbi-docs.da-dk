@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5ebc9a36b4a4e54d6388625921c98c571859568f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0b617afdeb69f2367b83ad40b2146f5ce78cdc89
+ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237576"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87364002"
 ---
 # <a name="manage-your-data-source---oracle"></a>Administrer din datakilde – Oracle
 
@@ -22,44 +22,22 @@ ms.locfileid: "85237576"
 
 Når du har [installeret datagatewayen i det lokale miljø](/data-integration/gateway/service-gateway-install), skal du [tilføje datakilder](service-gateway-data-sources.md#add-a-data-source), der kan bruges sammen med gateway'en. Denne artikel indeholder oplysninger om, hvordan du arbejder med gateways og Oracle-datakilder, der enten bruges til planlagte opdateringer eller DirectQuery.
 
+## <a name="connect-to-an-oracle-database"></a>Opret forbindelse til en Oracle-database
+Hvis du vil oprette forbindelse til en Oracle-database med datagatewayen i det lokale miljø, skal den korrekte Oracle-klientsoftware være installeret på den computer, der kører gatewayen. Hvilken Oracle-klientsoftware du bruger, afhænger af versionen af Oracle-serveren, men vil altid kunne bruges sammen med 64-bit gatewayen.
+
+Understøttede Oracle-versioner: 
+- Oracle Server 9 og nyere
+- ODAC-software (Oracle Data Access Client) 11.2 og nyere
+
 ## <a name="install-the-oracle-client"></a>Installér Oracle-klienten
+- [download og installér 64-bit Oracle-klienten](https://www.oracle.com/database/technologies/odac-downloads.html).
 
-Oracle Data Provider til .NET (ODP.NET) skal være installeret og konfigureret, før du kan oprette forbindelse mellem din gateway og Oracle-serveren. ODP.NET er en del af Oracle Data Access Components (ODAC).
-
-Til 32-bit versioner af Power BI Desktop skal du bruge følgende link til at downloade og installere 32-bit Oracle-klienten:
-
-* [32-bit Oracle Data Access Components (ODAC) med Oracle Developer Tools til Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
-
-Til 64-bit versioner af Power BI Desktop eller til datagatewayen i det lokale miljø skal du bruge følgende link til at downloade og installere 64-bit Oracle-klienten:
-
-* [64-bit ODAC 12.2c Release 1 (12.2.0.1.0) til Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
-
-Når klienten er installeret, skal du konfigurere filen tnsnames.ora med de korrekte oplysninger om din database. Power BI Desktop og gatewayen forsvinder fra net_service_name, der er defineret i filen tnsnames.ora. Hvis net_service_name ikke er konfigureret, kan du ikke oprette forbindelse. Standardstien til tnsnames.ora er `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. Se flere oplysninger om, hvordan du konfigurerer tnsnames.ora-filer ved at se [Oracle: Lokale navngivningsparametre (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
-
-### <a name="example-tnsnamesora-file-entry"></a>Eksempel på indtastning i filen tnsnames.ora
-
-Her er det grundlæggende format for en post i tnsnames.ora:
-
-```
-net_service_name=
- (DESCRIPTION=
-   (ADDRESS=(protocol_address_information))
-   (CONNECT_DATA=
-     (SERVICE_NAME=service_name)))
-```
-
-Her er et eksempel på udfyldte server- og portoplysninger:
-
-```
-CONTOSO =
-  (DESCRIPTION =
-    (ADDRESS = (PROTOCOL = TCP)(HOST = oracleserver.contoso.com)(PORT = 1521))
-    (CONNECT_DATA =
-      (SERVER = DEDICATED)
-      (SERVICE_NAME = CONTOSO)
-    )
-  )
-```
+> [!NOTE]
+> Vælg en version af ODAC (Oracle Data Access Client), som er kompatibel med din Oracle-server. ODAC 12.x understøtter f.eks. ikke altid Oracle Server version 9.
+> Vælg Windows-installationsprogrammet til Oracle-klienten.
+> Under installationen af Oracle-klienten skal du sørge for, at du aktiverer *Konfigurer ODP.NET- og/eller Oracle-providere for ASP.NET på maskinens niveau* ved at markere det tilsvarende afkrydsningsfelt i installationsguiden. I nogle versioner af Oracle-klientguiden markeres afkrydsningsfeltet som standard, i andre gøres det ikke. Sørg for, at afkrydsningsfelt er markeret, så Power BI kan oprette forbindelse til din Oracle-database.
+ 
+Når klienten er installeret, og ODAC er konfigureret korrekt, anbefaler vi, at du bruger PowerBI Desktop eller en anden testklient til at kontrollere en korrekt installation og konfiguration på gatewayen.
 
 ## <a name="add-a-data-source"></a>Tilføj en datakilde
 
@@ -111,7 +89,7 @@ Hvis du er angivet under fanen **Brugere** i den datakilde, der er konfigureret 
 
 ## <a name="troubleshooting"></a>Fejlfinding
 
-Du kan støde på flere fejl fra Oracle, når navngivningssyntaksen enten er forkert eller ikke konfigureret korrekt:
+Du kan støde på en af flere fejl fra Oracle, når navngivningssyntaksen enten er forkert eller ikke konfigureret korrekt:
 
 * ORA-12154: TNS: Den angivne forbindelsesidentifikator kunne ikke løses.
 * ORA-12514: TNS: Lyttefunktionen kender i øjeblikket ikke til den anmodede tjeneste i forbindelsesbeskrivelsen.
@@ -121,8 +99,9 @@ Du kan støde på flere fejl fra Oracle, når navngivningssyntaksen enten er for
 
 Disse fejl kan opstå, hvis Oracle-klienten enten ikke er installeret eller konfigureret korrekt. Hvis den er installeret, skal du bekræfte, at filen tnsnames.ora er konfigureret korrekt, og at du bruger det korrekte net_service_name. Du skal også sikre, at net_service_name er det samme for den maskine, der bruger Power BI Desktop, og den maskine, der kører gatewayen. Du kan finde flere oplysninger under [Installér Oracle-klienten](#install-the-oracle-client).
 
-> [!NOTE]
-> Du støder måske også på et kompatibilitetsproblem mellem Oracle-serverversionen og Oracle-klientversionen. Disse versioner skal normalt stemme overens.
+Du støder måske også på et kompatibilitetsproblem mellem Oracle-serverversionen og Oracle Data Access Client-versionen. Det anbefales, at disse versioner matcher, da nogle kombinationer er inkompatible. ODAC 12.x understøtter f.eks. ikke Oracle Server version 9.
+
+Vi anbefaler, at du installerer en klient (f.eks. PowerBI Desktop eller Oracle ODBC Test) på gatewaymaskinen, hvis du vil diagnosticere forbindelsesproblemer mellem datakildeserveren og gatewaymaskinen. Du kan bruge klienten til at kontrollere forbindelsen til datakildeserveren.
 
 Du kan finde yderligere oplysninger om fejlfinding i forbindelse med gatewayen i [Fejlfinding af datagatewayen i det lokale miljø](/data-integration/gateway/service-gateway-tshoot).
 

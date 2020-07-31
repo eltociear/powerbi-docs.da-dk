@@ -1,5 +1,5 @@
 ---
-title: Opret forbindelse til en Oracle-database
+title: Opret forbindelse til en Oracle-database med Power BI Desktop
 description: Trin og downloads, der er nødvendige for at oprette forbindelse mellem Oracle og Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
@@ -9,19 +9,19 @@ ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1e74ff0bf54b263df65af7e7497eb57f3e5c2adb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 2c59cb593a236785346721cb5c3ac90c702c93ed
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224326"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252055"
 ---
-# <a name="connect-to-an-oracle-database"></a>Opret forbindelse til en Oracle-database
-Hvis du vil oprette forbindelse til en Oracle-database med Power BI Desktop, skal den korrekte Oracle-klientsoftware være installeret på den computer, der kører Power BI Desktop. Den Oracle-klientsoftware, du bruger, afhænger af, hvilken version af Power BI Desktop du har installeret: 32-bit eller 64-bit.
+# <a name="connect-to-an-oracle-database-with-power-bi-desktop"></a>Opret forbindelse til en Oracle-database med Power BI Desktop
+Hvis du vil oprette forbindelse til en Oracle-database med Power BI Desktop, skal den korrekte Oracle-klientsoftware være installeret på den computer, der kører Power BI Desktop. Den Oracle-klientsoftware, du bruger, afhænger af, hvilken version af Power BI Desktop du har installeret: 32-bit eller 64-bit. Det afhænger også af din version af Oracle-serveren.
 
 Understøttede Oracle-versioner: 
-- Oracle 9 og nyere
-- Oracle-klientsoftware 8.1.7 eller nyere
+- Oracle Server 9 og nyere
+- ODAC-software (Oracle Data Access Client) 11.2 og nyere
 
 > [!NOTE]
 > Hvis du konfigurerer en Oracle-database til Power BI Desktop, en datagateway i det lokale miljø eller Power BI-rapportserver, kan du se oplysningerne i artiklen [Oracle-forbindelsestype](https://docs.microsoft.com/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15). 
@@ -32,12 +32,14 @@ For at finde ud af, hvilken version af Power BI Desktop der er installeret, skal
 
 ![Power BI Desktop-version](media/desktop-connect-oracle-database/connect-oracle-database_1.png)
 
-## <a name="installing-the-oracle-client"></a>Installér Oracle-klienten
+## <a name="install-the-oracle-client"></a>Installér Oracle-klienten
 - Til 32-bit versionen af Power BI Desktop skal du [downloade og installere 32-bit Oracle-klienten](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html).
 
 - Til 64-bit versionen af Power BI Desktop skal du [downloade og installere 64-bit Oracle-klienten](https://www.oracle.com/database/technologies/odac-downloads.html).
 
 > [!NOTE]
+> Vælg en version af ODAC (Oracle Data Access Client), som er kompatibel med din Oracle-server. ODAC 12.x understøtter f.eks. ikke altid Oracle Server version 9.
+> Vælg Windows-installationsprogrammet til Oracle-klienten.
 > Under installationen af Oracle-klienten skal du sørge for, at du aktiverer *Konfigurer ODP.NET- og/eller Oracle-providere for ASP.NET på maskinens niveau* ved at markere det tilsvarende afkrydsningsfelt i installationsguiden. I nogle versioner af Oracle-klientguiden markeres afkrydsningsfeltet som standard, i andre gøres det ikke. Sørg for, at afkrydsningsfelt er markeret, så Power BI kan oprette forbindelse til din Oracle-database.
 
 ## <a name="connect-to-an-oracle-database"></a>Opret forbindelse til en Oracle-database
@@ -53,9 +55,7 @@ Når den rette Oracle-klientdriver er installeret, kan du oprette forbindelse ti
 
    ![Angiv Oracle-servernavnet](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
 
-   > [!TIP]
-   > Hvis du har problemer med at oprette forbindelse i dette trin, kan du prøve at bruge følgende format i feltet **Server**: *(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=host_name)(PORT=port_num))(CONNECT_DATA=(SERVICE_NAME=service_name)))*
-   
+      
 3. Hvis du vil importere data ved hjælp af en oprindelig databaseforespørgsel, kan du placere din forespørgsel i feltet **SQL-sætning**, der vises, når du udvider afsnittet **Avancerede indstillinger** i dialogboksen **Oracle-database**.
    
    ![Udvid Avancerede indstillinger](media/desktop-connect-oracle-database/connect-oracle-database_4.png)
@@ -64,6 +64,18 @@ Når den rette Oracle-klientdriver er installeret, kan du oprette forbindelse ti
 
 
 ## <a name="troubleshooting"></a>Fejlfinding
+
+Du kan støde på en af flere fejl fra Oracle, når navngivningssyntaksen enten er forkert eller ikke konfigureret korrekt:
+
+* ORA-12154: TNS: Den angivne forbindelsesidentifikator kunne ikke løses.
+* ORA-12514: TNS: Lyttefunktionen kender i øjeblikket ikke til den anmodede tjeneste i forbindelsesbeskrivelsen.
+* ORA-12541: TNS: Ingen lyttefunktion.
+* ORA-12170: TNS: Der opstod timeout for forbindelsen.
+* ORA-12504: TNS: Lyttefunktionen fik ikke SERVICE_NAME i CONNECT_DATA.
+
+Disse fejl kan opstå, hvis Oracle-klienten enten ikke er installeret eller konfigureret korrekt. Hvis den er installeret, skal du bekræfte, at filen tnsnames.ora er konfigureret korrekt, og at du bruger det korrekte net_service_name. Du skal også sikre, at net_service_name er det samme for den maskine, der bruger Power BI Desktop, og den maskine, der kører gatewayen. Du kan finde flere oplysninger under [Installér Oracle-klienten](#install-the-oracle-client).
+
+Du støder måske også på et kompatibilitetsproblem mellem Oracle-serverversionen og Oracle Data Access Client-versionen. Det anbefales, at disse versioner matcher, da nogle kombinationer er inkompatible. ODAC 12.x understøtter f.eks. ikke Oracle Server version 9.
 
 Hvis du har downloadet Power BI Desktop via Microsoft Store, kan du muligvis ikke oprette forbindelse til Oracle-databaser på grund af et problem med en Oracle-driver. Hvis du oplever dette problem, returneres fejlmeddelelsen: *Objektreference er ikke angivet*. Du kan løse problemet ved at gøre et af følgende:
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/27/2020
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 305da7339159500a8e6de410bb4bf7f0b06d10e0
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: a268247d13fdfe71e17e5c0a6fafeeb635b96984
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349626"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86953047"
 ---
 # <a name="get-samples-for-power-bi"></a>Hent eksempler til Power BI
 Lad os antage, at du ikke kender Power BI og vil afprøve det, men ikke har nogen data.  Eller måske vil du se rapporter, der illustrerer nogle af funktionerne i Power BI. Du kan få nogen af os.
@@ -25,7 +25,7 @@ Power BI omfatter forskellige typer eksempler til forskellige formål:
 - En **[eksempelapp](#sample-app-from-appsource)** , du downloader fra AppSource, også direkte i Power BI-tjenesten. Apps omfatter dashboards, rapporter og datasæt. Du kan ændre dem og derefter distribuere dem til dine kolleger.
 - **[Otte oprindelige indbyggede eksempler](#eight-original-samples)** i Power BI-tjenesten som *indholdspakker* med dashboards, rapporter og datasæt. Du installerer dem direkte i Power BI-tjenesten. De indbyggede eksempler er også tilgængelige som Power BI-rapporter (. pbix) og Excel-projektmapper (. xlsx).
 - **[Excel-projektmappe](#download-sample-excel-files)** versioner af de indbyggede eksempler, der indeholder datamodellen og Power View-ark. Du kan udforske eller redigere datamodellen i Excel og bruge Excel-projektmappen som datakilde for en Power BI-rapport. Du kan også overføre projektmappen som en Excel-fil og få vist Excel-visuals og -pivottabeller i Power BI-rapporter. 
-- Desuden kan der også hentes en **[eksempelprojektmappe med økonomiske data](sample-financial-download.md)** , der er en enkel, flad tabel i en Excel-fil. Den indeholder anonymiserede data med fiktive produkter, hvor salg er fordelt på segmenter og lande. Det er en nyttig grundlæggende datakilde til en Power BI-rapport.
+- Desuden kan der også hentes en **[eksempelprojektmappe med økonomiske data](sample-financial-download.md)** , der er en enkel, flad tabel i en Excel-fil. Den indeholder anonymiserede data med fiktive produkter, hvor salg er fordelt på segmenter og lande/områder. Det er en nyttig grundlæggende datakilde til en Power BI-rapport.
 
 De samme eksempler bruges i selvstudier og andet materiale i vores onlinedokumentation, så du kan følge med.
 

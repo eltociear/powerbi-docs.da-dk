@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 9b3e06172d29f218f9234cf1f3d7e1f623495001
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: dc5f952aa38e2ab36887ec3f2727e2e253389460
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83135291"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86952656"
 ---
 # <a name="premium-capacity-scenarios"></a>Premium-kapacitetsscenarier
 
@@ -141,7 +141,7 @@ Denne effekt kan være særligt synlig, når et datasæt forbruges i korte burst
 
 I nogle tilfælde kan Power BI-administratorer anmode datasætejerne om at oprette en mindre svingende forespørgselsarbejdsbelastning ved at oprette et dashboard (som forespørger med jævne mellemrum med datasætopdateringer af cachelagrede felter) i stedet for en rapport. Dette kan forhindre stigninger, når dashboardet indlæses. Denne løsning er ikke altid mulig for det givne forretningsmæssige krav, men det kan være en effektiv måde at undgå CPU-mætning på uden at ændre datasættet.
 
-## <a name="acknowledgements"></a>Referencer
+## <a name="acknowledgments"></a>Bekræftelser
 
 Denne artikel er skrevet af Peter Myers, som er Data Platform MVP og uafhængig BI-ekspert hos [Bitwise Solutions](https://www.bitwisesolutions.com.au/).
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: a797547562a8968591ca6551f85a56e0da98d680
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: ee123bed8940b52a66f3b0f860671a87210c261f
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83793271"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86952679"
 ---
 # <a name="where-is-my-power-bi-tenant-located"></a>Hvor er min Power BI-lejer placeret?
 
@@ -34,7 +34,7 @@ Følg disse trin, for at finde det område din lejer befinder sig i.
 
 ## <a name="how-the-data-region-is-selected"></a>Sådan vælges dataområdet
 
-Dataområdet er baseret på det land, du vælger, når du opretter lejeren. Dette valg gælder for tilmelding til Microsoft 365 og Power BI, da disse oplysninger deles. Hvis dette er en ny lejer, skal du vælge det relevante land på listen, når du tilmelder dig.
+Dataområdet er baseret på det land/område, du vælger, når du opretter lejeren. Dette valg gælder for tilmelding til Microsoft 365 og Power BI, da disse oplysninger deles. Hvis dette er en ny lejer, skal du vælge det relevante land/område på listen, når du tilmelder dig.
 
 ![Valg af land](media/service-admin-where-is-my-tenant-located/sign-up-country-selection.png)
 
@@ -44,4 +44,3 @@ Power BI vælger et dataområde, der er tættest på dette valg, hvilket afgør,
 > Du kan ikke ændre valget, efter du har oprettet lejeren.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

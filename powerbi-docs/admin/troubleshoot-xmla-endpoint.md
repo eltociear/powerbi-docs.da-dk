@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 07/16/2020
+ms.date: 07/28/2020
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 5d6e3af615a73f8e4a3db42406bf94e33f16a2a3
-ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
+ms.openlocfilehash: 8a815f69d4f74ec925c3ac0cc8a84c2a13d80346
+ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "86459663"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87363956"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>Foretag fejlfinding af XMLA-slutpunktsforbindelse
 
@@ -135,6 +135,10 @@ Repræsentationsindstillinger, du kan definere for providerdatakilder, er ikke r
 Når der udløses en planlagt opdatering eller en opdatering efter behov i Power BI, opdateres hele datasættet normalt i Power BI. I mange tilfælde er det mere effektivt at udføre opdateringer mere selektivt. Du kan udføre detaljerede behandlingsopgaver i SQL Server Management Studio (SSMS) som vist nedenfor eller ved hjælp af værktøjer eller scripts fra tredjepart.
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/process-tables.png" alt-text="Behandl tabeller i SSMS":::
+
+### <a name="overrides-in-refresh-tmsl-command"></a>Tilsidesættelser i TMSL-kommandoen Opdater
+
+Tilsidesættelser i [kommandoen Opdater (TMSL)](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl) giver brugere mulighed for at vælge en anden definition af partitionsforespørgsel eller en anden definition af datakilde for opdateringshandlingen. I øjeblikket **understøttes tilsidesættelser ikke** i Power BI Premium. Fejlen "Binding uden for linje er ikke tilladt i Power BI Premium. Du kan finde flere oplysninger i afsnittet "XMLA read/write support" i produktdokumentationen. returneres.
 
 ## <a name="see-also"></a>Se også
 

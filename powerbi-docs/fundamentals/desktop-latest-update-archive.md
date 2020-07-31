@@ -6,21 +6,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/15/2020
+ms.date: 07/22/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f0eef1441eb0bb87b6e7b85e791c47174c752bc7
-ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
+ms.openlocfilehash: 01155e3ed4921a11f87acaeaf67f20772a4d01dd
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86409415"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252745"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
 I denne artikel beskrives tidligere opdateringer til **Power BI Desktop**. For den seneste måneds udgave kan du se [Seneste opdateringer til **Power BI Desktop**](desktop-latest-update.md).
 
 Få den nyeste version af Power BI Desktop from [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). Hvis du kører Windows 10, kan du også få Power BI Desktop fra Microsoft Store i Windows 10. De månedlige versioner er de samme, selvom versionsnummeret kan variere mellem de to, uanset hvilken måde du installerer Power BI Desktop på. Du kan finde flere oplysninger om, hvordan du downloader og installerer Power BI Desktop, under [Få Power BI Desktop](desktop-get-the-desktop.md). 
+
+
+> [!IMPORTANT]
+> Power BI Desktop opdateres og frigives hver måned med kundefeedback og nye funktioner. Det er kun den nyeste version af Power BI Desktop, der understøttes. Kunder, der kontakter support til Power BI Desktop, bliver bedt om at opgradere til den nyeste version. Du kan hente den nyeste version af Power BI Desktop fra [Windows Store](https://aka.ms/pbidesktopstore) eller som en enkelt eksekverbar fil, der indeholder alle understøttede sprog, som du [downloader](https://www.microsoft.com/download/details.aspx?id=58494) og installerer på din computer.
+
 
 Linkene ud for hver opdatering betyder følgende:
 
@@ -630,7 +635,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 
@@ -708,7 +713,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 
@@ -832,7 +837,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 
@@ -897,7 +902,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 
@@ -968,7 +973,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 
@@ -1174,7 +1179,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 
@@ -1241,7 +1246,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** -indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel eller video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.
 
 Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 

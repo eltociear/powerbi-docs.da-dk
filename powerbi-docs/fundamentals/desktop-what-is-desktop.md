@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: overview
-ms.date: 12/16/2019
+ms.date: 07/23/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2a67bd6c2a3d757475580d218547be689dbb99d2
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: c8d4671d55e09ca6e60599bbc0ac9802258f63ba
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216929"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252722"
 ---
 # <a name="what-is-power-bi-desktop"></a>Hvad er Power BI Desktop?
 
@@ -31,6 +31,11 @@ De mest almindelige anvendelsesområder for Power BI Desktop er følgende:
 * Del rapporter med andre ved hjælp af Power BI-tjenesten
 
 De personer, der oftest er ansvarlige for sådanne opgaver, opfattes ofte som *dataanalytikere* (kaldes også *analytikere*) eller Business Intelligence-medarbejdere (også kaldet *rapportoprettere*). Men mange, der ikke opfatter sig selv som analytiker eller rapportopretter, bruger Power BI Desktop til at oprette overbevisende rapporter eller til at trække data fra forskellige datakilder og oprette datamodeller, som de kan dele med kolleger og organisationer.
+
+
+> [!IMPORTANT]
+> Power BI Desktop opdateres og frigives hver måned med kundefeedback og nye funktioner. Det er kun den nyeste version af Power BI Desktop, der understøttes. Kunder, der kontakter support til Power BI Desktop, bliver bedt om at opgradere til den nyeste version. Du kan hente den nyeste version af Power BI Desktop fra [Windows Store](https://aka.ms/pbidesktopstore) eller som en enkelt eksekverbar fil, der indeholder alle understøttede sprog, som du [downloader](https://www.microsoft.com/download/details.aspx?id=58494) og installerer på din computer.
+
 
 Der er tre visninger i Power BI Desktop, som du kan vælge i venstre side af lærredet. Visningerne er som følger (vist i den rækkefølge, de forekommer i):
 * **Rapport**: I denne visning kan du oprette rapporter og visualiseringer, hvor du bruger mest tid på oprettelser.
@@ -128,5 +133,5 @@ Sådan udgiver du en Power BI Desktop-rapport:
 For at komme i gang med Power BI Desktop skal du først downloade og installere programmet. Du kan hente Power BI Desktop på to måder:
 
 * [Hent Power BI Desktop fra Windows Store](https://aka.ms/pbidesktopstore)
-* [Download Power BI Desktop fra internettet](https://docs.microsoft.com/power-bi/desktop-get-the-desktop#download-power-bi-desktop-directly)
+* [Download Power BI Desktop fra internettet](https://www.microsoft.com/download/details.aspx?id=58494)
 
