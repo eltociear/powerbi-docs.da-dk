@@ -37,6 +37,8 @@
               href: service-data-lineage.md
             - name: Effektanalyse af datasæt
               href: service-dataset-impact-analysis.md
+            - name: Effektanalyse af datakilder
+              href: service-data-source-impact-analysis.md
             - name: Anvend datafølsomhedsmærkater
               href: ../admin/service-security-apply-data-sensitivity-labels.md
             - name: Opret forbindelse til filer på din gruppes OneDrive
@@ -45,6 +47,16 @@
               href: service-collaborate-power-bi-workspace.md
             - name: Administrer din gruppe i Power BI og Microsoft 365
               href: service-manage-app-workspace-in-power-bi-and-office-365.md
+        - name: Power BI i Teams
+          items:
+            - name: Samarbejd i Teams
+              href: service-collaborate-microsoft-teams.md
+            - name: Integrer rapporter i Teams
+              href: service-embed-report-microsoft-teams.md
+            - name: Del direkte i Teams
+              href: service-share-report-teams.md
+            - name: Få et linkeksempel i Teams
+              href: service-teams-link-preview.md
         - name: Publicer og del dit arbejde
           items:
             - name: Del dashboards og rapporter
@@ -61,8 +73,6 @@
               href: service-report-subscribe.md
             - name: Udvalgt indhold på startsiden
               href: service-featured-content.md
-            - name: Integrer rapport i Microsoft Teams
-              href: service-embed-report-microsoft-teams.md
             - name: Integrer rapport i SharePoint Online
               href: service-embed-report-spo.md
             - name: Integrer en rapport på en sikker portal eller et websted
@@ -71,20 +81,22 @@
               href: service-publish-to-web.md
             - name: 'Del et dashboard, der linker til en Excel-projektmappe på OneDrive'
               href: service-share-dashboard-that-links-to-excel-onedrive.md
-        - name: Udvid Power BI
+        - name: Power BI i Excel
           items:
             - name: Analysér i Excel
               href: service-analyze-in-excel.md
-            - name: Udvalgte Power BI-tabeller i Excel
+            - name: Brug udvalgte Power BI-tabeller i Excel
               href: service-excel-featured-tables.md
+            - name: Angiv udvalgte tabeller
+              href: service-create-excel-featured-tables.md
             - name: Foretag fejlfinding af analysering i Excel
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Fejl: Der blev ikke fundet data i din Excel-projektmappe'
               href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
-            - name: Power Automate og Power BI
-              href: service-flow-integration.md
-            - name: Brug apps fra tredjepart
-              href: service-power-bi-get-started-third-party-apps.md
+        - name: Power Automate og Power BI
+          href: service-flow-integration.md
+        - name: Brug apps fra tredjepart
+          href: service-power-bi-get-started-third-party-apps.md
         - name: Organisationsindholdspakker
           items:
             - name: Introduktion til organisationsindholdspakker
