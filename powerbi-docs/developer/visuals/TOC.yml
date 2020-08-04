@@ -24,9 +24,9 @@
           href: funnel-plot-from-r.md
     - name: Koncepter
       items:
-        - name: Struktur for visuelle projekter i Power BI
+        - name: Projektstruktur i Power BI-visualiseringer
           href: visual-project-structure.md
-        - name: Visualiseringskoncepter
+        - name: ' Systemintegration af Power BI-visualiseringer'
           href: power-bi-visuals-concept.md
         - name: Visualiseringer til organisationer i Power BI
           href: power-bi-custom-visuals-organization.md
