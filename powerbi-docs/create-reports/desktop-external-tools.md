@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2020
+ms.date: 07/29/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c1d483b6a29d2463af05cd224ac6b03dd149eb33
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: 69929ff48428ebf73044c296eabc419f8e442b3b
+ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252883"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87411951"
 ---
 # <a name="using-external-tools-in-power-bi-desktop-preview"></a>Brug af eksterne værktøjer i Power BI Desktop (prøveversion)
 
@@ -42,8 +42,6 @@ Eksterne værktøjer kan oprette forbindelse til Power BI Desktop-datasæt (Anal
 * [Perspektiver](https://docs.microsoft.com/analysis-services/tabular-models/perspectives-ssas-tabular), der giver mulighed for at definere fokuserede, virksomhedsdomænespecifikke visninger af metadata for datasæt
 
 Det kan blive muligt at administrere oversættelser af metadata ved hjælp af eksterne værktøjer, men det understøttes ikke i øjeblikket i denne prøveversion. Hvis den aktuelle brugers landestandard er en oversat landestandard, fungerer redigering af objekter på feltlisten ikke korrekt i den aktuelle version af Power BI Desktop. 
-
-Der er et kendt problem med at oprette rapporter om modeller, hvor der er defineret beregningsgrupper. Hvis beregningsgruppen definerer dynamisk formatering, afhængigt af den valgte beregning/måling, er denne formatering i øjeblikket kun tilgængelig i visualiseringer af tabeller, matricer og kort.
 
 Alle datasæt-metadata for [tabelobjektmodeller](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) kan åbnes til skrivebeskyttede formål, men objekter, der ikke med på listen, som beskrives i artiklen[Model for tabelobjekt](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo), understøttes endnu ikke til redigering i Power BI Desktop Analysis Services-instansen.
 
@@ -134,9 +132,9 @@ Filer på denne angivne placering med udvidelsen **.pbitool.json** indlæses af 
 
 Eksterne værktøjer kan deaktiveres ved hjælp af **gruppepolitikker** eller ved at redigere registreringsdatabasen, hvilket ligner processen til deaktivering af **brugerdefinerede visualiseringer**.
 
-    Registry key: ```Software\Policies\Microsoft\Power BI Desktop\```
+    Registry key: *Software\Policies\Microsoft\Power BI Desktop\*
 
-    Registry value: ```EnableExternalTools```
+    Registry value: *EnableExternalTools*
 
 En værdi på 1 (decimal) aktiverer brugen af eksterne værktøjer i Power BI, hvilket er standardværdien.
 

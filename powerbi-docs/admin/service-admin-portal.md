@@ -10,12 +10,12 @@ ms.date: 05/12/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 90cd12bc7d8d7261e25edd32c5afa7cf144e8202
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: ec521c256209c258604e13483a9f3159b24626ae
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252479"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87537498"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -43,8 +43,8 @@ Der er ni faner på portalen. Resten af denne artikel indeholder oplysninger om 
 * [Lejerindstillinger](#tenant-settings)
 * [Kapacitetsindstillinger](#capacity-settings)
 * [Integrer koder](#embed-codes)
-* [Visualiseringer til virksomheder](#organizational-visuals)
-* [Dataflowlager (eksempelvisning)](#dataflowStorage)
+* [Visualiseringer til virksomheder](organizational-visuals.md#organizational-visuals)
+* [Dataflowlager (eksempelvisning)](#dataflow-storage-preview)
 * [Arbejdsområder](#workspaces)
 * [Brugerdefineret branding](#custom-branding)
 
@@ -386,55 +386,6 @@ Indstillingen **Del i Teams** findes i sektionen **Lejerindstillinger** på Powe
 
 Læs mere om, hvordan du [deler Power BI-indhold i Teams](../collaborate-share/service-share-report-teams.md).
 
-
-## <a name="power-bi-visuals-settings"></a>Indstillinger for Power BI-visuals
-
-### <a name="add-and-use-power-bi-visuals"></a>Tilføj og brug Power BI-visuals
-
-Brugerne i organisationen kan interagere med og dele brugerdefinerede Power BI-visuals. [Få mere at vide](../developer/visuals/power-bi-custom-visuals.md)
-
-> [!NOTE]
-> Denne indstilling kan anvendes på hele organisationen, eller den kan begrænses til specifikke grupper.
-
-Fra marts 2019 understøtter Power BI Desktop brugen af **Gruppepolitik** til at deaktivere brugen af Power BI-visuals på tværs af de computere, der er installeret i en organisation.
-
-<table>
-<tr><th>Attribut</th><th>Værdi</th>
-</tr>
-<td>key</td>
-    <td>Software\Policies\Microsoft\Power BI Desktop\</td>
-<tr>
-<td>valueName</td>
-<td>EnableCustomVisuals</td>
-</tr>
-</table>
-
-En værdi på 1 (decimal) aktiverer brugen af Power BI-visuals i Power BI (dette er standarden).
-
-En værdi på 0 (decimal) deaktiverer brugen af Power BI-visuals i Power BI.
-
-### <a name="allow-only-certified-visuals"></a>Tillad kun certificerede visualiseringer
-
-Brugere i organisationen, som er tildelt tilladelser til at tilføje og bruge Power BI-visuals med indstillingen "Tilføj og brug Power BI-visuals", kan kun bruge [certificerede Power BI-visuals](https://go.microsoft.com/fwlink/?linkid=2002010) (de ikke-certificerede visuals blokeres, og der vises en fejlmeddelelse, når de bruges). 
-
-
-Fra marts 2019 understøtter Power BI Desktop brugen af **Gruppepolitik** til at deaktivere brugen af ikke-certificerede Power BI-visuals på tværs af de computere, der er installeret i en organisation.
-
-<table>
-<tr><th>Attribut</th><th>Værdi</th>
-</tr>
-<td>key</td>
-    <td>Software\Policies\Microsoft\Power BI Desktop\</td>
-<tr>
-<td>valueName</td>
-<td>EnableUncertifiedVisuals</td>
-</tr>
-</table>
-
-En værdi på 1 (decimal) aktiverer brugen af ikke-certificerede Power BI-visuals i Power BI (dette er standarden).
-
-En værdi på 0 (decimal) deaktiverer brugen af ikke-certificerede Power BI-visuals i Power BI (denne indstilling aktiverer kun brugen af [certificerede Power BI-visuals](https://go.microsoft.com/fwlink/?linkid=2002010)).
-
 ## <a name="r-visuals-settings"></a>R visuals – indstillinger
 
 ### <a name="interact-with-and-share-r-visuals"></a>Interager med og del R-visualiseringer
@@ -540,67 +491,7 @@ Som administrator kan du få vist de integreringskoder, der er genereret for din
 
 ![Integrer koder i Power BI-administrationsportalen](media/service-admin-portal/embed-codes.png)
 
- ## <a name=""></a><a name="organizational-visuals">Visualiseringer til virksomheder</a> 
-
-Fanen **Organisationens visuals** giver dig mulighed for at installere og administrere Power BI-visuals i din organisation. Med visuals til organisationer kan du nemt installere privatejede visuals i din organisation, som forfattere af rapporter efterfølgende kan finde og importere i deres rapporter fra Power BI Desktop. [Få mere at vide](../developer/visuals/power-bi-custom-visuals-organization.md)
-
-> [!WARNING]
-> En brugerdefineret visual kan indeholde kode, der udgør en risiko for sikkerheden eller personlige oplysninger. Sørg for at have tillid til forfatteren af og kilden til den brugerdefinerede visual, før du installerer den i organisationens lager.
-
-Følgende billede viser alle de Power BI-visuals, der i øjeblikket er installeret i en organisations lager.
-
-![Organisationens administratorvisualisering](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
-
-### <a name="add-a-new-custom-visual"></a>Tilføj en ny brugerdefineret visualisering
-
-Hvis du vil føje en ny brugerdefineret visual til listen, skal du følge disse trin. 
-
-1. Vælg **Tilføj en brugerdefineret visual** i ruden til højre.
-
-    ![Power BI-visuals-formular](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
-
-1. Udfyld formularen **Tilføj brugerdefineret visual**:
-
-    * **Vælg en .pbiviz-fil** (påkrævet): Vælg den brugerdefinerede visualiseringsfil, som du vil uploade. Det er kun Power BI-visuals med versioneret API, der understøttes. Læs her, hvad det betyder.
-
-    Før du uploader en brugerdefineret visualisering, bør du gennemgå den for at sikre, at sikkerhed og beskyttelse af personlige oplysninger stemmer overens med din virksomheds standarder.
-
-    * **Navngiv din brugerdefinerede visual** (påkrævet): Angiv en kort titel på din visual, så brugerne af Power BI Desktop nemt kan forstå, hvad de kan bruge den til
-
-    * **Ikon**: Den ikonfil, der vises på brugergrænsefladen i Power BI Desktop.
-
-    * **Beskrivelse**: En kort beskrivelse af din visual, som giver brugeren mere kontekst og flere oplysninger
-
-1. Vælg **Tilføj** for at starte anmodningen om upload. Hvis uploadet lykkes, kan du se det nye element på listen. Hvis uploadet mislykkes, får du vist en passende fejlmeddelelse
-
-### <a name="delete-a-custom-visual-from-the-list"></a>Slet en brugerdefineret visualisering fra listen
-
-Hvis du vil slette en visual permanent, skal du vælge ikonet Papirkurv for den pågældende visual i lageret.
-
-> [!IMPORTANT]
-> Du kan ikke fortryde en sletning. Når visualiseringen er slettet, holder den øjeblikkeligt op med at blive gengivet i eksisterende rapporter. Selv om du uploader den samme visual igen, erstatter den ikke den forrige, der blev slettet. Brugerne kan dog importere den nye visual igen og erstatte det eksemplar, de har i deres rapporter.
-
-### <a name="disable-a-custom-visual-in-the-list"></a>Deaktiver en brugerdefineret visualisering på listen
-
-Hvis du vil deaktivere visualiseringen fra organisationens lager, skal du vælge tandhjulsikonet. I sektionen **Adgang** skal du deaktivere den brugerdefinerede visualisering.
-
-Når du har deaktiveret visualiseringen, gengives visualiseringen ikke i eksisterende rapporter, og fejlmeddelelsen nedenfor vises.
-
-*Denne brugerdefinerede visualisering er ikke længere tilgængelig. Kontakt administratoren for at få flere oplysninger.*
-
-Visualiseringer, der er angivet bogmærker for, virker dog stadig.
-
-Efter en opdatering eller ændring af administrator skal brugerne af Power BI Desktop genstarte programmet eller opdatere browseren i Power BI-tjenesten for at se opdateringerne.
-
-### <a name="update-a-visual"></a>Opdater en visual
-
-Hvis du vil opdatere en visual fra organisationens lager, skal du vælge tandhjulsikonet. Gennemse og upload en ny version af den pågældende visual.
-
-Sørg for, at id'et for visualiseringen ikke ændres. Den nye fil erstatter den forrige fil for alle rapporter i hele organisationen. Hvis der er risiko for, at den nye version af visualiseringen vil bryde brugen eller datastrukturen af den forrige version af visualiseringen, skal du ikke erstatte den forrige version. Du skal i stedet oprette en ny post for den nye version af visualiseringen. Føj f.eks. et nyt versionsnummer (version X.X) til titlen af den nye angivne visualisering. På den måde bliver det tydeligt, at det er den samme visualisering blot med et opdateret versionsnummer, så funktionaliteten i eksisterende rapporter ikke brydes. Sørg igen for, at id'et for visualiseringen ikke ændres. Næste gang brugerne derefter tilgår virksomhedens lager fra Power BI Desktop, kan de importere den nye version, og de bliver spurgt, om de vil erstatte den aktuelle version, de har i rapporten.
-
-Du kan finde flere oplysninger under [Ofte stillede spørgsmål om Power BI-visuals til organisationer](../developer/visuals/power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)
-
-## <a name=""></a><a name="dataflowStorage">Dataflowlager (eksempelvisning)</a>
+## <a name="dataflow-storage-preview"></a>Dataflowlager (eksempelvisning)
 
 Som standard gemmes data, der bruges med Power BI, i et internt lager, der leveres af Power BI. Med integrationen af dataflow og Azure Data Lake Storage Gen2 (ADLS Gen2) kan du gemme dine dataflow på din organisations Azure Data Lake Storage Gen2-konto. Du kan finde flere oplysninger under [Integration af dataflow og Azure Data Lake (prøveversion)](../transform-model/service-dataflows-azure-data-lake-integration.md).
 

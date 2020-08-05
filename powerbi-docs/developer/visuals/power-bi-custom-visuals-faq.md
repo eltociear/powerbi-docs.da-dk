@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 0a66b0fc1a984e0905fba209ca59afb3a02696b2
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 8003d7ed6d6b455860ed5ed3bc4ada06c0a35c5f
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83131301"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87537797"
 ---
 # <a name="power-bi-visuals-faq"></a>Ofte stillede spørgsmål om visualiseringer i Power BI
 
@@ -24,7 +24,7 @@ På administrationsportalen kan du administrere Power BI-visualiseringer for din
 
 ### <a name="how-can-the-admin-manage-organizational-power-bi-visuals"></a>Hvordan kan administratoren administrere Power BI-visualiseringer til organisationer?
 
-På administrationsportalen under fanen *Visualiseringer til organisationer* kan administratoren se og [administrere alle Power BI-visualiseringer i virksomheden](../../admin/service-admin-portal.md#organizational-visuals). Dette omfatter tilføjelse, deaktivering, aktivering og sletning af Power BI-visualiseringer.
+På administrationsportalen under fanen *Visualiseringer til organisationer* kan administratoren se og [administrere alle Power BI-visualiseringer i virksomheden](../../admin/organizational-visuals.md#organizational-visuals). Dette omfatter tilføjelse, deaktivering, aktivering og sletning af Power BI-visualiseringer.
 
 Brugere i organisationen kan nemt finde Power BI-visualiseringer og importere dem til deres rapporter direkte fra Power BI Desktop eller Power BI-tjenesten.
 
