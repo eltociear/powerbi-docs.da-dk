@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/15/2020
+ms.date: 08/03/2020
 ms.author: kfollis
-ms.openlocfilehash: 34c46f97128d1229f46eeed254bdecee58a32aaf
-ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
+ms.openlocfilehash: d7b36d7ecbbf9d046c02f275ca83d7f8c8a196d5
+ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86409461"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87768395"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) er en leverandør, der arbejder med Chauncy Freels og hjælper med at vedligeholde listen over webinarer"
@@ -27,6 +27,10 @@ Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når
 ## <a name="featured-webinars"></a>Udvalgte webinarer
 
 Kom i gang med disse populære webinarer, når det passer dig
+
+**Øg brugernes tilfredshed med de bedste fremgangsmåder for administration af BI-indhold**  
+ved Nimrod Shalit  
+[Se nu](https://info.microsoft.com/ww-landing-Boost-User-Satisfaction-with-Best-Practices-for-Managing-BI-Content.html?lcid=en-us)
 
 **Fra indsigt til handling: Sådan etablerer du en datakultur med Power BI**  
 af Arun Ulagaratchagan og Amir Netz  

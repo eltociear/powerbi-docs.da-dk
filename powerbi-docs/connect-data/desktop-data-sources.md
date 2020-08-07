@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/19/2020
+ms.date: 07/28/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9d20f9aa5311d8ee96246ab8b3ed832330742973
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: dcdd663ec9899f7623789915754087c4643c9806
+ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223921"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87411974"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 
@@ -73,7 +73,7 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 * Access-database
 * SQL Server Analysis Services-database
 * Oracle-database
-* IBM DB2-database
+* IBM Db2-database
 * IBM Informix-database (beta)
 * IBM Netezza
 * MySQL-database
@@ -116,7 +116,7 @@ Kategorien **Power Platform** indeholder følgende dataforbindelser:
 * Power BI-datasæt
 * Power BI-dataflow
 * Common Data Service
-* Dataflow til Power Platform
+* Power Platform-dataflow (beta)
 
 På følgende billede vises vinduet **Hent data** for **Power Platform**.
 
@@ -133,6 +133,7 @@ Kategorien **Azure** indeholder følgende dataforbindelser:
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB
+* Azure Data Explorer (Kusto)
 * Azure Data Lake Storage Gen2
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
@@ -171,21 +172,19 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Marketo (beta)
 * Mixpanel (beta)
 * Planview Enterprise One – PRM (beta)
-* Planview Projectplace (beta)
 * QuickBooks Online (beta)
 * Smartsheet
 * SparkPost (beta)
 * SweetIQ (beta)
 * Planview Enterprise One – CTM (beta)
 * Twilio (beta)
-* tyGraph (beta)
-* Webtrends (beta)
 * Zendesk (beta)
 * Asana (beta)
 * Dynamics 365 Customer Insights (beta)
 * Emigo-datakilde
 * Entersoft Business Suite (beta)
-* FactSet Analytics (beta)
+* FactSet-analyse
+* Palantir Foundry
 * Industrial App Store
 * Intune Data Warehouse (beta)
 * Microsoft Graph Security (beta)
@@ -218,7 +217,10 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Python-script
 * ODBC
 * OLE DB
+* Acterys: Model Automation & Planning (Beta)
+* Automation Anywhere (Beta)
 * Solver
+* Cherwell (Beta)
 * Cognite Data Fusion (beta)
 * FHIR
 * Information Grid (beta)
@@ -233,6 +235,7 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (beta)
 * Vena (beta)
+* Vessel Insight (beta)
 * Workforce Dimensions (beta)
 * Zucchetti HR Infinity (beta)
 * Tom forespørgsel

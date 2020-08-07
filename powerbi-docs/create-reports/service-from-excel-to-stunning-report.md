@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 07/23/2020
+ms.date: 07/30/2020
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: f901dcad1743383b85db3935ede8fddf8a4ed492
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: ccf8b5fa8f1c4d18a25767ff11f035304b339de0
+ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87251779"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87478124"
 ---
 # <a name="tutorial-from-excel-workbook-to-a-report-in-the-power-bi-service-to-microsoft-teams"></a>Selvstudium: Fra Excel-projektmappe til en rapport i Power BI-tjenesten til Microsoft Teams
 Din chef vil gerne se en rapport over dine seneste salgs- og avancetal sidst på dagen. Men de seneste data ligger i forskellige tredjepartssystemer og filer på din bærbare computer. Tidligere har det taget timer at oprette visuelle elementer og formatere en rapport, og du er ved at være lidt nervøs.
@@ -204,8 +204,6 @@ Du kan også dele rapporter og dashboards direkte med dine kolleger i Microsoft 
 
 ## <a name="next-steps"></a>Næste trin
 
-* [Kom i gang med Power BI-tjenesten](../fundamentals/service-get-started.md)
-* [Kom i gang med Power BI Desktop](../fundamentals/desktop-getting-started.md)
-* [Grundlæggende begreber for designere i Power BI-tjenesten](../fundamentals/service-basic-concepts.md)
+* Kunne du tænke dig at oprette en rapport i Power BI Desktop nu, hvor du har oprettet en basisrapport i Power BI-tjenesten? Prøv selvstudiet [Fra Excel-projektmappe til imponerende rapport i Power BI Desktop](desktop-excel-stunning-report.md).
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).

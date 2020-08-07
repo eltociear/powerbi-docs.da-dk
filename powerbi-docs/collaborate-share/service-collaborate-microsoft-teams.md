@@ -9,17 +9,17 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 07/22/2020
-ms.openlocfilehash: 17a0879dac416a98d214ed11861947cb2c311487
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.date: 07/31/2020
+ms.openlocfilehash: 01e5b470e0beb189d64da18785a17e771bcaf59b
+ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87253882"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87478032"
 ---
 # <a name="collaborate-in-microsoft-teams-with-power-bi"></a>Samarbejd i Microsoft Teams med Power BI
 
-Du har flere muligheder for at dele og samarbejde om interaktivt Power BI-indhold i Microsoft Teams-kanaler og -chats. 
+I takt med at en distribueret og ekstern arbejdsstyrke bliver normen, anvender stadig flere organisationer Microsoft Teams til at holde medarbejderne opdateret. Power BI giver flere muligheder for at dele og samarbejde om interaktivt Power BI-indhold i Microsoft Teams-kanaler og -chats. 
 
 - Med den opdaterede **Power BI**-fane til Microsoft Teams kan du [integrere interaktive rapporter i Microsoft Teams](service-embed-report-microsoft-teams.md)-kanaler og -chats. Fanen **Power BI** hjælper dine kolleger med at finde dit teams data og drøfte dataene i dit teams kanaler. 
 - Vi opretter et [linkeksempel](service-teams-link-preview.md), når du indsætter et link til dine rapporter, dashboards og apps i Microsoft Teams-meddelelsesfeltet. Linkeksemplet viser oplysninger om linket. 
@@ -34,17 +34,6 @@ For at Power BI kan fungere i Microsoft Teams, skal du overordnet sørge for fø
 - At brugerne har en Power BI Pro-licens, eller at rapporten er indeholdt i en [Power BI Premium-kapacitet (EM- eller P-SKU)](../admin/service-premium-what-is.md) med en Power BI-licens.
 - At brugerne er logget på Power BI-tjenesten for at aktivere deres Power BI-licens.
 - At brugerne opfylder kravene til at bruge **Power BI**-fanen til Microsoft Teams.
-
-Hvis du vil bruge fanen **Power BI** i Microsoft Teams, skal du sørge for følgende:
-
-- Microsoft Teams har **Power BI**-fanen.
-- Hvis du vil tilføje en rapport i Microsoft Teams via **Power BI**-fanen, skal du mindst have rollen Læser i det arbejdsområde, der hoster rapporten. Se [Roller i de nye arbejdsområder](service-new-workspaces.md#roles-in-the-new-workspaces) for at få oplysninger om de forskellige roller.
-- Brugerne skal have tilladelse til at få vist rapporten, før de kan se den under **Power BI**-fanen til Microsoft Teams.
-- Brugere skal være Microsoft Team-brugere med adgang til kanaler og chats.
-
-Hvis du vil bruge **Del i Teams**-funktionalitet i Power BI, skal du sørge for følgende:
-
-- Power BI-administratorer har ikke deaktiveret lejerindstillingen **Del i Teams** på Power BI-administrationsportalen. Denne indstilling giver organisationer mulighed for at skjule **Del i Teams**-knapper. Du kan finde flere oplysninger i artiklen om [Power BI-administrationsportalen](../admin/service-admin-portal.md#share-to-teams-tenant-setting).
 
 ## <a name="grant-access-to-reports"></a>Giv adgang til rapporter
 

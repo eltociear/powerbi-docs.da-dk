@@ -6,24 +6,26 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/24/2020
+ms.date: 07/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e39d2fe11a58691b259784c292fec6e5ee6cb322
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: c74c618eb4c748d94260573c1ddd4266d3cf5c0e
+ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87253885"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87478078"
 ---
 # <a name="set-featured-tables-in-power-bi-desktop-preview"></a>Angiv fremhævede tabeller i Power BI Desktop (prøveversion)
 
 I datatypegalleriet i Excel kan dine brugere finde data fra *fremhævede tabeller* i dine Power BI-datasæt. I denne artikel får du mere at vide om, hvordan du angiver tabeller som *fremhævede* i dine datasæt. Disse tags gør det nemmere for dine brugere at føje virksomhedsdata til deres Excel-ark. Her er de grundlæggende trin, du skal udføre for at indstille og dele fremhævede tabeller.
 
-1. Du [fremhæver eller certificerer datasæt i Power BI](../connect-data/service-datasets-promote.md). 
 1. Du identificerer fremhævede tabeller i dine datasæt i Power BI Desktop (denne artikel)
 1. Du gemmer disse datasæt med fremhævede tabeller på et af de nye arbejdsområder. Rapportoprettere kan oprette rapporter med disse fremhævede tabeller. 
 1. Resten af organisationen kan oprette forbindelse til disse fremhævede tabeller, der kaldes *datatyper* i Excel, for relevante data, der kan opdateres. I artiklen [Få adgang til Power BI-tabeller i Excel (prøveversion)](service-excel-featured-tables.md) beskrives, hvordan du bruger disse fremhævede tabeller i Excel.
+
+> [!NOTE]
+> Du kan [fremhæve eller certificere datasæt i Power BI](../connect-data/service-datasets-promote.md). Det kaldes *godkendelse*. Excel prioriterer tabeller i godkendte datasæt i Datatypegalleriet. Excel viser først udvalgte tabeller i certificerede datasæt og derefter tabeller i promoverede datasæt. Derefter viser Excel udvalgte tabeller i ikke-godkendte datasæt. 
 
 ## <a name="turn-on-the-featured-table-preview"></a>Slå eksempelvisning af udvalgte tabeller til
 
@@ -31,6 +33,8 @@ I datatypegalleriet i Excel kan dine brugere finde data fra *fremhævede tabelle
 2. Markér afkrydsningsfeltet **Fremhævede tabeller**.
 
     :::image type="content" source="media/service-excel-featured-tables/power-bi-preview-featured-tables.png" alt-text="Indstillingen Vis fremhævede tabeller":::
+
+3. Genstart Power BI Desktop.
 
 ## <a name="select-a-table"></a>Vælg en tabel
 

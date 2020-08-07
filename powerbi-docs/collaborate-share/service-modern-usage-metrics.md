@@ -10,14 +10,14 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7c8c1744c8ecbbf170ae073d2e302fe55faea55b
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: 9aad77f162a49697466899afce44284c7f063746
+ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86953024"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87478147"
 ---
-# <a name="monitor-usage-metrics-in-the-new-workspace-experience"></a>Overvåg forbrugsdata i den nye arbejdsområdeoplevelse
+# <a name="monitor-usage-metrics-in-the-new-workspace-experience-preview"></a>Overvåg forbrugsdata i den nye arbejdsområdeoplevelse (prøveversion)
 
 At vide, hvordan dit indhold bruges, hjælper dig med at demonstrere din indvirkning og prioritere din indsats. Dine forbrugsdata kan vise, at en af dine rapporter bruges dagligt af en meget stor del af organisationen, og de kan vise, at et dashboard, du oprettede, slet ikke bruges. Denne type feedback er uvurderlig til styring af din arbejdsindsats.
 
@@ -81,7 +81,7 @@ Den forbedrede rapport med forbrugsdata indeholder følgende rapportsider:
 
 | **Side** | **Målepunkt** | **Beskrivelse** |
 | --- | --- | --- |
-| Rapportanvendelse | Rapportvisninger | Der registreres en rapportvisning, hver gang en person åbner en rapport. Bemærk, at definitionen af en visning adskiller sig fra tidligere rapporter med forbrugsdata. Ændring af rapportsider anses ikke længere for at være en yderligere visning. |
+| Rapportanvendelse | Rapportvisninger | Der registreres en rapportvisning, hver gang en person åbner en rapport. Bemærk, at definitionen af en visning adskiller sig fra tidligere rapporter med forbrugsdata. Ændring af rapportsider anses ikke længere for at være en yderligere visning. Aktiviteter som deling og fastgørelse medtages ikke længere i forbrugsdata.|
 | Rapportanvendelse | Unikke seere | En seer er en person, der har åbnet rapporten mindst én gang i tidsperioden (baseret på AAD-brugerkontoen). |
 | Rapportanvendelse | Visningstendens | Visningstendensen afspejler ændringer i antallet af visninger over tid. Den første halvdel af den valgte tidsperiode sammenlignes med den anden halvdel. |
 | Rapportanvendelse | Datoudsnit | Du kan ændre tidsperioden for siden Rapportanvendelse, f.eks. for at beregne ugentlige tendenser eller tendenser for hver anden uge. I nederste venstre hjørne af siden Rapportanvendelse kan du bestemme den tidligste og seneste dato, hvor forbrugsdata er tilgængelige for den valgte rapport. |

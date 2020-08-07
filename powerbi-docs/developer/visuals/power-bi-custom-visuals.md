@@ -1,6 +1,6 @@
 ---
 title: Visualiseringer i Power BI
-description: Brugerdefinerede visualiseringer i Power BI
+description: Denne artikel indeholder en beskrivelse af brugerdefinerede Power BI-visualiseringer
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -8,20 +8,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: overview
-ms.date: 01/03/2019
+ms.date: 07/14/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e9dc53eb3f49a1ef62e4e3539ac7eb6d92b317af
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: e56b03eeccc3140709fb458d4e42a9065a4da5d4
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83561633"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87538004"
 ---
 # <a name="visuals-in-power-bi"></a>Visualiseringer i Power BI
 
 Power BI leveres med mange af de køreklare Power BI-visualiseringer. Disse visualiseringer er tilgængelige i visualiseringsruden i både [Power BI Desktop](https://powerbi.microsoft.com/desktop/) og [Power BI-tjenesten](https://app.powerbi.com) og kan bruges til at oprette og redigere Power BI-indhold.
 
-![visualiseringer](media/power-bi-custom-visuals/power-bi-visualizations.png)
+![Skærmbillede af ruden Power BI-visualiseringer, som den vises i Power BI Desktop og Power BI-tjenesten.](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
 Mange andre Power BI-visualiseringer er tilgængelige fra Microsoft [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) eller via Power BI. Disse visualiseringer er oprettet af Microsoft og Microsoft-partnere og testes og valideres af AppSource-valideringsteamet.
 
@@ -38,6 +38,11 @@ Hvis du vil gendanne standard Power BI-visualiseringen i visualiseringsruden, sk
 ## <a name="appsource-power-bi-visuals"></a>AppSource Power BI-visualiseringer
 
 Microsoft og medlemmer af community'et bidrager med deres Power BI-visualiseringer til offentlig brug og publicerer dem på [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Du kan downloade disse visualiseringer og føje dem til dine Power BI-rapporter. Microsoft har testet og godkendt disse Power BI-visualiseringer i forhold til funktionalitet og kvalitet.
+
+>[!NOTE]
+>* Ved hjælp af Power BI-visualiseringer oprettet med vores SDK kan du importere data fra eller sende data til tredjeparter eller andre tjenester, der er placeret uden for din Power BI-lejers geografiske område, overholdelsesgrænser eller nationale cloud-område.
+>* Power BI-certificerede visualiseringer er visualiseringer i AppSource, der er testet for at kontrollere, at visualiseringen ikke har adgang til eksterne tjenester eller ressourcer.
+>* Når Power BI-visualiseringer fra AppSource er importeret, kan de opdateres automatisk uden yderligere varsel.
 
 ### <a name="what-is-appsource"></a>Hvad er AppSource?
 
@@ -74,10 +79,17 @@ Hvis du er webudvikler og er interesseret i at oprette din egen visualisering og
 
 ## <a name="next-steps"></a>Næste trin
 
-* Hvis du er udvikler, skal du starte med selvstudiet [Udvikling af en Power BI-visualisering](custom-visual-develop-tutorial.md).
+>[!div class="nextstepaction"]
+>[Udvikling af en Power BI-visualisering](custom-visual-develop-tutorial.md)
 
-* Få mere at vide om, hvordan [Power BI-visualiseringsprojekter er struktureret](visual-project-structure.md).
+>[!div class="nextstepaction"]
+>[Projektstruktur i Power BI-visualiseringer](visual-project-structure.md)
 
-* Udforsk [Retningslinjer for Power BI-visualiseringer](guidelines-powerbi-visuals.md).
+>[!div class="nextstepaction"]
+>[Retningslinjer for Power BI-visualiseringer](guidelines-powerbi-visuals.md)
 
-Har du flere spørgsmål? Prøv siden [Ofte stillede spørgsmål om Power BI-visuals](power-bi-custom-visuals-faq.md) eller [Power BI-community'et](https://community.powerbi.com/).
+>[!div class="nextstepaction"]
+>[Ofte stillede spørgsmål](power-bi-custom-visuals-faq.md)
+
+>[!div class="nextstepaction"]
+>[Power BI-community](https://community.powerbi.com/)

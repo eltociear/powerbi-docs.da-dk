@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 06/26/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d09ebee0cc22c7037db437e1c7a46a3d19ff36fd
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 68d6a399a5ecccf07aaa71f74b18fd4ddd6082f5
+ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485574"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87768495"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Del Power BI-dashboards og -rapporter med kolleger og andre
 *Deling* er den nemmeste måde, når du vil brugerne adgang til dine dashboards og rapporter i Power BI-tjenesten. Du kan dele med brugere i og uden for din organisation.
@@ -34,7 +34,7 @@ Du kan ikke *dele* direkte fra Power BI Desktop. Du kan [publicere rapporter fra
 
 ## <a name="share-a-dashboard-or-report"></a>Del et dashboard eller en rapport
 
-1. Vælg **Del** ![Delingsikonet](media/service-share-dashboards/power-bi-share-icon.png) på en liste over dashboards eller rapporter eller i et åbent dashboard eller en åben rapport.
+1. Vælg **Del**:::image type="icon" source="../media/power-bi-share-icon.png" border="false"::: på en liste over dashboards eller rapporter, i et åbent dashboard eller en åben rapport.
 
 2. Angiv i det øverste felt de komplette mailadresser til enkeltpersoner, distributionsgrupper eller sikkerhedsgrupper. Du kan ikke dele med dynamiske distributionslister. 
    
@@ -67,7 +67,7 @@ Du kan ikke *dele* direkte fra Power BI Desktop. Du kan [publicere rapporter fra
 ## <a name="see-who-has-access-to-a-dashboard-or-report"></a>Se, hvem har adgang til et dashboard eller en rapport, som du har delt
 Du har nogle gange brug for at få vist de personer, du har delt med, og hvem de har videredelt med.
 
-1. Vælg **Del** ![Delingsikon](media/service-share-dashboards/power-bi-share-icon.png) på listen over dashboards og rapporter eller på selve dashboardet eller i selve rapporten. 
+1. Vælg **Del** :::image type="icon" source="../media/power-bi-share-icon.png" border="false"::: på listen over dashboards og rapporter, på selve dashboardet eller i selve rapporten. 
 2. Vælg **Adgang** i dialogboksen **Del dashboard** eller **Del rapport**.
    
     ![Dialogboksen Del dashboard, fanen Adgang](media/service-share-dashboards/power-bi-share-dialog-access.png)
@@ -110,7 +110,7 @@ Det er kun ejeren af dashboardet eller rapporten, der kan slå videredeling til 
 * Fjern markeringen i afkrydsningsfeltet **Tillad, at modtagerne må dele dit dashboard (eller rapport)** nederst i invitationen, før du sender den.
 
 ### <a name="if-youve-already-shared-the-dashboard-or-report"></a>Hvis du allerede har delt dashboardet eller rapporten
-1. Vælg **Del** ![Delingsikon](media/service-share-dashboards/power-bi-share-icon.png) på listen over dashboards og rapporter eller på selve dashboardet eller i selve rapporten. 
+1. Vælg **Del** :::image type="icon" source="../media/power-bi-share-icon.png" border="false"::: på listen over dashboards og rapporter, på selve dashboardet eller i selve rapporten. 
 2. Vælg **Adgang** i dialogboksen **Del dashboard** eller **Del rapport**.
    
     ![Dialogboksen Del dashboard, fanen Adgang](media/service-share-dashboards/power-bi-share-dialog-access.png)

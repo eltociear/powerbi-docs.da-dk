@@ -9,19 +9,25 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 07/22/2020
-ms.openlocfilehash: 6305a41188c4416b62d5432823bb30946e5e524d
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.date: 07/31/2020
+ms.openlocfilehash: 0152f835f130eaea12addee1cc8daa15975d7aa1
+ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87253851"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87478055"
 ---
 # <a name="share-directly-to-teams-from-the-power-bi-service"></a>Del direkte i Teams fra Power BI-tjenesten
 
 Du kan dele Power BI-dashboards, -rapporter og -visualiseringer direkte i Microsoft Teams fra Power BI-tjenesten. Brug funktionen **Del i Teams** til hurtigt at starte samtaler, når du får vist rapporter og dashboards i Power BI-tjenesten.
 
-Under [Samarbejd i Microsoft Teams med Power BI](service-collaborate-microsoft-teams.md) kan du se, hvordan Power BI og Teams arbejder sammen, herunder de krav, der skal være opfyldt.
+## <a name="requirements"></a>Krav
+
+Hvis du vil bruge **Del i Teams**-funktionalitet i Power BI, skal du sørge for følgende:
+
+- Power BI-administratorer har ikke deaktiveret lejerindstillingen **Del i Teams** på Power BI-administrationsportalen. Denne indstilling giver organisationer mulighed for at skjule **Del i Teams**-knapper. Du kan finde flere oplysninger i artiklen om [Power BI-administrationsportalen](../admin/service-admin-portal.md#share-to-teams-tenant-setting).
+
+Under [Samarbejd i Microsoft Teams med Power BI](service-collaborate-microsoft-teams.md) kan du se, hvordan Power BI og Teams arbejder sammen, herunder andre krav.
 
 ## <a name="share-power-bi-content-to-teams"></a>Del Power BI-indhold i Teams
 
