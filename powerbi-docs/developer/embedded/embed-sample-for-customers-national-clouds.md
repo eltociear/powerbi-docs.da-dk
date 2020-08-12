@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: 889f7359e0711ecafb44caa6cf98f8a4df6bb0fa
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: 5815ba5036da543fb51319e8a2af287cf6ce4ce7
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83794047"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878655"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Selvstudium: Integrer Power BI-indhold i dit program for nationale cloudmiljøer
 
@@ -116,7 +116,7 @@ I denne artikel vises den kode, der bruges i [prøveappen App Owns Data](https:/
 
 * Parametre for cloudmiljøet Power BI til Kina
 
-1. Overskriv Cloud.config-filen med indhold for cloudmiljøet for [Power BI til Kina](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config).
+1. Overskriv Cloud.config-filen med indhold for cloudmiljøet for [Power BI til Kina](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/Embed%20for%20your%20organization/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config).
 
 2. Opdater program-id (program-id i oprindelig app), arbejdsområde-id, brugeren (din overordnede bruger) og adgangskoden i Web.config-filen.
 
@@ -143,7 +143,7 @@ Registrer din app i Azure AD for at foretage REST-API-kald. Du kan finde flere o
 
 * Cloudmiljøet Power BI til Kina – ```https://app.powerbi.cn/apps```
 
-Hvis du har downloadet [eksemplet Integration for din kunde](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData), skal du bruge det **program-id**, du får, så eksemplet kan godkendes i Azure AD. Du kan konfigurere prøveappen ved at ændre **program-id** i filen *web.config*.
+Hvis du har downloadet [eksemplet Integration for din kunde](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData), skal du bruge det **program-id**, du får, så eksemplet kan godkendes i Azure AD. Du kan konfigurere prøveappen ved at ændre **program-id** i filen *web.config*.
 
 ## <a name="step-2---get-an-access-token-from-azure-ad"></a>Trin 2 – Få et adgangstoken fra Azure AD
 
@@ -309,7 +309,7 @@ var embedConfig = new TileEmbedConfig()
 
 Du kan bruge JavaScript til at indlæse et dashboard i et div-element på din webside. Modellen EmbedConfig/TileEmbedConfig bruges sammen med visninger for et dashboard, et felt eller en rapport i dette eksempel. Hvis du vi se et komplet eksempel, hvor JavaScript API'en bruges, kan du bruge [prøveappen Microsoft Power BI Embedded](https://microsoft.github.io/PowerBI-JavaScript/demo).
 
-Du kan finde et eksempel på et program i [Eksempel på integrering for din organisation](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData).
+Du kan finde et eksempel på et program i [Eksempel på integrering for din organisation](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData).
 
 ### <a name="viewshomeembeddashboardcshtml"></a>Views\Home\EmbedDashboard.cshtml
 
@@ -436,7 +436,7 @@ Du kan finde et eksempel på et program i [Eksempel på integrering for din orga
 
 ## <a name="next-steps"></a>Næste trin
 
-* Du kan finde en eksempelapp på GitHub, som du kan gennemse. Ovenstående eksempler er baseret på denne prøveapp. Du kan finde flere oplysninger i [Prøveappen Embedding for your organization](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData).
+* Du kan finde en eksempelapp på GitHub, som du kan gennemse. Ovenstående eksempler er baseret på denne prøveapp. Du kan finde flere oplysninger i [Prøveappen Embedding for your organization](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData).
 
 * Du kan finde flere oplysninger om JavaScript-API'en i [JavaScript-API til Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
 

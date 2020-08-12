@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: aed09a9cd26452a03363e8606e45938715595558
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: f752544b48a8ba2fdce703475749e1a731089e7d
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161669"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878438"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration af Power BI – ofte stillede spørgsmål
 
@@ -55,7 +55,7 @@ Denne artikel omhandler ofte stillede spørgsmål om Power BI-administration. Du
 
 ### <a name="using-powershell"></a>Brug af PowerShell
 
-Nogle af procedurerne i dette afsnit kræver Windows PowerShell-scripts. Hvis du ikke er bekendt med PowerShell, anbefaler vi [Introduktion til PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=286814). For at køre scripts skal du først installere den nyeste 64-bit version af [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/).
+Nogle af procedurerne i dette afsnit kræver Windows PowerShell-scripts. Hvis du ikke er bekendt med PowerShell, anbefaler vi [Introduktion til PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=286814). For at køre scripts skal du først installere den nyeste 64-bit version af [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/overview).
 
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Hvordan tilmelder brugerne sig Power BI?
 

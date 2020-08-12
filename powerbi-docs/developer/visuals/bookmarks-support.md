@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: aed8317c36cdd118b03bff2db93788f493ac9ad2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 96e42eb8a4d958eb4ee090cedf12d2ebfe79f941
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79380519"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878599"
 ---
 # <a name="add-bookmark-support-for-power-bi-visuals"></a>Tilføj understøttelse af bogmærker i Power BI-visualiseringer
 
@@ -49,9 +49,9 @@ Visualiseringen skal gendanne filterværdierne for at vise den tilsvarende tilst
 
 Hvis din visualisering interagerer med andre visualiseringer ved hjælp af [markering](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md), kan du tilføje bogmærker på en af to måder:
 
-* Hvis visualiseringen ikke allerede har brugt [InteractivityService](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md), kan du bruge metoden `FilterManager.restoreSelectionIds`.
+* Hvis visualiseringen ikke allerede har brugt [InteractivityService](https://github.com/microsoft/powerbi-visuals-utils-interactivityutils/blob/master/src/interactivityService.ts), kan du bruge metoden `FilterManager.restoreSelectionIds`.
 
-* Hvis visualiseringen allerede administrerer markeringer ved hjælp af [InteractivityService](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md), skal du bruge metoden `applySelectionFromFilter` til forekomsten `InteractivityService`.
+* Hvis visualiseringen allerede administrerer markeringer ved hjælp af [InteractivityService](https://github.com/microsoft/powerbi-visuals-utils-interactivityutils/blob/master/src/interactivityService.ts), skal du bruge metoden `applySelectionFromFilter` til forekomsten `InteractivityService`.
 
 #### <a name="use-iselectionmanagerregisteronselectcallback"></a>Brug ISelectionManager.registerOnSelectCallback
 

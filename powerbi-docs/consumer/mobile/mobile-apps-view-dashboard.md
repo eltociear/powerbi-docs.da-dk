@@ -1,21 +1,21 @@
 ---
-title: Vis dashboards og rapporter i Power BI-mobilappsene
-description: Opret eller opret forbindelse til dashboards og rapporter i Power BI-tjenesten. Derefter kan du se dem i Power BI-mobilappsene.
+title: Vis dashboards i Power BI-mobilappsene
+description: Opret dashboards, eller opret forbindelse til dashboards i Power BI-tjenesten. Derefter kan du se dem i Power BI-mobilappsene.
 author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 08/10/2020
 ms.author: painbar
-ms.openlocfilehash: 5911d1ded5c2ccf780454c60b7a5867223801a49
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: db889c945a7ea6f674bcc95e8ccf2c2075d56094
+ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220396"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88091715"
 ---
-# <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Vis dashboards og rapporter i Power BI-mobilappsene
+# <a name="view-dashboards-in-the-power-bi-mobile-apps"></a>Vis dashboards i Power BI-mobilappsene
 Gælder for:
 
 | ![iPhone](./media/mobile-apps-view-dashboard/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-view-dashboard/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-view-dashboard/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | 

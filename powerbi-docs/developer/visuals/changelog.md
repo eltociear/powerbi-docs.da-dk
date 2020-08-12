@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/13/2019
-ms.openlocfilehash: 3cf415cbd14da28d523a042fdf4099fe464a4a8b
-ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
+ms.openlocfilehash: 95d2cec8cf731c403e204beeb6c013c2cfe0ce1d
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84739178"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878563"
 ---
 # <a name="power-bi-visuals-api-changelog"></a>Ændringslog for visualiserings-API i Power BI
 Denne side indeholder en hurtig oversigt over API-versionerne. De versioner, der er angivet her, anses som stabile og ændres ikke.
@@ -91,7 +91,7 @@ Denne side indeholder en hurtig oversigt over API-versionerne. De versioner, der
 
 ## <a name="api-v162"></a>API v 1.6.2
 * Understøtter **[redigeringstilstand](./advanced-edit-mode.md)** , for at visualiseringer kan redigeres i selve visualiseringen
-* Understøtter **[Interaktive (HTML) R Power BI-visualiseringer](https://microsoft.github.io/PowerBI-visuals/tutorials/building-r-powered-custom-visual/creating-r-visuals.md)** , der er baseret på HTML
+* Understøtter **[Interaktive (HTML) R Power BI-visualiseringer](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** , der er baseret på HTML
 
 ## <a name="api-v150"></a>API v 1.5.0
 * Understøtter **[Tillad interaktioner](./visuals-interactions.md)** for visuel interaktivitet
@@ -105,7 +105,7 @@ Denne side indeholder en hurtig oversigt over API-versionerne. De versioner, der
 ## <a name="api-v120"></a>API v 1.2.0
 * Tilføjer **colorPalette** til at styre de farver, der bruges i din visualisering.
 * Understøtter **Flere markeringer** – selectionManager kan acceptere en matrix af `SelectionId`.
-* Understøtter **[R-visualiseringer](https://microsoft.github.io/PowerBI-visuals/tutorials/building-r-powered-custom-visual/creating-r-visuals.md)** ved hjælp af R-scripts
+* Understøtter **[R-visualiseringer](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** ved hjælp af R-scripts
 
 ## <a name="api-v110"></a>API v 1.1.0
 * Understøtter fejlfinding af visualisering i iFrame

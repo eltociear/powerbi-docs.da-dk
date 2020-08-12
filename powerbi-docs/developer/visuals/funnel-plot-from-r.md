@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: cbc8f6366e23aa7fbfb447bbfe56909c09f3e3fd
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 2cc37d1296d7f170bf8c6280465e7a3f1aa52e33
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354472"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878690"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>Selvstudium: Byg en tragtformet afbildning fra R-script til R-visualisering
 I denne artikel beskrives det, hvordan du opretter en tragtformet afbildning ved hjælp af R-script i R-visualisering trin for trin.
@@ -75,7 +75,7 @@ Rediger derefter scriptet for at afspejle [dette script](https://github.com/micr
 1. Opret en ny pakke med det visuelle element ved hjælp af kommandoen `pbiviz package`, og prøv at importere den i Power BI.
 
 > [!NOTE]
-> Se [PBIX](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3-RCustomVisual/funnelPlot_RCustomVisual.pbix) og [kildekode](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/) for at downloade.
+> Se [PBIX](https://github.com/microsoft/PowerBI-visuals/blob/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) og [kildekode](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/) for at downloade.
 
 ## <a name="make-r-based-visual-improvements"></a>Foretag R-baserede visuelle forbedringer
 
@@ -274,7 +274,7 @@ Da det resulterende visuelle element i PNG-format ikke reagerer på musemarkøre
 
 * Hver R-visualisering anvender `unique`-operatoren på dens inputtabel. Hvis du vil undgå, at identiske rækker fjernes, kan du overveje at tilføje et ekstra inputfelt med et entydigt ID og ignorere det i R-koden.   
 
-* Hvis du har en Power BI-konto, kan du bruge Power BI-tjenesten til at udvikle en visualisering [undervejs](/PowerBI-visuals/docs/step-by-step-lab/creating-a-custom-visual/#testing-the-custom-visual) i stedet for at pakke dem ud med kommandoen `pbiviz package`.
+* Hvis du har en Power BI-konto, kan du bruge Power BI-tjenesten til at udvikle en visualisering [undervejs](/power-bi/developer/visuals/custom-visual-develop-tutorial/) i stedet for at pakke dem ud med kommandoen `pbiviz package`.
 
 ### <a name="html-widgets-gallery"></a>Galleri med HTML-widgets
 Udforsk visuelle elementer i [galleriet med HTML-widgets](http://gallery.htmlwidgets.org/) til brug i det næste visuelle element. For at gøre tingene nemmere har vi oprettet et [lager med visuelle projekter](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML) med mere end 20 interaktive HTML-visualiseringer, som du kan vælge imellem!

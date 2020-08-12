@@ -10,12 +10,12 @@ ms.date: 04/08/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 72e2744fc325f5e5b36f3abcf4a6d3d71767fbd4
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 899055ea26d1f36592c426ba402aa363b65bfa15
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227652"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878345"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Køb og tildel Power BI Pro-brugerlicenser
 
@@ -29,7 +29,7 @@ Power BI Pro er en individuel brugerlicens, der giver brugerne mulighed for at l
 I denne artikel forklares det, hvordan du køber Power BI Pro-brugerlicenser i Microsoft 365 Administration. Når du har købt licenser, kan du tildele dem til brugere enten i Microsoft 365 Administration eller i Azure Portal.
 
 > [!NOTE]
-> Fra og med den 14. januar 2020 er selvbetjeningsindkøb, abonnements- og licensstyringsfunktioner til Power Platform-produkter (Power BI, Power Apps og Power Automate) tilgængelige til kommercielle Cloud-kunder. Du kan få flere oplysninger under [Ofte stillede spørgsmål om køb via selvbetjening](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq). Hvis du vil aktivere eller deaktivere købsmuligheder via selvbetjening, kan du se under [Aktivér eller deaktiver tilmelding og køb via selvbetjening](/service-admin-disable-self-service.md).
+> Fra og med den 14. januar 2020 er selvbetjeningsindkøb, abonnements- og licensstyringsfunktioner til Power Platform-produkter (Power BI, Power Apps og Power Automate) tilgængelige til kommercielle Cloud-kunder. Du kan få flere oplysninger under [Ofte stillede spørgsmål om køb via selvbetjening](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq). Hvis du vil aktivere eller deaktivere købsmuligheder via selvbetjening, kan du se under [Aktivér eller deaktiver tilmelding og køb via selvbetjening](/power-bi/admin/service-admin-disable-self-service).
 
 ### <a name="prerequisites"></a>Forudsætninger
 
