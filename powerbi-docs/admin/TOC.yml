@@ -114,6 +114,8 @@
               href: service-admin-premium-multi-geo.md
             - name: Medbring dine egne krypteringsnøgler
               href: service-encryption-byok.md
+            - name: Brug kundeadministrerede nøgler
+              href: service-encryption-customer-managed-keys.md
             - name: Genstart en Premium-kapacitet
               href: service-admin-premium-restart.md
             - name: Netværksmulighed for datasæt med XMLA-slutpunktet
