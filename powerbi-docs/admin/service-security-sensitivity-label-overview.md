@@ -6,15 +6,15 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 07/05/2020
+ms.date: 08/10/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: ea161af0156aa0bee2fe92ab2f87fb82630f5589
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: 4d719d7df5b982341b6377c41e448267197e769b
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252124"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049228"
 ---
 # <a name="sensitivity-labels-in-power-bi"></a>Følsomhedsmærkater i Power BI
 
@@ -39,7 +39,7 @@ Følsomhedsmærkater og filkryptering anvendes **ikke** i andre eksportstier end
 
 ## <a name="how-sensitivity-labels-work-in-power-bi"></a>Sådan fungerer følsomhedsmærkater i Power BI
 
-Når du anvender en følsomhedsmærkat på et dashboard, en rapport, et datasæt eller et dataflow i Power BI, svarer det til at anvende et mærke for den pågældende ressource, der har følgende fordele:
+Når du anvender en følsomhedsmærkat på et dashboard, en rapport, et datasæt eller et dataflow i Power BI, svarer det til at anvende et mærke for den pågældende ressource, hvilket har følgende fordele:
 * **Kan tilpasses** – Du kan oprette kategorier for forskellige niveauer af følsomt indhold i din organisation, f.eks. Personlig, Offentlig, Generelt, Fortrolig og Meget fortroligt.
 * **Klartekst** – Da mærkater er i klartekst, er det nemt for brugerne at forstå, hvordan de skal behandle indholdet i henhold til retningslinjerne for følsomhedsmærkater.
 * **Fast** – når en følsomhedsmærkat er blevet anvendt på indhold, følger den dette indhold, når den eksporteres til Excel-, PowerPoint- og PDF-filer, og den bliver grundlaget for anvendelse og håndhævelse af politikker.
@@ -69,11 +69,23 @@ Når data eksporteres fra Power BI til Excel-, PowerPoint- eller PDF-filer, anve
 
 En bruger, der eksporterer en fil fra Power BI, har tilladelse til at tilgå og redigere filen i henhold til indstillingerne for følsomhedsmærkaten. De får ikke ejertilladelser til filen.
 
-Følsomhedsmærkater og beskyttelse gennemtvinges ikke, når data eksporteres til CSV- eller PBIX-filer, Analysér i Excel eller andre typer eksportstier.
+Følsomhedsmærkater og beskyttelse anvendes ikke, når data eksporteres til .csv- eller .pbix-filer eller andre typer eksportstier.
 
 Anvendelse af en følsomhedsmærkat og beskyttelse af en eksporteret fil føjer ikke indholdsmarkeringer til filen. Men hvis mærkaten er konfigureret til at anvende indholdsmarkeringer, anvendes markeringerne automatisk af Azure Information Protection Unified-navngivningsklienten, når filen åbnes i Office Desktop-apps. Indholdsmærkaterne anvendes ikke automatisk, når du bruger indbygget navngivning til skrivebords-, mobil- eller webapps. Se [Når Office-apps anvender indholdsmarkering og kryptering](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#when-office-apps-apply-content-marking-and-encryption) for at få flere oplysninger.
 
 Eksporten mislykkes, hvis en mærkat ikke kan anvendes, når der eksporteres data til en fil. Hvis du vil kontrollere, om eksporten mislykkedes, fordi mærkaten ikke kunne anvendes, skal du klikke på navnet på rapporten eller dashboardet i midten af titellinjen og se, om der står "Følsomhedsmærkat kan ikke indlæses" på den rulleliste, der åbnes. Dette kan ske som følge af et midlertidigt systemproblem, eller hvis den anvendte mærkat er blevet fjernet eller slettet af sikkerhedsadministratoren.
+
+## <a name="sensitivity-label-inheritance-in-analyze-in-excel"></a>Nedarvning af følsomhedsmærkater i Analysér i Excel
+
+Når du opretter en pivottabel i Excel med en direkte forbindelse til et Power BI-datasæt (du kan enten gøre det fra Power BI via [Analysér i Excel](../collaborate-share/service-analyze-in-excel.md) eller fra [Excel](https://support.microsoft.com/office/create-a-pivottable-from-power-bi-datasets-31444a04-9c38-4dd7-9a45-22848c666884?ui=en-US&rs=en-US&ad=US)), nedarves datasættets følsomhedsmærkat og anvendes på din Excel-fil sammen med eventuelle tilknyttede beskyttelsesforanstaltninger. Hvis mærkaten på datasættet senere ændres til et mere restriktivt, opdateres den mærkat, der anvendes på den sammenkædede Excel-fil, automatisk efter dataopdatering.
+
+![Skærmbillede af Excel, hvor følsomhedsmærkaten er nedarvet fra datasæt via direkte forbindelse.](media/service-security-sensitivity-label-overview/live-connection-inheritance.png)
+ 
+Følsomhedsmærkater i Excel, der blev angivet manuelt, tilsidesættes ikke automatisk af datasættets følsomhedsmærkat. I stedet vises der et banner med en besked om, at datasættet har en følsomhedsmærkat, og det anbefales, at du anvender den.
+
+>[!NOTE]
+>Hvis datasættets følsomhedsmærkat er mindre restriktiv end Excel-filens følsomhedsmærkat, sker der ingen nedarvning eller opdatering af mærkater. En Excel-fil arver aldrig en mindre restriktiv følsomhedsmærkat.
+
 
 ## <a name="sensitivity-label-persistence-in-embedded-reports-and-dashboards"></a>Fastholdelse af følsomhedsmærkater i integrerede rapporter og dashboards
 
@@ -83,7 +95,7 @@ Du kan integrere Power BI-rapporter, -dashboards og -visualiseringer i virksomhe
 
 Følgende integreringsscenarier understøttes:
 * [Integrer til din organisation](../developer/embedded/embed-sample-for-your-organization.md)
-* Microsoft 365-apps (f. eks. [Teams](../collaborate-share/service-collaborate-microsoft-teams.md) og [SharePoint](../collaborate-share/service-embed-report-spo.md))
+* Microsoft 365-apps (f.eks. [Teams](../collaborate-share/service-embed-report-microsoft-teams.md) og [SharePoint](../collaborate-share/service-embed-report-spo.md))
 * [Integrering af sikre URL-adresser](../collaborate-share/service-embed-secure.md) (integration fra Power BI-tjenesten) 
 
 ## <a name="sensitivity-labels-in-the-power-bi-mobile-apps"></a>Følsomhedsmærkater i Power BI-mobilapps
@@ -95,18 +107,9 @@ Følsomhedsmærkater kan vises på rapporter og dashboards i Power BI-mobilapps.
 ## <a name="supported-clouds"></a>Understøttede cloudmiljøer
 Følsomhedsmærkater understøttes kun for lejere i globale (offentlige) cloudmiljøer, og de understøttes ikke for lejere i cloudmiljøer, f.eks. nationale cloudmiljøer.
 
-## <a name="requirements-for-using-sensitivity-labels-in-power-bi"></a>Krav til brug af følsomhedsmærkater i Power BI
+## <a name="licensing-and-requirements"></a>Licenser og krav
 
-Før dine følsomhedsmærkater kan aktiveres og bruges i Power BI, skal du først fuldføre følgende forudsætninger:
-* Sørg for, at der er defineret følsomhedsmærkater enten i [Microsoft 365 Security Center](https://security.microsoft.com/) eller [Microsoft 365 Compliance Center](https://compliance.microsoft.com/).
-* [Aktivér følsomhedsmærkater](service-security-enable-data-sensitivity-labels.md) i Power BI.
-* Sørg for, at brugerne har de [rette licenser](#licensing).
-
-## <a name="licensing"></a>Licensering
-
-* Der kræves en Premium P1- eller Premium P2-licens til Microsoft Azure Information Protection for at anvende og få vist følsomhedsmærkater fra Microsoft Azure Information Protection i Power BI. Microsoft Azure Information Protection kan købes enten separat eller via en af Microsoft-licenspakkerne. Du kan finde flere oplysninger under [Priser på Microsoft Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/).
-* Der er [licenskrav](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels) for visning og anvendelse af mærkater i Office-programmer.
-* Brugeren skal have en Power BI Pro-licens foruden en af de ovenfor nævnte licenser til Microsoft Azure Information Protection, før vedkommende kan anvende mærkater på Power BI-indhold.
+Se [Licenser og krav](service-security-enable-data-sensitivity-labels.md#licensing-and-requirements).
 
 ## <a name="sensitivity-label-creation-and-management"></a>Oprettelse og administration af følsomhedsmærkater
 

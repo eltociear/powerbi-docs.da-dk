@@ -7,15 +7,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 08/05/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: ec45d971855aefe35161f2b10fecd483f0345a46
-ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
+ms.openlocfilehash: 4f02a98ca13bd5808bde987889c3f4404c9100f0
+ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87768797"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87837491"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Eksportér rapporter fra Power BI til PDF
 
@@ -52,6 +52,7 @@ Så nemt er det. Du kan downloade filen og åbne den med en hvilken som helst PD
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbejder med funktionen **Eksportér til PDF**.
 
+* PDF-filen indeholder de data og visualiseringer, der er synlige på dit Power BI-lærred. Hvis visual'et indeholder rullepaneler, medtages visual'et i PDF-filen i standardtilstanden, hvor der ikke er rullet.  
 * R-visualiseringer og Python understøttes ikke i øjeblikket. Disse visualiseringer er tomme i PDF'en, og der vises en fejlmeddelelse. 
 * Power BI-visuals, der er blevet certificeret, understøttes. I [Få en Power BI-visual certificeret](../developer/visuals/power-bi-custom-visuals-certified.md) kan du finde flere oplysninger om certificerede Power BI-visuals, herunder hvordan du får en Power BI-visual certificeret. Power BI-visuals, der ikke er blevet certificeret, understøttes ikke. De vises med en fejlmeddelelse i PDF'en.
 * ESRI-visualiseringen understøttes ikke

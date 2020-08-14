@@ -6,14 +6,14 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 08/10/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 7dd6c812116d9ba196b157bd12d6362c19ac64ec
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: eeb879fc70effa166d08c9a342f77ad614779751
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216717"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049293"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Vejledning til indstillinger for lejeradministrator
 
@@ -39,9 +39,13 @@ Hvis du har gjort det, anbefaler vi, at du derefter aktiverer indstillingen **Pu
 Disse URL-adresser bliver tilgængelige som links i menuen Hjælp i Power BI.
 
 > [!NOTE]
-> Hvis du angiver URL-adressen til **Licensanmodninger** forhindres de enkelte brugere i at tilmelde sig den gratis 60-dages prøveversion af Power BI Pro. De vil i stedet blive henvist til dit interne websted med oplysninger om, hvordan de anskaffer sig en licens – gratis eller Pro.
+> Hvis du angiver URL-adressen for **licensanmodninger**, kan enkeltbrugere ikke købe en Power BI Pro-licens. De henvises i stedet til dit interne websted med oplysninger om, hvordan de anskaffer sig en licens. Indstillingen **Tillad brugere at prøve Power BI Pro** er aktiveret som standard og adskiller købs-og prøveversionsoplevelsen. Hvis du vil vide mere om, hvordan disse indstillinger fungerer sammen, skal du se [Tillad brugere at prøve Power BI Pro](../admin/service-admin-portal.md#allow-users-to-try-power-bi-pro).
+>
+>
 
 ![Skærmbillede af Power BI Desktop, der viser indstillinger for Hjælp og Support.](media/admin-tenant-settings/publish-get-help-information.png)
+
+Du kan finde flere oplysninger under [Indstillinger for Hjælp og support](../admin/service-admin-portal.md#help-and-support-settings).
 
 ## <a name="manage-risk"></a>Administrer risiko
 Indstillingerne til at administrere risici kan hjælpe dig med at oprette politikker for styring af politikker i din Power BI-lejer. Vær dog opmærksom på, at styringsindstillingerne ikke er en sikkerhedsmåling. Hvis du f.eks. deaktiverer indstillingen **Eksportér data**, fjernes funktionen fra Power BI-brugergrænsefladen og hjælper på denne måde Power BI-brugere med at overholde organisationens styringspolitikker, men den forhindrer ikke brugerne i at eksportere data ved hjælp af andre indstillinger. Set fra et sikkerhedsmæssigt synspunkt har en Power BI-bruger med læseadgang til et datasæt tilladelse til at forespørge dette datasæt og kan bevare resultaterne, uanset hvilke funktioner der er tilgængelige i Power BI-brugergrænsefladen.

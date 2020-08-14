@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: seodec18
-ms.date: 06/06/2019
-ms.openlocfilehash: fea4e4927b009e30bc040593f9237cc49ff73956
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.date: 08/04/2020
+ms.openlocfilehash: fe6ca733a5498c0e576ec30e6992ffbf26d54319
+ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78921441"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87837583"
 ---
 # <a name="report-data-in-power-bi-report-builder"></a>Rapportdata i Power BI Report Builder
 
@@ -27,7 +27,10 @@ Få mere at vide om, hvordan [opretter en integreret datakilde til sideinddelte 
   
 - **Dataforbindelse.** Også kendt som en *datakilde*. En dataforbindelse omfatter et navn og forbindelsesegenskaber, der er afhængige af forbindelsestypen. En dataforbindelse indeholder med vilje ikke legitimationsoplysninger. En dataforbindelse angiver ikke, hvilke data der skal hentes fra den eksterne datakilde. For at gøre det skal du angive en forespørgsel, når du opretter et datasæt.  
   
-- **Forbindelsesstreng.** En forbindelsesstreng er en strengversion af de forbindelsesegenskaber, der er nødvendige for at oprette forbindelse til en datakilde. Forbindelsesegenskaber varierer afhængigt af dataforbindelsestypen.  
+- **Forbindelsesstreng.** En forbindelsesstreng er en strengversion af de forbindelsesegenskaber, der er nødvendige for at oprette forbindelse til en datakilde. Forbindelsesegenskaber varierer afhængigt af dataforbindelsestypen. 
+
+    > [!NOTE]
+    > Forbindelsesstrenge for datakilder kan ikke være baseret på udtryk.
   
 - **Integreret datakilde.** Også kendt som *rapportspecifikke datakilder*. En datakilde, der er defineret i en rapport og kun bruges af den pågældende rapport.  
   
@@ -57,7 +60,7 @@ Få mere at vide om, hvordan [opretter en integreret datakilde til sideinddelte 
   
 - Datakilder og datasæt forfattes i en rapport og publiceres til Power BI-tjenesten. Når de er publiceret, kan du konfigurere legitimationsoplysninger direkte i Power BI-tjenesten eller i din Enterprise Gateway. 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)  
 - [Vejledning til datahentning for sideinddelte rapporter](../guidance/report-paginated-data-retrieval.md)

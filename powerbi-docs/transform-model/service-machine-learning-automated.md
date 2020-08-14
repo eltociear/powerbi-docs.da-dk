@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/18/2019
+ms.date: 08/03/2020
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 3b4d7eb41e04a173f763dd09caf5fa94bfc444d4
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: caccfdede32e91aa6265db0d38e26e96f8a7852c
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232633"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878637"
 ---
 # <a name="automated-machine-learning-in-power-bi"></a>Automatiseret Machine Learning i Power BI
 
@@ -141,6 +141,10 @@ Hvis du vil anvende ML-modellen, skal du angive navnet på den enhed, som modell
 Når du anvender ML-modellen, oprettes der to nye dataflowenheder, som indeholder forudsigelser og individuelle forklaringer for hver række, som den angiver scorer for, i outputenheden. Hvis du f.eks. anvender modellen _PurchaseIntent_ for enheden _OnlineShoppers_, genererer outputtet enhederne **OnlineShoppers enriched PurchaseIntent** og **OnlineShoppers enriched PurchaseIntent explanations**. For hver række i den forbedrede enhed er **forklaringerne** opdelt i flere rækker i de forbedrede forklaringer baseret på inputfunktionen. **ExplanationIndex** hjælper med at knytte rækkerne fra enheden med forbedrede forklaringer til rækken i den forbedrede enhed.
 
 ![Forespørgselseditor](media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png)
+
+Du kan også anvende en Power BI AutoML model til enheder i et hvilket som helst dataflow i samme arbejdsområde ved hjælp af Brug kunstig intelligens i PQO-funktionsbrowseren. På denne måde kan du bruge modeller, der er oprettet af andre, i det samme arbejdsområde uden nødvendigvis at være ejer af det dataflow, der har modellen. Power Query registrerer alle Power BI-modeller til maskinel indlæring i arbejdsområdet og viser dem som dynamiske Power Query-funktioner. Du kan kalde disse funktioner ved at oprette adgang til dem fra båndet i Power Query-editor eller ved at aktivere funktionen M direkte.Denne funktionalitet understøttes i øjeblikket kun for Power BI dataflows, og for Power Query Online i Power BI-tjenesten. Bemærk, at dette er meget anderledes end anvendelse af modeller til maskinel indlæring i et dataflow ved hjælp af guiden AutoML. Der oprettes ikke noget forklaringsobjekt ved hjælp af denne metode, og medmindre du er ejer af dataflowet, kan du ikke få adgang til modeltræningsrapporter eller træne modellen igen. Hvis kildemodellen redigeres (der tilføjes eller fjernes inputfelter), eller hvis modellen eller kildedataflowet slettes, afbrydes dette afhængige dataflow.
+
+![Anvend en model ved hjælp af PQO-funktionsbrowseren](media/service-machine-learning-automated/automated-machine-learning-power-bi-20.png)
 
 Når du har anvendt modellen, holder AutoML altid dine forudsigelser ajour, når dataflowet opdateres.
 

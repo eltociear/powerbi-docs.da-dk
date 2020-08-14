@@ -6,20 +6,22 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/26/2020
+ms.date: 08/07/2020
 ms.author: maggies
 ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 77de9608978379cee83236b0c362bd2d7d57d5c6
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: 56dd9e07e7c0647e7f92cc5d701b260483e2fbdf
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84120433"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049270"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser arbejde i nye arbejdsområder i Power BI
 
-*Arbejdsområder* er steder, hvor du kan samarbejde med kolleger om at oprette samlinger af dashboards, rapporter, datasæt og sideinddelte rapporter. Den nye arbejdsområdeoplevelse hjælper dig med bedre at administrere adgang til indhold. I denne artikel beskrives de nye arbejdsområder, og hvordan de adskiller sig fra de klassiske arbejdsområder.  På samme måde som med klassiske arbejdsområder bruges arbejdsområder stadig til at oprette og distribuere apps. Er du parat til at oprette et nyt arbejdsområde? Læs [Opret en ny arbejdsområdeoplevelse](service-create-the-new-workspaces.md).
+*Arbejdsområder* er steder, hvor du kan samarbejde med kolleger om at oprette samlinger af dashboards, rapporter, datasæt og sideinddelte rapporter. Den nye arbejdsområdeoplevelse hjælper dig med bedre at administrere adgang til indhold. I denne artikel beskrives de nye arbejdsområder, og hvordan de adskiller sig fra de klassiske arbejdsområder.  På samme måde som med klassiske arbejdsområder bruges arbejdsområder stadig til at oprette og distribuere apps. 
+
+Er du parat til at oprette et nyt arbejdsområde? Læs [Opret en ny arbejdsområdeoplevelse](service-create-the-new-workspaces.md).
 
 :::image type="content" source="media/service-new-workspaces/power-bi-workspace-opportunity.png" alt-text="Den nye arbejdsområdeoplevelse i Power BI":::
 
@@ -86,8 +88,10 @@ Hvis et af de nye arbejdsområder er i en delt kapacitet, skal alle, du føjer t
 
 Når det nye arbejdsområde er i en Power BI Premium-kapacitet, kan brugere med rollen som læser få adgang til arbejdsområdet, også selvom de ikke har en Power BI Pro-licens. Men hvis du tildeler disse brugere en rolle på et højere niveau som f.eks. administrator, medlem eller bidragyder, vil de blive bedt om at starte en Pro-prøveversion, når de forsøger at få adgang til arbejdsområdet. Hvis du vil have brugere uden Pro-licenser til at bruge læserrollen, skal du sørge for, at de ikke også har andre arbejdsområderoller, enten som enkeltperson eller som en del af en brugergruppe.
 
+Publicering af rapporter til den nye arbejdsområdeoplevelse har strengere håndhævelse af eksisterende licensregler. Hvis du forsøger at udgive fra Power BI Desktop eller andre klientværktøjer uden en Pro-licens, får du vist fejlmeddelelsen "Kun brugere med Power BI Pro-licenser kan publicere til dette arbejdsområde".
+
 > [!NOTE]
-> Publicering af rapporter til den nye arbejdsområdeoplevelse har strengere håndhævelse af eksisterende licensregler. Hvis du forsøger at udgive fra Power BI Desktop eller andre klientværktøjer uden en Pro-licens, får du vist fejlmeddelelsen "Kun brugere med Power BI Pro-licenser kan publicere til dette arbejdsområde".
+> Power BI US Government er ikke tilgængelig som en gratis licens. Du finder licensoplysninger under [Power BI til US Government-kunder](../admin/service-govus-overview.md).
 
 ### <a name="guest-users"></a>Gæstebrugere
 
@@ -95,7 +99,9 @@ Når det nye arbejdsområde er i en Power BI Premium-kapacitet, kan brugere med 
 
 ### <a name="administering-new-workspace-experience-workspaces"></a>Administration af arbejdsområder i den nye arbejdsområdeoplevelse
 
-Arbejdsområder til administration af nye arbejdsområder er på plads i Power BI-administrationsportalen. Power BI-administratorer bestemmer, hvem i en organisation der kan oprette arbejdsområder og distribuere apps. Administratorer kan se status for alle arbejdsområder i deres organisation. De kan også administrere og genoprette arbejdsområder. Læs mere om [administration af nye arbejdsområder](../admin/service-admin-portal.md#create-the-new-workspaces) i artiklen om administrationsportalen.
+Arbejdsområder til administration af nye arbejdsområder er på plads i Power BI-administrationsportalen. Power BI-administratorer bestemmer, hvem i en organisation der kan oprette arbejdsområder og distribuere apps. Læs om [administration af brugernes mulighed for at oprette arbejdsområder](../admin/service-admin-portal.md#create-the-new-workspaces) i artiklen "Administrationsportal". 
+
+Administratorer kan også se status for alle arbejdsområder i deres organisation. De kan administrere, genoprette og endda slette arbejdsområder. Læs mere om [brugernes egen administration af arbejdsområder](../admin/service-admin-portal.md#workspaces) i artiklen "Administrationsportal".
 
 ### <a name="auditing"></a>Overvågning
 

@@ -5,15 +5,15 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 07/06/2020
+ms.date: 08/10/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 0fe1b7b1b8175511838005b7b63ca7543bbf939a
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: ebc4601f3575e84c248aef9204537a7d93c428ac
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034330"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049178"
 ---
 # <a name="enable-sensitivity-labels-in-power-bi"></a>Aktivér følsomhedsmærkater i Power BI
 
@@ -24,7 +24,20 @@ Når følsomhedsmærkater aktiveres:
 * Visse brugere og sikkerhedsgrupper i organisationen kan klassificere og [anvende følsomhedsmærkater](./service-security-apply-data-sensitivity-labels.md) på deres Power BI-rapporter, dashboards, datasæt og dataflows.
 * Alle medlemmer af organisationen kan se disse mærkater.
 
-Aktivering af følsomhedsmærkater kræver en licens til Microsoft Azure Information Protection. Du kan finde flere oplysninger under [Licensering](service-security-sensitivity-label-overview.md#licensing).
+Aktivering af følsomhedsmærkater kræver en licens til Microsoft Azure Information Protection. Se flere oplysninger i [Licenser og krav](#licensing-and-requirements).
+
+## <a name="licensing-and-requirements"></a>Licenser og krav
+
+* Der kræves en Azure Information Protection Premium P1- eller Premium P2-licens for at anvende og få vist følsomhedsmærkater fra Microsoft Azure Information Protection i Power BI. Azure Information Protection kan købes enten separat eller via en af Microsoft-licenspakkerne. Du kan finde flere oplysninger under [Priser på Microsoft Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/).
+
+* Brugeren skal have en Power BI Pro-licens foruden en af de ovenfor nævnte licenser til Microsoft Azure Information Protection, for at kunne anvende mærkater på Power BI-indhold.
+
+* Office-apps har deres egne [licenskrav til visning og anvendelse af følsomhedsmærkater]( https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels ).
+
+* Før du aktiverer følsomhedsmærkater på din lejer, skal du sørge for, at der er defineret og publiceret følsomhedsmærkater for relevante brugere og grupper. Se [Opret og konfigurer følsomhedsmærkater og deres politikker](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide) for at få flere detaljer.
+
+>[!NOTE]
+> Hvis din organisation bruger Azure Information Protection-følsomhedsmærkater, skal de overføres til Microsoft Information Protection Unified Labeling-platformen, for at kunne bruges i Power BI. [Få mere at vide om overførsel af følsomhedsmærkater](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
 ## <a name="enable-sensitivity-labels"></a>Aktivér følsomhedsmærkater
 
@@ -52,9 +65,9 @@ I afsnittet **Information Protection** skal du udføre følgende trin:
 
 Power BI bruger følsomhedsmærkater fra Microsoft Azure Information Protection. Så hvis du får vist en fejlmeddelelse, når du forsøger at aktivere følsomhedsmærkater, kan det skyldes en af følgende årsager:
 
-* Du har ikke en [licens](service-security-sensitivity-label-overview.md#licensing) til Microsoft Azure Information Protection.
-* Følsomhedsmærkaterne er ikke blevet migreret til den version af Microsoft Azure Information Protection, som understøttes af Power BI. Få mere at vide om [migrering af følsomhedsmærkater](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
-* Der er ikke defineret nogen følsomhedsmærkater fra Microsoft Azure Information Protection i organisationen. Bemærk, at en mærkat være en del af en publiceret politik, før den kan anvendes. [Få mere at vide om følsomhedsmærkater](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels), eller gå til [Microsoft Security and Compliance Center](https://sip.protection.office.com/sensitivity?flight=EnableMIPLabels) for at se, hvordan du definerer mærkater og publicerer politikker for din organisation.
+* Du har ikke en [licens](#licensing-and-requirements) til Microsoft Azure Information Protection.
+* Følsomhedsmærkaterne er ikke blevet [overført](#enable-sensitivity-labels) til den version af Microsoft Azure Information Protection, som understøttes af Power BI.
+* Der er ikke [defineret nogen følsomhedsmærkater fra Microsoft Azure Information Protection i organisationen](#enable-sensitivity-labels).
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
@@ -67,4 +80,4 @@ Denne artikel indeholdt en beskrivelse af, hvordan du aktiverer følsomhedsmærk
 * [Oversigt over følsomhedsmærkater i Power BI](service-security-sensitivity-label-overview.md)
 * [Sådan anvendes følsomhedsmærkater i Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
 * [Brug af Microsoft Cloud App Security-kontrolelementer i Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
-* [Rapport over databeskyttelsesmålepunkter](service-security-data-protection-metrics-report.md)
+* [Rapport over beskyttelsesmålepunkter](service-security-data-protection-metrics-report.md)

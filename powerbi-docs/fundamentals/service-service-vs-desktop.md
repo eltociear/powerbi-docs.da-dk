@@ -7,15 +7,15 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 08/07/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 0be1f3aeb48e4596566c36c1ee8cfadeb3c33d10
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 4118e5c009a8d7372d5cb58d1e1b9d033a70494e
+ms.sourcegitcommit: 154946ece829360cc0ff3be13276cd7a129f3388
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214017"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87988730"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Sammenligning af Power BI Desktop og Power BI-tjenesten
 
@@ -25,13 +25,15 @@ I et Venn-diagram, der sammenligner Power BI Desktop og Power BI-tjenesten, vise
 
 **Power BI Desktop** er et komplet værktøj til dataanalyse og rapportoprettelse, som du installerer gratis på din lokale computer. Det omfatter Forespørgselseditor, hvor du kan oprette forbindelse til mange forskellige datakilder og kombinere dem (også kaldet modellering) i en datamodel. Derefter designer du en rapport, der er baseret på den pågældende datamodel. I [Introduktionsvejledning til Power BI Desktop](desktop-getting-started.md) gennemgås processen.
 
-**Power BI-tjenesten** er en cloudbaseret tjeneste. Den understøtter let rapportredigering og samarbejde for teams og organisationer. Du kan også oprette forbindelse til datakilder i Power BI-tjenesten, men mulighederne for modellering er begrænsede. 
+**Power BI-tjenesten** er en cloudbaseret tjeneste. Den understøtter let rapportredigering og samarbejde for teams og organisationer. Du kan også oprette forbindelse til datakilder i Power BI-tjenesten, men mulighederne for modellering er begrænsede.
 
-De fleste rapportdesignere, der arbejder på business intelligence-projekter, bruger **Power BI Desktop** til at oprette rapporter og bruger derefter **Power BI-tjenesten** til at distribuere deres rapporter til andre.
+De fleste designere af Power BI-rapporter, der arbejder på business intelligence-projekter, bruger **Power BI Desktop** til at oprette Power BI-rapporter og bruger derefter **Power BI-tjenesten** til samarbejde om og distribution af deres rapporter.
 
-## <a name="report-editing"></a>Rapportredigering
+Power BI-tjenesten hoster også *sideinddelte rapporter* i arbejdsområder, der understøttes af en Power BI Premium-kapacitet. Du opretter sideinddelte rapporter med Power BI Report Builder. Se [Sammenlign Power BI-rapporter og sideinddelte rapporter](../paginated-reports/paginated-reports-report-builder-power-bi.md#compare-power-bi-reports-and-paginated-reports) i artiklen "Hvad er sideinddelte rapporter i Power BI Premium?" for at få flere oplysninger.
 
-I både programmet og tjenesten kan du oprette og redigere *rapporter*. En rapport kan have en eller flere sider med visualiseringer og samlinger af visualiseringer. Tilføj bogmærker, knapper, filtre og detaljeadgang for at forbedre navigationen i dine rapporter.
+## <a name="editing-power-bi-reports"></a>Redigering af Power BI-rapporter
+
+Du kan oprette og redigere Power BI-*rapporter* i både programmet og tjenesten. En rapport kan have en eller flere sider med visualiseringer og samlinger af visualiseringer. Tilføj bogmærker, knapper, filtre og detaljeadgang for at forbedre navigationen i dine rapporter.
 
 ![Skærmbilleder af Power BI Desktop og Power BI-tjenesten med nummererede afsnit.](media/service-service-vs-desktop/power-bi-editing-desktop-service.png)
 
@@ -48,7 +50,6 @@ Denne video viser rapporteditoren i Power BI Desktop.
 ## <a name="working-in-the-power-bi-service"></a>Arbejde i Power BI-tjenesten
 
 ### <a name="collaborating"></a>Samarbejde
-
 
 Når du har oprettet dine rapporter, kan du gemme dem i et *arbejdsområde* i **Power BI-tjenesten**, hvor du og dine kolleger kan samarbejde. Du kan bygge *dashboards* oven på disse rapporter. Derefter deler du disse dashboards og rapporter med brugere af rapporter i og uden for din organisation. Brugerne af rapporterne får dem vist i Power BI-tjenesten i en *læsevisning* ikke redigeringsvisning. De har ikke adgang til alle de funktioner, der er tilgængelige for oprettere af rapporter.  Du kan også dele dine datasæt og lade andre bygge deres egne rapporter ud fra dem. Læs mere om [samarbejde i Power BI-tjenesten](../collaborate-share/service-new-workspaces.md).
 

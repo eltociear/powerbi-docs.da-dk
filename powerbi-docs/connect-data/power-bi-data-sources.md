@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2020
+ms.date: 08/05/2020
 ms.author: davidi
-ms.openlocfilehash: 0bc6b844457f625d0287f2ec85f582a6ea874624
-ms.sourcegitcommit: 6d3a37eb636e1b71c7dcb9d1c3a9e495b78dec97
+ms.openlocfilehash: 6afc5dd36127390dd359d76fc8970d5ef6f7b590
+ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84681853"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87837560"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-datakilder
 
@@ -94,7 +94,7 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 | ODBC | Ja | Ja | Nej | Ja | Ja |
 | OleDb | Ja | Ja | Nej | Ja | Ja |
 | Oracle | Ja | Ja | Ja | Ja | Ja |
-| Paxatas | Ja | Ja | Nej | Ja | Nej |
+| Paxata <sup>8</sup> | Ja | Ja | Nej | Ja | Nej |
 | PDF | Ja | Ja | Nej | Ja | Nej <sup>4</sup> |
 | Planview Enterprise One – CTM | Ja | Ja | Nej | Nej | Nej |
 | Planview Enterprise One – PRM | Ja | Ja | Nej | Nej | Nej |
@@ -155,6 +155,8 @@ Følgende tabel indeholder de datakilder, som Power BI understøtter for datasæ
 
 <sup>7</sup> Power BI-tjenesten understøtter ikke OData-feeds, der kræver godkendelse.
 
+<sup>8</sup> Paxata understøttes i den version af Power BI Desktop, der er optimeret til Power BI-rapportserver. Den understøttes ikke i Power BI-rapporter, der er publiceret til Power BI-rapportserver. Du finder listen over understøttede datakilder i [Power BI-rapportdatakilderne på Power BI-rapportserver](../report-server/data-sources.md).
+
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>Enkeltlogon til DirectQuery-kilder
 
 Når indstillingen for enkeltlogon er aktiveret, og dine brugere får adgang til rapporter, som er baseret på datakilden, sender Power BI deres godkendte Azure AD-legitimationsoplysninger i forespørgslerne til den underliggende datakilde. På den måde kan Power BI overholde de sikkerhedsindstillinger, der er konfigureret på datakildeniveauet.
@@ -180,3 +182,4 @@ Indstillingen for SSO gælder for alle datasæt, der bruger denne datakilde. Den
 [Brug af DirectQuery in Power BI](desktop-directquery-about.md)  
 [Dynamiske data i SQL Server Analysis Services i Power BI](sql-server-analysis-services-tabular-data.md)  
 [Hvad er en datagateway i det lokale miljø?](service-gateway-onprem.md)  
+[Power BI-rapportdatakilder på Power BI-rapportserver](../report-server/data-sources.md)

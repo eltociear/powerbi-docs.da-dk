@@ -1,39 +1,39 @@
 ---
 title: Power BI-administrationsportal
-description: Administrationsportalen giver adgang til lejeradministration af Power BI i virksomheden. Den indeholder elementer såsom metrikværdier, adgang til Microsoft 365 Administration og indstillinger.
+description: I administrationsportalen kan du konfigurere indstillinger på organisationsniveau til Power BI. Du kan få vist forbrugsdata, konfigurere lejerindstillinger, arbejde med kapacitet, få vist arbejdsområder, organisationsvisuals og udvalgt indhold.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/12/2020
+ms.date: 08/10/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: ec521c256209c258604e13483a9f3159b24626ae
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 19b4d64039333a18405ac57d98773e9e23857a18
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537498"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049766"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
-På administrationsportalen kan du administrere en Power BI-*lejer* for din organisation. Portalen indeholder elementer såsom metrikværdier, adgang til Microsoft 365 Administration og indstillinger.
+På administrationsportalen kan du administrere Power BI-indstillingerne for din virksomhed. Portalen indeholder elementer såsom forbrugsdata, adgang til Microsoft 365 Administration og lejerindstillinger.
 
-Hele administrationsportalen kan tilgås af alle brugere, som er globale administratorer, eller som er blevet tildelt rollen som administrator af Power BI-tjenesten. Hvis du ikke har en af disse roller, kan du kun se **Kapacitetsindstillinger** på portalen. Du kan finde flere oplysninger om Power BI-tjenesteadministratorrollen under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md).
+Globale administratorer og brugere, der har rollen som Power BI-tjeneste administrator, kan få adgang til hele administrationsportalen. Hvis du ikke har en af disse roller, kan du kun se **Kapacitetsindstillinger** på portalen. Du kan finde flere oplysninger om Power BI-tjenesteadministratorrollen under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md).
 
 ## <a name="how-to-get-to-the-admin-portal"></a>Sådan finder du vej til administrationsportalen
 
-Din konto skal være markeret som **Global administrator** i Microsoft 365 eller Azure AD (Azure Active Directory), eller den skal være tildelt rollen som administrator af Power BI-tjenesten, før du kan få adgang til Power BI-administrationsportalen. Du kan finde flere oplysninger om Power BI-tjenesteadministratorrollen under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md). Benyt følgende fremgangsmåde for at tilgå Power BI-administrationsportalen.
+Du skal være global administrator eller Power BI-tjenesteadministrator for at få adgang til Power BI-administrationsportalen. Du kan finde flere oplysninger om Power BI-tjenesteadministratorrollen under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md). Benyt følgende fremgangsmåde for at oprette adgang til Power BI-administrationsportalen:
 
-1. Vælg tandhjulet Indstillinger i øverste højre hjørne af Power BI-tjenesten.
+1. Log på [Power BI](https://app.powerbi.com) ved hjælp af legitimationsoplysningerne til din administratorkonto.
 
-1. Vælg **Administrationsportal**.
+1. Vælg **Indstillinger** > **Administrationportal** i sidehovedet.
 
     ![Indstillinger på administrationsportalen](media/service-admin-portal/powerbi-admin-settings.png)
 
-Der er ni faner på portalen. Resten af denne artikel indeholder oplysninger om hver af disse faner.
+Der er flere afsnit på administrationsportalen. Resten af denne artikel indeholder oplysninger om hver af disse afsnit.
 
 ![Navigation på administrationsportalen](media/service-admin-portal/powerbi-admin-landing-page.png)
 
@@ -43,19 +43,21 @@ Der er ni faner på portalen. Resten af denne artikel indeholder oplysninger om 
 * [Lejerindstillinger](#tenant-settings)
 * [Kapacitetsindstillinger](#capacity-settings)
 * [Integrer koder](#embed-codes)
-* [Visualiseringer til virksomheder](organizational-visuals.md#organizational-visuals)
-* [Dataflowlager (eksempelvisning)](#dataflow-storage-preview)
+* [Visualiseringer til organisationen](organizational-visuals.md#organizational-visuals)
+* [Azure-forbindelser (prøveversion)](#azure-connections-preview)
 * [Arbejdsområder](#workspaces)
 * [Brugerdefineret branding](#custom-branding)
+* [Målepunkter for beskyttelse](#protection-metrics)
+* [Udvalgt indhold](#featured-content)
 
 ## <a name="usage-metrics"></a>Forbrugsdata
 
-Med **Forbrugsdata** kan du overvåge Power BI-forbruget i organisationen. Den giver dig også mulighed for at se, hvilke brugere og grupper, der er mest aktive i Power BI i virksomheden. 
+Med **Forbrugsdata** kan du overvåge Power BI-forbruget i organisationen. Du kan også se, hvilke brugere og grupper i din organisation der er mest aktive i Power BI.
 
 > [!NOTE]
 > Første gang du tilgår dashboard'et, eller når du besøger det igen efter en lang periode uden at åbne dashboard'et, så får du sandsynligvis vist indlæsningsskærmen, mens vi indlæser dashboard'et.
 
-Når dashboardet er indlæst, får du vist to afsnit med felter. Det første afsnit indeholder forbrugsdata for individuelle brugere, og det andet afsnit har lignende oplysninger for grupper i din organisation.
+Når dashboardet er indlæst, får du vist to afsnit med felter. Det første afsnit indeholder forbrugsdata for individuelle brugere, og det andet afsnit har lignende oplysninger for grupper.
 
 Nedenfor er en oversigt over indholdet i hvert felt:
 
@@ -63,11 +65,13 @@ Nedenfor er en oversigt over indholdet i hvert felt:
   
     ![Særskilt optælling af dashboards, rapporter og datasæt](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
-* Mest brugte dashboard efter antallet af brugere, der har adgang til det. Hvis du f.eks. har et dashboard, som du har delt med tre brugere, og du også har føjet det til en indholdspakke med to forskellige brugere tilsluttet, så er antallet 6 (1 + 3 + 2).
+
+* Mest brugte dashboard efter antallet af brugere, der har adgang til det. Eksempel: Du har et dashboard, som du har delt med tre brugere. Du har også føjet dashboardet til en indholdspakke, som to forskellige brugere har oprettet forbindelse til. Dashboardantallet ville være 6 (1 + 3 + 2).
   
     ![Mest anvendte dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
-* Det mest populære indhold, som brugere har oprettet forbindelse til. Dette vil være alt vilkårligt indhold, som brugere kan tilgå gennem Hent data-processen, dvs. Saas-indholdspakker, organisatoriske indholdspakker, filer eller databaser.
+* Det mest populære indhold, som brugere har oprettet forbindelse til. Dette vil være alt vilkårligt indhold, som brugere kan oprette adgang til gennem Hent data-processen, f.eks. Saas-indholdspakker, organisatoriske indholdspakker, filer eller databaser.
+
   
     ![Mest anvendte pakker](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
 
@@ -79,9 +83,9 @@ Nedenfor er en oversigt over indholdet i hvert felt:
   
     ![Topbrugere – rapporter](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
 
-Det andet afsnit viser den samme type oplysninger, men baseret på grupper. Her kan du se, hvilke grupper i organisationen der er mest aktive, og hvilken slags indhold de bruger.
+Det andet afsnit viser den samme type oplysninger, men baseret på grupper. I dette afnit kan du se, hvilke grupper i organisationen der er mest aktive, og hvilken slags indhold de bruger.
 
-Med disse oplysninger kan du få reel indsigt i, hvordan personer bruger Power BI på tværs af organisationen, og du kan holde styr på, hvilke af de pågældende brugere og grupper der er meget aktive i organisationen.
+Disse oplysninger giver dig reel indsigt i, hvordan folk bruger Power BI på tværs af din organisation.
 
 ## <a name="control-usage-metrics"></a>Kontrollér forbrugsdata
 
@@ -93,7 +97,7 @@ Få mere at vide om selve rapporterne under [Overvåg forbrugsdata for dashboard
 
 ### <a name="usage-metrics-for-content-creators"></a>Forbrugsdata for oprettere af indhold
 
-1. På administrationsportalen skal du vælge **Lejerindstillinger** > **Forbrugsdata for oprettere af indhold**.
+1. På administrationsportalen skal du vælge **Lejerindstillinger** > **Indstillinger for overvågning og brug** > **Forbrugsdata for oprettere af indhold**.
 
     ![Forbrugsdata i lejerindstillingerne på administrationsportalen](media/service-admin-portal/power-bi-admin-usage-metrics.png)
 
@@ -101,10 +105,9 @@ Få mere at vide om selve rapporterne under [Overvåg forbrugsdata for dashboard
 
     ![Forbrugsdata er aktiveret](../collaborate-share/media/service-usage-metrics/power-bi-tenant-settings-updated.png)
 
+### <a name="per-user-data-in-usage-metrics-for-content-creators"></a>Brugerspecifikke data i forbrugsdata for indholdsforfattere
 
-### <a name="per-user-data-in-usage-metrics"></a>Brugerspecifikke data i forbrugsdata
-
-Brugerspecifikke data er som standard aktiveret for forbrugsdata, og kontooplysninger om forbrugere af indhold indgår i rapporten med forbrugsdata. Hvis du ikke vil medtage disse oplysninger for nogle eller alle brugere, kan du deaktivere funktionen for nærmere angivne sikkerhedsgrupper eller for en hel organisation. Kontooplysninger vises derefter i rapporten som *Ikke-navngivet*.
+Brugerspecifikke data er som standard aktiveret for forbrugsdata, og kontooplysninger indgår i rapporten med forbrugsdata. Hvis du ikke vil medtage kontooplysninger for nogle eller alle brugere, kan du deaktivere funktionen for nærmere angivne sikkerhedsgrupper eller for en hel organisation. Kontooplysninger vises derefter i rapporten som *Ikke-navngivet*.
 
 ![Brugerspecifikke forbrugsdata](media/service-admin-portal/power-bi-admin-per-user-usage-data.png)
 
@@ -112,26 +115,26 @@ Brugerspecifikke data er som standard aktiveret for forbrugsdata, og kontooplysn
 
 Når administratorer deaktiverer forbrugsdata for hele organisationen, kan de kan også vælge en af eller begge disse indstillinger:
 
-- **Slet alt eksisterende forbrugsdataindhold** til at slette alle eksisterende rapporter og dashboardfelter, der blev oprettet ved hjælp af forbrugsdatarapporter og -datasæt. Denne indstilling fjerner al adgang til forbrugsdata for alle brugere i organisationen, som muligvis allerede anvender dem. 
+- **Slet alt eksisterende forbrugsdataindhold** til at slette alle eksisterende rapporter og dashboardfelter, der blev oprettet ved hjælp af forbrugsdatarapporter og -datasæt. Denne indstilling fjerner al adgang til forbrugsdata for alle brugere i organisationen, som muligvis allerede anvender dem.
 - **Slet alle eksisterende brugerspecifikke data i det aktuelle forbrugsdataindhold** Denne indstilling fjerner al adgang til forbrugsdata for alle brugere i organisationen, som muligvis allerede anvender dem. 
 
 Vær forsigtig med at gøre dette, da sletning af eksisterende forbrugsdataindhold og brugerspecifikke data ikke kan fortrydes.
 
 ## <a name="users"></a>Brugere
 
-Du kan administrere Power BI-brugere, -grupper og -administratorer i Microsoft 365 Administration. Fanen **Brugere** indeholder et link til Administration for din lejer.
+Du kan administrere Power BI-brugere, -grupper og -administratorer i Microsoft 365 Administration. Fanen **Brugere** indeholder et link til Administration.
 
 ![Gå til Microsoft 365 Administration](media/service-admin-portal/powerbi-admin-manage-users.png)
 
 ## <a name="audit-logs"></a>Overvågningslogge
 
-Du kan administrere Power BI-overvågningslogge i Office 365 Security & Compliance Center. Fanen **Overvågningslogge** indeholder et link til Security & Compliance Center for din lejer. [Få mere at vide](service-admin-auditing.md)
+Du kan administrere Power BI-overvågningslogge i Office 365 Security & Compliance Center. Fanen **Overvågningslogge** indeholder et link til Security & Compliance Center. Du kan finde flere oplysninger under [Spor brugeraktiviteter i Power BI](service-admin-auditing.md).
 
 Hvis du vil bruge overvågningslogs, skal du sørge for, at indstillingen [**Opret overvågningslogs til overvågning af intern aktivitet og overholdelse af angivne standarder**](#create-audit-logs-for-internal-activity-auditing-and-compliance) er aktiveret.
 
 ## <a name="tenant-settings"></a>Lejerindstillinger
 
-Fanen **Lejerindstillinger** giver dig detaljeret kontrol over de funktioner, der er til rådighed for din organisation. Hvis du har bekymringer om følsomme data, kan det være, at nogle af vores funktioner ikke er passende for din organisation, eller du vil måske kun have, at en bestemt funktion er tilgængelig for en bestemt gruppe.
+**Lejerindstillinger** giver dig detaljeret kontrol over de funktioner, der er til rådighed for din organisation. Hvis du har bekymringer om følsomme data, kan det være, at nogle af vores funktioner ikke er passende for din organisation, eller du vil måske kun have, at en bestemt funktion er tilgængelig for en bestemt gruppe.
 
 > [!NOTE]
 > Lejerindstillinger, der styrer tilgængeligheden af funktioner i Power BI-brugergrænsefladen, kan hjælpe med at oprette politikker for styring, men de er ikke en sikkerhedsmåling. Indstillingen **Eksport af data** begrænser f.eks. ikke tilladelser for en Power BI-bruger på et datasæt. Power BI-brugere med læseadgang til et datasæt har tilladelse til at forespørge dette datasæt og kan bevare resultaterne uden at bruge funktionen **Eksport af data** i Power BI-brugergrænsefladen.
@@ -141,9 +144,9 @@ På følgende billede ses flere indstillinger under fanen **Lejerindstillinger**
 ![Lejerindstillinger](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
 > [!NOTE]
-> Det kan tage op til 10 minutter, før indstillingen træder i kraft for alle i din lejer.
+> Det kan tage op til 15 minutter, før indstillingen træder i kraft for alle i din organisation.
 
-Indstillingerne kan have tre tilstande:
+Indstillingerne kan have en af tre tilstande:
 
 * **Deaktiveret for hele organisationen**: Ingen i din organisation kan bruge denne funktion.
 
@@ -153,13 +156,13 @@ Indstillingerne kan have tre tilstande:
 
     ![Indstilling aktiveret for alle](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-* **Aktiveret for en del af organisationen**: Et bestemt undersæt af brugere eller grupper i organisationen kan bruge denne funktion.
+* **Aktiveret for en del af organisationen**: I stedet for at aktivere funktionen i hele organisationen kan du anvende indstillingen på **bestemte sikkerhedsgrupper** i din organisation, der har tilladelse til at bruge denne funktion.
 
-    Du kan aktivere funktionen for hele organisationen med undtagelse af en bestemt gruppe brugere.
+    Du kan også aktivere en funktion for hele organisationen **med undtagelse af bestemte sikkerhedsgrupper**.
 
     ![Indstilling aktiveret for en delmængde](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
 
-    Du kan også aktivere funktionen udelukkende for en bestemt gruppe af brugere og deaktivere den for nogle brugere. Med denne tilgang sikrer du, at visse brugere ikke har adgang til funktionen, selvom de er medlemmer af den tilladte gruppe.
+    Du kan også kombinere indstillinger for kun at aktivere funktionen for en bestemt gruppe brugere og deaktivere den for nogle brugere. Med denne tilgang sikrer du, at visse brugere ikke har adgang til funktionen, selvom de er medlemmer af den tilladte gruppe. Den mest restriktive indstilling for en bruger er gældende.
 
     ![Indstilling aktiveret med undtagelse](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
 
@@ -169,23 +172,47 @@ De næste par afsnit giver et overblik over de forskellige typer af lejerindstil
 
 ### <a name="publish-get-help-information"></a>Publicer "Få hjælp"-oplysninger
 
-Brugere i organisationen kan gå til interne hjælp- og supportressourcer i Power BI-menuen Hjælp. Funktionaliteten for disse parametre ændres specifikt for menupunkterne Lær, Community og Få hjælp.
+Administratorer kan angive interne URL-adresser for at tilsidesætte linkdestinationen i menuen Hjælp i Power BI og i forbindelse med opgradering af licenser. Hvis der er angivet brugerdefinerede URL-adresser, kan brugere i organisationen gå til interne hjælp- og supportressourcer i stedet for til standarddestinationerne. Følgende ressourcedestinationer kan tilpasses:
 
-Når du angiver en URL-adresse til licensanmodninger, tilpasser du også destinationens URL-adresse for knappen **Opgrader konto**. Brugere uden en Power BI Pro-licens kan se denne knap i dialogboksen **Opdater til Power BI Pro** samt på siden **Administrer personligt lager**. Desuden tilbyder Power BI ikke længere knappen **Prøv Pro gratis** i denne dialogboks eller på lagersiden. Dette sikrer, at Power BI på en pålidelig måde hjælper dine brugere gennem de processer, der er defineret i din organisation, via løsningen til licensstyring.
+* **Learn**. Dette link i menuen Hjælp viser en [liste over alle vores Power BI-læringsforløb og -moduler](https://docs.microsoft.com/learn/browse/?products=power-bi). Hvis du vil sende dette link til interne undervisningsressourcer i stedet for, skal du angive en brugerdefineret URL-adresse til **undervisningsdokumentation**.
 
-![Indstilling aktiveret med undtagelse](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
+* **Community**. Hvis du vil sende brugerne til et internt forum fra menuen Hjælp i stedet for til [Power BI-community](https://community.powerbi.com/), skal du angive en brugerdefineret URL-adresse til **Diskussionsforum**.
+
+* **Opgraderinger af licenser**. Brugere med en Power BI (gratis)-licens bliver muligvis præsenteret for muligheden for at opgradere deres konto til Power BI Pro, mens de bruger tjenesten. Hvis du angiver en intern URL-adresse til **Licensanmodninger**, omdirigerer du brugerne til en intern anmodning og et købsflow og forhindrer selvbetjeningskøb. Hvis du vil forhindre brugere i at købe licenser, men ikke har noget i mod, at de starter en Power BI Pro-prøveversion, kan du se [Tillad brugere at prøve Power BI Pro](#allow-users-to-try-power-bi-pro) for at adskille købs-og prøveoplevelsen.
+
+* **Få hjælp**. Hvis du vil sende brugerne til en intern helpdesk fra menuen Hjælp i stedet for til [Power BI-support](https://powerbi.microsoft.com/support/), skal du angive en brugerdefineret URL-adresse til **Helpdesk**.
+
+![Publicer "Få hjælp"-oplysninger](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
 
 ### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>Modtag mails ved tjenesteafbrydelser eller -hændelser
 
 Mailaktiverede sikkerhedsgrupper modtager mails, hvis lejeren påvirkes af en tjenesteafbrydelse eller -hændelse. Få mere at vide om [Meddelelser om tjenesteafbrydelser](service-interruption-notifications.md).
 
+### <a name="allow-users-to-try-power-bi-pro"></a>Tillad brugere at prøve Power BI Pro
+
+Indstillingen til **Tillad brugere at prøve Power BI Pro** er aktiveret som standard, og øger kontrollen med, hvordan brugerne kan opnå Power BI Pro-licenser. I scenarier hvor du har blokeret selvbetjening, kan du bruge denne indstilling for at gøre det muligt for brugerne at starte en Power BI Pro-prøveversion. Slutbrugeroplevelsen afhænger af, hvordan du kombinerer licensindstillingerne. I tabellen nedenfor kan du se, hvordan opgraderingsoplevelsen fra Power BI (gratis) til Power BI Pro påvirkes af forskellige indstillingskombinationer:
+
+| Indstillingen Køb via selvbetjening | Indstillingen Tillad brugere at prøve Power BI Pro | Slutbrugeroplevelse |
+| ------ | ------ | ----- |
+| Aktiveret | Deaktiveret | Brugeren kan købe en Pro-licens, men kan ikke starte en prøveversion |
+| Aktiveret | Aktiveret | Brugeren kan starte en gratis prøveversion af Pro og kan opgradere til en betalt licens |
+| Deaktiveret | Deaktiveret | Brugeren får vist en meddelelse om at kontakte it-administratoren for at anmode om en licens |
+| Deaktiveret | Aktiveret | Brugeren kan starte en Pro-prøveversion, men skal kontakte it-administratoren for at få en betalt licens |
+
+> [!NOTE]
+> Du kan tilføje en intern URL-adresse til licensanmodninger i [Indstillinger for Hjælp og support](#help-and-support-settings). Hvis du angiver URL-adressen, tilsidesættes standardkøbsprocessen. Brugere, der kan købe en licens i de scenarier, der er beskrevet i ovenstående tabel, omdirigeres til din interne URL-adresse.
+
+![Brugergrænseflade med indstillingen Tillad brugere at prøve Power BI Pro](media/service-admin-portal/allow-pro-trial.png)
+
+Du kan finde flere oplysninger i [Aktivér eller deaktiver tilmelding og køb via selvbetjening](service-admin-disable-self-service.md).
+
 ## <a name="workspace-settings"></a>Indstillinger for arbejdsområde
 
-I **lejerindstillinger** har administrationsportalen to afsnit til at styre arbejdsområder:
+Administrationsportalen har tre afsnit i **Lejerindstillinger** til at styre arbejdsområder:
 
-- Opret den nye arbejdsområdeoplevelse.
-- Brug datasæt på tværs af arbejdsområder.
-- Bloker oprettelse af klassisk arbejdsområde.
+- [Opret de nye arbejdsområdeoplevelser](#create-the-new-workspaces).
+- [Brug datasæt på tværs af arbejdsområder](#use-datasets-across-workspaces).
+- [Bloker oprettelse af klassisk arbejdsområde](#block-classic-workspace-creation).
 
 ### <a name="create-the-new-workspaces"></a>Opret de nye arbejdsområder
 
@@ -337,7 +364,7 @@ Når du har gjort det muligt at fremhæve indhold, kan du også administrere det
 
 ### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Publicer indholdspakker og apps til hele organisationen
 
-Administratorer bruger denne indstilling til at bestemme, hvilke brugere i organisationen der kan publicere indholdspakker og apps til hele organisationen frem for kun til specifikke grupper. Få mere at vide om [publicering af apps](../collaborate-share/service-create-distribute-apps.md).
+Administratorer bruger denne indstilling til at bestemme, hvilke brugere i organisationen der kan publicere indholdspakker og apps til hele organisationen frem for til specifikke grupper. Få mere at vide om [publicering af apps](../collaborate-share/service-create-distribute-apps.md).
 
 På følgende billede vises indstillingen **Hele min organisation**, når du opretter en indholdspakke.
 
@@ -433,7 +460,7 @@ Brugere i virksomheden kan integrere Power BI-dashboards og rapporter i Software
 
 ### <a name="allow-service-principals-to-use-power-bi-apis"></a>Tillad, at tjenesteprincipaler bruger Power BI-API'er
 
-Webapps, der er registreret i Azure Active Directory (Azure AD), bruger en tildelt tjenesteprincipal til at få adgang til Power BI-API'erne, uden at en bruger er logget på. Hvis du vil tillade, at en app anvender den godkendte tjenesteprincipal, skal tjenesteprincipalen være inkluderet i den tilladte sikkerhedsgruppe. [Få mere at vide](../developer/embedded/embed-service-principal.md)
+Webapps, der er registreret i Azure Active Directory (Azure AD), bruger en tildelt tjenesteprincipal til at få adgang til Power BI-API'erne, uden at en bruger er logget på. Hvis du vil tillade, at en app bruger godkendelse via tjenesteprincipal, skal tjenesteprincipalen være inkluderet i den tilladte sikkerhedsgruppe. [Få mere at vide](../developer/embedded/embed-service-principal.md)
 
 > [!NOTE]
 > Tjenesteprincipaler nedarver tilladelserne til alle Power BI-lejerindstillinger fra deres sikkerhedsgruppe. Hvis du vil begrænse tilladelserne, skal du oprette en dedikeret sikkerhedsgruppe for tjenesteprincipaler og føje den til listen "Undtagen specifikke sikkerhedsgrupper" for de relevante aktiverede Power BI-indstillinger.
@@ -491,26 +518,48 @@ Som administrator kan du få vist de integreringskoder, der er genereret for din
 
 ![Integrer koder i Power BI-administrationsportalen](media/service-admin-portal/embed-codes.png)
 
-## <a name="dataflow-storage-preview"></a>Dataflowlager (eksempelvisning)
+## <a name="organizational-visuals"></a>Visualiseringer til organisationen
+
+Alle indstillinger for administration af Power BI-visuals, herunder lejerindstillinger for Power BI-visuals, er beskrevet i [Administrationsindstillinger til administration af Power BI-visualiseringer](organizational-visuals.md).
+
+## <a name="azure-connections-preview"></a>Azure-forbindelser (prøveversion)
+
+### <a name="tenant-level-storage-preview"></a>Lager på lejerniveau (prøveversion)
 
 Som standard gemmes data, der bruges med Power BI, i et internt lager, der leveres af Power BI. Med integrationen af dataflow og Azure Data Lake Storage Gen2 (ADLS Gen2) kan du gemme dine dataflow på din organisations Azure Data Lake Storage Gen2-konto. Du kan finde flere oplysninger under [Integration af dataflow og Azure Data Lake (prøveversion)](../transform-model/service-dataflows-azure-data-lake-integration.md).
 
+### <a name="workspace-level-storage-permissions-preview"></a>Lagertilladelser på arbejdsområdeniveau (prøveversion)
+
+Administratorer af arbejdsområder kan som standard ikke oprette forbindelse til deres egen lagerkonto. Med denne prøveversionsfunktion kan du aktivere en indstilling, der gør det muligt for arbejdsområdeadministratorer at oprette forbindelse til deres egen lagerkonto.
+
 ## <a name="workspaces"></a>Arbejdsområder
 
-Som administrator kan du få vist de arbejdsområder, der findes i din lejer. Du kan sortere og filtrere listen over arbejdsområder og få vist detaljerne for hvert arbejdsområde. Kolonnerne i tabellen svarer til de egenskaber, der returneres af [REST API'erne til Power BI Administration](/rest/api/power-bi/admin) for arbejdsområder. Personlige arbejdsområder er af typen **Personlig gruppe**, klassiske arbejdsområder er af typen **Gruppe**, og arbejdsområder med den nye arbejdsområdeoplevelse er af typen **Arbejdsområde**. Du kan finde flere oplysninger under [Organiser arbejde i de nye arbejdsområder](../collaborate-share/service-new-workspaces.md).
+Som administrator kan du få vist de arbejdsområder, der findes i din lejer, under fanen **Arbejdsområder**. Under denne fane kan du udføre disse handlinger:
 
-Administratorer kan også administrere og genoprette arbejdsområder ved hjælp af enten administrationsportalen eller PowerShell-cmdlet'er. 
+- Opdater listen over arbejdsområder og deres detaljer.
+- Eksportér dataene for arbejdsområder til en. csv-fil. 
+- Se detaljer om et arbejdsområde, herunder id'et, brugerne og deres roller samt dashboards, rapporter og datasæt.
+- Rediger listen over personer, der har adgang. Det betyder, at du kan slette arbejdsområdet. Du kan føje dig selv til et arbejdsområde som administrator og derefter åbne arbejdsområdet og slette det.
+- Rediger felterne Navn og Beskrivelse.
 
 ![Liste over arbejdsområder](media/service-admin-portal/workspaces-list.png)
+
+Administratorer kan også styre brugernes mulighed for at oprette nye arbejdsområder til arbejdsområdeoplevelser og klassiske arbejdsområder. Se [Indstillinger for arbejdsområde](#workspace-settings) i denne artikel for at få flere oplysninger. 
+
+Tabelkolonnerne under fanen **Arbejdsområder** svarer til de egenskaber, der returneres af [Power BI-REST API'en](/rest/api/power-bi/admin) for arbejdsområder. Personlige arbejdsområder er af typen **Personlig gruppe**, klassiske arbejdsområder er af typen **Gruppe**, og arbejdsområder med den nye arbejdsområdeoplevelse er af typen **Arbejdsområde**. Du kan finde flere oplysninger under [Organiser arbejde i de nye arbejdsområder](../collaborate-share/service-new-workspaces.md).
 
 På fanen **Arbejdsområder** kan du se *tilstanden* for hvert arbejdsområde. I tabellen nedenfor kan du se flere oplysninger om betydningen af disse tilstande.
 
 |Stat  |Beskrivelse  |
 |---------|---------|
-| Aktiv | Et normalt arbejdsområde. Det angiver ikke noget om brug, eller hvad der er indeni, kun at selve arbejdsområdet er "normalt". |
-| Uafhængig | Et arbejdsområde uden en administratorbruger. |
-| Slettet | Et slettet arbejdsområde. Vi bevarer tilstrækkeligt mange metadata i op til 90 dage til at kunne gendanne arbejdsområdet, hvis det er nødvendigt. |
-| Fjerner | Et arbejdsområde, der er ved at blive slettet, men endnu ikke forsvundet. Brugerne kan slette deres egne arbejdsområder og placere ting i Fjerner og til sidst Slettet. |
+| **Aktiv** | Et normalt arbejdsområde. Det angiver ikke noget om brug, eller hvad der er indeni, kun at selve arbejdsområdet er "normalt". |
+| **Uafhængig** | Et arbejdsområde uden en administratorbruger. |
+| **Slettet** | Et slettet arbejdsområde. Vi bevarer tilstrækkeligt mange metadata i op til 90 dage til at kunne gendanne arbejdsområdet, hvis det er nødvendigt. |
+| **Fjerner** | Et arbejdsområde, der er ved at blive slettet, men endnu ikke forsvundet. Brugerne kan slette deres egne arbejdsområder og placere ting i Fjerner og til sidst Slettet. |
+
+Administratorer kan også administrere og genoprette arbejdsområder ved hjælp af enten administrationsportalen eller PowerShell-cmdlet'er. 
+
+![Liste over arbejdsområder](media/service-admin-portal/workspaces-list.png)
 
 ## <a name="custom-branding"></a>Brugerdefineret branding
 
@@ -527,7 +576,9 @@ Som administrator kan du tilpasse udseendet af Power BI for hele organisationen.
 
 Du kan finde flere oplysninger i [Brugerdefineret branding til din organisation](https://aka.ms/orgBranding).
 
-![Liste over arbejdsområder](media/service-admin-portal/workspaces-list.png)
+## <a name="protection-metrics"></a>Målepunkter for beskyttelse
+
+Når du har aktiveret informationsbeskyttelse for Power BI, vises der målepunkter for databeskyttelse i administrationsportalen. Denne rapport viser, hvordan følsomhedsmærkater hjælper med til at beskytte dit indhold.
 
 ## <a name="manage-featured-content"></a>Administrer fremhævet indhold
 

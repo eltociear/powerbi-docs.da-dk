@@ -7,15 +7,15 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 03/29/2019
+ms.date: 08/03/2020
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2d65b63238009c5a743d83a13d596f36aad4b2a3
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 9f25c9ffc294a1733a3dba5818dc00bd23124837
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83281685"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878888"
 ---
 # <a name="tutorial-build-a-machine-learning-model-in-power-bi"></a>Selvstudium: Skab en model til maskinel indlæring i Power BI
 
@@ -154,6 +154,26 @@ Hvis du anvender en model til binær forudsigelse, tilføjes der fire kolonner m
 Når dataflowet er blevet opdateret, kan du vælge enheden **Online Visitors enriched Purchase Intent Prediction** for at få vist resultaterne.
 
 ![Se resultaterne](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-21.png)
+
+Du kan også aktivere en hvilken som helst AutoML-model i arbejdsområdet direkte fra Power Query-editor i dit dataflow. For at få adgang til AutoML-modeller, skal du vælge knappen Rediger for den enhed, du vil forbedre med indsigt fra din Azure ML-model, som vist på følgende billede.
+
+![Opret objektet](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-22.png)
+
+Når knappen Rediger vælges, åbnes Power-forespørgselseditoren for enhederne i dit dataflow. Vælg knappen Brug kunstig intelligens på båndet.
+
+![Brug kunstig intelligens](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-23.png)
+
+ Vælg mappen Power BI-modeller til maskinel indlæring i menuen i navigationsruden. Alle de AutoML-modeller, du har adgang til, er angivet her som funktioner i Power Query. Inputparametrene for AutoML-modellen er også automatisk tilknyttet som parametre for den tilsvarende funktion i Power Query. Bemærk, at automatisk tilknytning af parametre kun sker, hvis parameterens navn og datatype er den samme.
+ 
+For at aktivere en AutoML-model kan du angive en af den valgte enheds kolonner som input på rullelisten. Du kan også angive en konstant værdi, der skal bruges som input, ved at slå kolonneikonet til venstre for inputdialogboksen til og fra.
+
+![PQO-funktionsbrowser](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-24.png)
+
+Vælg Anvend for at få vist AutoML-modellens output som en ny kolonne i enhedstabellen. Du får også modelaktiveringen som et anvendt trin for forespørgslen.
+
+![Vis resultater](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-25.png)
+
+Når du gemmer dit dataflow, aktiveres modellen automatisk, når dataflowet opfriskes, for alle nye eller opdaterede rækker i enhedstabellen.
 
 ## <a name="using-the-scored-output-from-the-model-in-a-power-bi-report"></a>Brug af resultatet fra modellen i en Power BI-rapport
 
