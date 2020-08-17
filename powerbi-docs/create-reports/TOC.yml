@@ -119,7 +119,7 @@
       items:
         - name: Power BI-rapporter
           items:
-            - name: Aktivér automatisk sideopdatering (eksempelvisning)
+            - name: Aktivér automatisk sideopdatering
               href: desktop-automatic-page-refresh.md
             - name: Undersøg rapportelementer med Effektivitetsanalyse
               href: desktop-performance-analyzer.md
