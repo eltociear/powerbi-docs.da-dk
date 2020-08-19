@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 07/28/2020
+ms.date: 08/12/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dcdd663ec9899f7623789915754087c4643c9806
-ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
+ms.openlocfilehash: 1e64ca5c94b180cf98cf8d8992681861281ca2ae
+ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87411974"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88160389"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 
@@ -217,28 +217,31 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Python-script
 * ODBC
 * OLE DB
-* Acterys: Model Automation & Planning (Beta)
-* Automation Anywhere (Beta)
 * Solver
-* Cherwell (Beta)
-* Cognite Data Fusion (beta)
 * FHIR
 * Information Grid (beta)
 * Jamf Pro (beta)
-* MicroStrategy for Power BI
 * Paxatas
 * QubolePresto (beta)
 * Roamler (beta)
 * Shortcuts Business Insights (beta)
 * Siteimprove
-* SurveyMonkey (beta)
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (beta)
-* Vena (beta)
 * Vessel Insight (beta)
 * Workforce Dimensions (beta)
 * Zucchetti HR Infinity (beta)
+* Cognite Data Fusion (beta)
+* MicroStrategy for Power BI
+* SurveyMonkey (beta)
+* Vena (beta)
+* Acterys: Model Automation & Planning (Beta)
+* Automation Anywhere (Beta)
+* Cherwell (Beta)
 * Tom forespørgsel
+
+
+
 
 På følgende billede vises vinduet **Hent data** for **Andet**.
 

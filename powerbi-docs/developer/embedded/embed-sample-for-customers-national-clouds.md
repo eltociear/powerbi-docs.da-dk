@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: 5815ba5036da543fb51319e8a2af287cf6ce4ce7
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: 4087f3d09d509022cb4dd91caebae0f8038e203b
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878655"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204290"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Selvstudium: Integrer Power BI-indhold i dit program for nationale cloudmiljøer
 
@@ -187,7 +187,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 
 Du kan bruge Power BI-klientobjektet til at hente en reference til det element, du vil integrere. Du kan integrere dashboards, felter eller rapporter. Her er et eksempel på, hvordan du henter det første dashboard, det første felt eller den første rapport fra et givent arbejdsområde.
 
-Du kan finde et eksempel i **Controllers\HomeController.cs** i [prøveappen App Owns Data](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData).
+Du kan finde et eksempel i **Controllers\HomeController.cs** i [prøveappen App Owns Data](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData).
 
 #### <a name="reports"></a>Rapporter
 
@@ -243,7 +243,7 @@ Ved hjælp af JavaScript-API'en kan du generere et integrationstoken. Dette inte
 > [!IMPORTANT]
 > Da integrerede tokens kun er beregnet til udviklingstest, er antallet af integrerede tokens, der kan genereres fra en Power BI-hovedkonto, begrænset. Der [skal købes en kapacitet](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) til integrerede produktionsscenarier. Der er ingen grænse for generering af integrerede tokens, når der er købt en kapacitet.
 
-Du kan finde et eksempel i **Controllers\HomeController.cs** i [prøveappen Embedding for your organization](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData).
+Du kan finde et eksempel i **Controllers\HomeController.cs** i [prøveappen Embedding for your organization](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData).
 
 Der oprettes en klasse for **EmbedConfig** og **TileEmbedConfig**. Du kan finde et eksempel i **Models\EmbedConfig.cs** og **Models\TileEmbedConfig.cs**.
 

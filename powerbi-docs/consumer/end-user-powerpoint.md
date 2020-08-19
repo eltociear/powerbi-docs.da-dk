@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 07/01/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3707399d21d15b16236e0e33da6c264fb6e364b4
-ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
+ms.openlocfilehash: 2cffd2b9913773e7f29d1afa960209ddeddd3583
+ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87768965"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88160412"
 ---
 # <a name="export-reports-to-powerpoint"></a>Eksportér rapporter til PowerPoint
 
@@ -102,7 +102,6 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
    - Baggrundsbilleder beskæres med diagrammets omgivende område. Det anbefales, at du fjerner baggrundsbilleder, før du eksporterer til PowerPoint.
 
 * Nogle rapporter kan ikke eksporteres. Disse omfatter:
-    - Rapporter, der ejes af en bruger uden for dit Power BI-lejerdomæne, f.eks. en rapport, der ejes af nogen uden for din organisation, og som er delt med dig.
     - Hvis du deler et dashboard med en person uden for din organisation og dermed en bruger, der ikke er i din Power BI-lejer, kan denne bruger ikke eksportere det delte dashboards tilknyttede rapporter til PowerPoint. Hvis du f.eks. er aaron@contoso.com, kan du dele med david@cohowinery.com. Men david@cohowinery.com kan ikke eksportere de tilknyttede rapporter til PowerPoint.
     - Rapporter med mere end 50 rapportsider. Det er kun de første 50 sider, der eksporteres.
     - Rapporter, der eksporteres til ældre versioner af PowerPoint.
