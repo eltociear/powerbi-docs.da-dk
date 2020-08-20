@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 02/20/2020
+ms.date: 08/13/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 944d115b0592954d92460ca26ae5b59311abc42e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a6513bdf7451db7068fe2540d32546df4d42ae8e
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227498"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204572"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi"></a>Medbring dine egne krypteringsnøgler til Power BI
 
@@ -32,7 +32,7 @@ Hvis du vil bruge BYOK, skal du uploade data til Power BI-tjenesten fra en PBIX-
 - Excel-projektmapper (medmindre data importeres først i Power BI Desktop)
 - [Send datasæt via push](/rest/api/power-bi/pushdatasets)
 - [Streamingdatasæt](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
-- [Store modeller](service-premium-large-models.md)
+
 
 BYOK anvendes kun på datasæt. Pushdatasæt, Excel-filer og CSV-filer, som brugere kan uploade til tjenesten, krypteres ikke med din egen nøgle. Brug følgende PowerShell-kommando til at identificere, hvilke artefakter der gemmes i dine arbejdsområder:
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 03/03/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 0169eba3e27b4014f9dbf20f88a10575caf903fe
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7ea6601514d77f9f7e2e416b358194e871f6445b
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227255"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204311"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Store modeller i Power BI Premium (prøveversion)
 
@@ -114,7 +114,6 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
 
 Vær opmærksom på følgende begrænsninger, når du bruger store modeller:
 
-- **BYOK-kryptering (Bring Your Own Key)** : Datasæt, der er aktiveret for Premium-filer, er ikke krypteret med [BYOK](service-encryption-byok.md).
 - **Multi-Geo-understøttelse**: Datasæt, der er aktiveret til Premium-filer, mislykkes på kapaciteter, hvor [Multi-Geo](service-admin-premium-multi-geo.md) også er aktiveret.
 
 - **Download Power BI Desktop**: Hvis et datasæt er gemt i Premium-filer, mislykkes [download som en. pbix](../create-reports/service-export-to-pbix.md)-fil.
@@ -131,24 +130,24 @@ Følgende liste indeholder områder, hvor store modeller i Power BI er tilgænge
 |Azure-område  |Forkortelse for Azure-område  |
 |---------|---------|
 |Det østlige Australien     | australiaeast        |
-|Det sydøstlige Australien     | australiasoutheast        |
-|Det centrale USA     | centralus        |
+|Det sydøstlige Australien     | Det sydøstlige Australien        |
+|Det centrale USA     | Det centrale USA        |
 |Det østlige Asien     | eastasia        |
-|Det østlige USA     | eastus        |
+|Det østlige USA     | Det østlige USA        |
 |Det østlige USA 2     | eastus2        |
-|Det østlige Japan     | japaneast        |
+|Det østlige Japan     | Det østlige Japan        |
 |Det vestlige Japan     | japanwest        |
 |Det centrale Sydkorea     | koreacentral        |
 |Det sydlige Sydkorea     | koreasouth        |
 |Det nordcentrale USA     | northcentralus        |
 |Det nordlige Europa     | northeurope        |
-|Det sydcentrale USA     | southcentralus        |
-|Det sydøstlige Asien     | southeastasia        |
+|Det sydcentrale USA     | Det sydcentrale USA        |
+|Det sydøstlige Asien     | Det sydøstlige Asien        |
 |Det sydlige Storbritannien     | uksouth        |
 |Det vestlige Storbritannien     | ukwest        |
-|Det vestlige Europa     | westeurope        |
+|Det vestlige Europa     | Det vestlige Europa        |
 |Det vestlige USA     | westus        |
-|Det vestlige USA 2     | westus2        |
+|Det vestlige USA 2     | Det vestlige USA 2        |
 
 
 
