@@ -7,12 +7,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/17/2020
 ms.author: maggies
-ms.openlocfilehash: 6178c9f157578110a09abf3fcbebccba54339f13
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 47ab35113bbf6564cbc824b48891cd9f58370c8a
+ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866015"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88578130"
 ---
 # <a name="intro-to-qa-tooling-to-train-power-bi-qa-preview"></a>Introduktion til værktøjer til Spørgsmål og svar for at oplære Spørgsmål og svar i Power BI (prøveversion)
 
@@ -42,13 +42,31 @@ Værktøjer til Spørgsmål og svar er kun tilgængelige i Power BI Desktop og u
 
     ![Introduktion til Spørgsmål og svar](media/q-and-a-tooling-intro/qna-tooling-dialog.png)
 
+### <a name="field-synonyms"></a>Feltsynonymer
+
+Vælg **Feltsynonymer** for at se alle de tabeller og kolonner, der hører til modellen. I denne visning kan du tilføje andre navne, der passer til kolonnerne, for at hjælpe brugerne. Du kan også vælge, om en kolonne eller en tabel skal skjules i Spørgsmål og svar.
+
+![Startside for feltsynonymer til Spørgsmål og svar](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-home.png)
+
+Klik på en af tabellerne for at udvide den. Så får du vist en dialogboks, der ligner den nedenfor.
+
+![Feltsynonymer til Spørgsmål og svar udvidet](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-expanded.png)
+
+Dialogboksen viser alle kolonner og tabeller og deres respektive begreber/synonymer, som brugerne kan anvende, når de stiller spørgsmål til datasættet. Du kan hurtigt se alle begreberne samlet ét sted og tilføje eller fjerne begreber for flere kolonner. 
+
+- Tilføj begreber – Hvis du har et felt, der hedder Salg, kan du f.eks. tilføje begrebet Indtægt, så en bruger kan anvende dette ord i stedet for nødvendigvis at skulle bruge ordet Salg. Klik på tilføjelsesmærket for hurtigt at tilføje et nyt begreb
+
+- Medtag i Spørgsmål og svar – Denne indstilling gør det muligt at udelade en kolonne eller en tabel fra Spørgsmål og svar, hvilket vil sige, at den ikke vises, og at der ikke vises et resultat sammen med denne kolonne. En situation, hvor du f.eks. kan beslutte ikke at medtage en kolonne, er, når du arbejder med datoer. Hvis der er mange datofelter eller fremmede nøgler, kan du vælge at fjerne alle datofelterne undtagen et, så den rette datokolonne vælges, når en bruger stiller et datorelateret spørgsmål.
+
+- Foreslåede begreber – Spørgsmål og svar vil også anbefale foreslåede begreber, der er hentet fra vores forslagsprogram, så du hurtigt kan tilføje begreber/synonymer. Hvis forslagene ikke er tilføjet, fungerer de stadig, men de vises for brugeren med en orange stiplet linje, der indikerer, at Spørgsmål og svar mener at have et svar, men er ikke sikker. Hvis det foreslåede synonym er korrekt, skal du klikke på plusikonet (+), så det kan bruges som synonym. Hvis forslaget er forkert, skal du klikke på krydset (x). Derefter fjernes begrebet, og det sikres, at det ikke bruges som et begreb/synonym, og at det ikke anvendes i Spørgsmål og svar. Forslagene er baseret på ordbogen i Office og stammer også fra nye navne, der er fundet i en rapport
+
 ### <a name="review-questions"></a>Gennemse spørgsmål
 
 Vælg **Repetitionsspørgsmål** for at se en liste over datasæt, der bruges i Power BI-tjenesten for din lejer. På siden **Repetitionsspørgsmål** kan du også se ejeren af datasættet, arbejdsområdet og datoen for seneste opdatering. Herfra kan du vælge et datasæt og se, hvilke spørgsmål brugerne har stillet. Dataene viser også ord, der ikke blev genkendt. Alle de data, der vises her, er for de seneste 28 dage.
 
 ![Repetitionsspørgsmål til Spørgsmål og svar](media/q-and-a-tooling-intro/qna-tooling-review-questions.png)
 
-### <a name="teach-qa"></a>Træn Spørgsmål og svar
+### <a name="teach-qa"></a>Oplær Spørgsmål og svar
 
 I afsnittet **Træn Spørgsmål og svar** kan du oplære Spørgsmål og svar, så det kan genkende ord. Du begynder ved at skrive et spørgsmål, der indeholder et eller flere ord, som Spørgsmål og svar ikke kan genkende. Spørgsmål og svar beder dig om en definition af begrebet. Angiv enten et filter eller et feltnavn, der svarer til det, som ordet repræsenterer. Spørgsmål og svar genfortolker derefter det oprindelige spørgsmål. Hvis du er tilfreds med resultaterne, kan du gemme dit input. Du kan finde flere oplysninger under [Træn Spørgsmål og svar](q-and-a-tooling-teach-q-and-a.md)
 
@@ -62,7 +80,7 @@ Alt, hvad du har gemt i afsnittet Træn Spørgsmål og svar, vises her, så du k
 
 ### <a name="suggest-questions"></a>Foreslå spørgsmål
 
-Uden at foretage nogen form for konfiguration foreslår visualiseringen Spørgsmål og svar adskillige spørgsmål, så du kan komme i gang. Disse spørgsmål genereres automatisk ud fra din datamodel. I **Foreslå spørgsmål** kan du overskrive de automatisk genererede spørgsmål med dine egne spørgsmål. 
+Uden at foretage nogen form for konfiguration foreslår visualiseringen Spørgsmål og svar adskillige spørgsmål, så du kan komme i gang. Disse spørgsmål genereres automatisk ud fra din datamodel. I **Foreslå spørgsmål** kan du overskrive de automatisk genererede spørgsmål med dine egne spørgsmål.
 
 Du starter ved at skrive det spørgsmål, du vil tilføje i tekstfeltet. I afsnittet med forhåndsvisningen kan du se, hvordan resultatet vil se ud i visualiseringen Spørgsmål og svar. 
 
@@ -74,30 +92,12 @@ Vælg knappen **Tilføj** for at føje dette spørgsmål til **Dine foreslåede 
  
 Sørg for at vælge **Gem** for at få vist en liste over foreslåede spørgsmål i visualiseringen Spørgsmål og svar. 
 
+> [!NOTE]
+> De foreslåede spørgsmål vises for alle forekomster af visualiseringen Spørgsmål og svar. Det er ikke muligt at oprette et separat sæt forslag for alle visualiseringer af Spørgsmål og svar.
+> 
+> 
 
 ## <a name="other-qa-settings"></a>Andre indstillinger for Spørgsmål og svar
-
-### <a name="bulk-synonyms"></a>Massesynonymer
-
-Fanen **Udformning** i Power BI Desktop indeholder flere indstillinger til forbedring af oplevelsen med Spørgsmål og svar. 
-
-1. Brug visningen Udformning i Power BI Desktop.
-
-2. Vælg et felt eller en tabel for at få vist ruden **Egenskaber**.  Denne rude vises i højre side af lærredet og indeholder en række handlinger i Spørgsmål og svar. Én indstilling er **Synonymer**. I feltet **Synonymer** kan du hurtigt definere alternativer for den tabel eller det felt, du vælger. Du kan også definere synonymer i afsnittet **Træn Spørgsmål og svar** i dialogboksen Værktøjer, men det er ofte hurtigere at definere synonymer her for mange felter i en tabel.
-
-    ![Synonymer i ruden Udformning i Spørgsmål og svar](media/q-and-a-tooling-intro/qna-modelling-pane-synonyms.png)
-
-3. Hvis du vil definere flere synonymer for et enkelt felt, skal du bruge kommaer til at angive det næste synonym.
-
-### <a name="hide-from-qa"></a>Skjul fra Spørgsmål og svar
-
-Du kan også skjule felter og tabeller, så de ikke vises i resultaterne i Spørgsmål og svar. 
-
-1. Brug visningen Udformning i Power BI Desktop.
-
-2. Vælg et felt eller en tabel for at få vist ruden **Egenskaber**, og slå **Er skjult** **Til**.
-
-    Spørgsmål og svar respekterer denne indstilling og sikrer, at feltet ikke genkendes af Spørgsmål og svar. Det kan f.eks. være, at du vil skjule id-felter og fremmede nøgler for at undgå unødvendige dubletfelter med det samme navn. Selvom du skjuler feltet, kan du stadig bruge det i Power BI Desktop i visualiseringer uden for Spørgsmål og svar.
 
 ### <a name="set-a-row-label"></a>Angiv en rækkemærkat
 

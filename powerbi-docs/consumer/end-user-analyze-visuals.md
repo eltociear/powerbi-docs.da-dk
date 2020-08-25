@@ -1,24 +1,24 @@
 ---
 title: Brug funktionen Analysér til at forklare udsving i rapportvisuals
-description: Du kan let få indsigt i forøgelser eller reduktioner i Power BI Desktop
+description: Du kan let få indsigt i forøgelser eller reduktioner i Power BI-tjenesten
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/23/2019
+ms.date: 08/12/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 36f370adc68c6b6f8fc15261bfa107411043c65d
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: fe44b183b77cb1e58c89cfd229f3f76d3b06ce39
+ms.sourcegitcommit: 3268a9b630cf599c50592d83c70a87eeecf7838f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162292"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168453"
 ---
-# <a name="use-the-analyze-feature-to-explain-fluctuations-in-report-visuals-preview"></a>Brug funktionen Analysér til at forklare udsving i rapportvisuals (prøveversion)
+# <a name="use-the-analyze-feature-to-explain-fluctuations-in-report-visuals"></a>Brug funktionen Analysér til at forklare udsving i rapportvisuals
 
-[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 Ofte ser du i rapportvisuals en stor stigning og derefter et kraftigt fald i værdier og undrer dig over, hvad årsagen til sådanne udsving er. Med **Analysér** i **Power BI-tjenesten** kan du se mere om årsagen med blot nogle få klik.
 
@@ -26,7 +26,7 @@ Du kan f. eks. overveje følgende visual, der viser *Enheder i alt* efter *Måne
 
 ![Visualisering med stigninger og fald](media/end-user-analyze-visuals/power-bi-line-chart.png)
 
-Du kan bede Power BI-tjenesten om at forklare stigninger, fald eller en usædvanlig fordeling i visuals og få hurtige og automatiske indsigtsanalyser om dine data. Du skal blot højreklikke på et datapunkt og vælge **Analysér > Forklar reduktionen** (eller forøgelsen, hvis den tidligere linje var lavere) eller **Analysér > Find de steder, hvor distributionen skiller sig ud**, hvorefter indsigten vises i et brugervenligt vindue.
+Du kan bede Power BI-tjenesten om at forklare stigninger, fald eller en usædvanlig fordeling i visuals og få hurtige og automatiske indsigtsanalyser om dine data. Højreklik på et datapunkt, og vælg **Analysér > Forklar reduktionen** (eller forøgelsen, hvis den tidligere linje var lavere) eller **Analysér > Find de steder, hvor distributionen skiller sig ud**, hvorefter indsigten vises i et brugervenligt vindue.
 
 ![Indsigter, der vises i visualisering](media/end-user-analyze-visuals/power-bi-decrease.png)
 
@@ -37,7 +37,7 @@ Funktionen Analysér er kontekstafhængig og er baseret på det nærmeste forrig
 
 ### <a name="which-factors-and-categories-are-chosen"></a>Valgte faktorer og kategorier
 
-Efter at have undersøgt forskellige kolonner vælger og viser Power BI dem, der har den største ændring i forhold til deres bidrag. De værdier, som havde den væsentligste ændring i bidraget, fremhæves i beskrivelsen. De værdier, der havde de største faktiske stigninger og fald, fremhæves også.
+Efter at have undersøgt forskellige kolonner vælger og viser Power BI de faktorer, der har den største ændring i forhold til deres bidrag. De værdier, som havde den væsentligste ændring i bidraget, fremhæves i beskrivelsen. De værdier, der havde de største faktiske stigninger og fald, fremhæves også.
 
 Hvis du vil se alle de indsigter, der genereres af Power BI, skal du bruge rullepanelet. Rækkefølgen er rangordnet, så den største bidragyder vises først. 
 
@@ -71,27 +71,35 @@ For hver kolonne, der returneres, kan der vises fire visuals. Tre af disse visua
 
 ### <a name="the-scatter-plot"></a>Punktdiagrammet
 
+![Lille skærmbillede, der viser ikonet Punktdiagram](media/end-user-analyze-visuals/power-bi-scatter-icon.png)
+
 Punktdiagrammet viser værdien af målingen i den første periode (på x-aksen) i forhold til værdien af målingen i den anden periode (på y-aksen) for hver værdi i kolonnen (i dette tilfælde *State*). Datapunkter er i det grønne område, hvis de er steget, og i det røde område, hvis de er faldet. 
 
 Den stiplede linje viser dem, der passer bedst, og de datapunkter, som er placeret over denne linje, steg mere end den overordnede tendens, mens dem under linjen steg mindre.  
 
 ![Punktdiagram med stiplet linje](media/end-user-analyze-visuals/power-bi-scatter.png)
 
-Bemærk, at de datapunkter, som var tomme i en af perioderne, ikke vises i punktdiagrammet.
+Datapunkter, som var tomme i en af perioderne, vises ikke i punktdiagrammet.
 
 ### <a name="the-100-stacked-column-chart"></a>100 % stablet søjlediagram
 
-I visualet, der består af et 100 % stablet søjlediagram, viser bidragets værdi i totalen (100%) for det valgte datapunkt og det forrige. Det gør det nemt at sammenligne bidraget for de enkelte datapunkter. I dette eksempel viser værktøjstippene viser det faktiske bidrag for den valgte værdi for Texas. Da listen over stater er lang, kan du bruge værktøjstip til at få vist detaljerne. Når du bruger værktøjstippene, kan du se, at Texas bidrog med ca. den samme procent i forhold til det samlede antal enheder (31 % og 32 %), men det faktiske antal samlede enheder er faldet fra 89 til 71. Husk, at Y-aksen er en procentdel, ikke en total, og hvert enkelt kolonnefelt er en procentdel, ikke en værdi. 
+![Lille skærmbillede med ikonet Søjlediagram valgt](media/end-user-analyze-visuals/power-bi-column-icon.png)
+
+I visualet, der består af et 100 % stablet søjlediagram, viser bidragets værdi i totalen (100%) for det valgte datapunkt og det forrige. Det gør det nemt at sammenligne bidraget for de enkelte datapunkter. I dette eksempel viser værktøjstippene viser det faktiske bidrag for den valgte værdi for Texas. Da listen over stater er lang, kan du bruge værktøjstip til at få vist detaljerne. Når du bruger værktøjstippene, kan du se, at Texas bidrog med ca. den samme procent i forhold til det samlede antal enheder (31 % og 32 %), men det faktiske antal samlede enheder er faldet fra 89 til 71. Husk, at Y-aksen er en procentdel, ikke en total, og at hvert enkelt kolonnefelt er en procentdel, ikke en værdi. 
 
 ![100 % stablet søjlediagram](media/end-user-analyze-visuals/power-bi-stacked.png)
 
 ### <a name="the-ribbon-chart"></a>Bånddiagrammet
 
-I det visual, der består af et bånddiagrammet kan du se værdien af målingen før og efter. Det er især praktisk til at vise ændringer i bidragene, når *rækkefølgen* af bidragyderne er blevet ændret (f.eks. hvis *LA* er faldet fra den næststørste bidragyder til nummer elleve.  Selvom *TX* repræsenteres af et bredt bånd øverst, hvilket betyder, at det er den største bidragyder før og efter, viser faldet, at værdien af bidraget faldt både i den valgte periode og efter.
+![Lille skærmbillede, der viser ikonet Bånddiagram](media/end-user-analyze-visuals/power-bi-ribbon-icon.png)
+
+I det visual, der består af et bånddiagrammet kan du se værdien af målingen før og efter. Det er især praktisk til at vise ændringer i bidragene, når *rækkefølgen* af bidragyderne er blevet ændret (f.eks. hvis *LA* er faldet fra den næststørste bidragyder til nummer elleve).  Selvom *TX* repræsenteres af et bredt bånd øverst, hvilket betyder, at det er den største bidragyder før og efter, viser faldet, at værdien af bidraget faldt både i den valgte periode og efter.
 
 ![bånddiagram](media/end-user-analyze-visuals/power-bi-ribbon-tooltip.png)
 
 ### <a name="the-waterfall-chart"></a>Vandfaldsdiagram
+
+![Lille skærmbillede, der viser ikonet Vandfaldsdiagram](media/end-user-analyze-visuals/power-bi-waterfall-icon.png)
 
 Det fjerde visual er et vandfaldsdiagram, som viser de faktiske stigninger eller fald mellem perioderne. I visual'et vises én stor bidragyder til faldet i juni 2014 – i dette tilfælde **State**. Og detaljerne om **State**s indflydelse på det samlede antal enheder viser, at fald i Louisiana, Texas og Colorado spiller den største rolle.      
 
@@ -120,6 +128,6 @@ Følgende liste er en samling af de scenarier, der ikke understøttes i øjeblik
 
 ## <a name="next-steps"></a>Næste trin
 [Vandfaldsdiagrammer](../visuals/power-bi-visualization-waterfall-charts.md)    
-[Punktdiagrammer](../visuals/power-bi-visualization-scatter.md)
-[Søjlediagrammer](../visuals/power-bi-report-visualizations.md)
+[Punktdiagrammer](../visuals/power-bi-visualization-scatter.md)    
+[Søjlediagrammer](../visuals/power-bi-report-visualizations.md)    
 [Bånddiagrammer](../visuals/desktop-ribbon-charts.md)

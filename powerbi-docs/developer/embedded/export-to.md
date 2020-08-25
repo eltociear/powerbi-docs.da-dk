@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 07/13/2020
-ms.openlocfilehash: fd30b9df6fce484bffab430888260145bb374ce9
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: 8e3ca6d9615a348fec928f13a561fbb97e719d6a
+ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091566"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88160366"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Eksportér Power BI-rapport til fil (prøveversion)
 
@@ -103,8 +103,7 @@ Et job, der overskrider sit antal af samtidige anmodninger, afsluttes ikke. Hvis
 * I forbindelse med en offentlig prøveversion er antallet af Power BI-rapportsider, der kan eksporteres pr. time, begrænset til 50 pr. kapacitet.
 * Eksporterede rapporter må ikke overstige en filstørrelse på 250 MB.
 * Følsomhedsmærkater understøttes ikke, når du eksporterer til PNG.
-* En rapport med et følsomhedsmærkat kan ikke eksporteres til en PDF- eller PPTX-fil ved hjælp af en [tjenesteprincipal](embed-service-principal.md).
-* Det antal sider, der kan inkluderes i en eksporteret rapport, er 30. Hvis rapporten indeholder flere sider, returnerer API'en en fejl, og eksportjobbet annulleres.
+* Det antal sider, der kan inkluderes i en eksporteret rapport, er 50. Hvis rapporten indeholder flere sider, returnerer API'en en fejl, og eksportjobbet annulleres.
 * [Personlige bogmærker](../../consumer/end-user-bookmarks.md#personal-bookmarks) og [vedvarende filtre](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) understøttes ikke.
 * De Power BI-visualiseringer, der er angivet nedenfor, understøttes ikke. Når der eksporteres en rapport, som indeholder disse visualiseringer, bliver de dele af rapporten, der indeholder disse visualiseringer, ikke gengivet, og der vises et fejlsymbol.
     * Ikke-certificerede Power BI-visualiseringer

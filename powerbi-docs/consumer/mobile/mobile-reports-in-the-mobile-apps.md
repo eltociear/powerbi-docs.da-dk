@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/11/2020
+ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: 5ca205bf2e82269140926ac69ccdead43b0cddd8
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: f53fb518df3c82f4570c81b7caa14c20eea8022c
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091635"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204964"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -53,6 +53,9 @@ Hvis du vil hente en rapport fra et dashboard, skal du trykke på **Flere indsti
   
   Det er ikke alle felter, der kan åbnes som rapporter. De felter, der oprettes ved at stille spørgsmål i feltet Spørgsmål og svar, kan for eksempel ikke åbnes i en rapport, når du trykker på dem.
   
+## <a name="zoom-in-on-your-data"></a>Zoom ind på dine data   
+Brug knibebevægelsen til at zoome ind på dine rapporter, så du kan undersøge dem nærmere. Spred fingrene for at zoome tilbage igen. "Knib for at zoome" understøttes på Android- og iOS-telefoner og -tablets.
+
 ## <a name="interact-with-reports"></a>Interager med rapporter
 Når du har åbnet en rapport i appen, kan du begynde at arbejde med den. Du kan gøre mange ting med rapporten og dens data. I rapportfoden kan du finde de handlinger, der kan udføres i rapporten. Når du trykker på og trykker længe på de data, der vises i rapporten, kan du også opdele dataene.
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 1213d02926db3b1d356e7fefffb44bcc41b8ab96
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 829de249b71076ccd1ed2a60348170e93b68e507
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227683"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204442"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurer arbejdsbelastninger i en Premium-kapacitet
 
@@ -59,8 +59,10 @@ Arbejdsbelastningen for datasæt er som standard aktiveret og kan ikke deaktiver
 | **Maks. antal resulterende rækker** | Det maksimale antal rækker, der returneres i en DAX-forespørgsel. Standardværdien er -1 (ingen grænse), og det tilladte interval er mellem 100000 og 2147483647. |
 | **Grænse for forespørgselshukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse i arbejdsbelastningen, der kan bruges til at udføre en MDX- eller DAX-forespørgsel. Standardværdien er 0, hvilket medfører, at der anvendes en SKU-specifik, automatisk hukommelsesgrænse i forbindelse med forespørgsler. |
 | **Timeout for forespørgsel (sekunder)** | Det maksimale tidsrum, før en forespørgsel udløber. Standarden er 3600 sekunder (1 time). Værdien 0 angiver, at der ikke opstår timeout for forespørgsler. |
-| **Automatisk sideopdatering (prøveversion)** | Til/fra-knap for at tillade Premium-arbejdsområder at have rapporter med automatisk sideopdatering. |
+| **Automatisk sideopdatering** | Til/fra-knap, der gør det muligt for Premium-arbejdsområder at have rapporter med automatisk sideopdatering på grundlag af faste intervaller. |
 | **Minimumsinterval for opdatering** | Hvis automatisk sideopdatering er slået til, er der angivet et minimumsinterval for sideopdatering. Standardværdien er fem minutter, og den mindste tilladte værdi er ét sekund. |
+| **Målingen Ændre registrering** | Til/fra-knap, der gør det muligt for Premium-arbejdsområder at have rapporter med automatisk sideopdatering på grundlag af registrering af ændringer. |
+| **Minimuminterval for udførelse** | Hvis målingen Ændre registrering er slået til, ændres det tilladte minimuminterval for forespørgsel om dataændringer. Standardværdien er fem sekunder, og den tilladte minimumværdi er ét sekund. |
 |  |  |  |
 
 #### <a name="max-intermediate-row-set-count"></a>Maks. antal mellemliggende rækker

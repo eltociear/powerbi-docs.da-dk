@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/01/2020
 ms.author: mohaali
-ms.openlocfilehash: 295fc7732729fc464676257ab63dcadfa967771b
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: de16ddbbaca69aea5283c7ab61c462493a6da1d0
+ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939654"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88578099"
 ---
 # <a name="intro-to-power-bi-qa"></a>Introduktion til Spørgsmål og svar i Power BI
 
@@ -43,22 +43,20 @@ I takt med at du skriver dit spørgsmål, kan Spørgsmål og svar i Power BI vis
 
 ![Fuldførelse af en sætning i Spørgsmål og svar](media/qna-suggestion-phrase-completion.png)
 
-### <a name="redblue-underlines"></a>Rød/blå understregning
+### <a name="redblueorange-underlines"></a>Rød/blå/orange understregning
 
 I Spørgsmål og svar vises ord med understregninger for at hjælpe dig med at se, hvilke ord systemet har forstået eller ikke genkendt. En hel blå understregning angiver, at systemet har matchet ordet med et felt eller en værdi i datamodellen. I eksemplet nedenfor kan du se, at ordet *EU-salg* blev genkendt i Spørgsmål og svar.
 
 ![Blå understregning i Spørgsmål og svar](media/qna-blue-underline.png)
 
-Når du skriver et ord i Spørgsmål og svar, er det ofte markeret med en rød understregning. En rød understregning kan indikere et af to potentielle problemer. Den første problemtype er kategoriseret som *lav tillid*. Hvis du skriver et vagt eller flertydigt ord, understreges feltet med rødt. Et eksempel kunne være ordet "Salg". Flere felter kan indeholde ordet "Salg", så systemet bruger en rød understregning for at bede dig om at vælge det felt, du mener. Et andet eksempel på lav tillid kan være, hvis du skriver ordet "område", men den kolonne, der matches, er "region". Spørgsmål og svar i Power BI genkender ord, der betyder det samme, takket være integrationen med Bing og Office. Ordet understreges med rødt i Spørgsmål og svar, så du ved, at det ikke er et direkte match.
+ En orange understregning angiver, at ordet/ordene er kategoriseret som *lav tillid*. Hvis du skriver et vagt eller flertydigt ord, understreges feltet med orange. Et eksempel kunne være ordet "Salg". Flere felter kan indeholde ordet "Salg", så systemet bruger en orange understregning for at bede dig om at vælge det felt, du mener. Et andet eksempel på lav tillid kan være, hvis du skriver ordet "område", men den kolonne, der matches, er "region". Spørgsmål og svar til Power BI genkender ord, der har samme betydning, takket være integrationen med Bing og Office, og det kan også fortolke navne fra en rapport som mulige forslag. Ordet understreges med orange i Spørgsmål og svar, så du ved, at det ikke er et direkte match.
 
-![Rød understregning af Salg i Spørgsmål og svar](media/qna-red-underline-sales.png)
-
-Den anden problemtype er, når ordet overhovedet ikke genkendes i Spørgsmål og svar. Du kan støde på dette problem, når du bruger et domænespecifikt begreb, der ikke er nævnt nogen steder i dataene, eller datafelterne er navngivet forkert. Et eksempel kan være brugen af ordet "omkostninger", selvom det ikke findes nogen steder i dataene. Ordet findes i den danske ordbog, men det markeres med en rød understregning i Spørgsmål og svar.
+En rød understregning betyder, at Spørgsmål og svar overhovedet ikke kunne genkende ordet. Du kan støde på dette problem, når du bruger et domænespecifikt begreb, der ikke er nævnt nogen steder i dataene, eller datafelterne er navngivet forkert. Et eksempel kan være brugen af ordet "omkostninger", selvom ordet ikke findes nogen steder i dataene. Ordet findes i den danske ordbog, men Spørgsmål og svar markerer dette ord med en rød understregning for at angive, at ordet ikke blev fundet i dataene.
 
 ![Rød understregning af Salg i Spørgsmål og svar](media/qna-red-underline-costs.png)
 
 > [!NOTE]
-> Du kan tilpasse farverne blå/rød understregning i ruden **Visuel formatering** i Spørgsmål og svar. Artiklen om [værktøjer til Spørgsmål og svar](q-and-a-tooling-teach-q-and-a.md) indeholder også en forklaring af, hvordan du *oplærer Spørgsmål og svar*, hvor du definerer begreber, som ikke blev genkendt i Spørgsmål og svar.
+> Du kan tilpasse de blå/røde/orange understregningsfarver i ruden **Visuel formatering** i Spørgsmål og svar. Artiklen om [værktøjer til Spørgsmål og svar](q-and-a-tooling-teach-q-and-a.md) indeholder også en forklaring af, hvordan du *oplærer Spørgsmål og svar*, hvor du definerer begreber, som ikke blev genkendt i Spørgsmål og svar.
 
 ### <a name="visualization-results"></a>Resultater af visualisering
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/15/2019
-ms.openlocfilehash: d82f09fa4c545129bbd1032041dcfab6f4f67901
-ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
+ms.openlocfilehash: ebb0107b158e505a8095b4c8f6b6b32731e7e98d
+ms.sourcegitcommit: 642b0c04d3ff3aa4d5422ca5054a5a158fb01b22
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84739339"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88512925"
 ---
 # <a name="tutorial-developing-a-power-bi-visual"></a>Selvstudium: Udvikling af en Power BI-visualisering
 
@@ -130,7 +130,7 @@ Nu skal du installere pakken **pbiviz**.
 4. Luk alle åbne browsere.
 
 > [!NOTE]
-> Hvis certifikatet ikke genkendes, skal du muligvis genstarte computeren.
+> Hvis certifikatet ikke genkendes, skal du muligvis genstarte computeren. Nogle browsere, f.eks. Firefox, kræver, at du har tillid til det selvsignerede certifikat. Det kan du gøre ved at gå til webpakkens serverside (https://localhost:8080/webpack-dev-server) ) og acceptere risikoen.
 
 ## <a name="creating-a-custom-visual"></a>Opret en brugerdefineret visual
 
@@ -256,7 +256,7 @@ I dette afsnit tester vi den brugerdefinerede visual CircleCard ved at overføre
 
 6. Bemærk, at en visualisering er føjet til rapportcanvasset.
 
-    ![Ny visual](media/custom-visual-develop-tutorial/new-visual-in-report.png)
+    ![Ny visualisering](media/custom-visual-develop-tutorial/new-visual-in-report.png)
 
     > [!Note]
     > Dette er en meget simpel visual, der viser det antal gange, opdateringsmetoden er blevet kaldt. I denne fase henter visualen ingen data.

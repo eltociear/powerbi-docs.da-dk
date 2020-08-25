@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 07/16/2019
-ms.openlocfilehash: 1602743230f1a369fe3da48fa37a313b9d9bbea4
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.date: 08/12/2020
+ms.openlocfilehash: c9d6b10c05ac3e19c5ebdcb5a0f3a1ab9b989a10
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435875"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204951"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Retningslinjer for Power BI-visualiseringer
 Før du [publicerer](office-store.md) din Power BI-visualisering i Microsoft AppSource, så andre kan finde og bruge den, skal du sørge for at følge retningslinjerne for at skabe en fantastisk oplevelse for dine brugere.
@@ -59,6 +59,9 @@ Genvejsmenuen er den menu, du kommer til ved at højreklikke, som vises, når br
 Genvejsmenuen bør være aktiveret i alle Power BI-visualiseringer for at sikre en ensartet oplevelse.
 Læs [denne artikel](https://github.com/Microsoft/PowerBI-visuals/blob/gh-pages/tutorials/building-bar-chart/adding-context-menu-to-the-bar.md) for at få mere at vide om, hvordan du tilføjer en genvejsmenu.
 
+>[!div class="mx-imgBorder"]
+>![Et skærmbillede af genvejsmenuen i en Power BI-visualisering.](media/guidelines-powerbi-visuals/context-menu.png)
+
 ## <a name="commercial-logo"></a>Kommercielt logo
 I dette afsnit beskrives specifikationerne for tilføjelse af kommercielle logoer i Power BI-visualiseringer. Kommercielle logoer er ikke obligatoriske. Hvis de tilføjes, skal de følge disse retningslinjer.
 
@@ -74,15 +77,15 @@ I dette afsnit beskrives specifikationerne for tilføjelse af kommercielle logoe
 Der er tre typer kommercielle logoer:
 * **Logo** – et logo består af to elementer, et ikon og et navn, der er låst sammen.
 
-    ![Microsoft-logo](media/guidelines-powerbi-visuals/microsoft-logo.png)
+    ![Et skærmbillede af Microsoft-logoet.](media/guidelines-powerbi-visuals/microsoft-logo.png)
 
 * **Symbol** – et grafikobjekt uden tekst.
 
-    ![Microsoft-symbol](media/guidelines-powerbi-visuals/microsoft-symbol.png)
+    ![Et skærmbillede af Microsoft-symbolet.](media/guidelines-powerbi-visuals/microsoft-symbol.png)
 
 * **Logotype** – et logo uden et ikon, som kun består af tekst.
 
-    ![Microsoft-symbol](media/guidelines-powerbi-visuals/microsoft-logotype.png)
+    ![Et skærmbillede af Microsoft-logoet uden et ikon.](media/guidelines-powerbi-visuals/microsoft-logotype.png)
 
 ### <a name="commercial-logo-color"></a>Farve på kommercielt logo
 
@@ -90,15 +93,15 @@ Når du bruger et kommercielt logo, skal logoet være gråt (hex-farve #C8C8C8).
 
 * **Logo**
 
-    ![Microsoft-symbol](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)
+    ![Et skærmbillede af Microsoft-logoet i farven grå.](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)
 
 * **Symbol** – et grafikobjekt uden tekst.
 
-    ![Microsoft-symbol](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)
+    ![Et skærmbillede af Microsoft-symbolet i farven grå.](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)
 
 * **Logotype** – et logo uden et ikon, som kun består af tekst.
 
-    ![Microsoft-symbol](media/guidelines-powerbi-visuals/grey-microsoft-logotype.png)
+    ![Et skærmbillede af Microsoft-logoet uden et ikon i farven grå.](media/guidelines-powerbi-visuals/grey-microsoft-logotype.png)
 
 > [!TIP]
 > * Hvis din Power BI-visualisering indeholder grafik, kan det være en god idé at føje en hvid baggrund (med 10 px margener) til dit logo.
@@ -110,13 +113,13 @@ En Power BI-visualisering kræver to kommercielle logoer, ét til store felter o
 
 I følgende tabel beskrives størrelsesovervejelserne for Power BI-visualiseringer.
 
-|  |Lille Power BI-visualisering  |Stor Power BI-visualisering  |
+|Indstillinger  |Lille Power BI-visualisering  |Stor Power BI-visualisering  |
 |---------|---------|---------|
 |*Logobredde*    |Op til 240 px         |Større end 240 px         |
 |*Logohøjde*     |Op til 160 px         |Større end 160 px         |
 |*Størrelse på afgrænsningsramme*     |40 x 15 px         |101 x 30 px         |
-|*Eksempel på kommercielt logo*     |![Microsoft-symbol](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)         |![Microsoft-logo](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)         |
-|*Eksempel på afgrænsningsramme*    |![eksempel på lille logo](media/guidelines-powerbi-visuals/small-logo-box.png)         |![eksempel på stort logo](media/guidelines-powerbi-visuals/big-logo-box.png)         |
+|*Eksempel på kommercielt logo*     |![Et skærmbillede af den lille version af Microsoft Commercial-logoet.](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)         |![Et skærmbillede af Microsoft Commercial-logoet.](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)         |
+|*Eksempel på afgrænsningsramme*    |![Et skærmbillede af dimensionerne i et lille logo.](media/guidelines-powerbi-visuals/small-logo-box.png)         |![Et skærmbillede af dimensionerne i et stort logo.](media/guidelines-powerbi-visuals/big-logo-box.png)         |
 |    |         |         |
 
 ### <a name="commercial-logo-behavior"></a>Funktionsmåde for kommercielt logo
@@ -140,11 +143,11 @@ Kommercielle logoer er kun tilladt i redigeringstilstand. Når der klikkes på e
 
 * Undgå et farverigt eller sort kommercielt logo. Det kommercielle logo skal være gråt (hex-farve #C8C8C8).
 
-    ![Uautoriseret farverigt logo](media/guidelines-powerbi-visuals/no-color-logo.png) ![Uautoriseret sort logo](media/guidelines-powerbi-visuals/black-logo.png)
+    ![Et skærmbillede af et uautoriseret farverigt Microsoft-logo.](media/guidelines-powerbi-visuals/no-color-logo.png) ![Et skærmbillede af et uautoriseret sort Microsoft-logo](media/guidelines-powerbi-visuals/black-logo.png)
 
 * Et kommercielt logo med effekter som f.eks. gradueringer eller stærke skygger.
 
-    ![Uautoriseret logotype](media/guidelines-powerbi-visuals/no-style-logo.png)
+    ![Et skærmbillede af et eksempel på et uautoriseret logo i Microsoft-stil.](media/guidelines-powerbi-visuals/no-style-logo.png)
 
 ## <a name="best-practices"></a>Bedste praksis
 
@@ -158,10 +161,13 @@ Brug landingssiden til at tydeliggøre over for brugerne, hvordan de kan bruge d
 
 Af hensyn til brugerne skal du tilføje en licensnøgle eller tokenrelaterede felter øverst i formateringsruden.
 
-## <a name="faq"></a>OFTE STILLEDE SPØRGSMÅL OM
+## <a name="faq"></a>Ofte stillede spørgsmål
 
 Du kan finde flere oplysninger om Power BI-visualiseringer under [Ofte stillede spørgsmål om Power BI-visualiseringer med yderligere køb](power-bi-custom-visuals-faq.md#visuals-with-additional-purchases).
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 
-Få mere at vide om, hvordan du kan publicere din brugerdefinerede Power BI-visualisering i [Microsoft AppSource](office-store.md), så andre kan finde og bruge den.
+Få mere at vide om, hvordan du kan publicere din brugerdefinerede Power BI-visualisering i Microsoft AppSource, så andre kan finde og bruge den.
+
+>[!div class="nextstepaction"]
+>[Publicer Power BI-visuals](office-store.md)

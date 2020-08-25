@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/11/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b1204b28ae5239bf4080472129b0862862446e5d
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: 389de5d34b00afbe70a1489dfc61e760530590a9
+ms.sourcegitcommit: 642b0c04d3ff3aa4d5422ca5054a5a158fb01b22
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878464"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88512879"
 ---
 # <a name="using-enhanced-dataset-metadata-preview"></a>Brug af forbedrede metadata for datasæt (prøveversion)
 
@@ -40,11 +40,11 @@ Du bliver spurgt, om du vil genstarte Power BI Desktop.
 Når prøveversionsfunktionen er aktiveret, forsøger Power BI Desktop at opgradere PBIX- og PBIT-filer, der bruger det tidligere metadataformat. 
 
 > [!IMPORTANT]
-> Aktivering af funktionen **Forbedrede metadata for datasæt** medfører en uigenkaldelig opgradering af rapporter. Alle Power BI rapporter, der er indlæst eller oprettet med Power BI Desktop, konverteres uigenkaldeligt til det udvidede format for metadata for datasæt, når **Forbedrede metadata for datasæt** er aktiveret.
+> Aktivering af funktionen **Forbedrede metadata for datasæt** medfører en uigenkaldelig opgradering af rapporter. Alle Power BI-rapporter, der er indlæst eller oprettet med Power BI Desktop, konverteres uigenkaldeligt til det udvidede format for metadata for datasæt, når **Forbedrede metadata for datasæt** er aktiveret.
 
 ## <a name="report-backup-files"></a>Rapportsikkerhedskopifiler
 
-Opdatering af en rapport til brug af funktionen **udvidede metadata for et datasæt** kan ikke fortrydes. Der oprettes dog en sikkerhedskopifil til rapporter I forbindelse med opdateringen, så du kan gemme en version af rapporten i det oprindelige format (før opdatering). Sikkerhedskopifilen slettes efter 30 dage. 
+Opdatering af en rapport til brug af funktionen **udvidede metadata for et datasæt** kan ikke fortrydes. Der oprettes dog en sikkerhedskopifil til rapporter i forbindelse med opdateringen, så du kan gemme en version af rapporten i det oprindelige format (før opdatering). Sikkerhedskopifilen slettes efter 30 dage. 
 
 Benyt følgende fremgangsmåde for at finde filen til sikkerhedskopirapporten:
 

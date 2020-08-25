@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 4928d194367c1bb2f38fb520722dd040e8ee1a3f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3df3e29d2f6517fec68bf185bf71d9f4f3c5618a
+ms.sourcegitcommit: 642b0c04d3ff3aa4d5422ca5054a5a158fb01b22
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83296704"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88512856"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Modelrelationer i Power BI Desktop
 
@@ -42,7 +42,7 @@ En forespørgsel – muligvis genereret af en Power BI-kortvisualisering – anm
 
 Det er usædvanligt, at en modeltabel ikke er relateret til en anden modeltabel. En sådan tabel i et gyldigt modeldesign kan beskrives som en _afbrudt tabel_. En afbrudt tabel er ikke beregnet til at overføre filtre til andre modeltabeller. I stedet bruges den til at modtage "brugerinput" (muligvis med et visuelt udsnit), som gør det muligt for modelberegninger at bruge inputværdien på en meningsfuld måde. Du kan f.eks. overveje en afbrudt tabel, der indlæses med et interval af valutakursværdier. Så længe et filter er anvendt for at filtrere efter en enkelt værdi, kan værdien bruges af et målingsudtryk til at konvertere salgsværdier.
 
-Power BI Desktop What if-parametre er en funktion, som opretter en afbrudt tabel. Du kan finde flere oplysninger i artiklen [Opret og brug What if-parametre til at visualisere variabler i Power BI Desktop](desktop-what-if.md).
+Power BI Desktop-parameteren What-if er en funktion, der opretter en tabel uden forbindelse. Du kan finde flere oplysninger i artiklen [Opret og brug What if-parametre til at visualisere variabler i Power BI Desktop](desktop-what-if.md).
 
 ## <a name="relationship-properties"></a>Relationsegenskaber
 

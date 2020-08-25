@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/21/2020
+ms.date: 08/12/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 0fdee37f682774e1dac2b1ac6a4fc7a6e8dabe91
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8dd6e64943ea05f2219efa471cd3fcfa4152650b
+ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238100"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88160471"
 ---
 # <a name="let-users-personalize-visuals-in-a-report"></a>Lad brugerne tilpasse visualiseringer i en rapport
 
@@ -41,6 +41,59 @@ Denne funktion muliggør ikke kun nye udforskningsegenskaber. Den omfatter også
 - Nulstil alle deres ændringer af en rapport
 - Nulstil alle deres ændringer af en visualisering
 - Ryd deres seneste ændringer
+
+## <a name="use-perspectives-for-a-more-focused-view"></a>Brug perspektiver for at få en mere fokuseret visning
+
+Hvis du vil tilpasse visualiseringer, kan du bruge **perspektiver** til at vælge et undersæt af en model, hvilket giver en mere fokuseret visning. Det kan være nyttigt at vælge et undersæt, når du arbejder med en stor datamodel, så du kan fokusere på et undersæt af feltet, der kan administreres, og ikke overvælde læserne af rapporten med hele samlingen af felter i den store model. 
+
+![Tilpas visualiseringer](media/power-bi-personalize-visuals/power-bi-personalize-perspective-01.png)
+
+Vær opmærksom på følgende, når du arbejder med perspektiver:
+
+* Perspektiver er ikke beregnet til at blive brugt som en sikkerhedsmekanisme. Det er værktøjer, du kan bruge til at give slutbrugeren en bedre oplevelse. Al sikkerhed for et perspektiv nedarves fra den underliggende model.
+
+* Perspektiver i både tabellariske og flerdimensionelle modeller understøttes. Men for perspektiver i flerdimensionelle modeller kan du kun indstille perspektivet til at være den samme som udgangskuben for rapporten.
+
+* Før du sletter et perspektiv fra en model, skal du huske at kontrollere, at perspektivet ikke bruges i oplevelsen Tilpas visualiseringer. 
+
+Hvis du vil bruge perspektiver, skal du aktivere Tilpas visualiseringer for rapporten. Du skal også oprette mindst ét perspektiv, der indeholder de dimensioner og målinger, du ønsker, at slutbrugerne skal interagere med i forbindelse med oplevelsen Tilpas visualiseringer.
+
+Hvis du vil oprette perspektivet, skal du bruge [Tabular Editor](https://tabulareditor.com/), som du kan downloade fra følgende placering: Download af Tabular Editor
+
+Når du har installeret **Tabular Editor**, skal du åbne din rapport i **Power BI Desktop** og starte **Tabular Editor** under fanen **Eksterne værktøjer** på båndet som vist på følgende billede.
+
+![Tabular Editor på båndet Eksterne værktøjer](media/power-bi-personalize-visuals/power-bi-personalize-perspective-02.png)
+
+I Tabular Editor skal du højreklikke på mappen **Perspektiver** for at oprette et nyt perspektiv.
+
+![Opret en ny mappe af typen Perspektiv i Tabular Editor](media/power-bi-personalize-visuals/power-bi-personalize-perspective-03.png)
+
+Du kan dobbeltklikke på teksten for at omdøbe perspektivet.
+
+![Omdøb perspektivet](media/power-bi-personalize-visuals/power-bi-personalize-perspective-04.png)
+
+Derefter skal du føje felter til perspektivet ved at åbne mappen **Tabeller** i Tabular Editor og højreklikke på de felter, du vil have vist i perspektivet.
+
+![Føj felter til et perspektiv](media/power-bi-personalize-visuals/power-bi-personalize-perspective-05.png)
+
+Gentag processen for hvert af de felter, du vil føje til perspektivet. Du kan ikke tilføje duplikerede felter i et perspektiv, så muligheden for at tilføje felter er deaktiveret for de felter, du allerede har føjet til et perspektiv.
+
+Når du har tilføjet alle de ønskede felter, skal du sørge for at gemme dine indstillinger både i Tabular Editor og derefter også i Power BI Desktop.
+
+![Gem indstillinger for perspektiver i Tabular Editor og Power BI Desktop](media/power-bi-personalize-visuals/power-bi-personalize-perspective-06.png)
+
+Når du har gemt det nye perspektiv i modellen, og du har gemt Power BI Desktop-rapporten, skal du navigere til ruden **Formatér** for siden, hvor du kan se en ny sektion for **Tilpas visualisering**.
+
+![Sektionen Tilpas visualisering i ruden Formatér](media/power-bi-personalize-visuals/power-bi-personalize-perspective-07.png)
+
+Indstillingen for *Rapport-læser-perspektiv* er som udgangspunkt angivet til *Standardfelter*. Når du vælger rullelistepilen, kan du se de andre perspektiver, du har oprettet.
+
+![Vælg rullelistepilen for at se dine andre perspektiver](media/power-bi-personalize-visuals/power-bi-personalize-perspective-08.png)
+
+Når du har angivet perspektivet for rapportsiden, filtreres oplevelsen Tilpas visualiseringer for den pågældende side til det valgte perspektiv. Hvis du vælger **Anvend på alle sider**, kan du anvende indstillingen for Perspektiv på alle eksisterende sider i rapporten.
+
+![Vælg Anvend på alle sider for perspektivet for at anvende det på hele rapporten](media/power-bi-personalize-visuals/power-bi-personalize-perspective-09.png)
+
 
 ## <a name="turn-on-the-preview-feature"></a>Aktivér prøveversionsfunktionen
 
