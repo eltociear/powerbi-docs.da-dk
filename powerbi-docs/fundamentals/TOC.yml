@@ -15,6 +15,8 @@
           href: service-service-vs-desktop.md
     - name: Selvstudier
       items:
+        - name: Kom i gang med Power BI Desktop
+          href: desktop-getting-started.md
         - name: Kom i gang med Power BI-tjenesten
           href: service-get-started.md
     - name: Koncepter
@@ -41,8 +43,6 @@
       items:
         - name: Hent Power BI Desktop
           href: desktop-get-the-desktop.md
-        - name: Kom i gang med Power BI Desktop
-          href: desktop-getting-started.md
     - name: Reference
       items:
         - name: Understøttede sprog og lande/områder
