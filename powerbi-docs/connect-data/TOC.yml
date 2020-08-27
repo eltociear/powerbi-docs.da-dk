@@ -28,8 +28,6 @@
           href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
         - name: Opret forbindelse til et eksempel på en GitHub
           href: service-tutorial-connect-to-github.md
-        - name: Brug Analysér i Excel
-          href: ../collaborate-share/service-tutorial-analyze-in-excel.md
         - name: Brug Cognitive Services
           href: service-tutorial-use-cognitive-services.md
         - name: Integration af Machine Learning
