@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/20/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f42ee7a0b3b1aaf562e3ab087ad9c07501707afc
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: f7130b1565c85d8e18188c89c22dda3eda193018
+ms.sourcegitcommit: 0f807d3c74e5202b6e6a95fad49f2787928b9613
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878383"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88702622"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Ofte stillede spørgsmål om Power BI til Germany Cloud-kunder
 **Power BI-tjenesten** har en version, der er tilgængelig for EU/EFTA-kunder, ofte kaldet Microsoft Cloud Deutschland (MCD). Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til EU/EFTA-kunder og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten** eller Power BI-tjenester, der leveres til regeringskunder.
@@ -53,6 +53,8 @@ Følgende spørgsmål og svar giver vigtige oplysninger om Power BI Pro-tjeneste
    * Udgiv på internettet
    * ArcGIS maps af Esri
    * Power BI Embedded (særskilt forbrugsbaseret ISV-licensering bliver tilgængeligt gennem [Microsoft Azure Germany](https://azure.microsoft.com/overview/clouds/germany/) i fremtiden)
+   * Logføring af aktivitet
+
 7. **Hvor kan jeg finde Power BI-tjenesten for Germany Cloud-specifikke konfigurationsoplysninger for brug og integration i mine programmer?**
    
    Vi har opdateret vores [eksempler på SaaS-integration til udviklere](https://github.com/Microsoft/PowerBI-Developer-Samples) med Germany og andre specifikke konfigurationsoplysninger tilknyttet Power BI Clouds. Se mappen **Cloud Configs** for at få eksempler på cloudspecifikke konfigurationsslutpunkter. Den følgende tabel viser en oversigt over forskellige konfigurationsslutpunkter for Power BI-tjenesten for Germany Cloud (og Public Cloud for krydsreference).

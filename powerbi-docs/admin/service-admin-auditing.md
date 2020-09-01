@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/11/2020
+ms.date: 08/20/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: e8e81c297841e32d1f4d966de23b5d752b654c20
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: 7b5a96f4b592789c04ebaca5418e470d546ff788
+ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091612"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88802968"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spor brugeraktiviteter i Power BI
 
@@ -32,6 +32,10 @@ Det kan være vigtigt at vide, hvem der udfører en bestemt handling på et elem
 
 
 ## <a name="use-the-activity-log"></a>Brug aktivitetsloggen
+
+> [!NOTE]
+> Logføring af aktivitet understøttes ikke til Microsoft Cloud Deutschland. Få mere at vide om tjenestebegrænsninger for Germany Cloud under [Ofte stillede spørgsmål om Power BI til Germany Cloud-kunder](service-govde-faq.md).
+
 
 Som administrator af Power BI-tjenesten kan du analysere forbruget for alle Power BI-ressourcer på lejerniveau ved hjælp af brugerdefinerede rapporter, der er baseret på Power BI-aktivitetsloggen. Du kan downloade aktiviteterne ved hjælp af en REST API eller PowerShell-cmdlet. Du kan også filtrere aktivitetsdataene efter datoområde, bruger og aktivitetstype.
 
@@ -73,6 +77,8 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 > Det kan tage op til 24 timer, før alle begivenheder vises, selvom alle data normalt er tilgængelige meget hurtigere.
 >
 >
+Du kan finde flere oplysninger om REST API til Power BI, herunder eksempler på, hvordan du får vist aktivitetshændelser for overvågning, under [Administrator – Få aktivitetshændelser](https://docs.microsoft.com/rest/api/power-bi/admin/getactivityevents) i referencedokumentationen til REST API til Power BI.
+
 ### <a name="get-powerbiactivityevent-cmdlet"></a>Cmdlet'en Get-PowerBIActivityEvent
 
 Download aktivitetshændelser ved hjælp af Power BI Management-cmdlet'er til PowerShell. Cmdlet'en**Get-PowerBIActivityEvent** håndterer automatisk fortsættelsestokenet for dig. Cmdlet'en **Get-PowerBIActivityEvent** bruger en parameter af typen StartDateTime og EndDateTime med de samme begrænsninger som REST API'en **ActivityEvents**. Det vil sige, at startdato og slutdato skal referere til den samme datoværdi, da du kun kan hente aktivitetsdataene for én dag ad gangen.
@@ -113,7 +119,7 @@ Du kan filtrere overvågningsdataene efter datointerval, bruger, dashboard, rapp
 
 Du skal opfylde disse krav for at få adgang til overvågningslogfiler:
 
-- Du skal enten være global administrator eller være tildelt rollen Overvågningslogge eller Skrivebeskyttede overvågningslogge i Exchange Online for at få adgang til overvågningsloggen. Disse roller er som standard tildelt rollegrupperne Administration af overholdelse og Organisationsstyring på siden **Tilladelser** i Exchange Administration.
+- Du skal enten være global administrator eller være tildelt rollen Overvågningslogge eller Skrivebeskyttede overvågningslogge i Exchange Online for at få adgang til overvågningsloggen. Disse roller er som standard tildelt rollegrupperne Administration af overholdelse og Organisationsstyring på siden **Tilladelser** i Exchange Administration. Du kan finde flere oplysninger om de roller, der kan få vist overvågningslogge, under [Krav til søgning i overvågningsloggen](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#requirements-to-search-the-audit-log).
 
     Hvis du vil give konti, der ikke er administratorer, adgang til overvågningslogfilerne, skal du tilføje brugeren som medlem af en af disse rollegrupper. Hvis du vil gøre det på en anden måde, kan du oprette en brugerdefineret rollegruppe i Exchange Administration, tildele rollen Overvågningslogge eller Skrivebeskyttede overvågningslogge til denne gruppe og derefter føje den konto, der ikke er administrator, til den nye rollegruppe. Du kan finde flere oplysninger under [Administrer rollegrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
 

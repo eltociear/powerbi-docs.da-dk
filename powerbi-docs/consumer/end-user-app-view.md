@@ -10,12 +10,12 @@ ms.date: 08/17/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Share your work
-ms.openlocfilehash: d7ad3722b609d76383a7a404ef94655ec9ef8711
-ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
+ms.openlocfilehash: e737d8747f7d6d9b69eda2035df06abdddd9569f
+ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88578038"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88803083"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installér og brug apps med dashboards og rapporter i Power BI
 
@@ -27,7 +27,7 @@ Nu hvor du har en [grundlæggende forståelse af apps](end-user-apps.md), skal v
 
 ## <a name="ways-to-get-a-new-app"></a>Måder at få en ny app på
 Der er flere måder at få en ny app på:
-* Du kan hente den på markedspladsen til Power BI-apps i Power BI.
+* Du kan hente den på markedspladsen til Power BI-apps i Power BI-tjenesten.
 * Du kan bruge et direkte link til en app, som du har modtaget fra appdesigneren. 
 * En appdesigner i organisationen kan installere appen automatisk på din Power BI-konto.
 
@@ -37,6 +37,8 @@ I Power BI-mobil kan du kun installere en app fra et direkte link. Hvis appdesig
 Det er ikke alle Power BI-brugere, der kan få vist og interagere med apps. 
 - Hvis du har en gratis licens, kan du åbne apps, der er gemt i en Premium-kapacitet, og som er delt med dig.  
 - Hvis du har en Pro-licens, kan du åbne apps, der er blevet delt med dig.
+
+Så hvis du ikke kan åbne apps, skal du kontakte din administrator eller helpdesk. Du kan finde oplysninger om licenser under [Licensering af Power BI](end-user-license.md).
 
 ## <a name="get-the-app-from-the-power-bi-apps-marketplace"></a>Hent appen på markedspladsen til Power BI-apps
 

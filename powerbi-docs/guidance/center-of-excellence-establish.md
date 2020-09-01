@@ -6,14 +6,14 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/02/2020
+ms.date: 08/19/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 9aab2afd9e3b4b86844c045ceb0346d57baa3e18
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: 477b6a1e29fc05da3004a2dcf8466ef969df4531
+ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939941"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88638606"
 ---
 # <a name="establish-a-center-of-excellence"></a>Etabler et Center of Excellence
 
@@ -45,10 +45,10 @@ Hos Microsoft kaldes COE'et for BI-platformen. Det har mange interessentgrupper,
 
 Delte egenskaber er nødvendige for at oprette og administrere BI-platformen. De understøtter alle de interessentgrupper, der finansierer platformen. De omfatter følgende teams:
 
-- **Den grundlæggende udvikling af platformen:** Vi udviklede BI-platformen med en teknisk indgangsvinkel. Der er egentlig tale om et sæt strukturer, der understøtter dataindtagelse, behandling for at forbedre dataene og levering af disse data i datamodeller til analyseforbrug. Teknikerne er ansvarlige for det tekniske design og implementering af BI-platformens kernefunktioner. De designer og implementerer f.eks. datapipelines.
+- **Den grundlæggende udvikling af platformen:** Vi udviklede BI-platformen med en teknisk indgangsvinkel. Det er i virkeligheden et sæt strukturer, der understøtter dataindtagelse, behandling for at forbedre dataene og levering af disse data i semantiske BI-modeller til analyseforbrug. Teknikerne er ansvarlige for det tekniske design og implementering af BI-platformens kernefunktioner. De designer og implementerer f.eks. datapipelines.
 - **Infrastruktur og hosting:** It-teknikere er ansvarlige for klargøring og administration af alle Azure-tjenester.
 - **Support og drift:** Dette team holder platformen kørende. Support varetager brugernes behov for f.eks. datatilladelser. Driftsteamet holder platformen kørende, så serviceaftalerne (SLA'er) er opfyldt, og der kan kommunikeres uden forsinkelser eller fejl.
-- **Udgivelsesadministration:** Tekniske programadministratorer udgiver ændringer. Ændringer kan være alt lige fra opdateringer af platformsstrukturen til ændringsanmodninger, der er foretaget for datamodeller. De er den sidste forsvarslinje, der skal sikre, at ændringer ikke ødelægger noget.
+- **Udgivelsesadministration:** Tekniske programadministratorer udgiver ændringer. Ændringer kan være alt lige fra opdateringer af platformsstrukturen til ændringsanmodninger, der foretages for semantiske BI-modeller. De er den sidste forsvarslinje, der skal sikre, at ændringer ikke ødelægger noget.
 
 ### <a name="dedicated-deliveries"></a>Dedikerede leveringer
 
@@ -60,13 +60,22 @@ Hos Microsoft drives vores BI-platform af skalerbare teams bestående af medarbe
 
 - **Programadministratorer:** Programadministratorer er en dedikeret ressource. De fungerer som den primære kontakt mellem BI-teams og interessenter. Det er deres job at oversætte interessenternes forretningskrav til en teknisk specifikation. De administrerer desuden prioriteringen af interessenternes leveringer.
 - **Databaseansvarlige:** De er en dedikeret ressource, der er ansvarlig for at onboarde nye datasæt i det centrale data warehouse. Onboarding af et datasæt kan omfatte konfiguration af kompatible dimensioner, tilføjelse af forretningslogik og brugerdefinerede attributter samt standardnavne og formatering.
-- **Analyseansvarlige:** De er en dedikeret ressource, der er ansvarlig for design og udvikling af datamodeller. De bestræber sig på at anvende en konsistent arkitektur ved hjælp af standardnavngivning og -formatering. Optimering af ydeevnen er en vigtig del af deres rolle.
+- **Analyseansvarlige:** De er en dedikeret ressource, der er ansvarlige for design og udvikling af semantiske BI-modeller. De bestræber sig på at anvende en konsistent arkitektur ved hjælp af standardnavngivning og -formatering. Optimering af ydeevnen er en vigtig del af deres rolle.
 - **Drift og infrastruktur:** De er en delt ressource, der er ansvarlig for administration af job og datapipelines. De er også ansvarlige for administration af Azure-abonnementer, Power BI-kapaciteter, virtuelle maskiner og datagateways.
-- **Support:** De er en delt ressource, der er ansvarlig for at skrive dokumentation, organisere uddannelse, kommunikere ændringer i datamodeller og besvare brugernes spørgsmål.
+- **Support:** De er en delt ressource, der er ansvarlige for at skrive dokumentation, organisere træning, kommunikere ændringer af semantiske BI-modeller og besvare brugernes spørgsmål.
 
 ## <a name="governance-and-compliance"></a>Styring og overholdelse af angivne standarder
 
 For hver interessentgruppe varetager programadministratorer styring og oversigt på tværs af programmerne. Det overordnede mål er at sikre, at investeringer i it-afdelingen genererer forretningsmæssig værdi og mindsker risici. Styringsudvalgsmøder afholdes jævnligt for at følge op på fremskridt og godkende vigtige initiativer.
+
+## <a name="grow-your-own-community"></a>Skab vækst i dit eget community
+
+Etabler et community, og skab vækst i det, i din organisation ved at gøre følgende:
+
+- Afhold regelmæssigt begivenheder af typen "Tid på kontoret", hvor der afsættes tid med BI-teamet, så folk kan stille spørgsmål, komme med forslag, dele idéer og tilmed afgive klager.
+- Opret en Teams-kanal for at yde support og opfordre alle til at stille og besvare spørgsmål.
+- Kør og fremhæv uformelle brugergrupper, og anspor medarbejderne til at præsentere eller deltage.
+- Kør mere formelle træningsbegivenheder for specifikke produkter og selve BI-platformen. Overvej at levere [Power BI-dashboard på en dag](https://powerbi.microsoft.com/diad/), der er tilgængelig som en gratis kursuspakke, hvilket er en fantastisk måde at introducere medarbejderne til Power BI på for første gang.
 
 ## <a name="next-steps"></a>Næste trin
 
@@ -75,3 +84,11 @@ Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 - [BI-løsningsarkitektur i COE'et](center-of-excellence-business-intelligence-solution-architecture.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)
+
+I den [næste artikel i denne serie](center-of-excellence-business-intelligence-solution-architecture.md) kan du finde flere oplysninger om BI-løsningsarkitekturen i COE og de forskellige udrullede teknologier.
+
+### <a name="professional-services"></a>Professionelle tjenester
+
+Der findes certificerede Power BI-partnere, som kan hjælpe din organisation med at lykkes, når du konfigurerer et COE. De kan give dig omkostningseffektiv træning eller overvågning af dine data. Hvis du vil i kontakt med en Power BI-partner, skal du gå til [Power BI-partnerportalen](https://powerbi.microsoft.com/partners/).
+
+Du kan også interagere med erfarne konsulentpartnere. De kan hjælpe dig med at [vurdere](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=assessment&country=ALL&region=ALL), [evaluere](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept&country=ALL&region=ALL) eller [implementere](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=implementation&country=ALL&region=ALL&page=1) Power BI.

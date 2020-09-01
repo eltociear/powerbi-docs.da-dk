@@ -10,12 +10,12 @@ ms.date: 06/02/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 3d50b8678abd54d2a4543b5a2d187f32b491b063
-ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
+ms.openlocfilehash: 75b05449de47f39fc95fd7cf42f9325b7a5d0ee9
+ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84427128"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88638767"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til US Government-kunder
 
@@ -86,7 +86,7 @@ Der er visse forskelle mellem offentlige planer og kommercielle planer for at im
 |  |Overvågning via Office 365 Security and Compliance Administration Center|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Deling med eksterne brugere|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Forbrugsmålepunkter for dashboards og rapporter|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Azure B2B mellem GCC og den kommercielle cloud|Tilgængelig|Tilgængelig|Tilgængelig|
+|  |Azure B2B Collaboration mellem GCC og den kommercielle cloud<sup>1</sup>|Tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
 |Rapportoprettelse|Opret og få vist dashboards og rapporter|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Planlagt dataopdatering|Tilgængelig|Tilgængelig|Tilgængelig|
 |  |Teamdashboards, der kan opdateres|Tilgængelig|Tilgængelig|Tilgængelig|
@@ -108,6 +108,8 @@ Der er visse forskelle mellem offentlige planer og kommercielle planer for at im
 |  |Automatiseret maskinel indlæring|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
 |  |Azure Cognitive Services|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
 |  |Azure Machine Learning|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
+
+<sup>1</sup> Selvom B2B Collaboration er tilgængelig til GCC, skal der udstedes en licens til eksterne brugere i dette miljø. Kommercielle cloudlicenser er ikke gyldige i GCC. Du kan finde flere oplysninger om kendte begrænsninger med B2B Collaboration til US Government ved at [sammenligne Azure Government og global Azure](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 
 ## <a name="next-steps"></a>Næste trin
 

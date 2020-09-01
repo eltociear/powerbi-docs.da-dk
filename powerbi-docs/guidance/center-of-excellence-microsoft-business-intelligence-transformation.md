@@ -6,14 +6,14 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/02/2020
+ms.date: 08/19/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 8e1e590f871e1840209e72eb611bde7b21610c6e
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 1b4f86a0e3316cc774b0f1562112f0d6e5b19a4f
+ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162361"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88638698"
 ---
 # <a name="microsofts-bi-transformation"></a>Microsofts BI-transformation
 
@@ -53,9 +53,9 @@ Analytikerne i vores økonomi-, salgs- og marketingteams er blevet mere fleksibl
 
 **Starlight** er det navn, vi giver vores interne dataharmoniserings- og analyseplatform, der understøtter økonomi, salg, marketing og engineering. Dens mission er at levere en robust, delt og skalerbar dataplatform. Platformen blev bygget udelukkende af økonomiafdelingen og er fortsat i drift i dag med de nyeste Microsoft-produkter.
 
-**KPI-søen** er ikke en Azure Data Lake. Det er snarere en Starlight-drevet tabelmodel, der hostes i Azure IaaS ved hjælp af Microsoft SQL Server Analysis Services. Tabelmodellen leverer data, der stammer fra mere end 100 interne kilder, og definerer flere hierarkier og KPI'er. Dens mission er at muliggøre rapportering af virksomhedsresultater og analyseteams på tværs af økonomi, marketing og salg. Modellen gør det for at opnå rettidig, præcis og velfungerende indsigt via harmoniserede modeller fra relevante kilder.
+**KPI-søen** er ikke en Azure Data Lake. Det er snarere en Starlight-drevet semantisk BI-tabelmodel, der hostes i Azure IaaS ved hjælp af Microsoft SQL Server Analysis Services. Den semantiske BI-model leverer data, som hentes fra mere end 100 interne kilder, og definerer adskillige hierarkier og KPI'er. Dens mission er at muliggøre rapportering af virksomhedsresultater og analyseteams på tværs af økonomi, marketing og salg. Det gør den ved at hente rettidig, nøjagtig indsigt med god ydeevne gennem samlede semantiske BI-modeller fra relevante kilder.
 
-Da den først blev udrullet, var det en spændende tid, eftersom tabelmodellen resulterede i øjeblikkelige og målbare fordele. Den første version centraliserede C+E Finance- og Marketing BI-platforme. I de seneste seks år er den blevet udvidet til at konsolidere yderligere BI-løsninger. I dag er den fortsat under udvikling og udgør grundlaget for vores globale og kommercielle forretningsgennemgange samt standardrapportering og SSBI. Ibrugtagningen af modellen har oversteget vores vildeste forventninger.
+Det var en spændende tid, da den først blev udrullet, fordi den semantiske BI-tabelmodel resulterede i øjeblikkelige og målbare fordele. Den første version centraliserede C+E Finance- og Marketing BI-platforme. I de seneste seks år er den blevet udvidet til at konsolidere yderligere BI-løsninger. I dag er den fortsat under udvikling og udgør grundlaget for vores globale og kommercielle forretningsgennemgange samt standardrapportering og SSBI. Ibrugtagningen af modellen har oversteget vores vildeste forventninger.
 
 Her er en oversigt over de vigtigste fordele:
 
@@ -71,8 +71,8 @@ Her er en oversigt over de vigtigste fordele:
 Starlight-platformen administrerer dataflowet fra anskaffelsen af data, til behandlingen og derefter hele vejen til udgivelsen:
 
 1. Robust og fleksibel dataintegration foregår efter en tidsplan, hvor data samles fra over 100 forskellige rå kilder. Kildedatasystemerne omfatter relationsdatabaser, Azure Data Lake Storage og Azure Synapse-databaser. Emneområderne omfatter økonomi, marketing, salg og engineering.
-2. Når dataene er gemt, bliver de tilpasset og forbedret ved hjælp af masterdata og forretningslogik. De indlæses derefter til data warehouse-tabeller. Tabelmodellen opdateres derefter.
-3. Analytikere i virksomheden bruger Excel og Power BI til at levere indsigt og analyser fra tabelmodellen. Den gør det muligt for virksomhedsejere at mestre definitioner af målepunkter for deres egen forretning. Når det er nødvendigt, opnås skalering ved hjælp af Azure-IaaS med belastningsjustering.
+2. Når dataene er gemt, bliver de tilpasset og forbedret ved hjælp af masterdata og forretningslogik. De indlæses derefter til data warehouse-tabeller. Den semantiske BI-tabelmodel opdateres derefter.
+3. Analytikere i virksomheden bruger Excel og Power BI til at levere indsigt og analyse fra den semantiske BI-tabelmodel. Den gør det muligt for virksomhedsejere at mestre definitioner af målepunkter for deres egen forretning. Når det er nødvendigt, opnås skalering ved hjælp af Azure-IaaS med belastningsjustering.
 
 ## <a name="deliver-success"></a>Sådan får du succes
 
@@ -86,10 +86,16 @@ Vi inviterer dig til at læse artiklerne i denne COE-serie for at få mere at vi
 
 ## <a name="next-steps"></a>Næste trin
 
-I den [næste artikel i denne serie](center-of-excellence-establish.md) kan du få mere at vide om, hvordan et COE hjalp os hos Microsoft med at oprette en standardiseret analyse- og dataplatform til at give adgang til indsigt fra vores data.
-
 Du kan finde flere oplysninger om denne artikel i følgende ressourcer:
 
 - [Etabler et Center of Excellence](center-of-excellence-establish.md)
 - Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 - Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)
+
+I den [næste artikel i denne serie](center-of-excellence-establish.md) kan du få mere at vide om, hvordan et COE hjalp os hos Microsoft med at oprette en standardiseret analyse- og dataplatform til at give adgang til indsigt fra vores data.
+
+### <a name="professional-services"></a>Professionelle tjenester
+
+Der findes certificerede Power BI-partnere, som kan hjælpe din organisation med at lykkes, når du konfigurerer et COE. De kan give dig omkostningseffektiv træning eller overvågning af dine data. Hvis du vil i kontakt med en Power BI-partner, skal du gå til [Power BI-partnerportalen](https://powerbi.microsoft.com/partners/).
+
+Du kan også interagere med erfarne konsulentpartnere. De kan hjælpe dig med at [vurdere](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=assessment&country=ALL&region=ALL), [evaluere](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept&country=ALL&region=ALL) eller [implementere](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=implementation&country=ALL&region=ALL&page=1) Power BI.

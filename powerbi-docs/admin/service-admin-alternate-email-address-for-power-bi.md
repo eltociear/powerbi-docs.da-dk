@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/23/2019
 ms.author: kfollis
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: d2d28d8ea3f7e2e7217124483f90ecc28d44314f
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 0cc691e8987bf45f6c3028a5006955db1da72b0b
+ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161691"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88638790"
 ---
 # <a name="use-an-alternate-email-address"></a>Brug af en alternativ mailadresse
 
@@ -23,7 +23,7 @@ Når du tilmelder dig Power BI, angiver du en mailadresse. Power BI bruger som s
 I nogle tilfælde vil du måske have disse mails sendt til en alternativ mailadresse i stedet for den, du har tilmeldt dig med. Denne artikel indeholder en forklaring af, hvordan du angiver en alternativ adresse i Microsoft 365 og PowerShell. I artiklen forklares det også, hvordan en mailadresse løses i Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> Angivelse af en alternativ mailadresse påvirker ikke den mailadresse, som Power BI bruger til tjenesteopdateringer, nyhedsbreve og anden kommunikation. Denne kommunikation sendes altid til den mailadresse, du brugte, da du tilmeldte dig Power BI.
+> Angivelse af en alternativ mailadresse påvirker ikke den mailadresse, som Power BI bruger til mailabonnementer, tjenesteopdateringer, nyhedsbreve og anden kommunikation. Denne kommunikation sendes altid til den mailadresse, du brugte, da du tilmeldte dig Power BI.
 
 ## <a name="use-microsoft-365"></a>Brug Microsoft 365
 
