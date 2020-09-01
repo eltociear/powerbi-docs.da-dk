@@ -1,25 +1,26 @@
 ---
-title: Ordliste for Power BI-forbrugere
-description: Power BI introducerer mange nye begreber og nye måder at bruge velkendte begreber på. Brug vores ordliste til at blive fortrolig med Power BI-terminologien.
+title: Ordliste til virksomhedsbrugere af Power BI
+description: Power BI introducerer mange nye begreber og nye måder at bruge velkendte begreber på. Brug vores ordliste til at blive fortrolig med terminologien i Power BI-tjenesten.
 services: power-bi
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 07/08/2020
+ms.topic: reference
+ms.date: 08/24/2020
+ms.custom: contperfq1
 ms.author: mihart
-ms.openlocfilehash: f5ed2252836ecda364ca53904c2cccbae9f9b7e6
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: cd562d8fe689c2ae82ee1cacfc9e02393a5992f9
+ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215608"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88803037"
 ---
-# <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten    
+# <a name="glossary-for-business-users-of-the-power-bi-service"></a>Ordliste til virksomhedsbrugere af Power BI-tjenesten    
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
 
-Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke kan finde her? Bed os om at tilføje det (du kan bruge knappen til dokumentationsfeedback nederst i denne artikel).
+Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke kan finde her? Bed os om at tilføje det. Du kan bruge knappen til dokumentationsfeedback nederst i denne artikel.
 
 ## <a name="a"></a>A
 

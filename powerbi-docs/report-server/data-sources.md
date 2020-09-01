@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/04/2020
 ms.author: maggies
-ms.openlocfilehash: 00c00ca7bbd7ad3f901c98f44a2900f332e3616a
-ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
+ms.openlocfilehash: 9dface817b9ec5421ba9ea93abb8037e3e70029d
+ms.sourcegitcommit: 4130e5e6947b809df628370cc80c00194243468d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87837606"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88857804"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakilder på Power BI-rapportserver
 Power BI-rapporter kan oprette forbindelse til en række datakilder. Der er adgang til forskellige datakilder, afhængigt af hvordan dataene bruges. Dataene kan importeres, eller der kan foretages forespørgsler om data direkte ved hjælp af DirectQuery eller en direkte forbindelse til SQL Server Analysis Services. Nogle datakilder, der understøttes i Power BI Desktop, er optimeret til Power BI-rapportserver, men de er ikke optimeret til Power BI-rapporter, der publiceres til Power BI-rapportserver. Se de datakilder, der understøttes begge steder, på følgende liste.
@@ -209,6 +209,8 @@ Power BI-rapportserver understøtter ikke OAuth-baseret godkendelse i forbindels
 
 ## <a name="next-steps"></a>Næste trin
 
-[Datakilder til Power BI-rapporter [(.. /Connect-data/Power-BI-data-sources.MD) i Power BI-tjenesten. Nu, hvor du har oprettet forbindelse til din datakilde, skal du [oprette en Power BI-rapport](quickstart-create-powerbi-report.md) ved hjælp af data fra den pågældende datakilde.
+[Datakilder til Power BI-rapporter](../connect-data/power-bi-data-sources.md) i Power BI-tjenesten
+
+Nu, hvor du har oprettet forbindelse til datakilden, kan du [oprette en rapport](quickstart-create-powerbi-report.md) ved hjælp af dataene fra denne datakilde.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
