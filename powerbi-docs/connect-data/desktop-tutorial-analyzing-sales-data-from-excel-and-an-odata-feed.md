@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 2ef73377728703926ac6bc51f847a54451e1321e
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: c0fb194c3585af9ce3011f5cb2a4e6b57b5092ed
+ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878711"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89092400"
 ---
 # <a name="tutorial-analyze-sales-data-from-excel-and-an-odata-feed"></a>Selvstudium: Analysér salgsdata fra Excel og et OData-feed
 
@@ -272,7 +272,7 @@ I den færdige rapport kombineres data fra Excel-filen *Products.xlsx* og OData-
 
 ## <a name="next-steps"></a>Næste trin
 
-* [Læs andre selvstudier til Power BI Desktop](/power-bi/guided-learning/)
+* [Microsoft Learn til Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 * [Se videoer om Power BI Desktop](/power-bi/fundamentals/desktop-videos)
 * [Besøg Power BI-forummet](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Læs Power BI-bloggen](https://go.microsoft.com/fwlink/?LinkID=519327)

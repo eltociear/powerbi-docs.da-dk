@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/21/2020
 ms.author: maggies
-ms.openlocfilehash: b71fd2986fb79adf88493416ac8234f2656aefa9
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: eebb40d81e9b59b545b30ce55dbf4a362b826455
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866765"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937579"
 ---
 # <a name="limitations-of-power-bi-qa"></a>Begrænsninger for Spørgsmål og svar i Power BI
 
@@ -75,7 +75,6 @@ I øjeblikket understøtter vi ikke omdefinering af et genkendt begreb eller def
 
 ### <a name="statements-not-supported"></a>Sætninger understøttes ikke
 
-- Brug af målinger i betingelser understøttes ikke i øjeblikket. Konvertér i stedet målinger til beregnede kolonner for at få dem til at fungere.
 - Flere betingelser understøttes ikke. Du kan løse problemet ved at oprette en DAX-beregnet kolonne, der evaluerer en boolesk sætning med flere betingelser og bruge dette felt i stedet.
 - Hvis du ikke angiver en filterbetingelse, når Spørgsmål og svar beder om en delmængde af data, kan du ikke gemme definitionen, selvom der ikke er nogen rød understregning under hele sætningen.
 

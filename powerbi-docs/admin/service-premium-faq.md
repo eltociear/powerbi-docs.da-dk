@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 189710c613c7d48f76ee0bb23a430ac4d9908c74
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: 4188a5570dfe15658e13d3358f3e192ac842cbfb
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83792876"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937326"
 ---
 # <a name="power-bi-premium-faq"></a>Ofte stillede spørgsmål om Power BI Premium
 
@@ -83,11 +83,11 @@ Du kan finde flere oplysninger i [Kom i gang med Power BI Report Server](../repo
 
 **De næste trin**
 
-[Hvad er Power BI Premium?](service-premium-what-is.md)
-[Produktbemærkninger til Power BI Premium](../service-premium-release-notes.md)
-[Whitepaper til Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
-[Planlægning af et whitepaper til Power BI Enterprise Deployment](https://aka.ms/pbienterprisedeploy)
-[Aktivering af udvidet prøveversion af Pro](../service-extended-pro-trial.md)
-[Ofte stillede spørgsmål om Power BI Embedded](../developer/embedded/embedded-faq.md)
+* [Hvad er Power BI Premium?](service-premium-what-is.md)
+* [Produktbemærkninger til Power BI Premium](../service-premium-release-notes.md)
+* [Hvidbog om Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
+* [Hvidbog om planlægning af en Power BI Enterprise-installation](https://aka.ms/pbienterprisedeploy)
+* [Aktivering af den udvidede Pro-prøveversion](../service-extended-pro-trial.md)
+* [Ofte stillede spørgsmål om Power BI Embedded](../developer/embedded/embedded-faq.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

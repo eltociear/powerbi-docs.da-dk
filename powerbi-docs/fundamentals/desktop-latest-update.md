@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e24897b64a700f84cb7caf2458c72bbfa9b5c70b
-ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
+ms.openlocfilehash: 42c21a99422e7a3c67cdb65b62d6c323f8c8aa0d
+ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88160182"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89092239"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Nyheder i Power BI Desktop
 
@@ -91,7 +91,7 @@ I følgende video beskrives hver af disse opdateringer. Du kan også se videoen 
 Kan du lide at lære om Power BI gennem videoer og andet aktiverende indhold? Se følgende samling af videokilder og indhold:
 
 -   [Power BI-kanal](https://www.youtube.com/user/mspowerbi): en samling af Power BI-videoer på YouTube.
--   [Automatiseret læring for Power BI](https://powerbi.microsoft.com/guided-learning/) – en serie af lærerige rundvisninger i Power BI i små bidder.
+-   [Automatiseret læring for Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link) – en serie af lærerige rundvisninger i Power BI i små bidder.
 
 ## <a name="updates-for-previous-months"></a>Forrige måneders opdateringer
 
