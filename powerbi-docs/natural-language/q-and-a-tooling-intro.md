@@ -7,12 +7,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/17/2020
 ms.author: maggies
-ms.openlocfilehash: 47ab35113bbf6564cbc824b48891cd9f58370c8a
-ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
+ms.openlocfilehash: aaa31851f338832a8c4f4fffb38f12414c859610
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88578130"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937464"
 ---
 # <a name="intro-to-qa-tooling-to-train-power-bi-qa-preview"></a>Introduktion til værktøjer til Spørgsmål og svar for at oplære Spørgsmål og svar i Power BI (prøveversion)
 
@@ -80,6 +80,11 @@ Alt, hvad du har gemt i afsnittet Træn Spørgsmål og svar, vises her, så du k
 
 ### <a name="suggest-questions"></a>Foreslå spørgsmål
 
+> [!NOTE]
+> De foreslåede spørgsmål vises for alle forekomster af visualiseringen Spørgsmål og svar. Det er ikke muligt at oprette et separat sæt med forslag til alle visualiseringer af Spørgsmål og svar.
+> 
+> 
+
 Uden at foretage nogen form for konfiguration foreslår visualiseringen Spørgsmål og svar adskillige spørgsmål, så du kan komme i gang. Disse spørgsmål genereres automatisk ud fra din datamodel. I **Foreslå spørgsmål** kan du overskrive de automatisk genererede spørgsmål med dine egne spørgsmål.
 
 Du starter ved at skrive det spørgsmål, du vil tilføje i tekstfeltet. I afsnittet med forhåndsvisningen kan du se, hvordan resultatet vil se ud i visualiseringen Spørgsmål og svar. 
@@ -91,11 +96,6 @@ Vælg knappen **Tilføj** for at føje dette spørgsmål til **Dine foreslåede 
 :::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-save-suggest-questions.png" alt-text="Gem foreslåede spørgsmål":::
  
 Sørg for at vælge **Gem** for at få vist en liste over foreslåede spørgsmål i visualiseringen Spørgsmål og svar. 
-
-> [!NOTE]
-> De foreslåede spørgsmål vises for alle forekomster af visualiseringen Spørgsmål og svar. Det er ikke muligt at oprette et separat sæt forslag for alle visualiseringer af Spørgsmål og svar.
-> 
-> 
 
 ## <a name="other-qa-settings"></a>Andre indstillinger for Spørgsmål og svar
 

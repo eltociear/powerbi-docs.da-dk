@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 07/02/2020
+ms.date: 08/28/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4083304a13b75df900e25204b54f62368be43e70
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: b31ddb3e3881f9002affcae9106b9e14bf85a964
+ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939498"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89092308"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Brug DirectQuery i Power BI Desktop
 Når du opretter forbindelse til din datakilde i *Power BI Desktop*, er det altid muligt at importere en kopi af dataene til Power BI Desktop. For nogle datakilder findes der en anden mulighed: Du kan oprette direkte forbindelse til datakilden med DirectQuery.
@@ -50,6 +50,8 @@ Der er i øjeblikket nogle få begrænsninger ved at bruge DirectQuery:
 - Hvis forespørgslen i **Forespørgselseditor** er for kompliceret, vil der opstå en fejl. Når du skal løse fejlen, skal du enten slette det fejlbehæftede trin i **Forespørgselseditor**, eller du skal i stedet *importere* dataene i stedet for at bruge DirectQuery. For flerdimensionelle datakilder som SAP Business Warehouse er der ingen **Forespørgselseditor**.
 
 - Funktionerne for tidsintelligens findes ikke i DirectQuery. Eksempelvis understøttes særlig behandling af datokolonner (som f.eks. år, kvartal, måned eller dag) ikke i DirectQuery-tilstand.
+
+- Power BI-tjenesten understøtter ikke beregnede tabeller eller beregnede kolonner, som refererer til en DirectQuery-tabel fra en datakilde med SSO-godkendelse (enkeltlogon).
 
 - Der er pålagt begrænsninger på de DAX-udtryk, der er tilladt i målinger, for at sikre, at de forespørgsler, der sendes til den underliggende datakilde, har en acceptabel ydeevne.
 

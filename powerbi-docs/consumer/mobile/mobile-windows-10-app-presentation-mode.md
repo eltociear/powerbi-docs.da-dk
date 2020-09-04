@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: c4453f1475ac2ab227294b0b3bd8ba5dba10de67
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: c01169a514b1231f93df21a23dc8992e92353070
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88204496"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937602"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Få vist rapporter og dashboards i præsentationstilstand på Surface Hub og Windows 10-enheder
 Du kan bruge præsentationstilstand til at vise rapporter og dashboards i fuld skærm på Windows 10-enheder og Surface Hub. Præsentationstilstand er praktisk til at vise Power BI på møder eller konferencer eller på en dedikeret projektor på kontoret. Du kan også bruge det for at se mest muligt på en lille skærm.
@@ -64,7 +64,7 @@ Når du vælger knappen **Afspil** på handlingsværktøjslinjen, begynder slide
 
  Navnet på den aktuelt viste visning (side eller bogmærke og side) vises i controlleren. På billedet ovenfor kan du se, at bogmærket **Asien og Stillehavsområdet** aktuelt vises på siden **Sales Performance** i rapporten **Sales**.
 
-Et slideshow bevæger sig som standard kun gennem sider med et sideskift hvert 30. sekund. Brug standardfunktionsmåden i [Indstillinger for slideshow](#slideshow-settings).
+Et slideshow bevæger sig som standard kun gennem sider med et sideskift hvert 30. sekund. Du kan ændre standardfunktionsmåden under [Indstillinger for slideshow](#slideshow-settings).
 
 
 ### <a name="auto-play-a-slideshow-on-startup"></a>Afspil automatisk et slideshow ved start

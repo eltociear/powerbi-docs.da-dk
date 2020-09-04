@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/27/2020
-ms.openlocfilehash: d82026ddb3ae12d95aed94fc6f96f45b4861ec48
-ms.sourcegitcommit: 3268a9b630cf599c50592d83c70a87eeecf7838f
+ms.openlocfilehash: fda04d3241db68f1ca8da66d999bfca6cef9e8cf
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88168414"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937441"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Understøttede datakilder for sideinddelte rapporter i Power BI
 
@@ -27,7 +27,7 @@ Følgende liste over datakilder understøttes i det oprindelige miljø i sideind
 | --- | --- | --- |
 | Azure SQL Database <br>Azure SQL Data Warehouse | Basic, enkeltlogon (SSO), OAuth2 | Du kan bruge en virksomhedsgateway med Azure SQL DB. Du kan dog ikke bruge SSO eller oAuth2 til at godkende i disse scenarier.   |
 | Administreret forekomst af Azure SQL | Grundlæggende | via et offentligt eller privat slutpunkt (det private slutpunkt skal routes via Enterprise-gateway)  |
-| Azure Analysis Services | SSO, OAuth2 | AAS-firewallen skal være deaktiveret eller konfigureret til at tillade alle IP-områder i BlackForest-området. Dette gælder kun i BlackForest-området. |
+| Azure Analysis Services | SSO, OAuth2 | AAS-firewallen skal være deaktiveret eller konfigureret til at tillade alle IP-områder i BlackForest-området. Dette gælder kun i BlackForest-området.  SSO fra ekstern lejer understøttes ikke. |
 | Power BI-datasæt | SSO | Power BI Premium-datasæt og datasæt, der ikke er Premium. Kræver læserettigheder |
 | Power BI Premium-datasæt (XMLA) | SSO | Power BI-datasæt understøttes ikke som en datakilde til integrerede sideinddelte rapporter.  |
 | Angiv data | I/T | Data er integreret i rapporten. |

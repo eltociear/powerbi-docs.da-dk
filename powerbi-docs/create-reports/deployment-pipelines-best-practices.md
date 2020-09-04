@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
-ms.openlocfilehash: 4dd5698f91177733e150577490775eefb7e2f2ef
-ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
+ms.openlocfilehash: a1a30dc09e61e29053a5a1d95cde3d5a339c5a3d
+ms.sourcegitcommit: 6d7d5e6b19e11d557dfa1b79b745728b4ee02b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86557180"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89220854"
 ---
 # <a name="deployment-pipelines-best-practices-preview"></a>Bedste fremgangsmåder for udrulningspipelines (prøveversion)
 
@@ -106,7 +106,7 @@ Betragt Power BI Desktop som dit lokale udviklingsmiljø. Power BI Desktop giver
 Hvis du vil administrere versionshistorikken for dine rapporter og datasæt, skal du bruge [Power BI's automatiske synkronisering med OneDrive](../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md). Dette sikrer, at filerne er opdateret til den nyeste version. Det gør det også muligt at hente ældre versioner, hvis det er nødvendigt.
 
 >[!NOTE]
->Brug kun automatisk synkronisering med OneDrive (eller et andet lager) sammen med PBIX-filerne i udviklingsfasen i udrulningspipelinene. PBIX-filer må ikke synkroniseres i test- og produktionsfasen i udrulningspipelinene. Dette vil medføre problemer med at installere indhold på tværs af pipelinen.
+>Brug kun automatisk synkronisering med OneDrive (eller et andet lager) sammen med PBIX-filerne i udviklingsfasen af en udrulningspipeline. PBIX-filer bør ikke synkroniseres til test- og produktionsfasen af en udrulningspipeline. Dette vil medføre problemer med at installere indhold på tværs af pipelinen.
 
 ### <a name="separate-modeling-development-from-report-and-dashboard-development"></a>Adskil modelleringsudvikling fra rapport- og dashboardudvikling
 

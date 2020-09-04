@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 LocalizationGroup: Share your work
 ms.date: 06/28/2020
-ms.openlocfilehash: 94419bb25aa00645b22a1dad1f97fcc792c3d63d
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: 29aff96cc93de305ce78cb0cfa015954928309ff
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939549"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937510"
 ---
 # <a name="embed-a-report-web-part-in-sharepoint-online"></a>Integrer en rapportwebdel i SharePoint Online
 
@@ -30,6 +30,9 @@ Følgende kræves, før rapporter kan **integreres i SharePoint Online**:
 * En Power BI Pro-licens eller en [Power BI Premium-kapacitet (EM- eller P-SKU)](../admin/service-premium-what-is.md) med en Power BI-licens.
 * Power BI-webdelen til SharePoint Online kræver [moderne sider](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 * Hvis brugerne vil bruge en integreret rapport, skal de logge på Power BI-tjenesten for at aktivere deres Power BI licens.
+
+> [!Note]
+> Organisationer, som bruger nationale Power BI-cloudmiljøer, har ikke adgang til en gratis licens. I dette miljø skal alle brugere, der ønsker at få adgang til den integrerede rapport i SharePoint, have en licens til Power BI Pro.
 
 ## <a name="embed-your-report"></a>Integrer din rapport
 Hvis du vil integrere din rapport i SharePoint Online, skal du have URL-adressen til rapporten og bruge den sammen med Power BI-webdelen i SharePoint Online.

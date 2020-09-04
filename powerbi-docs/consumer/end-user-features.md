@@ -5,17 +5,17 @@ author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: how-to
-ms.date: 04/17/2020
+ms.topic: reference
+ms.date: 09/01/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: b6beb2115f664de12382933c8200b07b510bd083
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 75ee1ad31bc2f99964a8f79ea29efb499c2cc81e
+ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215892"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89286768"
 ---
 # <a name="power-bi-feature-list-for-consumers-and-others-with-free-licenses"></a>Liste over Power BI-funktioner til *forbrugere* og andre med gratis licenser
 
@@ -49,7 +49,7 @@ Hver Power BI-tjenestebruger har enten en gratis licens eller en Pro-licens. *Fo
 
 - **Gratis licens** – tildeles typisk til *forbrugere* i en organisation (se det første billede nedenfor). Den tildeles også til alle, der tilmelder sig Power BI-tjenesten som enkeltperson og gerne vil prøve [Power BI-tjenesten i separat tilstand](../fundamentals/service-self-service-signup-for-power-bi.md) (se det andet billede nedenfor). 
 
-    ![skærm med gratis bruger](media/end-user-features/power-bi-free-organization.png)
+    ![skærm, som viser en Premium-bruger](media/end-user-features/power-bi-free-organization.png)
 
     Gratis brugere, der er medlemmer af en organisation, som har en Premium-kapacitet, får på den måde superkræfter. Så længe dine Pro-kolleger bruger arbejdsområder i en Premium-kapacitet til at dele indhold, kan gratis brugere få vist og samarbejde med disse Pro-kolleger.  **På den måde bliver den gratis bruger en *forbruger* i Power BI med mulighed for at modtage og dele indhold og træffe forretningsbeslutninger på denne baggrund.** 
  
@@ -87,7 +87,7 @@ Den anden kolonne repræsenterer en *forbruger*.  En forbruger:
 |Favorit | ![orange x](media/end-user-features/orange-x.png) | ![grøn prik](media/end-user-license/power-bi-green-dot.png)  |
  |Rediger, opdater, del igen, udgiv igen |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
  |Opret ny app |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
- |Appsource: Download og åbn | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
+ |AppSource: download og åbn | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
 |Organisationslager: Hent og åbn|![orange x](media/end-user-features/orange-x.png)  |![grøn prik](media/end-user-license/power-bi-green-dot.png)  |
  |**Apparbejdsområder**
 | Opret, rediger eller slet arbejdsområde eller indhold  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
@@ -129,7 +129,7 @@ Den anden kolonne repræsenterer en *forbruger*.  En forbruger:
 | Få vist bogmærker, der er oprettet af andre, og tilføj dine egne bogmærker  | ![orange x](media/end-user-features/orange-x.png)|![grøn prik](media/end-user-license/power-bi-green-dot.png)  |
 | Vis og reager på kommentarer fra andre: Tilføj nye kommentarer  | ![orange x](media/end-user-features/orange-x.png)|![grøn prik](media/end-user-license/power-bi-green-dot.png)  |
 |Skift visningsdimensioner   | ![grønt ma](media/end-user-features/green-mwo.png) | ![grøn prik](media/end-user-license/power-bi-green-dot.png)  | 
-| Gem en kopi |![orange x](media/end-user-features/orange-x.png) |![grøn prik](media/end-user-license/power-bi-green-dot.png)*  
+| Gem en kopi |![orange x](media/end-user-features/orange-x.png) |![orange x](media/end-user-features/orange-x.png)  
 |Kopiér visualisering som billede* |
 | Fremhæv og filtrer visualiseringer tværgående   |![grønt ma](media/end-user-features/green-mwo.png) |![grøn prik](media/end-user-license/power-bi-green-dot.png)  |
 |  Analysér   |![grønt ma](media/end-user-features/green-mwo.png)  |![grøn prik](media/end-user-license/power-bi-green-dot.png)  |

@@ -6,17 +6,17 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/19/2020
+ms.date: 08/30/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5f8b2fd4c999853e09852e69406968cad2fb9490
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 2e2c4656c5436691df96b86f145e255153ff9f96
+ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216155"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89286680"
 ---
-# <a name="dashboards-for-power-bi-service-consumers"></a>Dashboards til brugere af Power BI-tjenesten
+# <a name="dashboards-for-business-users-of-the-power-bi-service"></a>Dashboards til virksomhedsbrugere af Power BI-tjenesten
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
@@ -24,16 +24,16 @@ ms.locfileid: "86216155"
 
 Et Power BI-***dashboard*** er en enkelt side, der ofte kaldes et canvas, hvor der bruges visualiseringer til at fortælle en historie. Da det er begrænset til én side, indeholder et dashboard, der er godt designet, kun de vigtigste elementer fra historien.
 
-![dashboard](media/end-user-dashboards/power-bi-dashboard2.png)
+![skærmbillede med et dashboard](media/end-user-dashboards/power-bi-dashboard.png)
 
 De visualiseringer, du kan se på dashboardet, kaldes *felter* og er *fastgjort* til dashboardet af *rapportdesignerne*. I de fleste tilfælde kommer du til den rapportside, hvor visualiseringen blev oprettet, når du vælger et felt. Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at læse [Power BI – Grundlæggende begreber](end-user-basic-concepts.md).
 
 > [!NOTE]
 > Dashboards kan [vises og deles på mobilenheder](mobile/mobile-apps-view-dashboard.md).
 >
-> Power BI Pro er påkrævet for at få vist et dashboard, der er delt med dig.
+> Hvis du vil dele dashboards med dine kolleger, skal du bruge Power BI Pro eller Premium Du kan finde flere oplysninger under [Power BI-licenstyper](end-user-license.md).
 
-Visualiseringerne på et dashboard stammer fra rapporter, og hver rapport er baseret på et datasæt. Du kan faktisk opfatte et dashboard som en måde at få adgang til underliggende rapporter og datasæt på. Når du vælger en visualisering, bliver du ført til den rapport (og det datasæt), der blev brugt til at oprette den.
+Visualiseringerne på et dashboard stammer fra rapporter, og hver rapport er baseret på et datasæt. Du kan faktisk opfatte et dashboard som en måde at få adgang til underliggende rapporter og datasæt på. Når du vælger en visualisering, bliver du ført til den rapport, der blev brugt til at oprette den.
 
 ![diagram, der viser relationer mellem dashboards, rapporter, datasæt](media/end-user-dashboards/power-bi-diagram.png)
 
@@ -42,21 +42,22 @@ Dashboards er en fantastisk måde at holde øje med din virksomhed, søge efter 
 
 Et dashboard er ikke kun et flot billede. Det er interaktivt, og felterne opdateres, når de underliggende data ændres.
 
-## <a name="dashboards-versus-reports-for-power-bi-consumers"></a>Dashboards sammenlignet med rapporter til Power BI-***forbrugere***
-Rapporter forveksles ofte med dashboards, da de også er lærreder med visualiseringer. Men der er nogle store forskelle set fra Power BI-*forbrugernes* synspunkt.
+## <a name="dashboards-versus-reports-for-power-bi-business-users"></a>Forskellen mellem dashboards og rapporter til Power BI ***-virksomhedsbrugere***
+Rapporter forveksles ofte med dashboards, da de også er lærreder med visualiseringer. Men der er nogle væsentlige forskelle set fra en Power BI-*virksomhedsbrugers* synspunkt.
 
 | **Egenskab** | **Dashboards** | **Rapporter** |
 | --- | --- | --- |
 | Sider |Én side |Én eller flere sider |
+|**Feltet Stil et spørgsmål om dine data** (Spørgsmål og svar til Power BI) øverst |næsten altid | nej |
 | Datakilder |Én eller flere rapporter og et eller flere datasæt pr. dashboard |Et enkelt datasæt pr. rapport |
 | Filtrering |Der kan ikke filtreres eller laves udsnit |Der er mange forskellige måder at filtrere, fremhæve og lave udsnit på |
 | Angivelse af beskeder |Der kan oprettes beskeder, som sendes via mail, når visse betingelser er opfyldt |Nej |
-| Fremhævet |Ét dashboard kan angives som dit "udvalgte" dashboard |Der kan ikke oprettes en udvalgt rapport |
+| Udvalgt |Ét dashboard kan angives som dit "udvalgte" dashboard |Der kan ikke oprettes en udvalgt rapport |
 | Kan underliggende datasættabeller og felter ses? |Nej. Data kan eksporteres, men tabeller og felter på selve dashboardet kan ikke ses. |Ja. Datasættabeller, felter og værdier kan ses. |
 
 
-## <a name="dashboard-designers-and-dashboard-consumers"></a>Dashboarddesignere og dashboardbrugere
-Som Power BI-***forbruger*** modtager du dashboards fra *designere*. Fortsæt med at få mere at vide om dashboards med disse emner:
+## <a name="dashboard-designers-and-dashboard-business-users"></a>Dashboarddesignere og dashboardvirksomhedsbrugere
+Som Power BI-***virksomhedsbruger*** modtager du dashboards fra *designere*. Fortsæt med at få mere at vide om dashboards med disse emner:
 
 * [Få vist et dashboard](end-user-dashboard-open.md)
 * Få mere at vide om [dashboardfelter](end-user-tiles.md), og hvad der sker, når du vælger et.
@@ -67,5 +68,5 @@ Som Power BI-***forbruger*** modtager du dashboards fra *designere*. Fortsæt me
 > Hvis du ikke kunne finde det, du ledte efter her, kan du bruge indholdsfortegnelsen til venstre.
 > 
 
-## <a name="next-steps"></a>De næste trin
+## <a name="next-steps"></a>Næste trin
 [Få vist et dashboard](end-user-dashboard-open.md) 

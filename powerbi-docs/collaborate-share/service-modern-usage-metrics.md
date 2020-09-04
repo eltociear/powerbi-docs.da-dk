@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 9aad77f162a49697466899afce44284c7f063746
-ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
+ms.openlocfilehash: ee51ea2bbca794730d35d1f21bc999adda3dcc98
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87478147"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937533"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience-preview"></a>Overvåg forbrugsdata i den nye arbejdsområdeoplevelse (prøveversion)
 
@@ -184,6 +184,10 @@ Når du opretter en kopi af den skrivebeskyttede, færdigbyggede forbrugsrapport
 1. Den nye rapport gemmes under fanen Rapporter i det aktuelle arbejdsområde og føjes til indholdslisten Seneste.
 
     ![Den nye rapport under fanen Rapporter](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-new-report.png)
+    
+> [!NOTE]
+> Når du gemmer en kopi af rapporten med forbrugsdata, behandles den som en almindelig Power BI-rapport. Den vil være tilgængelig for alle brugere, som har visningstilladelse til arbejdsområdet, herunder brugere med rollen Læser.
+
 
 ### <a name="create-a-new-usage-report-in-power-bi-desktop"></a>Opret en ny forbrugsrapport i Power BI Desktop
 
@@ -242,7 +246,14 @@ Når du opretter forbindelse til forbrugsdata i Excel, kan du oprette pivottabel
 
 ## <a name="usage-metrics-in-national-clouds"></a>Forbrugsværdier i nationale cloudmiljøer
 
-Power BI fås med forskellige nationale cloudmiljøer. Disse cloudmiljøer giver samme sikkerhedsniveau, beskyttelse af personlige oplysninger, overholdelse af angivne standarder og gennemsigtighed som den globale version af Power BI, kombineret med en unik model for lokale bestemmelser om levering af tjenester, dataopbevaring, adgang og kontrol. På grund af denne unikke model til opfyldelse af lokale lovkrav er forbrugsdata er ikke tilgængelige i nationale cloudmiljøer. Du kan få flere oplysninger under [nationale cloudmiljøer](https://powerbi.microsoft.com/clouds/).
+Power BI fås med forskellige nationale cloudmiljøer. Disse cloudmiljøer giver samme sikkerhedsniveau, beskyttelse af personlige oplysninger, overholdelse af angivne standarder og gennemsigtighed som den globale version af Power BI, kombineret med en unik model for lokale bestemmelser om levering af tjenester, dataopbevaring, adgang og kontrol. Moderne forbrugsdata er tilgængelige i følgende nationale clouds: 
+
+- US Government Community Cloud
+- US Government Community Cloud High
+- US Department of Defense
+- Kina
+
+Du kan få flere oplysninger under [nationale cloudmiljøer](https://powerbi.microsoft.com/clouds/).
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 

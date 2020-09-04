@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 06/25/2020
+ms.date: 08/25/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c70229a37a697fedba54cde1899073f20710f542
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 6147bc0ee725eb7adc7e1edb637a22bb7dc66558
+ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161761"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "89040280"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Rediger, hvordan et diagram sorteres i en rapport i Power BI
 
@@ -24,24 +24,24 @@ ms.locfileid: "86161761"
 > [!IMPORTANT]
 > **Denne artikel er beregnet til Power BI-brugere, der ikke har redigeringstilladelser til rapporten eller datasættet, og som kun arbejder i onlineversionen af Power BI (Power BI-tjenesten). Hvis du er rapport*designer*eller *administrator* eller *ejer*, indeholder denne artikel muligvis ikke alle de oplysninger, du har brug for. Du kan få mere at vide under [Sorter efter kolonne i Power BI Desktop](../create-reports/desktop-sort-by-column.md)** .
 
-I Power BI-tjenesten kan du ændre, hvordan en visualisering ser ud, ved at sortere den efter forskellige datafelter. Hvis du ændrer, hvordan du sorterer en visualisering, kan du fremhæve de oplysninger, du vil formidle. Uanset om du bruger numeriske data (f.eks. salgstal) eller tekstdata (f.eks. navne på stater), kan du sortere visualiseringerne efter behov. Power BI indeholder mange sorteringsmuligheder og genvejsmenuer, som du kan bruge. 
+I Power BI-tjenesten kan du ændre, hvordan en visualisering ser ud, ved at sortere den efter forskellige datafelter. Hvis du ændrer, hvordan du sorterer en visualisering, kan du fremhæve de oplysninger, du vil formidle. Du kan sortere dine visualiseringer efter behov, uanset om du bruger numeriske data (f.eks. salgstal) eller tekstdata (f.eks. navne på stater). Power BI indeholder mange sorteringsmuligheder og genvejsmenuer, som du kan bruge. 
 
-Visuals i et dashboard kan ikke sorteres. Men i en Power BI-rapport kan du sortere de fleste visualiseringer efter ét felt, og nogle gange to felter, ad gangen. Sortering er ikke tilgængelig for visse typer visualiseringer: trækort, målere, kort osv. 
+Visuals i et dashboard kan ikke sorteres. I en Power BI-rapport kan du sortere de fleste visualiseringer efter ét felt, og nogle gange to felter, ad gangen. Sortering er ikke tilgængelig for visse typer visualiseringer: trækort, målere, kort osv. 
 
 ## <a name="get-started"></a>Kom i gang
 
-Du kommer i gang ved at åbne en rapport, som er blevet delt med dig. Vælg en visualisering (der kan sorteres), og vælg **Flere handlinger** (...).  Der er tre sorteringsindstillinger: **Sortér faldende**, **Sortér stigende**, og **Sortér efter**. 
+Start med at åbne en rapport, som du har oprettet, eller som er blevet delt med dig. Vælg en visualisering (der kan sorteres), og vælg **Flere handlinger** (...).  Der er tre sorteringsindstillinger: **Sortér faldende**, **Sortér stigende**, og **Sortér efter**. 
     
 
-![søjlediagram sorteret alpha af X-akse](media/end-user-change-sort/power-bi-more-actions.png)
+![søjlediagram sorteret alfabetisk efter Y-akse](media/end-user-change-sort/power-bi-actions.png)
 
 ### <a name="sort-alphabetically-or-numerically"></a>Sortér alfabetisk eller numerisk
 
-Visuals kan sorteres alfabetisk efter tekstnavnene på kategorierne i visual'et eller efter de numeriske værdier for hver kategori. Dette diagram er f.eks. sorteret alfabetisk efter kategorien **Store Name** på X-aksen.
+Visuals kan sorteres alfabetisk efter navnene på kategorierne i visual'et eller efter de numeriske værdier for hver kategori. Dette diagram er f.eks. sorteret alfabetisk efter kategorien **Store Name** på X-aksen.
 
 ![søjlediagram sorteret alpha af X-akse](media/end-user-change-sort/powerbi-sort-category.png)
 
-Det er nemt at ændre sorteringen fra en kategori (gem navn) til en værdi (salg pr. kvadratfod) i stedet. Vælg **Flere handlinger** (...), og vælg **Sortér efter**. Vælg en numerisk værdi, der bruges i visual'et.  I dette eksempel har vi valgt **Sales Per Sq Ft**.
+Du kan nemt ændre sorteringen fra en kategori (forretningsnavn) til en værdi (salg pr. kvadratmeter) ved at vælge **Flere handlinger** (...) og **Sortér efter**. Vælg en numerisk værdi, der bruges i visual'et.  I dette eksempel har vi valgt **Sales Per Sq Ft**.
 
 ![Skærmbillede, der viser, hvordan du vælger Sortér efter og derefter en værdi](media/end-user-change-sort/power-bi-sort-value.png)
 
@@ -55,18 +55,18 @@ Hvis det er nødvendigt, kan du ændre sorteringsrækkefølgen mellem stigende o
 ## <a name="sorting-by-multiple-columns"></a>Sortering efter flere kolonner
 Dataene i denne tabel er sorteret efter **Number of customers**.  Det ses på den lille pil under ordet *Number*. Pilen, der peger nedad, hvilket betyder, at kolonnen er sorteret i *faldende* rækkefølge.
 
-![skærmbillede, der viser den første kolonne, som bruges til sortering](media/end-user-change-sort/power-bi-sort-first.png)
+![skærmbillede, der viser den første kolonne, som bruges til sortering](media/end-user-change-sort/power-bi-sort-column.png)
 
 
 Hvis du vil føje flere kolonner til sorteringsrækkefølgen, skal du trykke på Skift og klikke på den kolonneoverskrift, du vil tilføje som den næste i sorteringsrækkefølgen. Hvis du f. eks. klikker på **Number of customers** og trykker på Skift og klikker på **Total revenue**, sorteres tabellen først efter kunder og derefter efter omsætning. Den røde kontur viser områder, hvor sorteringsrækkefølgen er ændret.
 
 ![skærmbillede, der viser den anden kolonne, som bruges til sortering](media/end-user-change-sort/power-bi-sort-second.png)
 
-Hvis du trykker på Skift og klikker på den samme kolonne igen, ændres sorteringsretningen for den pågældende kolonne. Hvis du trykker på Skift og klikker på en kolonne, som du tidligere har føjet til sorteringsrækkefølgen, vises den pågældende kolonne bagest i sorteringsrækkefølgen.
+Hvis du trykker på Skift og klikker på den samme kolonne igen, ændres sorteringsretningen (stigende, faldende) for den pågældende kolonne. Hvis du trykker på Skift og klikker på en kolonne, som du tidligere har føjet til sorteringsrækkefølgen, vises den pågældende kolonne bagest i sorteringsrækkefølgen.
 
 
 ## <a name="saving-changes-you-make-to-sort-order"></a>Gem dine ændringer af sorteringsrækkefølgen
-Filtre, udsnitsværktøjer, sortering og andre ændringer af datavisningen, du foretager, gemmes i Power BI-rapporter – selvom du arbejder i [Læsevisning](end-user-reading-view.md). Det betyder, at hvis du navigerer væk fra en rapport og vender tilbage igen senere, er dine sorteringsændringer blevet gemt.  Hvis du vil ændre indstillingerne tilbage til de indstillinger, som rapportens *designer* oprindeligt valgte, skal du vælge **Nulstil til standard** på den øverste menulinje. 
+Filtre, udsnitsværktøjer, sortering og andre ændringer, du foretager i datavisningen, gemmes i Power BI-rapporter – også selvom du arbejder i [Læsevisning](end-user-reading-view.md). Det betyder, at hvis du navigerer væk fra en rapport og vender tilbage igen senere, er dine sorteringsændringer blevet gemt.  Hvis du vil ændre indstillingerne tilbage til de indstillinger, som rapportens *designer* oprindeligt valgte, skal du vælge **Nulstil til standard** på den øverste menulinje. 
 
 ![fast sortering](media/end-user-change-sort/power-bi-reset.png)
 
@@ -80,7 +80,7 @@ Der kan nogle gange være behov for at sortere en visualisering ved hjælp af et
 
 Kun den person, der har designet rapporten, kan foretage disse ændringer for dig. Du kan finde kontaktoplysninger for *designeren* ved at vælge rapportens navn på overskriftslinjen.
 
-![Rulleliste med kontaktoplysninger](media/end-user-change-sort/power-bi-contact.png)
+![Rulleliste med kontaktoplysninger](media/end-user-change-sort/power-bi-header.png)
 
 Hvis du er *designer* og har redigeringstilladelser til indholdet, kan du læse [Sortér efter kolonne i Power BI Desktop](../create-reports/desktop-sort-by-column.md) for at få mere at vide om, hvordan du opdaterer datasættet og aktiverer denne type sortering.
 

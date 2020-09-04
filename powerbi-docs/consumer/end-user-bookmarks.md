@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/18/2020
+ms.date: 08/26/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: f8bd09bd55694bbd7c6a991d502dde45dad5f2e4
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: f865815c76df179c87c1487e1243c37108375167
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162060"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937676"
 ---
 # <a name="what-are-bookmarks"></a>Hvad er bogmærker?
 
@@ -29,18 +29,24 @@ Bogmærker kan bruges til mange ting. Lad os sige, at du opdager en interessant 
 
 Du kan også oprette en samling af bogmærker, arrangere dem i den ønskede rækkefølge og efterfølgende gennemgå hvert bogmærke i en præsentation for at fremhæve en række indsigter, der fortæller en historie.  
 
-![Vis ruden Bogmærker ved at vælge den på båndet.](media/end-user-bookmarks/power-bi-select-bookmark.png)
+![Vis ruden Bogmærker ved at vælge den på båndet.](media/end-user-bookmarks/power-bi-bookmark-icon.png)
 
 ## <a name="open-bookmarks"></a>Åbn bogmærker
-Hvis du vil åbne ruden Bogmærker, skal du vælge **Bogmærker** > **Vis flere bogmærker** på menulinjen. Hvis du vil vende tilbage til den oprindelige publicerede visning af rapporten, skal du vælge **Nulstil til standard**.
+Hvis du vil åbne ruden Bogmærker, skal du vælge **Bogmærker** > **Vis flere bogmærker** på menulinjen. 
+
+![skærmbillede med rapportlærred, hvor ruden Bogmærker er åben.](media/end-user-bookmarks/power-bi-show-bookmarks.png)
+
+Hvis du vil vende tilbage til den oprindelige publicerede visning af rapporten, skal du vælge ikonet **nulstil**.
+
+![skærmbillede med ikonet Genindlæs valgt](media/end-user-bookmarks/power-bi-revert.png)
 
 ### <a name="report-bookmarks"></a>Rapportbogmærker
-Hvis *rapportdesigneren* har medtaget rapportbogmærker, kan du finde dem under overskriften **Rapportbogmærker**. Denne rapportside har to bogmærker, B1 og B2. 
+Hvis *rapportdesigneren* har medtaget rapportbogmærker, kan du finde dem under overskriften **Rapportbogmærker**. Denne rapportside indeholder fire bogmærker: B1, B2, VanArsdel YTD og All YTD. **All YTD** er valgt.
 
 > [!NOTE]
 > Du skal bruge Power BI Pro eller Premium for at få vist delte rapporter. 
 
-![Vis rapportbogmærker.](media/end-user-bookmarks/power-bi-report.png)
+![Vis rapportbogmærker.](media/end-user-bookmarks/power-bi-bookmark-list.png)
 
 Vælg et bogmærke for at skifte til den pågældende rapportvisning. 
 
@@ -48,26 +54,32 @@ Vælg et bogmærke for at skifte til den pågældende rapportvisning.
 
 ### <a name="personal-bookmarks"></a>Personlige bogmærker
 
-Når du opretter et bogmærke, gemmes følgende elementer sammen med bogmærket:
+Hvis du kan få vist en rapport, kan du også tilføje personlige bogmærker.  Når du opretter et bogmærke, gemmes følgende elementer sammen med bogmærket:
 
 * Den aktuelle side
 * Filtre
 * Udsnit, herunder udsnitstypen (f.eks. rulleliste eller rullemenu) og udsnitstilstand
 * Tilstand for visuel markering (f.eks. tværgående fremhævningsfiltre)
-* Sorteringsrækkefølgen
+* Sorteringsrækkefølge
 * Placering af detailudledning
 * Synlighed (for et objekt i ruden **Markering**)
 * Tilstanden Fokus eller **Spotlight** for et synligt objekt
 
-Konfigurer en rapportside, som du ønsker, den skal vises i bogmærket. Når din rapportside og dine visuelle elementer er arrangeret, som du ønsker det, skal du vælge **Tilføj** i ruden **Bogmærker** for at tilføje et bogmærke. I dette eksempel har vi tilføjet nogle filtre for område og dato. 
+Konfigurer en rapportside, som du ønsker, den skal vises i bogmærket. I dette eksempel:
 
-![Tilføj personlige bogmærker.](media/end-user-bookmarks/power-bi-bookmark-personal.png)
+1. Vi har ændret det eksisterende filter for Dato i ruden **Filtre**,
+1. ændret det eksisterende filter for Områder i ruden **Filtre** og
+1.  og markeret et datapunkt på visualiseringen med kransediagrammet for at lave en krydsfiltrering og en tværgående fremhævning på rapportlærredet. 
+
+Når din rapportside og dine visuelle elementer er arrangeret, som du ønsker det, skal du vælge **Tilføj** i ruden **Bogmærker** for at tilføje et bogmærke. 
+
+![Tilføj personlige bogmærker.](media/end-user-bookmarks/power-bi-personal.png)
 
 **Power BI** opretter et personligt bogmærke og giver det et standardnavn eller et navn, du angiver. Du kan *omdøbe*, *slette* eller *opdatere* dit bogmærke ved at vælge ellipsen ud for bogmærkets navn og derefter vælge en handling i den viste menu.
 
-Når du har et bogmærke, kan du få vist det ved ganske enkelt at vælge bogmærket i ruden **Bogmærker**. 
+Når du har et bogmærke, kan du få vist bogmærket ved at vælge det i ruden **Bogmærker**. 
 
-![Tilføj personlige bogmærker.](media/end-user-bookmarks/power-bi-bookmark-west.png)
+![Vis et bestemt bogmærke ved at vælge det.](media/end-user-bookmarks/power-bi-selected.png)
 
 
 <!--
@@ -91,7 +103,7 @@ I tilstanden **Vis** er der nogle funktioner, du skal lægge mærke til:
 - Bogmærkets titellinje har pile, som du kan bruge til at flytte til næste eller forrige bogmærke.
 - Du kan afslutte tilstanden **Vis** ved at vælge **Afslut** i ruden **Bogmærker** eller ved at vælge krydset (**X**) i bogmærkets titellinje.
 
-![Diasshow med bogmærker](media/end-user-bookmarks/power-bi-slideshow.png)
+![Diasshow med bogmærker](media/end-user-bookmarks/power-bi-view-bookmarks.png)
 
 Når du er i tilstanden **Vis**, kan du lukke ruden **Bogmærker** (ved at klikke på krydset (X) i ruden) for at give mere plads til præsentationen. Mens du er i tilstanden **Vis**, er alle visualiseringer interaktive og tilgængelige for tværgående fremhævning, ligesom når du interagerer med dem. 
 
@@ -156,7 +168,7 @@ Note that selecting **Ungroup** for any bookmark from a group takes all bookmark
 
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
-I denne version af **bogmærker** er der nogle få begrænsninger og overvejelser at tage betragtning.
+I denne version af **bogmærker** er der nogle få begrænsninger og overvejelser, du skal være opmærksom på.
 
 * De fleste Power BI-visuals fungerer fint sammen med bogmærker. Hvis du oplever problemer med et bogmærke og et Power BI-visual, kan du kontakte forfatteren af dette visual og bede om at få føjet understøttelse af bogmærker til deres visuals.
 * Hvis du tilføjer et visuelt element på en rapportside, når du har oprettet et bogmærke, vises det visuelle element i standardtilstanden. Det betyder også, at hvis du vil indføre et udsnitsværktøj på en side, hvor du tidligere har oprettet bogmærker, optræder udsnittet i standardtilstanden.

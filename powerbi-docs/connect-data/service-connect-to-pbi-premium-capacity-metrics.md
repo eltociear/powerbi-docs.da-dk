@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 05/18/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 612c54a201c947309394c442ba8b8ec1ed567879
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: eb8d7d59e52414620aa888230af59ef98da9e5af
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229950"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937625"
 ---
 # <a name="connect-to-power-bi-premium-capacity-metrics"></a>Opret forbindelse til Power BI Premium Capacity Metrics
 Overvågning af dine kapaciteter er afgørende for at træffe beslutninger om den bedste måde, du kan udnytte dine ressourcer i Premium-kapaciteten på. Appen Power BI Premium Capacity Metrics giver de mest detaljerede oplysninger om ydeevnen af dine kapaciteter.
@@ -63,6 +63,7 @@ Når du har installeret appen og oprettet forbindelse til datakilderne, kan du t
 1. I den viste dialogboks skal du angive UTC-forskydningen, dvs. den forskel i timer, der er mellem Coordinated Universal Time og din tidszone. Klik derefter på **Next** (Næste).
   
    ![UTC-dialogboksen i appen Power BI Premium Capacity Metrics](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-setutc-dialog.png)
+   **Bemærk: Til angivelse af halve timer anvendes decimalformatet (f.eks. 5,5 og 2,5).**
 
 1. I den næste dialogboks, der vises, behøver du ikke at foretage dig noget. Du skal blot vælge **Log på**.
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/18/2020
+ms.date: 08/27/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 7a1fabd1c61219d7f195253a4384accfd2521d24
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 44aeb5030008d17a9998e8357f23d47524f11512
+ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235995"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "89040218"
 ---
 # <a name="refresh-summaries-for-power-bi"></a>Opdateringsoversigter i Power BI
 
@@ -60,6 +60,8 @@ Visningen Plan er meget nyttig til at fastslå, om der er nok plads mellem de pl
 ![Visningen Plan](media/refresh-summaries/refresh-summaries-02.jpg)
 
 Kolonnen *Reserveret opdateringstid (minutter)* er en beregning af gennemsnittet af op til 60 poster for hvert tilknyttet datasæt. Den numeriske værdi for hvert 30-minutters tidsinterval er det samlede antal minutter beregnet for alle planlagte opdateringer, som er planlagt til at starte i tidsintervallet **og** eventuelle planlagte opdateringer, som er angivet til at starte i det *forrige* tidsinterval, men hvis gennemsnitlige varighed løber over i det valgte tidsinterval.
+
+Kolonnen *Opdateringstid til rådighed (minutter)* er en beregning af, hvor mange minutter der er til rådighed til opdatering for hvert tidspunkt fratrukket en eventuel opdatering, som allerede er planlagt til det pågældende tidspunkt. Hvis dit P2-abonnement f.eks. muliggør 12 samtidige opdateringer, har du 12 tidsintervaller af 30 minutters varighed, hvilket vil sige 12 opdateringer x 30 minutter = 360 minutter til rådighed til opdatering for det pågældende tidspunkt. Hvis du har en opdatering på 20 minutter, som allerede er booket til det pågældende tidspunkt, er den *opdateringstid, du har til rådighed (i minutter)* for det pågældende tidspunkt 340 minutter (360 minutter minus de 20 minutter, som allerede er booket = 340 minutter). 
 
 Du kan vælge et tidsinterval og derefter vælge den tilknyttede knap med **detaljer** for at se, hvilke planlagte opdateringshændelser der bidrager til den reserverede opdateringstid, deres ejere, og hvor lang tid det tager at fuldføre dem.
 

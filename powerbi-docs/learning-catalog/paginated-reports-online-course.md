@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: d4d5386a7e56618a761e541ba7942778a09a7008
-ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
+ms.openlocfilehash: 533dba01bb975d774741643771415aaafa8f155c
+ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84427472"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89092285"
 ---
 # <a name="power-bi-paginated-reports-in-a-day-course"></a>Kurset Sideinddelte Power BI-rapporter på én dag
 
@@ -83,28 +83,29 @@ Se velkomst- og introduktionsvideoen for at starte kurset.
 
 Du kan downloade og konfigurere en selvstudiepakke, der består af præsentationsindhold og otte praktiske laboratorier:
 
-1. Brug [dette link](https://aka.ms/priad-student) for at downloade selvstudiepakken (. zip) til din pc.
-1. Åbn filegenskaberne, og markér feltet Fjern blokering (Windows kan have markeret filen som potentielt upålidelig).
-1. Udpak filindholdet til en mappe i filsystemet. Vi anbefaler, at du opretter en mappe, der er let at finde, måske ved at kalde den **Kurser**. Laboratoriedokumenterne refererer til denne placering som **&lt;CourseFolder&gt;** .
+1. Brug [dette link](https://aka.ms/priad-student) til at downloade selvstudiepakken (.zip) til din pc (Windows 7 eller nyere).
+1. Åbn filegenskaberne for .zip-filen, og markér feltet Fjern blokering (Windows kan have markeret filen som potentielt upålidelig).
+1. Opret en kursusmappe i roden. Vi anbefaler, at du f.eks. kalder den "C:\Uddannelse". Det er vigtigt, at du husker placeringen, da du har brug for at åbne kursusfilerne under laboratorieøvelserne. Alle laboratoriedokumenterne henviser til denne placering som **&lt;CourseFolder&gt;** .
+1. Pak filen **PowerBIPRIAD-Student.zip** ud i rodmappen med kursusfilerne.
+1. Gå til mappen **&lt;CourseFolder&gt;\PowerBIPRIAD**, åbn filen **ReadMe.txt**, og følg installationsvejledningen.
 
-Når den er udpakket, har du mappen **PowerBIPRIAD**, og den indeholder følgende mapper:
-
-- **Lab01A** (og alle andre laboratoriemapper). Laboratoriemapperne indeholder laboratoriedokument- og laboratorieressourcerne, som kan indeholde aktiver og løsningsfiler.
-- **MySolution**: I denne mappe gemmes dine løsningsfiler. Du får besked i vejledningen til laboratoriet, når du skal bruge den.
-- **Presentation**: Denne mappe indeholder den kursuspræsentationsfil, der er tilgængelig som et PDF-dokument.
-
-### <a name="get-started-with-the-kit"></a>Kom godt i gang med pakken
-
-Vi anbefaler, at du først ser onlinekurset. Du kan henvise til præsentationsteorien ved at åbne filen **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\ PowerBIPRIAD_Presentation.pdf**. Præsentationen omfatter otte laboratorieslides, der angiver, hvornår det er tid til at afprøve teorien i praksis. Den indeholder også mange links til ressourcer, der kan hjælpe dig med at finde relateret indhold.
-
-Når du er klar til at begynde det første laboratorium, skal du åbne filen **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\ PowerBIPRIAD_Lab01A. pdf**. Dette dokument hjælper dig med at logge på Power BI-tjenesten, overføre et datasæt og derefter installere [Power BI Report Builder](https://aka.ms/pbireportbuilder).
+> [!TIP]
+> Filen **ReadMe. txt**, laboratoriedokumenterne og præsentationsfilen (PDF) er tilgængelige på engelsk og følgende otte sprog:
+> - Tysk (de-DE)
+> - Spansk (es-ES)
+> - Fransk (fr-FR)
+> - Italiensk (it-IT)
+> - Japansk (ja-JP)
+> - Koreansk (ko-KR)
+> - Portugisisk, brasiliansk (pt-BR)
+> - Kinesisk, forenklet (zh-CN)
 
 > [!NOTE]
 > Du er ansvarlig for at have din egen Power BI-konto. Hvis du ikke allerede har en, kan du se [Tilmeld dig Power BI som enkeltperson](../fundamentals/service-self-service-signup-for-power-bi.md).
 >
 > Du skal logge på Power BI for at udgive en Power BI Desktop-fil til et arbejdsområde. Udgivelsen resulterer i et datasæt, der bruges som en rapportdatakilde. Du behøver ikke at have en Power BI Pro-licens eller et Power BI Premium-abonnement for at bruge et datasæt som en rapportdatakilde.
 >
-> Nogle øvelser omfatter publicering af sideinddelte rapporter i et arbejdsområde. Du kan kun åbne en sideinddelt rapport, når den er gemt i et arbejdsområde i en [dedikeret kapacitet](../admin/service-premium-what-is.md#dedicated-capacities), hvor arbejdsbelastningen for sideinddelte rapporter er aktiveret. Hvis du ikke har adgang til et egnet arbejdsområde, får du vist et link, hvor du kan se en video, der viser rapportudgivelse i stedet for.
+> Nogle øvelser omfatter publicering af sideinddelte rapporter i et arbejdsområde. Du kan kun åbne en sideinddelt rapport, når den er gemt i et arbejdsområde i en [dedikeret kapacitet](../admin/service-premium-what-is.md#dedicated-capacities), hvor arbejdsbelastningen for sideinddelte rapporter er aktiveret. Hvis du ikke har adgang til et egnet arbejdsområde, får du i stedet vist et link i laboratoriet, hvor du kan se en video om rapportudgivelse.
 
 ## <a name="instructor-kit"></a>Instruktørpakke
 

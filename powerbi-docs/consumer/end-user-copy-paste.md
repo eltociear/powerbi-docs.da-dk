@@ -6,15 +6,15 @@ ms.reviewer: maggie.tsang
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 06/25/2020
+ms.date: 08/25/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: dc5cba8953a527e87768815759a14dd8f2cf7ee1
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 6e1850e281c58bd89597af2bbd9ade0a769071ae
+ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537843"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "89040241"
 ---
 # <a name="copy-a-visual-as-an-image-to-your-clipboard"></a>Kopiér en visualisering som et billede til Udklipsholder
 
@@ -35,15 +35,15 @@ Når du kopierer et statisk billede af en visualisering, får du en kopi af visu
 
 2. I øverste højre hjørne i visualiseringen skal du vælge **Flere handlinger (...)** og vælge **Kopiér visualisering som billede**. 
 
-    ![Ikonet Kopiér visualisering som billede er vist](media/end-user-copy-paste/power-bi-copy-dashboard.png)
+    ![En rullemenu med indstillingen Kopiér visualisering som billede](media/end-user-copy-paste/power-bi-copy-dashboard.png)
 
 3. Når dialogboksen **Din visualisering er klar til kopiering** vises, skal du vælge **Kopiér til Udklipsholder**.
 
     ![dialogboks med indstillingen Kopiér til Udklipsholder](media//end-user-copy-paste/power-bi-copied.png)
 
-4. Når din visualisering er kopieret, skal du indsætte den i et andet program ved hjælp af **Ctrl + V** eller højreklikke på > Indsæt. På skærmbilledet nedenfor har vi indsat visualiseringen i Microsoft Word. 
+4. Når visualiseringen er kopieret, skal du indsætte den i et andet program ved hjælp af **Ctrl + V** eller **højreklik** > **Indsæt**. På skærmbilledet nedenfor har vi indsat visualiseringen i Microsoft Word. 
 
-    ![visualisering indsat i Outlook](media//end-user-copy-paste/power-bi-paste-word.png)
+    ![visualisering indsat i Microsoft Word](media//end-user-copy-paste/power-bi-paste-word.png)
 
 ### <a name="copy-from-a-report-visual"></a>Kopiér fra en visualisering i en rapport 
 
@@ -58,7 +58,7 @@ Når du kopierer et statisk billede af en visualisering, får du en kopi af visu
     ![dialogboks med indstillingen Kopiér til Udklipsholder](media//end-user-copy-paste/power-bi-copied.png)
 
 
-4. Når din visualisering er kopieret, skal du indsætte den i et andet program ved hjælp af **Ctrl + V** eller højreklikke på > Indsæt. På skærmbilledet nedenfor har vi indsat visualiseringen i en mail.
+4. Når visualiseringen er kopieret, skal du indsætte den i et andet program ved hjælp af **Ctrl + V** eller **højreklik** > **Indsæt**. På skærmbilledet nedenfor har vi indsat visualiseringen i en mail.
 
     ![visualisering indsat i Outlook](media//end-user-copy-paste/power-bi-copy-email.png)
 
@@ -82,7 +82,7 @@ Svar: Vi understøtter i øjeblikket oprindelige Power BI-visualiseringer og cer
 - ESRI og andre kortvisualiseringer 
 - Python-visualiseringer 
 - R-visualiseringer 
-- PowerApps    
+- Visualiseringer i PowerApps   
 
 Svar: Muligheden for at kopiere et visuelt element kan slås fra af IT-afdelingen eller Power BI-administratoren.
 
@@ -94,6 +94,8 @@ Svar: Der er begrænsninger for brugerdefinerede visualiseringer og animerede vi
 
 ## <a name="next-steps"></a>Næste trin
 Få mere at vide om [Visualiseringer i Power BI-rapporter](end-user-visual-type.md)
+
+Hvis du har redigeringstilladelser i en rapport, kan du [kopiere og indsætte visualiseringer i den pågældende rapport](../visuals/power-bi-visualization-copy-paste.md). 
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

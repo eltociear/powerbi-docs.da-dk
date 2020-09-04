@@ -8,15 +8,15 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/04/2020
 ms.author: maggies
-ms.openlocfilehash: 9dface817b9ec5421ba9ea93abb8037e3e70029d
-ms.sourcegitcommit: 4130e5e6947b809df628370cc80c00194243468d
+ms.openlocfilehash: 08294e1320e603131beb0ca332b0f85ee51ea8bb
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88857804"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937556"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakilder på Power BI-rapportserver
-Power BI-rapporter kan oprette forbindelse til en række datakilder. Der er adgang til forskellige datakilder, afhængigt af hvordan dataene bruges. Dataene kan importeres, eller der kan foretages forespørgsler om data direkte ved hjælp af DirectQuery eller en direkte forbindelse til SQL Server Analysis Services. Nogle datakilder, der understøttes i Power BI Desktop, er optimeret til Power BI-rapportserver, men de er ikke optimeret til Power BI-rapporter, der publiceres til Power BI-rapportserver. Se de datakilder, der understøttes begge steder, på følgende liste.
+Power BI-rapporter kan oprette forbindelse til en række datakilder. Der er adgang til forskellige datakilder, afhængigt af hvordan dataene bruges. Dataene kan importeres, eller der kan foretages forespørgsler om data direkte ved hjælp af DirectQuery eller en direkte forbindelse til SQL Server Analysis Services. Nogle datakilder, som er tilgængelige i Power BI Desktop, er optimeret til Power BI-rapportserver, men understøttes ikke, når der publiceres til Power BI-rapportserver.
 
 Disse datakilder gælder kun for Power BI-rapporter, der bruges på Power BI-rapportserver. Du kan finde oplysninger om de datakilder, der understøttes sammen med sideinddelte rapporter (.rdl), under [Datakilder, der understøttes af Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
 
