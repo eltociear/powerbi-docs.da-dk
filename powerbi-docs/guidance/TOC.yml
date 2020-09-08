@@ -118,6 +118,8 @@
               href: report-performance-troubleshoot.md
             - name: Bedste praksis for udrulningspipelines
               href: ../create-reports/deployment-pipelines-best-practices.md
+            - name: Få adgang til Power BI-aktivitetsloggen
+              href: admin-activity-log.md
     - name: Migrer til Power BI
       items:
         - name: Oversigt over migrering
