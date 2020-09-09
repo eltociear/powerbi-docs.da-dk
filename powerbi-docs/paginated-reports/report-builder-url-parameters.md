@@ -9,12 +9,12 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 05/01/2020
-ms.openlocfilehash: fd92e64ac04a31446214bd6f1661d9ba5c1358d9
-ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
+ms.openlocfilehash: 36c14ec0da3c7818a6c938e0fd47f4a6476470f6
+ms.sourcegitcommit: d91c060913fcb526f9a01dc48e218485daf55b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86557100"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89562415"
 ---
 # <a name="url-parameters-in-paginated-reports-in-power-bi"></a>URL-parametre i sideinddelte rapporter i Power BI
 
@@ -123,7 +123,6 @@ CSV:
 - rdl:Encoding=string
 - rdl:ExcelMode=true/false
 - rdl:FieldDelimiter=string
-- rdl:FileExtension=string
 - rdl:NoHeader=true/false
 - rdl:Qualifier=string
 - rdl:RecordDelimiter=string
@@ -169,7 +168,6 @@ XML:
 - rdl:OmitNamespace=true/false
 - rdl:OmitSchema=true/false
 - rdl:Encoding=string
-- rdl:FileExtension=string
 - rdl:Schema=true/false
 
 **Åbn link i samme browservindue** Du kan føje 'rdl:targetSameWindow=true' til URL-adressen til links i din rapport for at give Power BI mulighed for at åbne dette link i det samme browservindue. Hvis du vil have oplysninger om, hvordan du føjer links til en rapport, skal du se [Føj et link til en URL-adresse](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs) i dokumentationen til SQL Server Reporting Services.

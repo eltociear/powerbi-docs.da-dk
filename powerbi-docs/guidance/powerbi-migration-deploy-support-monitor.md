@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 58eb9af4975c0afeb12a71a880711ddd73e64d50
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: 59f340e6325cf846d1b0453a94a1015b50a987c4
+ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803196"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89401996"
 ---
 # <a name="deploy-to-power-bi"></a>Udrul til Power BI
 
@@ -87,7 +87,7 @@ Vigtige aktiviteter under en udrulning til produktionsarbejdsområdet omfatter t
 
 - **Administration af ændringer:** Hvis det er nødvendigt, kan du få godkendelse til at udrulle og formidle udrulningen til brugerpopulationen ved hjælp af din standardpraksis for administration af ændringer. Der kan være et godkendt vindue til administration af ændringer, hvor udrulninger til produktion er tilladt. Normalt anvendes det for it-administreret indhold, og det anvendes meget sjældnere for selvbetjent indhold.
 - **Plan for annullering af opdatering:** I forbindelse med migrering forventes det, at det er den første migrering af en ny løsning. Hvis der allerede findes indhold, er det klogt, at have en plan for at vende tilbage til den forrige version, hvis det skulle blive nødvendigt. Til dette formål fungerer det godt, hvis du har tidligere versioner af Power BI Desktop-filerne (ved hjælp af versionsstyring på SharePoint eller OneDrive).
-- **Forbindelsesstrenge og -parametre:** Tilpas forbindelsesstrenge for datasættet, når datakilden varierer mellem test og produktion. [Parameterisering](/connect-data/service-parameters.md) kan bruges effektivt til dette formål.
+- **Forbindelsesstrenge og -parametre:** Tilpas forbindelsesstrenge for datasættet, når datakilden varierer mellem test og produktion. [Parameterisering](../connect-data/service-parameters.md) kan bruges effektivt til dette formål.
 - **Opdatering af data:** [Planlæg opdateringen af datasættet](../connect-data/refresh-scheduled-refresh.md) for alle importerede datasæt.
 - **Indhold i arbejdsområde:** Publicer datasæt og rapporter i produktionsarbejdsområdet, og opret dashboards. [Udrulningspipelines](../create-reports/deployment-pipelines-overview.md) kan forenkle processen for udrulning i udviklings-, test- og produktionsarbejdsområder, hvis dit indhold er blevet publiceret til arbejdsområder i en Premium-kapacitet.
 - **App:** Hvis apps er en del af din strategi til distribution af indhold, kan du publicere en [app](../consumer/end-user-apps.md) ved hjælp af indholdet fra produktionsarbejdsområdet.

@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 29b821dc44f7eacb07f0df31100df2ff837c2189
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: 60a22946ccde642987e748904d0dc7fe636ec700
+ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803174"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89401973"
 ---
 # <a name="gather-requirements-to-migrate-to-power-bi"></a>Indsaml krav til migrering til Power BI
 
@@ -67,7 +67,7 @@ Kompiler detaljerede oplysninger vedrørende data, f. eks.:
 - **Behov i forbindelse med datastruktur og rensning:** Fastlæg datastrukturen for hver af de nødvendige datakilder, og i hvilket omfang [datarensnings](../transform-model/desktop-query-overview.md)aktiviteter er nødvendige.
 - **Dataintegration:** Vurder, hvordan dataintegration håndteres, når der er flere datakilder, og hvordan [relationer](../transform-model/desktop-create-and-manage-relationships.md) kan defineres mellem de enkelte modeltabeller. Identificer bestemte dataelementer, der er nødvendige for at forenkle modellen og [reducere dens størrelse](import-modeling-data-reduction.md).
 - **Acceptabel dataventetid:** Fastlæg behovene i forbindelse med dataventetid for hver datakilde. Det påvirker beslutningerne om, hvilken [datalagringstilstand](../transform-model/desktop-storage-mode.md) der skal bruges. Det er også vigtigt at kende dataopdateringshyppigheden for importmodeltabeller.
-- **Datamængde og -skalerbarhed:** Evaluer forventninger til datamængden, som vil indgå i beslutninger om [understøttelse af store modeller](/admin/service-premium-large-models.md) og design af DirectQuery-modeller eller [sammensatte modeller](../transform-model/desktop-composite-models.md). Overvejelser, der er relateret til behov for historiske data, er også vigtige. I forbindelse med større datasæt er det også nødvendigt at fastsætte regler for [trinvis opdatering af data](../admin/service-premium-incremental-refresh.md).
+- **Datamængde og -skalerbarhed:** Evaluer forventninger til datamængden, som vil indgå i beslutninger om [understøttelse af store modeller](../admin/service-premium-large-models.md) og design af DirectQuery-modeller eller [sammensatte modeller](../transform-model/desktop-composite-models.md). Overvejelser, der er relateret til behov for historiske data, er også vigtige. I forbindelse med større datasæt er det også nødvendigt at fastsætte regler for [trinvis opdatering af data](../admin/service-premium-incremental-refresh.md).
 - **Målinger, KPI'er og forretningsregler:** Vurder behovene for målinger, KPI'er og forretningsregler. De påvirker beslutninger om, hvor logikken skal bruges: i datasættet eller i dataintegrationsprocessen.
 - **Masterdata og datakatalog:** Overvej, om der er problemer med masterdata, der kræver opmærksomhed. Find ud af, om integration med et virksomhedsdatakatalog gør dataene nemmere at finde og letter adgangen til definitioner eller opretter ensartet terminologi, der accepteres af organisationen.
 - **Sikkerhed og beskyttelse af personlige oplysninger:** Find ud af, om der er specifikke overvejelser vedrørende sikkerhed eller beskyttelse af personlige oplysninger for datasæt, herunder krav til [sikkerhed på rækkeniveau](../admin/service-admin-rls.md).
