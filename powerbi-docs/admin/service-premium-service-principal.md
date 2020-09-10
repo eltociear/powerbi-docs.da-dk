@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/20/2020
+ms.date: 09/04/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: c62ee84c919e5910d1c1c9e111f19c7b74889b04
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 1b0f63d200a94cb7e6524602203864281efe51c0
+ms.sourcegitcommit: 1f56cdfc05801ffaf41e3b68dc1eb02142acdab3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227206"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490347"
 ---
 # <a name="automate-premium-workspace-and-dataset-tasks-with-service-principals"></a>Automatiser opgaver for arbejdsområder og datasæt i Premium med tjenesteprincipaler
 
@@ -63,11 +63,11 @@ Du skal tilføje tjenesteprincipalen som Medlem eller Administrator af arbejdsom
 
 1. Vælg **Mere** > **Adgang til arbejdsområde** for et arbejdsområde i Power BI-tjenesten.
 
-    ![Indstillinger for arbejdsområde](media/service-premium-service-principal/workspace-access.png)
+    ![Adgangsindstillinger til arbejdsområde](media/service-premium-service-principal/workspace-access.png)
 
 2. Søg efter applikationsnavn, og føj tjenesteprincipalen til arbejdsområdet som **Administrator** eller **Medlem**.
 
-    ![Arbejdsområdeadministrator](media/service-premium-service-principal/add-service-principal-in-the-UI.png)
+    ![Adgangsdialogboks](media/service-premium-service-principal/add-service-principal-in-the-UI.png)
 
 ## <a name="connection-strings-for-the-xmla-endpoint"></a>Forbindelsesstrenge for XMLA-slutpunktet
 
@@ -96,7 +96,7 @@ Invoke-ProcessTable -Server "powerbi://api.powerbi.com/v1.0/myorg/myworkspace" -
 
 ### <a name="amo-and-adomd"></a>AMO og ADOMD
 
-Når du opretter forbindelse til klientprogrammer og webapps, understøtter [AMO-og ADOMD-klientbiblioteker](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers) version 15.0.2 og nyere installerbare pakker fra NuGet tjenesteprincipaler i forbindelsesstrenge ved hjælp af følgende syntaks: `app:AppID` og adgangskode eller `cert:thumbprint`.
+Når du opretter forbindelse til klientprogrammer og webapps, understøtter [AMO-og ADOMD-klientbiblioteker](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers) version 15.1.42.26 (juni 2020) og nyere installerbare pakker fra NuGet tjenesteprincipaler i forbindelsesstrenge ved hjælp af følgende syntaks: `app:AppID` og adgangskode eller `cert:thumbprint`.
 
 I følgende eksempel bruges `appID` og `password` til at udføre opdateringshandlingen for en modeldatabase:
 

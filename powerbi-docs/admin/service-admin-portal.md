@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/10/2020
+ms.date: 09/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 19b4d64039333a18405ac57d98773e9e23857a18
-ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
+ms.openlocfilehash: e819902328f49ab06a65869066ab2b2dabce6610
+ms.sourcegitcommit: 1f56cdfc05801ffaf41e3b68dc1eb02142acdab3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88049766"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490410"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -141,7 +141,7 @@ Hvis du vil bruge overvågningslogs, skal du sørge for, at indstillingen [**Opr
 
 På følgende billede ses flere indstillinger under fanen **Lejerindstillinger**.
 
-![Lejerindstillinger](media/service-admin-portal/powerbi-admin-tenant-settings.png)
+![Lejerindstillinger](media/service-admin-portal/powerbi-admin-tenant-settings-2.png)
 
 > [!NOTE]
 > Det kan tage op til 15 minutter, før indstillingen træder i kraft for alle i din organisation.
@@ -251,18 +251,36 @@ Når indstillingen er aktiveret, vises Office 365-grupper, der er oprettet for n
 
 ## <a name="export-and-sharing-settings"></a>Indstillinger for eksport og deling
 
-### <a name="share-content-with-external-users"></a>Del indhold med eksterne brugere
+### <a name="allow-azure-active-directory-guest-users-to-access-power-bi"></a>Tillad, at Azure Active Directory gæstebrugere får adgang til Power BI
 
-Brugere i organisationen kan dele dashboards, rapporter og apps med brugere uden for organisationen. Få mere at vide om [ekstern deling](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
+Hvis du aktiverer denne indstilling, kan gæstebrugere af Azure Active Directory-B2B få adgang til Power BI. Når du deaktiverer denne indstilling, får gæstebrugere vist en fejl, når de forsøger at få adgang til Power BI. Når du deaktiverer denne indstilling for hele organisationen, forhindrer den også brugerne i at invitere gæster til din organisation og fra at tildele tilladelser til individuelle gæstebrugere. Brug indstillingen for bestemte sikkerhedsgrupper til at styre, hvilke gæstebrugere der har adgang til Power BI.
 
-![Indstilling for eksterne brugere](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
+![Tillad, at Azure Active Directory gæstebrugere får adgang til Power BI](media/service-admin-portal/powerbi-admin-allow-aad-b2b-guests.png)
 
-På følgende billede ses den meddelelse, som vises, når du deler med en ekstern bruger.
+### <a name="allow-giving-permissions-to-existing-azure-active-directory-guest-users"></a>Gør det muligt at give tilladelser til eksisterende gæstebrugere af Azure Active Directory
 
-![Deling med ekstern bruger](media/service-admin-portal/powerbi-admin-sharing-external.png)  
+Når denne funktion er aktiveret, kan brugere i din organisation give tilladelse til individuelle gæstebrugere via tilladelser eller delingsoplevelser i Power BI. Når den er deaktiveret for en bruger, kan vedkommende ikke tildele tilladelser til eller invitere gæstebrugere til Power BI.
+
+![Gør det muligt at give tilladelser til eksisterende gæstebrugere af Azure Active Directory](media/service-admin-portal/powerbi-admin-allow-grant-access-to-aad-b2b-guests.png)
+
 
 > [!IMPORTANT]
-> Denne indstilling styrer, om brugere i Power BI kan invitere eksterne brugere til at blive Azure AD B2B-gæstebrugere (Azure Active Directory B2B) i din organisation via Power BI. Når denne funktion er aktiveret, kan brugere, der har rollen Kan invitere gæster i Azure AD, tilføje eksterne mailadresser ved deling af rapporter, dashboards og Power BI-apps. Den eksterne modtager inviteres til at deltage i din organisation som en Azure AD B2B-gæstebruger. Det er vigtigt at bemærke, at når denne indstilling deaktiveres, vises eksterne brugere, der allerede er Azure AD B2B-gæstebrugere i din organisation, stadig på grænseflader med personvælgere i Power BI og kan få tildelt adgang til elementer, arbejdsområder og apps.
+>  Denne indstilling forhindrer ikke, at gæstebrugere tildeles tilladelser i alle tilfælde. Indstillingen forhindrer kun tildeling af adgang til individuelle gæstebrugere. Gæstebrugere kan stadig få adgang via brugergrupper, f.eks. sikkerhed, Office 365-grupper eller distributionslister. 
+
+Når en bruger, der ikke har ret til at give tilladelser til gæstebrugere, forsøger at gøre det, vises der en fejlmeddelelse i brugergrænsefladen. Når du ændrer tilladelser til et element, skal brugere, der ikke har ret til at give tilladelse til gæster, fjerne alle gæstebrugere fra adgangslisten, før de kan tildele eller ændre tilladelser til elementet. 
+
+### <a name="invite-external-users-to-your-organization"></a>Inviter eksterne brugere til din organisation 
+
+Indstillingen **Inviter eksterne brugere til din organisation** hjælper organisationer med at vælge, om nye eksterne brugere kan inviteres til organisationen via Power BI delings- og tilladelsesoplevelser. Hvis en ekstern bruger ikke allerede er gæstebruger i organisationen, kan vedkommende ikke føjes til organisationen via Power BI, når indstillingen er deaktiveret. 
+
+![Inviter eksterne brugere til din organisation](media/service-admin-portal/powerbi-admin-allow-invite-aad-b2b-guests.png)
+
+> [!IMPORTANT]
+> Denne indstilling blev tidligere kaldt "Del indhold med eksterne brugere". Det reviderede navn er en mere præcis afspejling af indstillingens funktionalitet.
+
+Hvis du vil invitere eksterne brugere til din organisation, skal en bruger også have rollen for invitation af gæster til Azure Active Directory. Denne indstilling styrer kun muligheden for at invitere via Power BI. 
+
+Når indstillingen **Gør det muligt at give tilladelser til eksisterende gæstebrugere af Azure Active Directory** er deaktiveret for en bruger, kan vedkommende heller ikke invitere eksterne brugere til din organisation via Power BI.
 
 ### <a name="publish-to-web"></a>Publicer på internettet
 

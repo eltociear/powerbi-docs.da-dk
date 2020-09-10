@@ -1,5 +1,5 @@
 ---
-title: Brug sikkerhed på rækkeniveau med integreret Power BI-indhold
+title: Brug af sikkerhed på rækkeniveau med integreret Power BI-indhold
 description: Få mere at vide om, hvordan du integrerer Power BI-indhold i din app
 author: KesemSharabi
 ms.author: kesharab
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: b412af6899b9299fc4fde8ea217569747a445e45
-ms.sourcegitcommit: 52f365af6ea5359e39d4d4547f1d61e5e0d08c5f
+ms.openlocfilehash: e2e2f924f190b7c5904cfe29d1d3cae341974f38
+ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84795133"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402042"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sikkerhed på rækkeniveau med Power BI Embedded
 
@@ -66,11 +66,11 @@ Sådan gør du:
 3. Angiv DAX-udtrykket **[District Manager] = USERNAME()** i tabellen **District**.
 
     ![DAX-udtryk til regel for sikkerhed på rækkeniveau](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
-4. Du kan kontrollere, at reglen virker, ved at vælge **Vis som roller** under fanen **Udformning** og derefter vælge både rollen **Chef**, som du har oprettet, og rollen **Andre brugere**. Angiv **AndrewMa** som bruger.
+4. Du kan kontrollere, at reglen virker, ved at vælge **Vis som roller** under fanen **Udformning** og derefter vælge både rollen **Chef**, som du har oprettet, og rollen **Andre brugere**. Angiv **Andrew Ma** som bruger.
 
     ![Dialogboksen Vis som roller](media/embedded-row-level-security/powerbi-embedded-new-role-view.png)
 
-    De data, der nu bliver vist i rapporten, er dem, der bliver vist, når du logger på som **AndrewMa**.
+    De data, der nu bliver vist i rapporten, er dem, der bliver vist, når du logger på som **Andrew Ma**.
 
 Når du anvender filteret på den måde, som vi gjorde her, vises alle de relevante værdier fra tabellerne **District**, **Store** og **Sales**. Men på grund af filtreringsretningen for relationen mellem tabellerne **Sales** og **Time**, vises værdierne fra tabellerne **Sales** og **Item** og **Item** og **Time** ikke. Du kan få mere at vide om tovejskrydsfiltrering ved at downloade hvidbogen [Bidirectional cross-filtering in SQL Server Analysis Services 2016 and Power BI Desktop](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
 

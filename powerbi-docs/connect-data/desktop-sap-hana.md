@@ -1,6 +1,6 @@
 ---
-title: Brug SAP HANA i Power BI Desktop
-description: Brug SAP HANA i Power BI Desktop
+title: Brug SAP HANA i Power BI
+description: Brug SAP HANA i Power BI
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
@@ -10,14 +10,14 @@ ms.topic: how-to
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3d78ded05d199676708c0000cab043226a47b166
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 69019abf60f2633bcb764b11c0ac3310911fab62
+ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222793"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89401927"
 ---
-# <a name="connect-to-sap-hana-databases-in-power-bi-desktop"></a>Opret forbindelse til SAP Hana-databaser i Power BI Desktop
+# <a name="connect-to-sap-hana-databases-in-power-bi"></a>Opret forbindelse til SAP HANA-databaser i Power BI
 
 Med Power BI Desktop har du nu adgang til *SAP HANA*-databaser. Hvis du vil bruge SAP HANA, skal SAP HANA ODBC-driveren være installeret på den lokale klientcomputer, for at Power BI Desktop SAP HANA-dataforbindelsen kan fungere korrekt. Du kan downloade SAP HANA-klientværktøjer fra [SAP-udviklingsværktøjer](https://tools.hana.ondemand.com/#hanatools), som indeholder den nødvendige ODBC-driver. Du kan også få dem fra [SAP software Download Center](https://support.sap.com/en/my-support/software-downloads.html). I softwareportalen kan du søge efter *SAP HANA CLIENT* til Windows-computere. Da strukturen i SAP Software Download Center ofte ændres, kan vi ikke give en mere specifik vejledning til, hvordan du henter programmet.
 
@@ -61,6 +61,7 @@ Der er også nogle begrænsninger for brugen af SAP HANA som vist nedenfor:
 * SMALLDECIMAL understøttes ikke.
 * VARBINARY understøttes ikke.
 * Kun datoer mellem 30.12.1899 og 31.12.9999 er gyldige.
+* SAP HANA-opdatering med enkeltlogon understøttes ikke for opdateringer af Excel-projektmapper i øjeblikket. Hvis du vil opdatere dataene i Power BI, kan du bruge en Power BI-rapport med SAP HANA-enkeltlogon.
 
 ## <a name="next-steps"></a>Næste trin
 

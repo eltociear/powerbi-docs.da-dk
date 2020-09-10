@@ -10,12 +10,12 @@ ms.date: 08/20/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 7b5a96f4b592789c04ebaca5418e470d546ff788
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: 27d74a4333add1feebc3522ce34d0a2bacaa69f7
+ms.sourcegitcommit: 2cf8159535c114045e236c076a711638cfd7d2c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88802968"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89512050"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spor brugeraktiviteter i Power BI
 
@@ -108,6 +108,9 @@ $activities.Count
 $activities[0]
 
 ```
+
+> [!NOTE]
+> Der er et PowerShell-eksempel tilgængelig, så du kan få hjælp til at lære, hvordan du filtrerer og henter loghændelser for Power BI-aktiviteter. Du kan få flere oplysninger under [Få adgang til Power BI-aktivitetslog](../guidance/admin-activity-log.md).
 
 ## <a name="use-the-audit-log"></a>Brug overvågningsloggen
 
@@ -369,8 +372,8 @@ Følgende handlinger er tilgængelige både i overvågnings- og aktivitetslogge.
 
 ## <a name="next-steps"></a>Næste trin
 
-[Hvad er Power BI-administration?](service-admin-administering-power-bi-in-your-organization.md)  
-
-[Power BI-administrationsportal](service-admin-portal.md)  
-
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- [Hvad er Power BI-administration?](service-admin-administering-power-bi-in-your-organization.md)
+- [Power BI-administrationsportal](service-admin-portal.md)
+- [Få adgang til Power BI-aktivitetsloggen](../guidance/admin-activity-log.md)
+- Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+- Forslag? [Få ideer til at forbedre Power BI](https://ideas.powerbi.com/)

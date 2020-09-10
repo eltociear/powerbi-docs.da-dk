@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/22/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: a9045c5c088926b24bb9f71e2adf558da6ffa597
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 02716f895d84a7aa49ab7f1d48d60372b3546409
+ms.sourcegitcommit: b943ce58c2c079cb18fc5cf23cc609ead1dc9906
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227446"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89443323"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Trinvis opdatering i Power BI
 
@@ -26,12 +26,11 @@ En trinvis opdatering gør det muligt at have meget store datasæt i Power BI me
 > * **Forbrug af ressourcer reduceres** – Hvis der skal opdateres færre data, reduceres det overordnede forbrug af hukommelsen og andre ressourcer.
 
 > [!NOTE]
-> Trinvis opdatering er nu tilgængelig for Power BI Pro, Premium og delte abonnementer og datasæt. 
+> Trinvis opdatering er nu tilgængelig for Power BI Pro, Premium og delte abonnementer og datasæt.
 
 ## <a name="configure-incremental-refresh"></a>Konfigurer trinvis opdatering
 
 Politikker om trinvis opdatering er defineret i Power BI Desktop og anvendes, når de er publiceret i Power BI-tjenesten.
-
 
 ### <a name="filter-large-datasets-in-power-bi-desktop"></a>Filtrer store datasæt i Power BI Desktop
 
@@ -99,18 +98,17 @@ Teksten i sidehovedet forklarer følgende:
 
 #### <a name="refresh-ranges"></a>Opdateringsintervaller
 
-I følgende eksempel defineres en opdateringspolitik, hvor data for 5 hele kalenderår samt data for det aktuelle år op til den aktuelle dato gemmes, og hvor data for 10 dage gradvist opdateres. Under den første opdateringshandling indlæses der historiske data. De efterfølgende opdateringer er trinvise, og følgende handlinger udføres (hvis de er planlagt til at køre dagligt):
+I følgende eksempel defineres en opdateringspolitik, hvor data for 5 hele kalenderår samt data for det aktuelle år op til den aktuelle dato gemmes, og hvor data for 10 hele dage gradvist opdateres. Under den første opdateringshandling indlæses der historiske data. De efterfølgende opdateringer er trinvise, og følgende handlinger udføres (hvis de er planlagt til at køre dagligt):
 
 - Tilføj en ny dags data.
 
-- Opdater 10 dage op til dags dato.
+- Opdater 10 hele dage op til dags dato.
 
 - Fjern kalenderår, der er ældre end fem år fra den aktuelle dato. Hvis den aktuelle dato f.eks. er 1. januar 2019, fjernes år 2013.
 
 Under den første opdatering i Power BI-tjenesten kan det tage længere tid at importere alle fem hele kalenderår. Efterfølgende opdateringer kan udføres på meget kortere tid.
 
 ![Opdateringsintervaller](media/service-premium-incremental-refresh/refresh-ranges.png)
-
 
 #### <a name="current-date"></a>Aktuel dato
 
@@ -140,7 +138,7 @@ En trinvis opdatering på 10 dage er selvfølgelig meget mere effektiv end en ko
 
 #### <a name="only-refresh-complete-periods"></a>Opdater kun samlede perioder
 
-Lad os antage, at din opdatering er planlagt til at køre kl. 4:00 hver morgen. Hvis der vises data i kildesystemet i løbet af disse 4 timer, ønsker du måske ikke at gøre rede for dem. Nogle målepunkter for virksomheder – f.eks. tønder pr. dag i olie- og gasbranchen – giver ingen mening, hvis dagene er delvise.
+Lad os antage, at din opdatering er planlagt til at køre kl. 4:00 hver morgen. Hvis der vises data i kildesystemet i løbet af disse 4 timer, ønsker du måske ikke at gøre rede for dem. Nogle målepunkter for virksomheder, f.eks. tønder pr. dag i olie- og gasbranchen, giver ingen mening, hvis dagene er delvise.
 
 Et andet eksempel er opdatering af data fra et økonomisystem, hvor data for den foregående måned godkendes den 12. kalenderdag i måneden. Du kan indstille det trinvise interval til 1 måned og planlægge, at opdateringen skal køre den 12. dag i måneden. Når denne indstilling er markeret, opdateres dataene fra januar f.eks. den 12. februar.
 

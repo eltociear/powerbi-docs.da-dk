@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/02/2020
+ms.date: 09/02/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 75b05449de47f39fc95fd7cf42f9325b7a5d0ee9
-ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
+ms.openlocfilehash: 2b5481e3d0b84f81a9cdee827df27c90e32a7e84
+ms.sourcegitcommit: ae9e698b082598f37242080a3ad3dd0b3be08478
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88638767"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89474792"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til US Government-kunder
 
@@ -33,6 +33,14 @@ Hvis du er ny kunde, skal du validere din organisations berettigelse, før du ka
 > Hvis du allerede har udrullet Power BI i et kommercielt miljø og gerne vil migrere til US Government-cloudmiljøet, skal du føje et nyt Power BI Pro-abonnement til dit Microsoft 365-abonnement til offentlige myndigheder. Derefter skal du replikere de kommercielle data til Power BI-tjenesten til US Government, fjerne kommercielle licenstildelinger fra brugerkonti og derefter tildele en Power BI Pro Government-licens til brugerkontiene.
 >
 >
+### <a name="buy-a-power-bi-pro-subscription-for-government-customers"></a>Køb et Power BI Pro-abonnement til offentlige kunder
+
+Når du har udrullet Microsoft 365, kan du tilføje et Power BI Pro-abonnement. Følg den trinvise vejledning i, hvordan du [tilmelder din US Government-organisation](service-govus-signup.md), for at købe Power BI Pro Government-tjenesten. Køb tilstrækkeligt mange licenser til alle de brugere, der skal bruge Power BI, og tildel derefter disse licenser til individuelle brugerkonti.
+
+> [!IMPORTANT]
+> Power BI US Government er ikke tilgængelig som en *gratis* licens. Hver enkelt bruger skal tildeles en *Pro-licens* for at få adgang til Government Community Cloud. Hvis en brugerkonto har fået tildelt en gratis licens, er brugeren kun autoriseret til at få adgang til den kommercielle cloud og vil opleve problemer med godkendelse og adgang. Hvis du har købt Power BI Premium, behøver du ikke at tildele Pro-licenser for at aktivere brugeradgang.  Alle brugere i organisationen har adgang til rapporter, der er delt med dem, så længe rapporterne er udgivet til en Premium-kapacitet. Hvis du vil gennemgå forskellene mellem licenstyper, skal du se [Funktioner i Power BI-tjenesten efter licenstype](../fundamentals/service-features-license-type.md).
+>
+
 ## <a name="government-cloud-instances"></a>Instanser i det offentlige cloud
 
 Microsoft 365 indeholder forskellige miljøer, så de offentlige myndigheder kan opfylde de forskellige overensstemmelseskrav. Du kan finde flere oplysninger om hvert miljø under:
@@ -53,14 +61,6 @@ URL-adressen til oprettelse af forbindelse til Power BI er forskellig for offent
 
 Din konto kan være konfigureret i mere end ét cloudmiljø. Hvis din konto er konfigureret på denne måde, kan du vælge, hvilken cloud der skal oprettes forbindelse til, når du logger på Power BI Desktop.
 
-## <a name="buy-a-power-bi-pro-subscription-for-government-customers"></a>Køb et Power BI Pro-abonnement til offentlige kunder
-
-Når du har udrullet Microsoft 365, kan du tilføje et Power BI Pro-abonnement. Følg den trinvise vejledning i, hvordan du [tilmelder din US Government-organisation](service-govus-signup.md), for at købe Power BI Pro Government-tjenesten. Køb tilstrækkeligt mange licenser til alle de brugere, der skal bruge Power BI, og tildel derefter disse licenser til individuelle brugerkonti.
-
-> [!IMPORTANT]
-> Power BI US Government er ikke tilgængelig som en *gratis* licens. Hver enkelt bruger skal tildeles en *Pro-licens* for at få adgang til Government Community Cloud. Hvis en brugerkonto har fået tildelt en gratis licens, er brugeren kun autoriseret til at få adgang til den kommercielle cloud og vil opleve problemer med godkendelse og adgang. Hvis du har købt Power BI Premium, behøver du ikke at tildele Pro-licenser for at aktivere brugeradgang.  Alle brugere i organisationen har adgang til rapporter, der er delt med dem, så længe rapporterne er udgivet til en Premium-kapacitet. Hvis du vil gennemgå forskellene mellem licenstyper, skal du se [Funktioner i Power BI-tjenesten efter licenstype](../fundamentals/service-features-license-type.md).
->
-
 ## <a name="connect-government-and-global-azure-cloud-services"></a>Opret forbindelse mellem Government-tjenester og globale Azure Cloud-tjenester
 
 Azure er fordelt på flere cloudmiljøer. Du kan som standard aktivere firewallregler for at åbne en forbindelse til en cloudspecifik forekomst, men netværket på tværs af skyen er anderledes.  Hvis du vil kommunikere mellem tjenester i den offentlige cloud og tjenesterne i Government Community Cloud, skal du konfigurere særlige firewallregler. Hvis du f.eks. vil have adgang til offentlige cloudforekomster af en SQL-database fra din offentlige cloududrulning af Power BI, skal du have en firewallregel i SQL-databasen. Konfigurer særlige firewallregler for SQL-databaser, så der tillades forbindelser til Azure Government Cloud for følgende datacentre:
@@ -76,40 +76,31 @@ Hvis du vil konfigurere firewalls for SQL-databaser, skal du følge fremgangsmå
 
 ## <a name="power-bi-feature-availability"></a>Tilgængelighed af funktioner i Power BI
 
-Der er visse forskelle mellem offentlige planer og kommercielle planer for at imødekomme kravene til offentlige cloudkunder. Se følgende tabel for at få oplysninger om, hvilke funktioner der er tilgængelige i hvert offentlige miljø:
+Der er visse forskelle mellem offentlige planer og kommercielle planer for at imødekomme kravene til offentlige cloudkunder. Vores mål er at gøre alle funktioner tilgængelige i cloudmiljøer for de offentlige myndigheder inden for 30 dage fra, de bliver generelt tilgængelige. I nogle tilfælde forhindrer underliggende afhængigheder os i at gøre en funktion tilgængelig.
 
-|Funktion |   |GCC |GCC High |DoD|
-|------|------|------|------|------|
-|Administration|Gratis licenser|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
-|  |Angiv grænser for datalagring|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Brug Active Directory-grupper til deling af adgangskontrol|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Overvågning via Office 365 Security and Compliance Administration Center|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Deling med eksterne brugere|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Forbrugsmålepunkter for dashboards og rapporter|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Azure B2B Collaboration mellem GCC og den kommercielle cloud<sup>1</sup>|Tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
-|Rapportoprettelse|Opret og få vist dashboards og rapporter|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Planlagt dataopdatering|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Teamdashboards, der kan opdateres|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Sideinddelte rapporter|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Skabelonapps|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
-|Opret forbindelse til data|Importér data og rapporter fra Excel|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Importér data fra CSV-filer|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Importér data fra Power BI Desktop-filer|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Forbindelse til CDS|Tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
-|  |Azure Data Lake Storage Gen2-connector|Tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
-|Dataadministration|Dataadministrationsgateway|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Datakryptering i Azure SQL Database|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Datakryptering i Blob Storage for Power BI|Tilgængelig|Tilgængelig|Tilgængelig|
-|Integration på tværs af produkter|Integrer i SharePoint Online ved hjælp af Power BI-webdelen|Tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
-|  |Integrer i SharePoint Online ved hjælp af Embed-webdelen|Tilgængelig|Tilgængelig|Tilgængelig|
-|  |Dataflows og AI-funktioner|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
-|  |Power Automate-forbindelse til datadrevne underretninger|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
-|  |Power BI-fanen i Teams|Tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
-|  |Automatiseret maskinel indlæring|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
-|  |Azure Cognitive Services|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
-|  |Azure Machine Learning|Ikke tilgængelig|Ikke tilgængelig|Ikke tilgængelig|
+Følgende tabel indeholder en liste over de funktioner, der ikke er tilgængelige i et bestemt miljø for de offentlige myndigheder, samt den estimerede tilgængelighed, hvis en udgivelse er planlagt:
 
-<sup>1</sup> Selvom B2B Collaboration er tilgængelig til GCC, skal der udstedes en licens til eksterne brugere i dette miljø. Kommercielle cloudlicenser er ikke gyldige i GCC. Du kan finde flere oplysninger om kendte begrænsninger med B2B Collaboration til US Government ved at [sammenligne Azure Government og global Azure](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
+|Funktion |GCC |GCC High |DoD|
+|------|------|------|------|
+|[Azure B2B-samarbejde mellem cloudmiljøet for de offentlige myndigheder og det kommercielle cloudmiljø](service-admin-azure-ad-b2b.md)<sup>1</sup>|![tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
+|[Integrer i SharePoint Online ved hjælp af Power BI-webdelen](https://docs.microsoft.com/esharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![tilgængelig](../media/yes.png)|![Tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|
+|[Power Automate-forbindelse til datadrevne underretninger](../connect-data/power-bi-data-sources.md)|![tilgængelig](../media/yes.png)|![tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|
+|[Fanen Power BI i Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![tilgængelig](../media/yes.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
+|[Målepunkter for kapacitet](../admin/service-admin-premium-monitor-portal.md)|3\. kvartal 2020 |3\. kvartal 2020|3\. kvartal 2020|
+|[Store modeller](service-premium-large-models.md) | 4\. kvartal 2020 |4\. kvartal 2020| ![ikke tilgængelig](../media/no.png) |
+|[Dataflow – SQL Compute-programoptimering](../transform-model/service-dataflows-enhanced-compute-engine.md) | 4\. kvartal 2020 |4\. kvartal 2020| ![ikke tilgængelig](../media/no.png) |
+|[Dataflow – -direkte forespørgsel](../transform-model/service-dataflows-directquery.md) | 4\. kvartal 2020 |4\. kvartal 2020|![ikke tilgængelig](../media/no.png)|
+|[Meddelelser om tjenesteafbrydelser](service-premium-large-models.md)|4\. kvartal 2020 |4\. kvartal 2020|4\. kvartal 2020|
+|[Data beskyttelse (MIP-mærkater)](service-security-sensitivity-label-overview.md)|4\. kvartal 2020|4\. kvartal 2020 |4\. kvartal 2020|
+|[Skabelonapps](../connect-data/service-template-apps-overview.md)<sup>3</sup>|4\. kvartal 2020 |4\. kvartal 2020| 4\. kvartal 2020|
+|[Brugerdefinerede visualiseringer](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|4\. kvartal 2020 |4\. kvartal 2020| 4\. kvartal 2020|
+|[QR-kodeoprettelse](../create-reports/service-create-qr-code-for-tile.md)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|![ikke tilgængelig](../media/no.png)|
+
+<sup>1</sup> Selvom B2B Collaboration er tilgængelig til GCC, skal der udstedes en licens til eksterne brugere i dette miljø. Kommercielle cloudlicenser er ikke gyldige i GCC. Du kan finde flere oplysninger om kendte begrænsninger med B2B Collaboration til US Government ved at [sammenligne Azure Government og global Azure](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)
+
+<sup>2</sup> Power BI-oplevelsen i Teams til GCC er begrænset, fungerer kun for klassiske arbejdsområder og indeholder ikke de forbedrede funktioner, der er beskrevet i [Integrerer Power BI-indhold i Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
+
+<sup>3</sup> Funktionaliteten af udgivne skabelonapps og brugerdefinerede visualiseringer begrænses for cloudmiljøer for offentlige myndigheder. Der publiceres flere oplysninger om specifikke begrænsninger ved udgivelsen.
 
 ## <a name="next-steps"></a>Næste trin
 

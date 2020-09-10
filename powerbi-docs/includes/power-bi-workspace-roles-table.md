@@ -5,15 +5,15 @@ services: powerbi
 author: maggiesMSFT
 ms.service: powerbi
 ms.topic: include
-ms.date: 07/24/2020
+ms.date: 09/04/2020
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: 6a2fa7aca043c553c9174db81ff575853e526e06
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: b4b73b71a944fbb34d53be05cacc39c18e4226de
+ms.sourcegitcommit: 2cf8159535c114045e236c076a711638cfd7d2c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87260251"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89512793"
 ---
 |Funktion   | Administrator  | Medlem  | Bidragsyder  | Fremviser |
 |---|---|---|---|---|
@@ -36,7 +36,7 @@ ms.locfileid: "87260251"
 | Få vist og interagere med et element.<sup>5</sup> |  ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png)  |
 | Læs data, der er gemt i dataflow i arbejdsområdet | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Afkrydsning for ja](media/power-bi-workspace-roles-table/green-checkmark.png) |
 
-<sup>1</sup> Bidragydere kan opdatere appmetadataene, men ikke publicere en ny app eller ændre, hvem der har tilladelse til appen, hvis [arbejdsområdeadministratoren delegerer denne tilladelse til bidragydere](../collaborate-share/service-create-the-new-workspaces.md#security-settings).
+<sup>1</sup> Bidragydere kan [opdatere den app, der er knyttet til arbejdsområdet](../collaborate-share/service-create-the-new-workspaces.md#allow-contributors-to-update-the-app), hvis arbejdsområdets administrator uddelegerer denne tilladelse til dem. De kan dog ikke publicere en ny app eller ændre, hvem der har tilladelse til den.
 
 <sup>2</sup> Bidragydere og læsere kan også dele elementer i et arbejdsområde, hvis de har tilladelsen Del igen.
 

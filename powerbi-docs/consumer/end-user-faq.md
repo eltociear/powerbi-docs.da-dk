@@ -6,16 +6,16 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/20/2020
+ms.date: 09/02/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 12d31c19e3f32068778eb6f3eb7b3b5b18e93847
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: c8db048f9ae74871840df96e63c60510ce800318
+ms.sourcegitcommit: b943ce58c2c079cb18fc5cf23cc609ead1dc9906
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215981"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89443300"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Ofte stillede spørgsmål om Power BI
 
@@ -28,16 +28,16 @@ ms.locfileid: "86215981"
 
 Power BI-tjenesten er en cloudbaseret analysetjeneste til virksomheder, der gør det muligt for alle at visualisere og analysere data hurtigere, mere effektivt og på en mere forståelig måde. Det forbinder brugere med en bred række data gennem brugervenlige dashboards, interaktive rapporter og overbevisende visualiseringer, der gør data levende. Læs mere om [Power BI](../fundamentals/power-bi-overview.md).
 
-## <a name="what-is-a-power-bi-consumers"></a>Hvad er Power BI-*forbrugere*?
+## <a name="what-is-a-power-bi-business-user"></a>Hvad er en *virksomhedsbruger* af Power BI?
 
-Den måde, du interagerer med Power BI på, afhænger af din jobfunktion. Som slutbruger eller *forbruger* er du den person, der modtager indhold (dashboards, rapporter og apps) fra kolleger. Du arbejder i online- eller mobilversionen af Power BI, som kaldes Power BI-tjenesten, og gennemgår og interagerer med dette indhold, så du kan træffe forretningsbeslutninger.  Læs mere om [Power BI til forbrugere](index.yml).
+Den måde, du interagerer med Power BI på, afhænger af din jobfunktion. Som slutbruger eller *virksomhedsbruger* er du den person, der modtager indhold (dashboards, rapporter og apps) fra kolleger. Du arbejder i online- eller mobilversionen af Power BI, som kaldes Power BI-tjenesten, og gennemgår og interagerer med dette indhold, så du kan træffe forretningsbeslutninger.  Læs mere om [Power BI til virksomhedsbrugere](index.yml).
 
 
 ## <a name="whats-the-difference-between-power-bi-pro-and-power-bi-premium"></a>Hvad er forskellen mellem Power BI Pro og Power BI Premium?
 
-Power BI Pro er en individuel brugerlicens, der giver adgang til alt indhold og alle funktioner i Power BI-tjenesten. Du kan også dele indhold og samarbejde med andre Pro-brugere. Det er kun Pro-brugere, der kan publicere indhold til arbejdsområder, dele dashboards og abonnere på dashboards og rapporter. 
+Power BI Pro er en individuel brugerlicens, der giver adgang til alt indhold og alle funktioner i Power BI-tjenesten. Du kan også dele indhold og samarbejde med andre Pro-brugere. Det er kun Pro-brugere, der kan publicere indhold til andre arbejdsområder, dele dashboards og abonnere på dashboards og rapporter. 
 
-Power BI Premium indeholder dedikeret kapacitet til at levere en mere ensartet ydeevne. Det understøtter også større datamængder i Power BI. I Premium kan de enkelte brugere udføre omfattende distribution af indhold fra Pro-brugere, og det kræver ikke en Pro-licens pr. bruger at få vist indholdet. Det betyder, at *forbrugere* kan samarbejde med kolleger og få vist og interagere med dashboards, rapporter og apps, der er blevet delt med dem. 
+Power BI Premium indeholder dedikeret kapacitet til at levere en mere ensartet ydeevne. Det understøtter også større datamængder i Power BI. I Premium kan de enkelte brugere udføre omfattende distribution af indhold fra Pro-brugere, og det kræver ikke en Pro-licens pr. bruger at få vist indholdet. Det betyder, at *virksomhedsbrugere* kan samarbejde med kolleger og få vist og interagere med dashboards, rapporter og apps, der er blevet delt med dem. 
 
 Du kan få mere at vide under [Hvilken type licens har jeg?](end-user-license.md).
 
@@ -47,9 +47,9 @@ For spørgsmål knyttet til Power BI Premium henvises til [Power BI Premium – 
 
 ## <a name="what-is-power-bi-desktop"></a>Hvad er Power BI Desktop?
 
-Power BI Desktop er et gratis program, du kan installere direkte på dine egne computere. Power BI Desktop fungerer i sammenhæng med Power BI-tjenesten.  Datateknikere, rapportdesignere, administratorer og udviklere arbejder med Power BI Desktop for at oprette rapporter og gøre dem tilgængelige for *forbrugere* af Power BI-tjenesten. Læs mere om [Hvad er Power BI Desktop](../fundamentals/desktop-what-is-desktop.md).
+Power BI Desktop er et gratis program, du kan installere direkte på dine egne computere. Power BI Desktop fungerer i sammenhæng med Power BI-tjenesten.  Datateknikere, rapportdesignere, administratorer og udviklere arbejder med Power BI Desktop for at oprette rapporter og gøre dem tilgængelige for *virksomhedsbrugere* af Power BI-tjenesten. Læs mere om [Hvad er Power BI Desktop](../fundamentals/desktop-what-is-desktop.md).
 
-## <a name="what-do-i-need-to-use-the-power-bi-service-as-a-consumer"></a>Hvad kræves der, for at jeg kan bruge Power BI-tjenesten som *forbruger*?
+## <a name="as-a-business-user-what-do-i-need-to-use-the-power-bi-service"></a>Hvad kræves der, for at jeg kan bruge Power BI-tjenesten som *virksomhedsbruger*?
 
 Hvis din virksomhed har købt Power BI-licenser eller en Premium-kapacitetskonto, skal du bare have en webbrowser og legitimationsoplysninger. Du logger på med din arbejdsmailadresse og en adgangskode (angivet af din Power BI-administrator).  
 
@@ -84,7 +84,7 @@ Du kan bruge følgende ressourcer til at komme i gang:
 * [Power BI-blog](https://powerbi.microsoft.com/blog/)
 * [Webinarer](../fundamentals/webinars.md)
 * Sådan kommer du i gang med vores [YouTube-kanal](https://www.youtube.com/user/mspowerbi)
-* Artiklen [Kom i gang med Power BI som en *forbruger*](index.yml)
+* Artiklen [Kom i gang med Power BI som *virksomhedsbruger*](index.yml)
 * [Tilmeld dig vores community](https://community.powerbi.com/), og stil spørgsmål
 * Se [10 tips til at få hjælp](../fundamentals/service-tips-for-finding-help.md) for at få flere forslag.
 
@@ -112,7 +112,7 @@ Du kan som i mange andre Microsoft-tjenester og -software benytte en nem måde a
 
 ## <a name="next-steps"></a>Næste trin
 
-* [Hvad er en Power BI-forbruger?](end-user-consumer.md)
-* [Hvordan benytter en forbruger Power BI?](end-user-reading-view.md)
+* [Hvad er en virksomhedsbruger af Power BI?](end-user-consumer.md)
+* [Hvordan interagerer en virksomhedsbruger med Power BI?](end-user-reading-view.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 * Har du stadig problemer? Gå til [supportsiden for Power BI](https://powerbi.microsoft.com/support/)
