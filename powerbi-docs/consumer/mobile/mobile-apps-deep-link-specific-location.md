@@ -33,7 +33,7 @@ https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
 ```
 
 > [!IMPORTANT]
-> Hvis dit indhold hostes i et særligt datacenter som f.eks. Goverment, Kina osv. Linket skal starte med den rigtige Power BI-adresse, f.eks. `app.powerbigov.us` eller. `app.powerbi.cn`.   
+> Hvis dit indhold hostes i et særligt datacenter som f.eks. Government, Kina osv. Linket skal starte med den rigtige Power BI-adresse, f.eks. `app.powerbigov.us` eller. `app.powerbi.cn`.   
 >
 
 
